@@ -15,9 +15,9 @@ st.write('Welcome to NFL AI. Time to win')
 st.write("[Learn More >](https://github.com/bestisblessed)")
 
 # ---- Loading Data ---- #
-df_teams = pd.read_csv('/Users/td/Code/nfl-ai/Streamlit/data/Teams.csv')
-df_games = pd.read_csv('/Users/td/Code/nfl-ai/Streamlit/data/Games.csv')
-df_playerstats = pd.read_csv('/Users/td/Code/nfl-ai/Streamlit/data/PlayerStats.csv')
+df_teams = pd.read_csv('data/Teams.csv')
+df_games = pd.read_csv('data/Games.csv')
+df_playerstats = pd.read_csv('data/PlayerStats.csv')
 st.session_state['df_teams'] = df_teams
 st.session_state['df_games'] = df_games
 st.session_state['df_playerstats'] = df_playerstats
@@ -31,8 +31,8 @@ def load_lottie_pictures(url):
 
 lottie_picture1 = load_lottie_pictures("https://lottie.host/9501172e-b94f-441d-a10d-406d7536663c/510yizrK3A.json")
 
-picture1 = Image.open('/Users/td/Code/nfl-ai/Streamlit/images/pereira-adesanya-faceoff.jpeg')
-picture2 = Image.open('/Users/td/Code/nfl-ai/Streamlit/images/ferg.jpg')
+picture1 = Image.open('images/pereira-adesanya-faceoff.jpeg')
+picture2 = Image.open('images/ferg.jpg')
 
 # ---- Introduction and Bio ---- #
 st.divider()
@@ -99,9 +99,9 @@ with image_column_right:
 st.divider()
 st.header('Galleria')
 
-image1list = Image.open('/Users/td/Code/nfl-ai/Streamlit/images/friends.jpg')
-image2list = Image.open('/Users/td/Code/nfl-ai/Streamlit/images/holloway1.jpeg')
-image3list = Image.open('/Users/td/Code/nfl-ai/Streamlit/images/jonesgustaffson.jpg')
+image1list = Image.open('images/friends.jpg')
+image2list = Image.open('images/holloway1.jpeg')
+image3list = Image.open('images/jonesgustaffson.jpg')
 
 col1, col2, col3 = st.columns(3)
 with col1:
