@@ -1,4 +1,1 @@
-game_id,season,week,game_type,date,weekday,gametime,away_team,away_score,home_team,home_score,location,spread_line,total_line,away_coach,home_coach,referee,stadium_id,stadium,home_spread,away_spread
-2023_19_LAR_DET,2023,19,WC,2024-01-14,Sunday,20:00,LAR,,DET,,Home,3.5,52.5,Sean McVay,Dan Campbell,,DET00,Ford Field,+3.5,-3.5
-2023_19_PIT_BUF,2023,19,WC,2024-01-15,Monday,16:30,PIT,,BUF,,Home,10.0,38.5,Mike Tomlin,Sean McDermott,,BUF00,New Era Field,+10.0,-10.0
-2023_19_PHI_TB,2023,19,WC,2024-01-15,Monday,20:00,PHI,,TB,,Home,-3.0,43.0,Nick Sirianni,Todd Bowles,,TAM00,Raymond James Stadium,-3.0,+3.0
+game_id,season,week,game_type,date,weekday,gametime,away_team,away_score,home_team,home_score,location,spread_line,total_line,away_coach,home_coach,referee,stadium_id,stadium

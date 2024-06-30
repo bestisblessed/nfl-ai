@@ -20,9 +20,9 @@ st.write("[Learn More >](https://github.com/bestisblessed)")
 #     st.write("[Learn More >](https://github.com/bestisblessed)")
 
 # ---- Loading Data ---- #
-df_teams = pd.read_csv('./Streamlit/data/Teams.csv')
-df_games = pd.read_csv('./Streamlit/data/Games.csv')
-df_playerstats = pd.read_csv('./Streamlit/data/PlayerStats.csv')
+df_teams = pd.read_csv('./data/Teams.csv')
+df_games = pd.read_csv('./data/Games.csv')
+df_playerstats = pd.read_csv('./data/PlayerStats.csv')
 dataframes = [df_teams, df_games, df_playerstats]
 st.session_state['df_teams'] = df_teams
 st.session_state['df_games'] = df_games
@@ -45,10 +45,10 @@ def load_lottie_pictures(url):
 lottie_picture1 = load_lottie_pictures("https://lottie.host/9501172e-b94f-441d-a10d-406d7536663c/510yizrK3A.json")
 
 ### Picture 1
-picture1 = Image.open('./Streamlit/images/pereira-adesanya-faceoff.jpeg')
+picture1 = Image.open('./images/pereira-adesanya-faceoff.jpeg')
 
 ### Picture 2
-picture2 = Image.open('./Streamlit/images/ferg.jpg')
+picture2 = Image.open('./images/ferg.jpg')
 
 # ---- Introduction and Bio ---- #
 # st.write('---')
@@ -128,9 +128,9 @@ st.markdown("""
 # st.write('---')
 st.divider()
 st.header('Galleria')
-image1list = Image.open('./Streamlit/images/friends.jpg')
-image2list = Image.open('./Streamlit/images/holloway1.jpeg')
-image3list = Image.open('./Streamlit/images/jonesgustaffson.jpg')
+image1list = Image.open('./images/friends.jpg')
+image2list = Image.open('./images/holloway1.jpeg')
+image3list = Image.open('./images/jonesgustaffson.jpg')
 ### Bad Method
 # images = [image1list, image2list, image3list]  # List of images
 # st.image(images, width=600, caption=["Image 1", "Image 2", "Image 3"]) # Displaying multiple images side by side
