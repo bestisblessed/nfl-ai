@@ -123,40 +123,42 @@ st.title('NFL AI Chatbot')
 def run_nfl_chatbot(OPENAI_API_KEY):
     client = OpenAI(api_key=OPENAI_API_KEY)
 
-    file1 = client.files.create(
-        file=open("Streamlit/data/Games.csv", "rb"),
-        purpose='assistants'
-    )
-    file2 = client.files.create(
-        file=open("Streamlit/data/Teams.csv", "rb"),
-        purpose='assistants'
-    )
-    file3 = client.files.create(
-        file=open("Streamlit/data/PlayerStats.csv", "rb"),
-        purpose='assistants'
-    )
+    # file1 = client.files.create(
+    #     file=open("Streamlit/data/Games.csv", "rb"),
+    #     purpose='assistants'
+    # )
+    # file2 = client.files.create(
+    #     file=open("Streamlit/data/Teams.csv", "rb"),
+    #     purpose='assistants'
+    # )
+    # file3 = client.files.create(
+    #     file=open("Streamlit/data/PlayerStats.csv", "rb"),
+    #     purpose='assistants'
+    # )
 
-    assistant = client.beta.assistants.create(
-        name="Football Buddy Streamlit gpt4o",
-        instructions="""
-            You are a data analyst and machine learning expert. You are going to help me analyze and find trends in data about NFL that I have collected that we will be later 
-            using for general and deep analysis and in predictive modeling. You have a knowledge base of different NFL data from 2000-current season with game statistics and player statistics for all those games. 
-            You are to use this knowledge base to answer all the users questions and for your data analysis and answers. First, always begin new conversations by loading all the files in your knowledge base into dataframes and
-            examining them to learn the structure and identify every single column name and data/variable you have available. Take a look at the first and last few rows of each dataset to better learn the structure of each variable
-            as well. Then do additional exploratory data analysis and descriptive statistics to help train yourself on the dataset more. When you are finished - summarize everything in 1-2 sentences for each file and list all the column names
-            in each file with a short description for each column to the user. Then, tell them you are ready to help and answer questions. Use all the knowledge you have learned of the datasets to best formulate answers.""",
-        tools=[{"type": "code_interpreter"}],
-        model="gpt-4o",
-        tool_resources={
-            "code_interpreter": {
-                "file_ids": [file1.id, file2.id, file3.id]
-            }
-        }
-    )
+    # assistant = client.beta.assistants.create(
+    #     name="Football Buddy Streamlit gpt4o",
+    #     instructions="""
+    #         You are a data analyst and machine learning expert. You are going to help me analyze and find trends in data about NFL that I have collected that we will be later 
+    #         using for general and deep analysis and in predictive modeling. You have a knowledge base of different NFL data from 2000-current season with game statistics and player statistics for all those games. 
+    #         You are to use this knowledge base to answer all the users questions and for your data analysis and answers. First, always begin new conversations by loading all the files in your knowledge base into dataframes and
+    #         examining them to learn the structure and identify every single column name and data/variable you have available. Take a look at the first and last few rows of each dataset to better learn the structure of each variable
+    #         as well. Then do additional exploratory data analysis and descriptive statistics to help train yourself on the dataset more. When you are finished - summarize everything in 1-2 sentences for each file and list all the column names
+    #         in each file with a short description for each column to the user. Then, tell them you are ready to help and answer questions. Use all the knowledge you have learned of the datasets to best formulate answers.""",
+    #     tools=[{"type": "code_interpreter"}],
+    #     model="gpt-4o",
+    #     tool_resources={
+    #         "code_interpreter": {
+    #             "file_ids": [file1.id, file2.id, file3.id]
+    #         }
+    #     }
+    # )
+
+    # st.write(assistant)
     
     # Replace with your actual assistant ID for the NFL chatbot
-    # assistant_nfl = 'asst_DqzNKHovo9ryalNPK9Nlh1IU' # Replace with your assistant ID
-    # assistant = client.beta.assistants.retrieve(assistant_nfl)
+    assistant_nfl = 'asst_jVejO8NpSEb9e7g6N6Lh0dly' # Replace with your assistant ID
+    assistant = client.beta.assistants.retrieve(assistant_nfl)
     
     if 'thread_id' not in st.session_state:
         thread = client.beta.threads.create()
