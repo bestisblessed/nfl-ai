@@ -12,21 +12,27 @@ st.title('NFL Chatbot')
 # Sidebar input for API key
 api_key_input = st.sidebar.text_input("Enter your OpenAI API Key:", type="password")
 
+# Determine the correct file path prefix
+if os.path.exists('data/Games.csv'):
+    file_path_prefix = 'data/'
+else:
+    file_path_prefix = 'Streamlit/data/'
+
 if api_key_input:
     client = OpenAI(api_key=api_key_input)
 
     # Store the assistant in a session state to avoid recreating it
     if 'assistant_id' not in st.session_state:
         file1 = client.files.create(
-            file=open("data/Games.csv", "rb"),
+            file=open(file_path_prefix + "Games.csv", "rb"),
             purpose='assistants'
         )
         file2 = client.files.create(
-            file=open("data/Teams.csv", "rb"),
+            file=open(file_path_prefix + "Teams.csv", "rb"),
             purpose='assistants'
         )
         file3 = client.files.create(
-            file=open("data/PlayerStats.csv", "rb"),
+            file=open(file_path_prefix + "PlayerStats.csv", "rb"),
             purpose='assistants'
         )
 
