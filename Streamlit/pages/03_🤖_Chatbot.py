@@ -1,119 +1,5 @@
 import streamlit as st
-import openai
 from openai import OpenAI
-import os
-import requests
-import time
-from dotenv import load_dotenv
-from IPython.display import Image
-
-# st.title('NFL Chatbot')
-
-# # Sidebar input for API key
-# api_key_input = st.sidebar.text_input("Enter your OpenAI API Key:", type="password")
-
-# if api_key_input:
-#     client = OpenAI(api_key=api_key_input)
-
-#     # Store the assistant in a session state to avoid recreating it
-#     if 'assistant_id' not in st.session_state:
-#         file1 = client.files.create(
-#             file=open("Streamlit/data/Games.csv", "rb"),
-#             purpose='assistants'
-#         )
-#         file2 = client.files.create(
-#             file=open("Streamlit/data/Teams.csv", "rb"),
-#             purpose='assistants'
-#         )
-#         file3 = client.files.create(
-#             file=open("Streamlit/data/PlayerStats.csv", "rb"),
-#             purpose='assistants'
-#         )
-
-#         assistant = client.beta.assistants.create(
-#             name="Football Buddy Streamlit gpt4o",
-#             instructions="""
-#                 You are a data analyst and machine learning expert. You are going to help me analyze and find trends in data about NFL that I have collected that we will be later 
-#                 using for general and deep analysis and in predictive modeling. You have a knowledge base of different NFL data from 2000-current season with game statistics and player statistics for all those games. 
-#                 You are to use this knowledge base to answer all the users questions and for your data analysis and answers. First, always begin new conversations by loading all the files in your knowledge base into dataframes and
-#                 examining them to learn the structure and identify every single column name and data/variable you have available. Take a look at the first and last few rows of each dataset to better learn the structure of each variable
-#                 as well. Then do additional exploratory data analysis and descriptive statistics to help train yourself on the dataset more. When you are finished - summarize everything in 1-2 sentences for each file and list all the column names
-#                 in each file with a short description for each column to the user. Then, tell them you are ready to help and answer questions. Use all the knowledge you have learned of the datasets to best formulate answers.""",
-#             tools=[{"type": "code_interpreter"}],
-#             model="gpt-4o",
-#             tool_resources={
-#                 "code_interpreter": {
-#                     "file_ids": [file1.id, file2.id, file3.id]
-#                 }
-#             }
-#         )
-#         st.session_state['assistant_id'] = assistant.id
-
-#     # Retrieve the assistant ID from session state
-#     assistant_id = st.session_state['assistant_id']
-
-#     ### --- CHAT ---- ###
-#     user_question = st.text_input("Enter your question:", "")
-
-#     if user_question:
-#         # Store thread ID in session state to maintain the same conversation
-#         if 'thread_id' not in st.session_state:
-#             thread = client.beta.threads.create()
-#             st.session_state['thread_id'] = thread.id
-
-#         thread_id = st.session_state['thread_id']
-
-#         # Add message to thread
-#         message = client.beta.threads.messages.create(
-#             thread_id=thread_id,
-#             role="user",
-#             content=user_question,
-#         )
-
-#         # Run it
-#         run = client.beta.threads.runs.create_and_poll(
-#             thread_id=thread_id,
-#             assistant_id=assistant_id,
-#         )
-
-#         with st.spinner('Processing...'):
-#             # Wait for completion 
-#             while run.status != "completed":
-#                 time.sleep(2)
-#                 run = client.beta.threads.runs.retrieve(thread_id=thread_id, run_id=run.id)
-
-#         st.success('Done!')
-
-#         # Display assistant response
-#         messages = client.beta.threads.messages.list(thread_id=thread_id)
-
-#         st.write('All Messages: ')
-#         for message in reversed(messages.data):
-#             if hasattr(message.content[0], 'text'):
-#                 st.write(message.role + ": " + message.content[0].text.value)
-#             elif hasattr(message.content[0], 'image_file'):
-#                 st.write(message.role + ": [Image file received]")
-#             else:
-#                 st.write(message.role + ": [Unsupported content type]")
-
-#         # Check if an image file is available
-#         if hasattr(message.content[0], 'image_file'):
-#             new_file = messages.data[0].content[0].image_file.file_id
-
-#             # Download files created by assistant
-#             image_data = client.files.content(new_file)
-#             image_data_bytes = image_data.read()
-
-#             # Display images and files downloaded
-#             st.image(image_data_bytes)
-#         else:
-#             st.write('No image :(')
-# else:
-#     st.error("Please enter your OpenAI API Key in the sidebar.")
-import streamlit as st
-import openai
-from openai import OpenAI
-import os
 import time
 from dotenv import load_dotenv
 from IPython.display import Image
@@ -135,7 +21,6 @@ def run_nfl_chatbot(OPENAI_API_KEY):
     #     file=open("Streamlit/data/PlayerStats.csv", "rb"),
     #     purpose='assistants'
     # )
-
     # assistant = client.beta.assistants.create(
     #     name="Football Buddy Streamlit gpt4o",
     #     instructions="""
@@ -153,12 +38,11 @@ def run_nfl_chatbot(OPENAI_API_KEY):
     #         }
     #     }
     # )
-
     # st.write(assistant)
     
-    # Replace with your actual assistant ID for the NFL chatbot
-    assistant_nfl = 'asst_jVejO8NpSEb9e7g6N6Lh0dly' # Replace with your assistant ID
-    assistant = client.beta.assistants.retrieve(assistant_nfl)
+    # assistant_nfl = 'asst_jVejO8NpSEb9e7g6N6Lh0dly'
+    assistant_nfl_gpt4omini = 'asst_W7LKh5Vp6eRu6e2EZlaDt2Sn'
+    assistant = client.beta.assistants.retrieve(assistant_nfl_gpt4omini)
     
     if 'thread_id' not in st.session_state:
         thread = client.beta.threads.create()
@@ -193,12 +77,13 @@ def run_nfl_chatbot(OPENAI_API_KEY):
             if hasattr(message.content[0], 'text'):
                 st.write(message.role + ": " + message.content[0].text.value)
             elif hasattr(message.content[0], 'image_file'):
-                st.write(message.role + ": [Image file received]")
+                st.write(message.role + ": [image file received]")
             else:
                 st.write(message.role + ": [Unsupported content type]")
         
         if hasattr(message.content[0], 'image_file'):
             new_file = messages.data[0].content[0].image_file.file_id
+            st.write("file id: ", new_file)
             image_data = client.files.content(new_file)
             image_data_bytes = image_data.read()
             st.image(image_data_bytes)
