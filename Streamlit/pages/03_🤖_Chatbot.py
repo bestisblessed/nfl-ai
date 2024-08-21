@@ -12,9 +12,8 @@ OPEN_AI_API_KEY = os.getenv("OPEN_AI_API_KEY")
 client = OpenAI(api_key=OPEN_AI_API_KEY)
 
 # assistant_football_buddy = 'asst_bus6Qg0cy62xe7IhbndWXnXB'
-# assistant_football_buddy_GPT_3_Turbo = 'asst_N2gxCA9ZFgCpX6oydylDB64B'
-assistant_football_buddy_GPT_3_Turbo_IMAGE = 'asst_n32qD42kWDFtEx4uQ2G59vRA'
-assistant = client.beta.assistants.retrieve(assistant_football_buddy_GPT_3_Turbo_IMAGE)
+assistant_football_buddy_GPT_3_Turbo = 'asst_dF6eUKIKhbtmSVUcKAXy6y8v'
+assistant = client.beta.assistants.retrieve(assistant_football_buddy_GPT_3_Turbo)
 
 st.title('NFL Chatbot')
 
