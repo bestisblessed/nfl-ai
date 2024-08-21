@@ -132,9 +132,9 @@ if api_key_input:
 
     # You can now safely proceed with the rest of your app
 
-    # assistant_football_buddy = 'asst_bus6Qg0cy62xe7IhbndWXnXB'
-    assistant_football_buddy_GPT_3_Turbo = 'asst_dF6eUKIKhbtmSVUcKAXy6y8v'
-    assistant = client.beta.assistants.retrieve(assistant_football_buddy_GPT_3_Turbo)
+    assistant_football_buddy = 'asst_5fmtrcAh2FMGhFjUaWYHOqow'
+    # assistant_football_buddy_GPT_3_Turbo = 'asst_dF6eUKIKhbtmSVUcKAXy6y8v'
+    assistant = client.beta.assistants.retrieve(assistant_football_buddy)
 
     st.title('NFL Chatbot')
 
