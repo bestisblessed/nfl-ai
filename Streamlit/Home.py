@@ -12,7 +12,7 @@ st.set_page_config(page_title="NFL AI", page_icon="🏈", layout="wide")
 st.title('NFL AI')
 st.markdown('###### By Tyler Durette')
 st.write('Welcome to NFL AI. Time to win')
-st.write("[Learn More >](https://github.com/bestisblessed)")
+st.write("[My Repo >](https://github.com/bestisblessed)")
 
 # ---- Loading Data ---- #
 df_teams = pd.read_csv('Streamlit/data/Teams.csv')
