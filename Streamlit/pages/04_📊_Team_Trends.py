@@ -129,7 +129,8 @@ st.write("##")
 
 col1, col2 = st.columns(2)
 
-df_teams['TeamID'] = df_teams['TeamID'].str.lower()
+filtered_df_teams = df_teams.copy()
+filtered_df_teams['TeamID'] = filtered_df_teams['TeamID'].str.lower()
 df_schedule_and_game_results['Week'] = pd.to_numeric(df_schedule_and_game_results['Week'], errors='coerce')
 df_schedule_and_game_results = df_schedule_and_game_results.dropna(subset=['Day'])
 team_abbreviation_mapping = {
@@ -153,18 +154,18 @@ df_schedule_and_game_results_filtered = df_schedule_and_game_results[(df_schedul
 
 # Passing Yards Allowed
 with col1:
-    results = []
-    for team in df_teams['TeamID']:
+    results_passing_yards_allowed = []
+    for team in filtered_df_teams['TeamID']:
         team_filtered_data = df_schedule_and_game_results_filtered[df_schedule_and_game_results_filtered['Team'] == team]
         total_passing_yards_allowed = team_filtered_data['OppPassY'].sum()
-        results.append({'Team': team, 'Total Passing Yards Allowed': total_passing_yards_allowed})
-    st.dataframe(results, use_container_width=True)
+        results_passing_yards_allowed.append({'Team': team, 'Total Passing Yards Allowed': total_passing_yards_allowed})
+    st.dataframe(results_passing_yards_allowed, use_container_width=True)
 
 # Rushing Yards Allowed
 with col2:
-    results = []
-    for team in df_teams['TeamID']:
+    results_rushing_yards_allowed = []
+    for team in filtered_df_teams['TeamID']:
         team_filtered_data = df_schedule_and_game_results_filtered[df_schedule_and_game_results_filtered['Team'] == team]
-        total_passing_yards_allowed = team_filtered_data['OppRushY'].sum()
-        results.append({'Team': team, 'Total Rushing Yards Allowed': total_passing_yards_allowed})
-    st.dataframe(results, use_container_width=True)
+        total_rushing_yards_allowed = team_filtered_data['OppRushY'].sum()
+        results_rushing_yards_allowed.append({'Team': team, 'Total Rushing Yards Allowed': total_rushing_yards_allowed})
+    st.dataframe(results_rushing_yards_allowed, use_container_width=True)
