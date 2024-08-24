@@ -12,7 +12,9 @@ df_teams = st.session_state['df_teams']
 df_games = st.session_state['df_games'] 
 df_playerstats = st.session_state['df_playerstats']
 df_team_game_logs = st.session_state['df_team_game_logs']
-dataframes = [df_teams, df_games, df_playerstats, df_team_game_logs]
+df_schedule_and_game_results = st.session_state['df_schedule_and_game_results']
+
+dataframes = [df_teams, df_games, df_playerstats, df_team_game_logs, df_schedule_and_game_results]
 
 ### --- Home vs Away Record 2023 --- ###
 st.divider()
@@ -100,19 +102,23 @@ st.divider()
 st.header("Avg Passing/Rushing Yards Per Game 2023")
 st.write("##")
 
+col1, col2 = st.columns(2)
+
 # Passing Yards
-df_team_game_logs_filtered = df_team_game_logs[(df_team_game_logs['week_num'] >= 1) & (df_team_game_logs['week_num'] <= 18)]
-merged_data = pd.merge(df_team_game_logs_filtered, df_teams, left_on='team_name', right_on='Team', how='left')
-team_passing_yards = merged_data.groupby('TeamID')['pass_yds'].sum().reset_index()
-team_passing_yards_ranked = team_passing_yards.sort_values(by='pass_yds', ascending=False).reset_index(drop=True)
-st.dataframe(team_passing_yards_ranked)
+with col1:
+    df_team_game_logs_filtered = df_team_game_logs[(df_team_game_logs['week_num'] >= 1) & (df_team_game_logs['week_num'] <= 18)]
+    merged_data = pd.merge(df_team_game_logs_filtered, df_teams, left_on='team_name', right_on='Team', how='left')
+    team_passing_yards = merged_data.groupby('TeamID')['pass_yds'].sum().reset_index()
+    team_passing_yards_ranked = team_passing_yards.sort_values(by='pass_yds', ascending=False).reset_index(drop=True)
+    st.dataframe(team_passing_yards_ranked, use_container_width=True)
 
 # Rushing Yards
-df_team_game_logs_filtered = df_team_game_logs[(df_team_game_logs['week_num'] >= 1) & (df_team_game_logs['week_num'] <= 18)]
-merged_data = pd.merge(df_team_game_logs_filtered, df_teams, left_on='team_name', right_on='Team', how='left')
-team_rushing_yards = merged_data.groupby('TeamID')['rush_yds'].sum().reset_index()
-team_rushing_yards_ranked = team_rushing_yards.sort_values(by='rush_yds', ascending=False).reset_index(drop=True)
-st.dataframe(team_rushing_yards_ranked)
+with col2:
+    df_team_game_logs_filtered = df_team_game_logs[(df_team_game_logs['week_num'] >= 1) & (df_team_game_logs['week_num'] <= 18)]
+    merged_data = pd.merge(df_team_game_logs_filtered, df_teams, left_on='team_name', right_on='Team', how='left')
+    team_rushing_yards = merged_data.groupby('TeamID')['rush_yds'].sum().reset_index()
+    team_rushing_yards_ranked = team_rushing_yards.sort_values(by='rush_yds', ascending=False).reset_index(drop=True)
+    st.dataframe(team_rushing_yards_ranked, use_container_width=True)
 
 
 
@@ -120,3 +126,45 @@ st.dataframe(team_rushing_yards_ranked)
 st.divider()
 st.header("Avg Passing+Rushing Yards Allowed Per Game 2023")
 st.write("##")
+
+col1, col2 = st.columns(2)
+
+df_teams['TeamID'] = df_teams['TeamID'].str.lower()
+df_schedule_and_game_results['Week'] = pd.to_numeric(df_schedule_and_game_results['Week'], errors='coerce')
+df_schedule_and_game_results = df_schedule_and_game_results.dropna(subset=['Day'])
+team_abbreviation_mapping = {
+    'gnb': 'gb',
+    'htx': 'hou',
+    'clt': 'ind',
+    'kan': 'kc',
+    'sdg': 'lac',
+    'ram': 'lar',
+    'rai': 'lvr',
+    'nwe': 'ne',
+    'nor': 'no',
+    'sfo': 'sf',
+    'tam': 'tb',
+    'oti': 'ten',
+    'rav': 'bal',
+    'crd': 'ari'
+}
+df_schedule_and_game_results['Team'] = df_schedule_and_game_results['Team'].map(team_abbreviation_mapping).fillna(df_schedule_and_game_results['Team'])
+df_schedule_and_game_results_filtered = df_schedule_and_game_results[(df_schedule_and_game_results['Season'] == 2023) & (df_schedule_and_game_results['Week'] >= 1) & (df_schedule_and_game_results['Week'] <= 18)]
+
+# Passing Yards Allowed
+with col1:
+    results = []
+    for team in df_teams['TeamID']:
+        team_filtered_data = df_schedule_and_game_results_filtered[df_schedule_and_game_results_filtered['Team'] == team]
+        total_passing_yards_allowed = team_filtered_data['OppPassY'].sum()
+        results.append({'Team': team, 'Total Passing Yards Allowed': total_passing_yards_allowed})
+    st.dataframe(results, use_container_width=True)
+
+# Rushing Yards Allowed
+with col2:
+    results = []
+    for team in df_teams['TeamID']:
+        team_filtered_data = df_schedule_and_game_results_filtered[df_schedule_and_game_results_filtered['Team'] == team]
+        total_passing_yards_allowed = team_filtered_data['OppRushY'].sum()
+        results.append({'Team': team, 'Total Rushing Yards Allowed': total_passing_yards_allowed})
+    st.dataframe(results, use_container_width=True)

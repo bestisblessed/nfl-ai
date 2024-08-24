@@ -19,10 +19,12 @@ df_teams = pd.read_csv('Streamlit/data/Teams.csv')
 df_games = pd.read_csv('Streamlit/data/Games.csv')
 df_playerstats = pd.read_csv('Streamlit/data/PlayerStats.csv')
 df_team_game_logs = pd.read_csv('Streamlit/data/all_teams_game_logs_2023.csv')
+df_schedule_and_game_results = pd.read_csv('Streamlit/data/all_teams_schedule_and_game_results_merged.csv')
 st.session_state['df_teams'] = df_teams
 st.session_state['df_games'] = df_games
 st.session_state['df_playerstats'] = df_playerstats
 st.session_state['df_team_game_logs'] = df_team_game_logs
+st.session_state['df_schedule_and_game_results'] = df_schedule_and_game_results
 
 # ---- Loading Other Files ---- #
 def load_lottie_pictures(url):

@@ -9,8 +9,16 @@ df_games = st.session_state['df_games']
 df_playerstats = st.session_state['df_playerstats']
 dataframes = [df_teams, df_games, df_playerstats]
 
-# Dropdown button for datasets 
 option = st.selectbox('Choose a DataFrame to display:', ('None', 'Teams', 'Games', 'Player Stats'))
+
+col1, col2, col3 = st.columns(3)
+
+with col1:
+    st.write(df_teams.columns.tolist())
+with col2:
+    st.write(df_games.columns.tolist())
+with col3:
+    st.write(df_playerstats.columns.tolist())
 
 if option == 'Teams':
     st.header('Teams DataFrame')
