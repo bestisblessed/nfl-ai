@@ -44,10 +44,14 @@ def run_nfl_chatbot(OPENAI_API_KEY):
         st.write('Thread Info: ', thread)
     else:
         st.write('Continuing conversation in Thread ID: ', st.session_state['thread_id'])
-    
-    user_question = st.text_input("Enter your question:", "")
+
+    # user_question = st.text_input("Enter your question:", "")
+    user_question = st.chat_input("Say something")
     
     if user_question:
+        st.write(f"User 🙋‍♂️: {user_question}")
+        # with st.chat_message("user"):
+        #     st.write(f"User has sent the following prompt: {user_question}")
         message = client.beta.threads.messages.create(
             thread_id=st.session_state['thread_id'],
             role="user",

@@ -9,62 +9,85 @@ df_teams = pd.read_csv('./data/Teams.csv')
 df_games = pd.read_csv('./data/Games.csv')
 df_playerstats = pd.read_csv('./data/PlayerStats.csv')
 
-### --- Avg PPG Home vs Away 2023 --- ###
+### --- Home vs Away Record 2023 --- ###
 st.divider()
-st.header("Avg PPG Home vs Away 2023")
-st.write("##")
+st.header("Home vs Away Record 2023 (Reg Season)")
+st.write(" ")
 
-# Calculation
-games_2023 = df_games[df_games['season'] == 2023]
+games_2023 = df_games[(df_games['season'] == 2023) & (df_games['week'].between(1, 18))]
+win_loss_records = {}
+for team in df_teams['TeamID']:
+    # Calculate home win/loss record
+    home_games = games_2023[games_2023['home_team'] == team]
+    home_wins = home_games[home_games['home_score'] > home_games['away_score']].shape[0]
+    home_losses = home_games[home_games['home_score'] < home_games['away_score']].shape[0]
+
+    # Calculate away win/loss record
+    away_games = games_2023[games_2023['away_team'] == team]
+    away_wins = away_games[away_games['away_score'] > away_games['home_score']].shape[0]
+    away_losses = away_games[away_games['away_score'] < away_games['home_score']].shape[0]
+    win_loss_records[team] = {
+        'home_wins': home_wins,
+        'home_losses': home_losses,
+        'away_wins': away_wins,
+        'away_losses': away_losses
+    }
+
+win_loss_df = pd.DataFrame.from_dict(win_loss_records, orient='index') # Convert the results to a DataFrame for easier viewing
+home_records_df = win_loss_df[['home_wins', 'home_losses']].sort_values(by='home_wins', ascending=False)
+away_records_df = win_loss_df[['away_wins', 'away_losses']].sort_values(by='away_wins', ascending=False)
+col1, col2 = st.columns(2)
+with col1:
+    st.markdown("<h5 style='text-align: center; color: grey;'>Home</h5>", unsafe_allow_html=True)
+    st.dataframe(home_records_df, use_container_width=True)
+    selected_home_team = st.selectbox("Select a team to see their home games", home_records_df.index)
+    if selected_home_team:
+        with st.expander(f"Home Games for {selected_home_team} in 2023", expanded=False):
+            home_games = games_2023[(games_2023['home_team'] == selected_home_team) & (games_2023['season'] == 2023) & (games_2023['week'].between(1, 18))]
+            home_games_sorted = home_games.sort_values(by='week')
+            st.dataframe(home_games_sorted, use_container_width=True)
+with col2:
+    st.markdown("<h5 style='text-align: center; color: grey;'>Away</h5>", unsafe_allow_html=True)
+    st.dataframe(away_records_df, use_container_width=True)
+    selected_away_team = st.selectbox("Select a team to see their away games", away_records_df.index)
+    if selected_away_team:
+        with st.expander(f"Away Games for {selected_away_team} in 2023", expanded=False):
+            away_games = games_2023[(games_2023['away_team'] == selected_away_team) & (games_2023['season'] == 2023) & (games_2023['week'].between(1, 18))]
+            away_games_sorted = away_games.sort_values(by='week')
+            st.dataframe(away_games_sorted, use_container_width=True)
+
+
+
+
+### --- Avg PPG and PA Home vs Away 2023 --- ###
+st.divider()
+st.header("PPG and Points Allowed Home vs Away 2023")
+st.markdown("###")
+
+# PPG
+st.markdown("<h5 style='text-align: center; color: grey;'>Average Points Per Game (PPG) - Home vs. Away</h5>", unsafe_allow_html=True)
+games_2023 = df_games[(df_games['season'] == 2023) & (df_games['week'].between(1, 18))]
 avg_points_scored_home = games_2023.groupby('home_team')['home_score'].mean()
 avg_points_scored_away = games_2023.groupby('away_team')['away_score'].mean()
 avg_points = pd.concat([avg_points_scored_home, avg_points_scored_away], axis=1) # Combine to get overall averages
-avg_points.columns = ['Avg Home Points', 'Avg Away Points']
-
-# Display
-col1, col2 = st.columns((2, 1))
+col1, col2 = st.columns((3, 1))
 with col1:
-    fig, ax = plt.subplots(figsize=(10, 6))
-    avg_points.plot(kind='bar', ax=ax)
-    plt.xlabel('Teams')
-    plt.ylabel('Average Points')
-    plt.title('Average Points per Game (Home vs Away) - 2023 Season')
-    plt.xticks(rotation=45)
-    plt.legend()
-    plt.tight_layout()
-    st.pyplot(fig)
+    st.bar_chart(avg_points, color=["#FFA500", "#0000FF"], x_label="Teams", y_label="Average PPG", use_container_width=True, stack=False)
 with col2:      
     st.dataframe(avg_points, use_container_width=True)
 
-
-
-### --- Avg Points Allowed Home vs Away 2023--- ###
-st.divider()
-st.header("Avg Points Allowed Home vs Away 2023")
-st.write("##")
-
-# Calculation
-games_2023 = df_games[df_games['season'] == 2023]
+# PA
+st.write(" ")
+st.markdown("<h5 style='text-align: center; color: grey;'>Average Points Allowed (PA) - Home vs. Away</h5>", unsafe_allow_html=True)
+games_2023 = df_games[(df_games['season'] == 2023) & (df_games['week'].between(1, 18))]
 avg_points_allowed_home = games_2023.groupby('home_team')['away_score'].mean()
 avg_points_allowed_away = games_2023.groupby('away_team')['home_score'].mean()
 avg_points_allowed = pd.concat([avg_points_allowed_home, avg_points_allowed_away], axis=1) # Combining the two series to get overall averages for each team
-avg_points_allowed.columns = ['Avg Points Allowed Home', 'Avg Points Allowed Away']
-
-# Display
-col1, col2 = st.columns((1, 2))
+col1, col2 = st.columns((1, 3))
 with col1:      
     st.dataframe(avg_points_allowed, use_container_width=True)
 with col2:
-    fig, ax = plt.subplots(figsize=(10, 6))
-    avg_points_allowed.plot(kind='bar', ax=ax)
-    plt.xlabel('Teams')
-    plt.ylabel('Average Points Allowed')
-    plt.title('Average Points Allowed per Game (Home vs Away) - 2023 Season')
-    plt.xticks(rotation=45)
-    plt.legend()
-    plt.tight_layout()
-    st.pyplot(fig)
-
+    st.bar_chart(avg_points_allowed, color=["#FFA500", "#0000FF"], x_label="Teams", y_label="Average Points Allowed", use_container_width=True, stack=False)
 
 
 ### --- Avg Passing+Rushing Yards Per Game 2023 --- ###
@@ -72,60 +95,8 @@ st.divider()
 st.header("Avg Passing/Rushing Yards Per Game 2023")
 st.write("##")
 
-# Calculation
-
-# Display
-
-
 
 ### --- Avg Passing+Rushing Yards Allowed Per Game 2023 --- ###
 st.divider()
 st.header("Avg Passing+Rushing Yards Allowed Per Game 2023")
 st.write("##")
-
-# Calculation
-
-# Display
-
-
-
-
-### --- Home vs Away Record 2023 --- ###
-st.divider()
-st.header("Home vs Away Record 2023")
-st.write("##")
-
-db_path = './data/nfl.db'  # Adjust the path if your database has a different name
-conn = sqlite3.connect(db_path)
-cursor = conn.cursor()
-cursor.execute("SELECT MAX(season) FROM Games;")
-latest_season = cursor.fetchone()[0]
-def get_wl_records(cursor, season, home_or_away):
-    column = 'home_team' if home_or_away == 'home' else 'away_team'
-    score_comparison = 'home_score > away_score' if home_or_away == 'home' else 'away_score > home_score'
-    wl_query = f"""
-    SELECT 
-        {column} AS team, 
-        COUNT(*) AS total_games, 
-        SUM(CASE WHEN {score_comparison} THEN 1 ELSE 0 END) AS wins, 
-        SUM(CASE WHEN NOT ({score_comparison}) THEN 1 ELSE 0 END) AS losses 
-    FROM 
-        Games 
-    WHERE 
-        season = {season}
-    GROUP BY 
-        {column}
-    ORDER BY 
-        wins DESC, losses;
-    """
-    cursor.execute(wl_query)
-    return cursor.fetchall()
-home_wl_records = get_wl_records(cursor, latest_season, 'home')
-away_wl_records = get_wl_records(cursor, latest_season, 'away')
-st.write("Home Win/Loss Records:")
-for record in home_wl_records:
-    st.write(f"Team: {record[0]}, Wins: {record[2]}, Losses: {record[3]}")
-st.write("\nAway Win/Loss Records:")
-for record in away_wl_records:
-    st.write(f"Team: {record[0]}, Wins: {record[2]}, Losses: {record[3]}")
-conn.close()

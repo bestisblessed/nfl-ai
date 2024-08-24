@@ -1,7 +1,10 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-#import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
+
+# - add dropdowns for each division
+# - add team logo pictures
 
 st.title('2023 NFL Season Division Standings')
 
