@@ -5,9 +5,14 @@ import sqlite3
 
 ### --- Title and Data --- ###
 st.title('General Trends')
-df_teams = pd.read_csv('./data/Teams.csv')
-df_games = pd.read_csv('./data/Games.csv')
-df_playerstats = pd.read_csv('./data/PlayerStats.csv')
+# df_teams = pd.read_csv('./data/Teams.csv')
+# df_games = pd.read_csv('./data/Games.csv')
+# df_playerstats = pd.read_csv('./data/PlayerStats.csv')
+df_teams = st.session_state['df_teams']
+df_games = st.session_state['df_games'] 
+df_playerstats = st.session_state['df_playerstats']
+df_team_game_logs = st.session_state['df_team_game_logs']
+dataframes = [df_teams, df_games, df_playerstats, df_team_game_logs]
 
 ### --- Home vs Away Record 2023 --- ###
 st.divider()
@@ -90,13 +95,28 @@ with col2:
     st.bar_chart(avg_points_allowed, color=["#FFA500", "#0000FF"], x_label="Teams", y_label="Average Points Allowed", use_container_width=True, stack=False)
 
 
-### --- Avg Passing+Rushing Yards Per Game 2023 --- ###
+### --- Avg Passing/Rushing Yards Per Game 2023 --- ###
 st.divider()
 st.header("Avg Passing/Rushing Yards Per Game 2023")
 st.write("##")
 
+# Passing Yards
+df_team_game_logs_filtered = df_team_game_logs[(df_team_game_logs['week_num'] >= 1) & (df_team_game_logs['week_num'] <= 18)]
+merged_data = pd.merge(df_team_game_logs_filtered, df_teams, left_on='team_name', right_on='Team', how='left')
+team_passing_yards = merged_data.groupby('TeamID')['pass_yds'].sum().reset_index()
+team_passing_yards_ranked = team_passing_yards.sort_values(by='pass_yds', ascending=False).reset_index(drop=True)
+st.dataframe(team_passing_yards_ranked)
 
-### --- Avg Passing+Rushing Yards Allowed Per Game 2023 --- ###
+# Rushing Yards
+df_team_game_logs_filtered = df_team_game_logs[(df_team_game_logs['week_num'] >= 1) & (df_team_game_logs['week_num'] <= 18)]
+merged_data = pd.merge(df_team_game_logs_filtered, df_teams, left_on='team_name', right_on='Team', how='left')
+team_rushing_yards = merged_data.groupby('TeamID')['rush_yds'].sum().reset_index()
+team_rushing_yards_ranked = team_rushing_yards.sort_values(by='rush_yds', ascending=False).reset_index(drop=True)
+st.dataframe(team_rushing_yards_ranked)
+
+
+
+### --- Avg Passing/Rushing Yards Allowed Per Game 2023 --- ###
 st.divider()
 st.header("Avg Passing+Rushing Yards Allowed Per Game 2023")
 st.write("##")
