@@ -11,8 +11,8 @@ st.set_page_config(page_title="NFL AI", page_icon="🏈", layout="wide")
 # ---- Titles ---- #
 st.title('NFL AI')
 st.markdown('###### By Tyler Durette')
-st.write('Welcome to NFL AI. Time to win')
-st.write("[My Repo >](https://github.com/bestisblessed)")
+st.write('Welcome to NFL AI')
+# st.write("[My Repo >](https://github.com/bestisblessed)")
 
 # ---- Loading Data ---- #
 df_teams = pd.read_csv('Streamlit/data/Teams.csv')
@@ -45,7 +45,8 @@ left_column, right_column = st.columns(2)
 with left_column:
     st.write('##')
     st.write('''
-        I predict winners. Simple as that. All I do is win.
+        # I predict winners. Simple as that. All I do is win.
+        - Historical AI chatbot
         - Predictive modeling
         - Game outcomes
         - Player performances
@@ -57,51 +58,51 @@ with left_column:
 with right_column:
     st_lottie(lottie_picture1, height=400, width=400, key='lottie1')
 
-# ---- Some Samples ---- #
-st.divider()
-st.header('Some Samples')
-st.write('##')
+# # ---- Some Samples ---- #
+# st.divider()
+# st.header('Some Samples')
+# st.write('##')
 
-### Sample Code
-st.code('''
-import numpy as np
-import streamlit as st
-import pandas as pd
-import matplotlib.pyplot as plt
-import requests
-from streamlit_lottie import st_lottie
-from PIL import Image
-''', language='python')
+# ### Sample Code
+# st.code('''
+# import numpy as np
+# import streamlit as st
+# import pandas as pd
+# import matplotlib.pyplot as plt
+# import requests
+# from streamlit_lottie import st_lottie
+# from PIL import Image
+# ''', language='python')
 
-### Sample 1
-image_column_left, text_column_right = st.columns((1, 2))
-with image_column_left:
-    st.image(picture1, use_column_width=True, caption="UFC 287")
-with text_column_right:
-    st.markdown('#### Sample 1')
-    st.write('''
-        Here is one of my examples, this is what it does:
-        1. Uses my unique and confidential nfl dataset to analyze
-        2. Finds outlying trends
-        3. Makes game and player predictions
-    ''')
+# ### Sample 1
+# image_column_left, text_column_right = st.columns((1, 2))
+# with image_column_left:
+#     st.image(picture1, use_column_width=True, caption="UFC 287")
+# with text_column_right:
+#     st.markdown('#### Sample 1')
+#     st.write('''
+#         Here is one of my examples, this is what it does:
+#         1. Uses my unique and confidential nfl dataset to analyze
+#         2. Finds outlying trends
+#         3. Makes game and player predictions
+#     ''')
 
-### Sample 2
-text_column_left, image_column_right = st.columns((2, 1))
-with text_column_left:
-    st.markdown('#### Sample 2')
-    st.write('''
-        Here is another example, this is what it does:
-        1. Uses my unique and confidential nfl dataset to analyze
-        2. Finds outlying trends
-        3. Makes game and player predictions
-    ''')
-with image_column_right:
-    st.image(picture2, use_column_width=True, caption="Before the crash")
+# ### Sample 2
+# text_column_left, image_column_right = st.columns((2, 1))
+# with text_column_left:
+#     st.markdown('#### Sample 2')
+#     st.write('''
+#         Here is another example, this is what it does:
+#         1. Uses my unique and confidential nfl dataset to analyze
+#         2. Finds outlying trends
+#         3. Makes game and player predictions
+#     ''')
+# with image_column_right:
+#     st.image(picture2, use_column_width=True, caption="Before the crash")
 
 # ---- Galleria ---- #
 st.divider()
-st.header('Galleria')
+# st.header('Galleria')
 
 image1list = Image.open('Streamlit/images/friends.jpg')
 image2list = Image.open('Streamlit/images/holloway1.jpeg')
@@ -121,12 +122,12 @@ st.write('##')
 col1, col2, col3 = st.columns([1, 3, 1])
 with col2:
     st.video(video1)
-    st.caption("To get hyped")
+    st.caption("Legendary")
 
 # ---- Contact Me ---- #
 st.divider()
 st.header('Contact Me')
 st.write('##')
-st.write('Hover over this text for more information [?](Your help text here)')
+# st.write('Hover over this text for more information [?](Your help text here)')
 st.divider()
-st.markdown("NFL AI © 2023 | [GitHub](https://github.com/bestisblessed) | [Contact](https://example.com/contact)")
+st.markdown("NFL AI © 2023 | [GitHub](https://github.com/bestisblessed) | [Contact Me](tyler.durette@gmail.com)")
