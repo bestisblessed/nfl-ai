@@ -149,10 +149,11 @@ with col2:
 ### Video
 video1 = 'https://www.youtube.com/watch?v=K8RQkt3Ee0Y'
 st.write('##')
-col1, col2, col3 = st.columns([1, 4, 1])
-with col2:
-    st.video(video1)
-    st.caption("Legendary")
+# col1, col2, col3 = st.columns([1, 4, 1])
+# with col2:
+#     st.video(video1)
+#     st.caption("Legendary")
+st.video(video1)
 
 # ---- Contact Me ---- #
 st.divider()
