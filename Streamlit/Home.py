@@ -13,8 +13,9 @@ st.set_page_config(page_title="NFL AI", page_icon="🏈", layout="wide")
 st.title('NFL AI')
 st.write('Welcome to NFL AI')
 # st.write("[My Repo >](https://github.com/bestisblessed)")
-# st.image('Streamlit/images/wp11925945-justin-jefferson-2023-wallpapers.jpg', use_column_width=True)
-
+current_dir = os.path.dirname(os.path.abspath(__file__))
+justin_jefferson_path = os.path.join(current_dir, 'Streamlit/images/wp11925945-justin-jefferson-2023-wallpapers.jpg')
+st.image(justin_jefferson_path, use_column_width=True)
 
 # ---- Loading Data ---- #
 df_teams = pd.read_csv('Streamlit/data/Teams.csv')
@@ -132,7 +133,7 @@ with col3:
     st.image(image3list, use_column_width=True, caption="Image 3")
 
 ### Video
-video1 = 'https://www.youtube.com/watch?v=RABQY0t1Bqw&list=PL3HhsOxjnSwI9TDupRLRhPN3TAG4CFGPe&index=40'
+video1 = 'https://www.youtube.com/watch?v=K8RQkt3Ee0Y'
 st.write('##')
 col1, col2, col3 = st.columns([1, 3, 1])
 with col2:
