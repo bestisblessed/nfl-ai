@@ -117,7 +117,7 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 
 # Construct the full absolute paths for each image
 image1_path = os.path.join(current_dir, 'Streamlit/images/ceedee.jpg')
-image2_path = os.path.join(current_dir, 'Streamlit/images/dez.jpg')
+image2_path = os.path.join(current_dir, 'Streamlit/images/dez2.jpg')
 image3_path = os.path.join(current_dir, 'Streamlit/images/irvin.jpg')
 image4_path = os.path.join(current_dir, 'Streamlit/images/jettas.jpg')
 
@@ -131,8 +131,8 @@ col1, col2, col3 = st.columns(3)
 with col1:
     st.image(image1list, use_column_width=True, caption="Ceedee 88")
 with col2:
-    # st.image(image2list, use_column_width=True, caption="Bryant 88")
-    st.image(image2list, height=400, caption="Bryant 88")  # Specify height for this image
+    st.image(image2list, use_column_width=True, caption="Bryant 88")
+    # st.image(image2list, height=400, caption="Bryant 88")  # Specify height for this image
 with col3:
     st.image(image3list, use_column_width=True, caption="Irvin 88")
 
@@ -142,9 +142,9 @@ st.image(image4list, width=200, caption="JJettas")
 ### Video
 video1 = 'https://www.youtube.com/watch?v=K8RQkt3Ee0Y'
 st.write('##')
-col1, col2, col3 = st.columns([1, 3, 1])
+col1, col2, col3 = st.columns([1, 4, 1])
 with col2:
-    st.video(video1, use_column_width=True)
+    st.video(video1)
     st.caption("Legendary")
 
 # ---- Contact Me ---- #
