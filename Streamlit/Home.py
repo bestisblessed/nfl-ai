@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 import requests
 from streamlit_lottie import st_lottie
 from PIL import Image
+import os
 
 st.set_page_config(page_title="NFL AI", page_icon="🏈", layout="wide")
 
@@ -12,7 +13,11 @@ st.set_page_config(page_title="NFL AI", page_icon="🏈", layout="wide")
 st.title('NFL AI')
 st.write('Welcome to NFL AI')
 # st.write("[My Repo >](https://github.com/bestisblessed)")
-st.image('Streamlit/images/wp11925945-justin-jefferson-2023-wallpapers.jpg', use_column_width=True)
+# st.image('Streamlit/images/wp11925945-justin-jefferson-2023-wallpapers.jpg', use_column_width=True)
+current_dir = os.path.dirname(os.path.abspath(__file__))
+image_path = os.path.join(current_dir, 'Streamlit/images/wp11925945-justin-jefferson-2023-wallpapers.jpg')
+st.image(image_path, use_column_width=True)
+
 
 # ---- Loading Data ---- #
 df_teams = pd.read_csv('Streamlit/data/Teams.csv')
