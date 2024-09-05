@@ -14,9 +14,6 @@ st.title('NFL AI')
 st.write('Welcome to NFL AI')
 # st.write("[My Repo >](https://github.com/bestisblessed)")
 current_dir = os.path.dirname(os.path.abspath(__file__))
-justin_jefferson_path = os.path.join(current_dir, 'Streamlit/images/jettas.jpg')
-# st.image(justin_jefferson_path, use_column_width=True)
-st.image(justin_jefferson_path, width=300)
 
 # ---- Loading Data ---- #
 df_teams = pd.read_csv('Streamlit/data/Teams.csv')
@@ -134,6 +131,10 @@ with col2:
     st.image(image2list, use_column_width=True, caption="Image 2")
 with col3:
     st.image(image3list, use_column_width=True, caption="Image 3")
+
+justin_jefferson_path = os.path.join(current_dir, 'Streamlit/images/jettas.jpg')
+# st.image(justin_jefferson_path, use_column_width=True)
+st.image(justin_jefferson_path, width=300)
 
 ### Video
 video1 = 'https://www.youtube.com/watch?v=K8RQkt3Ee0Y'
