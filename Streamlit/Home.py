@@ -107,6 +107,7 @@ with right_column:
 # ---- Galleria ---- #
 st.divider()
 st.header('Galleria')
+st.write()
 
 # image1list = Image.open('Streamlit/images/ceedee.jpg')
 # image2list = Image.open('Streamlit/images/dez.jpg')
@@ -128,7 +129,7 @@ image3list = Image.open(image3_path)
 image4list = Image.open(image4_path)
 
 # col1, col2, col3 = st.columns(3)
-col1, col2, col3 = st.columns([1, 2, 1])  # Proportions for the columns
+col1, col2, col3 = st.columns([1, 1.25, 1])  # Proportions for the columns
 with col1:
     st.image(image1list, use_column_width=True, caption="Ceedee 88")
 with col2:
@@ -136,14 +137,6 @@ with col2:
     # st.image(image2list, height=400, caption="Bryant 88")  # Specify height for this image
 with col3:
     st.image(image3list, use_column_width=True, caption="Irvin 88")
-
-### Video
-video1 = 'https://www.youtube.com/watch?v=K8RQkt3Ee0Y'
-st.write('##')
-col1, col2, col3 = st.columns([1, 4, 1])
-with col2:
-    st.video(video1)
-    st.caption("Legendary")
 
 ### JJettas
 st.write('##')
@@ -153,6 +146,13 @@ with col2:
 # st.image(image4list, use_column_width=True, caption="JJettas")
 # st.image(image4list, width=200, caption="JJettas")
 
+### Video
+video1 = 'https://www.youtube.com/watch?v=K8RQkt3Ee0Y'
+st.write('##')
+col1, col2, col3 = st.columns([1, 4, 1])
+with col2:
+    st.video(video1)
+    st.caption("Legendary")
 
 # ---- Contact Me ---- #
 st.divider()
