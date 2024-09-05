@@ -37,8 +37,8 @@ def load_lottie_pictures(url):
 
 lottie_picture1 = load_lottie_pictures("https://lottie.host/9501172e-b94f-441d-a10d-406d7536663c/510yizrK3A.json")
 
-picture1 = Image.open('Streamlit/images/pereira-adesanya-faceoff.jpeg')
-picture2 = Image.open('Streamlit/images/ferg.jpg')
+# picture1 = Image.open('Streamlit/images/pereira-adesanya-faceoff.jpeg')
+# picture2 = Image.open('Streamlit/images/ferg.jpg')
 
 # ---- Introduction and Bio ---- #
 st.divider()
@@ -106,9 +106,22 @@ with right_column:
 st.divider()
 # st.header('Galleria')
 
-image1list = Image.open('Streamlit/images/ceedee.jpg')
-image2list = Image.open('Streamlit/images/dez.jpg')
-image3list = Image.open('Streamlit/images/irvin.jpg')
+# image1list = Image.open('Streamlit/images/ceedee.jpg')
+# image2list = Image.open('Streamlit/images/dez.jpg')
+# image3list = Image.open('Streamlit/images/irvin.jpg')
+
+# Get the current directory of the script (Home.py)
+current_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Construct the full absolute paths for each image
+image1_path = os.path.join(current_dir, 'Streamlit/images/ceedee.jpg')
+image2_path = os.path.join(current_dir, 'Streamlit/images/dez.jpg')
+image3_path = os.path.join(current_dir, 'Streamlit/images/irvin.jpg')
+
+# Load the images using their absolute paths
+image1list = Image.open(image1_path)
+image2list = Image.open(image2_path)
+image3list = Image.open(image3_path)
 
 col1, col2, col3 = st.columns(3)
 with col1:
