@@ -8,9 +8,38 @@ from PIL import Image
 
 st.set_page_config(page_title="NFL AI", page_icon="🏈", layout="wide")
 
+# Load the background image
+def get_base64_image(image_path):
+    with open(image_path, "rb") as image_file:
+        base64_image = base64.b64encode(image_file.read()).decode("utf-8")
+    return base64_image
+
+bg_image_base64 = get_base64_image('Streamlit/data/wp11925945-justin-jefferson-2023-wallpapers.jpg')
+
+# Add CSS for the background image behind the title
+st.markdown(
+    f"""
+    <style>
+    .title-area {{
+        background-image: url("data:image/jpeg;base64,{bg_image_base64}");
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+        padding: 2rem;
+        border-radius: 10px;
+    }}
+    </style>
+    <div class="title-area">
+        <h1>NFL AI</h1>
+        <p>Welcome to NFL AI</p>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
 # ---- Titles ---- #
 st.title('NFL AI')
-st.markdown('###### By Tyler Durette')
 st.write('Welcome to NFL AI')
 # st.write("[My Repo >](https://github.com/bestisblessed)")
 
@@ -35,8 +64,8 @@ def load_lottie_pictures(url):
 
 lottie_picture1 = load_lottie_pictures("https://lottie.host/9501172e-b94f-441d-a10d-406d7536663c/510yizrK3A.json")
 
-picture1 = Image.open('Streamlit/images/pereira-adesanya-faceoff.jpeg')
-picture2 = Image.open('Streamlit/images/ferg.jpg')
+# picture1 = Image.open('Streamlit/images/pereira-adesanya-faceoff.jpeg')
+# picture2 = Image.open('Streamlit/images/ferg.jpg')
 
 # ---- Introduction and Bio ---- #
 st.divider()
@@ -45,15 +74,15 @@ left_column, right_column = st.columns(2)
 with left_column:
     st.write('##')
     st.write('''
-        # I predict winners. Simple as that. All I do is win.
-        - Historical AI chatbot
+        - Historical AI chatbot since 2000 season
         - Predictive modeling
         - Game outcomes
         - Player performances
+        - Standings & league leaders
         - Arbitrage opportunities
         - Random analysis
 
-        If this all interests you, this is your lucky day. Nobody is better than us.
+        If this all interests you, this is the spot.
     ''')
 with right_column:
     st_lottie(lottie_picture1, height=400, width=400, key='lottie1')
@@ -104,9 +133,9 @@ with right_column:
 st.divider()
 # st.header('Galleria')
 
-image1list = Image.open('Streamlit/images/friends.jpg')
-image2list = Image.open('Streamlit/images/holloway1.jpeg')
-image3list = Image.open('Streamlit/images/jonesgustaffson.jpg')
+image1list = Image.open('Streamlit/images/wp12999923-ceedee-lamb-cowboys-wallpapers.jpg')
+image2list = Image.open('Streamlit/images/wp1872273-dez-bryant-wallpapers.jpg')
+image3list = Image.open('Streamlit/images/wp9604297-michael-irvin-wallpapers.jpg')
 
 col1, col2, col3 = st.columns(3)
 with col1:
@@ -117,7 +146,7 @@ with col3:
     st.image(image3list, use_column_width=True, caption="Image 3")
 
 ### Video
-video1 = 'https://www.youtube.com/watch?v=KxeQHTyfbc0'
+video1 = 'https://www.youtube.com/watch?v=RABQY0t1Bqw&list=PL3HhsOxjnSwI9TDupRLRhPN3TAG4CFGPe&index=40'
 st.write('##')
 col1, col2, col3 = st.columns([1, 3, 1])
 with col2:
@@ -129,5 +158,5 @@ st.divider()
 st.header('Contact Me')
 st.write('##')
 # st.write('Hover over this text for more information [?](Your help text here)')
-st.divider()
+st.markdown('By Tyler Durette')
 st.markdown("NFL AI © 2023 | [GitHub](https://github.com/bestisblessed) | [Contact Me](tyler.durette@gmail.com)")
