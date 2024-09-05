@@ -106,7 +106,7 @@ with right_column:
 st.divider()
 # st.header('Galleria')
 
-image1list = Image.open('Streamlit/images/wp12999923-ceedee-lamb-cowboys-wallpapers.jpg')
+image1list = Image.open('Streamlit/images/wp12999916-ceedee-lamb-cowboys-wallpapers Large.jpeg')
 image2list = Image.open('Streamlit/images/wp1872273-dez-bryant-wallpapers.jpg')
 image3list = Image.open('Streamlit/images/wp9604297-michael-irvin-wallpapers.jpg')
 
