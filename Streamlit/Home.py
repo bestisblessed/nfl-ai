@@ -14,7 +14,7 @@ st.title('NFL AI')
 st.write('Welcome to NFL AI')
 # st.write("[My Repo >](https://github.com/bestisblessed)")
 current_dir = os.path.dirname(os.path.abspath(__file__))
-justin_jefferson_path = os.path.join(current_dir, 'Streamlit/images/wp11925945-justin-jefferson-2023-wallpapers.jpg')
+justin_jefferson_path = os.path.join(current_dir, 'Streamlit/images/jettas.jpg')
 st.image(justin_jefferson_path, use_column_width=True)
 
 # ---- Loading Data ---- #
