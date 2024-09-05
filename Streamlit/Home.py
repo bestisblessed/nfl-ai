@@ -8,40 +8,11 @@ from PIL import Image
 
 st.set_page_config(page_title="NFL AI", page_icon="🏈", layout="wide")
 
-# Load the background image
-def get_base64_image(image_path):
-    with open(image_path, "rb") as image_file:
-        base64_image = base64.b64encode(image_file.read()).decode("utf-8")
-    return base64_image
-
-bg_image_base64 = get_base64_image('Streamlit/data/wp11925945-justin-jefferson-2023-wallpapers.jpg')
-
-# Add CSS for the background image behind the title
-st.markdown(
-    f"""
-    <style>
-    .title-area {{
-        background-image: url("data:image/jpeg;base64,{bg_image_base64}");
-        background-size: cover;
-        background-position: center;
-        color: white;
-        text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
-        padding: 2rem;
-        border-radius: 10px;
-    }}
-    </style>
-    <div class="title-area">
-        <h1>NFL AI</h1>
-        <p>Welcome to NFL AI</p>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
-
 # ---- Titles ---- #
 st.title('NFL AI')
 st.write('Welcome to NFL AI')
 # st.write("[My Repo >](https://github.com/bestisblessed)")
+st.image('Streamlit/images/wp11925945-justin-jefferson-2023-wallpapers.jpg', use_column_width=True)
 
 # ---- Loading Data ---- #
 df_teams = pd.read_csv('Streamlit/data/Teams.csv')
@@ -64,8 +35,8 @@ def load_lottie_pictures(url):
 
 lottie_picture1 = load_lottie_pictures("https://lottie.host/9501172e-b94f-441d-a10d-406d7536663c/510yizrK3A.json")
 
-# picture1 = Image.open('Streamlit/images/pereira-adesanya-faceoff.jpeg')
-# picture2 = Image.open('Streamlit/images/ferg.jpg')
+picture1 = Image.open('Streamlit/images/pereira-adesanya-faceoff.jpeg')
+picture2 = Image.open('Streamlit/images/ferg.jpg')
 
 # ---- Introduction and Bio ---- #
 st.divider()
