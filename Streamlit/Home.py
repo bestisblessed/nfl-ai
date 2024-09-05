@@ -121,19 +121,21 @@ image2_path = os.path.join(current_dir, 'Streamlit/images/dez.jpg')
 image3_path = os.path.join(current_dir, 'Streamlit/images/irvin.jpg')
 image4_path = os.path.join(current_dir, 'Streamlit/images/jettas.jpg')
 
-
 # Load the images using their absolute paths
 image1list = Image.open(image1_path)
 image2list = Image.open(image2_path)
 image3list = Image.open(image3_path)
+image4list = Image.open(image4_path)
 
 col1, col2, col3 = st.columns(3)
 with col1:
-    st.image(image1list, use_column_width=True, caption="Image 1")
+    st.image(image1list, use_column_width=True, caption="Ceedee 88")
 with col2:
-    st.image(image2list, use_column_width=True, caption="Image 2")
+    st.image(image2list, use_column_width=True, caption="Bryant 88")
 with col3:
-    st.image(image3list, use_column_width=True, caption="Image 3")
+    st.image(image3list, use_column_width=True, caption="Irvin 88")
+
+st.image(image4list, use_column_width=True, caption="JJettas")
 
 ### Video
 video1 = 'https://www.youtube.com/watch?v=K8RQkt3Ee0Y'
