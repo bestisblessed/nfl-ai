@@ -21,6 +21,144 @@ df_team_game_logs = st.session_state['df_team_game_logs']
 df_schedule_and_game_results = st.session_state['df_schedule_and_game_results']
 st.divider()
 
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Load the dataset
+file_path = "data/all_team_game_logs.csv"
+data = pd.read_csv(file_path)
+
+# Filter dataset for the 2024 season
+season_2024_data = data[data['season'] == 2024]
+
+# Group by team and calculate the average pass_yds and rush_yds per game
+team_averages = season_2024_data.groupby('Team_Name').agg({'pass_yds': 'mean', 'rush_yds': 'mean'}).reset_index()
+
+# Sort the data by team name for consistent plotting
+team_averages = team_averages.sort_values('Team_Name')
+
+# Plotting the double bar graph
+fig, ax = plt.subplots(figsize=(14, 7))
+
+# Define the x locations for the groups
+x = range(len(team_averages))
+
+# Bar positions for each metric
+bar_width = 0.35
+bar1 = plt.bar(x, team_averages['pass_yds'], width=bar_width, label='Average Pass Yards per Game')
+bar2 = plt.bar([i + bar_width for i in x], team_averages['rush_yds'], width=bar_width, label='Average Rush Yards per Game')
+
+# Set labels and title
+plt.xlabel('Teams')
+plt.ylabel('Yards per Game')
+plt.title('Average Pass Yards and Rush Yards per Game for NFL Teams (2024 Season)')
+plt.xticks([i + bar_width / 2 for i in x], team_averages['Team_Name'], rotation=90)
+plt.legend()
+
+# Display the plot
+plt.tight_layout()
+# plt.show()
+st.pyplot(plt)
+
+# Find top 5 teams for average pass yards and rush yards per game
+top_5_pass_yds = team_averages[['Team_Name', 'pass_yds']].sort_values(by='pass_yds', ascending=False).head(5)
+top_5_rush_yds = team_averages[['Team_Name', 'rush_yds']].sort_values(by='rush_yds', ascending=False).head(5)
+
+# # Display the top 5 teams for passing and rushing yards per game
+# st.write("Top 5 Teams for Passing Yards per Game (2024 Season):")
+# st.write(top_5_pass_yds)
+
+# st.write("\nTop 5 Teams for Rushing Yards per Game (2024 Season):")
+# st.write(top_5_rush_yds)
+# Create two columns for passing and rushing yards
+col1, col2 = st.columns(2)
+
+# Display top 5 passing yards in the first column
+with col1:
+    st.write("Top 5 Teams for Passing Yards per Game (2024 Season):")
+    st.write(top_5_pass_yds)
+
+# Display top 5 rushing yards in the second column
+with col2:
+    st.write("Top 5 Teams for Rushing Yards per Game (2024 Season):")
+    st.write(top_5_rush_yds)
+
+
+st.divider()
+
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Load the dataset
+file_path = "data/all_team_game_logs.csv"
+data = pd.read_csv(file_path)
+
+# Filter dataset for the 2024 season
+season_2024_data = data[data['season'] == 2024]
+
+# Group by team and calculate the average pass and rush yards allowed per game based on the opponent's performance
+defense_averages = season_2024_data.groupby('opp').agg({'pass_yds': 'mean', 'rush_yds': 'mean'}).reset_index()
+defense_averages.columns = ['Team_Name', 'pass_yards_allowed', 'rush_yards_allowed']
+
+# Sort the data by team name for consistent plotting
+defense_averages = defense_averages.sort_values('Team_Name')
+
+# Plotting the double bar graph for defensive metrics
+fig, ax = plt.subplots(figsize=(14, 7))
+
+# Define the x locations for the groups
+x_def = range(len(defense_averages))
+
+# Bar positions for each metric
+bar_width_def = 0.35
+bar1_def = plt.bar(x_def, defense_averages['pass_yards_allowed'], width=bar_width_def, label='Average Pass Yards Allowed per Game')
+bar2_def = plt.bar([i + bar_width_def for i in x_def], defense_averages['rush_yards_allowed'], width=bar_width_def, label='Average Rush Yards Allowed per Game')
+
+# Set labels and title
+plt.xlabel('Teams')
+plt.ylabel('Yards Allowed per Game')
+plt.title('Average Pass Yards and Rush Yards Allowed per Game for NFL Teams (2024 Season)')
+plt.xticks([i + bar_width_def / 2 for i in x_def], defense_averages['Team_Name'], rotation=90)
+plt.legend()
+
+# Display the plot
+plt.tight_layout()
+# plt.show()
+st.pyplot(plt)
+
+# Find top 5 and bottom 5 teams for pass yards and rush yards allowed per game
+top_5_pass_yards_allowed = defense_averages[['Team_Name', 'pass_yards_allowed']].sort_values(by='pass_yards_allowed', ascending=True).head(5)
+bottom_5_pass_yards_allowed = defense_averages[['Team_Name', 'pass_yards_allowed']].sort_values(by='pass_yards_allowed', ascending=False).head(5)
+
+top_5_rush_yards_allowed = defense_averages[['Team_Name', 'rush_yards_allowed']].sort_values(by='rush_yards_allowed', ascending=True).head(5)
+bottom_5_rush_yards_allowed = defense_averages[['Team_Name', 'rush_yards_allowed']].sort_values(by='rush_yards_allowed', ascending=False).head(5)
+
+# # Display the top 5 and bottom 5 teams
+# st.write("Top 5 Teams Allowing the Fewest Passing Yards per Game (2024 Season):")
+# st.write(top_5_pass_yards_allowed)
+
+# # st.write("\nBottom 5 Teams Allowing the Most Passing Yards per Game (2024 Season):")
+# # st.write(bottom_5_pass_yards_allowed)
+
+# st.write("\nTop 5 Teams Allowing the Fewest Rushing Yards per Game (2024 Season):")
+# st.write(top_5_rush_yards_allowed)
+
+# # st.write("\nBottom 5 Teams Allowing the Most Rushing Yards per Game (2024 Season):")
+# # st.write(bottom_5_rush_yards_allowed)
+# Create two columns for passing yards
+col1, col2 = st.columns(2)
+
+# Display top 5 and bottom 5 for passing yards in two columns
+with col1:
+    st.write("Top 5 Teams Allowing the Fewest Passing Yards per Game (2024 Season):")
+    st.write(top_5_pass_yards_allowed)
+
+with col2:
+    st.write("Top 5 Teams Allowing the Fewest Rushing Yards per Game (2024 Season):")
+    st.write(top_5_rush_yards_allowed)
+
+st.divider()
 
 # Sacks Given & Taken
 # years = [2021, 2022, 2023, 2024]
@@ -176,6 +314,7 @@ plt.tight_layout()
 # Display the plot in Streamlit
 st.pyplot(fig)  # Use Streamlit to display the Matplotlib figure
 
+st.divider()
 
 import streamlit as st
 import matplotlib.pyplot as plt
@@ -249,6 +388,7 @@ plt.grid(True, axis='y', linestyle='--', alpha=0.7)
 # Display the chart in Streamlit
 st.pyplot(plt)
 
+st.divider()
 
 
 # %matplotlib inline
@@ -269,7 +409,7 @@ unplayed_games = df_team_game_logs[
 ]
 unplayed_game_ids = unplayed_games['game_id'].tolist()
 df_team_game_logs = df_team_game_logs[~df_team_game_logs['game_id'].isin(unplayed_game_ids)]
-print("Unplayed games removed and updated CSV saved.")
+st.write("Unplayed games removed and updated CSV saved.")
 
 # Extract year and week from 'game_id'
 df_team_game_logs[['year', 'week', 'away_team', 'home_team']] = df_team_game_logs['game_id'].str.split('_', expand=True).iloc[:, :4]
@@ -389,3 +529,5 @@ plt.tight_layout()
 # Display the plot
 # plt.show()
 st.pyplot(plt)
+
+st.divider()
