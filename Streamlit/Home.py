@@ -14,7 +14,7 @@ st.title('NFL AI')
 st.write('Welcome to NFL AI')
 # st.write("[My Repo >](https://github.com/bestisblessed)")
 # current_dir = os.path.dirname(os.path.abspath(__file__))
-# justin_jefferson_path = os.path.join(current_dir, 'Streamlit/images/jettas.jpg')
+# justin_jefferson_path = os.path.join(current_dir, 'images/jettas.jpg')
 # st.image(justin_jefferson_path, use_column_width=True)
 # st.image(justin_jefferson_path, width=300)
 
@@ -37,8 +37,8 @@ df_all_passing_rushing_receiving = pd.read_csv(csv_file_path_3)
 df_teams = pd.read_csv('data/Teams.csv')
 df_games = pd.read_csv('data/Games.csv')
 df_playerstats = pd.read_csv('data/PlayerStats.csv')
-# df_team_game_logs = pd.read_csv('Streamlit/data/all_teams_game_logs.csv')
-# df_schedule_and_game_results = pd.read_csv('Streamlit/data/all_teams_schedule_and_game_results_merged.csv')
+# df_team_game_logs = pd.read_csv('data/all_teams_game_logs.csv')
+# df_schedule_and_game_results = pd.read_csv('data/all_teams_schedule_and_game_results_merged.csv')
 st.session_state['df_teams'] = df_teams
 st.session_state['df_games'] = df_games
 st.session_state['df_playerstats'] = df_playerstats
@@ -57,8 +57,8 @@ def load_lottie_pictures(url):
 
 lottie_picture1 = load_lottie_pictures("https://lottie.host/9501172e-b94f-441d-a10d-406d7536663c/510yizrK3A.json")
 
-# picture1 = Image.open('Streamlit/images/pereira-adesanya-faceoff.jpeg')
-# picture2 = Image.open('Streamlit/images/ferg.jpg')
+# picture1 = Image.open('images/pereira-adesanya-faceoff.jpeg')
+# picture2 = Image.open('images/ferg.jpg')
 
 # ---- Introduction and Bio ---- #
 st.divider()
@@ -127,18 +127,18 @@ st.divider()
 st.header('Galleria')
 st.write()
 
-# image1list = Image.open('Streamlit/images/ceedee.jpg')
-# image2list = Image.open('Streamlit/images/dez.jpg')
-# image3list = Image.open('Streamlit/images/irvin.jpg')
+# image1list = Image.open('images/ceedee.jpg')
+# image2list = Image.open('images/dez.jpg')
+# image3list = Image.open('images/irvin.jpg')
 
 # Get the current directory of the script (Home.py)
 current_dir = os.path.dirname(os.path.abspath(__file__))
 
 # Construct the full absolute paths for each image
-image1_path = os.path.join(current_dir, 'Streamlit/images/ceedee.jpg')
-image2_path = os.path.join(current_dir, 'Streamlit/images/dez2.jpg')
-image3_path = os.path.join(current_dir, 'Streamlit/images/irvin.jpg')
-image4_path = os.path.join(current_dir, 'Streamlit/images/jettas.jpg')
+image1_path = os.path.join(current_dir, 'images/ceedee.jpg')
+image2_path = os.path.join(current_dir, 'images/dez2.jpg')
+image3_path = os.path.join(current_dir, 'images/irvin.jpg')
+image4_path = os.path.join(current_dir, 'images/jettas.jpg')
 
 # Load the images using their absolute paths
 image1list = Image.open(image1_path)
