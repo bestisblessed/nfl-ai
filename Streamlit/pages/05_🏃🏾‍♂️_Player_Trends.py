@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import os
 
 # Define the base directory
-base_dir = os.path.abspath('./data')
+base_dir = os.path.abspath('../data')
 
 # Use absolute paths
 df_teams = pd.read_csv(os.path.join(base_dir, 'Teams.csv'))
