@@ -30,6 +30,8 @@ csv_file_path_2 = os.path.join(current_dir, 'data/all_teams_schedule_and_game_re
 df_schedule_and_game_results = pd.read_csv(csv_file_path_2)
 csv_file_path_3 = os.path.join(current_dir, 'data/all_passing_rushing_receiving.csv')
 df_all_passing_rushing_receiving = pd.read_csv(csv_file_path_3)
+# csv_file_path_5 = os.path.join(current_dir, 'data/odds/nfl_odds_movements.csv')
+# df_nfl_odds_movements = pd.read_csv(csv_file_path_5)
 
 # ---- Loading Data ---- #
 df_teams = pd.read_csv('Streamlit/data/Teams.csv')
@@ -44,6 +46,7 @@ st.session_state['df_team_game_logs'] = df_team_game_logs
 st.session_state['df_schedule_and_game_results'] = df_schedule_and_game_results
 st.session_state['df_all_passing_rushing_receiving'] = df_all_passing_rushing_receiving
 st.session_state['df_team_game_logs_2024'] = df_team_game_logs_2024
+# st.session_state['df_nfl_odds_movements'] = df_nfl_odds_movements
 
 # ---- Loading Other Files ---- #
 def load_lottie_pictures(url):
