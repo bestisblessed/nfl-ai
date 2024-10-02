@@ -3,19 +3,29 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import os
 
-# Define the base directory
-base_dir = os.path.abspath('../data')
+# # Define the base directory
+# base_dir = os.path.abspath('../data')
 
-# Use absolute paths
-df_teams = pd.read_csv(os.path.join(base_dir, 'Teams.csv'))
-df_games = pd.read_csv(os.path.join(base_dir, 'Games.csv'))
-df_playerstats = pd.read_csv(os.path.join(base_dir, 'PlayerStats.csv'))
+# # Use absolute paths
+# df_teams = pd.read_csv(os.path.join(base_dir, 'Teams.csv'))
+# df_games = pd.read_csv(os.path.join(base_dir, 'Games.csv'))
+# df_playerstats = pd.read_csv(os.path.join(base_dir, 'PlayerStats.csv'))
 
 ### --- Title and Data --- ###
 st.title('Player Trends')
 # df_teams = pd.read_csv('./data/Teams.csv')
 # df_games = pd.read_csv('./data/Games.csv')
 # df_playerstats = pd.read_csv('./data/PlayerStats.csv')
+import streamlit as st
+from Home import df_teams, df_games, df_playerstats, df_team_game_logs, df_schedule_and_game_results
+
+# Store DataFrames in session state
+st.session_state['df_teams'] = df_teams
+st.session_state['df_games'] = df_games
+st.session_state['df_playerstats'] = df_playerstats
+st.session_state['df_team_game_logs'] = df_team_game_logs
+st.session_state['df_schedule_and_game_results'] = df_schedule_and_game_results
+
 st.divider()
 
 tab1, tab2, tab3, tab4 = st.tabs(["QBs", "RBs", "WRs", "TEs"])
