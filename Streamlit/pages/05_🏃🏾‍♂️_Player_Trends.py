@@ -1,12 +1,21 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
+import os
+
+# Define the base directory
+base_dir = os.path.abspath('./data')
+
+# Use absolute paths
+df_teams = pd.read_csv(os.path.join(base_dir, 'Teams.csv'))
+df_games = pd.read_csv(os.path.join(base_dir, 'Games.csv'))
+df_playerstats = pd.read_csv(os.path.join(base_dir, 'PlayerStats.csv'))
 
 ### --- Title and Data --- ###
 st.title('Player Trends')
-df_teams = pd.read_csv('./data/Teams.csv')
-df_games = pd.read_csv('./data/Games.csv')
-df_playerstats = pd.read_csv('./data/PlayerStats.csv')
+# df_teams = pd.read_csv('./data/Teams.csv')
+# df_games = pd.read_csv('./data/Games.csv')
+# df_playerstats = pd.read_csv('./data/PlayerStats.csv')
 st.divider()
 
 tab1, tab2, tab3, tab4 = st.tabs(["QBs", "RBs", "WRs", "TEs"])
