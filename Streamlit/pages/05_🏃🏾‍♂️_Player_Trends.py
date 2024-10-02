@@ -38,8 +38,8 @@ tab1, tab2, tab3, tab4 = st.tabs(["QBs", "RBs", "WRs", "TEs"])
 with tab1:
 ### SACKS ###
     st.header('Quarterback Sack Rankings')
-    player_stats_df = pd.read_csv('./data/PlayerStats.csv')
-    qb_2023_stats = player_stats_df[(player_stats_df['position'] == 'QB') & (player_stats_df['season'] == 2023)]
+    # df_playerstats = pd.read_csv('./data/PlayerStats.csv')
+    qb_2023_stats = df_playerstats[(df_playerstats['position'] == 'QB') & (df_playerstats['season'] == 2023)]
     qb_sacked_2023 = qb_2023_stats.groupby('player_display_name')['sacks'].sum().reset_index()
     qb_sacked_ranked_2023 = qb_sacked_2023.sort_values(by='sacks')
     plt.figure(figsize=(12, len(qb_sacked_ranked_2023) / 2))
@@ -54,7 +54,7 @@ with tab1:
 
     ### INTERCEPTIONS ###
     st.header('Quarterback Interception Rankings')
-    qb_interceptions_stats = player_stats_df[(player_stats_df['position'] == 'QB') & (player_stats_df['season'] == 2023)]
+    qb_interceptions_stats = df_playerstats[(df_playerstats['position'] == 'QB') & (df_playerstats['season'] == 2023)]
     qb_interceptions_2023 = qb_interceptions_stats.groupby('player_display_name')['interceptions'].sum().reset_index()
     qb_interceptions_ranked_2023 = qb_interceptions_2023.sort_values(by='interceptions')
     plt.figure(figsize=(12, len(qb_interceptions_ranked_2023) / 2))
