@@ -24,13 +24,15 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 # Load the CSV data into a DataFrame
 csv_file_path = os.path.join(current_dir, 'data/all_team_game_logs.csv')
 df_team_game_logs = pd.read_csv(csv_file_path)
+csv_file_path_2 = os.path.join(current_dir, 'data/all_teams_schedule_and_game_results_merged.csv')
+df_schedule_and_game_results = pd.read_csv(csv_file_path_2)
 
 # ---- Loading Data ---- #
 df_teams = pd.read_csv('Streamlit/data/Teams.csv')
 df_games = pd.read_csv('Streamlit/data/Games.csv')
 df_playerstats = pd.read_csv('Streamlit/data/PlayerStats.csv')
 # df_team_game_logs = pd.read_csv('Streamlit/data/all_teams_game_logs.csv')
-df_schedule_and_game_results = pd.read_csv('Streamlit/data/all_teams_schedule_and_game_results_merged.csv')
+# df_schedule_and_game_results = pd.read_csv('Streamlit/data/all_teams_schedule_and_game_results_merged.csv')
 st.session_state['df_teams'] = df_teams
 st.session_state['df_games'] = df_games
 st.session_state['df_playerstats'] = df_playerstats
