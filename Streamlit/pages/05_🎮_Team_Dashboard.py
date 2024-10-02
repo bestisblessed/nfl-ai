@@ -6,7 +6,11 @@ from Home import df_teams, df_games, df_playerstats, df_team_game_logs, df_sched
 import plotly
 import plotly.graph_objects as go
 import numpy as np
-
+import matplotlib.pyplot as plt
+import numpy as np
+from PIL import Image
+import requests
+from io import BytesIO
 
 # Set up the page
 st.title('Team Dashboard')
@@ -221,7 +225,7 @@ for index, value in enumerate(df['Explosive Play Rate (%)']):
 
 # Function to add team logos
 def add_team_logo(axes, team_abbreviation, xpos, ypos):
-    img_path = f'images/{team_abbreviation}.png'  # Adjust the path based on your setup
+    img_path = f'images/team-logos/{team_abbreviation}.png'  # Adjust the path based on your setup
     logo = mpimg.imread(img_path)
     imagebox = OffsetImage(logo, zoom=0.15)
     ab = AnnotationBbox(imagebox, (xpos, ypos), frameon=False, box_alignment=(0.5, -0.15))
@@ -243,4 +247,145 @@ ax.set_xticklabels([''] * len(teams))
 plt.grid(True, axis='y', linestyle='--', alpha=0.7)
 
 # Display the chart in Streamlit
+st.pyplot(plt)
+
+
+
+# %matplotlib inline
+import pandas as pd
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Load CSV (adjust the path as needed)
+# df_team_game_logs = pd.read_csv('./data/all_team_game_logs.csv')
+
+# Sacks Given & Taken
+years = [2024]
+
+unplayed_games = df_team_game_logs[
+    df_team_game_logs['game_id'].str.contains('2024') &  # Check if 'game_id' contains "2024"
+    ((df_team_game_logs['home_pts_off'].isnull() | (df_team_game_logs['home_pts_off'] == 0)) &
+     (df_team_game_logs['away_pts_off'].isnull() | (df_team_game_logs['away_pts_off'] == 0)))
+]
+unplayed_game_ids = unplayed_games['game_id'].tolist()
+df_team_game_logs = df_team_game_logs[~df_team_game_logs['game_id'].isin(unplayed_game_ids)]
+print("Unplayed games removed and updated CSV saved.")
+
+# Extract year and week from 'game_id'
+df_team_game_logs[['year', 'week', 'away_team', 'home_team']] = df_team_game_logs['game_id'].str.split('_', expand=True).iloc[:, :4]
+df_team_game_logs['year'] = df_team_game_logs['year'].astype(int)
+df_team_game_logs['week'] = df_team_game_logs['week'].astype(int)
+for year in years:
+    df_2023 = df_team_game_logs[(df_team_game_logs['year'] == year) & (df_team_game_logs['week'] <= 18)]
+    
+    # Initialize a dictionary to track sacks made and sacks taken
+    sack_stats = {
+        'team': [],
+        'sacks_made': [],
+        'sacks_taken': []
+    }
+    
+    # List of all 32 NFL teams
+    teams = [
+        'ARI', 'ATL', 'BAL', 'BUF', 'CAR', 'CHI', 'CIN', 'CLE',
+        'DAL', 'DEN', 'DET', 'GB', 'HOU', 'IND', 'JAX', 'KC',
+        'LVR', 'LAC', 'LAR', 'MIA', 'MIN', 'NE', 'NO', 'NYG',
+        'NYJ', 'PHI', 'PIT', 'SF', 'SEA', 'TB', 'TEN', 'WAS'
+    ]
+    
+    # Calculate the sacks made and sacks taken for each team
+    for team in teams:
+        sacks_made = df_2023.loc[(df_2023['home_team'] == team), 'away_pass_sacked'].sum() + \
+                     df_2023.loc[(df_2023['away_team'] == team), 'home_pass_sacked'].sum()
+        
+        sacks_taken = df_2023.loc[(df_2023['home_team'] == team), 'home_pass_sacked'].sum() + \
+                      df_2023.loc[(df_2023['away_team'] == team), 'away_pass_sacked'].sum()
+        
+        sack_stats['team'].append(team)
+        sack_stats['sacks_made'].append(sacks_made)
+        sack_stats['sacks_taken'].append(sacks_taken)
+    
+sack_stats_df = pd.DataFrame(sack_stats)
+    
+# Map team logos to their respective file paths in the 'images/team-logos/' directory
+team_logos = {
+    'ARI': 'images/team-logos/crd.png',
+    'ATL': 'images/team-logos/atl.png',
+    'BAL': 'images/team-logos/rav.png',
+    'BUF': 'images/team-logos/buf.png',
+    'CAR': 'images/team-logos/car.png',
+    'CHI': 'images/team-logos/chi.png',
+    'CIN': 'images/team-logos/cin.png',
+    'CLE': 'images/team-logos/cle.png',
+    'DAL': 'images/team-logos/dal.png',
+    'DEN': 'images/team-logos/den.png',
+    'DET': 'images/team-logos/det.png',
+    'GB': 'images/team-logos/gnb.png',
+    'HOU': 'images/team-logos/htx.png',
+    'IND': 'images/team-logos/clt.png',
+    'JAX': 'images/team-logos/jax.png',
+    'KC': 'images/team-logos/kan.png',
+    'LAC': 'images/team-logos/sdg.png',
+    'LAR': 'images/team-logos/ram.png',
+    'LVR': 'images/team-logos/rai.png',
+    'MIA': 'images/team-logos/mia.png',
+    'MIN': 'images/team-logos/min.png',
+    'NE': 'images/team-logos/nwe.png',
+    'NO': 'images/team-logos/nor.png',
+    'NYG': 'images/team-logos/nyg.png',
+    'NYJ': 'images/team-logos/nyj.png',
+    'PHI': 'images/team-logos/phi.png',
+    'PIT': 'images/team-logos/pit.png',
+    'SEA': 'images/team-logos/sea.png',
+    'SF': 'images/team-logos/sfo.png',
+    'TB': 'images/team-logos/tam.png',
+    'TEN': 'images/team-logos/oti.png',
+    'WAS': 'images/team-logos/was.png',
+}
+
+# Function to add team logos on top of the bars
+def autolabel_with_logos(rects, ax, labels):
+    """Attach an image above each bar displaying the team logo."""
+    for rect, label in zip(rects, labels):
+        # Load the logo image
+        img = Image.open(team_logos[label])
+        
+        # Set the position for the image (centered on the bar and above the bar)
+        height = rect.get_height()
+        imagebox = OffsetImage(img, zoom=0.15)  # Adjust the zoom as needed
+        ab = AnnotationBbox(imagebox, (rect.get_x() + rect.get_width() / 2, height + 1),
+                            frameon=False, xycoords='data', box_alignment=(0.5, 0))
+        
+        ax.add_artist(ab)
+
+# Sort sack_stats_df by sacks made and taken
+sack_stats_df_sorted = sack_stats_df.sort_values(by=['sacks_made', 'sacks_taken'], ascending=False)
+
+# Get the list of teams from the sorted DataFrame
+teams = sack_stats_df_sorted['team'].tolist()
+sacks_made = sack_stats_df_sorted['sacks_made'].tolist()
+
+# Create the
+# Create the x locations for the teams
+x = np.arange(len(teams))  # Label locations
+
+# Create a single plot for sacks made
+fig, ax1 = plt.subplots(figsize=(14, 6))
+
+# Bar chart for sacks made
+rects1 = ax1.bar(x, sacks_made, color='green')
+ax1.set_xlabel('Teams')
+ax1.set_ylabel('Sacks Made')
+ax1.set_title('Sacks Made for All NFL Teams')
+ax1.set_xticks(x)
+ax1.set_xticklabels(teams, rotation=90)  # Rotate team labels for better visibility
+
+# Call autolabel with logos
+autolabel_with_logos(rects1, ax1, teams)
+
+# Ensure layout fits well with rotated labels
+plt.tight_layout()
+
+# Display the plot
+# plt.show()
 st.pyplot(plt)
