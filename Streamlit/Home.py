@@ -24,6 +24,8 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 # Load the CSV data into a DataFrame
 csv_file_path = os.path.join(current_dir, 'data/all_team_game_logs.csv')
 df_team_game_logs = pd.read_csv(csv_file_path)
+csv_file_path_4 = os.path.join(current_dir, 'data/SR-game-logs/all_teams_game_logs_2024.csv')
+df_team_game_logs_2024 = pd.read_csv(csv_file_path_4)
 csv_file_path_2 = os.path.join(current_dir, 'data/all_teams_schedule_and_game_results_merged.csv')
 df_schedule_and_game_results = pd.read_csv(csv_file_path_2)
 csv_file_path_3 = os.path.join(current_dir, 'data/all_passing_rushing_receiving.csv')
@@ -41,6 +43,7 @@ st.session_state['df_playerstats'] = df_playerstats
 st.session_state['df_team_game_logs'] = df_team_game_logs
 st.session_state['df_schedule_and_game_results'] = df_schedule_and_game_results
 st.session_state['df_all_passing_rushing_receiving'] = df_all_passing_rushing_receiving
+st.session_state['df_team_game_logs_2024'] = df_team_game_logs_2024
 
 # ---- Loading Other Files ---- #
 def load_lottie_pictures(url):
