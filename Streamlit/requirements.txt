@@ -9,3 +9,4 @@ streamlit-lottie==0.0.5
 watchdog==4.0.0
 requests==2.31.0
 pillow==10.3.0
+plotly==5.23.0
