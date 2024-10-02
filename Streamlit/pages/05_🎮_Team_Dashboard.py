@@ -171,3 +171,76 @@ plt.tight_layout()
 
 # Display the plot in Streamlit
 st.pyplot(fig)  # Use Streamlit to display the Matplotlib figure
+
+
+import streamlit as st
+import matplotlib.pyplot as plt
+import seaborn as sns
+import pandas as pd
+import matplotlib.image as mpimg
+from matplotlib.offsetbox import OffsetImage, AnnotationBbox
+
+# Streamlit title
+st.title("Explosive Play Rates After Week 3 - 2024 NFL Season")
+
+# List of teams and their explosive play rates
+teams = [
+    'crd', 'atl', 'rav', 'buf', 'car', 'chi', 'cin', 'cle', 'dal', 'den',
+    'det', 'gnb', 'htx', 'clt', 'jax', 'kan', 'sdg', 'ram', 'rai', 'mia',
+    'min', 'nwe', 'nor', 'nyg', 'nyj', 'phi', 'pit', 'sea', 'sfo', 'tam',
+    'oti', 'was'
+]
+
+explosive_play_rates = [
+    14.1, 13.2, 10.9, 10.9, 10.4, 10.4, 10.4, 10.3, 
+    10.2, 10.0, 9.3, 9.3, 9.1, 8.0, 7.9, 7.8, 7.7, 
+    7.5, 7.4, 7.3, 7.2, 7.0, 6.9, 6.1, 5.4, 6.0, 
+    6.5, 5.9, 6.3, 6.2, 5.8, 5.3
+]
+
+# Create a DataFrame
+df = pd.DataFrame({
+    'Team': teams,
+    'Explosive Play Rate (%)': explosive_play_rates
+})
+
+# Set the plot size
+plt.figure(figsize=(14, 8))
+
+# Create the barplot
+ax = sns.barplot(
+    x='Team', 
+    y='Explosive Play Rate (%)', 
+    data=df, 
+    palette="coolwarm"
+)
+
+# Add data labels above the bars
+for index, value in enumerate(df['Explosive Play Rate (%)']):
+    ax.text(index, value + 0.2, f'{value}%', ha='center', va='bottom', fontsize=10, fontweight='bold')
+
+# Function to add team logos
+def add_team_logo(axes, team_abbreviation, xpos, ypos):
+    img_path = f'images/{team_abbreviation}.png'  # Adjust the path based on your setup
+    logo = mpimg.imread(img_path)
+    imagebox = OffsetImage(logo, zoom=0.15)
+    ab = AnnotationBbox(imagebox, (xpos, ypos), frameon=False, box_alignment=(0.5, -0.15))
+    axes.add_artist(ab)
+
+# Add logos below each bar
+for i, team in enumerate(df['Team']):
+    add_team_logo(ax, team, i, 0)
+
+# Set chart title and labels
+plt.title('Explosive Play Rates After Week 3 2024 NFL Season\n(10+ yard run or 20+ yard pass)', fontsize=14, weight='bold')
+plt.xlabel('')
+plt.ylabel('Explosive Play Rate (%)')
+
+# Hide x-axis labels (since we're using logos)
+ax.set_xticklabels([''] * len(teams))
+
+# Show the grid for better readability
+plt.grid(True, axis='y', linestyle='--', alpha=0.7)
+
+# Display the chart in Streamlit
+st.pyplot(plt)
