@@ -120,14 +120,6 @@ ax1.set_title('Sacks Made for All NFL Teams')
 ax1.set_xticks(x)
 ax1.set_xticklabels(teams, rotation=90)  # Rotate team labels for better visibility
 
-# Bar chart for sacks taken
-rects2 = ax2.bar(x, sacks_taken, color='red')
-ax2.set_xlabel('Teams')
-ax2.set_ylabel('Sacks Taken')
-ax2.set_title('Sacks Taken for All NFL Teams')
-ax2.set_xticks(x)
-ax2.set_xticklabels(teams, rotation=90)
-
 # Add value labels on top of the bars
 def autolabel(rects, ax):
     """Attach a text label above each bar displaying its height."""
@@ -141,7 +133,6 @@ def autolabel(rects, ax):
 
 # Add value labels to both bar charts
 autolabel(rects1, ax1)
-autolabel(rects2, ax2)
 
 # Ensure layout fits well with rotated labels
 plt.tight_layout()
