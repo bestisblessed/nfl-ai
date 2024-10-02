@@ -140,6 +140,58 @@ for year in years:
 
 # Code for plotting Sacks Made and Sacks Taken
 # Get the list of teams from the unique team values in your dataset
+# teams = sack_stats_df['team'].tolist()
+
+# # Ensure we match the correct sacks made and sacks taken for each team
+# sacks_made = [sack_stats_df[sack_stats_df['team'] == team]['sacks_made'].values[0] for team in teams]
+# sacks_taken = [sack_stats_df[sack_stats_df['team'] == team]['sacks_taken'].values[0] for team in teams]
+
+# # Create the x locations for the teams
+# x = np.arange(len(teams))  # Label locations
+
+# # Create two subplots: one for sacks made and one for sacks taken
+# fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(14, 12))
+
+# # Bar chart for sacks made
+# rects1 = ax1.bar(x, sacks_made, color='green')
+# ax1.set_xlabel('Teams')
+# ax1.set_ylabel('Sacks Made')
+# ax1.set_title('Sacks Made for All NFL Teams')
+# ax1.set_xticks(x)
+# ax1.set_xticklabels(teams, rotation=90)  # Rotate team labels for better visibility
+
+# # Bar chart for sacks taken
+# rects2 = ax2.bar(x, sacks_taken, color='red')
+# ax2.set_xlabel('Teams')
+# ax2.set_ylabel('Sacks Taken')
+# ax2.set_title('Sacks Taken for All NFL Teams')
+# ax2.set_xticks(x)
+# ax2.set_xticklabels(teams, rotation=90)
+
+# # Add value labels on top of the bars
+# def autolabel(rects, ax):
+#     """Attach a text label above each bar displaying its height."""
+#     for rect in rects:
+#         height = rect.get_height()
+#         ax.annotate(f'{height:.1f}',
+#                     xy=(rect.get_x() + rect.get_width() / 2, height),
+#                     xytext=(0, 3),  # 3 points vertical offset
+#                     textcoords="offset points",
+#                     ha='center', va='bottom')
+
+# # Add value labels to both bar charts
+# autolabel(rects1, ax1)
+# autolabel(rects2, ax2)
+
+# # Ensure layout fits well with rotated labels
+# plt.tight_layout()
+
+# # Display the plots in Streamlit
+# st.pyplot(fig)  # Use Streamlit to display the Matplotlib figure
+
+
+
+# Get the list of teams from the unique team values in your dataset
 teams = sack_stats_df['team'].tolist()
 
 # Ensure we match the correct sacks made and sacks taken for each team
