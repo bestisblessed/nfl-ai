@@ -164,3 +164,5 @@ with open(csv_file_path, mode='w', newline='') as csv_file:
         writer.writerow(movement)  # Write each movement
 
 print(f"Odds movements saved to {csv_file_path}")
+
+os.remove('data_backup.zip')

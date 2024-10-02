@@ -23,7 +23,7 @@ st.divider()
 current_dir = os.path.dirname(os.path.abspath(__file__))
 
 # Set the paths for images and database
-image_folder = os.path.join(current_dir, '../images')
+image_folder = os.path.join(current_dir, '../images/player-headshots/')
 db_path = os.path.join(current_dir, '../data', 'nfl.db')
 
 # Fetch player names and optionally load image in one function

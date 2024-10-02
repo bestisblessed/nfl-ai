@@ -34,9 +34,9 @@ df_all_passing_rushing_receiving = pd.read_csv(csv_file_path_3)
 # df_nfl_odds_movements = pd.read_csv(csv_file_path_5)
 
 # ---- Loading Data ---- #
-df_teams = pd.read_csv('Streamlit/data/Teams.csv')
-df_games = pd.read_csv('Streamlit/data/Games.csv')
-df_playerstats = pd.read_csv('Streamlit/data/PlayerStats.csv')
+df_teams = pd.read_csv('data/Teams.csv')
+df_games = pd.read_csv('data/Games.csv')
+df_playerstats = pd.read_csv('data/PlayerStats.csv')
 # df_team_game_logs = pd.read_csv('Streamlit/data/all_teams_game_logs.csv')
 # df_schedule_and_game_results = pd.read_csv('Streamlit/data/all_teams_schedule_and_game_results_merged.csv')
 st.session_state['df_teams'] = df_teams
