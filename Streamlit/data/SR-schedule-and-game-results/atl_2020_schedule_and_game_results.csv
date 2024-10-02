@@ -1,0 +1,18 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 13,1:00PM ET,boxscore,L,,0-1,,Seattle Seahawks,25,38,28,506,434,72,2,22,383,299,84,,7.25,-21.28,-0.51
+2,Sun,September 20,1:00PM ET,boxscore,L,,0-2,@,Dallas Cowboys,39,40,22,380,267,113,,33,570,445,125,3,13.66,-17.31,1.38
+3,Sun,September 27,1:00PM ET,boxscore,L,,0-3,,Chicago Bears,26,30,22,371,227,144,1,24,437,307,130,2,5.82,-2.87,-5.24
+4,Mon,October 5,8:15PM ET,boxscore,L,,0-4,@,Green Bay Packers,16,30,24,327,249,78,,22,403,315,88,,5.57,-19.46,-0.14
+5,Sun,October 11,1:00PM ET,boxscore,L,,0-5,,Carolina Panthers,16,23,21,373,207,166,1,24,437,313,124,,6.82,-18.13,2.46
+6,Sun,October 18,1:00PM ET,boxscore,W,,1-5,@,Minnesota Vikings,40,23,24,462,363,99,1,19,365,333,32,3,20.17,-0.99,0.84
+7,Sun,October 25,1:00PM ET,boxscore,L,,1-6,,Detroit Lions,22,23,26,388,322,66,1,21,386,322,64,,10.84,-10.28,-2.56
+8,Thu,October 29,8:20PM ET,boxscore,W,,2-6,@,Carolina Panthers,25,17,28,401,270,131,1,18,304,157,147,1,15.40,-2.21,-6.84
+9,Sun,November 8,1:00PM ET,boxscore,W,,3-6,,Denver Broncos,34,27,23,363,271,92,1,23,405,302,103,1,14.27,-4.44,0.15
+10,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+11,Sun,November 22,1:00PM ET,boxscore,L,,3-7,@,New Orleans Saints,9,24,14,248,196,52,2,24,376,210,166,1,-4.08,-12.49,8.60
+12,Sun,November 29,1:00PM ET,boxscore,W,,4-7,,Las Vegas Raiders,43,6,23,304,179,125,1,13,243,203,40,5,3.82,34.18,-4.76
+13,Sun,December 6,1:00PM ET,boxscore,L,,4-8,,New Orleans Saints,16,21,21,332,262,70,1,23,424,217,207,1,-0.46,-8.37,6.27
+14,Sun,December 13,4:25PM ET,boxscore,L,,4-9,@,Los Angeles Chargers,17,20,19,319,249,70,3,23,345,240,105,1,5.82,-10.14,1.54
+15,Sun,December 20,1:00PM ET,boxscore,L,,4-10,,Tampa Bay Buccaneers,27,31,23,369,332,37,,27,416,365,51,,8.39,-20.21,4.28
+16,Sun,December 27,1:00PM ET,boxscore,L,,4-11,@,Kansas City Chiefs,14,17,23,367,277,90,1,23,395,278,117,2,5.95,-5.30,-3.91
+17,Sun,January 3,1:00PM ET,boxscore,L,,4-12,@,Tampa Bay Buccaneers,27,44,25,385,258,127,2,28,485,391,94,1,10.53,-29.28,-0.43

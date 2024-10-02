@@ -1,0 +1,18 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 11,1:05PM ET,boxscore,W,,1-0,@,Atlanta Falcons,31,24,20,371,281,90,1,19,374,322,52,,12.93,-4.71,0.80
+2,Sun,September 18,1:05PM ET,boxscore,L,,1-1,@,Arizona Cardinals,7,40,21,306,221,85,5,20,416,311,105,,-21.55,-14.72,0.40
+3,Sun,September 25,4:05PM ET,boxscore,L,,1-2,,Los Angeles Rams,32,37,30,472,389,83,2,18,320,183,137,2,4.85,-0.44,-5.57
+4,Sun,October 2,4:05PM ET,boxscore,L,,1-3,,Denver Broncos,7,27,15,215,143,72,3,22,307,218,89,,-20.49,-2.97,2.33
+5,Mon,October 10,8:04PM ET,boxscore,W,,2-3,@,Carolina Panthers,17,14,20,315,202,113,,20,414,278,136,4,2.67,-2.26,3.05
+6,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+7,Sun,October 23,4:05PM ET,boxscore,W,,3-3,@,San Francisco 49ers,34,17,27,513,264,249,1,20,273,113,160,3,14.93,2.93,-1.95
+8,Sun,October 30,1:02PM ET,boxscore,L,OT,3-4,,Oakland Raiders,24,30,18,270,168,102,,27,626,498,128,1,5.09,-18.11,8.18
+9,Thu,November 3,8:25PM ET,boxscore,L,,3-5,,Atlanta Falcons,28,43,23,396,326,70,2,31,461,325,136,1,7.80,-22.07,-1.04
+10,Sun,November 13,1:00PM ET,boxscore,W,,4-5,,Chicago Bears,36,10,22,360,280,80,1,15,283,161,122,4,6.68,20.97,-2.32
+11,Sun,November 20,1:00PM ET,boxscore,W,,5-5,@,Kansas City Chiefs,19,17,27,442,326,116,1,19,343,261,82,2,12.64,-9.28,-1.98
+12,Sun,November 27,4:05PM ET,boxscore,W,,6-5,,Seattle Seahawks,14,5,19,338,220,118,2,16,245,118,127,3,-1.31,18.87,-7.45
+13,Sun,December 4,4:25PM ET,boxscore,W,,7-5,@,San Diego Chargers,28,21,20,349,268,81,1,18,330,211,119,2,8.55,-3.65,0.49
+14,Sun,December 11,4:25PM ET,boxscore,W,,8-5,,New Orleans Saints,16,11,21,270,166,104,,14,294,248,46,3,2.32,8.92,-5.28
+15,Sun,December 18,8:30PM ET,boxscore,L,,8-6,@,Dallas Cowboys,20,26,16,276,224,52,4,24,449,264,185,1,-7.29,-6.07,5.77
+16,Sat,December 24,4:25PM ET,boxscore,L,,8-7,@,New Orleans Saints,24,31,23,349,260,89,2,25,417,294,123,,10.41,-17.60,-1.31
+17,Sun,January 1,1:00PM ET,boxscore,W,,9-7,,Carolina Panthers,17,16,18,300,188,112,2,18,335,207,128,3,-6.76,8.61,3.45

@@ -1,0 +1,19 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 12,8:20PM ET,boxscore,L,,0-1,@,Los Angeles Rams,14,34,24,322,188,134,2,18,386,312,74,,-0.85,-21.58,0.52
+2,Sun,September 19,1:00PM ET,boxscore,W,,1-1,,Cincinnati Bengals,20,17,16,206,83,123,1,14,248,179,69,4,-11.15,16.14,-1.51
+3,Sun,September 26,1:00PM ET,boxscore,L,,1-2,@,Cleveland Browns,6,26,6,47,1,46,,26,418,203,215,,-19.73,-6.11,2.28
+4,Sun,October 3,1:00PM ET,boxscore,W,,2-2,,Detroit Lions,24,14,20,373,185,188,1,23,351,261,90,2,12.01,-1.56,0.02
+5,Sun,October 10,4:05PM ET,boxscore,W,,3-2,@,Las Vegas Raiders,20,9,19,252,109,143,,16,259,188,71,1,2.39,7.14,2.05
+6,Sun,October 17,1:00PM ET,boxscore,L,,3-3,,Green Bay Packers,14,24,21,277,137,140,1,22,323,169,154,,4.93,-14.93,-0.30
+7,Sun,October 24,4:25PM ET,boxscore,L,,3-4,@,Tampa Bay Buccaneers,3,38,17,311,168,143,5,28,408,226,182,1,-18.58,-16.41,4.77
+8,Sun,October 31,1:00PM ET,boxscore,L,,3-5,,San Francisco 49ers,22,33,22,324,148,176,1,21,467,322,145,,9.87,-21.75,2.14
+9,Mon,November 8,8:15PM ET,boxscore,L,,3-6,@,Pittsburgh Steelers,27,29,20,414,278,136,2,20,280,175,105,1,4.26,-8.46,4.79
+10,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+11,Sun,November 21,1:00PM ET,boxscore,L,,3-7,,Baltimore Ravens,13,16,14,353,261,92,1,23,299,176,123,1,0.66,-0.29,-3.41
+12,Thu,November 25,12:30PM ET,boxscore,W,,4-7,@,Detroit Lions,16,14,21,378,310,68,1,14,239,163,76,1,4.40,2.01,-4.41
+13,Sun,December 5,1:00PM ET,boxscore,L,,4-8,,Arizona Cardinals,22,33,26,329,217,112,4,14,257,120,137,,-6.69,-6.68,3.93
+14,Sun,December 12,8:20PM ET,boxscore,L,,4-9,@,Green Bay Packers,30,45,16,347,210,137,3,27,439,320,119,,-5.60,-23.05,15.19
+15,Mon,December 20,8:15PM ET,boxscore,L,,4-10,,Minnesota Vikings,9,17,24,370,255,115,3,13,193,61,132,1,-7.72,4.65,-5.92
+16,Sun,December 26,4:05PM ET,boxscore,W,,5-10,@,Seattle Seahawks,25,24,26,317,229,88,,18,331,161,170,,7.60,-8.31,3.95
+17,Sun,January 2,1:00PM ET,boxscore,W,,6-10,,New York Giants,29,3,17,249,162,87,2,13,155,-6,161,4,-4.47,28.88,1.13
+18,Sun,January 9,1:00PM ET,boxscore,L,,6-11,@,Minnesota Vikings,17,31,24,356,266,90,2,11,331,227,104,,-12.22,-7.18,1.20

@@ -1,0 +1,2285 @@
+Quarter,Time,Team,Detail,Team_1,Team_2,Game_ID
+1,7:13,Panthers,Kelvin Benjamin 14 yard pass from Cam Newton (Graham Gano kick),7,0,2016_01_CAR_DEN
+2,12:16,Broncos,Andy Janovich 28 yard rush (Brandon McManus kick),7,7,2016_01_CAR_DEN
+2,3:01,Panthers,Cam Newton 2 yard rush (Graham Gano kick),14,7,2016_01_CAR_DEN
+2,0:03,Panthers,Graham Gano 44 yard field goal ,17,7,2016_01_CAR_DEN
+4,14:50,Broncos,C.J. Anderson 25 yard pass from Trevor Siemian (Brandon McManus kick),17,14,2016_01_CAR_DEN
+4,9:26,Broncos,C.J. Anderson 1 yard rush (Brandon McManus kick),17,21,2016_01_CAR_DEN
+4,4:21,Panthers,Graham Gano 36 yard field goal ,20,21,2016_01_CAR_DEN
+1,9:52,Buccaneers,Roberto Aguayo 43 yard field goal ,3,0,2016_01_TB_ATL
+1,7:08,Falcons,Matt Bryant 34 yard field goal ,3,3,2016_01_TB_ATL
+1,0:11,Falcons,Mohamed Sanu 5 yard pass from Matt Ryan (Matt Bryant kick),3,10,2016_01_TB_ATL
+2,10:25,Buccaneers,Brandon Myers 4 yard pass from Jameis Winston (Roberto Aguayo kick),10,10,2016_01_TB_ATL
+2,1:45,Falcons,Matt Bryant 34 yard field goal ,10,13,2016_01_TB_ATL
+2,0:14,Buccaneers,Charles Sims 23 yard pass from Jameis Winston (Roberto Aguayo kick),17,13,2016_01_TB_ATL
+3,12:54,Buccaneers,Austin Seferian-Jenkins 30 yard pass from Jameis Winston (Roberto Aguayo kick),24,13,2016_01_TB_ATL
+3,5:12,Buccaneers,Mike Evans 45 yard pass from Jameis Winston (Roberto Aguayo kick),31,13,2016_01_TB_ATL
+3,1:35,Falcons,Julio Jones 25 yard pass from Matt Ryan (Mohamed Sanu pass from Matt Ryan),31,21,2016_01_TB_ATL
+4,4:55,Falcons,Matt Bryant 29 yard field goal ,31,24,2016_01_TB_ATL
+1,0:35,Ravens,Justin Tucker 50 yard field goal ,0,3,2016_01_BUF_BAL
+2,10:11,Ravens,Mike Wallace 66 yard pass from Joe Flacco (Justin Tucker kick),0,10,2016_01_BUF_BAL
+2,3:02,Bills,LeSean McCoy 1 yard rush (Dan Carpenter kick),7,10,2016_01_BUF_BAL
+4,5:39,Ravens,Justin Tucker 37 yard field goal ,7,13,2016_01_BUF_BAL
+1,6:58,Bears,Jeremy Langford 1 yard rush (Connor Barth kick),7,0,2016_01_CHI_HOU
+2,11:25,Texans,Nick Novak 28 yard field goal ,7,3,2016_01_CHI_HOU
+2,3:14,Texans,DeAndre Hopkins 23 yard pass from Brock Osweiler (Nick Novak kick),7,10,2016_01_CHI_HOU
+2,0:07,Bears,Eddie Royal 19 yard pass from Jay Cutler (Connor Barth kick),14,10,2016_01_CHI_HOU
+3,12:17,Texans,Nick Novak 28 yard field goal ,14,13,2016_01_CHI_HOU
+4,12:44,Texans,Will Fuller 18 yard pass from Brock Osweiler (Nick Novak kick),14,20,2016_01_CHI_HOU
+4,6:10,Texans,Nick Novak 38 yard field goal ,14,23,2016_01_CHI_HOU
+1,9:36,Packers,Aaron Rodgers 6 yard rush (Mason Crosby kick),7,0,2016_01_GB_JAX
+1,3:40,Jaguars,T.J. Yeldon 5 yard rush (Jason Myers kick),7,7,2016_01_GB_JAX
+2,7:48,Jaguars,Jason Myers 26 yard field goal ,7,10,2016_01_GB_JAX
+2,3:05,Packers,Jordy Nelson 6 yard pass from Aaron Rodgers (Mason Crosby kick),14,10,2016_01_GB_JAX
+2,1:09,Jaguars,Julius Thomas 22 yard pass from Blake Bortles (Jason Myers kick),14,17,2016_01_GB_JAX
+2,0:13,Packers,Davante Adams 29 yard pass from Aaron Rodgers (Mason Crosby kick),21,17,2016_01_GB_JAX
+3,10:12,Packers,Mason Crosby 25 yard field goal ,24,17,2016_01_GB_JAX
+3,6:15,Jaguars,Jason Myers 39 yard field goal ,24,20,2016_01_GB_JAX
+4,12:01,Packers,Mason Crosby 20 yard field goal ,27,20,2016_01_GB_JAX
+4,5:12,Jaguars,Jason Myers 50 yard field goal ,27,23,2016_01_GB_JAX
+1,11:51,Chiefs,Cairo Santos 47 yard field goal ,0,3,2016_01_SD_KC
+1,8:27,Chargers,Melvin Gordon 1 yard rush (Josh Lambo kick),7,3,2016_01_SD_KC
+2,14:06,Chargers,Melvin Gordon 6 yard rush (Josh Lambo kick),14,3,2016_01_SD_KC
+2,7:54,Chargers,Danny Woodhead 4 yard pass from Philip Rivers (Josh Lambo kick),21,3,2016_01_SD_KC
+3,6:02,Chargers,Josh Lambo 29 yard field goal ,24,3,2016_01_SD_KC
+3,2:47,Chiefs,Tyreek Hill 9 yard pass from Alex Smith (Cairo Santos kick),24,10,2016_01_SD_KC
+4,13:24,Chargers,Josh Lambo 28 yard field goal ,27,10,2016_01_SD_KC
+4,9:18,Chiefs,Jeremy Maclin 19 yard pass from Alex Smith (Cairo Santos kick),27,17,2016_01_SD_KC
+4,3:09,Chiefs,Cairo Santos 33 yard field goal ,27,20,2016_01_SD_KC
+4,1:03,Chiefs,Spencer Ware 5 yard rush (Cairo Santos kick),27,27,2016_01_SD_KC
+OT,9:53,Chiefs,Alex Smith 2 yard rush ,27,33,2016_01_SD_KC
+1,12:23,Raiders,Sebastian Janikowski 47 yard field goal ,3,0,2016_01_OAK_NO
+1,6:31,Saints,Wil Lutz 42 yard field goal ,3,3,2016_01_OAK_NO
+1,1:43,Raiders,Latavius Murray 6 yard rush (Sebastian Janikowski kick),10,3,2016_01_OAK_NO
+2,11:57,Saints,Willie Snead 1 yard pass from Drew Brees (Wil Lutz kick),10,10,2016_01_OAK_NO
+2,4:55,Saints,Brandin Cooks 15 yard pass from Drew Brees (Wil Lutz kick),10,17,2016_01_OAK_NO
+3,7:52,Saints,Brandin Cooks 98 yard pass from Drew Brees (Wil Lutz kick),10,24,2016_01_OAK_NO
+3,3:11,Raiders,Sebastian Janikowski 31 yard field goal ,13,24,2016_01_OAK_NO
+4,11:53,Raiders,Jamize Olawale 2 yard rush (pass failed),19,24,2016_01_OAK_NO
+4,8:42,Saints,Wil Lutz 20 yard field goal ,19,27,2016_01_OAK_NO
+4,8:26,Raiders,Jalen Richard 75 yard rush (Amari Cooper pass from Derek Carr),27,27,2016_01_OAK_NO
+4,6:03,Saints,Travaris Cadet 2 yard pass from Drew Brees (Wil Lutz kick),27,34,2016_01_OAK_NO
+4,0:47,Raiders,Seth Roberts 10 yard pass from Derek Carr (Michael Crabtree pass from Derek Carr),35,34,2016_01_OAK_NO
+1,7:40,Jets,Quincy Enunwa 3 yard pass from Ryan Fitzpatrick (Nick Folk kick),0,7,2016_01_CIN_NYJ
+1,1:29,Bengals,Mike Nugent 33 yard field goal ,3,7,2016_01_CIN_NYJ
+2,11:23,Bengals,A.J. Green 54 yard pass from Andy Dalton (Mike Nugent kick),10,7,2016_01_CIN_NYJ
+2,9:38,Jets,Eric Decker 15 yard pass from Ryan Fitzpatrick (Nick Folk kick failed),10,13,2016_01_CIN_NYJ
+2,3:19,Jets,Nick Folk 45 yard field goal ,10,16,2016_01_CIN_NYJ
+2,0:00,Bengals,Mike Nugent 21 yard field goal ,13,16,2016_01_CIN_NYJ
+3,3:09,Bengals,Jeremy Hill 12 yard rush (Mike Nugent kick),20,16,2016_01_CIN_NYJ
+4,11:26,Jets,Nick Folk 20 yard field goal ,20,19,2016_01_CIN_NYJ
+4,3:23,Jets,Nick Folk 23 yard field goal ,20,22,2016_01_CIN_NYJ
+4,0:54,Bengals,Mike Nugent 47 yard field goal ,23,22,2016_01_CIN_NYJ
+1,9:50,Eagles,Jordan Matthews 19 yard pass from Carson Wentz (Caleb Sturgis kick),0,7,2016_01_CLE_PHI
+2,12:30,Eagles,Caleb Sturgis 22 yard field goal ,0,10,2016_01_CLE_PHI
+2,9:11,Browns,Isaiah Crowell 2 yard rush (Patrick Murray kick),7,10,2016_01_CLE_PHI
+2,0:27,Eagles,Caleb Sturgis 38 yard field goal ,7,13,2016_01_CLE_PHI
+3,13:57,Browns,Patrick Murray 35 yard field goal ,10,13,2016_01_CLE_PHI
+3,10:49,Eagles,"Safety, Fumble O.B. in end zone ",10,15,2016_01_CLE_PHI
+3,6:17,Eagles,Nelson Agholor 35 yard pass from Carson Wentz (Caleb Sturgis kick),10,22,2016_01_CLE_PHI
+4,1:12,Eagles,Ryan Mathews 1 yard rush (Caleb Sturgis kick),10,29,2016_01_CLE_PHI
+1,4:45,Titans,Ryan Succop 28 yard field goal ,0,3,2016_01_MIN_TEN
+2,0:41,Titans,DeMarco Murray 6 yard pass from Marcus Mariota (Ryan Succop kick),0,10,2016_01_MIN_TEN
+3,13:56,Vikings,Blair Walsh 50 yard field goal ,3,10,2016_01_MIN_TEN
+3,5:59,Vikings,Blair Walsh 33 yard field goal ,6,10,2016_01_MIN_TEN
+3,1:24,Vikings,Eric Kendricks 77 yard interception return (Blair Walsh kick failed),12,10,2016_01_MIN_TEN
+4,11:17,Vikings,Blair Walsh 45 yard field goal ,15,10,2016_01_MIN_TEN
+4,11:03,Vikings,Danielle Hunter 24 yard defensive fumble return (Blair Walsh kick),22,10,2016_01_MIN_TEN
+4,2:36,Vikings,Blair Walsh 30 yard field goal ,25,10,2016_01_MIN_TEN
+4,0:28,Titans,DeMarco Murray 4 yard pass from Marcus Mariota (pass failed),25,16,2016_01_MIN_TEN
+1,5:11,Seahawks,Stephen Hauschka 39 yard field goal ,0,3,2016_01_MIA_SEA
+2,8:45,Dolphins,Andrew Franks 41 yard field goal ,3,3,2016_01_MIA_SEA
+2,0:00,Seahawks,Stephen Hauschka 38 yard field goal ,3,6,2016_01_MIA_SEA
+4,4:08,Dolphins,Ryan Tannehill 2 yard rush (Andrew Franks kick),10,6,2016_01_MIA_SEA
+4,0:31,Seahawks,Doug Baldwin 2 yard pass from Russell Wilson (Stephen Hauschka kick failed),10,12,2016_01_MIA_SEA
+1,6:35,Cowboys,Dan Bailey 23 yard field goal ,0,3,2016_01_NYG_DAL
+2,11:09,Cowboys,Dan Bailey 56 yard field goal ,0,6,2016_01_NYG_DAL
+2,9:36,Giants,Larry Donnell 15 yard pass from Eli Manning (Randy Bullock kick),7,6,2016_01_NYG_DAL
+2,4:02,Cowboys,Dan Bailey 25 yard field goal ,7,9,2016_01_NYG_DAL
+2,0:07,Giants,Sterling Shepard 9 yard pass from Eli Manning (Randy Bullock kick failed),13,9,2016_01_NYG_DAL
+3,10:47,Cowboys,Ezekiel Elliott 8 yard rush (Dan Bailey kick),13,16,2016_01_NYG_DAL
+4,13:59,Cowboys,Dan Bailey 54 yard field goal ,13,19,2016_01_NYG_DAL
+4,6:13,Giants,Victor Cruz 3 yard pass from Eli Manning (Randy Bullock kick),20,19,2016_01_NYG_DAL
+1,4:43,Lions,Theo Riddick 21 yard rush (Matt Prater kick),7,0,2016_01_DET_IND
+2,9:11,Lions,Dwayne Washington 1 yard rush (Matt Prater kick),14,0,2016_01_DET_IND
+2,4:50,Colts,Adam Vinatieri 50 yard field goal ,14,3,2016_01_DET_IND
+2,1:37,Lions,Eric Ebron 6 yard pass from Matthew Stafford (Matt Prater kick),21,3,2016_01_DET_IND
+2,0:05,Colts,Donte Moncrief 2 yard pass from Andrew Luck (Adam Vinatieri kick),21,10,2016_01_DET_IND
+3,8:41,Colts,Dwayne Allen 19 yard pass from Andrew Luck (Dwayne Allen pass from Andrew Luck),21,18,2016_01_DET_IND
+3,2:20,Lions,Ameer Abdullah 11 yard pass from Matthew Stafford (Matt Prater kick),28,18,2016_01_DET_IND
+4,14:17,Colts,Adam Vinatieri 40 yard field goal ,28,21,2016_01_DET_IND
+4,8:19,Colts,Jack Doyle 16 yard pass from Andrew Luck (Adam Vinatieri kick),28,28,2016_01_DET_IND
+4,4:04,Lions,Theo Riddick 13 yard pass from Matthew Stafford (Matt Prater kick failed),34,28,2016_01_DET_IND
+4,0:37,Colts,Jack Doyle 6 yard pass from Andrew Luck (Adam Vinatieri kick),34,35,2016_01_DET_IND
+4,0:04,Lions,Matt Prater 43 yard field goal ,37,35,2016_01_DET_IND
+4,0:00,Lions,"Safety, T.Y. Hilton penalty in end zone ",39,35,2016_01_DET_IND
+1,7:34,Patriots,Chris Hogan 37 yard pass from Jimmy Garoppolo (Stephen Gostkowski kick),7,0,2016_01_NE_ARI
+1,1:00,Patriots,Stephen Gostkowski 47 yard field goal ,10,0,2016_01_NE_ARI
+2,4:06,Cardinals,Larry Fitzgerald 3 yard pass from Carson Palmer (Chandler Catanzaro kick),10,7,2016_01_NE_ARI
+3,10:00,Patriots,LeGarrette Blount 8 yard rush (Stephen Gostkowski kick),17,7,2016_01_NE_ARI
+3,4:29,Cardinals,David Johnson 1 yard rush (Chandler Catanzaro kick),17,14,2016_01_NE_ARI
+4,12:35,Patriots,Stephen Gostkowski 53 yard field goal ,20,14,2016_01_NE_ARI
+4,9:46,Cardinals,Larry Fitzgerald 1 yard pass from Carson Palmer (Chandler Catanzaro kick),20,21,2016_01_NE_ARI
+4,3:44,Patriots,Stephen Gostkowski 32 yard field goal ,23,21,2016_01_NE_ARI
+1,5:56,Redskins,Dustin Hopkins 31 yard field goal ,0,3,2016_01_PIT_WAS
+1,1:08,Redskins,Dustin Hopkins 40 yard field goal ,0,6,2016_01_PIT_WAS
+2,10:10,Steelers,Antonio Brown 29 yard pass from Ben Roethlisberger (Chris Boswell kick),7,6,2016_01_PIT_WAS
+2,0:27,Steelers,Eli Rogers 3 yard pass from Ben Roethlisberger (Chris Boswell kick),14,6,2016_01_PIT_WAS
+3,11:18,Steelers,Chris Boswell 46 yard field goal ,17,6,2016_01_PIT_WAS
+3,7:01,Steelers,Antonio Brown 26 yard pass from Ben Roethlisberger (Chris Boswell kick),24,6,2016_01_PIT_WAS
+3,2:01,Redskins,Dustin Hopkins 34 yard field goal ,24,9,2016_01_PIT_WAS
+4,13:01,Redskins,Chris Thompson 1 yard rush (Dustin Hopkins kick),24,16,2016_01_PIT_WAS
+4,5:48,Steelers,DeAngelo Williams 15 yard rush (Chris Boswell kick),31,16,2016_01_PIT_WAS
+4,1:54,Steelers,DeAngelo Williams 6 yard rush (Chris Boswell kick),38,16,2016_01_PIT_WAS
+1,3:24,49ers,Carlos Hyde 11 yard rush (Phil Dawson kick),0,7,2016_01_LA_SF
+2,8:16,49ers,Shaun Draughn 3 yard rush (Phil Dawson kick),0,14,2016_01_LA_SF
+4,12:07,49ers,Vance McDonald 8 yard pass from Blaine Gabbert (Phil Dawson kick),0,21,2016_01_LA_SF
+4,5:14,49ers,Carlos Hyde 1 yard rush (Phil Dawson kick),0,28,2016_01_LA_SF
+1,6:41,Jets,Nick Folk 28 yard field goal ,3,0,2016_02_NYJ_BUF
+1,5:16,Bills,Marquise Goodwin 84 yard pass from Tyrod Taylor (Dan Carpenter kick),3,7,2016_02_NYJ_BUF
+1,0:00,Jets,Nick Folk 29 yard field goal ,6,7,2016_02_NYJ_BUF
+2,11:07,Jets,Matt Forte 1 yard rush (Nick Folk kick),13,7,2016_02_NYJ_BUF
+2,3:53,Jets,Eric Decker 5 yard pass from Ryan Fitzpatrick (Nick Folk kick),20,7,2016_02_NYJ_BUF
+2,0:05,Bills,Dan Carpenter 39 yard field goal ,20,10,2016_02_NYJ_BUF
+3,14:09,Bills,Greg Salas 71 yard pass from Tyrod Taylor (Dan Carpenter kick),20,17,2016_02_NYJ_BUF
+3,11:15,Bills,Nickell Robey-Coleman 36 yard defensive fumble return (Dan Carpenter kick),20,24,2016_02_NYJ_BUF
+3,2:12,Jets,Matt Forte 3 yard rush (Nick Folk kick),27,24,2016_02_NYJ_BUF
+4,10:40,Jets,Nick Folk 36 yard field goal ,30,24,2016_02_NYJ_BUF
+4,4:02,Jets,Matt Forte 12 yard rush (Nick Folk kick),37,24,2016_02_NYJ_BUF
+4,1:17,Bills,Mike Gillislee 18 yard pass from Tyrod Taylor (Dan Carpenter kick),37,31,2016_02_NYJ_BUF
+2,14:54,Cardinals,Larry Fitzgerald 4 yard pass from Carson Palmer (Chandler Catanzaro kick),0,7,2016_02_TB_ARI
+2,11:44,Cardinals,Chandler Catanzaro 22 yard field goal ,0,10,2016_02_TB_ARI
+2,1:30,Cardinals,Michael Floyd 1 yard pass from Carson Palmer (Chandler Catanzaro kick),0,17,2016_02_TB_ARI
+2,0:20,Cardinals,Jaron Brown 51 yard pass from Carson Palmer (Chandler Catanzaro kick),0,24,2016_02_TB_ARI
+3,10:01,Buccaneers,Mike Evans 19 yard pass from Jameis Winston (Roberto Aguayo kick),7,24,2016_02_TB_ARI
+3,7:56,Cardinals,Chandler Catanzaro 40 yard field goal ,7,27,2016_02_TB_ARI
+3,5:03,Cardinals,Marcus Cooper 60 yard interception return (Chandler Catanzaro kick failed),7,33,2016_02_TB_ARI
+4,12:11,Cardinals,Chris Johnson 3 yard rush (Chandler Catanzaro kick),7,40,2016_02_TB_ARI
+1,11:21,49ers,Phil Dawson 29 yard field goal ,3,0,2016_02_SF_CAR
+1,4:04,Panthers,Shaq Thompson 9 yard defensive fumble return (Graham Gano kick),3,7,2016_02_SF_CAR
+2,10:02,49ers,Torrey Smith 28 yard pass from Blaine Gabbert (Phil Dawson kick),10,7,2016_02_SF_CAR
+2,9:40,Panthers,Greg Olsen 78 yard pass from Cam Newton (Graham Gano kick),10,14,2016_02_SF_CAR
+2,0:01,Panthers,Graham Gano 39 yard field goal ,10,17,2016_02_SF_CAR
+3,8:38,Panthers,Kelvin Benjamin 10 yard pass from Cam Newton (Graham Gano kick),10,24,2016_02_SF_CAR
+3,4:56,Panthers,Kelvin Benjamin 9 yard pass from Cam Newton (Graham Gano kick),10,31,2016_02_SF_CAR
+4,12:38,49ers,Phil Dawson 39 yard field goal ,13,31,2016_02_SF_CAR
+4,12:31,49ers,Blaine Gabbert 1 yard rush (Phil Dawson kick),20,31,2016_02_SF_CAR
+4,8:07,Panthers,Graham Gano 31 yard field goal ,20,34,2016_02_SF_CAR
+4,7:51,49ers,Vance McDonald 75 yard pass from Blaine Gabbert (Phil Dawson kick),27,34,2016_02_SF_CAR
+4,4:08,Panthers,Graham Gano 49 yard field goal ,27,37,2016_02_SF_CAR
+4,3:31,Panthers,Devin Funchess 16 yard pass from Cam Newton (Graham Gano kick failed),27,43,2016_02_SF_CAR
+4,1:06,Panthers,Graham Gano 41 yard field goal ,27,46,2016_02_SF_CAR
+1,9:45,Browns,Corey Coleman 31 yard pass from Josh McCown (Patrick Murray kick),0,7,2016_02_BAL_CLE
+1,6:47,Browns,Isaiah Crowell 85 yard rush (Patrick Murray kick),0,14,2016_02_BAL_CLE
+1,4:34,Browns,Corey Coleman 11 yard pass from Josh McCown (Patrick Murray kick failed),0,20,2016_02_BAL_CLE
+1,4:34,Ravens,Tavon Young defensive extra point return ,2,20,2016_02_BAL_CLE
+2,1:15,Ravens,Mike Wallace 7 yard pass from Joe Flacco (Justin Tucker kick),9,20,2016_02_BAL_CLE
+2,0:00,Ravens,Justin Tucker 52 yard field goal ,12,20,2016_02_BAL_CLE
+3,12:17,Ravens,Mike Wallace 17 yard pass from Joe Flacco (Justin Tucker kick),19,20,2016_02_BAL_CLE
+4,11:19,Ravens,Justin Tucker 49 yard field goal ,22,20,2016_02_BAL_CLE
+4,2:53,Ravens,Justin Tucker 41 yard field goal ,25,20,2016_02_BAL_CLE
+1,7:16,Lions,"Safety, DeMarco Murray tackled in end zone by Devin Taylor ",0,2,2016_02_TEN_DET
+1,4:15,Lions,Anquan Boldin 24 yard pass from Matthew Stafford (Matt Prater kick),0,9,2016_02_TEN_DET
+2,12:03,Titans,Ryan Succop 46 yard field goal ,3,9,2016_02_TEN_DET
+2,1:04,Lions,Matt Prater 42 yard field goal ,3,12,2016_02_TEN_DET
+3,1:40,Lions,Matt Prater 27 yard field goal ,3,15,2016_02_TEN_DET
+4,14:54,Titans,Delanie Walker 30 yard pass from Marcus Mariota (Ryan Succop kick),10,15,2016_02_TEN_DET
+4,1:13,Titans,Andre Johnson 9 yard pass from Marcus Mariota (run failed),16,15,2016_02_TEN_DET
+1,8:01,Texans,DeAndre Hopkins 27 yard pass from Brock Osweiler (Nick Novak kick),0,7,2016_02_KC_HOU
+2,14:55,Chiefs,Cairo Santos 53 yard field goal ,3,7,2016_02_KC_HOU
+2,4:16,Texans,Nick Novak 32 yard field goal ,3,10,2016_02_KC_HOU
+2,1:21,Texans,Nick Novak 24 yard field goal ,3,13,2016_02_KC_HOU
+4,14:56,Chiefs,Cairo Santos 43 yard field goal ,6,13,2016_02_KC_HOU
+4,9:34,Texans,Nick Novak 31 yard field goal ,6,16,2016_02_KC_HOU
+4,7:34,Chiefs,Cairo Santos 35 yard field goal ,9,16,2016_02_KC_HOU
+4,2:56,Texans,Nick Novak 43 yard field goal ,9,19,2016_02_KC_HOU
+4,0:49,Chiefs,Cairo Santos 30 yard field goal ,12,19,2016_02_KC_HOU
+1,10:53,Patriots,Danny Amendola 12 yard pass from Jimmy Garoppolo (Stephen Gostkowski kick),0,7,2016_02_MIA_NE
+1,6:22,Patriots,Martellus Bennett 20 yard pass from Jimmy Garoppolo (Stephen Gostkowski kick),0,14,2016_02_MIA_NE
+2,13:10,Patriots,Danny Amendola 10 yard pass from Jimmy Garoppolo (Stephen Gostkowski kick),0,21,2016_02_MIA_NE
+2,2:48,Patriots,Stephen Gostkowski 34 yard field goal ,0,24,2016_02_MIA_NE
+2,0:00,Dolphins,Andrew Franks 27 yard field goal ,3,24,2016_02_MIA_NE
+3,8:44,Patriots,LeGarrette Blount 9 yard rush (Stephen Gostkowski kick),3,31,2016_02_MIA_NE
+3,5:45,Dolphins,Kenny Stills 24 yard pass from Ryan Tannehill (Andrew Franks kick),10,31,2016_02_MIA_NE
+4,14:51,Dolphins,Jordan Cameron 12 yard pass from Ryan Tannehill (Andrew Franks kick),17,31,2016_02_MIA_NE
+4,6:06,Dolphins,Kenyan Drake 7 yard rush (Andrew Franks kick),24,31,2016_02_MIA_NE
+2,2:30,Giants,Jackrabbit Jenkins 65 yard blocked field goal return (Josh Brown kick),0,7,2016_02_NO_NYG
+2,0:07,Saints,Wil Lutz 39 yard field goal ,3,7,2016_02_NO_NYG
+3,2:46,Giants,Josh Brown 48 yard field goal ,3,10,2016_02_NO_NYG
+4,13:45,Saints,Willie Snead 17 yard pass from Drew Brees (Wil Lutz kick),10,10,2016_02_NO_NYG
+4,8:46,Giants,Josh Brown 19 yard field goal ,10,13,2016_02_NO_NYG
+4,2:54,Saints,Wil Lutz 45 yard field goal ,13,13,2016_02_NO_NYG
+4,0:00,Giants,Josh Brown 23 yard field goal ,13,16,2016_02_NO_NYG
+1,3:46,Steelers,Xavier Grimble 20 yard pass from Ben Roethlisberger (Chris Boswell kick),0,7,2016_02_CIN_PIT
+1,0:23,Bengals,Mike Nugent 25 yard field goal ,3,7,2016_02_CIN_PIT
+2,4:10,Steelers,Chris Boswell 49 yard field goal ,3,10,2016_02_CIN_PIT
+2,0:00,Bengals,Mike Nugent 33 yard field goal ,6,10,2016_02_CIN_PIT
+3,6:16,Steelers,Jesse James 9 yard pass from Ben Roethlisberger (Chris Boswell kick),6,17,2016_02_CIN_PIT
+3,2:10,Bengals,Mike Nugent 21 yard field goal ,9,17,2016_02_CIN_PIT
+4,6:48,Steelers,DeAngelo Williams 4 yard pass from Ben Roethlisberger (Chris Boswell kick),9,24,2016_02_CIN_PIT
+4,3:25,Bengals,Giovani Bernard 25 yard pass from Andy Dalton (Mike Nugent kick),16,24,2016_02_CIN_PIT
+1,9:25,Cowboys,Dan Bailey 22 yard field goal ,3,0,2016_02_DAL_WAS
+1,1:39,Cowboys,Ezekiel Elliott 1 yard rush (Dan Bailey kick),10,0,2016_02_DAL_WAS
+2,13:08,Redskins,Matt Jones 14 yard rush (Dustin Hopkins kick),10,7,2016_02_DAL_WAS
+2,4:34,Cowboys,Dan Bailey 31 yard field goal ,13,7,2016_02_DAL_WAS
+2,0:26,Redskins,Dustin Hopkins 36 yard field goal ,13,10,2016_02_DAL_WAS
+3,11:16,Redskins,Jamison Crowder 11 yard pass from Kirk Cousins (Dustin Hopkins kick),13,17,2016_02_DAL_WAS
+3,5:41,Cowboys,Dak Prescott 6 yard rush (Dan Bailey kick),20,17,2016_02_DAL_WAS
+3,2:06,Redskins,Dustin Hopkins 29 yard field goal ,20,20,2016_02_DAL_WAS
+3,0:04,Redskins,Dustin Hopkins 22 yard field goal ,20,23,2016_02_DAL_WAS
+4,4:45,Cowboys,Alfred Morris 4 yard rush (Dan Bailey kick),27,23,2016_02_DAL_WAS
+1,10:38,Rams,Greg Zuerlein 39 yard field goal ,0,3,2016_02_SEA_LA
+2,14:45,Seahawks,Stephen Hauschka 23 yard field goal ,3,3,2016_02_SEA_LA
+2,1:04,Rams,Greg Zuerlein 28 yard field goal ,3,6,2016_02_SEA_LA
+4,14:10,Rams,Greg Zuerlein 47 yard field goal ,3,9,2016_02_SEA_LA
+1,8:17,Colts,Adam Vinatieri 48 yard field goal ,3,0,2016_02_IND_DEN
+1,5:30,Broncos,Brandon McManus 23 yard field goal ,3,3,2016_02_IND_DEN
+2,11:41,Broncos,C.J. Anderson 4 yard rush (Brandon McManus kick),3,10,2016_02_IND_DEN
+2,2:43,Colts,Adam Vinatieri 52 yard field goal ,6,10,2016_02_IND_DEN
+2,0:05,Broncos,Brandon McManus 43 yard field goal ,6,13,2016_02_IND_DEN
+3,8:06,Colts,Robert Turbin 5 yard rush (Adam Vinatieri kick),13,13,2016_02_IND_DEN
+3,1:09,Broncos,Brandon McManus 33 yard field goal ,13,16,2016_02_IND_DEN
+4,13:52,Broncos,Aqib Talib 46 yard interception return (Brandon McManus kick),13,23,2016_02_IND_DEN
+4,4:02,Colts,Frank Gore 7 yard pass from Andrew Luck (Adam Vinatieri kick),20,23,2016_02_IND_DEN
+4,1:51,Broncos,Brandon McManus 35 yard field goal ,20,26,2016_02_IND_DEN
+4,1:42,Broncos,Shane Ray 15 yard defensive fumble return (Demaryius Thomas pass from Trevor Siemian),20,34,2016_02_IND_DEN
+2,11:58,Falcons,Matt Bryant 21 yard field goal ,3,0,2016_02_ATL_OAK
+2,7:51,Raiders,Latavius Murray 1 yard rush (Sebastian Janikowski kick),3,7,2016_02_ATL_OAK
+2,4:46,Falcons,Julio Jones 21 yard pass from Matt Ryan (Matt Bryant kick),10,7,2016_02_ATL_OAK
+2,0:38,Falcons,Matt Bryant 20 yard field goal ,13,7,2016_02_ATL_OAK
+3,11:17,Raiders,Clive Walford 31 yard pass from Derek Carr (Sebastian Janikowski kick),13,14,2016_02_ATL_OAK
+3,3:42,Falcons,Jacob Tamme 14 yard pass from Matt Ryan (Matt Ryan run),21,14,2016_02_ATL_OAK
+4,12:00,Raiders,Michael Crabtree 2 yard pass from Derek Carr (Sebastian Janikowski kick),21,21,2016_02_ATL_OAK
+4,9:29,Falcons,Justin Hardy 8 yard pass from Matt Ryan (Matt Bryant kick),28,21,2016_02_ATL_OAK
+4,4:35,Falcons,Tevin Coleman 13 yard rush (Matt Bryant kick),35,21,2016_02_ATL_OAK
+4,2:12,Raiders,Andre Holmes 6 yard pass from Derek Carr (Sebastian Janikowski kick),35,28,2016_02_ATL_OAK
+1,10:14,Chargers,Melvin Gordon 3 yard rush (Josh Lambo kick),0,7,2016_02_JAX_SD
+2,14:54,Chargers,Travis Benjamin 6 yard pass from Philip Rivers (Josh Lambo kick),0,14,2016_02_JAX_SD
+2,9:54,Chargers,Antonio Gates 2 yard pass from Philip Rivers (Josh Lambo kick),0,21,2016_02_JAX_SD
+3,10:54,Chargers,Tyrell Williams 44 yard pass from Philip Rivers (Josh Lambo kick),0,28,2016_02_JAX_SD
+3,2:48,Chargers,Travis Benjamin 45 yard pass from Philip Rivers (Josh Lambo kick),0,35,2016_02_JAX_SD
+4,12:54,Jaguars,Marcedes Lewis 4 yard pass from Blake Bortles (Jason Myers kick),7,35,2016_02_JAX_SD
+4,7:00,Chargers,Josh Lambo 25 yard field goal ,7,38,2016_02_JAX_SD
+4,1:04,Jaguars,Corey Grant 15 yard pass from Blake Bortles (Jason Myers kick),14,38,2016_02_JAX_SD
+1,5:39,Packers,Jordy Nelson 1 yard pass from Aaron Rodgers (Mason Crosby kick),7,0,2016_02_GB_MIN
+2,10:14,Vikings,Kyle Rudolph 8 yard pass from Sam Bradford (Blair Walsh kick),7,7,2016_02_GB_MIN
+2,0:27,Vikings,Blair Walsh 46 yard field goal ,7,10,2016_02_GB_MIN
+3,2:11,Vikings,Stefon Diggs 25 yard pass from Sam Bradford (Blair Walsh kick),7,17,2016_02_GB_MIN
+4,12:41,Packers,Aaron Rodgers 10 yard rush (Mason Crosby kick),14,17,2016_02_GB_MIN
+1,6:11,Eagles,Caleb Sturgis 25 yard field goal ,3,0,2016_02_PHI_CHI
+2,11:16,Bears,Jeremy Langford 1 yard rush (Connor Barth kick),3,7,2016_02_PHI_CHI
+2,2:27,Eagles,Caleb Sturgis 29 yard field goal ,6,7,2016_02_PHI_CHI
+2,0:03,Eagles,Caleb Sturgis 53 yard field goal ,9,7,2016_02_PHI_CHI
+3,0:53,Eagles,Ryan Mathews 3 yard rush (Caleb Sturgis kick),16,7,2016_02_PHI_CHI
+3,0:32,Eagles,Trey Burton 2 yard pass from Carson Wentz (Caleb Sturgis kick failed),22,7,2016_02_PHI_CHI
+4,10:36,Eagles,Ryan Mathews 1 yard rush (Caleb Sturgis kick),29,7,2016_02_PHI_CHI
+4,5:09,Bears,Eddie Royal 65 yard punt return (Connor Barth kick),29,14,2016_02_PHI_CHI
+1,2:07,Patriots,Stephen Gostkowski 24 yard field goal ,0,3,2016_03_HOU_NE
+1,1:54,Patriots,Jacoby Brissett 27 yard rush (Stephen Gostkowski kick),0,10,2016_03_HOU_NE
+3,8:19,Patriots,Stephen Gostkowski 25 yard field goal ,0,13,2016_03_HOU_NE
+3,5:41,Patriots,LeGarrette Blount 1 yard rush (Stephen Gostkowski kick),0,20,2016_03_HOU_NE
+4,11:00,Patriots,LeGarrette Blount 41 yard rush (Stephen Gostkowski kick),0,27,2016_03_HOU_NE
+1,3:29,Bills,Dan Carpenter 19 yard field goal ,0,3,2016_03_ARI_BUF
+1,0:55,Bills,LeSean McCoy 24 yard rush (Dan Carpenter kick),0,10,2016_03_ARI_BUF
+2,10:25,Bills,LeSean McCoy 5 yard rush (Dan Carpenter kick),0,17,2016_03_ARI_BUF
+2,1:05,Cardinals,David Johnson 4 yard rush (Chandler Catanzaro kick),7,17,2016_03_ARI_BUF
+3,10:31,Bills,Tyrod Taylor 20 yard rush (Dan Carpenter kick failed),7,23,2016_03_ARI_BUF
+3,2:25,Bills,Aaron Williams 53 yard defensive fumble return (Dan Carpenter kick),7,30,2016_03_ARI_BUF
+3,0:12,Cardinals,David Johnson 22 yard rush (pass failed),13,30,2016_03_ARI_BUF
+4,10:36,Cardinals,Chandler Catanzaro 60 yard field goal ,16,30,2016_03_ARI_BUF
+4,4:48,Bills,Dan Carpenter 45 yard field goal ,16,33,2016_03_ARI_BUF
+4,3:04,Cardinals,"Safety, LeSean McCoy tackled in end zone by Corey Peters ",18,33,2016_03_ARI_BUF
+1,10:52,Panthers,Graham Gano 48 yard field goal ,0,3,2016_03_MIN_CAR
+1,5:20,Panthers,Cam Newton 3 yard rush (Graham Gano kick),0,10,2016_03_MIN_CAR
+1,1:44,Vikings,"Safety, Danielle Hunter sacked Cam Newton in end zone ",2,10,2016_03_MIN_CAR
+2,3:21,Vikings,Marcus Sherels 54 yard punt return (Blair Walsh kick failed),8,10,2016_03_MIN_CAR
+3,9:43,Vikings,Kyle Rudolph 15 yard pass from Sam Bradford (Jerick McKinnon run),16,10,2016_03_MIN_CAR
+4,13:14,Vikings,Blair Walsh 28 yard field goal ,19,10,2016_03_MIN_CAR
+4,5:07,Vikings,Blair Walsh 31 yard field goal ,22,10,2016_03_MIN_CAR
+1,11:07,Bengals,Jeremy Hill 3 yard rush (Mike Nugent kick),0,7,2016_03_DEN_CIN
+1,4:05,Broncos,Brandon McManus 20 yard field goal ,3,7,2016_03_DEN_CIN
+2,13:57,Broncos,Emmanuel Sanders 41 yard pass from Trevor Siemian (Brandon McManus kick),10,7,2016_03_DEN_CIN
+2,4:57,Bengals,Jeremy Hill 4 yard rush (Mike Nugent kick),10,14,2016_03_DEN_CIN
+2,0:28,Broncos,Emmanuel Sanders 7 yard pass from Trevor Siemian (Brandon McManus kick failed),16,14,2016_03_DEN_CIN
+4,14:52,Bengals,Mike Nugent 34 yard field goal ,16,17,2016_03_DEN_CIN
+4,6:56,Broncos,John Phillips 1 yard pass from Trevor Siemian (run failed),22,17,2016_03_DEN_CIN
+4,4:23,Broncos,Demaryius Thomas 55 yard pass from Trevor Siemian (Brandon McManus kick),29,17,2016_03_DEN_CIN
+1,11:22,Packers,Davante Adams 14 yard pass from Aaron Rodgers (Mason Crosby kick),0,7,2016_03_DET_GB
+1,2:45,Lions,Matt Prater 42 yard field goal ,3,7,2016_03_DET_GB
+1,1:01,Packers,Jordy Nelson 8 yard pass from Aaron Rodgers (Mason Crosby kick),3,14,2016_03_DET_GB
+2,14:46,Packers,Richard Rodgers 2 yard pass from Aaron Rodgers (Mason Crosby kick),3,21,2016_03_DET_GB
+2,10:41,Packers,Mason Crosby 36 yard field goal ,3,24,2016_03_DET_GB
+2,1:10,Packers,Jordy Nelson 17 yard pass from Aaron Rodgers (Mason Crosby kick),3,31,2016_03_DET_GB
+2,0:32,Lions,Marvin Jones 73 yard pass from Matthew Stafford (Matt Prater kick),10,31,2016_03_DET_GB
+3,8:23,Lions,Anquan Boldin 2 yard pass from Matthew Stafford (Matt Prater kick),17,31,2016_03_DET_GB
+3,3:14,Packers,Mason Crosby 46 yard field goal ,17,34,2016_03_DET_GB
+4,12:32,Lions,Matt Prater 50 yard field goal ,20,34,2016_03_DET_GB
+4,3:34,Lions,Marvin Jones 35 yard pass from Matthew Stafford (Matt Prater kick),27,34,2016_03_DET_GB
+1,3:52,Ravens,Joe Flacco 7 yard rush (Justin Tucker kick),7,0,2016_03_BAL_JAX
+2,11:07,Ravens,Justin Tucker 43 yard field goal ,10,0,2016_03_BAL_JAX
+2,1:55,Jaguars,Allen Robinson 3 yard pass from Blake Bortles (Jason Myers kick),10,7,2016_03_BAL_JAX
+2,0:00,Ravens,Justin Tucker 42 yard field goal ,13,7,2016_03_BAL_JAX
+3,10:21,Ravens,Justin Tucker 37 yard field goal ,16,7,2016_03_BAL_JAX
+3,4:59,Jaguars,Allen Robinson 11 yard pass from Blake Bortles (Jason Myers kick),16,14,2016_03_BAL_JAX
+4,7:27,Jaguars,Jason Myers 49 yard field goal ,16,17,2016_03_BAL_JAX
+4,1:02,Ravens,Justin Tucker 54 yard field goal ,19,17,2016_03_BAL_JAX
+1,10:16,Dolphins,DeVante Parker 26 yard pass from Ryan Tannehill (Andrew Franks kick),0,7,2016_03_CLE_MIA
+2,13:32,Browns,Cody Parkey 46 yard field goal ,3,7,2016_03_CLE_MIA
+2,6:47,Browns,Briean Boddy-Calhoun 27 yard interception return (Cody Parkey kick),10,7,2016_03_CLE_MIA
+2,1:57,Dolphins,Andrew Franks 37 yard field goal ,10,10,2016_03_CLE_MIA
+2,0:42,Browns,Cody Parkey 48 yard field goal ,13,10,2016_03_CLE_MIA
+3,5:17,Dolphins,Jarvis Landry 42 yard pass from Ryan Tannehill (Andrew Franks kick),13,17,2016_03_CLE_MIA
+4,14:17,Dolphins,Damien Williams 10 yard pass from Ryan Tannehill (Andrew Franks kick),13,24,2016_03_CLE_MIA
+4,10:12,Browns,Terrelle Pryor 3 yard rush (Gary Barnidge pass from Cody Kessler),21,24,2016_03_CLE_MIA
+4,3:14,Browns,Cody Parkey 38 yard field goal ,24,24,2016_03_CLE_MIA
+OT,8:26,Dolphins,Jay Ajayi 11 yard rush ,24,30,2016_03_CLE_MIA
+1,12:18,Giants,Shane Vereen 1 yard rush (Josh Brown kick),0,7,2016_03_WAS_NYG
+1,9:35,Redskins,Dustin Hopkins 49 yard field goal ,3,7,2016_03_WAS_NYG
+1,6:10,Giants,Sterling Shepard 23 yard pass from Eli Manning (Josh Brown kick),3,14,2016_03_WAS_NYG
+1,0:25,Redskins,Dustin Hopkins 33 yard field goal ,6,14,2016_03_WAS_NYG
+2,8:34,Redskins,Dustin Hopkins 45 yard field goal ,9,14,2016_03_WAS_NYG
+2,4:12,Giants,Orleans Darkwa 2 yard rush (Josh Brown kick),9,21,2016_03_WAS_NYG
+2,3:40,Redskins,DeSean Jackson 44 yard pass from Kirk Cousins (Dustin Hopkins kick),16,21,2016_03_WAS_NYG
+3,9:45,Redskins,Jamison Crowder 55 yard pass from Kirk Cousins (Dustin Hopkins kick),23,21,2016_03_WAS_NYG
+3,6:29,Giants,Josh Brown 29 yard field goal ,23,24,2016_03_WAS_NYG
+4,14:57,Redskins,Dustin Hopkins 25 yard field goal ,26,24,2016_03_WAS_NYG
+4,7:53,Giants,Josh Brown 30 yard field goal ,26,27,2016_03_WAS_NYG
+4,1:51,Redskins,Dustin Hopkins 37 yard field goal ,29,27,2016_03_WAS_NYG
+1,9:50,Titans,Ryan Succop 34 yard field goal ,0,3,2016_03_OAK_TEN
+1,8:19,Raiders,Latavius Murray 22 yard rush (Sebastian Janikowski kick),7,3,2016_03_OAK_TEN
+2,8:13,Raiders,Sebastian Janikowski 52 yard field goal ,10,3,2016_03_OAK_TEN
+2,0:33,Raiders,Seth Roberts 19 yard pass from Derek Carr (Sebastian Janikowski kick),17,3,2016_03_OAK_TEN
+3,5:51,Titans,DeMarco Murray 5 yard rush (Ryan Succop kick),17,10,2016_03_OAK_TEN
+1,14:17,Seahawks,Christine Michael 41 yard rush (Stephen Hauschka kick),0,7,2016_03_SF_SEA
+1,4:08,Seahawks,Christine Michael 4 yard rush (Stephen Hauschka kick),0,14,2016_03_SF_SEA
+2,9:41,49ers,Phil Dawson 22 yard field goal ,3,14,2016_03_SF_SEA
+2,7:53,Seahawks,Jimmy Graham 18 yard pass from Russell Wilson (Stephen Hauschka kick),3,21,2016_03_SF_SEA
+2,1:13,Seahawks,Stephen Hauschka 33 yard field goal ,3,24,2016_03_SF_SEA
+3,6:53,Seahawks,Stephen Hauschka 33 yard field goal ,3,27,2016_03_SF_SEA
+3,2:29,Seahawks,Stephen Hauschka 22 yard field goal ,3,30,2016_03_SF_SEA
+4,12:53,Seahawks,Doug Baldwin 16 yard pass from Trevone Boykin (Stephen Hauschka kick),3,37,2016_03_SF_SEA
+4,7:50,49ers,Carlos Hyde 8 yard rush (Phil Dawson kick),10,37,2016_03_SF_SEA
+4,0:56,49ers,Carlos Hyde 8 yard rush (Carlos Hyde run),18,37,2016_03_SF_SEA
+1,11:58,Rams,Brian Quick 44 yard pass from Case Keenum (Greg Zuerlein kick),7,0,2016_03_LA_TB
+1,8:45,Buccaneers,Kwon Alexander 38 yard interception return (Roberto Aguayo kick failed),7,6,2016_03_LA_TB
+1,2:26,Rams,Greg Zuerlein 53 yard field goal ,10,6,2016_03_LA_TB
+2,12:23,Buccaneers,Charles Sims 1 yard rush (Roberto Aguayo kick),10,13,2016_03_LA_TB
+2,6:03,Buccaneers,Cameron Brate 3 yard pass from Jameis Winston (Roberto Aguayo kick),10,20,2016_03_LA_TB
+2,0:22,Rams,Todd Gurley 1 yard rush (Greg Zuerlein kick),17,20,2016_03_LA_TB
+3,0:48,Rams,Todd Gurley 1 yard rush (Greg Zuerlein kick),24,20,2016_03_LA_TB
+4,11:39,Rams,Ethan Westbrooks 77 yard defensive fumble return (Greg Zuerlein kick),31,20,2016_03_LA_TB
+4,8:55,Buccaneers,Cameron Brate 1 yard pass from Jameis Winston (pass failed),31,26,2016_03_LA_TB
+4,4:38,Rams,Tavon Austin 43 yard pass from Case Keenum (run failed),37,26,2016_03_LA_TB
+4,2:15,Buccaneers,Mike Evans 7 yard pass from Jameis Winston (pass failed),37,32,2016_03_LA_TB
+1,8:53,Colts,Adam Vinatieri 38 yard field goal ,0,3,2016_03_SD_IND
+1,3:39,Colts,Frank Gore 6 yard rush (Adam Vinatieri kick),0,10,2016_03_SD_IND
+2,14:51,Chargers,Josh Lambo 42 yard field goal ,3,10,2016_03_SD_IND
+2,14:04,Chargers,Josh Lambo 34 yard field goal ,6,10,2016_03_SD_IND
+2,6:25,Colts,Adam Vinatieri 33 yard field goal ,6,13,2016_03_SD_IND
+2,0:55,Chargers,Caraun Reid 61 yard defensive fumble return (Josh Lambo kick),13,13,2016_03_SD_IND
+3,8:23,Chargers,Melvin Gordon 1 yard rush (Josh Lambo kick failed),19,13,2016_03_SD_IND
+3,2:39,Colts,Robert Turbin 1 yard rush (Adam Vinatieri kick),19,20,2016_03_SD_IND
+4,7:34,Chargers,Josh Lambo 27 yard field goal ,22,20,2016_03_SD_IND
+4,1:17,Colts,T.Y. Hilton 63 yard pass from Andrew Luck (pass failed),22,26,2016_03_SD_IND
+1,0:13,Chiefs,Travis Kelce 12 yard pass from Alex Smith (Cairo Santos kick),0,7,2016_03_NYJ_KC
+2,6:11,Chiefs,Cairo Santos 27 yard field goal ,0,10,2016_03_NYJ_KC
+2,6:02,Chiefs,Demetrius Harris 27 yard fumble return (Cairo Santos kick),0,17,2016_03_NYJ_KC
+2,2:06,Jets,Nick Folk 28 yard field goal ,3,17,2016_03_NYJ_KC
+4,3:28,Chiefs,Derrick Johnson 55 yard interception return (Cairo Santos kick),3,24,2016_03_NYJ_KC
+1,5:29,Eagles,Caleb Sturgis 29 yard field goal ,0,3,2016_03_PIT_PHI
+2,12:04,Eagles,Jordan Matthews 12 yard pass from Carson Wentz (Caleb Sturgis kick),0,10,2016_03_PIT_PHI
+2,7:40,Steelers,Chris Boswell 40 yard field goal ,3,10,2016_03_PIT_PHI
+2,2:25,Eagles,Caleb Sturgis 38 yard field goal ,3,13,2016_03_PIT_PHI
+3,12:54,Eagles,Darren Sproles 73 yard pass from Carson Wentz (Caleb Sturgis kick),3,20,2016_03_PIT_PHI
+3,5:45,Eagles,Wendell Smallwood 1 yard rush (Caleb Sturgis kick),3,27,2016_03_PIT_PHI
+3,1:52,Eagles,Kenjon Barner 8 yard rush (Caleb Sturgis kick),3,34,2016_03_PIT_PHI
+1,9:30,Cowboys,Dak Prescott 1 yard rush (Dan Bailey kick),0,7,2016_03_CHI_DAL
+1,1:54,Cowboys,Dan Bailey 49 yard field goal ,0,10,2016_03_CHI_DAL
+2,11:11,Cowboys,Lance Dunbar 1 yard rush (Dan Bailey kick),0,17,2016_03_CHI_DAL
+2,7:47,Bears,Connor Barth 34 yard field goal ,3,17,2016_03_CHI_DAL
+2,0:38,Cowboys,Alfred Morris 3 yard rush (Dan Bailey kick),3,24,2016_03_CHI_DAL
+3,7:08,Bears,Zach Miller 2 yard pass from Brian Hoyer (Connor Barth kick),10,24,2016_03_CHI_DAL
+4,9:02,Cowboys,Dez Bryant 17 yard pass from Dak Prescott (Dan Bailey kick),10,31,2016_03_CHI_DAL
+4,6:28,Bears,Zach Miller 6 yard pass from Brian Hoyer (Connor Barth kick),17,31,2016_03_CHI_DAL
+1,8:25,Saints,Coby Fleener 2 yard pass from Drew Brees (Wil Lutz kick),0,7,2016_03_ATL_NO
+1,5:21,Falcons,Tevin Coleman 2 yard rush (Matt Bryant kick),7,7,2016_03_ATL_NO
+2,14:53,Falcons,Devonta Freeman 13 yard pass from Matt Ryan (Matt Bryant kick),14,7,2016_03_ATL_NO
+2,9:55,Saints,Michael Thomas 3 yard pass from Drew Brees (Wil Lutz kick),14,14,2016_03_ATL_NO
+2,5:31,Falcons,Tevin Coleman 2 yard rush (Matt Bryant kick),21,14,2016_03_ATL_NO
+2,0:28,Falcons,Justin Hardy 4 yard pass from Matt Ryan (Matt Bryant kick),28,14,2016_03_ATL_NO
+2,0:00,Saints,Wil Lutz 57 yard field goal ,28,17,2016_03_ATL_NO
+3,12:03,Falcons,Tevin Coleman 6 yard rush (Matt Bryant kick),35,17,2016_03_ATL_NO
+3,7:38,Saints,John Kuhn 3 yard rush (Mark Ingram run),35,25,2016_03_ATL_NO
+3,2:58,Falcons,Matt Bryant 21 yard field goal ,38,25,2016_03_ATL_NO
+4,13:37,Falcons,Deion Jones 90 yard interception return (Matt Bryant kick),45,25,2016_03_ATL_NO
+4,10:00,Saints,Mark Ingram 5 yard pass from Drew Brees (Wil Lutz kick),45,32,2016_03_ATL_NO
+1,9:51,Bengals,Mike Nugent 42 yard field goal ,0,3,2016_04_MIA_CIN
+1,9:04,Dolphins,Kenny Stills 74 yard pass from Ryan Tannehill (Andrew Franks kick),7,3,2016_04_MIA_CIN
+1,3:19,Bengals,A.J. Green 7 yard pass from Andy Dalton (Mike Nugent kick),7,10,2016_04_MIA_CIN
+2,4:12,Bengals,Mike Nugent 22 yard field goal ,7,13,2016_04_MIA_CIN
+2,1:06,Bengals,Mike Nugent 43 yard field goal ,7,16,2016_04_MIA_CIN
+3,6:09,Bengals,Mike Nugent 22 yard field goal ,7,19,2016_04_MIA_CIN
+4,13:30,Bengals,Mike Nugent 47 yard field goal ,7,22,2016_04_MIA_CIN
+1,8:23,Jaguars,Allen Robinson 3 yard pass from Blake Bortles (Jason Myers kick),0,7,2016_04_IND_JAX
+1,1:50,Colts,Adam Vinatieri 53 yard field goal ,3,7,2016_04_IND_JAX
+2,8:53,Colts,Adam Vinatieri 49 yard field goal ,6,7,2016_04_IND_JAX
+2,4:09,Jaguars,Blake Bortles 1 yard rush (Jason Myers kick),6,14,2016_04_IND_JAX
+2,0:00,Jaguars,Jason Myers 22 yard field goal ,6,17,2016_04_IND_JAX
+3,11:50,Jaguars,Jason Myers 46 yard field goal ,6,20,2016_04_IND_JAX
+3,2:51,Jaguars,Jason Myers 49 yard field goal ,6,23,2016_04_IND_JAX
+4,14:48,Colts,Frank Gore 1 yard rush (Adam Vinatieri kick),13,23,2016_04_IND_JAX
+4,7:06,Colts,T.Y. Hilton 2 yard pass from Andrew Luck (Adam Vinatieri kick),20,23,2016_04_IND_JAX
+4,5:03,Jaguars,Allen Hurns 42 yard pass from Blake Bortles (Jason Myers kick),20,30,2016_04_IND_JAX
+4,3:03,Colts,Phillip Dorsett 64 yard pass from Andrew Luck (Adam Vinatieri kick),27,30,2016_04_IND_JAX
+1,7:14,Falcons,Jacob Tamme 4 yard pass from Matt Ryan (Matt Bryant kick),0,7,2016_04_CAR_ATL
+1,0:17,Falcons,Devonta Freeman 13 yard rush (Matt Bryant kick),0,14,2016_04_CAR_ATL
+2,11:31,Panthers,Kurt Coleman 8 yard interception return (Graham Gano kick),7,14,2016_04_CAR_ATL
+2,5:56,Falcons,Matt Bryant 28 yard field goal ,7,17,2016_04_CAR_ATL
+2,3:07,Panthers,Graham Gano 54 yard field goal ,10,17,2016_04_CAR_ATL
+3,9:13,Falcons,Austin Hooper 42 yard pass from Matt Ryan (Matt Bryant kick),10,24,2016_04_CAR_ATL
+3,4:57,Falcons,Aldrick Robinson 35 yard pass from Matt Ryan (Matt Bryant kick),10,31,2016_04_CAR_ATL
+4,13:19,Falcons,Matt Bryant 53 yard field goal ,10,34,2016_04_CAR_ATL
+4,11:42,Panthers,Kelvin Benjamin 6 yard pass from Cam Newton (Cam Newton run),18,34,2016_04_CAR_ATL
+4,3:58,Panthers,Greg Olsen 14 yard pass from Derek Anderson (Greg Olsen pass from Derek Anderson),26,34,2016_04_CAR_ATL
+4,3:45,Falcons,Julio Jones 75 yard pass from Matt Ryan (Matt Bryant kick),26,41,2016_04_CAR_ATL
+4,1:53,Panthers,Corey Brown 16 yard pass from Derek Anderson (Graham Gano kick),33,41,2016_04_CAR_ATL
+4,1:14,Falcons,Robert Alford 30 yard interception return (Matt Bryant kick),33,48,2016_04_CAR_ATL
+1,1:25,Raiders,Seth Roberts 6 yard pass from Derek Carr (Sebastian Janikowski kick),7,0,2016_04_OAK_BAL
+2,12:51,Ravens,Justin Tucker 24 yard field goal ,7,3,2016_04_OAK_BAL
+2,4:09,Raiders,Michael Crabtree 5 yard pass from Derek Carr (Sebastian Janikowski kick),14,3,2016_04_OAK_BAL
+2,0:03,Ravens,Justin Tucker 43 yard field goal ,14,6,2016_04_OAK_BAL
+3,2:41,Ravens,Joe Flacco 1 yard rush (pass failed),14,12,2016_04_OAK_BAL
+4,11:11,Raiders,Michael Crabtree 13 yard pass from Derek Carr (Sebastian Janikowski kick),21,12,2016_04_OAK_BAL
+4,6:27,Ravens,Steve Smith Sr. 52 yard pass from Joe Flacco (Justin Tucker kick),21,19,2016_04_OAK_BAL
+4,3:36,Ravens,Terrance West 3 yard rush (Mike Wallace pass from Joe Flacco),21,27,2016_04_OAK_BAL
+4,2:12,Raiders,Michael Crabtree 23 yard pass from Derek Carr (Sebastian Janikowski kick),28,27,2016_04_OAK_BAL
+1,6:35,Bears,Eddie Royal 4 yard pass from Brian Hoyer (Connor Barth kick),0,7,2016_04_DET_CHI
+2,2:19,Lions,Matt Prater 50 yard field goal ,3,7,2016_04_DET_CHI
+3,7:18,Lions,Matt Prater 21 yard field goal ,6,7,2016_04_DET_CHI
+3,3:34,Bears,Zach Miller 6 yard pass from Brian Hoyer (Connor Barth kick),6,14,2016_04_DET_CHI
+4,10:09,Bears,Connor Barth 25 yard field goal ,6,17,2016_04_DET_CHI
+4,1:52,Lions,Andre Roberts 85 yard punt return (Golden Tate pass from Matthew Stafford),14,17,2016_04_DET_CHI
+1,10:31,Texans,C.J. Fiedorowicz 14 yard pass from Brock Osweiler (Nick Novak kick),0,7,2016_04_TEN_HOU
+1,5:34,Texans,Will Fuller 5 yard pass from Brock Osweiler (Nick Novak kick),0,14,2016_04_TEN_HOU
+1,2:36,Titans,Ryan Succop 48 yard field goal ,3,14,2016_04_TEN_HOU
+2,13:42,Texans,Nick Novak 53 yard field goal ,3,17,2016_04_TEN_HOU
+2,11:21,Titans,DeMarco Murray 2 yard rush (Ryan Succop kick),10,17,2016_04_TEN_HOU
+2,2:28,Titans,DeMarco Murray 1 yard rush (Ryan Succop kick),17,17,2016_04_TEN_HOU
+2,0:07,Texans,Nick Novak 45 yard field goal ,17,20,2016_04_TEN_HOU
+3,7:04,Titans,Ryan Succop 26 yard field goal ,20,20,2016_04_TEN_HOU
+3,0:56,Texans,Will Fuller 67 yard punt return (Nick Novak kick),20,27,2016_04_TEN_HOU
+1,5:31,Bills,LeSean McCoy 7 yard pass from Tyrod Taylor (Dan Carpenter kick),7,0,2016_04_BUF_NE
+2,14:49,Bills,Dan Carpenter 34 yard field goal ,10,0,2016_04_BUF_NE
+2,7:46,Bills,Dan Carpenter 43 yard field goal ,13,0,2016_04_BUF_NE
+3,0:28,Bills,Dan Carpenter 44 yard field goal ,16,0,2016_04_BUF_NE
+1,6:27,Jets,Nick Folk 34 yard field goal ,0,3,2016_04_SEA_NYJ
+2,11:34,Seahawks,C.J. Spiller 8 yard pass from Russell Wilson (Stephen Hauschka kick),7,3,2016_04_SEA_NYJ
+2,3:44,Seahawks,Tanner McEvoy 42 yard pass from Russell Wilson (Stephen Hauschka kick),14,3,2016_04_SEA_NYJ
+2,0:13,Jets,Brandon Marshall 17 yard pass from Ryan Fitzpatrick (Nick Folk kick),14,10,2016_04_SEA_NYJ
+3,4:13,Seahawks,Stephen Hauschka 33 yard field goal ,17,10,2016_04_SEA_NYJ
+4,12:20,Seahawks,Christine Michael 6 yard pass from Russell Wilson (Stephen Hauschka kick),24,10,2016_04_SEA_NYJ
+4,4:04,Seahawks,Stephen Hauschka 53 yard field goal ,27,10,2016_04_SEA_NYJ
+4,2:15,Jets,Charone Peake 42 yard offensive fumble return (Nick Folk kick),27,17,2016_04_SEA_NYJ
+1,7:40,Redskins,Jordan Reed 8 yard pass from Kirk Cousins (Dustin Hopkins kick),0,7,2016_04_CLE_WAS
+1,0:27,Redskins,Jordan Reed 9 yard pass from Kirk Cousins (Dustin Hopkins kick),0,14,2016_04_CLE_WAS
+2,9:33,Browns,Isaiah Crowell 2 yard rush (Cody Parkey kick),7,14,2016_04_CLE_WAS
+2,7:55,Browns,Terrelle Pryor 9 yard pass from Cody Kessler (Cody Parkey kick),14,14,2016_04_CLE_WAS
+2,2:29,Redskins,Dustin Hopkins 49 yard field goal ,14,17,2016_04_CLE_WAS
+2,0:00,Browns,Cody Parkey 51 yard field goal ,17,17,2016_04_CLE_WAS
+3,9:25,Browns,Cody Parkey 45 yard field goal ,20,17,2016_04_CLE_WAS
+4,10:39,Redskins,Chris Thompson 5 yard pass from Kirk Cousins (Dustin Hopkins kick),20,24,2016_04_CLE_WAS
+4,4:25,Redskins,Matt Jones 1 yard rush (Dustin Hopkins kick),20,31,2016_04_CLE_WAS
+1,13:26,Broncos,Demaryius Thomas 11 yard pass from Trevor Siemian (Brandon McManus kick),7,0,2016_04_DEN_TB
+1,6:40,Buccaneers,Jameis Winston 7 yard rush (Roberto Aguayo kick),7,7,2016_04_DEN_TB
+2,12:14,Broncos,C.J. Anderson 1 yard rush (Brandon McManus kick),14,7,2016_04_DEN_TB
+2,0:05,Broncos,Brandon McManus 38 yard field goal ,17,7,2016_04_DEN_TB
+3,7:03,Broncos,Brandon McManus 24 yard field goal ,20,7,2016_04_DEN_TB
+4,8:55,Broncos,Emmanuel Sanders 5 yard pass from Paxton Lynch (Brandon McManus kick),27,7,2016_04_DEN_TB
+1,1:59,Rams,Brian Quick 65 yard pass from Case Keenum (Greg Zuerlein kick),7,0,2016_04_LA_ARI
+2,12:19,Cardinals,Chandler Catanzaro 25 yard field goal ,7,3,2016_04_LA_ARI
+2,8:42,Rams,Greg Zuerlein 29 yard field goal ,10,3,2016_04_LA_ARI
+2,0:24,Cardinals,Michael Floyd 5 yard pass from Carson Palmer (Chandler Catanzaro kick),10,10,2016_04_LA_ARI
+3,0:00,Cardinals,Chandler Catanzaro 21 yard field goal ,10,13,2016_04_LA_ARI
+4,2:36,Rams,Brian Quick 4 yard pass from Case Keenum (Greg Zuerlein kick),17,13,2016_04_LA_ARI
+1,10:32,Saints,Mark Ingram 1 yard rush (Wil Lutz kick),7,0,2016_04_NO_SD
+1,1:10,Chargers,Hunter Henry 20 yard pass from Philip Rivers (Josh Lambo kick),7,7,2016_04_NO_SD
+2,9:20,Saints,John Kuhn 4 yard pass from Drew Brees (Wil Lutz kick),14,7,2016_04_NO_SD
+2,7:04,Chargers,Dontrelle Inman 57 yard pass from Philip Rivers (Josh Lambo kick),14,14,2016_04_NO_SD
+2,4:50,Chargers,Josh Lambo 30 yard field goal ,14,17,2016_04_NO_SD
+2,0:13,Chargers,Melvin Gordon 1 yard rush (Josh Lambo kick),14,24,2016_04_NO_SD
+3,9:00,Saints,John Kuhn 1 yard rush (Wil Lutz kick),21,24,2016_04_NO_SD
+4,12:15,Chargers,Melvin Gordon 1 yard rush (Josh Lambo kick),21,31,2016_04_NO_SD
+4,8:39,Chargers,Josh Lambo 47 yard field goal ,21,34,2016_04_NO_SD
+4,4:50,Saints,Michael Thomas 5 yard pass from Drew Brees (Wil Lutz kick),28,34,2016_04_NO_SD
+4,1:57,Saints,John Kuhn 1 yard rush (Wil Lutz kick),35,34,2016_04_NO_SD
+1,6:41,49ers,Jeremy Kerley 33 yard pass from Blaine Gabbert (Phil Dawson kick),0,7,2016_04_DAL_SF
+2,13:55,49ers,Carlos Hyde 3 yard rush (Phil Dawson kick),0,14,2016_04_DAL_SF
+2,2:58,Cowboys,Terrance Williams 20 yard pass from Dak Prescott (Dan Bailey kick),7,14,2016_04_DAL_SF
+2,0:12,Cowboys,Brice Butler 4 yard pass from Dak Prescott (Dan Bailey kick),14,14,2016_04_DAL_SF
+3,12:18,49ers,Phil Dawson 36 yard field goal ,14,17,2016_04_DAL_SF
+3,1:08,Cowboys,Ezekiel Elliott 1 yard rush (Dan Bailey kick),21,17,2016_04_DAL_SF
+4,4:11,Cowboys,Dan Bailey 22 yard field goal ,24,17,2016_04_DAL_SF
+1,7:27,Steelers,Darrius Heyward-Bey 31 yard pass from Ben Roethlisberger (Markus Wheaton pass from Ben Roethlisberger),0,8,2016_04_KC_PIT
+1,5:10,Steelers,Antonio Brown 4 yard pass from Ben Roethlisberger (Chris Boswell kick),0,15,2016_04_KC_PIT
+1,1:20,Steelers,Antonio Brown 38 yard pass from Ben Roethlisberger (Chris Boswell kick),0,22,2016_04_KC_PIT
+2,0:44,Steelers,Jesse James 9 yard pass from Ben Roethlisberger (Chris Boswell kick),0,29,2016_04_KC_PIT
+3,11:19,Steelers,Markus Wheaton 30 yard pass from Ben Roethlisberger (Chris Boswell kick),0,36,2016_04_KC_PIT
+4,11:11,Chiefs,Tyreek Hill 10 yard pass from Alex Smith (Cairo Santos kick),7,36,2016_04_KC_PIT
+4,7:22,Steelers,DeAngelo Williams 2 yard rush (Chris Boswell kick),7,43,2016_04_KC_PIT
+4,0:04,Chiefs,Travis Kelce 3 yard pass from Alex Smith (Cairo Santos kick),14,43,2016_04_KC_PIT
+1,6:28,Vikings,Matt Asiata 1 yard rush (Blair Walsh kick),0,7,2016_04_NYG_MIN
+2,7:59,Vikings,Kyle Rudolph 7 yard pass from Sam Bradford (Blair Walsh kick),0,14,2016_04_NYG_MIN
+2,0:02,Giants,Josh Brown 40 yard field goal ,3,14,2016_04_NYG_MIN
+3,7:39,Vikings,Blair Walsh 44 yard field goal ,3,17,2016_04_NYG_MIN
+4,13:38,Giants,Orleans Darkwa 1 yard rush (Josh Brown kick),10,17,2016_04_NYG_MIN
+4,9:20,Vikings,Jerick McKinnon 4 yard rush (Blair Walsh kick),10,24,2016_04_NYG_MIN
+2,4:12,49ers,Jeremy Kerley 9 yard pass from Blaine Gabbert (Phil Dawson kick),0,7,2016_05_ARI_SF
+2,1:40,Cardinals,Larry Fitzgerald 21 yard pass from Drew Stanton (Chandler Catanzaro kick),7,7,2016_05_ARI_SF
+3,12:45,Cardinals,David Johnson 4 yard rush (Chandler Catanzaro kick),14,7,2016_05_ARI_SF
+3,7:35,Cardinals,Larry Fitzgerald 29 yard pass from Drew Stanton (Chandler Catanzaro kick),21,7,2016_05_ARI_SF
+3,1:54,49ers,Carlos Hyde 1 yard rush (Phil Dawson kick),21,14,2016_05_ARI_SF
+4,13:39,Cardinals,Chandler Catanzaro 36 yard field goal ,24,14,2016_05_ARI_SF
+4,4:44,Cardinals,David Johnson 2 yard rush (Chandler Catanzaro kick),31,14,2016_05_ARI_SF
+4,1:52,49ers,Blaine Gabbert 1 yard rush (Phil Dawson kick),31,21,2016_05_ARI_SF
+4,1:17,Cardinals,"Safety, Calais Campbell blaine Gabbert sack in end zone ",33,21,2016_05_ARI_SF
+1,10:13,Ravens,Crockett Gillmore 7 yard pass from Joe Flacco (Justin Tucker kick),0,7,2016_05_WAS_BAL
+1,4:52,Redskins,Jamison Crowder 85 yard punt return (Dustin Hopkins kick failed),6,7,2016_05_WAS_BAL
+2,14:56,Ravens,Justin Tucker 31 yard field goal ,6,10,2016_05_WAS_BAL
+3,8:28,Redskins,Pierre Garcon 21 yard pass from Kirk Cousins (Dustin Hopkins kick),13,10,2016_05_WAS_BAL
+3,0:14,Redskins,Dustin Hopkins 27 yard field goal ,16,10,2016_05_WAS_BAL
+1,10:28,Patriots,LeGarrette Blount 1 yard rush (Stephen Gostkowski kick),7,0,2016_05_NE_CLE
+1,6:09,Browns,Andrew Hawkins 11 yard pass from Cody Kessler (Cody Parkey kick),7,7,2016_05_NE_CLE
+1,2:06,Patriots,Martellus Bennett 7 yard pass from Tom Brady (Stephen Gostkowski kick),14,7,2016_05_NE_CLE
+1,1:20,Patriots,"Safety, Fumble O.B. in end zone ",16,7,2016_05_NE_CLE
+2,12:10,Patriots,Martellus Bennett 5 yard pass from Tom Brady (Stephen Gostkowski kick),23,7,2016_05_NE_CLE
+3,12:24,Patriots,Martellus Bennett 37 yard pass from Tom Brady (Stephen Gostkowski kick),30,7,2016_05_NE_CLE
+4,14:05,Browns,Connor Hamlett 17 yard pass from Charlie Whitehurst (pass failed),30,13,2016_05_NE_CLE
+4,7:42,Patriots,Stephen Gostkowski 31 yard field goal ,33,13,2016_05_NE_CLE
+1,9:37,Lions,Theo Riddick 1 yard pass from Matthew Stafford (Matt Prater kick),0,7,2016_05_PHI_DET
+1,0:53,Lions,Theo Riddick 17 yard pass from Matthew Stafford (Matt Prater kick),0,14,2016_05_PHI_DET
+2,10:21,Eagles,Ryan Mathews 1 yard pass from Carson Wentz (Caleb Sturgis kick),7,14,2016_05_PHI_DET
+2,3:08,Lions,Marvin Jones 1 yard pass from Matthew Stafford (Matt Prater kick),7,21,2016_05_PHI_DET
+2,0:00,Eagles,Caleb Sturgis 50 yard field goal ,10,21,2016_05_PHI_DET
+3,9:18,Eagles,Josh Huff 1 yard pass from Carson Wentz (Caleb Sturgis kick),17,21,2016_05_PHI_DET
+3,6:47,Eagles,Caleb Sturgis 33 yard field goal ,20,21,2016_05_PHI_DET
+4,6:40,Eagles,Caleb Sturgis 49 yard field goal ,23,21,2016_05_PHI_DET
+4,1:28,Lions,Matt Prater 29 yard field goal ,23,24,2016_05_PHI_DET
+1,8:24,Bears,Connor Barth 35 yard field goal ,3,0,2016_05_CHI_IND
+1,5:10,Colts,Adam Vinatieri 54 yard field goal ,3,3,2016_05_CHI_IND
+2,12:58,Colts,Dwayne Allen 1 yard pass from Andrew Luck (Adam Vinatieri kick),3,10,2016_05_CHI_IND
+2,8:22,Bears,Connor Barth 49 yard field goal ,6,10,2016_05_CHI_IND
+2,6:08,Colts,Adam Vinatieri 53 yard field goal ,6,13,2016_05_CHI_IND
+2,3:35,Bears,Cameron Meredith 14 yard pass from Brian Hoyer (Connor Barth kick),13,13,2016_05_CHI_IND
+2,0:11,Colts,Adam Vinatieri 26 yard field goal ,13,16,2016_05_CHI_IND
+3,5:52,Colts,Adam Vinatieri 41 yard field goal ,13,19,2016_05_CHI_IND
+4,13:31,Bears,Connor Barth 24 yard field goal ,16,19,2016_05_CHI_IND
+4,7:04,Bears,Jordan Howard 21 yard pass from Brian Hoyer (Connor Barth kick),23,19,2016_05_CHI_IND
+4,3:43,Colts,T.Y. Hilton 35 yard pass from Andrew Luck (Adam Vinatieri kick),23,26,2016_05_CHI_IND
+4,2:28,Colts,Adam Vinatieri 46 yard field goal ,23,29,2016_05_CHI_IND
+1,0:23,Titans,Marcus Mariota 5 yard rush (Ryan Succop kick),7,0,2016_05_TEN_MIA
+2,12:23,Dolphins,Jakeem Grant 74 yard punt return (Andrew Franks kick),7,7,2016_05_TEN_MIA
+2,5:30,Titans,Andre Johnson 5 yard pass from Marcus Mariota (Ryan Succop kick),14,7,2016_05_TEN_MIA
+2,2:00,Dolphins,Jay Ajayi 4 yard rush (Andrew Franks kick),14,14,2016_05_TEN_MIA
+2,0:47,Titans,Delanie Walker 20 yard pass from Marcus Mariota (Ryan Succop kick),21,14,2016_05_TEN_MIA
+3,10:33,Titans,Ryan Succop 40 yard field goal ,24,14,2016_05_TEN_MIA
+3,5:10,Dolphins,Andrew Franks 24 yard field goal ,24,17,2016_05_TEN_MIA
+4,8:23,Titans,Rishard Matthews 4 yard pass from Marcus Mariota (Ryan Succop kick failed),30,17,2016_05_TEN_MIA
+1,11:23,Vikings,Adam Thielen 36 yard pass from Sam Bradford (Blair Walsh kick),0,7,2016_05_HOU_MIN
+1,6:28,Vikings,Matt Asiata 1 yard rush (Blair Walsh kick),0,14,2016_05_HOU_MIN
+2,9:58,Vikings,Blair Walsh 19 yard field goal ,0,17,2016_05_HOU_MIN
+2,8:46,Vikings,Marcus Sherels 79 yard punt return (Blair Walsh kick),0,24,2016_05_HOU_MIN
+2,5:42,Texans,Nick Novak 38 yard field goal ,3,24,2016_05_HOU_MIN
+2,1:37,Texans,Nick Novak 30 yard field goal ,6,24,2016_05_HOU_MIN
+4,14:09,Vikings,Cordarrelle Patterson 9 yard pass from Sam Bradford (Blair Walsh kick),6,31,2016_05_HOU_MIN
+4,3:46,Texans,DeAndre Hopkins 1 yard pass from Brock Osweiler (Nick Novak kick),13,31,2016_05_HOU_MIN
+1,11:45,Jets,Nick Folk 35 yard field goal ,3,0,2016_05_NYJ_PIT
+1,10:16,Steelers,Sammie Coates 72 yard pass from Ben Roethlisberger (Chris Boswell kick),3,7,2016_05_NYJ_PIT
+2,11:07,Jets,Nick Folk 48 yard field goal ,6,7,2016_05_NYJ_PIT
+2,2:06,Jets,Brandon Marshall 15 yard pass from Ryan Fitzpatrick (Nick Folk kick),13,7,2016_05_NYJ_PIT
+2,0:41,Steelers,Jesse James 1 yard pass from Ben Roethlisberger (Chris Boswell kick),13,14,2016_05_NYJ_PIT
+3,10:23,Steelers,Chris Boswell 47 yard field goal ,13,17,2016_05_NYJ_PIT
+4,14:55,Steelers,Antonio Brown 5 yard pass from Ben Roethlisberger (Chris Boswell kick),13,24,2016_05_NYJ_PIT
+4,1:46,Steelers,Sammie Coates 5 yard pass from Ben Roethlisberger (Chris Boswell kick),13,31,2016_05_NYJ_PIT
+1,11:18,Falcons,Devonta Freeman 1 yard rush (Matt Bryant kick),7,0,2016_05_ATL_DEN
+1,4:23,Falcons,Matt Bryant 46 yard field goal ,10,0,2016_05_ATL_DEN
+2,11:39,Broncos,Brandon McManus 35 yard field goal ,10,3,2016_05_ATL_DEN
+2,1:48,Falcons,Matt Bryant 33 yard field goal ,13,3,2016_05_ATL_DEN
+3,7:53,Falcons,Tevin Coleman 31 yard pass from Matt Ryan (Matt Bryant kick),20,3,2016_05_ATL_DEN
+4,11:01,Broncos,Brandon McManus 46 yard field goal ,20,6,2016_05_ATL_DEN
+4,8:20,Falcons,Matt Bryant 25 yard field goal ,23,6,2016_05_ATL_DEN
+4,2:38,Broncos,Demaryius Thomas 3 yard pass from Paxton Lynch (Brandon McManus kick),23,13,2016_05_ATL_DEN
+4,0:14,Broncos,Brandon McManus 45 yard field goal ,23,16,2016_05_ATL_DEN
+1,11:09,Cowboys,Ezekiel Elliott 13 yard rush (Dan Bailey kick),0,7,2016_05_CIN_DAL
+2,14:43,Cowboys,Dak Prescott 5 yard rush (Dan Bailey kick),0,14,2016_05_CIN_DAL
+2,4:09,Cowboys,Cole Beasley 14 yard pass from Dak Prescott (Dan Bailey kick),0,21,2016_05_CIN_DAL
+3,11:38,Cowboys,Ezekiel Elliott 60 yard rush (Dan Bailey kick),0,28,2016_05_CIN_DAL
+4,10:10,Bengals,Brandon LaFell 7 yard pass from Andy Dalton (Mike Nugent kick),7,28,2016_05_CIN_DAL
+4,2:39,Bengals,Brandon LaFell 5 yard pass from Andy Dalton (Mike Nugent kick),14,28,2016_05_CIN_DAL
+1,9:31,Rams,Greg Zuerlein 37 yard field goal ,0,3,2016_05_BUF_LA
+1,2:22,Bills,Justin Hunter 4 yard pass from Tyrod Taylor (Dan Carpenter kick),7,3,2016_05_BUF_LA
+2,13:59,Bills,Mike Gillislee 5 yard rush (Dan Carpenter kick failed),13,3,2016_05_BUF_LA
+2,7:46,Rams,Greg Zuerlein 32 yard field goal ,13,6,2016_05_BUF_LA
+2,1:56,Rams,Todd Gurley 1 yard rush (Greg Zuerlein kick),13,13,2016_05_BUF_LA
+2,0:00,Bills,Dan Carpenter 23 yard field goal ,16,13,2016_05_BUF_LA
+3,8:05,Rams,Greg Zuerlein 54 yard field goal ,16,16,2016_05_BUF_LA
+3,3:54,Bills,Nickell Robey-Coleman 41 yard interception return (Dan Carpenter kick),23,16,2016_05_BUF_LA
+4,5:51,Rams,Greg Zuerlein 22 yard field goal ,23,19,2016_05_BUF_LA
+4,2:37,Bills,Marquise Goodwin 6 yard pass from Tyrod Taylor (Dan Carpenter kick),30,19,2016_05_BUF_LA
+1,4:00,Raiders,Sebastian Janikowski 20 yard field goal ,0,3,2016_05_SD_OAK
+2,13:07,Chargers,Tyrell Williams 29 yard pass from Philip Rivers (Josh Lambo kick),7,3,2016_05_SD_OAK
+2,7:13,Raiders,Sebastian Janikowski 26 yard field goal ,7,6,2016_05_SD_OAK
+2,4:24,Chargers,Josh Lambo 36 yard field goal ,10,6,2016_05_SD_OAK
+2,0:00,Raiders,Sebastian Janikowski 56 yard field goal ,10,9,2016_05_SD_OAK
+3,12:31,Chargers,Melvin Gordon 18 yard pass from Philip Rivers (Josh Lambo kick),17,9,2016_05_SD_OAK
+3,11:25,Raiders,Amari Cooper 64 yard pass from Derek Carr (Sebastian Janikowski kick),17,16,2016_05_SD_OAK
+3,10:10,Chargers,Hunter Henry 1 yard pass from Philip Rivers (Josh Lambo kick),24,16,2016_05_SD_OAK
+3,4:41,Raiders,Sebastian Janikowski 48 yard field goal ,24,19,2016_05_SD_OAK
+3,1:09,Raiders,Michael Crabtree 21 yard pass from Derek Carr (Amari Cooper pass from Derek Carr),24,27,2016_05_SD_OAK
+4,12:51,Raiders,Jamize Olawale 1 yard rush (Sebastian Janikowski kick),24,34,2016_05_SD_OAK
+4,6:21,Chargers,Antonio Gates 4 yard pass from Philip Rivers (Josh Lambo kick),31,34,2016_05_SD_OAK
+1,6:18,Packers,Jordy Nelson 2 yard pass from Aaron Rodgers (Mason Crosby kick),0,7,2016_05_NYG_GB
+2,8:21,Giants,Josh Brown 47 yard field goal ,3,7,2016_05_NYG_GB
+2,6:01,Packers,Davante Adams 29 yard pass from Aaron Rodgers (Mason Crosby kick),3,14,2016_05_NYG_GB
+2,1:51,Giants,Josh Brown 41 yard field goal ,6,14,2016_05_NYG_GB
+2,0:00,Packers,Mason Crosby 44 yard field goal ,6,17,2016_05_NYG_GB
+3,5:26,Giants,Josh Brown 30 yard field goal ,9,17,2016_05_NYG_GB
+4,13:46,Packers,Mason Crosby 33 yard field goal ,9,20,2016_05_NYG_GB
+4,6:39,Packers,Mason Crosby 25 yard field goal ,9,23,2016_05_NYG_GB
+4,2:54,Giants,Odell Beckham Jr. 8 yard pass from Eli Manning (Josh Brown kick),16,23,2016_05_NYG_GB
+1,6:28,Buccaneers,Roberto Aguayo 35 yard field goal ,3,0,2016_05_TB_CAR
+2,0:43,Buccaneers,Roberto Aguayo 35 yard field goal ,6,0,2016_05_TB_CAR
+3,9:12,Panthers,Cameron Artis-Payne 1 yard rush (Graham Gano kick),6,7,2016_05_TB_CAR
+3,6:03,Panthers,Cameron Artis-Payne 12 yard rush (Graham Gano kick),6,14,2016_05_TB_CAR
+3,4:27,Buccaneers,Mike Evans 26 yard pass from Jameis Winston (Adam Humphries pass from Jameis Winston),14,14,2016_05_TB_CAR
+4,0:00,Buccaneers,Roberto Aguayo 38 yard field goal ,17,14,2016_05_TB_CAR
+1,8:00,Chargers,Hunter Henry 5 yard pass from Philip Rivers (Josh Lambo kick),0,7,2016_06_DEN_SD
+2,10:35,Chargers,Josh Lambo 37 yard field goal ,0,10,2016_06_DEN_SD
+2,5:40,Broncos,Brandon McManus 29 yard field goal ,3,10,2016_06_DEN_SD
+3,10:41,Chargers,Josh Lambo 21 yard field goal ,3,13,2016_06_DEN_SD
+3,7:15,Chargers,Josh Lambo 31 yard field goal ,3,16,2016_06_DEN_SD
+3,3:31,Chargers,Josh Lambo 32 yard field goal ,3,19,2016_06_DEN_SD
+4,11:59,Chargers,"Safety, Russell Okung penalty in end zone ",3,21,2016_06_DEN_SD
+4,8:08,Broncos,Bennie Fowler 5 yard pass from Trevor Siemian (Brandon McManus kick),10,21,2016_06_DEN_SD
+4,0:27,Broncos,Brandon McManus 46 yard field goal ,13,21,2016_06_DEN_SD
+1,5:43,49ers,Phil Dawson 33 yard field goal ,3,0,2016_06_SF_BUF
+1,0:14,Bills,LeSean McCoy 4 yard rush (Dan Carpenter kick),3,7,2016_06_SF_BUF
+2,13:56,49ers,Torrey Smith 53 yard pass from Colin Kaepernick (Phil Dawson kick),10,7,2016_06_SF_BUF
+2,10:18,Bills,LeSean McCoy 12 yard rush (Dan Carpenter kick),10,14,2016_06_SF_BUF
+2,5:54,49ers,Phil Dawson 48 yard field goal ,13,14,2016_06_SF_BUF
+2,0:21,Bills,Dan Carpenter 40 yard field goal ,13,17,2016_06_SF_BUF
+3,2:34,Bills,Justin Hunter 30 yard pass from Tyrod Taylor (Dan Carpenter kick),13,24,2016_06_SF_BUF
+4,14:48,49ers,Phil Dawson 47 yard field goal ,16,24,2016_06_SF_BUF
+4,10:53,Bills,LeSean McCoy 18 yard rush (Dan Carpenter kick),16,31,2016_06_SF_BUF
+4,10:32,Bills,Robert Woods 5 yard pass from Tyrod Taylor (Dan Carpenter kick),16,38,2016_06_SF_BUF
+4,5:40,Bills,Mike Gillislee 44 yard rush (Dan Carpenter kick),16,45,2016_06_SF_BUF
+2,14:12,Bears,Connor Barth 36 yard field goal ,0,3,2016_06_JAX_CHI
+2,4:29,Bears,Jordan Howard 1 yard rush (Connor Barth kick),0,10,2016_06_JAX_CHI
+3,1:53,Bears,Connor Barth 24 yard field goal ,0,13,2016_06_JAX_CHI
+4,14:50,Jaguars,Chris Ivory 1 yard rush (Jason Myers kick),7,13,2016_06_JAX_CHI
+4,8:28,Bears,Connor Barth 32 yard field goal ,7,16,2016_06_JAX_CHI
+4,4:59,Jaguars,Jason Myers 30 yard field goal ,10,16,2016_06_JAX_CHI
+4,2:49,Jaguars,Arrelious Benn 51 yard pass from Blake Bortles (Jason Myers kick),17,16,2016_06_JAX_CHI
+1,10:44,Lions,Marvin Jones 7 yard pass from Matthew Stafford (Matt Prater kick),0,7,2016_06_LA_DET
+1,5:15,Rams,Kenny Britt 20 yard pass from Case Keenum (Greg Zuerlein kick),7,7,2016_06_LA_DET
+2,11:01,Rams,Case Keenum 1 yard rush (Greg Zuerlein kick),14,7,2016_06_LA_DET
+2,3:07,Lions,Andre Roberts 2 yard pass from Matthew Stafford (Matt Prater kick),14,14,2016_06_LA_DET
+3,9:50,Lions,Anquan Boldin 4 yard pass from Matthew Stafford (Matt Prater kick),14,21,2016_06_LA_DET
+3,6:33,Rams,Lance Kendricks 15 yard pass from Case Keenum (Greg Zuerlein kick),21,21,2016_06_LA_DET
+4,14:09,Rams,Kenny Britt 9 yard pass from Case Keenum (Greg Zuerlein kick),28,21,2016_06_LA_DET
+4,6:02,Lions,Golden Tate 23 yard pass from Matthew Stafford (Matt Prater kick),28,28,2016_06_LA_DET
+4,1:29,Lions,Matt Prater 34 yard field goal ,28,31,2016_06_LA_DET
+1,8:34,Dolphins,Andrew Franks 30 yard field goal ,0,3,2016_06_PIT_MIA
+1,5:39,Steelers,Darrius Heyward-Bey 60 yard rush (Le'Veon Bell pass from Ben Roethlisberger),8,3,2016_06_PIT_MIA
+2,8:18,Dolphins,Andrew Franks 23 yard field goal ,8,6,2016_06_PIT_MIA
+2,5:23,Dolphins,Andrew Franks 30 yard field goal ,8,9,2016_06_PIT_MIA
+2,0:21,Dolphins,Damien Williams 1 yard rush (Andrew Franks kick),8,16,2016_06_PIT_MIA
+3,1:39,Dolphins,Jay Ajayi 1 yard rush (Andrew Franks kick),8,23,2016_06_PIT_MIA
+4,1:02,Steelers,Cobi Hamilton 23 yard pass from Ben Roethlisberger (Chris Boswell kick),15,23,2016_06_PIT_MIA
+4,0:50,Dolphins,Jay Ajayi 62 yard rush (Andrew Franks kick),15,30,2016_06_PIT_MIA
+1,12:06,Patriots,Stephen Gostkowski 46 yard field goal ,0,3,2016_06_CIN_NE
+2,3:10,Bengals,Andy Dalton 2 yard rush (Mike Nugent kick),7,3,2016_06_CIN_NE
+2,1:01,Patriots,James White 15 yard pass from Tom Brady (Stephen Gostkowski kick),7,10,2016_06_CIN_NE
+3,11:14,Bengals,Brandon LaFell 5 yard pass from Andy Dalton (Mike Nugent kick),14,10,2016_06_CIN_NE
+3,7:05,Patriots,"Safety, Andy Dalton dont'a Hightower sack in end zone ",14,12,2016_06_CIN_NE
+3,5:00,Patriots,Rob Gronkowski 4 yard pass from Tom Brady (Stephen Gostkowski kick),14,19,2016_06_CIN_NE
+3,2:58,Patriots,James White 4 yard pass from Tom Brady (Stephen Gostkowski kick failed),14,25,2016_06_CIN_NE
+4,12:34,Bengals,Mike Nugent 25 yard field goal ,17,25,2016_06_CIN_NE
+4,6:04,Patriots,Stephen Gostkowski 31 yard field goal ,17,28,2016_06_CIN_NE
+4,0:57,Patriots,LeGarrette Blount 1 yard rush (Stephen Gostkowski kick),17,35,2016_06_CIN_NE
+1,8:55,Saints,Coby Fleener 2 yard rush (Wil Lutz kick),0,7,2016_06_CAR_NO
+1,2:31,Saints,Brandin Cooks 87 yard pass from Drew Brees (Wil Lutz kick),0,14,2016_06_CAR_NO
+2,13:47,Saints,Michael Thomas 9 yard pass from Drew Brees (Wil Lutz kick),0,21,2016_06_CAR_NO
+2,3:02,Panthers,Graham Gano 42 yard field goal ,3,21,2016_06_CAR_NO
+2,1:15,Panthers,Devin Funchess 17 yard pass from Cam Newton (Graham Gano kick),10,21,2016_06_CAR_NO
+2,0:10,Saints,Wil Lutz 33 yard field goal ,10,24,2016_06_CAR_NO
+3,6:49,Panthers,Ed Dickson 1 yard pass from Cam Newton (Graham Gano kick),17,24,2016_06_CAR_NO
+3,4:56,Saints,Coby Fleener 50 yard pass from Drew Brees (Wil Lutz kick),17,31,2016_06_CAR_NO
+4,14:49,Panthers,Jonathan Stewart 2 yard rush (Graham Gano kick),24,31,2016_06_CAR_NO
+4,9:38,Panthers,Jonathan Stewart 1 yard rush (Graham Gano kick failed),30,31,2016_06_CAR_NO
+4,6:02,Saints,Josh Hill 8 yard pass from Drew Brees (Wil Lutz kick),30,38,2016_06_CAR_NO
+4,2:58,Panthers,Cam Newton 2 yard rush (Devin Funchess pass from Cam Newton),38,38,2016_06_CAR_NO
+4,0:11,Saints,Wil Lutz 52 yard field goal ,38,41,2016_06_CAR_NO
+1,10:10,Ravens,Justin Tucker 23 yard field goal ,3,0,2016_06_BAL_NYG
+1,6:42,Ravens,Terrance West 1 yard rush (Justin Tucker kick),10,0,2016_06_BAL_NYG
+2,2:28,Giants,Roger Lewis 24 yard pass from Eli Manning (Josh Brown kick),10,7,2016_06_BAL_NYG
+3,9:48,Giants,Josh Brown 21 yard field goal ,10,10,2016_06_BAL_NYG
+3,2:22,Ravens,Justin Tucker 39 yard field goal ,13,10,2016_06_BAL_NYG
+3,2:10,Giants,Odell Beckham Jr. 75 yard pass from Eli Manning (Josh Brown kick),13,17,2016_06_BAL_NYG
+4,9:14,Ravens,Justin Tucker 35 yard field goal ,16,17,2016_06_BAL_NYG
+4,5:54,Giants,Josh Brown 31 yard field goal ,16,20,2016_06_BAL_NYG
+4,2:04,Ravens,Terrance West 2 yard rush (Justin Tucker kick),23,20,2016_06_BAL_NYG
+4,1:24,Giants,Odell Beckham Jr. 66 yard pass from Eli Manning (Josh Brown kick),23,27,2016_06_BAL_NYG
+1,10:37,Titans,Rishard Matthews 11 yard pass from Marcus Mariota (Ryan Succop kick),0,7,2016_06_CLE_TEN
+1,8:47,Browns,Cody Parkey 45 yard field goal ,3,7,2016_06_CLE_TEN
+1,2:08,Browns,Cody Parkey 37 yard field goal ,6,7,2016_06_CLE_TEN
+2,11:51,Titans,Kendall Wright 48 yard pass from Marcus Mariota (Ryan Succop kick),6,14,2016_06_CLE_TEN
+2,0:40,Browns,Terrelle Pryor 7 yard pass from Cody Kessler (Cody Parkey kick),13,14,2016_06_CLE_TEN
+3,9:33,Titans,DeMarco Murray 3 yard rush (Ryan Succop kick),13,21,2016_06_CLE_TEN
+4,6:43,Titans,Anthony Fasano 15 yard pass from Marcus Mariota (Ryan Succop kick),13,28,2016_06_CLE_TEN
+4,2:07,Browns,Terrelle Pryor 5 yard pass from Cody Kessler (pass failed),19,28,2016_06_CLE_TEN
+4,0:27,Browns,Duke Johnson 1 yard rush (Cody Parkey kick),26,28,2016_06_CLE_TEN
+1,0:51,Redskins,Jamison Crowder 16 yard pass from Kirk Cousins (Dustin Hopkins kick),0,7,2016_06_PHI_WAS
+2,7:48,Redskins,Vernon Davis 13 yard pass from Kirk Cousins (Dustin Hopkins kick),0,14,2016_06_PHI_WAS
+2,7:37,Eagles,Wendell Smallwood 86 yard kickoff return (Caleb Sturgis kick),7,14,2016_06_PHI_WAS
+2,3:55,Eagles,Malcolm Jenkins 64 yard interception return (Caleb Sturgis kick),14,14,2016_06_PHI_WAS
+2,0:06,Redskins,Matt Jones 1 yard rush (Dustin Hopkins kick),14,21,2016_06_PHI_WAS
+3,8:40,Redskins,Dustin Hopkins 32 yard field goal ,14,24,2016_06_PHI_WAS
+4,12:56,Eagles,Caleb Sturgis 38 yard field goal ,17,24,2016_06_PHI_WAS
+4,9:43,Redskins,Dustin Hopkins 50 yard field goal ,17,27,2016_06_PHI_WAS
+4,5:20,Eagles,Caleb Sturgis 28 yard field goal ,20,27,2016_06_PHI_WAS
+1,11:58,Raiders,Andre Holmes 3 yard pass from Derek Carr (Sebastian Janikowski kick),0,7,2016_06_KC_OAK
+1,2:16,Chiefs,Spencer Ware 2 yard rush (Cairo Santos kick),7,7,2016_06_KC_OAK
+2,7:11,Chiefs,Jamaal Charles 4 yard rush (Cairo Santos kick failed),13,7,2016_06_KC_OAK
+2,0:00,Raiders,Sebastian Janikowski 46 yard field goal ,13,10,2016_06_KC_OAK
+3,11:37,Chiefs,Dontari Poe 1 yard rush (Cairo Santos kick),20,10,2016_06_KC_OAK
+3,7:48,Chiefs,Cairo Santos 22 yard field goal ,23,10,2016_06_KC_OAK
+4,9:51,Chiefs,Cairo Santos 44 yard field goal ,26,10,2016_06_KC_OAK
+1,10:03,Cowboys,Cole Beasley 1 yard pass from Dak Prescott (Dan Bailey kick),7,0,2016_06_DAL_GB
+1,5:11,Packers,Mason Crosby 37 yard field goal ,7,3,2016_06_DAL_GB
+2,12:16,Packers,Mason Crosby 43 yard field goal ,7,6,2016_06_DAL_GB
+2,6:01,Cowboys,Dan Bailey 44 yard field goal ,10,6,2016_06_DAL_GB
+2,0:27,Cowboys,Brice Butler 20 yard pass from Dak Prescott (Dan Bailey kick),17,6,2016_06_DAL_GB
+3,6:58,Cowboys,Dan Bailey 22 yard field goal ,20,6,2016_06_DAL_GB
+4,14:48,Packers,Mason Crosby 34 yard field goal ,20,9,2016_06_DAL_GB
+4,10:26,Cowboys,Cole Beasley 4 yard pass from Dak Prescott (Dan Bailey kick),27,9,2016_06_DAL_GB
+4,6:53,Packers,Randall Cobb 6 yard pass from Aaron Rodgers (Mason Crosby kick),27,16,2016_06_DAL_GB
+4,3:41,Cowboys,Dan Bailey 32 yard field goal ,30,16,2016_06_DAL_GB
+1,2:07,Seahawks,Christine Michael 9 yard rush (Stephen Hauschka kick),0,7,2016_06_ATL_SEA
+2,8:42,Falcons,Matt Bryant 33 yard field goal ,3,7,2016_06_ATL_SEA
+2,4:32,Seahawks,Alex Collins 2 yard rush (Stephen Hauschka kick),3,14,2016_06_ATL_SEA
+2,0:46,Seahawks,Stephen Hauschka 42 yard field goal ,3,17,2016_06_ATL_SEA
+3,11:01,Falcons,Julio Jones 36 yard pass from Matt Ryan (Matt Bryant kick),10,17,2016_06_ATL_SEA
+3,6:16,Falcons,Mohamed Sanu 10 yard pass from Matt Ryan (Matt Bryant kick),17,17,2016_06_ATL_SEA
+3,0:17,Falcons,Levine Toilolo 46 yard pass from Matt Ryan (Matt Bryant kick),24,17,2016_06_ATL_SEA
+4,4:43,Seahawks,Christine Michael 1 yard rush (Stephen Hauschka kick failed),24,23,2016_06_ATL_SEA
+4,2:02,Seahawks,Stephen Hauschka 44 yard field goal ,24,26,2016_06_ATL_SEA
+1,5:56,Colts,Adam Vinatieri 41 yard field goal ,3,0,2016_06_IND_HOU
+2,14:55,Colts,Jack Doyle 22 yard pass from Andrew Luck (Adam Vinatieri kick),10,0,2016_06_IND_HOU
+2,6:55,Colts,Adam Vinatieri 37 yard field goal ,13,0,2016_06_IND_HOU
+2,1:57,Texans,Nick Novak 27 yard field goal ,13,3,2016_06_IND_HOU
+3,7:06,Texans,Lamar Miller 1 yard rush (Nick Novak kick failed),13,9,2016_06_IND_HOU
+4,14:53,Colts,Andrew Luck 14 yard rush (Adam Vinatieri kick),20,9,2016_06_IND_HOU
+4,7:04,Colts,Adam Vinatieri 36 yard field goal ,23,9,2016_06_IND_HOU
+4,2:37,Texans,Lamar Miller 10 yard pass from Brock Osweiler (Nick Novak kick),23,16,2016_06_IND_HOU
+4,0:49,Texans,C.J. Fiedorowicz 26 yard pass from Brock Osweiler (Nick Novak kick),23,23,2016_06_IND_HOU
+OT,8:10,Texans,Nick Novak 33 yard field goal ,23,26,2016_06_IND_HOU
+1,9:51,Cardinals,David Johnson 58 yard rush (Chandler Catanzaro kick),0,7,2016_06_NYJ_ARI
+2,12:06,Jets,Nick Folk 39 yard field goal ,3,7,2016_06_NYJ_ARI
+2,6:43,Cardinals,David Johnson 2 yard rush (Chandler Catanzaro kick),3,14,2016_06_NYJ_ARI
+3,5:24,Cardinals,David Johnson 2 yard rush (Chandler Catanzaro kick),3,21,2016_06_NYJ_ARI
+4,8:20,Cardinals,Michael Floyd 9 yard pass from Carson Palmer (Chandler Catanzaro kick),3,28,2016_06_NYJ_ARI
+1,8:53,Packers,Mason Crosby 32 yard field goal ,0,3,2016_07_CHI_GB
+2,1:56,Bears,Connor Barth 39 yard field goal ,3,3,2016_07_CHI_GB
+2,0:17,Packers,Mason Crosby 40 yard field goal ,3,6,2016_07_CHI_GB
+3,14:30,Bears,Leonard Floyd defensive fumble recovery in end zone (Connor Barth kick),10,6,2016_07_CHI_GB
+3,9:11,Packers,Davante Adams 5 yard pass from Aaron Rodgers (Mason Crosby kick),10,13,2016_07_CHI_GB
+4,14:55,Packers,Davante Adams 4 yard pass from Aaron Rodgers (Mason Crosby kick),10,20,2016_07_CHI_GB
+4,5:35,Packers,Randall Cobb 2 yard pass from Aaron Rodgers (Mason Crosby kick failed),10,26,2016_07_CHI_GB
+1,11:15,Rams,Tavon Austin 10 yard pass from Case Keenum (Greg Zuerlein kick),0,7,2016_07_NYG_LA
+1,5:13,Rams,Greg Zuerlein 36 yard field goal ,0,10,2016_07_NYG_LA
+2,8:15,Giants,Robbie Gould 29 yard field goal ,3,10,2016_07_NYG_LA
+2,7:10,Giants,Landon Collins 44 yard interception return (Robbie Gould kick),10,10,2016_07_NYG_LA
+4,9:23,Giants,Rashad Jennings 1 yard rush (Robbie Gould kick),17,10,2016_07_NYG_LA
+1,12:14,Bengals,Giovani Bernard 5 yard rush (Mike Nugent kick),0,7,2016_07_CLE_CIN
+2,13:26,Browns,Cody Parkey 28 yard field goal ,3,7,2016_07_CLE_CIN
+2,6:20,Browns,Isaiah Crowell 1 yard rush (Cody Parkey kick),10,7,2016_07_CLE_CIN
+2,4:09,Bengals,Brandon LaFell 44 yard pass from Andy Dalton (Mike Nugent kick),10,14,2016_07_CLE_CIN
+2,0:00,Bengals,A.J. Green 48 yard pass from Andy Dalton (Mike Nugent kick),10,21,2016_07_CLE_CIN
+3,10:43,Browns,Kevin Hogan 28 yard rush (Cody Parkey kick),17,21,2016_07_CLE_CIN
+3,9:47,Bengals,Jeremy Hill 74 yard rush (Mike Nugent kick),17,28,2016_07_CLE_CIN
+3,4:19,Bengals,Mike Nugent 36 yard field goal ,17,31,2016_07_CLE_CIN
+2,9:37,Lions,Matt Prater 43 yard field goal ,0,3,2016_07_WAS_DET
+2,0:00,Redskins,Dustin Hopkins 38 yard field goal ,3,3,2016_07_WAS_DET
+3,7:20,Lions,Zach Zenner 1 yard rush (Matt Prater kick),3,10,2016_07_WAS_DET
+4,13:10,Lions,Matt Prater 27 yard field goal ,3,13,2016_07_WAS_DET
+4,8:20,Redskins,Robert Kelley 1 yard pass from Kirk Cousins (Dustin Hopkins kick),10,13,2016_07_WAS_DET
+4,1:05,Redskins,Kirk Cousins 19 yard rush (Dustin Hopkins kick),17,13,2016_07_WAS_DET
+4,0:16,Lions,Anquan Boldin 18 yard pass from Matthew Stafford (Matt Prater kick),17,20,2016_07_WAS_DET
+1,9:06,Raiders,Sebastian Janikowski 26 yard field goal ,3,0,2016_07_OAK_JAX
+2,14:52,Raiders,Sebastian Janikowski 32 yard field goal ,6,0,2016_07_OAK_JAX
+2,12:38,Jaguars,Jason Myers 23 yard field goal ,6,3,2016_07_OAK_JAX
+2,5:32,Raiders,Latavius Murray 2 yard rush (Sebastian Janikowski kick),13,3,2016_07_OAK_JAX
+2,1:49,Jaguars,Jason Myers 37 yard field goal ,13,6,2016_07_OAK_JAX
+2,0:11,Raiders,Michael Crabtree 2 yard pass from Derek Carr (Sebastian Janikowski kick),20,6,2016_07_OAK_JAX
+3,12:11,Jaguars,Jason Myers 44 yard field goal ,20,9,2016_07_OAK_JAX
+3,2:28,Raiders,Sebastian Janikowski 44 yard field goal ,23,9,2016_07_OAK_JAX
+4,11:33,Raiders,Sebastian Janikowski 52 yard field goal ,26,9,2016_07_OAK_JAX
+4,4:12,Jaguars,Julius Thomas 9 yard pass from Blake Bortles (Jason Myers kick),26,16,2016_07_OAK_JAX
+4,2:35,Raiders,Latavius Murray 9 yard rush (Sebastian Janikowski kick),33,16,2016_07_OAK_JAX
+1,6:07,Saints,Brandin Cooks 9 yard pass from Drew Brees (Wil Lutz kick),7,0,2016_07_NO_KC
+1,4:07,Chiefs,Spencer Ware 46 yard pass from Alex Smith (Cairo Santos kick),7,7,2016_07_NO_KC
+1,0:46,Chiefs,Daniel Sorensen 48 yard interception return (Cairo Santos kick),7,14,2016_07_NO_KC
+2,7:02,Chiefs,Tyreek Hill 38 yard pass from Alex Smith (Cairo Santos kick),7,21,2016_07_NO_KC
+3,6:57,Saints,Mark Ingram 3 yard pass from Drew Brees (Wil Lutz kick),14,21,2016_07_NO_KC
+3,3:21,Chiefs,Cairo Santos 39 yard field goal ,14,24,2016_07_NO_KC
+4,2:33,Saints,Brandon Coleman 10 yard pass from Drew Brees (Wil Lutz kick),21,24,2016_07_NO_KC
+4,0:28,Chiefs,Cairo Santos 41 yard field goal ,21,27,2016_07_NO_KC
+1,7:28,Dolphins,Andrew Franks 36 yard field goal ,0,3,2016_07_BUF_MIA
+1,0:49,Bills,Dan Carpenter 29 yard field goal ,3,3,2016_07_BUF_MIA
+2,11:47,Bills,Tyrod Taylor 10 yard rush (Dan Carpenter kick),10,3,2016_07_BUF_MIA
+2,3:47,Dolphins,Andrew Franks 33 yard field goal ,10,6,2016_07_BUF_MIA
+3,5:51,Bills,Marquise Goodwin 67 yard pass from Tyrod Taylor (Dan Carpenter kick),17,6,2016_07_BUF_MIA
+3,0:18,Dolphins,Jay Ajayi 4 yard rush (Jarvis Landry pass from Ryan Tannehill),17,14,2016_07_BUF_MIA
+4,3:56,Dolphins,Damien Williams 12 yard rush (Andrew Franks kick),17,21,2016_07_BUF_MIA
+4,2:24,Dolphins,Kenny Stills 66 yard pass from Ryan Tannehill (Andrew Franks kick),17,28,2016_07_BUF_MIA
+4,0:14,Bills,Reggie Bush 1 yard rush (Reggie Bush pass from Tyrod Taylor),25,28,2016_07_BUF_MIA
+1,9:37,Ravens,Chris Moore defensive fumble recovery in end zone (Justin Tucker kick),7,0,2016_07_BAL_NYJ
+1,4:27,Ravens,Justin Tucker 50 yard field goal ,10,0,2016_07_BAL_NYJ
+1,1:12,Jets,Quincy Enunwa 69 yard pass from Geno Smith (Nick Folk kick),10,7,2016_07_BAL_NYJ
+2,11:57,Ravens,Justin Tucker 49 yard field goal ,13,7,2016_07_BAL_NYJ
+2,1:45,Jets,Matt Forte 13 yard pass from Ryan Fitzpatrick (Nick Folk kick),13,14,2016_07_BAL_NYJ
+2,0:00,Ravens,Justin Tucker 44 yard field goal ,16,14,2016_07_BAL_NYJ
+3,5:00,Jets,Nick Folk 22 yard field goal ,16,17,2016_07_BAL_NYJ
+3,0:56,Jets,Matt Forte 1 yard rush (Nick Folk kick),16,24,2016_07_BAL_NYJ
+2,9:01,Vikings,Blair Walsh 48 yard field goal ,3,0,2016_07_MIN_PHI
+2,8:48,Eagles,Josh Huff 98 yard kickoff return (Carson Wentz run),3,8,2016_07_MIN_PHI
+2,0:07,Eagles,Caleb Sturgis 35 yard field goal ,3,11,2016_07_MIN_PHI
+3,5:45,Eagles,Dorial Green-Beckham 5 yard pass from Carson Wentz (Caleb Sturgis kick),3,18,2016_07_MIN_PHI
+4,6:09,Eagles,Caleb Sturgis 21 yard field goal ,3,21,2016_07_MIN_PHI
+4,0:37,Vikings,Cordarrelle Patterson 14 yard pass from Sam Bradford (Blair Walsh kick),10,21,2016_07_MIN_PHI
+1,9:14,Titans,Taylor Lewan 10 yard pass from Marcus Mariota (pass failed),0,6,2016_07_IND_TEN
+1,4:46,Colts,Frank Gore 3 yard pass from Andrew Luck (Adam Vinatieri kick),7,6,2016_07_IND_TEN
+2,10:16,Colts,T.Y. Hilton 37 yard pass from Andrew Luck (Adam Vinatieri kick),14,6,2016_07_IND_TEN
+2,7:06,Colts,Adam Vinatieri 28 yard field goal ,17,6,2016_07_IND_TEN
+2,0:34,Titans,DeMarco Murray 1 yard rush (Ryan Succop kick),17,13,2016_07_IND_TEN
+3,3:46,Colts,Adam Vinatieri 33 yard field goal ,20,13,2016_07_IND_TEN
+4,12:39,Titans,Delanie Walker 7 yard pass from Marcus Mariota (Ryan Succop kick),20,20,2016_07_IND_TEN
+4,6:02,Titans,Ryan Succop 48 yard field goal ,20,23,2016_07_IND_TEN
+4,1:55,Colts,Jack Doyle 7 yard pass from Andrew Luck (Adam Vinatieri kick),27,23,2016_07_IND_TEN
+4,1:47,Colts,Robert Mathis 14 yard defensive fumble return (Adam Vinatieri kick),34,23,2016_07_IND_TEN
+4,0:43,Titans,Ryan Succop 44 yard field goal ,34,26,2016_07_IND_TEN
+1,10:55,Chargers,Melvin Gordon 2 yard rush (Josh Lambo kick),7,0,2016_07_SD_ATL
+1,6:26,Falcons,Matt Bryant 42 yard field goal ,7,3,2016_07_SD_ATL
+1,2:34,Falcons,Matt Bryant 27 yard field goal ,7,6,2016_07_SD_ATL
+2,13:29,Chargers,Josh Lambo 40 yard field goal ,10,6,2016_07_SD_ATL
+2,9:06,Falcons,Jacob Tamme 17 yard pass from Matt Ryan (Matt Bryant kick),10,13,2016_07_SD_ATL
+2,6:07,Falcons,Tevin Coleman 30 yard rush (Matt Bryant kick),10,20,2016_07_SD_ATL
+2,4:31,Falcons,Adrian Clayborn 5 yard defensive fumble return (Matt Bryant kick),10,27,2016_07_SD_ATL
+2,1:02,Chargers,Melvin Gordon 3 yard rush (Josh Lambo kick),17,27,2016_07_SD_ATL
+3,4:50,Chargers,Josh Lambo 37 yard field goal ,20,27,2016_07_SD_ATL
+4,13:23,Falcons,Matt Bryant 31 yard field goal ,20,30,2016_07_SD_ATL
+4,5:59,Chargers,Melvin Gordon 5 yard pass from Philip Rivers (Josh Lambo kick),27,30,2016_07_SD_ATL
+4,0:18,Chargers,Josh Lambo 33 yard field goal ,30,30,2016_07_SD_ATL
+OT,9:01,Chargers,Josh Lambo 42 yard field goal ,33,30,2016_07_SD_ATL
+1,13:02,49ers,Mike Davis 4 yard rush (Phil Dawson kick),0,7,2016_07_TB_SF
+1,0:08,49ers,Shaun Draughn 17 yard pass from Colin Kaepernick (Phil Dawson kick),0,14,2016_07_TB_SF
+2,10:14,Buccaneers,Mike Evans 4 yard pass from Jameis Winston (Roberto Aguayo kick),7,14,2016_07_TB_SF
+2,4:59,Buccaneers,Roberto Aguayo 38 yard field goal ,10,14,2016_07_TB_SF
+2,0:48,Buccaneers,Russell Shepard 19 yard pass from Jameis Winston (Roberto Aguayo kick),17,14,2016_07_TB_SF
+3,10:57,Buccaneers,Roberto Aguayo 37 yard field goal ,20,14,2016_07_TB_SF
+3,6:24,Buccaneers,Mike Evans 5 yard pass from Jameis Winston (Roberto Aguayo kick),27,14,2016_07_TB_SF
+4,8:08,49ers,Phil Dawson 28 yard field goal ,27,17,2016_07_TB_SF
+4,4:42,Buccaneers,Peyton Barber 44 yard rush (Roberto Aguayo kick),34,17,2016_07_TB_SF
+1,2:55,Patriots,James White 19 yard pass from Tom Brady (Stephen Gostkowski kick),7,0,2016_07_NE_PIT
+2,10:58,Patriots,LeGarrette Blount 3 yard rush (Stephen Gostkowski kick),14,0,2016_07_NE_PIT
+2,9:02,Steelers,Darrius Heyward-Bey 14 yard pass from Landry Jones (Chris Boswell kick),14,7,2016_07_NE_PIT
+2,0:02,Steelers,Chris Boswell 32 yard field goal ,14,10,2016_07_NE_PIT
+3,8:44,Steelers,Chris Boswell 46 yard field goal ,14,13,2016_07_NE_PIT
+3,6:19,Patriots,Rob Gronkowski 36 yard pass from Tom Brady (Stephen Gostkowski kick failed),20,13,2016_07_NE_PIT
+4,14:44,Steelers,Chris Boswell 44 yard field goal ,20,16,2016_07_NE_PIT
+4,11:44,Patriots,LeGarrette Blount 5 yard rush (Stephen Gostkowski kick),27,16,2016_07_NE_PIT
+2,3:11,Cardinals,Chandler Catanzaro 46 yard field goal ,0,3,2016_07_SEA_ARI
+4,4:00,Seahawks,Stephen Hauschka 40 yard field goal ,3,3,2016_07_SEA_ARI
+OT,11:23,Cardinals,Chandler Catanzaro 45 yard field goal ,3,6,2016_07_SEA_ARI
+OT,6:42,Seahawks,Stephen Hauschka 36 yard field goal ,6,6,2016_07_SEA_ARI
+1,7:11,Texans,Nick Novak 43 yard field goal ,3,0,2016_07_HOU_DEN
+1,0:21,Texans,Nick Novak 43 yard field goal ,6,0,2016_07_HOU_DEN
+2,9:10,Broncos,C.J. Anderson 7 yard rush (Brandon McManus kick),6,7,2016_07_HOU_DEN
+2,4:04,Broncos,Demaryius Thomas 4 yard pass from Trevor Siemian (Brandon McManus kick),6,14,2016_07_HOU_DEN
+3,9:09,Texans,Nick Novak 29 yard field goal ,9,14,2016_07_HOU_DEN
+3,0:40,Broncos,Devontae Booker 1 yard rush (Brandon McManus kick),9,21,2016_07_HOU_DEN
+4,11:36,Broncos,Brandon McManus 22 yard field goal ,9,24,2016_07_HOU_DEN
+4,1:57,Broncos,Brandon McManus 32 yard field goal ,9,27,2016_07_HOU_DEN
+1,3:31,Titans,Ryan Succop 32 yard field goal ,0,3,2016_08_JAX_TEN
+2,14:53,Titans,Kendall Wright 36 yard pass from Marcus Mariota (Ryan Succop kick),0,10,2016_08_JAX_TEN
+2,10:36,Titans,Derrick Henry 6 yard rush (Ryan Succop kick),0,17,2016_08_JAX_TEN
+2,7:09,Titans,DeMarco Murray 14 yard rush (Ryan Succop kick),0,24,2016_08_JAX_TEN
+2,0:00,Titans,Ryan Succop 22 yard field goal ,0,27,2016_08_JAX_TEN
+3,11:05,Jaguars,Julius Thomas 10 yard pass from Blake Bortles (Blake Bortles run),8,27,2016_08_JAX_TEN
+3,6:53,Titans,Rishard Matthews 4 yard pass from Marcus Mariota (Ryan Succop kick failed),8,33,2016_08_JAX_TEN
+4,12:32,Titans,Ryan Succop 33 yard field goal ,8,36,2016_08_JAX_TEN
+4,3:11,Jaguars,Allen Hurns 5 yard pass from Blake Bortles (Jason Myers kick),15,36,2016_08_JAX_TEN
+4,0:01,Jaguars,Bryan Walters 7 yard pass from Blake Bortles (Jason Myers kick),22,36,2016_08_JAX_TEN
+1,7:38,Redskins,Robert Kelley 4 yard rush (Dustin Hopkins kick),7,0,2016_08_WAS_CIN
+1,3:51,Bengals,Giovani Bernard 8 yard rush (Mike Nugent kick),7,7,2016_08_WAS_CIN
+2,8:16,Redskins,Dustin Hopkins 20 yard field goal ,10,7,2016_08_WAS_CIN
+3,10:42,Bengals,Tyler Eifert 15 yard pass from Andy Dalton (Mike Nugent kick failed),10,13,2016_08_WAS_CIN
+3,5:15,Bengals,Andy Dalton 1 yard rush (Mike Nugent kick),10,20,2016_08_WAS_CIN
+3,3:02,Redskins,Jordan Reed 23 yard pass from Kirk Cousins (Dustin Hopkins kick),17,20,2016_08_WAS_CIN
+4,9:30,Redskins,Jamison Crowder 33 yard pass from Kirk Cousins (Dustin Hopkins kick),24,20,2016_08_WAS_CIN
+4,6:54,Bengals,Jeremy Hill 1 yard rush (Mike Nugent kick),24,27,2016_08_WAS_CIN
+4,1:07,Redskins,Dustin Hopkins 40 yard field goal ,27,27,2016_08_WAS_CIN
+1,11:05,Bills,Dan Carpenter 23 yard field goal ,0,3,2016_08_NE_BUF
+1,4:35,Patriots,Danny Amendola 9 yard pass from Tom Brady (Stephen Gostkowski kick),7,3,2016_08_NE_BUF
+1,1:33,Patriots,Chris Hogan 53 yard pass from Tom Brady (Stephen Gostkowski kick),14,3,2016_08_NE_BUF
+2,6:26,Bills,Mike Gillislee 3 yard rush (Dan Carpenter kick),14,10,2016_08_NE_BUF
+2,4:18,Patriots,Rob Gronkowski 53 yard pass from Tom Brady (Stephen Gostkowski kick),21,10,2016_08_NE_BUF
+2,0:00,Patriots,Stephen Gostkowski 51 yard field goal ,24,10,2016_08_NE_BUF
+3,14:00,Patriots,Julian Edelman 12 yard pass from Tom Brady (Stephen Gostkowski kick),31,10,2016_08_NE_BUF
+3,7:57,Bills,Tyrod Taylor 26 yard rush (Dan Carpenter kick),31,17,2016_08_NE_BUF
+3,3:05,Patriots,LeGarrette Blount 1 yard rush (Stephen Gostkowski kick),38,17,2016_08_NE_BUF
+4,7:06,Patriots,Stephen Gostkowski 32 yard field goal ,41,17,2016_08_NE_BUF
+4,0:30,Bills,Jonathan Williams 1 yard rush (Nick O'Leary pass from EJ Manuel),41,25,2016_08_NE_BUF
+1,11:48,Panthers,Thomas Davis 46 yard defensive fumble return (Graham Gano kick),0,7,2016_08_ARI_CAR
+1,2:24,Panthers,Jonathan Stewart 2 yard rush (Graham Gano kick),0,14,2016_08_ARI_CAR
+2,11:05,Panthers,Jonathan Stewart 1 yard rush (Graham Gano kick),0,21,2016_08_ARI_CAR
+2,2:45,Panthers,Graham Gano 43 yard field goal ,0,24,2016_08_ARI_CAR
+2,0:20,Cardinals,JJ Nelson 5 yard pass from Carson Palmer (Chandler Catanzaro kick),7,24,2016_08_ARI_CAR
+3,11:56,Panthers,Graham Gano 52 yard field goal ,7,27,2016_08_ARI_CAR
+3,7:18,Panthers,Graham Gano 21 yard field goal ,7,30,2016_08_ARI_CAR
+3,1:45,Cardinals,John Brown 17 yard pass from Carson Palmer (Chandler Catanzaro kick),14,30,2016_08_ARI_CAR
+4,5:01,Cardinals,JJ Nelson 4 yard pass from Carson Palmer (pass failed),20,30,2016_08_ARI_CAR
+1,11:45,Browns,Andrew Hawkins 5 yard pass from Josh McCown (Cody Parkey kick),0,7,2016_08_NYJ_CLE
+1,3:11,Browns,Cody Parkey 41 yard field goal ,0,10,2016_08_NYJ_CLE
+2,12:44,Jets,Bilal Powell 35 yard rush (Nick Folk kick),7,10,2016_08_NYJ_CLE
+2,1:51,Browns,Isaiah Crowell 1 yard rush (Cody Parkey kick),7,17,2016_08_NYJ_CLE
+2,0:00,Browns,Cody Parkey 27 yard field goal ,7,20,2016_08_NYJ_CLE
+3,8:15,Jets,Quincy Enunwa 24 yard pass from Ryan Fitzpatrick (Nick Folk kick),14,20,2016_08_NYJ_CLE
+3,2:11,Jets,Matt Forte 4 yard rush (Nick Folk kick),21,20,2016_08_NYJ_CLE
+4,9:38,Jets,Matt Forte 2 yard rush (Nick Folk kick),28,20,2016_08_NYJ_CLE
+4,4:04,Jets,Nick Folk 24 yard field goal ,31,20,2016_08_NYJ_CLE
+4,0:12,Browns,Andrew Hawkins 1 yard pass from Josh McCown (Terrelle Pryor pass from Josh McCown),31,28,2016_08_NYJ_CLE
+2,12:56,Texans,C.J. Fiedorowicz 6 yard pass from Brock Osweiler (Nick Novak kick),0,7,2016_08_DET_HOU
+2,7:04,Texans,Lamar Miller 1 yard rush (Nick Novak kick),0,14,2016_08_DET_HOU
+2,0:02,Lions,Matt Prater 47 yard field goal ,3,14,2016_08_DET_HOU
+3,5:51,Texans,Nick Novak 33 yard field goal ,3,17,2016_08_DET_HOU
+4,14:50,Lions,Theo Riddick 1 yard pass from Matthew Stafford (Matt Prater kick),10,17,2016_08_DET_HOU
+4,4:09,Texans,Nick Novak 36 yard field goal ,10,20,2016_08_DET_HOU
+4,2:53,Lions,Matt Prater 34 yard field goal ,13,20,2016_08_DET_HOU
+1,10:20,Chiefs,Cairo Santos 33 yard field goal ,3,0,2016_08_KC_IND
+2,12:58,Chiefs,Travis Kelce 14 yard pass from Nick Foles (Cairo Santos kick),10,0,2016_08_KC_IND
+2,10:07,Colts,Frank Gore 18 yard pass from Andrew Luck (Adam Vinatieri kick),10,7,2016_08_KC_IND
+2,0:19,Chiefs,Jeremy Maclin 13 yard pass from Alex Smith (Cairo Santos kick),17,7,2016_08_KC_IND
+3,7:34,Chiefs,Tyreek Hill 34 yard pass from Nick Foles (Cairo Santos kick),24,7,2016_08_KC_IND
+3,2:05,Colts,Donte Moncrief 3 yard pass from Andrew Luck (Adam Vinatieri kick),24,14,2016_08_KC_IND
+4,8:00,Chiefs,Cairo Santos 22 yard field goal ,27,14,2016_08_KC_IND
+4,3:35,Chiefs,Cairo Santos 44 yard field goal ,30,14,2016_08_KC_IND
+1,7:53,Seahawks,Earl Thomas 34 yard defensive fumble return (Stephen Hauschka kick),7,0,2016_08_SEA_NO
+2,11:33,Saints,Wil Lutz 22 yard field goal ,7,3,2016_08_SEA_NO
+2,9:53,Seahawks,Christine Michael 2 yard rush (Stephen Hauschka kick),14,3,2016_08_SEA_NO
+2,5:15,Saints,Wil Lutz 53 yard field goal ,14,6,2016_08_SEA_NO
+2,0:49,Saints,Drew Brees 1 yard rush (Wil Lutz kick),14,13,2016_08_SEA_NO
+3,8:56,Seahawks,Stephen Hauschka 44 yard field goal ,17,13,2016_08_SEA_NO
+3,3:14,Saints,Wil Lutz 21 yard field goal ,17,16,2016_08_SEA_NO
+4,12:24,Saints,Brandin Cooks 2 yard pass from Drew Brees (pass failed),17,22,2016_08_SEA_NO
+4,6:38,Seahawks,Stephen Hauschka 21 yard field goal ,20,22,2016_08_SEA_NO
+4,1:57,Saints,Wil Lutz 41 yard field goal ,20,25,2016_08_SEA_NO
+1,3:53,Buccaneers,Roberto Aguayo 41 yard field goal ,0,3,2016_08_OAK_TB
+2,14:54,Buccaneers,Russell Shepard 19 yard pass from Jameis Winston (Roberto Aguayo kick),0,10,2016_08_OAK_TB
+2,8:15,Raiders,Sebastian Janikowski 31 yard field goal ,3,10,2016_08_OAK_TB
+3,10:24,Raiders,Donald Penn 1 yard pass from Derek Carr (Sebastian Janikowski kick),10,10,2016_08_OAK_TB
+3,5:30,Raiders,Amari Cooper 34 yard pass from Derek Carr (Sebastian Janikowski kick),17,10,2016_08_OAK_TB
+4,14:55,Buccaneers,Cameron Brate 5 yard pass from Jameis Winston (Roberto Aguayo kick failed),17,16,2016_08_OAK_TB
+4,3:48,Buccaneers,Jacquizz Rodgers 1 yard rush (Mike Evans pass from Jameis Winston),17,24,2016_08_OAK_TB
+4,1:38,Raiders,Mychal Rivera 7 yard pass from Derek Carr (Sebastian Janikowski kick),24,24,2016_08_OAK_TB
+OT,1:45,Raiders,Seth Roberts 41 yard pass from Derek Carr ,30,24,2016_08_OAK_TB
+1,11:05,Broncos,Brandon McManus 28 yard field goal ,0,3,2016_08_SD_DEN
+1,7:24,Chargers,Antonio Gates 7 yard pass from Philip Rivers (Josh Lambo kick),7,3,2016_08_SD_DEN
+2,9:10,Broncos,Bradley Roby 51 yard interception return (Brandon McManus kick),7,10,2016_08_SD_DEN
+3,12:45,Broncos,Devontae Booker 3 yard rush (Brandon McManus kick),7,17,2016_08_SD_DEN
+3,4:02,Chargers,Travis Benjamin 14 yard pass from Philip Rivers (Josh Lambo kick failed),13,17,2016_08_SD_DEN
+4,12:32,Broncos,Juwan Thompson 1 yard rush (Brandon McManus kick),13,24,2016_08_SD_DEN
+4,8:02,Chargers,Casey Hayward 24 yard interception return (pass failed),19,24,2016_08_SD_DEN
+4,5:19,Broncos,Brandon McManus 22 yard field goal ,19,27,2016_08_SD_DEN
+1,9:41,Falcons,Matt Bryant 36 yard field goal ,0,3,2016_08_GB_ATL
+1,6:08,Packers,Jordy Nelson 5 yard pass from Aaron Rodgers (Mason Crosby kick),7,3,2016_08_GB_ATL
+1,4:28,Falcons,Taylor Gabriel 47 yard pass from Matt Ryan (Matt Bryant kick),7,10,2016_08_GB_ATL
+2,11:53,Packers,Geronimo Allison 4 yard pass from Aaron Rodgers (Mason Crosby kick),14,10,2016_08_GB_ATL
+2,8:52,Falcons,Matt Bryant 40 yard field goal ,14,13,2016_08_GB_ATL
+2,4:22,Packers,Trevor Davis 9 yard pass from Aaron Rodgers (Mason Crosby kick),21,13,2016_08_GB_ATL
+2,0:27,Falcons,Devonta Freeman 5 yard pass from Matt Ryan (run failed),21,19,2016_08_GB_ATL
+2,0:00,Packers,Mason Crosby 29 yard field goal ,24,19,2016_08_GB_ATL
+3,3:31,Falcons,Devonta Freeman 1 yard rush (Matt Bryant kick),24,26,2016_08_GB_ATL
+4,3:58,Packers,Jeff Janis 7 yard pass from Aaron Rodgers (Aaron Rodgers run),32,26,2016_08_GB_ATL
+4,0:31,Falcons,Mohamed Sanu 11 yard pass from Matt Ryan (Matt Bryant kick),32,33,2016_08_GB_ATL
+1,6:39,Eagles,Caleb Sturgis 30 yard field goal ,3,0,2016_08_PHI_DAL
+1,4:41,Cowboys,Dak Prescott 7 yard rush (Dan Bailey kick),3,7,2016_08_PHI_DAL
+2,14:50,Cowboys,Dan Bailey 38 yard field goal ,3,10,2016_08_PHI_DAL
+2,3:41,Eagles,Ryan Mathews 1 yard rush (Caleb Sturgis kick),10,10,2016_08_PHI_DAL
+2,0:00,Eagles,Caleb Sturgis 55 yard field goal ,13,10,2016_08_PHI_DAL
+3,6:20,Eagles,Jordan Matthews 5 yard pass from Carson Wentz (Caleb Sturgis kick),20,10,2016_08_PHI_DAL
+3,0:56,Cowboys,Dan Bailey 23 yard field goal ,20,13,2016_08_PHI_DAL
+4,14:09,Eagles,Caleb Sturgis 34 yard field goal ,23,13,2016_08_PHI_DAL
+4,11:34,Cowboys,Dan Bailey 49 yard field goal ,23,16,2016_08_PHI_DAL
+4,3:04,Cowboys,Dez Bryant 22 yard pass from Dak Prescott (Dan Bailey kick),23,23,2016_08_PHI_DAL
+OT,7:48,Cowboys,Jason Witten 5 yard pass from Dak Prescott ,23,29,2016_08_PHI_DAL
+1,8:28,Bears,Connor Barth 30 yard field goal ,0,3,2016_08_MIN_CHI
+2,12:44,Bears,Connor Barth 28 yard field goal ,0,6,2016_08_MIN_CHI
+2,7:49,Bears,Jordan Howard 2 yard rush (Connor Barth kick),0,13,2016_08_MIN_CHI
+2,0:25,Vikings,Blair Walsh 30 yard field goal ,3,13,2016_08_MIN_CHI
+3,9:52,Bears,Alshon Jeffery 11 yard pass from Jay Cutler (Connor Barth kick),3,20,2016_08_MIN_CHI
+4,5:41,Vikings,Stefon Diggs 25 yard pass from Sam Bradford (Blair Walsh kick),10,20,2016_08_MIN_CHI
+1,9:28,Buccaneers,Mike Evans 3 yard pass from Jameis Winston (Roberto Aguayo kick),0,7,2016_09_ATL_TB
+1,7:39,Falcons,Levine Toilolo 32 yard pass from Matt Ryan (Matt Bryant kick),7,7,2016_09_ATL_TB
+1,6:08,Falcons,Matt Bryant 29 yard field goal ,10,7,2016_09_ATL_TB
+2,13:38,Falcons,Matt Bryant 41 yard field goal ,13,7,2016_09_ATL_TB
+2,8:35,Buccaneers,Mike Evans 24 yard pass from Jameis Winston (Roberto Aguayo kick),13,14,2016_09_ATL_TB
+2,3:56,Falcons,Taylor Gabriel 9 yard rush (Matt Bryant kick),20,14,2016_09_ATL_TB
+3,8:54,Falcons,Patrick DiMarco 1 yard pass from Matt Ryan (pass failed),26,14,2016_09_ATL_TB
+3,3:02,Falcons,Julio Jones 3 yard pass from Matt Ryan (Matt Bryant kick),33,14,2016_09_ATL_TB
+4,9:56,Falcons,Austin Hooper 2 yard pass from Matt Ryan (Matt Bryant kick),40,14,2016_09_ATL_TB
+4,6:47,Buccaneers,Adam Humphries 7 yard pass from Jameis Winston (run failed),40,20,2016_09_ATL_TB
+4,3:42,Falcons,Matt Bryant 50 yard field goal ,43,20,2016_09_ATL_TB
+4,0:59,Buccaneers,Cameron Brate 2 yard pass from Mike Glennon (Brandon Myers pass from Mike Glennon),43,28,2016_09_ATL_TB
+1,1:07,Ravens,Mike Wallace 95 yard pass from Joe Flacco (Justin Tucker kick),0,7,2016_09_PIT_BAL
+2,0:03,Ravens,Justin Tucker 49 yard field goal ,0,10,2016_09_PIT_BAL
+3,4:50,Ravens,Justin Tucker 42 yard field goal ,0,13,2016_09_PIT_BAL
+4,13:36,Ravens,Chris Moore 14 yard blocked punt return (Steve Smith Sr. pass from Joe Flacco),0,21,2016_09_PIT_BAL
+4,8:38,Steelers,Antonio Brown 23 yard pass from Ben Roethlisberger (Chris Boswell kick),7,21,2016_09_PIT_BAL
+4,0:48,Steelers,Ben Roethlisberger 4 yard rush (Chris Boswell kick),14,21,2016_09_PIT_BAL
+1,12:40,Browns,Cody Parkey 31 yard field goal ,0,3,2016_09_DAL_CLE
+1,6:47,Cowboys,Jason Witten 26 yard pass from Dak Prescott (Dan Bailey kick),7,3,2016_09_DAL_CLE
+2,10:02,Cowboys,Ezekiel Elliott 10 yard rush (Dan Bailey kick),14,3,2016_09_DAL_CLE
+2,1:50,Cowboys,Cole Beasley 6 yard pass from Dak Prescott (Dan Bailey kick),21,3,2016_09_DAL_CLE
+2,0:23,Browns,Terrelle Pryor 12 yard pass from Cody Kessler (Cody Parkey kick),21,10,2016_09_DAL_CLE
+3,11:30,Cowboys,Ezekiel Elliott 8 yard rush (Dan Bailey kick),28,10,2016_09_DAL_CLE
+3,1:41,Cowboys,Gavin Escobar 2 yard pass from Dak Prescott (Dan Bailey kick),35,10,2016_09_DAL_CLE
+1,1:49,Chiefs,Albert Wilson 23 yard pass from Nick Foles (Cairo Santos kick),0,7,2016_09_JAX_KC
+2,9:54,Chiefs,Cairo Santos 26 yard field goal ,0,10,2016_09_JAX_KC
+2,0:02,Jaguars,Allen Robinson 1 yard pass from Blake Bortles (Jason Myers kick),7,10,2016_09_JAX_KC
+3,8:43,Chiefs,Cairo Santos 51 yard field goal ,7,13,2016_09_JAX_KC
+3,3:59,Chiefs,Cairo Santos 24 yard field goal ,7,16,2016_09_JAX_KC
+4,10:20,Chiefs,Cairo Santos 36 yard field goal ,7,19,2016_09_JAX_KC
+4,4:10,Jaguars,T.J. Yeldon 13 yard pass from Blake Bortles (Jason Myers kick),14,19,2016_09_JAX_KC
+1,8:26,Jets,Nick Folk 23 yard field goal ,3,0,2016_09_NYJ_MIA
+1,4:56,Dolphins,Jay Ajayi 20 yard rush (Andrew Franks kick),3,7,2016_09_NYJ_MIA
+1,0:35,Jets,Matt Forte 31 yard rush (Nick Folk kick),10,7,2016_09_NYJ_MIA
+2,10:16,Dolphins,Dominique Jones 1 yard pass from Ryan Tannehill (Andrew Franks kick),10,14,2016_09_NYJ_MIA
+2,5:20,Jets,Nick Folk 21 yard field goal ,13,14,2016_09_NYJ_MIA
+3,5:08,Dolphins,Andrew Franks 33 yard field goal ,13,17,2016_09_NYJ_MIA
+3,3:22,Dolphins,Andrew Franks 29 yard field goal ,13,20,2016_09_NYJ_MIA
+4,12:50,Jets,Nick Folk 28 yard field goal ,16,20,2016_09_NYJ_MIA
+4,5:42,Jets,Jalin Marshall 18 yard pass from Ryan Fitzpatrick (Nick Folk kick),23,20,2016_09_NYJ_MIA
+4,5:15,Dolphins,Kenyan Drake 96 yard kickoff return (Andrew Franks kick),23,27,2016_09_NYJ_MIA
+1,7:14,Lions,Matt Prater 47 yard field goal ,3,0,2016_09_DET_MIN
+2,13:20,Vikings,Blair Walsh 33 yard field goal ,3,3,2016_09_DET_MIN
+2,0:05,Lions,Anquan Boldin 1 yard pass from Matthew Stafford (Matt Prater kick),10,3,2016_09_DET_MIN
+3,4:02,Vikings,Kyle Rudolph 1 yard pass from Sam Bradford (Blair Walsh kick failed),10,9,2016_09_DET_MIN
+4,12:33,Lions,Matt Prater 53 yard field goal ,13,9,2016_09_DET_MIN
+4,0:23,Vikings,Rhett Ellison 1 yard rush (Blair Walsh kick),13,16,2016_09_DET_MIN
+4,0:00,Lions,Matt Prater 58 yard field goal ,16,16,2016_09_DET_MIN
+OT,8:21,Lions,Golden Tate 28 yard pass from Matthew Stafford ,22,16,2016_09_DET_MIN
+1,12:27,Giants,Odell Beckham Jr. 26 yard pass from Eli Manning (Robbie Gould kick),0,7,2016_09_PHI_NYG
+1,9:43,Giants,Roger Lewis 30 yard pass from Eli Manning (Robbie Gould kick),0,14,2016_09_PHI_NYG
+1,5:51,Eagles,Caleb Sturgis 34 yard field goal ,3,14,2016_09_PHI_NYG
+2,12:11,Eagles,Ryan Mathews 8 yard rush (Caleb Sturgis kick),10,14,2016_09_PHI_NYG
+2,9:28,Giants,Odell Beckham Jr. 1 yard pass from Eli Manning (Robbie Gould kick),10,21,2016_09_PHI_NYG
+3,12:17,Eagles,Kenjon Barner 3 yard rush (Caleb Sturgis kick),17,21,2016_09_PHI_NYG
+3,7:41,Giants,Sterling Shepard 32 yard pass from Eli Manning (Robbie Gould kick),17,28,2016_09_PHI_NYG
+4,12:01,Eagles,Caleb Sturgis 26 yard field goal ,20,28,2016_09_PHI_NYG
+4,3:51,Eagles,Caleb Sturgis 38 yard field goal ,23,28,2016_09_PHI_NYG
+1,3:44,Panthers,Greg Olsen 9 yard pass from Cam Newton (Graham Gano kick),7,0,2016_09_CAR_LA
+4,11:12,Panthers,Graham Gano 38 yard field goal ,10,0,2016_09_CAR_LA
+4,8:01,Rams,Greg Zuerlein 25 yard field goal ,10,3,2016_09_CAR_LA
+4,3:18,Panthers,Graham Gano 37 yard field goal ,13,3,2016_09_CAR_LA
+4,0:34,Rams,Kenny Britt 10 yard pass from Case Keenum (Greg Zuerlein kick),13,10,2016_09_CAR_LA
+1,9:25,49ers,Phil Dawson 49 yard field goal ,0,3,2016_09_NO_SF
+1,5:11,Saints,Tim Hightower 4 yard rush (Wil Lutz kick),7,3,2016_09_NO_SF
+1,2:14,Saints,Michael Thomas 1 yard pass from Drew Brees (Wil Lutz kick),14,3,2016_09_NO_SF
+2,7:40,Saints,Mark Ingram 5 yard pass from Drew Brees (Wil Lutz kick),21,3,2016_09_NO_SF
+2,5:56,49ers,DuJuan Harris 47 yard pass from Colin Kaepernick (Phil Dawson kick),21,10,2016_09_NO_SF
+2,5:45,Saints,Mark Ingram 75 yard rush (Wil Lutz kick),28,10,2016_09_NO_SF
+2,3:53,49ers,Phil Dawson 48 yard field goal ,28,13,2016_09_NO_SF
+2,1:05,49ers,Vance McDonald 65 yard pass from Colin Kaepernick (Phil Dawson kick),28,20,2016_09_NO_SF
+2,0:00,Saints,Wil Lutz 26 yard field goal ,31,20,2016_09_NO_SF
+3,9:07,49ers,Phil Dawson 46 yard field goal ,31,23,2016_09_NO_SF
+4,13:13,Saints,Michael Thomas 32 yard pass from Drew Brees (Wil Lutz kick),38,23,2016_09_NO_SF
+4,8:52,Saints,Wil Lutz 41 yard field goal ,41,23,2016_09_NO_SF
+1,14:47,Colts,Jordan Todman 99 yard kickoff return (Adam Vinatieri kick),7,0,2016_09_IND_GB
+1,10:46,Packers,Mason Crosby 34 yard field goal ,7,3,2016_09_IND_GB
+1,4:28,Colts,Frank Gore 7 yard rush (Adam Vinatieri kick),14,3,2016_09_IND_GB
+1,0:00,Packers,Jordy Nelson 26 yard pass from Aaron Rodgers (Mason Crosby kick),14,10,2016_09_IND_GB
+2,12:05,Colts,Adam Vinatieri 28 yard field goal ,17,10,2016_09_IND_GB
+2,0:11,Colts,Donte Moncrief 8 yard pass from Andrew Luck (Adam Vinatieri kick),24,10,2016_09_IND_GB
+3,1:46,Packers,Mason Crosby 27 yard field goal ,24,13,2016_09_IND_GB
+4,9:35,Colts,Frank Gore 4 yard rush (Adam Vinatieri kick),31,13,2016_09_IND_GB
+4,7:40,Packers,Davante Adams 2 yard pass from Aaron Rodgers (pass failed),31,19,2016_09_IND_GB
+4,3:29,Packers,Randall Cobb 3 yard pass from Aaron Rodgers (Mason Crosby kick),31,26,2016_09_IND_GB
+1,10:02,Chargers,Antonio Gates 13 yard pass from Philip Rivers (Josh Lambo kick failed),0,6,2016_09_TEN_SD
+1,4:11,Chargers,Josh Lambo 32 yard field goal ,0,9,2016_09_TEN_SD
+2,14:18,Chargers,Tyrell Williams 6 yard pass from Philip Rivers (Josh Lambo kick),0,16,2016_09_TEN_SD
+2,11:14,Titans,Rishard Matthews 16 yard pass from Marcus Mariota (Ryan Succop kick),7,16,2016_09_TEN_SD
+2,1:32,Chargers,Josh Lambo 23 yard field goal ,7,19,2016_09_TEN_SD
+2,0:14,Titans,Rishard Matthews 7 yard pass from Marcus Mariota (Ryan Succop kick),14,19,2016_09_TEN_SD
+3,12:19,Titans,Marcus Mariota 14 yard rush (Ryan Succop kick),21,19,2016_09_TEN_SD
+3,5:28,Chargers,Melvin Gordon 1 yard rush (Josh Lambo kick),21,26,2016_09_TEN_SD
+3,2:31,Chargers,Dwight Lowery 36 yard defensive fumble return (Josh Lambo kick),21,33,2016_09_TEN_SD
+4,9:51,Titans,Delanie Walker 8 yard pass from Marcus Mariota (Ryan Succop kick),28,33,2016_09_TEN_SD
+4,6:05,Chargers,Josh Lambo 36 yard field goal ,28,36,2016_09_TEN_SD
+4,4:51,Chargers,Brandon Flowers 33 yard interception return (Josh Lambo kick),28,43,2016_09_TEN_SD
+4,2:45,Titans,DeMarco Murray 1 yard rush (Ryan Succop kick),35,43,2016_09_TEN_SD
+1,10:21,Raiders,Sebastian Janikowski 24 yard field goal ,0,3,2016_09_DEN_OAK
+1,4:52,Raiders,Sebastian Janikowski 29 yard field goal ,0,6,2016_09_DEN_OAK
+2,14:07,Raiders,Latavius Murray 1 yard rush (Sebastian Janikowski kick),0,13,2016_09_DEN_OAK
+2,8:22,Broncos,Jordan Norwood 36 yard pass from Trevor Siemian (Brandon McManus kick),7,13,2016_09_DEN_OAK
+2,1:25,Raiders,Latavius Murray 1 yard rush (Sebastian Janikowski kick),7,20,2016_09_DEN_OAK
+2,0:00,Broncos,Brandon McManus 55 yard field goal ,10,20,2016_09_DEN_OAK
+4,14:56,Broncos,Brandon McManus 44 yard field goal ,13,20,2016_09_DEN_OAK
+4,8:19,Raiders,Sebastian Janikowski 35 yard field goal ,13,23,2016_09_DEN_OAK
+4,6:09,Raiders,Latavius Murray 1 yard rush (Sebastian Janikowski kick),13,30,2016_09_DEN_OAK
+4,5:18,Broncos,Kapri Bibbs 69 yard pass from Trevor Siemian (Brandon McManus kick),20,30,2016_09_DEN_OAK
+1,13:32,Bills,Tyrod Taylor 3 yard rush (Dan Carpenter kick),7,0,2016_09_BUF_SEA
+1,12:21,Seahawks,Russell Wilson 3 yard rush (Stephen Hauschka kick),7,7,2016_09_BUF_SEA
+1,2:21,Bills,Justin Hunter 5 yard pass from Tyrod Taylor (Dan Carpenter kick),14,7,2016_09_BUF_SEA
+2,14:54,Seahawks,Jimmy Graham 17 yard pass from Russell Wilson (Stephen Hauschka kick),14,14,2016_09_BUF_SEA
+2,9:32,Bills,Dan Carpenter 31 yard field goal ,17,14,2016_09_BUF_SEA
+2,4:29,Seahawks,Christine Michael 3 yard rush (Stephen Hauschka kick),17,21,2016_09_BUF_SEA
+2,1:00,Seahawks,Jimmy Graham 18 yard pass from Russell Wilson (Stephen Hauschka kick),17,28,2016_09_BUF_SEA
+4,14:26,Bills,Mike Gillislee 1 yard rush (Tyrod Taylor run),25,28,2016_09_BUF_SEA
+4,9:49,Seahawks,Stephen Hauschka 49 yard field goal ,25,31,2016_09_BUF_SEA
+2,10:29,Ravens,Justin Tucker 25 yard field goal ,0,3,2016_10_CLE_BAL
+2,6:30,Browns,Seth Devalve 25 yard pass from Cody Kessler (Cody Parkey kick),7,3,2016_10_CLE_BAL
+2,0:00,Ravens,Justin Tucker 40 yard field goal ,7,6,2016_10_CLE_BAL
+3,9:36,Ravens,Darren Waller 4 yard pass from Joe Flacco (Justin Tucker kick),7,13,2016_10_CLE_BAL
+3,2:05,Ravens,Steve Smith Sr. 11 yard pass from Joe Flacco (Kyle Juszczyk pass from Joe Flacco),7,21,2016_10_CLE_BAL
+4,6:21,Ravens,Breshad Perriman 27 yard pass from Joe Flacco (Justin Tucker kick),7,28,2016_10_CLE_BAL
+1,10:49,Panthers,Graham Gano 42 yard field goal ,0,3,2016_10_KC_CAR
+2,9:05,Panthers,Cam Newton 4 yard rush (Graham Gano kick),0,10,2016_10_KC_CAR
+2,1:52,Panthers,Devin Funchess 38 yard pass from Cam Newton (Graham Gano kick),0,17,2016_10_KC_CAR
+2,0:10,Chiefs,Cairo Santos 47 yard field goal ,3,17,2016_10_KC_CAR
+4,12:02,Chiefs,Cairo Santos 36 yard field goal ,6,17,2016_10_KC_CAR
+4,10:32,Chiefs,Eric Berry 42 yard interception return (Travis Kelce pass from Alex Smith),14,17,2016_10_KC_CAR
+4,4:25,Chiefs,Cairo Santos 33 yard field goal ,17,17,2016_10_KC_CAR
+4,0:00,Chiefs,Cairo Santos 37 yard field goal ,20,17,2016_10_KC_CAR
+1,11:57,Texans,Kareem Jackson 42 yard interception return (Nick Novak kick),7,0,2016_10_HOU_JAX
+1,5:14,Jaguars,Julius Thomas 5 yard pass from Blake Bortles (Jason Myers kick),7,7,2016_10_HOU_JAX
+1,0:19,Texans,Ryan Griffin 1 yard pass from Brock Osweiler (Nick Novak kick),14,7,2016_10_HOU_JAX
+2,5:17,Jaguars,Jason Myers 54 yard field goal ,14,10,2016_10_HOU_JAX
+3,4:07,Texans,Stephen Anderson 7 yard pass from Brock Osweiler (Nick Novak kick),21,10,2016_10_HOU_JAX
+4,14:56,Jaguars,Jason Myers 44 yard field goal ,21,13,2016_10_HOU_JAX
+4,8:32,Texans,Nick Novak 51 yard field goal ,24,13,2016_10_HOU_JAX
+4,2:17,Jaguars,Allen Robinson 14 yard pass from Blake Bortles (Allen Robinson pass from Blake Bortles),24,21,2016_10_HOU_JAX
+1,5:45,Broncos,Jordan Taylor 14 yard pass from Trevor Siemian (Brandon McManus kick),7,0,2016_10_DEN_NO
+2,13:42,Broncos,Brandon McManus 50 yard field goal ,10,0,2016_10_DEN_NO
+2,0:00,Saints,Wil Lutz 30 yard field goal ,10,3,2016_10_DEN_NO
+3,8:30,Saints,Willie Snead 3 yard pass from Drew Brees (Wil Lutz kick),10,10,2016_10_DEN_NO
+3,3:59,Saints,Willie Snead 5 yard pass from Drew Brees (Wil Lutz kick),10,17,2016_10_DEN_NO
+4,9:37,Broncos,Demaryius Thomas 2 yard pass from Trevor Siemian (Brandon McManus kick),17,17,2016_10_DEN_NO
+4,3:23,Broncos,Brandon McManus 28 yard field goal ,20,17,2016_10_DEN_NO
+4,2:50,Broncos,Brandon McManus 37 yard field goal ,23,17,2016_10_DEN_NO
+4,1:22,Saints,Brandin Cooks 32 yard pass from Drew Brees (Wil Lutz kick failed),23,23,2016_10_DEN_NO
+4,1:22,Broncos,Will Parks defensive extra point return ,25,23,2016_10_DEN_NO
+1,9:37,Rams,Greg Zuerlein 20 yard field goal ,3,0,2016_10_LA_NYJ
+2,12:35,Jets,Bilal Powell 4 yard pass from Bryce Petty (Nick Folk kick failed),3,6,2016_10_LA_NYJ
+3,0:20,Rams,Greg Zuerlein 38 yard field goal ,6,6,2016_10_LA_NYJ
+4,6:52,Rams,Greg Zuerlein 34 yard field goal ,9,6,2016_10_LA_NYJ
+1,4:17,Eagles,Ryan Mathews 4 yard rush (Caleb Sturgis kick),0,7,2016_10_ATL_PHI
+2,9:36,Falcons,Matt Bryant 38 yard field goal ,3,7,2016_10_ATL_PHI
+2,2:59,Falcons,Matt Bryant 43 yard field goal ,6,7,2016_10_ATL_PHI
+3,8:16,Eagles,Caleb Sturgis 29 yard field goal ,6,10,2016_10_ATL_PHI
+3,4:46,Falcons,Matt Bryant 46 yard field goal ,9,10,2016_10_ATL_PHI
+4,13:50,Eagles,Caleb Sturgis 25 yard field goal ,9,13,2016_10_ATL_PHI
+4,13:15,Falcons,Taylor Gabriel 76 yard pass from Matt Ryan (Matt Bryant kick failed),15,13,2016_10_ATL_PHI
+4,6:49,Eagles,Ryan Mathews 5 yard rush (Ryan Mathews run),15,21,2016_10_ATL_PHI
+4,1:57,Eagles,Caleb Sturgis 48 yard field goal ,15,24,2016_10_ATL_PHI
+1,5:34,Buccaneers,Chris Conte 20 yard interception return (Roberto Aguayo kick),0,7,2016_10_CHI_TB
+1,2:42,Bears,Connor Barth 54 yard field goal ,3,7,2016_10_CHI_TB
+2,3:33,Buccaneers,Cameron Brate 10 yard pass from Jameis Winston (Roberto Aguayo kick),3,14,2016_10_CHI_TB
+2,0:31,Buccaneers,Roberto Aguayo 30 yard field goal ,3,17,2016_10_CHI_TB
+2,0:00,Bears,Cameron Meredith 50 yard pass from Jay Cutler (Connor Barth kick),10,17,2016_10_CHI_TB
+3,13:05,Buccaneers,Freddie Martino 43 yard pass from Jameis Winston (Roberto Aguayo kick),10,24,2016_10_CHI_TB
+3,5:19,Buccaneers,Roberto Aguayo 27 yard field goal ,10,27,2016_10_CHI_TB
+3,0:51,Buccaneers,"Safety, Fumble O.B. in end zone ",10,29,2016_10_CHI_TB
+4,5:55,Buccaneers,Doug Martin 1 yard rush (Roberto Aguayo kick),10,36,2016_10_CHI_TB
+1,13:17,Titans,DeMarco Murray 75 yard rush (Ryan Succop kick),0,7,2016_10_GB_TEN
+1,6:58,Titans,Delanie Walker 10 yard pass from DeMarco Murray (Ryan Succop kick),0,14,2016_10_GB_TEN
+1,0:08,Titans,Anthony Fasano 9 yard pass from Marcus Mariota (Ryan Succop kick),0,21,2016_10_GB_TEN
+2,10:49,Packers,Jordy Nelson 1 yard pass from Aaron Rodgers (Mason Crosby kick),7,21,2016_10_GB_TEN
+2,8:45,Titans,Rishard Matthews 32 yard pass from Marcus Mariota (Ryan Succop kick),7,28,2016_10_GB_TEN
+2,3:55,Packers,Mason Crosby 29 yard field goal ,10,28,2016_10_GB_TEN
+2,1:55,Titans,Kendall Wright 6 yard pass from Marcus Mariota (Ryan Succop kick),10,35,2016_10_GB_TEN
+2,0:43,Packers,James Starks 13 yard pass from Aaron Rodgers (Mason Crosby kick failed),16,35,2016_10_GB_TEN
+3,8:53,Packers,Aaron Rodgers 20 yard rush (run failed),22,35,2016_10_GB_TEN
+3,6:27,Titans,Tajae Sharpe 33 yard pass from Marcus Mariota (pass failed),22,41,2016_10_GB_TEN
+3,0:57,Packers,Mason Crosby 38 yard field goal ,25,41,2016_10_GB_TEN
+4,9:56,Titans,Ryan Succop 51 yard field goal ,25,44,2016_10_GB_TEN
+4,4:52,Titans,Ryan Succop 23 yard field goal ,25,47,2016_10_GB_TEN
+1,9:04,Redskins,Jamison Crowder 4 yard pass from Kirk Cousins (Dustin Hopkins kick),0,7,2016_10_MIN_WAS
+2,14:18,Redskins,Vernon Davis 38 yard pass from Kirk Cousins (Dustin Hopkins kick),0,14,2016_10_MIN_WAS
+2,5:39,Vikings,Matt Asiata 1 yard rush (Blair Walsh kick),7,14,2016_10_MIN_WAS
+2,0:58,Vikings,Kyle Rudolph 20 yard pass from Sam Bradford (Blair Walsh kick),14,14,2016_10_MIN_WAS
+2,0:00,Vikings,Adam Thielen 3 yard pass from Sam Bradford (Blair Walsh kick failed),20,14,2016_10_MIN_WAS
+3,8:53,Redskins,Dustin Hopkins 30 yard field goal ,20,17,2016_10_MIN_WAS
+3,0:38,Redskins,Dustin Hopkins 37 yard field goal ,20,20,2016_10_MIN_WAS
+4,9:33,Redskins,Dustin Hopkins 50 yard field goal ,20,23,2016_10_MIN_WAS
+4,2:31,Redskins,Dustin Hopkins 28 yard field goal ,20,26,2016_10_MIN_WAS
+2,14:51,Chargers,Josh Lambo 45 yard field goal ,0,3,2016_10_MIA_SD
+2,7:37,Chargers,Antonio Gates 11 yard pass from Philip Rivers (Josh Lambo kick),0,10,2016_10_MIA_SD
+2,2:50,Dolphins,Kenny Stills 39 yard pass from Ryan Tannehill (Andrew Franks kick),7,10,2016_10_MIA_SD
+3,12:29,Dolphins,Damien Williams 2 yard rush (Andrew Franks kick),14,10,2016_10_MIA_SD
+3,5:36,Chargers,Hunter Henry 7 yard pass from Philip Rivers (Josh Lambo kick),14,17,2016_10_MIA_SD
+3,1:43,Dolphins,Damien Williams 18 yard pass from Ryan Tannehill (Andrew Franks kick),21,17,2016_10_MIA_SD
+4,4:04,Chargers,Tyrell Williams 51 yard pass from Philip Rivers (Josh Lambo kick),21,24,2016_10_MIA_SD
+4,2:57,Dolphins,Andrew Franks 27 yard field goal ,24,24,2016_10_MIA_SD
+4,1:01,Dolphins,Kiko Alonso 60 yard interception return (Andrew Franks kick),31,24,2016_10_MIA_SD
+1,3:55,Cardinals,David Johnson 3 yard pass from Carson Palmer (Chandler Catanzaro kick),0,7,2016_10_SF_ARI
+2,14:42,Cardinals,David Johnson 18 yard rush (Chandler Catanzaro kick),0,14,2016_10_SF_ARI
+2,12:12,49ers,Jeremy Kerley 17 yard pass from Colin Kaepernick (Phil Dawson kick),7,14,2016_10_SF_ARI
+2,8:28,Cardinals,Chandler Catanzaro 39 yard field goal ,7,17,2016_10_SF_ARI
+2,1:32,49ers,Phil Dawson 49 yard field goal ,10,17,2016_10_SF_ARI
+2,0:00,Cardinals,Chandler Catanzaro 19 yard field goal ,10,20,2016_10_SF_ARI
+3,8:40,49ers,Phil Dawson 53 yard field goal ,13,20,2016_10_SF_ARI
+4,1:55,49ers,Colin Kaepernick 4 yard rush (Phil Dawson kick),20,20,2016_10_SF_ARI
+4,0:00,Cardinals,Chandler Catanzaro 34 yard field goal ,20,23,2016_10_SF_ARI
+1,9:54,Steelers,Le'Veon Bell 2 yard pass from Ben Roethlisberger (pass failed),0,6,2016_10_DAL_PIT
+1,5:17,Cowboys,Dan Bailey 37 yard field goal ,3,6,2016_10_DAL_PIT
+1,1:13,Steelers,Eli Rogers 3 yard pass from Ben Roethlisberger (pass failed),3,12,2016_10_DAL_PIT
+1,0:12,Cowboys,Ezekiel Elliott 83 yard pass from Dak Prescott (Dan Bailey kick),10,12,2016_10_DAL_PIT
+2,11:04,Cowboys,Dan Bailey 53 yard field goal ,13,12,2016_10_DAL_PIT
+2,4:43,Steelers,Chris Boswell 39 yard field goal ,13,15,2016_10_DAL_PIT
+3,13:10,Steelers,Chris Boswell 25 yard field goal ,13,18,2016_10_DAL_PIT
+3,5:35,Cowboys,Dan Bailey 46 yard field goal ,16,18,2016_10_DAL_PIT
+3,1:35,Cowboys,Dez Bryant 50 yard pass from Dak Prescott (Dan Bailey kick),23,18,2016_10_DAL_PIT
+4,7:51,Steelers,Le'Veon Bell 1 yard rush (pass failed),23,24,2016_10_DAL_PIT
+4,1:55,Cowboys,Ezekiel Elliott 14 yard rush (pass failed),29,24,2016_10_DAL_PIT
+4,0:42,Steelers,Antonio Brown 15 yard pass from Ben Roethlisberger (pass failed),29,30,2016_10_DAL_PIT
+4,0:09,Cowboys,Ezekiel Elliott 32 yard rush (pass failed),35,30,2016_10_DAL_PIT
+1,10:19,Patriots,LeGarrette Blount 1 yard rush (Stephen Gostkowski kick),0,7,2016_10_SEA_NE
+1,7:10,Seahawks,Stephen Hauschka 27 yard field goal ,3,7,2016_10_SEA_NE
+1,1:33,Seahawks,Stephen Hauschka 31 yard field goal ,6,7,2016_10_SEA_NE
+2,10:52,Seahawks,Doug Baldwin 6 yard pass from Russell Wilson (Stephen Hauschka kick failed),12,7,2016_10_SEA_NE
+2,1:05,Patriots,LeGarrette Blount 1 yard rush (Stephen Gostkowski kick),12,14,2016_10_SEA_NE
+2,0:06,Seahawks,Doug Baldwin 18 yard pass from Russell Wilson (Stephen Hauschka kick),19,14,2016_10_SEA_NE
+3,7:52,Patriots,LeGarrette Blount 13 yard rush (Stephen Gostkowski kick),19,21,2016_10_SEA_NE
+3,2:52,Seahawks,Stephen Hauschka 41 yard field goal ,22,21,2016_10_SEA_NE
+4,13:00,Patriots,Stephen Gostkowski 30 yard field goal ,22,24,2016_10_SEA_NE
+4,8:56,Seahawks,Stephen Hauschka 23 yard field goal ,25,24,2016_10_SEA_NE
+4,4:24,Seahawks,Doug Baldwin 15 yard pass from Russell Wilson (pass failed),31,24,2016_10_SEA_NE
+1,11:05,Giants,Jerell Adams 10 yard pass from Eli Manning (Robbie Gould kick),0,7,2016_10_CIN_NYG
+1,8:58,Bengals,A.J. Green 13 yard pass from Andy Dalton (Mike Nugent kick),7,7,2016_10_CIN_NYG
+2,4:19,Bengals,Mike Nugent 25 yard field goal ,10,7,2016_10_CIN_NYG
+2,1:17,Giants,Odell Beckham Jr. 10 yard pass from Eli Manning (Robbie Gould kick),10,14,2016_10_CIN_NYG
+3,13:58,Bengals,Jeremy Hill 9 yard rush (Mike Nugent kick),17,14,2016_10_CIN_NYG
+3,8:52,Bengals,Mike Nugent 38 yard field goal ,20,14,2016_10_CIN_NYG
+4,14:05,Giants,Sterling Shepard 3 yard pass from Eli Manning (Robbie Gould kick),20,21,2016_10_CIN_NYG
+1,8:34,Panthers,Graham Gano 32 yard field goal ,0,3,2016_11_NO_CAR
+1,0:40,Saints,Wil Lutz 27 yard field goal ,3,3,2016_11_NO_CAR
+2,5:43,Panthers,Jonathan Stewart 1 yard rush (Graham Gano kick),3,10,2016_11_NO_CAR
+2,2:55,Panthers,Graham Gano 49 yard field goal ,3,13,2016_11_NO_CAR
+2,0:23,Panthers,Ted Ginn Jr. 40 yard pass from Cam Newton (Graham Gano kick),3,20,2016_11_NO_CAR
+3,8:23,Panthers,Graham Gano 42 yard field goal ,3,23,2016_11_NO_CAR
+4,15:00,Saints,Wil Lutz 30 yard field goal ,6,23,2016_11_NO_CAR
+4,11:27,Saints,Brandon Coleman 9 yard pass from Drew Brees (Wil Lutz kick),13,23,2016_11_NO_CAR
+4,2:56,Saints,Coby Fleener 8 yard pass from Drew Brees (Wil Lutz kick),20,23,2016_11_NO_CAR
+1,8:52,Bills,LeSean McCoy 7 yard rush (Dan Carpenter kick),7,0,2016_11_BUF_CIN
+1,2:34,Bengals,Andy Dalton 2 yard rush (Mike Nugent kick failed),7,6,2016_11_BUF_CIN
+2,9:03,Bills,Dan Carpenter 26 yard field goal ,10,6,2016_11_BUF_CIN
+2,3:10,Bengals,Tyler Boyd 1 yard pass from Andy Dalton (Mike Nugent kick failed),10,12,2016_11_BUF_CIN
+3,10:25,Bills,Dan Carpenter 54 yard field goal ,13,12,2016_11_BUF_CIN
+4,12:05,Bills,Dan Carpenter 20 yard field goal ,16,12,2016_11_BUF_CIN
+1,2:28,Steelers,Chris Boswell 32 yard field goal ,3,0,2016_11_PIT_CLE
+2,4:43,Steelers,Chris Boswell 33 yard field goal ,6,0,2016_11_PIT_CLE
+2,0:00,Steelers,Le'Veon Bell 1 yard rush (David Johnson pass from Ben Roethlisberger),14,0,2016_11_PIT_CLE
+3,8:05,Browns,Cody Parkey 24 yard field goal ,14,3,2016_11_PIT_CLE
+3,0:03,Steelers,Chris Boswell 22 yard field goal ,17,3,2016_11_PIT_CLE
+4,9:45,Browns,Gary Barnidge 14 yard pass from Josh McCown (Cody Parkey kick failed),17,9,2016_11_PIT_CLE
+4,3:36,Steelers,Javon Hargrave defensive fumble recovery in end zone (Chris Boswell kick),24,9,2016_11_PIT_CLE
+1,5:28,Ravens,Terrance West 18 yard rush (Justin Tucker kick),7,0,2016_11_BAL_DAL
+2,5:55,Cowboys,Cole Beasley 3 yard pass from Dak Prescott (Dan Bailey kick),7,7,2016_11_BAL_DAL
+2,1:37,Ravens,Justin Tucker 46 yard field goal ,10,7,2016_11_BAL_DAL
+2,0:04,Cowboys,Dan Bailey 30 yard field goal ,10,10,2016_11_BAL_DAL
+3,7:31,Cowboys,Dez Bryant 4 yard pass from Dak Prescott (Dan Bailey kick),10,17,2016_11_BAL_DAL
+4,11:30,Cowboys,Dez Bryant 13 yard pass from Dak Prescott (Dan Bailey kick),10,24,2016_11_BAL_DAL
+4,8:16,Ravens,Steve Smith Sr. 5 yard pass from Joe Flacco (Justin Tucker kick),17,24,2016_11_BAL_DAL
+4,1:50,Cowboys,Dan Bailey 21 yard field goal ,17,27,2016_11_BAL_DAL
+1,1:36,Jaguars,Jason Myers 27 yard field goal ,3,0,2016_11_JAX_DET
+2,11:13,Lions,Andre Roberts 55 yard punt return (Matt Prater kick failed),3,6,2016_11_JAX_DET
+2,2:45,Jaguars,Allen Robinson 3 yard pass from Blake Bortles (Jason Myers kick failed),9,6,2016_11_JAX_DET
+2,0:19,Lions,Matt Prater 27 yard field goal ,9,9,2016_11_JAX_DET
+3,14:02,Lions,Rafael Bush 39 yard interception return (Matt Prater kick),9,16,2016_11_JAX_DET
+3,9:20,Jaguars,Jason Myers 52 yard field goal ,12,16,2016_11_JAX_DET
+3,2:10,Jaguars,Marqise Lee 3 yard pass from Blake Bortles (Jason Myers kick),19,16,2016_11_JAX_DET
+4,10:03,Lions,Eric Ebron 1 yard rush (Matt Prater kick),19,23,2016_11_JAX_DET
+4,0:22,Lions,Matt Prater 43 yard field goal ,19,26,2016_11_JAX_DET
+1,8:39,Colts,Robert Turbin 1 yard rush (Adam Vinatieri kick),0,7,2016_11_TEN_IND
+1,2:32,Colts,Donte Moncrief 2 yard pass from Andrew Luck (Adam Vinatieri kick),0,14,2016_11_TEN_IND
+2,10:35,Colts,T.Y. Hilton 2 yard pass from Andrew Luck (Adam Vinatieri kick),0,21,2016_11_TEN_IND
+2,0:20,Titans,DeMarco Murray 3 yard pass from Marcus Mariota (Ryan Succop kick),7,21,2016_11_TEN_IND
+3,6:35,Titans,Tajae Sharpe 34 yard pass from Marcus Mariota (Ryan Succop kick),14,21,2016_11_TEN_IND
+4,12:14,Titans,Ryan Succop 47 yard field goal ,17,21,2016_11_TEN_IND
+4,10:50,Colts,Adam Vinatieri 49 yard field goal ,17,24,2016_11_TEN_IND
+1,7:07,Chiefs,Cairo Santos 22 yard field goal ,0,3,2016_11_TB_KC
+2,9:45,Buccaneers,Roberto Aguayo 31 yard field goal ,3,3,2016_11_TB_KC
+2,4:19,Buccaneers,Roberto Aguayo 22 yard field goal ,6,3,2016_11_TB_KC
+2,1:13,Chiefs,Alex Smith 11 yard rush (Cairo Santos kick),6,10,2016_11_TB_KC
+2,0:07,Buccaneers,Roberto Aguayo 41 yard field goal ,9,10,2016_11_TB_KC
+3,10:00,Buccaneers,Roberto Aguayo 36 yard field goal ,12,10,2016_11_TB_KC
+4,6:26,Buccaneers,Alan Cross 3 yard pass from Jameis Winston (Roberto Aguayo kick),19,10,2016_11_TB_KC
+4,2:27,Chiefs,Albert Wilson 3 yard pass from Alex Smith (Cairo Santos kick),19,17,2016_11_TB_KC
+1,10:25,Vikings,Adam Thielen 16 yard pass from Sam Bradford (Kai Forbath kick),0,7,2016_11_ARI_MIN
+1,4:07,Cardinals,David Johnson 1 yard rush (Chandler Catanzaro kick),7,7,2016_11_ARI_MIN
+2,10:04,Cardinals,Chandler Catanzaro 34 yard field goal ,10,7,2016_11_ARI_MIN
+2,7:16,Vikings,Matt Asiata 2 yard rush (Kai Forbath kick failed),10,13,2016_11_ARI_MIN
+2,3:07,Vikings,Xavier Rhodes 100 yard interception return (Kai Forbath kick),10,20,2016_11_ARI_MIN
+2,0:50,Cardinals,Jermaine Gresham 29 yard pass from Carson Palmer (Chandler Catanzaro kick),17,20,2016_11_ARI_MIN
+3,14:47,Vikings,Cordarrelle Patterson 104 yard kickoff return (Kai Forbath kick),17,27,2016_11_ARI_MIN
+3,0:04,Vikings,Kai Forbath 27 yard field goal ,17,30,2016_11_ARI_MIN
+4,7:24,Cardinals,David Johnson 4 yard pass from Carson Palmer (Chandler Catanzaro kick),24,30,2016_11_ARI_MIN
+1,9:46,Bears,Zach Miller 19 yard pass from Jay Cutler (Connor Barth kick failed),6,0,2016_11_CHI_NYG
+1,4:04,Giants,Rashad Jennings 2 yard rush (Robbie Gould kick failed),6,6,2016_11_CHI_NYG
+1,0:24,Bears,Connor Barth 40 yard field goal ,9,6,2016_11_CHI_NYG
+2,8:35,Bears,Jeremy Langford 1 yard rush (Connor Barth kick),16,6,2016_11_CHI_NYG
+2,3:33,Giants,Robbie Gould 46 yard field goal ,16,9,2016_11_CHI_NYG
+3,11:04,Giants,Will Tye 9 yard pass from Eli Manning (Robbie Gould kick),16,16,2016_11_CHI_NYG
+3,6:49,Giants,Sterling Shepard 15 yard pass from Eli Manning (Robbie Gould kick failed),16,22,2016_11_CHI_NYG
+1,9:47,Rams,Todd Gurley 24 yard rush (Greg Zuerlein kick),0,7,2016_11_MIA_LA
+3,1:39,Rams,Greg Zuerlein 46 yard field goal ,0,10,2016_11_MIA_LA
+4,4:02,Dolphins,Jarvis Landry 10 yard pass from Ryan Tannehill (Andrew Franks kick),7,10,2016_11_MIA_LA
+4,0:36,Dolphins,DeVante Parker 9 yard pass from Ryan Tannehill (Andrew Franks kick),14,10,2016_11_MIA_LA
+1,11:02,Seahawks,C.J. Prosise 72 yard rush (Stephen Hauschka kick failed),0,6,2016_11_PHI_SEA
+2,14:13,Eagles,Zach Ertz 4 yard pass from Carson Wentz (Caleb Sturgis kick),7,6,2016_11_PHI_SEA
+2,8:20,Seahawks,Jimmy Graham 35 yard pass from Russell Wilson (Stephen Hauschka kick),7,13,2016_11_PHI_SEA
+2,3:47,Seahawks,Stephen Hauschka 21 yard field goal ,7,16,2016_11_PHI_SEA
+3,7:31,Seahawks,Russell Wilson 15 yard pass from Doug Baldwin (Stephen Hauschka kick),7,23,2016_11_PHI_SEA
+4,13:34,Seahawks,Stephen Hauschka 35 yard field goal ,7,26,2016_11_PHI_SEA
+4,3:42,Eagles,Dorial Green-Beckham 5 yard pass from Carson Wentz (Nelson Agholor pass from Carson Wentz),15,26,2016_11_PHI_SEA
+1,10:10,Patriots,Julian Edelman 4 yard pass from Tom Brady (Stephen Gostkowski kick failed),6,0,2016_11_NE_SF
+1,2:40,49ers,Phil Dawson 33 yard field goal ,6,3,2016_11_NE_SF
+2,14:53,Patriots,James White 9 yard pass from Tom Brady (Stephen Gostkowski kick),13,3,2016_11_NE_SF
+2,4:56,49ers,Vance McDonald 18 yard pass from Colin Kaepernick (Phil Dawson kick),13,10,2016_11_NE_SF
+4,14:55,Patriots,Danny Amendola 5 yard pass from Tom Brady (Stephen Gostkowski kick),20,10,2016_11_NE_SF
+4,10:06,Patriots,Malcolm Mitchell 56 yard pass from Tom Brady (Stephen Gostkowski kick),27,10,2016_11_NE_SF
+4,6:11,Patriots,Stephen Gostkowski 38 yard field goal ,30,10,2016_11_NE_SF
+4,2:06,49ers,Shaun Draughn 13 yard pass from Colin Kaepernick (Phil Dawson kick),30,17,2016_11_NE_SF
+1,2:56,Redskins,DeSean Jackson 17 yard pass from Kirk Cousins (Dustin Hopkins kick),0,7,2016_11_GB_WAS
+2,9:27,Packers,Jordy Nelson 13 yard pass from Aaron Rodgers (Mason Crosby kick),7,7,2016_11_GB_WAS
+2,3:37,Packers,Mason Crosby 36 yard field goal ,10,7,2016_11_GB_WAS
+2,0:39,Redskins,Robert Kelley 10 yard rush (run failed),10,13,2016_11_GB_WAS
+3,9:23,Redskins,Dustin Hopkins 37 yard field goal ,10,16,2016_11_GB_WAS
+3,2:00,Redskins,Jamison Crowder 44 yard pass from Kirk Cousins (run failed),10,22,2016_11_GB_WAS
+4,14:51,Packers,James Starks 31 yard pass from Aaron Rodgers (Mason Crosby kick),17,22,2016_11_GB_WAS
+4,14:25,Redskins,Pierre Garcon 70 yard pass from Kirk Cousins (Dustin Hopkins kick),17,29,2016_11_GB_WAS
+4,10:04,Packers,Jared Cook 6 yard pass from Aaron Rodgers (Mason Crosby kick),24,29,2016_11_GB_WAS
+4,3:54,Redskins,Robert Kelley 1 yard rush (Dustin Hopkins kick failed),24,35,2016_11_GB_WAS
+4,2:26,Redskins,Robert Kelley 4 yard rush (Dustin Hopkins kick),24,42,2016_11_GB_WAS
+1,8:34,Texans,Nick Novak 32 yard field goal ,3,0,2016_11_HOU_OAK
+2,14:54,Raiders,Jalen Richard 17 yard pass from Derek Carr (Sebastian Janikowski kick),3,7,2016_11_HOU_OAK
+2,12:48,Raiders,Sebastian Janikowski 19 yard field goal ,3,10,2016_11_HOU_OAK
+2,7:59,Texans,Braxton Miller 12 yard pass from Brock Osweiler (Nick Novak kick),10,10,2016_11_HOU_OAK
+3,8:32,Texans,Lamar Miller 1 yard rush (Nick Novak kick),17,10,2016_11_HOU_OAK
+3,2:39,Raiders,Sebastian Janikowski 20 yard field goal ,17,13,2016_11_HOU_OAK
+4,10:57,Texans,Nick Novak 28 yard field goal ,20,13,2016_11_HOU_OAK
+4,10:44,Raiders,Jamize Olawale 75 yard pass from Derek Carr (Sebastian Janikowski kick),20,20,2016_11_HOU_OAK
+4,4:43,Raiders,Amari Cooper 35 yard pass from Derek Carr (Sebastian Janikowski kick),20,27,2016_11_HOU_OAK
+1,7:14,Lions,Anquan Boldin 2 yard pass from Matthew Stafford (Matt Prater kick),0,7,2016_12_MIN_DET
+1,0:40,Vikings,Matt Asiata 5 yard rush (Kai Forbath kick),7,7,2016_12_MIN_DET
+2,6:45,Lions,Matt Prater 29 yard field goal ,7,10,2016_12_MIN_DET
+3,7:03,Vikings,Kai Forbath 30 yard field goal ,10,10,2016_12_MIN_DET
+4,12:38,Vikings,Kai Forbath 28 yard field goal ,13,10,2016_12_MIN_DET
+4,1:45,Lions,Matt Prater 48 yard field goal ,13,13,2016_12_MIN_DET
+4,0:00,Lions,Matt Prater 40 yard field goal ,13,16,2016_12_MIN_DET
+1,11:09,Cowboys,Ezekiel Elliott 4 yard rush (Dan Bailey kick),0,7,2016_12_WAS_DAL
+2,14:04,Redskins,Dustin Hopkins 24 yard field goal ,3,7,2016_12_WAS_DAL
+2,7:57,Cowboys,Dan Bailey 46 yard field goal ,3,10,2016_12_WAS_DAL
+2,1:45,Cowboys,Terrance Williams 10 yard pass from Dak Prescott (Dan Bailey kick),3,17,2016_12_WAS_DAL
+2,0:03,Redskins,Dustin Hopkins 20 yard field goal ,6,17,2016_12_WAS_DAL
+4,14:54,Redskins,Jordan Reed 5 yard pass from Kirk Cousins (pass failed),12,17,2016_12_WAS_DAL
+4,10:49,Cowboys,Dak Prescott 6 yard rush (Dan Bailey kick),12,24,2016_12_WAS_DAL
+4,9:22,Redskins,DeSean Jackson 67 yard pass from Kirk Cousins (Dustin Hopkins kick),19,24,2016_12_WAS_DAL
+4,6:29,Cowboys,Ezekiel Elliott 1 yard rush (Dan Bailey kick),19,31,2016_12_WAS_DAL
+4,1:53,Redskins,Jordan Reed 8 yard pass from Kirk Cousins (Dustin Hopkins kick),26,31,2016_12_WAS_DAL
+1,9:10,Steelers,Le'Veon Bell 5 yard rush (Chris Boswell kick),7,0,2016_12_PIT_IND
+1,1:06,Steelers,Antonio Brown 25 yard pass from Ben Roethlisberger (Chris Boswell kick),14,0,2016_12_PIT_IND
+2,13:02,Colts,Donte Moncrief 5 yard pass from Scott Tolzien (Adam Vinatieri kick),14,7,2016_12_PIT_IND
+2,9:00,Steelers,Antonio Brown 33 yard pass from Ben Roethlisberger (Chris Boswell kick),21,7,2016_12_PIT_IND
+4,5:30,Steelers,Antonio Brown 22 yard pass from Ben Roethlisberger (Chris Boswell kick),28,7,2016_12_PIT_IND
+1,9:39,Cardinals,Jermaine Gresham 1 yard pass from Carson Palmer (Chandler Catanzaro kick),7,0,2016_12_ARI_ATL
+1,3:38,Falcons,Devonta Freeman 1 yard rush (Matt Bryant kick),7,7,2016_12_ARI_ATL
+2,12:52,Cardinals,Chandler Catanzaro 25 yard field goal ,10,7,2016_12_ARI_ATL
+2,8:30,Falcons,Matt Bryant 45 yard field goal ,10,10,2016_12_ARI_ATL
+2,2:19,Falcons,Taylor Gabriel 35 yard pass from Matt Ryan (Matt Bryant kick),10,17,2016_12_ARI_ATL
+2,0:00,Cardinals,Chandler Catanzaro 54 yard field goal ,13,17,2016_12_ARI_ATL
+3,2:56,Falcons,Tevin Coleman 2 yard rush (Matt Bryant kick),13,24,2016_12_ARI_ATL
+4,8:48,Falcons,Taylor Gabriel 25 yard pass from Matt Ryan (Matt Bryant kick),13,31,2016_12_ARI_ATL
+4,4:44,Cardinals,David Johnson 3 yard pass from Carson Palmer (pass failed),19,31,2016_12_ARI_ATL
+4,2:07,Falcons,Devonta Freeman 5 yard rush (Matt Bryant kick),19,38,2016_12_ARI_ATL
+1,10:15,Ravens,Breshad Perriman 14 yard pass from Joe Flacco (Justin Tucker kick),0,7,2016_12_CIN_BAL
+1,5:39,Ravens,Justin Tucker 52 yard field goal ,0,10,2016_12_CIN_BAL
+2,14:50,Bengals,Mike Nugent 23 yard field goal ,3,10,2016_12_CIN_BAL
+2,1:40,Ravens,Justin Tucker 57 yard field goal ,3,13,2016_12_CIN_BAL
+2,0:00,Ravens,Justin Tucker 54 yard field goal ,3,16,2016_12_CIN_BAL
+3,4:16,Bengals,Tyler Eifert 3 yard pass from Andy Dalton (Mike Nugent kick failed),9,16,2016_12_CIN_BAL
+4,12:16,Ravens,Justin Tucker 36 yard field goal ,9,19,2016_12_CIN_BAL
+4,6:00,Bengals,Mike Nugent 36 yard field goal ,12,19,2016_12_CIN_BAL
+4,0:00,Bengals,"Safety, Sam Koch player stepped out of bounds ",14,19,2016_12_CIN_BAL
+1,8:15,Jaguars,Chris Ivory 2 yard rush (Jason Myers kick),7,0,2016_12_JAX_BUF
+2,0:20,Bills,LeSean McCoy 7 yard rush (Dan Carpenter kick failed),7,6,2016_12_JAX_BUF
+3,14:47,Bills,LeSean McCoy 75 yard rush (Dan Carpenter kick),7,13,2016_12_JAX_BUF
+3,9:26,Jaguars,Marqise Lee 20 yard pass from Blake Bortles (Jason Myers kick),14,13,2016_12_JAX_BUF
+3,3:00,Bills,Tyrod Taylor 7 yard rush (Dan Carpenter kick),14,20,2016_12_JAX_BUF
+4,14:52,Jaguars,Allen Hurns 12 yard pass from Blake Bortles (Jason Myers kick),21,20,2016_12_JAX_BUF
+4,10:46,Bills,Justin Hunter 16 yard pass from Tyrod Taylor (LeSean McCoy run),21,28,2016_12_JAX_BUF
+1,4:27,Bears,Daniel Brown 7 yard pass from Matt Barkley (Connor Barth kick),0,7,2016_12_TEN_CHI
+1,0:04,Titans,Derrick Henry 11 yard rush (Ryan Succop kick),7,7,2016_12_TEN_CHI
+2,9:11,Titans,Delanie Walker 4 yard pass from Marcus Mariota (Ryan Succop kick),14,7,2016_12_TEN_CHI
+2,1:15,Titans,Rishard Matthews 29 yard pass from Marcus Mariota (Ryan Succop kick),21,7,2016_12_TEN_CHI
+3,4:07,Titans,Ryan Succop 19 yard field goal ,24,7,2016_12_TEN_CHI
+4,13:45,Titans,Ryan Succop 31 yard field goal ,27,7,2016_12_TEN_CHI
+4,8:23,Bears,Marquess Wilson 8 yard pass from Matt Barkley (Connor Barth kick),27,14,2016_12_TEN_CHI
+4,3:06,Bears,Deonte Thompson 6 yard pass from Matt Barkley (Connor Barth kick),27,21,2016_12_TEN_CHI
+2,7:03,Giants,Dwayne Harris 13 yard pass from Eli Manning (Robbie Gould kick),7,0,2016_12_NYG_CLE
+2,1:43,Browns,Cody Parkey 20 yard field goal ,7,3,2016_12_NYG_CLE
+2,1:13,Giants,Odell Beckham Jr. 32 yard pass from Eli Manning (Robbie Gould kick),14,3,2016_12_NYG_CLE
+2,0:00,Browns,Cody Parkey 25 yard field goal ,14,6,2016_12_NYG_CLE
+4,10:58,Giants,Jason Pierre-Paul 43 yard defensive fumble return (Robbie Gould kick failed),20,6,2016_12_NYG_CLE
+4,8:17,Browns,Corey Coleman 21 yard pass from Josh McCown (Cody Parkey kick),20,13,2016_12_NYG_CLE
+4,5:10,Giants,Odell Beckham Jr. 4 yard pass from Eli Manning (Robbie Gould kick),27,13,2016_12_NYG_CLE
+2,11:11,Texans,Brock Osweiler 1 yard rush (Nick Novak kick),0,7,2016_12_SD_HOU
+2,6:44,Chargers,Dontrelle Inman 52 yard pass from Philip Rivers (Josh Lambo kick),7,7,2016_12_SD_HOU
+2,1:54,Chargers,Tyrell Williams 21 yard pass from Philip Rivers (Josh Lambo kick),14,7,2016_12_SD_HOU
+4,14:09,Texans,Nick Novak 19 yard field goal ,14,10,2016_12_SD_HOU
+4,9:52,Chargers,Hunter Henry 12 yard pass from Philip Rivers (Josh Lambo kick),21,10,2016_12_SD_HOU
+4,0:14,Texans,Nick Novak 45 yard field goal ,21,13,2016_12_SD_HOU
+1,9:46,49ers,Carlos Hyde 11 yard pass from Colin Kaepernick (Phil Dawson kick),7,0,2016_12_SF_MIA
+2,12:22,Dolphins,Jay Ajayi 2 yard rush (Andrew Franks kick),7,7,2016_12_SF_MIA
+2,2:17,Dolphins,Dion Sims 16 yard pass from Ryan Tannehill (Andrew Franks kick),7,14,2016_12_SF_MIA
+3,12:31,Dolphins,Andrew Franks 24 yard field goal ,7,17,2016_12_SF_MIA
+3,7:34,49ers,Garrett Celek 4 yard pass from Colin Kaepernick (Phil Dawson kick),14,17,2016_12_SF_MIA
+3,1:33,Dolphins,Kenny Stills 43 yard pass from Ryan Tannehill (Andrew Franks kick),14,24,2016_12_SF_MIA
+4,11:31,Dolphins,Leonte Carroo 15 yard pass from Ryan Tannehill (Andrew Franks kick),14,31,2016_12_SF_MIA
+4,7:42,49ers,Torrey Smith 1 yard pass from Colin Kaepernick (Phil Dawson kick),21,31,2016_12_SF_MIA
+4,2:15,49ers,Phil Dawson 36 yard field goal ,24,31,2016_12_SF_MIA
+1,12:08,Rams,Tavon Austin 24 yard pass from Jared Goff (Greg Zuerlein kick),7,0,2016_12_LA_NO
+1,2:45,Saints,Brandon Coleman 3 yard pass from Drew Brees (Wil Lutz kick),7,7,2016_12_LA_NO
+2,14:43,Rams,Kenny Britt 6 yard pass from Jared Goff (Greg Zuerlein kick),14,7,2016_12_LA_NO
+2,9:38,Saints,Mark Ingram 10 yard rush (Wil Lutz kick),14,14,2016_12_LA_NO
+2,7:46,Saints,Drew Brees 1 yard rush (Wil Lutz kick),14,21,2016_12_LA_NO
+2,2:24,Saints,Michael Thomas 6 yard pass from Drew Brees (Wil Lutz kick),14,28,2016_12_LA_NO
+2,0:55,Rams,Lance Kendricks 15 yard pass from Jared Goff (Greg Zuerlein kick),21,28,2016_12_LA_NO
+3,12:58,Saints,Mark Ingram 21 yard pass from Drew Brees (Wil Lutz kick),21,35,2016_12_LA_NO
+3,3:42,Saints,Michael Thomas 21 yard pass from Drew Brees (Wil Lutz kick),21,42,2016_12_LA_NO
+4,10:15,Saints,Tim Hightower 50 yard pass from Willie Snead (Wil Lutz kick),21,49,2016_12_LA_NO
+1,7:34,Buccaneers,Mike Evans 3 yard pass from Jameis Winston (Roberto Aguayo kick),0,7,2016_12_SEA_TB
+1,2:53,Buccaneers,Mike Evans 23 yard pass from Jameis Winston (Roberto Aguayo kick),0,14,2016_12_SEA_TB
+2,13:23,Seahawks,"Safety, Luke Stocker penalty in end zone ",2,14,2016_12_SEA_TB
+2,10:39,Seahawks,Stephen Hauschka 43 yard field goal ,5,14,2016_12_SEA_TB
+1,10:29,Jets,Nick Folk 51 yard field goal ,0,3,2016_12_NE_NYJ
+2,14:56,Jets,Brandon Marshall 1 yard pass from Ryan Fitzpatrick (Nick Folk kick),0,10,2016_12_NE_NYJ
+2,10:45,Patriots,Stephen Gostkowski 28 yard field goal ,3,10,2016_12_NE_NYJ
+2,6:29,Patriots,Malcolm Mitchell 4 yard pass from Tom Brady (Stephen Gostkowski kick),10,10,2016_12_NE_NYJ
+3,7:34,Patriots,Stephen Gostkowski 29 yard field goal ,13,10,2016_12_NE_NYJ
+4,10:17,Jets,Quincy Enunwa 22 yard pass from Ryan Fitzpatrick (Nick Folk kick),13,17,2016_12_NE_NYJ
+4,7:02,Patriots,Stephen Gostkowski 41 yard field goal ,16,17,2016_12_NE_NYJ
+4,1:56,Patriots,Malcolm Mitchell 8 yard pass from Tom Brady ,22,17,2016_12_NE_NYJ
+1,4:48,Raiders,Seth Roberts 2 yard pass from Derek Carr (Sebastian Janikowski kick),0,7,2016_12_CAR_OAK
+1,3:10,Panthers,Cam Newton 3 yard rush (Graham Gano kick),7,7,2016_12_CAR_OAK
+2,12:48,Raiders,Latavius Murray 4 yard rush (Sebastian Janikowski kick),7,14,2016_12_CAR_OAK
+2,6:49,Raiders,Sebastian Janikowski 23 yard field goal ,7,17,2016_12_CAR_OAK
+2,0:59,Raiders,Khalil Mack 6 yard interception return (Sebastian Janikowski kick),7,24,2016_12_CAR_OAK
+3,10:33,Panthers,Jonathan Stewart 1 yard rush (Graham Gano kick failed),13,24,2016_12_CAR_OAK
+3,7:43,Panthers,Ted Ginn Jr. 88 yard pass from Cam Newton ,19,24,2016_12_CAR_OAK
+3,1:46,Panthers,Jonathan Stewart 3 yard rush (pass failed),25,24,2016_12_CAR_OAK
+4,13:26,Panthers,Kelvin Benjamin 44 yard pass from Cam Newton (Graham Gano kick),32,24,2016_12_CAR_OAK
+4,8:37,Raiders,Clive Walford 12 yard pass from Derek Carr (Seth Roberts pass from Derek Carr),32,32,2016_12_CAR_OAK
+4,1:45,Raiders,Sebastian Janikowski 23 yard field goal ,32,35,2016_12_CAR_OAK
+2,6:16,Chiefs,"Safety, Russell Okung tackle in end zone ",2,0,2016_12_KC_DEN
+2,6:04,Chiefs,Tyreek Hill 86 yard kickoff return (Cairo Santos kick),9,0,2016_12_KC_DEN
+2,1:47,Broncos,Brandon McManus 33 yard field goal ,9,3,2016_12_KC_DEN
+3,7:37,Broncos,Jordan Taylor 6 yard pass from Trevor Siemian (Brandon McManus kick),9,10,2016_12_KC_DEN
+3,0:30,Chiefs,Tyreek Hill 3 yard rush (Cairo Santos kick),16,10,2016_12_KC_DEN
+4,7:47,Broncos,Emmanuel Sanders 35 yard pass from Trevor Siemian (Brandon McManus kick),16,17,2016_12_KC_DEN
+4,3:00,Broncos,Bennie Fowler 76 yard pass from Trevor Siemian (Brandon McManus kick),16,24,2016_12_KC_DEN
+4,0:12,Chiefs,Tyreek Hill 3 yard pass from Alex Smith (Demetrius Harris pass from Alex Smith),24,24,2016_12_KC_DEN
+OT,8:51,Broncos,Brandon McManus 44 yard field goal ,24,27,2016_12_KC_DEN
+OT,4:19,Chiefs,Cairo Santos 37 yard field goal ,27,27,2016_12_KC_DEN
+OT,0:02,Chiefs,Cairo Santos 34 yard field goal ,30,27,2016_12_KC_DEN
+1,9:51,Packers,Davante Adams 12 yard pass from Aaron Rodgers (Mason Crosby kick),7,0,2016_12_GB_PHI
+1,3:40,Eagles,Carson Wentz 1 yard rush (Caleb Sturgis kick),7,7,2016_12_GB_PHI
+2,14:53,Packers,Davante Adams 20 yard pass from Aaron Rodgers (Mason Crosby kick),14,7,2016_12_GB_PHI
+2,0:25,Eagles,Caleb Sturgis 48 yard field goal ,14,10,2016_12_GB_PHI
+3,8:48,Packers,Mason Crosby 33 yard field goal ,17,10,2016_12_GB_PHI
+3,5:21,Eagles,Caleb Sturgis 50 yard field goal ,17,13,2016_12_GB_PHI
+4,13:53,Packers,Aaron Ripkowski 1 yard rush (Mason Crosby kick),24,13,2016_12_GB_PHI
+4,1:57,Packers,Mason Crosby 32 yard field goal ,27,13,2016_12_GB_PHI
+1,2:28,Vikings,Kai Forbath 48 yard field goal ,0,3,2016_13_DAL_MIN
+2,5:29,Cowboys,Ezekiel Elliott 1 yard rush (Dan Bailey kick),7,3,2016_13_DAL_MIN
+3,2:10,Vikings,Kai Forbath 36 yard field goal ,7,6,2016_13_DAL_MIN
+4,14:11,Vikings,Kai Forbath 33 yard field goal ,7,9,2016_13_DAL_MIN
+4,10:22,Cowboys,Dez Bryant 8 yard pass from Dak Prescott (Dan Bailey kick),14,9,2016_13_DAL_MIN
+4,4:15,Cowboys,Dan Bailey 39 yard field goal ,17,9,2016_13_DAL_MIN
+4,0:25,Vikings,Jerick McKinnon 3 yard pass from Sam Bradford (pass failed),17,15,2016_13_DAL_MIN
+1,10:02,Falcons,Devonta Freeman 1 yard rush (Matt Bryant kick),0,7,2016_13_KC_ATL
+1,8:00,Chiefs,Spencer Ware 3 yard rush (Cairo Santos kick failed),6,7,2016_13_KC_ATL
+1,5:11,Falcons,Matt Bryant 22 yard field goal ,6,10,2016_13_KC_ATL
+2,13:25,Falcons,Matt Bryant 22 yard field goal ,6,13,2016_13_KC_ATL
+2,7:05,Chiefs,Spencer Ware 3 yard pass from Alex Smith (Cairo Santos kick),13,13,2016_13_KC_ATL
+2,0:37,Chiefs,Eric Berry 37 yard interception return (Cairo Santos kick),20,13,2016_13_KC_ATL
+2,0:00,Falcons,Matt Bryant 59 yard field goal ,20,16,2016_13_KC_ATL
+3,12:52,Chiefs,Albert Wilson 55 yard rush (Cairo Santos kick),27,16,2016_13_KC_ATL
+4,11:57,Falcons,Devonta Freeman 1 yard rush (pass failed),27,22,2016_13_KC_ATL
+4,4:32,Falcons,Aldrick Robinson 5 yard pass from Matt Ryan (pass failed),27,28,2016_13_KC_ATL
+4,4:32,Chiefs,Eric Berry defensive extra point return ,29,28,2016_13_KC_ATL
+1,10:57,Ravens,Terrance West 3 yard pass from Joe Flacco (Justin Tucker kick),0,7,2016_13_MIA_BAL
+1,3:17,Ravens,Dennis Pitta 13 yard pass from Joe Flacco (Justin Tucker kick),0,14,2016_13_MIA_BAL
+2,2:10,Ravens,Dennis Pitta 9 yard pass from Joe Flacco (Justin Tucker kick),0,21,2016_13_MIA_BAL
+2,0:00,Ravens,Justin Tucker 55 yard field goal ,0,24,2016_13_MIA_BAL
+4,14:42,Dolphins,DeVante Parker 8 yard pass from Ryan Tannehill (pass failed),6,24,2016_13_MIA_BAL
+4,12:49,Ravens,Breshad Perriman 53 yard pass from Joe Flacco (Justin Tucker kick),6,31,2016_13_MIA_BAL
+4,5:55,Ravens,Terrance West 9 yard rush (Justin Tucker kick),6,38,2016_13_MIA_BAL
+2,6:55,49ers,Phil Dawson 31 yard field goal ,3,0,2016_13_SF_CHI
+2,1:56,49ers,Phil Dawson 28 yard field goal ,6,0,2016_13_SF_CHI
+2,0:31,Bears,Jordan Howard 1 yard rush (Connor Barth kick),6,7,2016_13_SF_CHI
+3,9:32,Bears,Jordan Howard 2 yard rush (Connor Barth kick),6,14,2016_13_SF_CHI
+3,6:19,Bears,Jordan Howard 5 yard rush (Connor Barth kick),6,21,2016_13_SF_CHI
+4,12:55,Bears,Connor Barth 45 yard field goal ,6,24,2016_13_SF_CHI
+4,1:55,Bears,"Safety, Leonard Floyd blaine Gabbert sack in end zone ",6,26,2016_13_SF_CHI
+1,10:22,Bengals,Mike Nugent 32 yard field goal ,0,3,2016_13_PHI_CIN
+1,1:32,Bengals,Jeremy Hill 2 yard rush (Mike Nugent kick),0,10,2016_13_PHI_CIN
+2,6:23,Bengals,Mike Nugent 33 yard field goal ,0,13,2016_13_PHI_CIN
+2,0:07,Bengals,Tyler Eifert 13 yard pass from Andy Dalton (Mike Nugent kick failed),0,19,2016_13_PHI_CIN
+3,11:21,Bengals,Brandon LaFell 8 yard pass from Andy Dalton (Mike Nugent kick),0,26,2016_13_PHI_CIN
+3,4:07,Bengals,Mike Nugent 26 yard field goal ,0,29,2016_13_PHI_CIN
+3,2:30,Eagles,Zach Ertz 13 yard pass from Carson Wentz (Caleb Sturgis kick),7,29,2016_13_PHI_CIN
+4,6:53,Eagles,Darren Sproles 2 yard rush (Caleb Sturgis kick),14,29,2016_13_PHI_CIN
+4,2:50,Bengals,Mike Nugent 38 yard field goal ,14,32,2016_13_PHI_CIN
+2,8:02,Packers,Randall Cobb 9 yard pass from Aaron Rodgers (Mason Crosby kick),0,7,2016_13_HOU_GB
+3,7:32,Texans,Ryan Griffin 6 yard pass from Brock Osweiler (Nick Novak kick),7,7,2016_13_HOU_GB
+4,12:42,Packers,Jordy Nelson 32 yard pass from Aaron Rodgers (Mason Crosby kick),7,14,2016_13_HOU_GB
+4,4:11,Packers,Aaron Ripkowski 3 yard rush (Mason Crosby kick),7,21,2016_13_HOU_GB
+4,1:51,Texans,DeAndre Hopkins 44 yard pass from Brock Osweiler (Nick Novak kick failed),13,21,2016_13_HOU_GB
+2,11:01,Jaguars,Jason Myers 47 yard field goal ,0,3,2016_13_DEN_JAX
+2,6:54,Broncos,Devontae Booker 6 yard rush (Brandon McManus kick),7,3,2016_13_DEN_JAX
+2,0:01,Broncos,Brandon McManus 32 yard field goal ,10,3,2016_13_DEN_JAX
+3,7:34,Broncos,Bradley Roby 51 yard interception return (Brandon McManus kick),17,3,2016_13_DEN_JAX
+4,14:03,Jaguars,Blake Bortles 22 yard rush (Jason Myers kick),17,10,2016_13_DEN_JAX
+4,0:29,Broncos,Brandon McManus 41 yard field goal ,20,10,2016_13_DEN_JAX
+1,10:38,Patriots,LeGarrette Blount 43 yard rush (Stephen Gostkowski kick),0,7,2016_13_LA_NE
+2,13:04,Patriots,Chris Hogan 14 yard pass from Tom Brady (Stephen Gostkowski kick),0,14,2016_13_LA_NE
+2,0:11,Patriots,Stephen Gostkowski 28 yard field goal ,0,17,2016_13_LA_NE
+3,7:50,Rams,Greg Zuerlein 44 yard field goal ,3,17,2016_13_LA_NE
+3,5:08,Patriots,Stephen Gostkowski 48 yard field goal ,3,20,2016_13_LA_NE
+3,3:06,Patriots,Stephen Gostkowski 45 yard field goal ,3,23,2016_13_LA_NE
+4,10:48,Patriots,Stephen Gostkowski 45 yard field goal ,3,26,2016_13_LA_NE
+4,1:15,Rams,Kenny Britt 1 yard pass from Jared Goff (Greg Zuerlein kick),10,26,2016_13_LA_NE
+1,8:14,Lions,Matt Prater 27 yard field goal ,3,0,2016_13_DET_NO
+2,13:03,Lions,Theo Riddick 1 yard pass from Matthew Stafford (Matt Prater kick),10,0,2016_13_DET_NO
+2,5:05,Saints,Wil Lutz 40 yard field goal ,10,3,2016_13_DET_NO
+2,0:56,Lions,Matt Prater 29 yard field goal ,13,3,2016_13_DET_NO
+2,0:00,Saints,Wil Lutz 32 yard field goal ,13,6,2016_13_DET_NO
+3,8:57,Lions,Matt Prater 32 yard field goal ,16,6,2016_13_DET_NO
+3,1:42,Lions,Matt Prater 27 yard field goal ,19,6,2016_13_DET_NO
+4,13:32,Saints,John Kuhn 1 yard rush (Wil Lutz kick),19,13,2016_13_DET_NO
+4,11:38,Lions,Golden Tate 66 yard pass from Matthew Stafford (pass failed),25,13,2016_13_DET_NO
+4,7:10,Lions,Matt Prater 52 yard field goal ,28,13,2016_13_DET_NO
+1,8:02,Bills,Dan Carpenter 27 yard field goal ,3,0,2016_13_BUF_OAK
+1,4:35,Raiders,Sebastian Janikowski 47 yard field goal ,3,3,2016_13_BUF_OAK
+2,13:28,Bills,Mike Gillislee 1 yard rush (Dan Carpenter kick),10,3,2016_13_BUF_OAK
+2,2:56,Raiders,Sebastian Janikowski 41 yard field goal ,10,6,2016_13_BUF_OAK
+2,0:00,Raiders,Sebastian Janikowski 47 yard field goal ,10,9,2016_13_BUF_OAK
+3,14:03,Bills,Tyrod Taylor 12 yard rush (Dan Carpenter kick),17,9,2016_13_BUF_OAK
+3,9:01,Bills,Mike Gillislee 2 yard rush (Dan Carpenter kick),24,9,2016_13_BUF_OAK
+3,5:17,Raiders,Michael Crabtree 3 yard pass from Derek Carr (Sebastian Janikowski kick),24,16,2016_13_BUF_OAK
+3,0:57,Raiders,Latavius Murray 1 yard rush (Sebastian Janikowski kick),24,23,2016_13_BUF_OAK
+4,14:08,Raiders,Amari Cooper 37 yard pass from Derek Carr (Sebastian Janikowski kick),24,30,2016_13_BUF_OAK
+4,8:34,Raiders,Latavius Murray 3 yard rush (Seth Roberts pass from Derek Carr),24,38,2016_13_BUF_OAK
+1,6:43,Cardinals,David Johnson 1 yard rush (Chandler Catanzaro kick),0,7,2016_13_WAS_ARI
+2,9:48,Redskins,Dustin Hopkins 47 yard field goal ,3,7,2016_13_WAS_ARI
+2,1:52,Redskins,Dustin Hopkins 20 yard field goal ,6,7,2016_13_WAS_ARI
+2,0:07,Cardinals,Chandler Catanzaro 28 yard field goal ,6,10,2016_13_WAS_ARI
+3,12:36,Redskins,Kirk Cousins 1 yard rush (Dustin Hopkins kick),13,10,2016_13_WAS_ARI
+3,4:10,Cardinals,Michael Floyd 6 yard pass from Carson Palmer (Chandler Catanzaro kick),13,17,2016_13_WAS_ARI
+3,1:06,Redskins,Jamison Crowder 26 yard pass from Kirk Cousins (Dustin Hopkins kick),20,17,2016_13_WAS_ARI
+4,11:09,Cardinals,David Johnson 25 yard pass from Carson Palmer (Chandler Catanzaro kick),20,24,2016_13_WAS_ARI
+4,6:01,Redskins,Dustin Hopkins 53 yard field goal ,23,24,2016_13_WAS_ARI
+4,1:56,Cardinals,JJ Nelson 42 yard pass from Carson Palmer (Chandler Catanzaro kick),23,31,2016_13_WAS_ARI
+1,3:04,Steelers,"Safety, Ereck Flowers penalty in end zone ",0,2,2016_13_NYG_PIT
+1,0:04,Steelers,Randy Bullock 44 yard field goal ,0,5,2016_13_NYG_PIT
+2,7:10,Steelers,Antonio Brown 22 yard pass from Ben Roethlisberger (pass failed),0,11,2016_13_NYG_PIT
+2,0:24,Steelers,Randy Bullock 34 yard field goal ,0,14,2016_13_NYG_PIT
+3,6:30,Giants,Rashad Jennings 13 yard pass from Eli Manning (Robbie Gould kick),7,14,2016_13_NYG_PIT
+3,3:09,Steelers,Ladarius Green 20 yard pass from Ben Roethlisberger (Randy Bullock kick),7,21,2016_13_NYG_PIT
+4,1:39,Steelers,Randy Bullock 38 yard field goal ,7,24,2016_13_NYG_PIT
+4,0:26,Giants,Sterling Shepard 1 yard pass from Eli Manning (Robbie Gould kick),14,24,2016_13_NYG_PIT
+1,10:53,Chargers,Dontrelle Inman 35 yard pass from Philip Rivers (Josh Lambo kick),0,7,2016_13_TB_SD
+1,1:08,Buccaneers,Doug Martin 2 yard rush (Roberto Aguayo kick),7,7,2016_13_TB_SD
+2,10:04,Chargers,Melvin Gordon 2 yard rush (Josh Lambo kick),7,14,2016_13_TB_SD
+3,8:25,Buccaneers,Roberto Aguayo 27 yard field goal ,10,14,2016_13_TB_SD
+3,4:25,Buccaneers,Lavonte David 15 yard interception return (Roberto Aguayo kick),17,14,2016_13_TB_SD
+3,1:33,Chargers,Tyrell Williams 40 yard pass from Philip Rivers (Josh Lambo kick),17,21,2016_13_TB_SD
+4,13:03,Buccaneers,Roberto Aguayo 35 yard field goal ,20,21,2016_13_TB_SD
+4,9:01,Buccaneers,Cameron Brate 12 yard pass from Jameis Winston (Mike Evans pass from Jameis Winston),28,21,2016_13_TB_SD
+1,13:23,Seahawks,Stephen Hauschka 23 yard field goal ,0,3,2016_13_CAR_SEA
+1,6:42,Seahawks,Thomas Rawls 8 yard rush (Stephen Hauschka kick),0,10,2016_13_CAR_SEA
+2,10:32,Panthers,Ted Ginn Jr. 55 yard pass from Cam Newton (Graham Gano kick),7,10,2016_13_CAR_SEA
+2,9:44,Seahawks,Thomas Rawls 45 yard rush (Stephen Hauschka kick),7,17,2016_13_CAR_SEA
+2,1:45,Seahawks,Stephen Hauschka 37 yard field goal ,7,20,2016_13_CAR_SEA
+2,0:07,Seahawks,Stephen Hauschka 31 yard field goal ,7,23,2016_13_CAR_SEA
+3,14:48,Seahawks,Tyler Lockett 75 yard rush (Stephen Hauschka kick),7,30,2016_13_CAR_SEA
+4,11:09,Seahawks,Jimmy Graham 1 yard pass from Russell Wilson (Stephen Hauschka kick),7,37,2016_13_CAR_SEA
+4,3:28,Seahawks,Stephen Hauschka 28 yard field goal ,7,40,2016_13_CAR_SEA
+1,10:23,Colts,Dwayne Allen 7 yard pass from Andrew Luck (Adam Vinatieri kick),7,0,2016_13_IND_NYJ
+1,7:45,Colts,Dwayne Allen 21 yard pass from Andrew Luck (Adam Vinatieri kick),14,0,2016_13_IND_NYJ
+2,10:31,Jets,Nick Folk 38 yard field goal ,14,3,2016_13_IND_NYJ
+2,8:16,Colts,Adam Vinatieri 53 yard field goal ,17,3,2016_13_IND_NYJ
+2,1:18,Colts,Dwayne Allen 23 yard pass from Andrew Luck (Adam Vinatieri kick),24,3,2016_13_IND_NYJ
+3,8:54,Colts,Donte Moncrief 3 yard pass from Andrew Luck (Adam Vinatieri kick),31,3,2016_13_IND_NYJ
+3,1:08,Colts,Adam Vinatieri 36 yard field goal ,34,3,2016_13_IND_NYJ
+4,14:54,Colts,Robert Turbin 5 yard rush (Adam Vinatieri kick),41,3,2016_13_IND_NYJ
+4,11:19,Jets,Robbie Chosen 40 yard pass from Bryce Petty (Nick Folk kick),41,10,2016_13_IND_NYJ
+1,11:34,Raiders,Sebastian Janikowski 44 yard field goal ,3,0,2016_14_OAK_KC
+2,14:51,Chiefs,Tyreek Hill 36 yard pass from Alex Smith (Cairo Santos kick),3,7,2016_14_OAK_KC
+2,8:34,Chiefs,Charcandrick West 3 yard rush (Cairo Santos kick),3,14,2016_14_OAK_KC
+2,6:25,Chiefs,Tyreek Hill 78 yard punt return (Cairo Santos kick),3,21,2016_14_OAK_KC
+2,0:14,Raiders,Latavius Murray 1 yard rush (Sebastian Janikowski kick),10,21,2016_14_OAK_KC
+3,13:09,Raiders,Sebastian Janikowski 33 yard field goal ,13,21,2016_14_OAK_KC
+1,6:00,Steelers,Le'Veon Bell 3 yard rush (Chris Boswell kick),7,0,2016_14_PIT_BUF
+2,12:00,Steelers,Le'Veon Bell 7 yard rush (Chris Boswell kick),14,0,2016_14_PIT_BUF
+2,7:07,Bills,Sammy Watkins 8 yard pass from Tyrod Taylor (Dan Carpenter kick),14,7,2016_14_PIT_BUF
+3,5:28,Steelers,Le'Veon Bell 5 yard rush (Chris Boswell kick),21,7,2016_14_PIT_BUF
+4,9:57,Steelers,Chris Boswell 37 yard field goal ,24,7,2016_14_PIT_BUF
+4,7:27,Bills,Charles Clay 40 yard pass from Tyrod Taylor (Dan Carpenter kick failed),24,13,2016_14_PIT_BUF
+4,3:38,Steelers,Chris Boswell 39 yard field goal ,27,13,2016_14_PIT_BUF
+4,1:25,Bills,LeSean McCoy 3 yard rush (Dan Carpenter kick),27,20,2016_14_PIT_BUF
+1,10:19,Panthers,Graham Gano 41 yard field goal ,0,3,2016_14_SD_CAR
+1,1:48,Panthers,Jonathan Stewart 1 yard rush (Graham Gano kick),0,10,2016_14_SD_CAR
+2,11:12,Panthers,Devin Funchess 6 yard pass from Cam Newton (Graham Gano kick),0,17,2016_14_SD_CAR
+2,5:23,Panthers,Graham Gano 44 yard field goal ,0,20,2016_14_SD_CAR
+2,3:49,Panthers,Graham Gano 45 yard field goal ,0,23,2016_14_SD_CAR
+2,1:03,Chargers,Hunter Henry 9 yard pass from Philip Rivers (Josh Lambo kick),7,23,2016_14_SD_CAR
+3,11:29,Panthers,Graham Gano 23 yard field goal ,7,26,2016_14_SD_CAR
+3,4:26,Chargers,Josh Lambo 32 yard field goal ,10,26,2016_14_SD_CAR
+3,0:30,Chargers,Dontrelle Inman 19 yard pass from Philip Rivers ,16,26,2016_14_SD_CAR
+4,10:09,Panthers,"Safety, Philip Rivers mario Addison sack in end zone ",16,28,2016_14_SD_CAR
+1,12:21,Bengals,Tyler Eifert 14 yard pass from Andy Dalton (Mike Nugent kick),7,0,2016_14_CIN_CLE
+1,6:27,Bengals,Jeremy Hill 1 yard rush (Mike Nugent kick failed),13,0,2016_14_CIN_CLE
+2,5:06,Bengals,Tyler Eifert 5 yard pass from Andy Dalton (Mike Nugent kick),20,0,2016_14_CIN_CLE
+3,8:11,Browns,Robert Griffin III 1 yard rush (Cody Parkey kick),20,7,2016_14_CIN_CLE
+4,14:14,Browns,Cody Parkey 30 yard field goal ,20,10,2016_14_CIN_CLE
+4,8:38,Bengals,Mike Nugent 44 yard field goal ,23,10,2016_14_CIN_CLE
+1,1:27,Bears,Connor Barth 38 yard field goal ,3,0,2016_14_CHI_DET
+2,4:17,Lions,Matt Prater 29 yard field goal ,3,3,2016_14_CHI_DET
+2,0:19,Lions,Anquan Boldin 16 yard pass from Matthew Stafford (Matt Prater kick),3,10,2016_14_CHI_DET
+3,5:35,Lions,Matt Prater 54 yard field goal ,3,13,2016_14_CHI_DET
+3,3:19,Bears,Cameron Meredith 31 yard pass from Matt Barkley (Connor Barth kick),10,13,2016_14_CHI_DET
+4,7:07,Bears,Cre'von LeBlanc 24 yard interception return (Connor Barth kick),17,13,2016_14_CHI_DET
+4,3:17,Lions,Matthew Stafford 7 yard rush (Matt Prater kick),17,20,2016_14_CHI_DET
+1,8:31,Colts,Adam Vinatieri 32 yard field goal ,0,3,2016_14_HOU_IND
+1,4:00,Texans,Nick Novak 21 yard field goal ,3,3,2016_14_HOU_IND
+2,2:26,Texans,Lamar Miller 2 yard rush (Nick Novak kick),10,3,2016_14_HOU_IND
+2,0:12,Texans,Nick Novak 52 yard field goal ,13,3,2016_14_HOU_IND
+3,12:46,Texans,Nick Novak 24 yard field goal ,16,3,2016_14_HOU_IND
+3,9:53,Colts,Frank Gore 18 yard pass from Andrew Luck (Adam Vinatieri kick),16,10,2016_14_HOU_IND
+4,11:53,Texans,Nick Novak 41 yard field goal ,19,10,2016_14_HOU_IND
+4,9:06,Colts,T.Y. Hilton 35 yard pass from Andrew Luck (Adam Vinatieri kick),19,17,2016_14_HOU_IND
+4,2:47,Texans,Nick Novak 34 yard field goal ,22,17,2016_14_HOU_IND
+1,12:20,Vikings,Kai Forbath 43 yard field goal ,3,0,2016_14_MIN_JAX
+1,7:53,Vikings,Kai Forbath 32 yard field goal ,6,0,2016_14_MIN_JAX
+2,13:07,Jaguars,Jason Myers 45 yard field goal ,6,3,2016_14_MIN_JAX
+2,10:49,Vikings,Kai Forbath 40 yard field goal ,9,3,2016_14_MIN_JAX
+2,6:18,Jaguars,Jason Myers 55 yard field goal ,9,6,2016_14_MIN_JAX
+2,0:09,Jaguars,Jason Myers 24 yard field goal ,9,9,2016_14_MIN_JAX
+3,8:29,Vikings,Kai Forbath 46 yard field goal ,12,9,2016_14_MIN_JAX
+3,3:50,Jaguars,Bryan Walters 14 yard pass from Blake Bortles (Jason Myers kick),12,16,2016_14_MIN_JAX
+4,14:13,Vikings,Matt Asiata 1 yard rush (Kai Forbath kick failed),18,16,2016_14_MIN_JAX
+4,2:13,Vikings,Kyle Rudolph 3 yard pass from Sam Bradford (Kai Forbath kick),25,16,2016_14_MIN_JAX
+1,9:27,Dolphins,Kenny Stills 28 yard pass from Ryan Tannehill (Andrew Franks kick),0,7,2016_14_ARI_MIA
+1,8:00,Cardinals,JJ Nelson 56 yard rush (Chandler Catanzaro kick failed),6,7,2016_14_ARI_MIA
+2,11:41,Dolphins,Dion Sims 7 yard pass from Ryan Tannehill (Andrew Franks kick),6,14,2016_14_ARI_MIA
+2,1:18,Cardinals,Chandler Catanzaro 56 yard field goal ,9,14,2016_14_ARI_MIA
+3,11:17,Dolphins,Damien Williams 3 yard pass from Ryan Tannehill (Andrew Franks kick),9,21,2016_14_ARI_MIA
+4,7:05,Cardinals,Brittan Golden 9 yard pass from Carson Palmer (Chandler Catanzaro kick failed),15,21,2016_14_ARI_MIA
+4,7:05,Dolphins,Walt Aikens defensive extra point return ,15,23,2016_14_ARI_MIA
+4,3:01,Cardinals,JJ Nelson 8 yard pass from Carson Palmer (David Johnson pass from Carson Palmer),23,23,2016_14_ARI_MIA
+4,0:00,Dolphins,Andrew Franks 21 yard field goal ,23,26,2016_14_ARI_MIA
+1,9:46,Eagles,Caleb Sturgis 45 yard field goal ,0,3,2016_14_WAS_PHI
+2,10:29,Eagles,Caleb Sturgis 36 yard field goal ,0,6,2016_14_WAS_PHI
+2,4:11,Redskins,Robert Kelley 22 yard rush (Dustin Hopkins kick),7,6,2016_14_WAS_PHI
+2,0:28,Eagles,Darren Sproles 4 yard pass from Carson Wentz (Caleb Sturgis kick),7,13,2016_14_WAS_PHI
+3,9:14,Redskins,DeSean Jackson 80 yard pass from Kirk Cousins (Dustin Hopkins kick),14,13,2016_14_WAS_PHI
+3,0:07,Redskins,Pierre Garcon 15 yard pass from Kirk Cousins (Dustin Hopkins kick),21,13,2016_14_WAS_PHI
+4,13:11,Eagles,Leodis McKelvin 29 yard interception return (pass failed),21,19,2016_14_WAS_PHI
+4,4:59,Eagles,Caleb Sturgis 41 yard field goal ,21,22,2016_14_WAS_PHI
+4,1:53,Redskins,Chris Thompson 25 yard rush (pass failed),27,22,2016_14_WAS_PHI
+1,7:29,Titans,DeMarco Murray 1 yard rush (Ryan Succop kick),0,7,2016_14_DEN_TEN
+1,5:48,Titans,Ryan Succop 53 yard field goal ,0,10,2016_14_DEN_TEN
+2,1:27,Titans,Ryan Succop 41 yard field goal ,0,13,2016_14_DEN_TEN
+4,9:58,Broncos,Emmanuel Sanders 3 yard pass from Trevor Siemian (Brandon McManus kick),7,13,2016_14_DEN_TEN
+4,4:28,Broncos,Brandon McManus 34 yard field goal ,10,13,2016_14_DEN_TEN
+1,13:57,49ers,Carlos Hyde 7 yard pass from Colin Kaepernick (Phil Dawson kick),0,7,2016_14_NYJ_SF
+1,10:45,49ers,Shaun Draughn 4 yard rush (Phil Dawson kick),0,14,2016_14_NYJ_SF
+2,7:28,Jets,Nick Folk 36 yard field goal ,3,14,2016_14_NYJ_SF
+2,5:45,49ers,Phil Dawson 47 yard field goal ,3,17,2016_14_NYJ_SF
+3,6:28,Jets,Nick Folk 30 yard field goal ,6,17,2016_14_NYJ_SF
+4,5:04,Jets,Bilal Powell 5 yard rush (Bryce Petty run),14,17,2016_14_NYJ_SF
+4,0:38,Jets,Nick Folk 50 yard field goal ,17,17,2016_14_NYJ_SF
+OT,8:35,Jets,Bilal Powell 19 yard rush ,23,17,2016_14_NYJ_SF
+1,13:30,Packers,Davante Adams 66 yard pass from Aaron Rodgers (Mason Crosby kick),0,7,2016_14_SEA_GB
+1,6:16,Seahawks,Stephen Hauschka 28 yard field goal ,3,7,2016_14_SEA_GB
+2,9:36,Packers,Ty Montgomery 1 yard rush (Mason Crosby kick),3,14,2016_14_SEA_GB
+2,5:15,Packers,Jordy Nelson 9 yard pass from Aaron Rodgers (Mason Crosby kick),3,21,2016_14_SEA_GB
+3,4:24,Packers,Jordy Nelson 3 yard pass from Aaron Rodgers (Mason Crosby kick),3,28,2016_14_SEA_GB
+4,10:31,Packers,Mason Crosby 38 yard field goal ,3,31,2016_14_SEA_GB
+4,8:21,Seahawks,Tanner McEvoy 21 yard pass from Russell Wilson (Stephen Hauschka kick),10,31,2016_14_SEA_GB
+4,5:43,Packers,Jeff Janis 19 yard rush (Mason Crosby kick),10,38,2016_14_SEA_GB
+1,14:50,Falcons,Justin Hardy 3 yard pass from Matt Ryan (Matt Bryant kick),7,0,2016_14_ATL_LA
+2,14:53,Falcons,Tevin Coleman 6 yard pass from Matt Ryan (Matt Bryant kick),14,0,2016_14_ATL_LA
+2,8:54,Falcons,Deion Jones 33 yard interception return (Matt Bryant kick),21,0,2016_14_ATL_LA
+3,13:18,Falcons,Taylor Gabriel 64 yard pass from Matt Ryan (Matt Bryant kick),28,0,2016_14_ATL_LA
+3,3:56,Falcons,Tevin Coleman 6 yard rush (Matt Bryant kick),35,0,2016_14_ATL_LA
+3,2:50,Falcons,Vic Beasley 21 yard defensive fumble return (Matt Bryant kick),42,0,2016_14_ATL_LA
+4,14:57,Rams,Todd Gurley 3 yard rush (Greg Zuerlein kick),42,7,2016_14_ATL_LA
+4,2:44,Rams,Jared Goff 2 yard rush (Greg Zuerlein kick),42,14,2016_14_ATL_LA
+1,8:05,Buccaneers,Roberto Aguayo 41 yard field goal ,0,3,2016_14_NO_TB
+2,14:50,Buccaneers,Doug Martin 1 yard rush (Roberto Aguayo kick),0,10,2016_14_NO_TB
+2,8:26,Buccaneers,Roberto Aguayo 39 yard field goal ,0,13,2016_14_NO_TB
+2,5:29,Saints,Wil Lutz 42 yard field goal ,3,13,2016_14_NO_TB
+2,5:20,Saints,"Safety, Doug Martin tackled in end zone by Paul Kruger ",5,13,2016_14_NO_TB
+2,0:00,Saints,Wil Lutz 34 yard field goal ,8,13,2016_14_NO_TB
+3,3:35,Saints,Wil Lutz 22 yard field goal ,11,13,2016_14_NO_TB
+4,12:46,Buccaneers,Roberto Aguayo 26 yard field goal ,11,16,2016_14_NO_TB
+1,4:44,Cowboys,Terrance Williams 31 yard pass from Dak Prescott (Dan Bailey kick),7,0,2016_14_DAL_NYG
+3,5:50,Giants,Robbie Gould 39 yard field goal ,7,3,2016_14_DAL_NYG
+3,1:07,Giants,Odell Beckham Jr. 61 yard pass from Eli Manning (Robbie Gould kick),7,10,2016_14_DAL_NYG
+1,10:47,Patriots,"Safety, Kenneth Dixon tackled in end zone by Malcom Brown ",0,2,2016_14_BAL_NE
+1,1:04,Patriots,LeGarrette Blount 1 yard rush (Stephen Gostkowski kick),0,9,2016_14_BAL_NE
+2,9:28,Patriots,Malcolm Mitchell 6 yard pass from Tom Brady (Stephen Gostkowski kick),0,16,2016_14_BAL_NE
+2,0:11,Ravens,Justin Tucker 50 yard field goal ,3,16,2016_14_BAL_NE
+3,8:45,Patriots,Martellus Bennett 19 yard pass from Tom Brady (Stephen Gostkowski kick),3,23,2016_14_BAL_NE
+3,6:50,Ravens,Darren Waller 3 yard pass from Joe Flacco (Justin Tucker kick),10,23,2016_14_BAL_NE
+3,5:24,Ravens,Kenneth Dixon 8 yard pass from Joe Flacco (Justin Tucker kick),17,23,2016_14_BAL_NE
+4,6:35,Ravens,Justin Tucker 38 yard field goal ,20,23,2016_14_BAL_NE
+4,6:18,Patriots,Chris Hogan 79 yard pass from Tom Brady (Stephen Gostkowski kick),20,30,2016_14_BAL_NE
+4,2:03,Ravens,Justin Tucker 37 yard field goal ,23,30,2016_14_BAL_NE
+2,12:21,Seahawks,Luke Willson 8 yard pass from Russell Wilson (Stephen Hauschka kick),0,7,2016_15_LA_SEA
+2,8:45,Seahawks,Stephen Hauschka 48 yard field goal ,0,10,2016_15_LA_SEA
+2,0:55,Rams,Greg Zuerlein 36 yard field goal ,3,10,2016_15_LA_SEA
+3,3:12,Seahawks,Doug Baldwin 1 yard pass from Russell Wilson (Stephen Hauschka kick),3,17,2016_15_LA_SEA
+4,14:49,Seahawks,Tyler Lockett 57 yard pass from Russell Wilson (Stephen Hauschka kick),3,24,2016_15_LA_SEA
+1,11:32,Jets,Robbie Chosen 40 yard pass from Bryce Petty (Nick Folk kick),0,7,2016_15_MIA_NYJ
+2,10:57,Dolphins,Dion Sims 1 yard pass from Matt Moore (Andrew Franks kick failed),6,7,2016_15_MIA_NYJ
+2,1:58,Dolphins,Kenny Stills 52 yard pass from Matt Moore (Andrew Franks kick),13,7,2016_15_MIA_NYJ
+2,0:18,Jets,Nick Folk 48 yard field goal ,13,10,2016_15_MIA_NYJ
+3,10:30,Dolphins,Walt Aikens 11 yard blocked punt return (Andrew Franks kick),20,10,2016_15_MIA_NYJ
+3,7:43,Dolphins,Dion Sims 1 yard pass from Matt Moore (Andrew Franks kick),27,10,2016_15_MIA_NYJ
+3,6:26,Dolphins,Jarvis Landry 66 yard pass from Matt Moore (Andrew Franks kick),34,10,2016_15_MIA_NYJ
+4,5:43,Jets,Nick Folk 36 yard field goal ,34,13,2016_15_MIA_NYJ
+1,11:38,Ravens,Kamar Aiken 5 yard pass from Joe Flacco (Justin Tucker kick),0,7,2016_15_PHI_BAL
+1,4:42,Eagles,Caleb Sturgis 45 yard field goal ,3,7,2016_15_PHI_BAL
+1,1:55,Ravens,Justin Tucker 53 yard field goal ,3,10,2016_15_PHI_BAL
+2,14:38,Eagles,Ryan Mathews 4 yard rush (Ryan Mathews run),11,10,2016_15_PHI_BAL
+2,9:21,Ravens,Justin Tucker 47 yard field goal ,11,13,2016_15_PHI_BAL
+2,1:39,Eagles,Caleb Sturgis 34 yard field goal ,14,13,2016_15_PHI_BAL
+2,0:09,Ravens,Steve Smith Sr. 34 yard pass from Joe Flacco (Justin Tucker kick),14,20,2016_15_PHI_BAL
+4,14:48,Eagles,Caleb Sturgis 27 yard field goal ,17,20,2016_15_PHI_BAL
+4,11:06,Ravens,Kenneth Dixon 16 yard rush (Justin Tucker kick),17,27,2016_15_PHI_BAL
+4,2:22,Eagles,Caleb Sturgis 29 yard field goal ,20,27,2016_15_PHI_BAL
+4,0:04,Eagles,Carson Wentz 4 yard rush (pass failed),26,27,2016_15_PHI_BAL
+1,10:14,Bills,Dan Carpenter 21 yard field goal ,0,3,2016_15_CLE_BUF
+1,3:50,Browns,Cody Parkey 35 yard field goal ,3,3,2016_15_CLE_BUF
+1,0:00,Bills,Mike Gillislee 3 yard rush (Dan Carpenter kick),3,10,2016_15_CLE_BUF
+2,0:34,Bills,Charles Clay 19 yard pass from Tyrod Taylor (Dan Carpenter kick),3,17,2016_15_CLE_BUF
+3,8:58,Browns,Robert Griffin III 18 yard rush (Cody Parkey kick),10,17,2016_15_CLE_BUF
+3,5:50,Bills,LeSean McCoy 3 yard rush (Dan Carpenter kick),10,24,2016_15_CLE_BUF
+3,1:32,Browns,Cody Parkey 40 yard field goal ,13,24,2016_15_CLE_BUF
+4,12:38,Bills,LeSean McCoy 8 yard rush (Dan Carpenter kick failed),13,30,2016_15_CLE_BUF
+4,7:21,Bills,Dan Carpenter 34 yard field goal ,13,33,2016_15_CLE_BUF
+1,9:57,Packers,Ty Montgomery 4 yard rush (Mason Crosby kick),7,0,2016_15_GB_CHI
+2,6:00,Bears,Connor Barth 26 yard field goal ,7,3,2016_15_GB_CHI
+2,2:16,Bears,Josh Bellamy 10 yard pass from Matt Barkley (Connor Barth kick),7,10,2016_15_GB_CHI
+2,0:32,Packers,Mason Crosby 34 yard field goal ,10,10,2016_15_GB_CHI
+3,11:10,Packers,Mason Crosby 18 yard field goal ,13,10,2016_15_GB_CHI
+3,4:53,Packers,Ty Montgomery 3 yard rush (Mason Crosby kick),20,10,2016_15_GB_CHI
+3,1:03,Packers,Christine Michael 42 yard rush (Mason Crosby kick),27,10,2016_15_GB_CHI
+4,13:27,Bears,Alshon Jeffery 8 yard pass from Matt Barkley (Connor Barth kick),27,17,2016_15_GB_CHI
+4,7:34,Bears,Jordan Howard 9 yard rush (Connor Barth kick),27,24,2016_15_GB_CHI
+4,1:19,Bears,Connor Barth 22 yard field goal ,27,27,2016_15_GB_CHI
+4,0:00,Packers,Mason Crosby 32 yard field goal ,30,27,2016_15_GB_CHI
+1,7:39,Bengals,Randy Bullock 23 yard field goal ,0,3,2016_15_PIT_CIN
+1,3:42,Steelers,Chris Boswell 45 yard field goal ,3,3,2016_15_PIT_CIN
+1,0:00,Bengals,Andy Dalton 1 yard rush (Randy Bullock kick),3,10,2016_15_PIT_CIN
+2,9:02,Bengals,Jeremy Hill 4 yard rush (Randy Bullock kick),3,17,2016_15_PIT_CIN
+2,5:25,Steelers,Chris Boswell 49 yard field goal ,6,17,2016_15_PIT_CIN
+2,2:51,Bengals,Randy Bullock 22 yard field goal ,6,20,2016_15_PIT_CIN
+2,0:06,Steelers,Chris Boswell 49 yard field goal ,9,20,2016_15_PIT_CIN
+3,10:38,Steelers,Chris Boswell 40 yard field goal ,12,20,2016_15_PIT_CIN
+3,2:05,Steelers,Chris Boswell 49 yard field goal ,15,20,2016_15_PIT_CIN
+4,12:25,Steelers,Chris Boswell 30 yard field goal ,18,20,2016_15_PIT_CIN
+4,7:29,Steelers,Eli Rogers 24 yard pass from Ben Roethlisberger (pass failed),24,20,2016_15_PIT_CIN
+2,13:36,Jaguars,Jason Myers 26 yard field goal ,3,0,2016_15_JAX_HOU
+2,11:16,Jaguars,Jason Myers 50 yard field goal ,6,0,2016_15_JAX_HOU
+2,8:32,Jaguars,Blake Bortles 1 yard rush (Jason Myers kick),13,0,2016_15_JAX_HOU
+2,1:35,Texans,"Safety, Neal Sterling penalty in end zone ",13,2,2016_15_JAX_HOU
+2,0:49,Texans,Nick Novak 39 yard field goal ,13,5,2016_15_JAX_HOU
+3,7:02,Texans,Nick Novak 45 yard field goal ,13,8,2016_15_JAX_HOU
+3,6:50,Jaguars,Marqise Lee 100 yard kickoff return (Jason Myers kick),20,8,2016_15_JAX_HOU
+3,0:11,Texans,Nick Novak 43 yard field goal ,20,11,2016_15_JAX_HOU
+4,7:54,Texans,Nick Novak 27 yard field goal ,20,14,2016_15_JAX_HOU
+4,2:51,Texans,Lamar Miller 1 yard rush (Nick Novak kick),20,21,2016_15_JAX_HOU
+1,11:43,Chiefs,Tyreek Hill 68 yard rush (Cairo Santos kick),0,7,2016_15_TEN_KC
+1,4:24,Chiefs,Alex Smith 10 yard rush (Cairo Santos kick),0,14,2016_15_TEN_KC
+2,11:58,Titans,Derrick Henry 4 yard rush (Ryan Succop kick),7,14,2016_15_TEN_KC
+2,0:13,Chiefs,Cairo Santos 34 yard field goal ,7,17,2016_15_TEN_KC
+4,11:54,Titans,Ryan Succop 39 yard field goal ,10,17,2016_15_TEN_KC
+4,3:12,Titans,Derrick Henry 1 yard rush ,16,17,2016_15_TEN_KC
+4,0:00,Titans,Ryan Succop 53 yard field goal ,19,17,2016_15_TEN_KC
+1,9:01,Colts,Adam Vinatieri 48 yard field goal ,3,0,2016_15_IND_MIN
+1,2:22,Colts,Robert Turbin 1 yard rush (Adam Vinatieri kick),10,0,2016_15_IND_MIN
+2,7:16,Colts,Erik Swoope 27 yard pass from Andrew Luck (Adam Vinatieri kick),17,0,2016_15_IND_MIN
+2,0:33,Colts,Robert Turbin 6 yard rush (Adam Vinatieri kick),24,0,2016_15_IND_MIN
+2,0:00,Colts,Adam Vinatieri 50 yard field goal ,27,0,2016_15_IND_MIN
+3,3:51,Vikings,Kai Forbath 32 yard field goal ,27,3,2016_15_IND_MIN
+4,14:55,Colts,Phillip Dorsett 50 yard pass from Andrew Luck (Adam Vinatieri kick),34,3,2016_15_IND_MIN
+4,11:57,Vikings,Kai Forbath 51 yard field goal ,34,6,2016_15_IND_MIN
+1,9:23,Giants,Sterling Shepard 6 yard pass from Eli Manning (Robbie Gould kick),0,7,2016_15_DET_NYG
+2,14:02,Lions,Matt Prater 48 yard field goal ,3,7,2016_15_DET_NYG
+2,5:00,Giants,Robbie Gould 47 yard field goal ,3,10,2016_15_DET_NYG
+3,7:40,Lions,Matt Prater 33 yard field goal ,6,10,2016_15_DET_NYG
+4,5:47,Giants,Odell Beckham Jr. 4 yard pass from Eli Manning (Robbie Gould kick),6,17,2016_15_DET_NYG
+1,12:27,Cardinals,Kerwynn Williams 49 yard rush (Chandler Catanzaro kick),0,7,2016_15_NO_ARI
+1,5:27,Saints,Wil Lutz 37 yard field goal ,3,7,2016_15_NO_ARI
+1,1:33,Saints,Travaris Cadet 10 yard pass from Drew Brees (Wil Lutz kick),10,7,2016_15_NO_ARI
+2,7:08,Cardinals,Calais Campbell 53 yard defensive fumble return (Chandler Catanzaro kick failed),10,13,2016_15_NO_ARI
+2,6:11,Saints,Brandin Cooks 65 yard pass from Drew Brees (Wil Lutz kick),17,13,2016_15_NO_ARI
+2,1:51,Saints,Brandin Cooks 45 yard pass from Drew Brees (Wil Lutz kick),24,13,2016_15_NO_ARI
+2,0:40,Cardinals,JJ Nelson 10 yard pass from Carson Palmer (Chandler Catanzaro kick),24,20,2016_15_NO_ARI
+3,6:06,Saints,Wil Lutz 39 yard field goal ,27,20,2016_15_NO_ARI
+3,3:19,Cardinals,David Johnson 2 yard rush (Chandler Catanzaro kick),27,27,2016_15_NO_ARI
+4,12:59,Saints,Tim Hightower 3 yard rush (Wil Lutz kick),34,27,2016_15_NO_ARI
+4,8:57,Cardinals,David Johnson 7 yard rush (Chandler Catanzaro kick),34,34,2016_15_NO_ARI
+4,5:33,Saints,Michael Thomas 4 yard pass from Drew Brees (Wil Lutz kick),41,34,2016_15_NO_ARI
+4,3:27,Saints,Tim Hightower 2 yard rush (Wil Lutz kick),48,34,2016_15_NO_ARI
+4,2:19,Cardinals,John Brown 30 yard pass from Carson Palmer (Chandler Catanzaro kick),48,41,2016_15_NO_ARI
+1,10:31,Falcons,Devonta Freeman 5 yard rush (Matt Bryant kick),0,7,2016_15_SF_ATL
+1,7:40,Falcons,Taylor Gabriel 9 yard pass from Matt Ryan (Matt Bryant kick),0,14,2016_15_SF_ATL
+1,0:40,Falcons,Austin Hooper 9 yard pass from Matt Ryan (Matt Bryant kick),0,21,2016_15_SF_ATL
+2,12:45,49ers,Garrett Celek 16 yard pass from Colin Kaepernick (Phil Dawson kick),7,21,2016_15_SF_ATL
+2,4:28,Falcons,Devonta Freeman 9 yard rush (Matt Bryant kick),7,28,2016_15_SF_ATL
+2,0:13,49ers,Rod Streater 5 yard pass from Colin Kaepernick (Phil Dawson kick failed),13,28,2016_15_SF_ATL
+3,6:29,Falcons,Matt Bryant 50 yard field goal ,13,31,2016_15_SF_ATL
+3,1:42,Falcons,Devonta Freeman 34 yard rush (Matt Bryant kick),13,38,2016_15_SF_ATL
+4,1:09,Falcons,Matt Bryant 41 yard field goal ,13,41,2016_15_SF_ATL
+1,12:27,Patriots,Stephen Gostkowski 45 yard field goal ,3,0,2016_15_NE_DEN
+1,6:58,Broncos,Brandon McManus 33 yard field goal ,3,3,2016_15_NE_DEN
+2,11:01,Patriots,LeGarrette Blount 1 yard rush (Stephen Gostkowski kick),10,3,2016_15_NE_DEN
+3,5:28,Patriots,Stephen Gostkowski 40 yard field goal ,13,3,2016_15_NE_DEN
+4,8:16,Patriots,Stephen Gostkowski 21 yard field goal ,16,3,2016_15_NE_DEN
+1,10:32,Chargers,Travis Benjamin 47 yard pass from Philip Rivers (Josh Lambo kick),0,7,2016_15_OAK_SD
+1,4:53,Raiders,Sebastian Janikowski 45 yard field goal ,3,7,2016_15_OAK_SD
+2,1:29,Chargers,Josh Lambo 35 yard field goal ,3,10,2016_15_OAK_SD
+2,0:22,Raiders,Michael Crabtree 13 yard pass from Derek Carr (Sebastian Janikowski kick),10,10,2016_15_OAK_SD
+3,10:48,Raiders,Sebastian Janikowski 33 yard field goal ,13,10,2016_15_OAK_SD
+3,6:14,Chargers,Hunter Henry 7 yard pass from Philip Rivers (Josh Lambo kick failed),13,16,2016_15_OAK_SD
+4,8:38,Raiders,Sebastian Janikowski 21 yard field goal ,16,16,2016_15_OAK_SD
+4,2:40,Raiders,Sebastian Janikowski 44 yard field goal ,19,16,2016_15_OAK_SD
+1,5:54,Buccaneers,Roberto Aguayo 25 yard field goal ,3,0,2016_15_TB_DAL
+2,14:56,Cowboys,Dan Bailey 27 yard field goal ,3,3,2016_15_TB_DAL
+2,12:34,Cowboys,Ezekiel Elliott 2 yard rush (Dan Bailey kick),3,10,2016_15_TB_DAL
+2,6:24,Cowboys,Dak Prescott 2 yard rush (Dan Bailey kick),3,17,2016_15_TB_DAL
+2,1:52,Buccaneers,Roberto Aguayo 34 yard field goal ,6,17,2016_15_TB_DAL
+3,11:44,Buccaneers,Adam Humphries 42 yard pass from Jameis Winston (Roberto Aguayo kick),13,17,2016_15_TB_DAL
+3,4:12,Buccaneers,Cameron Brate 10 yard pass from Jameis Winston (Roberto Aguayo kick),20,17,2016_15_TB_DAL
+4,13:31,Cowboys,Dan Bailey 40 yard field goal ,20,20,2016_15_TB_DAL
+4,9:35,Cowboys,Dan Bailey 38 yard field goal ,20,23,2016_15_TB_DAL
+4,2:58,Cowboys,Dan Bailey 33 yard field goal ,20,26,2016_15_TB_DAL
+1,12:40,Panthers,Graham Gano 35 yard field goal ,3,0,2016_15_CAR_WAS
+1,6:18,Redskins,Dustin Hopkins 43 yard field goal ,3,3,2016_15_CAR_WAS
+1,1:50,Panthers,Ted Ginn Jr. 30 yard pass from Cam Newton (Graham Gano kick),10,3,2016_15_CAR_WAS
+2,12:21,Panthers,Graham Gano 23 yard field goal ,13,3,2016_15_CAR_WAS
+2,3:43,Redskins,Robert Kelley 5 yard rush (Dustin Hopkins kick failed),13,9,2016_15_CAR_WAS
+3,13:58,Panthers,Mike Tolbert 1 yard pass from Cam Newton (Graham Gano kick),20,9,2016_15_CAR_WAS
+3,5:07,Panthers,Graham Gano 23 yard field goal ,23,9,2016_15_CAR_WAS
+4,14:08,Redskins,Dustin Hopkins 26 yard field goal ,23,12,2016_15_CAR_WAS
+4,3:44,Redskins,Dustin Hopkins 34 yard field goal ,23,15,2016_15_CAR_WAS
+4,1:07,Panthers,Graham Gano 41 yard field goal ,26,15,2016_15_CAR_WAS
+1,9:48,Eagles,Darren Sproles 25 yard rush (Caleb Sturgis kick),0,7,2016_16_NYG_PHI
+1,8:20,Eagles,Malcolm Jenkins 34 yard interception return (Caleb Sturgis kick),0,14,2016_16_NYG_PHI
+1,0:10,Giants,Robbie Gould 35 yard field goal ,3,14,2016_16_NYG_PHI
+2,7:28,Giants,Robbie Gould 35 yard field goal ,6,14,2016_16_NYG_PHI
+2,4:59,Eagles,Nelson Agholor 40 yard pass from Carson Wentz (Caleb Sturgis kick),6,21,2016_16_NYG_PHI
+2,0:33,Giants,Sterling Shepard 13 yard pass from Eli Manning (Robbie Gould kick),13,21,2016_16_NYG_PHI
+3,9:09,Giants,Robbie Gould 29 yard field goal ,16,21,2016_16_NYG_PHI
+4,8:47,Eagles,Caleb Sturgis 41 yard field goal ,16,24,2016_16_NYG_PHI
+4,5:17,Giants,Robbie Gould 41 yard field goal ,19,24,2016_16_NYG_PHI
+1,6:24,Dolphins,Jay Ajayi 2 yard rush (Andrew Franks kick),7,0,2016_16_MIA_BUF
+2,13:34,Dolphins,Kenyan Drake 45 yard rush (Andrew Franks kick),14,0,2016_16_MIA_BUF
+2,5:06,Bills,Sammy Watkins 38 yard pass from Tyrod Taylor (Dan Carpenter kick),14,7,2016_16_MIA_BUF
+3,12:05,Dolphins,DeVante Parker 56 yard pass from Matt Moore (Andrew Franks kick),21,7,2016_16_MIA_BUF
+3,6:46,Bills,LeSean McCoy 19 yard rush (Dan Carpenter kick),21,14,2016_16_MIA_BUF
+3,3:14,Dolphins,Kenny Stills 6 yard pass from Matt Moore (Andrew Franks kick),28,14,2016_16_MIA_BUF
+3,1:12,Bills,Charles Clay 18 yard pass from Tyrod Taylor (Dan Carpenter kick),28,21,2016_16_MIA_BUF
+4,5:51,Bills,Dan Carpenter 28 yard field goal ,28,24,2016_16_MIA_BUF
+4,1:20,Bills,Charles Clay 7 yard pass from Tyrod Taylor (Dan Carpenter kick),28,31,2016_16_MIA_BUF
+4,0:06,Dolphins,Andrew Franks 55 yard field goal ,31,31,2016_16_MIA_BUF
+OT,0:47,Dolphins,Andrew Franks 27 yard field goal ,34,31,2016_16_MIA_BUF
+1,10:57,Falcons,Joshua Perkins 26 yard pass from Matt Ryan (Matt Bryant kick),7,0,2016_16_ATL_CAR
+1,6:09,Falcons,Matt Bryant 51 yard field goal ,10,0,2016_16_ATL_CAR
+1,0:35,Falcons,Matt Bryant 48 yard field goal ,13,0,2016_16_ATL_CAR
+2,10:17,Panthers,Graham Gano 31 yard field goal ,13,3,2016_16_ATL_CAR
+2,5:34,Falcons,D.J. Tialavea 1 yard pass from Matt Ryan (Matt Bryant kick),20,3,2016_16_ATL_CAR
+3,9:23,Panthers,Graham Gano 40 yard field goal ,20,6,2016_16_ATL_CAR
+3,3:34,Falcons,Matt Bryant 29 yard field goal ,23,6,2016_16_ATL_CAR
+3,0:00,Panthers,Kelvin Benjamin 26 yard pass from Cam Newton (Graham Gano kick),23,13,2016_16_ATL_CAR
+4,13:19,Falcons,Tevin Coleman 55 yard rush (Matt Bryant kick),30,13,2016_16_ATL_CAR
+4,9:43,Panthers,Graham Gano 31 yard field goal ,30,16,2016_16_ATL_CAR
+4,1:55,Falcons,Matt Bryant 50 yard field goal ,33,16,2016_16_ATL_CAR
+1,7:43,Redskins,Chris Thompson 7 yard rush (Dustin Hopkins kick),7,0,2016_16_WAS_CHI
+1,0:57,Redskins,Chris Thompson 17 yard pass from Kirk Cousins (Dustin Hopkins kick),14,0,2016_16_WAS_CHI
+2,10:07,Redskins,Dustin Hopkins 29 yard field goal ,17,0,2016_16_WAS_CHI
+2,6:20,Bears,Jeremy Langford 1 yard rush (Connor Barth kick),17,7,2016_16_WAS_CHI
+2,1:41,Redskins,Kirk Cousins 9 yard rush (Dustin Hopkins kick),24,7,2016_16_WAS_CHI
+2,0:34,Bears,Cameron Meredith 21 yard pass from Matt Barkley (Connor Barth kick),24,14,2016_16_WAS_CHI
+3,3:05,Redskins,Kirk Cousins 1 yard rush (Dustin Hopkins kick),31,14,2016_16_WAS_CHI
+4,12:53,Redskins,Dustin Hopkins 20 yard field goal ,34,14,2016_16_WAS_CHI
+4,1:21,Bears,Deonte Thompson 3 yard pass from Matt Barkley (Connor Barth kick),34,21,2016_16_WAS_CHI
+4,0:57,Redskins,Mack Brown 61 yard rush (Dustin Hopkins kick),41,21,2016_16_WAS_CHI
+1,10:49,Chargers,Antonio Gates 1 yard pass from Philip Rivers (Josh Lambo kick),7,0,2016_16_SD_CLE
+1,5:12,Browns,Isaiah Crowell 8 yard rush (Cody Parkey kick),7,7,2016_16_SD_CLE
+1,1:49,Chargers,Josh Lambo 43 yard field goal ,10,7,2016_16_SD_CLE
+2,12:39,Browns,Isaiah Crowell 4 yard rush (Cody Parkey kick),10,14,2016_16_SD_CLE
+2,4:46,Browns,Cody Parkey 49 yard field goal ,10,17,2016_16_SD_CLE
+3,10:58,Browns,Cody Parkey 27 yard field goal ,10,20,2016_16_SD_CLE
+3,6:04,Chargers,Tyrell Williams 1 yard pass from Philip Rivers (Josh Lambo kick),17,20,2016_16_SD_CLE
+1,7:13,Packers,Jordy Nelson 21 yard pass from Aaron Rodgers (Mason Crosby kick),0,7,2016_16_MIN_GB
+1,3:37,Vikings,Kai Forbath 22 yard field goal ,3,7,2016_16_MIN_GB
+1,1:49,Packers,Davante Adams 20 yard pass from Aaron Rodgers (Mason Crosby kick),3,14,2016_16_MIN_GB
+2,12:30,Vikings,Kai Forbath 26 yard field goal ,6,14,2016_16_MIN_GB
+2,8:11,Packers,Jordy Nelson 2 yard pass from Aaron Rodgers (Mason Crosby kick),6,21,2016_16_MIN_GB
+2,7:24,Vikings,Adam Thielen 71 yard pass from Sam Bradford (Kai Forbath kick),13,21,2016_16_MIN_GB
+2,0:24,Packers,Aaron Rodgers 6 yard rush (Mason Crosby kick),13,28,2016_16_MIN_GB
+4,14:55,Packers,Mason Crosby 48 yard field goal ,13,31,2016_16_MIN_GB
+4,9:02,Packers,Richard Rodgers 13 yard pass from Aaron Rodgers (Mason Crosby kick),13,38,2016_16_MIN_GB
+4,4:20,Vikings,Stefon Diggs 3 yard pass from Sam Bradford (Kai Forbath kick failed),19,38,2016_16_MIN_GB
+4,0:32,Vikings,Adam Thielen 8 yard pass from Sam Bradford (run failed),25,38,2016_16_MIN_GB
+1,11:03,Jaguars,Marqise Lee 21 yard pass from Blake Bortles (Jason Myers kick),0,7,2016_16_TEN_JAX
+1,4:03,Jaguars,Jason Myers 29 yard field goal ,0,10,2016_16_TEN_JAX
+2,8:59,Titans,Rishard Matthews 3 yard pass from Marcus Mariota (Ryan Succop kick),7,10,2016_16_TEN_JAX
+2,1:57,Jaguars,Chris Ivory 1 yard rush (Jason Myers kick failed),7,16,2016_16_TEN_JAX
+2,0:11,Jaguars,Jason Myers 48 yard field goal ,7,19,2016_16_TEN_JAX
+3,12:24,Titans,Ryan Succop 42 yard field goal ,10,19,2016_16_TEN_JAX
+3,8:13,Jaguars,Jason Myers 56 yard field goal ,10,22,2016_16_TEN_JAX
+3,2:59,Jaguars,Jason Myers 50 yard field goal ,10,25,2016_16_TEN_JAX
+4,8:42,Titans,Delanie Walker 14 yard pass from Matt Cassel (Ryan Succop kick),17,25,2016_16_TEN_JAX
+4,5:25,Jaguars,Blake Bortles 20 yard pass from Marqise Lee (Jason Myers kick failed),17,31,2016_16_TEN_JAX
+4,5:17,Jaguars,Jalen Ramsey 30 yard interception return (Jason Myers kick),17,38,2016_16_TEN_JAX
+1,8:16,Patriots,Stephen Gostkowski 29 yard field goal ,0,3,2016_16_NYJ_NE
+1,3:02,Patriots,Martellus Bennett 5 yard pass from Tom Brady (Stephen Gostkowski kick),0,10,2016_16_NYJ_NE
+2,11:13,Patriots,Stephen Gostkowski 22 yard field goal ,0,13,2016_16_NYJ_NE
+2,2:40,Patriots,Matt Lengel 18 yard pass from Tom Brady (Stephen Gostkowski kick),0,20,2016_16_NYJ_NE
+2,0:25,Patriots,James White 25 yard pass from Tom Brady (Stephen Gostkowski kick),0,27,2016_16_NYJ_NE
+3,3:22,Patriots,LeGarrette Blount 1 yard rush (Stephen Gostkowski kick),0,34,2016_16_NYJ_NE
+4,12:24,Patriots,LeGarrette Blount 1 yard rush (Stephen Gostkowski kick),0,41,2016_16_NYJ_NE
+4,6:16,Jets,Nick Folk 29 yard field goal ,3,41,2016_16_NYJ_NE
+2,14:57,Raiders,Andre Holmes 1 yard pass from Derek Carr (Sebastian Janikowski kick),0,7,2016_16_IND_OAK
+2,9:49,Colts,Donte Moncrief 24 yard pass from Andrew Luck (Adam Vinatieri kick),7,7,2016_16_IND_OAK
+2,5:50,Raiders,Clive Walford 5 yard pass from Derek Carr (Sebastian Janikowski kick failed),7,13,2016_16_IND_OAK
+2,0:18,Raiders,Jalen Richard 4 yard pass from Derek Carr (Sebastian Janikowski kick failed),7,19,2016_16_IND_OAK
+3,10:48,Raiders,DeAndre Washington 22 yard rush (Sebastian Janikowski kick),7,26,2016_16_IND_OAK
+3,8:40,Raiders,DeAndre Washington 22 yard rush (Sebastian Janikowski kick),7,33,2016_16_IND_OAK
+3,5:18,Colts,Robert Turbin 3 yard pass from Andrew Luck (Adam Vinatieri kick),14,33,2016_16_IND_OAK
+4,7:40,Colts,Andrew Luck 11 yard rush (T.Y. Hilton pass from Andrew Luck),22,33,2016_16_IND_OAK
+4,2:33,Colts,Adam Vinatieri 42 yard field goal ,25,33,2016_16_IND_OAK
+1,9:01,49ers,Carlos Hyde 19 yard pass from Colin Kaepernick (Phil Dawson kick),7,0,2016_16_SF_LA
+1,4:07,Rams,Todd Gurley 1 yard rush (Greg Zuerlein kick),7,7,2016_16_SF_LA
+1,2:33,Rams,Tavon Austin 30 yard rush (Greg Zuerlein kick),7,14,2016_16_SF_LA
+4,10:32,Rams,Tyler Higbee 2 yard pass from Jared Goff (Greg Zuerlein kick),7,21,2016_16_SF_LA
+4,5:06,49ers,Colin Kaepernick 13 yard rush (Phil Dawson kick),14,21,2016_16_SF_LA
+4,0:31,49ers,Rod Streater 10 yard pass from Colin Kaepernick (Colin Kaepernick run),22,21,2016_16_SF_LA
+1,0:57,Saints,Mark Ingram 6 yard rush (Wil Lutz kick),0,7,2016_16_TB_NO
+2,10:50,Buccaneers,Cameron Brate 12 yard pass from Jameis Winston (Roberto Aguayo kick),7,7,2016_16_TB_NO
+2,6:45,Saints,Wil Lutz 42 yard field goal ,7,10,2016_16_TB_NO
+2,0:00,Saints,Wil Lutz 34 yard field goal ,7,13,2016_16_TB_NO
+3,14:01,Saints,Mark Ingram 14 yard rush (Wil Lutz kick),7,20,2016_16_TB_NO
+3,8:38,Buccaneers,Jacquizz Rodgers 3 yard rush (Roberto Aguayo kick),14,20,2016_16_TB_NO
+3,6:20,Saints,Travaris Cadet 11 yard pass from Drew Brees (Mark Ingram run),14,28,2016_16_TB_NO
+3,1:52,Buccaneers,Mike Evans 34 yard pass from Jameis Winston (Roberto Aguayo kick),21,28,2016_16_TB_NO
+4,11:55,Saints,Wil Lutz 21 yard field goal ,21,31,2016_16_TB_NO
+4,2:00,Buccaneers,Roberto Aguayo 35 yard field goal ,24,31,2016_16_TB_NO
+1,7:52,Cardinals,David Johnson 2 yard rush (Chandler Catanzaro kick),7,0,2016_16_ARI_SEA
+2,3:53,Cardinals,JJ Nelson 80 yard pass from Carson Palmer (Chandler Catanzaro kick),14,0,2016_16_ARI_SEA
+2,0:15,Seahawks,Stephen Hauschka 27 yard field goal ,14,3,2016_16_ARI_SEA
+3,8:20,Seahawks,Jermaine Kearse 2 yard pass from Russell Wilson (Stephen Hauschka kick),14,10,2016_16_ARI_SEA
+4,13:32,Cardinals,David Johnson 1 yard rush (Chandler Catanzaro kick),21,10,2016_16_ARI_SEA
+4,8:49,Seahawks,Doug Baldwin 42 yard pass from Russell Wilson (Marcel Reece pass from Russell Wilson),21,18,2016_16_ARI_SEA
+4,6:47,Cardinals,David Johnson 1 yard rush (Chandler Catanzaro kick),28,18,2016_16_ARI_SEA
+4,4:10,Cardinals,Chandler Catanzaro 42 yard field goal ,31,18,2016_16_ARI_SEA
+4,2:48,Seahawks,Jimmy Graham 37 yard pass from Russell Wilson (Stephen Hauschka kick),31,25,2016_16_ARI_SEA
+4,1:00,Seahawks,Paul Richardson 5 yard pass from Russell Wilson (Stephen Hauschka kick failed),31,31,2016_16_ARI_SEA
+4,0:00,Cardinals,Chandler Catanzaro 43 yard field goal ,34,31,2016_16_ARI_SEA
+2,0:00,Bengals,Randy Bullock 43 yard field goal ,3,0,2016_16_CIN_HOU
+3,9:05,Texans,Nick Novak 25 yard field goal ,3,3,2016_16_CIN_HOU
+4,13:31,Texans,Nick Novak 22 yard field goal ,3,6,2016_16_CIN_HOU
+4,10:45,Bengals,Brandon LaFell 86 yard pass from Andy Dalton (Randy Bullock kick),10,6,2016_16_CIN_HOU
+4,8:41,Texans,Alfred Blue 24 yard rush (Nick Novak kick failed),10,12,2016_16_CIN_HOU
+1,7:12,Steelers,Xavier Grimble 20 yard pass from Ben Roethlisberger (Chris Boswell kick),0,7,2016_16_BAL_PIT
+1,5:50,Ravens,Justin Tucker 41 yard field goal ,3,7,2016_16_BAL_PIT
+2,0:18,Ravens,Justin Tucker 38 yard field goal ,6,7,2016_16_BAL_PIT
+3,13:26,Ravens,Steve Smith Sr. 18 yard pass from Joe Flacco (Steve Smith Sr. pass from Joe Flacco),14,7,2016_16_BAL_PIT
+3,9:35,Steelers,Chris Boswell 36 yard field goal ,14,10,2016_16_BAL_PIT
+3,1:28,Ravens,Justin Tucker 46 yard field goal ,17,10,2016_16_BAL_PIT
+4,14:18,Ravens,Justin Tucker 23 yard field goal ,20,10,2016_16_BAL_PIT
+4,11:41,Steelers,Le'Veon Bell 7 yard rush (Chris Boswell kick),20,17,2016_16_BAL_PIT
+4,7:16,Steelers,Le'Veon Bell 7 yard pass from Ben Roethlisberger (Chris Boswell kick),20,24,2016_16_BAL_PIT
+4,1:18,Ravens,Kyle Juszczyk 10 yard rush (Justin Tucker kick),27,24,2016_16_BAL_PIT
+4,0:09,Steelers,Antonio Brown 4 yard pass from Ben Roethlisberger (Chris Boswell kick),27,31,2016_16_BAL_PIT
+1,8:59,Chiefs,Alex Smith 10 yard rush (Cairo Santos kick),0,7,2016_16_DEN_KC
+1,5:17,Chiefs,Tyreek Hill 70 yard rush (Cairo Santos kick),0,14,2016_16_DEN_KC
+1,1:54,Broncos,Justin Forsett 1 yard rush (Brandon McManus kick),7,14,2016_16_DEN_KC
+1,0:53,Chiefs,Travis Kelce 80 yard pass from Alex Smith (Cairo Santos kick),7,21,2016_16_DEN_KC
+2,6:38,Broncos,Brandon McManus 52 yard field goal ,10,21,2016_16_DEN_KC
+4,11:59,Chiefs,Cairo Santos 27 yard field goal ,10,24,2016_16_DEN_KC
+4,8:51,Chiefs,Cairo Santos 39 yard field goal ,10,27,2016_16_DEN_KC
+4,1:52,Chiefs,Demetrius Harris 2 yard pass from Dontari Poe (Cairo Santos kick failed),10,33,2016_16_DEN_KC
+1,9:57,Cowboys,Brice Butler 21 yard pass from Dak Prescott (Dan Bailey kick),0,7,2016_16_DET_DAL
+1,5:23,Lions,Zach Zenner 7 yard rush (Matt Prater kick),7,7,2016_16_DET_DAL
+1,2:49,Cowboys,Ezekiel Elliott 55 yard rush (Dan Bailey kick),7,14,2016_16_DET_DAL
+2,13:32,Lions,Matthew Stafford 1 yard rush (Matt Prater kick),14,14,2016_16_DET_DAL
+2,7:40,Lions,Zach Zenner 5 yard rush (Matt Prater kick),21,14,2016_16_DET_DAL
+2,1:04,Cowboys,Dez Bryant 25 yard pass from Dak Prescott (Dan Bailey kick),21,21,2016_16_DET_DAL
+3,10:19,Cowboys,Ezekiel Elliott 1 yard rush (Dan Bailey kick),21,28,2016_16_DET_DAL
+3,4:03,Cowboys,Jason Witten 10 yard pass from Dez Bryant (Dan Bailey kick),21,35,2016_16_DET_DAL
+4,12:12,Cowboys,Dez Bryant 19 yard pass from Dak Prescott (Dan Bailey kick),21,42,2016_16_DET_DAL
+1,10:17,Bengals,Rex Burkhead 5 yard rush (Randy Bullock kick),0,7,2016_17_BAL_CIN
+1,3:12,Ravens,Justin Tucker 30 yard field goal ,3,7,2016_17_BAL_CIN
+1,0:00,Bengals,C.J. Uzomah 1 yard pass from Andy Dalton (Randy Bullock kick),3,14,2016_17_BAL_CIN
+2,6:09,Bengals,Randy Bullock 23 yard field goal ,3,17,2016_17_BAL_CIN
+2,0:03,Bengals,Randy Bullock 24 yard field goal ,3,20,2016_17_BAL_CIN
+4,8:37,Ravens,Kenneth Dixon 1 yard rush (Justin Tucker kick),10,20,2016_17_BAL_CIN
+4,2:20,Bengals,Rex Burkhead 5 yard rush (Randy Bullock kick),10,27,2016_17_BAL_CIN
+1,10:05,Jaguars,Jason Myers 47 yard field goal ,3,0,2016_17_JAX_IND
+1,5:57,Jaguars,Ben Koyack 14 yard pass from Blake Bortles (Jason Myers kick),10,0,2016_17_JAX_IND
+2,5:45,Jaguars,Corey Grant 57 yard rush (Jason Myers kick),17,0,2016_17_JAX_IND
+2,2:41,Colts,Adam Vinatieri 45 yard field goal ,17,3,2016_17_JAX_IND
+3,10:16,Colts,Robert Turbin 7 yard rush (Adam Vinatieri kick),17,10,2016_17_JAX_IND
+3,0:12,Colts,Dwayne Allen 15 yard pass from Andrew Luck (Adam Vinatieri kick),17,17,2016_17_JAX_IND
+4,1:33,Jaguars,Jason Myers 41 yard field goal ,20,17,2016_17_JAX_IND
+4,0:09,Colts,Jack Doyle 1 yard pass from Andrew Luck (Adam Vinatieri kick),20,24,2016_17_JAX_IND
+1,7:28,Patriots,Martellus Bennett 2 yard pass from Tom Brady (Stephen Gostkowski kick),7,0,2016_17_NE_MIA
+1,3:44,Patriots,Michael Floyd 14 yard pass from Tom Brady (Stephen Gostkowski kick),14,0,2016_17_NE_MIA
+2,14:56,Patriots,Stephen Gostkowski 40 yard field goal ,17,0,2016_17_NE_MIA
+2,3:21,Patriots,Stephen Gostkowski 26 yard field goal ,20,0,2016_17_NE_MIA
+2,0:28,Dolphins,Jarvis Landry 8 yard pass from Matt Moore (Andrew Franks kick),20,7,2016_17_NE_MIA
+3,8:39,Dolphins,Kenny Stills 25 yard pass from Matt Moore (Andrew Franks kick),20,14,2016_17_NE_MIA
+3,6:41,Patriots,Julian Edelman 77 yard pass from Tom Brady (Stephen Gostkowski kick),27,14,2016_17_NE_MIA
+4,5:33,Patriots,LeGarrette Blount 1 yard rush (Julian Edelman pass from Tom Brady),35,14,2016_17_NE_MIA
+1,11:36,Vikings,Jerick McKinnon 16 yard pass from Sam Bradford (Kai Forbath kick),0,7,2016_17_CHI_MIN
+2,14:53,Vikings,Kai Forbath 21 yard field goal ,0,10,2016_17_CHI_MIN
+2,12:51,Vikings,Kyle Rudolph 22 yard pass from Sam Bradford (Kai Forbath kick),0,17,2016_17_CHI_MIN
+2,1:48,Bears,Matt Barkley 2 yard pass from Cameron Meredith (Connor Barth kick),7,17,2016_17_CHI_MIN
+2,0:18,Vikings,Jarius Wright 1 yard pass from Sam Bradford (Kai Forbath kick),7,24,2016_17_CHI_MIN
+2,0:00,Bears,Connor Barth 29 yard field goal ,10,24,2016_17_CHI_MIN
+4,12:11,Vikings,Jerick McKinnon 10 yard rush (Kai Forbath kick),10,31,2016_17_CHI_MIN
+4,9:51,Vikings,Everson Griffen 20 yard defensive fumble return (Kai Forbath kick),10,38,2016_17_CHI_MIN
+2,9:28,Jets,Bilal Powell 2 yard pass from Ryan Fitzpatrick (Nick Folk kick),0,7,2016_17_BUF_NYJ
+2,1:45,Bills,Dan Carpenter 34 yard field goal ,3,7,2016_17_BUF_NYJ
+2,0:00,Jets,Nick Folk 30 yard field goal ,3,10,2016_17_BUF_NYJ
+3,4:03,Jets,Jalin Marshall 6 yard pass from Ryan Fitzpatrick (Nick Folk kick),3,17,2016_17_BUF_NYJ
+3,0:01,Jets,Nick Folk 36 yard field goal ,3,20,2016_17_BUF_NYJ
+4,3:21,Jets,Nick Folk 25 yard field goal ,3,23,2016_17_BUF_NYJ
+4,3:21,Jets,Doug Middleton kickoff recovery in end zone (Nick Folk kick),3,30,2016_17_BUF_NYJ
+4,0:39,Bills,Mike Gillislee 1 yard rush (Dan Carpenter kick),10,30,2016_17_BUF_NYJ
+1,3:57,Eagles,Caleb Sturgis 22 yard field goal ,0,3,2016_17_DAL_PHI
+2,14:51,Cowboys,Dan Bailey 49 yard field goal ,3,3,2016_17_DAL_PHI
+2,10:11,Cowboys,Terrance Williams 3 yard pass from Tony Romo (Dan Bailey kick),10,3,2016_17_DAL_PHI
+2,0:07,Eagles,Zach Ertz 6 yard pass from Carson Wentz (Caleb Sturgis kick),10,10,2016_17_DAL_PHI
+3,9:18,Cowboys,Dan Bailey 23 yard field goal ,13,10,2016_17_DAL_PHI
+3,4:56,Eagles,Zach Ertz 20 yard pass from Carson Wentz (Caleb Sturgis kick),13,17,2016_17_DAL_PHI
+4,2:18,Eagles,Caleb Sturgis 33 yard field goal ,13,20,2016_17_DAL_PHI
+4,1:23,Eagles,Terrell Watson 1 yard rush (Caleb Sturgis kick),13,27,2016_17_DAL_PHI
+1,7:48,Browns,Seth Devalve 12 yard pass from Robert Griffin III (Cody Parkey kick),7,0,2016_17_CLE_PIT
+2,9:21,Browns,Gary Barnidge 4 yard pass from Robert Griffin III (Cody Parkey kick),14,0,2016_17_CLE_PIT
+2,0:31,Steelers,DeAngelo Williams 11 yard pass from Landry Jones (Chris Boswell kick),14,7,2016_17_CLE_PIT
+4,13:21,Steelers,DeAngelo Williams 1 yard rush (Chris Boswell kick),14,14,2016_17_CLE_PIT
+4,5:14,Steelers,Demarcus Ayers 11 yard pass from Landry Jones (Chris Boswell kick),14,21,2016_17_CLE_PIT
+4,3:28,Browns,George Atkinson 5 yard rush (Cody Parkey kick),21,21,2016_17_CLE_PIT
+OT,7:17,Browns,Cody Parkey 34 yard field goal ,24,21,2016_17_CLE_PIT
+OT,2:57,Steelers,Cobi Hamilton 26 yard pass from Landry Jones ,24,27,2016_17_CLE_PIT
+1,11:02,Buccaneers,Roberto Aguayo 33 yard field goal ,0,3,2016_17_CAR_TB
+1,8:22,Panthers,Jonathan Stewart 2 yard rush (Graham Gano kick),7,3,2016_17_CAR_TB
+3,14:19,Buccaneers,Brent Grimes 31 yard interception return (Roberto Aguayo kick),7,10,2016_17_CAR_TB
+3,6:37,Panthers,Graham Gano 54 yard field goal ,10,10,2016_17_CAR_TB
+4,3:13,Buccaneers,Mike Evans 10 yard pass from Jameis Winston (Roberto Aguayo kick),10,17,2016_17_CAR_TB
+4,0:17,Panthers,Kelvin Benjamin 5 yard pass from Cam Newton (pass failed),16,17,2016_17_CAR_TB
+1,9:57,Titans,DaQuan Jones defensive fumble recovery in end zone (Ryan Succop kick),0,7,2016_17_HOU_TEN
+2,0:23,Titans,Rishard Matthews 2 yard pass from Matt Cassel (Ryan Succop kick),0,14,2016_17_HOU_TEN
+3,10:31,Texans,C.J. Fiedorowicz 4 yard pass from Brock Osweiler (Nick Novak kick),7,14,2016_17_HOU_TEN
+3,4:44,Titans,Derrick Henry 2 yard rush (Ryan Succop kick),7,21,2016_17_HOU_TEN
+3,1:11,Texans,Nick Novak 26 yard field goal ,10,21,2016_17_HOU_TEN
+4,8:30,Titans,Ryan Succop 35 yard field goal ,10,24,2016_17_HOU_TEN
+4,3:11,Texans,Brock Osweiler 1 yard rush (Nick Novak kick),17,24,2016_17_HOU_TEN
+1,11:55,Falcons,Tevin Coleman 7 yard pass from Matt Ryan (Matt Bryant kick),0,7,2016_17_NO_ATL
+1,3:53,Saints,Wil Lutz 19 yard field goal ,3,7,2016_17_NO_ATL
+1,3:42,Falcons,Devonta Freeman 75 yard rush (Matt Bryant kick),3,14,2016_17_NO_ATL
+1,0:52,Saints,Tim Hightower 2 yard rush (Wil Lutz kick),10,14,2016_17_NO_ATL
+2,14:17,Falcons,Julio Jones 1 yard pass from Matt Ryan (Matt Bryant kick),10,21,2016_17_NO_ATL
+2,6:51,Falcons,Mohamed Sanu 10 yard pass from Matt Ryan (Matt Bryant kick),10,28,2016_17_NO_ATL
+2,3:40,Saints,Wil Lutz 40 yard field goal ,13,28,2016_17_NO_ATL
+2,0:32,Falcons,Justin Hardy 7 yard pass from Matt Ryan (Matt Bryant kick),13,35,2016_17_NO_ATL
+3,5:17,Falcons,Matt Bryant 22 yard field goal ,13,38,2016_17_NO_ATL
+4,12:41,Saints,Michael Thomas 14 yard pass from Drew Brees (run failed),19,38,2016_17_NO_ATL
+4,2:47,Saints,Mark Ingram 1 yard rush (pass failed),25,38,2016_17_NO_ATL
+4,0:39,Saints,Travaris Cadet 3 yard pass from Drew Brees (Wil Lutz kick),32,38,2016_17_NO_ATL
+1,10:15,Broncos,Devontae Booker 11 yard rush (Brandon McManus kick),0,7,2016_17_OAK_DEN
+2,11:30,Broncos,Brandon McManus 22 yard field goal ,0,10,2016_17_OAK_DEN
+2,1:44,Broncos,Devontae Booker 43 yard pass from Trevor Siemian (Brandon McManus kick),0,17,2016_17_OAK_DEN
+3,8:14,Broncos,Virgil Green 2 yard pass from Trevor Siemian (Brandon McManus kick),0,24,2016_17_OAK_DEN
+3,3:09,Raiders,Amari Cooper 32 yard pass from Connor Cook (pass failed),6,24,2016_17_OAK_DEN
+1,10:34,Cardinals,Chandler Catanzaro 32 yard field goal ,3,0,2016_17_ARI_LA
+2,12:25,Cardinals,Chandler Catanzaro 34 yard field goal ,6,0,2016_17_ARI_LA
+2,7:42,Cardinals,Jeremy Ross 4 yard pass from Carson Palmer (Chandler Catanzaro kick),13,0,2016_17_ARI_LA
+2,2:34,Rams,Greg Zuerlein 37 yard field goal ,13,3,2016_17_ARI_LA
+2,0:48,Rams,Greg Zuerlein 36 yard field goal ,13,6,2016_17_ARI_LA
+2,0:00,Cardinals,Chandler Catanzaro 47 yard field goal ,16,6,2016_17_ARI_LA
+3,13:11,Cardinals,Darren Fells 37 yard pass from Carson Palmer (Chandler Catanzaro kick),23,6,2016_17_ARI_LA
+3,8:17,Cardinals,Kerwynn Williams 1 yard rush (Chandler Catanzaro kick),30,6,2016_17_ARI_LA
+4,11:35,Cardinals,Larry Fitzgerald 5 yard pass from Carson Palmer (Chandler Catanzaro kick),37,6,2016_17_ARI_LA
+4,8:06,Cardinals,Justin Bethel 66 yard interception return (Chandler Catanzaro kick),44,6,2016_17_ARI_LA
+1,10:16,Chargers,Josh Lambo 35 yard field goal ,0,3,2016_17_KC_SD
+1,5:20,Chiefs,Cairo Santos 35 yard field goal ,3,3,2016_17_KC_SD
+2,14:49,Chargers,Antonio Gates 2 yard pass from Philip Rivers (Josh Lambo kick),3,10,2016_17_KC_SD
+2,12:53,Chiefs,Alex Smith 5 yard rush (Cairo Santos kick),10,10,2016_17_KC_SD
+2,6:09,Chiefs,Charcandrick West 4 yard pass from Alex Smith (Cairo Santos kick),17,10,2016_17_KC_SD
+2,0:00,Chiefs,Cairo Santos 25 yard field goal ,20,10,2016_17_KC_SD
+3,10:23,Chargers,Jahleel Addae 90 yard interception return (Josh Lambo kick),20,17,2016_17_KC_SD
+3,3:48,Chiefs,Charcandrick West 2 yard pass from Alex Smith (Cairo Santos kick),27,17,2016_17_KC_SD
+3,0:59,Chiefs,Tyreek Hill 95 yard punt return (Cairo Santos kick),34,17,2016_17_KC_SD
+4,10:19,Chargers,Josh Lambo 29 yard field goal ,34,20,2016_17_KC_SD
+4,4:31,Chiefs,Cairo Santos 37 yard field goal ,37,20,2016_17_KC_SD
+4,2:08,Chargers,Hunter Henry 12 yard pass from Philip Rivers (Josh Lambo kick),37,27,2016_17_KC_SD
+1,13:03,Seahawks,Stephen Hauschka 31 yard field goal ,3,0,2016_17_SEA_SF
+1,9:35,49ers,Shaun Draughn 1 yard rush (Phil Dawson kick),3,7,2016_17_SEA_SF
+2,14:56,49ers,Shaun Draughn 1 yard rush (Phil Dawson kick),3,14,2016_17_SEA_SF
+2,10:32,Seahawks,Stephen Hauschka 32 yard field goal ,6,14,2016_17_SEA_SF
+2,6:55,Seahawks,Luke Willson 11 yard pass from Russell Wilson (Stephen Hauschka kick),13,14,2016_17_SEA_SF
+2,3:00,Seahawks,Thomas Rawls 1 yard rush (Stephen Hauschka kick failed),19,14,2016_17_SEA_SF
+3,8:14,Seahawks,Stephen Hauschka 33 yard field goal ,22,14,2016_17_SEA_SF
+3,5:04,49ers,"Safety, Fumble O.B. in end zone ",22,16,2016_17_SEA_SF
+4,14:08,Seahawks,Stephen Hauschka 28 yard field goal ,25,16,2016_17_SEA_SF
+4,5:42,49ers,Garrett Celek 9 yard pass from Colin Kaepernick (Phil Dawson kick),25,23,2016_17_SEA_SF
+1,2:12,Giants,Robbie Gould 22 yard field goal ,3,0,2016_17_NYG_WAS
+2,9:20,Giants,Rashad Jennings 2 yard rush (Robbie Gould kick),10,0,2016_17_NYG_WAS
+3,0:25,Redskins,Dustin Hopkins 32 yard field goal ,10,3,2016_17_NYG_WAS
+4,8:13,Redskins,Jordan Reed 1 yard pass from Kirk Cousins (Dustin Hopkins kick),10,10,2016_17_NYG_WAS
+4,2:12,Giants,Robbie Gould 40 yard field goal ,13,10,2016_17_NYG_WAS
+4,0:00,Giants,Trevin Wade 11 yard defensive fumble return (run failed),19,10,2016_17_NYG_WAS
+2,10:47,Packers,Aaron Ripkowski 7 yard pass from Aaron Rodgers (Mason Crosby kick),7,0,2016_17_GB_DET
+2,5:00,Lions,Zach Zenner 1 yard rush (Matt Prater kick),7,7,2016_17_GB_DET
+2,0:23,Lions,Golden Tate 3 yard pass from Matthew Stafford (Matt Prater kick),7,14,2016_17_GB_DET
+2,0:00,Packers,Mason Crosby 53 yard field goal ,10,14,2016_17_GB_DET
+3,9:23,Packers,Davante Adams 3 yard pass from Aaron Rodgers (Mason Crosby kick),17,14,2016_17_GB_DET
+4,10:02,Packers,Geronimo Allison 10 yard pass from Aaron Rodgers (Mason Crosby kick failed),23,14,2016_17_GB_DET
+4,7:42,Lions,Matt Prater 54 yard field goal ,23,17,2016_17_GB_DET
+4,2:50,Packers,Davante Adams 9 yard pass from Aaron Rodgers (Davante Adams pass from Aaron Rodgers),31,17,2016_17_GB_DET
+4,0:13,Lions,Anquan Boldin 35 yard pass from Matthew Stafford (Matt Prater kick),31,24,2016_17_GB_DET
+1,7:57,Texans,Nick Novak 50 yard field goal ,0,3,2016_18_OAK_HOU
+1,6:16,Texans,Lamar Miller 4 yard rush (Nick Novak kick),0,10,2016_18_OAK_HOU
+1,1:01,Raiders,Latavius Murray 2 yard rush (Sebastian Janikowski kick),7,10,2016_18_OAK_HOU
+2,8:43,Texans,Nick Novak 38 yard field goal ,7,13,2016_18_OAK_HOU
+2,1:20,Texans,DeAndre Hopkins 2 yard pass from Brock Osweiler (Nick Novak kick),7,20,2016_18_OAK_HOU
+4,12:28,Texans,Brock Osweiler 1 yard rush (Nick Novak kick),7,27,2016_18_OAK_HOU
+4,8:10,Raiders,Andre Holmes 8 yard pass from Connor Cook (Sebastian Janikowski kick),14,27,2016_18_OAK_HOU
+2,7:07,Seahawks,Paul Richardson 2 yard pass from Russell Wilson (Stephen Hauschka kick),0,7,2016_18_DET_SEA
+2,1:55,Seahawks,Stephen Hauschka 43 yard field goal ,0,10,2016_18_DET_SEA
+2,0:20,Lions,Matt Prater 51 yard field goal ,3,10,2016_18_DET_SEA
+3,4:03,Lions,Matt Prater 53 yard field goal ,6,10,2016_18_DET_SEA
+4,14:12,Seahawks,Stephen Hauschka 27 yard field goal ,6,13,2016_18_DET_SEA
+4,8:49,Seahawks,Thomas Rawls 4 yard rush (Stephen Hauschka kick failed),6,19,2016_18_DET_SEA
+4,3:36,Seahawks,Doug Baldwin 13 yard pass from Russell Wilson (Stephen Hauschka kick),6,26,2016_18_DET_SEA
+1,12:15,Steelers,Antonio Brown 50 yard pass from Ben Roethlisberger (Chris Boswell kick),0,7,2016_18_MIA_PIT
+1,6:50,Steelers,Antonio Brown 62 yard pass from Ben Roethlisberger (Chris Boswell kick),0,14,2016_18_MIA_PIT
+1,3:06,Dolphins,Andrew Franks 38 yard field goal ,3,14,2016_18_MIA_PIT
+2,12:39,Steelers,Le'Veon Bell 1 yard rush (Chris Boswell kick failed),3,20,2016_18_MIA_PIT
+2,4:52,Dolphins,Andrew Franks 47 yard field goal ,6,20,2016_18_MIA_PIT
+3,6:32,Steelers,Chris Boswell 34 yard field goal ,6,23,2016_18_MIA_PIT
+3,2:05,Steelers,Le'Veon Bell 8 yard rush (Chris Boswell kick),6,30,2016_18_MIA_PIT
+4,5:57,Dolphins,Damien Williams 4 yard pass from Matt Moore (pass failed),12,30,2016_18_MIA_PIT
+1,5:44,Giants,Robbie Gould 26 yard field goal ,3,0,2016_18_NYG_GB
+2,7:24,Giants,Robbie Gould 40 yard field goal ,6,0,2016_18_NYG_GB
+2,2:20,Packers,Davante Adams 5 yard pass from Aaron Rodgers (Mason Crosby kick),6,7,2016_18_NYG_GB
+2,0:00,Packers,Randall Cobb 42 yard pass from Aaron Rodgers (Mason Crosby kick),6,14,2016_18_NYG_GB
+3,5:16,Giants,Tavarres King 41 yard pass from Eli Manning (Robbie Gould kick),13,14,2016_18_NYG_GB
+3,2:53,Packers,Randall Cobb 30 yard pass from Aaron Rodgers (Mason Crosby kick),13,21,2016_18_NYG_GB
+3,0:21,Packers,Mason Crosby 32 yard field goal ,13,24,2016_18_NYG_GB
+4,9:19,Packers,Randall Cobb 16 yard pass from Aaron Rodgers (Mason Crosby kick),13,31,2016_18_NYG_GB
+4,2:43,Packers,Aaron Ripkowski 1 yard rush (Mason Crosby kick),13,38,2016_18_NYG_GB
+1,6:26,Seahawks,Jimmy Graham 7 yard pass from Russell Wilson (Stephen Hauschka kick),7,0,2016_19_SEA_ATL
+2,14:14,Falcons,Julio Jones 7 yard pass from Matt Ryan (Matt Bryant kick),7,7,2016_19_SEA_ATL
+2,11:20,Seahawks,Stephen Hauschka 33 yard field goal ,10,7,2016_19_SEA_ATL
+2,9:22,Falcons,"Safety, Ben Garland russell Wilson sack in end zone ",10,9,2016_19_SEA_ATL
+2,6:06,Falcons,Matt Bryant 35 yard field goal ,10,12,2016_19_SEA_ATL
+2,0:53,Falcons,Tevin Coleman 14 yard pass from Matt Ryan (Matt Bryant kick),10,19,2016_19_SEA_ATL
+3,9:12,Falcons,Devonta Freeman 1 yard rush (Matt Bryant kick),10,26,2016_19_SEA_ATL
+3,3:03,Seahawks,Stephen Hauschka 26 yard field goal ,13,26,2016_19_SEA_ATL
+4,14:57,Falcons,Matt Bryant 31 yard field goal ,13,29,2016_19_SEA_ATL
+4,3:40,Falcons,Mohamed Sanu 3 yard pass from Matt Ryan (Matt Bryant kick),13,36,2016_19_SEA_ATL
+4,3:21,Seahawks,Doug Baldwin 31 yard pass from Russell Wilson (Stephen Hauschka kick),20,36,2016_19_SEA_ATL
+1,9:27,Patriots,Dion Lewis 13 yard pass from Tom Brady (Stephen Gostkowski kick),0,7,2016_19_HOU_NE
+1,1:15,Texans,Nick Novak 33 yard field goal ,3,7,2016_19_HOU_NE
+1,1:00,Patriots,Dion Lewis 98 yard kickoff return (Stephen Gostkowski kick),3,14,2016_19_HOU_NE
+2,11:36,Texans,Nick Novak 27 yard field goal ,6,14,2016_19_HOU_NE
+2,10:49,Texans,C.J. Fiedorowicz 10 yard pass from Brock Osweiler (Nick Novak kick),13,14,2016_19_HOU_NE
+2,0:07,Patriots,Stephen Gostkowski 19 yard field goal ,13,17,2016_19_HOU_NE
+3,9:09,Patriots,James White 19 yard pass from Tom Brady (Stephen Gostkowski kick),13,24,2016_19_HOU_NE
+4,14:51,Texans,Nick Novak 46 yard field goal ,16,24,2016_19_HOU_NE
+4,12:16,Patriots,Dion Lewis 1 yard rush (Stephen Gostkowski kick),16,31,2016_19_HOU_NE
+4,6:37,Patriots,Stephen Gostkowski 43 yard field goal ,16,34,2016_19_HOU_NE
+1,11:23,Cowboys,Dan Bailey 50 yard field goal ,0,3,2016_19_GB_DAL
+1,8:58,Packers,Richard Rodgers 34 yard pass from Aaron Rodgers (Mason Crosby kick),7,3,2016_19_GB_DAL
+2,14:05,Packers,Ty Montgomery 3 yard rush (Mason Crosby kick),14,3,2016_19_GB_DAL
+2,7:37,Packers,Ty Montgomery 1 yard rush (Mason Crosby kick),21,3,2016_19_GB_DAL
+2,6:03,Cowboys,Dez Bryant 40 yard pass from Dak Prescott (Dan Bailey kick),21,10,2016_19_GB_DAL
+2,1:00,Cowboys,Dan Bailey 33 yard field goal ,21,13,2016_19_GB_DAL
+3,11:25,Packers,Jared Cook 3 yard pass from Aaron Rodgers (Mason Crosby kick),28,13,2016_19_GB_DAL
+4,11:39,Cowboys,Jason Witten 6 yard pass from Dak Prescott (Dan Bailey kick),28,20,2016_19_GB_DAL
+4,4:08,Cowboys,Dez Bryant 7 yard pass from Dak Prescott (Dak Prescott run),28,28,2016_19_GB_DAL
+4,1:33,Packers,Mason Crosby 56 yard field goal ,31,28,2016_19_GB_DAL
+4,0:35,Cowboys,Dan Bailey 52 yard field goal ,31,31,2016_19_GB_DAL
+4,0:00,Packers,Mason Crosby 51 yard field goal ,34,31,2016_19_GB_DAL
+1,9:38,Steelers,Chris Boswell 22 yard field goal ,3,0,2016_19_PIT_KC
+1,6:09,Chiefs,Albert Wilson 5 yard pass from Alex Smith (Cairo Santos kick),3,7,2016_19_PIT_KC
+1,3:51,Steelers,Chris Boswell 38 yard field goal ,6,7,2016_19_PIT_KC
+2,9:18,Steelers,Chris Boswell 36 yard field goal ,9,7,2016_19_PIT_KC
+2,0:55,Steelers,Chris Boswell 45 yard field goal ,12,7,2016_19_PIT_KC
+3,10:06,Steelers,Chris Boswell 43 yard field goal ,15,7,2016_19_PIT_KC
+3,0:10,Chiefs,Cairo Santos 48 yard field goal ,15,10,2016_19_PIT_KC
+4,9:49,Steelers,Chris Boswell 43 yard field goal ,18,10,2016_19_PIT_KC
+4,2:43,Chiefs,Spencer Ware 1 yard rush (pass failed),18,16,2016_19_PIT_KC
+1,8:24,Falcons,Mohamed Sanu 2 yard pass from Matt Ryan (Matt Bryant kick),0,7,2016_20_GB_ATL
+1,0:14,Falcons,Matt Bryant 28 yard field goal ,0,10,2016_20_GB_ATL
+2,7:24,Falcons,Matt Ryan 14 yard rush (Matt Bryant kick),0,17,2016_20_GB_ATL
+2,0:03,Falcons,Julio Jones 5 yard pass from Matt Ryan (Matt Bryant kick),0,24,2016_20_GB_ATL
+3,13:51,Falcons,Julio Jones 73 yard pass from Matt Ryan (Matt Bryant kick),0,31,2016_20_GB_ATL
+3,9:19,Packers,Davante Adams 2 yard pass from Aaron Rodgers (Mason Crosby kick),7,31,2016_20_GB_ATL
+3,4:11,Falcons,Devonta Freeman 4 yard pass from Matt Ryan (Matt Bryant kick failed),7,37,2016_20_GB_ATL
+3,0:38,Packers,Jordy Nelson 3 yard pass from Aaron Rodgers (Aaron Ripkowski run),15,37,2016_20_GB_ATL
+4,12:07,Falcons,Tevin Coleman 3 yard rush (Matt Bryant kick),15,44,2016_20_GB_ATL
+4,6:43,Packers,Jared Cook 1 yard pass from Aaron Rodgers (run failed),21,44,2016_20_GB_ATL
+1,13:08,Patriots,Stephen Gostkowski 31 yard field goal ,0,3,2016_20_PIT_NE
+1,2:47,Patriots,Chris Hogan 16 yard pass from Tom Brady (Stephen Gostkowski kick),0,10,2016_20_PIT_NE
+2,11:31,Steelers,DeAngelo Williams 5 yard rush (Chris Boswell kick failed),6,10,2016_20_PIT_NE
+2,7:43,Patriots,Chris Hogan 34 yard pass from Tom Brady (Stephen Gostkowski kick),6,17,2016_20_PIT_NE
+2,1:39,Steelers,Chris Boswell 23 yard field goal ,9,17,2016_20_PIT_NE
+3,9:59,Patriots,Stephen Gostkowski 47 yard field goal ,9,20,2016_20_PIT_NE
+3,2:44,Patriots,LeGarrette Blount 1 yard rush (Stephen Gostkowski kick),9,27,2016_20_PIT_NE
+3,1:35,Patriots,Julian Edelman 10 yard pass from Tom Brady (Stephen Gostkowski kick failed),9,33,2016_20_PIT_NE
+4,6:24,Patriots,Stephen Gostkowski 26 yard field goal ,9,36,2016_20_PIT_NE
+4,3:36,Steelers,Cobi Hamilton 30 yard pass from Ben Roethlisberger (DeAngelo Williams pass from Ben Roethlisberger),17,36,2016_20_PIT_NE
+2,12:15,Falcons,Devonta Freeman 5 yard rush (Matt Bryant kick),0,7,2016_21_NE_ATL
+2,8:48,Falcons,Austin Hooper 19 yard pass from Matt Ryan (Matt Bryant kick),0,14,2016_21_NE_ATL
+2,2:21,Falcons,Robert Alford 82 yard interception return (Matt Bryant kick),0,21,2016_21_NE_ATL
+2,0:02,Patriots,Stephen Gostkowski 41 yard field goal ,3,21,2016_21_NE_ATL
+3,8:31,Falcons,Tevin Coleman 6 yard pass from Matt Ryan (Matt Bryant kick),3,28,2016_21_NE_ATL
+3,2:06,Patriots,James White 5 yard pass from Tom Brady (Stephen Gostkowski kick failed),9,28,2016_21_NE_ATL
+4,9:44,Patriots,Stephen Gostkowski 33 yard field goal ,12,28,2016_21_NE_ATL
+4,5:56,Patriots,Danny Amendola 6 yard pass from Tom Brady (James White run),20,28,2016_21_NE_ATL
+4,0:57,Patriots,James White 1 yard rush (Danny Amendola pass from Tom Brady),28,28,2016_21_NE_ATL
+OT,11:02,Patriots,James White 2 yard rush ,34,28,2016_21_NE_ATL

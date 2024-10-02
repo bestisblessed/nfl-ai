@@ -1,0 +1,23 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 13,4:25PM ET,boxscore,L,,0-1,@,New Orleans Saints,23,34,23,310,224,86,3,18,271,189,82,,0.48,-1.98,-11.57
+2,Sun,September 20,1:00PM ET,boxscore,W,,1-1,,Carolina Panthers,31,17,20,339,217,122,2,24,427,340,87,4,7.61,-0.25,4.83
+3,Sun,September 27,4:25PM ET,boxscore,W,,2-1,@,Denver Broncos,28,10,17,353,285,68,,13,226,184,42,2,7.71,10.72,0.99
+4,Sun,October 4,1:00PM ET,boxscore,W,,3-1,,Los Angeles Chargers,38,31,28,484,369,115,1,15,324,278,46,2,12.95,-5.88,0.20
+5,Thu,October 8,8:20PM ET,boxscore,L,,3-2,@,Chicago Bears,19,20,18,339,233,106,1,18,243,208,35,1,-3.30,0.67,-1.05
+6,Sun,October 18,4:25PM ET,boxscore,W,,4-2,,Green Bay Packers,38,10,21,324,166,158,,13,201,107,94,2,15.29,21.73,-4.79
+7,Sun,October 25,4:05PM ET,boxscore,W,,5-2,@,Las Vegas Raiders,45,20,29,454,369,85,,19,347,271,76,1,30.56,-1.69,-4.89
+8,Mon,November 2,8:15PM ET,boxscore,W,,6-2,@,New York Giants,25,23,23,344,263,81,1,24,357,256,101,2,5.01,-3.57,2.61
+9,Sun,November 8,8:20PM ET,boxscore,L,,6-3,,New Orleans Saints,3,38,13,194,186,8,3,27,420,282,138,2,-19.57,-13.73,0.26
+10,Sun,November 15,1:00PM ET,boxscore,W,,7-3,@,Carolina Panthers,46,23,30,544,334,210,1,13,187,122,65,1,27.30,6.81,-11.18
+11,Mon,November 23,8:15PM ET,boxscore,L,,7-4,,Los Angeles Rams,24,27,20,251,209,42,2,22,413,376,37,2,-1.67,-5.08,2.02
+12,Sun,November 29,4:25PM ET,boxscore,L,,7-5,,Kansas City Chiefs,24,27,20,417,342,75,2,26,543,456,87,1,12.72,-20.42,2.46
+13,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+14,Sun,December 13,1:00PM ET,boxscore,W,,8-5,,Minnesota Vikings,26,14,17,303,196,107,,27,335,173,162,1,18.44,-10.70,7.06
+15,Sun,December 20,1:00PM ET,boxscore,W,,9-5,@,Atlanta Falcons,31,27,27,416,365,51,,23,369,332,37,,20.21,-8.39,-4.28
+16,Sat,December 26,1:00PM ET,boxscore,W,,10-5,@,Detroit Lions,47,7,30,588,477,111,,12,186,113,73,2,37.71,18.39,-16.78
+17,Sun,January 3,1:00PM ET,boxscore,W,,11-5,,Atlanta Falcons,44,27,28,485,391,94,1,25,385,258,127,2,29.28,-10.53,0.43
+,,Playoffs,,,,,,,,,,,,,,,,,,,,,,
+Wild Card,Sat,January 9,8:15PM ET,boxscore,W,,12-5,@,Washington Football Team,31,23,26,507,365,142,1,23,375,289,86,1,14.51,-5.16,-1.49
+Division,Sun,January 17,6:40PM ET,boxscore,W,,13-5,@,New Orleans Saints,30,20,20,316,189,127,,20,294,190,104,4,5.85,6.52,-0.63
+Conf. Champ.,Sun,January 24,3:05PM ET,boxscore,W,,14-5,@,Green Bay Packers,31,26,19,351,275,76,3,23,381,314,67,2,14.40,-7.40,0.17
+SuperBowl,Sun,February 7,6:30PM ET,boxscore,W,,15-5,N,Kansas City Chiefs,31,9,26,340,195,145,,22,350,243,107,2,10.75,7.90,1.18

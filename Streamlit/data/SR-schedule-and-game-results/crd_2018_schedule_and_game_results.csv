@@ -1,0 +1,18 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 9,4:25PM ET,boxscore,L,,0-1,,Washington Redskins,6,24,14,213,145,68,2,30,429,247,182,1,-9.94,-16.72,7.08
+2,Sun,September 16,4:05PM ET,boxscore,L,,0-2,@,Los Angeles Rams,0,34,5,137,83,54,1,24,432,342,90,1,-17.50,-18.11,3.56
+3,Sun,September 23,4:25PM ET,boxscore,L,,0-3,,Chicago Bears,14,16,13,221,168,53,4,21,316,194,122,2,-6.07,2.63,1.68
+4,Sun,September 30,4:05PM ET,boxscore,L,,0-4,,Seattle Seahawks,17,20,18,263,171,92,1,19,331,160,171,,1.27,-1.31,-1.43
+5,Sun,October 7,4:25PM ET,boxscore,W,,1-4,@,San Francisco 49ers,28,18,10,220,164,56,,33,447,300,147,5,-3.94,10.35,4.12
+6,Sun,October 14,1:00PM ET,boxscore,L,,1-5,@,Minnesota Vikings,17,27,16,268,208,60,2,20,411,216,195,2,-14.20,3.32,-0.88
+7,Thu,October 18,8:20PM ET,boxscore,L,,1-6,,Denver Broncos,10,45,14,223,154,69,5,15,309,178,131,1,-33.30,-4.56,2.09
+8,Sun,October 28,4:25PM ET,boxscore,W,,2-6,,San Francisco 49ers,18,15,20,321,233,88,2,16,267,160,107,,6.06,3.16,-2.98
+9,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+10,Sun,November 11,1:00PM ET,boxscore,L,,2-7,@,Kansas City Chiefs,14,26,21,260,166,94,2,20,330,212,118,,-8.96,-7.53,0.25
+11,Sun,November 18,4:05PM ET,boxscore,L,,2-8,,Oakland Raiders,21,23,13,282,128,154,2,19,325,173,152,,-6.58,-0.79,4.96
+12,Sun,November 25,4:05PM ET,boxscore,L,,2-9,@,Los Angeles Chargers,10,45,10,149,87,62,1,30,414,236,178,1,-13.00,-24.25,1.28
+13,Sun,December 2,1:00PM ET,boxscore,W,,3-9,@,Green Bay Packers,20,17,18,315,133,182,,22,325,227,98,,3.90,-3.18,0.74
+14,Sun,December 9,4:25PM ET,boxscore,L,,3-10,,Detroit Lions,3,17,22,279,218,61,1,16,218,96,122,1,-13.32,6.04,-3.13
+15,Sun,December 16,1:00PM ET,boxscore,L,,3-11,@,Atlanta Falcons,14,40,18,253,193,60,3,23,435,220,215,,-16.06,-15.22,7.62
+16,Sun,December 23,4:05PM ET,boxscore,L,,3-12,,Los Angeles Rams,9,31,15,263,159,104,,33,461,192,269,1,-4.01,-24.42,5.46
+17,Sun,December 30,4:25PM ET,boxscore,L,,3-13,@,Seattle Seahawks,24,27,12,198,113,85,2,16,291,109,182,1,-20.50,4.06,13.59

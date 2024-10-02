@@ -1,0 +1,18 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 13,1:04PM ET,boxscore,W,,1-0,,Cleveland Browns,31,10,18,333,179,154,1,15,321,217,104,5,12.74,12.74,-2.57
+2,Mon,September 21,8:30PM ET,boxscore,W,,2-0,@,Indianapolis Colts,20,7,20,344,243,101,1,17,343,250,93,5,3.53,6.84,-0.64
+3,Sun,September 27,1:03PM ET,boxscore,L,,2-1,,Philadelphia Eagles,17,24,19,323,276,47,4,18,231,108,123,1,-13.00,9.49,-4.25
+4,Sun,October 4,9:37AM ET,boxscore,W,,3-1,@,Miami Dolphins,27,14,23,425,218,207,1,17,226,167,59,2,4.80,12.53,-7.50
+5,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+6,Sun,October 18,1:02PM ET,boxscore,W,,4-1,,Washington Redskins,34,20,22,474,253,221,3,14,225,191,34,2,8.72,11.90,-6.67
+7,Sun,October 25,1:02PM ET,boxscore,L,,4-2,@,New England Patriots,23,30,25,372,283,89,1,20,353,337,16,,10.33,-11.28,-3.42
+8,Sun,November 1,4:05PM ET,boxscore,L,,4-3,@,Oakland Raiders,20,34,22,366,292,74,1,21,451,333,118,,4.34,-20.61,2.99
+9,Sun,November 8,1:02PM ET,boxscore,W,,5-3,,Jacksonville Jaguars,28,23,14,290,261,29,,19,436,338,98,4,0.91,-0.67,7.08
+10,Thu,November 12,8:26PM ET,boxscore,L,,5-4,,Buffalo Bills,17,22,15,318,190,128,4,13,280,132,148,,-11.12,11.29,-8.48
+11,Sun,November 22,1:03PM ET,boxscore,L,,5-5,@,Houston Texans,17,24,16,267,197,70,2,19,364,241,123,1,-8.30,-1.85,0.51
+12,Sun,November 29,1:02PM ET,boxscore,W,,6-5,,Miami Dolphins,38,20,24,411,274,137,,20,333,321,12,2,13.42,3.68,2.09
+13,Sun,December 6,1:03PM ET,boxscore,W,OT,7-5,@,New York Giants,23,20,28,463,373,90,1,14,355,281,74,1,9.52,2.87,-6.92
+14,Sun,December 13,1:02PM ET,boxscore,W,,8-5,,Tennessee Titans,30,8,24,439,256,183,,15,292,268,24,1,14.10,8.70,-2.71
+15,Sat,December 19,8:26PM ET,boxscore,W,,9-5,@,Dallas Cowboys,19,16,20,372,299,73,1,15,309,176,133,4,-0.36,10.81,-9.21
+16,Sun,December 27,1:02PM ET,boxscore,W,OT,10-5,,New England Patriots,26,20,24,428,285,143,1,16,284,221,63,1,7.60,-2.18,0.48
+17,Sun,January 3,1:02PM ET,boxscore,L,,10-6,@,Buffalo Bills,17,22,15,300,178,122,3,18,295,182,113,1,-1.41,0.17,-5.25

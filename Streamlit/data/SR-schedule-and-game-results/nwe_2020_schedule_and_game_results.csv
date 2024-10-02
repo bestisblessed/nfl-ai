@@ -1,0 +1,18 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 13,1:00PM ET,boxscore,W,,1-0,,Miami Dolphins,21,11,29,357,140,217,1,20,269,182,87,3,14.11,2.20,-5.64
+2,Sun,September 20,8:20PM ET,boxscore,L,,1-1,@,Seattle Seahawks,30,35,29,464,397,67,1,22,429,275,154,1,19.82,-14.54,-6.98
+3,Sun,September 27,1:00PM ET,boxscore,W,,2-1,,Las Vegas Raiders,36,20,25,406,156,250,1,22,375,249,126,3,11.03,-0.71,5.81
+4,Mon,October 5,7:05PM ET,boxscore,L,,2-2,@,Kansas City Chiefs,10,26,21,357,172,185,4,19,323,229,94,1,-10.82,-5.72,3.78
+5,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+6,Sun,October 18,1:00PM ET,boxscore,L,,2-3,,Denver Broncos,12,18,14,288,171,117,3,15,299,164,135,2,-13.30,6.67,1.59
+7,Sun,October 25,4:25PM ET,boxscore,L,,2-4,,San Francisco 49ers,6,33,17,241,147,94,4,26,467,270,197,2,-9.49,-22.44,6.55
+8,Sun,November 1,1:00PM ET,boxscore,L,,2-5,@,Buffalo Bills,21,24,20,349,161,188,1,22,339,149,190,1,8.26,-8.85,-0.85
+9,Mon,November 9,8:15PM ET,boxscore,W,,3-5,@,New York Jets,30,27,30,433,274,159,,18,322,257,65,1,18.70,-18.71,2.16
+10,Sun,November 15,8:20PM ET,boxscore,W,,4-5,,Baltimore Ravens,23,17,25,308,135,173,,19,357,242,115,1,13.95,-3.45,-1.86
+11,Sun,November 22,1:00PM ET,boxscore,L,,4-6,@,Houston Texans,20,27,22,435,349,86,,21,399,344,55,,13.67,-15.69,-0.27
+12,Sun,November 29,1:00PM ET,boxscore,W,,5-6,,Arizona Cardinals,20,17,16,179,69,110,2,23,298,160,138,1,-4.68,0.00,9.06
+13,Sun,December 6,4:25PM ET,boxscore,W,,6-6,@,Los Angeles Chargers,45,0,22,291,126,165,,17,258,188,70,2,9.66,16.13,22.19
+14,Thu,December 10,8:20PM ET,boxscore,L,,6-7,@,Los Angeles Rams,3,24,10,220,113,107,1,17,318,132,186,1,-29.77,-1.19,8.58
+15,Sun,December 20,1:00PM ET,boxscore,L,,6-8,@,Miami Dolphins,12,22,18,303,186,117,1,26,383,133,250,1,-1.00,-16.71,6.16
+16,Mon,December 28,8:15PM ET,boxscore,L,,6-9,,Buffalo Bills,9,38,11,201,56,145,,31,474,344,130,,-2.39,-26.17,1.10
+17,Sun,January 3,1:00PM ET,boxscore,W,,7-9,,New York Jets,28,14,23,404,238,166,,21,350,239,111,2,18.13,-3.92,-0.05

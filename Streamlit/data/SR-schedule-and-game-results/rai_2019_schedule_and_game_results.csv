@@ -1,0 +1,18 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Mon,September 9,10:20PM ET,boxscore,W,,1-0,,Denver Broncos,24,16,19,357,259,98,,18,344,249,95,,16.92,-8.29,-1.51
+2,Sun,September 15,4:05PM ET,boxscore,L,,1-1,,Kansas City Chiefs,10,28,19,307,178,129,2,24,467,436,31,1,-2.14,-18.12,2.97
+3,Sun,September 22,1:00PM ET,boxscore,L,,1-2,@,Minnesota Vikings,14,34,17,302,214,88,1,23,385,174,211,,1.77,-20.43,-0.15
+4,Sun,September 29,1:00PM ET,boxscore,W,,2-2,@,Indianapolis Colts,31,24,21,377,189,188,1,22,346,265,81,2,8.99,-1.60,0.78
+5,Sun,October 6,1:00PM ET,boxscore,W,,3-2,,Chicago Bears,24,21,25,398,229,169,2,15,236,194,42,2,2.24,3.03,0.43
+6,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+7,Sun,October 20,1:00PM ET,boxscore,L,,3-3,@,Green Bay Packers,24,42,21,484,329,155,2,22,481,421,60,,11.80,-33.09,5.36
+8,Sun,October 27,4:25PM ET,boxscore,L,,3-4,@,Houston Texans,24,27,15,378,285,93,,29,388,258,130,,11.28,-14.69,1.22
+9,Sun,November 3,4:05PM ET,boxscore,W,,4-4,,Detroit Lions,31,24,25,450,279,171,,26,473,383,90,2,16.79,-13.92,4.07
+10,Thu,November 7,8:20PM ET,boxscore,W,,5-4,,Los Angeles Chargers,26,24,18,278,200,78,,26,315,169,146,3,5.96,-0.55,-1.54
+11,Sun,November 17,4:25PM ET,boxscore,W,,6-4,,Cincinnati Bengals,17,10,20,386,273,113,2,16,246,73,173,2,3.46,9.64,-3.29
+12,Sun,November 24,1:00PM ET,boxscore,L,,6-5,@,New York Jets,3,34,10,208,140,68,2,21,401,313,88,1,-19.86,-12.75,2.36
+13,Sun,December 1,4:25PM ET,boxscore,L,,6-6,@,Kansas City Chiefs,9,40,19,332,210,122,3,22,259,163,96,,-3.44,-14.17,-11.19
+14,Sun,December 8,4:25PM ET,boxscore,L,,6-7,,Tennessee Titans,21,42,22,355,258,97,1,26,552,391,161,1,2.19,-29.61,5.43
+15,Sun,December 15,4:05PM ET,boxscore,L,,6-8,,Jacksonville Jaguars,16,20,27,364,236,128,,17,262,185,77,,11.24,-6.63,-6.93
+16,Sun,December 22,4:05PM ET,boxscore,W,,7-8,@,Los Angeles Chargers,24,17,19,366,267,99,,21,284,265,19,,12.67,-6.73,2.60
+17,Sun,December 29,4:25PM ET,boxscore,L,,7-9,@,Denver Broncos,15,16,18,477,380,97,1,16,238,168,70,1,-0.30,8.20,-10.20

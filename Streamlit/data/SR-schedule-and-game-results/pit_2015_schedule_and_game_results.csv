@@ -1,0 +1,21 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Thu,September 10,8:40PM ET,boxscore,L,,0-1,@,New England Patriots,21,28,23,464,330,134,1,26,361,281,80,,17.01,-20.02,-1.30
+2,Sun,September 20,1:02PM ET,boxscore,W,,1-1,,San Francisco 49ers,43,18,21,453,369,84,,27,409,298,111,1,29.74,-6.43,-1.07
+3,Sun,September 27,1:00PM ET,boxscore,W,,2-1,@,St. Louis Rams,12,6,17,259,197,62,1,12,258,187,71,1,-1.36,7.63,1.12
+4,Thu,October 1,8:26PM ET,boxscore,L,OT,2-2,,Baltimore Ravens,20,23,17,263,96,167,,21,356,165,191,2,-10.13,12.68,-6.01
+5,Mon,October 12,8:30PM ET,boxscore,W,,3-2,@,San Diego Chargers,24,20,14,349,194,155,1,24,406,354,52,2,2.16,4.41,-2.85
+6,Sun,October 18,1:04PM ET,boxscore,W,,4-2,,Arizona Cardinals,25,13,14,310,169,141,,21,469,414,55,3,3.14,1.35,7.12
+7,Sun,October 25,1:03PM ET,boxscore,L,,4-3,@,Kansas City Chiefs,13,23,18,339,192,147,3,18,377,239,138,,-2.64,-8.55,0.95
+8,Sun,November 1,1:02PM ET,boxscore,L,,4-4,,Cincinnati Bengals,10,16,21,356,240,116,3,16,296,218,78,2,-3.33,6.97,-4.09
+9,Sun,November 8,1:02PM ET,boxscore,W,,5-4,,Oakland Raiders,38,35,27,597,402,195,2,24,440,301,139,4,20.86,-10.03,-7.31
+10,Sun,November 15,1:04PM ET,boxscore,W,,6-4,,Cleveland Browns,30,9,22,459,399,60,2,20,342,327,15,3,17.49,7.16,2.14
+11,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+12,Sun,November 29,4:26PM ET,boxscore,L,,6-5,@,Seattle Seahawks,30,39,26,538,480,58,4,21,436,336,100,,11.85,-19.17,-1.22
+13,Sun,December 6,8:30PM ET,boxscore,W,,7-5,,Indianapolis Colts,45,10,24,522,364,158,2,11,240,186,54,3,24.34,19.79,-9.92
+14,Sun,December 13,1:02PM ET,boxscore,W,,8-5,@,Cincinnati Bengals,33,20,22,354,270,84,1,22,385,321,64,3,9.43,-1.42,6.74
+15,Sun,December 20,4:25PM ET,boxscore,W,,9-5,,Denver Broncos,34,27,28,377,354,23,2,20,385,281,104,2,5.14,1.86,0.34
+16,Sun,December 27,1:02PM ET,boxscore,L,,9-6,@,Baltimore Ravens,17,20,21,308,198,110,3,22,386,265,121,,2.69,-4.62,-0.80
+17,Sun,January 3,1:02PM ET,boxscore,W,,10-6,@,Cleveland Browns,28,12,16,379,349,30,3,22,263,177,86,4,-2.64,21.56,-1.70
+,,Playoffs,,,,,,,,,,,,,,,,,,,,,,
+Wild Card,Sat,January 9,8:15PM ET,boxscore,W,,11-6,@,Cincinnati Bengals,18,16,21,369,202,167,2,19,279,188,91,4,-4.17,10.48,-3.85
+Division,Sun,January 17,4:40PM ET,boxscore,L,,11-7,@,Denver Broncos,16,23,16,396,311,85,1,19,324,215,109,,-3.71,5.76,-9.90

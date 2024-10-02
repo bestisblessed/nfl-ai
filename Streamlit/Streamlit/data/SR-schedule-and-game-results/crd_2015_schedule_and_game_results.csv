@@ -1,0 +1,21 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 13,4:05PM ET,boxscore,W,,1-0,,New Orleans Saints,31,19,25,427,307,120,1,18,408,354,54,1,12.48,0.79,-3.48
+2,Sun,September 20,1:00PM ET,boxscore,W,,2-0,@,Chicago Bears,48,23,21,300,185,115,2,18,335,226,109,2,17.96,9.19,-3.11
+3,Sun,September 27,4:05PM ET,boxscore,W,,3-0,,San Francisco 49ers,47,7,28,446,307,139,1,10,156,53,103,4,21.61,26.19,-10.29
+4,Sun,October 4,4:25PM ET,boxscore,L,,3-1,,St. Louis Rams,22,24,26,447,334,113,3,13,328,164,164,,5.76,-7.53,-6.03
+5,Sun,October 11,4:05PM ET,boxscore,W,,4-1,@,Detroit Lions,42,17,15,345,158,187,,29,435,379,56,6,13.26,9.65,-1.18
+6,Sun,October 18,1:04PM ET,boxscore,L,,4-2,@,Pittsburgh Steelers,13,25,21,469,414,55,3,14,310,169,141,,-1.35,-3.14,-7.12
+7,Mon,October 26,8:30PM ET,boxscore,W,,5-2,,Baltimore Ravens,26,18,21,414,264,150,,18,276,221,55,2,13.41,1.00,-5.34
+8,Sun,November 1,1:02PM ET,boxscore,W,,6-2,@,Cleveland Browns,34,20,25,491,372,119,4,16,254,215,39,2,12.33,6.36,-2.81
+9,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+10,Sun,November 15,8:35PM ET,boxscore,W,,7-2,@,Seattle Seahawks,39,32,30,451,334,117,3,18,343,228,115,1,0.17,-1.63,3.81
+11,Sun,November 22,8:30PM ET,boxscore,W,,8-2,,Cincinnati Bengals,34,31,21,383,301,82,2,24,377,278,99,1,12.46,-10.32,-1.71
+12,Sun,November 29,4:05PM ET,boxscore,W,,9-2,@,San Francisco 49ers,19,13,26,337,267,70,,17,368,301,67,2,5.59,-1.68,1.73
+13,Sun,December 6,1:00PM ET,boxscore,W,,10-2,@,St. Louis Rams,27,3,29,524,349,175,,9,212,146,66,1,18.60,15.12,-9.39
+14,Thu,December 10,8:25PM ET,boxscore,W,,11-2,,Minnesota Vikings,23,20,22,393,296,97,,23,389,317,72,3,14.73,-7.63,-3.90
+15,Sun,December 20,8:31PM ET,boxscore,W,,12-2,@,Philadelphia Eagles,40,17,28,493,263,230,,19,424,350,74,4,22.52,9.38,-5.46
+16,Sun,December 27,4:25PM ET,boxscore,W,,13-2,,Green Bay Packers,38,8,19,381,260,121,2,16,178,77,101,4,4.66,26.12,-1.14
+17,Sun,January 3,4:25PM ET,boxscore,L,,13-3,,Seattle Seahawks,6,36,16,232,205,27,3,22,354,209,145,,-8.68,-13.93,-11.90
+,,Playoffs,,,,,,,,,,,,,,,,,,,,,,
+Division,Sat,January 16,8:15PM ET,boxscore,W,OT,14-3,,Green Bay Packers,26,20,20,368,328,40,2,18,386,251,135,1,6.94,-6.14,3.17
+Conf. Champ.,Sun,January 24,6:42PM ET,boxscore,L,,14-4,@,Carolina Panthers,15,49,21,287,227,60,7,21,476,324,152,1,-10.49,-15.85,-3.81

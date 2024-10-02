@@ -1,0 +1,18 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Mon,September 14,7:10PM ET,boxscore,L,,0-1,@,Atlanta Falcons,24,26,23,399,336,63,2,21,395,290,105,2,-0.47,2.18,-8.59
+2,Sun,September 20,4:25PM ET,boxscore,L,,0-2,,Dallas Cowboys,10,20,17,226,219,7,3,21,359,250,109,2,-15.51,6.08,-1.73
+3,Sun,September 27,1:03PM ET,boxscore,W,,1-2,@,New York Jets,24,17,18,231,108,123,1,19,323,276,47,4,-9.49,13.00,4.25
+4,Sun,October 4,1:03PM ET,boxscore,L,,1-3,@,Washington Redskins,20,23,14,320,233,87,2,25,417,290,127,1,5.79,-8.47,-0.35
+5,Sun,October 11,1:04PM ET,boxscore,W,,2-3,,New Orleans Saints,39,17,34,519,333,186,2,19,388,292,96,4,12.67,8.19,1.01
+6,Mon,October 19,8:30PM ET,boxscore,W,,3-3,,New York Giants,27,7,24,428,270,158,4,18,247,166,81,3,-2.91,20.67,5.09
+7,Sun,October 25,8:31PM ET,boxscore,L,,3-4,@,Carolina Panthers,16,27,20,349,172,177,1,21,394,190,204,3,-5.49,-2.53,-1.95
+8,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+9,Sun,November 8,8:31PM ET,boxscore,W,OT,4-4,@,Dallas Cowboys,33,27,25,459,287,172,,25,411,277,134,1,14.81,-11.60,0.73
+10,Sun,November 15,1:05PM ET,boxscore,L,,4-5,,Miami Dolphins,19,20,29,436,353,83,1,15,289,190,99,,3.37,3.56,-7.30
+11,Sun,November 22,1:02PM ET,boxscore,L,,4-6,,Tampa Bay Buccaneers,17,45,21,383,247,136,4,25,521,238,283,1,-3.21,-26.62,3.22
+12,Thu,November 26,12:35PM ET,boxscore,L,,4-7,@,Detroit Lions,14,45,14,227,159,68,1,28,430,322,108,,-6.28,-24.93,0.12
+13,Sun,December 6,4:25PM ET,boxscore,W,,5-7,@,New England Patriots,35,28,15,248,120,128,1,27,427,324,103,2,-2.29,-0.42,11.55
+14,Sun,December 13,1:01PM ET,boxscore,W,,6-7,,Buffalo Bills,23,20,20,348,232,116,1,18,412,260,152,2,0.91,-1.50,3.30
+15,Sun,December 20,8:31PM ET,boxscore,L,,6-8,,Arizona Cardinals,17,40,19,424,350,74,4,28,493,263,230,,-9.38,-22.52,5.46
+16,Sat,December 26,8:26PM ET,boxscore,L,,6-9,,Washington Redskins,24,38,23,398,353,45,2,25,418,351,67,,-4.54,-12.67,0.28
+17,Sun,January 3,1:03PM ET,boxscore,W,,7-9,@,New York Giants,35,30,23,435,315,120,2,30,502,294,208,1,16.84,-8.26,-1.01

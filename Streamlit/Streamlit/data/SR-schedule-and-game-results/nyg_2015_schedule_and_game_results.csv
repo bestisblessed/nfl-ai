@@ -1,0 +1,18 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 13,8:31PM ET,boxscore,L,,0-1,@,Dallas Cowboys,26,27,18,285,186,99,,27,436,356,80,3,2.48,-4.61,2.20
+2,Sun,September 20,1:02PM ET,boxscore,L,,0-2,,Atlanta Falcons,20,24,19,388,291,97,1,25,402,346,56,,7.59,-9.05,3.97
+3,Thu,September 24,8:26PM ET,boxscore,W,,1-2,,Washington Redskins,32,21,19,363,279,84,,22,393,305,88,3,10.61,-0.87,0.69
+4,Sun,October 4,1:02PM ET,boxscore,W,,2-2,@,Buffalo Bills,24,10,19,303,211,92,1,14,313,258,55,2,-7.99,16.54,0.49
+5,Sun,October 11,8:31PM ET,boxscore,W,,3-2,,San Francisco 49ers,30,27,30,525,441,84,1,22,380,256,124,,22.97,-17.01,-1.19
+6,Mon,October 19,8:30PM ET,boxscore,L,,3-3,@,Philadelphia Eagles,7,27,18,247,166,81,3,24,428,270,158,4,-20.67,2.91,-5.09
+7,Sun,October 25,4:25PM ET,boxscore,W,,4-3,,Dallas Cowboys,27,20,13,289,157,132,,27,460,227,233,4,1.44,-2.39,10.30
+8,Sun,November 1,1:02PM ET,boxscore,L,,4-4,@,New Orleans Saints,49,52,28,416,329,87,1,35,608,505,103,2,25.62,-31.80,5.44
+9,Sun,November 8,4:05PM ET,boxscore,W,,5-4,@,Tampa Bay Buccaneers,32,18,24,327,213,114,2,19,383,247,136,3,-0.03,4.62,8.95
+10,Sun,November 15,4:31PM ET,boxscore,L,,5-5,,New England Patriots,26,27,21,422,342,80,1,22,406,329,77,2,10.17,-6.31,-6.92
+11,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+12,Sun,November 29,1:03PM ET,boxscore,L,,5-6,@,Washington Redskins,14,20,17,332,299,33,3,18,407,302,105,,-6.91,-2.22,3.01
+13,Sun,December 6,1:03PM ET,boxscore,L,OT,5-7,,New York Jets,20,23,14,355,281,74,1,28,463,373,90,1,-2.87,-9.52,6.92
+14,Mon,December 14,8:30PM ET,boxscore,W,,6-7,@,Miami Dolphins,31,24,25,429,337,92,1,16,363,235,128,1,17.91,-5.36,-4.29
+15,Sun,December 20,1:02PM ET,boxscore,L,,6-8,,Carolina Panthers,35,38,21,406,245,161,2,28,480,309,171,1,8.46,-15.48,4.02
+16,Sun,December 27,8:30PM ET,boxscore,L,,6-9,@,Minnesota Vikings,17,49,15,363,272,91,3,17,368,150,218,,-18.33,-7.74,-8.06
+17,Sun,January 3,1:03PM ET,boxscore,L,,6-10,,Philadelphia Eagles,30,35,30,502,294,208,1,23,435,315,120,2,8.26,-16.84,1.01

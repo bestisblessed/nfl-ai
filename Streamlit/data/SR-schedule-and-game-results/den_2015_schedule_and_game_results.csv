@@ -1,0 +1,22 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 13,4:25PM ET,boxscore,W,,1-0,,Baltimore Ravens,19,13,16,219,150,69,1,11,173,100,73,2,-14.53,20.78,-1.43
+2,Thu,September 17,8:29PM ET,boxscore,W,,2-0,@,Kansas City Chiefs,31,24,21,299,238,61,1,20,314,167,147,5,-6.63,9.40,5.00
+3,Sun,September 27,8:30PM ET,boxscore,W,,3-0,@,Detroit Lions,24,12,19,354,313,41,2,22,290,262,28,3,4.66,7.25,-0.27
+4,Sun,October 4,4:25PM ET,boxscore,W,,4-0,,Minnesota Vikings,23,20,18,344,200,144,2,19,325,212,113,1,3.65,-1.67,2.67
+5,Sun,October 11,4:25PM ET,boxscore,W,,5-0,@,Oakland Raiders,16,10,15,297,254,43,2,20,288,223,65,3,-7.77,8.27,4.42
+6,Sun,October 18,1:02PM ET,boxscore,W,OT,6-0,@,Cleveland Browns,26,23,21,442,290,152,3,20,298,189,109,3,-12.98,20.85,-4.83
+7,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+8,Sun,November 1,8:30PM ET,boxscore,W,,7-0,,Green Bay Packers,29,10,24,500,340,160,1,14,140,50,90,,20.90,2.89,-5.26
+9,Sun,November 8,4:25PM ET,boxscore,L,,7-1,@,Indianapolis Colts,24,27,16,309,274,35,2,27,365,245,120,,3.28,-12.14,0.14
+10,Sun,November 15,4:30PM ET,boxscore,L,,7-2,,Kansas City Chiefs,13,29,18,221,152,69,5,13,303,197,106,,-14.78,4.23,-7.40
+11,Sun,November 22,1:02PM ET,boxscore,W,,8-2,@,Chicago Bears,17,15,21,389,219,170,,19,347,261,86,2,4.79,0.16,-1.04
+12,Sun,November 29,8:30PM ET,boxscore,W,OT,9-2,,New England Patriots,30,24,23,433,254,179,1,16,301,262,39,1,6.80,2.09,-1.42
+13,Sun,December 6,4:05PM ET,boxscore,W,,10-2,@,San Diego Chargers,17,3,19,293,159,134,1,15,272,179,93,3,-0.16,24.08,-5.00
+14,Sun,December 13,4:05PM ET,boxscore,L,,10-3,,Oakland Raiders,12,15,20,310,276,34,2,8,126,99,27,,-12.95,19.55,-11.01
+15,Sun,December 20,4:25PM ET,boxscore,L,,10-4,@,Pittsburgh Steelers,27,34,20,385,281,104,2,28,377,354,23,2,-1.86,-5.14,-0.34
+16,Mon,December 28,8:30PM ET,boxscore,W,OT,11-4,,Cincinnati Bengals,20,17,22,390,277,113,1,22,294,186,108,1,8.23,-1.33,-0.93
+17,Sun,January 3,4:25PM ET,boxscore,W,,12-4,,San Diego Chargers,27,20,21,503,293,210,5,15,317,207,110,1,-0.27,10.87,-2.21
+,,Playoffs,,,,,,,,,,,,,,,,,,,,,,
+Division,Sun,January 17,4:40PM ET,boxscore,W,,13-4,,Pittsburgh Steelers,23,16,19,324,215,109,,16,396,311,85,1,-5.76,3.71,9.90
+Conf. Champ.,Sun,January 24,3:05PM ET,boxscore,W,,14-4,,New England Patriots,20,18,12,244,145,99,1,20,336,292,44,2,-11.11,11.95,3.99
+SuperBowl,Sun,February 7,6:39PM ET,boxscore,W,,15-4,N,Carolina Panthers,24,10,11,194,104,90,2,21,315,197,118,4,-20.81,20.91,11.64

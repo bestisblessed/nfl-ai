@@ -1,0 +1,24 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 12,8:20PM ET,boxscore,W,,1-0,,Chicago Bears,34,14,18,386,312,74,,24,322,188,134,2,21.58,0.85,-0.52
+2,Sun,September 19,1:00PM ET,boxscore,W,,2-0,@,Indianapolis Colts,27,24,21,371,270,101,2,22,354,245,109,2,7.11,-1.29,-3.09
+3,Sun,September 26,4:25PM ET,boxscore,W,,3-0,,Tampa Bay Buccaneers,34,24,22,407,331,76,,27,446,411,35,,20.56,-15.15,3.43
+4,Sun,October 3,4:05PM ET,boxscore,L,,3-1,,Arizona Cardinals,20,37,24,401,280,121,2,27,465,249,216,,8.94,-21.72,-2.64
+5,Thu,October 7,8:20PM ET,boxscore,W,,4-1,@,Seattle Seahawks,26,17,24,476,358,118,1,22,354,262,92,2,13.76,-6.71,-0.05
+6,Sun,October 17,1:00PM ET,boxscore,W,,5-1,@,New York Giants,38,11,22,365,234,131,2,21,261,201,60,4,7.63,19.06,-0.96
+7,Sun,October 24,4:05PM ET,boxscore,W,,6-1,,Detroit Lions,28,19,22,374,327,47,,19,415,278,137,2,20.08,-3.32,-6.99
+8,Sun,October 31,1:00PM ET,boxscore,W,,7-1,@,Houston Texans,38,22,26,467,302,165,,18,323,279,44,1,22.20,-1.75,-8.01
+9,Sun,November 7,8:20PM ET,boxscore,L,,7-2,,Tennessee Titans,16,28,22,347,253,94,2,16,194,125,69,1,-11.78,-1.15,-0.53
+10,Mon,November 15,8:15PM ET,boxscore,L,,7-3,@,San Francisco 49ers,10,31,16,278,226,52,2,20,335,179,156,,-7.18,-11.33,-0.70
+11,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+12,Sun,November 28,4:25PM ET,boxscore,L,,7-4,@,Green Bay Packers,28,36,15,353,285,68,3,21,399,307,92,1,-5.92,-4.66,0.69
+13,Sun,December 5,4:25PM ET,boxscore,W,,8-4,,Jacksonville Jaguars,37,7,24,418,290,128,,14,197,136,61,2,21.19,12.55,-3.25
+14,Mon,December 13,8:15PM ET,boxscore,W,,9-4,@,Arizona Cardinals,30,23,18,356,267,89,,22,447,344,103,2,13.49,-0.66,-3.55
+15,Tue,December 21,7:00PM ET,boxscore,W,,10-4,,Seattle Seahawks,20,10,20,332,209,123,1,13,214,134,80,1,4.19,8.13,-3.72
+16,Sun,December 26,1:00PM ET,boxscore,W,,11-4,@,Minnesota Vikings,30,23,22,356,197,159,3,19,361,295,66,1,-0.84,1.81,7.80
+17,Sun,January 2,4:25PM ET,boxscore,W,,12-4,@,Baltimore Ravens,20,19,20,373,300,73,3,19,327,162,165,2,2.98,-0.40,-2.65
+18,Sun,January 9,4:25PM ET,boxscore,L,OT,12-5,,San Francisco 49ers,24,27,19,265,201,64,2,23,449,314,135,2,8.42,-15.33,3.91
+,,Playoffs,,,,,,,,,,,,,,,,,,,,,,
+Wild Card,Mon,January 17,8:15PM ET,boxscore,W,,13-5,,Arizona Cardinals,34,11,16,375,235,140,,14,183,122,61,2,11.41,17.81,-3.99
+Division,Sun,January 23,3:00PM ET,boxscore,W,,14-5,@,Tampa Bay Buccaneers,30,27,24,428,355,73,4,20,359,308,51,2,-6.76,4.46,6.08
+Conf. Champ.,Sun,January 30,6:30PM ET,boxscore,W,,15-5,,San Francisco 49ers,20,17,25,396,326,70,1,16,282,232,50,1,10.05,-3.75,-1.12
+SuperBowl,Sun,February 13,6:30PM ET,boxscore,W,,16-5,N,Cincinnati Bengals,23,20,17,313,270,43,2,15,305,226,79,,0.42,5.48,-1.93

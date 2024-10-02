@@ -1,0 +1,20 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 9,8:20PM ET,boxscore,L,,0-1,@,Green Bay Packers,23,24,18,294,155,139,1,16,370,301,69,2,-1.75,-1.65,-0.54
+2,Mon,September 17,8:15PM ET,boxscore,W,,1-1,,Seattle Seahawks,24,17,20,271,185,86,2,17,276,202,74,2,-0.24,11.46,-2.71
+3,Sun,September 23,4:25PM ET,boxscore,W,,2-1,@,Arizona Cardinals,16,14,21,316,194,122,2,13,221,168,53,4,-2.63,6.07,-1.68
+4,Sun,September 30,1:00PM ET,boxscore,W,,3-1,,Tampa Bay Buccaneers,48,10,28,483,344,139,,16,311,251,60,3,33.53,5.14,-0.24
+5,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+6,Sun,October 14,1:00PM ET,boxscore,L,OT,3-2,@,Miami Dolphins,28,31,23,467,303,164,3,23,541,380,161,3,12.66,-10.81,-5.41
+7,Sun,October 21,1:00PM ET,boxscore,L,,3-3,,New England Patriots,31,38,29,453,319,134,2,21,381,273,108,3,16.60,-9.37,-5.66
+8,Sun,October 28,1:00PM ET,boxscore,W,,4-3,,New York Jets,24,10,22,395,216,179,,12,207,150,57,,15.66,6.25,-9.71
+9,Sun,November 4,1:00PM ET,boxscore,W,,5-3,@,Buffalo Bills,41,9,11,190,126,64,1,22,264,166,98,4,-2.58,29.93,2.21
+10,Sun,November 11,1:00PM ET,boxscore,W,,6-3,,Detroit Lions,34,22,20,402,348,54,,24,305,229,76,3,21.90,0.42,-15.40
+11,Sun,November 18,8:20PM ET,boxscore,W,,7-3,,Minnesota Vikings,25,20,24,308,160,148,3,19,268,246,22,3,-0.26,6.90,-0.96
+12,Thu,November 22,12:30PM ET,boxscore,W,,8-3,@,Detroit Lions,23,16,19,264,226,38,1,17,333,222,111,2,1.31,2.71,0.91
+13,Sun,December 2,1:00PM ET,boxscore,L,OT,8-4,@,New York Giants,27,30,23,376,258,118,3,18,338,197,141,1,-5.96,1.90,7.06
+14,Sun,December 9,8:20PM ET,boxscore,W,,9-4,,Los Angeles Rams,15,6,17,294,100,194,3,14,214,162,52,4,-15.04,21.99,-2.29
+15,Sun,December 16,1:00PM ET,boxscore,W,,10-4,,Green Bay Packers,24,17,19,332,232,100,1,19,323,235,88,1,6.61,1.33,-0.49
+16,Sun,December 23,4:05PM ET,boxscore,W,,11-4,@,San Francisco 49ers,14,9,20,325,235,90,2,15,279,232,47,1,5.98,4.05,1.40
+17,Sun,December 30,4:25PM ET,boxscore,W,,12-4,@,Minnesota Vikings,24,10,17,332,163,169,,12,164,101,63,,9.09,11.59,-6.78
+,,Playoffs,,,,,,,,,,,,,,,,,,,,,,
+Wild Card,Sun,January 6,4:40PM ET,boxscore,L,,12-5,,Philadelphia Eagles,15,16,17,356,291,65,,21,300,258,42,2,5.47,-2.50,-10.43

@@ -8,7 +8,7 @@ import plotly.graph_objects as go
 
 
 # Set up the page
-st.title('Player Dashboard')
+st.title('Team Dashboard')
 df_teams = st.session_state['df_teams']
 df_games = st.session_state['df_games']
 df_playerstats = st.session_state['df_playerstats']

@@ -1,0 +1,20 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 13,1:02PM ET,boxscore,L,,0-1,,Kansas City Chiefs,20,27,24,396,298,98,2,19,330,233,97,,-4.01,-1.05,-2.24
+2,Sun,September 20,1:02PM ET,boxscore,L,,0-2,@,Carolina Panthers,17,24,21,300,239,61,1,25,350,178,172,1,-7.98,-2.49,3.79
+3,Sun,September 27,1:03PM ET,boxscore,W,,1-2,,Tampa Bay Buccaneers,19,9,30,413,227,186,1,14,318,261,57,1,5.85,4.34,-0.95
+4,Sun,October 4,1:02PM ET,boxscore,L,,1-3,@,Atlanta Falcons,21,48,24,428,374,54,4,22,378,243,135,,-10.28,-18.29,-1.55
+5,Thu,October 8,8:26PM ET,boxscore,L,,1-4,,Indianapolis Colts,20,27,24,444,362,82,2,22,323,213,110,,9.60,-13.69,-3.50
+6,Sun,October 18,1:02PM ET,boxscore,W,,2-4,@,Jacksonville Jaguars,31,20,24,382,287,95,,26,394,311,83,3,11.14,-1.46,1.30
+7,Sun,October 25,1:02PM ET,boxscore,L,,2-5,@,Miami Dolphins,26,44,24,322,251,71,1,21,503,255,248,1,-3.18,-18.06,2.29
+8,Sun,November 1,1:02PM ET,boxscore,W,,3-5,,Tennessee Titans,20,6,14,270,214,56,,15,211,125,86,3,-9.05,19.62,0.57
+9,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+10,Mon,November 16,8:30PM ET,boxscore,W,,4-5,@,Cincinnati Bengals,10,6,16,256,174,82,1,16,256,182,74,2,-5.18,8.48,-0.67
+11,Sun,November 22,1:03PM ET,boxscore,W,,5-5,,New York Jets,24,17,19,364,241,123,1,16,267,197,70,2,1.85,8.30,-0.51
+12,Sun,November 29,1:02PM ET,boxscore,W,,6-5,,New Orleans Saints,24,6,23,362,195,167,1,14,268,218,50,1,7.38,13.96,-5.29
+13,Sun,December 6,1:02PM ET,boxscore,L,,6-6,@,Buffalo Bills,21,30,21,401,275,126,1,15,390,203,187,,3.17,-11.35,-1.56
+14,Sun,December 13,8:31PM ET,boxscore,L,,6-7,,New England Patriots,6,27,7,189,102,87,1,18,313,197,116,1,-23.12,-3.18,5.49
+15,Sun,December 20,1:02PM ET,boxscore,W,,7-7,@,Indianapolis Colts,16,10,20,305,150,155,2,14,190,140,50,2,-3.07,15.10,-6.55
+16,Sun,December 27,1:02PM ET,boxscore,W,,8-7,@,Tennessee Titans,34,6,19,330,202,128,1,13,257,227,30,4,0.49,22.08,2.81
+17,Sun,January 3,1:02PM ET,boxscore,W,,9-7,,Jacksonville Jaguars,30,6,25,402,242,160,1,11,215,183,32,4,1.18,28.17,-4.68
+,,Playoffs,,,,,,,,,,,,,,,,,,,,,,
+Wild Card,Sat,January 9,4:35PM ET,boxscore,L,,9-8,,Kansas City Chiefs,0,30,14,226,112,114,5,18,314,173,141,1,-20.13,-3.37,-8.90

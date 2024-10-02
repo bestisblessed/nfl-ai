@@ -1,0 +1,18 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 11,1:04PM ET,boxscore,W,,1-0,,Buffalo Bills,13,7,18,308,225,83,1,11,160,95,65,,-5.23,7.45,3.59
+2,Sun,September 18,1:02PM ET,boxscore,W,,2-0,@,Cleveland Browns,25,20,22,382,302,80,2,17,387,242,145,2,1.83,-8.28,7.74
+3,Sun,September 25,1:02PM ET,boxscore,W,,3-0,@,Jacksonville Jaguars,19,17,18,283,199,84,3,14,216,168,48,3,-10.63,11.68,3.25
+4,Sun,October 2,1:02PM ET,boxscore,L,,3-1,,Oakland Raiders,27,28,25,412,282,130,1,13,261,199,62,1,-0.15,6.63,-8.30
+5,Sun,October 9,1:03PM ET,boxscore,L,,3-2,,Washington Redskins,10,16,18,306,188,118,1,18,310,250,60,2,-8.56,2.61,0.93
+6,Sun,October 16,1:02PM ET,boxscore,L,,3-3,@,New York Giants,23,27,22,391,293,98,,19,435,397,38,3,3.23,-7.59,2.80
+7,Sun,October 23,1:04PM ET,boxscore,L,,3-4,@,New York Jets,16,24,11,245,234,11,3,16,344,189,155,2,-22.09,3.23,11.51
+8,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+9,Sun,November 6,1:00PM ET,boxscore,W,,4-4,,Pittsburgh Steelers,21,14,13,274,224,50,1,15,277,241,36,1,-13.91,13.13,9.54
+10,Thu,November 10,8:25PM ET,boxscore,W,,5-4,,Cleveland Browns,28,7,29,396,277,119,2,11,144,111,33,3,10.87,14.46,-2.25
+11,Sun,November 20,1:00PM ET,boxscore,L,,5-5,@,Dallas Cowboys,17,27,17,368,267,101,,27,417,299,118,,10.17,-21.44,0.83
+12,Sun,November 27,1:00PM ET,boxscore,W,,6-5,,Cincinnati Bengals,19,14,16,311,219,92,1,22,325,261,64,2,-6.28,3.81,7.47
+13,Sun,December 4,1:00PM ET,boxscore,W,,7-5,,Miami Dolphins,38,6,28,496,386,110,2,16,277,215,62,3,18.64,13.66,-1.15
+14,Mon,December 12,8:30PM ET,boxscore,L,,7-6,@,New England Patriots,23,30,17,348,306,42,1,20,496,401,95,3,-2.31,-16.83,8.57
+15,Sun,December 18,1:00PM ET,boxscore,W,,8-6,,Philadelphia Eagles,27,26,18,340,189,151,2,27,328,159,169,1,2.83,0.33,-0.31
+16,Sun,December 25,4:30PM ET,boxscore,L,,8-7,@,Pittsburgh Steelers,27,31,22,368,246,122,1,23,406,279,127,2,5.24,-15.16,4.20
+17,Sun,January 1,1:00PM ET,boxscore,L,,8-8,@,Cincinnati Bengals,10,27,22,335,263,72,2,25,371,218,153,,-5.44,-13.29,2.09

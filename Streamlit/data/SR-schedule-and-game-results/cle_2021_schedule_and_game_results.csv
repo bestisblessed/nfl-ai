@@ -1,0 +1,19 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 12,4:25PM ET,boxscore,L,,0-1,@,Kansas City Chiefs,29,33,24,457,304,153,2,21,397,324,73,,20.54,-19.34,0.35
+2,Sun,September 19,1:00PM ET,boxscore,W,,1-1,,Houston Texans,31,21,22,355,199,156,2,17,302,220,82,2,8.22,-9.61,8.62
+3,Sun,September 26,1:00PM ET,boxscore,W,,2-1,,Chicago Bears,26,6,26,418,203,215,,6,47,1,46,,6.11,19.73,-2.28
+4,Sun,October 3,1:00PM ET,boxscore,W,,3-1,@,Minnesota Vikings,14,7,20,327,143,184,,16,255,190,65,1,-4.58,7.71,2.13
+5,Sun,October 10,4:05PM ET,boxscore,L,,3-2,@,Los Angeles Chargers,42,47,25,531,301,230,,27,493,381,112,1,22.52,-31.81,3.45
+6,Sun,October 17,4:05PM ET,boxscore,L,,3-3,,Arizona Cardinals,14,37,16,290,217,73,3,24,352,208,144,,-10.01,-16.91,1.93
+7,Thu,October 21,8:20PM ET,boxscore,W,,4-3,,Denver Broncos,17,14,23,376,194,182,,15,223,182,41,1,13.24,-4.39,-1.90
+8,Sun,October 31,1:00PM ET,boxscore,L,,4-4,,Pittsburgh Steelers,10,15,19,306,210,96,1,21,370,255,115,,-2.67,-1.77,0.11
+9,Sun,November 7,1:00PM ET,boxscore,W,,5-4,@,Cincinnati Bengals,41,16,14,361,208,153,,25,348,263,85,3,14.44,15.34,-4.50
+10,Sun,November 14,1:00PM ET,boxscore,L,,5-5,@,New England Patriots,7,45,17,217,118,99,1,30,452,268,184,,-9.48,-31.28,2.69
+11,Sun,November 21,1:00PM ET,boxscore,W,,6-5,,Detroit Lions,13,10,22,349,165,184,2,12,245,77,168,2,4.65,4.39,-6.08
+12,Sun,November 28,8:20PM ET,boxscore,L,,6-6,@,Baltimore Ravens,10,16,14,262,222,40,2,22,303,155,148,4,-11.16,7.17,-4.29
+13,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+14,Sun,December 12,1:00PM ET,boxscore,W,,7-6,,Baltimore Ravens,24,22,20,290,190,100,1,21,389,271,118,2,2.40,8.51,-5.68
+15,Mon,December 20,5:00PM ET,boxscore,L,,7-7,,Las Vegas Raiders,14,16,13,236,147,89,,20,328,230,98,2,1.13,-1.60,-0.20
+16,Sat,December 25,4:30PM ET,boxscore,L,,7-8,@,Green Bay Packers,22,24,28,408,189,219,4,19,311,202,109,,9.40,-10.56,-3.89
+17,Mon,January 3,8:15PM ET,boxscore,L,,7-9,@,Pittsburgh Steelers,14,26,15,232,139,93,2,20,299,109,190,1,-12.27,-0.38,-4.51
+18,Sun,January 9,1:00PM ET,boxscore,W,,8-9,,Cincinnati Bengals,21,16,24,376,171,205,2,11,182,103,79,,6.01,10.26,-4.58

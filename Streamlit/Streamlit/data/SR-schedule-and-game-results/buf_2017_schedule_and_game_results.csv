@@ -1,0 +1,20 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 10,1:00PM ET,boxscore,W,,1-0,,New York Jets,21,12,23,408,218,190,1,11,214,176,38,2,6.63,12.40,-10.09
+2,Sun,September 17,1:00PM ET,boxscore,L,,1-1,@,Carolina Panthers,3,9,10,176,107,69,,19,255,178,77,,-16.06,5.88,3.19
+3,Sun,September 24,1:00PM ET,boxscore,W,,2-1,,Denver Broncos,26,16,16,272,197,75,,21,366,255,111,2,-0.95,5.95,5.49
+4,Sun,October 1,1:00PM ET,boxscore,W,,3-1,@,Atlanta Falcons,23,17,15,281,164,117,,25,389,242,147,3,0.19,0.24,3.82
+5,Sun,October 8,1:00PM ET,boxscore,L,,3-2,@,Cincinnati Bengals,16,20,17,221,139,82,1,18,388,323,65,3,-8.53,0.39,3.60
+6,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+7,Sun,October 22,1:00PM ET,boxscore,W,,4-2,,Tampa Bay Buccaneers,30,27,23,434,261,173,1,27,447,378,69,3,15.51,-10.64,1.04
+8,Sun,October 29,1:00PM ET,boxscore,W,,5-2,,Oakland Raiders,34,14,17,331,165,166,,23,367,313,54,4,4.35,4.30,7.44
+9,Thu,November 2,8:25PM ET,boxscore,L,,5-3,@,New York Jets,21,34,21,307,244,63,3,21,331,137,194,,-6.85,-10.47,2.75
+10,Sun,November 12,1:00PM ET,boxscore,L,,5-4,,New Orleans Saints,10,47,10,198,129,69,1,32,482,184,298,1,-13.18,-27.89,3.74
+11,Sun,November 19,4:05PM ET,boxscore,L,,5-5,@,Los Angeles Chargers,24,54,18,393,220,173,6,28,429,283,146,,-14.25,-18.37,2.88
+12,Sun,November 26,1:00PM ET,boxscore,W,,6-5,@,Kansas City Chiefs,16,10,17,268,164,104,,14,236,181,55,1,-5.84,15.27,-0.26
+13,Sun,December 3,1:00PM ET,boxscore,L,,6-6,,New England Patriots,3,23,16,268,85,183,1,23,435,244,191,1,-14.27,-10.85,2.35
+14,Sun,December 10,1:00PM ET,boxscore,W,OT,7-6,,Indianapolis Colts,13,7,14,319,92,227,2,16,227,64,163,,-10.32,9.14,8.25
+15,Sun,December 17,1:00PM ET,boxscore,W,,8-6,,Miami Dolphins,24,16,21,328,212,116,,21,349,249,100,3,7.23,7.99,-5.67
+16,Sun,December 24,1:00PM ET,boxscore,L,,8-7,@,New England Patriots,16,37,17,326,242,84,,28,411,218,193,1,-2.94,-21.06,0.79
+17,Sun,December 31,4:25PM ET,boxscore,W,,9-7,@,Miami Dolphins,22,16,23,312,186,126,,21,356,263,93,1,10.73,1.12,-5.71
+,,Playoffs,,,,,,,,,,,,,,,,,,,,,,
+Wild Card,Sun,January 7,1:05PM ET,boxscore,L,,9-8,@,Jacksonville Jaguars,3,10,20,263,133,130,2,15,230,75,155,,-12.27,6.56,-5.13

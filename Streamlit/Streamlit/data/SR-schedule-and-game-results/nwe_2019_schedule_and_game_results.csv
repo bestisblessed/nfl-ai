@@ -1,0 +1,20 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 8,8:20PM ET,boxscore,W,,1-0,,Pittsburgh Steelers,33,3,24,465,366,99,,15,308,276,32,1,18.24,9.50,-0.80
+2,Sun,September 15,1:00PM ET,boxscore,W,,2-0,@,Miami Dolphins,43,0,27,379,255,124,1,11,184,142,42,4,14.12,35.44,-12.05
+3,Sun,September 22,1:00PM ET,boxscore,W,,3-0,,New York Jets,30,14,21,381,313,68,2,6,105,69,36,1,1.65,26.43,-9.81
+4,Sun,September 29,1:00PM ET,boxscore,W,,4-0,@,Buffalo Bills,16,10,11,224,150,74,1,23,375,240,135,4,-14.59,12.71,6.09
+5,Sun,October 6,1:00PM ET,boxscore,W,,5-0,@,Washington Redskins,33,7,23,442,312,130,1,11,223,78,145,2,9.23,20.78,-6.54
+6,Thu,October 10,8:20PM ET,boxscore,W,,6-0,,New York Giants,35,14,27,427,313,114,2,10,213,161,52,4,-0.69,24.29,1.10
+7,Mon,October 21,8:15PM ET,boxscore,W,,7-0,@,New York Jets,33,0,22,323,249,74,1,12,154,73,81,6,2.21,28.37,1.82
+8,Sun,October 27,4:25PM ET,boxscore,W,,8-0,,Cleveland Browns,27,13,19,318,239,79,,15,310,151,159,3,4.62,19.38,-7.91
+9,Sun,November 3,8:20PM ET,boxscore,L,,8-1,@,Baltimore Ravens,20,37,22,342,268,74,2,26,372,162,210,2,-5.25,-14.46,5.09
+10,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+11,Sun,November 17,4:25PM ET,boxscore,W,,9-1,@,Philadelphia Eagles,17,10,19,298,224,74,,21,255,174,81,1,-4.83,9.17,0.43
+12,Sun,November 24,4:25PM ET,boxscore,W,,10-1,,Dallas Cowboys,13,9,17,282,181,101,,16,321,212,109,1,-7.59,7.56,4.62
+13,Sun,December 1,8:20PM ET,boxscore,L,,10-2,@,Houston Texans,22,28,29,448,303,145,1,16,276,224,52,,9.51,-10.32,-6.77
+14,Sun,December 8,4:25PM ET,boxscore,L,,10-3,,Kansas City Chiefs,16,23,17,278,184,94,1,20,346,271,75,2,-5.79,1.14,-1.25
+15,Sun,December 15,1:00PM ET,boxscore,W,,11-3,@,Cincinnati Bengals,34,13,19,291,116,175,,19,315,151,164,5,2.27,12.48,6.29
+16,Sat,December 21,4:30PM ET,boxscore,W,,12-3,,Buffalo Bills,24,17,23,414,271,143,1,14,268,176,92,,6.06,0.45,-0.88
+17,Sun,December 29,1:00PM ET,boxscore,L,,12-4,,Miami Dolphins,24,27,18,352,217,135,2,26,389,326,63,,6.29,-13.34,4.09
+,,Playoffs,,,,,,,,,,,,,,,,,,,,,,
+Wild Card,Sat,January 4,8:15PM ET,boxscore,L,,12-5,,Tennessee Titans,13,20,18,307,209,98,2,19,272,71,201,1,-0.84,-2.83,-0.20

@@ -1,0 +1,22 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Mon,September 12,7:11PM ET,boxscore,W,,1-0,@,Washington Redskins,38,16,23,437,290,147,1,18,384,329,55,2,22.31,4.94,-0.19
+2,Sun,September 18,1:02PM ET,boxscore,W,,2-0,,Cincinnati Bengals,24,16,19,374,250,124,2,21,412,366,46,2,3.03,5.93,2.88
+3,Sun,September 25,4:25PM ET,boxscore,L,,2-1,@,Philadelphia Eagles,3,34,15,251,222,29,2,25,426,301,125,,-10.46,-22.12,0.94
+4,Sun,October 2,8:30PM ET,boxscore,W,,3-1,,Kansas City Chiefs,43,14,18,436,287,149,,22,357,270,87,2,15.53,3.86,4.24
+5,Sun,October 9,1:02PM ET,boxscore,W,,4-1,,New York Jets,31,13,30,436,375,61,1,16,316,244,72,,15.65,0.46,3.39
+6,Sun,October 16,1:02PM ET,boxscore,L,,4-2,@,Miami Dolphins,15,30,15,297,169,128,2,24,474,252,222,,-3.50,-19.26,5.20
+7,Sun,October 23,4:25PM ET,boxscore,L,,4-3,,New England Patriots,16,27,17,375,281,94,1,21,362,222,140,2,-4.28,-12.52,6.81
+8,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+9,Sun,November 6,1:00PM ET,boxscore,L,,4-4,@,Baltimore Ravens,14,21,15,277,241,36,1,13,274,224,50,1,-13.13,13.91,-9.54
+10,Sun,November 13,4:25PM ET,boxscore,L,,4-5,,Dallas Cowboys,30,35,30,448,400,48,,20,422,295,127,1,21.01,-13.50,-10.13
+11,Sun,November 20,1:00PM ET,boxscore,W,,5-5,@,Cleveland Browns,24,9,24,313,167,146,,17,209,176,33,2,8.07,1.22,1.71
+12,Thu,November 24,8:30PM ET,boxscore,W,,6-5,@,Indianapolis Colts,28,7,16,369,221,148,,18,310,219,91,2,17.02,1.12,-0.14
+13,Sun,December 4,4:25PM ET,boxscore,W,,7-5,,New York Giants,24,14,20,389,272,117,2,16,234,178,56,2,1.23,11.75,-0.29
+14,Sun,December 11,1:00PM ET,boxscore,W,,8-5,@,Buffalo Bills,27,20,24,460,220,240,3,14,275,208,67,1,5.34,-4.16,4.88
+15,Sun,December 18,1:00PM ET,boxscore,W,,9-5,@,Cincinnati Bengals,24,20,26,382,285,97,,19,222,146,76,1,10.48,-4.82,3.43
+16,Sun,December 25,4:30PM ET,boxscore,W,,10-5,,Baltimore Ravens,31,27,23,406,279,127,2,22,368,246,122,1,15.16,-5.24,-4.20
+17,Sun,January 1,1:00PM ET,boxscore,W,OT,11-5,,Cleveland Browns,27,24,21,312,243,69,1,27,437,206,231,4,3.43,-4.66,1.81
+,,Playoffs,,,,,,,,,,,,,,,,,,,,,,
+Wild Card,Sun,January 8,1:05PM ET,boxscore,W,,12-5,,Miami Dolphins,30,12,19,367,188,179,2,18,305,253,52,3,14.79,11.03,-8.21
+Division,Sun,January 15,8:20PM ET,boxscore,W,,13-5,@,Kansas City Chiefs,18,16,20,389,218,171,1,16,227,166,61,2,-2.25,3.67,0.19
+Conf. Champ.,Sun,January 22,6:40PM ET,boxscore,L,,13-6,@,New England Patriots,17,36,22,368,314,54,2,26,431,374,57,,2.88,-20.62,-2.03

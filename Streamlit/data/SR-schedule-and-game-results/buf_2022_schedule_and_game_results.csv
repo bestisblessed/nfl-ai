@@ -1,0 +1,22 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Thu,September 8,8:20PM ET,boxscore,W,,1-0,@,Los Angeles Rams,31,10,23,413,292,121,4,19,243,191,52,3,13.89,10.29,-3.96
+2,Mon,September 19,7:15PM ET,boxscore,W,,2-0,,Tennessee Titans,41,7,23,414,313,101,,12,187,107,80,4,17.69,18.01,1.55
+3,Sun,September 25,1:00PM ET,boxscore,L,,2-1,@,Miami Dolphins,19,21,31,497,382,115,1,15,212,171,41,,15.88,-7.45,-4.86
+4,Sun,October 2,1:00PM ET,boxscore,W,,3-1,@,Baltimore Ravens,23,20,22,326,201,125,2,22,296,134,162,2,2.10,2.66,-1.69
+5,Sun,October 9,1:00PM ET,boxscore,W,,4-1,,Pittsburgh Steelers,38,3,21,552,432,120,2,23,364,310,54,2,20.66,9.42,3.54
+6,Sun,October 16,4:25PM ET,boxscore,W,,5-1,@,Kansas City Chiefs,24,20,26,443,318,125,1,23,387,319,68,2,11.13,-6.45,0.56
+7,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+8,Sun,October 30,8:20PM ET,boxscore,W,,6-1,,Green Bay Packers,27,17,20,369,216,153,2,21,398,190,208,1,12.79,-5.55,4.01
+9,Sun,November 6,1:00PM ET,boxscore,L,,6-2,@,New York Jets,17,20,19,317,183,134,2,21,310,136,174,1,0.54,-7.64,2.11
+10,Sun,November 13,1:00PM ET,boxscore,L,OT,6-3,,Minnesota Vikings,30,33,29,486,311,175,4,24,481,334,147,2,1.45,-4.80,-0.39
+11,Sun,November 20,1:00PM ET,boxscore,W,,7-3,,Cleveland Browns,31,23,22,357,186,171,,27,396,316,80,1,6.00,-10.86,13.72
+12,Thu,November 24,12:30PM ET,boxscore,W,,8-3,@,Detroit Lions,28,25,28,401,237,164,1,22,326,230,96,2,16.07,-12.71,-3.07
+13,Thu,December 1,8:15PM ET,boxscore,W,,9-3,@,New England Patriots,24,10,22,355,223,132,1,14,242,182,60,,9.50,1.41,3.26
+14,Sun,December 11,1:00PM ET,boxscore,W,,10-3,,New York Jets,20,12,14,232,130,102,,19,309,233,76,2,-5.17,12.35,3.77
+15,Sat,December 17,8:15PM ET,boxscore,W,,11-3,,Miami Dolphins,32,29,29,446,296,150,1,20,405,217,188,,19.07,-10.87,-4.20
+16,Sat,December 24,1:00PM ET,boxscore,W,,12-3,@,Chicago Bears,35,13,20,426,172,254,3,11,209,129,80,2,9.47,20.55,-9.39
+17,Mon,January 2,8:30PM ET,canceled,-,,12-3,@,Cincinnati Bengals,Canceled,,,,,,,,,,,,,,
+18,Sun,January 8,1:00PM ET,boxscore,W,,13-3,,New England Patriots,35,23,18,327,237,90,3,20,341,234,107,3,5.28,2.57,7.70
+,,Playoffs,,,,,,,,,,,,,,,,,,,,,,
+Wild Card,Sun,January 15,1:00PM ET,boxscore,W,,14-3,,Miami Dolphins,34,31,25,423,316,107,3,16,231,189,42,2,-2.41,15.56,-6.64
+Division,Sun,January 22,3:00PM ET,boxscore,L,,14-4,,Cincinnati Bengals,10,27,19,325,261,64,1,30,412,240,172,,3.52,-22.03,1.83
