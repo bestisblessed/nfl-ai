@@ -37,7 +37,9 @@ def fetch_player_names_and_image():
     """
     player_names = pd.read_sql_query(query, conn)['player_display_name'].tolist()
     conn.close()
-    selected_player = st.selectbox("Select Player", options=player_names)
+    # selected_player = st.selectbox("Select Player", options=player_names)
+    default_index = player_names.index("Justin Jefferson") if "Justin Jefferson" in player_names else 0
+    selected_player = st.selectbox("Select Player", options=player_names, index=default_index)
     first_name, last_name = selected_player.lower().split(' ')
     image_path = None
     for ext in ['png', 'jpg', 'jpeg']:

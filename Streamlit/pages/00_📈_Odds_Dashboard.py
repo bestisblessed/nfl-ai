@@ -1,4 +1,3 @@
-### Libraries ###
 import streamlit as st
 import pandas as pd
 import os
@@ -9,6 +8,7 @@ from streamlit_modal import Modal
 st.title('Odds Dashboard')
 # df_nfl_odds_movements = st.session_state['df_nfl_odds_movements']
 # df_nfl_odds_movements = df_nfl_odds_movements
+st.divider()
 
 ### Load NFL odds movements ###
 def load_odds_movements():
@@ -60,17 +60,16 @@ def load_games_data():
         st.warning("No JSON files found in the data directory.")
     return games_data
 
-### Load the data ###
+### Display game information and odds ###
 df_nfl_odds_movements = load_odds_movements()
 games_data = load_games_data()
-
-### Streamlit layout ###
-st.title("NFL Odds Dashboard")
-
-### Display game information and odds ###
 for game in games_data:
-    st.subheader(game['day_and_matchup_column_name'])
+    # st.subheader(game['day_and_matchup_column_name'])
+    # st.markdown(game['day_and_matchup_column_name'])
+    # st.markdown(f"<h2 style='color: purple; font-size: 24px; font-weight: bold;'>{game['day_and_matchup_column_name']}</h2>", unsafe_allow_html=True)
+    st.markdown(f"<h3 style='font-weight: bold; color: #512D6D; text-shadow: -1px -1px 0 #C5B783, 1px -1px 0 #C5B783, -1px 1px 0 #C5B783, 1px 1px 0 #C5B783;'> {game['day_and_matchup_column_name']} </h3>", unsafe_allow_html=True)
     st.text(f"Game Time: {game['time'].replace('splits', '').strip()}")
+    # st.markdown(f"<h5 style='font-weight: bold; color: #512D6D; text-shadow: -1px -1px 0 #C5B783, 1px -1px 0 #C5B783, -1px 1px 0 #C5B783, 1px 1px 0 #C5B783;'>Game Time: {game['time'].replace('splits', '').strip()}</h5>", unsafe_allow_html=True)
     df = pd.DataFrame({
         "Team": [game['teams'][0], game['teams'][1]],
         "Spread": [game['spread'][0], game['spread'][1]],
@@ -78,16 +77,18 @@ for game in games_data:
         "Total": [game['total'][0], game['total'][1]]
     })
     st.table(df)
+    # st.dataframe(df, use_container_width=True)
 
     ### Buttons and modal for odds movement ###
     for team in game['teams']:
         modal = Modal(f"Odds Movement for {team}", key=f"modal_{team}")
-        if st.button(f"See odds movement for {team}"):
+        # Adding a unique key to each button using team name as part of the key
+        if st.button(f"See odds movement for {team}", key=f"button_{team}_{game['day_and_matchup_column_name']}"):
             modal.open()
 
         if modal.is_open():
             with modal.container():
-                st.subheader(f"Odds Movement for {team}")
+                # st.subheader(f"Odds Movement for {team}")
                 game_date_clean = game['game_date'].replace(' ', '').strip().lower()
                 game_time_clean = game['time'].strip().lower()
                 matchup_clean = game['matchup'].strip().lower()
@@ -111,6 +112,7 @@ for game in games_data:
                     default_index = sportsbooks.index('Circa') if 'Circa' in sportsbooks else 0
                     selected_sportsbook = st.selectbox("Select Sportsbook", sportsbooks, index=default_index, key=f"sb_{team}")
                     filtered_data = relevant_odds_movements[relevant_odds_movements['sportsbook'] == selected_sportsbook]
-                    st.table(filtered_data[['timestamp', 'sportsbook', 'odds_before', 'odds_after']])
+                    st.dataframe(filtered_data[['timestamp', 'sportsbook', 'odds_before', 'odds_after']], use_container_width=True)
                 else:
                     st.write("No odds movement data available for this game.")
+    st.divider()
