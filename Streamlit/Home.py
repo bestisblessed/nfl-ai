@@ -22,7 +22,7 @@ st.write('Welcome to NFL AI')
 df_teams = pd.read_csv('Streamlit/data/Teams.csv')
 df_games = pd.read_csv('Streamlit/data/Games.csv')
 df_playerstats = pd.read_csv('Streamlit/data/PlayerStats.csv')
-df_team_game_logs = pd.read_csv('Streamlit/data/all_teams_game_logs_2023.csv')
+df_team_game_logs = pd.read_csv('Streamlit/data/all_teams_game_logs.csv')
 df_schedule_and_game_results = pd.read_csv('Streamlit/data/all_teams_schedule_and_game_results_merged.csv')
 st.session_state['df_teams'] = df_teams
 st.session_state['df_games'] = df_games
