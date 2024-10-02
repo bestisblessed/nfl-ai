@@ -88,29 +88,12 @@ for year in years:
     st.write()
     st.write()
 
-# # Code for plotting Sacks Made and Sacks Taken
-# # Get the list of teams from the unique team values in your dataset
-# teams = sack_stats_df['team'].tolist()
-
-# # Ensure we match the correct sacks made and sacks taken for each team
-# sacks_made = [sack_stats_df[sack_stats_df['team'] == team]['sacks_made'].values[0] for team in teams]
-# sacks_taken = [sack_stats_df[sack_stats_df['team'] == team]['sacks_taken'].values[0] for team in teams]
-# Sort sack_stats_df by sacks made and taken
-sack_stats_df_sorted = sack_stats_df.sort_values(by=['sacks_made', 'sacks_taken'], ascending=False)
-
-# Get the list of teams from the sorted DataFrame
-teams = sack_stats_df_sorted['team'].tolist()
-
-# Ensure we match the correct sacks made and sacks taken for each team
-sacks_made = sack_stats_df_sorted['sacks_made'].tolist()
-sacks_taken = sack_stats_df_sorted['sacks_taken'].tolist()
-
-
+    
 # Create the x locations for the teams
 x = np.arange(len(teams))  # Label locations
 
-# Create two subplots: one for sacks made and one for sacks taken
-fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(14, 12))
+# Create a single plot for sacks made
+fig, ax1 = plt.subplots(figsize=(14, 6))
 
 # Bar chart for sacks made
 rects1 = ax1.bar(x, sacks_made, color='green')
@@ -131,11 +114,11 @@ def autolabel(rects, ax):
                     textcoords="offset points",
                     ha='center', va='bottom')
 
-# Add value labels to both bar charts
+# Add value labels to the bar chart
 autolabel(rects1, ax1)
 
 # Ensure layout fits well with rotated labels
 plt.tight_layout()
 
-# Display the plots in Streamlit
+# Display the plot in Streamlit
 st.pyplot(fig)  # Use Streamlit to display the Matplotlib figure
