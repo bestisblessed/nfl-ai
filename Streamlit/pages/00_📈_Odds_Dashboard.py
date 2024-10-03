@@ -4,6 +4,7 @@ import os
 import json
 import re
 from streamlit_modal import Modal
+import matplotlib.pyplot as plt
 
 st.title('Odds Dashboard')
 # df_nfl_odds_movements = st.session_state['df_nfl_odds_movements']
@@ -115,4 +116,70 @@ for game in games_data:
                     st.dataframe(filtered_data[['timestamp', 'sportsbook', 'odds_before', 'odds_after']], use_container_width=True)
                 else:
                     st.write("No odds movement data available for this game.")
+
+            
+                    
     st.divider()
+
+
+
+### Line Graph ###
+# file_path_circa = 'data/nfl_odds_movements_circa.csv'  # Update with your file path
+# nfl_odds_data_circa = pd.read_csv(file_path_circa)
+# browns_raiders_data = nfl_odds_data_circa[nfl_odds_data_circa['matchup'] == 'Cleveland Browns vs  Las Vegas Raiders'] # Filter data for the two matchups
+# saints_falcons_data = nfl_odds_data_circa[nfl_odds_data_circa['matchup'] == 'New Orleans Saints vs  Atlanta Falcons']
+# browns_raiders_data['team1_odds_before'] = browns_raiders_data['team1_odds_before'].replace('PK', 0).astype(float) # Replace 'PK' with 0 for plotting purposes and convert odds to float
+# browns_raiders_data['team2_odds_before'] = browns_raiders_data['team2_odds_before'].replace('PK', 0).astype(float)
+# saints_falcons_data['team1_odds_before'] = saints_falcons_data['team1_odds_before'].replace('PK', 0).astype(float)
+# saints_falcons_data['team2_odds_before'] = saints_falcons_data['team2_odds_before'].replace('PK', 0).astype(float)
+# browns_raiders_data['time_before'] = pd.to_datetime(browns_raiders_data['time_before'], format='%b %d %I:%M%p') # Convert time_before column to datetime for proper plotting
+# saints_falcons_data['time_before'] = pd.to_datetime(saints_falcons_data['time_before'], format='%b %d %I:%M%p')
+# plt.figure(figsize=(10, 6)) # Create the line graph for Cleveland Browns vs Las Vegas Raiders
+# plt.plot(browns_raiders_data['time_before'], browns_raiders_data['team1_odds_before'], label='Cleveland Browns', marker='o')
+# plt.plot(browns_raiders_data['time_before'], browns_raiders_data['team2_odds_before'], label='Las Vegas Raiders', marker='o')
+# plt.title('Odds Movement: Cleveland Browns vs Las Vegas Raiders')
+# plt.xlabel('Time of Odds Change')
+# plt.ylabel('Odds')
+# plt.xticks(rotation=45)
+# plt.legend()
+# plt.grid(True)
+# st.pyplot(plt)
+# plt.figure(figsize=(10, 6)) # Create the line graph for New Orleans Saints vs Atlanta Falcons
+# plt.plot(saints_falcons_data['time_before'], saints_falcons_data['team1_odds_before'], label='New Orleans Saints', marker='o')
+# plt.plot(saints_falcons_data['time_before'], saints_falcons_data['team2_odds_before'], label='Atlanta Falcons', marker='o')
+# plt.title('Odds Movement: New Orleans Saints vs Atlanta Falcons')
+# plt.xlabel('Time of Odds Change')
+# plt.ylabel('Odds')
+# plt.xticks(rotation=45)
+# plt.legend()
+# plt.grid(True)
+# st.pyplot(plt)
+file_path_circa = 'data/nfl_odds_movements_circa.csv'
+nfl_odds_data_circa = pd.read_csv(file_path_circa)
+unique_matchups = nfl_odds_data_circa['matchup'].unique()
+selected_matchup = st.selectbox("Select Matchup", unique_matchups)
+selected_data = nfl_odds_data_circa[nfl_odds_data_circa['matchup'] == selected_matchup]
+selected_data['team1_odds_before'] = selected_data['team1_odds_before'].replace('PK', 0).astype(float)
+selected_data['team2_odds_before'] = selected_data['team2_odds_before'].replace('PK', 0).astype(float)
+selected_data['time_before'] = pd.to_datetime(selected_data['time_before'], format='%b %d %I:%M%p')
+plt.figure(figsize=(10, 6))
+# plt.plot(selected_data['time_before'], selected_data['team1_odds_before'], label=selected_matchup.split(' vs ')[0], marker='o')
+# plt.plot(selected_data['time_before'], selected_data['team2_odds_before'], label=selected_matchup.split(' vs ')[1], marker='o')
+plt.plot(selected_data['time_before'], selected_data['team1_odds_before'], label=selected_matchup.split(' vs ')[0])
+plt.plot(selected_data['time_before'], selected_data['team2_odds_before'], label=selected_matchup.split(' vs ')[1])
+plt.title(f'Odds Movement: {selected_matchup}')
+plt.xlabel('Time of Odds Change')
+plt.ylabel('Odds')
+plt.xticks(rotation=45)
+plt.legend()
+plt.grid(True)
+st.pyplot(plt)
+
+
+
+### Archive (Past Games) ###
+st.divider()
+st.subheader("Archive")
+archive_options = ["2022 Season", "2021 Season", "2020 Season", "Older Seasons"]
+selected_archive = st.selectbox("Select Archive", options=archive_options)
+
