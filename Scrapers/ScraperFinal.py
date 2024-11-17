@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup, Comment
 import time
 from time import sleep
 import numpy as np
-from datetime import datetime
+from datetime import datetime, timedelta
 from requests.exceptions import Timeout, RequestException
 
 if not os.path.exists('data'):
@@ -1084,6 +1084,7 @@ for year in range(2010, 2025):
         print(f"No defense data file found for {year}")
 
 
+
 ##### Export all tables from nfl.db to csv files with current date's timestamp in the file names to a final directory #####
 import sqlite3
 import pandas as pd
@@ -1104,6 +1105,19 @@ for table in tables:
     df.to_csv(csv_file_name, index=False)
     print(f"Downloaded {table_name} to {csv_file_name}")
 conn.close()
+
+
+##### Remove Unplayed Games #####
+current_date_str = datetime.now().strftime("%b_%d_%Y").upper()
+file_name = f"final_data/Games_{current_date_str}.csv"
+games_df = pd.read_csv(file_name)
+games_df['date'] = pd.to_datetime(games_df['date'], errors='coerce')
+current_date = datetime.now()
+cleaned_games_df = games_df[games_df['date'] <= current_date]
+cleaned_games_df.to_csv(file_name, index=False)
+print(f"Cleaned data saved to {file_name}")
+
+
 
 
 ##### TO DO #####
@@ -1375,6 +1389,7 @@ conn.close()
 #     data['Year'] = data['Year'].str.replace('+', '', regex=False)
 #     data.to_csv(file_path, index=False)
 #     print(f"File updated: {file_path}")
+
 
 
 
