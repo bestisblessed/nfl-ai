@@ -1022,11 +1022,6 @@ print(merged_df[['player', 'position']].head())
 
 
 ##### Defense #####
-import requests
-from bs4 import BeautifulSoup, Comment
-import csv
-import os
-import time
 os.makedirs('data/defense-game-logs', exist_ok=True)
 headers = [
     'player', 'team', 'def_int', 'def_int_yds', 'def_int_td', 'def_int_long', 'pass_defended', 'sacks',
@@ -1090,10 +1085,6 @@ for year in range(2024, 2025):
 
 
 ##### Export all tables from nfl.db to csv files with current date's timestamp in the file names to a final directory #####
-import sqlite3
-import pandas as pd
-import datetime
-import os
 db_path = 'nfl.db'  
 conn = sqlite3.connect(db_path)
 tables_query = "SELECT name FROM sqlite_master WHERE type='table';"
