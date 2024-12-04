@@ -10,6 +10,10 @@ import numpy as np
 from datetime import datetime, timedelta
 from requests.exceptions import Timeout, RequestException
 
+# Print start time
+start_time = datetime.now()
+print(f"Process started at: {start_time.strftime('%Y-%m-%d %H:%M:%S')}")
+
 if not os.path.exists('data'):
     os.system('mkdir data')
 if not os.path.exists('data/rosters'):
@@ -1100,7 +1104,8 @@ if not os.path.exists(final_dir):
 for table in tables:
     table_name = table[0]
     df = pd.read_sql_query(f"SELECT * FROM {table_name}", conn)
-    current_date = datetime.datetime.now().strftime("%b_%d_%Y").upper()
+    # current_date = datetime.datetime.now().strftime("%b_%d_%Y").upper()
+    current_date = datetime.now().strftime("%b_%d_%Y").upper()
     csv_file_name = f"{final_dir}/{table_name}_{current_date}.csv"
     df.to_csv(csv_file_name, index=False)
     print(f"Downloaded {table_name} to {csv_file_name}")
@@ -1116,8 +1121,6 @@ current_date = datetime.now()
 cleaned_games_df = games_df[games_df['date'] <= current_date]
 cleaned_games_df.to_csv(file_name, index=False)
 print(f"Cleaned data saved to {file_name}")
-
-
 
 
 ##### TO DO #####
@@ -1391,5 +1394,8 @@ print(f"Cleaned data saved to {file_name}")
 #     print(f"File updated: {file_path}")
 
 
-
-
+# Print end time and total elapsed time
+end_time = datetime.now()
+elapsed_time = end_time - start_time
+print(f"Process ended at: {end_time.strftime('%Y-%m-%d %H:%M:%S')}")
+print(f"Total time elapsed: {elapsed_time}")
