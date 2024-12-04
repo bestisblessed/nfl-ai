@@ -288,7 +288,7 @@ for idx, team in enumerate(standardized_team_list_sorted, 1):
 rosters_df.to_csv('data/rosters.csv', index=False)
 
 
-##### Scrape Box Scores (2010-2025) #####
+##### Scrape Box Scores (2024-2025) #####
 df = pd.read_csv('./data/games.csv')
 df['pfr_url'] = 'https://www.pro-football-reference.com/boxscores/' + df['pfr'] + '.htm'
 df.to_csv('./data/games.csv', index=False)
@@ -305,7 +305,7 @@ with open(csv_file_path, 'a', newline='') as csvfile:
     score_writer = csv.writer(csvfile)
     if os.path.getsize(csv_file_path) == 0:
         score_writer.writerow(headers)  
-    for year_to_scrape in range(2010, 2025):
+    for year_to_scrape in range(2024, 2025):
         game_urls = []
         with open(games_csv_path, 'r') as csvfile:
             reader = csv.DictReader(csvfile)
@@ -351,8 +351,8 @@ df = df.apply(shift_to_final, axis=1)
 df.to_csv('data/box_scores.csv', index=False)
 
 
-##### Scrape Scoring Tables/Touchdown Logs (2010-2025) #####
-for year_to_scrape in range(2010, 2025):
+##### Scrape Scoring Tables/Touchdown Logs (2024-2025) #####
+for year_to_scrape in range(2024, 2025):
     output_filename = f'./data/scoring-tables/all_nfl_scoring_tables_{year_to_scrape}.csv'
     with open(output_filename, 'w', newline='') as output_csvfile:
         csvwriter = csv.writer(output_csvfile)
@@ -388,7 +388,7 @@ for year_to_scrape in range(2010, 2025):
     print(f"Scraping completed for {year_to_scrape}. Scoring data saved to {output_filename}.")
 
 
-##### Scrape Team Game Logs (2010-2025) #####
+##### Scrape Team Game Logs (2024-2025) #####
 data_dir = './data/SR-game-logs'
 os.makedirs(data_dir, exist_ok=True)
 opponent_data_dir = './data/SR-opponent-game-logs'
@@ -443,7 +443,7 @@ opponent_game_logs_headers = [
     'fgm', 'fga', 'xpm', 'xpa', 'punt', 'punt_yds', 'third_down_success', 'third_down_att',
     'fourth_down_success', 'fourth_down_att', 'time_of_poss', 'Team_Name'
 ]
-for year in range(2010, 2025):
+for year in range(2024, 2025):
     all_team_game_logs = []  
     all_opponent_game_logs = []
     for team in teams:
@@ -642,7 +642,7 @@ team_stats_headers = [
     'Player', 'PF', 'Yds', 'Ply', 'Y/P', 'TO', 'FL', '1stD', 'Cmp', 'Att', 'Yds', 'TD', 'Int', 'NY/A',
     '1stD', 'Att', 'Yds', 'TD', 'Y/A', '1stD', 'Pen', 'Yds', '1stPy', '#Dr', 'Sc%', 'TO%', 'Start', 'Time', 'Plays', 'Yds', 'Pts', 'Team'
 ]
-for year in range(2010, 2025):
+for year in range(2024, 2025):
     all_team_stats = []  
     for team in teams:
         abbreviation, name = team
@@ -714,7 +714,7 @@ schedule_headers = [
     'Opp1stD', 'OppTotYd', 'OppPassY', 'OppRushY', 'TO_won',
     'Offense', 'Defense', 'Sp. Tms'
 ]
-for year in range(2010, 2025):
+for year in range(2024, 2025):
     all_games = []  
     for team in teams:
         abbreviation, name = team
@@ -806,7 +806,7 @@ teams = [
 team_conversions_headers = [
     'Player', '3DAtt', '3DConv', '3D%', '4DAtt', '4DConv', '4D%', 'RZAtt', 'RZTD', 'RZPct', 'Team'
 ]
-for year in range(2010, 2025):
+for year in range(2024, 2025):
     for team in teams:
         abbreviation, name = team
         print(f'Processing {name} for the year {year}')  
@@ -895,7 +895,7 @@ print("Columns 'home_spread', 'away_spread', 'team_favorite', and 'team_covered'
 
 ##### Passing/Rushing/Receiving #####
 os.makedirs('./data/passing-rushing-receiving-game-logs/', exist_ok=True)
-for year_to_scrape in range(2010, 2025):
+for year_to_scrape in range(2024, 2025):
     output_filename = f'./data/passing-rushing-receiving-game-logs/all_passing_rushing_receiving_{year_to_scrape}.csv'
     with open(output_filename, 'w', newline='') as output_csvfile:
         csvwriter = csv.writer(output_csvfile)
@@ -1029,7 +1029,7 @@ headers = [
     'tackles_combined', 'tackles_solo', 'tackles_assists', 'tackles_loss', 'qb_hits', 'fumbles_rec',
     'fumbles_rec_yds', 'fumbles_rec_td', 'fumbles_forced', 'game_id'
 ]
-for year_to_scrape in range(2010, 2025):
+for year_to_scrape in range(2024, 2025):
     output_filename = f'./data/defense-game-logs/all_defense_{year_to_scrape}.csv'
     with open(output_filename, 'w', newline='') as output_csvfile:
         csvwriter = csv.writer(output_csvfile)
@@ -1073,7 +1073,7 @@ for year_to_scrape in range(2010, 2025):
 # df = pd.read_csv('./data/defense-game-logs/all_defense_2024.csv')
 # df.dropna(inplace=True)
 # df.to_csv('./data/defense-game-logs/all_defense_2024.csv', index=False)
-for year in range(2010, 2025):
+for year in range(2024, 2025):
     file_path = f'./data/defense-game-logs/all_defense_{year}.csv'
     try:
         df = pd.read_csv(file_path)
