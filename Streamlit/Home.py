@@ -35,7 +35,7 @@ df_all_passing_rushing_receiving = pd.read_csv(csv_file_path_3)
 # df_nfl_odds_movements = pd.read_csv(csv_file_path_5)
 
 # Add these lines where you load other CSV files
-csv_file_path_odds = os.path.join(current_dir, 'data/odds/nfl_odds_movements.csv')
+csv_file_path_odds = os.path.join(current_dir, 'data/nfl_odds_movements.csv')
 csv_file_path_circa = os.path.join(current_dir, 'data/nfl_odds_movements_circa.csv')
 
 try:
