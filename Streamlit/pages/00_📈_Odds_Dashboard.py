@@ -16,22 +16,21 @@ st.title('Odds Dashboard')
 # df_nfl_odds_movements = df_nfl_odds_movements
 st.divider()
 
-### Load NFL odds movements ###
-def load_odds_movements():
-    odds_file_path = os.path.join(base_dir, 'data/odds/nfl_odds_movements.csv')
-    if not os.path.exists(odds_file_path):
-        st.error(f"Could not find odds data at {odds_file_path}")
-        return pd.DataFrame()  # Return empty DataFrame if file not found
-        
-    df_nfl_odds_movements = pd.read_csv(odds_file_path)
-    df_nfl_odds_movements['game_date'] = df_nfl_odds_movements['game_date'].str.replace(' ', '').str.strip().str.lower()
-    df_nfl_odds_movements['game_time'] = df_nfl_odds_movements['game_time'].str.replace('\n', ' ').str.replace(r'\s+', ' ', regex=True).str.strip().str.lower()
-    df_nfl_odds_movements['matchup'] = df_nfl_odds_movements['matchup'].str.replace(r'\s+', ' ', regex=True).str.strip().str.lower()
-    sportsbooks_to_include = [
-        'Circa', 'Westgate', 'South Point', 'Wynn', 'Caesars', 'BetMGM', 'DK'
-    ]
-    filtered_odds = df_nfl_odds_movements[df_nfl_odds_movements['sportsbook'].isin(sportsbooks_to_include)].copy()
-    return filtered_odds
+### Load data from session state ###
+df_nfl_odds_movements = st.session_state.get('df_nfl_odds_movements', pd.DataFrame())
+if df_nfl_odds_movements.empty:
+    st.error("Odds data not available")
+    st.stop()
+
+# Clean and filter the data
+df_nfl_odds_movements['game_date'] = df_nfl_odds_movements['game_date'].str.replace(' ', '').str.strip().str.lower()
+df_nfl_odds_movements['game_time'] = df_nfl_odds_movements['game_time'].str.replace('\n', ' ').str.replace(r'\s+', ' ', regex=True).str.strip().str.lower()
+df_nfl_odds_movements['matchup'] = df_nfl_odds_movements['matchup'].str.replace(r'\s+', ' ', regex=True).str.strip().str.lower()
+
+sportsbooks_to_include = [
+    'Circa', 'Westgate', 'South Point', 'Wynn', 'Caesars', 'BetMGM', 'DK'
+]
+filtered_odds = df_nfl_odds_movements[df_nfl_odds_movements['sportsbook'].isin(sportsbooks_to_include)].copy()
 
 ### Load NFL games data from JSON files ###
 def load_games_data():
@@ -72,7 +71,6 @@ def load_games_data():
     return games_data
 
 ### Display game information and odds ###
-df_nfl_odds_movements = load_odds_movements()
 games_data = load_games_data()
 for game in games_data:
     # st.subheader(game['day_and_matchup_column_name'])

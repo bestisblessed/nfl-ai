@@ -34,6 +34,18 @@ df_all_passing_rushing_receiving = pd.read_csv(csv_file_path_3)
 # csv_file_path_5 = os.path.join(current_dir, 'data/odds/nfl_odds_movements.csv')
 # df_nfl_odds_movements = pd.read_csv(csv_file_path_5)
 
+# Add these lines where you load other CSV files
+csv_file_path_odds = os.path.join(current_dir, 'data/odds/nfl_odds_movements.csv')
+csv_file_path_circa = os.path.join(current_dir, 'data/nfl_odds_movements_circa.csv')
+
+try:
+    df_nfl_odds_movements = pd.read_csv(csv_file_path_odds)
+    df_nfl_odds_movements_circa = pd.read_csv(csv_file_path_circa)
+except FileNotFoundError:
+    st.warning("Odds data files not found. Some features may be unavailable.")
+    df_nfl_odds_movements = pd.DataFrame()
+    df_nfl_odds_movements_circa = pd.DataFrame()
+
 # ---- Loading Data ---- #
 csv_file_path_teams = os.path.join(current_dir, 'data/Teams.csv')
 csv_file_path_games = os.path.join(current_dir, 'data/Games.csv')
@@ -48,7 +60,8 @@ st.session_state['df_team_game_logs'] = df_team_game_logs
 st.session_state['df_schedule_and_game_results'] = df_schedule_and_game_results
 st.session_state['df_all_passing_rushing_receiving'] = df_all_passing_rushing_receiving
 st.session_state['df_team_game_logs_2024'] = df_team_game_logs_2024
-# st.session_state['df_nfl_odds_movements'] = df_nfl_odds_movements
+st.session_state['df_nfl_odds_movements'] = df_nfl_odds_movements
+st.session_state['df_nfl_odds_movements_circa'] = df_nfl_odds_movements_circa
 
 # ---- Loading Other Files ---- #
 def load_lottie_pictures(url):
