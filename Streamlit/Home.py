@@ -22,6 +22,7 @@ st.write('Welcome to NFL AI')
 current_dir = os.path.dirname(os.path.abspath(__file__))
 
 # Load the CSV data into a DataFrame
+
 csv_file_path = os.path.join(current_dir, 'data/all_team_game_logs.csv')
 df_team_game_logs = pd.read_csv(csv_file_path)
 csv_file_path_4 = os.path.join(current_dir, 'data/SR-game-logs/all_teams_game_logs_2024.csv')
@@ -34,11 +35,12 @@ df_all_passing_rushing_receiving = pd.read_csv(csv_file_path_3)
 # df_nfl_odds_movements = pd.read_csv(csv_file_path_5)
 
 # ---- Loading Data ---- #
-df_teams = pd.read_csv('data/Teams.csv')
-df_games = pd.read_csv('data/Games.csv')
-df_playerstats = pd.read_csv('data/PlayerStats.csv')
-# df_team_game_logs = pd.read_csv('data/all_teams_game_logs.csv')
-# df_schedule_and_game_results = pd.read_csv('data/all_teams_schedule_and_game_results_merged.csv')
+csv_file_path_teams = os.path.join(current_dir, 'data/Teams.csv')
+csv_file_path_games = os.path.join(current_dir, 'data/Games.csv')
+csv_file_path_playerstats = os.path.join(current_dir, 'data/PlayerStats.csv')
+df_teams = pd.read_csv(csv_file_path_teams)
+df_games = pd.read_csv(csv_file_path_games)
+df_playerstats = pd.read_csv(csv_file_path_playerstats)
 st.session_state['df_teams'] = df_teams
 st.session_state['df_games'] = df_games
 st.session_state['df_playerstats'] = df_playerstats
