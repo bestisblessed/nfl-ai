@@ -6,6 +6,11 @@ import re
 from streamlit_modal import Modal
 import matplotlib.pyplot as plt
 
+# Get the current directory (where the dashboard file is)
+current_dir = os.path.dirname(os.path.abspath(__file__))
+# Go up one level to the Streamlit directory
+base_dir = os.path.dirname(current_dir)
+
 st.title('Odds Dashboard')
 # df_nfl_odds_movements = st.session_state['df_nfl_odds_movements']
 # df_nfl_odds_movements = df_nfl_odds_movements
@@ -13,7 +18,12 @@ st.divider()
 
 ### Load NFL odds movements ###
 def load_odds_movements():
-    df_nfl_odds_movements = pd.read_csv('data/odds/nfl_odds_movements.csv')
+    odds_file_path = os.path.join(base_dir, 'data/odds/nfl_odds_movements.csv')
+    if not os.path.exists(odds_file_path):
+        st.error(f"Could not find odds data at {odds_file_path}")
+        return pd.DataFrame()  # Return empty DataFrame if file not found
+        
+    df_nfl_odds_movements = pd.read_csv(odds_file_path)
     df_nfl_odds_movements['game_date'] = df_nfl_odds_movements['game_date'].str.replace(' ', '').str.strip().str.lower()
     df_nfl_odds_movements['game_time'] = df_nfl_odds_movements['game_time'].str.replace('\n', ' ').str.replace(r'\s+', ' ', regex=True).str.strip().str.lower()
     df_nfl_odds_movements['matchup'] = df_nfl_odds_movements['matchup'].str.replace(r'\s+', ' ', regex=True).str.strip().str.lower()
@@ -26,7 +36,7 @@ def load_odds_movements():
 ### Load NFL games data from JSON files ###
 def load_games_data():
     games_data = []
-    data_dir = os.path.join(os.path.dirname(__file__), '../data/odds/')
+    data_dir = os.path.join(base_dir, 'data/odds/')
     json_files = sorted([f for f in os.listdir(data_dir) if f.endswith(".json") and f.startswith('nfl')], reverse=True)
     most_recent_file = json_files[0] if json_files else None
 
@@ -154,26 +164,29 @@ for game in games_data:
 # plt.legend()
 # plt.grid(True)
 # st.pyplot(plt)
-file_path_circa = 'data/nfl_odds_movements_circa.csv'
-nfl_odds_data_circa = pd.read_csv(file_path_circa)
-unique_matchups = nfl_odds_data_circa['matchup'].unique()
-selected_matchup = st.selectbox("Select Matchup", unique_matchups)
-selected_data = nfl_odds_data_circa[nfl_odds_data_circa['matchup'] == selected_matchup]
-selected_data['team1_odds_before'] = selected_data['team1_odds_before'].replace('PK', 0).astype(float)
-selected_data['team2_odds_before'] = selected_data['team2_odds_before'].replace('PK', 0).astype(float)
-selected_data['time_before'] = pd.to_datetime(selected_data['time_before'], format='%b %d %I:%M%p')
-plt.figure(figsize=(10, 6))
-# plt.plot(selected_data['time_before'], selected_data['team1_odds_before'], label=selected_matchup.split(' vs ')[0], marker='o')
-# plt.plot(selected_data['time_before'], selected_data['team2_odds_before'], label=selected_matchup.split(' vs ')[1], marker='o')
-plt.plot(selected_data['time_before'], selected_data['team1_odds_before'], label=selected_matchup.split(' vs ')[0])
-plt.plot(selected_data['time_before'], selected_data['team2_odds_before'], label=selected_matchup.split(' vs ')[1])
-plt.title(f'Odds Movement: {selected_matchup}')
-plt.xlabel('Time of Odds Change')
-plt.ylabel('Odds')
-plt.xticks(rotation=45)
-plt.legend()
-plt.grid(True)
-st.pyplot(plt)
+file_path_circa = os.path.join(base_dir, 'data/nfl_odds_movements_circa.csv')
+if os.path.exists(file_path_circa):
+    nfl_odds_data_circa = pd.read_csv(file_path_circa)
+    unique_matchups = nfl_odds_data_circa['matchup'].unique()
+    selected_matchup = st.selectbox("Select Matchup", unique_matchups)
+    selected_data = nfl_odds_data_circa[nfl_odds_data_circa['matchup'] == selected_matchup]
+    selected_data['team1_odds_before'] = selected_data['team1_odds_before'].replace('PK', 0).astype(float)
+    selected_data['team2_odds_before'] = selected_data['team2_odds_before'].replace('PK', 0).astype(float)
+    selected_data['time_before'] = pd.to_datetime(selected_data['time_before'], format='%b %d %I:%M%p')
+    plt.figure(figsize=(10, 6))
+    # plt.plot(selected_data['time_before'], selected_data['team1_odds_before'], label=selected_matchup.split(' vs ')[0], marker='o')
+    # plt.plot(selected_data['time_before'], selected_data['team2_odds_before'], label=selected_matchup.split(' vs ')[1], marker='o')
+    plt.plot(selected_data['time_before'], selected_data['team1_odds_before'], label=selected_matchup.split(' vs ')[0])
+    plt.plot(selected_data['time_before'], selected_data['team2_odds_before'], label=selected_matchup.split(' vs ')[1])
+    plt.title(f'Odds Movement: {selected_matchup}')
+    plt.xlabel('Time of Odds Change')
+    plt.ylabel('Odds')
+    plt.xticks(rotation=45)
+    plt.legend()
+    plt.grid(True)
+    st.pyplot(plt)
+else:
+    st.error(f"Could not find Circa odds data at {file_path_circa}")
 
 
 
