@@ -1,3 +1,40 @@
+# **Teams Information**
+# Scrapes team IDs, names, and divisions to populate the `Teams` table in `nfl.db`.
+  
+# **Games Data**
+# Downloads and processes game information from NFL data sources to populate the `Games` table.
+  
+# **Player Statistics**
+# Downloads, cleans, and merges player statistics data for multiple years to populate the `PlayerStats` table.
+  
+# **Rosters**
+# Downloads and processes team rosters for multiple years to populate the `Rosters` table.
+  
+# **Box Scores**
+# Scrapes box score details for games from Pro-Football-Reference and saves them to CSV and the database.
+  
+# **Scoring Tables / Touchdown Logs**
+# Scrapes scoring play-by-play data for games and saves them to CSV files.
+  
+# **Team Game Logs**
+# Scrapes game logs for each team, including both team and opponent statistics, and aggregates them into CSV files.
+
+# **Team Stats and Rankings**
+# Scrapes comprehensive team statistics and rankings for each team and year, saving the data to CSV files.
+  
+# **Schedule & Game Results**
+# Scrapes schedule and game result details for each team and year, saving the data to CSV files.
+  
+# **Team Conversions**
+# Scrapes conversion metrics (e.g., 3rd down, 4th down) for each team and year, saving the data to CSV files.
+  
+# **Passing, Rushing, and Receiving Game Logs**
+# Scrapes individual player game logs for passing, rushing, and receiving statistics, cleans the data, and merges it into consolidated CSV files.
+  
+# **Defense Game Logs**
+# Scrapes defensive statistics for players in each game and saves the data to CSV files.
+  
+
 import pandas as pd
 import sqlite3
 import requests
@@ -104,7 +141,8 @@ db_path = 'nfl.db'
 conn = sqlite3.connect(db_path)
 df_selected.to_sql('Games', conn, if_exists='replace', index=False)
 conn.close()
-df_selected.to_csv('./data/games_modified.csv', index=False)
+# df_selected.to_csv('./data/games_modified.csv', index=False)
+df_selected.to_csv('./data/games.csv', index=False)
 
 
 ##### Create 'PlayerStats' in nfl.db #####
@@ -137,7 +175,8 @@ merged_df['game_id_team'] = merged_df['season'].astype(str) + '_' + merged_df['w
 merged_df['game_id_simple'] = merged_df['season'].astype(str) + '_' + merged_df['week'].astype(str)
 merged_df.to_csv('./data/player_stats.csv', index=False)
 print("Merged and cleaned player stats saved to './data/player_stats.csv'")
-games_df = pd.read_csv('./data/games_modified.csv')
+# games_df = pd.read_csv('./data/games_modified.csv')
+games_df = pd.read_csv('./data/games.csv')
 game_id_map = pd.concat([
     games_df[['game_id_team1', 'game_id', 'home_team', 'away_team']].rename(columns={'game_id_team1': 'game_id_team'}),
     games_df[['game_id_team2', 'game_id', 'home_team', 'away_team']].rename(columns={'game_id_team2': 'game_id_team'})
@@ -296,7 +335,7 @@ rosters_df.to_csv('data/rosters.csv', index=False)
 df = pd.read_csv('./data/games.csv')
 df['pfr_url'] = 'https://www.pro-football-reference.com/boxscores/' + df['pfr'] + '.htm'
 df.to_csv('./data/games.csv', index=False)
-csv_file_path = 'data/box_scores.csv'
+csv_file_path = 'data/all_box_scores.csv'
 games_csv_path = 'data/games.csv'
 headers = ['URL', 'Team', '1', '2', '3', '4', 'OT1', 'OT2', 'OT3', 'OT4', 'Final']
 existing_urls = set()
@@ -342,7 +381,7 @@ print(f"Scraping complete. The data has been saved to {csv_file_path}.")
 
 
 ##### Fix OT Columns in Box Scores ##### 
-df = pd.read_csv('data/box_scores.csv')
+df = pd.read_csv('data/all_box_scores.csv')
 def shift_to_final(row):
     if pd.isna(row['Final']):  
         for col in reversed(row.index[:-1]):
@@ -352,7 +391,7 @@ def shift_to_final(row):
                 break
     return row
 df = df.apply(shift_to_final, axis=1)
-df.to_csv('data/box_scores.csv', index=False)
+df.to_csv('data/all_box_scores.csv', index=False)
 
 
 ##### Scrape Scoring Tables/Touchdown Logs (2024-2025) #####
@@ -390,6 +429,16 @@ for year_to_scrape in range(2024, 2025):
                     print(f"An error occurred while scraping {url}. Error: {e}")
                 time.sleep(2)
     print(f"Scraping completed for {year_to_scrape}. Scoring data saved to {output_filename}.")
+
+
+##### Merge Scoring Tables #####
+input_dir = 'data/scoring-tables/'
+csv_files = [f for f in os.listdir(input_dir) if f.endswith('.csv')]
+dataframes = [pd.read_csv(os.path.join(input_dir, file)) for file in csv_files]
+merged_dataframe = pd.concat(dataframes, ignore_index=True)
+output_file = 'data/all_scoring_tables.csv'
+merged_dataframe.to_csv(output_file, index=False)
+print(f"Merged dataset saved as {output_file}")
 
 
 ##### Scrape Team Game Logs (2024-2025) #####
@@ -675,6 +724,20 @@ for year in range(2024, 2025):
     print(f'Saved data for all teams for the year {year}')
 
 
+##### Merge Team Stats and Rankings #####
+input_dir = 'data/SR-team-stats/'
+csv_files = [f for f in os.listdir(input_dir) if f.endswith('.csv')]
+dataframes = []
+for file in csv_files:
+    df = pd.read_csv(os.path.join(input_dir, file))
+    df['Year'] = file.split('_')[-1].split('.')[0]  # Extract year from filename
+    dataframes.append(df)
+merged_dataframe = pd.concat(dataframes, ignore_index=True)
+output_file = 'data/all_team_stats.csv'
+merged_dataframe.to_csv(output_file, index=False)
+print(f"Merged dataset saved as {output_file}")
+
+
 ##### Schedule & Game Results #####
 data_dir = './data/SR-schedule-and-game-results'
 os.makedirs(data_dir, exist_ok=True)
@@ -837,6 +900,19 @@ for year in range(2024, 2025):
             writer.writerows(all_conversions)
         print(f'Saved team conversions data for {name} for the year {year} to {team_file}')
         sleep(2.5)  
+
+##### Merge Team Conversions #####
+input_dir = 'data/SR-team-conversions/'
+csv_files = [f for f in os.listdir(input_dir) if f.endswith('.csv')]
+dataframes = []
+for file in csv_files:
+    df = pd.read_csv(os.path.join(input_dir, file))
+    df['Year'] = file.split('_')[1]  # Extract year from filename
+    dataframes.append(df)
+merged_dataframe = pd.concat(dataframes, ignore_index=True)
+output_file = 'data/all_team_conversions.csv'
+merged_dataframe.to_csv(output_file, index=False)
+print(f"Merged dataset saved as {output_file}")
 
 
 ##### Creating home_spread, away_spread, team_favorite columns in nfl.db #####
@@ -1082,6 +1158,14 @@ for year in range(2024, 2025):
     except FileNotFoundError:
         print(f"No defense data file found for {year}")
 
+##### Merge all defense-game-logs.csv files into one #####
+input_dir = 'data/defense-game-logs/'
+csv_files = [f for f in os.listdir(input_dir) if f.endswith('.csv')]
+dataframes = [pd.read_csv(os.path.join(input_dir, file)) for file in csv_files]
+merged_dataframe = pd.concat(dataframes, ignore_index=True)
+output_file = 'data/all_defense-game-logs.csv'
+merged_dataframe.to_csv(output_file, index=False)
+print(f"Merged dataset saved as {output_file}")
 
 
 ##### Export all tables from nfl.db to csv files with current date's timestamp in the file names to a final directory #####
@@ -1390,3 +1474,12 @@ end_time = datetime.now()
 elapsed_time = end_time - start_time
 print(f"Process ended at: {end_time.strftime('%Y-%m-%d %H:%M:%S')}")
 print(f"Total time elapsed: {elapsed_time}")
+
+
+# Delete files if they exist
+if os.path.exists('data/games.csv'):
+    os.remove('data/games.csv')
+if os.path.exists('data/player_stats.csv'):
+    os.remove('data/player_stats.csv')
+if os.path.exists('data/rosters.csv'):
+    os.remove('data/rosters.csv')
