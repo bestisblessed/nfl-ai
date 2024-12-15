@@ -6,10 +6,15 @@ import re
 from streamlit_modal import Modal
 import matplotlib.pyplot as plt
 
+# # Get the current directory (where the dashboard file is)
+# current_dir = os.path.dirname(os.path.abspath(__file__))
+# # Go up TWO levels: one from pages/ to Streamlit/, and one from Streamlit/ to project root
+# base_dir = os.path.dirname(os.path.dirname(current_dir))
 # Get the current directory (where the dashboard file is)
 current_dir = os.path.dirname(os.path.abspath(__file__))
 # Go up one level to the Streamlit directory
 base_dir = os.path.dirname(current_dir)
+
 
 st.title('Odds Dashboard')
 # df_nfl_odds_movements = st.session_state['df_nfl_odds_movements']
