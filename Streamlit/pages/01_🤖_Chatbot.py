@@ -7,11 +7,7 @@ from IPython.display import Image
 st.title('NFL AI Chatbot')
 
 def run_nfl_chatbot(OPENAI_API_KEY):
-    # Initialize OpenAI client with just the API key
-    client = OpenAI(
-        api_key=OPENAI_API_KEY,
-        base_url="https://api.openai.com/v1"  # Optional but explicit
-    )
+    client = OpenAI(api_key=OPENAI_API_KEY)
 
     # file1 = client.files.create(
     #     file=open("Streamlit/data/Teams.csv", "rb"),
