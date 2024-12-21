@@ -3,13 +3,47 @@ import pandas as pd
 import os
 import shutil
 import requests
-
+import re
 # os.remove('nfl.db')
 shutil.rmtree('data', ignore_errors=True)
 shutil.copytree('../Scrapers/data', 'data')
 shutil.copy('../Scrapers/nfl.db', 'data')
-# shutil.copy('../Scrapers/nfl.db', '.')
 shutil.copy('data/SR-schedule-and-game-results/all_teams_schedule_and_game_results_merged.csv', 'data')
+
+### Remove all files except for 2023 and 2024 and merged files
+# data_directory = 'data'
+# for root, dirs, files in os.walk(data_directory):
+#     for filename in files:
+#         if filename.endswith('.csv'):
+#             if '2023' not in filename and '2024' not in filename:
+#                 file_path = os.path.join(root, filename)
+#                 os.remove(file_path)
+#                 print(f"Removed: {file_path}")
+
+# data_directory = 'data'
+# years_to_keep = [str(year) for year in range(2020, 2025)]  # Creates a list of years from 2015 to 2024
+# for root, dirs, files in os.walk(data_directory):
+#     for filename in files:
+#         if filename.endswith('.csv'):
+#             # if not any(year in filename for year in years_to_keep) and 'merged' not in filename:
+#             if not any(year in filename for year in years_to_keep) or 'merged' in filename:
+#                 file_path = os.path.join(root, filename)
+#                 os.remove(file_path)
+#                 print(f"Removed: {file_path}")
+
+data_directory = 'data'
+years_to_keep = [str(year) for year in range(2020, 2025)]  # Creates a list of years from 2020 to 2024
+for root, dirs, files in os.walk(data_directory):
+    if root == data_directory:
+        continue
+    for filename in files:
+        if filename.endswith('.csv'):
+            # Check if the filename does not contain any of the years to keep
+            if not any(year in filename for year in years_to_keep):
+                file_path = os.path.join(root, filename)
+                os.remove(file_path)
+                print(f"Removed: {file_path}")                
+
 
 ### Retrieve Next Week's Games ###
 db_path = 'data/nfl.db'
@@ -40,7 +74,7 @@ else:
 conn.close()
 
 ### Team Logos Download ###
-shutil.rmtree('images', ignore_errors=True)
+shutil.rmtree('images/team-logos', ignore_errors=True)
 save_dir = "images/team-logos"
 os.makedirs(save_dir, exist_ok=True)
 teams = {
@@ -72,54 +106,63 @@ unique_qbs_with_urls = df_player_stats[df_player_stats['headshot_url'].notna()] 
                         .drop_duplicates(subset=['player_display_name'])
 image_folder = 'images/player-headshots'
 os.makedirs(image_folder, exist_ok=True)
+
 downloaded_count = 0
+skipped_count = 0
 total_qbs = len(unique_qbs_with_urls)
+
 for index, row in unique_qbs_with_urls.iterrows():
     player_name = row['player_display_name'].lower().replace(' ', '_')
     headshot_url = row['headshot_url']
     image_path = os.path.join(image_folder, f"{player_name}.png")
+    
+    # Skip if image already exists
+    if os.path.exists(image_path):
+        skipped_count += 1
+        continue
+        
     try:
         response = requests.get(headshot_url)
         if response.status_code == 200:
             with open(image_path, 'wb') as file:
                 file.write(response.content)
             downloaded_count += 1
-            print(f"Downloaded {player_name}'s headshot ({downloaded_count}/{total_qbs}).")
+            print(f"Downloaded {player_name}'s headshot ({downloaded_count} new, {skipped_count} existing).")
         else:
             print(f"Failed to download {player_name}'s headshot (Status code: {response.status_code}).")
     except Exception as e:
         print(f"Error downloading {player_name}'s headshot: {e}")
 
-print(f"Download complete: {downloaded_count}/{total_qbs} images successfully downloaded.")
+print(f"Download complete: {downloaded_count} new images downloaded, {skipped_count} already existed.")
 
 
-### Connect to the copied SQLite database and export tables to CSV ###
-if os.path.exists('data/games.csv'): os.remove('data/games.csv')
-if os.path.exists('data/player_stats.csv'): os.remove('data/player_stats.csv')
-if os.path.exists('data/teams.csv'): os.remove('data/teams.csv')
-conn = sqlite3.connect('data/nfl.db')
-cursor = conn.cursor()
+# ### Connect to the copied SQLite database and export tables to CSV ###
+# if os.path.exists('data/games.csv'): os.remove('data/games.csv')
+# if os.path.exists('data/player_stats.csv'): os.remove('data/player_stats.csv')
+# if os.path.exists('data/teams.csv'): os.remove('data/teams.csv')
+# conn = sqlite3.connect('data/nfl.db')
+# cursor = conn.cursor()
 
-# Get all table names from the database
-cursor.execute("SELECT name FROM sqlite_master WHERE type='table';")
-tables = cursor.fetchall()
+# # Get all table names from the database
+# cursor.execute("SELECT name FROM sqlite_master WHERE type='table';")
+# tables = cursor.fetchall()
 
-# Save all tables to CSV files in the data/ directory
-for table_name_tuple in tables:
-    table_name = table_name_tuple[0]
+# # Save all tables to CSV files in the data/ directory
+# for table_name_tuple in tables:
+#     table_name = table_name_tuple[0]
     
-    # Load the table into a DataFrame
-    df = pd.read_sql_query(f"SELECT * FROM {table_name}", conn)
+#     # Load the table into a DataFrame
+#     df = pd.read_sql_query(f"SELECT * FROM {table_name}", conn)
     
-    # Save the DataFrame to a CSV file
-    output_file = os.path.join('data/', f"{table_name}.csv")
-    df.to_csv(output_file, index=False)
+#     # Save the DataFrame to a CSV file
+#     output_file = os.path.join('data/', f"{table_name}.csv")
+#     df.to_csv(output_file, index=False)
     
-    print(f"Table '{table_name}' saved to {output_file}")
+#     print(f"Table '{table_name}' saved to {output_file}")
 
-# Close the database connection
-conn.close()
-print("All tables have been saved to CSV files.")
+# # Close the database connection
+# conn.close()
+# print("All tables have been saved to CSV files.")
 
 
 # # # import streamlit as st
