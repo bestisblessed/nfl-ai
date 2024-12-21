@@ -136,34 +136,28 @@ for index, row in unique_qbs_with_urls.iterrows():
 print(f"Download complete: {downloaded_count} new images downloaded, {skipped_count} already existed.")
 
 
-# ### Connect to the copied SQLite database and export tables to CSV ###
-# if os.path.exists('data/games.csv'): os.remove('data/games.csv')
-# if os.path.exists('data/player_stats.csv'): os.remove('data/player_stats.csv')
-# if os.path.exists('data/teams.csv'): os.remove('data/teams.csv')
-# conn = sqlite3.connect('data/nfl.db')
-# cursor = conn.cursor()
+### Connect to the copied SQLite database and export tables to CSV ###
+if os.path.exists('data/games.csv'): os.remove('data/games.csv')
+if os.path.exists('data/player_stats.csv'): os.remove('data/player_stats.csv')
+if os.path.exists('data/teams.csv'): os.remove('data/teams.csv')
+if os.path.exists('data/rosters.csv'): os.remove('data/rosters.csv')
+conn = sqlite3.connect('data/nfl.db')
+cursor = conn.cursor()
+cursor.execute("SELECT name FROM sqlite_master WHERE type='table';")
+tables = cursor.fetchall()
+for table_name_tuple in tables:
+    table_name = table_name_tuple[0]
+    df = pd.read_sql_query(f"SELECT * FROM {table_name}", conn)
+    output_file = os.path.join('data/', f"{table_name}.csv")
+    df.to_csv(output_file, index=False)
+    print(f"Table '{table_name}' saved to {output_file}")
+conn.close()
+print("All tables have been saved to CSV files.")
 
-# # Get all table names from the database
-# cursor.execute("SELECT name FROM sqlite_master WHERE type='table';")
-# tables = cursor.fetchall()
-
-# # Save all tables to CSV files in the data/ directory
-# for table_name_tuple in tables:
-#     table_name = table_name_tuple[0]
-    
-#     # Load the table into a DataFrame
-#     df = pd.read_sql_query(f"SELECT * FROM {table_name}", conn)
-    
-#     # Save the DataFrame to a CSV file
-#     output_file = os.path.join('data/', f"{table_name}.csv")
-#     df.to_csv(output_file, index=False)
-    
-#     print(f"Table '{table_name}' saved to {output_file}")
-
-# # Close the database connection
-# conn.close()
-# print("All tables have been saved to CSV files.")
-
+shutil.copy('data/games.csv', 'data/Games.csv')
+shutil.copy('data/teams.csv', 'data/Teams.csv')
+shutil.copy('data/player_stats.csv', 'data/PlayerStats.csv')
+shutil.copy('data/rosters.csv', 'data/Rosters.csv')
 
 # # # import streamlit as st
 # # # import pandas as pd
