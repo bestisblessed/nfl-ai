@@ -390,7 +390,7 @@ OT,1:09,Colts,Matt Gay 53 yard field goal ,22,19,2023_03_IND_BAL
 4,13:34,Bears,Cairo Santos 21 yard field goal ,3,41,2023_03_CHI_KC
 4,4:20,Bears,D.J. Moore 9 yard pass from Justin Fields (Cairo Santos kick),10,41,2023_03_CHI_KC
 1,7:04,Raiders,Davante Adams 32 yard pass from Jimmy Garoppolo (Daniel Carlson kick),0,7,2023_03_PIT_LV
-1,6:12,Steelers,Calvin Austin 72 yard pass from Kenny Pickett (Chris Boswell kick),7,7,2023_03_PIT_LV
+1,6:12,Steelers,Calvin Austin III 72 yard pass from Kenny Pickett (Chris Boswell kick),7,7,2023_03_PIT_LV
 2,8:33,Steelers,Chris Boswell 43 yard field goal ,10,7,2023_03_PIT_LV
 2,1:56,Steelers,Chris Boswell 42 yard field goal ,13,7,2023_03_PIT_LV
 3,9:28,Steelers,Chris Boswell 57 yard field goal ,16,7,2023_03_PIT_LV
@@ -801,30 +801,6 @@ OT,3:58,Eagles,Jake Elliott 54 yard field goal ,31,34,2023_04_WAS_PHI
 4,5:46,Bears,Cairo Santos 54 yard field goal ,6,24,2023_07_LV_CHI
 4,5:36,Bears,Jaylon Johnson 39 yard interception return (Cairo Santos kick failed),6,30,2023_07_LV_CHI
 4,1:10,Raiders,Jakobi Meyers 9 yard pass from Aidan O'Connell (pass failed),12,30,2023_07_LV_CHI
-1,14:03,Browns,Jerome Ford 69 yard rush (Dustin Hopkins kick),7,0,2023_07_CLE_IND
-1,11:38,Colts,Josh Downs 59 yard pass from Gardner Minshew II (Matt Gay kick),7,7,2023_07_CLE_IND
-1,4:28,Colts,Gardner Minshew II 17 yard rush (Matt Gay kick),7,14,2023_07_CLE_IND
-2,14:22,Browns,Kareem Hunt 2 yard rush (Dustin Hopkins kick),14,14,2023_07_CLE_IND
-2,8:38,Browns,Dustin Hopkins 44 yard field goal ,17,14,2023_07_CLE_IND
-2,3:51,Colts,Gardner Minshew II 4 yard rush (Matt Gay kick),17,21,2023_07_CLE_IND
-2,1:42,Browns,Tony Fields fumble recovery in end zone (Dustin Hopkins kick),24,21,2023_07_CLE_IND
-2,0:00,Browns,Dustin Hopkins 54 yard field goal ,27,21,2023_07_CLE_IND
-3,9:23,Browns,Dustin Hopkins 54 yard field goal ,30,21,2023_07_CLE_IND
-3,5:11,Colts,Jonathan Taylor 5 yard rush (Matt Gay kick),30,28,2023_07_CLE_IND
-4,14:09,Colts,Matt Gay 27 yard field goal ,30,31,2023_07_CLE_IND
-4,6:33,Browns,Dustin Hopkins 58 yard field goal ,33,31,2023_07_CLE_IND
-4,5:38,Colts,Michael Pittman Jr. 75 yard pass from Gardner Minshew II (Matt Gay kick),33,38,2023_07_CLE_IND
-4,0:15,Browns,Kareem Hunt 1 yard rush (run failed),39,38,2023_07_CLE_IND
-1,10:02,Patriots,Chad Ryland 30 yard field goal ,0,3,2023_07_BUF_NE
-1,6:58,Patriots,Ezekiel Elliott 2 yard rush (Chad Ryland kick),0,10,2023_07_BUF_NE
-2,14:49,Bills,Tyler Bass 36 yard field goal ,3,10,2023_07_BUF_NE
-2,7:36,Patriots,Chad Ryland 24 yard field goal ,3,13,2023_07_BUF_NE
-3,9:53,Bills,James Cook 8 yard pass from Josh Allen (Tyler Bass kick),10,13,2023_07_BUF_NE
-3,4:30,Patriots,Chad Ryland 49 yard field goal ,10,16,2023_07_BUF_NE
-4,7:36,Patriots,Kendrick Bourne 4 yard pass from Mac Jones (run failed),10,22,2023_07_BUF_NE
-4,5:32,Bills,Stefon Diggs 25 yard pass from Josh Allen (Tyler Bass kick),17,22,2023_07_BUF_NE
-4,1:58,Bills,Josh Allen 1 yard rush (Dawson Knox pass from Josh Allen),25,22,2023_07_BUF_NE
-4,0:12,Patriots,Mike Gesicki 1 yard pass from Mac Jones (Chad Ryland kick),25,29,2023_07_BUF_NE
 2,14:18,Giants,Darren Waller 15 yard pass from Tyrod Taylor (Graham Gano kick),0,7,2023_07_WAS_NYG
 2,8:56,Giants,Saquon Barkley 32 yard pass from Tyrod Taylor (Graham Gano kick),0,14,2023_07_WAS_NYG
 3,10:21,Commanders,Brian Robinson Jr. 4 yard rush (Joey Slye kick),7,14,2023_07_WAS_NYG
@@ -1846,7 +1822,7 @@ OT,0:00,Texans,Ka'imi Fairbairn 54 yard field goal ,19,16,2023_15_HOU_TEN
 4,6:33,Saints,Juwan Johnson 5 yard pass from Derek Carr (Blake Grupe kick),14,30,2023_16_NO_LA
 4,3:53,Saints,A.T. Perry 35 yard pass from Derek Carr (Chris Olave pass from Derek Carr),22,30,2023_16_NO_LA
 1,10:45,Steelers,George Pickens 86 yard pass from Mason Rudolph (Chris Boswell kick),0,7,2023_16_CIN_PIT
-2,14:21,Steelers,Calvin Austin 7 yard rush (Chris Boswell kick),0,14,2023_16_CIN_PIT
+2,14:21,Steelers,Calvin Austin III 7 yard rush (Chris Boswell kick),0,14,2023_16_CIN_PIT
 2,7:06,Steelers,Najee Harris 3 yard rush (Chris Boswell kick),0,21,2023_16_CIN_PIT
 2,0:00,Steelers,Chris Boswell 50 yard field goal ,0,24,2023_16_CIN_PIT
 3,11:11,Bengals,Tee Higgins 80 yard pass from Jake Browning (Joe Mixon pass from Jake Browning),8,24,2023_16_CIN_PIT
@@ -2273,7 +2249,7 @@ OT,0:00,Texans,Ka'imi Fairbairn 54 yard field goal ,19,16,2023_15_HOU_TEN
 2,1:39,Steelers,Diontae Johnson 10 yard pass from Mason Rudolph (Chris Boswell kick),7,21,2023_19_PIT_BUF
 3,8:50,Steelers,Chris Boswell 40 yard field goal ,10,21,2023_19_PIT_BUF
 3,1:32,Bills,Tyler Bass 45 yard field goal ,10,24,2023_19_PIT_BUF
-4,10:32,Steelers,Calvin Austin 7 yard pass from Mason Rudolph (Chris Boswell kick),17,24,2023_19_PIT_BUF
+4,10:32,Steelers,Calvin Austin III 7 yard pass from Mason Rudolph (Chris Boswell kick),17,24,2023_19_PIT_BUF
 4,6:27,Bills,Khalil Shakir 17 yard pass from Josh Allen (Tyler Bass kick),17,31,2023_19_PIT_BUF
 1,10:02,Buccaneers,Chase McLaughlin 28 yard field goal ,0,3,2023_19_PHI_TB
 1,5:47,Buccaneers,David Moore 44 yard pass from Baker Mayfield (Chase McLaughlin kick),0,10,2023_19_PHI_TB

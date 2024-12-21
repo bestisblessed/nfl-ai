@@ -1,0 +1,21 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 11,8:20PM ET,boxscore,W,,1-0,@,Dallas Cowboys,19,3,18,347,195,152,1,12,244,173,71,1,0.55,19.40,-2.24
+2,Sun,September 18,1:00PM ET,boxscore,W,,2-0,@,New Orleans Saints,20,10,13,260,188,72,1,18,308,208,100,5,-9.20,18.41,2.71
+3,Sun,September 25,4:25PM ET,boxscore,L,,2-1,,Green Bay Packers,12,14,19,285,251,34,2,14,315,248,67,2,-9.14,4.08,0.30
+4,Sun,October 2,8:20PM ET,boxscore,L,,2-2,,Kansas City Chiefs,31,41,27,376,373,3,2,27,417,228,189,1,14.15,-17.12,-5.33
+5,Sun,October 9,1:00PM ET,boxscore,W,,3-2,,Atlanta Falcons,21,15,26,420,351,69,,19,261,110,151,,13.30,-3.90,-1.34
+6,Sun,October 16,1:00PM ET,boxscore,L,,3-3,@,Pittsburgh Steelers,18,20,20,304,229,75,,15,270,193,77,,0.17,-2.61,-2.77
+7,Sun,October 23,1:00PM ET,boxscore,L,,3-4,@,Carolina Panthers,3,21,17,322,276,46,,14,343,170,173,,-5.31,-7.39,-3.31
+8,Thu,October 27,8:15PM ET,boxscore,L,,3-5,,Baltimore Ravens,22,27,20,349,305,44,1,27,453,222,231,,8.68,-11.24,-6.73
+9,Sun,November 6,4:25PM ET,boxscore,W,,4-5,,Los Angeles Rams,16,13,18,323,272,51,,9,206,138,68,,-8.87,10.99,1.37
+10,Sun,November 13,9:30AM ET,boxscore,W,,5-5,,Seattle Seahawks,21,16,26,419,258,161,2,19,283,244,39,1,13.20,0.15,-7.78
+11,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+12,Sun,November 27,1:00PM ET,boxscore,L,OT,5-6,@,Cleveland Browns,17,23,16,325,229,96,,22,367,178,189,1,-1.81,-2.41,-1.78
+13,Mon,December 5,8:15PM ET,boxscore,W,,6-6,,New Orleans Saints,17,16,25,350,274,76,2,14,298,232,66,,2.62,0.04,-2.46
+14,Sun,December 11,4:25PM ET,boxscore,L,,6-7,@,San Francisco 49ers,7,35,18,322,253,69,3,24,404,195,209,1,-13.41,-18.39,0.43
+15,Sun,December 18,4:25PM ET,boxscore,L,,6-8,,Cincinnati Bengals,23,34,25,396,304,92,4,20,237,184,53,1,-1.98,-1.78,-7.20
+16,Sun,December 25,8:20PM ET,boxscore,W,OT,7-8,@,Arizona Cardinals,19,16,21,396,281,115,2,16,325,204,121,3,-4.60,13.64,-6.77
+17,Sun,January 1,1:00PM ET,boxscore,W,,8-8,,Carolina Panthers,30,24,25,478,411,67,1,22,400,326,74,3,10.73,-4.36,-6.36
+18,Sun,January 8,1:00PM ET,boxscore,L,,8-9,@,Atlanta Falcons,17,30,12,222,136,86,1,22,382,208,174,1,-6.05,-8.84,1.56
+,,Playoffs,,,,,,,,,,,,,,,,,,,,,,
+Wild Card,Mon,January 16,8:15PM ET,boxscore,L,,8-10,,Dallas Cowboys,14,31,24,386,334,52,1,26,425,297,128,,-2.00,-25.18,9.31
