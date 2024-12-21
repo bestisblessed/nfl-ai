@@ -1476,10 +1476,29 @@ print(f"Process ended at: {end_time.strftime('%Y-%m-%d %H:%M:%S')}")
 print(f"Total time elapsed: {elapsed_time}")
 
 
-# Delete files if they exist
-if os.path.exists('data/games.csv'):
-    os.remove('data/games.csv')
-if os.path.exists('data/player_stats.csv'):
-    os.remove('data/player_stats.csv')
-if os.path.exists('data/rosters.csv'):
-    os.remove('data/rosters.csv')
+
+# ### Delete files if they exist
+# if os.path.exists('data/games.csv'):
+#     os.remove('data/games.csv')
+# if os.path.exists('data/player_stats.csv'):
+#     os.remove('data/player_stats.csv')
+# if os.path.exists('data/rosters.csv'):
+#     os.remove('data/rosters.csv')
+
+
+# ### Export all tables from SQLite to CSV ###
+# conn = sqlite3.connect('data/nfl.db')
+# cursor = conn.cursor()
+# cursor.execute("SELECT name FROM sqlite_master WHERE type='table';")
+# tables = cursor.fetchall()
+# for table_name_tuple in tables:
+#     table_name = table_name_tuple[0]
+#     df = pd.read_sql_query(f"SELECT * FROM {table_name}", conn)
+#     output_file = f'data/{table_name.lower()}.csv'
+#     df.to_csv(output_file, index=False)
+#     print(f"Exported {table_name} to {output_file}")
+# conn.close()
+# player_stats_path = 'data/playerstats.csv'
+# if os.path.exists('data/playerstats.csv'):
+#     os.rename('data/playerstats.csv', 'data/player_stats.csv')
+#     print(f"Renamed PlayerStats to {player_stats_path}")
