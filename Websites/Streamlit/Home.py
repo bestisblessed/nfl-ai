@@ -269,8 +269,8 @@ st.write('##')
 col1, col2, col3 = st.columns([1, 4, 1])
 with col2:
     st.video(video1)
+    st.markdown("<p style='text-align: center; color: white;'>Legendary</p>", unsafe_allow_html=True)
     # st.caption("Legendary")
-    st.subtitles("Legendary")
 # st.video(video1)
 
 # ---- Contact Me ---- #
