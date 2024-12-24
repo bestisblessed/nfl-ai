@@ -89,8 +89,8 @@ for game in games_data:
         "Total": [game['total'][0], game['total'][1]]
     })
     # st.table(df)
-    st.table(df, hide_index=True)
-    # st.table(df.set_index('Team'))
+    # st.table(df, hide_index=True)
+    st.table(df.set_index('Team'))
     # st.dataframe(df, use_container_width=True)
 
     ### Buttons and modal for odds movement ###
