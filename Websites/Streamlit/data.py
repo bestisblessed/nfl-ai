@@ -6,8 +6,8 @@ import requests
 import re
 # os.remove('nfl.db')
 shutil.rmtree('data', ignore_errors=True)
-shutil.copytree('../Scrapers/data', 'data')
-shutil.copy('../Scrapers/nfl.db', 'data')
+shutil.copytree('../../Scrapers/data', 'data')
+shutil.copy('../../Scrapers/nfl.db', 'data')
 shutil.copy('data/SR-schedule-and-game-results/all_teams_schedule_and_game_results_merged.csv', 'data')
 
 ### Remove all files except for 2023 and 2024 and merged files
@@ -164,9 +164,9 @@ print("All tables have been saved to CSV files.")
 
 ### Copy Odds Data ###
 os.makedirs('data/odds/', exist_ok=True)
-shutil.copy('../../odds-monitoring/NFL/Analysis/data/nfl_odds_movements.csv', 'data/odds/')
-shutil.copy('../../odds-monitoring/NFL/Analysis/data/nfl_odds_movements_circa.csv', 'data/odds/')
-shutil.copytree('../../odds-monitoring/NFL/Analysis/data/odds/', 'data/odds/', dirs_exist_ok=True)
+shutil.copy('../../../odds-monitoring/NFL/Analysis/data/nfl_odds_movements.csv', 'data/odds/')
+shutil.copy('../../../odds-monitoring/NFL/Analysis/data/nfl_odds_movements_circa.csv', 'data/odds/')
+shutil.copytree('../../../odds-monitoring/NFL/Analysis/data/odds/', 'data/odds/', dirs_exist_ok=True)
 # for file in os.listdir('../../odds-monitoring/NFL/Analysis/data/odds/'):
 #     shutil.copy(os.path.join('../../odds-monitoring/NFL/Analysis/data/odds/', file), 'data/odds/')
 
