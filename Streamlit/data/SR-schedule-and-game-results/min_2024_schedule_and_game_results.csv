@@ -1,0 +1,19 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 8,1:00PM ET,boxscore,W,,1-0,@,New York Giants,28,6,17,312,201,111,2,14,240,166,74,2,8.23,21.12,-7.83
+2,Sun,September 15,1:00PM ET,boxscore,W,,2-0,,San Francisco 49ers,23,17,17,403,257,146,2,24,396,294,102,2,3.76,-0.86,4.39
+3,Sun,September 22,1:00PM ET,boxscore,W,,3-0,,Houston Texans,34,7,19,274,156,118,,17,296,258,38,2,12.18,12.45,3.86
+4,Sun,September 29,1:00PM ET,boxscore,W,,4-0,@,Green Bay Packers,31,29,22,374,254,120,3,24,465,379,86,4,0.52,4.43,-1.45
+5,Sun,October 6,9:30AM ET,boxscore,W,,5-0,,New York Jets,23,17,17,253,171,82,2,17,254,218,36,3,-11.27,20.20,-6.06
+6,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+7,Sun,October 20,1:00PM ET,boxscore,L,,5-1,,Detroit Lions,29,31,16,383,244,139,1,19,391,247,144,1,5.48,-6.31,-0.54
+8,Thu,October 24,8:15PM ET,boxscore,L,,5-2,@,Los Angeles Rams,20,30,17,276,212,64,,26,386,279,107,1,6.94,-18.78,-0.25
+9,Sun,November 3,8:20PM ET,boxscore,W,,6-2,,Indianapolis Colts,21,13,29,415,282,133,3,13,227,159,68,2,4.42,9.87,-4.04
+10,Sun,November 10,1:00PM ET,boxscore,W,,7-2,@,Jacksonville Jaguars,12,7,28,402,233,169,3,10,143,87,56,3,-1.19,12.24,-5.31
+11,Sun,November 17,1:00PM ET,boxscore,W,,8-2,@,Tennessee Titans,23,13,24,318,236,82,1,11,294,261,33,1,5.25,7.51,-3.94
+12,Sun,November 24,1:00PM ET,boxscore,W,OT,9-2,@,Chicago Bears,30,27,22,452,328,124,1,20,398,320,78,1,11.47,-3.44,-3.03
+13,Sun,December 1,1:00PM ET,boxscore,W,,10-2,,Arizona Cardinals,23,22,19,273,205,68,1,25,406,252,154,2,5.27,-9.13,6.11
+14,Sun,December 8,1:00PM ET,boxscore,W,,11-2,,Atlanta Falcons,42,21,23,433,318,115,,25,496,338,158,3,29.04,-9.92,1.49
+15,Mon,December 16,8:00PM ET,boxscore,W,,12-2,,Chicago Bears,30,12,24,329,215,114,1,16,284,171,113,1,8.32,14.01,-3.74
+16,Sun,December 22,4:05PM ET,preview,,,,@,Seattle Seahawks,0,,,,,,,,,,,,,,
+17,Sun,December 29,1:00PM ET,preview,,,,,Green Bay Packers,0,,,,,,,,,,,,,,
+18,Sun,January 5,1:00PM ET,preview,,,,@,Detroit Lions,0,,,,,,,,,,,,,,

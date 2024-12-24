@@ -1,0 +1,2323 @@
+Quarter,Time,Team,Detail,Team_1,Team_2,Game_ID
+1,2:46,Lions,Amon-Ra St. Brown 9 yard pass from Jared Goff (Riley Patterson kick),7,0,2023_01_DET_KC
+2,11:50,Chiefs,Rashee Rice 1 yard pass from Patrick Mahomes (Harrison Butker kick),7,7,2023_01_DET_KC
+2,0:34,Chiefs,Blake Bell 4 yard pass from Patrick Mahomes (Harrison Butker kick),7,14,2023_01_DET_KC
+3,10:54,Lions,Brian Branch 50 yard interception return (Riley Patterson kick),14,14,2023_01_DET_KC
+3,2:10,Chiefs,Harrison Butker 35 yard field goal ,14,17,2023_01_DET_KC
+4,12:11,Chiefs,Harrison Butker 39 yard field goal ,14,20,2023_01_DET_KC
+4,7:06,Lions,David Montgomery 8 yard rush (Riley Patterson kick),21,20,2023_01_DET_KC
+2,14:54,Falcons,Bijan Robinson 11 yard pass from Desmond Ridder (Younghoe Koo kick),0,7,2023_01_CAR_ATL
+2,5:09,Panthers,Hayden Hurst 4 yard pass from Bryce Young (Eddy Pineiro kick),7,7,2023_01_CAR_ATL
+3,10:46,Panthers,Eddy Pineiro 43 yard field goal ,10,7,2023_01_CAR_ATL
+3,4:52,Falcons,Younghoe Koo 49 yard field goal ,10,10,2023_01_CAR_ATL
+4,14:12,Falcons,Tyler Allgeier 3 yard rush (Younghoe Koo kick),10,17,2023_01_CAR_ATL
+4,4:48,Falcons,Tyler Allgeier 3 yard rush (Younghoe Koo kick),10,24,2023_01_CAR_ATL
+1,1:00,Ravens,J.K. Dobbins 4 yard rush (Justin Tucker kick),0,7,2023_01_HOU_BAL
+2,3:56,Texans,Ka'imi Fairbairn 35 yard field goal ,3,7,2023_01_HOU_BAL
+2,0:00,Texans,Ka'imi Fairbairn 38 yard field goal ,6,7,2023_01_HOU_BAL
+3,9:55,Ravens,Justice Hill 2 yard rush (Gus Edwards run),6,15,2023_01_HOU_BAL
+3,5:21,Ravens,Justice Hill 2 yard rush (Justin Tucker kick),6,22,2023_01_HOU_BAL
+4,13:47,Texans,Ka'imi Fairbairn 36 yard field goal ,9,22,2023_01_HOU_BAL
+4,4:10,Ravens,Justin Tucker 39 yard field goal ,9,25,2023_01_HOU_BAL
+2,14:15,Browns,Dustin Hopkins 42 yard field goal ,0,3,2023_01_CIN_CLE
+2,0:17,Browns,Deshaun Watson 13 yard rush (Dustin Hopkins kick),0,10,2023_01_CIN_CLE
+3,11:44,Bengals,Evan McPherson 42 yard field goal ,3,10,2023_01_CIN_CLE
+3,2:21,Browns,Dustin Hopkins 34 yard field goal ,3,13,2023_01_CIN_CLE
+4,11:29,Browns,Dustin Hopkins 43 yard field goal ,3,16,2023_01_CIN_CLE
+4,9:11,Browns,Harrison Bryant 3 yard pass from Deshaun Watson (Deshaun Watson run),3,24,2023_01_CIN_CLE
+1,5:18,Jaguars,Calvin Ridley 9 yard pass from Trevor Lawrence (Brandon McManus kick),7,0,2023_01_JAX_IND
+2,14:57,Colts,Anthony Richardson 2 yard rush (Matt Gay kick),7,7,2023_01_JAX_IND
+2,4:56,Jaguars,Zay Jones 18 yard pass from Trevor Lawrence (Brandon McManus kick),14,7,2023_01_JAX_IND
+3,11:25,Colts,Michael Pittman Jr. 39 yard pass from Anthony Richardson (Matt Gay kick),14,14,2023_01_JAX_IND
+3,8:31,Jaguars,Brandon McManus 45 yard field goal ,17,14,2023_01_JAX_IND
+3,2:27,Colts,DeForest Buckner 26 yard fumble return (Matt Gay kick),17,21,2023_01_JAX_IND
+4,5:14,Jaguars,Tank Bigsby 1 yard rush (Brandon McManus kick),24,21,2023_01_JAX_IND
+4,4:08,Jaguars,Travis Etienne 26 yard rush (Brandon McManus kick),31,21,2023_01_JAX_IND
+1,3:23,Buccaneers,Chase McLaughlin 36 yard field goal ,3,0,2023_01_TB_MIN
+2,11:15,Vikings,Jordan Addison 39 yard pass from Kirk Cousins (Greg Joseph kick),3,7,2023_01_TB_MIN
+2,5:41,Vikings,Greg Joseph 25 yard field goal ,3,10,2023_01_TB_MIN
+2,1:09,Buccaneers,Mike Evans 28 yard pass from Baker Mayfield (Chase McLaughlin kick),10,10,2023_01_TB_MIN
+3,6:01,Buccaneers,Trey Palmer 7 yard pass from Baker Mayfield (Chase McLaughlin kick),17,10,2023_01_TB_MIN
+4,13:37,Vikings,Alexander Mattison 4 yard pass from Kirk Cousins (Greg Joseph kick),17,17,2023_01_TB_MIN
+4,5:10,Buccaneers,Chase McLaughlin 57 yard field goal ,20,17,2023_01_TB_MIN
+1,13:40,Titans,Nick Folk 50 yard field goal ,3,0,2023_01_TEN_NO
+1,10:18,Saints,Blake Grupe 26 yard field goal ,3,3,2023_01_TEN_NO
+1,3:07,Titans,Nick Folk 27 yard field goal ,6,3,2023_01_TEN_NO
+2,7:37,Saints,Blake Grupe 33 yard field goal ,6,6,2023_01_TEN_NO
+2,1:40,Titans,Nick Folk 31 yard field goal ,9,6,2023_01_TEN_NO
+3,9:25,Saints,Blake Grupe 52 yard field goal ,9,9,2023_01_TEN_NO
+3,1:23,Saints,Rashid Shaheed 19 yard pass from Derek Carr (Blake Grupe kick),9,16,2023_01_TEN_NO
+4,11:12,Titans,Nick Folk 45 yard field goal ,12,16,2023_01_TEN_NO
+4,2:17,Titans,Nick Folk 29 yard field goal ,15,16,2023_01_TEN_NO
+1,9:29,49ers,Brandon Aiyuk 8 yard pass from Brock Purdy (Jake Moody kick),7,0,2023_01_SF_PIT
+1,4:38,49ers,Jake Moody 41 yard field goal ,10,0,2023_01_SF_PIT
+2,13:30,49ers,Brandon Aiyuk 19 yard pass from Brock Purdy (Jake Moody kick),17,0,2023_01_SF_PIT
+2,8:22,49ers,Jake Moody 32 yard field goal ,20,0,2023_01_SF_PIT
+2,0:10,Steelers,Pat Freiermuth 3 yard pass from Kenny Pickett (Chris Boswell kick),20,7,2023_01_SF_PIT
+3,14:02,49ers,Christian McCaffrey 65 yard rush (Jake Moody kick),27,7,2023_01_SF_PIT
+4,5:30,49ers,Jake Moody 40 yard field goal ,30,7,2023_01_SF_PIT
+1,4:15,Commanders,Brian Robinson Jr. 7 yard pass from Sam Howell (Joey Slye kick),0,7,2023_01_ARI_WAS
+1,0:53,Cardinals,Matt Prater 28 yard field goal ,3,7,2023_01_ARI_WAS
+2,13:26,Cardinals,Matt Prater 54 yard field goal ,6,7,2023_01_ARI_WAS
+2,0:55,Cardinals,Cameron Thomas 2 yard fumble return (Matt Prater kick),13,7,2023_01_ARI_WAS
+2,0:00,Commanders,Joey Slye 30 yard field goal ,13,10,2023_01_ARI_WAS
+3,10:09,Cardinals,Matt Prater 37 yard field goal ,16,10,2023_01_ARI_WAS
+4,11:48,Commanders,Sam Howell 6 yard rush (Joey Slye kick),16,17,2023_01_ARI_WAS
+4,2:23,Commanders,Joey Slye 33 yard field goal ,16,20,2023_01_ARI_WAS
+1,6:08,Packers,Romeo Doubs 8 yard pass from Jordan Love (Anders Carlson kick),7,0,2023_01_GB_CHI
+1,2:04,Bears,Cairo Santos 47 yard field goal ,7,3,2023_01_GB_CHI
+2,9:00,Bears,Cairo Santos 29 yard field goal ,7,6,2023_01_GB_CHI
+2,0:00,Packers,Anders Carlson 52 yard field goal ,10,6,2023_01_GB_CHI
+3,10:19,Packers,Aaron Jones 1 yard rush (Anders Carlson kick),17,6,2023_01_GB_CHI
+3,6:26,Packers,Aaron Jones 35 yard pass from Jordan Love (Anders Carlson kick),24,6,2023_01_GB_CHI
+3,0:59,Bears,Darnell Mooney 20 yard pass from Justin Fields (Khalil Herbert run),24,14,2023_01_GB_CHI
+4,13:30,Packers,Romeo Doubs 4 yard pass from Jordan Love (Anders Carlson kick),31,14,2023_01_GB_CHI
+4,12:36,Packers,Quay Walker 37 yard interception return (Anders Carlson kick),38,14,2023_01_GB_CHI
+4,2:54,Bears,Roschon Johnson 2 yard rush (pass failed),38,20,2023_01_GB_CHI
+1,9:28,Raiders,Jakobi Meyers 3 yard pass from Jimmy Garoppolo (Daniel Carlson kick),7,0,2023_01_LV_DEN
+1,0:44,Broncos,Lil'Jordan Humphrey 5 yard pass from Russell Wilson (Wil Lutz kick failed),7,6,2023_01_LV_DEN
+2,10:54,Raiders,Daniel Carlson 24 yard field goal ,10,6,2023_01_LV_DEN
+2,0:12,Broncos,Courtland Sutton 5 yard pass from Russell Wilson (Wil Lutz kick),10,13,2023_01_LV_DEN
+4,8:54,Broncos,Wil Lutz 24 yard field goal ,10,16,2023_01_LV_DEN
+4,6:34,Raiders,Jakobi Meyers 6 yard pass from Jimmy Garoppolo (Daniel Carlson kick),17,16,2023_01_LV_DEN
+1,4:39,Chargers,Austin Ekeler 1 yard rush (Cameron Dicker kick),0,7,2023_01_MIA_LAC
+1,1:15,Dolphins,Raheem Mostert 2 yard rush (Jason Sanders kick),7,7,2023_01_MIA_LAC
+2,11:43,Dolphins,Jason Sanders 23 yard field goal ,10,7,2023_01_MIA_LAC
+2,9:07,Chargers,Donald Parham 1 yard pass from Justin Herbert (Cameron Dicker kick),10,14,2023_01_MIA_LAC
+2,1:42,Dolphins,River Cracraft 1 yard pass from Tua Tagovailoa (Jason Sanders kick),17,14,2023_01_MIA_LAC
+2,0:09,Chargers,Cameron Dicker 50 yard field goal ,17,17,2023_01_MIA_LAC
+2,0:00,Dolphins,Jason Sanders 41 yard field goal ,20,17,2023_01_MIA_LAC
+3,9:19,Chargers,Justin Herbert 1 yard rush (Cameron Dicker kick),20,24,2023_01_MIA_LAC
+3,2:12,Dolphins,Tyreek Hill 35 yard pass from Tua Tagovailoa (Jason Sanders kick),27,24,2023_01_MIA_LAC
+4,14:00,Chargers,Joshua Kelley 2 yard rush (Cameron Dicker kick),27,31,2023_01_MIA_LAC
+4,10:03,Dolphins,Jason Sanders 45 yard field goal ,30,31,2023_01_MIA_LAC
+4,3:53,Chargers,Cameron Dicker 25 yard field goal ,30,34,2023_01_MIA_LAC
+4,1:45,Dolphins,Tyreek Hill 4 yard pass from Tua Tagovailoa (Jason Sanders kick failed),36,34,2023_01_MIA_LAC
+1,7:42,Eagles,Jake Elliott 32 yard field goal ,3,0,2023_01_PHI_NE
+1,4:56,Eagles,Darius Slay 70 yard interception return (Jake Elliott kick),10,0,2023_01_PHI_NE
+1,2:39,Eagles,DeVonta Smith 5 yard pass from Jalen Hurts (Jake Elliott kick failed),16,0,2023_01_PHI_NE
+2,4:34,Patriots,Hunter Henry 9 yard pass from Mac Jones (Chad Ryland kick),16,7,2023_01_PHI_NE
+2,0:25,Patriots,Kendrick Bourne 19 yard pass from Mac Jones (Chad Ryland kick),16,14,2023_01_PHI_NE
+3,8:48,Eagles,Jake Elliott 56 yard field goal ,19,14,2023_01_PHI_NE
+4,13:21,Eagles,Jake Elliott 48 yard field goal ,22,14,2023_01_PHI_NE
+4,5:33,Eagles,Jake Elliott 51 yard field goal ,25,14,2023_01_PHI_NE
+4,3:37,Patriots,Kendrick Bourne 11 yard pass from Mac Jones (pass failed),25,20,2023_01_PHI_NE
+1,9:52,Seahawks,Jason Myers 36 yard field goal ,0,3,2023_01_LA_SEA
+1,0:39,Rams,Kyren Williams 1 yard rush (Brett Maher kick),7,3,2023_01_LA_SEA
+2,9:16,Seahawks,D.K. Metcalf 10 yard pass from Geno Smith (Jason Myers kick),7,10,2023_01_LA_SEA
+2,4:18,Seahawks,Jason Myers 42 yard field goal ,7,13,2023_01_LA_SEA
+3,8:56,Rams,Kyren Williams 7 yard rush (Brett Maher kick),14,13,2023_01_LA_SEA
+3,2:39,Rams,Brett Maher 38 yard field goal ,17,13,2023_01_LA_SEA
+4,9:45,Rams,Cam Akers 1 yard rush (Brett Maher kick),24,13,2023_01_LA_SEA
+4,4:57,Rams,Brett Maher 54 yard field goal ,27,13,2023_01_LA_SEA
+4,0:11,Rams,Brett Maher 45 yard field goal ,30,13,2023_01_LA_SEA
+1,8:03,Cowboys,Noah Igbinoghene 58 yard blocked field goal return (Brandon Aubrey kick failed),6,0,2023_01_DAL_NYG
+1,3:21,Cowboys,Brandon Aubrey 21 yard field goal ,9,0,2023_01_DAL_NYG
+1,2:22,Cowboys,DaRon Bland 22 yard interception return (Brandon Aubrey kick),16,0,2023_01_DAL_NYG
+2,10:55,Cowboys,Brandon Aubrey 38 yard field goal ,19,0,2023_01_DAL_NYG
+2,8:03,Cowboys,Tony Pollard 2 yard rush (Brandon Aubrey kick),26,0,2023_01_DAL_NYG
+3,10:01,Cowboys,Tony Pollard 1 yard rush (Brandon Aubrey kick),33,0,2023_01_DAL_NYG
+4,11:31,Cowboys,KaVontae Turpin 7 yard rush (Brandon Aubrey kick),40,0,2023_01_DAL_NYG
+1,3:05,Bills,Tyler Bass 40 yard field goal ,3,0,2023_01_BUF_NYJ
+2,10:35,Jets,Greg Zuerlein 26 yard field goal ,3,3,2023_01_BUF_NYJ
+2,4:43,Bills,Stefon Diggs 5 yard pass from Josh Allen (Tyler Bass kick),10,3,2023_01_BUF_NYJ
+2,0:17,Bills,Tyler Bass 34 yard field goal ,13,3,2023_01_BUF_NYJ
+3,8:59,Jets,Greg Zuerlein 43 yard field goal ,13,6,2023_01_BUF_NYJ
+4,4:55,Jets,Garrett Wilson 3 yard pass from Zach Wilson (Greg Zuerlein kick),13,13,2023_01_BUF_NYJ
+4,1:48,Jets,Greg Zuerlein 30 yard field goal ,13,16,2023_01_BUF_NYJ
+4,0:02,Bills,Tyler Bass 50 yard field goal ,16,16,2023_01_BUF_NYJ
+OT,9:02,Jets,Xavier Gipson 65 yard punt return ,16,22,2023_01_BUF_NYJ
+1,9:48,Eagles,Jake Elliott 24 yard field goal ,0,3,2023_02_MIN_PHI
+2,10:39,Vikings,T.J. Hockenson 5 yard pass from Kirk Cousins (Greg Joseph kick),7,3,2023_02_MIN_PHI
+2,2:44,Eagles,Jalen Hurts 1 yard rush (Jake Elliott kick),7,10,2023_02_MIN_PHI
+2,0:00,Eagles,Jake Elliott 61 yard field goal ,7,13,2023_02_MIN_PHI
+3,13:53,Eagles,Jalen Hurts 1 yard rush (Jake Elliott kick),7,20,2023_02_MIN_PHI
+3,10:54,Eagles,DeVonta Smith 63 yard pass from Jalen Hurts (Jake Elliott kick),7,27,2023_02_MIN_PHI
+3,9:09,Vikings,Jordan Addison 62 yard pass from Kirk Cousins (Greg Joseph kick),14,27,2023_02_MIN_PHI
+4,7:41,Vikings,K.J. Osborn 10 yard pass from Kirk Cousins (Greg Joseph kick),21,27,2023_02_MIN_PHI
+4,4:13,Eagles,D'Andre Swift 2 yard rush (Jake Elliott kick),21,34,2023_02_MIN_PHI
+4,1:10,Vikings,T.J. Hockenson 5 yard pass from Kirk Cousins (Greg Joseph kick),28,34,2023_02_MIN_PHI
+1,3:50,Falcons,Younghoe Koo 24 yard field goal ,0,3,2023_02_GB_ATL
+2,13:33,Packers,Jayden Reed 9 yard pass from Jordan Love (Anders Carlson kick),7,3,2023_02_GB_ATL
+2,3:06,Packers,Anders Carlson 33 yard field goal ,10,3,2023_02_GB_ATL
+2,0:12,Falcons,Drake London 3 yard pass from Desmond Ridder (Younghoe Koo kick failed),10,9,2023_02_GB_ATL
+3,10:31,Packers,Dontayvion Wicks 32 yard pass from Jordan Love (Anders Carlson kick),17,9,2023_02_GB_ATL
+3,3:07,Falcons,Younghoe Koo 33 yard field goal ,17,12,2023_02_GB_ATL
+3,0:56,Packers,Jayden Reed 10 yard pass from Jordan Love (Anders Carlson kick),24,12,2023_02_GB_ATL
+4,11:48,Falcons,Desmond Ridder 6 yard rush (Younghoe Koo kick),24,19,2023_02_GB_ATL
+4,8:10,Falcons,Younghoe Koo 39 yard field goal ,24,22,2023_02_GB_ATL
+4,0:57,Falcons,Younghoe Koo 25 yard field goal ,24,25,2023_02_GB_ATL
+1,12:16,Raiders,Davante Adams 16 yard pass from Jimmy Garoppolo (Daniel Carlson kick),7,0,2023_02_LV_BUF
+1,4:19,Bills,Latavius Murray 4 yard rush (Tyler Bass kick),7,7,2023_02_LV_BUF
+2,12:10,Bills,Dawson Knox 2 yard pass from Josh Allen (Tyler Bass kick),7,14,2023_02_LV_BUF
+2,6:48,Raiders,Daniel Carlson 47 yard field goal ,10,14,2023_02_LV_BUF
+2,0:18,Bills,Khalil Shakir 11 yard pass from Josh Allen (Tyler Bass kick),10,21,2023_02_LV_BUF
+3,5:59,Bills,Gabriel Davis 2 yard pass from Josh Allen (Tyler Bass kick),10,28,2023_02_LV_BUF
+4,14:56,Bills,Tyler Bass 29 yard field goal ,10,31,2023_02_LV_BUF
+4,5:04,Bills,Damien Harris 1 yard rush (Tyler Bass kick),10,38,2023_02_LV_BUF
+1,7:12,Ravens,Gus Edwards 1 yard rush (Justin Tucker kick),7,0,2023_02_BAL_CIN
+2,13:14,Bengals,Charlie Jones 81 yard punt return (Evan McPherson kick),7,7,2023_02_BAL_CIN
+2,9:15,Ravens,Justin Tucker 44 yard field goal ,10,7,2023_02_BAL_CIN
+2,3:01,Bengals,Evan McPherson 27 yard field goal ,10,10,2023_02_BAL_CIN
+2,0:00,Ravens,Justin Tucker 40 yard field goal ,13,10,2023_02_BAL_CIN
+3,8:39,Ravens,Mark Andrews 3 yard pass from Lamar Jackson (Justin Tucker kick),20,10,2023_02_BAL_CIN
+3,2:34,Bengals,Tee Higgins 3 yard pass from Joe Burrow (Evan McPherson kick),20,17,2023_02_BAL_CIN
+4,11:38,Ravens,Nelson Agholor 17 yard pass from Lamar Jackson (Justin Tucker kick),27,17,2023_02_BAL_CIN
+4,3:28,Bengals,Tee Higgins 4 yard pass from Joe Burrow (Evan McPherson kick),27,24,2023_02_BAL_CIN
+1,7:04,Seahawks,Kenneth Walker III 1 yard rush (Jason Myers kick),7,0,2023_02_SEA_DET
+1,3:49,Lions,Josh Reynolds 22 yard pass from Jared Goff (Riley Patterson kick),7,7,2023_02_SEA_DET
+2,4:51,Lions,Kalif Raymond 36 yard pass from Jared Goff (Riley Patterson kick),7,14,2023_02_SEA_DET
+3,14:16,Seahawks,Kenneth Walker III 3 yard rush (Jason Myers kick),14,14,2023_02_SEA_DET
+3,9:05,Lions,David Montgomery 4 yard rush (Riley Patterson kick),14,21,2023_02_SEA_DET
+3,3:27,Seahawks,Jason Myers 25 yard field goal ,17,21,2023_02_SEA_DET
+4,10:38,Seahawks,Tyler Lockett 3 yard pass from Geno Smith (Jason Myers kick),24,21,2023_02_SEA_DET
+4,8:04,Seahawks,Tre Brown 40 yard interception return (Jason Myers kick),31,21,2023_02_SEA_DET
+4,3:08,Lions,Josh Reynolds 4 yard pass from Jared Goff (Riley Patterson kick),31,28,2023_02_SEA_DET
+4,0:00,Lions,Riley Patterson 38 yard field goal ,31,31,2023_02_SEA_DET
+OT,5:41,Seahawks,Tyler Lockett 6 yard pass from Geno Smith ,37,31,2023_02_SEA_DET
+1,10:44,Colts,Anthony Richardson 18 yard rush (Matt Gay kick),7,0,2023_02_IND_HOU
+1,9:13,Colts,Anthony Richardson 15 yard rush (Matt Gay kick),14,0,2023_02_IND_HOU
+1,3:14,Texans,Nico Collins 8 yard pass from C.J. Stroud (Ka'imi Fairbairn kick),14,7,2023_02_IND_HOU
+2,9:43,Colts,Zack Moss 11 yard rush (Matt Gay kick),21,7,2023_02_IND_HOU
+2,4:25,Texans,Ka'imi Fairbairn 29 yard field goal ,21,10,2023_02_IND_HOU
+2,0:10,Colts,Kylen Granson 4 yard pass from Gardner Minshew II (Matt Gay kick),28,10,2023_02_IND_HOU
+3,5:50,Colts,Matt Gay 42 yard field goal ,31,10,2023_02_IND_HOU
+4,13:24,Texans,Ka'imi Fairbairn 36 yard field goal ,31,13,2023_02_IND_HOU
+4,9:48,Texans,Tank Dell 23 yard pass from C.J. Stroud (Ka'imi Fairbairn kick),31,20,2023_02_IND_HOU
+2,12:59,Jaguars,Brandon McManus 32 yard field goal ,0,3,2023_02_KC_JAX
+2,0:27,Chiefs,Skyy Moore 9 yard pass from Patrick Mahomes (Harrison Butker kick),7,3,2023_02_KC_JAX
+2,0:00,Jaguars,Brandon McManus 49 yard field goal ,7,6,2023_02_KC_JAX
+3,11:30,Chiefs,Travis Kelce 9 yard pass from Patrick Mahomes (Harrison Butker kick),14,6,2023_02_KC_JAX
+4,13:43,Jaguars,Brandon McManus 22 yard field goal ,14,9,2023_02_KC_JAX
+4,8:10,Chiefs,Harrison Butker 38 yard field goal ,17,9,2023_02_KC_JAX
+1,9:03,Buccaneers,Chase McLaughlin 26 yard field goal ,0,3,2023_02_CHI_TB
+1,6:17,Bears,Justin Fields 1 yard rush (Cairo Santos kick),7,3,2023_02_CHI_TB
+2,10:53,Buccaneers,Rachaad White 4 yard rush (Chase McLaughlin kick),7,10,2023_02_CHI_TB
+2,1:55,Bears,Cairo Santos 52 yard field goal ,10,10,2023_02_CHI_TB
+2,0:00,Buccaneers,Chase McLaughlin 25 yard field goal ,10,13,2023_02_CHI_TB
+3,4:06,Buccaneers,Mike Evans 32 yard pass from Baker Mayfield (Chase McLaughlin kick),10,20,2023_02_CHI_TB
+4,6:17,Bears,Chase Claypool 20 yard pass from Justin Fields (Cairo Santos kick),17,20,2023_02_CHI_TB
+4,2:03,Buccaneers,Shaquil Barrett 4 yard interception return (Chase McLaughlin kick),17,27,2023_02_CHI_TB
+1,3:46,Chargers,Cameron Dicker 27 yard field goal ,3,0,2023_02_LAC_TEN
+2,8:16,Chargers,Keenan Allen 8 yard pass from Justin Herbert (Trey Pipkins pass from Justin Herbert),11,0,2023_02_LAC_TEN
+2,7:09,Titans,Derrick Henry 1 yard rush (Nick Folk kick),11,7,2023_02_LAC_TEN
+2,4:23,Chargers,Cameron Dicker 30 yard field goal ,14,7,2023_02_LAC_TEN
+2,0:00,Titans,Nick Folk 33 yard field goal ,14,10,2023_02_LAC_TEN
+3,10:08,Titans,Ryan Tannehill 12 yard rush (Nick Folk kick),14,17,2023_02_LAC_TEN
+4,14:38,Chargers,Keenan Allen 12 yard pass from Justin Herbert (Cameron Dicker kick),21,17,2023_02_LAC_TEN
+4,2:22,Titans,Nick Westbrook-Ikhine 4 yard pass from Ryan Tannehill (Nick Folk kick),21,24,2023_02_LAC_TEN
+4,0:00,Chargers,Cameron Dicker 33 yard field goal ,24,24,2023_02_LAC_TEN
+OT,5:02,Titans,Nick Folk 41 yard field goal ,24,27,2023_02_LAC_TEN
+1,6:11,Cardinals,James Conner 4 yard rush (Matt Prater kick),0,7,2023_02_NYG_ARI
+2,14:51,Cardinals,Joshua Dobbs 23 yard rush (Matt Prater kick),0,14,2023_02_NYG_ARI
+2,8:43,Cardinals,Matt Prater 37 yard field goal ,0,17,2023_02_NYG_ARI
+2,1:09,Cardinals,Matt Prater 44 yard field goal ,0,20,2023_02_NYG_ARI
+3,13:43,Giants,Daniel Jones 14 yard rush (Graham Gano kick),7,20,2023_02_NYG_ARI
+3,9:34,Cardinals,Marquise Brown 3 yard pass from Joshua Dobbs (Joshua Dobbs run),7,28,2023_02_NYG_ARI
+3,3:27,Giants,Saquon Barkley 1 yard rush (Graham Gano kick),14,28,2023_02_NYG_ARI
+4,8:51,Giants,Saquon Barkley 9 yard pass from Daniel Jones (Graham Gano kick),21,28,2023_02_NYG_ARI
+4,4:25,Giants,Isaiah Hodgins 11 yard pass from Daniel Jones (Graham Gano kick),28,28,2023_02_NYG_ARI
+4,0:19,Giants,Graham Gano 34 yard field goal ,31,28,2023_02_NYG_ARI
+1,8:25,49ers,Christian McCaffrey 14 yard rush (Jake Moody kick),7,0,2023_02_SF_LA
+1,1:54,Rams,Brett Maher 43 yard field goal ,7,3,2023_02_SF_LA
+2,13:32,49ers,Jake Moody 27 yard field goal ,10,3,2023_02_SF_LA
+2,9:49,Rams,Kyren Williams 6 yard pass from Matthew Stafford (Brett Maher kick),10,10,2023_02_SF_LA
+2,1:45,Rams,Kyren Williams 4 yard rush (Brett Maher kick),10,17,2023_02_SF_LA
+2,0:00,49ers,Brock Purdy 1 yard rush (Jake Moody kick),17,17,2023_02_SF_LA
+3,1:21,49ers,Jake Moody 57 yard field goal ,20,17,2023_02_SF_LA
+4,11:28,49ers,Deebo Samuel 11 yard rush (Jake Moody kick),27,17,2023_02_SF_LA
+4,7:13,Rams,Brett Maher 48 yard field goal ,27,20,2023_02_SF_LA
+4,2:59,49ers,Jake Moody 26 yard field goal ,30,20,2023_02_SF_LA
+4,0:00,Rams,Brett Maher 38 yard field goal ,30,23,2023_02_SF_LA
+1,9:19,Cowboys,Jake Ferguson 4 yard pass from Dak Prescott (Brandon Aubrey kick),0,7,2023_02_NYJ_DAL
+2,9:10,Cowboys,Brandon Aubrey 35 yard field goal ,0,10,2023_02_NYJ_DAL
+2,7:12,Jets,Garrett Wilson 68 yard pass from Zach Wilson (Austin Seibert kick),7,10,2023_02_NYJ_DAL
+2,1:52,Cowboys,Luke Schoonmaker 1 yard pass from Dak Prescott (Tony Pollard run),7,18,2023_02_NYJ_DAL
+2,0:04,Jets,Austin Seibert 34 yard field goal ,10,18,2023_02_NYJ_DAL
+3,7:24,Cowboys,Brandon Aubrey 21 yard field goal ,10,21,2023_02_NYJ_DAL
+3,5:19,Cowboys,Brandon Aubrey 55 yard field goal ,10,24,2023_02_NYJ_DAL
+4,12:23,Cowboys,Brandon Aubrey 26 yard field goal ,10,27,2023_02_NYJ_DAL
+4,8:18,Cowboys,Brandon Aubrey 30 yard field goal ,10,30,2023_02_NYJ_DAL
+1,6:14,Broncos,Jaleel McLaughlin 5 yard rush (Wil Lutz kick),0,7,2023_02_WAS_DEN
+1,0:24,Commanders,Joey Slye 44 yard field goal ,3,7,2023_02_WAS_DEN
+1,0:12,Broncos,Marvin Mims 60 yard pass from Russell Wilson (Wil Lutz kick),3,14,2023_02_WAS_DEN
+2,9:01,Broncos,Brandon Johnson 16 yard pass from Russell Wilson (Wil Lutz kick),3,21,2023_02_WAS_DEN
+2,1:47,Commanders,Logan Thomas 4 yard pass from Sam Howell (Brian Robinson Jr. run),11,21,2023_02_WAS_DEN
+2,0:00,Commanders,Joey Slye 49 yard field goal ,14,21,2023_02_WAS_DEN
+3,11:47,Commanders,Terry McLaurin 30 yard pass from Sam Howell (Joey Slye kick),21,21,2023_02_WAS_DEN
+3,2:11,Broncos,Wil Lutz 31 yard field goal ,21,24,2023_02_WAS_DEN
+4,13:25,Commanders,Brian Robinson Jr. 2 yard rush (Joey Slye kick),28,24,2023_02_WAS_DEN
+4,7:11,Commanders,Brian Robinson Jr. 15 yard rush (Joey Slye kick),35,24,2023_02_WAS_DEN
+4,1:50,Broncos,Wil Lutz 32 yard field goal ,35,27,2023_02_WAS_DEN
+4,0:00,Broncos,Brandon Johnson 50 yard pass from Russell Wilson (pass failed),35,33,2023_02_WAS_DEN
+1,3:00,Dolphins,Jason Sanders 23 yard field goal ,3,0,2023_02_MIA_NE
+2,9:39,Dolphins,Raheem Mostert 8 yard rush (Jason Sanders kick),10,0,2023_02_MIA_NE
+2,1:49,Patriots,Chad Ryland 49 yard field goal ,10,3,2023_02_MIA_NE
+2,0:11,Dolphins,Tyreek Hill 2 yard pass from Tua Tagovailoa (Jason Sanders kick),17,3,2023_02_MIA_NE
+4,11:21,Patriots,Hunter Henry 6 yard pass from Mac Jones (Chad Ryland kick),17,10,2023_02_MIA_NE
+4,8:45,Dolphins,Raheem Mostert 43 yard rush (Jason Sanders kick),24,10,2023_02_MIA_NE
+4,5:25,Patriots,Rhamondre Stevenson 2 yard rush (Chad Ryland kick),24,17,2023_02_MIA_NE
+1,7:04,Panthers,Eddy Pineiro 52 yard field goal ,0,3,2023_02_NO_CAR
+1,0:36,Saints,Blake Grupe 28 yard field goal ,3,3,2023_02_NO_CAR
+2,9:52,Saints,Blake Grupe 23 yard field goal ,6,3,2023_02_NO_CAR
+3,9:10,Panthers,Eddy Pineiro 54 yard field goal ,6,6,2023_02_NO_CAR
+3,2:56,Saints,Tony Jones 2 yard rush (Blake Grupe kick),13,6,2023_02_NO_CAR
+4,5:30,Panthers,Eddy Pineiro 36 yard field goal ,13,9,2023_02_NO_CAR
+4,3:14,Saints,Tony Jones 2 yard rush (Blake Grupe kick),20,9,2023_02_NO_CAR
+4,1:16,Panthers,Adam Thielen 3 yard pass from Bryce Young (Adam Thielen pass from Bryce Young),20,17,2023_02_NO_CAR
+1,14:51,Steelers,Alex Highsmith 30 yard interception return (Chris Boswell kick),0,7,2023_02_CLE_PIT
+1,8:46,Browns,Dustin Hopkins 43 yard field goal ,3,7,2023_02_CLE_PIT
+2,14:02,Browns,Jerome Ford 3 yard pass from Deshaun Watson (Jerome Ford run),11,7,2023_02_CLE_PIT
+2,9:11,Steelers,Chris Boswell 52 yard field goal ,11,10,2023_02_CLE_PIT
+2,6:05,Steelers,George Pickens 71 yard pass from Kenny Pickett (run failed),11,16,2023_02_CLE_PIT
+2,0:22,Browns,Dustin Hopkins 55 yard field goal ,14,16,2023_02_CLE_PIT
+3,11:47,Steelers,Chris Boswell 50 yard field goal ,14,19,2023_02_CLE_PIT
+3,10:01,Browns,Pierre Strong 1 yard rush (Deshaun Watson run),22,19,2023_02_CLE_PIT
+4,6:58,Steelers,T.J. Watt 16 yard fumble return (Chris Boswell kick),22,26,2023_02_CLE_PIT
+1,8:44,49ers,Jake Moody 28 yard field goal ,0,3,2023_03_NYG_SF
+1,3:18,Giants,Graham Gano 44 yard field goal ,3,3,2023_03_NYG_SF
+2,7:49,49ers,Ronnie Bell 9 yard pass from Brock Purdy (Jake Moody kick),3,10,2023_03_NYG_SF
+2,1:40,49ers,Christian McCaffrey 4 yard rush (Jake Moody kick),3,17,2023_03_NYG_SF
+2,0:13,Giants,Graham Gano 57 yard field goal ,6,17,2023_03_NYG_SF
+3,10:00,Giants,Matt Breida 8 yard rush (pass failed),12,17,2023_03_NYG_SF
+3,4:08,49ers,Jake Moody 21 yard field goal ,12,20,2023_03_NYG_SF
+4,12:47,49ers,Jake Moody 36 yard field goal ,12,23,2023_03_NYG_SF
+4,5:58,49ers,Deebo Samuel 27 yard pass from Brock Purdy (Jake Moody kick),12,30,2023_03_NYG_SF
+1,6:35,Ravens,Lamar Jackson 8 yard rush (Justin Tucker kick),0,7,2023_03_IND_BAL
+2,6:07,Colts,Zack Moss 17 yard pass from Gardner Minshew II (Matt Gay kick),7,7,2023_03_IND_BAL
+2,3:26,Colts,Matt Gay 31 yard field goal ,10,7,2023_03_IND_BAL
+3,8:33,Colts,Matt Gay 54 yard field goal ,13,7,2023_03_IND_BAL
+3,0:13,Ravens,Lamar Jackson 10 yard rush (Justin Tucker kick),13,14,2023_03_IND_BAL
+4,11:22,Colts,Matt Gay 53 yard field goal ,16,14,2023_03_IND_BAL
+4,7:33,Ravens,Justin Tucker 50 yard field goal ,16,17,2023_03_IND_BAL
+4,2:03,Ravens,"Safety, Gardner Minshew sacked in end zone by ",16,19,2023_03_IND_BAL
+4,0:57,Colts,Matt Gay 53 yard field goal ,19,19,2023_03_IND_BAL
+OT,1:09,Colts,Matt Gay 53 yard field goal ,22,19,2023_03_IND_BAL
+1,7:49,Browns,Dustin Hopkins 48 yard field goal ,0,3,2023_03_TEN_CLE
+2,14:14,Titans,Nick Folk 44 yard field goal ,3,3,2023_03_TEN_CLE
+2,9:39,Browns,Jerome Ford 19 yard pass from Deshaun Watson (Dustin Hopkins kick),3,10,2023_03_TEN_CLE
+2,1:00,Browns,Dustin Hopkins 52 yard field goal ,3,13,2023_03_TEN_CLE
+3,5:49,Browns,Jerome Ford 3 yard rush (Dustin Hopkins kick),3,20,2023_03_TEN_CLE
+4,6:51,Browns,Amari Cooper 43 yard pass from Deshaun Watson (Dustin Hopkins kick),3,27,2023_03_TEN_CLE
+1,1:46,Lions,Riley Patterson 37 yard field goal ,0,3,2023_03_ATL_DET
+2,11:32,Falcons,Younghoe Koo 48 yard field goal ,3,3,2023_03_ATL_DET
+2,10:05,Lions,Sam LaPorta 45 yard pass from Jared Goff (Riley Patterson kick),3,10,2023_03_ATL_DET
+2,1:53,Lions,Riley Patterson 24 yard field goal ,3,13,2023_03_ATL_DET
+4,9:50,Lions,Jared Goff 3 yard rush (Riley Patterson kick),3,20,2023_03_ATL_DET
+4,4:19,Falcons,Younghoe Koo 24 yard field goal ,6,20,2023_03_ATL_DET
+1,6:40,Saints,Jimmy Graham 8 yard pass from Derek Carr (Blake Grupe kick),7,0,2023_03_NO_GB
+2,10:30,Saints,Rashid Shaheed 76 yard punt return (Blake Grupe kick),14,0,2023_03_NO_GB
+2,0:06,Saints,Blake Grupe 25 yard field goal ,17,0,2023_03_NO_GB
+4,11:00,Packers,Anders Carlson 38 yard field goal ,17,3,2023_03_NO_GB
+4,6:58,Packers,Jordan Love 1 yard rush (Samori Toure pass from Jordan Love),17,11,2023_03_NO_GB
+4,2:56,Packers,Romeo Doubs 8 yard pass from Jordan Love (Anders Carlson kick),17,18,2023_03_NO_GB
+1,7:35,Texans,Dameon Pierce 1 yard rush (Ka'imi Fairbairn kick),7,0,2023_03_HOU_JAX
+2,7:27,Texans,Brevin Jordan 4 yard pass from C.J. Stroud (Ka'imi Fairbairn kick),14,0,2023_03_HOU_JAX
+2,0:00,Texans,Ka'imi Fairbairn 28 yard field goal ,17,0,2023_03_HOU_JAX
+3,11:17,Jaguars,Tank Bigsby 1 yard rush (Brandon McManus kick),17,7,2023_03_HOU_JAX
+3,4:35,Jaguars,Brandon McManus 33 yard field goal ,17,10,2023_03_HOU_JAX
+3,4:19,Texans,Andrew Beck 85 yard kickoff return (Ka'imi Fairbairn kick),24,10,2023_03_HOU_JAX
+4,12:36,Texans,Ka'imi Fairbairn 26 yard field goal ,27,10,2023_03_HOU_JAX
+4,10:40,Jaguars,Christian Kirk 26 yard pass from Trevor Lawrence (Brandon McManus kick),27,17,2023_03_HOU_JAX
+4,8:59,Texans,Tank Dell 68 yard pass from C.J. Stroud (Ka'imi Fairbairn kick),34,17,2023_03_HOU_JAX
+4,2:10,Texans,Ka'imi Fairbairn 33 yard field goal ,37,17,2023_03_HOU_JAX
+1,13:37,Dolphins,Tyreek Hill 54 yard pass from Tua Tagovailoa (Jason Sanders kick),0,7,2023_03_DEN_MIA
+1,6:31,Dolphins,De'Von Achane 8 yard rush (Jason Sanders kick),0,14,2023_03_DEN_MIA
+1,1:12,Broncos,Courtland Sutton 12 yard pass from Russell Wilson (Wil Lutz kick),7,14,2023_03_DEN_MIA
+2,10:16,Dolphins,De'Von Achane 4 yard pass from Tua Tagovailoa (Jason Sanders kick),7,21,2023_03_DEN_MIA
+2,6:36,Broncos,Wil Lutz 31 yard field goal ,10,21,2023_03_DEN_MIA
+2,1:49,Dolphins,Raheem Mostert 20 yard rush (Jason Sanders kick),10,28,2023_03_DEN_MIA
+2,1:29,Dolphins,Raheem Mostert 3 yard rush (Jason Sanders kick),10,35,2023_03_DEN_MIA
+2,0:03,Broncos,Wil Lutz 25 yard field goal ,13,35,2023_03_DEN_MIA
+3,7:48,Dolphins,Raheem Mostert 1 yard rush (Jason Sanders kick),13,42,2023_03_DEN_MIA
+3,0:29,Dolphins,Raheem Mostert 19 yard pass from Tua Tagovailoa (Jason Sanders kick),13,49,2023_03_DEN_MIA
+4,14:55,Dolphins,De'Von Achane 10 yard pass from Tua Tagovailoa (Jason Sanders kick),13,56,2023_03_DEN_MIA
+4,9:05,Dolphins,Robbie Chosen 68 yard pass from Mike White (Jason Sanders kick),13,63,2023_03_DEN_MIA
+4,8:50,Broncos,Marvin Mims 99 yard kickoff return (Wil Lutz kick),20,63,2023_03_DEN_MIA
+4,8:01,Dolphins,De'Von Achane 67 yard rush (Jason Sanders kick),20,70,2023_03_DEN_MIA
+1,2:51,Chargers,Donald Parham 3 yard pass from Justin Herbert (Cameron Dicker kick),7,0,2023_03_LAC_MIN
+2,7:27,Vikings,Josh Oliver 4 yard pass from Kirk Cousins (Greg Joseph kick),7,7,2023_03_LAC_MIN
+2,2:08,Vikings,Greg Joseph 23 yard field goal ,7,10,2023_03_LAC_MIN
+2,0:47,Chargers,Donald Parham 1 yard pass from Justin Herbert (Cameron Dicker kick),14,10,2023_03_LAC_MIN
+3,5:53,Chargers,Mike Williams 49 yard pass from Keenan Allen (Cameron Dicker kick),21,10,2023_03_LAC_MIN
+3,3:01,Vikings,K.J. Osborn 36 yard pass from Kirk Cousins (Greg Joseph kick),21,17,2023_03_LAC_MIN
+4,11:20,Vikings,Justin Jefferson 52 yard pass from Kirk Cousins (Greg Joseph kick),21,24,2023_03_LAC_MIN
+4,8:05,Chargers,Josh Palmer 30 yard pass from Justin Herbert (Cameron Dicker kick),28,24,2023_03_LAC_MIN
+1,10:41,Patriots,Chad Ryland 48 yard field goal ,3,0,2023_03_NE_NYJ
+2,11:38,Patriots,Pharaoh Brown 58 yard pass from Mac Jones (Chad Ryland kick),10,0,2023_03_NE_NYJ
+2,1:21,Jets,Greg Zuerlein 52 yard field goal ,10,3,2023_03_NE_NYJ
+3,10:26,Patriots,Chad Ryland 51 yard field goal ,13,3,2023_03_NE_NYJ
+4,5:24,Jets,Nick Bawden 1 yard rush (Greg Zuerlein kick),13,10,2023_03_NE_NYJ
+4,2:19,Patriots,"Safety, Zach Wilson sacked in end zone by Matthew Judon ",15,10,2023_03_NE_NYJ
+1,9:29,Bills,Tyler Bass 36 yard field goal ,3,0,2023_03_BUF_WAS
+1,0:41,Bills,Gabriel Davis 35 yard pass from Josh Allen (Tyler Bass kick),10,0,2023_03_BUF_WAS
+2,1:55,Bills,Tyler Bass 54 yard field goal ,13,0,2023_03_BUF_WAS
+2,0:19,Bills,Tyler Bass 32 yard field goal ,16,0,2023_03_BUF_WAS
+4,10:37,Bills,Josh Allen 10 yard rush (Tyler Bass kick),23,0,2023_03_BUF_WAS
+4,10:01,Bills,A.J. Epenesa 32 yard interception return (Tyler Bass kick),30,0,2023_03_BUF_WAS
+4,2:15,Bills,Latavius Murray 2 yard rush (Tyler Bass kick),37,0,2023_03_BUF_WAS
+4,0:46,Commanders,Joey Slye 51 yard field goal ,37,3,2023_03_BUF_WAS
+1,7:47,Panthers,Eddy Pineiro 47 yard field goal ,3,0,2023_03_CAR_SEA
+1,3:33,Seahawks,Jason Myers 43 yard field goal ,3,3,2023_03_CAR_SEA
+2,12:07,Seahawks,Jason Myers 35 yard field goal ,3,6,2023_03_CAR_SEA
+2,8:45,Seahawks,Jason Myers 33 yard field goal ,3,9,2023_03_CAR_SEA
+2,4:54,Panthers,DJ Chark 47 yard pass from Andy Dalton (Eddy Pineiro kick),10,9,2023_03_CAR_SEA
+2,2:39,Panthers,Eddy Pineiro 44 yard field goal ,13,9,2023_03_CAR_SEA
+2,0:44,Seahawks,Jason Myers 37 yard field goal ,13,12,2023_03_CAR_SEA
+3,9:45,Seahawks,Jason Myers 39 yard field goal ,13,15,2023_03_CAR_SEA
+3,3:52,Seahawks,Kenneth Walker III 1 yard rush (Jason Myers kick),13,22,2023_03_CAR_SEA
+4,14:55,Panthers,Miles Sanders 1 yard rush (Eddy Pineiro kick),20,22,2023_03_CAR_SEA
+4,11:40,Seahawks,Kenneth Walker III 7 yard rush (Jason Myers kick),20,29,2023_03_CAR_SEA
+4,4:17,Seahawks,Jake Bobo 5 yard pass from Geno Smith (Tyler Lockett pass from Geno Smith),20,37,2023_03_CAR_SEA
+4,1:40,Panthers,Adam Thielen 15 yard pass from Andy Dalton (Eddy Pineiro kick),27,37,2023_03_CAR_SEA
+1,12:31,Cardinals,Matt Prater 39 yard field goal ,0,3,2023_03_DAL_ARI
+1,6:12,Cardinals,James Conner 5 yard rush (run failed),0,9,2023_03_DAL_ARI
+1,1:48,Cowboys,Brandon Aubrey 49 yard field goal ,3,9,2023_03_DAL_ARI
+2,12:31,Cardinals,Rondale Moore 45 yard rush (pass failed),3,15,2023_03_DAL_ARI
+2,5:32,Cowboys,Rico Dowdle 15 yard pass from Dak Prescott (Brandon Aubrey kick),10,15,2023_03_DAL_ARI
+2,1:28,Cardinals,Matt Prater 43 yard field goal ,10,18,2023_03_DAL_ARI
+2,0:00,Cardinals,Matt Prater 62 yard field goal ,10,21,2023_03_DAL_ARI
+3,9:27,Cowboys,Brandon Aubrey 27 yard field goal ,13,21,2023_03_DAL_ARI
+4,9:33,Cowboys,Brandon Aubrey 26 yard field goal ,16,21,2023_03_DAL_ARI
+4,7:22,Cardinals,Marquise Brown 2 yard pass from Joshua Dobbs (Matt Prater kick),16,28,2023_03_DAL_ARI
+1,6:51,Chiefs,Jerick McKinnon 6 yard pass from Patrick Mahomes (Harrison Butker kick),0,7,2023_03_CHI_KC
+2,11:34,Chiefs,Clyde Edwards-Helaire 1 yard rush (Harrison Butker kick),0,14,2023_03_CHI_KC
+2,3:05,Chiefs,Jerick McKinnon 3 yard pass from Patrick Mahomes (Harrison Butker kick),0,21,2023_03_CHI_KC
+2,1:51,Chiefs,Harrison Butker 41 yard field goal ,0,24,2023_03_CHI_KC
+2,1:06,Chiefs,Isiah Pacheco 1 yard rush (Harrison Butker kick),0,31,2023_03_CHI_KC
+2,0:00,Chiefs,Harrison Butker 38 yard field goal ,0,34,2023_03_CHI_KC
+3,7:40,Chiefs,Travis Kelce 3 yard pass from Patrick Mahomes (Harrison Butker kick),0,41,2023_03_CHI_KC
+4,13:34,Bears,Cairo Santos 21 yard field goal ,3,41,2023_03_CHI_KC
+4,4:20,Bears,D.J. Moore 9 yard pass from Justin Fields (Cairo Santos kick),10,41,2023_03_CHI_KC
+1,7:04,Raiders,Davante Adams 32 yard pass from Jimmy Garoppolo (Daniel Carlson kick),0,7,2023_03_PIT_LV
+1,6:12,Steelers,Calvin Austin III 72 yard pass from Kenny Pickett (Chris Boswell kick),7,7,2023_03_PIT_LV
+2,8:33,Steelers,Chris Boswell 43 yard field goal ,10,7,2023_03_PIT_LV
+2,1:56,Steelers,Chris Boswell 42 yard field goal ,13,7,2023_03_PIT_LV
+3,9:28,Steelers,Chris Boswell 57 yard field goal ,16,7,2023_03_PIT_LV
+3,3:56,Steelers,Pat Freiermuth 13 yard pass from Kenny Pickett (Chris Boswell kick),23,7,2023_03_PIT_LV
+4,5:41,Raiders,Davante Adams 1 yard pass from Jimmy Garoppolo (Michael Mayer pass from Jimmy Garoppolo),23,15,2023_03_PIT_LV
+4,2:22,Raiders,Daniel Carlson 26 yard field goal ,23,18,2023_03_PIT_LV
+1,3:05,Eagles,Jake Elliott 36 yard field goal ,3,0,2023_03_PHI_TB
+2,8:33,Buccaneers,Chase McLaughlin 33 yard field goal ,3,3,2023_03_PHI_TB
+2,3:32,Eagles,Olamide Zaccheaus 34 yard pass from Jalen Hurts (Jake Elliott kick),10,3,2023_03_PHI_TB
+2,0:00,Eagles,Jake Elliott 38 yard field goal ,13,3,2023_03_PHI_TB
+3,9:12,Eagles,Jalen Hurts 1 yard rush (Jake Elliott kick),20,3,2023_03_PHI_TB
+3,3:40,Eagles,"Safety, Rachaad White tackled in end zone by Nicholas Morrow ",22,3,2023_03_PHI_TB
+4,13:28,Eagles,Jake Elliott 26 yard field goal ,25,3,2023_03_PHI_TB
+4,9:22,Buccaneers,Mike Evans 1 yard pass from Baker Mayfield (Chris Godwin pass from Baker Mayfield),25,11,2023_03_PHI_TB
+1,8:22,Rams,Brett Maher 30 yard field goal ,3,0,2023_03_LA_CIN
+2,12:55,Bengals,Evan McPherson 49 yard field goal ,3,3,2023_03_LA_CIN
+2,9:49,Rams,Brett Maher 23 yard field goal ,6,3,2023_03_LA_CIN
+2,0:00,Bengals,Evan McPherson 53 yard field goal ,6,6,2023_03_LA_CIN
+3,10:37,Rams,Brett Maher 42 yard field goal ,9,6,2023_03_LA_CIN
+3,5:34,Bengals,Joe Mixon 14 yard rush (Evan McPherson kick),9,13,2023_03_LA_CIN
+3,3:09,Bengals,Evan McPherson 48 yard field goal ,9,16,2023_03_LA_CIN
+4,7:13,Bengals,Evan McPherson 54 yard field goal ,9,19,2023_03_LA_CIN
+4,1:03,Rams,Tutu Atwell 1 yard pass from Matthew Stafford (Brett Maher kick),16,19,2023_03_LA_CIN
+1,11:59,Packers,Anders Carlson 34 yard field goal ,0,3,2023_04_DET_GB
+1,8:16,Lions,Amon-Ra St. Brown 24 yard pass from Jared Goff (Riley Patterson kick),7,3,2023_04_DET_GB
+1,2:54,Lions,David Montgomery 3 yard rush (Riley Patterson kick),14,3,2023_04_DET_GB
+2,14:07,Lions,Riley Patterson 33 yard field goal ,17,3,2023_04_DET_GB
+2,13:19,Lions,David Montgomery 2 yard rush (Riley Patterson kick),24,3,2023_04_DET_GB
+2,0:34,Lions,Riley Patterson 37 yard field goal ,27,3,2023_04_DET_GB
+3,8:17,Packers,Christian Watson 1 yard pass from Jordan Love (Jayden Reed pass from Jordan Love),27,11,2023_04_DET_GB
+4,14:52,Packers,Jordan Love 9 yard rush (run failed),27,17,2023_04_DET_GB
+4,6:00,Lions,David Montgomery 1 yard rush (Riley Patterson kick),34,17,2023_04_DET_GB
+4,2:52,Packers,Anders Carlson 50 yard field goal ,34,20,2023_04_DET_GB
+1,5:44,Jaguars,Calvin Ridley 30 yard pass from Trevor Lawrence (Brandon McManus kick),0,7,2023_04_ATL_JAX
+2,14:51,Jaguars,Brandon McManus 56 yard field goal ,0,10,2023_04_ATL_JAX
+2,4:31,Jaguars,Darious Williams 61 yard interception return (Brandon McManus kick),0,17,2023_04_ATL_JAX
+3,11:38,Falcons,Drake London 15 yard pass from Desmond Ridder (Younghoe Koo kick),7,17,2023_04_ATL_JAX
+4,10:36,Jaguars,Brandon McManus 43 yard field goal ,7,20,2023_04_ATL_JAX
+4,1:56,Jaguars,Brandon McManus 38 yard field goal ,7,23,2023_04_ATL_JAX
+1,10:41,Bills,Gabriel Davis 18 yard pass from Josh Allen (Tyler Bass kick),0,7,2023_04_MIA_BUF
+1,6:30,Dolphins,De'Von Achane 3 yard rush (Jason Sanders kick),7,7,2023_04_MIA_BUF
+1,1:05,Bills,James Cook 1 yard rush (Tyler Bass kick),7,14,2023_04_MIA_BUF
+2,12:47,Dolphins,De'Von Achane 10 yard rush (Jason Sanders kick),14,14,2023_04_MIA_BUF
+2,10:02,Bills,Stefon Diggs 11 yard pass from Josh Allen (Tyler Bass kick),14,21,2023_04_MIA_BUF
+2,2:58,Bills,Stefon Diggs 55 yard pass from Josh Allen (Tyler Bass kick),14,28,2023_04_MIA_BUF
+2,1:39,Bills,Tyler Bass 53 yard field goal ,14,31,2023_04_MIA_BUF
+3,9:30,Dolphins,Braxton Berrios 11 yard pass from Tua Tagovailoa (pass failed),20,31,2023_04_MIA_BUF
+3,5:21,Bills,Tyler Bass 33 yard field goal ,20,34,2023_04_MIA_BUF
+3,3:00,Bills,Stefon Diggs 13 yard pass from Josh Allen (Tyler Bass kick),20,41,2023_04_MIA_BUF
+4,14:55,Bills,Josh Allen 11 yard rush (Tyler Bass kick),20,48,2023_04_MIA_BUF
+1,10:27,Panthers,Sam Franklin 99 yard interception return (Eddy Pineiro kick),0,7,2023_04_MIN_CAR
+2,14:56,Panthers,Eddy Pineiro 26 yard field goal ,0,10,2023_04_MIN_CAR
+2,9:43,Vikings,Justin Jefferson 4 yard pass from Kirk Cousins (Greg Joseph kick),7,10,2023_04_MIN_CAR
+2,0:00,Panthers,Eddy Pineiro 56 yard field goal ,7,13,2023_04_MIN_CAR
+3,3:58,Vikings,D.J. Wonnum 51 yard fumble return (Greg Joseph kick),14,13,2023_04_MIN_CAR
+3,0:00,Vikings,Justin Jefferson 30 yard pass from Kirk Cousins (Greg Joseph kick),21,13,2023_04_MIN_CAR
+1,5:08,Broncos,Jaleel McLaughlin 18 yard pass from Russell Wilson (Wil Lutz kick),7,0,2023_04_DEN_CHI
+2,14:53,Bears,D.J. Moore 29 yard pass from Justin Fields (Cairo Santos kick),7,7,2023_04_DEN_CHI
+2,11:44,Bears,Cole Kmet 22 yard pass from Justin Fields (Cairo Santos kick),7,14,2023_04_DEN_CHI
+2,6:08,Bears,Cole Kmet 3 yard pass from Justin Fields (Cairo Santos kick),7,21,2023_04_DEN_CHI
+3,4:11,Bears,Khalil Herbert 2 yard pass from Justin Fields (Cairo Santos kick),7,28,2023_04_DEN_CHI
+3,0:14,Broncos,Brandon Johnson 4 yard pass from Russell Wilson (Wil Lutz kick),14,28,2023_04_DEN_CHI
+4,9:36,Broncos,Courtland Sutton 13 yard pass from Russell Wilson (Wil Lutz kick),21,28,2023_04_DEN_CHI
+4,6:55,Broncos,Jonathon Cooper 35 yard fumble return (Wil Lutz kick),28,28,2023_04_DEN_CHI
+4,1:46,Broncos,Wil Lutz 51 yard field goal ,31,28,2023_04_DEN_CHI
+1,6:38,Ravens,Lamar Jackson 10 yard rush (Justin Tucker kick),7,0,2023_04_BAL_CLE
+1,2:21,Browns,Dustin Hopkins 53 yard field goal ,7,3,2023_04_BAL_CLE
+2,4:18,Ravens,Lamar Jackson 2 yard rush (Justin Tucker kick),14,3,2023_04_BAL_CLE
+2,0:11,Ravens,Mark Andrews 7 yard pass from Lamar Jackson (Justin Tucker kick),21,3,2023_04_BAL_CLE
+4,5:56,Ravens,Mark Andrews 18 yard pass from Lamar Jackson (Justin Tucker kick),28,3,2023_04_BAL_CLE
+1,8:55,Texans,Nico Collins 2 yard pass from C.J. Stroud (Ka'imi Fairbairn kick),0,7,2023_04_PIT_HOU
+1,1:20,Texans,Ka'imi Fairbairn 36 yard field goal ,0,10,2023_04_PIT_HOU
+2,12:09,Texans,Ka'imi Fairbairn 38 yard field goal ,0,13,2023_04_PIT_HOU
+2,0:00,Texans,Ka'imi Fairbairn 39 yard field goal ,0,16,2023_04_PIT_HOU
+3,9:31,Steelers,Chris Boswell 35 yard field goal ,3,16,2023_04_PIT_HOU
+3,5:47,Steelers,Chris Boswell 23 yard field goal ,6,16,2023_04_PIT_HOU
+4,10:50,Texans,Dalton Schultz 6 yard pass from Devin Singletary (Ka'imi Fairbairn kick),6,23,2023_04_PIT_HOU
+4,3:39,Texans,Nico Collins 52 yard pass from C.J. Stroud (Ka'imi Fairbairn kick),6,30,2023_04_PIT_HOU
+1,11:35,Rams,Kyren Williams 3 yard rush (Brett Maher kick),7,0,2023_04_LA_IND
+1,3:40,Rams,Kyren Williams 3 yard rush (Brett Maher kick),14,0,2023_04_LA_IND
+2,12:52,Rams,Brett Maher 40 yard field goal ,17,0,2023_04_LA_IND
+2,5:48,Rams,Brett Maher 54 yard field goal ,20,0,2023_04_LA_IND
+3,7:17,Rams,Brett Maher 51 yard field goal ,23,0,2023_04_LA_IND
+3,5:17,Colts,Mo Alie-Cox 35 yard pass from Anthony Richardson (Zack Moss pass from Anthony Richardson),23,8,2023_04_LA_IND
+4,11:45,Colts,Anthony Richardson 1 yard rush (Matt Gay kick),23,15,2023_04_LA_IND
+4,1:56,Colts,Andrew Ogletree 5 yard pass from Anthony Richardson (Michael Pittman Jr. pass from Anthony Richardson),23,23,2023_04_LA_IND
+OT,5:49,Rams,Puka Nacua 22 yard pass from Matthew Stafford ,29,23,2023_04_LA_IND
+1,9:20,Saints,Blake Grupe 37 yard field goal ,0,3,2023_04_TB_NO
+2,5:19,Buccaneers,Cade Otton 4 yard pass from Baker Mayfield (Chase McLaughlin kick),7,3,2023_04_TB_NO
+2,0:19,Buccaneers,Trey Palmer 1 yard pass from Baker Mayfield (Chase McLaughlin kick),14,3,2023_04_TB_NO
+3,0:49,Saints,Blake Grupe 32 yard field goal ,14,6,2023_04_TB_NO
+4,13:31,Buccaneers,Chase McLaughlin 51 yard field goal ,17,6,2023_04_TB_NO
+4,8:29,Saints,Blake Grupe 44 yard field goal ,17,9,2023_04_TB_NO
+4,3:44,Buccaneers,Deven Thompkins 5 yard pass from Baker Mayfield (pass failed),23,9,2023_04_TB_NO
+4,2:24,Buccaneers,Chase McLaughlin 28 yard field goal ,26,9,2023_04_TB_NO
+1,7:52,Commanders,Curtis Samuel 1 yard rush (Joey Slye kick),7,0,2023_04_WAS_PHI
+1,1:17,Eagles,D'Andre Swift 5 yard rush (Jake Elliott kick),7,7,2023_04_WAS_PHI
+2,12:56,Commanders,Terry McLaurin fumble recovery in end zone (Joey Slye kick),14,7,2023_04_WAS_PHI
+2,1:39,Commanders,Joey Slye 27 yard field goal ,17,7,2023_04_WAS_PHI
+2,0:00,Eagles,Jake Elliott 41 yard field goal ,17,10,2023_04_WAS_PHI
+3,11:38,Eagles,Jake Elliott 47 yard field goal ,17,13,2023_04_WAS_PHI
+3,7:11,Eagles,A.J. Brown 59 yard pass from Jalen Hurts (Kenneth Gainwell run),17,21,2023_04_WAS_PHI
+4,14:15,Eagles,Jake Elliott 36 yard field goal ,17,24,2023_04_WAS_PHI
+4,8:01,Commanders,Brian Robinson Jr. 15 yard rush (Joey Slye kick),24,24,2023_04_WAS_PHI
+4,1:43,Eagles,A.J. Brown 28 yard pass from Jalen Hurts (Jake Elliott kick),24,31,2023_04_WAS_PHI
+4,0:00,Commanders,Jahan Dotson 10 yard pass from Sam Howell (Joey Slye kick),31,31,2023_04_WAS_PHI
+OT,3:58,Eagles,Jake Elliott 54 yard field goal ,31,34,2023_04_WAS_PHI
+1,9:12,Bengals,Evan McPherson 21 yard field goal ,3,0,2023_04_CIN_TEN
+1,1:24,Titans,Nick Folk 53 yard field goal ,3,3,2023_04_CIN_TEN
+2,6:31,Titans,Nick Westbrook-Ikhine 13 yard pass from Ryan Tannehill (Nick Folk kick),3,10,2023_04_CIN_TEN
+2,3:58,Titans,Derrick Henry 29 yard rush (Nick Folk kick),3,17,2023_04_CIN_TEN
+2,0:10,Titans,Josh Whyle 2 yard pass from Derrick Henry (Nick Folk kick),3,24,2023_04_CIN_TEN
+3,4:38,Titans,Nick Folk 35 yard field goal ,3,27,2023_04_CIN_TEN
+1,10:38,Chargers,Justin Herbert 12 yard rush (Cameron Dicker kick),0,7,2023_04_LV_LAC
+1,0:45,Raiders,Aidan O'Connell 1 yard rush (Daniel Carlson kick),7,7,2023_04_LV_LAC
+2,10:42,Chargers,Cameron Dicker 33 yard field goal ,7,10,2023_04_LV_LAC
+2,7:20,Chargers,Keenan Allen 7 yard pass from Justin Herbert (Cameron Dicker kick),7,17,2023_04_LV_LAC
+2,3:05,Chargers,Justin Herbert 1 yard rush (Cameron Dicker kick),7,24,2023_04_LV_LAC
+3,4:51,Raiders,Daniel Carlson 22 yard field goal ,10,24,2023_04_LV_LAC
+4,3:59,Raiders,Josh Jacobs 1 yard rush (Daniel Carlson kick),17,24,2023_04_LV_LAC
+1,10:52,Cowboys,Brandon Aubrey 23 yard field goal ,0,3,2023_04_NE_DAL
+1,6:41,Patriots,Chad Ryland 29 yard field goal ,3,3,2023_04_NE_DAL
+1,1:30,Cowboys,CeeDee Lamb 20 yard pass from Dak Prescott (Brandon Aubrey kick),3,10,2023_04_NE_DAL
+2,11:09,Cowboys,Leighton Vander Esch 11 yard fumble return (Chauncey Golston pass from Bryan Anger),3,18,2023_04_NE_DAL
+2,4:03,Cowboys,Brandon Aubrey 23 yard field goal ,3,21,2023_04_NE_DAL
+2,0:54,Cowboys,DaRon Bland 54 yard interception return (Brandon Aubrey kick),3,28,2023_04_NE_DAL
+3,7:42,Cowboys,Brandon Aubrey 33 yard field goal ,3,31,2023_04_NE_DAL
+4,6:38,Cowboys,Hunter Luepke 3 yard rush (Brandon Aubrey kick),3,38,2023_04_NE_DAL
+1,9:07,49ers,Christian McCaffrey 1 yard rush (Jake Moody kick),0,7,2023_04_ARI_SF
+2,14:14,49ers,Christian McCaffrey 18 yard rush (Jake Moody kick),0,14,2023_04_ARI_SF
+2,8:14,Cardinals,Matt Prater 38 yard field goal ,3,14,2023_04_ARI_SF
+2,5:22,49ers,Christian McCaffrey 6 yard pass from Brock Purdy (Jake Moody kick),3,21,2023_04_ARI_SF
+2,0:23,Cardinals,Michael Wilson 16 yard pass from Joshua Dobbs (Matt Prater kick),10,21,2023_04_ARI_SF
+3,4:12,Cardinals,Michael Wilson 8 yard pass from Joshua Dobbs (run failed),16,21,2023_04_ARI_SF
+4,14:22,49ers,Christian McCaffrey 2 yard rush (Jake Moody kick),16,28,2023_04_ARI_SF
+4,1:59,49ers,Brock Purdy 1 yard rush (Jake Moody kick),16,35,2023_04_ARI_SF
+1,11:35,Chiefs,Harrison Butker 37 yard field goal ,3,0,2023_04_KC_NYJ
+1,8:32,Chiefs,Isiah Pacheco 48 yard rush (Harrison Butker kick),10,0,2023_04_KC_NYJ
+1,3:24,Chiefs,Noah Gray 34 yard pass from Patrick Mahomes (Harrison Butker kick),17,0,2023_04_KC_NYJ
+2,13:20,Jets,Safety ,17,2,2023_04_KC_NYJ
+2,9:50,Jets,Greg Zuerlein 31 yard field goal ,17,5,2023_04_KC_NYJ
+2,6:26,Jets,C.J. Uzomah 1 yard pass from Zach Wilson (Greg Zuerlein kick),17,12,2023_04_KC_NYJ
+2,2:15,Chiefs,Harrison Butker 37 yard field goal ,20,12,2023_04_KC_NYJ
+3,10:40,Jets,Allen Lazard 10 yard pass from Zach Wilson (Zach Wilson run),20,20,2023_04_KC_NYJ
+4,10:51,Chiefs,Harrison Butker 26 yard field goal ,23,20,2023_04_KC_NYJ
+1,0:00,Seahawks,D.K. Metcalf 6 yard pass from Geno Smith (Jason Myers kick),7,0,2023_04_SEA_NYG
+2,3:05,Giants,Graham Gano 55 yard field goal ,7,3,2023_04_SEA_NYG
+2,1:39,Seahawks,Kenneth Walker III 1 yard rush (Jason Myers kick),14,3,2023_04_SEA_NYG
+3,1:03,Seahawks,Devon Witherspoon 97 yard interception return (Jason Myers kick),21,3,2023_04_SEA_NYG
+4,5:26,Seahawks,Jason Myers 34 yard field goal ,24,3,2023_04_SEA_NYG
+1,12:04,Bears,D.J. Moore 20 yard pass from Justin Fields (Cairo Santos kick),7,0,2023_05_CHI_WAS
+1,4:18,Bears,Cairo Santos 22 yard field goal ,10,0,2023_05_CHI_WAS
+2,14:15,Bears,D.J. Moore 11 yard pass from Justin Fields (Cairo Santos kick),17,0,2023_05_CHI_WAS
+2,8:33,Commanders,Joey Slye 51 yard field goal ,17,3,2023_05_CHI_WAS
+2,2:24,Bears,Cairo Santos 36 yard field goal ,20,3,2023_05_CHI_WAS
+2,0:24,Bears,Cole Kmet 4 yard pass from Justin Fields (Cairo Santos kick),27,3,2023_05_CHI_WAS
+3,12:00,Commanders,Logan Thomas 2 yard pass from Sam Howell (Sam Howell run),27,11,2023_05_CHI_WAS
+3,3:17,Commanders,Joey Slye 32 yard field goal ,27,14,2023_05_CHI_WAS
+4,14:09,Bears,Cairo Santos 43 yard field goal ,30,14,2023_05_CHI_WAS
+4,10:51,Commanders,Curtis Samuel 3 yard pass from Sam Howell (pass failed),30,20,2023_05_CHI_WAS
+4,4:09,Bears,D.J. Moore 56 yard pass from Justin Fields (Cairo Santos kick),37,20,2023_05_CHI_WAS
+4,1:56,Bears,Cairo Santos 37 yard field goal ,40,20,2023_05_CHI_WAS
+1,6:59,Jaguars,Zay Jones 6 yard pass from Trevor Lawrence (Travis Etienne run),8,0,2023_05_JAX_BUF
+1,1:13,Jaguars,Brandon McManus 44 yard field goal ,11,0,2023_05_JAX_BUF
+2,1:14,Bills,Stefon Diggs 15 yard pass from Josh Allen (Tyler Bass kick),11,7,2023_05_JAX_BUF
+4,7:44,Jaguars,Travis Etienne 6 yard rush (Brandon McManus kick),18,7,2023_05_JAX_BUF
+4,4:03,Bills,Gabriel Davis 19 yard pass from Josh Allen (pass failed),18,13,2023_05_JAX_BUF
+4,2:56,Jaguars,Travis Etienne 35 yard rush (Brandon McManus kick),25,13,2023_05_JAX_BUF
+4,2:11,Bills,Josh Allen 3 yard rush (Tyler Bass kick),25,20,2023_05_JAX_BUF
+1,10:38,Texans,Ka'imi Fairbairn 38 yard field goal ,3,0,2023_05_HOU_ATL
+1,6:48,Falcons,Desmond Ridder 7 yard rush (Younghoe Koo kick),3,7,2023_05_HOU_ATL
+2,14:10,Texans,Ka'imi Fairbairn 43 yard field goal ,6,7,2023_05_HOU_ATL
+2,0:03,Texans,Ka'imi Fairbairn 28 yard field goal ,9,7,2023_05_HOU_ATL
+3,9:35,Texans,Ka'imi Fairbairn 42 yard field goal ,12,7,2023_05_HOU_ATL
+4,12:12,Falcons,Bijan Robinson 6 yard pass from Desmond Ridder (Tyler Allgeier pass from Desmond Ridder),12,15,2023_05_HOU_ATL
+4,6:57,Falcons,Younghoe Koo 33 yard field goal ,12,18,2023_05_HOU_ATL
+4,1:49,Texans,Dalton Schultz 18 yard pass from C.J. Stroud (Ka'imi Fairbairn kick),19,18,2023_05_HOU_ATL
+4,0:00,Falcons,Younghoe Koo 37 yard field goal ,19,21,2023_05_HOU_ATL
+1,9:41,Lions,David Montgomery 42 yard rush (Riley Patterson kick),0,7,2023_05_CAR_DET
+1,4:53,Lions,Sam LaPorta 4 yard pass from Jared Goff (Riley Patterson kick),0,14,2023_05_CAR_DET
+2,12:48,Panthers,Tommy Tremble 1 yard pass from Bryce Young (Eddy Pineiro kick),7,14,2023_05_CAR_DET
+2,3:50,Lions,Josh Reynolds 1 yard pass from Jared Goff (Riley Patterson kick),7,21,2023_05_CAR_DET
+2,3:21,Lions,Sam LaPorta 31 yard pass from Jared Goff (Riley Patterson kick),7,28,2023_05_CAR_DET
+2,0:06,Panthers,Eddy Pineiro 33 yard field goal ,10,28,2023_05_CAR_DET
+4,14:58,Lions,Jared Goff 1 yard rush (Riley Patterson kick),10,35,2023_05_CAR_DET
+4,11:52,Panthers,DJ Chark 18 yard pass from Bryce Young (Eddy Pineiro kick),17,35,2023_05_CAR_DET
+4,7:27,Lions,Craig Reynolds 5 yard rush (Riley Patterson kick),17,42,2023_05_CAR_DET
+4,1:55,Panthers,Adam Thielen 1 yard pass from Bryce Young (Eddy Pineiro kick),24,42,2023_05_CAR_DET
+1,3:13,Titans,Nick Folk 27 yard field goal ,3,0,2023_05_TEN_IND
+1,0:41,Colts,Zack Moss 56 yard rush (Matt Gay kick),3,7,2023_05_TEN_IND
+2,9:32,Colts,Matt Gay 43 yard field goal ,3,10,2023_05_TEN_IND
+2,4:39,Titans,Nick Folk 53 yard field goal ,6,10,2023_05_TEN_IND
+3,12:48,Titans,Tyjae Spears 19 yard rush (Nick Folk kick),13,10,2023_05_TEN_IND
+3,8:00,Colts,Zack Moss 3 yard rush (Matt Gay kick),13,17,2023_05_TEN_IND
+3,2:02,Titans,Nick Folk 34 yard field goal ,16,17,2023_05_TEN_IND
+4,13:22,Colts,Matt Gay 35 yard field goal ,16,20,2023_05_TEN_IND
+4,1:00,Colts,Matt Gay 28 yard field goal ,16,23,2023_05_TEN_IND
+1,7:09,Dolphins,Jaylen Waddle 2 yard pass from Tua Tagovailoa (Jason Sanders kick),0,7,2023_05_NYG_MIA
+2,10:02,Dolphins,De'Von Achane 76 yard rush (Jason Sanders kick),0,14,2023_05_NYG_MIA
+2,3:41,Giants,Graham Gano 49 yard field goal ,3,14,2023_05_NYG_MIA
+2,1:40,Giants,Jason Pinnock 102 yard interception return (Graham Gano kick),10,14,2023_05_NYG_MIA
+2,0:00,Dolphins,Jason Sanders 40 yard field goal ,10,17,2023_05_NYG_MIA
+3,14:06,Dolphins,Tyreek Hill 69 yard pass from Tua Tagovailoa (Jason Sanders kick),10,24,2023_05_NYG_MIA
+3,4:26,Giants,Graham Gano 37 yard field goal ,13,24,2023_05_NYG_MIA
+3,0:00,Dolphins,Raheem Mostert 2 yard rush (Jason Sanders kick),13,31,2023_05_NYG_MIA
+4,8:51,Giants,Graham Gano 51 yard field goal ,16,31,2023_05_NYG_MIA
+1,7:02,Saints,Tyrann Mathieu 27 yard interception return (Blake Grupe kick),7,0,2023_05_NO_NE
+2,14:23,Saints,Alvin Kamara 2 yard rush (Blake Grupe kick),14,0,2023_05_NO_NE
+2,10:47,Saints,Chris Olave 5 yard pass from Derek Carr (Blake Grupe kick),21,0,2023_05_NO_NE
+3,11:34,Saints,Blake Grupe 54 yard field goal ,24,0,2023_05_NO_NE
+4,13:03,Saints,Foster Moreau 6 yard pass from Derek Carr (Blake Grupe kick),31,0,2023_05_NO_NE
+4,5:43,Saints,Blake Grupe 53 yard field goal ,34,0,2023_05_NO_NE
+1,6:15,Ravens,Justice Hill 14 yard rush (Justin Tucker kick),7,0,2023_05_BAL_PIT
+2,12:23,Ravens,Justin Tucker 23 yard field goal ,10,0,2023_05_BAL_PIT
+2,3:16,Steelers,Chris Boswell 43 yard field goal ,10,3,2023_05_BAL_PIT
+4,11:12,Steelers,"Safety, blocked punt out of bounds in end zone ",10,5,2023_05_BAL_PIT
+4,7:10,Steelers,Chris Boswell 25 yard field goal ,10,8,2023_05_BAL_PIT
+4,1:17,Steelers,George Pickens 41 yard pass from Kenny Pickett (pass failed),10,14,2023_05_BAL_PIT
+4,0:49,Steelers,Chris Boswell 42 yard field goal ,10,17,2023_05_BAL_PIT
+1,7:09,Bengals,Ja'Marr Chase 2 yard pass from Joe Burrow (Evan McPherson kick),7,0,2023_05_CIN_ARI
+1,1:46,Bengals,Evan McPherson 40 yard field goal ,10,0,2023_05_CIN_ARI
+2,12:25,Cardinals,Marquise Brown 25 yard pass from Joshua Dobbs (Matt Prater kick),10,7,2023_05_CIN_ARI
+2,8:28,Cardinals,Zach Ertz 4 yard pass from Joshua Dobbs (Matt Prater kick),10,14,2023_05_CIN_ARI
+2,1:23,Bengals,Cam Taylor-Britt 11 yard interception return (Evan McPherson kick),17,14,2023_05_CIN_ARI
+3,13:39,Bengals,Ja'Marr Chase 63 yard pass from Joe Burrow (Evan McPherson kick),24,14,2023_05_CIN_ARI
+3,7:33,Cardinals,Emari Demercado 11 yard rush (Matt Prater kick failed),24,20,2023_05_CIN_ARI
+4,7:48,Bengals,Ja'Marr Chase 3 yard pass from Joe Burrow (Evan McPherson kick),31,20,2023_05_CIN_ARI
+4,6:33,Bengals,Evan McPherson 40 yard field goal ,34,20,2023_05_CIN_ARI
+1,8:37,Eagles,Dallas Goedert 6 yard pass from Jalen Hurts (Jake Elliott kick),7,0,2023_05_PHI_LA
+1,2:01,Rams,Tutu Atwell 3 yard pass from Matthew Stafford (Brett Maher kick),7,7,2023_05_PHI_LA
+2,2:15,Eagles,Jake Elliott 34 yard field goal ,10,7,2023_05_PHI_LA
+2,0:32,Rams,Puka Nacua 22 yard pass from Matthew Stafford (Brett Maher kick),10,14,2023_05_PHI_LA
+2,0:00,Eagles,Jalen Hurts 1 yard rush (Jake Elliott kick),17,14,2023_05_PHI_LA
+4,12:29,Eagles,Jake Elliott 26 yard field goal ,20,14,2023_05_PHI_LA
+4,4:06,Eagles,Jake Elliott 26 yard field goal ,23,14,2023_05_PHI_LA
+1,11:19,Jets,Greg Zuerlein 30 yard field goal ,3,0,2023_05_NYJ_DEN
+1,7:34,Broncos,Jaleel McLaughlin 22 yard pass from Russell Wilson (Wil Lutz kick),3,7,2023_05_NYJ_DEN
+1,4:17,Jets,"Safety, Russell Wilson intentional grounding in end zone ",5,7,2023_05_NYJ_DEN
+2,12:47,Broncos,Wil Lutz 23 yard field goal ,5,10,2023_05_NYJ_DEN
+2,6:41,Jets,Greg Zuerlein 26 yard field goal ,8,10,2023_05_NYJ_DEN
+2,1:48,Broncos,Wil Lutz 22 yard field goal ,8,13,2023_05_NYJ_DEN
+3,13:29,Jets,Breece Hall 72 yard rush (Greg Zuerlein kick),15,13,2023_05_NYJ_DEN
+3,5:16,Jets,Greg Zuerlein 27 yard field goal ,18,13,2023_05_NYJ_DEN
+4,12:19,Jets,Greg Zuerlein 22 yard field goal ,21,13,2023_05_NYJ_DEN
+4,7:27,Jets,Greg Zuerlein 49 yard field goal ,24,13,2023_05_NYJ_DEN
+4,4:44,Broncos,Adam Trautman 3 yard pass from Russell Wilson (Michael Burton run),24,21,2023_05_NYJ_DEN
+4,0:29,Jets,Bryce Hall 39 yard fumble return (Greg Zuerlein kick),31,21,2023_05_NYJ_DEN
+1,10:00,Chiefs,Isiah Pacheco 1 yard rush (Harrison Butker kick),7,0,2023_05_KC_MIN
+1,4:02,Vikings,Greg Joseph 40 yard field goal ,7,3,2023_05_KC_MIN
+2,12:46,Chiefs,Harrison Butker 38 yard field goal ,10,3,2023_05_KC_MIN
+2,8:02,Vikings,Greg Joseph 29 yard field goal ,10,6,2023_05_KC_MIN
+2,1:39,Vikings,Jordan Addison 5 yard pass from Kirk Cousins (Greg Joseph kick),10,13,2023_05_KC_MIN
+2,0:00,Chiefs,Harrison Butker 40 yard field goal ,13,13,2023_05_KC_MIN
+3,10:10,Chiefs,Rashee Rice 8 yard pass from Patrick Mahomes (Harrison Butker kick),20,13,2023_05_KC_MIN
+3,2:45,Chiefs,Travis Kelce 4 yard pass from Patrick Mahomes (Harrison Butker kick),27,13,2023_05_KC_MIN
+4,12:11,Vikings,Alexander Mattison 9 yard pass from Kirk Cousins (Greg Joseph kick),27,20,2023_05_KC_MIN
+1,11:10,49ers,George Kittle 19 yard pass from Brock Purdy (Jake Moody kick),0,7,2023_05_DAL_SF
+2,13:16,49ers,George Kittle 38 yard pass from Brock Purdy (Jake Moody kick),0,14,2023_05_DAL_SF
+2,7:45,Cowboys,KaVontae Turpin 26 yard pass from Dak Prescott (Brandon Aubrey kick),7,14,2023_05_DAL_SF
+2,2:36,49ers,Christian McCaffrey 1 yard rush (Jake Moody kick),7,21,2023_05_DAL_SF
+3,11:53,Cowboys,Brandon Aubrey 50 yard field goal ,10,21,2023_05_DAL_SF
+3,7:20,49ers,George Kittle 10 yard pass from Brock Purdy (Jake Moody kick),10,28,2023_05_DAL_SF
+4,14:19,49ers,Kyle Juszczyk 1 yard pass from Brock Purdy (Jake Moody kick),10,35,2023_05_DAL_SF
+4,13:59,49ers,Jordan Mason 26 yard rush (Jake Moody kick),10,42,2023_05_DAL_SF
+1,2:38,Packers,Anders Carlson 37 yard field goal ,3,0,2023_05_GB_LV
+2,4:09,Raiders,Jakobi Meyers 9 yard pass from Jimmy Garoppolo (Daniel Carlson kick),3,7,2023_05_GB_LV
+2,2:32,Raiders,Daniel Carlson 26 yard field goal ,3,10,2023_05_GB_LV
+3,8:27,Packers,AJ Dillon 5 yard rush (Anders Carlson kick),10,10,2023_05_GB_LV
+3,5:16,Packers,Anders Carlson 22 yard field goal ,13,10,2023_05_GB_LV
+4,14:56,Raiders,Josh Jacobs 2 yard rush (Daniel Carlson kick),13,17,2023_05_GB_LV
+1,5:40,Chiefs,Harrison Butker 35 yard field goal ,0,3,2023_06_DEN_KC
+2,3:06,Chiefs,Kadarius Toney 3 yard pass from Patrick Mahomes (Harrison Butker kick),0,10,2023_06_DEN_KC
+2,0:00,Chiefs,Harrison Butker 60 yard field goal ,0,13,2023_06_DEN_KC
+3,9:16,Chiefs,Harrison Butker 25 yard field goal ,0,16,2023_06_DEN_KC
+4,6:07,Broncos,Courtland Sutton 11 yard pass from Russell Wilson (Javonte Williams run),8,16,2023_06_DEN_KC
+4,1:55,Chiefs,Harrison Butker 52 yard field goal ,8,19,2023_06_DEN_KC
+1,10:26,Ravens,Justin Tucker 41 yard field goal ,3,0,2023_06_BAL_TEN
+1,5:34,Titans,Nick Folk 26 yard field goal ,3,3,2023_06_BAL_TEN
+1,0:04,Ravens,Justin Tucker 28 yard field goal ,6,3,2023_06_BAL_TEN
+2,10:13,Ravens,Justin Tucker 23 yard field goal ,9,3,2023_06_BAL_TEN
+2,3:28,Ravens,Zay Flowers 10 yard pass from Lamar Jackson (Justin Tucker kick failed),15,3,2023_06_BAL_TEN
+2,0:00,Ravens,Justin Tucker 29 yard field goal ,18,3,2023_06_BAL_TEN
+3,9:24,Titans,Nick Folk 27 yard field goal ,18,6,2023_06_BAL_TEN
+3,8:24,Titans,Derrick Henry 15 yard rush (Nick Folk kick),18,13,2023_06_BAL_TEN
+4,12:49,Ravens,Justin Tucker 20 yard field goal ,21,13,2023_06_BAL_TEN
+4,4:16,Ravens,Justin Tucker 36 yard field goal ,24,13,2023_06_BAL_TEN
+4,0:38,Titans,Nick Folk 38 yard field goal ,24,16,2023_06_BAL_TEN
+1,8:45,Commanders,Joey Slye 37 yard field goal ,3,0,2023_06_WAS_ATL
+1,2:46,Falcons,Kyle Pitts 9 yard pass from Desmond Ridder (Younghoe Koo kick),3,7,2023_06_WAS_ATL
+2,11:47,Commanders,Antonio Gibson 1 yard pass from Sam Howell (Joey Slye kick),10,7,2023_06_WAS_ATL
+2,5:18,Commanders,Curtis Samuel 7 yard pass from Sam Howell (Joey Slye kick),17,7,2023_06_WAS_ATL
+2,1:31,Falcons,Younghoe Koo 47 yard field goal ,17,10,2023_06_WAS_ATL
+3,12:03,Commanders,Brian Robinson Jr. 24 yard pass from Sam Howell (Joey Slye kick),24,10,2023_06_WAS_ATL
+4,12:38,Falcons,Jonnu Smith 2 yard pass from Desmond Ridder (run failed),24,16,2023_06_WAS_ATL
+1,6:24,Vikings,Greg Joseph 53 yard field goal ,3,0,2023_06_MIN_CHI
+2,13:41,Bears,Cairo Santos 22 yard field goal ,3,3,2023_06_MIN_CHI
+2,8:56,Vikings,Greg Joseph 51 yard field goal ,6,3,2023_06_MIN_CHI
+2,3:18,Bears,Cairo Santos 53 yard field goal ,6,6,2023_06_MIN_CHI
+2,0:12,Vikings,Jordan Addison 10 yard pass from Kirk Cousins (Greg Joseph kick failed),12,6,2023_06_MIN_CHI
+3,6:44,Vikings,Jordan Hicks 42 yard fumble return (Greg Joseph kick),19,6,2023_06_MIN_CHI
+4,7:46,Bears,Tyson Bagent 1 yard rush (Cairo Santos kick),19,13,2023_06_MIN_CHI
+1,8:38,Seahawks,Kenneth Walker III 1 yard rush (Jason Myers kick),7,0,2023_06_SEA_CIN
+1,2:22,Bengals,Tyler Boyd 8 yard pass from Joe Burrow (Evan McPherson kick),7,7,2023_06_SEA_CIN
+2,12:20,Bengals,Andrei Iosivas 3 yard pass from Joe Burrow (Evan McPherson kick),7,14,2023_06_SEA_CIN
+2,0:43,Seahawks,Jason Myers 55 yard field goal ,10,14,2023_06_SEA_CIN
+3,2:24,Seahawks,Jason Myers 23 yard field goal ,13,14,2023_06_SEA_CIN
+4,11:47,Bengals,Evan McPherson 52 yard field goal ,13,17,2023_06_SEA_CIN
+1,12:16,49ers,Christian McCaffrey 13 yard pass from Brock Purdy (Jake Moody kick),7,0,2023_06_SF_CLE
+2,7:54,49ers,Jake Moody 25 yard field goal ,10,0,2023_06_SF_CLE
+2,5:38,Browns,Kareem Hunt 16 yard rush (Dustin Hopkins kick),10,7,2023_06_SF_CLE
+3,11:09,Browns,Dustin Hopkins 42 yard field goal ,10,10,2023_06_SF_CLE
+3,2:59,Browns,Dustin Hopkins 46 yard field goal ,10,13,2023_06_SF_CLE
+4,10:58,49ers,Jordan Mason 8 yard rush (Jake Moody kick),17,13,2023_06_SF_CLE
+4,3:21,Browns,Dustin Hopkins 50 yard field goal ,17,16,2023_06_SF_CLE
+4,1:40,Browns,Dustin Hopkins 29 yard field goal ,17,19,2023_06_SF_CLE
+1,3:41,Texans,Dalton Schultz 1 yard pass from C.J. Stroud (Ka'imi Fairbairn kick),0,7,2023_06_NO_HOU
+1,0:13,Saints,Rashid Shaheed 34 yard pass from Derek Carr (Blake Grupe kick),7,7,2023_06_NO_HOU
+2,10:28,Texans,Ka'imi Fairbairn 24 yard field goal ,7,10,2023_06_NO_HOU
+2,2:56,Texans,Robert Woods 6 yard pass from C.J. Stroud (Ka'imi Fairbairn kick),7,17,2023_06_NO_HOU
+2,0:18,Saints,Blake Grupe 48 yard field goal ,10,17,2023_06_NO_HOU
+3,7:01,Texans,Ka'imi Fairbairn 22 yard field goal ,10,20,2023_06_NO_HOU
+3,2:17,Saints,Blake Grupe 45 yard field goal ,13,20,2023_06_NO_HOU
+1,6:27,Colts,Matt Gay 28 yard field goal ,3,0,2023_06_IND_JAX
+2,14:17,Jaguars,Travis Etienne 2 yard rush (Brandon McManus kick),3,7,2023_06_IND_JAX
+2,14:01,Jaguars,Travis Etienne 22 yard rush (Brandon McManus kick),3,14,2023_06_IND_JAX
+2,1:40,Jaguars,Christian Kirk 29 yard pass from Trevor Lawrence (Brandon McManus kick),3,21,2023_06_IND_JAX
+2,0:06,Colts,Matt Gay 56 yard field goal ,6,21,2023_06_IND_JAX
+3,10:44,Jaguars,Brandon McManus 48 yard field goal ,6,24,2023_06_IND_JAX
+3,3:51,Jaguars,Brenton Strange 10 yard pass from Trevor Lawrence (Brandon McManus kick),6,31,2023_06_IND_JAX
+4,14:14,Colts,Josh Downs 2 yard pass from Gardner Minshew II (Matt Gay kick),13,31,2023_06_IND_JAX
+4,7:14,Colts,Zack Moss 3 yard rush (Matt Gay kick),20,31,2023_06_IND_JAX
+4,4:50,Jaguars,Brandon McManus 49 yard field goal ,20,34,2023_06_IND_JAX
+4,3:00,Jaguars,Brandon McManus 51 yard field goal ,20,37,2023_06_IND_JAX
+1,7:13,Panthers,Chuba Hubbard 6 yard rush (Eddy Pineiro kick),7,0,2023_06_CAR_MIA
+1,0:06,Panthers,Adam Thielen 8 yard pass from Bryce Young (Eddy Pineiro kick),14,0,2023_06_CAR_MIA
+2,11:13,Dolphins,Raheem Mostert 3 yard pass from Tua Tagovailoa (Jason Sanders kick),14,7,2023_06_CAR_MIA
+2,7:00,Dolphins,Jaylen Waddle 4 yard pass from Tua Tagovailoa (Jason Sanders kick),14,14,2023_06_CAR_MIA
+2,1:54,Dolphins,Tyreek Hill 41 yard pass from Tua Tagovailoa (Jason Sanders kick),14,21,2023_06_CAR_MIA
+3,6:21,Dolphins,Raheem Mostert 4 yard rush (Jason Sanders kick),14,28,2023_06_CAR_MIA
+4,12:23,Dolphins,Raheem Mostert 1 yard rush (Jason Sanders kick),14,35,2023_06_CAR_MIA
+4,4:26,Panthers,Troy Hill 61 yard interception return (Eddy Pineiro kick),21,35,2023_06_CAR_MIA
+4,2:31,Dolphins,Salvon Ahmed 9 yard rush (Jason Sanders kick),21,42,2023_06_CAR_MIA
+1,6:54,Raiders,Daniel Carlson 25 yard field goal ,0,3,2023_06_NE_LV
+2,12:22,Raiders,Jakobi Meyers 12 yard pass from Jimmy Garoppolo (Daniel Carlson kick),0,10,2023_06_NE_LV
+2,8:38,Patriots,Chad Ryland 43 yard field goal ,3,10,2023_06_NE_LV
+2,0:10,Raiders,Daniel Carlson 37 yard field goal ,3,13,2023_06_NE_LV
+3,8:56,Patriots,Ezekiel Elliott 2 yard rush (Chad Ryland kick),10,13,2023_06_NE_LV
+3,3:55,Raiders,Daniel Carlson 30 yard field goal ,10,16,2023_06_NE_LV
+4,13:03,Raiders,Daniel Carlson 24 yard field goal ,10,19,2023_06_NE_LV
+4,3:33,Patriots,Rhamondre Stevenson 1 yard rush (Chad Ryland kick),17,19,2023_06_NE_LV
+4,1:47,Raiders,"Safety, Mac Jones sacked in end zone by ",17,21,2023_06_NE_LV
+1,11:25,Cardinals,Matt Prater 55 yard field goal ,3,0,2023_06_ARI_LA
+1,0:11,Rams,Brett Maher 29 yard field goal ,3,3,2023_06_ARI_LA
+2,12:35,Cardinals,Matt Prater 32 yard field goal ,6,3,2023_06_ARI_LA
+2,0:43,Cardinals,Matt Prater 27 yard field goal ,9,3,2023_06_ARI_LA
+2,0:04,Rams,Brett Maher 35 yard field goal ,9,6,2023_06_ARI_LA
+3,8:57,Rams,Cooper Kupp 13 yard pass from Matthew Stafford (Brett Maher kick),9,13,2023_06_ARI_LA
+3,2:44,Rams,Brett Maher 25 yard field goal ,9,16,2023_06_ARI_LA
+4,8:19,Rams,Kyren Williams 5 yard rush (Brett Maher kick),9,23,2023_06_ARI_LA
+4,4:37,Rams,Brett Maher 43 yard field goal ,9,26,2023_06_ARI_LA
+1,3:04,Eagles,Jalen Hurts 3 yard rush (Jake Elliott kick),7,0,2023_06_PHI_NYJ
+2,13:12,Jets,Greg Zuerlein 43 yard field goal ,7,3,2023_06_PHI_NYJ
+2,5:32,Eagles,D'Andre Swift 9 yard pass from Jalen Hurts (Jake Elliott kick),14,3,2023_06_PHI_NYJ
+2,2:30,Jets,Greg Zuerlein 42 yard field goal ,14,6,2023_06_PHI_NYJ
+2,0:00,Jets,Greg Zuerlein 35 yard field goal ,14,9,2023_06_PHI_NYJ
+3,0:45,Jets,Greg Zuerlein 38 yard field goal ,14,12,2023_06_PHI_NYJ
+4,1:46,Jets,Breece Hall 8 yard rush (Randall Cobb pass from Zach Wilson),14,20,2023_06_PHI_NYJ
+1,8:09,Lions,Riley Patterson 30 yard field goal ,3,0,2023_06_DET_TB
+2,7:34,Buccaneers,Chase McLaughlin 33 yard field goal ,3,3,2023_06_DET_TB
+2,2:39,Lions,Amon-Ra St. Brown 27 yard pass from Jared Goff (Riley Patterson kick),10,3,2023_06_DET_TB
+3,7:44,Buccaneers,Chase McLaughlin 36 yard field goal ,10,6,2023_06_DET_TB
+3,3:19,Lions,Jameson Williams 45 yard pass from Jared Goff (Riley Patterson kick),17,6,2023_06_DET_TB
+4,12:00,Lions,Riley Patterson 36 yard field goal ,20,6,2023_06_DET_TB
+1,3:19,Giants,Graham Gano 29 yard field goal ,3,0,2023_06_NYG_BUF
+2,5:08,Giants,Graham Gano 43 yard field goal ,6,0,2023_06_NYG_BUF
+4,14:54,Bills,Deonte Harty 3 yard pass from Josh Allen (Tyler Bass kick),6,7,2023_06_NYG_BUF
+4,10:35,Giants,Graham Gano 29 yard field goal ,9,7,2023_06_NYG_BUF
+4,3:48,Bills,Quintin Morris 15 yard pass from Josh Allen (Tyler Bass kick),9,14,2023_06_NYG_BUF
+1,10:31,Chargers,Keenan Allen 1 yard pass from Justin Herbert (Cameron Dicker kick),0,7,2023_06_DAL_LAC
+1,6:21,Cowboys,Dak Prescott 18 yard rush (Brandon Aubrey kick),7,7,2023_06_DAL_LAC
+2,0:00,Cowboys,Brandon Aubrey 32 yard field goal ,10,7,2023_06_DAL_LAC
+3,1:08,Chargers,Cameron Dicker 24 yard field goal ,10,10,2023_06_DAL_LAC
+4,11:19,Cowboys,Brandin Cooks 2 yard pass from Dak Prescott (Brandon Aubrey kick),17,10,2023_06_DAL_LAC
+4,7:11,Chargers,Gerald Everett 1 yard pass from Justin Herbert (Cameron Dicker kick),17,17,2023_06_DAL_LAC
+4,2:19,Cowboys,Brandon Aubrey 39 yard field goal ,20,17,2023_06_DAL_LAC
+1,9:44,Jaguars,Travis Etienne 2 yard rush (Brandon McManus kick),7,0,2023_07_JAX_NO
+1,1:26,Saints,Blake Grupe 23 yard field goal ,7,3,2023_07_JAX_NO
+2,13:09,Jaguars,Travis Etienne 17 yard rush (Brandon McManus kick),14,3,2023_07_JAX_NO
+2,1:57,Saints,Blake Grupe 35 yard field goal ,14,6,2023_07_JAX_NO
+2,0:32,Jaguars,Brandon McManus 43 yard field goal ,17,6,2023_07_JAX_NO
+3,9:49,Saints,Blake Grupe 42 yard field goal ,17,9,2023_07_JAX_NO
+3,6:47,Jaguars,Foyesade Oluokun 24 yard interception return (Brandon McManus kick),24,9,2023_07_JAX_NO
+4,14:21,Saints,Taysom Hill 1 yard rush (Blake Grupe kick),24,16,2023_07_JAX_NO
+4,6:38,Saints,Michael Thomas 17 yard pass from Derek Carr (Alvin Kamara pass from Derek Carr),24,24,2023_07_JAX_NO
+4,3:08,Jaguars,Christian Kirk 44 yard pass from Trevor Lawrence (Brandon McManus kick),31,24,2023_07_JAX_NO
+1,10:37,Ravens,Lamar Jackson 7 yard rush (Justin Tucker kick),0,7,2023_07_DET_BAL
+1,3:11,Ravens,Nelson Agholor 12 yard pass from Lamar Jackson (Justin Tucker kick),0,14,2023_07_DET_BAL
+2,12:54,Ravens,Mark Andrews 11 yard pass from Lamar Jackson (Justin Tucker kick),0,21,2023_07_DET_BAL
+2,7:45,Ravens,Gus Edwards 2 yard rush (Justin Tucker kick),0,28,2023_07_DET_BAL
+3,7:25,Ravens,Mark Andrews 8 yard pass from Lamar Jackson (Justin Tucker kick),0,35,2023_07_DET_BAL
+4,13:59,Lions,Jahmyr Gibbs 21 yard rush (pass failed),6,35,2023_07_DET_BAL
+4,9:30,Ravens,Justin Tucker 32 yard field goal ,6,38,2023_07_DET_BAL
+1,3:45,Bears,D'Onta Foreman 2 yard rush (Cairo Santos kick),0,7,2023_07_LV_CHI
+2,7:31,Bears,D'Onta Foreman 3 yard rush (Cairo Santos kick),0,14,2023_07_LV_CHI
+2,1:47,Raiders,Daniel Carlson 40 yard field goal ,3,14,2023_07_LV_CHI
+3,4:04,Bears,D'Onta Foreman 5 yard pass from Tyson Bagent (Cairo Santos kick),3,21,2023_07_LV_CHI
+4,12:20,Raiders,Daniel Carlson 25 yard field goal ,6,21,2023_07_LV_CHI
+4,5:46,Bears,Cairo Santos 54 yard field goal ,6,24,2023_07_LV_CHI
+4,5:36,Bears,Jaylon Johnson 39 yard interception return (Cairo Santos kick failed),6,30,2023_07_LV_CHI
+4,1:10,Raiders,Jakobi Meyers 9 yard pass from Aidan O'Connell (pass failed),12,30,2023_07_LV_CHI
+2,14:18,Giants,Darren Waller 15 yard pass from Tyrod Taylor (Graham Gano kick),0,7,2023_07_WAS_NYG
+2,8:56,Giants,Saquon Barkley 32 yard pass from Tyrod Taylor (Graham Gano kick),0,14,2023_07_WAS_NYG
+3,10:21,Commanders,Brian Robinson Jr. 4 yard rush (Joey Slye kick),7,14,2023_07_WAS_NYG
+1,6:48,Falcons,Desmond Ridder 2 yard rush (Younghoe Koo kick),7,0,2023_07_ATL_TB
+1,3:24,Buccaneers,Mike Evans 40 yard pass from Baker Mayfield (Chase McLaughlin kick),7,7,2023_07_ATL_TB
+2,11:51,Falcons,Younghoe Koo 24 yard field goal ,10,7,2023_07_ATL_TB
+2,5:14,Buccaneers,Chase McLaughlin 24 yard field goal ,10,10,2023_07_ATL_TB
+3,2:04,Falcons,Younghoe Koo 41 yard field goal ,13,10,2023_07_ATL_TB
+4,0:45,Buccaneers,Chase McLaughlin 36 yard field goal ,13,13,2023_07_ATL_TB
+4,0:00,Falcons,Younghoe Koo 51 yard field goal ,16,13,2023_07_ATL_TB
+2,14:51,Steelers,Chris Boswell 53 yard field goal ,3,0,2023_07_PIT_LA
+2,5:56,Rams,Brett Maher 41 yard field goal ,3,3,2023_07_PIT_LA
+2,0:17,Rams,Tutu Atwell 31 yard pass from Matthew Stafford (Brett Maher kick failed),3,9,2023_07_PIT_LA
+3,13:19,Steelers,Kenny Pickett 1 yard rush (Chris Boswell kick),10,9,2023_07_PIT_LA
+3,8:57,Rams,Darrell Henderson 1 yard rush (Cooper Kupp pass from Matthew Stafford),10,17,2023_07_PIT_LA
+4,13:49,Steelers,Jaylen Warren 13 yard rush (Chris Boswell kick),17,17,2023_07_PIT_LA
+4,7:20,Steelers,Najee Harris 3 yard rush (Chris Boswell kick),24,17,2023_07_PIT_LA
+1,4:47,Seahawks,Jaxon Smith-Njigba 28 yard pass from Geno Smith (Jason Myers kick),0,7,2023_07_ARI_SEA
+1,1:57,Cardinals,Matt Prater 44 yard field goal ,3,7,2023_07_ARI_SEA
+2,9:11,Cardinals,Joshua Dobbs 25 yard rush (Matt Prater kick),10,7,2023_07_ARI_SEA
+2,4:41,Seahawks,Jake Bobo 18 yard pass from Geno Smith (Jason Myers kick),10,14,2023_07_ARI_SEA
+3,7:37,Seahawks,Jason Myers 21 yard field goal ,10,17,2023_07_ARI_SEA
+4,2:17,Seahawks,Jason Myers 48 yard field goal ,10,20,2023_07_ARI_SEA
+1,8:27,Broncos,Wil Lutz 32 yard field goal ,0,3,2023_07_GB_DEN
+2,13:14,Broncos,Wil Lutz 29 yard field goal ,0,6,2023_07_GB_DEN
+2,0:05,Broncos,Wil Lutz 35 yard field goal ,0,9,2023_07_GB_DEN
+3,10:24,Packers,Anders Carlson 29 yard field goal ,3,9,2023_07_GB_DEN
+3,6:17,Broncos,Courtland Sutton 18 yard pass from Russell Wilson (Wil Lutz kick),3,16,2023_07_GB_DEN
+3,1:54,Packers,Romeo Doubs 16 yard pass from Jordan Love (Anders Carlson kick),10,16,2023_07_GB_DEN
+4,8:31,Packers,Jayden Reed 4 yard pass from Jordan Love (Anders Carlson kick),17,16,2023_07_GB_DEN
+4,3:50,Broncos,Wil Lutz 52 yard field goal ,17,19,2023_07_GB_DEN
+1,6:49,Chiefs,Harrison Butker 35 yard field goal ,0,3,2023_07_LAC_KC
+1,1:48,Chargers,Cameron Dicker 55 yard field goal ,3,3,2023_07_LAC_KC
+2,14:11,Chiefs,Marquez Valdes-Scantling 46 yard pass from Patrick Mahomes (Harrison Butker kick),3,10,2023_07_LAC_KC
+2,10:42,Chargers,Joshua Kelley 49 yard rush (Cameron Dicker kick),10,10,2023_07_LAC_KC
+2,8:37,Chiefs,Rashee Rice 6 yard pass from Patrick Mahomes (Harrison Butker kick),10,17,2023_07_LAC_KC
+2,7:06,Chargers,Gerald Everett 7 yard pass from Justin Herbert (Cameron Dicker kick),17,17,2023_07_LAC_KC
+2,0:15,Chiefs,Travis Kelce 1 yard pass from Patrick Mahomes (Harrison Butker kick),17,24,2023_07_LAC_KC
+4,3:30,Chiefs,Isiah Pacheco 8 yard pass from Patrick Mahomes (Harrison Butker kick),17,31,2023_07_LAC_KC
+1,7:54,Eagles,Jake Elliott 24 yard field goal ,0,3,2023_07_MIA_PHI
+1,0:59,Dolphins,Jason Sanders 40 yard field goal ,3,3,2023_07_MIA_PHI
+2,11:25,Eagles,Dallas Goedert 19 yard pass from Jalen Hurts (Jake Elliott kick),3,10,2023_07_MIA_PHI
+2,3:10,Eagles,Jalen Hurts 1 yard rush (Jake Elliott kick),3,17,2023_07_MIA_PHI
+2,0:39,Dolphins,Tyreek Hill 27 yard pass from Tua Tagovailoa (Jason Sanders kick),10,17,2023_07_MIA_PHI
+3,4:02,Dolphins,Jerome Baker 23 yard interception return (Jason Sanders kick),17,17,2023_07_MIA_PHI
+3,0:15,Eagles,A.J. Brown 14 yard pass from Jalen Hurts (Jake Elliott kick),17,24,2023_07_MIA_PHI
+4,4:46,Eagles,Kenneth Gainwell 3 yard rush (Jake Elliott kick),17,31,2023_07_MIA_PHI
+1,4:48,Vikings,Jordan Addison 20 yard pass from Kirk Cousins (Greg Joseph kick),0,7,2023_07_SF_MIN
+2,7:33,Vikings,Greg Joseph 21 yard field goal ,0,10,2023_07_SF_MIN
+2,1:01,49ers,Christian McCaffrey 3 yard rush (Jake Moody kick),7,10,2023_07_SF_MIN
+2,0:07,Vikings,Jordan Addison 60 yard pass from Kirk Cousins (Greg Joseph kick failed),7,16,2023_07_SF_MIN
+3,6:59,Vikings,Greg Joseph 20 yard field goal ,7,19,2023_07_SF_MIN
+3,5:54,49ers,Christian McCaffrey 35 yard pass from Brock Purdy (Jake Moody kick),14,19,2023_07_SF_MIN
+3,0:20,Vikings,Greg Joseph 54 yard field goal ,14,22,2023_07_SF_MIN
+4,13:21,49ers,Jake Moody 55 yard field goal ,17,22,2023_07_SF_MIN
+1,8:04,Bills,Tyler Bass 37 yard field goal ,0,3,2023_08_TB_BUF
+2,11:03,Bills,Josh Allen 13 yard rush (Tyler Bass kick),0,10,2023_08_TB_BUF
+2,7:40,Buccaneers,Chase McLaughlin 57 yard field goal ,3,10,2023_08_TB_BUF
+2,6:46,Buccaneers,Chris Godwin 3 yard pass from Baker Mayfield (Chase McLaughlin kick),10,10,2023_08_TB_BUF
+2,2:40,Bills,Dalton Kincaid 22 yard pass from Josh Allen (Tyler Bass kick),10,17,2023_08_TB_BUF
+3,10:40,Bills,Gabriel Davis 4 yard pass from Josh Allen (Tyler Bass kick),10,24,2023_08_TB_BUF
+4,2:40,Buccaneers,Mike Evans 24 yard pass from Baker Mayfield (Cade Otton pass from Baker Mayfield),18,24,2023_08_TB_BUF
+2,13:13,Texans,Andrew Beck 1 yard rush (Ka'imi Fairbairn kick),7,0,2023_08_HOU_CAR
+2,1:35,Panthers,Tommy Tremble 1 yard pass from Bryce Young (Eddy Pineiro kick failed),7,6,2023_08_HOU_CAR
+3,10:46,Panthers,Eddy Pineiro 46 yard field goal ,7,9,2023_08_HOU_CAR
+3,7:58,Panthers,Eddy Pineiro 37 yard field goal ,7,12,2023_08_HOU_CAR
+3,0:35,Texans,C.J. Stroud 1 yard rush (pass failed),13,12,2023_08_HOU_CAR
+4,0:00,Panthers,Eddy Pineiro 23 yard field goal ,13,15,2023_08_HOU_CAR
+1,9:44,Cowboys,Jake Ferguson 18 yard pass from Dak Prescott (Brandon Aubrey kick),0,7,2023_08_LA_DAL
+1,5:22,Rams,Lucas Havrisik 33 yard field goal ,3,7,2023_08_LA_DAL
+1,0:43,Cowboys,Brandon Aubrey 58 yard field goal ,3,10,2023_08_LA_DAL
+1,0:36,Cowboys,DaRon Bland 30 yard interception return (Brandon Aubrey kick),3,17,2023_08_LA_DAL
+2,13:39,Cowboys,"Safety, blocked punt out of bounds in end zone ",3,19,2023_08_LA_DAL
+2,12:45,Cowboys,CeeDee Lamb 10 yard pass from Dak Prescott (Brandon Aubrey kick),3,26,2023_08_LA_DAL
+2,2:27,Cowboys,CeeDee Lamb 22 yard pass from Dak Prescott (Brandon Aubrey kick),3,33,2023_08_LA_DAL
+2,0:04,Rams,Royce Freeman 1 yard rush (pass failed),9,33,2023_08_LA_DAL
+3,11:29,Rams,Ben Skowronek 20 yard pass from Matthew Stafford (Matthew Stafford pass from Tutu Atwell),17,33,2023_08_LA_DAL
+3,1:32,Cowboys,Brandon Aubrey 27 yard field goal ,17,36,2023_08_LA_DAL
+4,12:19,Cowboys,Brandin Cooks 25 yard pass from Dak Prescott (Brandon Aubrey kick),17,43,2023_08_LA_DAL
+4,5:31,Rams,Lucas Havrisik 47 yard field goal ,20,43,2023_08_LA_DAL
+1,1:40,Vikings,Cam Akers 6 yard rush (Greg Joseph kick),7,0,2023_08_MIN_GB
+2,10:13,Vikings,Greg Joseph 25 yard field goal ,10,0,2023_08_MIN_GB
+2,0:00,Packers,Anders Carlson 30 yard field goal ,10,3,2023_08_MIN_GB
+3,9:25,Vikings,T.J. Hockenson 2 yard pass from Kirk Cousins (Greg Joseph kick),17,3,2023_08_MIN_GB
+3,7:48,Vikings,Jordan Addison 20 yard pass from Kirk Cousins (Greg Joseph kick),24,3,2023_08_MIN_GB
+3,2:43,Packers,Romeo Doubs 1 yard pass from Jordan Love (Anders Carlson kick),24,10,2023_08_MIN_GB
+1,6:56,Colts,Michael Pittman Jr. 10 yard pass from Gardner Minshew II (Matt Gay kick),0,7,2023_08_NO_IND
+1,3:44,Saints,Alvin Kamara 18 yard pass from Derek Carr (Blake Grupe kick),7,7,2023_08_NO_IND
+2,14:49,Colts,Matt Gay 20 yard field goal ,7,10,2023_08_NO_IND
+2,11:27,Colts,Zack Moss 1 yard rush (Matt Gay kick),7,17,2023_08_NO_IND
+2,7:28,Saints,Taysom Hill 20 yard rush (Blake Grupe kick),14,17,2023_08_NO_IND
+2,5:42,Saints,Rashid Shaheed 58 yard pass from Derek Carr (Blake Grupe kick),21,17,2023_08_NO_IND
+2,0:21,Colts,Matt Gay 42 yard field goal ,21,20,2023_08_NO_IND
+3,0:07,Saints,Alvin Kamara 16 yard rush (Blake Grupe kick),28,20,2023_08_NO_IND
+4,10:49,Saints,Taysom Hill 1 yard rush (Blake Grupe kick),35,20,2023_08_NO_IND
+4,8:19,Colts,Andrew Ogletree 33 yard pass from Gardner Minshew II (Matt Gay kick),35,27,2023_08_NO_IND
+4,0:24,Saints,Blake Grupe 27 yard field goal ,38,27,2023_08_NO_IND
+1,3:32,Patriots,Kendrick Bourne 24 yard pass from Mac Jones (Chad Ryland kick),7,0,2023_08_NE_MIA
+1,0:17,Dolphins,Tyreek Hill 42 yard pass from Tua Tagovailoa (Jason Sanders kick),7,7,2023_08_NE_MIA
+2,6:10,Dolphins,Cedrick Wilson Jr. 1 yard pass from Tua Tagovailoa (Jason Sanders kick),7,14,2023_08_NE_MIA
+2,0:26,Dolphins,Jason Sanders 30 yard field goal ,7,17,2023_08_NE_MIA
+3,12:45,Patriots,Chad Ryland 38 yard field goal ,10,17,2023_08_NE_MIA
+3,7:35,Dolphins,Raheem Mostert 1 yard rush (Jason Sanders kick),10,24,2023_08_NE_MIA
+4,8:30,Patriots,JuJu Smith-Schuster 3 yard pass from Mac Jones (Chad Ryland kick),17,24,2023_08_NE_MIA
+4,2:43,Dolphins,Jaylen Waddle 31 yard pass from Tua Tagovailoa (Jason Sanders kick),17,31,2023_08_NE_MIA
+1,12:07,Giants,Graham Gano 31 yard field goal ,0,3,2023_08_NYJ_NYG
+1,1:06,Jets,Breece Hall 50 yard pass from Zach Wilson (Greg Zuerlein kick),7,3,2023_08_NYJ_NYG
+3,8:59,Giants,Tommy DeVito 6 yard rush (Graham Gano kick),7,10,2023_08_NYJ_NYG
+4,0:00,Jets,Greg Zuerlein 35 yard field goal ,10,10,2023_08_NYJ_NYG
+OT,6:09,Jets,Greg Zuerlein 33 yard field goal ,13,10,2023_08_NYJ_NYG
+1,10:47,Jaguars,Brandon McManus 50 yard field goal ,3,0,2023_08_JAX_PIT
+1,5:54,Jaguars,Brandon McManus 51 yard field goal ,6,0,2023_08_JAX_PIT
+2,3:59,Steelers,Chris Boswell 22 yard field goal ,6,3,2023_08_JAX_PIT
+2,1:04,Jaguars,Brandon McManus 38 yard field goal ,9,3,2023_08_JAX_PIT
+3,5:05,Jaguars,Travis Etienne 56 yard pass from Trevor Lawrence (Travis Etienne run),17,3,2023_08_JAX_PIT
+3,0:53,Steelers,George Pickens 22 yard pass from Mitchell Trubisky (Chris Boswell kick),17,10,2023_08_JAX_PIT
+4,4:35,Jaguars,Brandon McManus 37 yard field goal ,20,10,2023_08_JAX_PIT
+1,9:47,Falcons,Younghoe Koo 29 yard field goal ,3,0,2023_08_ATL_TEN
+1,2:28,Titans,DeAndre Hopkins 47 yard pass from Will Levis (Nick Folk kick),3,7,2023_08_ATL_TEN
+2,5:27,Titans,DeAndre Hopkins 16 yard pass from Will Levis (Nick Folk kick),3,14,2023_08_ATL_TEN
+3,12:06,Falcons,Younghoe Koo 49 yard field goal ,6,14,2023_08_ATL_TEN
+3,3:02,Falcons,Younghoe Koo 39 yard field goal ,9,14,2023_08_ATL_TEN
+3,1:37,Titans,DeAndre Hopkins 61 yard pass from Will Levis (Nick Folk kick),9,21,2023_08_ATL_TEN
+4,14:17,Falcons,Bijan Robinson 13 yard rush (Younghoe Koo kick),16,21,2023_08_ATL_TEN
+4,6:55,Titans,Nick Westbrook-Ikhine 33 yard pass from Will Levis (Nick Folk kick),16,28,2023_08_ATL_TEN
+4,3:46,Falcons,Scott Miller 8 yard pass from Taylor Heinicke (Younghoe Koo kick),23,28,2023_08_ATL_TEN
+1,7:13,Commanders,Terry McLaurin 26 yard pass from Sam Howell (Joey Slye kick),0,7,2023_08_PHI_WAS
+1,2:11,Eagles,Jake Elliott 51 yard field goal ,3,7,2023_08_PHI_WAS
+2,12:40,Commanders,Jahan Dotson 21 yard pass from Sam Howell (Joey Slye kick),3,14,2023_08_PHI_WAS
+2,0:34,Eagles,A.J. Brown 16 yard pass from Jalen Hurts (Jake Elliott kick),10,14,2023_08_PHI_WAS
+2,0:01,Commanders,Joey Slye 61 yard field goal ,10,17,2023_08_PHI_WAS
+3,4:17,Eagles,A.J. Brown 25 yard pass from Jalen Hurts (Jake Elliott kick),17,17,2023_08_PHI_WAS
+4,12:03,Commanders,Logan Thomas 7 yard pass from Sam Howell (Joey Slye kick),17,24,2023_08_PHI_WAS
+4,8:47,Eagles,DeVonta Smith 38 yard pass from Jalen Hurts (Jake Elliott kick),24,24,2023_08_PHI_WAS
+4,7:17,Eagles,Julio Jones 8 yard pass from Jalen Hurts (Jake Elliott kick),31,24,2023_08_PHI_WAS
+4,1:50,Eagles,D'Andre Swift 7 yard rush (Jake Elliott kick),38,24,2023_08_PHI_WAS
+4,1:01,Commanders,Jamison Crowder 26 yard pass from Sam Howell (Joey Slye kick),38,31,2023_08_PHI_WAS
+1,8:53,Seahawks,Jake Bobo 3 yard rush (Jason Myers kick),0,7,2023_08_CLE_SEA
+1,5:30,Seahawks,Tyler Lockett 12 yard pass from Geno Smith (Jason Myers kick),0,14,2023_08_CLE_SEA
+1,3:22,Browns,David Njoku 18 yard pass from P.J. Walker (Dustin Hopkins kick),7,14,2023_08_CLE_SEA
+1,0:59,Seahawks,Jason Myers 32 yard field goal ,7,17,2023_08_CLE_SEA
+2,4:40,Browns,Kareem Hunt 1 yard rush (Dustin Hopkins kick),14,17,2023_08_CLE_SEA
+3,7:29,Browns,Dustin Hopkins 25 yard field goal ,17,17,2023_08_CLE_SEA
+3,2:50,Browns,Dustin Hopkins 27 yard field goal ,20,17,2023_08_CLE_SEA
+4,0:38,Seahawks,Jaxon Smith-Njigba 9 yard pass from Geno Smith (Jason Myers kick),20,24,2023_08_CLE_SEA
+1,8:05,Cardinals,Joshua Dobbs 1 yard rush (Matt Prater kick),0,7,2023_08_BAL_ARI
+1,2:38,Ravens,Mark Andrews 5 yard pass from Lamar Jackson (Justin Tucker kick),7,7,2023_08_BAL_ARI
+2,0:20,Ravens,Gus Edwards 1 yard rush (Justin Tucker kick),14,7,2023_08_BAL_ARI
+3,0:40,Ravens,Gus Edwards 7 yard rush (Justin Tucker kick),21,7,2023_08_BAL_ARI
+4,9:27,Ravens,Justin Tucker 48 yard field goal ,24,7,2023_08_BAL_ARI
+4,6:32,Cardinals,Trey McBride 17 yard pass from Joshua Dobbs (Joshua Dobbs run),24,15,2023_08_BAL_ARI
+4,2:51,Ravens,Gus Edwards 1 yard rush (Justin Tucker kick),31,15,2023_08_BAL_ARI
+4,1:14,Cardinals,Marquise Brown 1 yard pass from Joshua Dobbs (pass failed),31,21,2023_08_BAL_ARI
+4,0:26,Cardinals,Matt Prater 47 yard field goal ,31,24,2023_08_BAL_ARI
+1,7:56,Broncos,Javonte Williams 4 yard pass from Russell Wilson (Wil Lutz kick),0,7,2023_08_KC_DEN
+1,1:11,Chiefs,Harrison Butker 23 yard field goal ,3,7,2023_08_KC_DEN
+2,11:51,Broncos,Jerry Jeudy 11 yard pass from Russell Wilson (Wil Lutz kick),3,14,2023_08_KC_DEN
+2,5:39,Chiefs,Harrison Butker 34 yard field goal ,6,14,2023_08_KC_DEN
+2,0:00,Chiefs,Harrison Butker 56 yard field goal ,9,14,2023_08_KC_DEN
+4,10:33,Broncos,Courtland Sutton 6 yard pass from Russell Wilson (Wil Lutz kick),9,21,2023_08_KC_DEN
+4,0:31,Broncos,Wil Lutz 28 yard field goal ,9,24,2023_08_KC_DEN
+1,8:11,Bengals,Tyler Boyd 7 yard pass from Joe Burrow (Evan McPherson kick),7,0,2023_08_CIN_SF
+1,3:19,49ers,Christian McCaffrey 2 yard rush (Jake Moody kick),7,7,2023_08_CIN_SF
+1,0:00,Bengals,Andrei Iosivas 2 yard pass from Joe Burrow (Evan McPherson kick),14,7,2023_08_CIN_SF
+2,2:44,49ers,Jake Moody 36 yard field goal ,14,10,2023_08_CIN_SF
+3,11:09,Bengals,Evan McPherson 56 yard field goal ,17,10,2023_08_CIN_SF
+4,13:04,Bengals,Ja'Marr Chase 17 yard pass from Joe Burrow (Evan McPherson kick),24,10,2023_08_CIN_SF
+4,8:12,49ers,Christian McCaffrey 4 yard pass from Brock Purdy (Jake Moody kick),24,17,2023_08_CIN_SF
+4,2:54,Bengals,Joe Mixon 5 yard rush (Evan McPherson kick),31,17,2023_08_CIN_SF
+1,7:08,Chargers,Austin Ekeler 39 yard pass from Justin Herbert (Cameron Dicker kick),0,7,2023_08_CHI_LAC
+1,0:43,Chargers,Simi Fehoko 9 yard pass from Justin Herbert (Cameron Dicker kick),0,14,2023_08_CHI_LAC
+2,8:50,Chargers,Cameron Dicker 43 yard field goal ,0,17,2023_08_CHI_LAC
+2,1:47,Bears,Darrynton Evans 11 yard rush (Cairo Santos kick),7,17,2023_08_CHI_LAC
+2,0:04,Chargers,Donald Parham 11 yard pass from Justin Herbert (Cameron Dicker kick),7,24,2023_08_CHI_LAC
+3,8:51,Chargers,Cameron Dicker 53 yard field goal ,7,27,2023_08_CHI_LAC
+3,3:00,Chargers,Cameron Dicker 46 yard field goal ,7,30,2023_08_CHI_LAC
+4,2:12,Bears,Tyson Bagent 1 yard rush (pass failed),13,30,2023_08_CHI_LAC
+1,7:51,Lions,Riley Patterson 44 yard field goal ,0,3,2023_08_LV_DET
+2,12:23,Lions,Riley Patterson 31 yard field goal ,0,6,2023_08_LV_DET
+2,8:08,Lions,Riley Patterson 33 yard field goal ,0,9,2023_08_LV_DET
+2,2:56,Raiders,Josh Jacobs 3 yard rush (Daniel Carlson kick),7,9,2023_08_LV_DET
+2,0:27,Lions,Sam LaPorta 18 yard pass from Jared Goff (Riley Patterson kick),7,16,2023_08_LV_DET
+3,11:32,Raiders,Marcus Peters 75 yard interception return (Daniel Carlson kick),14,16,2023_08_LV_DET
+3,3:13,Lions,Jahmyr Gibbs 27 yard rush (Riley Patterson kick),14,23,2023_08_LV_DET
+4,9:59,Lions,Riley Patterson 52 yard field goal ,14,26,2023_08_LV_DET
+1,10:11,Steelers,Najee Harris 10 yard rush (Chris Boswell kick),0,7,2023_09_TEN_PIT
+1,2:48,Titans,Nick Folk 36 yard field goal ,3,7,2023_09_TEN_PIT
+2,6:35,Titans,Derrick Henry 2 yard rush (Nick Folk kick),10,7,2023_09_TEN_PIT
+2,1:16,Steelers,Chris Boswell 29 yard field goal ,10,10,2023_09_TEN_PIT
+2,0:00,Titans,Nick Folk 36 yard field goal ,13,10,2023_09_TEN_PIT
+3,5:41,Steelers,Chris Boswell 30 yard field goal ,13,13,2023_09_TEN_PIT
+3,0:19,Titans,Nick Folk 48 yard field goal ,16,13,2023_09_TEN_PIT
+4,4:02,Steelers,Diontae Johnson 3 yard pass from Kenny Pickett (Chris Boswell kick),16,20,2023_09_TEN_PIT
+1,12:03,Chiefs,Rashee Rice 11 yard pass from Patrick Mahomes (Harrison Butker kick),0,7,2023_09_MIA_KC
+2,2:31,Chiefs,Jerick McKinnon 17 yard pass from Patrick Mahomes (Harrison Butker kick),0,14,2023_09_MIA_KC
+2,0:33,Chiefs,Bryan Cook 4 yard fumble return (Harrison Butker kick),0,21,2023_09_MIA_KC
+3,4:47,Dolphins,Cedrick Wilson Jr. 31 yard pass from Tua Tagovailoa (Jason Sanders kick),7,21,2023_09_MIA_KC
+3,0:22,Dolphins,Raheem Mostert 13 yard rush (Jason Sanders kick),14,21,2023_09_MIA_KC
+1,7:06,Falcons,Younghoe Koo 52 yard field goal ,0,3,2023_09_MIN_ATL
+1,2:20,Vikings,Greg Joseph 19 yard field goal ,3,3,2023_09_MIN_ATL
+2,14:04,Falcons,"Safety, Joshua Dobbs sacked in end zone by Calais Campbell ",3,5,2023_09_MIN_ATL
+2,8:57,Falcons,Younghoe Koo 43 yard field goal ,3,8,2023_09_MIN_ATL
+2,5:32,Falcons,Younghoe Koo 23 yard field goal ,3,11,2023_09_MIN_ATL
+2,0:55,Vikings,Alexander Mattison 2 yard pass from Joshua Dobbs (Greg Joseph kick),10,11,2023_09_MIN_ATL
+3,12:15,Falcons,Younghoe Koo 54 yard field goal ,10,14,2023_09_MIN_ATL
+3,8:13,Vikings,Greg Joseph 32 yard field goal ,13,14,2023_09_MIN_ATL
+3,6:54,Falcons,Jonnu Smith 60 yard pass from Taylor Heinicke (Younghoe Koo kick),13,21,2023_09_MIN_ATL
+3,2:20,Vikings,Joshua Dobbs 18 yard rush (Trishton Jackson pass from Joshua Dobbs),21,21,2023_09_MIN_ATL
+4,14:18,Vikings,Greg Joseph 31 yard field goal ,24,21,2023_09_MIN_ATL
+4,2:08,Falcons,Tyler Allgeier 5 yard rush (Younghoe Koo kick),24,28,2023_09_MIN_ATL
+4,0:22,Vikings,Brandon Powell 6 yard pass from Joshua Dobbs (Greg Joseph kick),31,28,2023_09_MIN_ATL
+2,13:06,Ravens,Gus Edwards 4 yard rush (Justin Tucker kick),0,7,2023_09_SEA_BAL
+2,2:39,Ravens,Gus Edwards 3 yard rush (Justin Tucker kick),0,14,2023_09_SEA_BAL
+2,0:59,Seahawks,Jason Myers 33 yard field goal ,3,14,2023_09_SEA_BAL
+2,0:04,Ravens,Justin Tucker 37 yard field goal ,3,17,2023_09_SEA_BAL
+3,12:44,Ravens,Justin Tucker 45 yard field goal ,3,20,2023_09_SEA_BAL
+3,3:28,Ravens,Justin Tucker 31 yard field goal ,3,23,2023_09_SEA_BAL
+3,0:29,Ravens,Keaton Mitchell 40 yard rush (Justin Tucker kick),3,30,2023_09_SEA_BAL
+4,8:14,Ravens,Odell Beckham Jr. 6 yard pass from Tyler Huntley (Justin Tucker kick),3,37,2023_09_SEA_BAL
+2,14:15,Browns,Dustin Hopkins 30 yard field goal ,0,3,2023_09_ARI_CLE
+2,6:48,Browns,Amari Cooper 11 yard pass from Deshaun Watson (Dustin Hopkins kick),0,10,2023_09_ARI_CLE
+2,0:00,Browns,Dustin Hopkins 45 yard field goal ,0,13,2023_09_ARI_CLE
+3,8:07,Browns,David Njoku 5 yard pass from Deshaun Watson (Dustin Hopkins kick),0,20,2023_09_ARI_CLE
+4,7:48,Browns,Kareem Hunt 3 yard rush (Dustin Hopkins kick),0,27,2023_09_ARI_CLE
+2,14:24,Packers,Aaron Jones 3 yard rush (Anders Carlson kick),0,7,2023_09_LA_GB
+2,1:42,Rams,Lucas Havrisik 52 yard field goal ,3,7,2023_09_LA_GB
+3,2:10,Packers,Anders Carlson 26 yard field goal ,3,10,2023_09_LA_GB
+4,9:08,Packers,Anders Carlson 34 yard field goal ,3,13,2023_09_LA_GB
+4,3:49,Packers,Luke Musgrave 20 yard pass from Jordan Love (Anders Carlson kick),3,20,2023_09_LA_GB
+1,12:56,Buccaneers,Chase McLaughlin 35 yard field goal ,3,0,2023_09_TB_HOU
+1,9:10,Texans,Nico Collins 14 yard pass from C.J. Stroud (Ka'imi Fairbairn kick),3,7,2023_09_TB_HOU
+1,2:13,Buccaneers,Cade Otton 3 yard pass from Baker Mayfield (Chase McLaughlin kick),10,7,2023_09_TB_HOU
+2,9:05,Buccaneers,Rachaad White 1 yard rush (Chase McLaughlin kick),17,7,2023_09_TB_HOU
+2,5:17,Texans,Ka'imi Fairbairn 50 yard field goal ,17,10,2023_09_TB_HOU
+3,12:38,Buccaneers,Chase McLaughlin 49 yard field goal ,20,10,2023_09_TB_HOU
+3,12:20,Texans,Noah Brown 75 yard pass from C.J. Stroud (pass failed),20,16,2023_09_TB_HOU
+3,9:23,Buccaneers,Chase McLaughlin 55 yard field goal ,23,16,2023_09_TB_HOU
+3,5:59,Texans,Tank Dell 29 yard pass from C.J. Stroud (pass failed),23,22,2023_09_TB_HOU
+4,14:11,Texans,Dalton Schultz 9 yard pass from C.J. Stroud (C.J. Stroud run),23,30,2023_09_TB_HOU
+4,11:45,Buccaneers,Rachaad White 1 yard rush (Chase McLaughlin kick),30,30,2023_09_TB_HOU
+4,8:45,Texans,Dare Ogunbowale 29 yard field goal ,30,33,2023_09_TB_HOU
+4,0:46,Buccaneers,Cade Otton 14 yard pass from Baker Mayfield (Chase McLaughlin kick),37,33,2023_09_TB_HOU
+4,0:06,Texans,Tank Dell 15 yard pass from C.J. Stroud (run failed),37,39,2023_09_TB_HOU
+1,3:14,Commanders,Joey Slye 37 yard field goal ,3,0,2023_09_WAS_NE
+2,12:05,Commanders,Brian Robinson Jr. 9 yard rush (Joey Slye kick),10,0,2023_09_WAS_NE
+2,9:26,Patriots,Hunter Henry 14 yard pass from Mac Jones (Chad Ryland kick),10,7,2023_09_WAS_NE
+2,6:06,Patriots,Rhamondre Stevenson 64 yard rush (Chad Ryland kick),10,14,2023_09_WAS_NE
+3,10:14,Patriots,Chad Ryland 43 yard field goal ,10,17,2023_09_WAS_NE
+3,6:51,Commanders,Jahan Dotson 33 yard pass from Sam Howell (Joey Slye kick),17,17,2023_09_WAS_NE
+3,1:49,Commanders,Joey Slye 30 yard field goal ,20,17,2023_09_WAS_NE
+1,11:14,Bears,Cole Kmet 18 yard pass from Tyson Bagent (Cairo Santos kick),7,0,2023_09_CHI_NO
+1,0:44,Saints,Chris Olave 8 yard pass from Derek Carr (Blake Grupe kick),7,7,2023_09_CHI_NO
+2,12:46,Bears,Cole Kmet 9 yard pass from Tyson Bagent (Cairo Santos kick),14,7,2023_09_CHI_NO
+2,6:05,Saints,Taysom Hill 2 yard pass from Derek Carr (Blake Grupe kick),14,14,2023_09_CHI_NO
+3,11:43,Saints,Blake Grupe 55 yard field goal ,14,17,2023_09_CHI_NO
+3,3:27,Bears,Cairo Santos 31 yard field goal ,17,17,2023_09_CHI_NO
+4,11:05,Saints,Juwan Johnson 3 yard pass from Taysom Hill (Blake Grupe kick),17,24,2023_09_CHI_NO
+2,13:52,Colts,Matt Gay 26 yard field goal ,3,0,2023_09_IND_CAR
+2,7:43,Colts,Jonathan Taylor 10 yard pass from Gardner Minshew II (Matt Gay kick),10,0,2023_09_IND_CAR
+2,3:34,Panthers,Eddy Pineiro 35 yard field goal ,10,3,2023_09_IND_CAR
+2,0:53,Colts,Matt Gay 57 yard field goal ,13,3,2023_09_IND_CAR
+2,0:20,Colts,Kenny Moore 49 yard interception return (Matt Gay kick),20,3,2023_09_IND_CAR
+3,4:34,Panthers,DJ Chark 5 yard pass from Bryce Young (Eddy Pineiro kick),20,10,2023_09_IND_CAR
+4,13:40,Colts,Kenny Moore 66 yard interception return (Matt Gay kick),27,10,2023_09_IND_CAR
+4,8:09,Panthers,Eddy Pineiro 49 yard field goal ,27,13,2023_09_IND_CAR
+1,9:45,Raiders,Jakobi Meyers 17 yard rush (Daniel Carlson kick),0,7,2023_09_NYG_LV
+2,5:06,Raiders,Josh Jacobs 2 yard rush (Daniel Carlson kick),0,14,2023_09_NYG_LV
+2,1:57,Raiders,Josh Jacobs 1 yard rush (Daniel Carlson kick),0,21,2023_09_NYG_LV
+2,0:04,Raiders,Daniel Carlson 24 yard field goal ,0,24,2023_09_NYG_LV
+3,8:23,Raiders,Daniel Carlson 46 yard field goal ,0,27,2023_09_NYG_LV
+4,14:11,Giants,Wan'Dale Robinson 9 yard pass from Tommy DeVito (pass failed),6,27,2023_09_NYG_LV
+4,9:29,Raiders,Daniel Carlson 41 yard field goal ,6,30,2023_09_NYG_LV
+1,5:46,Eagles,Kenneth Gainwell 12 yard rush (Jake Elliott kick),0,7,2023_09_DAL_PHI
+1,1:37,Cowboys,Jake Ferguson 4 yard pass from Dak Prescott (Brandon Aubrey kick),7,7,2023_09_DAL_PHI
+2,11:16,Cowboys,KaVontae Turpin 5 yard pass from Dak Prescott (Brandon Aubrey kick),14,7,2023_09_DAL_PHI
+2,5:09,Eagles,Jalen Hurts 1 yard rush (Jake Elliott kick),14,14,2023_09_DAL_PHI
+2,1:15,Cowboys,Brandon Aubrey 51 yard field goal ,17,14,2023_09_DAL_PHI
+3,11:23,Eagles,DeVonta Smith 29 yard pass from Jalen Hurts (Jake Elliott kick),17,21,2023_09_DAL_PHI
+3,1:13,Eagles,A.J. Brown 4 yard pass from Jalen Hurts (Jake Elliott kick),17,28,2023_09_DAL_PHI
+4,6:23,Cowboys,Jalen Tolbert 7 yard pass from Dak Prescott (run failed),23,28,2023_09_DAL_PHI
+1,9:18,Bengals,Irv Smith Jr. 7 yard pass from Joe Burrow (Evan McPherson kick),0,7,2023_09_BUF_CIN
+1,6:03,Bills,Josh Allen 2 yard rush (Tyler Bass kick),7,7,2023_09_BUF_CIN
+1,0:35,Bengals,Joe Mixon 2 yard rush (Evan McPherson kick),7,14,2023_09_BUF_CIN
+2,1:37,Bengals,Drew Sample 22 yard pass from Joe Burrow (Evan McPherson kick),7,21,2023_09_BUF_CIN
+3,10:21,Bills,Tyler Bass 34 yard field goal ,10,21,2023_09_BUF_CIN
+4,8:08,Bengals,Evan McPherson 20 yard field goal ,10,24,2023_09_BUF_CIN
+4,3:32,Bills,Stefon Diggs 17 yard pass from Josh Allen (Stefon Diggs pass from Josh Allen),18,24,2023_09_BUF_CIN
+1,13:15,Chargers,Derius Davis 87 yard punt return (Cameron Dicker kick),7,0,2023_09_LAC_NYJ
+1,2:45,Chargers,Austin Ekeler 1 yard rush (Cameron Dicker kick),14,0,2023_09_LAC_NYJ
+2,5:57,Jets,Greg Zuerlein 47 yard field goal ,14,3,2023_09_LAC_NYJ
+2,0:00,Chargers,Cameron Dicker 55 yard field goal ,17,3,2023_09_LAC_NYJ
+3,9:52,Jets,Greg Zuerlein 46 yard field goal ,17,6,2023_09_LAC_NYJ
+4,9:18,Chargers,Cameron Dicker 38 yard field goal ,20,6,2023_09_LAC_NYJ
+4,3:22,Chargers,Austin Ekeler 2 yard rush (Cameron Dicker kick),27,6,2023_09_LAC_NYJ
+1,5:46,Panthers,Ihmir Smith-Marsette 79 yard punt return (Eddy Pineiro kick),7,0,2023_10_CAR_CHI
+1,2:29,Bears,Cairo Santos 54 yard field goal ,7,3,2023_10_CAR_CHI
+2,13:33,Panthers,Eddy Pineiro 33 yard field goal ,10,3,2023_10_CAR_CHI
+2,3:06,Bears,Cairo Santos 36 yard field goal ,10,6,2023_10_CAR_CHI
+2,0:00,Bears,Cairo Santos 39 yard field goal ,10,9,2023_10_CAR_CHI
+3,6:33,Bears,D'Onta Foreman 4 yard rush (Cairo Santos kick),10,16,2023_10_CAR_CHI
+4,11:06,Panthers,Eddy Pineiro 39 yard field goal ,13,16,2023_10_CAR_CHI
+1,8:11,Patriots,Chad Ryland 37 yard field goal ,0,3,2023_10_IND_NE
+1,0:58,Colts,Jonathan Taylor 1 yard rush (Matt Gay kick),7,3,2023_10_IND_NE
+4,12:44,Patriots,Chad Ryland 24 yard field goal ,7,6,2023_10_IND_NE
+4,8:54,Colts,Matt Gay 51 yard field goal ,10,6,2023_10_IND_NE
+1,14:20,Ravens,Kyle Hamilton 18 yard interception return (Justin Tucker kick),0,7,2023_10_CLE_BAL
+1,10:13,Ravens,Keaton Mitchell 39 yard rush (Justin Tucker kick),0,14,2023_10_CLE_BAL
+1,7:27,Browns,Dustin Hopkins 36 yard field goal ,3,14,2023_10_CLE_BAL
+1,3:29,Ravens,Justin Tucker 37 yard field goal ,3,17,2023_10_CLE_BAL
+2,7:30,Browns,Dustin Hopkins 28 yard field goal ,6,17,2023_10_CLE_BAL
+2,1:02,Browns,Dustin Hopkins 23 yard field goal ,9,17,2023_10_CLE_BAL
+3,12:29,Ravens,Odell Beckham Jr. 40 yard pass from Lamar Jackson (Justin Tucker kick),9,24,2023_10_CLE_BAL
+3,2:20,Browns,Kareem Hunt 3 yard rush (Deshaun Watson run),17,24,2023_10_CLE_BAL
+4,11:34,Ravens,Gus Edwards 1 yard rush (Justin Tucker kick),17,31,2023_10_CLE_BAL
+4,8:57,Browns,Elijah Moore 10 yard pass from Deshaun Watson (Dustin Hopkins kick),24,31,2023_10_CLE_BAL
+4,8:16,Browns,Greg Newsome II 34 yard interception return (Dustin Hopkins kick failed),30,31,2023_10_CLE_BAL
+4,0:00,Browns,Dustin Hopkins 40 yard field goal ,33,31,2023_10_CLE_BAL
+1,9:43,Bengals,Trenton Irwin 32 yard pass from Joe Burrow (Evan McPherson kick),0,7,2023_10_HOU_CIN
+2,10:33,Texans,Tank Dell 6 yard pass from C.J. Stroud (Matt Ammendola kick),7,7,2023_10_HOU_CIN
+2,0:10,Texans,Matt Ammendola 45 yard field goal ,10,7,2023_10_HOU_CIN
+3,9:27,Texans,Matt Ammendola 22 yard field goal ,13,7,2023_10_HOU_CIN
+3,7:08,Texans,Devin Singletary 6 yard rush (Matt Ammendola kick),20,7,2023_10_HOU_CIN
+3,3:00,Bengals,Evan McPherson 50 yard field goal ,20,10,2023_10_HOU_CIN
+3,0:10,Bengals,Ja'Marr Chase 64 yard pass from Joe Burrow (Evan McPherson kick),20,17,2023_10_HOU_CIN
+4,12:47,Texans,C.J. Stroud 8 yard rush (Matt Ammendola kick),27,17,2023_10_HOU_CIN
+4,3:18,Bengals,Joe Mixon 1 yard rush (Evan McPherson kick),27,24,2023_10_HOU_CIN
+4,1:33,Bengals,Evan McPherson 31 yard field goal ,27,27,2023_10_HOU_CIN
+4,0:00,Texans,Matt Ammendola 38 yard field goal ,30,27,2023_10_HOU_CIN
+1,11:34,49ers,Brandon Aiyuk 13 yard pass from Brock Purdy (Jake Moody kick),7,0,2023_10_SF_JAX
+1,4:21,49ers,Jake Moody 39 yard field goal ,10,0,2023_10_SF_JAX
+2,4:20,Jaguars,Brandon McManus 37 yard field goal ,10,3,2023_10_SF_JAX
+2,0:00,49ers,Jake Moody 35 yard field goal ,13,3,2023_10_SF_JAX
+3,14:10,49ers,George Kittle 66 yard pass from Brock Purdy (Jake Moody kick),20,3,2023_10_SF_JAX
+3,1:20,49ers,Deebo Samuel 23 yard rush (Jake Moody kick),27,3,2023_10_SF_JAX
+4,12:40,49ers,Kyle Juszczyk 22 yard pass from Brock Purdy (Jake Moody kick),34,3,2023_10_SF_JAX
+1,10:47,Vikings,Greg Joseph 40 yard field goal ,0,3,2023_10_NO_MIN
+1,1:19,Saints,Blake Grupe 48 yard field goal ,3,3,2023_10_NO_MIN
+2,10:10,Vikings,Ty Chandler 2 yard rush (Greg Joseph kick),3,10,2023_10_NO_MIN
+2,3:25,Vikings,Joshua Dobbs 7 yard rush (Greg Joseph kick),3,17,2023_10_NO_MIN
+2,0:16,Vikings,T.J. Hockenson 28 yard pass from Joshua Dobbs (Greg Joseph kick),3,24,2023_10_NO_MIN
+3,10:09,Vikings,Greg Joseph 33 yard field goal ,3,27,2023_10_NO_MIN
+3,5:26,Saints,Chris Olave 14 yard pass from Jameis Winston (Alvin Kamara run),11,27,2023_10_NO_MIN
+4,11:40,Saints,A.T. Perry 15 yard pass from Jameis Winston (Alvin Kamara run),19,27,2023_10_NO_MIN
+1,10:01,Steelers,Najee Harris 4 yard rush (Chris Boswell kick),0,7,2023_10_GB_PIT
+1,4:42,Packers,Romeo Doubs 8 yard pass from Jordan Love (Anders Carlson kick),7,7,2023_10_GB_PIT
+2,14:12,Steelers,Jaylen Warren 16 yard rush (Chris Boswell kick),7,14,2023_10_GB_PIT
+2,8:08,Steelers,Chris Boswell 42 yard field goal ,7,17,2023_10_GB_PIT
+2,4:14,Packers,Jayden Reed 35 yard pass from Jordan Love (Anders Carlson kick failed),13,17,2023_10_GB_PIT
+3,9:08,Packers,Anders Carlson 31 yard field goal ,16,17,2023_10_GB_PIT
+3,3:04,Packers,Anders Carlson 28 yard field goal ,19,17,2023_10_GB_PIT
+3,1:05,Steelers,Chris Boswell 49 yard field goal ,19,20,2023_10_GB_PIT
+4,5:14,Steelers,Chris Boswell 35 yard field goal ,19,23,2023_10_GB_PIT
+1,8:34,Titans,Nick Folk 38 yard field goal ,3,0,2023_10_TEN_TB
+2,5:39,Buccaneers,Rachaad White 43 yard pass from Baker Mayfield (Chase McLaughlin kick),3,7,2023_10_TEN_TB
+3,10:42,Buccaneers,Chase McLaughlin 25 yard field goal ,3,10,2023_10_TEN_TB
+3,2:46,Buccaneers,Mike Evans 22 yard pass from Baker Mayfield (Chase McLaughlin kick),3,17,2023_10_TEN_TB
+4,12:54,Titans,Nick Folk 27 yard field goal ,6,17,2023_10_TEN_TB
+4,7:01,Buccaneers,Chase McLaughlin 35 yard field goal ,6,20,2023_10_TEN_TB
+1,4:48,Cardinals,Matt Prater 51 yard field goal ,0,3,2023_10_ATL_ARI
+2,13:27,Falcons,Scott Miller 2 yard pass from Taylor Heinicke (Younghoe Koo kick),7,3,2023_10_ATL_ARI
+2,10:32,Cardinals,Matt Prater 46 yard field goal ,7,6,2023_10_ATL_ARI
+2,4:07,Falcons,Bijan Robinson 5 yard rush (Younghoe Koo kick),14,6,2023_10_ATL_ARI
+2,0:10,Cardinals,Kyler Murray 6 yard rush (pass failed),14,12,2023_10_ATL_ARI
+3,9:16,Cardinals,Matt Prater 56 yard field goal ,14,15,2023_10_ATL_ARI
+3,5:18,Falcons,Younghoe Koo 36 yard field goal ,17,15,2023_10_ATL_ARI
+3,0:19,Cardinals,Clayton Tune 1 yard rush (Matt Prater kick),17,22,2023_10_ATL_ARI
+4,2:33,Falcons,Desmond Ridder 9 yard rush (pass failed),23,22,2023_10_ATL_ARI
+4,0:00,Cardinals,Matt Prater 23 yard field goal ,23,25,2023_10_ATL_ARI
+1,10:09,Lions,Riley Patterson 33 yard field goal ,3,0,2023_10_DET_LAC
+1,6:54,Chargers,Cameron Dicker 48 yard field goal ,3,3,2023_10_DET_LAC
+1,4:18,Lions,Jahmyr Gibbs 1 yard rush (Riley Patterson kick),10,3,2023_10_DET_LAC
+2,7:30,Lions,Jahmyr Gibbs 1 yard rush (Riley Patterson kick),17,3,2023_10_DET_LAC
+2,3:21,Chargers,Keenan Allen 29 yard pass from Justin Herbert (Cameron Dicker kick),17,10,2023_10_DET_LAC
+2,3:07,Lions,David Montgomery 75 yard rush (Riley Patterson kick),24,10,2023_10_DET_LAC
+2,0:23,Chargers,Austin Ekeler 2 yard rush (Cameron Dicker kick),24,17,2023_10_DET_LAC
+3,7:59,Chargers,Jalen Guyton 18 yard pass from Justin Herbert (Cameron Dicker kick),24,24,2023_10_DET_LAC
+3,4:31,Lions,Amon-Ra St. Brown 20 yard pass from Jared Goff (Riley Patterson kick),31,24,2023_10_DET_LAC
+4,11:30,Chargers,Quentin Johnston 1 yard pass from Justin Herbert (Cameron Dicker kick),31,31,2023_10_DET_LAC
+4,7:30,Lions,Brock Wright 25 yard pass from Jared Goff (Riley Patterson kick),38,31,2023_10_DET_LAC
+4,3:34,Chargers,Keenan Allen 38 yard pass from Justin Herbert (Cameron Dicker kick),38,38,2023_10_DET_LAC
+4,0:00,Lions,Riley Patterson 41 yard field goal ,41,38,2023_10_DET_LAC
+1,3:38,Cowboys,CeeDee Lamb 14 yard rush (Brandon Aubrey kick),0,7,2023_10_NYG_DAL
+2,8:48,Cowboys,Jake Ferguson 1 yard pass from Dak Prescott (Brandon Aubrey kick),0,14,2023_10_NYG_DAL
+2,3:48,Cowboys,Brandin Cooks 10 yard pass from Dak Prescott (Brandon Aubrey kick),0,21,2023_10_NYG_DAL
+2,0:16,Cowboys,Dak Prescott 10 yard rush (Brandon Aubrey kick),0,28,2023_10_NYG_DAL
+3,8:07,Giants,Lawrence Cager 10 yard pass from Tommy DeVito (Randy Bullock kick),7,28,2023_10_NYG_DAL
+3,4:40,Cowboys,Michael Gallup 41 yard pass from Dak Prescott (Brandon Aubrey kick),7,35,2023_10_NYG_DAL
+3,1:29,Cowboys,CeeDee Lamb 12 yard pass from Dak Prescott (Brandon Aubrey kick),7,42,2023_10_NYG_DAL
+4,8:54,Giants,Randy Bullock 40 yard field goal ,10,42,2023_10_NYG_DAL
+4,2:14,Cowboys,Rico Dowdle 1 yard rush (Brandon Aubrey kick),10,49,2023_10_NYG_DAL
+4,0:06,Giants,Sterling Shepard 2 yard pass from Tommy DeVito (Randy Bullock kick),17,49,2023_10_NYG_DAL
+1,13:26,Commanders,Brian Robinson Jr. 51 yard pass from Sam Howell (Joey Slye kick failed),6,0,2023_10_WAS_SEA
+1,8:43,Seahawks,Jason Myers 45 yard field goal ,6,3,2023_10_WAS_SEA
+2,12:06,Commanders,Joey Slye 49 yard field goal ,9,3,2023_10_WAS_SEA
+2,9:12,Seahawks,Jason Myers 43 yard field goal ,9,6,2023_10_WAS_SEA
+2,1:47,Seahawks,Jason Myers 33 yard field goal ,9,9,2023_10_WAS_SEA
+3,10:32,Commanders,Joey Slye 47 yard field goal ,12,9,2023_10_WAS_SEA
+3,9:43,Seahawks,Kenneth Walker III 64 yard pass from Geno Smith (Jason Myers kick),12,16,2023_10_WAS_SEA
+4,12:14,Seahawks,Jason Myers 45 yard field goal ,12,19,2023_10_WAS_SEA
+4,8:00,Commanders,Antonio Gibson 19 yard pass from Sam Howell (Joey Slye kick),19,19,2023_10_WAS_SEA
+4,3:47,Seahawks,Tyler Lockett 5 yard pass from Geno Smith (Jason Myers kick),19,26,2023_10_WAS_SEA
+4,0:52,Commanders,Dyami Brown 35 yard pass from Sam Howell (Joey Slye kick),26,26,2023_10_WAS_SEA
+4,0:00,Seahawks,Jason Myers 43 yard field goal ,26,29,2023_10_WAS_SEA
+1,10:13,Jets,Greg Zuerlein 47 yard field goal ,3,0,2023_10_NYJ_LV
+1,6:15,Raiders,Daniel Carlson 41 yard field goal ,3,3,2023_10_NYJ_LV
+1,1:11,Jets,Greg Zuerlein 53 yard field goal ,6,3,2023_10_NYJ_LV
+2,11:48,Jets,Greg Zuerlein 30 yard field goal ,9,3,2023_10_NYJ_LV
+2,0:00,Raiders,Daniel Carlson 54 yard field goal ,9,6,2023_10_NYJ_LV
+3,2:36,Raiders,Daniel Carlson 40 yard field goal ,9,9,2023_10_NYJ_LV
+4,14:10,Raiders,Michael Mayer 7 yard pass from Aidan O'Connell (Daniel Carlson kick),9,16,2023_10_NYJ_LV
+4,11:58,Jets,Greg Zuerlein 45 yard field goal ,12,16,2023_10_NYJ_LV
+1,12:39,Broncos,Wil Lutz 40 yard field goal ,3,0,2023_10_DEN_BUF
+2,7:17,Broncos,Courtland Sutton 7 yard pass from Russell Wilson (Wil Lutz kick failed),9,0,2023_10_DEN_BUF
+2,3:36,Bills,Dalton Kincaid 22 yard pass from Josh Allen (Gabriel Davis pass from Josh Allen),9,8,2023_10_DEN_BUF
+2,0:45,Broncos,Wil Lutz 49 yard field goal ,12,8,2023_10_DEN_BUF
+2,0:00,Broncos,Wil Lutz 40 yard field goal ,15,8,2023_10_DEN_BUF
+3,6:42,Bills,Latavius Murray 3 yard rush (Tyler Bass kick),15,15,2023_10_DEN_BUF
+4,5:06,Broncos,Javonte Williams 3 yard pass from Russell Wilson (run failed),21,15,2023_10_DEN_BUF
+4,1:55,Bills,Josh Allen 6 yard rush (Tyler Bass kick),21,22,2023_10_DEN_BUF
+4,0:00,Broncos,Wil Lutz 36 yard field goal ,24,22,2023_10_DEN_BUF
+1,10:02,Ravens,Gus Edwards 3 yard rush (Justin Tucker kick),0,7,2023_11_CIN_BAL
+1,7:32,Bengals,Evan McPherson 50 yard field goal ,3,7,2023_11_CIN_BAL
+2,5:49,Bengals,Joe Mixon 4 yard pass from Joe Burrow (Evan McPherson kick),10,7,2023_11_CIN_BAL
+2,2:21,Ravens,Nelson Agholor 37 yard pass from Lamar Jackson (Justin Tucker kick),10,14,2023_11_CIN_BAL
+2,0:23,Ravens,Rashod Bateman 10 yard pass from Lamar Jackson (Justin Tucker kick),10,21,2023_11_CIN_BAL
+3,9:56,Bengals,Evan McPherson 26 yard field goal ,13,21,2023_11_CIN_BAL
+3,4:02,Ravens,Justin Tucker 25 yard field goal ,13,24,2023_11_CIN_BAL
+3,0:26,Ravens,Justin Tucker 47 yard field goal ,13,27,2023_11_CIN_BAL
+4,4:49,Ravens,Gus Edwards 3 yard rush (Justin Tucker kick),13,34,2023_11_CIN_BAL
+4,1:08,Bengals,Ja'Marr Chase 2 yard pass from Jake Browning (Evan McPherson kick),20,34,2023_11_CIN_BAL
+1,3:20,Cowboys,Luke Schoonmaker 18 yard pass from Dak Prescott (Brandon Aubrey kick),7,0,2023_11_DAL_CAR
+2,11:01,Cowboys,Brandon Aubrey 30 yard field goal ,10,0,2023_11_DAL_CAR
+2,1:56,Panthers,Eddy Pineiro 42 yard field goal ,10,3,2023_11_DAL_CAR
+2,0:24,Cowboys,CeeDee Lamb 5 yard pass from Dak Prescott (Brandon Aubrey kick),17,3,2023_11_DAL_CAR
+3,1:59,Panthers,Tommy Tremble 4 yard pass from Bryce Young (Eddy Pineiro kick),17,10,2023_11_DAL_CAR
+4,13:58,Cowboys,Tony Pollard 21 yard rush (Brandon Aubrey kick),24,10,2023_11_DAL_CAR
+4,13:48,Cowboys,DaRon Bland 30 yard interception return (Brandon Aubrey kick failed),30,10,2023_11_DAL_CAR
+4,7:18,Cowboys,Brandon Aubrey 27 yard field goal ,33,10,2023_11_DAL_CAR
+1,4:35,Browns,Jerome Ford 1 yard rush (Dustin Hopkins kick),0,7,2023_11_PIT_CLE
+2,0:05,Browns,Dustin Hopkins 25 yard field goal ,0,10,2023_11_PIT_CLE
+3,14:10,Steelers,Jaylen Warren 74 yard rush (Chris Boswell kick),7,10,2023_11_PIT_CLE
+4,7:40,Steelers,Chris Boswell 28 yard field goal ,10,10,2023_11_PIT_CLE
+4,0:02,Browns,Dustin Hopkins 34 yard field goal ,10,13,2023_11_PIT_CLE
+1,9:23,Bears,D'Onta Foreman 1 yard rush (Cairo Santos kick),7,0,2023_11_CHI_DET
+2,9:23,Lions,Jahmyr Gibbs 2 yard rush (Riley Patterson kick),7,7,2023_11_CHI_DET
+2,1:47,Bears,Cairo Santos 31 yard field goal ,10,7,2023_11_CHI_DET
+2,0:11,Lions,Amon-Ra St. Brown 7 yard pass from Jared Goff (Riley Patterson kick),10,14,2023_11_CHI_DET
+3,6:41,Bears,Cairo Santos 53 yard field goal ,13,14,2023_11_CHI_DET
+3,4:41,Bears,D.J. Moore 39 yard pass from Justin Fields (Cairo Santos kick),20,14,2023_11_CHI_DET
+4,14:12,Bears,Cairo Santos 40 yard field goal ,23,14,2023_11_CHI_DET
+4,4:15,Bears,Cairo Santos 39 yard field goal ,26,14,2023_11_CHI_DET
+4,2:59,Lions,Jameson Williams 32 yard pass from Jared Goff (Riley Patterson kick),26,21,2023_11_CHI_DET
+4,0:29,Lions,David Montgomery 1 yard rush (Sam LaPorta pass from Jared Goff),26,29,2023_11_CHI_DET
+4,0:22,Lions,Safety ,26,31,2023_11_CHI_DET
+1,1:22,Chargers,Cameron Dicker 25 yard field goal ,3,0,2023_11_LAC_GB
+2,14:53,Packers,Jayden Reed 32 yard rush (Anders Carlson kick),3,7,2023_11_LAC_GB
+2,12:16,Chargers,Stone Smartt 51 yard pass from Justin Herbert (Cameron Dicker kick),10,7,2023_11_LAC_GB
+2,0:07,Packers,Anders Carlson 28 yard field goal ,10,10,2023_11_LAC_GB
+3,10:44,Chargers,Cameron Dicker 26 yard field goal ,13,10,2023_11_LAC_GB
+3,0:04,Packers,Christian Watson 11 yard pass from Jordan Love (Anders Carlson kick failed),13,16,2023_11_LAC_GB
+4,5:24,Chargers,Keenan Allen 10 yard pass from Justin Herbert (Cameron Dicker kick),20,16,2023_11_LAC_GB
+4,2:29,Packers,Romeo Doubs 24 yard pass from Jordan Love (Anders Carlson kick),20,23,2023_11_LAC_GB
+1,13:28,Cardinals,Rondale Moore 48 yard pass from Kyler Murray (Matt Prater kick),7,0,2023_11_ARI_HOU
+1,5:48,Texans,Dalton Schultz 20 yard pass from C.J. Stroud (Matt Ammendola kick),7,7,2023_11_ARI_HOU
+1,1:21,Cardinals,Matt Prater 57 yard field goal ,10,7,2023_11_ARI_HOU
+2,11:20,Texans,Devin Singletary 11 yard rush (Matt Ammendola kick),10,14,2023_11_ARI_HOU
+2,0:26,Texans,Tank Dell 40 yard pass from C.J. Stroud (Matt Ammendola kick),10,21,2023_11_ARI_HOU
+3,2:52,Cardinals,Kyler Murray 1 yard rush (run failed),16,21,2023_11_ARI_HOU
+1,2:58,Jaguars,Calvin Ridley 3 yard pass from Trevor Lawrence (Brandon McManus kick),0,7,2023_11_TEN_JAX
+2,2:43,Jaguars,Brandon McManus 30 yard field goal ,0,10,2023_11_TEN_JAX
+2,0:14,Jaguars,Brandon McManus 25 yard field goal ,0,13,2023_11_TEN_JAX
+3,9:12,Jaguars,Trevor Lawrence 9 yard rush (Brandon McManus kick),0,20,2023_11_TEN_JAX
+3,3:22,Jaguars,Calvin Ridley 20 yard pass from Trevor Lawrence (Brandon McManus kick),0,27,2023_11_TEN_JAX
+3,0:00,Titans,DeAndre Hopkins 43 yard pass from Will Levis (Nick Folk kick),7,27,2023_11_TEN_JAX
+4,7:28,Jaguars,Trevor Lawrence 5 yard rush (Brandon McManus kick),7,34,2023_11_TEN_JAX
+4,4:28,Titans,Jeffery Simmons 2 yard pass from Will Levis (Nick Folk kick),14,34,2023_11_TEN_JAX
+1,6:41,Raiders,Daniel Carlson 34 yard field goal ,3,0,2023_11_LV_MIA
+1,2:03,Dolphins,Tyreek Hill 38 yard pass from Tua Tagovailoa (Jason Sanders kick),3,7,2023_11_LV_MIA
+1,0:01,Raiders,Davante Adams 46 yard pass from Aidan O'Connell (Daniel Carlson kick),10,7,2023_11_LV_MIA
+2,2:28,Dolphins,Salvon Ahmed 11 yard pass from Tua Tagovailoa (Jason Sanders kick),10,14,2023_11_LV_MIA
+2,0:05,Raiders,Daniel Carlson 47 yard field goal ,13,14,2023_11_LV_MIA
+3,5:26,Dolphins,Jason Sanders 41 yard field goal ,13,17,2023_11_LV_MIA
+3,0:25,Dolphins,Jason Sanders 51 yard field goal ,13,20,2023_11_LV_MIA
+1,6:29,Giants,Saquon Barkley 24 yard pass from Tommy DeVito (Randy Bullock kick),7,0,2023_11_NYG_WAS
+1,2:12,Commanders,Joey Slye 23 yard field goal ,7,3,2023_11_NYG_WAS
+2,6:07,Giants,Darius Slayton 40 yard pass from Tommy DeVito (Randy Bullock kick),14,3,2023_11_NYG_WAS
+2,1:32,Commanders,Sam Howell 7 yard rush (Joey Slye kick failed),14,9,2023_11_NYG_WAS
+3,5:43,Commanders,Joey Slye 42 yard field goal ,14,12,2023_11_NYG_WAS
+4,13:32,Giants,Saquon Barkley 5 yard pass from Tommy DeVito (Randy Bullock kick),21,12,2023_11_NYG_WAS
+4,6:48,Giants,Randy Bullock 36 yard field goal ,24,12,2023_11_NYG_WAS
+4,2:20,Commanders,Jahan Dotson 8 yard pass from Sam Howell (Joey Slye kick),24,19,2023_11_NYG_WAS
+4,0:16,Giants,Isaiah Simmons 54 yard interception return (Randy Bullock kick),31,19,2023_11_NYG_WAS
+1,3:55,49ers,Christian McCaffrey 4 yard pass from Brock Purdy (Jake Moody kick),0,7,2023_11_TB_SF
+2,7:21,49ers,Jake Moody 37 yard field goal ,0,10,2023_11_TB_SF
+2,1:48,Buccaneers,Mike Evans 1 yard pass from Baker Mayfield (Chase McLaughlin kick),7,10,2023_11_TB_SF
+2,0:16,49ers,Jake Moody 28 yard field goal ,7,13,2023_11_TB_SF
+3,11:05,49ers,Brandon Aiyuk 76 yard pass from Brock Purdy (Jake Moody kick),7,20,2023_11_TB_SF
+3,1:47,49ers,George Kittle 3 yard pass from Brock Purdy (Jake Moody kick),7,27,2023_11_TB_SF
+4,14:16,Buccaneers,Rachaad White 1 yard rush (Chase McLaughlin kick),14,27,2023_11_TB_SF
+1,13:31,Bills,Tyler Bass 48 yard field goal ,0,3,2023_11_NYJ_BUF
+1,5:56,Bills,Tyler Bass 30 yard field goal ,0,6,2023_11_NYJ_BUF
+2,11:26,Bills,Tyler Bass 33 yard field goal ,0,9,2023_11_NYJ_BUF
+2,3:03,Bills,James Cook 5 yard pass from Josh Allen (Tyler Bass kick),0,16,2023_11_NYJ_BUF
+2,0:45,Jets,Breece Hall 9 yard pass from Zach Wilson (pass failed),6,16,2023_11_NYJ_BUF
+3,10:34,Bills,Ty Johnson 28 yard pass from Josh Allen (Tyler Bass kick failed),6,22,2023_11_NYJ_BUF
+3,6:29,Bills,Khalil Shakir 81 yard pass from Josh Allen (Tyler Bass kick),6,29,2023_11_NYJ_BUF
+4,5:16,Bills,Tyler Bass 50 yard field goal ,6,32,2023_11_NYJ_BUF
+1,5:20,Seahawks,D.K. Metcalf 8 yard pass from Geno Smith (Jason Myers kick),7,0,2023_11_SEA_LA
+2,8:26,Seahawks,Jason Myers 54 yard field goal ,10,0,2023_11_SEA_LA
+2,4:48,Seahawks,Jason Myers 43 yard field goal ,13,0,2023_11_SEA_LA
+2,0:09,Rams,Puka Nacua 4 yard pass from Matthew Stafford (Lucas Havrisik kick),13,7,2023_11_SEA_LA
+3,8:03,Seahawks,Jason Myers 52 yard field goal ,16,7,2023_11_SEA_LA
+4,7:38,Rams,Darrell Henderson 1 yard rush (Lucas Havrisik kick),16,14,2023_11_SEA_LA
+4,1:31,Rams,Lucas Havrisik 22 yard field goal ,16,17,2023_11_SEA_LA
+1,10:28,Broncos,Wil Lutz 31 yard field goal ,0,3,2023_11_MIN_DEN
+2,14:53,Vikings,Josh Oliver 3 yard pass from Joshua Dobbs (Greg Joseph kick),7,3,2023_11_MIN_DEN
+2,8:09,Vikings,Greg Joseph 34 yard field goal ,10,3,2023_11_MIN_DEN
+2,4:08,Broncos,Wil Lutz 31 yard field goal ,10,6,2023_11_MIN_DEN
+2,0:00,Broncos,Wil Lutz 52 yard field goal ,10,9,2023_11_MIN_DEN
+3,7:55,Vikings,Joshua Dobbs 10 yard rush (Greg Joseph kick),17,9,2023_11_MIN_DEN
+4,12:40,Broncos,Wil Lutz 37 yard field goal ,17,12,2023_11_MIN_DEN
+4,10:37,Broncos,Wil Lutz 28 yard field goal ,17,15,2023_11_MIN_DEN
+4,3:17,Vikings,Greg Joseph 30 yard field goal ,20,15,2023_11_MIN_DEN
+4,1:03,Broncos,Courtland Sutton 15 yard pass from Russell Wilson (run failed),20,21,2023_11_MIN_DEN
+1,5:34,Chiefs,Justin Watson 3 yard pass from Patrick Mahomes (Harrison Butker kick),0,7,2023_11_PHI_KC
+1,0:31,Eagles,D'Andre Swift 4 yard rush (Jake Elliott kick),7,7,2023_11_PHI_KC
+2,1:45,Chiefs,Travis Kelce 4 yard pass from Patrick Mahomes (Harrison Butker kick),7,14,2023_11_PHI_KC
+2,0:00,Chiefs,Harrison Butker 43 yard field goal ,7,17,2023_11_PHI_KC
+3,4:05,Eagles,Jalen Hurts 10 yard rush (Jake Elliott kick),14,17,2023_11_PHI_KC
+4,6:20,Eagles,Jalen Hurts 1 yard rush (Jake Elliott kick),21,17,2023_11_PHI_KC
+1,12:16,Packers,Jayden Reed 10 yard pass from Jordan Love (Anders Carlson kick),7,0,2023_12_GB_DET
+1,8:30,Lions,Sam LaPorta 7 yard pass from Jared Goff (Riley Patterson kick failed),7,6,2023_12_GB_DET
+1,3:08,Packers,Tucker Kraft 9 yard pass from Jordan Love (Anders Carlson kick),14,6,2023_12_GB_DET
+1,2:12,Packers,Jonathan Owens 27 yard fumble return (Anders Carlson kick failed),20,6,2023_12_GB_DET
+2,5:56,Packers,Anders Carlson 43 yard field goal ,23,6,2023_12_GB_DET
+3,11:46,Lions,David Montgomery 6 yard rush (David Montgomery run),23,14,2023_12_GB_DET
+3,3:30,Packers,Christian Watson 16 yard pass from Jordan Love (pass failed),29,14,2023_12_GB_DET
+4,0:41,Lions,Josh Reynolds 12 yard pass from Jared Goff (Sam LaPorta pass from Jared Goff),29,22,2023_12_GB_DET
+1,0:46,Cowboys,Rico Dowdle 15 yard pass from Dak Prescott (Brandon Aubrey kick),0,7,2023_12_WAS_DAL
+2,11:27,Commanders,Joey Slye 43 yard field goal ,3,7,2023_12_WAS_DAL
+2,8:27,Cowboys,Brandin Cooks 31 yard pass from Dak Prescott (Brandon Aubrey kick),3,14,2023_12_WAS_DAL
+2,1:51,Commanders,Sam Howell 1 yard rush (Joey Slye kick),10,14,2023_12_WAS_DAL
+2,0:26,Cowboys,Tony Pollard 7 yard rush (Brandon Aubrey kick failed),10,20,2023_12_WAS_DAL
+4,13:36,Cowboys,Brandon Aubrey 52 yard field goal ,10,23,2023_12_WAS_DAL
+4,10:32,Cowboys,CeeDee Lamb 15 yard pass from Dak Prescott (CeeDee Lamb pass from Dak Prescott),10,31,2023_12_WAS_DAL
+4,5:59,Cowboys,KaVontae Turpin 34 yard pass from Dak Prescott (Brandon Aubrey kick),10,38,2023_12_WAS_DAL
+4,4:39,Cowboys,DaRon Bland 63 yard interception return (Brandon Aubrey kick),10,45,2023_12_WAS_DAL
+1,10:01,49ers,Deebo Samuel 2 yard rush (Jake Moody kick),7,0,2023_12_SF_SEA
+1,9:07,Seahawks,Jason Myers 51 yard field goal ,7,3,2023_12_SF_SEA
+2,13:11,49ers,Christian McCaffrey 1 yard rush (Jake Moody kick),14,3,2023_12_SF_SEA
+2,5:11,49ers,Christian McCaffrey 8 yard rush (Jake Moody kick),21,3,2023_12_SF_SEA
+2,0:39,49ers,Jake Moody 32 yard field goal ,24,3,2023_12_SF_SEA
+3,11:23,Seahawks,Jordyn Brooks 12 yard interception return (Jason Myers kick),24,10,2023_12_SF_SEA
+3,3:13,Seahawks,Jason Myers 30 yard field goal ,24,13,2023_12_SF_SEA
+4,7:51,49ers,Brandon Aiyuk 28 yard pass from Brock Purdy (Jake Moody kick),31,13,2023_12_SF_SEA
+1,1:26,Dolphins,Jason Sanders 38 yard field goal ,3,0,2023_12_MIA_NYJ
+2,8:18,Dolphins,Tyreek Hill 7 yard pass from Tua Tagovailoa (Jason Sanders kick),10,0,2023_12_MIA_NYJ
+2,0:58,Jets,Brandin Echols 30 yard interception return (Greg Zuerlein kick failed),10,6,2023_12_MIA_NYJ
+2,0:00,Dolphins,Jevon Holland 99 yard interception return (Jason Sanders kick),17,6,2023_12_MIA_NYJ
+3,11:16,Dolphins,Jason Sanders 54 yard field goal ,20,6,2023_12_MIA_NYJ
+4,14:55,Dolphins,Raheem Mostert 13 yard rush (Jason Sanders kick),27,6,2023_12_MIA_NYJ
+4,4:37,Jets,Garrett Wilson 1 yard pass from Tim Boyle (Greg Zuerlein kick),27,13,2023_12_MIA_NYJ
+4,3:35,Dolphins,Raheem Mostert 34 yard rush (Jason Sanders kick),34,13,2023_12_MIA_NYJ
+1,8:10,Saints,Blake Grupe 25 yard field goal ,3,0,2023_12_NO_ATL
+1,1:46,Falcons,Jessie Bates III 92 yard interception return (Younghoe Koo kick),3,7,2023_12_NO_ATL
+2,14:16,Saints,Blake Grupe 52 yard field goal ,6,7,2023_12_NO_ATL
+2,8:56,Falcons,Bijan Robinson 10 yard rush (Younghoe Koo kick),6,14,2023_12_NO_ATL
+2,3:54,Saints,Blake Grupe 41 yard field goal ,9,14,2023_12_NO_ATL
+3,3:27,Saints,Blake Grupe 45 yard field goal ,12,14,2023_12_NO_ATL
+4,9:57,Falcons,Bijan Robinson 26 yard pass from Desmond Ridder (Younghoe Koo kick),12,21,2023_12_NO_ATL
+4,6:24,Saints,Blake Grupe 39 yard field goal ,15,21,2023_12_NO_ATL
+4,1:47,Falcons,Younghoe Koo 39 yard field goal ,15,24,2023_12_NO_ATL
+2,12:39,Steelers,Chris Boswell 41 yard field goal ,3,0,2023_12_PIT_CIN
+2,10:40,Bengals,Drew Sample 11 yard pass from Jake Browning (Evan McPherson kick),3,7,2023_12_PIT_CIN
+3,1:34,Steelers,Najee Harris 5 yard rush (Chris Boswell kick),10,7,2023_12_PIT_CIN
+4,8:03,Steelers,Chris Boswell 34 yard field goal ,13,7,2023_12_PIT_CIN
+4,2:51,Steelers,Chris Boswell 33 yard field goal ,16,7,2023_12_PIT_CIN
+4,2:04,Bengals,Evan McPherson 47 yard field goal ,16,10,2023_12_PIT_CIN
+1,5:54,Jaguars,Brandon McManus 40 yard field goal ,3,0,2023_12_JAX_HOU
+2,9:43,Jaguars,Trevor Lawrence 1 yard rush (Brandon McManus kick),10,0,2023_12_JAX_HOU
+2,6:37,Texans,Tank Dell 7 yard pass from C.J. Stroud (Matt Ammendola kick),10,7,2023_12_JAX_HOU
+2,2:24,Jaguars,Brandon McManus 48 yard field goal ,13,7,2023_12_JAX_HOU
+3,8:10,Texans,C.J. Stroud 1 yard rush (Matt Ammendola kick),13,14,2023_12_JAX_HOU
+3,4:29,Jaguars,Calvin Ridley 1 yard pass from Trevor Lawrence (Calvin Ridley pass from Trevor Lawrence),21,14,2023_12_JAX_HOU
+4,11:20,Jaguars,Brandon McManus 53 yard field goal ,24,14,2023_12_JAX_HOU
+4,5:15,Texans,Nico Collins 17 yard pass from C.J. Stroud (Matt Ammendola kick),24,21,2023_12_JAX_HOU
+1,7:28,Buccaneers,Chase McLaughlin 21 yard field goal ,3,0,2023_12_TB_IND
+1,3:01,Colts,Matt Gay 46 yard field goal ,3,3,2023_12_TB_IND
+1,0:11,Colts,Jonathan Taylor 4 yard rush (Matt Gay kick),3,10,2023_12_TB_IND
+2,9:36,Colts,Gardner Minshew II 2 yard rush (Matt Gay kick),3,17,2023_12_TB_IND
+2,5:08,Buccaneers,Mike Evans 1 yard pass from Baker Mayfield (Chase McLaughlin kick),10,17,2023_12_TB_IND
+3,10:01,Colts,Matt Gay 36 yard field goal ,10,20,2023_12_TB_IND
+4,12:50,Buccaneers,Mike Evans 23 yard pass from Baker Mayfield (Chase McLaughlin kick),17,20,2023_12_TB_IND
+4,7:30,Colts,Jonathan Taylor 1 yard rush (Matt Gay kick),17,27,2023_12_TB_IND
+4,4:10,Buccaneers,Chase McLaughlin 24 yard field goal ,20,27,2023_12_TB_IND
+2,1:53,Giants,Isaiah Hodgins 12 yard pass from Tommy DeVito (Randy Bullock kick),0,7,2023_12_NE_NYG
+3,8:02,Patriots,Rhamondre Stevenson 7 yard rush (Chad Ryland kick),7,7,2023_12_NE_NYG
+4,8:10,Giants,Randy Bullock 42 yard field goal ,7,10,2023_12_NE_NYG
+1,0:34,Titans,Derrick Henry 1 yard rush (Nick Folk kick),0,7,2023_12_CAR_TEN
+2,8:51,Panthers,Eddy Pineiro 50 yard field goal ,3,7,2023_12_CAR_TEN
+2,2:27,Titans,Derrick Henry 10 yard rush (Nick Folk kick),3,14,2023_12_CAR_TEN
+2,0:00,Titans,Nick Folk 53 yard field goal ,3,17,2023_12_CAR_TEN
+3,8:06,Panthers,Chuba Hubbard 5 yard rush (Eddy Pineiro kick),10,17,2023_12_CAR_TEN
+1,11:18,Rams,Tyler Higbee 7 yard pass from Matthew Stafford (Lucas Havrisik kick),7,0,2023_12_LA_ARI
+1,4:50,Cardinals,Kyler Murray 2 yard rush (Clayton Tune run),7,8,2023_12_LA_ARI
+2,9:57,Rams,Tyler Higbee 5 yard pass from Matthew Stafford (Lucas Havrisik kick),14,8,2023_12_LA_ARI
+2,0:59,Rams,Kyren Williams 15 yard pass from Matthew Stafford (Lucas Havrisik kick),21,8,2023_12_LA_ARI
+3,7:33,Rams,Lucas Havrisik 24 yard field goal ,24,8,2023_12_LA_ARI
+4,12:41,Rams,Kyren Williams 3 yard pass from Matthew Stafford (Lucas Havrisik kick),31,8,2023_12_LA_ARI
+4,8:19,Rams,Royce Freeman 23 yard rush (Lucas Havrisik kick failed),37,8,2023_12_LA_ARI
+4,5:12,Cardinals,Greg Dortch 6 yard pass from Kyler Murray (pass failed),37,14,2023_12_LA_ARI
+1,8:14,Broncos,Samaje Perine 3 yard rush (Wil Lutz kick),0,7,2023_12_CLE_DEN
+2,11:11,Broncos,Russell Wilson 2 yard rush (Wil Lutz kick),0,14,2023_12_CLE_DEN
+2,5:59,Browns,Dustin Hopkins 36 yard field goal ,3,14,2023_12_CLE_DEN
+2,0:22,Browns,Dustin Hopkins 24 yard field goal ,6,14,2023_12_CLE_DEN
+3,6:42,Browns,Harrison Bryant 2 yard pass from Dorian Thompson-Robinson (pass failed),12,14,2023_12_CLE_DEN
+3,1:25,Broncos,Wil Lutz 23 yard field goal ,12,17,2023_12_CLE_DEN
+4,13:29,Broncos,Adam Trautman 8 yard pass from Russell Wilson (Wil Lutz kick),12,24,2023_12_CLE_DEN
+4,4:19,Broncos,Wil Lutz 34 yard field goal ,12,27,2023_12_CLE_DEN
+4,2:19,Broncos,"Safety, P.J. Walker sacked in end zone by ",12,29,2023_12_CLE_DEN
+1,9:32,Raiders,Jakobi Meyers 18 yard pass from Aidan O'Connell (Daniel Carlson kick),0,7,2023_12_KC_LV
+2,12:41,Raiders,Josh Jacobs 63 yard rush (Daniel Carlson kick),0,14,2023_12_KC_LV
+2,6:38,Chiefs,Isiah Pacheco 1 yard rush (Harrison Butker kick),7,14,2023_12_KC_LV
+2,0:25,Chiefs,Justin Watson 3 yard pass from Patrick Mahomes (Harrison Butker kick),14,14,2023_12_KC_LV
+3,9:15,Chiefs,Isiah Pacheco 1 yard rush (Harrison Butker kick),21,14,2023_12_KC_LV
+3,2:09,Raiders,Daniel Carlson 34 yard field goal ,21,17,2023_12_KC_LV
+4,13:40,Chiefs,Rashee Rice 39 yard pass from Patrick Mahomes (Harrison Butker kick),28,17,2023_12_KC_LV
+4,3:11,Chiefs,Harrison Butker 32 yard field goal ,31,17,2023_12_KC_LV
+1,1:06,Eagles,Jalen Hurts 1 yard rush (Jake Elliott kick),0,7,2023_12_BUF_PHI
+2,11:23,Bills,Tyler Bass 48 yard field goal ,3,7,2023_12_BUF_PHI
+2,8:34,Bills,Josh Allen 9 yard rush (Tyler Bass kick),10,7,2023_12_BUF_PHI
+2,0:12,Bills,Stefon Diggs 13 yard pass from Josh Allen (Tyler Bass kick),17,7,2023_12_BUF_PHI
+3,7:13,Eagles,A.J. Brown 3 yard pass from Jalen Hurts (Jake Elliott kick),17,14,2023_12_BUF_PHI
+3,1:40,Bills,Josh Allen 16 yard rush (Tyler Bass kick),24,14,2023_12_BUF_PHI
+4,13:37,Eagles,DeVonta Smith 15 yard pass from Jalen Hurts (Jake Elliott kick),24,21,2023_12_BUF_PHI
+4,11:07,Eagles,Olamide Zaccheaus 29 yard pass from Jalen Hurts (Jake Elliott kick),24,28,2023_12_BUF_PHI
+4,1:52,Bills,Gabriel Davis 7 yard pass from Josh Allen (Tyler Bass kick),31,28,2023_12_BUF_PHI
+4,0:20,Eagles,Jake Elliott 59 yard field goal ,31,31,2023_12_BUF_PHI
+OT,5:52,Bills,Tyler Bass 40 yard field goal ,34,31,2023_12_BUF_PHI
+OT,2:37,Eagles,Jalen Hurts 12 yard rush ,34,37,2023_12_BUF_PHI
+1,9:03,Chargers,Cameron Dicker 39 yard field goal ,0,3,2023_12_BAL_LAC
+2,10:41,Ravens,Zay Flowers 3 yard pass from Lamar Jackson (Justin Tucker kick),7,3,2023_12_BAL_LAC
+2,1:12,Ravens,Justin Tucker 42 yard field goal ,10,3,2023_12_BAL_LAC
+3,10:53,Ravens,Justin Tucker 48 yard field goal ,13,3,2023_12_BAL_LAC
+4,8:32,Chargers,Gerald Everett 3 yard pass from Justin Herbert (Cameron Dicker kick),13,10,2023_12_BAL_LAC
+4,1:36,Ravens,Zay Flowers 37 yard rush (Justin Tucker kick),20,10,2023_12_BAL_LAC
+2,13:35,Bears,Cairo Santos 25 yard field goal ,3,0,2023_12_CHI_MIN
+2,0:00,Vikings,Greg Joseph 34 yard field goal ,3,3,2023_12_CHI_MIN
+3,6:59,Bears,Cairo Santos 39 yard field goal ,6,3,2023_12_CHI_MIN
+4,14:15,Bears,Cairo Santos 55 yard field goal ,9,3,2023_12_CHI_MIN
+4,5:54,Vikings,T.J. Hockenson 17 yard pass from Joshua Dobbs (Greg Joseph kick),9,10,2023_12_CHI_MIN
+4,0:10,Bears,Cairo Santos 30 yard field goal ,12,10,2023_12_CHI_MIN
+1,9:10,Cowboys,Brandon Aubrey 30 yard field goal ,0,3,2023_13_SEA_DAL
+1,7:38,Seahawks,D.K. Metcalf 73 yard pass from Geno Smith (Jason Myers kick),7,3,2023_13_SEA_DAL
+1,4:53,Cowboys,CeeDee Lamb 15 yard pass from Dak Prescott (Brandon Aubrey kick),7,10,2023_13_SEA_DAL
+2,11:37,Cowboys,Brandin Cooks 7 yard pass from Dak Prescott (Brandon Aubrey kick),7,17,2023_13_SEA_DAL
+2,8:54,Seahawks,Zach Charbonnet 1 yard rush (Jason Myers kick),14,17,2023_13_SEA_DAL
+2,1:30,Cowboys,Brandon Aubrey 31 yard field goal ,14,20,2023_13_SEA_DAL
+2,0:04,Seahawks,D.K. Metcalf 1 yard pass from Geno Smith (Jason Myers kick),21,20,2023_13_SEA_DAL
+3,10:01,Seahawks,Geno Smith 5 yard rush (Jason Myers kick),28,20,2023_13_SEA_DAL
+3,3:41,Cowboys,Tony Pollard 6 yard rush (Brandon Aubrey kick),28,27,2023_13_SEA_DAL
+4,14:17,Seahawks,D.K. Metcalf 3 yard pass from Geno Smith (Jason Myers kick),35,27,2023_13_SEA_DAL
+4,11:23,Cowboys,Brandon Aubrey 38 yard field goal ,35,30,2023_13_SEA_DAL
+4,4:37,Cowboys,Jake Ferguson 12 yard pass from Dak Prescott (Brandin Cooks pass from Dak Prescott),35,38,2023_13_SEA_DAL
+4,1:43,Cowboys,Brandon Aubrey 32 yard field goal ,35,41,2023_13_SEA_DAL
+1,10:11,Texans,Matt Ammendola 29 yard field goal ,0,3,2023_13_DEN_HOU
+1,3:49,Texans,Dameon Pierce 3 yard rush (Matt Ammendola kick),0,10,2023_13_DEN_HOU
+2,12:54,Texans,Matt Ammendola 38 yard field goal ,0,13,2023_13_DEN_HOU
+2,1:24,Broncos,Wil Lutz 34 yard field goal ,3,13,2023_13_DEN_HOU
+3,8:51,Texans,Matt Ammendola 38 yard field goal ,3,16,2023_13_DEN_HOU
+3,4:47,Broncos,Courtland Sutton 45 yard pass from Russell Wilson (Wil Lutz kick),10,16,2023_13_DEN_HOU
+4,14:16,Texans,Nico Collins 3 yard pass from C.J. Stroud (pass failed),10,22,2023_13_DEN_HOU
+4,12:04,Broncos,Russell Wilson 1 yard rush (Wil Lutz kick),17,22,2023_13_DEN_HOU
+2,9:09,Chargers,Cameron Dicker 38 yard field goal ,3,0,2023_13_LAC_NE
+2,0:44,Chargers,Cameron Dicker 38 yard field goal ,6,0,2023_13_LAC_NE
+1,11:15,Lions,David Montgomery 2 yard rush (Riley Patterson kick),7,0,2023_13_DET_NO
+1,10:24,Lions,Sam LaPorta 13 yard pass from Jared Goff (Riley Patterson kick),14,0,2023_13_DET_NO
+1,8:15,Lions,Amon-Ra St. Brown 25 yard pass from Jared Goff (Riley Patterson kick),21,0,2023_13_DET_NO
+2,9:08,Saints,Jimmy Graham 6 yard pass from Derek Carr (Blake Grupe kick),21,7,2023_13_DET_NO
+2,0:08,Lions,Riley Patterson 26 yard field goal ,24,7,2023_13_DET_NO
+3,10:04,Saints,Alvin Kamara 2 yard rush (Blake Grupe kick),24,14,2023_13_DET_NO
+3,4:34,Saints,Taysom Hill 1 yard rush (Blake Grupe kick),24,21,2023_13_DET_NO
+3,0:00,Lions,Riley Patterson 32 yard field goal ,27,21,2023_13_DET_NO
+4,14:07,Lions,Jameson Williams 19 yard rush (pass failed),33,21,2023_13_DET_NO
+4,7:30,Saints,Alvin Kamara 1 yard rush (Blake Grupe kick),33,28,2023_13_DET_NO
+1,1:36,Jets,"Safety, Bijan Robinson tackled in end zone by Ashtyn Davis and Quinnen Williams ",0,2,2023_13_ATL_NYJ
+2,10:04,Falcons,MyCole Pruitt 20 yard pass from Desmond Ridder (Younghoe Koo kick),7,2,2023_13_ATL_NYJ
+2,3:56,Jets,Greg Zuerlein 27 yard field goal ,7,5,2023_13_ATL_NYJ
+2,0:00,Falcons,Younghoe Koo 22 yard field goal ,10,5,2023_13_ATL_NYJ
+3,10:32,Jets,Greg Zuerlein 46 yard field goal ,10,8,2023_13_ATL_NYJ
+3,3:38,Falcons,Younghoe Koo 42 yard field goal ,13,8,2023_13_ATL_NYJ
+1,12:01,Steelers,Chris Boswell 29 yard field goal ,0,3,2023_13_ARI_PIT
+1,5:44,Cardinals,Matt Prater 51 yard field goal ,3,3,2023_13_ARI_PIT
+2,0:15,Cardinals,Trey McBride 5 yard pass from Kyler Murray (Matt Prater kick),10,3,2023_13_ARI_PIT
+3,7:18,Cardinals,James Conner 1 yard rush (Matt Prater kick),17,3,2023_13_ARI_PIT
+4,8:28,Cardinals,James Conner 9 yard rush (Matt Prater kick),24,3,2023_13_ARI_PIT
+4,4:25,Steelers,Diontae Johnson 2 yard pass from Mitchell Trubisky (Chris Boswell kick),24,10,2023_13_ARI_PIT
+1,13:20,Titans,Derrick Henry 22 yard rush (Nick Folk kick),0,7,2023_13_IND_TEN
+1,12:05,Colts,Alec Pierce 36 yard pass from Gardner Minshew II (Matt Gay kick),7,7,2023_13_IND_TEN
+1,0:13,Titans,Nick Folk 24 yard field goal ,7,10,2023_13_IND_TEN
+2,10:22,Titans,Derrick Henry 5 yard rush (Nick Folk kick),7,17,2023_13_IND_TEN
+2,7:39,Colts,Matt Gay 23 yard field goal ,10,17,2023_13_IND_TEN
+2,0:04,Colts,Matt Gay 46 yard field goal ,13,17,2023_13_IND_TEN
+3,4:57,Colts,Matt Gay 23 yard field goal ,16,17,2023_13_IND_TEN
+3,0:19,Colts,Grant Stuard 18 yard blocked punt return (pass failed),22,17,2023_13_IND_TEN
+3,0:19,Titans,Amani Hooker defensive extra point return ,22,19,2023_13_IND_TEN
+4,11:34,Colts,Matt Gay 28 yard field goal ,25,19,2023_13_IND_TEN
+4,5:26,Titans,DeAndre Hopkins 3 yard pass from Will Levis (Nick Folk kick failed),25,25,2023_13_IND_TEN
+OT,4:19,Titans,Nick Folk 46 yard field goal ,25,28,2023_13_IND_TEN
+OT,2:31,Colts,Michael Pittman Jr. 4 yard pass from Gardner Minshew II ,31,28,2023_13_IND_TEN
+1,9:40,Dolphins,Tyreek Hill 78 yard pass from Tua Tagovailoa (Jason Sanders kick),7,0,2023_13_MIA_WAS
+1,3:39,Dolphins,Jason Sanders 49 yard field goal ,10,0,2023_13_MIA_WAS
+1,0:55,Dolphins,Andrew Van Ginkel 33 yard interception return (Jason Sanders kick),17,0,2023_13_MIA_WAS
+2,11:18,Commanders,Sam Howell 1 yard rush (Joey Slye kick),17,7,2023_13_MIA_WAS
+2,9:23,Dolphins,Tyreek Hill 60 yard pass from Tua Tagovailoa (Jason Sanders kick),24,7,2023_13_MIA_WAS
+2,0:20,Dolphins,Raheem Mostert 1 yard rush (Jason Sanders kick),31,7,2023_13_MIA_WAS
+3,9:36,Dolphins,De'Von Achane 4 yard rush (Jason Sanders kick),38,7,2023_13_MIA_WAS
+3,4:31,Commanders,Sam Howell 13 yard rush (Logan Thomas pass from Sam Howell),38,15,2023_13_MIA_WAS
+4,1:57,Dolphins,De'Von Achane 2 yard rush (Jason Sanders kick),45,15,2023_13_MIA_WAS
+1,6:08,Buccaneers,Rachaad White 1 yard rush (Chase McLaughlin kick),0,7,2023_13_CAR_TB
+2,13:30,Panthers,Eddy Pineiro 23 yard field goal ,3,7,2023_13_CAR_TB
+3,5:04,Panthers,Chuba Hubbard 1 yard rush (Eddy Pineiro kick),10,7,2023_13_CAR_TB
+3,4:54,Buccaneers,Mike Evans 75 yard pass from Baker Mayfield (Chase McLaughlin kick),10,14,2023_13_CAR_TB
+4,11:36,Buccaneers,Chris Godwin 19 yard rush (Chase McLaughlin kick),10,21,2023_13_CAR_TB
+4,5:02,Panthers,Chuba Hubbard 1 yard rush (Bryce Young run),18,21,2023_13_CAR_TB
+1,10:18,Browns,Jerome Ford 24 yard pass from Joe Flacco (Dustin Hopkins kick),7,0,2023_13_CLE_LA
+1,6:28,Rams,Lucas Havrisik 44 yard field goal ,7,3,2023_13_CLE_LA
+1,3:59,Rams,Puka Nacua 70 yard pass from Matthew Stafford (Lucas Havrisik kick),7,10,2023_13_CLE_LA
+2,2:06,Browns,Dustin Hopkins 40 yard field goal ,10,10,2023_13_CLE_LA
+2,0:00,Rams,Lucas Havrisik 28 yard field goal ,10,13,2023_13_CLE_LA
+3,4:58,Browns,Dustin Hopkins 24 yard field goal ,13,13,2023_13_CLE_LA
+3,0:39,Rams,Demarcus Robinson 7 yard pass from Matthew Stafford (Lucas Havrisik kick),13,20,2023_13_CLE_LA
+4,8:49,Browns,Harrison Bryant 8 yard pass from Joe Flacco (Dustin Hopkins kick failed),19,20,2023_13_CLE_LA
+4,3:48,Rams,Cooper Kupp 3 yard pass from Matthew Stafford (Lucas Havrisik kick),19,27,2023_13_CLE_LA
+4,1:56,Rams,Kyren Williams 1 yard rush (Lucas Havrisik kick),19,34,2023_13_CLE_LA
+4,0:36,Rams,"Safety, Joe Flacco sacked in end zone by ",19,36,2023_13_CLE_LA
+1,9:51,Eagles,Jake Elliott 26 yard field goal ,0,3,2023_13_SF_PHI
+1,2:01,Eagles,Jake Elliott 39 yard field goal ,0,6,2023_13_SF_PHI
+2,7:10,49ers,Brandon Aiyuk 2 yard pass from Brock Purdy (Jake Moody kick),7,6,2023_13_SF_PHI
+2,0:38,49ers,Christian McCaffrey 2 yard rush (Jake Moody kick),14,6,2023_13_SF_PHI
+3,11:49,49ers,Deebo Samuel 12 yard rush (Jake Moody kick),21,6,2023_13_SF_PHI
+3,6:51,Eagles,Jalen Hurts 1 yard rush (Jake Elliott kick),21,13,2023_13_SF_PHI
+3,3:54,49ers,Deebo Samuel 48 yard pass from Brock Purdy (Jake Moody kick),28,13,2023_13_SF_PHI
+4,10:43,49ers,Jauan Jennings 18 yard pass from Brock Purdy (Jake Moody kick),35,13,2023_13_SF_PHI
+4,5:33,Eagles,DeVonta Smith 2 yard pass from Jalen Hurts (pass failed),35,19,2023_13_SF_PHI
+4,5:19,49ers,Deebo Samuel 46 yard pass from Brock Purdy (Jake Moody kick),42,19,2023_13_SF_PHI
+1,7:13,Packers,Ben Sims 1 yard pass from Jordan Love (Anders Carlson kick),0,7,2023_13_KC_GB
+1,0:00,Chiefs,Harrison Butker 34 yard field goal ,3,7,2023_13_KC_GB
+2,10:39,Packers,Christian Watson 9 yard pass from Jordan Love (Anders Carlson kick),3,14,2023_13_KC_GB
+2,2:19,Chiefs,Harrison Butker 34 yard field goal ,6,14,2023_13_KC_GB
+3,9:39,Chiefs,Isiah Pacheco 1 yard rush (run failed),12,14,2023_13_KC_GB
+3,5:23,Packers,Christian Watson 12 yard pass from Jordan Love (Anders Carlson kick),12,21,2023_13_KC_GB
+4,14:51,Chiefs,Noah Gray 2 yard pass from Patrick Mahomes (Harrison Butker kick),19,21,2023_13_KC_GB
+4,6:03,Packers,Anders Carlson 40 yard field goal ,19,24,2023_13_KC_GB
+4,1:09,Packers,Anders Carlson 48 yard field goal ,19,27,2023_13_KC_GB
+1,6:51,Jaguars,Travis Etienne 4 yard rush (Brandon McManus kick),0,7,2023_13_CIN_JAX
+2,12:24,Bengals,Joe Mixon 6 yard rush (Evan McPherson kick),7,7,2023_13_CIN_JAX
+2,6:24,Jaguars,Evan Engram 22 yard pass from Trevor Lawrence (Brandon McManus kick),7,14,2023_13_CIN_JAX
+2,1:04,Bengals,Joe Mixon 2 yard rush (Evan McPherson kick),14,14,2023_13_CIN_JAX
+3,11:50,Bengals,Ja'Marr Chase 76 yard pass from Jake Browning (Evan McPherson kick),21,14,2023_13_CIN_JAX
+3,5:26,Jaguars,Parker Washington 14 yard pass from Trevor Lawrence (Brandon McManus kick),21,21,2023_13_CIN_JAX
+3,3:10,Jaguars,Trevor Lawrence 1 yard rush (Brandon McManus kick),21,28,2023_13_CIN_JAX
+4,9:27,Bengals,Jake Browning 1 yard rush (Evan McPherson kick),28,28,2023_13_CIN_JAX
+4,2:28,Bengals,Evan McPherson 54 yard field goal ,31,28,2023_13_CIN_JAX
+4,0:26,Jaguars,Brandon McManus 40 yard field goal ,31,31,2023_13_CIN_JAX
+OT,1:45,Bengals,Evan McPherson 48 yard field goal ,34,31,2023_13_CIN_JAX
+1,11:12,Patriots,Ezekiel Elliott 11 yard pass from Bailey Zappe (Chad Ryland kick),7,0,2023_14_NE_PIT
+1,6:39,Steelers,Chris Boswell 56 yard field goal ,7,3,2023_14_NE_PIT
+2,14:14,Patriots,Hunter Henry 8 yard pass from Bailey Zappe (Chad Ryland kick),14,3,2023_14_NE_PIT
+2,7:38,Patriots,Hunter Henry 24 yard pass from Bailey Zappe (Chad Ryland kick),21,3,2023_14_NE_PIT
+2,2:50,Steelers,Diontae Johnson 25 yard pass from Mitchell Trubisky (Chris Boswell kick),21,10,2023_14_NE_PIT
+4,11:44,Steelers,Mitchell Trubisky 1 yard rush (Pat Freiermuth pass from Mitchell Trubisky),21,18,2023_14_NE_PIT
+1,9:27,Buccaneers,Chase McLaughlin 55 yard field goal ,3,0,2023_14_TB_ATL
+1,1:23,Falcons,Younghoe Koo 20 yard field goal ,3,3,2023_14_TB_ATL
+2,14:57,Buccaneers,Baker Mayfield 1 yard rush (Chase McLaughlin kick),10,3,2023_14_TB_ATL
+2,12:09,Falcons,Kyle Pitts 36 yard pass from Desmond Ridder (Younghoe Koo kick),10,10,2023_14_TB_ATL
+2,2:36,Buccaneers,"Safety, Desmond Ridder sacked in end zone by Antoine Winfield Jr. by Pat O'Connor ",12,10,2023_14_TB_ATL
+3,4:06,Buccaneers,Rachaad White 31 yard pass from Baker Mayfield (Chase McLaughlin kick),19,10,2023_14_TB_ATL
+4,11:10,Falcons,Bijan Robinson 3 yard rush (Younghoe Koo kick),19,17,2023_14_TB_ATL
+4,6:10,Buccaneers,Chase McLaughlin 38 yard field goal ,22,17,2023_14_TB_ATL
+4,3:23,Falcons,Desmond Ridder 6 yard rush (Drake London pass from Desmond Ridder),22,25,2023_14_TB_ATL
+4,0:31,Buccaneers,Cade Otton 11 yard pass from Baker Mayfield (Chase McLaughlin kick),29,25,2023_14_TB_ATL
+1,5:35,Rams,Lucas Havrisik 27 yard field goal ,3,0,2023_14_LA_BAL
+1,0:25,Ravens,Isaiah Likely 54 yard pass from Lamar Jackson (Justin Tucker kick),3,7,2023_14_LA_BAL
+2,12:01,Rams,Cooper Kupp 6 yard pass from Matthew Stafford (Lucas Havrisik kick),10,7,2023_14_LA_BAL
+2,9:40,Ravens,Odell Beckham Jr. 46 yard pass from Lamar Jackson (Justin Tucker kick),10,14,2023_14_LA_BAL
+2,5:00,Rams,Davis Allen 7 yard pass from Matthew Stafford (Lucas Havrisik kick),17,14,2023_14_LA_BAL
+2,1:45,Rams,Lucas Havrisik 51 yard field goal ,20,14,2023_14_LA_BAL
+2,0:09,Ravens,Justin Tucker 31 yard field goal ,20,17,2023_14_LA_BAL
+3,10:02,Ravens,Justin Tucker 47 yard field goal ,20,20,2023_14_LA_BAL
+3,5:54,Rams,"Safety, fumble out of bounds in end zone ",22,20,2023_14_LA_BAL
+4,11:17,Ravens,Justin Tucker 33 yard field goal ,22,23,2023_14_LA_BAL
+4,4:41,Rams,Demarcus Robinson 5 yard pass from Matthew Stafford (pass failed),28,23,2023_14_LA_BAL
+4,1:16,Ravens,Zay Flowers 21 yard pass from Lamar Jackson (Zay Flowers pass from Lamar Jackson),28,31,2023_14_LA_BAL
+4,0:07,Rams,Lucas Havrisik 36 yard field goal ,31,31,2023_14_LA_BAL
+OT,7:42,Ravens,Tylan Wallace 76 yard punt return ,31,37,2023_14_LA_BAL
+1,10:17,Bears,D.J. Moore 16 yard rush (Cairo Santos kick),0,7,2023_14_DET_CHI
+1,1:22,Bears,Cairo Santos 46 yard field goal ,0,10,2023_14_DET_CHI
+2,6:59,Lions,Jahmyr Gibbs 12 yard rush (Riley Patterson kick failed),6,10,2023_14_DET_CHI
+2,0:26,Lions,Josh Reynolds 8 yard pass from Jared Goff (Riley Patterson kick),13,10,2023_14_DET_CHI
+3,8:38,Bears,Cairo Santos 25 yard field goal ,13,13,2023_14_DET_CHI
+3,1:36,Bears,D.J. Moore 38 yard pass from Justin Fields (Cairo Santos kick failed),13,19,2023_14_DET_CHI
+4,14:12,Bears,Justin Fields 11 yard rush (pass failed),13,25,2023_14_DET_CHI
+4,9:20,Bears,Cairo Santos 28 yard field goal ,13,28,2023_14_DET_CHI
+1,6:31,Bengals,Chase Brown 54 yard pass from Jake Browning (Evan McPherson kick),0,7,2023_14_IND_CIN
+2,10:18,Bengals,Joe Mixon 1 yard rush (Evan McPherson kick),0,14,2023_14_IND_CIN
+2,1:56,Colts,Mo Alie-Cox 2 yard pass from Gardner Minshew II (Matt Gay kick failed),6,14,2023_14_IND_CIN
+2,1:31,Colts,Ronnie Harrison 36 yard interception return (Michael Pittman Jr. pass from Gardner Minshew II),14,14,2023_14_IND_CIN
+3,11:38,Bengals,Tanner Hudson 11 yard pass from Jake Browning (Evan McPherson kick),14,21,2023_14_IND_CIN
+3,2:59,Bengals,Jake Browning 1 yard rush (Evan McPherson kick),14,28,2023_14_IND_CIN
+4,11:14,Bengals,Evan McPherson 32 yard field goal ,14,31,2023_14_IND_CIN
+4,1:55,Bengals,Evan McPherson 35 yard field goal ,14,34,2023_14_IND_CIN
+1,11:39,Browns,David Njoku 34 yard pass from Joe Flacco (Dustin Hopkins kick),0,7,2023_14_JAX_CLE
+2,13:40,Browns,David Njoku 30 yard pass from Joe Flacco (Dustin Hopkins kick),0,14,2023_14_JAX_CLE
+2,6:14,Jaguars,Evan Engram 10 yard pass from Trevor Lawrence (Brandon McManus kick),7,14,2023_14_JAX_CLE
+3,9:39,Browns,Kareem Hunt 4 yard rush (Dustin Hopkins kick),7,21,2023_14_JAX_CLE
+3,4:59,Jaguars,Travis Etienne 1 yard rush (Brandon McManus kick),14,21,2023_14_JAX_CLE
+4,12:34,Browns,David Bell 41 yard pass from Joe Flacco (Dustin Hopkins kick),14,28,2023_14_JAX_CLE
+4,8:52,Jaguars,Parker Washington 19 yard pass from Trevor Lawrence (Brandon McManus kick),21,28,2023_14_JAX_CLE
+4,3:10,Browns,Dustin Hopkins 55 yard field goal ,21,31,2023_14_JAX_CLE
+4,1:33,Jaguars,Evan Engram 2 yard pass from Trevor Lawrence (pass failed),27,31,2023_14_JAX_CLE
+2,14:55,Saints,Alvin Kamara 9 yard rush (Blake Grupe kick),0,7,2023_14_CAR_NO
+2,9:16,Panthers,Eddy Pineiro 47 yard field goal ,3,7,2023_14_CAR_NO
+2,4:37,Saints,D'Marco Jackson 8 yard fumble return (Blake Grupe kick),3,14,2023_14_CAR_NO
+3,4:57,Panthers,Eddy Pineiro 29 yard field goal ,6,14,2023_14_CAR_NO
+4,5:59,Saints,Chris Olave 7 yard pass from Derek Carr (Blake Grupe kick),6,21,2023_14_CAR_NO
+4,4:29,Saints,Jimmy Graham 4 yard pass from Derek Carr (Blake Grupe kick),6,28,2023_14_CAR_NO
+3,11:05,Jets,Randall Cobb 15 yard pass from Zach Wilson (Greg Zuerlein kick),0,7,2023_14_HOU_NYJ
+3,4:31,Jets,Xavier Gipson 9 yard rush (Greg Zuerlein kick),0,14,2023_14_HOU_NYJ
+3,0:00,Texans,Devin Singletary 1 yard rush (Matt Ammendola kick failed),6,14,2023_14_HOU_NYJ
+4,9:27,Jets,Breece Hall 3 yard pass from Zach Wilson (Greg Zuerlein kick),6,21,2023_14_HOU_NYJ
+4,6:51,Jets,Greg Zuerlein 51 yard field goal ,6,24,2023_14_HOU_NYJ
+4,4:30,Jets,Greg Zuerlein 55 yard field goal ,6,27,2023_14_HOU_NYJ
+4,1:08,Jets,Greg Zuerlein 44 yard field goal ,6,30,2023_14_HOU_NYJ
+4,1:57,Vikings,Greg Joseph 36 yard field goal ,3,0,2023_14_MIN_LV
+1,14:03,49ers,Jordan Mason 3 yard rush (Jake Moody kick),0,7,2023_14_SEA_SF
+1,9:44,Seahawks,D.K. Metcalf 31 yard pass from Drew Lock (Jason Myers kick),7,7,2023_14_SEA_SF
+1,0:56,Seahawks,Jason Myers 40 yard field goal ,10,7,2023_14_SEA_SF
+2,8:18,49ers,Deebo Samuel 54 yard pass from Brock Purdy (Jake Moody kick),10,14,2023_14_SEA_SF
+3,1:58,49ers,Deebo Samuel 1 yard rush (Jake Moody kick),10,21,2023_14_SEA_SF
+3,0:24,Seahawks,Colby Parkinson 25 yard pass from Drew Lock (pass failed),16,21,2023_14_SEA_SF
+4,14:08,49ers,George Kittle 44 yard pass from Brock Purdy (Jake Moody kick),16,28,2023_14_SEA_SF
+1,3:43,Bills,James Cook 25 yard pass from Josh Allen (Tyler Bass kick),7,0,2023_14_BUF_KC
+2,11:50,Bills,Josh Allen 6 yard rush (Tyler Bass kick),14,0,2023_14_BUF_KC
+2,1:19,Chiefs,Jerick McKinnon 7 yard rush (Harrison Butker kick),14,7,2023_14_BUF_KC
+3,8:38,Bills,Tyler Bass 31 yard field goal ,17,7,2023_14_BUF_KC
+3,3:35,Chiefs,Rashee Rice 4 yard pass from Patrick Mahomes (Harrison Butker kick),17,14,2023_14_BUF_KC
+4,11:31,Chiefs,Harrison Butker 27 yard field goal ,17,17,2023_14_BUF_KC
+4,1:54,Bills,Tyler Bass 39 yard field goal ,20,17,2023_14_BUF_KC
+1,4:55,Broncos,Javonte Williams 3 yard rush (Wil Lutz kick),7,0,2023_14_DEN_LAC
+2,0:05,Broncos,Wil Lutz 23 yard field goal ,10,0,2023_14_DEN_LAC
+3,5:55,Broncos,Courtland Sutton 46 yard pass from Russell Wilson (Wil Lutz kick),17,0,2023_14_DEN_LAC
+4,10:37,Chargers,Austin Ekeler 3 yard rush (Cameron Dicker kick),17,7,2023_14_DEN_LAC
+4,3:11,Broncos,Adam Trautman 10 yard pass from Russell Wilson (Wil Lutz kick),24,7,2023_14_DEN_LAC
+1,10:00,Cowboys,CeeDee Lamb 13 yard pass from Dak Prescott (Brandon Aubrey kick),0,7,2023_14_PHI_DAL
+1,0:50,Cowboys,Brandon Aubrey 60 yard field goal ,0,10,2023_14_PHI_DAL
+2,12:34,Eagles,Jake Elliott 52 yard field goal ,3,10,2023_14_PHI_DAL
+2,5:47,Cowboys,Rico Dowdle 1 yard rush (Brandon Aubrey kick),3,17,2023_14_PHI_DAL
+2,1:48,Eagles,Jake Elliott 44 yard field goal ,6,17,2023_14_PHI_DAL
+2,0:20,Cowboys,Michael Gallup 1 yard pass from Dak Prescott (Brandon Aubrey kick),6,24,2023_14_PHI_DAL
+3,10:41,Eagles,Jalen Carter 42 yard fumble return (Jake Elliott kick),13,24,2023_14_PHI_DAL
+3,4:49,Cowboys,Brandon Aubrey 59 yard field goal ,13,27,2023_14_PHI_DAL
+4,9:40,Cowboys,Brandon Aubrey 45 yard field goal ,13,30,2023_14_PHI_DAL
+4,1:08,Cowboys,Brandon Aubrey 50 yard field goal ,13,33,2023_14_PHI_DAL
+1,8:25,Dolphins,Zach Sieler 5 yard interception return (Jason Sanders kick),0,7,2023_14_TEN_MIA
+2,6:53,Titans,Derrick Henry 1 yard rush (Nick Folk kick),7,7,2023_14_TEN_MIA
+2,0:00,Titans,Nick Folk 28 yard field goal ,10,7,2023_14_TEN_MIA
+3,9:35,Dolphins,Jason Sanders 20 yard field goal ,10,10,2023_14_TEN_MIA
+3,0:09,Titans,Nick Folk 23 yard field goal ,13,10,2023_14_TEN_MIA
+4,12:37,Dolphins,Jason Sanders 31 yard field goal ,13,13,2023_14_TEN_MIA
+4,5:34,Dolphins,Raheem Mostert 3 yard rush (Jason Sanders kick),13,20,2023_14_TEN_MIA
+4,4:34,Dolphins,Raheem Mostert 5 yard rush (Jason Sanders kick),13,27,2023_14_TEN_MIA
+4,2:40,Titans,DeAndre Hopkins 3 yard pass from Will Levis (Nick Westbrook-Ikhine pass from Will Levis),21,27,2023_14_TEN_MIA
+4,1:49,Titans,Derrick Henry 3 yard rush (Nick Folk kick),28,27,2023_14_TEN_MIA
+1,1:01,Packers,Jayden Reed 16 yard rush (Anders Carlson kick),7,0,2023_14_GB_NYG
+2,11:55,Giants,Saquon Barkley 5 yard rush (Randy Bullock kick),7,7,2023_14_GB_NYG
+2,0:13,Packers,Anders Carlson 36 yard field goal ,10,7,2023_14_GB_NYG
+3,11:22,Giants,Saquon Barkley 1 yard rush (Randy Bullock kick),10,14,2023_14_GB_NYG
+3,7:31,Packers,Anders Carlson 32 yard field goal ,13,14,2023_14_GB_NYG
+3,1:28,Giants,Isaiah Hodgins 8 yard pass from Tommy DeVito (Randy Bullock kick),13,21,2023_14_GB_NYG
+4,5:30,Packers,Anders Carlson 48 yard field goal ,16,21,2023_14_GB_NYG
+4,1:33,Packers,Malik Heath 6 yard pass from Jordan Love (run failed),22,21,2023_14_GB_NYG
+4,0:00,Giants,Randy Bullock 37 yard field goal ,22,24,2023_14_GB_NYG
+1,8:10,Raiders,Zamir White 1 yard rush (Daniel Carlson kick),0,7,2023_15_LAC_LV
+1,4:41,Raiders,Tre Tucker 30 yard pass from Aidan O'Connell (Daniel Carlson kick),0,14,2023_15_LAC_LV
+1,3:07,Raiders,Jakobi Meyers 22 yard pass from Aidan O'Connell (Daniel Carlson kick),0,21,2023_15_LAC_LV
+2,9:15,Raiders,Michael Mayer 11 yard pass from Aidan O'Connell (Daniel Carlson kick),0,28,2023_15_LAC_LV
+2,3:50,Raiders,Brandon Bolden 26 yard rush (Daniel Carlson kick),0,35,2023_15_LAC_LV
+2,0:31,Raiders,Tre Tucker 20 yard pass from Aidan O'Connell (Daniel Carlson kick),0,42,2023_15_LAC_LV
+3,10:42,Raiders,Davante Adams 3 yard pass from Jakobi Meyers (Daniel Carlson kick),0,49,2023_15_LAC_LV
+3,10:27,Chargers,Josh Palmer 79 yard pass from Easton Stick (Cameron Dicker kick),7,49,2023_15_LAC_LV
+3,0:00,Raiders,John Jenkins 44 yard fumble return (Daniel Carlson kick),7,56,2023_15_LAC_LV
+4,14:31,Raiders,Jack Jones 16 yard interception return (Daniel Carlson kick),7,63,2023_15_LAC_LV
+4,8:39,Chargers,Alex Erickson 13 yard pass from Easton Stick (Cameron Dicker kick),14,63,2023_15_LAC_LV
+4,2:38,Chargers,Quentin Johnston 6 yard pass from Easton Stick (Cameron Dicker kick),21,63,2023_15_LAC_LV
+1,8:41,Bengals,Evan McPherson 34 yard field goal ,0,3,2023_15_MIN_CIN
+1,2:23,Vikings,Ty Chandler 1 yard rush (Greg Joseph kick),7,3,2023_15_MIN_CIN
+3,10:46,Vikings,Jordan Addison 37 yard pass from Nick Mullens (Greg Joseph kick),14,3,2023_15_MIN_CIN
+3,4:32,Vikings,Greg Joseph 39 yard field goal ,17,3,2023_15_MIN_CIN
+4,14:56,Bengals,Tee Higgins 13 yard pass from Jake Browning (Evan McPherson kick),17,10,2023_15_MIN_CIN
+4,7:46,Bengals,Joe Mixon 1 yard rush (Evan McPherson kick),17,17,2023_15_MIN_CIN
+4,3:48,Vikings,Jordan Addison 1 yard pass from Nick Mullens (Greg Joseph kick),24,17,2023_15_MIN_CIN
+4,0:39,Bengals,Tee Higgins 21 yard pass from Jake Browning (Evan McPherson kick),24,24,2023_15_MIN_CIN
+OT,3:11,Bengals,Evan McPherson 29 yard field goal ,24,27,2023_15_MIN_CIN
+1,1:12,Steelers,Mitchell Trubisky 1 yard rush (Chris Boswell kick failed),6,0,2023_15_PIT_IND
+2,14:07,Steelers,Diontae Johnson 4 yard pass from Mitchell Trubisky (Chris Boswell kick),13,0,2023_15_PIT_IND
+2,11:21,Colts,Zack Moss 16 yard pass from Gardner Minshew II (Matt Gay kick),13,7,2023_15_PIT_IND
+2,0:22,Colts,D.J. Montgomery 14 yard pass from Gardner Minshew II (Matt Gay kick),13,14,2023_15_PIT_IND
+3,13:16,Colts,Mo Alie-Cox 18 yard pass from Gardner Minshew II (Matt Gay kick),13,21,2023_15_PIT_IND
+3,9:02,Colts,Matt Gay 29 yard field goal ,13,24,2023_15_PIT_IND
+4,9:17,Colts,Matt Gay 31 yard field goal ,13,27,2023_15_PIT_IND
+4,0:48,Colts,Matt Gay 42 yard field goal ,13,30,2023_15_PIT_IND
+2,12:31,Lions,Sam LaPorta 19 yard pass from Jared Goff (Michael Badgley kick),0,7,2023_15_DEN_DET
+2,8:15,Lions,Jahmyr Gibbs 9 yard pass from Jared Goff (Michael Badgley kick),0,14,2023_15_DEN_DET
+2,0:19,Lions,Amon-Ra St. Brown 15 yard pass from Jared Goff (Michael Badgley kick),0,21,2023_15_DEN_DET
+3,10:34,Broncos,Lil'Jordan Humphrey 3 yard pass from Russell Wilson (Wil Lutz kick),7,21,2023_15_DEN_DET
+3,6:57,Lions,Sam LaPorta 3 yard pass from Jared Goff (Michael Badgley kick),7,28,2023_15_DEN_DET
+3,0:43,Broncos,Wil Lutz 23 yard field goal ,10,28,2023_15_DEN_DET
+4,12:12,Lions,Jahmyr Gibbs 12 yard rush (Michael Badgley kick),10,35,2023_15_DEN_DET
+4,6:28,Broncos,Russell Wilson 1 yard rush (Wil Lutz kick),17,35,2023_15_DEN_DET
+4,2:21,Lions,Sam LaPorta 10 yard pass from Jared Goff (Michael Badgley kick),17,42,2023_15_DEN_DET
+2,4:49,Falcons,Cordarrelle Patterson 2 yard pass from Desmond Ridder (Younghoe Koo kick),7,0,2023_15_ATL_CAR
+2,0:22,Panthers,Eddy Pineiro 34 yard field goal ,7,3,2023_15_ATL_CAR
+4,13:32,Panthers,Eddy Pineiro 25 yard field goal ,7,6,2023_15_ATL_CAR
+4,0:00,Panthers,Eddy Pineiro 23 yard field goal ,7,9,2023_15_ATL_CAR
+2,10:54,Bears,Cole Kmet 5 yard pass from Justin Fields (Cairo Santos kick),7,0,2023_15_CHI_CLE
+2,3:48,Browns,David Njoku 2 yard pass from Joe Flacco (Dustin Hopkins kick),7,7,2023_15_CHI_CLE
+3,13:50,Bears,Tremaine Edmunds 45 yard interception return (Cairo Santos kick),14,7,2023_15_CHI_CLE
+3,7:07,Bears,Cairo Santos 41 yard field goal ,17,7,2023_15_CHI_CLE
+4,12:27,Browns,Dustin Hopkins 33 yard field goal ,17,10,2023_15_CHI_CLE
+4,3:08,Browns,Amari Cooper 51 yard pass from Joe Flacco (Dustin Hopkins kick),17,17,2023_15_CHI_CLE
+4,0:32,Browns,Dustin Hopkins 34 yard field goal ,17,20,2023_15_CHI_CLE
+1,9:02,Buccaneers,Chase McLaughlin 39 yard field goal ,3,0,2023_15_TB_GB
+1,0:49,Packers,Tucker Kraft 5 yard pass from Jordan Love (Anders Carlson kick),3,7,2023_15_TB_GB
+2,12:21,Buccaneers,Mike Evans 19 yard pass from Baker Mayfield (Chase McLaughlin kick),10,7,2023_15_TB_GB
+2,7:09,Packers,Anders Carlson 36 yard field goal ,10,10,2023_15_TB_GB
+2,0:10,Buccaneers,Chase McLaughlin 46 yard field goal ,13,10,2023_15_TB_GB
+3,10:55,Buccaneers,Rachaad White 26 yard pass from Baker Mayfield (Chase McLaughlin kick),20,10,2023_15_TB_GB
+3,4:18,Packers,Jayden Reed 17 yard pass from Jordan Love (Anders Carlson kick),20,17,2023_15_TB_GB
+3,0:20,Buccaneers,Ko Kieft 2 yard pass from Baker Mayfield (Chase McLaughlin kick),27,17,2023_15_TB_GB
+4,10:04,Packers,Anders Carlson 33 yard field goal ,27,20,2023_15_TB_GB
+4,6:30,Buccaneers,David Moore 52 yard pass from Baker Mayfield (Chase McLaughlin kick),34,20,2023_15_TB_GB
+1,7:37,Dolphins,Raheem Mostert 2 yard rush (Jason Sanders kick),0,7,2023_15_NYJ_MIA
+2,13:56,Dolphins,Jason Sanders 37 yard field goal ,0,10,2023_15_NYJ_MIA
+2,7:45,Dolphins,Jaylen Waddle 60 yard pass from Tua Tagovailoa (Jason Sanders kick),0,17,2023_15_NYJ_MIA
+2,1:03,Dolphins,Raheem Mostert 1 yard rush (Jason Sanders kick),0,24,2023_15_NYJ_MIA
+3,8:36,Dolphins,Jason Sanders 27 yard field goal ,0,27,2023_15_NYJ_MIA
+4,11:42,Dolphins,Jason Sanders 35 yard field goal ,0,30,2023_15_NYJ_MIA
+1,1:33,Chiefs,Rashee Rice 4 yard pass from Jerick McKinnon (Harrison Butker kick),7,0,2023_15_KC_NE
+2,7:09,Patriots,Hunter Henry 16 yard pass from Bailey Zappe (Chad Ryland kick),7,7,2023_15_KC_NE
+2,4:47,Patriots,Chad Ryland 25 yard field goal ,7,10,2023_15_KC_NE
+2,0:35,Chiefs,Jerick McKinnon 8 yard pass from Patrick Mahomes (Harrison Butker kick),14,10,2023_15_KC_NE
+3,10:29,Chiefs,Harrison Butker 29 yard field goal ,17,10,2023_15_KC_NE
+3,9:22,Chiefs,Clyde Edwards-Helaire 6 yard pass from Patrick Mahomes (Harrison Butker kick),24,10,2023_15_KC_NE
+3,3:40,Chiefs,Harrison Butker 54 yard field goal ,27,10,2023_15_KC_NE
+4,8:24,Patriots,Kevin Harris 18 yard rush (Chad Ryland kick),27,17,2023_15_KC_NE
+1,10:00,Giants,Randy Bullock 56 yard field goal ,3,0,2023_15_NYG_NO
+1,0:29,Saints,Keith Kirkwood 7 yard pass from Derek Carr (Blake Grupe kick),3,7,2023_15_NYG_NO
+2,0:00,Giants,Jamie Gillan 40 yard field goal ,6,7,2023_15_NYG_NO
+3,8:39,Saints,Juwan Johnson 23 yard pass from Derek Carr (Blake Grupe kick),6,14,2023_15_NYG_NO
+3,4:17,Saints,Blake Grupe 50 yard field goal ,6,17,2023_15_NYG_NO
+4,10:47,Saints,Jimmy Graham 1 yard pass from Derek Carr (Blake Grupe kick),6,24,2023_15_NYG_NO
+1,7:09,Titans,Will Levis 1 yard rush (Nick Folk kick failed),0,6,2023_15_HOU_TEN
+2,13:56,Titans,Elijah Molden 44 yard interception return (Nick Folk kick),0,13,2023_15_HOU_TEN
+2,0:00,Texans,Ka'imi Fairbairn 23 yard field goal ,3,13,2023_15_HOU_TEN
+3,6:27,Texans,Ka'imi Fairbairn 27 yard field goal ,6,13,2023_15_HOU_TEN
+3,2:42,Texans,Ka'imi Fairbairn 53 yard field goal ,9,13,2023_15_HOU_TEN
+4,7:28,Titans,Nick Folk 45 yard field goal ,9,16,2023_15_HOU_TEN
+4,3:03,Texans,Noah Brown 3 yard pass from Case Keenum (Ka'imi Fairbairn kick),16,16,2023_15_HOU_TEN
+OT,0:00,Texans,Ka'imi Fairbairn 54 yard field goal ,19,16,2023_15_HOU_TEN
+1,10:40,Cardinals,James Conner 2 yard rush (Matt Prater kick),0,7,2023_15_SF_ARI
+1,6:33,49ers,Deebo Samuel 12 yard pass from Brock Purdy (Jake Moody kick),7,7,2023_15_SF_ARI
+1,4:22,49ers,Charvarius Ward 66 yard interception return (Jake Moody kick),14,7,2023_15_SF_ARI
+2,14:11,Cardinals,Matt Prater 58 yard field goal ,14,10,2023_15_SF_ARI
+2,6:14,Cardinals,Matt Prater 43 yard field goal ,14,13,2023_15_SF_ARI
+2,1:14,49ers,Christian McCaffrey 5 yard pass from Brock Purdy (Jake Moody kick),21,13,2023_15_SF_ARI
+3,13:18,49ers,Christian McCaffrey 41 yard pass from Brock Purdy (Jake Moody kick),28,13,2023_15_SF_ARI
+3,4:20,Cardinals,Matt Prater 28 yard field goal ,28,16,2023_15_SF_ARI
+3,1:08,49ers,Christian McCaffrey 1 yard rush (Jake Moody kick),35,16,2023_15_SF_ARI
+4,11:30,Cardinals,Emari Demercado 49 yard rush (pass failed),35,22,2023_15_SF_ARI
+4,7:09,49ers,Deebo Samuel 19 yard pass from Brock Purdy (Jake Moody kick),42,22,2023_15_SF_ARI
+4,3:09,49ers,Jake Moody 43 yard field goal ,45,22,2023_15_SF_ARI
+4,0:47,Cardinals,Elijah Higgins 8 yard pass from Kyler Murray (Matt Prater kick),45,29,2023_15_SF_ARI
+1,7:39,Rams,Lucas Havrisik 22 yard field goal ,0,3,2023_15_WAS_LA
+2,2:19,Rams,Kyren Williams 1 yard rush (Lucas Havrisik kick),0,10,2023_15_WAS_LA
+2,0:03,Rams,Lucas Havrisik 27 yard field goal ,0,13,2023_15_WAS_LA
+3,14:07,Rams,Cooper Kupp 62 yard pass from Matthew Stafford (Lucas Havrisik kick),0,20,2023_15_WAS_LA
+3,6:25,Commanders,Curtis Samuel 19 yard pass from Sam Howell (Joey Slye kick),7,20,2023_15_WAS_LA
+4,13:25,Rams,Demarcus Robinson 23 yard pass from Matthew Stafford (Kyren Williams run),7,28,2023_15_WAS_LA
+4,7:17,Commanders,Terry McLaurin 29 yard pass from Jacoby Brissett (Joey Slye kick),14,28,2023_15_WAS_LA
+4,1:46,Commanders,Curtis Samuel 3 yard pass from Jacoby Brissett (Joey Slye kick failed),20,28,2023_15_WAS_LA
+1,8:06,Bills,Latavius Murray 2 yard rush (Tyler Bass kick),0,7,2023_15_DAL_BUF
+2,12:52,Bills,James Cook 18 yard pass from Josh Allen (Tyler Bass kick),0,14,2023_15_DAL_BUF
+2,7:13,Cowboys,Brandon Aubrey 32 yard field goal ,3,14,2023_15_DAL_BUF
+2,1:36,Bills,Josh Allen 1 yard rush (Tyler Bass kick),3,21,2023_15_DAL_BUF
+3,2:36,Bills,Tyler Bass 23 yard field goal ,3,24,2023_15_DAL_BUF
+4,12:30,Bills,James Cook 24 yard rush (Tyler Bass kick),3,31,2023_15_DAL_BUF
+4,2:48,Cowboys,CeeDee Lamb 3 yard rush (Brandon Aubrey kick),10,31,2023_15_DAL_BUF
+1,6:21,Ravens,Justin Tucker 43 yard field goal ,3,0,2023_15_BAL_JAX
+2,1:12,Ravens,Isaiah Likely 16 yard pass from Lamar Jackson (Justin Tucker kick),10,0,2023_15_BAL_JAX
+3,7:15,Jaguars,Jamal Agnew 65 yard pass from Trevor Lawrence (Brandon McManus kick),10,7,2023_15_BAL_JAX
+4,14:58,Ravens,Gus Edwards 1 yard rush (Justin Tucker kick),17,7,2023_15_BAL_JAX
+4,8:00,Ravens,Justin Tucker 26 yard field goal ,20,7,2023_15_BAL_JAX
+4,6:01,Ravens,Justin Tucker 34 yard field goal ,23,7,2023_15_BAL_JAX
+1,6:31,Eagles,Jalen Hurts 3 yard rush (Jake Elliott kick),7,0,2023_15_PHI_SEA
+2,6:20,Eagles,Jake Elliott 27 yard field goal ,10,0,2023_15_PHI_SEA
+2,1:42,Seahawks,Jason Myers 26 yard field goal ,10,3,2023_15_PHI_SEA
+3,10:05,Seahawks,Kenneth Walker III 23 yard rush (Jason Myers kick),10,10,2023_15_PHI_SEA
+3,4:43,Eagles,Jalen Hurts 1 yard rush (Jake Elliott kick),17,10,2023_15_PHI_SEA
+4,10:00,Seahawks,Jason Myers 43 yard field goal ,17,13,2023_15_PHI_SEA
+4,0:28,Seahawks,Jaxon Smith-Njigba 29 yard pass from Drew Lock (Jason Myers kick),17,20,2023_15_PHI_SEA
+1,2:28,Rams,Puka Nacua 2 yard pass from Matthew Stafford (Lucas Havrisik kick),0,7,2023_16_NO_LA
+2,10:23,Rams,Lucas Havrisik 20 yard field goal ,0,10,2023_16_NO_LA
+2,2:28,Saints,Rashid Shaheed 45 yard pass from Derek Carr (Blake Grupe kick),7,10,2023_16_NO_LA
+2,0:21,Rams,Demarcus Robinson 4 yard pass from Matthew Stafford (Lucas Havrisik kick),7,17,2023_16_NO_LA
+3,11:10,Rams,Lucas Havrisik 22 yard field goal ,7,20,2023_16_NO_LA
+3,5:42,Rams,Kyren Williams 10 yard rush (Lucas Havrisik kick),7,27,2023_16_NO_LA
+4,12:44,Rams,Lucas Havrisik 32 yard field goal ,7,30,2023_16_NO_LA
+4,6:33,Saints,Juwan Johnson 5 yard pass from Derek Carr (Blake Grupe kick),14,30,2023_16_NO_LA
+4,3:53,Saints,A.T. Perry 35 yard pass from Derek Carr (Chris Olave pass from Derek Carr),22,30,2023_16_NO_LA
+1,10:45,Steelers,George Pickens 86 yard pass from Mason Rudolph (Chris Boswell kick),0,7,2023_16_CIN_PIT
+2,14:21,Steelers,Calvin Austin III 7 yard rush (Chris Boswell kick),0,14,2023_16_CIN_PIT
+2,7:06,Steelers,Najee Harris 3 yard rush (Chris Boswell kick),0,21,2023_16_CIN_PIT
+2,0:00,Steelers,Chris Boswell 50 yard field goal ,0,24,2023_16_CIN_PIT
+3,11:11,Bengals,Tee Higgins 80 yard pass from Jake Browning (Joe Mixon pass from Jake Browning),8,24,2023_16_CIN_PIT
+3,9:48,Steelers,George Pickens 66 yard pass from Mason Rudolph (Chris Boswell kick),8,31,2023_16_CIN_PIT
+3,0:00,Bengals,Evan McPherson 35 yard field goal ,11,31,2023_16_CIN_PIT
+4,6:57,Steelers,Chris Boswell 30 yard field goal ,11,34,2023_16_CIN_PIT
+1,6:32,Chargers,Cameron Dicker 20 yard field goal ,0,3,2023_16_BUF_LAC
+2,13:49,Chargers,Easton Stick 1 yard rush (Cameron Dicker kick),0,10,2023_16_BUF_LAC
+2,9:02,Bills,Gabriel Davis 57 yard pass from Josh Allen (Tyler Bass kick),7,10,2023_16_BUF_LAC
+2,0:38,Bills,Josh Allen 2 yard rush (Tyler Bass kick),14,10,2023_16_BUF_LAC
+3,7:22,Chargers,Cameron Dicker 40 yard field goal ,14,13,2023_16_BUF_LAC
+3,1:28,Bills,Josh Allen 1 yard rush (Tyler Bass kick),21,13,2023_16_BUF_LAC
+4,12:36,Chargers,Cameron Dicker 47 yard field goal ,21,16,2023_16_BUF_LAC
+4,7:19,Chargers,Cameron Dicker 45 yard field goal ,21,19,2023_16_BUF_LAC
+4,5:26,Chargers,Cameron Dicker 53 yard field goal ,21,22,2023_16_BUF_LAC
+4,0:28,Bills,Tyler Bass 29 yard field goal ,24,22,2023_16_BUF_LAC
+1,9:24,Colts,Jonathan Taylor 1 yard rush (Matt Gay kick),7,0,2023_16_IND_ATL
+1,7:42,Falcons,Kyle Pitts 24 yard pass from Taylor Heinicke (Younghoe Koo kick),7,7,2023_16_IND_ATL
+2,3:23,Falcons,Younghoe Koo 23 yard field goal ,7,10,2023_16_IND_ATL
+2,0:05,Falcons,Younghoe Koo 47 yard field goal ,7,13,2023_16_IND_ATL
+3,11:13,Falcons,Tyler Allgeier 31 yard rush (Younghoe Koo kick),7,20,2023_16_IND_ATL
+3,4:23,Colts,Matt Gay 33 yard field goal ,10,20,2023_16_IND_ATL
+4,14:06,Falcons,Younghoe Koo 41 yard field goal ,10,23,2023_16_IND_ATL
+4,5:46,Falcons,Younghoe Koo 35 yard field goal ,10,26,2023_16_IND_ATL
+4,1:57,Falcons,Younghoe Koo 25 yard field goal ,10,29,2023_16_IND_ATL
+1,7:30,Packers,AJ Dillon 1 yard rush (Anders Carlson kick),7,0,2023_16_GB_CAR
+1,5:24,Panthers,Eddy Pineiro 52 yard field goal ,7,3,2023_16_GB_CAR
+2,14:57,Packers,Jordan Love 1 yard rush (Anders Carlson kick failed),13,3,2023_16_GB_CAR
+2,10:29,Panthers,Ihmir Smith-Marsette 20 yard rush (Eddy Pineiro kick),13,10,2023_16_GB_CAR
+2,7:51,Packers,Anders Carlson 53 yard field goal ,16,10,2023_16_GB_CAR
+2,0:49,Packers,Dontayvion Wicks 21 yard pass from Jordan Love (Anders Carlson kick),23,10,2023_16_GB_CAR
+3,5:11,Panthers,Chuba Hubbard 4 yard rush (Eddy Pineiro kick failed),23,16,2023_16_GB_CAR
+4,14:57,Packers,Romeo Doubs 5 yard pass from Jordan Love (Anders Carlson kick),30,16,2023_16_GB_CAR
+4,7:14,Panthers,DJ Chark 11 yard pass from Bryce Young (Eddy Pineiro kick failed),30,22,2023_16_GB_CAR
+4,4:05,Panthers,DJ Chark 10 yard pass from Bryce Young (Raheem Blackshear run),30,30,2023_16_GB_CAR
+4,0:19,Packers,Anders Carlson 32 yard field goal ,33,30,2023_16_GB_CAR
+1,13:18,Browns,Jerome Ford 4 yard rush (Dustin Hopkins kick),7,0,2023_16_CLE_HOU
+2,11:54,Browns,Amari Cooper 75 yard pass from Joe Flacco (Dustin Hopkins kick),14,0,2023_16_CLE_HOU
+2,11:51,Texans,Dameon Pierce 98 yard kickoff return (Ka'imi Fairbairn kick),14,7,2023_16_CLE_HOU
+2,4:16,Browns,David Njoku 21 yard pass from Joe Flacco (Dorian Thompson-Robinson run),22,7,2023_16_CLE_HOU
+3,2:35,Browns,Amari Cooper 7 yard pass from Joe Flacco (run failed),28,7,2023_16_CLE_HOU
+4,12:31,Browns,Kareem Hunt 1 yard rush (Amari Cooper pass from Joe Flacco),36,7,2023_16_CLE_HOU
+4,6:08,Texans,Nico Collins 5 yard pass from Davis Mills (Nico Collins pass from Davis Mills),36,15,2023_16_CLE_HOU
+4,4:12,Texans,Andrew Beck 1 yard pass from Davis Mills (Ka'imi Fairbairn kick),36,22,2023_16_CLE_HOU
+1,7:13,Lions,David Montgomery 1 yard rush (Michael Badgley kick),7,0,2023_16_DET_MIN
+1,2:51,Vikings,Ty Chandler 2 yard rush (Greg Joseph kick),7,7,2023_16_DET_MIN
+2,5:05,Lions,Michael Badgley 37 yard field goal ,10,7,2023_16_DET_MIN
+2,1:48,Lions,Jahmyr Gibbs 14 yard rush (Michael Badgley kick),17,7,2023_16_DET_MIN
+2,0:29,Vikings,Justin Jefferson 26 yard pass from Nick Mullens (Greg Joseph kick),17,14,2023_16_DET_MIN
+3,11:56,Vikings,K.J. Osborn 6 yard pass from Nick Mullens (Greg Joseph kick),17,21,2023_16_DET_MIN
+3,4:38,Lions,Amon-Ra St. Brown 1 yard pass from Jared Goff (Michael Badgley kick failed),23,21,2023_16_DET_MIN
+4,11:07,Lions,Jahmyr Gibbs 3 yard rush (Michael Badgley kick),30,21,2023_16_DET_MIN
+4,5:19,Vikings,Greg Joseph 26 yard field goal ,30,24,2023_16_DET_MIN
+1,13:00,Jets,Greg Zuerlein 25 yard field goal ,0,3,2023_16_WAS_NYJ
+1,11:26,Jets,Jason Brownlee 8 yard pass from Trevor Siemian (Greg Zuerlein kick),0,10,2023_16_WAS_NYJ
+1,9:37,Jets,Breece Hall 36 yard rush (Greg Zuerlein kick),0,17,2023_16_WAS_NYJ
+2,9:10,Jets,Greg Zuerlein 27 yard field goal ,0,20,2023_16_WAS_NYJ
+2,6:38,Commanders,Chris Rodriguez 12 yard rush (Joey Slye kick),7,20,2023_16_WAS_NYJ
+2,1:35,Jets,Breece Hall 2 yard rush (Greg Zuerlein kick),7,27,2023_16_WAS_NYJ
+3,3:26,Commanders,Logan Thomas 15 yard pass from Jacoby Brissett (Joey Slye kick),14,27,2023_16_WAS_NYJ
+4,9:33,Commanders,Chris Rodriguez 1 yard rush (Joey Slye kick),21,27,2023_16_WAS_NYJ
+4,4:52,Commanders,Antonio Gibson 2 yard rush (Joey Slye kick),28,27,2023_16_WAS_NYJ
+4,0:05,Jets,Greg Zuerlein 54 yard field goal ,28,30,2023_16_WAS_NYJ
+2,14:15,Titans,Chigoziem Okonkwo 12 yard pass from Derrick Henry (Nick Folk kick),0,7,2023_16_SEA_TEN
+2,10:48,Seahawks,Jason Myers 28 yard field goal ,3,7,2023_16_SEA_TEN
+2,3:18,Titans,Nick Folk 33 yard field goal ,3,10,2023_16_SEA_TEN
+3,9:53,Seahawks,Jason Myers 27 yard field goal ,6,10,2023_16_SEA_TEN
+4,12:10,Seahawks,D.K. Metcalf 11 yard pass from Geno Smith (Jason Myers kick),13,10,2023_16_SEA_TEN
+4,3:21,Titans,Derrick Henry 2 yard rush (Nick Folk kick),13,17,2023_16_SEA_TEN
+4,0:57,Seahawks,Colby Parkinson 5 yard pass from Geno Smith (Jason Myers kick),20,17,2023_16_SEA_TEN
+1,7:22,Buccaneers,Chase McLaughlin 24 yard field goal ,0,3,2023_16_JAX_TB
+2,12:53,Buccaneers,Mike Evans 3 yard pass from Baker Mayfield (Chase McLaughlin kick),0,10,2023_16_JAX_TB
+2,2:27,Buccaneers,Chase McLaughlin 31 yard field goal ,0,13,2023_16_JAX_TB
+2,0:45,Buccaneers,Mike Evans 22 yard pass from Baker Mayfield (Chase McLaughlin kick),0,20,2023_16_JAX_TB
+3,11:30,Buccaneers,Rachaad White 2 yard rush (Chase McLaughlin kick),0,27,2023_16_JAX_TB
+3,3:49,Buccaneers,Chase McLaughlin 51 yard field goal ,0,30,2023_16_JAX_TB
+3,0:50,Jaguars,Calvin Ridley 18 yard pass from Trevor Lawrence (pass failed),6,30,2023_16_JAX_TB
+4,4:36,Jaguars,Calvin Ridley 1 yard pass from C.J. Beathard (pass failed),12,30,2023_16_JAX_TB
+1,6:16,Bears,Justin Fields 3 yard rush (Cairo Santos kick),0,7,2023_16_ARI_CHI
+2,12:54,Bears,Khalil Herbert 11 yard rush (Cairo Santos kick),0,14,2023_16_ARI_CHI
+2,7:12,Bears,Marcedes Lewis 1 yard pass from Justin Fields (Cairo Santos kick),0,21,2023_16_ARI_CHI
+2,2:27,Cardinals,James Conner 16 yard pass from Kyler Murray (Matt Prater kick),7,21,2023_16_ARI_CHI
+3,12:12,Cardinals,Matt Prater 55 yard field goal ,10,21,2023_16_ARI_CHI
+3,1:04,Bears,Cairo Santos 49 yard field goal ,10,24,2023_16_ARI_CHI
+4,6:37,Cardinals,Greg Dortch 38 yard pass from Kyler Murray (pass failed),16,24,2023_16_ARI_CHI
+4,1:02,Bears,Cairo Santos 29 yard field goal ,16,27,2023_16_ARI_CHI
+1,2:50,Dolphins,Jason Sanders 57 yard field goal ,0,3,2023_16_DAL_MIA
+1,1:30,Cowboys,CeeDee Lamb 49 yard pass from Dak Prescott (Brandon Aubrey kick),7,3,2023_16_DAL_MIA
+2,4:31,Dolphins,Jason Sanders 52 yard field goal ,7,6,2023_16_DAL_MIA
+2,0:17,Dolphins,Raheem Mostert 4 yard pass from Tua Tagovailoa (Jason Sanders kick),7,13,2023_16_DAL_MIA
+3,8:59,Dolphins,Jason Sanders 54 yard field goal ,7,16,2023_16_DAL_MIA
+3,5:28,Cowboys,Brandon Aubrey 43 yard field goal ,10,16,2023_16_DAL_MIA
+3,1:24,Dolphins,Jason Sanders 35 yard field goal ,10,19,2023_16_DAL_MIA
+4,12:31,Cowboys,Brandon Aubrey 33 yard field goal ,13,19,2023_16_DAL_MIA
+4,3:33,Cowboys,Brandin Cooks 8 yard pass from Dak Prescott (Brandon Aubrey kick),20,19,2023_16_DAL_MIA
+4,0:00,Dolphins,Jason Sanders 29 yard field goal ,20,22,2023_16_DAL_MIA
+1,5:15,Broncos,Javonte Williams 3 yard rush (Wil Lutz kick),0,7,2023_16_NE_DEN
+2,13:30,Patriots,Chad Ryland 33 yard field goal ,3,7,2023_16_NE_DEN
+3,9:48,Patriots,Ezekiel Elliott 15 yard pass from Bailey Zappe (Chad Ryland kick failed),9,7,2023_16_NE_DEN
+3,1:34,Patriots,Mike Gesicki 11 yard pass from Bailey Zappe (Chad Ryland kick),16,7,2023_16_NE_DEN
+3,1:28,Patriots,Cody Davis 1 yard fumble return (Chad Ryland kick),23,7,2023_16_NE_DEN
+4,8:33,Broncos,Lucas Krull 3 yard pass from Russell Wilson (Brandon Johnson pass from Russell Wilson),23,15,2023_16_NE_DEN
+4,2:53,Broncos,Brandon Johnson 21 yard pass from Russell Wilson (Javonte Williams pass from Russell Wilson),23,23,2023_16_NE_DEN
+4,0:02,Patriots,Chad Ryland 56 yard field goal ,26,23,2023_16_NE_DEN
+1,1:18,Raiders,Daniel Carlson 24 yard field goal ,3,0,2023_16_LV_KC
+2,7:34,Chiefs,Isiah Pacheco 12 yard rush (Harrison Butker kick),3,7,2023_16_LV_KC
+2,4:55,Raiders,Bilal Nichols 8 yard fumble return (run failed),9,7,2023_16_LV_KC
+2,4:48,Raiders,Jack Jones 33 yard interception return (Brandon Bolden run),17,7,2023_16_LV_KC
+3,0:24,Raiders,Daniel Carlson 35 yard field goal ,20,7,2023_16_LV_KC
+4,2:42,Chiefs,Justin Watson 7 yard pass from Patrick Mahomes (Harrison Butker kick),20,14,2023_16_LV_KC
+1,12:27,Eagles,Jalen Hurts 1 yard rush (Jake Elliott kick),0,7,2023_16_NYG_PHI
+1,8:04,Giants,Mason Crosby 52 yard field goal ,3,7,2023_16_NYG_PHI
+2,14:53,Eagles,Jake Elliott 28 yard field goal ,3,10,2023_16_NYG_PHI
+2,11:44,Eagles,DeVonta Smith 36 yard pass from Jalen Hurts (Jake Elliott kick),3,17,2023_16_NYG_PHI
+2,0:00,Eagles,Jake Elliott 21 yard field goal ,3,20,2023_16_NYG_PHI
+3,13:41,Giants,Saquon Barkley 7 yard rush (Mason Crosby kick),10,20,2023_16_NYG_PHI
+3,0:09,Giants,Adoree' Jackson 76 yard interception return (Saquon Barkley run),18,20,2023_16_NYG_PHI
+4,11:07,Eagles,D'Andre Swift 5 yard rush (Jake Elliott kick),18,27,2023_16_NYG_PHI
+4,6:04,Eagles,Jake Elliott 44 yard field goal ,18,30,2023_16_NYG_PHI
+4,5:22,Giants,Darius Slayton 69 yard pass from Tyrod Taylor (Mason Crosby kick),25,30,2023_16_NYG_PHI
+4,1:10,Eagles,Jake Elliott 43 yard field goal ,25,33,2023_16_NYG_PHI
+1,10:24,49ers,"Safety, Lamar Jackson intentional grounding in end zone ",0,2,2023_16_BAL_SF
+1,5:58,49ers,Jake Moody 45 yard field goal ,0,5,2023_16_BAL_SF
+1,0:57,Ravens,Justin Tucker 28 yard field goal ,3,5,2023_16_BAL_SF
+2,9:35,Ravens,Gus Edwards 1 yard rush (Justin Tucker kick),10,5,2023_16_BAL_SF
+2,7:03,Ravens,Justin Tucker 41 yard field goal ,13,5,2023_16_BAL_SF
+2,3:23,49ers,Christian McCaffrey 9 yard rush (Jake Moody kick),13,12,2023_16_BAL_SF
+2,0:00,Ravens,Justin Tucker 28 yard field goal ,16,12,2023_16_BAL_SF
+3,12:03,Ravens,Nelson Agholor 6 yard pass from Lamar Jackson (Justin Tucker kick),23,12,2023_16_BAL_SF
+3,11:49,Ravens,Zay Flowers 9 yard pass from Lamar Jackson (Justin Tucker kick),30,12,2023_16_BAL_SF
+3,2:39,Ravens,Justin Tucker 24 yard field goal ,33,12,2023_16_BAL_SF
+4,6:19,49ers,Ronnie Bell 12 yard pass from Sam Darnold (Jake Moody kick),33,19,2023_16_BAL_SF
+1,11:10,Browns,Jerome Ford 7 yard pass from Joe Flacco (Riley Patterson kick),0,7,2023_17_NYJ_CLE
+1,8:06,Jets,Breece Hall 21 yard pass from Trevor Siemian (Greg Zuerlein kick),7,7,2023_17_NYJ_CLE
+1,4:43,Browns,Kareem Hunt 7 yard rush (Riley Patterson kick failed),7,13,2023_17_NYJ_CLE
+1,2:01,Browns,Ronnie Hickman 30 yard interception return (Riley Patterson kick),7,20,2023_17_NYJ_CLE
+2,6:15,Browns,Elijah Moore 8 yard pass from Joe Flacco (Riley Patterson kick),7,27,2023_17_NYJ_CLE
+2,2:02,Jets,Jermaine Johnson II 37 yard interception return (Greg Zuerlein kick),14,27,2023_17_NYJ_CLE
+2,1:25,Browns,Jerome Ford 50 yard pass from Joe Flacco (Riley Patterson kick),14,34,2023_17_NYJ_CLE
+2,0:00,Jets,Greg Zuerlein 46 yard field goal ,17,34,2023_17_NYJ_CLE
+4,8:50,Jets,Greg Zuerlein 44 yard field goal ,20,34,2023_17_NYJ_CLE
+4,2:54,Browns,Riley Patterson 33 yard field goal ,20,37,2023_17_NYJ_CLE
+1,10:46,Lions,Michael Badgley 41 yard field goal ,3,0,2023_17_DET_DAL
+1,3:26,Cowboys,CeeDee Lamb 92 yard pass from Dak Prescott (Brandon Aubrey kick),3,7,2023_17_DET_DAL
+3,4:34,Lions,David Montgomery 3 yard rush (Michael Badgley kick),10,7,2023_17_DET_DAL
+3,0:23,Cowboys,Brandon Aubrey 51 yard field goal ,10,10,2023_17_DET_DAL
+4,12:18,Lions,Michael Badgley 30 yard field goal ,13,10,2023_17_DET_DAL
+4,7:20,Cowboys,Brandin Cooks 8 yard pass from Dak Prescott (Brandon Aubrey kick),13,17,2023_17_DET_DAL
+4,1:41,Cowboys,Brandon Aubrey 43 yard field goal ,13,20,2023_17_DET_DAL
+4,0:23,Lions,Amon-Ra St. Brown 11 yard pass from Jared Goff (pass failed),19,20,2023_17_DET_DAL
+1,11:00,Dolphins,Cedrick Wilson Jr. 8 yard pass from Tua Tagovailoa (Jason Sanders kick),7,0,2023_17_MIA_BAL
+1,6:39,Ravens,Justice Hill 20 yard pass from Lamar Jackson (Justin Tucker kick),7,7,2023_17_MIA_BAL
+1,3:39,Dolphins,Jason Sanders 27 yard field goal ,10,7,2023_17_MIA_BAL
+2,6:56,Ravens,Gus Edwards 1 yard rush (Justin Tucker kick),10,14,2023_17_MIA_BAL
+2,3:10,Dolphins,Jason Sanders 38 yard field goal ,13,14,2023_17_MIA_BAL
+2,2:58,Ravens,Zay Flowers 75 yard pass from Lamar Jackson (Justin Tucker kick),13,21,2023_17_MIA_BAL
+2,1:24,Ravens,Isaiah Likely 35 yard pass from Lamar Jackson (Justin Tucker kick),13,28,2023_17_MIA_BAL
+3,13:29,Ravens,Isaiah Likely 7 yard pass from Lamar Jackson (Justin Tucker kick),13,35,2023_17_MIA_BAL
+4,13:57,Dolphins,De'Von Achane 1 yard pass from Tua Tagovailoa (pass failed),19,35,2023_17_MIA_BAL
+4,9:38,Ravens,Patrick Ricard 4 yard pass from Lamar Jackson (Justin Tucker kick),19,42,2023_17_MIA_BAL
+4,4:11,Ravens,Melvin Gordon 7 yard rush (Justin Tucker kick),19,49,2023_17_MIA_BAL
+4,2:28,Ravens,Charlie Kolar 19 yard pass from Tyler Huntley (Justin Tucker kick),19,56,2023_17_MIA_BAL
+1,14:48,Patriots,Jalen Reagor 98 yard kickoff return (Chad Ryland kick),7,0,2023_17_NE_BUF
+1,12:07,Bills,Tyler Bass 35 yard field goal ,7,3,2023_17_NE_BUF
+1,6:37,Bills,Josh Allen 1 yard rush (Tyler Bass kick),7,10,2023_17_NE_BUF
+1,2:16,Bills,Tyler Bass 24 yard field goal ,7,13,2023_17_NE_BUF
+2,12:36,Bills,Rasul Douglas 40 yard interception return (Tyler Bass kick),7,20,2023_17_NE_BUF
+2,9:44,Patriots,Bailey Zappe 17 yard rush (Chad Ryland kick),14,20,2023_17_NE_BUF
+3,10:42,Bills,Josh Allen 1 yard rush (Tyler Bass kick),14,27,2023_17_NE_BUF
+4,11:01,Patriots,Ezekiel Elliott 6 yard rush (Chad Ryland kick),21,27,2023_17_NE_BUF
+1,8:47,Bears,D.J. Moore 7 yard pass from Justin Fields (Cairo Santos kick),0,7,2023_17_ATL_CHI
+2,14:14,Bears,Justin Fields 9 yard rush (Cairo Santos kick),0,14,2023_17_ATL_CHI
+2,14:00,Falcons,Tyler Allgeier 75 yard pass from Taylor Heinicke (Younghoe Koo kick),7,14,2023_17_ATL_CHI
+2,4:02,Bears,Roschon Johnson 2 yard rush (Cairo Santos kick),7,21,2023_17_ATL_CHI
+3,11:56,Bears,Cairo Santos 22 yard field goal ,7,24,2023_17_ATL_CHI
+3,8:29,Falcons,Younghoe Koo 38 yard field goal ,10,24,2023_17_ATL_CHI
+3,1:10,Bears,Cairo Santos 42 yard field goal ,10,27,2023_17_ATL_CHI
+4,12:22,Falcons,Taylor Heinicke 24 yard rush (Younghoe Koo kick),17,27,2023_17_ATL_CHI
+4,4:59,Bears,Cairo Santos 42 yard field goal ,17,30,2023_17_ATL_CHI
+4,3:39,Bears,Khalil Herbert 1 yard rush (Cairo Santos kick),17,37,2023_17_ATL_CHI
+1,7:17,Texans,Ka'imi Fairbairn 28 yard field goal ,0,3,2023_17_TEN_HOU
+2,10:10,Texans,Brevin Jordan 12 yard pass from C.J. Stroud (Ka'imi Fairbairn kick),0,10,2023_17_TEN_HOU
+2,10:02,Texans,Sheldon Rankins 13 yard fumble return (Ka'imi Fairbairn kick),0,17,2023_17_TEN_HOU
+2,4:17,Texans,Ka'imi Fairbairn 38 yard field goal ,0,20,2023_17_TEN_HOU
+2,0:00,Titans,Nick Folk 53 yard field goal ,3,20,2023_17_TEN_HOU
+3,9:35,Texans,Ka'imi Fairbairn 27 yard field goal ,3,23,2023_17_TEN_HOU
+4,5:33,Texans,Ka'imi Fairbairn 51 yard field goal ,3,26,2023_17_TEN_HOU
+1,12:11,Colts,Jonathan Taylor 5 yard rush (Matt Gay kick),0,7,2023_17_LV_IND
+1,5:57,Raiders,Daniel Carlson 40 yard field goal ,3,7,2023_17_LV_IND
+2,3:53,Colts,Alec Pierce 58 yard pass from Gardner Minshew II (Matt Gay kick),3,14,2023_17_LV_IND
+3,6:31,Raiders,Davante Adams 4 yard pass from Aidan O'Connell (Daniel Carlson kick),10,14,2023_17_LV_IND
+3,1:17,Colts,Matt Gay 38 yard field goal ,10,17,2023_17_LV_IND
+4,7:34,Colts,Matt Gay 33 yard field goal ,10,20,2023_17_LV_IND
+4,4:35,Raiders,Daniel Carlson 33 yard field goal ,13,20,2023_17_LV_IND
+4,3:11,Colts,Matt Gay 45 yard field goal ,13,23,2023_17_LV_IND
+4,0:43,Raiders,Davante Adams 1 yard pass from Aidan O'Connell (Daniel Carlson kick),20,23,2023_17_LV_IND
+1,8:36,Jaguars,Brandon McManus 35 yard field goal ,0,3,2023_17_CAR_JAX
+2,7:18,Jaguars,Brandon McManus 26 yard field goal ,0,6,2023_17_CAR_JAX
+2,2:45,Jaguars,Brandon McManus 24 yard field goal ,0,9,2023_17_CAR_JAX
+3,11:56,Jaguars,Travis Etienne 62 yard rush (Brandon McManus kick),0,16,2023_17_CAR_JAX
+3,3:00,Jaguars,Brandon McManus 34 yard field goal ,0,19,2023_17_CAR_JAX
+4,4:16,Jaguars,Travis Etienne 1 yard rush (Brandon McManus kick),0,26,2023_17_CAR_JAX
+1,3:07,Rams,Kyren Williams 4 yard rush (Lucas Havrisik kick),7,0,2023_17_LA_NYG
+2,13:03,Giants,Wan'Dale Robinson 24 yard rush (Mason Crosby kick),7,7,2023_17_LA_NYG
+2,1:44,Rams,Cooper Kupp 5 yard pass from Matthew Stafford (Lucas Havrisik kick),14,7,2023_17_LA_NYG
+2,0:00,Giants,Mason Crosby 31 yard field goal ,14,10,2023_17_LA_NYG
+3,10:17,Rams,Kyren Williams 2 yard rush (Lucas Havrisik kick failed),20,10,2023_17_LA_NYG
+3,4:39,Giants,Darius Slayton 80 yard pass from Tyrod Taylor (Mason Crosby kick failed),20,16,2023_17_LA_NYG
+4,13:24,Giants,Mason Crosby 32 yard field goal ,20,19,2023_17_LA_NYG
+4,12:03,Rams,Kyren Williams 28 yard rush (Lucas Havrisik kick failed),26,19,2023_17_LA_NYG
+4,3:27,Giants,Gunner Olszewski 94 yard punt return (pass failed),26,25,2023_17_LA_NYG
+1,5:09,Cardinals,Matt Prater 28 yard field goal ,3,0,2023_17_ARI_PHI
+1,0:36,Eagles,Julio Jones 12 yard pass from Jalen Hurts (Jake Elliott kick),3,7,2023_17_ARI_PHI
+2,11:44,Eagles,Sydney Brown 99 yard interception return (Jake Elliott kick),3,14,2023_17_ARI_PHI
+2,1:50,Cardinals,Matt Prater 34 yard field goal ,6,14,2023_17_ARI_PHI
+2,0:16,Eagles,Julio Jones 22 yard pass from Jalen Hurts (Jake Elliott kick),6,21,2023_17_ARI_PHI
+3,8:42,Cardinals,Michael Carter 6 yard pass from Kyler Murray (Matt Prater kick),13,21,2023_17_ARI_PHI
+3,2:01,Cardinals,James Conner 5 yard pass from Kyler Murray (Michael Wilson pass from Kyler Murray),21,21,2023_17_ARI_PHI
+4,9:55,Eagles,Dallas Goedert 9 yard pass from Jalen Hurts (Jake Elliott kick),21,28,2023_17_ARI_PHI
+4,5:26,Cardinals,Michael Wilson 5 yard pass from Kyler Murray (Matt Prater kick),28,28,2023_17_ARI_PHI
+4,2:33,Eagles,Jake Elliott 43 yard field goal ,28,31,2023_17_ARI_PHI
+4,0:32,Cardinals,James Conner 2 yard rush (Matt Prater kick),35,31,2023_17_ARI_PHI
+1,7:04,Saints,Juwan Johnson 4 yard pass from Derek Carr (Blake Grupe kick),7,0,2023_17_NO_TB
+2,1:53,Saints,Taysom Hill 22 yard pass from Derek Carr (Blake Grupe kick),14,0,2023_17_NO_TB
+2,0:09,Saints,Blake Grupe 45 yard field goal ,17,0,2023_17_NO_TB
+3,4:25,Saints,Blake Grupe 28 yard field goal ,20,0,2023_17_NO_TB
+4,7:50,Buccaneers,Trey Palmer 22 yard pass from Baker Mayfield (Chase McLaughlin kick),20,7,2023_17_NO_TB
+4,3:48,Saints,Blake Grupe 38 yard field goal ,23,7,2023_17_NO_TB
+4,1:37,Buccaneers,Chris Godwin 47 yard pass from Baker Mayfield (pass failed),23,13,2023_17_NO_TB
+1,8:06,49ers,Jake Moody 38 yard field goal ,3,0,2023_17_SF_WAS
+1,1:30,49ers,Deebo Samuel 2 yard pass from Brock Purdy (Jake Moody kick),10,0,2023_17_SF_WAS
+2,12:05,Commanders,Joey Slye 47 yard field goal ,10,3,2023_17_SF_WAS
+2,4:33,Commanders,Terry McLaurin 3 yard pass from Sam Howell (Joey Slye kick),10,10,2023_17_SF_WAS
+2,0:19,49ers,Jake Moody 22 yard field goal ,13,10,2023_17_SF_WAS
+3,5:44,49ers,Elijah Mitchell 2 yard rush (Jake Moody kick),20,10,2023_17_SF_WAS
+4,9:20,49ers,Brandon Aiyuk 17 yard pass from Brock Purdy (Jake Moody kick),27,10,2023_17_SF_WAS
+1,1:47,Steelers,Jaylen Warren 18 yard rush (Chris Boswell kick),7,0,2023_17_PIT_SEA
+2,13:50,Seahawks,Kenneth Walker III 13 yard rush (Jason Myers kick),7,7,2023_17_PIT_SEA
+2,10:27,Steelers,Chris Boswell 39 yard field goal ,10,7,2023_17_PIT_SEA
+2,5:30,Seahawks,Jaxon Smith-Njigba 12 yard pass from Geno Smith (Jason Myers kick),10,14,2023_17_PIT_SEA
+2,1:36,Steelers,Najee Harris 9 yard rush (Chris Boswell kick),17,14,2023_17_PIT_SEA
+3,10:47,Seahawks,Jason Myers 43 yard field goal ,17,17,2023_17_PIT_SEA
+3,6:57,Steelers,Najee Harris 4 yard rush (Chris Boswell kick),24,17,2023_17_PIT_SEA
+4,13:30,Seahawks,Jason Myers 42 yard field goal ,24,20,2023_17_PIT_SEA
+4,7:07,Steelers,Chris Boswell 26 yard field goal ,27,20,2023_17_PIT_SEA
+4,4:31,Steelers,Chris Boswell 21 yard field goal ,30,20,2023_17_PIT_SEA
+4,2:01,Seahawks,Jason Myers 24 yard field goal ,30,23,2023_17_PIT_SEA
+1,3:55,Broncos,Wil Lutz 32 yard field goal ,0,3,2023_17_LAC_DEN
+2,9:43,Chargers,Cameron Dicker 36 yard field goal ,3,3,2023_17_LAC_DEN
+2,6:37,Broncos,Lil'Jordan Humphrey 54 yard pass from Jarrett Stidham (Wil Lutz kick),3,10,2023_17_LAC_DEN
+2,1:53,Broncos,Wil Lutz 43 yard field goal ,3,13,2023_17_LAC_DEN
+3,6:20,Chargers,Cameron Dicker 50 yard field goal ,6,13,2023_17_LAC_DEN
+4,11:19,Broncos,Wil Lutz 20 yard field goal ,6,16,2023_17_LAC_DEN
+4,1:17,Chargers,Cameron Dicker 52 yard field goal ,9,16,2023_17_LAC_DEN
+1,6:21,Bengals,Evan McPherson 34 yard field goal ,3,0,2023_17_CIN_KC
+1,2:58,Chiefs,Isiah Pacheco 8 yard pass from Patrick Mahomes (Harrison Butker kick),3,7,2023_17_CIN_KC
+2,11:29,Bengals,Joe Mixon 7 yard pass from Jake Browning (Evan McPherson kick),10,7,2023_17_CIN_KC
+2,6:23,Bengals,Jake Browning 1 yard rush (Evan McPherson kick),17,7,2023_17_CIN_KC
+2,3:44,Chiefs,Harrison Butker 54 yard field goal ,17,10,2023_17_CIN_KC
+2,0:35,Chiefs,Harrison Butker 43 yard field goal ,17,13,2023_17_CIN_KC
+3,4:31,Chiefs,Harrison Butker 27 yard field goal ,17,16,2023_17_CIN_KC
+4,14:09,Chiefs,Harrison Butker 24 yard field goal ,17,19,2023_17_CIN_KC
+4,6:18,Chiefs,Harrison Butker 48 yard field goal ,17,22,2023_17_CIN_KC
+4,2:59,Chiefs,Harrison Butker 46 yard field goal ,17,25,2023_17_CIN_KC
+1,6:43,Packers,Anders Carlson 34 yard field goal ,3,0,2023_17_GB_MIN
+1,5:10,Packers,Jayden Reed 33 yard pass from Jordan Love (Anders Carlson kick),10,0,2023_17_GB_MIN
+2,9:25,Vikings,Greg Joseph 54 yard field goal ,10,3,2023_17_GB_MIN
+2,3:59,Packers,Jordan Love 2 yard rush (Anders Carlson kick),17,3,2023_17_GB_MIN
+2,0:08,Packers,Jayden Reed 25 yard pass from Jordan Love (Anders Carlson kick failed),23,3,2023_17_GB_MIN
+3,0:49,Packers,Bo Melton 9 yard pass from Jordan Love (Anders Carlson kick),30,3,2023_17_GB_MIN
+4,14:06,Vikings,Johnny Mundt 6 yard pass from Nick Mullens (Greg Joseph kick),30,10,2023_17_GB_MIN
+4,6:11,Packers,Anders Carlson 37 yard field goal ,33,10,2023_17_GB_MIN
+1,2:36,Steelers,Najee Harris 6 yard rush (Chris Boswell kick),7,0,2023_18_PIT_BAL
+2,2:19,Ravens,Isaiah Likely 27 yard pass from Tyler Huntley (Justin Tucker kick),7,7,2023_18_PIT_BAL
+4,14:49,Steelers,Diontae Johnson 71 yard pass from Mason Rudolph (Chris Boswell kick),14,7,2023_18_PIT_BAL
+4,3:13,Steelers,Chris Boswell 25 yard field goal ,17,7,2023_18_PIT_BAL
+4,0:16,Ravens,Justin Tucker 36 yard field goal ,17,10,2023_18_PIT_BAL
+1,9:15,Colts,Matt Gay 38 yard field goal ,0,3,2023_18_HOU_IND
+1,9:06,Texans,Nico Collins 75 yard pass from C.J. Stroud (Ka'imi Fairbairn kick),7,3,2023_18_HOU_IND
+2,1:57,Texans,Andrew Beck 1 yard pass from C.J. Stroud (Ka'imi Fairbairn kick),14,3,2023_18_HOU_IND
+2,0:35,Colts,Matt Gay 52 yard field goal ,14,6,2023_18_HOU_IND
+3,9:56,Colts,Jonathan Taylor 49 yard rush (Mo Alie-Cox pass from Gardner Minshew II),14,14,2023_18_HOU_IND
+3,3:39,Texans,Ka'imi Fairbairn 51 yard field goal ,17,14,2023_18_HOU_IND
+4,13:33,Colts,Matt Gay 35 yard field goal ,17,17,2023_18_HOU_IND
+4,6:20,Texans,Devin Singletary 3 yard rush (Ka'imi Fairbairn kick failed),23,17,2023_18_HOU_IND
+4,0:01,Colts,Safety ,23,19,2023_18_HOU_IND
+2,4:13,Buccaneers,Chase McLaughlin 36 yard field goal ,3,0,2023_18_TB_CAR
+2,0:00,Buccaneers,Chase McLaughlin 57 yard field goal ,6,0,2023_18_TB_CAR
+4,10:18,Buccaneers,Chase McLaughlin 39 yard field goal ,9,0,2023_18_TB_CAR
+1,6:07,Bengals,Joe Mixon 1 yard rush (Evan McPherson kick),0,7,2023_18_CLE_CIN
+1,0:48,Bengals,Joe Mixon 6 yard pass from Jake Browning (Evan McPherson kick),0,14,2023_18_CLE_CIN
+2,9:19,Bengals,Andrei Iosivas 3 yard pass from Jake Browning (Evan McPherson kick),0,21,2023_18_CLE_CIN
+2,1:55,Bengals,Evan McPherson 45 yard field goal ,0,24,2023_18_CLE_CIN
+3,3:32,Bengals,Andrei Iosivas 7 yard pass from Jake Browning (Evan McPherson kick),0,31,2023_18_CLE_CIN
+4,8:45,Browns,David Bell 31 yard pass from Jeff Driskel (Riley Patterson kick),7,31,2023_18_CLE_CIN
+4,2:34,Browns,David Bell 24 yard pass from Jeff Driskel (Riley Patterson kick),14,31,2023_18_CLE_CIN
+1,8:06,Lions,Sam LaPorta 2 yard pass from Jared Goff (Michael Badgley kick),0,7,2023_18_MIN_DET
+1,2:12,Lions,Jahmyr Gibbs 3 yard rush (Michael Badgley kick failed),0,13,2023_18_MIN_DET
+2,9:20,Vikings,Greg Joseph 39 yard field goal ,3,13,2023_18_MIN_DET
+2,0:00,Vikings,Greg Joseph 43 yard field goal ,6,13,2023_18_MIN_DET
+3,7:14,Lions,David Montgomery 1 yard rush (Michael Badgley kick),6,20,2023_18_MIN_DET
+3,0:20,Vikings,Justin Jefferson 38 yard pass from Nick Mullens (Greg Joseph kick),13,20,2023_18_MIN_DET
+4,14:45,Lions,Amon-Ra St. Brown 70 yard pass from Jared Goff (Michael Badgley kick),13,27,2023_18_MIN_DET
+4,13:22,Vikings,Jordan Addison 42 yard pass from Nick Mullens (Greg Joseph kick),20,27,2023_18_MIN_DET
+4,8:14,Lions,Michael Badgley 39 yard field goal ,20,30,2023_18_MIN_DET
+1,2:04,Jets,Greg Zuerlein 21 yard field goal ,3,0,2023_18_NYJ_NE
+2,9:32,Patriots,Chad Ryland 30 yard field goal ,3,3,2023_18_NYJ_NE
+2,6:07,Jets,Greg Zuerlein 40 yard field goal ,6,3,2023_18_NYJ_NE
+4,8:08,Jets,Greg Zuerlein 33 yard field goal ,9,3,2023_18_NYJ_NE
+4,1:47,Jets,Breece Hall 50 yard rush (Breece Hall run),17,3,2023_18_NYJ_NE
+1,8:42,Falcons,Jonnu Smith 15 yard pass from Desmond Ridder (Younghoe Koo kick),7,0,2023_18_ATL_NO
+1,5:01,Saints,A.T. Perry 18 yard pass from Derek Carr (Blake Grupe kick),7,7,2023_18_ATL_NO
+1,4:13,Falcons,Bijan Robinson 71 yard pass from Desmond Ridder (Younghoe Koo kick),14,7,2023_18_ATL_NO
+2,11:04,Saints,Kendre Miller 3 yard rush (Blake Grupe kick),14,14,2023_18_ATL_NO
+2,0:56,Saints,Blake Grupe 24 yard field goal ,14,17,2023_18_ATL_NO
+2,0:00,Falcons,Younghoe Koo 30 yard field goal ,17,17,2023_18_ATL_NO
+3,13:01,Saints,Chris Olave 26 yard pass from Derek Carr (Blake Grupe kick),17,24,2023_18_ATL_NO
+3,8:54,Saints,Rashid Shaheed 39 yard pass from Derek Carr (Blake Grupe kick),17,31,2023_18_ATL_NO
+4,9:57,Saints,Blake Grupe 24 yard field goal ,17,34,2023_18_ATL_NO
+4,9:02,Saints,A.T. Perry 6 yard pass from Derek Carr (Blake Grupe kick),17,41,2023_18_ATL_NO
+4,1:10,Saints,Jamaal Williams 1 yard rush (Blake Grupe kick),17,48,2023_18_ATL_NO
+1,9:45,Jaguars,Brandon McManus 44 yard field goal ,3,0,2023_18_JAX_TEN
+1,5:57,Titans,Tyjae Spears 28 yard pass from Ryan Tannehill (Nick Folk kick),3,7,2023_18_JAX_TEN
+2,12:24,Jaguars,Calvin Ridley 59 yard pass from Trevor Lawrence (Brandon McManus kick),10,7,2023_18_JAX_TEN
+2,8:27,Titans,Derrick Henry 18 yard rush (Nick Folk kick),10,14,2023_18_JAX_TEN
+2,3:03,Titans,Tyjae Spears 3 yard rush (Nick Folk kick),10,21,2023_18_JAX_TEN
+2,0:00,Jaguars,Brandon McManus 30 yard field goal ,13,21,2023_18_JAX_TEN
+3,12:45,Titans,DeAndre Hopkins 6 yard pass from Ryan Tannehill (Nick Folk kick),13,28,2023_18_JAX_TEN
+4,14:55,Jaguars,Evan Engram 14 yard pass from Trevor Lawrence (Brandon McManus kick),20,28,2023_18_JAX_TEN
+1,5:05,Seahawks,Jason Myers 33 yard field goal ,3,0,2023_18_SEA_ARI
+2,11:08,Cardinals,Matt Prater 23 yard field goal ,3,3,2023_18_SEA_ARI
+2,7:06,Seahawks,Will Dissly 19 yard pass from Geno Smith (Jason Myers kick),10,3,2023_18_SEA_ARI
+2,1:57,Cardinals,Matt Prater 34 yard field goal ,10,6,2023_18_SEA_ARI
+2,0:00,Seahawks,Jason Myers 29 yard field goal ,13,6,2023_18_SEA_ARI
+3,10:33,Cardinals,James Conner 29 yard rush (Matt Prater kick),13,13,2023_18_SEA_ARI
+4,9:48,Cardinals,Trey McBride 8 yard pass from Kyler Murray (Matt Prater kick),13,20,2023_18_SEA_ARI
+4,1:54,Seahawks,Tyler Lockett 34 yard pass from Geno Smith (Tyler Lockett pass from Geno Smith),21,20,2023_18_SEA_ARI
+1,8:54,Bears,Cairo Santos 50 yard field goal ,3,0,2023_18_CHI_GB
+2,7:20,Packers,Dontayvion Wicks 10 yard pass from Jordan Love (Anders Carlson kick),3,7,2023_18_CHI_GB
+2,1:17,Bears,Cairo Santos 39 yard field goal ,6,7,2023_18_CHI_GB
+3,9:47,Packers,Dontayvion Wicks 12 yard pass from Jordan Love (Anders Carlson kick),6,14,2023_18_CHI_GB
+4,13:03,Bears,Cairo Santos 35 yard field goal ,9,14,2023_18_CHI_GB
+4,10:54,Packers,Anders Carlson 25 yard field goal ,9,17,2023_18_CHI_GB
+1,4:56,Chiefs,Mike Edwards 97 yard fumble return (Harrison Butker kick),7,0,2023_18_KC_LAC
+2,4:03,Chiefs,Harrison Butker 22 yard field goal ,10,0,2023_18_KC_LAC
+2,2:43,Chargers,Cameron Dicker 49 yard field goal ,10,3,2023_18_KC_LAC
+2,0:00,Chargers,Cameron Dicker 40 yard field goal ,10,6,2023_18_KC_LAC
+3,4:11,Chargers,Cameron Dicker 43 yard field goal ,10,9,2023_18_KC_LAC
+4,4:06,Chargers,Cameron Dicker 20 yard field goal ,10,12,2023_18_KC_LAC
+4,0:49,Chiefs,Harrison Butker 41 yard field goal ,13,12,2023_18_KC_LAC
+1,1:44,Raiders,Jakobi Meyers 5 yard rush (Daniel Carlson kick),0,7,2023_18_DEN_LV
+2,10:34,Broncos,Jerry Jeudy 24 yard pass from Jarrett Stidham (Wil Lutz kick),7,7,2023_18_DEN_LV
+2,7:09,Raiders,Daniel Carlson 49 yard field goal ,7,10,2023_18_DEN_LV
+2,0:07,Raiders,Davante Adams 3 yard pass from Aidan O'Connell (Daniel Carlson kick),7,17,2023_18_DEN_LV
+4,14:53,Raiders,Jakobi Meyers 33 yard pass from Aidan O'Connell (Daniel Carlson kick),7,24,2023_18_DEN_LV
+4,10:09,Broncos,Javonte Williams 2 yard rush (Wil Lutz kick),14,24,2023_18_DEN_LV
+4,2:20,Raiders,Daniel Carlson 21 yard field goal ,14,27,2023_18_DEN_LV
+1,6:54,Giants,Mason Crosby 24 yard field goal ,0,3,2023_18_PHI_NYG
+2,9:38,Giants,Saquon Barkley 2 yard rush (Mason Crosby kick),0,10,2023_18_PHI_NYG
+2,5:08,Giants,Saquon Barkley 3 yard rush (Mason Crosby kick),0,17,2023_18_PHI_NYG
+2,1:47,Giants,Darius Slayton 19 yard pass from Tyrod Taylor (Mason Crosby kick),0,24,2023_18_PHI_NYG
+3,1:11,Eagles,Jake Elliott 36 yard field goal ,3,24,2023_18_PHI_NYG
+4,10:15,Eagles,Quez Watkins 16 yard pass from Marcus Mariota (Jake Elliott kick),10,24,2023_18_PHI_NYG
+4,3:39,Giants,Mason Crosby 21 yard field goal ,10,27,2023_18_PHI_NYG
+1,7:27,49ers,Elijah Mitchell 1 yard rush (Jake Moody kick),0,7,2023_18_LA_SF
+1,1:53,Rams,Puka Nacua 19 yard pass from Carson Wentz (Brett Maher kick),7,7,2023_18_LA_SF
+2,6:59,49ers,Sam Darnold 1 yard rush (Jake Moody kick),7,14,2023_18_LA_SF
+2,0:11,49ers,Ronnie Bell 5 yard pass from Sam Darnold (Jake Moody kick failed),7,20,2023_18_LA_SF
+3,4:45,Rams,Tyler Johnson 8 yard pass from Carson Wentz (Brett Maher kick failed),13,20,2023_18_LA_SF
+4,4:56,Rams,Carson Wentz 12 yard rush (Tutu Atwell pass from Carson Wentz),21,20,2023_18_LA_SF
+1,6:34,Cowboys,Jalen Tolbert 3 yard pass from Dak Prescott (Brandon Aubrey kick),7,0,2023_18_DAL_WAS
+2,14:57,Commanders,Brian Robinson Jr. 1 yard pass from Sam Howell (Joey Slye kick),7,7,2023_18_DAL_WAS
+2,7:04,Commanders,Joey Slye 36 yard field goal ,7,10,2023_18_DAL_WAS
+2,4:36,Cowboys,Tony Pollard 1 yard rush (Brandon Aubrey kick),14,10,2023_18_DAL_WAS
+2,0:23,Cowboys,CeeDee Lamb 4 yard pass from Dak Prescott (Brandon Aubrey kick),21,10,2023_18_DAL_WAS
+3,8:42,Cowboys,CeeDee Lamb 6 yard pass from Dak Prescott (Brandon Aubrey kick),28,10,2023_18_DAL_WAS
+3,4:13,Cowboys,Brandin Cooks 5 yard pass from Dak Prescott (Brandon Aubrey kick),35,10,2023_18_DAL_WAS
+4,1:06,Cowboys,Brandon Aubrey 50 yard field goal ,38,10,2023_18_DAL_WAS
+2,8:51,Dolphins,De'Von Achane 25 yard rush (Jason Sanders kick),0,7,2023_18_BUF_MIA
+2,4:31,Bills,Trent Sherfield 6 yard pass from Josh Allen (Tyler Bass kick),7,7,2023_18_BUF_MIA
+2,1:43,Dolphins,Tyreek Hill 3 yard pass from Tua Tagovailoa (Jason Sanders kick),7,14,2023_18_BUF_MIA
+4,13:42,Bills,Deonte Harty 96 yard punt return (Tyler Bass kick),14,14,2023_18_BUF_MIA
+4,7:16,Bills,Dawson Knox 5 yard pass from Josh Allen (Tyler Bass kick),21,14,2023_18_BUF_MIA
+1,5:29,Texans,Ka'imi Fairbairn 21 yard field goal ,0,3,2023_19_CLE_HOU
+1,2:09,Browns,Kareem Hunt 1 yard rush (Riley Patterson kick),7,3,2023_19_CLE_HOU
+1,0:11,Texans,Nico Collins 15 yard pass from C.J. Stroud (Ka'imi Fairbairn kick),7,10,2023_19_CLE_HOU
+2,12:18,Browns,Kareem Hunt 11 yard pass from Joe Flacco (Riley Patterson kick),14,10,2023_19_CLE_HOU
+2,12:00,Texans,Brevin Jordan 76 yard pass from C.J. Stroud (Ka'imi Fairbairn kick),14,17,2023_19_CLE_HOU
+2,1:11,Texans,Dalton Schultz 37 yard pass from C.J. Stroud (Ka'imi Fairbairn kick),14,24,2023_19_CLE_HOU
+3,6:05,Texans,Steven Nelson 82 yard interception return (Ka'imi Fairbairn kick),14,31,2023_19_CLE_HOU
+3,4:06,Texans,Christian Harris 36 yard interception return (Ka'imi Fairbairn kick),14,38,2023_19_CLE_HOU
+4,13:27,Texans,Devin Singletary 19 yard rush (Ka'imi Fairbairn kick),14,45,2023_19_CLE_HOU
+1,11:05,Chiefs,Rashee Rice 11 yard pass from Patrick Mahomes (Harrison Butker kick),0,7,2023_19_MIA_KC
+2,14:51,Chiefs,Harrison Butker 28 yard field goal ,0,10,2023_19_MIA_KC
+2,14:01,Dolphins,Tyreek Hill 53 yard pass from Tua Tagovailoa (Jason Sanders kick),7,10,2023_19_MIA_KC
+2,7:36,Chiefs,Harrison Butker 26 yard field goal ,7,13,2023_19_MIA_KC
+2,0:18,Chiefs,Harrison Butker 32 yard field goal ,7,16,2023_19_MIA_KC
+3,7:49,Chiefs,Harrison Butker 21 yard field goal ,7,19,2023_19_MIA_KC
+4,11:06,Chiefs,Isiah Pacheco 3 yard rush (Harrison Butker kick),7,26,2023_19_MIA_KC
+1,7:08,Packers,Aaron Jones 3 yard rush (Anders Carlson kick),7,0,2023_19_GB_DAL
+2,14:15,Packers,Aaron Jones 1 yard rush (Anders Carlson kick),14,0,2023_19_GB_DAL
+2,3:23,Packers,Dontayvion Wicks 20 yard pass from Jordan Love (Anders Carlson kick failed),20,0,2023_19_GB_DAL
+2,1:50,Packers,Darnell Savage Jr. 64 yard interception return (Anders Carlson kick),27,0,2023_19_GB_DAL
+2,0:00,Cowboys,Jake Ferguson 1 yard pass from Dak Prescott (Brandon Aubrey kick),27,7,2023_19_GB_DAL
+3,9:23,Cowboys,Brandon Aubrey 34 yard field goal ,27,10,2023_19_GB_DAL
+3,6:38,Packers,Aaron Jones 9 yard rush (Anders Carlson kick),34,10,2023_19_GB_DAL
+3,3:03,Cowboys,Tony Pollard 1 yard rush (Brandon Aubrey kick failed),34,16,2023_19_GB_DAL
+3,1:27,Packers,Luke Musgrave 38 yard pass from Jordan Love (Anders Carlson kick),41,16,2023_19_GB_DAL
+4,10:23,Packers,Romeo Doubs 3 yard pass from Jordan Love (Anders Carlson kick),48,16,2023_19_GB_DAL
+4,5:54,Cowboys,Jake Ferguson 7 yard pass from Dak Prescott (Rico Dowdle run),48,24,2023_19_GB_DAL
+4,3:25,Cowboys,Jake Ferguson 14 yard pass from Dak Prescott (Dak Prescott run),48,32,2023_19_GB_DAL
+1,9:30,Lions,David Montgomery 1 yard rush (Michael Badgley kick),0,7,2023_19_LA_DET
+1,4:26,Rams,Brett Maher 24 yard field goal ,3,7,2023_19_LA_DET
+1,1:31,Lions,Jahmyr Gibbs 10 yard rush (Michael Badgley kick),3,14,2023_19_LA_DET
+2,13:24,Rams,Puka Nacua 50 yard pass from Matthew Stafford (Brett Maher kick),10,14,2023_19_LA_DET
+2,7:12,Lions,Sam LaPorta 2 yard pass from Jared Goff (Michael Badgley kick),10,21,2023_19_LA_DET
+2,4:02,Rams,Tutu Atwell 38 yard pass from Matthew Stafford (Brett Maher kick),17,21,2023_19_LA_DET
+3,8:41,Lions,Michael Badgley 54 yard field goal ,17,24,2023_19_LA_DET
+3,2:33,Rams,Brett Maher 27 yard field goal ,20,24,2023_19_LA_DET
+4,8:10,Rams,Brett Maher 29 yard field goal ,23,24,2023_19_LA_DET
+1,7:02,Bills,Dawson Knox 9 yard pass from Josh Allen (Tyler Bass kick),0,7,2023_19_PIT_BUF
+1,4:10,Bills,Dalton Kincaid 29 yard pass from Josh Allen (Tyler Bass kick),0,14,2023_19_PIT_BUF
+2,7:13,Bills,Josh Allen 52 yard rush (Tyler Bass kick),0,21,2023_19_PIT_BUF
+2,1:39,Steelers,Diontae Johnson 10 yard pass from Mason Rudolph (Chris Boswell kick),7,21,2023_19_PIT_BUF
+3,8:50,Steelers,Chris Boswell 40 yard field goal ,10,21,2023_19_PIT_BUF
+3,1:32,Bills,Tyler Bass 45 yard field goal ,10,24,2023_19_PIT_BUF
+4,10:32,Steelers,Calvin Austin III 7 yard pass from Mason Rudolph (Chris Boswell kick),17,24,2023_19_PIT_BUF
+4,6:27,Bills,Khalil Shakir 17 yard pass from Josh Allen (Tyler Bass kick),17,31,2023_19_PIT_BUF
+1,10:02,Buccaneers,Chase McLaughlin 28 yard field goal ,0,3,2023_19_PHI_TB
+1,5:47,Buccaneers,David Moore 44 yard pass from Baker Mayfield (Chase McLaughlin kick),0,10,2023_19_PHI_TB
+2,14:03,Buccaneers,Chase McLaughlin 54 yard field goal ,0,13,2023_19_PHI_TB
+2,11:31,Eagles,Jake Elliott 47 yard field goal ,3,13,2023_19_PHI_TB
+2,5:35,Buccaneers,Chase McLaughlin 48 yard field goal ,3,16,2023_19_PHI_TB
+2,3:06,Eagles,Dallas Goedert 5 yard pass from Jalen Hurts (run failed),9,16,2023_19_PHI_TB
+3,2:18,Buccaneers,"Safety, Jalen Hurts intentional grounding in end zone ",9,18,2023_19_PHI_TB
+3,1:19,Buccaneers,Trey Palmer 56 yard pass from Baker Mayfield (Chase McLaughlin kick),9,25,2023_19_PHI_TB
+4,5:42,Buccaneers,Chris Godwin 23 yard pass from Baker Mayfield (Chase McLaughlin kick),9,32,2023_19_PHI_TB
+1,8:36,Ravens,Justin Tucker 53 yard field goal ,0,3,2023_20_HOU_BAL
+1,0:28,Texans,Ka'imi Fairbairn 50 yard field goal ,3,3,2023_20_HOU_BAL
+2,9:14,Ravens,Nelson Agholor 3 yard pass from Lamar Jackson (Justin Tucker kick),3,10,2023_20_HOU_BAL
+2,4:17,Texans,Steven Sims 67 yard punt return (Ka'imi Fairbairn kick),10,10,2023_20_HOU_BAL
+3,12:04,Ravens,Lamar Jackson 15 yard rush (Justin Tucker kick),10,17,2023_20_HOU_BAL
+4,14:23,Ravens,Isaiah Likely 15 yard pass from Lamar Jackson (Justin Tucker kick),10,24,2023_20_HOU_BAL
+4,6:20,Ravens,Lamar Jackson 8 yard rush (Justin Tucker kick),10,31,2023_20_HOU_BAL
+4,1:56,Ravens,Justin Tucker 43 yard field goal ,10,34,2023_20_HOU_BAL
+1,7:22,Packers,Anders Carlson 29 yard field goal ,3,0,2023_20_GB_SF
+2,8:42,49ers,George Kittle 32 yard pass from Brock Purdy (Jake Moody kick),3,7,2023_20_GB_SF
+2,4:09,Packers,Anders Carlson 29 yard field goal ,6,7,2023_20_GB_SF
+3,9:27,Packers,Bo Melton 19 yard pass from Jordan Love (Anders Carlson kick),13,7,2023_20_GB_SF
+3,7:39,49ers,Christian McCaffrey 39 yard rush (Jake Moody kick),13,14,2023_20_GB_SF
+3,5:23,Packers,Tucker Kraft 2 yard pass from Jordan Love (Aaron Jones pass from Jordan Love),21,14,2023_20_GB_SF
+4,14:56,49ers,Jake Moody 52 yard field goal ,21,17,2023_20_GB_SF
+4,1:07,49ers,Christian McCaffrey 6 yard rush (Jake Moody kick),21,24,2023_20_GB_SF
+1,8:25,Lions,Michael Badgley 23 yard field goal ,0,3,2023_20_TB_DET
+1,4:19,Buccaneers,Chase McLaughlin 43 yard field goal ,3,3,2023_20_TB_DET
+2,12:33,Lions,Josh Reynolds 9 yard pass from Jared Goff (Michael Badgley kick),3,10,2023_20_TB_DET
+2,0:15,Buccaneers,Cade Otton 2 yard pass from Baker Mayfield (Chase McLaughlin kick),10,10,2023_20_TB_DET
+3,3:48,Lions,Craig Reynolds 1 yard rush (Michael Badgley kick),10,17,2023_20_TB_DET
+3,0:10,Buccaneers,Rachaad White 12 yard pass from Baker Mayfield (Chase McLaughlin kick),17,17,2023_20_TB_DET
+4,13:13,Lions,Jahmyr Gibbs 31 yard rush (Michael Badgley kick),17,24,2023_20_TB_DET
+4,6:22,Lions,Amon-Ra St. Brown 9 yard pass from Jared Goff (Michael Badgley kick),17,31,2023_20_TB_DET
+4,4:37,Buccaneers,Mike Evans 16 yard pass from Baker Mayfield (pass failed),23,31,2023_20_TB_DET
+1,8:08,Bills,Tyler Bass 27 yard field goal ,0,3,2023_20_KC_BUF
+1,4:35,Chiefs,Harrison Butker 47 yard field goal ,3,3,2023_20_KC_BUF
+2,13:32,Bills,Josh Allen 5 yard rush (Tyler Bass kick),3,10,2023_20_KC_BUF
+2,9:12,Chiefs,Harrison Butker 29 yard field goal ,6,10,2023_20_KC_BUF
+2,3:33,Chiefs,Travis Kelce 22 yard pass from Patrick Mahomes (Harrison Butker kick),13,10,2023_20_KC_BUF
+2,0:26,Bills,Josh Allen 2 yard rush (Tyler Bass kick),13,17,2023_20_KC_BUF
+3,11:48,Chiefs,Travis Kelce 3 yard pass from Patrick Mahomes (Harrison Butker kick),20,17,2023_20_KC_BUF
+3,3:23,Bills,Khalil Shakir 13 yard pass from Josh Allen (Tyler Bass kick),20,24,2023_20_KC_BUF
+4,14:20,Chiefs,Isiah Pacheco 4 yard rush (Harrison Butker kick),27,24,2023_20_KC_BUF
+1,7:41,Chiefs,Travis Kelce 19 yard pass from Patrick Mahomes (Harrison Butker kick),7,0,2023_21_KC_BAL
+1,4:58,Ravens,Zay Flowers 30 yard pass from Lamar Jackson (Justin Tucker kick),7,7,2023_21_KC_BAL
+2,10:56,Chiefs,Isiah Pacheco 2 yard rush (Harrison Butker kick),14,7,2023_21_KC_BAL
+2,0:04,Chiefs,Harrison Butker 52 yard field goal ,17,7,2023_21_KC_BAL
+4,2:34,Ravens,Justin Tucker 43 yard field goal ,17,10,2023_21_KC_BAL
+1,13:18,Lions,Jameson Williams 42 yard rush (Michael Badgley kick),7,0,2023_21_DET_SF
+1,2:34,Lions,David Montgomery 1 yard rush (Michael Badgley kick),14,0,2023_21_DET_SF
+2,13:49,49ers,Christian McCaffrey 2 yard rush (Jake Moody kick),14,7,2023_21_DET_SF
+2,5:54,Lions,Jahmyr Gibbs 15 yard rush (Michael Badgley kick),21,7,2023_21_DET_SF
+2,0:07,Lions,Michael Badgley 21 yard field goal ,24,7,2023_21_DET_SF
+3,11:02,49ers,Jake Moody 43 yard field goal ,24,10,2023_21_DET_SF
+3,5:17,49ers,Brandon Aiyuk 6 yard pass from Brock Purdy (Jake Moody kick),24,17,2023_21_DET_SF
+3,3:02,49ers,Christian McCaffrey 1 yard rush (Jake Moody kick),24,24,2023_21_DET_SF
+4,9:52,49ers,Jake Moody 33 yard field goal ,24,27,2023_21_DET_SF
+4,3:02,49ers,Elijah Mitchell 3 yard rush (Jake Moody kick),24,34,2023_21_DET_SF
+4,0:56,Lions,Jameson Williams 3 yard pass from Jared Goff (Michael Badgley kick),31,34,2023_21_DET_SF
+2,14:48,49ers,Jake Moody 55 yard field goal ,3,0,2023_22_SF_KC
+2,4:23,49ers,Christian McCaffrey 21 yard pass from Jauan Jennings (Jake Moody kick),10,0,2023_22_SF_KC
+2,0:20,Chiefs,Harrison Butker 28 yard field goal ,10,3,2023_22_SF_KC
+3,5:01,Chiefs,Harrison Butker 57 yard field goal ,10,6,2023_22_SF_KC
+3,2:28,Chiefs,Marquez Valdes-Scantling 16 yard pass from Patrick Mahomes (Harrison Butker kick),10,13,2023_22_SF_KC
+4,11:22,49ers,Jauan Jennings 10 yard pass from Brock Purdy (Jake Moody kick failed),16,13,2023_22_SF_KC
+4,5:46,Chiefs,Harrison Butker 24 yard field goal ,16,16,2023_22_SF_KC
+4,1:53,49ers,Jake Moody 53 yard field goal ,19,16,2023_22_SF_KC
+4,0:03,Chiefs,Harrison Butker 29 yard field goal ,19,19,2023_22_SF_KC
+OT,7:22,49ers,Jake Moody 27 yard field goal ,22,19,2023_22_SF_KC
+OT,0:03,Chiefs,Mecole Hardman 3 yard pass from Patrick Mahomes ,22,25,2023_22_SF_KC

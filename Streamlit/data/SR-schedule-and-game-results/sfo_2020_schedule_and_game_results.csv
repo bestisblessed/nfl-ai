@@ -1,0 +1,18 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 13,4:25PM ET,boxscore,L,,0-1,,Arizona Cardinals,20,24,18,366,243,123,,29,404,224,180,1,3.88,-6.46,0.46
+2,Sun,September 20,1:00PM ET,boxscore,W,,1-1,@,New York Jets,31,13,17,359,177,182,1,17,277,173,104,,11.40,4.92,0.86
+3,Sun,September 27,1:00PM ET,boxscore,W,,2-1,@,New York Giants,36,9,29,420,327,93,,13,231,165,66,3,18.53,10.86,-8.05
+4,Sun,October 4,8:20PM ET,boxscore,L,,2-2,,Philadelphia Eagles,20,25,25,417,301,116,3,18,267,174,93,1,0.02,-0.66,-3.75
+5,Sun,October 11,4:05PM ET,boxscore,L,,2-3,,Miami Dolphins,17,43,19,259,128,131,3,22,436,342,94,,-9.48,-19.36,-0.03
+6,Sun,October 18,8:20PM ET,boxscore,W,,3-3,,Los Angeles Rams,24,16,24,390,268,122,,17,311,198,113,1,12.69,-2.05,-2.53
+7,Sun,October 25,4:25PM ET,boxscore,W,,4-3,@,New England Patriots,33,6,26,467,270,197,2,17,241,147,94,4,22.44,9.49,-6.55
+8,Sun,November 1,4:25PM ET,boxscore,L,,4-4,@,Seattle Seahawks,27,37,24,351,299,52,2,27,350,249,101,,14.29,-17.90,-8.73
+9,Thu,November 5,8:20PM ET,boxscore,L,,4-5,,Green Bay Packers,17,34,17,337,282,55,2,21,405,294,111,,0.24,-19.59,3.72
+10,Sun,November 15,4:25PM ET,boxscore,L,,4-6,@,New Orleans Saints,13,27,21,281,232,49,4,17,237,123,114,2,-8.03,2.66,-6.47
+11,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+12,Sun,November 29,4:05PM ET,boxscore,W,,5-6,@,Los Angeles Rams,23,20,18,345,233,112,3,14,308,182,126,4,-14.81,19.57,-2.68
+13,Mon,December 7,8:15PM ET,boxscore,L,,5-7,,Buffalo Bills,24,34,24,402,316,86,2,31,449,368,81,1,6.59,-18.14,-0.36
+14,Sun,December 13,4:25PM ET,boxscore,L,,5-8,,Washington Football Team,15,23,21,344,236,108,3,12,193,95,98,1,-25.61,19.42,-0.12
+15,Sun,December 20,1:00PM ET,boxscore,L,,5-9,@,Dallas Cowboys,33,41,28,458,308,150,4,15,291,204,87,,11.28,-4.47,-12.91
+16,Sat,December 26,4:30PM ET,boxscore,W,,6-9,@,Arizona Cardinals,20,12,22,398,171,227,1,20,350,230,120,2,9.69,10.15,-10.68
+17,Sun,January 3,4:25PM ET,boxscore,L,,6-10,,Seattle Seahawks,23,26,17,328,242,86,1,21,280,159,121,,2.58,-5.26,-0.32

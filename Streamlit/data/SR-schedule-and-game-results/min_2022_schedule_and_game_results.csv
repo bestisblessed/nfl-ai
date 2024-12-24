@@ -1,0 +1,21 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 11,4:25PM ET,boxscore,W,,1-0,,Green Bay Packers,23,7,19,395,269,126,,21,338,227,111,2,9.99,1.89,1.12
+2,Mon,September 19,8:30PM ET,boxscore,L,,1-1,@,Philadelphia Eagles,7,24,20,264,202,62,3,25,486,323,163,1,-7.86,-14.26,7.37
+3,Sun,September 25,1:00PM ET,boxscore,W,,2-1,,Detroit Lions,28,24,30,373,250,123,1,23,416,277,139,1,11.58,-8.25,1.93
+4,Sun,October 2,9:30AM ET,boxscore,W,,3-1,@,New Orleans Saints,28,25,23,344,263,81,1,19,338,227,111,2,6.41,-7.36,2.69
+5,Sun,October 9,1:00PM ET,boxscore,W,,4-1,,Chicago Bears,29,22,29,429,312,117,1,14,271,193,78,1,21.45,-1.82,-9.74
+6,Sun,October 16,1:00PM ET,boxscore,W,,5-1,@,Miami Dolphins,24,16,11,234,156,78,,23,458,385,73,3,-4.43,8.38,4.75
+7,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+8,Sun,October 30,1:00PM ET,boxscore,W,,6-1,,Arizona Cardinals,34,26,25,381,208,173,1,25,375,297,78,3,10.22,-2.87,3.71
+9,Sun,November 6,1:00PM ET,boxscore,W,,7-1,@,Washington Commanders,20,17,17,301,245,56,1,18,263,126,137,1,-2.12,1.76,2.55
+10,Sun,November 13,1:00PM ET,boxscore,W,OT,8-1,@,Buffalo Bills,33,30,24,481,334,147,2,29,486,311,175,4,4.80,-1.45,0.39
+11,Sun,November 20,4:25PM ET,boxscore,L,,8-2,,Dallas Cowboys,3,40,16,183,110,73,1,23,458,307,151,,-14.35,-24.31,0.94
+12,Thu,November 24,8:20PM ET,boxscore,W,,9-2,,New England Patriots,33,26,23,358,301,57,1,17,409,364,45,,9.14,-11.53,7.59
+13,Sun,December 4,1:00PM ET,boxscore,W,,10-2,,New York Jets,27,22,21,287,159,128,,23,486,366,120,2,5.08,-1.01,0.01
+14,Sun,December 11,1:00PM ET,boxscore,L,,10-3,@,Detroit Lions,23,34,23,416,394,22,2,23,464,330,134,,7.96,-19.88,0.55
+15,Sat,December 17,1:00PM ET,boxscore,W,OT,11-3,,Indianapolis Colts,39,36,32,518,426,92,3,20,341,170,171,1,4.19,10.70,-12.83
+16,Sat,December 24,1:00PM ET,boxscore,W,,12-3,,New York Giants,27,24,23,353,270,83,,23,445,319,126,2,7.38,-6.20,3.12
+17,Sun,January 1,4:25PM ET,boxscore,L,,12-4,@,Green Bay Packers,17,41,18,346,244,102,4,20,315,152,163,,-10.20,-9.54,-4.19
+18,Sun,January 8,1:00PM ET,boxscore,W,,13-4,@,Chicago Bears,29,13,28,482,341,141,2,13,259,141,118,2,16.54,5.75,-5.65
+,,Playoffs,,,,,,,,,,,,,,,,,,,,,,
+Wild Card,Sun,January 15,4:30PM ET,boxscore,L,,13-5,,New York Giants,24,31,21,332,271,61,,28,431,289,142,,13.86,-24.00,3.74
