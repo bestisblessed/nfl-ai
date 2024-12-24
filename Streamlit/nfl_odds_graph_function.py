@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_pdf import PdfPages
 def load_data():
-    file_path = 'data/nfl_odds_movements_circa.csv'
+    file_path = 'data/odds/nfl_odds_movements_circa.csv'
     df = pd.read_csv(file_path)
     filter_date = input("Enter the date to filter (e.g., 'Sun,October 6th'): ")
     df = df[df['game_date'] == filter_date]
