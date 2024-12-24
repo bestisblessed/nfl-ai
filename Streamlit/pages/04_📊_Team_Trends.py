@@ -16,21 +16,21 @@ df_schedule_and_game_results = st.session_state['df_schedule_and_game_results']
 
 dataframes = [df_teams, df_games, df_playerstats, df_team_game_logs, df_schedule_and_game_results]
 
-### --- Home vs Away Record 2023 --- ###
+### --- Home vs Away Record 2024 --- ###
 st.divider()
-st.header("Home vs Away Record 2023 (Reg Season)")
+st.header("Home vs Away Record 2024 (Reg Season)")
 st.write(" ")
 
-games_2023 = df_games[(df_games['season'] == 2023) & (df_games['week'].between(1, 18))]
+games_2024 = df_games[(df_games['season'] == 2024) & (df_games['week'].between(1, 18))]
 win_loss_records = {}
 for team in df_teams['TeamID']:
     # Calculate home win/loss record
-    home_games = games_2023[games_2023['home_team'] == team]
+    home_games = games_2024[games_2024['home_team'] == team]
     home_wins = home_games[home_games['home_score'] > home_games['away_score']].shape[0]
     home_losses = home_games[home_games['home_score'] < home_games['away_score']].shape[0]
 
     # Calculate away win/loss record
-    away_games = games_2023[games_2023['away_team'] == team]
+    away_games = games_2024[games_2024['away_team'] == team]
     away_wins = away_games[away_games['away_score'] > away_games['home_score']].shape[0]
     away_losses = away_games[away_games['away_score'] < away_games['home_score']].shape[0]
     win_loss_records[team] = {
@@ -49,8 +49,8 @@ with col1:
     st.dataframe(home_records_df, use_container_width=True)
     selected_home_team = st.selectbox("Select a team to see their home games", home_records_df.index)
     if selected_home_team:
-        with st.expander(f"Home Games for {selected_home_team} in 2023", expanded=False):
-            home_games = games_2023[(games_2023['home_team'] == selected_home_team) & (games_2023['season'] == 2023) & (games_2023['week'].between(1, 18))]
+        with st.expander(f"Home Games for {selected_home_team} in 2024", expanded=False):
+            home_games = games_2024[(games_2024['home_team'] == selected_home_team) & (games_2024['season'] == 2024) & (games_2024['week'].between(1, 18))]
             home_games_sorted = home_games.sort_values(by='week')
             st.dataframe(home_games_sorted, use_container_width=True)
 with col2:
@@ -58,24 +58,24 @@ with col2:
     st.dataframe(away_records_df, use_container_width=True)
     selected_away_team = st.selectbox("Select a team to see their away games", away_records_df.index)
     if selected_away_team:
-        with st.expander(f"Away Games for {selected_away_team} in 2023", expanded=False):
-            away_games = games_2023[(games_2023['away_team'] == selected_away_team) & (games_2023['season'] == 2023) & (games_2023['week'].between(1, 18))]
+        with st.expander(f"Away Games for {selected_away_team} in 2024", expanded=False):
+            away_games = games_2024[(games_2024['away_team'] == selected_away_team) & (games_2024['season'] == 2024) & (games_2024['week'].between(1, 18))]
             away_games_sorted = away_games.sort_values(by='week')
             st.dataframe(away_games_sorted, use_container_width=True)
 
 
 
 
-### --- Avg PPG and PA Home vs Away 2023 --- ###
+### --- Avg PPG and PA Home vs Away 2024 --- ###
 st.divider()
-st.header("PPG and Points Allowed Home vs Away 2023")
+st.header("PPG and Points Allowed Home vs Away 2024")
 st.markdown("###")
 
 # PPG
 st.markdown("<h5 style='text-align: center; color: grey;'>Average Points Per Game (PPG) - Home vs. Away</h5>", unsafe_allow_html=True)
-games_2023 = df_games[(df_games['season'] == 2023) & (df_games['week'].between(1, 18))]
-avg_points_scored_home = games_2023.groupby('home_team')['home_score'].mean()
-avg_points_scored_away = games_2023.groupby('away_team')['away_score'].mean()
+games_2024 = df_games[(df_games['season'] == 2024) & (df_games['week'].between(1, 18))]
+avg_points_scored_home = games_2024.groupby('home_team')['home_score'].mean()
+avg_points_scored_away = games_2024.groupby('away_team')['away_score'].mean()
 avg_points = pd.concat([avg_points_scored_home, avg_points_scored_away], axis=1) # Combine to get overall averages
 col1, col2 = st.columns((3, 1))
 with col1:
@@ -86,9 +86,9 @@ with col2:
 # PA
 st.write(" ")
 st.markdown("<h5 style='text-align: center; color: grey;'>Average Points Allowed (PA) - Home vs. Away</h5>", unsafe_allow_html=True)
-games_2023 = df_games[(df_games['season'] == 2023) & (df_games['week'].between(1, 18))]
-avg_points_allowed_home = games_2023.groupby('home_team')['away_score'].mean()
-avg_points_allowed_away = games_2023.groupby('away_team')['home_score'].mean()
+games_2024 = df_games[(df_games['season'] == 2024) & (df_games['week'].between(1, 18))]
+avg_points_allowed_home = games_2024.groupby('home_team')['away_score'].mean()
+avg_points_allowed_away = games_2024.groupby('away_team')['home_score'].mean()
 avg_points_allowed = pd.concat([avg_points_allowed_home, avg_points_allowed_away], axis=1) # Combining the two series to get overall averages for each team
 col1, col2 = st.columns((1, 3))
 with col1:      
@@ -97,9 +97,9 @@ with col2:
     st.bar_chart(avg_points_allowed, color=["#FFA500", "#0000FF"], x_label="Teams", y_label="Average Points Allowed", use_container_width=True, stack=False)
 
 
-### --- Avg Passing/Rushing Yards Per Game 2023 --- ###
+### --- Avg Passing/Rushing Yards Per Game 2024 --- ###
 st.divider()
-st.header("Avg Passing/Rushing Yards Per Game 2023")
+st.header("Avg Passing/Rushing Yards Per Game 2024")
 st.write("##")
 
 col1, col2 = st.columns(2)
@@ -122,9 +122,9 @@ with col2:
 
 
 
-### --- Avg Passing/Rushing Yards Allowed Per Game 2023 --- ###
+### --- Avg Passing/Rushing Yards Allowed Per Game 2024 --- ###
 st.divider()
-st.header("Avg Passing+Rushing Yards Allowed Per Game 2023")
+st.header("Avg Passing+Rushing Yards Allowed Per Game 2024")
 st.write("##")
 
 col1, col2 = st.columns(2)
@@ -150,7 +150,7 @@ team_abbreviation_mapping = {
     'crd': 'ari'
 }
 df_schedule_and_game_results['Team'] = df_schedule_and_game_results['Team'].map(team_abbreviation_mapping).fillna(df_schedule_and_game_results['Team'])
-df_schedule_and_game_results_filtered = df_schedule_and_game_results[(df_schedule_and_game_results['Season'] == 2023) & (df_schedule_and_game_results['Week'] >= 1) & (df_schedule_and_game_results['Week'] <= 18)]
+df_schedule_and_game_results_filtered = df_schedule_and_game_results[(df_schedule_and_game_results['Season'] == 2024) & (df_schedule_and_game_results['Week'] >= 1) & (df_schedule_and_game_results['Week'] <= 18)]
 
 # Passing Yards Allowed
 with col1:

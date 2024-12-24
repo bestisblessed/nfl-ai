@@ -16,6 +16,10 @@ csv_file_path_teams = os.path.join(BASE_DIR, 'data/Teams.csv')
 csv_file_path_games = os.path.join(BASE_DIR, 'data/Games.csv')
 csv_file_path_playerstats = os.path.join(BASE_DIR, 'data/PlayerStats.csv')
 csv_file_path_schedule_and_game_results = os.path.join(BASE_DIR, 'data/all_teams_schedule_and_game_results_merged.csv')
+csv_file_path_all_passing_rushing_receiving = os.path.join(BASE_DIR, 'data/all_passing_rushing_receiving.csv')
+
+# csv_file_path_3 = os.path.join(current_dir, 'data/all_passing_rushing_receiving.csv')
+# df_all_passing_rushing_receiving = pd.read_csv(csv_file_path_3)
 
 try:
     df_all_team_game_logs = pd.read_csv(csv_file_path_all_team_game_logs)
@@ -59,6 +63,12 @@ except FileNotFoundError:
     st.error(f"File not found: {csv_file_path_schedule_and_game_results}. Please ensure the file exists.")
     df_schedule_and_game_results = pd.DataFrame()
 
+try:
+    df_all_passing_rushing_receiving = pd.read_csv(csv_file_path_all_passing_rushing_receiving)
+except FileNotFoundError:
+    st.error(f"File not found: {csv_file_path_all_passing_rushing_receiving}. Please ensure the file exists.")
+    df_all_passing_rushing_receiving = pd.DataFrame()
+
 st.session_state['df_all_team_game_logs'] = df_all_team_game_logs
 st.session_state['df_nfl_odds_movements'] = df_nfl_odds_movements
 st.session_state['df_nfl_odds_movements_circa'] = df_nfl_odds_movements_circa
@@ -66,7 +76,7 @@ st.session_state['df_teams'] = df_teams
 st.session_state['df_games'] = df_games
 st.session_state['df_playerstats'] = df_playerstats
 st.session_state['df_schedule_and_game_results'] = df_schedule_and_game_results
-
+st.session_state['df_all_passing_rushing_receiving'] = df_all_passing_rushing_receiving
 
 st.set_page_config(page_title="NFL AI", page_icon="🏈", layout="wide")
 
