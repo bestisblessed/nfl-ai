@@ -1,6 +1,12 @@
 [theme]
 base="dark"
-primaryColor="purple"
+primaryColor="#8b1fc5"
+backgroundColor="#262729"
+secondaryBackgroundColor="#864b9e"
+font="serif"
+
+#base="dark"
+#primaryColor="purple"
 
 #primaryColor="#241773"  # Ravens Purple
 #backgroundColor="#101820"  # Black
