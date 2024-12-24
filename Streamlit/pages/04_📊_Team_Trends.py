@@ -12,6 +12,7 @@ df_teams = st.session_state['df_teams']
 df_games = st.session_state['df_games'] 
 df_playerstats = st.session_state['df_playerstats']
 df_team_game_logs = st.session_state['df_all_team_game_logs']
+df_team_game_logs_2024 = st.session_state['df_all_team_game_logs_2024']
 df_schedule_and_game_results = st.session_state['df_schedule_and_game_results']
 
 dataframes = [df_teams, df_games, df_playerstats, df_team_game_logs, df_schedule_and_game_results]
@@ -106,16 +107,16 @@ col1, col2 = st.columns(2)
 
 # Passing Yards
 with col1:
-    df_team_game_logs_filtered = df_team_game_logs[(df_team_game_logs['week_num'] >= 1) & (df_team_game_logs['week_num'] <= 18)]
-    merged_data = pd.merge(df_team_game_logs_filtered, df_teams, left_on='team_name', right_on='Team', how='left')
+    df_team_game_logs_filtered = df_team_game_logs_2024[(df_team_game_logs_2024['week_num'] >= 1) & (df_team_game_logs_2024['week_num'] <= 18)]
+    merged_data = pd.merge(df_team_game_logs_filtered, df_teams, left_on='Team_Name', right_on='Team', how='left')
     team_passing_yards = merged_data.groupby('TeamID')['pass_yds'].sum().reset_index()
     team_passing_yards_ranked = team_passing_yards.sort_values(by='pass_yds', ascending=False).reset_index(drop=True)
     st.dataframe(team_passing_yards_ranked, use_container_width=True)
 
 # Rushing Yards
 with col2:
-    df_team_game_logs_filtered = df_team_game_logs[(df_team_game_logs['week_num'] >= 1) & (df_team_game_logs['week_num'] <= 18)]
-    merged_data = pd.merge(df_team_game_logs_filtered, df_teams, left_on='team_name', right_on='Team', how='left')
+    df_team_game_logs_filtered = df_team_game_logs_2024[(df_team_game_logs_2024['week_num'] >= 1) & (df_team_game_logs_2024['week_num'] <= 18)]
+    merged_data = pd.merge(df_team_game_logs_filtered, df_teams, left_on='Team_Name', right_on='Team', how='left')
     team_rushing_yards = merged_data.groupby('TeamID')['rush_yds'].sum().reset_index()
     team_rushing_yards_ranked = team_rushing_yards.sort_values(by='rush_yds', ascending=False).reset_index(drop=True)
     st.dataframe(team_rushing_yards_ranked, use_container_width=True)

@@ -157,7 +157,7 @@ df_team_game_logs[['year', 'week', 'away_team', 'home_team']] = df_team_game_log
 df_team_game_logs['year'] = df_team_game_logs['year'].astype(int)
 df_team_game_logs['week'] = df_team_game_logs['week'].astype(int)
 for year in years:
-    df_2023 = df_team_game_logs[(df_team_game_logs['year'] == year) & (df_team_game_logs['week'] <= 18)]
+    df_2024 = df_team_game_logs[(df_team_game_logs['year'] == year) & (df_team_game_logs['week'] <= 18)]
     sack_stats = {
         'team': [],
         'sacks_made': [],
@@ -170,16 +170,16 @@ for year in years:
         'NYJ', 'PHI', 'PIT', 'SF', 'SEA', 'TB', 'TEN', 'WAS'
     ]
     for team in teams:
-        sacks_made = df_2023.loc[(df_2023['home_team'] == team), 'away_pass_sacked'].sum() + \
-                     df_2023.loc[(df_2023['away_team'] == team), 'home_pass_sacked'].sum()
-        sacks_taken = df_2023.loc[(df_2023['home_team'] == team), 'home_pass_sacked'].sum() + \
-                      df_2023.loc[(df_2023['away_team'] == team), 'away_pass_sacked'].sum()
+        sacks_made = df_2024.loc[(df_2024['home_team'] == team), 'away_pass_sacked'].sum() + \
+                     df_2024.loc[(df_2024['away_team'] == team), 'home_pass_sacked'].sum()
+        sacks_taken = df_2024.loc[(df_2024['home_team'] == team), 'home_pass_sacked'].sum() + \
+                      df_2024.loc[(df_2024['away_team'] == team), 'away_pass_sacked'].sum()
         sack_stats['team'].append(team)
         sack_stats['sacks_made'].append(sacks_made)
         sack_stats['sacks_taken'].append(sacks_taken)
     sack_stats_df = pd.DataFrame(sack_stats)
-    sack_stats_df['average_sacks_made'] = sack_stats_df['sacks_made'] / len(df_2023['week'].unique())
-    sack_stats_df['average_sacks_taken'] = sack_stats_df['sacks_taken'] / len(df_2023['week'].unique())
+    sack_stats_df['average_sacks_made'] = sack_stats_df['sacks_made'] / len(df_2024['week'].unique())
+    sack_stats_df['average_sacks_taken'] = sack_stats_df['sacks_taken'] / len(df_2024['week'].unique())
     sacks_made_sorted = sack_stats_df[['team', 'sacks_made', 'average_sacks_made']].sort_values(by='sacks_made', ascending=False)
     sacks_taken_sorted = sack_stats_df[['team', 'sacks_taken', 'average_sacks_taken']].sort_values(by='sacks_taken', ascending=False)
     st.write(sacks_taken_sorted)
@@ -210,6 +210,9 @@ autolabel(rects1, ax1)
 plt.tight_layout()
 st.pyplot(fig)  
 st.divider()
+
+
+
 import streamlit as st
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -237,17 +240,33 @@ plt.figure(figsize=(14, 8))
 ax = sns.barplot(
     x='Team', 
     y='Explosive Play Rate (%)', 
-    df_team_game_logs=df, 
+    data=df,
     palette="coolwarm"
 )
 for index, value in enumerate(df['Explosive Play Rate (%)']):
     ax.text(index, value + 0.2, f'{value}%', ha='center', va='bottom', fontsize=10, fontweight='bold')
+
+# Add this mapping dictionary after the teams list
+team_abbrev_mapping = {
+    'crd': 'ARI', 'atl': 'ATL', 'rav': 'BAL', 'buf': 'BUF', 
+    'car': 'CAR', 'chi': 'CHI', 'cin': 'CIN', 'cle': 'CLE',
+    'dal': 'DAL', 'den': 'DEN', 'det': 'DET', 'gnb': 'GB',
+    'htx': 'HOU', 'clt': 'IND', 'jax': 'JAX', 'kan': 'KC',
+    'sdg': 'LAC', 'ram': 'LAR', 'rai': 'LVR', 'mia': 'MIA',
+    'min': 'MIN', 'nwe': 'NE', 'nor': 'NO', 'nyg': 'NYG',
+    'nyj': 'NYJ', 'phi': 'PHI', 'pit': 'PIT', 'sea': 'SEA',
+    'sfo': 'SF', 'tam': 'TB', 'oti': 'TEN', 'was': 'WAS'
+}
+
+# Update the add_team_logo function to use the mapping
 def add_team_logo(axes, team_abbreviation, xpos, ypos):
-    img_path = f'images/team-logos/{team_abbreviation}.png'  
+    mapped_team = team_abbrev_mapping[team_abbreviation]
+    img_path = f'images/team-logos/{mapped_team}.png'  
     logo = mpimg.imread(img_path)
     imagebox = OffsetImage(logo, zoom=0.15)
     ab = AnnotationBbox(imagebox, (xpos, ypos), frameon=False, box_alignment=(0.5, -0.15))
     axes.add_artist(ab)
+
 for i, team in enumerate(df['Team']):
     add_team_logo(ax, team, i, 0)
 plt.title('Explosive Play Rates After Week 3 2024 NFL Season\n(10+ yard run or 20+ yard pass)', fontsize=14, weight='bold')
@@ -257,6 +276,8 @@ ax.set_xticklabels([''] * len(teams))
 plt.grid(True, axis='y', linestyle='--', alpha=0.7)
 st.pyplot(plt)
 st.divider()
+
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
@@ -273,7 +294,7 @@ df_team_game_logs[['year', 'week', 'away_team', 'home_team']] = df_team_game_log
 df_team_game_logs['year'] = df_team_game_logs['year'].astype(int)
 df_team_game_logs['week'] = df_team_game_logs['week'].astype(int)
 for year in years:
-    df_2023 = df_team_game_logs[(df_team_game_logs['year'] == year) & (df_team_game_logs['week'] <= 18)]
+    df_2024 = df_team_game_logs[(df_team_game_logs['year'] == year) & (df_team_game_logs['week'] <= 18)]
     sack_stats = {
         'team': [],
         'sacks_made': [],
@@ -286,47 +307,47 @@ for year in years:
         'NYJ', 'PHI', 'PIT', 'SF', 'SEA', 'TB', 'TEN', 'WAS'
     ]
     for team in teams:
-        sacks_made = df_2023.loc[(df_2023['home_team'] == team), 'away_pass_sacked'].sum() + \
-                     df_2023.loc[(df_2023['away_team'] == team), 'home_pass_sacked'].sum()
-        sacks_taken = df_2023.loc[(df_2023['home_team'] == team), 'home_pass_sacked'].sum() + \
-                      df_2023.loc[(df_2023['away_team'] == team), 'away_pass_sacked'].sum()
+        sacks_made = df_2024.loc[(df_2024['home_team'] == team), 'away_pass_sacked'].sum() + \
+                     df_2024.loc[(df_2024['away_team'] == team), 'home_pass_sacked'].sum()
+        sacks_taken = df_2024.loc[(df_2024['home_team'] == team), 'home_pass_sacked'].sum() + \
+                      df_2024.loc[(df_2024['away_team'] == team), 'away_pass_sacked'].sum()
         sack_stats['team'].append(team)
         sack_stats['sacks_made'].append(sacks_made)
         sack_stats['sacks_taken'].append(sacks_taken)
 sack_stats_df = pd.DataFrame(sack_stats)
 team_logos = {
-    'ARI': 'images/team-logos/crd.png',
-    'ATL': 'images/team-logos/atl.png',
-    'BAL': 'images/team-logos/rav.png',
-    'BUF': 'images/team-logos/buf.png',
-    'CAR': 'images/team-logos/car.png',
-    'CHI': 'images/team-logos/chi.png',
-    'CIN': 'images/team-logos/cin.png',
-    'CLE': 'images/team-logos/cle.png',
-    'DAL': 'images/team-logos/dal.png',
-    'DEN': 'images/team-logos/den.png',
-    'DET': 'images/team-logos/det.png',
-    'GB': 'images/team-logos/gnb.png',
-    'HOU': 'images/team-logos/htx.png',
-    'IND': 'images/team-logos/clt.png',
-    'JAX': 'images/team-logos/jax.png',
-    'KC': 'images/team-logos/kan.png',
-    'LAC': 'images/team-logos/sdg.png',
-    'LAR': 'images/team-logos/ram.png',
-    'LVR': 'images/team-logos/rai.png',
-    'MIA': 'images/team-logos/mia.png',
-    'MIN': 'images/team-logos/min.png',
-    'NE': 'images/team-logos/nwe.png',
-    'NO': 'images/team-logos/nor.png',
-    'NYG': 'images/team-logos/nyg.png',
-    'NYJ': 'images/team-logos/nyj.png',
-    'PHI': 'images/team-logos/phi.png',
-    'PIT': 'images/team-logos/pit.png',
-    'SEA': 'images/team-logos/sea.png',
-    'SF': 'images/team-logos/sfo.png',
-    'TB': 'images/team-logos/tam.png',
-    'TEN': 'images/team-logos/oti.png',
-    'WAS': 'images/team-logos/was.png',
+    'ARI': 'images/team-logos/ARI.png',
+    'ATL': 'images/team-logos/ATL.png',
+    'BAL': 'images/team-logos/BAL.png',
+    'BUF': 'images/team-logos/BUF.png',
+    'CAR': 'images/team-logos/CAR.png',
+    'CHI': 'images/team-logos/CHI.png',
+    'CIN': 'images/team-logos/CIN.png',
+    'CLE': 'images/team-logos/CLE.png',
+    'DAL': 'images/team-logos/DAL.png',
+    'DEN': 'images/team-logos/DEN.png',
+    'DET': 'images/team-logos/DET.png',
+    'GB': 'images/team-logos/GB.png',
+    'HOU': 'images/team-logos/HOU.png',
+    'IND': 'images/team-logos/IND.png',
+    'JAX': 'images/team-logos/JAX.png',
+    'KC': 'images/team-logos/KC.png',
+    'LAC': 'images/team-logos/LAC.png',
+    'LAR': 'images/team-logos/LAR.png',
+    'LVR': 'images/team-logos/LVR.png',
+    'MIA': 'images/team-logos/MIA.png',
+    'MIN': 'images/team-logos/MIN.png',
+    'NE': 'images/team-logos/NE.png',
+    'NO': 'images/team-logos/NO.png',
+    'NYG': 'images/team-logos/NYG.png',
+    'NYJ': 'images/team-logos/NYJ.png',
+    'PHI': 'images/team-logos/PHI.png',
+    'PIT': 'images/team-logos/PIT.png',
+    'SEA': 'images/team-logos/SEA.png',
+    'SF': 'images/team-logos/SF.png',
+    'TB': 'images/team-logos/TB.png',
+    'TEN': 'images/team-logos/TEN.png',
+    'WAS': 'images/team-logos/WAS.png',
 }
 def autolabel_with_logos(rects, ax, labels):
     """Attach an image above each bar displaying the team logo."""
@@ -335,7 +356,7 @@ def autolabel_with_logos(rects, ax, labels):
         height = rect.get_height()
         imagebox = OffsetImage(img, zoom=0.15)  
         ab = AnnotationBbox(imagebox, (rect.get_x() + rect.get_width() / 2, height + 1),
-                            frameon=False, xycoords='df_team_game_logs', box_alignment=(0.5, 0))
+                            frameon=False, xycoords='data', box_alignment=(0.5, 0))
         ax.add_artist(ab)
 sack_stats_df_sorted = sack_stats_df.sort_values(by=['sacks_made', 'sacks_taken'], ascending=False)
 teams = sack_stats_df_sorted['team'].tolist()

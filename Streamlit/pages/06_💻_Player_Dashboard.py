@@ -33,7 +33,7 @@ def fetch_player_names_and_image():
     SELECT DISTINCT player_display_name, headshot_url
     FROM PlayerStats
     WHERE position IN ('WR', 'TE')
-    AND season = 2023
+    AND season = 2024
     """
     player_data = pd.read_sql_query(query, conn)
     conn.close()
