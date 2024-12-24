@@ -160,16 +160,18 @@ with left_column:
     st.write('''
         - Historical AI chatbot since 2000 season
         - Predictive modeling
+        - Odds movement dashboard
         - Game outcomes
         - Player performances
-        - Standings & league leaders
+        - Standings & league leaders 
         - Arbitrage opportunities
         - Random analysis
-
-        If this all interests you, this is the spot.
     ''')
 with right_column:
-    st_lottie(lottie_picture1, height=400, width=400, key='lottie1')
+    # st_lottie(lottie_picture1, height=400, width=400, key='lottie1')
+    image_path = os.path.join(BASE_DIR, 'images/justin-jefferson-2.jpg')
+    right_column_image = Image.open(image_path)
+    st.image(right_column_image, width=400)
 
 # # ---- Some Samples ---- #
 # st.divider()
@@ -229,13 +231,13 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 image1_path = os.path.join(current_dir, 'images/ceedee.jpg')
 image2_path = os.path.join(current_dir, 'images/dez2.jpg')
 image3_path = os.path.join(current_dir, 'images/irvin.jpg')
-image4_path = os.path.join(current_dir, 'images/jettas.jpg')
+# image4_path = os.path.join(current_dir, 'images/jettas.jpg')
 
 # Load the images using their absolute paths
 image1list = Image.open(image1_path)
 image2list = Image.open(image2_path)
 image3list = Image.open(image3_path)
-image4list = Image.open(image4_path)
+# image4list = Image.open(image4_path)
 
 # col1, col2, col3 = st.columns(3)
 col1, col2, col3 = st.columns([1, 1.25, 1])  # Proportions for the columns
@@ -248,12 +250,10 @@ with col3:
     st.image(image3list, use_container_width=True, caption="Irvin 88")
 
 ### JJettas
-st.write('##')
-col1, col2, col3 = st.columns([1, 4, 1])
-with col2:
-    st.image(image4list, use_container_width=True, caption="JJettas")
-# st.image(image4list, use_column_width=True, caption="JJettas")
-# st.image(image4list, width=200, caption="JJettas")
+# st.write('##')
+# col1, col2, col3 = st.columns([1, 4, 1])
+# with col2:
+#     st.image(image4list, use_container_width=True, caption="JJettas")
 
 ### Video
 video1 = 'https://www.youtube.com/watch?v=K8RQkt3Ee0Y'
