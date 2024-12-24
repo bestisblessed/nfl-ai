@@ -1,9 +1,11 @@
 [theme]
 base="dark"
-primaryColor="#241773"  # Ravens Purple
-backgroundColor="#101820"  # Black
-secondaryBackgroundColor="#9E7C0C"  # Gold
-textColor="#FFFFFF"  # White
+primaryColor="purple"
+
+#primaryColor="#241773"  # Ravens Purple
+#backgroundColor="#101820"  # Black
+#secondaryBackgroundColor="#9E7C0C"  # Gold
+#textColor="#FFFFFF"  # White
 
 #base="dark"
 #primaryColor="#008E97"  # Dolphins Aqua
