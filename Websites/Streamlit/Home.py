@@ -171,7 +171,7 @@ with right_column:
     # st_lottie(lottie_picture1, height=400, width=400, key='lottie1')
     image_path = os.path.join(BASE_DIR, 'images/justin-jefferson-2.jpg')
     right_column_image = Image.open(image_path)
-    st.image(right_column_image, width=400)
+    st.image(right_column_image, use_container_width=True)
 
 # # ---- Some Samples ---- #
 # st.divider()
