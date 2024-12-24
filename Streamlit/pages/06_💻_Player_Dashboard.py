@@ -30,24 +30,22 @@ db_path = os.path.join(current_dir, '../data', 'nfl.db')
 def fetch_player_names_and_image():
     conn = sqlite3.connect(db_path)
     query = """
-    SELECT DISTINCT player_display_name
+    SELECT DISTINCT player_display_name, headshot_url
     FROM PlayerStats
     WHERE position IN ('WR', 'TE')
     AND season = 2023
     """
-    player_names = pd.read_sql_query(query, conn)['player_display_name'].tolist()
+    player_data = pd.read_sql_query(query, conn)
     conn.close()
-    # selected_player = st.selectbox("Select Player", options=player_names)
+    
+    player_names = player_data['player_display_name'].tolist()
     default_index = player_names.index("Justin Jefferson") if "Justin Jefferson" in player_names else 0
     selected_player = st.selectbox("Select Player", options=player_names, index=default_index)
-    first_name, last_name = selected_player.lower().split(' ')
-    image_path = None
-    for ext in ['png', 'jpg', 'jpeg']:
-        potential_path = os.path.join(image_folder, f"{first_name}_{last_name}.{ext}")
-        if os.path.exists(potential_path):
-            image_path = potential_path
-            break
-    return selected_player, image_path
+    
+    # Get the headshot URL for the selected player
+    headshot_url = player_data[player_data['player_display_name'] == selected_player]['headshot_url'].iloc[0]
+    
+    return selected_player, headshot_url
 
 # 1. Fetch last 6 games and generate a graph using Plotly
 def fetch_last_6_games_and_plot(player_name):
@@ -82,10 +80,12 @@ def fetch_last_6_games_and_plot(player_name):
 # 0. Player Input
 col1, col2 = st.columns([0.5, 1])
 with col1:
-    player_name, image_path = fetch_player_names_and_image() # Fetch the player and image
-    if image_path:
-        image = Image.open(image_path)
-        st.image(image, caption=player_name, use_column_width=True)
+    player_name, headshot_url = fetch_player_names_and_image()
+    if pd.notna(headshot_url):  # Check if URL exists
+        try:
+            st.image(headshot_url, caption=player_name, use_container_width=True)
+        except Exception as e:
+            st.write(f"Could not load image for {player_name}")
     else:
         st.write(f"No image available for {player_name}")
 with col2:
