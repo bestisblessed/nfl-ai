@@ -78,8 +78,8 @@ for game in games_data:
     # st.subheader(game['day_and_matchup_column_name'])
     # st.markdown(game['day_and_matchup_column_name'])
     # st.markdown(f"<h2 style='color: purple; font-size: 24px; font-weight: bold;'>{game['day_and_matchup_column_name']}</h2>", unsafe_allow_html=True)
-    st.markdown(f"<h2 style='font-weight: bold; color: #512D6D;'>{game['teams'][0]} vs {game['teams'][1]}</h2>", unsafe_allow_html=True)
-    st.markdown(f"<h3 style='font-weight: bold; color: #512D6D; text-shadow: -1px -1px 0 #C5B783, 1px -1px 0 #C5B783, -1px 1px 0 #C5B783, 1px 1px 0 #C5B783;'> {game['day_and_matchup_column_name']} </h3>", unsafe_allow_html=True)
+    st.markdown(f"<h2 style='font-weight: bold; color: #512D6D; text-shadow: -1px -1px 0 #C5B783, 1px -1px 0 #C5B783, -1px 1px 0 #C5B783, 1px 1px 0 #C5B783;'>{game['teams'][0]} vs {game['teams'][1]}</h2>", unsafe_allow_html=True)
+    st.markdown(f"<h3 style='font-weight: bold; color: #512D6D;'> {game['day_and_matchup_column_name']} </h3>", unsafe_allow_html=True)
     st.text(f"Game Time: {game['time'].replace('splits', '').strip()}")
     # st.markdown(f"<h5 style='font-weight: bold; color: #512D6D; text-shadow: -1px -1px 0 #C5B783, 1px -1px 0 #C5B783, -1px 1px 0 #C5B783, 1px 1px 0 #C5B783;'>Game Time: {game['time'].replace('splits', '').strip()}</h5>", unsafe_allow_html=True)
     df = pd.DataFrame({
