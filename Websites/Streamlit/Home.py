@@ -162,7 +162,7 @@ st.write('Welcome to NFL AI')
 # ---- Introduction and Bio ---- #
 st.divider()
 st.header('Introduction')
-left_column, right_column = st.columns(2)
+left_column, right_column = st.columns([1, 2])  # Right column gets twice the width
 with left_column:
     st.write('##')
     st.write('''
@@ -179,7 +179,7 @@ with right_column:
     # st_lottie(lottie_picture1, height=400, width=400, key='lottie1')
     image_path = os.path.join(BASE_DIR, 'images/justin-jefferson-2.jpg')
     right_column_image = Image.open(image_path)
-    st.image(right_column_image, use_container_width=True, width=800)
+    st.image(right_column_image, use_container_width=True)  # Increased width significantly
 
 # # ---- Some Samples ---- #
 # st.divider()
