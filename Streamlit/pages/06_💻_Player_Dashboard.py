@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import os
-from Home import df_teams, df_games, df_playerstats, df_team_game_logs, df_schedule_and_game_results
+# from Home import df_teams, df_games, df_playerstats, df_team_game_logs, df_schedule_and_game_results
 import plotly
 import plotly.graph_objects as go
 from PIL import Image

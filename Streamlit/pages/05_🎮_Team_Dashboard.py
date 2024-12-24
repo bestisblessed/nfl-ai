@@ -19,7 +19,7 @@ df_playerstats = st.session_state['df_playerstats']
 df_team_game_logs = st.session_state['df_all_team_game_logs']
 df_schedule_and_game_results = st.session_state['df_schedule_and_game_results']
 df_all_passing_rushing_receiving = st.session_state['df_all_passing_rushing_receiving']
-df_team_game_logs_2024 = st.session_state['df_all_team_game_logs']
+df_team_game_logs_2024 = st.session_state['df_all_team_game_logs_2024']
 st.divider()
 
 ### Average Pass Yards and Rush Yards per Game for NFL Teams (2024 Season) ###
