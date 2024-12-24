@@ -34,7 +34,7 @@ def run_nfl_chatbot(OPENAI_API_KEY):
     # )
     # st.write(assistant)
     
-    assistant_nfl = 'asst_o94cCYcWOKHRDkuGJiEyvzhM'
+    assistant_nfl = 'asst_C3T0Ar98YoIh9KvCugxDkL4u' # gpt4omini
     # assistant_nfl_gpt4omini = 'asst_W7LKh5Vp6eRu6e2EZlaDt2Sn'
     assistant = client.beta.assistants.retrieve(assistant_nfl)
     
