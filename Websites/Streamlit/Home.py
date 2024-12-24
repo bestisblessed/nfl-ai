@@ -269,13 +269,14 @@ st.write('##')
 col1, col2, col3 = st.columns([1, 4, 1])
 with col2:
     st.video(video1)
-    st.caption("Legendary")
+    # st.caption("Legendary")
+    st.subtitles("Legendary")
 # st.video(video1)
 
 # ---- Contact Me ---- #
 st.divider()
 st.header('Contact Me')
-st.write('##')
+# st.write('##')
 # st.write('Hover over this text for more information [?](Your help text here)')
 st.markdown('By Tyler Durette')
 st.markdown("NFL AI © 2023 | [GitHub](https://github.com/bestisblessed) | [Contact Me](tyler.durette@gmail.com)")
