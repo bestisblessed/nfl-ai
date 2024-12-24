@@ -7,6 +7,59 @@ from streamlit_lottie import st_lottie
 from PIL import Image
 import os
 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+csv_file_path_all_team_game_logs = os.path.join(BASE_DIR, 'data/all_team_game_logs.csv')
+csv_file_path_odds = os.path.join(BASE_DIR, 'data/odds/nfl_odds_movements.csv')
+csv_file_path_circa = os.path.join(BASE_DIR, 'data/odds/nfl_odds_movements_circa.csv')
+csv_file_path_teams = os.path.join(BASE_DIR, 'data/Teams.csv')
+csv_file_path_games = os.path.join(BASE_DIR, 'data/Games.csv')
+csv_file_path_playerstats = os.path.join(BASE_DIR, 'data/PlayerStats.csv')
+
+try:
+    df_all_team_game_logs = pd.read_csv(csv_file_path_all_team_game_logs)
+except FileNotFoundError:
+    st.error(f"File not found: {csv_file_path_all_team_game_logs}. Please ensure the file exists.")
+    df_all_team_game_logs = pd.DataFrame()
+
+try:
+    df_nfl_odds_movements = pd.read_csv(csv_file_path_odds)
+except FileNotFoundError:
+    st.error(f"File not found: {csv_file_path_odds}. Please ensure the file exists.")
+    df_nfl_odds_movements = pd.DataFrame()
+
+try:
+    df_nfl_odds_movements_circa = pd.read_csv(csv_file_path_circa)
+except FileNotFoundError:
+    st.error(f"File not found: {csv_file_path_circa}. Please ensure the file exists.")
+    df_nfl_odds_movements_circa = pd.DataFrame()
+
+try:
+    df_teams = pd.read_csv(csv_file_path_teams)
+except FileNotFoundError:
+    st.error(f"File not found: {csv_file_path_teams}. Please ensure the file exists.")
+    df_teams = pd.DataFrame()
+
+try:
+    df_games = pd.read_csv(csv_file_path_games)
+except FileNotFoundError:
+    st.error(f"File not found: {csv_file_path_games}. Please ensure the file exists.")
+    df_games = pd.DataFrame()
+
+try:
+    df_playerstats = pd.read_csv(csv_file_path_playerstats)
+except FileNotFoundError:
+    st.error(f"File not found: {csv_file_path_playerstats}. Please ensure the file exists.")
+    df_playerstats = pd.DataFrame()
+
+st.session_state['df_all_team_game_logs'] = df_all_team_game_logs
+st.session_state['df_nfl_odds_movements'] = df_nfl_odds_movements
+st.session_state['df_nfl_odds_movements_circa'] = df_nfl_odds_movements_circa
+st.session_state['df_teams'] = df_teams
+st.session_state['df_games'] = df_games
+st.session_state['df_playerstats'] = df_playerstats
+
+
 st.set_page_config(page_title="NFL AI", page_icon="🏈", layout="wide")
 
 # ---- Titles ---- #
@@ -18,50 +71,50 @@ st.write('Welcome to NFL AI')
 # st.image(justin_jefferson_path, use_column_width=True)
 # st.image(justin_jefferson_path, width=300)
 
-# Get the current directory of the script (Home.py)
-current_dir = os.path.dirname(os.path.abspath(__file__))
+# # Get the current directory of the script (Home.py)
+# current_dir = os.path.dirname(os.path.abspath(__file__))
 
-# Load the CSV data into a DataFrame
+# # Load the CSV data into a DataFrame
 
-csv_file_path = os.path.join(current_dir, 'data/all_team_game_logs.csv')
-df_team_game_logs = pd.read_csv(csv_file_path)
-csv_file_path_4 = os.path.join(current_dir, 'data/SR-game-logs/all_teams_game_logs_2024.csv')
-df_team_game_logs_2024 = pd.read_csv(csv_file_path_4)
-csv_file_path_2 = os.path.join(current_dir, 'data/all_teams_schedule_and_game_results_merged.csv')
-df_schedule_and_game_results = pd.read_csv(csv_file_path_2)
-csv_file_path_3 = os.path.join(current_dir, 'data/all_passing_rushing_receiving.csv')
-df_all_passing_rushing_receiving = pd.read_csv(csv_file_path_3)
-# csv_file_path_5 = os.path.join(current_dir, 'data/odds/nfl_odds_movements.csv')
-# df_nfl_odds_movements = pd.read_csv(csv_file_path_5)
+# csv_file_path = os.path.join(current_dir, 'data/all_team_game_logs.csv')
+# df_team_game_logs = pd.read_csv(csv_file_path)
+# csv_file_path_4 = os.path.join(current_dir, 'data/SR-game-logs/all_teams_game_logs_2024.csv')
+# df_team_game_logs_2024 = pd.read_csv(csv_file_path_4)
+# csv_file_path_2 = os.path.join(current_dir, 'data/all_teams_schedule_and_game_results_merged.csv')
+# df_schedule_and_game_results = pd.read_csv(csv_file_path_2)
+# csv_file_path_3 = os.path.join(current_dir, 'data/all_passing_rushing_receiving.csv')
+# df_all_passing_rushing_receiving = pd.read_csv(csv_file_path_3)
+# # csv_file_path_5 = os.path.join(current_dir, 'data/odds/nfl_odds_movements.csv')
+# # df_nfl_odds_movements = pd.read_csv(csv_file_path_5)
 
-# Add these lines where you load other CSV files
-csv_file_path_odds = os.path.join(current_dir, 'data/odds/nfl_odds_movements.csv')
-csv_file_path_circa = os.path.join(current_dir, 'data/odds/nfl_odds_movements_circa.csv')
+# # Add these lines where you load other CSV files
+# csv_file_path_odds = os.path.join(current_dir, 'data/odds/nfl_odds_movements.csv')
+# csv_file_path_circa = os.path.join(current_dir, 'data/odds/nfl_odds_movements_circa.csv')
 
-try:
-    df_nfl_odds_movements = pd.read_csv(csv_file_path_odds)
-    df_nfl_odds_movements_circa = pd.read_csv(csv_file_path_circa)
-except FileNotFoundError:
-    st.warning("Odds data files not found. Some features may be unavailable.")
-    df_nfl_odds_movements = pd.DataFrame()
-    df_nfl_odds_movements_circa = pd.DataFrame()
+# try:
+#     df_nfl_odds_movements = pd.read_csv(csv_file_path_odds)
+#     df_nfl_odds_movements_circa = pd.read_csv(csv_file_path_circa)
+# except FileNotFoundError:
+#     st.warning("Odds data files not found. Some features may be unavailable.")
+#     df_nfl_odds_movements = pd.DataFrame()
+#     df_nfl_odds_movements_circa = pd.DataFrame()
 
-# ---- Loading Data ---- #
-csv_file_path_teams = os.path.join(current_dir, 'data/Teams.csv')
-csv_file_path_games = os.path.join(current_dir, 'data/Games.csv')
-csv_file_path_playerstats = os.path.join(current_dir, 'data/PlayerStats.csv')
-df_teams = pd.read_csv(csv_file_path_teams)
-df_games = pd.read_csv(csv_file_path_games)
-df_playerstats = pd.read_csv(csv_file_path_playerstats)
-st.session_state['df_teams'] = df_teams
-st.session_state['df_games'] = df_games
-st.session_state['df_playerstats'] = df_playerstats
-st.session_state['df_team_game_logs'] = df_team_game_logs
-st.session_state['df_schedule_and_game_results'] = df_schedule_and_game_results
-st.session_state['df_all_passing_rushing_receiving'] = df_all_passing_rushing_receiving
-st.session_state['df_team_game_logs_2024'] = df_team_game_logs_2024
-st.session_state['df_nfl_odds_movements'] = df_nfl_odds_movements
-st.session_state['df_nfl_odds_movements_circa'] = df_nfl_odds_movements_circa
+# # ---- Loading Data ---- #
+# csv_file_path_teams = os.path.join(current_dir, 'data/Teams.csv')
+# csv_file_path_games = os.path.join(current_dir, 'data/Games.csv')
+# csv_file_path_playerstats = os.path.join(current_dir, 'data/PlayerStats.csv')
+# df_teams = pd.read_csv(csv_file_path_teams)
+# df_games = pd.read_csv(csv_file_path_games)
+# df_playerstats = pd.read_csv(csv_file_path_playerstats)
+# st.session_state['df_teams'] = df_teams
+# st.session_state['df_games'] = df_games
+# st.session_state['df_playerstats'] = df_playerstats
+# st.session_state['df_team_game_logs'] = df_team_game_logs
+# st.session_state['df_schedule_and_game_results'] = df_schedule_and_game_results
+# st.session_state['df_all_passing_rushing_receiving'] = df_all_passing_rushing_receiving
+# st.session_state['df_team_game_logs_2024'] = df_team_game_logs_2024
+# st.session_state['df_nfl_odds_movements'] = df_nfl_odds_movements
+# st.session_state['df_nfl_odds_movements_circa'] = df_nfl_odds_movements_circa
 
 # ---- Loading Other Files ---- #
 def load_lottie_pictures(url):
@@ -164,18 +217,18 @@ image4list = Image.open(image4_path)
 # col1, col2, col3 = st.columns(3)
 col1, col2, col3 = st.columns([1, 1.25, 1])  # Proportions for the columns
 with col1:
-    st.image(image1list, use_column_width=True, caption="Ceedee 88")
+    st.image(image1list, use_container_width=True, caption="Ceedee 88")
 with col2:
-    st.image(image2list, use_column_width=True, caption="Bryant 88")
+    st.image(image2list, use_container_width=True, caption="Bryant 88")
     # st.image(image2list, height=400, caption="Bryant 88")  # Specify height for this image
 with col3:
-    st.image(image3list, use_column_width=True, caption="Irvin 88")
+    st.image(image3list, use_container_width=True, caption="Irvin 88")
 
 ### JJettas
 st.write('##')
 col1, col2, col3 = st.columns([1, 4, 1])
 with col2:
-    st.image(image4list, use_column_width=True, caption="JJettas")
+    st.image(image4list, use_container_width=True, caption="JJettas")
 # st.image(image4list, use_column_width=True, caption="JJettas")
 # st.image(image4list, width=200, caption="JJettas")
 
