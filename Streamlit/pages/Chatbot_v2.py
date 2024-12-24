@@ -13,29 +13,31 @@ OPENAI_API_KEY = st.sidebar.text_input("Enter your OpenAI API key:", type='passw
 if OPENAI_API_KEY:
     # run_nfl_chatbot(OPENAI_API_KEY)
     client = OpenAI(api_key=OPENAI_API_KEY)
-    file1 = client.files.create(
-        file=open("Streamlit/data/Teams.csv", "rb"),
-        purpose='assistants'
-    )
-    file2 = client.files.create(
-        file=open("Streamlit/data/Games.csv", "rb"),
-        purpose='assistants'
-    )
-    file3 = client.files.create(
-        file=open("Streamlit/data/PlayerStats.csv", "rb"),
-        purpose='assistants'
-    )
-    assistant = client.beta.assistants.create(
-        name="Football Buddy Streamlit gpt4o",
-        instructions="""You are a data analyst and machine learning expert. Help the user analyze, visualize and explore trends using all ofthe NFL data in your knowledge base files. You are to use this knowledge base to answer all the users questions and for your data analysis and answers. First, always begin new threads by loading all the files in your knowledge base into dataframes and examining them to learn the structure and  every single column name and data/variable you have available. Take a look at the first and last few rows of each dataset to better learn the structure of each variable. Then proceed with answering the users questions.""",
-        tools=[{"type": "code_interpreter"}],
-        model="gpt-4o",
-        tool_resources={
-            "code_interpreter": {
-                "file_ids": [file1.id, file2.id, file3.id]
-            }
-        }
-    )
+    # file1 = client.files.create(
+    #     file=open("Streamlit/data/Teams.csv", "rb"),
+    #     purpose='assistants'
+    # )
+    # file2 = client.files.create(
+    #     file=open("Streamlit/data/Games.csv", "rb"),
+    #     purpose='assistants'
+    # )
+    # file3 = client.files.create(
+    #     file=open("Streamlit/data/PlayerStats.csv", "rb"),
+    #     purpose='assistants'
+    # )
+    # assistant = client.beta.assistants.create(
+    #     name="Football Buddy Streamlit gpt4o",
+    #     instructions="""You are a data analyst and machine learning expert. Help the user analyze, visualize and explore trends using all ofthe NFL data in your knowledge base files. You are to use this knowledge base to answer all the users questions and for your data analysis and answers. First, always begin new threads by loading all the files in your knowledge base into dataframes and examining them to learn the structure and  every single column name and data/variable you have available. Take a look at the first and last few rows of each dataset to better learn the structure of each variable. Then proceed with answering the users questions.""",
+    #     tools=[{"type": "code_interpreter"}],
+    #     model="gpt-4o",
+    #     tool_resources={
+    #         "code_interpreter": {
+    #             "file_ids": [file1.id, file2.id, file3.id]
+    #         }
+    #     }
+    # )
+    assistant_nfl = 'asst_mgN0QrkiteVPgfvoZ3q8uuLk'  # your existing assistant ID
+    assistant = client.beta.assistants.retrieve(assistant_nfl)
     st.write(assistant)
 else:
     st.error("Please enter your OpenAI API key in the sidebar.")
