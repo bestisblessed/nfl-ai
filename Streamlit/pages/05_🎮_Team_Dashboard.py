@@ -16,10 +16,10 @@ st.title('Team Dashboard')
 df_teams = st.session_state['df_teams']
 df_games = st.session_state['df_games']
 df_playerstats = st.session_state['df_playerstats']
-df_team_game_logs = st.session_state['df_team_game_logs']
+df_team_game_logs = st.session_state['df_all_team_game_logs']
 df_schedule_and_game_results = st.session_state['df_schedule_and_game_results']
 df_all_passing_rushing_receiving = st.session_state['df_all_passing_rushing_receiving']
-df_team_game_logs_2024 = st.session_state['df_team_game_logs_2024']
+df_team_game_logs_2024 = st.session_state['df_all_team_game_logs']
 st.divider()
 
 ### Average Pass Yards and Rush Yards per Game for NFL Teams (2024 Season) ###
@@ -340,6 +340,7 @@ def autolabel_with_logos(rects, ax, labels):
 sack_stats_df_sorted = sack_stats_df.sort_values(by=['sacks_made', 'sacks_taken'], ascending=False)
 teams = sack_stats_df_sorted['team'].tolist()
 sacks_made = sack_stats_df_sorted['sacks_made'].tolist()
+# sacks_taken = sack_stats_df_sorted['sacks_taken'].tolist()
 x = np.arange(len(teams))  
 fig, ax1 = plt.subplots(figsize=(14, 6))
 rects1 = ax1.bar(x, sacks_made, color='green')
