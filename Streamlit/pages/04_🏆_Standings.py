@@ -6,16 +6,16 @@ import matplotlib.pyplot as plt
 # - add dropdowns for each division
 # - add team logo pictures
 
-st.title('2023 NFL Season Division Standings')
+st.title('2024 NFL Season Division Standings')
 
 # Load data
 df_teams = st.session_state['df_teams']
 df_games = st.session_state['df_games'] 
 df_playerstats = st.session_state['df_playerstats']
 
-# Filter the games to the 2023 season
+# Filter the games to the 2024 season
 # games_2023 = df_games[df_games['season'] == 2023]
-games_2023 = df_games[(df_games['season'] == 2023) & (df_games['week'].between(1, 18))]
+games_2024 = df_games[(df_games['season'] == 2024) & (df_games['week'].between(1, 18))]
 
 # Initialize dictionaries to store wins, losses, and ties for each team
 team_wins = {team: 0 for team in df_teams['TeamID']}
@@ -23,7 +23,7 @@ team_losses = {team: 0 for team in df_teams['TeamID']}
 team_ties = {team: 0 for team in df_teams['TeamID']}
 
 # Iterate through each game to determine wins, losses, and ties
-for _, game in games_2023.iterrows():
+for _, game in games_2024.iterrows():
     away_team = game['away_team']
     home_team = game['home_team']
     away_score = game['away_score']
@@ -41,7 +41,7 @@ for _, game in games_2023.iterrows():
         team_ties[home_team] += 1
 
 # Combine wins, losses, and ties into a single DataFrame
-teams_performance_2023 = pd.DataFrame({
+teams_performance_2024 = pd.DataFrame({
     'TeamID': team_wins.keys(),
     'Wins': team_wins.values(),
     'Losses': team_losses.values(),
@@ -50,7 +50,7 @@ teams_performance_2023 = pd.DataFrame({
 
 # Merge with division information
 teams_division = df_teams[['TeamID', 'Division']]
-standings = pd.merge(teams_performance_2023, teams_division, on='TeamID')
+standings = pd.merge(teams_performance_2024, teams_division, on='TeamID')
 
 # Group by division and sort
 division_standings = standings.groupby('Division').apply(

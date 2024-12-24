@@ -39,14 +39,14 @@ with tab1:
 ### SACKS ###
     st.header('Quarterback Sack Rankings')
     # df_playerstats = pd.read_csv('./data/PlayerStats.csv')
-    qb_2023_stats = df_playerstats[(df_playerstats['position'] == 'QB') & (df_playerstats['season'] == 2023)]
-    qb_sacked_2023 = qb_2023_stats.groupby('player_display_name')['sacks'].sum().reset_index()
-    qb_sacked_ranked_2023 = qb_sacked_2023.sort_values(by='sacks')
-    plt.figure(figsize=(12, len(qb_sacked_ranked_2023) / 2))
-    bars = plt.barh(qb_sacked_ranked_2023['player_display_name'], qb_sacked_ranked_2023['sacks'], color='skyblue')
+    qb_2024_stats = df_playerstats[(df_playerstats['position'] == 'QB') & (df_playerstats['season'] == 2024)]
+    qb_sacked_2024 = qb_2024_stats.groupby('player_display_name')['sacks'].sum().reset_index()
+    qb_sacked_ranked_2024 = qb_sacked_2024.sort_values(by='sacks')
+    plt.figure(figsize=(12, len(qb_sacked_ranked_2024) / 2))
+    bars = plt.barh(qb_sacked_ranked_2024['player_display_name'], qb_sacked_ranked_2024['sacks'], color='skyblue')
     plt.xlabel('Number of Sacks', fontsize=32)
     plt.ylabel('Quarterbacks', fontsize=32)
-    plt.title('Number of Sacks for NFL Quarterbacks in 2023', fontsize=16)
+    plt.title('Number of Sacks for NFL Quarterbacks in 2024', fontsize=16)
     plt.xticks(fontsize=8)
     plt.yticks(fontsize=8)
     plt.bar_label(bars)
@@ -54,14 +54,14 @@ with tab1:
 
     ### INTERCEPTIONS ###
     st.header('Quarterback Interception Rankings')
-    qb_interceptions_stats = df_playerstats[(df_playerstats['position'] == 'QB') & (df_playerstats['season'] == 2023)]
-    qb_interceptions_2023 = qb_interceptions_stats.groupby('player_display_name')['interceptions'].sum().reset_index()
-    qb_interceptions_ranked_2023 = qb_interceptions_2023.sort_values(by='interceptions')
-    plt.figure(figsize=(12, len(qb_interceptions_ranked_2023) / 2))
-    bars = plt.barh(qb_interceptions_ranked_2023['player_display_name'], qb_interceptions_ranked_2023['interceptions'], color='salmon')
+    qb_interceptions_stats = df_playerstats[(df_playerstats['position'] == 'QB') & (df_playerstats['season'] == 2024)]
+    qb_interceptions_2024 = qb_interceptions_stats.groupby('player_display_name')['interceptions'].sum().reset_index()
+    qb_interceptions_ranked_2024 = qb_interceptions_2024.sort_values(by='interceptions')
+    plt.figure(figsize=(12, len(qb_interceptions_ranked_2024) / 2))
+    bars = plt.barh(qb_interceptions_ranked_2024['player_display_name'], qb_interceptions_ranked_2024['interceptions'], color='salmon')
     plt.xlabel('Number of Interceptions', fontsize=32)
     plt.ylabel('Quarterbacks', fontsize=32)
-    plt.title('Number of Interceptions for NFL Quarterbacks in 2023', fontsize=16)
+    plt.title('Number of Interceptions for NFL Quarterbacks in 2024', fontsize=16)
     plt.xticks(fontsize=8)
     plt.yticks(fontsize=8)
     plt.bar_label(bars)

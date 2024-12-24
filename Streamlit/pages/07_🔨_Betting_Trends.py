@@ -35,13 +35,13 @@ with tab1:
         # Filter the games for the selected team
         relevant_columns = ['home_team', 'away_team', 'home_score', 'away_score', 'home_spread', 'away_spread']
         team_games = df_games[
-            ((df_games['home_team'] == selected_team) | (df_games['away_team'] == selected_team)) & (df_games['season'] == 2023) & (df_games['week'].between(1, 18))
+            ((df_games['home_team'] == selected_team) | (df_games['away_team'] == selected_team)) & (df_games['season'] == 2024) & (df_games['week'].between(1, 18))
         ][relevant_columns]    
         team_games['ATS_Result'] = team_games.apply(lambda row: ats_result(row, selected_team), axis=1)
         overall_ats_record = team_games['ATS_Result'].value_counts().reindex(['Win', 'Loss', 'Push'], fill_value=0)
         home_ats_record = team_games[team_games['home_team'] == selected_team]['ATS_Result'].value_counts().reindex(['Win', 'Loss', 'Push'], fill_value=0)
         away_ats_record = team_games[team_games['away_team'] == selected_team]['ATS_Result'].value_counts().reindex(['Win', 'Loss', 'Push'], fill_value=0)
-        st.write(f"ATS Record for {selected_team} in 2023 Season")
+        st.write(f"ATS Record for {selected_team} in 2024 Season")
         ats_data = pd.DataFrame({
             'Overall': overall_ats_record,
             'Home': home_ats_record,
@@ -59,7 +59,7 @@ with tab1:
     for team in teams:
         relevant_columns = ['home_team', 'away_team', 'home_score', 'away_score', 'home_spread', 'away_spread']
         team_games = df_games[
-        ((df_games['home_team'] == team) | (df_games['away_team'] == team)) & (df_games['season'] == 2023) & (df_games['week'].between(1, 18))
+        ((df_games['home_team'] == team) | (df_games['away_team'] == team)) & (df_games['season'] == 2024) & (df_games['week'].between(1, 18))
         ][relevant_columns]
         team_games['ATS_Result'] = team_games.apply(lambda row: ats_result(row, team), axis=1)
         # overall_ats_record = team_games['ATS_Result'].value_counts()
@@ -108,22 +108,22 @@ with tab2:
     st.header("O/U Stats (Reg Reason)")
 
     teams = df_teams['TeamID'].tolist()
-    games_2023 = df_games[(df_games['season'] == 2023) & (df_games['week'].between(1, 18))]
-    games_2023['total_score'] = games_2023['home_score'] + games_2023['away_score']
-    games_2023['over_under_result'] = games_2023.apply(lambda row: 'over' if row['total_score'] > row['total_line'] else 'under' if row['total_score'] < row['total_line'] else 'push', axis=1)
+    games_2024 = df_games[(df_games['season'] == 2024) & (df_games['week'].between(1, 18))]
+    games_2024['total_score'] = games_2024['home_score'] + games_2024['away_score']
+    games_2024['over_under_result'] = games_2024.apply(lambda row: 'over' if row['total_score'] > row['total_line'] else 'under' if row['total_score'] < row['total_line'] else 'push', axis=1)
 
     # Dropdown button for single team stats
     selected_team = st.selectbox('Team:', (df_teams), key="O/U_selectbox")
     if selected_team:
-        selected_team_games = games_2023[(games_2023['home_team'] == selected_team) | (games_2023['away_team'] == selected_team)]
+        selected_team_games = games_2024[(games_2024['home_team'] == selected_team) | (games_2024['away_team'] == selected_team)]
         over_count = selected_team_games['over_under_result'].value_counts().get('over', 0)
         under_count = selected_team_games['over_under_result'].value_counts().get('under', 0)
         push_count = selected_team_games['over_under_result'].value_counts().get('push', 0)
-        home_games = games_2023[games_2023['home_team'] == selected_team]
+        home_games = games_2024[games_2024['home_team'] == selected_team]
         home_over_count = home_games['over_under_result'].value_counts().get('over', 0)
         home_under_count = home_games['over_under_result'].value_counts().get('under', 0)
         home_push_count = home_games['over_under_result'].value_counts().get('push', 0)
-        away_games = games_2023[games_2023['away_team'] == selected_team]
+        away_games = games_2024[games_2024['away_team'] == selected_team]
         away_over_count = away_games['over_under_result'].value_counts().get('over', 0)
         away_under_count = away_games['over_under_result'].value_counts().get('under', 0)
         away_push_count = away_games['over_under_result'].value_counts().get('push', 0)
@@ -133,7 +133,7 @@ with tab2:
             'Under': [under_count, home_under_count, away_under_count],
             'Push': [push_count, home_push_count, away_push_count]
         })
-        st.write(f"O/U Record for {selected_team} in 2023 Season")
+        st.write(f"O/U Record for {selected_team} in 2024 Season")
         st.table(combined_record)
 
     st.divider()
@@ -144,21 +144,21 @@ with tab2:
 
     for team in teams:
         # Overall record
-        team_games = games_2023[(games_2023['home_team'] == team) | (games_2023['away_team'] == team)]
+        team_games = games_2024[(games_2024['home_team'] == team) | (games_2024['away_team'] == team)]
         over_count = team_games['over_under_result'].value_counts().get('over', 0)
         under_count = team_games['over_under_result'].value_counts().get('under', 0)
         push_count = team_games['over_under_result'].value_counts().get('push', 0)
         over_under_stats[team] = {'over': over_count, 'under': under_count, 'push': push_count}
 
         # Home record
-        home_games = games_2023[games_2023['home_team'] == team]
+        home_games = games_2024[games_2024['home_team'] == team]
         home_over_count = home_games['over_under_result'].value_counts().get('over', 0)
         home_under_count = home_games['over_under_result'].value_counts().get('under', 0)
         home_push_count = home_games['over_under_result'].value_counts().get('push', 0)
         home_over_under_stats[team] = {'over': home_over_count, 'under': home_under_count, 'push': home_push_count}
 
         # Away record
-        away_games = games_2023[games_2023['away_team'] == team]
+        away_games = games_2024[games_2024['away_team'] == team]
         away_over_count = away_games['over_under_result'].value_counts().get('over', 0)
         away_under_count = away_games['over_under_result'].value_counts().get('under', 0)
         away_push_count = away_games['over_under_result'].value_counts().get('push', 0)
