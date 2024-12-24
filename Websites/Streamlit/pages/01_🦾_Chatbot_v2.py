@@ -36,7 +36,7 @@ if OPENAI_API_KEY:
     #         }
     #     }
     # )
-    assistant_nfl = 'asst_mgN0QrkiteVPgfvoZ3q8uuLk'  # your existing assistant ID
+    assistant_nfl = 'asst_C3T0Ar98YoIh9KvCugxDkL4u'  # your existing assistant ID
     assistant = client.beta.assistants.retrieve(assistant_nfl)
     st.write(assistant)
 else:
