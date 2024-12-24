@@ -7,6 +7,15 @@ from streamlit_lottie import st_lottie
 from PIL import Image
 import os
 
+# Clear all Streamlit cache
+st.cache_data.clear()
+st.cache_resource.clear()
+
+# Clear session state if needed
+if 'first_time' not in st.session_state:
+    st.session_state.clear()
+    st.session_state['first_time'] = True
+
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 csv_file_path_all_team_game_logs = os.path.join(BASE_DIR, 'data/all_team_game_logs.csv')
@@ -140,13 +149,12 @@ st.write('Welcome to NFL AI')
 # st.session_state['df_nfl_odds_movements_circa'] = df_nfl_odds_movements_circa
 
 # ---- Loading Other Files ---- #
-def load_lottie_pictures(url):
-    r = requests.get(url)
-    if r.status_code != 200:
-        return None
-    return r.json()
-
-lottie_picture1 = load_lottie_pictures("https://lottie.host/9501172e-b94f-441d-a10d-406d7536663c/510yizrK3A.json")
+# def load_lottie_pictures(url):
+#     r = requests.get(url)
+#     if r.status_code != 200:
+#         return None
+#     return r.json()
+# lottie_picture1 = load_lottie_pictures("https://lottie.host/9501172e-b94f-441d-a10d-406d7536663c/510yizrK3A.json")
 
 # picture1 = Image.open('images/pereira-adesanya-faceoff.jpeg')
 # picture2 = Image.open('images/ferg.jpg')
@@ -171,7 +179,7 @@ with right_column:
     # st_lottie(lottie_picture1, height=400, width=400, key='lottie1')
     image_path = os.path.join(BASE_DIR, 'images/justin-jefferson-2.jpg')
     right_column_image = Image.open(image_path)
-    st.image(right_column_image, use_container_width=True)
+    st.image(right_column_image, use_container_width=True, width=800)
 
 # # ---- Some Samples ---- #
 # st.divider()
@@ -258,11 +266,11 @@ with col3:
 ### Video
 video1 = 'https://www.youtube.com/watch?v=K8RQkt3Ee0Y'
 st.write('##')
-# col1, col2, col3 = st.columns([1, 4, 1])
-# with col2:
-#     st.video(video1)
-#     st.caption("Legendary")
-st.video(video1)
+col1, col2, col3 = st.columns([1, 4, 1])
+with col2:
+    st.video(video1)
+    st.caption("Legendary")
+# st.video(video1)
 
 # ---- Contact Me ---- #
 st.divider()
