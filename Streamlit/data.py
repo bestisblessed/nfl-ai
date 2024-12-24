@@ -154,10 +154,24 @@ for table_name_tuple in tables:
 conn.close()
 print("All tables have been saved to CSV files.")
 
-shutil.copy('data/games.csv', 'data/Games.csv')
-shutil.copy('data/teams.csv', 'data/Teams.csv')
-shutil.copy('data/player_stats.csv', 'data/PlayerStats.csv')
-shutil.copy('data/rosters.csv', 'data/Rosters.csv')
+# os.rename('data/games.csv', 'data/Games.csv'); print("Renamed 'data/games.csv' to 'data/Games.csv'.")
+# os.rename('data/teams.csv', 'data/Teams.csv'); print("Renamed 'data/teams.csv' to 'data/Teams.csv'.")
+# os.rename('data/rosters.csv', 'data/Rosters.csv'); print("Renamed 'data/rosters.csv' to 'data/Rosters.csv'.")
+# shutil.copy('data/player_stats.csv', 'data/PlayerStats.csv')
+# shutil.copy('data/games.csv', 'data/Games.csv')
+# shutil.copy('data/teams.csv', 'data/Teams.csv')
+# shutil.copy('data/rosters.csv', 'data/Rosters.csv')
+
+### Copy Odds Data ###
+os.makedirs('data/odds/', exist_ok=True)
+shutil.copy('../../odds-monitoring/NFL/Analysis/data/nfl_odds_movements.csv', 'data/odds/')
+shutil.copy('../../odds-monitoring/NFL/Analysis/data/nfl_odds_movements_circa.csv', 'data/odds/')
+shutil.copytree('../../odds-monitoring/NFL/Analysis/data/odds/', 'data/odds/', dirs_exist_ok=True)
+# for file in os.listdir('../../odds-monitoring/NFL/Analysis/data/odds/'):
+#     shutil.copy(os.path.join('../../odds-monitoring/NFL/Analysis/data/odds/', file), 'data/odds/')
+
+
+
 
 # # # import streamlit as st
 # # # import pandas as pd
