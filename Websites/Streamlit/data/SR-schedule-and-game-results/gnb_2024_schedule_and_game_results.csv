@@ -15,5 +15,7 @@ Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,Pa
 14,Thu,December 5,8:15PM ET,boxscore,L,,9-4,@,Detroit Lions,31,34,17,298,199,99,1,27,391,280,111,1,11.75,-13.69,-0.80
 15,Sun,December 15,8:20PM ET,boxscore,W,,10-4,@,Seattle Seahawks,30,13,21,369,229,140,1,14,208,128,80,2,11.94,13.45,-9.51
 16,Mon,December 23,8:15PM ET,boxscore,W,,11-4,,New Orleans Saints,34,0,24,404,216,188,,14,196,129,67,2,22.29,16.18,-3.84
-17,Sun,December 29,4:25PM ET,preview,,,,@,Minnesota Vikings,0,,,,,,,,,,,,,,
-18,Sun,January 5,1:00PM ET,preview,,,,,Chicago Bears,0,,,,,,,,,,,,,,
+17,Sun,December 29,4:25PM ET,boxscore,L,,11-5,@,Minnesota Vikings,25,27,17,271,167,104,1,26,441,372,69,1,2.07,-14.06,8.79
+18,Sun,January 5,1:00PM ET,boxscore,L,,11-6,,Chicago Bears,22,24,20,367,184,183,2,16,224,141,83,2,-2.71,8.65,-8.37
+,,Playoffs,,,,,,,,,,,,,,,,,,,,,,
+Wild Card,Sun,January 12,4:30PM ET,boxscore,L,,11-7,@,Philadelphia Eagles,10,22,17,302,195,107,4,16,290,121,169,,-3.29,-3.17,-7.38

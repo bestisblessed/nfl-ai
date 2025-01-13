@@ -34,6 +34,48 @@ def load_odds_movements():
     return filtered_odds
 
 ### Load NFL games data from JSON files ###
+# def load_games_data():
+#     games_data = []
+#     data_dir = os.path.join(os.path.dirname(__file__), '../data/odds/')
+#     json_files = sorted([f for f in os.listdir(data_dir) if f.endswith(".json") and f.startswith('nfl')], reverse=True)
+#     most_recent_file = json_files[0] if json_files else None
+
+#     if most_recent_file:
+#         filepath = os.path.join(data_dir, most_recent_file)
+#         with open(filepath) as f:
+#             data = json.load(f)
+#             for game in data:
+#                 game_time = game['Time']
+#                 day_and_matchup_key = list(game.keys())[1]
+#                 day_and_matchup_value = game[day_and_matchup_key]
+#                 day_and_matchup_column_name = list(game.keys())[1].replace(',', ', ')
+#                 game_date = day_and_matchup_key.strip()
+#                 teams = day_and_matchup_value.replace('\n', ' ').strip()
+#                 teams_list = [team.strip() for team in teams.split('  ')]
+
+#                 # Check if teams_list contains at least two elements
+#                 if len(teams_list) < 2:
+#                     st.error(f"Error parsing teams for game on {game_date}: {teams}")
+#                     continue  # Skip this game
+
+#                 game_date = game_date.replace(' ', '').strip().lower()
+#                 game_time = re.sub(r'\s+', ' ', game_time.replace('\n', ' ')).strip().lower()
+#                 matchup = re.sub(r'\s+', ' ', ' vs '.join(teams_list)).strip().lower()
+#                 circa_spread = game.get("Circa", "").replace('\n', ' ').strip().split(' ')
+#                 spread_favorite, spread_underdog = ("N/A", "N/A") if len(circa_spread) != 4 else (f"{circa_spread[0]} {circa_spread[1]}", f"{circa_spread[2]} {circa_spread[3]}")
+#                 games_data.append({
+#                     'time': game_time,
+#                     'day_and_matchup_column_name': day_and_matchup_column_name,
+#                     'game_date': game_date,
+#                     'matchup': matchup,
+#                     'teams': teams_list,
+#                     'spread': [spread_favorite, spread_underdog],
+#                     'moneyline': ['N/A', 'N/A'],
+#                     'total': ['N/A', 'N/A']
+#                 })
+#     else:
+#         st.warning("No JSON files found in the data directory.")
+#     return games_data
 def load_games_data():
     games_data = []
     data_dir = os.path.join(os.path.dirname(__file__), '../data/odds/')
@@ -50,13 +92,25 @@ def load_games_data():
                 day_and_matchup_value = game[day_and_matchup_key]
                 day_and_matchup_column_name = list(game.keys())[1].replace(',', ', ')
                 game_date = day_and_matchup_key.strip()
+
+                # Parse teams robustly
                 teams = day_and_matchup_value.replace('\n', ' ').strip()
-                teams_list = [team.strip() for team in teams.split('  ')]
+                # Try splitting on double spaces first, fallback to single spaces or other separators
+                if '  ' in teams:
+                    teams_list = [team.strip() for team in teams.split('  ') if team.strip()]
+                else:
+                    teams_list = [team.strip() for team in re.split(r'\s+|,', teams) if team.strip()]
+
+                # Skip games with invalid team parsing
+                if len(teams_list) != 2:
+                    continue  # Skip this game
+
                 game_date = game_date.replace(' ', '').strip().lower()
                 game_time = re.sub(r'\s+', ' ', game_time.replace('\n', ' ')).strip().lower()
                 matchup = re.sub(r'\s+', ' ', ' vs '.join(teams_list)).strip().lower()
                 circa_spread = game.get("Circa", "").replace('\n', ' ').strip().split(' ')
                 spread_favorite, spread_underdog = ("N/A", "N/A") if len(circa_spread) != 4 else (f"{circa_spread[0]} {circa_spread[1]}", f"{circa_spread[2]} {circa_spread[3]}")
+
                 games_data.append({
                     'time': game_time,
                     'day_and_matchup_column_name': day_and_matchup_column_name,
@@ -71,34 +125,75 @@ def load_games_data():
         st.warning("No JSON files found in the data directory.")
     return games_data
 
+
+
+
 ### Display game information and odds ###
 df_nfl_odds_movements = load_odds_movements()
 games_data = load_games_data()
-for game in games_data:
-    # st.subheader(game['day_and_matchup_column_name'])
-    # st.markdown(game['day_and_matchup_column_name'])
-    # st.markdown(f"<h2 style='color: purple; font-size: 24px; font-weight: bold;'>{game['day_and_matchup_column_name']}</h2>", unsafe_allow_html=True)
+# for game in games_data:
+#     # st.subheader(game['day_and_matchup_column_name'])
+#     # st.markdown(game['day_and_matchup_column_name'])
+#     # st.markdown(f"<h2 style='color: purple; font-size: 24px; font-weight: bold;'>{game['day_and_matchup_column_name']}</h2>", unsafe_allow_html=True)
+#     st.markdown(f"<h2 style='font-weight: bold; color: #512D6D; text-shadow: -1px -1px 0 #C5B783, 1px -1px 0 #C5B783, -1px 1px 0 #C5B783, 1px 1px 0 #C5B783;'>{game['teams'][0]} vs {game['teams'][1]}</h2>", unsafe_allow_html=True)
+#     # st.markdown(f"<h3 style='font-weight: bold; color: #512D6D;'> {game['day_and_matchup_column_name']} </h3>", unsafe_allow_html=True)
+#     st.markdown(f"<h4 style='font-weight: bold; color: white;'> {game['day_and_matchup_column_name']} </h4>", unsafe_allow_html=True)
+#     st.text(f"Game Time: {game['time'].replace('splits', '').strip()}")
+#     # st.markdown(f"<h5 style='font-weight: bold; color: #512D6D; text-shadow: -1px -1px 0 #C5B783, 1px -1px 0 #C5B783, -1px 1px 0 #C5B783, 1px 1px 0 #C5B783;'>Game Time: {game['time'].replace('splits', '').strip()}</h5>", unsafe_allow_html=True)
+#     df = pd.DataFrame({
+#         "Team": [game['teams'][0], game['teams'][1]],
+#         "Spread": [game['spread'][0], game['spread'][1]],
+#         "Moneyline": [game['moneyline'][0], game['moneyline'][1]],
+#         "Total": [game['total'][0], game['total'][1]]
+#     })
+#     # st.table(df)
+#     # st.table(df, hide_index=True)
+#     st.table(df.set_index('Team'))
+#     # st.dataframe(df, use_container_width=True)
+
+
+games_df = pd.DataFrame(games_data)
+if not games_df.empty:
+    games_with_sufficient_data = (
+        games_df.groupby('matchup')
+        .filter(lambda x: len(df_nfl_odds_movements[df_nfl_odds_movements['matchup'] == x.name]) >= 3)
+    )
+else:
+    games_with_sufficient_data = []
+
+# Display filtered games
+# for _, game in games_with_sufficient_data.iterrows():
+#     st.markdown(f"<h2 style='font-weight: bold; color: #512D6D; text-shadow: -1px -1px 0 #C5B783, 1px -1px 0 #C5B783, -1px 1px 0 #C5B783, 1px 1px 0 #C5B783;'>{game['teams'][0]} vs {game['teams'][1]}</h2>", unsafe_allow_html=True)
+#     st.text(f"Game Time: {game['time'].replace('splits', '').strip()}")
+#     df = pd.DataFrame({
+#         "Team": [game['teams'][0], game['teams'][1]],
+#         "Spread": [game['spread'][0], game['spread'][1]],
+#         "Moneyline": [game['moneyline'][0], game['moneyline'][1]],
+#         "Total": [game['total'][0], game['total'][1]]
+#     })
+#     st.table(df.set_index('Team'))
+#     st.divider()
+for _, game in games_with_sufficient_data.iterrows():
     st.markdown(f"<h2 style='font-weight: bold; color: #512D6D; text-shadow: -1px -1px 0 #C5B783, 1px -1px 0 #C5B783, -1px 1px 0 #C5B783, 1px 1px 0 #C5B783;'>{game['teams'][0]} vs {game['teams'][1]}</h2>", unsafe_allow_html=True)
-    # st.markdown(f"<h3 style='font-weight: bold; color: #512D6D;'> {game['day_and_matchup_column_name']} </h3>", unsafe_allow_html=True)
-    st.markdown(f"<h4 style='font-weight: bold; color: white;'> {game['day_and_matchup_column_name']} </h4>", unsafe_allow_html=True)
     st.text(f"Game Time: {game['time'].replace('splits', '').strip()}")
-    # st.markdown(f"<h5 style='font-weight: bold; color: #512D6D; text-shadow: -1px -1px 0 #C5B783, 1px -1px 0 #C5B783, -1px 1px 0 #C5B783, 1px 1px 0 #C5B783;'>Game Time: {game['time'].replace('splits', '').strip()}</h5>", unsafe_allow_html=True)
     df = pd.DataFrame({
         "Team": [game['teams'][0], game['teams'][1]],
         "Spread": [game['spread'][0], game['spread'][1]],
         "Moneyline": [game['moneyline'][0], game['moneyline'][1]],
         "Total": [game['total'][0], game['total'][1]]
     })
-    # st.table(df)
-    # st.table(df, hide_index=True)
     st.table(df.set_index('Team'))
-    # st.dataframe(df, use_container_width=True)
+    st.divider()
+
 
     ### Buttons and modal for odds movement ###
     for team in game['teams']:
-        modal = Modal(f"Odds Movement for {team}", key=f"modal_{team}_{game['game_date']}")
+        # modal = Modal(f"Odds Movement for {team}", key=f"modal_{team}_{game['game_date']}")
+        modal = Modal(f"Odds Movement for {team}", key=f"modal_{team}_{game['game_date']}_{game['time']}")
         # Adding a unique key to each button using team name and game date as part of the key
-        if st.button(f"See odds movement for {team}", key=f"button_{team}_{game['day_and_matchup_column_name']}"):
+        # if st.button(f"See odds movement for {team}", key=f"button_{team}_{game['day_and_matchup_column_name']}"):
+        if st.button(f"See odds movement for {team}", key=f"button_{team}_{game['day_and_matchup_column_name']}_{game['time']}"):
+        # if st.button(f"See odds movement for {team}", key=f"button_{team}_{game['game_date']}_{game['time']}"):
             modal.open()
 
         if modal.is_open():
@@ -171,25 +266,43 @@ for game in games_data:
 # file_path_circa = 'data/odds/nfl_odds_movements_circa.csv'
 # nfl_odds_data_circa = pd.read_csv(file_path_circa)
 # df_nfl_odds_movements_circa = st.session_state.get('df_nfl_odds_movements_circa', pd.DataFrame())
+# selected_matchup = st.selectbox("Select Matchup", unique_matchups)
 unique_matchups = df_nfl_odds_movements_circa['matchup'].unique()
-selected_matchup = st.selectbox("Select Matchup", unique_matchups)
+filtered_matchups = (
+    df_nfl_odds_movements_circa.groupby('matchup')
+    .filter(lambda x: len(x) >= 3)['matchup']
+    .unique()
+)
+selected_matchup = st.selectbox("Select Matchup", filtered_matchups)
 selected_data = df_nfl_odds_movements_circa[df_nfl_odds_movements_circa['matchup'] == selected_matchup].copy()
 selected_data.loc[:, 'team1_odds_before'] = selected_data['team1_odds_before'].replace('PK', 0).astype(float)
 selected_data.loc[:, 'team2_odds_before'] = selected_data['team2_odds_before'].replace('PK', 0).astype(float)
 selected_data.loc[:, 'time_before'] = pd.to_datetime(selected_data['time_before'], format='%b %d %I:%M%p')
-plt.figure(figsize=(10, 6))
-# plt.plot(selected_data['time_before'], selected_data['team1_odds_before'], label=selected_matchup.split(' vs ')[0], marker='o')
-# plt.plot(selected_data['time_before'], selected_data['team2_odds_before'], label=selected_matchup.split(' vs ')[1], marker='o')
-plt.plot(selected_data['time_before'], selected_data['team1_odds_before'], label=selected_matchup.split(' vs ')[0])
-plt.plot(selected_data['time_before'], selected_data['team2_odds_before'], label=selected_matchup.split(' vs ')[1])
-plt.title(f'Odds Movement: {selected_matchup}')
-plt.xlabel('Time of Odds Change')
-plt.ylabel('Odds')
+
+
+# plt.figure(figsize=(10, 6))
+# # plt.plot(selected_data['time_before'], selected_data['team1_odds_before'], label=selected_matchup.split(' vs ')[0], marker='o')
+# # plt.plot(selected_data['time_before'], selected_data['team2_odds_before'], label=selected_matchup.split(' vs ')[1], marker='o')
+# plt.plot(selected_data['time_before'], selected_data['team1_odds_before'], label=selected_matchup.split(' vs ')[0])
+# plt.plot(selected_data['time_before'], selected_data['team2_odds_before'], label=selected_matchup.split(' vs ')[1])
+# plt.title(f'Odds Movement: {selected_matchup}')
+# plt.xlabel('Time of Odds Change')
+# plt.ylabel('Odds')
+# plt.xticks(rotation=45)
+# plt.legend()
+# plt.grid(True)
+# st.pyplot(plt)
+import matplotlib.pyplot as plt
+fig, ax = plt.subplots(figsize=(8, 4))
+ax.plot(selected_data['time_before'], selected_data['team1_odds_before'], label=selected_matchup.split(' vs ')[0])
+ax.plot(selected_data['time_before'], selected_data['team2_odds_before'], label=selected_matchup.split(' vs ')[1])
+ax.set_title(f'Odds Movement: {selected_matchup}')
+ax.set_xlabel('Time of Odds Change')
+ax.set_ylabel('Odds')
 plt.xticks(rotation=45)
 plt.legend()
 plt.grid(True)
-st.pyplot(plt)
-
+st.pyplot(fig, use_container_width=False)
 
 
 ### Archive (Past Games) ###

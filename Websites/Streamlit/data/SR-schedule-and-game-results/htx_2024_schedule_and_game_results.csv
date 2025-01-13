@@ -15,5 +15,8 @@ Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,Pa
 14,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
 15,Sun,December 15,1:00PM ET,boxscore,W,,9-5,,Miami Dolphins,20,12,12,181,104,77,1,18,224,172,52,4,-7.91,15.14,0.51
 16,Sat,December 21,1:00PM ET,boxscore,L,,9-6,@,Kansas City Chiefs,19,27,20,311,227,84,2,25,375,251,124,,5.59,-15.32,0.61
-17,Wed,December 25,4:30PM ET,preview,,,,,Baltimore Ravens,0,,,,,,,,,,,,,,
-18,Sun,January 5,1:00PM ET,preview,,,,@,Tennessee Titans,0,,,,,,,,,,,,,,
+17,Wed,December 25,4:30PM ET,boxscore,L,,9-7,,Baltimore Ravens,2,31,10,211,153,58,1,25,432,181,251,,-13.70,-21.65,6.24
+18,Sun,January 5,1:00PM ET,boxscore,W,,10-7,@,Tennessee Titans,23,14,18,374,167,207,1,14,314,229,85,1,7.70,9.00,-2.85
+,,Playoffs,,,,,,,,,,,,,,,,,,,,,,
+Wild Card,Sat,January 11,4:30PM ET,boxscore,W,,11-7,,Los Angeles Chargers,32,12,20,429,261,168,3,15,261,211,50,4,0.59,21.81,-6.04
+Division,Sat,January 18,4:30PM ET,preview,,,,@,Kansas City Chiefs,0,,,,,,,,,,,,,,
