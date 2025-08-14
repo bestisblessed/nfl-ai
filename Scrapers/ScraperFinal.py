@@ -33,6 +33,8 @@
   
 # **Defense Game Logs**
 # Scrapes defensive statistics for players in each game and saves the data to CSV files.
+
+# **Note: This scraper now focuses on seasons 2024-2025 only**
   
 
 import pandas as pd
@@ -231,8 +233,8 @@ conn.close()
 print("Player stats saved to 'PlayerStats' table in nfl.db")
 
 
-##### Create 'Rosters' in nfl.db (2010-2025) #####
-for year in range(2010, 2025):
+##### Create 'Rosters' in nfl.db (2024-2025) #####
+for year in range(2024, 2025):
     url = f"https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_{year}.csv"
     response = requests.get(url)
     if response.status_code == 200:
@@ -242,7 +244,7 @@ for year in range(2010, 2025):
     else:
         print(f"Failed to download data for the year {year}")
 dataframes = []
-for year in range(2010, 2025):
+for year in range(2024, 2025):
     file_path = f'./data/rosters/roster_{year}.csv'
     if os.path.exists(file_path):
         df = pd.read_csv(file_path)
@@ -480,22 +482,53 @@ teams = [
     ['oti', 'Tennessee Titans'],
     ['was', 'Washington Commanders']
 ]
+# team_game_logs_headers = [
+#     'rk', 'gtm', 'week', 'date', 'day', 'game_location', 'opp', 'result', 'pts', 'pts_opp', 'ot', 
+#     'pass_cmp', 'pass_att', 'pass_cmp_pct', 'pass_yds', 'pass_td', 'pass_ya', 'pass_aya', 'pass_rate', 
+#     'pass_sk', 'pass_sk_yds', 'rush_att', 'rush_yds', 'rush_td', 'rush_ya', 'plays', 'total_yds', 'ypp',
+#     'fga', 'fgm', 'xpa', 'xpm', 'punt', 'punt_yds', 'first_downs_pass', 'first_downs_rush', 'first_downs_pen',
+#     'first_downs_total', 'third_down_conv', 'third_down_att', 'fourth_down_conv', 'fourth_down_att', 
+#     'pen', 'pen_yds', 'fumbles_lost', 'turnovers_int', 'turnovers_total', 'time_of_poss'
+#     # 'pen', 'pen_yds', 'fumbles_lost', 'turnovers_int', 'turnovers_total', 'time_of_poss', 'team_name'
+# ]
 team_game_logs_headers = [
-    'week_num', 'game_day_of_week', 'game_date', 'boxscore_word', 'game_outcome', 'overtime', 
-    'game_location', 'opp', 'pts_off', 'pts_def', 'pass_cmp', 'pass_att', 'pass_yds', 'pass_td', 
-    'pass_int', 'pass_sacked', 'pass_sacked_yds', 'pass_yds_per_att', 'pass_net_yds_per_att', 
-    'pass_cmp_perc', 'pass_rating', 'rush_att', 'rush_yds', 'rush_yds_per_att', 'rush_td', 
-    'fgm', 'fga', 'xpm', 'xpa', 'punt', 'punt_yds', 'third_down_success', 'third_down_att', 
-    'fourth_down_success', 'fourth_down_att', 'time_of_poss', 'Team_Name'
+    'rk', 'gtm', 'week', 'date', 'day', 'game_location', 'opp', 'result', 'pts', 'pts_opp', 'ot', 
+    'pass_cmp', 'pass_att', 'pass_cmp_pct', 'pass_yds', 'pass_td', 'pass_ya', 'pass_aya', 'pass_rate', 
+    'pass_sk', 'pass_sk_yds', 'rush_att', 'rush_yds', 'rush_td', 'rush_ya', 'plays', 'total_yds', 'ypp',
+    'fga', 'fgm', 'xpa', 'xpm', 'punt', 'punt_yds', 'first_downs_pass', 'first_downs_rush', 'first_downs_pen',
+    'first_downs_total', 'third_down_conv', 'third_down_att', 'fourth_down_conv', 'fourth_down_att', 
+    'pen', 'pen_yds', 'fumbles_lost', 'turnovers_int', 'turnovers_total', 'time_of_poss'
 ]
+    # 'week_num', 'game_day_of_week', 'game_date', 'boxscore_word', 'game_outcome', 'overtime', 
+    # 'game_location', 'opp', 'pts_off', 'pts_def', 'pass_cmp', 'pass_att', 'pass_yds', 'pass_td', 
+    # 'pass_int', 'pass_sacked', 'pass_sacked_yds', 'pass_yds_per_att', 'pass_net_yds_per_att', 
+    # 'pass_cmp_perc', 'pass_rating', 'rush_att', 'rush_yds', 'rush_yds_per_att', 'rush_td', 
+    # 'fgm', 'fga', 'xpm', 'xpa', 'punt', 'punt_yds', 'third_down_success', 'third_down_att', 
+    # 'fourth_down_success', 'fourth_down_att', 'time_of_poss', 'Team_Name'
+
 opponent_game_logs_headers = [
-    'week_num', 'game_day_of_week', 'game_date', 'boxscore_word', 'game_outcome', 'overtime',
-    'game_location', 'opp', 'pts_off', 'pts_def', 'pass_cmp', 'pass_att', 'pass_yds', 'pass_td',
-    'pass_int', 'pass_sacked', 'pass_sacked_yds', 'pass_yds_per_att', 'pass_net_yds_per_att',
-    'pass_cmp_perc', 'pass_rating', 'rush_att', 'rush_yds', 'rush_yds_per_att', 'rush_td',
-    'fgm', 'fga', 'xpm', 'xpa', 'punt', 'punt_yds', 'third_down_success', 'third_down_att',
-    'fourth_down_success', 'fourth_down_att', 'time_of_poss', 'Team_Name'
+    'rk', 'gtm', 'week', 'date', 'day', 'game_location', 'opp', 'result', 'pts', 'pts_opp', 'ot', 
+    'pass_cmp', 'pass_att', 'pass_cmp_pct', 'pass_yds', 'pass_td', 'pass_ya', 'pass_aya', 'pass_rate', 
+    'pass_sk', 'pass_sk_yds', 'rush_att', 'rush_yds', 'rush_td', 'rush_ya', 'plays', 'total_yds', 'ypp',
+    'fga', 'fgm', 'xpa', 'xpm', 'punt', 'punt_yds', 'first_downs_pass', 'first_downs_rush', 'first_downs_pen',
+    'first_downs_total', 'third_down_conv', 'third_down_att', 'fourth_down_conv', 'fourth_down_att', 
+    'pen', 'pen_yds', 'fumbles_lost', 'turnovers_int', 'turnovers_total', 'time_of_poss'
 ]
+# opponent_game_logs_headers = [
+#     'rk', 'gtm', 'week', 'date', 'day', 'game_location', 'opp', 'result', 'pts', 'pts_opp', 'ot', 
+#     'pass_cmp', 'pass_att', 'pass_cmp_pct', 'pass_yds', 'pass_td', 'pass_ya', 'pass_aya', 'pass_rate', 
+#     'pass_sk', 'pass_sk_yds', 'rush_att', 'rush_yds', 'rush_td', 'rush_ya', 'plays', 'total_yds', 'ypp',
+#     'fga', 'fgm', 'xpa', 'xpm', 'punt', 'punt_yds', 'first_downs_pass', 'first_downs_rush', 'first_downs_pen',
+#     'first_downs_total', 'third_down_conv', 'third_down_att', 'fourth_down_conv', 'fourth_down_att', 
+#     'pen', 'pen_yds', 'fumbles_lost', 'turnovers_int', 'turnovers_total', 'time_of_poss'
+#     # 'pen', 'pen_yds', 'fumbles_lost', 'turnovers_int', 'turnovers_total', 'time_of_poss', 'team_name'
+# ]
+    # 'week_num', 'game_day_of_week', 'game_date', 'boxscore_word', 'game_outcome', 'overtime', 
+    # 'game_location', 'opp', 'pts_off', 'pts_def', 'pass_cmp', 'pass_att', 'pass_yds', 'pass_td', 
+    # 'pass_int', 'pass_sacked', 'pass_sacked_yds', 'pass_yds_per_att', 'pass_net_yds_per_att', 
+    # 'pass_cmp_perc', 'pass_rating', 'rush_att', 'rush_yds', 'rush_yds_per_att', 'rush_td', 
+    # 'fgm', 'fga', 'xpm', 'xpa', 'punt', 'punt_yds', 'third_down_success', 'third_down_att', 
+    # 'fourth_down_success', 'fourth_down_att', 'time_of_poss', 'Team_Name'
 for year in range(2024, 2025):
     all_team_game_logs = []  
     all_opponent_game_logs = []
@@ -503,29 +536,66 @@ for year in range(2024, 2025):
         abbreviation, name = team
         print(f'Processing {name} for the year {year}')  
         url = f'https://www.pro-football-reference.com/teams/{abbreviation}/{year}/gamelog/'
-        response = requests.get(url)
+        
+        # Add retry logic for rate limiting
+        max_retries = 3
+        retry_delay = 10
+        for attempt in range(max_retries):
+            try:
+                response = requests.get(url)
+                if response.status_code == 429:
+                    print(f'Rate limited for {name}. Waiting {retry_delay} seconds before retry {attempt + 1}/{max_retries}')
+                    sleep(retry_delay)
+                    retry_delay *= 2  # Exponential backoff
+                    continue
+                elif response.status_code != 200:
+                    print(f'Failed to retrieve page {url} for {name} in {year}: {response.status_code}')
+                    break
+                else:
+                    break
+            except Exception as e:
+                print(f'Error retrieving {url}: {e}')
+                if attempt < max_retries - 1:
+                    sleep(retry_delay)
+                    retry_delay *= 2
+                    continue
+                else:
+                    break
+        
         if response.status_code != 200:
-            print(f'Failed to retrieve page {url} for {name} in {year}: {response.status_code}')
             continue
+            
         soup = BeautifulSoup(response.content, 'html.parser')
-        for table_id in [f'gamelog{year}', f'gamelog_opp{year}']:
+        for table_id in ['table_pfr_team-year_game-logs_team-year-regular-season-game-log', 'table_pfr_team-year_game-logs_team-year-regular-season-opponent-game-log']:
             table = soup.find('table', {'id': table_id})
             if table is None:
                 print(f'Table with id {table_id} not found on page {url} for {name} in {year}')
                 continue
             tbody = table.find('tbody')
+            if tbody is None:
+                print(f'No tbody found for table {table_id} on page {url} for {name} in {year}')
+                continue
+                
             game_logs = []
             for tr in tbody.find_all('tr'):
                 row_data = []  
                 for td in tr.find_all(['th', 'td']):  
                     row_data.append(td.text)
-                if table_id == f'gamelog{year}':
-                    row_data.append(name)  
-                    game_logs.append(row_data)
-                elif table_id == f'gamelog_opp{year}':
-                    row_data.append(name)  
-                    all_opponent_game_logs.append(row_data)
-            if table_id == f'gamelog{year}':
+                # Filter out empty rows
+                if len(row_data) > 0:
+                    if table_id == 'table_pfr_team-year_game-logs_team-year-regular-season-game-log':
+                        if len(row_data) == 48:  # Expected: 48 total columns (including Rk)
+                            row_data.append(name)  # Add team name (now 49 total)
+                            game_logs.append(row_data)
+                        else:
+                            print(f"Warning: Team game log row has {len(row_data)} cells but expected 48")
+                    elif table_id == 'table_pfr_team-year_game-logs_team-year-regular-season-opponent-game-log':
+                        if len(row_data) == 48:  # Expected: 48 total columns (including Rk)
+                            row_data.append(name)  # Add team name (now 49 total)
+                            all_opponent_game_logs.append(row_data)
+                        else:
+                            print(f"Warning: Opponent game log row has {len(row_data)} cells but expected 48")
+            if table_id == 'table_pfr_team-year_game-logs_team-year-regular-season-game-log':
                 all_team_game_logs.extend(game_logs)
             playoff_table_id = f'playoff_gamelog{year}'
             playoff_table = soup.find('table', {'id': playoff_table_id})
@@ -539,14 +609,14 @@ for year in range(2024, 2025):
                     row_data.append(name)  
                     playoff_game_logs.append(row_data)
                 all_team_game_logs.extend(playoff_game_logs)
-            sleep(2.5)  
+        sleep(2)  # Increased delay to avoid rate limiting  
     with open(f'./data/SR-game-logs/all_teams_game_logs_{year}.csv', mode='w', newline='', encoding='utf-8') as file:
         writer = csv.writer(file)
-        writer.writerow(team_game_logs_headers)
+        writer.writerow(team_game_logs_headers + ['team_name'])
         writer.writerows(all_team_game_logs)
     with open(f'./data/SR-opponent-game-logs/all_teams_opponent_game_logs_{year}.csv', mode='w', newline='', encoding='utf-8') as file:
         writer = csv.writer(file)
-        writer.writerow(opponent_game_logs_headers)
+        writer.writerow(opponent_game_logs_headers + ['team_name'])
         writer.writerows(all_opponent_game_logs)
 
 
@@ -600,16 +670,52 @@ team_abbreviation_map = {
     'St. Louis Rams': 'STL',
     'San Diego Chargers': 'LAC'
 }
+
+# Mapping from Pro Football Reference abbreviations to our standardized abbreviations
+pfr_to_standard_abbr = {
+    'ARI': 'ARI',
+    'ATL': 'ATL', 
+    'BAL': 'BAL',
+    'BUF': 'BUF',
+    'CAR': 'CAR',
+    'CHI': 'CHI',
+    'CIN': 'CIN',
+    'CLE': 'CLE',
+    'DAL': 'DAL',
+    'DEN': 'DEN',
+    'DET': 'DET',
+    'GNB': 'GB',   # Green Bay Packers
+    'HOU': 'HOU',
+    'IND': 'IND',
+    'JAX': 'JAX',
+    'KAN': 'KC',   # Kansas City Chiefs
+    'LAC': 'LAC',
+    'LAR': 'LAR',
+    'LVR': 'LVR',
+    'MIA': 'MIA',
+    'MIN': 'MIN',
+    'NWE': 'NE',   # New England Patriots
+    'NOR': 'NO',   # New Orleans Saints
+    'NYG': 'NYG',
+    'NYJ': 'NYJ',
+    'PHI': 'PHI',
+    'PIT': 'PIT',
+    'SEA': 'SEA',
+    'SFO': 'SF',   # San Francisco 49ers
+    'TAM': 'TB',   # Tampa Bay Buccaneers
+    'TEN': 'TEN',
+    'WAS': 'WAS'
+}
 def determine_home_away(row):
     if row['game_location'] == '@':
-        away_team = team_abbreviation_map[row['Team_Name']]
-        home_team = team_abbreviation_map[row['opp']]
+        away_team = team_abbreviation_map[row['team_name']]
+        home_team = pfr_to_standard_abbr[row['opp']]
     else:
-        home_team = team_abbreviation_map[row['Team_Name']]
-        away_team = team_abbreviation_map[row['opp']]
+        home_team = team_abbreviation_map[row['team_name']]
+        away_team = pfr_to_standard_abbr[row['opp']]
     return pd.Series([home_team, away_team])
 df[['home_team_id', 'away_team_id']] = df.apply(determine_home_away, axis=1)
-df['week_num'] = df['week_num'].astype(str).str.zfill(2)
+df['week_num'] = df['week'].astype(str).str.zfill(2)
 df['game_id'] = df['season'] + '_' + df['week_num'] + '_' + df['away_team_id'] + '_' + df['home_team_id']
 output_file_path_with_teams = 'data/all_team_game_logs.csv'
 df.to_csv(output_file_path_with_teams, index=False)
@@ -620,8 +726,8 @@ print(f"Updated file with home and away teams saved to: {output_file_path_with_t
 df = pd.read_csv('data/all_team_game_logs.csv')
 grouped_df = df.groupby('game_id', group_keys=False).apply(lambda x: pd.Series({
     'season': x['season'].iloc[0],  # Ensure the season is included from the first entry
-    'home_pts_off': x.loc[x['game_location'].isnull() | (x['game_location'] == ''), 'pts_off'].sum(),
-    'away_pts_off': x.loc[x['game_location'] == '@', 'pts_off'].sum(),
+    'home_pts_off': x.loc[x['game_location'].isnull() | (x['game_location'] == ''), 'pts'].sum(),
+    'away_pts_off': x.loc[x['game_location'] == '@', 'pts'].sum(),
     'home_pass_cmp': x.loc[x['game_location'].isnull() | (x['game_location'] == ''), 'pass_cmp'].sum(),
     'away_pass_cmp': x.loc[x['game_location'] == '@', 'pass_cmp'].sum(),
     'home_pass_att': x.loc[x['game_location'].isnull() | (x['game_location'] == ''), 'pass_att'].sum(),
@@ -630,24 +736,24 @@ grouped_df = df.groupby('game_id', group_keys=False).apply(lambda x: pd.Series({
     'away_pass_yds': x.loc[x['game_location'] == '@', 'pass_yds'].sum(),
     'home_pass_td': x.loc[x['game_location'].isnull() | (x['game_location'] == ''), 'pass_td'].sum(),
     'away_pass_td': x.loc[x['game_location'] == '@', 'pass_td'].sum(),
-    'home_pass_int': x.loc[x['game_location'].isnull() | (x['game_location'] == ''), 'pass_int'].sum(),
-    'away_pass_int': x.loc[x['game_location'] == '@', 'pass_int'].sum(),
-    'home_pass_sacked': x.loc[x['game_location'].isnull() | (x['game_location'] == ''), 'pass_sacked'].sum(),
-    'away_pass_sacked': x.loc[x['game_location'] == '@', 'pass_sacked'].sum(),
-    'home_pass_yds_per_att': x.loc[x['game_location'].isnull() | (x['game_location'] == ''), 'pass_yds_per_att'].mean(),
-    'away_pass_yds_per_att': x.loc[x['game_location'] == '@', 'pass_yds_per_att'].mean(),
-    'home_pass_net_yds_per_att': x.loc[x['game_location'].isnull() | (x['game_location'] == ''), 'pass_net_yds_per_att'].mean(),
-    'away_pass_net_yds_per_att': x.loc[x['game_location'] == '@', 'pass_net_yds_per_att'].mean(),
-    'home_pass_cmp_perc': x.loc[x['game_location'].isnull() | (x['game_location'] == ''), 'pass_cmp_perc'].mean(),
-    'away_pass_cmp_perc': x.loc[x['game_location'] == '@', 'pass_cmp_perc'].mean(),
-    'home_pass_rating': x.loc[x['game_location'].isnull() | (x['game_location'] == ''), 'pass_rating'].mean(),
-    'away_pass_rating': x.loc[x['game_location'] == '@', 'pass_rating'].mean(),
+    'home_pass_int': x.loc[x['game_location'].isnull() | (x['game_location'] == ''), 'turnovers_int'].sum(),
+    'away_pass_int': x.loc[x['game_location'] == '@', 'turnovers_int'].sum(),
+    'home_pass_sacked': x.loc[x['game_location'].isnull() | (x['game_location'] == ''), 'pass_sk'].sum(),
+    'away_pass_sacked': x.loc[x['game_location'] == '@', 'pass_sk'].sum(),
+    'home_pass_yds_per_att': x.loc[x['game_location'].isnull() | (x['game_location'] == ''), 'pass_ya'].mean(),
+    'away_pass_yds_per_att': x.loc[x['game_location'] == '@', 'pass_ya'].mean(),
+    'home_pass_net_yds_per_att': x.loc[x['game_location'].isnull() | (x['game_location'] == ''), 'pass_aya'].mean(),
+    'away_pass_net_yds_per_att': x.loc[x['game_location'] == '@', 'pass_aya'].mean(),
+    'home_pass_cmp_perc': x.loc[x['game_location'].isnull() | (x['game_location'] == ''), 'pass_cmp_pct'].mean(),
+    'away_pass_cmp_perc': x.loc[x['game_location'] == '@', 'pass_cmp_pct'].mean(),
+    'home_pass_rating': x.loc[x['game_location'].isnull() | (x['game_location'] == ''), 'pass_rate'].mean(),
+    'away_pass_rating': x.loc[x['game_location'] == '@', 'pass_rate'].mean(),
     'home_rush_att': x.loc[x['game_location'].isnull() | (x['game_location'] == ''), 'rush_att'].sum(),
     'away_rush_att': x.loc[x['game_location'] == '@', 'rush_att'].sum(),
     'home_rush_yds': x.loc[x['game_location'].isnull() | (x['game_location'] == ''), 'rush_yds'].sum(),
     'away_rush_yds': x.loc[x['game_location'] == '@', 'rush_yds'].sum(),
-    'home_rush_yds_per_att': x.loc[x['game_location'].isnull() | (x['game_location'] == ''), 'rush_yds_per_att'].mean(),
-    'away_rush_yds_per_att': x.loc[x['game_location'] == '@', 'rush_yds_per_att'].mean(),
+    'home_rush_yds_per_att': x.loc[x['game_location'].isnull() | (x['game_location'] == ''), 'rush_ya'].mean(),
+    'away_rush_yds_per_att': x.loc[x['game_location'] == '@', 'rush_ya'].mean(),
     'home_rush_td': x.loc[x['game_location'].isnull() | (x['game_location'] == ''), 'rush_td'].sum(),
     'away_rush_td': x.loc[x['game_location'] == '@', 'rush_td'].sum(),
 }))
@@ -701,10 +807,35 @@ for year in range(2024, 2025):
         abbreviation, name = team
         print(f'Processing {name} for the year {year}')  
         url = f'https://www.pro-football-reference.com/teams/{abbreviation}/{year}.htm'
-        response = requests.get(url)
+        
+        # Add retry logic for rate limiting
+        max_retries = 3
+        retry_delay = 10
+        for attempt in range(max_retries):
+            try:
+                response = requests.get(url)
+                if response.status_code == 429:
+                    print(f'Rate limited for {name}. Waiting {retry_delay} seconds before retry {attempt + 1}/{max_retries}')
+                    sleep(retry_delay)
+                    retry_delay *= 2
+                    continue
+                elif response.status_code != 200:
+                    print(f'Failed to retrieve page {url} for {name} in {year}: {response.status_code}')
+                    break
+                else:
+                    break
+            except Exception as e:
+                print(f'Error retrieving {url}: {e}')
+                if attempt < max_retries - 1:
+                    sleep(retry_delay)
+                    retry_delay *= 2
+                    continue
+                else:
+                    break
+        
         if response.status_code != 200:
-            print(f'Failed to retrieve page {url} for {name} in {year}: {response.status_code}')
             continue
+            
         soup = BeautifulSoup(response.content, 'html.parser')
         table = soup.find('table', {'id': 'team_stats'})
         if table is None:
@@ -716,7 +847,7 @@ for year in range(2024, 2025):
             row_data.extend([td.text.strip() for td in tr.find_all('td')])  
             row_data.append(abbreviation)  
             all_team_stats.append(row_data)
-        sleep(2.5)  
+        sleep(5)  # Increased delay to avoid rate limiting  
     with open(f'{data_dir}/all_teams_stats_{year}.csv', mode='w', newline='', encoding='utf-8') as file:
         writer = csv.writer(file)
         writer.writerow(team_stats_headers)
@@ -738,99 +869,100 @@ merged_dataframe.to_csv(output_file, index=False)
 print(f"Merged dataset saved as {output_file}")
 
 
-##### Schedule & Game Results #####
-data_dir = './data/SR-schedule-and-game-results'
-os.makedirs(data_dir, exist_ok=True)
-teams = [
-    ['crd', 'Arizona Cardinals'],
-    ['atl', 'Atlanta Falcons'],
-    ['rav', 'Baltimore Ravens'],
-    ['buf', 'Buffalo Bills'],
-    ['car', 'Carolina Panthers'],
-    ['chi', 'Chicago Bears'],
-    ['cin', 'Cincinnati Bengals'],
-    ['cle', 'Cleveland Browns'],
-    ['dal', 'Dallas Cowboys'],
-    ['den', 'Denver Broncos'],
-    ['det', 'Detroit Lions'],
-    ['gnb', 'Green Bay Packers'],
-    ['htx', 'Houston Texans'],
-    ['clt', 'Indianapolis Colts'],
-    ['jax', 'Jacksonville Jaguars'],
-    ['kan', 'Kansas City Chiefs'],
-    ['sdg', 'Los Angeles Chargers'],
-    ['ram', 'Los Angeles Rams'],
-    ['rai', 'Las Vegas Raiders'],
-    ['mia', 'Miami Dolphins'],
-    ['min', 'Minnesota Vikings'],
-    ['nwe', 'New England Patriots'],
-    ['nor', 'New Orleans Saints'],
-    ['nyg', 'New York Giants'],
-    ['nyj', 'New York Jets'],
-    ['phi', 'Philadelphia Eagles'],
-    ['pit', 'Pittsburgh Steelers'],
-    ['sea', 'Seattle Seahawks'],
-    ['sfo', 'San Francisco 49ers'],
-    ['tam', 'Tampa Bay Buccaneers'],
-    ['oti', 'Tennessee Titans'],
-    ['was', 'Washington Commanders']
-]
-schedule_headers = [
-    'Week', 'Day', 'Date', 'Time', 'Boxscore', 'Outcome', 'OT', 'Rec', 'Home/Away', 'Opp', 
-    'Tm', 'OppPts', '1stD', 'TotYd', 'PassY', 'RushY', 'TO_lost', 
-    'Opp1stD', 'OppTotYd', 'OppPassY', 'OppRushY', 'TO_won',
-    'Offense', 'Defense', 'Sp. Tms'
-]
-for year in range(2024, 2025):
-    all_games = []  
-    for team in teams:
-        abbreviation, name = team
-        print(f'Processing {name} for the year {year}')  
-        url = f'https://www.pro-football-reference.com/teams/{abbreviation}/{year}.htm'
-        response = requests.get(url)
-        if response.status_code != 200:
-            print(f'Failed to retrieve page {url} for {name} in {year}: {response.status_code}')
-            continue
-        soup = BeautifulSoup(response.content, 'html.parser')
-        table = soup.find('table', {'id': 'games'})
-        if table is None:
-            print(f'Schedule & Game Results table not found on page {url} for {name} in {year}')
-            continue
-        tbody = table.find('tbody')
-        team_games = []  
-        for tr in tbody.find_all('tr'):
-            row_data = []
-            week_th = tr.find('th', {'data-stat': 'week_num'})
-            week_num = week_th.text.strip() if week_th else ''
-            row_data.append(week_num)
-            for td in tr.find_all('td'):
-                row_data.append(td.text.strip())
-            if len(row_data) != len(schedule_headers):
-                row_data += [''] * (len(schedule_headers) - len(row_data))
-            team_games.append(row_data)
-            all_games.append(row_data)  
-        team_file_path = f'{data_dir}/{abbreviation}_{year}_schedule_and_game_results.csv'
-        with open(team_file_path, mode='w', newline='', encoding='utf-8') as file:
-            writer = csv.writer(file)
-            writer.writerow(schedule_headers)
-            writer.writerows(team_games)
-        print(f'Saved schedule data for {name} for the year {year}')
-        sleep(2.5)  
-data_dir = './data/SR-schedule-and-game-results'
-all_games = []
-for filename in os.listdir(data_dir):
-    if filename.endswith("_schedule_and_game_results.csv"):
-        team_abbr = filename.split('_')[0]
-        season_year = filename.split('_')[1]
-        file_path = os.path.join(data_dir, filename)
-        df = pd.read_csv(file_path)
-        df['Team'] = team_abbr
-        df['Season'] = season_year
-        all_games.append(df)
-merged_df = pd.concat(all_games, ignore_index=True)
-merged_output_path = os.path.join(data_dir, 'all_teams_schedule_and_game_results_merged.csv')
-merged_df.to_csv(merged_output_path, index=False)
-print(f"Successfully merged all team files into {merged_output_path}")
+### SCHEDULE BAD OR DOESNT EXIST NOW ###
+# ##### Schedule & Game Results #####
+# data_dir = './data/SR-schedule-and-game-results'
+# os.makedirs(data_dir, exist_ok=True)
+# teams = [
+#     ['crd', 'Arizona Cardinals'],
+#     ['atl', 'Atlanta Falcons'],
+#     ['rav', 'Baltimore Ravens'],
+#     ['buf', 'Buffalo Bills'],
+#     ['car', 'Carolina Panthers'],
+#     ['chi', 'Chicago Bears'],
+#     ['cin', 'Cincinnati Bengals'],
+#     ['cle', 'Cleveland Browns'],
+#     ['dal', 'Dallas Cowboys'],
+#     ['den', 'Denver Broncos'],
+#     ['det', 'Detroit Lions'],
+#     ['gnb', 'Green Bay Packers'],
+#     ['htx', 'Houston Texans'],
+#     ['clt', 'Indianapolis Colts'],
+#     ['jax', 'Jacksonville Jaguars'],
+#     ['kan', 'Kansas City Chiefs'],
+#     ['sdg', 'Los Angeles Chargers'],
+#     ['ram', 'Los Angeles Rams'],
+#     ['rai', 'Las Vegas Raiders'],
+#     ['mia', 'Miami Dolphins'],
+#     ['min', 'Minnesota Vikings'],
+#     ['nwe', 'New England Patriots'],
+#     ['nor', 'New Orleans Saints'],
+#     ['nyg', 'New York Giants'],
+#     ['nyj', 'New York Jets'],
+#     ['phi', 'Philadelphia Eagles'],
+#     ['pit', 'Pittsburgh Steelers'],
+#     ['sea', 'Seattle Seahawks'],
+#     ['sfo', 'San Francisco 49ers'],
+#     ['tam', 'Tampa Bay Buccaneers'],
+#     ['oti', 'Tennessee Titans'],
+#     ['was', 'Washington Commanders']
+# ]
+# schedule_headers = [
+#     'Week', 'Day', 'Date', 'Time', 'Boxscore', 'Outcome', 'OT', 'Rec', 'Home/Away', 'Opp', 
+#     'Tm', 'OppPts', '1stD', 'TotYd', 'PassY', 'RushY', 'TO_lost', 
+#     'Opp1stD', 'OppTotYd', 'OppPassY', 'OppRushY', 'TO_won',
+#     'Offense', 'Defense', 'Sp. Tms'
+# ]
+# for year in range(2024, 2025):
+#     all_games = []  
+#     for team in teams:
+#         abbreviation, name = team
+#         print(f'Processing {name} for the year {year}')  
+#         url = f'https://www.pro-football-reference.com/teams/{abbreviation}/{year}.htm'
+#         response = requests.get(url)
+#         if response.status_code != 200:
+#             print(f'Failed to retrieve page {url} for {name} in {year}: {response.status_code}')
+#             continue
+#         soup = BeautifulSoup(response.content, 'html.parser')
+#         table = soup.find('table', {'id': 'games'})
+#         if table is None:
+#             print(f'Schedule & Game Results table not found on page {url} for {name} in {year}')
+#             continue
+#         tbody = table.find('tbody')
+#         team_games = []  
+#         for tr in tbody.find_all('tr'):
+#             row_data = []
+#             week_th = tr.find('th', {'data-stat': 'week_num'})
+#             week_num = week_th.text.strip() if week_th else ''
+#             row_data.append(week_num)
+#             for td in tr.find_all('td'):
+#                 row_data.append(td.text.strip())
+#             if len(row_data) != len(schedule_headers):
+#                 row_data += [''] * (len(schedule_headers) - len(row_data))
+#             team_games.append(row_data)
+#             all_games.append(row_data)  
+#         team_file_path = f'{data_dir}/{abbreviation}_{year}_schedule_and_game_results.csv'
+#         with open(team_file_path, mode='w', newline='', encoding='utf-8') as file:
+#             writer = csv.writer(file)
+#             writer.writerow(schedule_headers)
+#             writer.writerows(team_games)
+#         print(f'Saved schedule data for {name} for the year {year}')
+#         sleep(2.5)  
+# data_dir = './data/SR-schedule-and-game-results'
+# all_games = []
+# for filename in os.listdir(data_dir):
+#     if filename.endswith("_schedule_and_game_results.csv"):
+#         team_abbr = filename.split('_')[0]
+#         season_year = filename.split('_')[1]
+#         file_path = os.path.join(data_dir, filename)
+#         df = pd.read_csv(file_path)
+#         df['Team'] = team_abbr
+#         df['Season'] = season_year
+#         all_games.append(df)
+# merged_df = pd.concat(all_games, ignore_index=True)
+# merged_output_path = os.path.join(data_dir, 'all_teams_schedule_and_game_results_merged.csv')
+# merged_df.to_csv(merged_output_path, index=False)
+# print(f"Successfully merged all team files into {merged_output_path}")
 
 
 ##### Team Conversions #####
@@ -871,7 +1003,8 @@ teams = [
     ['was', 'Washington Commanders']
 ]
 team_conversions_headers = [
-    'Player', '3DAtt', '3DConv', '3D%', '4DAtt', '4DConv', '4D%', 'RZAtt', 'RZTD', 'RZPct', 'Team'
+    'Player', '3DAtt', '3DConv', '4DAtt', '4DConv', '4D%', 'RZAtt', 'RZTD', 'RZPct', 'Team'
+    # 'Player', '3DAtt', '3DConv', '3D%', '4DAtt', '4DConv', '4D%', 'RZAtt', 'RZTD', 'RZPct', 'Team'
 ]
 for year in range(2024, 2025):
     for team in teams:
