@@ -1,0 +1,26 @@
+================================================================================
+BAL vs BUF | Week 1 2025 | Projected Receiving Yards
+================================================================================
+
++------------------+--------------+    +----------------------+--------------+
+| BAL Player       |  Pred Yards  |    | BUF Player           |  Pred Yards  |
++==================+==============+    +======================+==============+
+| Rashod Bateman   |     72.6     |    | Elijah Moore         |     49.3     |
+| Tylan Wallace    |     27.3     |    | Josh Palmer          |     43.9     |
+| DeAndre Hopkins  |     21.6     |    | Khalil Shakir        |      40      |
+| Anthony Miller   |     16.7     |    | Amari Cooper         |     28.5     |
+| Zay Flowers      |     16.1     |    | Kristian Wilkerson   |     17.4     |
+| Nelson Agholor   |     4.3      |    | Laviska Shenault Jr. |     12.6     |
+| Keith Kirkwood   |     1.7      |    | Keon Coleman         |     11.8     |
+| Deonte Harty     |     1.7      |    | Curtis Samuel        |     9.8      |
+| Malik Cunningham |     1.7      |    | Jalen Virgil         |     1.7      |
+| Devontez Walker  |     1.7      |    | KJ Hamler            |     1.7      |
++------------------+--------------+    | Deon Cain            |     1.7      |
+                                       +----------------------+--------------+
+
+================================================================================
+GAME SUMMARY
+---------------
+Total WRs: 21 (10 BAL, 11 BUF)
+Top Projection: Rashod Bateman (BAL) - 72.6 yards
+================================================================================
