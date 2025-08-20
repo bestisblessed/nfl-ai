@@ -41,6 +41,10 @@ nfl_data = nfl_data[nfl_data["game_type"] == "REG"]
 print(f"Data shape after game_type filter: {nfl_data.shape}")
 nfl_data = nfl_data[nfl_data["week"] <= 18]
 print(f"Data shape after week filter: {nfl_data.shape}")
+# Filter for last 3 seasons
+last_3_seasons = sorted(nfl_data['season'].unique())[-3:]
+nfl_data = nfl_data[nfl_data['season'].isin(last_3_seasons)]
+print(f"Data shape after filtering for last 3 seasons ({last_3_seasons}): {nfl_data.shape}")
 
 # Initialize Elo ratings for all teams
 all_teams = pd.concat([nfl_data["home_team"], nfl_data["away_team"]]).unique()
