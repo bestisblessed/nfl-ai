@@ -1,0 +1,24 @@
+================================================================================
+DET vs GB | Week 1 2025 | Projected Receiving Yards
+================================================================================
+
++-------------------+--------------+    +-------------------+--------------+
+| DET Player        |  Pred Yards  |    | GB Player         |  Pred Yards  |
++===================+==============+    +===================+==============+
+| Amon-Ra St. Brown |    135.4     |    | Jayden Reed       |     67.6     |
+| Kalif Raymond     |     33.1     |    | Malik Heath       |     48.1     |
+| Tim Patrick       |     24.9     |    | Dontayvion Wicks  |     44.8     |
+| Jameson Williams  |     22.8     |    | Bo Melton         |      21      |
+| Allen Robinson    |     18.3     |    | Romeo Doubs       |     15.3     |
+| Tom Kennedy       |     3.9      |    | Christian Watson  |     5.9      |
+| Ronnie Bell       |     3.4      |    | Mecole Hardman    |     3.9      |
+| Malik Taylor      |     1.7      |    | Kawaan Baker      |     1.7      |
+| Antoine Green     |     1.7      |    | Cornelius Johnson |     1.7      |
++-------------------+--------------+    +-------------------+--------------+
+
+================================================================================
+GAME SUMMARY
+---------------
+Total WRs: 18 (9 DET, 9 GB)
+Top Projection: Amon-Ra St. Brown (DET) - 135.4 yards
+================================================================================
