@@ -1,0 +1,99 @@
+# NFL Wide Receiver Receiving Yards Prediction Model
+
+## Model Overview
+This model predicts weekly receiving yards for NFL wide receivers using historical performance data and current roster assignments.
+
+## Model Type
+**XGBoost Regressor** - Gradient boosting decision tree ensemble model
+
+## Target Variable
+- **rec_yards**: Weekly receiving yards per player-game
+
+## Features Used
+
+### Feature Engineering Approach
+- **Trailing Averages**: Uses historical performance metrics over multiple time windows
+- **No Lookahead Bias**: All features use `.shift(1)` to ensure only past data is available for prediction
+- **Window Sizes**: 3, 5, and 8 game rolling averages
+
+### Feature Set (9 total features)
+**Targets Features:**
+- `targets_l3`: Trailing 3-game average of targets
+- `targets_l5`: Trailing 5-game average of targets  
+- `targets_l8`: Trailing 8-game average of targets
+
+**Receptions Features:**
+- `receptions_l3`: Trailing 3-game average of receptions
+- `receptions_l5`: Trailing 5-game average of receptions
+- `receptions_l8`: Trailing 8-game average of receptions
+
+**Receiving Yards Features:**
+- `yards_l3`: Trailing 3-game average of receiving yards
+- `yards_l5`: Trailing 5-game average of receiving yards
+- `yards_l8`: Trailing 8-game average of receiving yards
+
+## Model Parameters
+
+```python
+XGBRegressor(
+    n_estimators=500,        # Number of boosting rounds
+    learning_rate=0.05,      # Learning rate (eta)
+    max_depth=5,            # Maximum tree depth
+    subsample=0.9,          # Fraction of samples per tree
+    colsample_bytree=0.9,   # Fraction of features per tree
+    objective="reg:squarederror",  # Loss function
+    random_state=42,        # Reproducibility
+    tree_method="hist"      # Tree construction algorithm
+)
+```
+
+## Data Pipeline
+
+### Training Data
+- **Source**: `data/model_train.csv` (processed historical player-game data)
+- **Scope**: Historical NFL player game logs for WR, RB, TE positions
+- **Preprocessing**: 
+  - Numeric conversion and missing data handling
+  - Player-level sorting by season/week for rolling calculations
+  - Minimum 3 games requirement for historical features
+
+### Current Roster Integration
+- **Source**: `data/rosters_2025.csv` (nflverse current roster data)
+- **Purpose**: Ensures predictions use up-to-date player-team assignments
+- **Key**: Player matching via PFR ID (`player_id` with `.htm` extension)
+
+### Prediction Process
+1. **Feature Calculation**: Extract most recent trailing averages for each player
+2. **Roster Mapping**: Assign players to current 2025 teams
+3. **Missing Data Handling**: Fill missing trailing features with 0.0 for new/limited-data players
+4. **Game Assignment**: Map players to upcoming game schedule
+
+## Output Formats
+
+### Generated Files (per week)
+**Directory**: `predictions-week-{week_num}/`
+
+**File Types per Game**:
+1. **Full PNG**: Complete statistical table with all trailing features
+2. **Cleaned PNG**: Simplified table (player name + predicted yards only)
+3. **Text Table**: Terminal-friendly side-by-side tabulated format
+
+**Summary Files**:
+- `prop_projections_receiving.csv`: All player predictions with full feature data
+
+## Model Strengths
+- **Temporal Awareness**: Multiple time windows capture both recent and sustained performance
+- **Realistic Features**: Only uses information available pre-game
+- **Current Rosters**: Accounts for mid-season trades and roster changes
+- **Robust to Missing Data**: Handles new players and limited historical data
+
+## Model Limitations
+- **Feature Scope**: Limited to receiving-specific metrics (no team context, matchup data, etc.)
+- **Position Focus**: Primarily designed for wide receivers
+- **Historical Dependency**: Performance limited by quality of trailing averages
+- **No Game Context**: Doesn't account for game script, weather, or opponent strength
+
+## Usage Notes
+- **Best For**: Week-to-week receiving yards predictions for established players
+- **Caution With**: New players, players returning from injury, or unusual game contexts
+- **Update Frequency**: Requires current roster data and recent historical performance updates
