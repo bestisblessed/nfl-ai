@@ -488,9 +488,9 @@ if not te_players.empty:
     games = []
     processed_games = set()
     
-    for _, row in te_players[['team', 'opp']].drop_duplicates().iterrows():
-        team1, team2 = sorted([row['team'], row['opp']])  # Sort to avoid duplicates
-        game_key = f"{team1}_{team2}"
+    for _, row in up[['team', 'opp']].drop_duplicates().iterrows():
+        team1, team2 = row['team'], row['opp']  # Keep original order
+        game_key = f"{min(team1, team2)}_{max(team1, team2)}"  # Consistent key without changing order
         
         if game_key not in processed_games:
             games.append((team1, team2))
