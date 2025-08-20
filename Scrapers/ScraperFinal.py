@@ -34,7 +34,7 @@
 # **Defense Game Logs**
 # Scrapes defensive statistics for players in each game and saves the data to CSV files.
 
-# **Note: This scraper now focuses on seasons 2024-2025 only**
+# **Note: This scraper now focuses on seasons 2010-2025 only**
   
 
 import pandas as pd
@@ -233,8 +233,8 @@ conn.close()
 print("Player stats saved to 'PlayerStats' table in nfl.db")
 
 
-##### Create 'Rosters' in nfl.db (2024-2025) #####
-for year in range(2024, 2025):
+##### Create 'Rosters' in nfl.db (2010-2025) #####
+for year in range(2010, 2025):
     url = f"https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_{year}.csv"
     response = requests.get(url)
     if response.status_code == 200:
@@ -244,7 +244,7 @@ for year in range(2024, 2025):
     else:
         print(f"Failed to download data for the year {year}")
 dataframes = []
-for year in range(2024, 2025):
+for year in range(2010, 2025):
     file_path = f'./data/rosters/roster_{year}.csv'
     if os.path.exists(file_path):
         df = pd.read_csv(file_path)
@@ -333,7 +333,7 @@ for idx, team in enumerate(standardized_team_list_sorted, 1):
 rosters_df.to_csv('data/rosters.csv', index=False)
 
 
-##### Scrape Box Scores (2024-2025) #####
+##### Scrape Box Scores (2010-2025) #####
 df = pd.read_csv('./data/games.csv')
 df['pfr_url'] = 'https://www.pro-football-reference.com/boxscores/' + df['pfr'] + '.htm'
 df.to_csv('./data/games.csv', index=False)
@@ -350,7 +350,7 @@ with open(csv_file_path, 'a', newline='') as csvfile:
     score_writer = csv.writer(csvfile)
     if os.path.getsize(csv_file_path) == 0:
         score_writer.writerow(headers)  
-    for year_to_scrape in range(2024, 2025):
+    for year_to_scrape in range(2010, 2025):
         game_urls = []
         with open(games_csv_path, 'r') as csvfile:
             reader = csv.DictReader(csvfile)
@@ -396,8 +396,8 @@ df = df.apply(shift_to_final, axis=1)
 df.to_csv('data/all_box_scores.csv', index=False)
 
 
-##### Scrape Scoring Tables/Touchdown Logs (2024-2025) #####
-for year_to_scrape in range(2024, 2025):
+##### Scrape Scoring Tables/Touchdown Logs (2010-2025) #####
+for year_to_scrape in range(2010, 2025):
     output_filename = f'./data/scoring-tables/all_nfl_scoring_tables_{year_to_scrape}.csv'
     with open(output_filename, 'w', newline='') as output_csvfile:
         csvwriter = csv.writer(output_csvfile)
@@ -443,7 +443,7 @@ merged_dataframe.to_csv(output_file, index=False)
 print(f"Merged dataset saved as {output_file}")
 
 
-##### Scrape Team Game Logs (2024-2025) #####
+##### Scrape Team Game Logs (2010-2025) #####
 data_dir = './data/SR-game-logs'
 os.makedirs(data_dir, exist_ok=True)
 opponent_data_dir = './data/SR-opponent-game-logs'
@@ -529,7 +529,7 @@ opponent_game_logs_headers = [
     # 'pass_cmp_perc', 'pass_rating', 'rush_att', 'rush_yds', 'rush_yds_per_att', 'rush_td', 
     # 'fgm', 'fga', 'xpm', 'xpa', 'punt', 'punt_yds', 'third_down_success', 'third_down_att', 
     # 'fourth_down_success', 'fourth_down_att', 'time_of_poss', 'Team_Name'
-for year in range(2024, 2025):
+for year in range(2010, 2025):
     all_team_game_logs = []  
     all_opponent_game_logs = []
     for team in teams:
@@ -667,7 +667,7 @@ team_abbreviation_map = {
     'Washington Commanders': 'WAS',
     'Washington Football Team': 'WAS',
     'Washington Redskins': 'WAS',
-    'St. Louis Rams': 'STL',
+    'St. Louis Rams': 'LAR',
     'San Diego Chargers': 'LAC'
 }
 
@@ -689,8 +689,10 @@ pfr_to_standard_abbr = {
     'IND': 'IND',
     'JAX': 'JAX',
     'KAN': 'KC',   # Kansas City Chiefs
+    'LA': 'LAR',   # LA → Los Angeles Rams
     'LAC': 'LAC',
     'LAR': 'LAR',
+    'LV': 'LVR',   # LV → Las Vegas Raiders
     'LVR': 'LVR',
     'MIA': 'MIA',
     'MIN': 'MIN',
@@ -698,10 +700,15 @@ pfr_to_standard_abbr = {
     'NOR': 'NO',   # New Orleans Saints
     'NYG': 'NYG',
     'NYJ': 'NYJ',
+    'OAK': 'LVR',  # Oakland Raiders → Las Vegas Raiders
     'PHI': 'PHI',
     'PIT': 'PIT',
+    'SD': 'LAC',   # San Diego Chargers → Los Angeles Chargers
+    'SDG': 'LAC',  # San Diego Chargers → Los Angeles Chargers (alternative)
     'SEA': 'SEA',
-    'SFO': 'SF',   # San Francisco 49ers
+    'SF': 'SF',    # San Francisco 49ers
+    'SFO': 'SF',   # San Francisco 49ers (alternative)
+    'STL': 'LAR',  # St. Louis Rams → Los Angeles Rams
     'TAM': 'TB',   # Tampa Bay Buccaneers
     'TEN': 'TEN',
     'WAS': 'WAS'
@@ -801,7 +808,7 @@ team_stats_headers = [
     'Player', 'PF', 'Yds', 'Ply', 'Y/P', 'TO', 'FL', '1stD', 'Cmp', 'Att', 'Yds', 'TD', 'Int', 'NY/A',
     '1stD', 'Att', 'Yds', 'TD', 'Y/A', '1stD', 'Pen', 'Yds', '1stPy', '#Dr', 'Sc%', 'TO%', 'Start', 'Time', 'Plays', 'Yds', 'Pts', 'Team'
 ]
-for year in range(2024, 2025):
+for year in range(2010, 2025):
     all_team_stats = []  
     for team in teams:
         abbreviation, name = team
@@ -913,7 +920,7 @@ print(f"Merged dataset saved as {output_file}")
 #     'Opp1stD', 'OppTotYd', 'OppPassY', 'OppRushY', 'TO_won',
 #     'Offense', 'Defense', 'Sp. Tms'
 # ]
-# for year in range(2024, 2025):
+# for year in range(2010, 2025):
 #     all_games = []  
 #     for team in teams:
 #         abbreviation, name = team
@@ -1006,7 +1013,7 @@ team_conversions_headers = [
     'Player', '3DAtt', '3DConv', '4DAtt', '4DConv', '4D%', 'RZAtt', 'RZTD', 'RZPct', 'Team'
     # 'Player', '3DAtt', '3DConv', '3D%', '4DAtt', '4DConv', '4D%', 'RZAtt', 'RZTD', 'RZPct', 'Team'
 ]
-for year in range(2024, 2025):
+for year in range(2010, 2025):
     for team in teams:
         abbreviation, name = team
         print(f'Processing {name} for the year {year}')  
@@ -1108,7 +1115,7 @@ print("Columns 'home_spread', 'away_spread', 'team_favorite', and 'team_covered'
 
 ##### Passing/Rushing/Receiving #####
 os.makedirs('./data/passing-rushing-receiving-game-logs/', exist_ok=True)
-for year_to_scrape in range(2024, 2025):
+for year_to_scrape in range(2010, 2025):
     output_filename = f'./data/passing-rushing-receiving-game-logs/all_passing_rushing_receiving_{year_to_scrape}.csv'
     with open(output_filename, 'w', newline='') as output_csvfile:
         csvwriter = csv.writer(output_csvfile)
@@ -1237,7 +1244,7 @@ headers = [
     'tackles_combined', 'tackles_solo', 'tackles_assists', 'tackles_loss', 'qb_hits', 'fumbles_rec',
     'fumbles_rec_yds', 'fumbles_rec_td', 'fumbles_forced', 'game_id'
 ]
-for year_to_scrape in range(2024, 2025):
+for year_to_scrape in range(2010, 2025):
     output_filename = f'./data/defense-game-logs/all_defense_{year_to_scrape}.csv'
     with open(output_filename, 'w', newline='') as output_csvfile:
         csvwriter = csv.writer(output_csvfile)
@@ -1278,10 +1285,10 @@ for year_to_scrape in range(2024, 2025):
                 time.sleep(2)
     print(f"Scraping completed for {year_to_scrape}. Data saved to {output_filename}.")
 
-# df = pd.read_csv('./data/defense-game-logs/all_defense_2024.csv')
+# df = pd.read_csv('./data/defense-game-logs/all_defense_2010.csv')
 # df.dropna(inplace=True)
-# df.to_csv('./data/defense-game-logs/all_defense_2024.csv', index=False)
-for year in range(2024, 2025):
+# df.to_csv('./data/defense-game-logs/all_defense_2010.csv', index=False)
+for year in range(2010, 2025):
     file_path = f'./data/defense-game-logs/all_defense_{year}.csv'
     try:
         df = pd.read_csv(file_path)
