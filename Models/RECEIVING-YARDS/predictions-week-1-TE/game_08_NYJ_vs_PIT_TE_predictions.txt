@@ -3,19 +3,18 @@ NYJ vs PIT | Week 1 2025 | TE Projected Receiving Yards
 ================================================================================
 
 +----------------+--------------+    +--------------------+--------------+
-| NYJ Player     |  Pred Yards  |    | PIT Player         |  Pred Yards  |
+| NYJ Player     |   Pred Yards |    | PIT Player         |   Pred Yards |
 +================+==============+    +====================+==============+
-| Stone Smartt   |     19.3     |    | Jonnu Smith        |     51.5     |
-| Jeremy Ruckert |     5.9      |    | Pat Freiermuth     |     18.9     |
-| Zack Kuntz     |     1.7      |    | Darnell Washington |     12.8     |
-+----------------+--------------+    | Connor Heyward     |     7.5      |
-                                     | MyCole Pruitt      |     4.1      |
-                                     | Donald Parham      |     1.7      |
+| Stone Smartt   |         19.3 |    | Jonnu Smith        |         51.5 |
+| Jeremy Ruckert |          5.9 |    | Pat Freiermuth     |         18.9 |
++----------------+--------------+    | Darnell Washington |         12.8 |
+                                     | Connor Heyward     |          7.5 |
+                                     | MyCole Pruitt      |          4.1 |
                                      +--------------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total TEs: 9 (3 NYJ, 6 PIT)
+Total TEs: 7 (2 NYJ, 5 PIT)
 Top Projection: Jonnu Smith (PIT) - 51.5 yards
 ================================================================================

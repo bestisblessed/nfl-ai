@@ -3,21 +3,18 @@ CHI vs MIN | Week 1 2025 | Projected Receiving Yards
 ================================================================================
 
 +-------------------+--------------+    +------------------+--------------+
-| CHI Player        |  Pred Yards  |    | MIN Player       |  Pred Yards  |
+| CHI Player        |   Pred Yards |    | MIN Player       |   Pred Yards |
 +===================+==============+    +==================+==============+
-| DJ Moore          |     77.1     |    | Justin Jefferson |     62.3     |
-| Rome Odunze       |     48.6     |    | Jalen Nailor     |     36.3     |
-| Olamide Zaccheaus |      24      |    | Jordan Addison   |     12.6     |
-| Devin Duvernay    |     5.5      |    | Brandon Powell   |     12.5     |
-| Nsimba Webster    |     1.7      |    | Rondale Moore    |     1.7      |
-| Miles Boykin      |     1.7      |    +------------------+--------------+
-| Samori Toure      |     1.7      |    
-| Tyler Scott       |     1.7      |    
+| DJ Moore          |         77.1 |    | Justin Jefferson |         62.3 |
+| Rome Odunze       |         48.6 |    | Jalen Nailor     |         36.3 |
+| Olamide Zaccheaus |         24   |    | Jordan Addison   |         12.6 |
+| Tyler Scott       |         10.4 |    | Brandon Powell   |         12.5 |
+| Devin Duvernay    |          5.5 |    +------------------+--------------+
 +-------------------+--------------+    
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total WRs: 13 (8 CHI, 5 MIN)
+Total WRs: 9 (5 CHI, 4 MIN)
 Top Projection: DJ Moore (CHI) - 77.1 yards
 ================================================================================

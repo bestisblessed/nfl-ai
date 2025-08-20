@@ -3,14 +3,14 @@ SEA vs SF | Week 1 2025 | RB Projected Receiving Yards
 ================================================================================
 
 +--------------------+--------------+    +---------------------+--------------+
-| SEA Player         |  Pred Yards  |    | SF Player           |  Pred Yards  |
+| SEA Player         |   Pred Yards |    | SF Player           |   Pred Yards |
 +====================+==============+    +=====================+==============+
-| Zach Charbonnet    |     30.4     |    | Isaac Guerendo      |      60      |
-| Kenneth Walker III |     17.4     |    | Kyle Juszczyk       |     38.5     |
-| Kenny McIntosh     |      1       |    | Ameer Abdullah      |     33.7     |
-+--------------------+--------------+    | Christian McCaffrey |     19.5     |
-                                         | Jeff Wilson         |     1.7      |
-                                         | Ke'Shawn Vaughn     |     1.5      |
+| Zach Charbonnet    |         30.4 |    | Isaac Guerendo      |         60   |
+| Kenneth Walker III |         17.4 |    | Kyle Juszczyk       |         38.5 |
+| Kenny McIntosh     |          1   |    | Ameer Abdullah      |         33.7 |
++--------------------+--------------+    | Christian McCaffrey |         19.5 |
+                                         | Jeff Wilson         |          1.7 |
+                                         | Ke'Shawn Vaughn     |          1.5 |
                                          +---------------------+--------------+
 
 ================================================================================

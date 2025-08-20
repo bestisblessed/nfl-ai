@@ -1,19 +1,18 @@
 ================================================================================
-ARI vs NO | Week 1 2025 | TE Projected Receiving Yards
+BUF vs BAL | Week 1 2025 | TE Projected Receiving Yards
 ================================================================================
 
 +----------------+--------------+    +---------------+--------------+
-| ARI Player     |  Pred Yards  |    | NO Player     |  Pred Yards  |
+| BUF Player     |   Pred Yards |    | BAL Player    |   Pred Yards |
 +================+==============+    +===============+==============+
-| Trey McBride   |     52.8     |    | Juwan Johnson |     76.1     |
-| Tip Reiman     |     9.5      |    | Taysom Hill   |     46.1     |
-| Elijah Higgins |     6.1      |    | Foster Moreau |     32.6     |
-| Josiah Deguara |     5.5      |    | Jack Stoll    |     8.1      |
+| Dawson Knox    |          9.9 |    | Isaiah Likely |         67.8 |
+| Dalton Kincaid |          7.3 |    | Mark Andrews  |         57   |
+| Zach Davidson  |          6.9 |    | Charlie Kolar |          7.6 |
 +----------------+--------------+    +---------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total TEs: 8 (4 ARI, 4 NO)
-Top Projection: Juwan Johnson (NO) - 76.1 yards
+Total TEs: 6 (3 BUF, 3 BAL)
+Top Projection: Isaiah Likely (BAL) - 67.8 yards
 ================================================================================

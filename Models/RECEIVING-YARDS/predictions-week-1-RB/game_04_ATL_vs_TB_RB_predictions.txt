@@ -3,19 +3,17 @@ ATL vs TB | Week 1 2025 | RB Projected Receiving Yards
 ================================================================================
 
 +----------------+--------------+    +----------------+--------------+
-| ATL Player     |  Pred Yards  |    | TB Player      |  Pred Yards  |
+| ATL Player     |   Pred Yards |    | TB Player      |   Pred Yards |
 +================+==============+    +================+==============+
-| Tyler Allgeier |     16.4     |    | Bucky Irving   |     40.2     |
-| Bijan Robinson |     8.6      |    | Rachaad White  |     16.9     |
-| Elijah Dotson  |     1.7      |    | Sean Tucker    |     5.3      |
-+----------------+--------------+    | Chase Edmonds  |     1.7      |
-                                     | Owen Wright    |     1.7      |
-                                     | Jase McClellan |     1.7      |
+| Tyler Allgeier |         16.4 |    | Bucky Irving   |         40.2 |
+| Bijan Robinson |          8.6 |    | Rachaad White  |         16.9 |
++----------------+--------------+    | Sean Tucker    |          5.3 |
+                                     | Jase McClellan |          1.7 |
                                      +----------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total RBs: 9 (3 ATL, 6 TB)
+Total RBs: 6 (2 ATL, 4 TB)
 Top Projection: Bucky Irving (TB) - 40.2 yards
 ================================================================================

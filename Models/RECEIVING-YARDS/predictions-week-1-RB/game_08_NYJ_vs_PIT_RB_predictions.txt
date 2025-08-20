@@ -3,19 +3,17 @@ NYJ vs PIT | Week 1 2025 | RB Projected Receiving Yards
 ================================================================================
 
 +---------------+--------------+    +-----------------------+--------------+
-| NYJ Player    |  Pred Yards  |    | PIT Player            |  Pred Yards  |
+| NYJ Player    |   Pred Yards |    | PIT Player            |   Pred Yards |
 +===============+==============+    +=======================+==============+
-| Breece Hall   |     21.6     |    | Jaylen Warren         |     22.8     |
-| Isaiah Davis  |     2.2      |    | Trey Sermon           |     7.4      |
-| Kene Nwangwu  |     1.7      |    | Cordarrelle Patterson |     1.7      |
-| Zach Evans    |     1.7      |    | Evan Hull             |     1.7      |
-| Braelon Allen |     0.4      |    | Lew Nichols III       |     1.7      |
-+---------------+--------------+    | Kenneth Gainwell      |     0.8      |
+| Breece Hall   |         21.6 |    | Jaylen Warren         |         22.8 |
+| Isaiah Davis  |          2.2 |    | Trey Sermon           |          7.4 |
+| Braelon Allen |          0.4 |    | Cordarrelle Patterson |          1.7 |
++---------------+--------------+    | Kenneth Gainwell      |          0.8 |
                                     +-----------------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total RBs: 11 (5 NYJ, 6 PIT)
+Total RBs: 7 (3 NYJ, 4 PIT)
 Top Projection: Jaylen Warren (PIT) - 22.8 yards
 ================================================================================
