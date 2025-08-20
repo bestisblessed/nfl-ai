@@ -99,9 +99,9 @@ predictions["pred_rec_yards"] = model.predict(predictions[feature_cols])
 # Sort by predicted yards
 predictions = predictions.sort_values("pred_rec_yards", ascending=False)
 
-# Save overall CSV
+# Save overall CSV with proper naming convention
 output_cols = ["full_name", "team", "opp", "pred_rec_yards"] + feature_cols
-predictions[output_cols].to_csv(f"{output_dir}/prop_projections_receiving.csv", index=False)
+predictions[output_cols].to_csv(f"{output_dir}/final_week{week_num}_WR_rec_yards_report.csv", index=False)
 
 # Create game-by-game visualizations (preserve original schedule order)
 unique_games = []
