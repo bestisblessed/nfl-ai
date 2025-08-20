@@ -1,6 +1,6 @@
 # make_historical_from_raw.py
 # Input:  all_passing_rushing_receiving.csv  (raw per player-game stats)
-# Output: historical_player_games.csv        (cleaned for modeling)
+# Output: model_train.csv        (cleaned for modeling)
 # Also downloads and prepares 2025 roster data
 
 import pandas as pd
