@@ -23,17 +23,17 @@ fi
 echo "=== Running predictions for Week $WEEK_NUM ==="
 
 echo "Running WR predictions..."
-python xgboost_receiving_yards_wr_simple.py $WEEK_NUM
+python xgboost_receiving_yards_wr.py $WEEK_NUM
 # python xgboost_receiving_yards_v3.py $WEEK_NUM
 
 echo ""
 echo "Running RB predictions..."
-python xgboost_receiving_yards_rb_simple.py $WEEK_NUM
+python xgboost_receiving_yards_rb.py $WEEK_NUM
 # python xgboost_receiving_yards_rb.py $WEEK_NUM
 
 echo ""  
 echo "Running TE predictions..."
-python xgboost_receiving_yards_te_simple.py $WEEK_NUM
+python xgboost_receiving_yards_te.py $WEEK_NUM
 # python xgboost_receiving_yards_te.py $WEEK_NUM
 
 echo ""
