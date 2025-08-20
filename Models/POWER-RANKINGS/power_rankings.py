@@ -157,7 +157,7 @@ if not upcoming_games_df.empty:
         })
 else:
     # Try to read upcoming games from CSV
-    upcoming_games_path = "upcoming_games.csv"
+    upcoming_games_path = "data/upcoming_games.csv"
     if os.path.exists(upcoming_games_path):
         print(f"Using upcoming games from {upcoming_games_path} for predictions:")
         upcoming_games_file_df = pd.read_csv(upcoming_games_path)
