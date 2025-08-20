@@ -13,7 +13,7 @@ import matplotlib.patches as patches
 from matplotlib.colors import LinearSegmentedColormap
 from tabulate import tabulate
 
-print("=== XGBoost Receiving Yards Prediction with Current Rosters ===")
+print("=== XGBoost TE Receiving Yards Prediction with Current Rosters ===")
 
 # Ask user for week number
 try:
@@ -26,13 +26,13 @@ except (ValueError, KeyboardInterrupt):
     week_num = 1
 
 # Create output directory based on week
-output_dir = f"predictions-week-{week_num}-WR"
+output_dir = f"predictions-week-{week_num}-TE"
 print(f"Saving files to: {output_dir}/")
 
 # ---------------------------
 # Function to create game visualization tables
 # ---------------------------
-def create_game_wr_table(game_data, team1, team2, game_num):
+def create_game_te_table(game_data, team1, team2, game_num):
     """Create a visualization with separate tables for each team side by side"""
     
     # Split data by team and sort by predicted yards (highest to lowest)
@@ -46,7 +46,7 @@ def create_game_wr_table(game_data, team1, team2, game_num):
     fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(18, fig_height))
     
     # Title for the entire figure
-    fig.suptitle(f'Week {week_num} 2025: {team1} vs {team2} - WR Receiving Yards Predictions', 
+    fig.suptitle(f'Week {week_num} 2025: {team1} vs {team2} - TE Receiving Yards Predictions', 
                  fontsize=18, fontweight='bold', y=0.95)
     
     # Helper function to create a team table
@@ -55,7 +55,7 @@ def create_game_wr_table(game_data, team1, team2, game_num):
         ax.axis('off')
         
         if team_data.empty:
-            ax.text(0.5, 0.5, f'No {team_name} WRs found', 
+            ax.text(0.5, 0.5, f'No {team_name} TEs found', 
                    ha='center', va='center', fontsize=14, transform=ax.transAxes)
             return
         
@@ -112,12 +112,12 @@ def create_game_wr_table(game_data, team1, team2, game_num):
     
     # Save the figure
     plt.tight_layout()
-    filename = f"{output_dir}/game_{game_num:02d}_{team1}_vs_{team2}_WR_predictions.png"
+    filename = f"{output_dir}/game_{game_num:02d}_{team1}_vs_{team2}_TE_predictions.png"
     plt.savefig(filename, dpi=300, bbox_inches='tight', facecolor='white', pad_inches=0.3)
     plt.close()
     return filename
 
-def create_game_wr_table_cleaned(game_data, team1, team2, game_num):
+def create_game_te_table_cleaned(game_data, team1, team2, game_num):
     """Create a cleaned visualization with only player names and predicted yards"""
     
     # Split data by team and sort by predicted yards (highest to lowest)
@@ -131,7 +131,7 @@ def create_game_wr_table_cleaned(game_data, team1, team2, game_num):
     fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, fig_height))
     
     # Professional title for the cleaned version
-    fig.suptitle(f'{team1} vs {team2} | Week {week_num} 2025 | Projected Receiving Yards', 
+    fig.suptitle(f'{team1} vs {team2} | Week {week_num} 2025 | TE Projected Receiving Yards', 
                  fontsize=20, fontweight='bold', y=0.95, color='#2C3E50')
     
     # Helper function to create a clean team table
@@ -140,7 +140,7 @@ def create_game_wr_table_cleaned(game_data, team1, team2, game_num):
         ax.axis('off')
         
         if team_data.empty:
-            ax.text(0.5, 0.5, f'No {team_name} WRs found', 
+            ax.text(0.5, 0.5, f'No {team_name} TEs found', 
                    ha='center', va='center', fontsize=14, transform=ax.transAxes)
             return
         
@@ -202,25 +202,25 @@ def create_game_wr_table_cleaned(game_data, team1, team2, game_num):
     plt.tight_layout()
     fig.patch.set_facecolor('#FFFFFF')  # Clean white background
     
-    filename = f"{output_dir}/game_{game_num:02d}_{team1}_vs_{team2}_WR_predictions_cleaned.png"
+    filename = f"{output_dir}/game_{game_num:02d}_{team1}_vs_{team2}_TE_predictions_cleaned.png"
     plt.savefig(filename, dpi=300, bbox_inches='tight', facecolor='#FFFFFF', 
                 edgecolor='none', pad_inches=0.4, transparent=False)
     plt.close()
     return filename
 
-def create_game_wr_table_text(game_data, team1, team2, game_num):
+def create_game_te_table_text(game_data, team1, team2, game_num):
     """Create a text-based tabulated table file with teams side by side"""
     
     # Split data by team and sort by predicted yards (highest to lowest)
     team1_data = game_data[game_data['team'] == team1].sort_values('pred_rec_yards', ascending=False)
     team2_data = game_data[game_data['team'] == team2].sort_values('pred_rec_yards', ascending=False)
     
-    filename = f"{output_dir}/game_{game_num:02d}_{team1}_vs_{team2}_WR_predictions.txt"
+    filename = f"{output_dir}/game_{game_num:02d}_{team1}_vs_{team2}_TE_predictions.txt"
     
     with open(filename, 'w') as f:
         # Write header
         f.write("=" * 80 + "\n")
-        f.write(f"{team1} vs {team2} | Week {week_num} 2025 | Projected Receiving Yards\n")
+        f.write(f"{team1} vs {team2} | Week {week_num} 2025 | TE Projected Receiving Yards\n")
         f.write("=" * 80 + "\n\n")
         
         # Prepare data for side-by-side tables
@@ -248,7 +248,7 @@ def create_game_wr_table_text(game_data, team1, team2, game_num):
                 numalign='center'
             )
         else:
-            team1_table = f"No {team1} WRs found"
+            team1_table = f"No {team1} TEs found"
         
         if team2_table_data:
             team2_table = tabulate(
@@ -259,7 +259,7 @@ def create_game_wr_table_text(game_data, team1, team2, game_num):
                 numalign='center'
             )
         else:
-            team2_table = f"No {team2} WRs found"
+            team2_table = f"No {team2} TEs found"
         
         # Split tables into lines for side-by-side display
         team1_lines = team1_table.split('\n')
@@ -290,12 +290,12 @@ def create_game_wr_table_text(game_data, team1, team2, game_num):
             "=" * 80,
             "GAME SUMMARY",
             "-" * 15,
-            f"Total WRs: {len(team1_data) + len(team2_data)} ({len(team1_data)} {team1}, {len(team2_data)} {team2})"
+            f"Total TEs: {len(team1_data) + len(team2_data)} ({len(team1_data)} {team1}, {len(team2_data)} {team2})"
         ]
         
         if len(team1_data) + len(team2_data) > 0:
-            top_wr = game_data.loc[game_data['pred_rec_yards'].idxmax()]
-            summary_lines.append(f"Top Projection: {top_wr['player_name']} ({top_wr['team']}) - {top_wr['pred_rec_yards']:.1f} yards")
+            top_te = game_data.loc[game_data['pred_rec_yards'].idxmax()]
+            summary_lines.append(f"Top Projection: {top_te['player_name']} ({top_te['team']}) - {top_te['pred_rec_yards']:.1f} yards")
         
         summary_lines.append("=" * 80)
         
@@ -304,7 +304,7 @@ def create_game_wr_table_text(game_data, team1, team2, game_num):
     
     # Print to terminal as well
     print(f"\n{'='*80}")
-    print(f"{team1} vs {team2} | Week {week_num} 2025 | Projected Receiving Yards")
+    print(f"{team1} vs {team2} | Week {week_num} 2025 | TE Projected Receiving Yards")
     print(f"{'='*80}")
     print()
     
@@ -476,19 +476,19 @@ upcoming_players[cols].to_csv(OUT, index=False)
 print(f"Saved: {OUT}")
 
 # ---------------------------
-# 6) Create WR game visualization tables
+# 6) Create TE game visualization tables
 # ---------------------------
-# Filter for WRs only (position already included from roster data)
-wr_players = upcoming_players[upcoming_players['position'] == 'WR'].copy()
+# Filter for TEs only (position already included from roster data)
+te_players = upcoming_players[upcoming_players['position'] == 'TE'].copy()
 
-if not wr_players.empty:
-    print(f"\nCreating game visualization tables for {len(wr_players)} WRs...")
+if not te_players.empty:
+    print(f"\nCreating game visualization tables for {len(te_players)} TEs...")
     
     # Get unique games (both team vs opp and opp vs team represent the same game)
     games = []
     processed_games = set()
     
-    for _, row in wr_players[['team', 'opp']].drop_duplicates().iterrows():
+    for _, row in te_players[['team', 'opp']].drop_duplicates().iterrows():
         team1, team2 = sorted([row['team'], row['opp']])  # Sort to avoid duplicates
         game_key = f"{team1}_{team2}"
         
@@ -501,32 +501,32 @@ if not wr_players.empty:
     # Create visualization for each game
     created_files = []
     for i, (team1, team2) in enumerate(games, 1):
-        # Get WRs from both teams for this game
-        game_wrs = wr_players[
-            ((wr_players['team'] == team1) & (wr_players['opp'] == team2)) |
-            ((wr_players['team'] == team2) & (wr_players['opp'] == team1))
+        # Get TEs from both teams for this game
+        game_tes = te_players[
+            ((te_players['team'] == team1) & (te_players['opp'] == team2)) |
+            ((te_players['team'] == team2) & (te_players['opp'] == team1))
         ].copy()
         
-        if not game_wrs.empty:
+        if not game_tes.empty:
             # Sort by predicted receiving yards (highest to lowest)
-            game_wrs = game_wrs.sort_values('pred_rec_yards', ascending=False)
+            game_tes = game_tes.sort_values('pred_rec_yards', ascending=False)
             
             # Create full visualization table
-            filename = create_game_wr_table(game_wrs, team1, team2, i)
+            filename = create_game_te_table(game_tes, team1, team2, i)
             created_files.append(filename)
-            print(f"  Created: {filename} ({len(game_wrs)} WRs)")
+            print(f"  Created: {filename} ({len(game_tes)} TEs)")
             
             # Create cleaned visualization table (only name and yards)
-            filename_cleaned = create_game_wr_table_cleaned(game_wrs, team1, team2, i)
+            filename_cleaned = create_game_te_table_cleaned(game_tes, team1, team2, i)
             created_files.append(filename_cleaned)
-            print(f"  Created: {filename_cleaned} ({len(game_wrs)} WRs)")
+            print(f"  Created: {filename_cleaned} ({len(game_tes)} TEs)")
             
             # Create text-based tabulated table
-            filename_text = create_game_wr_table_text(game_wrs, team1, team2, i)
+            filename_text = create_game_te_table_text(game_tes, team1, team2, i)
             created_files.append(filename_text)
-            print(f"  Created: {filename_text} ({len(game_wrs)} WRs)")
+            print(f"  Created: {filename_text} ({len(game_tes)} TEs)")
     
     print(f"\nSuccessfully created {len(created_files)} game files ({len(created_files)//3} full PNG + {len(created_files)//3} cleaned PNG + {len(created_files)//3} text)!")
 else:
-    print("No WRs found in predictions data")
+    print("No TEs found in predictions data")
     

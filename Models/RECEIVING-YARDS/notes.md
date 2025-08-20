@@ -1,7 +1,7 @@
-# NFL Wide Receiver Receiving Yards Prediction Model
+# NFL Receiving Yards Prediction Models (WR, RB, TE)
 
 ## Model Overview
-This model predicts weekly receiving yards for NFL wide receivers using historical performance data and current roster assignments.
+These models predict weekly receiving yards for NFL skill position players (Wide Receivers, Running Backs, and Tight Ends) using historical performance data and current roster assignments.
 
 ## Model Type
 **XGBoost Regressor** - Gradient boosting decision tree ensemble model
@@ -68,18 +68,32 @@ XGBRegressor(
 3. **Missing Data Handling**: Fill missing trailing features with 0.0 for new/limited-data players
 4. **Game Assignment**: Map players to upcoming game schedule
 
+## Scripts Architecture
+
+### Position-Specific Scripts
+1. **`xgboost_receiving_yards_v3.py`**: Wide Receiver predictions
+2. **`xgboost_receiving_yards_rb.py`**: Running Back predictions  
+3. **`xgboost_receiving_yards_te.py`**: Tight End predictions
+
+### Shared Components
+- **Model Architecture**: All scripts use identical XGBoost parameters and feature engineering
+- **Data Pipeline**: Same training data, roster integration, and prediction logic
+- **Visualization Functions**: Position-specific adaptations of the same table generation code
+
 ## Output Formats
 
-### Generated Files (per week)
-**Directory**: `predictions-week-{week_num}/`
+### Generated Directories (per week/position)
+- **`predictions-week-{week_num}-WR/`**: Wide Receiver predictions
+- **`predictions-week-{week_num}-RB/`**: Running Back predictions
+- **`predictions-week-{week_num}-TE/`**: Tight End predictions
 
-**File Types per Game**:
+### File Types per Game (in each directory)
 1. **Full PNG**: Complete statistical table with all trailing features
 2. **Cleaned PNG**: Simplified table (player name + predicted yards only)
 3. **Text Table**: Terminal-friendly side-by-side tabulated format
 
-**Summary Files**:
-- `prop_projections_receiving.csv`: All player predictions with full feature data
+### Summary Files (per position)
+- `prop_projections_receiving.csv`: All player predictions with full feature data for that position
 
 ## Model Strengths
 - **Temporal Awareness**: Multiple time windows capture both recent and sustained performance
@@ -89,11 +103,32 @@ XGBRegressor(
 
 ## Model Limitations
 - **Feature Scope**: Limited to receiving-specific metrics (no team context, matchup data, etc.)
-- **Position Focus**: Primarily designed for wide receivers
+- **Position Coverage**: Covers skill positions (WR/RB/TE) but not other positions like QB, OL, DEF
 - **Historical Dependency**: Performance limited by quality of trailing averages
 - **No Game Context**: Doesn't account for game script, weather, or opponent strength
 
+## Execution
+
+### Running All Positions
+```bash
+./run.sh
+```
+This executes the complete pipeline:
+1. Data preparation and roster download
+2. WR predictions
+3. RB predictions  
+4. TE predictions
+
+### Running Individual Positions
+```bash
+python prepare_data.py  # Run once to prepare data
+python xgboost_receiving_yards_v3.py  # WR only
+python xgboost_receiving_yards_rb.py  # RB only
+python xgboost_receiving_yards_te.py  # TE only
+```
+
 ## Usage Notes
-- **Best For**: Week-to-week receiving yards predictions for established players
+- **Best For**: Week-to-week receiving yards predictions for established players across all skill positions
 - **Caution With**: New players, players returning from injury, or unusual game contexts
 - **Update Frequency**: Requires current roster data and recent historical performance updates
+- **Position Coverage**: Comprehensive predictions for WR, RB, and TE receiving production
