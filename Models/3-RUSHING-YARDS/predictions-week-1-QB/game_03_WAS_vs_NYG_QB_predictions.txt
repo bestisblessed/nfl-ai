@@ -5,14 +5,12 @@ WAS vs NYG | Week 1 2025 | QB Projected Rushing Yards
 +----------------+--------------+    +----------------+--------------+
 | WAS Player     |   Pred Yards |    | NYG Player     |   Pred Yards |
 +================+==============+    +================+==============+
-| Jayden Daniels |         28.2 |    | Russell Wilson |          9   |
-| Marcus Mariota |          1   |    | Jameis Winston |          2.6 |
-| Josh Johnson   |          1   |    +----------------+--------------+
-+----------------+--------------+    
+| Jayden Daniels |         28.2 |    | Russell Wilson |            9 |
++----------------+--------------+    +----------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total RBs: 5 (3 WAS, 2 NYG)
+Total RBs: 2 (1 WAS, 1 NYG)
 Top Projection: Jayden Daniels (WAS) - 28.2 yards
 ================================================================================
