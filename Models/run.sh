@@ -120,7 +120,7 @@ cd ..
 # Generate Final Combined Report
 print_section "📊 Generating Final Combined Report"
 echo "Creating consolidated props report..."
-python create_combined_report.py $WEEK
+python generate_final_report.py $WEEK
 if [ $? -ne 0 ]; then
     echo "❌ Error: Combined report generation failed!"
     exit 1
