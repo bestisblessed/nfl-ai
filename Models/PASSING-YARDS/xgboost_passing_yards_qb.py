@@ -67,10 +67,16 @@ if "team" not in upcoming.columns:
     away = upcoming.rename(columns={"away_team": "team", "home_team": "opp"})
     upcoming = pd.concat([home, away], ignore_index=True)
 
+# Load hardcoded starting QBs for 2025
+starting_qbs_2025 = pd.read_csv("data/starting_qbs_2025.csv")
+
 # Get current rosters for QBs only
 current_rosters = rosters[rosters["season"] == 2025]
-rb_rosters = current_rosters[current_rosters["position"] == "QB"].copy()
-rb_rosters["player_id"] = rb_rosters["pfr_id"] + ".htm"
+qb_rosters = current_rosters[current_rosters["position"] == "QB"].copy()
+qb_rosters["player_id"] = qb_rosters["pfr_id"] + ".htm"
+
+# Filter to only the designated starting QBs by matching team and full_name
+qb_rosters = qb_rosters.merge(starting_qbs_2025, left_on=['team', 'full_name'], right_on=['team', 'starting_qb'], how='inner')
 
 # Get latest trailing features for each player
 last_season_data = hist[hist["season"] == hist["season"].max()]
@@ -78,12 +84,22 @@ player_stats = last_season_data.sort_values(["player_id", "week"]).groupby("play
 player_features = player_stats[["player_id"] + feature_cols]
 
 # Merge rosters with historical features
-qb_data = rb_rosters.merge(player_features, on="player_id", how="left")
+qb_data = qb_rosters.merge(player_features, on="player_id", how="left")
 
-# Filter out players without historical data (instead of filling with zeros)
-qb_data = qb_data.dropna(subset=feature_cols)
+# Identify QBs without historical data (rookies/new players)
+qbs_without_data = qb_data[qb_data[feature_cols].isnull().any(axis=1)]
+qbs_with_data = qb_data.dropna(subset=feature_cols)
 
-print(f"Filtered to {len(qb_data)} QBs with historical data (removed {len(rb_rosters) - len(qb_data)} without history)")
+print(f"QBs without historical data (will be marked as 'No Data'): {qbs_without_data['full_name'].tolist()}")
+print(f"Using {len(qbs_with_data)} starting QBs with historical data for predictions")
+
+# Keep the no-data QBs for display purposes but mark them
+qbs_without_data['pred_pass_yards'] = None
+qbs_without_data['no_data'] = True
+qbs_with_data['no_data'] = False
+
+# Use only QBs with data for actual predictions
+qb_data = qbs_with_data
 
 # Attach to upcoming games
 games = upcoming[["team", "opp"]].drop_duplicates()
@@ -92,8 +108,15 @@ predictions = games.merge(qb_data, on="team", how="inner")
 # Make predictions
 predictions["pred_pass_yards"] = model.predict(predictions[feature_cols])
 
-# Sort by predicted yards
-predictions = predictions.sort_values("pred_pass_yards", ascending=False)
+# Add no-data QBs back for display purposes
+no_data_games = upcoming[["team", "opp"]].drop_duplicates().merge(qbs_without_data, on="team", how="inner")
+if not no_data_games.empty:
+    # Add placeholder prediction for no-data QBs
+    no_data_games["pred_pass_yards"] = None
+    predictions = pd.concat([predictions, no_data_games], ignore_index=True)
+
+# Sort by predicted yards (None values will go to the end)
+predictions = predictions.sort_values("pred_pass_yards", ascending=False, na_position='last')
 
 # Save overall CSV with proper naming convention
 output_cols = ["full_name", "team", "opp", "pred_pass_yards"] + feature_cols
@@ -137,7 +160,12 @@ for i, (team1, team2) in enumerate(unique_games, 1):
         # Team 1 table
         ax1.axis('tight'); ax1.axis('off')
         if not team1_data.empty:
-            table_data1 = [[row['full_name'], f"{row['pred_pass_yards']:.1f}", f"{row['attempts_l5']:.1f}", f"{row['completions_l5']:.1f}", f"{row['yards_l5']:.1f}"] for _, row in team1_data.iterrows()]
+            table_data1 = []
+            for _, row in team1_data.iterrows():
+                if pd.isna(row['pred_pass_yards']):
+                    table_data1.append([row['full_name'], "No Data", "No Data", "No Data", "No Data"])
+                else:
+                    table_data1.append([row['full_name'], f"{row['pred_pass_yards']:.1f}", f"{row['attempts_l5']:.1f}", f"{row['completions_l5']:.1f}", f"{row['yards_l5']:.1f}"])
             ax1.text(0.5, 0.9, team1, ha='center', va='center', fontsize=16, fontweight='bold', 
                     transform=ax1.transAxes, bbox=dict(boxstyle="round,pad=0.4", facecolor='#1E88E5', alpha=0.9), color='white')
             table1 = ax1.table(cellText=table_data1, colLabels=['Player', 'Pred Yards', 'Attempts L5', 'Comp L5', 'Yards L5'],
@@ -153,9 +181,12 @@ for i, (team1, team2) in enumerate(unique_games, 1):
         # Team 2 table
         ax2.axis('tight'); ax2.axis('off')
         if not team2_data.empty:
-            table_data2 = [[row['full_name'], f"{row['pred_pass_yards']:.1f}", 
-                           f"{row['attempts_l5']:.1f}", f"{row['completions_l5']:.1f}", f"{row['yards_l5']:.1f}"] 
-                          for _, row in team2_data.iterrows()]
+            table_data2 = []
+            for _, row in team2_data.iterrows():
+                if pd.isna(row['pred_pass_yards']):
+                    table_data2.append([row['full_name'], "No Data", "No Data", "No Data", "No Data"])
+                else:
+                    table_data2.append([row['full_name'], f"{row['pred_pass_yards']:.1f}", f"{row['attempts_l5']:.1f}", f"{row['completions_l5']:.1f}", f"{row['yards_l5']:.1f}"])
             ax2.text(0.5, 0.9, team2, ha='center', va='center', fontsize=16, fontweight='bold', 
                     transform=ax2.transAxes, bbox=dict(boxstyle="round,pad=0.4", facecolor='#7B1FA2', alpha=0.9), color='white')
             table2 = ax2.table(cellText=table_data2, colLabels=['Player', 'Pred Yards', 'Attempts L5', 'Comp L5', 'Yards L5'],
@@ -183,7 +214,12 @@ for i, (team1, team2) in enumerate(unique_games, 1):
         # Team 1 cleaned
         ax1.axis('tight'); ax1.axis('off')
         if not team1_data.empty:
-            clean_data1 = [[row['full_name'], f"{row['pred_pass_yards']:.1f}"] for _, row in team1_data.iterrows()]
+            clean_data1 = []
+            for _, row in team1_data.iterrows():
+                if pd.isna(row['pred_pass_yards']):
+                    clean_data1.append([row['full_name'], "No Data"])
+                else:
+                    clean_data1.append([row['full_name'], f"{row['pred_pass_yards']:.1f}"])
             ax1.text(0.5, 0.92, team1, ha='center', va='center', fontsize=18, fontweight='bold', 
                     transform=ax1.transAxes, bbox=dict(boxstyle="round,pad=0.5", facecolor='#34495E'), color='white')
             clean_table1 = ax1.table(cellText=clean_data1, colLabels=['Player Name', 'Predicted Yards'],
@@ -199,7 +235,12 @@ for i, (team1, team2) in enumerate(unique_games, 1):
         # Team 2 cleaned
         ax2.axis('tight'); ax2.axis('off')  
         if not team2_data.empty:
-            clean_data2 = [[row['full_name'], f"{row['pred_pass_yards']:.1f}"] for _, row in team2_data.iterrows()]
+            clean_data2 = []
+            for _, row in team2_data.iterrows():
+                if pd.isna(row['pred_pass_yards']):
+                    clean_data2.append([row['full_name'], "No Data"])
+                else:
+                    clean_data2.append([row['full_name'], f"{row['pred_pass_yards']:.1f}"])
             ax2.text(0.5, 0.92, team2, ha='center', va='center', fontsize=18, fontweight='bold', 
                     transform=ax2.transAxes, bbox=dict(boxstyle="round,pad=0.5", facecolor='#2C3E50'), color='white')
             clean_table2 = ax2.table(cellText=clean_data2, colLabels=['Player Name', 'Predicted Yards'],
@@ -227,8 +268,19 @@ for i, (team1, team2) in enumerate(unique_games, 1):
             f.write("=" * 80 + "\n\n")
             
             # Create side-by-side tables
-            team1_table_data = [[row['full_name'], f"{row['pred_pass_yards']:.1f}"] for _, row in team1_data.iterrows()]
-            team2_table_data = [[row['full_name'], f"{row['pred_pass_yards']:.1f}"] for _, row in team2_data.iterrows()]
+            team1_table_data = []
+            for _, row in team1_data.iterrows():
+                if pd.isna(row['pred_pass_yards']):
+                    team1_table_data.append([row['full_name'], "No Data"])
+                else:
+                    team1_table_data.append([row['full_name'], f"{row['pred_pass_yards']:.1f}"])
+                    
+            team2_table_data = []
+            for _, row in team2_data.iterrows():
+                if pd.isna(row['pred_pass_yards']):
+                    team2_table_data.append([row['full_name'], "No Data"])
+                else:
+                    team2_table_data.append([row['full_name'], f"{row['pred_pass_yards']:.1f}"])
             
             team1_table = tabulate(team1_table_data, headers=[f"{team1} Player", "Pred Yards"], 
                                  tablefmt='outline', stralign='left') if team1_table_data else f"No {team1} QBs"

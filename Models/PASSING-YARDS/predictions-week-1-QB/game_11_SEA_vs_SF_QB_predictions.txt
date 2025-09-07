@@ -6,12 +6,11 @@ SEA vs SF | Week 1 2025 | QB Projected Passing Yards
 | SEA Player   |   Pred Yards |    | SF Player   |   Pred Yards |
 +==============+==============+    +=============+==============+
 | Sam Darnold  |        243.2 |    | Brock Purdy |        352.4 |
-| Drew Lock    |        165.2 |    | Mac Jones   |        261.3 |
 +--------------+--------------+    +-------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total QBs: 4 (2 SEA, 2 SF)
+Total QBs: 2 (1 SEA, 1 SF)
 Top Projection: Brock Purdy (SF) - 352.4 yards
 ================================================================================
