@@ -8,12 +8,13 @@ JAX vs CAR | Week 1 2025 | RB Projected Receiving Yards
 | Travis Etienne |         30.5 |    | Chuba Hubbard     |         14.3 |
 | Tank Bigsby    |          2.5 |    | Rico Dowdle       |         14.2 |
 +----------------+--------------+    | Jonathon Brooks   |         13.2 |
+                                     | DeeJay Dallas     |          6.9 |
                                      | Raheem Blackshear |          1.7 |
                                      +-------------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total RBs: 6 (2 JAX, 4 CAR)
+Total RBs: 7 (2 JAX, 5 CAR)
 Top Projection: Travis Etienne (JAX) - 30.5 yards
 ================================================================================

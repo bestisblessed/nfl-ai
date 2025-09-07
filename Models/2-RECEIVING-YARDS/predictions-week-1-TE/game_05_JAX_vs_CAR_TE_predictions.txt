@@ -6,13 +6,13 @@ JAX vs CAR | Week 1 2025 | TE Projected Receiving Yards
 | JAX Player      |   Pred Yards |    | CAR Player        |   Pred Yards |
 +=================+==============+    +===================+==============+
 | Johnny Mundt    |         25.5 |    | Tommy Tremble     |         23.5 |
-| Brenton Strange |         21.1 |    | Jordan Matthews   |          5   |
-| Hunter Long     |         13.2 |    | Ja'Tavion Sanders |          2.4 |
-+-----------------+--------------+    +-------------------+--------------+
+| Brenton Strange |         21.1 |    | Ja'Tavion Sanders |          2.4 |
+| Hunter Long     |         13.2 |    +-------------------+--------------+
++-----------------+--------------+    
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total TEs: 6 (3 JAX, 3 CAR)
+Total TEs: 5 (3 JAX, 2 CAR)
 Top Projection: Johnny Mundt (JAX) - 25.5 yards
 ================================================================================

@@ -7,9 +7,8 @@ DEN vs TEN | Week 1 2025 | Projected Receiving Yards
 +==================+==============+    +==================+==============+
 | Marvin Mims Jr.  |         73.4 |    | Calvin Ridley    |         66.2 |
 | Courtland Sutton |         71.7 |    | Van Jefferson    |         37.7 |
-| Devaughn Vele    |         48.5 |    | Tyler Lockett    |         28.3 |
-| Trent Sherfield  |         10.7 |    | James Proche     |         19.3 |
-| Troy Franklin    |          9.3 |    | Tyler Boyd       |         18.2 |
+| Trent Sherfield  |         10.7 |    | Tyler Lockett    |         28.3 |
+| Troy Franklin    |          9.3 |    | James Proche     |         19.3 |
 +------------------+--------------+    | Treylon Burks    |         11.6 |
                                        | Jha'Quan Jackson |          3.1 |
                                        +------------------+--------------+
@@ -17,6 +16,6 @@ DEN vs TEN | Week 1 2025 | Projected Receiving Yards
 ================================================================================
 GAME SUMMARY
 ---------------
-Total WRs: 12 (5 DEN, 7 TEN)
+Total WRs: 10 (4 DEN, 6 TEN)
 Top Projection: Marvin Mims Jr. (DEN) - 73.4 yards
 ================================================================================

@@ -2,21 +2,21 @@
 PHI vs DAL | Week 1 2025 | Projected Receiving Yards
 ================================================================================
 
-+----------------------+--------------+    +-----------------+--------------+
-| PHI Player           |   Pred Yards |    | DAL Player      |   Pred Yards |
-+======================+==============+    +=================+==============+
-| DeVonta Smith        |         69.9 |    | CeeDee Lamb     |         93.4 |
-| John Metchie III     |         48.9 |    | George Pickens  |         82.8 |
-| Jahan Dotson         |         48.8 |    | Jalen Tolbert   |         79.5 |
-| A.J. Brown           |         46.7 |    | Jonathan Mingo  |         27.5 |
-| Johnny Wilson        |         11.7 |    | Jalen Brooks    |         20.6 |
-| Ainias Smith         |          6.8 |    | Ryan Flournoy   |         14.6 |
-| Terrace Marshall Jr. |          4.3 |    | Parris Campbell |          3.1 |
-+----------------------+--------------+    +-----------------+--------------+
++----------------------+--------------+    +----------------+--------------+
+| PHI Player           |   Pred Yards |    | DAL Player     |   Pred Yards |
++======================+==============+    +================+==============+
+| DeVonta Smith        |         69.9 |    | CeeDee Lamb    |         93.4 |
+| John Metchie III     |         48.9 |    | George Pickens |         82.8 |
+| Jahan Dotson         |         48.8 |    | Jalen Tolbert  |         79.5 |
+| A.J. Brown           |         46.7 |    | Jonathan Mingo |         27.5 |
+| Johnny Wilson        |         11.7 |    | Jalen Brooks   |         20.6 |
+| Terrace Marshall Jr. |          4.3 |    | Ryan Flournoy  |         14.6 |
+| Britain Covey        |          3   |    +----------------+--------------+
++----------------------+--------------+    
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total WRs: 14 (7 PHI, 7 DAL)
+Total WRs: 13 (7 PHI, 6 DAL)
 Top Projection: CeeDee Lamb (DAL) - 93.4 yards
 ================================================================================

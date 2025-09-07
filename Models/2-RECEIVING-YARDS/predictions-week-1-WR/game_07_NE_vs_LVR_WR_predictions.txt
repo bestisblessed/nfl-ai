@@ -6,10 +6,10 @@ NE vs LVR | Week 1 2025 | Projected Receiving Yards
 | NE Player       |   Pred Yards |    | LVR Player     |   Pred Yards |
 +=================+==============+    +================+==============+
 | Stefon Diggs    |         78.2 |    | Jakobi Meyers  |        106.1 |
-| Mack Hollins    |         59.6 |    | Tre Tucker     |         25   |
-| DeMario Douglas |         39.9 |    | Collin Johnson |          2.9 |
-| Kayshon Boutte  |         38.1 |    +----------------+--------------+
-| Kendrick Bourne |         15   |    
+| Mack Hollins    |         59.6 |    | Amari Cooper   |         28.5 |
+| DeMario Douglas |         39.9 |    | Tre Tucker     |         25   |
+| Kayshon Boutte  |         38.1 |    | Collin Johnson |          2.9 |
+| Kendrick Bourne |         15   |    +----------------+--------------+
 | Ja'Lynn Polk    |          5.7 |    
 | Javon Baker     |          3.1 |    
 +-----------------+--------------+    
@@ -17,6 +17,6 @@ NE vs LVR | Week 1 2025 | Projected Receiving Yards
 ================================================================================
 GAME SUMMARY
 ---------------
-Total WRs: 10 (7 NE, 3 LVR)
+Total WRs: 11 (7 NE, 4 LVR)
 Top Projection: Jakobi Meyers (LVR) - 106.1 yards
 ================================================================================

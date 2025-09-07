@@ -1,5 +1,5 @@
 WEEK 1 2025 - COMPLETE RB RECEIVING YARDS PREDICTIONS
-Generated: 2025-08-20 13:05:35
+Generated: 2025-09-06 21:56:27
 Total Games: 16
 ================================================================================
 
@@ -16,14 +16,14 @@ GAME 1 | PHI vs DAL | Week 1 2025
 ============================================================
 
 GAME 2 | KC vs LAC | Week 1 2025
-+---------------+--------------+    +----------------+--------------+
-| KC Player     |   Pred Yards |    | LAC Player     |   Pred Yards |
-+===============+==============+    +================+==============+
-| Kareem Hunt   |          6.9 |    | Najee Harris   |         45.5 |
-| Isiah Pacheco |          4.7 |    | Kimani Vidal   |          7.7 |
-+---------------+--------------+    | Scott Matlock  |          3.9 |
-                                    | Hassan Haskins |          3.1 |
-                                    +----------------+--------------+
++-----------------------+--------------+    +----------------+--------------+
+| KC Player             |   Pred Yards |    | LAC Player     |   Pred Yards |
++=======================+==============+    +================+==============+
+| Clyde Edwards-Helaire |         16.1 |    | Najee Harris   |         45.5 |
+| Kareem Hunt           |          6.9 |    | Kimani Vidal   |          7.7 |
+| Isiah Pacheco         |          4.7 |    | Scott Matlock  |          3.9 |
++-----------------------+--------------+    | Hassan Haskins |          3.1 |
+                                            +----------------+--------------+
 
 ============================================================
 
@@ -58,6 +58,7 @@ GAME 5 | JAX vs CAR | Week 1 2025
 | Travis Etienne |         30.5 |    | Chuba Hubbard     |         14.3 |
 | Tank Bigsby    |          2.5 |    | Rico Dowdle       |         14.2 |
 +----------------+--------------+    | Jonathon Brooks   |         13.2 |
+                                     | DeeJay Dallas     |          6.9 |
                                      | Raheem Blackshear |          1.7 |
                                      +-------------------+--------------+
 
@@ -71,6 +72,8 @@ GAME 6 | IND vs MIA | Week 1 2025
 | Jonathan Taylor |          5.8 |    | De'Von Achane      |          8.9 |
 +-----------------+--------------+    | Jaylen Wright      |          2.8 |
                                       | Mike Boone         |          2.7 |
+                                      | JaMycal Hasty      |          2.3 |
+                                      | Jeff Wilson        |          1.7 |
                                       +--------------------+--------------+
 
 ============================================================
@@ -80,45 +83,41 @@ GAME 7 | NE vs LVR | Week 1 2025
 | NE Player           |   Pred Yards |    | LVR Player     |   Pred Yards |
 +=====================+==============+    +================+==============+
 | Antonio Gibson      |         21.6 |    | Raheem Mostert |         16   |
-| JaMycal Hasty       |          2.3 |    | Zamir White    |          1.7 |
-| Rhamondre Stevenson |          1.9 |    +----------------+--------------+
-+---------------------+--------------+
+| Rhamondre Stevenson |          1.9 |    | Zamir White    |          1.7 |
++---------------------+--------------+    +----------------+--------------+
 
 ============================================================
 
 GAME 8 | NYJ vs PIT | Week 1 2025
-+---------------+--------------+    +-----------------------+--------------+
-| NYJ Player    |   Pred Yards |    | PIT Player            |   Pred Yards |
-+===============+==============+    +=======================+==============+
-| Breece Hall   |         21.6 |    | Jaylen Warren         |         22.8 |
-| Isaiah Davis  |          2.2 |    | Trey Sermon           |          7.4 |
-| Braelon Allen |          0.4 |    | Cordarrelle Patterson |          1.7 |
-+---------------+--------------+    | Kenneth Gainwell      |          0.8 |
-                                    +-----------------------+--------------+
++---------------+--------------+    +------------------+--------------+
+| NYJ Player    |   Pred Yards |    | PIT Player       |   Pred Yards |
++===============+==============+    +==================+==============+
+| Breece Hall   |         21.6 |    | Jaylen Warren    |         22.8 |
+| Isaiah Davis  |          2.2 |    | Trey Sermon      |          7.4 |
+| Braelon Allen |          0.4 |    | Kenneth Gainwell |          0.8 |
++---------------+--------------+    +------------------+--------------+
 
 ============================================================
 
 GAME 9 | CLE vs CIN | Week 1 2025
-+----------------+--------------+    +---------------+--------------+
-| CLE Player     |   Pred Yards |    | CIN Player    |   Pred Yards |
-+================+==============+    +===============+==============+
-| Pierre Strong  |         15.5 |    | Chase Brown   |         27.1 |
-| D'Onta Foreman |         10.3 |    | Zack Moss     |         24.8 |
-| Jerome Ford    |          5.5 |    | Samaje Perine |          4.3 |
-+----------------+--------------+    +---------------+--------------+
++---------------+--------------+    +---------------+--------------+
+| CLE Player    |   Pred Yards |    | CIN Player    |   Pred Yards |
++===============+==============+    +===============+==============+
+| Pierre Strong |         15.5 |    | Chase Brown   |         27.1 |
+| Jerome Ford   |          5.5 |    | Samaje Perine |          4.3 |
++---------------+--------------+    +---------------+--------------+
 
 ============================================================
 
 GAME 10 | NO vs ARI | Week 1 2025
-+-----------------------+--------------+    +-----------------+--------------+
-| NO Player             |   Pred Yards |    | ARI Player      |   Pred Yards |
-+=======================+==============+    +=================+==============+
-| Alvin Kamara          |         51.4 |    | Michael Carter  |         16   |
-| Kendre Miller         |         26.4 |    | Emari Demercado |         11.2 |
-| Clyde Edwards-Helaire |         16.1 |    | James Conner    |         10.4 |
-| Velus Jones Jr.       |          3.6 |    | DeeJay Dallas   |          6.9 |
-| Cam Akers             |          1.8 |    | Trey Benson     |          0.2 |
-+-----------------------+--------------+    +-----------------+--------------+
++-----------------+--------------+    +-----------------+--------------+
+| NO Player       |   Pred Yards |    | ARI Player      |   Pred Yards |
++=================+==============+    +=================+==============+
+| Alvin Kamara    |         51.4 |    | Michael Carter  |         16   |
+| Kendre Miller   |         26.4 |    | Emari Demercado |         11.2 |
+| Velus Jones Jr. |          3.6 |    | James Conner    |         10.4 |
+| Cam Akers       |          1.8 |    | Trey Benson     |          0.2 |
++-----------------+--------------+    +-----------------+--------------+
 
 ============================================================
 
@@ -128,10 +127,8 @@ GAME 11 | SEA vs SF | Week 1 2025
 +====================+==============+    +=====================+==============+
 | Zach Charbonnet    |         30.4 |    | Isaac Guerendo      |         60   |
 | Kenneth Walker III |         17.4 |    | Kyle Juszczyk       |         38.5 |
-| Kenny McIntosh     |          1   |    | Ameer Abdullah      |         33.7 |
-+--------------------+--------------+    | Christian McCaffrey |         19.5 |
-                                         | Jeff Wilson         |          1.7 |
-                                         | Ke'Shawn Vaughn     |          1.5 |
+| Kenny McIntosh     |          1   |    | Christian McCaffrey |         19.5 |
++--------------------+--------------+    | Ke'Shawn Vaughn     |          1.5 |
                                          +---------------------+--------------+
 
 ============================================================
@@ -144,8 +141,7 @@ GAME 12 | DEN vs TEN | Week 1 2025
 | Michael Burton    |          3   |    | Tyjae Spears     |          9   |
 | J.K. Dobbins      |          2.4 |    | Tony Pollard     |          3.9 |
 | Tyler Badie       |         -0.5 |    | Julius Chestnut  |          2.9 |
-+-------------------+--------------+    | Joshua Kelley    |          1.7 |
-                                        | Jermar Jefferson |          1.6 |
++-------------------+--------------+    | Jermar Jefferson |          1.6 |
                                         +------------------+--------------+
 
 ============================================================
@@ -169,8 +165,7 @@ GAME 14 | LAR vs HOU | Week 1 2025
 | Blake Corum    |          9.9 |    | Joe Mixon       |         14.6 |
 | Kyren Williams |          2.1 |    | Nick Chubb      |          3.1 |
 | Ronnie Rivers  |          2.1 |    | Dare Ogunbowale |          2.5 |
-+----------------+--------------+    | J.J. Taylor     |          1.7 |
-                                     | Dameon Pierce   |          1.5 |
++----------------+--------------+    | Dameon Pierce   |          1.5 |
                                      +-----------------+--------------+
 
 ============================================================

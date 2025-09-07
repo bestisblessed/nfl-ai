@@ -9,11 +9,13 @@ IND vs MIA | Week 1 2025 | RB Projected Receiving Yards
 | Jonathan Taylor |          5.8 |    | De'Von Achane      |          8.9 |
 +-----------------+--------------+    | Jaylen Wright      |          2.8 |
                                       | Mike Boone         |          2.7 |
+                                      | JaMycal Hasty      |          2.3 |
+                                      | Jeff Wilson        |          1.7 |
                                       +--------------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total RBs: 6 (2 IND, 4 MIA)
+Total RBs: 8 (2 IND, 6 MIA)
 Top Projection: Alexander Mattison (MIA) - 14.6 yards
 ================================================================================

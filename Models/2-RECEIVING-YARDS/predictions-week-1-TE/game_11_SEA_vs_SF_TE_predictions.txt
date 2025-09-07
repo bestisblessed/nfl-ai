@@ -6,14 +6,13 @@ SEA vs SF | Week 1 2025 | TE Projected Receiving Yards
 | SEA Player   |   Pred Yards |    | SF Player      |   Pred Yards |
 +==============+==============+    +================+==============+
 | Eric Saubert |         18.6 |    | George Kittle  |         32   |
-| AJ Barner    |          9   |    | Ross Dwelley   |          6.9 |
-+--------------+--------------+    | Luke Farrell   |          5.3 |
-                                   | Brayden Willis |          4.9 |
+| AJ Barner    |          9   |    | Luke Farrell   |          5.3 |
++--------------+--------------+    | Brayden Willis |          4.9 |
                                    +----------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total TEs: 6 (2 SEA, 4 SF)
+Total TEs: 5 (2 SEA, 3 SF)
 Top Projection: George Kittle (SF) - 32.0 yards
 ================================================================================

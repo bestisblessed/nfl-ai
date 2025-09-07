@@ -7,15 +7,13 @@ SEA vs SF | Week 1 2025 | RB Projected Receiving Yards
 +====================+==============+    +=====================+==============+
 | Zach Charbonnet    |         30.4 |    | Isaac Guerendo      |         60   |
 | Kenneth Walker III |         17.4 |    | Kyle Juszczyk       |         38.5 |
-| Kenny McIntosh     |          1   |    | Ameer Abdullah      |         33.7 |
-+--------------------+--------------+    | Christian McCaffrey |         19.5 |
-                                         | Jeff Wilson         |          1.7 |
-                                         | Ke'Shawn Vaughn     |          1.5 |
+| Kenny McIntosh     |          1   |    | Christian McCaffrey |         19.5 |
++--------------------+--------------+    | Ke'Shawn Vaughn     |          1.5 |
                                          +---------------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total RBs: 9 (3 SEA, 6 SF)
+Total RBs: 7 (3 SEA, 4 SF)
 Top Projection: Isaac Guerendo (SF) - 60.0 yards
 ================================================================================

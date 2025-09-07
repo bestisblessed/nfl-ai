@@ -5,16 +5,17 @@ JAX vs CAR | Week 1 2025 | Projected Receiving Yards
 +-------------------+--------------+    +----------------+--------------+
 | JAX Player        |   Pred Yards |    | CAR Player     |   Pred Yards |
 +===================+==============+    +================+==============+
-| Austin Trammell   |         41.3 |    | Adam Thielen   |         45.9 |
-| Dyami Brown       |         29.5 |    | Xavier Legette |         20.7 |
-| Gabe Davis        |         22.6 |    | David Moore    |         12.8 |
-| Parker Washington |         10.6 |    | Dan Chisena    |          8.4 |
-| Trenton Irwin     |          3.7 |    +----------------+--------------+
+| Austin Trammell   |         41.3 |    | Xavier Legette |         20.7 |
+| Dyami Brown       |         29.5 |    | David Moore    |         12.8 |
+| Tim Patrick       |         24.9 |    | Ainias Smith   |          6.8 |
+| Parker Washington |         10.6 |    +----------------+--------------+
+| Trenton Irwin     |          3.7 |    
+| Erik Ezukanma     |          2.6 |    
 +-------------------+--------------+    
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total WRs: 9 (5 JAX, 4 CAR)
-Top Projection: Adam Thielen (CAR) - 45.9 yards
+Total WRs: 9 (6 JAX, 3 CAR)
+Top Projection: Austin Trammell (JAX) - 41.3 yards
 ================================================================================

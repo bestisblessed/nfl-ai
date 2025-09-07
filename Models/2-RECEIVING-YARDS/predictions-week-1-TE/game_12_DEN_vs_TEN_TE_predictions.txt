@@ -6,14 +6,14 @@ DEN vs TEN | Week 1 2025 | TE Projected Receiving Yards
 | DEN Player    |   Pred Yards |    | TEN Player   |   Pred Yards |
 +===============+==============+    +==============+==============+
 | Evan Engram   |         36.6 |    | Chig Okonkwo |         72.6 |
-| Nate Adkins   |          9.1 |    | Josh Whyle   |          4.6 |
-| Lucas Krull   |          5.8 |    +--------------+--------------+
+| Nate Adkins   |          9.1 |    +--------------+--------------+
+| Lucas Krull   |          5.8 |    
 | Adam Trautman |          4.8 |    
 +---------------+--------------+    
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total TEs: 6 (4 DEN, 2 TEN)
+Total TEs: 5 (4 DEN, 1 TEN)
 Top Projection: Chig Okonkwo (TEN) - 72.6 yards
 ================================================================================

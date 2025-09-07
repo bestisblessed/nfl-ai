@@ -9,12 +9,11 @@ NYJ vs PIT | Week 1 2025 | TE Projected Receiving Yards
 | Jeremy Ruckert |          5.9 |    | Pat Freiermuth     |         18.9 |
 +----------------+--------------+    | Darnell Washington |         12.8 |
                                      | Connor Heyward     |          7.5 |
-                                     | MyCole Pruitt      |          4.1 |
                                      +--------------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total TEs: 7 (2 NYJ, 5 PIT)
+Total TEs: 6 (2 NYJ, 4 PIT)
 Top Projection: Jonnu Smith (PIT) - 51.5 yards
 ================================================================================

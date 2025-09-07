@@ -8,12 +8,13 @@ GB vs DET | Week 1 2025 | TE Projected Receiving Yards
 | Tucker Kraft     |         30.7 |    | Sam LaPorta   |         58.1 |
 | Luke Musgrave    |         13.7 |    | Kenny Yeboah  |         26   |
 | John FitzPatrick |          5.2 |    | Shane Zylstra |         25.1 |
-| Ben Sims         |          2.8 |    | Brock Wright  |          2.8 |
-+------------------+--------------+    +---------------+--------------+
+| Josh Whyle       |          4.6 |    | Brock Wright  |          2.8 |
+| Ben Sims         |          2.8 |    +---------------+--------------+
++------------------+--------------+    
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total TEs: 8 (4 GB, 4 DET)
+Total TEs: 9 (5 GB, 4 DET)
 Top Projection: Sam LaPorta (DET) - 58.1 yards
 ================================================================================

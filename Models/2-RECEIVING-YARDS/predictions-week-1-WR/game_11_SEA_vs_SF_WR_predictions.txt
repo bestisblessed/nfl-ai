@@ -2,23 +2,24 @@
 SEA vs SF | Week 1 2025 | Projected Receiving Yards
 ================================================================================
 
-+--------------------------+--------------+    +-------------------+--------------+
-| SEA Player               |   Pred Yards |    | SF Player         |   Pred Yards |
-+==========================+==============+    +===================+==============+
-| Cooper Kupp              |         56.5 |    | Ricky Pearsall    |         80.5 |
-| Marquez Valdes-Scantling |         35.2 |    | Demarcus Robinson |         64.7 |
-| Jaxon Smith-Njigba       |         20.6 |    | Chris Conley      |         48.9 |
-| Jake Bobo                |          5.5 |    | Jauan Jennings    |         46.9 |
-| Steven Sims              |          5.5 |    | Brandon Aiyuk     |         25   |
-| Dareke Young             |          2.8 |    | Jacob Cowing      |         23.8 |
-+--------------------------+--------------+    | Trent Taylor      |         12.2 |
-                                               | Isaiah Hodgins    |          8.4 |
-                                               | Robbie Chosen     |          1.9 |
-                                               +-------------------+--------------+
++--------------------+--------------+    +--------------------------+--------------+
+| SEA Player         |   Pred Yards |    | SF Player                |   Pred Yards |
++====================+==============+    +==========================+==============+
+| Cooper Kupp        |         56.5 |    | Ricky Pearsall           |         80.5 |
+| Jaxon Smith-Njigba |         20.6 |    | Demarcus Robinson        |         64.7 |
+| Jake Bobo          |          5.5 |    | Jauan Jennings           |         46.9 |
+| Steven Sims        |          5.5 |    | Marquez Valdes-Scantling |         35.2 |
+| Dareke Young       |          2.8 |    | Brandon Aiyuk            |         25   |
++--------------------+--------------+    | Jacob Cowing             |         23.8 |
+                                         | Trent Taylor             |         12.2 |
+                                         | Isaiah Hodgins           |          8.4 |
+                                         | Skyy Moore               |          2.6 |
+                                         | Robbie Chosen            |          1.9 |
+                                         +--------------------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total WRs: 15 (6 SEA, 9 SF)
+Total WRs: 15 (5 SEA, 10 SF)
 Top Projection: Ricky Pearsall (SF) - 80.5 yards
 ================================================================================

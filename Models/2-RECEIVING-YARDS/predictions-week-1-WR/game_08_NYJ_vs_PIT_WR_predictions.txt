@@ -9,13 +9,13 @@ NYJ vs PIT | Week 1 2025 | Projected Receiving Yards
 | Garrett Wilson |         41.2 |    | Ben Skowronek     |         28.1 |
 | Tyler Johnson  |         34.1 |    | Calvin Austin III |         26.9 |
 | Josh Reynolds  |         15   |    | Robert Woods      |         23   |
-| Malachi Corley |          3.5 |    | Brandon Johnson   |         19.1 |
-| Xavier Gipson  |         -1.7 |    | Scott Miller      |          5.6 |
-+----------------+--------------+    +-------------------+--------------+
+| Xavier Gipson  |         -1.7 |    | Brandon Johnson   |         19.1 |
++----------------+--------------+    | Scott Miller      |          5.6 |
+                                     +-------------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total WRs: 12 (6 NYJ, 6 PIT)
+Total WRs: 11 (5 NYJ, 6 PIT)
 Top Projection: Allen Lazard (NYJ) - 52.3 yards
 ================================================================================

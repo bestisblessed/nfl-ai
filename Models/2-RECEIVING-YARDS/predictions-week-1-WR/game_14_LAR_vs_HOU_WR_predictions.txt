@@ -9,13 +9,13 @@ LAR vs HOU | Week 1 2025 | Projected Receiving Yards
 | Jordan Whittington |         55.8 |    | Nico Collins      |         54.6 |
 | Puka Nacua         |         39.3 |    | Xavier Hutchinson |         50.5 |
 | Tutu Atwell        |         13.3 |    | Christian Kirk    |         49.4 |
-| Britain Covey      |          3   |    | Justin Watson     |         11.1 |
-+--------------------+--------------+    | Braxton Berrios   |          3.1 |
++--------------------+--------------+    | Justin Watson     |         11.1 |
+                                         | Braxton Berrios   |          3.1 |
                                          +-------------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total WRs: 11 (5 LAR, 6 HOU)
+Total WRs: 10 (4 LAR, 6 HOU)
 Top Projection: Davante Adams (LAR) - 78.3 yards
 ================================================================================

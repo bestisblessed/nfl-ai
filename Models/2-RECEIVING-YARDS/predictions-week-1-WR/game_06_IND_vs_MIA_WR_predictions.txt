@@ -8,14 +8,13 @@ IND vs MIA | Week 1 2025 | Projected Receiving Yards
 | Josh Downs      |         46.4 |    | Jaylen Waddle         |         57.1 |
 | Alec Pierce     |         38.3 |    | Nick Westbrook-Ikhine |         57   |
 | Adonai Mitchell |         28.9 |    | Malik Washington      |         45.3 |
-| Ashton Dulin    |          3   |    | Tyreek Hill           |         25.5 |
-+-----------------+--------------+    | Dee Eskridge          |          9.5 |
-                                      | Erik Ezukanma         |          2.6 |
-                                      +-----------------------+--------------+
+| Tyler Scott     |         10.4 |    | Tyreek Hill           |         25.5 |
+| Ashton Dulin    |          3   |    | Dee Eskridge          |          9.5 |
++-----------------+--------------+    +-----------------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total WRs: 10 (4 IND, 6 MIA)
+Total WRs: 10 (5 IND, 5 MIA)
 Top Projection: Jaylen Waddle (MIA) - 57.1 yards
 ================================================================================

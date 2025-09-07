@@ -8,13 +8,12 @@ LAR vs HOU | Week 1 2025 | RB Projected Receiving Yards
 | Blake Corum    |          9.9 |    | Joe Mixon       |         14.6 |
 | Kyren Williams |          2.1 |    | Nick Chubb      |          3.1 |
 | Ronnie Rivers  |          2.1 |    | Dare Ogunbowale |          2.5 |
-+----------------+--------------+    | J.J. Taylor     |          1.7 |
-                                     | Dameon Pierce   |          1.5 |
++----------------+--------------+    | Dameon Pierce   |          1.5 |
                                      +-----------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total RBs: 8 (3 LAR, 5 HOU)
+Total RBs: 7 (3 LAR, 4 HOU)
 Top Projection: Joe Mixon (HOU) - 14.6 yards
 ================================================================================

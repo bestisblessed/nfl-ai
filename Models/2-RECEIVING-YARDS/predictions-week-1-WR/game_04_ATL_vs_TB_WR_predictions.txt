@@ -6,16 +6,15 @@ ATL vs TB | Week 1 2025 | Projected Receiving Yards
 | ATL Player       |   Pred Yards |    | TB Player        |   Pred Yards |
 +==================+==============+    +==================+==============+
 | Drake London     |        180.7 |    | Mike Evans       |         81.8 |
-| Ray-Ray McCloud  |         59.4 |    | Chris Godwin     |         63   |
+| Ray-Ray McCloud  |         59.4 |    | Chris Godwin Jr. |         63   |
 | Darnell Mooney   |         30.4 |    | Jalen McMillan   |         47   |
 | KhaDarel Hodge   |         23.9 |    | Sterling Shepard |         15.6 |
 | Casey Washington |         13.9 |    | Rakim Jarrett    |          7.1 |
-| D.J. Chark       |         10.4 |    | Trey Palmer      |          1.6 |
 +------------------+--------------+    +------------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total WRs: 12 (6 ATL, 6 TB)
+Total WRs: 10 (5 ATL, 5 TB)
 Top Projection: Drake London (ATL) - 180.7 yards
 ================================================================================

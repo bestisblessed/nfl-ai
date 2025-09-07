@@ -10,13 +10,12 @@ KC vs LAC | Week 1 2025 | Projected Receiving Yards
 | Tyquan Thornton     |         23   |    | Mike Williams    |         31.1 |
 | Marquise Brown      |         23   |    | Keenan Allen     |         27.8 |
 | JuJu Smith-Schuster |         18.3 |    | Jalen Reagor     |          5.2 |
-| Skyy Moore          |          2.6 |    | Derius Davis     |          4.8 |
-| Justyn Ross         |          2.1 |    +------------------+--------------+
-+---------------------+--------------+    
++---------------------+--------------+    | Derius Davis     |          4.8 |
+                                          +------------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total WRs: 13 (7 KC, 6 LAC)
+Total WRs: 11 (5 KC, 6 LAC)
 Top Projection: Quentin Johnston (LAC) - 120.4 yards
 ================================================================================

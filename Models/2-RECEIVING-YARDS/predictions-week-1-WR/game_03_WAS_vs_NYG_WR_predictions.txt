@@ -9,14 +9,13 @@ WAS vs NYG | Week 1 2025 | Projected Receiving Yards
 | Tay Martin       |         37.5 |    | Wan'Dale Robinson   |         51.4 |
 | Noah Brown       |         32.1 |    | Lil'Jordan Humphrey |         22.6 |
 | Luke McCaffrey   |         13.2 |    | Jalin Hyatt         |         12.2 |
-| Jamison Crowder  |         10   |    | Darius Slayton      |          5.5 |
-| Deebo Samuel Sr. |          8.4 |    +---------------------+--------------+
-| K.J. Osborn      |          3.1 |    
+| Deebo Samuel Sr. |          8.4 |    | Darius Slayton      |          5.5 |
+| K.J. Osborn      |          3.1 |    +---------------------+--------------+
 +------------------+--------------+    
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total WRs: 12 (7 WAS, 5 NYG)
+Total WRs: 11 (6 WAS, 5 NYG)
 Top Projection: Malik Nabers (NYG) - 115.4 yards
 ================================================================================
