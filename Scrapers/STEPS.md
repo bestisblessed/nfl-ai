@@ -1,0 +1,1 @@
+1. Execute ./scrape.sh -> uses ScraperFinal.py
