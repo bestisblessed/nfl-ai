@@ -34,7 +34,7 @@
 # **Defense Game Logs**
 # Scrapes defensive statistics for players in each game and saves the data to CSV files.
 
-# **Note: This scraper now focuses on seasons 2010-2025 only**
+# **Note: This scraper now focuses on seasons 2018-2025 only**
   
 
 import pandas as pd
@@ -51,7 +51,7 @@ from requests.exceptions import Timeout, RequestException
 
 # Print start time
 start_time = datetime.now()
-print(f"Process started at: {start_time.strftime('%Y-%m-%d %H:%M:%S')}")
+print(f"\nProcess started at: {start_time.strftime('%Y-%m-%d %H:%M:%S')}")
 
 if not os.path.exists('data'):
     os.system('mkdir data')
@@ -65,6 +65,7 @@ if os.path.exists('nfl.db'):
     os.remove('nfl.db')
 
 ##### Create 'Teams' in nfl.db #####
+print("\n" + "*"*80 + "\n")
 teams = [
     ['ARI', 'Arizona Cardinals', 'NFC West'],
     ['ATL', 'Atlanta Falcons', 'NFC South'],
@@ -113,7 +114,7 @@ if response.ok:
 else:
     raise Exception(f"Failed to download the file. Status code: {response.status_code}")
 df = pd.read_csv('./data/games.csv')
-df = df[df['season'] >= 2010]
+df = df[df['season'] >= 2018]
 standardize_mapping = {
     'OAK': 'LVR',  
     'SD': 'LAC',   
@@ -149,11 +150,18 @@ df_selected.to_csv('./data/games.csv', index=False)
 
 ##### Create 'PlayerStats' in nfl.db #####
 dataframes = []
-for year in range(2010, 2025):
+for year in range(2025, 2026):
+    file_path = os.path.join('./data/player-stats/', f"player_stats_{year}.csv")
+    if os.path.exists(file_path):
+        print(f"Skipping download for {year}, file exists: {file_path}")
+        df = pd.read_csv(file_path)
+        if 'opponent_team' in df.columns:
+            df = df.drop(columns=['opponent_team'])
+        dataframes.append(df)
+        continue
     url = f"https://github.com/nflverse/nflverse-data/releases/download/player_stats/player_stats_{year}.csv"
     response = requests.get(url)
     if response.ok:
-        file_path = os.path.join('./data/player-stats/', f"player_stats_{year}.csv")
         with open(file_path, 'wb') as file:
             file.write(response.content)
         print(f"Downloaded and saved player_stats_{year}.csv")
@@ -163,31 +171,34 @@ for year in range(2010, 2025):
         dataframes.append(df)
     else:
         print(f"Failed to download data for the year {year}")
-merged_df = pd.concat(dataframes, ignore_index=True, sort=False)
-standardize_mapping = {
-    'OAK': 'LVR',  
-    'SD': 'LAC',   
-    'STL': 'LAR',  
-    'LA': 'LAR',   
-    'LV': 'LVR'    
-}
-merged_df['recent_team'] = merged_df['recent_team'].replace(standardize_mapping)
-merged_df['week'] = merged_df['week'].apply(lambda x: f'{x:02d}')
-merged_df['game_id_team'] = merged_df['season'].astype(str) + '_' + merged_df['week'].astype(str) + '_' + merged_df['recent_team']
-merged_df['game_id_simple'] = merged_df['season'].astype(str) + '_' + merged_df['week'].astype(str)
-merged_df.to_csv('./data/player_stats.csv', index=False)
-print("Merged and cleaned player stats saved to './data/player_stats.csv'")
-# games_df = pd.read_csv('./data/games_modified.csv')
-games_df = pd.read_csv('./data/games.csv')
-game_id_map = pd.concat([
-    games_df[['game_id_team1', 'game_id', 'home_team', 'away_team']].rename(columns={'game_id_team1': 'game_id_team'}),
-    games_df[['game_id_team2', 'game_id', 'home_team', 'away_team']].rename(columns={'game_id_team2': 'game_id_team'})
-]).drop_duplicates(subset=['game_id_team'])
-merged_df = merged_df.merge(game_id_map, on='game_id_team', how='left')
-position_groups_to_remove = ['SPEC', 'LB', 'DB', 'OL', 'DL']
-df_cleaned = merged_df[~merged_df['position_group'].isin(position_groups_to_remove)].dropna(subset=['position_group'])
-df_cleaned.to_csv('./data/player_stats.csv', index=False)
-print("Final cleaned player stats saved to './data/player_stats.csv'")
+if len(dataframes) > 0:
+    merged_df = pd.concat(dataframes, ignore_index=True, sort=False)
+    standardize_mapping = {
+        'OAK': 'LVR',  
+        'SD': 'LAC',   
+        'STL': 'LAR',  
+        'LA': 'LAR',   
+        'LV': 'LVR'    
+    }
+    merged_df['recent_team'] = merged_df['recent_team'].replace(standardize_mapping)
+    merged_df['week'] = merged_df['week'].apply(lambda x: f'{x:02d}')
+    merged_df['game_id_team'] = merged_df['season'].astype(str) + '_' + merged_df['week'].astype(str) + '_' + merged_df['recent_team']
+    merged_df['game_id_simple'] = merged_df['season'].astype(str) + '_' + merged_df['week'].astype(str)
+    merged_df.to_csv('./data/player_stats.csv', index=False)
+    print("Merged and cleaned player stats saved to './data/player_stats.csv'")
+    # games_df = pd.read_csv('./data/games_modified.csv')
+    games_df = pd.read_csv('./data/games.csv')
+    game_id_map = pd.concat([
+        games_df[['game_id_team1', 'game_id', 'home_team', 'away_team']].rename(columns={'game_id_team1': 'game_id_team'}),
+        games_df[['game_id_team2', 'game_id', 'home_team', 'away_team']].rename(columns={'game_id_team2': 'game_id_team'})
+    ]).drop_duplicates(subset=['game_id_team'])
+    merged_df = merged_df.merge(game_id_map, on='game_id_team', how='left')
+    position_groups_to_remove = ['SPEC', 'LB', 'DB', 'OL', 'DL']
+    df_cleaned = merged_df[~merged_df['position_group'].isin(position_groups_to_remove)].dropna(subset=['position_group'])
+    df_cleaned.to_csv('./data/player_stats.csv', index=False)
+    print("Final cleaned player stats saved to './data/player_stats.csv'")
+else:
+    print("No new player stats available; keeping existing './data/player_stats.csv' and continuing.")
 conn = sqlite3.connect('nfl.db')
 cursor = conn.cursor()
 create_table_sql = '''
@@ -233,18 +244,22 @@ conn.close()
 print("Player stats saved to 'PlayerStats' table in nfl.db")
 
 
-##### Create 'Rosters' in nfl.db (2010-2025) #####
-for year in range(2010, 2025):
+##### Create 'Rosters' in nfl.db (2018-2025) #####
+for year in range(2025, 2026):
+    file_path = f"./data/rosters/roster_{year}.csv"
+    if os.path.exists(file_path):
+        print(f"Skipping download for {year}, file exists.")
+        continue
     url = f"https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_{year}.csv"
     response = requests.get(url)
     if response.status_code == 200:
-        with open(f"./data/rosters/roster_{year}.csv", 'wb') as file:
+        with open(file_path, 'wb') as file:
             file.write(response.content)
         print(f"Downloaded and saved roster_{year}.csv")
     else:
         print(f"Failed to download data for the year {year}")
 dataframes = []
-for year in range(2010, 2025):
+for year in range(2025, 2026):
     file_path = f'./data/rosters/roster_{year}.csv'
     if os.path.exists(file_path):
         df = pd.read_csv(file_path)
@@ -333,7 +348,8 @@ for idx, team in enumerate(standardized_team_list_sorted, 1):
 rosters_df.to_csv('data/rosters.csv', index=False)
 
 
-##### Scrape Box Scores (2010-2025) #####
+##### Scrape Box Scores (2018-2025) #####
+print("\n" + "*"*80 + "\n")
 df = pd.read_csv('./data/games.csv')
 df['pfr_url'] = 'https://www.pro-football-reference.com/boxscores/' + df['pfr'] + '.htm'
 df.to_csv('./data/games.csv', index=False)
@@ -350,12 +366,18 @@ with open(csv_file_path, 'a', newline='') as csvfile:
     score_writer = csv.writer(csvfile)
     if os.path.getsize(csv_file_path) == 0:
         score_writer.writerow(headers)  
-    for year_to_scrape in range(2010, 2025):
+    for year_to_scrape in range(2025, 2026):
         game_urls = []
         with open(games_csv_path, 'r') as csvfile:
             reader = csv.DictReader(csvfile)
+            now_dt = datetime.now()
             for row in reader:
-                if row['season'] == str(year_to_scrape):  
+                try:
+                    game_dt = datetime.fromisoformat(row['date'])
+                except Exception:
+                    # Fallback: skip if date is missing or unparsable
+                    continue
+                if row['season'] == str(year_to_scrape) and game_dt <= now_dt:
                     game_urls.append(row['pfr_url'])
         for url in game_urls:
             if url in existing_urls:
@@ -378,7 +400,7 @@ with open(csv_file_path, 'a', newline='') as csvfile:
                 time.sleep(2)
             except Exception as e:
                 print(f"Error scraping {url}: {e}")
-            time.sleep(1)
+            time.sleep(2)
 print(f"Scraping complete. The data has been saved to {csv_file_path}.")
 
 
@@ -396,39 +418,69 @@ df = df.apply(shift_to_final, axis=1)
 df.to_csv('data/all_box_scores.csv', index=False)
 
 
-##### Scrape Scoring Tables/Touchdown Logs (2010-2025) #####
-for year_to_scrape in range(2010, 2025):
+##### Scrape Scoring Tables/Touchdown Logs (2018-2025) #####
+print("\n" + "*"*80 + "\n")
+for year_to_scrape in range(2025, 2026):
     output_filename = f'./data/scoring-tables/all_nfl_scoring_tables_{year_to_scrape}.csv'
-    with open(output_filename, 'w', newline='') as output_csvfile:
+    existing_game_ids = set()
+    if os.path.exists(output_filename):
+        df_existing = pd.read_csv(output_filename)
+        if 'Game_ID' in df_existing.columns:
+            existing_game_ids = set(df_existing['Game_ID'].unique())
+    mode = 'a' if os.path.exists(output_filename) else 'w'
+    with open(output_filename, mode, newline='') as output_csvfile:
         csvwriter = csv.writer(output_csvfile)
-        csvwriter.writerow(['Quarter', 'Time', 'Team', 'Detail', 'Team_1', 'Team_2', 'Game_ID'])  
+        if mode == 'w':
+            csvwriter.writerow(['Quarter', 'Time', 'Team', 'Detail', 'Team_1', 'Team_2', 'Game_ID'])  
         with open('./data/games.csv', 'r') as csvfile:
             reader = csv.DictReader(csvfile)
-            rows = [row for row in reader if int(row['game_id'].split('_')[0]) == year_to_scrape]  
+            rows = []
+            now_dt = datetime.now()
+            for row in reader:
+                try:
+                    game_dt = datetime.fromisoformat(row['date'])
+                except Exception:
+                    continue
+                if int(row['game_id'].split('_')[0]) == year_to_scrape and game_dt <= now_dt:
+                    rows.append(row)
             for row in rows:
                 pfr_value = row['pfr']
                 game_id = row['game_id']
+                if game_id in existing_game_ids:
+                    print(f"Skipping already scraped game ID: {game_id}")
+                    continue
                 url = f"https://www.pro-football-reference.com/boxscores/{pfr_value}.htm"
-                try:
-                    response = requests.get(url)
-                    soup = BeautifulSoup(response.text, 'html.parser')
-                    table = soup.find('table', {'id': 'scoring'})
-                    last_quarter = None  
-                    for i, row in enumerate(table.find_all('tr')):
-                        if i == 0:  
-                            continue
-                        cells = row.find_all(['td', 'th'])
-                        if len(cells) > 0:
-                            csv_row = [cell.text for cell in cells]
-                            if csv_row[0]:
-                                last_quarter = csv_row[0]
-                            else:
-                                csv_row[0] = last_quarter
-                            csv_row.append(game_id)  
-                            csvwriter.writerow(csv_row)
-                    print(f"Successfully scraped scoring data for game ID: {game_id}, PFR: {pfr_value}")
-                except Exception as e:
-                    print(f"An error occurred while scraping {url}. Error: {e}")
+                max_retries = 3
+                for attempt in range(max_retries):
+                    try:
+                        response = requests.get(url, timeout=10)
+                        response.raise_for_status()
+                        soup = BeautifulSoup(response.text, 'html.parser')
+                        table = soup.find('table', {'id': 'scoring'})
+                        if table is None:
+                            print(f"No scoring table found for {url}")
+                            break
+                        last_quarter = None  
+                        for i, tr in enumerate(table.find_all('tr')):
+                            if i == 0:  
+                                continue
+                            cells = tr.find_all(['td', 'th'])
+                            if len(cells) > 0:
+                                csv_row = [cell.text for cell in cells]
+                                if csv_row[0]:
+                                    last_quarter = csv_row[0]
+                                else:
+                                    csv_row[0] = last_quarter
+                                csv_row.append(game_id)  
+                                csvwriter.writerow(csv_row)
+                        print(f"Successfully scraped scoring data for game ID: {game_id}, PFR: {pfr_value}")
+                        break
+                    except (requests.exceptions.RequestException, Exception) as e:
+                        print(f"An error occurred while scraping {url}. Error: {e}")
+                        if attempt < max_retries - 1:
+                            time.sleep(2 ** attempt)
+                        else:
+                            break
                 time.sleep(2)
     print(f"Scraping completed for {year_to_scrape}. Scoring data saved to {output_filename}.")
 
@@ -443,7 +495,8 @@ merged_dataframe.to_csv(output_file, index=False)
 print(f"Merged dataset saved as {output_file}")
 
 
-##### Scrape Team Game Logs (2010-2025) #####
+##### Scrape Team Game Logs (2018-2025) #####
+print("\n" + "*"*80 + "\n")
 data_dir = './data/SR-game-logs'
 os.makedirs(data_dir, exist_ok=True)
 opponent_data_dir = './data/SR-opponent-game-logs'
@@ -529,7 +582,12 @@ opponent_game_logs_headers = [
     # 'pass_cmp_perc', 'pass_rating', 'rush_att', 'rush_yds', 'rush_yds_per_att', 'rush_td', 
     # 'fgm', 'fga', 'xpm', 'xpa', 'punt', 'punt_yds', 'third_down_success', 'third_down_att', 
     # 'fourth_down_success', 'fourth_down_att', 'time_of_poss', 'Team_Name'
-for year in range(2010, 2025):
+for year in range(2025, 2026):
+    team_file = f'./data/SR-game-logs/all_teams_game_logs_{year}.csv'
+    opponent_file = f'./data/SR-opponent-game-logs/all_teams_opponent_game_logs_{year}.csv'
+    if os.path.exists(team_file) and os.path.exists(opponent_file):
+        print(f"Skipping year {year}, files already exist.")
+        continue
     all_team_game_logs = []  
     all_opponent_game_logs = []
     for team in teams:
@@ -566,6 +624,8 @@ for year in range(2010, 2025):
             continue
             
         soup = BeautifulSoup(response.content, 'html.parser')
+        warned_team_short = False
+        warned_opp_short = False
         for table_id in ['table_pfr_team-year_game-logs_team-year-regular-season-game-log', 'table_pfr_team-year_game-logs_team-year-regular-season-opponent-game-log']:
             table = soup.find('table', {'id': table_id})
             if table is None:
@@ -588,13 +648,17 @@ for year in range(2010, 2025):
                             row_data.append(name)  # Add team name (now 49 total)
                             game_logs.append(row_data)
                         else:
-                            print(f"Warning: Team game log row has {len(row_data)} cells but expected 48")
+                            if not warned_team_short:
+                                print(f"Warning: Team game log row has {len(row_data)} cells but expected 48")
+                                warned_team_short = True
                     elif table_id == 'table_pfr_team-year_game-logs_team-year-regular-season-opponent-game-log':
                         if len(row_data) == 48:  # Expected: 48 total columns (including Rk)
                             row_data.append(name)  # Add team name (now 49 total)
                             all_opponent_game_logs.append(row_data)
                         else:
-                            print(f"Warning: Opponent game log row has {len(row_data)} cells but expected 48")
+                            if not warned_opp_short:
+                                print(f"Warning: Opponent game log row has {len(row_data)} cells but expected 48")
+                                warned_opp_short = True
             if table_id == 'table_pfr_team-year_game-logs_team-year-regular-season-game-log':
                 all_team_game_logs.extend(game_logs)
             playoff_table_id = f'playoff_gamelog{year}'
@@ -610,11 +674,11 @@ for year in range(2010, 2025):
                     playoff_game_logs.append(row_data)
                 all_team_game_logs.extend(playoff_game_logs)
         sleep(2)  # Increased delay to avoid rate limiting  
-    with open(f'./data/SR-game-logs/all_teams_game_logs_{year}.csv', mode='w', newline='', encoding='utf-8') as file:
+    with open(team_file, mode='w', newline='', encoding='utf-8') as file:
         writer = csv.writer(file)
         writer.writerow(team_game_logs_headers + ['team_name'])
         writer.writerows(all_team_game_logs)
-    with open(f'./data/SR-opponent-game-logs/all_teams_opponent_game_logs_{year}.csv', mode='w', newline='', encoding='utf-8') as file:
+    with open(opponent_file, mode='w', newline='', encoding='utf-8') as file:
         writer = csv.writer(file)
         writer.writerow(opponent_game_logs_headers + ['team_name'])
         writer.writerows(all_opponent_game_logs)
@@ -768,6 +832,7 @@ grouped_df.to_csv('data/all_team_game_logs.csv', index=True)
 
 
 ##### Team Stats and Rankings #####
+print("\n" + "*"*80 + "\n")
 data_dir = './data/SR-team-stats'
 os.makedirs(data_dir, exist_ok=True)
 teams = [
@@ -808,7 +873,11 @@ team_stats_headers = [
     'Player', 'PF', 'Yds', 'Ply', 'Y/P', 'TO', 'FL', '1stD', 'Cmp', 'Att', 'Yds', 'TD', 'Int', 'NY/A',
     '1stD', 'Att', 'Yds', 'TD', 'Y/A', '1stD', 'Pen', 'Yds', '1stPy', '#Dr', 'Sc%', 'TO%', 'Start', 'Time', 'Plays', 'Yds', 'Pts', 'Team'
 ]
-for year in range(2010, 2025):
+for year in range(2018, 2025):
+    output_file = f'{data_dir}/all_teams_stats_{year}.csv'
+    if os.path.exists(output_file):
+        print(f"Skipping year {year}, file already exists.")
+        continue
     all_team_stats = []  
     for team in teams:
         abbreviation, name = team
@@ -854,8 +923,9 @@ for year in range(2010, 2025):
             row_data.extend([td.text.strip() for td in tr.find_all('td')])  
             row_data.append(abbreviation)  
             all_team_stats.append(row_data)
-        sleep(5)  # Increased delay to avoid rate limiting  
-    with open(f'{data_dir}/all_teams_stats_{year}.csv', mode='w', newline='', encoding='utf-8') as file:
+        sleep(2)  # Increased delay to avoid rate limiting  
+        # sleep(5)  # Increased delay to avoid rate limiting  
+    with open(output_file, mode='w', newline='', encoding='utf-8') as file:
         writer = csv.writer(file)
         writer.writerow(team_stats_headers)
         writer.writerows(all_team_stats)
@@ -920,7 +990,7 @@ print(f"Merged dataset saved as {output_file}")
 #     'Opp1stD', 'OppTotYd', 'OppPassY', 'OppRushY', 'TO_won',
 #     'Offense', 'Defense', 'Sp. Tms'
 # ]
-# for year in range(2010, 2025):
+# for year in range(2018, 2025):
 #     all_games = []  
 #     for team in teams:
 #         abbreviation, name = team
@@ -973,6 +1043,7 @@ print(f"Merged dataset saved as {output_file}")
 
 
 ##### Team Conversions #####
+print("\n" + "*"*80 + "\n")
 data_dir = './data/SR-team-conversions'
 os.makedirs(data_dir, exist_ok=True)
 teams = [
@@ -1013,9 +1084,13 @@ team_conversions_headers = [
     'Player', '3DAtt', '3DConv', '4DAtt', '4DConv', '4D%', 'RZAtt', 'RZTD', 'RZPct', 'Team'
     # 'Player', '3DAtt', '3DConv', '3D%', '4DAtt', '4DConv', '4D%', 'RZAtt', 'RZTD', 'RZPct', 'Team'
 ]
-for year in range(2010, 2025):
+for year in range(2025, 2026):
     for team in teams:
         abbreviation, name = team
+        team_file = f'{data_dir}/{abbreviation}_{year}_team_conversions.csv'
+        if os.path.exists(team_file):
+            print(f"Skipping {name} for year {year}, file exists.")
+            continue
         print(f'Processing {name} for the year {year}')  
         url = f'https://www.pro-football-reference.com/teams/{abbreviation}/{year}.htm'
         response = requests.get(url)
@@ -1026,6 +1101,7 @@ for year in range(2010, 2025):
         table = soup.find('table', {'id': 'team_conversions'})
         if table is None:
             print(f'Team Conversions table not found on page {url} for {name} in {year}')
+            sleep(2)
             continue
         all_conversions = []
         tbody = table.find('tbody')
@@ -1033,13 +1109,12 @@ for year in range(2010, 2025):
             row_data = [td.text.strip() for td in tr.find_all(['th', 'td'])]  
             row_data.append(abbreviation)  
             all_conversions.append(row_data)
-        team_file = f'{data_dir}/{abbreviation}_{year}_team_conversions.csv'
         with open(team_file, mode='w', newline='', encoding='utf-8') as file:
             writer = csv.writer(file)
             writer.writerow(team_conversions_headers)
             writer.writerows(all_conversions)
         print(f'Saved team conversions data for {name} for the year {year} to {team_file}')
-        sleep(2.5)  
+        sleep(3)  
 
 ##### Merge Team Conversions #####
 input_dir = 'data/SR-team-conversions/'
@@ -1056,6 +1131,7 @@ print(f"Merged dataset saved as {output_file}")
 
 
 ##### Creating home_spread, away_spread, team_favorite columns in nfl.db #####
+print("\n" + "*"*80 + "\n")
 def calculate_spreads_and_favorite(spread_line, home_team, away_team, home_score, away_score):
     if spread_line is None or home_score is None or away_score is None:
         return "N/A", "N/A", "N/A", "N/A"
@@ -1114,46 +1190,73 @@ print("Columns 'home_spread', 'away_spread', 'team_favorite', and 'team_covered'
 
 
 ##### Passing/Rushing/Receiving #####
+print("\n" + "*"*80 + "\n")
 os.makedirs('./data/passing-rushing-receiving-game-logs/', exist_ok=True)
-for year_to_scrape in range(2010, 2025):
+for year_to_scrape in range(2025, 2026):
     output_filename = f'./data/passing-rushing-receiving-game-logs/all_passing_rushing_receiving_{year_to_scrape}.csv'
-    with open(output_filename, 'w', newline='') as output_csvfile:
+    existing_game_ids = set()
+    if os.path.exists(output_filename):
+        df_existing = pd.read_csv(output_filename)
+        if 'game_id' in df_existing.columns:
+            existing_game_ids = set(df_existing['game_id'].unique())
+    mode = 'a' if os.path.exists(output_filename) else 'w'
+    with open(output_filename, mode, newline='') as output_csvfile:
         csvwriter = csv.writer(output_csvfile)
-        csvwriter.writerow([
-            'player', 'player_id', 'team', 'pass_cmp', 'pass_att', 'pass_yds', 'pass_td', 'pass_int', 
-            'pass_sacked', 'pass_sacked_yds', 'pass_long', 'pass_rating', 'rush_att', 'rush_yds', 'rush_td', 
-            'rush_long', 'targets', 'rec', 'rec_yds', 'rec_td', 'rec_long', 'fumbles', 'fumbles_lost', 'game_id'
-        ])  
+        if mode == 'w':
+            csvwriter.writerow([
+                'player', 'player_id', 'team', 'pass_cmp', 'pass_att', 'pass_yds', 'pass_td', 'pass_int', 
+                'pass_sacked', 'pass_sacked_yds', 'pass_long', 'pass_rating', 'rush_att', 'rush_yds', 'rush_td', 
+                'rush_long', 'targets', 'rec', 'rec_yds', 'rec_td', 'rec_long', 'fumbles', 'fumbles_lost', 'game_id'
+            ])  
         with open('./data/games.csv', 'r') as csvfile:
             reader = csv.DictReader(csvfile)
-            rows = [row for row in reader if int(row['game_id'].split('_')[0]) == year_to_scrape]
+            rows = []
+            now_dt = datetime.now()
+            for row in reader:
+                try:
+                    game_dt = datetime.fromisoformat(row['date'])
+                except Exception:
+                    continue
+                if int(row['game_id'].split('_')[0]) == year_to_scrape and game_dt <= now_dt:
+                    rows.append(row)
             for row in rows:
                 pfr_value = row['pfr']
                 game_id = row['game_id']
+                if game_id in existing_game_ids:
+                    print(f"Skipping already scraped game ID: {game_id}")
+                    continue
                 url = f"https://www.pro-football-reference.com/boxscores/{pfr_value}.htm"
-                try:
-                    response = requests.get(url)
-                    if response.status_code == 429:
-                        print(f"Rate limit exceeded for URL {url}. Please try again later.")
-                        time.sleep(60)
-                        continue
-                    soup = BeautifulSoup(response.text, 'html.parser')
-                    table = soup.find('div', id='div_player_offense')
-                    if table:
-                        for i, tr in enumerate(table.find_all('tr')):
-                            if i == 0:  
-                                continue
-                            player_cell = tr.find('th')
-                            if player_cell:
-                                player_name = player_cell.get_text()
-                                player_link = player_cell.find('a')
-                                player_id = player_link['href'].split('/')[-1] if player_link else None  
-                                stats = [td.get_text() for td in tr.find_all('td')]
-                                row_data = [player_name, player_id] + stats + [game_id]  
-                                csvwriter.writerow(row_data)
-                    print(f"Successfully scraped data for game ID: {game_id}, PFR: {pfr_value}")
-                except Exception as e:
-                    print(f"An error occurred while scraping {url}. Error: {e}")
+                max_retries = 3
+                for attempt in range(max_retries):
+                    try:
+                        response = requests.get(url, timeout=10)
+                        if response.status_code == 429:
+                            print(f"Rate limit exceeded for URL {url}. Please try again later.")
+                            time.sleep(60)
+                            continue
+                        soup = BeautifulSoup(response.text, 'html.parser')
+                        table = soup.find('div', id='div_player_offense')
+                        if table:
+                            for i, tr in enumerate(table.find_all('tr')):
+                                if i == 0:  
+                                    continue
+                                player_cell = tr.find('th')
+                                if player_cell:
+                                    player_name = player_cell.get_text()
+                                    player_link = player_cell.find('a')
+                                    player_id = player_link['href'].split('/')[-1] if player_link else None  
+                                    stats = [td.get_text() for td in tr.find_all('td')]
+                                    row_data = [player_name, player_id] + stats + [game_id]  
+                                    csvwriter.writerow(row_data)
+                            print(f"Successfully scraped data for game ID: {game_id}, PFR: {pfr_value}")
+                            time.sleep(2)  # Additional sleep after successful scrape
+                            break
+                    except Exception as e:
+                        print(f"An error occurred while scraping {url}. Error: {e}")
+                        if attempt < max_retries - 1:
+                            time.sleep(2 ** attempt)
+                        else:
+                            break
                 time.sleep(2)
     print(f"Scraping completed for {year_to_scrape}. Data saved to {output_filename}.")
 
@@ -1238,57 +1341,84 @@ print(merged_df[['player', 'position']].head())
 
 
 ##### Defense #####
+print("\n" + "*"*80 + "\n")
 os.makedirs('data/defense-game-logs', exist_ok=True)
 headers = [
     'player', 'team', 'def_int', 'def_int_yds', 'def_int_td', 'def_int_long', 'pass_defended', 'sacks',
     'tackles_combined', 'tackles_solo', 'tackles_assists', 'tackles_loss', 'qb_hits', 'fumbles_rec',
     'fumbles_rec_yds', 'fumbles_rec_td', 'fumbles_forced', 'game_id'
 ]
-for year_to_scrape in range(2010, 2025):
+for year_to_scrape in range(2025, 2026):
     output_filename = f'./data/defense-game-logs/all_defense_{year_to_scrape}.csv'
-    with open(output_filename, 'w', newline='') as output_csvfile:
+    existing_game_ids = set()
+    if os.path.exists(output_filename):
+        df_existing = pd.read_csv(output_filename)
+        if 'game_id' in df_existing.columns:
+            existing_game_ids = set(df_existing['game_id'].unique())
+    mode = 'a' if os.path.exists(output_filename) else 'w'
+    with open(output_filename, mode, newline='') as output_csvfile:
         csvwriter = csv.writer(output_csvfile)
-        csvwriter.writerow(headers)
+        if mode == 'w':
+            csvwriter.writerow(headers)
         with open('./data/games.csv', 'r') as csvfile:
             reader = csv.DictReader(csvfile)
-            rows = [row for row in reader if int(row['game_id'].split('_')[0]) == year_to_scrape]
+            rows = []
+            now_dt = datetime.now()
+            for row in reader:
+                try:
+                    game_dt = datetime.fromisoformat(row['date'])
+                except Exception:
+                    continue
+                if int(row['game_id'].split('_')[0]) == year_to_scrape and game_dt <= now_dt:
+                    rows.append(row)
             for row in rows:
                 if not row['away_score'] or not row['home_score']:
                     print(f"Skipping game {row['game_id']} due to missing scores.")
                     continue  
                 pfr_value = row['pfr']
                 game_id = row['game_id']
+                if game_id in existing_game_ids:
+                    print(f"Skipping already scraped game ID: {game_id}")
+                    continue
                 url = f"https://www.pro-football-reference.com/boxscores/{pfr_value}.htm"
-                try:
-                    response = requests.get(url)
-                    if response.status_code == 429:
-                        print(f"Rate limit exceeded for URL {url}. Please try again later.")
-                        time.sleep(3)
-                        continue
-                    soup = BeautifulSoup(response.text, 'html.parser')
-                    comments = soup.find_all(string=lambda text: isinstance(text, Comment))
-                    for comment in comments:
-                        soup_comment = BeautifulSoup(comment, 'html.parser')
-                        table = soup_comment.find('table', id='player_defense')
-                        if table:
-                            for i, tr in enumerate(table.find_all('tr')):
-                                if i == 0:
-                                    continue
-                                player_name = tr.find('th').get_text() if tr.find('th') else ''
-                                stats = [td.get_text() for td in tr.find_all('td')]
-                                row_data = [player_name] + stats + [game_id]
-                                csvwriter.writerow(row_data)
-                            print(f"Successfully scraped data for game ID: {game_id}, PFR: {pfr_value}")
+                max_retries = 3
+                for attempt in range(max_retries):
+                    try:
+                        response = requests.get(url, timeout=10)
+                        response.raise_for_status()
+                        soup = BeautifulSoup(response.text, 'html.parser')
+                        comments = soup.find_all(string=lambda text: isinstance(text, Comment))
+                        table_found = False
+                        for comment in comments:
+                            soup_comment = BeautifulSoup(comment, 'html.parser')
+                            table = soup_comment.find('table', id='player_defense')
+                            if table:
+                                table_found = True
+                                for i, tr in enumerate(table.find_all('tr')):
+                                    if i == 0:
+                                        continue
+                                    player_name = tr.find('th').get_text() if tr.find('th') else ''
+                                    stats = [td.get_text() for td in tr.find_all('td')]
+                                    row_data = [player_name] + stats + [game_id]
+                                    csvwriter.writerow(row_data)
+                                print(f"Successfully scraped data for game ID: {game_id}, PFR: {pfr_value}")
+                                break
+                        if not table_found:
+                            print(f"No defense table found for {url}")
+                        break
+                    except Exception as e:
+                        print(f"An error occurred while scraping {url}. Error: {e}")
+                        if attempt < max_retries - 1:
+                            time.sleep(2 ** attempt)
+                        else:
                             break
-                except Exception as e:
-                    print(f"An error occurred while scraping {url}. Error: {e}")
                 time.sleep(2)
     print(f"Scraping completed for {year_to_scrape}. Data saved to {output_filename}.")
 
-# df = pd.read_csv('./data/defense-game-logs/all_defense_2010.csv')
+# df = pd.read_csv('./data/defense-game-logs/all_defense_2018.csv')
 # df.dropna(inplace=True)
-# df.to_csv('./data/defense-game-logs/all_defense_2010.csv', index=False)
-for year in range(2010, 2025):
+# df.to_csv('./data/defense-game-logs/all_defense_2018.csv', index=False)
+for year in range(2025, 2026):
     file_path = f'./data/defense-game-logs/all_defense_{year}.csv'
     try:
         df = pd.read_csv(file_path)
@@ -1309,6 +1439,7 @@ print(f"Merged dataset saved as {output_file}")
 
 
 ##### Export all tables from nfl.db to csv files with current date's timestamp in the file names to a final directory #####
+print("\n" + "*"*80 + "\n")
 db_path = 'nfl.db'  
 conn = sqlite3.connect(db_path)
 tables_query = "SELECT name FROM sqlite_master WHERE type='table';"
@@ -1612,6 +1743,7 @@ print(f"Cleaned data saved to {file_name}")
 # Print end time and total elapsed time
 end_time = datetime.now()
 elapsed_time = end_time - start_time
+print("\n" + "*"*80 + "\n")
 print(f"Process ended at: {end_time.strftime('%Y-%m-%d %H:%M:%S')}")
 print(f"Total time elapsed: {elapsed_time}")
 
