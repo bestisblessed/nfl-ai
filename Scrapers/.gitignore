@@ -2,4 +2,6 @@ log*
 data/
 depreciated/
 final_data/
+final_data_pfr/
 nfl.db
+nfl-db-pfr.db

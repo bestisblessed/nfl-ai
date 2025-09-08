@@ -9,9 +9,9 @@
 - data/SR-team-stats/all_teams_stats_YYYY.csv: https://www.pro-football-reference.com/teams/{abbr}/{YYYY}.htm (team_stats)
 - data/SR-team-conversions/{abbr}_YYYY_team_conversions.csv: https://www.pro-football-reference.com/teams/{abbr}/{YYYY}.htm (team_conversions)
 - data/all_box_scores.csv: https://www.pro-football-reference.com/boxscores/{pfr}.htm (linescore)
-- data/scoring-tables/all_nfl_scoring_tables_YYYY.csv → data/all_scoring_tables.csv: https://www.pro-football-reference.com/boxscores/{pfr}.htm (scoring)
-- data/passing-rushing-receiving-game-logs/all_passing_rushing_receiving_YYYY.csv → data/all_passing_rushing_receiving.csv: https://www.pro-football-reference.com/boxscores/{pfr}.htm (player_offense)
-- data/defense-game-logs/all_defense_YYYY.csv → data/all_defense-game-logs.csv: https://www.pro-football-reference.com/boxscores/{pfr}.htm (player_defense in comments)
+- data/SR-scoring-tables/all_nfl_scoring_tables_YYYY.csv → data/all_scoring_tables.csv: https://www.pro-football-reference.com/boxscores/{pfr}.htm (scoring)
+- data/SR-passing-rushing-receiving-game-logs/all_passing_rushing_receiving_YYYY.csv → data/all_passing_rushing_receiving.csv: https://www.pro-football-reference.com/boxscores/{pfr}.htm (player_offense)
+- data/SR-defense-game-logs/all_defense_YYYY.csv → data/all_defense-game-logs.csv: https://www.pro-football-reference.com/boxscores/{pfr}.htm (player_defense in comments)
 
 ## FINAL FILES:
 - data/all_team_game_logs.csv: built from data/SR-game-logs/*.csv with home/away IDs, aggregated per game

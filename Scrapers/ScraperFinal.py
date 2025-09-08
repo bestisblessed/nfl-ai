@@ -59,8 +59,8 @@ if not os.path.exists('data/rosters'):
     os.system('mkdir data/rosters')
 if not os.path.exists('data/player-stats'):
     os.system('mkdir data/player-stats')
-if not os.path.exists('data/scoring-tables'):
-    os.system('mkdir data/scoring-tables')
+if not os.path.exists('data/SR-scoring-tables'):
+    os.system('mkdir data/SR-scoring-tables')
 if os.path.exists('nfl.db'):
     os.remove('nfl.db')
 
@@ -421,7 +421,7 @@ df.to_csv('data/all_box_scores.csv', index=False)
 ##### Scrape Scoring Tables/Touchdown Logs (2018-2025) #####
 print("\n" + "*"*80 + "\n")
 for year_to_scrape in range(2025, 2026):
-    output_filename = f'./data/scoring-tables/all_nfl_scoring_tables_{year_to_scrape}.csv'
+    output_filename = f'./data/SR-scoring-tables/all_nfl_scoring_tables_{year_to_scrape}.csv'
     existing_game_ids = set()
     if os.path.exists(output_filename):
         df_existing = pd.read_csv(output_filename)
@@ -486,7 +486,7 @@ for year_to_scrape in range(2025, 2026):
 
 
 ##### Merge Scoring Tables #####
-input_dir = 'data/scoring-tables/'
+input_dir = 'data/SR-scoring-tables/'
 csv_files = [f for f in os.listdir(input_dir) if f.endswith('.csv')]
 dataframes = [pd.read_csv(os.path.join(input_dir, file)) for file in csv_files]
 merged_dataframe = pd.concat(dataframes, ignore_index=True)
@@ -1191,9 +1191,9 @@ print("Columns 'home_spread', 'away_spread', 'team_favorite', and 'team_covered'
 
 ##### Passing/Rushing/Receiving #####
 print("\n" + "*"*80 + "\n")
-os.makedirs('./data/passing-rushing-receiving-game-logs/', exist_ok=True)
+os.makedirs('./data/SR-passing-rushing-receiving-game-logs/', exist_ok=True)
 for year_to_scrape in range(2025, 2026):
-    output_filename = f'./data/passing-rushing-receiving-game-logs/all_passing_rushing_receiving_{year_to_scrape}.csv'
+    output_filename = f'./data/SR-passing-rushing-receiving-game-logs/all_passing_rushing_receiving_{year_to_scrape}.csv'
     existing_game_ids = set()
     if os.path.exists(output_filename):
         df_existing = pd.read_csv(output_filename)
@@ -1262,7 +1262,7 @@ for year_to_scrape in range(2025, 2026):
 
 
 ##### Cleaning weird rows in passing/rushing/receiving #####
-directory = 'data/passing-rushing-receiving-game-logs/'
+directory = 'data/SR-passing-rushing-receiving-game-logs/'
 for filename in os.listdir(directory):
     if filename.endswith('.csv'):
         file_path = os.path.join(directory, filename)
@@ -1273,7 +1273,7 @@ for filename in os.listdir(directory):
 
 
 ##### Merge all passing/rushing/receiving #####
-directory = 'data/passing-rushing-receiving-game-logs/'
+directory = 'data/SR-passing-rushing-receiving-game-logs/'
 merged_file_path = 'data/all_passing_rushing_receiving.csv'  
 dataframes = []
 for filename in os.listdir(directory):
@@ -1342,14 +1342,14 @@ print(merged_df[['player', 'position']].head())
 
 ##### Defense #####
 print("\n" + "*"*80 + "\n")
-os.makedirs('data/defense-game-logs', exist_ok=True)
+os.makedirs('data/SR-defense-game-logs', exist_ok=True)
 headers = [
     'player', 'team', 'def_int', 'def_int_yds', 'def_int_td', 'def_int_long', 'pass_defended', 'sacks',
     'tackles_combined', 'tackles_solo', 'tackles_assists', 'tackles_loss', 'qb_hits', 'fumbles_rec',
     'fumbles_rec_yds', 'fumbles_rec_td', 'fumbles_forced', 'game_id'
 ]
 for year_to_scrape in range(2025, 2026):
-    output_filename = f'./data/defense-game-logs/all_defense_{year_to_scrape}.csv'
+    output_filename = f'./data/SR-defense-game-logs/all_defense_{year_to_scrape}.csv'
     existing_game_ids = set()
     if os.path.exists(output_filename):
         df_existing = pd.read_csv(output_filename)
@@ -1419,7 +1419,7 @@ for year_to_scrape in range(2025, 2026):
 # df.dropna(inplace=True)
 # df.to_csv('./data/defense-game-logs/all_defense_2018.csv', index=False)
 for year in range(2025, 2026):
-    file_path = f'./data/defense-game-logs/all_defense_{year}.csv'
+    file_path = f'./data/SR-defense-game-logs/all_defense_{year}.csv'
     try:
         df = pd.read_csv(file_path)
         df.dropna(inplace=True)
@@ -1429,7 +1429,7 @@ for year in range(2025, 2026):
         print(f"No defense data file found for {year}")
 
 ##### Merge all defense-game-logs.csv files into one #####
-input_dir = 'data/defense-game-logs/'
+input_dir = 'data/SR-defense-game-logs/'
 csv_files = [f for f in os.listdir(input_dir) if f.endswith('.csv')]
 dataframes = [pd.read_csv(os.path.join(input_dir, file)) for file in csv_files]
 merged_dataframe = pd.concat(dataframes, ignore_index=True)
