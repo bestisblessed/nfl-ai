@@ -1437,25 +1437,28 @@ output_file = 'data/all_defense-game-logs.csv'
 merged_dataframe.to_csv(output_file, index=False)
 print(f"Merged dataset saved as {output_file}")
 
-
 ##### Export all tables from nfl.db to csv files with current date's timestamp in the file names to a final directory #####
+##### Regenerate final files with ALL available historical data + new 2025 data #####
 print("\n" + "*"*80 + "\n")
-db_path = 'nfl.db'  
-conn = sqlite3.connect(db_path)
-tables_query = "SELECT name FROM sqlite_master WHERE type='table';"
-tables = conn.execute(tables_query).fetchall()
 final_dir = 'final_data'
 if not os.path.exists(final_dir):
     os.makedirs(final_dir)
-for table in tables:
-    table_name = table[0]
-    df = pd.read_sql_query(f"SELECT * FROM {table_name}", conn)
-    # current_date = datetime.datetime.now().strftime("%b_%d_%Y").upper()
-    current_date = datetime.now().strftime("%b_%d_%Y").upper()
-    csv_file_name = f"{final_dir}/{table_name}_{current_date}.csv"
-    df.to_csv(csv_file_name, index=False)
-    print(f"Downloaded {table_name} to {csv_file_name}")
-conn.close()
+current_date = datetime.now().strftime("%b_%d_%Y").upper()
+print("Regenerating final files with all available historical data...")
+games_df = pd.read_csv('data/games.csv') # Games: Load from data/games.csv (contains 2018-2025)
+games_df.to_csv(f"{final_dir}/Games_{current_date}.csv", index=False)
+print(f"Regenerated Games: {len(games_df)} total games")
+player_stats_df = pd.read_csv('data/player_stats.csv') # PlayerStats: Load from data/player_stats.csv (contains 2018-2024) + any new 2025 data
+player_stats_df.to_csv(f"{final_dir}/PlayerStats_{current_date}.csv", index=False)
+print(f"Regenerated PlayerStats: {len(player_stats_df)} total records")
+rosters_df = pd.read_csv('data/rosters.csv') # Rosters: Load from data/rosters.csv (contains 2018-2025)
+rosters_df.to_csv(f"{final_dir}/Rosters_{current_date}.csv", index=False)
+print(f"Regenerated Rosters: {len(rosters_df)} total records")
+db_path = 'nfl.db' # Teams: Static data, load from database
+conn = sqlite3.connect(db_path)
+teams_df = pd.read_sql_query("SELECT * FROM Teams", conn)
+teams_df.to_csv(f"{final_dir}/Teams_{current_date}.csv", index=False)
+print(f"Regenerated Teams: {len(teams_df)} total teams")
 
 
 ##### Remove Unplayed Games #####
