@@ -20,3 +20,8 @@
 - data/rosters.csv: merged rosters with PFR player URLs added
 - data/player_stats.csv: cleaned/merged player stats with game_id mapping to data/games.csv
 - final_data/*.csv: exports of SQLite tables (Teams, Games, PlayerStats, Rosters) with date stamp
+- nfl.db:
+  - Teams: created from hardcoded team list in `ScraperFinal.py` (no external file)
+  - Games: populated from `data/games.csv` (nflverse); additional columns: home_spread, away_spread, team_favorite, team_covered
+  - PlayerStats: populated from `data/player_stats.csv` (built from yearly `data/player-stats/player_stats_YYYY.csv` and joined to `data/games.csv` for game_id mapping)
+  - Rosters: populated from `data/rosters.csv` (merged from yearly `data/rosters/roster_YYYY.csv` with PFR player URL)
