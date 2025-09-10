@@ -85,7 +85,8 @@ echo "✅ Week $WEEK cleanup complete (other weeks preserved)"
 print_section "🎯 Running Passing Yards Model"
 echo "Predicting QB passing yards..."
 cd 1-PASSING-YARDS
-python xgboost_passing_yards_qb.py $WEEK
+# python xgboost_passing_yards_qb.py $WEEK
+./run.sh $WEEK
 if [ $? -ne 0 ]; then
     echo "❌ Error: Passing yards model failed!"
     exit 1
