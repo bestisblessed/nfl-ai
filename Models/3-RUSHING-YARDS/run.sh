@@ -18,6 +18,7 @@ fi
 mkdir data
 cp ../../Scrapers/data/all_passing_rushing_receiving.csv data/
 cp ../upcoming_games.csv data/
+cp ../starting_qbs_2025.csv data/
 python prepare_data.py
 
 # Run predictions
