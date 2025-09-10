@@ -47,58 +47,47 @@ df.to_csv(OUT, index=False)
 print(f"Saved: {OUT}  |  rows={len(df)}")
 
 # ---------------------------
-# Download 2025 roster data
+# Download 2025 roster data - DISABLED (using existing data)
 # ---------------------------
-print("\n=== Downloading 2025 Roster Data ===")
+print("\n=== Using Existing 2025 Roster Data ===")
 
-# Download 2025 roster data directly
-year = 2025
-file_path = "data/rosters_2025.csv"
-url = f"https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_{year}.csv"
+# Skip download - using existing roster data from copied files
+file_path = "data/roster_2025.csv"
+print(f"Using existing roster_2025.csv from copied data")
 
-print(f"Downloading 2025 roster data from: {url}")
 try:
-    response = requests.get(url)
-    if response.status_code == 200:
-        with open(file_path, 'wb') as file:
-            file.write(response.content)
-        print(f"Downloaded and saved rosters_2025.csv")
-        
-        # Load 2025 roster data
-        roster_2025 = pd.read_csv(file_path)
-        
-        # Add URL column
-        base_url = "https://www.pro-football-reference.com/players/"
-        roster_2025['url'] = roster_2025['pfr_id'].apply(lambda x: f"{base_url}{x[0]}/{x}.htm" if pd.notna(x) else None)
-        
-        # Standardize team names
-        standardize_mapping = {
-            'ARZ': 'ARI',  
-            'BLT': 'BAL',  
-            'CLV': 'CLE',  
-            'HST': 'HOU',  
-            'LA': 'LAR',   
-            'LV': 'LVR',   
-            'OAK': 'LVR',  
-            'SD': 'LAC',   
-            'SL': 'LAR'    
-        }
-        roster_2025['team'] = roster_2025['team'].replace(standardize_mapping)
-        
-        # Save standardized 2025 rosters
-        roster_2025.to_csv(file_path, index=False)
-        print(f"Saved standardized rosters_2025.csv - Total rows: {len(roster_2025)}")
-        
-        # Show sample of 2025 QBs to verify
-        qb_2025 = roster_2025[roster_2025['position'] == 'QB']
-        print(f"\nSample 2025 QBs: {len(qb_2025)} total")
-        print(qb_2025[['team', 'full_name']].head(10))
-        
-    else:
-        print(f"Failed to download 2025 roster data (status: {response.status_code})")
-        
+    # Load existing 2025 roster data
+    roster_2025 = pd.read_csv(file_path)
+    
+    # Add URL column
+    base_url = "https://www.pro-football-reference.com/players/"
+    roster_2025['url'] = roster_2025['pfr_id'].apply(lambda x: f"{base_url}{x[0]}/{x}.htm" if pd.notna(x) else None)
+    
+    # Standardize team names
+    standardize_mapping = {
+        'ARZ': 'ARI',  
+        'BLT': 'BAL',  
+        'CLV': 'CLE',  
+        'HST': 'HOU',  
+        'LA': 'LAR',   
+        'LV': 'LVR',   
+        'OAK': 'LVR',  
+        'SD': 'LAC',   
+        'SL': 'LAR'    
+    }
+    roster_2025['team'] = roster_2025['team'].replace(standardize_mapping)
+    
+    # Save standardized 2025 rosters
+    roster_2025.to_csv(file_path, index=False)
+    print(f"Processed existing roster_2025.csv - Total rows: {len(roster_2025)}")
+    
+    # Show sample of 2025 QBs to verify
+    qb_2025 = roster_2025[roster_2025['position'] == 'QB']
+    print(f"\nSample 2025 QBs: {len(qb_2025)} total")
+    print(qb_2025[['team', 'full_name']].head(10))
+    
 except Exception as e:
-    print(f"Error downloading 2025 roster data: {e}")
+    print(f"Error processing existing 2025 roster data: {e}")
 
 # os.remove('data/all_passing_rushing_receiving.csv')
 # print("Removed all_passing_rushing_receiving.csv")

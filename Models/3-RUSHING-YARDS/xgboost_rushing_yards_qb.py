@@ -30,7 +30,7 @@ os.makedirs(output_dir, exist_ok=True)
 # Load data
 hist = pd.read_csv("data/model_train.csv")
 upcoming = pd.read_csv("data/upcoming_games.csv")
-rosters = pd.read_csv("data/rosters_2025.csv")
+rosters = pd.read_csv("data/roster_2025.csv")
 
 # Numeric
 for col in ["rush_attempts", "rush_yards", "season", "week"]:
