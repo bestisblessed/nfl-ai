@@ -5,13 +5,13 @@ MIN vs ATL | Week 2 2025 | TE Projected Receiving Yards
 +----------------+--------------+    +--------------+--------------+
 | MIN Player     |   Pred Yards |    | ATL Player   |   Pred Yards |
 +================+==============+    +==============+==============+
-| T.J. Hockenson |         51.3 |    | Kyle Pitts   |         27.4 |
-| Josh Oliver    |         21.3 |    +--------------+--------------+
+| T.J. Hockenson |         53.9 |    | Kyle Pitts   |         26.5 |
+| Josh Oliver    |         21.4 |    +--------------+--------------+
 +----------------+--------------+    
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total TEs: 3 (2 MIN, 1 ATL)
-Top Projection: T.J. Hockenson (MIN) - 51.3 yards
+Top Projection: T.J. Hockenson (MIN) - 53.9 yards
 ================================================================================

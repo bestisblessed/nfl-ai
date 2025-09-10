@@ -5,12 +5,12 @@ HOU vs TB | Week 2 2025 | QB Projected Rushing Yards
 +--------------+--------------+    +----------------+--------------+
 | HOU Player   |   Pred Yards |    | TB Player      |   Pred Yards |
 +==============+==============+    +================+==============+
-| C.J. Stroud  |         17.8 |    | Baker Mayfield |         24.8 |
+| C.J. Stroud  |         17.9 |    | Baker Mayfield |           26 |
 +--------------+--------------+    +----------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total RBs: 2 (1 HOU, 1 TB)
-Top Projection: Baker Mayfield (TB) - 24.8 yards
+Top Projection: Baker Mayfield (TB) - 26.0 yards
 ================================================================================

@@ -5,12 +5,12 @@ TEN vs LAR | Week 2 2025 | QB Projected Passing Yards
 +--------------+--------------+    +------------------+--------------+
 | TEN Player   | Pred Yards   |    | LAR Player       |   Pred Yards |
 +==============+==============+    +==================+==============+
-| Cam Ward     | No Data      |    | Matthew Stafford |        233.3 |
+| Cam Ward     | No Data      |    | Matthew Stafford |        234.4 |
 +--------------+--------------+    +------------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total QBs: 2 (1 TEN, 1 LAR)
-Top Projection: Matthew Stafford (LAR) - 233.3 yards
+Top Projection: Matthew Stafford (LAR) - 234.4 yards
 ================================================================================

@@ -5,14 +5,15 @@ KC vs PHI | Week 2 2025 | RB Projected Receiving Yards
 +---------------+--------------+    +----------------+--------------+
 | KC Player     |   Pred Yards |    | PHI Player     |   Pred Yards |
 +===============+==============+    +================+==============+
-| Isiah Pacheco |         12.5 |    | Saquon Barkley |         17.5 |
-| Kareem Hunt   |         10.6 |    | AJ Dillon      |         11.4 |
-+---------------+--------------+    | Will Shipley   |          6.7 |
+| Isiah Pacheco |         13.4 |    | Saquon Barkley |         17.3 |
+| Kareem Hunt   |          9.9 |    | AJ Dillon      |         11.2 |
++---------------+--------------+    | Tank Bigsby    |          8   |
+                                    | Will Shipley   |          5.7 |
                                     +----------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total RBs: 5 (2 KC, 3 PHI)
-Top Projection: Saquon Barkley (PHI) - 17.5 yards
+Total RBs: 6 (2 KC, 4 PHI)
+Top Projection: Saquon Barkley (PHI) - 17.3 yards
 ================================================================================

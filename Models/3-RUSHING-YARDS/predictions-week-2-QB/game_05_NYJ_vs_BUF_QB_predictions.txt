@@ -5,12 +5,12 @@ NYJ vs BUF | Week 2 2025 | QB Projected Rushing Yards
 +---------------+--------------+    +--------------+--------------+
 | NYJ Player    |   Pred Yards |    | BUF Player   |   Pred Yards |
 +===============+==============+    +==============+==============+
-| Justin Fields |         20.2 |    | Josh Allen   |         40.9 |
+| Justin Fields |         23.7 |    | Josh Allen   |         40.4 |
 +---------------+--------------+    +--------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total RBs: 2 (1 NYJ, 1 BUF)
-Top Projection: Josh Allen (BUF) - 40.9 yards
+Top Projection: Josh Allen (BUF) - 40.4 yards
 ================================================================================

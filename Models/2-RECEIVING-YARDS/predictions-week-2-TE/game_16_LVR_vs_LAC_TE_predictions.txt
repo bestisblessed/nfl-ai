@@ -5,13 +5,13 @@ LVR vs LAC | Week 2 2025 | TE Projected Receiving Yards
 +---------------+--------------+    +---------------+--------------+
 | LVR Player    |   Pred Yards |    | LAC Player    |   Pred Yards |
 +===============+==============+    +===============+==============+
-| Brock Bowers  |         81.6 |    | Tyler Conklin |         38.9 |
-| Michael Mayer |         21.2 |    | Will Dissly   |         32.9 |
+| Brock Bowers  |         82.6 |    | Tyler Conklin |         35.1 |
+| Michael Mayer |         21.5 |    | Will Dissly   |         31.6 |
 +---------------+--------------+    +---------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total TEs: 4 (2 LVR, 2 LAC)
-Top Projection: Brock Bowers (LVR) - 81.6 yards
+Top Projection: Brock Bowers (LVR) - 82.6 yards
 ================================================================================

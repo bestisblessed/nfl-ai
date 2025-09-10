@@ -5,14 +5,14 @@ BAL vs CLE | Week 2 2025 | Projected Receiving Yards
 +-----------------+--------------+    +----------------+--------------+
 | BAL Player      |   Pred Yards |    | CLE Player     |   Pred Yards |
 +=================+==============+    +================+==============+
-| Zay Flowers     |         48.8 |    | Jerry Jeudy    |         65.7 |
-| Rashod Bateman  |         36.9 |    | Cedric Tillman |         58.9 |
-| DeAndre Hopkins |         28.5 |    | Jamari Thrash  |         10.6 |
+| Zay Flowers     |         48   |    | Jerry Jeudy    |         67.9 |
+| Rashod Bateman  |         38.2 |    | Cedric Tillman |         52.5 |
+| DeAndre Hopkins |         30.9 |    | Jamari Thrash  |         11.1 |
 +-----------------+--------------+    +----------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total WRs: 6 (3 BAL, 3 CLE)
-Top Projection: Jerry Jeudy (CLE) - 65.7 yards
+Top Projection: Jerry Jeudy (CLE) - 67.9 yards
 ================================================================================

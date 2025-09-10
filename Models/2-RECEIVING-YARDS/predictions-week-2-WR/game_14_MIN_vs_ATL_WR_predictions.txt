@@ -5,15 +5,15 @@ MIN vs ATL | Week 2 2025 | Projected Receiving Yards
 +------------------+--------------+    +------------------+--------------+
 | MIN Player       |   Pred Yards |    | ATL Player       |   Pred Yards |
 +==================+==============+    +==================+==============+
-| Justin Jefferson |         60   |    | Drake London     |         61.9 |
-| Adam Thielen     |         60   |    | Ray-Ray McCloud  |         43.6 |
-| Jalen Nailor     |         31.4 |    | KhaDarel Hodge   |         22.8 |
-+------------------+--------------+    | Casey Washington |         11.1 |
+| Adam Thielen     |         59.1 |    | Drake London     |         67.8 |
+| Justin Jefferson |         56   |    | Ray-Ray McCloud  |         41.9 |
+| Jalen Nailor     |         32.7 |    | KhaDarel Hodge   |         22.7 |
++------------------+--------------+    | Casey Washington |         11   |
                                        +------------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total WRs: 7 (3 MIN, 4 ATL)
-Top Projection: Drake London (ATL) - 61.9 yards
+Top Projection: Drake London (ATL) - 67.8 yards
 ================================================================================

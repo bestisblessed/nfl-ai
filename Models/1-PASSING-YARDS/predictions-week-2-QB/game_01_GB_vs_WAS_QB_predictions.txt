@@ -5,12 +5,12 @@ GB vs WAS | Week 2 2025 | QB Projected Passing Yards
 +-------------+--------------+    +----------------+--------------+
 | GB Player   |   Pred Yards |    | WAS Player     |   Pred Yards |
 +=============+==============+    +================+==============+
-| Jordan Love |        190.3 |    | Jayden Daniels |        217.3 |
+| Jordan Love |          200 |    | Jayden Daniels |          223 |
 +-------------+--------------+    +----------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total QBs: 2 (1 GB, 1 WAS)
-Top Projection: Jayden Daniels (WAS) - 217.3 yards
+Top Projection: Jayden Daniels (WAS) - 223.0 yards
 ================================================================================

@@ -5,13 +5,13 @@ DAL vs NYG | Week 2 2025 | RB Projected Receiving Yards
 +------------------+--------------+    +------------------+--------------+
 | DAL Player       |   Pred Yards |    | NYG Player       |   Pred Yards |
 +==================+==============+    +==================+==============+
-| Javonte Williams |         19.9 |    | Tyrone Tracy Jr. |         22.2 |
-| Miles Sanders    |         17.6 |    | Devin Singletary |          8.1 |
+| Javonte Williams |         19.9 |    | Tyrone Tracy Jr. |         21.9 |
+| Miles Sanders    |         18   |    | Devin Singletary |          8   |
 +------------------+--------------+    +------------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total RBs: 4 (2 DAL, 2 NYG)
-Top Projection: Tyrone Tracy Jr. (NYG) - 22.2 yards
+Top Projection: Tyrone Tracy Jr. (NYG) - 21.9 yards
 ================================================================================

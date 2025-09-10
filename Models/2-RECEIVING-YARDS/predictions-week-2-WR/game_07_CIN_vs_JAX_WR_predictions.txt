@@ -5,13 +5,13 @@ CIN vs JAX | Week 2 2025 | Projected Receiving Yards
 +---------------+--------------+    +--------------+--------------+
 | CIN Player    |   Pred Yards |    | JAX Player   |   Pred Yards |
 +===============+==============+    +==============+==============+
-| Tee Higgins   |         63.1 |    | Dyami Brown  |         52.8 |
-| Ja'Marr Chase |         39.5 |    +--------------+--------------+
+| Tee Higgins   |         63.4 |    | Dyami Brown  |           52 |
+| Ja'Marr Chase |         39.1 |    +--------------+--------------+
 +---------------+--------------+    
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total WRs: 3 (2 CIN, 1 JAX)
-Top Projection: Tee Higgins (CIN) - 63.1 yards
+Top Projection: Tee Higgins (CIN) - 63.4 yards
 ================================================================================

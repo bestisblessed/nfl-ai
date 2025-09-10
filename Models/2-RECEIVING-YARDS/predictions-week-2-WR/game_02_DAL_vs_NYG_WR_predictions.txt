@@ -5,14 +5,14 @@ DAL vs NYG | Week 2 2025 | Projected Receiving Yards
 +----------------+--------------+    +-------------------+--------------+
 | DAL Player     |   Pred Yards |    | NYG Player        |   Pred Yards |
 +================+==============+    +===================+==============+
-| CeeDee Lamb    |         91.3 |    | Malik Nabers      |         71.9 |
-| George Pickens |         51.2 |    | Wan'Dale Robinson |         47.9 |
-| Jalen Tolbert  |         33.9 |    | Darius Slayton    |         20.8 |
+| CeeDee Lamb    |         82.9 |    | Malik Nabers      |         78.6 |
+| George Pickens |         52.5 |    | Wan'Dale Robinson |         52.2 |
+| Jalen Tolbert  |         32.6 |    | Darius Slayton    |         20   |
 +----------------+--------------+    +-------------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total WRs: 6 (3 DAL, 3 NYG)
-Top Projection: CeeDee Lamb (DAL) - 91.3 yards
+Top Projection: CeeDee Lamb (DAL) - 82.9 yards
 ================================================================================

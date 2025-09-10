@@ -5,13 +5,13 @@ GB vs WAS | Week 2 2025 | RB Projected Receiving Yards
 +----------------+--------------+    +------------------+--------------+
 | GB Player      |   Pred Yards |    | WAS Player       |   Pred Yards |
 +================+==============+    +==================+==============+
-| Josh Jacobs    |         18.4 |    | Austin Ekeler    |         28.5 |
-| Emanuel Wilson |          7   |    | Jeremy McNichols |         10   |
+| Josh Jacobs    |         14.9 |    | Austin Ekeler    |         25.5 |
+| Emanuel Wilson |          6.8 |    | Jeremy McNichols |          8.9 |
 +----------------+--------------+    +------------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total RBs: 4 (2 GB, 2 WAS)
-Top Projection: Austin Ekeler (WAS) - 28.5 yards
+Top Projection: Austin Ekeler (WAS) - 25.5 yards
 ================================================================================

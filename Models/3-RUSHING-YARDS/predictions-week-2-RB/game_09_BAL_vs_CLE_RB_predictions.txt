@@ -5,14 +5,14 @@ BAL vs CLE | Week 2 2025 | RB Projected Rushing Yards
 +---------------+--------------+    +--------------+--------------+
 | BAL Player    |   Pred Yards |    | CLE Player   |   Pred Yards |
 +===============+==============+    +==============+==============+
-| Derrick Henry |        159.9 |    | Jerome Ford  |         24.2 |
-| Justice Hill  |         21.9 |    +--------------+--------------+
-| Rasheen Ali   |          9.4 |    
+| Derrick Henry |        160.3 |    | Jerome Ford  |         20.1 |
+| Justice Hill  |         19.3 |    +--------------+--------------+
+| Rasheen Ali   |          9.8 |    
 +---------------+--------------+    
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total RBs: 4 (3 BAL, 1 CLE)
-Top Projection: Derrick Henry (BAL) - 159.9 yards
+Top Projection: Derrick Henry (BAL) - 160.3 yards
 ================================================================================

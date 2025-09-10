@@ -5,13 +5,13 @@ ARI vs CAR | Week 2 2025 | RB Projected Rushing Yards
 +--------------+--------------+    +---------------+--------------+
 | ARI Player   |   Pred Yards |    | CAR Player    |   Pred Yards |
 +==============+==============+    +===============+==============+
-| James Conner |         48.7 |    | Chuba Hubbard |         61.1 |
-| Trey Benson  |         26.2 |    | Rico Dowdle   |         39.9 |
+| James Conner |         52.5 |    | Chuba Hubbard |         63.8 |
+| Trey Benson  |         25.9 |    | Rico Dowdle   |         28.5 |
 +--------------+--------------+    +---------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total RBs: 4 (2 ARI, 2 CAR)
-Top Projection: Chuba Hubbard (CAR) - 61.1 yards
+Top Projection: Chuba Hubbard (CAR) - 63.8 yards
 ================================================================================

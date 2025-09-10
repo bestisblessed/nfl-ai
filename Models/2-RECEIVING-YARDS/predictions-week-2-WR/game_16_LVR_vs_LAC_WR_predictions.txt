@@ -5,15 +5,15 @@ LVR vs LAC | Week 2 2025 | Projected Receiving Yards
 +---------------+--------------+    +------------------+--------------+
 | LVR Player    |   Pred Yards |    | LAC Player       |   Pred Yards |
 +===============+==============+    +==================+==============+
-| Jakobi Meyers |         57.4 |    | Ladd McConkey    |         80   |
-| Tre Tucker    |         37.6 |    | Quentin Johnston |         65.2 |
-+---------------+--------------+    | Keenan Allen     |         60.1 |
-                                    | Derius Davis     |         12.7 |
+| Jakobi Meyers |         66.2 |    | Ladd McConkey    |         75.8 |
+| Tre Tucker    |         36.5 |    | Quentin Johnston |         65.8 |
++---------------+--------------+    | Keenan Allen     |         61.3 |
+                                    | Derius Davis     |         12.6 |
                                     +------------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total WRs: 6 (2 LVR, 4 LAC)
-Top Projection: Ladd McConkey (LAC) - 80.0 yards
+Top Projection: Ladd McConkey (LAC) - 75.8 yards
 ================================================================================

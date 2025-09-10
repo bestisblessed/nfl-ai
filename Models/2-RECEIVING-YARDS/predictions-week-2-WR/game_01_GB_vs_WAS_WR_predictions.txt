@@ -5,14 +5,14 @@ GB vs WAS | Week 2 2025 | Projected Receiving Yards
 +------------------+--------------+    +----------------+--------------+
 | GB Player        |   Pred Yards |    | WAS Player     |   Pred Yards |
 +==================+==============+    +================+==============+
-| Romeo Doubs      |         37.8 |    | Terry McLaurin |         57.7 |
-| Dontayvion Wicks |         36.3 |    | Noah Brown     |         46.6 |
-| Jayden Reed      |         30.8 |    | Chris Moore    |         27.2 |
+| Romeo Doubs      |         38.9 |    | Terry McLaurin |         54.6 |
+| Dontayvion Wicks |         35.1 |    | Noah Brown     |         46.2 |
+| Jayden Reed      |         30.1 |    | Chris Moore    |         27.2 |
 +------------------+--------------+    +----------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total WRs: 6 (3 GB, 3 WAS)
-Top Projection: Terry McLaurin (WAS) - 57.7 yards
+Top Projection: Terry McLaurin (WAS) - 54.6 yards
 ================================================================================

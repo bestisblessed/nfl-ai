@@ -5,14 +5,14 @@ NYJ vs BUF | Week 2 2025 | RB Projected Rushing Yards
 +---------------+--------------+    +--------------+--------------+
 | NYJ Player    |   Pred Yards |    | BUF Player   |   Pred Yards |
 +===============+==============+    +==============+==============+
-| Breece Hall   |         69.4 |    | James Cook   |         51.4 |
-| Isaiah Davis  |         20   |    | Ty Johnson   |         21.1 |
-| Braelon Allen |         16.1 |    | Ray Davis    |         18.8 |
+| Breece Hall   |         68.1 |    | James Cook   |         51.6 |
+| Braelon Allen |         18.5 |    | Ray Davis    |         21.2 |
+| Isaiah Davis  |         17.7 |    | Ty Johnson   |         19.1 |
 +---------------+--------------+    +--------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total RBs: 6 (3 NYJ, 3 BUF)
-Top Projection: Breece Hall (NYJ) - 69.4 yards
+Top Projection: Breece Hall (NYJ) - 68.1 yards
 ================================================================================

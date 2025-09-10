@@ -5,15 +5,15 @@ TEN vs LAR | Week 2 2025 | Projected Receiving Yards
 +---------------+--------------+    +--------------------+--------------+
 | TEN Player    |   Pred Yards |    | LAR Player         |   Pred Yards |
 +===============+==============+    +====================+==============+
-| Calvin Ridley |         62.7 |    | Puka Nacua         |         97.7 |
-| Tyler Lockett |         19.2 |    | Davante Adams      |         65.9 |
-+---------------+--------------+    | Tutu Atwell        |         24.4 |
-                                    | Jordan Whittington |         17.7 |
+| Calvin Ridley |         58.7 |    | Puka Nacua         |         95.1 |
+| Tyler Lockett |         19.1 |    | Davante Adams      |         62.7 |
++---------------+--------------+    | Tutu Atwell        |         25.5 |
+                                    | Jordan Whittington |         19   |
                                     +--------------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total WRs: 6 (2 TEN, 4 LAR)
-Top Projection: Puka Nacua (LAR) - 97.7 yards
+Top Projection: Puka Nacua (LAR) - 95.1 yards
 ================================================================================

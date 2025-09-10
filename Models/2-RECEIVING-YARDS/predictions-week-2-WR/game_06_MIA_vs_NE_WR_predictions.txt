@@ -5,15 +5,15 @@ MIA vs NE | Week 2 2025 | Projected Receiving Yards
 +-----------------------+--------------+    +----------------+--------------+
 | MIA Player            |   Pred Yards |    | NE Player      |   Pred Yards |
 +=======================+==============+    +================+==============+
-| Tyreek Hill           |         59.2 |    | Kayshon Boutte |         55.3 |
-| Jaylen Waddle         |         50.8 |    | Stefon Diggs   |         54.9 |
-| Nick Westbrook-Ikhine |         37.2 |    | Mack Hollins   |         21.9 |
-| Malik Washington      |         28.1 |    +----------------+--------------+
+| Tyreek Hill           |         62.9 |    | Stefon Diggs   |         60.3 |
+| Jaylen Waddle         |         52.9 |    | Kayshon Boutte |         59.6 |
+| Nick Westbrook-Ikhine |         38.4 |    | Mack Hollins   |         23.6 |
+| Malik Washington      |         27.3 |    +----------------+--------------+
 +-----------------------+--------------+    
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total WRs: 7 (4 MIA, 3 NE)
-Top Projection: Tyreek Hill (MIA) - 59.2 yards
+Top Projection: Tyreek Hill (MIA) - 62.9 yards
 ================================================================================

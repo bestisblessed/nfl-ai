@@ -5,14 +5,14 @@ HOU vs TB | Week 2 2025 | RB Projected Receiving Yards
 +-----------------+--------------+    +---------------+--------------+
 | HOU Player      |   Pred Yards |    | TB Player     |   Pred Yards |
 +=================+==============+    +===============+==============+
-| Dare Ogunbowale |         11.3 |    | Bucky Irving  |         21.1 |
-| Nick Chubb      |         10.7 |    | Rachaad White |         16.4 |
-| Dameon Pierce   |          8.5 |    | Sean Tucker   |          9.1 |
+| Dare Ogunbowale |         11.5 |    | Bucky Irving  |         19.7 |
+| Nick Chubb      |         10.5 |    | Rachaad White |         17.3 |
+| Dameon Pierce   |          8   |    | Sean Tucker   |          9.4 |
 +-----------------+--------------+    +---------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total RBs: 6 (3 HOU, 3 TB)
-Top Projection: Bucky Irving (TB) - 21.1 yards
+Top Projection: Bucky Irving (TB) - 19.7 yards
 ================================================================================
