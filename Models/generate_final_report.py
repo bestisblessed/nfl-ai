@@ -9,11 +9,11 @@ import os
 import sys
 from datetime import datetime
 
-def load_predictions():
+def load_predictions(week_num):
     """Load all prediction data from the three model folders."""
     
     # Load passing yards (QBs only)
-    passing_file = "1-PASSING-YARDS/predictions-week-1-QB/final_week1_QB_pass_yards_report.csv"
+    passing_file = f"1-PASSING-YARDS/predictions-week-{week_num}-QB/final_week{week_num}_QB_pass_yards_report.csv"
     if os.path.exists(passing_file):
         passing_df = pd.read_csv(passing_file)
         passing_df['prop_type'] = 'Passing Yards'
@@ -25,8 +25,8 @@ def load_predictions():
         passing_df = pd.DataFrame()
     
     # Load rushing yards (QBs and RBs)
-    rushing_qb_file = "3-RUSHING-YARDS/predictions-week-1-QB/final_week1_QB_rush_yards_report.csv"
-    rushing_rb_file = "3-RUSHING-YARDS/predictions-week-1-RB/final_week1_RB_rush_yards_report.csv"
+    rushing_qb_file = f"3-RUSHING-YARDS/predictions-week-{week_num}-QB/final_week{week_num}_QB_rush_yards_report.csv"
+    rushing_rb_file = f"3-RUSHING-YARDS/predictions-week-{week_num}-RB/final_week{week_num}_RB_rush_yards_report.csv"
     
     rushing_dfs = []
     if os.path.exists(rushing_qb_file):
@@ -48,9 +48,9 @@ def load_predictions():
     rushing_df = pd.concat(rushing_dfs, ignore_index=True) if rushing_dfs else pd.DataFrame()
     
     # Load receiving yards (WRs, RBs, TEs)
-    receiving_wr_file = "2-RECEIVING-YARDS/predictions-week-1-WR/final_week1_WR_rec_yards_report.csv"
-    receiving_rb_file = "2-RECEIVING-YARDS/predictions-week-1-RB/final_week1_RB_rec_yards_report.csv"
-    receiving_te_file = "2-RECEIVING-YARDS/predictions-week-1-TE/final_week1_TE_rec_yards_report.csv"
+    receiving_wr_file = f"2-RECEIVING-YARDS/predictions-week-{week_num}-WR/final_week{week_num}_WR_rec_yards_report.csv"
+    receiving_rb_file = f"2-RECEIVING-YARDS/predictions-week-{week_num}-RB/final_week{week_num}_RB_rec_yards_report.csv"
+    receiving_te_file = f"2-RECEIVING-YARDS/predictions-week-{week_num}-TE/final_week{week_num}_TE_rec_yards_report.csv"
     
     receiving_dfs = []
     for file, pos in [(receiving_wr_file, 'WR'), (receiving_rb_file, 'RB'), (receiving_te_file, 'TE')]:
@@ -97,7 +97,7 @@ def format_prediction(row):
     else:
         return f"  {row['full_name']} ({row['position']}): {row['pred_yards']:.1f} yards"
 
-def create_game_report(team1, team2, predictions_df):
+def create_game_report(team1, team2, predictions_df, week_num):
     """Create a text report for a single game with all props."""
     
     # Get all predictions for this game
@@ -114,7 +114,7 @@ def create_game_report(team1, team2, predictions_df):
     
     report = []
     report.append("=" * 80)
-    report.append(f"{team1} vs {team2} | Week 1 2025 | ALL PROPS")
+    report.append(f"{team1} vs {team2} | Week {week_num} 2025 | ALL PROPS")
     report.append("=" * 80)
     report.append("")
     
@@ -163,7 +163,7 @@ def create_game_report(team1, team2, predictions_df):
     
     return "\n".join(report)
 
-def create_game_html_report(team1, team2, predictions_df):
+def create_game_html_report(team1, team2, predictions_df, week_num):
     """Create an HTML report for a single game with all props."""
     
     # Get all predictions for this game
@@ -180,7 +180,7 @@ def create_game_html_report(team1, team2, predictions_df):
     
     html = []
     html.append(f'<div class="game-container">')
-    html.append(f'<h2 class="game-header">{team1} vs {team2} | Week 1 2025 | ALL PROPS</h2>')
+    html.append(f'<h2 class="game-header">{team1} vs {team2} | Week {week_num} 2025 | ALL PROPS</h2>')
     
     # Group by prop type
     for prop_type in ['Passing Yards', 'Rushing Yards', 'Receiving Yards']:
@@ -450,7 +450,7 @@ def create_combined_report(week_num=1):
     print("=" * 50)
     
     # Load all predictions
-    predictions_df = load_predictions()
+    predictions_df = load_predictions(week_num)
     if predictions_df.empty:
         print("❌ No prediction data found. Make sure all models have been run.")
         return
@@ -479,11 +479,11 @@ def create_combined_report(week_num=1):
         print(f"Processing Game {i:2d}: {team1} vs {team2}")
         
         # Text report
-        game_report = create_game_report(team1, team2, predictions_df)
+        game_report = create_game_report(team1, team2, predictions_df, week_num)
         all_reports.append(game_report)
         
         # HTML report
-        game_html = create_game_html_report(team1, team2, predictions_df)
+        game_html = create_game_html_report(team1, team2, predictions_df, week_num)
         all_html_reports.append(game_html)
         
         # Save individual game reports
@@ -498,7 +498,7 @@ def create_combined_report(week_num=1):
     
     # Create master combined report
     master_report = []
-    master_report.append("🏈 NFL WEEK 1 2025 - COMPLETE PROPS REPORT")
+    master_report.append(f"🏈 NFL WEEK {week_num} 2025 - COMPLETE PROPS REPORT")
     master_report.append("=" * 80)
     master_report.append(f"Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     master_report.append(f"Total Games: {len(games)}")
@@ -523,7 +523,7 @@ def create_combined_report(week_num=1):
     
     # Create master HTML report
     master_html = []
-    master_html.append('<div class="master-header">🏈 NFL WEEK 1 2025 - COMPLETE PROPS REPORT</div>')
+    master_html.append(f'<div class="master-header">🏈 NFL WEEK {week_num} 2025 - COMPLETE PROPS REPORT</div>')
     
     # Table of contents
     master_html.append('<div class="toc">')
@@ -543,7 +543,7 @@ def create_combined_report(week_num=1):
     
     master_html_filename = f"{output_dir}/week{week_num}_complete_props_report.html"
     with open(master_html_filename, 'w') as f:
-        html_content = create_full_html_page("NFL Week 1 2025 - Complete Props Report", "\n".join(master_html))
+        html_content = create_full_html_page(f"NFL Week {week_num} 2025 - Complete Props Report", "\n".join(master_html))
         f.write(html_content)
     
     # Create summary CSV

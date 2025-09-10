@@ -5,6 +5,13 @@
 
 set -e  # Exit on any error
 
+# Ensure logs directory exists
+mkdir -p logs
+
+# Redirect all output to log file while also displaying on terminal
+# exec > >(tee logs/log.log) 2>&1
+exec 2>&1 | tee logs/log.log
+
 # Ask user for week number if not provided
 if [ -z "$1" ]; then
     echo "🏈 NFL Props Models - Master Runner"
@@ -35,21 +42,6 @@ print_section() {
     echo "$(printf '=%.0s' {1..60})"
     echo ""
 }
-
-# Function to check if directory exists
-check_directory() {
-    if [ ! -d "$1" ]; then
-        echo "❌ Error: Directory $1 not found!"
-        exit 1
-    fi
-}
-
-# Check that all model directories exist
-print_section "🔍 Checking Model Directories"
-check_directory "1-PASSING-YARDS"
-check_directory "2-RECEIVING-YARDS" 
-check_directory "3-RUSHING-YARDS"
-echo "✅ All model directories found"
 
 # Clean up existing predictions for this specific week only
 print_section "🧹 Cleaning Week $WEEK Predictions"
