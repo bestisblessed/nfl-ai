@@ -389,10 +389,10 @@ with open(csv_file_path, 'a', newline='') as csvfile:
                         scores = [col.text.strip() for col in cols[2:]]
                         scores += [''] * (len(headers) - 2 - len(scores))
                         score_writer.writerow([url, team_name] + scores)
-                time.sleep(2)
+                time.sleep(2.5)
             except Exception as e:
                 print(f"Error scraping {url}: {e}")
-            time.sleep(2)
+            time.sleep(2.5)
 print(f"Scraping complete. The data has been saved to {csv_file_path}.")
 
 
@@ -473,7 +473,7 @@ for year_to_scrape in range(2025, 2026):
                             time.sleep(2 ** attempt)
                         else:
                             break
-                time.sleep(2)
+                time.sleep(2.5)
     print(f"Scraping completed for {year_to_scrape}. Scoring data saved to {output_filename}.")
 
 
@@ -663,7 +663,7 @@ for year in range(2025, 2026):
                     row_data.append(name)  
                     playoff_game_logs.append(row_data)
                 all_team_game_logs.extend(playoff_game_logs)
-        sleep(2)  # Increased delay to avoid rate limiting  
+        sleep(2.5)  # Increased delay to avoid rate limiting  
     with open(team_file, mode='w', newline='', encoding='utf-8') as file:
         writer = csv.writer(file)
         writer.writerow(team_game_logs_headers + ['team_name'])
@@ -913,7 +913,7 @@ for year in range(2018, 2025):
             row_data.extend([td.text.strip() for td in tr.find_all('td')])  
             row_data.append(abbreviation)  
             all_team_stats.append(row_data)
-        sleep(2)  # Increased delay to avoid rate limiting  
+        sleep(2.5)  # Increased delay to avoid rate limiting  
         # sleep(5)  # Increased delay to avoid rate limiting  
     with open(output_file, mode='w', newline='', encoding='utf-8') as file:
         writer = csv.writer(file)
@@ -1089,7 +1089,7 @@ for year in range(2025, 2026):
         table = soup.find('table', {'id': 'team_conversions'})
         if table is None:
             print(f'Team Conversions table not found on page {url} for {name} in {year}')
-            sleep(2)
+            sleep(2.5)
             continue
         all_conversions = []
         tbody = table.find('tbody')
@@ -1245,7 +1245,7 @@ for year_to_scrape in range(2025, 2026):
                             time.sleep(2 ** attempt)
                         else:
                             break
-                time.sleep(2)
+                time.sleep(2.5)
     print(f"Scraping completed for {year_to_scrape}. Data saved to {output_filename}.")
 
 
@@ -1400,7 +1400,7 @@ for year_to_scrape in range(2025, 2026):
                             time.sleep(2 ** attempt)
                         else:
                             break
-                time.sleep(2)
+                time.sleep(2.5)
     print(f"Scraping completed for {year_to_scrape}. Data saved to {output_filename}.")
 
 # df = pd.read_csv('./data/defense-game-logs/all_defense_2018.csv')
