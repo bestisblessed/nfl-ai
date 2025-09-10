@@ -152,13 +152,7 @@ df_selected.to_csv('./data/games.csv', index=False)
 dataframes = []
 for year in range(2025, 2026):
     file_path = os.path.join('./data/player-stats/', f"player_stats_{year}.csv")
-    if os.path.exists(file_path):
-        print(f"Skipping download for {year}, file exists: {file_path}")
-        df = pd.read_csv(file_path)
-        if 'opponent_team' in df.columns:
-            df = df.drop(columns=['opponent_team'])
-        dataframes.append(df)
-        continue
+    # Always download 2025 player stats even if file exists
     url = f"https://github.com/nflverse/nflverse-data/releases/download/player_stats/player_stats_{year}.csv"
     response = requests.get(url)
     if response.ok:
@@ -247,9 +241,7 @@ print("Player stats saved to 'PlayerStats' table in nfl.db")
 ##### Create 'Rosters' in nfl.db (2018-2025) #####
 for year in range(2025, 2026):
     file_path = f"./data/rosters/roster_{year}.csv"
-    if os.path.exists(file_path):
-        print(f"Skipping download for {year}, file exists.")
-        continue
+    # Always download 2025 roster data even if it exists
     url = f"https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_{year}.csv"
     response = requests.get(url)
     if response.status_code == 200:
@@ -585,9 +577,7 @@ opponent_game_logs_headers = [
 for year in range(2025, 2026):
     team_file = f'./data/SR-game-logs/all_teams_game_logs_{year}.csv'
     opponent_file = f'./data/SR-opponent-game-logs/all_teams_opponent_game_logs_{year}.csv'
-    if os.path.exists(team_file) and os.path.exists(opponent_file):
-        print(f"Skipping year {year}, files already exist.")
-        continue
+    # Always process 2025 team game logs even if files exist
     all_team_game_logs = []  
     all_opponent_game_logs = []
     for team in teams:
@@ -1088,9 +1078,7 @@ for year in range(2025, 2026):
     for team in teams:
         abbreviation, name = team
         team_file = f'{data_dir}/{abbreviation}_{year}_team_conversions.csv'
-        if os.path.exists(team_file):
-            print(f"Skipping {name} for year {year}, file exists.")
-            continue
+        # Always process 2025 team conversions even if file exists
         print(f'Processing {name} for the year {year}')  
         url = f'https://www.pro-football-reference.com/teams/{abbreviation}/{year}.htm'
         response = requests.get(url)
