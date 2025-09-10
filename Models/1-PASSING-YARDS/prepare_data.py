@@ -27,6 +27,17 @@ df = df.rename(columns={
     "pass_yds": "pass_yards",
 })
 
+# Fix specific name mismatches
+df.loc[df['player_name'] == 'Michael Penix', 'player_name'] = 'Michael Penix Jr.'
+
+# Auto-set QB position for starting QBs (from starting_qbs_2025.csv)
+starting_qbs = pd.read_csv("data/starting_qbs_2025.csv")
+for _, qb in starting_qbs.iterrows():
+    team = qb['team']
+    qb_name = qb['starting_qb']
+    # Set position to QB for this player on this team
+    df.loc[(df['team'] == team) & (df['player_name'] == qb_name), 'position'] = 'QB'
+
 # Keep only QB position for passing yards
 if "position" in df.columns:
     df = df[df["position"].isin(["QB"])]
