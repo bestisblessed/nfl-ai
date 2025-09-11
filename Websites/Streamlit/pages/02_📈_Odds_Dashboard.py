@@ -143,10 +143,10 @@ for _, game in games_with_sufficient_data.iterrows():
     formatted_time = game['time'].replace('splits', '').strip().replace('pm', 'PM').replace('am', 'AM')
     
     # Game Date - half size of title
-    st.markdown(f"<p style='font-size: 18px; margin: 5px 0;'>📅 {formatted_date}</p>", unsafe_allow_html=True)
+    st.markdown(f"<p style='font-size: 18px; margin: 5px 0;'>📅 <strong>{formatted_date}</strong></p>", unsafe_allow_html=True)
     
     # Game Time - bigger size
-    st.markdown(f"<p style='font-size: 16px; margin: 5px 0;'>🕐 {formatted_time}</p>", unsafe_allow_html=True)
+    st.markdown(f"<p style='font-size: 16px; margin: 5px 0;'>🕐 <strong>{formatted_time}</strong></p>", unsafe_allow_html=True)
     st.write("")
     df = pd.DataFrame({
         "Team": [game['teams'][0], game['teams'][1]],
