@@ -1,37 +1,95 @@
 file1,file2,game_date,game_time,matchup,sportsbook,odds_before,odds_after,team_1,team_2,team1_odds_before,team2_odds_before,team1_odds_after,team2_odds_after,time_before,time_after
-nfl_odds_vsin_20250112_0804.json,nfl_odds_vsin_20250112_0807.json,"Sun,January 12th","9:00 PM
- Splits",Wash Commanders vs  Tampa Bay Buccaneers,Circa,+3 -110 | -3 -110,-2.5 -115 | +2.5 -105,Wash Commanders,Tampa Bay Buccaneers,+3,-3,-2.5,2.5,Jan 12 8:04AM,Jan 12 8:07AM
-nfl_odds_vsin_20250112_0913.json,nfl_odds_vsin_20250112_0916.json,"Sun,January 12th","2:00 PM
- Splits",Denver Broncos vs  Buffalo Bills,Circa,+8.5 -115 | -8.5 -105,+8 -110 | -8 -110,Denver Broncos,Buffalo Bills,+8.5,-8.5,8.0,-8.0,Jan 12 9:13AM,Jan 12 9:16AM
-nfl_odds_vsin_20250112_0925.json,nfl_odds_vsin_20250112_0928.json,"Mon,January 13th","9:00 PM
- Splits",Minnesota Vikings vs  Los Angeles Rams,Circa,-2.5 -115 | +2.5 -105,-2.5 -110 | +2.5 -110,Minnesota Vikings,Los Angeles Rams,-2.5,+2.5,-2.5,2.5,Jan 12 9:25AM,Jan 12 9:28AM
-nfl_odds_vsin_20250112_1049.json,nfl_odds_vsin_20250112_1052.json,"Sun,January 12th","2:00 PM
- Splits",Denver Broncos vs  Buffalo Bills,Circa,+8 -110 | -8 -110,+7.5 -110 | -7.5 -110,Denver Broncos,Buffalo Bills,+8,-8,7.5,-7.5,Jan 12 10:49AM,Jan 12 10:52AM
-nfl_odds_vsin_20250112_1219.json,nfl_odds_vsin_20250112_1222.json,"Sun,January 12th","2:00 PM
- Splits",Denver Broncos vs  Buffalo Bills,Circa,+7.5 -110 | -7.5 -110,+7.5 -112 | -7.5 -108,Denver Broncos,Buffalo Bills,+7.5,-7.5,7.5,-7.5,Jan 12 12:19PM,Jan 12 12:22PM
-nfl_odds_vsin_20250112_1258.json,nfl_odds_vsin_20250112_1301.json,"Sun,January 12th","2:00 PM
- Splits",Denver Broncos vs  Buffalo Bills,Circa,+7.5 -112 | -7.5 -108,+7.5 -102 | -7.5 -118,Denver Broncos,Buffalo Bills,+7.5,-7.5,7.5,-7.5,Jan 12 12:58PM,Jan 12 1:01PM
-nfl_odds_vsin_20250112_1258.json,nfl_odds_vsin_20250112_1301.json,"Sun,January 12th","5:30 PM
- Splits",Green Bay Packers vs  Philadelphia Eagles,Circa,+5 -110 | -5 -110,+6 -110 | -6 -110,Green Bay Packers,Philadelphia Eagles,+5,-5,6.0,-6.0,Jan 12 12:58PM,Jan 12 1:01PM
-nfl_odds_vsin_20250112_1304.json,nfl_odds_vsin_20250112_1307.json,"Sun,January 12th","2:00 PM
- Splits",Denver Broncos vs  Buffalo Bills,Circa,+7.5 -102 | -7.5 -118,+7.5 -108 | -7.5 -112,Denver Broncos,Buffalo Bills,+7.5,-7.5,7.5,-7.5,Jan 12 1:04PM,Jan 12 1:07PM
-nfl_odds_vsin_20250112_1328.json,nfl_odds_vsin_20250112_1331.json,"Sun,January 12th","5:30 PM
- Splits",Green Bay Packers vs  Philadelphia Eagles,Circa,+6 -110 | -6 -110,+5.5 -110 | -5.5 -110,Green Bay Packers,Philadelphia Eagles,+6,-6,5.5,-5.5,Jan 12 1:28PM,Jan 12 1:31PM
-nfl_odds_vsin_20250112_1625.json,nfl_odds_vsin_20250112_1628.json,"Sun,January 12th","5:30 PM
- Splits",Green Bay Packers vs  Philadelphia Eagles,Circa,+5.5 -110 | -5.5 -110,+5 -110 | -5 -110,Green Bay Packers,Philadelphia Eagles,+5.5,-5.5,5.0,-5.0,Jan 12 4:25PM,Jan 12 4:28PM
-nfl_odds_vsin_20250112_1640.json,nfl_odds_vsin_20250112_1643.json,"Sun,January 12th","5:40 PM
- Splits",Green Bay Packers vs  Philadelphia Eagles,Circa,+5 -115 | -5 -105,+5 -117 | -5 -103,Green Bay Packers,Philadelphia Eagles,+5,-5,5.0,-5.0,Jan 12 4:40PM,Jan 12 4:43PM
-nfl_odds_vsin_20250112_1704.json,nfl_odds_vsin_20250112_1707.json,"Sat,January 18th","5:30 PM
- Splits",Houston Texans vs  Kansas City Chiefs,Circa,- | -,+23.5 -110 | -23.5 -110,Houston Texans,Kansas City Chiefs,-,-,23.5,-23.5,Jan 12 5:04PM,Jan 12 5:07PM
-nfl_odds_vsin_20250112_1719.json,nfl_odds_vsin_20250112_1722.json,"Sat,January 18th","5:30 PM
- Splits",Houston Texans vs  Kansas City Chiefs,Circa,+23.5 -110 | -23.5 -110,+8 -110 | -8 -110,Houston Texans,Kansas City Chiefs,+23.5,-23.5,8.0,-8.0,Jan 12 5:19PM,Jan 12 5:22PM
-nfl_odds_vsin_20250112_1719.json,nfl_odds_vsin_20250112_1722.json,"Sun,January 19th","7:30 PM
- Splits",Baltimore Ravens vs  Buffalo Bills,Circa,- | -,+1 -110 | -1 -110,Baltimore Ravens,Buffalo Bills,-,-,1.0,-1.0,Jan 12 5:19PM,Jan 12 5:22PM
-nfl_odds_vsin_20250112_1819.json,nfl_odds_vsin_20250112_1822.json,"Sun,January 12th","9:00 PM
- Splits",Wash Commanders vs  Tampa Bay Buccaneers,Circa,+3 -110 | -3 -110,+3 -105 | -3 -115,Wash Commanders,Tampa Bay Buccaneers,+3,-3,3.0,-3.0,Jan 12 6:19PM,Jan 12 6:22PM
-nfl_odds_vsin_20250112_2004.json,nfl_odds_vsin_20250112_2007.json,"Sun,January 12th","9:00 PM
- Splits",Wash Commanders vs  Tampa Bay Buccaneers,Circa,+3 -105 | -3 -115,+3 -110 | -3 -110,Wash Commanders,Tampa Bay Buccaneers,+3,-3,3.0,-3.0,Jan 12 8:04PM,Jan 12 8:07PM
-nfl_odds_vsin_20250112_2334.json,nfl_odds_vsin_20250112_2337.json,"Sat,January 18th","9:15 PM
- Splits",Wash Commanders vs  Detroit Lions,Circa,- | -,+8.5 -110 | -8.5 -110,Wash Commanders,Detroit Lions,-,-,8.5,-8.5,Jan 12 11:34PM,Jan 12 11:37PM
-nfl_odds_vsin_20250113_1125.json,nfl_odds_vsin_20250113_1128.json,"Mon,January 13th","9:00 PM
- Splits",Minnesota Vikings vs  Los Angeles Rams,Circa,-2.5 -110 | +2.5 -110,-2 -110 | +2 -110,Minnesota Vikings,Los Angeles Rams,-2.5,+2.5,-2.0,2.0,Jan 13 11:25AM,Jan 13 11:28AM
+nfl_odds_vsin_20250908_0002.json,nfl_odds_vsin_20250908_0006.json,"Sun,September 14th","1:00 PM
+ Splits",Chicago Bears vs  Detroit Lions,Circa,+4 -110 | -4 -110,+5 -110 | -5 -110,Chicago Bears,Detroit Lions,+4,-4,+5,-5,Sep 08 12:02AM,Sep 08 12:06AM
+nfl_odds_vsin_20250908_0002.json,nfl_odds_vsin_20250908_0006.json,"Sun,September 14th","8:20 PM
+ Splits",Atlanta Falcons vs  Minnesota Vikings,Circa,+5.5 -110 | -5.5 -110,+4.5 -110 | -4.5 -110,Atlanta Falcons,Minnesota Vikings,+5.5,-5.5,+4.5,-4.5,Sep 08 12:02AM,Sep 08 12:06AM
+nfl_odds_vsin_20250908_0014.json,nfl_odds_vsin_20250908_0018.json,"Mon,September 8th","8:15 PM
+ Splits",Minnesota Vikings vs  Chicago Bears,Circa,-2.5 -110 | +2.5 -110,-2.5 -105 | +2.5 -115,Minnesota Vikings,Chicago Bears,-2.5,+2.5,-2.5,+2.5,Sep 08 12:14AM,Sep 08 12:18AM
+nfl_odds_vsin_20250908_0102.json,nfl_odds_vsin_20250908_0106.json,"Sun,September 14th","1:00 PM
+ Splits",Los Angeles Rams vs  Tennessee Titans,Circa,-4.5 -110 | +4.5 -110,-5 -110 | +5 -110,Los Angeles Rams,Tennessee Titans,-4.5,+4.5,-5,+5,Sep 08 1:02AM,Sep 08 1:06AM
+nfl_odds_vsin_20250908_0750.json,nfl_odds_vsin_20250908_0754.json,"Mon,September 8th","8:15 PM
+ Splits",Minnesota Vikings vs  Chicago Bears,Circa,-2.5 -105 | +2.5 -115,-2 -110 | +2 -110,Minnesota Vikings,Chicago Bears,-2.5,+2.5,-2,+2,Sep 08 7:50AM,Sep 08 7:54AM
+nfl_odds_vsin_20250908_0802.json,nfl_odds_vsin_20250908_0806.json,"Sun,September 14th","1:00 PM
+ Splits",New York Giants vs  Dallas Cowboys,Circa,+5 -110 | -5 -110,- | -,New York Giants,Dallas Cowboys,+5,-5,-,-,Sep 08 8:02AM,Sep 08 8:06AM
+nfl_odds_vsin_20250908_0802.json,nfl_odds_vsin_20250908_0806.json,"Sun,September 14th","1:00 PM
+ Splits",Los Angeles Rams vs  Tennessee Titans,Circa,-5 -110 | +5 -110,- | -,Los Angeles Rams,Tennessee Titans,-5,+5,-,-,Sep 08 8:02AM,Sep 08 8:06AM
+nfl_odds_vsin_20250908_0802.json,nfl_odds_vsin_20250908_0806.json,"Sun,September 14th","1:00 PM
+ Splits",Chicago Bears vs  Detroit Lions,Circa,+5 -110 | -5 -110,- | -,Chicago Bears,Detroit Lions,+5,-5,-,-,Sep 08 8:02AM,Sep 08 8:06AM
+nfl_odds_vsin_20250908_0802.json,nfl_odds_vsin_20250908_0806.json,"Sun,September 14th","1:00 PM
+ Splits",Seattle Seahawks vs  Pittsburgh Steelers,Circa,+3 -110 | -3 -110,- | -,Seattle Seahawks,Pittsburgh Steelers,+3,-3,-,-,Sep 08 8:02AM,Sep 08 8:06AM
+nfl_odds_vsin_20250908_0802.json,nfl_odds_vsin_20250908_0806.json,"Sun,September 14th","1:00 PM
+ Splits",San Francisco 49ers vs  New Orleans Saints,Circa,-6 -110 | +6 -110,- | -,San Francisco 49ers,New Orleans Saints,-6,+6,-,-,Sep 08 8:02AM,Sep 08 8:06AM
+nfl_odds_vsin_20250908_0950.json,nfl_odds_vsin_20250908_0954.json,"Mon,September 8th","8:15 PM
+ Splits",Minnesota Vikings vs  Chicago Bears,Circa,-2 -110 | +2 -110,-1.5 -110 | +1.5 -110,Minnesota Vikings,Chicago Bears,-2,+2,-1.5,+1.5,Sep 08 9:50AM,Sep 08 9:54AM
+nfl_odds_vsin_20250908_0950.json,nfl_odds_vsin_20250908_0954.json,"Thu,September 11th","8:15 PM
+ Splits",Wash Commanders vs  Green Bay Packers,Circa,+4 -110 | -4 -110,+3.5 -110 | -3.5 -110,Wash Commanders,Green Bay Packers,+4,-4,+3.5,-3.5,Sep 08 9:50AM,Sep 08 9:54AM
+nfl_odds_vsin_20250908_0950.json,nfl_odds_vsin_20250908_0954.json,"Mon,September 15th","10:00 PM
+ Splits",Los Angeles Chargers vs  Las Vegas Raiders,Circa,-3.5 -110 | +3.5 -110,-3 -110 | +3 -110,Los Angeles Chargers,Las Vegas Raiders,-3.5,+3.5,-3,+3,Sep 08 9:50AM,Sep 08 9:54AM
+nfl_odds_vsin_20250908_1002.json,nfl_odds_vsin_20250908_1006.json,"Sun,September 14th","1:00 PM
+ Splits",Los Angeles Rams vs  Tennessee Titans,Circa,-5 -110 | +5 -110,-6 -110 | +6 -110,Los Angeles Rams,Tennessee Titans,-5,+5,-6,+6,Sep 08 10:02AM,Sep 08 10:06AM
+nfl_odds_vsin_20250908_1026.json,nfl_odds_vsin_20250908_1030.json,"Sun,September 14th","4:25 PM
+ Splits",Philadelphia Eagles vs  Kansas City Chiefs,Circa,PK -110 | PK -110,-1.5 -110 | +1.5 -110,Philadelphia Eagles,Kansas City Chiefs,PK,PK,-1.5,+1.5,Sep 08 10:26AM,Sep 08 10:30AM
+nfl_odds_vsin_20250908_1050.json,nfl_odds_vsin_20250908_1054.json,"Mon,September 15th","10:00 PM
+ Splits",Los Angeles Chargers vs  Las Vegas Raiders,Circa,-3 -110 | +3 -110,-3.5 +100 | +3.5 -120,Los Angeles Chargers,Las Vegas Raiders,-3,+3,-3.5,+3.5,Sep 08 10:50AM,Sep 08 10:54AM
+nfl_odds_vsin_20250908_1102.json,nfl_odds_vsin_20250908_1106.json,"Sun,September 14th","1:00 PM
+ Splits",Cleveland Browns vs  Baltimore Ravens,Circa,- | -,+12 -110 | -12 -110,Cleveland Browns,Baltimore Ravens,-,-,+12,-12,Sep 08 11:02AM,Sep 08 11:06AM
+nfl_odds_vsin_20250908_1102.json,nfl_odds_vsin_20250908_1106.json,"Sun,September 14th","1:00 PM
+ Splits",Buffalo Bills vs  New York Jets,Circa,- | -,-7 -105 | +7 -115,Buffalo Bills,New York Jets,-,-,-7,+7,Sep 08 11:02AM,Sep 08 11:06AM
+nfl_odds_vsin_20250908_1102.json,nfl_odds_vsin_20250908_1106.json,"Sun,September 14th","1:00 PM
+ Splits",Chicago Bears vs  Detroit Lions,Circa,+5 -110 | -5 -110,+5.5 -110 | -5.5 -110,Chicago Bears,Detroit Lions,+5,-5,+5.5,-5.5,Sep 08 11:02AM,Sep 08 11:06AM
+nfl_odds_vsin_20250908_1102.json,nfl_odds_vsin_20250908_1106.json,"Sun,September 14th","4:05 PM
+ Splits",Denver Broncos vs  Indianapolis Colts,Circa,-2.5 -110 | +2.5 -110,-2 -110 | +2 -110,Denver Broncos,Indianapolis Colts,-2.5,+2.5,-2,+2,Sep 08 11:02AM,Sep 08 11:06AM
+nfl_odds_vsin_20250908_1102.json,nfl_odds_vsin_20250908_1106.json,"Sun,September 14th","4:25 PM
+ Splits",Philadelphia Eagles vs  Kansas City Chiefs,Circa,-1.5 -110 | +1.5 -110,-1 -110 | +1 -110,Philadelphia Eagles,Kansas City Chiefs,-1.5,+1.5,-1,+1,Sep 08 11:02AM,Sep 08 11:06AM
+nfl_odds_vsin_20250908_1138.json,nfl_odds_vsin_20250908_1142.json,"Mon,September 15th","7:00 PM
+ Splits",Tampa Bay Buccaneers vs  Houston Texans,Circa,+2 -110 | -2 -110,+3 -120 | -3 +100,Tampa Bay Buccaneers,Houston Texans,+2,-2,+3,-3,Sep 08 11:38AM,Sep 08 11:42AM
+nfl_odds_vsin_20250908_1226.json,nfl_odds_vsin_20250908_1230.json,"Sun,September 14th","1:00 PM
+ Splits",New York Giants vs  Dallas Cowboys,Circa,+5 -110 | -5 -110,+6 -110 | -6 -110,New York Giants,Dallas Cowboys,+5,-5,+6,-6,Sep 08 12:26PM,Sep 08 12:30PM
+nfl_odds_vsin_20250908_1726.json,nfl_odds_vsin_20250908_1730.json,"Mon,September 8th","8:15 PM
+ Splits",Minnesota Vikings vs  Chicago Bears,Circa,-1.5 -110 | +1.5 -110,-1 -110 | +1 -110,Minnesota Vikings,Chicago Bears,-1.5,+1.5,-1,+1,Sep 08 5:26PM,Sep 08 5:30PM
+nfl_odds_vsin_20250908_1803.json,nfl_odds_vsin_20250908_1806.json,"Sun,September 14th","1:00 PM
+ Splits",Los Angeles Rams vs  Tennessee Titans,Circa,-6 -110 | +6 -110,-5.5 -110 | +5.5 -110,Los Angeles Rams,Tennessee Titans,-6,+6,-5.5,+5.5,Sep 08 6:03PM,Sep 08 6:06PM
+nfl_odds_vsin_20250908_1838.json,nfl_odds_vsin_20250908_1842.json,"Mon,September 8th","8:15 PM
+ Splits",Minnesota Vikings vs  Chicago Bears,Circa,-1 -110 | +1 -110,PK -110 | PK -110,Minnesota Vikings,Chicago Bears,-1,+1,PK,PK,Sep 08 6:38PM,Sep 08 6:42PM
+nfl_odds_vsin_20250908_1850.json,nfl_odds_vsin_20250908_1854.json,"Sun,September 14th","1:00 PM
+ Splits",San Francisco 49ers vs  New Orleans Saints,Circa,-6 -110 | +6 -110,-4.5 -110 | +4.5 -110,San Francisco 49ers,New Orleans Saints,-6,+6,-4.5,+4.5,Sep 08 6:50PM,Sep 08 6:54PM
+nfl_odds_vsin_20250908_2026.json,nfl_odds_vsin_20250908_2030.json,"Sun,September 14th","1:00 PM
+ Splits",Chicago Bears vs  Detroit Lions,Circa,+5.5 -110 | -5.5 -110,- | -,Chicago Bears,Detroit Lions,+5.5,-5.5,-,-,Sep 08 8:26PM,Sep 08 8:30PM
+nfl_odds_vsin_20250908_2026.json,nfl_odds_vsin_20250908_2030.json,"Sun,September 14th","8:20 PM
+ Splits",Atlanta Falcons vs  Minnesota Vikings,Circa,+4.5 -110 | -4.5 -110,- | -,Atlanta Falcons,Minnesota Vikings,+4.5,-4.5,-,-,Sep 08 8:26PM,Sep 08 8:30PM
+nfl_odds_vsin_20250909_0050.json,nfl_odds_vsin_20250909_0054.json,"Sun,September 14th","1:00 PM
+ Splits",Los Angeles Rams vs  Tennessee Titans,Circa,-5.5 -110 | +5.5 -110,-6 -105 | +6 -115,Los Angeles Rams,Tennessee Titans,-5.5,+5.5,-6,+6,Sep 09 12:50AM,Sep 09 12:54AM
+nfl_odds_vsin_20250909_0138.json,nfl_odds_vsin_20250910_1210.json,"Mon,September 8th","8:15 PM
+ Splits",Minnesota Vikings vs  Chicago Bears,Circa,PK -110 | PK -110,+3 +100 | -3 -120,Minnesota Vikings,Chicago Bears,PK,PK,+3,-3,Sep 09 1:38AM,Sep 10 12:10PM
+nfl_odds_vsin_20250909_0138.json,nfl_odds_vsin_20250910_1210.json,"Sun,September 14th","1:00 PM
+ Splits",New England Patriots vs  Miami Dolphins,Circa,+1.5 -110 | -1.5 -110,+3.5 -115 | -3.5 -105,New England Patriots,Miami Dolphins,+1.5,-1.5,+3.5,-3.5,Sep 09 1:38AM,Sep 10 12:10PM
+nfl_odds_vsin_20250909_0138.json,nfl_odds_vsin_20250910_1210.json,"Sun,September 14th","1:00 PM
+ Splits",Jacksonville Jaguars vs  Cincinnati Bengals,Circa,+3.5 -115 | -3.5 -105,+11.5 -110 | -11.5 -110,Jacksonville Jaguars,Cincinnati Bengals,+3.5,-3.5,+11.5,-11.5,Sep 09 1:38AM,Sep 10 12:10PM
+nfl_odds_vsin_20250909_0138.json,nfl_odds_vsin_20250910_1210.json,"Sun,September 14th","1:00 PM
+ Splits",Cleveland Browns vs  Baltimore Ravens,Circa,+12 -110 | -12 -110,+6 -110 | -6 -110,Cleveland Browns,Baltimore Ravens,+12,-12,+6,-6,Sep 09 1:38AM,Sep 10 12:10PM
+nfl_odds_vsin_20250909_0138.json,nfl_odds_vsin_20250910_1210.json,"Sun,September 14th","1:00 PM
+ Splits",New York Giants vs  Dallas Cowboys,Circa,+6 -110 | -6 -110,-6 +100 | +6 -120,New York Giants,Dallas Cowboys,+6,-6,-6,+6,Sep 09 1:38AM,Sep 10 12:10PM
+nfl_odds_vsin_20250909_0138.json,nfl_odds_vsin_20250910_1210.json,"Sun,September 14th","1:00 PM
+ Splits",Los Angeles Rams vs  Tennessee Titans,Circa,-6 -105 | +6 -115,-6.5 -115 | +6.5 -105,Los Angeles Rams,Tennessee Titans,-6,+6,-6.5,+6.5,Sep 09 1:38AM,Sep 10 12:10PM
+nfl_odds_vsin_20250909_0138.json,nfl_odds_vsin_20250910_1210.json,"Sun,September 14th","1:00 PM
+ Splits",Buffalo Bills vs  New York Jets,Circa,-7 -105 | +7 -115,+5.5 -110 | -5.5 -110,Buffalo Bills,New York Jets,-7,+7,+5.5,-5.5,Sep 09 1:38AM,Sep 10 12:10PM
+nfl_odds_vsin_20250909_0138.json,nfl_odds_vsin_20250910_1210.json,"Sun,September 14th","1:00 PM
+ Splits",Chicago Bears vs  Detroit Lions,Circa,- | -,+3 -115 | -3 -105,Chicago Bears,Detroit Lions,-,-,+3,-3,Sep 09 1:38AM,Sep 10 12:10PM
+nfl_odds_vsin_20250909_0138.json,nfl_odds_vsin_20250910_1210.json,"Sun,September 14th","1:00 PM
+ Splits",Seattle Seahawks vs  Pittsburgh Steelers,Circa,+3 -110 | -3 -110,-4.5 -110 | +4.5 -110,Seattle Seahawks,Pittsburgh Steelers,+3,-3,-4.5,+4.5,Sep 09 1:38AM,Sep 10 12:10PM
+nfl_odds_vsin_20250909_0138.json,nfl_odds_vsin_20250910_1210.json,"Sun,September 14th","4:05 PM
+ Splits",Carolina Panthers vs  Arizona Cardinals,Circa,+7 -115 | -7 -105,-2 -110 | +2 -110,Carolina Panthers,Arizona Cardinals,+7,-7,-2,+2,Sep 09 1:38AM,Sep 10 12:10PM
+nfl_odds_vsin_20250910_1602.json,nfl_odds_vsin_20250910_1606.json,"Sun,September 14th","1:00 PM
+ Splits",San Francisco 49ers vs  New Orleans Saints,Circa,-4.5 -110 | +4.5 -110,-3 -110 | +3 -110,San Francisco 49ers,New Orleans Saints,-4.5,+4.5,-3,+3,Sep 10 4:02PM,Sep 10 4:06PM
+nfl_odds_vsin_20250910_1628.json,nfl_odds_vsin_20250910_1630.json,"Sun,September 14th","4:05 PM
+ Splits",Denver Broncos vs  Indianapolis Colts,Circa,-2 -110 | +2 -110,-1 -110 | +1 -110,Denver Broncos,Indianapolis Colts,-2,+2,-1,+1,Sep 10 4:28PM,Sep 10 4:30PM
+nfl_odds_vsin_20250910_1702.json,nfl_odds_vsin_20250910_1706.json,"Sun,September 14th","1:00 PM
+ Splits",Chicago Bears vs  Detroit Lions,Circa,+5.5 -110 | -5.5 -110,+6 -110 | -6 -110,Chicago Bears,Detroit Lions,+5.5,-5.5,+6,-6,Sep 10 5:02PM,Sep 10 5:06PM
+nfl_odds_vsin_20250910_1702.json,nfl_odds_vsin_20250910_1706.json,"Sun,September 14th","8:20 PM
+ Splits",Atlanta Falcons vs  Minnesota Vikings,Circa,+4 -110 | -4 -110,+3.5 -110 | -3.5 -110,Atlanta Falcons,Minnesota Vikings,+4,-4,+3.5,-3.5,Sep 10 5:02PM,Sep 10 5:06PM
+nfl_odds_vsin_20250910_1806.json,nfl_odds_vsin_20250910_1811.json,"Sun,September 14th","1:00 PM
+ Splits",Buffalo Bills vs  New York Jets,Circa,-6.5 -115 | +6.5 -105,-6.5 -110 | +6.5 -110,Buffalo Bills,New York Jets,-6.5,+6.5,-6.5,+6.5,Sep 10 6:06PM,Sep 10 6:11PM
+nfl_odds_vsin_20250910_2030.json,nfl_odds_vsin_20250910_2034.json,"Sun,September 14th","1:00 PM
+ Splits",New York Giants vs  Dallas Cowboys,Circa,+6 -110 | -6 -110,+5.5 -110 | -5.5 -110,New York Giants,Dallas Cowboys,+6,-6,+5.5,-5.5,Sep 10 8:30PM,Sep 10 8:34PM
+nfl_odds_vsin_20250910_2042.json,nfl_odds_vsin_20250910_2050.json,"Sun,September 14th","1:00 PM
+ Splits",New York Giants vs  Dallas Cowboys,Circa,+5.5 -110 | -5.5 -110,+5 -110 | -5 -110,New York Giants,Dallas Cowboys,+5.5,-5.5,+5,-5,Sep 10 8:42PM,Sep 10 8:50PM
