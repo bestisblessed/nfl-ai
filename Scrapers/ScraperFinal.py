@@ -1128,7 +1128,7 @@ team_conversions_headers = [
     'Player', '3DAtt', '3DConv', '4DAtt', '4DConv', '4D%', 'RZAtt', 'RZTD', 'RZPct', 'Team'
     # 'Player', '3DAtt', '3DConv', '3D%', '4DAtt', '4DConv', '4D%', 'RZAtt', 'RZTD', 'RZPct', 'Team'
 ]
-for year in range(2018, 2026):
+for year in range(2025, 2026):
     for team in teams:
         abbreviation, name = team
         team_file = f'{data_dir}/{abbreviation}_{year}_team_conversions.csv'
