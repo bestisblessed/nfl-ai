@@ -5,9 +5,26 @@ import json
 import re
 from streamlit_modal import Modal
 import matplotlib.pyplot as plt
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# Load data files directly
+csv_file_path_odds = os.path.join(BASE_DIR, 'data/odds/nfl_odds_movements.csv')
+csv_file_path_circa = os.path.join(BASE_DIR, 'data/odds/nfl_odds_movements_circa.csv')
+
+try:
+    df_nfl_odds_movements = pd.read_csv(csv_file_path_odds)
+except FileNotFoundError:
+    st.error(f"File not found: {csv_file_path_odds}. Please ensure the file exists.")
+    df_nfl_odds_movements = pd.DataFrame()
+
+try:
+    df_nfl_odds_movements_circa = pd.read_csv(csv_file_path_circa)
+except FileNotFoundError:
+    st.error(f"File not found: {csv_file_path_circa}. Please ensure the file exists.")
+    df_nfl_odds_movements_circa = pd.DataFrame()
+
 st.title('Odds Dashboard')
-df_nfl_odds_movements = st.session_state.get('df_nfl_odds_movements', pd.DataFrame())
-df_nfl_odds_movements_circa = st.session_state.get('df_nfl_odds_movements_circa', pd.DataFrame())
 st.divider()
 # BLACKLIST_TEAMS = ["Minnesota Vikings", "Los Angeles Rams"]
 # st.write(f"*Blacklisted Teams:* {', '.join(BLACKLIST_TEAMS)}")
@@ -71,7 +88,7 @@ games_df = pd.DataFrame(games_data)
 # Load upcoming games and filter to only show those matchups
 upcoming_matchups = []  # Initialize empty list
 try:
-    df_upcoming_games = pd.read_csv('upcoming_games.csv')
+    df_upcoming_games = pd.read_csv(os.path.join(BASE_DIR, 'upcoming_games.csv'))
     
     # Team abbreviation to full name mapping
     team_mapping = {
