@@ -266,6 +266,13 @@ if os.path.exists('./data/all_defense-game-logs.csv'):
         defense_df.to_sql('DefenseGameLogs', conn, if_exists='replace', index=False)
     print(f"✅ DefenseGameLogs table created with {len(defense_df)} records")
 
+# Schedule & Game Results
+if os.path.exists('./data/SR-schedule-and-game-results/all_teams_schedule_and_game_results_merged.csv'):
+    schedule_df = pd.read_csv('./data/SR-schedule-and-game-results/all_teams_schedule_and_game_results_merged.csv')
+    with sqlite3.connect(db_path) as conn:
+        schedule_df.to_sql('ScheduleGameResults', conn, if_exists='replace', index=False)
+    print(f"✅ ScheduleGameResults table created with {len(schedule_df)} records")
+
 ##### Create PFR final data export #####
 print("\n5. Creating PFR final data export...")
 current_date = datetime.now().strftime("%b_%d_%Y")
@@ -299,7 +306,8 @@ with sqlite3.connect(db_path) as conn:
         'TeamStats': 'TeamStats',
         'TeamConversions': 'TeamConversions',
         'PassingRushingReceiving': 'PassingRushingReceiving',
-        'DefenseGameLogs': 'DefenseGameLogs'
+        'DefenseGameLogs': 'DefenseGameLogs',
+        'ScheduleGameResults': 'ScheduleGameResults'
     }
     
     for table_name, export_name in table_mappings.items():
@@ -324,3 +332,4 @@ print("  • TeamStats - Team statistics and rankings")
 print("  • TeamConversions - 3rd/4th down efficiency")
 print("  • PassingRushingReceiving - Offensive player stats")
 print("  • DefenseGameLogs - Defensive player stats")
+print("  • ScheduleGameResults - Schedule and game results data")
