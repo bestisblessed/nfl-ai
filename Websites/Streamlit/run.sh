@@ -3,6 +3,7 @@
 python data.py
 mkdir -p data/projections/
 cp /Users/td/Code/nfl-ai/Models/0-FINAL-REPORTS/* data/projections/
+cp /Users/td/Code/nfl-ai/Models/upcoming_games.csv .
 
 # python nfl_odds.py
 # cp ../../odds-monitoring/DASHBOARD/data/nfl_odds_movements.csv data/odds/
