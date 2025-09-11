@@ -7,6 +7,8 @@ from datetime import datetime, timedelta
 import os
 import glob
 
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
 # Page configuration
 st.set_page_config(
     page_title="🔮 NFL Projections",
@@ -78,13 +80,13 @@ st.markdown("""
 @st.cache_data
 def load_projections_data():
     """Load and process projections data from CSV files"""
-    projections_dir = "data/projections"
+    projections_dir = os.path.join(BASE_DIR, "data/projections")
     
     # Find all projection files
-    projection_files = glob.glob(f"{projections_dir}/week*_all_props_summary.csv")
+    projection_files = glob.glob(os.path.join(projections_dir, "week*_all_props_summary.csv"))
     
     if not projection_files:
-        st.error("No projection files found in data/projections/")
+        st.error(f"No projection files found in {projections_dir}")
         return None, []
     
     # Extract available weeks
@@ -101,7 +103,7 @@ def load_projections_data():
 @st.cache_data
 def get_week_projections(week_num):
     """Get projections data for a specific week"""
-    file_path = f"data/projections/week{week_num}_all_props_summary.csv"
+    file_path = os.path.join(BASE_DIR, f"data/projections/week{week_num}_all_props_summary.csv")
     
     if not os.path.exists(file_path):
         return None
