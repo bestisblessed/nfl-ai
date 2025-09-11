@@ -1,0 +1,24 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 12,1:00PM ET,boxscore,W,OT,1-0,,Minnesota Vikings,27,24,20,366,217,149,,24,403,336,67,1,6.16,-2.90,-1.79
+2,Sun,September 19,1:00PM ET,boxscore,L,,1-1,@,Chicago Bears,17,20,14,248,179,69,4,16,206,83,123,1,-16.14,11.15,1.51
+3,Sun,September 26,1:00PM ET,boxscore,W,,2-1,@,Pittsburgh Steelers,24,10,12,268,172,96,1,21,342,297,45,2,0.17,8.46,6.09
+4,Thu,September 30,8:20PM ET,boxscore,W,,3-1,,Jacksonville Jaguars,24,21,21,420,342,78,,21,341,202,139,,20.93,-12.38,-6.50
+5,Sun,October 10,1:00PM ET,boxscore,L,OT,3-2,,Green Bay Packers,22,25,18,367,264,103,2,21,466,333,133,1,3.92,-9.92,3.51
+6,Sun,October 17,1:00PM ET,boxscore,W,,4-2,@,Detroit Lions,34,11,20,398,256,142,1,15,228,192,36,1,16.60,8.89,-0.46
+7,Sun,October 24,1:00PM ET,boxscore,W,,5-2,@,Baltimore Ravens,41,17,19,520,409,111,1,20,393,278,115,,19.58,2.69,-2.13
+8,Sun,October 31,1:00PM ET,boxscore,L,,5-3,@,New York Jets,31,34,18,318,277,41,1,32,511,414,97,3,3.26,-8.01,4.33
+9,Sun,November 7,1:00PM ET,boxscore,L,,5-4,,Cleveland Browns,16,41,25,348,263,85,3,14,361,208,153,,-15.34,-14.44,4.50
+10,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+11,Sun,November 21,4:05PM ET,boxscore,W,,6-4,@,Las Vegas Raiders,32,13,23,288,129,159,1,13,278,206,72,2,6.50,6.44,5.53
+12,Sun,November 28,1:00PM ET,boxscore,W,,7-4,,Pittsburgh Steelers,41,10,25,370,172,198,1,16,301,250,51,3,14.42,15.89,-0.88
+13,Sun,December 5,1:00PM ET,boxscore,L,,7-5,,Los Angeles Chargers,22,41,21,356,260,96,4,18,363,284,79,3,-12.31,-1.98,-1.02
+14,Sun,December 12,1:00PM ET,boxscore,L,OT,7-6,,San Francisco 49ers,23,26,22,397,311,86,2,21,355,255,100,,11.63,-4.60,-10.68
+15,Sun,December 19,4:05PM ET,boxscore,W,,8-6,@,Denver Broncos,15,10,12,249,136,113,,19,292,159,133,1,-4.53,7.29,5.22
+16,Sun,December 26,1:00PM ET,boxscore,W,,9-6,,Baltimore Ravens,41,21,33,575,498,77,,21,334,295,39,1,35.73,-8.62,-4.84
+17,Sun,January 2,1:00PM ET,boxscore,W,,10-6,,Kansas City Chiefs,34,31,23,475,415,60,,23,414,259,155,,28.52,-25.13,-1.86
+18,Sun,January 9,1:00PM ET,boxscore,L,,10-7,@,Cleveland Browns,16,21,11,182,103,79,,24,376,171,205,2,-10.26,-6.01,4.58
+,,Playoffs,,,,,,,,,,,,,,,,,,,,,,
+Wild Card,Sat,January 15,4:30PM ET,boxscore,W,,11-7,,Las Vegas Raiders,26,19,18,308,225,83,,23,385,282,103,2,7.92,-3.65,1.81
+Division,Sat,January 22,4:30PM ET,boxscore,W,,12-7,@,Tennessee Titans,19,16,17,345,280,65,1,16,353,213,140,3,-1.17,3.15,4.99
+Conf. Champ.,Sun,January 30,3:00PM ET,boxscore,W,OT,13-7,@,Kansas City Chiefs,27,24,21,359,243,116,1,24,375,236,139,2,8.39,-11.28,-0.28
+SuperBowl,Sun,February 13,6:30PM ET,boxscore,L,,13-8,N,Los Angeles Rams,20,23,15,305,226,79,,17,313,270,43,2,-5.48,-0.42,1.93

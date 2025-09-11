@@ -1,0 +1,21 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 13,4:25PM ET,boxscore,W,,1-0,,Tampa Bay Buccaneers,34,23,18,271,189,82,,23,310,224,86,3,1.98,-0.48,11.57
+2,Mon,September 21,8:15PM ET,boxscore,L,,1-1,@,Las Vegas Raiders,24,34,26,424,312,112,1,28,377,261,116,1,13.97,-22.48,0.31
+3,Sun,September 27,8:20PM ET,boxscore,L,,1-2,,Green Bay Packers,30,37,21,397,275,122,1,24,369,271,98,,14.59,-19.67,-5.23
+4,Sun,October 4,1:00PM ET,boxscore,W,,2-2,@,Detroit Lions,35,29,29,392,228,164,1,18,281,191,90,1,23.24,-11.85,-5.65
+5,Mon,October 12,8:15PM ET,boxscore,W,OT,3-2,,Los Angeles Chargers,30,27,23,408,313,95,1,19,350,239,111,,3.09,-6.80,7.44
+6,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+7,Sun,October 25,1:00PM ET,boxscore,W,,4-2,,Carolina Panthers,27,24,26,415,277,138,1,18,283,246,37,,21.29,-17.99,1.07
+8,Sun,November 1,4:25PM ET,boxscore,W,OT,5-2,@,Chicago Bears,26,23,23,394,272,122,,18,329,233,96,1,6.13,-0.10,-4.30
+9,Sun,November 8,8:20PM ET,boxscore,W,,6-2,@,Tampa Bay Buccaneers,38,3,27,420,282,138,2,13,194,186,8,3,13.73,19.57,-0.26
+10,Sun,November 15,4:25PM ET,boxscore,W,,7-2,,San Francisco 49ers,27,13,17,237,123,114,2,21,281,232,49,4,-2.66,8.03,6.47
+11,Sun,November 22,1:00PM ET,boxscore,W,,8-2,,Atlanta Falcons,24,9,24,376,210,166,1,14,248,196,52,2,12.49,4.08,-8.60
+12,Sun,November 29,4:05PM ET,boxscore,W,,9-2,@,Denver Broncos,31,3,19,292,63,229,1,6,112,12,100,3,4.99,26.81,-4.76
+13,Sun,December 6,1:00PM ET,boxscore,W,,10-2,@,Atlanta Falcons,21,16,23,424,217,207,1,21,332,262,70,1,8.37,0.46,-6.27
+14,Sun,December 13,4:25PM ET,boxscore,L,,10-3,@,Philadelphia Eagles,21,24,20,358,262,96,2,21,413,167,246,1,4.23,-6.77,-1.33
+15,Sun,December 20,4:25PM ET,boxscore,L,,10-4,,Kansas City Chiefs,29,32,15,285,225,60,1,34,411,232,179,1,0.30,-12.26,8.71
+16,Fri,December 25,4:30PM ET,boxscore,W,,11-4,,Minnesota Vikings,52,33,36,583,319,264,2,25,364,274,90,,35.03,-16.70,0.55
+17,Sun,January 3,4:25PM ET,boxscore,W,,12-4,@,Carolina Panthers,33,7,20,347,191,156,,17,320,246,74,5,10.71,14.42,0.09
+,,Playoffs,,,,,,,,,,,,,,,,,,,,,,
+Wild Card,Sun,January 10,4:40PM ET,boxscore,W,,13-4,,Chicago Bears,21,9,27,385,262,123,1,11,239,191,48,,11.98,7.56,-9.21
+Division,Sun,January 17,6:40PM ET,boxscore,L,,13-5,,Tampa Bay Buccaneers,20,30,20,294,190,104,4,20,316,189,127,,-6.52,-5.85,0.63

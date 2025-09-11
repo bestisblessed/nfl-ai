@@ -1,0 +1,22 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Thu,September 5,8:20PM ET,boxscore,L,,0-1,@,Kansas City Chiefs,20,27,25,452,267,185,1,21,353,281,72,1,9.42,-11.81,-2.11
+2,Sun,September 15,1:00PM ET,boxscore,L,,0-2,,Las Vegas Raiders,23,26,21,383,232,151,1,18,260,233,27,1,6.12,0.50,-6.24
+3,Sun,September 22,4:25PM ET,boxscore,W,,1-2,@,Dallas Cowboys,28,25,24,456,182,274,,26,412,361,51,1,20.98,-8.34,-5.94
+4,Sun,September 29,8:20PM ET,boxscore,W,,2-2,,Buffalo Bills,35,10,22,427,156,271,1,12,236,155,81,1,19.69,6.92,-2.37
+5,Sun,October 6,1:00PM ET,boxscore,W,OT,3-2,@,Cincinnati Bengals,41,38,30,520,345,175,1,23,442,371,71,1,24.97,-19.24,-2.47
+6,Sun,October 13,1:00PM ET,boxscore,W,,4-2,,Washington Commanders,30,23,28,484,308,176,1,18,305,253,52,,20.33,-9.50,-3.41
+7,Mon,October 21,8:15PM ET,boxscore,W,,5-2,@,Tampa Bay Buccaneers,41,31,22,508,264,244,1,28,481,356,125,2,23.15,-13.75,0.41
+8,Sun,October 27,1:00PM ET,boxscore,L,,5-3,@,Cleveland Browns,24,29,22,387,263,124,,22,401,321,80,1,9.18,-9.15,-3.48
+9,Sun,November 3,1:00PM ET,boxscore,W,,6-3,,Denver Broncos,41,10,25,396,269,127,,20,319,197,122,1,23.60,7.44,-2.92
+10,Thu,November 7,8:15PM ET,boxscore,W,,7-3,,Cincinnati Bengals,35,34,20,389,290,99,,27,470,421,49,1,18.95,-18.28,4.77
+11,Sun,November 17,1:00PM ET,boxscore,L,,7-4,@,Pittsburgh Steelers,16,18,16,329,205,124,3,18,303,181,122,1,-6.69,14.52,-10.67
+12,Mon,November 25,8:15PM ET,boxscore,W,,8-4,@,Los Angeles Chargers,30,23,19,389,177,212,,19,285,202,83,,17.12,-8.34,-1.62
+13,Sun,December 1,4:25PM ET,boxscore,L,,8-5,,Philadelphia Eagles,19,24,24,372,206,166,,17,252,112,140,,4.59,-3.39,-8.57
+14,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+15,Sun,December 15,1:00PM ET,boxscore,W,,9-5,@,New York Giants,35,14,25,445,275,170,1,19,236,181,55,1,25.89,-2.16,2.10
+16,Sat,December 21,4:30PM ET,boxscore,W,,10-5,,Pittsburgh Steelers,34,17,25,418,198,220,1,19,315,198,117,2,12.85,7.26,-5.60
+17,Wed,December 25,4:30PM ET,boxscore,W,,11-5,@,Houston Texans,31,2,25,432,181,251,,10,211,153,58,1,21.65,13.70,-6.24
+18,Sat,January 4,4:30PM ET,boxscore,W,,12-5,,Cleveland Browns,35,10,20,437,217,220,,13,230,174,56,2,14.19,17.79,-4.39
+,,Playoffs,,,,,,,,,,,,,,,,,,,,,,
+Wild Card,Sat,January 11,8:00PM ET,boxscore,W,,13-5,,Pittsburgh Steelers,28,14,29,464,165,299,,11,280,251,29,,26.45,-2.80,-5.97
+Division,Sun,January 19,6:30PM ET,boxscore,L,,13-6,@,Buffalo Bills,25,27,23,416,240,176,3,20,273,126,147,,8.37,-10.81,-3.18

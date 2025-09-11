@@ -20,6 +20,14 @@ df_playerstats = st.session_state['df_playerstats']
 # games_2023 = df_games[df_games['season'] == 2023]
 games_selected = df_games[(df_games['season'] == selected_season) & (df_games['week'].between(1, 18))]
 
+# Filter out games that haven't been played yet (where scores are null or 0)
+games_selected = games_selected[
+    (games_selected['home_score'].notna()) & 
+    (games_selected['away_score'].notna()) &
+    (games_selected['home_score'] > 0) & 
+    (games_selected['away_score'] > 0)
+]
+
 # Initialize dictionaries to store wins, losses, and ties for each team
 team_wins = {team: 0 for team in df_teams['TeamID']}
 team_losses = {team: 0 for team in df_teams['TeamID']}

@@ -26,6 +26,10 @@ if selected_season == 2025:
 else:
     df_team_game_logs_selected = df_team_game_logs_2024
 
+# Both datasets use the same column names
+team_name_col = 'team_name'
+week_col = 'week'
+
 dataframes = [df_teams, df_games, df_playerstats, df_team_game_logs, df_schedule_and_game_results]
 
 ### --- Home vs Away Record --- ###
@@ -118,16 +122,16 @@ col1, col2 = st.columns(2)
 
 # Passing Yards
 with col1:
-    df_team_game_logs_filtered = df_team_game_logs_selected[(df_team_game_logs_selected['week_num'] >= 1) & (df_team_game_logs_selected['week_num'] <= 18)]
-    merged_data = pd.merge(df_team_game_logs_filtered, df_teams, left_on='Team_Name', right_on='Team', how='left')
+    df_team_game_logs_filtered = df_team_game_logs_selected[(df_team_game_logs_selected[week_col] >= 1) & (df_team_game_logs_selected[week_col] <= 18)]
+    merged_data = pd.merge(df_team_game_logs_filtered, df_teams, left_on=team_name_col, right_on='Team', how='left')
     team_passing_yards = merged_data.groupby('TeamID')['pass_yds'].sum().reset_index()
     team_passing_yards_ranked = team_passing_yards.sort_values(by='pass_yds', ascending=False).reset_index(drop=True)
     st.dataframe(team_passing_yards_ranked, use_container_width=True)
 
 # Rushing Yards
 with col2:
-    df_team_game_logs_filtered = df_team_game_logs_selected[(df_team_game_logs_selected['week_num'] >= 1) & (df_team_game_logs_selected['week_num'] <= 18)]
-    merged_data = pd.merge(df_team_game_logs_filtered, df_teams, left_on='Team_Name', right_on='Team', how='left')
+    df_team_game_logs_filtered = df_team_game_logs_selected[(df_team_game_logs_selected[week_col] >= 1) & (df_team_game_logs_selected[week_col] <= 18)]
+    merged_data = pd.merge(df_team_game_logs_filtered, df_teams, left_on=team_name_col, right_on='Team', how='left')
     team_rushing_yards = merged_data.groupby('TeamID')['rush_yds'].sum().reset_index()
     team_rushing_yards_ranked = team_rushing_yards.sort_values(by='rush_yds', ascending=False).reset_index(drop=True)
     st.dataframe(team_rushing_yards_ranked, use_container_width=True)

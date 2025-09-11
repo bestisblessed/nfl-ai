@@ -31,13 +31,17 @@ if selected_season == 2025:
     df_team_game_logs_selected = df_team_game_logs_2025
 else:
     df_team_game_logs_selected = df_team_game_logs_2024
+
+# Both datasets use the same column names
+team_name_col = 'team_name'
+week_col = 'week'
 st.divider()
 
 ### Average Pass Yards and Rush Yards per Game for NFL Teams ###
 df_team_game_logs_selected['season'] = selected_season
 season_data = df_team_game_logs_selected[df_team_game_logs_selected['season'] == selected_season]
-team_averages = season_data.groupby('Team_Name').agg({'pass_yds': 'mean', 'rush_yds': 'mean'}).reset_index()
-team_averages = team_averages.sort_values('Team_Name')
+team_averages = season_data.groupby(team_name_col).agg({'pass_yds': 'mean', 'rush_yds': 'mean'}).reset_index()
+team_averages = team_averages.sort_values(team_name_col)
 fig, ax = plt.subplots(figsize=(14, 7))
 x = range(len(team_averages))
 bar_width = 0.35
@@ -46,12 +50,12 @@ bar2 = plt.bar([i + bar_width for i in x], team_averages['rush_yds'], width=bar_
 plt.xlabel('Teams')
 plt.ylabel('Yards per Game')
 plt.title(f'Average Pass Yards and Rush Yards per Game for NFL Teams ({selected_season} Season)')
-plt.xticks([i + bar_width / 2 for i in x], team_averages['Team_Name'], rotation=90)
+plt.xticks([i + bar_width / 2 for i in x], team_averages[team_name_col], rotation=90)
 plt.legend()
 plt.tight_layout()
 st.pyplot(plt)
-top_5_pass_yds = team_averages[['Team_Name', 'pass_yds']].sort_values(by='pass_yds', ascending=False).head(5)
-top_5_rush_yds = team_averages[['Team_Name', 'rush_yds']].sort_values(by='rush_yds', ascending=False).head(5)
+top_5_pass_yds = team_averages[[team_name_col, 'pass_yds']].sort_values(by='pass_yds', ascending=False).head(5)
+top_5_rush_yds = team_averages[[team_name_col, 'rush_yds']].sort_values(by='rush_yds', ascending=False).head(5)
 col1, col2 = st.columns(2)
 with col1:
     st.write(f"Top 5 Teams for Passing Yards per Game ({selected_season} Season):")
@@ -95,8 +99,8 @@ st.divider()
 ### Average Passing and Running Plays per Game for NFL Teams ###
 df_team_game_logs_selected['season'] = selected_season
 season_data = df_team_game_logs_selected[df_team_game_logs_selected['season'] == selected_season]
-team_averages = season_data.groupby('Team_Name').agg({'pass_att': 'mean', 'rush_att': 'mean'}).reset_index()
-team_averages = team_averages.sort_values('Team_Name')
+team_averages = season_data.groupby(team_name_col).agg({'pass_att': 'mean', 'rush_att': 'mean'}).reset_index()
+team_averages = team_averages.sort_values(team_name_col)
 fig, ax = plt.subplots(figsize=(14, 7))
 x = range(len(team_averages))
 bar_width = 0.35
@@ -105,7 +109,7 @@ bar2 = plt.bar([i + bar_width for i in x], team_averages['rush_att'], width=bar_
 plt.xlabel('Teams')
 plt.ylabel('Plays per Game')
 plt.title(f'Average Passing and Running Plays per Game for NFL Teams ({selected_season} Season)')
-plt.xticks([i + bar_width / 2 for i in x], team_averages['Team_Name'], rotation=90)
+plt.xticks([i + bar_width / 2 for i in x], team_averages[team_name_col], rotation=90)
 plt.legend()
 plt.tight_layout()
 st.pyplot(plt)
@@ -130,7 +134,7 @@ ax1.set_xlabel('Teams')
 ax1.set_ylabel('Passing Plays per Game')
 ax1.set_title(f'Average Passing Plays per Game for NFL Teams ({selected_season} Season)')
 ax1.set_xticks([i for i in x_pass])
-ax1.set_xticklabels(team_averages_pass_sorted['Team_Name'], rotation=90)
+ax1.set_xticklabels(team_averages_pass_sorted[team_name_col], rotation=90)
 ax1.grid(True, which='both', axis='y', linestyle='--', linewidth=0.7)
 bars2 = ax2.bar(x_rush, team_averages_rush_sorted['rush_att'], color=colors_rush(range(len(team_averages_rush_sorted))))
 for bar in bars2:
@@ -139,7 +143,7 @@ ax2.set_xlabel('Teams')
 ax2.set_ylabel('Running Plays per Game')
 ax2.set_title(f'Average Running Plays per Game for NFL Teams ({selected_season} Season)')
 ax2.set_xticks([i for i in x_rush])
-ax2.set_xticklabels(team_averages_rush_sorted['Team_Name'], rotation=90)
+ax2.set_xticklabels(team_averages_rush_sorted[team_name_col], rotation=90)
 ax2.grid(True, which='both', axis='y', linestyle='--', linewidth=0.7)
 bars3 = ax3.bar(x_combined, team_averages_combined_sorted['combined_att'], color=colors_combined(range(len(team_averages_combined_sorted))))
 for bar in bars3:
@@ -148,7 +152,7 @@ ax3.set_xlabel('Teams')
 ax3.set_ylabel('Combined Plays per Game')
 ax3.set_title(f'Average Combined Plays (Passing + Running) per Game for NFL Teams ({selected_season} Season)')
 ax3.set_xticks([i for i in x_combined])
-ax3.set_xticklabels(team_averages_combined_sorted['Team_Name'], rotation=90)
+ax3.set_xticklabels(team_averages_combined_sorted[team_name_col], rotation=90)
 ax3.grid(True, which='both', axis='y', linestyle='--', linewidth=0.7)
 plt.tight_layout()
 st.pyplot(plt)

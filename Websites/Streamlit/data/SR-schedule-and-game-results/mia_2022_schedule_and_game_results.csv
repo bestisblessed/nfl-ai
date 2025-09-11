@@ -1,0 +1,21 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 11,1:00PM ET,boxscore,W,,1-0,,New England Patriots,20,7,18,307,242,65,,17,271,193,78,3,6.08,8.28,1.98
+2,Sun,September 18,1:00PM ET,boxscore,W,,2-0,@,Baltimore Ravens,42,38,27,547,461,86,2,23,473,318,155,,32.00,-20.31,-7.09
+3,Sun,September 25,1:00PM ET,boxscore,W,,3-0,,Buffalo Bills,21,19,15,212,171,41,,31,497,382,115,1,7.45,-15.88,4.86
+4,Thu,September 29,8:15PM ET,boxscore,L,,3-1,@,Cincinnati Bengals,15,27,20,378,293,85,2,16,371,304,67,,0.48,-9.11,-3.73
+5,Sun,October 9,1:00PM ET,boxscore,L,,3-2,@,New York Jets,17,40,19,295,158,137,2,21,322,187,135,,-6.15,-11.86,-3.66
+6,Sun,October 16,1:00PM ET,boxscore,L,,3-3,,Minnesota Vikings,16,24,23,458,385,73,3,11,234,156,78,,-8.38,4.43,-4.75
+7,Sun,October 23,8:20PM ET,boxscore,W,,4-3,,Pittsburgh Steelers,16,10,17,372,261,111,,19,341,246,95,3,0.04,6.72,-2.49
+8,Sun,October 30,1:00PM ET,boxscore,W,,5-3,@,Detroit Lions,31,27,27,476,369,107,1,22,393,311,82,,25.47,-19.14,-0.59
+9,Sun,November 6,1:00PM ET,boxscore,W,,6-3,@,Chicago Bears,35,32,21,379,302,77,,23,368,116,252,,19.83,-17.18,2.01
+10,Sun,November 13,1:00PM ET,boxscore,W,,7-3,,Cleveland Browns,39,17,29,491,296,195,,20,297,185,112,1,28.50,1.04,-4.93
+11,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+12,Sun,November 27,1:00PM ET,boxscore,W,,8-3,,Houston Texans,30,15,25,339,273,66,1,14,210,174,36,3,-1.90,22.74,-3.97
+13,Sun,December 4,4:05PM ET,boxscore,L,,8-4,@,San Francisco 49ers,17,33,14,308,275,33,4,24,351,230,121,1,-13.36,-1.78,-1.00
+14,Sun,December 11,8:20PM ET,boxscore,L,,8-5,@,Los Angeles Chargers,17,23,14,219,127,92,,24,432,350,82,,1.14,-9.39,1.98
+15,Sat,December 17,8:15PM ET,boxscore,L,,8-6,@,Buffalo Bills,29,32,20,405,217,188,,29,446,296,150,1,10.87,-19.07,4.20
+16,Sun,December 25,1:00PM ET,boxscore,L,,8-7,,Green Bay Packers,20,26,15,376,294,82,4,17,301,222,79,1,-2.13,3.46,-6.52
+17,Sun,January 1,1:00PM ET,boxscore,L,,8-8,@,New England Patriots,21,23,21,333,247,86,2,14,249,173,76,,-1.36,1.20,-1.03
+18,Sun,January 8,1:00PM ET,boxscore,W,,9-8,,New York Jets,11,6,17,302,140,162,,11,187,149,38,,-3.96,7.03,1.31
+,,Playoffs,,,,,,,,,,,,,,,,,,,,,,
+Wild Card,Sun,January 15,1:00PM ET,boxscore,L,,9-9,@,Buffalo Bills,31,34,16,231,189,42,2,25,423,316,107,3,-15.56,2.41,6.64

@@ -1,0 +1,21 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 13,1:00PM ET,boxscore,W,,1-0,@,Minnesota Vikings,43,34,31,522,364,158,,25,382,248,134,1,28.03,-19.11,3.78
+2,Sun,September 20,1:00PM ET,boxscore,W,,2-0,,Detroit Lions,42,21,26,488,229,259,,19,307,218,89,1,26.08,-2.93,-2.86
+3,Sun,September 27,8:20PM ET,boxscore,W,,3-0,@,New Orleans Saints,37,30,24,369,271,98,,21,397,275,122,1,19.67,-14.59,5.23
+4,Mon,October 5,8:15PM ET,boxscore,W,,4-0,,Atlanta Falcons,30,16,22,403,315,88,,24,327,249,78,,19.46,-5.57,0.14
+5,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+6,Sun,October 18,4:25PM ET,boxscore,L,,4-1,@,Tampa Bay Buccaneers,10,38,13,201,107,94,2,21,324,166,158,,-21.73,-15.29,4.79
+7,Sun,October 25,1:00PM ET,boxscore,W,,5-1,@,Houston Texans,35,20,22,379,283,96,,20,365,286,79,1,20.19,-1.70,-4.25
+8,Sun,November 1,1:00PM ET,boxscore,L,,5-2,,Minnesota Vikings,22,28,24,400,291,109,1,20,324,151,173,,13.95,-20.77,1.23
+9,Thu,November 5,8:20PM ET,boxscore,W,,6-2,@,San Francisco 49ers,34,17,21,405,294,111,,17,337,282,55,2,19.59,-0.24,-3.72
+10,Sun,November 15,1:00PM ET,boxscore,W,,7-2,,Jacksonville Jaguars,24,20,16,395,315,80,2,16,260,151,109,1,1.82,10.89,-8.95
+11,Sun,November 22,4:25PM ET,boxscore,L,OT,7-3,@,Indianapolis Colts,31,34,21,367,301,66,4,23,420,280,140,2,6.48,-4.31,-4.30
+12,Sun,November 29,8:20PM ET,boxscore,W,,8-3,,Chicago Bears,41,25,28,393,211,182,,26,350,229,121,3,27.57,-6.85,0.48
+13,Sun,December 6,4:25PM ET,boxscore,W,,9-3,,Philadelphia Eagles,30,16,20,437,288,149,,17,278,161,117,1,19.58,2.33,-8.04
+14,Sun,December 13,4:25PM ET,boxscore,W,,10-3,@,Detroit Lions,31,24,26,410,290,120,,27,293,242,51,,23.25,-13.36,-0.61
+15,Sat,December 19,8:15PM ET,boxscore,W,,11-3,,Carolina Panthers,24,16,20,291,96,195,,20,364,249,115,1,6.96,1.00,4.27
+16,Sun,December 27,8:20PM ET,boxscore,W,,12-3,,Tennessee Titans,40,14,27,448,214,234,1,15,260,104,156,2,25.88,3.08,-4.92
+17,Sun,January 3,4:25PM ET,boxscore,W,,13-3,@,Chicago Bears,35,16,17,316,237,79,1,21,356,248,108,2,22.83,-4.91,-3.56
+,,Playoffs,,,,,,,,,,,,,,,,,,,,,,
+Division,Sat,January 16,4:35PM ET,boxscore,W,,14-3,,Los Angeles Rams,32,18,28,484,296,188,,17,244,148,96,,23.74,-2.94,-5.23
+Conf. Champ.,Sun,January 24,3:05PM ET,boxscore,L,,14-4,,Tampa Bay Buccaneers,26,31,23,381,314,67,2,19,351,275,76,3,7.40,-14.40,-0.17
