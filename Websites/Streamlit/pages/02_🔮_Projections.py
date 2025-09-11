@@ -68,13 +68,10 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-# Page header
-st.markdown("""
-<div class="main-header">
-    <h1>🔮 NFL Projections Dashboard</h1>
-    <p style="margin: 0; font-size: 1.1rem;">Real AI-powered projections for all major NFL props</p>
-</div>
-""", unsafe_allow_html=True)
+# Page title
+st.title('Weekly Projections')
+st.markdown('NFL weekly player projections using my machine learning models')
+st.divider()
 
 # Function to load projections data
 @st.cache_data
@@ -116,8 +113,12 @@ def get_week_projections(week_num):
         df['pred_yards'] = pd.to_numeric(df['pred_yards'], errors='coerce')
         df = df.dropna(subset=['pred_yards'])
         
-        # Add confidence score based on prediction magnitude (placeholder logic)
-        df['confidence'] = np.clip((df['pred_yards'] / df['pred_yards'].max()) * 100, 50, 95).round(0)
+        # Add confidence score based on prediction magnitude within each prop type
+        df['confidence'] = 0.0
+        for prop_type in df['prop_type'].unique():
+            prop_mask = df['prop_type'] == prop_type
+            prop_max = df.loc[prop_mask, 'pred_yards'].max()
+            df.loc[prop_mask, 'confidence'] = np.clip((df.loc[prop_mask, 'pred_yards'] / prop_max) * 100, 0, 100).round(0)
         
         # Add trend (placeholder - could be enhanced with historical data)
         trends = np.random.choice(['↗️', '→', '↘️'], size=len(df), p=[0.3, 0.4, 0.3])
@@ -135,107 +136,185 @@ if not available_weeks:
     st.error("No projection data available. Please ensure projection files are in data/projections/")
     st.stop()
 
-# Week selector
-st.markdown("### 📅 Select Week")
-selected_week = st.selectbox("Choose Week:", available_weeks, index=0, key="week_selector")
-
-# Load data for selected week
-projections_df = get_week_projections(selected_week)
-
-if projections_df is None:
-    st.error(f"No data available for Week {selected_week}")
-    st.stop()
-
-# Week header with key info
-st.markdown(f"## Week {selected_week} Projections")
-st.markdown(f"*Generated on {datetime.now().strftime('%B %d, %Y')} at {datetime.now().strftime('%I:%M %p')}*")
-
-# Key metrics summary
-st.markdown("### 📊 Projection Summary")
-
-# Calculate top projections by prop type
-receiving_yards = projections_df[projections_df['prop_type'] == 'Receiving Yards'].nlargest(1, 'pred_yards')
-rushing_yards = projections_df[projections_df['prop_type'] == 'Rushing Yards'].nlargest(1, 'pred_yards')
-passing_yards = projections_df[projections_df['prop_type'] == 'Passing Yards'].nlargest(1, 'pred_yards')
-
-col1, col2, col3, col4 = st.columns(4)
+# Create two-column layout with padding
+col1, padding, col2 = st.columns([1, 0.2, 2])
 
 with col1:
-    if not receiving_yards.empty:
-        top_wr = receiving_yards.iloc[0]
-        st.metric("Top Receiving Yards", f"{top_wr['full_name']}", f"{top_wr['pred_yards']:.1f} yards")
-    else:
-        st.metric("Top Receiving Yards", "N/A", "N/A")
+    # Controls in left column
+    st.markdown("**Week**")
+    selected_week = st.selectbox("", available_weeks, index=len(available_weeks)-1, key="week_selector", label_visibility="collapsed")
+    
+    # Load data for selected week
+    projections_df = get_week_projections(selected_week)
+    
+    if projections_df is None:
+        st.error(f"No data available for Week {selected_week}")
+        st.stop()
+    
+    st.markdown("**Position**")
+    all_positions = sorted(projections_df['position'].unique())
+    position_filter = st.multiselect(
+        "",
+        all_positions,
+        default=all_positions,
+        key="global_position_filter",
+        label_visibility="collapsed"
+    )
+    
+    st.markdown("**Team**")
+    all_teams = sorted(projections_df['team'].unique())
+    default_teams = all_teams
+    
+    # Create columns for team selector and checkbox
+    team_col1, team_col2 = st.columns([3, 1])
+    
+    with team_col1:
+        # Determine which teams to show based on checkbox state
+        if st.session_state.get('select_all_teams_checkbox', True):
+            team_filter = st.multiselect(
+                "",
+                all_teams,
+                default=all_teams,
+                key="global_team_filter",
+                label_visibility="collapsed"
+            )
+        else:
+            team_filter = st.multiselect(
+                "",
+                all_teams,
+                default=[],  # Empty list when unchecked
+                key="global_team_filter",
+                label_visibility="collapsed"
+            )
+    
+    with team_col2:
+        # Add Select All checkbox to the right
+        select_all_teams = st.checkbox("Select All", key="select_all_teams_checkbox", value=True)
+    
+    # Refresh Data button removed
+
+# Middle column for padding
+with padding:
+    st.markdown("")  # Empty space for padding
 
 with col2:
-    if not rushing_yards.empty:
-        top_rb = rushing_yards.iloc[0]
-        st.metric("Top Rushing Yards", f"{top_rb['full_name']}", f"{top_rb['pred_yards']:.1f} yards")
-    else:
-        st.metric("Top Rushing Yards", "N/A", "N/A")
-
-with col3:
-    if not passing_yards.empty:
-        top_qb = passing_yards.iloc[0]
-        st.metric("Top Passing Yards", f"{top_qb['full_name']}", f"{top_qb['pred_yards']:.1f} yards")
-    else:
-        st.metric("Top Passing Yards", "N/A", "N/A")
-
-with col4:
-    total_projections = len(projections_df)
-    avg_confidence = projections_df['confidence'].mean()
-    st.metric("Total Projections", total_projections, f"Avg Confidence: {avg_confidence:.0f}%")
+    # Projection Summary in right column, bigger font
+    st.markdown("<div style='text-align: left; font-weight: bold; font-size: 1.7rem; margin-left: 210px;'>Projection Summary</div>", unsafe_allow_html=True)
+    st.write('')
+    st.write('')
+    
+    # Calculate top projections by prop type using ALL data (before filtering)
+    receiving_yards = projections_df[projections_df['prop_type'] == 'Receiving Yards'].nlargest(1, 'pred_yards')
+    rushing_yards = projections_df[projections_df['prop_type'] == 'Rushing Yards'].nlargest(1, 'pred_yards')
+    passing_yards = projections_df[projections_df['prop_type'] == 'Passing Yards'].nlargest(1, 'pred_yards')
+    
+    # Apply global filters for the count/metrics
+    filtered_projections_df = projections_df.copy()
+    if position_filter:
+        filtered_projections_df = filtered_projections_df[filtered_projections_df['position'].isin(position_filter)]
+    if team_filter:
+        filtered_projections_df = filtered_projections_df[filtered_projections_df['team'].isin(team_filter)]
+    
+    # Create metrics in 2x2 grid
+    metric_col1, metric_col2 = st.columns(2)
+    
+    with metric_col1:
+        if not receiving_yards.empty:
+            top_wr = receiving_yards.iloc[0]
+            st.metric("Top Receiving Yards", f"{top_wr['full_name']}", f"{top_wr['pred_yards']:.1f} yards")
+        else:
+            st.metric("Top Receiving Yards", "N/A", "N/A")
+            
+        if not rushing_yards.empty:
+            top_rb = rushing_yards.iloc[0]
+            st.metric("Top Rushing Yards", f"{top_rb['full_name']}", f"{top_rb['pred_yards']:.1f} yards")
+        else:
+            st.metric("Top Rushing Yards", "N/A", "N/A")
+    
+    with metric_col2:
+        if not passing_yards.empty:
+            top_qb = passing_yards.iloc[0]
+            st.metric("Top Passing Yards", f"{top_qb['full_name']}", f"{top_qb['pred_yards']:.1f} yards")
+        else:
+            st.metric("Top Passing Yards", "N/A", "N/A")
+            
+        total_projections = len(filtered_projections_df)
+        avg_confidence = filtered_projections_df['confidence'].mean() if not filtered_projections_df.empty else 0
+        st.metric("Total Projections", total_projections, f"Avg Confidence: {avg_confidence:.0f}%")
 
 # Main projections display with tabs
 st.markdown("---")
 
-# Get unique prop types
+# Get unique prop types from ALL data (to show all tabs)
 prop_types = projections_df['prop_type'].unique()
 prop_types = sorted(prop_types)
 
 # Create tabs for each prop type
 if len(prop_types) > 0:
+    # Add CSS to make tab titles bigger
+    st.markdown("""
+    <style>
+    .stTabs [data-baseweb="tab-list"] button [data-testid="stMarkdownContainer"] p {
+        font-size: 1.2rem !important;
+        font-weight: bold !important;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+    
     tabs = st.tabs([f"🎯 {prop_type}" for prop_type in prop_types])
     
     for i, prop_type in enumerate(prop_types):
         with tabs[i]:
-            st.markdown(f"### 🎯 {prop_type} Projections")
             
-            # Filter data for this prop type
+            # Start with all data for this prop type, then apply global filters
             prop_data = projections_df[projections_df['prop_type'] == prop_type].copy()
             
+            # Apply global filters
+            if position_filter:
+                prop_data = prop_data[prop_data['position'].isin(position_filter)]
+            if team_filter:
+                prop_data = prop_data[prop_data['team'].isin(team_filter)]
+            
             if prop_data.empty:
-                st.info(f"No {prop_type} projections available for Week {selected_week}")
+                st.info(f"No {prop_type} projections available for Week {selected_week} with current filters")
                 continue
             
-            # Filters for this tab
-            col1, col2, col3 = st.columns(3)
+            # Only show yards filter (teams and positions already filtered globally)
+            min_val = float(prop_data['pred_yards'].min())
+            max_val = float(prop_data['pred_yards'].max())
             
-            with col1:
-                min_yards = st.slider(f"Min {prop_type.split()[0]} Yards", 
-                                    float(prop_data['pred_yards'].min()), 
-                                    float(prop_data['pred_yards'].max()), 
-                                    float(prop_data['pred_yards'].quantile(0.3)),
-                                    key=f"{prop_type}_yards")
+            # Handle case where min equals max (single value)
+            if min_val == max_val:
+                st.info(f"Only one {prop_type.split()[0]} projection available: {min_val:.1f} yards")
+                min_yards = min_val
+            else:
+                st.markdown(f"<div style='font-size: 0.85rem; margin-bottom: 0.3rem;'><strong>Min {prop_type.split()[0]} Yards</strong></div>", unsafe_allow_html=True)
+                min_yards = st.slider(
+                    "",
+                    min_val, 
+                    max_val, 
+                    min_val,  # Start at minimum to include all players
+                    key=f"{prop_type}_yards",
+                    label_visibility="collapsed"
+                )
             
-            with col2:
-                available_teams = sorted(prop_data['team'].unique())
-                selected_teams = st.multiselect("Filter Teams", available_teams, key=f"{prop_type}_teams")
+            # Add confidence slider for this prop type (after yards slider)
+            st.markdown("<div style='font-size: 0.85rem; margin-bottom: 0.3rem;'><strong>Min Confidence %</strong></div>", unsafe_allow_html=True)
+            min_confidence = st.slider(
+                "",
+                min_value=0,
+                max_value=100,
+                value=0,
+                step=5,
+                key=f"{prop_type}_confidence",
+                label_visibility="collapsed"
+            )
             
-            with col3:
-                available_positions = sorted(prop_data['position'].unique())
-                selected_positions = st.multiselect("Filter Positions", available_positions, 
-                                                  default=available_positions, key=f"{prop_type}_positions")
-            
-            # Apply filters
-            filtered_data = prop_data.copy()
-            filtered_data = filtered_data[filtered_data['pred_yards'] >= min_yards]
-            
-            if selected_teams:
-                filtered_data = filtered_data[filtered_data['team'].isin(selected_teams)]
-            
-            if selected_positions:
-                filtered_data = filtered_data[filtered_data['position'].isin(selected_positions)]
+            # Apply both filters
+            filtered_data = prop_data[
+                (prop_data['pred_yards'] >= min_yards) & 
+                (prop_data['confidence'] >= min_confidence)
+            ]
             
             # Sort by predicted yards
             filtered_data = filtered_data.sort_values('pred_yards', ascending=False)
@@ -283,123 +362,62 @@ if len(prop_types) > 0:
                     )
                     st.plotly_chart(fig, use_container_width=True)
                 
-                # Top 3 highlights
-                st.markdown("### 🏆 Top 3")
-                for idx, (_, player) in enumerate(top_players.head(3).iterrows(), 1):
-                    st.markdown(f"""
-                    <div class="prop-highlight">
-                        <strong>{idx}. {player['full_name']}</strong> ({player['team']})<br>
-                        <strong>{player['pred_yards']:.1f} yards</strong> vs {player['opp']}<br>
-                        Confidence: {player['confidence']:.0f}% | {player['trend']}
-                    </div>
-                    """, unsafe_allow_html=True)
+                # # Top 3 highlights
+                # st.markdown("### 🏆 Top 3")
+                # for idx, (_, player) in enumerate(top_players.head(3).iterrows(), 1):
+                #     st.markdown(f"""
+                #     <div class="prop-highlight">
+                #         <strong>{idx}. {player['full_name']}</strong> ({player['team']})<br>
+                #         <strong>{player['pred_yards']:.1f} yards</strong> vs {player['opp']}<br>
+                #         Confidence: {player['confidence']:.0f}% | {player['trend']}
+                #     </div>
+                #     """, unsafe_allow_html=True)
 
-# Additional analysis section
+# # Additional analysis section
+# st.markdown("---")
+# st.markdown("### 📈 Analysis & Insights")
+
+# col1, col2 = st.columns(2)
+
+# with col1:
+#     # Prop type distribution (use filtered data)
+#     prop_counts = filtered_projections_df['prop_type'].value_counts()
+#     fig = px.pie(
+#         values=prop_counts.values,
+#         names=prop_counts.index,
+#         title="Projection Distribution by Prop Type"
+#     )
+#     fig.update_layout(height=300)
+#     st.plotly_chart(fig, use_container_width=True)
+
+# with col2:
+#     # Position distribution (use filtered data)
+#     pos_counts = filtered_projections_df['position'].value_counts()
+#     fig = px.bar(
+#         x=pos_counts.index,
+#         y=pos_counts.values,
+#         title="Projections by Position"
+#     )
+#     fig.update_layout(height=300)
+#     st.plotly_chart(fig, use_container_width=True)
+
+# # Team analysis
+# st.markdown("### 🏈 Team Analysis")
+# team_stats = filtered_projections_df.groupby('team').agg({
+#     'pred_yards': ['count', 'mean', 'max'],
+#     'confidence': 'mean'
+# }).round(1)
+
+# team_stats.columns = ['Total Props', 'Avg Yards', 'Max Yards', 'Avg Confidence']
+# team_stats = team_stats.sort_values('Total Props', ascending=False)
+
+# st.dataframe(team_stats, use_container_width=True)
+
+# # Footer
+st.write('')
+st.write('')
+st.write('')
+st.write('')
 st.markdown("---")
-st.markdown("### 📈 Analysis & Insights")
-
-col1, col2 = st.columns(2)
-
-with col1:
-    # Prop type distribution
-    prop_counts = projections_df['prop_type'].value_counts()
-    fig = px.pie(
-        values=prop_counts.values,
-        names=prop_counts.index,
-        title="Projection Distribution by Prop Type"
-    )
-    fig.update_layout(height=300)
-    st.plotly_chart(fig, use_container_width=True)
-
-with col2:
-    # Position distribution
-    pos_counts = projections_df['position'].value_counts()
-    fig = px.bar(
-        x=pos_counts.index,
-        y=pos_counts.values,
-        title="Projections by Position"
-    )
-    fig.update_layout(height=300)
-    st.plotly_chart(fig, use_container_width=True)
-
-# Team analysis
-st.markdown("### 🏈 Team Analysis")
-team_stats = projections_df.groupby('team').agg({
-    'pred_yards': ['count', 'mean', 'max'],
-    'confidence': 'mean'
-}).round(1)
-
-team_stats.columns = ['Total Props', 'Avg Yards', 'Max Yards', 'Avg Confidence']
-team_stats = team_stats.sort_values('Total Props', ascending=False)
-
-st.dataframe(team_stats, use_container_width=True)
-
-# Footer
-st.markdown("---")
-st.markdown("""
-<div style='text-align: center; color: #666; font-size: 0.8rem;'>
-    <p>🔮 Projections are based on AI analysis and historical data patterns</p>
-    <p>📊 Confidence scores indicate model certainty in projections</p>
-    <p>🎲 Data sourced from real NFL projections models</p>
-</div>
-""", unsafe_allow_html=True)
-
-# Sidebar for global filters and stats
-with st.sidebar:
-    st.markdown("### 🔍 Global Filters")
-    
-    # Position filter
-    all_positions = sorted(projections_df['position'].unique())
-    position_filter = st.multiselect(
-        "Position",
-        all_positions,
-        default=all_positions
-    )
-    
-    # Team filter
-    all_teams = sorted(projections_df['team'].unique())
-    team_filter = st.multiselect(
-        "Team",
-        all_teams,
-        default=all_teams
-    )
-    
-    # Confidence threshold
-    global_confidence = st.slider(
-        "Min Confidence %",
-        min_value=50,
-        max_value=95,
-        value=65,
-        step=5
-    )
-    
-    # Refresh button
-    if st.button("🔄 Refresh Data"):
-        st.cache_data.clear()
-        st.rerun()
-    
-    st.markdown("### 📊 Quick Stats")
-    
-    # Calculate stats across all projections
-    filtered_df = projections_df[
-        (projections_df['position'].isin(position_filter)) &
-        (projections_df['team'].isin(team_filter)) &
-        (projections_df['confidence'] >= global_confidence)
-    ]
-    
-    st.metric("Filtered Projections", len(filtered_df))
-    st.metric("Avg Confidence", f"{filtered_df['confidence'].mean():.1f}%")
-    st.metric("Total Players", filtered_df['full_name'].nunique())
-    
-    # Prop type breakdown
-    st.markdown("### 📊 Prop Type Breakdown")
-    prop_breakdown = filtered_df['prop_type'].value_counts()
-    for prop_type, count in prop_breakdown.items():
-        st.markdown(f"**{prop_type}:** {count}")
-    
-    # Top teams by projection count
-    st.markdown("### 🏆 Top Teams")
-    top_teams = filtered_df['team'].value_counts().head(5)
-    for team, count in top_teams.items():
-        st.markdown(f"**{team}:** {count} props")
-
+st.markdown('By Tyler Durette')
+st.markdown("NFL AI © 2023 | [GitHub](https://github.com/bestisblessed) | [Contact Me](tyler.durette@gmail.com)")
