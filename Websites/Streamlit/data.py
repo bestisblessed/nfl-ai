@@ -32,7 +32,7 @@ shutil.copy('/Users/td/Code/nfl-ai/Scrapers/nfl.db', 'data')
 #                 print(f"Removed: {file_path}")
 
 data_directory = 'data'
-years_to_keep = [str(year) for year in range(2020, 2025)]  # Creates a list of years from 2020 to 2024
+years_to_keep = [str(year) for year in range(2020, 2026)]  # Creates a list of years from 2020 to 2025
 for root, dirs, files in os.walk(data_directory):
     if root == data_directory:
         continue
