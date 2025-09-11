@@ -5,13 +5,13 @@ PIT vs SEA | Week 2 2025 | RB Projected Rushing Yards
 +------------------+--------------+    +--------------------+--------------+
 | PIT Player       |   Pred Yards |    | SEA Player         |   Pred Yards |
 +==================+==============+    +====================+==============+
-| Jaylen Warren    |         31.3 |    | Kenneth Walker III |         41.3 |
-| Kenneth Gainwell |         16.4 |    | Zach Charbonnet    |         36.4 |
+| Jaylen Warren    |         33.3 |    | Zach Charbonnet    |         40.2 |
+| Kenneth Gainwell |         14   |    | Kenneth Walker III |         37.1 |
 +------------------+--------------+    +--------------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total RBs: 4 (2 PIT, 2 SEA)
-Top Projection: Kenneth Walker III (SEA) - 41.3 yards
+Top Projection: Zach Charbonnet (SEA) - 40.2 yards
 ================================================================================

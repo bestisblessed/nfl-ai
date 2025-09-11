@@ -5,12 +5,12 @@ CIN vs JAX | Week 2 2025 | QB Projected Passing Yards
 +--------------+--------------+    +-----------------+--------------+
 | CIN Player   |   Pred Yards |    | JAX Player      |   Pred Yards |
 +==============+==============+    +=================+==============+
-| Joe Burrow   |        138.2 |    | Trevor Lawrence |        200.2 |
+| Joe Burrow   |        153.8 |    | Trevor Lawrence |          185 |
 +--------------+--------------+    +-----------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total QBs: 2 (1 CIN, 1 JAX)
-Top Projection: Trevor Lawrence (JAX) - 200.2 yards
+Top Projection: Trevor Lawrence (JAX) - 185.0 yards
 ================================================================================

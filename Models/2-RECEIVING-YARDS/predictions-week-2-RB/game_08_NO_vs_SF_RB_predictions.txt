@@ -5,13 +5,13 @@ NO vs SF | Week 2 2025 | RB Projected Receiving Yards
 +---------------+--------------+    +---------------------+--------------+
 | NO Player     |   Pred Yards |    | SF Player           |   Pred Yards |
 +===============+==============+    +=====================+==============+
-| Alvin Kamara  |         36.3 |    | Christian McCaffrey |         43.7 |
-| Kendre Miller |         10.8 |    | Kyle Juszczyk       |         20.5 |
+| Alvin Kamara  |         32.5 |    | Christian McCaffrey |         38.9 |
+| Kendre Miller |         11.9 |    | Kyle Juszczyk       |         23.3 |
 +---------------+--------------+    +---------------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total RBs: 4 (2 NO, 2 SF)
-Top Projection: Christian McCaffrey (SF) - 43.7 yards
+Top Projection: Christian McCaffrey (SF) - 38.9 yards
 ================================================================================

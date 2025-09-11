@@ -5,12 +5,12 @@ GB vs WAS | Week 2 2025 | QB Projected Rushing Yards
 +-------------+--------------+    +----------------+--------------+
 | GB Player   |   Pred Yards |    | WAS Player     |   Pred Yards |
 +=============+==============+    +================+==============+
-| Jordan Love |          9.3 |    | Jayden Daniels |         65.6 |
+| Jordan Love |          9.1 |    | Jayden Daniels |         51.9 |
 +-------------+--------------+    +----------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total RBs: 2 (1 GB, 1 WAS)
-Top Projection: Jayden Daniels (WAS) - 65.6 yards
+Top Projection: Jayden Daniels (WAS) - 51.9 yards
 ================================================================================

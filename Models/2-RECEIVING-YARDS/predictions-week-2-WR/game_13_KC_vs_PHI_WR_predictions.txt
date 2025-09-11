@@ -5,16 +5,16 @@ KC vs PHI | Week 2 2025 | Projected Receiving Yards
 +---------------------+--------------+    +---------------+--------------+
 | KC Player           |   Pred Yards |    | PHI Player    |   Pred Yards |
 +=====================+==============+    +===============+==============+
-| Xavier Worthy       |         50.7 |    | A.J. Brown    |         52.5 |
-| Marquise Brown      |         45.5 |    | DeVonta Smith |         51.2 |
-| JuJu Smith-Schuster |         19.4 |    | Jahan Dotson  |         27.7 |
-| Jason Brownlee      |         15.7 |    +---------------+--------------+
-| Tyquan Thornton     |         14.7 |    
+| Xavier Worthy       |         54.1 |    | A.J. Brown    |         54.2 |
+| Marquise Brown      |         33.8 |    | DeVonta Smith |         43.5 |
+| JuJu Smith-Schuster |         21.1 |    | Jahan Dotson  |         37.8 |
+| Tyquan Thornton     |         16.7 |    +---------------+--------------+
+| Jason Brownlee      |         13.9 |    
 +---------------------+--------------+    
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total WRs: 8 (5 KC, 3 PHI)
-Top Projection: A.J. Brown (PHI) - 52.5 yards
+Top Projection: A.J. Brown (PHI) - 54.2 yards
 ================================================================================

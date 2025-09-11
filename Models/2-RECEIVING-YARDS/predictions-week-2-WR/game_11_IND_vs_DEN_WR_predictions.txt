@@ -5,15 +5,15 @@ IND vs DEN | Week 2 2025 | Projected Receiving Yards
 +-----------------+--------------+    +------------------+--------------+
 | IND Player      |   Pred Yards |    | DEN Player       |   Pred Yards |
 +=================+==============+    +==================+==============+
-| Josh Downs      |         48.6 |    | Courtland Sutton |         75.7 |
-| Alec Pierce     |         42.1 |    | Troy Franklin    |         21.3 |
-| Adonai Mitchell |         19.8 |    | Trent Sherfield  |         10.9 |
-| Ashton Dulin    |          8.3 |    +------------------+--------------+
+| Josh Downs      |         53.8 |    | Courtland Sutton |         70.2 |
+| Alec Pierce     |         48.1 |    | Troy Franklin    |         24.2 |
+| Adonai Mitchell |         24.9 |    | Trent Sherfield  |         10.9 |
+| Ashton Dulin    |          5.1 |    +------------------+--------------+
 +-----------------+--------------+    
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total WRs: 7 (4 IND, 3 DEN)
-Top Projection: Courtland Sutton (DEN) - 75.7 yards
+Top Projection: Courtland Sutton (DEN) - 70.2 yards
 ================================================================================

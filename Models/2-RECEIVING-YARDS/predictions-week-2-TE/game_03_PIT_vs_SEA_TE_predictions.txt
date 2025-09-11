@@ -5,13 +5,13 @@ PIT vs SEA | Week 2 2025 | TE Projected Receiving Yards
 +----------------+--------------+    +--------------+--------------+
 | PIT Player     |   Pred Yards |    | SEA Player   |   Pred Yards |
 +================+==============+    +==============+==============+
-| Pat Freiermuth |         41.2 |    | AJ Barner    |         18.9 |
-| Jonnu Smith    |         41.1 |    +--------------+--------------+
+| Pat Freiermuth |           44 |    | AJ Barner    |         21.9 |
+| Jonnu Smith    |           38 |    +--------------+--------------+
 +----------------+--------------+    
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total TEs: 3 (2 PIT, 1 SEA)
-Top Projection: Pat Freiermuth (PIT) - 41.2 yards
+Top Projection: Pat Freiermuth (PIT) - 44.0 yards
 ================================================================================

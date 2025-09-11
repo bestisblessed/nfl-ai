@@ -5,12 +5,12 @@ DET vs CHI | Week 2 2025 | QB Projected Passing Yards
 +--------------+--------------+    +----------------+--------------+
 | DET Player   |   Pred Yards |    | CHI Player     |   Pred Yards |
 +==============+==============+    +================+==============+
-| Jared Goff   |          255 |    | Caleb Williams |        236.4 |
+| Jared Goff   |        271.5 |    | Caleb Williams |        212.1 |
 +--------------+--------------+    +----------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total QBs: 2 (1 DET, 1 CHI)
-Top Projection: Jared Goff (DET) - 255.0 yards
+Top Projection: Jared Goff (DET) - 271.5 yards
 ================================================================================

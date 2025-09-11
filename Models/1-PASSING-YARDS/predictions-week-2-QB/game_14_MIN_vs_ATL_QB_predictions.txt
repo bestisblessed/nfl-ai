@@ -5,12 +5,12 @@ MIN vs ATL | Week 2 2025 | QB Projected Passing Yards
 +---------------+--------------+    +-------------------+--------------+
 | MIN Player    | Pred Yards   |    | ATL Player        |   Pred Yards |
 +===============+==============+    +===================+==============+
-| J.J. McCarthy | No Data      |    | Michael Penix Jr. |        261.2 |
+| J.J. McCarthy | No Data      |    | Michael Penix Jr. |        254.9 |
 +---------------+--------------+    +-------------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total QBs: 2 (1 MIN, 1 ATL)
-Top Projection: Michael Penix Jr. (ATL) - 261.2 yards
+Top Projection: Michael Penix Jr. (ATL) - 254.9 yards
 ================================================================================

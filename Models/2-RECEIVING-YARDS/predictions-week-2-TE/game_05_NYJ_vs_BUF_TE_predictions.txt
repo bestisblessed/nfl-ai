@@ -5,13 +5,13 @@ NYJ vs BUF | Week 2 2025 | TE Projected Receiving Yards
 +----------------+--------------+    +----------------+--------------+
 | NYJ Player     |   Pred Yards |    | BUF Player     |   Pred Yards |
 +================+==============+    +================+==============+
-| Jeremy Ruckert |         15.5 |    | Dalton Kincaid |         33.2 |
-+----------------+--------------+    | Dawson Knox    |         17.5 |
+| Jeremy Ruckert |         13.1 |    | Dalton Kincaid |         29   |
++----------------+--------------+    | Dawson Knox    |         18.8 |
                                      +----------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total TEs: 3 (1 NYJ, 2 BUF)
-Top Projection: Dalton Kincaid (BUF) - 33.2 yards
+Top Projection: Dalton Kincaid (BUF) - 29.0 yards
 ================================================================================

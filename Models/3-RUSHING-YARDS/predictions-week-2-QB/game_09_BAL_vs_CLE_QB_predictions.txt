@@ -5,12 +5,12 @@ BAL vs CLE | Week 2 2025 | QB Projected Rushing Yards
 +---------------+--------------+    +--------------+--------------+
 | BAL Player    |   Pred Yards |    | CLE Player   |   Pred Yards |
 +===============+==============+    +==============+==============+
-| Lamar Jackson |         54.7 |    | Joe Flacco   |          5.7 |
+| Lamar Jackson |         58.8 |    | Joe Flacco   |          2.5 |
 +---------------+--------------+    +--------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total RBs: 2 (1 BAL, 1 CLE)
-Top Projection: Lamar Jackson (BAL) - 54.7 yards
+Top Projection: Lamar Jackson (BAL) - 58.8 yards
 ================================================================================

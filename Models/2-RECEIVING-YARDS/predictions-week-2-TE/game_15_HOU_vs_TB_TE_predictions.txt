@@ -5,13 +5,13 @@ HOU vs TB | Week 2 2025 | TE Projected Receiving Yards
 +----------------+--------------+    +-------------+--------------+
 | HOU Player     |   Pred Yards |    | TB Player   |   Pred Yards |
 +================+==============+    +=============+==============+
-| Dalton Schultz |         33.9 |    | Cade Otton  |         30.8 |
-| Cade Stover    |         12.6 |    +-------------+--------------+
+| Dalton Schultz |         34.1 |    | Cade Otton  |         36.7 |
+| Cade Stover    |         13.8 |    +-------------+--------------+
 +----------------+--------------+    
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total TEs: 3 (2 HOU, 1 TB)
-Top Projection: Dalton Schultz (HOU) - 33.9 yards
+Top Projection: Cade Otton (TB) - 36.7 yards
 ================================================================================

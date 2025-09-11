@@ -5,12 +5,12 @@ LVR vs LAC | Week 2 2025 | RB Projected Receiving Yards
 +--------------+--------------+    +--------------+--------------+
 | LVR Player   |   Pred Yards |    | LAC Player   |   Pred Yards |
 +==============+==============+    +==============+==============+
-| Zamir White  |          9.3 |    | Najee Harris |         20.1 |
+| Zamir White  |          3.5 |    | Najee Harris |         28.6 |
 +--------------+--------------+    +--------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total RBs: 2 (1 LVR, 1 LAC)
-Top Projection: Najee Harris (LAC) - 20.1 yards
+Top Projection: Najee Harris (LAC) - 28.6 yards
 ================================================================================

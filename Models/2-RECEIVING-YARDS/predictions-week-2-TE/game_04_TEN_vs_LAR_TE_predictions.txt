@@ -5,13 +5,13 @@ TEN vs LAR | Week 2 2025 | TE Projected Receiving Yards
 No TEN TEs    +-----------------+--------------+
               | LAR Player      |   Pred Yards |
               +=================+==============+
-              | Davis Allen     |         13.2 |
-              | Colby Parkinson |         12.8 |
+              | Davis Allen     |         17   |
+              | Colby Parkinson |          8.8 |
               +-----------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total TEs: 2 (0 TEN, 2 LAR)
-Top Projection: Davis Allen (LAR) - 13.2 yards
+Top Projection: Davis Allen (LAR) - 17.0 yards
 ================================================================================

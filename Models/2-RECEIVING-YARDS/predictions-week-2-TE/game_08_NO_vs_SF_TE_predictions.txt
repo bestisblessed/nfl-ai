@@ -5,14 +5,14 @@ NO vs SF | Week 2 2025 | TE Projected Receiving Yards
 +---------------+--------------+    +---------------+--------------+
 | NO Player     |   Pred Yards |    | SF Player     |   Pred Yards |
 +===============+==============+    +===============+==============+
-| Juwan Johnson |         42.6 |    | George Kittle |         42   |
-+---------------+--------------+    | Jake Tonges   |         15.4 |
-                                    | Luke Farrell  |         12.3 |
+| Juwan Johnson |         45.4 |    | George Kittle |         45.1 |
++---------------+--------------+    | Luke Farrell  |         11.5 |
+                                    | Jake Tonges   |          9   |
                                     +---------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total TEs: 4 (1 NO, 3 SF)
-Top Projection: Juwan Johnson (NO) - 42.6 yards
+Top Projection: Juwan Johnson (NO) - 45.4 yards
 ================================================================================

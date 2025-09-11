@@ -5,14 +5,14 @@ ARI vs CAR | Week 2 2025 | TE Projected Receiving Yards
 +----------------+--------------+    +-------------------+--------------+
 | ARI Player     |   Pred Yards |    | CAR Player        |   Pred Yards |
 +================+==============+    +===================+==============+
-| Trey McBride   |         51.1 |    | Tommy Tremble     |         22.9 |
-| Elijah Higgins |         13.7 |    | Ja'Tavion Sanders |         18.9 |
-| Tip Reiman     |         10.8 |    +-------------------+--------------+
+| Trey McBride   |         68.8 |    | Tommy Tremble     |         22.4 |
+| Elijah Higgins |         14.7 |    | Ja'Tavion Sanders |         18.7 |
+| Tip Reiman     |         12.3 |    +-------------------+--------------+
 +----------------+--------------+    
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total TEs: 5 (3 ARI, 2 CAR)
-Top Projection: Trey McBride (ARI) - 51.1 yards
+Top Projection: Trey McBride (ARI) - 68.8 yards
 ================================================================================

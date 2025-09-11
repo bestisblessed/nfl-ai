@@ -5,12 +5,12 @@ IND vs DEN | Week 2 2025 | QB Projected Rushing Yards
 +--------------+--------------+    +--------------+--------------+
 | IND Player   |   Pred Yards |    | DEN Player   |   Pred Yards |
 +==============+==============+    +==============+==============+
-| Daniel Jones |         27.3 |    | Bo Nix       |         23.9 |
+| Daniel Jones |         32.4 |    | Bo Nix       |           30 |
 +--------------+--------------+    +--------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total RBs: 2 (1 IND, 1 DEN)
-Top Projection: Daniel Jones (IND) - 27.3 yards
+Top Projection: Daniel Jones (IND) - 32.4 yards
 ================================================================================

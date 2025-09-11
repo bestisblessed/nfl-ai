@@ -5,14 +5,14 @@ IND vs DEN | Week 2 2025 | TE Projected Receiving Yards
 +--------------+--------------+    +---------------+--------------+
 | IND Player   |   Pred Yards |    | DEN Player    |   Pred Yards |
 +==============+==============+    +===============+==============+
-| Mo Alie-Cox  |         14.7 |    | Evan Engram   |         45.8 |
-+--------------+--------------+    | Lucas Krull   |         13.1 |
-                                   | Adam Trautman |         13   |
+| Mo Alie-Cox  |         11.9 |    | Evan Engram   |         41.2 |
++--------------+--------------+    | Lucas Krull   |         12.2 |
+                                   | Adam Trautman |         11.3 |
                                    +---------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total TEs: 4 (1 IND, 3 DEN)
-Top Projection: Evan Engram (DEN) - 45.8 yards
+Top Projection: Evan Engram (DEN) - 41.2 yards
 ================================================================================

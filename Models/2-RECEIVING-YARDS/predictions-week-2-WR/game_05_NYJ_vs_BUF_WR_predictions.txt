@@ -5,15 +5,15 @@ NYJ vs BUF | Week 2 2025 | Projected Receiving Yards
 +----------------+--------------+    +---------------+--------------+
 | NYJ Player     |   Pred Yards |    | BUF Player    |   Pred Yards |
 +================+==============+    +===============+==============+
-| Garrett Wilson |         55.8 |    | Khalil Shakir |         48.6 |
-| Tyler Johnson  |         24.4 |    | Keon Coleman  |         45.1 |
-| Josh Reynolds  |         15.6 |    | Josh Palmer   |         39.2 |
-+----------------+--------------+    | Elijah Moore  |         32.1 |
+| Garrett Wilson |         58.9 |    | Khalil Shakir |         50.5 |
+| Tyler Johnson  |         25   |    | Josh Palmer   |         45.6 |
+| Josh Reynolds  |         15.3 |    | Keon Coleman  |         44.1 |
++----------------+--------------+    | Elijah Moore  |         30.9 |
                                      +---------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total WRs: 7 (3 NYJ, 4 BUF)
-Top Projection: Garrett Wilson (NYJ) - 55.8 yards
+Top Projection: Garrett Wilson (NYJ) - 58.9 yards
 ================================================================================

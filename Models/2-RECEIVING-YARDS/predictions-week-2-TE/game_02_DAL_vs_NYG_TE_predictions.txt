@@ -5,13 +5,13 @@ DAL vs NYG | Week 2 2025 | TE Projected Receiving Yards
 +------------------+--------------+    +------------------+--------------+
 | DAL Player       |   Pred Yards |    | NYG Player       |   Pred Yards |
 +==================+==============+    +==================+==============+
-| Jake Ferguson    |         35.9 |    | Theo Johnson     |         36.7 |
-| Luke Schoonmaker |         20.2 |    | Daniel Bellinger |         18.2 |
+| Jake Ferguson    |         32.4 |    | Theo Johnson     |         38.7 |
+| Luke Schoonmaker |         21.4 |    | Daniel Bellinger |         19   |
 +------------------+--------------+    +------------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total TEs: 4 (2 DAL, 2 NYG)
-Top Projection: Theo Johnson (NYG) - 36.7 yards
+Top Projection: Theo Johnson (NYG) - 38.7 yards
 ================================================================================

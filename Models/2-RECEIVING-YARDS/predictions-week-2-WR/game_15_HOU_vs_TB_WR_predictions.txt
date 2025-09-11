@@ -5,14 +5,14 @@ HOU vs TB | Week 2 2025 | Projected Receiving Yards
 +-------------------+--------------+    +------------------+--------------+
 | HOU Player        |   Pred Yards |    | TB Player        |   Pred Yards |
 +===================+==============+    +==================+==============+
-| Nico Collins      |         60   |    | Mike Evans       |         70   |
-| Xavier Hutchinson |         20.2 |    | Sterling Shepard |         28.4 |
-| Justin Watson     |         18   |    +------------------+--------------+
+| Nico Collins      |         71.2 |    | Mike Evans       |         70.1 |
+| Xavier Hutchinson |         25   |    | Sterling Shepard |         24.4 |
+| Justin Watson     |         19.3 |    +------------------+--------------+
 +-------------------+--------------+    
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total WRs: 5 (3 HOU, 2 TB)
-Top Projection: Mike Evans (TB) - 70.0 yards
+Top Projection: Nico Collins (HOU) - 71.2 yards
 ================================================================================

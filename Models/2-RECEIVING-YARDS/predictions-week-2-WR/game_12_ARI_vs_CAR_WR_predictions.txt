@@ -5,15 +5,15 @@ ARI vs CAR | Week 2 2025 | Projected Receiving Yards
 +---------------------+--------------+    +----------------+--------------+
 | ARI Player          |   Pred Yards |    | CAR Player     |   Pred Yards |
 +=====================+==============+    +================+==============+
-| Marvin Harrison Jr. |         62.3 |    | Xavier Legette |         36.1 |
-| Michael Wilson      |         38.8 |    | Hunter Renfrow |         25   |
-| Zay Jones           |         18.6 |    +----------------+--------------+
-| Greg Dortch         |         15   |    
+| Marvin Harrison Jr. |         63.7 |    | Xavier Legette |         37.1 |
+| Michael Wilson      |         32.2 |    | Hunter Renfrow |         11.5 |
+| Zay Jones           |         21.9 |    +----------------+--------------+
+| Greg Dortch         |         20.4 |    
 +---------------------+--------------+    
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total WRs: 6 (4 ARI, 2 CAR)
-Top Projection: Marvin Harrison Jr. (ARI) - 62.3 yards
+Top Projection: Marvin Harrison Jr. (ARI) - 63.7 yards
 ================================================================================

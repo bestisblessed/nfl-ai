@@ -5,15 +5,15 @@ NO vs SF | Week 2 2025 | Projected Receiving Yards
 +----------------+--------------+    +----------------+--------------+
 | NO Player      |   Pred Yards |    | SF Player      |   Pred Yards |
 +================+==============+    +================+==============+
-| Chris Olave    |         43   |    | Ricky Pearsall |         83.1 |
-| Rashid Shaheed |         40   |    | Jauan Jennings |         52.6 |
-| Brandin Cooks  |         37.9 |    +----------------+--------------+
-| Devaughn Vele  |         21.7 |    
+| Rashid Shaheed |         49.2 |    | Ricky Pearsall |         76   |
+| Chris Olave    |         43.9 |    | Jauan Jennings |         51.1 |
+| Brandin Cooks  |         38.5 |    +----------------+--------------+
+| Devaughn Vele  |         21.9 |    
 +----------------+--------------+    
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total WRs: 6 (4 NO, 2 SF)
-Top Projection: Ricky Pearsall (SF) - 83.1 yards
+Top Projection: Ricky Pearsall (SF) - 76.0 yards
 ================================================================================

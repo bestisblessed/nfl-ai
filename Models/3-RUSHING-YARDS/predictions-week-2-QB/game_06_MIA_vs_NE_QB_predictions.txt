@@ -5,12 +5,12 @@ MIA vs NE | Week 2 2025 | QB Projected Rushing Yards
 +----------------+--------------+    +-------------+--------------+
 | MIA Player     |   Pred Yards |    | NE Player   |   Pred Yards |
 +================+==============+    +=============+==============+
-| Tua Tagovailoa |          4.4 |    | Drake Maye  |         22.3 |
+| Tua Tagovailoa |          2.8 |    | Drake Maye  |         23.2 |
 +----------------+--------------+    +-------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total RBs: 2 (1 MIA, 1 NE)
-Top Projection: Drake Maye (NE) - 22.3 yards
+Top Projection: Drake Maye (NE) - 23.2 yards
 ================================================================================

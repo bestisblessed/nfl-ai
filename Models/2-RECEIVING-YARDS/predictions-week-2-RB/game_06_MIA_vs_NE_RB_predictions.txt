@@ -5,13 +5,13 @@ MIA vs NE | Week 2 2025 | RB Projected Receiving Yards
 +---------------+--------------+    +---------------------+--------------+
 | MIA Player    |   Pred Yards |    | NE Player           |   Pred Yards |
 +===============+==============+    +=====================+==============+
-| De'Von Achane |         26.2 |    | Antonio Gibson      |         12.7 |
-+---------------+--------------+    | Rhamondre Stevenson |         11.4 |
+| De'Von Achane |         28.8 |    | Rhamondre Stevenson |         13.7 |
++---------------+--------------+    | Antonio Gibson      |         12.4 |
                                     +---------------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total RBs: 3 (1 MIA, 2 NE)
-Top Projection: De'Von Achane (MIA) - 26.2 yards
+Top Projection: De'Von Achane (MIA) - 28.8 yards
 ================================================================================
