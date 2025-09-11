@@ -11,6 +11,10 @@ import sqlite3
 
 # Set up the page
 st.title('Player Dashboard')
+
+# Season selector
+selected_season = st.selectbox("Select Season:", [2025, 2024], index=0)
+
 df_teams = st.session_state['df_teams']
 df_games = st.session_state['df_games']
 df_playerstats = st.session_state['df_playerstats']
@@ -33,9 +37,9 @@ def fetch_player_names_and_image():
     SELECT DISTINCT player_display_name, headshot_url
     FROM PlayerStats
     WHERE position IN ('WR', 'TE')
-    AND season = 2024
+    AND season = ?
     """
-    player_data = pd.read_sql_query(query, conn)
+    player_data = pd.read_sql_query(query, conn, params=[selected_season])
     conn.close()
     
     player_names = player_data['player_display_name'].tolist()
@@ -50,7 +54,7 @@ def fetch_player_names_and_image():
 # 1. Fetch last 6 games and generate a graph using Plotly
 def fetch_last_6_games_and_plot(player_name):
     df = df_playerstats[(df_playerstats['player_display_name'] == player_name) & 
-                        (df_playerstats['season'] == 2024)]
+                        (df_playerstats['season'] == selected_season)]
     df = df[['week', 'receiving_yards', 'receiving_tds', 'rushing_tds', 'fantasy_points_ppr']].sort_values(by='week', ascending=False).head(6)
     df['total_touchdowns'] = df['receiving_tds'] + df['rushing_tds']
 
@@ -95,7 +99,7 @@ with col2:
 # 2. Fetch last 6 games function
 def fetch_last_6_games(player_name):
     df = df_playerstats[(df_playerstats['player_display_name'] == player_name) & 
-                        (df_playerstats['season'] == 2024)]
+                        (df_playerstats['season'] == selected_season)]
     # df = df[['week', 'receiving_yards', 'receiving_tds', 'rushing_tds', 'fantasy_points_ppr']].sort_values(by='week', ascending=False).head(6)
     df = df.sort_values(by='week', ascending=False).head(6)
     return df
