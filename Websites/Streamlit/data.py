@@ -136,31 +136,28 @@ for index, row in unique_qbs_with_urls.iterrows():
 print(f"Download complete: {downloaded_count} new images downloaded, {skipped_count} already existed.")
 
 
-### Connect to the copied SQLite database and export tables to CSV ###
-if os.path.exists('data/games.csv'): os.remove('data/games.csv')
-if os.path.exists('data/player_stats.csv'): os.remove('data/player_stats.csv')
-if os.path.exists('data/teams.csv'): os.remove('data/teams.csv')
-if os.path.exists('data/rosters.csv'): os.remove('data/rosters.csv')
+### Load CSV datasets into the SQLite database ###
 conn = sqlite3.connect('data/nfl.db')
-cursor = conn.cursor()
-cursor.execute("SELECT name FROM sqlite_master WHERE type='table';")
-tables = cursor.fetchall()
-for table_name_tuple in tables:
-    table_name = table_name_tuple[0]
-    df = pd.read_sql_query(f"SELECT * FROM {table_name}", conn)
-    output_file = os.path.join('data/', f"{table_name}.csv")
-    df.to_csv(output_file, index=False)
-    print(f"Table '{table_name}' saved to {output_file}")
-conn.close()
-print("All tables have been saved to CSV files.")
 
-# os.rename('data/games.csv', 'data/Games.csv'); print("Renamed 'data/games.csv' to 'data/Games.csv'.")
-# os.rename('data/teams.csv', 'data/Teams.csv'); print("Renamed 'data/teams.csv' to 'data/Teams.csv'.")
-# os.rename('data/rosters.csv', 'data/Rosters.csv'); print("Renamed 'data/rosters.csv' to 'data/Rosters.csv'.")
-# shutil.copy('data/player_stats.csv', 'data/PlayerStats.csv')
-# shutil.copy('data/games.csv', 'data/Games.csv')
-# shutil.copy('data/teams.csv', 'data/Teams.csv')
-# shutil.copy('data/rosters.csv', 'data/Rosters.csv')
+csv_tables = {
+    'all_team_game_logs': 'data/all_team_game_logs.csv',
+    'all_team_game_logs_2024': 'data/SR-game-logs/all_teams_game_logs_2024.csv',
+    'all_teams_schedule_and_game_results_merged': 'data/all_teams_schedule_and_game_results_merged.csv',
+    'all_passing_rushing_receiving': 'data/all_passing_rushing_receiving.csv',
+    'nfl_odds_movements': 'data/odds/nfl_odds_movements.csv',
+    'nfl_odds_movements_circa': 'data/odds/nfl_odds_movements_circa.csv'
+}
+
+for table_name, csv_path in csv_tables.items():
+    if os.path.exists(csv_path):
+        df = pd.read_csv(csv_path)
+        df.to_sql(table_name, conn, if_exists='replace', index=False)
+        print(f"Loaded {csv_path} into table '{table_name}'")
+    else:
+        print(f"Skipped missing file: {csv_path}")
+
+conn.close()
+print("CSV datasets loaded into database.")
 
 ### Copy Odds Data ###
 os.makedirs('data/odds/', exist_ok=True)
