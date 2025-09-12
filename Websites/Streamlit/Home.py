@@ -7,6 +7,7 @@ from streamlit_lottie import st_lottie
 from PIL import Image
 import os
 import sqlite3
+import re
 
 # Clear session state if needed
 if 'first_time' not in st.session_state:
@@ -16,15 +17,39 @@ if 'first_time' not in st.session_state:
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DB_PATH = os.path.join(BASE_DIR, 'data', 'nfl.db')
 
-@st.cache_resource
 def get_connection():
     return sqlite3.connect(DB_PATH)
 
 @st.cache_data
-def load_table(table_name):
-    conn = get_connection()
+def get_existing_tables():
     try:
-        return pd.read_sql(f"SELECT * FROM {table_name}", conn)
+        with get_connection() as conn:
+            df_tables = pd.read_sql("SELECT name FROM sqlite_master WHERE type='table'", conn)
+        return set(df_tables['name'].astype(str).tolist())
+    except Exception as e:
+        st.error(f"Failed to enumerate database tables: {e}")
+        return set()
+
+
+def _is_valid_identifier(name: str) -> bool:
+    return bool(re.match(r'^[A-Za-z_][A-Za-z0-9_]*$', str(name)))
+
+
+@st.cache_data
+def load_table(table_name: str):
+    if not _is_valid_identifier(table_name):
+        st.error(f"Invalid table name: {table_name}")
+        return pd.DataFrame()
+
+    existing_tables = get_existing_tables()
+    if table_name not in existing_tables:
+        st.error(f"Table does not exist: {table_name}")
+        return pd.DataFrame()
+
+    safe_table = table_name.replace('"', '""')
+    try:
+        with get_connection() as conn:
+            return pd.read_sql(f'SELECT * FROM "{safe_table}"', conn)
     except Exception as e:
         st.error(f"Failed to load table '{table_name}': {e}")
         return pd.DataFrame()
