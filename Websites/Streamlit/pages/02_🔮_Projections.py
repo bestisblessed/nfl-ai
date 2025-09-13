@@ -136,6 +136,9 @@ if not available_weeks:
     st.error("No projection data available. Please ensure projection files are in data/projections/")
     st.stop()
 
+# NFC East teams
+NFC_EAST_TEAMS = ["DAL", "NYG", "PHI", "WAS"]
+
 # Create two-column layout with padding
 col1, padding, col2 = st.columns([1, 0.2, 2])
 
@@ -163,7 +166,10 @@ with col1:
     
     st.markdown("**Team**")
     all_teams = sorted(projections_df['team'].unique())
-    default_teams = all_teams
+    # Set default_teams to NFC East teams if present, else fallback to all_teams
+    default_teams = [team for team in NFC_EAST_TEAMS if team in all_teams]
+    if not default_teams:
+        default_teams = all_teams
     
     # Create columns for team selector and checkbox
     team_col1, team_col2 = st.columns([3, 1])
@@ -174,7 +180,7 @@ with col1:
             team_filter = st.multiselect(
                 "",
                 all_teams,
-                default=all_teams,
+                default=default_teams,
                 key="global_team_filter",
                 label_visibility="collapsed"
             )

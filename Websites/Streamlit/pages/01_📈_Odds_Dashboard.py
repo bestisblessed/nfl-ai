@@ -9,7 +9,7 @@ from matplotlib import dates as mdates
 
 # Page configuration
 st.set_page_config(
-    page_title="📈 Odds Dashboard",
+    page_title="Odds Dashboard",
     page_icon="📈",
     layout="wide"
 )
@@ -213,11 +213,11 @@ with col2:
         # Format time properly
         formatted_time = game['time'].replace('splits', '').strip().replace('pm', 'PM').replace('am', 'AM')
         
-        # Game Date - half size of title
-        st.markdown(f"<p style='font-size: 18px; margin: 5px 0;'>📅 <strong>{formatted_date}</strong></p>", unsafe_allow_html=True)
+        # Game Date - half size of title (emoji removed)
+        st.markdown(f"<p style='font-size: 18px; margin: 5px 0;'><strong>{formatted_date}</strong></p>", unsafe_allow_html=True)
         
-        # Game Time - bigger size
-        st.markdown(f"<p style='font-size: 16px; margin: 5px 0;'>🕐 <strong>{formatted_time}</strong></p>", unsafe_allow_html=True)
+        # Game Time - bigger size (emoji removed)
+        st.markdown(f"<p style='font-size: 16px; margin: 5px 0;'><strong>{formatted_time}</strong></p>", unsafe_allow_html=True)
         st.write("")
         df = pd.DataFrame({
             "Team": [game['teams'][0], game['teams'][1]],
@@ -233,7 +233,8 @@ with col2:
         for i, team in enumerate(game['teams']):
             # Use the appropriate column for each team (parallel layout)
             with col1 if i == 0 else col2:
-                with st.expander(f"📊 Odds Movement for {team}", expanded=False):
+                # Remove emoji from expander title
+                with st.expander(f"Odds Movement for {team}", expanded=False):
                     game_date_clean = game['game_date'].replace(' ', '').strip().lower()
                     game_time_clean = game['time'].strip().lower()
                     matchup_clean = game['matchup'].strip().lower()
