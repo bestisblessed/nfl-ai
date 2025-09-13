@@ -16,16 +16,35 @@ st.title('General Trends')
 # Season selector
 selected_season = st.selectbox("Select Season:", [2025, 2024], index=0)
 
-# df_teams = pd.read_csv('./data/Teams.csv')
-# df_games = pd.read_csv('./data/Games.csv')
-# df_playerstats = pd.read_csv('./data/PlayerStats.csv')
-df_teams = st.session_state['df_teams']
-df_games = st.session_state['df_games'] 
-df_playerstats = st.session_state['df_playerstats']
-df_team_game_logs = st.session_state['df_all_team_game_logs']
-df_team_game_logs_2024 = st.session_state['df_all_team_game_logs_2024']
-df_team_game_logs_2025 = st.session_state['df_all_team_game_logs_2025']
-df_schedule_and_game_results = st.session_state['df_schedule_and_game_results']
+# Load data files directly if not in session state
+if 'df_teams' not in st.session_state:
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    df_teams = pd.read_csv(os.path.join(current_dir, '../data', 'Teams.csv'))
+    df_games = pd.read_csv(os.path.join(current_dir, '../data', 'Games.csv'))
+    df_playerstats = pd.read_csv(os.path.join(current_dir, '../data', 'PlayerStats.csv'))
+    df_team_game_logs = pd.read_csv(os.path.join(current_dir, '../data', 'all_team_game_logs.csv'))
+    df_schedule_and_game_results = pd.read_csv(os.path.join(current_dir, '../data', 'all_teams_schedule_and_game_results_merged.csv'))
+    
+    # Load year-specific team game logs
+    df_team_game_logs_2024 = pd.read_csv(os.path.join(current_dir, '../data', 'SR-team-game-logs/all_team_game_logs_2024.csv'))
+    df_team_game_logs_2025 = pd.read_csv(os.path.join(current_dir, '../data', 'SR-team-game-logs/all_team_game_logs_2025.csv'))
+    
+    # Store in session state for future use
+    st.session_state['df_teams'] = df_teams
+    st.session_state['df_games'] = df_games
+    st.session_state['df_playerstats'] = df_playerstats
+    st.session_state['df_all_team_game_logs'] = df_team_game_logs
+    st.session_state['df_schedule_and_game_results'] = df_schedule_and_game_results
+    st.session_state['df_all_team_game_logs_2024'] = df_team_game_logs_2024
+    st.session_state['df_all_team_game_logs_2025'] = df_team_game_logs_2025
+else:
+    df_teams = st.session_state['df_teams']
+    df_games = st.session_state['df_games'] 
+    df_playerstats = st.session_state['df_playerstats']
+    df_team_game_logs = st.session_state['df_all_team_game_logs']
+    df_team_game_logs_2024 = st.session_state['df_all_team_game_logs_2024']
+    df_team_game_logs_2025 = st.session_state['df_all_team_game_logs_2025']
+    df_schedule_and_game_results = st.session_state['df_schedule_and_game_results']
 
 # Select the appropriate dataset based on season
 if selected_season == 2025:

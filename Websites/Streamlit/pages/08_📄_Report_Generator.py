@@ -14,12 +14,21 @@ st.write('Select two teams to generate a detailed matchup report, including team
 # Season selector
 selected_season = st.selectbox("Select Season:", [2025, 2024], index=0)
 
-# teams_df = st.session_state['df_teams']
-games_df = st.session_state['df_games'] 
-player_stats_df = st.session_state['df_playerstats']
+# Load data files directly if not in session state
+if 'df_games' not in st.session_state:
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    df_games = pd.read_csv(os.path.join(current_dir, '../data', 'Games.csv'))
+    df_playerstats = pd.read_csv(os.path.join(current_dir, '../data', 'PlayerStats.csv'))
+    
+    # Store in session state for future use
+    st.session_state['df_games'] = df_games
+    st.session_state['df_playerstats'] = df_playerstats
+else:
+    df_games = st.session_state['df_games'] 
+    df_playerstats = st.session_state['df_playerstats']
 
 # Team selection using selectbox with unique teams
-unique_teams = sorted(games_df['home_team'].unique())
+unique_teams = sorted(df_games['home_team'].unique())
 team1 = st.selectbox('Select Team 1:', options=unique_teams, index=unique_teams.index('BUF'))
 team2 = st.selectbox('Select Team 2:', options=unique_teams, index=unique_teams.index('MIA'))
 
@@ -27,8 +36,8 @@ team2 = st.selectbox('Select Team 2:', options=unique_teams, index=unique_teams.
 if st.button('Generate Report'):
     
     # Filter for recent matchups between the two teams
-    team_matchups = games_df[((games_df['home_team'] == team1) & (games_df['away_team'] == team2)) |
-                             ((games_df['home_team'] == team2) & (games_df['away_team'] == team1))]
+    team_matchups = df_games[((df_games['home_team'] == team1) & (df_games['away_team'] == team2)) |
+                             ((df_games['home_team'] == team2) & (df_games['away_team'] == team1))]
     last_10_games = team_matchups.sort_values(by='date', ascending=False).head(10)
 
     if last_10_games.empty:
@@ -58,20 +67,20 @@ if st.button('Generate Report'):
         st.write(f"Total points scored by {team2}: {team2_scores}")
         
         # Player-level statistics for current season players
-        current_players_team1 = player_stats_df[(player_stats_df['player_current_team'] == team1) & 
-                                                (player_stats_df['season'] == selected_season)]
-        current_players_team2 = player_stats_df[(player_stats_df['player_current_team'] == team2) & 
-                                                (player_stats_df['season'] == selected_season)]
+        current_players_team1 = df_playerstats[(df_playerstats['player_current_team'] == team1) & 
+                                                (df_playerstats['season'] == selected_season)]
+        current_players_team2 = df_playerstats[(df_playerstats['player_current_team'] == team2) & 
+                                                (df_playerstats['season'] == selected_season)]
 
         players_team1_names = current_players_team1['player_display_name'].unique()
         players_team2_names = current_players_team2['player_display_name'].unique()
 
-        historical_stats_team1 = player_stats_df[(player_stats_df['player_display_name'].isin(players_team1_names)) &
-                                                 ((player_stats_df['home_team'] == team1) & (player_stats_df['away_team'] == team2) |
-                                                  (player_stats_df['home_team'] == team2) & (player_stats_df['away_team'] == team1))]
-        historical_stats_team2 = player_stats_df[(player_stats_df['player_display_name'].isin(players_team2_names)) &
-                                                 ((player_stats_df['home_team'] == team1) & (player_stats_df['away_team'] == team2) |
-                                                  (player_stats_df['home_team'] == team2) & (player_stats_df['away_team'] == team1))]
+        historical_stats_team1 = df_playerstats[(df_playerstats['player_display_name'].isin(players_team1_names)) &
+                                                 ((df_playerstats['home_team'] == team1) & (df_playerstats['away_team'] == team2) |
+                                                  (df_playerstats['home_team'] == team2) & (df_playerstats['away_team'] == team1))]
+        historical_stats_team2 = df_playerstats[(df_playerstats['player_display_name'].isin(players_team2_names)) &
+                                                 ((df_playerstats['home_team'] == team1) & (df_playerstats['away_team'] == team2) |
+                                                  (df_playerstats['home_team'] == team2) & (df_playerstats['away_team'] == team1))]
 
         # Add player position to the player display name for both teams
         historical_stats_team1['player_name_with_position'] = historical_stats_team1['player_display_name'] + " (" + historical_stats_team1['position'] + ")"

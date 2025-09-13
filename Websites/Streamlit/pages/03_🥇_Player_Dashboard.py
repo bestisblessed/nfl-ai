@@ -22,12 +22,30 @@ st.title('Player Dashboard')
 # Always use 2025 data
 selected_season = 2025
 
-df_teams = st.session_state['df_teams']
-df_games = st.session_state['df_games']
-df_playerstats = st.session_state['df_playerstats']
-df_team_game_logs = st.session_state['df_all_team_game_logs']
-df_schedule_and_game_results = st.session_state['df_schedule_and_game_results']
-df_all_passing_rushing_receiving = st.session_state['df_all_passing_rushing_receiving']
+# Load data files directly if not in session state
+if 'df_teams' not in st.session_state:
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    df_teams = pd.read_csv(os.path.join(current_dir, '../data', 'Teams.csv'))
+    df_games = pd.read_csv(os.path.join(current_dir, '../data', 'Games.csv'))
+    df_playerstats = pd.read_csv(os.path.join(current_dir, '../data', 'PlayerStats.csv'))
+    df_team_game_logs = pd.read_csv(os.path.join(current_dir, '../data', 'all_team_game_logs.csv'))
+    df_schedule_and_game_results = pd.read_csv(os.path.join(current_dir, '../data', 'all_teams_schedule_and_game_results_merged.csv'))
+    df_all_passing_rushing_receiving = pd.read_csv(os.path.join(current_dir, '../data', 'all_passing_rushing_receiving.csv'))
+    
+    # Store in session state for future use
+    st.session_state['df_teams'] = df_teams
+    st.session_state['df_games'] = df_games
+    st.session_state['df_playerstats'] = df_playerstats
+    st.session_state['df_all_team_game_logs'] = df_team_game_logs
+    st.session_state['df_schedule_and_game_results'] = df_schedule_and_game_results
+    st.session_state['df_all_passing_rushing_receiving'] = df_all_passing_rushing_receiving
+else:
+    df_teams = st.session_state['df_teams']
+    df_games = st.session_state['df_games']
+    df_playerstats = st.session_state['df_playerstats']
+    df_team_game_logs = st.session_state['df_all_team_game_logs']
+    df_schedule_and_game_results = st.session_state['df_schedule_and_game_results']
+    df_all_passing_rushing_receiving = st.session_state['df_all_passing_rushing_receiving']
 
 # Load the comprehensive player data
 current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -320,6 +338,8 @@ def plot_last_20_games_reception_trend(player_name):
     with table_col:
         # st.markdown("**Game Data**")
         # Display only essential columns for the narrow table
+        st.markdown("")
+        st.markdown("")
         st.markdown(" ")
         st.markdown(" ")
         st.markdown(" ")
@@ -329,7 +349,7 @@ def plot_last_20_games_reception_trend(player_name):
         table_data = recent_games[['game_id', 'rec_long']].copy()
         # Reverse order to show most recent games first
         table_data = table_data.iloc[::-1]
-        st.dataframe(table_data, use_container_width=True, height=400)
+        st.dataframe(table_data, use_container_width=True, height=350)
 
 if player_name is not None:
     plot_last_20_games_reception_trend(player_name)

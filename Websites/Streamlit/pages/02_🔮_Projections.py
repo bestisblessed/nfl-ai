@@ -290,7 +290,7 @@ if len(prop_types) > 0:
             else:
                 st.markdown(f"<div style='font-size: 0.85rem; margin-bottom: 0.3rem;'><strong>Min {prop_type.split()[0]} Yards</strong></div>", unsafe_allow_html=True)
                 min_yards = st.slider(
-                    "",
+                    f"Min {prop_type.split()[0]} Yards",
                     min_val, 
                     max_val, 
                     min_val,  # Start at minimum to include all players
@@ -301,7 +301,7 @@ if len(prop_types) > 0:
             # Add confidence slider for this prop type (after yards slider)
             st.markdown("<div style='font-size: 0.85rem; margin-bottom: 0.3rem;'><strong>Min Confidence %</strong></div>", unsafe_allow_html=True)
             min_confidence = st.slider(
-                "",
+                "Min Confidence %",
                 min_value=0,
                 max_value=100,
                 value=0,

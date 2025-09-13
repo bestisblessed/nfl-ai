@@ -18,10 +18,21 @@ st.title('2025 NFL Season Division Standings')
 # Season selector
 selected_season = st.selectbox("Select Season:", [2025, 2024], index=0)
 
-# Load data
-df_teams = st.session_state['df_teams']
-df_games = st.session_state['df_games'] 
-df_playerstats = st.session_state['df_playerstats']
+# Load data files directly if not in session state
+if 'df_teams' not in st.session_state:
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    df_teams = pd.read_csv(os.path.join(current_dir, '../data', 'Teams.csv'))
+    df_games = pd.read_csv(os.path.join(current_dir, '../data', 'Games.csv'))
+    df_playerstats = pd.read_csv(os.path.join(current_dir, '../data', 'PlayerStats.csv'))
+    
+    # Store in session state for future use
+    st.session_state['df_teams'] = df_teams
+    st.session_state['df_games'] = df_games
+    st.session_state['df_playerstats'] = df_playerstats
+else:
+    df_teams = st.session_state['df_teams']
+    df_games = st.session_state['df_games'] 
+    df_playerstats = st.session_state['df_playerstats']
 
 # Filter the games to the selected season
 # games_2023 = df_games[df_games['season'] == 2023]
