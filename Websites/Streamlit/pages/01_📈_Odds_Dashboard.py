@@ -5,6 +5,8 @@ import json
 import re
 from streamlit_modal import Modal
 import matplotlib.pyplot as plt
+from matplotlib.ticker import FuncFormatter
+from matplotlib import dates as mdates
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -133,6 +135,62 @@ if not games_df.empty:
     )
 else:
     games_with_sufficient_data = []
+
+# Normalize matchup and compute Circa upcoming-week subset once for reuse in the loop below
+def normalize_matchup(matchup):
+    return str(matchup).lower().replace('  ', ' ').strip()
+
+def format_month_day_with_ordinal(dt):
+    day = dt.day
+    if 11 <= day % 100 <= 13:
+        suffix = 'th'
+    else:
+        suffix = {1: 'st', 2: 'nd', 3: 'rd'}.get(day % 10, 'th')
+    return dt.strftime('%b ') + f"{day}{suffix}"
+
+def format_month_day_hour_with_ordinal(dt):
+    day = dt.day
+    if 11 <= day % 100 <= 13:
+        suffix = 'th'
+    else:
+        suffix = {1: 'st', 2: 'nd', 3: 'rd'}.get(day % 10, 'th')
+    month_day = dt.strftime('%b ') + f"{day}{suffix}"
+    hour12 = dt.strftime('%I').lstrip('0')
+    if hour12 == '':
+        hour12 = '12'
+    am_pm = dt.strftime('%p').lower()
+    return f"{month_day} {hour12}{am_pm}"
+
+def format_month_day_hour_compact(dt):
+    month_day = dt.strftime('%b ') + str(dt.day)
+    hour12 = dt.strftime('%I').lstrip('0') or '12'
+    am_pm_short = 'a' if dt.strftime('%p') == 'AM' else 'p'
+    return f"{month_day}, {hour12}{am_pm_short}"
+
+def format_month_day_hour_simple(dt):
+    month_day = dt.strftime('%b ') + str(dt.day)
+    hour12 = dt.strftime('%I').lstrip('0') or '12'
+    am_pm = dt.strftime('%p')
+    return f"{month_day}, {hour12} {am_pm}"
+
+def format_numeric_md_hour(dt):
+    month = dt.month
+    day = dt.day
+    hour12 = dt.strftime('%I').lstrip('0') or '12'
+    am_pm_lower = dt.strftime('%p').lower()
+    # Use Matplotlib mathtext superscript (ASCII-only, no Unicode)
+    ampm_small = f"$^{{\\mathrm{{{am_pm_lower}}}}}$"
+    return f"{month}/{day} {hour12}{ampm_small}"
+
+if upcoming_matchups and (not df_nfl_odds_movements_circa.empty) and ('matchup' in df_nfl_odds_movements_circa.columns):
+    upcoming_matchups_normalized = [normalize_matchup(m) for m in upcoming_matchups]
+    circa_matchups_normalized = df_nfl_odds_movements_circa['matchup'].apply(normalize_matchup)
+    upcoming_week_games = df_nfl_odds_movements_circa[
+        circa_matchups_normalized.isin(upcoming_matchups_normalized)
+    ]
+else:
+    upcoming_week_games = df_nfl_odds_movements_circa
+
 for _, game in games_with_sufficient_data.iterrows():
     st.markdown(f"<h2 style='font-weight: bold; color: #512D6D; text-shadow: -1px -1px 0 #C5B783, 1px -1px 0 #C5B783, -1px 1px 0 #C5B783, 1px 1px 0 #C5B783;'>{game['teams'][0]} vs {game['teams'][1]}</h2>", unsafe_allow_html=True)
     
@@ -155,7 +213,7 @@ for _, game in games_with_sufficient_data.iterrows():
         "Total": [game['total'][0], game['total'][1]]
     })
     st.table(df.set_index('Team'))
-    st.divider()
+
     for team in game['teams']:
         modal = Modal(f"Odds Movement for {team}", key=f"modal_{team}_{game['game_date']}_{game['time']}")
         if st.button(f"See odds movement for {team}", key=f"button_{team}_{game['day_and_matchup_column_name']}_{game['time']}"):
@@ -185,82 +243,59 @@ for _, game in games_with_sufficient_data.iterrows():
                     st.dataframe(filtered_data[['timestamp', 'sportsbook', 'odds_before', 'odds_after']], use_container_width=True)
                 else:
                     st.write("No odds movement data available for this game.")
-    st.divider()
-# Filter odds data to only include upcoming games (using the same logic as above)
-if upcoming_matchups:
-    # Create a more flexible matching approach for Circa data
-    def normalize_matchup(matchup):
-        """Normalize matchup string for comparison"""
-        return matchup.lower().replace('  ', ' ').strip()
-    
-    # Normalize both the upcoming matchups and the Circa data
-    upcoming_matchups_normalized = [normalize_matchup(m) for m in upcoming_matchups]
-    circa_matchups_normalized = df_nfl_odds_movements_circa['matchup'].apply(normalize_matchup)
-    
-    # Filter Circa data based on normalized matchups
-    upcoming_week_games = df_nfl_odds_movements_circa[
-        circa_matchups_normalized.isin(upcoming_matchups_normalized)
-    ]
-    
-else:
-    upcoming_week_games = df_nfl_odds_movements_circa
 
-# Get matchups with sufficient data from upcoming week games
-filtered_matchups = (
-    upcoming_week_games.groupby('matchup')
-    .filter(lambda x: len(x) >= 3)['matchup']
-    .unique()
-)
-if len(filtered_matchups) > 0:
-    selected_matchup = st.selectbox("Select Matchup", filtered_matchups)
-else:
-    st.warning("No games with sufficient odds movement data found.")
-    selected_matchup = None
-if selected_matchup:
-    selected_data = upcoming_week_games[upcoming_week_games['matchup'] == selected_matchup].copy()
-    # Clean and convert odds data, filtering out invalid entries
-    # Replace 'PK' with 0 (Pick'em is valid)
-    selected_data.loc[:, 'team1_odds_before'] = selected_data['team1_odds_before'].replace('PK', 0)
-    selected_data.loc[:, 'team2_odds_before'] = selected_data['team2_odds_before'].replace('PK', 0)
-
-    # Convert to numeric, coercing errors to NaN
-    selected_data.loc[:, 'team1_odds_before'] = pd.to_numeric(selected_data['team1_odds_before'], errors='coerce')
-    selected_data.loc[:, 'team2_odds_before'] = pd.to_numeric(selected_data['team2_odds_before'], errors='coerce')
-
-    # Filter out rows where either team's odds are invalid (NaN)
-    selected_data = selected_data.dropna(subset=['team1_odds_before', 'team2_odds_before'])
-    # Convert time column with error handling
-    try:
-        selected_data.loc[:, 'time_before'] = pd.to_datetime(selected_data['time_before'], format='%b %d %I:%M%p')
-    except:
-        # Fallback: try different datetime formats or use index as time
+    # Inline odds movement graph for this matchup using Circa data (moved below modal buttons)
+    selected_matchup = game['matchup']
+    if isinstance(upcoming_week_games, pd.DataFrame) and ('matchup' in upcoming_week_games.columns) and (len(upcoming_week_games) > 0):
         try:
-            selected_data.loc[:, 'time_before'] = pd.to_datetime(selected_data['time_before'], errors='coerce')
-        except:
-            selected_data.loc[:, 'time_before'] = pd.date_range(start='2024-01-01', periods=len(selected_data), freq='H')
-    # Create the plot with error handling
-    try:
-        import matplotlib.pyplot as plt
-        fig, ax = plt.subplots(figsize=(8, 4))
-        
-        # Check if we have valid data to plot after filtering
-        if len(selected_data) > 0 and not selected_data['time_before'].isna().all():
-            ax.plot(selected_data['time_before'], selected_data['team1_odds_before'], label=selected_matchup.split(' vs ')[0])
-            ax.plot(selected_data['time_before'], selected_data['team2_odds_before'], label=selected_matchup.split(' vs ')[1])
-            ax.set_title(f'Odds Movement: {selected_matchup}')
-            ax.set_xlabel('Time of Odds Change')
-            ax.set_ylabel('Odds')
-            plt.xticks(rotation=45)
-            plt.legend()
-            plt.grid(True)
-            st.pyplot(fig, use_container_width=False)
-        else:
-            st.warning("No valid odds data available for plotting this matchup. Some data points may have been filtered out due to invalid odds values (like '-').")
-    except Exception as e:
-        st.error(f"Error creating plot: {str(e)}")
-        st.write("Raw data for debugging:")
-        st.dataframe(selected_data)
+            matchup_mask = upcoming_week_games['matchup'].apply(normalize_matchup) == normalize_matchup(selected_matchup)
+            selected_data = upcoming_week_games[matchup_mask].copy()
+            if len(selected_data) > 0:
+                selected_data.loc[:, 'team1_odds_before'] = selected_data['team1_odds_before'].replace('PK', 0)
+                selected_data.loc[:, 'team2_odds_before'] = selected_data['team2_odds_before'].replace('PK', 0)
+                selected_data.loc[:, 'team1_odds_before'] = pd.to_numeric(selected_data['team1_odds_before'], errors='coerce')
+                selected_data.loc[:, 'team2_odds_before'] = pd.to_numeric(selected_data['team2_odds_before'], errors='coerce')
+                selected_data = selected_data.dropna(subset=['team1_odds_before', 'team2_odds_before'])
+                try:
+                    selected_data.loc[:, 'time_before'] = pd.to_datetime(selected_data['time_before'], format='%b %d %I:%M%p')
+                except Exception:
+                    try:
+                        selected_data.loc[:, 'time_before'] = pd.to_datetime(selected_data['time_before'], errors='coerce')
+                    except Exception:
+                        selected_data.loc[:, 'time_before'] = pd.date_range(start='2024-01-01', periods=len(selected_data), freq='H')
+                try:
+                    fig, ax = plt.subplots(figsize=(8, 4))
+                    if len(selected_data) > 0 and not selected_data['time_before'].isna().all():
+                        ax.plot(selected_data['time_before'], selected_data['team1_odds_before'], label=game['teams'][0])
+                        ax.plot(selected_data['time_before'], selected_data['team2_odds_before'], label=game['teams'][1])
+                        ax.set_title(f"Odds Movement: {game['teams'][0]} vs {game['teams'][1]}")
+                        ax.set_xlabel('Date')
+                        ax.set_ylabel('Spread')
+                        ax.yaxis.set_major_formatter(FuncFormatter(lambda v, pos: f"+{v:g}" if v > 0 else ("0" if v == 0 else f"{v:g}")))
+                        ax.xaxis.set_major_formatter(FuncFormatter(lambda v, pos: format_numeric_md_hour(mdates.num2date(v))))
+                        plt.xticks(rotation=45)
+                        plt.legend()
+                        plt.grid(True)
+                        st.pyplot(fig, use_container_width=False)
+                    else:
+                        st.warning("No valid odds data available for plotting this matchup.")
+                except Exception as e:
+                    st.error(f"Error creating plot: {str(e)}")
+                    st.write("Raw data for debugging:")
+                    st.dataframe(selected_data)
+            else:
+                st.warning("No odds movement data found for this matchup.")
+        except Exception as e:
+            st.error(f"Error preparing odds data: {str(e)}")
+    else:
+        st.warning("No Circa odds data available to plot for this matchup.")
+
+    
+    
+# ---- Contact Me ---- #
 st.divider()
-st.subheader("Archive")
-archive_options = ["2022 Season", "2021 Season", "2020 Season", "Older Seasons"]
-selected_archive = st.selectbox("Select Archive", options=archive_options)
+st.header('Contact Me')
+# st.write('##')
+# st.write('Hover over this text for more information [?](Your help text here)')
+st.markdown('By Tyler Durette')
+st.markdown("NFL AI © 2023 | [GitHub](https://github.com/bestisblessed) | [Contact Me](tyler.durette@gmail.com)")
