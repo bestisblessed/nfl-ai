@@ -9,7 +9,7 @@ from PIL import Image
 import os
 
 # Configure page
-st.set_page_config(page_title="NFL AI", page_icon="🏈")
+st.set_page_config(page_title="NFL AI", page_icon="🏈", layout="wide")
 
 # Clear all Streamlit cache
 st.cache_data.clear()
