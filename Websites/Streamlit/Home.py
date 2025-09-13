@@ -1,4 +1,5 @@
 import streamlit as st
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -6,6 +7,9 @@ import requests
 from streamlit_lottie import st_lottie
 from PIL import Image
 import os
+
+# Configure page
+st.set_page_config(page_title="NFL AI", page_icon="🏈")
 
 # Clear all Streamlit cache
 st.cache_data.clear()
@@ -99,8 +103,6 @@ st.session_state['df_games'] = df_games
 st.session_state['df_playerstats'] = df_playerstats
 st.session_state['df_schedule_and_game_results'] = df_schedule_and_game_results
 st.session_state['df_all_passing_rushing_receiving'] = df_all_passing_rushing_receiving
-
-st.set_page_config(page_title="NFL AI", page_icon="🏈", layout="wide")
 
 # ---- Titles ---- #
 st.title('NFL AI')

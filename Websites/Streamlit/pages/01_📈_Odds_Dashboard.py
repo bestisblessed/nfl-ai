@@ -8,6 +8,13 @@ import matplotlib.pyplot as plt
 from matplotlib.ticker import FuncFormatter
 from matplotlib import dates as mdates
 
+# Page configuration
+st.set_page_config(
+    page_title="📈 Odds Dashboard",
+    page_icon="📈",
+    layout="centered"
+)
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Load data files directly
