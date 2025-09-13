@@ -12,8 +12,8 @@ import sqlite3
 st.set_page_config(
     page_title="🥇 Player Dashboard",
     page_icon="🥇",
-    # layout="wide"
-    layout="centered"
+    layout="wide"
+    # layout="centered"
 )
 
 # Set up the page
@@ -48,7 +48,7 @@ df_player_data_filtered = df_player_data[
 ]
 
 # Helper function to get recent games data (current season + previous season if needed)
-def get_recent_games_data(player_name, num_games=6):
+def get_recent_games_data(player_name, num_games=10):
     """
     Get the most recent games for a player, using previous season data if current season has insufficient games.
     """
@@ -77,13 +77,15 @@ st.divider()
 
 # Fetch player names from CSV data and headshots from database
 def fetch_player_names_and_image():
-    # Check if we have any player data for the selected season
-    if df_player_data_filtered.empty:
+    # Get all players from the full dataset
+    all_players_data = df_player_data[df_player_data['year'] == selected_season]
+    
+    if all_players_data.empty:
         st.warning(f"No player data available for {selected_season} season yet. Please select 2024 to view player statistics.")
         return None, None
     
     # Get unique player names from CSV
-    player_names = df_player_data_filtered['player'].unique().tolist()
+    player_names = all_players_data['player'].unique().tolist()
     player_names.sort()  # Sort alphabetically
     
     # Try to set default to Justin Jefferson, otherwise use first player
@@ -115,35 +117,54 @@ def fetch_player_names_and_image():
     
     return selected_player, headshot_url
 
-# 1. Fetch last 6 games and generate a graph using Plotly
-def fetch_last_6_games_and_plot(player_name):
+# 1. Fetch last 10 games and generate a graph using Plotly
+def fetch_last_10_games_and_plot(player_name):
     if player_name is None:
         return None, None
     
     # Get recent games data (current season + previous season if needed)
-    recent_games = get_recent_games_data(player_name, 6)
+    recent_games = get_recent_games_data(player_name, 10)
     
     if recent_games is None or recent_games.empty:
         return None, None
     
-    # Create a line chart with plotly for multiple metrics
+    # Create a line chart with plotly for continuous metrics
     fig = go.Figure()
 
-    fig.add_trace(go.Scatter(x=recent_games['x_position'], y=recent_games['rec_yds'], mode='lines+markers', name='Receiving Yards', line=dict(color='#FF4444')))
-    fig.add_trace(go.Scatter(x=recent_games['x_position'], y=recent_games['rec_td'], mode='lines+markers', name='Receiving TDs', line=dict(color='#FFFFFF')))
-    fig.add_trace(go.Scatter(x=recent_games['x_position'], y=recent_games['rec'], mode='lines+markers', name='Receptions', line=dict(color='#888888')))
+    # Receiving yards and receptions (continuous metrics that work well as lines)
+    fig.add_trace(go.Scatter(
+        x=recent_games['x_position'], 
+        y=recent_games['rec_yds'], 
+        mode='lines+markers+text', 
+        name='Receiving Yards', 
+        line=dict(color='#FF4444'),
+        text=recent_games['rec_yds'].astype(int),
+        textposition='top center',
+        textfont=dict(color='#FF4444', size=10)
+    ))
+    fig.add_trace(go.Scatter(
+        x=recent_games['x_position'], 
+        y=recent_games['rec'], 
+        mode='lines+markers+text', 
+        name='Receptions', 
+        line=dict(color='#888888'),
+        text=recent_games['rec'].astype(int),
+        textposition='top center',
+        textfont=dict(color='#888888', size=10)
+    ))
     
     # Create custom x-axis labels showing year and week
     x_labels = [f"{int(year)}-W{int(week):02d}" for year, week in zip(recent_games['year'], recent_games['week'])]
     
     fig.update_layout(
-        title=f"Last 6 Games for {player_name}",
-        xaxis_title='Game (Year-Week)',
+        title=f"Last 10 Games for {player_name}",
+        # xaxis_title='Game (Year-Week)',
         yaxis_title='Value',
         template="plotly_dark",  # To match the dark theme
         legend_title="Metrics",
         legend=dict(yanchor="top", y=0.99, xanchor="left", x=0.01),
         height=400,  # Fixed height for better tiling
+        title_font_size=16,  # Consistent title size
         # Use evenly spaced positions for the x-axis
         xaxis=dict(
             tickmode='array',  # Use an array for exact tick values
@@ -154,7 +175,7 @@ def fetch_last_6_games_and_plot(player_name):
     return recent_games, fig
 
 # 0. Player Input - Better organized layout
-col1, col2 = st.columns([1, 2])
+col1, spacer_col, col2 = st.columns([1, 0.1, 2])
 with col1:
     player_name, headshot_url = fetch_player_names_and_image()
     if player_name is not None and pd.notna(headshot_url):  # Check if player_name and URL exist
@@ -164,21 +185,70 @@ with col1:
             st.write(f"Could not load image for {player_name}")
     elif player_name is not None:
         st.write(f"No image available for {player_name}")
+
+with spacer_col:
+    st.write("")  # Empty spacer column
+
 with col2:
     if player_name is not None:
-        last_6_games, fig_last_6 = fetch_last_6_games_and_plot(player_name)
-        if fig_last_6 is not None:
-            st.plotly_chart(fig_last_6, use_container_width=True)
+        # Add overall stats metrics above the chart (2025 season only)
+        season_2025_data = df_player_data[(df_player_data['player'] == player_name) & (df_player_data['year'] == selected_season)]
+        
+        if not season_2025_data.empty:
+            st.markdown("")
+            st.markdown("#### 2025 Season Stats")
+            st.markdown("")
+            
+            # Get player position
+            player_position = season_2025_data['position'].iloc[0] if 'position' in season_2025_data.columns else 'Unknown'
+            
+            # Create metrics columns for better visual display
+            metric_col1, metric_col2, metric_col3 = st.columns(3)
+            
+            with metric_col1:
+                total_rec_yds = season_2025_data['rec_yds'].sum() if 'rec_yds' in season_2025_data.columns else 0
+                st.metric(
+                    label="Total Rec Yards",
+                    value=f"{total_rec_yds:.0f}",
+                    help="Total receiving yards (2025)"
+                )
+            
+            with metric_col2:
+                avg_rec_per_game = season_2025_data['rec'].mean() if 'rec' in season_2025_data.columns else 0
+                st.metric(
+                    label="Avg Rec/Game",
+                    value=f"{avg_rec_per_game:.1f}",
+                    help="Average receptions per game (2025)"
+                )
+            
+            with metric_col3:
+                total_tds = season_2025_data['rec_td'].sum() if 'rec_td' in season_2025_data.columns else 0
+                st.metric(
+                    label="Total TDs",
+                    value=f"{total_tds:.0f}",
+                    help="Total receiving touchdowns (2025)"
+                )
+        else:
+            st.markdown("#### 📊 2025 Season Stats")
+            st.info("No 2025 season data available yet")
+        
+        # Add some spacing before the chart
+        st.markdown("")
+        
+        # Then show the graph
+        last_10_games, fig_last_10 = fetch_last_10_games_and_plot(player_name)
+        if fig_last_10 is not None:
+            st.plotly_chart(fig_last_10, use_container_width=True)
 
 st.divider()
 
-# 2. Fetch last 6 games function
-def fetch_last_6_games(player_name):
+# 2. Fetch last 10 games function
+def fetch_last_10_games(player_name):
     if player_name is None:
         return None
     
     # Get recent games data (current season + previous season if needed)
-    recent_games = get_recent_games_data(player_name, 6)
+    recent_games = get_recent_games_data(player_name, 10)
     
     if recent_games is None or recent_games.empty:
         return None
@@ -187,18 +257,21 @@ def fetch_last_6_games(player_name):
     display_columns = ['year', 'week', 'team', 'opponent_team', 'rec', 'rec_yds', 'rec_td', 'rec_long', 'targets']
     available_columns = [col for col in display_columns if col in recent_games.columns]
     
-    return recent_games[available_columns]
+    # Reverse the order so most recent games appear first
+    return recent_games[available_columns].iloc[::-1]
 
-last_6_games = fetch_last_6_games(player_name)
-if last_6_games is not None:
-    st.subheader('Last 6 Games:')
-    st.write(last_6_games)
+last_10_games = fetch_last_10_games(player_name)
+if last_10_games is not None:
+    # st.subheader('Last 10 Games:')
+    st.subheader(f"Last 10 Games for {player_name}")
+    st.write("")
+    st.write(last_10_games)
 
 st.divider()
 
 # 3. Get player longest reception stats for the last 10 games across all opponents
 if player_name is not None:
-    st.subheader(f"Longest Reception Stats for {player_name}:")
+    st.subheader(f"Longest Receptions for {player_name}:")
 else:
     st.subheader("Longest Reception Stats:")
 
@@ -207,7 +280,7 @@ def plot_last_20_games_reception_trend(player_name):
         return None
     
     # Get recent games data (current season + previous season if needed)
-    recent_games = get_recent_games_data(player_name, 15)
+    recent_games = get_recent_games_data(player_name, 10)
     
     if recent_games is None or recent_games.empty:
         return None
@@ -216,26 +289,53 @@ def plot_last_20_games_reception_trend(player_name):
     recent_games = recent_games.dropna(subset=['rec_long'])
     recent_games = recent_games.drop_duplicates(subset=['game_id']).sort_values(by='game_id', ascending=True)
     
-    fig = go.Figure()
-    fig.add_trace(go.Scatter(
-        x=recent_games['game_id'],
-        y=recent_games['rec_long'],
-        mode='lines+markers',
-        marker=dict(color='#FF4444'),
-        name=player_name
-    ))
-    fig.update_layout(
-        title=f'Longest Reception in Last 15 Games for {player_name}',
-        xaxis_title='Game ID',
-        yaxis_title='Longest Reception (yards)',
-        xaxis_tickangle=-90,
-        template='plotly_dark',
-        height=400,  # Fixed height for better tiling
-    )
-    st.plotly_chart(fig, use_container_width=True)
+    # Create columns with spacing between graph and table
+    graph_col, spacer_col, table_col = st.columns([3.5, 0.05, 1])
+    
+    with graph_col:
+        fig = go.Figure()
+        fig.add_trace(go.Scatter(
+            x=recent_games['game_id'],
+            y=recent_games['rec_long'],
+            mode='lines+markers+text',
+            marker=dict(color='#800080'),
+            name=player_name,
+            text=recent_games['rec_long'].astype(int),
+            textposition='top center',
+            textfont=dict(color='#800080', size=12)
+        ))
+        fig.update_layout(
+            # title=f'Longest Reception in Last 15 Games for {player_name}',
+            xaxis_title='Game ID',
+            yaxis_title='Longest Reception (yards)',
+            xaxis_tickangle=-90,
+            template='plotly_dark',
+            height=500,  # Fixed height for better tiling
+        )
+        st.plotly_chart(fig, use_container_width=True)
+    
+    with spacer_col:
+        st.write("")  # Empty spacer column
+    
+    with table_col:
+        # st.markdown("**Game Data**")
+        # Display only essential columns for the narrow table
+        st.markdown(" ")
+        st.markdown(" ")
+        st.markdown(" ")
+        st.markdown(" ")
+        st.write("")
+        st.write("")
+        table_data = recent_games[['game_id', 'rec_long']].copy()
+        st.dataframe(table_data, use_container_width=True, height=400)
 
 if player_name is not None:
     plot_last_20_games_reception_trend(player_name)
+    st.divider()
+    st.write("")
+    st.write("")
+    
+    st.subheader(f"Reception Distribution for {player_name} (L20 Games):")
 
 def plot_reception_distribution(player_name):
     if player_name is None:
@@ -258,7 +358,7 @@ def plot_reception_distribution(player_name):
     )])
     
     fig.update_layout(
-        title=f'Reception Distribution for {player_name}',
+        # title=f'Reception Distribution for {player_name}',
         xaxis_title='Number of Receptions',
         yaxis_title='Frequency',
         template='plotly_dark',
@@ -269,35 +369,7 @@ def plot_reception_distribution(player_name):
 if player_name is not None:
     plot_reception_distribution(player_name)
 
-def get_player_reception_stats(player_name):
-    if player_name is None:
-        return None
-    
-    # Get recent games data (current season + previous season if needed)
-    recent_games = get_recent_games_data(player_name, 20)  # Get more games for better stats
-    
-    if recent_games is None or recent_games.empty:
-        return None
-    
-    # Filter to games with reception data
-    recent_games = recent_games[['game_id', 'rec_long']].dropna(subset=['rec_long'])
-    recent_games = recent_games.groupby('game_id').agg({'rec_long': 'max'}).reset_index()
-    recent_games = recent_games.sort_values(by='game_id', ascending=False)
-    
-    col1, col2 = st.columns([1, 2])
-    with col1:
-        st.write(recent_games)
-    with col2:
-        total_games = len(recent_games)
-        avg_rec_long = recent_games['rec_long'].mean()
-        max_rec_long = recent_games['rec_long'].max()
-        st.write("\n--- Overall Stats ---")
-        st.write(f"Total games: {total_games}")
-        st.write(f"Average longest reception: {avg_rec_long:.2f}")
-        st.write(f"Maximum longest reception: {max_rec_long}")
-
-if player_name is not None:
-    get_player_reception_stats(player_name)
+# Removed get_player_reception_stats function - data now displayed inline with the graph
 
 st.divider()
 
@@ -322,7 +394,8 @@ def fetch_historical_performance(player_name, opponent_team_abbr):
     display_columns = ['year', 'week', 'rec_yds', 'rec_td', 'rec', 'rec_long']
     available_columns = [col for col in display_columns if col in player_data.columns]
     
-    return player_data[available_columns].sort_values(by=['year', 'week'])
+    # Sort by year and week descending (most recent first), then reverse for display
+    return player_data[available_columns].sort_values(by=['year', 'week'], ascending=[False, False])
 
 if player_name is not None:
     st.subheader(f'Historical Performance')
@@ -358,7 +431,8 @@ def get_player_longest_reception_stats(player_name, opponent_team=None):
     longest_stats = player_data[['game_id', 'rec_yds', 'rec_long']].dropna(subset=['rec_yds'])
     longest_stats = longest_stats.sort_values(by='rec_yds', ascending=False).head(1)
     
-    return longest_stats
+    # Reverse order to show most recent first
+    return longest_stats.iloc[::-1]
 
 if player_name is not None:
     st.subheader(f'Longest Receptions Against {opponent_team_abbr}: ')

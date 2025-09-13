@@ -3741,8 +3741,8 @@ game_id,season,week,date,home_team,away_team,home_score,away_score,game_location
 2025_01_NYG_Washington,2025,1,2025-09-07,Washington,NYG,21.0,6.0,,W,0.0
 2025_01_MIN_Chicago,2025,1,2025-09-08,Chicago,MIN,24.0,27.0,,L,0.0
 2025_01_CHI_Minnesota,2025,1,2025-09-08,Minnesota,CHI,27.0,24.0,@,W,0.0
-2025_02_WAS_Green,2025,2,2025-09-11,Green,WAS,,,,,0.0
-2025_02_GNB_Washington,2025,2,2025-09-11,Washington,GNB,,,@,,0.0
+2025_02_WAS_Green,2025,2,2025-09-11,Green,WAS,27.0,18.0,,W,0.0
+2025_02_GNB_Washington,2025,2,2025-09-11,Washington,GNB,18.0,27.0,@,L,0.0
 2025_02_CAR_Arizona,2025,2,2025-09-14,Arizona,CAR,,,,,0.0
 2025_02_MIN_Atlanta,2025,2,2025-09-14,Atlanta,MIN,,,@,,0.0
 2025_02_CLE_Baltimore,2025,2,2025-09-14,Baltimore,CLE,,,,,0.0

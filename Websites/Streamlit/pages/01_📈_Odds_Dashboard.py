@@ -285,7 +285,7 @@ for _, game in games_with_sufficient_data.iterrows():
                         ax.plot(selected_data['time_before'], selected_data['team1_odds_before'], label=game['teams'][0])
                         ax.plot(selected_data['time_before'], selected_data['team2_odds_before'], label=game['teams'][1])
                         ax.set_title(f"Odds Movement: {game['teams'][0]} vs {game['teams'][1]}")
-                        ax.set_xlabel('Date')
+                        # ax.set_xlabel('Date')
                         ax.set_ylabel('Spread')
                         ax.yaxis.set_major_formatter(FuncFormatter(lambda v, pos: f"+{v:g}" if v > 0 else ("0" if v == 0 else f"{v:g}")))
                         ax.xaxis.set_major_formatter(FuncFormatter(lambda v, pos: format_numeric_md_hour(mdates.num2date(v))))
