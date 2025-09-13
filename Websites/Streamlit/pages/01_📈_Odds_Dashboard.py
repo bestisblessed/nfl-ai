@@ -3,7 +3,6 @@ import pandas as pd
 import os
 import json
 import re
-from streamlit_modal import Modal
 import matplotlib.pyplot as plt
 from matplotlib.ticker import FuncFormatter
 from matplotlib import dates as mdates
@@ -33,8 +32,8 @@ except FileNotFoundError:
     st.error(f"File not found: {csv_file_path_circa}. Please ensure the file exists.")
     df_nfl_odds_movements_circa = pd.DataFrame()
 
-# Create main container with custom width
-col1, col2, col3 = st.columns([1, 3, 1])
+# Create main container with wider layout
+col1, col2, col3 = st.columns([0.5, 5, 0.5])
 
 with col2:
     st.title('Odds Dashboard')
@@ -228,21 +227,13 @@ with col2:
         })
         st.table(df.set_index('Team'))
 
-        # Create two columns for the team buttons
+        # Create two columns for parallel expanders (like the old modal buttons)
         col1, col2 = st.columns(2)
         
         for i, team in enumerate(game['teams']):
-            modal = Modal(f"Odds Movement for {team}", key=f"modal_{team}_{game['game_date']}_{game['time']}")
-            
-            # Use the appropriate column for each team
+            # Use the appropriate column for each team (parallel layout)
             with col1 if i == 0 else col2:
-                if st.button(f"See odds movement for {team}", key=f"button_{team}_{game['day_and_matchup_column_name']}_{game['time']}", use_container_width=True):
-                    modal.open()
-            
-            st.write("")
-            
-            if modal.is_open():
-                with modal.container():
+                with st.expander(f"📊 Odds Movement for {team}", expanded=False):
                     game_date_clean = game['game_date'].replace(' ', '').strip().lower()
                     game_time_clean = game['time'].strip().lower()
                     matchup_clean = game['matchup'].strip().lower()
@@ -261,7 +252,7 @@ with col2:
                             ).dt.strftime('%-m/%d %-I:%M%p').str.lower()
                         sportsbooks = relevant_odds_movements['sportsbook'].unique().tolist()
                         default_index = sportsbooks.index('Circa') if 'Circa' in sportsbooks else 0
-                        selected_sportsbook = st.selectbox("Select Sportsbook", sportsbooks, index=default_index, key=f"sb_{team}")
+                        selected_sportsbook = st.selectbox("Select Sportsbook", sportsbooks, index=default_index, key=f"sb_{team}_{game['game_date']}_{game['time']}")
                         filtered_data = relevant_odds_movements[relevant_odds_movements['sportsbook'] == selected_sportsbook]
                         st.dataframe(filtered_data[['timestamp', 'sportsbook', 'odds_before', 'odds_after']], use_container_width=True)
                     else:
