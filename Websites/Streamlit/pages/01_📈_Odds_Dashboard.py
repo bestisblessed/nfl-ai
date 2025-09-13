@@ -214,10 +214,19 @@ for _, game in games_with_sufficient_data.iterrows():
     })
     st.table(df.set_index('Team'))
 
-    for team in game['teams']:
+    # Create two columns for the team buttons
+    col1, col2 = st.columns(2)
+    
+    for i, team in enumerate(game['teams']):
         modal = Modal(f"Odds Movement for {team}", key=f"modal_{team}_{game['game_date']}_{game['time']}")
-        if st.button(f"See odds movement for {team}", key=f"button_{team}_{game['day_and_matchup_column_name']}_{game['time']}"):
-            modal.open()
+        
+        # Use the appropriate column for each team
+        with col1 if i == 0 else col2:
+            if st.button(f"See odds movement for {team}", key=f"button_{team}_{game['day_and_matchup_column_name']}_{game['time']}", use_container_width=True):
+                modal.open()
+        
+        st.write("")
+        
         if modal.is_open():
             with modal.container():
                 game_date_clean = game['game_date'].replace(' ', '').strip().lower()
@@ -276,7 +285,7 @@ for _, game in games_with_sufficient_data.iterrows():
                         plt.xticks(rotation=45)
                         plt.legend()
                         plt.grid(True)
-                        st.pyplot(fig, use_container_width=False)
+                        st.pyplot(fig, use_container_width=True)
                     else:
                         st.warning("No valid odds data available for plotting this matchup.")
                 except Exception as e:

@@ -54,11 +54,11 @@ def get_recent_games_data(player_name, num_games=6):
     if player_data.empty:
         return None
     
-    # Sort by year and week descending to get most recent games first
-    player_data = player_data.sort_values(['year', 'week'], ascending=[False, False])
+    # Sort by year and week ascending to get oldest games first (for proper timeline)
+    player_data = player_data.sort_values(['year', 'week'], ascending=[True, True])
     
     # Take the most recent games up to the requested number
-    recent_games = player_data.head(num_games)
+    recent_games = player_data.tail(num_games)
     
     # Create evenly spaced positions for the x-axis
     recent_games = recent_games.copy()
@@ -122,9 +122,9 @@ def fetch_last_6_games_and_plot(player_name):
     # Create a line chart with plotly for multiple metrics
     fig = go.Figure()
 
-    fig.add_trace(go.Scatter(x=recent_games['x_position'], y=recent_games['rec_yds'], mode='lines+markers', name='Receiving Yards', line=dict(color='blue')))
-    fig.add_trace(go.Scatter(x=recent_games['x_position'], y=recent_games['rec_td'], mode='lines+markers', name='Receiving TDs', line=dict(color='red')))
-    fig.add_trace(go.Scatter(x=recent_games['x_position'], y=recent_games['rec'], mode='lines+markers', name='Receptions', line=dict(color='green')))
+    fig.add_trace(go.Scatter(x=recent_games['x_position'], y=recent_games['rec_yds'], mode='lines+markers', name='Receiving Yards', line=dict(color='#FF4444')))
+    fig.add_trace(go.Scatter(x=recent_games['x_position'], y=recent_games['rec_td'], mode='lines+markers', name='Receiving TDs', line=dict(color='#FFFFFF')))
+    fig.add_trace(go.Scatter(x=recent_games['x_position'], y=recent_games['rec'], mode='lines+markers', name='Receptions', line=dict(color='#888888')))
     
     # Create custom x-axis labels showing year and week
     x_labels = [f"{int(year)}-W{int(week):02d}" for year, week in zip(recent_games['year'], recent_games['week'])]
@@ -136,7 +136,7 @@ def fetch_last_6_games_and_plot(player_name):
         template="plotly_dark",  # To match the dark theme
         legend_title="Metrics",
         legend=dict(yanchor="top", y=0.99, xanchor="left", x=0.01),
-        
+        height=400,  # Fixed height for better tiling
         # Use evenly spaced positions for the x-axis
         xaxis=dict(
             tickmode='array',  # Use an array for exact tick values
@@ -146,8 +146,8 @@ def fetch_last_6_games_and_plot(player_name):
     )
     return recent_games, fig
 
-# 0. Player Input
-col1, col2 = st.columns([0.5, 1])
+# 0. Player Input - Better organized layout
+col1, col2 = st.columns([1, 2])
 with col1:
     player_name, headshot_url = fetch_player_names_and_image()
     if player_name is not None and pd.notna(headshot_url):  # Check if player_name and URL exist
@@ -161,7 +161,9 @@ with col2:
     if player_name is not None:
         last_6_games, fig_last_6 = fetch_last_6_games_and_plot(player_name)
         if fig_last_6 is not None:
-            st.plotly_chart(fig_last_6)
+            st.plotly_chart(fig_last_6, use_container_width=True)
+
+st.divider()
 
 # 2. Fetch last 6 games function
 def fetch_last_6_games(player_name):
@@ -179,10 +181,12 @@ def fetch_last_6_games(player_name):
     available_columns = [col for col in display_columns if col in recent_games.columns]
     
     return recent_games[available_columns]
+
 last_6_games = fetch_last_6_games(player_name)
 if last_6_games is not None:
     st.subheader('Last 6 Games:')
     st.write(last_6_games)
+
 st.divider()
 
 # 3. Get player longest reception stats for the last 10 games across all opponents
@@ -190,6 +194,7 @@ if player_name is not None:
     st.subheader(f"Longest Reception Stats for {player_name}:")
 else:
     st.subheader("Longest Reception Stats:")
+
 def plot_last_20_games_reception_trend(player_name):
     if player_name is None:
         return None
@@ -209,7 +214,7 @@ def plot_last_20_games_reception_trend(player_name):
         x=recent_games['game_id'],
         y=recent_games['rec_long'],
         mode='lines+markers',
-        marker=dict(color='blue'),
+        marker=dict(color='#FF4444'),
         name=player_name
     ))
     fig.update_layout(
@@ -217,11 +222,11 @@ def plot_last_20_games_reception_trend(player_name):
         xaxis_title='Game ID',
         yaxis_title='Longest Reception (yards)',
         xaxis_tickangle=-90,
-        template='plotly_white',
-        height=500,
-        # width=800
+        template='plotly_dark',
+        height=400,  # Fixed height for better tiling
     )
-    st.plotly_chart(fig)
+    st.plotly_chart(fig, use_container_width=True)
+
 if player_name is not None:
     plot_last_20_games_reception_trend(player_name)
 
@@ -241,7 +246,7 @@ def plot_reception_distribution(player_name):
     fig = go.Figure(data=[go.Histogram(
         x=recent_games['rec'],
         nbinsx=10,
-        marker_color='blue',
+        marker_color='#FF4444',
         opacity=0.75
     )])
     
@@ -249,9 +254,11 @@ def plot_reception_distribution(player_name):
         title=f'Reception Distribution for {player_name}',
         xaxis_title='Number of Receptions',
         yaxis_title='Frequency',
-        template='plotly_white'
+        template='plotly_dark',
+        height=400,  # Fixed height for better tiling
     )
-    st.plotly_chart(fig)
+    st.plotly_chart(fig, use_container_width=True)
+
 if player_name is not None:
     plot_reception_distribution(player_name)
 
@@ -270,7 +277,7 @@ def get_player_reception_stats(player_name):
     recent_games = recent_games.groupby('game_id').agg({'rec_long': 'max'}).reset_index()
     recent_games = recent_games.sort_values(by='game_id', ascending=False)
     
-    col1, col2 = st.columns([1, 2.5])
+    col1, col2 = st.columns([1, 2])
     with col1:
         st.write(recent_games)
     with col2:
@@ -281,8 +288,10 @@ def get_player_reception_stats(player_name):
         st.write(f"Total games: {total_games}")
         st.write(f"Average longest reception: {avg_rec_long:.2f}")
         st.write(f"Maximum longest reception: {max_rec_long}")
+
 if player_name is not None:
     get_player_reception_stats(player_name)
+
 st.divider()
 
 # 4. Fetch historical performance function
@@ -317,6 +326,7 @@ if player_name is not None:
         st.write(historical_performance)
     else:
         st.write("No historical data found for this player against the selected team.")
+
 st.divider()
 
 # 5. Get player longest reception stats function
@@ -350,4 +360,5 @@ if player_name is not None:
         st.write(longest_reception_stats)
     else:
         st.write("No reception data found for this player against the selected team.")
+
 st.divider()
