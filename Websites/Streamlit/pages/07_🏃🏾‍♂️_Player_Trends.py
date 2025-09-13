@@ -15,6 +15,10 @@ import streamlit as st
 
 ### --- Title and Data --- ###
 st.title('Player Trends')
+
+# Season selector
+selected_season = st.selectbox("Select Season:", [2025, 2024], index=0)
+
 # df_teams = pd.read_csv('./data/Teams.csv')
 # df_games = pd.read_csv('./data/Games.csv')
 # df_playerstats = pd.read_csv('./data/PlayerStats.csv')
@@ -39,14 +43,14 @@ with tab1:
 ### SACKS ###
     st.header('Quarterback Sack Rankings')
     # df_playerstats = pd.read_csv('./data/PlayerStats.csv')
-    qb_2024_stats = df_playerstats[(df_playerstats['position'] == 'QB') & (df_playerstats['season'] == 2024)]
-    qb_sacked_2024 = qb_2024_stats.groupby('player_display_name')['sacks'].sum().reset_index()
-    qb_sacked_ranked_2024 = qb_sacked_2024.sort_values(by='sacks')
-    plt.figure(figsize=(12, len(qb_sacked_ranked_2024) / 2))
-    bars = plt.barh(qb_sacked_ranked_2024['player_display_name'], qb_sacked_ranked_2024['sacks'], color='skyblue')
+    qb_selected_stats = df_playerstats[(df_playerstats['position'] == 'QB') & (df_playerstats['season'] == selected_season)]
+    qb_sacked_selected = qb_selected_stats.groupby('player_display_name')['sacks'].sum().reset_index()
+    qb_sacked_ranked_selected = qb_sacked_selected.sort_values(by='sacks')
+    plt.figure(figsize=(12, len(qb_sacked_ranked_selected) / 2))
+    bars = plt.barh(qb_sacked_ranked_selected['player_display_name'], qb_sacked_ranked_selected['sacks'], color='skyblue')
     plt.xlabel('Number of Sacks', fontsize=32)
     plt.ylabel('Quarterbacks', fontsize=32)
-    plt.title('Number of Sacks for NFL Quarterbacks in 2024', fontsize=16)
+    plt.title(f'Number of Sacks for NFL Quarterbacks in {selected_season}', fontsize=16)
     plt.xticks(fontsize=8)
     plt.yticks(fontsize=8)
     plt.bar_label(bars)
@@ -54,14 +58,14 @@ with tab1:
 
     ### INTERCEPTIONS ###
     st.header('Quarterback Interception Rankings')
-    qb_interceptions_stats = df_playerstats[(df_playerstats['position'] == 'QB') & (df_playerstats['season'] == 2024)]
-    qb_interceptions_2024 = qb_interceptions_stats.groupby('player_display_name')['interceptions'].sum().reset_index()
-    qb_interceptions_ranked_2024 = qb_interceptions_2024.sort_values(by='interceptions')
-    plt.figure(figsize=(12, len(qb_interceptions_ranked_2024) / 2))
-    bars = plt.barh(qb_interceptions_ranked_2024['player_display_name'], qb_interceptions_ranked_2024['interceptions'], color='salmon')
+    qb_interceptions_stats = df_playerstats[(df_playerstats['position'] == 'QB') & (df_playerstats['season'] == selected_season)]
+    qb_interceptions_selected = qb_interceptions_stats.groupby('player_display_name')['interceptions'].sum().reset_index()
+    qb_interceptions_ranked_selected = qb_interceptions_selected.sort_values(by='interceptions')
+    plt.figure(figsize=(12, len(qb_interceptions_ranked_selected) / 2))
+    bars = plt.barh(qb_interceptions_ranked_selected['player_display_name'], qb_interceptions_ranked_selected['interceptions'], color='salmon')
     plt.xlabel('Number of Interceptions', fontsize=32)
     plt.ylabel('Quarterbacks', fontsize=32)
-    plt.title('Number of Interceptions for NFL Quarterbacks in 2024', fontsize=16)
+    plt.title(f'Number of Interceptions for NFL Quarterbacks in {selected_season}', fontsize=16)
     plt.xticks(fontsize=8)
     plt.yticks(fontsize=8)
     plt.bar_label(bars)

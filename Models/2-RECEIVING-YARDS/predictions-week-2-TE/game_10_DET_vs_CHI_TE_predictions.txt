@@ -5,12 +5,12 @@ DET vs CHI | Week 2 2025 | TE Projected Receiving Yards
 +--------------+--------------+    +--------------+--------------+
 | DET Player   |   Pred Yards |    | CHI Player   |   Pred Yards |
 +==============+==============+    +==============+==============+
-| Sam LaPorta  |         58.2 |    | Cole Kmet    |         20.6 |
+| Sam LaPorta  |         56.8 |    | Cole Kmet    |         14.5 |
 +--------------+--------------+    +--------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total TEs: 2 (1 DET, 1 CHI)
-Top Projection: Sam LaPorta (DET) - 58.2 yards
+Top Projection: Sam LaPorta (DET) - 56.8 yards
 ================================================================================

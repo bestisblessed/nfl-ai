@@ -1,5 +1,5 @@
-Player,3DAtt,3DConv,3D%,4DAtt,4DConv,4D%,RZAtt,RZTD,RZPct,Team
-Team Stats,214,100,46.7,19,10,52.6,61,39,63.9,cin
-Opp. Stats,207,87,42.0,27,16,59.3,53,36,67.9,cin
+Player,3DAtt,3DConv,4DAtt,4DConv,4D%,RZAtt,RZTD,RZPct,Team
+Team Stats,214,100,46.7%,19,10,52.6%,61,39,63.9%,cin
+Opp. Stats,207,87,42.0%,27,16,59.3%,53,36,67.9%,cin
 Lg Rank Offense,,,5,,,21,,,5,cin
 Lg Rank Defense,,,23,,,19,,,30,cin

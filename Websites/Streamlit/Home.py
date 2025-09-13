@@ -64,8 +64,80 @@ df_playerstats = load_table('PlayerStats')
 df_schedule_and_game_results = load_table('all_teams_schedule_and_game_results_merged')
 df_all_passing_rushing_receiving = load_table('all_passing_rushing_receiving')
 
+# csv_file_path_all_team_game_logs = os.path.join(BASE_DIR, 'data/all_team_game_logs.csv')
+# csv_file_path_all_team_game_logs_2024 = os.path.join(BASE_DIR, 'data/SR-game-logs/all_teams_game_logs_2024.csv')
+# csv_file_path_all_team_game_logs_2025 = os.path.join(BASE_DIR, 'data/SR-game-logs/all_teams_game_logs_2025.csv')
+# csv_file_path_odds = os.path.join(BASE_DIR, 'data/odds/nfl_odds_movements.csv')
+# csv_file_path_circa = os.path.join(BASE_DIR, 'data/odds/nfl_odds_movements_circa.csv')
+# csv_file_path_teams = os.path.join(BASE_DIR, 'data/Teams.csv')
+# csv_file_path_games = os.path.join(BASE_DIR, 'data/Games.csv')
+# csv_file_path_playerstats = os.path.join(BASE_DIR, 'data/PlayerStats.csv')
+# csv_file_path_schedule_and_game_results = os.path.join(BASE_DIR, 'data/all_teams_schedule_and_game_results_merged.csv')
+# csv_file_path_all_passing_rushing_receiving = os.path.join(BASE_DIR, 'data/all_passing_rushing_receiving.csv')
+
+# try:
+#     df_all_team_game_logs = pd.read_csv(csv_file_path_all_team_game_logs)
+# except FileNotFoundError:
+#     st.error(f"File not found: {csv_file_path_all_team_game_logs}. Please ensure the file exists.")
+#     df_all_team_game_logs = pd.DataFrame()
+
+# try:
+#     df_all_team_game_logs_2024 = pd.read_csv(csv_file_path_all_team_game_logs_2024)
+# except FileNotFoundError:
+#     st.error(f"File not found: {csv_file_path_all_team_game_logs_2024}. Please ensure the file exists.")
+#     df_all_team_game_logs_2024 = pd.DataFrame()
+
+# try:
+#     df_all_team_game_logs_2025 = pd.read_csv(csv_file_path_all_team_game_logs_2025)
+# except FileNotFoundError:
+#     st.error(f"File not found: {csv_file_path_all_team_game_logs_2025}. Please ensure the file exists.")
+#     df_all_team_game_logs_2025 = pd.DataFrame()
+
+# try:
+#     df_nfl_odds_movements = pd.read_csv(csv_file_path_odds)
+# except FileNotFoundError:
+#     st.error(f"File not found: {csv_file_path_odds}. Please ensure the file exists.")
+#     df_nfl_odds_movements = pd.DataFrame()
+
+# try:
+#     df_nfl_odds_movements_circa = pd.read_csv(csv_file_path_circa)
+# except FileNotFoundError:
+#     st.error(f"File not found: {csv_file_path_circa}. Please ensure the file exists.")
+#     df_nfl_odds_movements_circa = pd.DataFrame()
+
+# try:
+#     df_teams = pd.read_csv(csv_file_path_teams)
+# except FileNotFoundError:
+#     st.error(f"File not found: {csv_file_path_teams}. Please ensure the file exists.")
+#     df_teams = pd.DataFrame()
+
+# try:
+#     df_games = pd.read_csv(csv_file_path_games)
+# except FileNotFoundError:
+#     st.error(f"File not found: {csv_file_path_games}. Please ensure the file exists.")
+#     df_games = pd.DataFrame()
+
+# try:
+#     df_playerstats = pd.read_csv(csv_file_path_playerstats)
+# except FileNotFoundError:
+#     st.error(f"File not found: {csv_file_path_playerstats}. Please ensure the file exists.")
+#     df_playerstats = pd.DataFrame()
+
+# try:
+#     df_schedule_and_game_results = pd.read_csv(csv_file_path_schedule_and_game_results)
+# except FileNotFoundError:
+#     st.error(f"File not found: {csv_file_path_schedule_and_game_results}. Please ensure the file exists.")
+#     df_schedule_and_game_results = pd.DataFrame()
+
+# try:
+#     df_all_passing_rushing_receiving = pd.read_csv(csv_file_path_all_passing_rushing_receiving)
+# except FileNotFoundError:
+#     st.error(f"File not found: {csv_file_path_all_passing_rushing_receiving}. Please ensure the file exists.")
+#     df_all_passing_rushing_receiving = pd.DataFrame()
+
 st.session_state['df_all_team_game_logs'] = df_all_team_game_logs
 st.session_state['df_all_team_game_logs_2024'] = df_all_team_game_logs_2024
+st.session_state['df_all_team_game_logs_2025'] = df_all_team_game_logs_2025
 st.session_state['df_nfl_odds_movements'] = df_nfl_odds_movements
 st.session_state['df_nfl_odds_movements_circa'] = df_nfl_odds_movements_circa
 st.session_state['df_teams'] = df_teams

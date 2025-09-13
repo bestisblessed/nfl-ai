@@ -5,12 +5,12 @@ BAL vs CLE | Week 2 2025 | QB Projected Passing Yards
 +---------------+--------------+    +--------------+--------------+
 | BAL Player    |   Pred Yards |    | CLE Player   |   Pred Yards |
 +===============+==============+    +==============+==============+
-| Lamar Jackson |        215.2 |    | Joe Flacco   |        251.2 |
+| Lamar Jackson |        219.3 |    | Joe Flacco   |        253.6 |
 +---------------+--------------+    +--------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total QBs: 2 (1 BAL, 1 CLE)
-Top Projection: Joe Flacco (CLE) - 251.2 yards
+Top Projection: Joe Flacco (CLE) - 253.6 yards
 ================================================================================

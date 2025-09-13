@@ -5,13 +5,13 @@ IND vs DEN | Week 2 2025 | RB Projected Receiving Yards
 +-----------------+--------------+    +--------------+--------------+
 | IND Player      |   Pred Yards |    | DEN Player   |   Pred Yards |
 +=================+==============+    +==============+==============+
-| Jonathan Taylor |         17.1 |    | J.K. Dobbins |         13.4 |
-+-----------------+--------------+    | Tyler Badie  |          6.8 |
+| Jonathan Taylor |         12.3 |    | J.K. Dobbins |         11.7 |
++-----------------+--------------+    | Tyler Badie  |          3.4 |
                                       +--------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total RBs: 3 (1 IND, 2 DEN)
-Top Projection: Jonathan Taylor (IND) - 17.1 yards
+Top Projection: Jonathan Taylor (IND) - 12.3 yards
 ================================================================================

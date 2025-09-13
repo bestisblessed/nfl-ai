@@ -863,7 +863,7 @@ team_stats_headers = [
     'Player', 'PF', 'Yds', 'Ply', 'Y/P', 'TO', 'FL', '1stD', 'Cmp', 'Att', 'Yds', 'TD', 'Int', 'NY/A',
     '1stD', 'Att', 'Yds', 'TD', 'Y/A', '1stD', 'Pen', 'Yds', '1stPy', '#Dr', 'Sc%', 'TO%', 'Start', 'Time', 'Plays', 'Yds', 'Pts', 'Team'
 ]
-for year in range(2018, 2025):
+for year in range(2025, 2025):
     output_file = f'{data_dir}/all_teams_stats_{year}.csv'
     if os.path.exists(output_file):
         print(f"Skipping year {year}, file already exists.")
@@ -936,100 +936,154 @@ merged_dataframe.to_csv(output_file, index=False)
 print(f"Merged dataset saved as {output_file}")
 
 
-### SCHEDULE BAD OR DOESNT EXIST NOW ###
-# ##### Schedule & Game Results #####
-# data_dir = './data/SR-schedule-and-game-results'
-# os.makedirs(data_dir, exist_ok=True)
-# teams = [
-#     ['crd', 'Arizona Cardinals'],
-#     ['atl', 'Atlanta Falcons'],
-#     ['rav', 'Baltimore Ravens'],
-#     ['buf', 'Buffalo Bills'],
-#     ['car', 'Carolina Panthers'],
-#     ['chi', 'Chicago Bears'],
-#     ['cin', 'Cincinnati Bengals'],
-#     ['cle', 'Cleveland Browns'],
-#     ['dal', 'Dallas Cowboys'],
-#     ['den', 'Denver Broncos'],
-#     ['det', 'Detroit Lions'],
-#     ['gnb', 'Green Bay Packers'],
-#     ['htx', 'Houston Texans'],
-#     ['clt', 'Indianapolis Colts'],
-#     ['jax', 'Jacksonville Jaguars'],
-#     ['kan', 'Kansas City Chiefs'],
-#     ['sdg', 'Los Angeles Chargers'],
-#     ['ram', 'Los Angeles Rams'],
-#     ['rai', 'Las Vegas Raiders'],
-#     ['mia', 'Miami Dolphins'],
-#     ['min', 'Minnesota Vikings'],
-#     ['nwe', 'New England Patriots'],
-#     ['nor', 'New Orleans Saints'],
-#     ['nyg', 'New York Giants'],
-#     ['nyj', 'New York Jets'],
-#     ['phi', 'Philadelphia Eagles'],
-#     ['pit', 'Pittsburgh Steelers'],
-#     ['sea', 'Seattle Seahawks'],
-#     ['sfo', 'San Francisco 49ers'],
-#     ['tam', 'Tampa Bay Buccaneers'],
-#     ['oti', 'Tennessee Titans'],
-#     ['was', 'Washington Commanders']
-# ]
-# schedule_headers = [
-#     'Week', 'Day', 'Date', 'Time', 'Boxscore', 'Outcome', 'OT', 'Rec', 'Home/Away', 'Opp', 
-#     'Tm', 'OppPts', '1stD', 'TotYd', 'PassY', 'RushY', 'TO_lost', 
-#     'Opp1stD', 'OppTotYd', 'OppPassY', 'OppRushY', 'TO_won',
-#     'Offense', 'Defense', 'Sp. Tms'
-# ]
-# for year in range(2018, 2025):
-#     all_games = []  
-#     for team in teams:
-#         abbreviation, name = team
-#         print(f'Processing {name} for the year {year}')  
-#         url = f'https://www.pro-football-reference.com/teams/{abbreviation}/{year}.htm'
-#         response = requests.get(url)
-#         if response.status_code != 200:
-#             print(f'Failed to retrieve page {url} for {name} in {year}: {response.status_code}')
-#             continue
-#         soup = BeautifulSoup(response.content, 'html.parser')
-#         table = soup.find('table', {'id': 'games'})
-#         if table is None:
-#             print(f'Schedule & Game Results table not found on page {url} for {name} in {year}')
-#             continue
-#         tbody = table.find('tbody')
-#         team_games = []  
-#         for tr in tbody.find_all('tr'):
-#             row_data = []
-#             week_th = tr.find('th', {'data-stat': 'week_num'})
-#             week_num = week_th.text.strip() if week_th else ''
-#             row_data.append(week_num)
-#             for td in tr.find_all('td'):
-#                 row_data.append(td.text.strip())
-#             if len(row_data) != len(schedule_headers):
-#                 row_data += [''] * (len(schedule_headers) - len(row_data))
-#             team_games.append(row_data)
-#             all_games.append(row_data)  
-#         team_file_path = f'{data_dir}/{abbreviation}_{year}_schedule_and_game_results.csv'
-#         with open(team_file_path, mode='w', newline='', encoding='utf-8') as file:
-#             writer = csv.writer(file)
-#             writer.writerow(schedule_headers)
-#             writer.writerows(team_games)
-#         print(f'Saved schedule data for {name} for the year {year}')
-#         sleep(2.5)  
-# data_dir = './data/SR-schedule-and-game-results'
-# all_games = []
-# for filename in os.listdir(data_dir):
-#     if filename.endswith("_schedule_and_game_results.csv"):
-#         team_abbr = filename.split('_')[0]
-#         season_year = filename.split('_')[1]
-#         file_path = os.path.join(data_dir, filename)
-#         df = pd.read_csv(file_path)
-#         df['Team'] = team_abbr
-#         df['Season'] = season_year
-#         all_games.append(df)
-# merged_df = pd.concat(all_games, ignore_index=True)
-# merged_output_path = os.path.join(data_dir, 'all_teams_schedule_and_game_results_merged.csv')
-# merged_df.to_csv(merged_output_path, index=False)
-# print(f"Successfully merged all team files into {merged_output_path}")
+##### Schedule & Game Results #####
+print("\n" + "*"*80 + "\n")
+data_dir = './data/SR-schedule-and-game-results'
+os.makedirs(data_dir, exist_ok=True)
+teams = [
+    ['crd', 'Arizona Cardinals'],
+    ['atl', 'Atlanta Falcons'],
+    ['rav', 'Baltimore Ravens'],
+    ['buf', 'Buffalo Bills'],
+    ['car', 'Carolina Panthers'],
+    ['chi', 'Chicago Bears'],
+    ['cin', 'Cincinnati Bengals'],
+    ['cle', 'Cleveland Browns'],
+    ['dal', 'Dallas Cowboys'],
+    ['den', 'Denver Broncos'],
+    ['det', 'Detroit Lions'],
+    ['gnb', 'Green Bay Packers'],
+    ['htx', 'Houston Texans'],
+    ['clt', 'Indianapolis Colts'],
+    ['jax', 'Jacksonville Jaguars'],
+    ['kan', 'Kansas City Chiefs'],
+    ['sdg', 'Los Angeles Chargers'],
+    ['ram', 'Los Angeles Rams'],
+    ['rai', 'Las Vegas Raiders'],
+    ['mia', 'Miami Dolphins'],
+    ['min', 'Minnesota Vikings'],
+    ['nwe', 'New England Patriots'],
+    ['nor', 'New Orleans Saints'],
+    ['nyg', 'New York Giants'],
+    ['nyj', 'New York Jets'],
+    ['phi', 'Philadelphia Eagles'],
+    ['pit', 'Pittsburgh Steelers'],
+    ['sea', 'Seattle Seahawks'],
+    ['sfo', 'San Francisco 49ers'],
+    ['tam', 'Tampa Bay Buccaneers'],
+    ['oti', 'Tennessee Titans'],
+    ['was', 'Washington Commanders']
+]
+schedule_headers = [
+    'Week', 'Day', 'Date', 'Time', 'Boxscore', 'Outcome', 'OT', 'Rec', 'Home/Away', 'Opp', 
+    'Tm', 'OppPts', '1stD', 'TotYd', 'PassY', 'RushY', 'TO_lost', 
+    'Opp1stD', 'OppTotYd', 'OppPassY', 'OppRushY', 'TO_won',
+    'Offense', 'Defense', 'Sp. Tms'
+]
+for year in range(2025, 2026):
+    all_games = []  
+    for team in teams:
+        abbreviation, name = team
+        print(f'Processing {name} for the year {year}')  
+        url = f'https://www.pro-football-reference.com/teams/{abbreviation}/{year}.htm'
+        
+        # Add retry logic for rate limiting (same pattern as other scrapers)
+        max_retries = 3
+        retry_delay = 10
+        response = None
+        
+        for attempt in range(max_retries):
+            try:
+                response = requests.get(url, timeout=10)
+                if response.status_code == 429:
+                    print(f'Rate limited for {name}. Waiting {retry_delay} seconds before retry {attempt + 1}/{max_retries}')
+                    sleep(retry_delay)
+                    retry_delay *= 2  # Exponential backoff
+                    continue
+                elif response.status_code != 200:
+                    print(f'Failed to retrieve page {url} for {name} in {year}: {response.status_code}')
+                    break
+                else:
+                    break
+            except Exception as e:
+                print(f'Error retrieving {url}: {e}')
+                if attempt < max_retries - 1:
+                    sleep(retry_delay)
+                    retry_delay *= 2
+                    continue
+                else:
+                    break
+        
+        if response is None or response.status_code != 200:
+            continue
+            
+        soup = BeautifulSoup(response.content, 'html.parser')
+        table = soup.find('table', {'id': 'games'})
+        
+        if table is None:
+            print(f'Schedule & Game Results table not found on page {url} for {name} in {year}')
+            sleep(2.5)
+            continue
+            
+        tbody = table.find('tbody')
+        if tbody is None:
+            print(f'No tbody found for games table on page {url} for {name} in {year}')
+            sleep(2.5)
+            continue
+            
+        team_games = []  
+        for tr in tbody.find_all('tr'):
+            row_data = []
+            week_th = tr.find('th', {'data-stat': 'week_num'})
+            week_num = week_th.text.strip() if week_th else ''
+            row_data.append(week_num)
+            
+            for td in tr.find_all('td'):
+                row_data.append(td.text.strip())
+            
+            # Ensure we have the right number of columns
+            if len(row_data) != len(schedule_headers):
+                row_data += [''] * (len(schedule_headers) - len(row_data))
+            
+            team_games.append(row_data)
+            all_games.append(row_data)  
+        
+        # Save individual team file
+        team_file_path = f'{data_dir}/{abbreviation}_{year}_schedule_and_game_results.csv'
+        with open(team_file_path, mode='w', newline='', encoding='utf-8') as file:
+            writer = csv.writer(file)
+            writer.writerow(schedule_headers)
+            writer.writerows(team_games)
+        
+        print(f'Saved schedule data for {name} for the year {year}')
+        sleep(2.5)  # Rate limiting delay
+
+# Merge all team files
+print(f"\nMerging all team files...")
+all_games = []
+for filename in os.listdir(data_dir):
+    if filename.endswith("_schedule_and_game_results.csv"):
+        team_abbr = filename.split('_')[0]
+        season_year = filename.split('_')[1]
+        file_path = os.path.join(data_dir, filename)
+        df = pd.read_csv(file_path)
+        df['Team'] = team_abbr
+        df['Season'] = season_year
+        all_games.append(df)
+
+if all_games:
+    merged_df = pd.concat(all_games, ignore_index=True)
+    # Save to subdirectory
+    merged_output_path = os.path.join(data_dir, 'all_teams_schedule_and_game_results_merged.csv')
+    merged_df.to_csv(merged_output_path, index=False)
+    print(f"Successfully merged all team files into {merged_output_path}")
+    # Also save to main data directory
+    main_data_path = 'data/all_teams_schedule_and_game_results_merged.csv'
+    merged_df.to_csv(main_data_path, index=False)
+    print(f"Also saved to main data directory: {main_data_path}")
+    print(f"Total records: {len(merged_df)}")
+else:
+    print("No team files found to merge")
 
 
 ##### Team Conversions #####

@@ -5,13 +5,13 @@ DET vs CHI | Week 2 2025 | RB Projected Receiving Yards
 +------------------+--------------+    +---------------+--------------+
 | DET Player       |   Pred Yards |    | CHI Player    |   Pred Yards |
 +==================+==============+    +===============+==============+
-| Jahmyr Gibbs     |         38.7 |    | D'Andre Swift |         19.3 |
-| David Montgomery |         19   |    +---------------+--------------+
+| Jahmyr Gibbs     |         41.1 |    | D'Andre Swift |         22.4 |
+| David Montgomery |         20.2 |    +---------------+--------------+
 +------------------+--------------+    
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total RBs: 3 (2 DET, 1 CHI)
-Top Projection: Jahmyr Gibbs (DET) - 38.7 yards
+Top Projection: Jahmyr Gibbs (DET) - 41.1 yards
 ================================================================================

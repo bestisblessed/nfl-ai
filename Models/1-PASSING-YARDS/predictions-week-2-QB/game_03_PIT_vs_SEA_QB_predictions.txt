@@ -5,12 +5,12 @@ PIT vs SEA | Week 2 2025 | QB Projected Passing Yards
 +---------------+--------------+    +--------------+--------------+
 | PIT Player    |   Pred Yards |    | SEA Player   |   Pred Yards |
 +===============+==============+    +==============+==============+
-| Aaron Rodgers |        225.7 |    | Sam Darnold  |        229.1 |
+| Aaron Rodgers |        213.5 |    | Sam Darnold  |        192.3 |
 +---------------+--------------+    +--------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total QBs: 2 (1 PIT, 1 SEA)
-Top Projection: Sam Darnold (SEA) - 229.1 yards
+Top Projection: Aaron Rodgers (PIT) - 213.5 yards
 ================================================================================

@@ -5,12 +5,12 @@ DAL vs NYG | Week 2 2025 | QB Projected Passing Yards
 +--------------+--------------+    +----------------+--------------+
 | DAL Player   |   Pred Yards |    | NYG Player     |   Pred Yards |
 +==============+==============+    +================+==============+
-| Dak Prescott |        196.4 |    | Russell Wilson |        233.7 |
+| Dak Prescott |          239 |    | Russell Wilson |        200.2 |
 +--------------+--------------+    +----------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total QBs: 2 (1 DAL, 1 NYG)
-Top Projection: Russell Wilson (NYG) - 233.7 yards
+Top Projection: Dak Prescott (DAL) - 239.0 yards
 ================================================================================

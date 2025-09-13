@@ -5,13 +5,13 @@ KC vs PHI | Week 2 2025 | TE Projected Receiving Yards
 +--------------+--------------+    +----------------+--------------+
 | KC Player    |   Pred Yards |    | PHI Player     |   Pred Yards |
 +==============+==============+    +================+==============+
-| Travis Kelce |         54.1 |    | Dallas Goedert |         36.7 |
-| Noah Gray    |         14.4 |    | Kylen Granson  |         22.8 |
+| Travis Kelce |         56.2 |    | Dallas Goedert |         45.5 |
+| Noah Gray    |         12.3 |    | Kylen Granson  |         25.9 |
 +--------------+--------------+    +----------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total TEs: 4 (2 KC, 2 PHI)
-Top Projection: Travis Kelce (KC) - 54.1 yards
+Top Projection: Travis Kelce (KC) - 56.2 yards
 ================================================================================

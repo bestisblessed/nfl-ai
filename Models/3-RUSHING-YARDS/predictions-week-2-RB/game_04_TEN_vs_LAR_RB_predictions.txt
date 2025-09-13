@@ -5,13 +5,13 @@ TEN vs LAR | Week 2 2025 | RB Projected Rushing Yards
 +-----------------+--------------+    +----------------+--------------+
 | TEN Player      |   Pred Yards |    | LAR Player     |   Pred Yards |
 +=================+==============+    +================+==============+
-| Tony Pollard    |         71.8 |    | Kyren Williams |         74.4 |
-| Julius Chestnut |         17   |    | Blake Corum    |         19.7 |
+| Tony Pollard    |         51   |    | Kyren Williams |         67.6 |
+| Julius Chestnut |         15.5 |    | Blake Corum    |          9.4 |
 +-----------------+--------------+    +----------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total RBs: 4 (2 TEN, 2 LAR)
-Top Projection: Kyren Williams (LAR) - 74.4 yards
+Top Projection: Kyren Williams (LAR) - 67.6 yards
 ================================================================================

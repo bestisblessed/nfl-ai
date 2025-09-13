@@ -5,13 +5,14 @@ PIT vs SEA | Week 2 2025 | Projected Receiving Yards
 +-------------------+--------------+    +--------------------+--------------+
 | PIT Player        |   Pred Yards |    | SEA Player         |   Pred Yards |
 +===================+==============+    +====================+==============+
-| Calvin Austin III |         32.6 |    | Jaxon Smith-Njigba |         75.8 |
-| Ben Skowronek     |         10.6 |    | Cooper Kupp        |         34.4 |
-+-------------------+--------------+    +--------------------+--------------+
+| DK Metcalf        |         50.8 |    | Jaxon Smith-Njigba |         69.8 |
+| Calvin Austin III |         30.3 |    | Cooper Kupp        |         37   |
+| Ben Skowronek     |         18.1 |    +--------------------+--------------+
++-------------------+--------------+    
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total WRs: 4 (2 PIT, 2 SEA)
-Top Projection: Jaxon Smith-Njigba (SEA) - 75.8 yards
+Total WRs: 5 (3 PIT, 2 SEA)
+Top Projection: Jaxon Smith-Njigba (SEA) - 69.8 yards
 ================================================================================

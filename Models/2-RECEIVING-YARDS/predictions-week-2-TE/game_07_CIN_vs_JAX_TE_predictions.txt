@@ -5,14 +5,14 @@ CIN vs JAX | Week 2 2025 | TE Projected Receiving Yards
 +--------------+--------------+    +-----------------+--------------+
 | CIN Player   |   Pred Yards |    | JAX Player      |   Pred Yards |
 +==============+==============+    +=================+==============+
-| Mike Gesicki |         40.2 |    | Brenton Strange |         32.1 |
-| Noah Fant    |         35.4 |    | Johnny Mundt    |         15.3 |
-| Drew Sample  |         11.5 |    | Hunter Long     |         13   |
+| Noah Fant    |         49.4 |    | Brenton Strange |         27.5 |
+| Mike Gesicki |         42.1 |    | Johnny Mundt    |         19.5 |
+| Drew Sample  |         13.1 |    | Hunter Long     |         16   |
 +--------------+--------------+    +-----------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total TEs: 6 (3 CIN, 3 JAX)
-Top Projection: Mike Gesicki (CIN) - 40.2 yards
+Top Projection: Noah Fant (CIN) - 49.4 yards
 ================================================================================

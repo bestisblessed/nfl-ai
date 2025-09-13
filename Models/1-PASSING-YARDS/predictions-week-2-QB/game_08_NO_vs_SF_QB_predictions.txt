@@ -5,12 +5,12 @@ NO vs SF | Week 2 2025 | QB Projected Passing Yards
 +-----------------+--------------+    +-------------+--------------+
 | NO Player       |   Pred Yards |    | SF Player   |   Pred Yards |
 +=================+==============+    +=============+==============+
-| Spencer Rattler |        201.8 |    | Brock Purdy |        251.3 |
+| Spencer Rattler |        218.8 |    | Brock Purdy |        253.4 |
 +-----------------+--------------+    +-------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total QBs: 2 (1 NO, 1 SF)
-Top Projection: Brock Purdy (SF) - 251.3 yards
+Top Projection: Brock Purdy (SF) - 253.4 yards
 ================================================================================

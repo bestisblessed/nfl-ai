@@ -4,6 +4,9 @@ import pandas as pd
 st.title('Report Generator')
 st.write('Select two teams to generate a detailed matchup report, including team trends and player stats.')
 
+# Season selector
+selected_season = st.selectbox("Select Season:", [2025, 2024], index=0)
+
 # teams_df = st.session_state['df_teams']
 games_df = st.session_state['df_games'] 
 player_stats_df = st.session_state['df_playerstats']
@@ -47,11 +50,11 @@ if st.button('Generate Report'):
         st.write(f"Total points scored by {team1}: {team1_scores}")
         st.write(f"Total points scored by {team2}: {team2_scores}")
         
-        # Player-level statistics for current 2024 players
+        # Player-level statistics for current season players
         current_players_team1 = player_stats_df[(player_stats_df['player_current_team'] == team1) & 
-                                                (player_stats_df['season'] == 2024)]
+                                                (player_stats_df['season'] == selected_season)]
         current_players_team2 = player_stats_df[(player_stats_df['player_current_team'] == team2) & 
-                                                (player_stats_df['season'] == 2024)]
+                                                (player_stats_df['season'] == selected_season)]
 
         players_team1_names = current_players_team1['player_display_name'].unique()
         players_team2_names = current_players_team2['player_display_name'].unique()

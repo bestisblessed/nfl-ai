@@ -5,14 +5,14 @@ GB vs WAS | Week 2 2025 | TE Projected Receiving Yards
 +------------------+--------------+    +--------------+--------------+
 | GB Player        |   Pred Yards |    | WAS Player   |   Pred Yards |
 +==================+==============+    +==============+==============+
-| Tucker Kraft     |         38.8 |    | Zach Ertz    |         43.3 |
-| Luke Musgrave    |         10.6 |    +--------------+--------------+
-| John FitzPatrick |          9.8 |    
+| Tucker Kraft     |         39   |    | Zach Ertz    |         38.7 |
+| Luke Musgrave    |         11.5 |    +--------------+--------------+
+| John FitzPatrick |         10.6 |    
 +------------------+--------------+    
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total TEs: 4 (3 GB, 1 WAS)
-Top Projection: Zach Ertz (WAS) - 43.3 yards
+Top Projection: Tucker Kraft (GB) - 39.0 yards
 ================================================================================

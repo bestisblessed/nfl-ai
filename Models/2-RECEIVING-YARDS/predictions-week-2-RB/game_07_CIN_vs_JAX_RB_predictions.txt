@@ -5,13 +5,13 @@ CIN vs JAX | Week 2 2025 | RB Projected Receiving Yards
 +---------------+--------------+    +----------------+--------------+
 | CIN Player    |   Pred Yards |    | JAX Player     |   Pred Yards |
 +===============+==============+    +================+==============+
-| Chase Brown   |         24.9 |    | Travis Etienne |         18.2 |
-| Samaje Perine |         11   |    +----------------+--------------+
+| Chase Brown   |         26.6 |    | Travis Etienne |         19.9 |
+| Samaje Perine |         14.2 |    +----------------+--------------+
 +---------------+--------------+    
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total RBs: 3 (2 CIN, 1 JAX)
-Top Projection: Chase Brown (CIN) - 24.9 yards
+Top Projection: Chase Brown (CIN) - 26.6 yards
 ================================================================================

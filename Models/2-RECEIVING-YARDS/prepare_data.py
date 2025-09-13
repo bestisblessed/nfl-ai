@@ -28,14 +28,72 @@ df = df.rename(columns={
 
 # Fix specific name mismatches
 df.loc[df['player_name'] == 'Michael Penix', 'player_name'] = 'Michael Penix Jr.'
+df.loc[df['player_name'] == 'D.J. Moore', 'player_name'] = 'DJ Moore'
 
-# Auto-set QB position for starting QBs (from starting_qbs_2025.csv)
-starting_qbs = pd.read_csv("data/starting_qbs_2025.csv")
-for _, qb in starting_qbs.iterrows():
-    team = qb['team']
-    qb_name = qb['starting_qb']
-    # Set position to QB for this player on this team
-    df.loc[(df['team'] == team) & (df['player_name'] == qb_name), 'position'] = 'QB'
+# Auto-fix name mismatches between roster and raw data
+def normalize_name(name):
+    """Normalize name for comparison by removing punctuation and converting to lowercase"""
+    if pd.isna(name):
+        return name
+    return name.lower().replace('.', '').replace(',', '').replace("'", '').replace('-', ' ')
+
+# Load roster to get correct names and positions
+roster = pd.read_csv("data/roster_2025.csv")
+
+# Create name mapping from raw data to roster data
+name_mapping = {}
+position_mapping = {}
+
+for _, roster_row in roster.iterrows():
+    roster_name = roster_row['full_name']
+    roster_pos = roster_row['position']
+    roster_team = roster_row['team']
+    
+    # Find matching player in raw data
+    raw_match = df[(df['team'] == roster_team) & (df['player_name'].notna())]
+    
+    for _, raw_row in raw_match.iterrows():
+        raw_name = raw_row['player_name']
+        
+        # Check if names are the same person (normalized comparison)
+        if normalize_name(roster_name) == normalize_name(raw_name):
+            if roster_name != raw_name:
+                name_mapping[raw_name] = roster_name
+            # Always use roster position as source of truth
+            position_mapping[(raw_name, roster_team)] = roster_pos
+
+# Apply name fixes
+for raw_name, roster_name in name_mapping.items():
+    df.loc[df['player_name'] == raw_name, 'player_name'] = roster_name
+
+# Apply position fixes (use roster as source of truth)
+# Note: Use the NEW name after name fixes
+for (raw_name, team), roster_pos in position_mapping.items():
+    # Find the new name after name fixes
+    new_name = name_mapping.get(raw_name, raw_name)
+    df.loc[(df['player_name'] == new_name) & (df['team'] == team), 'position'] = roster_pos
+
+# Transfer historical data for players who changed teams
+# This handles cases like DK Metcalf (SEA -> PIT)
+for _, roster_row in roster.iterrows():
+    roster_name = roster_row['full_name']
+    roster_team = roster_row['team']
+    
+    # Find historical data for this player on other teams
+    historical_data = df[(df['player_name'] == roster_name) & (df['team'] != roster_team)]
+    
+    if len(historical_data) > 0:
+        # Copy historical data to current team
+        historical_data_copy = historical_data.copy()
+        historical_data_copy['team'] = roster_team
+        historical_data_copy['position'] = roster_row['position']
+        
+        # Add to dataframe
+        df = pd.concat([df, historical_data_copy], ignore_index=True)
+        
+        print(f"Transferred {len(historical_data)} historical records for {roster_name} to {roster_team}")
+
+print(f"Auto-fixed {len(name_mapping)} name mismatches and {len(position_mapping)} position issues")
 
 # Keep only receiving positions if available (avoid QB noise)
 if "position" in df.columns:

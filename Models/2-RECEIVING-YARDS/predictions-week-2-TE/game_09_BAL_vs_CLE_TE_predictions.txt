@@ -5,12 +5,12 @@ BAL vs CLE | Week 2 2025 | TE Projected Receiving Yards
 +--------------+--------------+    +--------------+--------------+
 | BAL Player   |   Pred Yards |    | CLE Player   |   Pred Yards |
 +==============+==============+    +==============+==============+
-| Mark Andrews |         45.1 |    | David Njoku  |         38.5 |
+| Mark Andrews |         43.9 |    | David Njoku  |         53.4 |
 +--------------+--------------+    +--------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total TEs: 2 (1 BAL, 1 CLE)
-Top Projection: Mark Andrews (BAL) - 45.1 yards
+Top Projection: David Njoku (CLE) - 53.4 yards
 ================================================================================

@@ -266,9 +266,15 @@ if os.path.exists('./data/all_defense-game-logs.csv'):
         defense_df.to_sql('DefenseGameLogs', conn, if_exists='replace', index=False)
     print(f"✅ DefenseGameLogs table created with {len(defense_df)} records")
 
+# Schedule & Game Results
+if os.path.exists('./data/SR-schedule-and-game-results/all_teams_schedule_and_game_results_merged.csv'):
+    schedule_df = pd.read_csv('./data/SR-schedule-and-game-results/all_teams_schedule_and_game_results_merged.csv')
+    with sqlite3.connect(db_path) as conn:
+        schedule_df.to_sql('ScheduleGameResults', conn, if_exists='replace', index=False)
+    print(f"✅ ScheduleGameResults table created with {len(schedule_df)} records")
+
 ##### Create PFR final data export #####
 print("\n5. Creating PFR final data export...")
-current_date = datetime.now().strftime("%b_%d_%Y")
 final_pfr_dir = 'final_data_pfr'
 
 if not os.path.exists(final_pfr_dir):
@@ -278,34 +284,35 @@ if not os.path.exists(final_pfr_dir):
 with sqlite3.connect(db_path) as conn:
     # Games
     games_df = pd.read_sql_query("SELECT * FROM Games", conn)
-    games_df.to_csv(f"{final_pfr_dir}/Games_{current_date}.csv", index=False)
+    games_df.to_csv(f"{final_pfr_dir}/games_pfr.csv", index=False)
     print(f"✅ Exported Games: {len(games_df)} records")
     
     # PlayerStats
     playerstats_df = pd.read_sql_query("SELECT * FROM PlayerStats", conn)
-    playerstats_df.to_csv(f"{final_pfr_dir}/PlayerStats_{current_date}.csv", index=False)
+    playerstats_df.to_csv(f"{final_pfr_dir}/player_stats_pfr.csv", index=False)
     print(f"✅ Exported PlayerStats: {len(playerstats_df)} records")
     
     # Teams
     teams_df = pd.read_sql_query("SELECT * FROM Teams", conn)
-    teams_df.to_csv(f"{final_pfr_dir}/Teams_{current_date}.csv", index=False)
+    teams_df.to_csv(f"{final_pfr_dir}/teams_pfr.csv", index=False)
     print(f"✅ Exported Teams: {len(teams_df)} records")
     
     # Additional tables
     table_mappings = {
-        'BoxScores': 'BoxScores',
-        'ScoringTables': 'ScoringTables', 
-        'TeamGameLogs': 'TeamGameLogs',
-        'TeamStats': 'TeamStats',
-        'TeamConversions': 'TeamConversions',
-        'PassingRushingReceiving': 'PassingRushingReceiving',
-        'DefenseGameLogs': 'DefenseGameLogs'
+        'BoxScores': 'box_scores_pfr',
+        'ScoringTables': 'scoring_tables_pfr', 
+        'TeamGameLogs': 'team_game_logs_pfr',
+        'TeamStats': 'team_stats_pfr',
+        'TeamConversions': 'team_conversions_pfr',
+        'PassingRushingReceiving': 'passing_rushing_receiving_pfr',
+        'DefenseGameLogs': 'defense_game_logs_pfr',
+        'ScheduleGameResults': 'schedule_game_results_pfr'
     }
     
     for table_name, export_name in table_mappings.items():
         try:
             df = pd.read_sql_query(f"SELECT * FROM {table_name}", conn)
-            df.to_csv(f"{final_pfr_dir}/{export_name}_{current_date}.csv", index=False)
+            df.to_csv(f"{final_pfr_dir}/{export_name}.csv", index=False)
             print(f"✅ Exported {export_name}: {len(df)} records")
         except:
             print(f"⚠️  Table {table_name} not found")
@@ -324,3 +331,4 @@ print("  • TeamStats - Team statistics and rankings")
 print("  • TeamConversions - 3rd/4th down efficiency")
 print("  • PassingRushingReceiving - Offensive player stats")
 print("  • DefenseGameLogs - Defensive player stats")
+print("  • ScheduleGameResults - Schedule and game results data")

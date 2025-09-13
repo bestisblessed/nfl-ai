@@ -5,12 +5,12 @@ ARI vs CAR | Week 2 2025 | QB Projected Rushing Yards
 +--------------+--------------+    +--------------+--------------+
 | ARI Player   |   Pred Yards |    | CAR Player   |   Pred Yards |
 +==============+==============+    +==============+==============+
-| Kyler Murray |         27.8 |    | Bryce Young  |         21.7 |
+| Kyler Murray |         27.7 |    | Bryce Young  |         27.3 |
 +--------------+--------------+    +--------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total RBs: 2 (1 ARI, 1 CAR)
-Top Projection: Kyler Murray (ARI) - 27.8 yards
+Top Projection: Kyler Murray (ARI) - 27.7 yards
 ================================================================================

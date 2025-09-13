@@ -5,14 +5,14 @@ DET vs CHI | Week 2 2025 | Projected Receiving Yards
 +-------------------+--------------+    +-------------------+--------------+
 | DET Player        |   Pred Yards |    | CHI Player        |   Pred Yards |
 +===================+==============+    +===================+==============+
-| Amon-Ra St. Brown |         66.4 |    | Olamide Zaccheaus |         38   |
-| Jameson Williams  |         63.9 |    | Rome Odunze       |         37.4 |
-| Kalif Raymond     |         20.2 |    +-------------------+--------------+
-+-------------------+--------------+    
+| Amon-Ra St. Brown |         66.4 |    | DJ Moore          |         66.9 |
+| Jameson Williams  |         56.6 |    | Rome Odunze       |         45.1 |
+| Kalif Raymond     |         20.6 |    | Olamide Zaccheaus |         26.9 |
++-------------------+--------------+    +-------------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total WRs: 5 (3 DET, 2 CHI)
-Top Projection: Amon-Ra St. Brown (DET) - 66.4 yards
+Total WRs: 6 (3 DET, 3 CHI)
+Top Projection: DJ Moore (CHI) - 66.9 yards
 ================================================================================

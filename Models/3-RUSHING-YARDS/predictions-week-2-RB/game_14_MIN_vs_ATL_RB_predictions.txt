@@ -5,13 +5,13 @@ MIN vs ATL | Week 2 2025 | RB Projected Rushing Yards
 +--------------+--------------+    +----------------+--------------+
 | MIN Player   |   Pred Yards |    | ATL Player     |   Pred Yards |
 +==============+==============+    +================+==============+
-| Aaron Jones  |         50.2 |    | Bijan Robinson |         60.6 |
-| Jordan Mason |         36   |    | Tyler Allgeier |         34.2 |
+| Aaron Jones  |         50.3 |    | Bijan Robinson |         70.6 |
+| Jordan Mason |         44.6 |    | Tyler Allgeier |         37.2 |
 +--------------+--------------+    +----------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total RBs: 4 (2 MIN, 2 ATL)
-Top Projection: Bijan Robinson (ATL) - 60.6 yards
+Top Projection: Bijan Robinson (ATL) - 70.6 yards
 ================================================================================
