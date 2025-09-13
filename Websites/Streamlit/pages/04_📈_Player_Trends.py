@@ -7,9 +7,9 @@ import streamlit as st
 
 # Page configuration
 st.set_page_config(
-    page_title="🏃🏾‍♂️ Player Trends",
-    page_icon="🏃🏾‍♂️",
-    layout="centered"
+    page_title="📈 Player Trends",
+    page_icon="📈",
+    layout="wide"
 )
 
 # # Define the base directory

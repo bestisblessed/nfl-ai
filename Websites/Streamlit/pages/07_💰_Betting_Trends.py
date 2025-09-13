@@ -6,9 +6,9 @@ import sqlite3
 
 # Page configuration
 st.set_page_config(
-    page_title="🔨 Betting Trends",
-    page_icon="🔨",
-    layout="centered"
+    page_title="💰 Betting Trends",
+    page_icon="💰",
+    layout="wide"
 )
 
 ### --- Title and Data --- ###

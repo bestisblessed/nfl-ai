@@ -5,8 +5,8 @@ import sqlite3
 
 # Page configuration
 st.set_page_config(
-    page_title="📊 Team Trends",
-    page_icon="📊",
+    page_title="📉 Team Trends",
+    page_icon="📉",
     layout="wide"
 )
 

@@ -13,8 +13,8 @@ from io import BytesIO
 
 # Page configuration
 st.set_page_config(
-    page_title="🎮 Team Dashboard",
-    page_icon="🎮",
+    page_title="🏆 Team Dashboard",
+    page_icon="🏆",
     layout="wide"
 )
 
@@ -235,69 +235,70 @@ st.divider()
 
 
 
-import streamlit as st
-import matplotlib.pyplot as plt
-import seaborn as sns
-import pandas as pd
-import matplotlib.image as mpimg
-from matplotlib.offsetbox import OffsetImage, AnnotationBbox
-st.title(f"Explosive Play Rates After Week 3 - {selected_season} NFL Season")
-teams = [
-    'crd', 'atl', 'rav', 'buf', 'car', 'chi', 'cin', 'cle', 'dal', 'den',
-    'det', 'gnb', 'htx', 'clt', 'jax', 'kan', 'sdg', 'ram', 'rai', 'mia',
-    'min', 'nwe', 'nor', 'nyg', 'nyj', 'phi', 'pit', 'sea', 'sfo', 'tam',
-    'oti', 'was'
-]
-explosive_play_rates = [
-    14.1, 13.2, 10.9, 10.9, 10.4, 10.4, 10.4, 10.3, 
-    10.2, 10.0, 9.3, 9.3, 9.1, 8.0, 7.9, 7.8, 7.7, 
-    7.5, 7.4, 7.3, 7.2, 7.0, 6.9, 6.1, 5.4, 6.0, 
-    6.5, 5.9, 6.3, 6.2, 5.8, 5.3
-]
-df = pd.DataFrame({
-    'Team': teams,
-    'Explosive Play Rate (%)': explosive_play_rates
-})
-plt.figure(figsize=(14, 8))
-ax = sns.barplot(
-    x='Team', 
-    y='Explosive Play Rate (%)', 
-    data=df,
-    palette="coolwarm"
-)
-for index, value in enumerate(df['Explosive Play Rate (%)']):
-    ax.text(index, value + 0.2, f'{value}%', ha='center', va='bottom', fontsize=10, fontweight='bold')
+# COMMENTED OUT - Explosive Play Rates section
+# import streamlit as st
+# import matplotlib.pyplot as plt
+# import seaborn as sns
+# import pandas as pd
+# import matplotlib.image as mpimg
+# from matplotlib.offsetbox import OffsetImage, AnnotationBbox
+# st.title(f"Explosive Play Rates After Week 3 - {selected_season} NFL Season")
+# teams = [
+#     'crd', 'atl', 'rav', 'buf', 'car', 'chi', 'cin', 'cle', 'dal', 'den',
+#     'det', 'gnb', 'htx', 'clt', 'jax', 'kan', 'sdg', 'ram', 'rai', 'mia',
+#     'min', 'nwe', 'nor', 'nyg', 'nyj', 'phi', 'pit', 'sea', 'sfo', 'tam',
+#     'oti', 'was'
+# ]
+# explosive_play_rates = [
+#     14.1, 13.2, 10.9, 10.9, 10.4, 10.4, 10.4, 10.3, 
+#     10.2, 10.0, 9.3, 9.3, 9.1, 8.0, 7.9, 7.8, 7.7, 
+#     7.5, 7.4, 7.3, 7.2, 7.0, 6.9, 6.1, 5.4, 6.0, 
+#     6.5, 5.9, 6.3, 6.2, 5.8, 5.3
+# ]
+# df = pd.DataFrame({
+#     'Team': teams,
+#     'Explosive Play Rate (%)': explosive_play_rates
+# })
+# plt.figure(figsize=(14, 8))
+# ax = sns.barplot(
+#     x='Team', 
+#     y='Explosive Play Rate (%)', 
+#     data=df,
+#     palette="coolwarm"
+# )
+# for index, value in enumerate(df['Explosive Play Rate (%)']):
+#     ax.text(index, value + 0.2, f'{value}%', ha='center', va='bottom', fontsize=10, fontweight='bold')
 
-# Add this mapping dictionary after the teams list
-team_abbrev_mapping = {
-    'crd': 'ARI', 'atl': 'ATL', 'rav': 'BAL', 'buf': 'BUF', 
-    'car': 'CAR', 'chi': 'CHI', 'cin': 'CIN', 'cle': 'CLE',
-    'dal': 'DAL', 'den': 'DEN', 'det': 'DET', 'gnb': 'GB',
-    'htx': 'HOU', 'clt': 'IND', 'jax': 'JAX', 'kan': 'KC',
-    'sdg': 'LAC', 'ram': 'LAR', 'rai': 'LVR', 'mia': 'MIA',
-    'min': 'MIN', 'nwe': 'NE', 'nor': 'NO', 'nyg': 'NYG',
-    'nyj': 'NYJ', 'phi': 'PHI', 'pit': 'PIT', 'sea': 'SEA',
-    'sfo': 'SF', 'tam': 'TB', 'oti': 'TEN', 'was': 'WAS'
-}
+# # Add this mapping dictionary after the teams list
+# team_abbrev_mapping = {
+#     'crd': 'ARI', 'atl': 'ATL', 'rav': 'BAL', 'buf': 'BUF', 
+#     'car': 'CAR', 'chi': 'CHI', 'cin': 'CIN', 'cle': 'CLE',
+#     'dal': 'DAL', 'den': 'DEN', 'det': 'DET', 'gnb': 'GB',
+#     'htx': 'HOU', 'clt': 'IND', 'jax': 'JAX', 'kan': 'KC',
+#     'sdg': 'LAC', 'ram': 'LAR', 'rai': 'LVR', 'mia': 'MIA',
+#     'min': 'MIN', 'nwe': 'NE', 'nor': 'NO', 'nyg': 'NYG',
+#     'nyj': 'NYJ', 'phi': 'PHI', 'pit': 'PIT', 'sea': 'SEA',
+#     'sfo': 'SF', 'tam': 'TB', 'oti': 'TEN', 'was': 'WAS'
+# }
 
-# Update the add_team_logo function to use the mapping
-def add_team_logo(axes, team_abbreviation, xpos, ypos):
-    mapped_team = team_abbrev_mapping[team_abbreviation]
-    img_path = f'images/team-logos/{mapped_team}.png'  
-    logo = mpimg.imread(img_path)
-    imagebox = OffsetImage(logo, zoom=0.15)
-    ab = AnnotationBbox(imagebox, (xpos, ypos), frameon=False, box_alignment=(0.5, -0.15))
-    axes.add_artist(ab)
+# # Update the add_team_logo function to use the mapping
+# def add_team_logo(axes, team_abbreviation, xpos, ypos):
+#     mapped_team = team_abbrev_mapping[team_abbreviation]
+#     img_path = f'images/team-logos/{mapped_team}.png'  
+#     logo = mpimg.imread(img_path)
+#     imagebox = OffsetImage(logo, zoom=0.15)
+#     ab = AnnotationBbox(imagebox, (xpos, ypos), frameon=False, box_alignment=(0.5, -0.15))
+#     axes.add_artist(ab)
 
-for i, team in enumerate(df['Team']):
-    add_team_logo(ax, team, i, 0)
-plt.title(f'Explosive Play Rates After Week 3 {selected_season} NFL Season\n(10+ yard run or 20+ yard pass)', fontsize=14, weight='bold')
-plt.xlabel('')
-plt.ylabel('Explosive Play Rate (%)')
-ax.set_xticklabels([''] * len(teams))
-plt.grid(True, axis='y', linestyle='--', alpha=0.7)
-st.pyplot(plt)
-st.divider()
+# for i, team in enumerate(df['Team']):
+#     add_team_logo(ax, team, i, 0)
+# plt.title(f'Explosive Play Rates After Week 3 {selected_season} NFL Season\n(10+ yard run or 20+ yard pass)', fontsize=14, weight='bold')
+# plt.xlabel('')
+# plt.ylabel('Explosive Play Rate (%)')
+# ax.set_xticklabels([''] * len(teams))
+# plt.grid(True, axis='y', linestyle='--', alpha=0.7)
+# st.pyplot(plt)
+# st.divider()
 
 
 import pandas as pd
@@ -337,62 +338,3 @@ for year in years:
         sack_stats['sacks_made'].append(sacks_made)
         sack_stats['sacks_taken'].append(sacks_taken)
 sack_stats_df = pd.DataFrame(sack_stats)
-team_logos = {
-    'ARI': 'images/team-logos/ARI.png',
-    'ATL': 'images/team-logos/ATL.png',
-    'BAL': 'images/team-logos/BAL.png',
-    'BUF': 'images/team-logos/BUF.png',
-    'CAR': 'images/team-logos/CAR.png',
-    'CHI': 'images/team-logos/CHI.png',
-    'CIN': 'images/team-logos/CIN.png',
-    'CLE': 'images/team-logos/CLE.png',
-    'DAL': 'images/team-logos/DAL.png',
-    'DEN': 'images/team-logos/DEN.png',
-    'DET': 'images/team-logos/DET.png',
-    'GB': 'images/team-logos/GB.png',
-    'HOU': 'images/team-logos/HOU.png',
-    'IND': 'images/team-logos/IND.png',
-    'JAX': 'images/team-logos/JAX.png',
-    'KC': 'images/team-logos/KC.png',
-    'LAC': 'images/team-logos/LAC.png',
-    'LAR': 'images/team-logos/LAR.png',
-    'LVR': 'images/team-logos/LVR.png',
-    'MIA': 'images/team-logos/MIA.png',
-    'MIN': 'images/team-logos/MIN.png',
-    'NE': 'images/team-logos/NE.png',
-    'NO': 'images/team-logos/NO.png',
-    'NYG': 'images/team-logos/NYG.png',
-    'NYJ': 'images/team-logos/NYJ.png',
-    'PHI': 'images/team-logos/PHI.png',
-    'PIT': 'images/team-logos/PIT.png',
-    'SEA': 'images/team-logos/SEA.png',
-    'SF': 'images/team-logos/SF.png',
-    'TB': 'images/team-logos/TB.png',
-    'TEN': 'images/team-logos/TEN.png',
-    'WAS': 'images/team-logos/WAS.png',
-}
-def autolabel_with_logos(rects, ax, labels):
-    """Attach an image above each bar displaying the team logo."""
-    for rect, label in zip(rects, labels):
-        img = Image.open(team_logos[label])
-        height = rect.get_height()
-        imagebox = OffsetImage(img, zoom=0.15)  
-        ab = AnnotationBbox(imagebox, (rect.get_x() + rect.get_width() / 2, height + 1),
-                            frameon=False, xycoords='data', box_alignment=(0.5, 0))
-        ax.add_artist(ab)
-sack_stats_df_sorted = sack_stats_df.sort_values(by=['sacks_made', 'sacks_taken'], ascending=False)
-teams = sack_stats_df_sorted['team'].tolist()
-sacks_made = sack_stats_df_sorted['sacks_made'].tolist()
-# sacks_taken = sack_stats_df_sorted['sacks_taken'].tolist()
-x = np.arange(len(teams))  
-fig, ax1 = plt.subplots(figsize=(14, 6))
-rects1 = ax1.bar(x, sacks_made, color='green')
-ax1.set_xlabel('Teams')
-ax1.set_ylabel('Sacks Made')
-ax1.set_title('Sacks Made for All NFL Teams')
-ax1.set_xticks(x)
-ax1.set_xticklabels(teams, rotation=90)  
-autolabel_with_logos(rects1, ax1, teams)
-plt.tight_layout()
-st.pyplot(plt)
-st.divider()
