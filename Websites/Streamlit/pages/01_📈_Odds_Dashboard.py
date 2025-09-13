@@ -312,6 +312,10 @@ with col2:
                 st.error(f"Error preparing odds data: {str(e)}")
         else:
             st.warning("No Circa odds data available to plot for this matchup.")
+            
+        st.write(' ')
+        st.divider()
+        st.write(' ')
 
         
         
