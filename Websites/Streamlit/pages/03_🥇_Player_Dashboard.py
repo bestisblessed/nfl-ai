@@ -265,7 +265,7 @@ if last_10_games is not None:
     # st.subheader('Last 10 Games:')
     st.subheader(f"Last 10 Games for {player_name}")
     st.write("")
-    st.write(last_10_games)
+    st.dataframe(last_10_games, use_container_width=True)
 
 st.divider()
 
@@ -327,6 +327,8 @@ def plot_last_20_games_reception_trend(player_name):
         st.write("")
         st.write("")
         table_data = recent_games[['game_id', 'rec_long']].copy()
+        # Reverse order to show most recent games first
+        table_data = table_data.iloc[::-1]
         st.dataframe(table_data, use_container_width=True, height=400)
 
 if player_name is not None:
