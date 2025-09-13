@@ -342,10 +342,11 @@ rosters_df.to_csv('data/rosters.csv', index=False)
 
 ##### Scrape Box Scores (2018-2025) #####
 print("\n" + "*"*80 + "\n")
+os.makedirs('./data/SR-box-scores/', exist_ok=True)
 df = pd.read_csv('./data/games.csv')
 df['pfr_url'] = 'https://www.pro-football-reference.com/boxscores/' + df['pfr'] + '.htm'
 df.to_csv('./data/games.csv', index=False)
-csv_file_path = 'data/all_box_scores.csv'
+csv_file_path = 'data/SR-box-scores/all_box_scores_2025.csv'
 games_csv_path = 'data/games.csv'
 headers = ['URL', 'Team', '1', '2', '3', '4', 'OT1', 'OT2', 'OT3', 'OT4', 'Final']
 existing_urls = set()
@@ -394,6 +395,16 @@ with open(csv_file_path, 'a', newline='') as csvfile:
                 print(f"Error scraping {url}: {e}")
             time.sleep(2.5)
 print(f"Scraping complete. The data has been saved to {csv_file_path}.")
+
+
+##### Merge Box Scores #####
+input_dir = 'data/SR-box-scores/'
+csv_files = [f for f in os.listdir(input_dir) if f.endswith('.csv')]
+dataframes = [pd.read_csv(os.path.join(input_dir, file)) for file in csv_files]
+merged_dataframe = pd.concat(dataframes, ignore_index=True)
+output_file = 'data/all_box_scores.csv'
+merged_dataframe.to_csv(output_file, index=False)
+print(f"Merged dataset saved as {output_file}")
 
 
 ##### Fix OT Columns in Box Scores ##### 
@@ -1380,6 +1391,26 @@ merged_df.drop(columns=['full_name'], inplace=True)
 merged_df['position'] = merged_df.groupby('player')['position'].transform(lambda x: x.ffill().bfill())
 merged_df.to_csv('data/all_passing_rushing_receiving.csv', index=False)
 print(merged_df[['player', 'position']].head())
+
+##### Create clean PFR-only version without NFLverse position data #####
+print("\nCreating clean PFR-only version of passing/rushing/receiving data...")
+# Recreate the clean PFR data by merging all years without position data
+directory = 'data/SR-passing-rushing-receiving-game-logs/'
+clean_pfr_file_path = 'data/all_passing_rushing_receiving_pfr_clean.csv'  
+clean_dataframes = []
+for filename in os.listdir(directory):
+    if filename.endswith('.csv'):
+        file_path = os.path.join(directory, filename)
+        df = pd.read_csv(file_path)
+        clean_dataframes.append(df)
+        print(f"Added {filename} to clean PFR merge list")
+clean_merged_df = pd.concat(clean_dataframes, ignore_index=True)
+# Add opponent_team and home columns (these are derived from PFR game_id, not NFLverse)
+clean_merged_df['opponent_team'] = clean_merged_df.apply(get_opponent_team, axis=1)
+clean_merged_df['home'] = clean_merged_df.apply(is_player_home, axis=1)
+# Save clean PFR version without position data
+clean_merged_df.to_csv(clean_pfr_file_path, index=False)
+print(f"✅ Clean PFR-only version saved to: {clean_pfr_file_path}")
 
 
 ##### Defense #####

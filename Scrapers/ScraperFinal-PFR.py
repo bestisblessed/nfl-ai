@@ -76,8 +76,12 @@ game_dataframes = []
 
 for year in range(2018, 2026):
     file_path = f'./data/SR-game-logs/all_teams_game_logs_{year}.csv'
-    if os.path.exists(file_path):
-        print(f"   Loading {year} game logs...")
+    # Always process 2025 data even if file exists, skip historical data if file exists
+    if year == 2025 or os.path.exists(file_path):
+        if year == 2025:
+            print(f"   Loading {year} game logs (always processing 2025 data)...")
+        else:
+            print(f"   Loading {year} game logs...")
         df = pd.read_csv(file_path)
         
         # Create game records from team game logs
@@ -125,17 +129,19 @@ else:
 ##### Create 'PlayerStats' table from PFR passing/rushing/receiving data #####
 print("\n3. Creating PlayerStats table from PFR passing/rushing/receiving data...")
 
-# Use the PFR passing/rushing/receiving data instead of nflverse player stats
-if os.path.exists('./data/all_passing_rushing_receiving.csv'):
-    print("   Loading PFR passing/rushing/receiving data...")
-    df_pfr_stats = pd.read_csv('./data/all_passing_rushing_receiving.csv')
+# Use the clean PFR passing/rushing/receiving data (without NFLverse position data)
+if os.path.exists('./data/all_passing_rushing_receiving_pfr_clean.csv'):
+    print("   Loading clean PFR passing/rushing/receiving data (no NFLverse contamination)...")
+    df_pfr_stats = pd.read_csv('./data/all_passing_rushing_receiving_pfr_clean.csv')
     
     # Create a simplified PlayerStats structure from PFR data
     df_pfr_stats['player_display_name'] = df_pfr_stats['player']
     df_pfr_stats['player_current_team'] = df_pfr_stats['team']
     df_pfr_stats['season'] = df_pfr_stats['game_id'].str.split('_').str[0].astype(int)
     df_pfr_stats['week'] = df_pfr_stats['game_id'].str.split('_').str[1].astype(int)
-    df_pfr_stats['position'] = df_pfr_stats['position']
+    # df_pfr_stats['position'] = df_pfr_stats['position']
+    # Position column will be None since we're using clean PFR data without NFLverse position info
+    df_pfr_stats['position'] = None
     df_pfr_stats['headshot_url'] = None
     df_pfr_stats['completions'] = df_pfr_stats['pass_cmp'].fillna(0)
     df_pfr_stats['attempts'] = df_pfr_stats['pass_att'].fillna(0)
@@ -211,7 +217,8 @@ if os.path.exists('./data/all_passing_rushing_receiving.csv'):
     
     print(f"✅ PlayerStats table created with {len(df_pfr_stats)} records")
 else:
-    print("❌ No PFR passing/rushing/receiving data found")
+    print("❌ No clean PFR passing/rushing/receiving data found")
+    print("   Make sure ScraperFinal.py has been run to create the clean PFR data file")
     exit()
 
 ##### Create additional PFR tables #####
@@ -253,8 +260,9 @@ if os.path.exists('./data/all_team_conversions.csv'):
     print(f"✅ TeamConversions table created with {len(team_conversions_df)} records")
 
 # Passing/Rushing/Receiving
-if os.path.exists('./data/all_passing_rushing_receiving.csv'):
-    passing_rushing_receiving_df = pd.read_csv('./data/all_passing_rushing_receiving.csv')
+if os.path.exists('./data/all_passing_rushing_receiving_pfr_clean.csv'):
+    print("   Loading clean Passing/Rushing/Receiving data (no NFLverse contamination)...")
+    passing_rushing_receiving_df = pd.read_csv('./data/all_passing_rushing_receiving_pfr_clean.csv')
     with sqlite3.connect(db_path) as conn:
         passing_rushing_receiving_df.to_sql('PassingRushingReceiving', conn, if_exists='replace', index=False)
     print(f"✅ PassingRushingReceiving table created with {len(passing_rushing_receiving_df)} records")
