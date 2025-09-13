@@ -177,19 +177,11 @@ from datetime import datetime, timedelta
 import os
 import glob
 
-print("\nExample format: 20241223 (for Dec 23, 2024)")
-starter_date_default = '20241223'
-current_date = datetime.now().strftime('%Y%m%d')
-start_date = input(f"Enter start date (YYYYMMDD) [press Enter for {starter_date_default}]: ").strip()
-if not start_date:
-    start_date = starter_date_default
-start_dt = datetime.strptime(start_date, '%Y%m%d')
-default_end = (start_dt + timedelta(days=7)).strftime('%Y%m%d')
-end_date = input(f"Enter end date (YYYYMMDD) [press Enter for {default_end}]: ").strip()
-if not end_date:
-    end_date = default_end
-datetime.strptime(start_date, '%Y%m%d')
-datetime.strptime(end_date, '%Y%m%d')
+# Automatically set date range: last 10 days to next 7 days
+current_date = datetime.now()
+start_date = (current_date - timedelta(days=10)).strftime('%Y%m%d')
+end_date = (current_date + timedelta(days=7)).strftime('%Y%m%d')
+print(f"\nAutomatically filtering data from {start_date} to {end_date} (last 10 days + next 7 days)")
 input_files = {
     'all': 'data/odds/nfl_odds_movements.csv',
     'circa': 'data/odds/nfl_odds_movements_circa.csv',
@@ -202,17 +194,16 @@ for name, file_path in input_files.items():
     df = df.drop('date', axis=1)
     df.to_csv(file_path, index=False)
     print(f"Filtered {name} odds data saved to {file_path} ({len(df)} rows)")
-cleanup = input("\nRemove raw odds files from data/odds/? (y/n) [press Enter for n]: ").lower().strip()
-if cleanup == 'y':
-    odds_files = glob.glob('data/odds/nfl_odds_vsin_*.json')
-    odds_files = glob.glob('data/odds/nfl_odds_vsin_*.json')
-    removed = 0
-    for file in odds_files:
-        file_date = file.split('_')[-2]  # Gets YYYYMMDD from filename
-        if file_date < start_date or file_date > end_date:
-            os.remove(file)
-            removed += 1
-    print(f"\nRemoved {removed} raw odds files outside the date range {start_date} to {end_date}") 
+# Automatically remove raw odds files outside the date range
+print("\nAutomatically cleaning up raw odds files...")
+odds_files = glob.glob('data/odds/nfl_odds_vsin_*.json')
+removed = 0
+for file in odds_files:
+    file_date = file.split('_')[-2]  # Gets YYYYMMDD from filename
+    if file_date < start_date or file_date > end_date:
+        os.remove(file)
+        removed += 1
+print(f"Removed {removed} raw odds files outside the date range {start_date} to {end_date}") 
 
 
 
