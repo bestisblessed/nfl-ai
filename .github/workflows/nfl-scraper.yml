@@ -4,8 +4,8 @@ on:
   schedule:
     - cron: '0 23 * * 6'     # Run every Saturday at 6 PM EST (11 PM UTC)
   workflow_dispatch:
-  # push:
-  #   branches: [ main ] # Test on every push to main
+  push:
+    branches: [ main ] # Test on every push to main
 
 jobs:
   scrape:
@@ -16,15 +16,18 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
       
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.12'
+        python-version: '3.11'
         
     - name: Install dependencies
       run: |
-        pip install pandas requests beautifulsoup4 numpy lxml
+        pip install --upgrade pip
+        pip install pandas>=2.0.0 requests>=2.31.0 beautifulsoup4>=4.12.0 numpy>=1.24.0 lxml
         
     - name: Run NFL PFR Scraper
       run: |
@@ -32,16 +35,31 @@ jobs:
         python ScraperMasterPFR.py
       continue-on-error: true
         
+    - name: Check for data files
+      run: |
+        if [ -d "Scrapers/FINAL" ] && [ "$(ls -A Scrapers/FINAL)" ]; then
+          echo "Data files found in FINAL directory"
+          ls -la Scrapers/FINAL/
+        else
+          echo "No data files found in FINAL directory"
+          exit 1
+        fi
+        
     - name: Upload data files
       uses: actions/upload-artifact@v4
       with:
         name: nfl-data-${{ github.run_number }}
         path: Scrapers/FINAL/
+      if: always()
         
     - name: Commit and push data
       run: |
         git config --local user.email "tyler.durette@gmail.com"
         git config --local user.name "bestisblessed"
-        git add Scrapers/FINAL/
-        git commit -m "Update NFL data - $(date)" || exit 0
-        git push
+        if [ -d "Scrapers/FINAL" ] && [ "$(ls -A Scrapers/FINAL)" ]; then
+          git add Scrapers/FINAL/
+          git diff --staged --quiet || git commit -m "Update NFL data - $(date)"
+          git push
+        else
+          echo "No new data to commit"
+        fi
