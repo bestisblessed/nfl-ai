@@ -337,6 +337,9 @@ if df_list:
         }))
         comprehensive_games_df = df_games.merge(grouped_df, on=['game_id', 'season'], how='inner')
         comprehensive_games_df.to_csv(f'{final_dir}/game_logs.csv', index=False)
+    else:
+        # Create empty game_logs.csv if no data
+        pd.DataFrame(columns=['game_id', 'season', 'week', 'date', 'home_team', 'away_team', 'home_score', 'away_score', 'game_location', 'result', 'overtime']).to_csv(f'{final_dir}/game_logs.csv', index=False)
 
 # ============================================================================
 # BOX SCORES (2024-2025)
@@ -620,15 +623,17 @@ for year in range(2024, 2026):
             writer.writerows(team_games)
         sleep(2.5)
 all_games = []
-for filename in os.listdir(f'{final_dir}/SR-schedule-and-game-results/'):
-    if filename.endswith("_schedule_and_game_results.csv"):
-        team_abbr = filename.split('_')[0]
-        season_year = filename.split('_')[1]
-        file_path = os.path.join(f'{final_dir}/SR-schedule-and-game-results/', filename)
-        df = pd.read_csv(file_path)
-        df['Team'] = team_abbr
-        df['Season'] = season_year
-        all_games.append(df)
+schedule_dir = f'{final_dir}/SR-schedule-and-game-results/'
+if os.path.exists(schedule_dir):
+    for filename in os.listdir(schedule_dir):
+        if filename.endswith("_schedule_and_game_results.csv"):
+            team_abbr = filename.split('_')[0]
+            season_year = filename.split('_')[1]
+            file_path = os.path.join(schedule_dir, filename)
+            df = pd.read_csv(file_path)
+            df['Team'] = team_abbr
+            df['Season'] = season_year
+            all_games.append(df)
 if all_games:
     merged_df = pd.concat(all_games, ignore_index=True)
     merged_output_path = os.path.join(f'{final_dir}/SR-schedule-and-game-results/', 'all_teams_schedule_and_game_results_merged.csv')
