@@ -5,8 +5,8 @@ on:
     - cron: '0 23 * * 6'     # Run every Saturday at 6 PM EST (11 PM UTC)
   workflow_dispatch:
   push:
-    branches: [ main ] # Test on every push to main
-
+    branches: [ main ]
+    
 jobs:
   scrape:
     runs-on: ubuntu-latest
