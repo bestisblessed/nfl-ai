@@ -35,6 +35,13 @@ jobs:
         echo "📁 Creating necessary directories..."
         mkdir -p data/rosters data/player-stats data/SR-game-logs data/SR-opponent-game-logs data/SR-team-stats data/SR-team-conversions data/SR-passing-rushing-receiving-game-logs data/SR-defense-game-logs data/SR-scoring-tables data/SR-schedule-and-game-results data/SR-box-scores
         
+        echo "⏱️ Setting up rate limiting to avoid 403 errors..."
+        export SCRAPER_DELAY=5  # 5 second delays between requests
+        export USER_AGENT="Mozilla/5.0 (compatible; NFL-Scraper/1.0)"
+        
+        echo "⏳ Waiting 30 seconds before starting to let rate limits reset..."
+        sleep 30
+        
         echo "🚀 Starting ScraperFinal.py..."
         python -u ScraperFinal.py
         if [ $? -ne 0 ]; then
