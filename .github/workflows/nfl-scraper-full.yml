@@ -2,13 +2,8 @@ name: NFL Full Scraper
 
 on:
   schedule:
-    # - cron: '0 0 * * 0'     # Run every Sunday at 12:00 AM UTC (7:00 PM EST Saturday)
-    - cron: '30 0 * * 0'     # Run every Sunday at 12:30 AM UTC (7:30 PM EST Saturday)
-    # - cron: '0 23 * * 6'     # Run every Saturday at 6 PM EST (11 PM UTC)
-    # - cron: '30 22 * * 6'     # Run every Saturday at 5:30 PM EST (10:30 PM UTC)
-  workflow_dispatch:
-  # push:
-  #   branches: [ main ]
+    - cron: '0 23 * * 6'     # Run every Saturday at 6 PM EST (11 PM UTC)
+  workflow_dispatch: # Allow manual runs
 
 jobs:
   scrape:
@@ -30,62 +25,57 @@ jobs:
     - name: Install dependencies
       run: |
         pip install --upgrade pip
-        pip install pandas>=2.0.0 requests>=2.31.0 beautifulsoup4>=4.12.0 numpy>=1.24.0 lxml
+        pip install pandas>=2.0.0 requests>=2.31.0 beautifulsoup4>=4.12.0 numpy>=1.24.0 lxml sqlite3
         
-    - name: Run NFL Full Scraper
+      # chmod +x scrape.sh
+      # ./scrape.sh
+    - name: Run Full NFL Scraper
       run: |
         cd Scrapers
-        chmod +x scrape.sh
-        ./scrape.sh
+        echo "📁 Creating necessary directories..."
+        mkdir -p data/rosters data/player-stats data/SR-game-logs data/SR-opponent-game-logs data/SR-team-stats data/SR-team-conversions data/SR-passing-rushing-receiving-game-logs data/SR-defense-game-logs data/SR-scoring-tables data/SR-schedule-and-game-results data/SR-box-scores
+        
+        echo "🚀 Starting ScraperFinal.py..."
+        python -u ScraperFinal.py
+        if [ $? -ne 0 ]; then
+          echo "❌ ScraperFinal.py failed"
+          exit 1
+        fi
+        echo "✅ ScraperFinal.py completed successfully"
+        
+        echo "🚀 Starting ScraperFinal-PFR.py..."
+        python -u ScraperFinal-PFR.py
+        if [ $? -ne 0 ]; then
+          echo "❌ ScraperFinal-PFR.py failed"
+          exit 1
+        fi
+        echo "✅ ScraperFinal-PFR.py completed successfully"
       continue-on-error: false
         
     - name: Check for data files
       run: |
-        if [ -d "Scrapers/data" ] && [ "$(ls -A Scrapers/data)" ]; then
-          echo "Data files found in data directory"
-          ls -la Scrapers/data/
-        else
-          echo "No data files found in data directory"
-          exit 1
-        fi
-        
-    - name: Check for final data files
-      run: |
-        if [ -d "Scrapers/final_data" ] && [ "$(ls -A Scrapers/final_data)" ]; then
-          echo "Final data files found"
-          ls -la Scrapers/final_data/
-        else
-          echo "No final data files found"
-        fi
-        
-    - name: Check for PFR final data files
-      run: |
-        if [ -d "Scrapers/final_data_pfr" ] && [ "$(ls -A Scrapers/final_data_pfr)" ]; then
-          echo "PFR final data files found"
-          ls -la Scrapers/final_data_pfr/
-        else
-          echo "No PFR final data files found"
-        fi
+        echo "Checking data directory..."
+        ls -la Scrapers/data/
+        echo ""
+        echo "Checking final_data directory..."
+        ls -la Scrapers/final_data/
+        echo ""
+        echo "Checking final_data_pfr directory..."
+        ls -la Scrapers/final_data_pfr/
         
     - name: Upload data files
       uses: actions/upload-artifact@v4
       with:
-        name: nfl-data-full-${{ github.run_number }}
+        name: nfl-full-data-${{ github.run_number }}
         path: |
           Scrapers/data/
           Scrapers/final_data/
           Scrapers/final_data_pfr/
-          Scrapers/nfl.db
-          Scrapers/nfl-db-pfr.db
         
     - name: Commit and push data
       run: |
         git config --local user.email "tyler.durette@gmail.com"
         git config --local user.name "bestisblessed"
-        if [ -d "Scrapers/data" ] && [ "$(ls -A Scrapers/data)" ]; then
-          git add -f Scrapers/data/ Scrapers/final_data/ Scrapers/final_data_pfr/ Scrapers/nfl.db Scrapers/nfl-db-pfr.db
-          git diff --staged --quiet || git commit -m "Update NFL data (full scraper) - $(date)"
-          git push
-        else
-          echo "No new data to commit"
-        fi
+        git add Scrapers/data/ Scrapers/final_data/ Scrapers/final_data_pfr/
+        git diff --staged --quiet || git commit -m "Update NFL full data - $(date)"
+        git push
