@@ -26,6 +26,7 @@ jobs:
         
     - name: Run NFL PFR Scraper
       run: |
+        cd Scrapers
         python ScraperMasterPFR.py
       continue-on-error: true
         
@@ -33,12 +34,12 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: nfl-data-${{ github.run_number }}
-        path: FINAL/
+        path: Scrapers/FINAL/
         
     - name: Commit and push data
       run: |
         git config --local user.email "tyler.durette@gmail.com"
         git config --local user.name "bestisblessed"
-        git add FINAL/
+        git add Scrapers/FINAL/
         git commit -m "Update NFL data - $(date)" || exit 0
         git push
