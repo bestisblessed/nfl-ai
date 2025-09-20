@@ -273,8 +273,8 @@ if df_list:
         return home_team, away_team
     
     home_away_results = df.apply(determine_home_away, axis=1, result_type='expand')
-    df['home_team_id'] = home_away_results[0]
-    df['away_team_id'] = home_away_results[1]
+    df['home_team_id'] = home_away_results.iloc[:, 0]
+    df['away_team_id'] = home_away_results.iloc[:, 1]
     df['week_num'] = df['week'].astype(str).str.zfill(2)
     df['game_id'] = df['season'] + '_' + df['week_num'] + '_' + df['away_team_id'] + '_' + df['home_team_id']
     # Create games data directly without intermediate file
