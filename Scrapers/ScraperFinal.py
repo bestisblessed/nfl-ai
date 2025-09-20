@@ -368,7 +368,6 @@ with open(csv_file_path, 'a', newline='') as csvfile:
                 try:
                     game_dt = datetime.fromisoformat(row['date'])
                 except Exception:
-                    # Fallback: skip if date is missing or unparsable
                     continue
                 if row['season'] == str(year_to_scrape) and game_dt <= now_dt:
                     game_urls.append(row['pfr_url'])
@@ -380,6 +379,11 @@ with open(csv_file_path, 'a', newline='') as csvfile:
                 print(f"Scraping game: {url}")
                 response = requests.get(url)
                 response.raise_for_status()
+                # Save raw HTML
+                raw_file_name = url.split('/')[-1].replace('.htm', '') + '.html'
+                raw_file_path = f'./data/SR-box-scores/{raw_file_name}'
+                with open(raw_file_path, 'wb') as raw_file:
+                    raw_file.write(response.content)
                 soup = BeautifulSoup(response.content, 'html.parser')
                 linescore_table = soup.find('table', class_='linescore')
                 if linescore_table:
