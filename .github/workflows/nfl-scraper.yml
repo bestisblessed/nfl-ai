@@ -4,8 +4,8 @@ on:
   schedule:
     - cron: '0 23 * * 6'     # Run every Saturday at 6 PM EST (11 PM UTC)
   workflow_dispatch:
-  push:
-    branches: [ main ] # Test on every push to main
+  # push:
+  #   branches: [ main ]
 
 jobs:
   scrape:
@@ -33,6 +33,7 @@ jobs:
       run: |
         cd Scrapers
         python ScraperMasterPFR.py
+      continue-on-error: false
         
     - name: Check for data files
       run: |
@@ -49,7 +50,6 @@ jobs:
       with:
         name: nfl-data-${{ github.run_number }}
         path: Scrapers/FINAL/
-      if: always()
         
     - name: Commit and push data
       run: |
