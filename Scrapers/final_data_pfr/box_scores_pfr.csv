@@ -1,35 +1,67 @@
 URL,Team,1,2,3,4,OT1,OT2,OT3,OT4,Final
-https://www.pro-football-reference.com/boxscores/202509040phi.htm,Dallas Cowboys,7,13,0,0,,,,,20
-https://www.pro-football-reference.com/boxscores/202509040phi.htm,Philadelphia Eagles,7,14,3,0,,,,,24
-https://www.pro-football-reference.com/boxscores/202509050sdg.htm,Kansas City Chiefs,0,6,6,9,,,,,21
-https://www.pro-football-reference.com/boxscores/202509050sdg.htm,Los Angeles Chargers,7,6,7,7,,,,,27
-https://www.pro-football-reference.com/boxscores/202509070atl.htm,Tampa Bay Buccaneers,0,10,7,6,,,,,23
-https://www.pro-football-reference.com/boxscores/202509070atl.htm,Atlanta Falcons,7,3,3,7,,,,,20
-https://www.pro-football-reference.com/boxscores/202509070cle.htm,Cincinnati Bengals,7,7,3,0,,,,,17
-https://www.pro-football-reference.com/boxscores/202509070cle.htm,Cleveland Browns,0,10,6,0,,,,,16
-https://www.pro-football-reference.com/boxscores/202509070clt.htm,Miami Dolphins,0,0,0,8,,,,,8
-https://www.pro-football-reference.com/boxscores/202509070clt.htm,Indianapolis Colts,3,17,3,10,,,,,33
-https://www.pro-football-reference.com/boxscores/202509070jax.htm,Carolina Panthers,3,0,0,7,,,,,10
-https://www.pro-football-reference.com/boxscores/202509070jax.htm,Jacksonville Jaguars,3,17,0,6,,,,,26
-https://www.pro-football-reference.com/boxscores/202509070nwe.htm,Las Vegas Raiders,7,0,10,3,,,,,20
-https://www.pro-football-reference.com/boxscores/202509070nwe.htm,New England Patriots,7,3,0,3,,,,,13
-https://www.pro-football-reference.com/boxscores/202509070nor.htm,Arizona Cardinals,3,14,3,0,,,,,20
-https://www.pro-football-reference.com/boxscores/202509070nor.htm,New Orleans Saints,0,10,0,3,,,,,13
-https://www.pro-football-reference.com/boxscores/202509070nyj.htm,Pittsburgh Steelers,7,10,0,17,,,,,34
-https://www.pro-football-reference.com/boxscores/202509070nyj.htm,New York Jets,9,10,7,6,,,,,32
-https://www.pro-football-reference.com/boxscores/202509070was.htm,New York Giants,0,3,3,0,,,,,6
-https://www.pro-football-reference.com/boxscores/202509070was.htm,Washington Commanders,7,7,0,7,,,,,21
-https://www.pro-football-reference.com/boxscores/202509070den.htm,Tennessee Titans,3,6,3,0,,,,,12
-https://www.pro-football-reference.com/boxscores/202509070den.htm,Denver Broncos,3,7,3,7,,,,,20
-https://www.pro-football-reference.com/boxscores/202509070sea.htm,San Francisco 49ers,7,0,0,10,,,,,17
-https://www.pro-football-reference.com/boxscores/202509070sea.htm,Seattle Seahawks,0,10,0,3,,,,,13
-https://www.pro-football-reference.com/boxscores/202509070gnb.htm,Detroit Lions,0,3,3,7,,,,,13
-https://www.pro-football-reference.com/boxscores/202509070gnb.htm,Green Bay Packers,10,7,0,10,,,,,27
-https://www.pro-football-reference.com/boxscores/202509070ram.htm,Houston Texans,3,6,0,0,,,,,9
-https://www.pro-football-reference.com/boxscores/202509070ram.htm,Los Angeles Rams,0,7,7,0,,,,,14
-https://www.pro-football-reference.com/boxscores/202509070buf.htm,Baltimore Ravens,3,17,14,6,,,,,40
-https://www.pro-football-reference.com/boxscores/202509070buf.htm,Buffalo Bills,7,6,6,22,,,,,41
-https://www.pro-football-reference.com/boxscores/202509080chi.htm,Minnesota Vikings,0,6,0,21,,,,,27
-https://www.pro-football-reference.com/boxscores/202509080chi.htm,Chicago Bears,7,3,7,7,,,,,24
-https://www.pro-football-reference.com/boxscores/202509110gnb.htm,Washington Commanders,0,3,0,15,,,,,18
-https://www.pro-football-reference.com/boxscores/202509110gnb.htm,Green Bay Packers,7,7,3,10,,,,,27
+https://www.pro-football-reference.com/boxscores/202509040phi.htm,Dallas Cowboys,7,13,0,0,,,,,20.0
+https://www.pro-football-reference.com/boxscores/202509040phi.htm,Philadelphia Eagles,7,14,3,0,,,,,24.0
+https://www.pro-football-reference.com/boxscores/202509050sdg.htm,Kansas City Chiefs,0,6,6,9,,,,,21.0
+https://www.pro-football-reference.com/boxscores/202509050sdg.htm,Los Angeles Chargers,7,6,7,7,,,,,27.0
+https://www.pro-football-reference.com/boxscores/202509070atl.htm,Tampa Bay Buccaneers,0,10,7,6,,,,,23.0
+https://www.pro-football-reference.com/boxscores/202509070atl.htm,Atlanta Falcons,7,3,3,7,,,,,20.0
+https://www.pro-football-reference.com/boxscores/202509070cle.htm,Cincinnati Bengals,7,7,3,0,,,,,17.0
+https://www.pro-football-reference.com/boxscores/202509070cle.htm,Cleveland Browns,0,10,6,0,,,,,16.0
+https://www.pro-football-reference.com/boxscores/202509070clt.htm,Miami Dolphins,0,0,0,8,,,,,8.0
+https://www.pro-football-reference.com/boxscores/202509070clt.htm,Indianapolis Colts,3,17,3,10,,,,,33.0
+https://www.pro-football-reference.com/boxscores/202509070jax.htm,Carolina Panthers,3,0,0,7,,,,,10.0
+https://www.pro-football-reference.com/boxscores/202509070jax.htm,Jacksonville Jaguars,3,17,0,6,,,,,26.0
+https://www.pro-football-reference.com/boxscores/202509070nwe.htm,Las Vegas Raiders,7,0,10,3,,,,,20.0
+https://www.pro-football-reference.com/boxscores/202509070nwe.htm,New England Patriots,7,3,0,3,,,,,13.0
+https://www.pro-football-reference.com/boxscores/202509070nor.htm,Arizona Cardinals,3,14,3,0,,,,,20.0
+https://www.pro-football-reference.com/boxscores/202509070nor.htm,New Orleans Saints,0,10,0,3,,,,,13.0
+https://www.pro-football-reference.com/boxscores/202509070nyj.htm,Pittsburgh Steelers,7,10,0,17,,,,,34.0
+https://www.pro-football-reference.com/boxscores/202509070nyj.htm,New York Jets,9,10,7,6,,,,,32.0
+https://www.pro-football-reference.com/boxscores/202509070was.htm,New York Giants,0,3,3,0,,,,,6.0
+https://www.pro-football-reference.com/boxscores/202509070was.htm,Washington Commanders,7,7,0,7,,,,,21.0
+https://www.pro-football-reference.com/boxscores/202509070den.htm,Tennessee Titans,3,6,3,0,,,,,12.0
+https://www.pro-football-reference.com/boxscores/202509070den.htm,Denver Broncos,3,7,3,7,,,,,20.0
+https://www.pro-football-reference.com/boxscores/202509070sea.htm,San Francisco 49ers,7,0,0,10,,,,,17.0
+https://www.pro-football-reference.com/boxscores/202509070sea.htm,Seattle Seahawks,0,10,0,3,,,,,13.0
+https://www.pro-football-reference.com/boxscores/202509070gnb.htm,Detroit Lions,0,3,3,7,,,,,13.0
+https://www.pro-football-reference.com/boxscores/202509070gnb.htm,Green Bay Packers,10,7,0,10,,,,,27.0
+https://www.pro-football-reference.com/boxscores/202509070ram.htm,Houston Texans,3,6,0,0,,,,,9.0
+https://www.pro-football-reference.com/boxscores/202509070ram.htm,Los Angeles Rams,0,7,7,0,,,,,14.0
+https://www.pro-football-reference.com/boxscores/202509070buf.htm,Baltimore Ravens,3,17,14,6,,,,,40.0
+https://www.pro-football-reference.com/boxscores/202509070buf.htm,Buffalo Bills,7,6,6,22,,,,,41.0
+https://www.pro-football-reference.com/boxscores/202509080chi.htm,Minnesota Vikings,0,6,0,21,,,,,27.0
+https://www.pro-football-reference.com/boxscores/202509080chi.htm,Chicago Bears,7,3,7,7,,,,,24.0
+https://www.pro-football-reference.com/boxscores/202509110gnb.htm,Washington Commanders,0,3,0,15,,,,,18.0
+https://www.pro-football-reference.com/boxscores/202509110gnb.htm,Green Bay Packers,7,7,3,10,,,,,27.0
+https://www.pro-football-reference.com/boxscores/202509140rav.htm,Cleveland Browns,0,3,7,7,,,,,17.0
+https://www.pro-football-reference.com/boxscores/202509140rav.htm,Baltimore Ravens,3,7,10,21,,,,,41.0
+https://www.pro-football-reference.com/boxscores/202509140cin.htm,Jacksonville Jaguars,7,10,7,3,,,,,27.0
+https://www.pro-football-reference.com/boxscores/202509140cin.htm,Cincinnati Bengals,7,3,14,7,,,,,31.0
+https://www.pro-football-reference.com/boxscores/202509140dal.htm,New York Giants,6,7,3,21,0.0,,,,37.0
+https://www.pro-football-reference.com/boxscores/202509140dal.htm,Dallas Cowboys,0,10,7,20,3.0,,,,40.0
+https://www.pro-football-reference.com/boxscores/202509140det.htm,Chicago Bears,7,7,0,7,,,,,21.0
+https://www.pro-football-reference.com/boxscores/202509140det.htm,Detroit Lions,14,14,10,14,,,,,52.0
+https://www.pro-football-reference.com/boxscores/202509140mia.htm,New England Patriots,12,3,8,10,,,,,33.0
+https://www.pro-football-reference.com/boxscores/202509140mia.htm,Miami Dolphins,0,14,6,7,,,,,27.0
+https://www.pro-football-reference.com/boxscores/202509140nor.htm,San Francisco 49ers,6,10,3,7,,,,,26.0
+https://www.pro-football-reference.com/boxscores/202509140nor.htm,New Orleans Saints,0,7,7,7,,,,,21.0
+https://www.pro-football-reference.com/boxscores/202509140nyj.htm,Buffalo Bills,10,10,3,7,,,,,30.0
+https://www.pro-football-reference.com/boxscores/202509140nyj.htm,New York Jets,0,3,0,7,,,,,10.0
+https://www.pro-football-reference.com/boxscores/202509140pit.htm,Seattle Seahawks,7,0,7,17,,,,,31.0
+https://www.pro-football-reference.com/boxscores/202509140pit.htm,Pittsburgh Steelers,6,8,0,3,,,,,17.0
+https://www.pro-football-reference.com/boxscores/202509140oti.htm,Los Angeles Rams,7,3,10,13,,,,,33.0
+https://www.pro-football-reference.com/boxscores/202509140oti.htm,Tennessee Titans,0,13,3,3,,,,,19.0
+https://www.pro-football-reference.com/boxscores/202509140crd.htm,Carolina Panthers,3,0,6,13,,,,,22.0
+https://www.pro-football-reference.com/boxscores/202509140crd.htm,Arizona Cardinals,10,10,7,0,,,,,27.0
+https://www.pro-football-reference.com/boxscores/202509140clt.htm,Denver Broncos,7,14,7,0,,,,,28.0
+https://www.pro-football-reference.com/boxscores/202509140clt.htm,Indianapolis Colts,6,14,3,6,,,,,29.0
+https://www.pro-football-reference.com/boxscores/202509140kan.htm,Philadelphia Eagles,7,3,3,7,,,,,20.0
+https://www.pro-football-reference.com/boxscores/202509140kan.htm,Kansas City Chiefs,0,10,0,7,,,,,17.0
+https://www.pro-football-reference.com/boxscores/202509140min.htm,Atlanta Falcons,6,3,3,10,,,,,22.0
+https://www.pro-football-reference.com/boxscores/202509140min.htm,Minnesota Vikings,0,6,0,0,,,,,6.0
+https://www.pro-football-reference.com/boxscores/202509150htx.htm,Tampa Bay Buccaneers,7,7,0,6,,,,,20.0
+https://www.pro-football-reference.com/boxscores/202509150htx.htm,Houston Texans,10,0,0,9,,,,,19.0
+https://www.pro-football-reference.com/boxscores/202509150rai.htm,Los Angeles Chargers,10,7,3,0,,,,,20.0
+https://www.pro-football-reference.com/boxscores/202509150rai.htm,Las Vegas Raiders,3,3,0,3,,,,,9.0
+https://www.pro-football-reference.com/boxscores/202509180buf.htm,Miami Dolphins,7,7,0,7,,,,,21.0
+https://www.pro-football-reference.com/boxscores/202509180buf.htm,Buffalo Bills,7,7,7,10,,,,,31.0

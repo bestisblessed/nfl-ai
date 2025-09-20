@@ -1,0 +1,10 @@
+services:
+  nfl-pfr-scraper:
+    build: .
+    image: nfl-pfr-scraper-rpi
+    container_name: nfl-pfr-scraper
+    volumes:
+      - ./FINAL:/app/FINAL
+    environment:
+      - TZ=America/New_York
+    restart: "no"

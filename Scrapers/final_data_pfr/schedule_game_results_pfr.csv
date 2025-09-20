@@ -92,7 +92,7 @@ Division,Sat,January 20,8:15PM ET,boxscore,L,,10-9,@,San Francisco 49ers,21.0,24
 16,Sun,December 23,1:00PM ET,boxscore,L,,5-10,@,New England Patriots,12.0,24.0,14.0,289.0,217.0,72.0,3.0,20.0,390.0,117.0,273.0,3.0,-16.9,6.39,-2.11,buf,2018
 17,Sun,December 30,1:00PM ET,boxscore,W,,6-10,,Miami Dolphins,42.0,17.0,23.0,381.0,215.0,166.0,1.0,17.0,225.0,126.0,99.0,4.0,13.1,16.21,-4.96,buf,2018
 1,Sun,September 7,1:00PM ET,boxscore,W,,1-0,@,Cleveland Browns,17.0,16.0,11.0,141.0,95.0,46.0,,22.0,327.0,278.0,49.0,2.0,-2.91,-1.76,5.43,cin,2025
-2,Sun,September 14,1:00PM ET,preview,,,,,Jacksonville Jaguars,,,,,,,,,,,,,,,,cin,2025
+2,Sun,September 14,1:00PM ET,boxscore,W,,2-0,,Jacksonville Jaguars,31.0,27.0,24.0,350.0,302.0,48.0,3.0,21.0,400.0,261.0,139.0,2.0,6.63,-6.25,4.21,cin,2025
 3,Sun,September 21,1:00PM ET,preview,,,,@,Minnesota Vikings,,,,,,,,,,,,,,,,cin,2025
 4,Mon,September 29,8:15PM ET,preview,,,,@,Denver Broncos,,,,,,,,,,,,,,,,cin,2025
 5,Sun,October 5,4:25PM ET,preview,,,,,Detroit Lions,,,,,,,,,,,,,,,,cin,2025
@@ -110,8 +110,8 @@ Division,Sat,January 20,8:15PM ET,boxscore,L,,10-9,@,San Francisco 49ers,21.0,24
 17,Sun,December 28,1:00PM ET,preview,,,,,Arizona Cardinals,,,,,,,,,,,,,,,,cin,2025
 18,Sun,January 4,1:00PM ET,preview,,,,,Cleveland Browns,,,,,,,,,,,,,,,,cin,2025
 1,Sun,September 7,1:00PM ET,boxscore,L,,0-1,@,Indianapolis Colts,8.0,33.0,12.0,211.0,133.0,78.0,3.0,27.0,418.0,262.0,156.0,,-3.89,-19.66,0.45,mia,2025
-2,Sun,September 14,1:00PM ET,preview,,,,,New England Patriots,,,,,,,,,,,,,,,,mia,2025
-3,Thu,September 18,8:15PM ET,preview,,,,@,Buffalo Bills,,,,,,,,,,,,,,,,mia,2025
+2,Sun,September 14,1:00PM ET,boxscore,L,,0-2,,New England Patriots,27.0,33.0,16.0,358.0,297.0,61.0,1.0,18.0,333.0,211.0,122.0,,5.66,-12.82,3.11,mia,2025
+3,Thu,September 18,8:15PM ET,boxscore,L,,0-3,@,Buffalo Bills,21.0,31.0,19.0,276.0,146.0,130.0,1.0,23.0,360.0,203.0,157.0,,6.98,-17.09,2.77,mia,2025
 4,Mon,September 29,7:15PM ET,preview,,,,,New York Jets,,,,,,,,,,,,,,,,mia,2025
 5,Sun,October 5,1:00PM ET,preview,,,,@,Carolina Panthers,,,,,,,,,,,,,,,,mia,2025
 6,Sun,October 12,1:00PM ET,preview,,,,,Los Angeles Chargers,,,,,,,,,,,,,,,,mia,2025
@@ -424,7 +424,7 @@ Division,Sat,January 18,8:00PM ET,boxscore,L,,15-3,,Washington Commanders,31.0,4
 16,Sun,December 22,4:05PM ET,boxscore,W,,6-9,,Detroit Lions,27.0,17.0,25.0,348.0,198.0,150.0,,13.0,191.0,95.0,96.0,,12.95,4.32,-4.08,den,2019
 17,Sun,December 29,4:25PM ET,boxscore,W,,7-9,,Oakland Raiders,16.0,15.0,16.0,238.0,168.0,70.0,1.0,18.0,477.0,380.0,97.0,1.0,-8.2,0.3,10.2,den,2019
 1,Sun,September 7,1:00PM ET,boxscore,W,,1-0,@,New Orleans Saints,20.0,13.0,19.0,276.0,130.0,146.0,,21.0,315.0,208.0,107.0,,5.26,-1.36,1.92,crd,2025
-2,Sun,September 14,4:05PM ET,preview,,,,,Carolina Panthers,,,,,,,,,,,,,,,,crd,2025
+2,Sun,September 14,4:05PM ET,boxscore,W,,2-0,,Carolina Panthers,27.0,22.0,16.0,293.0,211.0,82.0,1.0,26.0,352.0,303.0,49.0,2.0,7.39,0.07,0.13,crd,2025
 3,Sun,September 21,4:25PM ET,preview,,,,@,San Francisco 49ers,,,,,,,,,,,,,,,,crd,2025
 4,Thu,September 25,8:15PM ET,preview,,,,,Seattle Seahawks,,,,,,,,,,,,,,,,crd,2025
 5,Sun,October 5,4:05PM ET,preview,,,,,Tennessee Titans,,,,,,,,,,,,,,,,crd,2025
@@ -442,7 +442,7 @@ Division,Sat,January 18,8:00PM ET,boxscore,L,,15-3,,Washington Commanders,31.0,4
 17,Sun,December 28,1:00PM ET,preview,,,,@,Cincinnati Bengals,,,,,,,,,,,,,,,,crd,2025
 18,Sun,January 4,1:00PM ET,preview,,,,@,Los Angeles Rams,,,,,,,,,,,,,,,,crd,2025
 1,Sun,September 7,4:25PM ET,boxscore,W,,1-0,,Houston Texans,14.0,9.0,18.0,296.0,224.0,72.0,1.0,18.0,265.0,151.0,114.0,2.0,4.69,5.99,-4.92,ram,2025
-2,Sun,September 14,1:00PM ET,preview,,,,@,Tennessee Titans,,,,,,,,,,,,,,,,ram,2025
+2,Sun,September 14,1:00PM ET,boxscore,W,,2-0,@,Tennessee Titans,33.0,19.0,22.0,439.0,290.0,149.0,1.0,18.0,252.0,143.0,109.0,1.0,14.23,4.3,-4.91,ram,2025
 3,Sun,September 21,1:00PM ET,preview,,,,@,Philadelphia Eagles,,,,,,,,,,,,,,,,ram,2025
 4,Sun,September 28,4:05PM ET,preview,,,,,Indianapolis Colts,,,,,,,,,,,,,,,,ram,2025
 5,Thu,October 2,8:15PM ET,preview,,,,,San Francisco 49ers,,,,,,,,,,,,,,,,ram,2025
@@ -495,7 +495,7 @@ Division,Sat,January 18,8:00PM ET,boxscore,L,,15-3,,Washington Commanders,31.0,4
 16,Sun,December 23,1:00PM ET,boxscore,W,,5-10,@,Miami Dolphins,17.0,7.0,19.0,244.0,118.0,126.0,1.0,11.0,183.0,121.0,62.0,2.0,-2.6,15.96,0.98,jax,2018
 17,Sun,December 30,1:00PM ET,boxscore,L,,5-11,@,Houston Texans,3.0,20.0,6.0,119.0,89.0,30.0,2.0,23.0,342.0,208.0,134.0,1.0,-20.82,-2.75,2.02,jax,2018
 1,Thu,September 4,8:20PM ET,boxscore,W,,1-0,,Dallas Cowboys,24.0,20.0,20.0,302.0,144.0,158.0,,22.0,307.0,188.0,119.0,1.0,13.04,-10.85,2.69,phi,2025
-2,Sun,September 14,4:25PM ET,preview,,,,@,Kansas City Chiefs,,,,,,,,,,,,,,,,phi,2025
+2,Sun,September 14,4:25PM ET,boxscore,W,,2-0,@,Kansas City Chiefs,20.0,17.0,16.0,216.0,94.0,122.0,,17.0,294.0,173.0,121.0,1.0,0.21,0.8,4.07,phi,2025
 3,Sun,September 21,1:00PM ET,preview,,,,,Los Angeles Rams,,,,,,,,,,,,,,,,phi,2025
 4,Sun,September 28,1:00PM ET,preview,,,,@,Tampa Bay Buccaneers,,,,,,,,,,,,,,,,phi,2025
 5,Sun,October 5,1:00PM ET,preview,,,,,Denver Broncos,,,,,,,,,,,,,,,,phi,2025
@@ -530,7 +530,7 @@ Division,Sat,January 18,8:00PM ET,boxscore,L,,15-3,,Washington Commanders,31.0,4
 16,Sat,December 21,1:00PM ET,boxscore,L,,7-8,,Houston Texans,20.0,23.0,19.0,435.0,329.0,106.0,5.0,15.0,229.0,161.0,68.0,2.0,-8.4,13.02,-7.92,tam,2019
 17,Sun,December 29,1:00PM ET,boxscore,L,OT,7-9,,Atlanta Falcons,22.0,28.0,14.0,329.0,193.0,136.0,3.0,28.0,373.0,286.0,87.0,1.0,-5.96,8.27,-9.46,tam,2019
 1,Sun,September 7,1:00PM ET,boxscore,W,,1-0,,Miami Dolphins,33.0,8.0,27.0,418.0,262.0,156.0,,12.0,211.0,133.0,78.0,3.0,19.66,3.89,-0.45,clt,2025
-2,Sun,September 14,4:05PM ET,preview,,,,,Denver Broncos,,,,,,,,,,,,,,,,clt,2025
+2,Sun,September 14,4:05PM ET,boxscore,W,,2-0,,Denver Broncos,29.0,28.0,26.0,473.0,306.0,167.0,,23.0,324.0,206.0,118.0,1.0,15.36,-15.48,0.41,clt,2025
 3,Sun,September 21,1:00PM ET,preview,,,,@,Tennessee Titans,,,,,,,,,,,,,,,,clt,2025
 4,Sun,September 28,4:05PM ET,preview,,,,@,Los Angeles Rams,,,,,,,,,,,,,,,,clt,2025
 5,Sun,October 5,1:00PM ET,preview,,,,,Las Vegas Raiders,,,,,,,,,,,,,,,,clt,2025
@@ -741,7 +741,7 @@ Conf. Champ.,Sun,January 19,3:05PM ET,boxscore,L,,11-8,@,Kansas City Chiefs,24.0
 ,,Playoffs,,,,,,,,,,,,,,,,,,,,,,,tam,2022
 Wild Card,Mon,January 16,8:15PM ET,boxscore,L,,8-10,,Dallas Cowboys,14.0,31.0,24.0,386.0,334.0,52.0,1.0,26.0,425.0,297.0,128.0,,-2.0,-25.18,9.31,tam,2022
 1,Fri,September 5,8:00PM ET,boxscore,W,,1-0,,Kansas City Chiefs,27.0,21.0,22.0,394.0,304.0,90.0,,18.0,347.0,249.0,98.0,,11.87,-8.2,-1.45,sdg,2025
-2,Mon,September 15,10:00PM ET,preview,,,,@,Las Vegas Raiders,,,,,,,,,,,,,,,,sdg,2025
+2,Mon,September 15,10:00PM ET,boxscore,W,,2-0,@,Las Vegas Raiders,20.0,9.0,15.0,317.0,236.0,81.0,1.0,15.0,218.0,150.0,68.0,3.0,0.98,16.29,-2.92,sdg,2025
 3,Sun,September 21,4:05PM ET,preview,,,,,Denver Broncos,,,,,,,,,,,,,,,,sdg,2025
 4,Sun,September 28,1:00PM ET,preview,,,,@,New York Giants,,,,,,,,,,,,,,,,sdg,2025
 5,Sun,October 5,4:25PM ET,preview,,,,,Washington Commanders,,,,,,,,,,,,,,,,sdg,2025
@@ -817,7 +817,7 @@ Wild Card,Sun,January 15,1:00PM ET,boxscore,L,,9-9,@,Buffalo Bills,31.0,34.0,16.
 Wild Card,Sat,January 5,8:15PM ET,boxscore,W,,11-6,,Seattle Seahawks,24.0,22.0,23.0,380.0,216.0,164.0,1.0,11.0,299.0,226.0,73.0,,7.14,-3.19,-4.37,dal,2018
 Division,Sat,January 12,8:15PM ET,boxscore,L,,11-7,@,Los Angeles Rams,22.0,30.0,19.0,308.0,258.0,50.0,,30.0,459.0,186.0,273.0,,13.46,-24.75,0.14,dal,2018
 1,Sun,September 7,8:20PM ET,boxscore,L,,0-1,@,Buffalo Bills,40.0,41.0,19.0,432.0,194.0,238.0,1.0,29.0,497.0,389.0,108.0,,19.52,-21.93,3.41,rav,2025
-2,Sun,September 14,1:00PM ET,preview,,,,,Cleveland Browns,,,,,,,,,,,,,,,,rav,2025
+2,Sun,September 14,1:00PM ET,boxscore,W,,1-1,,Cleveland Browns,41.0,17.0,14.0,242.0,197.0,45.0,,17.0,322.0,207.0,115.0,2.0,2.28,15.65,5.44,rav,2025
 3,Mon,September 22,8:15PM ET,preview,,,,,Detroit Lions,,,,,,,,,,,,,,,,rav,2025
 4,Sun,September 28,4:25PM ET,preview,,,,@,Kansas City Chiefs,,,,,,,,,,,,,,,,rav,2025
 5,Sun,October 5,1:00PM ET,preview,,,,,Houston Texans,,,,,,,,,,,,,,,,rav,2025
@@ -1268,7 +1268,7 @@ Conf. Champ.,Sun,January 28,6:30PM ET,boxscore,L,,14-6,@,San Francisco 49ers,31.
 ,,Playoffs,,,,,,,,,,,,,,,,,,,,,,,htx,2018
 Wild Card,Sat,January 5,4:35PM ET,boxscore,L,,11-6,,Indianapolis Colts,7.0,21.0,20.0,322.0,217.0,105.0,1.0,26.0,422.0,222.0,200.0,1.0,-3.99,-16.89,2.95,htx,2018
 1,Sun,September 7,4:05PM ET,boxscore,L,,0-1,@,Denver Broncos,12.0,20.0,7.0,133.0,62.0,71.0,2.0,20.0,317.0,166.0,151.0,4.0,-27.39,8.07,8.09,oti,2025
-2,Sun,September 14,1:00PM ET,preview,,,,,Los Angeles Rams,,,,,,,,,,,,,,,,oti,2025
+2,Sun,September 14,1:00PM ET,boxscore,L,,0-2,,Los Angeles Rams,19.0,33.0,18.0,252.0,143.0,109.0,1.0,22.0,439.0,290.0,149.0,1.0,-4.3,-14.23,4.91,oti,2025
 3,Sun,September 21,1:00PM ET,preview,,,,,Indianapolis Colts,,,,,,,,,,,,,,,,oti,2025
 4,Sun,September 28,1:00PM ET,preview,,,,@,Houston Texans,,,,,,,,,,,,,,,,oti,2025
 5,Sun,October 5,4:05PM ET,preview,,,,@,Arizona Cardinals,,,,,,,,,,,,,,,,oti,2025
@@ -1358,7 +1358,7 @@ Conf. Champ.,Sun,January 20,6:40PM ET,boxscore,L,OT,13-5,,New England Patriots,3
 16,Sun,December 22,4:25PM ET,boxscore,W,,5-9-1,@,Seattle Seahawks,27.0,13.0,21.0,412.0,159.0,253.0,,13.0,224.0,133.0,91.0,1.0,10.12,13.87,-6.82,crd,2019
 17,Sun,December 29,4:25PM ET,boxscore,L,,5-10-1,@,Los Angeles Rams,24.0,31.0,22.0,393.0,322.0,71.0,5.0,25.0,424.0,311.0,113.0,,3.53,-16.31,5.85,crd,2019
 1,Sun,September 7,1:00PM ET,boxscore,W,,1-0,@,Atlanta Falcons,23.0,20.0,16.0,260.0,159.0,101.0,,23.0,358.0,289.0,69.0,,7.74,-9.79,5.47,tam,2025
-2,Mon,September 15,7:00PM ET,preview,,,,@,Houston Texans,,,,,,,,,,,,,,,,tam,2025
+2,Mon,September 15,7:00PM ET,boxscore,W,,2-0,@,Houston Texans,20.0,19.0,25.0,360.0,191.0,169.0,,12.0,266.0,182.0,84.0,,10.15,0.88,-11.63,tam,2025
 3,Sun,September 21,1:00PM ET,preview,,,,,New York Jets,,,,,,,,,,,,,,,,tam,2025
 4,Sun,September 28,1:00PM ET,preview,,,,,Philadelphia Eagles,,,,,,,,,,,,,,,,tam,2025
 5,Sun,October 5,4:05PM ET,preview,,,,@,Seattle Seahawks,,,,,,,,,,,,,,,,tam,2025
@@ -1506,7 +1506,7 @@ Division,Sat,January 20,4:30PM ET,boxscore,L,,11-8,@,Baltimore Ravens,10.0,34.0,
 17,Sun,December 31,1:00PM ET,boxscore,L,,4-12,@,Buffalo Bills,21.0,27.0,16.0,294.0,191.0,103.0,4.0,19.0,281.0,154.0,127.0,1.0,-11.94,-0.15,1.73,nwe,2023
 18,Sun,January 7,1:00PM ET,boxscore,L,,4-13,,New York Jets,3.0,17.0,6.0,119.0,31.0,88.0,2.0,13.0,254.0,69.0,185.0,1.0,-27.43,10.78,3.32,nwe,2023
 1,Sun,September 7,4:05PM ET,boxscore,W,,1-0,,Tennessee Titans,20.0,12.0,20.0,317.0,166.0,151.0,4.0,7.0,133.0,62.0,71.0,2.0,-8.07,27.39,-8.09,den,2025
-2,Sun,September 14,4:05PM ET,preview,,,,@,Indianapolis Colts,,,,,,,,,,,,,,,,den,2025
+2,Sun,September 14,4:05PM ET,boxscore,L,,1-1,@,Indianapolis Colts,28.0,29.0,23.0,324.0,206.0,118.0,1.0,26.0,473.0,306.0,167.0,,15.48,-15.36,-0.41,den,2025
 3,Sun,September 21,4:05PM ET,preview,,,,@,Los Angeles Chargers,,,,,,,,,,,,,,,,den,2025
 4,Mon,September 29,8:15PM ET,preview,,,,,Cincinnati Bengals,,,,,,,,,,,,,,,,den,2025
 5,Sun,October 5,1:00PM ET,preview,,,,@,Philadelphia Eagles,,,,,,,,,,,,,,,,den,2025
@@ -1662,7 +1662,7 @@ Wild Card,Sat,January 11,4:30PM ET,boxscore,L,,11-7,@,Houston Texans,12.0,32.0,1
 17,Sun,January 1,1:00PM ET,boxscore,W,,7-9,@,Washington Commanders,24.0,10.0,16.0,301.0,155.0,146.0,,17.0,260.0,124.0,136.0,3.0,7.26,7.5,-0.54,cle,2022
 18,Sun,January 8,1:00PM ET,boxscore,L,,7-10,@,Pittsburgh Steelers,14.0,28.0,18.0,307.0,173.0,134.0,2.0,23.0,333.0,189.0,144.0,1.0,3.47,-10.81,-2.18,cle,2022
 1,Sun,September 7,4:25PM ET,boxscore,L,,0-1,@,Los Angeles Rams,9.0,14.0,18.0,265.0,151.0,114.0,2.0,18.0,296.0,224.0,72.0,1.0,-5.99,-4.69,4.92,htx,2025
-2,Mon,September 15,7:00PM ET,preview,,,,,Tampa Bay Buccaneers,,,,,,,,,,,,,,,,htx,2025
+2,Mon,September 15,7:00PM ET,boxscore,L,,0-2,,Tampa Bay Buccaneers,19.0,20.0,12.0,266.0,182.0,84.0,,25.0,360.0,191.0,169.0,,-0.88,-10.15,11.63,htx,2025
 3,Sun,September 21,1:00PM ET,preview,,,,@,Jacksonville Jaguars,,,,,,,,,,,,,,,,htx,2025
 4,Sun,September 28,1:00PM ET,preview,,,,,Tennessee Titans,,,,,,,,,,,,,,,,htx,2025
 5,Sun,October 5,1:00PM ET,preview,,,,@,Baltimore Ravens,,,,,,,,,,,,,,,,htx,2025
@@ -1680,7 +1680,7 @@ Wild Card,Sat,January 11,4:30PM ET,boxscore,L,,11-7,@,Houston Texans,12.0,32.0,1
 17,Sun,December 28,1:00PM ET,preview,,,,@,Los Angeles Chargers,,,,,,,,,,,,,,,,htx,2025
 18,Sun,January 4,1:00PM ET,preview,,,,,Indianapolis Colts,,,,,,,,,,,,,,,,htx,2025
 1,Sun,September 7,1:00PM ET,boxscore,L,,0-1,,Las Vegas Raiders,13.0,20.0,18.0,336.0,276.0,60.0,1.0,21.0,389.0,333.0,56.0,1.0,1.07,-7.21,-4.37,nwe,2025
-2,Sun,September 14,1:00PM ET,preview,,,,@,Miami Dolphins,,,,,,,,,,,,,,,,nwe,2025
+2,Sun,September 14,1:00PM ET,boxscore,W,,1-1,@,Miami Dolphins,33.0,27.0,18.0,333.0,211.0,122.0,,16.0,358.0,297.0,61.0,1.0,12.82,-5.66,-3.11,nwe,2025
 3,Sun,September 21,1:00PM ET,preview,,,,,Pittsburgh Steelers,,,,,,,,,,,,,,,,nwe,2025
 4,Sun,September 28,1:00PM ET,preview,,,,,Carolina Panthers,,,,,,,,,,,,,,,,nwe,2025
 5,Sun,October 5,8:20PM ET,preview,,,,@,Buffalo Bills,,,,,,,,,,,,,,,,nwe,2025
@@ -1716,7 +1716,7 @@ Wild Card,Sat,January 11,4:30PM ET,boxscore,L,,11-7,@,Houston Texans,12.0,32.0,1
 17,Sun,December 31,4:25PM ET,boxscore,W,,8-8,,Los Angeles Chargers,16.0,9.0,16.0,313.0,212.0,101.0,,17.0,301.0,215.0,86.0,1.0,2.08,5.75,1.2,den,2023
 18,Sun,January 7,4:25PM ET,boxscore,L,,8-9,@,Las Vegas Raiders,14.0,27.0,17.0,286.0,238.0,48.0,1.0,22.0,359.0,230.0,129.0,,1.3,-12.72,-0.08,den,2023
 1,Fri,September 5,8:00PM ET,boxscore,L,,0-1,@,Los Angeles Chargers,21.0,27.0,18.0,347.0,249.0,98.0,,22.0,394.0,304.0,90.0,,8.2,-11.87,1.45,kan,2025
-2,Sun,September 14,4:25PM ET,preview,,,,,Philadelphia Eagles,,,,,,,,,,,,,,,,kan,2025
+2,Sun,September 14,4:25PM ET,boxscore,L,,0-2,,Philadelphia Eagles,17.0,20.0,17.0,294.0,173.0,121.0,1.0,16.0,216.0,94.0,122.0,,-0.8,-0.21,-4.07,kan,2025
 3,Sun,September 21,8:20PM ET,preview,,,,@,New York Giants,,,,,,,,,,,,,,,,kan,2025
 4,Sun,September 28,4:25PM ET,preview,,,,,Baltimore Ravens,,,,,,,,,,,,,,,,kan,2025
 5,Mon,October 6,8:15PM ET,preview,,,,@,Jacksonville Jaguars,,,,,,,,,,,,,,,,kan,2025
@@ -1901,7 +1901,7 @@ SuperBowl,Sun,February 9,6:30PM ET,boxscore,W,,18-3,N,Kansas City Chiefs,40.0,22
 16,Sun,December 23,1:00PM ET,boxscore,L,,5-10,@,Dallas Cowboys,20.0,27.0,27.0,383.0,320.0,63.0,2.0,16.0,232.0,152.0,80.0,,-5.08,0.41,-4.32,tam,2018
 17,Sun,December 30,1:00PM ET,boxscore,L,,5-11,,Atlanta Falcons,32.0,34.0,22.0,433.0,341.0,92.0,1.0,27.0,489.0,380.0,109.0,1.0,14.51,-14.62,0.09,tam,2018
 1,Sun,September 7,4:25PM ET,boxscore,L,,0-1,@,Green Bay Packers,13.0,27.0,16.0,246.0,200.0,46.0,1.0,14.0,266.0,188.0,78.0,,-1.14,-11.63,-3.37,det,2025
-2,Sun,September 14,1:00PM ET,preview,,,,,Chicago Bears,,,,,,,,,,,,,,,,det,2025
+2,Sun,September 14,1:00PM ET,boxscore,W,,1-1,,Chicago Bears,52.0,21.0,25.0,511.0,334.0,177.0,,19.0,339.0,205.0,134.0,2.0,32.57,2.08,-7.38,det,2025
 3,Mon,September 22,8:15PM ET,preview,,,,@,Baltimore Ravens,,,,,,,,,,,,,,,,det,2025
 4,Sun,September 28,1:00PM ET,preview,,,,,Cleveland Browns,,,,,,,,,,,,,,,,det,2025
 5,Sun,October 5,4:25PM ET,preview,,,,@,Cincinnati Bengals,,,,,,,,,,,,,,,,det,2025
@@ -2007,7 +2007,7 @@ SuperBowl,Sun,February 9,6:30PM ET,boxscore,W,,18-3,N,Kansas City Chiefs,40.0,22
 ,,Playoffs,,,,,,,,,,,,,,,,,,,,,,,nor,2019
 Wild Card,Sun,January 5,1:05PM ET,boxscore,L,OT,13-4,,Minnesota Vikings,20.0,26.0,19.0,324.0,227.0,97.0,2.0,22.0,362.0,226.0,136.0,1.0,1.72,-3.22,-3.43,nor,2019
 1,Thu,September 4,8:20PM ET,boxscore,L,,0-1,@,Philadelphia Eagles,20.0,24.0,22.0,307.0,188.0,119.0,1.0,20.0,302.0,144.0,158.0,,10.85,-13.04,-2.69,dal,2025
-2,Sun,September 14,1:00PM ET,preview,,,,,New York Giants,,,,,,,,,,,,,,,,dal,2025
+2,Sun,September 14,1:00PM ET,boxscore,W,OT,1-1,,New York Giants,40.0,37.0,32.0,478.0,343.0,135.0,1.0,22.0,506.0,422.0,84.0,1.0,23.76,-17.12,-1.51,dal,2025
 3,Sun,September 21,4:25PM ET,preview,,,,@,Chicago Bears,,,,,,,,,,,,,,,,dal,2025
 4,Sun,September 28,8:20PM ET,preview,,,,,Green Bay Packers,,,,,,,,,,,,,,,,dal,2025
 5,Sun,October 5,1:00PM ET,preview,,,,@,New York Jets,,,,,,,,,,,,,,,,dal,2025
@@ -2043,7 +2043,7 @@ Wild Card,Sun,January 5,1:05PM ET,boxscore,L,OT,13-4,,Minnesota Vikings,20.0,26.
 17,Sun,January 1,1:00PM ET,boxscore,W,,6-10,,Arizona Cardinals,20.0,19.0,20.0,298.0,166.0,132.0,1.0,22.0,339.0,213.0,126.0,,3.27,-6.1,5.1,atl,2022
 18,Sun,January 8,1:00PM ET,boxscore,W,,7-10,,Tampa Bay Buccaneers,30.0,17.0,22.0,382.0,208.0,174.0,1.0,12.0,222.0,136.0,86.0,1.0,8.84,6.05,-1.56,atl,2022
 1,Sun,September 7,1:00PM ET,boxscore,L,,0-1,@,Washington Commanders,6.0,21.0,17.0,231.0,157.0,74.0,,25.0,432.0,212.0,220.0,,-6.91,-15.03,2.75,nyg,2025
-2,Sun,September 14,1:00PM ET,preview,,,,@,Dallas Cowboys,,,,,,,,,,,,,,,,nyg,2025
+2,Sun,September 14,1:00PM ET,boxscore,L,OT,0-2,@,Dallas Cowboys,37.0,40.0,22.0,506.0,422.0,84.0,1.0,32.0,478.0,343.0,135.0,1.0,17.12,-23.76,1.51,nyg,2025
 3,Sun,September 21,8:20PM ET,preview,,,,,Kansas City Chiefs,,,,,,,,,,,,,,,,nyg,2025
 4,Sun,September 28,1:00PM ET,preview,,,,,Los Angeles Chargers,,,,,,,,,,,,,,,,nyg,2025
 5,Sun,October 5,1:00PM ET,preview,,,,@,New Orleans Saints,,,,,,,,,,,,,,,,nyg,2025
@@ -2366,7 +2366,7 @@ Wild Card,Sat,January 4,4:35PM ET,boxscore,L,OT,10-7,@,Houston Texans,19.0,22.0,
 17,Sun,January 1,1:00PM ET,boxscore,L,,2-13-1,,Jacksonville Jaguars,3.0,31.0,13.0,277.0,193.0,84.0,1.0,20.0,337.0,168.0,169.0,2.0,-23.38,-4.68,4.1,htx,2022
 18,Sun,January 8,1:00PM ET,boxscore,W,,3-13-1,@,Indianapolis Colts,32.0,31.0,18.0,360.0,301.0,59.0,3.0,25.0,398.0,202.0,196.0,3.0,-0.16,-3.77,3.89,htx,2022
 1,Sun,September 7,1:00PM ET,boxscore,L,,0-1,,Cincinnati Bengals,16.0,17.0,22.0,327.0,278.0,49.0,2.0,11.0,141.0,95.0,46.0,,1.76,2.91,-5.43,cle,2025
-2,Sun,September 14,1:00PM ET,preview,,,,@,Baltimore Ravens,,,,,,,,,,,,,,,,cle,2025
+2,Sun,September 14,1:00PM ET,boxscore,L,,0-2,@,Baltimore Ravens,17.0,41.0,17.0,322.0,207.0,115.0,2.0,14.0,242.0,197.0,45.0,,-15.65,-2.28,-5.44,cle,2025
 3,Sun,September 21,1:00PM ET,preview,,,,,Green Bay Packers,,,,,,,,,,,,,,,,cle,2025
 4,Sun,September 28,1:00PM ET,preview,,,,@,Detroit Lions,,,,,,,,,,,,,,,,cle,2025
 5,Sun,October 5,9:30AM ET,preview,,,,,Minnesota Vikings,,,,,,,,,,,,,,,,cle,2025
@@ -2487,7 +2487,7 @@ Division,Sat,January 12,8:15PM ET,boxscore,W,,14-3,,Dallas Cowboys,30.0,22.0,30.
 Conf. Champ.,Sun,January 20,3:05PM ET,boxscore,W,OT,15-3,@,New Orleans Saints,26.0,23.0,19.0,378.0,301.0,77.0,1.0,19.0,290.0,242.0,48.0,1.0,3.02,-2.51,2.95,ram,2018
 SuperBowl,Sun,February 3,6:30PM ET,boxscore,L,,15-4,N,New England Patriots,3.0,13.0,14.0,260.0,198.0,62.0,1.0,22.0,407.0,253.0,154.0,1.0,-11.82,-2.46,4.34,ram,2018
 1,Sun,September 7,1:00PM ET,boxscore,W,,1-0,,Carolina Panthers,26.0,10.0,19.0,378.0,178.0,200.0,1.0,15.0,255.0,142.0,113.0,3.0,8.42,9.69,-0.76,jax,2025
-2,Sun,September 14,1:00PM ET,preview,,,,@,Cincinnati Bengals,,,,,,,,,,,,,,,,jax,2025
+2,Sun,September 14,1:00PM ET,boxscore,L,,1-1,@,Cincinnati Bengals,27.0,31.0,21.0,400.0,261.0,139.0,2.0,24.0,350.0,302.0,48.0,3.0,6.25,-6.63,-4.21,jax,2025
 3,Sun,September 21,1:00PM ET,preview,,,,,Houston Texans,,,,,,,,,,,,,,,,jax,2025
 4,Sun,September 28,4:05PM ET,preview,,,,@,San Francisco 49ers,,,,,,,,,,,,,,,,jax,2025
 5,Mon,October 6,8:15PM ET,preview,,,,,Kansas City Chiefs,,,,,,,,,,,,,,,,jax,2025
@@ -2772,7 +2772,7 @@ Wild Card,Sat,January 15,4:30PM ET,boxscore,L,,10-8,@,Cincinnati Bengals,19.0,26
 ,,Playoffs,,,,,,,,,,,,,,,,,,,,,,,ram,2023
 Wild Card,Sun,January 14,8:15PM ET,boxscore,L,,10-8,@,Detroit Lions,23.0,24.0,22.0,425.0,357.0,68.0,,23.0,334.0,255.0,79.0,,19.93,-15.39,-4.78,ram,2023
 1,Sun,September 7,1:00PM ET,boxscore,L,,0-1,,Pittsburgh Steelers,32.0,34.0,23.0,394.0,212.0,182.0,1.0,19.0,271.0,218.0,53.0,,10.83,-11.44,-5.41,nyj,2025
-2,Sun,September 14,1:00PM ET,preview,,,,,Buffalo Bills,,,,,,,,,,,,,,,,nyj,2025
+2,Sun,September 14,1:00PM ET,boxscore,L,,0-2,,Buffalo Bills,10.0,30.0,11.0,154.0,54.0,100.0,1.0,25.0,403.0,179.0,224.0,,-9.9,-14.17,4.13,nyj,2025
 3,Sun,September 21,1:00PM ET,preview,,,,@,Tampa Bay Buccaneers,,,,,,,,,,,,,,,,nyj,2025
 4,Mon,September 29,7:15PM ET,preview,,,,@,Miami Dolphins,,,,,,,,,,,,,,,,nyj,2025
 5,Sun,October 5,1:00PM ET,preview,,,,,Dallas Cowboys,,,,,,,,,,,,,,,,nyj,2025
@@ -2888,8 +2888,8 @@ Wild Card,Sun,January 10,4:40PM ET,boxscore,L,,8-9,@,New Orleans Saints,9.0,21.0
 Wild Card,Sun,January 15,4:30PM ET,boxscore,W,,10-7-1,@,Minnesota Vikings,31.0,24.0,28.0,431.0,289.0,142.0,,21.0,332.0,271.0,61.0,,24.0,-13.86,-3.74,nyg,2022
 Division,Sat,January 21,8:15PM ET,boxscore,L,,10-8-1,@,Philadelphia Eagles,7.0,38.0,13.0,227.0,109.0,118.0,1.0,26.0,416.0,148.0,268.0,,-9.27,-23.74,4.67,nyg,2022
 1,Sun,September 7,8:20PM ET,boxscore,W,,1-0,,Baltimore Ravens,41.0,40.0,29.0,497.0,389.0,108.0,,19.0,432.0,194.0,238.0,1.0,21.93,-19.52,-3.41,buf,2025
-2,Sun,September 14,1:00PM ET,preview,,,,@,New York Jets,,,,,,,,,,,,,,,,buf,2025
-3,Thu,September 18,8:15PM ET,preview,,,,,Miami Dolphins,,,,,,,,,,,,,,,,buf,2025
+2,Sun,September 14,1:00PM ET,boxscore,W,,2-0,@,New York Jets,30.0,10.0,25.0,403.0,179.0,224.0,,11.0,154.0,54.0,100.0,1.0,14.17,9.9,-4.13,buf,2025
+3,Thu,September 18,8:15PM ET,boxscore,W,,3-0,,Miami Dolphins,31.0,21.0,23.0,360.0,203.0,157.0,,19.0,276.0,146.0,130.0,1.0,17.09,-6.98,-2.77,buf,2025
 4,Sun,September 28,1:00PM ET,preview,,,,,New Orleans Saints,,,,,,,,,,,,,,,,buf,2025
 5,Sun,October 5,8:20PM ET,preview,,,,,New England Patriots,,,,,,,,,,,,,,,,buf,2025
 6,Mon,October 13,7:15PM ET,preview,,,,@,Atlanta Falcons,,,,,,,,,,,,,,,,buf,2025
@@ -2906,7 +2906,7 @@ Division,Sat,January 21,8:15PM ET,boxscore,L,,10-8-1,@,Philadelphia Eagles,7.0,3
 17,Sun,December 28,4:25PM ET,preview,,,,,Philadelphia Eagles,,,,,,,,,,,,,,,,buf,2025
 18,Sun,January 4,1:00PM ET,preview,,,,,New York Jets,,,,,,,,,,,,,,,,buf,2025
 1,Sun,September 7,4:05PM ET,boxscore,W,,1-0,@,Seattle Seahawks,17.0,13.0,24.0,384.0,265.0,119.0,2.0,14.0,230.0,146.0,84.0,2.0,9.55,4.44,-10.25,sfo,2025
-2,Sun,September 14,1:00PM ET,preview,,,,@,New Orleans Saints,,,,,,,,,,,,,,,,sfo,2025
+2,Sun,September 14,1:00PM ET,boxscore,W,,2-0,@,New Orleans Saints,26.0,21.0,23.0,344.0,267.0,77.0,1.0,21.0,307.0,186.0,121.0,1.0,7.35,-4.01,2.48,sfo,2025
 3,Sun,September 21,4:25PM ET,preview,,,,,Arizona Cardinals,,,,,,,,,,,,,,,,sfo,2025
 4,Sun,September 28,4:05PM ET,preview,,,,,Jacksonville Jaguars,,,,,,,,,,,,,,,,sfo,2025
 5,Thu,October 2,8:15PM ET,preview,,,,@,Los Angeles Rams,,,,,,,,,,,,,,,,sfo,2025
@@ -2979,7 +2979,7 @@ Division,Sat,January 21,8:15PM ET,boxscore,L,,10-8-1,@,Philadelphia Eagles,7.0,3
 Wild Card,Mon,January 16,8:15PM ET,boxscore,W,,13-5,@,Tampa Bay Buccaneers,31.0,14.0,26.0,425.0,297.0,128.0,,24.0,386.0,334.0,52.0,1.0,25.18,2.0,-9.31,dal,2022
 Division,Sun,January 22,6:30PM ET,boxscore,L,,13-6,@,San Francisco 49ers,12.0,19.0,15.0,282.0,206.0,76.0,2.0,21.0,312.0,199.0,113.0,1.0,-6.08,-6.35,4.19,dal,2022
 1,Sun,September 7,1:00PM ET,boxscore,L,,0-1,,Tampa Bay Buccaneers,20.0,23.0,23.0,358.0,289.0,69.0,,16.0,260.0,159.0,101.0,,9.79,-7.74,-5.47,atl,2025
-2,Sun,September 14,8:20PM ET,preview,,,,@,Minnesota Vikings,,,,,,,,,,,,,,,,atl,2025
+2,Sun,September 14,8:20PM ET,boxscore,W,,1-1,@,Minnesota Vikings,22.0,6.0,19.0,326.0,108.0,218.0,1.0,10.0,198.0,120.0,78.0,4.0,-1.23,15.15,4.06,atl,2025
 3,Sun,September 21,1:00PM ET,preview,,,,@,Carolina Panthers,,,,,,,,,,,,,,,,atl,2025
 4,Sun,September 28,1:00PM ET,preview,,,,,Washington Commanders,,,,,,,,,,,,,,,,atl,2025
 5,,,,,,,,,Bye Week,,,,,,,,,,,,,,,,atl,2025
@@ -3109,7 +3109,7 @@ Division,Sun,January 19,6:30PM ET,boxscore,L,,13-6,@,Buffalo Bills,25.0,27.0,23.
 ,,Playoffs,,,,,,,,,,,,,,,,,,,,,,,mia,2023
 Wild Card,Sat,January 13,8:10PM ET,boxscore,L,,11-7,@,Kansas City Chiefs,7.0,26.0,13.0,264.0,188.0,76.0,1.0,25.0,409.0,262.0,147.0,1.0,-10.55,-9.58,4.67,mia,2023
 1,Sun,September 7,1:00PM ET,boxscore,L,,0-1,,Arizona Cardinals,13.0,20.0,21.0,315.0,208.0,107.0,,19.0,276.0,130.0,146.0,,1.36,-5.26,-1.92,nor,2025
-2,Sun,September 14,1:00PM ET,preview,,,,,San Francisco 49ers,,,,,,,,,,,,,,,,nor,2025
+2,Sun,September 14,1:00PM ET,boxscore,L,,0-2,,San Francisco 49ers,21.0,26.0,21.0,307.0,186.0,121.0,1.0,23.0,344.0,267.0,77.0,1.0,4.01,-7.35,-2.48,nor,2025
 3,Sun,September 21,4:05PM ET,preview,,,,@,Seattle Seahawks,,,,,,,,,,,,,,,,nor,2025
 4,Sun,September 28,1:00PM ET,preview,,,,@,Buffalo Bills,,,,,,,,,,,,,,,,nor,2025
 5,Sun,October 5,1:00PM ET,preview,,,,,New York Giants,,,,,,,,,,,,,,,,nor,2025
@@ -3462,7 +3462,7 @@ Wild Card,Sun,January 16,4:40PM ET,boxscore,L,,12-6,,San Francisco 49ers,17.0,23
 17,Sun,January 2,1:00PM ET,boxscore,L,,4-12,@,Chicago Bears,3.0,29.0,13.0,155.0,-6.0,161.0,4.0,17.0,249.0,162.0,87.0,2.0,-28.88,4.47,-1.13,nyg,2021
 18,Sun,January 9,1:00PM ET,boxscore,L,,4-13,,Washington Football Team,7.0,22.0,10.0,177.0,83.0,94.0,3.0,16.0,325.0,99.0,226.0,,-20.98,-0.23,7.21,nyg,2021
 1,Sun,September 7,1:00PM ET,boxscore,W,,1-0,@,New York Jets,34.0,32.0,19.0,271.0,218.0,53.0,,23.0,394.0,212.0,182.0,1.0,11.44,-10.83,5.41,pit,2025
-2,Sun,September 14,1:00PM ET,preview,,,,,Seattle Seahawks,,,,,,,,,,,,,,,,pit,2025
+2,Sun,September 14,1:00PM ET,boxscore,L,,1-1,,Seattle Seahawks,17.0,31.0,13.0,267.0,195.0,72.0,2.0,21.0,395.0,278.0,117.0,2.0,-8.08,-4.96,-1.94,pit,2025
 3,Sun,September 21,1:00PM ET,preview,,,,@,New England Patriots,,,,,,,,,,,,,,,,pit,2025
 4,Sun,September 28,9:30AM ET,preview,,,,,Minnesota Vikings,,,,,,,,,,,,,,,,pit,2025
 5,,,,,,,,,Bye Week,,,,,,,,,,,,,,,,pit,2025
@@ -3537,7 +3537,7 @@ Division,Sat,January 11,4:35PM ET,boxscore,L,,11-7,@,San Francisco 49ers,10.0,27
 ,,Playoffs,,,,,,,,,,,,,,,,,,,,,,,min,2022
 Wild Card,Sun,January 15,4:30PM ET,boxscore,L,,13-5,,New York Giants,24.0,31.0,21.0,332.0,271.0,61.0,,28.0,431.0,289.0,142.0,,13.86,-24.0,3.74,min,2022
 1,Sun,September 7,1:00PM ET,boxscore,L,,0-1,@,Jacksonville Jaguars,10.0,26.0,15.0,255.0,142.0,113.0,3.0,19.0,378.0,178.0,200.0,1.0,-9.69,-8.42,0.76,car,2025
-2,Sun,September 14,4:05PM ET,preview,,,,@,Arizona Cardinals,,,,,,,,,,,,,,,,car,2025
+2,Sun,September 14,4:05PM ET,boxscore,L,,0-2,@,Arizona Cardinals,22.0,27.0,26.0,352.0,303.0,49.0,2.0,16.0,293.0,211.0,82.0,1.0,-0.07,-7.39,-0.13,car,2025
 3,Sun,September 21,1:00PM ET,preview,,,,,Atlanta Falcons,,,,,,,,,,,,,,,,car,2025
 4,Sun,September 28,1:00PM ET,preview,,,,@,New England Patriots,,,,,,,,,,,,,,,,car,2025
 5,Sun,October 5,1:00PM ET,preview,,,,,Miami Dolphins,,,,,,,,,,,,,,,,car,2025
@@ -3685,7 +3685,7 @@ SuperBowl,Sun,February 7,6:30PM ET,boxscore,W,,15-5,N,Kansas City Chiefs,31.0,9.
 ,,Playoffs,,,,,,,,,,,,,,,,,,,,,,,oti,2020
 Wild Card,Sun,January 10,1:05PM ET,boxscore,L,,11-6,,Baltimore Ravens,13.0,20.0,12.0,209.0,158.0,51.0,1.0,22.0,401.0,165.0,236.0,1.0,-2.51,-10.95,2.13,oti,2020
 1,Sun,September 7,4:05PM ET,boxscore,L,,0-1,,San Francisco 49ers,13.0,17.0,14.0,230.0,146.0,84.0,2.0,24.0,384.0,265.0,119.0,2.0,-4.44,-9.55,10.25,sea,2025
-2,Sun,September 14,1:00PM ET,preview,,,,@,Pittsburgh Steelers,,,,,,,,,,,,,,,,sea,2025
+2,Sun,September 14,1:00PM ET,boxscore,W,,1-1,@,Pittsburgh Steelers,31.0,17.0,21.0,395.0,278.0,117.0,2.0,13.0,267.0,195.0,72.0,2.0,4.96,8.08,1.94,sea,2025
 3,Sun,September 21,4:05PM ET,preview,,,,,New Orleans Saints,,,,,,,,,,,,,,,,sea,2025
 4,Thu,September 25,8:15PM ET,preview,,,,@,Arizona Cardinals,,,,,,,,,,,,,,,,sea,2025
 5,Sun,October 5,4:05PM ET,preview,,,,,Tampa Bay Buccaneers,,,,,,,,,,,,,,,,sea,2025
@@ -3703,7 +3703,7 @@ Wild Card,Sun,January 10,1:05PM ET,boxscore,L,,11-6,,Baltimore Ravens,13.0,20.0,
 17,Sun,December 28,1:00PM ET,preview,,,,@,Carolina Panthers,,,,,,,,,,,,,,,,sea,2025
 18,Sun,January 4,1:00PM ET,preview,,,,@,San Francisco 49ers,,,,,,,,,,,,,,,,sea,2025
 1,Sun,September 7,1:00PM ET,boxscore,W,,1-0,@,New England Patriots,20.0,13.0,21.0,389.0,333.0,56.0,1.0,18.0,336.0,276.0,60.0,1.0,7.21,-1.07,4.37,rai,2025
-2,Mon,September 15,10:00PM ET,preview,,,,,Los Angeles Chargers,,,,,,,,,,,,,,,,rai,2025
+2,Mon,September 15,10:00PM ET,boxscore,L,,1-1,,Los Angeles Chargers,9.0,20.0,15.0,218.0,150.0,68.0,3.0,15.0,317.0,236.0,81.0,1.0,-16.29,-0.98,2.92,rai,2025
 3,Sun,September 21,1:00PM ET,preview,,,,@,Washington Commanders,,,,,,,,,,,,,,,,rai,2025
 4,Sun,September 28,4:25PM ET,preview,,,,,Chicago Bears,,,,,,,,,,,,,,,,rai,2025
 5,Sun,October 5,1:00PM ET,preview,,,,@,Indianapolis Colts,,,,,,,,,,,,,,,,rai,2025
@@ -3853,7 +3853,7 @@ Conf. Champ.,Sun,January 30,6:30PM ET,boxscore,L,,12-8,@,Los Angeles Rams,17.0,2
 17,Sun,January 2,1:00PM ET,boxscore,L,,7-9,@,Buffalo Bills,15.0,29.0,18.0,265.0,169.0,96.0,1.0,28.0,351.0,118.0,233.0,3.0,-1.07,-12.95,1.41,atl,2021
 18,Sun,January 9,1:00PM ET,boxscore,L,,7-10,,New Orleans Saints,20.0,30.0,13.0,257.0,195.0,62.0,3.0,22.0,369.0,174.0,195.0,,-6.88,-12.23,10.23,atl,2021
 1,Mon,September 8,8:15PM ET,boxscore,W,,1-0,@,Chicago Bears,27.0,24.0,14.0,254.0,134.0,120.0,1.0,20.0,317.0,198.0,119.0,1.0,-6.4,1.47,4.66,min,2025
-2,Sun,September 14,8:20PM ET,preview,,,,,Atlanta Falcons,,,,,,,,,,,,,,,,min,2025
+2,Sun,September 14,8:20PM ET,boxscore,L,,1-1,,Atlanta Falcons,6.0,22.0,10.0,198.0,120.0,78.0,4.0,19.0,326.0,108.0,218.0,1.0,-15.15,1.23,-4.06,min,2025
 3,Sun,September 21,1:00PM ET,preview,,,,,Cincinnati Bengals,,,,,,,,,,,,,,,,min,2025
 4,Sun,September 28,9:30AM ET,preview,,,,@,Pittsburgh Steelers,,,,,,,,,,,,,,,,min,2025
 5,Sun,October 5,9:30AM ET,preview,,,,@,Cleveland Browns,,,,,,,,,,,,,,,,min,2025
@@ -4648,7 +4648,7 @@ Wild Card,Mon,January 15,4:30PM ET,boxscore,L,,10-8,@,Buffalo Bills,17.0,31.0,22
 16,Sun,December 27,1:00PM ET,boxscore,W,,2-13,,Cleveland Browns,23.0,16.0,18.0,333.0,202.0,131.0,,23.0,299.0,254.0,45.0,2.0,0.77,5.93,-4.45,nyj,2020
 17,Sun,January 3,1:00PM ET,boxscore,L,,2-14,@,New England Patriots,14.0,28.0,21.0,350.0,239.0,111.0,2.0,23.0,404.0,238.0,166.0,,3.92,-18.13,0.05,nyj,2020
 1,Mon,September 8,8:15PM ET,boxscore,L,,0-1,,Minnesota Vikings,24.0,27.0,20.0,317.0,198.0,119.0,1.0,14.0,254.0,134.0,120.0,1.0,-1.47,6.4,-4.66,chi,2025
-2,Sun,September 14,1:00PM ET,preview,,,,@,Detroit Lions,,,,,,,,,,,,,,,,chi,2025
+2,Sun,September 14,1:00PM ET,boxscore,L,,0-2,@,Detroit Lions,21.0,52.0,19.0,339.0,205.0,134.0,2.0,25.0,511.0,334.0,177.0,,-2.08,-32.57,7.38,chi,2025
 3,Sun,September 21,4:25PM ET,preview,,,,,Dallas Cowboys,,,,,,,,,,,,,,,,chi,2025
 4,Sun,September 28,4:25PM ET,preview,,,,@,Las Vegas Raiders,,,,,,,,,,,,,,,,chi,2025
 5,,,,,,,,,Bye Week,,,,,,,,,,,,,,,,chi,2025

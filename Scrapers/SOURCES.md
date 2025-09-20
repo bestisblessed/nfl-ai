@@ -31,6 +31,7 @@
   - Teams: created from hardcoded team list in `ScraperFinal-PFR.py` (no external file)
   - Games: populated from `data/SR-game-logs/all_teams_game_logs_YYYY.csv` (PFR team game logs)
   - PlayerStats: populated from `data/all_passing_rushing_receiving_pfr_clean.csv` (PFR player stats WITHOUT NFLverse position data)
+  - Game Logs: `final_data_pfr/game_logs_pfr.csv` (Games + TeamGameLogs merged - COMPREHENSIVE GAME DATA)
   - BoxScores: populated from `data/all_box_scores.csv` (PFR box scores)
   - ScoringTables: populated from `data/all_scoring_tables.csv` (PFR scoring tables)
   - TeamGameLogs: populated from `data/all_team_game_logs.csv` (PFR team game logs)
