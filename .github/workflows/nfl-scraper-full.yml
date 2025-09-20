@@ -83,7 +83,7 @@ jobs:
         git config --local user.email "tyler.durette@gmail.com"
         git config --local user.name "bestisblessed"
         if [ -d "Scrapers/data" ] && [ "$(ls -A Scrapers/data)" ]; then
-          git add Scrapers/data/ Scrapers/final_data/ Scrapers/final_data_pfr/ Scrapers/nfl.db Scrapers/nfl-db-pfr.db
+          git add -f Scrapers/data/ Scrapers/final_data/ Scrapers/final_data_pfr/ Scrapers/nfl.db Scrapers/nfl-db-pfr.db
           git diff --staged --quiet || git commit -m "Update NFL data (full scraper) - $(date)"
           git push
         else
