@@ -32,14 +32,31 @@ jobs:
     - name: Run NFL PFR Scraper
       run: |
         cd Scrapers
-        python ScraperMasterPFR.py
+        python ScraperMasterPFR.py 2>&1 | tee scraper_output.log
       continue-on-error: false
+        
+    - name: Show scraper output
+      run: |
+        echo "=== Scraper Execution Output ==="
+        cat Scrapers/scraper_output.log || echo "No log file found"
         
     - name: Check for data files
       run: |
+        echo "=== Scraper Output Log ==="
+        cat Scrapers/scraper_output.log || echo "No log file found"
+        echo "=== FINAL Directory Contents ==="
+        ls -la Scrapers/FINAL/ || echo "FINAL directory not found"
+        echo "=== File Sizes ==="
+        find Scrapers/FINAL -name "*.csv" -exec wc -l {} \; || echo "No CSV files found"
         if [ -d "Scrapers/FINAL" ] && [ "$(ls -A Scrapers/FINAL)" ]; then
           echo "Data files found in FINAL directory"
-          ls -la Scrapers/FINAL/
+          # Check if files have more than just headers
+          for file in Scrapers/FINAL/*.csv; do
+            if [ -f "$file" ]; then
+              lines=$(wc -l < "$file")
+              echo "$file has $lines lines"
+            fi
+          done
         else
           echo "No data files found in FINAL directory"
           exit 1

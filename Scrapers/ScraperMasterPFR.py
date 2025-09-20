@@ -141,15 +141,39 @@ for year in range(2024, 2026):
                 else:
                     break
         if response.status_code != 200:
+            print(f"Failed to access {url} for {name} in {year}: Status {response.status_code}")
             continue
         soup = BeautifulSoup(response.content, 'html.parser')
         warned_team_short = False
         warned_opp_short = False
-        for table_id in ['table_pfr_team-year_game-logs_team-year-regular-season-game-log', 'table_pfr_team-year_game-logs_team-year-regular-season-opponent-game-log']:
-            table = soup.find('table', {'id': table_id})
-            if table is None:
-                print(f'Table with id {table_id} not found on page {url} for {name} in {year}')
-                continue
+        # Try multiple possible table IDs and patterns
+        table_patterns = [
+            'table_pfr_team-year_game-logs_team-year-regular-season-game-log',
+            'table_pfr_team-year_game-logs_team-year-regular-season-opponent-game-log',
+            'games',
+            'team_gamelogs'
+        ]
+        
+        tables_found = []
+        for pattern in table_patterns:
+            table = soup.find('table', {'id': pattern})
+            if table:
+                tables_found.append((pattern, table))
+        
+        # If no tables found with specific IDs, try to find any table with game log data
+        if not tables_found:
+            all_tables = soup.find_all('table')
+            print(f'No specific tables found for {name} in {year}. Available table IDs:')
+            for table in all_tables:
+                table_id = table.get('id', 'no-id')
+                print(f'  - {table_id}')
+                # Try to find tables that might contain game data
+                if 'game' in table_id.lower() or 'log' in table_id.lower():
+                    tables_found.append((table_id, table))
+        
+        # Process the tables we found
+        for table_id, table in tables_found:
+            print(f'Processing table: {table_id}')
             tbody = table.find('tbody')
             if tbody is None:
                 print(f'No tbody found for table {table_id} on page {url} for {name} in {year}')
@@ -160,37 +184,52 @@ for year in range(2024, 2026):
                 for td in tr.find_all(['th', 'td']):  
                     row_data.append(td.text)
                 if len(row_data) > 0:
-                    if table_id == 'table_pfr_team-year_game-logs_team-year-regular-season-game-log':
-                        if len(row_data) == 48:  
+                    # Determine if this is a team or opponent table based on content or table ID
+                    is_team_table = ('game-logs' in table_id and 'opponent' not in table_id) or 'regular-season-game-log' in table_id
+                    is_opponent_table = 'opponent' in table_id or 'opponent-game-log' in table_id
+                    
+                    if is_team_table:
+                        if len(row_data) >= 40:  # More flexible row length check
                             row_data.append(name)  
                             game_logs.append(row_data)
                         else:
                             if not warned_team_short:
-                                print(f"Warning: Team game log row has {len(row_data)} cells but expected 48")
+                                print(f"Warning: Team game log row has {len(row_data)} cells but expected 40+")
                                 warned_team_short = True
-                    elif table_id == 'table_pfr_team-year_game-logs_team-year-regular-season-opponent-game-log':
-                        if len(row_data) == 48:  
+                    elif is_opponent_table:
+                        if len(row_data) >= 40:  # More flexible row length check
                             row_data.append(name)  
                             all_opponent_game_logs.append(row_data)
                         else:
                             if not warned_opp_short:
-                                print(f"Warning: Opponent game log row has {len(row_data)} cells but expected 48")
+                                print(f"Warning: Opponent game log row has {len(row_data)} cells but expected 40+")
                                 warned_opp_short = True
-            if table_id == 'table_pfr_team-year_game-logs_team-year-regular-season-game-log':
+                    else:
+                        # Default to team table if we can't determine
+                        if len(row_data) >= 40:
+                            row_data.append(name)  
+                            game_logs.append(row_data)
+            
+            # Add game logs to the appropriate list
+            if game_logs:
                 all_team_game_logs.extend(game_logs)
-            playoff_table_id = f'playoff_gamelog{year}'
-            playoff_table = soup.find('table', {'id': playoff_table_id})
-            if playoff_table:
-                playoff_tbody = playoff_table.find('tbody')
-                playoff_game_logs = []
-                for tr in playoff_tbody.find_all('tr'):
-                    row_data = []  
-                    for td in tr.find_all(['th', 'td']):  
-                        row_data.append(td.text)
-                    row_data.append(name)  
-                    playoff_game_logs.append(row_data)
-                all_team_game_logs.extend(playoff_game_logs)
+        
+        # Process playoff games
+        playoff_table_id = f'playoff_gamelog{year}'
+        playoff_table = soup.find('table', {'id': playoff_table_id})
+        if playoff_table:
+            playoff_tbody = playoff_table.find('tbody')
+            playoff_game_logs = []
+            for tr in playoff_tbody.find_all('tr'):
+                row_data = []  
+                for td in tr.find_all(['th', 'td']):  
+                    row_data.append(td.text)
+                row_data.append(name)  
+                playoff_game_logs.append(row_data)
+            all_team_game_logs.extend(playoff_game_logs)
         sleep(2.5)  
+    print(f"Scraped {len(all_team_game_logs)} team game logs for {year}")
+    print(f"Scraped {len(all_opponent_game_logs)} opponent game logs for {year}")
     with open(team_file, mode='w', newline='', encoding='utf-8') as file:
         writer = csv.writer(file)
         writer.writerow(team_game_logs_headers + ['team_name'])
@@ -212,8 +251,10 @@ for filename in os.listdir(directory):
         df = pd.read_csv(file_path)
         df['season'] = season
         df_list.append(df)
+print(f"Found {len(df_list)} CSV files in directory: {directory}")
 if df_list:
     df = pd.concat(df_list, ignore_index=True)
+    print(f"Combined dataframe has {len(df)} rows")
     team_abbreviation_map = {
         'Arizona Cardinals': 'ARI',
         'Atlanta Falcons': 'ATL',
@@ -371,8 +412,11 @@ for year_to_scrape in range(2024, 2026):
                 try:
                     game_dt = datetime.fromisoformat(row['date'])
                 except Exception:
+                    # If date parsing fails, still try to scrape if it's the right year
+                    if row['season'] == str(year_to_scrape):
+                        game_urls.append(row['pfr_url'])
                     continue
-                if row['season'] == str(year_to_scrape) and game_dt <= now_dt:
+                if row['season'] == str(year_to_scrape):
                     game_urls.append(row['pfr_url'])
         for url in game_urls:
             if url in existing_urls:
@@ -435,8 +479,11 @@ for year_to_scrape in range(2024, 2026):
             try:
                 game_dt = datetime.fromisoformat(row['date'])
             except Exception:
+                # If date parsing fails, still try to scrape if it's the right year
+                if int(row['game_id'].split('_')[0]) == year_to_scrape:
+                    rows.append(row.to_dict())
                 continue
-            if int(row['game_id'].split('_')[0]) == year_to_scrape and game_dt <= now_dt:
+            if int(row['game_id'].split('_')[0]) == year_to_scrape:
                 rows.append(row.to_dict())
         for row in rows:
             pfr_value = row['pfr']
@@ -740,8 +787,11 @@ for year_to_scrape in range(2024, 2026):
             try:
                 game_dt = datetime.fromisoformat(row['date'])
             except Exception:
+                # If date parsing fails, still try to scrape if it's the right year
+                if int(row['game_id'].split('_')[0]) == year_to_scrape:
+                    rows.append(row.to_dict())
                 continue
-            if int(row['game_id'].split('_')[0]) == year_to_scrape and game_dt <= now_dt:
+            if int(row['game_id'].split('_')[0]) == year_to_scrape:
                 rows.append(row.to_dict())
         for row in rows:
             pfr_value = row['pfr']
@@ -833,8 +883,11 @@ for year_to_scrape in range(2024, 2026):
             try:
                 game_dt = datetime.fromisoformat(row['date'])
             except Exception:
+                # If date parsing fails, still try to scrape if it's the right year
+                if int(row['game_id'].split('_')[0]) == year_to_scrape:
+                    rows.append(row.to_dict())
                 continue
-            if int(row['game_id'].split('_')[0]) == year_to_scrape and game_dt <= now_dt:
+            if int(row['game_id'].split('_')[0]) == year_to_scrape:
                 rows.append(row.to_dict())
         for row in rows:
             if not row['away_score'] or not row['home_score']:
