@@ -98,8 +98,10 @@ for year in range(2018, 2026):
         df['result'] = df['result']
         df['overtime'] = df['ot'].fillna(0)
         
-        # Create game_id
-        df['game_id'] = df.apply(lambda row: f"{year}_{row['week']:02d}_{row['away_team']}_{row['home_team']}", axis=1)
+        # Create game_id - ensure week is numeric and handle any data issues
+        df['week'] = pd.to_numeric(df['week'], errors='coerce')
+        df = df.dropna(subset=['week'])  # Remove rows with invalid week values
+        df['game_id'] = df.apply(lambda row: f"{year}_{int(row['week']):02d}_{row['away_team']}_{row['home_team']}", axis=1)
         
         game_dataframes.append(df[['game_id', 'season', 'week', 'date', 'home_team', 'away_team', 'home_score', 'away_score', 'game_location', 'result', 'overtime']])
     else:
