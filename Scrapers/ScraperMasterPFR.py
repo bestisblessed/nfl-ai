@@ -270,7 +270,7 @@ if df_list:
         else:
             home_team = team_abbreviation_map[row['team_name']]
             away_team = pfr_to_standard_abbr[row['opp']]
-        return pd.Series([home_team, away_team])
+        return pd.Series({'home_team_id': home_team, 'away_team_id': away_team})
     df[['home_team_id', 'away_team_id']] = df.apply(determine_home_away, axis=1)
     df['week_num'] = df['week'].astype(str).str.zfill(2)
     df['game_id'] = df['season'] + '_' + df['week_num'] + '_' + df['away_team_id'] + '_' + df['home_team_id']
