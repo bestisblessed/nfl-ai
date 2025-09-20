@@ -1,0 +1,18 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 8,1:00PM ET,boxscore,L,,0-1,,Baltimore Ravens,10,59,12,200,179,21,3,31,643,378,265,,-9.29,-42.69,-0.99
+2,Sun,September 15,1:00PM ET,boxscore,L,,0-2,,New England Patriots,0,43,11,184,142,42,4,27,379,255,124,1,-35.44,-14.12,12.05
+3,Sun,September 22,1:00PM ET,boxscore,L,,0-3,@,Dallas Cowboys,6,31,17,283,211,72,1,28,476,241,235,1,-14.00,-19.62,6.19
+4,Sun,September 29,1:00PM ET,boxscore,L,,0-4,,Los Angeles Chargers,10,30,13,233,161,72,1,24,390,311,79,,0.41,-15.45,-3.89
+5,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+6,Sun,October 13,1:00PM ET,boxscore,L,,0-5,,Washington Redskins,16,17,21,271,187,84,2,13,311,166,145,,-9.38,-1.22,5.99
+7,Sun,October 20,1:00PM ET,boxscore,L,,0-6,@,Buffalo Bills,21,31,24,381,272,109,2,17,305,188,117,,5.68,-5.07,-3.71
+8,Mon,October 28,8:15PM ET,boxscore,L,,0-7,@,Pittsburgh Steelers,14,27,16,230,170,60,4,21,394,236,158,1,-12.16,-5.58,3.84
+9,Sun,November 3,1:00PM ET,boxscore,W,,1-7,,New York Jets,26,18,22,316,266,50,,17,321,238,83,1,9.94,2.76,-3.06
+10,Sun,November 10,4:05PM ET,boxscore,W,,2-7,@,Indianapolis Colts,16,12,13,229,159,70,2,19,300,191,109,3,-16.73,16.98,3.10
+11,Sun,November 17,1:00PM ET,boxscore,L,,2-8,,Buffalo Bills,20,37,19,303,280,23,1,22,424,256,168,,-11.58,-15.20,7.56
+12,Sun,November 24,1:00PM ET,boxscore,L,,2-9,@,Cleveland Browns,24,41,22,284,192,92,2,30,467,320,147,1,5.91,-26.93,3.50
+13,Sun,December 1,1:00PM ET,boxscore,W,,3-9,,Philadelphia Eagles,37,31,26,409,351,58,1,23,386,294,92,1,16.93,-11.33,-0.08
+14,Sun,December 8,1:00PM ET,boxscore,L,,3-10,@,New York Jets,21,22,22,362,240,122,1,22,374,262,112,1,5.46,-5.93,-0.46
+15,Sun,December 15,1:00PM ET,boxscore,L,,3-11,@,New York Giants,20,36,22,384,262,122,1,24,412,274,138,3,0.43,-13.11,-4.97
+16,Sun,December 22,1:00PM ET,boxscore,W,OT,4-11,,Cincinnati Bengals,38,35,29,502,406,96,1,25,430,371,59,1,21.63,-7.22,-8.48
+17,Sun,December 29,1:00PM ET,boxscore,W,,5-11,@,New England Patriots,27,24,26,389,326,63,,18,352,217,135,2,13.34,-6.29,-4.09

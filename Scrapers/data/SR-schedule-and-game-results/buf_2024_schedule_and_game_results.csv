@@ -1,0 +1,23 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 8,1:00PM ET,boxscore,W,,1-0,,Arizona Cardinals,34,28,23,352,222,130,1,18,270,146,124,1,13.51,-3.22,-2.25
+2,Thu,September 12,8:15PM ET,boxscore,W,,2-0,@,Miami Dolphins,31,10,13,247,139,108,,20,351,212,139,3,8.59,14.11,-2.53
+3,Mon,September 23,7:30PM ET,boxscore,W,,3-0,,Jacksonville Jaguars,47,10,25,388,266,122,,19,239,147,92,2,28.39,12.44,-6.15
+4,Sun,September 29,8:20PM ET,boxscore,L,,3-1,@,Baltimore Ravens,10,35,12,236,155,81,1,22,427,156,271,1,-6.92,-19.69,2.37
+5,Sun,October 6,1:00PM ET,boxscore,L,,3-2,@,Houston Texans,20,23,16,276,126,150,,18,425,331,94,2,-1.59,0.68,-2.09
+6,Mon,October 14,8:15PM ET,boxscore,W,,4-2,@,New York Jets,23,20,24,359,210,149,,20,393,272,121,1,14.90,-13.81,0.34
+7,Sun,October 20,1:00PM ET,boxscore,W,,5-2,,Tennessee Titans,34,10,18,389,315,74,,18,289,200,89,2,15.86,12.71,-4.40
+8,Sun,October 27,4:05PM ET,boxscore,W,,6-2,@,Seattle Seahawks,31,10,29,445,281,164,1,17,233,201,32,2,16.41,8.68,-2.10
+9,Sun,November 3,1:00PM ET,boxscore,W,,7-2,,Miami Dolphins,30,27,24,325,231,94,1,26,373,224,149,1,13.82,-15.80,6.12
+10,Sun,November 10,1:00PM ET,boxscore,W,,8-2,@,Indianapolis Colts,30,20,21,415,280,135,2,19,361,240,121,4,4.88,6.55,-1.17
+11,Sun,November 17,4:25PM ET,boxscore,W,,9-2,,Kansas City Chiefs,30,21,24,366,262,104,1,19,259,181,78,2,14.81,-6.03,-0.41
+12,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+13,Sun,December 1,8:20PM ET,boxscore,W,,10-2,,San Francisco 49ers,35,10,20,372,152,220,,15,239,86,153,3,19.20,5.31,-0.58
+14,Sun,December 8,4:25PM ET,boxscore,L,,10-3,@,Los Angeles Rams,42,44,25,445,342,103,,28,457,320,137,,31.07,-29.74,-8.60
+15,Sun,December 15,4:25PM ET,boxscore,W,,11-3,@,Detroit Lions,48,42,28,559,362,197,,30,521,473,48,1,32.07,-26.61,4.46
+16,Sun,December 22,4:25PM ET,boxscore,W,,12-3,,New England Patriots,24,21,19,324,152,172,1,28,379,253,126,3,8.51,-7.45,1.61
+17,Sun,December 29,1:00PM ET,boxscore,W,,13-3,,New York Jets,40,14,23,348,251,97,,20,281,169,112,3,14.14,10.40,1.56
+18,Sun,January 5,1:00PM ET,boxscore,L,,13-4,@,New England Patriots,16,23,16,259,129,130,,19,309,232,77,1,-6.28,0.12,-0.35
+,,Playoffs,,,,,,,,,,,,,,,,,,,,,,
+Wild Card,Sun,January 12,1:00PM ET,boxscore,W,,14-4,,Denver Broncos,31,7,26,471,261,210,,13,224,145,79,,22.62,2.04,-0.62
+Division,Sun,January 19,6:30PM ET,boxscore,W,,15-4,,Baltimore Ravens,27,25,20,273,126,147,,23,416,240,176,3,10.81,-8.37,3.18
+Conf. Champ.,Sun,January 26,6:30PM ET,boxscore,L,,15-5,@,Kansas City Chiefs,29,32,22,374,227,147,,28,368,233,135,1,11.91,-18.77,1.26

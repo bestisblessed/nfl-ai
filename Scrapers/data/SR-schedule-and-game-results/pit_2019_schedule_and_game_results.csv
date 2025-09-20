@@ -1,0 +1,18 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 8,8:20PM ET,boxscore,L,,0-1,@,New England Patriots,3,33,15,308,276,32,1,24,465,366,99,,-9.50,-18.24,0.80
+2,Sun,September 15,1:00PM ET,boxscore,L,,0-2,,Seattle Seahawks,26,28,17,261,180,81,1,25,425,274,151,2,0.23,-5.07,-1.28
+3,Sun,September 22,4:25PM ET,boxscore,L,,0-3,@,San Francisco 49ers,20,24,11,239,160,79,2,26,436,268,168,5,-10.20,3.72,-0.12
+4,Mon,September 30,8:15PM ET,boxscore,W,,1-3,,Cincinnati Bengals,27,3,20,326,260,66,1,16,175,102,73,2,6.93,16.54,-0.04
+5,Sun,October 6,1:00PM ET,boxscore,L,OT,1-4,,Baltimore Ravens,23,26,18,269,192,77,2,22,277,139,138,3,-1.80,4.12,-5.32
+6,Sun,October 13,8:20PM ET,boxscore,W,,2-4,@,Los Angeles Chargers,24,17,18,256,132,124,1,23,348,316,32,3,5.45,2.12,4.54
+7,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+8,Mon,October 28,8:15PM ET,boxscore,W,,3-4,,Miami Dolphins,27,14,21,394,236,158,1,16,230,170,60,4,5.58,12.16,-3.84
+9,Sun,November 3,1:00PM ET,boxscore,W,,4-4,,Indianapolis Colts,26,24,17,273,183,90,2,22,328,189,139,3,-3.46,0.41,5.69
+10,Sun,November 10,4:25PM ET,boxscore,W,,5-4,,Los Angeles Rams,17,12,15,273,231,42,2,16,306,218,88,4,-17.68,27.02,-4.10
+11,Thu,November 14,8:20PM ET,boxscore,L,,5-5,@,Cleveland Browns,7,21,18,236,178,58,4,17,293,189,104,,-24.63,1.33,6.48
+12,Sun,November 24,1:00PM ET,boxscore,W,,6-5,@,Cincinnati Bengals,16,10,16,338,179,159,1,11,244,158,86,2,-4.31,15.56,-2.52
+13,Sun,December 1,1:00PM ET,boxscore,W,,7-5,,Cleveland Browns,20,13,18,323,199,124,1,19,279,173,106,2,2.57,2.60,1.39
+14,Sun,December 8,4:25PM ET,boxscore,W,,8-5,@,Arizona Cardinals,23,17,20,275,135,140,2,17,236,165,71,3,5.34,5.35,-2.85
+15,Sun,December 15,8:20PM ET,boxscore,L,,8-6,,Buffalo Bills,10,17,15,229,178,51,5,17,261,131,130,2,-17.22,6.56,3.78
+16,Sun,December 22,1:00PM ET,boxscore,L,,8-7,@,New York Jets,10,16,16,260,185,75,2,14,259,174,85,1,-11.79,8.44,-5.10
+17,Sun,December 29,4:25PM ET,boxscore,L,,8-8,@,Baltimore Ravens,10,28,10,168,77,91,2,19,304,81,223,2,-11.07,4.16,-8.63

@@ -1,0 +1,18 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 8,1:00PM ET,boxscore,W,,1-0,@,Carolina Panthers,30,27,22,349,183,166,1,21,343,216,127,3,4.57,3.24,-3.39
+2,Sun,September 15,4:25PM ET,boxscore,W,,2-0,,New Orleans Saints,27,9,20,380,265,115,1,15,244,187,57,1,7.63,13.12,-6.34
+3,Sun,September 22,8:20PM ET,boxscore,W,,3-0,@,Cleveland Browns,20,13,20,344,254,90,3,18,270,175,95,1,1.06,8.89,-3.41
+4,Sun,September 29,4:05PM ET,boxscore,L,,3-1,,Tampa Bay Buccaneers,40,55,36,518,490,28,4,27,464,376,88,1,4.47,-22.76,4.04
+5,Thu,October 3,8:20PM ET,boxscore,L,,3-2,@,Seattle Seahawks,29,30,24,477,395,82,2,25,429,262,167,1,9.94,-12.97,1.58
+6,Sun,October 13,4:05PM ET,boxscore,L,,3-3,,San Francisco 49ers,7,20,10,157,48,109,1,22,331,232,99,2,-25.23,3.54,5.01
+7,Sun,October 20,1:00PM ET,boxscore,W,,4-3,@,Atlanta Falcons,37,10,23,381,291,90,,14,224,186,38,3,8.61,10.97,7.98
+8,Sun,October 27,1:00PM ET,boxscore,W,,5-3,,Cincinnati Bengals,24,10,19,470,372,98,,24,401,297,104,,18.42,-3.84,1.27
+9,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+10,Sun,November 10,4:25PM ET,boxscore,L,,5-4,@,Pittsburgh Steelers,12,17,16,306,218,88,4,15,273,231,42,2,-27.02,17.68,4.10
+11,Sun,November 17,8:20PM ET,boxscore,W,,6-4,,Chicago Bears,17,7,13,283,173,110,2,17,267,193,74,1,-5.69,13.17,5.08
+12,Mon,November 25,8:15PM ET,boxscore,L,,6-5,,Baltimore Ravens,6,45,14,221,199,22,2,31,480,195,285,,-8.52,-32.32,4.27
+13,Sun,December 1,4:05PM ET,boxscore,W,,7-5,@,Arizona Cardinals,34,7,27,549,417,132,,13,198,124,74,1,18.95,16.98,-10.38
+14,Sun,December 8,8:20PM ET,boxscore,W,,8-5,,Seattle Seahawks,28,12,26,455,293,162,2,16,308,202,106,1,13.97,7.74,-4.96
+15,Sun,December 15,4:25PM ET,boxscore,L,,8-6,@,Dallas Cowboys,21,44,23,289,267,22,1,25,475,212,263,,-3.54,-26.77,5.18
+16,Sat,December 21,8:15PM ET,boxscore,L,,8-7,@,San Francisco 49ers,31,34,24,395,323,72,1,19,334,215,119,2,3.16,-3.67,-1.84
+17,Sun,December 29,4:25PM ET,boxscore,W,,9-7,,Arizona Cardinals,31,24,25,424,311,113,,22,393,322,71,5,16.31,-3.53,-5.85

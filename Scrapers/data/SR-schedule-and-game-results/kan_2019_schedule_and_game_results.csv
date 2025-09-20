@@ -1,0 +1,22 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 8,1:00PM ET,boxscore,W,,1-0,@,Jacksonville Jaguars,40,26,24,491,378,113,,18,428,347,81,2,26.49,-8.70,1.47
+2,Sun,September 15,4:05PM ET,boxscore,W,,2-0,@,Oakland Raiders,28,10,24,467,436,31,1,19,307,178,129,2,18.12,2.14,-2.97
+3,Sun,September 22,1:00PM ET,boxscore,W,,3-0,,Baltimore Ravens,33,28,27,503,363,140,,29,452,249,203,,25.98,-14.50,-4.79
+4,Sun,September 29,1:00PM ET,boxscore,W,,4-0,@,Detroit Lions,34,30,29,438,315,123,3,29,447,261,186,2,17.08,-1.27,-13.41
+5,Sun,October 6,8:20PM ET,boxscore,L,,4-1,,Indianapolis Colts,13,19,18,324,288,36,1,25,331,151,180,1,-1.57,-4.31,-1.09
+6,Sun,October 13,1:00PM ET,boxscore,L,,4-2,,Houston Texans,24,31,20,309,256,53,2,35,472,280,192,3,6.10,-16.92,1.87
+7,Thu,October 17,8:20PM ET,boxscore,W,,5-2,@,Denver Broncos,30,6,14,271,191,80,,15,205,134,71,1,0.65,17.78,6.92
+8,Sun,October 27,8:20PM ET,boxscore,L,,5-3,,Green Bay Packers,24,31,21,337,249,88,1,21,374,256,118,,11.40,-17.67,0.68
+9,Sun,November 3,1:00PM ET,boxscore,W,,6-3,,Minnesota Vikings,26,23,17,377,230,147,1,17,308,212,96,,7.56,-3.06,-0.23
+10,Sun,November 10,1:00PM ET,boxscore,L,,6-4,@,Tennessee Titans,32,35,28,530,433,97,1,19,371,146,225,1,13.98,-11.07,-3.81
+11,Mon,November 18,8:15PM ET,boxscore,W,,7-4,@,Los Angeles Chargers,24,17,18,310,180,130,1,23,438,345,93,4,4.13,1.36,2.05
+12,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+13,Sun,December 1,4:25PM ET,boxscore,W,,8-4,,Oakland Raiders,40,9,22,259,163,96,,19,332,210,122,3,14.17,3.44,11.19
+14,Sun,December 8,4:25PM ET,boxscore,W,,9-4,@,New England Patriots,23,16,20,346,271,75,2,17,278,184,94,1,-1.14,5.79,1.25
+15,Sun,December 15,1:00PM ET,boxscore,W,,10-4,,Denver Broncos,23,3,27,419,327,92,1,15,251,199,52,1,15.31,9.67,-4.87
+16,Sun,December 22,8:20PM ET,boxscore,W,,11-4,@,Chicago Bears,26,3,25,350,244,106,,18,234,133,101,,14.74,6.38,1.09
+17,Sun,December 29,1:00PM ET,boxscore,W,,12-4,,Los Angeles Chargers,31,21,16,336,174,162,1,25,366,258,108,2,13.59,-9.18,7.29
+,,Playoffs,,,,,,,,,,,,,,,,,,,,,,
+Division,Sun,January 12,3:05PM ET,boxscore,W,,13-4,,Houston Texans,51,31,29,434,316,118,1,23,442,348,94,1,28.73,-5.46,-6.77
+Conf. Champ.,Sun,January 19,3:05PM ET,boxscore,W,,14-4,,Tennessee Titans,35,24,27,404,292,112,,20,295,210,85,,29.52,-5.92,-9.99
+SuperBowl,Sun,February 2,6:30PM ET,boxscore,W,,15-4,N,San Francisco 49ers,31,20,26,397,268,129,2,21,351,210,141,2,18.54,-5.19,-1.58

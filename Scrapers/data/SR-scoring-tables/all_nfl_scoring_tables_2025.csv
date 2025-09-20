@@ -1,0 +1,289 @@
+Quarter,Time,Team,Detail,Team_1,Team_2,Game_ID
+1,11:49,Cowboys,Javonte Williams 1 yard rush (Brandon Aubrey kick),7,0,2025_01_DAL_PHI
+1,5:55,Eagles,Jalen Hurts 4 yard rush (Jake Elliott kick),7,7,2025_01_DAL_PHI
+2,14:56,Cowboys,Javonte Williams 1 yard rush (Brandon Aubrey kick),14,7,2025_01_DAL_PHI
+2,6:46,Eagles,Jalen Hurts 8 yard rush (Jake Elliott kick),14,14,2025_01_DAL_PHI
+2,2:34,Cowboys,Brandon Aubrey 41 yard field goal ,17,14,2025_01_DAL_PHI
+2,0:51,Eagles,Saquon Barkley 10 yard rush (Jake Elliott kick),17,21,2025_01_DAL_PHI
+2,0:00,Cowboys,Brandon Aubrey 53 yard field goal ,20,21,2025_01_DAL_PHI
+3,8:30,Eagles,Jake Elliott 58 yard field goal ,20,24,2025_01_DAL_PHI
+1,9:11,Chargers,Quentin Johnston 5 yard pass from Justin Herbert (Cameron Dicker kick),0,7,2025_01_KC_LAC
+2,13:47,Chargers,Cameron Dicker 39 yard field goal ,0,10,2025_01_KC_LAC
+2,4:50,Chiefs,Harrison Butker 35 yard field goal ,3,10,2025_01_KC_LAC
+2,0:45,Chargers,Cameron Dicker 36 yard field goal ,3,13,2025_01_KC_LAC
+2,0:00,Chiefs,Harrison Butker 59 yard field goal ,6,13,2025_01_KC_LAC
+3,8:05,Chiefs,Patrick Mahomes 11 yard rush (Harrison Butker kick failed),12,13,2025_01_KC_LAC
+3,0:32,Chargers,Keenan Allen 11 yard pass from Justin Herbert (Cameron Dicker kick),12,20,2025_01_KC_LAC
+4,12:04,Chiefs,Travis Kelce 37 yard pass from Patrick Mahomes (pass failed),18,20,2025_01_KC_LAC
+4,5:02,Chargers,Quentin Johnston 23 yard pass from Justin Herbert (Cameron Dicker kick),18,27,2025_01_KC_LAC
+4,2:34,Chiefs,Harrison Butker 27 yard field goal ,21,27,2025_01_KC_LAC
+1,13:14,Falcons,Bijan Robinson 50 yard pass from Michael Penix (Younghoe Koo kick),0,7,2025_01_TB_ATL
+2,10:17,Buccaneers,Chase McLaughlin 48 yard field goal ,3,7,2025_01_TB_ATL
+2,6:53,Buccaneers,Emeka Egbuka 30 yard pass from Baker Mayfield (Chase McLaughlin kick),10,7,2025_01_TB_ATL
+2,0:53,Falcons,Younghoe Koo 41 yard field goal ,10,10,2025_01_TB_ATL
+3,7:26,Buccaneers,Bucky Irving 9 yard pass from Baker Mayfield (Chase McLaughlin kick),17,10,2025_01_TB_ATL
+3,0:20,Falcons,Younghoe Koo 36 yard field goal ,17,13,2025_01_TB_ATL
+4,2:17,Falcons,Michael Penix 4 yard rush (Younghoe Koo kick),17,20,2025_01_TB_ATL
+4,0:59,Buccaneers,Emeka Egbuka 25 yard pass from Baker Mayfield (Chase McLaughlin kick failed),23,20,2025_01_TB_ATL
+1,7:32,Bengals,Chase Brown 5 yard rush (Evan McPherson kick),7,0,2025_01_CIN_CLE
+2,12:42,Browns,Raheim Sanders 1 yard rush (Andre Szmyt kick),7,7,2025_01_CIN_CLE
+2,4:18,Bengals,Noah Fant 1 yard pass from Joe Burrow (Evan McPherson kick),14,7,2025_01_CIN_CLE
+2,0:23,Browns,Andre Szmyt 45 yard field goal ,14,10,2025_01_CIN_CLE
+3,7:20,Browns,Cedric Tillman 5 yard pass from Joe Flacco (Andre Szmyt kick failed),14,16,2025_01_CIN_CLE
+3,2:48,Bengals,Evan McPherson 35 yard field goal ,17,16,2025_01_CIN_CLE
+1,10:37,Colts,Spencer Shrader 24 yard field goal ,0,3,2025_01_MIA_IND
+2,14:54,Colts,Michael Pittman Jr. 27 yard pass from Daniel Jones (Spencer Shrader kick),0,10,2025_01_MIA_IND
+2,12:01,Colts,Daniel Jones 1 yard rush (Spencer Shrader kick),0,17,2025_01_MIA_IND
+2,0:00,Colts,Spencer Shrader 35 yard field goal ,0,20,2025_01_MIA_IND
+3,7:30,Colts,Spencer Shrader 28 yard field goal ,0,23,2025_01_MIA_IND
+4,10:14,Colts,Daniel Jones 1 yard rush (Spencer Shrader kick),0,30,2025_01_MIA_IND
+4,6:21,Dolphins,De'Von Achane 11 yard pass from Tua Tagovailoa (Julian Hill pass from Tua Tagovailoa),8,30,2025_01_MIA_IND
+4,2:23,Colts,Spencer Shrader 48 yard field goal ,8,33,2025_01_MIA_IND
+1,8:15,Jaguars,Cam Little 35 yard field goal ,0,3,2025_01_CAR_JAX
+1,0:36,Panthers,Ryan Fitzgerald 48 yard field goal ,3,3,2025_01_CAR_JAX
+2,8:32,Jaguars,Hunter Long 6 yard pass from Trevor Lawrence (Cam Little kick),3,10,2025_01_CAR_JAX
+2,1:49,Jaguars,Brian Thomas 9 yard rush (Cam Little kick),3,17,2025_01_CAR_JAX
+2,0:01,Jaguars,Cam Little 47 yard field goal ,3,20,2025_01_CAR_JAX
+4,7:09,Jaguars,Cam Little 36 yard field goal ,3,23,2025_01_CAR_JAX
+4,4:47,Panthers,Chuba Hubbard 27 yard pass from Bryce Young (Ryan Fitzgerald kick),10,23,2025_01_CAR_JAX
+4,1:57,Jaguars,Cam Little 28 yard field goal ,10,26,2025_01_CAR_JAX
+1,12:17,Raiders,Tre Tucker 26 yard pass from Geno Smith (Daniel Carlson kick),7,0,2025_01_LVR_NE
+1,1:02,Patriots,Demario Douglas 2 yard pass from Drake Maye (Andres Borregales kick),7,7,2025_01_LVR_NE
+2,1:57,Patriots,Andres Borregales 35 yard field goal ,7,10,2025_01_LVR_NE
+3,9:39,Raiders,Ashton Jeanty 3 yard rush (Daniel Carlson kick),14,10,2025_01_LVR_NE
+3,0:52,Raiders,Daniel Carlson 51 yard field goal ,17,10,2025_01_LVR_NE
+4,6:46,Raiders,Daniel Carlson 40 yard field goal ,20,10,2025_01_LVR_NE
+4,0:19,Patriots,Andres Borregales 44 yard field goal ,20,13,2025_01_LVR_NE
+1,5:03,Cardinals,Chad Ryland 42 yard field goal ,3,0,2025_01_ARI_NO
+2,14:20,Saints,Alvin Kamara 18 yard rush (Blake Grupe kick),3,7,2025_01_ARI_NO
+2,10:05,Cardinals,Marvin Harrison Jr. 1 yard pass from Kyler Murray (Chad Ryland kick),10,7,2025_01_ARI_NO
+2,4:58,Saints,Blake Grupe 36 yard field goal ,10,10,2025_01_ARI_NO
+2,0:28,Cardinals,James Conner 4 yard pass from Kyler Murray (Chad Ryland kick),17,10,2025_01_ARI_NO
+3,9:16,Cardinals,Chad Ryland 50 yard field goal ,20,10,2025_01_ARI_NO
+4,2:42,Saints,Blake Grupe 28 yard field goal ,20,13,2025_01_ARI_NO
+1,9:15,Jets,Nick Folk 35 yard field goal ,0,3,2025_01_PIT_NYJ
+1,3:37,Steelers,Ben Skowronek 22 yard pass from Aaron Rodgers (Chris Boswell kick),7,3,2025_01_PIT_NYJ
+1,0:25,Jets,Garrett Wilson 33 yard pass from Justin Fields (run failed),7,9,2025_01_PIT_NYJ
+2,13:26,Steelers,Chris Boswell 56 yard field goal ,10,9,2025_01_PIT_NYJ
+2,10:03,Jets,Braelon Allen 8 yard rush (Nick Folk kick),10,16,2025_01_PIT_NYJ
+2,2:54,Jets,Nick Folk 51 yard field goal ,10,19,2025_01_PIT_NYJ
+2,0:32,Steelers,Jonnu Smith 3 yard pass from Aaron Rodgers (Chris Boswell kick),17,19,2025_01_PIT_NYJ
+3,3:46,Jets,Justin Fields 2 yard rush (Nick Folk kick),17,26,2025_01_PIT_NYJ
+4,14:57,Steelers,Jaylen Warren 5 yard pass from Aaron Rodgers (Chris Boswell kick),24,26,2025_01_PIT_NYJ
+4,14:07,Steelers,Calvin Austin III 18 yard pass from Aaron Rodgers (Chris Boswell kick),31,26,2025_01_PIT_NYJ
+4,7:01,Jets,Justin Fields 1 yard rush (pass failed),31,32,2025_01_PIT_NYJ
+4,1:03,Steelers,Chris Boswell 60 yard field goal ,34,32,2025_01_PIT_NYJ
+1,7:00,Commanders,Zach Ertz 7 yard pass from Jayden Daniels (Matt Gay kick),0,7,2025_01_NYG_WAS
+2,13:57,Giants,Graham Gano 21 yard field goal ,3,7,2025_01_NYG_WAS
+2,6:14,Commanders,Jacory Croskey-Merritt 6 yard rush (Matt Gay kick),3,14,2025_01_NYG_WAS
+3,1:43,Giants,Graham Gano 55 yard field goal ,6,14,2025_01_NYG_WAS
+4,7:09,Commanders,Deebo Samuel 19 yard rush (Matt Gay kick),6,21,2025_01_NYG_WAS
+1,11:58,Titans,Joey Slye 50 yard field goal ,3,0,2025_01_TEN_DEN
+1,8:35,Broncos,Wil Lutz 39 yard field goal ,3,3,2025_01_TEN_DEN
+2,2:16,Titans,Joey Slye 33 yard field goal ,6,3,2025_01_TEN_DEN
+2,0:16,Broncos,Courtland Sutton 22 yard pass from Bo Nix (Wil Lutz kick),6,10,2025_01_TEN_DEN
+2,0:02,Titans,Joey Slye 42 yard field goal ,9,10,2025_01_TEN_DEN
+3,11:56,Titans,Joey Slye 35 yard field goal ,12,10,2025_01_TEN_DEN
+3,4:17,Broncos,Wil Lutz 33 yard field goal ,12,13,2025_01_TEN_DEN
+4,7:37,Broncos,J.K. Dobbins 19 yard rush (Wil Lutz kick),12,20,2025_01_TEN_DEN
+1,3:43,49ers,George Kittle 5 yard pass from Brock Purdy (Jake Moody kick),7,0,2025_01_SF_SEA
+2,13:38,Seahawks,Zach Charbonnet 1 yard rush (Jason Myers kick),7,7,2025_01_SF_SEA
+2,0:02,Seahawks,Jason Myers 48 yard field goal ,7,10,2025_01_SF_SEA
+4,9:42,49ers,Jake Moody 32 yard field goal ,10,10,2025_01_SF_SEA
+4,3:24,Seahawks,Jason Myers 37 yard field goal ,10,13,2025_01_SF_SEA
+4,1:34,49ers,Jake Tonges 4 yard pass from Brock Purdy (Jake Moody kick),17,13,2025_01_SF_SEA
+1,9:25,Packers,Tucker Kraft 15 yard pass from Jordan Love (Brandon McManus kick),0,7,2025_01_DET_GB
+1,3:58,Packers,Brandon McManus 34 yard field goal ,0,10,2025_01_DET_GB
+2,9:27,Lions,Jake Bates 30 yard field goal ,3,10,2025_01_DET_GB
+2,8:34,Packers,Jayden Reed 17 yard pass from Jordan Love (Brandon McManus kick),3,17,2025_01_DET_GB
+3,9:40,Lions,Jake Bates 27 yard field goal ,6,17,2025_01_DET_GB
+4,7:57,Packers,Josh Jacobs 3 yard rush (Brandon McManus kick),6,24,2025_01_DET_GB
+4,4:22,Packers,Brandon McManus 38 yard field goal ,6,27,2025_01_DET_GB
+4,0:55,Lions,Isaac TeSlaa 13 yard pass from Jared Goff (Jake Bates kick),13,27,2025_01_DET_GB
+1,1:15,Texans,Ka'imi Fairbairn 51 yard field goal ,3,0,2025_01_HOU_LAR
+2,4:47,Texans,Ka'imi Fairbairn 45 yard field goal ,6,0,2025_01_HOU_LAR
+2,0:53,Rams,Kyren Williams 1 yard rush (Joshua Karty kick),6,7,2025_01_HOU_LAR
+2,0:00,Texans,Ka'imi Fairbairn 53 yard field goal ,9,7,2025_01_HOU_LAR
+3,12:28,Rams,Davis Allen 13 yard pass from Matthew Stafford (Joshua Karty kick),9,14,2025_01_HOU_LAR
+1,11:19,Bills,Dalton Kincaid 15 yard pass from Josh Allen (Matt Prater kick),0,7,2025_01_BAL_BUF
+1,3:38,Ravens,Tyler Loop 52 yard field goal ,3,7,2025_01_BAL_BUF
+2,13:35,Ravens,Derrick Henry 30 yard rush (Tyler Loop kick),10,7,2025_01_BAL_BUF
+2,9:47,Ravens,Lamar Jackson 10 yard rush (Tyler Loop kick),17,7,2025_01_BAL_BUF
+2,2:50,Bills,Matt Prater 25 yard field goal ,17,10,2025_01_BAL_BUF
+2,0:31,Ravens,Tyler Loop 49 yard field goal ,20,10,2025_01_BAL_BUF
+2,0:00,Bills,Matt Prater 43 yard field goal ,20,13,2025_01_BAL_BUF
+3,12:48,Ravens,Zay Flowers 23 yard pass from Lamar Jackson (Tyler Loop kick),27,13,2025_01_BAL_BUF
+3,7:47,Bills,James Cook 2 yard rush (pass failed),27,19,2025_01_BAL_BUF
+3,1:09,Ravens,DeAndre Hopkins 29 yard pass from Lamar Jackson (Tyler Loop kick),34,19,2025_01_BAL_BUF
+4,12:51,Bills,Josh Allen 2 yard rush (pass failed),34,25,2025_01_BAL_BUF
+4,11:42,Ravens,Derrick Henry 46 yard rush (Tyler Loop kick failed),40,25,2025_01_BAL_BUF
+4,3:56,Bills,Keon Coleman 10 yard pass from Josh Allen (Matt Prater kick),40,32,2025_01_BAL_BUF
+4,1:58,Bills,Josh Allen 1 yard rush (pass failed),40,38,2025_01_BAL_BUF
+4,0:00,Bills,Matt Prater 32 yard field goal ,40,41,2025_01_BAL_BUF
+1,7:04,Bears,Caleb Williams 9 yard rush (Cairo Santos kick),0,7,2025_01_MIN_CHI
+2,12:48,Vikings,Will Reichard 31 yard field goal ,3,7,2025_01_MIN_CHI
+2,0:24,Bears,Cairo Santos 42 yard field goal ,3,10,2025_01_MIN_CHI
+2,0:06,Vikings,Will Reichard 59 yard field goal ,6,10,2025_01_MIN_CHI
+3,12:51,Bears,Nahshon Wright 74 yard interception return (Cairo Santos kick),6,17,2025_01_MIN_CHI
+4,12:13,Vikings,Justin Jefferson 13 yard pass from J.J. McCarthy (pass failed),12,17,2025_01_MIN_CHI
+4,9:46,Vikings,Aaron Jones 27 yard pass from J.J. McCarthy (Adam Thielen pass from J.J. McCarthy),20,17,2025_01_MIN_CHI
+4,2:53,Vikings,J.J. McCarthy 14 yard rush (Will Reichard kick),27,17,2025_01_MIN_CHI
+4,2:02,Bears,Rome Odunze 1 yard pass from Caleb Williams (Cairo Santos kick),27,24,2025_01_MIN_CHI
+1,4:39,Packers,Romeo Doubs 5 yard pass from Jordan Love (Brandon McManus kick),0,7,2025_02_WAS_GB
+2,7:33,Packers,Josh Jacobs 2 yard rush (Brandon McManus kick),0,14,2025_02_WAS_GB
+2,4:27,Commanders,Matt Gay 51 yard field goal ,3,14,2025_02_WAS_GB
+3,6:37,Packers,Brandon McManus 22 yard field goal ,3,17,2025_02_WAS_GB
+4,13:45,Commanders,Zach Ertz 20 yard pass from Jayden Daniels (Matt Gay kick),10,17,2025_02_WAS_GB
+4,8:57,Packers,Tucker Kraft 8 yard pass from Jordan Love (Brandon McManus kick),10,24,2025_02_WAS_GB
+4,6:42,Packers,Brandon McManus 56 yard field goal ,10,27,2025_02_WAS_GB
+4,2:53,Commanders,Deebo Samuel 10 yard pass from Jayden Daniels (Luke McCaffrey pass from Jayden Daniels),18,27,2025_02_WAS_GB
+1,3:06,Ravens,Tyler Loop 43 yard field goal ,0,3,2025_02_CLE_BAL
+2,11:13,Ravens,Tylan Wallace 15 yard pass from Lamar Jackson (Tyler Loop kick),0,10,2025_02_CLE_BAL
+2,0:29,Browns,Andre Szmyt 38 yard field goal ,3,10,2025_02_CLE_BAL
+3,12:26,Ravens,Tyler Loop 32 yard field goal ,3,13,2025_02_CLE_BAL
+3,10:09,Ravens,Devontez Walker 2 yard pass from Lamar Jackson (Tyler Loop kick),3,20,2025_02_CLE_BAL
+3,5:02,Browns,Cedric Tillman 18 yard pass from Joe Flacco (Andre Szmyt kick),10,20,2025_02_CLE_BAL
+4,13:26,Ravens,Devontez Walker 24 yard pass from Lamar Jackson (Tyler Loop kick),10,27,2025_02_CLE_BAL
+4,8:19,Ravens,Roquan Smith 63 yard fumble return (Tyler Loop kick),10,34,2025_02_CLE_BAL
+4,4:43,Ravens,DeAndre Hopkins 23 yard pass from Lamar Jackson (Tyler Loop kick),10,41,2025_02_CLE_BAL
+4,1:50,Browns,Dylan Sampson 8 yard pass from Dillon Gabriel (Andre Szmyt kick),17,41,2025_02_CLE_BAL
+1,10:51,Jaguars,Dyami Brown 9 yard pass from Trevor Lawrence (Cam Little kick),7,0,2025_02_JAX_CIN
+1,0:07,Bengals,Ja'Marr Chase 4 yard pass from Joe Burrow (Evan McPherson kick),7,7,2025_02_JAX_CIN
+2,10:54,Jaguars,Bhayshul Tuten 8 yard pass from Trevor Lawrence (Cam Little kick),14,7,2025_02_JAX_CIN
+2,3:28,Bengals,Evan McPherson 31 yard field goal ,14,10,2025_02_JAX_CIN
+2,1:35,Jaguars,Cam Little 42 yard field goal ,17,10,2025_02_JAX_CIN
+3,11:05,Bengals,Mitchell Tinsley 13 yard pass from Jake Browning (Evan McPherson kick),17,17,2025_02_JAX_CIN
+3,4:08,Jaguars,Travis Etienne 11 yard pass from Trevor Lawrence (Cam Little kick),24,17,2025_02_JAX_CIN
+3,2:39,Bengals,Tee Higgins 42 yard pass from Jake Browning (Evan McPherson kick),24,24,2025_02_JAX_CIN
+4,11:43,Jaguars,Cam Little 25 yard field goal ,27,24,2025_02_JAX_CIN
+4,0:18,Bengals,Jake Browning 1 yard rush (Evan McPherson kick),27,31,2025_02_JAX_CIN
+1,6:11,Giants,Graham Gano 38 yard field goal ,3,0,2025_02_NYG_DAL
+1,1:05,Giants,Graham Gano 33 yard field goal ,6,0,2025_02_NYG_DAL
+2,8:25,Cowboys,Brandon Aubrey 51 yard field goal ,6,3,2025_02_NYG_DAL
+2,5:37,Giants,Malik Nabers 29 yard pass from Russell Wilson (Graham Gano kick),13,3,2025_02_NYG_DAL
+2,2:11,Cowboys,KaVontae Turpin 10 yard pass from Dak Prescott (Brandon Aubrey kick),13,10,2025_02_NYG_DAL
+3,7:20,Cowboys,Javonte Williams 30 yard rush (Brandon Aubrey kick),13,17,2025_02_NYG_DAL
+3,5:38,Giants,Graham Gano 33 yard field goal ,16,17,2025_02_NYG_DAL
+4,14:13,Cowboys,Brandon Aubrey 44 yard field goal ,16,20,2025_02_NYG_DAL
+4,12:07,Giants,Cam Skattebo 1 yard rush (Graham Gano kick),23,20,2025_02_NYG_DAL
+4,6:14,Cowboys,Miles Sanders 4 yard rush (Brandon Aubrey kick),23,27,2025_02_NYG_DAL
+4,2:44,Giants,Wan'Dale Robinson 32 yard pass from Russell Wilson (Graham Gano kick),30,27,2025_02_NYG_DAL
+4,0:52,Cowboys,George Pickens 6 yard pass from Dak Prescott (Brandon Aubrey kick),30,34,2025_02_NYG_DAL
+4,0:25,Giants,Malik Nabers 48 yard pass from Russell Wilson (Graham Gano kick),37,34,2025_02_NYG_DAL
+4,0:00,Cowboys,Brandon Aubrey 64 yard field goal ,37,37,2025_02_NYG_DAL
+OT,0:00,Cowboys,Brandon Aubrey 46 yard field goal ,37,40,2025_02_NYG_DAL
+1,12:13,Lions,Jahmyr Gibbs 6 yard rush (Jake Bates kick),0,7,2025_02_CHI_DET
+1,8:30,Bears,Rome Odunze 28 yard pass from Caleb Williams (Cairo Santos kick),7,7,2025_02_CHI_DET
+1,2:39,Lions,David Montgomery 1 yard rush (Jake Bates kick),7,14,2025_02_CHI_DET
+2,4:48,Lions,Brock Wright 8 yard pass from Jared Goff (Jake Bates kick),7,21,2025_02_CHI_DET
+2,1:55,Bears,Rome Odunze 6 yard pass from Caleb Williams (Cairo Santos kick),14,21,2025_02_CHI_DET
+2,0:02,Lions,Amon-Ra St. Brown 4 yard pass from Jared Goff (Jake Bates kick),14,28,2025_02_CHI_DET
+3,10:39,Lions,Jake Bates 34 yard field goal ,14,31,2025_02_CHI_DET
+3,6:22,Lions,Jameson Williams 44 yard pass from Jared Goff (Jake Bates kick),14,38,2025_02_CHI_DET
+4,14:56,Lions,Amon-Ra St. Brown 8 yard pass from Jared Goff (Jake Bates kick),14,45,2025_02_CHI_DET
+4,11:45,Bears,D'Andre Swift 3 yard rush (Cairo Santos kick),21,45,2025_02_CHI_DET
+4,7:58,Lions,Amon-Ra St. Brown 4 yard pass from Jared Goff (Jake Bates kick),21,52,2025_02_CHI_DET
+1,9:29,Patriots,Mack Hollins 8 yard pass from Drake Maye (Andres Borregales kick failed),6,0,2025_02_NE_MIA
+1,0:49,Patriots,Kayshon Boutte 16 yard pass from Drake Maye (Andres Borregales kick failed),12,0,2025_02_NE_MIA
+2,11:19,Dolphins,Jaylen Waddle 18 yard pass from Tua Tagovailoa (Riley Patterson kick),12,7,2025_02_NE_MIA
+2,1:56,Patriots,Andres Borregales 22 yard field goal ,15,7,2025_02_NE_MIA
+2,0:33,Dolphins,De'Von Achane 29 yard pass from Tua Tagovailoa (Riley Patterson kick),15,14,2025_02_NE_MIA
+3,10:41,Dolphins,Riley Patterson 40 yard field goal ,15,17,2025_02_NE_MIA
+3,3:37,Dolphins,Riley Patterson 44 yard field goal ,15,20,2025_02_NE_MIA
+3,0:06,Patriots,Drake Maye 6 yard rush (Rhamondre Stevenson run),23,20,2025_02_NE_MIA
+4,7:18,Dolphins,Malik Washington 74 yard punt return (Riley Patterson kick),23,27,2025_02_NE_MIA
+4,7:06,Patriots,Antonio Gibson 90 yard kickoff return (Andres Borregales kick),30,27,2025_02_NE_MIA
+4,1:47,Patriots,Andres Borregales 53 yard field goal ,33,27,2025_02_NE_MIA
+1,3:25,49ers,Luke Farrell 11 yard pass from Mac Jones (Eddy PiÃ±eiro kick failed),6,0,2025_02_SF_NO
+2,11:23,49ers,Eddy PiÃ±eiro 44 yard field goal ,9,0,2025_02_SF_NO
+2,1:14,Saints,Juwan Johnson 18 yard pass from Spencer Rattler (Blake Grupe kick),9,7,2025_02_SF_NO
+2,0:07,49ers,Christian McCaffrey 7 yard pass from Mac Jones (Eddy PiÃ±eiro kick),16,7,2025_02_SF_NO
+3,7:11,Saints,Rashid Shaheed 3 yard pass from Spencer Rattler (Blake Grupe kick),16,14,2025_02_SF_NO
+3,3:20,49ers,Eddy PiÃ±eiro 46 yard field goal ,19,14,2025_02_SF_NO
+4,12:18,49ers,Jauan Jennings 42 yard pass from Mac Jones (Eddy PiÃ±eiro kick),26,14,2025_02_SF_NO
+4,6:18,Saints,Devaughn Vele 3 yard pass from Spencer Rattler (Blake Grupe kick),26,21,2025_02_SF_NO
+1,7:29,Bills,James Cook 1 yard rush (Matt Prater kick),7,0,2025_02_BUF_NYJ
+1,5:01,Bills,Matt Prater 28 yard field goal ,10,0,2025_02_BUF_NYJ
+2,14:02,Bills,Matt Prater 52 yard field goal ,13,0,2025_02_BUF_NYJ
+2,8:50,Bills,James Cook 44 yard rush (Matt Prater kick),20,0,2025_02_BUF_NYJ
+2,4:21,Jets,Nick Folk 51 yard field goal ,20,3,2025_02_BUF_NYJ
+3,9:01,Bills,Matt Prater 33 yard field goal ,23,3,2025_02_BUF_NYJ
+4,14:57,Bills,Elijah Moore 4 yard rush (Matt Prater kick),30,3,2025_02_BUF_NYJ
+4,3:28,Jets,Jeremy Ruckert 5 yard pass from Tyrod Taylor (Nick Folk kick),30,10,2025_02_BUF_NYJ
+1,10:29,Seahawks,Tory Horton 21 yard pass from Sam Darnold (Jason Myers kick),7,0,2025_02_SEA_PIT
+1,4:47,Steelers,Chris Boswell 48 yard field goal ,7,3,2025_02_SEA_PIT
+1,2:13,Steelers,Chris Boswell 48 yard field goal ,7,6,2025_02_SEA_PIT
+2,1:09,Steelers,D.K. Metcalf 2 yard pass from Aaron Rodgers (Darnell Washington pass from Aaron Rodgers),7,14,2025_02_SEA_PIT
+3,6:10,Seahawks,AJ Barner 7 yard pass from Sam Darnold (Jason Myers kick),14,14,2025_02_SEA_PIT
+4,12:46,Seahawks,Jason Myers 54 yard field goal ,17,14,2025_02_SEA_PIT
+4,12:46,Seahawks,George Holani kickoff recovery in end zone (Jason Myers kick),24,14,2025_02_SEA_PIT
+4,7:49,Steelers,Chris Boswell 45 yard field goal ,24,17,2025_02_SEA_PIT
+4,3:41,Seahawks,Kenneth Walker III 19 yard rush (Jason Myers kick),31,17,2025_02_SEA_PIT
+1,8:39,Rams,Puka Nacua 45 yard rush (Joshua Karty kick),7,0,2025_02_LAR_TEN
+2,11:21,Titans,Joey Slye 55 yard field goal ,7,3,2025_02_LAR_TEN
+2,7:25,Rams,Joshua Karty 21 yard field goal ,10,3,2025_02_LAR_TEN
+2,0:38,Titans,Elic Ayomanor 9 yard pass from Cam Ward (Joey Slye kick),10,10,2025_02_LAR_TEN
+2,0:00,Titans,Joey Slye 37 yard field goal ,10,13,2025_02_LAR_TEN
+3,9:29,Rams,Joshua Karty 21 yard field goal ,13,13,2025_02_LAR_TEN
+3,3:32,Titans,Joey Slye 57 yard field goal ,13,16,2025_02_LAR_TEN
+3,1:17,Rams,Davis Allen 8 yard pass from Matthew Stafford (Joshua Karty kick),20,16,2025_02_LAR_TEN
+4,9:40,Rams,Davante Adams 16 yard pass from Matthew Stafford (Joshua Karty kick),27,16,2025_02_LAR_TEN
+4,6:45,Rams,Blake Corum 1 yard rush (Joshua Karty kick failed),33,16,2025_02_LAR_TEN
+4,2:40,Titans,Joey Slye 35 yard field goal ,33,19,2025_02_LAR_TEN
+1,13:27,Cardinals,Zaven Collins 3 yard fumble return (Chad Ryland kick),0,7,2025_02_CAR_ARI
+1,5:19,Cardinals,Chad Ryland 29 yard field goal ,0,10,2025_02_CAR_ARI
+1,0:50,Panthers,Ryan Fitzgerald 27 yard field goal ,3,10,2025_02_CAR_ARI
+2,1:55,Cardinals,Chad Ryland 47 yard field goal ,3,13,2025_02_CAR_ARI
+2,0:04,Cardinals,Michael Wilson 11 yard pass from Kyler Murray (Chad Ryland kick),3,20,2025_02_CAR_ARI
+3,9:23,Cardinals,James Conner 2 yard rush (Chad Ryland kick),3,27,2025_02_CAR_ARI
+3,2:06,Panthers,Hunter Renfrow 4 yard pass from Bryce Young (run failed),9,27,2025_02_CAR_ARI
+4,5:05,Panthers,Chuba Hubbard 5 yard pass from Bryce Young (run failed),15,27,2025_02_CAR_ARI
+4,1:58,Panthers,Hunter Renfrow 1 yard pass from Bryce Young (Ryan Fitzgerald kick),22,27,2025_02_CAR_ARI
+1,11:51,Colts,Spencer Shrader 29 yard field goal ,0,3,2025_02_DEN_IND
+1,8:24,Broncos,Marvin Mims 23 yard pass from Bo Nix (Wil Lutz kick),7,3,2025_02_DEN_IND
+1,4:19,Colts,Spencer Shrader 33 yard field goal ,7,6,2025_02_DEN_IND
+2,14:12,Colts,Daniel Jones 1 yard rush (Spencer Shrader kick),7,13,2025_02_DEN_IND
+2,10:42,Broncos,Troy Franklin 3 yard pass from Bo Nix (Wil Lutz kick),14,13,2025_02_DEN_IND
+2,3:03,Broncos,Adam Trautman 2 yard pass from Bo Nix (Wil Lutz kick),21,13,2025_02_DEN_IND
+2,1:31,Colts,Jonathan Taylor 7 yard pass from Daniel Jones (Spencer Shrader kick),21,20,2025_02_DEN_IND
+3,11:13,Broncos,J.K. Dobbins 5 yard rush (Wil Lutz kick),28,20,2025_02_DEN_IND
+3,5:42,Colts,Spencer Shrader 36 yard field goal ,28,23,2025_02_DEN_IND
+4,8:33,Colts,Spencer Shrader 28 yard field goal ,28,26,2025_02_DEN_IND
+4,0:00,Colts,Spencer Shrader 45 yard field goal ,28,29,2025_02_DEN_IND
+1,0:46,Eagles,Saquon Barkley 13 yard rush (Jake Elliott kick),7,0,2025_02_PHI_KC
+2,11:42,Chiefs,Harrison Butker 56 yard field goal ,7,3,2025_02_PHI_KC
+2,2:44,Chiefs,Patrick Mahomes 13 yard rush (Harrison Butker kick),7,10,2025_02_PHI_KC
+2,0:00,Eagles,Jake Elliott 58 yard field goal ,10,10,2025_02_PHI_KC
+3,11:28,Eagles,Jake Elliott 51 yard field goal ,13,10,2025_02_PHI_KC
+4,7:48,Eagles,Jalen Hurts 1 yard rush (Jake Elliott kick),20,10,2025_02_PHI_KC
+4,3:00,Chiefs,Tyquan Thornton 49 yard pass from Patrick Mahomes (Harrison Butker kick),20,17,2025_02_PHI_KC
+1,11:12,Falcons,John Parker Romo 38 yard field goal ,3,0,2025_02_ATL_MIN
+1,6:48,Falcons,John Parker Romo 29 yard field goal ,6,0,2025_02_ATL_MIN
+2,7:06,Vikings,Will Reichard 33 yard field goal ,6,3,2025_02_ATL_MIN
+2,0:25,Falcons,John Parker Romo 33 yard field goal ,9,3,2025_02_ATL_MIN
+2,0:00,Vikings,Will Reichard 51 yard field goal ,9,6,2025_02_ATL_MIN
+3,6:17,Falcons,John Parker Romo 33 yard field goal ,12,6,2025_02_ATL_MIN
+4,11:16,Falcons,John Parker Romo 54 yard field goal ,15,6,2025_02_ATL_MIN
+4,3:22,Falcons,Tyler Allgeier 5 yard rush (John Parker Romo kick),22,6,2025_02_ATL_MIN
+1,12:00,Texans,Nico Collins 29 yard pass from C.J. Stroud (Ka'imi Fairbairn kick),0,7,2025_02_TB_HOU
+1,7:20,Buccaneers,Ryan Miller 20 yard pass from Baker Mayfield (Chase McLaughlin kick),7,7,2025_02_TB_HOU
+1,3:25,Texans,Ka'imi Fairbairn 35 yard field goal ,7,10,2025_02_TB_HOU
+2,9:50,Buccaneers,Emeka Egbuka 15 yard pass from Baker Mayfield (Chase McLaughlin kick),14,10,2025_02_TB_HOU
+4,5:22,Texans,Ka'imi Fairbairn 53 yard field goal ,14,13,2025_02_TB_HOU
+4,2:10,Texans,Nick Chubb 25 yard rush (pass failed),14,19,2025_02_TB_HOU
+4,0:06,Buccaneers,Rachaad White 2 yard rush (pass failed),20,19,2025_02_TB_HOU
+1,13:43,Chargers,Cameron Dicker 38 yard field goal ,3,0,2025_02_LAC_LVR
+1,9:02,Raiders,Daniel Carlson 54 yard field goal ,3,3,2025_02_LAC_LVR
+1,0:20,Chargers,Keenan Allen 10 yard pass from Justin Herbert (Cameron Dicker kick),10,3,2025_02_LAC_LVR
+2,9:54,Raiders,Daniel Carlson 40 yard field goal ,10,6,2025_02_LAC_LVR
+2,1:51,Chargers,Quentin Johnston 60 yard pass from Justin Herbert (Cameron Dicker kick),17,6,2025_02_LAC_LVR
+3,7:30,Chargers,Cameron Dicker 20 yard field goal ,20,6,2025_02_LAC_LVR
+4,11:15,Raiders,Daniel Carlson 37 yard field goal ,20,9,2025_02_LAC_LVR
+1,8:31,Dolphins,Ollie Gordon 2 yard rush (Riley Patterson kick),7,0,2025_03_MIA_BUF
+1,4:04,Bills,Dalton Kincaid 20 yard pass from Josh Allen (Matt Prater kick),7,7,2025_03_MIA_BUF
+2,11:54,Bills,Jackson Hawes 5 yard pass from Josh Allen (Matt Prater kick),7,14,2025_03_MIA_BUF
+2,0:08,Dolphins,Jaylen Waddle 3 yard pass from Tua Tagovailoa (Riley Patterson kick),14,14,2025_03_MIA_BUF
+3,10:23,Bills,James Cook 2 yard rush (Matt Prater kick),14,21,2025_03_MIA_BUF
+4,12:17,Dolphins,Tyreek Hill 5 yard pass from Tua Tagovailoa (Riley Patterson kick),21,21,2025_03_MIA_BUF
+4,7:17,Bills,Khalil Shakir 15 yard pass from Josh Allen (Matt Prater kick),21,28,2025_03_MIA_BUF
+4,0:22,Bills,Matt Prater 48 yard field goal ,21,31,2025_03_MIA_BUF

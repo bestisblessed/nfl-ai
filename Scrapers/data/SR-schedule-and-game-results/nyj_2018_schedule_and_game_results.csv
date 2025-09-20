@@ -1,0 +1,18 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Mon,September 10,7:10PM ET,boxscore,W,,1-0,@,Detroit Lions,48,17,18,349,180,169,2,20,339,300,39,5,4.69,16.54,10.55
+2,Sun,September 16,1:00PM ET,boxscore,L,,1-1,,Miami Dolphins,12,20,21,362,320,42,3,18,257,122,135,2,-8.87,2.02,0.32
+3,Thu,September 20,8:20PM ET,boxscore,L,,1-2,@,Cleveland Browns,17,21,14,268,161,107,3,20,323,190,133,,-10.59,-0.16,6.79
+4,Sun,September 30,1:00PM ET,boxscore,L,,1-3,@,Jacksonville Jaguars,12,31,10,178,144,34,,23,503,377,126,3,-11.57,-4.35,2.04
+5,Sun,October 7,1:00PM ET,boxscore,W,,2-3,,Denver Broncos,34,16,18,512,189,323,2,26,436,344,92,1,16.16,0.21,0.78
+6,Sun,October 14,1:00PM ET,boxscore,W,,3-3,,Indianapolis Colts,42,34,18,374,267,107,2,24,428,301,127,4,1.27,5.04,-4.11
+7,Sun,October 21,1:00PM ET,boxscore,L,,3-4,,Minnesota Vikings,17,37,16,263,192,71,4,15,316,228,88,,-25.19,2.03,3.85
+8,Sun,October 28,1:00PM ET,boxscore,L,,3-5,@,Chicago Bears,10,24,12,207,150,57,,22,395,216,179,,-6.25,-15.66,9.71
+9,Sun,November 4,1:00PM ET,boxscore,L,,3-6,@,Miami Dolphins,6,13,15,282,202,80,4,7,168,104,64,,-18.82,16.51,-3.31
+10,Sun,November 11,1:00PM ET,boxscore,L,,3-7,,Buffalo Bills,10,41,12,199,116,83,2,23,451,239,212,,-15.96,-16.35,-5.86
+11,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+12,Sun,November 25,1:00PM ET,boxscore,L,,3-8,,New England Patriots,13,27,18,338,264,74,1,25,498,283,215,,1.72,-20.44,2.45
+13,Sun,December 2,4:05PM ET,boxscore,L,,3-9,@,Tennessee Titans,22,26,15,280,124,156,1,22,403,273,130,1,-12.40,-1.59,9.82
+14,Sun,December 9,1:00PM ET,boxscore,W,,4-9,@,Buffalo Bills,27,23,15,248,170,78,2,24,368,192,176,3,4.74,-6.81,5.69
+15,Sat,December 15,4:30PM ET,boxscore,L,,4-10,,Houston Texans,22,29,21,318,228,90,1,15,286,239,47,,-0.47,-2.17,-4.92
+16,Sun,December 23,1:00PM ET,boxscore,L,OT,4-11,,Green Bay Packers,38,44,23,370,323,47,,35,540,413,127,1,12.93,-33.16,15.50
+17,Sun,December 30,1:00PM ET,boxscore,L,,4-12,@,New England Patriots,3,38,12,239,135,104,3,24,375,244,131,,-29.00,-12.41,5.46

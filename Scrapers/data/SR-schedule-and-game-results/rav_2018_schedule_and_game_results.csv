@@ -1,0 +1,20 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 9,1:00PM ET,boxscore,W,,1-0,,Buffalo Bills,47,3,26,369,252,117,1,10,153,70,83,2,7.23,28.71,2.33
+2,Thu,September 13,8:20PM ET,boxscore,L,,1-1,@,Cincinnati Bengals,23,34,28,425,359,66,3,24,373,265,108,,2.72,-12.80,1.12
+3,Sun,September 23,1:00PM ET,boxscore,W,,2-1,,Denver Broncos,27,14,20,342,265,77,,18,293,173,120,1,8.96,7.96,-5.82
+4,Sun,September 30,8:20PM ET,boxscore,W,,3-1,@,Pittsburgh Steelers,26,14,24,451,355,96,1,14,284,265,19,2,7.71,10.05,-2.06
+5,Sun,October 7,1:00PM ET,boxscore,L,OT,3-2,@,Cleveland Browns,9,12,25,410,294,116,2,20,416,304,112,1,-11.13,7.48,2.05
+6,Sun,October 14,4:25PM ET,boxscore,W,,4-2,@,Tennessee Titans,21,0,23,361,238,123,1,7,106,51,55,,12.84,15.17,-2.21
+7,Sun,October 21,4:05PM ET,boxscore,L,,4-3,,New Orleans Saints,23,24,25,351,274,77,,26,339,205,134,1,16.64,-12.99,-7.63
+8,Sun,October 28,1:00PM ET,boxscore,L,,4-4,@,Carolina Panthers,21,36,20,325,224,101,3,22,386,232,154,,1.24,-18.22,7.88
+9,Sun,November 4,1:00PM ET,boxscore,L,,4-5,,Pittsburgh Steelers,16,23,18,265,204,61,,27,395,282,113,,7.37,-17.75,4.01
+10,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+11,Sun,November 18,1:00PM ET,boxscore,W,,5-5,,Cincinnati Bengals,24,21,23,403,136,267,1,15,255,207,48,,2.66,0.01,-5.08
+12,Sun,November 25,1:00PM ET,boxscore,W,,6-5,,Oakland Raiders,34,17,23,416,174,242,2,13,249,182,67,1,11.19,8.83,2.03
+13,Sun,December 2,1:00PM ET,boxscore,W,,7-5,@,Atlanta Falcons,26,16,25,366,159,207,1,16,131,97,34,1,-1.63,13.31,-1.11
+14,Sun,December 9,1:00PM ET,boxscore,L,OT,7-6,@,Kansas City Chiefs,24,27,24,321,127,194,1,30,442,348,94,1,4.92,-17.44,9.52
+15,Sun,December 16,1:00PM ET,boxscore,W,,8-6,,Tampa Bay Buccaneers,20,12,24,370,128,242,2,12,241,156,85,1,6.86,6.00,-2.23
+16,Sat,December 22,8:20PM ET,boxscore,W,,9-6,@,Los Angeles Chargers,22,10,15,361,202,159,1,14,198,147,51,3,-3.87,21.26,-1.70
+17,Sun,December 30,4:25PM ET,boxscore,W,,10-6,,Cleveland Browns,26,24,24,463,167,296,1,18,426,376,50,3,7.31,-9.49,2.95
+,,Playoffs,,,,,,,,,,,,,,,,,,,,,,
+Wild Card,Sun,January 6,1:05PM ET,boxscore,L,,10-7,,Los Angeles Chargers,17,23,11,229,139,90,3,14,243,154,89,1,-14.46,9.17,2.32

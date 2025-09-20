@@ -1,0 +1,19 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 12,1:00PM ET,boxscore,W,,1-0,,Jacksonville Jaguars,37,21,22,449,289,160,,20,395,319,76,3,14.76,1.54,-0.16
+2,Sun,September 19,1:00PM ET,boxscore,L,,1-1,@,Cleveland Browns,21,31,17,302,220,82,2,22,355,199,156,2,9.61,-8.22,-8.62
+3,Thu,September 23,8:20PM ET,boxscore,L,,1-2,,Carolina Panthers,9,24,14,193,151,42,,28,407,290,117,,-5.60,-14.35,5.17
+4,Sun,October 3,1:00PM ET,boxscore,L,,1-3,@,Buffalo Bills,0,40,6,109,61,48,5,26,450,251,199,1,-32.68,-14.54,6.40
+5,Sun,October 10,1:00PM ET,boxscore,L,,1-4,,New England Patriots,22,25,14,360,293,67,1,21,352,226,126,2,13.76,-6.89,-8.60
+6,Sun,October 17,1:00PM ET,boxscore,L,,1-5,@,Indianapolis Colts,3,31,19,353,229,124,3,15,388,214,174,,-9.92,-17.25,0.25
+7,Sun,October 24,4:25PM ET,boxscore,L,,1-6,@,Arizona Cardinals,5,31,8,160,118,42,1,24,397,225,172,1,-23.71,-13.37,10.47
+8,Sun,October 31,1:00PM ET,boxscore,L,,1-7,,Los Angeles Rams,22,38,18,323,279,44,1,26,467,302,165,,1.75,-22.20,8.01
+9,Sun,November 7,1:00PM ET,boxscore,L,,1-8,@,Miami Dolphins,9,17,14,272,199,73,4,22,262,215,47,5,-19.43,8.14,4.21
+10,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+11,Sun,November 21,1:00PM ET,boxscore,W,,2-8,@,Tennessee Titans,22,13,15,190,107,83,,26,420,317,103,5,-10.90,6.86,10.33
+12,Sun,November 28,1:00PM ET,boxscore,L,,2-9,,New York Jets,14,21,13,202,106,96,1,18,266,109,157,1,-9.28,2.68,1.61
+13,Sun,December 5,1:00PM ET,boxscore,L,,2-10,,Indianapolis Colts,0,31,9,141,57,84,2,26,389,151,238,1,-28.83,-12.97,9.16
+14,Sun,December 12,1:00PM ET,boxscore,L,,2-11,,Seattle Seahawks,13,33,25,380,317,63,,20,453,260,193,,-2.60,-21.71,9.75
+15,Sun,December 19,1:00PM ET,boxscore,W,,3-11,@,Jacksonville Jaguars,30,16,13,281,206,75,1,21,296,189,107,,-0.77,1.90,10.61
+16,Sun,December 26,1:00PM ET,boxscore,W,,4-11,,Los Angeles Chargers,41,29,26,437,248,189,,25,417,328,89,3,24.35,-5.49,-2.75
+17,Sun,January 2,4:05PM ET,boxscore,L,,4-12,@,San Francisco 49ers,7,23,15,222,136,86,1,19,416,241,175,1,-7.88,-5.70,-0.16
+18,Sun,January 9,1:00PM ET,boxscore,L,,4-13,,Tennessee Titans,25,28,18,353,289,64,,23,405,281,124,,13.08,-21.60,1.97

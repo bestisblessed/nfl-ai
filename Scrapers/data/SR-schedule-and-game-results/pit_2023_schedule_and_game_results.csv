@@ -1,0 +1,21 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 10,1:00PM ET,boxscore,L,,0-1,,San Francisco 49ers,7,30,15,239,198,41,2,22,391,203,188,1,-13.55,-9.73,0.78
+2,Mon,September 18,8:15PM ET,boxscore,W,,1-1,,Cleveland Browns,26,22,9,255,200,55,2,20,408,210,198,4,-16.63,19.51,2.81
+3,Sun,September 24,8:20PM ET,boxscore,W,,2-1,@,Las Vegas Raiders,23,18,17,333,228,105,,19,362,293,69,3,5.43,3.82,0.12
+4,Sun,October 1,1:00PM ET,boxscore,L,,2-2,@,Houston Texans,6,30,12,225,111,114,1,24,451,312,139,,-8.54,-15.66,2.59
+5,Sun,October 8,1:00PM ET,boxscore,W,,3-2,,Baltimore Ravens,17,10,17,289,202,87,1,19,335,210,125,3,-5.08,16.12,-3.84
+6,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+7,Sun,October 22,4:05PM ET,boxscore,W,,4-2,@,Los Angeles Rams,24,17,17,300,214,86,,19,354,219,135,1,4.14,-3.06,6.47
+8,Sun,October 29,1:00PM ET,boxscore,L,,4-3,,Jacksonville Jaguars,10,20,17,261,191,70,2,20,377,271,106,3,-3.68,2.59,-2.01
+9,Thu,November 2,8:15PM ET,boxscore,W,,5-3,,Tennessee Titans,20,16,22,326,160,166,,23,340,235,105,1,10.92,-3.61,-3.77
+10,Sun,November 12,1:00PM ET,boxscore,W,,6-3,,Green Bay Packers,23,19,21,324,119,205,,17,399,283,116,2,7.06,-8.81,3.18
+11,Sun,November 19,1:00PM ET,boxscore,L,,6-4,@,Cleveland Browns,10,13,12,249,77,172,,20,259,163,96,1,-6.04,6.18,-1.74
+12,Sun,November 26,1:00PM ET,boxscore,W,,7-4,@,Cincinnati Bengals,16,10,22,421,268,153,1,10,222,197,25,1,4.32,6.04,-3.05
+13,Sun,December 3,1:00PM ET,boxscore,L,,7-5,,Arizona Cardinals,10,24,18,317,187,130,1,18,282,132,150,,-2.22,-6.39,-7.39
+14,Thu,December 7,8:15PM ET,boxscore,L,,7-6,,New England Patriots,18,21,18,264,182,82,1,14,303,222,81,1,-9.55,4.53,2.96
+15,Sat,December 16,4:30PM ET,boxscore,L,,7-7,@,Indianapolis Colts,13,30,13,216,142,74,3,19,372,202,170,,-9.21,-11.18,3.34
+16,Sat,December 23,4:30PM ET,boxscore,W,,8-7,,Cincinnati Bengals,34,11,16,397,284,113,,17,368,309,59,3,15.02,7.25,-1.38
+17,Sun,December 31,4:05PM ET,boxscore,W,,9-7,@,Seattle Seahawks,30,23,25,468,266,202,,17,369,281,88,1,20.36,-7.51,-0.67
+18,Sat,January 6,4:30PM ET,boxscore,W,,10-7,@,Baltimore Ravens,17,10,16,289,134,155,2,13,224,118,106,2,-7.10,12.05,3.24
+,,Playoffs,,,,,,,,,,,,,,,,,,,,,,
+Wild Card,Mon,January 15,4:30PM ET,boxscore,L,,10-8,@,Buffalo Bills,17,31,22,324,218,106,2,24,368,189,179,,-2.33,-16.05,7.99

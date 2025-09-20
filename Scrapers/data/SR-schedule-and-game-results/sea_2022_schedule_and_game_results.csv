@@ -1,0 +1,21 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Mon,September 12,8:20PM ET,boxscore,W,,1-0,,Denver Broncos,17,16,19,253,177,76,1,20,433,330,103,2,4.10,-9.94,6.84
+2,Sun,September 18,4:05PM ET,boxscore,L,,1-1,@,San Francisco 49ers,7,27,14,216,180,36,3,25,373,184,189,,-9.18,-16.39,7.67
+3,Sun,September 25,4:25PM ET,boxscore,L,,1-2,,Atlanta Falcons,23,27,23,420,308,112,1,24,386,207,179,2,15.09,-20.84,-1.20
+4,Sun,October 2,1:00PM ET,boxscore,W,,2-2,@,Detroit Lions,48,45,27,555,320,235,1,27,520,375,145,2,32.93,-22.12,-3.99
+5,Sun,October 9,1:00PM ET,boxscore,L,,2-3,@,New Orleans Saints,32,39,15,396,245,151,1,26,438,203,235,2,4.57,-15.05,0.32
+6,Sun,October 16,4:05PM ET,boxscore,W,,3-3,,Arizona Cardinals,19,9,19,296,160,136,1,15,315,171,144,2,-8.22,14.01,5.25
+7,Sun,October 23,4:25PM ET,boxscore,W,,4-3,@,Los Angeles Chargers,37,23,24,404,191,213,2,21,329,276,53,2,12.13,4.60,-1.10
+8,Sun,October 30,4:25PM ET,boxscore,W,,5-3,,New York Giants,27,13,19,277,190,87,1,14,225,147,78,2,-2.79,10.80,8.31
+9,Sun,November 6,4:05PM ET,boxscore,W,,6-3,@,Arizona Cardinals,31,21,27,421,263,158,1,15,262,140,122,1,10.67,5.02,0.90
+10,Sun,November 13,9:30AM ET,boxscore,L,,6-4,@,Tampa Bay Buccaneers,16,21,19,283,244,39,1,26,419,258,161,2,-0.15,-13.20,7.78
+11,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+12,Sun,November 27,4:05PM ET,boxscore,L,OT,6-5,,Las Vegas Raiders,34,40,22,372,307,65,2,27,576,293,283,2,6.66,-16.24,6.76
+13,Sun,December 4,4:05PM ET,boxscore,W,,7-5,@,Los Angeles Rams,27,23,25,438,348,90,2,20,319,148,171,2,12.57,-4.46,-3.11
+14,Sun,December 11,4:25PM ET,boxscore,L,,7-6,,Carolina Panthers,24,30,16,287,241,46,2,24,328,105,223,,1.49,-9.49,-0.23
+15,Thu,December 15,8:15PM ET,boxscore,L,,7-7,,San Francisco 49ers,13,21,16,277,207,70,1,15,381,211,170,,-11.24,-9.75,8.96
+16,Sat,December 24,1:00PM ET,boxscore,L,,7-8,@,Kansas City Chiefs,10,24,19,333,200,133,1,14,297,220,77,,-11.64,-3.10,2.23
+17,Sun,January 1,4:05PM ET,boxscore,W,,8-8,,New York Jets,23,6,20,346,148,198,,20,279,204,75,3,3.31,16.78,-4.05
+18,Sun,January 8,4:25PM ET,boxscore,W,OT,9-8,,Los Angeles Rams,19,16,22,402,205,197,2,14,269,123,146,1,-3.11,3.80,2.32
+,,Playoffs,,,,,,,,,,,,,,,,,,,,,,
+Wild Card,Sat,January 14,4:30PM ET,boxscore,L,,9-9,@,San Francisco 49ers,23,41,22,332,228,104,2,24,505,324,181,,6.41,-27.60,0.62
