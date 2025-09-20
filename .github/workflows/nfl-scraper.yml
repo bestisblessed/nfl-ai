@@ -33,7 +33,7 @@ jobs:
       run: |
         cd Scrapers
         python ScraperMasterPFR.py
-      continue-on-error: true
+      continue-on-error: false
         
     - name: Check for data files
       run: |
@@ -50,7 +50,6 @@ jobs:
       with:
         name: nfl-data-${{ github.run_number }}
         path: Scrapers/FINAL/
-      if: always()
         
     - name: Commit and push data
       run: |
