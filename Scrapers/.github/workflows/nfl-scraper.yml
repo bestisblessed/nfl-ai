@@ -1,0 +1,44 @@
+name: NFL PFR Scraper
+
+on:
+  schedule:
+    - cron: '0 23 * * 6'     # Run every Saturday at 6 PM EST (11 PM UTC)
+  workflow_dispatch:
+  # push:
+  #   branches: [ main ] # Test on every push to main
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.12'
+        
+    - name: Install dependencies
+      run: |
+        pip install pandas requests beautifulsoup4 numpy lxml
+        
+    - name: Run NFL PFR Scraper
+      run: |
+        python ScraperMasterPFR.py
+      continue-on-error: true
+        
+    - name: Upload data files
+      uses: actions/upload-artifact@v3
+      with:
+        name: nfl-data-${{ github.run_number }}
+        path: FINAL/
+        
+    - name: Commit and push data
+      run: |
+        git config --local user.email "tyler.durette@gmail.com"
+        git config --local user.name "bestisblessed"
+        git add FINAL/
+        git commit -m "Update NFL data - $(date)" || exit 0
+        git push
