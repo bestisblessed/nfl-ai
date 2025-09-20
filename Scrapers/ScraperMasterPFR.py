@@ -11,6 +11,10 @@ final_dir = 'FINAL'
 os.makedirs(final_dir, exist_ok=True)
 start_time = datetime.now()
 
+print("🚀 Starting NFL PFR Scraper...")
+print(f"📅 Scraping years: 2024 only")
+print(f"📁 Output directory: {final_dir}")
+
 # ============================================================================
 # TEAMS DATA
 # ============================================================================
@@ -54,6 +58,7 @@ teams = [
 ]
 df_teams = pd.DataFrame(teams, columns=['TeamID', 'Team', 'Division'])
 df_teams.to_csv(f'{final_dir}/teams.csv', index=False)
+print(f"✅ Created teams.csv with {len(df_teams)} teams")
 
 # ============================================================================
 # TEAM GAME LOGS (2024-2025)
@@ -112,7 +117,7 @@ opponent_game_logs_headers = [
     'first_downs_total', 'third_down_conv', 'third_down_att', 'fourth_down_conv', 'fourth_down_att', 
     'pen', 'pen_yds', 'fumbles_lost', 'turnovers_int', 'turnovers_total', 'time_of_poss'
 ]
-for year in range(2024, 2026):
+for year in range(2024, 2025):
     team_file = f'{data_dir}/all_teams_game_logs_{year}.csv'
     opponent_file = f'{opponent_data_dir}/all_teams_opponent_game_logs_{year}.csv'
     all_team_game_logs = []  
@@ -195,23 +200,30 @@ for year in range(2024, 2026):
         writer = csv.writer(file)
         writer.writerow(team_game_logs_headers + ['team_name'])
         writer.writerows(all_team_game_logs)
+    print(f"✅ Created {team_file} with {len(all_team_game_logs)} team game logs")
+    
     with open(opponent_file, mode='w', newline='', encoding='utf-8') as file:
         writer = csv.writer(file)
         writer.writerow(opponent_game_logs_headers + ['team_name'])
         writer.writerows(all_opponent_game_logs)
+    print(f"✅ Created {opponent_file} with {len(all_opponent_game_logs)} opponent game logs")
 
 # ============================================================================
 # GAMES DATA
 # ============================================================================
 directory = data_dir
 df_list = []
-for filename in os.listdir(directory):
-    if filename.endswith(".csv"):  
-        file_path = os.path.join(directory, filename)
-        season = filename.split('_')[-1].replace('.csv', '')
-        df = pd.read_csv(file_path)
-        df['season'] = season
-        df_list.append(df)
+csv_files_found = [f for f in os.listdir(directory) if f.endswith(".csv")]
+print(f"📁 Found {len(csv_files_found)} CSV files in {directory}: {csv_files_found}")
+
+for filename in csv_files_found:
+    file_path = os.path.join(directory, filename)
+    season = filename.split('_')[-1].replace('.csv', '')
+    df = pd.read_csv(file_path)
+    df['season'] = season
+    df_list.append(df)
+    print(f"📊 Loaded {filename} with {len(df)} rows")
+
 if df_list:
     df = pd.concat(df_list, ignore_index=True)
     team_abbreviation_map = {
@@ -279,7 +291,7 @@ if df_list:
     df['game_id'] = df['season'] + '_' + df['week_num'] + '_' + df['away_team_id'] + '_' + df['home_team_id']
     # Create games data directly without intermediate file
     games_dataframes = []
-    for year in range(2024, 2026):
+    for year in range(2024, 2025):
         year_df = df[df['season'] == str(year)].copy()
         if not year_df.empty:
             year_df['season'] = year
@@ -339,6 +351,7 @@ if df_list:
         comprehensive_games_df.to_csv(f'{final_dir}/game_logs.csv', index=False)
     else:
         # Create empty game_logs.csv if no data
+        print("⚠️ No game data found, creating empty game_logs.csv")
         pd.DataFrame(columns=['game_id', 'season', 'week', 'date', 'home_team', 'away_team', 'home_score', 'away_score', 'game_location', 'result', 'overtime']).to_csv(f'{final_dir}/game_logs.csv', index=False)
 
 # ============================================================================
@@ -350,7 +363,7 @@ games_df_temp['pfr'] = games_df_temp['game_id'].str.replace('_', '').str.lower()
 games_df_temp['pfr_url'] = 'https://www.pro-football-reference.com/boxscores/' + games_df_temp['pfr'] + '.htm'
 games_df_temp.to_csv(f'{final_dir}/game_logs.csv', index=False)
 headers = ['URL', 'Team', '1', '2', '3', '4', 'OT1', 'OT2', 'OT3', 'OT4', 'Final']
-for year_to_scrape in range(2024, 2026):
+for year_to_scrape in range(2024, 2025):
     csv_file_path = f'{final_dir}/SR-box-scores/all_box_scores_{year_to_scrape}.csv'
     games_csv_path = f'{final_dir}/game_logs.csv'
     existing_urls = set()
@@ -415,7 +428,7 @@ else:
 # SCORING TABLES (2024-2025)
 # ============================================================================
 os.makedirs(f'{final_dir}/SR-scoring-tables/', exist_ok=True)
-for year_to_scrape in range(2024, 2026):
+for year_to_scrape in range(2024, 2025):
     output_filename = f'{final_dir}/SR-scoring-tables/all_nfl_scoring_tables_{year_to_scrape}.csv'
     existing_game_ids = set()
     if os.path.exists(output_filename):
@@ -493,7 +506,7 @@ team_stats_headers = [
     'Player', 'PF', 'Yds', 'Ply', 'Y/P', 'TO', 'FL', '1stD', 'Cmp', 'Att', 'Yds', 'TD', 'Int', 'NY/A',
     '1stD', 'Att', 'Yds', 'TD', 'Y/A', '1stD', 'Pen', 'Yds', '1stPy', '#Dr', 'Sc%', 'TO%', 'Start', 'Time', 'Plays', 'Yds', 'Pts', 'Team'
 ]
-for year in range(2024, 2026):
+for year in range(2024, 2025):
     output_file = f'{final_dir}/SR-team-stats/all_teams_stats_{year}.csv'
     if os.path.exists(output_file):
         continue
@@ -565,7 +578,7 @@ schedule_headers = [
     'Opp1stD', 'OppTotYd', 'OppPassY', 'OppRushY', 'TO_won',
     'Offense', 'Defense', 'Sp. Tms'
 ]
-for year in range(2024, 2026):
+for year in range(2024, 2025):
     all_games = []
     for team in pfr_teams:
         abbreviation, name = team
@@ -650,7 +663,7 @@ os.makedirs(f'{final_dir}/SR-team-conversions/', exist_ok=True)
 team_conversions_headers = [
     'Player', '3DAtt', '3DConv', '4DAtt', '4DConv', '4D%', 'RZAtt', 'RZTD', 'RZPct', 'Team'
 ]
-for year in range(2024, 2026):
+for year in range(2024, 2025):
     for team in pfr_teams:
         abbreviation, name = team
         team_file = f'{final_dir}/SR-team-conversions/{abbreviation}_{year}_team_conversions.csv'
@@ -716,7 +729,7 @@ else:
 # PASSING/RUSHING/RECEIVING (2024-2025)
 # ============================================================================
 os.makedirs(f'{final_dir}/SR-passing-rushing-receiving-game-logs/', exist_ok=True)
-for year_to_scrape in range(2024, 2026):
+for year_to_scrape in range(2024, 2025):
     output_filename = f'{final_dir}/SR-passing-rushing-receiving-game-logs/all_passing_rushing_receiving_{year_to_scrape}.csv'
     existing_game_ids = set()
     if os.path.exists(output_filename):
@@ -813,7 +826,7 @@ headers = [
     'tackles_combined', 'tackles_solo', 'tackles_assists', 'tackles_loss', 'qb_hits', 'fumbles_rec',
     'fumbles_rec_yds', 'fumbles_rec_td', 'fumbles_forced', 'game_id'
 ]
-for year_to_scrape in range(2024, 2026):
+for year_to_scrape in range(2024, 2025):
     output_filename = f'{final_dir}/SR-defense-game-logs/all_defense_{year_to_scrape}.csv'
     existing_game_ids = set()
     if os.path.exists(output_filename):
@@ -875,7 +888,7 @@ for year_to_scrape in range(2024, 2026):
                     else:
                         break
             time.sleep(2.5)
-for year in range(2024, 2026):
+for year in range(2024, 2025):
     file_path = f'{final_dir}/SR-defense-game-logs/all_defense_{year}.csv'
     try:
         if os.path.exists(file_path):
