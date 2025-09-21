@@ -34,7 +34,7 @@
 # **Defense Game Logs**
 # Scrapes defensive statistics for players in each game and saves the data to CSV files.
 
-# **Note: This scraper focuses on seasons 2018-2025**
+# **Note: This scraper focuses on seasons 2024-2025**
   
 
 import pandas as pd
@@ -114,7 +114,7 @@ if response.ok:
 else:
     raise Exception(f"Failed to download the file. Status code: {response.status_code}")
 df = pd.read_csv('./data/games.csv')
-df = df[df['season'] >= 2018]
+df = df[df['season'] >= 2024]
 standardize_mapping = {
     'OAK': 'LVR',  
     'SD': 'LAC',   
@@ -150,7 +150,7 @@ df_selected.to_csv('./data/games.csv', index=False)
 
 ##### Create 'PlayerStats' in nfl.db #####
 dataframes = []
-for year in range(2018, 2026):
+for year in range(2024, 2026):
     file_path = os.path.join('./data/player-stats/', f"player_stats_{year}.csv")
     # Always download current year player stats even if file exists
     url = f"https://github.com/nflverse/nflverse-data/releases/download/player_stats/player_stats_{year}.csv"
@@ -238,8 +238,8 @@ conn.close()
 print("Player stats saved to 'PlayerStats' table in nfl.db")
 
 
-##### Create 'Rosters' in nfl.db (2018-2025) #####
-for year in range(2018, 2026):
+##### Create 'Rosters' in nfl.db (2024-2025) #####
+for year in range(2024, 2026):
     file_path = f"./data/rosters/roster_{year}.csv"
     # Always download current year roster data even if it exists
     url = f"https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_{year}.csv"
@@ -251,7 +251,7 @@ for year in range(2018, 2026):
     else:
         print(f"Failed to download data for the year {year}")
 dataframes = []
-for year in range(2018, 2026):
+for year in range(2024, 2026):
     file_path = f'./data/rosters/roster_{year}.csv'
     if os.path.exists(file_path):
         df = pd.read_csv(file_path)
@@ -340,26 +340,30 @@ for idx, team in enumerate(standardized_team_list_sorted, 1):
 rosters_df.to_csv('data/rosters.csv', index=False)
 
 
-##### Scrape Box Scores (2018-2025) #####
+##### Scrape Box Scores (2024-2025) #####
 print("\n" + "*"*80 + "\n")
 os.makedirs('./data/SR-box-scores/', exist_ok=True)
 df = pd.read_csv('./data/games.csv')
 df['pfr_url'] = 'https://www.pro-football-reference.com/boxscores/' + df['pfr'] + '.htm'
 df.to_csv('./data/games.csv', index=False)
-csv_file_path = 'data/SR-box-scores/all_box_scores.csv'
+# csv_file_path = 'data/SR-box-scores/all_box_scores.csv'
 games_csv_path = 'data/games.csv'
 headers = ['URL', 'Team', '1', '2', '3', '4', 'OT1', 'OT2', 'OT3', 'OT4', 'Final']
-existing_urls = set()
-if os.path.exists(csv_file_path):
-    with open(csv_file_path, 'r') as csvfile:
-        reader = csv.DictReader(csvfile)
-        for row in reader:
-            existing_urls.add(row['URL'])
-with open(csv_file_path, 'a', newline='') as csvfile:
-    score_writer = csv.writer(csvfile)
-    if os.path.getsize(csv_file_path) == 0:
-        score_writer.writerow(headers)  
-    for year_to_scrape in range(2018, 2026):
+
+for year_to_scrape in range(2024, 2026):
+    output_filename = f'./data/SR-box-scores/all_box_scores_{year_to_scrape}.csv'
+    existing_urls = set()
+    if os.path.exists(output_filename):
+        df_existing = pd.read_csv(output_filename)
+        if 'URL' in df_existing.columns:
+            existing_urls = set(df_existing['URL'].unique())
+    
+    mode = 'a' if os.path.exists(output_filename) else 'w'
+    with open(output_filename, mode, newline='') as csvfile:
+        score_writer = csv.writer(csvfile)
+        if mode == 'w':
+            score_writer.writerow(headers)
+        
         game_urls = []
         with open(games_csv_path, 'r') as csvfile:
             reader = csv.DictReader(csvfile)
@@ -371,6 +375,7 @@ with open(csv_file_path, 'a', newline='') as csvfile:
                     continue
                 if row['season'] == str(year_to_scrape) and game_dt <= now_dt:
                     game_urls.append(row['pfr_url'])
+        
         for url in game_urls:
             if url in existing_urls:
                 print(f"Skipping already scraped game: {url}")
@@ -398,7 +403,7 @@ with open(csv_file_path, 'a', newline='') as csvfile:
             except Exception as e:
                 print(f"Error scraping {url}: {e}")
             time.sleep(2.5)
-print(f"Scraping complete. The data has been saved to {csv_file_path}.")
+    print(f"Scraping completed for {year_to_scrape}. Box scores saved to {output_filename}.")
 
 
 ##### Merge Box Scores #####
@@ -425,9 +430,9 @@ df = df.apply(shift_to_final, axis=1)
 df.to_csv('data/all_box_scores.csv', index=False)
 
 
-##### Scrape Scoring Tables/Touchdown Logs (2018-2025) #####
+##### Scrape Scoring Tables/Touchdown Logs (2024-2025) #####
 print("\n" + "*"*80 + "\n")
-for year_to_scrape in range(2018, 2026):
+for year_to_scrape in range(2024, 2026):
     output_filename = f'./data/SR-scoring-tables/all_nfl_scoring_tables_{year_to_scrape}.csv'
     existing_game_ids = set()
     if os.path.exists(output_filename):
@@ -502,7 +507,7 @@ merged_dataframe.to_csv(output_file, index=False)
 print(f"Merged dataset saved as {output_file}")
 
 
-##### Scrape Team Game Logs (2018-2025) #####
+##### Scrape Team Game Logs (2024-2025) #####
 print("\n" + "*"*80 + "\n")
 data_dir = './data/SR-game-logs'
 os.makedirs(data_dir, exist_ok=True)
@@ -589,7 +594,7 @@ opponent_game_logs_headers = [
     # 'pass_cmp_perc', 'pass_rating', 'rush_att', 'rush_yds', 'rush_yds_per_att', 'rush_td', 
     # 'fgm', 'fga', 'xpm', 'xpa', 'punt', 'punt_yds', 'third_down_success', 'third_down_att', 
     # 'fourth_down_success', 'fourth_down_att', 'time_of_poss', 'Team_Name'
-for year in range(2018, 2026):
+for year in range(2024, 2026):
     team_file = f'./data/SR-game-logs/all_teams_game_logs_{year}.csv'
     opponent_file = f'./data/SR-opponent-game-logs/all_teams_opponent_game_logs_{year}.csv'
     # Always process current year team game logs even if files exist
@@ -878,7 +883,7 @@ team_stats_headers = [
     'Player', 'PF', 'Yds', 'Ply', 'Y/P', 'TO', 'FL', '1stD', 'Cmp', 'Att', 'Yds', 'TD', 'Int', 'NY/A',
     '1stD', 'Att', 'Yds', 'TD', 'Y/A', '1stD', 'Pen', 'Yds', '1stPy', '#Dr', 'Sc%', 'TO%', 'Start', 'Time', 'Plays', 'Yds', 'Pts', 'Team'
 ]
-for year in range(2018, 2026):
+for year in range(2024, 2026):
     output_file = f'{data_dir}/all_teams_stats_{year}.csv'
     if os.path.exists(output_file):
         print(f"Skipping year {year}, file already exists.")
@@ -995,7 +1000,7 @@ schedule_headers = [
     'Opp1stD', 'OppTotYd', 'OppPassY', 'OppRushY', 'TO_won',
     'Offense', 'Defense', 'Sp. Tms'
 ]
-for year in range(2018, 2026):
+for year in range(2024, 2026):
     all_games = []  
     for team in teams:
         abbreviation, name = team
@@ -1143,7 +1148,7 @@ team_conversions_headers = [
     'Player', '3DAtt', '3DConv', '4DAtt', '4DConv', '4D%', 'RZAtt', 'RZTD', 'RZPct', 'Team'
     # 'Player', '3DAtt', '3DConv', '3D%', '4DAtt', '4DConv', '4D%', 'RZAtt', 'RZTD', 'RZPct', 'Team'
 ]
-for year in range(2018, 2026):
+for year in range(2024, 2026):
     for team in teams:
         abbreviation, name = team
         team_file = f'{data_dir}/{abbreviation}_{year}_team_conversions.csv'
@@ -1249,7 +1254,7 @@ print("Columns 'home_spread', 'away_spread', 'team_favorite', and 'team_covered'
 ##### Passing/Rushing/Receiving #####
 print("\n" + "*"*80 + "\n")
 os.makedirs('./data/SR-passing-rushing-receiving-game-logs/', exist_ok=True)
-for year_to_scrape in range(2018, 2026):
+for year_to_scrape in range(2024, 2026):
     output_filename = f'./data/SR-passing-rushing-receiving-game-logs/all_passing_rushing_receiving_{year_to_scrape}.csv'
     existing_game_ids = set()
     if os.path.exists(output_filename):
@@ -1425,7 +1430,7 @@ headers = [
     'tackles_combined', 'tackles_solo', 'tackles_assists', 'tackles_loss', 'qb_hits', 'fumbles_rec',
     'fumbles_rec_yds', 'fumbles_rec_td', 'fumbles_forced', 'game_id'
 ]
-for year_to_scrape in range(2018, 2026):
+for year_to_scrape in range(2024, 2026):
     output_filename = f'./data/SR-defense-game-logs/all_defense_{year_to_scrape}.csv'
     existing_game_ids = set()
     if os.path.exists(output_filename):
@@ -1492,10 +1497,10 @@ for year_to_scrape in range(2018, 2026):
                 time.sleep(2.5)
     print(f"Scraping completed for {year_to_scrape}. Data saved to {output_filename}.")
 
-# df = pd.read_csv('./data/defense-game-logs/all_defense_2018.csv')
+# df = pd.read_csv('./data/defense-game-logs/all_defense_2024.csv')
 # df.dropna(inplace=True)
-# df.to_csv('./data/defense-game-logs/all_defense_2018.csv', index=False)
-for year in range(2018, 2026):
+# df.to_csv('./data/defense-game-logs/all_defense_2024.csv', index=False)
+for year in range(2024, 2026):
     file_path = f'./data/SR-defense-game-logs/all_defense_{year}.csv'
     try:
         df = pd.read_csv(file_path)
@@ -1522,13 +1527,13 @@ if not os.path.exists(final_dir):
     os.makedirs(final_dir)
 current_date = datetime.now().strftime("%b_%d_%Y").upper()
 print("Regenerating final files with all available historical data...")
-games_df = pd.read_csv('data/games.csv') # Games: Load from data/games.csv (contains 2018-2025)
+games_df = pd.read_csv('data/games.csv') # Games: Load from data/games.csv (contains 2024-2025)
 games_df.to_csv(f"{final_dir}/Games_{current_date}.csv", index=False)
 print(f"Regenerated Games: {len(games_df)} total games")
-player_stats_df = pd.read_csv('data/player_stats.csv') # PlayerStats: Load from data/player_stats.csv (contains 2018-current year)
+player_stats_df = pd.read_csv('data/player_stats.csv') # PlayerStats: Load from data/player_stats.csv (contains 2024-current year)
 player_stats_df.to_csv(f"{final_dir}/PlayerStats_{current_date}.csv", index=False)
 print(f"Regenerated PlayerStats: {len(player_stats_df)} total records")
-rosters_df = pd.read_csv('data/rosters.csv') # Rosters: Load from data/rosters.csv (contains 2018-2025)
+rosters_df = pd.read_csv('data/rosters.csv') # Rosters: Load from data/rosters.csv (contains 2024-2025)
 rosters_df.to_csv(f"{final_dir}/Rosters_{current_date}.csv", index=False)
 print(f"Regenerated Rosters: {len(rosters_df)} total records")
 db_path = 'nfl.db' # Teams: Static data, load from database
