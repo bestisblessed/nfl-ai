@@ -114,7 +114,7 @@ if response.ok:
 else:
     raise Exception(f"Failed to download the file. Status code: {response.status_code}")
 df = pd.read_csv('./data/games.csv')
-df = df[df['season'] >= 2025]
+df = df[df['season'] >= 2018]
 standardize_mapping = {
     'OAK': 'LVR',  
     'SD': 'LAC',   
@@ -150,7 +150,7 @@ df_selected.to_csv('./data/games.csv', index=False)
 
 ##### Create 'PlayerStats' in nfl.db #####
 dataframes = []
-for year in range(2025, 2026):
+for year in range(2018, 2026):
     file_path = os.path.join('./data/player-stats/', f"player_stats_{year}.csv")
     # Always download current year player stats even if file exists
     url = f"https://github.com/nflverse/nflverse-data/releases/download/player_stats/player_stats_{year}.csv"
@@ -238,8 +238,8 @@ conn.close()
 print("Player stats saved to 'PlayerStats' table in nfl.db")
 
 
-##### Create 'Rosters' in nfl.db (2025-2025) #####
-for year in range(2025, 2026):
+##### Create 'Rosters' in nfl.db (2018-2025) #####
+for year in range(2018, 2026):
     file_path = f"./data/rosters/roster_{year}.csv"
     # Always download current year roster data even if it exists
     url = f"https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_{year}.csv"
@@ -251,7 +251,7 @@ for year in range(2025, 2026):
     else:
         print(f"Failed to download data for the year {year}")
 dataframes = []
-for year in range(2025, 2026):
+for year in range(2018, 2026):
     file_path = f'./data/rosters/roster_{year}.csv'
     if os.path.exists(file_path):
         df = pd.read_csv(file_path)
