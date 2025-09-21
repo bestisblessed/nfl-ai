@@ -19,9 +19,9 @@ jobs:
           python3 -m pip install -U pip
           python3 -m pip install pandas requests beautifulsoup4 lxml
       - name: Execute scraper
-        run: python3 ScraperMasterPFR.py
+        run: python3 Scrapers/ScraperMasterPFR.py
       - name: Upload results
         uses: actions/upload-artifact@v4
         with:
           name: nfl-scraper-output
-          path: FINAL/**
+          path: Scrapers/FINAL/**
