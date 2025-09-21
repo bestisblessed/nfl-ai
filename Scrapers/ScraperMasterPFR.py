@@ -23,6 +23,15 @@ print("🚀 Starting NFL PFR Scraper...")
 print(f"📅 Scraping years: 2023-2025")
 print(f"📁 Output directory: {final_dir}")
 
+# Consistent headers and polite UA
+UA = {
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/126 Safari/537.36"
+    )
+}
+
 # ============================================================================
 # TEAMS DATA
 # ============================================================================
@@ -71,150 +80,257 @@ print(f"✅ Created teams.csv with {len(df_teams)} teams")
 # ============================================================================
 # TEAM GAME LOGS (2023-2025)
 # ============================================================================
+# data_dir = f'{final_dir}/SR-game-logs'
+# os.makedirs(data_dir, exist_ok=True)
+# opponent_data_dir = f'{final_dir}/SR-opponent-game-logs'
+# os.makedirs(opponent_data_dir, exist_ok=True)
+# pfr_teams = [
+#     ['crd', 'Arizona Cardinals'],
+#     ['atl', 'Atlanta Falcons'],
+#     ['rav', 'Baltimore Ravens'],
+#     ['buf', 'Buffalo Bills'],
+#     ['car', 'Carolina Panthers'],
+#     ['chi', 'Chicago Bears'],
+#     ['cin', 'Cincinnati Bengals'],
+#     ['cle', 'Cleveland Browns'],
+#     ['dal', 'Dallas Cowboys'],
+#     ['den', 'Denver Broncos'],
+#     ['det', 'Detroit Lions'],
+#     ['gnb', 'Green Bay Packers'],
+#     ['htx', 'Houston Texans'],
+#     ['clt', 'Indianapolis Colts'],
+#     ['jax', 'Jacksonville Jaguars'],
+#     ['kan', 'Kansas City Chiefs'],
+#     ['sdg', 'Los Angeles Chargers'],
+#     ['ram', 'Los Angeles Rams'],
+#     ['rai', 'Las Vegas Raiders'],
+#     ['mia', 'Miami Dolphins'],
+#     ['min', 'Minnesota Vikings'],
+#     ['nwe', 'New England Patriots'],
+#     ['nor', 'New Orleans Saints'],
+#     ['nyg', 'New York Giants'],
+#     ['nyj', 'New York Jets'],
+#     ['phi', 'Philadelphia Eagles'],
+#     ['pit', 'Pittsburgh Steelers'],
+#     ['sea', 'Seattle Seahawks'],
+#     ['sfo', 'San Francisco 49ers'],
+#     ['tam', 'Tampa Bay Buccaneers'],
+#     ['oti', 'Tennessee Titans'],
+#     ['was', 'Washington Commanders']
+# ]
+# team_game_logs_headers = [
+#     'rk', 'gtm', 'week', 'date', 'day', 'game_location', 'opp', 'result', 'pts', 'pts_opp', 'ot', 
+#     'pass_cmp', 'pass_att', 'pass_cmp_pct', 'pass_yds', 'pass_td', 'pass_ya', 'pass_aya', 'pass_rate', 
+#     'pass_sk', 'pass_sk_yds', 'rush_att', 'rush_yds', 'rush_td', 'rush_ya', 'plays', 'total_yds', 'ypp',
+#     'fga', 'fgm', 'xpa', 'xpm', 'punt', 'punt_yds', 'first_downs_pass', 'first_downs_rush', 'first_downs_pen',
+#     'first_downs_total', 'third_down_conv', 'third_down_att', 'fourth_down_conv', 'fourth_down_att', 
+#     'pen', 'pen_yds', 'fumbles_lost', 'turnovers_int', 'turnovers_total', 'time_of_poss'
+# ]
+# opponent_game_logs_headers = [
+#     'rk', 'gtm', 'week', 'date', 'day', 'game_location', 'opp', 'result', 'pts', 'pts_opp', 'ot', 
+#     'pass_cmp', 'pass_att', 'pass_cmp_pct', 'pass_yds', 'pass_td', 'pass_ya', 'pass_aya', 'pass_rate', 
+#     'pass_sk', 'pass_sk_yds', 'rush_att', 'rush_yds', 'rush_td', 'rush_ya', 'plays', 'total_yds', 'ypp',
+#     'fga', 'fgm', 'xpa', 'xpm', 'punt', 'punt_yds', 'first_downs_pass', 'first_downs_rush', 'first_downs_pen',
+#     'first_downs_total', 'third_down_conv', 'third_down_att', 'fourth_down_conv', 'fourth_down_att', 
+#     'pen', 'pen_yds', 'fumbles_lost', 'turnovers_int', 'turnovers_total', 'time_of_poss'
+# ]
+# for year in range(2023, 2026):
+#     team_file = f'{data_dir}/all_teams_game_logs_{year}.csv'
+#     opponent_file = f'{opponent_data_dir}/all_teams_opponent_game_logs_{year}.csv'
+#     all_team_game_logs = []  
+#     all_opponent_game_logs = []
+#     for team in pfr_teams:
+#         abbreviation, name = team
+#         url = f'https://www.pro-football-reference.com/teams/{abbreviation}/{year}/gamelog/'
+#         max_retries = 3
+#         retry_delay = 10
+#         for attempt in range(max_retries):
+#             try:
+#                 response = requests.get(url)
+#                 if response.status_code == 429:
+#                     sleep(retry_delay)
+#                     retry_delay *= 2  
+#                     continue
+#                 elif response.status_code != 200:
+#                     break
+#                 else:
+#                     break
+#             except Exception as e:
+#                 if attempt < max_retries - 1:
+#                     sleep(retry_delay)
+#                     retry_delay *= 2
+#                     continue
+#                 else:
+#                     break
+#         if response.status_code != 200:
+#             continue
+#         soup = BeautifulSoup(response.content, 'html.parser')
+#         warned_team_short = False
+#         warned_opp_short = False
+#         for table_id in ['table_pfr_team-year_game-logs_team-year-regular-season-game-log', 'table_pfr_team-year_game-logs_team-year-regular-season-opponent-game-log']:
+#             table = soup.find('table', {'id': table_id})
+#             if table is None:
+#                 print(f'Table with id {table_id} not found on page {url} for {name} in {year}')
+#                 continue
+#             tbody = table.find('tbody')
+#             if tbody is None:
+#                 print(f'No tbody found for table {table_id} on page {url} for {name} in {year}')
+#                 continue
+#             game_logs = []
+#             for tr in tbody.find_all('tr'):
+#                 row_data = []  
+#                 for td in tr.find_all(['th', 'td']):  
+#                     row_data.append(td.text)
+#                 if len(row_data) > 0:
+#                     if table_id == 'table_pfr_team-year_game-logs_team-year-regular-season-game-log':
+#                         if len(row_data) == 48:  
+#                             row_data.append(name)  
+#                             game_logs.append(row_data)
+#                         else:
+#                             if not warned_team_short:
+#                                 print(f"Warning: Team game log row has {len(row_data)} cells but expected 48")
+#                                 warned_team_short = True
+#                     elif table_id == 'table_pfr_team-year_game-logs_team-year-regular-season-opponent-game-log':
+#                         if len(row_data) == 48:  
+#                             row_data.append(name)  
+#                             all_opponent_game_logs.append(row_data)
+#                         else:
+#                             if not warned_opp_short:
+#                                 print(f"Warning: Opponent game log row has {len(row_data)} cells but expected 48")
+#                                 warned_opp_short = True
+#             if table_id == 'table_pfr_team-year_game-logs_team-year-regular-season-game-log':
+#                 all_team_game_logs.extend(game_logs)
+#             playoff_table_id = f'playoff_gamelog{year}'
+#             playoff_table = soup.find('table', {'id': playoff_table_id})
+#             if playoff_table:
+#                 playoff_tbody = playoff_table.find('tbody')
+#                 playoff_game_logs = []
+#                 for tr in playoff_tbody.find_all('tr'):
+#                     row_data = []  
+#                     for td in tr.find_all(['th', 'td']):  
+#                         row_data.append(td.text)
+#                     row_data.append(name)  
+#                     playoff_game_logs.append(row_data)
+#                 all_team_game_logs.extend(playoff_game_logs)
+#         sleep(2.5)  
+#     with open(team_file, mode='w', newline='', encoding='utf-8') as file:
+#         writer = csv.writer(file)
+#         writer.writerow(team_game_logs_headers + ['team_name'])
+#         writer.writerows(all_team_game_logs)
+#     print(f"✅ Created {team_file} with {len(all_team_game_logs)} team game logs")
+    
+#     with open(opponent_file, mode='w', newline='', encoding='utf-8') as file:
+#         writer = csv.writer(file)
+#         writer.writerow(opponent_game_logs_headers + ['team_name'])
+#         writer.writerows(all_opponent_game_logs)
+#     print(f"✅ Created {opponent_file} with {len(all_opponent_game_logs)} opponent game logs")
+
+
+# ---------------------------------------------------------------------
+# TEAM GAME LOGS (2023–2025) — fixed to parse comment-hidden tables
+# ---------------------------------------------------------------------
 data_dir = f'{final_dir}/SR-game-logs'
 os.makedirs(data_dir, exist_ok=True)
 opponent_data_dir = f'{final_dir}/SR-opponent-game-logs'
 os.makedirs(opponent_data_dir, exist_ok=True)
-pfr_teams = [
-    ['crd', 'Arizona Cardinals'],
-    ['atl', 'Atlanta Falcons'],
-    ['rav', 'Baltimore Ravens'],
-    ['buf', 'Buffalo Bills'],
-    ['car', 'Carolina Panthers'],
-    ['chi', 'Chicago Bears'],
-    ['cin', 'Cincinnati Bengals'],
-    ['cle', 'Cleveland Browns'],
-    ['dal', 'Dallas Cowboys'],
-    ['den', 'Denver Broncos'],
-    ['det', 'Detroit Lions'],
-    ['gnb', 'Green Bay Packers'],
-    ['htx', 'Houston Texans'],
-    ['clt', 'Indianapolis Colts'],
-    ['jax', 'Jacksonville Jaguars'],
-    ['kan', 'Kansas City Chiefs'],
-    ['sdg', 'Los Angeles Chargers'],
-    ['ram', 'Los Angeles Rams'],
-    ['rai', 'Las Vegas Raiders'],
-    ['mia', 'Miami Dolphins'],
-    ['min', 'Minnesota Vikings'],
-    ['nwe', 'New England Patriots'],
-    ['nor', 'New Orleans Saints'],
-    ['nyg', 'New York Giants'],
-    ['nyj', 'New York Jets'],
-    ['phi', 'Philadelphia Eagles'],
-    ['pit', 'Pittsburgh Steelers'],
-    ['sea', 'Seattle Seahawks'],
-    ['sfo', 'San Francisco 49ers'],
-    ['tam', 'Tampa Bay Buccaneers'],
-    ['oti', 'Tennessee Titans'],
-    ['was', 'Washington Commanders']
-]
 team_game_logs_headers = [
-    'rk', 'gtm', 'week', 'date', 'day', 'game_location', 'opp', 'result', 'pts', 'pts_opp', 'ot', 
-    'pass_cmp', 'pass_att', 'pass_cmp_pct', 'pass_yds', 'pass_td', 'pass_ya', 'pass_aya', 'pass_rate', 
-    'pass_sk', 'pass_sk_yds', 'rush_att', 'rush_yds', 'rush_td', 'rush_ya', 'plays', 'total_yds', 'ypp',
-    'fga', 'fgm', 'xpa', 'xpm', 'punt', 'punt_yds', 'first_downs_pass', 'first_downs_rush', 'first_downs_pen',
-    'first_downs_total', 'third_down_conv', 'third_down_att', 'fourth_down_conv', 'fourth_down_att', 
-    'pen', 'pen_yds', 'fumbles_lost', 'turnovers_int', 'turnovers_total', 'time_of_poss'
+    'rk','gtm','week','date','day','game_location','opp','result','pts','pts_opp','ot',
+    'pass_cmp','pass_att','pass_cmp_pct','pass_yds','pass_td','pass_ya','pass_aya','pass_rate',
+    'pass_sk','pass_sk_yds','rush_att','rush_yds','rush_td','rush_ya','plays','total_yds','ypp',
+    'fga','fgm','xpa','xpm','punt','punt_yds','first_downs_pass','first_downs_rush','first_downs_pen',
+    'first_downs_total','third_down_conv','third_down_att','fourth_down_conv','fourth_down_att',
+    'pen','pen_yds','fumbles_lost','turnovers_int','turnovers_total','time_of_poss'
 ]
-opponent_game_logs_headers = [
-    'rk', 'gtm', 'week', 'date', 'day', 'game_location', 'opp', 'result', 'pts', 'pts_opp', 'ot', 
-    'pass_cmp', 'pass_att', 'pass_cmp_pct', 'pass_yds', 'pass_td', 'pass_ya', 'pass_aya', 'pass_rate', 
-    'pass_sk', 'pass_sk_yds', 'rush_att', 'rush_yds', 'rush_td', 'rush_ya', 'plays', 'total_yds', 'ypp',
-    'fga', 'fgm', 'xpa', 'xpm', 'punt', 'punt_yds', 'first_downs_pass', 'first_downs_rush', 'first_downs_pen',
-    'first_downs_total', 'third_down_conv', 'third_down_att', 'fourth_down_conv', 'fourth_down_att', 
-    'pen', 'pen_yds', 'fumbles_lost', 'turnovers_int', 'turnovers_total', 'time_of_poss'
-]
+opponent_game_logs_headers = team_game_logs_headers[:]  # same shape
 for year in range(2023, 2026):
     team_file = f'{data_dir}/all_teams_game_logs_{year}.csv'
     opponent_file = f'{opponent_data_dir}/all_teams_opponent_game_logs_{year}.csv'
-    all_team_game_logs = []  
+    all_team_game_logs = []
     all_opponent_game_logs = []
-    for team in pfr_teams:
-        abbreviation, name = team
-        url = f'https://www.pro-football-reference.com/teams/{abbreviation}/{year}/gamelog/'
-        max_retries = 3
-        retry_delay = 10
+    for abbr, name in pfr_teams:
+        url = f'https://www.pro-football-reference.com/teams/{abbr}/{year}/gamelog/'
+        # basic retry with exponential backoff and UA
+        max_retries, retry_delay = 3, 10
+        response = None
         for attempt in range(max_retries):
             try:
-                response = requests.get(url)
+                response = requests.get(url, headers=UA, timeout=30)
                 if response.status_code == 429:
-                    sleep(retry_delay)
-                    retry_delay *= 2  
-                    continue
-                elif response.status_code != 200:
-                    break
-                else:
-                    break
+                    print(f"429 at {url}; sleeping {retry_delay}s")
+                    sleep(retry_delay); retry_delay *= 2; continue
+                response.raise_for_status()
+                break
             except Exception as e:
                 if attempt < max_retries - 1:
-                    sleep(retry_delay)
-                    retry_delay *= 2
-                    continue
-                else:
-                    break
-        if response.status_code != 200:
+                    sleep(retry_delay); retry_delay *= 2; continue
+                response = None
+        if response is None or response.status_code != 200:
+            print(f"[skip] {name} {year}: failed to load {url}")
             continue
-        soup = BeautifulSoup(response.content, 'html.parser')
-        warned_team_short = False
-        warned_opp_short = False
-        for table_id in ['table_pfr_team-year_game-logs_team-year-regular-season-game-log', 'table_pfr_team-year_game-logs_team-year-regular-season-opponent-game-log']:
-            table = soup.find('table', {'id': table_id})
-            if table is None:
-                print(f'Table with id {table_id} not found on page {url} for {name} in {year}')
-                continue
-            tbody = table.find('tbody')
-            if tbody is None:
-                print(f'No tbody found for table {table_id} on page {url} for {name} in {year}')
-                continue
-            game_logs = []
-            for tr in tbody.find_all('tr'):
-                row_data = []  
-                for td in tr.find_all(['th', 'td']):  
-                    row_data.append(td.text)
-                if len(row_data) > 0:
-                    if table_id == 'table_pfr_team-year_game-logs_team-year-regular-season-game-log':
-                        if len(row_data) == 48:  
-                            row_data.append(name)  
-                            game_logs.append(row_data)
-                        else:
-                            if not warned_team_short:
-                                print(f"Warning: Team game log row has {len(row_data)} cells but expected 48")
-                                warned_team_short = True
-                    elif table_id == 'table_pfr_team-year_game-logs_team-year-regular-season-opponent-game-log':
-                        if len(row_data) == 48:  
-                            row_data.append(name)  
-                            all_opponent_game_logs.append(row_data)
-                        else:
-                            if not warned_opp_short:
-                                print(f"Warning: Opponent game log row has {len(row_data)} cells but expected 48")
-                                warned_opp_short = True
-            if table_id == 'table_pfr_team-year_game-logs_team-year-regular-season-game-log':
-                all_team_game_logs.extend(game_logs)
-            playoff_table_id = f'playoff_gamelog{year}'
-            playoff_table = soup.find('table', {'id': playoff_table_id})
-            if playoff_table:
-                playoff_tbody = playoff_table.find('tbody')
-                playoff_game_logs = []
-                for tr in playoff_tbody.find_all('tr'):
-                    row_data = []  
-                    for td in tr.find_all(['th', 'td']):  
-                        row_data.append(td.text)
-                    row_data.append(name)  
-                    playoff_game_logs.append(row_data)
-                all_team_game_logs.extend(playoff_game_logs)
-        sleep(2.5)  
-    with open(team_file, mode='w', newline='', encoding='utf-8') as file:
-        writer = csv.writer(file)
-        writer.writerow(team_game_logs_headers + ['team_name'])
-        writer.writerows(all_team_game_logs)
+
+        # PFR hides the tables in HTML comments. Pull only fragments that contain the ids.
+        soup_page = BeautifulSoup(response.text, 'lxml')
+        comments = soup_page.find_all(string=lambda x: isinstance(x, Comment))
+        inner = ''.join(c for c in comments if f"gamelog{year}" in c or f"opp_gamelog{year}" in c)
+        if not inner:
+            print(f"[warn] No commented tables for {name} {year} at {url}")
+            continue
+        soup_tables = BeautifulSoup(inner, 'lxml')
+
+        team_tbl = soup_tables.find('table', id=f'gamelog{year}')
+        opp_tbl  = soup_tables.find('table', id=f'opp_gamelog{year}')
+
+        # harvest team table
+        if team_tbl and team_tbl.find('tbody'):
+            for tr in team_tbl.find('tbody').find_all('tr'):
+                cls = tr.get('class') or []
+                if 'thead' in cls:
+                    continue
+                row = [td.get_text(strip=True) for td in tr.find_all(['th','td'])]
+                if not row:
+                    continue
+                # normalize length to headers
+                if len(row) < len(team_game_logs_headers):
+                    row = row + [''] * (len(team_game_logs_headers) - len(row))
+                elif len(row) > len(team_game_logs_headers):
+                    row = row[:len(team_game_logs_headers)]
+                row.append(name)
+                all_team_game_logs.append(row)
+        else:
+            print(f"[warn] Missing team table for {name} {year}")
+
+        # harvest opponent table
+        if opp_tbl and opp_tbl.find('tbody'):
+            for tr in opp_tbl.find('tbody').find_all('tr'):
+                cls = tr.get('class') or []
+                if 'thead' in cls:
+                    continue
+                row = [td.get_text(strip=True) for td in tr.find_all(['th','td'])]
+                if not row:
+                    continue
+                if len(row) < len(opponent_game_logs_headers):
+                    row = row + [''] * (len(opponent_game_logs_headers) - len(row))
+                elif len(row) > len(opponent_game_logs_headers):
+                    row = row[:len(opponent_game_logs_headers)]
+                row.append(name)
+                all_opponent_game_logs.append(row)
+        else:
+            print(f"[warn] Missing opponent table for {name} {year}")
+        sleep(1.5)
+    with open(team_file, 'w', newline='', encoding='utf-8') as f:
+        w = csv.writer(f)
+        w.writerow(team_game_logs_headers + ['team_name'])
+        w.writerows(all_team_game_logs)
     print(f"✅ Created {team_file} with {len(all_team_game_logs)} team game logs")
-    
-    with open(opponent_file, mode='w', newline='', encoding='utf-8') as file:
-        writer = csv.writer(file)
-        writer.writerow(opponent_game_logs_headers + ['team_name'])
-        writer.writerows(all_opponent_game_logs)
+
+    with open(opponent_file, 'w', newline='', encoding='utf-8') as f:
+        w = csv.writer(f)
+        w.writerow(opponent_game_logs_headers + ['team_name'])
+        w.writerows(all_opponent_game_logs)
     print(f"✅ Created {opponent_file} with {len(all_opponent_game_logs)} opponent game logs")
+
+
+
 
 # ============================================================================
 # GAMES DATA
