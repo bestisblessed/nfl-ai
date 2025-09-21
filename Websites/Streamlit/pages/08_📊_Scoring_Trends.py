@@ -389,17 +389,13 @@ with col2:
     # Most vulnerable by position section - use narrower container
     # st.markdown('<h2 class="section-header">Most Vulnerable by Position</h2>', unsafe_allow_html=True)
     st.write('####')
-    
-    # Create centered container for 2x2 layout
-    center_col1, center_col2, center_col3 = st.columns([1, 4, 1])
-    
-    with center_col2:
-        # Create 2x2 layout directly without nested columns
-        positions = ["QB", "WR", "TE", "RB"]
-        
-        # Create two rows for 2x2 layout with minimal gaps
-        row1_col1, row1_col2 = st.columns([1, 1], gap="small")
-        row2_col1, row2_col2 = st.columns([1, 1], gap="small")
+
+    # Create 2x2 layout directly without nested columns
+    positions = ["QB", "WR", "TE", "RB"]
+
+    # Create two rows for 2x2 layout with minimal gaps
+    row1_col1, row1_col2 = st.columns([1, 1], gap="small")
+    row2_col1, row2_col2 = st.columns([1, 1], gap="small")
     
         # Define which column each position goes to
         position_columns = [
