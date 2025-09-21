@@ -1,186 +1,381 @@
-# <iframe src="https://claude.site/public/artifacts/1ca9aa13-a81f-491a-a1b3-459e08bc9948/embed" title="Claude Artifact" width="100%" height="600" frameborder="0" allow="clipboard-write" allowfullscreen></iframe>
-
+import os
+import pandas as pd
 import streamlit as st
 
-st.title("NFL 2025 Defense TD Analysis")
+# <iframe src="https://claude.site/public/artifacts/1ca9aa13-a81f-491a-a1b3-459e08bc9948/embed" title="Claude Artifact" width="100%" height="600" frameborder="0" allow="clipboard-write" allowfullscreen></iframe>
+    
+    # /* Hide Streamlit default elements */
+    # #MainMenu {visibility: hidden;}
+    # footer {visibility: hidden;}
+    # # header {visibility: hidden;}
 
-# Direct iframe embed
-st.components.v1.iframe(
-    "https://claude.site/public/artifacts/1ca9aa13-a81f-491a-a1b3-459e08bc9948/embed",
-    width=1000,   # adjust as needed
-    height=600,
-    scrolling=True
-)
+    # /* Center Streamlit title */
+    # h1 {
+    #     text-align: center !important;
+    # }
 
-# Or if you need more control over styles
-st.components.v1.html(
-    """
-    <div style="position:relative;padding-top:56.25%;">
-      <iframe src="https://claude.site/public/artifacts/XXXX/embed"
-              title="Claude Artifact"
-              style="position:absolute;inset:0;width:100%;height:100%;border:0;"
-              allow="clipboard-write; fullscreen"></iframe>
-    </div>
-    """,
-    height=600
-)
+st.set_page_config(page_title="Touchdowns Allowed Per Position", layout="wide")
+# st.set_page_config(page_title="NFL 2025 TDs Allowed")
 
+# Create columns to control width (left margin, content, right margin)
+col1, col2, col3 = st.columns([1, 6, 1])
 
-# import os
-# import numpy as np
-# import pandas as pd
-# import streamlit as st
-# import altair as alt
+with col2:
+    st.title("Touchdowns Allowed Per Position")
+    st.divider()
+    st.write(' ')
 
-# # ------------------------- Page setup -------------------------
-# st.set_page_config(page_title="Scoring Trends", page_icon="📊", layout="wide")
-# st.title("📊 Scoring Trends")
+st.markdown("""
+<style>
+    
+    /* Title styling */
+    .main-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #2c3e50;
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+    
+    
+    .subtitle {
+        font-size: 1rem;
+        color: #7f8c8d;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    
+    /* Card styling for metrics */
+    .metric-card {
+        background: lightgray;
+        border-radius: 12px;
+        padding: 1.5rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border: 1px solid #e1e8ed;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    
+    .metric-position {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #2c3e50;
+        margin-bottom: 0.5rem;
+    }
+    
+    .metric-value {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #e74c3c;
+        margin-bottom: 0.5rem;
+    }
+    
+    .metric-label {
+        font-size: 0.9rem;
+        color: #2c3e50;
+        margin-bottom: 0.5rem;
+    }
+    
+    .metric-worst {
+        font-size: 0.8rem;
+        color: #95a5a6;
+    }
+    
+    /* Section headers */
+    .section-header {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #2c3e50;
+        margin: 2rem 0 1rem 0;
+    }
+    
+    /* Table styling */
+    .dataframe {
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border: 1px solid #e1e8ed;
+    }
+    
+    /* Vulnerable teams styling */
+    .vulnerable-card {
+        background: white;
+        border-radius: 12px;
+        padding: 1rem;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        border: 1px solid #e5e7eb;
+        margin-bottom: 1rem;
+        height: 200px;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .vulnerable-width {
+        font-size: 1rem;
+        font-weight: 700;
+        color: #dc2626;
+        text-align: center;
+        margin-bottom: 0.75rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid #f3f4f6;
+    }
+    
+    .vulnerable-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.4rem 0;
+        border-bottom: 1px solid #f3f4f6;
+        font-size: 0.9rem;
+    }
+    
+    .vulnerable-item:last-child {
+        border-bottom: none;
+    }
+    
+    .vulnerable-team {
+        font-weight: 600;
+        color: #374151;
+    }
+    
+    .vulnerable-tds {
+        font-weight: 700;
+        color: #dc2626;
+    }
+    
+    /* Center the title */
+    h1 {
+        text-align: center !important;
+    }
+    
+    /* Ensure proper centering and responsive behavior - only for main content */
+    .main .block-container {
+        text-align: center;
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .main .block-container {
+            max-width: 95%;
+        }
+    }
+</style>
+""", unsafe_allow_html=True)
 
-# # ------------------------- Data loading -------------------------
-# def load_data():
-#     # 1) If the app already has a DataFrame in session_state, use it.
-#     for k in ("games_df", "df_games", "nfl_games"):
-#         if k in st.session_state and isinstance(st.session_state[k], pd.DataFrame):
-#             return st.session_state[k].copy()
+@st.cache_data(show_spinner=False)
+def load_csv(path_local: str) -> pd.DataFrame:
+    if os.path.exists(path_local):
+        return pd.read_csv(path_local)
+    raise FileNotFoundError(f"Local file not found: {path_local}")
 
-#     # 2) Optional: load from a default CSV path if your project has one.
-#     default_csv = "data/games.csv"  # change if you already have a canonical path
-#     if os.path.exists(default_csv):
-#         return pd.read_csv(default_csv)
+@st.cache_data(show_spinner=False)
+def load():
+    # Use relative paths like other pages
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    local_stats_path = os.path.join(current_dir, '../data', 'player_stats_pfr.csv')
+    local_roster_path = os.path.join(current_dir, '../data', 'rosters', 'roster_2025.csv')
+    
+    stats = load_csv(local_stats_path)
+    roster = load_csv(local_roster_path)
+    return roster, stats
 
-#     # 3) Fallback sample so the page renders without your data.
-#     rng = np.random.default_rng(7)
-#     weeks = np.arange(1, 19)
-#     teams = ["BUF", "KC", "PHI", "DAL", "MIA", "SF", "NYJ", "CHI"]
-#     rows = []
-#     for season in [2023, 2024, 2025]:
-#         for t in teams:
-#             base = rng.integers(18, 29)  # base team strength
-#             for w in weeks:
-#                 pf = int(np.clip(base + rng.normal(0, 6), 6, 48))
-#                 pa = int(np.clip(24 + rng.normal(0, 7), 6, 48))
-#                 rows.append(
-#                     dict(season=season, week=w, team=t, opponent=rng.choice(teams),
-#                          points_for=pf, points_against=pa,
-#                          total_points=pf+pa, home=bool(rng.integers(0,2)))
-#                 )
-#     return pd.DataFrame(rows)
+def build_position_lookup(roster: pd.DataFrame) -> dict:
+    lut = {}
+    for _, r in roster.iterrows():
+        pid = str(r.get("pfr_id", "") or "")
+        pos = r.get("position", None)
+        if not pid or not pos:
+            continue
+        clean = pid.replace(".htm", "")
+        lut[pid] = pos
+        lut[clean] = pos
+    return lut
 
-# df = load_data()
+def infer_pos(pid: str, lut: dict) -> str | None:
+    if not pid:
+        return None
+    pid = str(pid)
+    clean = pid.replace(".htm", "")
+    pos = lut.get(pid) or lut.get(clean)
+    if pos:
+        return pos
+    for k, v in lut.items():
+        if clean in k or k in clean:
+            return v
+    return None
 
-# # Standardize expected columns
-# expected = {
-#     "season","week","team","opponent","points_for","points_against","total_points","home"
-# }
-# missing = expected.difference(df.columns)
-# if missing:
-#     st.error(f"Missing columns: {sorted(missing)}")
-#     st.stop()
+def compute(def_stats: pd.DataFrame, roster: pd.DataFrame) -> pd.DataFrame:
+    df = def_stats.loc[def_stats["season"].astype("Int64") == 2025].copy()
+    lut = build_position_lookup(roster)
+    df["position"] = df["player_id"].apply(lambda x: infer_pos(x, lut))
+    df["rush_td"] = pd.to_numeric(df.get("rush_td", 0), errors="coerce").fillna(0)
+    df["rec_td"]  = pd.to_numeric(df.get("rec_td", 0),  errors="coerce").fillna(0)
+    df["total_td"] = df.apply(lambda r: r.rush_td if r.position=="QB" else r.rush_td + r.rec_td, axis=1)
+    pos_map = {"QB":"QB", "RB":"RB", "FB":"RB", "WR":"WR", "TE":"TE"}
+    df = df[(df["total_td"] > 0) & df["position"].notna() & df["opponent_team"].notna()].copy()
+    df["pos_group"] = df["position"].map(pos_map)
+    df = df[df["pos_group"].notna()].copy()
+    df = df.sort_values(["game_id", "player_id"]).drop_duplicates(["game_id", "player_id"])
+    pivot = (
+        df.pivot_table(index="opponent_team",
+                       columns="pos_group",
+                       values="total_td",
+                       aggfunc="sum",
+                       fill_value=0)
+          .reindex(columns=["QB","RB","WR","TE"], fill_value=0)
+          .reset_index()
+          .rename(columns={"opponent_team":"team"})
+    )
+    pivot["total"] = pivot[["QB","RB","WR","TE"]].sum(axis=1)
+    pivot = pivot.sort_values("total", ascending=False, kind="mergesort").reset_index(drop=True)
+    pivot.index = pivot.index + 1  
+    return pivot
 
-# # Coerce types
-# df["season"] = df["season"].astype(int)
-# df["week"] = df["week"].astype(int)
-# df["points_for"] = df["points_for"].astype(float)
-# df["points_against"] = df["points_against"].astype(float)
-# df["total_points"] = df["total_points"].astype(float)
-# df["home"] = df["home"].astype(bool)
+# # Main title and subtitle
+# st.markdown('<h1 class="main-title">NFL 2025: TDs Allowed by Defense</h1>', unsafe_allow_html=True)
+# st.markdown('<p class="subtitle">Analyzing touchdowns allowed by position group • QB = rushing TDs only</p>', unsafe_allow_html=True)
 
-# # ------------------------- Sidebar filters -------------------------
-# with st.sidebar:
-#     st.header("Filters")
-#     seasons = sorted(df["season"].unique())
-#     season = st.selectbox("Season", seasons, index=len(seasons)-1)
+with col2:
+    with st.spinner("Loading data from GitHub…"):
+        roster, stats = load()
+    table = compute(stats, roster)
 
-#     teams = sorted(df["team"].unique())
-#     team = st.multiselect("Teams", teams, default=teams[:3])
+    # Summary cards section
+    positions = ["QB","WR","TE","RB"]
+    cols = st.columns(4)
 
-#     min_w, max_w = int(df["week"].min()), int(df["week"].max())
-#     week_range = st.slider("Weeks", min_value=min_w, max_value=max_w, value=(min_w, max_w))
-#     home_away = st.selectbox("Venue", ["All", "Home", "Away"])
+    for i, pos in enumerate(positions):
+        total_pos = int(table[pos].sum())
+        worst_row = table.loc[table[pos].idxmax()]
+        worst_team = worst_row['team']
+        worst_value = int(worst_row[pos])
+        
+        with cols[i]:
+            st.markdown(f"""
+            <div class="metric-card">
+                <div class="metric-position">{pos}</div>
+                <div class="metric-value">{total_pos}</div>
+                <div class="metric-label">Total TDs</div>
+                <div class="metric-worst">Worst: {worst_team} ({worst_value})</div>
+            </div>
+            """, unsafe_allow_html=True)
 
-# # Apply filters
-# mask = (df["season"] == season) & (df["week"].between(week_range[0], week_range[1]))
-# if team:
-#     mask &= df["team"].isin(team)
-# if home_away != "All":
-#     mask &= (df["home"] if home_away == "Home" else ~df["home"])
+    # Defense rankings section
+    st.markdown('<h2 class="section-header">Defense Rankings</h2>', unsafe_allow_html=True)
 
-# f = df.loc[mask].copy()
-# if f.empty:
-#     st.warning("No rows match the filters.")
-#     st.stop()
+    # Create styled table with rank column
+    display_table = table[["team","QB","WR","TE","RB","total"]].copy()
+    display_table = display_table.rename(columns={"QB": "QB (rushing)"})
+    display_table.index = [f"#{i}" for i in display_table.index]
 
-# # ------------------------- Derived metrics -------------------------
-# f.sort_values(["team", "week"], inplace=True)
-# f["pf_rolling_3"] = f.groupby("team")["points_for"].transform(lambda s: s.rolling(3, min_periods=1).mean())
-# f["tp_rolling_3"] = f.groupby("team")["total_points"].transform(lambda s: s.rolling(3, min_periods=1).mean())
+    # Style the dataframe with heatmap colors
+    def style_heatmap(val):
+        if isinstance(val, (int, float)) and val > 0:
+            # Create pink/red gradient heatmap like the reference image
+            intensity = min(val / 5, 1)  # Normalize to 0-1 scale
+            # Use pink to red gradient
+            red = 255  # Keep red at max
+            green = int(245 - (195 * intensity))  # Start at light pink (245), go to red (50)
+            blue = int(245 - (195 * intensity))   # Start at light pink (245), go to red (50)
+            color = f"rgb({red}, {green}, {blue})"
+            # Use white text for darker backgrounds, dark text for lighter backgrounds
+            text_color = "white" if intensity > 0.4 else "#2c3e50"
+            return f"background-color: {color}; color: {text_color}; font-weight: bold; text-align: center;"
+        elif isinstance(val, (int, float)) and val == 0:
+            return "background-color: #f8f9fa; color: #2c3e50; text-align: center;"
+        else:
+            return "text-align: center;"
 
-# league_week = (
-#     f.groupby("week", as_index=False)[["points_for","total_points"]]
-#      .mean()
-#      .rename(columns={"points_for":"lg_pf_avg", "total_points":"lg_tp_avg"})
-# )
+    # Apply styling to numeric columns
+    styled_table = display_table.style.applymap(style_heatmap, subset=["QB (rushing)", "RB", "WR", "TE"])
+    styled_table = styled_table.applymap(lambda x: "font-weight: bold; color: #e74c3c;" if isinstance(x, (int, float)) and x > 0 else "", subset=["total"])
 
-# f = f.merge(league_week, on="week", how="left")
+    st.dataframe(styled_table, use_container_width=True, height=600)
 
-# # ------------------------- KPI tiles -------------------------
-# left, mid, right = st.columns(3)
-# with left:
-#     st.metric("Avg Points For", f["points_for"].mean().round(1))
-# with mid:
-#     st.metric("Avg Total Points", f["total_points"].mean().round(1))
-# with right:
-#     st.metric("3W Rolling PF (mean)", f["pf_rolling_3"].mean().round(1))
-
-# # ------------------------- Charts -------------------------
-# # 1) Team scoring trend with rolling mean
-# line_base = alt.Chart(f).encode(x=alt.X("week:Q", title="Week"))
-
-# team_pf = line_base.mark_line(point=True).encode(
-#     y=alt.Y("points_for:Q", title="Points For"),
-#     color=alt.Color("team:N", title="Team"),
-#     tooltip=["team","week","points_for","pf_rolling_3"]
-# ).properties(height=320)
-
-# team_pf_roll = line_base.mark_line(strokeDash=[4,3]).encode(
-#     y="pf_rolling_3:Q",
-#     color="team:N"
-# )
-
-# st.subheader("Team Points For per Week")
-# st.altair_chart((team_pf + team_pf_roll).interactive(), use_container_width=True)
-
-# # 2) League total-points trend vs team rolling
-# lg = alt.Chart(league_week).mark_line(point=True).encode(
-#     x="week:Q", y=alt.Y("lg_tp_avg:Q", title="League Avg Total Points"), tooltip=["week","lg_tp_avg"]
-# )
-
-# team_tp_roll = alt.Chart(f).mark_line().encode(
-#     x="week:Q", y="tp_rolling_3:Q", color="team:N", tooltip=["team","week","tp_rolling_3"]
-# )
-
-# st.subheader("Total Points Trend: Teams vs League")
-# st.altair_chart((lg + team_tp_roll).interactive(), use_container_width=True)
-
-# # 3) Distribution by team
-# st.subheader("Points For Distribution")
-# box = alt.Chart(f).mark_boxplot().encode(x="team:N", y=alt.Y("points_for:Q", title="Points For"))
-# st.altair_chart(box.properties(height=300), use_container_width=True)
-
-# # 4) Heatmap: average points by team and week
-# st.subheader("Heatmap: Avg Points For by Week")
-# heat = alt.Chart(f).mark_rect().encode(
-#     x=alt.X("week:O", title="Week"),
-#     y=alt.Y("team:N", title="Team"),
-#     color=alt.Color("mean(points_for):Q", title="Avg PF"),
-#     tooltip=["team","week",alt.Tooltip("mean(points_for):Q", title="Avg PF")]
-# ).properties(height=320)
-# st.altair_chart(heat, use_container_width=True)
-
-# # ------------------------- Download -------------------------
-# st.download_button(
-#     "Download filtered data as CSV",
-#     data=f.to_csv(index=False).encode("utf-8"),
-#     file_name=f"scoring_trends_{season}_{week_range[0]}-{week_range[1]}.csv",
-#     mime="text/csv",
-# )
+    # Most vulnerable by position section - use narrower container
+    # st.markdown('<h2 class="section-header">Most Vulnerable by Position</h2>', unsafe_allow_html=True)
+    st.write('####')
+    
+    # Create a wider container for the vulnerable section
+    vuln_col1, vuln_col2, vuln_col3 = st.columns([0.5, 5, 0.5])
+    
+    with vuln_col2:
+        # Create 2x2 layout with each box using 50% width
+        c1, c2 = st.columns([1, 1], gap="small")
+        
+        positions = ["QB", "WR", "TE", "RB"]
+        
+        for i, pos in enumerate(positions):
+            top5 = table.sort_values(pos, ascending=False).head(5)[["team",pos]]
+            title = f"{pos} Most Vulnerable" if pos != "QB" else "QB Most Vulnerable"
+            
+            # Build the complete HTML for each card
+            items_html = ""
+            for idx, (_, row) in enumerate(top5.iterrows(), 1):
+                team = row['team']
+                tds = int(row[pos])
+                items_html += f"""
+                <div class="vulnerable-item">
+                    <span class="vulnerable-team">{idx}. {team}</span>
+                    <span class="vulnerable-tds">{tds} TDs</span>
+                </div>
+                """
+            
+            # Use st.components.v1.html for proper HTML rendering
+            card_html = f"""
+                <style>
+                    .vulnerable-card {{
+                        background: lightgray;
+                        border-radius: 12px;
+                        padding: 1.5rem;
+                        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+                        border: 1px solid #e5e7eb;
+                        margin-bottom: 1rem;
+                        min-height: 320px;
+                        width: 100%;
+                        box-sizing: border-box;
+                        margin-left: -0.5rem;
+                        margin-right: -0.5rem;
+                    }}
+                    .vulnerable-title {{
+                        font-size: 1.2rem;
+                        font-weight: 700;
+                        color: #dc2626;
+                        text-align: center;
+                        margin-bottom: 1rem;
+                        padding-bottom: 0.75rem;
+                        border-bottom: 1px solid #f3f4f6;
+                    }}
+                    .vulnerable-item {{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 0.6rem 0;
+                        border-bottom: 1px solid #f3f4f6;
+                        font-size: 1rem;
+                    }}
+                    .vulnerable-item:last-child {{
+                        border-bottom: none;
+                    }}
+                    .vulnerable-team {{
+                        font-weight: 600;
+                        color: #374151;
+                    }}
+                    .vulnerable-tds {{
+                        font-weight: 700;
+                        color: #dc2626;
+                    }}
+                </style>
+                <div class="vulnerable-card">
+                    <div class="vulnerable-title">{title}</div>
+                    {items_html}
+                </div>
+                """
+                
+            # Choose column based on position index
+            if i < 2:  # QB, WR go in first column
+                with c1:
+                    st.components.v1.html(card_html, height=380)
+            else:  # RB, TE go in second column
+                with c2:
+                    st.components.v1.html(card_html, height=380)
