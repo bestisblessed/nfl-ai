@@ -259,6 +259,8 @@ with col2:
                     else:
                         st.write("No odds movement data available for this game.")
 
+        st.write(' ')
+        st.write(' ')
         # Inline odds movement graph for this matchup using Circa data (moved below modal buttons)
         selected_matchup = game['matchup']
         if isinstance(upcoming_week_games, pd.DataFrame) and ('matchup' in upcoming_week_games.columns) and (len(upcoming_week_games) > 0):
@@ -283,7 +285,7 @@ with col2:
                         if len(selected_data) > 0 and not selected_data['time_before'].isna().all():
                             ax.plot(selected_data['time_before'], selected_data['team1_odds_before'], label=game['teams'][0])
                             ax.plot(selected_data['time_before'], selected_data['team2_odds_before'], label=game['teams'][1])
-                            ax.set_title(f"Odds Movement: {game['teams'][0]} vs {game['teams'][1]}")
+                            ax.set_title(f"Circa Odds Movement: {game['teams'][0]} vs {game['teams'][1]}")
                             # ax.set_xlabel('Date')
                             ax.set_ylabel('Spread')
                             ax.yaxis.set_major_formatter(FuncFormatter(lambda v, pos: f"+{v:g}" if v > 0 else ("0" if v == 0 else f"{v:g}")))
