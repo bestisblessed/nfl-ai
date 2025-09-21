@@ -20,8 +20,10 @@ for f in os.listdir(final_dir):
 start_time = datetime.now()
 
 print("🚀 Starting NFL PFR Scraper...")
-print(f"📅 Scraping years: 2015-2024")
+print(f"📅 Scraping years: 2023-2024")
 print(f"📁 Output directory: {final_dir}")
+print("⏳ Waiting 5 seconds to avoid rate limiting...")
+sleep(5)
 
 # Consistent headers and polite UA
 UA = {
@@ -35,7 +37,7 @@ UA = {
 # ============================================================================
 # HELPER FUNCTIONS
 # ============================================================================
-def make_request_with_retry(url, max_retries=3, retry_delay=10):
+def make_request_with_retry(url, max_retries=3, retry_delay=30):
     """Make HTTP request with exponential backoff retry logic"""
     for attempt in range(max_retries):
         try:
@@ -43,7 +45,7 @@ def make_request_with_retry(url, max_retries=3, retry_delay=10):
             if response.status_code == 429:
                 print(f"Rate limited at {url}; sleeping {retry_delay}s")
                 sleep(retry_delay)
-                retry_delay *= 2
+                retry_delay *= 2  # Exponential backoff
                 continue
             response.raise_for_status()
             return response
@@ -51,7 +53,7 @@ def make_request_with_retry(url, max_retries=3, retry_delay=10):
             if attempt < max_retries - 1:
                 print(f"Request failed (attempt {attempt + 1}/{max_retries}): {e}")
                 sleep(retry_delay)
-                retry_delay *= 2
+                retry_delay *= 2  # Exponential backoff
                 continue
             else:
                 print(f"Final attempt failed for {url}: {e}")
@@ -71,45 +73,45 @@ standardize_mapping = {
     'ARZ': 'ARI', 'BLT': 'BAL', 'CLV': 'CLE', 'HST': 'HOU', 'SL': 'LAR'
 }
 teams = [
-    ['ARI', 'Arizona Cardinals', 'NFC West'],
-    ['ATL', 'Atlanta Falcons', 'NFC South'],
-    ['BAL', 'Baltimore Ravens', 'AFC North'],
-    ['BUF', 'Buffalo Bills', 'AFC East'],
-    ['CAR', 'Carolina Panthers', 'NFC South'],
-    ['CHI', 'Chicago Bears', 'NFC North'],
-    ['CIN', 'Cincinnati Bengals', 'AFC North'],
-    ['CLE', 'Cleveland Browns', 'AFC North'],
-    ['DAL', 'Dallas Cowboys', 'NFC East'],
-    ['DEN', 'Denver Broncos', 'AFC West'],
-    ['DET', 'Detroit Lions', 'NFC North'],
-    ['GB', 'Green Bay Packers', 'NFC North'],
-    ['HOU', 'Houston Texans', 'AFC South'],
-    ['IND', 'Indianapolis Colts', 'AFC South'],
-    ['JAX', 'Jacksonville Jaguars', 'AFC South'],
-    ['KC', 'Kansas City Chiefs', 'AFC West'],
-    ['LAC', 'Los Angeles Chargers', 'AFC West'],
-    ['LAR', 'Los Angeles Rams', 'NFC West'],
-    ['LVR', 'Las Vegas Raiders', 'AFC West'],
-    ['MIA', 'Miami Dolphins', 'AFC East'],
-    ['MIN', 'Minnesota Vikings', 'NFC North'],
-    ['NE', 'New England Patriots', 'AFC East'],
-    ['NO', 'New Orleans Saints', 'NFC South'],
-    ['NYG', 'New York Giants', 'NFC East'],
-    ['NYJ', 'New York Jets', 'AFC East'],
-    ['PHI', 'Philadelphia Eagles', 'NFC East'],
-    ['PIT', 'Pittsburgh Steelers', 'AFC North'],
-    ['SF', 'San Francisco 49ers', 'NFC West'],
-    ['SEA', 'Seattle Seahawks', 'NFC West'],
-    ['TB', 'Tampa Bay Buccaneers', 'NFC South'],
-    ['TEN', 'Tennessee Titans', 'AFC South'],
-    ['WAS', 'Washington Commanders', 'NFC East']
+    ['crd', 'Arizona Cardinals', 'NFC West'],
+    ['atl', 'Atlanta Falcons', 'NFC South'],
+    ['rav', 'Baltimore Ravens', 'AFC North'],
+    ['buf', 'Buffalo Bills', 'AFC East'],
+    ['car', 'Carolina Panthers', 'NFC South'],
+    ['chi', 'Chicago Bears', 'NFC North'],
+    ['cin', 'Cincinnati Bengals', 'AFC North'],
+    ['cle', 'Cleveland Browns', 'AFC North'],
+    ['dal', 'Dallas Cowboys', 'NFC East'],
+    ['den', 'Denver Broncos', 'AFC West'],
+    ['det', 'Detroit Lions', 'NFC North'],
+    ['gnb', 'Green Bay Packers', 'NFC North'],
+    ['htx', 'Houston Texans', 'AFC South'],
+    ['clt', 'Indianapolis Colts', 'AFC South'],
+    ['jax', 'Jacksonville Jaguars', 'AFC South'],
+    ['kan', 'Kansas City Chiefs', 'AFC West'],
+    ['sdg', 'Los Angeles Chargers', 'AFC West'],
+    ['ram', 'Los Angeles Rams', 'NFC West'],
+    ['rai', 'Las Vegas Raiders', 'AFC West'],
+    ['mia', 'Miami Dolphins', 'AFC East'],
+    ['min', 'Minnesota Vikings', 'NFC North'],
+    ['nwe', 'New England Patriots', 'AFC East'],
+    ['nor', 'New Orleans Saints', 'NFC South'],
+    ['nyg', 'New York Giants', 'NFC East'],
+    ['nyj', 'New York Jets', 'AFC East'],
+    ['phi', 'Philadelphia Eagles', 'NFC East'],
+    ['pit', 'Pittsburgh Steelers', 'AFC North'],
+    ['sfo', 'San Francisco 49ers', 'NFC West'],
+    ['sea', 'Seattle Seahawks', 'NFC West'],
+    ['tam', 'Tampa Bay Buccaneers', 'NFC South'],
+    ['oti', 'Tennessee Titans', 'AFC South'],
+    ['was', 'Washington Commanders', 'NFC East']
 ]
 df_teams = pd.DataFrame(teams, columns=['TeamID', 'Team', 'Division'])
 df_teams.to_csv(f'{final_dir}/teams.csv', index=False)
 print(f"✅ Created teams.csv with {len(df_teams)} teams")
 
 # ============================================================================
-# TEAM GAME LOGS (2015-2024) — fixed to parse comment-hidden tables
+# TEAM GAME LOGS (2023-2024) — COMPLETED ✅
 # ============================================================================
 data_dir = f'{final_dir}/SR-game-logs'
 os.makedirs(data_dir, exist_ok=True)
@@ -124,7 +126,7 @@ team_game_logs_headers = [
     'pen','pen_yds','fumbles_lost','turnovers_int','turnovers_total','time_of_poss'
 ]
 opponent_game_logs_headers = team_game_logs_headers[:]  # same shape
-for year in range(2015, 2025):
+for year in range(2023, 2025):
     team_file = f'{data_dir}/all_teams_game_logs_{year}.csv'
     opponent_file = f'{opponent_data_dir}/all_teams_opponent_game_logs_{year}.csv'
     all_team_game_logs = []
@@ -138,17 +140,16 @@ for year in range(2015, 2025):
             print(f"[skip] {name} {year}: failed to load {url}")
             continue
 
-        # PFR hides the tables in HTML comments. Pull only fragments that contain the ids.
+        # PFR uses specific table IDs for game logs
         soup_page = BeautifulSoup(response.text, 'lxml')
-        comments = soup_page.find_all(string=lambda x: isinstance(x, Comment))
-        inner = ''.join(c for c in comments if f"gamelog{year}" in c or f"opp_gamelog{year}" in c)
-        if not inner:
-            print(f"[warn] No commented tables for {name} {year} at {url}")
+        
+        # Look for the correct table IDs used by PFR
+        team_tbl = soup_page.find('table', {'id': 'table_pfr_team-year_game-logs_team-year-regular-season-game-log'})
+        opp_tbl = soup_page.find('table', {'id': 'table_pfr_team-year_game-logs_team-year-regular-season-opponent-game-log'})
+        
+        if not team_tbl and not opp_tbl:
+            print(f"[warn] No game log tables found for {name} {year} at {url}")
             continue
-        soup_tables = BeautifulSoup(inner, 'lxml')
-
-        team_tbl = soup_tables.find('table', id=f'gamelog{year}')
-        opp_tbl  = soup_tables.find('table', id=f'opp_gamelog{year}')
 
         # harvest team table
         if team_tbl and team_tbl.find('tbody'):
@@ -186,7 +187,7 @@ for year in range(2015, 2025):
                 all_opponent_game_logs.append(row)
         else:
             print(f"[warn] Missing opponent table for {name} {year}")
-        sleep(1.5)
+        sleep(3)  # Increased delay to avoid rate limiting
     with open(team_file, 'w', newline='', encoding='utf-8') as f:
         w = csv.writer(f)
         w.writerow(team_game_logs_headers + ['team_name'])
@@ -205,6 +206,7 @@ for year in range(2015, 2025):
 # ============================================================================
 # GAMES DATA
 # ============================================================================
+data_dir = f'{final_dir}/SR-game-logs'
 directory = data_dir
 df_list = []
 csv_files_found = [f for f in os.listdir(directory) if f.endswith(".csv")]
@@ -214,68 +216,80 @@ for filename in csv_files_found:
     file_path = os.path.join(directory, filename)
     season = filename.split('_')[-1].replace('.csv', '')
     df = pd.read_csv(file_path)
-    df['season'] = season
+    df['season'] = str(season)  # Ensure season is a string
     df_list.append(df)
     print(f"📊 Loaded {filename} with {len(df)} rows")
 
 if df_list:
     df = pd.concat(df_list, ignore_index=True)
     team_abbreviation_map = {
-        'Arizona Cardinals': 'ARI',
-        'Atlanta Falcons': 'ATL',
-        'Baltimore Ravens': 'BAL',
-        'Buffalo Bills': 'BUF',
-        'Carolina Panthers': 'CAR',
-        'Chicago Bears': 'CHI',
-        'Cincinnati Bengals': 'CIN',
-        'Cleveland Browns': 'CLE',
-        'Dallas Cowboys': 'DAL',
-        'Denver Broncos': 'DEN',
-        'Detroit Lions': 'DET',
-        'Green Bay Packers': 'GB',
-        'Houston Texans': 'HOU',
-        'Indianapolis Colts': 'IND',
-        'Jacksonville Jaguars': 'JAX',
-        'Kansas City Chiefs': 'KC',
-        'Los Angeles Chargers': 'LAC',
-        'Los Angeles Rams': 'LAR',
-        'Las Vegas Raiders': 'LVR',
-        'Oakland Raiders': 'LVR',
-        'Miami Dolphins': 'MIA',
-        'Minnesota Vikings': 'MIN',
-        'New England Patriots': 'NE',
-        'New Orleans Saints': 'NO',
-        'New York Giants': 'NYG',
-        'New York Jets': 'NYJ',
-        'Philadelphia Eagles': 'PHI',
-        'Pittsburgh Steelers': 'PIT',
-        'Seattle Seahawks': 'SEA',
-        'San Francisco 49ers': 'SF',
-        'Tampa Bay Buccaneers': 'TB',
-        'Tennessee Titans': 'TEN',
-        'Washington Commanders': 'WAS',
-        'Washington Football Team': 'WAS',
-        'Washington Redskins': 'WAS',
-        'St. Louis Rams': 'LAR',
-        'San Diego Chargers': 'LAC'
+        'Arizona Cardinals': 'crd',
+        'Atlanta Falcons': 'atl',
+        'Baltimore Ravens': 'rav',
+        'Buffalo Bills': 'buf',
+        'Carolina Panthers': 'car',
+        'Chicago Bears': 'chi',
+        'Cincinnati Bengals': 'cin',
+        'Cleveland Browns': 'cle',
+        'Dallas Cowboys': 'dal',
+        'Denver Broncos': 'den',
+        'Detroit Lions': 'det',
+        'Green Bay Packers': 'gnb',
+        'Houston Texans': 'htx',
+        'Indianapolis Colts': 'clt',
+        'Jacksonville Jaguars': 'jax',
+        'Kansas City Chiefs': 'kan',
+        'Los Angeles Chargers': 'sdg',
+        'Los Angeles Rams': 'ram',
+        'Las Vegas Raiders': 'rai',
+        'Oakland Raiders': 'rai',
+        'Miami Dolphins': 'mia',
+        'Minnesota Vikings': 'min',
+        'New England Patriots': 'nwe',
+        'New Orleans Saints': 'nor',
+        'New York Giants': 'nyg',
+        'New York Jets': 'nyj',
+        'Philadelphia Eagles': 'phi',
+        'Pittsburgh Steelers': 'pit',
+        'Seattle Seahawks': 'sea',
+        'San Francisco 49ers': 'sfo',
+        'Tampa Bay Buccaneers': 'tam',
+        'Tennessee Titans': 'oti',
+        'Washington Commanders': 'was',
+        'Washington Football Team': 'was',
+        'Washington Redskins': 'was',
+        'St. Louis Rams': 'ram',
+        'San Diego Chargers': 'sdg'
     }
     pfr_to_standard_abbr = {
-        'ARI': 'ARI', 'ATL': 'ATL', 'BAL': 'BAL', 'BUF': 'BUF', 'CAR': 'CAR',
-        'CHI': 'CHI', 'CIN': 'CIN', 'CLE': 'CLE', 'DAL': 'DAL', 'DEN': 'DEN',
-        'DET': 'DET', 'GNB': 'GB', 'HOU': 'HOU', 'IND': 'IND', 'JAX': 'JAX',
-        'KAN': 'KC', 'LA': 'LAR', 'LAC': 'LAC', 'LAR': 'LAR', 'LV': 'LVR',
-        'LVR': 'LVR', 'MIA': 'MIA', 'MIN': 'MIN', 'NWE': 'NE', 'NOR': 'NO',
-        'NYG': 'NYG', 'NYJ': 'NYJ', 'OAK': 'LVR', 'PHI': 'PHI', 'PIT': 'PIT',
-        'SD': 'LAC', 'SDG': 'LAC', 'SEA': 'SEA', 'SF': 'SF', 'SFO': 'SF',
-        'STL': 'LAR', 'TAM': 'TB', 'TEN': 'TEN', 'WAS': 'WAS'
+        'crd': 'ARI', 'atl': 'ATL', 'rav': 'BAL', 'buf': 'BUF', 'car': 'CAR',
+        'chi': 'CHI', 'cin': 'CIN', 'cle': 'CLE', 'dal': 'DAL', 'den': 'DEN',
+        'det': 'DET', 'gnb': 'GB', 'htx': 'HOU', 'clt': 'IND', 'jax': 'JAX',
+        'kan': 'KC', 'ram': 'LAR', 'sdg': 'LAC', 'rai': 'LVR', 'mia': 'MIA',
+        'min': 'MIN', 'nwe': 'NE', 'nor': 'NO', 'nyg': 'NYG', 'nyj': 'NYJ',
+        'phi': 'PHI', 'pit': 'PIT', 'sea': 'SEA', 'sfo': 'SF', 'tam': 'TB',
+        'oti': 'TEN', 'was': 'WAS'
     }
+    # Reverse mapping from standard to PFR abbreviations
+    standard_to_pfr_abbr = {v: k for k, v in pfr_to_standard_abbr.items()}
+    # Add missing mappings for different standard abbreviation formats
+    standard_to_pfr_abbr.update({
+        'SFO': 'sfo',  # San Francisco 49ers
+        'KAN': 'kan',  # Kansas City Chiefs
+        'GNB': 'gnb',  # Green Bay Packers
+        'TAM': 'tam',  # Tampa Bay Buccaneers
+        'NOR': 'nor',  # New Orleans Saints
+        'NWE': 'nwe'   # New England Patriots
+    })
     def determine_home_away(row):
         if row['game_location'] == '@':
             away_team = team_abbreviation_map[row['team_name']]
-            home_team = pfr_to_standard_abbr[row['opp']]
+            # opp column already contains standard abbreviations, no conversion needed
+            home_team = row['opp']
         else:
             home_team = team_abbreviation_map[row['team_name']]
-            away_team = pfr_to_standard_abbr[row['opp']]
+            # opp column already contains standard abbreviations, no conversion needed
+            away_team = row['opp']
         return home_team, away_team
     
     home_away_results = df.apply(determine_home_away, axis=1, result_type='expand')
@@ -285,30 +299,40 @@ if df_list:
     df['game_id'] = df['season'] + '_' + df['week_num'] + '_' + df['away_team_id'] + '_' + df['home_team_id']
     # Create games data directly without intermediate file
     games_dataframes = []
-    for year in range(2015, 2025):
+    for year in range(2023, 2025):
         year_df = df[df['season'] == str(year)].copy()
+        print(f"📊 Processing year {year}: {len(year_df)} rows")
         if not year_df.empty:
-            year_df['season'] = year
+            year_df['season'] = str(year)
             year_df['week'] = year_df['week']
             year_df['date'] = pd.to_datetime(year_df['date'])
-            year_df['home_team'] = year_df['team_name'].str.extract(r'(\w+)')[0]
-            year_df['away_team'] = year_df['opp']
+            # year_df['home_team'] = year_df['team_name'].str.extract(r'(\w+)')[0]
+            year_df['home_team'] = year_df['team_name'].map(team_abbreviation_map)
+            year_df['away_team'] = year_df['opp'].map(standard_to_pfr_abbr)
+            print(f"📊 Created {len(year_df)} games for {year}")
             year_df['home_score'] = year_df['pts']
             year_df['away_score'] = year_df['pts_opp']
             year_df['game_location'] = year_df['game_location']
             year_df['result'] = year_df['result']
             year_df['overtime'] = year_df['ot'].fillna(0)
             year_df['game_id'] = year_df.apply(lambda row: f"{year}_{row['week']:02d}_{row['away_team']}_{row['home_team']}", axis=1)
-            games_dataframes.append(year_df[['game_id', 'season', 'week', 'date', 'home_team', 'away_team', 'home_score', 'away_score', 'game_location', 'result', 'overtime']])
+            # Create PFR URL before standardizing team abbreviations
+            year_df['pfr'] = year_df['game_id'].str.replace('_', '').str.lower()
+            year_df['pfr_url'] = 'https://www.pro-football-reference.com/boxscores/' + year_df['pfr'] + '.htm'
+            games_dataframes.append(year_df[['game_id', 'season', 'week', 'date', 'home_team', 'away_team', 'home_score', 'away_score', 'game_location', 'result', 'overtime', 'pfr', 'pfr_url']])
     if games_dataframes:
         df_games = pd.concat(games_dataframes, ignore_index=True)
         df_games = df_games.drop_duplicates(subset=['game_id'], keep='first')
         df_games = df_games.sort_values(['season', 'week', 'date'])
+        
+        # Now standardize team abbreviations for consistency
         df_games['away_team'] = df_games['away_team'].replace(standardize_mapping)
         df_games['home_team'] = df_games['home_team'].replace(standardize_mapping)
         
         # Merge team game logs data directly into game_logs.csv
-        grouped_df = df.groupby('game_id', group_keys=False).apply(lambda x: pd.Series({
+        # Create grouped_df from the processed data
+        processed_df = pd.concat([df[df['season'] == str(year)] for year in range(2023, 2025)], ignore_index=True)
+        grouped_df = processed_df.groupby('game_id', group_keys=False).apply(lambda x: pd.Series({
             'season': x['season'].iloc[0],
             'home_pts_off': x.loc[x['game_location'].isnull() | (x['game_location'] == ''), 'pts'].sum(),
             'away_pts_off': x.loc[x['game_location'] == '@', 'pts'].sum(),
@@ -340,79 +364,87 @@ if df_list:
             'away_rush_yds_per_att': x.loc[x['game_location'] == '@', 'rush_ya'].mean(),
             'home_rush_td': x.loc[x['game_location'].isnull() | (x['game_location'] == ''), 'rush_td'].sum(),
             'away_rush_td': x.loc[x['game_location'] == '@', 'rush_td'].sum(),
-        }))
+        }), include_groups=False)
         comprehensive_games_df = df_games.merge(grouped_df, on=['game_id', 'season'], how='inner')
         comprehensive_games_df.to_csv(f'{final_dir}/game_logs.csv', index=False)
+        print(f"✅ Created game_logs.csv with {len(comprehensive_games_df)} games")
     else:
         # Create empty game_logs.csv if no data
         print("⚠️ No game data found, creating empty game_logs.csv")
         pd.DataFrame(columns=['game_id', 'season', 'week', 'date', 'home_team', 'away_team', 'home_score', 'away_score', 'game_location', 'result', 'overtime']).to_csv(f'{final_dir}/game_logs.csv', index=False)
 
 # ============================================================================
-# BOX SCORES (2015-2024)
+# BOX SCORES (2023-2024)
 # ============================================================================
-os.makedirs(f'{final_dir}/SR-box-scores/', exist_ok=True)
-games_df_temp = pd.read_csv(f'{final_dir}/game_logs.csv')
-games_df_temp['pfr'] = games_df_temp['game_id'].str.replace('_', '').str.lower()
-games_df_temp['pfr_url'] = 'https://www.pro-football-reference.com/boxscores/' + games_df_temp['pfr'] + '.htm'
-games_df_temp.to_csv(f'{final_dir}/game_logs.csv', index=False)
-headers = ['URL', 'Team', '1', '2', '3', '4', 'OT1', 'OT2', 'OT3', 'OT4', 'Final']
-for year_to_scrape in range(2015, 2025):
-    csv_file_path = f'{final_dir}/SR-box-scores/all_box_scores_{year_to_scrape}.csv'
-    games_csv_path = f'{final_dir}/game_logs.csv'
-    with open(csv_file_path, 'w', newline='') as csvfile:
-        score_writer = csv.writer(csvfile)
-        score_writer.writerow(headers)
-        game_urls = []
-        with open(games_csv_path, 'r') as csvfile:
-            reader = csv.DictReader(csvfile)
-            now_dt = datetime.now()
-            for row in reader:
-                try:
-                    game_dt = datetime.fromisoformat(row['date'])
-                except Exception:
-                    continue
-                if row['season'] == str(year_to_scrape) and game_dt <= now_dt:
-                    game_urls.append(row['pfr_url'])
-        for url in game_urls:
-            try:
-                print(f"Scraping game: {url}")
-                response = requests.get(url)
-                response.raise_for_status()
-                raw_file_name = url.split('/')[-1].replace('.htm', '') + '.html'
-                raw_file_path = f'{final_dir}/SR-box-scores/{raw_file_name}'
-                with open(raw_file_path, 'wb') as raw_file:
-                    raw_file.write(response.content)
-                soup = BeautifulSoup(response.content, 'html.parser')
-                linescore_table = soup.find('table', class_='linescore')
-                if linescore_table:
-                    rows = linescore_table.find_all('tr')[1:]
-                    for row in rows:
-                        cols = row.find_all('td')
-                        team_name = cols[1].text.strip()
-                        scores = [col.text.strip() for col in cols[2:]]
-                        scores += [''] * (len(headers) - 2 - len(scores))
-                        score_writer.writerow([url, team_name] + scores)
-                time.sleep(2.5)
-            except Exception as e:
-                print(f"Error scraping {url}: {e}")
-            time.sleep(2.5)
-input_dir = f'{final_dir}/SR-box-scores/'
-csv_files = [f for f in os.listdir(input_dir) if f.endswith('.csv')]
-if csv_files:
-    dataframes = [pd.read_csv(os.path.join(input_dir, file)) for file in csv_files]
-    merged_dataframe = pd.concat(dataframes, ignore_index=True)
-    output_file = f'{final_dir}/box_scores.csv'
-    merged_dataframe.to_csv(output_file, index=False)
+# Check if game_logs.csv exists and has data
+games_csv_path = f'{final_dir}/game_logs.csv'
+if not os.path.exists(games_csv_path):
+    print("❌ game_logs.csv not found! Skipping Box Scores section.")
 else:
-    pd.DataFrame(columns=headers).to_csv(f'{final_dir}/box_scores.csv', index=False)
+    games_df_check = pd.read_csv(games_csv_path)
+    if len(games_df_check) == 0:
+        print("❌ game_logs.csv is empty! Skipping Box Scores section.")
+    else:
+        print(f"📊 Found {len(games_df_check)} games in game_logs.csv, proceeding with Box Scores...")
+        os.makedirs(f'{final_dir}/SR-box-scores/', exist_ok=True)
+        games_df_temp = pd.read_csv(f'{final_dir}/game_logs.csv')
+        headers = ['URL', 'Team', '1', '2', '3', '4', 'OT1', 'OT2', 'OT3', 'OT4', 'Final']
+        for year_to_scrape in range(2023, 2025):
+            csv_file_path = f'{final_dir}/SR-box-scores/all_box_scores_{year_to_scrape}.csv'
+            games_csv_path = f'{final_dir}/game_logs.csv'
+            with open(csv_file_path, 'w', newline='') as csvfile:
+                score_writer = csv.writer(csvfile)
+                score_writer.writerow(headers)
+                game_urls = []
+                with open(games_csv_path, 'r') as csvfile:
+                    reader = csv.DictReader(csvfile)
+                    now_dt = datetime.now()
+                    for row in reader:
+                        try:
+                            game_dt = datetime.fromisoformat(row['date'])
+                        except Exception:
+                            continue
+                        if row['season'] == str(year_to_scrape) and game_dt <= now_dt:
+                            game_urls.append(row['pfr_url'])
+                for url in game_urls:
+                    try:
+                        print(f"Scraping game: {url}")
+                        response = requests.get(url)
+                        response.raise_for_status()
+                        raw_file_name = url.split('/')[-1].replace('.htm', '') + '.html'
+                        raw_file_path = f'{final_dir}/SR-box-scores/{raw_file_name}'
+                        with open(raw_file_path, 'wb') as raw_file:
+                            raw_file.write(response.content)
+                        soup = BeautifulSoup(response.content, 'html.parser')
+                        linescore_table = soup.find('table', class_='linescore')
+                        if linescore_table:
+                            rows = linescore_table.find_all('tr')[1:]
+                            for row in rows:
+                                cols = row.find_all('td')
+                                team_name = cols[1].text.strip()
+                                scores = [col.text.strip() for col in cols[2:]]
+                                scores += [''] * (len(headers) - 2 - len(scores))
+                                score_writer.writerow([url, team_name] + scores)
+                        time.sleep(2.5)
+                    except Exception as e:
+                        print(f"Error scraping {url}: {e}")
+                    time.sleep(2.5)
+        input_dir = f'{final_dir}/SR-box-scores/'
+        csv_files = [f for f in os.listdir(input_dir) if f.endswith('.csv')]
+        if csv_files:
+            dataframes = [pd.read_csv(os.path.join(input_dir, file)) for file in csv_files]
+            merged_dataframe = pd.concat(dataframes, ignore_index=True)
+            output_file = f'{final_dir}/box_scores.csv'
+            merged_dataframe.to_csv(output_file, index=False)
+        else:
+            pd.DataFrame(columns=headers).to_csv(f'{final_dir}/box_scores.csv', index=False)
 
 
 # ============================================================================
-# SCORING TABLES (2015-2024)
+# SCORING TABLES (2023-2024)
 # ============================================================================
 os.makedirs(f'{final_dir}/SR-scoring-tables/', exist_ok=True)
-for year_to_scrape in range(2015, 2025):
+for year_to_scrape in range(2023, 2025):
     output_filename = f'{final_dir}/SR-scoring-tables/all_nfl_scoring_tables_{year_to_scrape}.csv'
     with open(output_filename, 'w', newline='') as output_csvfile:
         csvwriter = csv.writer(output_csvfile)
@@ -474,18 +506,18 @@ else:
     pd.DataFrame(columns=['Quarter', 'Time', 'Team', 'Detail', 'Team_1', 'Team_2', 'Game_ID']).to_csv(f'{final_dir}/scoring_tables.csv', index=False)
 
 # ============================================================================
-# TEAM STATS (2015-2024)
+# TEAM STATS (2023-2024)
 # ============================================================================
 os.makedirs(f'{final_dir}/SR-team-stats/', exist_ok=True)
 team_stats_headers = [
     'Player', 'PF', 'Yds', 'Ply', 'Y/P', 'TO', 'FL', '1stD', 'Cmp', 'Att', 'Yds', 'TD', 'Int', 'NY/A',
     '1stD', 'Att', 'Yds', 'TD', 'Y/A', '1stD', 'Pen', 'Yds', '1stPy', '#Dr', 'Sc%', 'TO%', 'Start', 'Time', 'Plays', 'Yds', 'Pts', 'Team'
 ]
-for year in range(2015, 2025):
+for year in range(2023, 2025):
     output_file = f'{final_dir}/SR-team-stats/all_teams_stats_{year}.csv'
     all_team_stats = []
     for team in teams:
-        abbreviation, name = team
+        abbreviation, name, division = team
         url = f'https://www.pro-football-reference.com/teams/{abbreviation}/{year}.htm'
         max_retries = 3
         retry_delay = 10
@@ -542,7 +574,7 @@ else:
     pd.DataFrame(columns=team_stats_headers + ['Year']).to_csv(f'{final_dir}/team_stats.csv', index=False)
 
 # ============================================================================
-# SCHEDULE & GAME RESULTS (2015-2024)
+# SCHEDULE & GAME RESULTS (2023-2024)
 # ============================================================================
 os.makedirs(f'{final_dir}/SR-schedule-and-game-results/', exist_ok=True)
 schedule_headers = [
@@ -551,10 +583,10 @@ schedule_headers = [
     'Opp1stD', 'OppTotYd', 'OppPassY', 'OppRushY', 'TO_won',
     'Offense', 'Defense', 'Sp. Tms'
 ]
-for year in range(2015, 2025):
+for year in range(2023, 2025):
     all_games = []
     for team in teams:
-        abbreviation, name = team
+        abbreviation, name, division = team
         url = f'https://www.pro-football-reference.com/teams/{abbreviation}/{year}.htm'
         max_retries = 3
         retry_delay = 10
@@ -630,15 +662,15 @@ else:
     pd.DataFrame(columns=schedule_headers + ['Team', 'Season']).to_csv(f'{final_dir}/schedule_game_results.csv', index=False)
 
 # ============================================================================
-# TEAM CONVERSIONS (2015-2024)
+# TEAM CONVERSIONS (2023-2024)
 # ============================================================================
 os.makedirs(f'{final_dir}/SR-team-conversions/', exist_ok=True)
 team_conversions_headers = [
     'Player', '3DAtt', '3DConv', '4DAtt', '4DConv', '4D%', 'RZAtt', 'RZTD', 'RZPct', 'Team'
 ]
-for year in range(2015, 2025):
+for year in range(2023, 2025):
     for team in teams:
-        abbreviation, name = team
+        abbreviation, name, division = team
         team_file = f'{final_dir}/SR-team-conversions/{abbreviation}_{year}_team_conversions.csv'
         url = f'https://www.pro-football-reference.com/teams/{abbreviation}/{year}.htm'
         max_retries = 3
@@ -697,10 +729,10 @@ else:
     pd.DataFrame(columns=team_conversions_headers + ['Year']).to_csv(f'{final_dir}/team_conversions.csv', index=False)
 
 # ============================================================================
-# PASSING/RUSHING/RECEIVING (2015-2024)
+# PASSING/RUSHING/RECEIVING (2023-2024)
 # ============================================================================
 os.makedirs(f'{final_dir}/SR-passing-rushing-receiving-game-logs/', exist_ok=True)
-for year_to_scrape in range(2015, 2025):
+for year_to_scrape in range(2023, 2025):
     output_filename = f'{final_dir}/SR-passing-rushing-receiving-game-logs/all_passing_rushing_receiving_{year_to_scrape}.csv'
     with open(output_filename, 'w', newline='') as output_csvfile:
         csvwriter = csv.writer(output_csvfile)
@@ -780,7 +812,7 @@ else:
     ]).to_csv(merged_file_path, index=False)
 
 # ============================================================================
-# DEFENSE GAME LOGS (2015-2024)
+# DEFENSE GAME LOGS (2023-2024)
 # ============================================================================
 os.makedirs(f'{final_dir}/SR-defense-game-logs/', exist_ok=True)
 headers = [
@@ -788,7 +820,7 @@ headers = [
     'tackles_combined', 'tackles_solo', 'tackles_assists', 'tackles_loss', 'qb_hits', 'fumbles_rec',
     'fumbles_rec_yds', 'fumbles_rec_td', 'fumbles_forced', 'game_id'
 ]
-for year_to_scrape in range(2015, 2025):
+for year_to_scrape in range(2023, 2025):
     output_filename = f'{final_dir}/SR-defense-game-logs/all_defense_{year_to_scrape}.csv'
     with open(output_filename, 'w', newline='') as output_csvfile:
         csvwriter = csv.writer(output_csvfile)
@@ -841,7 +873,7 @@ for year_to_scrape in range(2015, 2025):
                     else:
                         break
             time.sleep(2.5)
-for year in range(2015, 2025):
+for year in range(2023, 2025):
     file_path = f'{final_dir}/SR-defense-game-logs/all_defense_{year}.csv'
     try:
         if os.path.exists(file_path):
