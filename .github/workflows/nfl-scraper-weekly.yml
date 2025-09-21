@@ -22,4 +22,8 @@ jobs:
           pip install pandas requests beautifulsoup4 lxml
       - name: Execute scraper
         run: python ScraperMasterPFR.py
-
+      - name: Upload results
+        uses: actions/upload-artifact@v4
+        with:
+          name: nfl-scraper-output
+          path: FINAL/**
