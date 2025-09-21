@@ -139,7 +139,7 @@ print(f"✅ Created teams.csv with {len(df_teams)} teams")
 #     opponent_file = f'{opponent_data_dir}/all_teams_opponent_game_logs_{year}.csv'
 #     all_team_game_logs = []  
 #     all_opponent_game_logs = []
-#     for team in pfr_teams:
+#     for team in teams:
 #         abbreviation, name = team
 #         url = f'https://www.pro-football-reference.com/teams/{abbreviation}/{year}/gamelog/'
 #         max_retries = 3
@@ -247,7 +247,7 @@ for year in range(2023, 2026):
     opponent_file = f'{opponent_data_dir}/all_teams_opponent_game_logs_{year}.csv'
     all_team_game_logs = []
     all_opponent_game_logs = []
-    for abbr, name in pfr_teams:
+    for abbr, name, division in teams:
         url = f'https://www.pro-football-reference.com/teams/{abbr}/{year}/gamelog/'
         # basic retry with exponential backoff and UA
         max_retries, retry_delay = 3, 10
@@ -614,7 +614,7 @@ team_stats_headers = [
 for year in range(2023, 2026):
     output_file = f'{final_dir}/SR-team-stats/all_teams_stats_{year}.csv'
     all_team_stats = []
-    for team in pfr_teams:
+    for team in teams:
         abbreviation, name = team
         url = f'https://www.pro-football-reference.com/teams/{abbreviation}/{year}.htm'
         max_retries = 3
@@ -683,7 +683,7 @@ schedule_headers = [
 ]
 for year in range(2023, 2026):
     all_games = []
-    for team in pfr_teams:
+    for team in teams:
         abbreviation, name = team
         url = f'https://www.pro-football-reference.com/teams/{abbreviation}/{year}.htm'
         max_retries = 3
@@ -767,7 +767,7 @@ team_conversions_headers = [
     'Player', '3DAtt', '3DConv', '4DAtt', '4DConv', '4D%', 'RZAtt', 'RZTD', 'RZPct', 'Team'
 ]
 for year in range(2023, 2026):
-    for team in pfr_teams:
+    for team in teams:
         abbreviation, name = team
         team_file = f'{final_dir}/SR-team-conversions/{abbreviation}_{year}_team_conversions.csv'
         url = f'https://www.pro-football-reference.com/teams/{abbreviation}/{year}.htm'
