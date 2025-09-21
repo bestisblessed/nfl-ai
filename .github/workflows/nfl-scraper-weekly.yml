@@ -33,5 +33,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: nfl-scraper-output
-          path: FINAL/**
+          path: |
+            Scrapers/FINAL/**
+            Scrapers/log.log
           if-no-files-found: warn
