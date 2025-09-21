@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "================================================================================="
-echo "MASTER PFR-ONLY NFL DATA SCRAPER"
+echo "MASTER PFR-ONLY NFL DATA SCRAPER (2015-2024 seasons)"
 echo "================================================================================="
 
 # Run the master PFR scraper
@@ -9,5 +9,5 @@ python -u ScraperMasterPFR.py
 
 echo ""
 echo "================================================================================="
-echo "🎉 MASTER PFR SCRAPER COMPLETED!"
+echo "🎉 MASTER PFR SCRAPER COMPLETED! (2015-2024 seasons)"
 echo "================================================================================="
