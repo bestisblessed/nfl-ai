@@ -70,49 +70,8 @@ print(f"✅ Teams CSV created with {len(df_teams)} teams")
 
 
 
-##### Create 'Games' CSV from PFR team game logs #####
-print("\n2. Creating Games CSV from PFR team game logs...")
-game_dataframes = []
-game_logs_dir = './data/SR-game-logs/'
-if os.path.exists(game_logs_dir):
-    game_log_files = [f for f in os.listdir(game_logs_dir) if f.startswith('all_teams_game_logs_') and f.endswith('.csv')]
-    for file_name in sorted(game_log_files):
-        year = file_name.replace('all_teams_game_logs_', '').replace('.csv', '')
-        file_path = os.path.join(game_logs_dir, file_name)
-        print(f"   Loading {year} game logs...")
-        df = pd.read_csv(file_path)
-        # df['season'] = year
-        df['season'] = int(year)
-        df['week'] = df['week']
-        df['date'] = pd.to_datetime(df['date'])
-        df['home_team'] = df['team_name'].str.extract(r'(\w+)')[0]
-        df['away_team'] = df['opp']
-        df['home_score'] = df['pts']
-        df['away_score'] = df['pts_opp']
-        df['game_location'] = df['game_location']
-        df['result'] = df['result']
-        df['overtime'] = df['ot'].fillna(0)
-        df['game_id'] = df.apply(lambda row: f"{year}_{row['week']:02d}_{row['away_team']}_{row['home_team']}", axis=1)
-        game_dataframes.append(df[['game_id', 'season', 'week', 'date', 'home_team', 'away_team', 'home_score', 'away_score', 'game_location', 'result', 'overtime']])
-else:
-    print(f"   ⚠️  Game logs directory not found: {game_logs_dir}")
-if game_dataframes:
-    df_games = pd.concat(game_dataframes, ignore_index=True)
-    df_games = df_games.drop_duplicates(subset=['game_id'], keep='first')
-    df_games = df_games.sort_values(['season', 'week', 'date'])
-    df_games['away_team'] = df_games['away_team'].replace(standardize_mapping)
-    df_games['home_team'] = df_games['home_team'].replace(standardize_mapping)
-    df_games.to_csv(f'{final_pfr_dir}/games_pfr.csv', index=False)
-    print(f"✅ Games CSV created with {len(df_games)} games")
-else:
-    print("❌ No PFR game log data found")
-    exit()
-    
-    
-
-
 ##### Create 'PlayerStats' CSV from PFR passing/rushing/receiving data #####
-print("\n3. Creating PlayerStats CSV from PFR passing/rushing/receiving data...")
+print("\n2. Creating PlayerStats CSV from PFR passing/rushing/receiving data...")
 if os.path.exists('./data/all_passing_rushing_receiving_pfr_clean.csv'):
     print("   Loading clean PFR passing/rushing/receiving data (no NFLverse contamination)...")
     df_pfr_stats = pd.read_csv('./data/all_passing_rushing_receiving_pfr_clean.csv')
@@ -159,6 +118,7 @@ else:
 
 
 ##### Create additional PFR CSV files #####
+print("\n3. Creating additional PFR CSV files...")
 # Box Scores
 if os.path.exists('./data/all_box_scores.csv'):
     box_scores_df = pd.read_csv('./data/all_box_scores.csv')
@@ -170,12 +130,6 @@ if os.path.exists('./data/all_scoring_tables.csv'):
     scoring_tables_df = pd.read_csv('./data/all_scoring_tables.csv')
     scoring_tables_df.to_csv(f'{final_pfr_dir}/scoring_tables_pfr.csv', index=False)
     print(f"✅ ScoringTables CSV created with {len(scoring_tables_df)} records")
-
-# Team Game Logs
-if os.path.exists('./data/all_team_game_logs.csv'):
-    team_game_logs_df = pd.read_csv('./data/all_team_game_logs.csv')
-    team_game_logs_df.to_csv(f'{final_pfr_dir}/team_game_logs_pfr.csv', index=False)
-    print(f"✅ TeamGameLogs CSV created with {len(team_game_logs_df)} records")
 
 # Team Stats
 if os.path.exists('./data/all_team_stats.csv'):
@@ -209,19 +163,14 @@ if os.path.exists('./data/SR-schedule-and-game-results/all_teams_schedule_and_ga
     print(f"✅ ScheduleGameResults CSV created with {len(schedule_df)} records")
 
 ##### Create comprehensive game logs CSV #####
-print("\n5. Creating comprehensive game logs CSV...")
-if os.path.exists(f'{final_pfr_dir}/games_pfr.csv') and os.path.exists(f'{final_pfr_dir}/team_game_logs_pfr.csv'):
-    games_df = pd.read_csv(f'{final_pfr_dir}/games_pfr.csv')
-    team_game_logs_df = pd.read_csv(f'{final_pfr_dir}/team_game_logs_pfr.csv')
-    comprehensive_games_df = games_df.merge(
-        team_game_logs_df, 
-        on=['game_id', 'season'], 
-        how='inner'
-    )
+print("\n4. Creating comprehensive game logs CSV...")
+if os.path.exists('./data/all_team_game_logs.csv'):
+    # Use the aggregated team game logs directly as the comprehensive game logs
+    comprehensive_games_df = pd.read_csv('./data/all_team_game_logs.csv')
     comprehensive_games_df.to_csv(f'{final_pfr_dir}/game_logs_pfr.csv', index=False)
     print(f"✅ Created game_logs_pfr.csv: {len(comprehensive_games_df)} records with {len(comprehensive_games_df.columns)} columns")
 else:
-    print("⚠️  Cannot create comprehensive game logs - missing games or team_game_logs data")
+    print("⚠️  Cannot create comprehensive game logs - missing all_team_game_logs.csv data")
 
 
 
@@ -230,29 +179,29 @@ else:
 # team_game_logs_pfr.csv
 # passing_rushing_receiving_pfr.csv
 print("\n6. Cleaning up redundant files...")
-if os.path.exists(f'{final_pfr_dir}/games_pfr.csv'):
-    os.remove(f'{final_pfr_dir}/games_pfr.csv')
-    print("✅ Removed redundant games_pfr.csv (data included in game_logs_pfr.csv)")
-if os.path.exists(f'{final_pfr_dir}/team_game_logs_pfr.csv'):
-    os.remove(f'{final_pfr_dir}/team_game_logs_pfr.csv')
-    print("✅ Removed redundant team_game_logs_pfr.csv (data included in game_logs_pfr.csv)")
+# if os.path.exists(f'{final_pfr_dir}/games_pfr.csv'):
+#     os.remove(f'{final_pfr_dir}/games_pfr.csv')
+#     print("✅ Removed redundant games_pfr.csv (data included in game_logs_pfr.csv)")
+# if os.path.exists(f'{final_pfr_dir}/team_game_logs_pfr.csv'):
+#     os.remove(f'{final_pfr_dir}/team_game_logs_pfr.csv')
+#     print("✅ Removed redundant team_game_logs_pfr.csv (data included in game_logs_pfr.csv)")
 if os.path.exists(f'{final_pfr_dir}/passing_rushing_receiving_pfr.csv'):
     os.remove(f'{final_pfr_dir}/passing_rushing_receiving_pfr.csv')
     print("✅ Removed redundant passing_rushing_receiving_pfr.csv (data included in player_stats_pfr.csv)")
 
 
-##### Final Print
-print(f"📁 Final data: {final_pfr_dir}/")
-print(f"📊 Available datasets:")
-print("  • teams_pfr - Team information")
-# print("  • games_pfr - Game results and metadata")
-print("  • player_stats_pfr - Player statistics from PFR data (enhanced with season/week/team context)")
-print("  • box_scores_pfr - Quarter-by-quarter scoring")
-print("  • scoring_tables_pfr - Play-by-play scoring details")
-# print("  • team_game_logs_pfr - Team performance by game")
-print("  • team_stats_pfr - Team statistics and rankings")
-print("  • team_conversions_pfr - 3rd/4th down efficiency")
-# print("  • passing_rushing_receiving_pfr - Offensive player stats")
-print("  • defense_game_logs_pfr - Defensive player stats")
-print("  • schedule_game_results_pfr - Schedule and game results data")
-print("  • game_logs_pfr - Comprehensive game data (games + team stats)")
+# ##### Final Print
+# print(f"📁 Final data: {final_pfr_dir}/")
+# print(f"📊 Available datasets:")
+# print("  • teams_pfr - Team information")
+# # print("  • games_pfr - Game results and metadata")
+# print("  • player_stats_pfr - Player statistics from PFR data (enhanced with season/week/team context)")
+# print("  • box_scores_pfr - Quarter-by-quarter scoring")
+# print("  • scoring_tables_pfr - Play-by-play scoring details")
+# # print("  • team_game_logs_pfr - Team performance by game")
+# print("  • team_stats_pfr - Team statistics and rankings")
+# print("  • team_conversions_pfr - 3rd/4th down efficiency")
+# # print("  • passing_rushing_receiving_pfr - Offensive player stats")
+# print("  • defense_game_logs_pfr - Defensive player stats")
+# print("  • schedule_game_results_pfr - Schedule and game results data")
+# print("  • game_logs_pfr - Comprehensive game data (games + team stats)")
