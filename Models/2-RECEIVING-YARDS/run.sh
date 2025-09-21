@@ -15,7 +15,7 @@ if ! [[ "$WEEK_NUM" =~ ^[1-9]$|^1[0-8]$ ]]; then # Validate week number (1-18 fo
 fi
 
 # Data prep
-mkdir data
+mkdir -p data
 cp ../../Scrapers/data/all_passing_rushing_receiving.csv data/
 cp ../../Scrapers/data/rosters/roster_2025.csv data/
 cp ../upcoming_games.csv data/
