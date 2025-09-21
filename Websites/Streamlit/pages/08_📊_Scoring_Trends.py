@@ -386,93 +386,88 @@ with col2:
 
     st.dataframe(styled_table, use_container_width=True, height=600)
 
-    # Most vulnerable by position section - use narrower container
-    # st.markdown('<h2 class="section-header">Most Vulnerable by Position</h2>', unsafe_allow_html=True)
+    # Most vulnerable by position section - 2x2 layout without nested columns
     st.write('####')
     
-    # Create centered container for 2x2 layout
-    center_col1, center_col2, center_col3 = st.columns([1, 4, 1])
+    # Create 2x2 layout directly at the main level
+    positions = ["QB", "WR", "TE", "RB"]
     
-    with center_col2:
-        # Create 2x2 layout directly without nested columns
-        positions = ["QB", "WR", "TE", "RB"]
-        
-        # Create two rows for 2x2 layout with minimal gaps
-        row1_col1, row1_col2 = st.columns([1, 1], gap="small")
-        row2_col1, row2_col2 = st.columns([1, 1], gap="small")
+    # Create two rows for 2x2 layout with minimal gaps
+    row1_col1, row1_col2 = st.columns([1, 1], gap="small")
+    row2_col1, row2_col2 = st.columns([1, 1], gap="small")
+
+    # Define which column each position goes to
+    position_columns = [
+        (row1_col1, "QB"),  # Top-left
+        (row1_col2, "WR"),  # Top-right
+        (row2_col1, "TE"),  # Bottom-left
+        (row2_col2, "RB")   # Bottom-right
+    ]
     
-        # Define which column each position goes to
-        position_columns = [
-            (row1_col1, "QB"),  # Top-left
-            (row1_col2, "WR"),  # Top-right
-            (row2_col1, "TE"),  # Bottom-left
-            (row2_col2, "RB")   # Bottom-right
-        ]
+    for col, pos in position_columns:
+        with col:
+            top5 = table.sort_values(pos, ascending=False).head(5)[["team",pos]]
+            title = f"{pos} Most Vulnerable" if pos != "QB" else "QB Most Vulnerable"
         
-        for col, pos in position_columns:
-            with col:
-                top5 = table.sort_values(pos, ascending=False).head(5)[["team",pos]]
-                title = f"{pos} Most Vulnerable" if pos != "QB" else "QB Most Vulnerable"
-            
-                # Build the complete HTML for each card
-                items_html = ""
-                for idx, (_, row) in enumerate(top5.iterrows(), 1):
-                    team = row['team']
-                    tds = int(row[pos])
-                    items_html += f"""
-                    <div class="vulnerable-item">
-                        <span class="vulnerable-team">{idx}. {team}</span>
-                        <span class="vulnerable-tds">{tds} TDs</span>
-                    </div>
-                    """
-                
-                # Use st.components.v1.html for proper HTML rendering
-                card_html = f"""
-                <style>
-                    .vulnerable-card {{
-                        background: white;
-                        border-radius: 12px;
-                        padding: 1.5rem;
-                        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-                        border: 1px solid #e5e7eb;
-                        margin: 0.25rem;
-                        min-height: 320px;
-                        width: 100%;
-                        box-sizing: border-box;
-                    }}
-                    .vulnerable-title {{
-                        font-size: 1.2rem;
-                        font-weight: 700;
-                        color: #dc2626;
-                        text-align: center;
-                        margin-bottom: 1rem;
-                        padding-bottom: 0.75rem;
-                        border-bottom: 1px solid #f3f4f6;
-                    }}
-                    .vulnerable-item {{
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        padding: 0.6rem 0;
-                        border-bottom: 1px solid #f3f4f6;
-                        font-size: 1rem;
-                    }}
-                    .vulnerable-item:last-child {{
-                        border-bottom: none;
-                    }}
-                    .vulnerable-team {{
-                        font-weight: 600;
-                        color: #374151;
-                    }}
-                    .vulnerable-tds {{
-                        font-weight: 700;
-                        color: #dc2626;
-                    }}
-                </style>
-                <div class="vulnerable-card">
-                    <div class="vulnerable-title">{title}</div>
-                    {items_html}
+            # Build the complete HTML for each card
+            items_html = ""
+            for idx, (_, row) in enumerate(top5.iterrows(), 1):
+                team = row['team']
+                tds = int(row[pos])
+                items_html += f"""
+                <div class="vulnerable-item">
+                    <span class="vulnerable-team">{idx}. {team}</span>
+                    <span class="vulnerable-tds">{tds} TDs</span>
                 </div>
                 """
-                
-                st.components.v1.html(card_html, height=380)
+            
+            # Use st.components.v1.html for proper HTML rendering
+            card_html = f"""
+            <style>
+                .vulnerable-card {{
+                    background: white;
+                    border-radius: 12px;
+                    padding: 1.5rem;
+                    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+                    border: 1px solid #e5e7eb;
+                    margin: 0.25rem;
+                    min-height: 320px;
+                    width: 100%;
+                    box-sizing: border-box;
+                }}
+                .vulnerable-title {{
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                    color: #dc2626;
+                    text-align: center;
+                    margin-bottom: 1rem;
+                    padding-bottom: 0.75rem;
+                    border-bottom: 1px solid #f3f4f6;
+                }}
+                .vulnerable-item {{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0.6rem 0;
+                    border-bottom: 1px solid #f3f4f6;
+                    font-size: 1rem;
+                }}
+                .vulnerable-item:last-child {{
+                    border-bottom: none;
+                }}
+                .vulnerable-team {{
+                    font-weight: 600;
+                    color: #374151;
+                }}
+                .vulnerable-tds {{
+                    font-weight: 700;
+                    color: #dc2626;
+                }}
+            </style>
+            <div class="vulnerable-card">
+                <div class="vulnerable-title">{title}</div>
+                {items_html}
+            </div>
+            """
+            
+            st.components.v1.html(card_html, height=380)
