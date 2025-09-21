@@ -17,10 +17,9 @@ vig = 1.04
 week_number = input("Enter the week number for these matchups (e.g., 1): ").strip()
 if not week_number.isdigit():
     week_number = "1"
-    
-# Download and process historical data from the database
-# Use absolute path for database
-DB_PATH = "/Users/td/Code/nfl-ai/Models/data/nfl.db"
+
+# Use database directly from Scrapers directory
+DB_PATH = "/Users/td/Code/nfl-ai/Scrapers/nfl.db"
 conn = sqlite3.connect(DB_PATH)
 query = "SELECT home_team, away_team, home_score, away_score, season, week, game_type FROM Games ORDER BY season, week"
 nfl_data = pd.read_sql_query(query, conn)
