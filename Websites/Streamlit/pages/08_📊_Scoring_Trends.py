@@ -47,7 +47,7 @@ st.markdown("""
     
     /* Card styling for metrics */
     .metric-card {
-        background: lightgray;
+        background: white;
         border-radius: 12px;
         padding: 1.5rem;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -261,12 +261,18 @@ with col2:
             """, unsafe_allow_html=True)
 
     # Defense rankings section
-    st.markdown('<h2 class="section-header">Defense Rankings</h2>', unsafe_allow_html=True)
+    # st.markdown('<h2 class="section-header">Defense Rankings</h2>', unsafe_allow_html=True)
+    st.write('####')
 
-    # Create styled table with rank column
+    # Create styled table with rank column and format numbers as integers
     display_table = table[["team","QB","WR","TE","RB","total"]].copy()
     display_table = display_table.rename(columns={"QB": "QB (rushing)"})
     display_table.index = [f"#{i}" for i in display_table.index]
+    
+    # Convert all numeric columns to integers to remove decimals
+    numeric_cols = ["QB (rushing)", "WR", "TE", "RB", "total"]
+    for col in numeric_cols:
+        display_table[col] = display_table[col].astype(int)
 
     # Style the dataframe with heatmap colors
     def style_heatmap(val):
@@ -286,9 +292,9 @@ with col2:
         else:
             return "text-align: center;"
 
-    # Apply styling to numeric columns
-    styled_table = display_table.style.applymap(style_heatmap, subset=["QB (rushing)", "RB", "WR", "TE"])
-    styled_table = styled_table.applymap(lambda x: "font-weight: bold; color: #e74c3c;" if isinstance(x, (int, float)) and x > 0 else "", subset=["total"])
+    # Apply styling to numeric columns (excluding total)
+    styled_table = display_table.style.map(style_heatmap, subset=["QB (rushing)", "WR", "TE", "RB"])
+    styled_table = styled_table.map(lambda x: "font-weight: bold; color: #2c3e50;" if isinstance(x, (int, float)) else "", subset=["total"])
 
     st.dataframe(styled_table, use_container_width=True, height=600)
 
@@ -296,46 +302,55 @@ with col2:
     # st.markdown('<h2 class="section-header">Most Vulnerable by Position</h2>', unsafe_allow_html=True)
     st.write('####')
     
-    # Create a wider container for the vulnerable section
-    vuln_col1, vuln_col2, vuln_col3 = st.columns([0.5, 5, 0.5])
+    # Create centered container for 2x2 layout
+    center_col1, center_col2, center_col3 = st.columns([1, 4, 1])
     
-    with vuln_col2:
-        # Create 2x2 layout with each box using 50% width
-        c1, c2 = st.columns([1, 1], gap="small")
-        
+    with center_col2:
+        # Create 2x2 layout directly without nested columns
         positions = ["QB", "WR", "TE", "RB"]
         
-        for i, pos in enumerate(positions):
-            top5 = table.sort_values(pos, ascending=False).head(5)[["team",pos]]
-            title = f"{pos} Most Vulnerable" if pos != "QB" else "QB Most Vulnerable"
+        # Create two rows for 2x2 layout with minimal gaps
+        row1_col1, row1_col2 = st.columns([1, 1], gap="small")
+        row2_col1, row2_col2 = st.columns([1, 1], gap="small")
+    
+        # Define which column each position goes to
+        position_columns = [
+            (row1_col1, "QB"),  # Top-left
+            (row1_col2, "WR"),  # Top-right
+            (row2_col1, "TE"),  # Bottom-left
+            (row2_col2, "RB")   # Bottom-right
+        ]
+        
+        for col, pos in position_columns:
+            with col:
+                top5 = table.sort_values(pos, ascending=False).head(5)[["team",pos]]
+                title = f"{pos} Most Vulnerable" if pos != "QB" else "QB Most Vulnerable"
             
-            # Build the complete HTML for each card
-            items_html = ""
-            for idx, (_, row) in enumerate(top5.iterrows(), 1):
-                team = row['team']
-                tds = int(row[pos])
-                items_html += f"""
-                <div class="vulnerable-item">
-                    <span class="vulnerable-team">{idx}. {team}</span>
-                    <span class="vulnerable-tds">{tds} TDs</span>
-                </div>
-                """
-            
-            # Use st.components.v1.html for proper HTML rendering
-            card_html = f"""
+                # Build the complete HTML for each card
+                items_html = ""
+                for idx, (_, row) in enumerate(top5.iterrows(), 1):
+                    team = row['team']
+                    tds = int(row[pos])
+                    items_html += f"""
+                    <div class="vulnerable-item">
+                        <span class="vulnerable-team">{idx}. {team}</span>
+                        <span class="vulnerable-tds">{tds} TDs</span>
+                    </div>
+                    """
+                
+                # Use st.components.v1.html for proper HTML rendering
+                card_html = f"""
                 <style>
                     .vulnerable-card {{
-                        background: lightgray;
+                        background: white;
                         border-radius: 12px;
                         padding: 1.5rem;
                         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
                         border: 1px solid #e5e7eb;
-                        margin-bottom: 1rem;
+                        margin: 0.25rem;
                         min-height: 320px;
                         width: 100%;
                         box-sizing: border-box;
-                        margin-left: -0.5rem;
-                        margin-right: -0.5rem;
                     }}
                     .vulnerable-title {{
                         font-size: 1.2rem;
@@ -372,10 +387,4 @@ with col2:
                 </div>
                 """
                 
-            # Choose column based on position index
-            if i < 2:  # QB, WR go in first column
-                with c1:
-                    st.components.v1.html(card_html, height=380)
-            else:  # RB, TE go in second column
-                with c2:
-                    st.components.v1.html(card_html, height=380)
+                st.components.v1.html(card_html, height=380)
