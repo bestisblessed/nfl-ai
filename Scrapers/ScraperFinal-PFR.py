@@ -199,7 +199,7 @@ if WEEK_LIMIT is not None:
     if os.path.exists(f'{final_pfr_dir}/player_stats_pfr.csv'):
         df = pd.read_csv(f'{final_pfr_dir}/player_stats_pfr.csv')
         original_count = len(df)
-        # Only filter 2025 data, keep all historical seasons
+        # Only filter 2025 data, keep all historical seasons (2015-2024)
         df_2025 = df[df['season'] == 2025]
         df_other_seasons = df[df['season'] != 2025]
         df_2025_filtered = df_2025[df_2025['week'] <= WEEK_LIMIT]
@@ -214,7 +214,7 @@ if WEEK_LIMIT is not None:
         original_count = len(df)
         df['week'] = df['Game_ID'].str.extract(r'(\d+)_(\d+)_')[1].astype(int)
         df['season'] = df['Game_ID'].str.extract(r'(\d+)_(\d+)_')[0].astype(int)
-        # Only filter 2025 data, keep all historical seasons
+        # Only filter 2025 data, keep all historical seasons (2015-2024)
         df_2025 = df[df['season'] == 2025]
         df_other_seasons = df[df['season'] != 2025]
         df_2025_filtered = df_2025[df_2025['week'] <= WEEK_LIMIT]
@@ -229,7 +229,7 @@ if WEEK_LIMIT is not None:
         original_count = len(df)
         df['week'] = df['game_id'].str.extract(r'(\d+)_(\d+)_')[1].astype(int)
         df['season'] = df['game_id'].str.extract(r'(\d+)_(\d+)_')[0].astype(int)
-        # Only filter 2025 data, keep all historical seasons
+        # Only filter 2025 data, keep all historical seasons (2015-2024)
         df_2025 = df[df['season'] == 2025]
         df_other_seasons = df[df['season'] != 2025]
         df_2025_filtered = df_2025[df_2025['week'] <= WEEK_LIMIT]
@@ -243,7 +243,7 @@ if WEEK_LIMIT is not None:
         df = pd.read_csv(f'{final_pfr_dir}/schedule_game_results_pfr.csv')
         original_count = len(df)
         df['Week_numeric'] = pd.to_numeric(df['Week'], errors='coerce')
-        # Only filter 2025 data, keep all historical seasons
+        # Only filter 2025 data, keep all historical seasons (2015-2024)
         df_2025 = df[df['Season'] == 2025]
         df_other_seasons = df[df['Season'] != 2025]
         df_2025_filtered = df_2025[df_2025['Week_numeric'] <= WEEK_LIMIT]
@@ -258,7 +258,7 @@ if WEEK_LIMIT is not None:
         original_count = len(df)
         df['week'] = df['game_id'].str.extract(r'(\d+)_(\d+)_')[1].astype(int)
         df['season'] = df['game_id'].str.extract(r'(\d+)_(\d+)_')[0].astype(int)
-        # Only filter 2025 data, keep all historical seasons
+        # Only filter 2025 data, keep all historical seasons (2015-2024)
         df_2025 = df[df['season'] == 2025]
         df_other_seasons = df[df['season'] != 2025]
         df_2025_filtered = df_2025[df_2025['week'] <= WEEK_LIMIT]
@@ -274,7 +274,7 @@ print(f"🎯 FILTERING SUMMARY")
 print(f"{'='*80}")
 if WEEK_LIMIT:
     print(f"✅ Filtered 2025 data to include only games from weeks 1-{WEEK_LIMIT}")
-    print(f"✅ Preserved all historical seasons (2018-2024) completely")
+    print(f"✅ Preserved all historical seasons (2015-2024) completely")
     print(f"✅ Removed unplayed 2025 games (0-0 scores) from all datasets")
     print(f"✅ This ensures only completed 2025 games are included while keeping all historical data")
 else:
