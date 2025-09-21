@@ -204,8 +204,17 @@ def infer_pos(pid: str, lut: dict) -> str | None:
             return v
     return None
 
-def compute(def_stats: pd.DataFrame, roster: pd.DataFrame) -> pd.DataFrame:
-    df = def_stats.loc[def_stats["season"].astype("Int64") == 2025].copy()
+def compute(def_stats: pd.DataFrame, roster: pd.DataFrame, season_filter: str) -> pd.DataFrame:
+    # Parse season filter
+    if '-' in season_filter:
+        # Range of seasons (e.g., "2023-2025")
+        start_year, end_year = map(int, season_filter.split('-'))
+        df = def_stats.loc[def_stats["season"].astype("Int64").between(start_year, end_year)].copy()
+    else:
+        # Single season
+        year = int(season_filter)
+        df = def_stats.loc[def_stats["season"].astype("Int64") == year].copy()
+    
     lut = build_position_lookup(roster)
     df["position"] = df["player_id"].apply(lambda x: infer_pos(x, lut))
     df["rush_td"] = pd.to_numeric(df.get("rush_td", 0), errors="coerce").fillna(0)
@@ -235,10 +244,89 @@ def compute(def_stats: pd.DataFrame, roster: pd.DataFrame) -> pd.DataFrame:
 # st.markdown('<h1 class="main-title">NFL 2025: TDs Allowed by Defense</h1>', unsafe_allow_html=True)
 # st.markdown('<p class="subtitle">Analyzing touchdowns allowed by position group • QB = rushing TDs only</p>', unsafe_allow_html=True)
 
-with col2:
-    with st.spinner("Loading data from GitHub…"):
+# Load data and season selection in sidebar
+with st.sidebar:
+    with st.spinner("Loading data..."):
         roster, stats = load()
-    table = compute(stats, roster)
+    
+    st.markdown("### 📅 Season Selection")
+    
+    # Get available seasons from the data
+    available_seasons = sorted(stats["season"].dropna().unique().astype(int))
+    
+    # Quick selection buttons
+    st.markdown("**Quick Select:**")
+    
+    if st.button("2025", use_container_width=True):
+        st.session_state.selected_season = "2025"
+    if st.button("2024", use_container_width=True):
+        st.session_state.selected_season = "2024"
+    if st.button("2023", use_container_width=True):
+        st.session_state.selected_season = "2023"
+    if st.button("2022", use_container_width=True):
+        st.session_state.selected_season = "2022"
+    
+    # if st.button("2023-2025", use_container_width=True):
+    #     st.session_state.selected_season = "2023-2025"
+    
+    st.markdown("**Custom Range:**")
+    
+    # Custom range selection - default to 2025
+    start_season = st.selectbox(
+        "From:",
+        options=available_seasons,
+        index=available_seasons.index(2025) if 2025 in available_seasons else len(available_seasons)-1,
+        key="start_season"
+    )
+    
+    end_season = st.selectbox(
+        "To:",
+        options=available_seasons,
+        index=available_seasons.index(2025) if 2025 in available_seasons else len(available_seasons)-1,
+        key="end_season"
+    )
+    
+    # Create season filter string from custom range
+    if start_season == end_season:
+        custom_season = str(start_season)
+    else:
+        custom_season = f"{start_season}-{end_season}"
+    
+    # Initialize session state for custom range
+    if 'custom_range' not in st.session_state:
+        st.session_state.custom_range = custom_season
+    
+    # Update custom range when dropdowns change
+    if st.session_state.custom_range != custom_season:
+        st.session_state.custom_range = custom_season
+        # Clear quick select when custom range changes
+        if 'selected_season' in st.session_state:
+            del st.session_state.selected_season
+    
+    # Determine final selection
+    if 'selected_season' in st.session_state:
+        selected_season = st.session_state.selected_season
+    else:
+        selected_season = st.session_state.custom_range
+    
+    # Display selected range
+    if '-' in selected_season:
+        start, end = map(int, selected_season.split('-'))
+        st.success(f"📊 **{start}-{end}** ({end - start + 1} seasons)")
+    else:
+        st.success(f"📊 **{selected_season}** season")
+    
+    st.markdown("---")
+
+with col2:
+    
+    # Display dynamic title based on selected season
+    if '-' in selected_season:
+        st.markdown(f"### NFL {selected_season}: Touchdowns Allowed by Defense")
+    else:
+        st.markdown(f"### NFL {selected_season}: Touchdowns Allowed by Defense")
+    
+    table = compute(stats, roster, selected_season)
 
     # Summary cards section
     positions = ["QB","WR","TE","RB"]

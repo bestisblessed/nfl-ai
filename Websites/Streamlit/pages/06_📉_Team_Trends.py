@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import sqlite3
+import os
 
 # Page configuration
 st.set_page_config(
