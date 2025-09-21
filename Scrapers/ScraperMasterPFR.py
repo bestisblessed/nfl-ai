@@ -7,8 +7,16 @@ from time import sleep
 import time
 from datetime import datetime
 
+# Create Directory
 final_dir = 'FINAL'
 os.makedirs(final_dir, exist_ok=True)
+
+# Clear Directory
+for f in os.listdir(final_dir):
+    file_path = os.path.join(final_dir, f)
+    if os.path.isfile(file_path):
+        os.remove(file_path)
+        
 start_time = datetime.now()
 
 print("🚀 Starting NFL PFR Scraper...")
@@ -366,16 +374,9 @@ headers = ['URL', 'Team', '1', '2', '3', '4', 'OT1', 'OT2', 'OT3', 'OT4', 'Final
 for year_to_scrape in range(2024, 2025):
     csv_file_path = f'{final_dir}/SR-box-scores/all_box_scores_{year_to_scrape}.csv'
     games_csv_path = f'{final_dir}/game_logs.csv'
-    existing_urls = set()
-    if os.path.exists(csv_file_path):
-        with open(csv_file_path, 'r') as csvfile:
-            reader = csv.DictReader(csvfile)
-            for row in reader:
-                existing_urls.add(row['URL'])
-    with open(csv_file_path, 'a', newline='') as csvfile:
+    with open(csv_file_path, 'w', newline='') as csvfile:
         score_writer = csv.writer(csvfile)
-        if os.path.getsize(csv_file_path) == 0:
-            score_writer.writerow(headers)
+        score_writer.writerow(headers)
         game_urls = []
         with open(games_csv_path, 'r') as csvfile:
             reader = csv.DictReader(csvfile)
@@ -388,9 +389,6 @@ for year_to_scrape in range(2024, 2025):
                 if row['season'] == str(year_to_scrape) and game_dt <= now_dt:
                     game_urls.append(row['pfr_url'])
         for url in game_urls:
-            if url in existing_urls:
-                print(f"Skipping already scraped game: {url}")
-                continue
             try:
                 print(f"Scraping game: {url}")
                 response = requests.get(url)
@@ -430,16 +428,9 @@ else:
 os.makedirs(f'{final_dir}/SR-scoring-tables/', exist_ok=True)
 for year_to_scrape in range(2024, 2025):
     output_filename = f'{final_dir}/SR-scoring-tables/all_nfl_scoring_tables_{year_to_scrape}.csv'
-    existing_game_ids = set()
-    if os.path.exists(output_filename):
-        df_existing = pd.read_csv(output_filename)
-        if 'Game_ID' in df_existing.columns:
-            existing_game_ids = set(df_existing['Game_ID'].unique())
-    mode = 'a' if os.path.exists(output_filename) else 'w'
-    with open(output_filename, mode, newline='') as output_csvfile:
+    with open(output_filename, 'w', newline='') as output_csvfile:
         csvwriter = csv.writer(output_csvfile)
-        if mode == 'w':
-            csvwriter.writerow(['Quarter', 'Time', 'Team', 'Detail', 'Team_1', 'Team_2', 'Game_ID'])
+        csvwriter.writerow(['Quarter', 'Time', 'Team', 'Detail', 'Team_1', 'Team_2', 'Game_ID'])
         games_df_temp = pd.read_csv(f'{final_dir}/game_logs.csv')
         games_df_temp['pfr'] = games_df_temp['game_id'].str.replace('_', '').str.lower()
         rows = []
@@ -454,8 +445,6 @@ for year_to_scrape in range(2024, 2025):
         for row in rows:
             pfr_value = row['pfr']
             game_id = row['game_id']
-            if game_id in existing_game_ids:
-                continue
             url = f"https://www.pro-football-reference.com/boxscores/{pfr_value}.htm"
             max_retries = 3
             for attempt in range(max_retries):
@@ -508,8 +497,6 @@ team_stats_headers = [
 ]
 for year in range(2024, 2025):
     output_file = f'{final_dir}/SR-team-stats/all_teams_stats_{year}.csv'
-    if os.path.exists(output_file):
-        continue
     all_team_stats = []
     for team in pfr_teams:
         abbreviation, name = team
@@ -667,8 +654,6 @@ for year in range(2024, 2025):
     for team in pfr_teams:
         abbreviation, name = team
         team_file = f'{final_dir}/SR-team-conversions/{abbreviation}_{year}_team_conversions.csv'
-        if os.path.exists(team_file):
-            continue
         url = f'https://www.pro-football-reference.com/teams/{abbreviation}/{year}.htm'
         max_retries = 3
         retry_delay = 10
@@ -731,20 +716,13 @@ else:
 os.makedirs(f'{final_dir}/SR-passing-rushing-receiving-game-logs/', exist_ok=True)
 for year_to_scrape in range(2024, 2025):
     output_filename = f'{final_dir}/SR-passing-rushing-receiving-game-logs/all_passing_rushing_receiving_{year_to_scrape}.csv'
-    existing_game_ids = set()
-    if os.path.exists(output_filename):
-        df_existing = pd.read_csv(output_filename)
-        if 'game_id' in df_existing.columns:
-            existing_game_ids = set(df_existing['game_id'].unique())
-    mode = 'a' if os.path.exists(output_filename) else 'w'
-    with open(output_filename, mode, newline='') as output_csvfile:
+    with open(output_filename, 'w', newline='') as output_csvfile:
         csvwriter = csv.writer(output_csvfile)
-        if mode == 'w':
-            csvwriter.writerow([
-                'player', 'player_id', 'team', 'pass_cmp', 'pass_att', 'pass_yds', 'pass_td', 'pass_int', 
-                'pass_sacked', 'pass_sacked_yds', 'pass_long', 'pass_rating', 'rush_att', 'rush_yds', 'rush_td', 
-                'rush_long', 'targets', 'rec', 'rec_yds', 'rec_td', 'rec_long', 'fumbles', 'fumbles_lost', 'game_id'
-            ])
+        csvwriter.writerow([
+            'player', 'player_id', 'team', 'pass_cmp', 'pass_att', 'pass_yds', 'pass_td', 'pass_int', 
+            'pass_sacked', 'pass_sacked_yds', 'pass_long', 'pass_rating', 'rush_att', 'rush_yds', 'rush_td', 
+            'rush_long', 'targets', 'rec', 'rec_yds', 'rec_td', 'rec_long', 'fumbles', 'fumbles_lost', 'game_id'
+        ])
         games_df_temp = pd.read_csv(f'{final_dir}/game_logs.csv')
         games_df_temp['pfr'] = games_df_temp['game_id'].str.replace('_', '').str.lower()
         rows = []
@@ -759,8 +737,6 @@ for year_to_scrape in range(2024, 2025):
         for row in rows:
             pfr_value = row['pfr']
             game_id = row['game_id']
-            if game_id in existing_game_ids:
-                continue
             url = f"https://www.pro-football-reference.com/boxscores/{pfr_value}.htm"
             max_retries = 3
             for attempt in range(max_retries):
@@ -828,16 +804,9 @@ headers = [
 ]
 for year_to_scrape in range(2024, 2025):
     output_filename = f'{final_dir}/SR-defense-game-logs/all_defense_{year_to_scrape}.csv'
-    existing_game_ids = set()
-    if os.path.exists(output_filename):
-        df_existing = pd.read_csv(output_filename)
-        if 'game_id' in df_existing.columns:
-            existing_game_ids = set(df_existing['game_id'].unique())
-    mode = 'a' if os.path.exists(output_filename) else 'w'
-    with open(output_filename, mode, newline='') as output_csvfile:
+    with open(output_filename, 'w', newline='') as output_csvfile:
         csvwriter = csv.writer(output_csvfile)
-        if mode == 'w':
-            csvwriter.writerow(headers)
+        csvwriter.writerow(headers)
         games_df_temp = pd.read_csv(f'{final_dir}/game_logs.csv')
         games_df_temp['pfr'] = games_df_temp['game_id'].str.replace('_', '').str.lower()
         rows = []
@@ -854,8 +823,6 @@ for year_to_scrape in range(2024, 2025):
                 continue
             pfr_value = row['pfr']
             game_id = row['game_id']
-            if game_id in existing_game_ids:
-                continue
             url = f"https://www.pro-football-reference.com/boxscores/{pfr_value}.htm"
             max_retries = 3
             for attempt in range(max_retries):
