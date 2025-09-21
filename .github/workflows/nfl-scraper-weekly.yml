@@ -28,7 +28,8 @@ jobs:
           python3 -m pip install -U pip
           python3 -m pip install pandas requests beautifulsoup4 lxml
       - name: Execute scraper
-        run: python3 ScraperMasterPFR.py 2>&1 | tee log.log
+        run: python3 -u ScraperMasterPFR.py 2>&1 | tee log.log
+        # run: python3 ScraperMasterPFR.py 2>&1 | tee log.log
       - name: Upload results
         uses: actions/upload-artifact@v4
         with:
