@@ -20,7 +20,7 @@ os.makedirs('data/defense', exist_ok=True)
 # })
 
 games = pd.read_csv('data/games.csv')
-for year in range(2015, 2026):
+for year in range(2020, 2026):
     print(f"Scraping defense game logs for {year}")
     yearly_path = f'./data/defense/all_defense_{year}.csv'
     
