@@ -8,8 +8,6 @@ from bs4 import BeautifulSoup, Comment
 os.makedirs('data', exist_ok=True)
 os.makedirs('data/defense', exist_ok=True)
 
-games = pd.read_csv('data/games.csv')
-
 # session = requests.Session()
 # session.headers.update({'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'})
 # session.headers.update({
@@ -21,7 +19,8 @@ games = pd.read_csv('data/games.csv')
 #     'Upgrade-Insecure-Requests': '1'
 # })
 
-for year in range(2023, 2026):
+games = pd.read_csv('data/games.csv')
+for year in range(2015, 2026):
     print(f"Scraping defense game logs for {year}")
     yearly_path = f'./data/defense/all_defense_{year}.csv'
     with open(yearly_path, 'w', newline='') as f:
