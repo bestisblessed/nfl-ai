@@ -29,4 +29,12 @@ echo "6. Scraping defense..." | tee -a log.txt
 python -u defense-pfr.py 2>&1 | tee -a log.txt
 echo "=================================================================================" | tee -a log.txt && sleep 10
 
+echo "7. Scraping box scores..." | tee -a log.txt
+python -u box-scores-pfr.py 2>&1 | tee -a log.txt
+echo "=================================================================================" | tee -a log.txt && sleep 10
+
+echo "8. Scraping team schedule and game results..." | tee -a log.txt
+python -u team-schedule-game-results-pfr.py 2>&1 | tee -a log.txt
+echo "=================================================================================" | tee -a log.txt && sleep 10
+
 echo "PFR Scraper Complete" | tee -a log.txt
