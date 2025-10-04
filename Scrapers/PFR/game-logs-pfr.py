@@ -156,6 +156,24 @@ for year in years:
     else:
         print(f"-> No game logs found for {year}")
     time.sleep(10)
+
+# Combine all years into final merged file
+all_game_logs = []
+for year in years:
+    year_file = f'./data/game-logs/all_teams_game_logs_{year}.csv'
+    if os.path.exists(year_file):
+        year_df = pd.read_csv(year_file)
+        all_game_logs.append(year_df)
+
+if all_game_logs:
+    df = pd.concat(all_game_logs, ignore_index=True)
+    df = df.drop_duplicates()
+    df = df.sort_values(['team_name', 'week_num'])
+    df.to_csv('./data/game_logs.csv', index=False)
+    print(f"\nSaved {len(df)} total game log entries to game_logs.csv")
+else:
+    print("\nNo game logs found to merge")
+
 print("\n" + "="*80)
 print("All game logs scraped successfully!")
 print("="*80)
