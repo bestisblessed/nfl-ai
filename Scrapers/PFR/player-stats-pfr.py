@@ -7,11 +7,18 @@ import os
 os.makedirs('./data', exist_ok=True)
 os.makedirs('./data/player-stats', exist_ok=True)
 
-years = [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]
+# years = [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]
+years = [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]
 # years = [2023]
 
 all_player_stats = []
 for year in years:
+    year_file = f'./data/player-stats/player_stats_{year}.csv'
+    
+    # Delete existing year file to start fresh
+    if os.path.exists(year_file):
+        os.remove(year_file)
+    
     print(f"Scraping player stats for {year}...")
     url = f'https://www.pro-football-reference.com/years/{year}/fantasy.htm'
     headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
