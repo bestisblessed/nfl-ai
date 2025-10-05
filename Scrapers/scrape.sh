@@ -23,12 +23,12 @@ fi
 # mv logs/log-pfr.txt logs/log-pfr.txt.bak
 
 echo "================================================================================="
-echo "STARTING NFL DATA SCRAPER (2017-2024 seasons, filtering unplayed games after week $WEEK_LIMIT)"
+echo "STARTING NFL DATA SCRAPER (2025 seasons, filtering unplayed games after week $WEEK_LIMIT)"
 echo "================================================================================="
 python -u ScraperFinal.py 2>&1 | tee log.txt
 
 echo ""
 echo "================================================================================="
-echo "PFR ONLY DATABASE (2017-2024 seasons, filtering unplayed games after week $WEEK_LIMIT)"
+echo "PFR ONLY DATABASE (2025 seasons, filtering unplayed games after week $WEEK_LIMIT)"
 echo "================================================================================="
 python -u ScraperFinal-PFR.py $WEEK_LIMIT 2>&1 | tee -a log.txt

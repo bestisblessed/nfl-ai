@@ -34,7 +34,7 @@
 # **Defense Game Logs**
 # Scrapes defensive statistics for players in each game and saves the data to CSV files.
 
-# **Note: This scraper focuses on seasons 2017-2024**
+# **Note: This scraper focuses on 2025 season updates**
   
 
 import pandas as pd
@@ -150,7 +150,7 @@ df_selected.to_csv('./data/games.csv', index=False)
 
 ##### Create 'PlayerStats' in nfl.db #####
 dataframes = []
-for year in range(2017, 2025):
+for year in range(2025, 2026):
     file_path = os.path.join('./data/player-stats/', f"player_stats_{year}.csv")
     # Always download current year player stats even if file exists
     url = f"https://github.com/nflverse/nflverse-data/releases/download/player_stats/player_stats_{year}.csv"
@@ -238,8 +238,8 @@ conn.close()
 print("Player stats saved to 'PlayerStats' table in nfl.db")
 
 
-##### Create 'Rosters' in nfl.db (2017-2024) #####
-for year in range(2017, 2025):
+##### Create 'Rosters' in nfl.db (2025) #####
+for year in range(2025, 2026):
     file_path = f"./data/rosters/roster_{year}.csv"
     # Always download current year roster data even if it exists
     url = f"https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_{year}.csv"
@@ -251,7 +251,7 @@ for year in range(2017, 2025):
     else:
         print(f"Failed to download data for the year {year}")
 dataframes = []
-for year in range(2017, 2025):
+for year in range(2025, 2026):
     file_path = f'./data/rosters/roster_{year}.csv'
     if os.path.exists(file_path):
         df = pd.read_csv(file_path)
@@ -340,7 +340,7 @@ for idx, team in enumerate(standardized_team_list_sorted, 1):
 rosters_df.to_csv('data/rosters.csv', index=False)
 
 
-##### Scrape Box Scores (2017-2024) #####
+##### Scrape Box Scores (2025) #####
 print("\n" + "*"*80 + "\n")
 os.makedirs('./data/SR-box-scores/', exist_ok=True)
 df = pd.read_csv('./data/games.csv')
@@ -350,7 +350,7 @@ df.to_csv('./data/games.csv', index=False)
 games_csv_path = 'data/games.csv'
 headers = ['URL', 'Team', '1', '2', '3', '4', 'OT1', 'OT2', 'OT3', 'OT4', 'Final']
 
-for year_to_scrape in range(2017, 2025):
+for year_to_scrape in range(2025, 2026):
     output_filename = f'./data/SR-box-scores/all_box_scores_{year_to_scrape}.csv'
     existing_urls = set()
     if os.path.exists(output_filename):
@@ -425,9 +425,9 @@ df = df.apply(shift_to_final, axis=1)
 df.to_csv('data/all_box_scores.csv', index=False)
 
 
-##### Scrape Scoring Tables/Touchdown Logs (2017-2024) #####
+##### Scrape Scoring Tables/Touchdown Logs (2025) #####
 print("\n" + "*"*80 + "\n")
-for year_to_scrape in range(2017, 2025):
+for year_to_scrape in range(2025, 2026):
     output_filename = f'./data/SR-scoring-tables/all_nfl_scoring_tables_{year_to_scrape}.csv'
     existing_game_ids = set()
     if os.path.exists(output_filename):
@@ -502,7 +502,7 @@ merged_dataframe.to_csv(output_file, index=False)
 print(f"Merged dataset saved as {output_file}")
 
 
-##### Scrape Team Game Logs (2017-2024) #####
+##### Scrape Team Game Logs (2025) #####
 print("\n" + "*"*80 + "\n")
 data_dir = './data/SR-game-logs'
 os.makedirs(data_dir, exist_ok=True)
@@ -589,7 +589,7 @@ opponent_game_logs_headers = [
     # 'pass_cmp_perc', 'pass_rating', 'rush_att', 'rush_yds', 'rush_yds_per_att', 'rush_td', 
     # 'fgm', 'fga', 'xpm', 'xpa', 'punt', 'punt_yds', 'third_down_success', 'third_down_att', 
     # 'fourth_down_success', 'fourth_down_att', 'time_of_poss', 'Team_Name'
-for year in range(2017, 2025):
+for year in range(2025, 2026):
     team_file = f'./data/SR-game-logs/all_teams_game_logs_{year}.csv'
     opponent_file = f'./data/SR-opponent-game-logs/all_teams_opponent_game_logs_{year}.csv'
     # Always process current year team game logs even if files exist
@@ -878,7 +878,7 @@ team_stats_headers = [
     'Player', 'PF', 'Yds', 'Ply', 'Y/P', 'TO', 'FL', '1stD', 'Cmp', 'Att', 'Yds', 'TD', 'Int', 'NY/A',
     '1stD', 'Att', 'Yds', 'TD', 'Y/A', '1stD', 'Pen', 'Yds', '1stPy', '#Dr', 'Sc%', 'TO%', 'Start', 'Time', 'Plays', 'Yds', 'Pts', 'Team'
 ]
-for year in range(2017, 2025):
+for year in range(2025, 2026):
     output_file = f'{data_dir}/all_teams_stats_{year}.csv'
     if os.path.exists(output_file):
         print(f"Skipping year {year}, file already exists.")
@@ -995,7 +995,7 @@ schedule_headers = [
     'Opp1stD', 'OppTotYd', 'OppPassY', 'OppRushY', 'TO_won',
     'Offense', 'Defense', 'Sp. Tms'
 ]
-for year in range(2017, 2025):
+for year in range(2025, 2026):
     all_games = []  
     for team in teams:
         abbreviation, name = team
@@ -1143,7 +1143,7 @@ team_conversions_headers = [
     'Player', '3DAtt', '3DConv', '4DAtt', '4DConv', '4D%', 'RZAtt', 'RZTD', 'RZPct', 'Team'
     # 'Player', '3DAtt', '3DConv', '3D%', '4DAtt', '4DConv', '4D%', 'RZAtt', 'RZTD', 'RZPct', 'Team'
 ]
-for year in range(2017, 2025):
+for year in range(2025, 2026):
     for team in teams:
         abbreviation, name = team
         team_file = f'{data_dir}/{abbreviation}_{year}_team_conversions.csv'
@@ -1249,7 +1249,7 @@ print("Columns 'home_spread', 'away_spread', 'team_favorite', and 'team_covered'
 ##### Passing/Rushing/Receiving #####
 print("\n" + "*"*80 + "\n")
 os.makedirs('./data/SR-passing-rushing-receiving-game-logs/', exist_ok=True)
-for year_to_scrape in range(2017, 2025):
+for year_to_scrape in range(2025, 2026):
     output_filename = f'./data/SR-passing-rushing-receiving-game-logs/all_passing_rushing_receiving_{year_to_scrape}.csv'
     existing_game_ids = set()
     if os.path.exists(output_filename):
@@ -1425,7 +1425,7 @@ headers = [
     'tackles_combined', 'tackles_solo', 'tackles_assists', 'tackles_loss', 'qb_hits', 'fumbles_rec',
     'fumbles_rec_yds', 'fumbles_rec_td', 'fumbles_forced', 'game_id'
 ]
-for year_to_scrape in range(2017, 2025):
+for year_to_scrape in range(2025, 2026):
     output_filename = f'./data/SR-defense-game-logs/all_defense_{year_to_scrape}.csv'
     existing_game_ids = set()
     if os.path.exists(output_filename):
@@ -1495,7 +1495,7 @@ for year_to_scrape in range(2017, 2025):
 # df = pd.read_csv('./data/defense-game-logs/all_defense_2025.csv')
 # df.dropna(inplace=True)
 # df.to_csv('./data/defense-game-logs/all_defense_2025.csv', index=False)
-for year in range(2017, 2025):
+for year in range(2025, 2026):
     file_path = f'./data/SR-defense-game-logs/all_defense_{year}.csv'
     try:
         df = pd.read_csv(file_path)
@@ -1521,14 +1521,14 @@ final_dir = 'final_data'
 if not os.path.exists(final_dir):
     os.makedirs(final_dir)
 current_date = datetime.now().strftime("%b_%d_%Y").upper()
-print("Regenerating final files with all available historical data...")
-games_df = pd.read_csv('data/games.csv') # Games: Load from data/games.csv (contains 2017-2024)
+print("Regenerating final files with 2025 season data...")
+games_df = pd.read_csv('data/games.csv') # Games: Load from data/games.csv (contains 2025)
 games_df.to_csv(f"{final_dir}/Games_{current_date}.csv", index=False)
 print(f"Regenerated Games: {len(games_df)} total games")
-player_stats_df = pd.read_csv('data/player_stats.csv') # PlayerStats: Load from data/player_stats.csv (contains 2017-2024)
+player_stats_df = pd.read_csv('data/player_stats.csv') # PlayerStats: Load from data/player_stats.csv (contains 2025)
 player_stats_df.to_csv(f"{final_dir}/PlayerStats_{current_date}.csv", index=False)
 print(f"Regenerated PlayerStats: {len(player_stats_df)} total records")
-rosters_df = pd.read_csv('data/rosters.csv') # Rosters: Load from data/rosters.csv (contains 2017-2024)
+rosters_df = pd.read_csv('data/rosters.csv') # Rosters: Load from data/rosters.csv (contains 2025)
 rosters_df.to_csv(f"{final_dir}/Rosters_{current_date}.csv", index=False)
 print(f"Regenerated Rosters: {len(rosters_df)} total records")
 db_path = 'nfl.db' # Teams: Static data, load from database
@@ -1542,6 +1542,7 @@ print(f"Regenerated Teams: {len(teams_df)} total teams")
 current_date_str = datetime.now().strftime("%b_%d_%Y").upper()
 file_name = f"final_data/Games_{current_date_str}.csv"
 games_df = pd.read_csv(file_name)
+games_df.rename(columns={'gameday': 'date'}, inplace=True)
 games_df['date'] = pd.to_datetime(games_df['date'], errors='coerce')
 current_date = datetime.now()
 cleaned_games_df = games_df[games_df['date'] <= current_date]
