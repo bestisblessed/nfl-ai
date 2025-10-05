@@ -1,8 +1,8 @@
 Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
 1,Sun,September 7,1:00PM ET,boxscore,L,,0-1,,Tampa Bay Buccaneers,20,23,23,358,289,69,,16,260,159,101,,9.79,-7.74,-5.47
-2,Sun,September 14,8:20PM ET,preview,,,,@,Minnesota Vikings,,,,,,,,,,,,,,,
-3,Sun,September 21,1:00PM ET,preview,,,,@,Carolina Panthers,,,,,,,,,,,,,,,
-4,Sun,September 28,1:00PM ET,preview,,,,,Washington Commanders,,,,,,,,,,,,,,,
+2,Sun,September 14,8:20PM ET,boxscore,W,,1-1,@,Minnesota Vikings,22,6,19,326,108,218,1,10,198,120,78,4,-1.23,15.15,4.06
+3,Sun,September 21,1:00PM ET,boxscore,L,,1-2,@,Carolina Panthers,0,30,17,332,201,131,3,15,224,114,110,1,-17.15,-2.66,-6.93
+4,Sun,September 28,1:00PM ET,boxscore,W,,2-2,,Washington Commanders,34,27,24,435,307,128,1,17,294,147,147,1,17.75,-6.89,-2.18
 5,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
 6,Mon,October 13,7:15PM ET,preview,,,,,Buffalo Bills,,,,,,,,,,,,,,,
 7,Sun,October 19,8:20PM ET,preview,,,,@,San Francisco 49ers,,,,,,,,,,,,,,,

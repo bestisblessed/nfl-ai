@@ -2,6 +2,7 @@
 
 python data.py
 mkdir -p data/projections/
+cp /Users/td/Code/nfl-ai/Scrapers/final_data_pfr/player_stats_pfr.csv data/
 cp /Users/td/Code/nfl-ai/Models/0-FINAL-REPORTS/* data/projections/
 cp /Users/td/Code/nfl-ai/Models/upcoming_games.csv .
 

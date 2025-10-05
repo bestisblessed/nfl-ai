@@ -1,8 +1,8 @@
 Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
 1,Fri,September 5,8:00PM ET,boxscore,L,,0-1,@,Los Angeles Chargers,21,27,18,347,249,98,,22,394,304,90,,8.20,-11.87,1.45
-2,Sun,September 14,4:25PM ET,preview,,,,,Philadelphia Eagles,,,,,,,,,,,,,,,
-3,Sun,September 21,8:20PM ET,preview,,,,@,New York Giants,,,,,,,,,,,,,,,
-4,Sun,September 28,4:25PM ET,preview,,,,,Baltimore Ravens,,,,,,,,,,,,,,,
+2,Sun,September 14,4:25PM ET,boxscore,L,,0-2,,Philadelphia Eagles,17,20,17,294,173,121,1,16,216,94,122,,-0.80,-0.21,-4.07
+3,Sun,September 21,8:20PM ET,boxscore,W,,1-2,@,New York Giants,22,9,22,306,201,105,,19,281,151,130,2,9.67,6.65,-3.25
+4,Sun,September 28,4:25PM ET,boxscore,W,,2-2,,Baltimore Ravens,37,20,24,382,264,118,,18,360,194,166,2,17.40,-0.78,-1.39
 5,Mon,October 6,8:15PM ET,preview,,,,@,Jacksonville Jaguars,,,,,,,,,,,,,,,
 6,Sun,October 12,8:20PM ET,preview,,,,,Detroit Lions,,,,,,,,,,,,,,,
 7,Sun,October 19,1:00PM ET,preview,,,,,Las Vegas Raiders,,,,,,,,,,,,,,,
