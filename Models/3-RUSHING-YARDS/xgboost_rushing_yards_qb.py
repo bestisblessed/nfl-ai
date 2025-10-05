@@ -39,14 +39,16 @@ hist = hist.dropna(subset=["rush_yards"])
 
 # Sort and create trailing features
 hist = hist.sort_values(["player_id", "season", "week"]).reset_index(drop=True)
-windows = [3, 5, 8]
+windows = [3, 5, 8, 12]
 
 for w in windows:
     hist[f"attempts_l{w}"] = hist.groupby("player_id")["rush_attempts"].transform(lambda s: s.shift(1).rolling(w, min_periods=1).mean())
     hist[f"yards_l{w}"] = hist.groupby("player_id")["rush_yards"].transform(lambda s: s.shift(1).rolling(w, min_periods=1).mean())
+    # robust
+    hist[f"yards_median_l{w}"] = hist.groupby("player_id")["rush_yards"].transform(lambda s: s.shift(1).rolling(w, min_periods=1).median())
 
 # Feature columns
-feature_cols = ([f"attempts_l{w}" for w in windows] + [f"yards_l{w}" for w in windows])
+feature_cols = ([f"attempts_l{w}" for w in windows] + [f"yards_l{w}" for w in windows] + [f"yards_median_l{w}" for w in windows])
 
 # Prepare training data
 train = hist.dropna(subset=feature_cols + ["rush_yards"])
@@ -56,7 +58,8 @@ y = train["rush_yards"]
 # Train XGBoost model
 model = XGBRegressor(
     n_estimators=500, learning_rate=0.05, max_depth=5,
-    subsample=0.9, colsample_bytree=0.9, random_state=42)
+    subsample=0.9, colsample_bytree=0.9, random_state=42,
+    objective="reg:absoluteerror")
 model.fit(X, y)
 
 # Process upcoming games
