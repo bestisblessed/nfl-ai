@@ -76,12 +76,22 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
+echo "Generating Top 25 Analysis..."
+python analyze_top_25.py $WEEK
+if [ $? -ne 0 ]; then
+    echo "Error: Top 25 analysis failed"
+    exit 1
+fi
+echo "✅ Top 25 analysis complete"
+
 print_section "‼️ DONE MODELING"
 echo "✅ Passing Yards: QB predictions generated"
 echo "✅ Receiving Yards: WR/RB/TE predictions generated"
 echo "✅ Rushing Yards: QB/RB predictions generated"
 echo "✅ Final Reports: Combined HTML/CSV reports created"
+echo "✅ Top 25 Analysis PDF generated"
 echo ""
 echo "📁 Reports saved to 0-FINAL-REPORTS/"
 echo ""
 echo "🔗 Open report: file://$(pwd)/0-FINAL-REPORTS/week${WEEK}_complete_props_report.html"
+echo "📊 Top 25 PDF: file://$(pwd)/0-FINAL-REPORTS/week${WEEK}_leader_tables.pdf"
