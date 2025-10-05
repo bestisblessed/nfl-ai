@@ -1,4 +1,0 @@
-1. Run Scraper
-2. Run Model
-3. Run run.sh
-4. Verify locally -> push
