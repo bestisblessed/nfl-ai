@@ -5,12 +5,12 @@ JAX vs KC | Week 5 2025 | QB Projected Rushing Yards
 +-----------------+--------------+    +-----------------+--------------+
 | JAX Player      |   Pred Yards |    | KC Player       |   Pred Yards |
 +=================+==============+    +=================+==============+
-| Trevor Lawrence |          7.3 |    | Patrick Mahomes |         15.8 |
+| Trevor Lawrence |          9.1 |    | Patrick Mahomes |         14.1 |
 +-----------------+--------------+    +-----------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total RBs: 2 (1 JAX, 1 KC)
-Top Projection: Patrick Mahomes (KC) - 15.8 yards
+Top Projection: Patrick Mahomes (KC) - 14.1 yards
 ================================================================================

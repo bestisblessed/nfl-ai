@@ -5,15 +5,14 @@ PHI vs DEN | Week 5 2025 | TE Projected Receiving Yards
 +------------------+--------------+    +---------------+--------------+
 | PHI Player       |   Pred Yards |    | DEN Player    |   Pred Yards |
 +==================+==============+    +===============+==============+
-| Dallas Goedert   |         33.4 |    | Evan Engram   |         28.8 |
-| Grant Calcaterra |          9.2 |    | Nate Adkins   |         10.9 |
-| Kylen Granson    |          4.3 |    | Adam Trautman |          7.9 |
-+------------------+--------------+    | Lucas Krull   |          6.3 |
-                                       +---------------+--------------+
+| Dallas Goedert   |         38.8 |    | Evan Engram   |         31.5 |
+| Grant Calcaterra |         10.1 |    | Nate Adkins   |          9.5 |
+| Kylen Granson    |          4.4 |    | Adam Trautman |          8.9 |
++------------------+--------------+    +---------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total TEs: 7 (3 PHI, 4 DEN)
-Top Projection: Dallas Goedert (PHI) - 33.4 yards
+Total TEs: 6 (3 PHI, 3 DEN)
+Top Projection: Dallas Goedert (PHI) - 38.8 yards
 ================================================================================

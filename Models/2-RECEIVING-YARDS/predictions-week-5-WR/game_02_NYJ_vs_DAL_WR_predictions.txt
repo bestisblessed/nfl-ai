@@ -2,19 +2,18 @@
 NYJ vs DAL | Week 5 2025 | Projected Receiving Yards
 ================================================================================
 
-+----------------+--------------+    +-----------------+--------------+
-| NYJ Player     |   Pred Yards |    | DAL Player      |   Pred Yards |
-+================+==============+    +=================+==============+
-| Garrett Wilson |         58.6 |    | George Pickens  |         44.2 |
-| Allen Lazard   |         47.4 |    | KaVontae Turpin |         37   |
-| Josh Reynolds  |         18.4 |    | Jalen Tolbert   |         16.6 |
-| Tyler Johnson  |         12.1 |    | Ryan Flournoy   |          9.4 |
-| Arian Smith    |          8.7 |    +-----------------+--------------+
++----------------+--------------+    +----------------+--------------+
+| NYJ Player     |   Pred Yards |    | DAL Player     |   Pred Yards |
++================+==============+    +================+==============+
+| Garrett Wilson |         58.1 |    | George Pickens |         48.5 |
+| Allen Lazard   |         49.3 |    | Jalen Tolbert  |         18.4 |
+| Josh Reynolds  |         17.7 |    | Ryan Flournoy  |          9   |
+| Tyler Johnson  |         15.5 |    +----------------+--------------+
 +----------------+--------------+    
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total WRs: 9 (5 NYJ, 4 DAL)
-Top Projection: Garrett Wilson (NYJ) - 58.6 yards
+Total WRs: 7 (4 NYJ, 3 DAL)
+Top Projection: Garrett Wilson (NYJ) - 58.1 yards
 ================================================================================

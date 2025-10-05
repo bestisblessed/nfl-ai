@@ -5,12 +5,12 @@ CIN vs DET | Week 5 2025 | QB Projected Rushing Yards
 +---------------+--------------+    +--------------+--------------+
 | CIN Player    |   Pred Yards |    | DET Player   |   Pred Yards |
 +===============+==============+    +==============+==============+
-| Jake Browning |            2 |    | Jared Goff   |          3.1 |
+| Jake Browning |          1.5 |    | Jared Goff   |            2 |
 +---------------+--------------+    +--------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total RBs: 2 (1 CIN, 1 DET)
-Top Projection: Jared Goff (DET) - 3.1 yards
+Top Projection: Jared Goff (DET) - 2.0 yards
 ================================================================================

@@ -5,15 +5,14 @@ BAL vs HOU | Week 5 2025 | RB Projected Rushing Yards
 +---------------+--------------+    +-----------------+--------------+
 | BAL Player    |   Pred Yards |    | HOU Player      |   Pred Yards |
 +===============+==============+    +=================+==============+
-| Derrick Henry |         83.8 |    | Nick Chubb      |         46.2 |
-| Justice Hill  |         13.7 |    | Dameon Pierce   |         37   |
-| Rasheen Ali   |          0.7 |    | Woody Marks     |         15.3 |
-+---------------+--------------+    | Dare Ogunbowale |          3.1 |
-                                    +-----------------+--------------+
+| Derrick Henry |         80.9 |    | Nick Chubb      |         49   |
+| Justice Hill  |         25   |    | Dameon Pierce   |         47.3 |
+| Rasheen Ali   |          0.8 |    | Dare Ogunbowale |          1.7 |
++---------------+--------------+    +-----------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total RBs: 7 (3 BAL, 4 HOU)
-Top Projection: Derrick Henry (BAL) - 83.8 yards
+Total RBs: 6 (3 BAL, 3 HOU)
+Top Projection: Derrick Henry (BAL) - 80.9 yards
 ================================================================================

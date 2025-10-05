@@ -5,15 +5,14 @@ PHI vs DEN | Week 5 2025 | RB Projected Rushing Yards
 +----------------+--------------+    +---------------+--------------+
 | PHI Player     |   Pred Yards |    | DEN Player    |   Pred Yards |
 +================+==============+    +===============+==============+
-| Saquon Barkley |         62.1 |    | J.K. Dobbins  |         61.4 |
-| Will Shipley   |         34.7 |    | RJ Harvey     |         32.8 |
-| Tank Bigsby    |         26   |    | Adam Prentice |          3.2 |
-| AJ Dillon      |         16.5 |    | Tyler Badie   |          1.3 |
+| Saquon Barkley |         58.7 |    | J.K. Dobbins  |         60.3 |
+| Will Shipley   |         36   |    | Adam Prentice |          2.5 |
+| Tank Bigsby    |         23.1 |    | Tyler Badie   |          0   |
 +----------------+--------------+    +---------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total RBs: 8 (4 PHI, 4 DEN)
-Top Projection: Saquon Barkley (PHI) - 62.1 yards
+Total RBs: 6 (3 PHI, 3 DEN)
+Top Projection: J.K. Dobbins (DEN) - 60.3 yards
 ================================================================================

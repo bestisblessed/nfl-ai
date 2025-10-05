@@ -2,18 +2,17 @@
 CIN vs DET | Week 5 2025 | Projected Receiving Yards
 ================================================================================
 
-+------------------+--------------+    +-------------------+--------------+
-| CIN Player       |   Pred Yards |    | DET Player        |   Pred Yards |
-+==================+==============+    +===================+==============+
-| Ja'Marr Chase    |         97.2 |    | Amon-Ra St. Brown |         67.5 |
-| Tee Higgins      |         51.1 |    | Jameson Williams  |         57.4 |
-| Andrei Iosivas   |         34.5 |    | Isaac TeSlaa      |         19.1 |
-| Mitchell Tinsley |          5.7 |    | Kalif Raymond     |          7.5 |
-+------------------+--------------+    +-------------------+--------------+
++----------------+--------------+    +-------------------+--------------+
+| CIN Player     |   Pred Yards |    | DET Player        |   Pred Yards |
++================+==============+    +===================+==============+
+| Ja'Marr Chase  |         98.1 |    | Amon-Ra St. Brown |         70.5 |
+| Tee Higgins    |         57.2 |    | Jameson Williams  |         54.8 |
+| Andrei Iosivas |         31.3 |    | Kalif Raymond     |          9.3 |
++----------------+--------------+    +-------------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total WRs: 8 (4 CIN, 4 DET)
-Top Projection: Ja'Marr Chase (CIN) - 97.2 yards
+Total WRs: 6 (3 CIN, 3 DET)
+Top Projection: Ja'Marr Chase (CIN) - 98.1 yards
 ================================================================================

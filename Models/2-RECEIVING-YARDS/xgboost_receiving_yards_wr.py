@@ -58,11 +58,33 @@ for w in windows:
     hist[f"yards_median_l{w}"] = hist.groupby("player_id")["rec_yards"].transform(
         lambda s: s.shift(1).rolling(w, min_periods=1).median())
 
+# Simple additional baselines
+# Last-3 average receiving yards (limited recency)
+hist["rec_l3_avg"] = hist.groupby("player_id")["rec_yards"].transform(
+    lambda s: s.shift(1).rolling(3, min_periods=1).mean())
+
+# Prior-season per-game average and career median
+prev_season = hist["season"].max() - 1
+prev_season_means = (
+    hist[hist["season"] == prev_season]
+    .groupby("player_id")["rec_yards"].mean()
+    .rename("rec_prev_season_pg")
+    .reset_index()
+)
+career_median = (
+    hist.groupby("player_id")["rec_yards"].median()
+    .rename("rec_career_median")
+    .reset_index()
+)
+hist = hist.merge(prev_season_means, on="player_id", how="left")
+hist = hist.merge(career_median, on="player_id", how="left")
+
 # Feature columns
 feature_cols = ([f"targets_l{w}" for w in windows] + 
                [f"receptions_l{w}" for w in windows] + 
                [f"yards_l{w}" for w in windows] +
-               [f"yards_median_l{w}" for w in windows])
+               [f"yards_median_l{w}" for w in windows] +
+               ["rec_l3_avg", "rec_prev_season_pg", "rec_career_median"])
 
 # Prepare training data
 train = hist.dropna(subset=feature_cols + ["rec_yards"])

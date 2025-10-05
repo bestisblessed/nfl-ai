@@ -5,15 +5,15 @@ CIN vs DET | Week 5 2025 | TE Projected Receiving Yards
 +--------------+--------------+    +--------------+--------------+
 | CIN Player   |   Pred Yards |    | DET Player   |   Pred Yards |
 +==============+==============+    +==============+==============+
-| Noah Fant    |         42.1 |    | Sam LaPorta  |         57.2 |
-| Mike Gesicki |          9.5 |    | Brock Wright |          8.8 |
-| Drew Sample  |          9   |    +--------------+--------------+
-| Cam Grandy   |          7.6 |    
+| Noah Fant    |         40.2 |    | Sam LaPorta  |         56.8 |
+| Mike Gesicki |         12.7 |    | Brock Wright |          8.1 |
+| Drew Sample  |          7.5 |    +--------------+--------------+
+| Cam Grandy   |          6.9 |    
 +--------------+--------------+    
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total TEs: 6 (4 CIN, 2 DET)
-Top Projection: Sam LaPorta (DET) - 57.2 yards
+Top Projection: Sam LaPorta (DET) - 56.8 yards
 ================================================================================

@@ -5,14 +5,13 @@ BAL vs HOU | Week 5 2025 | TE Projected Receiving Yards
 +---------------+--------------+    +-----------------+--------------+
 | BAL Player    |   Pred Yards |    | HOU Player      |   Pred Yards |
 +===============+==============+    +=================+==============+
-| Mark Andrews  |         42.6 |    | Dalton Schultz  |         32.1 |
-| Charlie Kolar |          6.4 |    | Cade Stover     |         20.1 |
-+---------------+--------------+    | Harrison Bryant |         16.8 |
-                                    +-----------------+--------------+
+| Mark Andrews  |         49.3 |    | Dalton Schultz  |           33 |
+| Charlie Kolar |          7.7 |    | Harrison Bryant |           14 |
++---------------+--------------+    +-----------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total TEs: 5 (2 BAL, 3 HOU)
-Top Projection: Mark Andrews (BAL) - 42.6 yards
+Total TEs: 4 (2 BAL, 2 HOU)
+Top Projection: Mark Andrews (BAL) - 49.3 yards
 ================================================================================

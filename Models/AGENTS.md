@@ -54,14 +54,14 @@
 
 ### 2-RECEIVING-YARDS (WR, RB, TE)
 - **Runners**: `xgboost_receiving_yards_wr.py`, `xgboost_receiving_yards_rb.py`, `xgboost_receiving_yards_te.py`, then TXT/HTML generators.
-- **Model(s)**: XGB on rolling means of targets/receptions/rec_yards (3/5/8). No placeholders for players without history.
+- **Model(s)**: XGB on rolling means of targets/receptions/rec_yards (3/5/8/12) + rolling medians + baseline features (last-3 avg, prior-season avg, career median). Uses `reg:absoluteerror` objective. No placeholders for players without history.
 - **Outputs**: `2-RECEIVING-YARDS/predictions-week-W-{WR|RB|TE}/`
   - `final_weekW_{POS}_rec_yards_report.csv`
   - Per-game PNGs (full and cleaned), TXT; merged TXT/HTML
 
 ### 3-RUSHING-YARDS (QB, RB)
 - **Runners**: `xgboost_rushing_yards_qb.py`, `xgboost_rushing_yards_rb.py`, then TXT/HTML generators.
-- **Model(s)**: XGB on rolling means of rush_attempts/rush_yds (3/5/8). QB variant: only starting QBs; rookies flagged “No Data”.
+- **Model(s)**: XGB on rolling means of rush_attempts/rush_yds (3/5/8/12) + rolling medians + baseline features (last-3 avg, prior-season avg, career median). Uses `reg:absoluteerror` objective. QB variant: only starting QBs; rookies flagged "No Data".
 - **Outputs**: `3-RUSHING-YARDS/predictions-week-W-{QB|RB}/`
   - `final_weekW_{POS}_rush_yards_report.csv`
   - Per-game PNGs (full and cleaned), TXT; merged TXT/HTML

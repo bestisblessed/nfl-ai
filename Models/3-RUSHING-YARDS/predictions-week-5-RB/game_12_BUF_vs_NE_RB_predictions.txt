@@ -5,14 +5,14 @@ BUF vs NE | Week 5 2025 | RB Projected Rushing Yards
 +--------------+--------------+    +---------------------+--------------+
 | BUF Player   |   Pred Yards |    | NE Player           |   Pred Yards |
 +==============+==============+    +=====================+==============+
-| James Cook   |         74.3 |    | Rhamondre Stevenson |         37.8 |
-| Ty Johnson   |         16.9 |    | TreVeyon Henderson  |         16.7 |
-| Ray Davis    |         13.4 |    | Antonio Gibson      |         10.9 |
-+--------------+--------------+    +---------------------+--------------+
+| James Cook   |         67.1 |    | Rhamondre Stevenson |         40.9 |
+| Ty Johnson   |         16.9 |    | Antonio Gibson      |         16.9 |
+| Ray Davis    |         13.9 |    +---------------------+--------------+
++--------------+--------------+    
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total RBs: 6 (3 BUF, 3 NE)
-Top Projection: James Cook (BUF) - 74.3 yards
+Total RBs: 5 (3 BUF, 2 NE)
+Top Projection: James Cook (BUF) - 67.1 yards
 ================================================================================

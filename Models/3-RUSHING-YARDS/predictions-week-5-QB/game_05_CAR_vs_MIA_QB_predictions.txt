@@ -5,12 +5,12 @@ CAR vs MIA | Week 5 2025 | QB Projected Rushing Yards
 +--------------+--------------+    +----------------+--------------+
 | CAR Player   |   Pred Yards |    | MIA Player     |   Pred Yards |
 +==============+==============+    +================+==============+
-| Bryce Young  |         22.7 |    | Tua Tagovailoa |            1 |
+| Bryce Young  |         23.4 |    | Tua Tagovailoa |          0.8 |
 +--------------+--------------+    +----------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total RBs: 2 (1 CAR, 1 MIA)
-Top Projection: Bryce Young (CAR) - 22.7 yards
+Top Projection: Bryce Young (CAR) - 23.4 yards
 ================================================================================

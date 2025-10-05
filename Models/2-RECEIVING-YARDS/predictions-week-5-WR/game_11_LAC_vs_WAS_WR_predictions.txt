@@ -5,16 +5,14 @@ LAC vs WAS | Week 5 2025 | Projected Receiving Yards
 +------------------+--------------+    +----------------+--------------+
 | LAC Player       |   Pred Yards |    | WAS Player     |   Pred Yards |
 +==================+==============+    +================+==============+
-| Ladd McConkey    |         69   |    | Noah Brown     |         44.2 |
-| Quentin Johnston |         67.6 |    | Tay Martin     |         33   |
-| Keenan Allen     |         66.7 |    | Chris Moore    |         25   |
-| Tre Harris       |         19.1 |    | Luke McCaffrey |         21.2 |
-| Derius Davis     |          0.1 |    | Jaylin Lane    |          7.2 |
-+------------------+--------------+    +----------------+--------------+
+| Ladd McConkey    |         71.4 |    | Tay Martin     |         35.8 |
+| Keenan Allen     |         71   |    | Luke McCaffrey |         20.1 |
+| Quentin Johnston |         53.2 |    +----------------+--------------+
++------------------+--------------+    
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total WRs: 10 (5 LAC, 5 WAS)
-Top Projection: Ladd McConkey (LAC) - 69.0 yards
+Total WRs: 5 (3 LAC, 2 WAS)
+Top Projection: Ladd McConkey (LAC) - 71.4 yards
 ================================================================================

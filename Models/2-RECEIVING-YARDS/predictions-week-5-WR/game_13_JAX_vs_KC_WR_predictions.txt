@@ -5,17 +5,16 @@ JAX vs KC | Week 5 2025 | Projected Receiving Yards
 +-------------------+--------------+    +---------------------+--------------+
 | JAX Player        |   Pred Yards |    | KC Player           |   Pred Yards |
 +===================+==============+    +=====================+==============+
-| Parker Washington |         42.6 |    | Xavier Worthy       |         66.8 |
-| Dyami Brown       |         39.6 |    | Marquise Brown      |         61.1 |
-| Travis Hunter     |         27.3 |    | Tyquan Thornton     |         41   |
-| Tim Patrick       |         10.9 |    | JuJu Smith-Schuster |         27.9 |
-+-------------------+--------------+    | Nikko Remigio       |         27.6 |
-                                        | Jason Brownlee      |         17.7 |
+| Parker Washington |         32.4 |    | Marquise Brown      |         69.6 |
+| Dyami Brown       |         31   |    | Xavier Worthy       |         61.8 |
+| Tim Patrick       |          9.5 |    | Tyquan Thornton     |         36.2 |
++-------------------+--------------+    | JuJu Smith-Schuster |         33.5 |
+                                        | Nikko Remigio       |         26.3 |
                                         +---------------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total WRs: 10 (4 JAX, 6 KC)
-Top Projection: Xavier Worthy (KC) - 66.8 yards
+Total WRs: 8 (3 JAX, 5 KC)
+Top Projection: Marquise Brown (KC) - 69.6 yards
 ================================================================================

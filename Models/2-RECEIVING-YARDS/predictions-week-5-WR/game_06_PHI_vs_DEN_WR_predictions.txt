@@ -5,15 +5,14 @@ PHI vs DEN | Week 5 2025 | Projected Receiving Yards
 +---------------+--------------+    +------------------+--------------+
 | PHI Player    |   Pred Yards |    | DEN Player       |   Pred Yards |
 +===============+==============+    +==================+==============+
-| A.J. Brown    |         58.3 |    | Courtland Sutton |         63.8 |
-| DeVonta Smith |         33.9 |    | Troy Franklin    |         49.1 |
-| Jahan Dotson  |         22.5 |    | Pat Bryant       |         16.5 |
-+---------------+--------------+    | Trent Sherfield  |          3.4 |
-                                    +------------------+--------------+
+| A.J. Brown    |         65.2 |    | Courtland Sutton |         61.7 |
+| DeVonta Smith |         42.6 |    | Troy Franklin    |         48.5 |
+| Jahan Dotson  |         25.6 |    | Trent Sherfield  |          3.8 |
++---------------+--------------+    +------------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total WRs: 7 (3 PHI, 4 DEN)
-Top Projection: Courtland Sutton (DEN) - 63.8 yards
+Total WRs: 6 (3 PHI, 3 DEN)
+Top Projection: A.J. Brown (PHI) - 65.2 yards
 ================================================================================

@@ -2,19 +2,17 @@
 CAR vs MIA | Week 5 2025 | Projected Receiving Yards
 ================================================================================
 
-+-------------------+--------------+    +-----------------------+--------------+
-| CAR Player        |   Pred Yards |    | MIA Player            |   Pred Yards |
-+===================+==============+    +=======================+==============+
-| Tetairoa McMillan |         68.7 |    | Tyreek Hill           |         67.1 |
-| Hunter Renfrow    |         35.1 |    | Jaylen Waddle         |         54.4 |
-| Brycen Tremayne   |         22.4 |    | Nick Westbrook-Ikhine |         30.9 |
-| Xavier Legette    |         19.9 |    | Malik Washington      |         13.4 |
-| David Moore       |         16.8 |    +-----------------------+--------------+
-+-------------------+--------------+    
++-----------------+--------------+    +-----------------------+--------------+
+| CAR Player      |   Pred Yards |    | MIA Player            |   Pred Yards |
++=================+==============+    +=======================+==============+
+| Brycen Tremayne |         26.5 |    | Jaylen Waddle         |         60.3 |
+| Xavier Legette  |         22.7 |    | Nick Westbrook-Ikhine |         32.8 |
++-----------------+--------------+    | Malik Washington      |         13.1 |
+                                      +-----------------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total WRs: 9 (5 CAR, 4 MIA)
-Top Projection: Tetairoa McMillan (CAR) - 68.7 yards
+Total WRs: 5 (2 CAR, 3 MIA)
+Top Projection: Jaylen Waddle (MIA) - 60.3 yards
 ================================================================================

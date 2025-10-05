@@ -3,14 +3,14 @@ NO vs NYG | Week 5 2025 | QB Projected Rushing Yards
 ================================================================================
 
 +-----------------+--------------+    +--------------+--------------+
-| NO Player       |   Pred Yards |    | NYG Player   |   Pred Yards |
+| NO Player       |   Pred Yards |    | NYG Player   | Pred Yards   |
 +=================+==============+    +==============+==============+
-| Spencer Rattler |         18.6 |    | Jaxson Dart  |          0.2 |
+| Spencer Rattler |         22.8 |    | Jaxson Dart  | No Data      |
 +-----------------+--------------+    +--------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total RBs: 2 (1 NO, 1 NYG)
-Top Projection: Spencer Rattler (NO) - 18.6 yards
+Top Projection: Spencer Rattler (NO) - 22.8 yards
 ================================================================================

@@ -5,14 +5,14 @@ CIN vs DET | Week 5 2025 | RB Projected Rushing Yards
 +---------------+--------------+    +------------------+--------------+
 | CIN Player    |   Pred Yards |    | DET Player       |   Pred Yards |
 +===============+==============+    +==================+==============+
-| Chase Brown   |         38   |    | Jahmyr Gibbs     |         67.1 |
-| Samaje Perine |         13.4 |    | David Montgomery |         46.1 |
-+---------------+--------------+    | Craig Reynolds   |         21.3 |
+| Chase Brown   |         35.8 |    | Jahmyr Gibbs     |         75.7 |
+| Samaje Perine |         12.9 |    | David Montgomery |         54.2 |
++---------------+--------------+    | Craig Reynolds   |         19.7 |
                                     +------------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total RBs: 5 (2 CIN, 3 DET)
-Top Projection: Jahmyr Gibbs (DET) - 67.1 yards
+Top Projection: Jahmyr Gibbs (DET) - 75.7 yards
 ================================================================================

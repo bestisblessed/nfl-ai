@@ -5,14 +5,13 @@ BUF vs NE | Week 5 2025 | TE Projected Receiving Yards
 +----------------+--------------+    +---------------+--------------+
 | BUF Player     |   Pred Yards |    | NE Player     |   Pred Yards |
 +================+==============+    +===============+==============+
-| Dalton Kincaid |         44.8 |    | Hunter Henry  |         43.3 |
-| Jackson Hawes  |         17.8 |    | Austin Hooper |         18.7 |
-| Dawson Knox    |         10.4 |    +---------------+--------------+
-+----------------+--------------+    
+| Dalton Kincaid |         44.1 |    | Hunter Henry  |         41.8 |
+| Dawson Knox    |         10.2 |    | Austin Hooper |         21.1 |
++----------------+--------------+    +---------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total TEs: 5 (3 BUF, 2 NE)
-Top Projection: Dalton Kincaid (BUF) - 44.8 yards
+Total TEs: 4 (2 BUF, 2 NE)
+Top Projection: Dalton Kincaid (BUF) - 44.1 yards
 ================================================================================

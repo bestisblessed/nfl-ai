@@ -5,15 +5,13 @@ ARI vs TEN | Week 5 2025 | RB Projected Rushing Yards
 +-----------------+--------------+    +-----------------+--------------+
 | ARI Player      |   Pred Yards |    | TEN Player      |   Pred Yards |
 +=================+==============+    +=================+==============+
-| Michael Carter  |         36.4 |    | Tony Pollard    |         67.2 |
-| Trey Benson     |         27.5 |    | Julius Chestnut |         14   |
-| James Conner    |         27.2 |    +-----------------+--------------+
-| Emari Demercado |         10.4 |    
-+-----------------+--------------+    
+| Michael Carter  |         31.2 |    | Tony Pollard    |         67   |
+| Emari Demercado |         11.2 |    | Julius Chestnut |         14.6 |
++-----------------+--------------+    +-----------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total RBs: 6 (4 ARI, 2 TEN)
-Top Projection: Tony Pollard (TEN) - 67.2 yards
+Total RBs: 4 (2 ARI, 2 TEN)
+Top Projection: Tony Pollard (TEN) - 67.0 yards
 ================================================================================

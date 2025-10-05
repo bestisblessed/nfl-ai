@@ -5,12 +5,12 @@ NYJ vs DAL | Week 5 2025 | QB Projected Rushing Yards
 +---------------+--------------+    +--------------+--------------+
 | NYJ Player    |   Pred Yards |    | DAL Player   |   Pred Yards |
 +===============+==============+    +==============+==============+
-| Justin Fields |          8.5 |    | Dak Prescott |          5.3 |
+| Justin Fields |         14.2 |    | Dak Prescott |          9.2 |
 +---------------+--------------+    +--------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total RBs: 2 (1 NYJ, 1 DAL)
-Top Projection: Justin Fields (NYJ) - 8.5 yards
+Top Projection: Justin Fields (NYJ) - 14.2 yards
 ================================================================================

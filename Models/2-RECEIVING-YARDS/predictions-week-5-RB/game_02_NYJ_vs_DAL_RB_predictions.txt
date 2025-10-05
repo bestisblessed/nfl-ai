@@ -2,17 +2,17 @@
 NYJ vs DAL | Week 5 2025 | RB Projected Receiving Yards
 ================================================================================
 
-+---------------+--------------+    +------------------+--------------+
-| NYJ Player    |   Pred Yards |    | DAL Player       |   Pred Yards |
-+===============+==============+    +==================+==============+
-| Braelon Allen |         16.7 |    | Javonte Williams |         26.5 |
-| Breece Hall   |         16.3 |    | Miles Sanders    |          8.4 |
-| Isaiah Davis  |          5.8 |    | Hunter Luepke    |          0.8 |
-+---------------+--------------+    +------------------+--------------+
++--------------+--------------+    +------------------+--------------+
+| NYJ Player   |   Pred Yards |    | DAL Player       |   Pred Yards |
++==============+==============+    +==================+==============+
+| Breece Hall  |         19.3 |    | Javonte Williams |         26.6 |
+| Isaiah Davis |          4.1 |    | Miles Sanders    |          8.3 |
++--------------+--------------+    | Hunter Luepke    |         -0.3 |
+                                   +------------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total RBs: 6 (3 NYJ, 3 DAL)
-Top Projection: Javonte Williams (DAL) - 26.5 yards
+Total RBs: 5 (2 NYJ, 3 DAL)
+Top Projection: Javonte Williams (DAL) - 26.6 yards
 ================================================================================

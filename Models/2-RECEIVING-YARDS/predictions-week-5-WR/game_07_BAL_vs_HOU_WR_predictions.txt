@@ -5,17 +5,16 @@ BAL vs HOU | Week 5 2025 | Projected Receiving Yards
 +-----------------+--------------+    +-------------------+--------------+
 | BAL Player      |   Pred Yards |    | HOU Player        |   Pred Yards |
 +=================+==============+    +===================+==============+
-| Zay Flowers     |         46.3 |    | Nico Collins      |         77.4 |
-| Rashod Bateman  |         41.5 |    | Christian Kirk    |         27.6 |
-| DeAndre Hopkins |         21.3 |    | Justin Watson     |         26.4 |
-| Tylan Wallace   |          9.5 |    | Xavier Hutchinson |         14.2 |
-| Devontez Walker |          8.7 |    | Jayden Higgins    |          7.5 |
-+-----------------+--------------+    | Jaylin Noel       |          6.7 |
-                                      +-------------------+--------------+
+| Zay Flowers     |         44.2 |    | Nico Collins      |         75.2 |
+| Rashod Bateman  |         40.2 |    | Christian Kirk    |         27.6 |
+| DeAndre Hopkins |         26.3 |    | Xavier Hutchinson |         12.3 |
+| Devontez Walker |          9.6 |    +-------------------+--------------+
+| Tylan Wallace   |          8.7 |    
++-----------------+--------------+    
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total WRs: 11 (5 BAL, 6 HOU)
-Top Projection: Nico Collins (HOU) - 77.4 yards
+Total WRs: 8 (5 BAL, 3 HOU)
+Top Projection: Nico Collins (HOU) - 75.2 yards
 ================================================================================

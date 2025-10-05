@@ -5,17 +5,17 @@ BUF vs NE | Week 5 2025 | Projected Receiving Yards
 +----------------+--------------+    +-----------------+--------------+
 | BUF Player     |   Pred Yards |    | NE Player       |   Pred Yards |
 +================+==============+    +=================+==============+
-| Keon Coleman   |         54.2 |    | Stefon Diggs    |         54.8 |
-| Khalil Shakir  |         38.3 |    | Kayshon Boutte  |         39.9 |
-| Curtis Samuel  |         30.8 |    | DeMario Douglas |         27.2 |
-| Josh Palmer    |         25.9 |    | Mack Hollins    |         24.5 |
-| Tyrell Shavers |         22   |    | Kyle Williams   |          8   |
-| Elijah Moore   |          7.5 |    +-----------------+--------------+
+| Keon Coleman   |         46.3 |    | Stefon Diggs    |         63.9 |
+| Khalil Shakir  |         37.9 |    | Kayshon Boutte  |         37.8 |
+| Curtis Samuel  |         34.9 |    | DeMario Douglas |         28.5 |
+| Josh Palmer    |         28.1 |    | Mack Hollins    |         24.1 |
+| Tyrell Shavers |         22.9 |    +-----------------+--------------+
+| Elijah Moore   |         11.9 |    
 +----------------+--------------+    
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total WRs: 11 (6 BUF, 5 NE)
-Top Projection: Stefon Diggs (NE) - 54.8 yards
+Total WRs: 10 (6 BUF, 4 NE)
+Top Projection: Stefon Diggs (NE) - 63.9 yards
 ================================================================================

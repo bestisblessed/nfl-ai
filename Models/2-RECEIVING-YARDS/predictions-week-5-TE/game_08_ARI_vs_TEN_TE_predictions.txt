@@ -2,17 +2,17 @@
 ARI vs TEN | Week 5 2025 | TE Projected Receiving Yards
 ================================================================================
 
-+----------------+--------------+    +--------------+--------------+
-| ARI Player     |   Pred Yards |    | TEN Player   |   Pred Yards |
-+================+==============+    +==============+==============+
-| Trey McBride   |         63.5 |    | Gunnar Helm  |         17.5 |
-| Elijah Higgins |         11.2 |    +--------------+--------------+
-| Tip Reiman     |          9.5 |    
++----------------+--------------+    No TEN TEs
+| ARI Player     |   Pred Yards |    
++================+==============+    
+| Trey McBride   |         59.9 |    
+| Elijah Higgins |         12.7 |    
+| Tip Reiman     |          8   |    
 +----------------+--------------+    
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total TEs: 4 (3 ARI, 1 TEN)
-Top Projection: Trey McBride (ARI) - 63.5 yards
+Total TEs: 3 (3 ARI, 0 TEN)
+Top Projection: Trey McBride (ARI) - 59.9 yards
 ================================================================================

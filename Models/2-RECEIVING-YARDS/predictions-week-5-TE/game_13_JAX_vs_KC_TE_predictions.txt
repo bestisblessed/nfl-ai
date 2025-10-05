@@ -5,14 +5,14 @@ JAX vs KC | Week 5 2025 | TE Projected Receiving Yards
 +-----------------+--------------+    +--------------+--------------+
 | JAX Player      |   Pred Yards |    | KC Player    |   Pred Yards |
 +=================+==============+    +==============+==============+
-| Brenton Strange |         33.9 |    | Travis Kelce |         45.3 |
-| Johnny Mundt    |         15.1 |    | Noah Gray    |         13.2 |
-| Hunter Long     |          8.7 |    +--------------+--------------+
+| Brenton Strange |         29.7 |    | Travis Kelce |         55.3 |
+| Johnny Mundt    |         13.9 |    | Noah Gray    |         14.1 |
+| Hunter Long     |          7.1 |    +--------------+--------------+
 +-----------------+--------------+    
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total TEs: 5 (3 JAX, 2 KC)
-Top Projection: Travis Kelce (KC) - 45.3 yards
+Top Projection: Travis Kelce (KC) - 55.3 yards
 ================================================================================

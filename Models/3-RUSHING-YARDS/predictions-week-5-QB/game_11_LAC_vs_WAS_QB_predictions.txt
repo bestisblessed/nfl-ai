@@ -5,12 +5,12 @@ LAC vs WAS | Week 5 2025 | QB Projected Rushing Yards
 +----------------+--------------+    +----------------+--------------+
 | LAC Player     |   Pred Yards |    | WAS Player     |   Pred Yards |
 +================+==============+    +================+==============+
-| Justin Herbert |         18.4 |    | Marcus Mariota |         26.4 |
+| Justin Herbert |         14.2 |    | Marcus Mariota |         26.8 |
 +----------------+--------------+    +----------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total RBs: 2 (1 LAC, 1 WAS)
-Top Projection: Marcus Mariota (WAS) - 26.4 yards
+Top Projection: Marcus Mariota (WAS) - 26.8 yards
 ================================================================================

@@ -5,15 +5,14 @@ IND vs LVR | Week 5 2025 | RB Projected Rushing Yards
 +-----------------+--------------+    +----------------+--------------+
 | IND Player      |   Pred Yards |    | LVR Player     |   Pred Yards |
 +=================+==============+    +================+==============+
-| Jonathan Taylor |         79.7 |    | Ashton Jeanty  |         95.5 |
-| DJ Giddens      |         17.3 |    | Raheem Mostert |         37.7 |
-| Tyler Goodson   |         13.5 |    | Zamir White    |         17.5 |
-+-----------------+--------------+    | Dylan Laube    |          1.7 |
+| Jonathan Taylor |         76.5 |    | Raheem Mostert |         54.4 |
++-----------------+--------------+    | Zamir White    |         15.9 |
+                                      | Dylan Laube    |          1.9 |
                                       +----------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total RBs: 7 (3 IND, 4 LVR)
-Top Projection: Ashton Jeanty (LVR) - 95.5 yards
+Total RBs: 4 (1 IND, 3 LVR)
+Top Projection: Jonathan Taylor (IND) - 76.5 yards
 ================================================================================

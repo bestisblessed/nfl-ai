@@ -5,14 +5,13 @@ NO vs NYG | Week 5 2025 | RB Projected Rushing Yards
 +---------------+--------------+    +------------------+--------------+
 | NO Player     |   Pred Yards |    | NYG Player       |   Pred Yards |
 +===============+==============+    +==================+==============+
-| Alvin Kamara  |         76.8 |    | Tyrone Tracy Jr. |         44.1 |
-| Kendre Miller |         13.9 |    | Cam Skattebo     |         27.3 |
-+---------------+--------------+    | Devin Singletary |          7.7 |
-                                    +------------------+--------------+
+| Alvin Kamara  |         77.1 |    | Devin Singletary |          9.2 |
+| Kendre Miller |         15.3 |    +------------------+--------------+
++---------------+--------------+    
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total RBs: 5 (2 NO, 3 NYG)
-Top Projection: Alvin Kamara (NO) - 76.8 yards
+Total RBs: 3 (2 NO, 1 NYG)
+Top Projection: Alvin Kamara (NO) - 77.1 yards
 ================================================================================

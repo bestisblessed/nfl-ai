@@ -2,18 +2,18 @@
 CLE vs MIN | Week 5 2025 | Projected Receiving Yards
 ================================================================================
 
-+----------------+--------------+    +------------------+--------------+
-| CLE Player     |   Pred Yards |    | MIN Player       |   Pred Yards |
-+================+==============+    +==================+==============+
-| Jerry Jeudy    |         45.7 |    | Justin Jefferson |         57.4 |
-| Cedric Tillman |         37.6 |    | Jordan Addison   |         40.7 |
-| Isaiah Bond    |         13.7 |    | Jalen Nailor     |         29.5 |
-| Jamari Thrash  |          2.3 |    | Adam Thielen     |         27.4 |
-+----------------+--------------+    +------------------+--------------+
++---------------+--------------+    +------------------+--------------+
+| CLE Player    |   Pred Yards |    | MIN Player       |   Pred Yards |
++===============+==============+    +==================+==============+
+| Jerry Jeudy   |         40.7 |    | Justin Jefferson |         80.7 |
+| Jamari Thrash |          1.7 |    | Jordan Addison   |         44.2 |
++---------------+--------------+    | Adam Thielen     |         30.7 |
+                                    | Jalen Nailor     |         27.7 |
+                                    +------------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total WRs: 8 (4 CLE, 4 MIN)
-Top Projection: Justin Jefferson (MIN) - 57.4 yards
+Total WRs: 6 (2 CLE, 4 MIN)
+Top Projection: Justin Jefferson (MIN) - 80.7 yards
 ================================================================================

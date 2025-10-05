@@ -5,17 +5,16 @@ ARI vs TEN | Week 5 2025 | Projected Receiving Yards
 +---------------------+--------------+    +---------------+--------------+
 | ARI Player          |   Pred Yards |    | TEN Player    |   Pred Yards |
 +=====================+==============+    +===============+==============+
-| Marvin Harrison Jr. |         55.4 |    | Calvin Ridley |         60.7 |
-| Zay Jones           |         22.5 |    | Elic Ayomanor |         36.6 |
-| Michael Wilson      |         12.8 |    | Tyler Lockett |         26.5 |
-| Greg Dortch         |          8.7 |    | Van Jefferson |         23   |
-| Xavier Weaver       |         -0   |    | Bryce Oliver  |          9.5 |
-+---------------------+--------------+    | Chimere Dike  |          2.4 |
-                                          +---------------+--------------+
+| Marvin Harrison Jr. |         51   |    | Calvin Ridley |         63   |
+| Zay Jones           |         24.2 |    | Tyler Lockett |         29.5 |
+| Michael Wilson      |         15.3 |    | Van Jefferson |         26.6 |
+| Greg Dortch         |          9.9 |    +---------------+--------------+
+| Xavier Weaver       |         -0   |    
++---------------------+--------------+    
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total WRs: 11 (5 ARI, 6 TEN)
-Top Projection: Calvin Ridley (TEN) - 60.7 yards
+Total WRs: 8 (5 ARI, 3 TEN)
+Top Projection: Calvin Ridley (TEN) - 63.0 yards
 ================================================================================

@@ -5,15 +5,14 @@ IND vs LVR | Week 5 2025 | Projected Receiving Yards
 +-----------------+--------------+    +---------------+--------------+
 | IND Player      |   Pred Yards |    | LVR Player    |   Pred Yards |
 +=================+==============+    +===============+==============+
-| Alec Pierce     |         34.4 |    | Jakobi Meyers |         38.9 |
-| Josh Downs      |         31.6 |    | Jack Bech     |         11.8 |
-| Adonai Mitchell |          9   |    | Tre Tucker    |         11.3 |
-| Ashton Dulin    |          5.3 |    | Alex Bachman  |          1.6 |
+| Josh Downs      |         34.7 |    | Jakobi Meyers |         42.4 |
+| Adonai Mitchell |          8.6 |    | Tre Tucker    |         11   |
+| Ashton Dulin    |          3.8 |    | Alex Bachman  |         -0.1 |
 +-----------------+--------------+    +---------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total WRs: 8 (4 IND, 4 LVR)
-Top Projection: Jakobi Meyers (LVR) - 38.9 yards
+Total WRs: 6 (3 IND, 3 LVR)
+Top Projection: Jakobi Meyers (LVR) - 42.4 yards
 ================================================================================

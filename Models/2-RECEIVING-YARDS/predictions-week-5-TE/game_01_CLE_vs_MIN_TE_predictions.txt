@@ -5,13 +5,13 @@ CLE vs MIN | Week 5 2025 | TE Projected Receiving Yards
 +------------------+--------------+    +----------------+--------------+
 | CLE Player       |   Pred Yards |    | MIN Player     |   Pred Yards |
 +==================+==============+    +================+==============+
-| David Njoku      |         41.5 |    | T.J. Hockenson |         31.6 |
-| Blake Whiteheart |          6   |    | Josh Oliver    |         10.1 |
+| David Njoku      |         32.1 |    | T.J. Hockenson |         35   |
+| Blake Whiteheart |          4.2 |    | Josh Oliver    |          6.4 |
 +------------------+--------------+    +----------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total TEs: 4 (2 CLE, 2 MIN)
-Top Projection: David Njoku (CLE) - 41.5 yards
+Top Projection: T.J. Hockenson (MIN) - 35.0 yards
 ================================================================================

@@ -5,13 +5,13 @@ IND vs LVR | Week 5 2025 | TE Projected Receiving Yards
 +--------------+--------------+    +---------------+--------------+
 | IND Player   |   Pred Yards |    | LVR Player    |   Pred Yards |
 +==============+==============+    +===============+==============+
-| Tyler Warren |         54.3 |    | Brock Bowers  |         42.2 |
-| Mo Alie-Cox  |         18.5 |    | Michael Mayer |          1.8 |
-+--------------+--------------+    +---------------+--------------+
+| Mo Alie-Cox  |         18.4 |    | Brock Bowers  |         50   |
++--------------+--------------+    | Michael Mayer |          2.9 |
+                                   +---------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total TEs: 4 (2 IND, 2 LVR)
-Top Projection: Tyler Warren (IND) - 54.3 yards
+Total TEs: 3 (1 IND, 2 LVR)
+Top Projection: Brock Bowers (LVR) - 50.0 yards
 ================================================================================
