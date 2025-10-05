@@ -1,16 +1,11 @@
 #!/bin/bash
 
 # NFL Props Models - Master Runner Script
-# Runs all three models (passing, rushing, receiving) and generates final combined report
+# Runs all three models (passing, rushing, receiving) 
+# and generates final combined report
 
 set -e  # Exit on any error
 
-# Ensure logs directory exists
-mkdir -p logs
-
-# Redirect all output to log file while also displaying on terminal
-# exec > >(tee logs/log.log) 2>&1
-exec 2>&1 | tee logs/log.log
 
 # Ask user for week number if not provided
 if [ -z "$1" ]; then
