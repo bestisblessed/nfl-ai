@@ -1,0 +1,185 @@
+WEEK 5 2025 - COMPLETE WR RECEIVING YARDS PREDICTIONS
+Generated: 2025-10-05 06:30:33
+Total Games: 13
+================================================================================
+
+GAME 1 | CLE vs MIN | Week 5 2025
++----------------+--------------+    +------------------+--------------+
+| CLE Player     |   Pred Yards |    | MIN Player       |   Pred Yards |
++================+==============+    +==================+==============+
+| Jerry Jeudy    |         45.7 |    | Justin Jefferson |         57.4 |
+| Cedric Tillman |         37.6 |    | Jordan Addison   |         40.7 |
+| Isaiah Bond    |         13.7 |    | Jalen Nailor     |         29.5 |
+| Jamari Thrash  |          2.3 |    | Adam Thielen     |         27.4 |
++----------------+--------------+    +------------------+--------------+
+
+============================================================
+
+GAME 2 | NYJ vs DAL | Week 5 2025
++----------------+--------------+    +-----------------+--------------+
+| NYJ Player     |   Pred Yards |    | DAL Player      |   Pred Yards |
++================+==============+    +=================+==============+
+| Garrett Wilson |         58.6 |    | George Pickens  |         44.2 |
+| Allen Lazard   |         47.4 |    | KaVontae Turpin |         37   |
+| Josh Reynolds  |         18.4 |    | Jalen Tolbert   |         16.6 |
+| Tyler Johnson  |         12.1 |    | Ryan Flournoy   |          9.4 |
+| Arian Smith    |          8.7 |    +-----------------+--------------+
++----------------+--------------+
+
+============================================================
+
+GAME 3 | NO vs NYG | Week 5 2025
++----------------+--------------+    +-------------------+--------------+
+| NO Player      |   Pred Yards |    | NYG Player        |   Pred Yards |
++================+==============+    +===================+==============+
+| Chris Olave    |         48.9 |    | Malik Nabers      |         72.5 |
+| Rashid Shaheed |         47.7 |    | Wan'Dale Robinson |         62.4 |
+| Brandin Cooks  |         25.2 |    | Darius Slayton    |         30.5 |
+| Devaughn Vele  |         11.9 |    +-------------------+--------------+
++----------------+--------------+
+
+============================================================
+
+GAME 4 | IND vs LVR | Week 5 2025
++-----------------+--------------+    +---------------+--------------+
+| IND Player      |   Pred Yards |    | LVR Player    |   Pred Yards |
++=================+==============+    +===============+==============+
+| Alec Pierce     |         34.4 |    | Jakobi Meyers |         38.9 |
+| Josh Downs      |         31.6 |    | Jack Bech     |         11.8 |
+| Adonai Mitchell |          9   |    | Tre Tucker    |         11.3 |
+| Ashton Dulin    |          5.3 |    | Alex Bachman  |          1.6 |
++-----------------+--------------+    +---------------+--------------+
+
+============================================================
+
+GAME 5 | CAR vs MIA | Week 5 2025
++-------------------+--------------+    +-----------------------+--------------+
+| CAR Player        |   Pred Yards |    | MIA Player            |   Pred Yards |
++===================+==============+    +=======================+==============+
+| Tetairoa McMillan |         68.7 |    | Tyreek Hill           |         67.1 |
+| Hunter Renfrow    |         35.1 |    | Jaylen Waddle         |         54.4 |
+| Brycen Tremayne   |         22.4 |    | Nick Westbrook-Ikhine |         30.9 |
+| Xavier Legette    |         19.9 |    | Malik Washington      |         13.4 |
+| David Moore       |         16.8 |    +-----------------------+--------------+
++-------------------+--------------+
+
+============================================================
+
+GAME 6 | PHI vs DEN | Week 5 2025
++---------------+--------------+    +------------------+--------------+
+| PHI Player    |   Pred Yards |    | DEN Player       |   Pred Yards |
++===============+==============+    +==================+==============+
+| A.J. Brown    |         58.3 |    | Courtland Sutton |         63.8 |
+| DeVonta Smith |         33.9 |    | Troy Franklin    |         49.1 |
+| Jahan Dotson  |         22.5 |    | Pat Bryant       |         16.5 |
++---------------+--------------+    | Trent Sherfield  |          3.4 |
+                                    +------------------+--------------+
+
+============================================================
+
+GAME 7 | BAL vs HOU | Week 5 2025
++-----------------+--------------+    +-------------------+--------------+
+| BAL Player      |   Pred Yards |    | HOU Player        |   Pred Yards |
++=================+==============+    +===================+==============+
+| Zay Flowers     |         46.3 |    | Nico Collins      |         77.4 |
+| Rashod Bateman  |         41.5 |    | Christian Kirk    |         27.6 |
+| DeAndre Hopkins |         21.3 |    | Justin Watson     |         26.4 |
+| Tylan Wallace   |          9.5 |    | Xavier Hutchinson |         14.2 |
+| Devontez Walker |          8.7 |    | Jayden Higgins    |          7.5 |
++-----------------+--------------+    | Jaylin Noel       |          6.7 |
+                                      +-------------------+--------------+
+
+============================================================
+
+GAME 8 | ARI vs TEN | Week 5 2025
++---------------------+--------------+    +---------------+--------------+
+| ARI Player          |   Pred Yards |    | TEN Player    |   Pred Yards |
++=====================+==============+    +===============+==============+
+| Marvin Harrison Jr. |         55.4 |    | Calvin Ridley |         60.7 |
+| Zay Jones           |         22.5 |    | Elic Ayomanor |         36.6 |
+| Michael Wilson      |         12.8 |    | Tyler Lockett |         26.5 |
+| Greg Dortch         |          8.7 |    | Van Jefferson |         23   |
+| Xavier Weaver       |         -0   |    | Bryce Oliver  |          9.5 |
++---------------------+--------------+    | Chimere Dike  |          2.4 |
+                                          +---------------+--------------+
+
+============================================================
+
+GAME 9 | SEA vs TB | Week 5 2025
++--------------------+--------------+    +------------------+--------------+
+| SEA Player         |   Pred Yards |    | TB Player        |   Pred Yards |
++====================+==============+    +==================+==============+
+| Jaxon Smith-Njigba |         92.8 |    | Mike Evans       |         82.5 |
+| Cooper Kupp        |         52.5 |    | Emeka Egbuka     |         49.9 |
+| Tory Horton        |         28.9 |    | Sterling Shepard |         48.6 |
+| Dareke Young       |         11   |    | Ryan Miller      |          9.3 |
+| Jake Bobo          |          6.1 |    | Tez Johnson      |         -0   |
++--------------------+--------------+    +------------------+--------------+
+
+============================================================
+
+GAME 10 | CIN vs DET | Week 5 2025
++------------------+--------------+    +-------------------+--------------+
+| CIN Player       |   Pred Yards |    | DET Player        |   Pred Yards |
++==================+==============+    +===================+==============+
+| Ja'Marr Chase    |         97.2 |    | Amon-Ra St. Brown |         67.5 |
+| Tee Higgins      |         51.1 |    | Jameson Williams  |         57.4 |
+| Andrei Iosivas   |         34.5 |    | Isaac TeSlaa      |         19.1 |
+| Mitchell Tinsley |          5.7 |    | Kalif Raymond     |          7.5 |
++------------------+--------------+    +-------------------+--------------+
+
+============================================================
+
+GAME 11 | LAC vs WAS | Week 5 2025
++------------------+--------------+    +----------------+--------------+
+| LAC Player       |   Pred Yards |    | WAS Player     |   Pred Yards |
++==================+==============+    +================+==============+
+| Ladd McConkey    |         69   |    | Noah Brown     |         44.2 |
+| Quentin Johnston |         67.6 |    | Tay Martin     |         33   |
+| Keenan Allen     |         66.7 |    | Chris Moore    |         25   |
+| Tre Harris       |         19.1 |    | Luke McCaffrey |         21.2 |
+| Derius Davis     |          0.1 |    | Jaylin Lane    |          7.2 |
++------------------+--------------+    +----------------+--------------+
+
+============================================================
+
+GAME 12 | BUF vs NE | Week 5 2025
++----------------+--------------+    +-----------------+--------------+
+| BUF Player     |   Pred Yards |    | NE Player       |   Pred Yards |
++================+==============+    +=================+==============+
+| Keon Coleman   |         54.2 |    | Stefon Diggs    |         54.8 |
+| Khalil Shakir  |         38.3 |    | Kayshon Boutte  |         39.9 |
+| Curtis Samuel  |         30.8 |    | DeMario Douglas |         27.2 |
+| Josh Palmer    |         25.9 |    | Mack Hollins    |         24.5 |
+| Tyrell Shavers |         22   |    | Kyle Williams   |          8   |
+| Elijah Moore   |          7.5 |    +-----------------+--------------+
++----------------+--------------+
+
+============================================================
+
+GAME 13 | JAX vs KC | Week 5 2025
++-------------------+--------------+    +---------------------+--------------+
+| JAX Player        |   Pred Yards |    | KC Player           |   Pred Yards |
++===================+==============+    +=====================+==============+
+| Parker Washington |         42.6 |    | Xavier Worthy       |         66.8 |
+| Dyami Brown       |         39.6 |    | Marquise Brown      |         61.1 |
+| Travis Hunter     |         27.3 |    | Tyquan Thornton     |         41   |
+| Tim Patrick       |         10.9 |    | JuJu Smith-Schuster |         27.9 |
++-------------------+--------------+    | Nikko Remigio       |         27.6 |
+                                        | Jason Brownlee      |         17.7 |
+                                        +---------------------+--------------+
+
+============================================================
+
+
+================================================================================
+REPORT COMPLETE
+================================================================================
+This report contains all WR receiving yards predictions for Week 5.
+Each game includes:
+• Text summary of predictions
+• Full detailed image
+• Cleaned/condensed image
+
+For the complete dataset, see: prop_projections_receiving.csv
+================================================================================

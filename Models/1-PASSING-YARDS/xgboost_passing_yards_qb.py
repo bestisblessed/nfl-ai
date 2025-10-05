@@ -31,6 +31,13 @@ os.makedirs(output_dir, exist_ok=True)
 hist = pd.read_csv("data/model_train.csv")
 upcoming = pd.read_csv("data/upcoming_games.csv")
 rosters = pd.read_csv("data/roster_2025.csv")
+injured = None
+injured_path = "data/injured_players.csv"
+if os.path.exists(injured_path):
+    try:
+        injured = pd.read_csv(injured_path)["full_name"].dropna().astype(str).str.strip().tolist()
+    except Exception:
+        injured = None
 
 # Numeric conversion for passing columns
 for col in ["pass_attempts", "completions", "pass_yards", "season", "week"]:
@@ -80,6 +87,10 @@ qb_rosters["player_id"] = qb_rosters["pfr_id"] + ".htm"
 
 # Filter to only the designated starting QBs by matching team and full_name
 qb_rosters = qb_rosters.merge(starting_qbs_2025, left_on=['team', 'full_name'], right_on=['team', 'starting_qb'], how='inner')
+
+# Exclude injured players by full_name if provided
+if injured:
+    qb_rosters = qb_rosters[~qb_rosters["full_name"].isin(injured)]
 
 # Get latest trailing features for each player
 last_season_data = hist[hist["season"] == hist["season"].max()]

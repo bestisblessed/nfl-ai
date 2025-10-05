@@ -30,6 +30,13 @@ os.makedirs(output_dir, exist_ok=True)
 hist = pd.read_csv("data/model_train.csv")
 upcoming = pd.read_csv("data/upcoming_games.csv")
 rosters = pd.read_csv("data/roster_2025.csv")
+injured = None
+injured_path = "data/injured_players.csv"
+if os.path.exists(injured_path):
+    try:
+        injured = pd.read_csv(injured_path)["full_name"].dropna().astype(str).str.strip().tolist()
+    except Exception:
+        injured = None
 
 # Clean historical data
 for col in ["targets", "receptions", "rec_yards", "season", "week"]:
@@ -80,6 +87,10 @@ if "team" not in upcoming.columns:
 current_rosters = rosters[rosters["season"] == 2025]
 rb_rosters = current_rosters[current_rosters["position"] == "RB"].copy()
 rb_rosters["player_id"] = rb_rosters["pfr_id"] + ".htm"
+
+# Exclude injured players by full_name if provided
+if injured:
+    rb_rosters = rb_rosters[~rb_rosters["full_name"].isin(injured)]
 
 # Get latest trailing features for each player
 last_season_data = hist[hist["season"] == hist["season"].max()]

@@ -20,6 +20,7 @@ cp ../../Scrapers/data/all_passing_rushing_receiving.csv data/
 cp ../../Scrapers/data/rosters/roster_2025.csv data/
 cp ../upcoming_games.csv data/
 cp ../starting_qbs_2025.csv data/
+cp ../injured_players.csv data/ 2>/dev/null || true
 python prepare_data.py
 
 # Run predictions
