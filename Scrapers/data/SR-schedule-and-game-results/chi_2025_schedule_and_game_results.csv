@@ -1,8 +1,8 @@
 Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
 1,Mon,September 8,8:15PM ET,boxscore,L,,0-1,,Minnesota Vikings,24,27,20,317,198,119,1,14,254,134,120,1,-1.47,6.40,-4.66
 2,Sun,September 14,1:00PM ET,boxscore,L,,0-2,@,Detroit Lions,21,52,19,339,205,134,2,25,511,334,177,,-2.08,-32.57,7.38
-3,Sun,September 21,4:25PM ET,preview,,,,,Dallas Cowboys,,,,,,,,,,,,,,,
-4,Sun,September 28,4:25PM ET,preview,,,,@,Las Vegas Raiders,,,,,,,,,,,,,,,
+3,Sun,September 21,4:25PM ET,boxscore,W,,1-2,,Dallas Cowboys,31,14,19,385,298,87,,23,396,275,121,4,17.62,0.59,-2.74
+4,Sun,September 28,4:25PM ET,boxscore,W,,2-2,@,Las Vegas Raiders,25,24,16,271,202,69,1,17,357,117,240,4,-7.88,-1.95,9.15
 5,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
 6,Mon,October 13,8:15PM ET,preview,,,,@,Washington Commanders,,,,,,,,,,,,,,,
 7,Sun,October 19,1:00PM ET,preview,,,,,New Orleans Saints,,,,,,,,,,,,,,,

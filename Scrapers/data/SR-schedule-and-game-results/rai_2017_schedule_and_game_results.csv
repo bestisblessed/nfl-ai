@@ -1,0 +1,18 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 10,1:00PM ET,boxscore,W,,1-0,@,Tennessee Titans,26,16,22,359,250,109,,21,350,255,95,,12.55,-9.12,7.62
+2,Sun,September 17,4:05PM ET,boxscore,W,,2-0,,New York Jets,45,20,21,410,230,180,,17,271,145,126,2,27.55,-6.23,2.56
+3,Sun,September 24,8:30PM ET,boxscore,L,,2-1,@,Washington Redskins,10,27,7,128,96,32,3,18,472,356,116,2,-20.15,-9.43,13.27
+4,Sun,October 1,4:25PM ET,boxscore,L,,2-2,@,Denver Broncos,10,16,11,254,230,24,1,16,298,155,143,,-12.83,3.11,6.17
+5,Sun,October 8,4:05PM ET,boxscore,L,,2-3,,Baltimore Ravens,17,30,15,245,137,108,1,19,365,222,143,,-7.57,-11.25,3.62
+6,Sun,October 15,4:25PM ET,boxscore,L,,2-4,,Los Angeles Chargers,16,17,15,274,165,109,2,20,343,263,80,1,-4.48,-3.52,7.48
+7,Thu,October 19,8:25PM ET,boxscore,W,,3-4,,Kansas City Chiefs,31,30,32,505,417,88,,19,425,331,94,,27.92,-18.99,-8.52
+8,Sun,October 29,1:00PM ET,boxscore,L,,3-5,@,Buffalo Bills,14,34,23,367,313,54,4,17,331,165,166,,-4.30,-4.35,-7.44
+9,Sun,November 5,8:30PM ET,boxscore,W,,4-5,@,Miami Dolphins,27,24,20,379,295,84,2,23,395,309,86,1,11.14,-8.10,-0.30
+10,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+11,Sun,November 19,4:25PM ET,boxscore,L,,4-6,,New England Patriots,8,33,21,344,235,109,2,25,421,332,89,,1.26,-23.44,-2.48
+12,Sun,November 26,4:25PM ET,boxscore,W,,5-6,,Denver Broncos,21,14,21,348,244,104,1,12,216,160,56,1,5.41,7.40,-4.87
+13,Sun,December 3,4:25PM ET,boxscore,W,,6-6,,New York Giants,24,17,18,401,282,119,1,15,265,200,65,2,4.22,5.60,0.84
+14,Sun,December 10,1:00PM ET,boxscore,L,,6-7,@,Kansas City Chiefs,15,26,15,268,198,70,3,23,408,243,165,1,-2.49,-7.90,0.27
+15,Sun,December 17,8:30PM ET,boxscore,L,,6-8,,Dallas Cowboys,17,20,19,293,171,122,1,21,330,204,126,2,5.20,-6.11,-2.88
+16,Mon,December 25,8:30PM ET,boxscore,L,,6-9,@,Philadelphia Eagles,10,19,13,274,137,137,5,12,216,138,78,2,-28.59,20.77,-1.32
+17,Sun,December 31,4:25PM ET,boxscore,L,,6-10,@,Los Angeles Chargers,10,30,14,336,231,105,2,26,495,380,115,,-3.91,-23.24,9.97

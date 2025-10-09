@@ -1,0 +1,18 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 10,1:00PM ET,boxscore,L,,0-1,,Atlanta Falcons,17,23,20,301,176,125,,18,372,308,64,,4.93,-12.91,2.90
+2,Sun,September 17,1:00PM ET,boxscore,L,,0-2,@,Tampa Bay Buccaneers,7,29,19,310,290,20,4,22,311,194,117,1,-12.80,-4.54,-3.35
+3,Sun,September 24,1:00PM ET,boxscore,W,OT,1-2,,Pittsburgh Steelers,23,17,18,306,84,222,2,19,282,212,70,2,-2.54,-1.44,10.53
+4,Thu,September 28,8:25PM ET,boxscore,L,,1-3,@,Green Bay Packers,14,35,20,308,205,103,4,17,260,169,91,,-7.46,-11.46,-1.68
+5,Mon,October 9,8:30PM ET,boxscore,L,,1-4,,Minnesota Vikings,17,20,16,274,159,115,2,17,300,141,159,,-3.39,-2.14,2.08
+6,Sun,October 15,1:00PM ET,boxscore,W,OT,2-4,@,Baltimore Ravens,27,24,18,342,111,231,2,16,291,166,125,3,-9.26,24.12,-14.85
+7,Sun,October 22,1:00PM ET,boxscore,W,,3-4,,Carolina Panthers,17,3,5,153,85,68,,20,293,185,108,3,-10.91,25.20,-3.91
+8,Sun,October 29,1:00PM ET,boxscore,L,,3-5,@,New Orleans Saints,12,20,17,307,150,157,1,19,387,286,101,2,-7.73,0.21,-2.47
+9,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+10,Sun,November 12,1:00PM ET,boxscore,L,,3-6,,Green Bay Packers,16,23,14,323,268,55,1,18,342,182,160,,-6.15,-8.98,6.09
+11,Sun,November 19,1:00PM ET,boxscore,L,,3-7,,Detroit Lions,24,27,24,398,176,222,1,20,352,287,65,1,11.16,-8.12,-6.16
+12,Sun,November 26,1:00PM ET,boxscore,L,,3-8,@,Philadelphia Eagles,3,31,8,140,134,6,2,24,420,244,176,3,-21.79,-8.35,0.54
+13,Sun,December 3,1:00PM ET,boxscore,L,,3-9,,San Francisco 49ers,14,15,8,147,85,62,,23,388,278,110,1,-1.50,-4.45,3.02
+14,Sun,December 10,1:00PM ET,boxscore,W,,4-9,@,Cincinnati Bengals,33,7,29,482,250,232,,14,234,164,70,2,19.76,11.40,-4.57
+15,Sat,December 16,4:30PM ET,boxscore,L,,4-10,@,Detroit Lions,10,20,22,349,306,43,3,18,293,202,91,1,-3.76,-3.59,-0.98
+16,Sun,December 24,1:00PM ET,boxscore,W,,5-10,,Cleveland Browns,20,3,16,258,161,97,,12,254,178,76,3,0.75,16.99,-2.44
+17,Sun,December 31,1:00PM ET,boxscore,L,,5-11,@,Minnesota Vikings,10,23,12,201,171,30,,21,327,180,147,,-18.03,-6.33,13.52

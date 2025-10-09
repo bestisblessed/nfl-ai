@@ -1,8 +1,8 @@
 Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
 1,Sun,September 7,4:25PM ET,boxscore,W,,1-0,,Detroit Lions,27,13,14,266,188,78,,16,246,200,46,1,11.63,1.14,3.37
 2,Thu,September 11,8:15PM ET,boxscore,W,,2-0,,Washington Commanders,27,18,22,404,269,135,,15,230,179,51,,8.82,12.80,-6.35
-3,Sun,September 21,1:00PM ET,preview,,,,@,Cleveland Browns,,,,,,,,,,,,,,,
-4,Sun,September 28,8:20PM ET,preview,,,,@,Dallas Cowboys,,,,,,,,,,,,,,,
+3,Sun,September 21,1:00PM ET,boxscore,L,,2-1,@,Cleveland Browns,10,13,14,230,149,81,1,15,221,125,96,1,-7.43,5.50,-1.92
+4,Sun,September 28,8:20PM ET,boxscore,T,OT,2-1-1,@,Dallas Cowboys,40,40,32,489,325,164,1,26,436,319,117,,27.91,-23.86,-0.46
 5,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
 6,Sun,October 12,4:25PM ET,preview,,,,,Cincinnati Bengals,,,,,,,,,,,,,,,
 7,Sun,October 19,4:25PM ET,preview,,,,@,Arizona Cardinals,,,,,,,,,,,,,,,

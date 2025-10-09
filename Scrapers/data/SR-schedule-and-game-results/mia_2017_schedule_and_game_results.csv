@@ -1,0 +1,17 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+2,Sun,September 17,4:05PM ET,boxscore,W,,1-0,@,Los Angeles Chargers,19,17,21,336,225,111,,24,367,323,44,,4.44,-11.99,7.94
+3,Sun,September 24,1:00PM ET,boxscore,L,,1-1,@,New York Jets,6,20,16,225,195,30,2,16,336,233,103,1,-14.62,1.00,0.08
+4,Sun,October 1,9:30AM ET,boxscore,L,,1-2,,New Orleans Saints,0,20,11,186,128,58,1,22,347,261,86,,-16.04,-6.94,4.01
+5,Sun,October 8,1:00PM ET,boxscore,W,,2-2,,Tennessee Titans,16,10,12,178,78,100,2,14,188,119,69,2,-20.39,25.61,-0.74
+6,Sun,October 15,1:00PM ET,boxscore,W,,3-2,@,Atlanta Falcons,20,17,20,289,151,138,1,19,339,239,100,1,7.57,-7.31,4.02
+7,Sun,October 22,1:00PM ET,boxscore,W,,4-2,,New York Jets,31,28,25,357,304,53,2,16,272,180,92,2,2.66,0.88,1.62
+8,Thu,October 26,8:25PM ET,boxscore,L,,4-3,@,Baltimore Ravens,0,40,13,196,151,45,2,19,295,121,174,,-36.09,-3.85,-0.11
+9,Sun,November 5,8:30PM ET,boxscore,L,,4-4,,Oakland Raiders,24,27,23,395,309,86,1,20,379,295,84,2,8.10,-11.14,0.30
+10,Mon,November 13,8:30PM ET,boxscore,L,,4-5,@,Carolina Panthers,21,45,17,313,213,100,1,30,548,254,294,,6.13,-37.09,4.23
+11,Sun,November 19,1:00PM ET,boxscore,L,,4-6,,Tampa Bay Buccaneers,20,30,18,448,365,83,5,19,321,268,53,,-5.30,-0.23,-4.63
+12,Sun,November 26,1:00PM ET,boxscore,L,,4-7,@,New England Patriots,17,35,15,221,154,67,3,25,417,221,196,2,-11.65,-9.46,4.69
+13,Sun,December 3,1:00PM ET,boxscore,W,,5-7,,Denver Broncos,35,9,15,367,222,145,3,14,270,167,103,3,-12.73,28.53,9.92
+14,Mon,December 11,8:30PM ET,boxscore,W,,6-7,,New England Patriots,27,20,21,362,242,120,,14,248,223,25,2,7.02,3.59,-2.39
+15,Sun,December 17,1:00PM ET,boxscore,L,,6-8,@,Buffalo Bills,16,24,21,349,249,100,3,21,328,212,116,,-7.99,-7.23,5.67
+16,Sun,December 24,1:00PM ET,boxscore,L,,6-9,@,Kansas City Chiefs,13,29,15,345,286,59,2,23,404,301,103,,-8.02,-8.58,-0.43
+17,Sun,December 31,4:25PM ET,boxscore,L,,6-10,,Buffalo Bills,16,22,21,356,263,93,1,23,312,186,126,,-1.12,-10.73,5.71

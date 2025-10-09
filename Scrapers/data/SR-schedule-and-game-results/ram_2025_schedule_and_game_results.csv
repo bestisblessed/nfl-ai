@@ -1,9 +1,9 @@
 Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
 1,Sun,September 7,4:25PM ET,boxscore,W,,1-0,,Houston Texans,14,9,18,296,224,72,1,18,265,151,114,2,4.69,5.99,-4.92
 2,Sun,September 14,1:00PM ET,boxscore,W,,2-0,@,Tennessee Titans,33,19,22,439,290,149,1,18,252,143,109,1,14.23,4.30,-4.91
-3,Sun,September 21,1:00PM ET,preview,,,,@,Philadelphia Eagles,,,,,,,,,,,,,,,
-4,Sun,September 28,4:05PM ET,preview,,,,,Indianapolis Colts,,,,,,,,,,,,,,,
-5,Thu,October 2,8:15PM ET,preview,,,,,San Francisco 49ers,,,,,,,,,,,,,,,
+3,Sun,September 21,1:00PM ET,boxscore,L,,2-1,@,Philadelphia Eagles,26,33,22,356,196,160,1,19,288,202,86,1,3.39,-4.15,-6.83
+4,Sun,September 28,4:05PM ET,boxscore,W,,3-1,,Indianapolis Colts,27,20,24,462,360,102,1,17,333,248,85,3,9.32,2.32,-4.14
+5,Thu,October 2,8:15PM ET,boxscore,L,OT,3-2,,San Francisco 49ers,23,26,27,456,378,78,2,27,407,333,74,,12.67,-11.07,-4.60
 6,Sun,October 12,1:00PM ET,preview,,,,@,Baltimore Ravens,,,,,,,,,,,,,,,
 7,Sun,October 19,9:30AM ET,preview,,,,@,Jacksonville Jaguars,,,,,,,,,,,,,,,
 8,,,,,,,,,Bye Week,,,,,,,,,,,,,,,

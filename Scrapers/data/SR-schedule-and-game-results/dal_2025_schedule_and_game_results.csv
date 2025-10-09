@@ -1,8 +1,8 @@
 Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
 1,Thu,September 4,8:20PM ET,boxscore,L,,0-1,@,Philadelphia Eagles,20,24,22,307,188,119,1,20,302,144,158,,10.85,-13.04,-2.69
 2,Sun,September 14,1:00PM ET,boxscore,W,OT,1-1,,New York Giants,40,37,32,478,343,135,1,22,506,422,84,1,23.76,-17.12,-1.51
-3,Sun,September 21,4:25PM ET,preview,,,,@,Chicago Bears,,,,,,,,,,,,,,,
-4,Sun,September 28,8:20PM ET,preview,,,,,Green Bay Packers,,,,,,,,,,,,,,,
+3,Sun,September 21,4:25PM ET,boxscore,L,,1-2,@,Chicago Bears,14,31,23,396,275,121,4,19,385,298,87,,-0.59,-17.62,2.74
+4,Sun,September 28,8:20PM ET,boxscore,T,OT,1-2-1,,Green Bay Packers,40,40,26,436,319,117,,32,489,325,164,1,23.86,-27.91,0.46
 5,Sun,October 5,1:00PM ET,preview,,,,@,New York Jets,,,,,,,,,,,,,,,
 6,Sun,October 12,1:00PM ET,preview,,,,@,Carolina Panthers,,,,,,,,,,,,,,,
 7,Sun,October 19,4:25PM ET,preview,,,,,Washington Commanders,,,,,,,,,,,,,,,

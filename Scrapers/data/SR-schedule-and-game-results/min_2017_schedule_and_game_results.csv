@@ -1,0 +1,21 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Mon,September 11,7:10PM ET,boxscore,W,,1-0,,New Orleans Saints,29,19,23,470,341,129,,19,344,284,60,,24.38,-10.01,0.89
+2,Sun,September 17,1:00PM ET,boxscore,L,,1-1,@,Pittsburgh Steelers,9,26,14,237,146,91,1,22,335,233,102,,-14.51,-0.48,3.84
+3,Sun,September 24,1:00PM ET,boxscore,W,,2-1,,Tampa Bay Buccaneers,34,17,25,494,369,125,,20,342,316,26,3,22.43,-2.64,-1.80
+4,Sun,October 1,1:00PM ET,boxscore,L,,2-2,,Detroit Lions,7,14,15,284,197,87,3,19,251,154,97,,-10.05,5.23,0.21
+5,Mon,October 9,8:30PM ET,boxscore,W,,3-2,@,Chicago Bears,20,17,17,300,141,159,,16,274,159,115,2,2.14,3.39,-2.08
+6,Sun,October 15,1:00PM ET,boxscore,W,,4-2,,Green Bay Packers,23,10,24,351,239,112,2,14,227,155,72,3,-4.65,17.19,-2.65
+7,Sun,October 22,1:00PM ET,boxscore,W,,5-2,,Baltimore Ravens,24,16,17,357,188,169,1,16,208,144,64,,2.80,3.93,-0.59
+8,Sun,October 29,9:30AM ET,boxscore,W,,6-2,@,Cleveland Browns,33,16,26,375,287,88,1,16,276,161,115,2,8.79,4.53,0.63
+9,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+10,Sun,November 12,1:00PM ET,boxscore,W,,7-2,@,Washington Redskins,38,30,21,406,304,102,2,24,394,313,81,1,8.57,-5.61,1.00
+11,Sun,November 19,1:00PM ET,boxscore,W,,8-2,,Los Angeles Rams,24,7,27,451,280,171,,15,254,209,45,1,18.47,4.81,-5.97
+12,Thu,November 23,12:30PM ET,boxscore,W,,9-2,@,Detroit Lions,30,23,28,408,272,136,,17,289,236,53,2,14.39,1.95,-5.37
+13,Sun,December 3,1:00PM ET,boxscore,W,,10-2,@,Atlanta Falcons,14,9,22,312,207,105,,15,275,173,102,,5.93,0.67,1.97
+14,Sun,December 10,1:00PM ET,boxscore,L,,10-3,@,Carolina Panthers,24,31,21,356,256,100,3,15,345,129,216,1,-2.26,-5.54,1.07
+15,Sun,December 17,1:00PM ET,boxscore,W,,11-3,,Cincinnati Bengals,34,7,18,346,222,124,1,8,161,115,46,2,3.03,26.85,-3.20
+16,Sat,December 23,8:30PM ET,boxscore,W,,12-3,@,Green Bay Packers,16,0,15,236,124,112,,12,239,126,113,2,-4.52,23.46,-3.17
+17,Sun,December 31,1:00PM ET,boxscore,W,,13-3,,Chicago Bears,23,10,21,327,180,147,,12,201,171,30,,6.33,18.03,-13.52
+,,Playoffs,,,,,,,,,,,,,,,,,,,,,,
+Division,Sun,January 14,4:40PM ET,boxscore,W,,14-3,,New Orleans Saints,29,24,24,403,308,95,1,23,358,278,80,2,12.63,-5.49,-2.99
+Conf. Champ.,Sun,January 21,6:40PM ET,boxscore,L,,14-4,@,Philadelphia Eagles,7,38,22,333,263,70,3,27,456,346,110,,-9.11,-25.85,4.48

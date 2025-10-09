@@ -1,10 +1,10 @@
 Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
 1,Sun,September 7,1:00PM ET,boxscore,W,,1-0,@,Atlanta Falcons,23,20,16,260,159,101,,23,358,289,69,,7.74,-9.79,5.47
 2,Mon,September 15,7:00PM ET,boxscore,W,,2-0,@,Houston Texans,20,19,25,360,191,169,,12,266,182,84,,10.15,0.88,-11.63
-3,Sun,September 21,1:00PM ET,preview,,,,,New York Jets,,,,,,,,,,,,,,,
-4,Sun,September 28,1:00PM ET,preview,,,,,Philadelphia Eagles,,,,,,,,,,,,,,,
+3,Sun,September 21,1:00PM ET,boxscore,W,,3-0,,New York Jets,29,27,19,347,225,122,,21,267,168,99,2,0.89,10.01,-9.29
+4,Sun,September 28,1:00PM ET,boxscore,L,,3-1,,Philadelphia Eagles,25,31,18,376,272,104,2,16,200,112,88,,-3.04,2.72,-5.68
 5,Sun,October 5,4:05PM ET,preview,,,,@,Seattle Seahawks,,,,,,,,,,,,,,,
-6,Sun,October 12,1:00PM ET,preview,,,,,San Francisco 49ers,,,,,,,,,,,,,,,
+6,Sun,October 12,4:25PM ET,preview,,,,,San Francisco 49ers,,,,,,,,,,,,,,,
 7,Mon,October 20,7:00PM ET,preview,,,,@,Detroit Lions,,,,,,,,,,,,,,,
 8,Sun,October 26,4:05PM ET,preview,,,,@,New Orleans Saints,,,,,,,,,,,,,,,
 9,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
