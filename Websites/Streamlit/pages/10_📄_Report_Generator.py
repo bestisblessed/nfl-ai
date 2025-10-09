@@ -110,22 +110,47 @@ def calculate_team_stats(df_games, df_team_game_logs, team, last_n_games=10):
     
     for _, game in team_games.iterrows():
         if game['home_team'] == team:
-            team_scores.append(game['home_score'])
-            opponent_scores.append(game['away_score'])
-            spreads.append(game['home_spread'] if pd.notna(game['home_spread']) else 0)
-            rest_days.append(game.get('home_rest', 7))  # Default to 7 if not available
+            team_scores.append(float(game['home_score']))
+            opponent_scores.append(float(game['away_score']))
+            # Convert spread to float, handling string values
+            home_spread = game['home_spread']
+            if pd.notna(home_spread):
+                try:
+                    spreads.append(float(str(home_spread).replace('+', '')))
+                except (ValueError, TypeError):
+                    spreads.append(0.0)
+            else:
+                spreads.append(0.0)
+            rest_days.append(int(game.get('home_rest', 7)))  # Default to 7 if not available
         else:
-            team_scores.append(game['away_score'])
-            opponent_scores.append(game['home_score'])
-            spreads.append(game['away_spread'] if pd.notna(game['away_spread']) else 0)
-            rest_days.append(game.get('away_rest', 7))  # Default to 7 if not available
+            team_scores.append(float(game['away_score']))
+            opponent_scores.append(float(game['home_score']))
+            # Convert spread to float, handling string values
+            away_spread = game['away_spread']
+            if pd.notna(away_spread):
+                try:
+                    spreads.append(float(str(away_spread).replace('+', '')))
+                except (ValueError, TypeError):
+                    spreads.append(0.0)
+            else:
+                spreads.append(0.0)
+            rest_days.append(int(game.get('away_rest', 7)))  # Default to 7 if not available
         
-        totals.append(game['total_line'] if pd.notna(game['total_line']) else 0)
+        # Convert total to float, handling string values
+        total_line = game['total_line']
+        if pd.notna(total_line):
+            try:
+                totals.append(float(str(total_line)))
+            except (ValueError, TypeError):
+                totals.append(0.0)
+        else:
+            totals.append(0.0)
+            
         weather_conditions.append({
-            'temp': game.get('temp', 0),
-            'wind': game.get('wind', 0),
-            'roof': game.get('roof', 'unknown'),
-            'surface': game.get('surface', 'unknown')
+            'temp': float(game.get('temp', 0)) if pd.notna(game.get('temp')) else 0,
+            'wind': float(game.get('wind', 0)) if pd.notna(game.get('wind')) else 0,
+            'roof': str(game.get('roof', 'unknown')),
+            'surface': str(game.get('surface', 'unknown'))
         })
     
     # Calculate averages and trends
@@ -134,8 +159,14 @@ def calculate_team_stats(df_games, df_team_game_logs, team, last_n_games=10):
     point_differential = avg_points_for - avg_points_against
     
     # Betting stats
-    team_covered = sum(1 for i, score in enumerate(team_scores) if score + spreads[i] > opponent_scores[i])
-    over_hit = sum(1 for i, total in enumerate(totals) if team_scores[i] + opponent_scores[i] > total)
+    team_covered = 0
+    over_hit = 0
+    
+    if team_scores and spreads and opponent_scores:
+        team_covered = sum(1 for i, score in enumerate(team_scores) if score + spreads[i] > opponent_scores[i])
+    
+    if team_scores and opponent_scores and totals:
+        over_hit = sum(1 for i, total in enumerate(totals) if team_scores[i] + opponent_scores[i] > total)
     
     # Weather analysis
     avg_temp = np.mean([w['temp'] for w in weather_conditions if w['temp'] > 0])
@@ -193,17 +224,21 @@ def calculate_efficiency_metrics(df_team_game_logs, team, game_ids):
     for _, log in team_logs.iterrows():
         # For now, we'll use a simplified approach and calculate averages
         # In a more sophisticated implementation, you'd properly identify home/away
-        offensive_stats.append({
-            'pass_yds_per_att': log.get('home_pass_yds_per_att', 0) if pd.notna(log.get('home_pass_yds_per_att')) else 0,
-            'rush_yds_per_att': log.get('home_rush_yds_per_att', 0) if pd.notna(log.get('home_rush_yds_per_att')) else 0,
-            'pass_cmp_pct': log.get('home_pass_cmp_perc', 0) if pd.notna(log.get('home_pass_cmp_perc')) else 0,
-            'pass_rating': log.get('home_pass_rating', 0) if pd.notna(log.get('home_pass_rating')) else 0,
-        })
-        
-        defensive_stats.append({
-            'pass_yds_per_att_allowed': log.get('away_pass_yds_per_att', 0) if pd.notna(log.get('away_pass_yds_per_att')) else 0,
-            'rush_yds_per_att_allowed': log.get('away_rush_yds_per_att', 0) if pd.notna(log.get('away_rush_yds_per_att')) else 0,
-        })
+        try:
+            offensive_stats.append({
+                'pass_yds_per_att': float(log.get('home_pass_yds_per_att', 0)) if pd.notna(log.get('home_pass_yds_per_att')) else 0,
+                'rush_yds_per_att': float(log.get('home_rush_yds_per_att', 0)) if pd.notna(log.get('home_rush_yds_per_att')) else 0,
+                'pass_cmp_pct': float(log.get('home_pass_cmp_perc', 0)) if pd.notna(log.get('home_pass_cmp_perc')) else 0,
+                'pass_rating': float(log.get('home_pass_rating', 0)) if pd.notna(log.get('home_pass_rating')) else 0,
+            })
+            
+            defensive_stats.append({
+                'pass_yds_per_att_allowed': float(log.get('away_pass_yds_per_att', 0)) if pd.notna(log.get('away_pass_yds_per_att')) else 0,
+                'rush_yds_per_att_allowed': float(log.get('away_rush_yds_per_att', 0)) if pd.notna(log.get('away_rush_yds_per_att')) else 0,
+            })
+        except (ValueError, TypeError):
+            # Skip this row if there are conversion errors
+            continue
     
     # Calculate averages
     if offensive_stats:
@@ -241,15 +276,20 @@ def calculate_defensive_stats(df_defense_logs, team, last_n_games=10):
     recent_games = team_defense['game_id'].unique()[-last_n_games:]
     recent_defense = team_defense[team_defense['game_id'].isin(recent_games)]
     
-    # Calculate defensive metrics
-    total_sacks = recent_defense['sacks'].sum()
-    total_int = recent_defense['def_int'].sum()
-    total_int_yds = recent_defense['def_int_yds'].sum()
-    total_int_td = recent_defense['def_int_td'].sum()
-    total_tackles = recent_defense['tackles_combined'].sum()
-    total_qb_hits = recent_defense['qb_hits'].sum()
-    total_fumbles_forced = recent_defense['fumbles_forced'].sum()
-    total_fumbles_rec = recent_defense['fumbles_rec'].sum()
+    # Calculate defensive metrics with error handling
+    try:
+        total_sacks = recent_defense['sacks'].sum() if 'sacks' in recent_defense.columns else 0
+        total_int = recent_defense['def_int'].sum() if 'def_int' in recent_defense.columns else 0
+        total_int_yds = recent_defense['def_int_yds'].sum() if 'def_int_yds' in recent_defense.columns else 0
+        total_int_td = recent_defense['def_int_td'].sum() if 'def_int_td' in recent_defense.columns else 0
+        total_tackles = recent_defense['tackles_combined'].sum() if 'tackles_combined' in recent_defense.columns else 0
+        total_qb_hits = recent_defense['qb_hits'].sum() if 'qb_hits' in recent_defense.columns else 0
+        total_fumbles_forced = recent_defense['fumbles_forced'].sum() if 'fumbles_forced' in recent_defense.columns else 0
+        total_fumbles_rec = recent_defense['fumbles_rec'].sum() if 'fumbles_rec' in recent_defense.columns else 0
+    except Exception:
+        # If there are any errors, set all to 0
+        total_sacks = total_int = total_int_yds = total_int_td = 0
+        total_tackles = total_qb_hits = total_fumbles_forced = total_fumbles_rec = 0
     
     games_count = len(recent_games)
     
