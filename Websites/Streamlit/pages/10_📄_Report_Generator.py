@@ -212,13 +212,13 @@ with col2:
             over_50_points_games = int((total_points > 50).sum())
 
             # Display matchup summary with logos
-            col_logo1, col_vs, col_logo2 = st.columns([1, 2, 1])
-            with col_logo1:
-                display_team_logo(team1, size=60)
-            with col_vs:
-                st.markdown("<h2 style='text-align: center; margin: 0;'>VS</h2>", unsafe_allow_html=True)
-            with col_logo2:
-                display_team_logo(team2, size=60)
+            # col_logo1, col_vs, col_logo2 = st.columns([1, 2, 1])
+            # with col_logo1:
+            #     display_team_logo(team1, size=60)
+            # with col_vs:
+            #     st.markdown("<h2 style='text-align: center; margin: 0;'>VS</h2>", unsafe_allow_html=True)
+            # with col_logo2:
+            #     display_team_logo(team2, size=60)
 
             # Only here: compute and show streak, winner_team, and center-stats block
             recent_games_for_streak = last_10_games.sort_values(by='date', ascending=False)
