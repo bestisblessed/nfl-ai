@@ -76,9 +76,9 @@ with tab1:
     st.divider()
 
     # DataFrames to store ATS results
-    overall_ats_records = pd.DataFrame(index=teams, columns=['Win', 'Loss', 'Push']).fillna(0)
-    home_ats_records = pd.DataFrame(index=teams, columns=['Win', 'Loss', 'Push']).fillna(0)
-    away_ats_records = pd.DataFrame(index=teams, columns=['Win', 'Loss', 'Push']).fillna(0)
+    overall_ats_records = pd.DataFrame(index=teams, columns=['Win', 'Loss', 'Push'], dtype='int64').fillna(0)
+    home_ats_records = pd.DataFrame(index=teams, columns=['Win', 'Loss', 'Push'], dtype='int64').fillna(0)
+    away_ats_records = pd.DataFrame(index=teams, columns=['Win', 'Loss', 'Push'], dtype='int64').fillna(0)
 
     for team in teams:
         relevant_columns = ['home_team', 'away_team', 'home_score', 'away_score', 'home_spread', 'away_spread']
@@ -132,7 +132,7 @@ with tab2:
     st.header("O/U Stats (Reg Reason)")
 
     teams = df_teams['TeamID'].tolist()
-    games_selected = df_games[(df_games['season'] == selected_season) & (df_games['week'].between(1, 18))]
+    games_selected = df_games[(df_games['season'] == selected_season) & (df_games['week'].between(1, 18))].copy()
     games_selected['total_score'] = games_selected['home_score'] + games_selected['away_score']
     games_selected['over_under_result'] = games_selected.apply(lambda row: 'over' if row['total_score'] > row['total_line'] else 'under' if row['total_score'] < row['total_line'] else 'push', axis=1)
 

@@ -22,30 +22,29 @@ st.set_page_config(
 ### --- Title and Data --- ###
 st.title('Player Trends')
 
+# Load data using cached function
+@st.cache_data(show_spinner=False)
+def load_data():
+    """Load all required CSV files for Player Trends"""
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    
+    try:
+        df_teams = pd.read_csv(os.path.join(current_dir, '../data', 'Teams.csv'))
+        df_games = pd.read_csv(os.path.join(current_dir, '../data', 'Games.csv'))
+        df_playerstats = pd.read_csv(os.path.join(current_dir, '../data', 'PlayerStats.csv'))
+        df_team_game_logs = pd.read_csv(os.path.join(current_dir, '../data', 'all_team_game_logs.csv'))
+        df_schedule_and_game_results = pd.read_csv(os.path.join(current_dir, '../data', 'all_teams_schedule_and_game_results_merged.csv'))
+        
+        return df_teams, df_games, df_playerstats, df_team_game_logs, df_schedule_and_game_results
+    except FileNotFoundError as e:
+        st.error(f"Error loading data files: {e}")
+        st.stop()
+
+# Load all data
+df_teams, df_games, df_playerstats, df_team_game_logs, df_schedule_and_game_results = load_data()
+
 # Season selector
 selected_season = st.selectbox("Select Season:", [2025, 2024], index=0)
-
-# Load data files directly if not in session state
-if 'df_teams' not in st.session_state:
-    current_dir = os.path.dirname(os.path.abspath(__file__))
-    df_teams = pd.read_csv(os.path.join(current_dir, '../data', 'Teams.csv'))
-    df_games = pd.read_csv(os.path.join(current_dir, '../data', 'Games.csv'))
-    df_playerstats = pd.read_csv(os.path.join(current_dir, '../data', 'PlayerStats.csv'))
-    df_team_game_logs = pd.read_csv(os.path.join(current_dir, '../data', 'all_team_game_logs.csv'))
-    df_schedule_and_game_results = pd.read_csv(os.path.join(current_dir, '../data', 'all_teams_schedule_and_game_results_merged.csv'))
-    
-    # Store in session state for future use
-    st.session_state['df_teams'] = df_teams
-    st.session_state['df_games'] = df_games
-    st.session_state['df_playerstats'] = df_playerstats
-    st.session_state['df_all_team_game_logs'] = df_team_game_logs
-    st.session_state['df_schedule_and_game_results'] = df_schedule_and_game_results
-else:
-    df_teams = st.session_state['df_teams']
-    df_games = st.session_state['df_games']
-    df_playerstats = st.session_state['df_playerstats']
-    df_team_game_logs = st.session_state['df_all_team_game_logs']
-    df_schedule_and_game_results = st.session_state['df_schedule_and_game_results']
 
 st.divider()
 
