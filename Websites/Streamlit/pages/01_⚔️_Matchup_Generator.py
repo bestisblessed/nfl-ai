@@ -1605,16 +1605,31 @@ with col2:
             historical_stats_team2 = pd.DataFrame(columns=df_playerstats.columns)
 
             if players_team1_names.size > 0:
-                historical_stats_team1 = df_playerstats[(df_playerstats['player_display_name'].isin(players_team1_names)) &
-                                                        (((df_playerstats['home_team'] == team1) & (df_playerstats['away_team'] == team2)) |
-                                                         ((df_playerstats['home_team'] == team2) & (df_playerstats['away_team'] == team1)))]
+                # Include games where Team 1 roster players faced Team 2, regardless of which team they played for,
+                # but ensure they were not playing FOR Team 2 in those games.
+                team1_players = df_playerstats[df_playerstats['player_display_name'].isin(players_team1_names)].copy()
+                if 'player_current_team' in team1_players.columns:
+                    historical_stats_team1 = team1_players[
+                        ((team1_players['home_team'] == team2) | (team1_players['away_team'] == team2)) &
+                        (team1_players['player_current_team'] != team2)
+                    ]
+                else:
+                    # Fallback if team column missing: include games containing the opponent
+                    historical_stats_team1 = team1_players[(team1_players['home_team'] == team2) | (team1_players['away_team'] == team2)]
             else:
                 st.info(f"No 2025 roster players found for {team1} matching the roster criteria.")
 
             if players_team2_names.size > 0:
-                historical_stats_team2 = df_playerstats[(df_playerstats['player_display_name'].isin(players_team2_names)) &
-                                                        (((df_playerstats['home_team'] == team1) & (df_playerstats['away_team'] == team2)) |
-                                                         ((df_playerstats['home_team'] == team2) & (df_playerstats['away_team'] == team1)))]
+                # Include games where Team 2 roster players faced Team 1, regardless of which team they played for,
+                # but ensure they were not playing FOR Team 1 in those games.
+                team2_players = df_playerstats[df_playerstats['player_display_name'].isin(players_team2_names)].copy()
+                if 'player_current_team' in team2_players.columns:
+                    historical_stats_team2 = team2_players[
+                        ((team2_players['home_team'] == team1) | (team2_players['away_team'] == team1)) &
+                        (team2_players['player_current_team'] != team1)
+                    ]
+                else:
+                    historical_stats_team2 = team2_players[(team2_players['home_team'] == team1) | (team2_players['away_team'] == team1)]
             else:
                 st.info(f"No 2025 roster players found for {team2} matching the roster criteria.")
 
