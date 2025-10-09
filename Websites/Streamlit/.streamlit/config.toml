@@ -1,3 +1,6 @@
+[server]
+runOnSave = true
+
 [theme]
 #base="dark"
 #primaryColor="#621192"
@@ -13,4 +16,3 @@ primaryColor="#E02020"            # dark gray
 backgroundColor="#d3d3d3"         # light gray
 #font="monospace"
 font="sans serif"
-#font="serif"
