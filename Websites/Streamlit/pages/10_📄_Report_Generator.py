@@ -116,11 +116,17 @@ col1, col2, col3 = st.columns([0.2, 1.5, 0.2]) # Middle ~60% width
 with col2:
     # Team selection using selectbox with unique teams
     unique_teams = sorted(df_games['home_team'].unique())
-    team1 = st.selectbox('Select Team 1:', options=unique_teams, index=unique_teams.index('BUF'))
-    team2 = st.selectbox('Select Team 2:', options=unique_teams, index=unique_teams.index('MIA'))
+    left_team_col, right_team_col = st.columns([1, 1])
+    with left_team_col:
+        team1 = st.selectbox('Select Team 1:', options=unique_teams, index=unique_teams.index('BUF'))
+    with right_team_col:
+        team2 = st.selectbox('Select Team 2:', options=unique_teams, index=unique_teams.index('MIA'))
 
     # Center the generate button
-    if st.button('Generate Report'):
+    btn_c1, btn_c2, btn_c3 = st.columns([1, 0.4, 1])
+    with btn_c2:
+        generate_clicked = st.button('Generate Report', use_container_width=True)
+    if generate_clicked:
         
         # Filter for recent matchups between the two teams (already sorted by date, most recent first)
         team_matchups = df_games[((df_games['home_team'] == team1) & (df_games['away_team'] == team2)) |
