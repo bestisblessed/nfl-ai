@@ -25,13 +25,21 @@ if 'df_games' not in st.session_state:
     current_dir = os.path.dirname(os.path.abspath(__file__))
     df_games = pd.read_csv(os.path.join(current_dir, '../data', 'Games.csv'))
     df_playerstats = pd.read_csv(os.path.join(current_dir, '../data', 'PlayerStats.csv'))
+    # Load 2025 roster as source of truth for current players
+    df_roster2025 = pd.read_csv(os.path.join(current_dir, '../data/rosters', 'roster_2025.csv'))
     
     # Store in session state for future use
     st.session_state['df_games'] = df_games
     st.session_state['df_playerstats'] = df_playerstats
+    st.session_state['df_roster2025'] = df_roster2025
 else:
     df_games = st.session_state['df_games'] 
     df_playerstats = st.session_state['df_playerstats']
+    df_roster2025 = st.session_state.get('df_roster2025')
+    if df_roster2025 is None:
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        df_roster2025 = pd.read_csv(os.path.join(current_dir, '../data/rosters', 'roster_2025.csv'))
+        st.session_state['df_roster2025'] = df_roster2025
 
 # Helper functions (module scope) so they can be used anywhere on the page
 def sort_by_position(df):
@@ -173,18 +181,13 @@ with col2:
             st.write(f"Total points scored by {team1}: {team1_scores}")
             st.write(f"Total points scored by {team2}: {team2_scores}")
 
-            # Get the most recent season available in the data
-            most_recent_season = df_playerstats['season'].max()
-            
-            # Player-level statistics for current-season roster players; if none found, fall back to any players ever listed for the team
-            current_players_team1 = df_playerstats[(df_playerstats['player_current_team'] == team1) &
-                                                   (df_playerstats['season'] == most_recent_season)]
-            current_players_team2 = df_playerstats[(df_playerstats['player_current_team'] == team2) &
-                                                   (df_playerstats['season'] == most_recent_season)]
+            # Use official 2025 roster to determine who is currently on each team (exclude CUT/RET)
+            roster = df_roster2025
+            roster_team1 = roster[(roster['season'] == 2025) & (roster['team'] == team1) & (~roster['status'].isin(['CUT','RET']))]
+            roster_team2 = roster[(roster['season'] == 2025) & (roster['team'] == team2) & (~roster['status'].isin(['CUT','RET']))]
 
-            # Ensure players_teamX_names strictly come from the current season's roster
-            players_team1_names = current_players_team1['player_display_name'].unique()
-            players_team2_names = current_players_team2['player_display_name'].unique()
+            players_team1_names = roster_team1['full_name'].dropna().unique()
+            players_team2_names = roster_team2['full_name'].dropna().unique()
 
             # Initialize historical_stats_team1 and historical_stats_team2 outside the conditional blocks
             historical_stats_team1 = pd.DataFrame(columns=df_playerstats.columns)
@@ -192,17 +195,17 @@ with col2:
 
             if players_team1_names.size > 0:
                 historical_stats_team1 = df_playerstats[(df_playerstats['player_display_name'].isin(players_team1_names)) &
-                                                         ((df_playerstats['home_team'] == team1) & (df_playerstats['away_team'] == team2) |
-                                                          (df_playerstats['home_team'] == team2) & (df_playerstats['away_team'] == team1))]
+                                                        (((df_playerstats['home_team'] == team1) & (df_playerstats['away_team'] == team2)) |
+                                                         ((df_playerstats['home_team'] == team2) & (df_playerstats['away_team'] == team1)))]
             else:
-                st.info(f"No current season ({most_recent_season}) players found for {team1} matching the roster criteria.")
+                st.info(f"No 2025 roster players found for {team1} matching the roster criteria.")
 
             if players_team2_names.size > 0:
                 historical_stats_team2 = df_playerstats[(df_playerstats['player_display_name'].isin(players_team2_names)) &
-                                                         ((df_playerstats['home_team'] == team1) & (df_playerstats['away_team'] == team2) |
-                                                          (df_playerstats['home_team'] == team2) & (df_playerstats['away_team'] == team1))]
+                                                        (((df_playerstats['home_team'] == team1) & (df_playerstats['away_team'] == team2)) |
+                                                         ((df_playerstats['home_team'] == team2) & (df_playerstats['away_team'] == team1)))]
             else:
-                st.info(f"No current season ({most_recent_season}) players found for {team2} matching the roster criteria.")
+                st.info(f"No 2025 roster players found for {team2} matching the roster criteria.")
 
             # Merge in game dates from df_games so we can sort and chart by date
             if not historical_stats_team1.empty:
