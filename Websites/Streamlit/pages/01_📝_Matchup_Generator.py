@@ -591,30 +591,73 @@ with col2:
 </div>
 '''
             st.markdown(stats_md, unsafe_allow_html=True)
+            # st.divider()
+
+            # ---------- Defensive Metrics (moved here, before betting metrics) ----------
+            if (isinstance(df_defense_logs, pd.DataFrame) and not df_defense_logs.empty) or (isinstance(df_team_game_logs, pd.DataFrame) and not df_team_game_logs.empty):
+                st.write("")
+                dcol1_early, spacer_mid_def_early, dcol2_early = st.columns([1, 0.12, 1])
+                t1_def_early = calculate_defense_summary(df_defense_logs, df_team_game_logs, team1, last_n_games=10, df_games_ctx=df_games)
+                t2_def_early = calculate_defense_summary(df_defense_logs, df_team_game_logs, team2, last_n_games=10, df_games_ctx=df_games)
+                with dcol1_early:
+                    st.markdown(f"<div style='text-align:center; font-weight:600; margin-bottom:8px; font-size:1.05rem;'>{team1} Defense</div>", unsafe_allow_html=True)
+                    c1, c2, c3 = st.columns(3)
+                    # First row: per-game averages (spelled out)
+                    c1.metric("Sacks/game", f"{t1_def_early.get('avg_sacks_per_game','N/A')}")
+                    c2.metric("QB Hits/game", f"{t1_def_early.get('avg_qb_hits','N/A')}")
+                    c3.metric("Turnovers/game", f"{t1_def_early.get('avg_total_turnovers','N/A')}")
+                    # Second row: yards values
+                    c4b, c5b = st.columns([0.8, 0.8], gap="small")
+                    c4b.metric("Avg Pass Yds Allowed", f"{t1_def_early.get('avg_pass_yards_allowed','N/A')}")
+                    c5b.metric("Avg Rush Yds Allowed", f"{t1_def_early.get('avg_rush_yards_allowed','N/A')}")
+                with dcol2_early:
+                    st.markdown(f"<div style='text-align:center; font-weight:600; margin-bottom:8px; font-size:1.05rem;'>{team2} Defense</div>", unsafe_allow_html=True)
+                    c1b, c2b, c3b = st.columns(3)
+                    # First row: per-game averages (spelled out)
+                    c1b.metric("Sacks/game", f"{t2_def_early.get('avg_sacks_per_game','N/A')}")
+                    c2b.metric("QB Hits/game", f"{t2_def_early.get('avg_qb_hits','N/A')}")
+                    c3b.metric("Turnovers/game", f"{t2_def_early.get('avg_total_turnovers','N/A')}")
+                    # Second row: yards values
+                    c4b2, c5b2 = st.columns([0.8, 0.8], gap="small")
+                    c4b2.metric("Avg Pass Yds Allowed", f"{t2_def_early.get('avg_pass_yards_allowed','N/A')}")
+                    c5b2.metric("Avg Rush Yds Allowed", f"{t2_def_early.get('avg_rush_yards_allowed','N/A')}")
 
             # -------------------- Head-to-Head ATS & Totals --------------------
-            # st.divider()
-            st.write("")
             st.write("")
             h2h = compute_head_to_head_bets(df_games, team1, team2, limit=10)
             ats_t1_w, ats_t1_l, ats_push = h2h['team1_ats']
+            ats_t2_w, ats_t2_l, ats_t2_p = h2h['team2_ats']
             ou_over, ou_under, ou_push = h2h['ou']
-            # st.subheader("Head-to-Head Betting Results (last 10)")
-            m1, m2, m3, m4 = st.columns(4)
-            m1.metric(f"ATS: {team1}", f"{ats_t1_w}-{ats_t1_l}-{ats_push}")
-            m2.metric(f"ATS: {team2}", f"{h2h['team2_ats'][0]}-{h2h['team2_ats'][1]}-{h2h['team2_ats'][2]}")
-            m3.metric("Totals (O-U-P)", f"{ou_over}-{ou_under}-{ou_push}")
             fav = h2h['fav_dog']
-            with m4:
-                st.markdown(
-                    f"""
-                    <div style='text-align:left; font-size:1.25rem;'>
-                      <div>{team1}: <b>Fav {fav['team1_fav']}</b> - <b>Dog {fav['team1_dog']}</b></div>
-                      <div>{team2}: <b>Fav {fav['team2_fav']}</b> - <b>Dog {fav['team2_dog']}</b></div>
-                    </div>
-                    """,
-                    unsafe_allow_html=True,
-                )
+            box_style_bets = "border:1px solid #e6e6e6; border-radius:10px; padding:12px 14px;"
+            # Move the title out of the box
+            st.markdown(
+                "<div style='text-align:center; font-weight:600; margin-bottom:8px; font-size:1.05rem;'>H2H Betting</div>",
+                unsafe_allow_html=True
+            )
+            html_bets = f"""
+            <div style='{box_style_bets}'>
+              <div style='display:flex; gap:10px; justify-content:space-between;'>
+                <div style='flex:1; text-align:center;'>
+                  <div style='font-size:0.9rem; color:#666;'>ATS: {team1}</div>
+                  <div style='font-size:1.5rem; font-weight:700;'>{ats_t1_w}-{ats_t1_l}-{ats_push}</div>
+                </div>
+                <div style='flex:1; text-align:center;'>
+                  <div style='font-size:0.9rem; color:#666;'>ATS: {team2}</div>
+                  <div style='font-size:1.5rem; font-weight:700;'>{ats_t2_w}-{ats_t2_l}-{ats_t2_p}</div>
+                </div>
+                <div style='flex:1; text-align:center;'>
+                  <div style='font-size:0.9rem; color:#666;'>Totals (O-U-P)</div>
+                  <div style='font-size:1.5rem; font-weight:700;'>{ou_over}-{ou_under}-{ou_push}</div>
+                </div>
+                <div style='flex:1; text-align:left;'>
+                  <div style='font-size:1rem; color:#666;'><b>{team1}:</b> <b>Fav {fav['team1_fav']}</b> - <b>Dog {fav['team1_dog']}</b></div>
+                  <div style='font-size:1rem; color:#666;'><b>{team2}:</b> <b>Fav {fav['team2_fav']}</b> - <b>Dog {fav['team2_dog']}</b></div>
+                </div>
+              </div>
+            </div>
+            """
+            st.markdown(html_bets, unsafe_allow_html=True)
 
             # Build per-game outcomes for interactive view
             games = h2h['games'].copy()
@@ -665,6 +708,7 @@ with col2:
                 show_df = pd.concat([games[['game_id_display','home_team','away_team','home_score','away_score','total_line','team_favorite']], outcomes], axis=1)
                 show_df.rename(columns={'total_line':'Total Line','team_favorite':'Favorite','game_id_display':'game_id'}, inplace=True)
 
+                st.write("")
                 with st.expander("Per-game results", expanded=False):
                     df_display = show_df.copy()
                     cols = ['game_id','home_team','away_team','home_score','away_score','Favorite','Total Line','O/U Result', f'{team1} Spread', f'{team1} ATS', f'{team2} Spread', f'{team2} ATS']
@@ -745,98 +789,23 @@ with col2:
             # top_left, top_right = st.columns(2)
             top_left, spacer_mid_perf, top_right = st.columns([1, 0.12, 1])
             with top_left:
-                st.markdown(f"<div style='text-align:center; font-weight:bold;'>Top Performer Metrics — {team1}</div>", unsafe_allow_html=True)
-                t1_top = compute_top_skill_performers(historical_stats_team1, top_n=4)
+                st.markdown(f"<div style='text-align:center; font-weight:bold;'>Top Performance Metrics — {team1}</div>", unsafe_allow_html=True)
+                st.write(" ")
+                t1_top = compute_top_skill_performers(historical_stats_team1, top_n=4)      
                 if not t1_top.empty:
                     st.dataframe(t1_top, use_container_width=True, hide_index=True)
                 else:
                     st.write("No skill-position data available")
             with top_right:
-                st.markdown(f"<div style='text-align:center; font-weight:bold;'>Top Performer Metrics — {team2}</div>", unsafe_allow_html=True)
+                st.markdown(f"<div style='text-align:center; font-weight:bold;'>Top Performance Metrics — {team2}</div>", unsafe_allow_html=True)
+                st.write(" ")
                 t2_top = compute_top_skill_performers(historical_stats_team2, top_n=4)
                 if not t2_top.empty:
                     st.dataframe(t2_top, use_container_width=True, hide_index=True)
                 else:
                     st.write("No skill-position data available")
 
-            # ---------- NEW: Defensive Metrics under Top Performance Metrics ----------
-            if (isinstance(df_defense_logs, pd.DataFrame) and not df_defense_logs.empty) or (isinstance(df_team_game_logs, pd.DataFrame) and not df_team_game_logs.empty):
-                st.write("")
-                # st.markdown("<div style='text-align: center;'><h3>Defensive Metrics (L10)</h3></div>", unsafe_allow_html=True)
-                # st.write("")
-                dcol1, spacer_mid_def, dcol2 = st.columns([1, 0.12, 1])
-                t1_def = calculate_defense_summary(df_defense_logs, df_team_game_logs, team1, last_n_games=10, df_games_ctx=df_games)
-                t2_def = calculate_defense_summary(df_defense_logs, df_team_game_logs, team2, last_n_games=10, df_games_ctx=df_games)
-                with dcol1:
-                    box_style = "border:1px solid #e6e6e6; border-radius:10px; padding:12px 14px;"
-                    def _fmt(v):
-                        try:
-                            return f"{float(v):.1f}"
-                        except Exception:
-                            return str(v)
-                    html1 = f"""
-                    <div style='{box_style}'>
-                      <div style='text-align:center; font-weight:600; margin-bottom:10px; font-size:1.05rem;'>{team1} Defense</div>
-                      <div style='display:flex; gap:10px; justify-content:space-between;'>
-                        <div style='flex:1; text-align:center;'>
-                          <div style='font-size:0.78rem; color:#666;'>Sacks/G</div>
-                          <div style='font-size:1.35rem; font-weight:700;'>{_fmt(t1_def.get('avg_sacks_per_game','N/A'))}</div>
-                        </div>
-                        <div style='flex:1; text-align:center;'>
-                          <div style='font-size:0.78rem; color:#666;'>QB Hits/G</div>
-                          <div style='font-size:1.35rem; font-weight:700;'>{_fmt(t1_def.get('avg_qb_hits','N/A'))}</div>
-                        </div>
-                        <div style='flex:1; text-align:center;'>
-                          <div style='font-size:0.78rem; color:#666;'>TO/G</div>
-                          <div style='font-size:1.35rem; font-weight:700;'>{_fmt(t1_def.get('avg_total_turnovers','N/A'))}</div>
-                        </div>
-                        <div style='flex:1; text-align:center;'>
-                          <div style='font-size:0.78rem; color:#666;'>Pass Yds A</div>
-                          <div style='font-size:1.35rem; font-weight:700;'>{_fmt(t1_def.get('avg_pass_yards_allowed','N/A'))}</div>
-                        </div>
-                        <div style='flex:1; text-align:center;'>
-                          <div style='font-size:0.78rem; color:#666;'>Rush Yds A</div>
-                          <div style='font-size:1.35rem; font-weight:700;'>{_fmt(t1_def.get('avg_rush_yards_allowed','N/A'))}</div>
-                        </div>
-                      </div>
-                    </div>
-                    """
-                    st.markdown(html1, unsafe_allow_html=True)
-                with dcol2:
-                    box_style = "border:1px solid #e6e6e6; border-radius:10px; padding:12px 14px;"
-                    def _fmt2(v):
-                        try:
-                            return f"{float(v):.1f}"
-                        except Exception:
-                            return str(v)
-                    html2 = f"""
-                    <div style='{box_style}'>
-                      <div style='text-align:center; font-weight:600; margin-bottom:10px; font-size:1.05rem;'>{team2} Defense</div>
-                      <div style='display:flex; gap:10px; justify-content:space-between;'>
-                        <div style='flex:1; text-align:center;'>
-                          <div style='font-size:0.78rem; color:#666;'>Sacks/G</div>
-                          <div style='font-size:1.35rem; font-weight:700;'>{_fmt2(t2_def.get('avg_sacks_per_game','N/A'))}</div>
-                        </div>
-                        <div style='flex:1; text-align:center;'>
-                          <div style='font-size:0.78rem; color:#666;'>QB Hits/G</div>
-                          <div style='font-size:1.35rem; font-weight:700;'>{_fmt2(t2_def.get('avg_qb_hits','N/A'))}</div>
-                        </div>
-                        <div style='flex:1; text-align:center;'>
-                          <div style='font-size:0.78rem; color:#666;'>TO/G</div>
-                          <div style='font-size:1.35rem; font-weight:700;'>{_fmt2(t2_def.get('avg_total_turnovers','N/A'))}</div>
-                        </div>
-                        <div style='flex:1; text-align:center;'>
-                          <div style='font-size:0.78rem; color:#666;'>Pass Yds A</div>
-                          <div style='font-size:1.35rem; font-weight:700;'>{_fmt2(t2_def.get('avg_pass_yards_allowed','N/A'))}</div>
-                        </div>
-                        <div style='flex:1; text-align:center;'>
-                          <div style='font-size:0.78rem; color:#666;'>Rush Yds A</div>
-                          <div style='font-size:1.35rem; font-weight:700;'>{_fmt2(t2_def.get('avg_rush_yards_allowed','N/A'))}</div>
-                        </div>
-                      </div>
-                    </div>
-                    """
-                    st.markdown(html2, unsafe_allow_html=True)
+            # (Defensive metrics moved above; no rendering here now)
 
             # Save results to session state for full-width render below
             st.session_state['rg_team1'] = team1
