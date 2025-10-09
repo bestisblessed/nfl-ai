@@ -3,6 +3,7 @@ import pandas as pd
 import os
 import plotly.express as px
 import numpy as np
+import base64
 
 # NFL team color mapping (primary colors)
 TEAM_COLORS = {
@@ -589,6 +590,19 @@ def generate_html_report(team1, team2, report_data):
         .team-logo {{
             width: 60px;
             height: 60px;
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }}
+        .team-logo img {{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }}
+        .team-logo-fallback {{
+            width: 60px;
+            height: 60px;
             border: 1px solid #ccc;
             display: flex;
             align-items: center;
@@ -908,10 +922,11 @@ def generate_html_report(team1, team2, report_data):
         
         # Team 1 players
         if not t1_stats.empty:
+            team1_logo_html = _get_team_logo_html(team1)
             html_content += f"""
         <div class="player-section">
             <div class="player-header">
-                <div class="team-logo">{team1}</div>
+                {team1_logo_html}
                 <div>{team1} Players</div>
             </div>
 """
@@ -923,10 +938,11 @@ def generate_html_report(team1, team2, report_data):
         
         # Team 2 players
         if not t2_stats.empty:
+            team2_logo_html = _get_team_logo_html(team2)
             html_content += f"""
         <div class="player-section">
             <div class="player-header">
-                <div class="team-logo">{team2}</div>
+                {team2_logo_html}
                 <div>{team2} Players</div>
             </div>
 """
@@ -944,6 +960,37 @@ def generate_html_report(team1, team2, report_data):
 """
     
     return html_content
+
+def _get_team_logo_html(team_abbrev):
+    """Return an <img> tag with a base64-embedded team logo so the HTML is self-contained.
+
+    Falls back to a styled abbreviation box when the logo file isn't available.
+    """
+    fname = f"{team_abbrev}.png"
+    # Resolve potential locations
+    script_relative_path = os.path.abspath(
+        os.path.join(os.path.dirname(__file__), '..', 'images', 'team-logos', fname)
+    )
+    repo_relative_path = os.path.join('images', 'team-logos', fname)
+
+    logo_path = None
+    if os.path.exists(script_relative_path):
+        logo_path = script_relative_path
+    elif os.path.exists(repo_relative_path):
+        # When running in repo root the relative path may work; but for download we embed anyway
+        logo_path = repo_relative_path
+
+    if logo_path and os.path.exists(logo_path):
+        try:
+            with open(logo_path, 'rb') as f:
+                encoded = base64.b64encode(f.read()).decode('ascii')
+            data_uri = f"data:image/png;base64,{encoded}"
+            return f'<div class="team-logo"><img src="{data_uri}" alt="{team_abbrev}" /></div>'
+        except Exception:
+            # If anything goes wrong, use fallback
+            return f'<div class="team-logo-fallback">{team_abbrev}</div>'
+    else:
+        return f'<div class="team-logo-fallback">{team_abbrev}</div>'
 
 def _generate_player_html(historical_df, team_name, opponent_name):
     """Generate HTML for player section with expanded details."""
@@ -1700,7 +1747,8 @@ if all(k in st.session_state for k in ['rg_hist_team1','rg_hist_team2','rg_team1
 # Add download button at the bottom
 if all(k in st.session_state for k in ['rg_report_data', 'rg_team1', 'rg_team2']):
     st.write("")
-    st.divider()
+    st.write("")
+    # st.divider()
     
     # Center the download button
     dl_col1, dl_col2, dl_col3 = st.columns([1, 0.4, 1])
@@ -1714,7 +1762,7 @@ if all(k in st.session_state for k in ['rg_report_data', 'rg_team1', 'rg_team2']
         
         # Create download button
         st.download_button(
-            label="📄 Download Report as HTML",
+            label="📄 Download Report",
             data=html_content,
             file_name=f"{st.session_state['rg_team1']}_vs_{st.session_state['rg_team2']}_matchup_report.html",
             mime="text/html",
