@@ -105,7 +105,7 @@ def show_condensed_players(historical_df, team_name, opponent_name):
 
     with st.container():
         st.subheader(f"**{team_name} Players**")
-        st.dataframe(display_df[['Player','Pos','Games','Primary','Avg FPTS']], use_container_width=True, hide_index=True)
+        st.dataframe(display_df[['Player','Pos','Games','Avg FPTS']], use_container_width=True, hide_index=True)
         for _, row in display_df.iterrows():
             pname = row['Player']
             with st.expander(pname, expanded=False):
@@ -124,10 +124,8 @@ def _reset_report_results():
     for k in ['rg_hist_team1', 'rg_hist_team2', 'rg_team1', 'rg_team2']:
         st.session_state.pop(k, None)
 
-# On first load of this page, clear stale results so player sections don't show by default
-if 'rg_initialized' not in st.session_state:
-    _reset_report_results()
-    st.session_state['rg_initialized'] = True
+# Clear any stale report results on page load so returning to this page doesn't show previous player tables
+_reset_report_results()
 
 # Center the top section (narrower middle column)
 col1, col2, col3 = st.columns([0.2, .5, 0.2]) # Middle ~60% width
