@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+import os
 
 # Page configuration
 st.set_page_config(
@@ -15,24 +16,27 @@ st.set_page_config(
 
 st.title('2025 NFL Season Division Standings')
 
+# Load data using cached function
+@st.cache_data(show_spinner=False)
+def load_data():
+    """Load all required CSV files for Standings"""
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    
+    try:
+        df_teams = pd.read_csv(os.path.join(current_dir, '../data', 'Teams.csv'))
+        df_games = pd.read_csv(os.path.join(current_dir, '../data', 'Games.csv'))
+        df_playerstats = pd.read_csv(os.path.join(current_dir, '../data', 'PlayerStats.csv'))
+        
+        return df_teams, df_games, df_playerstats
+    except FileNotFoundError as e:
+        st.error(f"Error loading data files: {e}")
+        st.stop()
+
+# Load all data
+df_teams, df_games, df_playerstats = load_data()
+
 # Season selector
 selected_season = st.selectbox("Select Season:", [2025, 2024], index=0)
-
-# Load data files directly if not in session state
-if 'df_teams' not in st.session_state:
-    current_dir = os.path.dirname(os.path.abspath(__file__))
-    df_teams = pd.read_csv(os.path.join(current_dir, '../data', 'Teams.csv'))
-    df_games = pd.read_csv(os.path.join(current_dir, '../data', 'Games.csv'))
-    df_playerstats = pd.read_csv(os.path.join(current_dir, '../data', 'PlayerStats.csv'))
-    
-    # Store in session state for future use
-    st.session_state['df_teams'] = df_teams
-    st.session_state['df_games'] = df_games
-    st.session_state['df_playerstats'] = df_playerstats
-else:
-    df_teams = st.session_state['df_teams']
-    df_games = st.session_state['df_games'] 
-    df_playerstats = st.session_state['df_playerstats']
 
 # Filter the games to the selected season
 # games_2023 = df_games[df_games['season'] == 2023]
@@ -81,9 +85,10 @@ teams_performance_selected = pd.DataFrame({
 teams_division = df_teams[['TeamID', 'Division']]
 standings = pd.merge(teams_performance_selected, teams_division, on='TeamID')
 
-# Group by division and sort
-division_standings = standings.groupby('Division').apply(
-    lambda x: x.sort_values(['Wins', 'Losses', 'Ties'], ascending=[False, True, True])
+# Group by division and sort - using sort_values instead of apply to avoid deprecation warning
+division_standings = standings.sort_values(
+    by=['Division', 'Wins', 'Losses', 'Ties'], 
+    ascending=[True, False, True, True]
 ).reset_index(drop=True)
 
 # Display each division's standings with styling, two per row

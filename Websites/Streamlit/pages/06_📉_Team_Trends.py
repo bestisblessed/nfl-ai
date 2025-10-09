@@ -170,9 +170,13 @@ st.write("##")
 col1, col2 = st.columns(2)
 
 filtered_df_teams = df_teams.copy()
-filtered_df_teams['TeamID'] = filtered_df_teams['TeamID'].str.lower()
-df_schedule_and_game_results['Week'] = pd.to_numeric(df_schedule_and_game_results['Week'], errors='coerce')
-df_schedule_and_game_results = df_schedule_and_game_results.dropna(subset=['Day'])
+filtered_df_teams.loc[:, 'TeamID'] = filtered_df_teams['TeamID'].str.lower()
+
+# Create a copy of df_schedule_and_game_results to avoid SettingWithCopyWarning
+df_schedule_results = df_schedule_and_game_results.copy()
+df_schedule_results.loc[:, 'Week'] = pd.to_numeric(df_schedule_results['Week'], errors='coerce')
+df_schedule_results = df_schedule_results.dropna(subset=['Day'])
+
 team_abbreviation_mapping = {
     'gnb': 'gb',
     'htx': 'hou',
@@ -189,8 +193,8 @@ team_abbreviation_mapping = {
     'rav': 'bal',
     'crd': 'ari'
 }
-df_schedule_and_game_results['Team'] = df_schedule_and_game_results['Team'].map(team_abbreviation_mapping).fillna(df_schedule_and_game_results['Team'])
-df_schedule_and_game_results_filtered = df_schedule_and_game_results[(df_schedule_and_game_results['Season'] == selected_season) & (df_schedule_and_game_results['Week'] >= 1) & (df_schedule_and_game_results['Week'] <= 18)]
+df_schedule_results.loc[:, 'Team'] = df_schedule_results['Team'].map(team_abbreviation_mapping).fillna(df_schedule_results['Team'])
+df_schedule_and_game_results_filtered = df_schedule_results[(df_schedule_results['Season'] == selected_season) & (df_schedule_results['Week'] >= 1) & (df_schedule_results['Week'] <= 18)]
 
 # Passing Yards Allowed
 with col1:
