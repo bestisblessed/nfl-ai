@@ -46,19 +46,46 @@ if 'df_games' not in st.session_state:
     df_playerstats = pd.read_csv(os.path.join(current_dir, '../data', 'PlayerStats.csv'))
     # Load 2025 roster as source of truth for current players
     df_roster2025 = pd.read_csv(os.path.join(current_dir, '../data/rosters', 'roster_2025.csv'))
+    # Additional logs for defensive metrics
+    try:
+        df_team_game_logs = pd.read_csv(os.path.join(current_dir, '../data', 'all_team_game_logs.csv'))
+    except Exception:
+        df_team_game_logs = pd.DataFrame()
+    try:
+        df_defense_logs = pd.read_csv(os.path.join(current_dir, '../data', 'all_defense-game-logs.csv'))
+    except Exception:
+        df_defense_logs = pd.DataFrame()
     
     # Store in session state for future use
     st.session_state['df_games'] = df_games
     st.session_state['df_playerstats'] = df_playerstats
     st.session_state['df_roster2025'] = df_roster2025
+    st.session_state['df_team_game_logs'] = df_team_game_logs
+    st.session_state['df_defense_logs'] = df_defense_logs
 else:
     df_games = st.session_state['df_games'] 
     df_playerstats = st.session_state['df_playerstats']
     df_roster2025 = st.session_state.get('df_roster2025')
+    df_team_game_logs = st.session_state.get('df_team_game_logs')
+    df_defense_logs = st.session_state.get('df_defense_logs')
     if df_roster2025 is None:
         current_dir = os.path.dirname(os.path.abspath(__file__))
         df_roster2025 = pd.read_csv(os.path.join(current_dir, '../data/rosters', 'roster_2025.csv'))
         st.session_state['df_roster2025'] = df_roster2025
+    if df_team_game_logs is None:
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        try:
+            df_team_game_logs = pd.read_csv(os.path.join(current_dir, '../data', 'all_team_game_logs.csv'))
+        except Exception:
+            df_team_game_logs = pd.DataFrame()
+        st.session_state['df_team_game_logs'] = df_team_game_logs
+    if df_defense_logs is None:
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        try:
+            df_defense_logs = pd.read_csv(os.path.join(current_dir, '../data', 'all_defense-game-logs.csv'))
+        except Exception:
+            df_defense_logs = pd.DataFrame()
+        st.session_state['df_defense_logs'] = df_defense_logs
 
 # Helper functions (module scope) so they can be used anywhere on the page
 def display_team_logo(team_abbrev, size=100):
@@ -123,6 +150,82 @@ def compute_top_skill_performers(historical_df: pd.DataFrame, top_n: int = 4) ->
     })
     cols_order = ['Player','Pos','Rec TDs','Rec Yds','Rush TDs','Rush Yds']
     return display_top[[c for c in cols_order if c in display_top.columns]]
+
+def calculate_defense_summary(df_defense_logs: pd.DataFrame, df_team_game_logs: pd.DataFrame, team: str, last_n_games: int = 10, df_games_ctx: pd.DataFrame | None = None) -> dict:
+    """Compute defensive metrics for a team over the last N games.
+    Returns averages for sacks/game, QB hits, total turnovers, pass yards allowed, rush yards allowed.
+    """
+    out = {
+        'avg_sacks_per_game': 0.0,
+        'avg_qb_hits': 0.0,
+        'avg_total_turnovers': 0.0,
+        'avg_pass_yards_allowed': 0.0,
+        'avg_rush_yards_allowed': 0.0,
+    }
+    # Defensive event logs (sacks, hits, turnovers)
+    if isinstance(df_defense_logs, pd.DataFrame) and not df_defense_logs.empty and 'team' in df_defense_logs.columns:
+        team_def = df_defense_logs[df_defense_logs['team'] == team].copy()
+        if not team_def.empty:
+            # Use last N unique games
+            recent_game_ids = list(pd.unique(team_def['game_id']))[-last_n_games:]
+            recent = team_def[team_def['game_id'].isin(recent_game_ids)]
+            gcount = max(1, len(recent_game_ids))
+            sacks = pd.to_numeric(recent.get('sacks', 0), errors='coerce').fillna(0).sum()
+            qb_hits = pd.to_numeric(recent.get('qb_hits', 0), errors='coerce').fillna(0).sum()
+            interceptions = pd.to_numeric(recent.get('def_int', 0), errors='coerce').fillna(0).sum()
+            fumbles_rec = pd.to_numeric(recent.get('fumbles_rec', 0), errors='coerce').fillna(0).sum()
+            out['avg_sacks_per_game'] = round(float(sacks) / gcount, 1)
+            out['avg_qb_hits'] = round(float(qb_hits) / gcount, 1)
+            out['avg_total_turnovers'] = round(float(interceptions + fumbles_rec) / gcount, 1)
+    
+    # Team game logs for yards allowed per game
+    if isinstance(df_team_game_logs, pd.DataFrame) and not df_team_game_logs.empty:
+        # Many team logs lack explicit home/away team columns but include them in game_id like '2017_01_AWAY_HOME'
+        logs_all = df_team_game_logs.copy()
+        if 'home_team' not in logs_all.columns or 'away_team' not in logs_all.columns:
+            parts = logs_all['game_id'].astype(str).str.split('_')
+            # Expecting [season, week, away, home]
+            logs_all.loc[:, 'away_team'] = parts.str[2]
+            logs_all.loc[:, 'home_team'] = parts.str[3]
+        # Identify recent N games using df_games if available for better date sorting
+        if isinstance(df_games_ctx, pd.DataFrame) and not df_games_ctx.empty and 'date' in df_games_ctx.columns:
+            games = df_games_ctx[(df_games_ctx['home_team'] == team) | (df_games_ctx['away_team'] == team)].dropna(subset=['home_score','away_score']).copy()
+            games.loc[:, 'date'] = pd.to_datetime(games['date'], errors='coerce')
+            games = games.sort_values('date').tail(last_n_games)
+            recent_ids = set(games['game_id'].astype(str))
+            logs = logs_all[logs_all['game_id'].astype(str).isin(recent_ids)].copy()
+        else:
+            # Fallback: filter and take tail by game_id order
+            mask = (logs_all['home_team'] == team) | (logs_all['away_team'] == team)
+            logs = logs_all.loc[mask].copy()
+        if not logs.empty:
+            # Sort by any available date or game_id for recency and take last N
+            if 'date' in logs.columns:
+                logs.loc[:, 'date'] = pd.to_datetime(logs['date'], errors='coerce')
+                logs = logs.sort_values('date')
+            elif 'game_id' in logs.columns:
+                logs = logs.sort_values('game_id')
+            logs = logs.tail(last_n_games)
+
+            # Ensure numeric source columns exist
+            for k in ['home_pass_yds','away_pass_yds','home_rush_yds','away_rush_yds']:
+                if k not in logs.columns:
+                    logs.loc[:, k] = 0
+                logs.loc[:, k] = pd.to_numeric(logs[k], errors='coerce').fillna(0)
+
+            # Build per-row allowed yardage with safe lookups
+            pass_allowed_vals, rush_allowed_vals = [], []
+            for _, r in logs.iterrows():
+                is_home = str(r.get('home_team')) == str(team)
+                pass_allowed = float(r.get('away_pass_yds', 0)) if is_home else float(r.get('home_pass_yds', 0))
+                rush_allowed = float(r.get('away_rush_yds', 0)) if is_home else float(r.get('home_rush_yds', 0))
+                pass_allowed_vals.append(pass_allowed)
+                rush_allowed_vals.append(rush_allowed)
+
+            out['avg_pass_yards_allowed'] = round(float(np.nanmean(pass_allowed_vals)), 1) if len(pass_allowed_vals) else 0.0
+            out['avg_rush_yards_allowed'] = round(float(np.nanmean(rush_allowed_vals)), 1) if len(rush_allowed_vals) else 0.0
+
+    return out
 
 def show_condensed_players(historical_df, team_name, opponent_name):
     if historical_df.empty:
@@ -639,21 +742,101 @@ with col2:
                 historical_stats_team2.loc[:, 'player_name_with_position'] = historical_stats_team2['player_display_name'] + " (" + historical_stats_team2['position'] + ")"
 
             # ---------- NEW: Top Performer Metrics side-by-side under pies ----------
-            top_left, top_right = st.columns(2)
+            # top_left, top_right = st.columns(2)
+            top_left, spacer_mid_perf, top_right = st.columns([1, 0.12, 1])
             with top_left:
-                st.markdown(f"**Top Performance Metrics — {team1}**")
+                st.markdown(f"<div style='text-align:center; font-weight:bold;'>Top Performer Metrics — {team1}</div>", unsafe_allow_html=True)
                 t1_top = compute_top_skill_performers(historical_stats_team1, top_n=4)
                 if not t1_top.empty:
                     st.dataframe(t1_top, use_container_width=True, hide_index=True)
                 else:
                     st.write("No skill-position data available")
             with top_right:
-                st.markdown(f"**Top Performance Metrics — {team2}**")
+                st.markdown(f"<div style='text-align:center; font-weight:bold;'>Top Performer Metrics — {team2}</div>", unsafe_allow_html=True)
                 t2_top = compute_top_skill_performers(historical_stats_team2, top_n=4)
                 if not t2_top.empty:
                     st.dataframe(t2_top, use_container_width=True, hide_index=True)
                 else:
                     st.write("No skill-position data available")
+
+            # ---------- NEW: Defensive Metrics under Top Performance Metrics ----------
+            if (isinstance(df_defense_logs, pd.DataFrame) and not df_defense_logs.empty) or (isinstance(df_team_game_logs, pd.DataFrame) and not df_team_game_logs.empty):
+                st.write("")
+                # st.markdown("<div style='text-align: center;'><h3>Defensive Metrics (L10)</h3></div>", unsafe_allow_html=True)
+                # st.write("")
+                dcol1, spacer_mid_def, dcol2 = st.columns([1, 0.12, 1])
+                t1_def = calculate_defense_summary(df_defense_logs, df_team_game_logs, team1, last_n_games=10, df_games_ctx=df_games)
+                t2_def = calculate_defense_summary(df_defense_logs, df_team_game_logs, team2, last_n_games=10, df_games_ctx=df_games)
+                with dcol1:
+                    box_style = "border:1px solid #e6e6e6; border-radius:10px; padding:12px 14px;"
+                    def _fmt(v):
+                        try:
+                            return f"{float(v):.1f}"
+                        except Exception:
+                            return str(v)
+                    html1 = f"""
+                    <div style='{box_style}'>
+                      <div style='text-align:center; font-weight:600; margin-bottom:10px; font-size:1.05rem;'>{team1} Defense</div>
+                      <div style='display:flex; gap:10px; justify-content:space-between;'>
+                        <div style='flex:1; text-align:center;'>
+                          <div style='font-size:0.78rem; color:#666;'>Sacks/G</div>
+                          <div style='font-size:1.35rem; font-weight:700;'>{_fmt(t1_def.get('avg_sacks_per_game','N/A'))}</div>
+                        </div>
+                        <div style='flex:1; text-align:center;'>
+                          <div style='font-size:0.78rem; color:#666;'>QB Hits/G</div>
+                          <div style='font-size:1.35rem; font-weight:700;'>{_fmt(t1_def.get('avg_qb_hits','N/A'))}</div>
+                        </div>
+                        <div style='flex:1; text-align:center;'>
+                          <div style='font-size:0.78rem; color:#666;'>TO/G</div>
+                          <div style='font-size:1.35rem; font-weight:700;'>{_fmt(t1_def.get('avg_total_turnovers','N/A'))}</div>
+                        </div>
+                        <div style='flex:1; text-align:center;'>
+                          <div style='font-size:0.78rem; color:#666;'>Pass Yds A</div>
+                          <div style='font-size:1.35rem; font-weight:700;'>{_fmt(t1_def.get('avg_pass_yards_allowed','N/A'))}</div>
+                        </div>
+                        <div style='flex:1; text-align:center;'>
+                          <div style='font-size:0.78rem; color:#666;'>Rush Yds A</div>
+                          <div style='font-size:1.35rem; font-weight:700;'>{_fmt(t1_def.get('avg_rush_yards_allowed','N/A'))}</div>
+                        </div>
+                      </div>
+                    </div>
+                    """
+                    st.markdown(html1, unsafe_allow_html=True)
+                with dcol2:
+                    box_style = "border:1px solid #e6e6e6; border-radius:10px; padding:12px 14px;"
+                    def _fmt2(v):
+                        try:
+                            return f"{float(v):.1f}"
+                        except Exception:
+                            return str(v)
+                    html2 = f"""
+                    <div style='{box_style}'>
+                      <div style='text-align:center; font-weight:600; margin-bottom:10px; font-size:1.05rem;'>{team2} Defense</div>
+                      <div style='display:flex; gap:10px; justify-content:space-between;'>
+                        <div style='flex:1; text-align:center;'>
+                          <div style='font-size:0.78rem; color:#666;'>Sacks/G</div>
+                          <div style='font-size:1.35rem; font-weight:700;'>{_fmt2(t2_def.get('avg_sacks_per_game','N/A'))}</div>
+                        </div>
+                        <div style='flex:1; text-align:center;'>
+                          <div style='font-size:0.78rem; color:#666;'>QB Hits/G</div>
+                          <div style='font-size:1.35rem; font-weight:700;'>{_fmt2(t2_def.get('avg_qb_hits','N/A'))}</div>
+                        </div>
+                        <div style='flex:1; text-align:center;'>
+                          <div style='font-size:0.78rem; color:#666;'>TO/G</div>
+                          <div style='font-size:1.35rem; font-weight:700;'>{_fmt2(t2_def.get('avg_total_turnovers','N/A'))}</div>
+                        </div>
+                        <div style='flex:1; text-align:center;'>
+                          <div style='font-size:0.78rem; color:#666;'>Pass Yds A</div>
+                          <div style='font-size:1.35rem; font-weight:700;'>{_fmt2(t2_def.get('avg_pass_yards_allowed','N/A'))}</div>
+                        </div>
+                        <div style='flex:1; text-align:center;'>
+                          <div style='font-size:0.78rem; color:#666;'>Rush Yds A</div>
+                          <div style='font-size:1.35rem; font-weight:700;'>{_fmt2(t2_def.get('avg_rush_yards_allowed','N/A'))}</div>
+                        </div>
+                      </div>
+                    </div>
+                    """
+                    st.markdown(html2, unsafe_allow_html=True)
 
             # Save results to session state for full-width render below
             st.session_state['rg_team1'] = team1
