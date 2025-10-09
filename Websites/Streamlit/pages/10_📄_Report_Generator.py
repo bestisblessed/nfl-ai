@@ -190,13 +190,8 @@ with col2:
             with col_logo2:
                 display_team_logo(team2, size=60)
 
-            st.write(f"{len(last_10_games)} Most Recent Games Analyzed")
-            st.write(f"{team1} Wins: {team1_wins}")
-            st.write(f"{team2} Wins: {team2_wins}")
-
-            # Winning streak: determine winner of the most recent completed matchup and count that team's consecutive wins
+            # Only here: compute and show streak, winner_team, and center-stats block
             recent_games_for_streak = last_10_games.sort_values(by='date', ascending=False)
-            # most recent completed matchup
             most_recent = recent_games_for_streak.iloc[0]
             if most_recent['home_score'] > most_recent['away_score']:
                 winner_team = most_recent['home_team']
@@ -213,11 +208,19 @@ with col2:
                 else:
                     break
 
-            st.write(f"Winning Streak: {winner_team} has won {streak} games in a row")
-            st.write(f"Average Total Points: {average_total_points:.1f}")
-            st.write(f"Games with more than 50 total points: {over_50_points_games}")
-            st.write(f"Total points scored by {team1}: {team1_scores}")
-            st.write(f"Total points scored by {team2}: {team2_scores}")
+            stats_md = f'''
+<div style="text-align:center; font-size: 1.05rem; line-height: 1.65; margin-top:8px;">
+<b>{len(last_10_games)} Most Recent Games Analyzed</b><br><br>
+<b>{team1} Wins:</b> {team1_wins}<br>
+<b>{team2} Wins:</b> {team2_wins}<br>
+<b>Winning Streak:</b> {winner_team} has won {streak} games in a row<br>
+<b>Average Total Points:</b> {average_total_points:.1f}<br>
+<b>Games with more than 50 total points:</b> {over_50_points_games}<br>
+<b>Total points scored by {team1}:</b> {team1_scores}<br>
+<b>Total points scored by {team2}:</b> {team2_scores}
+</div>
+'''
+            st.markdown(stats_md, unsafe_allow_html=True)
 
             # Use official 2025 roster to determine who is currently on each team (exclude CUT/RET)
             roster = df_roster2025
