@@ -77,22 +77,28 @@ if st.button('Generate Report'):
         current_players_team2 = df_playerstats[(df_playerstats['player_current_team'] == team2) &
                                                (df_playerstats['season'] == most_recent_season)]
 
-        if not current_players_team1.empty:
-            players_team1_names = current_players_team1['player_display_name'].unique()
-        else:
-            players_team1_names = df_playerstats[df_playerstats['player_current_team'] == team1]['player_display_name'].unique()
+        # Ensure players_teamX_names strictly come from the current season's roster
+        players_team1_names = current_players_team1['player_display_name'].unique()
+        players_team2_names = current_players_team2['player_display_name'].unique()
 
-        if not current_players_team2.empty:
-            players_team2_names = current_players_team2['player_display_name'].unique()
-        else:
-            players_team2_names = df_playerstats[df_playerstats['player_current_team'] == team2]['player_display_name'].unique()
+        # Initialize historical_stats_team1 and historical_stats_team2 outside the conditional blocks
+        historical_stats_team1 = pd.DataFrame(columns=df_playerstats.columns)
+        historical_stats_team2 = pd.DataFrame(columns=df_playerstats.columns)
 
-        historical_stats_team1 = df_playerstats[(df_playerstats['player_display_name'].isin(players_team1_names)) &
-                                                 ((df_playerstats['home_team'] == team1) & (df_playerstats['away_team'] == team2) |
-                                                  (df_playerstats['home_team'] == team2) & (df_playerstats['away_team'] == team1))]
-        historical_stats_team2 = df_playerstats[(df_playerstats['player_display_name'].isin(players_team2_names)) &
-                                                 ((df_playerstats['home_team'] == team1) & (df_playerstats['away_team'] == team2) |
-                                                  (df_playerstats['home_team'] == team2) & (df_playerstats['away_team'] == team1))]
+        if players_team1_names.size > 0:
+            historical_stats_team1 = df_playerstats[(df_playerstats['player_display_name'].isin(players_team1_names)) &
+                                                     ((df_playerstats['home_team'] == team1) & (df_playerstats['away_team'] == team2) |
+                                                      (df_playerstats['home_team'] == team2) & (df_playerstats['away_team'] == team1))]
+        else:
+            st.info(f"No current season ({most_recent_season}) players found for {team1} matching the roster criteria.")
+
+        if players_team2_names.size > 0:
+            historical_stats_team2 = df_playerstats[(df_playerstats['player_display_name'].isin(players_team2_names)) &
+                                                     ((df_playerstats['home_team'] == team1) & (df_playerstats['away_team'] == team2) |
+                                                      (df_playerstats['home_team'] == team2) & (df_playerstats['away_team'] == team1))]
+        else:
+            st.info(f"No current season ({most_recent_season}) players found for {team2} matching the roster criteria.")
+
 
         # Merge in game dates from df_games so we can sort and chart by date
         if not historical_stats_team1.empty:
@@ -178,7 +184,7 @@ if st.button('Generate Report'):
             # st.write(f"**{team_name} Players**")
             st.subheader(f"**{team_name} Players**")
             # show condensed table (Pos order applied)
-            st.dataframe(display_df[['Player','Pos','Games','Primary','Avg FPTS']], use_container_width=True)
+            st.dataframe(display_df[['Player','Pos','Games','Primary','Avg FPTS']], use_container_width=True, hide_index=True)
 
             # Create expanders for each player showing metrics and the per-game rows
             for _, row in display_df.iterrows():
@@ -195,7 +201,7 @@ if st.button('Generate Report'):
                     player_games = historical_df[historical_df['player_name_with_position'] == pname].sort_values('date', ascending=False).copy()
                     metric_cols = ['season','week','game_id','date','home_team','away_team','receptions','targets','receiving_yards','receiving_tds','carries','rushing_yards','fantasy_points_ppr','passing_yards']
                     available_cols = [c for c in metric_cols if c in player_games.columns]
-                    st.dataframe(player_games[available_cols], use_container_width=True, height=260)
+                    st.dataframe(player_games[available_cols], use_container_width=True, height=260, hide_index=True)
 
         # Show condensed tables for both teams
         show_condensed_players(historical_stats_team1, team1, team2)
