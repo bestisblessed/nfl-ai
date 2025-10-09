@@ -2,6 +2,9 @@ import streamlit as st
 import pandas as pd
 import os
 import plotly.express as px
+import plotly.graph_objects as go
+from plotly.subplots import make_subplots
+import numpy as np
 
 # Page configuration
 st.set_page_config(
@@ -28,18 +31,37 @@ if 'df_games' not in st.session_state:
     # Load 2025 roster as source of truth for current players
     df_roster2025 = pd.read_csv(os.path.join(current_dir, '../data/rosters', 'roster_2025.csv'))
     
+    # Load additional data for enhanced statistics
+    df_team_game_logs = pd.read_csv(os.path.join(current_dir, '../data', 'all_team_game_logs.csv'))
+    df_defense_logs = pd.read_csv(os.path.join(current_dir, '../data', 'all_defense-game-logs.csv'))
+    
     # Store in session state for future use
     st.session_state['df_games'] = df_games
     st.session_state['df_playerstats'] = df_playerstats
     st.session_state['df_roster2025'] = df_roster2025
+    st.session_state['df_team_game_logs'] = df_team_game_logs
+    st.session_state['df_defense_logs'] = df_defense_logs
 else:
     df_games = st.session_state['df_games'] 
     df_playerstats = st.session_state['df_playerstats']
     df_roster2025 = st.session_state.get('df_roster2025')
+    df_team_game_logs = st.session_state.get('df_team_game_logs')
+    df_defense_logs = st.session_state.get('df_defense_logs')
+    
     if df_roster2025 is None:
         current_dir = os.path.dirname(os.path.abspath(__file__))
         df_roster2025 = pd.read_csv(os.path.join(current_dir, '../data/rosters', 'roster_2025.csv'))
         st.session_state['df_roster2025'] = df_roster2025
+    
+    if df_team_game_logs is None:
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        df_team_game_logs = pd.read_csv(os.path.join(current_dir, '../data', 'all_team_game_logs.csv'))
+        st.session_state['df_team_game_logs'] = df_team_game_logs
+    
+    if df_defense_logs is None:
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        df_defense_logs = pd.read_csv(os.path.join(current_dir, '../data', 'all_defense-game-logs.csv'))
+        st.session_state['df_defense_logs'] = df_defense_logs
 
 # Helper functions (module scope) so they can be used anywhere on the page
 def display_team_logo(team_abbrev, size=100):
@@ -68,6 +90,365 @@ def sort_by_position(df):
     df = df.copy()
     df.loc[:, 'position_order'] = df['position'].map(position_order)
     return df.sort_values(by='position_order').drop(columns=['position_order'])
+
+def calculate_team_stats(df_games, df_team_game_logs, team, last_n_games=10):
+    """Calculate comprehensive team statistics for the last N games"""
+    # Get recent games for the team
+    team_games = df_games[((df_games['home_team'] == team) | (df_games['away_team'] == team))].copy()
+    team_games = team_games.dropna(subset=['home_score', 'away_score']).sort_values('date', ascending=False).head(last_n_games)
+    
+    if team_games.empty:
+        return {}
+    
+    # Calculate basic stats
+    team_scores = []
+    opponent_scores = []
+    spreads = []
+    totals = []
+    weather_conditions = []
+    rest_days = []
+    
+    for _, game in team_games.iterrows():
+        if game['home_team'] == team:
+            team_scores.append(game['home_score'])
+            opponent_scores.append(game['away_score'])
+            spreads.append(game['home_spread'] if pd.notna(game['home_spread']) else 0)
+            rest_days.append(game.get('home_rest', 7))  # Default to 7 if not available
+        else:
+            team_scores.append(game['away_score'])
+            opponent_scores.append(game['home_score'])
+            spreads.append(game['away_spread'] if pd.notna(game['away_spread']) else 0)
+            rest_days.append(game.get('away_rest', 7))  # Default to 7 if not available
+        
+        totals.append(game['total_line'] if pd.notna(game['total_line']) else 0)
+        weather_conditions.append({
+            'temp': game.get('temp', 0),
+            'wind': game.get('wind', 0),
+            'roof': game.get('roof', 'unknown'),
+            'surface': game.get('surface', 'unknown')
+        })
+    
+    # Calculate averages and trends
+    avg_points_for = np.mean(team_scores)
+    avg_points_against = np.mean(opponent_scores)
+    point_differential = avg_points_for - avg_points_against
+    
+    # Betting stats
+    team_covered = sum(1 for i, score in enumerate(team_scores) if score + spreads[i] > opponent_scores[i])
+    over_hit = sum(1 for i, total in enumerate(totals) if team_scores[i] + opponent_scores[i] > total)
+    
+    # Weather analysis
+    avg_temp = np.mean([w['temp'] for w in weather_conditions if w['temp'] > 0])
+    avg_wind = np.mean([w['wind'] for w in weather_conditions if w['wind'] > 0])
+    indoor_games = sum(1 for w in weather_conditions if w['roof'] == 'dome')
+    
+    # Rest advantage analysis
+    avg_rest_days = np.mean(rest_days)
+    short_rest_games = sum(1 for rest in rest_days if rest < 7)
+    
+    # Calculate efficiency metrics from team game logs
+    efficiency_metrics = calculate_efficiency_metrics(df_team_game_logs, team, team_games['game_id'].tolist())
+    
+    return {
+        'games_analyzed': len(team_games),
+        'avg_points_for': round(avg_points_for, 1),
+        'avg_points_against': round(avg_points_against, 1),
+        'point_differential': round(point_differential, 1),
+        'ats_record': f"{team_covered}-{len(team_games) - team_covered}",
+        'over_under': f"{over_hit}-{len(team_games) - over_hit}",
+        'avg_temp': round(avg_temp, 1) if avg_temp > 0 else 'N/A',
+        'avg_wind': round(avg_wind, 1) if avg_wind > 0 else 'N/A',
+        'indoor_games': indoor_games,
+        'avg_rest_days': round(avg_rest_days, 1),
+        'short_rest_games': short_rest_games,
+        'recent_scores': team_scores[:5],  # Last 5 games
+        'recent_opponent_scores': opponent_scores[:5],
+        **efficiency_metrics
+    }
+
+def calculate_efficiency_metrics(df_team_game_logs, team, game_ids):
+    """Calculate offensive and defensive efficiency metrics"""
+    # Filter team game logs for the specific games
+    team_logs = df_team_game_logs[df_team_game_logs['game_id'].isin(game_ids)].copy()
+    
+    if team_logs.empty:
+        return {}
+    
+    # Determine if team was home or away for each game
+    home_games = []
+    away_games = []
+    
+    for _, log in team_logs.iterrows():
+        # Check if this is a home or away game by looking at the game_id pattern
+        # This is a simplified approach - in practice you'd want to cross-reference with df_games
+        if 'home' in log['game_id'].lower() or log.get('home_team', '') == team:
+            home_games.append(log)
+        else:
+            away_games.append(log)
+    
+    # Calculate offensive metrics (using home stats when team is home, away stats when team is away)
+    offensive_stats = []
+    defensive_stats = []
+    
+    for _, log in team_logs.iterrows():
+        # For now, we'll use a simplified approach and calculate averages
+        # In a more sophisticated implementation, you'd properly identify home/away
+        offensive_stats.append({
+            'pass_yds_per_att': log.get('home_pass_yds_per_att', 0) if pd.notna(log.get('home_pass_yds_per_att')) else 0,
+            'rush_yds_per_att': log.get('home_rush_yds_per_att', 0) if pd.notna(log.get('home_rush_yds_per_att')) else 0,
+            'pass_cmp_pct': log.get('home_pass_cmp_perc', 0) if pd.notna(log.get('home_pass_cmp_perc')) else 0,
+            'pass_rating': log.get('home_pass_rating', 0) if pd.notna(log.get('home_pass_rating')) else 0,
+        })
+        
+        defensive_stats.append({
+            'pass_yds_per_att_allowed': log.get('away_pass_yds_per_att', 0) if pd.notna(log.get('away_pass_yds_per_att')) else 0,
+            'rush_yds_per_att_allowed': log.get('away_rush_yds_per_att', 0) if pd.notna(log.get('away_rush_yds_per_att')) else 0,
+        })
+    
+    # Calculate averages
+    if offensive_stats:
+        avg_pass_yds_per_att = np.mean([s['pass_yds_per_att'] for s in offensive_stats])
+        avg_rush_yds_per_att = np.mean([s['rush_yds_per_att'] for s in offensive_stats])
+        avg_pass_cmp_pct = np.mean([s['pass_cmp_pct'] for s in offensive_stats])
+        avg_pass_rating = np.mean([s['pass_rating'] for s in offensive_stats])
+    else:
+        avg_pass_yds_per_att = avg_rush_yds_per_att = avg_pass_cmp_pct = avg_pass_rating = 0
+    
+    if defensive_stats:
+        avg_pass_yds_per_att_allowed = np.mean([s['pass_yds_per_att_allowed'] for s in defensive_stats])
+        avg_rush_yds_per_att_allowed = np.mean([s['rush_yds_per_att_allowed'] for s in defensive_stats])
+    else:
+        avg_pass_yds_per_att_allowed = avg_rush_yds_per_att_allowed = 0
+    
+    return {
+        'avg_pass_yds_per_att': round(avg_pass_yds_per_att, 1),
+        'avg_rush_yds_per_att': round(avg_rush_yds_per_att, 1),
+        'avg_pass_cmp_pct': round(avg_pass_cmp_pct, 1),
+        'avg_pass_rating': round(avg_pass_rating, 1),
+        'avg_pass_yds_per_att_allowed': round(avg_pass_yds_per_att_allowed, 1),
+        'avg_rush_yds_per_att_allowed': round(avg_rush_yds_per_att_allowed, 1),
+    }
+
+def calculate_defensive_stats(df_defense_logs, team, last_n_games=10):
+    """Calculate defensive statistics for the last N games"""
+    # Get recent defensive stats for the team
+    team_defense = df_defense_logs[df_defense_logs['team'] == team].copy()
+    
+    if team_defense.empty:
+        return {}
+    
+    # Get recent games (assuming game_id contains date info)
+    recent_games = team_defense['game_id'].unique()[-last_n_games:]
+    recent_defense = team_defense[team_defense['game_id'].isin(recent_games)]
+    
+    # Calculate defensive metrics
+    total_sacks = recent_defense['sacks'].sum()
+    total_int = recent_defense['def_int'].sum()
+    total_int_yds = recent_defense['def_int_yds'].sum()
+    total_int_td = recent_defense['def_int_td'].sum()
+    total_tackles = recent_defense['tackles_combined'].sum()
+    total_qb_hits = recent_defense['qb_hits'].sum()
+    total_fumbles_forced = recent_defense['fumbles_forced'].sum()
+    total_fumbles_rec = recent_defense['fumbles_rec'].sum()
+    
+    games_count = len(recent_games)
+    
+    return {
+        'avg_sacks_per_game': round(total_sacks / games_count, 1) if games_count > 0 else 0,
+        'avg_interceptions': round(total_int / games_count, 1) if games_count > 0 else 0,
+        'avg_int_return_yards': round(total_int_yds / games_count, 1) if games_count > 0 else 0,
+        'avg_int_tds': round(total_int_td / games_count, 1) if games_count > 0 else 0,
+        'avg_tackles': round(total_tackles / games_count, 1) if games_count > 0 else 0,
+        'avg_qb_hits': round(total_qb_hits / games_count, 1) if games_count > 0 else 0,
+        'avg_fumbles_forced': round(total_fumbles_forced / games_count, 1) if games_count > 0 else 0,
+        'avg_fumbles_recovered': round(total_fumbles_rec / games_count, 1) if games_count > 0 else 0,
+        'total_turnovers': total_int + total_fumbles_rec
+    }
+
+def create_performance_chart(team1_stats, team2_stats, team1_name, team2_name):
+    """Create a comparison chart of team performance metrics"""
+    metrics = ['avg_points_for', 'avg_points_against', 'point_differential']
+    team1_values = [team1_stats.get(metric, 0) for metric in metrics]
+    team2_values = [team2_stats.get(metric, 0) for metric in metrics]
+    
+    fig = go.Figure()
+    
+    fig.add_trace(go.Bar(
+        name=team1_name,
+        x=['Points For', 'Points Against', 'Point Differential'],
+        y=team1_values,
+        marker_color='lightblue'
+    ))
+    
+    fig.add_trace(go.Bar(
+        name=team2_name,
+        x=['Points For', 'Points Against', 'Point Differential'],
+        y=team2_values,
+        marker_color='lightcoral'
+    ))
+    
+    fig.update_layout(
+        title='Team Performance Comparison (Last 10 Games)',
+        xaxis_title='Metrics',
+        yaxis_title='Points',
+        barmode='group',
+        height=400
+    )
+    
+    return fig
+
+def create_trend_chart(team1_scores, team2_scores, team1_name, team2_name):
+    """Create a trend chart showing recent game scores"""
+    games = list(range(1, len(team1_scores) + 1))
+    
+    fig = go.Figure()
+    
+    fig.add_trace(go.Scatter(
+        x=games,
+        y=team1_scores,
+        mode='lines+markers',
+        name=team1_name,
+        line=dict(color='blue', width=3),
+        marker=dict(size=8)
+    ))
+    
+    fig.add_trace(go.Scatter(
+        x=games,
+        y=team2_scores,
+        mode='lines+markers',
+        name=team2_name,
+        line=dict(color='red', width=3),
+        marker=dict(size=8)
+    ))
+    
+    fig.update_layout(
+        title='Recent Scoring Trends (Last 5 Games)',
+        xaxis_title='Games Ago',
+        yaxis_title='Points Scored',
+        height=400,
+        hovermode='x unified'
+    )
+    
+    return fig
+
+def create_efficiency_chart(team1_stats, team2_stats, team1_name, team2_name):
+    """Create a radar chart showing offensive efficiency metrics"""
+    categories = ['Pass Yds/Att', 'Rush Yds/Att', 'Pass Comp %', 'Pass Rating']
+    
+    team1_values = [
+        team1_stats.get('avg_pass_yds_per_att', 0),
+        team1_stats.get('avg_rush_yds_per_att', 0),
+        team1_stats.get('avg_pass_cmp_pct', 0) / 10,  # Scale down for radar chart
+        team1_stats.get('avg_pass_rating', 0) / 10   # Scale down for radar chart
+    ]
+    
+    team2_values = [
+        team2_stats.get('avg_pass_yds_per_att', 0),
+        team2_stats.get('avg_rush_yds_per_att', 0),
+        team2_stats.get('avg_pass_cmp_pct', 0) / 10,  # Scale down for radar chart
+        team2_stats.get('avg_pass_rating', 0) / 10   # Scale down for radar chart
+    ]
+    
+    fig = go.Figure()
+    
+    fig.add_trace(go.Scatterpolar(
+        r=team1_values,
+        theta=categories,
+        fill='toself',
+        name=team1_name,
+        line_color='blue'
+    ))
+    
+    fig.add_trace(go.Scatterpolar(
+        r=team2_values,
+        theta=categories,
+        fill='toself',
+        name=team2_name,
+        line_color='red'
+    ))
+    
+    fig.update_layout(
+        polar=dict(
+            radialaxis=dict(
+                visible=True,
+                range=[0, max(max(team1_values), max(team2_values)) * 1.1]
+            )),
+        showlegend=True,
+        title="Offensive Efficiency Comparison",
+        height=500
+    )
+    
+    return fig
+
+def create_betting_analysis_chart(team1_stats, team2_stats, team1_name, team2_name):
+    """Create a chart showing betting performance"""
+    metrics = ['ATS Record', 'Over/Under']
+    
+    # Parse ATS records
+    team1_ats = team1_stats.get('ats_record', '0-0').split('-')
+    team2_ats = team2_stats.get('ats_record', '0-0').split('-')
+    
+    team1_ats_wins = int(team1_ats[0]) if team1_ats[0].isdigit() else 0
+    team1_ats_losses = int(team1_ats[1]) if team1_ats[1].isdigit() else 0
+    
+    team2_ats_wins = int(team2_ats[0]) if team2_ats[0].isdigit() else 0
+    team2_ats_losses = int(team2_ats[1]) if team2_ats[1].isdigit() else 0
+    
+    # Parse Over/Under records
+    team1_ou = team1_stats.get('over_under', '0-0').split('-')
+    team2_ou = team2_stats.get('over_under', '0-0').split('-')
+    
+    team1_overs = int(team1_ou[0]) if team1_ou[0].isdigit() else 0
+    team1_unders = int(team1_ou[1]) if team1_ou[1].isdigit() else 0
+    
+    team2_overs = int(team2_ou[0]) if team2_ou[0].isdigit() else 0
+    team2_unders = int(team2_ou[1]) if team2_ou[1].isdigit() else 0
+    
+    fig = make_subplots(
+        rows=1, cols=2,
+        subplot_titles=('ATS Performance', 'Over/Under Performance'),
+        specs=[[{"type": "bar"}, {"type": "bar"}]]
+    )
+    
+    # ATS chart
+    fig.add_trace(go.Bar(
+        name=f"{team1_name} ATS",
+        x=['Wins', 'Losses'],
+        y=[team1_ats_wins, team1_ats_losses],
+        marker_color='lightblue'
+    ), row=1, col=1)
+    
+    fig.add_trace(go.Bar(
+        name=f"{team2_name} ATS",
+        x=['Wins', 'Losses'],
+        y=[team2_ats_wins, team2_ats_losses],
+        marker_color='lightcoral'
+    ), row=1, col=1)
+    
+    # Over/Under chart
+    fig.add_trace(go.Bar(
+        name=f"{team1_name} O/U",
+        x=['Overs', 'Unders'],
+        y=[team1_overs, team1_unders],
+        marker_color='lightgreen',
+        showlegend=False
+    ), row=1, col=2)
+    
+    fig.add_trace(go.Bar(
+        name=f"{team2_name} O/U",
+        x=['Overs', 'Unders'],
+        y=[team2_overs, team2_unders],
+        marker_color='orange',
+        showlegend=False
+    ), row=1, col=2)
+    
+    fig.update_layout(
+        title="Betting Performance Analysis",
+        height=400,
+        showlegend=True
+    )
+    
+    return fig
 
 def show_condensed_players(historical_df, team_name, opponent_name):
     if historical_df.empty:
@@ -196,6 +577,12 @@ with col2:
         if last_10_games.empty:
             st.write(f"No recent games found between {team1} and {team2}.")
         else:
+            # Calculate enhanced team statistics
+            team1_stats = calculate_team_stats(df_games, df_team_game_logs, team1)
+            team2_stats = calculate_team_stats(df_games, df_team_game_logs, team2)
+            team1_defense = calculate_defensive_stats(df_defense_logs, team1)
+            team2_defense = calculate_defensive_stats(df_defense_logs, team2)
+            
             # Team-level statistics (using only completed games)
             total_points = last_10_games['home_score'] + last_10_games['away_score']
             average_total_points = total_points.mean()
@@ -238,19 +625,154 @@ with col2:
                 else:
                     break
 
-            stats_md = f'''
-<div style="text-align:center; font-size: 1.05rem; line-height: 1.65; margin-top:8px;">
-<small><i>{len(last_10_games)} most recent games analyzed</i></small><br><br>
-<b>{team1} Wins:</b> {team1_wins}<br>
-<b>{team2} Wins:</b> {team2_wins}<br>
-<b>Winning Streak:</b> {winner_team} has won {streak} games in a row<br>
-<b>Average Total Points:</b> {average_total_points:.1f}<br>
-<b>Games with more than 50 total points:</b> {over_50_points_games}<br>
-<b>Total points scored by {team1}:</b> {team1_scores}<br>
-<b>Total points scored by {team2}:</b> {team2_scores}
-</div>
-'''
-            st.markdown(stats_md, unsafe_allow_html=True)
+            # Enhanced statistics display
+            st.markdown("### 📊 Matchup Analysis")
+            
+            # Create columns for enhanced stats
+            col1, col2, col3 = st.columns(3)
+            
+            with col1:
+                st.markdown(f"#### {team1} Recent Form")
+                st.metric("Avg Points For", team1_stats.get('avg_points_for', 'N/A'))
+                st.metric("Avg Points Against", team1_stats.get('avg_points_against', 'N/A'))
+                st.metric("Point Differential", team1_stats.get('point_differential', 'N/A'))
+                st.metric("ATS Record", team1_stats.get('ats_record', 'N/A'))
+                st.metric("Over/Under", team1_stats.get('over_under', 'N/A'))
+            
+            with col2:
+                st.markdown("#### Head-to-Head")
+                st.metric(f"{team1} Wins", team1_wins)
+                st.metric(f"{team2} Wins", team2_wins)
+                st.metric("Winning Streak", f"{winner_team} ({streak})")
+                st.metric("Avg Total Points", f"{average_total_points:.1f}")
+                st.metric("50+ Point Games", over_50_points_games)
+            
+            with col3:
+                st.markdown(f"#### {team2} Recent Form")
+                st.metric("Avg Points For", team2_stats.get('avg_points_for', 'N/A'))
+                st.metric("Avg Points Against", team2_stats.get('avg_points_against', 'N/A'))
+                st.metric("Point Differential", team2_stats.get('point_differential', 'N/A'))
+                st.metric("ATS Record", team2_stats.get('ats_record', 'N/A'))
+                st.metric("Over/Under", team2_stats.get('over_under', 'N/A'))
+            
+            # Add defensive statistics
+            if team1_defense or team2_defense:
+                st.markdown("### 🛡️ Defensive Statistics (Last 10 Games)")
+                def_col1, def_col2 = st.columns(2)
+                
+                with def_col1:
+                    st.markdown(f"#### {team1} Defense")
+                    if team1_defense:
+                        st.metric("Avg Sacks/Game", team1_defense.get('avg_sacks_per_game', 'N/A'))
+                        st.metric("Avg Interceptions", team1_defense.get('avg_interceptions', 'N/A'))
+                        st.metric("Avg QB Hits", team1_defense.get('avg_qb_hits', 'N/A'))
+                        st.metric("Avg Fumbles Forced", team1_defense.get('avg_fumbles_forced', 'N/A'))
+                    else:
+                        st.write("No defensive data available")
+                
+                with def_col2:
+                    st.markdown(f"#### {team2} Defense")
+                    if team2_defense:
+                        st.metric("Avg Sacks/Game", team2_defense.get('avg_sacks_per_game', 'N/A'))
+                        st.metric("Avg Interceptions", team2_defense.get('avg_interceptions', 'N/A'))
+                        st.metric("Avg QB Hits", team2_defense.get('avg_qb_hits', 'N/A'))
+                        st.metric("Avg Fumbles Forced", team2_defense.get('avg_fumbles_forced', 'N/A'))
+                    else:
+                        st.write("No defensive data available")
+            
+            # Add efficiency metrics
+            if any(team1_stats.get(metric, 0) != 0 for metric in ['avg_pass_yds_per_att', 'avg_rush_yds_per_att', 'avg_pass_cmp_pct']):
+                st.markdown("### ⚡ Efficiency Metrics (Last 10 Games)")
+                eff_col1, eff_col2 = st.columns(2)
+                
+                with eff_col1:
+                    st.markdown(f"#### {team1} Offense")
+                    st.metric("Pass Yds/Att", team1_stats.get('avg_pass_yds_per_att', 'N/A'))
+                    st.metric("Rush Yds/Att", team1_stats.get('avg_rush_yds_per_att', 'N/A'))
+                    st.metric("Pass Comp %", f"{team1_stats.get('avg_pass_cmp_pct', 'N/A')}%")
+                    st.metric("Pass Rating", team1_stats.get('avg_pass_rating', 'N/A'))
+                
+                with eff_col2:
+                    st.markdown(f"#### {team2} Offense")
+                    st.metric("Pass Yds/Att", team2_stats.get('avg_pass_yds_per_att', 'N/A'))
+                    st.metric("Rush Yds/Att", team2_stats.get('avg_rush_yds_per_att', 'N/A'))
+                    st.metric("Pass Comp %", f"{team2_stats.get('avg_pass_cmp_pct', 'N/A')}%")
+                    st.metric("Pass Rating", team2_stats.get('avg_pass_rating', 'N/A'))
+            
+            # Add defensive efficiency
+            if any(team1_stats.get(metric, 0) != 0 for metric in ['avg_pass_yds_per_att_allowed', 'avg_rush_yds_per_att_allowed']):
+                st.markdown("### 🛡️ Defensive Efficiency (Last 10 Games)")
+                def_eff_col1, def_eff_col2 = st.columns(2)
+                
+                with def_eff_col1:
+                    st.markdown(f"#### {team1} Defense")
+                    st.metric("Pass Yds/Att Allowed", team1_stats.get('avg_pass_yds_per_att_allowed', 'N/A'))
+                    st.metric("Rush Yds/Att Allowed", team1_stats.get('avg_rush_yds_per_att_allowed', 'N/A'))
+                
+                with def_eff_col2:
+                    st.markdown(f"#### {team2} Defense")
+                    st.metric("Pass Yds/Att Allowed", team2_stats.get('avg_pass_yds_per_att_allowed', 'N/A'))
+                    st.metric("Rush Yds/Att Allowed", team2_stats.get('avg_rush_yds_per_att_allowed', 'N/A'))
+            
+            # Add rest advantage analysis
+            if team1_stats.get('avg_rest_days') or team2_stats.get('avg_rest_days'):
+                st.markdown("### ⏰ Rest Advantage Analysis")
+                rest_col1, rest_col2 = st.columns(2)
+                
+                with rest_col1:
+                    st.markdown(f"#### {team1} Rest Patterns")
+                    st.metric("Avg Rest Days", f"{team1_stats.get('avg_rest_days', 'N/A')} days")
+                    st.metric("Short Rest Games", team1_stats.get('short_rest_games', 'N/A'))
+                
+                with rest_col2:
+                    st.markdown(f"#### {team2} Rest Patterns")
+                    st.metric("Avg Rest Days", f"{team2_stats.get('avg_rest_days', 'N/A')} days")
+                    st.metric("Short Rest Games", team2_stats.get('short_rest_games', 'N/A'))
+            
+            # Add weather and venue analysis
+            if team1_stats.get('avg_temp') != 'N/A' or team2_stats.get('avg_temp') != 'N/A':
+                st.markdown("### 🌤️ Weather & Venue Analysis")
+                weather_col1, weather_col2 = st.columns(2)
+                
+                with weather_col1:
+                    st.markdown(f"#### {team1} Recent Conditions")
+                    st.metric("Avg Temperature", f"{team1_stats.get('avg_temp', 'N/A')}°F")
+                    st.metric("Avg Wind Speed", f"{team1_stats.get('avg_wind', 'N/A')} mph")
+                    st.metric("Indoor Games", team1_stats.get('indoor_games', 'N/A'))
+                
+                with weather_col2:
+                    st.markdown(f"#### {team2} Recent Conditions")
+                    st.metric("Avg Temperature", f"{team2_stats.get('avg_temp', 'N/A')}°F")
+                    st.metric("Avg Wind Speed", f"{team2_stats.get('avg_wind', 'N/A')} mph")
+                    st.metric("Indoor Games", team2_stats.get('indoor_games', 'N/A'))
+            
+            # Add visualizations
+            st.markdown("### 📈 Performance Visualizations")
+            
+            # Performance comparison chart
+            if team1_stats and team2_stats:
+                perf_chart = create_performance_chart(team1_stats, team2_stats, team1, team2)
+                st.plotly_chart(perf_chart, use_container_width=True)
+            
+            # Scoring trends chart
+            if team1_stats.get('recent_scores') and team2_stats.get('recent_scores'):
+                trend_chart = create_trend_chart(
+                    team1_stats['recent_scores'], 
+                    team2_stats['recent_scores'], 
+                    team1, 
+                    team2
+                )
+                st.plotly_chart(trend_chart, use_container_width=True)
+            
+            # Efficiency radar chart
+            if any(team1_stats.get(metric, 0) != 0 for metric in ['avg_pass_yds_per_att', 'avg_rush_yds_per_att', 'avg_pass_cmp_pct']):
+                efficiency_chart = create_efficiency_chart(team1_stats, team2_stats, team1, team2)
+                st.plotly_chart(efficiency_chart, use_container_width=True)
+            
+            # Betting analysis chart
+            if team1_stats.get('ats_record') != '0-0' or team2_stats.get('ats_record') != '0-0':
+                betting_chart = create_betting_analysis_chart(team1_stats, team2_stats, team1, team2)
+                st.plotly_chart(betting_chart, use_container_width=True)
 
             # Use official 2025 roster to determine who is currently on each team (exclude CUT/RET)
             roster = df_roster2025
