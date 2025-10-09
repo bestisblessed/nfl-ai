@@ -381,6 +381,12 @@ with col2:
     btn_c1, btn_c2, btn_c3 = st.columns([1, 0.4, 1])
     with btn_c2:
         generate_clicked = st.button('Generate Report', use_container_width=True)
+
+    # Auto-generate once on first load (BUF vs MIA defaults)
+    if 'rg_auto_generated' not in st.session_state:
+        st.session_state['rg_auto_generated'] = True
+        generate_clicked = True
+
     if generate_clicked:
         
         # Filter for recent matchups between the two teams (already sorted by date, most recent first)
@@ -523,12 +529,12 @@ with col2:
                     df_display = show_df.copy()
                     cols = ['game_id','home_team','away_team','home_score','away_score','Favorite','Total Line','O/U Result', f'{team1} Spread', f'{team1} ATS', f'{team2} Spread', f'{team2} ATS']
                     st.dataframe(df_display[cols], use_container_width=True, hide_index=True)
-                    st.download_button(
-                        label="Download games (CSV)",
-                        data=df_display.to_csv(index=False),
-                        file_name=f"{team1}_vs_{team2}_h2h_betting_games.csv",
-                        mime='text/csv'
-                    )
+                    # st.download_button(
+                    #     label="Download games (CSV)",
+                    #     data=df_display.to_csv(index=False),
+                    #     file_name=f"{team1}_vs_{team2}_h2h_betting_games.csv",
+                    #     mime='text/csv'
+                    # )
 
             # Compact pies for ATS and O/U side-by-side
             cpie1, cpie2 = st.columns(2)
