@@ -1605,16 +1605,37 @@ with col2:
             historical_stats_team2 = pd.DataFrame(columns=df_playerstats.columns)
 
             if players_team1_names.size > 0:
-                historical_stats_team1 = df_playerstats[(df_playerstats['player_display_name'].isin(players_team1_names)) &
-                                                        (((df_playerstats['home_team'] == team1) & (df_playerstats['away_team'] == team2)) |
-                                                         ((df_playerstats['home_team'] == team2) & (df_playerstats['away_team'] == team1)))]
+                # Only include games where:
+                #  - the player is on the selected roster (by name)
+                #  - the game is between team1 and team2
+                #  - the player's team IN THAT GAME equals team1 (avoid pulling opponent-history like Saquon vs PHI as a Giant)
+                mask_names_t1 = df_playerstats['player_display_name'].isin(players_team1_names)
+                mask_matchup_t1 = (
+                    ((df_playerstats['home_team'] == team1) & (df_playerstats['away_team'] == team2)) |
+                    ((df_playerstats['home_team'] == team2) & (df_playerstats['away_team'] == team1))
+                )
+                if 'player_current_team' in df_playerstats.columns:
+                    mask_player_team_t1 = (df_playerstats['player_current_team'] == team1)
+                else:
+                    # Fallback: if player team column missing, assume rows where the selected team is participating
+                    mask_player_team_t1 = (df_playerstats['home_team'] == team1) | (df_playerstats['away_team'] == team1)
+
+                historical_stats_team1 = df_playerstats[mask_names_t1 & mask_matchup_t1 & mask_player_team_t1]
             else:
                 st.info(f"No 2025 roster players found for {team1} matching the roster criteria.")
 
             if players_team2_names.size > 0:
-                historical_stats_team2 = df_playerstats[(df_playerstats['player_display_name'].isin(players_team2_names)) &
-                                                        (((df_playerstats['home_team'] == team1) & (df_playerstats['away_team'] == team2)) |
-                                                         ((df_playerstats['home_team'] == team2) & (df_playerstats['away_team'] == team1)))]
+                mask_names_t2 = df_playerstats['player_display_name'].isin(players_team2_names)
+                mask_matchup_t2 = (
+                    ((df_playerstats['home_team'] == team1) & (df_playerstats['away_team'] == team2)) |
+                    ((df_playerstats['home_team'] == team2) & (df_playerstats['away_team'] == team1))
+                )
+                if 'player_current_team' in df_playerstats.columns:
+                    mask_player_team_t2 = (df_playerstats['player_current_team'] == team2)
+                else:
+                    mask_player_team_t2 = (df_playerstats['home_team'] == team2) | (df_playerstats['away_team'] == team2)
+
+                historical_stats_team2 = df_playerstats[mask_names_t2 & mask_matchup_t2 & mask_player_team_t2]
             else:
                 st.info(f"No 2025 roster players found for {team2} matching the roster criteria.")
 
