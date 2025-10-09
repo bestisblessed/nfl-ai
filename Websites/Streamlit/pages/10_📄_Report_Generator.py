@@ -407,6 +407,11 @@ with col2:
             team2_scores = last_10_games.loc[last_10_games['home_team'] == team2, 'home_score'].sum() + \
                            last_10_games.loc[last_10_games['away_team'] == team2, 'away_score'].sum()
 
+            # Average points per game across these head-to-head matchups
+            num_h2h_games = len(last_10_games)
+            team1_ppg = float(team1_scores) / num_h2h_games if num_h2h_games > 0 else 0.0
+            team2_ppg = float(team2_scores) / num_h2h_games if num_h2h_games > 0 else 0.0
+
             over_50_points_games = int((total_points > 50).sum())
 
             # Only here: compute and show streak, winner_team, and center-stats block
@@ -433,10 +438,10 @@ with col2:
 <b>{team1} Wins:</b> {team1_wins}<br>
 <b>{team2} Wins:</b> {team2_wins}<br>
 <b>Winning Streak:</b> {winner_team} has won {streak} games in a row<br>
+<b>{team1} Avg PPG:</b> {team1_ppg:.1f}<br>
+<b>{team2} Avg PPG:</b> {team2_ppg:.1f}<br>
 <b>Average Total Points:</b> {average_total_points:.1f}<br>
 <b>Games with more than 50 total points:</b> {over_50_points_games}<br>
-<b>Total points scored by {team1}:</b> {team1_scores}<br>
-<b>Total points scored by {team2}:</b> {team2_scores}
 </div>
 '''
             st.markdown(stats_md, unsafe_allow_html=True)
