@@ -1,18 +1,4 @@
-[server]
-runOnSave = true
-
 [theme]
-#base="dark"
-#primaryColor="#621192"
-#backgroundColor="#262729"
-#secondaryBackgroundColor="#6a0394"
-#font="serif"
-#base="dark"
-#primaryColor="#8711d4"
-#backgroundColor="#2e3031"
-#secondaryBackgroundColor="#b61ef1"
-#font="serif"
+font="sans serif"
 primaryColor="#E02020"            # dark gray
 backgroundColor="#d3d3d3"         # light gray
-#font="monospace"
-font="sans serif"
