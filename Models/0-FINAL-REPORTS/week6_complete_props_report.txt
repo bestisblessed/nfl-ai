@@ -1,0 +1,951 @@
+🏈 NFL WEEK 6 2025 - COMPLETE PROPS REPORT
+================================================================================
+Generated: 2025-10-09 15:54:04
+Total Games: 16
+Total Props: 410
+
+This report includes ALL player props for each game:
+• QB Passing Yards
+• QB Rushing Yards
+• RB Rushing Yards
+• WR/RB/TE Receiving Yards
+
+================================================================================
+
+================================================================================
+NYG vs PHI | Week 6 2025 | ALL PROPS
+================================================================================
+
+🏈 PASSING YARDS
+----------------------------------------
+NYG:
+  Jaxson Dart (QB): 127.3 yards
+
+PHI:
+  Jalen Hurts (QB): 200.3 yards
+
+
+🏈 RUSHING YARDS
+----------------------------------------
+NYG:
+  Tyrone Tracy Jr. (RB): 40.9 yards
+  Devin Singletary (RB): 19.8 yards
+  Jaxson Dart (QB): No Data
+
+PHI:
+  Saquon Barkley (RB): 62.9 yards
+  Jalen Hurts (QB): 42.9 yards
+  Will Shipley (RB): 24.8 yards
+  Tank Bigsby (RB): 23.4 yards
+
+
+🏈 RECEIVING YARDS
+----------------------------------------
+NYG:
+  Wan'Dale Robinson (WR): 59.0 yards
+  Theo Johnson (TE): 30.5 yards
+  Tyrone Tracy Jr. (RB): 17.4 yards
+  Daniel Bellinger (TE): 9.0 yards
+  Jalin Hyatt (WR): 7.9 yards
+  Chris Manhertz (TE): 6.8 yards
+  Devin Singletary (RB): 0.5 yards
+
+PHI:
+  A.J. Brown (WR): 59.4 yards
+  DeVonta Smith (WR): 54.1 yards
+  Dallas Goedert (TE): 38.8 yards
+  Jahan Dotson (WR): 31.5 yards
+  Saquon Barkley (RB): 27.7 yards
+  Kylen Granson (TE): 4.5 yards
+  Tank Bigsby (RB): -0.1 yards
+  Will Shipley (RB): -0.8 yards
+
+
+📊 GAME SUMMARY
+--------------------
+Total Props: 24
+With Predictions: 23
+No Data (Rookies): 1
+Top Projection: Jalen Hurts (QB) - 200.3 passing yards
+================================================================================
+
+================================================================================
+JAX vs SEA | Week 6 2025 | ALL PROPS
+================================================================================
+
+🏈 PASSING YARDS
+----------------------------------------
+JAX:
+  Trevor Lawrence (QB): 205.3 yards
+
+SEA:
+  Sam Darnold (QB): 249.8 yards
+
+
+🏈 RUSHING YARDS
+----------------------------------------
+JAX:
+  Travis Etienne (RB): 63.6 yards
+  Trevor Lawrence (QB): 10.8 yards
+
+SEA:
+  Kenneth Walker III (RB): 51.6 yards
+  Zach Charbonnet (RB): 32.4 yards
+  Sam Darnold (QB): 14.2 yards
+  George Holani (RB): 5.8 yards
+
+
+🏈 RECEIVING YARDS
+----------------------------------------
+JAX:
+  Parker Washington (WR): 31.5 yards
+  Travis Etienne (RB): 14.9 yards
+  Tim Patrick (WR): 14.9 yards
+  Dyami Brown (WR): 10.0 yards
+  Hunter Long (TE): 9.8 yards
+  Johnny Mundt (TE): 7.3 yards
+
+SEA:
+  Jaxon Smith-Njigba (WR): 69.0 yards
+  Cooper Kupp (WR): 54.3 yards
+  AJ Barner (TE): 18.8 yards
+  Kenneth Walker III (RB): 16.9 yards
+  George Holani (RB): 14.6 yards
+  Zach Charbonnet (RB): 5.8 yards
+  Jake Bobo (WR): 5.6 yards
+  Eric Saubert (TE): 5.4 yards
+  Dareke Young (WR): 4.0 yards
+
+
+📊 GAME SUMMARY
+--------------------
+Total Props: 23
+With Predictions: 23
+No Data (Rookies): 0
+Top Projection: Sam Darnold (QB) - 249.8 passing yards
+================================================================================
+
+================================================================================
+BAL vs LAR | Week 6 2025 | ALL PROPS
+================================================================================
+
+🏈 PASSING YARDS
+----------------------------------------
+BAL:
+  Cooper Rush (QB): 138.6 yards
+
+LAR:
+  Matthew Stafford (QB): 363.1 yards
+
+
+🏈 RUSHING YARDS
+----------------------------------------
+BAL:
+  Keaton Mitchell (RB): 45.3 yards
+  Derrick Henry (RB): 43.3 yards
+  Justice Hill (RB): 28.9 yards
+  Rasheen Ali (RB): 1.2 yards
+  Cooper Rush (QB): -0.4 yards
+
+LAR:
+  Kyren Williams (RB): 64.8 yards
+  Blake Corum (RB): 10.2 yards
+  Matthew Stafford (QB): -0.0 yards
+
+
+🏈 RECEIVING YARDS
+----------------------------------------
+BAL:
+  Mark Andrews (TE): 48.0 yards
+  Zay Flowers (WR): 42.6 yards
+  Isaiah Likely (TE): 36.5 yards
+  DeAndre Hopkins (WR): 34.1 yards
+  Rashod Bateman (WR): 33.9 yards
+  Charlie Kolar (TE): 16.1 yards
+  Justice Hill (RB): 13.0 yards
+  Keaton Mitchell (RB): 10.3 yards
+  Devontez Walker (WR): 10.0 yards
+  Tylan Wallace (WR): 8.8 yards
+  Derrick Henry (RB): 8.1 yards
+  Rasheen Ali (RB): -0.0 yards
+
+LAR:
+  Puka Nacua (WR): 87.5 yards
+  Davante Adams (WR): 80.5 yards
+  Tutu Atwell (WR): 72.6 yards
+  Kyren Williams (RB): 41.9 yards
+  Jordan Whittington (WR): 28.0 yards
+  Tyler Higbee (TE): 26.8 yards
+  Xavier Smith (WR): 22.5 yards
+  Davis Allen (TE): 22.1 yards
+  Blake Corum (RB): 1.7 yards
+  Colby Parkinson (TE): 1.7 yards
+
+
+📊 GAME SUMMARY
+--------------------
+Total Props: 32
+With Predictions: 32
+No Data (Rookies): 0
+Top Projection: Matthew Stafford (QB) - 363.1 passing yards
+================================================================================
+
+================================================================================
+CAR vs DAL | Week 6 2025 | ALL PROPS
+================================================================================
+
+🏈 PASSING YARDS
+----------------------------------------
+CAR:
+  Bryce Young (QB): 223.1 yards
+
+DAL:
+  Dak Prescott (QB): 239.3 yards
+
+
+🏈 RUSHING YARDS
+----------------------------------------
+CAR:
+  Chuba Hubbard (RB): 49.8 yards
+  Rico Dowdle (RB): 33.5 yards
+  Bryce Young (QB): 7.7 yards
+
+DAL:
+  Javonte Williams (RB): 77.6 yards
+  Miles Sanders (RB): 31.9 yards
+  Dak Prescott (QB): 10.6 yards
+  Hunter Luepke (RB): 1.0 yards
+
+
+🏈 RECEIVING YARDS
+----------------------------------------
+CAR:
+  Ja'Tavion Sanders (TE): 32.5 yards
+  Xavier Legette (WR): 22.4 yards
+  Tommy Tremble (TE): 20.9 yards
+  Brycen Tremayne (WR): 17.2 yards
+  Chuba Hubbard (RB): 8.0 yards
+  Rico Dowdle (RB): 3.8 yards
+
+DAL:
+  CeeDee Lamb (WR): 92.3 yards
+  George Pickens (WR): 80.4 yards
+  Jake Ferguson (TE): 41.6 yards
+  KaVontae Turpin (WR): 32.0 yards
+  Jalen Tolbert (WR): 31.1 yards
+  Javonte Williams (RB): 27.2 yards
+  Ryan Flournoy (WR): 15.4 yards
+  Miles Sanders (RB): 8.5 yards
+  Brevyn Spann-Ford (TE): 7.2 yards
+  Luke Schoonmaker (TE): 3.8 yards
+  Hunter Luepke (RB): 0.4 yards
+
+
+📊 GAME SUMMARY
+--------------------
+Total Props: 26
+With Predictions: 26
+No Data (Rookies): 0
+Top Projection: Dak Prescott (QB) - 239.3 passing yards
+================================================================================
+
+================================================================================
+CLE vs PIT | Week 6 2025 | ALL PROPS
+================================================================================
+
+🏈 PASSING YARDS
+----------------------------------------
+CLE:
+  Dillon Gabriel (QB): 48.8 yards
+
+PIT:
+  Aaron Rodgers (QB): 220.8 yards
+
+
+🏈 RUSHING YARDS
+----------------------------------------
+CLE:
+  Jerome Ford (RB): 21.9 yards
+  Dillon Gabriel (QB): No Data
+
+PIT:
+  Jaylen Warren (RB): 30.2 yards
+  Kenneth Gainwell (RB): 14.1 yards
+  Aaron Rodgers (QB): 1.8 yards
+
+
+🏈 RECEIVING YARDS
+----------------------------------------
+CLE:
+  Jerry Jeudy (WR): 39.2 yards
+  David Njoku (TE): 24.1 yards
+  Jerome Ford (RB): 15.0 yards
+  Malachi Corley (WR): 6.0 yards
+  Jamari Thrash (WR): 5.4 yards
+  Blake Whiteheart (TE): 4.1 yards
+
+PIT:
+  DK Metcalf (WR): 61.7 yards
+  Jaylen Warren (RB): 38.2 yards
+  Calvin Austin III (WR): 38.2 yards
+  Jonnu Smith (TE): 22.4 yards
+  Pat Freiermuth (TE): 21.8 yards
+  Scott Miller (WR): 21.1 yards
+  Ben Skowronek (WR): 15.2 yards
+  Kenneth Gainwell (RB): 6.7 yards
+  Connor Heyward (TE): 6.4 yards
+  Darnell Washington (TE): 4.3 yards
+
+
+📊 GAME SUMMARY
+--------------------
+Total Props: 23
+With Predictions: 22
+No Data (Rookies): 1
+Top Projection: Aaron Rodgers (QB) - 220.8 passing yards
+================================================================================
+
+================================================================================
+SF vs TB | Week 6 2025 | ALL PROPS
+================================================================================
+
+🏈 PASSING YARDS
+----------------------------------------
+SF:
+  Mac Jones (QB): 233.7 yards
+
+TB:
+  Baker Mayfield (QB): 256.8 yards
+
+
+🏈 RUSHING YARDS
+----------------------------------------
+SF:
+  Christian McCaffrey (RB): 55.9 yards
+  Mac Jones (QB): 10.1 yards
+  Kyle Juszczyk (RB): -0.4 yards
+
+TB:
+  Bucky Irving (RB): 62.8 yards
+  Rachaad White (RB): 37.6 yards
+  Sean Tucker (RB): 14.8 yards
+  Baker Mayfield (QB): 13.4 yards
+
+
+🏈 RECEIVING YARDS
+----------------------------------------
+SF:
+  Ricky Pearsall (WR): 72.1 yards
+  Christian McCaffrey (RB): 57.9 yards
+  Jauan Jennings (WR): 36.8 yards
+  Kyle Juszczyk (RB): 25.3 yards
+  Kendrick Bourne (WR): 22.2 yards
+  Demarcus Robinson (WR): 21.3 yards
+  Marquez Valdes-Scantling (WR): 19.5 yards
+  Skyy Moore (WR): 8.8 yards
+  Luke Farrell (TE): 6.2 yards
+  Brayden Willis (TE): 0.0 yards
+
+TB:
+  Sterling Shepard (WR): 40.0 yards
+  Cade Otton (TE): 26.5 yards
+  Rachaad White (RB): 21.3 yards
+  Payne Durham (TE): 17.4 yards
+  Bucky Irving (RB): 15.7 yards
+  Ryan Miller (WR): 8.2 yards
+  Sean Tucker (RB): 4.2 yards
+
+
+📊 GAME SUMMARY
+--------------------
+Total Props: 26
+With Predictions: 26
+No Data (Rookies): 0
+Top Projection: Baker Mayfield (QB) - 256.8 passing yards
+================================================================================
+
+================================================================================
+DET vs KC | Week 6 2025 | ALL PROPS
+================================================================================
+
+🏈 PASSING YARDS
+----------------------------------------
+DET:
+  Jared Goff (QB): 257.8 yards
+
+KC:
+  Patrick Mahomes (QB): 246.4 yards
+
+
+🏈 RUSHING YARDS
+----------------------------------------
+DET:
+  Jahmyr Gibbs (RB): 75.2 yards
+  David Montgomery (RB): 58.8 yards
+  Craig Reynolds (RB): 18.1 yards
+  Jared Goff (QB): 2.2 yards
+
+KC:
+  Kareem Hunt (RB): 38.0 yards
+  Isiah Pacheco (RB): 37.4 yards
+  Patrick Mahomes (QB): 33.9 yards
+
+
+🏈 RECEIVING YARDS
+----------------------------------------
+DET:
+  Amon-Ra St. Brown (WR): 75.9 yards
+  Jameson Williams (WR): 64.7 yards
+  Sam LaPorta (TE): 40.1 yards
+  Jahmyr Gibbs (RB): 30.7 yards
+  Craig Reynolds (RB): 13.4 yards
+  Kalif Raymond (WR): 10.7 yards
+  Brock Wright (TE): 9.0 yards
+  David Montgomery (RB): 6.3 yards
+
+KC:
+  Travis Kelce (TE): 58.1 yards
+  Xavier Worthy (WR): 55.8 yards
+  Marquise Brown (WR): 36.6 yards
+  JuJu Smith-Schuster (WR): 33.8 yards
+  Nikko Remigio (WR): 26.5 yards
+  Tyquan Thornton (WR): 22.6 yards
+  Noah Gray (TE): 13.2 yards
+  Isiah Pacheco (RB): 9.6 yards
+  Kareem Hunt (RB): 6.7 yards
+
+
+📊 GAME SUMMARY
+--------------------
+Total Props: 26
+With Predictions: 26
+No Data (Rookies): 0
+Top Projection: Jared Goff (QB) - 257.8 passing yards
+================================================================================
+
+================================================================================
+CHI vs WAS | Week 6 2025 | ALL PROPS
+================================================================================
+
+🏈 PASSING YARDS
+----------------------------------------
+CHI:
+  Caleb Williams (QB): 250.3 yards
+
+WAS:
+  Jayden Daniels (QB): 233.2 yards
+
+
+🏈 RUSHING YARDS
+----------------------------------------
+CHI:
+  D'Andre Swift (RB): 47.9 yards
+  Caleb Williams (QB): 29.2 yards
+
+WAS:
+  Jayden Daniels (QB): 39.0 yards
+  Jeremy McNichols (RB): 14.6 yards
+
+
+🏈 RECEIVING YARDS
+----------------------------------------
+CHI:
+  Rome Odunze (WR): 58.3 yards
+  DJ Moore (WR): 56.7 yards
+  D'Andre Swift (RB): 34.6 yards
+  Olamide Zaccheaus (WR): 28.6 yards
+  Cole Kmet (TE): 16.5 yards
+
+WAS:
+  Terry McLaurin (WR): 47.7 yards
+  Noah Brown (WR): 41.1 yards
+  Zach Ertz (TE): 39.5 yards
+  Luke McCaffrey (WR): 31.8 yards
+  Tay Martin (WR): 14.8 yards
+  Ben Sinnott (TE): 11.1 yards
+  John Bates (TE): 9.0 yards
+  Jeremy McNichols (RB): 1.3 yards
+
+
+📊 GAME SUMMARY
+--------------------
+Total Props: 19
+With Predictions: 19
+No Data (Rookies): 0
+Top Projection: Caleb Williams (QB) - 250.3 passing yards
+================================================================================
+
+================================================================================
+DEN vs NYJ | Week 6 2025 | ALL PROPS
+================================================================================
+
+🏈 PASSING YARDS
+----------------------------------------
+DEN:
+  Bo Nix (QB): 241.8 yards
+
+NYJ:
+  Justin Fields (QB): 223.8 yards
+
+
+🏈 RUSHING YARDS
+----------------------------------------
+DEN:
+  J.K. Dobbins (RB): 70.7 yards
+  Bo Nix (QB): 17.3 yards
+  Adam Prentice (RB): 8.0 yards
+  Tyler Badie (RB): 2.7 yards
+
+NYJ:
+  Breece Hall (RB): 68.8 yards
+  Justin Fields (QB): 56.2 yards
+  Isaiah Davis (RB): 11.2 yards
+  Andrew Beck (RB): 0.0 yards
+
+
+🏈 RECEIVING YARDS
+----------------------------------------
+DEN:
+  Courtland Sutton (WR): 51.5 yards
+  Troy Franklin (WR): 34.4 yards
+  Evan Engram (TE): 31.6 yards
+  Adam Trautman (TE): 19.6 yards
+  Tyler Badie (RB): 14.3 yards
+  Nate Adkins (TE): 12.9 yards
+  Trent Sherfield (WR): 7.6 yards
+  J.K. Dobbins (RB): 4.9 yards
+  Adam Prentice (RB): 1.7 yards
+
+NYJ:
+  Garrett Wilson (WR): 65.4 yards
+  Breece Hall (RB): 23.2 yards
+  Tyler Johnson (WR): 18.0 yards
+  Josh Reynolds (WR): 14.8 yards
+  Jeremy Ruckert (TE): 10.8 yards
+  Isaiah Davis (RB): 10.7 yards
+  Andrew Beck (RB): 0.1 yards
+
+
+📊 GAME SUMMARY
+--------------------
+Total Props: 26
+With Predictions: 26
+No Data (Rookies): 0
+Top Projection: Bo Nix (QB) - 241.8 passing yards
+================================================================================
+
+================================================================================
+LAC vs MIA | Week 6 2025 | ALL PROPS
+================================================================================
+
+🏈 PASSING YARDS
+----------------------------------------
+LAC:
+  Justin Herbert (QB): 233.9 yards
+
+MIA:
+  Tua Tagovailoa (QB): 255.8 yards
+
+
+🏈 RUSHING YARDS
+----------------------------------------
+LAC:
+  Kimani Vidal (RB): 11.3 yards
+  Justin Herbert (QB): 10.4 yards
+  Hassan Haskins (RB): 6.1 yards
+  Scott Matlock (RB): 0.0 yards
+
+MIA:
+  De'Von Achane (RB): 54.7 yards
+  Tua Tagovailoa (QB): 4.2 yards
+  Alec Ingold (RB): 0.3 yards
+
+
+🏈 RECEIVING YARDS
+----------------------------------------
+LAC:
+  Keenan Allen (WR): 56.9 yards
+  Quentin Johnston (WR): 53.7 yards
+  Ladd McConkey (WR): 38.4 yards
+  Tyler Conklin (TE): 35.7 yards
+  Will Dissly (TE): 28.0 yards
+  Kimani Vidal (RB): 6.9 yards
+  Hassan Haskins (RB): 4.2 yards
+  Tucker Fisk (TE): 3.8 yards
+  Scott Matlock (RB): 3.2 yards
+  Derius Davis (WR): -0.0 yards
+
+MIA:
+  Jaylen Waddle (WR): 59.6 yards
+  De'Von Achane (RB): 41.2 yards
+  Nick Westbrook-Ikhine (WR): 32.5 yards
+  Tanner Conner (TE): 15.5 yards
+  Julian Hill (TE): 7.5 yards
+  Alec Ingold (RB): 6.6 yards
+  Malik Washington (WR): 5.5 yards
+
+
+📊 GAME SUMMARY
+--------------------
+Total Props: 26
+With Predictions: 26
+No Data (Rookies): 0
+Top Projection: Tua Tagovailoa (QB) - 255.8 passing yards
+================================================================================
+
+================================================================================
+ARI vs IND | Week 6 2025 | ALL PROPS
+================================================================================
+
+🏈 PASSING YARDS
+----------------------------------------
+ARI:
+  Kyler Murray (QB): 201.5 yards
+
+IND:
+  Daniel Jones (QB): 273.7 yards
+
+
+🏈 RUSHING YARDS
+----------------------------------------
+ARI:
+  Kyler Murray (QB): 31.3 yards
+  Michael Carter (RB): 29.9 yards
+  Emari Demercado (RB): 10.7 yards
+
+IND:
+  Jonathan Taylor (RB): 83.4 yards
+  Daniel Jones (QB): 21.9 yards
+  Ameer Abdullah (RB): 19.5 yards
+  Tyler Goodson (RB): 6.2 yards
+
+
+🏈 RECEIVING YARDS
+----------------------------------------
+ARI:
+  Trey McBride (TE): 59.8 yards
+  Marvin Harrison Jr. (WR): 57.0 yards
+  Elijah Higgins (TE): 27.1 yards
+  Zay Jones (WR): 23.9 yards
+  Greg Dortch (WR): 19.0 yards
+  Michael Wilson (WR): 17.0 yards
+  Michael Carter (RB): 6.8 yards
+  Emari Demercado (RB): 1.4 yards
+  Xavier Weaver (WR): 0.0 yards
+
+IND:
+  Josh Downs (WR): 39.9 yards
+  Adonai Mitchell (WR): 39.8 yards
+  Alec Pierce (WR): 36.0 yards
+  Ameer Abdullah (RB): 28.3 yards
+  Jonathan Taylor (RB): 24.5 yards
+  Mo Alie-Cox (TE): 17.6 yards
+  Ashton Dulin (WR): 10.0 yards
+  Tyler Goodson (RB): 1.4 yards
+
+
+📊 GAME SUMMARY
+--------------------
+Total Props: 26
+With Predictions: 26
+No Data (Rookies): 0
+Top Projection: Daniel Jones (QB) - 273.7 passing yards
+================================================================================
+
+================================================================================
+NE vs NO | Week 6 2025 | ALL PROPS
+================================================================================
+
+🏈 PASSING YARDS
+----------------------------------------
+NE:
+  Drake Maye (QB): 251.2 yards
+
+NO:
+  Spencer Rattler (QB): 177.9 yards
+
+
+🏈 RUSHING YARDS
+----------------------------------------
+NE:
+  Rhamondre Stevenson (RB): 29.9 yards
+  Drake Maye (QB): 16.8 yards
+
+NO:
+  Alvin Kamara (RB): 62.9 yards
+  Kendre Miller (RB): 32.2 yards
+  Spencer Rattler (QB): 26.8 yards
+
+
+🏈 RECEIVING YARDS
+----------------------------------------
+NE:
+  Stefon Diggs (WR): 74.6 yards
+  Hunter Henry (TE): 49.4 yards
+  Mack Hollins (WR): 23.7 yards
+  Austin Hooper (TE): 21.7 yards
+  Kayshon Boutte (WR): 21.7 yards
+  Rhamondre Stevenson (RB): 20.8 yards
+  DeMario Douglas (WR): 13.0 yards
+
+NO:
+  Chris Olave (WR): 49.6 yards
+  Rashid Shaheed (WR): 49.4 yards
+  Brandin Cooks (WR): 30.6 yards
+  Juwan Johnson (TE): 22.7 yards
+  Alvin Kamara (RB): 17.1 yards
+  Jack Stoll (TE): 11.1 yards
+  Devaughn Vele (WR): 9.7 yards
+  Kendre Miller (RB): 6.4 yards
+
+
+📊 GAME SUMMARY
+--------------------
+Total Props: 22
+With Predictions: 22
+No Data (Rookies): 0
+Top Projection: Drake Maye (QB) - 251.2 passing yards
+================================================================================
+
+================================================================================
+LVR vs TEN | Week 6 2025 | ALL PROPS
+================================================================================
+
+🏈 PASSING YARDS
+----------------------------------------
+LVR:
+  Geno Smith (QB): 235.0 yards
+
+TEN:
+  Cam Ward (QB): 188.0 yards
+
+
+🏈 RUSHING YARDS
+----------------------------------------
+LVR:
+  Raheem Mostert (RB): 20.6 yards
+  Zamir White (RB): 17.6 yards
+  Geno Smith (QB): 8.0 yards
+  Dylan Laube (RB): 1.5 yards
+
+TEN:
+  Tony Pollard (RB): 61.9 yards
+  Tyjae Spears (RB): 39.6 yards
+  Julius Chestnut (RB): 13.6 yards
+  Cam Ward (QB): No Data
+
+
+🏈 RECEIVING YARDS
+----------------------------------------
+LVR:
+  Tre Tucker (WR): 51.7 yards
+  Brock Bowers (TE): 49.4 yards
+  Jakobi Meyers (WR): 42.5 yards
+  Ian Thomas (TE): 17.9 yards
+  Alex Bachman (WR): 8.3 yards
+  Zamir White (RB): 4.5 yards
+  Michael Mayer (TE): 3.6 yards
+  Raheem Mostert (RB): 0.9 yards
+  Dylan Laube (RB): -0.2 yards
+
+TEN:
+  Calvin Ridley (WR): 47.3 yards
+  Van Jefferson (WR): 25.5 yards
+  Tyler Lockett (WR): 25.5 yards
+  Tyjae Spears (RB): 22.3 yards
+  Bryce Oliver (WR): 9.9 yards
+  Tony Pollard (RB): 7.0 yards
+  Julius Chestnut (RB): 0.2 yards
+
+
+📊 GAME SUMMARY
+--------------------
+Total Props: 26
+With Predictions: 25
+No Data (Rookies): 1
+Top Projection: Geno Smith (QB) - 235.0 passing yards
+================================================================================
+
+================================================================================
+ATL vs BUF | Week 6 2025 | ALL PROPS
+================================================================================
+
+🏈 PASSING YARDS
+----------------------------------------
+ATL:
+  Michael Penix Jr. (QB): 245.5 yards
+
+BUF:
+  Josh Allen (QB): 182.3 yards
+
+
+🏈 RUSHING YARDS
+----------------------------------------
+ATL:
+  Bijan Robinson (RB): 80.5 yards
+  Tyler Allgeier (RB): 44.9 yards
+  Michael Penix Jr. (QB): 6.3 yards
+
+BUF:
+  James Cook (RB): 84.8 yards
+  Josh Allen (QB): 34.8 yards
+  Ray Davis (RB): 15.3 yards
+  Ty Johnson (RB): 10.4 yards
+
+
+🏈 RECEIVING YARDS
+----------------------------------------
+ATL:
+  Bijan Robinson (RB): 51.0 yards
+  Kyle Pitts (TE): 49.4 yards
+  Drake London (WR): 49.0 yards
+  Darnell Mooney (WR): 34.6 yards
+  Ray-Ray McCloud (WR): 19.2 yards
+  Casey Washington (WR): 16.6 yards
+  KhaDarel Hodge (WR): 10.5 yards
+  Charlie Woerner (TE): 2.4 yards
+  Tyler Allgeier (RB): 1.1 yards
+
+BUF:
+  Dalton Kincaid (TE): 44.1 yards
+  Khalil Shakir (WR): 41.6 yards
+  Keon Coleman (WR): 31.5 yards
+  Josh Palmer (WR): 29.4 yards
+  Tyrell Shavers (WR): 27.6 yards
+  Elijah Moore (WR): 12.5 yards
+  James Cook (RB): 9.6 yards
+  Curtis Samuel (WR): 6.9 yards
+  Ty Johnson (RB): 6.3 yards
+  Dawson Knox (TE): 5.6 yards
+  Ray Davis (RB): 0.7 yards
+
+
+📊 GAME SUMMARY
+--------------------
+Total Props: 29
+With Predictions: 29
+No Data (Rookies): 0
+Top Projection: Michael Penix Jr. (QB) - 245.5 passing yards
+================================================================================
+
+================================================================================
+CIN vs GB | Week 6 2025 | ALL PROPS
+================================================================================
+
+🏈 PASSING YARDS
+----------------------------------------
+CIN:
+  Joe Flacco (QB): 182.4 yards
+
+GB:
+  Jordan Love (QB): 269.6 yards
+
+
+🏈 RUSHING YARDS
+----------------------------------------
+CIN:
+  Chase Brown (RB): 34.5 yards
+  Samaje Perine (RB): 15.8 yards
+  Joe Flacco (QB): -0.1 yards
+
+GB:
+  Josh Jacobs (RB): 69.0 yards
+  Emanuel Wilson (RB): 22.0 yards
+  Jordan Love (QB): 9.2 yards
+  Chris Brooks (RB): 1.4 yards
+
+
+🏈 RECEIVING YARDS
+----------------------------------------
+CIN:
+  Ja'Marr Chase (WR): 87.5 yards
+  Tee Higgins (WR): 43.1 yards
+  Noah Fant (TE): 38.9 yards
+  Andrei Iosivas (WR): 22.8 yards
+  Chase Brown (RB): 22.7 yards
+  Mike Gesicki (TE): 15.5 yards
+  Drew Sample (TE): 8.8 yards
+  Cam Grandy (TE): 6.3 yards
+  Samaje Perine (RB): 5.8 yards
+
+GB:
+  Tucker Kraft (TE): 54.5 yards
+  Romeo Doubs (WR): 38.0 yards
+  Dontayvion Wicks (WR): 34.7 yards
+  Josh Jacobs (RB): 25.7 yards
+  Emanuel Wilson (RB): 19.8 yards
+  Luke Musgrave (TE): 12.5 yards
+  Malik Heath (WR): 11.3 yards
+  John FitzPatrick (TE): 11.2 yards
+  Chris Brooks (RB): 6.9 yards
+
+
+📊 GAME SUMMARY
+--------------------
+Total Props: 27
+With Predictions: 27
+No Data (Rookies): 0
+Top Projection: Jordan Love (QB) - 269.6 passing yards
+================================================================================
+
+================================================================================
+HOU vs MIN | Week 6 2025 | ALL PROPS
+================================================================================
+
+🏈 PASSING YARDS
+----------------------------------------
+HOU:
+  C.J. Stroud (QB): 225.9 yards
+
+MIN:
+  Carson Wentz (QB): 234.8 yards
+
+
+🏈 RUSHING YARDS
+----------------------------------------
+HOU:
+  Nick Chubb (RB): 51.4 yards
+  Dameon Pierce (RB): 12.7 yards
+  C.J. Stroud (QB): 11.3 yards
+  British Brooks (RB): 3.1 yards
+  Dare Ogunbowale (RB): 1.4 yards
+
+MIN:
+  Jordan Mason (RB): 53.8 yards
+  Aaron Jones (RB): 41.1 yards
+  Cam Akers (RB): 24.8 yards
+  Carson Wentz (QB): 11.4 yards
+
+
+🏈 RECEIVING YARDS
+----------------------------------------
+HOU:
+  Nico Collins (WR): 62.3 yards
+  Christian Kirk (WR): 45.3 yards
+  Dalton Schultz (TE): 33.2 yards
+  Dare Ogunbowale (RB): 23.6 yards
+  Xavier Hutchinson (WR): 18.9 yards
+  Nick Chubb (RB): 8.4 yards
+  Harrison Bryant (TE): 4.2 yards
+  Dameon Pierce (RB): 0.1 yards
+  British Brooks (RB): 0.0 yards
+
+MIN:
+  Justin Jefferson (WR): 105.7 yards
+  Jordan Addison (WR): 52.7 yards
+  T.J. Hockenson (TE): 37.5 yards
+  Adam Thielen (WR): 33.2 yards
+  Aaron Jones (RB): 19.7 yards
+  Jalen Nailor (WR): 17.0 yards
+  Jordan Mason (RB): 4.9 yards
+  Josh Oliver (TE): 4.4 yards
+  Cam Akers (RB): 2.4 yards
+
+
+📊 GAME SUMMARY
+--------------------
+Total Props: 29
+With Predictions: 29
+No Data (Rookies): 0
+Top Projection: Carson Wentz (QB) - 234.8 passing yards
+================================================================================
