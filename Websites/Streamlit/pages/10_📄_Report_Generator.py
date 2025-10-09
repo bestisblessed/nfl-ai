@@ -176,6 +176,27 @@ with col2:
             st.write(f"{len(last_10_games)} Most Recent Games Analyzed")
             st.write(f"{team1} Wins: {team1_wins}")
             st.write(f"{team2} Wins: {team2_wins}")
+
+            # Winning streak: determine winner of the most recent completed matchup and count that team's consecutive wins
+            recent_games_for_streak = last_10_games.sort_values(by='date', ascending=False)
+            # most recent completed matchup
+            most_recent = recent_games_for_streak.iloc[0]
+            if most_recent['home_score'] > most_recent['away_score']:
+                winner_team = most_recent['home_team']
+            else:
+                winner_team = most_recent['away_team']
+
+            streak = 0
+            for _, g in recent_games_for_streak.iterrows():
+                home_win = g['home_score'] > g['away_score']
+                away_win = g['away_score'] > g['home_score']
+                team_won = (home_win and g['home_team'] == winner_team) or (away_win and g['away_team'] == winner_team)
+                if team_won:
+                    streak += 1
+                else:
+                    break
+
+            st.write(f"Winning Streak: {winner_team} has won {streak} games in a row")
             st.write(f"Average Total Points: {average_total_points:.1f}")
             st.write(f"Games with more than 50 total points: {over_50_points_games}")
             st.write(f"Total points scored by {team1}: {team1_scores}")
