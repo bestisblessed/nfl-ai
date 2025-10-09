@@ -43,15 +43,11 @@ else:
 
 # Helper functions (module scope) so they can be used anywhere on the page
 def display_team_logo(team_abbrev, size=100):
-    """Display team logo if available"""
+    """Display team logo from the 'images/team-logos/' directory (works for both local and Streamlit Cloud)."""
     logo_path = f"images/team-logos/{team_abbrev}.png"
     try:
-        if os.path.exists(logo_path):
-            st.image(logo_path, width=size)
-        else:
-            # Display team abbreviation as fallback
-            st.markdown(f"<div style='width: {size}px; height: {size}px; border: 1px solid #ccc; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: bold;'>{team_abbrev}</div>", unsafe_allow_html=True)
-    except Exception as e:
+        st.image(logo_path, width=size)
+    except Exception:
         st.markdown(f"<div style='width: {size}px; height: {size}px; border: 1px solid #ccc; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: bold;'>{team_abbrev}</div>", unsafe_allow_html=True)
 
 def sort_by_position(df):
@@ -210,7 +206,7 @@ with col2:
 
             stats_md = f'''
 <div style="text-align:center; font-size: 1.05rem; line-height: 1.65; margin-top:8px;">
-<b>{len(last_10_games)} Most Recent Games Analyzed</b><br><br>
+<i>{len(last_10_games)} most recent games analyzed</i><br><br>
 <b>{team1} Wins:</b> {team1_wins}<br>
 <b>{team2} Wins:</b> {team2_wins}<br>
 <b>Winning Streak:</b> {winner_team} has won {streak} games in a row<br>
