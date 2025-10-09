@@ -155,9 +155,10 @@ if st.button('Generate Report'):
 
             # Choose primary metric per-player based on position
             def pick_primary(row):
+                # Treat Fullbacks (FB) as RBs for rushing yards priority
                 if row['pos'] == 'QB':
                     return row['avg_pass_yds'], 'Avg Pass Yds'
-                elif row['pos'] == 'RB':
+                elif row['pos'] in ('RB', 'FB'):
                     return row['avg_rush_yds'], 'Avg Rush Yds'
                 else:
                     return row['avg_rec_yds'], 'Avg Rec Yds'
@@ -166,12 +167,18 @@ if st.button('Generate Report'):
             base['primary_val'] = [v for v,_ in prim_vals]
             base['primary_label'] = [lbl for _,lbl in prim_vals]
 
-            display_df = base[['player_name_with_position','games','primary_val','avg_fpts','primary_label']].sort_values(['games','primary_val'], ascending=[False, False]).reset_index(drop=True)
-            display_df.columns = ['Player','Games','Primary','Avg FPTS','Primary Label']
+            # include position and sort by position priority (QB, RB, WR, TE), then by games and primary metric
+            display_df = base[['player_name_with_position','pos','games','primary_val','avg_fpts','primary_label']].copy()
+            pos_priority = {'QB': 0, 'RB': 1, 'WR': 2, 'TE': 3}
+            display_df['pos_order'] = display_df['pos'].map(lambda p: pos_priority.get(p, 4))
+            display_df = display_df.sort_values(['pos_order','games','primary_val'], ascending=[True, False, False]).reset_index(drop=True)
+            display_df = display_df[['player_name_with_position','games','primary_val','avg_fpts','primary_label','pos','pos_order']]
+            display_df.columns = ['Player','Games','Primary','Avg FPTS','Primary Label','Pos','Pos Order']
 
             # st.write(f"**{team_name} Players**")
             st.subheader(f"**{team_name} Players**")
-            st.dataframe(display_df[['Player','Games','Primary','Avg FPTS']], use_container_width=True)
+            # show condensed table (Pos order applied)
+            st.dataframe(display_df[['Player','Pos','Games','Primary','Avg FPTS']], use_container_width=True)
 
             # Create expanders for each player showing metrics and the per-game rows
             for _, row in display_df.iterrows():
