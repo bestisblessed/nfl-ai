@@ -44,7 +44,7 @@ def load_data():
 df_teams, df_games, df_playerstats, df_team_game_logs, df_schedule_and_game_results = load_data()
 
 # Season selector
-selected_season = st.selectbox("Select Season:", [2025, 2024], index=0)
+selected_season = st.selectbox("Select Season:", [2024, 2025], index=0)
 
 st.divider()
 

@@ -111,16 +111,26 @@ def show_condensed_players(historical_df, team_name, opponent_name):
                 available_cols = [c for c in metric_cols if c in player_games.columns]
                 st.dataframe(player_games[available_cols], use_container_width=True, height=260, hide_index=True)
 
+# Utility to clear any previously generated report results
+def _reset_report_results():
+    for k in ['rg_hist_team1', 'rg_hist_team2', 'rg_team1', 'rg_team2']:
+        st.session_state.pop(k, None)
+
+# On first load of this page, clear stale results so player sections don't show by default
+if 'rg_initialized' not in st.session_state:
+    _reset_report_results()
+    st.session_state['rg_initialized'] = True
+
 # Center the top section (narrower middle column)
-col1, col2, col3 = st.columns([0.2, 1.5, 0.2]) # Middle ~60% width
+col1, col2, col3 = st.columns([0.2, .5, 0.2]) # Middle ~60% width
 with col2:
     # Team selection using selectbox with unique teams
     unique_teams = sorted(df_games['home_team'].unique())
-    left_team_col, right_team_col = st.columns([1, 1])
+    left_team_col, spacer_mid, right_team_col = st.columns([1, 0.0001, 1])
     with left_team_col:
-        team1 = st.selectbox('Select Team 1:', options=unique_teams, index=unique_teams.index('BUF'))
+        team1 = st.selectbox('Select Team 1:', options=unique_teams, index=unique_teams.index('BUF'), key='team1_select', on_change=_reset_report_results)
     with right_team_col:
-        team2 = st.selectbox('Select Team 2:', options=unique_teams, index=unique_teams.index('MIA'))
+        team2 = st.selectbox('Select Team 2:', options=unique_teams, index=unique_teams.index('MIA'), key='team2_select', on_change=_reset_report_results)
 
     # Center the generate button
     btn_c1, btn_c2, btn_c3 = st.columns([1, 0.4, 1])
