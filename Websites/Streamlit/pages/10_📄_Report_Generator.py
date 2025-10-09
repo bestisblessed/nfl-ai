@@ -42,6 +42,18 @@ else:
         st.session_state['df_roster2025'] = df_roster2025
 
 # Helper functions (module scope) so they can be used anywhere on the page
+def display_team_logo(team_abbrev, size=100):
+    """Display team logo if available"""
+    logo_path = f"images/team-logos/{team_abbrev}.png"
+    try:
+        if os.path.exists(logo_path):
+            st.image(logo_path, width=size)
+        else:
+            # Display team abbreviation as fallback
+            st.markdown(f"<div style='width: {size}px; height: {size}px; border: 1px solid #ccc; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: bold;'>{team_abbrev}</div>", unsafe_allow_html=True)
+    except Exception as e:
+        st.markdown(f"<div style='width: {size}px; height: {size}px; border: 1px solid #ccc; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: bold;'>{team_abbrev}</div>", unsafe_allow_html=True)
+
 def sort_by_position(df):
     position_order = {'QB': 1, 'WR': 2, 'TE': 3, 'RB': 4}
     df = df.copy()
@@ -104,7 +116,6 @@ def show_condensed_players(historical_df, team_name, opponent_name):
     display_df.columns = ['Player','Games','Primary','Avg FPTS','Primary Label','Pos','Pos Order']
 
     with st.container():
-        st.subheader(f"**{team_name} Players**")
         st.dataframe(display_df[['Player','Pos','Games','Avg FPTS']], use_container_width=True, hide_index=True)
         for _, row in display_df.iterrows():
             pname = row['Player']
@@ -170,7 +181,15 @@ with col2:
 
             over_50_points_games = int((total_points > 50).sum())
 
-            st.write(f"**Matchup Summary: {team1} vs {team2}**")
+            # Display matchup summary with logos
+            col_logo1, col_vs, col_logo2 = st.columns([1, 2, 1])
+            with col_logo1:
+                display_team_logo(team1, size=60)
+            with col_vs:
+                st.markdown("<h2 style='text-align: center; margin: 0;'>VS</h2>", unsafe_allow_html=True)
+            with col_logo2:
+                display_team_logo(team2, size=60)
+
             st.write(f"{len(last_10_games)} Most Recent Games Analyzed")
             st.write(f"{team1} Wins: {team1_wins}")
             st.write(f"{team2} Wins: {team2_wins}")
@@ -255,6 +274,16 @@ if all(k in st.session_state for k in ['rg_hist_team1','rg_hist_team2','rg_team1
     st.divider()
     a, b = st.columns(2)
     with a:
+        row_logo, row_title = st.columns([0.1, 0.88])
+        with row_logo:
+            display_team_logo(st.session_state['rg_team1'], size=60)
+        with row_title:
+            st.markdown(f"<span style='font-size:2.2rem; font-weight:bold; vertical-align:middle; display:inline-block; margin-left:8px;'>{st.session_state['rg_team1']} Players</span>", unsafe_allow_html=True)
         show_condensed_players(st.session_state['rg_hist_team1'], st.session_state['rg_team1'], st.session_state['rg_team2'])
     with b:
+        row_logo, row_title = st.columns([0.1, 0.88])
+        with row_logo:
+            display_team_logo(st.session_state['rg_team2'], size=60)
+        with row_title:
+            st.markdown(f"<span style='font-size:2.2rem; font-weight:bold; vertical-align:middle; display:inline-block; margin-left:8px;'>{st.session_state['rg_team2']} Players</span>", unsafe_allow_html=True)
         show_condensed_players(st.session_state['rg_hist_team2'], st.session_state['rg_team2'], st.session_state['rg_team1'])

@@ -12,4 +12,5 @@
 primaryColor="#E02020"            # dark gray
 backgroundColor="#d3d3d3"         # light gray
 #font="monospace"
-font="sans serif"
+#font="sans serif"
+font="serif"
