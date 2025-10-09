@@ -1,31 +1,37 @@
 [theme]
 font = "serif"
+primaryColor="#E02020"            # dark gray
+backgroundColor="#d3d3d3"         # light gray
 
 
-base = "light"
+
+
+
+
+
+# base = "light"
 
 # surfaces
-backgroundColor = "#E9ECEF"           # gray page
-secondaryBackgroundColor = "#FFFFFF"  # cards
+# backgroundColor = "#E9ECEF"           # gray page
+# secondaryBackgroundColor = "#FFFFFF"  # cards
 
 # core colors
-primaryColor = "#D62828"              # crimson accents
-textColor = "#111111"
-linkColor = "#D62828"
+# primaryColor = "#D62828"              # crimson accents
+# textColor = "#111111"
+# linkColor = "#D62828"
 
 # tables / borders
-dataframeHeaderBackgroundColor = "#D62828"
-dataframeBorderColor = "#D7DBE0"
-borderColor = "#D7DBE0"
-showWidgetBorder = true
-showSidebarBorder = true
-baseRadius = 8
-buttonRadius = 10
+# dataframeHeaderBackgroundColor = "#D62828"
+# dataframeBorderColor = "#D7DBE0"
+# borderColor = "#D7DBE0"
+# showWidgetBorder = true
+# showSidebarBorder = true
+# baseRadius = 8
+# buttonRadius = 10
 
 # code + charts (optional)
-codeBackgroundColor = "#F4F6F8"
-chartCategoricalColors = ["#D62828","#7A0D15","#2F3B52","#6C757D","#ADB5BD","#FF7F7F","#1C1C1C"]
-
+# codeBackgroundColor = "#F4F6F8"
+# chartCategoricalColors = ["#D62828","#7A0D15","#2F3B52","#6C757D","#ADB5BD","#FF7F7F","#1C1C1C"]
 
 
 
@@ -63,7 +69,3 @@ chartCategoricalColors = ["#D62828","#7A0D15","#2F3B52","#6C757D","#ADB5BD","#FF
 #backgroundColor="#F5F6FA"
 #secondaryBackgroundColor="#FFFFFF"
 #textColor="#1C1C1C"
-
-
-#primaryColor="#E02020"            # dark gray
-#backgroundColor="#d3d3d3"         # light gray
