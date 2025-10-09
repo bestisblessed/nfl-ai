@@ -1,8 +1,36 @@
 [theme]
 font = "serif"
-primaryColor="#C1121F"
-backgroundColor="#F5F6FA"
-secondaryBackgroundColor="#FFFFFF"
-textColor="#1C1C1C"
+
+backgroundColor = "#F0F2F5"           # page gray
+secondaryBackgroundColor = "#FFFFFF"  # cards/panels
+
+# Core colors
+primaryColor = "#C1121F"              # red accent
+textColor = "#1C1C1C"
+linkColor = "#C1121F"
+codeBackgroundColor = "#F5F5F5"
+
+# Borders / shape
+borderColor = "#E0E0E0"
+showWidgetBorder = true
+showSidebarBorder = true
+baseRadius = 8
+buttonRadius = 10
+
+# Tables and charts
+dataframeHeaderBackgroundColor = "#C1121F"
+dataframeBorderColor = "#E0E0E0"
+chartCategoricalColors = [
+  "#C1121F","#7A0D15","#E63946","#8B0000",
+  "#1C1C1C","#777777","#B22222","#FF7F7F"
+]
+
+
+#primaryColor="#C1121F"
+#backgroundColor="#F5F6FA"
+#secondaryBackgroundColor="#FFFFFF"
+#textColor="#1C1C1C"
+
+
 #primaryColor="#E02020"            # dark gray
 #backgroundColor="#d3d3d3"         # light gray
