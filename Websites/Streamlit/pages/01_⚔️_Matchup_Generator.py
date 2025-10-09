@@ -522,8 +522,9 @@ with col2:
     with btn_c2:
         generate_clicked = st.button('Generate Report', use_container_width=True)
 
-    # Always auto-generate on each rerun so defaults execute while on page
-    generate_clicked = True
+    # Auto-generate only for the default matchup when selections are BUF vs MIA
+    if team1 == 'BUF' and team2 == 'MIA':
+        generate_clicked = True
 
     if generate_clicked:
         
@@ -599,25 +600,25 @@ with col2:
             ou_over, ou_under, ou_push = h2h['ou']
             fav = h2h['fav_dog']
             box_style_bets = "border:1px solid #e6e6e6; border-radius:10px; padding:12px 14px;"
-            st.markdown("<div style='text-align:center; font-weight:600; margin-bottom:8px;'>Head-to-Head Betting</div>", unsafe_allow_html=True)
             html_bets = f"""
             <div style='{box_style_bets}'>
+              <div style='text-align:center; font-weight:600; margin-bottom:12px;'>Head-to-Head Betting</div>
               <div style='display:flex; gap:10px; justify-content:space-between;'>
                 <div style='flex:1; text-align:center;'>
-                  <div>ATS: {team1}</div>
-                  <div style='font-weight:700;'>{ats_t1_w}-{ats_t1_l}-{ats_push}</div>
+                  <div style='font-size:1.05rem;'>ATS: {team1}</div>
+                  <div style='font-weight:800; font-size:1.35rem;'>{ats_t1_w}-{ats_t1_l}-{ats_push}</div>
                 </div>
                 <div style='flex:1; text-align:center;'>
-                  <div>ATS: {team2}</div>
-                  <div style='font-weight:700;'>{ats_t2_w}-{ats_t2_l}-{ats_t2_p}</div>
+                  <div style='font-size:1.05rem;'>ATS: {team2}</div>
+                  <div style='font-weight:800; font-size:1.35rem;'>{ats_t2_w}-{ats_t2_l}-{ats_t2_p}</div>
                 </div>
                 <div style='flex:1; text-align:center;'>
-                  <div>Totals (O-U-P)</div>
-                  <div style='font-weight:700;'>{ou_over}-{ou_under}-{ou_push}</div>
+                  <div style='font-size:1.05rem;'>Totals (O-U-P)</div>
+                  <div style='font-weight:800; font-size:1.35rem;'>{ou_over}-{ou_under}-{ou_push}</div>
                 </div>
                 <div style='flex:1; text-align:left;'>
-                  <div><b>{team1}:</b> <b>Fav {fav['team1_fav']}</b> - <b>Dog {fav['team1_dog']}</b></div>
-                  <div><b>{team2}:</b> <b>Fav {fav['team2_fav']}</b> - <b>Dog {fav['team2_dog']}</b></div>
+                  <div style='font-size:1.05rem;'><b>{team1}:</b> <b>Fav {fav['team1_fav']}</b> - <b>Dog {fav['team1_dog']}</b></div>
+                  <div style='font-size:1.05rem;'><b>{team2}:</b> <b>Fav {fav['team2_fav']}</b> - <b>Dog {fav['team2_dog']}</b></div>
                 </div>
               </div>
             </div>
