@@ -1,29 +1,62 @@
 [theme]
 font = "serif"
 
-backgroundColor = "#F0F2F5"           # page gray
-secondaryBackgroundColor = "#FFFFFF"  # cards/panels
 
-# Core colors
-primaryColor = "#C1121F"              # red accent
-textColor = "#1C1C1C"
-linkColor = "#C1121F"
-codeBackgroundColor = "#F5F5F5"
+base = "light"
 
-# Borders / shape
-borderColor = "#E0E0E0"
+# surfaces
+backgroundColor = "#E9ECEF"           # gray page
+secondaryBackgroundColor = "#FFFFFF"  # cards
+
+# core colors
+primaryColor = "#D62828"              # crimson accents
+textColor = "#111111"
+linkColor = "#D62828"
+
+# tables / borders
+dataframeHeaderBackgroundColor = "#D62828"
+dataframeBorderColor = "#D7DBE0"
+borderColor = "#D7DBE0"
 showWidgetBorder = true
 showSidebarBorder = true
 baseRadius = 8
 buttonRadius = 10
 
-# Tables and charts
-dataframeHeaderBackgroundColor = "#C1121F"
-dataframeBorderColor = "#E0E0E0"
-chartCategoricalColors = [
-  "#C1121F","#7A0D15","#E63946","#8B0000",
-  "#1C1C1C","#777777","#B22222","#FF7F7F"
-]
+# code + charts (optional)
+codeBackgroundColor = "#F4F6F8"
+chartCategoricalColors = ["#D62828","#7A0D15","#2F3B52","#6C757D","#ADB5BD","#FF7F7F","#1C1C1C"]
+
+
+
+
+
+#backgroundColor = "#F0F2F5"           # page gray
+#secondaryBackgroundColor = "#FFFFFF"  # cards/panels
+#
+## Core colors
+#primaryColor = "#C1121F"              # red accent
+#textColor = "#1C1C1C"
+#linkColor = "#C1121F"
+#codeBackgroundColor = "#F5F5F5"
+#
+## Borders / shape
+#borderColor = "#E0E0E0"
+#showWidgetBorder = true
+#showSidebarBorder = true
+#baseRadius = 8
+#buttonRadius = 10
+#
+## Tables and charts
+#dataframeHeaderBackgroundColor = "#C1121F"
+#dataframeBorderColor = "#E0E0E0"
+#chartCategoricalColors = [
+#  "#C1121F","#7A0D15","#E63946","#8B0000",
+#  "#1C1C1C","#777777","#B22222","#FF7F7F"
+#]
+
+
+
+
 
 
 #primaryColor="#C1121F"
