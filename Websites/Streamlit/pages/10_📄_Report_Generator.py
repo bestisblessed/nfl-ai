@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import os
+import numpy as np
 import plotly.express as px
 
 # Page configuration
@@ -27,15 +28,44 @@ if 'df_games' not in st.session_state:
     df_playerstats = pd.read_csv(os.path.join(current_dir, '../data', 'PlayerStats.csv'))
     # Load 2025 roster as source of truth for current players
     df_roster2025 = pd.read_csv(os.path.join(current_dir, '../data/rosters', 'roster_2025.csv'))
+    # Load teams lookup (abbr -> full name) and SR game logs for recent form/splits
+    try:
+        df_teams_lookup = pd.read_csv(os.path.join(current_dir, '../data', 'Teams.csv'))
+    except Exception:
+        df_teams_lookup = pd.DataFrame(columns=['TeamID', 'Team'])
+
+    # Sports Reference team logs (seasonal game logs by team)
+    try:
+        sr_2024 = pd.read_csv(os.path.join(current_dir, '../data', 'SR-game-logs', 'all_teams_game_logs_2024.csv'))
+    except Exception:
+        sr_2024 = pd.DataFrame()
+    try:
+        sr_2025 = pd.read_csv(os.path.join(current_dir, '../data', 'SR-game-logs', 'all_teams_game_logs_2025.csv'))
+    except Exception:
+        sr_2025 = pd.DataFrame()
+    df_sr_logs = pd.concat([sr_2024, sr_2025], ignore_index=True)
+    # Normalize common fields
+    if not df_sr_logs.empty:
+        # Ensure date column is datetime where present
+        if 'date' in df_sr_logs.columns:
+            df_sr_logs.loc[:, 'date'] = pd.to_datetime(df_sr_logs['date'], errors='coerce')
+        # Coerce numeric columns we will use
+        for col in ['pass_yds','rush_yds','plays','total_yds','ypp','third_down_conv','third_down_att','fourth_down_conv','fourth_down_att','pass_att','rush_att','pass_sk']:
+            if col in df_sr_logs.columns:
+                df_sr_logs.loc[:, col] = pd.to_numeric(df_sr_logs[col], errors='coerce')
     
     # Store in session state for future use
     st.session_state['df_games'] = df_games
     st.session_state['df_playerstats'] = df_playerstats
     st.session_state['df_roster2025'] = df_roster2025
+    st.session_state['df_teams_lookup'] = df_teams_lookup
+    st.session_state['df_sr_logs'] = df_sr_logs
 else:
     df_games = st.session_state['df_games'] 
     df_playerstats = st.session_state['df_playerstats']
     df_roster2025 = st.session_state.get('df_roster2025')
+    df_teams_lookup = st.session_state.get('df_teams_lookup', pd.DataFrame(columns=['TeamID','Team']))
+    df_sr_logs = st.session_state.get('df_sr_logs', pd.DataFrame())
     if df_roster2025 is None:
         current_dir = os.path.dirname(os.path.abspath(__file__))
         df_roster2025 = pd.read_csv(os.path.join(current_dir, '../data/rosters', 'roster_2025.csv'))
@@ -165,6 +195,178 @@ def _reset_report_results():
     for k in ['rg_hist_team1', 'rg_hist_team2', 'rg_team1', 'rg_team2']:
         st.session_state.pop(k, None)
 
+# --------------- Betting/handicapping helpers ---------------
+def _parse_games_datetime(df: pd.DataFrame) -> pd.DataFrame:
+    if 'date' in df.columns:
+        df = df.copy()
+        df.loc[:, 'date'] = pd.to_datetime(df['date'], errors='coerce')
+    return df
+
+def _get_team_points(row: pd.Series, team_abbrev: str) -> tuple[float, float, float]:
+    if row['home_team'] == team_abbrev:
+        return row['home_score'], row['away_score'], row['home_spread'] if 'home_spread' in row.index else np.nan
+    else:
+        return row['away_score'], row['home_score'], row['away_spread'] if 'away_spread' in row.index else np.nan
+
+def compute_head_to_head_bets(df_games: pd.DataFrame, team1: str, team2: str, limit: int = 10) -> dict:
+    df_games = _parse_games_datetime(df_games)
+    mask_matchup = ((df_games['home_team'] == team1) & (df_games['away_team'] == team2)) | \
+                   ((df_games['home_team'] == team2) & (df_games['away_team'] == team1))
+    games = df_games.loc[mask_matchup].dropna(subset=['home_score','away_score']).sort_values('date', ascending=False).head(limit)
+    if games.empty:
+        return {
+            'games': games,
+            'team1_ats': (0,0,0), 'team2_ats': (0,0,0), 'ou': (0,0,0),
+            'team1_avg_cover_margin': 0.0, 'team2_avg_cover_margin': 0.0,
+            'fav_dog': {'team1_fav': 0, 'team1_dog': 0, 'team2_fav': 0, 'team2_dog': 0}
+        }
+
+    # ATS tallies using team_covered where available, else compute via margin
+    team1_covers = int((games.get('team_covered') == team1).sum()) if 'team_covered' in games.columns else 0
+    team2_covers = int((games.get('team_covered') == team2).sum()) if 'team_covered' in games.columns else 0
+    pushes = int((games.get('team_covered') == 'Push').sum()) if 'team_covered' in games.columns else 0
+
+    # Compute cover margins and O/U
+    t1_margins, t2_margins = [], []
+    overs = unders = ou_pushes = 0
+    t1_fav = t1_dog = t2_fav = t2_dog = 0
+    for _, row in games.iterrows():
+        # Over/Under
+        line_total = row['total_line'] if 'total_line' in row.index else np.nan
+        if pd.notna(line_total):
+            game_total = float(row['home_score']) + float(row['away_score'])
+            if game_total > line_total: overs += 1
+            elif game_total < line_total: unders += 1
+            else: ou_pushes += 1
+
+        # Favorite/dog counts
+        fav = row['team_favorite'] if 'team_favorite' in row.index else None
+        if isinstance(fav, str):
+            if fav == team1: t1_fav += 1
+            elif fav == team2: t2_fav += 1
+            elif fav.lower() in ('pick','pk','pickem','pck'): pass
+        # puppy counts infer from favorite
+        if isinstance(fav, str):
+            if fav == team1: t2_dog += 1
+            elif fav == team2: t1_dog += 1
+
+        # Cover margins
+        t1_pts, t2_pts, t1_spread = _get_team_points(row, team1)
+        _, _, t2_spread = _get_team_points(row, team2)
+        if pd.notna(t1_pts) and pd.notna(t1_spread):
+            t1_margins.append(float(t1_pts) - float(t2_pts) + float(t1_spread))
+        if pd.notna(t2_pts) and pd.notna(t2_spread):
+            t2_margins.append(float(t2_pts) - float(t1_pts) + float(t2_spread))
+
+    # If team_covered not present, infer ATS from margins
+    if 'team_covered' not in games.columns:
+        team1_covers = sum(1 for m in t1_margins if m > 0)
+        team2_covers = sum(1 for m in t2_margins if m > 0)
+        pushes = sum(1 for m in t1_margins if m == 0)
+
+    return {
+        'games': games,
+        'team1_ats': (team1_covers, team2_covers, pushes),
+        'team2_ats': (team2_covers, team1_covers, pushes),
+        'ou': (overs, unders, ou_pushes),
+        'team1_avg_cover_margin': float(np.nanmean(t1_margins)) if len(t1_margins) else 0.0,
+        'team2_avg_cover_margin': float(np.nanmean(t2_margins)) if len(t2_margins) else 0.0,
+        'fav_dog': {'team1_fav': t1_fav, 'team1_dog': t1_dog, 'team2_fav': t2_fav, 'team2_dog': t2_dog}
+    }
+
+def compute_recent_form(df_games: pd.DataFrame, team: str, n: int = 8) -> dict:
+    df_games = _parse_games_datetime(df_games)
+    mask_team = (df_games['home_team'] == team) | (df_games['away_team'] == team)
+    games = df_games.loc[mask_team].dropna(subset=['home_score','away_score']).sort_values('date', ascending=False).head(n)
+    if games.empty:
+        return {'su': (0,0), 'ats': (0,0,0), 'ou': (0,0,0), 'avg_mov': 0.0, 'avg_ats_margin': 0.0}
+    su_wins = su_losses = ats_w = ats_l = ats_p = over = under = ou_p = 0
+    movs, ats_margins = [], []
+    for _, row in games.iterrows():
+        t_pts, o_pts, spr = _get_team_points(row, team)
+        if pd.isna(t_pts) or pd.isna(o_pts):
+            continue
+        # SU
+        if t_pts > o_pts: su_wins += 1
+        elif t_pts < o_pts: su_losses += 1
+        # ATS
+        if pd.notna(spr):
+            margin = (float(t_pts) - float(o_pts) + float(spr))
+            ats_margins.append(margin)
+            if margin > 0: ats_w += 1
+            elif margin < 0: ats_l += 1
+            else: ats_p += 1
+        # O/U
+        if 'total_line' in row.index and pd.notna(row['total_line']):
+            total_pts = float(row['home_score']) + float(row['away_score'])
+            if total_pts > row['total_line']: over += 1
+            elif total_pts < row['total_line']: under += 1
+            else: ou_p += 1
+        movs.append(float(t_pts) - float(o_pts))
+    return {
+        'su': (su_wins, su_losses),
+        'ats': (ats_w, ats_l, ats_p),
+        'ou': (over, under, ou_p),
+        'avg_mov': float(np.nanmean(movs)) if len(movs) else 0.0,
+        'avg_ats_margin': float(np.nanmean(ats_margins)) if len(ats_margins) else 0.0
+    }
+
+def _abbr_to_full(df_teams_lookup: pd.DataFrame, abbr: str) -> str:
+    if df_teams_lookup.empty:
+        return abbr
+    match = df_teams_lookup.loc[df_teams_lookup['TeamID'] == abbr, 'Team']
+    return str(match.iloc[0]) if not match.empty else abbr
+
+def compute_recent_off_def_splits(df_sr_logs: pd.DataFrame, df_teams_lookup: pd.DataFrame, team_abbr: str, n: int = 8) -> dict:
+    if df_sr_logs is None or df_sr_logs.empty:
+        return {
+            'offense': {'pass_yds_pg': np.nan, 'rush_yds_pg': np.nan, 'plays_pg': np.nan, 'ypp': np.nan, 'third_pct': np.nan},
+            'defense': {'pass_yds_all_pg': np.nan, 'rush_yds_all_pg': np.nan, 'plays_all_pg': np.nan, 'ypp_all': np.nan, 'third_pct_all': np.nan},
+            'sacks': {'taken_pg': np.nan, 'made_pg': np.nan}
+        }
+    team_full = _abbr_to_full(df_teams_lookup, team_abbr)
+    df = df_sr_logs.copy()
+    # Clean
+    if 'date' in df.columns:
+        df = df.sort_values('date', ascending=False)
+    # Normalize PFR opp codes (e.g., GNB->GB, NWE->NE)
+    pfr_to_std = {
+        'CRD':'ARI','ATL':'ATL','RAV':'BAL','BUF':'BUF','CAR':'CAR','CHI':'CHI','CIN':'CIN','CLE':'CLE',
+        'DAL':'DAL','DEN':'DEN','DET':'DET','GNB':'GB','HTX':'HOU','CLT':'IND','JAX':'JAX','KAN':'KC',
+        'SDG':'LAC','RAM':'LAR','RAI':'LVR','MIA':'MIA','MIN':'MIN','NWE':'NE','NOR':'NO','NYG':'NYG',
+        'NYJ':'NYJ','PHI':'PHI','PIT':'PIT','SEA':'SEA','SFO':'SF','TAM':'TB','OTI':'TEN','WAS':'WAS'
+    }
+    if 'opp' in df.columns:
+        df.loc[:, 'opp_std'] = df['opp'].astype(str).str.upper().map(pfr_to_std).fillna(df['opp'].astype(str).str.upper())
+    # Offense: rows for team
+    off = df[df.get('team_name') == team_full].head(n)
+    # Defense allowed: rows where opponent equals this team
+    if 'opp_std' in df.columns:
+        d_all = df[df['opp_std'] == team_abbr].head(n)
+    else:
+        d_all = df[df.get('opp') == team_abbr].head(n)
+    def pct(numer, denom):
+        numer = float(numer) if pd.notna(numer) else 0.0
+        denom = float(denom) if pd.notna(denom) and denom != 0 else np.nan
+        return (numer / denom) if pd.notna(denom) else np.nan
+    offense = {
+        'pass_yds_pg': float(off['pass_yds'].mean()) if 'pass_yds' in off else np.nan,
+        'rush_yds_pg': float(off['rush_yds'].mean()) if 'rush_yds' in off else np.nan,
+        'plays_pg': float(off['plays'].mean()) if 'plays' in off else np.nan,
+        'ypp': float(off['ypp'].mean()) if 'ypp' in off else np.nan,
+        'third_pct': pct(off['third_down_conv'].sum(), off['third_down_att'].sum()) if {'third_down_conv','third_down_att'}.issubset(off.columns) else np.nan,
+        'sacks_taken_pg': float(off['pass_sk'].mean()) if 'pass_sk' in off else np.nan
+    }
+    defense = {
+        'pass_yds_all_pg': float(d_all['pass_yds'].mean()) if 'pass_yds' in d_all else np.nan,
+        'rush_yds_all_pg': float(d_all['rush_yds'].mean()) if 'rush_yds' in d_all else np.nan,
+        'plays_all_pg': float(d_all['plays'].mean()) if 'plays' in d_all else np.nan,
+        'ypp_all': float(d_all['ypp'].mean()) if 'ypp' in d_all else np.nan,
+        'third_pct_all': pct(d_all['third_down_conv'].sum(), d_all['third_down_att'].sum()) if {'third_down_conv','third_down_att'}.issubset(d_all.columns) else np.nan,
+        'sacks_made_pg': float(d_all['pass_sk'].mean()) if 'pass_sk' in d_all else np.nan
+    }
+    return {'offense': offense, 'defense': defense, 'sacks': {'taken_pg': offense['sacks_taken_pg'], 'made_pg': defense['sacks_made_pg']}}
+
 # Clear any stale report results on page load so returning to this page doesn't show previous player tables
 _reset_report_results()
 
@@ -251,6 +453,94 @@ with col2:
 </div>
 '''
             st.markdown(stats_md, unsafe_allow_html=True)
+
+            # -------------------- Head-to-Head ATS & Totals --------------------
+            h2h = compute_head_to_head_bets(df_games, team1, team2, limit=10)
+            ats_t1_w, ats_t1_l, ats_push = h2h['team1_ats']
+            ou_over, ou_under, ou_push = h2h['ou']
+            st.subheader("Head-to-Head Betting Results (last 10)")
+            m1, m2, m3, m4 = st.columns(4)
+            m1.metric(f"ATS: {team1}", f"{ats_t1_w}-{ats_t1_l}-{ats_push}", h2h['team1_avg_cover_margin'])
+            m2.metric(f"ATS: {team2}", f"{h2h['team2_ats'][0]}-{h2h['team2_ats'][1]}-{h2h['team2_ats'][2]}", h2h['team2_avg_cover_margin'])
+            m3.metric("Totals (O-U-P)", f"{ou_over}-{ou_under}-{ou_push}")
+            fav = h2h['fav_dog']
+            m4.metric("Fav/Dog counts", f"{team1} F:{fav['team1_fav']} D:{fav['team1_dog']} | {team2} F:{fav['team2_fav']} D:{fav['team2_dog']}")
+
+            # Compact pies for ATS and O/U
+            if (ats_t1_w + h2h['team2_ats'][0] + ats_push) > 0:
+                pie_ats = px.pie(
+                    values=[ats_t1_w, h2h['team2_ats'][0], ats_push],
+                    names=[f"{team1} cover", f"{team2} cover", "Push"],
+                    title="Head-to-Head ATS Distribution",
+                    hole=0.45,
+                    color_discrete_sequence=["#2ca02c", "#d62728", "#7f7f7f"]
+                )
+                st.plotly_chart(pie_ats, use_container_width=True)
+            if (ou_over + ou_under + ou_push) > 0:
+                pie_ou = px.pie(
+                    values=[ou_over, ou_under, ou_push],
+                    names=["Over", "Under", "Push"],
+                    title="Head-to-Head Totals (O/U)",
+                    hole=0.45,
+                    color_discrete_sequence=["#1f77b4", "#ff7f0e", "#7f7f7f"]
+                )
+                st.plotly_chart(pie_ou, use_container_width=True)
+
+            # -------------------- Recent Form (last 8 overall) --------------------
+            st.subheader("Recent Form – last 8 games (overall)")
+            form1 = compute_recent_form(df_games, team1, n=8)
+            form2 = compute_recent_form(df_games, team2, n=8)
+            c1, c2 = st.columns(2)
+            with c1:
+                st.markdown(f"**{team1}**")
+                st.write({
+                    'SU': f"{form1['su'][0]}-{form1['su'][1]}",
+                    'ATS': f"{form1['ats'][0]}-{form1['ats'][1]}-{form1['ats'][2]}",
+                    'O/U': f"{form1['ou'][0]}-{form1['ou'][1]}-{form1['ou'][2]}",
+                    'Avg MOV': round(form1['avg_mov'], 1),
+                    'Avg ATS Mgn': round(form1['avg_ats_margin'], 1)
+                })
+            with c2:
+                st.markdown(f"**{team2}**")
+                st.write({
+                    'SU': f"{form2['su'][0]}-{form2['su'][1]}",
+                    'ATS': f"{form2['ats'][0]}-{form2['ats'][1]}-{form2['ats'][2]}",
+                    'O/U': f"{form2['ou'][0]}-{form2['ou'][1]}-{form2['ou'][2]}",
+                    'Avg MOV': round(form2['avg_mov'], 1),
+                    'Avg ATS Mgn': round(form2['avg_ats_margin'], 1)
+                })
+
+            # -------------------- Offense vs Defense Splits (SR logs) --------------------
+            if isinstance(df_sr_logs, pd.DataFrame) and not df_sr_logs.empty:
+                splits1 = compute_recent_off_def_splits(df_sr_logs, df_teams_lookup, team1, n=8)
+                splits2 = compute_recent_off_def_splits(df_sr_logs, df_teams_lookup, team2, n=8)
+
+                def _bars_for_team(team_lbl, s_off, s_def):
+                    bars = pd.DataFrame({
+                        'Metric': ['Pass Yds/g', 'Rush Yds/g', 'Yards/Play', 'Plays/g', '3rd Down %'],
+                        team_lbl + ' Off': [
+                            s_off['pass_yds_pg'], s_off['rush_yds_pg'], s_off['ypp'], s_off['plays_pg'],
+                            None if pd.isna(s_off['third_pct']) else round(100*s_off['third_pct'], 1)
+                        ],
+                        team_lbl + ' Def Allow': [
+                            s_def['pass_yds_all_pg'], s_def['rush_yds_all_pg'], s_def['ypp_all'], s_def['plays_all_pg'],
+                            None if pd.isna(s_def['third_pct_all']) else round(100*s_def['third_pct_all'], 1)
+                        ]
+                    })
+                    return bars
+
+                st.subheader("Matchup Splits (last 8 – offense vs opponent defense)")
+                left, right = st.columns(2)
+                with left:
+                    df_bars1 = _bars_for_team(team1, splits1['offense'], splits2['defense'])
+                    fig1 = px.bar(df_bars1.melt(id_vars='Metric', var_name='Type', value_name='Value'), x='Metric', y='Value', color='Type', barmode='group', title=f"{team1} Offense vs {team2} Defense")
+                    st.plotly_chart(fig1, use_container_width=True)
+                    st.caption(f"Sacks – Taken/g: {round(splits1['sacks']['taken_pg'] or 0,1)} | {team2} Made/g: {round(splits2['sacks']['made_pg'] or 0,1)}")
+                with right:
+                    df_bars2 = _bars_for_team(team2, splits2['offense'], splits1['defense'])
+                    fig2 = px.bar(df_bars2.melt(id_vars='Metric', var_name='Type', value_name='Value'), x='Metric', y='Value', color='Type', barmode='group', title=f"{team2} Offense vs {team1} Defense")
+                    st.plotly_chart(fig2, use_container_width=True)
+                    st.caption(f"Sacks – Taken/g: {round(splits2['sacks']['taken_pg'] or 0,1)} | {team1} Made/g: {round(splits1['sacks']['made_pg'] or 0,1)}")
 
             # Use official 2025 roster to determine who is currently on each team (exclude CUT/RET)
             roster = df_roster2025
