@@ -88,6 +88,42 @@ def sort_by_position(df):
     df.loc[:, 'position_order'] = df['position'].map(position_order)
     return df.sort_values(by='position_order').drop(columns=['position_order'])
 
+def compute_top_skill_performers(historical_df: pd.DataFrame, top_n: int = 4) -> pd.DataFrame:
+    """Return top-N non-QB skill players (WR/RB/TE/FB) sorted by:
+    Rec TDs, Rec Yds, Rush TDs, Rush Yds (desc)."""
+    if historical_df is None or historical_df.empty:
+        return pd.DataFrame(columns=['Player','Pos','Total TDs','Rec Yds','Rush Yds','Rec TDs','Rush TDs'])
+
+    df = historical_df.copy()
+    # Ensure numeric fields
+    for col in ['receiving_yards','rushing_yards','receiving_tds','rushing_tds']:
+        if col not in df.columns:
+            df[col] = 0
+        df[col] = pd.to_numeric(df[col], errors='coerce').fillna(0)
+
+    if 'position' not in df.columns or 'player_display_name' not in df.columns:
+        return pd.DataFrame(columns=['Player','Pos','Total TDs','Rec Yds','Rush Yds','Rec TDs','Rush TDs'])
+
+    skill = df[df['position'].isin(['WR','RB','TE','FB'])]
+    if skill.empty:
+        return pd.DataFrame(columns=['Player','Pos','Total TDs','Rec Yds','Rush Yds','Rec TDs','Rush TDs'])
+
+    grouped = (
+        skill.groupby(['player_display_name','position'], as_index=False)[['receiving_tds','rushing_tds','receiving_yards','rushing_yards']]
+             .sum()
+    )
+    grouped = grouped.sort_values(['receiving_tds','receiving_yards','rushing_tds','rushing_yards'], ascending=[False, False, False, False]).head(top_n)
+    display_top = grouped.rename(columns={
+        'player_display_name':'Player',
+        'position':'Pos',
+        'receiving_yards':'Rec Yds',
+        'rushing_yards':'Rush Yds',
+        'receiving_tds':'Rec TDs',
+        'rushing_tds':'Rush TDs'
+    })
+    cols_order = ['Player','Pos','Rec TDs','Rec Yds','Rush TDs','Rush Yds']
+    return display_top[[c for c in cols_order if c in display_top.columns]]
+
 def show_condensed_players(historical_df, team_name, opponent_name):
     if historical_df.empty:
         st.write(f"No historical stats found for {team_name} players vs {opponent_name}.")
@@ -184,6 +220,7 @@ def show_condensed_players(historical_df, team_name, opponent_name):
     display_df.columns = ['Player','Games','Primary TDs','Primary','Avg FPTS','Primary Label','Primary TDs Label','Pos','Pos Order']
 
     with st.container():
+        # Summary: restore full players table at top
         st.dataframe(display_df[['Player','Pos','Games','Avg FPTS']], use_container_width=True, hide_index=True)
         for _, row in display_df.iterrows():
             pname = row['Player']
@@ -600,6 +637,23 @@ with col2:
             if not historical_stats_team2.empty:
                 historical_stats_team2 = historical_stats_team2.copy()
                 historical_stats_team2.loc[:, 'player_name_with_position'] = historical_stats_team2['player_display_name'] + " (" + historical_stats_team2['position'] + ")"
+
+            # ---------- NEW: Top Performer Metrics side-by-side under pies ----------
+            top_left, top_right = st.columns(2)
+            with top_left:
+                st.markdown(f"**Top Performance Metrics — {team1}**")
+                t1_top = compute_top_skill_performers(historical_stats_team1, top_n=4)
+                if not t1_top.empty:
+                    st.dataframe(t1_top, use_container_width=True, hide_index=True)
+                else:
+                    st.write("No skill-position data available")
+            with top_right:
+                st.markdown(f"**Top Performance Metrics — {team2}**")
+                t2_top = compute_top_skill_performers(historical_stats_team2, top_n=4)
+                if not t2_top.empty:
+                    st.dataframe(t2_top, use_container_width=True, hide_index=True)
+                else:
+                    st.write("No skill-position data available")
 
             # Save results to session state for full-width render below
             st.session_state['rg_team1'] = team1
