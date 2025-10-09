@@ -38,7 +38,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 st.write("")
-col1, col2, col3 = st.columns([1, 1.43, 1])
+col1, col2, col3 = st.columns([1, 1.79, 1])
 with col2:
     st.code("Select two teams to generate a detailed matchup report with head-to-head team trends and player stats.")
 
