@@ -128,6 +128,7 @@ def show_condensed_players(historical_df, team_name, opponent_name):
         st.dataframe(display_df[['Player','Pos','Games','Avg FPTS']], use_container_width=True, hide_index=True)
         for _, row in display_df.iterrows():
             pname = row['Player']
+            ppos = row['Pos'] if 'Pos' in row else None
             with st.expander(pname, expanded=False):
                 c1, c2, c3 = st.columns([1,1,1])
                 c1.metric("Games", int(row['Games']))
@@ -135,7 +136,27 @@ def show_condensed_players(historical_df, team_name, opponent_name):
                 c2.metric(primary_label, row['Primary'])
                 c3.metric("Avg FPTS", row['Avg FPTS'])
                 player_games = historical_df[historical_df['player_name_with_position'] == pname].sort_values('date', ascending=False).copy()
-                metric_cols = ['season','week','game_id','date','home_team','away_team','receptions','targets','receiving_yards','receiving_tds','carries','rushing_yards','fantasy_points_ppr','passing_yards']
+                # Base identifying columns always shown
+                id_cols = ['season','week','home_team','away_team']
+                # Position-specific columns
+                if isinstance(ppos, str) and ppos.upper() == 'QB':
+                    qb_cols = ['completions','attempts','passing_yards','passing_tds','interceptions','sacks',
+                               'carries','rushing_yards','rushing_tds']
+                    metric_cols = id_cols + qb_cols
+                else:
+                    pos_upper = (ppos or '').upper() if isinstance(ppos, str) else ''
+                    if pos_upper == 'WR':
+                        # WR: no rushing stats
+                        sk_cols = ['receiving_yards', 'receiving_tds', 'targets', 'receptions']
+                    elif pos_upper in ('RB','FB'):
+                        # RB/FB: show rushing stats first, then receiving
+                        sk_cols = ['rushing_yards','rushing_tds', 'carries',
+                                   'receiving_yards','receiving_tds', 'receptions','targets'
+                                   ]
+                    else:
+                        # Default (e.g., TE): keep receiving + rushing (no passing)
+                        sk_cols = ['receiving_yards', 'receiving_tds', 'targets', 'receptions']
+                    metric_cols = id_cols + sk_cols
                 available_cols = [c for c in metric_cols if c in player_games.columns]
                 st.dataframe(player_games[available_cols], use_container_width=True, height=260, hide_index=True)
 
