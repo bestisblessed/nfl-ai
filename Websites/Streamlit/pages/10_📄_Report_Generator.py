@@ -196,8 +196,8 @@ def show_condensed_players(historical_df, team_name, opponent_name):
                     rush_tds_sum = int(this_games['rushing_tds'].sum()) if 'rushing_tds' in this_games.columns else 0
                     rec_tds_sum = int(this_games['receiving_tds'].sum()) if 'receiving_tds' in this_games.columns else 0
                     c1.metric("Games", int(row['Games']))
-                    c2.metric("Rush TDs", rush_tds_sum)
-                    c3.metric("Rec TDs", rec_tds_sum)
+                    c2.metric("Total Rush TDs", rush_tds_sum)
+                    c3.metric("Total Rec TDs", rec_tds_sum)
                     c4.metric("Avg FPTS", row['Avg FPTS'])
                 else:
                     c1, c2, c3, c4 = st.columns([1,1,1,1])
