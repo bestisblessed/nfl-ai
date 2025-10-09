@@ -43,11 +43,25 @@ else:
 
 # Helper functions (module scope) so they can be used anywhere on the page
 def display_team_logo(team_abbrev, size=100):
-    logo_path = f"images/team-logos/{team_abbrev}.png"
-    if os.path.exists(logo_path):
+    fname = f"{team_abbrev}.png"
+    # Path relative to this file (pages/ -> ../images/team-logos/TEAM.png)
+    script_relative_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'images', 'team-logos', fname))
+    # Repo-root relative path (works when CWD is project root)
+    repo_relative_path = os.path.join('images', 'team-logos', fname)
+
+    logo_path = None
+    if os.path.exists(script_relative_path):
+        logo_path = script_relative_path
+    elif os.path.exists(repo_relative_path):
+        logo_path = repo_relative_path
+
+    if logo_path:
         st.image(logo_path, width=size)
     else:
-        st.markdown(f"<div style='width: {size}px; height: {size}px; border: 1px solid #ccc; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: bold;'>{team_abbrev}</div>", unsafe_allow_html=True)
+        st.markdown(
+            f"<div style='width: {size}px; height: {size}px; border: 1px solid #ccc; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: bold;'>{team_abbrev}</div>",
+            unsafe_allow_html=True
+        )
 
 def sort_by_position(df):
     position_order = {'QB': 1, 'WR': 2, 'TE': 3, 'RB': 4}
