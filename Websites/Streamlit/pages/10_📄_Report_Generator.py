@@ -2,6 +2,25 @@ import streamlit as st
 import pandas as pd
 import os
 import plotly.express as px
+import numpy as np
+
+# NFL team color mapping (primary colors)
+TEAM_COLORS = {
+    'ARI': '#97233F', 'ATL': '#A71930', 'BAL': '#241773', 'BUF': '#00338D', 'CAR': '#0085CA',
+    'CHI': '#0B162A', 'CIN': '#FB4F14', 'CLE': '#311D00', 'DAL': '#003594', 'DEN': '#FB4F14',
+    'DET': '#0076B6', 'GB': '#203731', 'HOU': '#03202F', 'IND': '#002C5F', 'JAX': '#101820',
+    'KC': '#E31837', 'LAC': '#0080C6', 'LAR': '#003594', 'LVR': '#000000', 'MIA': '#008E97',
+    'MIN': '#4F2683', 'NE': '#002244', 'NO': '#D3BC8D', 'NYG': '#0B2265', 'NYJ': '#125740',
+    'PHI': '#004C54', 'PIT': '#FFB612', 'SEA': '#002244', 'SF': '#AA0000', 'TB': '#D50A0A',
+    'TEN': '#4B92DB', 'WAS': '#5A1414'
+}
+
+NFL_BLUE = '#013369'
+NFL_RED = '#D50A0A'
+PUSH_GRAY = '#7f7f7f'
+
+def get_team_color(abbr: str) -> str:
+    return TEAM_COLORS.get(str(abbr).upper(), '#555555')
 
 # Page configuration
 st.set_page_config(
@@ -170,20 +189,17 @@ def show_condensed_players(historical_df, team_name, opponent_name):
             pname = row['Player']
             ppos = row['Pos'] if 'Pos' in row else None
             with st.expander(pname, expanded=False):
-                c1, c2, c3, c4, c5 = st.columns([1,1,1,1,1])
-                c1.metric("Games", int(row['Games']))
-
+                # Only show each metric once, and ensure "Games" is not repeated
                 if ppos in ('RB', 'FB'):
+                    c1, c2, c3, c4 = st.columns([1,1,1,1])
                     this_games = historical_df[historical_df['player_name_with_position'] == pname]
                     rush_tds_sum = int(this_games['rushing_tds'].sum()) if 'rushing_tds' in this_games.columns else 0
                     rec_tds_sum = int(this_games['receiving_tds'].sum()) if 'receiving_tds' in this_games.columns else 0
+                    c1.metric("Games", int(row['Games']))
                     c2.metric("Rush TDs", rush_tds_sum)
                     c3.metric("Rec TDs", rec_tds_sum)
-                    primary_label = row['Primary Label']
-                    c4.metric(primary_label, row['Primary'])
-                    c5.metric("Avg FPTS", row['Avg FPTS'])
+                    c4.metric("Avg FPTS", row['Avg FPTS'])
                 else:
-                    # For other positions, use the primary TDs metric
                     c1, c2, c3, c4 = st.columns([1,1,1,1])
                     c1.metric("Games", int(row['Games']))
                     primary_tds_label = row['Primary TDs Label']
@@ -231,6 +247,122 @@ def _reset_report_results():
     for k in ['rg_hist_team1', 'rg_hist_team2', 'rg_team1', 'rg_team2']:
         st.session_state.pop(k, None)
 
+# --------------- Betting/handicapping helpers ---------------
+
+def _parse_games_datetime(df: pd.DataFrame) -> pd.DataFrame:
+    if 'date' in df.columns:
+        df = df.copy()
+        df.loc[:, 'date'] = pd.to_datetime(df['date'], errors='coerce')
+    return df
+
+def _get_team_points(row: pd.Series, team_abbrev: str) -> tuple[float, float, float]:
+    if row['home_team'] == team_abbrev:
+        return row.get('home_score'), row.get('away_score'), row.get('home_spread', np.nan)
+    else:
+        return row.get('away_score'), row.get('home_score'), row.get('away_spread', np.nan)
+
+def compute_head_to_head_bets(df_games: pd.DataFrame, team1: str, team2: str, limit: int = 10) -> dict:
+    df_games = _parse_games_datetime(df_games)
+    mask_matchup = ((df_games['home_team'] == team1) & (df_games['away_team'] == team2)) | \
+                   ((df_games['home_team'] == team2) & (df_games['away_team'] == team1))
+    games = df_games.loc[mask_matchup].dropna(subset=['home_score','away_score']).sort_values('date', ascending=False).head(limit)
+    if games.empty:
+        return {
+            'games': games,
+            'team1_ats': (0,0,0), 'team2_ats': (0,0,0), 'ou': (0,0,0),
+            'team1_avg_cover_margin': 0.0, 'team2_avg_cover_margin': 0.0,
+            'fav_dog': {'team1_fav': 0, 'team1_dog': 0, 'team2_fav': 0, 'team2_dog': 0}
+        }
+
+    # ATS tallies using team_covered where available, else compute via margin
+    team1_covers = int((games.get('team_covered') == team1).sum()) if 'team_covered' in games.columns else 0
+    team2_covers = int((games.get('team_covered') == team2).sum()) if 'team_covered' in games.columns else 0
+    pushes = int((games.get('team_covered') == 'Push').sum()) if 'team_covered' in games.columns else 0
+
+    # Compute cover margins and O/U
+    t1_margins, t2_margins = [], []
+    overs = unders = ou_pushes = 0
+    t1_fav = t1_dog = t2_fav = t2_dog = 0
+    for _, row in games.iterrows():
+        # Over/Under
+        line_total = row['total_line'] if 'total_line' in row.index else np.nan
+        if pd.notna(line_total):
+            game_total = float(row['home_score']) + float(row['away_score'])
+            if game_total > line_total: overs += 1
+            elif game_total < line_total: unders += 1
+            else: ou_pushes += 1
+
+        # Favorite/dog counts
+        fav = row['team_favorite'] if 'team_favorite' in row.index else None
+        if isinstance(fav, str):
+            if fav == team1: t1_fav += 1
+            elif fav == team2: t2_fav += 1
+            elif fav.lower() in ('pick','pk','pickem','pck'): pass
+        if isinstance(fav, str):
+            if fav == team1: t2_dog += 1
+            elif fav == team2: t1_dog += 1
+
+        # Cover margins
+        t1_pts, t2_pts, t1_spread = _get_team_points(row, team1)
+        _, _, t2_spread = _get_team_points(row, team2)
+        if pd.notna(t1_pts) and pd.notna(t1_spread):
+            t1_margins.append(float(t1_pts) - float(t2_pts) + float(t1_spread))
+        if pd.notna(t2_pts) and pd.notna(t2_spread):
+            t2_margins.append(float(t2_pts) - float(t1_pts) + float(t2_spread))
+
+    # If team_covered not present, infer ATS from margins
+    if 'team_covered' not in games.columns:
+        team1_covers = sum(1 for m in t1_margins if m > 0)
+        team2_covers = sum(1 for m in t2_margins if m > 0)
+        pushes = sum(1 for m in t1_margins if m == 0)
+
+    return {
+        'games': games,
+        'team1_ats': (team1_covers, team2_covers, pushes),
+        'team2_ats': (team2_covers, team1_covers, pushes),
+        'ou': (overs, unders, ou_pushes),
+        'team1_avg_cover_margin': float(np.nanmean(t1_margins)) if len(t1_margins) else 0.0,
+        'team2_avg_cover_margin': float(np.nanmean(t2_margins)) if len(t2_margins) else 0.0,
+        'fav_dog': {'team1_fav': t1_fav, 'team1_dog': t1_dog, 'team2_fav': t2_fav, 'team2_dog': t2_dog}
+    }
+
+def compute_recent_form(df_games: pd.DataFrame, team: str, n: int = 8) -> dict:
+    df_games = _parse_games_datetime(df_games)
+    mask_team = (df_games['home_team'] == team) | (df_games['away_team'] == team)
+    games = df_games.loc[mask_team].dropna(subset=['home_score','away_score']).sort_values('date', ascending=False).head(n)
+    if games.empty:
+        return {'su': (0,0), 'ats': (0,0,0), 'ou': (0,0,0), 'avg_mov': 0.0, 'avg_ats_margin': 0.0}
+    su_wins = su_losses = ats_w = ats_l = ats_p = over = under = ou_p = 0
+    movs, ats_margins = [], []
+    for _, row in games.iterrows():
+        t_pts, o_pts, spr = _get_team_points(row, team)
+        if pd.isna(t_pts) or pd.isna(o_pts):
+            continue
+        # SU
+        if t_pts > o_pts: su_wins += 1
+        elif t_pts < o_pts: su_losses += 1
+        # ATS
+        if pd.notna(spr):
+            margin = (float(t_pts) - float(o_pts) + float(spr))
+            ats_margins.append(margin)
+            if margin > 0: ats_w += 1
+            elif margin < 0: ats_l += 1
+            else: ats_p += 1
+        # O/U
+        if 'total_line' in row.index and pd.notna(row['total_line']):
+            total_pts = float(row['home_score']) + float(row['away_score'])
+            if total_pts > row['total_line']: over += 1
+            elif total_pts < row['total_line']: under += 1
+            else: ou_p += 1
+        movs.append(float(t_pts) - float(o_pts))
+    return {
+        'su': (su_wins, su_losses),
+        'ats': (ats_w, ats_l, ats_p),
+        'ou': (over, under, ou_p),
+        'avg_mov': float(np.nanmean(movs)) if len(movs) else 0.0,
+        'avg_ats_margin': float(np.nanmean(ats_margins)) if len(ats_margins) else 0.0
+    }
+
 # Clear any stale report results on page load so returning to this page doesn't show previous player tables
 _reset_report_results()
 
@@ -277,15 +409,6 @@ with col2:
 
             over_50_points_games = int((total_points > 50).sum())
 
-            # Display matchup summary with logos
-            # col_logo1, col_vs, col_logo2 = st.columns([1, 2, 1])
-            # with col_logo1:
-            #     display_team_logo(team1, size=60)
-            # with col_vs:
-            #     st.markdown("<h2 style='text-align: center; margin: 0;'>VS</h2>", unsafe_allow_html=True)
-            # with col_logo2:
-            #     display_team_logo(team2, size=60)
-
             # Only here: compute and show streak, winner_team, and center-stats block
             recent_games_for_streak = last_10_games.sort_values(by='date', ascending=False)
             most_recent = recent_games_for_streak.iloc[0]
@@ -317,6 +440,111 @@ with col2:
 </div>
 '''
             st.markdown(stats_md, unsafe_allow_html=True)
+
+            # -------------------- Head-to-Head ATS & Totals --------------------
+            # st.divider()
+            st.write("")
+            st.write("")
+            h2h = compute_head_to_head_bets(df_games, team1, team2, limit=10)
+            ats_t1_w, ats_t1_l, ats_push = h2h['team1_ats']
+            ou_over, ou_under, ou_push = h2h['ou']
+            # st.subheader("Head-to-Head Betting Results (last 10)")
+            m1, m2, m3, m4 = st.columns(4)
+            m1.metric(f"ATS: {team1}", f"{ats_t1_w}-{ats_t1_l}-{ats_push}")
+            m2.metric(f"ATS: {team2}", f"{h2h['team2_ats'][0]}-{h2h['team2_ats'][1]}-{h2h['team2_ats'][2]}")
+            m3.metric("Totals (O-U-P)", f"{ou_over}-{ou_under}-{ou_push}")
+            fav = h2h['fav_dog']
+            with m4:
+                st.markdown(
+                    f"""
+                    <div style='text-align:left; font-size:1.25rem;'>
+                      <div>{team1}: <b>Fav {fav['team1_fav']}</b> - <b>Dog {fav['team1_dog']}</b></div>
+                      <div>{team2}: <b>Fav {fav['team2_fav']}</b> - <b>Dog {fav['team2_dog']}</b></div>
+                    </div>
+                    """,
+                    unsafe_allow_html=True,
+                )
+
+            # Build per-game outcomes for interactive view
+            games = h2h['games'].copy()
+            if not games.empty:
+                cols_needed = ['date','home_team','away_team','home_score','away_score','home_spread','away_spread','total_line','team_favorite']
+                for c in cols_needed:
+                    if c not in games.columns:
+                        games[c] = np.nan
+                games['date'] = pd.to_datetime(games['date'], errors='coerce')
+                games = games.sort_values('date', ascending=False)
+
+                def game_row_outcomes(row):
+                    total_pts = float(row['home_score']) + float(row['away_score']) if pd.notna(row['home_score']) and pd.notna(row['away_score']) else np.nan
+                    ou_result = 'Over' if pd.notna(row['total_line']) and total_pts > float(row['total_line']) else ('Under' if pd.notna(row['total_line']) and total_pts < float(row['total_line']) else 'Push')
+                    # ATS for each team perspective
+                    # team1
+                    t1_pts, t2_pts, t1_spread = _get_team_points(row, team1)
+                    t2_pts_b, t1_pts_b, t2_spread = _get_team_points(row, team2)
+                    def ats_result(pts, opp_pts, spread):
+                        if pd.isna(pts) or pd.isna(opp_pts) or pd.isna(spread):
+                            return 'N/A'
+                        margin = float(pts) - float(opp_pts) + float(spread)
+                        if margin > 0: return 'Cover'
+                        if margin < 0: return 'No Cover'
+                        return 'Push'
+                    t1_ats = ats_result(t1_pts, t2_pts, t1_spread)
+                    t2_ats = ats_result(t2_pts_b, t1_pts_b, t2_spread)
+                    return pd.Series({
+                        'Total Pts': total_pts,
+                        'O/U Result': ou_result,
+                        f'{team1} Spread': t1_spread,
+                        f'{team1} ATS': t1_ats,
+                        f'{team2} Spread': t2_spread,
+                        f'{team2} ATS': t2_ats,
+                    })
+
+                outcomes = games.apply(game_row_outcomes, axis=1)
+                # Prefer game_id if present; otherwise build a readable id from date and teams
+                if 'game_id' in games.columns:
+                    games['game_id_display'] = games['game_id'].astype(str)
+                else:
+                    def _mk_id(r):
+                        d = pd.to_datetime(r.get('date'), errors='coerce')
+                        dstr = d.strftime('%Y-%m-%d') if pd.notna(d) else ''
+                        return f"{dstr} {r.get('away_team','')} @ {r.get('home_team','')}"
+                    games['game_id_display'] = games.apply(_mk_id, axis=1)
+
+                show_df = pd.concat([games[['game_id_display','home_team','away_team','home_score','away_score','total_line','team_favorite']], outcomes], axis=1)
+                show_df.rename(columns={'total_line':'Total Line','team_favorite':'Favorite','game_id_display':'game_id'}, inplace=True)
+
+                with st.expander("Per-game results", expanded=False):
+                    df_display = show_df.copy()
+                    cols = ['game_id','home_team','away_team','home_score','away_score','Favorite','Total Line','O/U Result', f'{team1} Spread', f'{team1} ATS', f'{team2} Spread', f'{team2} ATS']
+                    st.dataframe(df_display[cols], use_container_width=True, hide_index=True)
+                    st.download_button(
+                        label="Download games (CSV)",
+                        data=df_display.to_csv(index=False),
+                        file_name=f"{team1}_vs_{team2}_h2h_betting_games.csv",
+                        mime='text/csv'
+                    )
+
+            # Compact pies for ATS and O/U side-by-side
+            cpie1, cpie2 = st.columns(2)
+            if (ats_t1_w + h2h['team2_ats'][0] + ats_push) > 0:
+                pie_ats = px.pie(
+                    values=[ats_t1_w, h2h['team2_ats'][0], ats_push],
+                    names=[f"{team1} cover", f"{team2} cover", "Push"],
+                    title="Head-to-Head ATS Distribution",
+                    hole=0.45,
+                    color_discrete_sequence=[get_team_color(team1), get_team_color(team2), PUSH_GRAY]
+                )
+                cpie1.plotly_chart(pie_ats, use_container_width=True)
+            if (ou_over + ou_under + ou_push) > 0:
+                pie_ou = px.pie(
+                    values=[ou_over, ou_under, ou_push],
+                    names=["Over", "Under", "Push"],
+                    title="Head-to-Head Totals (O/U)",
+                    hole=0.45,
+                    color_discrete_sequence=[NFL_BLUE, NFL_RED, PUSH_GRAY]
+                )
+                cpie2.plotly_chart(pie_ou, use_container_width=True)
 
             # Use official 2025 roster to determine who is currently on each team (exclude CUT/RET)
             roster = df_roster2025
