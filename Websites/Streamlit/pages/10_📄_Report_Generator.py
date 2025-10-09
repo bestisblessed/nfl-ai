@@ -10,6 +10,26 @@ st.set_page_config(
     layout="centered"   
 )
 
+# Utility CSS: enable full-bleed sections inside a centered page
+st.markdown(
+    """
+    <style>
+      /* Full-bleed utility classes (fallback if needed elsewhere) */
+      .full-width { width: 100vw; margin-left: calc(50% - 50vw); margin-right: calc(50% - 50vw); }
+      .full-width-inner { padding-left: 16px; padding-right: 16px; }
+
+      /* Target ONLY the container that contains the players section anchor. */
+      /* This uses :has() which is supported in modern Chromium/Chrome/Edge/Safari. */
+      div[data-testid="stVerticalBlock"]:has(#players-section-anchor) {
+        width: 100vw !important;
+        margin-left: calc(50% - 50vw) !important;
+        margin-right: calc(50% - 50vw) !important;
+      }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 st.markdown(
     """
     <div style="text-align: center;">
@@ -214,9 +234,12 @@ with col2:
                             available_cols = [c for c in metric_cols if c in player_games.columns]
                             st.dataframe(player_games[available_cols], use_container_width=True, height=260, hide_index=True)
 
-        # Show condensed tables for both teams
-        col1, col2 = st.columns(2)
-        with col1:
-            show_condensed_players(historical_stats_team1, team1, team2)
-        with col2:
-            show_condensed_players(historical_stats_team2, team2, team1)
+        # Show condensed player sections using a dedicated container widened via CSS :has()
+        players_container = st.container()
+        with players_container:
+            st.markdown('<span id="players-section-anchor"></span>', unsafe_allow_html=True)
+            wide_col1, wide_col2 = st.columns(2)
+            with wide_col1:
+                show_condensed_players(historical_stats_team1, team1, team2)
+            with wide_col2:
+                show_condensed_players(historical_stats_team2, team2, team1)
