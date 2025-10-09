@@ -1,4 +1,8 @@
 [theme]
 font = "serif"
-primaryColor="#E02020"            # dark gray
-backgroundColor="#d3d3d3"         # light gray
+primaryColor="#C1121F"
+backgroundColor="#F5F6FA"
+secondaryBackgroundColor="#FFFFFF"
+textColor="#1C1C1C"
+#primaryColor="#E02020"            # dark gray
+#backgroundColor="#d3d3d3"         # light gray
