@@ -32,12 +32,18 @@ st.set_page_config(
 st.markdown(
     """
     <div style="text-align: center;">
-        <h1>Report Generator</h1>
-        <p>Select two teams to generate a detailed matchup report, including team trends and player stats.</p>
+        <h1>Matchup Report Generator</h1>
     </div>
     """,
     unsafe_allow_html=True
 )
+st.write("")
+col1, col2, col3 = st.columns([1, 1.43, 1])
+with col2:
+    st.code("Select two teams to generate a detailed matchup report with head-to-head team trends and player stats.")
+
+st.write("")
+# st.divider()
 
 # Load data files directly if not in session state
 if 'df_games' not in st.session_state:
@@ -577,9 +583,14 @@ with col2:
                 else:
                     break
 
-            stats_md = f'''
-<div style="text-align:center; font-size: 1.05rem; line-height: 1.65; margin-top:8px;">
-<small><i>{len(last_10_games)} most recent games analyzed</i></small><br><br>
+
+            st.markdown(f"<div style='text-align: center;'><small><i>{len(last_10_games)} most recent games analyzed</i></small></div>", unsafe_allow_html=True)
+            st.divider()
+            # st.write("")
+            # st.write("")
+            
+            stats_md2 = f'''
+<div style="text-align:center; font-size: 1.05rem; line-height: 1.65;">
 <b>{team1} Wins:</b> {team1_wins}<br>
 <b>{team2} Wins:</b> {team2_wins}<br>
 <b>Winning Streak:</b> {winner_team} has won {streak} games in a row<br>
@@ -589,7 +600,7 @@ with col2:
 <b>Games with more than 50 total points:</b> {over_50_points_games}<br>
 </div>
 '''
-            st.markdown(stats_md, unsafe_allow_html=True)
+            st.markdown(stats_md2, unsafe_allow_html=True)
             # st.divider()
 
             # -------------------- Head-to-Head ATS & Totals --------------------
