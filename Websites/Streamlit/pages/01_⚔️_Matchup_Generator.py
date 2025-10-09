@@ -390,8 +390,759 @@ def show_condensed_players(historical_df, team_name, opponent_name):
 
 # Utility to clear any previously generated report results
 def _reset_report_results():
-    for k in ['rg_hist_team1', 'rg_hist_team2', 'rg_team1', 'rg_team2']:
+    for k in ['rg_hist_team1', 'rg_hist_team2', 'rg_team1', 'rg_team2', 'rg_report_data']:
         st.session_state.pop(k, None)
+
+def generate_html_report(team1, team2, report_data):
+    """Generate complete HTML report with all sections and interactive charts."""
+    
+    # Extract data from report_data dict
+    summary_stats = report_data.get('summary_stats', {})
+    h2h_betting = report_data.get('h2h_betting', {})
+    defense_data = report_data.get('defense_data', {})
+    top_performers = report_data.get('top_performers', {})
+    pie_charts = report_data.get('pie_charts', {})
+    historical_stats = report_data.get('historical_stats', {})
+    
+    # Get team colors
+    team1_color = get_team_color(team1)
+    team2_color = get_team_color(team2)
+    
+    # Start building HTML
+    html_content = f"""
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{team1} vs {team2} Matchup Report</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
+        body {{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f9fa;
+            line-height: 1.6;
+        }}
+        .container {{
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }}
+        h1 {{
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+        }}
+        .subtitle {{
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            font-style: italic;
+        }}
+        .section {{
+            margin: 30px 0;
+            padding: 20px;
+            border: 1px solid #e6e6e6;
+            border-radius: 8px;
+            background-color: #fafafa;
+        }}
+        .stats-container {{
+            margin: 30px 0;
+            padding: 25px;
+            background-color: white;
+            border: 1px solid #e6e6e6;
+            border-radius: 8px;
+            border-left: 4px solid #007bff;
+        }}
+        .stats-list {{
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }}
+        .stat-item {{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid #e9ecef;
+        }}
+        .stat-item:last-child {{
+            border-bottom: none;
+        }}
+        .stat-label {{
+            font-size: 1rem;
+            color: #495057;
+            font-weight: 500;
+        }}
+        .stat-value {{
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #212529;
+        }}
+        .team1-stat {{ color: {team1_color}; }}
+        .team2-stat {{ color: {team2_color}; }}
+        .betting-box {{
+            border: 1px solid #e6e6e6;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: white;
+            margin: 20px 0;
+        }}
+        .betting-grid {{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 15px;
+        }}
+        .betting-item {{
+            text-align: center;
+        }}
+        .betting-value {{
+            font-size: 1.8rem;
+            font-weight: 800;
+            margin: 5px 0;
+        }}
+        .defense-grid {{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 20px 0;
+        }}
+        .defense-box {{
+            border: 1px solid #e6e6e6;
+            background-color: rgba(0,0,0,0.02);
+            border-radius: 8px;
+            padding: 15px;
+        }}
+        .defense-title {{
+            text-align: center;
+            font-weight: 600;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }}
+        .defense-metrics {{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-bottom: 10px;
+        }}
+        .defense-metric {{
+            text-align: center;
+        }}
+        .defense-metric-value {{
+            font-weight: 700;
+            font-size: 1.1rem;
+        }}
+        .defense-yards {{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-top: 10px;
+        }}
+        .performance-grid {{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 20px 0;
+        }}
+        .performance-title {{
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }}
+        .chart-container {{
+            margin: 20px 0;
+            text-align: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            align-items: start;
+        }}
+        .chart-item {{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 350px;
+            margin: 0 auto;
+        }}
+        .player-section {{
+            margin: 30px 0;
+            padding: 20px;
+            border: 1px solid #e6e6e6;
+            border-radius: 8px;
+            background-color: white;
+        }}
+        .player-header {{
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            font-size: 2.2rem;
+            font-weight: bold;
+        }}
+        .team-logo {{
+            width: 60px;
+            height: 60px;
+            border: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-right: 15px;
+            background-color: #f5f5f5;
+        }}
+        .player-summary {{
+            margin-bottom: 20px;
+        }}
+        .player-detail {{
+            margin: 30px 0;
+            border: 1px solid #e6e6e6;
+            border-radius: 6px;
+            background-color: white;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }}
+        .player-name {{
+            font-weight: bold;
+            font-size: 1.1rem;
+            padding: 12px 15px;
+            margin: 0;
+            color: #333;
+            cursor: pointer;
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #e6e6e6;
+            border-radius: 4px 4px 0 0;
+        }}
+        .player-name:hover {{
+            background-color: #e9ecef;
+        }}
+        .player-content {{
+            padding: 15px;
+            display: none;
+            background-color: white;
+            border-radius: 0 0 4px 4px;
+        }}
+        .player-detail input[type="checkbox"] {{
+            display: none;
+        }}
+        .player-detail input[type="checkbox"]:checked ~ .player-content {{
+            display: block;
+        }}
+        .player-metrics {{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+            margin-bottom: 12px;
+        }}
+        .player-metric {{
+            text-align: center;
+            padding: 8px;
+            background-color: #f8f9fa;
+            border-radius: 4px;
+            border: 1px solid #e6e6e6;
+        }}
+        .player-metric-value {{
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #333;
+        }}
+        .player-metric-label {{
+            font-size: 0.8rem;
+            color: #666;
+            margin-top: 3px;
+        }}
+        table {{
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            font-size: 0.9rem;
+        }}
+        th, td {{
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }}
+        th {{
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }}
+        tr:nth-child(even) {{
+            background-color: #f9f9f9;
+        }}
+        .team1-color {{ color: {team1_color}; }}
+        .team2-color {{ color: {team2_color}; }}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>{team1} vs {team2} Matchup Report</h1>
+        <div class="subtitle">{summary_stats.get('games_analyzed', 0)} most recent games analyzed</div>
+"""
+    
+    # Add summary statistics
+    html_content += f"""
+        <div class="section">
+            <h2>Head-to-Head Statistics</h2>
+            <div class="stats-container">
+                <div class="stats-list">
+                    <div class="stat-item">
+                        <span class="stat-label">{team1} Wins</span>
+                        <span class="stat-value team1-stat">{summary_stats.get('team1_wins', 0)}</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">{team2} Wins</span>
+                        <span class="stat-value team2-stat">{summary_stats.get('team2_wins', 0)}</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Winning Streak ({summary_stats.get('winner_team', 'N/A')})</span>
+                        <span class="stat-value">{summary_stats.get('winning_streak', 0)}</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">{team1} Avg PPG</span>
+                        <span class="stat-value team1-stat">{summary_stats.get('team1_ppg', 0):.1f}</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">{team2} Avg PPG</span>
+                        <span class="stat-value team2-stat">{summary_stats.get('team2_ppg', 0):.1f}</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Average Total Points</span>
+                        <span class="stat-value">{summary_stats.get('avg_total_points', 0):.1f}</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Games with 50+ Points</span>
+                        <span class="stat-value">{summary_stats.get('over_50_games', 0)}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+"""
+    
+    # Add betting section
+    if h2h_betting:
+        ats_t1 = h2h_betting.get('team1_ats', (0,0,0))
+        ats_t2 = h2h_betting.get('team2_ats', (0,0,0))
+        ou = h2h_betting.get('ou', (0,0,0))
+        fav_dog = h2h_betting.get('fav_dog', {})
+        
+        html_content += f"""
+        <div class="section">
+            <h2>Head-to-Head Betting</h2>
+            <div class="betting-box">
+                <div class="betting-grid">
+                    <div class="betting-item">
+                        <div>ATS: {team1}</div>
+                        <div class="betting-value team1-color">{ats_t1[0]}-{ats_t1[1]}-{ats_t1[2]}</div>
+                    </div>
+                    <div class="betting-item">
+                        <div>ATS: {team2}</div>
+                        <div class="betting-value team2-color">{ats_t2[0]}-{ats_t2[1]}-{ats_t2[2]}</div>
+                    </div>
+                    <div class="betting-item">
+                        <div>Totals (O-U-P)</div>
+                        <div class="betting-value">{ou[0]}-{ou[1]}-{ou[2]}</div>
+                    </div>
+                    <div class="betting-item">
+                        <div><strong>{team1}:</strong> Fav {fav_dog.get('team1_fav', 0)} - Dog {fav_dog.get('team1_dog', 0)}</div>
+                        <div><strong>{team2}:</strong> Fav {fav_dog.get('team2_fav', 0)} - Dog {fav_dog.get('team2_dog', 0)}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+"""
+    
+    # Add defense metrics
+    if defense_data:
+        t1_def = defense_data.get('team1', {})
+        t2_def = defense_data.get('team2', {})
+        
+        html_content += f"""
+        <div class="section">
+            <h2>Defensive Metrics (Last 10 Games)</h2>
+            <div class="defense-grid">
+                <div class="defense-box">
+                    <div class="defense-title">{team1} Defense</div>
+                    <div class="defense-metrics">
+                        <div class="defense-metric">
+                            <div>Sacks/game</div>
+                            <div class="defense-metric-value">{t1_def.get('avg_sacks_per_game', 0):.1f}</div>
+                        </div>
+                        <div class="defense-metric">
+                            <div>QB Hits/game</div>
+                            <div class="defense-metric-value">{t1_def.get('avg_qb_hits', 0):.1f}</div>
+                        </div>
+                        <div class="defense-metric">
+                            <div>Turnovers/game</div>
+                            <div class="defense-metric-value">{t1_def.get('avg_total_turnovers', 0):.1f}</div>
+                        </div>
+                    </div>
+                    <div class="defense-yards">
+                        <div class="defense-metric">
+                            <div>Avg Pass Yds Allowed</div>
+                            <div class="defense-metric-value">{t1_def.get('avg_pass_yards_allowed', 0):.1f}</div>
+                        </div>
+                        <div class="defense-metric">
+                            <div>Avg Rush Yds Allowed</div>
+                            <div class="defense-metric-value">{t1_def.get('avg_rush_yards_allowed', 0):.1f}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="defense-box">
+                    <div class="defense-title">{team2} Defense</div>
+                    <div class="defense-metrics">
+                        <div class="defense-metric">
+                            <div>Sacks/game</div>
+                            <div class="defense-metric-value">{t2_def.get('avg_sacks_per_game', 0):.1f}</div>
+                        </div>
+                        <div class="defense-metric">
+                            <div>QB Hits/game</div>
+                            <div class="defense-metric-value">{t2_def.get('avg_qb_hits', 0):.1f}</div>
+                        </div>
+                        <div class="defense-metric">
+                            <div>Turnovers/game</div>
+                            <div class="defense-metric-value">{t2_def.get('avg_total_turnovers', 0):.1f}</div>
+                        </div>
+                    </div>
+                    <div class="defense-yards">
+                        <div class="defense-metric">
+                            <div>Avg Pass Yds Allowed</div>
+                            <div class="defense-metric-value">{t2_def.get('avg_pass_yards_allowed', 0):.1f}</div>
+                        </div>
+                        <div class="defense-metric">
+                            <div>Avg Rush Yds Allowed</div>
+                            <div class="defense-metric-value">{t2_def.get('avg_rush_yards_allowed', 0):.1f}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+"""
+    
+    # Add top performers
+    if top_performers:
+        t1_top = top_performers.get('team1', pd.DataFrame())
+        t2_top = top_performers.get('team2', pd.DataFrame())
+        
+        html_content += f"""
+        <div class="section">
+            <h2>Top Performance Metrics</h2>
+            <div class="performance-grid">
+                <div>
+                    <div class="performance-title">{team1}</div>
+"""
+        if not t1_top.empty:
+            html_content += t1_top.to_html(classes='table', table_id='team1_top', escape=False, index=False)
+        else:
+            html_content += "<p>No skill-position data available</p>"
+        
+        html_content += f"""
+                </div>
+                <div>
+                    <div class="performance-title">{team2}</div>
+"""
+        if not t2_top.empty:
+            html_content += t2_top.to_html(classes='table', table_id='team2_top', escape=False, index=False)
+        else:
+            html_content += "<p>No skill-position data available</p>"
+        
+        html_content += """
+                </div>
+            </div>
+        </div>
+"""
+    
+    # Add pie charts
+    if pie_charts:
+        ats_chart = pie_charts.get('ats_chart')
+        ou_chart = pie_charts.get('ou_chart')
+        
+        html_content += f"""
+        <div class="section">
+            <h2>Betting Distribution Charts</h2>
+            <div class="chart-container">
+"""
+        if ats_chart:
+            # Update chart layout to be bigger
+            ats_chart.update_layout(
+                width=350,
+                height=350,
+                margin=dict(l=30, r=30, t=50, b=30),
+                showlegend=True,
+                legend=dict(x=1.05, y=0.5)
+            )
+            html_content += f"""
+                <div class="chart-item">
+                    {ats_chart.to_html(include_plotlyjs=False, div_id='ats_chart', config={'displayModeBar': False, 'responsive': False})}
+                </div>
+"""
+        if ou_chart:
+            # Update chart layout to be bigger
+            ou_chart.update_layout(
+                width=350,
+                height=350,
+                margin=dict(l=30, r=30, t=50, b=30),
+                showlegend=True,
+                legend=dict(x=1.05, y=0.5)
+            )
+            html_content += f"""
+                <div class="chart-item">
+                    {ou_chart.to_html(include_plotlyjs=False, div_id='ou_chart', config={'displayModeBar': False, 'responsive': False})}
+                </div>
+"""
+        
+        html_content += """
+            </div>
+        </div>
+"""
+    
+    # Add player sections
+    if historical_stats:
+        t1_stats = historical_stats.get('team1', pd.DataFrame())
+        t2_stats = historical_stats.get('team2', pd.DataFrame())
+        
+        # Team 1 players
+        if not t1_stats.empty:
+            html_content += f"""
+        <div class="player-section">
+            <div class="player-header">
+                <div class="team-logo">{team1}</div>
+                <div>{team1} Players</div>
+            </div>
+"""
+            # Process team 1 players
+            html_content += _generate_player_html(t1_stats, team1, team2)
+            html_content += """
+        </div>
+"""
+        
+        # Team 2 players
+        if not t2_stats.empty:
+            html_content += f"""
+        <div class="player-section">
+            <div class="player-header">
+                <div class="team-logo">{team2}</div>
+                <div>{team2} Players</div>
+            </div>
+"""
+            # Process team 2 players
+            html_content += _generate_player_html(t2_stats, team2, team1)
+            html_content += """
+        </div>
+"""
+    
+    # Close HTML
+    html_content += """
+    </div>
+</body>
+</html>
+"""
+    
+    return html_content
+
+def _generate_player_html(historical_df, team_name, opponent_name):
+    """Generate HTML for player section with expanded details."""
+    if historical_df.empty:
+        return f"<p>No historical stats found for {team_name} players vs {opponent_name}.</p>"
+    
+    # Use the same logic as show_condensed_players but generate HTML instead
+    base = historical_df.groupby('player_name_with_position').agg({
+        'game_id': 'nunique',
+        'fantasy_points_ppr': 'mean'
+    }).rename(columns={'game_id':'games','fantasy_points_ppr':'avg_fpts'}).reset_index()
+    
+    # Add receiving/passing/rushing means if available
+    if 'receiving_yards' in historical_df.columns:
+        rec = historical_df.groupby('player_name_with_position')['receiving_yards'].mean().reset_index().rename(columns={'receiving_yards':'avg_rec_yds'})
+        base = base.merge(rec, on='player_name_with_position', how='left')
+    else:
+        base['avg_rec_yds'] = 0.0
+    if 'passing_yards' in historical_df.columns:
+        pas = historical_df.groupby('player_name_with_position')['passing_yards'].mean().reset_index().rename(columns={'passing_yards':'avg_pass_yds'})
+        base = base.merge(pas, on='player_name_with_position', how='left')
+    else:
+        base['avg_pass_yds'] = 0.0
+    if 'rushing_yards' in historical_df.columns:
+        rush = historical_df.groupby('player_name_with_position')['rushing_yards'].mean().reset_index().rename(columns={'rushing_yards':'avg_rush_yds'})
+        base = base.merge(rush, on='player_name_with_position', how='left')
+    else:
+        base['avg_rush_yds'] = 0.0
+    
+    # Fix: Coerce TD columns to numeric BEFORE groupby sum
+    for tdcol in ['passing_tds', 'rushing_tds', 'receiving_tds']:
+        if tdcol in historical_df.columns:
+            historical_df[tdcol] = pd.to_numeric(historical_df[tdcol], errors='coerce').fillna(0)
+    
+    # add total TDs metrics
+    if 'passing_tds' in historical_df.columns:
+        pass_tds = historical_df.groupby('player_name_with_position')['passing_tds'].sum().reset_index().rename(columns={'passing_tds':'total_pass_tds'})
+        base = base.merge(pass_tds, on='player_name_with_position', how='left')
+    else:
+        base['total_pass_tds'] = 0
+    if 'receiving_tds' in historical_df.columns:
+        rec_tds = historical_df.groupby('player_name_with_position')['receiving_tds'].sum().reset_index().rename(columns={'receiving_tds':'total_rec_tds'})
+        base = base.merge(rec_tds, on='player_name_with_position', how='left')
+    else:
+        base['total_rec_tds'] = 0
+    if 'rushing_tds' in historical_df.columns:
+        rush_tds = historical_df.groupby('player_name_with_position')['rushing_tds'].sum().reset_index().rename(columns={'rushing_tds':'total_rush_tds'})
+        base = base.merge(rush_tds, on='player_name_with_position', how='left')
+    else:
+        base['total_rush_tds'] = 0
+
+    # Fill NaN values with 0 for TD columns
+    base['total_pass_tds'] = base['total_pass_tds'].fillna(0)
+    base['total_rec_tds'] = base['total_rec_tds'].fillna(0)
+    base['total_rush_tds'] = base['total_rush_tds'].fillna(0)
+    
+    # determine player position (most common) per player
+    pos_map = historical_df.groupby('player_name_with_position')['position'].agg(lambda s: s.mode().iloc[0] if not s.mode().empty else s.iloc[0]).reset_index().rename(columns={'position':'pos'})
+    base = base.merge(pos_map, on='player_name_with_position', how='left')
+    
+    # round numeric values for display
+    for c in ['avg_rec_yds','avg_pass_yds','avg_rush_yds','avg_fpts']:
+        base[c] = base[c].fillna(0).round(1)
+
+    # Choose primary metric per-player based on position
+    def pick_primary(row):
+        if row['pos'] == 'QB':
+            return row['avg_pass_yds'], 'Avg Pass Yds'
+        elif row['pos'] in ('RB', 'FB'):
+            return row['avg_rush_yds'], 'Avg Rush Yds'
+        else:
+            return row['avg_rec_yds'], 'Avg Rec Yds'
+    
+    # Choose primary TD metric per-player based on position
+    def pick_primary_tds(row):
+        if row['pos'] == 'QB':
+            return int(row['total_pass_tds']), 'Total Pass TDs'
+        elif row['pos'] in ('RB', 'FB'):
+            return int(row['total_rush_tds']), 'Total Rush TDs'
+        else:
+            return int(row['total_rec_tds']), 'Total Rec TDs'
+
+    prim_vals = base.apply(lambda r: pick_primary(r), axis=1)
+    base['primary_val'] = [v for v,_ in prim_vals]
+    base['primary_label'] = [lbl for _,lbl in prim_vals]
+    
+    prim_tds = base.apply(lambda r: pick_primary_tds(r), axis=1)
+    base['primary_tds'] = [v for v,_ in prim_tds]
+    base['primary_tds_label'] = [lbl for _,lbl in prim_tds]
+
+    # include position and sort by position priority (QB, RB, WR, TE), then by games and primary metric
+    display_df = base[['player_name_with_position','pos','games','primary_tds','primary_val','avg_fpts','primary_label','primary_tds_label']].copy()
+    pos_priority = {'QB': 0, 'WR': 1, 'TE': 2, 'RB': 3}
+    display_df['pos_order'] = display_df['pos'].map(lambda p: pos_priority.get(p, 4))
+    display_df = display_df.sort_values(['pos_order','games','primary_val'], ascending=[True, False, False]).reset_index(drop=True)
+    display_df = display_df[['player_name_with_position','games','primary_tds','primary_val','avg_fpts','primary_label','primary_tds_label','pos','pos_order']]
+    display_df.columns = ['Player','Games','Primary TDs','Primary','Avg FPTS','Primary Label','Primary TDs Label','Pos','Pos Order']
+
+    # Generate summary table HTML
+    summary_html = display_df[['Player','Pos','Games','Avg FPTS']].to_html(classes='table', escape=False, index=False)
+    
+    html_content = f"""
+            <div class="player-summary">
+                {summary_html}
+            </div>
+"""
+    
+    # Generate individual player details
+    for _, row in display_df.iterrows():
+        pname = row['Player']
+        ppos = row['Pos'] if 'Pos' in row else None
+        
+        # Get player games
+        player_games = historical_df[historical_df['player_name_with_position'] == pname].sort_values('date', ascending=False).copy()
+        
+        # Generate metrics HTML
+        if ppos in ('RB', 'FB'):
+            this_games = historical_df[historical_df['player_name_with_position'] == pname]
+            rush_tds_sum = int(this_games['rushing_tds'].sum()) if 'rushing_tds' in this_games.columns else 0
+            rec_tds_sum = int(this_games['receiving_tds'].sum()) if 'receiving_tds' in this_games.columns else 0
+            
+            metrics_html = f"""
+                <div class="player-metrics">
+                    <div class="player-metric">
+                        <div class="player-metric-value">{int(row['Games'])}</div>
+                        <div class="player-metric-label">Games</div>
+                    </div>
+                    <div class="player-metric">
+                        <div class="player-metric-value">{rush_tds_sum}</div>
+                        <div class="player-metric-label">Total Rush TDs</div>
+                    </div>
+                    <div class="player-metric">
+                        <div class="player-metric-value">{rec_tds_sum}</div>
+                        <div class="player-metric-label">Total Rec TDs</div>
+                    </div>
+                    <div class="player-metric">
+                        <div class="player-metric-value">{row['Avg FPTS']}</div>
+                        <div class="player-metric-label">Avg FPTS</div>
+                    </div>
+                </div>
+"""
+        else:
+            metrics_html = f"""
+                <div class="player-metrics">
+                    <div class="player-metric">
+                        <div class="player-metric-value">{int(row['Games'])}</div>
+                        <div class="player-metric-label">Games</div>
+                    </div>
+                    <div class="player-metric">
+                        <div class="player-metric-value">{int(row['Primary TDs'])}</div>
+                        <div class="player-metric-label">{row['Primary TDs Label']}</div>
+                    </div>
+                    <div class="player-metric">
+                        <div class="player-metric-value">{row['Primary']}</div>
+                        <div class="player-metric-label">{row['Primary Label']}</div>
+                    </div>
+                    <div class="player-metric">
+                        <div class="player-metric-value">{row['Avg FPTS']}</div>
+                        <div class="player-metric-label">Avg FPTS</div>
+                    </div>
+                </div>
+"""
+        
+        # Generate game-by-game table
+        id_cols = ['season','week','home_team','away_team']
+        if isinstance(ppos, str) and ppos.upper() == 'QB':
+            qb_cols = ['completions','attempts','passing_yards','passing_tds','interceptions','sacks',
+                       'carries','rushing_yards','rushing_tds']
+            metric_cols = id_cols + qb_cols
+        else:
+            pos_upper = (ppos or '').upper() if isinstance(ppos, str) else ''
+            if pos_upper == 'WR':
+                sk_cols = ['receiving_yards', 'receiving_tds', 'targets', 'receptions']
+            elif pos_upper in ('RB','FB'):
+                sk_cols = ['rushing_yards','rushing_tds', 'carries',
+                           'receiving_yards','receiving_tds', 'receptions','targets']
+            else:
+                sk_cols = ['receiving_yards', 'receiving_tds', 'targets', 'receptions']
+            metric_cols = id_cols + sk_cols
+        
+        available_cols = [c for c in metric_cols if c in player_games.columns]
+        display_games = player_games[available_cols].copy()
+        if 'season' in display_games.columns:
+            display_games['season'] = display_games['season'].astype(int)
+        
+        games_table_html = display_games.to_html(classes='table', escape=False, index=False)
+        
+        html_content += f"""
+            <div class="player-detail">
+                <input type="checkbox" id="player_{hash(pname)}">
+                <label for="player_{hash(pname)}" class="player-name">{pname}</label>
+                <div class="player-content">
+                    {metrics_html}
+                    {games_table_html}
+                </div>
+            </div>
+"""
+    
+    return html_content
 
 # --------------- Betting/handicapping helpers ---------------
 
@@ -888,6 +1639,44 @@ with col2:
             st.session_state['rg_team2'] = team2
             st.session_state['rg_hist_team1'] = historical_stats_team1
             st.session_state['rg_hist_team2'] = historical_stats_team2
+            
+            # Store comprehensive report data for HTML download
+            report_data = {
+                'summary_stats': {
+                    'games_analyzed': len(last_10_games),
+                    'team1_wins': team1_wins,
+                    'team2_wins': team2_wins,
+                    'winning_streak': streak,
+                    'winner_team': winner_team,
+                    'team1_ppg': team1_ppg,
+                    'team2_ppg': team2_ppg,
+                    'avg_total_points': average_total_points,
+                    'over_50_games': over_50_points_games
+                },
+                'h2h_betting': {
+                    'team1_ats': h2h['team1_ats'],
+                    'team2_ats': h2h['team2_ats'],
+                    'ou': h2h['ou'],
+                    'fav_dog': h2h['fav_dog']
+                },
+                'defense_data': {
+                    'team1': t1_def_early,
+                    'team2': t2_def_early
+                },
+                'top_performers': {
+                    'team1': t1_top,
+                    'team2': t2_top
+                },
+                'pie_charts': {
+                    'ats_chart': pie_ats if (ats_t1_w + h2h['team2_ats'][0] + ats_push) > 0 else None,
+                    'ou_chart': pie_ou if (ou_over + ou_under + ou_push) > 0 else None
+                },
+                'historical_stats': {
+                    'team1': historical_stats_team1,
+                    'team2': historical_stats_team2
+                }
+            }
+            st.session_state['rg_report_data'] = report_data
 
 # Full-width Player sections (rendered outside the centered column)
 if all(k in st.session_state for k in ['rg_hist_team1','rg_hist_team2','rg_team1','rg_team2']):
@@ -907,3 +1696,28 @@ if all(k in st.session_state for k in ['rg_hist_team1','rg_hist_team2','rg_team1
         with row_title:
             st.markdown(f"<span style='font-size:2.2rem; font-weight:bold; vertical-align:middle; display:inline-block; margin-left:8px;'>{st.session_state['rg_team2']} Players</span>", unsafe_allow_html=True)
         show_condensed_players(st.session_state['rg_hist_team2'], st.session_state['rg_team2'], st.session_state['rg_team1'])
+
+# Add download button at the bottom
+if all(k in st.session_state for k in ['rg_report_data', 'rg_team1', 'rg_team2']):
+    st.write("")
+    st.divider()
+    
+    # Center the download button
+    dl_col1, dl_col2, dl_col3 = st.columns([1, 0.4, 1])
+    with dl_col2:
+        # Generate HTML report
+        html_content = generate_html_report(
+            st.session_state['rg_team1'], 
+            st.session_state['rg_team2'], 
+            st.session_state['rg_report_data']
+        )
+        
+        # Create download button
+        st.download_button(
+            label="📄 Download Report as HTML",
+            data=html_content,
+            file_name=f"{st.session_state['rg_team1']}_vs_{st.session_state['rg_team2']}_matchup_report.html",
+            mime="text/html",
+            use_container_width=True,
+            type='primary'
+        )
