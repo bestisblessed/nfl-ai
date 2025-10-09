@@ -7,7 +7,7 @@ import plotly.express as px
 st.set_page_config(
     page_title="📄 Report Generator",
     page_icon="📄",
-    layout="centered"   
+    layout="wide"   
 )
 
 st.markdown(
@@ -33,8 +33,86 @@ else:
     df_games = st.session_state['df_games'] 
     df_playerstats = st.session_state['df_playerstats']
 
-# Center the top section
-col1, col2, col3 = st.columns([0.1, 2, 0.1]) # Adjust ratios for less padding
+# Helper functions (module scope) so they can be used anywhere on the page
+def sort_by_position(df):
+    position_order = {'QB': 1, 'WR': 2, 'TE': 3, 'RB': 4}
+    df = df.copy()
+    df.loc[:, 'position_order'] = df['position'].map(position_order)
+    return df.sort_values(by='position_order').drop(columns=['position_order'])
+
+def show_condensed_players(historical_df, team_name, opponent_name):
+    if historical_df.empty:
+        st.write(f"No historical stats found for {team_name} players vs {opponent_name}.")
+        return
+
+    # compute summary metrics: Games, Avg Rec Yds, Avg FPTS, plus pass/rush means if present
+    base = historical_df.groupby('player_name_with_position').agg({
+        'game_id': 'nunique',
+        'fantasy_points_ppr': 'mean'
+    }).rename(columns={'game_id':'games','fantasy_points_ppr':'avg_fpts'}).reset_index()
+    # add receiving/passing/rushing means if available
+    if 'receiving_yards' in historical_df.columns:
+        rec = historical_df.groupby('player_name_with_position')['receiving_yards'].mean().reset_index().rename(columns={'receiving_yards':'avg_rec_yds'})
+        base = base.merge(rec, on='player_name_with_position', how='left')
+    else:
+        base['avg_rec_yds'] = 0.0
+    if 'passing_yards' in historical_df.columns:
+        pas = historical_df.groupby('player_name_with_position')['passing_yards'].mean().reset_index().rename(columns={'passing_yards':'avg_pass_yds'})
+        base = base.merge(pas, on='player_name_with_position', how='left')
+    else:
+        base['avg_pass_yds'] = 0.0
+    if 'rushing_yards' in historical_df.columns:
+        rush = historical_df.groupby('player_name_with_position')['rushing_yards'].mean().reset_index().rename(columns={'rushing_yards':'avg_rush_yds'})
+        base = base.merge(rush, on='player_name_with_position', how='left')
+    else:
+        base['avg_rush_yds'] = 0.0
+    # determine player position (most common) per player
+    pos_map = historical_df.groupby('player_name_with_position')['position'].agg(lambda s: s.mode().iloc[0] if not s.mode().empty else s.iloc[0]).reset_index().rename(columns={'position':'pos'})
+    base = base.merge(pos_map, on='player_name_with_position', how='left')
+    # round numeric values for display
+    for c in ['avg_rec_yds','avg_pass_yds','avg_rush_yds','avg_fpts']:
+        base[c] = base[c].fillna(0).round(1)
+
+    # Choose primary metric per-player based on position
+    def pick_primary(row):
+        # Treat Fullbacks (FB) as RBs for rushing yards priority
+        if row['pos'] == 'QB':
+            return row['avg_pass_yds'], 'Avg Pass Yds'
+        elif row['pos'] in ('RB', 'FB'):
+            return row['avg_rush_yds'], 'Avg Rush Yds'
+        else:
+            return row['avg_rec_yds'], 'Avg Rec Yds'
+
+    prim_vals = base.apply(lambda r: pick_primary(r), axis=1)
+    base['primary_val'] = [v for v,_ in prim_vals]
+    base['primary_label'] = [lbl for _,lbl in prim_vals]
+
+    # include position and sort by position priority (QB, RB, WR, TE), then by games and primary metric
+    display_df = base[['player_name_with_position','pos','games','primary_val','avg_fpts','primary_label']].copy()
+    pos_priority = {'QB': 0, 'WR': 1, 'TE': 2, 'RB': 3}
+    display_df['pos_order'] = display_df['pos'].map(lambda p: pos_priority.get(p, 4))
+    display_df = display_df.sort_values(['pos_order','games','primary_val'], ascending=[True, False, False]).reset_index(drop=True)
+    display_df = display_df[['player_name_with_position','games','primary_val','avg_fpts','primary_label','pos','pos_order']]
+    display_df.columns = ['Player','Games','Primary','Avg FPTS','Primary Label','Pos','Pos Order']
+
+    with st.container():
+        st.subheader(f"**{team_name} Players**")
+        st.dataframe(display_df[['Player','Pos','Games','Primary','Avg FPTS']], use_container_width=True, hide_index=True)
+        for _, row in display_df.iterrows():
+            pname = row['Player']
+            with st.expander(pname, expanded=False):
+                c1, c2, c3 = st.columns([1,1,1])
+                c1.metric("Games", int(row['Games']))
+                primary_label = row['Primary Label']
+                c2.metric(primary_label, row['Primary'])
+                c3.metric("Avg FPTS", row['Avg FPTS'])
+                player_games = historical_df[historical_df['player_name_with_position'] == pname].sort_values('date', ascending=False).copy()
+                metric_cols = ['season','week','game_id','date','home_team','away_team','receptions','targets','receiving_yards','receiving_tds','carries','rushing_yards','fantasy_points_ppr','passing_yards']
+                available_cols = [c for c in metric_cols if c in player_games.columns]
+                st.dataframe(player_games[available_cols], use_container_width=True, height=260, hide_index=True)
+
+# Center the top section (narrower middle column)
+col1, col2, col3 = st.columns([0.2, 1.5, 0.2]) # Middle ~60% width
 with col2:
     # Team selection using selectbox with unique teams
     unique_teams = sorted(df_games['home_team'].unique())
@@ -128,95 +206,17 @@ with col2:
                 historical_stats_team2 = historical_stats_team2.copy()
                 historical_stats_team2.loc[:, 'player_name_with_position'] = historical_stats_team2['player_display_name'] + " (" + historical_stats_team2['position'] + ")"
 
-            # Function to order by position
-            def sort_by_position(df):
-                position_order = {'QB': 1, 'WR': 2, 'TE': 3, 'RB': 4}
-                df = df.copy()
-                df.loc[:, 'position_order'] = df['position'].map(position_order)
-                return df.sort_values(by='position_order').drop(columns=['position_order'])
+            # Save results to session state for full-width render below
+            st.session_state['rg_team1'] = team1
+            st.session_state['rg_team2'] = team2
+            st.session_state['rg_hist_team1'] = historical_stats_team1
+            st.session_state['rg_hist_team2'] = historical_stats_team2
 
-            # Condensed player tables with per-player expanders
-            def show_condensed_players(historical_df, team_name, opponent_name):
-                if historical_df.empty:
-                    st.write(f"No historical stats found for {team_name} players vs {opponent_name}.")
-                    return
-
-                # compute summary metrics: Games, Avg Rec Yds, Avg FPTS, plus pass/rush means if present
-                base = historical_df.groupby('player_name_with_position').agg({
-                    'game_id': 'nunique',
-                    'fantasy_points_ppr': 'mean'
-                }).rename(columns={'game_id':'games','fantasy_points_ppr':'avg_fpts'}).reset_index()
-                # add receiving/passing/rushing means if available
-                if 'receiving_yards' in historical_df.columns:
-                    rec = historical_df.groupby('player_name_with_position')['receiving_yards'].mean().reset_index().rename(columns={'receiving_yards':'avg_rec_yds'})
-                    base = base.merge(rec, on='player_name_with_position', how='left')
-                else:
-                    base['avg_rec_yds'] = 0.0
-                if 'passing_yards' in historical_df.columns:
-                    pas = historical_df.groupby('player_name_with_position')['passing_yards'].mean().reset_index().rename(columns={'passing_yards':'avg_pass_yds'})
-                    base = base.merge(pas, on='player_name_with_position', how='left')
-                else:
-                    base['avg_pass_yds'] = 0.0
-                if 'rushing_yards' in historical_df.columns:
-                    rush = historical_df.groupby('player_name_with_position')['rushing_yards'].mean().reset_index().rename(columns={'rushing_yards':'avg_rush_yds'})
-                    base = base.merge(rush, on='player_name_with_position', how='left')
-                else:
-                    base['avg_rush_yds'] = 0.0
-                # determine player position (most common) per player
-                pos_map = historical_df.groupby('player_name_with_position')['position'].agg(lambda s: s.mode().iloc[0] if not s.mode().empty else s.iloc[0]).reset_index().rename(columns={'position':'pos'})
-                base = base.merge(pos_map, on='player_name_with_position', how='left')
-                # round numeric values for display
-                for c in ['avg_rec_yds','avg_pass_yds','avg_rush_yds','avg_fpts']:
-                    base[c] = base[c].fillna(0).round(1)
-
-                # Choose primary metric per-player based on position
-                def pick_primary(row):
-                    # Treat Fullbacks (FB) as RBs for rushing yards priority
-                    if row['pos'] == 'QB':
-                        return row['avg_pass_yds'], 'Avg Pass Yds'
-                    elif row['pos'] in ('RB', 'FB'):
-                        return row['avg_rush_yds'], 'Avg Rush Yds'
-                    else:
-                        return row['avg_rec_yds'], 'Avg Rec Yds'
-
-                prim_vals = base.apply(lambda r: pick_primary(r), axis=1)
-                base['primary_val'] = [v for v,_ in prim_vals]
-                base['primary_label'] = [lbl for _,lbl in prim_vals]
-
-                # include position and sort by position priority (QB, RB, WR, TE), then by games and primary metric
-                display_df = base[['player_name_with_position','pos','games','primary_val','avg_fpts','primary_label']].copy()
-                pos_priority = {'QB': 0, 'RB': 1, 'WR': 2, 'TE': 3}
-                display_df['pos_order'] = display_df['pos'].map(lambda p: pos_priority.get(p, 4))
-                display_df = display_df.sort_values(['pos_order','games','primary_val'], ascending=[True, False, False]).reset_index(drop=True)
-                display_df = display_df[['player_name_with_position','games','primary_val','avg_fpts','primary_label','pos','pos_order']]
-                display_df.columns = ['Player','Games','Primary','Avg FPTS','Primary Label','Pos','Pos Order']
-
-
-                with st.container(): # Use a container to group elements for consistent width
-                    st.subheader(f"**{team_name} Players**")
-                    # show condensed table (Pos order applied)
-                    st.dataframe(display_df[['Player','Pos','Games','Primary','Avg FPTS']], use_container_width=True, hide_index=True)
-
-                    # Create expanders for each player showing metrics and the per-game rows
-                    for _, row in display_df.iterrows():
-                        pname = row['Player']
-                        with st.expander(pname, expanded=False):
-                            # show Games, primary metric with label, and Avg FPTS using st.metric
-                            c1, c2, c3 = st.columns([1,1,1])
-                            c1.metric("Games", int(row['Games']))
-                            # primary label per player
-                            primary_label = row['Primary Label']
-                            c2.metric(primary_label, row['Primary'])
-                            c3.metric("Avg FPTS", row['Avg FPTS'])
-                            # player game-by-game rows
-                            player_games = historical_df[historical_df['player_name_with_position'] == pname].sort_values('date', ascending=False).copy()
-                            metric_cols = ['season','week','game_id','date','home_team','away_team','receptions','targets','receiving_yards','receiving_tds','carries','rushing_yards','fantasy_points_ppr','passing_yards']
-                            available_cols = [c for c in metric_cols if c in player_games.columns]
-                            st.dataframe(player_games[available_cols], use_container_width=True, height=260, hide_index=True)
-
-        # Show condensed tables for both teams
-        col1, col2 = st.columns(2)
-        with col1:
-            show_condensed_players(historical_stats_team1, team1, team2)
-        with col2:
-            show_condensed_players(historical_stats_team2, team2, team1)
+# Full-width Player sections (rendered outside the centered column)
+if all(k in st.session_state for k in ['rg_hist_team1','rg_hist_team2','rg_team1','rg_team2']):
+    st.divider()
+    a, b = st.columns(2)
+    with a:
+        show_condensed_players(st.session_state['rg_hist_team1'], st.session_state['rg_team1'], st.session_state['rg_team2'])
+    with b:
+        show_condensed_players(st.session_state['rg_hist_team2'], st.session_state['rg_team2'], st.session_state['rg_team1'])
