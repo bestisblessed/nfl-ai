@@ -30,6 +30,33 @@ st.set_page_config(
     layout="wide"   
 )
 
+# Global responsive styles for this page
+st.markdown(
+    """
+    <style>
+      /* Constrain overall content width and center it */
+      .block-container {
+        max-width: 1200px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin: 0 auto;
+      }
+
+      /* Ensure Plotly charts always fill their container */
+      [data-testid="stPlotlyChart"] > div {
+        width: 100% !important;
+      }
+
+      /* Reduce excessive side padding on narrow screens */
+      @media (max-width: 1100px) {
+        h1 { font-size: 1.8rem; }
+        .stButton > button { width: 100%; }
+      }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
 st.markdown(
     """
     <div style="text-align: center;">
@@ -41,7 +68,7 @@ st.markdown(
 st.write("")
 col1, col2, col3 = st.columns([1, 2, 1])
 with col2:
-    st.code("Select two teams to generate a detailed matchup report with head-to-head team trends and player stats.")
+    st.caption("Select two teams to generate a detailed matchup report with head-to-head team trends and player stats.")
 
 st.write("")
 # st.divider()
@@ -1431,27 +1458,26 @@ def compute_recent_form(df_games: pd.DataFrame, team: str, n: int = 8) -> dict:
 # Clear any stale report results on page load so returning to this page doesn't show previous player tables
 _reset_report_results()
 
-# Center the top section (narrower middle column)
-col1, col2, col3 = st.columns([0.2, .5, 0.2]) # Middle ~60% width
-with col2:
-    # Team selection using selectbox with unique teams
-    unique_teams = sorted(df_games['home_team'].unique())
-    left_team_col, spacer_mid, right_team_col = st.columns([1, 0.0001, 1])
-    with left_team_col:
-        team1 = st.selectbox('Select Team 1:', options=unique_teams, index=unique_teams.index('BUF'), key='team1_select', on_change=_reset_report_results)
-    with right_team_col:
-        team2 = st.selectbox('Select Team 2:', options=unique_teams, index=unique_teams.index('MIA'), key='team2_select', on_change=_reset_report_results)
+# Selection controls (full-width, responsive)
+# Team selection using selectbox with unique teams
+unique_teams = sorted(df_games['home_team'].unique())
+left_team_col, right_team_col = st.columns(2, gap="large")
+with left_team_col:
+    team1 = st.selectbox('Select Team 1:', options=unique_teams, index=unique_teams.index('BUF'), key='team1_select', on_change=_reset_report_results)
+with right_team_col:
+    team2 = st.selectbox('Select Team 2:', options=unique_teams, index=unique_teams.index('MIA'), key='team2_select', on_change=_reset_report_results)
 
-    # Center the generate button
-    btn_c1, btn_c2, btn_c3 = st.columns([1, 0.4, 1])
-    with btn_c2:
-        generate_clicked = st.button('Generate Report', use_container_width=True)
+# Center the generate button without fixed ratios
+generate_clicked = False
+btn_c1, btn_c2, btn_c3 = st.columns([1, 1, 1])
+with btn_c2:
+    generate_clicked = st.button('Generate Report', use_container_width=True)
 
-    # Auto-generate only for the default matchup when selections are BUF vs MIA
-    if team1 == 'BUF' and team2 == 'MIA':
-        generate_clicked = True
+# Auto-generate only for the default matchup when selections are BUF vs MIA
+if team1 == 'BUF' and team2 == 'MIA':
+    generate_clicked = True
 
-    if generate_clicked:
+if generate_clicked:
         
         # Filter for recent matchups between the two teams (already sorted by date, most recent first)
         team_matchups = df_games[((df_games['home_team'] == team1) & (df_games['away_team'] == team2)) |
@@ -1520,7 +1546,6 @@ with col2:
 </div>
 '''
             st.markdown(stats_md2, unsafe_allow_html=True)
-            # st.divider()
 
             # -------------------- Head-to-Head ATS & Totals --------------------
             st.write("")
@@ -1784,8 +1809,8 @@ if all(k in st.session_state for k in ['rg_team1', 'rg_team2']):
     if (isinstance(df_defense_logs, pd.DataFrame) and not df_defense_logs.empty) or (isinstance(df_team_game_logs, pd.DataFrame) and not df_team_game_logs.empty):
         st.write("")
         # st.divider()
-        # left_pad, dcol1_early, dcol2_early, right_pad = st.columns([0.5, 2.5, 2.5, 0.5])
-        left_pad, dcol1_early, dcol2_early, right_pad = st.columns([1, 2.8, 2.8, 1])
+        # Defensive metrics two-column layout (responsive)
+        dcol1_early, dcol2_early = st.columns(2, gap="large")
         t1_def_early = calculate_defense_summary(df_defense_logs, df_team_game_logs, team1, last_n_games=10, df_games_ctx=df_games)
         t2_def_early = calculate_defense_summary(df_defense_logs, df_team_game_logs, team2, last_n_games=10, df_games_ctx=df_games)
         with dcol1_early:
@@ -1878,7 +1903,8 @@ if all(k in st.session_state for k in ['rg_team1', 'rg_team2']):
     # ---------- Top Performance Metrics (Full Width) ----------
     st.write("")
     st.write("")
-    left_pad, top_left, spacer, top_right, right_pad = st.columns([1.5, 2.8, 0.2, 2.8, 1.5])
+    # Top performance metrics (two equal columns)
+    top_left, top_right = st.columns(2, gap="large")
     with top_left:
         st.markdown(f"<div style='text-align:center; font-weight:bold;'>Top Performance Metrics — {team1}</div>", unsafe_allow_html=True)
         st.write(" ")
@@ -1899,7 +1925,8 @@ if all(k in st.session_state for k in ['rg_team1', 'rg_team2']):
     # ---------- Red Zone Targets (Full Width) ----------
     st.write("")
     st.write("")
-    left_pad, rz_left, spacer, rz_right, right_pad = st.columns([1.5, 2.8, 0.2, 2.8, 1.5])
+    # Red zone targets (two equal columns)
+    rz_left, rz_right = st.columns(2, gap="large")
     with rz_left:
         st.markdown(f"<div style='text-align:center; font-weight:bold;'>Red Zone Targets (2025) — {team1}</div>", unsafe_allow_html=True)
         st.write(" ")
@@ -1920,7 +1947,8 @@ if all(k in st.session_state for k in ['rg_team1', 'rg_team2']):
 # Full-width Player sections (rendered outside the centered column)
 if all(k in st.session_state for k in ['rg_hist_team1','rg_hist_team2','rg_team1','rg_team2']):
     st.divider()
-    left_pad, a, b, right_pad = st.columns([0.1, 2.8, 2.8, 0.1])
+    # Player sections (two equal columns)
+    a, b = st.columns(2, gap="large")
     with a:
         row_logo, row_title = st.columns([0.1, 0.88])
         with row_logo:
@@ -1943,7 +1971,7 @@ if all(k in st.session_state for k in ['rg_report_data', 'rg_team1', 'rg_team2']
     # st.divider()
     
     # Center the download button
-    dl_col1, dl_col2, dl_col3 = st.columns([1, 0.4, 1])
+    dl_col1, dl_col2, dl_col3 = st.columns([1, 1, 1])
     with dl_col2:
         # Generate HTML report
         html_content = generate_html_report(
