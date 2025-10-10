@@ -1757,7 +1757,7 @@ with col2:
             st.write("")
             rz_left, spacer_mid_rz, rz_right = st.columns([1.4, 0.05, 1.4])
             with rz_left:
-                st.markdown(f"<div style='text-align:center; font-weight:bold;'>Red-Zone Targets — {team1}</div>", unsafe_allow_html=True)
+                st.markdown(f"<div style='text-align:center; font-weight:bold;'>Red Zone Targets (2025) — {team1}</div>", unsafe_allow_html=True)
                 st.write(" ")
                 rz_t1 = get_redzone_targets(df_redzone, team1, year=2025)
                 if not rz_t1.empty:
@@ -1765,7 +1765,7 @@ with col2:
                 else:
                     st.write("No red-zone data available")
             with rz_right:
-                st.markdown(f"<div style='text-align:center; font-weight:bold;'>Red-Zone Targets — {team2}</div>", unsafe_allow_html=True)
+                st.markdown(f"<div style='text-align:center; font-weight:bold;'>Red Zone Targets (2025) — {team2}</div>", unsafe_allow_html=True)
                 st.write(" ")
                 rz_t2 = get_redzone_targets(df_redzone, team2, year=2025)
                 if not rz_t2.empty:
