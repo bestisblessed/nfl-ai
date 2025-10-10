@@ -39,7 +39,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 st.write("")
-col1, col2, col3 = st.columns([1, 1.79, 1])
+col1, col2, col3 = st.columns([1, 2, 1])
 with col2:
     st.code("Select two teams to generate a detailed matchup report with head-to-head team trends and player stats.")
 
@@ -1564,7 +1564,6 @@ with col2:
                 show_df = pd.concat([games[['game_id_display','home_team','away_team','home_score','away_score','total_line','team_favorite']], outcomes], axis=1)
                 show_df.rename(columns={'total_line':'Total Line','team_favorite':'Favorite','game_id_display':'game_id'}, inplace=True)
 
-                # st.write("")
                 with st.expander("Per-game results", expanded=False):
                     df_display = show_df.copy()
                     cols = ['game_id','home_team','away_team','home_score','away_score','Favorite','Total Line','O/U Result', f'{team1} Spread', f'{team1} ATS', f'{team2} Spread', f'{team2} ATS']
@@ -1577,7 +1576,6 @@ with col2:
                     # )
 
             # ---------- Pie Charts ----------
-            st.write("")
             cpie1, cpie2 = st.columns(2)
             if (ats_t1_w + h2h['team2_ats'][0] + ats_push) > 0:
                 pie_ats = px.pie(
@@ -1587,6 +1585,18 @@ with col2:
                     hole=0.45,
                     color_discrete_sequence=[get_team_color(team1), get_team_color(team2), PUSH_GRAY]
                 )
+                # Legend on the left for left chart
+                pie_ats.update_layout(
+                    showlegend=True,
+                    title_x=0.39,  # Shift title left to center over donut hole
+                    legend=dict(
+                        orientation="v",
+                        yanchor="middle",
+                        y=0.5,
+                        xanchor="right",
+                        x=-0.1
+                    )
+                )
                 cpie1.plotly_chart(pie_ats, use_container_width=True)
             if (ou_over + ou_under + ou_push) > 0:
                 pie_ou = px.pie(
@@ -1595,6 +1605,18 @@ with col2:
                     title="Head-to-Head Totals (O/U)",
                     hole=0.45,
                     color_discrete_sequence=[NFL_BLUE, NFL_RED, PUSH_GRAY]
+                )
+                # Legend on the right for right chart
+                pie_ou.update_layout(
+                    showlegend=True,
+                    title_x=0.19,  # Shift title left to center over donut hole
+                    legend=dict(
+                        orientation="v",
+                        yanchor="middle",
+                        y=0.5,
+                        xanchor="left",
+                        x=1.02
+                    )
                 )
                 cpie2.plotly_chart(pie_ou, use_container_width=True)
 
