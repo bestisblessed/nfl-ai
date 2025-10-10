@@ -30,8 +30,38 @@ st.set_page_config(
     layout="wide"   
 )
 
+# Add responsive CSS for better layout at different zoom levels
 st.markdown(
     """
+    <style>
+    /* Ensure containers are responsive */
+    .stApp > div > div > div {
+        max-width: 100%;
+    }
+    
+    /* Fix plotly chart responsiveness */
+    .js-plotly-plot {
+        width: 100% !important;
+    }
+    
+    /* Ensure tables are responsive */
+    .dataframe {
+        width: 100% !important;
+    }
+    
+    /* Better spacing for columns */
+    [data-testid="stHorizontalBlock"] {
+        gap: 1rem;
+    }
+    
+    /* Responsive text sizing */
+    @media (max-width: 768px) {
+        h1 { font-size: 1.8rem !important; }
+        h2 { font-size: 1.4rem !important; }
+        .stMetric { font-size: 0.9rem !important; }
+    }
+    </style>
+    
     <div style="text-align: center;">
         <h1>Matchup Report Generator</h1>
     </div>
@@ -39,9 +69,10 @@ st.markdown(
     unsafe_allow_html=True
 )
 st.write("")
-col1, col2, col3 = st.columns([1, 2, 1])
+# Use responsive columns with better ratios
+col1, col2, col3 = st.columns([1, 3, 1])
 with col2:
-    st.code("Select two teams to generate a detailed matchup report with head-to-head team trends and player stats.")
+    st.info("Select two teams to generate a detailed matchup report with head-to-head team trends and player stats.")
 
 st.write("")
 # st.divider()
@@ -1431,19 +1462,19 @@ def compute_recent_form(df_games: pd.DataFrame, team: str, n: int = 8) -> dict:
 # Clear any stale report results on page load so returning to this page doesn't show previous player tables
 _reset_report_results()
 
-# Center the top section (narrower middle column)
-col1, col2, col3 = st.columns([0.2, .5, 0.2]) # Middle ~60% width
+# Center the top section with responsive columns
+col1, col2, col3 = st.columns([1, 3, 1]) # Better responsive ratio
 with col2:
     # Team selection using selectbox with unique teams
     unique_teams = sorted(df_games['home_team'].unique())
-    left_team_col, spacer_mid, right_team_col = st.columns([1, 0.0001, 1])
+    left_team_col, spacer_mid, right_team_col = st.columns([1, 0.1, 1])
     with left_team_col:
         team1 = st.selectbox('Select Team 1:', options=unique_teams, index=unique_teams.index('BUF'), key='team1_select', on_change=_reset_report_results)
     with right_team_col:
         team2 = st.selectbox('Select Team 2:', options=unique_teams, index=unique_teams.index('MIA'), key='team2_select', on_change=_reset_report_results)
 
     # Center the generate button
-    btn_c1, btn_c2, btn_c3 = st.columns([1, 0.4, 1])
+    btn_c1, btn_c2, btn_c3 = st.columns([1, 1, 1])
     with btn_c2:
         generate_clicked = st.button('Generate Report', use_container_width=True)
 
@@ -1533,22 +1564,22 @@ with col2:
             html_bets = f"""
             <div style='{box_style_bets}'>
               <div style='text-align:center; font-weight:600; margin-bottom:12px;'>Head-to-Head Betting</div>
-              <div style='display:flex; gap:10px; justify-content:space-between;'>
-                <div style='flex:1; text-align:center;'>
-                  <div style='font-size:1.05rem;'>ATS: {team1}</div>
-                  <div style='font-weight:800; font-size:1.35rem;'>{ats_t1_w}-{ats_t1_l}-{ats_push}</div>
+              <div style='display:flex; flex-wrap:wrap; gap:15px; justify-content:space-around;'>
+                <div style='flex:1 1 150px; text-align:center; min-width:120px;'>
+                  <div style='font-size:1rem;'>ATS: {team1}</div>
+                  <div style='font-weight:800; font-size:1.25rem;'>{ats_t1_w}-{ats_t1_l}-{ats_push}</div>
                 </div>
-                <div style='flex:1; text-align:center;'>
-                  <div style='font-size:1.05rem;'>ATS: {team2}</div>
-                  <div style='font-weight:800; font-size:1.35rem;'>{ats_t2_w}-{ats_t2_l}-{ats_t2_p}</div>
+                <div style='flex:1 1 150px; text-align:center; min-width:120px;'>
+                  <div style='font-size:1rem;'>ATS: {team2}</div>
+                  <div style='font-weight:800; font-size:1.25rem;'>{ats_t2_w}-{ats_t2_l}-{ats_t2_p}</div>
                 </div>
-                <div style='flex:1; text-align:center;'>
-                  <div style='font-size:1.05rem;'>Totals (O-U-P)</div>
-                  <div style='font-weight:800; font-size:1.35rem;'>{ou_over}-{ou_under}-{ou_push}</div>
+                <div style='flex:1 1 150px; text-align:center; min-width:120px;'>
+                  <div style='font-size:1rem;'>Totals (O-U-P)</div>
+                  <div style='font-weight:800; font-size:1.25rem;'>{ou_over}-{ou_under}-{ou_push}</div>
                 </div>
-                <div style='flex:1; text-align:left;'>
-                  <div style='font-size:1.05rem;'><b>{team1}:</b> <b>Fav {fav['team1_fav']}</b> - <b>Dog {fav['team1_dog']}</b></div>
-                  <div style='font-size:1.05rem;'><b>{team2}:</b> <b>Fav {fav['team2_fav']}</b> - <b>Dog {fav['team2_dog']}</b></div>
+                <div style='flex:1 1 200px; text-align:center; min-width:180px;'>
+                  <div style='font-size:0.95rem;'><b>{team1}:</b> Fav {fav['team1_fav']} - Dog {fav['team1_dog']}</div>
+                  <div style='font-size:0.95rem;'><b>{team2}:</b> Fav {fav['team2_fav']} - Dog {fav['team2_dog']}</div>
                 </div>
               </div>
             </div>
@@ -1617,7 +1648,7 @@ with col2:
                     # )
 
             # ---------- Pie Charts ----------
-            cpie1, cpie2 = st.columns(2)
+            cpie1, cpie2 = st.columns([1, 1])
             if (ats_t1_w + h2h['team2_ats'][0] + ats_push) > 0:
                 pie_ats = px.pie(
                     values=[ats_t1_w, h2h['team2_ats'][0], ats_push],
@@ -1626,17 +1657,19 @@ with col2:
                     hole=0.45,
                     color_discrete_sequence=[get_team_color(team1), get_team_color(team2), PUSH_GRAY]
                 )
-                # Legend on the left for left chart
+                # Responsive legend positioning
                 pie_ats.update_layout(
                     showlegend=True,
-                    title_x=0.39,  # Shift title left to center over donut hole
+                    title_x=0.5,  # Center title
+                    title_font_size=14,
                     legend=dict(
-                        orientation="v",
-                        yanchor="middle",
-                        y=0.5,
-                        xanchor="right",
-                        x=-0.1
-                    )
+                        orientation="h",
+                        yanchor="top",
+                        y=-0.15,
+                        xanchor="center",
+                        x=0.5
+                    ),
+                    margin=dict(l=20, r=20, t=60, b=60)
                 )
                 cpie1.plotly_chart(pie_ats, use_container_width=True)
             if (ou_over + ou_under + ou_push) > 0:
@@ -1647,17 +1680,19 @@ with col2:
                     hole=0.45,
                     color_discrete_sequence=[NFL_BLUE, NFL_RED, PUSH_GRAY]
                 )
-                # Legend on the right for right chart
+                # Responsive legend positioning
                 pie_ou.update_layout(
                     showlegend=True,
-                    title_x=0.19,  # Shift title left to center over donut hole
+                    title_x=0.5,  # Center title
+                    title_font_size=14,
                     legend=dict(
-                        orientation="v",
-                        yanchor="middle",
-                        y=0.5,
-                        xanchor="left",
-                        x=1.02
-                    )
+                        orientation="h",
+                        yanchor="top",
+                        y=-0.15,
+                        xanchor="center",
+                        x=0.5
+                    ),
+                    margin=dict(l=20, r=20, t=60, b=60)
                 )
                 cpie2.plotly_chart(pie_ou, use_container_width=True)
 
@@ -1784,8 +1819,8 @@ if all(k in st.session_state for k in ['rg_team1', 'rg_team2']):
     if (isinstance(df_defense_logs, pd.DataFrame) and not df_defense_logs.empty) or (isinstance(df_team_game_logs, pd.DataFrame) and not df_team_game_logs.empty):
         st.write("")
         # st.divider()
-        # left_pad, dcol1_early, dcol2_early, right_pad = st.columns([0.5, 2.5, 2.5, 0.5])
-        left_pad, dcol1_early, dcol2_early, right_pad = st.columns([1, 2.8, 2.8, 1])
+        # Responsive columns for defense metrics
+        dcol1_early, dcol2_early = st.columns(2)
         t1_def_early = calculate_defense_summary(df_defense_logs, df_team_game_logs, team1, last_n_games=10, df_games_ctx=df_games)
         t2_def_early = calculate_defense_summary(df_defense_logs, df_team_game_logs, team2, last_n_games=10, df_games_ctx=df_games)
         with dcol1_early:
@@ -1878,7 +1913,8 @@ if all(k in st.session_state for k in ['rg_team1', 'rg_team2']):
     # ---------- Top Performance Metrics (Full Width) ----------
     st.write("")
     st.write("")
-    left_pad, top_left, spacer, top_right, right_pad = st.columns([1.5, 2.8, 0.2, 2.8, 1.5])
+    # Responsive columns for performance metrics
+    top_left, top_right = st.columns(2)
     with top_left:
         st.markdown(f"<div style='text-align:center; font-weight:bold;'>Top Performance Metrics — {team1}</div>", unsafe_allow_html=True)
         st.write(" ")
@@ -1899,7 +1935,8 @@ if all(k in st.session_state for k in ['rg_team1', 'rg_team2']):
     # ---------- Red Zone Targets (Full Width) ----------
     st.write("")
     st.write("")
-    left_pad, rz_left, spacer, rz_right, right_pad = st.columns([1.5, 2.8, 0.2, 2.8, 1.5])
+    # Responsive columns for red zone targets
+    rz_left, rz_right = st.columns(2)
     with rz_left:
         st.markdown(f"<div style='text-align:center; font-weight:bold;'>Red Zone Targets (2025) — {team1}</div>", unsafe_allow_html=True)
         st.write(" ")
@@ -1920,16 +1957,17 @@ if all(k in st.session_state for k in ['rg_team1', 'rg_team2']):
 # Full-width Player sections (rendered outside the centered column)
 if all(k in st.session_state for k in ['rg_hist_team1','rg_hist_team2','rg_team1','rg_team2']):
     st.divider()
-    left_pad, a, b, right_pad = st.columns([0.1, 2.8, 2.8, 0.1])
+    # Responsive columns for player sections
+    a, b = st.columns(2)
     with a:
-        row_logo, row_title = st.columns([0.1, 0.88])
+        row_logo, row_title = st.columns([0.15, 0.85])
         with row_logo:
             display_team_logo(st.session_state['rg_team1'], size=60)
         with row_title:
             st.markdown(f"<span style='font-size:2.2rem; font-weight:bold; vertical-align:middle; display:inline-block; margin-left:8px;'>{st.session_state['rg_team1']} Players</span>", unsafe_allow_html=True)
         show_condensed_players(st.session_state['rg_hist_team1'], st.session_state['rg_team1'], st.session_state['rg_team2'])
     with b:
-        row_logo, row_title = st.columns([0.1, 0.88])
+        row_logo, row_title = st.columns([0.15, 0.85])
         with row_logo:
             display_team_logo(st.session_state['rg_team2'], size=60)
         with row_title:
@@ -1942,8 +1980,8 @@ if all(k in st.session_state for k in ['rg_report_data', 'rg_team1', 'rg_team2']
     st.write("")
     # st.divider()
     
-    # Center the download button
-    dl_col1, dl_col2, dl_col3 = st.columns([1, 0.4, 1])
+    # Center the download button with responsive layout
+    dl_col1, dl_col2, dl_col3 = st.columns([1, 1, 1])
     with dl_col2:
         # Generate HTML report
         html_content = generate_html_report(
