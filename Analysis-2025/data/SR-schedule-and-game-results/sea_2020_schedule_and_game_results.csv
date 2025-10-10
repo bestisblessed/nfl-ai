@@ -1,0 +1,20 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 13,1:00PM ET,boxscore,W,,1-0,@,Atlanta Falcons,38,25,22,383,299,84,,28,506,434,72,2,21.28,-7.25,0.51
+2,Sun,September 20,8:20PM ET,boxscore,W,,2-0,,New England Patriots,35,30,22,429,275,154,1,29,464,397,67,1,14.54,-19.82,6.98
+3,Sun,September 27,4:25PM ET,boxscore,W,,3-0,,Dallas Cowboys,38,31,23,412,295,117,1,27,522,461,61,3,11.85,-9.84,4.60
+4,Sun,October 4,1:00PM ET,boxscore,W,,4-0,@,Miami Dolphins,31,23,26,441,343,98,1,25,415,312,103,2,16.11,-7.12,-1.32
+5,Sun,October 11,8:20PM ET,boxscore,W,,5-0,,Minnesota Vikings,27,26,18,314,190,124,1,31,449,248,201,2,8.96,-6.68,0.07
+6,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+7,Sun,October 25,8:20PM ET,boxscore,L,OT,5-1,@,Arizona Cardinals,34,37,33,572,372,200,3,31,519,360,159,2,11.75,-13.97,-0.78
+8,Sun,November 1,4:25PM ET,boxscore,W,,6-1,,San Francisco 49ers,37,27,27,350,249,101,,24,351,299,52,2,17.90,-14.29,8.73
+9,Sun,November 8,1:00PM ET,boxscore,L,,6-2,@,Buffalo Bills,34,44,22,419,362,57,4,27,420,386,34,,9.12,-17.05,-4.66
+10,Sun,November 15,4:25PM ET,boxscore,L,,6-3,@,Los Angeles Rams,16,23,20,333,220,113,3,24,389,283,106,1,-3.08,-11.84,6.89
+11,Thu,November 19,8:20PM ET,boxscore,W,,7-3,,Arizona Cardinals,28,21,22,347,182,165,,24,314,257,57,,16.03,-8.96,0.39
+12,Mon,November 30,8:15PM ET,boxscore,W,,8-3,@,Philadelphia Eagles,23,17,20,301,225,76,,18,250,180,70,1,0.57,6.08,1.79
+13,Sun,December 6,4:05PM ET,boxscore,L,,8-4,,New York Giants,12,17,21,327,216,111,2,13,290,100,190,1,-10.03,3.56,2.18
+14,Sun,December 13,4:05PM ET,boxscore,W,,9-4,,New York Jets,40,3,28,410,236,174,1,12,185,116,69,1,22.39,10.41,2.47
+15,Sun,December 20,1:00PM ET,boxscore,W,,10-4,@,Washington Football Team,20,15,16,302,121,181,1,26,353,269,84,2,3.17,-1.41,4.40
+16,Sun,December 27,4:25PM ET,boxscore,W,,11-4,,Los Angeles Rams,20,9,15,292,197,95,,20,334,216,118,1,1.46,11.28,-0.50
+17,Sun,January 3,4:25PM ET,boxscore,W,,12-4,@,San Francisco 49ers,26,23,21,280,159,121,,17,328,242,86,1,5.26,-2.58,0.32
+,,Playoffs,,,,,,,,,,,,,,,,,,,,,,
+Wild Card,Sat,January 9,4:40PM ET,boxscore,L,,12-5,,Los Angeles Rams,20,30,11,278,142,136,2,16,333,169,164,,-18.04,3.67,1.48

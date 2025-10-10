@@ -1,0 +1,19 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 11,1:00PM ET,boxscore,L,,0-1,,Baltimore Ravens,9,24,24,380,297,83,2,13,274,211,63,1,-8.07,-3.65,-5.04
+2,Sun,September 18,1:00PM ET,boxscore,W,,1-1,@,Cleveland Browns,31,30,20,402,309,93,1,29,405,221,184,1,15.19,-17.92,5.38
+3,Sun,September 25,1:00PM ET,boxscore,L,,1-2,,Cincinnati Bengals,12,27,19,328,252,76,4,20,330,261,69,1,-16.45,-3.99,6.98
+4,Sun,October 2,1:00PM ET,boxscore,W,,2-2,@,Pittsburgh Steelers,24,20,19,348,250,98,2,20,297,178,119,4,-1.46,2.55,2.91
+5,Sun,October 9,1:00PM ET,boxscore,W,,3-2,,Miami Dolphins,40,17,21,322,187,135,,19,295,158,137,2,11.86,6.15,3.66
+6,Sun,October 16,1:00PM ET,boxscore,W,,4-2,@,Green Bay Packers,27,10,14,278,99,179,,15,278,218,60,1,-2.59,16.24,4.32
+7,Sun,October 23,4:05PM ET,boxscore,W,,5-2,@,Denver Broncos,16,9,10,260,105,155,,21,324,219,105,1,-8.14,8.53,8.12
+8,Sun,October 30,1:00PM ET,boxscore,L,,5-3,,New England Patriots,17,22,17,387,336,51,3,19,288,161,127,1,-2.30,9.31,-12.01
+9,Sun,November 6,1:00PM ET,boxscore,W,,6-3,,Buffalo Bills,20,17,21,310,136,174,1,19,317,183,134,2,7.64,-0.54,-2.11
+10,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+11,Sun,November 20,1:00PM ET,boxscore,L,,6-4,@,New England Patriots,3,10,6,103,44,59,,13,297,198,99,,-18.64,9.78,5.40
+12,Sun,November 27,1:00PM ET,boxscore,W,,7-4,,Chicago Bears,31,10,22,466,308,158,,14,292,165,127,1,20.96,3.97,-3.63
+13,Sun,December 4,1:00PM ET,boxscore,L,,7-5,@,Minnesota Vikings,22,27,23,486,366,120,2,21,287,159,128,,1.01,-5.08,-0.01
+14,Sun,December 11,1:00PM ET,boxscore,L,,7-6,@,Buffalo Bills,12,20,19,309,233,76,2,14,232,130,102,,-12.35,5.17,-3.77
+15,Sun,December 18,1:00PM ET,boxscore,L,,7-7,,Detroit Lions,17,20,18,337,287,50,1,17,359,252,107,,3.71,-2.21,-2.44
+16,Thu,December 22,8:15PM ET,boxscore,L,,7-8,,Jacksonville Jaguars,3,19,10,227,161,66,2,19,365,218,147,1,-14.15,-3.00,5.11
+17,Sun,January 1,4:05PM ET,boxscore,L,,7-9,@,Seattle Seahawks,6,23,20,279,204,75,3,20,346,148,198,,-16.78,-3.31,4.05
+18,Sun,January 8,1:00PM ET,boxscore,L,,7-10,@,Miami Dolphins,6,11,11,187,149,38,,17,302,140,162,,-7.03,3.96,-1.31

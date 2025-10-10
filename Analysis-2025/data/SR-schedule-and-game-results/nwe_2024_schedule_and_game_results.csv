@@ -1,0 +1,19 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 8,1:00PM ET,boxscore,W,,1-0,@,Cincinnati Bengals,16,10,17,290,120,170,,13,224,154,70,2,0.36,3.62,2.22
+2,Sun,September 15,1:00PM ET,boxscore,L,OT,1-1,,Seattle Seahawks,20,23,19,310,125,185,,18,358,312,46,,3.42,-7.65,1.23
+3,Thu,September 19,8:15PM ET,boxscore,L,,1-2,@,New York Jets,3,24,11,139,61,78,1,27,400,267,133,,-8.75,-18.80,11.93
+4,Sun,September 29,4:05PM ET,boxscore,L,,1-3,@,San Francisco 49ers,13,30,12,216,143,73,3,19,431,283,148,2,-24.17,-11.48,16.28
+5,Sun,October 6,1:00PM ET,boxscore,L,,1-4,,Miami Dolphins,10,15,15,299,148,151,,24,372,179,193,2,-7.94,5.25,0.91
+6,Sun,October 13,1:00PM ET,boxscore,L,,1-5,,Houston Texans,21,41,17,291,209,82,4,20,368,176,192,1,-10.73,-11.04,3.82
+7,Sun,October 20,9:30AM ET,boxscore,L,,1-6,@,Jacksonville Jaguars,16,32,17,295,257,38,,23,364,193,171,,3.61,-17.60,0.01
+8,Sun,October 27,1:00PM ET,boxscore,W,,2-6,,New York Jets,25,22,19,248,136,112,,22,336,224,112,,5.93,-14.41,7.05
+9,Sun,November 3,1:00PM ET,boxscore,L,OT,2-7,@,Tennessee Titans,17,20,20,295,185,110,3,24,400,233,167,1,-5.06,-5.69,5.69
+10,Sun,November 10,1:00PM ET,boxscore,W,,3-7,@,Chicago Bears,19,3,16,328,184,144,1,11,142,69,73,,0.04,20.08,-2.41
+11,Sun,November 17,1:00PM ET,boxscore,L,,3-8,,Los Angeles Rams,22,28,26,382,257,125,2,19,402,295,107,,10.52,-19.37,2.87
+12,Sun,November 24,1:00PM ET,boxscore,L,,3-9,@,Miami Dolphins,15,34,14,269,183,86,2,23,373,308,65,1,-16.92,-2.50,0.20
+13,Sun,December 1,1:00PM ET,boxscore,L,,3-10,,Indianapolis Colts,24,25,23,422,222,200,1,20,253,109,144,2,12.16,-8.79,-2.11
+14,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+15,Sun,December 15,4:25PM ET,boxscore,L,,3-11,@,Arizona Cardinals,17,30,17,311,195,116,1,21,395,232,163,,5.28,-18.68,-2.63
+16,Sun,December 22,4:25PM ET,boxscore,L,,3-12,@,Buffalo Bills,21,24,28,379,253,126,3,19,324,152,172,1,7.45,-8.51,-1.61
+17,Sat,December 28,1:00PM ET,boxscore,L,,3-13,,Los Angeles Chargers,7,40,11,181,85,96,1,29,428,281,147,,-14.04,-24.19,10.62
+18,Sun,January 5,1:00PM ET,boxscore,W,,4-13,,Buffalo Bills,23,16,19,309,232,77,1,16,259,129,130,,-0.12,6.28,0.35

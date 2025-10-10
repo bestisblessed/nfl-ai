@@ -1,0 +1,18 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 8,4:25PM ET,boxscore,L,,0-1,@,Dallas Cowboys,17,35,25,470,319,151,2,23,494,405,89,,10.91,-26.91,-0.11
+2,Sun,September 15,1:00PM ET,boxscore,L,,0-2,,Buffalo Bills,14,28,21,370,241,129,2,24,388,237,151,,-2.11,-6.57,-3.56
+3,Sun,September 22,4:05PM ET,boxscore,W,,1-2,@,Tampa Bay Buccaneers,32,31,17,384,312,72,2,24,499,355,144,1,8.02,-14.58,6.08
+4,Sun,September 29,1:00PM ET,boxscore,W,,2-2,,Washington Redskins,24,3,24,389,225,164,4,8,176,121,55,4,0.43,25.74,-4.64
+5,Sun,October 6,1:00PM ET,boxscore,L,,2-3,,Minnesota Vikings,10,28,18,211,147,64,1,22,490,279,211,1,-8.73,-16.93,0.40
+6,Thu,October 10,8:20PM ET,boxscore,L,,2-4,@,New England Patriots,14,35,10,213,161,52,4,27,427,313,114,2,-24.29,0.69,-1.10
+7,Sun,October 20,1:00PM ET,boxscore,L,,2-5,,Arizona Cardinals,21,27,21,263,156,107,3,18,245,89,156,,-8.02,-3.73,2.98
+8,Sun,October 27,1:00PM ET,boxscore,L,,2-6,@,Detroit Lions,26,31,24,370,290,80,1,17,375,316,59,2,6.34,-7.67,-5.39
+9,Mon,November 4,8:15PM ET,boxscore,L,,2-7,,Dallas Cowboys,18,37,20,271,171,100,3,24,429,257,172,2,-12.66,-10.68,5.61
+10,Sun,November 10,1:00PM ET,boxscore,L,,2-8,@,New York Jets,27,34,15,281,258,23,2,18,294,218,76,,-2.96,-6.97,0.39
+11,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+12,Sun,November 24,1:00PM ET,boxscore,L,,2-9,@,Chicago Bears,14,19,14,243,134,109,1,20,335,270,65,2,-12.48,7.02,2.01
+13,Sun,December 1,1:00PM ET,boxscore,L,,2-10,,Green Bay Packers,13,31,20,335,240,95,3,19,322,243,79,,0.75,-15.72,-0.67
+14,Mon,December 9,8:15PM ET,boxscore,L,OT,2-11,@,Philadelphia Eagles,17,23,11,255,182,73,,27,418,300,118,1,-4.47,-3.00,0.47
+15,Sun,December 15,1:00PM ET,boxscore,W,,3-11,,Miami Dolphins,36,20,24,412,274,138,3,22,384,262,122,1,13.11,-0.43,4.97
+16,Sun,December 22,1:00PM ET,boxscore,W,OT,4-11,@,Washington Redskins,41,35,28,552,346,206,,25,361,281,80,,32.47,-18.07,-7.97
+17,Sun,December 29,4:25PM ET,boxscore,L,,4-12,,Philadelphia Eagles,17,34,19,397,275,122,2,25,400,279,121,,-6.61,-6.30,0.16

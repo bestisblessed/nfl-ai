@@ -1,0 +1,21 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 9,1:00PM ET,boxscore,L,,0-1,,Tampa Bay Buccaneers,40,48,26,475,432,43,2,26,529,417,112,,19.83,-29.69,4.90
+2,Sun,September 16,1:00PM ET,boxscore,W,,1-1,,Cleveland Browns,21,18,18,275,213,62,2,16,327,234,93,1,-2.16,-2.85,10.01
+3,Sun,September 23,1:00PM ET,boxscore,W,OT,2-1,@,Atlanta Falcons,43,37,32,534,391,143,,24,407,359,48,,26.85,-20.31,-0.47
+4,Sun,September 30,4:25PM ET,boxscore,W,,3-1,@,New York Giants,33,18,25,389,219,170,,22,299,234,65,2,12.86,0.20,2.41
+5,Mon,October 8,8:15PM ET,boxscore,W,,4-1,,Washington Redskins,43,19,27,447,349,98,1,18,283,244,39,2,25.98,6.22,-6.15
+6,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+7,Sun,October 21,4:05PM ET,boxscore,W,,5-1,@,Baltimore Ravens,24,23,26,339,205,134,1,25,351,274,77,,12.99,-16.64,7.63
+8,Sun,October 28,8:20PM ET,boxscore,W,,6-1,@,Minnesota Vikings,30,20,17,270,164,106,1,27,423,338,85,2,5.19,-5.30,6.75
+9,Sun,November 4,4:25PM ET,boxscore,W,,7-1,,Los Angeles Rams,45,35,31,487,346,141,1,23,483,391,92,1,29.05,-20.09,8.53
+10,Sun,November 11,1:00PM ET,boxscore,W,,8-1,@,Cincinnati Bengals,51,14,33,509,265,244,,13,284,174,110,2,34.52,6.87,-4.60
+11,Sun,November 18,4:25PM ET,boxscore,W,,9-1,,Philadelphia Eagles,48,7,28,546,373,173,,13,196,138,58,3,35.64,11.41,-4.02
+12,Thu,November 22,8:20PM ET,boxscore,W,,10-1,,Atlanta Falcons,31,17,19,312,162,150,1,21,366,340,26,4,11.04,2.35,-0.37
+13,Thu,November 29,8:20PM ET,boxscore,L,,10-2,@,Dallas Cowboys,10,13,14,176,111,65,1,21,308,209,99,2,-9.57,0.16,1.70
+14,Sun,December 9,1:00PM ET,boxscore,W,,11-2,@,Tampa Bay Buccaneers,28,14,19,298,198,100,2,20,279,174,105,1,1.64,1.15,10.68
+15,Mon,December 17,8:15PM ET,boxscore,W,,12-2,@,Carolina Panthers,12,9,21,346,191,155,2,13,247,149,98,2,-4.68,9.06,4.46
+16,Sun,December 23,4:25PM ET,boxscore,W,,13-2,,Pittsburgh Steelers,31,28,24,370,313,57,1,26,429,364,65,2,18.48,-14.44,-0.77
+17,Sun,December 30,1:00PM ET,boxscore,L,,13-3,,Carolina Panthers,14,33,17,294,110,184,1,25,374,263,111,,1.59,-19.43,0.90
+,,Playoffs,,,,,,,,,,,,,,,,,,,,,,
+Division,Sun,January 13,4:40PM ET,boxscore,W,,14-3,,Philadelphia Eagles,20,14,25,420,283,137,1,15,250,201,49,2,10.90,-0.41,-3.17
+Conf. Champ.,Sun,January 20,3:05PM ET,boxscore,L,OT,14-4,,Los Angeles Rams,23,26,19,290,242,48,1,19,378,301,77,1,2.51,-3.02,-2.95

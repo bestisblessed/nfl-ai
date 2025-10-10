@@ -1,0 +1,21 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 9,4:05PM ET,boxscore,W,,1-0,@,Los Angeles Chargers,38,28,19,362,256,106,,33,541,418,123,2,13.10,-24.31,19.32
+2,Sun,September 16,1:00PM ET,boxscore,W,,2-0,@,Pittsburgh Steelers,42,37,24,449,322,127,1,33,475,442,33,,27.25,-26.79,10.45
+3,Sun,September 23,1:00PM ET,boxscore,W,,3-0,,San Francisco 49ers,38,27,31,384,307,77,,26,406,228,178,,29.69,-19.16,1.56
+4,Mon,October 1,8:15PM ET,boxscore,W,,4-0,@,Denver Broncos,27,23,22,446,304,142,,21,385,226,159,1,15.71,-8.63,-2.95
+5,Sun,October 7,1:00PM ET,boxscore,W,,5-0,,Jacksonville Jaguars,30,14,26,424,298,126,2,29,502,401,101,5,5.01,7.23,2.84
+6,Sun,October 14,8:20PM ET,boxscore,L,,5-1,@,New England Patriots,40,43,18,446,352,94,2,31,500,327,173,1,10.83,-21.54,8.17
+7,Sun,October 21,8:20PM ET,boxscore,W,,6-1,,Cincinnati Bengals,45,10,33,551,353,198,1,15,239,174,65,1,32.05,7.73,-8.00
+8,Sun,October 28,1:00PM ET,boxscore,W,,7-1,,Denver Broncos,30,23,20,340,291,49,1,22,411,222,189,2,12.25,-6.33,2.93
+9,Sun,November 4,1:00PM ET,boxscore,W,,8-1,@,Cleveland Browns,37,21,27,499,360,139,1,26,388,286,102,1,31.68,-11.80,0.72
+10,Sun,November 11,1:00PM ET,boxscore,W,,9-1,,Arizona Cardinals,26,14,20,330,212,118,,21,260,166,94,2,7.53,8.96,-0.25
+11,Mon,November 19,8:15PM ET,boxscore,L,,9-2,@,Los Angeles Rams,51,54,27,546,448,98,5,29,455,379,76,2,10.02,-15.93,2.52
+12,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+13,Sun,December 2,4:05PM ET,boxscore,W,,10-2,@,Oakland Raiders,40,33,25,469,295,174,1,28,442,271,171,3,20.87,-14.50,-0.05
+14,Sun,December 9,1:00PM ET,boxscore,W,OT,11-2,,Baltimore Ravens,27,24,30,442,348,94,1,24,321,127,194,1,17.44,-4.92,-9.52
+15,Thu,December 13,8:20PM ET,boxscore,L,,11-3,,Los Angeles Chargers,28,29,22,294,234,60,,30,407,288,119,2,17.10,-21.67,4.16
+16,Sun,December 23,8:20PM ET,boxscore,L,,11-4,@,Seattle Seahawks,31,38,22,419,265,154,2,31,464,254,210,,11.26,-23.20,5.47
+17,Sun,December 30,4:25PM ET,boxscore,W,,12-4,,Oakland Raiders,35,3,18,409,310,99,1,20,292,165,127,4,17.34,22.66,-9.26
+,,Playoffs,,,,,,,,,,,,,,,,,,,,,,
+Division,Sat,January 12,4:35PM ET,boxscore,W,,13-4,,Indianapolis Colts,31,13,29,433,253,180,1,15,266,179,87,1,12.69,4.21,-1.58
+Conf. Champ.,Sun,January 20,6:40PM ET,boxscore,L,OT,13-5,,New England Patriots,31,37,18,290,249,41,,36,524,348,176,2,14.41,-19.31,-1.94

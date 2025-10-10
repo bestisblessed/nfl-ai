@@ -1,0 +1,18 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 10,1:00PM ET,boxscore,L,,0-1,@,Buffalo Bills,12,21,11,214,176,38,2,23,408,218,190,1,-12.40,-6.63,10.09
+2,Sun,September 17,4:05PM ET,boxscore,L,,0-2,@,Oakland Raiders,20,45,17,271,145,126,2,21,410,230,180,,6.23,-27.55,-2.56
+3,Sun,September 24,1:00PM ET,boxscore,W,,1-2,,Miami Dolphins,20,6,16,336,233,103,1,16,225,195,30,2,-1.00,14.62,-0.08
+4,Sun,October 1,1:00PM ET,boxscore,W,OT,2-2,,Jacksonville Jaguars,23,20,18,471,215,256,2,20,311,136,175,1,-6.10,9.03,-0.61
+5,Sun,October 8,1:00PM ET,boxscore,W,,3-2,@,Cleveland Browns,17,14,14,212,178,34,1,22,419,279,140,3,-4.16,-0.76,7.92
+6,Sun,October 15,1:00PM ET,boxscore,L,,3-3,,New England Patriots,17,24,23,408,334,74,3,23,375,257,118,2,-0.33,-10.44,2.19
+7,Sun,October 22,1:00PM ET,boxscore,L,,3-4,@,Miami Dolphins,28,31,16,272,180,92,2,25,357,304,53,2,-0.88,-2.66,-1.62
+8,Sun,October 29,1:00PM ET,boxscore,L,,3-5,,Atlanta Falcons,20,25,15,279,236,43,1,18,386,246,140,2,0.84,0.97,-6.89
+9,Thu,November 2,8:25PM ET,boxscore,W,,4-5,,Buffalo Bills,34,21,21,331,137,194,,21,307,244,63,3,10.47,6.85,-2.75
+10,Sun,November 12,1:00PM ET,boxscore,L,,4-6,@,Tampa Bay Buccaneers,10,15,15,275,219,56,2,17,271,181,90,1,-11.91,5.19,0.07
+11,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+12,Sun,November 26,1:00PM ET,boxscore,L,,4-7,,Carolina Panthers,27,35,21,391,282,109,1,17,299,154,145,,2.82,-0.41,-7.00
+13,Sun,December 3,1:00PM ET,boxscore,W,,5-7,,Kansas City Chiefs,38,31,30,488,331,157,,17,474,362,112,,22.03,-23.64,3.93
+14,Sun,December 10,4:05PM ET,boxscore,L,,5-8,@,Denver Broncos,0,23,6,100,41,59,2,17,273,189,84,,-25.71,-0.54,2.13
+15,Sun,December 17,1:00PM ET,boxscore,L,,5-9,@,New Orleans Saints,19,31,19,294,170,124,2,23,412,281,131,3,-2.56,-6.75,-3.82
+16,Sun,December 24,1:00PM ET,boxscore,L,,5-10,,Los Angeles Chargers,7,14,13,295,98,197,3,21,379,290,89,,-12.19,-4.02,7.61
+17,Sun,December 31,1:00PM ET,boxscore,L,,5-11,@,New England Patriots,6,26,14,247,207,40,,28,330,183,147,,-8.84,-9.07,-1.73

@@ -1,0 +1,19 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 12,1:00PM ET,boxscore,L,,0-1,,Philadelphia Eagles,6,32,19,260,136,124,,24,434,261,173,,-12.48,-13.14,2.36
+2,Sun,September 19,4:05PM ET,boxscore,L,,0-2,@,Tampa Bay Buccaneers,25,48,19,348,293,55,3,21,341,259,82,1,-15.96,-8.63,0.72
+3,Sun,September 26,1:00PM ET,boxscore,W,,1-2,@,New York Giants,17,14,18,296,227,69,1,21,346,246,100,1,2.10,-2.33,3.38
+4,Sun,October 3,1:00PM ET,boxscore,L,,1-3,,Washington Football Team,30,34,24,374,275,99,,26,412,290,122,,19.36,-18.15,-3.26
+5,Sun,October 10,9:30AM ET,boxscore,W,,2-3,,New York Jets,27,20,28,450,342,108,2,17,230,166,64,1,17.36,-3.20,-4.18
+6,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+7,Sun,October 24,1:00PM ET,boxscore,W,,3-3,@,Miami Dolphins,30,28,21,397,325,72,2,27,413,281,132,2,10.55,-10.04,0.22
+8,Sun,October 31,1:00PM ET,boxscore,L,,3-4,,Carolina Panthers,13,19,17,213,131,82,2,21,332,129,203,1,-2.84,-0.86,-4.14
+9,Sun,November 7,1:00PM ET,boxscore,W,,4-4,@,New Orleans Saints,27,25,18,366,332,34,,26,376,267,109,1,7.33,-1.35,-3.25
+10,Sun,November 14,1:00PM ET,boxscore,L,,4-5,@,Dallas Cowboys,3,43,11,214,111,103,3,22,431,317,114,1,-22.40,-16.18,-1.92
+11,Thu,November 18,8:20PM ET,boxscore,L,,4-6,,New England Patriots,0,25,11,165,125,40,4,20,308,174,134,1,-25.53,0.69,-2.44
+12,Sun,November 28,1:00PM ET,boxscore,W,,5-6,@,Jacksonville Jaguars,21,14,21,332,183,149,1,20,357,216,141,2,6.47,0.52,1.50
+13,Sun,December 5,1:00PM ET,boxscore,L,,5-7,,Tampa Bay Buccaneers,17,30,21,380,259,121,1,25,425,368,57,1,5.45,-17.18,2.61
+14,Sun,December 12,1:00PM ET,boxscore,W,,6-7,@,Carolina Panthers,29,21,20,318,190,128,1,21,334,243,91,3,4.15,5.38,1.74
+15,Sun,December 19,4:05PM ET,boxscore,L,,6-8,@,San Francisco 49ers,13,31,13,275,213,62,1,23,397,235,162,1,-9.41,-20.53,11.46
+16,Sun,December 26,1:00PM ET,boxscore,W,,7-8,,Detroit Lions,20,16,14,254,207,47,1,19,338,208,130,1,5.42,-6.56,2.23
+17,Sun,January 2,1:00PM ET,boxscore,L,,7-9,@,Buffalo Bills,15,29,18,265,169,96,1,28,351,118,233,3,-1.07,-12.95,1.41
+18,Sun,January 9,1:00PM ET,boxscore,L,,7-10,,New Orleans Saints,20,30,13,257,195,62,3,22,369,174,195,,-6.88,-12.23,10.23

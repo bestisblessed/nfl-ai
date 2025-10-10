@@ -1,0 +1,19 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 12,1:00PM ET,boxscore,W,,1-0,@,Indianapolis Colts,28,16,18,381,241,140,1,23,336,223,113,1,14.35,-3.07,-0.51
+2,Sun,September 19,4:25PM ET,boxscore,L,OT,1-1,,Tennessee Titans,30,33,17,397,320,77,,33,532,320,212,1,13.29,-17.41,1.06
+3,Sun,September 26,4:25PM ET,boxscore,L,,1-2,@,Minnesota Vikings,17,30,21,389,283,106,,28,453,313,140,,14.86,-20.96,-1.13
+4,Sun,October 3,4:05PM ET,boxscore,W,,2-2,@,San Francisco 49ers,28,21,14,234,129,105,,23,457,314,143,2,2.20,-8.61,14.31
+5,Thu,October 7,8:20PM ET,boxscore,L,,2-3,,Los Angeles Rams,17,26,22,354,262,92,2,24,476,358,118,1,6.71,-13.76,0.05
+6,Sun,October 17,8:20PM ET,boxscore,L,OT,2-4,@,Pittsburgh Steelers,20,23,18,309,165,144,1,22,345,226,119,1,-3.89,1.52,-1.09
+7,Mon,October 25,8:15PM ET,boxscore,L,,2-5,,New Orleans Saints,10,13,14,219,129,90,,21,304,210,94,1,-6.87,3.46,-5.19
+8,Sun,October 31,4:05PM ET,boxscore,W,,3-5,,Jacksonville Jaguars,31,7,17,229,160,69,,20,309,227,82,1,7.46,6.73,7.41
+9,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+10,Sun,November 14,4:25PM ET,boxscore,L,,3-6,@,Green Bay Packers,0,17,15,208,133,75,2,22,393,287,106,1,-11.44,-8.95,5.23
+11,Sun,November 21,4:25PM ET,boxscore,L,,3-7,,Arizona Cardinals,13,23,16,266,180,86,,29,413,318,95,,-1.84,-17.70,8.60
+12,Mon,November 29,8:15PM ET,boxscore,L,,3-8,@,Washington Football Team,15,17,10,267,233,34,1,27,371,219,152,1,-2.58,-6.29,2.42
+13,Sun,December 5,4:00PM ET,boxscore,W,,4-8,,San Francisco 49ers,30,23,21,327,181,146,3,17,365,294,71,3,-0.01,0.51,3.44
+14,Sun,December 12,1:00PM ET,boxscore,W,,5-8,@,Houston Texans,33,13,20,453,260,193,,25,380,317,63,,21.71,2.60,-9.75
+15,Tue,December 21,7:00PM ET,boxscore,L,,5-9,@,Los Angeles Rams,10,20,13,214,134,80,1,20,332,209,123,1,-8.13,-4.19,3.72
+16,Sun,December 26,4:05PM ET,boxscore,L,,5-10,,Chicago Bears,24,25,18,331,161,170,,26,317,229,88,,8.31,-7.60,-3.95
+17,Sun,January 2,4:25PM ET,boxscore,W,,6-10,,Detroit Lions,51,29,29,497,232,265,,20,357,262,95,3,32.32,-3.55,-2.68
+18,Sun,January 9,4:25PM ET,boxscore,W,,7-10,@,Arizona Cardinals,38,30,19,431,229,202,2,20,305,187,118,1,12.83,-0.21,-1.02

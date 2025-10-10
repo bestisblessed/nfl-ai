@@ -1,0 +1,18 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 10,1:00PM ET,boxscore,L,,0-1,,Philadelphia Eagles,17,30,16,264,200,64,4,19,356,298,58,2,-12.95,2.95,-4.05
+2,Sun,September 17,4:25PM ET,boxscore,W,,1-1,@,Los Angeles Rams,27,20,21,385,156,229,,14,332,235,97,2,12.39,0.97,-2.95
+3,Sun,September 24,8:30PM ET,boxscore,W,,2-1,,Oakland Raiders,27,10,18,472,356,116,2,7,128,96,32,3,9.43,20.15,-13.27
+4,Mon,October 2,8:30PM ET,boxscore,L,,2-2,@,Kansas City Chiefs,20,29,15,331,220,111,1,29,429,261,168,,4.10,-19.47,7.03
+5,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+6,Sun,October 15,1:00PM ET,boxscore,W,,3-2,,San Francisco 49ers,26,24,25,419,325,94,2,21,335,250,85,1,7.41,-3.10,-1.72
+7,Mon,October 23,8:30PM ET,boxscore,L,,3-3,@,Philadelphia Eagles,24,34,19,344,269,75,1,23,371,244,127,1,3.70,-15.57,-0.77
+8,Sun,October 29,4:25PM ET,boxscore,L,,3-4,,Dallas Cowboys,19,33,16,285,236,49,3,18,307,138,169,1,-2.45,2.02,-12.19
+9,Sun,November 5,4:05PM ET,boxscore,W,,4-4,@,Seattle Seahawks,17,14,16,244,193,51,1,22,437,289,148,2,-8.18,2.51,9.38
+10,Sun,November 12,1:00PM ET,boxscore,L,,4-5,,Minnesota Vikings,30,38,24,394,313,81,1,21,406,304,102,2,5.61,-8.57,-1.00
+11,Sun,November 19,1:00PM ET,boxscore,L,OT,4-6,@,New Orleans Saints,31,34,24,456,300,156,,27,535,375,160,1,18.03,-24.46,3.00
+12,Thu,November 23,8:30PM ET,boxscore,W,,5-6,,New York Giants,20,10,17,323,201,122,1,7,170,86,84,1,-10.61,21.33,-2.42
+13,Thu,November 30,8:25PM ET,boxscore,L,,5-7,@,Dallas Cowboys,14,38,15,280,224,56,4,21,275,93,182,,-4.45,-7.94,-8.49
+14,Sun,December 10,4:05PM ET,boxscore,L,,5-8,@,Los Angeles Chargers,13,30,9,201,136,65,1,24,488,314,174,1,-12.06,-3.53,-1.67
+15,Sun,December 17,1:00PM ET,boxscore,W,,6-8,,Arizona Cardinals,20,15,14,218,187,31,1,19,286,145,141,2,-6.74,19.03,-8.87
+16,Sun,December 24,1:00PM ET,boxscore,W,,7-8,,Denver Broncos,27,11,19,386,299,87,2,18,330,171,159,3,1.10,11.39,2.62
+17,Sun,December 31,1:00PM ET,boxscore,L,,7-9,@,New York Giants,10,18,10,197,136,61,3,17,381,121,260,1,-22.34,6.77,4.56
