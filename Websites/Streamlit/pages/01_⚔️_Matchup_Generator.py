@@ -1620,98 +1620,9 @@ with col2:
                 )
                 cpie2.plotly_chart(pie_ou, use_container_width=True)
 
-            # ---------- Defensive Metrics (now after H2H) ----------
-            if (isinstance(df_defense_logs, pd.DataFrame) and not df_defense_logs.empty) or (isinstance(df_team_game_logs, pd.DataFrame) and not df_team_game_logs.empty):
-                st.write("")
-                dcol1_early, spacer_mid_def_early, dcol2_early = st.columns([1, 0.12, 1])
-                t1_def_early = calculate_defense_summary(df_defense_logs, df_team_game_logs, team1, last_n_games=10, df_games_ctx=df_games)
-                t2_def_early = calculate_defense_summary(df_defense_logs, df_team_game_logs, team2, last_n_games=10, df_games_ctx=df_games)
-                with dcol1_early:
-                    st.markdown(f"<div style='text-align:center; font-weight:600; margin-bottom:8px;'>{team1} Defense</div>", unsafe_allow_html=True)
-                    def _fmt_local(v):
-                        try:
-                            return f"{float(v):.1f}"
-                        except Exception:
-                            return str(v)
-                    r1_html = f"""
-                    <div style='display:flex; gap:12px; justify-content:space-between;'>
-                      <div style='flex:1; text-align:center;'>
-                        <div>Sacks/game</div>
-                        <div style='font-weight:700;'>{_fmt_local(t1_def_early.get('avg_sacks_per_game','N/A'))}</div>
-                      </div>
-                      <div style='flex:1; text-align:center;'>
-                        <div>QB Hits/game</div>
-                        <div style='font-weight:700;'>{_fmt_local(t1_def_early.get('avg_qb_hits','N/A'))}</div>
-                      </div>
-                      <div style='flex:1; text-align:center;'>
-                        <div>Turnovers/game</div>
-                        <div style='font-weight:700;'>{_fmt_local(t1_def_early.get('avg_total_turnovers','N/A'))}</div>
-                      </div>
-                    </div>
-                    """
-                    r2_html = f"""
-                    <div style='display:flex; gap:12px; justify-content:space-evenly; margin-top:6px;'>
-                      <div style='flex:1; text-align:center;'>
-                        <div>Avg Pass Yds Allowed</div>
-                        <div style='font-weight:700;'>{_fmt_local(t1_def_early.get('avg_pass_yards_allowed','N/A'))}</div>
-                      </div>
-                      <div style='flex:1; text-align:center;'>
-                        <div>Avg Rush Yds Allowed</div>
-                        <div style='font-weight:700;'>{_fmt_local(t1_def_early.get('avg_rush_yards_allowed','N/A'))}</div>
-                      </div>
-                    </div>
-                    """
-                    box_style_local = "border:1px solid #e6e6e6; background-color: rgba(0,0,0,0.02); border-radius:8px; padding:12px 14px;"
-                    html_box_local = f"""
-                    <div style='{box_style_local}'>
-                      {r1_html}
-                      {r2_html}
-                    </div>
-                    """
-                    st.markdown(html_box_local, unsafe_allow_html=True)
-                with dcol2_early:
-                    st.markdown(f"<div style='text-align:center; font-weight:600; margin-bottom:8px;'>{team2} Defense</div>", unsafe_allow_html=True)
-                    def _fmt_local2(v):
-                        try:
-                            return f"{float(v):.1f}"
-                        except Exception:
-                            return str(v)
-                    r1b_html = f"""
-                    <div style='display:flex; gap:12px; justify-content:space-between;'>
-                      <div style='flex:1; text-align:center;'>
-                        <div>Sacks/game</div>
-                        <div style='font-weight:700;'>{_fmt_local2(t2_def_early.get('avg_sacks_per_game','N/A'))}</div>
-                      </div>
-                      <div style='flex:1; text-align:center;'>
-                        <div>QB Hits/game</div>
-                        <div style='font-weight:700;'>{_fmt_local2(t2_def_early.get('avg_qb_hits','N/A'))}</div>
-                      </div>
-                      <div style='flex:1; text-align:center;'>
-                        <div>Turnovers/game</div>
-                        <div style='font-weight:700;'>{_fmt_local2(t2_def_early.get('avg_total_turnovers','N/A'))}</div>
-                      </div>
-                    </div>
-                    """
-                    r2b_html = f"""
-                    <div style='display:flex; gap:12px; justify-content:space-evenly; margin-top:6px;'>
-                      <div style='flex:1; text-align:center;'>
-                        <div>Avg Pass Yds Allowed</div>
-                        <div style='font-weight:700;'>{_fmt_local2(t2_def_early.get('avg_pass_yards_allowed','N/A'))}</div>
-                      </div>
-                      <div style='flex:1; text-align:center;'>
-                        <div>Avg Rush Yds Allowed</div>
-                        <div style='font-weight:700;'>{_fmt_local2(t2_def_early.get('avg_rush_yards_allowed','N/A'))}</div>
-                      </div>
-                    </div>
-                    """
-                    box_style_local2 = "border:1px solid #e6e6e6; background-color: rgba(0,0,0,0.02); border-radius:8px; padding:12px 14px;"
-                    html_box_local2 = f"""
-                    <div style='{box_style_local2}'>
-                      {r1b_html}
-                      {r2b_html}
-                    </div>
-                    """
-                    st.markdown(html_box_local2, unsafe_allow_html=True)
+            # Store defensive metrics for full-width display below
+            t1_def_early = calculate_defense_summary(df_defense_logs, df_team_game_logs, team1, last_n_games=10, df_games_ctx=df_games)
+            t2_def_early = calculate_defense_summary(df_defense_logs, df_team_game_logs, team2, last_n_games=10, df_games_ctx=df_games)
 
             # Use official 2025 roster to determine who is currently on each team (exclude CUT/RET)
             roster = df_roster2025
@@ -1769,48 +1680,11 @@ with col2:
                 historical_stats_team2 = historical_stats_team2.copy()
                 historical_stats_team2.loc[:, 'player_name_with_position'] = historical_stats_team2['player_display_name'] + " (" + historical_stats_team2['position'] + ")"
 
-            # ---------- NEW: Top Performer Metrics side-by-side under pies ----------
-            st.write("")
-            st.write("")
-            # top_left, top_right = st.columns(2)
-            top_left, spacer_mid_perf, top_right = st.columns([1.4, 0.05, 1.4])
-            with top_left:
-                st.markdown(f"<div style='text-align:center; font-weight:bold;'>Top Performance Metrics — {team1}</div>", unsafe_allow_html=True)
-                st.write(" ")
-                t1_top = compute_top_skill_performers(historical_stats_team1, top_n=4)      
-                if not t1_top.empty:
-                    st.dataframe(t1_top, use_container_width=True, hide_index=True)
-                else:
-                    st.write("No skill-position data available")
-            with top_right:
-                st.markdown(f"<div style='text-align:center; font-weight:bold;'>Top Performance Metrics — {team2}</div>", unsafe_allow_html=True)
-                st.write(" ")
-                t2_top = compute_top_skill_performers(historical_stats_team2, top_n=4)
-                if not t2_top.empty:
-                    st.dataframe(t2_top, use_container_width=True, hide_index=True)
-                else:
-                    st.write("No skill-position data available")
-
-            # ---------- Red-Zone Targets (2025) ----------
-            st.write("")
-            st.write("")
-            rz_left, spacer_mid_rz, rz_right = st.columns([1.4, 0.05, 1.4])
-            with rz_left:
-                st.markdown(f"<div style='text-align:center; font-weight:bold;'>Red Zone Targets (2025) — {team1}</div>", unsafe_allow_html=True)
-                st.write(" ")
-                rz_t1 = get_redzone_targets(df_redzone, team1, year=2025)
-                if not rz_t1.empty:
-                    st.dataframe(rz_t1, use_container_width=True, hide_index=True)
-                else:
-                    st.write("No red-zone data available")
-            with rz_right:
-                st.markdown(f"<div style='text-align:center; font-weight:bold;'>Red Zone Targets (2025) — {team2}</div>", unsafe_allow_html=True)
-                st.write(" ")
-                rz_t2 = get_redzone_targets(df_redzone, team2, year=2025)
-                if not rz_t2.empty:
-                    st.dataframe(rz_t2, use_container_width=True, hide_index=True)
-                else:
-                    st.write("No red-zone data available")
+            # Store performance metrics and redzone data for full-width display below
+            t1_top = compute_top_skill_performers(historical_stats_team1, top_n=4)      
+            t2_top = compute_top_skill_performers(historical_stats_team2, top_n=4)
+            rz_t1 = get_redzone_targets(df_redzone, team1, year=2025)
+            rz_t2 = get_redzone_targets(df_redzone, team2, year=2025)
 
             # Save results to session state for full-width render below
             st.session_state['rg_team1'] = team1
@@ -1860,10 +1734,152 @@ with col2:
             }
             st.session_state['rg_report_data'] = report_data
 
+# Full-width sections (rendered outside the centered column)
+if all(k in st.session_state for k in ['rg_team1', 'rg_team2']):
+    team1 = st.session_state['rg_team1']
+    team2 = st.session_state['rg_team2']
+    
+    # ---------- Defensive Metrics (Full Width) ----------
+    if (isinstance(df_defense_logs, pd.DataFrame) and not df_defense_logs.empty) or (isinstance(df_team_game_logs, pd.DataFrame) and not df_team_game_logs.empty):
+        st.write("")
+        # st.divider()
+        # left_pad, dcol1_early, dcol2_early, right_pad = st.columns([0.5, 2.5, 2.5, 0.5])
+        left_pad, dcol1_early, dcol2_early, right_pad = st.columns([1, 2.8, 2.8, 1])
+        t1_def_early = calculate_defense_summary(df_defense_logs, df_team_game_logs, team1, last_n_games=10, df_games_ctx=df_games)
+        t2_def_early = calculate_defense_summary(df_defense_logs, df_team_game_logs, team2, last_n_games=10, df_games_ctx=df_games)
+        with dcol1_early:
+            st.markdown(f"<div style='text-align:center; font-weight:600; margin-bottom:8px;'>{team1} Defense</div>", unsafe_allow_html=True)
+            def _fmt_local(v):
+                try:
+                    return f"{float(v):.1f}"
+                except Exception:
+                    return str(v)
+            r1_html = f"""
+            <div style='display:flex; gap:12px; justify-content:space-between;'>
+              <div style='flex:1; text-align:center;'>
+                <div>Sacks/game</div>
+                <div style='font-weight:700;'>{_fmt_local(t1_def_early.get('avg_sacks_per_game','N/A'))}</div>
+              </div>
+              <div style='flex:1; text-align:center;'>
+                <div>QB Hits/game</div>
+                <div style='font-weight:700;'>{_fmt_local(t1_def_early.get('avg_qb_hits','N/A'))}</div>
+              </div>
+              <div style='flex:1; text-align:center;'>
+                <div>Turnovers/game</div>
+                <div style='font-weight:700;'>{_fmt_local(t1_def_early.get('avg_total_turnovers','N/A'))}</div>
+              </div>
+            </div>
+            """
+            r2_html = f"""
+            <div style='display:flex; gap:12px; justify-content:space-evenly; margin-top:6px;'>
+              <div style='flex:1; text-align:center;'>
+                <div>Avg Pass Yds Allowed</div>
+                <div style='font-weight:700;'>{_fmt_local(t1_def_early.get('avg_pass_yards_allowed','N/A'))}</div>
+              </div>
+              <div style='flex:1; text-align:center;'>
+                <div>Avg Rush Yds Allowed</div>
+                <div style='font-weight:700;'>{_fmt_local(t1_def_early.get('avg_rush_yards_allowed','N/A'))}</div>
+              </div>
+            </div>
+            """
+            box_style_local = "border:1px solid #e6e6e6; background-color: rgba(0,0,0,0.02); border-radius:8px; padding:12px 14px;"
+            html_box_local = f"""
+            <div style='{box_style_local}'>
+              {r1_html}
+              {r2_html}
+            </div>
+            """
+            st.markdown(html_box_local, unsafe_allow_html=True)
+        with dcol2_early:
+            st.markdown(f"<div style='text-align:center; font-weight:600; margin-bottom:8px;'>{team2} Defense</div>", unsafe_allow_html=True)
+            def _fmt_local2(v):
+                try:
+                    return f"{float(v):.1f}"
+                except Exception:
+                    return str(v)
+            r1b_html = f"""
+            <div style='display:flex; gap:12px; justify-content:space-between;'>
+              <div style='flex:1; text-align:center;'>
+                <div>Sacks/game</div>
+                <div style='font-weight:700;'>{_fmt_local2(t2_def_early.get('avg_sacks_per_game','N/A'))}</div>
+              </div>
+              <div style='flex:1; text-align:center;'>
+                <div>QB Hits/game</div>
+                <div style='font-weight:700;'>{_fmt_local2(t2_def_early.get('avg_qb_hits','N/A'))}</div>
+              </div>
+              <div style='flex:1; text-align:center;'>
+                <div>Turnovers/game</div>
+                <div style='font-weight:700;'>{_fmt_local2(t2_def_early.get('avg_total_turnovers','N/A'))}</div>
+              </div>
+            </div>
+            """
+            r2b_html = f"""
+            <div style='display:flex; gap:12px; justify-content:space-evenly; margin-top:6px;'>
+              <div style='flex:1; text-align:center;'>
+                <div>Avg Pass Yds Allowed</div>
+                <div style='font-weight:700;'>{_fmt_local2(t2_def_early.get('avg_pass_yards_allowed','N/A'))}</div>
+              </div>
+              <div style='flex:1; text-align:center;'>
+                <div>Avg Rush Yds Allowed</div>
+                <div style='font-weight:700;'>{_fmt_local2(t2_def_early.get('avg_rush_yards_allowed','N/A'))}</div>
+              </div>
+            </div>
+            """
+            box_style_local2 = "border:1px solid #e6e6e6; background-color: rgba(0,0,0,0.02); border-radius:8px; padding:12px 14px;"
+            html_box_local2 = f"""
+            <div style='{box_style_local2}'>
+              {r1b_html}
+              {r2b_html}
+            </div>
+            """
+            st.markdown(html_box_local2, unsafe_allow_html=True)
+
+    # ---------- Top Performance Metrics (Full Width) ----------
+    st.write("")
+    st.write("")
+    left_pad, top_left, spacer, top_right, right_pad = st.columns([1.5, 2.8, 0.2, 2.8, 1.5])
+    with top_left:
+        st.markdown(f"<div style='text-align:center; font-weight:bold;'>Top Performance Metrics — {team1}</div>", unsafe_allow_html=True)
+        st.write(" ")
+        t1_top = compute_top_skill_performers(st.session_state.get('rg_hist_team1', pd.DataFrame()), top_n=4)      
+        if not t1_top.empty:
+            st.dataframe(t1_top, use_container_width=True, hide_index=True)
+        else:
+            st.write("No skill-position data available")
+    with top_right:
+        st.markdown(f"<div style='text-align:center; font-weight:bold;'>Top Performance Metrics — {team2}</div>", unsafe_allow_html=True)
+        st.write(" ")
+        t2_top = compute_top_skill_performers(st.session_state.get('rg_hist_team2', pd.DataFrame()), top_n=4)
+        if not t2_top.empty:
+            st.dataframe(t2_top, use_container_width=True, hide_index=True)
+        else:
+            st.write("No skill-position data available")
+
+    # ---------- Red Zone Targets (Full Width) ----------
+    st.write("")
+    st.write("")
+    left_pad, rz_left, spacer, rz_right, right_pad = st.columns([1.5, 2.8, 0.2, 2.8, 1.5])
+    with rz_left:
+        st.markdown(f"<div style='text-align:center; font-weight:bold;'>Red Zone Targets (2025) — {team1}</div>", unsafe_allow_html=True)
+        st.write(" ")
+        rz_t1 = get_redzone_targets(df_redzone, team1, year=2025)
+        if not rz_t1.empty:
+            st.dataframe(rz_t1, use_container_width=True, hide_index=True)
+        else:
+            st.write("No red-zone data available")
+    with rz_right:
+        st.markdown(f"<div style='text-align:center; font-weight:bold;'>Red Zone Targets (2025) — {team2}</div>", unsafe_allow_html=True)
+        st.write(" ")
+        rz_t2 = get_redzone_targets(df_redzone, team2, year=2025)
+        if not rz_t2.empty:
+            st.dataframe(rz_t2, use_container_width=True, hide_index=True)
+        else:
+            st.write("No red-zone data available")
+
 # Full-width Player sections (rendered outside the centered column)
 if all(k in st.session_state for k in ['rg_hist_team1','rg_hist_team2','rg_team1','rg_team2']):
     st.divider()
-    a, b = st.columns(2)
+    left_pad, a, b, right_pad = st.columns([0.1, 2.8, 2.8, 0.1])
     with a:
         row_logo, row_title = st.columns([0.1, 0.88])
         with row_logo:
