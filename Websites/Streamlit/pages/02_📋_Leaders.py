@@ -4,8 +4,10 @@ from typing import Callable, Dict, List
 import pandas as pd
 from pandas.api.types import is_float_dtype, is_integer_dtype
 import streamlit as st
+import os
+import glob
 
-from utils.pdf_leaders import Leaderboard, leaderboard_summary, parse_leader_pdf
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # st.set_page_config(page_title="Leader Projections", layout="centered")
 st.set_page_config(page_title="Leader Projections", layout="wide")
@@ -28,20 +30,37 @@ st.divider()
 st.write("")
 # st.write("")
 
-# Get the latest week automatically
-import os
-projections_dir = "data/projections"
-latest_week = None
-if os.path.exists(projections_dir):
-    week_files = [f for f in os.listdir(projections_dir) if f.endswith("_leader_tables.pdf")]
-    if week_files:
-        # Sort by week number and get the latest
-        week_nums = sorted([int(f.replace("_leader_tables.pdf", "").replace("week", "")) for f in week_files])
-        latest_week = f"Week {week_nums[-1]}"
+# Function to load projections data (following same pattern as Projections page)
+@st.cache_data
+def load_projections_data():
+    """Load and process projections data from CSV files"""
+    projections_dir = os.path.join(BASE_DIR, "data/projections")
 
-if not latest_week:
-    st.error("No projection files found in data/projections/ directory.")
+    # Find all projection files
+    projection_files = glob.glob(os.path.join(projections_dir, "week*_all_props_summary.csv"))
+
+    if not projection_files:
+        return None, []
+
+    # Extract available weeks
+    available_weeks = []
+    for file in projection_files:
+        week_num = file.split('week')[1].split('_')[0]
+        available_weeks.append(int(week_num))
+
+    available_weeks.sort()
+
+    return projection_files, available_weeks
+
+# Load available data
+projection_files, available_weeks = load_projections_data()
+
+if not available_weeks:
+    st.error("No projection data available. Please ensure projection files are in data/projections/")
     st.stop()
+
+# Get the latest week automatically
+latest_week = f"Week {available_weeks[-1]}"
 
 # Show current week info
 st.markdown(f"""
@@ -52,42 +71,122 @@ st.markdown(f"""
     unsafe_allow_html=True
 )
 
-@st.cache_data(show_spinner=False)
-def _parse_pdf(content: bytes) -> List[Leaderboard]:
-    return parse_leader_pdf(content)
+# Function to get projections for a specific week
+@st.cache_data
+def get_week_projections(week_num):
+    """Get projections data for a specific week"""
+    file_path = os.path.join(BASE_DIR, f"data/projections/week{week_num}_all_props_summary.csv")
 
-@st.cache_data(show_spinner=False)
-def _load_week_pdf(week_str: str):
-    """Load PDF content for the selected week."""
-    week_num = week_str.replace("Week ", "")
-    pdf_path = f"data/projections/week{week_num}_leader_tables.pdf"
-    try:
-        with open(pdf_path, "rb") as f:
-            return f.read()
-    except FileNotFoundError:
-        st.error(f"PDF file for {week_str} not found.")
+    if not os.path.exists(file_path):
         return None
 
+    try:
+        df = pd.read_csv(file_path)
+
+        # Clean and process the data
+        df = df.dropna(subset=['pred_yards'])
+        df['pred_yards'] = pd.to_numeric(df['pred_yards'], errors='coerce')
+        df = df.dropna(subset=['pred_yards'])
+
+        return df
+    except Exception as e:
+        st.error(f"Error loading week {week_num} data: {str(e)}")
+        return None
+
+# Load data for the latest week
 with st.spinner("Loading projections…"):
-    pdf_content = _load_week_pdf(latest_week)
-    if pdf_content is None:
+    week_num = latest_week.replace("Week ", "")
+    projections_df = get_week_projections(int(week_num))
+
+    if projections_df is None:
+        st.error(f"No data available for {latest_week}")
         st.stop()
 
-    leaderboards = _parse_pdf(pdf_content)
+# Create leaderboards from projections data
+def create_leaderboard_from_projections(df, prop_type, title, position_filter=None, top_n=25):
+    """Create a leaderboard DataFrame from projections data"""
+    # Filter by prop type
+    prop_data = df[df['prop_type'] == prop_type].copy()
+
+    # Apply position filter if provided
+    if position_filter:
+        prop_data = position_filter(prop_data)
+
+    if prop_data.empty:
+        return None
+
+    # Sort by predicted yards and take top N
+    leaderboard_df = prop_data.nlargest(top_n, 'pred_yards').copy()
+
+    # Add rank column
+    leaderboard_df['Rank'] = range(1, len(leaderboard_df) + 1)
+
+    # Reorder columns to match expected format
+    cols = ['Rank', 'full_name', 'team', 'opp', 'position', 'pred_yards']
+    leaderboard_df = leaderboard_df[cols]
+
+    # Rename columns for display
+    leaderboard_df.columns = ['Rank', 'Player', 'Team', 'Opponent', 'Position', 'Projected Yards']
+
+    return {
+        'title': title,
+        'dataframe': leaderboard_df
+    }
+
+# Create leaderboards for each category
+leaderboards = []
+
+# Quarterback Passing Yards
+qb_board = create_leaderboard_from_projections(
+    projections_df, 'Passing Yards', 'Top 25 QB Passing Yards'
+)
+if qb_board:
+    leaderboards.append(qb_board)
+
+# Wide Receiver Receiving Yards
+wr_board = create_leaderboard_from_projections(
+    projections_df, 'Receiving Yards',
+    'Top 25 WR Receiving Yards',
+    lambda df: df[df['position'] == 'WR']
+)
+if wr_board:
+    leaderboards.append(wr_board)
+
+# Tight End Receiving Yards
+te_board = create_leaderboard_from_projections(
+    projections_df, 'Receiving Yards',
+    'Top 25 TE Receiving Yards',
+    lambda df: df[df['position'] == 'TE']
+)
+if te_board:
+    leaderboards.append(te_board)
+
+# Running Back Rushing Yards (assuming this is a separate prop type)
+rb_rush_board = create_leaderboard_from_projections(
+    projections_df, 'Rushing Yards', 'Top 25 RB Rushing Yards'
+)
+if rb_rush_board:
+    leaderboards.append(rb_rush_board)
+
+# Running Back Receiving Yards
+rb_rec_board = create_leaderboard_from_projections(
+    projections_df, 'Receiving Yards',
+    'Top 25 RB Receiving Yards',
+    lambda df: df[df['position'] == 'RB']
+)
+if rb_rec_board:
+    leaderboards.append(rb_rec_board)
 
 if not leaderboards:
-    st.error(
-        "We couldn't detect any tables in the PDF. Make sure the document contains "
-        "clearly formatted tables with headers such as Rank, Player, Opponent, etc."
-    )
+    st.error("No leaderboard data could be created from the projections.")
     st.stop()
 
 # Organize leaderboards by category for clean display
-qb_boards = [lb for lb in leaderboards if "qb" in lb.title.lower()]
-wr_boards = [lb for lb in leaderboards if "wr" in lb.title.lower()]
-te_boards = [lb for lb in leaderboards if "te" in lb.title.lower()]
-rb_boards = [lb for lb in leaderboards if "rb" in lb.title.lower() and "receiving" not in lb.title.lower()]
-rb_rec_boards = [lb for lb in leaderboards if "rb" in lb.title.lower() and "receiving" in lb.title.lower()]
+qb_boards = [lb for lb in leaderboards if "qb" in lb['title'].lower()]
+wr_boards = [lb for lb in leaderboards if "wr" in lb['title'].lower() and "receiving" in lb['title'].lower()]
+te_boards = [lb for lb in leaderboards if "te" in lb['title'].lower()]
+rb_boards = [lb for lb in leaderboards if "rb" in lb['title'].lower() and "rushing" in lb['title'].lower()]
+rb_rec_boards = [lb for lb in leaderboards if "rb" in lb['title'].lower() and "receiving" in lb['title'].lower()]
 
 # Create sections for each position type
 sections = [
@@ -98,9 +197,9 @@ sections = [
     ("RB Receiving", rb_rec_boards),
 ]
 
-def create_styled_dataframe(leaderboard: Leaderboard):
+def create_styled_dataframe(leaderboard):
     """Create a beautifully styled dataframe for display."""
-    df = leaderboard.dataframe
+    df = leaderboard['dataframe']
 
     # Format numeric columns
     def _float_formatter(value: float) -> str:
@@ -190,7 +289,7 @@ for section_title, section_boards in sections:
                                  font-size: 1.3em;
                                  text-transform: uppercase;
                                  letter-spacing: 1px;'>
-                            {leaderboard.title.replace("Top 25 ", "")}
+                            {leaderboard['title'].replace("Top 25 ", "")}
                         </h3>
                     </div>
                     """,
