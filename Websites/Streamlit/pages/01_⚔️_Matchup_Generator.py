@@ -393,13 +393,25 @@ def show_condensed_players(historical_df, team_name, opponent_name):
                     c3.metric("Total Rec TDs", rec_tds_sum)
                     c4.metric("Avg FPTS", row['Avg FPTS'])
                 else:
-                    c1, c2, c3, c4 = st.columns([1,1,1,1])
-                    c1.metric("Games", int(row['Games']))
-                    primary_tds_label = row['Primary TDs Label']
-                    c2.metric(primary_tds_label, int(row['Primary TDs']))
-                    primary_label = row['Primary Label']
-                    c3.metric(primary_label, row['Primary'])
-                    c4.metric("Avg FPTS", row['Avg FPTS'])
+                    # For QBs, show an extra metric: Total Rush TDs after Total Pass TDs
+                    if isinstance(ppos, str) and ppos.upper() == 'QB':
+                        qb_games = historical_df[historical_df['player_name_with_position'] == pname]
+                        qb_rush_tds_sum = int(qb_games['rushing_tds'].sum()) if 'rushing_tds' in qb_games.columns else 0
+                        c1, c2, c3, c4, c5 = st.columns([1,1,1,1,1])
+                        c1.metric("Games", int(row['Games']))
+                        c2.metric("Total Pass TDs", int(row['Primary TDs']))
+                        c3.metric("Total Rush TDs", qb_rush_tds_sum)
+                        primary_label = row['Primary Label']
+                        c4.metric(primary_label, row['Primary'])
+                        c5.metric("Avg FPTS", row['Avg FPTS'])
+                    else:
+                        c1, c2, c3, c4 = st.columns([1,1,1,1])
+                        c1.metric("Games", int(row['Games']))
+                        primary_tds_label = row['Primary TDs Label']
+                        c2.metric(primary_tds_label, int(row['Primary TDs']))
+                        primary_label = row['Primary Label']
+                        c3.metric(primary_label, row['Primary'])
+                        c4.metric("Avg FPTS", row['Avg FPTS'])
                 player_games = historical_df[historical_df['player_name_with_position'] == pname].sort_values('date', ascending=False).copy()
                 # Base identifying columns always shown
                 id_cols = ['season','week','home_team','away_team']
@@ -697,7 +709,7 @@ def generate_html_report(team1, team2, report_data):
         }}
         .player-metrics {{
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
             gap: 12px;
             margin-bottom: 12px;
         }}
@@ -1213,25 +1225,54 @@ def _generate_player_html(historical_df, team_name, opponent_name):
                 </div>
 """
         else:
-            metrics_html = f"""
-                <div class="player-metrics">
-                    <div class="player-metric">
-                        <div class="player-metric-value">{int(row['Games'])}</div>
-                        <div class="player-metric-label">Games</div>
+            # For QBs in the HTML report, insert Total Rush TDs after Total Pass TDs
+            if isinstance(ppos, str) and ppos.upper() == 'QB':
+                qb_games = historical_df[historical_df['player_name_with_position'] == pname]
+                qb_rush_tds_sum = int(qb_games['rushing_tds'].sum()) if 'rushing_tds' in qb_games.columns else 0
+                metrics_html = f"""
+                    <div class="player-metrics">
+                        <div class="player-metric">
+                            <div class="player-metric-value">{int(row['Games'])}</div>
+                            <div class="player-metric-label">Games</div>
+                        </div>
+                        <div class="player-metric">
+                            <div class="player-metric-value">{int(row['Primary TDs'])}</div>
+                            <div class="player-metric-label">Total Pass TDs</div>
+                        </div>
+                        <div class="player-metric">
+                            <div class="player-metric-value">{qb_rush_tds_sum}</div>
+                            <div class="player-metric-label">Total Rush TDs</div>
+                        </div>
+                        <div class="player-metric">
+                            <div class="player-metric-value">{row['Primary']}</div>
+                            <div class="player-metric-label">{row['Primary Label']}</div>
+                        </div>
+                        <div class="player-metric">
+                            <div class="player-metric-value">{row['Avg FPTS']}</div>
+                            <div class="player-metric-label">Avg FPTS</div>
+                        </div>
                     </div>
-                    <div class="player-metric">
-                        <div class="player-metric-value">{int(row['Primary TDs'])}</div>
-                        <div class="player-metric-label">{row['Primary TDs Label']}</div>
+"""
+            else:
+                metrics_html = f"""
+                    <div class="player-metrics">
+                        <div class="player-metric">
+                            <div class="player-metric-value">{int(row['Games'])}</div>
+                            <div class="player-metric-label">Games</div>
+                        </div>
+                        <div class="player-metric">
+                            <div class="player-metric-value">{int(row['Primary TDs'])}</div>
+                            <div class="player-metric-label">{row['Primary TDs Label']}</div>
+                        </div>
+                        <div class="player-metric">
+                            <div class="player-metric-value">{row['Primary']}</div>
+                            <div class="player-metric-label">{row['Primary Label']}</div>
+                        </div>
+                        <div class="player-metric">
+                            <div class="player-metric-value">{row['Avg FPTS']}</div>
+                            <div class="player-metric-label">Avg FPTS</div>
+                        </div>
                     </div>
-                    <div class="player-metric">
-                        <div class="player-metric-value">{row['Primary']}</div>
-                        <div class="player-metric-label">{row['Primary Label']}</div>
-                    </div>
-                    <div class="player-metric">
-                        <div class="player-metric-value">{row['Avg FPTS']}</div>
-                        <div class="player-metric-label">Avg FPTS</div>
-                    </div>
-                </div>
 """
         
         # Generate game-by-game table
