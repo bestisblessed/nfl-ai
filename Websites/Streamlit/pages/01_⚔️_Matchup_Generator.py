@@ -30,6 +30,29 @@ st.set_page_config(
     layout="wide"   
 )
 
+# Global responsive styles: center content and keep a predictable width
+st.markdown(
+    """
+    <style>
+    /* Constrain and center the main content area for consistent layout across zoom levels */
+    [data-testid="block-container"] {
+        max-width: 1200px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Reduce excess vertical spacing in the main flow */
+    section.main > div { padding-top: 0.5rem; }
+
+    /* Ensure tables and charts never overflow their containers */
+    .stPlotlyChart, .stDataFrame { width: 100% !important; }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
 st.markdown(
     """
     <div style="text-align: center;">
@@ -39,9 +62,9 @@ st.markdown(
     unsafe_allow_html=True
 )
 st.write("")
-col1, col2, col3 = st.columns([1, 2, 1])
-with col2:
-    st.code("Select two teams to generate a detailed matchup report with head-to-head team trends and player stats.")
+info_left, info_right = st.columns(2)
+with info_left:
+    st.info("Select two teams to generate a detailed matchup report with head-to-head team trends and player stats.")
 
 st.write("")
 # st.divider()
@@ -384,7 +407,7 @@ def show_condensed_players(historical_df, team_name, opponent_name):
             with st.expander(pname, expanded=False):
                 # Only show each metric once, and ensure "Games" is not repeated
                 if ppos in ('RB', 'FB'):
-                    c1, c2, c3, c4 = st.columns([1,1,1,1])
+                    c1, c2, c3, c4 = st.columns(4, gap="small")
                     this_games = historical_df[historical_df['player_name_with_position'] == pname]
                     rush_tds_sum = int(this_games['rushing_tds'].sum()) if 'rushing_tds' in this_games.columns else 0
                     rec_tds_sum = int(this_games['receiving_tds'].sum()) if 'receiving_tds' in this_games.columns else 0
@@ -393,7 +416,7 @@ def show_condensed_players(historical_df, team_name, opponent_name):
                     c3.metric("Total Rec TDs", rec_tds_sum)
                     c4.metric("Avg FPTS", row['Avg FPTS'])
                 else:
-                    c1, c2, c3, c4 = st.columns([1,1,1,1])
+                    c1, c2, c3, c4 = st.columns(4, gap="small")
                     c1.metric("Games", int(row['Games']))
                     primary_tds_label = row['Primary TDs Label']
                     c2.metric(primary_tds_label, int(row['Primary TDs']))
@@ -1390,21 +1413,21 @@ def compute_recent_form(df_games: pd.DataFrame, team: str, n: int = 8) -> dict:
 # Clear any stale report results on page load so returning to this page doesn't show previous player tables
 _reset_report_results()
 
-# Center the top section (narrower middle column)
-col1, col2, col3 = st.columns([0.2, .5, 0.2]) # Middle ~60% width
-with col2:
-    # Team selection using selectbox with unique teams
-    unique_teams = sorted(df_games['home_team'].unique())
-    left_team_col, spacer_mid, right_team_col = st.columns([1, 0.0001, 1])
-    with left_team_col:
-        team1 = st.selectbox('Select Team 1:', options=unique_teams, index=unique_teams.index('BUF'), key='team1_select', on_change=_reset_report_results)
-    with right_team_col:
-        team2 = st.selectbox('Select Team 2:', options=unique_teams, index=unique_teams.index('MIA'), key='team2_select', on_change=_reset_report_results)
+# Top control section: two equal selects and a centered button
+# Using equal-weight columns keeps symmetry at normal zoom and on small screens
+# Streamlit stacks columns automatically below ~768px widths
+# Team selection using selectbox with unique teams
+unique_teams = sorted(df_games['home_team'].unique())
+left_team_col, right_team_col = st.columns(2, gap="large")
+with left_team_col:
+    team1 = st.selectbox('Select Team 1:', options=unique_teams, index=unique_teams.index('BUF'), key='team1_select', on_change=_reset_report_results)
+with right_team_col:
+    team2 = st.selectbox('Select Team 2:', options=unique_teams, index=unique_teams.index('MIA'), key='team2_select', on_change=_reset_report_results)
 
-    # Center the generate button
-    btn_c1, btn_c2, btn_c3 = st.columns([1, 0.4, 1])
-    with btn_c2:
-        generate_clicked = st.button('Generate Report', use_container_width=True)
+# Center the generate button on its own row
+btn_l, btn_c, btn_r = st.columns([1, 1, 1])
+with btn_c:
+    generate_clicked = st.button('Generate Report', use_container_width=True)
 
     # Auto-generate only for the default matchup when selections are BUF vs MIA
     if team1 == 'BUF' and team2 == 'MIA':
@@ -1743,8 +1766,8 @@ if all(k in st.session_state for k in ['rg_team1', 'rg_team2']):
     if (isinstance(df_defense_logs, pd.DataFrame) and not df_defense_logs.empty) or (isinstance(df_team_game_logs, pd.DataFrame) and not df_team_game_logs.empty):
         st.write("")
         # st.divider()
-        # left_pad, dcol1_early, dcol2_early, right_pad = st.columns([0.5, 2.5, 2.5, 0.5])
-        left_pad, dcol1_early, dcol2_early, right_pad = st.columns([1, 2.8, 2.8, 1])
+        # Use two equal columns with a consistent gap for reliability at various zoom levels
+        dcol1_early, dcol2_early = st.columns(2, gap="large")
         t1_def_early = calculate_defense_summary(df_defense_logs, df_team_game_logs, team1, last_n_games=10, df_games_ctx=df_games)
         t2_def_early = calculate_defense_summary(df_defense_logs, df_team_game_logs, team2, last_n_games=10, df_games_ctx=df_games)
         with dcol1_early:
@@ -1837,7 +1860,8 @@ if all(k in st.session_state for k in ['rg_team1', 'rg_team2']):
     # ---------- Top Performance Metrics (Full Width) ----------
     st.write("")
     st.write("")
-    left_pad, top_left, spacer, top_right, right_pad = st.columns([1.5, 2.8, 0.2, 2.8, 1.5])
+    # Two equal columns for symmetry; Streamlit will stack on narrow screens
+    top_left, top_right = st.columns(2, gap="large")
     with top_left:
         st.markdown(f"<div style='text-align:center; font-weight:bold;'>Top Performance Metrics — {team1}</div>", unsafe_allow_html=True)
         st.write(" ")
@@ -1858,7 +1882,8 @@ if all(k in st.session_state for k in ['rg_team1', 'rg_team2']):
     # ---------- Red Zone Targets (Full Width) ----------
     st.write("")
     st.write("")
-    left_pad, rz_left, spacer, rz_right, right_pad = st.columns([1.5, 2.8, 0.2, 2.8, 1.5])
+    # Two equal columns for symmetry; Streamlit will stack on narrow screens
+    rz_left, rz_right = st.columns(2, gap="large")
     with rz_left:
         st.markdown(f"<div style='text-align:center; font-weight:bold;'>Red Zone Targets (2025) — {team1}</div>", unsafe_allow_html=True)
         st.write(" ")
@@ -1879,15 +1904,15 @@ if all(k in st.session_state for k in ['rg_team1', 'rg_team2']):
 # Full-width Player sections (rendered outside the centered column)
 if all(k in st.session_state for k in ['rg_hist_team1','rg_hist_team2','rg_team1','rg_team2']):
     st.divider()
-    left_pad, a, b, right_pad = st.columns([0.1, 2.8, 2.8, 0.1])
-    with a:
+    a_col, b_col = st.columns(2, gap="large")
+    with a_col:
         row_logo, row_title = st.columns([0.1, 0.88])
         with row_logo:
             display_team_logo(st.session_state['rg_team1'], size=60)
         with row_title:
             st.markdown(f"<span style='font-size:2.2rem; font-weight:bold; vertical-align:middle; display:inline-block; margin-left:8px;'>{st.session_state['rg_team1']} Players</span>", unsafe_allow_html=True)
         show_condensed_players(st.session_state['rg_hist_team1'], st.session_state['rg_team1'], st.session_state['rg_team2'])
-    with b:
+    with b_col:
         row_logo, row_title = st.columns([0.1, 0.88])
         with row_logo:
             display_team_logo(st.session_state['rg_team2'], size=60)
@@ -1902,8 +1927,9 @@ if all(k in st.session_state for k in ['rg_report_data', 'rg_team1', 'rg_team2']
     # st.divider()
     
     # Center the download button
-    dl_col1, dl_col2, dl_col3 = st.columns([1, 0.4, 1])
-    with dl_col2:
+    # Center the download button reliably
+    _, dl_center, _ = st.columns([1, 1, 1])
+    with dl_center:
         # Generate HTML report
         html_content = generate_html_report(
             st.session_state['rg_team1'], 
