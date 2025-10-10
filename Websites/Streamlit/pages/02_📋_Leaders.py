@@ -297,7 +297,7 @@ for section_title, section_boards in sections:
                 )
 
                 # Show top performer
-                df = leaderboard.dataframe
+                df = leaderboard['dataframe']
                 if not df.empty and len(df) > 0:
                     player_column = "Player" if "Player" in df.columns else df.columns[1]
                     numeric_columns = [
