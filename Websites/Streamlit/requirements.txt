@@ -13,3 +13,4 @@ pillow==10.3.0
 plotly==5.23.0
 streamlit-modal==0.1.2
 seaborn==0.13.2
+pdfplumber==0.11.0
