@@ -174,7 +174,7 @@ def compute_top_skill_performers(historical_df: pd.DataFrame, top_n: int = 4) ->
 def get_redzone_targets(df_redzone: pd.DataFrame, team: str, year: int = 2025) -> pd.DataFrame:
     """Return red-zone receiving targets for a team in a given year."""
     if df_redzone is None or df_redzone.empty:
-        return pd.DataFrame(columns=['Player', 'Targets', 'Receptions', 'Catch%', 'TDs', '%Team'])
+        return pd.DataFrame(columns=['Player', 'Targets', 'Receptions', 'Catch%', 'TDs'])
 
     # Filter for receiving stats, specific team and year
     subset = df_redzone[(df_redzone['StatType'] == 'receiving') &
@@ -182,16 +182,15 @@ def get_redzone_targets(df_redzone: pd.DataFrame, team: str, year: int = 2025) -
                        (df_redzone['Tm'] == team)].copy()
 
     if subset.empty:
-        return pd.DataFrame(columns=['Player', 'Targets', 'Receptions', 'Catch%', 'TDs', '%Team'])
+        return pd.DataFrame(columns=['Player', 'Targets', 'Receptions', 'Catch%', 'TDs'])
 
     # Select and rename relevant columns
-    subset = subset[['Player', 'Inside 20_Tgt', 'Inside 20_Rec', 'Inside 20_Ctch%', 'Inside 20_TD', 'Inside 20_%Tgt']]
+    subset = subset[['Player', 'Inside 20_Tgt', 'Inside 20_Rec', 'Inside 20_Ctch%', 'Inside 20_TD']]
     subset = subset.rename(columns={
         'Inside 20_Tgt': 'Targets',
         'Inside 20_Rec': 'Receptions',
         'Inside 20_Ctch%': 'Catch%',
-        'Inside 20_TD': 'TDs',
-        'Inside 20_%Tgt': '%Team'
+        'Inside 20_TD': 'TDs'
     })
 
     # Convert to numeric and sort by targets descending
@@ -199,7 +198,6 @@ def get_redzone_targets(df_redzone: pd.DataFrame, team: str, year: int = 2025) -
         subset[col] = pd.to_numeric(subset[col], errors='coerce').fillna(0).astype(int)
 
     subset['Catch%'] = pd.to_numeric(subset['Catch%'], errors='coerce').fillna(0).round(1)
-    subset['%Team'] = pd.to_numeric(subset['%Team'], errors='coerce').fillna(0).round(1)
 
     # Sort by targets descending, then by player name
     subset = subset.sort_values(by=['Targets', 'Player'], ascending=[False, True]).reset_index(drop=True)
