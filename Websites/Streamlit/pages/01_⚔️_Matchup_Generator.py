@@ -1576,6 +1576,28 @@ with col2:
                     #     mime='text/csv'
                     # )
 
+            # ---------- Pie Charts ----------
+            st.write("")
+            cpie1, cpie2 = st.columns(2)
+            if (ats_t1_w + h2h['team2_ats'][0] + ats_push) > 0:
+                pie_ats = px.pie(
+                    values=[ats_t1_w, h2h['team2_ats'][0], ats_push],
+                    names=[f"{team1} cover", f"{team2} cover", "Push"],
+                    title="Head-to-Head ATS Distribution",
+                    hole=0.45,
+                    color_discrete_sequence=[get_team_color(team1), get_team_color(team2), PUSH_GRAY]
+                )
+                cpie1.plotly_chart(pie_ats, use_container_width=True)
+            if (ou_over + ou_under + ou_push) > 0:
+                pie_ou = px.pie(
+                    values=[ou_over, ou_under, ou_push],
+                    names=["Over", "Under", "Push"],
+                    title="Head-to-Head Totals (O/U)",
+                    hole=0.45,
+                    color_discrete_sequence=[NFL_BLUE, NFL_RED, PUSH_GRAY]
+                )
+                cpie2.plotly_chart(pie_ou, use_container_width=True)
+
             # ---------- Defensive Metrics (now after H2H) ----------
             if (isinstance(df_defense_logs, pd.DataFrame) and not df_defense_logs.empty) or (isinstance(df_team_game_logs, pd.DataFrame) and not df_team_game_logs.empty):
                 st.write("")
@@ -1668,9 +1690,6 @@ with col2:
                     </div>
                     """
                     st.markdown(html_box_local2, unsafe_allow_html=True)
-            
-
-            # (Pie charts moved under Top Performance Metrics below)
 
             # Use official 2025 roster to determine who is currently on each team (exclude CUT/RET)
             roster = df_roster2025
@@ -1770,29 +1789,6 @@ with col2:
                     st.dataframe(rz_t2, use_container_width=True, hide_index=True)
                 else:
                     st.write("No red-zone data available")
-
-            # Now show the pie charts under the Top Performance Metrics and Red-Zone Targets
-            cpie1, cpie2 = st.columns(2)
-            if (ats_t1_w + h2h['team2_ats'][0] + ats_push) > 0:
-                pie_ats = px.pie(
-                    values=[ats_t1_w, h2h['team2_ats'][0], ats_push],
-                    names=[f"{team1} cover", f"{team2} cover", "Push"],
-                    title="Head-to-Head ATS Distribution",
-                    hole=0.45,
-                    color_discrete_sequence=[get_team_color(team1), get_team_color(team2), PUSH_GRAY]
-                )
-                cpie1.plotly_chart(pie_ats, use_container_width=True)
-            if (ou_over + ou_under + ou_push) > 0:
-                pie_ou = px.pie(
-                    values=[ou_over, ou_under, ou_push],
-                    names=["Over", "Under", "Push"],
-                    title="Head-to-Head Totals (O/U)",
-                    hole=0.45,
-                    color_discrete_sequence=[NFL_BLUE, NFL_RED, PUSH_GRAY]
-                )
-                cpie2.plotly_chart(pie_ou, use_container_width=True)
-
-            # (Defensive metrics moved above; no rendering here now)
 
             # Save results to session state for full-width render below
             st.session_state['rg_team1'] = team1
