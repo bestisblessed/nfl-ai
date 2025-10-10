@@ -148,10 +148,10 @@ def main():
     # Predict
     probs = model.predict_proba(pred_input[features])
 
-    # Prepare output
+    # Prepare output (interception_prob before no_interception_prob)
     output = pred_input[['player', 'team', 'opponent', 'home_away']].copy()
-    output['no_interception_prob'] = probs[:, 0]
     output['interception_prob'] = probs[:, 1]
+    output['no_interception_prob'] = probs[:, 0]
 
     # Sort by interception probability desc
     output = output.sort_values('interception_prob', ascending=False).reset_index(drop=True)
