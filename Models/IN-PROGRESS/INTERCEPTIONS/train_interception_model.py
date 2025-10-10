@@ -228,32 +228,27 @@ def main():
     # Print results
     print_model_results(results)
 
-    # Generate predictions using the best model (Logistic Regression in this case)
+    # Generate predictions for all models and save results
     print(f"\n{'='*50}")
-    print("Generating Interception Probability Predictions")
+    print("Generating Interception Probability Predictions for All Models")
     print(f"{'='*50}")
 
-    best_model = models['logistic_regression']  # You can change this to use a different model
-    probabilities = predict_interceptions_for_players(best_model, df, features)
+    model_names = {
+        'logistic_regression': 'Logistic Regression',
+        'random_forest': 'Random Forest',
+        'xgboost': 'XGBoost'
+    }
 
-    print(f"Generated {len(probabilities)} predictions")
+    for model_key, model in models.items():
+        # Save the trained model
+        model_save_path = f"{model_key}_model.pkl"
+        with open(model_save_path, "wb") as f:
+            pickle.dump(model, f)
+        print(f"Saved {model_names[model_key]} model to {model_save_path}")
 
-    # Save results if needed
-    # You can uncomment the following lines to save predictions to a file
-    # predictions_df = pd.DataFrame({
-    #     'no_interception_prob': probabilities[:, 0],
-    #     'interception_prob': probabilities[:, 1]
-    # })
-    # predictions_df.to_csv('interception_predictions.csv', index=False)
-    # print("\nPredictions saved to 'interception_predictions.csv'")
+    print(f"\nSaved all trained models")
 
-    # Save the trained logistic regression model
-    model_save_path = "logreg_model.pkl"
-    with open(model_save_path, "wb") as f:
-        pickle.dump(models['logistic_regression'], f)
-    print(f"Saved trained model to {model_save_path}")
-
-    return models, results, probabilities
+    return models, results
 
 
 if __name__ == "__main__":

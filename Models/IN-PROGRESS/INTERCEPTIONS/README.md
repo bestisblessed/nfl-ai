@@ -65,10 +65,12 @@ The script expects a CSV file at `/Users/td/Code/nfl-ai/Models/IN-PROGRESS/data/
 
 ## Model Performance
 
-Based on the training data (seasons 2020-2025, including current season games):
-- **Logistic Regression**: ~75% accuracy
-- **Random Forest**: ~73% accuracy
-- **XGBoost**: ~74% accuracy
+The system trains and compares three different machine learning algorithms:
+- **Logistic Regression**: ~66% accuracy (best performing)
+- **Random Forest**: ~62% accuracy
+- **XGBoost**: ~59% accuracy
+
+All three models are saved and can be used for predictions.
 
 ## Prediction Methodology
 
@@ -85,32 +87,53 @@ Predictions are returned as probability arrays with two columns:
 - Column 0: Probability of **NO** interception
 - Column 1: Probability of **throwing an interception**
 
-Example output:
+American betting odds are also available by running the conversion script.
+
+## Usage
+
+### Training All Models
+```bash
+python train_interception_model.py
 ```
-[[0.52892704 0.47107296]  # 47.1% chance of interception
- [0.05948888 0.94051112]  # 94.1% chance of interception
- ...]
+This trains all three models, saves them, and generates prediction files for each.
+
+### Predicting with Specific Model
+```bash
+# Logistic Regression (default)
+python predict_upcoming_starting_qbs.py
+
+# Random Forest
+python predict_upcoming_starting_qbs.py --model random_forest
+
+# XGBoost
+python predict_upcoming_starting_qbs.py --model xgboost
+```
+
+### Converting to American Odds (Optional)
+The main pipeline saves American odds directly. Use this script only if you need to convert existing probability files:
+```bash
+python convert_probabilities_to_american_odds.py --model random_forest --week 1
 ```
 
 ## Customization
 
-You can modify the script to:
+You can modify the scripts to:
 - Change the seasons used for training
 - Adjust the feature selection
 - Use different machine learning algorithms
-- Save predictions to CSV files (uncomment the relevant lines in the main function)
+- Save predictions to CSV files
 
 ## File Structure
 
 ```
 INTERCEPTIONS/
-├── train_interception_model.py        # Main training and prediction script
-├── predict_upcoming_starting_qbs.py   # Prediction script for upcoming games
-├── config.py                          # Configuration settings
-├── requirements.txt                   # Python dependencies
-├── run.sh                             # Convenience script for running models
-├── predict_qb_ints.sh                 # Alternative shell script for predictions
-├── logreg_model.pkl                   # Trained logistic regression model
-├── upcoming_qb_interception_probs.csv # Latest prediction results
-└── README.md                          # This documentation
+├── train_interception_model.py                       # Training script (saves 3 model files)
+├── predict_upcoming_starting_qbs.py                 # Prediction script for upcoming games
+├── convert_probabilities_to_american_odds.py        # Convert probs to odds (optional utility)
+├── config.py                                        # Configuration settings
+├── run.sh                                           # Convenience script (full pipeline)
+├── *_model.pkl                                      # Trained models (3 files, temp)
+├── predictions/                                     # Output directory
+│   └── upcoming_qb_interception_*_week_*.csv        # Weekly QB predictions (American odds)
+└── README.md                                        # This documentation
 ```
