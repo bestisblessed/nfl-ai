@@ -62,6 +62,10 @@ if 'df_games' not in st.session_state:
         df_defense_logs = pd.read_csv(os.path.join(current_dir, '../data', 'all_defense-game-logs.csv'))
     except Exception:
         df_defense_logs = pd.DataFrame()
+    try:
+        df_redzone = pd.read_csv(os.path.join(current_dir, '../data', 'all_redzone.csv'))
+    except Exception:
+        df_redzone = pd.DataFrame()
     
     # Store in session state for future use
     st.session_state['df_games'] = df_games
@@ -69,12 +73,14 @@ if 'df_games' not in st.session_state:
     st.session_state['df_roster2025'] = df_roster2025
     st.session_state['df_team_game_logs'] = df_team_game_logs
     st.session_state['df_defense_logs'] = df_defense_logs
+    st.session_state['df_redzone'] = df_redzone
 else:
     df_games = st.session_state['df_games'] 
     df_playerstats = st.session_state['df_playerstats']
     df_roster2025 = st.session_state.get('df_roster2025')
     df_team_game_logs = st.session_state.get('df_team_game_logs')
     df_defense_logs = st.session_state.get('df_defense_logs')
+    df_redzone = st.session_state.get('df_redzone')
     if df_roster2025 is None:
         current_dir = os.path.dirname(os.path.abspath(__file__))
         df_roster2025 = pd.read_csv(os.path.join(current_dir, '../data/rosters', 'roster_2025.csv'))
@@ -93,6 +99,13 @@ else:
         except Exception:
             df_defense_logs = pd.DataFrame()
         st.session_state['df_defense_logs'] = df_defense_logs
+    if df_redzone is None:
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        try:
+            df_redzone = pd.read_csv(os.path.join(current_dir, '../data', 'all_redzone.csv'))
+        except Exception:
+            df_redzone = pd.DataFrame()
+        st.session_state['df_redzone'] = df_redzone
 
 # Helper functions (module scope) so they can be used anywhere on the page
 def display_team_logo(team_abbrev, size=100):
@@ -157,6 +170,41 @@ def compute_top_skill_performers(historical_df: pd.DataFrame, top_n: int = 4) ->
     })
     cols_order = ['Player','Pos','Rec TDs','Rec Yds','Rush TDs','Rush Yds']
     return display_top[[c for c in cols_order if c in display_top.columns]]
+
+def get_redzone_targets(df_redzone: pd.DataFrame, team: str, year: int = 2025) -> pd.DataFrame:
+    """Return red-zone receiving targets for a team in a given year."""
+    if df_redzone is None or df_redzone.empty:
+        return pd.DataFrame(columns=['Player', 'Targets', 'Receptions', 'Catch%', 'TDs', '%Team'])
+
+    # Filter for receiving stats, specific team and year
+    subset = df_redzone[(df_redzone['StatType'] == 'receiving') &
+                       (df_redzone['Year'] == year) &
+                       (df_redzone['Tm'] == team)].copy()
+
+    if subset.empty:
+        return pd.DataFrame(columns=['Player', 'Targets', 'Receptions', 'Catch%', 'TDs', '%Team'])
+
+    # Select and rename relevant columns
+    subset = subset[['Player', 'Inside 20_Tgt', 'Inside 20_Rec', 'Inside 20_Ctch%', 'Inside 20_TD', 'Inside 20_%Tgt']]
+    subset = subset.rename(columns={
+        'Inside 20_Tgt': 'Targets',
+        'Inside 20_Rec': 'Receptions',
+        'Inside 20_Ctch%': 'Catch%',
+        'Inside 20_TD': 'TDs',
+        'Inside 20_%Tgt': '%Team'
+    })
+
+    # Convert to numeric and sort by targets descending
+    for col in ['Targets', 'Receptions', 'TDs']:
+        subset[col] = pd.to_numeric(subset[col], errors='coerce').fillna(0).astype(int)
+
+    subset['Catch%'] = pd.to_numeric(subset['Catch%'], errors='coerce').fillna(0).round(1)
+    subset['%Team'] = pd.to_numeric(subset['%Team'], errors='coerce').fillna(0).round(1)
+
+    # Sort by targets descending, then by player name
+    subset = subset.sort_values(by=['Targets', 'Player'], ascending=[False, True]).reset_index(drop=True)
+
+    return subset
 
 def calculate_defense_summary(df_defense_logs: pd.DataFrame, df_team_game_logs: pd.DataFrame, team: str, last_n_games: int = 10, df_games_ctx: pd.DataFrame | None = None) -> dict:
     """Compute defensive metrics for a team over the last N games.
@@ -402,6 +450,7 @@ def generate_html_report(team1, team2, report_data):
     h2h_betting = report_data.get('h2h_betting', {})
     defense_data = report_data.get('defense_data', {})
     top_performers = report_data.get('top_performers', {})
+    redzone_targets = report_data.get('redzone_targets', {})
     pie_charts = report_data.get('pie_charts', {})
     historical_stats = report_data.get('historical_stats', {})
     
@@ -870,7 +919,40 @@ def generate_html_report(team1, team2, report_data):
             </div>
         </div>
 """
-    
+
+    # Add redzone targets
+    if redzone_targets:
+        rz_t1 = redzone_targets.get('team1', pd.DataFrame())
+        rz_t2 = redzone_targets.get('team2', pd.DataFrame())
+
+        html_content += f"""
+        <div class="section">
+            <h2>Red-Zone Targets (2025)</h2>
+            <div class="performance-grid">
+                <div>
+                    <div class="performance-title">{team1}</div>
+"""
+        if not rz_t1.empty:
+            html_content += rz_t1.to_html(classes='table', table_id='team1_redzone', escape=False, index=False)
+        else:
+            html_content += "<p>No red-zone data available</p>"
+
+        html_content += f"""
+                </div>
+                <div>
+                    <div class="performance-title">{team2}</div>
+"""
+        if not rz_t2.empty:
+            html_content += rz_t2.to_html(classes='table', table_id='team2_redzone', escape=False, index=False)
+        else:
+            html_content += "<p>No red-zone data available</p>"
+
+        html_content += """
+                </div>
+            </div>
+        </div>
+"""
+
     # Add pie charts
     if pie_charts:
         ats_chart = pie_charts.get('ats_chart')
@@ -1652,7 +1734,7 @@ with col2:
             st.write("")
             st.write("")
             # top_left, top_right = st.columns(2)
-            top_left, spacer_mid_perf, top_right = st.columns([1, 0.12, 1])
+            top_left, spacer_mid_perf, top_right = st.columns([1.4, 0.05, 1.4])
             with top_left:
                 st.markdown(f"<div style='text-align:center; font-weight:bold;'>Top Performance Metrics — {team1}</div>", unsafe_allow_html=True)
                 st.write(" ")
@@ -1670,7 +1752,28 @@ with col2:
                 else:
                     st.write("No skill-position data available")
 
-            # Now show the pie charts under the Top Performance Metrics
+            # ---------- Red-Zone Targets (2025) ----------
+            st.write("")
+            st.write("")
+            rz_left, spacer_mid_rz, rz_right = st.columns([1.4, 0.05, 1.4])
+            with rz_left:
+                st.markdown(f"<div style='text-align:center; font-weight:bold;'>Red-Zone Targets — {team1}</div>", unsafe_allow_html=True)
+                st.write(" ")
+                rz_t1 = get_redzone_targets(df_redzone, team1, year=2025)
+                if not rz_t1.empty:
+                    st.dataframe(rz_t1, use_container_width=True, hide_index=True)
+                else:
+                    st.write("No red-zone data available")
+            with rz_right:
+                st.markdown(f"<div style='text-align:center; font-weight:bold;'>Red-Zone Targets — {team2}</div>", unsafe_allow_html=True)
+                st.write(" ")
+                rz_t2 = get_redzone_targets(df_redzone, team2, year=2025)
+                if not rz_t2.empty:
+                    st.dataframe(rz_t2, use_container_width=True, hide_index=True)
+                else:
+                    st.write("No red-zone data available")
+
+            # Now show the pie charts under the Top Performance Metrics and Red-Zone Targets
             cpie1, cpie2 = st.columns(2)
             if (ats_t1_w + h2h['team2_ats'][0] + ats_push) > 0:
                 pie_ats = px.pie(
@@ -1725,6 +1828,10 @@ with col2:
                 'top_performers': {
                     'team1': t1_top,
                     'team2': t2_top
+                },
+                'redzone_targets': {
+                    'team1': rz_t1,
+                    'team2': rz_t2
                 },
                 'pie_charts': {
                     'ats_chart': pie_ats if (ats_t1_w + h2h['team2_ats'][0] + ats_push) > 0 else None,
