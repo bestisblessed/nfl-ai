@@ -18,7 +18,40 @@ import re
 import pandas as pd
 import datetime as dt
 
-from odds_utils import american_to_prob, normalize_player_name, best_fuzzy_match
+# Inline minimal helpers to avoid external deps
+def american_to_prob(american_odds):
+    if american_odds is None: return 0.0
+    s = str(american_odds).strip().replace('\u2212','-')
+    if not s: return 0.0
+    if s[0] == '+': s = s[1:]
+    try: v = int(s)
+    except: return 0.0
+    return (abs(v)/(abs(v)+100.0)) if v < 0 else (100.0/(v+100.0))
+
+def normalize_player_name(name: str) -> str:
+    if name is None: return ""
+    s = str(name).strip().lower()
+    for ch in ["\u2019","'",".",",","-","\u2013","\u2014"]:
+        s = s.replace(ch, " ")
+    return " ".join(p for p in s.split() if p)
+
+def best_fuzzy_match(target: str, candidates, min_ratio: int = 90):
+    t = normalize_player_name(target)
+    cmap = {c: normalize_player_name(c) for c in candidates}
+    for orig, norm in cmap.items():
+        if norm == t: return orig, 100
+    for orig, norm in cmap.items():
+        if norm.startswith(t) or t.startswith(norm): return orig, 95
+        if (t in norm) or (norm in t): return orig, 92
+    try:
+        from rapidfuzz import fuzz
+        best_name, best_score = None, 0
+        for orig, norm in cmap.items():
+            sc = int(fuzz.token_sort_ratio(t, norm))
+            if sc > best_score: best_score, best_name = sc, orig
+        return (best_name, best_score) if (best_name and best_score >= min_ratio) else (None, 0)
+    except Exception:
+        return (None, 0)
 
 
 def parse_args() -> argparse.Namespace:
@@ -277,24 +310,14 @@ def main() -> None:
         print(f"Saved edges to {final_csv_path}")
 
         print("\nAll QBs sorted by model line (favorite → dog):")
+        final_headers = ["Rank","Player","Model Line","Book Line","Model %","Book %","Edge","Tm","Opp","Time"]
         tbl = tabulate(
-            disp,
-            headers='keys',
+            disp.values,
+            headers=final_headers,
             tablefmt='github',
+            disable_numparse=True,
             showindex=False,
-            colalign=("right","left","right","right","right","right","right","left","left","right"),
         )
-        # Add a blank line between data rows for readability
-        try:
-            lines = tbl.splitlines()
-            if len(lines) > 2:
-                body_spaced = []
-                for ln in lines[2:]:
-                    body_spaced.append(ln)
-                    body_spaced.append("")
-                tbl = "\n".join(lines[:2] + body_spaced)
-        except Exception:
-            pass
         print(tbl)
     except Exception:
         # Fallback: basic CSV-like print

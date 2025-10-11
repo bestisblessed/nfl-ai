@@ -19,7 +19,14 @@ from typing import Any, Dict, List, Optional, Tuple
 
 import requests
 
-from odds_utils import normalize_player_name
+def normalize_player_name(name: str) -> str:
+    if name is None:
+        return ""
+    s = str(name).strip().lower()
+    for ch in ["\u2019", "'", ".", ",", "-", "\u2013", "\u2014"]:
+        s = s.replace(ch, " ")
+    parts = [p for p in s.split() if p]
+    return " ".join(parts)
 
 
 NFL_LEAGUE_ID = "88808"
