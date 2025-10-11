@@ -2,7 +2,7 @@
 Compare DraftKings Interceptions O/U implied probabilities against model output.
 
 Inputs:
-  --odds: CSV from scrape_interception_odds.py
+  --odds: CSV from scrape_qb_interceptions_odds.py
   --pred: predictions/upcoming_qb_interception_<model>_week_<W>.csv
   --out:  merged comparison CSV with edge metrics
 """
@@ -106,7 +106,7 @@ def main() -> None:
         raise FileNotFoundError(f"Odds file not found: {odds_path}")
     pred_path = args.pred or _find_latest_lr_pred()
     if not pred_path:
-        raise FileNotFoundError("No logistic regression predictions found. Run predict_upcoming_starting_qbs.py first.")
+        raise FileNotFoundError("No logistic regression predictions found. Run predict_qb_interceptions.py first.")
 
     odds_df = pd.read_csv(odds_path)
     pred_df = pd.read_csv(pred_path)
