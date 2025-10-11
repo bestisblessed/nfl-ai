@@ -159,9 +159,20 @@ def main() -> None:
         suffixes=('_model', '_dk'),
     )
 
-    # Compute edges
-    merged['edge_interception'] = merged['model_prob_interception'] - merged['dk_prob_over']
-    merged['edge_no_interception'] = merged['model_prob_no_interception'] - merged['dk_prob_under']
+    # Compute edges - Method 1: Normalize bookmaker probabilities to remove vig
+    # Step 1: Calculate total bookmaker probability (includes vig)
+    merged['book_total_prob'] = merged['dk_prob_over'] + merged['dk_prob_under']
+
+    # Step 2: Calculate vig factor to normalize probabilities
+    merged['vig_factor'] = 1.0 / merged['book_total_prob']
+
+    # Step 3: Remove vig from bookmaker probabilities to get fair/true probabilities
+    merged['dk_prob_over_fair'] = merged['dk_prob_over'] * merged['vig_factor']
+    merged['dk_prob_under_fair'] = merged['dk_prob_under'] * merged['vig_factor']
+
+    # Step 4: Calculate true edge (model vs fair bookmaker probabilities)
+    merged['edge_interception'] = merged['model_prob_interception'] - merged['dk_prob_over_fair']
+    merged['edge_no_interception'] = merged['model_prob_no_interception'] - merged['dk_prob_under_fair']
     merged['abs_edge'] = (merged['edge_interception'].abs()).fillna(0.0)
 
     # Select and sort columns
@@ -176,8 +187,12 @@ def main() -> None:
         'under_american_odds',
         'model_prob_interception',
         'model_prob_no_interception',
-        'dk_prob_over',
-        'dk_prob_under',
+        'dk_prob_over',  # Bookmaker implied prob over (with vig)
+        'dk_prob_under',  # Bookmaker implied prob under (with vig)
+        'dk_prob_over_fair',  # Bookmaker true prob over (vig stripped)
+        'dk_prob_under_fair',  # Bookmaker true prob under (vig stripped)
+        'book_total_prob',  # Total bookmaker probability (vig amount)
+        'vig_factor',  # Normalization factor applied
         'edge_interception',
         'edge_no_interception',
         'abs_edge',
@@ -188,15 +203,6 @@ def main() -> None:
     # Filter for availability
     out_cols = [c for c in out_cols if c in merged.columns]
     out_df = merged[out_cols].sort_values('abs_edge', ascending=False)
-
-    # Resolve output paths if not provided
-    out_path = args.out
-    if not out_path:
-        wk = _infer_week_from_filename(pred_path) or "latest"
-        out_path = f"/Users/td/Code/nfl-ai/Models/IN-PROGRESS/INTERCEPTIONS/predictions/upcoming_qb_interception_compare_logistic_regression_week_{wk}.csv"
-    # No longer saving the raw comparison CSV; we save a final edges CSV matching the terminal table below
-
-    # We will save a final CSV aligned to the printed table below
 
     # Helper: parse american odds string to numeric int for sorting
     def parse_american_int(x):
@@ -256,46 +262,60 @@ def main() -> None:
             drop_subset.append(col_team)
         if col_opp in out_df.columns:
             drop_subset.append(col_opp)
-        base_df = out_df.dropna(subset=[c for c in drop_subset if c in out_df.columns])
+        base_df = out_df.dropna(subset=[c for c in drop_subset if c in out_df.columns]).copy()
 
-        disp = base_df[[c for c in [col_player, 'interception_american_odds', 'over_american_odds', 'model_prob_interception', 'dk_prob_over', 'edge_interception', col_team, col_opp, 'start_time'] if c in base_df.columns]].copy()
+        # Add bookmaker's American odds with vig removed (convert fair probability back to odds)
+        def prob_to_american(p):
+            epsilon = 1e-9
+            p = min(max(float(p), epsilon), 1.0 - epsilon)
+            if p >= 0.5:
+                return -int(round((p / (1.0 - p)) * 100))
+            else:
+                return int(round(((1.0 - p) / p) * 100))
 
-        # Rename columns for clarity
+        base_df['market_line_true'] = base_df['dk_prob_over_fair'].apply(prob_to_american)
+
+        disp = base_df[[c for c in [col_player, 'interception_american_odds', 'over_american_odds', 'market_line_true', 'model_prob_interception', 'dk_prob_over_fair', 'edge_interception', col_team, col_opp, 'start_time'] if c in base_df.columns]].copy()
+
+        # Rename columns for clarity (Option 1)
         rename_map = {
             col_player: 'Player',
             col_team: 'Tm',
             col_opp: 'Opp',
-            'interception_american_odds': 'Model Line',
-            'over_american_odds': 'Book Line',
-            'model_prob_interception': 'Model %',
-            'dk_prob_over': 'Book %',
+            'interception_american_odds': 'Model Line (True)',
+            'over_american_odds': 'Market Line (Implied)',
+            'market_line_true': 'Market Line (True)',
+            'model_prob_interception': 'Model % Prob (True)',
+            'dk_prob_over_fair': 'Market % Prob (True)',
             'edge_interception': 'Edge',
             'start_time': 'Time',
         }
         disp.rename(columns=rename_map, inplace=True)
 
         # Format probabilities and edge for readability
-        for col in ('Model %', 'Book %', 'Edge'):
+        for col in ('Model % Prob (True)', 'Market % Prob (True)', 'Edge'):
             if col in disp.columns:
                 disp[col] = disp[col].map(lambda x: f"{x*100:.1f}%" if pd.notnull(x) else "")
 
         # Format odds compactly and normalize minus sign; replace missing with '-'
-        if 'Model Line' in disp.columns:
-            disp['Model Line'] = disp['Model Line'].map(fmt_american)
-        if 'Book Line' in disp.columns:
-            disp['Book'] = disp['Book Line'].map(fmt_american)
+        if 'Model Line (True)' in disp.columns:
+            disp['Model Line (True)'] = disp['Model Line (True)'].map(fmt_american)
+        if 'Market Line (Implied)' in disp.columns:
+            disp['Market Line (Implied)'] = disp['Market Line (Implied)'].map(fmt_american)
+        if 'Market Line (True)' in disp.columns:
+            disp['Market Line (True)'] = disp['Market Line (True)'].map(fmt_american)
 
         # Add numeric for sorting by model_line favorite -> dog
-        if 'Model Line' in disp.columns:
-            disp['_model_line_num'] = disp['Model Line'].map(parse_american_int)
+        if 'Model Line (True)' in disp.columns:
+            disp['_model_line_num'] = disp['Model Line (True)'].map(parse_american_int)
             disp.sort_values('_model_line_num', inplace=True, kind='mergesort')
             disp.drop(columns=['_model_line_num'], inplace=True)
 
         # Add Rank column (1-based) for a clear ordering in the display
         disp.insert(0, 'Rank', range(1, len(disp) + 1))
 
-        # Reorder columns: Rank, Player, Model, Book, Model %, Book %, Edge, Tm, Opp, Time
-        preferred_order = ['Rank', 'Player', 'Model Line', 'Book Line', 'Model %', 'Book %', 'Edge', 'Tm', 'Opp', 'Time']
+        # Reorder columns: Rank, Player, Model Line (True), Market Line (Implied), Market Line (True), Model % Prob (True), Market % Prob (True), Edge, Tm, Opp, Time
+        preferred_order = ['Rank', 'Player', 'Model Line (True)', 'Market Line (Implied)', 'Market Line (True)', 'Model % Prob (True)', 'Market % Prob (True)', 'Edge', 'Tm', 'Opp', 'Time']
         disp = disp[[c for c in preferred_order if c in disp.columns]]
 
         # Format start_time to short human readable local time
@@ -310,7 +330,7 @@ def main() -> None:
         print(f"Saved edges to {final_csv_path}")
 
         print("\nAll QBs sorted by model line (favorite → dog):")
-        final_headers = ["Rank","Player","Model Line","Book Line","Model %","Book %","Edge","Tm","Opp","Time"]
+        final_headers = ["Rank","Player","Model Line (True)","Market Line (Implied)","Market Line (True)","Model % Prob (True)","Market % Prob (True)","Edge","Tm","Opp","Time"]
         tbl = tabulate(
             disp.values,
             headers=final_headers,
@@ -326,7 +346,7 @@ def main() -> None:
             'interception_american_odds',
             'over_american_odds',
             'model_prob_interception',
-            'dk_prob_over',
+            'dk_prob_over_fair',
             'edge_interception',
             'team_model' if 'team_model' in out_df.columns else 'team',
             'opponent_model' if 'opponent_model' in out_df.columns else 'opponent',

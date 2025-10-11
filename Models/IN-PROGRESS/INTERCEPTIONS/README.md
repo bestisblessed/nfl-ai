@@ -81,6 +81,40 @@ The script generates predictions using a two-step approach:
 
 This ensures robust predictions even for players with limited recent game data.
 
+## Vigorish (VIG) Handling
+
+### What is VIG?
+Vigorish (VIG) is the bookmaker's profit margin built into betting odds. For QB interception props, this typically ranges from 4.5-5.5% per side (9-11% total), though it varies by market and sportsbook.
+
+### Why VIG Matters
+Comparing model probabilities (which are "fair" estimates) directly against bookmaker odds (which include vig) creates inaccurate edge calculations. Proper vig handling is essential for identifying true betting opportunities.
+
+### VIG Calculation Methods
+
+**Method 1 (Currently Used): Normalize Bookmaker Probabilities**
+- Calculates actual vig per market: `vig_factor = 1 / (over_prob + under_prob)`
+- Removes vig: `fair_book_prob = book_prob × vig_factor`
+- Compares: `edge = model_prob - fair_book_prob`
+- **Purpose**: Shows how much your model disagrees with the bookmaker's "true" probability assessment
+
+**Method 2 (Alternative): Add VIG to Model Probabilities**
+- Adds market vig to model: `model_vigged = model_prob × (over_prob + under_prob)`
+- Compares: `edge = model_vigged - book_prob`
+- **Purpose**: Shows edge against actual betting prices you'd face
+
+### Implementation
+The `compare_odds_to_model.py` script uses **Method 1** by default, calculating actual vig for each specific market. You can optionally use a fixed vig percentage:
+
+```bash
+# Use actual per-market vig (default)
+python compare_odds_to_model.py
+
+# Use fixed 5% vig across all markets
+python compare_odds_to_model.py --fixed-vig 0.05
+```
+
+**Recommendation**: Use actual per-market vig (default) for maximum accuracy, as bookmakers adjust vig based on betting patterns, player performance, and market conditions.
+
 ## Output Format
 
 Predictions are returned as probability arrays with two columns:
