@@ -16,7 +16,6 @@ conn.close()
 
 games["total"] = games["home_score"] + games["away_score"]
 games["margin_abs"] = (games["home_score"] - games["away_score"]).abs()
-
 latest_week = int(games["week"].max())
 
 # League scoring
