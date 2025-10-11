@@ -283,27 +283,27 @@ def main() -> None:
             col_team: 'Tm',
             col_opp: 'Opp',
             'interception_american_odds': 'Model Line (True)',
-            'over_american_odds': 'Market Line (Implied)',
-            'market_line_true': 'Market Line (True)',
+            'over_american_odds': 'Book Line (Implied)',
+            'market_line_true': 'Book Line (True)',
             'model_prob_interception': 'Model % Prob (True)',
-            'dk_prob_over_fair': 'Market % Prob (True)',
-            'edge_interception': 'Edge',
+            'dk_prob_over_fair': 'Book % Prob (True)',
+            'edge_interception': 'Edge %',
             'start_time': 'Time',
         }
         disp.rename(columns=rename_map, inplace=True)
 
         # Format probabilities and edge for readability
-        for col in ('Model % Prob (True)', 'Market % Prob (True)', 'Edge'):
+        for col in ('Model % Prob (True)', 'Book % Prob (True)', 'Edge %'):
             if col in disp.columns:
                 disp[col] = disp[col].map(lambda x: f"{x*100:.1f}%" if pd.notnull(x) else "")
 
         # Format odds compactly and normalize minus sign; replace missing with '-'
         if 'Model Line (True)' in disp.columns:
             disp['Model Line (True)'] = disp['Model Line (True)'].map(fmt_american)
-        if 'Market Line (Implied)' in disp.columns:
-            disp['Market Line (Implied)'] = disp['Market Line (Implied)'].map(fmt_american)
-        if 'Market Line (True)' in disp.columns:
-            disp['Market Line (True)'] = disp['Market Line (True)'].map(fmt_american)
+        if 'Book Line (Implied)' in disp.columns:
+            disp['Book Line (Implied)'] = disp['Book Line (Implied)'].map(fmt_american)
+        if 'Book Line (True)' in disp.columns:
+            disp['Book Line (True)'] = disp['Book Line (True)'].map(fmt_american)
 
         # Add numeric for sorting by model_line favorite -> dog
         if 'Model Line (True)' in disp.columns:
@@ -314,8 +314,8 @@ def main() -> None:
         # Add Rank column (1-based) for a clear ordering in the display
         disp.insert(0, 'Rank', range(1, len(disp) + 1))
 
-        # Reorder columns: Rank, Player, Model Line (True), Market Line (Implied), Market Line (True), Model % Prob (True), Market % Prob (True), Edge, Tm, Opp, Time
-        preferred_order = ['Rank', 'Player', 'Model Line (True)', 'Market Line (Implied)', 'Market Line (True)', 'Model % Prob (True)', 'Market % Prob (True)', 'Edge', 'Tm', 'Opp', 'Time']
+        # Reorder columns: Rank, Player, Model Line (True), Book Line (True), Book Line (Implied), Model % Prob (True), Book % Prob (True), Edge %, Tm, Opp, Time
+        preferred_order = ['Rank', 'Player', 'Model Line (True)', 'Book Line (True)', 'Book Line (Implied)', 'Model % Prob (True)', 'Book % Prob (True)', 'Edge %', 'Tm', 'Opp', 'Time']
         disp = disp[[c for c in preferred_order if c in disp.columns]]
 
         # Format start_time to short human readable local time
@@ -330,7 +330,7 @@ def main() -> None:
         print(f"Saved edges to {final_csv_path}")
 
         print("\nAll QBs sorted by model line (favorite → dog):")
-        final_headers = ["Rank","Player","Model Line (True)","Market Line (Implied)","Market Line (True)","Model % Prob (True)","Market % Prob (True)","Edge","Tm","Opp","Time"]
+        final_headers = ["Rank","Player","Model Line (True)","Book Line (True)","Book Line (Implied)","Model % Prob (True)","Book % Prob (True)","Edge %","Tm","Opp","Time"]
         tbl = tabulate(
             disp.values,
             headers=final_headers,

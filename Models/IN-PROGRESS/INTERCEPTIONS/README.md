@@ -1,24 +1,27 @@
 # QB Interception Prediction Model
 
-This directory contains cleaned-up Python scripts for predicting the probability that a quarterback will throw an interception in their next NFL game.
+A complete machine learning pipeline for predicting NFL quarterback interception probabilities and identifying betting edges against sportsbooks. Includes model training, live predictions, odds scraping, and sophisticated edge analysis with proper VIG handling.
 
 ## Overview
 
-The model uses machine learning to analyze quarterback performance statistics and predict interception likelihood. It compares three different algorithms:
-- Logistic Regression
-- Random Forest
-- XGBoost
+This QB Interception Prediction Model uses machine learning to predict quarterback interception probabilities and identify betting edges. The system includes:
+
+- **ML Model Training**: Compares Logistic Regression, Random Forest, and XGBoost algorithms
+- **Live Predictions**: Generates interception probabilities for upcoming NFL games
+- **Odds Scraping**: Collects real-time DraftKings betting lines
+- **Edge Analysis**: Calculates betting advantages by comparing model predictions vs. bookmaker odds
+- **VIG Handling**: Properly accounts for bookmaker profit margins in edge calculations
+
+The complete pipeline provides actionable insights for identifying undervalued QB interception props.
 
 ## Features Used
 
 The model uses the following quarterback statistics as features:
-- `attempts`: Number of pass attempts
-- `completions`: Number of completed passes
-- `passing_yards`: Total passing yards
-- `passing_tds`: Passing touchdowns
-- `sacks`: Number of times sacked
-- `passing_epa`: Expected Points Added from passing
-- `passing_air_yards`: Total air yards on passes
+- `pass_att`: Number of pass attempts
+- `pass_cmp`: Number of completed passes
+- `pass_yds`: Total passing yards
+- `pass_td`: Passing touchdowns
+- `pass_sacked`: Number of times sacked
 
 ## Installation
 
@@ -50,27 +53,40 @@ This will:
 
 ### Expected Output
 
-The script will output:
+#### Training Script Output:
 - Model performance metrics (accuracy, precision, recall, F1-score)
-- Confusion matrices for each model
-- Sample interception probability predictions
+- Confusion matrices for each algorithm
+- Cross-validation results
+- Saved model files (*.pkl)
+
+#### Prediction Script Output:
+- Individual model prediction files in `predictions/` directory
+- American odds and probabilities for each QB
+
+#### Edge Analysis Output:
+- Comprehensive comparison table showing:
+  - Model predictions vs bookmaker odds
+  - True probabilities (vig removed) vs implied probabilities (vig included)
+  - Edge percentages for each player
+- Terminal display ranked by model confidence
 
 ## Data Requirements
 
-The script expects a CSV file at `/Users/td/Code/nfl-ai/Models/IN-PROGRESS/data/PlayerStats.csv` with the following characteristics:
-- Contains NFL player statistics from multiple seasons
+The script expects a CSV file at `/Users/td/Code/nfl-ai/Models/IN-PROGRESS/final_data_pfr/player_stats_pfr.csv` with the following characteristics:
+- Contains NFL player statistics from seasons 2020-2025
 - Includes quarterback position data
 - Has the feature columns listed above
-- Contains an `interceptions` column for the target variable
+- Contains a `pass_int` column for the target variable (interceptions thrown)
 
 ## Model Performance
 
-The system trains and compares three different machine learning algorithms:
-- **Logistic Regression**: ~66% accuracy (best performing)
-- **Random Forest**: ~62% accuracy
-- **XGBoost**: ~59% accuracy
+The system trains and compares three different machine learning algorithms on historical NFL data (seasons 2020-2025). Performance metrics are evaluated using cross-validation:
 
-All three models are saved and can be used for predictions.
+- **Logistic Regression**: Primary model, optimized for probability predictions
+- **Random Forest**: Ensemble method for robustness
+- **XGBoost**: Gradient boosting for complex patterns
+
+All three models are saved as `.pkl` files and can be used for predictions. The Logistic Regression model is used by default for edge analysis due to its strong probability calibration.
 
 ## Prediction Methodology
 
@@ -117,21 +133,60 @@ python compare_odds_to_model.py --fixed-vig 0.05
 
 ## Output Format
 
-Predictions are returned as probability arrays with two columns:
-- Column 0: Probability of **NO** interception
-- Column 1: Probability of **throwing an interception**
+### Prediction Files
+Individual model predictions are saved as CSV files in the `predictions/` directory:
+- `upcoming_qb_interception_logistic_regression_week_1.csv`
+- `upcoming_qb_interception_random_forest_week_1.csv`
+- `upcoming_qb_interception_xgboost_week_1.csv`
 
-American betting odds are also available by running the conversion script.
+Each contains:
+- Player name and team information
+- American odds for interception/no-interception
+- Probabilities for both outcomes
+
+### Edge Analysis Display
+The comparison script (`compare_odds_to_model.py`) generates a comprehensive analysis table with:
+
+| Column | Description |
+|--------|-------------|
+| **Rank** | Position sorted by model prediction (favorite to underdog) |
+| **Player** | Quarterback name |
+| **Model Line (True)** | Algorithm's unbiased prediction (no vig) |
+| **Book Line (True)** | Bookmaker's fair odds (vig removed) |
+| **Book Line (Implied)** | Actual betting odds users see (with vig) |
+| **Model % Prob (True)** | Model's probability estimate |
+| **Book % Prob (True)** | Bookmaker's fair probability |
+| **Edge %** | Advantage over bookmaker's fair assessment |
+| **Tm/Opp/Time** | Team, opponent, and game time |
+
+### Key Concepts in Output:
+- **True**: Fair probabilities without bookmaker margin
+- **Implied**: Probabilities that include vig (what users see)
+- **Edge**: How much your model outperforms the bookmaker's fair assessment
 
 ## Usage
 
-### Training All Models
+### Complete Workflow (Recommended)
+Run the full pipeline in one command:
+```bash
+./run.sh
+```
+This will:
+1. Train all three ML models
+2. Generate predictions for upcoming games
+3. Scrape latest DraftKings odds
+4. Compare model predictions vs. bookmaker lines
+5. Display results with edge analysis
+
+### Individual Steps
+
+#### Training Models
 ```bash
 python train_interception_model.py
 ```
-This trains all three models, saves them, and generates prediction files for each.
+Trains Logistic Regression, Random Forest, and XGBoost models on historical data.
 
-### Predicting with Specific Model
+#### Generating Predictions
 ```bash
 # Logistic Regression (default)
 python predict_upcoming_starting_qbs.py
@@ -143,10 +198,23 @@ python predict_upcoming_starting_qbs.py --model random_forest
 python predict_upcoming_starting_qbs.py --model xgboost
 ```
 
-### Converting to American Odds (Optional)
-The main pipeline saves American odds directly. Use this script only if you need to convert existing probability files:
+#### Scraping Odds (Optional)
 ```bash
-python convert_probabilities_to_american_odds.py --model random_forest --week 1
+# Scrape DraftKings QB interception odds
+python scrape_interception_odds.py
+
+# Alternative scraper for Action Network
+python scrape_interception_odds_action_network.py
+```
+
+#### Edge Analysis
+Compare model predictions against bookmaker odds:
+```bash
+# Use actual per-market vig (recommended)
+python compare_odds_to_model.py
+
+# Use fixed vig percentage across all markets
+python compare_odds_to_model.py --fixed-vig 0.05
 ```
 
 ## Customization
@@ -163,11 +231,18 @@ You can modify the scripts to:
 INTERCEPTIONS/
 ├── train_interception_model.py                       # Training script (saves 3 model files)
 ├── predict_upcoming_starting_qbs.py                 # Prediction script for upcoming games
-├── convert_probabilities_to_american_odds.py        # Convert probs to odds (optional utility)
+├── compare_odds_to_model.py                         # Edge analysis vs bookmaker odds
+├── scrape_interception_odds.py                      # DraftKings odds scraper
+├── scrape_interception_odds_action_network.py       # Action Network odds scraper
 ├── config.py                                        # Configuration settings
-├── run.sh                                           # Convenience script (full pipeline)
+├── run.sh                                           # Complete pipeline script (train + predict + scrape + analyze)
+├── Interceptions.ipynb                              # Jupyter notebook for analysis
 ├── *_model.pkl                                      # Trained models (3 files, temp)
+├── data/                                            # Scraped odds data
+│   └── odds_interceptions_dk_latest.csv            # Latest DraftKings odds
 ├── predictions/                                     # Output directory
-│   └── upcoming_qb_interception_*_week_*.csv        # Weekly QB predictions (American odds)
+│   ├── upcoming_qb_interception_*_week_*.csv        # Individual model predictions
+│   └── upcoming_qb_interception_edges_week_*.csv    # Edge analysis results
+├── bak/                                             # Backup files
 └── README.md                                        # This documentation
 ```
