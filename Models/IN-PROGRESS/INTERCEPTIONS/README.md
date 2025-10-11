@@ -42,7 +42,7 @@ pip install pandas scikit-learn xgboost numpy
 Execute the main training and prediction script:
 
 ```bash
-python train_interception_model.py
+python train_qb_interceptions_model.py
 ```
 
 This will:
@@ -119,14 +119,14 @@ Comparing model probabilities (which are "fair" estimates) directly against book
 - **Purpose**: Shows edge against actual betting prices you'd face
 
 ### Implementation
-The `compare_odds_to_model.py` script uses **Method 1** by default, calculating actual vig for each specific market. You can optionally use a fixed vig percentage:
+The `calc_edges.py` script uses **Method 1** by default, calculating actual vig for each specific market. You can optionally use a fixed vig percentage:
 
 ```bash
 # Use actual per-market vig (default)
-python compare_odds_to_model.py
+python calc_edges.py
 
 # Use fixed 5% vig across all markets
-python compare_odds_to_model.py --fixed-vig 0.05
+python calc_edges.py --fixed-vig 0.05
 ```
 
 **Recommendation**: Use actual per-market vig (default) for maximum accuracy, as bookmakers adjust vig based on betting patterns, player performance, and market conditions.
@@ -145,7 +145,7 @@ Each contains:
 - Probabilities for both outcomes
 
 ### Edge Analysis Display
-The comparison script (`compare_odds_to_model.py`) generates a comprehensive analysis table with:
+The comparison script (`calc_edges.py`) generates a comprehensive analysis table with:
 
 | Column | Description |
 |--------|-------------|
@@ -182,26 +182,26 @@ This will:
 
 #### Training Models
 ```bash
-python train_interception_model.py
+python train_qb_interceptions_model.py
 ```
 Trains Logistic Regression, Random Forest, and XGBoost models on historical data.
 
 #### Generating Predictions
 ```bash
 # Logistic Regression (default)
-python predict_upcoming_starting_qbs.py
+python predict_qb_interceptions.py
 
 # Random Forest
-python predict_upcoming_starting_qbs.py --model random_forest
+python predict_qb_interceptions.py --model random_forest
 
 # XGBoost
-python predict_upcoming_starting_qbs.py --model xgboost
+python predict_qb_interceptions.py --model xgboost
 ```
 
 #### Scraping Odds (Optional)
 ```bash
 # Scrape DraftKings QB interception odds
-python scrape_interception_odds.py
+python scrape_qb_interceptions_odds.py
 
 # Alternative scraper for Action Network
 python scrape_interception_odds_action_network.py
@@ -211,10 +211,10 @@ python scrape_interception_odds_action_network.py
 Compare model predictions against bookmaker odds:
 ```bash
 # Use actual per-market vig (recommended)
-python compare_odds_to_model.py
+python calc_edges.py
 
 # Use fixed vig percentage across all markets
-python compare_odds_to_model.py --fixed-vig 0.05
+python calc_edges.py --fixed-vig 0.05
 ```
 
 ## Customization
@@ -229,11 +229,11 @@ You can modify the scripts to:
 
 ```
 INTERCEPTIONS/
-├── train_interception_model.py                       # Training script (saves 3 model files)
-├── predict_upcoming_starting_qbs.py                 # Prediction script for upcoming games
-├── compare_odds_to_model.py                         # Edge analysis vs bookmaker odds
-├── scrape_interception_odds.py                      # DraftKings odds scraper
-├── scrape_interception_odds_action_network.py       # Action Network odds scraper
+├── train_qb_interceptions_model.py                  # Training script (saves 3 model files)
+├── predict_qb_interceptions.py                     # Prediction script for upcoming games
+├── calc_edges.py                                    # Edge analysis vs bookmaker odds
+├── scrape_qb_interceptions_odds.py                  # DraftKings odds scraper
+├── scrape_interception_odds_action_network.py      # Action Network odds scraper
 ├── config.py                                        # Configuration settings
 ├── run.sh                                           # Complete pipeline script (train + predict + scrape + analyze)
 ├── Interceptions.ipynb                              # Jupyter notebook for analysis
