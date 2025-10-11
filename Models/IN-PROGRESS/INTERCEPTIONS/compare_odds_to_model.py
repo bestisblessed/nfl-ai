@@ -283,7 +283,7 @@ def main() -> None:
             col_team: 'Tm',
             col_opp: 'Opp',
             'interception_american_odds': 'Model Line (True)',
-            'over_american_odds': 'Book Line (Implied)',
+            'over_american_odds': 'Book Line',
             'market_line_true': 'Book Line (True)',
             'model_prob_interception': 'Model % Prob (True)',
             'dk_prob_over_fair': 'Book % Prob (True)',
@@ -300,22 +300,22 @@ def main() -> None:
         # Format odds compactly and normalize minus sign; replace missing with '-'
         if 'Model Line (True)' in disp.columns:
             disp['Model Line (True)'] = disp['Model Line (True)'].map(fmt_american)
-        if 'Book Line (Implied)' in disp.columns:
-            disp['Book Line (Implied)'] = disp['Book Line (Implied)'].map(fmt_american)
+        if 'Book Line' in disp.columns:
+            disp['Book Line'] = disp['Book Line'].map(fmt_american)
         if 'Book Line (True)' in disp.columns:
             disp['Book Line (True)'] = disp['Book Line (True)'].map(fmt_american)
 
-        # Add numeric for sorting by model_line favorite -> dog
-        if 'Model Line (True)' in disp.columns:
-            disp['_model_line_num'] = disp['Model Line (True)'].map(parse_american_int)
-            disp.sort_values('_model_line_num', inplace=True, kind='mergesort')
-            disp.drop(columns=['_model_line_num'], inplace=True)
+        # Sort by Edge % descending (highest edge first)
+        if 'Edge %' in disp.columns:
+            disp['_edge_num'] = disp['Edge %'].str.rstrip('%').astype(float)
+            disp.sort_values('_edge_num', ascending=False, inplace=True, kind='mergesort')
+            disp.drop(columns=['_edge_num'], inplace=True)
 
         # Add Rank column (1-based) for a clear ordering in the display
         disp.insert(0, 'Rank', range(1, len(disp) + 1))
 
-        # Reorder columns: Rank, Player, Model Line (True), Book Line (True), Book Line (Implied), Model % Prob (True), Book % Prob (True), Edge %, Tm, Opp, Time
-        preferred_order = ['Rank', 'Player', 'Model Line (True)', 'Book Line (True)', 'Book Line (Implied)', 'Model % Prob (True)', 'Book % Prob (True)', 'Edge %', 'Tm', 'Opp', 'Time']
+        # Reorder columns: Rank, Player, Edge %, Book Line, Model Line (True), Book Line (True), Model % Prob (True), Book % Prob (True), Tm, Opp, Time
+        preferred_order = ['Rank', 'Player', 'Edge %', 'Book Line', 'Model Line (True)', 'Book Line (True)', 'Model % Prob (True)', 'Book % Prob (True)', 'Tm', 'Opp', 'Time']
         disp = disp[[c for c in preferred_order if c in disp.columns]]
 
         # Format start_time to short human readable local time
@@ -329,16 +329,22 @@ def main() -> None:
         disp.to_csv(final_csv_path, index=False)
         print(f"Saved edges to {final_csv_path}")
 
-        print("\nAll QBs sorted by model line (favorite → dog):")
-        final_headers = ["Rank","Player","Model Line (True)","Book Line (True)","Book Line (Implied)","Model % Prob (True)","Book % Prob (True)","Edge %","Tm","Opp","Time"]
+        print("\nAll QBs sorted by Edge % (highest advantage first):\n")
+        final_headers = ["Rank","Player","Edge %","Book Line","Model Line (True)","Book Line (True)","Model % Prob (True)","Book % Prob (True)","Tm","Opp","Time"]
+        # final_headers = ["Rank","Player","Edge %","Book\nLine","Model\nLine\n(True)","Book\nLine\n(True)","Model %\nProb\n(True)","Book %\nProb\n(True)","Tm","Opp","Time"]
         tbl = tabulate(
             disp.values,
             headers=final_headers,
+            # tablefmt='grid',  # Better for multiline headers
             tablefmt='github',
             disable_numparse=True,
             showindex=False,
+            maxcolwidths=[4, 18, 7, 9, 12, 12, 15, 15, 3, 4, 7],  # Limit column widths to force wrapping
         )
         print(tbl)
+        print("\nNOTE 🚨:")
+        print(" - 'Book Line' column shows actual betting odds you can wager on DraftKings")
+        print(" - 'True' columns show the real probabilities \033[1mWITH VIG REMOVED\033[0m")
     except Exception:
         # Fallback: basic CSV-like print
         cols = [
@@ -354,12 +360,12 @@ def main() -> None:
         ]
         cols = [c for c in cols if c in out_df.columns]
         tmp = out_df[cols].copy()
-        # Sort by model_line
-        if 'interception_american_odds' in tmp.columns:
-            tmp['_mln'] = tmp['interception_american_odds'].map(parse_american_int)
-            tmp.sort_values('_mln', inplace=True, kind='mergesort')
-            tmp.drop(columns=['_mln'], inplace=True)
-        print("\nAll QBs sorted by model_line (basic print):")
+        # Sort by Edge % descending
+        if 'edge_interception' in tmp.columns:
+            tmp['_edge_num'] = tmp['edge_interception'].astype(float)
+            tmp.sort_values('_edge_num', ascending=False, inplace=True, kind='mergesort')
+            tmp.drop(columns=['_edge_num'], inplace=True)
+        print("\nAll QBs sorted by Edge % (basic print):\n")
         print(tmp.to_string(index=False))
 
 
