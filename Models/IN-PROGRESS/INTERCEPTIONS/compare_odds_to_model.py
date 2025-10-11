@@ -329,22 +329,29 @@ def main() -> None:
         disp.to_csv(final_csv_path, index=False)
         print(f"Saved edges to {final_csv_path}")
 
-        print("\nAll QBs sorted by Edge % (highest advantage first):\n")
-        final_headers = ["Rank","Player","Edge %","Book Line","Model Line (True)","Book Line (True)","Model % Prob (True)","Book % Prob (True)","Tm","Opp","Time"]
+
+        print("\n\n\n")
+        print("INTERCEPTIONS EDGES UPCOMING WEEK:")
+        print("\033[3mAll QBs sorted by Edge % (highest advantage first):\033[0m\n\n")
+        final_headers = ["Rank","Player","Edge %","Book Line","Model Line\n (True)","Book Line\n (True)","Model % Prob\n (True)","Book % Prob\n (True)","Tm","Opp","Time"]
         # final_headers = ["Rank","Player","Edge %","Book\nLine","Model\nLine\n(True)","Book\nLine\n(True)","Model %\nProb\n(True)","Book %\nProb\n(True)","Tm","Opp","Time"]
         tbl = tabulate(
             disp.values,
             headers=final_headers,
             # tablefmt='grid',  # Better for multiline headers
-            tablefmt='github',
+            # tablefmt='github',
+            # tablefmt='simple',  # Org-mode style with row separators like GitHub
+            tablefmt='orgtbl',  # Org-mode style with row separators like GitHub
             disable_numparse=True,
             showindex=False,
-            maxcolwidths=[4, 18, 7, 9, 12, 12, 15, 15, 3, 4, 7],  # Limit column widths to force wrapping
+            # maxcolwidths=[4, 18, 7, 9, 12, 12, 15, 15, 3, 4, 7],  # Limit column widths to force wrapping
+            colalign=['center'] * len(final_headers),  # Center all columns
         )
         print(tbl)
         print("\nNOTE 🚨:")
         print(" - 'Book Line' column shows actual betting odds you can wager on DraftKings")
         print(" - 'True' columns show the real probabilities \033[1mWITH VIG REMOVED\033[0m")
+        print("\n")
     except Exception:
         # Fallback: basic CSV-like print
         cols = [
