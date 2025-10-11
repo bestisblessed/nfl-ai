@@ -80,8 +80,47 @@ This is the standard way bettors compute expected return at posted odds.
 
 ---
 
-# Q4: Can you compare the differences between both versions here? Are there pros and cons of either or or do professionals always do the removed method?
+# Q4: Why is the EV formula p·b − (1 − p)? Is this standard?
 # A4:
+Yes—this is the standard expected value (EV) for a $1 stake at posted odds.
+
+- Definitions:
+  - p: your probability the bet wins
+  - q = 1 − p: your probability the bet loses
+  - b: net profit per $1 if it wins (from American odds)
+    - If +A: b = A/100
+    - If −A: b = 100/|A|
+
+- Derivation:
+  - Profit if win: +b
+  - Profit if lose: −1 (you lose your $1 stake)
+  - EV per $1 = p·(+b) + q·(−1) = p·b − (1 − p)
+
+- Checks:
+  - If your p equals the price-implied probability (fair odds), EV = 0.
+  - If your p is higher than the implied probability, EV > 0.
+  - For any stake s: EV_s = s · (p·b − (1 − p)).
+
+- Decimal odds form:
+  - Let d be decimal odds, then b = d − 1
+  - EV = p·(d − 1) − (1 − p)
+
+Clean examples
+- Example A: price −200
+  - b = 100/200 = 0.50, break-even p = 200/(200+100) = 0.6667
+  - Case 1: p = 0.60 → EV = 0.60·0.50 − 0.40 = −0.10 (−10%) → bad bet
+  - Case 2: p = 0.70 → EV = 0.70·0.50 − 0.30 = +0.05 (+5%)
+
+- Example B: price +150
+  - b = 150/100 = 1.50, break-even p = 100/(150+100) = 0.40
+  - p = 0.45 → EV = 0.45·1.50 − 0.55 = +0.125 (+12.5%)
+
+This is the standard way bettors compute expected return at posted odds.
+
+---
+
+# Q5: Can you compare the differences between both versions here? Are there pros and cons of either or or do professionals always do the removed method?
+# A5:
 Short answer: They differ. Add-vig edges are larger by roughly the market’s total probability V (= over_prob + under_prob). Exact relationship:
   - E_fair = M − B/V
   - E_vig = M·V − B
