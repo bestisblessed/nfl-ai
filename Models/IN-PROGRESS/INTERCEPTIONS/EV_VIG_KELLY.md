@@ -32,8 +32,56 @@ Example with numbers:
 
 ---
 
-# Q3: Can you compare the differences between both versions here? Are there pros and cons of either or or do professionals always do the removed method?
+# Q3: Can you now use one of the lines in my output file to explain it?
 # A3:
+### Example using Cam Ward from `predictions/upcoming_qb_interception_edges_week_1.csv`
+Row:
+- Model % Prob (True): 73.8%
+- Book % Prob (True): 52.9%
+- Book Line (Implied): -128
+- Edge %: 20.9%
+
+What each means:
+- Edge %: 73.8% − 52.9% = 20.9%
+  - Your model thinks “Over 0.5 INTs” happens 20.9 percentage points more often than the book’s fair view. Good for ranking bets.
+
+- EV % (expected return at the posted price -128):
+  - Convert -128 to net profit per $1: b = 100/128 ≈ 0.781
+  - p = 0.738, q = 1 − p = 0.262
+  - EV = p·b − q ≈ 0.738·0.781 − 0.262 ≈ 0.315 → 31.5%
+  - Meaning: long-term, you’d expect about $0.315 profit per $1 wager at -128 if your model is right.
+
+- Kelly % (suggested fraction of bankroll to bet):
+  - Kelly = (b·p − q)/b = EV/b ≈ 0.315/0.781 ≈ 0.403 → 40.3%
+  - This is very aggressive; many use fractional Kelly (e.g., 1/4 Kelly ≈ 10.1%) to limit risk.
+
+In short: Edge says “my model vs the book’s fair view”; EV says “profit at the actual price”; Kelly says “how much to bet” (usually scaled down).
+
+### This is the standard expected value formula for a $1 stake.
+- Set up:
+  - p = your probability the bet wins
+  - q = 1 − p = your probability it loses
+  - b = net profit per $1 if it wins (from American odds)
+    - If +A: b = A/100
+    - If −A: b = 100/|A|
+- Derivation:
+  - Profit if win = +b
+  - Profit if lose = −1 (you lose your $1 stake)
+  - EV per $1 = p·(+b) + q·(−1) = p·b − (1 − p)
+- Checks:
+  - If your p equals the price-implied probability (fair odds), EV = 0.
+  - If your p is higher than the implied probability, EV > 0.
+  - For any stake s, EV_s = s · (p·b − (1 − p)).
+- Decimal odds version:
+  - Let d be decimal odds; b = d − 1
+  - EV = p·(d − 1) − (1 − p)
+
+This is the standard way bettors compute expected return at posted odds.
+
+---
+
+# Q4: Can you compare the differences between both versions here? Are there pros and cons of either or or do professionals always do the removed method?
+# A4:
 Short answer: They differ. Add-vig edges are larger by roughly the market’s total probability V (= over_prob + under_prob). Exact relationship:
   - E_fair = M − B/V
   - E_vig = M·V − B
