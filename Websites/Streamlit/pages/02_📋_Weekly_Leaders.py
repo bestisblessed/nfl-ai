@@ -68,18 +68,11 @@ st.markdown(f"""
     """,
     unsafe_allow_html=True
 )
-st.divider()
+# st.divider()
+st.write("")
 st.write("")
 # st.write("")
 
-# Show current week info
-st.markdown(f"""
-    <div style='background-color: #f0f8ff; padding: 15px; border-radius: 10px; margin-bottom: 20px; text-align: center;'>
-        <strong style='color: #1f77b4; font-size: 1.2em;'>{current_week} Projections</strong>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
 
 # Function to get projections for a specific week
 @st.cache_data
@@ -132,11 +125,11 @@ def create_leaderboard_from_projections(df, prop_type, title, position_filter=No
     leaderboard_df['Rank'] = range(1, len(leaderboard_df) + 1)
 
     # Reorder columns to match expected format
-    cols = ['Rank', 'full_name', 'team', 'opp', 'position', 'pred_yards']
+    cols = ['Rank', 'full_name', 'team', 'opp', 'pred_yards']
     leaderboard_df = leaderboard_df[cols]
 
     # Rename columns for display
-    leaderboard_df.columns = ['Rank', 'Player', 'Team', 'Opponent', 'Position', 'Projected Yards']
+    leaderboard_df.columns = ['Rank', 'Player', 'Team', 'Opponent', 'Projected Yards']
 
     return {
         'title': title,
@@ -205,13 +198,9 @@ wr_boards = [lb for lb in leaderboards if "wr" in lb['title'].lower() and "recei
 te_boards = [lb for lb in leaderboards if "te" in lb['title'].lower()]
 rb_boards = [lb for lb in leaderboards if "rb" in lb['title'].lower()]
 
-# Create sections for each position type
-sections = [
-    ("Quarterbacks", qb_boards),
-    ("Running Backs", rb_boards),
-    ("Wide Receivers", wr_boards),
-    ("Tight Ends", te_boards),
-]
+# Create tabs for each position type
+tab_names = ["Quarterbacks", "Running Backs", "Wide Receivers", "Tight Ends"]
+tab_boards = [qb_boards, rb_boards, wr_boards, te_boards]
 
 def create_styled_dataframe(leaderboard):
     """Create a beautifully styled dataframe for display."""
@@ -268,30 +257,80 @@ def create_styled_dataframe(leaderboard):
     )
     return styled_df
 
-# Display each section
-for section_title, section_boards in sections:
-    if section_boards:
+# st.markdown(f"""
+#     <div style='background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+#                     padding: 1px;
+#                     border-radius: 15px;
+#                     margin: 10px 0 25px 0;
+#                     text-align: center;
+#                     box-shadow: 0 4px 6px rgba(0,0,0,0.08);'>
+#         <h2 style='color: white; margin: 0; font-size: 2em; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); letter-spacing: 1px;'>
+#             {current_week} Leaders
+#         </h2>
+#     </div>
+#     """,
+#     unsafe_allow_html=True
+# )
+        
+# Create tabs for each position
+tabs = st.tabs(tab_names)
+
+for tab, (tab_name, boards) in zip(tabs, zip(tab_names, tab_boards)):
+    with tab:
+        # Add a stylized week title box at the top of each tab, matching the @01_🔮_Weekly_Projections.py style
         st.markdown(f"""
             <div style='background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-                        padding: 20px;
-                        border-radius: 15px;
-                        margin: 25px 0;
-                        text-align: center;
-                        box-shadow: 0 4px 6px rgba(0,0,0,0.1);'>
-                <h2 style='color: white; margin: 0; font-size: 2em; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);'>
-                    {section_title}
+                            padding: 1px;
+                            border-radius: 15px;
+                            margin: 10px 0 25px 0;
+                            text-align: center;
+                            box-shadow: 0 4px 6px rgba(0,0,0,0.08);'>
+                <h2 style='color: white; margin: 0; font-size: 2em; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); letter-spacing: 1px;'>
+                    {current_week} Leaders
                 </h2>
             </div>
             """,
             unsafe_allow_html=True
         )
+        # # st.subheader(current_week, divider=False)
+        if boards:
+            # Display all top projections in a row at the top
+            if len(boards) > 1:
+                cols = st.columns(len(boards))
+                for i, (col, leaderboard) in enumerate(zip(cols, boards)):
+                    with col:
+                        df = leaderboard['dataframe']
+                        if not df.empty and len(df) > 0:
+                            player_column = "Player" if "Player" in df.columns else df.columns[1]
+                            numeric_columns = [
+                                column for column in df.columns
+                                if pd.api.types.is_numeric_dtype(df[column])
+                            ]
 
-        # Create columns for multiple leaderboards in a section
-        cols = st.columns(len(section_boards))
+                            if numeric_columns:
+                                metric_column = numeric_columns[-1]
+                                top_row = df.nsmallest(1, "Rank") if "Rank" in df.columns else df.head(1)
+                                if not top_row.empty:
+                                    metric_value = top_row.iloc[0][metric_column]
+                                    player_value = top_row.iloc[0][player_column]
 
-        for i, (col, leaderboard) in enumerate(zip(cols, section_boards)):
-            with col:
-                # Show top performer first
+                                    # Format the value
+                                    if is_float_dtype(df[metric_column]):
+                                        formatted_value = f"{metric_value:,.1f}"
+                                    elif is_integer_dtype(df[metric_column]):
+                                        formatted_value = f"{int(metric_value):,}"
+                                    else:
+                                        formatted_value = str(metric_value)
+
+                                    # Show top performer metric
+                                    st.metric(
+                                        label=leaderboard['title'].replace("Top 25 ", ""),
+                                        value=f"{formatted_value} {metric_column}",
+                                        delta=player_value
+                                    )
+            else:
+                # Single board - just show the metric centered
+                leaderboard = boards[0]
                 df = leaderboard['dataframe']
                 if not df.empty and len(df) > 0:
                     player_column = "Player" if "Player" in df.columns else df.columns[1]
@@ -317,25 +356,49 @@ for section_title, section_boards in sections:
 
                             # Show top performer metric
                             st.metric(
-                                label="Top Projection",
+                                label=leaderboard['title'].replace("Top 25 ", ""),
                                 value=f"{formatted_value} {metric_column}",
                                 delta=player_value
                             )
 
-                # Table title under metrics
-                st.markdown(f"""
-                    <div style='text-align: center; margin: 15px 0 10px 0;'>
-                        <h4 style='color: #1f77b4; margin: 0; font-size: 1.1em; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;'>
-                            {leaderboard['title'].replace("Top 25 ", "")}
-                        </h4>
-                    </div>
-                    """,
-                    unsafe_allow_html=True
-                )
+            # Display tables side by side for QB and RB (multi-stat positions)
+            if tab_name in ["Quarterbacks", "Running Backs"] and len(boards) > 1:
+                cols = st.columns(len(boards))
+                for i, (col, leaderboard) in enumerate(zip(cols, boards)):
+                    with col:
+                        # Table title
+                        st.markdown(f"""
+                            <div style='text-align: center; margin: 20px 0 10px 0;'>
+                                <h4 style='color: #333; margin: 0; font-size: 1.1em; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;'>
+                                    {leaderboard['title'].replace("Top 25 ", "")}
+                                </h4>
+                            </div>
+                            """,
+                            unsafe_allow_html=True
+                        )
 
-                # Display the styled dataframe
-                styled_df = create_styled_dataframe(leaderboard)
-                st.dataframe(styled_df, use_container_width=True, height=400)
+                        # Display the full expanded dataframe
+                        styled_df = create_styled_dataframe(leaderboard)
+                        st.dataframe(styled_df, use_container_width=True, height=910, hide_index=True)
+            else:
+                # Display tables vertically for single-stat positions (WR, TE)
+                for leaderboard in boards:
+                    # Table title
+                    st.markdown(f"""
+                        <div style='text-align: center; margin: 20px 0 10px 0;'>
+                            <h4 style='color: #333; margin: 0; font-size: 1.1em; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;'>
+                                {leaderboard['title'].replace("Top 25 ", "")}
+                            </h4>
+                        </div>
+                        """,
+                        unsafe_allow_html=True
+                    )
+
+                    # Display the full expanded dataframe
+                    styled_df = create_styled_dataframe(leaderboard)
+                    st.dataframe(styled_df, use_container_width=True, height=910, hide_index=True)
+        else:
+            st.info(f"No {tab_name.lower()} data available for this week.")
 
 
 # Footer

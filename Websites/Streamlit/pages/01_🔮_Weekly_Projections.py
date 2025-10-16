@@ -65,7 +65,7 @@ st.markdown(f"""
     unsafe_allow_html=True
 )
 st.divider()
-st.write("")
+# st.write("")
 
 # Function to load projections data
 @st.cache_data
@@ -191,13 +191,13 @@ else:
 # Main data display
 st.markdown(f"""
     <div style='background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-                        padding: 20px;
+                        padding: 1px;
                         border-radius: 15px;
                         margin: 10px 0 25px 0;
                         text-align: center;
                         box-shadow: 0 4px 6px rgba(0,0,0,0.1);'>
         <h2 style='color: white; margin: 0; font-size: 2em; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);'>
-            {selected_matchup} - Projection Data
+            {selected_matchup} Projections
         </h2>
     </div>
     """,
