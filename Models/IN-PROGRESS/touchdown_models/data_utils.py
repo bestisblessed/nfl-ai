@@ -436,11 +436,11 @@ def prepare_datasets(
     model_ready = player_features[valid_mask].copy()
     print(f"Model-ready data: {len(model_ready)} rows")
 
-    # Use all historical data + 2024 season weeks 1 to (current_week-1) for training
+    # Use all historical data (2017-2024) + current season weeks 1 to (current_week-1) for training
     train = model_ready[
         (~model_ready["is_placeholder"]) & 
         ((model_ready["season"] < upcoming_season) | 
-         ((model_ready["season"] == 2024) & (model_ready["week"] < upcoming_week)))
+         ((model_ready["season"] == upcoming_season) & (model_ready["week"] < upcoming_week)))
     ].copy()
     
     # No separate validation set - use all available data for training
