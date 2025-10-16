@@ -316,12 +316,12 @@ with tab2:
             rb_rushing_ranked = rb_rushing_selected.sort_values(by='rushing_yards', ascending=False).head(30)
 
             if len(rb_rushing_ranked) > 0:
+                st.markdown('**Top 30 Rushing Yards**')
                 # Create Plotly Express chart
                 fig = px.bar(
                     rb_rushing_ranked,
                     x='player_display_name',
                     y='rushing_yards',
-                    title=f'Top 30 Rushing Yards',
                     color='rushing_yards',
                     color_continuous_scale='greens',
                     height=max(400, len(rb_rushing_ranked) * 25)
@@ -341,7 +341,7 @@ with tab2:
             st.write("No RB data.")
 
     with rb_col2:
-        # st.header('RB Total TDs')
+        st.markdown('**Total Touchdowns**')
         if not rb_selected_stats.empty:
             rb_td_selected = rb_selected_stats.groupby('player_display_name').agg({
             'rushing_tds': 'sum',
@@ -354,7 +354,7 @@ with tab2:
         # Filter for players with at least 1 total TD
         rb_td_selected = rb_td_selected[rb_td_selected['total_tds'] > 0]
 
-        rb_td_ranked = rb_td_selected.sort_values(by='total_tds', ascending=False).head(30)
+        rb_td_ranked = rb_td_selected.sort_values(by='total_tds', ascending=False)
 
         if len(rb_td_ranked) > 0:
             # Create a styled dataframe for display
@@ -369,7 +369,8 @@ with tab2:
                     "Total TDs": st.column_config.NumberColumn("Total TDs", format="%d")
                 },
                 hide_index=True,
-                use_container_width=True
+                use_container_width=True,
+                height=750  # Fixed reasonable height
             )
         else:
             st.write("No data.")
@@ -391,12 +392,12 @@ with tab3:
             wr_receiving_ranked = wr_receiving_selected.sort_values(by='receiving_yards', ascending=False).head(30)
 
             if len(wr_receiving_ranked) > 0:
+                st.markdown('**Top 30 Receiving Yards**')
                 # Create Plotly Express chart
                 fig = px.bar(
                     wr_receiving_ranked,
                     x='player_display_name',
                     y='receiving_yards',
-                    title=f'Top 30 Receiving Yards',
                     color='receiving_yards',
                     color_continuous_scale='purples',
                     height=max(400, len(wr_receiving_ranked) * 25)
@@ -416,7 +417,7 @@ with tab3:
             st.write("No WR data.")
 
     with wr_col2:
-        # st.header('WR Total TDs')
+        st.markdown('**Total Touchdowns**')
         if not wr_selected_stats.empty:
             wr_td_selected = wr_selected_stats.groupby('player_display_name').agg({
             'rushing_tds': 'sum',
@@ -429,7 +430,7 @@ with tab3:
         # Filter for players with at least 1 total TD
         wr_td_selected = wr_td_selected[wr_td_selected['total_tds'] > 0]
 
-        wr_td_ranked = wr_td_selected.sort_values(by='total_tds', ascending=False).head(30)
+        wr_td_ranked = wr_td_selected.sort_values(by='total_tds', ascending=False)
 
         if len(wr_td_ranked) > 0:
             # Create a styled dataframe for display
@@ -444,7 +445,8 @@ with tab3:
                     "Total TDs": st.column_config.NumberColumn("Total TDs", format="%d")
                 },
                 hide_index=True,
-                use_container_width=True
+                use_container_width=True,
+                height=750  # Fixed reasonable height
             )
         else:
             st.write("No data.")
@@ -461,17 +463,18 @@ with tab4:
 
     with te_col1:
         if not te_selected_stats.empty:
+            
             # Receiving Yards
             te_receiving_selected = te_selected_stats.groupby('player_display_name')['receiving_yards'].sum().reset_index()
             te_receiving_ranked = te_receiving_selected.sort_values(by='receiving_yards', ascending=False).head(30)
 
             if len(te_receiving_ranked) > 0:
+                st.markdown('**Top 30 Receiving Yards**')
                 # Create Plotly Express chart
                 fig = px.bar(
                     te_receiving_ranked,
                     x='player_display_name',
                     y='receiving_yards',
-                    title=f'Top 30 Receiving Yards',
                     color='receiving_yards',
                     color_continuous_scale='oranges',
                     height=max(400, len(te_receiving_ranked) * 25)
@@ -491,7 +494,7 @@ with tab4:
             st.write("No TE data.")
 
     with te_col2:
-        # st.header('TE Total TDs')
+        st.markdown('**Total Touchdowns**')
         if not te_selected_stats.empty:
             te_td_selected = te_selected_stats.groupby('player_display_name').agg({
             'rushing_tds': 'sum',
@@ -504,7 +507,7 @@ with tab4:
         # Filter for players with at least 1 total TD
         te_td_selected = te_td_selected[te_td_selected['total_tds'] > 0]
 
-        te_td_ranked = te_td_selected.sort_values(by='total_tds', ascending=False).head(30)
+        te_td_ranked = te_td_selected.sort_values(by='total_tds', ascending=False)
 
         if len(te_td_ranked) > 0:
             # Create a styled dataframe for display
@@ -519,7 +522,8 @@ with tab4:
                     "Total TDs": st.column_config.NumberColumn("Total TDs", format="%d")
                 },
                 hide_index=True,
-                use_container_width=True
+                use_container_width=True,
+                height=750  # Fixed reasonable height
             )
         else:
             st.write("No data.")
