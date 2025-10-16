@@ -9,6 +9,7 @@ import pandas as pd
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, classification_report, log_loss, roc_auc_score
 from sklearn.preprocessing import StandardScaler
+from tabulate import tabulate
 
 if __package__ is None or __package__ == "":
     current_dir = Path(__file__).resolve().parent
@@ -18,8 +19,8 @@ else:  # pragma: no cover - fallback for package execution
     from .data_utils import DatasetBundle, prepare_datasets, probability_to_american_odds
 
 
-OUTPUT_DIR = Path(__file__).resolve().parent / "outputs"
-OUTPUT_DIR.mkdir(exist_ok=True)
+OUTPUT_DIR = "/Users/td/Code/nfl-ai/Models/IN-PROGRESS/touchdown_models/outputs"
+Path(OUTPUT_DIR).mkdir(exist_ok=True)
 
 
 def train_logistic_model(bundle: DatasetBundle) -> tuple[LogisticRegression, StandardScaler]:
@@ -67,12 +68,9 @@ def run_inference(
 
     results = bundle.upcoming[[
         "player",
+        "position",
         "team",
         "opponent_team",
-        "games_played_prior",
-        "touches_rolling",
-        "total_tds_rolling",
-        "total_tds_season_avg",
     ]].copy()
     results["model"] = "logistic_regression"
     results["probability"] = probabilities
@@ -90,10 +88,10 @@ def main(upcoming_week: int = 7) -> None:
     evaluate(model, scaler, bundle)
 
     predictions = run_inference(model, scaler, bundle, upcoming_week)
-    print("Top 10 touchdown probabilities for Week", upcoming_week)
-    print(predictions.head(10))
+    print(f"Top 30 touchdown probabilities for Week {upcoming_week}")
+    print(tabulate(predictions.head(30), headers='keys', tablefmt='presto', floatfmt='.3f', numalign='right', showindex=False))
 
-    output_path = OUTPUT_DIR / f"logistic_predictions_week{upcoming_week}.csv"
+    output_path = f"{OUTPUT_DIR}/logistic_predictions_week{upcoming_week}.csv"
     predictions.to_csv(output_path, index=False)
     print(f"Saved predictions to {output_path}")
 

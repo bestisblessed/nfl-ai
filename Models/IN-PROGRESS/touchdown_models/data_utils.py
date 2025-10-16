@@ -3,15 +3,14 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
-from pathlib import Path
 from typing import Dict, List, Tuple
 
 import numpy as np
 import pandas as pd
 
 
-DATA_DIR = Path(__file__).resolve().parents[1] / "final_data_pfr"
-UPCOMING_GAMES_PATH = Path(__file__).resolve().parents[2] / "upcoming_games.csv"
+DATA_DIR = "/Users/td/Code/nfl-ai/Models/IN-PROGRESS/touchdown_models/data/final_data_pfr"
+UPCOMING_GAMES_PATH = "/Users/td/Code/nfl-ai/Models/upcoming_games.csv"
 
 
 BASE_STATS = [
@@ -48,10 +47,39 @@ def probability_to_american_odds(probability: float) -> float:
     return 100.0 * (1.0 - probability) / probability
 
 
-def _load_raw_data(data_dir: Path | None = None) -> Tuple[pd.DataFrame, pd.DataFrame]:
+def _load_raw_data(data_dir: str | None = None) -> Tuple[pd.DataFrame, pd.DataFrame]:
     data_dir = data_dir or DATA_DIR
-    player_stats = pd.read_csv(data_dir / "player_stats_pfr.csv")
-    game_logs = pd.read_csv(data_dir / "game_logs_pfr.csv")
+    player_stats = pd.read_csv(f"{data_dir}/player_stats_pfr.csv")
+
+    # Load and merge position data from rosters
+    rosters = pd.read_csv("/Users/td/Code/nfl-ai/Models/IN-PROGRESS/touchdown_models/data/rosters.csv")
+
+    # Create position mapping for 2025 (most recent season available in rosters)
+    roster_2025 = rosters[rosters['season'] == 2025].copy()
+
+    # Clean player names for better matching
+    def clean_name(name):
+        if pd.isna(name):
+            return ""
+        return str(name).strip()
+
+    roster_2025['full_name_clean'] = roster_2025['full_name'].apply(clean_name)
+
+    # Create position mapping by cleaned player name only (ignore team since players move)
+    position_map_2025 = {}
+    for _, row in roster_2025.iterrows():
+        key = row['full_name_clean'].lower()
+        position_map_2025[key] = row['position']
+
+    # Merge position data into player stats
+    # Use 2025 roster data for all seasons (most current available)
+    def get_position(row):
+        player_name = clean_name(row['player']).lower()
+        return position_map_2025.get(player_name, '')
+
+    player_stats['position'] = player_stats.apply(get_position, axis=1)
+
+    game_logs = pd.read_csv(f"{data_dir}/game_logs_pfr.csv")
     return player_stats, game_logs
 
 
@@ -226,6 +254,7 @@ def _create_player_placeholders(
                 placeholder["away_team"] = away_team
                 placeholder["opponent_team"] = away_team if team == home_team else home_team
                 placeholder["is_placeholder"] = True
+                # Preserve position and other non-numeric columns
                 for col in numeric_cols:
                     if col not in {"season", "week"}:
                         placeholder[col] = np.nan
@@ -342,16 +371,18 @@ def prepare_datasets(
     upcoming_season: int = 2024,
     rolling_window: int = ROLLING_WINDOW,
     min_games: int = 1,
-    data_dir: Path | None = None,
-    upcoming_games_path: Path | None = None,
+    data_dir: str | None = None,
+    upcoming_games_path: str | None = None,
 ) -> DatasetBundle:
     """Return train/validation/upcoming datasets with aligned feature sets."""
 
     player_stats_raw, game_logs_raw = _load_raw_data(data_dir)
     player_stats = _eligible_players(player_stats_raw)
+    print(f"Eligible players: {len(player_stats)} rows")
 
     upcoming_games = pd.read_csv(upcoming_games_path or UPCOMING_GAMES_PATH)
     upcoming_games = upcoming_games.dropna(subset=["home_team", "away_team"])
+    print(f"Upcoming games: {len(upcoming_games)} games")
 
     team_games = _parse_game_logs(game_logs_raw)
     team_games = _attach_team_placeholders(team_games, upcoming_games, upcoming_season, upcoming_week)
@@ -359,8 +390,11 @@ def prepare_datasets(
 
     player_stats = _create_player_placeholders(player_stats, upcoming_games, upcoming_season, upcoming_week)
     player_features, feature_columns = _compute_player_features(player_stats, team_features, rolling_window)
+    print(f"Player features computed: {len(feature_columns)} features")
 
-    player_features["is_placeholder"] = player_features["is_placeholder"].fillna(False).astype(bool)
+    # Suppress the FutureWarning by using pandas' recommended approach
+    with pd.option_context('future.no_silent_downcasting', True):
+        player_features["is_placeholder"] = player_features["is_placeholder"].fillna(False).astype(bool)
     player_features[feature_columns] = player_features[feature_columns].fillna(0.0)
 
     valid_mask = (
@@ -368,6 +402,7 @@ def prepare_datasets(
         & player_features["opponent_team"].ne("")
     )
     model_ready = player_features[valid_mask].copy()
+    print(f"Model-ready data: {len(model_ready)} rows")
 
     train = model_ready[
         (~model_ready["is_placeholder"]) & (model_ready["season"] < upcoming_season)
@@ -376,6 +411,9 @@ def prepare_datasets(
         (~model_ready["is_placeholder"]) & (model_ready["season"] == upcoming_season) & (model_ready["week"] < upcoming_week)
     ].copy()
     upcoming = model_ready[model_ready["is_placeholder"]].copy()
+
+    print(f"Final datasets - Train: {len(train)} rows, Validation: {len(validation)} rows, Upcoming: {len(upcoming)} rows")
+    print("Dataset preparation complete!")
 
     return DatasetBundle(
         feature_columns=feature_columns,

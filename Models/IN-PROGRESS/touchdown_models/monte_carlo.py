@@ -7,6 +7,7 @@ from pathlib import Path
 
 import numpy as np
 import pandas as pd
+from tabulate import tabulate
 
 if __package__ is None or __package__ == "":
     current_dir = Path(__file__).resolve().parent
@@ -26,8 +27,8 @@ else:  # pragma: no cover - fallback for package execution
     )
 
 
-OUTPUT_DIR = Path(__file__).resolve().parent / "outputs"
-OUTPUT_DIR.mkdir(exist_ok=True)
+OUTPUT_DIR = "/Users/td/Code/nfl-ai/Models/IN-PROGRESS/touchdown_models/outputs"
+Path(OUTPUT_DIR).mkdir(exist_ok=True)
 SIMULATIONS = 10000
 
 
@@ -59,10 +60,9 @@ def run_simulation(bundle: DatasetBundle) -> pd.DataFrame:
         records.append(
             {
                 "player": row.get("player"),
+                "position": row.get("position") or "",
                 "team": row.get("team"),
                 "opponent_team": row.get("opponent_team"),
-                "games_played_prior": row.get("games_played_prior"),
-                "expected_touchdowns": lam,
                 "probability": prob_ge_one,
                 "probability_two_plus": prob_ge_two,
                 "american_odds": probability_to_american_odds(prob_ge_one),
@@ -79,10 +79,10 @@ def main(upcoming_week: int = 7) -> None:
     bundle = prepare_datasets(upcoming_week=upcoming_week)
     results = run_simulation(bundle)
 
-    print("Top 10 simulated touchdown probabilities for Week", upcoming_week)
-    print(results.head(10))
+    print(f"Top 30 simulated touchdown probabilities for Week {upcoming_week}")
+    print(tabulate(results.head(30), headers='keys', tablefmt='presto', floatfmt='.3f', numalign='right', showindex=False))
 
-    output_path = OUTPUT_DIR / f"monte_carlo_predictions_week{upcoming_week}.csv"
+    output_path = f"{OUTPUT_DIR}/monte_carlo_predictions_week{upcoming_week}.csv"
     results.to_csv(output_path, index=False)
     print(f"Saved predictions to {output_path}")
 
