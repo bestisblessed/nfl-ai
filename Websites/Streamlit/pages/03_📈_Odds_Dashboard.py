@@ -368,9 +368,10 @@ with col2:
                         else:
                             st.write("No odds movement data available for this game.")
 
-            st.write(' ')
-            st.write(' ')
-            # Inline odds movement graph for this matchup using all sportsbooks
+            # st.write(' ')
+            # st.write(' ')
+
+            # Always show the main Plotly graph first
             selected_matchup = game['matchup']
             if not df_nfl_odds_movements.empty:
                 try:
@@ -403,6 +404,7 @@ with col2:
                         else:
                             selected_data['timestamp'] = pd.to_datetime(selected_data['time_before'], errors='coerce')
 
+                        # Main Plotly graph (always shown)
                         try:
                             # Define colors for different sportsbooks (more visible on grey background)
                             sportsbook_colors = {
@@ -456,7 +458,9 @@ with col2:
                             if plotted_any:
                                 # Update layout with larger size
                                 fig.update_layout(
-                                    title=f"Odds Movement - All Sportsbooks: {game['teams'][0]} vs {game['teams'][1]}",
+                                    title=f"Odds Movement - {game['teams'][0]} vs {game['teams'][1]}",
+                                    title_x=0.29,  # Center the title
+                                    # title_xref='container',  # Position relative to entire container
                                     xaxis_title=dict(
                                         text="Time",
                                         font=dict(size=16, color='black')
@@ -514,9 +518,54 @@ with col2:
                             else:
                                 st.warning("No valid odds movement data available for plotting this matchup.")
                         except Exception as e:
-                            st.error(f"Error creating plot: {str(e)}")
+                            st.error(f"Error creating main plot: {str(e)}")
                             st.write("Raw data for debugging:")
                             st.dataframe(selected_data)
+
+                        # Circa graph in an expandable section below
+                        with st.expander("📊 Show Simplified Circa Graph", expanded=False):
+                            try:
+                                # Filter for Circa sportsbook only
+                                circa_data = selected_data[selected_data['sportsbook'] == 'Circa'].copy()
+
+                                if not circa_data.empty and len(circa_data) > 1:
+                                    # Sort by timestamp
+                                    circa_data = circa_data.sort_values('timestamp')
+
+                                    # Create matplotlib figure
+                                    fig, ax = plt.subplots(figsize=(12, 6))
+
+                                    # Plot both teams' odds
+                                    ax.plot(circa_data['timestamp'], circa_data['team1_odds_before'],
+                                           'o-', color='#FF4500', linewidth=2, markersize=6, label=game['teams'][0])
+                                    ax.plot(circa_data['timestamp'], circa_data['team2_odds_before'],
+                                           's-', color='#1E90FF', linewidth=2, markersize=6, label=game['teams'][1])
+
+                                    # Formatting
+                                    ax.set_title(f'Circa Odds Movement: {game["teams"][0]} vs {game["teams"][1]}',
+                                                fontsize=16, fontweight='bold', loc='center')
+                                    ax.set_xlabel('Time', fontsize=14)
+                                    ax.set_ylabel('Spread', fontsize=14)
+                                    ax.legend(fontsize=12)
+                                    ax.grid(True, alpha=0.3)
+
+                                    # Format y-axis to show decimal places
+                                    ax.yaxis.set_major_formatter(FuncFormatter(lambda x, p: f'{x:.1f}'))
+
+                                    # Format x-axis dates
+                                    ax.xaxis.set_major_formatter(mdates.DateFormatter('%m/%d %I:%M%p'))
+                                    plt.setp(ax.xaxis.get_majorticklabels(), rotation=45)
+
+                                    plt.tight_layout()
+                                    st.pyplot(fig)
+                                    plt.close(fig)
+                                else:
+                                    st.info("Insufficient Circa odds movement data available for this matchup.")
+                            except Exception as e:
+                                st.error(f"Error creating Circa plot: {str(e)}")
+                                if 'Circa' in selected_data['sportsbook'].values:
+                                    st.write("Circa data for debugging:")
+                                    st.dataframe(selected_data[selected_data['sportsbook'] == 'Circa'])
                     else:
                         st.warning("No odds movement data found for this matchup.")
                 except Exception as e:
