@@ -18,6 +18,8 @@ parser = argparse.ArgumentParser(description="Predict QB interception probabilit
 parser.add_argument("--model", type=str, default="logistic_regression",
                    choices=["logistic_regression", "random_forest", "xgboost"],
                    help="Which trained model to use for predictions (default: logistic_regression)")
+parser.add_argument("--week", type=int, default=None,
+                   help="Week number to use for predictions (overrides auto-detection)")
 args = parser.parse_args()
 
 MODEL_PATH = f'/Users/td/Code/nfl-ai/Models/IN-PROGRESS/INTERCEPTIONS/{args.model}_model.pkl'
@@ -135,23 +137,29 @@ def main():
     pred_input = attach_opponents(pred_input, upcoming_games)
 
     # Infer week number for prediction file naming (take max week in starting_qbs or games, fallback to 1)
-    predicted_week = None
-    if 'week' in starting_qbs.columns:
-        try:
-            week_vals = pd.to_numeric(starting_qbs['week'], errors='coerce').dropna()
-            if not week_vals.empty:
-                predicted_week = int(week_vals.max())
-        except Exception:
-            pass
-    if predicted_week is None and upcoming_games is not None and 'week' in upcoming_games.columns:
-        try:
-            week_vals = pd.to_numeric(upcoming_games['week'], errors='coerce').dropna()
-            if not week_vals.empty:
-                predicted_week = int(week_vals.max())
-        except Exception:
-            pass
-    if predicted_week is None:
-        predicted_week = 1  # fallback if not found (could enhance with datetime if needed)
+    # Use command line argument if provided, otherwise auto-detect
+    if args.week is not None:
+        predicted_week = args.week
+        print(f"Using week {predicted_week} from command line argument")
+    else:
+        predicted_week = None
+        if 'week' in starting_qbs.columns:
+            try:
+                week_vals = pd.to_numeric(starting_qbs['week'], errors='coerce').dropna()
+                if not week_vals.empty:
+                    predicted_week = int(week_vals.max())
+            except Exception:
+                pass
+        if predicted_week is None and upcoming_games is not None and 'week' in upcoming_games.columns:
+            try:
+                week_vals = pd.to_numeric(upcoming_games['week'], errors='coerce').dropna()
+                if not week_vals.empty:
+                    predicted_week = int(week_vals.max())
+            except Exception:
+                pass
+        if predicted_week is None:
+            predicted_week = 1  # fallback if not found (could enhance with datetime if needed)
+        print(f"Auto-detected week {predicted_week} from data files")
 
     # Predict
     probs = model.predict_proba(pred_input[features])

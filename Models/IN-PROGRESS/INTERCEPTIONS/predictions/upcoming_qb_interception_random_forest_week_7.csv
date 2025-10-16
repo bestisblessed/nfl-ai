@@ -1,0 +1,33 @@
+player,team,opponent,home_away,interception_american_odds,no_interception_american_odds
+Patrick Mahomes,KC,LVR,HOME,-1567,1567
+Joe Flacco,CIN,PIT,HOME,-809,809
+Bryce Young,CAR,NYJ,AWAY,-733,733
+Cam Ward,TEN,NE,HOME,-733,733
+Sam Darnold,SEA,HOU,HOME,-488,488
+Jaxson Dart,NYG,DEN,AWAY,-488,488
+Cooper Rush,BAL,,,-376,376
+Caleb Williams,CHI,NO,HOME,-335,335
+Geno Smith,LVR,KC,AWAY,-300,300
+Jayden Daniels,WAS,DAL,AWAY,-300,300
+Josh Allen,BUF,,,-285,285
+Trevor Lawrence,JAX,LAR,HOME,-245,245
+Michael Penix Jr.,ATL,SF,AWAY,133,-133
+Baker Mayfield,TB,DET,AWAY,170,-170
+Mac Jones,SF,ATL,HOME,223,-223
+Justin Fields,NYJ,CAR,HOME,270,-270
+Dillon Gabriel,CLE,MIA,HOME,300,-300
+Matthew Stafford,LAR,JAX,AWAY,300,-300
+Justin Herbert,LAC,IND,HOME,300,-300
+Bo Nix,DEN,NYG,HOME,300,-300
+Jordan Love,GB,ARI,AWAY,355,-355
+Aaron Rodgers,PIT,CIN,AWAY,376,-376
+Jalen Hurts,PHI,MIN,AWAY,376,-376
+Spencer Rattler,NO,CHI,AWAY,426,-426
+Daniel Jones,IND,LAC,AWAY,525,-525
+Carson Wentz,MIN,PHI,HOME,614,-614
+Kyler Murray,ARI,GB,HOME,669,-669
+Drake Maye,NE,TEN,AWAY,733,-733
+Jared Goff,DET,TB,HOME,733,-733
+Tua Tagovailoa,MIA,CLE,AWAY,900,-900
+C.J. Stroud,HOU,SEA,AWAY,1567,-1567
+Dak Prescott,DAL,WAS,HOME,9900,-9900
