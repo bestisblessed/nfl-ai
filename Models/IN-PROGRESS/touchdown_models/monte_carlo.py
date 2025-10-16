@@ -8,6 +8,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 from tabulate import tabulate
+import argparse
 
 if __package__ is None or __package__ == "":
     current_dir = Path(__file__).resolve().parent
@@ -75,12 +76,37 @@ def run_simulation(bundle: DatasetBundle) -> pd.DataFrame:
     return results
 
 
-def main(upcoming_week: int = 7) -> None:
+def main(upcoming_week: int = 7, home_team: str = None, away_team: str = None) -> None:
     bundle = prepare_datasets(upcoming_week=upcoming_week)
     results = run_simulation(bundle)
 
-    print(f"Top 30 simulated touchdown probabilities for Week {upcoming_week}")
-    print(tabulate(results.head(30), headers='keys', tablefmt='presto', floatfmt='.3f', numalign='right', showindex=False))
+    # Filter by matchup if specified
+    if home_team and away_team:
+        results = results[
+            ((results['team'] == home_team) & (results['opponent_team'] == away_team)) |
+            ((results['team'] == away_team) & (results['opponent_team'] == home_team))
+        ]
+        matchup_str = f"{home_team} vs {away_team}"
+        print(f"Top simulated touchdown probabilities for Week {upcoming_week} - {matchup_str}")
+    else:
+        print(f"Top 30 simulated touchdown probabilities for Week {upcoming_week}")
+
+    display_count = len(results) if (home_team and away_team) else 30
+    # Custom formatter to add + signs to positive numbers (whole numbers)
+    def format_with_plus(val):
+        try:
+            num = float(val)
+            if num > 0:
+                return f"+{int(num)}"
+            else:
+                return f"{int(num)}"
+        except (ValueError, TypeError):
+            return str(val)
+
+    formatted_results = results.head(display_count).copy()
+    formatted_results['american_odds'] = formatted_results['american_odds'].apply(format_with_plus)
+
+    print(tabulate(formatted_results, headers='keys', tablefmt='presto', floatfmt='.3f', numalign='right', showindex=False))
 
     output_path = f"{OUTPUT_DIR}/monte_carlo_predictions_week{upcoming_week}.csv"
     results.to_csv(output_path, index=False)
@@ -88,4 +114,10 @@ def main(upcoming_week: int = 7) -> None:
 
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser(description='Monte Carlo Touchdown Predictor')
+    parser.add_argument('--matchup', nargs=2, metavar=('HOME_TEAM', 'AWAY_TEAM'),
+                       help='Filter predictions to specific matchup (e.g., PHI MIN)')
+    args = parser.parse_args()
+
+    main(home_team=args.matchup[0] if args.matchup else None,
+         away_team=args.matchup[1] if args.matchup else None)

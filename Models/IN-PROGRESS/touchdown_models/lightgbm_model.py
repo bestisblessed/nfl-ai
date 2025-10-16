@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import argparse
 import sys
 from pathlib import Path
 
@@ -87,14 +88,40 @@ def run_inference(
     return results
 
 
-def main(upcoming_week: int = 7) -> None:
+def main(upcoming_week: int = 7, home_team: str = None, away_team: str = None) -> None:
     bundle = prepare_datasets(upcoming_week=upcoming_week)
     model = train_lightgbm(bundle)
     evaluate(model, bundle)
 
     predictions = run_inference(model, bundle, upcoming_week)
-    print(f"Top 30 touchdown probabilities for Week {upcoming_week}")
-    print(tabulate(predictions.head(30), headers='keys', tablefmt='presto', floatfmt='.3f', numalign='right', showindex=False))
+
+    # Filter by matchup if specified
+    if home_team and away_team:
+        predictions = predictions[
+            ((predictions['team'] == home_team) & (predictions['opponent_team'] == away_team)) |
+            ((predictions['team'] == away_team) & (predictions['opponent_team'] == home_team))
+        ]
+        matchup_str = f"{home_team} vs {away_team}"
+        print(f"Top touchdown probabilities for Week {upcoming_week} - {matchup_str}")
+    else:
+        print(f"Top 30 touchdown probabilities for Week {upcoming_week}")
+
+    display_count = len(predictions) if (home_team and away_team) else 30
+    # Custom formatter to add + signs to positive numbers (whole numbers)
+    def format_with_plus(val):
+        try:
+            num = float(val)
+            if num > 0:
+                return f"+{int(num)}"
+            else:
+                return f"{int(num)}"
+        except (ValueError, TypeError):
+            return str(val)
+
+    formatted_predictions = predictions.head(display_count).copy()
+    formatted_predictions['american_odds'] = formatted_predictions['american_odds'].apply(format_with_plus)
+
+    print(tabulate(formatted_predictions, headers='keys', tablefmt='presto', floatfmt='.3f', numalign='right', showindex=False))
 
     output_path = f"{OUTPUT_DIR}/lightgbm_predictions_week{upcoming_week}.csv"
     predictions.to_csv(output_path, index=False)
@@ -102,4 +129,10 @@ def main(upcoming_week: int = 7) -> None:
 
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser(description='LightGBM Touchdown Predictor')
+    parser.add_argument('--matchup', nargs=2, metavar=('HOME_TEAM', 'AWAY_TEAM'),
+                       help='Filter predictions to specific matchup (e.g., PHI MIN)')
+    args = parser.parse_args()
+
+    main(home_team=args.matchup[0] if args.matchup else None,
+         away_team=args.matchup[1] if args.matchup else None)

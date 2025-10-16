@@ -47,7 +47,7 @@ def probability_to_american_odds(probability: float) -> float:
     return 100.0 * (1.0 - probability) / probability
 
 
-def _load_raw_data(data_dir: str | None = None) -> Tuple[pd.DataFrame, pd.DataFrame]:
+def _load_raw_data(data_dir: str | None = None) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
     data_dir = data_dir or DATA_DIR
     player_stats = pd.read_csv(f"{data_dir}/player_stats_pfr.csv")
 
@@ -65,22 +65,25 @@ def _load_raw_data(data_dir: str | None = None) -> Tuple[pd.DataFrame, pd.DataFr
 
     roster_2025['full_name_clean'] = roster_2025['full_name'].apply(clean_name)
 
-    # Create position mapping by cleaned player name only (ignore team since players move)
+    # Create position mapping by (player_name, team) for 2025 rosters
     position_map_2025 = {}
     for _, row in roster_2025.iterrows():
-        key = row['full_name_clean'].lower()
+        key = (row['full_name_clean'].lower(), row['team'])
         position_map_2025[key] = row['position']
 
     # Merge position data into player stats
-    # Use 2025 roster data for all seasons (most current available)
     def get_position(row):
         player_name = clean_name(row['player']).lower()
-        return position_map_2025.get(player_name, '')
+        team = row['team']
+
+        # Only assign position if player is on 2025 roster for this specific team
+        player_team_key = (player_name, team)
+        return position_map_2025.get(player_team_key, '')
 
     player_stats['position'] = player_stats.apply(get_position, axis=1)
 
     game_logs = pd.read_csv(f"{data_dir}/game_logs_pfr.csv")
-    return player_stats, game_logs
+    return player_stats, game_logs, roster_2025
 
 
 def _parse_game_logs(game_logs: pd.DataFrame) -> pd.DataFrame:
@@ -214,6 +217,10 @@ def _eligible_players(player_stats: pd.DataFrame) -> pd.DataFrame:
     data["team"] = data["team"].fillna("")
     data["home_team"] = data["home_team"].fillna("")
     data["away_team"] = data["away_team"].fillna("")
+
+    # Filter to only include players who have positions (are on current rosters)
+    data = data[data["position"].notna() & (data["position"] != "")]
+
     return data
 
 
@@ -376,7 +383,7 @@ def prepare_datasets(
 ) -> DatasetBundle:
     """Return train/validation/upcoming datasets with aligned feature sets."""
 
-    player_stats_raw, game_logs_raw = _load_raw_data(data_dir)
+    player_stats_raw, game_logs_raw, roster_2025 = _load_raw_data(data_dir)
     player_stats = _eligible_players(player_stats_raw)
     print(f"Eligible players: {len(player_stats)} rows")
 
