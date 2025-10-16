@@ -125,13 +125,13 @@ with col2:
             'LVR': 'Las Vegas Raiders', 'LAC': 'Los Angeles Chargers'
         }
         
-        # Create matchup strings from upcoming games (format: "Home vs Away" to match JSON data)
+        # Create matchup strings from upcoming games (format: "Away vs Home" to match JSON data)
         # Store the order from CSV for later sorting
         upcoming_matchups_ordered = []
         for _, row in df_upcoming_games.iterrows():
             away_team = team_mapping.get(row['away_team'], row['away_team'])
             home_team = team_mapping.get(row['home_team'], row['home_team'])
-            matchup = f"{home_team} vs {away_team}".lower()
+            matchup = f"{away_team} vs {home_team}".lower()
             upcoming_matchups_ordered.append(matchup)
 
         # Filter games_df to only include upcoming games
@@ -150,7 +150,7 @@ with col2:
         # Show all upcoming games - historical data is a bonus but not required for current odds display
         games_with_sufficient_data = games_df
     else:
-        games_with_sufficient_data = []
+        games_with_sufficient_data = pd.DataFrame()  # Empty DataFrame instead of list
 
     # Normalize matchup and compute Circa upcoming-week subset once for reuse in the loop below
     def normalize_matchup(matchup):
@@ -207,115 +207,118 @@ with col2:
     else:
         upcoming_week_games = df_nfl_odds_movements_circa
 
-    for _, game in games_with_sufficient_data.iterrows():
-        st.markdown(f"<h2 style='font-weight: bold; color: #512D6D; text-shadow: -1px -1px 0 #C5B783, 1px -1px 0 #C5B783, -1px 1px 0 #C5B783, 1px 1px 0 #C5B783;'>{game['teams'][0]} vs {game['teams'][1]}</h2>", unsafe_allow_html=True)
-        
-        # Format date properly - "Sun, September 14th"
-        formatted_date = game['game_date'].replace(',', ', ').replace('september', 'September ').replace('sun', 'Sun').replace('mon', 'Mon').replace('tue', 'Tue').replace('wed', 'Wed').replace('thu', 'Thu').replace('fri', 'Fri').replace('sat', 'Sat')
-        
-        # Format time properly
-        formatted_time = game['time'].replace('splits', '').strip().replace('pm', 'PM').replace('am', 'AM')
-        
-        # Game Date - half size of title (emoji removed)
-        st.markdown(f"<p style='font-size: 18px; margin: 5px 0;'><strong>{formatted_date}</strong></p>", unsafe_allow_html=True)
-        
-        # Game Time - bigger size (emoji removed)
-        st.markdown(f"<p style='font-size: 16px; margin: 5px 0;'><strong>{formatted_time}</strong></p>", unsafe_allow_html=True)
-        st.write("")
-        df = pd.DataFrame({
-            "Team": [game['teams'][0], game['teams'][1]],
-            "Spread": [game['spread'][0], game['spread'][1]],
-            "Moneyline": [game['moneyline'][0], game['moneyline'][1]],
-            "Total": [game['total'][0], game['total'][1]]
-        })
-        st.table(df.set_index('Team'))
+    if not games_with_sufficient_data.empty:
+        for _, game in games_with_sufficient_data.iterrows():
+            st.markdown(f"<h2 style='font-weight: bold; color: #512D6D; text-shadow: -1px -1px 0 #C5B783, 1px -1px 0 #C5B783, -1px 1px 0 #C5B783, 1px 1px 0 #C5B783;'>{game['teams'][0]} vs {game['teams'][1]}</h2>", unsafe_allow_html=True)
 
-        # Create two columns for parallel expanders (like the old modal buttons)
-        col1, col2 = st.columns(2)
-        
-        for i, team in enumerate(game['teams']):
-            # Use the appropriate column for each team (parallel layout)
-            with col1 if i == 0 else col2:
-                # Remove emoji from expander title
-                with st.expander(f"Odds Movement for {team}", expanded=False):
-                    game_date_clean = game['game_date'].replace(' ', '').strip().lower()
-                    game_time_clean = game['time'].strip().lower()
-                    matchup_clean = game['matchup'].strip().lower()
-                    relevant_odds_movements = df_nfl_odds_movements.loc[
-                        (df_nfl_odds_movements['game_date'] == game_date_clean) &
-                        (df_nfl_odds_movements['game_time'] == game_time_clean) &
-                        (df_nfl_odds_movements['matchup'] == matchup_clean)
-                    ].copy()
-                    if not relevant_odds_movements.empty:
-                        if 'file2' in relevant_odds_movements.columns:
-                            relevant_odds_movements['timestamp'] = relevant_odds_movements['file2'].apply(
-                                lambda x: '_'.join(x.split('_')[3:5]).replace('.json', '')
-                            )
-                            relevant_odds_movements['timestamp'] = pd.to_datetime(
-                                relevant_odds_movements['timestamp'], format='%Y%m%d_%H%M'
-                            ).dt.strftime('%-m/%d %-I:%M%p').str.lower()
-                        sportsbooks = relevant_odds_movements['sportsbook'].unique().tolist()
-                        default_index = sportsbooks.index('Circa') if 'Circa' in sportsbooks else 0
-                        selected_sportsbook = st.selectbox("Select Sportsbook", sportsbooks, index=default_index, key=f"sb_{team}_{game['game_date']}_{game['time']}")
-                        filtered_data = relevant_odds_movements[relevant_odds_movements['sportsbook'] == selected_sportsbook]
-                        st.dataframe(filtered_data[['timestamp', 'sportsbook', 'odds_before', 'odds_after']], use_container_width=True)
-                    else:
-                        st.write("No odds movement data available for this game.")
+            # Format date properly - "Sun, September 14th"
+            formatted_date = game['game_date'].replace(',', ', ').replace('september', 'September ').replace('sun', 'Sun').replace('mon', 'Mon').replace('tue', 'Tue').replace('wed', 'Wed').replace('thu', 'Thu').replace('fri', 'Fri').replace('sat', 'Sat')
 
-        st.write(' ')
-        st.write(' ')
-        # Inline odds movement graph for this matchup using Circa data (moved below modal buttons)
-        selected_matchup = game['matchup']
-        if isinstance(upcoming_week_games, pd.DataFrame) and ('matchup' in upcoming_week_games.columns) and (len(upcoming_week_games) > 0):
-            try:
-                matchup_mask = upcoming_week_games['matchup'].apply(normalize_matchup) == normalize_matchup(selected_matchup)
-                selected_data = upcoming_week_games[matchup_mask].copy()
-                if len(selected_data) > 0:
-                    selected_data.loc[:, 'team1_odds_before'] = selected_data['team1_odds_before'].replace('PK', 0)
-                    selected_data.loc[:, 'team2_odds_before'] = selected_data['team2_odds_before'].replace('PK', 0)
-                    selected_data.loc[:, 'team1_odds_before'] = pd.to_numeric(selected_data['team1_odds_before'], errors='coerce')
-                    selected_data.loc[:, 'team2_odds_before'] = pd.to_numeric(selected_data['team2_odds_before'], errors='coerce')
-                    selected_data = selected_data.dropna(subset=['team1_odds_before', 'team2_odds_before'])
-                    try:
-                        selected_data.loc[:, 'time_before'] = pd.to_datetime(selected_data['time_before'], format='%b %d %I:%M%p')
-                    except Exception:
-                        try:
-                            selected_data.loc[:, 'time_before'] = pd.to_datetime(selected_data['time_before'], errors='coerce')
-                        except Exception:
-                            selected_data.loc[:, 'time_before'] = pd.date_range(start='2024-01-01', periods=len(selected_data), freq='H')
-                    try:
-                        fig, ax = plt.subplots(figsize=(12, 6))
-                        if len(selected_data) > 0 and not selected_data['time_before'].isna().all():
-                            ax.plot(selected_data['time_before'], selected_data['team1_odds_before'], label=game['teams'][0])
-                            ax.plot(selected_data['time_before'], selected_data['team2_odds_before'], label=game['teams'][1])
-                            ax.set_title(f"Circa Odds Movement: {game['teams'][0]} vs {game['teams'][1]}")
-                            # ax.set_xlabel('Date')
-                            ax.set_ylabel('Spread')
-                            ax.yaxis.set_major_formatter(FuncFormatter(lambda v, pos: f"+{v:g}" if v > 0 else ("0" if v == 0 else f"{v:g}")))
-                            ax.xaxis.set_major_formatter(FuncFormatter(lambda v, pos: format_numeric_md_hour(mdates.num2date(v))))
-                            plt.xticks(rotation=45)
-                            plt.legend()
-                            plt.grid(True)
-                            st.pyplot(fig, use_container_width=True)
+            # Format time properly
+            formatted_time = game['time'].replace('splits', '').strip().replace('pm', 'PM').replace('am', 'AM')
+
+            # Game Date - half size of title (emoji removed)
+            st.markdown(f"<p style='font-size: 18px; margin: 5px 0;'><strong>{formatted_date}</strong></p>", unsafe_allow_html=True)
+
+            # Game Time - bigger size (emoji removed)
+            st.markdown(f"<p style='font-size: 16px; margin: 5px 0;'><strong>{formatted_time}</strong></p>", unsafe_allow_html=True)
+            st.write("")
+            df = pd.DataFrame({
+                "Team": [game['teams'][0], game['teams'][1]],
+                "Spread": [game['spread'][0], game['spread'][1]],
+                "Moneyline": [game['moneyline'][0], game['moneyline'][1]],
+                "Total": [game['total'][0], game['total'][1]]
+            })
+            st.table(df.set_index('Team'))
+
+            # Create two columns for parallel expanders (like the old modal buttons)
+            col1, col2 = st.columns(2)
+
+            for i, team in enumerate(game['teams']):
+                # Use the appropriate column for each team (parallel layout)
+                with col1 if i == 0 else col2:
+                    # Remove emoji from expander title
+                    with st.expander(f"Odds Movement for {team}", expanded=False):
+                        game_date_clean = game['game_date'].replace(' ', '').strip().lower()
+                        game_time_clean = game['time'].strip().lower()
+                        matchup_clean = game['matchup'].strip().lower()
+                        relevant_odds_movements = df_nfl_odds_movements.loc[
+                            (df_nfl_odds_movements['game_date'] == game_date_clean) &
+                            (df_nfl_odds_movements['game_time'] == game_time_clean) &
+                            (df_nfl_odds_movements['matchup'] == matchup_clean)
+                        ].copy()
+                        if not relevant_odds_movements.empty:
+                            if 'file2' in relevant_odds_movements.columns:
+                                relevant_odds_movements['timestamp'] = relevant_odds_movements['file2'].apply(
+                                    lambda x: '_'.join(x.split('_')[3:5]).replace('.json', '')
+                                )
+                                relevant_odds_movements['timestamp'] = pd.to_datetime(
+                                    relevant_odds_movements['timestamp'], format='%Y%m%d_%H%M'
+                                ).dt.strftime('%-m/%d %-I:%M%p').str.lower()
+                            sportsbooks = relevant_odds_movements['sportsbook'].unique().tolist()
+                            default_index = sportsbooks.index('Circa') if 'Circa' in sportsbooks else 0
+                            selected_sportsbook = st.selectbox("Select Sportsbook", sportsbooks, index=default_index, key=f"sb_{team}_{game['game_date']}_{game['time']}")
+                            filtered_data = relevant_odds_movements[relevant_odds_movements['sportsbook'] == selected_sportsbook]
+                            st.dataframe(filtered_data[['timestamp', 'sportsbook', 'odds_before', 'odds_after']], use_container_width=True)
                         else:
-                            st.warning("No valid odds data available for plotting this matchup.")
-                    except Exception as e:
-                        st.error(f"Error creating plot: {str(e)}")
-                        st.write("Raw data for debugging:")
-                        st.dataframe(selected_data)
-                else:
-                    st.warning("No odds movement data found for this matchup.")
-            except Exception as e:
-                st.error(f"Error preparing odds data: {str(e)}")
-        else:
-            st.warning("No Circa odds data available to plot for this matchup.")
-            
-        st.write(' ')
-        st.divider()
-        st.write(' ')
+                            st.write("No odds movement data available for this game.")
 
-        
-        
+            st.write(' ')
+            st.write(' ')
+            # Inline odds movement graph for this matchup using Circa data (moved below modal buttons)
+            selected_matchup = game['matchup']
+            if isinstance(upcoming_week_games, pd.DataFrame) and ('matchup' in upcoming_week_games.columns) and (len(upcoming_week_games) > 0):
+                try:
+                    matchup_mask = upcoming_week_games['matchup'].apply(normalize_matchup) == normalize_matchup(selected_matchup)
+                    selected_data = upcoming_week_games[matchup_mask].copy()
+                    if len(selected_data) > 0:
+                        selected_data.loc[:, 'team1_odds_before'] = selected_data['team1_odds_before'].replace('PK', 0)
+                        selected_data.loc[:, 'team2_odds_before'] = selected_data['team2_odds_before'].replace('PK', 0)
+                        selected_data.loc[:, 'team1_odds_before'] = pd.to_numeric(selected_data['team1_odds_before'], errors='coerce')
+                        selected_data.loc[:, 'team2_odds_before'] = pd.to_numeric(selected_data['team2_odds_before'], errors='coerce')
+                        selected_data = selected_data.dropna(subset=['team1_odds_before', 'team2_odds_before'])
+                        try:
+                            selected_data.loc[:, 'time_before'] = pd.to_datetime(selected_data['time_before'], format='%b %d %I:%M%p')
+                        except Exception:
+                            try:
+                                selected_data.loc[:, 'time_before'] = pd.to_datetime(selected_data['time_before'], errors='coerce')
+                            except Exception:
+                                selected_data.loc[:, 'time_before'] = pd.date_range(start='2024-01-01', periods=len(selected_data), freq='H')
+                        try:
+                            fig, ax = plt.subplots(figsize=(12, 6))
+                            if len(selected_data) > 0 and not selected_data['time_before'].isna().all():
+                                ax.plot(selected_data['time_before'], selected_data['team1_odds_before'], label=game['teams'][0])
+                                ax.plot(selected_data['time_before'], selected_data['team2_odds_before'], label=game['teams'][1])
+                                ax.set_title(f"Circa Odds Movement: {game['teams'][0]} vs {game['teams'][1]}")
+                                # ax.set_xlabel('Date')
+                                ax.set_ylabel('Spread')
+                                ax.yaxis.set_major_formatter(FuncFormatter(lambda v, pos: f"+{v:g}" if v > 0 else ("0" if v == 0 else f"{v:g}")))
+                                ax.xaxis.set_major_formatter(FuncFormatter(lambda v, pos: format_numeric_md_hour(mdates.num2date(v))))
+                                plt.xticks(rotation=45)
+                                plt.legend()
+                                plt.grid(True)
+                                st.pyplot(fig, use_container_width=True)
+                            else:
+                                st.warning("No valid odds data available for plotting this matchup.")
+                        except Exception as e:
+                            st.error(f"Error creating plot: {str(e)}")
+                            st.write("Raw data for debugging:")
+                            st.dataframe(selected_data)
+                    else:
+                        st.warning("No odds movement data found for this matchup.")
+                except Exception as e:
+                    st.error(f"Error preparing odds data: {str(e)}")
+            else:
+                st.warning("No Circa odds data available to plot for this matchup.")
+
+            st.write(' ')
+            st.divider()
+            st.write(' ')
+    else:
+        st.warning("No upcoming games found in the odds data.")
+
+
+
     # # ---- Contact Me ---- #
     # st.divider()
     # st.header('Contact Me')
