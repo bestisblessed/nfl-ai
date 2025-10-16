@@ -105,8 +105,12 @@ with tab1:
         qb_interceptions_data = qb_interceptions_selected.sort_values(by='interceptions', ascending=False)
 
         # Calculate Sacks data
-        qb_sacked_selected = qb_selected_stats.groupby('player_display_name')['sacks'].sum().reset_index()
+        qb_sacked_selected = qb_selected_stats.groupby('player_display_name').agg({
+            'sacks': 'sum',
+            'game_id': 'nunique'
+        }).reset_index()
         qb_sacked_selected = qb_sacked_selected[qb_sacked_selected['sacks'] > 0]
+        qb_sacked_selected = qb_sacked_selected[qb_sacked_selected['game_id'] >= 2]
         qb_sacks_data = qb_sacked_selected.sort_values(by='sacks', ascending=False)
 
         # Calculate Passing Yards per Game data
@@ -220,7 +224,7 @@ with tab1:
     with col3:
         # st.header('Quarterback Sack Rankings')
         if qb_sacks_data is not None and len(qb_sacks_data) > 0:
-            st.markdown('**Sack Rankings**')
+            st.markdown('**Sacks (Min. 2 Games)**') 
             # Create bar chart with text labels
             bars = alt.Chart(qb_sacks_data).mark_bar(
                 color='blueviolet',
@@ -228,7 +232,7 @@ with tab1:
             ).encode(
                 x=alt.X('sacks:Q', title='Number of Sacks'),
                 y=alt.Y('player_display_name:N', title='Quarterbacks', sort='-x'),
-                tooltip=['player_display_name', 'sacks']
+                tooltip=['player_display_name', 'sacks', 'game_id']
             )
 
             # Add text labels on the bars
@@ -261,7 +265,7 @@ with tab1:
     with col4:
         # st.header('Quarterback Interception Rankings')
         if qb_interceptions_data is not None and len(qb_interceptions_data) > 0:
-            st.markdown('**Interception Rankings (Min. 10 Attempts)**')
+            st.markdown('**Interceptions (Min. 10 Attempts)**')
             # Create bar chart with text labels
             bars = alt.Chart(qb_interceptions_data).mark_bar(
                 color='salmon',
