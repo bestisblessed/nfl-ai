@@ -148,7 +148,7 @@ col1, col2 = st.columns(2)
 with col1:
     df_team_game_logs_filtered = df_team_game_logs_selected[(df_team_game_logs_selected[week_col] >= 1) & (df_team_game_logs_selected[week_col] <= 18)]
     merged_data = pd.merge(df_team_game_logs_filtered, df_teams, left_on=team_name_col, right_on='Team', how='left')
-    team_passing_yards = merged_data.groupby('TeamID')['pass_yds'].sum().reset_index()
+    team_passing_yards = merged_data.groupby('TeamID')['pass_yds'].mean().reset_index()
     team_passing_yards_ranked = team_passing_yards.sort_values(by='pass_yds', ascending=False).reset_index(drop=True)
     st.dataframe(team_passing_yards_ranked, use_container_width=True)
 
@@ -156,7 +156,7 @@ with col1:
 with col2:
     df_team_game_logs_filtered = df_team_game_logs_selected[(df_team_game_logs_selected[week_col] >= 1) & (df_team_game_logs_selected[week_col] <= 18)]
     merged_data = pd.merge(df_team_game_logs_filtered, df_teams, left_on=team_name_col, right_on='Team', how='left')
-    team_rushing_yards = merged_data.groupby('TeamID')['rush_yds'].sum().reset_index()
+    team_rushing_yards = merged_data.groupby('TeamID')['rush_yds'].mean().reset_index()
     team_rushing_yards_ranked = team_rushing_yards.sort_values(by='rush_yds', ascending=False).reset_index(drop=True)
     st.dataframe(team_rushing_yards_ranked, use_container_width=True)
 
@@ -201,8 +201,8 @@ with col1:
     results_passing_yards_allowed = []
     for team in filtered_df_teams['TeamID']:
         team_filtered_data = df_schedule_and_game_results_filtered[df_schedule_and_game_results_filtered['Team'] == team]
-        total_passing_yards_allowed = team_filtered_data['OppPassY'].sum()
-        results_passing_yards_allowed.append({'Team': team, 'Total Passing Yards Allowed': total_passing_yards_allowed})
+        avg_passing_yards_allowed = team_filtered_data['OppPassY'].mean()
+        results_passing_yards_allowed.append({'Team': team, 'Avg Passing Yards Allowed': avg_passing_yards_allowed})
     st.dataframe(results_passing_yards_allowed, use_container_width=True)
 
 # Rushing Yards Allowed
@@ -210,6 +210,6 @@ with col2:
     results_rushing_yards_allowed = []
     for team in filtered_df_teams['TeamID']:
         team_filtered_data = df_schedule_and_game_results_filtered[df_schedule_and_game_results_filtered['Team'] == team]
-        total_rushing_yards_allowed = team_filtered_data['OppRushY'].sum()
-        results_rushing_yards_allowed.append({'Team': team, 'Total Rushing Yards Allowed': total_rushing_yards_allowed})
+        avg_rushing_yards_allowed = team_filtered_data['OppRushY'].mean()
+        results_rushing_yards_allowed.append({'Team': team, 'Avg Rushing Yards Allowed': avg_rushing_yards_allowed})
     st.dataframe(results_rushing_yards_allowed, use_container_width=True)

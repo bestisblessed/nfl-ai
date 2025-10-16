@@ -1,6 +1,9 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
+import seaborn as sns
+import plotly.express as px
+import altair as alt
 import os
 # from Home import df_teams, df_games, df_playerstats, df_team_game_logs, df_schedule_and_game_results
 
@@ -81,36 +84,12 @@ st.divider()
 tab1, tab2, tab3, tab4 = st.tabs(["QBs", "RBs", "WRs", "TEs"])
 
 with tab1:
-### SACKS ###
-    st.header('Quarterback Sack Rankings')
+    ### INTERCEPTIONS ###
+    st.header('Quarterback Interception Rankings')
     # Get the appropriate dataset for the selected season
     current_player_data = get_player_data_for_season(selected_season)
     qb_selected_stats = current_player_data[(current_player_data['position'] == 'QB') & (current_player_data['season'] == selected_season)]
     
-    if not qb_selected_stats.empty:
-        qb_sacked_selected = qb_selected_stats.groupby('player_display_name')['sacks'].sum().reset_index()
-        # Filter out QBs with 0 sacks
-        qb_sacked_selected = qb_sacked_selected[qb_sacked_selected['sacks'] > 0]
-        qb_sacked_ranked_selected = qb_sacked_selected.sort_values(by='sacks', ascending=False)
-        
-        if len(qb_sacked_ranked_selected) > 0:
-            plt.figure(figsize=(12, max(6, len(qb_sacked_ranked_selected) * 0.3)))
-            bars = plt.barh(qb_sacked_ranked_selected['player_display_name'], qb_sacked_ranked_selected['sacks'], color='skyblue')
-            plt.xlabel('Number of Sacks', fontsize=14)
-            plt.ylabel('Quarterbacks', fontsize=14)
-            plt.title(f'Number of Sacks for NFL Quarterbacks in {selected_season}', fontsize=16)
-            plt.xticks(fontsize=10)
-            plt.yticks(fontsize=10)
-            plt.bar_label(bars)
-            plt.tight_layout()
-            st.pyplot(plt)
-        else:
-            st.write("No QB sack data available for the selected season.")
-    else:
-        st.write("No QB data available for the selected season.")
-
-    ### INTERCEPTIONS ###
-    st.header('Quarterback Interception Rankings')
     if not qb_selected_stats.empty:
         # Group by player and sum both interceptions and passing attempts
         qb_interceptions_selected = qb_selected_stats.groupby('player_display_name').agg({
@@ -124,18 +103,57 @@ with tab1:
         qb_interceptions_ranked_selected = qb_interceptions_selected.sort_values(by='interceptions', ascending=False)
         
         if len(qb_interceptions_ranked_selected) > 0:
-            plt.figure(figsize=(12, max(6, len(qb_interceptions_ranked_selected) * 0.3)))
-            bars = plt.barh(qb_interceptions_ranked_selected['player_display_name'], qb_interceptions_ranked_selected['interceptions'], color='salmon')
-            plt.xlabel('Number of Interceptions', fontsize=14)
-            plt.ylabel('Quarterbacks', fontsize=14)
-            plt.title(f'Number of Interceptions for NFL Quarterbacks in {selected_season} (Min. 10 Pass Attempts)', fontsize=16)
-            plt.xticks(fontsize=10)
-            plt.yticks(fontsize=10)
-            plt.bar_label(bars)
-            plt.tight_layout()
-            st.pyplot(plt)
+            # Create Altair horizontal bar chart
+            chart = alt.Chart(qb_interceptions_ranked_selected).mark_bar(
+                color='salmon',
+                size=20
+            ).encode(
+                x=alt.X('interceptions:Q', title='Number of Interceptions', scale=alt.Scale(domain=[0, qb_interceptions_ranked_selected['interceptions'].max()])),
+                y=alt.Y('player_display_name:N', title='Quarterbacks', sort='-x'),
+                tooltip=['player_display_name', 'interceptions', 'passing_attempts']
+            ).properties(
+                title=f'Number of Interceptions for NFL Quarterbacks in {selected_season} (Min. 10 Pass Attempts)',
+                width=600,
+                height=max(300, len(qb_interceptions_ranked_selected) * 25)
+            ).configure_axisX(
+                labelExpr="datum.value % 1 == 0 ? datum.value : ''",
+                grid=False
+            ).configure_axisY(
+                grid=False
+            )
+            
+            st.altair_chart(chart, use_container_width=True)
         else:
             st.write("No QB interception data available for the selected season.")
+    else:
+        st.write("No QB data available for the selected season.")
+
+    ### SACKS ###
+    st.header('Quarterback Sack Rankings')
+    if not qb_selected_stats.empty:
+        qb_sacked_selected = qb_selected_stats.groupby('player_display_name')['sacks'].sum().reset_index()
+        # Filter out QBs with 0 sacks
+        qb_sacked_selected = qb_sacked_selected[qb_sacked_selected['sacks'] > 0]
+        qb_sacked_ranked_selected = qb_sacked_selected.sort_values(by='sacks', ascending=False)
+        
+        if len(qb_sacked_ranked_selected) > 0:
+            # Create Altair horizontal bar chart
+            chart = alt.Chart(qb_sacked_ranked_selected).mark_bar(
+                color='skyblue',
+                size=20
+            ).encode(
+                x=alt.X('sacks:Q', title='Number of Sacks'),
+                y=alt.Y('player_display_name:N', title='Quarterbacks', sort='-x'),
+                tooltip=['player_display_name', 'sacks']
+            ).properties(
+                title=f'Number of Sacks for NFL Quarterbacks in {selected_season}',
+                width=600,
+                height=max(300, len(qb_sacked_ranked_selected) * 25)
+            )
+            
+            st.altair_chart(chart, use_container_width=True)
+        else:
+            st.write("No QB sack data available for the selected season.")
     else:
         st.write("No QB data available for the selected season.")
 
@@ -151,16 +169,24 @@ with tab2:
         rb_rushing_ranked = rb_rushing_selected.sort_values(by='rushing_yards', ascending=False).head(20)
         
         if len(rb_rushing_ranked) > 0:
-            plt.figure(figsize=(12, max(6, len(rb_rushing_ranked) * 0.3)))
-            bars = plt.barh(rb_rushing_ranked['player_display_name'], rb_rushing_ranked['rushing_yards'], color='green')
-            plt.xlabel('Rushing Yards', fontsize=14)
-            plt.ylabel('Running Backs', fontsize=14)
-            plt.title(f'Top 20 Rushing Yards for NFL Running Backs in {selected_season}', fontsize=16)
-            plt.xticks(fontsize=10)
-            plt.yticks(fontsize=10)
-            plt.bar_label(bars)
-            plt.tight_layout()
-            st.pyplot(plt)
+            # Create Plotly Express chart
+            fig = px.bar(
+                rb_rushing_ranked,
+                x='player_display_name',
+                y='rushing_yards',
+                title=f'Top 20 Rushing Yards for NFL Running Backs in {selected_season}',
+                color='rushing_yards',
+                color_continuous_scale='greens',
+                height=max(400, len(rb_rushing_ranked) * 25)
+            )
+            fig.update_layout(
+                xaxis_title='Running Backs',
+                yaxis_title='Rushing Yards',
+                showlegend=False,
+                font=dict(size=12),
+                xaxis=dict(tickangle=45)
+            )
+            st.plotly_chart(fig, use_container_width=True)
         else:
             st.write("No RB rushing data available for the selected season.")
     else:
@@ -178,16 +204,24 @@ with tab3:
         wr_receiving_ranked = wr_receiving_selected.sort_values(by='receiving_yards', ascending=False).head(20)
         
         if len(wr_receiving_ranked) > 0:
-            plt.figure(figsize=(12, max(6, len(wr_receiving_ranked) * 0.3)))
-            bars = plt.barh(wr_receiving_ranked['player_display_name'], wr_receiving_ranked['receiving_yards'], color='purple')
-            plt.xlabel('Receiving Yards', fontsize=14)
-            plt.ylabel('Wide Receivers', fontsize=14)
-            plt.title(f'Top 20 Receiving Yards for NFL Wide Receivers in {selected_season}', fontsize=16)
-            plt.xticks(fontsize=10)
-            plt.yticks(fontsize=10)
-            plt.bar_label(bars)
-            plt.tight_layout()
-            st.pyplot(plt)
+            # Create Plotly Express chart
+            fig = px.bar(
+                wr_receiving_ranked,
+                x='player_display_name',
+                y='receiving_yards',
+                title=f'Top 20 Receiving Yards for NFL Wide Receivers in {selected_season}',
+                color='receiving_yards',
+                color_continuous_scale='purples',
+                height=max(400, len(wr_receiving_ranked) * 25)
+            )
+            fig.update_layout(
+                xaxis_title='Wide Receivers',
+                yaxis_title='Receiving Yards',
+                showlegend=False,
+                font=dict(size=12),
+                xaxis=dict(tickangle=45)
+            )
+            st.plotly_chart(fig, use_container_width=True)
         else:
             st.write("No WR receiving data available for the selected season.")
     else:
@@ -205,16 +239,24 @@ with tab4:
         te_receiving_ranked = te_receiving_selected.sort_values(by='receiving_yards', ascending=False).head(20)
         
         if len(te_receiving_ranked) > 0:
-            plt.figure(figsize=(12, max(6, len(te_receiving_ranked) * 0.3)))
-            bars = plt.barh(te_receiving_ranked['player_display_name'], te_receiving_ranked['receiving_yards'], color='orange')
-            plt.xlabel('Receiving Yards', fontsize=14)
-            plt.ylabel('Tight Ends', fontsize=14)
-            plt.title(f'Top 20 Receiving Yards for NFL Tight Ends in {selected_season}', fontsize=16)
-            plt.xticks(fontsize=10)
-            plt.yticks(fontsize=10)
-            plt.bar_label(bars)
-            plt.tight_layout()
-            st.pyplot(plt)
+            # Create Plotly Express chart
+            fig = px.bar(
+                te_receiving_ranked,
+                x='player_display_name',
+                y='receiving_yards',
+                title=f'Top 20 Receiving Yards for NFL Tight Ends in {selected_season}',
+                color='receiving_yards',
+                color_continuous_scale='oranges',
+                height=max(400, len(te_receiving_ranked) * 25)
+            )
+            fig.update_layout(
+                xaxis_title='Tight Ends',
+                yaxis_title='Receiving Yards',
+                showlegend=False,
+                font=dict(size=12),
+                xaxis=dict(tickangle=45)
+            )
+            st.plotly_chart(fig, use_container_width=True)
         else:
             st.write("No TE receiving data available for the selected season.")
     else:
