@@ -1560,6 +1560,17 @@ for year_to_scrape in range(2025, 2026):
             # Add metadata
             df.insert(0, 'Year', year_to_scrape)
             df.insert(1, 'StatType', stat_type)
+            # Standardize team abbreviations
+            team_standardization = {
+                'GNB': 'GB',    # Green Bay Packers
+                'KAN': 'KC',    # Kansas City Chiefs  
+                'NOR': 'NO',    # New Orleans Saints
+                'NWE': 'NE',    # New England Patriots
+                'OAK': 'LVR',   # Oakland Raiders → Las Vegas Raiders
+                'SFO': 'SF',    # San Francisco 49ers
+                'TAM': 'TB'     # Tampa Bay Buccaneers
+            }
+            df['Tm'] = df['Tm'].replace(team_standardization)
             all_redzone_data.append(df)
             print(f"Successfully scraped {stat_type} data for {year_to_scrape}")
             time.sleep(2.5)
@@ -1578,6 +1589,17 @@ csv_files = [f for f in os.listdir(input_dir) if f.endswith('.csv')]
 if csv_files:
     dataframes = [pd.read_csv(os.path.join(input_dir, file)) for file in csv_files]
     merged_dataframe = pd.concat(dataframes, ignore_index=True)
+    # Apply team standardization to merged data as well
+    team_standardization = {
+        'GNB': 'GB',    # Green Bay Packers
+        'KAN': 'KC',    # Kansas City Chiefs  
+        'NOR': 'NO',    # New Orleans Saints
+        'NWE': 'NE',    # New England Patriots
+        'OAK': 'LVR',   # Oakland Raiders → Las Vegas Raiders
+        'SFO': 'SF',    # San Francisco 49ers
+        'TAM': 'TB'     # Tampa Bay Buccaneers
+    }
+    merged_dataframe['Tm'] = merged_dataframe['Tm'].replace(team_standardization)
     output_file = 'data/all_redzone.csv'
     merged_dataframe.to_csv(output_file, index=False)
     print(f"Merged red zone dataset saved as {output_file}")
