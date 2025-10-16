@@ -366,14 +366,14 @@ with col2:
     def style_heatmap(val):
         if isinstance(val, (int, float)) and val > 0:
             # Create pink/red gradient heatmap like the reference image
-            intensity = min(val / 5, 1)  # Normalize to 0-1 scale
+            intensity = min(val / 10, 1)  # Normalize to 0-1 scale (more gradual)
             # Use pink to red gradient
             red = 255  # Keep red at max
             green = int(245 - (195 * intensity))  # Start at light pink (245), go to red (50)
             blue = int(245 - (195 * intensity))   # Start at light pink (245), go to red (50)
             color = f"rgb({red}, {green}, {blue})"
             # Use white text for darker backgrounds, dark text for lighter backgrounds
-            text_color = "white" if intensity > 0.4 else "#2c3e50"
+            text_color = "white" if intensity > 0.6 else "#2c3e50"
             return f"background-color: {color}; color: {text_color}; font-weight: bold; text-align: center;"
         elif isinstance(val, (int, float)) and val == 0:
             return "background-color: #f8f9fa; color: #2c3e50; text-align: center;"

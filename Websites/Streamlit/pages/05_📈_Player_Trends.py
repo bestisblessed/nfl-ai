@@ -79,7 +79,7 @@ def get_player_data_for_season(season):
 available_seasons = [2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]
 selected_season = st.selectbox("Select Season:", available_seasons, index=available_seasons.index(2025))  # Default to 2025
 
-st.divider()
+# st.divider()
 
 tab1, tab2, tab3, tab4 = st.tabs(["QBs", "RBs", "WRs", "TEs"])
 
@@ -301,41 +301,49 @@ with tab1:
 
 with tab2:
     st.header('Running Back Rankings')
+    
     # Get the appropriate dataset for the selected season
     current_player_data = get_player_data_for_season(selected_season)
     rb_selected_stats = current_player_data[(current_player_data['position'] == 'RB') & (current_player_data['season'] == selected_season)]
-    
-    if not rb_selected_stats.empty:
-        # Rushing Yards
-        rb_rushing_selected = rb_selected_stats.groupby('player_display_name')['rushing_yards'].sum().reset_index()
-        rb_rushing_ranked = rb_rushing_selected.sort_values(by='rushing_yards', ascending=False).head(30)
-        
-        if len(rb_rushing_ranked) > 0:
-            # Create Plotly Express chart
-            fig = px.bar(
-                rb_rushing_ranked,
-                x='player_display_name',
-                y='rushing_yards',
-                title=f'Top 30 Rushing Yards for NFL Running Backs in {selected_season}',
-                color='rushing_yards',
-                color_continuous_scale='greens',
-                height=max(400, len(rb_rushing_ranked) * 25)
-            )
-            fig.update_layout(
-                xaxis_title='Running Backs',
-                yaxis_title='Rushing Yards',
-                showlegend=False,
-                font=dict(size=12),
-                xaxis=dict(tickangle=45)
-            )
-            st.plotly_chart(fig, use_container_width=True)
-        else:
-            st.write("No RB rushing data available for the selected season.")
 
-    # Total Touchdowns for RBs
-    st.header('Running Back Total Touchdowns')
-    if not rb_selected_stats.empty:
-        rb_td_selected = rb_selected_stats.groupby('player_display_name').agg({
+    # Create side-by-side layout: Yards (3/4) | Touchdowns (1/4)
+    rb_col1, rb_col2 = st.columns([3, 1])
+
+    with rb_col1:
+        if not rb_selected_stats.empty:
+            # Rushing Yards
+            rb_rushing_selected = rb_selected_stats.groupby('player_display_name')['rushing_yards'].sum().reset_index()
+            rb_rushing_ranked = rb_rushing_selected.sort_values(by='rushing_yards', ascending=False).head(30)
+
+            if len(rb_rushing_ranked) > 0:
+                # Create Plotly Express chart
+                fig = px.bar(
+                    rb_rushing_ranked,
+                    x='player_display_name',
+                    y='rushing_yards',
+                    title=f'Top 30 Rushing Yards',
+                    color='rushing_yards',
+                    color_continuous_scale='greens',
+                    height=max(400, len(rb_rushing_ranked) * 25)
+                )
+                fig.update_layout(
+                    xaxis_title='Running Backs',
+                    yaxis_title='Rushing Yards',
+                    showlegend=False,
+                    coloraxis=dict(showscale=False),
+                    font=dict(size=12),
+                    xaxis=dict(tickangle=45)
+                )
+                st.plotly_chart(fig, use_container_width=True)
+            else:
+                st.write("No data.")
+        else:
+            st.write("No RB data.")
+
+    with rb_col2:
+        # st.header('RB Total TDs')
+        if not rb_selected_stats.empty:
+            rb_td_selected = rb_selected_stats.groupby('player_display_name').agg({
             'rushing_tds': 'sum',
             'receiving_tds': 'sum'
         }).reset_index()
@@ -353,62 +361,64 @@ with tab2:
             rb_td_display = rb_td_ranked[['player_display_name', 'total_tds']].copy()
             rb_td_display.columns = ['Player', 'Total TDs']
 
-            # Style the dataframe
+            # Style the dataframe for compact column display
             st.dataframe(
                 rb_td_display,
                 column_config={
-                    "Player": st.column_config.TextColumn("Player", width="medium"),
-                    "Total TDs": st.column_config.NumberColumn("Total TDs", format="%d", help="Total scoring touchdowns (rushing + receiving)")
+                    "Player": st.column_config.TextColumn("Player", width="small"),
+                    "Total TDs": st.column_config.NumberColumn("Total TDs", format="%d")
                 },
                 hide_index=True,
                 use_container_width=True
             )
-
-            # Add a summary note
-            total_tds = rb_td_ranked['total_tds'].sum()
-            st.caption(f"Top 30 RBs by total touchdowns in {selected_season}. Combined rushing + receiving TDs = {total_tds} total touchdowns.")
         else:
-            st.write("No RB touchdown data available for the selected season.")
-    else:
-        st.write("No RB data available for the selected season.")
+            st.write("No data.")
 
 with tab3:
     st.header('Wide Receiver Rankings')
+        
     # Get the appropriate dataset for the selected season
     current_player_data = get_player_data_for_season(selected_season)
     wr_selected_stats = current_player_data[(current_player_data['position'] == 'WR') & (current_player_data['season'] == selected_season)]
-    
-    if not wr_selected_stats.empty:
-        # Receiving Yards
-        wr_receiving_selected = wr_selected_stats.groupby('player_display_name')['receiving_yards'].sum().reset_index()
-        wr_receiving_ranked = wr_receiving_selected.sort_values(by='receiving_yards', ascending=False).head(30)
-        
-        if len(wr_receiving_ranked) > 0:
-            # Create Plotly Express chart
-            fig = px.bar(
-                wr_receiving_ranked,
-                x='player_display_name',
-                y='receiving_yards',
-                title=f'Top 30 Receiving Yards for NFL Wide Receivers in {selected_season}',
-                color='receiving_yards',
-                color_continuous_scale='purples',
-                height=max(400, len(wr_receiving_ranked) * 25)
-            )
-            fig.update_layout(
-                xaxis_title='Wide Receivers',
-                yaxis_title='Receiving Yards',
-                showlegend=False,
-                font=dict(size=12),
-                xaxis=dict(tickangle=45)
-            )
-            st.plotly_chart(fig, use_container_width=True)
-        else:
-            st.write("No WR receiving data available for the selected season.")
 
-    # Total Touchdowns for WRs
-    st.header('Wide Receiver Total Touchdowns')
-    if not wr_selected_stats.empty:
-        wr_td_selected = wr_selected_stats.groupby('player_display_name').agg({
+    # Create side-by-side layout: Yards (3/4) | Touchdowns (1/4)
+    wr_col1, wr_col2 = st.columns([3, 1])
+
+    with wr_col1:
+        if not wr_selected_stats.empty:
+            # Receiving Yards
+            wr_receiving_selected = wr_selected_stats.groupby('player_display_name')['receiving_yards'].sum().reset_index()
+            wr_receiving_ranked = wr_receiving_selected.sort_values(by='receiving_yards', ascending=False).head(30)
+
+            if len(wr_receiving_ranked) > 0:
+                # Create Plotly Express chart
+                fig = px.bar(
+                    wr_receiving_ranked,
+                    x='player_display_name',
+                    y='receiving_yards',
+                    title=f'Top 30 Receiving Yards',
+                    color='receiving_yards',
+                    color_continuous_scale='purples',
+                    height=max(400, len(wr_receiving_ranked) * 25)
+                )
+                fig.update_layout(
+                    xaxis_title='Wide Receivers',
+                    yaxis_title='Receiving Yards',
+                    showlegend=False,
+                    coloraxis=dict(showscale=False),
+                    font=dict(size=12),
+                    xaxis=dict(tickangle=45)
+                )
+                st.plotly_chart(fig, use_container_width=True)
+            else:
+                st.write("No data.")
+        else:
+            st.write("No WR data.")
+
+    with wr_col2:
+        # st.header('WR Total TDs')
+        if not wr_selected_stats.empty:
+            wr_td_selected = wr_selected_stats.groupby('player_display_name').agg({
             'rushing_tds': 'sum',
             'receiving_tds': 'sum'
         }).reset_index()
@@ -426,62 +436,64 @@ with tab3:
             wr_td_display = wr_td_ranked[['player_display_name', 'total_tds']].copy()
             wr_td_display.columns = ['Player', 'Total TDs']
 
-            # Style the dataframe
+            # Style the dataframe for compact column display
             st.dataframe(
                 wr_td_display,
                 column_config={
-                    "Player": st.column_config.TextColumn("Player", width="medium"),
-                    "Total TDs": st.column_config.NumberColumn("Total TDs", format="%d", help="Total scoring touchdowns (rushing + receiving)")
+                    "Player": st.column_config.TextColumn("Player", width="small"),
+                    "Total TDs": st.column_config.NumberColumn("Total TDs", format="%d")
                 },
                 hide_index=True,
                 use_container_width=True
             )
-
-            # Add a summary note
-            total_tds = wr_td_ranked['total_tds'].sum()
-            st.caption(f"Top 30 WRs by total touchdowns in {selected_season}. Combined rushing + receiving TDs = {total_tds} total touchdowns.")
         else:
-            st.write("No WR touchdown data available for the selected season.")
-    else:
-        st.write("No WR data available for the selected season.")
+            st.write("No data.")
 
 with tab4:
     st.header('Tight End Rankings')
+        
     # Get the appropriate dataset for the selected season
     current_player_data = get_player_data_for_season(selected_season)
     te_selected_stats = current_player_data[(current_player_data['position'] == 'TE') & (current_player_data['season'] == selected_season)]
-    
-    if not te_selected_stats.empty:
-        # Receiving Yards
-        te_receiving_selected = te_selected_stats.groupby('player_display_name')['receiving_yards'].sum().reset_index()
-        te_receiving_ranked = te_receiving_selected.sort_values(by='receiving_yards', ascending=False).head(30)
-        
-        if len(te_receiving_ranked) > 0:
-            # Create Plotly Express chart
-            fig = px.bar(
-                te_receiving_ranked,
-                x='player_display_name',
-                y='receiving_yards',
-                title=f'Top 30 Receiving Yards for NFL Tight Ends in {selected_season}',
-                color='receiving_yards',
-                color_continuous_scale='oranges',
-                height=max(400, len(te_receiving_ranked) * 25)
-            )
-            fig.update_layout(
-                xaxis_title='Tight Ends',
-                yaxis_title='Receiving Yards',
-                showlegend=False,
-                font=dict(size=12),
-                xaxis=dict(tickangle=45)
-            )
-            st.plotly_chart(fig, use_container_width=True)
-        else:
-            st.write("No TE receiving data available for the selected season.")
 
-    # Total Touchdowns for TEs
-    st.header('Tight End Total Touchdowns')
-    if not te_selected_stats.empty:
-        te_td_selected = te_selected_stats.groupby('player_display_name').agg({
+    # Create side-by-side layout: Yards (3/4) | Touchdowns (1/4)
+    te_col1, te_col2 = st.columns([3, 1])
+
+    with te_col1:
+        if not te_selected_stats.empty:
+            # Receiving Yards
+            te_receiving_selected = te_selected_stats.groupby('player_display_name')['receiving_yards'].sum().reset_index()
+            te_receiving_ranked = te_receiving_selected.sort_values(by='receiving_yards', ascending=False).head(30)
+
+            if len(te_receiving_ranked) > 0:
+                # Create Plotly Express chart
+                fig = px.bar(
+                    te_receiving_ranked,
+                    x='player_display_name',
+                    y='receiving_yards',
+                    title=f'Top 30 Receiving Yards',
+                    color='receiving_yards',
+                    color_continuous_scale='oranges',
+                    height=max(400, len(te_receiving_ranked) * 25)
+                )
+                fig.update_layout(
+                    xaxis_title='Tight Ends',
+                    yaxis_title='Receiving Yards',
+                    showlegend=False,
+                    coloraxis=dict(showscale=False),
+                    font=dict(size=12),
+                    xaxis=dict(tickangle=45)
+                )
+                st.plotly_chart(fig, use_container_width=True)
+            else:
+                st.write("No data.")
+        else:
+            st.write("No TE data.")
+
+    with te_col2:
+        # st.header('TE Total TDs')
+        if not te_selected_stats.empty:
+            te_td_selected = te_selected_stats.groupby('player_display_name').agg({
             'rushing_tds': 'sum',
             'receiving_tds': 'sum'
         }).reset_index()
@@ -499,21 +511,15 @@ with tab4:
             te_td_display = te_td_ranked[['player_display_name', 'total_tds']].copy()
             te_td_display.columns = ['Player', 'Total TDs']
 
-            # Style the dataframe
+            # Style the dataframe for compact column display
             st.dataframe(
                 te_td_display,
                 column_config={
-                    "Player": st.column_config.TextColumn("Player", width="medium"),
-                    "Total TDs": st.column_config.NumberColumn("Total TDs", format="%d", help="Total scoring touchdowns (rushing + receiving)")
+                    "Player": st.column_config.TextColumn("Player", width="small"),
+                    "Total TDs": st.column_config.NumberColumn("Total TDs", format="%d")
                 },
                 hide_index=True,
                 use_container_width=True
             )
-
-            # Add a summary note
-            total_tds = te_td_ranked['total_tds'].sum()
-            st.caption(f"Top 30 TEs by total touchdowns in {selected_season}. Combined rushing + receiving TDs = {total_tds} total touchdowns.")
         else:
-            st.write("No TE touchdown data available for the selected season.")
-    else:
-        st.write("No TE data available for the selected season.")
+            st.write("No data.")
