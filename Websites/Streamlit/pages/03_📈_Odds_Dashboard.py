@@ -3,6 +3,7 @@ import pandas as pd
 import os
 import json
 import re
+import plotly.graph_objects as go
 import matplotlib.pyplot as plt
 from matplotlib.ticker import FuncFormatter
 from matplotlib import dates as mdates
@@ -32,12 +33,24 @@ except FileNotFoundError:
     st.error(f"File not found: {csv_file_path_circa}. Please ensure the file exists.")
     df_nfl_odds_movements_circa = pd.DataFrame()
 
+st.markdown(f"""
+    <div style='text-align: center;'>
+        <div style='font-size: 3.1rem; font-weight: 800; padding-bottom: 0.5rem;'>
+            NFL Odds Dashboard
+        </div>
+        <div style='color: #7f8c8d; font-size: 1rem; margin-top: 0; line-height: 1.2;'>
+            Live Odds Movement Tracking Across All Major Sportsbooks
+        </div>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+st.divider()
+
 # Create main container with wider layout
 col1, col2, col3 = st.columns([0.5, 5, 0.5])
 
 with col2:
-    st.title('Odds Dashboard')
-    st.divider()
     
     # BLACKLIST_TEAMS = ["Minnesota Vikings", "Los Angeles Rams"]
     # st.write(f"*Blacklisted Teams:* {', '.join(BLACKLIST_TEAMS)}")
@@ -133,7 +146,7 @@ with col2:
             home_team = team_mapping.get(row['home_team'], row['home_team'])
             matchup = f"{away_team} vs {home_team}".lower()
             upcoming_matchups_ordered.append(matchup)
-
+        
         # Filter games_df to only include upcoming games
         if not games_df.empty:
             games_df = games_df[games_df['matchup'].isin(upcoming_matchups_ordered)]
@@ -198,6 +211,87 @@ with col2:
         ampm_small = f"$^{{\\mathrm{{{am_pm_lower}}}}}$"
         return f"{month}/{day} {hour12}{ampm_small}"
 
+    def parse_and_format_game_date(date_string):
+        """Parse a date string like 'sun, october19th' and format it nicely"""
+        try:
+            # Clean up the input string
+            clean_date = date_string.replace(',', '').strip().lower()
+
+            # Extract day of week and date
+            parts = clean_date.split()
+            if len(parts) >= 2:
+                day_of_week = parts[0].capitalize()
+                date_part = parts[1]
+
+                # Parse the date part - handle formats like 'october19th', 'oct19', etc.
+                import re
+                month_match = re.match(r'([a-z]+)(\d+)', date_part)
+                if month_match:
+                    month_name = month_match.group(1).capitalize()
+                    day_num = int(month_match.group(2))
+
+                    # Create a datetime for this year (we'll assume current year)
+                    from datetime import datetime
+                    current_year = datetime.now().year
+                    try:
+                        dt = datetime(current_year, {
+                            'january': 1, 'february': 2, 'march': 3, 'april': 4, 'may': 5, 'june': 6,
+                            'july': 7, 'august': 8, 'september': 9, 'october': 10, 'november': 11, 'december': 12
+                        }.get(month_name.lower(), 1), day_num)
+
+                        # Format using the ordinal function
+                        formatted_date = format_month_day_with_ordinal(dt)
+                        return f"{day_of_week}, {formatted_date}"
+                    except ValueError:
+                        pass
+
+            # Fallback: try to format the original string better
+            formatted = date_string.replace(',', ', ')
+            # Add space between month and day (e.g., "October16th" -> "October 16th")
+            import re
+            formatted = re.sub(r'([a-zA-Z]+)(\d+)', r'\1 \2', formatted)
+            # Capitalize first letter of each word
+            formatted = ' '.join(word.capitalize() for word in formatted.split())
+            return formatted
+
+        except Exception:
+            # Ultimate fallback
+            formatted = date_string.replace(',', ', ')
+            # Add space between month and day
+            import re
+            formatted = re.sub(r'([a-zA-Z]+)(\d+)', r'\1 \2', formatted)
+            return formatted
+
+    def format_game_time(time_string):
+        """Format game time strings nicely"""
+        try:
+            # Clean up the input
+            clean_time = time_string.replace('splits', '').strip()
+
+            # Handle various time formats
+            import re
+
+            # Look for time patterns like "1pm", "12:30pm", "1 pm", etc.
+            time_match = re.search(r'(\d{1,2})(?::(\d{2}))?\s*(am|pm)', clean_time.lower())
+            if time_match:
+                hour = int(time_match.group(1))
+                minute = time_match.group(2) or '00'
+                am_pm = time_match.group(3).upper()
+
+                # Format nicely
+                if minute == '00':
+                    return f"{hour} {am_pm}"
+                else:
+                    return f"{hour}:{minute} {am_pm}"
+
+            # If no match found, just clean up capitalization
+            formatted = clean_time.replace('pm', 'PM').replace('am', 'AM')
+            return formatted
+
+        except Exception:
+            # Fallback
+            return time_string.replace('splits', '').strip()
+
     if upcoming_matchups and (not df_nfl_odds_movements_circa.empty) and ('matchup' in df_nfl_odds_movements_circa.columns):
         upcoming_matchups_normalized = [normalize_matchup(m) for m in upcoming_matchups]
         circa_matchups_normalized = df_nfl_odds_movements_circa['matchup'].apply(normalize_matchup)
@@ -211,11 +305,11 @@ with col2:
         for _, game in games_with_sufficient_data.iterrows():
             st.markdown(f"<h2 style='font-weight: bold; color: #512D6D; text-shadow: -1px -1px 0 #C5B783, 1px -1px 0 #C5B783, -1px 1px 0 #C5B783, 1px 1px 0 #C5B783;'>{game['teams'][0]} vs {game['teams'][1]}</h2>", unsafe_allow_html=True)
 
-            # Format date properly - "Sun, September 14th"
-            formatted_date = game['game_date'].replace(',', ', ').replace('september', 'September ').replace('sun', 'Sun').replace('mon', 'Mon').replace('tue', 'Tue').replace('wed', 'Wed').replace('thu', 'Thu').replace('fri', 'Fri').replace('sat', 'Sat')
+            # Format date properly - "Sun, Oct 19th"
+            formatted_date = parse_and_format_game_date(game['game_date'])
 
             # Format time properly
-            formatted_time = game['time'].replace('splits', '').strip().replace('pm', 'PM').replace('am', 'AM')
+            formatted_time = format_game_time(game['time'])
 
             # Game Date - half size of title (emoji removed)
             st.markdown(f"<p style='font-size: 18px; margin: 5px 0;'><strong>{formatted_date}</strong></p>", unsafe_allow_html=True)
@@ -265,41 +359,149 @@ with col2:
 
             st.write(' ')
             st.write(' ')
-            # Inline odds movement graph for this matchup using Circa data (moved below modal buttons)
+            # Inline odds movement graph for this matchup using all sportsbooks
             selected_matchup = game['matchup']
-            if isinstance(upcoming_week_games, pd.DataFrame) and ('matchup' in upcoming_week_games.columns) and (len(upcoming_week_games) > 0):
+            if not df_nfl_odds_movements.empty:
                 try:
-                    matchup_mask = upcoming_week_games['matchup'].apply(normalize_matchup) == normalize_matchup(selected_matchup)
-                    selected_data = upcoming_week_games[matchup_mask].copy()
+                    # Filter data for this specific matchup using the same cleaning logic
+                    clean_game_date = game['game_date'].replace(' ', '').strip().lower()
+                    clean_game_time = re.sub(r'\s+', ' ', game['time'].replace('\n', ' ')).strip().lower()
+                    clean_matchup = re.sub(r'\s+', ' ', selected_matchup).strip().lower()
+
+                    matchup_mask = (df_nfl_odds_movements['game_date'] == clean_game_date) & \
+                                   (df_nfl_odds_movements['game_time'] == clean_game_time) & \
+                                   (df_nfl_odds_movements['matchup'] == clean_matchup)
+                    selected_data = df_nfl_odds_movements[matchup_mask].copy()
+
                     if len(selected_data) > 0:
+                        # Clean and prepare data
                         selected_data.loc[:, 'team1_odds_before'] = selected_data['team1_odds_before'].replace('PK', 0)
                         selected_data.loc[:, 'team2_odds_before'] = selected_data['team2_odds_before'].replace('PK', 0)
                         selected_data.loc[:, 'team1_odds_before'] = pd.to_numeric(selected_data['team1_odds_before'], errors='coerce')
                         selected_data.loc[:, 'team2_odds_before'] = pd.to_numeric(selected_data['team2_odds_before'], errors='coerce')
                         selected_data = selected_data.dropna(subset=['team1_odds_before', 'team2_odds_before'])
+
+                        # Convert timestamps
+                        if 'file2' in selected_data.columns:
+                            selected_data['timestamp'] = selected_data['file2'].apply(
+                                lambda x: '_'.join(x.split('_')[3:5]).replace('.json', '')
+                            )
+                            selected_data['timestamp'] = pd.to_datetime(
+                                selected_data['timestamp'], format='%Y%m%d_%H%M'
+                            )
+                        else:
+                            selected_data['timestamp'] = pd.to_datetime(selected_data['time_before'], errors='coerce')
+
                         try:
-                            selected_data.loc[:, 'time_before'] = pd.to_datetime(selected_data['time_before'], format='%b %d %I:%M%p')
-                        except Exception:
-                            try:
-                                selected_data.loc[:, 'time_before'] = pd.to_datetime(selected_data['time_before'], errors='coerce')
-                            except Exception:
-                                selected_data.loc[:, 'time_before'] = pd.date_range(start='2024-01-01', periods=len(selected_data), freq='H')
-                        try:
-                            fig, ax = plt.subplots(figsize=(12, 6))
-                            if len(selected_data) > 0 and not selected_data['time_before'].isna().all():
-                                ax.plot(selected_data['time_before'], selected_data['team1_odds_before'], label=game['teams'][0])
-                                ax.plot(selected_data['time_before'], selected_data['team2_odds_before'], label=game['teams'][1])
-                                ax.set_title(f"Circa Odds Movement: {game['teams'][0]} vs {game['teams'][1]}")
-                                # ax.set_xlabel('Date')
-                                ax.set_ylabel('Spread')
-                                ax.yaxis.set_major_formatter(FuncFormatter(lambda v, pos: f"+{v:g}" if v > 0 else ("0" if v == 0 else f"{v:g}")))
-                                ax.xaxis.set_major_formatter(FuncFormatter(lambda v, pos: format_numeric_md_hour(mdates.num2date(v))))
-                                plt.xticks(rotation=45)
-                                plt.legend()
-                                plt.grid(True)
-                                st.pyplot(fig, use_container_width=True)
+                            # Define colors for different sportsbooks (more visible on grey background)
+                            sportsbook_colors = {
+                                'Circa': '#FF4500',      # Brighter OrangeRed
+                                'Westgate': '#FFD700',   # Gold
+                                'South Point': '#32CD32',# LimeGreen
+                                'Wynn': '#1E90FF',       # DodgerBlue
+                                'Caesars': '#FF1493',    # DeepPink
+                                'BetMGM': '#8A2BE2',     # BlueViolet
+                                'DK': '#00CED1',         # DarkTurquoise
+                                'GLD Nugget': '#FF8C00', # DarkOrange
+                                'Stations': '#BA55D3'    # MediumOrchid
+                            }
+
+                            sportsbooks = selected_data['sportsbook'].unique()
+                            plotted_any = False
+
+                            # Create plotly figure
+                            fig = go.Figure()
+
+                            # Plot each sportsbook's odds movement
+                            for sportsbook in sportsbooks:
+                                sb_data = selected_data[selected_data['sportsbook'] == sportsbook].sort_values('timestamp')
+                                if len(sb_data) > 1:  # Only plot if we have multiple data points
+                                    color = sportsbook_colors.get(sportsbook, '#95A5A6')
+
+                                    # Add team 1 line with thicker, more visible styling
+                                    fig.add_trace(go.Scatter(
+                                        x=sb_data['timestamp'],
+                                        y=sb_data['team1_odds_before'],
+                                        mode='lines+markers',
+                                        name=f'{game["teams"][0]} ({sportsbook})',
+                                        line=dict(color=color, width=2),
+                                        marker=dict(symbol='circle', size=8, color=color, line=dict(width=2, color='white')),
+                                        hovertemplate=f'{game["teams"][0]} ({sportsbook})<br>Spread: %{{y}}<br>Time: %{{x}}<extra></extra>'
+                                    ))
+
+                                    # Add team 2 line with thicker, more visible styling
+                                    fig.add_trace(go.Scatter(
+                                        x=sb_data['timestamp'],
+                                        y=sb_data['team2_odds_before'],
+                                        mode='lines+markers',
+                                        name=f'{game["teams"][1]} ({sportsbook})',
+                                        line=dict(color=color, width=2),
+                                        marker=dict(symbol='square', size=8, color=color, line=dict(width=2, color='white')),
+                                        hovertemplate=f'{game["teams"][1]} ({sportsbook})<br>Spread: %{{y}}<br>Time: %{{x}}<extra></extra>'
+                                    ))
+
+                                    plotted_any = True
+
+                            if plotted_any:
+                                # Update layout with larger size
+                                fig.update_layout(
+                                    title=f"Odds Movement - All Sportsbooks: {game['teams'][0]} vs {game['teams'][1]}",
+                                    xaxis_title=dict(
+                                        text="Time",
+                                        font=dict(size=16, color='black')
+                                    ),
+                                    yaxis_title=dict(
+                                        text="Spread",
+                                        font=dict(size=16, color='black')
+                                    ),
+                                    yaxis=dict(
+                                        tickformat='+.1f',
+                                        tickmode='linear'
+                                    ),
+                                    hovermode='x unified',
+                                    legend=dict(
+                                        orientation="v",
+                                        yanchor="top",
+                                        y=1,
+                                        xanchor="left",
+                                        x=1.02
+                                    ),
+                                    margin=dict(l=50, r=150, t=80, b=50),
+                                    width=1200,
+                                    height=600
+                                )
+
+                                # Add gunmetal gridlines
+                                fig.update_xaxes(
+                                    showgrid=True,
+                                    gridwidth=2,
+                                    gridcolor='rgba(160, 160, 160, 0.35)',
+                                    showline=True,
+                                    linewidth=2,
+                                    # linecolor='rgba(150, 150, 150, 0.5)'
+                                    linecolor='black',
+                                    tickfont=dict(color='black'),
+                                    tickcolor='black',
+                                    ticklen=5,
+                                    tickwidth=2
+                                )
+                                fig.update_yaxes(
+                                    showgrid=True,
+                                    gridwidth=2,
+                                    gridcolor='rgba(160, 160, 160, 0.35)',
+                                    showline=True,
+                                    linewidth=2,
+                                    # linecolor='rgba(150, 150, 150, 0.5)'
+                                    linecolor='black',
+                                    tickfont=dict(color='black'),
+                                    tickcolor='black',
+                                    ticklen=5,
+                                    tickwidth=2
+                                )
+
+                                st.plotly_chart(fig, use_container_width=True)
                             else:
-                                st.warning("No valid odds data available for plotting this matchup.")
+                                st.warning("No valid odds movement data available for plotting this matchup.")
                         except Exception as e:
                             st.error(f"Error creating plot: {str(e)}")
                             st.write("Raw data for debugging:")
@@ -309,7 +511,7 @@ with col2:
                 except Exception as e:
                     st.error(f"Error preparing odds data: {str(e)}")
             else:
-                st.warning("No Circa odds data available to plot for this matchup.")
+                st.warning("No odds data available to plot for this matchup.")
 
             st.write(' ')
             st.divider()
@@ -317,8 +519,8 @@ with col2:
     else:
         st.warning("No upcoming games found in the odds data.")
 
-
-
+        
+        
     # # ---- Contact Me ---- #
     # st.divider()
     # st.header('Contact Me')

@@ -30,6 +30,19 @@ st.set_page_config(
     layout="wide"   
 )
 
+st.markdown(f"""
+    <div style='text-align: center;'>
+        <div style='font-size: 3.1rem; font-weight: 800; padding-bottom: 0.5rem;'>
+            Matchup Report Generator
+        </div>
+        <div style='color: #7f8c8d; font-size: 1rem; margin-top: 0; line-height: 1.2;'>
+            Select two teams to generate a detailed matchup report with head-to-head team trends and player stats
+        </div>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
 # Add responsive CSS for better layout at different zoom levels
 st.markdown(
     """
@@ -38,22 +51,22 @@ st.markdown(
     .stApp > div > div > div {
         max-width: 100%;
     }
-    
+
     /* Fix plotly chart responsiveness */
     .js-plotly-plot {
         width: 100% !important;
     }
-    
+
     /* Ensure tables are responsive */
     .dataframe {
         width: 100% !important;
     }
-    
+
     /* Better spacing for columns */
     [data-testid="stHorizontalBlock"] {
         gap: 1rem;
     }
-    
+
     /* Responsive text sizing */
     @media (max-width: 768px) {
         h1 { font-size: 1.8rem !important; }
@@ -61,10 +74,6 @@ st.markdown(
         .stMetric { font-size: 0.9rem !important; }
     }
     </style>
-    
-    <div style="text-align: center;">
-        <h1>Matchup Report Generator</h1>
-    </div>
     """,
     unsafe_allow_html=True
 )

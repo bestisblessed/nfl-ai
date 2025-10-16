@@ -105,8 +105,20 @@ st.session_state['df_schedule_and_game_results'] = df_schedule_and_game_results
 st.session_state['df_all_passing_rushing_receiving'] = df_all_passing_rushing_receiving
 
 # ---- Titles ---- #
-st.title('NFL AI')
-st.write('Welcome to NFL AI')
+st.markdown(f"""
+    <div style='text-align: center;'>
+        <div style='font-size: 3.1rem; font-weight: 800; padding-bottom: 0.5rem;'>
+            NFL AI
+        </div>
+        <div style='color: #7f8c8d; font-size: 1rem; margin-top: 0; line-height: 1.2;'>
+            Welcome to NFL AI
+        </div>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+# st.title('NFL AI')
+# st.write('Welcome to NFL AI')
 # st.write("[My Repo >](https://github.com/bestisblessed)")
 # current_dir = os.path.dirname(os.path.abspath(__file__))
 # justin_jefferson_path = os.path.join(current_dir, 'images/jettas.jpg')
