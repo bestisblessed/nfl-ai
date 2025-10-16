@@ -303,19 +303,30 @@ with col2:
 
     if not games_with_sufficient_data.empty:
         for _, game in games_with_sufficient_data.iterrows():
-            st.markdown(f"<h2 style='font-weight: bold; color: #512D6D; text-shadow: -1px -1px 0 #C5B783, 1px -1px 0 #C5B783, -1px 1px 0 #C5B783, 1px 1px 0 #C5B783;'>{game['teams'][0]} vs {game['teams'][1]}</h2>", unsafe_allow_html=True)
-
             # Format date properly - "Sun, Oct 19th"
             formatted_date = parse_and_format_game_date(game['game_date'])
 
             # Format time properly
             formatted_time = format_game_time(game['time'])
 
-            # Game Date - half size of title (emoji removed)
-            st.markdown(f"<p style='font-size: 18px; margin: 5px 0;'><strong>{formatted_date}</strong></p>", unsafe_allow_html=True)
-
-            # Game Time - bigger size (emoji removed)
-            st.markdown(f"<p style='font-size: 16px; margin: 5px 0;'><strong>{formatted_time}</strong></p>", unsafe_allow_html=True)
+            # Game title with date and time in styled box
+            st.markdown(f"""
+                <div style='background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                                padding: 10px;
+                                border-radius: 15px;
+                                margin: 10px 0 25px 0;
+                                text-align: center;
+                                box-shadow: 0 4px 6px rgba(0,0,0,0.1);'>
+                    <h2 style='color: white; margin: 0 0 5px 0; font-size: 1.8em; font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);'>
+                        {game['teams'][0]} vs {game['teams'][1]}
+                    </h2>
+                    <p style='color: white; margin: 0; font-size: 1.1em; font-weight: 600; text-shadow: 1px 1px 2px rgba(0,0,0,0.3);'>
+                        {formatted_date} • {formatted_time}
+                    </p>
+                </div>
+                """,
+                unsafe_allow_html=True
+            )
             st.write("")
             df = pd.DataFrame({
                 "Team": [game['teams'][0], game['teams'][1]],

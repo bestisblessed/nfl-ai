@@ -67,11 +67,8 @@ db_path = os.path.join(current_dir, '../data', 'nfl.db')
 df_player_data['year'] = df_player_data['game_id'].str.split('_').str[0].astype(int)
 df_player_data['week'] = df_player_data['game_id'].str.split('_').str[1].astype(int)
 
-# Filter to selected season and WR/TE positions
-df_player_data_filtered = df_player_data[
-    (df_player_data['year'] == selected_season) & 
-    (df_player_data['position'].isin(['WR', 'TE']))
-]
+# Filter to selected season (all positions now available)
+df_player_data_filtered = df_player_data[df_player_data['year'] == selected_season]
 
 # Helper function to get recent games data (current season + previous season if needed)
 def get_recent_games_data(player_name, num_games=10):
@@ -147,37 +144,56 @@ def fetch_player_names_and_image():
 def fetch_last_10_games_and_plot(player_name):
     if player_name is None:
         return None, None
-    
+
     # Get recent games data (current season + previous season if needed)
     recent_games = get_recent_games_data(player_name, 10)
-    
+
     if recent_games is None or recent_games.empty:
         return None, None
-    
+
+    # Get player position
+    player_position = recent_games['position'].iloc[0] if 'position' in recent_games.columns else 'Unknown'
+
     # Create a line chart with plotly for continuous metrics
     fig = go.Figure()
 
-    # Receiving yards and receptions (continuous metrics that work well as lines)
-    fig.add_trace(go.Scatter(
-        x=recent_games['x_position'], 
-        y=recent_games['rec_yds'], 
-        mode='lines+markers+text', 
-        name='Receiving Yards', 
-        line=dict(color='#FF4444'),
-        text=recent_games['rec_yds'].astype(int),
-        textposition='top center',
-        textfont=dict(color='#FF4444', size=10)
-    ))
-    fig.add_trace(go.Scatter(
-        x=recent_games['x_position'], 
-        y=recent_games['rec'], 
-        mode='lines+markers+text', 
-        name='Receptions', 
-        line=dict(color='#888888'),
-        text=recent_games['rec'].astype(int),
-        textposition='top center',
-        textfont=dict(color='#888888', size=10)
-    ))
+    # Always show receiving yards and receptions for WR/TE/RB
+    if 'rec_yds' in recent_games.columns and recent_games['rec_yds'].notna().any():
+        fig.add_trace(go.Scatter(
+            x=recent_games['x_position'],
+            y=recent_games['rec_yds'],
+            mode='lines+markers+text',
+            name='Receiving Yards',
+            line=dict(color='#FF4444'),
+            text=recent_games['rec_yds'].astype(int),
+            textposition='top center',
+            textfont=dict(color='#FF4444', size=10)
+        ))
+
+    if 'rec' in recent_games.columns and recent_games['rec'].notna().any():
+        fig.add_trace(go.Scatter(
+            x=recent_games['x_position'],
+            y=recent_games['rec'],
+            mode='lines+markers+text',
+            name='Receptions',
+            line=dict(color='#4444FF'),
+            text=recent_games['rec'].astype(int),
+            textposition='top center',
+            textfont=dict(color='#4444FF', size=10)
+        ))
+
+    # Add rushing yards for RBs
+    if player_position == 'RB' and 'rush_yds' in recent_games.columns and recent_games['rush_yds'].notna().any():
+        fig.add_trace(go.Scatter(
+            x=recent_games['x_position'],
+            y=recent_games['rush_yds'],
+            mode='lines+markers+text',
+            name='Rushing Yards',
+            line=dict(color='green'),  # Green color for rushing
+            text=recent_games['rush_yds'].astype(int),
+            textposition='top center',
+            textfont=dict(color='green', size=10)
+        ))
     
     # Create custom x-axis labels showing year and week
     x_labels = [f"{int(year)}-W{int(week):02d}" for year, week in zip(recent_games['year'], recent_games['week'])]
@@ -185,7 +201,7 @@ def fetch_last_10_games_and_plot(player_name):
     fig.update_layout(
         title=f"Last 10 Games for {player_name}",
         # xaxis_title='Game (Year-Week)',
-        yaxis_title='Value',
+        yaxis_title='Yards',
         template="plotly_dark",  # To match the dark theme
         legend_title="Metrics",
         legend=dict(yanchor="top", y=0.99, xanchor="left", x=0.01),
@@ -227,33 +243,63 @@ with col2:
             
             # Get player position
             player_position = season_2025_data['position'].iloc[0] if 'position' in season_2025_data.columns else 'Unknown'
-            
-            # Create metrics columns for better visual display
-            metric_col1, metric_col2, metric_col3 = st.columns(3)
-            
-            with metric_col1:
-                total_rec_yds = season_2025_data['rec_yds'].sum() if 'rec_yds' in season_2025_data.columns else 0
-                st.metric(
-                    label="Total Rec Yards",
-                    value=f"{total_rec_yds:.0f}",
-                    help="Total receiving yards (2025)"
-                )
-            
-            with metric_col2:
-                avg_rec_per_game = season_2025_data['rec'].mean() if 'rec' in season_2025_data.columns else 0
-                st.metric(
-                    label="Avg Rec/Game",
-                    value=f"{avg_rec_per_game:.1f}",
-                    help="Average receptions per game (2025)"
-                )
-            
-            with metric_col3:
-                total_tds = season_2025_data['rec_td'].sum() if 'rec_td' in season_2025_data.columns else 0
-                st.metric(
-                    label="Total TDs",
-                    value=f"{total_tds:.0f}",
-                    help="Total receiving touchdowns (2025)"
-                )
+
+            if player_position == 'RB':
+                # Show rushing and receiving stats for RBs
+                metric_col1, metric_col2, metric_col3 = st.columns(3)
+
+                with metric_col1:
+                    total_rush_yds = season_2025_data['rush_yds'].sum() if 'rush_yds' in season_2025_data.columns else 0
+                    st.metric(
+                        label="Total Rush Yards",
+                        value=f"{total_rush_yds:.0f}",
+                        help="Total rushing yards (2025)"
+                    )
+
+                with metric_col2:
+                    avg_rush_yds_per_game = season_2025_data['rush_yds'].mean() if 'rush_yds' in season_2025_data.columns else 0
+                    st.metric(
+                        label="Avg Rush Yds/Game",
+                        value=f"{avg_rush_yds_per_game:.1f}",
+                        help="Average rushing yards per game (2025)"
+                    )
+
+                with metric_col3:
+                    total_rush_tds = season_2025_data['rush_td'].sum() if 'rush_td' in season_2025_data.columns else 0
+                    total_rec_tds = season_2025_data['rec_td'].sum() if 'rec_td' in season_2025_data.columns else 0
+                    total_tds = total_rush_tds + total_rec_tds
+                    st.metric(
+                        label="Total TDs",
+                        value=f"{total_tds:.0f}",
+                        help="Total rushing + receiving touchdowns (2025)"
+                    )
+            else:
+                # Show receiving stats for WR/TE and other positions
+                metric_col1, metric_col2, metric_col3 = st.columns(3)
+
+                with metric_col1:
+                    total_rec_yds = season_2025_data['rec_yds'].sum() if 'rec_yds' in season_2025_data.columns else 0
+                    st.metric(
+                        label="Total Rec Yards",
+                        value=f"{total_rec_yds:.0f}",
+                        help="Total receiving yards (2025)"
+                    )
+
+                with metric_col2:
+                    avg_rec_per_game = season_2025_data['rec'].mean() if 'rec' in season_2025_data.columns else 0
+                    st.metric(
+                        label="Avg Rec/Game",
+                        value=f"{avg_rec_per_game:.1f}",
+                        help="Average receptions per game (2025)"
+                    )
+
+                with metric_col3:
+                    total_tds = season_2025_data['rec_td'].sum() if 'rec_td' in season_2025_data.columns else 0
+                    st.metric(
+                        label="Total TDs",
+                        value=f"{total_tds:.0f}",
+                        help="Total receiving touchdowns (2025)"
+                    )
         else:
             st.markdown("#### 📊 2025 Season Stats")
             st.info("No 2025 season data available yet")
@@ -272,17 +318,28 @@ st.divider()
 def fetch_last_10_games(player_name):
     if player_name is None:
         return None
-    
+
     # Get recent games data (current season + previous season if needed)
     recent_games = get_recent_games_data(player_name, 10)
-    
+
     if recent_games is None or recent_games.empty:
         return None
-    
-    # Select relevant columns for display
-    display_columns = ['year', 'week', 'team', 'opponent_team', 'rec', 'rec_yds', 'rec_td', 'rec_long', 'targets']
+
+    # Get player position
+    player_position = recent_games['position'].iloc[0] if 'position' in recent_games.columns else 'Unknown'
+
+    # Select relevant columns for display based on position
+    base_columns = ['year', 'week', 'team', 'opponent_team']
+
+    if player_position == 'RB':
+        # Include rushing and receiving columns for RBs
+        display_columns = base_columns + ['rush_att', 'rush_yds', 'rush_td', 'rec', 'rec_yds', 'rec_td', 'targets']
+    else:
+        # Include receiving columns for WR/TE and other positions
+        display_columns = base_columns + ['rec', 'rec_yds', 'rec_td', 'rec_long', 'targets']
+
     available_columns = [col for col in display_columns if col in recent_games.columns]
-    
+
     # Reverse the order so most recent games appear first
     return recent_games[available_columns].iloc[::-1]
 
@@ -291,7 +348,7 @@ if last_10_games is not None:
     # st.subheader('Last 10 Games:')
     st.subheader(f"Last 10 Games for {player_name}")
     st.write("")
-    st.dataframe(last_10_games, use_container_width=True)
+    st.dataframe(last_10_games, use_container_width=True, hide_index=True)
 
 st.divider()
 
@@ -357,7 +414,7 @@ def plot_last_20_games_reception_trend(player_name):
         table_data = recent_games[['game_id', 'rec_long']].copy()
         # Reverse order to show most recent games first
         table_data = table_data.iloc[::-1]
-        st.dataframe(table_data, use_container_width=True, height=350)
+        st.dataframe(table_data, use_container_width=True, height=350, hide_index=True)
 
 if player_name is not None:
     plot_last_20_games_reception_trend(player_name)
@@ -420,8 +477,17 @@ def fetch_historical_performance(player_name, opponent_team_abbr):
     if player_data.empty:
         return None
     
-    # Select relevant columns
-    display_columns = ['year', 'week', 'rec_yds', 'rec_td', 'rec', 'rec_long']
+    # Get player position
+    player_position = player_data['position'].iloc[0] if 'position' in player_data.columns else 'Unknown'
+
+    # Select relevant columns based on position
+    if player_position == 'RB':
+        # Include rushing and receiving columns for RBs
+        display_columns = ['year', 'week', 'rush_att', 'rush_yds', 'rush_td', 'rec_yds', 'rec_td', 'rec']
+    else:
+        # Include receiving columns for WR/TE and other positions
+        display_columns = ['year', 'week', 'rec_yds', 'rec_td', 'rec', 'rec_long']
+
     available_columns = [col for col in display_columns if col in player_data.columns]
     
     # Sort by year and week descending (most recent first), then reverse for display
@@ -430,14 +496,16 @@ def fetch_historical_performance(player_name, opponent_team_abbr):
 if player_name is not None:
     st.subheader(f'Historical Performance')
     team_abbr_list = df_teams['TeamID'].tolist()
-    opponent_team_abbr = st.selectbox("Select Opponent Team Abbreviation:", options=team_abbr_list)
+    opponent_team_abbr = st.selectbox("Select Opponent:", options=team_abbr_list)
+    st.write("")
+    st.markdown(f'<span style="font-size: 1em; font-weight: bold;">General Stats Against {opponent_team_abbr}: </span>', unsafe_allow_html=True)
     historical_performance = fetch_historical_performance(player_name, opponent_team_abbr)
     if historical_performance is not None:
-        st.write(historical_performance)
+        st.dataframe(historical_performance, use_container_width=True, hide_index=True)
     else:
         st.write("No historical data found for this player against the selected team.")
 
-st.divider()
+# st.divider()
 
 # 5. Get player longest reception stats function
 def get_player_longest_reception_stats(player_name, opponent_team=None):
@@ -465,10 +533,11 @@ def get_player_longest_reception_stats(player_name, opponent_team=None):
     return longest_stats.iloc[::-1]
 
 if player_name is not None:
-    st.subheader(f'Longest Receptions Against {opponent_team_abbr}: ')
+    # st.subheader(f'Longest Receptions Against {opponent_team_abbr}: ')
+    st.markdown(f'<span style="font-size: 1em; font-weight: bold;">Longest Receptions Against {opponent_team_abbr}: </span>', unsafe_allow_html=True)
     longest_reception_stats = get_player_longest_reception_stats(player_name, opponent_team_abbr)
     if longest_reception_stats is not None:
-        st.write(longest_reception_stats)
+        st.dataframe(longest_reception_stats, use_container_width=True, hide_index=True)
     else:
         st.write("No reception data found for this player against the selected team.")
 
