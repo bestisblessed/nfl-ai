@@ -329,6 +329,44 @@ with tab2:
             st.plotly_chart(fig, use_container_width=True)
         else:
             st.write("No RB rushing data available for the selected season.")
+
+    # Total Touchdowns for RBs
+    st.header('Running Back Total Touchdowns')
+    if not rb_selected_stats.empty:
+        rb_td_selected = rb_selected_stats.groupby('player_display_name').agg({
+            'rushing_tds': 'sum',
+            'receiving_tds': 'sum'
+        }).reset_index()
+
+        # Calculate total touchdowns
+        rb_td_selected['total_tds'] = rb_td_selected['rushing_tds'] + rb_td_selected['receiving_tds']
+
+        # Filter for players with at least 1 total TD
+        rb_td_selected = rb_td_selected[rb_td_selected['total_tds'] > 0]
+
+        rb_td_ranked = rb_td_selected.sort_values(by='total_tds', ascending=False).head(30)
+
+        if len(rb_td_ranked) > 0:
+            # Create a styled dataframe for display
+            rb_td_display = rb_td_ranked[['player_display_name', 'total_tds']].copy()
+            rb_td_display.columns = ['Player', 'Total TDs']
+
+            # Style the dataframe
+            st.dataframe(
+                rb_td_display,
+                column_config={
+                    "Player": st.column_config.TextColumn("Player", width="medium"),
+                    "Total TDs": st.column_config.NumberColumn("Total TDs", format="%d", help="Total scoring touchdowns (rushing + receiving)")
+                },
+                hide_index=True,
+                use_container_width=True
+            )
+
+            # Add a summary note
+            total_tds = rb_td_ranked['total_tds'].sum()
+            st.caption(f"Top 30 RBs by total touchdowns in {selected_season}. Combined rushing + receiving TDs = {total_tds} total touchdowns.")
+        else:
+            st.write("No RB touchdown data available for the selected season.")
     else:
         st.write("No RB data available for the selected season.")
 
@@ -364,6 +402,44 @@ with tab3:
             st.plotly_chart(fig, use_container_width=True)
         else:
             st.write("No WR receiving data available for the selected season.")
+
+    # Total Touchdowns for WRs
+    st.header('Wide Receiver Total Touchdowns')
+    if not wr_selected_stats.empty:
+        wr_td_selected = wr_selected_stats.groupby('player_display_name').agg({
+            'rushing_tds': 'sum',
+            'receiving_tds': 'sum'
+        }).reset_index()
+
+        # Calculate total touchdowns
+        wr_td_selected['total_tds'] = wr_td_selected['rushing_tds'] + wr_td_selected['receiving_tds']
+
+        # Filter for players with at least 1 total TD
+        wr_td_selected = wr_td_selected[wr_td_selected['total_tds'] > 0]
+
+        wr_td_ranked = wr_td_selected.sort_values(by='total_tds', ascending=False).head(30)
+
+        if len(wr_td_ranked) > 0:
+            # Create a styled dataframe for display
+            wr_td_display = wr_td_ranked[['player_display_name', 'total_tds']].copy()
+            wr_td_display.columns = ['Player', 'Total TDs']
+
+            # Style the dataframe
+            st.dataframe(
+                wr_td_display,
+                column_config={
+                    "Player": st.column_config.TextColumn("Player", width="medium"),
+                    "Total TDs": st.column_config.NumberColumn("Total TDs", format="%d", help="Total scoring touchdowns (rushing + receiving)")
+                },
+                hide_index=True,
+                use_container_width=True
+            )
+
+            # Add a summary note
+            total_tds = wr_td_ranked['total_tds'].sum()
+            st.caption(f"Top 30 WRs by total touchdowns in {selected_season}. Combined rushing + receiving TDs = {total_tds} total touchdowns.")
+        else:
+            st.write("No WR touchdown data available for the selected season.")
     else:
         st.write("No WR data available for the selected season.")
 
@@ -399,5 +475,43 @@ with tab4:
             st.plotly_chart(fig, use_container_width=True)
         else:
             st.write("No TE receiving data available for the selected season.")
+
+    # Total Touchdowns for TEs
+    st.header('Tight End Total Touchdowns')
+    if not te_selected_stats.empty:
+        te_td_selected = te_selected_stats.groupby('player_display_name').agg({
+            'rushing_tds': 'sum',
+            'receiving_tds': 'sum'
+        }).reset_index()
+
+        # Calculate total touchdowns
+        te_td_selected['total_tds'] = te_td_selected['rushing_tds'] + te_td_selected['receiving_tds']
+
+        # Filter for players with at least 1 total TD
+        te_td_selected = te_td_selected[te_td_selected['total_tds'] > 0]
+
+        te_td_ranked = te_td_selected.sort_values(by='total_tds', ascending=False).head(30)
+
+        if len(te_td_ranked) > 0:
+            # Create a styled dataframe for display
+            te_td_display = te_td_ranked[['player_display_name', 'total_tds']].copy()
+            te_td_display.columns = ['Player', 'Total TDs']
+
+            # Style the dataframe
+            st.dataframe(
+                te_td_display,
+                column_config={
+                    "Player": st.column_config.TextColumn("Player", width="medium"),
+                    "Total TDs": st.column_config.NumberColumn("Total TDs", format="%d", help="Total scoring touchdowns (rushing + receiving)")
+                },
+                hide_index=True,
+                use_container_width=True
+            )
+
+            # Add a summary note
+            total_tds = te_td_ranked['total_tds'].sum()
+            st.caption(f"Top 30 TEs by total touchdowns in {selected_season}. Combined rushing + receiving TDs = {total_tds} total touchdowns.")
+        else:
+            st.write("No TE touchdown data available for the selected season.")
     else:
         st.write("No TE data available for the selected season.")
