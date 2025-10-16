@@ -1,3 +1,4 @@
+from narwhals.expr import col
 import streamlit as st
 import pandas as pd
 import os
@@ -35,13 +36,17 @@ st.markdown(f"""
         <div style='font-size: 3.1rem; font-weight: 800; padding-bottom: 0.5rem;'>
             Matchup Report Generator
         </div>
-        <div style='color: #7f8c8d; font-size: 1rem; margin-top: 0; line-height: 1.2;'>
+        <!-- <div style='color: #7f8c8d; font-size: 1rem; margin-top: 0; line-height: 1.2;'>
             Select two teams to generate a detailed matchup report with head-to-head team trends and player stats
-        </div>
+        </div> -->
     </div>
     """,
     unsafe_allow_html=True
 )
+col1, col2, col3 = st.columns([1, 3.1, 1])
+with col2:
+    st.code("Select two teams to generate a detailed matchup report with head-to-head team trends and player stats.")
+st.divider()
 
 # Add responsive CSS for better layout at different zoom levels
 st.markdown(
@@ -77,13 +82,13 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-st.write("")
-# Use responsive columns with better ratios
-col1, col2, col3 = st.columns([1, 3, 1])
-with col2:
-    st.info("Select two teams to generate a detailed matchup report with head-to-head team trends and player stats.")
+# st.write("")
+# # Use responsive columns with better ratios
+# col1, col2, col3 = st.columns([1, 3, 1])
+# with col2:
+#     st.info("Select two teams to generate a detailed matchup report with head-to-head team trends and player stats.")
 
-st.write("")
+# st.write("")
 # st.divider()
 
 # Load data files directly if not in session state
