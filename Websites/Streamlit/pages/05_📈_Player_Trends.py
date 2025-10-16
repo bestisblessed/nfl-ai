@@ -84,6 +84,7 @@ selected_season = st.selectbox("Select Season:", available_seasons, index=availa
 tab1, tab2, tab3, tab4 = st.tabs(["QBs", "RBs", "WRs", "TEs"])
 
 with tab1:
+    st.header('Quarterback Stats')
     # Get the appropriate dataset for the selected season (once for all charts)
     current_player_data = get_player_data_for_season(selected_season)
     qb_selected_stats = current_player_data[(current_player_data['position'] == 'QB') & (current_player_data['season'] == selected_season)]
@@ -132,8 +133,9 @@ with tab1:
     col1, col2 = st.columns(2)
 
     with col1:
-        st.header('Quarterback Passing Yards per Game')
+        # st.header('Quarterback Passing Yards per Game')
         if qb_passing_data is not None and len(qb_passing_data) > 0:
+            st.markdown('**Passing Yards per Game (Min. 2 Games)**')
             # Create bar chart with text labels
             bars = alt.Chart(qb_passing_data).mark_bar(
                 color='forestgreen',
@@ -157,7 +159,6 @@ with tab1:
             )
 
             chart = (bars + text).properties(
-                title=f'Passing Yards per Game (Min. 2 Games)',
                 width=400,
                 height=max(300, len(qb_passing_data) * 25)
             ).configure_axisX(
@@ -173,8 +174,9 @@ with tab1:
             st.write("No QB passing data available.")
 
     with col2:
-        st.header('Quarterback Rushing Yards per Game')
+        # st.header('Quarterback Rushing Yards per Game')
         if qb_rushing_data is not None and len(qb_rushing_data) > 0:
+            st.markdown('**Rushing Yards per Game (Min. 2 Games)**')
             # Create bar chart with text labels
             bars = alt.Chart(qb_rushing_data).mark_bar(
                 color='darkgreen',
@@ -198,7 +200,6 @@ with tab1:
             )
 
             chart = (bars + text).properties(
-                title=f'Rushing Yards per Game (Min. 2 Games)',
                 width=400,
                 height=max(300, len(qb_rushing_data) * 25)
             ).configure_axisX(
@@ -217,8 +218,9 @@ with tab1:
     col3, col4 = st.columns(2)
 
     with col3:
-        st.header('Quarterback Sack Rankings')
+        # st.header('Quarterback Sack Rankings')
         if qb_sacks_data is not None and len(qb_sacks_data) > 0:
+            st.markdown('**Sack Rankings**')
             # Create bar chart with text labels
             bars = alt.Chart(qb_sacks_data).mark_bar(
                 color='blueviolet',
@@ -242,7 +244,6 @@ with tab1:
             )
 
             chart = (bars + text).properties(
-                title=f'Sack Rankings',
                 width=400,
                 height=max(300, len(qb_sacks_data) * 25)
             ).configure_axisX(
@@ -258,8 +259,9 @@ with tab1:
             st.write("No QB sack data available.")
 
     with col4:
-        st.header('Quarterback Interception Rankings')
+        # st.header('Quarterback Interception Rankings')
         if qb_interceptions_data is not None and len(qb_interceptions_data) > 0:
+            st.markdown('**Interception Rankings (Min. 10 Attempts)**')
             # Create bar chart with text labels
             bars = alt.Chart(qb_interceptions_data).mark_bar(
                 color='salmon',
@@ -283,7 +285,6 @@ with tab1:
             )
 
             chart = (bars + text).properties(
-                title=f'Interception Rankings (Min. 10 Attempts)',
                 width=400,
                 height=max(300, len(qb_interceptions_data) * 25)
             ).configure_axisX(
@@ -300,7 +301,7 @@ with tab1:
             st.write("No QB interception data available.")
 
 with tab2:
-    st.header('Running Back Rankings')
+    st.header('Running Back Stats')
     
     # Get the appropriate dataset for the selected season
     current_player_data = get_player_data_for_season(selected_season)
@@ -376,7 +377,7 @@ with tab2:
             st.write("No data.")
 
 with tab3:
-    st.header('Wide Receiver Rankings')
+    st.header('Wide Receiver Stats')
         
     # Get the appropriate dataset for the selected season
     current_player_data = get_player_data_for_season(selected_season)
@@ -452,7 +453,7 @@ with tab3:
             st.write("No data.")
 
 with tab4:
-    st.header('Tight End Rankings')
+    st.header('Tight End Stats')
         
     # Get the appropriate dataset for the selected season
     current_player_data = get_player_data_for_season(selected_season)
