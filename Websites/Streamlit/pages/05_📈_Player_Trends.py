@@ -85,6 +85,7 @@ tab1, tab2, tab3, tab4 = st.tabs(["QBs", "RBs", "WRs", "TEs"])
 
 with tab1:
     st.header('Quarterback Stats')
+    st.write("")
     # Get the appropriate dataset for the selected season (once for all charts)
     current_player_data = get_player_data_for_season(selected_season)
     qb_selected_stats = current_player_data[(current_player_data['position'] == 'QB') & (current_player_data['season'] == selected_season)]
@@ -139,7 +140,7 @@ with tab1:
     with col1:
         # st.header('Quarterback Passing Yards per Game')
         if qb_passing_data is not None and len(qb_passing_data) > 0:
-            st.markdown('**Passing Yards per Game (Min. 2 Games)**')
+            st.markdown("<h5 style='text-align: center;'>Passing Yards per Game (Min. 2 Games)</h5>", unsafe_allow_html=True)
             # Create bar chart with text labels
             bars = alt.Chart(qb_passing_data).mark_bar(
                 color='forestgreen',
@@ -180,7 +181,7 @@ with tab1:
     with col2:
         # st.header('Quarterback Rushing Yards per Game')
         if qb_rushing_data is not None and len(qb_rushing_data) > 0:
-            st.markdown('**Rushing Yards per Game (Min. 2 Games)**')
+            st.markdown("<h5 style='text-align: center;'>Rushing Yards per Game (Min. 2 Games)</h5>", unsafe_allow_html=True)
             # Create bar chart with text labels
             bars = alt.Chart(qb_rushing_data).mark_bar(
                 color='darkgreen',
@@ -224,7 +225,7 @@ with tab1:
     with col3:
         # st.header('Quarterback Sack Rankings')
         if qb_sacks_data is not None and len(qb_sacks_data) > 0:
-            st.markdown('**Sacks (Min. 2 Games)**') 
+            st.markdown("<h5 style='text-align: center;'>Sacks (Min. 2 Games)</h5>", unsafe_allow_html=True) 
             # Create bar chart with text labels
             bars = alt.Chart(qb_sacks_data).mark_bar(
                 color='blueviolet',
@@ -265,7 +266,7 @@ with tab1:
     with col4:
         # st.header('Quarterback Interception Rankings')
         if qb_interceptions_data is not None and len(qb_interceptions_data) > 0:
-            st.markdown('**Interceptions (Min. 10 Attempts)**')
+            st.markdown("<h5 style='text-align: center;'>Interceptions (Min. 10 Attempts)</h5>", unsafe_allow_html=True)
             # Create bar chart with text labels
             bars = alt.Chart(qb_interceptions_data).mark_bar(
                 color='salmon',
@@ -306,7 +307,7 @@ with tab1:
 
 with tab2:
     st.header('Running Back Stats')
-    
+    st.write("")
     # Get the appropriate dataset for the selected season
     current_player_data = get_player_data_for_season(selected_season)
     rb_selected_stats = current_player_data[(current_player_data['position'] == 'RB') & (current_player_data['season'] == selected_season)]
@@ -321,7 +322,8 @@ with tab2:
             rb_rushing_ranked = rb_rushing_selected.sort_values(by='rushing_yards', ascending=False).head(30)
 
             if len(rb_rushing_ranked) > 0:
-                st.markdown('**Top 30 Rushing Yards**')
+                st.markdown("**Top 30 Rushing Yards**")
+                # st.markdown("<h5 style='text-align: center;'>Top 30 Rushing Yards</h5>", unsafe_allow_html=True)
                 # Create Plotly Express chart
                 fig = px.bar(
                     rb_rushing_ranked,
@@ -382,7 +384,7 @@ with tab2:
 
 with tab3:
     st.header('Wide Receiver Stats')
-        
+    st.write("")
     # Get the appropriate dataset for the selected season
     current_player_data = get_player_data_for_season(selected_season)
     wr_selected_stats = current_player_data[(current_player_data['position'] == 'WR') & (current_player_data['season'] == selected_season)]
@@ -458,7 +460,7 @@ with tab3:
 
 with tab4:
     st.header('Tight End Stats')
-        
+    st.write("")
     # Get the appropriate dataset for the selected season
     current_player_data = get_player_data_for_season(selected_season)
     te_selected_stats = current_player_data[(current_player_data['position'] == 'TE') & (current_player_data['season'] == selected_season)]
