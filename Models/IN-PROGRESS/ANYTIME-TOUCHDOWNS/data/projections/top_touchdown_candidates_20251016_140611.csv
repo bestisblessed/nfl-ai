@@ -1,0 +1,21 @@
+Player,Team,Position,Opponent,Lowest_Probability,Lowest_Odds,Lowest_Model,Highest_Probability,Highest_Odds,Highest_Model,XGB_Probability,XGB_Odds,RF_Probability,RF_Odds,LR_Probability,LR_Odds
+Ja'Marr Chase,CIN,WR,PIT,55.0%,-122,RF,49.6%,+102,XGB,49.6%,+102,55.0%,-122,50.1%,-100
+Cody Schrader,JAX,RB,LAR,54.0%,-117,RF,37.4%,+167,LR,43.3%,+131,54.0%,-117,37.4%,+167
+LeQuint Allen Jr.,JAX,RB,LAR,54.0%,-117,RF,37.4%,+167,LR,43.3%,+131,54.0%,-117,37.4%,+167
+Jarquez Hunter,LAR,RB,JAX,66.0%,-194,RF,37.4%,+167,LR,42.8%,+134,66.0%,-194,37.4%,+167
+Tee Higgins,CIN,WR,PIT,34.4%,+191,XGB,32.0%,+212,RF,34.4%,+191,32.0%,+212,32.7%,+206
+Travis Etienne,JAX,RB,LAR,40.7%,+146,LR,31.0%,+223,RF,33.1%,+202,31.0%,+223,40.7%,+146
+Davante Adams,LAR,WR,JAX,49.0%,+104,RF,29.3%,+241,LR,38.5%,+160,49.0%,+104,29.3%,+241
+Kenneth Gainwell,PIT,RB,CIN,30.8%,+225,XGB,26.9%,+272,LR,30.8%,+225,28.0%,+257,26.9%,+272
+Puka Nacua,LAR,WR,JAX,48.6%,+106,LR,26.0%,+285,RF,35.8%,+180,26.0%,+285,48.6%,+106
+Pat Freiermuth,PIT,TE,CIN,26.8%,+273,XGB,23.3%,+329,LR,26.8%,+273,24.0%,+317,23.3%,+329
+DK Metcalf,PIT,WR,CIN,26.8%,+273,XGB,22.8%,+339,LR,26.8%,+273,24.0%,+317,22.8%,+339
+Jaylen Warren,PIT,RB,CIN,24.3%,+311,XGB,21.6%,+363,LR,24.3%,+311,24.0%,+317,21.6%,+363
+Jordan Whittington,LAR,WR,JAX,48.0%,+108,RF,18.2%,+449,LR,23.4%,+327,48.0%,+108,18.2%,+449
+Tyler Higbee,LAR,TE,JAX,34.0%,+194,RF,16.5%,+505,LR,17.3%,+479,34.0%,+194,16.5%,+505
+Tanner Hudson,CIN,TE,PIT,25.7%,+290,RF,16.1%,+519,LR,18.3%,+447,25.7%,+290,16.1%,+519
+Tutu Atwell,LAR,WR,JAX,22.3%,+348,RF,13.8%,+624,XGB,13.8%,+624,22.3%,+348,15.6%,+542
+Ke'Shawn Williams,PIT,WR,CIN,36.4%,+175,RF,12.8%,+681,LR,18.7%,+434,36.4%,+175,12.8%,+681
+Samaje Perine,CIN,RB,PIT,25.9%,+286,LR,12.0%,+733,RF,21.0%,+375,12.0%,+733,25.9%,+286
+Dyami Brown,JAX,WR,LAR,47.0%,+113,RF,10.8%,+827,XGB,10.8%,+827,47.0%,+113,16.2%,+517
+Mike Gesicki,CIN,TE,PIT,23.8%,+320,LR,10.0%,+900,RF,20.4%,+391,10.0%,+900,23.8%,+320

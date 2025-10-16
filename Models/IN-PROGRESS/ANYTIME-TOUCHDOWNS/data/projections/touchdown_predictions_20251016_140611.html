@@ -1,0 +1,666 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>NFL Touchdown Predictions Report</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 20px; background-color: #f5f5f5; }
+            .header { text-align: center; color: black; margin-bottom: 30px; }
+            .game-section { background: white; margin: 20px 0; padding: 20px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+            .game-title { color: black; font-size: 28px; font-weight: bold; margin-bottom: 15px; border-bottom: 2px solid black; padding-bottom: 10px; }
+            .teams-container { display: flex; gap: 20px; justify-content: space-between; }
+            .team-table { flex: 1; min-width: 0; }
+            .team-title { color: #3498db; font-size: 18px; font-weight: bold; margin: 10px 0; text-align: center; }
+            table { width: 100%; border-collapse: collapse; margin: 10px 0; }
+            th { background-color: #34495e; color: white; padding: 12px; text-align: left; }
+            td { padding: 10px; border-bottom: 1px solid #ecf0f1; }
+            tr:nth-child(even) { background-color: #f8f9fa; }
+            .prob-high { color: #27ae60; font-weight: bold; }
+            .prob-medium { color: #f39c12; font-weight: bold; }
+            .prob-low { color: #7f8c8d; }
+            .summary { background: #ecf0f1; padding: 20px; border-radius: 10px; margin: 20px 0; }
+            .top-picks { background: #d5f4e6; padding: 15px; border-radius: 8px; margin: 10px 0; }
+            @media (max-width: 768px) {
+                .teams-container { flex-direction: column; gap: 10px; }
+                .team-table { margin-bottom: 20px; }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>NFL Touchdown Predictions Report</h1>
+            <p>Generated on October 16, 2025 at 02:06 PM</p>
+        </div>
+    
+        <div class="game-section">
+            <div class="game-title">CIN vs PIT</div>
+            <div class="teams-container">
+        
+            <div class="team-table">
+                <div class="team-title">CIN</div>
+                <table>
+                    <tr>
+                        <th>Player</th>
+                        <th>Position</th>
+                        <th>Lowest Odds</th>
+                        <th>Highest Odds</th>
+                        <th>XGBoost</th>
+                        <th>Random Forest</th>
+                        <th>Logistic Regression</th>
+                    </tr>
+            
+                    <tr>
+                        <td><strong>Ja'Marr Chase</strong></td>
+                        <td>WR</td>
+                        <td class="prob-high">-122</td>
+                        <td class="prob-high">+102</td>
+                        <td>+102</td>
+                        <td>-122</td>
+                        <td>-100</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>Tee Higgins</strong></td>
+                        <td>WR</td>
+                        <td class="prob-high">+191</td>
+                        <td class="prob-high">+212</td>
+                        <td>+191</td>
+                        <td>+212</td>
+                        <td>+206</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>Samaje Perine</strong></td>
+                        <td>RB</td>
+                        <td class="prob-high">+286</td>
+                        <td class="prob-high">+733</td>
+                        <td>+375</td>
+                        <td>+733</td>
+                        <td>+286</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>Tanner Hudson</strong></td>
+                        <td>TE</td>
+                        <td class="prob-high">+290</td>
+                        <td class="prob-high">+519</td>
+                        <td>+447</td>
+                        <td>+290</td>
+                        <td>+519</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>Noah Fant</strong></td>
+                        <td>TE</td>
+                        <td class="prob-medium">+305</td>
+                        <td class="prob-medium">+809</td>
+                        <td>+305</td>
+                        <td>+809</td>
+                        <td>+543</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>Mike Gesicki</strong></td>
+                        <td>TE</td>
+                        <td class="prob-medium">+320</td>
+                        <td class="prob-medium">+900</td>
+                        <td>+391</td>
+                        <td>+900</td>
+                        <td>+320</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>Chase Brown</strong></td>
+                        <td>RB</td>
+                        <td class="prob-medium">+456</td>
+                        <td class="prob-medium">+1360</td>
+                        <td>+1360</td>
+                        <td>+456</td>
+                        <td>+497</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>Charlie Jones</strong></td>
+                        <td>WR</td>
+                        <td class="prob-medium">+542</td>
+                        <td class="prob-medium">+1009</td>
+                        <td>+1009</td>
+                        <td>+542</td>
+                        <td>+795</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>Jermaine Burton</strong></td>
+                        <td>WR</td>
+                        <td class="prob-low">+577</td>
+                        <td class="prob-low">+926</td>
+                        <td>+577</td>
+                        <td>+926</td>
+                        <td>+692</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>Tahj Brooks</strong></td>
+                        <td>RB</td>
+                        <td class="prob-low">+781</td>
+                        <td class="prob-low">+2400</td>
+                        <td>+1641</td>
+                        <td>+2400</td>
+                        <td>+781</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>Mitchell Tinsley</strong></td>
+                        <td>WR</td>
+                        <td class="prob-low">+846</td>
+                        <td class="prob-low">+2926</td>
+                        <td>+2926</td>
+                        <td>+846</td>
+                        <td>+1055</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>Andrei Iosivas</strong></td>
+                        <td>WR</td>
+                        <td class="prob-low">+883</td>
+                        <td class="prob-low">+99999</td>
+                        <td>+933</td>
+                        <td>+99999</td>
+                        <td>+883</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>Drew Sample</strong></td>
+                        <td>TE</td>
+                        <td class="prob-low">+904</td>
+                        <td class="prob-low">+4900</td>
+                        <td>+1225</td>
+                        <td>+4900</td>
+                        <td>+904</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>Cam Grandy</strong></td>
+                        <td>TE</td>
+                        <td class="prob-low">+1014</td>
+                        <td class="prob-low">+1137</td>
+                        <td>+1096</td>
+                        <td>+1137</td>
+                        <td>+1014</td>
+                    </tr>
+                
+                </table>
+            </div>
+            
+            <div class="team-table">
+                <div class="team-title">PIT</div>
+                <table>
+                    <tr>
+                        <th>Player</th>
+                        <th>Position</th>
+                        <th>Lowest Odds</th>
+                        <th>Highest Odds</th>
+                        <th>XGBoost</th>
+                        <th>Random Forest</th>
+                        <th>Logistic Regression</th>
+                    </tr>
+            
+                    <tr>
+                        <td><strong>Ke'Shawn Williams</strong></td>
+                        <td>WR</td>
+                        <td class="prob-high">+175</td>
+                        <td class="prob-high">+681</td>
+                        <td>+434</td>
+                        <td>+175</td>
+                        <td>+681</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>Kenneth Gainwell</strong></td>
+                        <td>RB</td>
+                        <td class="prob-high">+225</td>
+                        <td class="prob-high">+272</td>
+                        <td>+225</td>
+                        <td>+257</td>
+                        <td>+272</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>DK Metcalf</strong></td>
+                        <td>WR</td>
+                        <td class="prob-high">+273</td>
+                        <td class="prob-high">+339</td>
+                        <td>+273</td>
+                        <td>+317</td>
+                        <td>+339</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>Pat Freiermuth</strong></td>
+                        <td>TE</td>
+                        <td class="prob-high">+273</td>
+                        <td class="prob-high">+329</td>
+                        <td>+273</td>
+                        <td>+317</td>
+                        <td>+329</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>Jaylen Warren</strong></td>
+                        <td>RB</td>
+                        <td class="prob-medium">+311</td>
+                        <td class="prob-medium">+363</td>
+                        <td>+311</td>
+                        <td>+317</td>
+                        <td>+363</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>Jonnu Smith</strong></td>
+                        <td>TE</td>
+                        <td class="prob-low">+667</td>
+                        <td class="prob-low">+2400</td>
+                        <td>+706</td>
+                        <td>+2400</td>
+                        <td>+667</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>Connor Heyward</strong></td>
+                        <td>TE</td>
+                        <td class="prob-low">+767</td>
+                        <td class="prob-low">+1691</td>
+                        <td>+1230</td>
+                        <td>+1691</td>
+                        <td>+767</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>Ben Skowronek</strong></td>
+                        <td>WR</td>
+                        <td class="prob-low">+850</td>
+                        <td class="prob-low">+29900</td>
+                        <td>+1092</td>
+                        <td>+29900</td>
+                        <td>+850</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>Scott Miller</strong></td>
+                        <td>WR</td>
+                        <td class="prob-low">+938</td>
+                        <td class="prob-low">+3143</td>
+                        <td>+1458</td>
+                        <td>+3143</td>
+                        <td>+938</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>Kaleb Johnson</strong></td>
+                        <td>RB</td>
+                        <td class="prob-low">+973</td>
+                        <td class="prob-low">+1370</td>
+                        <td>+1370</td>
+                        <td>+1150</td>
+                        <td>+973</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>Roman Wilson</strong></td>
+                        <td>WR</td>
+                        <td class="prob-low">+981</td>
+                        <td class="prob-low">+99999</td>
+                        <td>+1458</td>
+                        <td>+99999</td>
+                        <td>+981</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>Calvin Austin III</strong></td>
+                        <td>WR</td>
+                        <td class="prob-low">+984</td>
+                        <td class="prob-low">+2400</td>
+                        <td>+1151</td>
+                        <td>+2400</td>
+                        <td>+984</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>Darnell Washington</strong></td>
+                        <td>TE</td>
+                        <td class="prob-low">+1056</td>
+                        <td class="prob-low">+99999</td>
+                        <td>+3155</td>
+                        <td>+99999</td>
+                        <td>+1056</td>
+                    </tr>
+                
+                </table>
+            </div>
+            </div>
+        <div class="game-section">
+            <div class="game-title">JAX vs LAR</div>
+            <div class="teams-container">
+        
+            <div class="team-table">
+                <div class="team-title">LAR</div>
+                <table>
+                    <tr>
+                        <th>Player</th>
+                        <th>Position</th>
+                        <th>Lowest Odds</th>
+                        <th>Highest Odds</th>
+                        <th>XGBoost</th>
+                        <th>Random Forest</th>
+                        <th>Logistic Regression</th>
+                    </tr>
+            
+                    <tr>
+                        <td><strong>Jarquez Hunter</strong></td>
+                        <td>RB</td>
+                        <td class="prob-high">-194</td>
+                        <td class="prob-high">+167</td>
+                        <td>+134</td>
+                        <td>-194</td>
+                        <td>+167</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>Davante Adams</strong></td>
+                        <td>WR</td>
+                        <td class="prob-high">+104</td>
+                        <td class="prob-high">+241</td>
+                        <td>+160</td>
+                        <td>+104</td>
+                        <td>+241</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>Puka Nacua</strong></td>
+                        <td>WR</td>
+                        <td class="prob-high">+106</td>
+                        <td class="prob-high">+285</td>
+                        <td>+180</td>
+                        <td>+285</td>
+                        <td>+106</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>Jordan Whittington</strong></td>
+                        <td>WR</td>
+                        <td class="prob-high">+108</td>
+                        <td class="prob-high">+449</td>
+                        <td>+327</td>
+                        <td>+108</td>
+                        <td>+449</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>Tyler Higbee</strong></td>
+                        <td>TE</td>
+                        <td class="prob-high">+194</td>
+                        <td class="prob-high">+505</td>
+                        <td>+479</td>
+                        <td>+194</td>
+                        <td>+505</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>Tutu Atwell</strong></td>
+                        <td>WR</td>
+                        <td class="prob-medium">+348</td>
+                        <td class="prob-medium">+624</td>
+                        <td>+624</td>
+                        <td>+348</td>
+                        <td>+542</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>Kyren Williams</strong></td>
+                        <td>RB</td>
+                        <td class="prob-medium">+432</td>
+                        <td class="prob-medium">+889</td>
+                        <td>+889</td>
+                        <td>+614</td>
+                        <td>+432</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>Xavier Smith</strong></td>
+                        <td>WR</td>
+                        <td class="prob-low">+770</td>
+                        <td class="prob-low">+4900</td>
+                        <td>+2746</td>
+                        <td>+4900</td>
+                        <td>+770</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>Blake Corum</strong></td>
+                        <td>RB</td>
+                        <td class="prob-low">+770</td>
+                        <td class="prob-low">+4900</td>
+                        <td>+1671</td>
+                        <td>+4900</td>
+                        <td>+770</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>Davis Allen</strong></td>
+                        <td>TE</td>
+                        <td class="prob-low">+773</td>
+                        <td class="prob-low">+9900</td>
+                        <td>+1346</td>
+                        <td>+9900</td>
+                        <td>+773</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>Terrance Ferguson</strong></td>
+                        <td>TE</td>
+                        <td class="prob-low">+959</td>
+                        <td class="prob-low">+99999</td>
+                        <td>+2572</td>
+                        <td>+99999</td>
+                        <td>+959</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>Colby Parkinson</strong></td>
+                        <td>TE</td>
+                        <td class="prob-low">+961</td>
+                        <td class="prob-low">+99999</td>
+                        <td>+1451</td>
+                        <td>+99999</td>
+                        <td>+961</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>Konata Mumpfield</strong></td>
+                        <td>WR</td>
+                        <td class="prob-low">+1055</td>
+                        <td class="prob-low">+99999</td>
+                        <td>+1819</td>
+                        <td>+99999</td>
+                        <td>+1055</td>
+                    </tr>
+                
+                </table>
+            </div>
+            
+            <div class="team-table">
+                <div class="team-title">JAX</div>
+                <table>
+                    <tr>
+                        <th>Player</th>
+                        <th>Position</th>
+                        <th>Lowest Odds</th>
+                        <th>Highest Odds</th>
+                        <th>XGBoost</th>
+                        <th>Random Forest</th>
+                        <th>Logistic Regression</th>
+                    </tr>
+            
+                    <tr>
+                        <td><strong>Cody Schrader</strong></td>
+                        <td>RB</td>
+                        <td class="prob-high">-117</td>
+                        <td class="prob-high">+167</td>
+                        <td>+131</td>
+                        <td>-117</td>
+                        <td>+167</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>LeQuint Allen Jr.</strong></td>
+                        <td>RB</td>
+                        <td class="prob-high">-117</td>
+                        <td class="prob-high">+167</td>
+                        <td>+131</td>
+                        <td>-117</td>
+                        <td>+167</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>Dyami Brown</strong></td>
+                        <td>WR</td>
+                        <td class="prob-high">+113</td>
+                        <td class="prob-high">+827</td>
+                        <td>+827</td>
+                        <td>+113</td>
+                        <td>+517</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>Travis Etienne</strong></td>
+                        <td>RB</td>
+                        <td class="prob-high">+146</td>
+                        <td class="prob-high">+223</td>
+                        <td>+202</td>
+                        <td>+223</td>
+                        <td>+146</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>Bhayshul Tuten</strong></td>
+                        <td>RB</td>
+                        <td class="prob-medium">+317</td>
+                        <td class="prob-medium">+1407</td>
+                        <td>+1407</td>
+                        <td>+317</td>
+                        <td>+586</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>Quintin Morris</strong></td>
+                        <td>TE</td>
+                        <td class="prob-medium">+425</td>
+                        <td class="prob-medium">+1567</td>
+                        <td>+425</td>
+                        <td>+1567</td>
+                        <td>+498</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>Brian Thomas Jr.</strong></td>
+                        <td>WR</td>
+                        <td class="prob-medium">+488</td>
+                        <td class="prob-medium">+606</td>
+                        <td>+606</td>
+                        <td>+488</td>
+                        <td>+490</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>Travis Hunter</strong></td>
+                        <td>WR</td>
+                        <td class="prob-medium">+511</td>
+                        <td class="prob-medium">+1332</td>
+                        <td>+521</td>
+                        <td>+1332</td>
+                        <td>+511</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>Parker Washington</strong></td>
+                        <td>WR</td>
+                        <td class="prob-medium">+562</td>
+                        <td class="prob-medium">+917</td>
+                        <td>+732</td>
+                        <td>+917</td>
+                        <td>+562</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>Hunter Long</strong></td>
+                        <td>TE</td>
+                        <td class="prob-low">+865</td>
+                        <td class="prob-low">+29900</td>
+                        <td>+1142</td>
+                        <td>+29900</td>
+                        <td>+865</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>Tim Patrick</strong></td>
+                        <td>WR</td>
+                        <td class="prob-low">+1032</td>
+                        <td class="prob-low">+4900</td>
+                        <td>+4729</td>
+                        <td>+4900</td>
+                        <td>+1032</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>Johnny Mundt</strong></td>
+                        <td>TE</td>
+                        <td class="prob-low">+1104</td>
+                        <td class="prob-low">+99999</td>
+                        <td>+3800</td>
+                        <td>+99999</td>
+                        <td>+1104</td>
+                    </tr>
+                
+                </table>
+            </div>
+            </div>
+        <div class="summary">
+            <h2>Top Touchdown Candidates (All Games)</h2>
+            <div class="top-picks">
+                <h3>🏆 Best Bets (Highest Probability)</h3>
+    
+                <p><strong>1. Jarquez Hunter</strong> (LAR RB) vs JAX: 
+                <span class="prob-high">48.7% (+105)</span></p>
+        
+                <p><strong>2. Ja'Marr Chase</strong> (CIN WR) vs PIT: 
+                <span class="prob-high">51.5% (-106)</span></p>
+        
+                <p><strong>3. Cody Schrader</strong> (JAX RB) vs LAR: 
+                <span class="prob-high">44.9% (+123)</span></p>
+        
+                <p><strong>4. LeQuint Allen Jr.</strong> (JAX RB) vs LAR: 
+                <span class="prob-high">44.9% (+123)</span></p>
+        
+                <p><strong>5. Davante Adams</strong> (LAR WR) vs JAX: 
+                <span class="prob-high">39.0% (+157)</span></p>
+        
+                <p><strong>6. Puka Nacua</strong> (LAR WR) vs JAX: 
+                <span class="prob-high">36.8% (+172)</span></p>
+        
+                <p><strong>7. Jordan Whittington</strong> (LAR WR) vs JAX: 
+                <span class="prob-high">29.9% (+235)</span></p>
+        
+                <p><strong>8. Dyami Brown</strong> (JAX WR) vs LAR: 
+                <span class="prob-high">24.7% (+305)</span></p>
+        
+                <p><strong>9. Travis Etienne</strong> (JAX RB) vs LAR: 
+                <span class="prob-high">34.9% (+186)</span></p>
+        
+                <p><strong>10. Ke'Shawn Williams</strong> (PIT WR) vs CIN: 
+                <span class="prob-high">22.6% (+342)</span></p>
+        
+            </div>
+        </div>
+    </body>
+    </html>
+    

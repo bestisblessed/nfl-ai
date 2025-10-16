@@ -1,0 +1,53 @@
+Player,Team,Position,Opponent,Lowest_Probability,Lowest_Odds,Lowest_Model,Highest_Probability,Highest_Odds,Highest_Model,XGB_Probability,XGB_Odds,RF_Probability,RF_Odds,LR_Probability,LR_Odds
+Ja'Marr Chase,CIN,WR,PIT,55.0%,-122,RF,49.6%,+102,XGB,49.6%,+102,55.0%,-122,50.1%,-100
+LeQuint Allen Jr.,JAX,RB,LAR,54.0%,-117,RF,37.4%,+167,LR,43.3%,+131,54.0%,-117,37.4%,+167
+Jarquez Hunter,LAR,RB,JAX,66.0%,-194,RF,37.4%,+167,LR,42.8%,+134,66.0%,-194,37.4%,+167
+Cody Schrader,JAX,RB,LAR,54.0%,-117,RF,37.4%,+167,LR,43.3%,+131,54.0%,-117,37.4%,+167
+Tee Higgins,CIN,WR,PIT,34.4%,+191,XGB,32.0%,+212,RF,34.4%,+191,32.0%,+212,32.7%,+206
+Travis Etienne,JAX,RB,LAR,40.7%,+146,LR,31.0%,+223,RF,33.1%,+202,31.0%,+223,40.7%,+146
+Davante Adams,LAR,WR,JAX,49.0%,+104,RF,29.3%,+241,LR,38.5%,+160,49.0%,+104,29.3%,+241
+Kenneth Gainwell,PIT,RB,CIN,30.8%,+225,XGB,26.9%,+272,LR,30.8%,+225,28.0%,+257,26.9%,+272
+Puka Nacua,LAR,WR,JAX,48.6%,+106,LR,26.0%,+285,RF,35.8%,+180,26.0%,+285,48.6%,+106
+Pat Freiermuth,PIT,TE,CIN,26.8%,+273,XGB,23.3%,+329,LR,26.8%,+273,24.0%,+317,23.3%,+329
+DK Metcalf,PIT,WR,CIN,26.8%,+273,XGB,22.8%,+339,LR,26.8%,+273,24.0%,+317,22.8%,+339
+Jaylen Warren,PIT,RB,CIN,24.3%,+311,XGB,21.6%,+363,LR,24.3%,+311,24.0%,+317,21.6%,+363
+Jordan Whittington,LAR,WR,JAX,48.0%,+108,RF,18.2%,+449,LR,23.4%,+327,48.0%,+108,18.2%,+449
+Tyler Higbee,LAR,TE,JAX,34.0%,+194,RF,16.5%,+505,LR,17.3%,+479,34.0%,+194,16.5%,+505
+Tanner Hudson,CIN,TE,PIT,25.7%,+290,RF,16.1%,+519,LR,18.3%,+447,25.7%,+290,16.1%,+519
+Brian Thomas Jr.,JAX,WR,LAR,17.0%,+488,RF,14.2%,+606,XGB,14.2%,+606,17.0%,+488,16.9%,+490
+Tutu Atwell,LAR,WR,JAX,22.3%,+348,RF,13.8%,+624,XGB,13.8%,+624,22.3%,+348,15.6%,+542
+Ke'Shawn Williams,PIT,WR,CIN,36.4%,+175,RF,12.8%,+681,LR,18.7%,+434,36.4%,+175,12.8%,+681
+Samaje Perine,CIN,RB,PIT,25.9%,+286,LR,12.0%,+733,RF,21.0%,+375,12.0%,+733,25.9%,+286
+Noah Fant,CIN,TE,PIT,24.7%,+305,XGB,11.0%,+809,RF,24.7%,+305,11.0%,+809,15.6%,+543
+Dyami Brown,JAX,WR,LAR,47.0%,+113,RF,10.8%,+827,XGB,10.8%,+827,47.0%,+113,16.2%,+517
+Kyren Williams,LAR,RB,JAX,18.8%,+432,LR,10.1%,+889,XGB,10.1%,+889,14.0%,+614,18.8%,+432
+Mike Gesicki,CIN,TE,PIT,23.8%,+320,LR,10.0%,+900,RF,20.4%,+391,10.0%,+900,23.8%,+320
+Jermaine Burton,CIN,WR,PIT,14.8%,+577,XGB,9.8%,+926,RF,14.8%,+577,9.8%,+926,12.6%,+692
+Parker Washington,JAX,WR,LAR,15.1%,+562,LR,9.8%,+917,RF,12.0%,+732,9.8%,+917,15.1%,+562
+Charlie Jones,CIN,WR,PIT,15.6%,+542,RF,9.0%,+1009,XGB,9.0%,+1009,15.6%,+542,11.2%,+795
+Cam Grandy,CIN,TE,PIT,9.0%,+1014,LR,8.1%,+1137,RF,8.4%,+1096,8.1%,+1137,9.0%,+1014
+Travis Hunter,JAX,WR,LAR,16.4%,+511,LR,7.0%,+1332,RF,16.1%,+521,7.0%,+1332,16.4%,+511
+Chase Brown,CIN,RB,PIT,18.0%,+456,RF,6.8%,+1360,XGB,6.8%,+1360,18.0%,+456,16.8%,+497
+Kaleb Johnson,PIT,RB,CIN,9.3%,+973,LR,6.8%,+1370,XGB,6.8%,+1370,8.0%,+1150,9.3%,+973
+Bhayshul Tuten,JAX,RB,LAR,24.0%,+317,RF,6.6%,+1407,XGB,6.6%,+1407,24.0%,+317,14.6%,+586
+Quintin Morris,JAX,TE,LAR,19.0%,+425,XGB,6.0%,+1567,RF,19.0%,+425,6.0%,+1567,16.7%,+498
+Connor Heyward,PIT,TE,CIN,11.5%,+767,LR,5.6%,+1691,RF,7.5%,+1230,5.6%,+1691,11.5%,+767
+Jonnu Smith,PIT,TE,CIN,13.0%,+667,LR,4.0%,+2400,RF,12.4%,+706,4.0%,+2400,13.0%,+667
+Tahj Brooks,CIN,RB,PIT,11.4%,+781,LR,4.0%,+2400,RF,5.7%,+1641,4.0%,+2400,11.4%,+781
+Calvin Austin III,PIT,WR,CIN,9.2%,+984,LR,4.0%,+2400,RF,8.0%,+1151,4.0%,+2400,9.2%,+984
+Mitchell Tinsley,CIN,WR,PIT,10.6%,+846,RF,3.3%,+2926,XGB,3.3%,+2926,10.6%,+846,8.7%,+1055
+Scott Miller,PIT,WR,CIN,9.6%,+938,LR,3.1%,+3143,RF,6.4%,+1458,3.1%,+3143,9.6%,+938
+Tim Patrick,JAX,WR,LAR,8.8%,+1032,LR,2.0%,+4900,RF,2.1%,+4729,2.0%,+4900,8.8%,+1032
+Blake Corum,LAR,RB,JAX,11.5%,+770,LR,2.0%,+4900,RF,5.6%,+1671,2.0%,+4900,11.5%,+770
+Drew Sample,CIN,TE,PIT,10.0%,+904,LR,2.0%,+4900,RF,7.5%,+1225,2.0%,+4900,10.0%,+904
+Xavier Smith,LAR,WR,JAX,11.5%,+770,LR,2.0%,+4900,RF,3.5%,+2746,2.0%,+4900,11.5%,+770
+Davis Allen,LAR,TE,JAX,11.5%,+773,LR,1.0%,+9900,RF,6.9%,+1346,1.0%,+9900,11.5%,+773
+Hunter Long,JAX,TE,LAR,10.4%,+865,LR,0.3%,+29900,RF,8.0%,+1142,0.3%,+29900,10.4%,+865
+Ben Skowronek,PIT,WR,CIN,10.5%,+850,LR,0.3%,+29900,RF,8.4%,+1092,0.3%,+29900,10.5%,+850
+Konata Mumpfield,LAR,WR,JAX,8.7%,+1055,LR,0.0%,+99999,RF,5.2%,+1819,0.0%,+99999,8.7%,+1055
+Colby Parkinson,LAR,TE,JAX,9.4%,+961,LR,0.0%,+99999,RF,6.4%,+1451,0.0%,+99999,9.4%,+961
+Terrance Ferguson,LAR,TE,JAX,9.4%,+959,LR,0.0%,+99999,RF,3.7%,+2572,0.0%,+99999,9.4%,+959
+Johnny Mundt,JAX,TE,LAR,8.3%,+1104,LR,0.0%,+99999,RF,2.6%,+3800,0.0%,+99999,8.3%,+1104
+Andrei Iosivas,CIN,WR,PIT,10.2%,+883,LR,0.0%,+99999,RF,9.7%,+933,0.0%,+99999,10.2%,+883
+Roman Wilson,PIT,WR,CIN,9.2%,+981,LR,0.0%,+99999,RF,6.4%,+1458,0.0%,+99999,9.2%,+981
+Darnell Washington,PIT,TE,CIN,8.6%,+1056,LR,0.0%,+99999,RF,3.1%,+3155,0.0%,+99999,8.6%,+1056
