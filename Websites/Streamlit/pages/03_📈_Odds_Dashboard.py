@@ -107,7 +107,7 @@ with col2:
         
         # Team abbreviation to full name mapping
         team_mapping = {
-            'GB': 'Green Bay Packers', 'WAS': 'Washington Commanders',
+            'GB': 'Green Bay Packers', 'WAS': 'Wash Commanders',
             'DAL': 'Dallas Cowboys', 'NYG': 'New York Giants',
             'PIT': 'Pittsburgh Steelers', 'SEA': 'Seattle Seahawks',
             'TEN': 'Tennessee Titans', 'LAR': 'Los Angeles Rams',
@@ -125,16 +125,21 @@ with col2:
             'LVR': 'Las Vegas Raiders', 'LAC': 'Los Angeles Chargers'
         }
         
-        # Create matchup strings from upcoming games (format: "Team1 vs Team2")
+        # Create matchup strings from upcoming games (format: "Home vs Away" to match JSON data)
+        # Store the order from CSV for later sorting
+        upcoming_matchups_ordered = []
         for _, row in df_upcoming_games.iterrows():
             away_team = team_mapping.get(row['away_team'], row['away_team'])
             home_team = team_mapping.get(row['home_team'], row['home_team'])
-            matchup = f"{away_team} vs {home_team}".lower()
-            upcoming_matchups.append(matchup)
-        
+            matchup = f"{home_team} vs {away_team}".lower()
+            upcoming_matchups_ordered.append(matchup)
+
         # Filter games_df to only include upcoming games
         if not games_df.empty:
-            games_df = games_df[games_df['matchup'].isin(upcoming_matchups)]
+            games_df = games_df[games_df['matchup'].isin(upcoming_matchups_ordered)]
+            # Sort games_df to match the order from upcoming_games.csv
+            games_df['matchup_order'] = games_df['matchup'].map({matchup: i for i, matchup in enumerate(upcoming_matchups_ordered)})
+            games_df = games_df.sort_values('matchup_order').drop('matchup_order', axis=1)
         
     except FileNotFoundError:
         st.error("upcoming_games.csv not found. Showing all games.")
@@ -142,10 +147,8 @@ with col2:
         st.error(f"Error loading upcoming games: {str(e)}")
 
     if not games_df.empty:
-        games_with_sufficient_data = (
-            games_df.groupby('matchup')
-            .filter(lambda x: len(df_nfl_odds_movements[df_nfl_odds_movements['matchup'] == x.name]) >= 3)
-        )
+        # Show all upcoming games - historical data is a bonus but not required for current odds display
+        games_with_sufficient_data = games_df
     else:
         games_with_sufficient_data = []
 
