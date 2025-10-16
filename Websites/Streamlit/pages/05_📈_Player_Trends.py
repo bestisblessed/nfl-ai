@@ -115,16 +115,18 @@ with tab1:
         }).reset_index()
         qb_passing_stats['yards_per_game'] = qb_passing_stats['passing_yards'] / qb_passing_stats['game_id']
         qb_passing_stats = qb_passing_stats[qb_passing_stats['game_id'] >= 2]
+        qb_passing_stats = qb_passing_stats[qb_passing_stats['yards_per_game'] >= 30]
         qb_passing_data = qb_passing_stats.sort_values(by='yards_per_game', ascending=False)
 
-        # Calculate Rushing Yards data
+        # Calculate Rushing Yards per Game data
         qb_rushing_selected = qb_selected_stats.groupby('player_display_name').agg({
             'rushing_yards': 'sum',
             'game_id': 'nunique'
         }).reset_index()
+        qb_rushing_selected['yards_per_game'] = qb_rushing_selected['rushing_yards'] / qb_rushing_selected['game_id']
         qb_rushing_selected = qb_rushing_selected[qb_rushing_selected['rushing_yards'] > 0]
         qb_rushing_selected = qb_rushing_selected[qb_rushing_selected['game_id'] >= 2]
-        qb_rushing_data = qb_rushing_selected.sort_values(by='rushing_yards', ascending=False)
+        qb_rushing_data = qb_rushing_selected.sort_values(by='yards_per_game', ascending=False)
 
     # Row 1: Passing Yards per Game | Rushing Yards (side by side)
     col1, col2 = st.columns(2)
@@ -171,16 +173,16 @@ with tab1:
             st.write("No QB passing data available.")
 
     with col2:
-        st.header('Quarterback Rushing Yards')
+        st.header('Quarterback Rushing Yards per Game')
         if qb_rushing_data is not None and len(qb_rushing_data) > 0:
             # Create bar chart with text labels
             bars = alt.Chart(qb_rushing_data).mark_bar(
-                color='seagreen',
+                color='darkgreen',
                 size=20
             ).encode(
-                x=alt.X('rushing_yards:Q', title='Total Rushing Yards'),
+                x=alt.X('yards_per_game:Q', title='Rushing Yards per Game'),
                 y=alt.Y('player_display_name:N', title='Quarterbacks', sort='-x'),
-                tooltip=['player_display_name', 'rushing_yards', 'game_id']
+                tooltip=['player_display_name', 'yards_per_game', 'rushing_yards', 'game_id']
             )
 
             # Add text labels on the bars
@@ -190,13 +192,13 @@ with tab1:
                 dx=3,  # Offset from end of bar
                 color='gray',
             ).encode(
-                x=alt.X('rushing_yards:Q'),
+                x=alt.X('yards_per_game:Q'),
                 y=alt.Y('player_display_name:N', sort='-x'),
-                text=alt.Text('rushing_yards:Q', format='.0f')
+                text=alt.Text('yards_per_game:Q', format='.1f')
             )
 
             chart = (bars + text).properties(
-                title=f'Rushing Yards (Min. 2 Games)',
+                title=f'Rushing Yards per Game (Min. 2 Games)',
                 width=400,
                 height=max(300, len(qb_rushing_data) * 25)
             ).configure_axisX(

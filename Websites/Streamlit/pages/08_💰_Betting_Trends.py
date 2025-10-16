@@ -44,6 +44,10 @@ with tab1:
 
     # Function to determine the ATS result for a game using actual scores and spread
     def ats_result(row, team):
+        # Check if scores are available (not empty strings or NaN)
+        if pd.isna(row['home_score']) or pd.isna(row['away_score']) or row['home_score'] == '' or row['away_score'] == '':
+            return None  # Game not played yet
+        
         spread = float(row['home_spread']) if row['home_team'] == team else float(row['away_spread'])
         score_diff = row['home_score'] - row['away_score'] if row['home_team'] == team else row['away_score'] - row['home_score']
         if score_diff > spread:
@@ -54,7 +58,7 @@ with tab1:
             return 'Push'
 
     # Dropdown button for single team stats
-    selected_team = st.selectbox('Team:', (df_teams), key="ATS_selectbox")
+    selected_team = st.selectbox('Team:', (df_teams), key="ATS_selectbox", index=df_teams['TeamID'].tolist().index('DAL') if 'DAL' in df_teams['TeamID'].tolist() else 0)
     if selected_team:
         # Filter the games for the selected team
         relevant_columns = ['home_team', 'away_team', 'home_score', 'away_score', 'home_spread', 'away_spread']
@@ -62,9 +66,11 @@ with tab1:
             ((df_games['home_team'] == selected_team) | (df_games['away_team'] == selected_team)) & (df_games['season'] == selected_season) & (df_games['week'].between(1, 18))
         ][relevant_columns]    
         team_games['ATS_Result'] = team_games.apply(lambda row: ats_result(row, selected_team), axis=1)
-        overall_ats_record = team_games['ATS_Result'].value_counts().reindex(['Win', 'Loss', 'Push'], fill_value=0)
-        home_ats_record = team_games[team_games['home_team'] == selected_team]['ATS_Result'].value_counts().reindex(['Win', 'Loss', 'Push'], fill_value=0)
-        away_ats_record = team_games[team_games['away_team'] == selected_team]['ATS_Result'].value_counts().reindex(['Win', 'Loss', 'Push'], fill_value=0)
+        # Filter out unplayed games (None values)
+        played_games = team_games.dropna(subset=['ATS_Result'])
+        overall_ats_record = played_games['ATS_Result'].value_counts().reindex(['Win', 'Loss', 'Push'], fill_value=0)
+        home_ats_record = played_games[played_games['home_team'] == selected_team]['ATS_Result'].value_counts().reindex(['Win', 'Loss', 'Push'], fill_value=0)
+        away_ats_record = played_games[played_games['away_team'] == selected_team]['ATS_Result'].value_counts().reindex(['Win', 'Loss', 'Push'], fill_value=0)
         st.write(f"ATS Record for {selected_team} in {selected_season} Season")
         ats_data = pd.DataFrame({
             'Overall': overall_ats_record,
@@ -86,6 +92,8 @@ with tab1:
         ((df_games['home_team'] == team) | (df_games['away_team'] == team)) & (df_games['season'] == selected_season) & (df_games['week'].between(1, 18))
         ][relevant_columns]
         team_games['ATS_Result'] = team_games.apply(lambda row: ats_result(row, team), axis=1)
+        # Filter out unplayed games (None values)
+        played_games = team_games.dropna(subset=['ATS_Result'])
         # overall_ats_record = team_games['ATS_Result'].value_counts()
         # home_ats_record = team_games[team_games['home_team'] == team]['ATS_Result'].value_counts()
         # away_ats_record = team_games[team_games['away_team'] == team]['ATS_Result'].value_counts()
@@ -94,9 +102,9 @@ with tab1:
         # st.write("Home:", home_ats_record)
         # st.write("Away:", away_ats_record)
         # st.divider()
-        overall_ats_records.loc[team] = team_games['ATS_Result'].value_counts()
-        home_ats_records.loc[team] = team_games[team_games['home_team'] == team]['ATS_Result'].value_counts()
-        away_ats_records.loc[team] = team_games[team_games['away_team'] == team]['ATS_Result'].value_counts()
+        overall_ats_records.loc[team] = played_games['ATS_Result'].value_counts()
+        home_ats_records.loc[team] = played_games[played_games['home_team'] == team]['ATS_Result'].value_counts()
+        away_ats_records.loc[team] = played_games[played_games['away_team'] == team]['ATS_Result'].value_counts()
 
     # Plotting Overall ATS Record
     st.subheader("Overall ATS Record")
@@ -133,11 +141,20 @@ with tab2:
 
     teams = df_teams['TeamID'].tolist()
     games_selected = df_games[(df_games['season'] == selected_season) & (df_games['week'].between(1, 18))].copy()
+    
+    # Filter out unplayed games (games with empty or NaN scores)
+    games_selected = games_selected[
+        (games_selected['home_score'].notna()) & 
+        (games_selected['away_score'].notna()) & 
+        (games_selected['home_score'] != '') & 
+        (games_selected['away_score'] != '')
+    ].copy()
+    
     games_selected['total_score'] = games_selected['home_score'] + games_selected['away_score']
     games_selected['over_under_result'] = games_selected.apply(lambda row: 'over' if row['total_score'] > row['total_line'] else 'under' if row['total_score'] < row['total_line'] else 'push', axis=1)
 
     # Dropdown button for single team stats
-    selected_team = st.selectbox('Team:', (df_teams), key="O/U_selectbox")
+    selected_team = st.selectbox('Team:', (df_teams), key="O/U_selectbox", index=df_teams['TeamID'].tolist().index('DAL') if 'DAL' in df_teams['TeamID'].tolist() else 0)
     if selected_team:
         selected_team_games = games_selected[(games_selected['home_team'] == selected_team) | (games_selected['away_team'] == selected_team)]
         over_count = selected_team_games['over_under_result'].value_counts().get('over', 0)
