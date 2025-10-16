@@ -3,14 +3,14 @@ NE vs TEN | Week 7 2025 | QB Projected Rushing Yards
 ================================================================================
 
 +-------------+--------------+    +--------------+--------------+
-| NE Player   |   Pred Yards |    | TEN Player   | Pred Yards   |
+| NE Player   |   Pred Yards |    | TEN Player   |   Pred Yards |
 +=============+==============+    +==============+==============+
-| Drake Maye  |           28 |    | Cam Ward     | No Data      |
+| Drake Maye  |         21.8 |    | Cam Ward     |          4.3 |
 +-------------+--------------+    +--------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total RBs: 2 (1 NE, 1 TEN)
-Top Projection: Drake Maye (NE) - 28.0 yards
+Top Projection: Drake Maye (NE) - 21.8 yards
 ================================================================================

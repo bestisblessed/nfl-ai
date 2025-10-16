@@ -5,12 +5,12 @@ LAR vs JAX | Week 7 2025 | QB Projected Rushing Yards
 +------------------+--------------+    +-----------------+--------------+
 | LAR Player       |   Pred Yards |    | JAX Player      |   Pred Yards |
 +==================+==============+    +=================+==============+
-| Matthew Stafford |          1.6 |    | Trevor Lawrence |         26.8 |
+| Matthew Stafford |          1.2 |    | Trevor Lawrence |         27.2 |
 +------------------+--------------+    +-----------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total RBs: 2 (1 LAR, 1 JAX)
-Top Projection: Trevor Lawrence (JAX) - 26.8 yards
+Top Projection: Trevor Lawrence (JAX) - 27.2 yards
 ================================================================================

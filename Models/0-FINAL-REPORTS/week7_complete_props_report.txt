@@ -1,8 +1,8 @@
 🏈 NFL WEEK 7 2025 - COMPLETE PROPS REPORT
 ================================================================================
-Generated: 2025-10-15 22:17:14
+Generated: 2025-10-15 23:26:45
 Total Games: 15
-Total Props: 382
+Total Props: 384
 
 This report includes ALL player props for each game:
 • QB Passing Yards
@@ -30,12 +30,12 @@ PIT:
 CIN:
   Chase Brown (RB): 41.6 yards
   Samaje Perine (RB): 7.9 yards
-  Joe Flacco (QB): 0.2 yards
+  Joe Flacco (QB): 0.6 yards
 
 PIT:
   Kenneth Gainwell (RB): 40.8 yards
   Jaylen Warren (RB): 37.3 yards
-  Aaron Rodgers (QB): 3.9 yards
+  Aaron Rodgers (QB): 3.8 yards
 
 
 🏈 RECEIVING YARDS
@@ -87,12 +87,12 @@ LAR:
 ----------------------------------------
 JAX:
   Travis Etienne (RB): 69.2 yards
-  Trevor Lawrence (QB): 26.8 yards
+  Trevor Lawrence (QB): 27.2 yards
 
 LAR:
   Kyren Williams (RB): 62.1 yards
   Blake Corum (RB): 16.3 yards
-  Matthew Stafford (QB): 1.6 yards
+  Matthew Stafford (QB): 1.2 yards
 
 
 🏈 RECEIVING YARDS
@@ -132,6 +132,9 @@ MIN vs PHI | Week 7 2025 | ALL PROPS
 
 🏈 PASSING YARDS
 ----------------------------------------
+MIN:
+  Carson Wentz (QB): 242.0 yards
+
 PHI:
   Jalen Hurts (QB): 183.2 yards
 
@@ -142,10 +145,11 @@ MIN:
   Jordan Mason (RB): 51.6 yards
   Aaron Jones (RB): 39.5 yards
   Cam Akers (RB): 25.1 yards
+  Carson Wentz (QB): 7.5 yards
 
 PHI:
   Saquon Barkley (RB): 57.8 yards
-  Jalen Hurts (QB): 28.4 yards
+  Jalen Hurts (QB): 29.1 yards
   Will Shipley (RB): 22.1 yards
   Tank Bigsby (RB): 21.9 yards
 
@@ -177,10 +181,10 @@ PHI:
 
 📊 GAME SUMMARY
 --------------------
-Total Props: 26
-With Predictions: 26
+Total Props: 28
+With Predictions: 28
 No Data (Rookies): 0
-Top Projection: Jalen Hurts (QB) - 183.2 passing yards
+Top Projection: Carson Wentz (QB) - 242.0 passing yards
 ================================================================================
 
 ================================================================================
@@ -200,13 +204,13 @@ TEN:
 ----------------------------------------
 NE:
   Rhamondre Stevenson (RB): 31.8 yards
-  Drake Maye (QB): 28.0 yards
+  Drake Maye (QB): 21.8 yards
 
 TEN:
   Tony Pollard (RB): 51.0 yards
   Tyjae Spears (RB): 40.6 yards
   Julius Chestnut (RB): 15.7 yards
-  Cam Ward (QB): No Data
+  Cam Ward (QB): 4.3 yards
 
 
 🏈 RECEIVING YARDS
@@ -234,8 +238,8 @@ TEN:
 📊 GAME SUMMARY
 --------------------
 Total Props: 23
-With Predictions: 22
-No Data (Rookies): 1
+With Predictions: 23
+No Data (Rookies): 0
 Top Projection: Drake Maye (QB) - 241.6 passing yards
 ================================================================================
 
@@ -257,12 +261,12 @@ NYJ:
 CAR:
   Rico Dowdle (RB): 87.0 yards
   Chuba Hubbard (RB): 48.9 yards
-  Bryce Young (QB): 4.7 yards
+  Bryce Young (QB): 3.7 yards
   DeeJay Dallas (RB): 1.5 yards
 
 NYJ:
   Breece Hall (RB): 60.2 yards
-  Justin Fields (QB): 39.4 yards
+  Justin Fields (QB): 37.0 yards
   Isaiah Davis (RB): 5.3 yards
   Andrew Beck (RB): 0.0 yards
 
@@ -313,11 +317,11 @@ MIA:
 ----------------------------------------
 CLE:
   Jerome Ford (RB): 16.2 yards
-  Dillon Gabriel (QB): No Data
+  Dillon Gabriel (QB): 1.9 yards
 
 MIA:
   De'Von Achane (RB): 56.9 yards
-  Tua Tagovailoa (QB): 5.7 yards
+  Tua Tagovailoa (QB): 6.5 yards
   Alec Ingold (RB): 0.0 yards
 
 
@@ -344,8 +348,8 @@ MIA:
 📊 GAME SUMMARY
 --------------------
 Total Props: 20
-With Predictions: 19
-No Data (Rookies): 1
+With Predictions: 20
+No Data (Rookies): 0
 Top Projection: Tua Tagovailoa (QB) - 205.7 passing yards
 ================================================================================
 
@@ -366,13 +370,13 @@ NO:
 ----------------------------------------
 CHI:
   D'Andre Swift (RB): 56.8 yards
-  Caleb Williams (QB): 23.9 yards
+  Caleb Williams (QB): 21.0 yards
   Roschon Johnson (RB): 5.5 yards
 
 NO:
   Alvin Kamara (RB): 53.4 yards
   Kendre Miller (RB): 28.3 yards
-  Spencer Rattler (QB): 24.5 yards
+  Spencer Rattler (QB): 22.5 yards
 
 
 🏈 RECEIVING YARDS
@@ -423,12 +427,12 @@ LVR:
 KC:
   Isiah Pacheco (RB): 46.9 yards
   Kareem Hunt (RB): 41.9 yards
-  Patrick Mahomes (QB): 33.8 yards
+  Patrick Mahomes (QB): 36.9 yards
 
 LVR:
   Zamir White (RB): 16.0 yards
   Raheem Mostert (RB): 10.2 yards
-  Geno Smith (QB): 2.4 yards
+  Geno Smith (QB): 2.8 yards
   Dylan Laube (RB): 1.9 yards
 
 
@@ -482,12 +486,12 @@ LAC:
 ----------------------------------------
 IND:
   Jonathan Taylor (RB): 75.9 yards
-  Daniel Jones (QB): 15.5 yards
+  Daniel Jones (QB): 13.8 yards
   Ameer Abdullah (RB): 13.3 yards
   Tyler Goodson (RB): 8.5 yards
 
 LAC:
-  Justin Herbert (QB): 19.3 yards
+  Justin Herbert (QB): 25.0 yards
   Kimani Vidal (RB): 18.0 yards
   Hassan Haskins (RB): 14.8 yards
   Scott Matlock (RB): 0.0 yards
@@ -544,14 +548,14 @@ NYG:
 DEN:
   J.K. Dobbins (RB): 68.0 yards
   Jaleel McLaughlin (RB): 25.1 yards
-  Bo Nix (QB): 19.4 yards
+  Bo Nix (QB): 16.9 yards
   Adam Prentice (RB): 2.9 yards
   Tyler Badie (RB): 1.9 yards
 
 NYG:
   Tyrone Tracy Jr. (RB): 28.5 yards
+  Jaxson Dart (QB): 15.9 yards
   Devin Singletary (RB): 15.4 yards
-  Jaxson Dart (QB): No Data
 
 
 🏈 RECEIVING YARDS
@@ -583,8 +587,8 @@ NYG:
 📊 GAME SUMMARY
 --------------------
 Total Props: 29
-With Predictions: 28
-No Data (Rookies): 1
+With Predictions: 29
+No Data (Rookies): 0
 Top Projection: Bo Nix (QB) - 205.7 passing yards
 ================================================================================
 
@@ -604,14 +608,14 @@ GB:
 🏈 RUSHING YARDS
 ----------------------------------------
 ARI:
-  Kyler Murray (QB): 30.3 yards
   Michael Carter (RB): 28.1 yards
+  Kyler Murray (QB): 27.3 yards
   Emari Demercado (RB): 23.1 yards
 
 GB:
   Josh Jacobs (RB): 67.6 yards
   Emanuel Wilson (RB): 20.4 yards
-  Jordan Love (QB): 11.3 yards
+  Jordan Love (QB): 19.1 yards
   Chris Brooks (RB): 2.0 yards
 
 
@@ -665,11 +669,11 @@ WAS:
 ----------------------------------------
 DAL:
   Javonte Williams (RB): 54.7 yards
-  Dak Prescott (QB): 14.8 yards
+  Dak Prescott (QB): 14.1 yards
   Hunter Luepke (RB): 1.1 yards
 
 WAS:
-  Jayden Daniels (QB): 48.2 yards
+  Jayden Daniels (QB): 47.7 yards
   Jeremy McNichols (RB): 24.9 yards
 
 
@@ -723,11 +727,11 @@ SF:
 ATL:
   Bijan Robinson (RB): 87.2 yards
   Tyler Allgeier (RB): 36.4 yards
-  Michael Penix Jr. (QB): 4.9 yards
+  Michael Penix Jr. (QB): 5.4 yards
 
 SF:
   Christian McCaffrey (RB): 55.0 yards
-  Mac Jones (QB): 2.5 yards
+  Mac Jones (QB): 3.4 yards
   Kyle Juszczyk (RB): -0.0 yards
 
 
@@ -785,11 +789,11 @@ DET:
   Jahmyr Gibbs (RB): 73.5 yards
   David Montgomery (RB): 69.2 yards
   Craig Reynolds (RB): 16.9 yards
-  Jared Goff (QB): 4.2 yards
+  Jared Goff (QB): 4.1 yards
 
 TB:
   Rachaad White (RB): 31.9 yards
-  Baker Mayfield (QB): 20.2 yards
+  Baker Mayfield (QB): 29.4 yards
   Sean Tucker (RB): 14.9 yards
 
 
@@ -841,7 +845,7 @@ SEA:
 ----------------------------------------
 HOU:
   Nick Chubb (RB): 51.9 yards
-  C.J. Stroud (QB): 12.2 yards
+  C.J. Stroud (QB): 15.7 yards
   Dameon Pierce (RB): 11.6 yards
   British Brooks (RB): 3.1 yards
   Dare Ogunbowale (RB): 1.3 yards
@@ -849,7 +853,7 @@ HOU:
 SEA:
   Kenneth Walker III (RB): 68.1 yards
   Zach Charbonnet (RB): 27.8 yards
-  Sam Darnold (QB): 17.3 yards
+  Sam Darnold (QB): 15.7 yards
   George Holani (RB): 6.1 yards
 
 
