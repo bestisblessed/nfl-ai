@@ -124,3 +124,5 @@ else
             ;;
     esac
 fi
+
+rm -rf __pycache__

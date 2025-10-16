@@ -208,7 +208,32 @@ def _eligible_players(player_stats: pd.DataFrame) -> pd.DataFrame:
     data = player_stats.copy()
     data = data.fillna({stat: 0 for stat in BASE_STATS + TD_COLUMNS})
     touches = data["rush_att"].fillna(0) + data["targets"].fillna(0) + data["rec"].fillna(0)
+    # Require at least 1 touch per game on average (more than just 1 total touch)
     data = data[touches > 0]
+    
+    # Additional filter: require meaningful playing time (at least 2 touches in a game)
+    meaningful_touches = data["rush_att"].fillna(0) + data["targets"].fillna(0) + data["rec"].fillna(0)
+    data = data[meaningful_touches >= 2]
+    
+    # Filter out players with insufficient activity in 2025 season (current season)
+    data_2025 = data[data["season"] == 2025]
+    if not data_2025.empty:
+        # Get players who meet minimum activity thresholds in 2025
+        player_activity = data_2025.groupby("player").agg({
+            "pass_att": "sum",
+            "targets": "sum", 
+            "rush_att": "sum"
+        }).fillna(0)
+        
+        # Require: 10+ pass attempts OR 3+ targets OR 3+ rushing attempts
+        active_2025_players = player_activity[
+            (player_activity["pass_att"] >= 10) |
+            (player_activity["targets"] >= 3) |
+            (player_activity["rush_att"] >= 3)
+        ].index.tolist()
+        
+        # Only include players who were sufficiently active in 2025
+        data = data[data["player"].isin(active_2025_players)]
     data = data[data["season"].notna()]
     data["season"] = data["season"].astype(int)
     data["week"] = data["week"].astype(int)
@@ -375,7 +400,7 @@ def _compute_player_features(
 
 def prepare_datasets(
     upcoming_week: int,
-    upcoming_season: int = 2024,
+    upcoming_season: int = 2025,
     rolling_window: int = ROLLING_WINDOW,
     min_games: int = 1,
     data_dir: str | None = None,
@@ -411,12 +436,16 @@ def prepare_datasets(
     model_ready = player_features[valid_mask].copy()
     print(f"Model-ready data: {len(model_ready)} rows")
 
+    # Use all historical data + 2024 season weeks 1 to (current_week-1) for training
     train = model_ready[
-        (~model_ready["is_placeholder"]) & (model_ready["season"] < upcoming_season)
+        (~model_ready["is_placeholder"]) & 
+        ((model_ready["season"] < upcoming_season) | 
+         ((model_ready["season"] == 2024) & (model_ready["week"] < upcoming_week)))
     ].copy()
-    validation = model_ready[
-        (~model_ready["is_placeholder"]) & (model_ready["season"] == upcoming_season) & (model_ready["week"] < upcoming_week)
-    ].copy()
+    
+    # No separate validation set - use all available data for training
+    validation = pd.DataFrame()  # Empty validation set
+    
     upcoming = model_ready[model_ready["is_placeholder"]].copy()
 
     print(f"Final datasets - Train: {len(train)} rows, Validation: {len(validation)} rows, Upcoming: {len(upcoming)} rows")
