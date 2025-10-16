@@ -1,4 +1,1042 @@
 file1,file2,game_date,game_time,matchup,sportsbook,odds_before,odds_after,team_1,team_2,team1_odds_before,team2_odds_before,team1_odds_after,team2_odds_after,time_before,time_after
+nfl_odds_vsin_20251010_0019.json,nfl_odds_vsin_20251010_0027.json,"Sun,October 12th","1:00 PM
+ Splits",Cleveland Browns vs  Pittsburgh Steelers,DK,+5.5 -105 | -5.5 -115,+6 -115 | -6 -105,Cleveland Browns,Pittsburgh Steelers,+5.5,-5.5,+6,-6,Oct 10 12:19AM,Oct 10 12:27AM
+nfl_odds_vsin_20251010_0127.json,nfl_odds_vsin_20251010_0135.json,"Sun,October 12th","1:00 PM
+ Splits",Los Angeles Chargers vs  Miami Dolphins,Caesars,-4 -109 | +4 -112,-4 -106 | +4 -114,Los Angeles Chargers,Miami Dolphins,-4,+4,-4,+4,Oct 10 1:27AM,Oct 10 1:35AM
+nfl_odds_vsin_20251010_0311.json,nfl_odds_vsin_20251010_0319.json,"Sun,October 12th","9:30 AM
+ Splits",Denver Broncos vs  New York Jets,Caesars,-7 -111 | +7 -111,-7.5 +100 | +7.5 -121,Denver Broncos,New York Jets,-7,+7,-7.5,+7.5,Oct 10 3:11AM,Oct 10 3:19AM
+nfl_odds_vsin_20251010_0559.json,nfl_odds_vsin_20251010_0603.json,"Sun,October 12th","4:25 PM
+ Splits",Cincinnati Bengals vs  Green Bay Packers,Caesars,+14 -108 | -14 -113,+14 -107 | -14 -113,Cincinnati Bengals,Green Bay Packers,+14,-14,+14,-14,Oct 10 5:59AM,Oct 10 6:03AM
+nfl_odds_vsin_20251010_0803.json,nfl_odds_vsin_20251010_0812.json,"Sun,October 12th","1:00 PM
+ Splits",Cleveland Browns vs  Pittsburgh Steelers,DK Open,+4.5 -110 | -4.5 -110,+3.5 -105 | -3.5 -115,Cleveland Browns,Pittsburgh Steelers,+4.5,-4.5,+3.5,-3.5,Oct 10 8:03AM,Oct 10 8:12AM
+nfl_odds_vsin_20251010_0803.json,nfl_odds_vsin_20251010_0812.json,"Sun,October 12th","1:00 PM
+ Splits",Cleveland Browns vs  Pittsburgh Steelers,DK,+6 -115 | -6 -105,+7.5 -108 | -7.5 -112,Cleveland Browns,Pittsburgh Steelers,+6,-6,+7.5,-7.5,Oct 10 8:03AM,Oct 10 8:12AM
+nfl_odds_vsin_20251010_0803.json,nfl_odds_vsin_20251010_0812.json,"Sun,October 12th","1:00 PM
+ Splits",Cleveland Browns vs  Pittsburgh Steelers,Circa,+6 -110 | -6 -110,+7.5 +100 | -7.5 -120,Cleveland Browns,Pittsburgh Steelers,+6,-6,+7.5,-7.5,Oct 10 8:03AM,Oct 10 8:12AM
+nfl_odds_vsin_20251010_0803.json,nfl_odds_vsin_20251010_0812.json,"Sun,October 12th","1:00 PM
+ Splits",Cleveland Browns vs  Pittsburgh Steelers,South Point,+6 -110 | -6 -110,+7.5 -110 | -7.5 -110,Cleveland Browns,Pittsburgh Steelers,+6,-6,+7.5,-7.5,Oct 10 8:03AM,Oct 10 8:12AM
+nfl_odds_vsin_20251010_0803.json,nfl_odds_vsin_20251010_0812.json,"Sun,October 12th","1:00 PM
+ Splits",Arizona Cardinals vs  Indianapolis Colts,DK Open,+3.5 -105 | -3.5 -115,-5.5 -110 | +5.5 -110,Arizona Cardinals,Indianapolis Colts,+3.5,-3.5,-5.5,+5.5,Oct 10 8:03AM,Oct 10 8:12AM
+nfl_odds_vsin_20251010_0803.json,nfl_odds_vsin_20251010_0812.json,"Sun,October 12th","1:00 PM
+ Splits",Arizona Cardinals vs  Indianapolis Colts,DK,+7.5 -108 | -7.5 -112,-7.5 -105 | +7.5 -115,Arizona Cardinals,Indianapolis Colts,+7.5,-7.5,-7.5,+7.5,Oct 10 8:03AM,Oct 10 8:12AM
+nfl_odds_vsin_20251010_0803.json,nfl_odds_vsin_20251010_0812.json,"Sun,October 12th","1:00 PM
+ Splits",Arizona Cardinals vs  Indianapolis Colts,Circa,+7.5 +100 | -7.5 -120,-7.5 -110 | +7.5 -110,Arizona Cardinals,Indianapolis Colts,+7.5,-7.5,-7.5,+7.5,Oct 10 8:03AM,Oct 10 8:12AM
+nfl_odds_vsin_20251010_0803.json,nfl_odds_vsin_20251010_0812.json,"Sun,October 12th","1:00 PM
+ Splits",Arizona Cardinals vs  Indianapolis Colts,South Point,+7.5 -110 | -7.5 -110,-7.5 -110 | +7.5 -110,Arizona Cardinals,Indianapolis Colts,+7.5,-7.5,-7.5,+7.5,Oct 10 8:03AM,Oct 10 8:12AM
+nfl_odds_vsin_20251010_0803.json,nfl_odds_vsin_20251010_0812.json,"Sun,October 12th","1:00 PM
+ Splits",Los Angeles Rams vs  Baltimore Ravens,DK Open,-5.5 -110 | +5.5 -110,+1.5 -118 | -1.5 -102,Los Angeles Rams,Baltimore Ravens,-5.5,+5.5,+1.5,-1.5,Oct 10 8:03AM,Oct 10 8:12AM
+nfl_odds_vsin_20251010_0803.json,nfl_odds_vsin_20251010_0812.json,"Sun,October 12th","1:00 PM
+ Splits",Los Angeles Rams vs  Baltimore Ravens,DK,-7.5 -105 | +7.5 -115,-1.5 +105 | +1.5 -125,Los Angeles Rams,Baltimore Ravens,-7.5,+7.5,-1.5,+1.5,Oct 10 8:03AM,Oct 10 8:12AM
+nfl_odds_vsin_20251010_0803.json,nfl_odds_vsin_20251010_0812.json,"Sun,October 12th","1:00 PM
+ Splits",Los Angeles Rams vs  Baltimore Ravens,Circa,-7.5 -110 | +7.5 -110,PK -110 | PK -110,Los Angeles Rams,Baltimore Ravens,-7.5,+7.5,PK,PK,Oct 10 8:03AM,Oct 10 8:12AM
+nfl_odds_vsin_20251010_0803.json,nfl_odds_vsin_20251010_0812.json,"Sun,October 12th","1:00 PM
+ Splits",Los Angeles Rams vs  Baltimore Ravens,South Point,-7.5 -110 | +7.5 -110,PK -110 | PK -110,Los Angeles Rams,Baltimore Ravens,-7.5,+7.5,PK,PK,Oct 10 8:03AM,Oct 10 8:12AM
+nfl_odds_vsin_20251010_0803.json,nfl_odds_vsin_20251010_0812.json,"Sun,October 12th","1:00 PM
+ Splits",Seattle Seahawks vs  Jacksonville Jaguars,DK Open,+1.5 -118 | -1.5 -102,-3.5 -110 | +3.5 -110,Seattle Seahawks,Jacksonville Jaguars,+1.5,-1.5,-3.5,+3.5,Oct 10 8:03AM,Oct 10 8:12AM
+nfl_odds_vsin_20251010_0803.json,nfl_odds_vsin_20251010_0812.json,"Sun,October 12th","1:00 PM
+ Splits",Seattle Seahawks vs  Jacksonville Jaguars,DK,-1.5 +105 | +1.5 -125,-3 -120 | +3 +100,Seattle Seahawks,Jacksonville Jaguars,-1.5,+1.5,-3,+3,Oct 10 8:03AM,Oct 10 8:12AM
+nfl_odds_vsin_20251010_0803.json,nfl_odds_vsin_20251010_0812.json,"Sun,October 12th","1:00 PM
+ Splits",Seattle Seahawks vs  Jacksonville Jaguars,Circa,PK -110 | PK -110,-3 -115 | +3 -105,Seattle Seahawks,Jacksonville Jaguars,PK,PK,-3,+3,Oct 10 8:03AM,Oct 10 8:12AM
+nfl_odds_vsin_20251010_0803.json,nfl_odds_vsin_20251010_0812.json,"Sun,October 12th","1:00 PM
+ Splits",Seattle Seahawks vs  Jacksonville Jaguars,South Point,PK -110 | PK -110,-3 -110 | +3 -110,Seattle Seahawks,Jacksonville Jaguars,PK,PK,-3,+3,Oct 10 8:03AM,Oct 10 8:12AM
+nfl_odds_vsin_20251010_0803.json,nfl_odds_vsin_20251010_0812.json,"Sun,October 12th","1:00 PM
+ Splits",Dallas Cowboys vs  Carolina Panthers,DK Open,-3.5 -110 | +3.5 -110,-5.5 -110 | +5.5 -110,Dallas Cowboys,Carolina Panthers,-3.5,+3.5,-5.5,+5.5,Oct 10 8:03AM,Oct 10 8:12AM
+nfl_odds_vsin_20251010_0803.json,nfl_odds_vsin_20251010_0812.json,"Sun,October 12th","1:00 PM
+ Splits",Dallas Cowboys vs  Carolina Panthers,DK,-3 -120 | +3 +100,-4.5 -108 | +4.5 -112,Dallas Cowboys,Carolina Panthers,-3,+3,-4.5,+4.5,Oct 10 8:03AM,Oct 10 8:12AM
+nfl_odds_vsin_20251010_0803.json,nfl_odds_vsin_20251010_0812.json,"Sun,October 12th","1:00 PM
+ Splits",Dallas Cowboys vs  Carolina Panthers,Circa,-3 -115 | +3 -105,-4 -105 | +4 -115,Dallas Cowboys,Carolina Panthers,-3,+3,-4,+4,Oct 10 8:03AM,Oct 10 8:12AM
+nfl_odds_vsin_20251010_0803.json,nfl_odds_vsin_20251010_0812.json,"Sun,October 12th","1:00 PM
+ Splits",Dallas Cowboys vs  Carolina Panthers,South Point,-3 -110 | +3 -110,-4 -110 | +4 -110,Dallas Cowboys,Carolina Panthers,-3,+3,-4,+4,Oct 10 8:03AM,Oct 10 8:12AM
+nfl_odds_vsin_20251010_0803.json,nfl_odds_vsin_20251010_0812.json,"Mon,October 13th","8:15 PM
+ Splits",Chicago Bears vs  Wash Commanders,DK Open,+5.5 -110 | -5.5 -110,-4.5 -110 | +4.5 -110,Chicago Bears,Wash Commanders,+5.5,-5.5,-4.5,+4.5,Oct 10 8:03AM,Oct 10 8:12AM
+nfl_odds_vsin_20251010_0803.json,nfl_odds_vsin_20251010_0812.json,"Mon,October 13th","8:15 PM
+ Splits",Chicago Bears vs  Wash Commanders,DK,+4.5 -105 | -4.5 -115,-4.5 -110 | +4.5 -110,Chicago Bears,Wash Commanders,+4.5,-4.5,-4.5,+4.5,Oct 10 8:03AM,Oct 10 8:12AM
+nfl_odds_vsin_20251010_0803.json,nfl_odds_vsin_20251010_0812.json,"Mon,October 13th","8:15 PM
+ Splits",Chicago Bears vs  Wash Commanders,Circa,+4.5 -110 | -4.5 -110,- | -,Chicago Bears,Wash Commanders,+4.5,-4.5,-,-,Oct 10 8:03AM,Oct 10 8:12AM
+nfl_odds_vsin_20251010_0803.json,nfl_odds_vsin_20251010_0812.json,"Mon,October 13th","8:15 PM
+ Splits",Chicago Bears vs  Wash Commanders,South Point,+4.5 -110 | -4.5 -110,- | -,Chicago Bears,Wash Commanders,+4.5,-4.5,-,-,Oct 10 8:03AM,Oct 10 8:12AM
+nfl_odds_vsin_20251010_0803.json,nfl_odds_vsin_20251010_0812.json,"Sun,October 19th","1:00 PM
+ Splits",Las Vegas Raiders vs  Kansas City Chiefs,DK Open,+10.5 -110 | -10.5 -110,+2.5 -102 | -2.5 -118,Las Vegas Raiders,Kansas City Chiefs,+10.5,-10.5,+2.5,-2.5,Oct 10 8:03AM,Oct 10 8:12AM
+nfl_odds_vsin_20251010_0803.json,nfl_odds_vsin_20251010_0812.json,"Sun,October 19th","1:00 PM
+ Splits",Las Vegas Raiders vs  Kansas City Chiefs,DK,+10.5 -110 | -10.5 -110,+2.5 -110 | -2.5 -110,Las Vegas Raiders,Kansas City Chiefs,+10.5,-10.5,+2.5,-2.5,Oct 10 8:03AM,Oct 10 8:12AM
+nfl_odds_vsin_20251010_0803.json,nfl_odds_vsin_20251010_0812.json,"Sun,October 19th","1:00 PM
+ Splits",Miami Dolphins vs  Cleveland Browns,DK Open,+2.5 -102 | -2.5 -118,-6 -110 | +6 -110,Miami Dolphins,Cleveland Browns,+2.5,-2.5,-6,+6,Oct 10 8:03AM,Oct 10 8:12AM
+nfl_odds_vsin_20251010_0803.json,nfl_odds_vsin_20251010_0812.json,"Sun,October 19th","1:00 PM
+ Splits",Miami Dolphins vs  Cleveland Browns,DK,+2.5 -110 | -2.5 -110,-6 -110 | +6 -110,Miami Dolphins,Cleveland Browns,+2.5,-2.5,-6,+6,Oct 10 8:03AM,Oct 10 8:12AM
+nfl_odds_vsin_20251010_0803.json,nfl_odds_vsin_20251010_0812.json,"Sun,October 19th","1:00 PM
+ Splits",New England Patriots vs  Tennessee Titans,DK Open,-6 -110 | +6 -110,+6 -110 | -6 -110,New England Patriots,Tennessee Titans,-6,+6,+6,-6,Oct 10 8:03AM,Oct 10 8:12AM
+nfl_odds_vsin_20251010_0803.json,nfl_odds_vsin_20251010_0812.json,"Sun,October 19th","1:00 PM
+ Splits",New England Patriots vs  Tennessee Titans,DK,-6 -110 | +6 -110,+6 -110 | -6 -110,New England Patriots,Tennessee Titans,-6,+6,+6,-6,Oct 10 8:03AM,Oct 10 8:12AM
+nfl_odds_vsin_20251010_0803.json,nfl_odds_vsin_20251010_0812.json,"Sun,October 19th","1:00 PM
+ Splits",New Orleans Saints vs  Chicago Bears,DK Open,+6 -110 | -6 -110,-2.5 -118 | +2.5 -102,New Orleans Saints,Chicago Bears,+6,-6,-2.5,+2.5,Oct 10 8:03AM,Oct 10 8:12AM
+nfl_odds_vsin_20251010_0803.json,nfl_odds_vsin_20251010_0812.json,"Sun,October 19th","1:00 PM
+ Splits",New Orleans Saints vs  Chicago Bears,DK,+6 -110 | -6 -110,-1.5 -110 | +1.5 -110,New Orleans Saints,Chicago Bears,+6,-6,-1.5,+1.5,Oct 10 8:03AM,Oct 10 8:12AM
+nfl_odds_vsin_20251010_0803.json,nfl_odds_vsin_20251010_0812.json,"Sun,October 19th","1:00 PM
+ Splits",Philadelphia Eagles vs  Minnesota Vikings,DK Open,-2.5 -118 | +2.5 -102,+2.5 -110 | -2.5 -110,Philadelphia Eagles,Minnesota Vikings,-2.5,+2.5,+2.5,-2.5,Oct 10 8:03AM,Oct 10 8:12AM
+nfl_odds_vsin_20251010_0803.json,nfl_odds_vsin_20251010_0812.json,"Sun,October 19th","1:00 PM
+ Splits",Philadelphia Eagles vs  Minnesota Vikings,DK,-1.5 -110 | +1.5 -110,+2.5 -110 | -2.5 -110,Philadelphia Eagles,Minnesota Vikings,-1.5,+1.5,+2.5,-2.5,Oct 10 8:03AM,Oct 10 8:12AM
+nfl_odds_vsin_20251010_0803.json,nfl_odds_vsin_20251010_0812.json,"Sun,October 19th","4:05 PM
+ Splits",Indianapolis Colts vs  Los Angeles Chargers,DK Open,+1.5 -110 | -1.5 -110,+7.5 -105 | -7.5 -115,Indianapolis Colts,Los Angeles Chargers,+1.5,-1.5,+7.5,-7.5,Oct 10 8:03AM,Oct 10 8:12AM
+nfl_odds_vsin_20251010_0803.json,nfl_odds_vsin_20251010_0812.json,"Sun,October 19th","4:05 PM
+ Splits",Indianapolis Colts vs  Los Angeles Chargers,DK,+1.5 -110 | -1.5 -110,+7 +100 | -7 -120,Indianapolis Colts,Los Angeles Chargers,+1.5,-1.5,+7,-7,Oct 10 8:03AM,Oct 10 8:12AM
+nfl_odds_vsin_20251010_0803.json,nfl_odds_vsin_20251010_0812.json,"Sun,October 19th","4:25 PM
+ Splits",Wash Commanders vs  Dallas Cowboys,DK Open,-2.5 -110 | +2.5 -110,-5.5 -110 | +5.5 -110,Wash Commanders,Dallas Cowboys,-2.5,+2.5,-5.5,+5.5,Oct 10 8:03AM,Oct 10 8:12AM
+nfl_odds_vsin_20251010_0803.json,nfl_odds_vsin_20251010_0812.json,"Sun,October 19th","4:25 PM
+ Splits",Wash Commanders vs  Dallas Cowboys,DK,-2.5 -110 | +2.5 -110,-5.5 -110 | +5.5 -110,Wash Commanders,Dallas Cowboys,-2.5,+2.5,-5.5,+5.5,Oct 10 8:03AM,Oct 10 8:12AM
+nfl_odds_vsin_20251010_0936.json,nfl_odds_vsin_20251010_0952.json,"Sun,October 12th","8:20 PM
+ Splits",Detroit Lions vs  Kansas City Chiefs,DK,+2.5 -110 | -2.5 -110,+2.5 -115 | -2.5 -105,Detroit Lions,Kansas City Chiefs,+2.5,-2.5,+2.5,-2.5,Oct 10 9:36AM,Oct 10 9:52AM
+nfl_odds_vsin_20251010_0952.json,nfl_odds_vsin_20251010_1000.json,"Sun,October 12th","1:00 PM
+ Splits",Cleveland Browns vs  Pittsburgh Steelers,BetMGM,+5.5 -110 | -5.5 -110,+6 -110 | -6 -110,Cleveland Browns,Pittsburgh Steelers,+5.5,-5.5,+6,-6,Oct 10 9:52AM,Oct 10 10:00AM
+nfl_odds_vsin_20251010_0952.json,nfl_odds_vsin_20251010_1000.json,"Sun,October 12th","1:00 PM
+ Splits",Arizona Cardinals vs  Indianapolis Colts,Westgate,+7.5 -108 | -7.5 -108,+8 -108 | -8 -108,Arizona Cardinals,Indianapolis Colts,+7.5,-7.5,+8,-8,Oct 10 9:52AM,Oct 10 10:00AM
+nfl_odds_vsin_20251010_0952.json,nfl_odds_vsin_20251010_1000.json,"Sun,October 12th","1:00 PM
+ Splits",Arizona Cardinals vs  Indianapolis Colts,BetMGM,+7.5 -110 | -7.5 -110,+7.5 -105 | -7.5 -115,Arizona Cardinals,Indianapolis Colts,+7.5,-7.5,+7.5,-7.5,Oct 10 9:52AM,Oct 10 10:00AM
+nfl_odds_vsin_20251010_0952.json,nfl_odds_vsin_20251010_1000.json,"Sun,October 12th","1:00 PM
+ Splits",Seattle Seahawks vs  Jacksonville Jaguars,Caesars,-1 +100 | +1 -125,+1.5 -132 | -1.5 +105,Seattle Seahawks,Jacksonville Jaguars,-1,+1,+1.5,-1.5,Oct 10 9:52AM,Oct 10 10:00AM
+nfl_odds_vsin_20251010_1027.json,nfl_odds_vsin_20251010_1035.json,"Sun,October 12th","1:00 PM
+ Splits",Dallas Cowboys vs  Carolina Panthers,GLD Nugget,-3 -115 | +3 -105,-3 -110 | +3 -110,Dallas Cowboys,Carolina Panthers,-3,+3,-3,+3,Oct 10 10:27AM,Oct 10 10:35AM
+nfl_odds_vsin_20251010_1103.json,nfl_odds_vsin_20251010_1111.json,"Sun,October 12th","1:00 PM
+ Splits",Cleveland Browns vs  Pittsburgh Steelers,DK,+6 -115 | -6 -105,+5.5 -105 | -5.5 -115,Cleveland Browns,Pittsburgh Steelers,+6,-6,+5.5,-5.5,Oct 10 11:03AM,Oct 10 11:11AM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 12th","9:30 AM
+ Splits",Denver Broncos vs  New York Jets,Circa,-7 -115 | +7 -105,-7 -110 | +7 -110,Denver Broncos,New York Jets,-7,+7,-7,+7,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 12th","9:30 AM
+ Splits",Denver Broncos vs  New York Jets,GLD Nugget,-7 -120 | +7 +100,-7 -115 | +7 -105,Denver Broncos,New York Jets,-7,+7,-7,+7,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 12th","9:30 AM
+ Splits",Denver Broncos vs  New York Jets,Wynn,-7 -120 | +7 +100,-7 -110 | +7 -110,Denver Broncos,New York Jets,-7,+7,-7,+7,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 12th","9:30 AM
+ Splits",Denver Broncos vs  New York Jets,Caesars,-7.5 +100 | +7.5 -121,-7 -110 | +7 -109,Denver Broncos,New York Jets,-7.5,+7.5,-7,+7,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 12th","9:30 AM
+ Splits",Denver Broncos vs  New York Jets,BetMGM,-7.5 -105 | +7.5 -115,-7.5 +100 | +7.5 -115,Denver Broncos,New York Jets,-7.5,+7.5,-7.5,+7.5,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 12th","1:00 PM
+ Splits",Cleveland Browns vs  Pittsburgh Steelers,Wynn,+5.5 -110 | -5.5 -110,+6 -110 | -6 -110,Cleveland Browns,Pittsburgh Steelers,+5.5,-5.5,+6,-6,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 12th","1:00 PM
+ Splits",Cleveland Browns vs  Pittsburgh Steelers,Caesars,+5.5 +100 | -5.5 -121,+5.5 +102 | -5.5 -122,Cleveland Browns,Pittsburgh Steelers,+5.5,-5.5,+5.5,-5.5,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 12th","1:00 PM
+ Splits",Arizona Cardinals vs  Indianapolis Colts,DK,+7.5 -108 | -7.5 -112,+7 -110 | -7 -110,Arizona Cardinals,Indianapolis Colts,+7.5,-7.5,+7,-7,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 12th","1:00 PM
+ Splits",Arizona Cardinals vs  Indianapolis Colts,Circa,+7.5 +100 | -7.5 -120,+7 +100 | -7 -120,Arizona Cardinals,Indianapolis Colts,+7.5,-7.5,+7,-7,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 12th","1:00 PM
+ Splits",Arizona Cardinals vs  Indianapolis Colts,South Point,+7.5 -110 | -7.5 -110,+7 -110 | -7 -110,Arizona Cardinals,Indianapolis Colts,+7.5,-7.5,+7,-7,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 12th","1:00 PM
+ Splits",Arizona Cardinals vs  Indianapolis Colts,GLD Nugget,+7.5 -110 | -7.5 -110,+7 -110 | -7 -110,Arizona Cardinals,Indianapolis Colts,+7.5,-7.5,+7,-7,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 12th","1:00 PM
+ Splits",Arizona Cardinals vs  Indianapolis Colts,Westgate,+8 -108 | -8 -108,+7 +100 | -7 -116,Arizona Cardinals,Indianapolis Colts,+8,-8,+7,-7,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 12th","1:00 PM
+ Splits",Arizona Cardinals vs  Indianapolis Colts,Stations,+7.5 -110 | -7.5 -110,+7 -110 | -7 -110,Arizona Cardinals,Indianapolis Colts,+7.5,-7.5,+7,-7,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 12th","1:00 PM
+ Splits",Arizona Cardinals vs  Indianapolis Colts,Caesars,+7.5 -105 | -7.5 -113,+7 -105 | -7 -113,Arizona Cardinals,Indianapolis Colts,+7.5,-7.5,+7,-7,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 12th","1:00 PM
+ Splits",Arizona Cardinals vs  Indianapolis Colts,BetMGM,+7.5 -105 | -7.5 -115,+7 +100 | -7 -115,Arizona Cardinals,Indianapolis Colts,+7.5,-7.5,+7,-7,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 12th","1:00 PM
+ Splits",Los Angeles Rams vs  Baltimore Ravens,DK,-7.5 -105 | +7.5 -115,-7 -115 | +7 -105,Los Angeles Rams,Baltimore Ravens,-7.5,+7.5,-7,+7,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 12th","1:00 PM
+ Splits",Los Angeles Rams vs  Baltimore Ravens,Circa,-7.5 -110 | +7.5 -110,-7 -110 | +7 -110,Los Angeles Rams,Baltimore Ravens,-7.5,+7.5,-7,+7,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 12th","1:00 PM
+ Splits",Los Angeles Rams vs  Baltimore Ravens,South Point,-7.5 -110 | +7.5 -110,-7 -110 | +7 -110,Los Angeles Rams,Baltimore Ravens,-7.5,+7.5,-7,+7,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 12th","1:00 PM
+ Splits",Los Angeles Rams vs  Baltimore Ravens,GLD Nugget,-7.5 -110 | +7.5 -110,-7 -115 | +7 -105,Los Angeles Rams,Baltimore Ravens,-7.5,+7.5,-7,+7,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 12th","1:00 PM
+ Splits",Los Angeles Rams vs  Baltimore Ravens,Westgate,-7.5 +100 | +7.5 -116,-7 -108 | +7 -108,Los Angeles Rams,Baltimore Ravens,-7.5,+7.5,-7,+7,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 12th","1:00 PM
+ Splits",Los Angeles Rams vs  Baltimore Ravens,Wynn,-7.5 +100 | +7.5 -120,-7 -120 | +7 +100,Los Angeles Rams,Baltimore Ravens,-7.5,+7.5,-7,+7,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 12th","1:00 PM
+ Splits",Los Angeles Rams vs  Baltimore Ravens,Stations,-7.5 -110 | +7.5 -110,-7.5 +100 | +7.5 -120,Los Angeles Rams,Baltimore Ravens,-7.5,+7.5,-7.5,+7.5,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 12th","1:00 PM
+ Splits",Los Angeles Rams vs  Baltimore Ravens,Caesars,-7.5 -108 | +7.5 -113,-7 -112 | +7 -108,Los Angeles Rams,Baltimore Ravens,-7.5,+7.5,-7,+7,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 12th","1:00 PM
+ Splits",Los Angeles Rams vs  Baltimore Ravens,BetMGM,-7.5 -110 | +7.5 -110,-7.5 +100 | +7.5 -115,Los Angeles Rams,Baltimore Ravens,-7.5,+7.5,-7.5,+7.5,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 12th","1:00 PM
+ Splits",Seattle Seahawks vs  Jacksonville Jaguars,Westgate,PK -108 | PK -108,+1 -108 | -1 -108,Seattle Seahawks,Jacksonville Jaguars,PK,PK,+1,-1,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 12th","1:00 PM
+ Splits",Seattle Seahawks vs  Jacksonville Jaguars,Caesars,+1.5 -132 | -1.5 +105,-1 -107 | +1 -113,Seattle Seahawks,Jacksonville Jaguars,+1.5,-1.5,-1,+1,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 12th","1:00 PM
+ Splits",Dallas Cowboys vs  Carolina Panthers,Circa,-3 -115 | +3 -105,-3 +100 | +3 -120,Dallas Cowboys,Carolina Panthers,-3,+3,-3,+3,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 12th","1:00 PM
+ Splits",Los Angeles Chargers vs  Miami Dolphins,DK,-4.5 -108 | +4.5 -112,-4.5 +100 | +4.5 -120,Los Angeles Chargers,Miami Dolphins,-4.5,+4.5,-4.5,+4.5,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 12th","1:00 PM
+ Splits",Los Angeles Chargers vs  Miami Dolphins,Westgate,-4 -108 | +4 -108,-3.5 -108 | +3.5 -108,Los Angeles Chargers,Miami Dolphins,-4,+4,-3.5,+3.5,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 12th","1:00 PM
+ Splits",Los Angeles Chargers vs  Miami Dolphins,Caesars,-4 -106 | +4 -114,-3.5 -113 | +3.5 -108,Los Angeles Chargers,Miami Dolphins,-4,+4,-3.5,+3.5,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 12th","1:00 PM
+ Splits",Los Angeles Chargers vs  Miami Dolphins,BetMGM,-4.5 -105 | +4.5 -115,-4 -110 | +4 -110,Los Angeles Chargers,Miami Dolphins,-4.5,+4.5,-4,+4,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 12th","4:25 PM
+ Splits",San Francisco 49ers vs  Tampa Bay Buccaneers,DK,+3 +100 | -3 -120,+3.5 -112 | -3.5 -108,San Francisco 49ers,Tampa Bay Buccaneers,+3,-3,+3.5,-3.5,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 12th","4:25 PM
+ Splits",San Francisco 49ers vs  Tampa Bay Buccaneers,Circa,+3 -115 | -3 -105,+3 +100 | -3 -120,San Francisco 49ers,Tampa Bay Buccaneers,+3,-3,+3,-3,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 12th","4:25 PM
+ Splits",San Francisco 49ers vs  Tampa Bay Buccaneers,GLD Nugget,+3 -110 | -3 -110,+3 -105 | -3 -115,San Francisco 49ers,Tampa Bay Buccaneers,+3,-3,+3,-3,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 12th","4:25 PM
+ Splits",San Francisco 49ers vs  Tampa Bay Buccaneers,Westgate,+3 -108 | -3 -108,+3.5 -108 | -3.5 -108,San Francisco 49ers,Tampa Bay Buccaneers,+3,-3,+3.5,-3.5,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 12th","4:25 PM
+ Splits",San Francisco 49ers vs  Tampa Bay Buccaneers,Wynn,+3 -110 | -3 -110,+3 +100 | -3 -120,San Francisco 49ers,Tampa Bay Buccaneers,+3,-3,+3,-3,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 12th","4:25 PM
+ Splits",San Francisco 49ers vs  Tampa Bay Buccaneers,Stations,+3 -110 | -3 -110,+3.5 -115 | -3.5 -105,San Francisco 49ers,Tampa Bay Buccaneers,+3,-3,+3.5,-3.5,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 12th","4:25 PM
+ Splits",San Francisco 49ers vs  Tampa Bay Buccaneers,Caesars,+3 -108 | -3 -113,+3.5 -111 | -3.5 -111,San Francisco 49ers,Tampa Bay Buccaneers,+3,-3,+3.5,-3.5,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 12th","4:25 PM
+ Splits",San Francisco 49ers vs  Tampa Bay Buccaneers,BetMGM,+3 -110 | -3 -110,+3 +100 | -3 -115,San Francisco 49ers,Tampa Bay Buccaneers,+3,-3,+3,-3,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 12th","4:05 PM
+ Splits",Tennessee Titans vs  Las Vegas Raiders,DK,+4.5 -110 | -4.5 -110,+4.5 -115 | -4.5 -105,Tennessee Titans,Las Vegas Raiders,+4.5,-4.5,+4.5,-4.5,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 12th","4:05 PM
+ Splits",Tennessee Titans vs  Las Vegas Raiders,South Point,+4.5 -110 | -4.5 -110,+4 -110 | -4 -110,Tennessee Titans,Las Vegas Raiders,+4.5,-4.5,+4,-4,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 12th","4:05 PM
+ Splits",Tennessee Titans vs  Las Vegas Raiders,GLD Nugget,+4.5 -110 | -4.5 -110,+4 -110 | -4 -110,Tennessee Titans,Las Vegas Raiders,+4.5,-4.5,+4,-4,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 12th","4:05 PM
+ Splits",Tennessee Titans vs  Las Vegas Raiders,Wynn,+5 -110 | -5 -110,+4.5 -110 | -4.5 -110,Tennessee Titans,Las Vegas Raiders,+5,-5,+4.5,-4.5,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 12th","4:05 PM
+ Splits",Tennessee Titans vs  Las Vegas Raiders,Stations,+5 -110 | -5 -110,+4 -110 | -4 -110,Tennessee Titans,Las Vegas Raiders,+5,-5,+4,-4,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 12th","4:05 PM
+ Splits",Tennessee Titans vs  Las Vegas Raiders,Caesars,+4 -108 | -4 -113,+4 -112 | -4 -109,Tennessee Titans,Las Vegas Raiders,+4,-4,+4,-4,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 12th","4:25 PM
+ Splits",Cincinnati Bengals vs  Green Bay Packers,DK,+14 -105 | -14 -115,+14.5 -115 | -14.5 -105,Cincinnati Bengals,Green Bay Packers,+14,-14,+14.5,-14.5,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 12th","4:25 PM
+ Splits",Cincinnati Bengals vs  Green Bay Packers,Circa,+14.5 -115 | -14.5 -105,+14.5 -110 | -14.5 -110,Cincinnati Bengals,Green Bay Packers,+14.5,-14.5,+14.5,-14.5,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 12th","4:25 PM
+ Splits",Cincinnati Bengals vs  Green Bay Packers,South Point,+14 -110 | -14 -110,+14.5 -110 | -14.5 -110,Cincinnati Bengals,Green Bay Packers,+14,-14,+14.5,-14.5,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 12th","4:25 PM
+ Splits",Cincinnati Bengals vs  Green Bay Packers,GLD Nugget,+14 -110 | -14 -110,+14.5 -110 | -14.5 -110,Cincinnati Bengals,Green Bay Packers,+14,-14,+14.5,-14.5,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 12th","4:25 PM
+ Splits",Cincinnati Bengals vs  Green Bay Packers,Westgate,+14 -108 | -14 -108,+14.5 -108 | -14.5 -108,Cincinnati Bengals,Green Bay Packers,+14,-14,+14.5,-14.5,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 12th","4:25 PM
+ Splits",Cincinnati Bengals vs  Green Bay Packers,Wynn,+14 -110 | -14 -110,+14.5 -110 | -14.5 -110,Cincinnati Bengals,Green Bay Packers,+14,-14,+14.5,-14.5,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 12th","4:25 PM
+ Splits",Cincinnati Bengals vs  Green Bay Packers,Caesars,+14 -107 | -14 -113,+14.5 -113 | -14.5 -108,Cincinnati Bengals,Green Bay Packers,+14,-14,+14.5,-14.5,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 12th","4:25 PM
+ Splits",Cincinnati Bengals vs  Green Bay Packers,BetMGM,+14 -110 | -14 -110,+14.5 -110 | -14.5 -110,Cincinnati Bengals,Green Bay Packers,+14,-14,+14.5,-14.5,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 12th","8:20 PM
+ Splits",Detroit Lions vs  Kansas City Chiefs,Circa,+2 -110 | -2 -110,+2.5 -105 | -2.5 -115,Detroit Lions,Kansas City Chiefs,+2,-2,+2.5,-2.5,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 12th","8:20 PM
+ Splits",Detroit Lions vs  Kansas City Chiefs,Westgate,+2 -108 | -2 -108,+2.5 +100 | -2.5 -116,Detroit Lions,Kansas City Chiefs,+2,-2,+2.5,-2.5,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 12th","8:20 PM
+ Splits",Detroit Lions vs  Kansas City Chiefs,Stations,+1.5 -110 | -1.5 -110,+2 -110 | -2 -110,Detroit Lions,Kansas City Chiefs,+1.5,-1.5,+2,-2,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 19th","9:30 AM
+ Splits",Los Angeles Rams vs  Jacksonville Jaguars,GLD Nugget,-3 -115 | +3 -105,-3 -120 | +3 +100,Los Angeles Rams,Jacksonville Jaguars,-3,+3,-3,+3,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 19th","1:00 PM
+ Splits",Miami Dolphins vs  Cleveland Browns,Stations,+2.5 -110 | -2.5 -110,+3 -120 | -3 +100,Miami Dolphins,Cleveland Browns,+2.5,-2.5,+3,-3,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 19th","1:00 PM
+ Splits",New Orleans Saints vs  Chicago Bears,Westgate,+6.5 -110 | -6.5 -110,+6 -110 | -6 -110,New Orleans Saints,Chicago Bears,+6.5,-6.5,+6,-6,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 19th","1:00 PM
+ Splits",New Orleans Saints vs  Chicago Bears,Stations,+6 -110 | -6 -110,+5.5 -110 | -5.5 -110,New Orleans Saints,Chicago Bears,+6,-6,+5.5,-5.5,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 19th","1:00 PM
+ Splits",Philadelphia Eagles vs  Minnesota Vikings,GLD Nugget,- | -,-2.5 -120 | +2.5 +100,Philadelphia Eagles,Minnesota Vikings,-,-,-2.5,+2.5,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 19th","4:05 PM
+ Splits",Indianapolis Colts vs  Los Angeles Chargers,Caesars,+1.5 -110 | -1.5 -110,+1 -115 | -1 -105,Indianapolis Colts,Los Angeles Chargers,+1.5,-1.5,+1,-1,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 19th","4:05 PM
+ Splits",New York Giants vs  Denver Broncos,DK,+7 +100 | -7 -120,+7.5 -115 | -7.5 -105,New York Giants,Denver Broncos,+7,-7,+7.5,-7.5,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_1137.json,nfl_odds_vsin_20251010_2019.json,"Sun,October 19th","4:05 PM
+ Splits",New York Giants vs  Denver Broncos,GLD Nugget,- | -,+8 -110 | -8 -110,New York Giants,Denver Broncos,-,-,+8,-8,Oct 10 11:37AM,Oct 10 8:19PM
+nfl_odds_vsin_20251010_2027.json,nfl_odds_vsin_20251010_2035.json,"Sun,October 12th","1:00 PM
+ Splits",Los Angeles Chargers vs  Miami Dolphins,Caesars,-3.5 -113 | +3.5 -108,-4 -105 | +4 -115,Los Angeles Chargers,Miami Dolphins,-3.5,+3.5,-4,+4,Oct 10 8:27PM,Oct 10 8:35PM
+nfl_odds_vsin_20251010_2043.json,nfl_odds_vsin_20251010_2053.json,"Sun,October 12th","1:00 PM
+ Splits",Cleveland Browns vs  Pittsburgh Steelers,Caesars,+5.5 +102 | -5.5 -122,+6 -105 | -6 -113,Cleveland Browns,Pittsburgh Steelers,+5.5,-5.5,+6,-6,Oct 10 8:43PM,Oct 10 8:53PM
+nfl_odds_vsin_20251010_2112.json,nfl_odds_vsin_20251011_1751.json,"Sun,October 12th","9:30 AM
+ Splits",Denver Broncos vs  New York Jets,DK,-7.5 -105 | +7.5 -115,-7.5 +100 | +7.5 -120,Denver Broncos,New York Jets,-7.5,+7.5,-7.5,+7.5,Oct 10 9:12PM,Oct 11 5:51PM
+nfl_odds_vsin_20251010_2112.json,nfl_odds_vsin_20251011_1751.json,"Sun,October 12th","9:30 AM
+ Splits",Denver Broncos vs  New York Jets,Wynn,-7 -110 | +7 -110,-7 -105 | +7 -115,Denver Broncos,New York Jets,-7,+7,-7,+7,Oct 10 9:12PM,Oct 11 5:51PM
+nfl_odds_vsin_20251010_2112.json,nfl_odds_vsin_20251011_1751.json,"Sun,October 12th","9:30 AM
+ Splits",Denver Broncos vs  New York Jets,Caesars,-7 -110 | +7 -109,-7 -113 | +7 -105,Denver Broncos,New York Jets,-7,+7,-7,+7,Oct 10 9:12PM,Oct 11 5:51PM
+nfl_odds_vsin_20251010_2112.json,nfl_odds_vsin_20251011_1751.json,"Sun,October 12th","9:30 AM
+ Splits",Denver Broncos vs  New York Jets,BetMGM,-7.5 +100 | +7.5 -115,-7 -110 | +7 -110,Denver Broncos,New York Jets,-7.5,+7.5,-7,+7,Oct 10 9:12PM,Oct 11 5:51PM
+nfl_odds_vsin_20251010_2112.json,nfl_odds_vsin_20251011_1751.json,"Sun,October 12th","1:00 PM
+ Splits",Cleveland Browns vs  Pittsburgh Steelers,DK,+5.5 -105 | -5.5 -115,+6 -115 | -6 -105,Cleveland Browns,Pittsburgh Steelers,+5.5,-5.5,+6,-6,Oct 10 9:12PM,Oct 11 5:51PM
+nfl_odds_vsin_20251010_2112.json,nfl_odds_vsin_20251011_1751.json,"Sun,October 12th","1:00 PM
+ Splits",Arizona Cardinals vs  Indianapolis Colts,Stations,+7 -110 | -7 -110,+7.5 -120 | -7.5 +100,Arizona Cardinals,Indianapolis Colts,+7,-7,+7.5,-7.5,Oct 10 9:12PM,Oct 11 5:51PM
+nfl_odds_vsin_20251010_2112.json,nfl_odds_vsin_20251011_1751.json,"Sun,October 12th","1:00 PM
+ Splits",Los Angeles Rams vs  Baltimore Ravens,GLD Nugget,-7 -115 | +7 -105,-7 -110 | +7 -110,Los Angeles Rams,Baltimore Ravens,-7,+7,-7,+7,Oct 10 9:12PM,Oct 11 5:51PM
+nfl_odds_vsin_20251010_2112.json,nfl_odds_vsin_20251011_1751.json,"Sun,October 12th","1:00 PM
+ Splits",Seattle Seahawks vs  Jacksonville Jaguars,Westgate,+1 -108 | -1 -108,PK -108 | PK -108,Seattle Seahawks,Jacksonville Jaguars,+1,-1,PK,PK,Oct 10 9:12PM,Oct 11 5:51PM
+nfl_odds_vsin_20251010_2112.json,nfl_odds_vsin_20251011_1751.json,"Sun,October 12th","1:00 PM
+ Splits",Seattle Seahawks vs  Jacksonville Jaguars,Caesars,-1 -107 | +1 -113,-1 -106 | +1 -114,Seattle Seahawks,Jacksonville Jaguars,-1,+1,-1,+1,Oct 10 9:12PM,Oct 11 5:51PM
+nfl_odds_vsin_20251010_2112.json,nfl_odds_vsin_20251011_1751.json,"Sun,October 12th","1:00 PM
+ Splits",Seattle Seahawks vs  Jacksonville Jaguars,BetMGM,+1 -115 | -1 -105,+1 -115 | -1 +100,Seattle Seahawks,Jacksonville Jaguars,+1,-1,+1,-1,Oct 10 9:12PM,Oct 11 5:51PM
+nfl_odds_vsin_20251010_2112.json,nfl_odds_vsin_20251011_1751.json,"Sun,October 12th","1:00 PM
+ Splits",Dallas Cowboys vs  Carolina Panthers,DK,-3 -120 | +3 +100,-3 -112 | +3 -108,Dallas Cowboys,Carolina Panthers,-3,+3,-3,+3,Oct 10 9:12PM,Oct 11 5:51PM
+nfl_odds_vsin_20251010_2112.json,nfl_odds_vsin_20251011_1751.json,"Sun,October 12th","1:00 PM
+ Splits",Dallas Cowboys vs  Carolina Panthers,Westgate,-3 -108 | +3 -108,-3 +100 | +3 -116,Dallas Cowboys,Carolina Panthers,-3,+3,-3,+3,Oct 10 9:12PM,Oct 11 5:51PM
+nfl_odds_vsin_20251010_2112.json,nfl_odds_vsin_20251011_1751.json,"Sun,October 12th","1:00 PM
+ Splits",Los Angeles Chargers vs  Miami Dolphins,Caesars,-4 -105 | +4 -115,-4 -107 | +4 -113,Los Angeles Chargers,Miami Dolphins,-4,+4,-4,+4,Oct 10 9:12PM,Oct 11 5:51PM
+nfl_odds_vsin_20251010_2112.json,nfl_odds_vsin_20251011_1751.json,"Sun,October 12th","4:25 PM
+ Splits",San Francisco 49ers vs  Tampa Bay Buccaneers,South Point,+3 -110 | -3 -110,+3.5 -110 | -3.5 -110,San Francisco 49ers,Tampa Bay Buccaneers,+3,-3,+3.5,-3.5,Oct 10 9:12PM,Oct 11 5:51PM
+nfl_odds_vsin_20251010_2112.json,nfl_odds_vsin_20251011_1751.json,"Sun,October 12th","4:25 PM
+ Splits",San Francisco 49ers vs  Tampa Bay Buccaneers,Wynn,+3 +100 | -3 -120,+3 +105 | -3 -125,San Francisco 49ers,Tampa Bay Buccaneers,+3,-3,+3,-3,Oct 10 9:12PM,Oct 11 5:51PM
+nfl_odds_vsin_20251010_2112.json,nfl_odds_vsin_20251011_1751.json,"Sun,October 12th","4:25 PM
+ Splits",San Francisco 49ers vs  Tampa Bay Buccaneers,BetMGM,+3 +100 | -3 -115,+3.5 -115 | -3.5 -105,San Francisco 49ers,Tampa Bay Buccaneers,+3,-3,+3.5,-3.5,Oct 10 9:12PM,Oct 11 5:51PM
+nfl_odds_vsin_20251010_2112.json,nfl_odds_vsin_20251011_1751.json,"Sun,October 12th","4:05 PM
+ Splits",Tennessee Titans vs  Las Vegas Raiders,Caesars,+4 -112 | -4 -109,+4 -110 | -4 -109,Tennessee Titans,Las Vegas Raiders,+4,-4,+4,-4,Oct 10 9:12PM,Oct 11 5:51PM
+nfl_odds_vsin_20251010_2112.json,nfl_odds_vsin_20251011_1751.json,"Sun,October 12th","4:05 PM
+ Splits",Tennessee Titans vs  Las Vegas Raiders,BetMGM,+4 -110 | -4 -110,+4.5 -115 | -4.5 -105,Tennessee Titans,Las Vegas Raiders,+4,-4,+4.5,-4.5,Oct 10 9:12PM,Oct 11 5:51PM
+nfl_odds_vsin_20251010_2112.json,nfl_odds_vsin_20251011_1751.json,"Sun,October 12th","1:00 PM
+ Splits",New England Patriots vs  New Orleans Saints,Wynn,-3 -120 | +3 +100,-3 -125 | +3 +105,New England Patriots,New Orleans Saints,-3,+3,-3,+3,Oct 10 9:12PM,Oct 11 5:51PM
+nfl_odds_vsin_20251010_2112.json,nfl_odds_vsin_20251011_1751.json,"Sun,October 12th","1:00 PM
+ Splits",New England Patriots vs  New Orleans Saints,Stations,-3.5 -110 | +3.5 -110,-3.5 +100 | +3.5 -120,New England Patriots,New Orleans Saints,-3.5,+3.5,-3.5,+3.5,Oct 10 9:12PM,Oct 11 5:51PM
+nfl_odds_vsin_20251010_2112.json,nfl_odds_vsin_20251011_1751.json,"Sun,October 12th","4:25 PM
+ Splits",Cincinnati Bengals vs  Green Bay Packers,Westgate,+14.5 -108 | -14.5 -108,+14 -108 | -14 -108,Cincinnati Bengals,Green Bay Packers,+14.5,-14.5,+14,-14,Oct 10 9:12PM,Oct 11 5:51PM
+nfl_odds_vsin_20251010_2112.json,nfl_odds_vsin_20251011_1751.json,"Sun,October 12th","8:20 PM
+ Splits",Detroit Lions vs  Kansas City Chiefs,GLD Nugget,+2 -110 | -2 -110,+2.5 -110 | -2.5 -110,Detroit Lions,Kansas City Chiefs,+2,-2,+2.5,-2.5,Oct 10 9:12PM,Oct 11 5:51PM
+nfl_odds_vsin_20251010_2112.json,nfl_odds_vsin_20251011_1751.json,"Sun,October 12th","8:20 PM
+ Splits",Detroit Lions vs  Kansas City Chiefs,Wynn,+2 -110 | -2 -110,+2 +100 | -2 -120,Detroit Lions,Kansas City Chiefs,+2,-2,+2,-2,Oct 10 9:12PM,Oct 11 5:51PM
+nfl_odds_vsin_20251010_2112.json,nfl_odds_vsin_20251011_1751.json,"Sun,October 12th","8:20 PM
+ Splits",Detroit Lions vs  Kansas City Chiefs,Stations,+2 -110 | -2 -110,+2.5 -110 | -2.5 -110,Detroit Lions,Kansas City Chiefs,+2,-2,+2.5,-2.5,Oct 10 9:12PM,Oct 11 5:51PM
+nfl_odds_vsin_20251010_2112.json,nfl_odds_vsin_20251011_1751.json,"Mon,October 13th","8:15 PM
+ Splits",Chicago Bears vs  Wash Commanders,DK,+4.5 -105 | -4.5 -115,+4.5 -108 | -4.5 -112,Chicago Bears,Wash Commanders,+4.5,-4.5,+4.5,-4.5,Oct 10 9:12PM,Oct 11 5:51PM
+nfl_odds_vsin_20251010_2112.json,nfl_odds_vsin_20251011_1751.json,"Mon,October 13th","8:15 PM
+ Splits",Chicago Bears vs  Wash Commanders,Circa,+4.5 -110 | -4.5 -110,+4.5 -115 | -4.5 -105,Chicago Bears,Wash Commanders,+4.5,-4.5,+4.5,-4.5,Oct 10 9:12PM,Oct 11 5:51PM
+nfl_odds_vsin_20251011_1759.json,nfl_odds_vsin_20251011_1803.json,"Sun,October 12th","4:05 PM
+ Splits",Tennessee Titans vs  Las Vegas Raiders,Caesars,+4 -110 | -4 -109,+4.5 -118 | -4.5 -103,Tennessee Titans,Las Vegas Raiders,+4,-4,+4.5,-4.5,Oct 11 5:59PM,Oct 11 6:03PM
+nfl_odds_vsin_20251011_1803.json,nfl_odds_vsin_20251011_1811.json,"Sun,October 12th","1:00 PM
+ Splits",Arizona Cardinals vs  Indianapolis Colts,DK,+7 -110 | -7 -110,+7.5 -112 | -7.5 -108,Arizona Cardinals,Indianapolis Colts,+7,-7,+7.5,-7.5,Oct 11 6:03PM,Oct 11 6:11PM
+nfl_odds_vsin_20251011_1819.json,nfl_odds_vsin_20251011_1827.json,"Sun,October 12th","1:00 PM
+ Splits",Arizona Cardinals vs  Indianapolis Colts,Circa,+7 +100 | -7 -120,+7.5 -105 | -7.5 -115,Arizona Cardinals,Indianapolis Colts,+7,-7,+7.5,-7.5,Oct 11 6:19PM,Oct 11 6:27PM
+nfl_odds_vsin_20251011_1819.json,nfl_odds_vsin_20251011_1827.json,"Sun,October 12th","1:00 PM
+ Splits",Arizona Cardinals vs  Indianapolis Colts,South Point,+7 -110 | -7 -110,+7.5 -110 | -7.5 -110,Arizona Cardinals,Indianapolis Colts,+7,-7,+7.5,-7.5,Oct 11 6:19PM,Oct 11 6:27PM
+nfl_odds_vsin_20251011_1819.json,nfl_odds_vsin_20251011_1827.json,"Sun,October 12th","1:00 PM
+ Splits",Arizona Cardinals vs  Indianapolis Colts,GLD Nugget,+7 -110 | -7 -110,+7 +100 | -7 -120,Arizona Cardinals,Indianapolis Colts,+7,-7,+7,-7,Oct 11 6:19PM,Oct 11 6:27PM
+nfl_odds_vsin_20251011_1819.json,nfl_odds_vsin_20251011_1827.json,"Sun,October 12th","1:00 PM
+ Splits",Arizona Cardinals vs  Indianapolis Colts,Westgate,+7 +100 | -7 -116,+7.5 -108 | -7.5 -108,Arizona Cardinals,Indianapolis Colts,+7,-7,+7.5,-7.5,Oct 11 6:19PM,Oct 11 6:27PM
+nfl_odds_vsin_20251011_1819.json,nfl_odds_vsin_20251011_1827.json,"Sun,October 12th","1:00 PM
+ Splits",Arizona Cardinals vs  Indianapolis Colts,Wynn,+7 +100 | -7 -120,+7 +105 | -7 -125,Arizona Cardinals,Indianapolis Colts,+7,-7,+7,-7,Oct 11 6:19PM,Oct 11 6:27PM
+nfl_odds_vsin_20251011_1819.json,nfl_odds_vsin_20251011_1827.json,"Sun,October 12th","1:00 PM
+ Splits",Arizona Cardinals vs  Indianapolis Colts,Caesars,+7 -105 | -7 -113,+7.5 -110 | -7.5 -112,Arizona Cardinals,Indianapolis Colts,+7,-7,+7.5,-7.5,Oct 11 6:19PM,Oct 11 6:27PM
+nfl_odds_vsin_20251011_1819.json,nfl_odds_vsin_20251011_1827.json,"Sun,October 12th","1:00 PM
+ Splits",Arizona Cardinals vs  Indianapolis Colts,BetMGM,+7 +100 | -7 -115,+7.5 -110 | -7.5 -110,Arizona Cardinals,Indianapolis Colts,+7,-7,+7.5,-7.5,Oct 11 6:19PM,Oct 11 6:27PM
+nfl_odds_vsin_20251011_1819.json,nfl_odds_vsin_20251011_1827.json,"Sun,October 12th","1:00 PM
+ Splits",Los Angeles Chargers vs  Miami Dolphins,South Point,-4 -110 | +4 -110,-3.5 -110 | +3.5 -110,Los Angeles Chargers,Miami Dolphins,-4,+4,-3.5,+3.5,Oct 11 6:19PM,Oct 11 6:27PM
+nfl_odds_vsin_20251011_1819.json,nfl_odds_vsin_20251011_1827.json,"Sun,October 12th","4:05 PM
+ Splits",Tennessee Titans vs  Las Vegas Raiders,Caesars,+4.5 -118 | -4.5 -103,+4.5 -117 | -4.5 -104,Tennessee Titans,Las Vegas Raiders,+4.5,-4.5,+4.5,-4.5,Oct 11 6:19PM,Oct 11 6:27PM
+nfl_odds_vsin_20251011_1819.json,nfl_odds_vsin_20251011_1827.json,"Sun,October 12th","4:25 PM
+ Splits",Cincinnati Bengals vs  Green Bay Packers,Circa,+14.5 -110 | -14.5 -110,+13.5 -105 | -13.5 -115,Cincinnati Bengals,Green Bay Packers,+14.5,-14.5,+13.5,-13.5,Oct 11 6:19PM,Oct 11 6:27PM
+nfl_odds_vsin_20251011_1819.json,nfl_odds_vsin_20251011_1827.json,"Mon,October 13th","7:15 PM
+ Splits",Buffalo Bills vs  Atlanta Falcons,Circa,-4.5 -110 | +4.5 -110,-3.5 -110 | +3.5 -110,Buffalo Bills,Atlanta Falcons,-4.5,+4.5,-3.5,+3.5,Oct 11 6:19PM,Oct 11 6:27PM
+nfl_odds_vsin_20251011_1819.json,nfl_odds_vsin_20251011_1827.json,"Mon,October 13th","7:15 PM
+ Splits",Buffalo Bills vs  Atlanta Falcons,South Point,-4.5 -110 | +4.5 -110,-4 -110 | +4 -110,Buffalo Bills,Atlanta Falcons,-4.5,+4.5,-4,+4,Oct 11 6:19PM,Oct 11 6:27PM
+nfl_odds_vsin_20251011_1819.json,nfl_odds_vsin_20251011_1827.json,"Mon,October 13th","7:15 PM
+ Splits",Buffalo Bills vs  Atlanta Falcons,Westgate,-4.5 -108 | +4.5 -108,-4 -108 | +4 -108,Buffalo Bills,Atlanta Falcons,-4.5,+4.5,-4,+4,Oct 11 6:19PM,Oct 11 6:27PM
+nfl_odds_vsin_20251011_1819.json,nfl_odds_vsin_20251011_1827.json,"Mon,October 13th","7:15 PM
+ Splits",Buffalo Bills vs  Atlanta Falcons,Wynn,-4.5 -110 | +4.5 -110,-4 -110 | +4 -110,Buffalo Bills,Atlanta Falcons,-4.5,+4.5,-4,+4,Oct 11 6:19PM,Oct 11 6:27PM
+nfl_odds_vsin_20251011_1819.json,nfl_odds_vsin_20251011_1827.json,"Mon,October 13th","7:15 PM
+ Splits",Buffalo Bills vs  Atlanta Falcons,Caesars,-4.5 -110 | +4.5 -110,-4.5 +102 | +4.5 -121,Buffalo Bills,Atlanta Falcons,-4.5,+4.5,-4.5,+4.5,Oct 11 6:19PM,Oct 11 6:27PM
+nfl_odds_vsin_20251011_1827.json,nfl_odds_vsin_20251011_1835.json,"Sun,October 12th","1:00 PM
+ Splits",Los Angeles Chargers vs  Miami Dolphins,Stations,-4 -110 | +4 -110,-3.5 -110 | +3.5 -110,Los Angeles Chargers,Miami Dolphins,-4,+4,-3.5,+3.5,Oct 11 6:27PM,Oct 11 6:35PM
+nfl_odds_vsin_20251011_1827.json,nfl_odds_vsin_20251011_1835.json,"Sun,October 12th","4:05 PM
+ Splits",Tennessee Titans vs  Las Vegas Raiders,Caesars,+4.5 -117 | -4.5 -104,+4 -110 | -4 -109,Tennessee Titans,Las Vegas Raiders,+4.5,-4.5,+4,-4,Oct 11 6:27PM,Oct 11 6:35PM
+nfl_odds_vsin_20251011_1827.json,nfl_odds_vsin_20251011_1835.json,"Sun,October 12th","4:25 PM
+ Splits",Cincinnati Bengals vs  Green Bay Packers,Circa,+13.5 -105 | -13.5 -115,+14 -120 | -14 +100,Cincinnati Bengals,Green Bay Packers,+13.5,-13.5,+14,-14,Oct 11 6:27PM,Oct 11 6:35PM
+nfl_odds_vsin_20251011_1827.json,nfl_odds_vsin_20251011_1835.json,"Sun,October 12th","4:25 PM
+ Splits",Cincinnati Bengals vs  Green Bay Packers,Caesars,+14.5 -113 | -14.5 -108,+14 -109 | -14 -110,Cincinnati Bengals,Green Bay Packers,+14.5,-14.5,+14,-14,Oct 11 6:27PM,Oct 11 6:35PM
+nfl_odds_vsin_20251011_1827.json,nfl_odds_vsin_20251011_1835.json,"Sun,October 12th","4:25 PM
+ Splits",Cincinnati Bengals vs  Green Bay Packers,BetMGM,+14.5 -110 | -14.5 -110,+14.5 -115 | -14.5 -105,Cincinnati Bengals,Green Bay Packers,+14.5,-14.5,+14.5,-14.5,Oct 11 6:27PM,Oct 11 6:35PM
+nfl_odds_vsin_20251011_1827.json,nfl_odds_vsin_20251011_1835.json,"Mon,October 13th","7:15 PM
+ Splits",Buffalo Bills vs  Atlanta Falcons,Caesars,-4.5 +102 | +4.5 -121,-4 -108 | +4 -112,Buffalo Bills,Atlanta Falcons,-4.5,+4.5,-4,+4,Oct 11 6:27PM,Oct 11 6:35PM
+nfl_odds_vsin_20251011_1843.json,nfl_odds_vsin_20251011_1851.json,"Sun,October 12th","1:00 PM
+ Splits",Arizona Cardinals vs  Indianapolis Colts,GLD Nugget,+7 +100 | -7 -120,+7.5 -110 | -7.5 -110,Arizona Cardinals,Indianapolis Colts,+7,-7,+7.5,-7.5,Oct 11 6:43PM,Oct 11 6:51PM
+nfl_odds_vsin_20251011_1843.json,nfl_odds_vsin_20251011_1851.json,"Sun,October 12th","1:00 PM
+ Splits",Los Angeles Chargers vs  Miami Dolphins,Westgate,-3.5 -108 | +3.5 -108,-3.5 +100 | +3.5 -116,Los Angeles Chargers,Miami Dolphins,-3.5,+3.5,-3.5,+3.5,Oct 11 6:43PM,Oct 11 6:51PM
+nfl_odds_vsin_20251011_1843.json,nfl_odds_vsin_20251011_1851.json,"Sun,October 12th","4:05 PM
+ Splits",Tennessee Titans vs  Las Vegas Raiders,Caesars,+4 -110 | -4 -109,+4.5 -117 | -4.5 -104,Tennessee Titans,Las Vegas Raiders,+4,-4,+4.5,-4.5,Oct 11 6:43PM,Oct 11 6:51PM
+nfl_odds_vsin_20251011_1843.json,nfl_odds_vsin_20251011_1851.json,"Sun,October 12th","4:25 PM
+ Splits",Cincinnati Bengals vs  Green Bay Packers,Caesars,+14 -109 | -14 -110,+14.5 -117 | -14.5 -104,Cincinnati Bengals,Green Bay Packers,+14,-14,+14.5,-14.5,Oct 11 6:43PM,Oct 11 6:51PM
+nfl_odds_vsin_20251011_1843.json,nfl_odds_vsin_20251011_1851.json,"Mon,October 13th","7:15 PM
+ Splits",Buffalo Bills vs  Atlanta Falcons,Caesars,-4 -108 | +4 -112,-4.5 +102 | +4.5 -121,Buffalo Bills,Atlanta Falcons,-4,+4,-4.5,+4.5,Oct 11 6:43PM,Oct 11 6:51PM
+nfl_odds_vsin_20251011_1903.json,nfl_odds_vsin_20251011_1911.json,"Sun,October 12th","4:05 PM
+ Splits",Tennessee Titans vs  Las Vegas Raiders,Caesars,+4.5 -117 | -4.5 -104,+4 -110 | -4 -109,Tennessee Titans,Las Vegas Raiders,+4.5,-4.5,+4,-4,Oct 11 7:03PM,Oct 11 7:11PM
+nfl_odds_vsin_20251011_1903.json,nfl_odds_vsin_20251011_1911.json,"Sun,October 12th","4:25 PM
+ Splits",Cincinnati Bengals vs  Green Bay Packers,Caesars,+14.5 -117 | -14.5 -104,+14 -109 | -14 -110,Cincinnati Bengals,Green Bay Packers,+14.5,-14.5,+14,-14,Oct 11 7:03PM,Oct 11 7:11PM
+nfl_odds_vsin_20251011_1903.json,nfl_odds_vsin_20251011_1911.json,"Mon,October 13th","7:15 PM
+ Splits",Buffalo Bills vs  Atlanta Falcons,Caesars,-4.5 +102 | +4.5 -121,-4 -108 | +4 -112,Buffalo Bills,Atlanta Falcons,-4.5,+4.5,-4,+4,Oct 11 7:03PM,Oct 11 7:11PM
+nfl_odds_vsin_20251011_1943.json,nfl_odds_vsin_20251011_1951.json,"Sun,October 12th","1:00 PM
+ Splits",Seattle Seahawks vs  Jacksonville Jaguars,Caesars,-1 -106 | +1 -114,-1 -102 | +1 -120,Seattle Seahawks,Jacksonville Jaguars,-1,+1,-1,+1,Oct 11 7:43PM,Oct 11 7:51PM
+nfl_odds_vsin_20251011_1943.json,nfl_odds_vsin_20251011_1951.json,"Sun,October 12th","4:25 PM
+ Splits",Cincinnati Bengals vs  Green Bay Packers,Circa,+14 -120 | -14 +100,+14 -122 | -14 +102,Cincinnati Bengals,Green Bay Packers,+14,-14,+14,-14,Oct 11 7:43PM,Oct 11 7:51PM
+nfl_odds_vsin_20251011_1943.json,nfl_odds_vsin_20251011_1951.json,"Sun,October 12th","4:25 PM
+ Splits",Cincinnati Bengals vs  Green Bay Packers,South Point,+14.5 -110 | -14.5 -110,+14 -110 | -14 -110,Cincinnati Bengals,Green Bay Packers,+14.5,-14.5,+14,-14,Oct 11 7:43PM,Oct 11 7:51PM
+nfl_odds_vsin_20251011_2000.json,nfl_odds_vsin_20251011_2003.json,"Mon,October 13th","7:15 PM
+ Splits",Buffalo Bills vs  Atlanta Falcons,Circa,-3.5 -110 | +3.5 -110,-3.5 -104 | +3.5 -116,Buffalo Bills,Atlanta Falcons,-3.5,+3.5,-3.5,+3.5,Oct 11 8:00PM,Oct 11 8:03PM
+nfl_odds_vsin_20251011_2011.json,nfl_odds_vsin_20251011_2019.json,"Sun,October 12th","1:00 PM
+ Splits",Cleveland Browns vs  Pittsburgh Steelers,DK,+6 -115 | -6 -105,+5.5 +100 | -5.5 -120,Cleveland Browns,Pittsburgh Steelers,+6,-6,+5.5,-5.5,Oct 11 8:11PM,Oct 11 8:19PM
+nfl_odds_vsin_20251011_2019.json,nfl_odds_vsin_20251011_2027.json,"Sun,October 12th","9:30 AM
+ Splits",Denver Broncos vs  New York Jets,Wynn,-7 -105 | +7 -115,-7 -110 | +7 -110,Denver Broncos,New York Jets,-7,+7,-7,+7,Oct 11 8:19PM,Oct 11 8:27PM
+nfl_odds_vsin_20251011_2019.json,nfl_odds_vsin_20251011_2027.json,"Mon,October 13th","7:15 PM
+ Splits",Buffalo Bills vs  Atlanta Falcons,Stations,-4.5 -110 | +4.5 -110,-4 -110 | +4 -110,Buffalo Bills,Atlanta Falcons,-4.5,+4.5,-4,+4,Oct 11 8:19PM,Oct 11 8:27PM
+nfl_odds_vsin_20251011_2027.json,nfl_odds_vsin_20251011_2035.json,"Sun,October 12th","1:00 PM
+ Splits",Arizona Cardinals vs  Indianapolis Colts,Caesars,+7.5 -110 | -7.5 -112,+7.5 -102 | -7.5 -118,Arizona Cardinals,Indianapolis Colts,+7.5,-7.5,+7.5,-7.5,Oct 11 8:27PM,Oct 11 8:35PM
+nfl_odds_vsin_20251011_2027.json,nfl_odds_vsin_20251011_2035.json,"Sun,October 12th","4:05 PM
+ Splits",Tennessee Titans vs  Las Vegas Raiders,Caesars,+4 -110 | -4 -109,+4.5 -118 | -4.5 -103,Tennessee Titans,Las Vegas Raiders,+4,-4,+4.5,-4.5,Oct 11 8:27PM,Oct 11 8:35PM
+nfl_odds_vsin_20251011_2027.json,nfl_odds_vsin_20251011_2035.json,"Sun,October 12th","4:25 PM
+ Splits",Cincinnati Bengals vs  Green Bay Packers,Circa,+14 -122 | -14 +102,+14 -110 | -14 -110,Cincinnati Bengals,Green Bay Packers,+14,-14,+14,-14,Oct 11 8:27PM,Oct 11 8:35PM
+nfl_odds_vsin_20251011_2027.json,nfl_odds_vsin_20251011_2035.json,"Sun,October 12th","4:25 PM
+ Splits",Cincinnati Bengals vs  Green Bay Packers,Caesars,+14 -109 | -14 -110,+14.5 -115 | -14.5 -105,Cincinnati Bengals,Green Bay Packers,+14,-14,+14.5,-14.5,Oct 11 8:27PM,Oct 11 8:35PM
+nfl_odds_vsin_20251011_2027.json,nfl_odds_vsin_20251011_2035.json,"Mon,October 13th","7:15 PM
+ Splits",Buffalo Bills vs  Atlanta Falcons,Caesars,-4 -108 | +4 -112,-4.5 +100 | +4.5 -121,Buffalo Bills,Atlanta Falcons,-4,+4,-4.5,+4.5,Oct 11 8:27PM,Oct 11 8:35PM
+nfl_odds_vsin_20251011_2035.json,nfl_odds_vsin_20251011_2043.json,"Sun,October 12th","1:00 PM
+ Splits",Arizona Cardinals vs  Indianapolis Colts,DK,+7.5 -112 | -7.5 -108,+7.5 -105 | -7.5 -115,Arizona Cardinals,Indianapolis Colts,+7.5,-7.5,+7.5,-7.5,Oct 11 8:35PM,Oct 11 8:43PM
+nfl_odds_vsin_20251011_2043.json,nfl_odds_vsin_20251011_2051.json,"Sun,October 12th","1:00 PM
+ Splits",Arizona Cardinals vs  Indianapolis Colts,Stations,+7.5 -120 | -7.5 +100,+7.5 -110 | -7.5 -110,Arizona Cardinals,Indianapolis Colts,+7.5,-7.5,+7.5,-7.5,Oct 11 8:43PM,Oct 11 8:51PM
+nfl_odds_vsin_20251011_2043.json,nfl_odds_vsin_20251011_2051.json,"Sun,October 12th","4:25 PM
+ Splits",Cincinnati Bengals vs  Green Bay Packers,GLD Nugget,+14.5 -110 | -14.5 -110,+14 -110 | -14 -110,Cincinnati Bengals,Green Bay Packers,+14.5,-14.5,+14,-14,Oct 11 8:43PM,Oct 11 8:51PM
+nfl_odds_vsin_20251011_2043.json,nfl_odds_vsin_20251011_2051.json,"Sun,October 12th","4:25 PM
+ Splits",Cincinnati Bengals vs  Green Bay Packers,Caesars,+14.5 -115 | -14.5 -105,+14 -109 | -14 -110,Cincinnati Bengals,Green Bay Packers,+14.5,-14.5,+14,-14,Oct 11 8:43PM,Oct 11 8:51PM
+nfl_odds_vsin_20251011_2043.json,nfl_odds_vsin_20251011_2051.json,"Mon,October 13th","7:15 PM
+ Splits",Buffalo Bills vs  Atlanta Falcons,Circa,-3.5 -104 | +3.5 -116,-3.5 -112 | +3.5 -108,Buffalo Bills,Atlanta Falcons,-3.5,+3.5,-3.5,+3.5,Oct 11 8:43PM,Oct 11 8:51PM
+nfl_odds_vsin_20251011_2103.json,nfl_odds_vsin_20251011_2111.json,"Sun,October 12th","1:00 PM
+ Splits",Arizona Cardinals vs  Indianapolis Colts,Wynn,+7 +105 | -7 -125,+7.5 -120 | -7.5 +100,Arizona Cardinals,Indianapolis Colts,+7,-7,+7.5,-7.5,Oct 11 9:03PM,Oct 11 9:11PM
+nfl_odds_vsin_20251011_2103.json,nfl_odds_vsin_20251011_2111.json,"Sun,October 12th","4:25 PM
+ Splits",Cincinnati Bengals vs  Green Bay Packers,Wynn,+14.5 -110 | -14.5 -110,+14 +100 | -14 -120,Cincinnati Bengals,Green Bay Packers,+14.5,-14.5,+14,-14,Oct 11 9:03PM,Oct 11 9:11PM
+nfl_odds_vsin_20251011_2103.json,nfl_odds_vsin_20251011_2111.json,"Mon,October 13th","7:15 PM
+ Splits",Buffalo Bills vs  Atlanta Falcons,Caesars,-4.5 +100 | +4.5 -121,-4 -105 | +4 -113,Buffalo Bills,Atlanta Falcons,-4.5,+4.5,-4,+4,Oct 11 9:03PM,Oct 11 9:11PM
+nfl_odds_vsin_20251011_2103.json,nfl_odds_vsin_20251011_2111.json,"Sun,October 19th","1:00 PM
+ Splits",Carolina Panthers vs  New York Jets,Stations,+2.5 -110 | -2.5 -110,+1.5 -110 | -1.5 -110,Carolina Panthers,New York Jets,+2.5,-2.5,+1.5,-1.5,Oct 11 9:03PM,Oct 11 9:11PM
+nfl_odds_vsin_20251011_2103.json,nfl_odds_vsin_20251011_2111.json,"Sun,October 19th","4:05 PM
+ Splits",Indianapolis Colts vs  Los Angeles Chargers,Stations,+1 -110 | -1 -110,PK -110 | PK -110,Indianapolis Colts,Los Angeles Chargers,+1,-1,PK,PK,Oct 11 9:03PM,Oct 11 9:11PM
+nfl_odds_vsin_20251011_2111.json,nfl_odds_vsin_20251011_2119.json,"Sun,October 12th","1:00 PM
+ Splits",Los Angeles Chargers vs  Miami Dolphins,Caesars,-4 -107 | +4 -113,-3.5 -113 | +3.5 -108,Los Angeles Chargers,Miami Dolphins,-4,+4,-3.5,+3.5,Oct 11 9:11PM,Oct 11 9:19PM
+nfl_odds_vsin_20251011_2127.json,nfl_odds_vsin_20251011_2135.json,"Sun,October 12th","1:00 PM
+ Splits",Arizona Cardinals vs  Indianapolis Colts,DK,+7.5 -105 | -7.5 -115,+9.5 -112 | -9.5 -108,Arizona Cardinals,Indianapolis Colts,+7.5,-7.5,+9.5,-9.5,Oct 11 9:27PM,Oct 11 9:35PM
+nfl_odds_vsin_20251011_2127.json,nfl_odds_vsin_20251011_2135.json,"Sun,October 12th","1:00 PM
+ Splits",Arizona Cardinals vs  Indianapolis Colts,Circa,+7.5 -105 | -7.5 -115,+9.5 -105 | -9.5 -115,Arizona Cardinals,Indianapolis Colts,+7.5,-7.5,+9.5,-9.5,Oct 11 9:27PM,Oct 11 9:35PM
+nfl_odds_vsin_20251011_2127.json,nfl_odds_vsin_20251011_2135.json,"Sun,October 12th","1:00 PM
+ Splits",Arizona Cardinals vs  Indianapolis Colts,GLD Nugget,+7.5 -110 | -7.5 -110,- | -,Arizona Cardinals,Indianapolis Colts,+7.5,-7.5,-,-,Oct 11 9:27PM,Oct 11 9:35PM
+nfl_odds_vsin_20251011_2127.json,nfl_odds_vsin_20251011_2135.json,"Sun,October 12th","1:00 PM
+ Splits",Arizona Cardinals vs  Indianapolis Colts,Westgate,+7.5 -108 | -7.5 -108,+9.5 -110 | -9.5 -110,Arizona Cardinals,Indianapolis Colts,+7.5,-7.5,+9.5,-9.5,Oct 11 9:27PM,Oct 11 9:35PM
+nfl_odds_vsin_20251011_2127.json,nfl_odds_vsin_20251011_2135.json,"Sun,October 12th","1:00 PM
+ Splits",Arizona Cardinals vs  Indianapolis Colts,Caesars,+7.5 -102 | -7.5 -118,+9.5 -112 | -9.5 -110,Arizona Cardinals,Indianapolis Colts,+7.5,-7.5,+9.5,-9.5,Oct 11 9:27PM,Oct 11 9:35PM
+nfl_odds_vsin_20251011_2127.json,nfl_odds_vsin_20251011_2135.json,"Sun,October 12th","1:00 PM
+ Splits",Los Angeles Chargers vs  Miami Dolphins,Caesars,-3.5 -113 | +3.5 -108,-4 -106 | +4 -114,Los Angeles Chargers,Miami Dolphins,-3.5,+3.5,-4,+4,Oct 11 9:27PM,Oct 11 9:35PM
+nfl_odds_vsin_20251011_2127.json,nfl_odds_vsin_20251011_2135.json,"Sun,October 19th","4:25 PM
+ Splits",Green Bay Packers vs  Arizona Cardinals,Westgate,-5.5 -110 | +5.5 -110,- | -,Green Bay Packers,Arizona Cardinals,-5.5,+5.5,-,-,Oct 11 9:27PM,Oct 11 9:35PM
+nfl_odds_vsin_20251011_2135.json,nfl_odds_vsin_20251011_2143.json,"Sun,October 12th","1:00 PM
+ Splits",Arizona Cardinals vs  Indianapolis Colts,DK,+9.5 -112 | -9.5 -108,+9.5 -108 | -9.5 -112,Arizona Cardinals,Indianapolis Colts,+9.5,-9.5,+9.5,-9.5,Oct 11 9:35PM,Oct 11 9:43PM
+nfl_odds_vsin_20251011_2143.json,nfl_odds_vsin_20251011_2151.json,"Sun,October 12th","1:00 PM
+ Splits",Arizona Cardinals vs  Indianapolis Colts,GLD Nugget,- | -,+9.5 -110 | -9.5 -110,Arizona Cardinals,Indianapolis Colts,-,-,+9.5,-9.5,Oct 11 9:43PM,Oct 11 9:51PM
+nfl_odds_vsin_20251011_2143.json,nfl_odds_vsin_20251011_2151.json,"Sun,October 12th","1:00 PM
+ Splits",Arizona Cardinals vs  Indianapolis Colts,Wynn,+7.5 -120 | -7.5 +100,+9.5 -110 | -9.5 -110,Arizona Cardinals,Indianapolis Colts,+7.5,-7.5,+9.5,-9.5,Oct 11 9:43PM,Oct 11 9:51PM
+nfl_odds_vsin_20251011_2143.json,nfl_odds_vsin_20251011_2151.json,"Sun,October 12th","1:00 PM
+ Splits",Arizona Cardinals vs  Indianapolis Colts,Stations,+7.5 -110 | -7.5 -110,+9.5 -110 | -9.5 -110,Arizona Cardinals,Indianapolis Colts,+7.5,-7.5,+9.5,-9.5,Oct 11 9:43PM,Oct 11 9:51PM
+nfl_odds_vsin_20251011_2143.json,nfl_odds_vsin_20251011_2151.json,"Sun,October 12th","1:00 PM
+ Splits",Arizona Cardinals vs  Indianapolis Colts,Caesars,+9.5 -112 | -9.5 -110,+9.5 -105 | -9.5 -113,Arizona Cardinals,Indianapolis Colts,+9.5,-9.5,+9.5,-9.5,Oct 11 9:43PM,Oct 11 9:51PM
+nfl_odds_vsin_20251011_2143.json,nfl_odds_vsin_20251011_2151.json,"Sun,October 12th","1:00 PM
+ Splits",Arizona Cardinals vs  Indianapolis Colts,BetMGM,+7.5 -110 | -7.5 -110,+9.5 -110 | -9.5 -110,Arizona Cardinals,Indianapolis Colts,+7.5,-7.5,+9.5,-9.5,Oct 11 9:43PM,Oct 11 9:51PM
+nfl_odds_vsin_20251011_2143.json,nfl_odds_vsin_20251011_2151.json,"Sun,October 12th","1:00 PM
+ Splits",Los Angeles Rams vs  Baltimore Ravens,DK,-7 -115 | +7 -105,-7 -118 | +7 -102,Los Angeles Rams,Baltimore Ravens,-7,+7,-7,+7,Oct 11 9:43PM,Oct 11 9:51PM
+nfl_odds_vsin_20251011_2143.json,nfl_odds_vsin_20251011_2151.json,"Sun,October 12th","1:00 PM
+ Splits",Seattle Seahawks vs  Jacksonville Jaguars,Caesars,-1 -102 | +1 -120,-1 -105 | +1 -115,Seattle Seahawks,Jacksonville Jaguars,-1,+1,-1,+1,Oct 11 9:43PM,Oct 11 9:51PM
+nfl_odds_vsin_20251011_2143.json,nfl_odds_vsin_20251011_2151.json,"Sun,October 12th","1:00 PM
+ Splits",Los Angeles Chargers vs  Miami Dolphins,Caesars,-4 -106 | +4 -114,-4 -105 | +4 -115,Los Angeles Chargers,Miami Dolphins,-4,+4,-4,+4,Oct 11 9:43PM,Oct 11 9:51PM
+nfl_odds_vsin_20251011_2143.json,nfl_odds_vsin_20251011_2151.json,"Sun,October 19th","4:05 PM
+ Splits",Indianapolis Colts vs  Los Angeles Chargers,Westgate,+1 -110 | -1 -110,PK -110 | PK -110,Indianapolis Colts,Los Angeles Chargers,+1,-1,PK,PK,Oct 11 9:43PM,Oct 11 9:51PM
+nfl_odds_vsin_20251011_2151.json,nfl_odds_vsin_20251011_2159.json,"Sun,October 12th","1:00 PM
+ Splits",Seattle Seahawks vs  Jacksonville Jaguars,DK,-1.5 +105 | +1.5 -125,-1.5 +100 | +1.5 -120,Seattle Seahawks,Jacksonville Jaguars,-1.5,+1.5,-1.5,+1.5,Oct 11 9:51PM,Oct 11 9:59PM
+nfl_odds_vsin_20251011_2151.json,nfl_odds_vsin_20251011_2159.json,"Sun,October 12th","8:20 PM
+ Splits",Detroit Lions vs  Kansas City Chiefs,DK,+2.5 -115 | -2.5 -105,+2.5 -108 | -2.5 -112,Detroit Lions,Kansas City Chiefs,+2.5,-2.5,+2.5,-2.5,Oct 11 9:51PM,Oct 11 9:59PM
+nfl_odds_vsin_20251011_2159.json,nfl_odds_vsin_20251011_2203.json,"Sun,October 12th","1:00 PM
+ Splits",Arizona Cardinals vs  Indianapolis Colts,South Point,+7.5 -110 | -7.5 -110,+9.5 -110 | -9.5 -110,Arizona Cardinals,Indianapolis Colts,+7.5,-7.5,+9.5,-9.5,Oct 11 9:59PM,Oct 11 10:03PM
+nfl_odds_vsin_20251011_2159.json,nfl_odds_vsin_20251011_2203.json,"Sun,October 12th","1:00 PM
+ Splits",Los Angeles Chargers vs  Miami Dolphins,Caesars,-4 -105 | +4 -115,-3.5 -113 | +3.5 -108,Los Angeles Chargers,Miami Dolphins,-4,+4,-3.5,+3.5,Oct 11 9:59PM,Oct 11 10:03PM
+nfl_odds_vsin_20251011_2159.json,nfl_odds_vsin_20251011_2203.json,"Thu,October 16th","8:15 PM
+ Splits",Pittsburgh Steelers vs  Cincinnati Bengals,Caesars,-4 -110 | +4 -110,-5 -110 | +5 -110,Pittsburgh Steelers,Cincinnati Bengals,-4,+4,-5,+5,Oct 11 9:59PM,Oct 11 10:03PM
+nfl_odds_vsin_20251011_2159.json,nfl_odds_vsin_20251011_2203.json,"Sun,October 19th","1:00 PM
+ Splits",New Orleans Saints vs  Chicago Bears,Westgate,+6 -110 | -6 -110,+5.5 -110 | -5.5 -110,New Orleans Saints,Chicago Bears,+6,-6,+5.5,-5.5,Oct 11 9:59PM,Oct 11 10:03PM
+nfl_odds_vsin_20251011_2211.json,nfl_odds_vsin_20251011_2219.json,"Sun,October 12th","1:00 PM
+ Splits",Arizona Cardinals vs  Indianapolis Colts,Circa,+9.5 -105 | -9.5 -115,+10 -115 | -10 -105,Arizona Cardinals,Indianapolis Colts,+9.5,-9.5,+10,-10,Oct 11 10:11PM,Oct 11 10:19PM
+nfl_odds_vsin_20251011_2219.json,nfl_odds_vsin_20251011_2227.json,"Sun,October 12th","1:00 PM
+ Splits",Arizona Cardinals vs  Indianapolis Colts,DK,+9.5 -108 | -9.5 -112,+9.5 -112 | -9.5 -108,Arizona Cardinals,Indianapolis Colts,+9.5,-9.5,+9.5,-9.5,Oct 11 10:19PM,Oct 11 10:27PM
+nfl_odds_vsin_20251011_2227.json,nfl_odds_vsin_20251011_2235.json,"Sun,October 12th","1:00 PM
+ Splits",Arizona Cardinals vs  Indianapolis Colts,Circa,+10 -115 | -10 -105,+9 -110 | -9 -110,Arizona Cardinals,Indianapolis Colts,+10,-10,+9,-9,Oct 11 10:27PM,Oct 11 10:35PM
+nfl_odds_vsin_20251011_2227.json,nfl_odds_vsin_20251011_2235.json,"Sun,October 12th","1:00 PM
+ Splits",Arizona Cardinals vs  Indianapolis Colts,Westgate,+9.5 -110 | -9.5 -110,+9 -110 | -9 -110,Arizona Cardinals,Indianapolis Colts,+9.5,-9.5,+9,-9,Oct 11 10:27PM,Oct 11 10:35PM
+nfl_odds_vsin_20251011_2227.json,nfl_odds_vsin_20251011_2235.json,"Sun,October 12th","1:00 PM
+ Splits",Arizona Cardinals vs  Indianapolis Colts,BetMGM,+9.5 -110 | -9.5 -110,+9 -110 | -9 -110,Arizona Cardinals,Indianapolis Colts,+9.5,-9.5,+9,-9,Oct 11 10:27PM,Oct 11 10:35PM
+nfl_odds_vsin_20251011_2243.json,nfl_odds_vsin_20251011_2251.json,"Sun,October 12th","1:00 PM
+ Splits",Arizona Cardinals vs  Indianapolis Colts,Wynn,+9.5 -110 | -9.5 -110,+9 -110 | -9 -110,Arizona Cardinals,Indianapolis Colts,+9.5,-9.5,+9,-9,Oct 11 10:43PM,Oct 11 10:51PM
+nfl_odds_vsin_20251011_2243.json,nfl_odds_vsin_20251011_2251.json,"Sun,October 12th","1:00 PM
+ Splits",Arizona Cardinals vs  Indianapolis Colts,Caesars,+9.5 -105 | -9.5 -113,+9.5 -110 | -9.5 -111,Arizona Cardinals,Indianapolis Colts,+9.5,-9.5,+9.5,-9.5,Oct 11 10:43PM,Oct 11 10:51PM
+nfl_odds_vsin_20251011_2319.json,nfl_odds_vsin_20251011_2327.json,"Sun,October 12th","8:20 PM
+ Splits",Detroit Lions vs  Kansas City Chiefs,South Point,+2 -110 | -2 -110,+2.5 -110 | -2.5 -110,Detroit Lions,Kansas City Chiefs,+2,-2,+2.5,-2.5,Oct 11 11:19PM,Oct 11 11:27PM
+nfl_odds_vsin_20251012_0003.json,nfl_odds_vsin_20251012_0011.json,"Sun,October 12th","9:30 AM
+ Splits",Denver Broncos vs  New York Jets,Caesars,-7 -113 | +7 -105,-7 -110 | +7 -110,Denver Broncos,New York Jets,-7,+7,-7,+7,Oct 12 12:03AM,Oct 12 12:11AM
+nfl_odds_vsin_20251012_0003.json,nfl_odds_vsin_20251012_0011.json,"Sun,October 12th","1:00 PM
+ Splits",Cleveland Browns vs  Pittsburgh Steelers,Caesars,+6 -105 | -6 -113,+6 -110 | -6 -110,Cleveland Browns,Pittsburgh Steelers,+6,-6,+6,-6,Oct 12 12:03AM,Oct 12 12:11AM
+nfl_odds_vsin_20251012_0003.json,nfl_odds_vsin_20251012_0011.json,"Sun,October 12th","1:00 PM
+ Splits",Arizona Cardinals vs  Indianapolis Colts,Caesars,+9.5 -110 | -9.5 -111,+9.5 -110 | -9.5 -110,Arizona Cardinals,Indianapolis Colts,+9.5,-9.5,+9.5,-9.5,Oct 12 12:03AM,Oct 12 12:11AM
+nfl_odds_vsin_20251012_0003.json,nfl_odds_vsin_20251012_0011.json,"Sun,October 12th","1:00 PM
+ Splits",Los Angeles Rams vs  Baltimore Ravens,Caesars,-7 -112 | +7 -108,-7 -110 | +7 -110,Los Angeles Rams,Baltimore Ravens,-7,+7,-7,+7,Oct 12 12:03AM,Oct 12 12:11AM
+nfl_odds_vsin_20251012_0003.json,nfl_odds_vsin_20251012_0011.json,"Sun,October 12th","1:00 PM
+ Splits",Seattle Seahawks vs  Jacksonville Jaguars,Caesars,-1 -105 | +1 -115,-1 -110 | +1 -110,Seattle Seahawks,Jacksonville Jaguars,-1,+1,-1,+1,Oct 12 12:03AM,Oct 12 12:11AM
+nfl_odds_vsin_20251012_0003.json,nfl_odds_vsin_20251012_0011.json,"Sun,October 12th","4:25 PM
+ Splits",San Francisco 49ers vs  Tampa Bay Buccaneers,Caesars,+3.5 -111 | -3.5 -111,+3.5 -115 | -3.5 -106,San Francisco 49ers,Tampa Bay Buccaneers,+3.5,-3.5,+3.5,-3.5,Oct 12 12:03AM,Oct 12 12:11AM
+nfl_odds_vsin_20251012_0003.json,nfl_odds_vsin_20251012_0011.json,"Sun,October 12th","4:05 PM
+ Splits",Tennessee Titans vs  Las Vegas Raiders,Caesars,+4.5 -118 | -4.5 -103,+4.5 -110 | -4.5 -110,Tennessee Titans,Las Vegas Raiders,+4.5,-4.5,+4.5,-4.5,Oct 12 12:03AM,Oct 12 12:11AM
+nfl_odds_vsin_20251012_0003.json,nfl_odds_vsin_20251012_0011.json,"Sun,October 12th","4:25 PM
+ Splits",Cincinnati Bengals vs  Green Bay Packers,Caesars,+14 -109 | -14 -110,+14 -110 | -14 -110,Cincinnati Bengals,Green Bay Packers,+14,-14,+14,-14,Oct 12 12:03AM,Oct 12 12:11AM
+nfl_odds_vsin_20251012_0003.json,nfl_odds_vsin_20251012_0011.json,"Mon,October 13th","7:15 PM
+ Splits",Buffalo Bills vs  Atlanta Falcons,Caesars,-4 -105 | +4 -113,-4 -110 | +4 -110,Buffalo Bills,Atlanta Falcons,-4,+4,-4,+4,Oct 12 12:03AM,Oct 12 12:11AM
+nfl_odds_vsin_20251012_0003.json,nfl_odds_vsin_20251012_0011.json,"Mon,October 13th","8:15 PM
+ Splits",Chicago Bears vs  Wash Commanders,Caesars,+4.5 -110 | -4.5 -109,+4.5 -110 | -4.5 -110,Chicago Bears,Wash Commanders,+4.5,-4.5,+4.5,-4.5,Oct 12 12:03AM,Oct 12 12:11AM
+nfl_odds_vsin_20251012_0059.json,nfl_odds_vsin_20251012_0103.json,"Sun,October 12th","1:00 PM
+ Splits",Arizona Cardinals vs  Indianapolis Colts,Circa,+9 -110 | -9 -110,+9.5 -110 | -9.5 -110,Arizona Cardinals,Indianapolis Colts,+9,-9,+9.5,-9.5,Oct 12 12:59AM,Oct 12 1:03AM
+nfl_odds_vsin_20251012_0059.json,nfl_odds_vsin_20251012_0103.json,"Sun,October 12th","8:20 PM
+ Splits",Detroit Lions vs  Kansas City Chiefs,BetMGM,+2.5 -115 | -2.5 -105,+2.5 -110 | -2.5 -110,Detroit Lions,Kansas City Chiefs,+2.5,-2.5,+2.5,-2.5,Oct 12 12:59AM,Oct 12 1:03AM
+nfl_odds_vsin_20251012_0059.json,nfl_odds_vsin_20251012_0103.json,"Mon,October 13th","7:15 PM
+ Splits",Buffalo Bills vs  Atlanta Falcons,BetMGM,-4.5 -110 | +4.5 -110,-4 -115 | +4 -105,Buffalo Bills,Atlanta Falcons,-4.5,+4.5,-4,+4,Oct 12 12:59AM,Oct 12 1:03AM
+nfl_odds_vsin_20251012_0211.json,nfl_odds_vsin_20251012_0219.json,"Sun,October 12th","1:00 PM
+ Splits",Los Angeles Chargers vs  Miami Dolphins,Caesars,-3.5 -113 | +3.5 -108,-3.5 -112 | +3.5 -109,Los Angeles Chargers,Miami Dolphins,-3.5,+3.5,-3.5,+3.5,Oct 12 2:11AM,Oct 12 2:19AM
+nfl_odds_vsin_20251012_0211.json,nfl_odds_vsin_20251012_0219.json,"Sun,October 12th","4:05 PM
+ Splits",Tennessee Titans vs  Las Vegas Raiders,Caesars,+4.5 -110 | -4.5 -110,+4 -110 | -4 -110,Tennessee Titans,Las Vegas Raiders,+4.5,-4.5,+4,-4,Oct 12 2:11AM,Oct 12 2:19AM
+nfl_odds_vsin_20251012_0235.json,nfl_odds_vsin_20251012_0243.json,"Sun,October 12th","1:00 PM
+ Splits",Arizona Cardinals vs  Indianapolis Colts,DK,+9.5 -112 | -9.5 -108,+9.5 -108 | -9.5 -112,Arizona Cardinals,Indianapolis Colts,+9.5,-9.5,+9.5,-9.5,Oct 12 2:35AM,Oct 12 2:43AM
+nfl_odds_vsin_20251012_0303.json,nfl_odds_vsin_20251012_0311.json,"Sun,October 12th","4:25 PM
+ Splits",Cincinnati Bengals vs  Green Bay Packers,Caesars,+14 -110 | -14 -110,+14.5 -110 | -14.5 -110,Cincinnati Bengals,Green Bay Packers,+14,-14,+14.5,-14.5,Oct 12 3:03AM,Oct 12 3:11AM
+nfl_odds_vsin_20251012_0311.json,nfl_odds_vsin_20251012_0319.json,"Sun,October 12th","4:25 PM
+ Splits",Cincinnati Bengals vs  Green Bay Packers,Caesars,+14.5 -110 | -14.5 -110,+14 -110 | -14 -110,Cincinnati Bengals,Green Bay Packers,+14.5,-14.5,+14,-14,Oct 12 3:11AM,Oct 12 3:19AM
+nfl_odds_vsin_20251012_0327.json,nfl_odds_vsin_20251012_0335.json,"Sun,October 12th","4:05 PM
+ Splits",Tennessee Titans vs  Las Vegas Raiders,Caesars,+4 -110 | -4 -110,+4.5 -110 | -4.5 -110,Tennessee Titans,Las Vegas Raiders,+4,-4,+4.5,-4.5,Oct 12 3:27AM,Oct 12 3:35AM
+nfl_odds_vsin_20251012_0611.json,nfl_odds_vsin_20251012_0619.json,"Sun,October 12th","1:00 PM
+ Splits",Dallas Cowboys vs  Carolina Panthers,Caesars,-3 -109 | +3 -112,-3 -106 | +3 -115,Dallas Cowboys,Carolina Panthers,-3,+3,-3,+3,Oct 12 6:11AM,Oct 12 6:19AM
+nfl_odds_vsin_20251012_0651.json,nfl_odds_vsin_20251012_0659.json,"Sun,October 12th","1:00 PM
+ Splits",Dallas Cowboys vs  Carolina Panthers,DK,-3 -112 | +3 -108,-3 -120 | +3 +100,Dallas Cowboys,Carolina Panthers,-3,+3,-3,+3,Oct 12 6:51AM,Oct 12 6:59AM
+nfl_odds_vsin_20251012_0651.json,nfl_odds_vsin_20251012_0659.json,"Sun,October 12th","8:20 PM
+ Splits",Detroit Lions vs  Kansas City Chiefs,DK,+2.5 -108 | -2.5 -112,+2.5 -110 | -2.5 -110,Detroit Lions,Kansas City Chiefs,+2.5,-2.5,+2.5,-2.5,Oct 12 6:51AM,Oct 12 6:59AM
+nfl_odds_vsin_20251012_0719.json,nfl_odds_vsin_20251012_0727.json,"Sun,October 12th","1:00 PM
+ Splits",Los Angeles Chargers vs  Miami Dolphins,Caesars,-3.5 -112 | +3.5 -109,-3.5 -113 | +3.5 -109,Los Angeles Chargers,Miami Dolphins,-3.5,+3.5,-3.5,+3.5,Oct 12 7:19AM,Oct 12 7:27AM
+nfl_odds_vsin_20251012_0727.json,nfl_odds_vsin_20251012_0735.json,"Sun,October 12th","1:00 PM
+ Splits",Arizona Cardinals vs  Indianapolis Colts,Westgate,+9 -110 | -9 -110,+9.5 -110 | -9.5 -110,Arizona Cardinals,Indianapolis Colts,+9,-9,+9.5,-9.5,Oct 12 7:27AM,Oct 12 7:35AM
+nfl_odds_vsin_20251012_0727.json,nfl_odds_vsin_20251012_0735.json,"Thu,October 16th","8:15 PM
+ Splits",Pittsburgh Steelers vs  Cincinnati Bengals,Westgate,-3.5 -110 | +3.5 -110,- | -,Pittsburgh Steelers,Cincinnati Bengals,-3.5,+3.5,-,-,Oct 12 7:27AM,Oct 12 7:35AM
+nfl_odds_vsin_20251012_0727.json,nfl_odds_vsin_20251012_0735.json,"Sun,October 19th","9:30 AM
+ Splits",Los Angeles Rams vs  Jacksonville Jaguars,Westgate,-3 -110 | +3 -110,- | -,Los Angeles Rams,Jacksonville Jaguars,-3,+3,-,-,Oct 12 7:27AM,Oct 12 7:35AM
+nfl_odds_vsin_20251012_0727.json,nfl_odds_vsin_20251012_0735.json,"Sun,October 19th","1:00 PM
+ Splits",Las Vegas Raiders vs  Kansas City Chiefs,Westgate,+10.5 -110 | -10.5 -110,- | -,Las Vegas Raiders,Kansas City Chiefs,+10.5,-10.5,-,-,Oct 12 7:27AM,Oct 12 7:35AM
+nfl_odds_vsin_20251012_0727.json,nfl_odds_vsin_20251012_0735.json,"Sun,October 19th","1:00 PM
+ Splits",Miami Dolphins vs  Cleveland Browns,Westgate,+2.5 -110 | -2.5 -110,- | -,Miami Dolphins,Cleveland Browns,+2.5,-2.5,-,-,Oct 12 7:27AM,Oct 12 7:35AM
+nfl_odds_vsin_20251012_0727.json,nfl_odds_vsin_20251012_0735.json,"Sun,October 19th","1:00 PM
+ Splits",New England Patriots vs  Tennessee Titans,Westgate,-6 -110 | +6 -110,- | -,New England Patriots,Tennessee Titans,-6,+6,-,-,Oct 12 7:27AM,Oct 12 7:35AM
+nfl_odds_vsin_20251012_0727.json,nfl_odds_vsin_20251012_0735.json,"Sun,October 19th","1:00 PM
+ Splits",New Orleans Saints vs  Chicago Bears,Westgate,+5.5 -110 | -5.5 -110,- | -,New Orleans Saints,Chicago Bears,+5.5,-5.5,-,-,Oct 12 7:27AM,Oct 12 7:35AM
+nfl_odds_vsin_20251012_0727.json,nfl_odds_vsin_20251012_0735.json,"Sun,October 19th","1:00 PM
+ Splits",Carolina Panthers vs  New York Jets,Westgate,+2.5 -110 | -2.5 -110,- | -,Carolina Panthers,New York Jets,+2.5,-2.5,-,-,Oct 12 7:27AM,Oct 12 7:35AM
+nfl_odds_vsin_20251012_0727.json,nfl_odds_vsin_20251012_0735.json,"Sun,October 19th","4:05 PM
+ Splits",Indianapolis Colts vs  Los Angeles Chargers,Westgate,PK -110 | PK -110,- | -,Indianapolis Colts,Los Angeles Chargers,PK,PK,-,-,Oct 12 7:27AM,Oct 12 7:35AM
+nfl_odds_vsin_20251012_0727.json,nfl_odds_vsin_20251012_0735.json,"Sun,October 19th","4:25 PM
+ Splits",Wash Commanders vs  Dallas Cowboys,Westgate,-2.5 -110 | +2.5 -110,- | -,Wash Commanders,Dallas Cowboys,-2.5,+2.5,-,-,Oct 12 7:27AM,Oct 12 7:35AM
+nfl_odds_vsin_20251012_0727.json,nfl_odds_vsin_20251012_0735.json,"Sun,October 19th","8:20 PM
+ Splits",Atlanta Falcons vs  San Francisco 49ers,Westgate,+3.5 -110 | -3.5 -110,- | -,Atlanta Falcons,San Francisco 49ers,+3.5,-3.5,-,-,Oct 12 7:27AM,Oct 12 7:35AM
+nfl_odds_vsin_20251012_0727.json,nfl_odds_vsin_20251012_0735.json,"Mon,October 20th","7:00 PM
+ Splits",Tampa Bay Buccaneers vs  Detroit Lions,Westgate,+4.5 -110 | -4.5 -110,- | -,Tampa Bay Buccaneers,Detroit Lions,+4.5,-4.5,-,-,Oct 12 7:27AM,Oct 12 7:35AM
+nfl_odds_vsin_20251012_0727.json,nfl_odds_vsin_20251012_0735.json,"Mon,October 20th","10:00 PM
+ Splits",Houston Texans vs  Seattle Seahawks,Westgate,+3 -110 | -3 -110,- | -,Houston Texans,Seattle Seahawks,+3,-3,-,-,Oct 12 7:27AM,Oct 12 7:35AM
+nfl_odds_vsin_20251012_0743.json,nfl_odds_vsin_20251012_0751.json,"Sun,October 12th","9:30 AM
+ Splits",Denver Broncos vs  New York Jets,DK,-7.5 +100 | +7.5 -120,-7.5 -102 | +7.5 -118,Denver Broncos,New York Jets,-7.5,+7.5,-7.5,+7.5,Oct 12 7:43AM,Oct 12 7:51AM
+nfl_odds_vsin_20251012_0759.json,nfl_odds_vsin_20251012_0803.json,"Sun,October 19th","4:25 PM
+ Splits",Green Bay Packers vs  Arizona Cardinals,Caesars,-5.5 -110 | +5.5 -110,-6 -110 | +6 -110,Green Bay Packers,Arizona Cardinals,-5.5,+5.5,-6,+6,Oct 12 7:59AM,Oct 12 8:03AM
+nfl_odds_vsin_20251012_0835.json,nfl_odds_vsin_20251012_0843.json,"Sun,October 12th","9:30 AM
+ Splits",Denver Broncos vs  New York Jets,DK,-7.5 -102 | +7.5 -118,-7.5 +100 | +7.5 -120,Denver Broncos,New York Jets,-7.5,+7.5,-7.5,+7.5,Oct 12 8:35AM,Oct 12 8:43AM
+nfl_odds_vsin_20251012_0843.json,nfl_odds_vsin_20251012_0851.json,"Sun,October 12th","1:00 PM
+ Splits",Los Angeles Rams vs  Baltimore Ravens,DK,-7 -118 | +7 -102,-7 -115 | +7 -105,Los Angeles Rams,Baltimore Ravens,-7,+7,-7,+7,Oct 12 8:43AM,Oct 12 8:51AM
+nfl_odds_vsin_20251012_0954.json,nfl_odds_vsin_20251012_1001.json,"Sun,October 12th","1:00 PM
+ Splits",Arizona Cardinals vs  Indianapolis Colts,DK,+9.5 -108 | -9.5 -112,+9.5 -112 | -9.5 -108,Arizona Cardinals,Indianapolis Colts,+9.5,-9.5,+9.5,-9.5,Oct 12 9:54AM,Oct 12 10:01AM
+nfl_odds_vsin_20251012_1001.json,nfl_odds_vsin_20251012_1004.json,"Sun,October 12th","9:30 AM
+ Splits",Denver Broncos vs  New York Jets,GLD Nugget,-7 -115 | +7 -105,- | -,Denver Broncos,New York Jets,-7,+7,-,-,Oct 12 10:01AM,Oct 12 10:04AM
+nfl_odds_vsin_20251012_1001.json,nfl_odds_vsin_20251012_1004.json,"Sun,October 12th","9:30 AM
+ Splits",Denver Broncos vs  New York Jets,Westgate,-7 -108 | +7 -108,-7 +100 | +7 -116,Denver Broncos,New York Jets,-7,+7,-7,+7,Oct 12 10:01AM,Oct 12 10:04AM
+nfl_odds_vsin_20251012_1001.json,nfl_odds_vsin_20251012_1004.json,"Sun,October 12th","9:30 AM
+ Splits",Denver Broncos vs  New York Jets,Stations,-7 -115 | +7 -105,-7 -110 | +7 -110,Denver Broncos,New York Jets,-7,+7,-7,+7,Oct 12 10:01AM,Oct 12 10:04AM
+nfl_odds_vsin_20251012_1001.json,nfl_odds_vsin_20251012_1004.json,"Sun,October 12th","9:30 AM
+ Splits",Denver Broncos vs  New York Jets,Caesars,-7 -110 | +7 -110,- | -,Denver Broncos,New York Jets,-7,+7,-,-,Oct 12 10:01AM,Oct 12 10:04AM
+nfl_odds_vsin_20251012_1001.json,nfl_odds_vsin_20251012_1004.json,"Sun,October 12th","9:30 AM
+ Splits",Denver Broncos vs  New York Jets,BetMGM,-7 -110 | +7 -110,- | -,Denver Broncos,New York Jets,-7,+7,-,-,Oct 12 10:01AM,Oct 12 10:04AM
+nfl_odds_vsin_20251012_1001.json,nfl_odds_vsin_20251012_1004.json,"Sun,October 12th","1:00 PM
+ Splits",Arizona Cardinals vs  Indianapolis Colts,Circa,+9.5 -110 | -9.5 -110,+8.5 -110 | -8.5 -110,Arizona Cardinals,Indianapolis Colts,+9.5,-9.5,+8.5,-8.5,Oct 12 10:01AM,Oct 12 10:04AM
+nfl_odds_vsin_20251012_1001.json,nfl_odds_vsin_20251012_1004.json,"Sun,October 12th","1:00 PM
+ Splits",Arizona Cardinals vs  Indianapolis Colts,Westgate,+9.5 -110 | -9.5 -110,+9 -110 | -9 -110,Arizona Cardinals,Indianapolis Colts,+9.5,-9.5,+9,-9,Oct 12 10:01AM,Oct 12 10:04AM
+nfl_odds_vsin_20251012_1001.json,nfl_odds_vsin_20251012_1004.json,"Sun,October 12th","1:00 PM
+ Splits",Arizona Cardinals vs  Indianapolis Colts,BetMGM,+9 -110 | -9 -110,+9.5 -115 | -9.5 -105,Arizona Cardinals,Indianapolis Colts,+9,-9,+9.5,-9.5,Oct 12 10:01AM,Oct 12 10:04AM
+nfl_odds_vsin_20251012_1001.json,nfl_odds_vsin_20251012_1004.json,"Sun,October 12th","1:00 PM
+ Splits",Los Angeles Rams vs  Baltimore Ravens,BetMGM,-7.5 +100 | +7.5 -115,-7 -115 | +7 -105,Los Angeles Rams,Baltimore Ravens,-7.5,+7.5,-7,+7,Oct 12 10:01AM,Oct 12 10:04AM
+nfl_odds_vsin_20251012_1001.json,nfl_odds_vsin_20251012_1004.json,"Sun,October 12th","1:00 PM
+ Splits",Seattle Seahawks vs  Jacksonville Jaguars,GLD Nugget,+1 -115 | -1 -105,-1 -110 | +1 -110,Seattle Seahawks,Jacksonville Jaguars,+1,-1,-1,+1,Oct 12 10:01AM,Oct 12 10:04AM
+nfl_odds_vsin_20251012_1001.json,nfl_odds_vsin_20251012_1004.json,"Sun,October 12th","1:00 PM
+ Splits",Seattle Seahawks vs  Jacksonville Jaguars,Wynn,+1 -110 | -1 -110,PK -110 | PK -110,Seattle Seahawks,Jacksonville Jaguars,+1,-1,PK,PK,Oct 12 10:01AM,Oct 12 10:04AM
+nfl_odds_vsin_20251012_1001.json,nfl_odds_vsin_20251012_1004.json,"Sun,October 12th","1:00 PM
+ Splits",Seattle Seahawks vs  Jacksonville Jaguars,Stations,PK -110 | PK -110,-1 -110 | +1 -110,Seattle Seahawks,Jacksonville Jaguars,PK,PK,-1,+1,Oct 12 10:01AM,Oct 12 10:04AM
+nfl_odds_vsin_20251012_1001.json,nfl_odds_vsin_20251012_1004.json,"Sun,October 12th","1:00 PM
+ Splits",Seattle Seahawks vs  Jacksonville Jaguars,BetMGM,+1 -115 | -1 +100,-1 -105 | +1 -115,Seattle Seahawks,Jacksonville Jaguars,+1,-1,-1,+1,Oct 12 10:01AM,Oct 12 10:04AM
+nfl_odds_vsin_20251012_1001.json,nfl_odds_vsin_20251012_1004.json,"Sun,October 12th","1:00 PM
+ Splits",Los Angeles Chargers vs  Miami Dolphins,GLD Nugget,-4 -110 | +4 -110,-3.5 -110 | +3.5 -110,Los Angeles Chargers,Miami Dolphins,-4,+4,-3.5,+3.5,Oct 12 10:01AM,Oct 12 10:04AM
+nfl_odds_vsin_20251012_1001.json,nfl_odds_vsin_20251012_1004.json,"Sun,October 12th","4:25 PM
+ Splits",San Francisco 49ers vs  Tampa Bay Buccaneers,GLD Nugget,+3 -105 | -3 -115,+3 +100 | -3 -120,San Francisco 49ers,Tampa Bay Buccaneers,+3,-3,+3,-3,Oct 12 10:01AM,Oct 12 10:04AM
+nfl_odds_vsin_20251012_1001.json,nfl_odds_vsin_20251012_1004.json,"Sun,October 12th","4:05 PM
+ Splits",Tennessee Titans vs  Las Vegas Raiders,Circa,+4.5 -115 | -4.5 -105,+3.5 -105 | -3.5 -115,Tennessee Titans,Las Vegas Raiders,+4.5,-4.5,+3.5,-3.5,Oct 12 10:01AM,Oct 12 10:04AM
+nfl_odds_vsin_20251012_1001.json,nfl_odds_vsin_20251012_1004.json,"Sun,October 12th","4:05 PM
+ Splits",Tennessee Titans vs  Las Vegas Raiders,Caesars,+4.5 -110 | -4.5 -110,+4 -110 | -4 -110,Tennessee Titans,Las Vegas Raiders,+4.5,-4.5,+4,-4,Oct 12 10:01AM,Oct 12 10:04AM
+nfl_odds_vsin_20251012_1001.json,nfl_odds_vsin_20251012_1004.json,"Sun,October 12th","1:00 PM
+ Splits",New England Patriots vs  New Orleans Saints,GLD Nugget,-3.5 -110 | +3.5 -110,-3.5 -105 | +3.5 -115,New England Patriots,New Orleans Saints,-3.5,+3.5,-3.5,+3.5,Oct 12 10:01AM,Oct 12 10:04AM
+nfl_odds_vsin_20251012_1001.json,nfl_odds_vsin_20251012_1004.json,"Mon,October 13th","7:15 PM
+ Splits",Buffalo Bills vs  Atlanta Falcons,GLD Nugget,-4.5 -110 | +4.5 -110,-4 -110 | +4 -110,Buffalo Bills,Atlanta Falcons,-4.5,+4.5,-4,+4,Oct 12 10:01AM,Oct 12 10:04AM
+nfl_odds_vsin_20251012_1001.json,nfl_odds_vsin_20251012_1004.json,"Sun,October 19th","1:00 PM
+ Splits",Carolina Panthers vs  New York Jets,GLD Nugget,+2.5 -110 | -2.5 -110,- | -,Carolina Panthers,New York Jets,+2.5,-2.5,-,-,Oct 12 10:01AM,Oct 12 10:04AM
+nfl_odds_vsin_20251012_1001.json,nfl_odds_vsin_20251012_1004.json,"Sun,October 19th","4:05 PM
+ Splits",New York Giants vs  Denver Broncos,GLD Nugget,+8 -110 | -8 -110,- | -,New York Giants,Denver Broncos,+8,-8,-,-,Oct 12 10:01AM,Oct 12 10:04AM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","1:00 PM
+ Splits",Cleveland Browns vs  Pittsburgh Steelers,DK,+5.5 +100 | -5.5 -120,+6 -110 | -6 -110,Cleveland Browns,Pittsburgh Steelers,+5.5,-5.5,+6,-6,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","1:00 PM
+ Splits",Cleveland Browns vs  Pittsburgh Steelers,Circa,+6 -110 | -6 -110,+6 -105 | -6 -115,Cleveland Browns,Pittsburgh Steelers,+6,-6,+6,-6,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","1:00 PM
+ Splits",Cleveland Browns vs  Pittsburgh Steelers,South Point,+6 -110 | -6 -110,+6.5 -110 | -6.5 -110,Cleveland Browns,Pittsburgh Steelers,+6,-6,+6.5,-6.5,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","1:00 PM
+ Splits",Cleveland Browns vs  Pittsburgh Steelers,GLD Nugget,+6 -110 | -6 -110,- | -,Cleveland Browns,Pittsburgh Steelers,+6,-6,-,-,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","1:00 PM
+ Splits",Cleveland Browns vs  Pittsburgh Steelers,Westgate,+6 -108 | -6 -108,+6.5 -108 | -6.5 -108,Cleveland Browns,Pittsburgh Steelers,+6,-6,+6.5,-6.5,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","1:00 PM
+ Splits",Cleveland Browns vs  Pittsburgh Steelers,Wynn,+6 -110 | -6 -110,+6.5 -110 | -6.5 -110,Cleveland Browns,Pittsburgh Steelers,+6,-6,+6.5,-6.5,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","1:00 PM
+ Splits",Cleveland Browns vs  Pittsburgh Steelers,Caesars,+6 -110 | -6 -110,- | -,Cleveland Browns,Pittsburgh Steelers,+6,-6,-,-,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","1:00 PM
+ Splits",Cleveland Browns vs  Pittsburgh Steelers,BetMGM,+6 -110 | -6 -110,+6.5 -105 | -6.5 -105,Cleveland Browns,Pittsburgh Steelers,+6,-6,+6.5,-6.5,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","1:00 PM
+ Splits",Arizona Cardinals vs  Indianapolis Colts,DK,+9.5 -112 | -9.5 -108,+8.5 -112 | -8.5 -108,Arizona Cardinals,Indianapolis Colts,+9.5,-9.5,+8.5,-8.5,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","1:00 PM
+ Splits",Arizona Cardinals vs  Indianapolis Colts,South Point,+9.5 -110 | -9.5 -110,+9 -110 | -9 -110,Arizona Cardinals,Indianapolis Colts,+9.5,-9.5,+9,-9,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","1:00 PM
+ Splits",Arizona Cardinals vs  Indianapolis Colts,GLD Nugget,+9.5 -110 | -9.5 -110,- | -,Arizona Cardinals,Indianapolis Colts,+9.5,-9.5,-,-,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","1:00 PM
+ Splits",Arizona Cardinals vs  Indianapolis Colts,Westgate,+9 -110 | -9 -110,+8.5 -110 | -8.5 -110,Arizona Cardinals,Indianapolis Colts,+9,-9,+8.5,-8.5,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","1:00 PM
+ Splits",Arizona Cardinals vs  Indianapolis Colts,Wynn,+9 -110 | -9 -110,+7.5 -110 | -7.5 -110,Arizona Cardinals,Indianapolis Colts,+9,-9,+7.5,-7.5,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","1:00 PM
+ Splits",Arizona Cardinals vs  Indianapolis Colts,Stations,+9.5 -110 | -9.5 -110,+9 -110 | -9 -110,Arizona Cardinals,Indianapolis Colts,+9.5,-9.5,+9,-9,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","1:00 PM
+ Splits",Arizona Cardinals vs  Indianapolis Colts,Caesars,+9.5 -110 | -9.5 -110,- | -,Arizona Cardinals,Indianapolis Colts,+9.5,-9.5,-,-,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","1:00 PM
+ Splits",Arizona Cardinals vs  Indianapolis Colts,BetMGM,+9.5 -115 | -9.5 -105,+9 -110 | -9 -110,Arizona Cardinals,Indianapolis Colts,+9.5,-9.5,+9,-9,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","1:00 PM
+ Splits",Los Angeles Rams vs  Baltimore Ravens,DK,-7 -115 | +7 -105,-7 -105 | +7 -115,Los Angeles Rams,Baltimore Ravens,-7,+7,-7,+7,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","1:00 PM
+ Splits",Los Angeles Rams vs  Baltimore Ravens,Circa,-7 -110 | +7 -110,-6.5 -125 | +6.5 +105,Los Angeles Rams,Baltimore Ravens,-7,+7,-6.5,+6.5,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","1:00 PM
+ Splits",Los Angeles Rams vs  Baltimore Ravens,South Point,-7 -110 | +7 -110,-6.5 -110 | +6.5 -110,Los Angeles Rams,Baltimore Ravens,-7,+7,-6.5,+6.5,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","1:00 PM
+ Splits",Los Angeles Rams vs  Baltimore Ravens,GLD Nugget,-7 -110 | +7 -110,- | -,Los Angeles Rams,Baltimore Ravens,-7,+7,-,-,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","1:00 PM
+ Splits",Los Angeles Rams vs  Baltimore Ravens,Westgate,-7 -108 | +7 -108,-6.5 -108 | +6.5 -108,Los Angeles Rams,Baltimore Ravens,-7,+7,-6.5,+6.5,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","1:00 PM
+ Splits",Los Angeles Rams vs  Baltimore Ravens,Wynn,-7 -120 | +7 +100,-6.5 -110 | +6.5 -110,Los Angeles Rams,Baltimore Ravens,-7,+7,-6.5,+6.5,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","1:00 PM
+ Splits",Los Angeles Rams vs  Baltimore Ravens,Stations,-7.5 +100 | +7.5 -120,-7 +100 | +7 -120,Los Angeles Rams,Baltimore Ravens,-7.5,+7.5,-7,+7,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","1:00 PM
+ Splits",Los Angeles Rams vs  Baltimore Ravens,Caesars,-7 -110 | +7 -110,- | -,Los Angeles Rams,Baltimore Ravens,-7,+7,-,-,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","1:00 PM
+ Splits",Los Angeles Rams vs  Baltimore Ravens,BetMGM,-7 -115 | +7 -105,-7 +100 | +7 -115,Los Angeles Rams,Baltimore Ravens,-7,+7,-7,+7,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","1:00 PM
+ Splits",Seattle Seahawks vs  Jacksonville Jaguars,Circa,PK -110 | PK -110,-1 -110 | +1 -110,Seattle Seahawks,Jacksonville Jaguars,PK,PK,-1,+1,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","1:00 PM
+ Splits",Seattle Seahawks vs  Jacksonville Jaguars,South Point,PK -110 | PK -110,-1 -110 | +1 -110,Seattle Seahawks,Jacksonville Jaguars,PK,PK,-1,+1,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","1:00 PM
+ Splits",Seattle Seahawks vs  Jacksonville Jaguars,GLD Nugget,-1 -110 | +1 -110,- | -,Seattle Seahawks,Jacksonville Jaguars,-1,+1,-,-,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","1:00 PM
+ Splits",Seattle Seahawks vs  Jacksonville Jaguars,Westgate,PK -108 | PK -108,-1 -108 | +1 -108,Seattle Seahawks,Jacksonville Jaguars,PK,PK,-1,+1,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","1:00 PM
+ Splits",Seattle Seahawks vs  Jacksonville Jaguars,Wynn,PK -110 | PK -110,-1 -110 | +1 -110,Seattle Seahawks,Jacksonville Jaguars,PK,PK,-1,+1,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","1:00 PM
+ Splits",Seattle Seahawks vs  Jacksonville Jaguars,Caesars,-1 -110 | +1 -110,- | -,Seattle Seahawks,Jacksonville Jaguars,-1,+1,-,-,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","1:00 PM
+ Splits",Dallas Cowboys vs  Carolina Panthers,DK,-3 -120 | +3 +100,-3 -118 | +3 -102,Dallas Cowboys,Carolina Panthers,-3,+3,-3,+3,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","1:00 PM
+ Splits",Dallas Cowboys vs  Carolina Panthers,GLD Nugget,-3 -110 | +3 -110,- | -,Dallas Cowboys,Carolina Panthers,-3,+3,-,-,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","1:00 PM
+ Splits",Dallas Cowboys vs  Carolina Panthers,Wynn,-3 -110 | +3 -110,-3 +100 | +3 -120,Dallas Cowboys,Carolina Panthers,-3,+3,-3,+3,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","1:00 PM
+ Splits",Dallas Cowboys vs  Carolina Panthers,Caesars,-3 -106 | +3 -115,- | -,Dallas Cowboys,Carolina Panthers,-3,+3,-,-,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","1:00 PM
+ Splits",Dallas Cowboys vs  Carolina Panthers,BetMGM,-3 -110 | +3 -110,-3 -105 | +3 -115,Dallas Cowboys,Carolina Panthers,-3,+3,-3,+3,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","1:00 PM
+ Splits",Los Angeles Chargers vs  Miami Dolphins,DK,-4.5 +100 | +4.5 -120,-3.5 -102 | +3.5 -118,Los Angeles Chargers,Miami Dolphins,-4.5,+4.5,-3.5,+3.5,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","1:00 PM
+ Splits",Los Angeles Chargers vs  Miami Dolphins,Circa,-4 -105 | +4 -115,-3.5 -105 | +3.5 -115,Los Angeles Chargers,Miami Dolphins,-4,+4,-3.5,+3.5,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","1:00 PM
+ Splits",Los Angeles Chargers vs  Miami Dolphins,GLD Nugget,-3.5 -110 | +3.5 -110,- | -,Los Angeles Chargers,Miami Dolphins,-3.5,+3.5,-,-,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","1:00 PM
+ Splits",Los Angeles Chargers vs  Miami Dolphins,Wynn,-4 -110 | +4 -110,-3.5 -110 | +3.5 -110,Los Angeles Chargers,Miami Dolphins,-4,+4,-3.5,+3.5,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","1:00 PM
+ Splits",Los Angeles Chargers vs  Miami Dolphins,Stations,-3.5 -110 | +3.5 -110,-3.5 -115 | +3.5 -105,Los Angeles Chargers,Miami Dolphins,-3.5,+3.5,-3.5,+3.5,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","1:00 PM
+ Splits",Los Angeles Chargers vs  Miami Dolphins,Caesars,-3.5 -113 | +3.5 -109,- | -,Los Angeles Chargers,Miami Dolphins,-3.5,+3.5,-,-,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","1:00 PM
+ Splits",Los Angeles Chargers vs  Miami Dolphins,BetMGM,-4 -110 | +4 -110,-3.5 +100 | +3.5 -110,Los Angeles Chargers,Miami Dolphins,-4,+4,-3.5,+3.5,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","4:25 PM
+ Splits",San Francisco 49ers vs  Tampa Bay Buccaneers,DK,+3.5 -112 | -3.5 -108,+3.5 -105 | -3.5 -115,San Francisco 49ers,Tampa Bay Buccaneers,+3.5,-3.5,+3.5,-3.5,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","4:25 PM
+ Splits",San Francisco 49ers vs  Tampa Bay Buccaneers,Circa,+3 +100 | -3 -120,+3.5 -110 | -3.5 -110,San Francisco 49ers,Tampa Bay Buccaneers,+3,-3,+3.5,-3.5,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","4:25 PM
+ Splits",San Francisco 49ers vs  Tampa Bay Buccaneers,GLD Nugget,+3 +100 | -3 -120,+3.5 -115 | -3.5 -105,San Francisco 49ers,Tampa Bay Buccaneers,+3,-3,+3.5,-3.5,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","4:25 PM
+ Splits",San Francisco 49ers vs  Tampa Bay Buccaneers,Stations,+3.5 -115 | -3.5 -105,+3.5 -110 | -3.5 -110,San Francisco 49ers,Tampa Bay Buccaneers,+3.5,-3.5,+3.5,-3.5,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","4:25 PM
+ Splits",San Francisco 49ers vs  Tampa Bay Buccaneers,Caesars,+3.5 -115 | -3.5 -106,+3.5 -115 | -3.5 -105,San Francisco 49ers,Tampa Bay Buccaneers,+3.5,-3.5,+3.5,-3.5,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","4:05 PM
+ Splits",Tennessee Titans vs  Las Vegas Raiders,DK,+4.5 -115 | -4.5 -105,+3.5 -110 | -3.5 -110,Tennessee Titans,Las Vegas Raiders,+4.5,-4.5,+3.5,-3.5,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","4:05 PM
+ Splits",Tennessee Titans vs  Las Vegas Raiders,Circa,+3.5 -105 | -3.5 -115,+3.5 -113 | -3.5 -107,Tennessee Titans,Las Vegas Raiders,+3.5,-3.5,+3.5,-3.5,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","4:05 PM
+ Splits",Tennessee Titans vs  Las Vegas Raiders,South Point,+4 -110 | -4 -110,+3.5 -110 | -3.5 -110,Tennessee Titans,Las Vegas Raiders,+4,-4,+3.5,-3.5,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","4:05 PM
+ Splits",Tennessee Titans vs  Las Vegas Raiders,GLD Nugget,+4 -110 | -4 -110,- | -,Tennessee Titans,Las Vegas Raiders,+4,-4,-,-,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","4:05 PM
+ Splits",Tennessee Titans vs  Las Vegas Raiders,Westgate,+4 -108 | -4 -108,+3.5 -108 | -3.5 -108,Tennessee Titans,Las Vegas Raiders,+4,-4,+3.5,-3.5,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","4:05 PM
+ Splits",Tennessee Titans vs  Las Vegas Raiders,Wynn,+4.5 -110 | -4.5 -110,+4 -110 | -4 -110,Tennessee Titans,Las Vegas Raiders,+4.5,-4.5,+4,-4,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","4:05 PM
+ Splits",Tennessee Titans vs  Las Vegas Raiders,Stations,+4 -110 | -4 -110,+3.5 +100 | -3.5 -120,Tennessee Titans,Las Vegas Raiders,+4,-4,+3.5,-3.5,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","4:05 PM
+ Splits",Tennessee Titans vs  Las Vegas Raiders,Caesars,+4 -110 | -4 -110,- | -,Tennessee Titans,Las Vegas Raiders,+4,-4,-,-,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","4:05 PM
+ Splits",Tennessee Titans vs  Las Vegas Raiders,BetMGM,+4.5 -115 | -4.5 -105,- | -,Tennessee Titans,Las Vegas Raiders,+4.5,-4.5,-,-,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","1:00 PM
+ Splits",New England Patriots vs  New Orleans Saints,DK,-3.5 -110 | +3.5 -110,-3.5 -105 | +3.5 -115,New England Patriots,New Orleans Saints,-3.5,+3.5,-3.5,+3.5,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","1:00 PM
+ Splits",New England Patriots vs  New Orleans Saints,Circa,-3.5 -105 | +3.5 -115,-3 -115 | +3 -105,New England Patriots,New Orleans Saints,-3.5,+3.5,-3,+3,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","1:00 PM
+ Splits",New England Patriots vs  New Orleans Saints,South Point,-3.5 -110 | +3.5 -110,-3 -110 | +3 -110,New England Patriots,New Orleans Saints,-3.5,+3.5,-3,+3,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","1:00 PM
+ Splits",New England Patriots vs  New Orleans Saints,GLD Nugget,-3.5 -105 | +3.5 -115,- | -,New England Patriots,New Orleans Saints,-3.5,+3.5,-,-,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","1:00 PM
+ Splits",New England Patriots vs  New Orleans Saints,Westgate,-3.5 +100 | +3.5 -116,-3 -116 | +3 +100,New England Patriots,New Orleans Saints,-3.5,+3.5,-3,+3,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","1:00 PM
+ Splits",New England Patriots vs  New Orleans Saints,Wynn,-3 -125 | +3 +105,-3 -110 | +3 -110,New England Patriots,New Orleans Saints,-3,+3,-3,+3,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","1:00 PM
+ Splits",New England Patriots vs  New Orleans Saints,Caesars,-3.5 +100 | +3.5 -121,- | -,New England Patriots,New Orleans Saints,-3.5,+3.5,-,-,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","1:00 PM
+ Splits",New England Patriots vs  New Orleans Saints,BetMGM,-3.5 -110 | +3.5 -110,-3.5 -105 | +3.5 -115,New England Patriots,New Orleans Saints,-3.5,+3.5,-3.5,+3.5,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","4:25 PM
+ Splits",Cincinnati Bengals vs  Green Bay Packers,DK,+14.5 -115 | -14.5 -105,+14 -105 | -14 -115,Cincinnati Bengals,Green Bay Packers,+14.5,-14.5,+14,-14,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","4:25 PM
+ Splits",Cincinnati Bengals vs  Green Bay Packers,Wynn,+14 +100 | -14 -120,+14 -110 | -14 -110,Cincinnati Bengals,Green Bay Packers,+14,-14,+14,-14,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","4:25 PM
+ Splits",Cincinnati Bengals vs  Green Bay Packers,Stations,+14.5 -110 | -14.5 -110,+14 -110 | -14 -110,Cincinnati Bengals,Green Bay Packers,+14.5,-14.5,+14,-14,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","4:25 PM
+ Splits",Cincinnati Bengals vs  Green Bay Packers,BetMGM,+14.5 -115 | -14.5 -105,+14 -110 | -14 -110,Cincinnati Bengals,Green Bay Packers,+14.5,-14.5,+14,-14,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","8:20 PM
+ Splits",Detroit Lions vs  Kansas City Chiefs,DK,+2.5 -110 | -2.5 -110,+2.5 -105 | -2.5 -115,Detroit Lions,Kansas City Chiefs,+2.5,-2.5,+2.5,-2.5,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","8:20 PM
+ Splits",Detroit Lions vs  Kansas City Chiefs,Wynn,+2 +100 | -2 -120,+2.5 +100 | -2.5 -120,Detroit Lions,Kansas City Chiefs,+2,-2,+2.5,-2.5,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 12th","8:20 PM
+ Splits",Detroit Lions vs  Kansas City Chiefs,Caesars,+2.5 -110 | -2.5 -110,+2.5 -105 | -2.5 -115,Detroit Lions,Kansas City Chiefs,+2.5,-2.5,+2.5,-2.5,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Mon,October 13th","7:15 PM
+ Splits",Buffalo Bills vs  Atlanta Falcons,DK,-4.5 -115 | +4.5 -105,-4.5 -108 | +4.5 -112,Buffalo Bills,Atlanta Falcons,-4.5,+4.5,-4.5,+4.5,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Mon,October 13th","7:15 PM
+ Splits",Buffalo Bills vs  Atlanta Falcons,Westgate,-4 -108 | +4 -108,-3.5 -108 | +3.5 -108,Buffalo Bills,Atlanta Falcons,-4,+4,-3.5,+3.5,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Mon,October 13th","7:15 PM
+ Splits",Buffalo Bills vs  Atlanta Falcons,Caesars,-4 -110 | +4 -110,-3.5 -110 | +3.5 -110,Buffalo Bills,Atlanta Falcons,-4,+4,-3.5,+3.5,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Mon,October 13th","7:15 PM
+ Splits",Buffalo Bills vs  Atlanta Falcons,BetMGM,-4 -115 | +4 -105,-4 -110 | +4 -110,Buffalo Bills,Atlanta Falcons,-4,+4,-4,+4,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Mon,October 13th","8:15 PM
+ Splits",Chicago Bears vs  Wash Commanders,DK,+4.5 -108 | -4.5 -112,+5.5 -110 | -5.5 -110,Chicago Bears,Wash Commanders,+4.5,-4.5,+5.5,-5.5,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Mon,October 13th","8:15 PM
+ Splits",Chicago Bears vs  Wash Commanders,Circa,+4.5 -115 | -4.5 -105,+5.5 -110 | -5.5 -110,Chicago Bears,Wash Commanders,+4.5,-4.5,+5.5,-5.5,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Mon,October 13th","8:15 PM
+ Splits",Chicago Bears vs  Wash Commanders,South Point,+4.5 -110 | -4.5 -110,+5.5 -110 | -5.5 -110,Chicago Bears,Wash Commanders,+4.5,-4.5,+5.5,-5.5,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Mon,October 13th","8:15 PM
+ Splits",Chicago Bears vs  Wash Commanders,GLD Nugget,+4.5 -110 | -4.5 -110,+5 -110 | -5 -110,Chicago Bears,Wash Commanders,+4.5,-4.5,+5,-5,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Mon,October 13th","8:15 PM
+ Splits",Chicago Bears vs  Wash Commanders,Westgate,+4.5 -108 | -4.5 -108,+5.5 -108 | -5.5 -108,Chicago Bears,Wash Commanders,+4.5,-4.5,+5.5,-5.5,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Mon,October 13th","8:15 PM
+ Splits",Chicago Bears vs  Wash Commanders,Wynn,+4.5 -110 | -4.5 -110,+6 -110 | -6 -110,Chicago Bears,Wash Commanders,+4.5,-4.5,+6,-6,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Mon,October 13th","8:15 PM
+ Splits",Chicago Bears vs  Wash Commanders,Stations,+4.5 -110 | -4.5 -110,+5.5 -110 | -5.5 -110,Chicago Bears,Wash Commanders,+4.5,-4.5,+5.5,-5.5,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Mon,October 13th","8:15 PM
+ Splits",Chicago Bears vs  Wash Commanders,Caesars,+4.5 -110 | -4.5 -110,+5.5 -110 | -5.5 -110,Chicago Bears,Wash Commanders,+4.5,-4.5,+5.5,-5.5,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Mon,October 13th","8:15 PM
+ Splits",Chicago Bears vs  Wash Commanders,BetMGM,+4.5 -110 | -4.5 -110,+5.5 -110 | -5.5 -110,Chicago Bears,Wash Commanders,+4.5,-4.5,+5.5,-5.5,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Thu,October 16th","8:15 PM
+ Splits",Pittsburgh Steelers vs  Cincinnati Bengals,GLD Nugget,-4 -110 | +4 -110,- | -,Pittsburgh Steelers,Cincinnati Bengals,-4,+4,-,-,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 19th","9:30 AM
+ Splits",Los Angeles Rams vs  Jacksonville Jaguars,GLD Nugget,-3 -120 | +3 +100,- | -,Los Angeles Rams,Jacksonville Jaguars,-3,+3,-,-,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 19th","9:30 AM
+ Splits",Los Angeles Rams vs  Jacksonville Jaguars,Caesars,-3.5 +100 | +3.5 -120,-3.5 -105 | +3.5 -115,Los Angeles Rams,Jacksonville Jaguars,-3.5,+3.5,-3.5,+3.5,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 19th","1:00 PM
+ Splits",Las Vegas Raiders vs  Kansas City Chiefs,GLD Nugget,+10.5 -110 | -10.5 -110,- | -,Las Vegas Raiders,Kansas City Chiefs,+10.5,-10.5,-,-,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 19th","1:00 PM
+ Splits",Miami Dolphins vs  Cleveland Browns,GLD Nugget,+2.5 -105 | -2.5 -115,- | -,Miami Dolphins,Cleveland Browns,+2.5,-2.5,-,-,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 19th","1:00 PM
+ Splits",New England Patriots vs  Tennessee Titans,GLD Nugget,-6 -110 | +6 -110,- | -,New England Patriots,Tennessee Titans,-6,+6,-,-,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 19th","1:00 PM
+ Splits",New Orleans Saints vs  Chicago Bears,GLD Nugget,+6 -110 | -6 -110,- | -,New Orleans Saints,Chicago Bears,+6,-6,-,-,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 19th","1:00 PM
+ Splits",Philadelphia Eagles vs  Minnesota Vikings,GLD Nugget,-2.5 -120 | +2.5 +100,- | -,Philadelphia Eagles,Minnesota Vikings,-2.5,+2.5,-,-,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 19th","4:05 PM
+ Splits",Indianapolis Colts vs  Los Angeles Chargers,DK,+1.5 -110 | -1.5 -110,-1.5 +102 | +1.5 -122,Indianapolis Colts,Los Angeles Chargers,+1.5,-1.5,-1.5,+1.5,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 19th","4:05 PM
+ Splits",Indianapolis Colts vs  Los Angeles Chargers,GLD Nugget,+1.5 -110 | -1.5 -110,- | -,Indianapolis Colts,Los Angeles Chargers,+1.5,-1.5,-,-,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 19th","4:05 PM
+ Splits",Indianapolis Colts vs  Los Angeles Chargers,Caesars,+1 -115 | -1 -105,-1 -110 | +1 -110,Indianapolis Colts,Los Angeles Chargers,+1,-1,-1,+1,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 19th","4:25 PM
+ Splits",Wash Commanders vs  Dallas Cowboys,GLD Nugget,-2.5 -110 | +2.5 -110,- | -,Wash Commanders,Dallas Cowboys,-2.5,+2.5,-,-,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 19th","4:25 PM
+ Splits",Green Bay Packers vs  Arizona Cardinals,GLD Nugget,-5.5 -110 | +5.5 -110,- | -,Green Bay Packers,Arizona Cardinals,-5.5,+5.5,-,-,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Sun,October 19th","8:20 PM
+ Splits",Atlanta Falcons vs  San Francisco 49ers,GLD Nugget,+4.5 -110 | -4.5 -110,- | -,Atlanta Falcons,San Francisco 49ers,+4.5,-4.5,-,-,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Mon,October 20th","7:00 PM
+ Splits",Tampa Bay Buccaneers vs  Detroit Lions,GLD Nugget,+4.5 -110 | -4.5 -110,- | -,Tampa Bay Buccaneers,Detroit Lions,+4.5,-4.5,-,-,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1004.json,nfl_odds_vsin_20251012_1620.json,"Mon,October 20th","10:00 PM
+ Splits",Houston Texans vs  Seattle Seahawks,GLD Nugget,+3 -110 | -3 -110,- | -,Houston Texans,Seattle Seahawks,+3,-3,-,-,Oct 12 10:04AM,Oct 12 4:20PM
+nfl_odds_vsin_20251012_1620.json,nfl_odds_vsin_20251012_1628.json,"Sun,October 12th","4:25 PM
+ Splits",Cincinnati Bengals vs  Green Bay Packers,DK,+14 -105 | -14 -115,+14 -112 | -14 -108,Cincinnati Bengals,Green Bay Packers,+14,-14,+14,-14,Oct 12 4:20PM,Oct 12 4:28PM
+nfl_odds_vsin_20251012_1628.json,nfl_odds_vsin_20251012_1636.json,"Sun,October 12th","4:25 PM
+ Splits",San Francisco 49ers vs  Tampa Bay Buccaneers,GLD Nugget,+3.5 -115 | -3.5 -105,- | -,San Francisco 49ers,Tampa Bay Buccaneers,+3.5,-3.5,-,-,Oct 12 4:28PM,Oct 12 4:36PM
+nfl_odds_vsin_20251012_1628.json,nfl_odds_vsin_20251012_1636.json,"Sun,October 12th","4:25 PM
+ Splits",San Francisco 49ers vs  Tampa Bay Buccaneers,Wynn,+3 +105 | -3 -125,+3 -105 | -3 -115,San Francisco 49ers,Tampa Bay Buccaneers,+3,-3,+3,-3,Oct 12 4:28PM,Oct 12 4:36PM
+nfl_odds_vsin_20251012_1628.json,nfl_odds_vsin_20251012_1636.json,"Sun,October 12th","4:25 PM
+ Splits",San Francisco 49ers vs  Tampa Bay Buccaneers,Caesars,+3.5 -115 | -3.5 -105,- | -,San Francisco 49ers,Tampa Bay Buccaneers,+3.5,-3.5,-,-,Oct 12 4:28PM,Oct 12 4:36PM
+nfl_odds_vsin_20251012_1628.json,nfl_odds_vsin_20251012_1636.json,"Sun,October 12th","4:25 PM
+ Splits",San Francisco 49ers vs  Tampa Bay Buccaneers,BetMGM,+3.5 -115 | -3.5 -105,- | -,San Francisco 49ers,Tampa Bay Buccaneers,+3.5,-3.5,-,-,Oct 12 4:28PM,Oct 12 4:36PM
+nfl_odds_vsin_20251012_1628.json,nfl_odds_vsin_20251012_1636.json,"Sun,October 12th","4:25 PM
+ Splits",Cincinnati Bengals vs  Green Bay Packers,GLD Nugget,+14 -110 | -14 -110,- | -,Cincinnati Bengals,Green Bay Packers,+14,-14,-,-,Oct 12 4:28PM,Oct 12 4:36PM
+nfl_odds_vsin_20251012_1628.json,nfl_odds_vsin_20251012_1636.json,"Sun,October 12th","4:25 PM
+ Splits",Cincinnati Bengals vs  Green Bay Packers,Caesars,+14 -110 | -14 -110,- | -,Cincinnati Bengals,Green Bay Packers,+14,-14,-,-,Oct 12 4:28PM,Oct 12 4:36PM
+nfl_odds_vsin_20251012_1628.json,nfl_odds_vsin_20251012_1636.json,"Sun,October 12th","4:25 PM
+ Splits",Cincinnati Bengals vs  Green Bay Packers,BetMGM,+14 -110 | -14 -110,- | -,Cincinnati Bengals,Green Bay Packers,+14,-14,-,-,Oct 12 4:28PM,Oct 12 4:36PM
+nfl_odds_vsin_20251012_1653.json,nfl_odds_vsin_20251012_1701.json,"Mon,October 13th","7:15 PM
+ Splits",Buffalo Bills vs  Atlanta Falcons,Caesars,-3.5 -110 | +3.5 -110,-3.5 -115 | +3.5 -105,Buffalo Bills,Atlanta Falcons,-3.5,+3.5,-3.5,+3.5,Oct 12 4:53PM,Oct 12 5:01PM
+nfl_odds_vsin_20251012_1744.json,nfl_odds_vsin_20251012_1805.json,"Sun,October 12th","8:20 PM
+ Splits",Detroit Lions vs  Kansas City Chiefs,Circa,+2.5 -105 | -2.5 -115,+2.5 +105 | -2.5 -125,Detroit Lions,Kansas City Chiefs,+2.5,-2.5,+2.5,-2.5,Oct 12 5:44PM,Oct 12 6:05PM
+nfl_odds_vsin_20251012_1744.json,nfl_odds_vsin_20251012_1805.json,"Sun,October 12th","8:20 PM
+ Splits",Detroit Lions vs  Kansas City Chiefs,GLD Nugget,+2.5 -110 | -2.5 -110,+2.5 -105 | -2.5 -115,Detroit Lions,Kansas City Chiefs,+2.5,-2.5,+2.5,-2.5,Oct 12 5:44PM,Oct 12 6:05PM
+nfl_odds_vsin_20251012_1744.json,nfl_odds_vsin_20251012_1805.json,"Sun,October 12th","8:20 PM
+ Splits",Detroit Lions vs  Kansas City Chiefs,Westgate,+2.5 +100 | -2.5 -116,+2.5 +105 | -2.5 -115,Detroit Lions,Kansas City Chiefs,+2.5,-2.5,+2.5,-2.5,Oct 12 5:44PM,Oct 12 6:05PM
+nfl_odds_vsin_20251012_1805.json,nfl_odds_vsin_20251012_1828.json,"Sun,October 12th","8:20 PM
+ Splits",Detroit Lions vs  Kansas City Chiefs,Wynn,+2.5 +100 | -2.5 -120,+2.5 +105 | -2.5 -125,Detroit Lions,Kansas City Chiefs,+2.5,-2.5,+2.5,-2.5,Oct 12 6:05PM,Oct 12 6:28PM
+nfl_odds_vsin_20251012_1805.json,nfl_odds_vsin_20251012_1828.json,"Sun,October 19th","9:30 AM
+ Splits",Los Angeles Rams vs  Jacksonville Jaguars,DK,-3.5 -110 | +3.5 -110,-3 -120 | +3 +100,Los Angeles Rams,Jacksonville Jaguars,-3.5,+3.5,-3,+3,Oct 12 6:05PM,Oct 12 6:28PM
+nfl_odds_vsin_20251012_1805.json,nfl_odds_vsin_20251012_1828.json,"Sun,October 19th","1:00 PM
+ Splits",New Orleans Saints vs  Chicago Bears,DK,+6 -110 | -6 -110,+5.5 -110 | -5.5 -110,New Orleans Saints,Chicago Bears,+6,-6,+5.5,-5.5,Oct 12 6:05PM,Oct 12 6:28PM
+nfl_odds_vsin_20251012_1805.json,nfl_odds_vsin_20251012_1828.json,"Sun,October 19th","1:00 PM
+ Splits",Philadelphia Eagles vs  Minnesota Vikings,DK,-1.5 -110 | +1.5 -110,-2.5 -110 | +2.5 -110,Philadelphia Eagles,Minnesota Vikings,-1.5,+1.5,-2.5,+2.5,Oct 12 6:05PM,Oct 12 6:28PM
+nfl_odds_vsin_20251012_1828.json,nfl_odds_vsin_20251012_1836.json,"Sun,October 12th","8:20 PM
+ Splits",Detroit Lions vs  Kansas City Chiefs,South Point,+2.5 -110 | -2.5 -110,+3 -110 | -3 -110,Detroit Lions,Kansas City Chiefs,+2.5,-2.5,+3,-3,Oct 12 6:28PM,Oct 12 6:36PM
+nfl_odds_vsin_20251012_1828.json,nfl_odds_vsin_20251012_1836.json,"Sun,October 12th","8:20 PM
+ Splits",Detroit Lions vs  Kansas City Chiefs,Caesars,+2.5 -105 | -2.5 -115,+2.5 +100 | -2.5 -120,Detroit Lions,Kansas City Chiefs,+2.5,-2.5,+2.5,-2.5,Oct 12 6:28PM,Oct 12 6:36PM
+nfl_odds_vsin_20251012_1828.json,nfl_odds_vsin_20251012_1836.json,"Sun,October 19th","1:00 PM
+ Splits",Carolina Panthers vs  New York Jets,DK,+2.5 -110 | -2.5 -110,+1.5 -115 | -1.5 -105,Carolina Panthers,New York Jets,+2.5,-2.5,+1.5,-1.5,Oct 12 6:28PM,Oct 12 6:36PM
+nfl_odds_vsin_20251012_1828.json,nfl_odds_vsin_20251012_1836.json,"Sun,October 19th","4:05 PM
+ Splits",Indianapolis Colts vs  Los Angeles Chargers,DK,-1.5 +102 | +1.5 -122,+1.5 -115 | -1.5 -105,Indianapolis Colts,Los Angeles Chargers,-1.5,+1.5,+1.5,-1.5,Oct 12 6:28PM,Oct 12 6:36PM
+nfl_odds_vsin_20251012_1828.json,nfl_odds_vsin_20251012_1836.json,"Sun,October 19th","4:05 PM
+ Splits",New York Giants vs  Denver Broncos,DK,+7.5 -115 | -7.5 -105,+7 +100 | -7 -120,New York Giants,Denver Broncos,+7.5,-7.5,+7,-7,Oct 12 6:28PM,Oct 12 6:36PM
+nfl_odds_vsin_20251012_1828.json,nfl_odds_vsin_20251012_1836.json,"Sun,October 19th","4:25 PM
+ Splits",Wash Commanders vs  Dallas Cowboys,DK,-2.5 -110 | +2.5 -110,-3 -110 | +3 -110,Wash Commanders,Dallas Cowboys,-2.5,+2.5,-3,+3,Oct 12 6:28PM,Oct 12 6:36PM
+nfl_odds_vsin_20251012_1828.json,nfl_odds_vsin_20251012_1836.json,"Mon,October 20th","10:00 PM
+ Splits",Houston Texans vs  Seattle Seahawks,DK,+2.5 -105 | -2.5 -115,+3 -120 | -3 +100,Houston Texans,Seattle Seahawks,+2.5,-2.5,+3,-3,Oct 12 6:28PM,Oct 12 6:36PM
+nfl_odds_vsin_20251012_1836.json,nfl_odds_vsin_20251012_1854.json,"Thu,October 16th","8:15 PM
+ Splits",Pittsburgh Steelers vs  Cincinnati Bengals,DK,-4.5 -110 | +4.5 -110,-6 -110 | +6 -110,Pittsburgh Steelers,Cincinnati Bengals,-4.5,+4.5,-6,+6,Oct 12 6:36PM,Oct 12 6:54PM
+nfl_odds_vsin_20251012_1836.json,nfl_odds_vsin_20251012_1854.json,"Sun,October 19th","1:00 PM
+ Splits",Miami Dolphins vs  Cleveland Browns,DK,+2.5 -110 | -2.5 -110,+1.5 -110 | -1.5 -110,Miami Dolphins,Cleveland Browns,+2.5,-2.5,+1.5,-1.5,Oct 12 6:36PM,Oct 12 6:54PM
+nfl_odds_vsin_20251012_1836.json,nfl_odds_vsin_20251012_1854.json,"Sun,October 19th","1:00 PM
+ Splits",New England Patriots vs  Tennessee Titans,DK,-6 -110 | +6 -110,-6.5 -120 | +6.5 +100,New England Patriots,Tennessee Titans,-6,+6,-6.5,+6.5,Oct 12 6:36PM,Oct 12 6:54PM
+nfl_odds_vsin_20251012_1836.json,nfl_odds_vsin_20251012_1854.json,"Sun,October 19th","4:25 PM
+ Splits",Green Bay Packers vs  Arizona Cardinals,DK,-5.5 -110 | +5.5 -110,-7.5 -105 | +7.5 -115,Green Bay Packers,Arizona Cardinals,-5.5,+5.5,-7.5,+7.5,Oct 12 6:36PM,Oct 12 6:54PM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 12th","8:20 PM
+ Splits",Detroit Lions vs  Kansas City Chiefs,South Point,+3 -110 | -3 -110,+2.5 -110 | -2.5 -110,Detroit Lions,Kansas City Chiefs,+3,-3,+2.5,-2.5,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 12th","8:20 PM
+ Splits",Detroit Lions vs  Kansas City Chiefs,GLD Nugget,+2.5 -105 | -2.5 -115,- | -,Detroit Lions,Kansas City Chiefs,+2.5,-2.5,-,-,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 12th","8:20 PM
+ Splits",Detroit Lions vs  Kansas City Chiefs,Wynn,+2.5 +105 | -2.5 -125,+2.5 -105 | -2.5 -115,Detroit Lions,Kansas City Chiefs,+2.5,-2.5,+2.5,-2.5,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 12th","8:20 PM
+ Splits",Detroit Lions vs  Kansas City Chiefs,Caesars,+2.5 +100 | -2.5 -120,- | -,Detroit Lions,Kansas City Chiefs,+2.5,-2.5,-,-,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 12th","8:20 PM
+ Splits",Detroit Lions vs  Kansas City Chiefs,BetMGM,+2.5 -110 | -2.5 -110,- | -,Detroit Lions,Kansas City Chiefs,+2.5,-2.5,-,-,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Mon,October 13th","7:15 PM
+ Splits",Buffalo Bills vs  Atlanta Falcons,Circa,-3.5 -112 | +3.5 -108,-3.5 -115 | +3.5 -105,Buffalo Bills,Atlanta Falcons,-3.5,+3.5,-3.5,+3.5,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Mon,October 13th","8:15 PM
+ Splits",Chicago Bears vs  Wash Commanders,GLD Nugget,+5 -110 | -5 -110,+5.5 -110 | -5.5 -110,Chicago Bears,Wash Commanders,+5,-5,+5.5,-5.5,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Thu,October 16th","8:15 PM
+ Splits",Pittsburgh Steelers vs  Cincinnati Bengals,DK,-6 -110 | +6 -110,-5.5 -112 | +5.5 -108,Pittsburgh Steelers,Cincinnati Bengals,-6,+6,-5.5,+5.5,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Thu,October 16th","8:15 PM
+ Splits",Pittsburgh Steelers vs  Cincinnati Bengals,Circa,- | -,-5.5 -110 | +5.5 -110,Pittsburgh Steelers,Cincinnati Bengals,-,-,-5.5,+5.5,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Thu,October 16th","8:15 PM
+ Splits",Pittsburgh Steelers vs  Cincinnati Bengals,South Point,- | -,-5.5 -110 | +5.5 -110,Pittsburgh Steelers,Cincinnati Bengals,-,-,-5.5,+5.5,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Thu,October 16th","8:15 PM
+ Splits",Pittsburgh Steelers vs  Cincinnati Bengals,Westgate,- | -,-5 -110 | +5 -110,Pittsburgh Steelers,Cincinnati Bengals,-,-,-5,+5,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Thu,October 16th","8:15 PM
+ Splits",Pittsburgh Steelers vs  Cincinnati Bengals,Wynn,- | -,-5 -110 | +5 -110,Pittsburgh Steelers,Cincinnati Bengals,-,-,-5,+5,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Thu,October 16th","8:15 PM
+ Splits",Pittsburgh Steelers vs  Cincinnati Bengals,Stations,-4 -110 | +4 -110,-5 -110 | +5 -110,Pittsburgh Steelers,Cincinnati Bengals,-4,+4,-5,+5,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Thu,October 16th","8:15 PM
+ Splits",Pittsburgh Steelers vs  Cincinnati Bengals,Caesars,-5 -110 | +5 -110,-5.5 -115 | +5.5 -105,Pittsburgh Steelers,Cincinnati Bengals,-5,+5,-5.5,+5.5,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Thu,October 16th","8:15 PM
+ Splits",Pittsburgh Steelers vs  Cincinnati Bengals,BetMGM,- | -,-5.5 -115 | +5.5 -105,Pittsburgh Steelers,Cincinnati Bengals,-,-,-5.5,+5.5,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","9:30 AM
+ Splits",Los Angeles Rams vs  Jacksonville Jaguars,DK,-3 -120 | +3 +100,-3 -118 | +3 -102,Los Angeles Rams,Jacksonville Jaguars,-3,+3,-3,+3,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","9:30 AM
+ Splits",Los Angeles Rams vs  Jacksonville Jaguars,Circa,- | -,-2.5 -115 | +2.5 -105,Los Angeles Rams,Jacksonville Jaguars,-,-,-2.5,+2.5,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","9:30 AM
+ Splits",Los Angeles Rams vs  Jacksonville Jaguars,South Point,- | -,-3 -110 | +3 -110,Los Angeles Rams,Jacksonville Jaguars,-,-,-3,+3,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","9:30 AM
+ Splits",Los Angeles Rams vs  Jacksonville Jaguars,Westgate,- | -,-3 -110 | +3 -110,Los Angeles Rams,Jacksonville Jaguars,-,-,-3,+3,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","9:30 AM
+ Splits",Los Angeles Rams vs  Jacksonville Jaguars,Wynn,- | -,-3 -115 | +3 -105,Los Angeles Rams,Jacksonville Jaguars,-,-,-3,+3,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","9:30 AM
+ Splits",Los Angeles Rams vs  Jacksonville Jaguars,Stations,-3.5 -110 | +3.5 -110,- | -,Los Angeles Rams,Jacksonville Jaguars,-3.5,+3.5,-,-,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","9:30 AM
+ Splits",Los Angeles Rams vs  Jacksonville Jaguars,Caesars,-3.5 -105 | +3.5 -115,-3 -110 | +3 -110,Los Angeles Rams,Jacksonville Jaguars,-3.5,+3.5,-3,+3,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","9:30 AM
+ Splits",Los Angeles Rams vs  Jacksonville Jaguars,BetMGM,- | -,-3 -115 | +3 -105,Los Angeles Rams,Jacksonville Jaguars,-,-,-3,+3,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","1:00 PM
+ Splits",Las Vegas Raiders vs  Kansas City Chiefs,DK,+10.5 -110 | -10.5 -110,+11.5 -115 | -11.5 -105,Las Vegas Raiders,Kansas City Chiefs,+10.5,-10.5,+11.5,-11.5,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","1:00 PM
+ Splits",Las Vegas Raiders vs  Kansas City Chiefs,Caesars,+10.5 -110 | -10.5 -110,+11.5 -115 | -11.5 -105,Las Vegas Raiders,Kansas City Chiefs,+10.5,-10.5,+11.5,-11.5,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","1:00 PM
+ Splits",Miami Dolphins vs  Cleveland Browns,DK,+1.5 -110 | -1.5 -110,+2.5 -112 | -2.5 -108,Miami Dolphins,Cleveland Browns,+1.5,-1.5,+2.5,-2.5,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","1:00 PM
+ Splits",Miami Dolphins vs  Cleveland Browns,Circa,- | -,+2 -110 | -2 -110,Miami Dolphins,Cleveland Browns,-,-,+2,-2,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","1:00 PM
+ Splits",Miami Dolphins vs  Cleveland Browns,South Point,- | -,+2 -110 | -2 -110,Miami Dolphins,Cleveland Browns,-,-,+2,-2,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","1:00 PM
+ Splits",Miami Dolphins vs  Cleveland Browns,Westgate,- | -,+2.5 -110 | -2.5 -110,Miami Dolphins,Cleveland Browns,-,-,+2.5,-2.5,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","1:00 PM
+ Splits",Miami Dolphins vs  Cleveland Browns,Wynn,- | -,+2 -110 | -2 -110,Miami Dolphins,Cleveland Browns,-,-,+2,-2,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","1:00 PM
+ Splits",Miami Dolphins vs  Cleveland Browns,Stations,+3 -120 | -3 +100,+2 -110 | -2 -110,Miami Dolphins,Cleveland Browns,+3,-3,+2,-2,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","1:00 PM
+ Splits",Miami Dolphins vs  Cleveland Browns,Caesars,+2.5 -105 | -2.5 -115,+2.5 -110 | -2.5 -110,Miami Dolphins,Cleveland Browns,+2.5,-2.5,+2.5,-2.5,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","1:00 PM
+ Splits",Miami Dolphins vs  Cleveland Browns,BetMGM,- | -,+2.5 -110 | -2.5 -110,Miami Dolphins,Cleveland Browns,-,-,+2.5,-2.5,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","1:00 PM
+ Splits",New England Patriots vs  Tennessee Titans,Circa,- | -,-7 -110 | +7 -110,New England Patriots,Tennessee Titans,-,-,-7,+7,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","1:00 PM
+ Splits",New England Patriots vs  Tennessee Titans,South Point,- | -,-6.5 -110 | +6.5 -110,New England Patriots,Tennessee Titans,-,-,-6.5,+6.5,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","1:00 PM
+ Splits",New England Patriots vs  Tennessee Titans,Westgate,- | -,-6.5 -110 | +6.5 -110,New England Patriots,Tennessee Titans,-,-,-6.5,+6.5,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","1:00 PM
+ Splits",New England Patriots vs  Tennessee Titans,Wynn,- | -,-6.5 -110 | +6.5 -110,New England Patriots,Tennessee Titans,-,-,-6.5,+6.5,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","1:00 PM
+ Splits",New England Patriots vs  Tennessee Titans,Stations,-6 -110 | +6 -110,-6.5 -110 | +6.5 -110,New England Patriots,Tennessee Titans,-6,+6,-6.5,+6.5,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","1:00 PM
+ Splits",New England Patriots vs  Tennessee Titans,Caesars,-6 -110 | +6 -110,-6.5 -120 | +6.5 +100,New England Patriots,Tennessee Titans,-6,+6,-6.5,+6.5,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","1:00 PM
+ Splits",New England Patriots vs  Tennessee Titans,BetMGM,- | -,-6.5 -115 | +6.5 -105,New England Patriots,Tennessee Titans,-,-,-6.5,+6.5,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","1:00 PM
+ Splits",New Orleans Saints vs  Chicago Bears,Circa,- | -,+5.5 -110 | -5.5 -110,New Orleans Saints,Chicago Bears,-,-,+5.5,-5.5,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","1:00 PM
+ Splits",New Orleans Saints vs  Chicago Bears,South Point,- | -,+5.5 -110 | -5.5 -110,New Orleans Saints,Chicago Bears,-,-,+5.5,-5.5,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","1:00 PM
+ Splits",New Orleans Saints vs  Chicago Bears,Westgate,- | -,+5.5 -110 | -5.5 -110,New Orleans Saints,Chicago Bears,-,-,+5.5,-5.5,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","1:00 PM
+ Splits",New Orleans Saints vs  Chicago Bears,Wynn,- | -,+6 -110 | -6 -110,New Orleans Saints,Chicago Bears,-,-,+6,-6,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","1:00 PM
+ Splits",New Orleans Saints vs  Chicago Bears,Caesars,+6 -110 | -6 -110,+5.5 -110 | -5.5 -110,New Orleans Saints,Chicago Bears,+6,-6,+5.5,-5.5,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","1:00 PM
+ Splits",New Orleans Saints vs  Chicago Bears,BetMGM,- | -,+5.5 -110 | -5.5 -110,New Orleans Saints,Chicago Bears,-,-,+5.5,-5.5,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","1:00 PM
+ Splits",Philadelphia Eagles vs  Minnesota Vikings,DK,-2.5 -110 | +2.5 -110,-2.5 -105 | +2.5 -115,Philadelphia Eagles,Minnesota Vikings,-2.5,+2.5,-2.5,+2.5,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","1:00 PM
+ Splits",Philadelphia Eagles vs  Minnesota Vikings,Circa,- | -,-2.5 -110 | +2.5 -110,Philadelphia Eagles,Minnesota Vikings,-,-,-2.5,+2.5,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","1:00 PM
+ Splits",Philadelphia Eagles vs  Minnesota Vikings,South Point,- | -,-2.5 -110 | +2.5 -110,Philadelphia Eagles,Minnesota Vikings,-,-,-2.5,+2.5,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","1:00 PM
+ Splits",Philadelphia Eagles vs  Minnesota Vikings,Westgate,- | -,-2.5 -110 | +2.5 -110,Philadelphia Eagles,Minnesota Vikings,-,-,-2.5,+2.5,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","1:00 PM
+ Splits",Philadelphia Eagles vs  Minnesota Vikings,Wynn,- | -,-2.5 -110 | +2.5 -110,Philadelphia Eagles,Minnesota Vikings,-,-,-2.5,+2.5,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","1:00 PM
+ Splits",Philadelphia Eagles vs  Minnesota Vikings,Stations,-3 -110 | +3 -110,-2.5 -110 | +2.5 -110,Philadelphia Eagles,Minnesota Vikings,-3,+3,-2.5,+2.5,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","1:00 PM
+ Splits",Philadelphia Eagles vs  Minnesota Vikings,Caesars,-2.5 -120 | +2.5 +100,-2.5 -110 | +2.5 -110,Philadelphia Eagles,Minnesota Vikings,-2.5,+2.5,-2.5,+2.5,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","1:00 PM
+ Splits",Philadelphia Eagles vs  Minnesota Vikings,BetMGM,- | -,-2.5 -110 | +2.5 -110,Philadelphia Eagles,Minnesota Vikings,-,-,-2.5,+2.5,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","1:00 PM
+ Splits",Carolina Panthers vs  New York Jets,Circa,- | -,+1 -110 | -1 -110,Carolina Panthers,New York Jets,-,-,+1,-1,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","1:00 PM
+ Splits",Carolina Panthers vs  New York Jets,South Point,- | -,+1 -110 | -1 -110,Carolina Panthers,New York Jets,-,-,+1,-1,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","1:00 PM
+ Splits",Carolina Panthers vs  New York Jets,Westgate,- | -,+1 -110 | -1 -110,Carolina Panthers,New York Jets,-,-,+1,-1,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","1:00 PM
+ Splits",Carolina Panthers vs  New York Jets,Wynn,- | -,+1 -110 | -1 -110,Carolina Panthers,New York Jets,-,-,+1,-1,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","1:00 PM
+ Splits",Carolina Panthers vs  New York Jets,Stations,+1.5 -110 | -1.5 -110,+1 -110 | -1 -110,Carolina Panthers,New York Jets,+1.5,-1.5,+1,-1,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","1:00 PM
+ Splits",Carolina Panthers vs  New York Jets,Caesars,+2.5 -110 | -2.5 -110,+1 -110 | -1 -110,Carolina Panthers,New York Jets,+2.5,-2.5,+1,-1,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","1:00 PM
+ Splits",Carolina Panthers vs  New York Jets,BetMGM,- | -,+1.5 -120 | -1.5 +100,Carolina Panthers,New York Jets,-,-,+1.5,-1.5,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","4:05 PM
+ Splits",Indianapolis Colts vs  Los Angeles Chargers,DK,+1.5 -115 | -1.5 -105,+1.5 -120 | -1.5 +100,Indianapolis Colts,Los Angeles Chargers,+1.5,-1.5,+1.5,-1.5,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","4:05 PM
+ Splits",Indianapolis Colts vs  Los Angeles Chargers,Circa,- | -,PK -110 | PK -110,Indianapolis Colts,Los Angeles Chargers,-,-,PK,PK,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","4:05 PM
+ Splits",Indianapolis Colts vs  Los Angeles Chargers,South Point,- | -,PK -110 | PK -110,Indianapolis Colts,Los Angeles Chargers,-,-,PK,PK,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","4:05 PM
+ Splits",Indianapolis Colts vs  Los Angeles Chargers,Westgate,- | -,+1 -110 | -1 -110,Indianapolis Colts,Los Angeles Chargers,-,-,+1,-1,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","4:05 PM
+ Splits",Indianapolis Colts vs  Los Angeles Chargers,Wynn,- | -,+1.5 -110 | -1.5 -110,Indianapolis Colts,Los Angeles Chargers,-,-,+1.5,-1.5,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","4:05 PM
+ Splits",Indianapolis Colts vs  Los Angeles Chargers,Stations,PK -110 | PK -110,+1 -110 | -1 -110,Indianapolis Colts,Los Angeles Chargers,PK,PK,+1,-1,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","4:05 PM
+ Splits",Indianapolis Colts vs  Los Angeles Chargers,Caesars,-1 -110 | +1 -110,PK -110 | PK -110,Indianapolis Colts,Los Angeles Chargers,-1,+1,PK,PK,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","4:05 PM
+ Splits",Indianapolis Colts vs  Los Angeles Chargers,BetMGM,- | -,+1.5 -120 | -1.5 +100,Indianapolis Colts,Los Angeles Chargers,-,-,+1.5,-1.5,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","4:05 PM
+ Splits",New York Giants vs  Denver Broncos,Circa,- | -,+7 -115 | -7 -105,New York Giants,Denver Broncos,-,-,+7,-7,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","4:05 PM
+ Splits",New York Giants vs  Denver Broncos,South Point,- | -,+7 -110 | -7 -110,New York Giants,Denver Broncos,-,-,+7,-7,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","4:05 PM
+ Splits",New York Giants vs  Denver Broncos,Westgate,- | -,+7 -110 | -7 -110,New York Giants,Denver Broncos,-,-,+7,-7,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","4:05 PM
+ Splits",New York Giants vs  Denver Broncos,Wynn,- | -,+7 +100 | -7 -120,New York Giants,Denver Broncos,-,-,+7,-7,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","4:05 PM
+ Splits",New York Giants vs  Denver Broncos,Stations,+8.5 -110 | -8.5 -110,+7.5 -110 | -7.5 -110,New York Giants,Denver Broncos,+8.5,-8.5,+7.5,-7.5,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","4:05 PM
+ Splits",New York Giants vs  Denver Broncos,Caesars,+8 -110 | -8 -110,+7 -105 | -7 -115,New York Giants,Denver Broncos,+8,-8,+7,-7,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","4:05 PM
+ Splits",New York Giants vs  Denver Broncos,BetMGM,- | -,+7 -110 | -7 -110,New York Giants,Denver Broncos,-,-,+7,-7,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","4:25 PM
+ Splits",Wash Commanders vs  Dallas Cowboys,DK,-3 -110 | +3 -110,-2.5 -118 | +2.5 -102,Wash Commanders,Dallas Cowboys,-3,+3,-2.5,+2.5,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","4:25 PM
+ Splits",Wash Commanders vs  Dallas Cowboys,Circa,- | -,-2.5 -110 | +2.5 -110,Wash Commanders,Dallas Cowboys,-,-,-2.5,+2.5,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","4:25 PM
+ Splits",Wash Commanders vs  Dallas Cowboys,South Point,- | -,-2.5 -110 | +2.5 -110,Wash Commanders,Dallas Cowboys,-,-,-2.5,+2.5,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","4:25 PM
+ Splits",Wash Commanders vs  Dallas Cowboys,Westgate,- | -,-2.5 -110 | +2.5 -110,Wash Commanders,Dallas Cowboys,-,-,-2.5,+2.5,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","4:25 PM
+ Splits",Wash Commanders vs  Dallas Cowboys,BetMGM,- | -,-2.5 -110 | +2.5 -110,Wash Commanders,Dallas Cowboys,-,-,-2.5,+2.5,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","4:25 PM
+ Splits",Green Bay Packers vs  Arizona Cardinals,DK,-7.5 -105 | +7.5 -115,-7 -110 | +7 -110,Green Bay Packers,Arizona Cardinals,-7.5,+7.5,-7,+7,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","4:25 PM
+ Splits",Green Bay Packers vs  Arizona Cardinals,Circa,- | -,-6.5 -110 | +6.5 -110,Green Bay Packers,Arizona Cardinals,-,-,-6.5,+6.5,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","4:25 PM
+ Splits",Green Bay Packers vs  Arizona Cardinals,Westgate,- | -,-6.5 -110 | +6.5 -110,Green Bay Packers,Arizona Cardinals,-,-,-6.5,+6.5,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","4:25 PM
+ Splits",Green Bay Packers vs  Arizona Cardinals,Stations,-5.5 -110 | +5.5 -110,- | -,Green Bay Packers,Arizona Cardinals,-5.5,+5.5,-,-,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","4:25 PM
+ Splits",Green Bay Packers vs  Arizona Cardinals,Caesars,-6 -110 | +6 -110,-6.5 -110 | +6.5 -110,Green Bay Packers,Arizona Cardinals,-6,+6,-6.5,+6.5,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","4:25 PM
+ Splits",Green Bay Packers vs  Arizona Cardinals,BetMGM,- | -,-6.5 -110 | +6.5 -110,Green Bay Packers,Arizona Cardinals,-,-,-6.5,+6.5,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","8:20 PM
+ Splits",Atlanta Falcons vs  San Francisco 49ers,DK,+4.5 -110 | -4.5 -110,+3.5 -115 | -3.5 -105,Atlanta Falcons,San Francisco 49ers,+4.5,-4.5,+3.5,-3.5,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","8:20 PM
+ Splits",Atlanta Falcons vs  San Francisco 49ers,Circa,- | -,+3 -110 | -3 -110,Atlanta Falcons,San Francisco 49ers,-,-,+3,-3,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","8:20 PM
+ Splits",Atlanta Falcons vs  San Francisco 49ers,Westgate,- | -,+3 -110 | -3 -110,Atlanta Falcons,San Francisco 49ers,-,-,+3,-3,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","8:20 PM
+ Splits",Atlanta Falcons vs  San Francisco 49ers,Stations,+4 -110 | -4 -110,- | -,Atlanta Falcons,San Francisco 49ers,+4,-4,-,-,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","8:20 PM
+ Splits",Atlanta Falcons vs  San Francisco 49ers,Caesars,+4.5 -110 | -4.5 -110,+3 -105 | -3 -115,Atlanta Falcons,San Francisco 49ers,+4.5,-4.5,+3,-3,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Sun,October 19th","8:20 PM
+ Splits",Atlanta Falcons vs  San Francisco 49ers,BetMGM,- | -,+3 -105 | -3 -115,Atlanta Falcons,San Francisco 49ers,-,-,+3,-3,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Mon,October 20th","7:00 PM
+ Splits",Tampa Bay Buccaneers vs  Detroit Lions,DK,+4.5 -105 | -4.5 -115,+5.5 -110 | -5.5 -110,Tampa Bay Buccaneers,Detroit Lions,+4.5,-4.5,+5.5,-5.5,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Mon,October 20th","7:00 PM
+ Splits",Tampa Bay Buccaneers vs  Detroit Lions,Stations,+4.5 -110 | -4.5 -110,- | -,Tampa Bay Buccaneers,Detroit Lions,+4.5,-4.5,-,-,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Mon,October 20th","7:00 PM
+ Splits",Tampa Bay Buccaneers vs  Detroit Lions,Caesars,+4.5 -110 | -4.5 -110,+5.5 -110 | -5.5 -110,Tampa Bay Buccaneers,Detroit Lions,+4.5,-4.5,+5.5,-5.5,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Mon,October 20th","7:00 PM
+ Splits",Tampa Bay Buccaneers vs  Detroit Lions,BetMGM,- | -,+5.5 -110 | -5.5 -110,Tampa Bay Buccaneers,Detroit Lions,-,-,+5.5,-5.5,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Mon,October 20th","10:00 PM
+ Splits",Houston Texans vs  Seattle Seahawks,Circa,- | -,+3 +100 | -3 -120,Houston Texans,Seattle Seahawks,-,-,+3,-3,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Mon,October 20th","10:00 PM
+ Splits",Houston Texans vs  Seattle Seahawks,South Point,- | -,+3 -110 | -3 -110,Houston Texans,Seattle Seahawks,-,-,+3,-3,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Mon,October 20th","10:00 PM
+ Splits",Houston Texans vs  Seattle Seahawks,Westgate,- | -,+3 -110 | -3 -110,Houston Texans,Seattle Seahawks,-,-,+3,-3,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Mon,October 20th","10:00 PM
+ Splits",Houston Texans vs  Seattle Seahawks,Wynn,- | -,+3 -115 | -3 -105,Houston Texans,Seattle Seahawks,-,-,+3,-3,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Mon,October 20th","10:00 PM
+ Splits",Houston Texans vs  Seattle Seahawks,Caesars,+2.5 -105 | -2.5 -115,+3 -110 | -3 -110,Houston Texans,Seattle Seahawks,+2.5,-2.5,+3,-3,Oct 12 6:54PM,Oct 13 3:20AM
+nfl_odds_vsin_20251012_1854.json,nfl_odds_vsin_20251013_0320.json,"Mon,October 20th","10:00 PM
+ Splits",Houston Texans vs  Seattle Seahawks,BetMGM,- | -,+3 -110 | -3 -110,Houston Texans,Seattle Seahawks,-,-,+3,-3,Oct 12 6:54PM,Oct 13 3:20AM
 nfl_odds_vsin_20251013_0454.json,nfl_odds_vsin_20251015_2219.json,"Sun,October 19th","1:00 PM
  Splits",Las Vegas Raiders vs  Kansas City Chiefs,DK Open,+10.5 -110 | -10.5 -110,+2.5 -110 | -2.5 -110,Las Vegas Raiders,Kansas City Chiefs,+10.5,-10.5,+2.5,-2.5,Oct 13 4:54AM,Oct 15 10:19PM
 nfl_odds_vsin_20251013_0454.json,nfl_odds_vsin_20251015_2219.json,"Sun,October 19th","1:00 PM

@@ -272,6 +272,29 @@ def create_styled_dataframe(leaderboard):
 #     unsafe_allow_html=True
 # )
         
+# Add download button to sidebar
+with st.sidebar:
+    # st.markdown("---")
+    st.write("")
+    st.markdown("### Export Leader Tables")
+
+    # PDF download button in sidebar
+    pdf_filename = f"week{current_week.replace('Week ', '').lower()}_leader_tables.pdf"
+    pdf_path = os.path.join(BASE_DIR, "data/projections", pdf_filename)
+
+    if os.path.exists(pdf_path):
+        with open(pdf_path, "rb") as pdf_file:
+            pdf_data = pdf_file.read()
+        st.download_button(
+            label="📄 Download PDF",
+            data=pdf_data,
+            file_name=pdf_filename,
+            mime="application/pdf",
+            help=f"Download the {current_week} leader tables PDF report"
+        )
+    else:
+        st.info("PDF report not available for this week")
+
 # Create tabs for each position
 tabs = st.tabs(tab_names)
 
@@ -400,6 +423,29 @@ for tab, (tab_name, boards) in zip(tabs, zip(tab_names, tab_boards)):
         else:
             st.info(f"No {tab_name.lower()} data available for this week.")
 
+# Add download button at bottom of page
+# st.markdown("---")
+st.write("")
+st.write("")
+col1, col2, col3 = st.columns([1, 1, 1])
+with col2:
+    # PDF download button at bottom
+    pdf_filename = f"week{current_week.replace('Week ', '').lower()}_leader_tables.pdf"
+    pdf_path = os.path.join(BASE_DIR, "data/projections", pdf_filename)
+
+    if os.path.exists(pdf_path):
+        with open(pdf_path, "rb") as pdf_file:
+            pdf_data = pdf_file.read()
+        st.download_button(
+            label="📄 Download PDF",
+            data=pdf_data,
+            file_name=pdf_filename,
+            mime="application/pdf",
+            help=f"Download the {current_week} leader tables PDF report",
+            use_container_width=True
+        )
+    else:
+        st.info("PDF report not available for this week")
 
 # Footer
 st.markdown("""

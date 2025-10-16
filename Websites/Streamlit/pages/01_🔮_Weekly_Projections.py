@@ -178,6 +178,29 @@ selected_matchup = st.sidebar.selectbox(
     help="Choose which game to view projections for"
 )
 
+# Add download button to sidebar after week selection
+with st.sidebar:
+    # st.markdown("---")
+    st.markdown("### Export Props Report")
+
+    # HTML report download button in sidebar
+    html_filename = f"week{selected_week}_complete_props_report.html"
+    html_path = os.path.join(BASE_DIR, "data/projections", html_filename)
+
+    if os.path.exists(html_path):
+        with open(html_path, "rb") as html_file:
+            html_data = html_file.read()
+        st.download_button(
+            label="📄 Download Report",
+            data=html_data,
+            file_name=html_filename,
+            mime="text/html",
+            help=f"Download the {selected_week_display} complete props HTML report"
+        )
+    else:
+        st.info("HTML report not available for this week")
+
+
 # Apply matchup filter
 if selected_matchup:
     team1, team2 = selected_matchup.split(" @ ")
@@ -364,6 +387,29 @@ else:
                 hide_index=True
             )
             # st.markdown('</div>', unsafe_allow_html=True)
+
+# Add download button at bottom of page
+st.write("")
+st.write("")
+col1, col2, col3 = st.columns([1, 1, 1])
+with col2:
+    # HTML report download button at bottom
+    html_filename = f"week{selected_week}_complete_props_report.html"
+    html_path = os.path.join(BASE_DIR, "data/projections", html_filename)
+
+    if os.path.exists(html_path):
+        with open(html_path, "rb") as html_file:
+            html_data = html_file.read()
+        st.download_button(
+            label="📄 Download Report",
+            data=html_data,
+            file_name=html_filename,
+            mime="text/html",
+            help=f"Download the {selected_week_display} complete props HTML report",
+            use_container_width=True
+        )
+    else:
+        st.info("HTML report not available for this week")
 
 # Footer
 st.divider()
