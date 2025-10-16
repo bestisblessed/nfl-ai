@@ -18,8 +18,18 @@ st.set_page_config(
     layout="wide"
 )
 
-### Data ###
-st.title('Team Dashboard')
+st.markdown(f"""
+    <div style='text-align: center;'>
+        <div style='font-size: 3.1rem; font-weight: 800; padding-bottom: 0.5rem;'>
+            Team Dashboard
+        </div>
+        <div style='color: #7f8c8d; font-size: 1rem; margin-top: 0; line-height: 1.2;'>
+            Comprehensive team performance metrics and statistical analysis
+        </div>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
 # Load data using cached function
 @st.cache_data(show_spinner=False)

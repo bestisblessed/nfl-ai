@@ -21,7 +21,18 @@ st.set_page_config(page_title="Touchdowns Allowed Per Position", layout="wide")
 col1, col2, col3 = st.columns([1, 6, 1])
 
 with col2:
-    st.title("Touchdowns Allowed Per Position")
+    st.markdown(f"""
+        <div style='text-align: center;'>
+            <div style='font-size: 3.1rem; font-weight: 800; padding-bottom: 0.5rem;'>
+                Touchdowns Allowed Per Position
+            </div>
+            <div style='color: #7f8c8d; font-size: 1rem; margin-top: 0; line-height: 1.2;'>
+                Defensive scoring analysis and touchdown vulnerability metrics
+            </div>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
     st.divider()
     st.write(' ')
 

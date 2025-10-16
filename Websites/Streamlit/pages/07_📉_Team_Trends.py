@@ -11,8 +11,18 @@ st.set_page_config(
     layout="wide"
 )
 
-### --- Title and Data --- ###
-st.title('General Trends')
+st.markdown(f"""
+    <div style='text-align: center;'>
+        <div style='font-size: 3.1rem; font-weight: 800; padding-bottom: 0.5rem;'>
+            Team Trends
+        </div>
+        <div style='color: #7f8c8d; font-size: 1rem; margin-top: 0; line-height: 1.2;'>
+            Historical team performance analysis and statistical insights
+        </div>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
 # Load data using cached function
 @st.cache_data(show_spinner=False)

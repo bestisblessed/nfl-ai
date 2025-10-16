@@ -14,7 +14,18 @@ st.set_page_config(
 # - add dropdowns for each division
 # - add team logo pictures
 
-st.title('2025 NFL Season Division Standings')
+st.markdown(f"""
+    <div style='text-align: center;'>
+        <div style='font-size: 3.1rem; font-weight: 800; padding-bottom: 0.5rem;'>
+            NFL Standings
+        </div>
+        <div style='color: #7f8c8d; font-size: 1rem; margin-top: 0; line-height: 1.2;'>
+            Division rankings and team performance statistics
+        </div>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
 # Load data using cached function
 @st.cache_data(show_spinner=False)

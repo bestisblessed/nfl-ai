@@ -22,8 +22,18 @@ st.set_page_config(
 # df_games = pd.read_csv(os.path.join(base_dir, 'Games.csv'))
 # df_playerstats = pd.read_csv(os.path.join(base_dir, 'PlayerStats.csv'))
 
-### --- Title and Data --- ###
-st.title('Player Trends')
+st.markdown(f"""
+    <div style='text-align: center;'>
+        <div style='font-size: 3.1rem; font-weight: 800; padding-bottom: 0.5rem;'>
+            Player Trends
+        </div>
+        <div style='color: #7f8c8d; font-size: 1rem; margin-top: 0; line-height: 1.2;'>
+            Advanced analytics and statistical trends across player positions
+        </div>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
 # Load data using cached function
 @st.cache_data(show_spinner=False)

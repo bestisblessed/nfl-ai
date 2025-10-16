@@ -16,8 +16,18 @@ st.set_page_config(
     # layout="centered"
 )
 
-# Set up the page
-st.title('Player Dashboard')
+st.markdown(f"""
+    <div style='text-align: center;'>
+        <div style='font-size: 3.1rem; font-weight: 800; padding-bottom: 0.5rem;'>
+            Player Dashboard
+        </div>
+        <div style='color: #7f8c8d; font-size: 1rem; margin-top: 0; line-height: 1.2;'>
+            Comprehensive player performance analytics and historical trends
+        </div>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
 # Always use 2025 data
 selected_season = 2025
