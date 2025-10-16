@@ -74,31 +74,32 @@ else:
 conn.close()
 
 ### Team Logos Download ###
-shutil.rmtree('images/team-logos', ignore_errors=True)
-save_dir = "images/team-logos"
-os.makedirs(save_dir, exist_ok=True)
-teams = {
-    'crd': 'ARI', 'atl': 'ATL', 'rav': 'BAL', 'buf': 'BUF', 'car': 'CAR',
-    'chi': 'CHI', 'cin': 'CIN', 'cle': 'CLE', 'dal': 'DAL', 'den': 'DEN',
-    'det': 'DET', 'gnb': 'GB', 'htx': 'HOU', 'clt': 'IND', 'jax': 'JAX',
-    'kan': 'KC', 'sdg': 'LAC', 'ram': 'LAR', 'rai': 'LVR', 'mia': 'MIA',
-    'min': 'MIN', 'nwe': 'NE', 'nor': 'NO', 'nyg': 'NYG', 'nyj': 'NYJ',
-    'phi': 'PHI', 'pit': 'PIT', 'sea': 'SEA', 'sfo': 'SF', 'tam': 'TB',
-    'oti': 'TEN', 'was': 'WAS'
-}
-base_url = "https://cdn.ssref.net/req/202409272/tlogo/pfr/"
-def download_image(team_code, team_name):
-    url = f"{base_url}{team_code}.png"
-    response = requests.get(url)
-    if response.status_code == 200:
-        with open(os.path.join(save_dir, f"{team_name}.png"), 'wb') as f:
-            f.write(response.content)
-        print(f"Downloaded: {team_name}.png")
-    else:
-        print(f"Failed to download: {team_name}.png")
-for team_code, team_name in teams.items():
-    download_image(team_code, team_name)
-print("All team logos downloaded successfully.")
+# COMMENTED OUT TO PRESERVE EXISTING TEAM LOGO IMAGES
+# shutil.rmtree('images/team-logos', ignore_errors=True)
+# save_dir = "images/team-logos"
+# os.makedirs(save_dir, exist_ok=True)
+# teams = {
+#     'crd': 'ARI', 'atl': 'ATL', 'rav': 'BAL', 'buf': 'BUF', 'car': 'CAR',
+#     'chi': 'CHI', 'cin': 'CIN', 'cle': 'CLE', 'dal': 'DAL', 'den': 'DEN',
+#     'det': 'DET', 'gnb': 'GB', 'htx': 'HOU', 'clt': 'IND', 'jax': 'JAX',
+#     'kan': 'KC', 'sdg': 'LAC', 'ram': 'LAR', 'rai': 'LVR', 'mia': 'MIA',
+#     'min': 'MIN', 'nwe': 'NE', 'nor': 'NO', 'nyg': 'NYG', 'nyj': 'NYJ',
+#     'phi': 'PHI', 'pit': 'PIT', 'sea': 'SEA', 'sfo': 'SF', 'tam': 'TB',
+#     'oti': 'TEN', 'was': 'WAS'
+# }
+# base_url = "https://cdn.ssref.net/req/202409272/tlogo/pfr/"
+# def download_image(team_code, team_name):
+#     url = f"{base_url}{team_code}.png"
+#     response = requests.get(url)
+#     if response.status_code == 200:
+#         with open(os.path.join(save_dir, f"{team_name}.png"), 'wb') as f:
+#             f.write(response.content)
+#         print(f"Downloaded: {team_name}.png")
+#     else:
+#         print(f"Failed to download: {team_name}.png")
+# for team_code, team_name in teams.items():
+#     download_image(team_code, team_name)
+# print("All team logos downloaded successfully.")
 
 ### Player Headshots Download ###
 df_player_stats = pd.read_csv('data/player_stats.csv')
