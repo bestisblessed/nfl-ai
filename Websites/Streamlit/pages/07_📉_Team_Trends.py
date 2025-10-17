@@ -54,8 +54,10 @@ def load_data():
 (df_teams, df_games, df_playerstats, df_team_game_logs, 
  df_schedule_and_game_results, df_team_game_logs_2024, df_team_game_logs_2025, df_box_scores) = load_data()
 
-# Season selector
-selected_season = st.selectbox("Select Season:", [2025, 2024], index=0)
+# Season selector in sidebar
+with st.sidebar:
+    st.header("Filters")
+    selected_season = st.selectbox("Select Season:", [2025, 2024], index=0)
 
 # Select the appropriate dataset based on season
 if selected_season == 2025:
@@ -71,7 +73,10 @@ dataframes = [df_teams, df_games, df_playerstats, df_team_game_logs, df_schedule
 
 ### --- Home vs Away Record --- ###
 st.divider()
-st.subheader(f"Home vs Away Record")
+# st.subheader(f"Home vs Away Record ({selected_season})")
+# st.subheader(f"Home vs Away W/L Record")
+st.subheader(f"Home vs Away Record (W/L)")
+st.write(" ")
 
 games_selected = df_games[(df_games['season'] == selected_season) & (df_games['week'].between(1, 18))]
 win_loss_records = {}
@@ -118,6 +123,8 @@ with col2:
 ### --- Avg PPG and PA Home vs Away --- ###
 st.divider()
 st.subheader(f"PPG & Opp PPG - Home vs Away")
+st.write(" ")
+st.write(" ")
 
 # PPG
 st.markdown(f"<h5 style='text-align: center; color: grey;'>Average Points Per Game - Home vs. Away ({selected_season})</h5>", unsafe_allow_html=True)
@@ -135,10 +142,12 @@ fig = px.bar(
     x='Team',
     y=['Home', 'Away'],
     color_discrete_map={'Home': '#228B22', 'Away': '#32CD32'},  # Forest Green and Lime Green
+    # title="Average PPG - Home vs Away",
     barmode='group'
 )
 fig.update_layout(
     xaxis_title='Teams',
+    yaxis_title='Average PPG',
     showlegend=True,
     font=dict(size=12),
     xaxis=dict(tickangle=45),
@@ -149,6 +158,8 @@ st.plotly_chart(fig, use_container_width=True)
 # Add expandable table below the chart
 with st.expander("View Table", expanded=False):
     st.dataframe(avg_points.set_index('Team'), use_container_width=True)
+
+st.write("#####")
 
 # PA
 st.markdown(f"<h5 style='text-align: center; color: grey;'>Average Opponent Points Per Game - Home vs. Away ({selected_season})</h5>", unsafe_allow_html=True)
@@ -166,6 +177,7 @@ fig = px.bar(
     x='Team',
     y=['Home', 'Away'],
     color_discrete_map={'Home': '#4169E1', 'Away': '#87CEEB'},  # Royal Blue and Sky Blue
+    # title="Average Opp PPG - Home vs Away",
     barmode='group'
 )
 fig.update_layout(
@@ -182,14 +194,19 @@ st.plotly_chart(fig, use_container_width=True)
 with st.expander("View Table", expanded=False):
     st.dataframe(avg_points_allowed.set_index('Team'), use_container_width=True)
 
+st.write("#####")
+
 ### --- Avg Passing/Rushing Yards Per Game --- ###
 st.divider()
 st.subheader(f"Avg Passing & Rushing Yards Per Game")
+st.write(" ")
+st.write(" ")
 
 col1, col2 = st.columns(2)
 
 # Passing Yards
 with col1:
+    st.write(f"Passing Yards ({selected_season})")
     df_team_game_logs_filtered = df_team_game_logs_selected[(df_team_game_logs_selected[week_col] >= 1) & (df_team_game_logs_selected[week_col] <= 18)]
     merged_data = pd.merge(df_team_game_logs_filtered, df_teams, left_on=team_name_col, right_on='Team', how='left')
     team_passing_yards = merged_data.groupby('TeamID')['pass_yds'].mean().reset_index()
@@ -198,6 +215,7 @@ with col1:
 
 # Rushing Yards
 with col2:
+    st.write(f"Rushing Yards ({selected_season})")
     df_team_game_logs_filtered = df_team_game_logs_selected[(df_team_game_logs_selected[week_col] >= 1) & (df_team_game_logs_selected[week_col] <= 18)]
     merged_data = pd.merge(df_team_game_logs_filtered, df_teams, left_on=team_name_col, right_on='Team', how='left')
     team_rushing_yards = merged_data.groupby('TeamID')['rush_yds'].mean().reset_index()
@@ -207,6 +225,8 @@ with col2:
 ### --- Avg Passing/Rushing Yards Allowed Per Game --- ###
 st.divider()
 st.subheader(f"Avg Opponent Passing & Rushing Yards Per Game")
+st.write(" ")
+st.write(" ")
 
 col1, col2 = st.columns(2)
 
@@ -239,6 +259,7 @@ df_schedule_and_game_results_filtered = df_schedule_results[(df_schedule_results
 
 # Passing Yards Allowed
 with col1:
+    st.write(f"Passing Yards Allowed ({selected_season})")
     results_passing_yards_allowed = []
     for team in filtered_df_teams['TeamID']:
         team_filtered_data = df_schedule_and_game_results_filtered[df_schedule_and_game_results_filtered['Team'] == team]
@@ -248,6 +269,7 @@ with col1:
 
 # Rushing Yards Allowed
 with col2:
+    st.write(f"Rushing Yards Allowed ({selected_season})")
     results_rushing_yards_allowed = []
     for team in filtered_df_teams['TeamID']:
         team_filtered_data = df_schedule_and_game_results_filtered[df_schedule_and_game_results_filtered['Team'] == team]
@@ -258,6 +280,9 @@ with col2:
 ### --- 1H vs 2H Scoring Trends --- ###
 st.divider()
 st.subheader(f"1H vs 2H Performance Trends")
+st.write(" ")
+st.write(" ")
+
 
 # Process box scores data
 df_box_scores_proc = df_box_scores.copy()
@@ -357,6 +382,9 @@ st.plotly_chart(fig, use_container_width=True)
 with st.expander("View Table", expanded=False):
     st.dataframe(team_half_scores, use_container_width=True)
 
+st.write("#####")
+# st.write(" ")
+
 # Calculate and display 1H vs 2H differential
 st.markdown(f"<h5 style='text-align: center; color: grey;'>2H vs 1H Scoring Differential by Team ({selected_season})</h5>", unsafe_allow_html=True)
 st.write("Teams with positive values score more in the 2nd half. Teams with negative values score more in the 1st half.")
@@ -378,7 +406,8 @@ chart = alt.Chart(team_half_scores_diff_sorted_reset).mark_bar(
     tooltip=['TeamID', 'Differential']
 ).properties(
     width=800,
-    height=max(600, len(team_half_scores_diff_sorted_reset) * 35),
+    # height=max(600, len(team_half_scores_diff_sorted_reset) * 35),
+    height=1000,
 ).configure_axisX(
     grid=True,
     labelColor='#333333'
