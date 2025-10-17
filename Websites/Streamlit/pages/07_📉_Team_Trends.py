@@ -136,13 +136,12 @@ avg_points.columns = ['Home', 'Away']
 avg_points = avg_points.reset_index()
 avg_points.rename(columns={'index': 'Team'}, inplace=True)
 
-# Create Plotly Express chart with green theme
+# Create Plotly Express chart with green theme and fade effect
 fig = px.bar(
     avg_points,
     x='Team',
     y=['Home', 'Away'],
-    color_discrete_map={'Home': '#228B22', 'Away': '#32CD32'},  # Forest Green and Lime Green
-    # title="Average PPG - Home vs Away",
+    color_discrete_map={'Home': '#2E8B57', 'Away': '#123829'},  # Sea Green and Dark Green
     barmode='group'
 )
 fig.update_layout(
@@ -171,13 +170,12 @@ avg_points_allowed.columns = ['Home', 'Away']
 avg_points_allowed = avg_points_allowed.reset_index()
 avg_points_allowed.rename(columns={'index': 'Team'}, inplace=True)
 
-# Create Plotly Express chart with blue theme
+# Create Plotly Express chart with green theme and fade effect
 fig = px.bar(
     avg_points_allowed,
     x='Team',
     y=['Home', 'Away'],
-    color_discrete_map={'Home': '#4169E1', 'Away': '#87CEEB'},  # Royal Blue and Sky Blue
-    # title="Average Opp PPG - Home vs Away",
+    color_discrete_map={'Home': '#2E8B57', 'Away': '#123829'},  # Sea Green and Dark Forest Green
     barmode='group'
 )
 fig.update_layout(
@@ -360,12 +358,12 @@ team_half_scores = df_season_half.groupby('TeamID')[['1H', '2H']].mean().sort_va
 # Display 1H vs 2H averages
 st.markdown(f"<h5 style='text-align: center; color: grey;'>Average Points Per Game - 1H vs 2H ({selected_season})</h5>", unsafe_allow_html=True)
 team_half_scores_df = team_half_scores.reset_index()
-# Create Plotly Express chart with orange theme
+# Create Plotly Express chart with purple theme
 fig = px.bar(
     team_half_scores_df,
     x='TeamID',
     y=['1H', '2H'],
-    color_discrete_map={'1H': '#FF8C00', '2H': '#FFA500'},  # Dark Orange and Orange
+    color_discrete_map={'1H': '#8A2BE2', '2H': '#9370DB'},  # Blue Violet and Medium Purple
     barmode='group'
 )
 fig.update_layout(
@@ -393,9 +391,9 @@ team_half_scores_diff = team_half_scores.copy()
 team_half_scores_diff['Differential'] = team_half_scores_diff['2H'] - team_half_scores_diff['1H']
 team_half_scores_diff_sorted = team_half_scores_diff.sort_values(by='Differential', ascending=False)
 
-# Create Altair chart with purple/salmon theme
+# Create Altair chart with purple theme
 team_half_scores_diff_sorted_reset = team_half_scores_diff_sorted.reset_index()
-team_half_scores_diff_sorted_reset['color'] = team_half_scores_diff_sorted_reset['Differential'].apply(lambda x: '#8A2BE2' if x > 0 else '#FA8072')
+team_half_scores_diff_sorted_reset['color'] = team_half_scores_diff_sorted_reset['Differential'].apply(lambda x: '#8A2BE2' if x > 0 else '#9370DB')
 
 chart = alt.Chart(team_half_scores_diff_sorted_reset).mark_bar(
     size=20
