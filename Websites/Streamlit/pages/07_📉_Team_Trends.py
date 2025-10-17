@@ -357,12 +357,31 @@ with col1:
     merged_data = pd.merge(df_team_game_logs_filtered, df_teams, left_on=team_name_col, right_on='Team', how='left')
     team_passing_yards = merged_data.groupby('TeamID')['pass_yds'].mean().reset_index()
     team_passing_yards_ranked = team_passing_yards.sort_values(by='pass_yds', ascending=False).reset_index(drop=True)
-    st.dataframe(team_passing_yards_ranked, use_container_width=True)
+    
+    # Create horizontal bar chart
+    fig = px.bar(
+        team_passing_yards_ranked,
+        x='pass_yds',
+        y='TeamID',
+        orientation='h',
+        color='pass_yds',
+        color_continuous_scale='Blues',
+        title=""
+    )
+    fig.update_layout(
+        height=800,
+        xaxis_title="Passing Yards per Game",
+        yaxis_title="Teams",
+        yaxis={'categoryorder':'total ascending'},
+        showlegend=False,
+        coloraxis_showscale=False
+    )
+    st.plotly_chart(fig, use_container_width=True)
     
     # Top 5 Teams for Passing Yards per Game
-    st.write(f"**Top 5 Teams for Most Passing Yards per Game ({selected_season} Season):**")
+    st.write(f"**Top 5 Passing Offenses ({selected_season}):**")
     top_5_pass_yds = team_passing_yards_ranked.head(5)
-    st.dataframe(top_5_pass_yds, use_container_width=True)
+    st.dataframe(top_5_pass_yds, use_container_width=True, hide_index=True)
 
 # Rushing Yards
 with col2:
@@ -371,12 +390,31 @@ with col2:
     merged_data = pd.merge(df_team_game_logs_filtered, df_teams, left_on=team_name_col, right_on='Team', how='left')
     team_rushing_yards = merged_data.groupby('TeamID')['rush_yds'].mean().reset_index()
     team_rushing_yards_ranked = team_rushing_yards.sort_values(by='rush_yds', ascending=False).reset_index(drop=True)
-    st.dataframe(team_rushing_yards_ranked, use_container_width=True)
+    
+    # Create horizontal bar chart
+    fig = px.bar(
+        team_rushing_yards_ranked,
+        x='rush_yds',
+        y='TeamID',
+        orientation='h',
+        color='rush_yds',
+        color_continuous_scale='Blues',
+        title=""
+    )
+    fig.update_layout(
+        height=800,
+        xaxis_title="Rushing Yards per Game",
+        yaxis_title="Teams",
+        yaxis={'categoryorder':'total ascending'},
+        showlegend=False,
+        coloraxis_showscale=False
+    )
+    st.plotly_chart(fig, use_container_width=True)
     
     # Top 5 Teams for Rushing Yards per Game
-    st.write(f"**Top 5 Teams for Most Rushing Yards per Game ({selected_season} Season):**")
+    st.write(f"**Top 5 Rushing Offenses ({selected_season}):**")
     top_5_rush_yds = team_rushing_yards_ranked.head(5)
-    st.dataframe(top_5_rush_yds, use_container_width=True)
+    st.dataframe(top_5_rush_yds, use_container_width=True, hide_index=True)
 
 ### --- Avg Passing/Rushing Yards Allowed Per Game --- ###
 st.divider()
@@ -420,13 +458,36 @@ with col1:
         team_filtered_data = df_schedule_and_game_results_filtered[df_schedule_and_game_results_filtered['Team'] == team]
         avg_passing_yards_allowed = team_filtered_data['OppPassY'].mean()
         results_passing_yards_allowed.append({'Team': team.upper(), 'Avg Passing Yards Allowed': avg_passing_yards_allowed})
-    st.dataframe(results_passing_yards_allowed, use_container_width=True)
+    
+    # Create DataFrame and sort for chart
+    df_passing_allowed_chart = pd.DataFrame(results_passing_yards_allowed)
+    df_passing_allowed_chart_sorted = df_passing_allowed_chart.sort_values(by='Avg Passing Yards Allowed', ascending=True)
+    
+    # Create horizontal bar chart
+    fig = px.bar(
+        df_passing_allowed_chart_sorted,
+        x='Avg Passing Yards Allowed',
+        y='Team',
+        orientation='h',
+        color='Avg Passing Yards Allowed',
+        color_continuous_scale='Blues',
+        title=""
+    )
+    fig.update_layout(
+        height=800,
+        xaxis_title="Passing Yards Allowed per Game",
+        yaxis_title="Teams",
+        yaxis={'categoryorder':'total ascending'},
+        showlegend=False,
+        coloraxis_showscale=False
+    )
+    st.plotly_chart(fig, use_container_width=True)
     
     # Top 5 Teams Allowing the Fewest Passing Yards per Game
-    st.write(f"**Top 5 Teams Allowing the Fewest Passing Yards per Game ({selected_season} Season):**")
+    st.write(f"**Top 5 Passing Defenses ({selected_season}):**")
     df_passing_allowed = pd.DataFrame(results_passing_yards_allowed)
     top_5_pass_allowed = df_passing_allowed.sort_values(by='Avg Passing Yards Allowed', ascending=True).head(5)
-    st.dataframe(top_5_pass_allowed, use_container_width=True)
+    st.dataframe(top_5_pass_allowed, use_container_width=True, hide_index=True)
 
 # Rushing Yards Allowed
 with col2:
@@ -436,10 +497,33 @@ with col2:
         team_filtered_data = df_schedule_and_game_results_filtered[df_schedule_and_game_results_filtered['Team'] == team]
         avg_rushing_yards_allowed = team_filtered_data['OppRushY'].mean()
         results_rushing_yards_allowed.append({'Team': team.upper(), 'Avg Rushing Yards Allowed': avg_rushing_yards_allowed})
-    st.dataframe(results_rushing_yards_allowed, use_container_width=True)
+    
+    # Create DataFrame and sort for chart
+    df_rushing_allowed_chart = pd.DataFrame(results_rushing_yards_allowed)
+    df_rushing_allowed_chart_sorted = df_rushing_allowed_chart.sort_values(by='Avg Rushing Yards Allowed', ascending=True)
+    
+    # Create horizontal bar chart
+    fig = px.bar(
+        df_rushing_allowed_chart_sorted,
+        x='Avg Rushing Yards Allowed',
+        y='Team',
+        orientation='h',
+        color='Avg Rushing Yards Allowed',
+        color_continuous_scale='Blues',
+        title=""
+    )
+    fig.update_layout(
+        height=800,
+        xaxis_title="Rushing Yards Allowed per Game",
+        yaxis_title="Teams",
+        yaxis={'categoryorder':'total ascending'},
+        showlegend=False,
+        coloraxis_showscale=False
+    )
+    st.plotly_chart(fig, use_container_width=True)
     
     # Top 5 Teams Allowing the Fewest Rushing Yards per Game
-    st.write(f"**Top 5 Teams Allowing the Fewest Rushing Yards per Game ({selected_season} Season):**")
+    st.write(f"**Top 5 Rushing Defenses ({selected_season}):**")
     df_rushing_allowed = pd.DataFrame(results_rushing_yards_allowed)
     top_5_rush_allowed = df_rushing_allowed.sort_values(by='Avg Rushing Yards Allowed', ascending=True).head(5)
-    st.dataframe(top_5_rush_allowed, use_container_width=True)
+    st.dataframe(top_5_rush_allowed, use_container_width=True, hide_index=True)
