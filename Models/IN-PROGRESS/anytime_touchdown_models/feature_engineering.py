@@ -99,25 +99,23 @@ def _opponent_defense_features(df: pd.DataFrame, window: int, include_current: b
 
     group = defense.groupby(["opponent_team", "season"])
 
-    counts = group.cumcount() + 1
-    cumsum = group["total_tds"].cumsum().astype(float)
     if include_current:
-        defense["tds_allowed_avg"] = cumsum / counts.astype(float)
-    else:
-        previous_counts = (counts - 1).replace(0, np.nan).astype(float)
-        defense["tds_allowed_avg"] = (cumsum - defense["total_tds"].astype(float)) / previous_counts
-
-    if include_current:
+        defense["tds_allowed_avg"] = group["total_tds"].transform(
+            lambda s: s.expanding(min_periods=1).mean()
+        )
         defense[f"tds_allowed_rolling_{window}"] = group["total_tds"].transform(
             lambda s: s.rolling(window, min_periods=1).mean()
         )
     else:
+        defense["tds_allowed_avg"] = group["total_tds"].transform(
+            lambda s: s.shift(1).expanding(min_periods=1).mean()
+        )
         defense[f"tds_allowed_rolling_{window}"] = group["total_tds"].transform(
             lambda s: s.shift(1).rolling(window, min_periods=1).mean()
         )
 
     fill_cols = ["tds_allowed_avg", f"tds_allowed_rolling_{window}"]
-    defense[fill_cols] = defense[fill_cols].fillna(defense[fill_cols].mean())
+    defense[fill_cols] = defense[fill_cols].fillna(0.0)
 
     defense = defense.drop(columns=["total_tds"])
     defense = defense.drop_duplicates(["opponent_team", "season", "week"])
