@@ -97,25 +97,24 @@ def _opponent_defense_features(df: pd.DataFrame, window: int, include_current: b
     )
     defense = defense.sort_values(["opponent_team", "season", "week"])
 
-    group_totals = defense.groupby(["opponent_team", "season"])["total_tds"]
+    group = defense.groupby(["opponent_team", "season"])
+
+    counts = group.cumcount() + 1
+    cumsum = group["total_tds"].cumsum().astype(float)
     if include_current:
-        defense["tds_allowed_avg"] = group_totals.transform(
-            lambda s: s.expanding(min_periods=1).mean()
+        defense["tds_allowed_avg"] = cumsum / counts.astype(float)
+    else:
+        previous_counts = (counts - 1).replace(0, np.nan).astype(float)
+        defense["tds_allowed_avg"] = (cumsum - defense["total_tds"].astype(float)) / previous_counts
+
+    if include_current:
+        defense[f"tds_allowed_rolling_{window}"] = group["total_tds"].transform(
+            lambda s: s.rolling(window, min_periods=1).mean()
         )
     else:
-        defense["tds_allowed_avg"] = group_totals.transform(
-            lambda s: s.shift(1).expanding(min_periods=1).mean()
+        defense[f"tds_allowed_rolling_{window}"] = group["total_tds"].transform(
+            lambda s: s.shift(1).rolling(window, min_periods=1).mean()
         )
-
-    rolling = (
-        defense.groupby(["opponent_team", "season"])["total_tds"]
-        .rolling(window, min_periods=1)
-        .mean()
-        .reset_index(level=[0, 1], drop=True)
-    )
-    if not include_current:
-        rolling = rolling.groupby(level=0).shift(1)
-    defense[f"tds_allowed_rolling_{window}"] = rolling
 
     fill_cols = ["tds_allowed_avg", f"tds_allowed_rolling_{window}"]
     defense[fill_cols] = defense[fill_cols].fillna(defense[fill_cols].mean())
