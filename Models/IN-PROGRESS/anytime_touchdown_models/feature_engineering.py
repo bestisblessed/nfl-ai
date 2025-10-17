@@ -97,9 +97,15 @@ def _opponent_defense_features(df: pd.DataFrame, window: int, include_current: b
     )
     defense = defense.sort_values(["opponent_team", "season", "week"])
 
-    defense["tds_allowed_avg"] = (
-        defense.groupby(["opponent_team", "season"])["total_tds"].transform("mean")
-    )
+    group_totals = defense.groupby(["opponent_team", "season"])["total_tds"]
+    if include_current:
+        defense["tds_allowed_avg"] = group_totals.transform(
+            lambda s: s.expanding(min_periods=1).mean()
+        )
+    else:
+        defense["tds_allowed_avg"] = group_totals.transform(
+            lambda s: s.shift(1).expanding(min_periods=1).mean()
+        )
 
     rolling = (
         defense.groupby(["opponent_team", "season"])["total_tds"]
