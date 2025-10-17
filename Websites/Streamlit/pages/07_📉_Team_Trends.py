@@ -273,7 +273,7 @@ st.subheader(f"Quarter Performance Trends")
 st.write(" ")
 
 # Placeholder for future quarter performance analysis
-st.info("🚧 **Coming Soon:** Detailed quarter-by-quarter performance analysis including 1Q, 2Q, 3Q, and 4Q scoring trends, momentum shifts, and late-game performance metrics.")
+st.info("🚧 **Coming Soon:**")
 
 ### --- Avg PPG and PA Home vs Away --- ###
 st.divider()
