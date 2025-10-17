@@ -12,6 +12,8 @@ import pandas as pd
 BASE_DIR = Path("/workspace/nfl-ai/Models/IN-PROGRESS/anytime_touchdown_models")
 DATA_DIR = Path("/workspace/nfl-ai/Models/IN-PROGRESS/final_data_pfr")
 UPCOMING_GAMES_PATH = Path("/workspace/nfl-ai/Models/upcoming_games.csv")
+INJURED_PLAYERS_PATH = Path("/workspace/nfl-ai/Models/injured_players.csv")
+QUESTIONABLE_PLAYERS_PATH = Path("/workspace/nfl-ai/Models/questionable_players.csv")
 
 ROLLING_WINDOW = 3
 
@@ -63,6 +65,25 @@ def load_player_stats() -> pd.DataFrame:
     df["opponent_team"] = df["opponent_team"].str.upper()
 
     return df
+
+
+@lru_cache(maxsize=1)
+def load_excluded_players() -> set[str]:
+    """Return a set of player names to exclude due to injury designations."""
+
+    excluded: set[str] = set()
+    for path in (INJURED_PLAYERS_PATH, QUESTIONABLE_PLAYERS_PATH):
+        if not path.exists():
+            continue
+
+        df = pd.read_csv(path)
+        if "full_name" not in df.columns:
+            continue
+
+        names = df["full_name"].dropna().astype(str).str.strip()
+        excluded.update(name.lower() for name in names if name)
+
+    return excluded
 
 
 def _rolling_player_features(df: pd.DataFrame, window: int, include_current: bool) -> pd.DataFrame:
@@ -240,6 +261,10 @@ def build_upcoming_features(
 
     merged[feature_columns] = merged[feature_columns].fillna(0.0)
     merged = merged[merged[f"games_played_{window}"] > 0]
+
+    excluded_players = load_excluded_players()
+    if excluded_players:
+        merged = merged[~merged["player"].fillna("").str.strip().str.lower().isin(excluded_players)]
 
     return merged
 
