@@ -267,6 +267,14 @@ st.altair_chart(chart, use_container_width=True)
 with st.expander("View Table", expanded=False):
     st.dataframe(team_half_scores_diff_sorted[['Differential']], use_container_width=True)
 
+### --- Quarter Performance Trends --- ###
+st.divider()
+st.subheader(f"Quarter Performance Trends")
+st.write(" ")
+
+# Placeholder for future quarter performance analysis
+st.info("🚧 **Coming Soon:** Detailed quarter-by-quarter performance analysis including 1Q, 2Q, 3Q, and 4Q scoring trends, momentum shifts, and late-game performance metrics.")
+
 ### --- Avg PPG and PA Home vs Away --- ###
 st.divider()
 st.subheader(f"PPG & Opp PPG - Home vs Away")
@@ -527,3 +535,19 @@ with col2:
     df_rushing_allowed = pd.DataFrame(results_rushing_yards_allowed)
     top_5_rush_allowed = df_rushing_allowed.sort_values(by='Avg Rushing Yards Allowed', ascending=True).head(5)
     st.dataframe(top_5_rush_allowed, use_container_width=True, hide_index=True)
+
+### --- Passing vs Rushing Plays Called --- ###
+st.divider()
+st.subheader(f"Passing vs Rushing Plays Called")
+st.write(" ")
+
+# Placeholder for future play calling analysis
+st.info("🚧 **Coming Soon:** Play calling analysis including pass/run ratios, situational play calling trends, down-and-distance analysis, and offensive strategy insights.")
+
+### --- Sacks --- ###
+st.divider()
+st.subheader(f"Sacks")
+st.write(" ")
+
+# Placeholder for future sacks analysis
+st.info("🚧 **Coming Soon:** Sacks analysis including team sack rates, quarterback pressure statistics, defensive line performance, and pass protection metrics.")
