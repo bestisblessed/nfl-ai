@@ -36,20 +36,21 @@ def load_data():
         df_playerstats = pd.read_csv(os.path.join(current_dir, '../data', 'PlayerStats.csv'))
         df_team_game_logs = pd.read_csv(os.path.join(current_dir, '../data', 'all_team_game_logs.csv'))
         df_schedule_and_game_results = pd.read_csv(os.path.join(current_dir, '../data', 'all_teams_schedule_and_game_results_merged.csv'))
+        df_box_scores = pd.read_csv(os.path.join(current_dir, '../data', 'all_box_scores.csv'))
         
         # Load year-specific team game logs
         df_team_game_logs_2024 = pd.read_csv(os.path.join(current_dir, '../data', 'SR-game-logs/all_teams_game_logs_2024.csv'))
         df_team_game_logs_2025 = pd.read_csv(os.path.join(current_dir, '../data', 'SR-game-logs/all_teams_game_logs_2025.csv'))
         
         return (df_teams, df_games, df_playerstats, df_team_game_logs, 
-                df_schedule_and_game_results, df_team_game_logs_2024, df_team_game_logs_2025)
+                df_schedule_and_game_results, df_team_game_logs_2024, df_team_game_logs_2025, df_box_scores)
     except FileNotFoundError as e:
         st.error(f"Error loading data files: {e}")
         st.stop()
 
 # Load all data
 (df_teams, df_games, df_playerstats, df_team_game_logs, 
- df_schedule_and_game_results, df_team_game_logs_2024, df_team_game_logs_2025) = load_data()
+ df_schedule_and_game_results, df_team_game_logs_2024, df_team_game_logs_2025, df_box_scores) = load_data()
 
 # Season selector
 selected_season = st.selectbox("Select Season:", [2025, 2024], index=0)
@@ -223,3 +224,114 @@ with col2:
         avg_rushing_yards_allowed = team_filtered_data['OppRushY'].mean()
         results_rushing_yards_allowed.append({'Team': team, 'Avg Rushing Yards Allowed': avg_rushing_yards_allowed})
     st.dataframe(results_rushing_yards_allowed, use_container_width=True)
+
+
+### --- 1H vs 2H Scoring Trends --- ###
+st.divider()
+st.header(f"1H vs 2H Scoring Trends {selected_season}")
+st.write("##")
+
+# Process box scores data
+df_box_scores_proc = df_box_scores.copy()
+df_box_scores_proc['date_str'] = df_box_scores_proc['URL'].str.extract(r'/boxscores/(\d{8})')
+df_box_scores_proc['date'] = pd.to_datetime(df_box_scores_proc['date_str'], format='%Y%m%d')
+df_box_scores_proc['season'] = df_box_scores_proc['date'].dt.year
+
+# Fill NaN values with 0 for overtime quarters
+for col in ['OT1', 'OT2', 'OT3', 'OT4']:
+    if col in df_box_scores_proc.columns:
+        df_box_scores_proc[col] = df_box_scores_proc[col].fillna(0)
+
+# Calculate 1H and 2H scores
+df_box_scores_proc['1H'] = df_box_scores_proc['1'] + df_box_scores_proc['2']
+df_box_scores_proc['2H'] = df_box_scores_proc['3'] + df_box_scores_proc['4']
+if 'OT1' in df_box_scores_proc.columns:
+    df_box_scores_proc['2H'] += df_box_scores_proc['OT1'] + df_box_scores_proc['OT2'] + df_box_scores_proc['OT3'] + df_box_scores_proc['OT4']
+
+# Merge with games to get week info
+df_games_date = df_games.copy()
+df_games_date['date'] = pd.to_datetime(df_games_date['date'])
+df_merged_box = df_box_scores_proc.merge(df_games_date[['date', 'week', 'season']], on=['date', 'season'], how='left')
+
+# Map team names to TeamIDs
+def map_team_name(name):
+    name_mapping = {
+        'Kansas City Chiefs': 'KC',
+        'New England Patriots': 'NE',
+        'New York Jets': 'NYJ',
+        'Buffalo Bills': 'BUF',
+        'Atlanta Falcons': 'ATL',
+        'Chicago Bears': 'CHI',
+        'Baltimore Ravens': 'BAL',
+        'Cincinnati Bengals': 'CIN',
+        'Pittsburgh Steelers': 'PIT',
+        'Cleveland Browns': 'CLE',
+        'Arizona Cardinals': 'ARI',
+        'Detroit Lions': 'DET',
+        'Jacksonville Jaguars': 'JAX',
+        'Houston Texans': 'HOU',
+        'Oakland Raiders': 'LVR',
+        'Las Vegas Raiders': 'LVR',
+        'Tennessee Titans': 'TEN',
+        'Philadelphia Eagles': 'PHI',
+        'Washington Redskins': 'WAS',
+        'Washington Football Team': 'WAS',
+        'Washington Commanders': 'WAS',
+        'Indianapolis Colts': 'IND',
+        'Los Angeles Rams': 'LAR',
+        'St. Louis Rams': 'LAR',
+        'Seattle Seahawks': 'SEA',
+        'Minnesota Vikings': 'MIN',
+        'Green Bay Packers': 'GB',
+        'Tampa Bay Buccaneers': 'TB',
+        'New Orleans Saints': 'NO',
+        'San Francisco 49ers': 'SF',
+        'Los Angeles Chargers': 'LAC',
+        'San Diego Chargers': 'LAC',
+        'Denver Broncos': 'DEN',
+        'Miami Dolphins': 'MIA',
+        'Carolina Panthers': 'CAR',
+        'New York Giants': 'NYG',
+        'Dallas Cowboys': 'DAL'
+    }
+    return name_mapping.get(name, name)
+
+df_merged_box['TeamID'] = df_merged_box['Team'].apply(map_team_name)
+
+# Filter for selected season, regular season only
+df_season_half = df_merged_box[(df_merged_box['season'] == selected_season) & (df_merged_box['week'] >= 1) & (df_merged_box['week'] <= 18)]
+
+# Calculate average 1H and 2H scores by team
+team_half_scores = df_season_half.groupby('TeamID')[['1H', '2H']].mean().sort_values(by='1H', ascending=False)
+
+# Display 1H vs 2H averages
+st.markdown("<h5 style='text-align: center; color: grey;'>Average Points Per Game - 1H vs 2H</h5>", unsafe_allow_html=True)
+col1, col2 = st.columns((3, 1))
+with col1:
+    st.bar_chart(team_half_scores, color=["#FFA500", "#0000FF"], x_label="Teams", y_label="Average Points", use_container_width=True, stack=False)
+with col2:
+    st.dataframe(team_half_scores, use_container_width=True)
+
+# Calculate and display 1H vs 2H differential
+st.write(" ")
+st.markdown("<h5 style='text-align: center; color: grey;'>2H vs 1H Scoring Differential by Team</h5>", unsafe_allow_html=True)
+st.write("Teams with positive values score more in the 2nd half. Teams with negative values score more in the 1st half.")
+
+team_half_scores_diff = team_half_scores.copy()
+team_half_scores_diff['Differential'] = team_half_scores_diff['2H'] - team_half_scores_diff['1H']
+team_half_scores_diff_sorted = team_half_scores_diff.sort_values(by='Differential', ascending=False)
+
+col1, col2 = st.columns((1, 3))
+with col1:
+    st.dataframe(team_half_scores_diff_sorted[['Differential']], use_container_width=True)
+with col2:
+    fig, ax = plt.subplots(figsize=(10, 8))
+    colors = ['green' if x > 0 else 'red' for x in team_half_scores_diff_sorted['Differential']]
+    ax.barh(range(len(team_half_scores_diff_sorted)), team_half_scores_diff_sorted['Differential'], color=colors, alpha=0.7)
+    ax.set_yticks(range(len(team_half_scores_diff_sorted)))
+    ax.set_yticklabels(team_half_scores_diff_sorted.index)
+    ax.set_xlabel('Point Differential (2H - 1H)', fontsize=10)
+    ax.set_title(f'{selected_season} Season - 2H vs 1H Scoring Differential', fontsize=12, fontweight='bold')
+    ax.axvline(x=0, color='black', linestyle='-', linewidth=0.8)
+    ax.grid(axis='x', alpha=0.3)
+    st.pyplot(fig)
