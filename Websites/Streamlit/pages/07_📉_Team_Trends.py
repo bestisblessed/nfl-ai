@@ -120,166 +120,11 @@ with col2:
             away_games_sorted = away_games.sort_values(by='week')
             st.dataframe(away_games_sorted, use_container_width=True)
 
-### --- Avg PPG and PA Home vs Away --- ###
-st.divider()
-st.subheader(f"PPG & Opp PPG - Home vs Away")
-st.write(" ")
-st.write(" ")
-
-# PPG
-st.markdown(f"<h5 style='text-align: center; color: grey;'>Average Points Per Game - Home vs. Away ({selected_season})</h5>", unsafe_allow_html=True)
-games_selected = df_games[(df_games['season'] == selected_season) & (df_games['week'].between(1, 18))]
-avg_points_scored_home = games_selected.groupby('home_team')['home_score'].mean()
-avg_points_scored_away = games_selected.groupby('away_team')['away_score'].mean()
-avg_points = pd.concat([avg_points_scored_home, avg_points_scored_away], axis=1) # Combine to get overall averages
-avg_points.columns = ['Home', 'Away']
-avg_points = avg_points.reset_index()
-avg_points.rename(columns={'index': 'Team'}, inplace=True)
-
-# Create Plotly Express chart with green theme and fade effect
-fig = px.bar(
-    avg_points,
-    x='Team',
-    y=['Home', 'Away'],
-    color_discrete_map={'Home': '#2E8B57', 'Away': '#123829'},  # Sea Green and Dark Green
-    barmode='group'
-)
-fig.update_layout(
-    xaxis_title='Teams',
-    yaxis_title='Average PPG',
-    showlegend=True,
-    font=dict(size=12),
-    xaxis=dict(tickangle=45),
-    height=500
-)
-st.plotly_chart(fig, use_container_width=True)
-
-# Add expandable table below the chart
-with st.expander("View Table", expanded=False):
-    st.dataframe(avg_points.set_index('Team'), use_container_width=True)
-
-st.write("#####")
-
-# PA
-st.markdown(f"<h5 style='text-align: center; color: grey;'>Average Opponent Points Per Game - Home vs. Away ({selected_season})</h5>", unsafe_allow_html=True)
-games_selected = df_games[(df_games['season'] == selected_season) & (df_games['week'].between(1, 18))]
-avg_points_allowed_home = games_selected.groupby('home_team')['away_score'].mean()
-avg_points_allowed_away = games_selected.groupby('away_team')['home_score'].mean()
-avg_points_allowed = pd.concat([avg_points_allowed_home, avg_points_allowed_away], axis=1) # Combining the two series to get overall averages for each team
-avg_points_allowed.columns = ['Home', 'Away']
-avg_points_allowed = avg_points_allowed.reset_index()
-avg_points_allowed.rename(columns={'index': 'Team'}, inplace=True)
-
-# Create Plotly Express chart with green theme and fade effect
-fig = px.bar(
-    avg_points_allowed,
-    x='Team',
-    y=['Home', 'Away'],
-    color_discrete_map={'Home': '#2E8B57', 'Away': '#123829'},  # Sea Green and Dark Forest Green
-    barmode='group'
-)
-fig.update_layout(
-    xaxis_title='Teams',
-    yaxis_title='Average Opp PPG',
-    showlegend=True,
-    font=dict(size=12),
-    xaxis=dict(tickangle=45),
-    height=500
-)
-st.plotly_chart(fig, use_container_width=True)
-
-# Add expandable table below the chart
-with st.expander("View Table", expanded=False):
-    st.dataframe(avg_points_allowed.set_index('Team'), use_container_width=True)
-
-st.write("#####")
-
-### --- Avg Passing/Rushing Yards Per Game --- ###
-st.divider()
-st.subheader(f"Avg Passing & Rushing Yards Per Game")
-st.write(" ")
-st.write(" ")
-
-col1, col2 = st.columns(2)
-
-# Passing Yards
-with col1:
-    st.write(f"Passing Yards ({selected_season})")
-    df_team_game_logs_filtered = df_team_game_logs_selected[(df_team_game_logs_selected[week_col] >= 1) & (df_team_game_logs_selected[week_col] <= 18)]
-    merged_data = pd.merge(df_team_game_logs_filtered, df_teams, left_on=team_name_col, right_on='Team', how='left')
-    team_passing_yards = merged_data.groupby('TeamID')['pass_yds'].mean().reset_index()
-    team_passing_yards_ranked = team_passing_yards.sort_values(by='pass_yds', ascending=False).reset_index(drop=True)
-    st.dataframe(team_passing_yards_ranked, use_container_width=True)
-
-# Rushing Yards
-with col2:
-    st.write(f"Rushing Yards ({selected_season})")
-    df_team_game_logs_filtered = df_team_game_logs_selected[(df_team_game_logs_selected[week_col] >= 1) & (df_team_game_logs_selected[week_col] <= 18)]
-    merged_data = pd.merge(df_team_game_logs_filtered, df_teams, left_on=team_name_col, right_on='Team', how='left')
-    team_rushing_yards = merged_data.groupby('TeamID')['rush_yds'].mean().reset_index()
-    team_rushing_yards_ranked = team_rushing_yards.sort_values(by='rush_yds', ascending=False).reset_index(drop=True)
-    st.dataframe(team_rushing_yards_ranked, use_container_width=True)
-
-### --- Avg Passing/Rushing Yards Allowed Per Game --- ###
-st.divider()
-st.subheader(f"Avg Opponent Passing & Rushing Yards Per Game")
-st.write(" ")
-st.write(" ")
-
-col1, col2 = st.columns(2)
-
-filtered_df_teams = df_teams.copy()
-filtered_df_teams.loc[:, 'TeamID'] = filtered_df_teams['TeamID'].str.lower()
-
-# Create a copy of df_schedule_and_game_results to avoid SettingWithCopyWarning
-df_schedule_results = df_schedule_and_game_results.copy()
-df_schedule_results.loc[:, 'Week'] = pd.to_numeric(df_schedule_results['Week'], errors='coerce')
-df_schedule_results = df_schedule_results.dropna(subset=['Day'])
-
-team_abbreviation_mapping = {
-    'gnb': 'gb',
-    'htx': 'hou',
-    'clt': 'ind',
-    'kan': 'kc',
-    'sdg': 'lac',
-    'ram': 'lar',
-    'rai': 'lvr',
-    'nwe': 'ne',
-    'nor': 'no',
-    'sfo': 'sf',
-    'tam': 'tb',
-    'oti': 'ten',
-    'rav': 'bal',
-    'crd': 'ari'
-}
-df_schedule_results.loc[:, 'Team'] = df_schedule_results['Team'].map(team_abbreviation_mapping).fillna(df_schedule_results['Team'])
-df_schedule_and_game_results_filtered = df_schedule_results[(df_schedule_results['Season'] == selected_season) & (df_schedule_results['Week'] >= 1) & (df_schedule_results['Week'] <= 18)]
-
-# Passing Yards Allowed
-with col1:
-    st.write(f"Passing Yards Allowed ({selected_season})")
-    results_passing_yards_allowed = []
-    for team in filtered_df_teams['TeamID']:
-        team_filtered_data = df_schedule_and_game_results_filtered[df_schedule_and_game_results_filtered['Team'] == team]
-        avg_passing_yards_allowed = team_filtered_data['OppPassY'].mean()
-        results_passing_yards_allowed.append({'Team': team, 'Avg Passing Yards Allowed': avg_passing_yards_allowed})
-    st.dataframe(results_passing_yards_allowed, use_container_width=True)
-
-# Rushing Yards Allowed
-with col2:
-    st.write(f"Rushing Yards Allowed ({selected_season})")
-    results_rushing_yards_allowed = []
-    for team in filtered_df_teams['TeamID']:
-        team_filtered_data = df_schedule_and_game_results_filtered[df_schedule_and_game_results_filtered['Team'] == team]
-        avg_rushing_yards_allowed = team_filtered_data['OppRushY'].mean()
-        results_rushing_yards_allowed.append({'Team': team, 'Avg Rushing Yards Allowed': avg_rushing_yards_allowed})
-    st.dataframe(results_rushing_yards_allowed, use_container_width=True)
-
 ### --- 1H vs 2H Scoring Trends --- ###
 st.divider()
 st.subheader(f"1H vs 2H Performance Trends")
 st.write(" ")
-st.write(" ")
+# st.write(" ")
 
 
 # Process box scores data
@@ -391,9 +236,9 @@ team_half_scores_diff = team_half_scores.copy()
 team_half_scores_diff['Differential'] = team_half_scores_diff['2H'] - team_half_scores_diff['1H']
 team_half_scores_diff_sorted = team_half_scores_diff.sort_values(by='Differential', ascending=False)
 
-# Create Altair chart with purple theme
+# Create Altair chart with blue and red theme
 team_half_scores_diff_sorted_reset = team_half_scores_diff_sorted.reset_index()
-team_half_scores_diff_sorted_reset['color'] = team_half_scores_diff_sorted_reset['Differential'].apply(lambda x: '#8A2BE2' if x > 0 else '#9370DB')
+team_half_scores_diff_sorted_reset['color'] = team_half_scores_diff_sorted_reset['Differential'].apply(lambda x: '#1E90FF' if x > 0 else '#DC143C')
 
 chart = alt.Chart(team_half_scores_diff_sorted_reset).mark_bar(
     size=20
@@ -421,3 +266,180 @@ st.altair_chart(chart, use_container_width=True)
 # Add expandable table below the chart
 with st.expander("View Table", expanded=False):
     st.dataframe(team_half_scores_diff_sorted[['Differential']], use_container_width=True)
+
+### --- Avg PPG and PA Home vs Away --- ###
+st.divider()
+st.subheader(f"PPG & Opp PPG - Home vs Away")
+st.write(" ")
+
+# PPG
+st.markdown(f"<h5 style='text-align: center; color: grey;'>Average Points Per Game - Home vs. Away ({selected_season})</h5>", unsafe_allow_html=True)
+games_selected = df_games[(df_games['season'] == selected_season) & (df_games['week'].between(1, 18))]
+avg_points_scored_home = games_selected.groupby('home_team')['home_score'].mean()
+avg_points_scored_away = games_selected.groupby('away_team')['away_score'].mean()
+avg_points = pd.concat([avg_points_scored_home, avg_points_scored_away], axis=1) # Combine to get overall averages
+avg_points.columns = ['Home', 'Away']
+avg_points = avg_points.reset_index()
+avg_points.rename(columns={'index': 'Team'}, inplace=True)
+
+# Create Plotly Express chart with green theme and fade effect
+fig = px.bar(
+    avg_points,
+    x='Team',
+    y=['Home', 'Away'],
+    color_discrete_map={'Home': '#2E8B57', 'Away': '#123829'},  # Sea Green and Dark Green
+    barmode='group'
+)
+fig.update_layout(
+    xaxis_title='Teams',
+    yaxis_title='Average PPG',
+    showlegend=True,
+    font=dict(size=12),
+    xaxis=dict(tickangle=45),
+    height=500
+)
+st.plotly_chart(fig, use_container_width=True)
+
+# Add expandable table below the chart
+with st.expander("View Table", expanded=False):
+    st.dataframe(avg_points.set_index('Team'), use_container_width=True)
+
+# st.write("#####")
+st.write(" ")
+
+# PA
+st.markdown(f"<h5 style='text-align: center; color: grey;'>Average Opponent Points Per Game - Home vs. Away ({selected_season})</h5>", unsafe_allow_html=True)
+games_selected = df_games[(df_games['season'] == selected_season) & (df_games['week'].between(1, 18))]
+avg_points_allowed_home = games_selected.groupby('home_team')['away_score'].mean()
+avg_points_allowed_away = games_selected.groupby('away_team')['home_score'].mean()
+avg_points_allowed = pd.concat([avg_points_allowed_home, avg_points_allowed_away], axis=1) # Combining the two series to get overall averages for each team
+avg_points_allowed.columns = ['Home', 'Away']
+avg_points_allowed = avg_points_allowed.reset_index()
+avg_points_allowed.rename(columns={'index': 'Team'}, inplace=True)
+
+# Create Plotly Express chart with green theme and fade effect
+fig = px.bar(
+    avg_points_allowed,
+    x='Team',
+    y=['Home', 'Away'],
+    color_discrete_map={'Home': '#2E8B57', 'Away': '#123829'},  # Sea Green and Dark Forest Green
+    barmode='group'
+)
+fig.update_layout(
+    xaxis_title='Teams',
+    yaxis_title='Average Opp PPG',
+    showlegend=True,
+    font=dict(size=12),
+    xaxis=dict(tickangle=45),
+    height=500
+)
+st.plotly_chart(fig, use_container_width=True)
+
+# Add expandable table below the chart
+with st.expander("View Table", expanded=False):
+    st.dataframe(avg_points_allowed.set_index('Team'), use_container_width=True)
+
+# st.write("#####")
+st.write(" ")
+
+### --- Avg Passing/Rushing Yards Per Game --- ###
+st.divider()
+st.subheader(f"Avg Passing & Rushing Yards Per Game")
+st.write(" ")
+# st.write(" ")
+
+col1, col2 = st.columns(2)
+
+# Passing Yards
+with col1:
+    st.write(f"Passing Yards ({selected_season})")
+    df_team_game_logs_filtered = df_team_game_logs_selected[(df_team_game_logs_selected[week_col] >= 1) & (df_team_game_logs_selected[week_col] <= 18)]
+    merged_data = pd.merge(df_team_game_logs_filtered, df_teams, left_on=team_name_col, right_on='Team', how='left')
+    team_passing_yards = merged_data.groupby('TeamID')['pass_yds'].mean().reset_index()
+    team_passing_yards_ranked = team_passing_yards.sort_values(by='pass_yds', ascending=False).reset_index(drop=True)
+    st.dataframe(team_passing_yards_ranked, use_container_width=True)
+    
+    # Top 5 Teams for Passing Yards per Game
+    st.write(f"**Top 5 Teams for Most Passing Yards per Game ({selected_season} Season):**")
+    top_5_pass_yds = team_passing_yards_ranked.head(5)
+    st.dataframe(top_5_pass_yds, use_container_width=True)
+
+# Rushing Yards
+with col2:
+    st.write(f"Rushing Yards ({selected_season})")
+    df_team_game_logs_filtered = df_team_game_logs_selected[(df_team_game_logs_selected[week_col] >= 1) & (df_team_game_logs_selected[week_col] <= 18)]
+    merged_data = pd.merge(df_team_game_logs_filtered, df_teams, left_on=team_name_col, right_on='Team', how='left')
+    team_rushing_yards = merged_data.groupby('TeamID')['rush_yds'].mean().reset_index()
+    team_rushing_yards_ranked = team_rushing_yards.sort_values(by='rush_yds', ascending=False).reset_index(drop=True)
+    st.dataframe(team_rushing_yards_ranked, use_container_width=True)
+    
+    # Top 5 Teams for Rushing Yards per Game
+    st.write(f"**Top 5 Teams for Most Rushing Yards per Game ({selected_season} Season):**")
+    top_5_rush_yds = team_rushing_yards_ranked.head(5)
+    st.dataframe(top_5_rush_yds, use_container_width=True)
+
+### --- Avg Passing/Rushing Yards Allowed Per Game --- ###
+st.divider()
+st.subheader(f"Avg Opponent Passing & Rushing Yards Per Game")
+st.write(" ")
+
+col1, col2 = st.columns(2)
+
+filtered_df_teams = df_teams.copy()
+filtered_df_teams.loc[:, 'TeamID'] = filtered_df_teams['TeamID'].str.lower()
+
+# Create a copy of df_schedule_and_game_results to avoid SettingWithCopyWarning
+df_schedule_results = df_schedule_and_game_results.copy()
+df_schedule_results.loc[:, 'Week'] = pd.to_numeric(df_schedule_results['Week'], errors='coerce')
+df_schedule_results = df_schedule_results.dropna(subset=['Day'])
+
+team_abbreviation_mapping = {
+    'gnb': 'gb',
+    'htx': 'hou',
+    'clt': 'ind',
+    'kan': 'kc',
+    'sdg': 'lac',
+    'ram': 'lar',
+    'rai': 'lvr',
+    'nwe': 'ne',
+    'nor': 'no',
+    'sfo': 'sf',
+    'tam': 'tb',
+    'oti': 'ten',
+    'rav': 'bal',
+    'crd': 'ari'
+}
+df_schedule_results.loc[:, 'Team'] = df_schedule_results['Team'].map(team_abbreviation_mapping).fillna(df_schedule_results['Team'])
+df_schedule_and_game_results_filtered = df_schedule_results[(df_schedule_results['Season'] == selected_season) & (df_schedule_results['Week'] >= 1) & (df_schedule_results['Week'] <= 18)]
+
+# Passing Yards Allowed
+with col1:
+    st.write(f"Passing Yards Allowed ({selected_season})")
+    results_passing_yards_allowed = []
+    for team in filtered_df_teams['TeamID']:
+        team_filtered_data = df_schedule_and_game_results_filtered[df_schedule_and_game_results_filtered['Team'] == team]
+        avg_passing_yards_allowed = team_filtered_data['OppPassY'].mean()
+        results_passing_yards_allowed.append({'Team': team.upper(), 'Avg Passing Yards Allowed': avg_passing_yards_allowed})
+    st.dataframe(results_passing_yards_allowed, use_container_width=True)
+    
+    # Top 5 Teams Allowing the Fewest Passing Yards per Game
+    st.write(f"**Top 5 Teams Allowing the Fewest Passing Yards per Game ({selected_season} Season):**")
+    df_passing_allowed = pd.DataFrame(results_passing_yards_allowed)
+    top_5_pass_allowed = df_passing_allowed.sort_values(by='Avg Passing Yards Allowed', ascending=True).head(5)
+    st.dataframe(top_5_pass_allowed, use_container_width=True)
+
+# Rushing Yards Allowed
+with col2:
+    st.write(f"Rushing Yards Allowed ({selected_season})")
+    results_rushing_yards_allowed = []
+    for team in filtered_df_teams['TeamID']:
+        team_filtered_data = df_schedule_and_game_results_filtered[df_schedule_and_game_results_filtered['Team'] == team]
+        avg_rushing_yards_allowed = team_filtered_data['OppRushY'].mean()
+        results_rushing_yards_allowed.append({'Team': team.upper(), 'Avg Rushing Yards Allowed': avg_rushing_yards_allowed})
+    st.dataframe(results_rushing_yards_allowed, use_container_width=True)
+    
+    # Top 5 Teams Allowing the Fewest Rushing Yards per Game
+    st.write(f"**Top 5 Teams Allowing the Fewest Rushing Yards per Game ({selected_season} Season):**")
+    df_rushing_allowed = pd.DataFrame(results_rushing_yards_allowed)
+    top_5_rush_allowed = df_rushing_allowed.sort_values(by='Avg Rushing Yards Allowed', ascending=True).head(5)
+    st.dataframe(top_5_rush_allowed, use_container_width=True)

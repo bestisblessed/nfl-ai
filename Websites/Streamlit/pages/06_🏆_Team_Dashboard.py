@@ -75,64 +75,64 @@ team_name_col = 'team_name'
 week_col = 'week'
 st.divider()
 
-### Average Pass Yards and Rush Yards per Game for NFL Teams ###
-df_team_game_logs_selected['season'] = selected_season
-season_data = df_team_game_logs_selected[df_team_game_logs_selected['season'] == selected_season]
-team_averages = season_data.groupby(team_name_col).agg({'pass_yds': 'mean', 'rush_yds': 'mean'}).reset_index()
-team_averages = team_averages.sort_values(team_name_col)
-fig, ax = plt.subplots(figsize=(14, 7))
-x = range(len(team_averages))
-bar_width = 0.35
-bar1 = plt.bar(x, team_averages['pass_yds'], width=bar_width, label='Average Pass Yards per Game')
-bar2 = plt.bar([i + bar_width for i in x], team_averages['rush_yds'], width=bar_width, label='Average Rush Yards per Game')
-plt.xlabel('Teams')
-plt.ylabel('Yards per Game')
-plt.title(f'Average Pass Yards and Rush Yards per Game for NFL Teams ({selected_season} Season)')
-plt.xticks([i + bar_width / 2 for i in x], team_averages[team_name_col], rotation=90)
-plt.legend()
-plt.tight_layout()
-st.pyplot(plt)
-top_5_pass_yds = team_averages[[team_name_col, 'pass_yds']].sort_values(by='pass_yds', ascending=False).head(5)
-top_5_rush_yds = team_averages[[team_name_col, 'rush_yds']].sort_values(by='rush_yds', ascending=False).head(5)
-col1, col2 = st.columns(2)
-with col1:
-    st.write(f"Top 5 Teams for Passing Yards per Game ({selected_season} Season):")
-    st.write(top_5_pass_yds)
-with col2:
-    st.write(f"Top 5 Teams for Rushing Yards per Game ({selected_season} Season):")
-    st.write(top_5_rush_yds)
-st.divider()
+# ### Average Pass Yards and Rush Yards per Game for NFL Teams ###
+# df_team_game_logs_selected['season'] = selected_season
+# season_data = df_team_game_logs_selected[df_team_game_logs_selected['season'] == selected_season]
+# team_averages = season_data.groupby(team_name_col).agg({'pass_yds': 'mean', 'rush_yds': 'mean'}).reset_index()
+# team_averages = team_averages.sort_values(team_name_col)
+# fig, ax = plt.subplots(figsize=(14, 7))
+# x = range(len(team_averages))
+# bar_width = 0.35
+# bar1 = plt.bar(x, team_averages['pass_yds'], width=bar_width, label='Average Pass Yards per Game')
+# bar2 = plt.bar([i + bar_width for i in x], team_averages['rush_yds'], width=bar_width, label='Average Rush Yards per Game')
+# plt.xlabel('Teams')
+# plt.ylabel('Yards per Game')
+# plt.title(f'Average Pass Yards and Rush Yards per Game for NFL Teams ({selected_season} Season)')
+# plt.xticks([i + bar_width / 2 for i in x], team_averages[team_name_col], rotation=90)
+# plt.legend()
+# plt.tight_layout()
+# st.pyplot(plt)
+# top_5_pass_yds = team_averages[[team_name_col, 'pass_yds']].sort_values(by='pass_yds', ascending=False).head(5)
+# top_5_rush_yds = team_averages[[team_name_col, 'rush_yds']].sort_values(by='rush_yds', ascending=False).head(5)
+# col1, col2 = st.columns(2)
+# with col1:
+#     st.write(f"Top 5 Teams for Passing Yards per Game ({selected_season} Season):")
+#     st.write(top_5_pass_yds)
+# with col2:
+#     st.write(f"Top 5 Teams for Rushing Yards per Game ({selected_season} Season):")
+#     st.write(top_5_rush_yds)
+# st.divider()
 
-### Average Pass Yards and Rush Yards Allowed per Game for NFL Teams ###
-df_team_game_logs_selected['season'] = selected_season
-season_data = df_team_game_logs_selected[df_team_game_logs_selected['season'] == selected_season]
-defense_averages = season_data.groupby('opp').agg({'pass_yds': 'mean', 'rush_yds': 'mean'}).reset_index()
-defense_averages.columns = ['Team_Name', 'pass_yards_allowed', 'rush_yards_allowed']
-defense_averages = defense_averages.sort_values('Team_Name')
-fig, ax = plt.subplots(figsize=(14, 7))
-x_def = range(len(defense_averages))
-bar_width_def = 0.35
-bar1_def = plt.bar(x_def, defense_averages['pass_yards_allowed'], width=bar_width_def, label='Average Pass Yards Allowed per Game')
-bar2_def = plt.bar([i + bar_width_def for i in x_def], defense_averages['rush_yards_allowed'], width=bar_width_def, label='Average Rush Yards Allowed per Game')
-plt.xlabel('Teams')
-plt.ylabel('Yards Allowed per Game')
-plt.title(f'Average Pass Yards and Rush Yards Allowed per Game for NFL Teams ({selected_season} Season)')
-plt.xticks([i + bar_width_def / 2 for i in x_def], defense_averages['Team_Name'], rotation=90)
-plt.legend()
-plt.tight_layout()
-st.pyplot(plt)
-top_5_pass_yards_allowed = defense_averages[['Team_Name', 'pass_yards_allowed']].sort_values(by='pass_yards_allowed', ascending=True).head(5)
-bottom_5_pass_yards_allowed = defense_averages[['Team_Name', 'pass_yards_allowed']].sort_values(by='pass_yards_allowed', ascending=False).head(5)
-top_5_rush_yards_allowed = defense_averages[['Team_Name', 'rush_yards_allowed']].sort_values(by='rush_yards_allowed', ascending=True).head(5)
-bottom_5_rush_yards_allowed = defense_averages[['Team_Name', 'rush_yards_allowed']].sort_values(by='rush_yards_allowed', ascending=False).head(5)
-col1, col2 = st.columns(2)
-with col1:
-    st.write(f"Top 5 Teams Allowing the Fewest Passing Yards per Game ({selected_season} Season):")
-    st.write(top_5_pass_yards_allowed)
-with col2:
-    st.write(f"Top 5 Teams Allowing the Fewest Rushing Yards per Game ({selected_season} Season):")
-    st.write(top_5_rush_yards_allowed)
-st.divider()
+# ### Average Pass Yards and Rush Yards Allowed per Game for NFL Teams ###
+# df_team_game_logs_selected['season'] = selected_season
+# season_data = df_team_game_logs_selected[df_team_game_logs_selected['season'] == selected_season]
+# defense_averages = season_data.groupby('opp').agg({'pass_yds': 'mean', 'rush_yds': 'mean'}).reset_index()
+# defense_averages.columns = ['Team_Name', 'pass_yards_allowed', 'rush_yards_allowed']
+# defense_averages = defense_averages.sort_values('Team_Name')
+# fig, ax = plt.subplots(figsize=(14, 7))
+# x_def = range(len(defense_averages))
+# bar_width_def = 0.35
+# bar1_def = plt.bar(x_def, defense_averages['pass_yards_allowed'], width=bar_width_def, label='Average Pass Yards Allowed per Game')
+# bar2_def = plt.bar([i + bar_width_def for i in x_def], defense_averages['rush_yards_allowed'], width=bar_width_def, label='Average Rush Yards Allowed per Game')
+# plt.xlabel('Teams')
+# plt.ylabel('Yards Allowed per Game')
+# plt.title(f'Average Pass Yards and Rush Yards Allowed per Game for NFL Teams ({selected_season} Season)')
+# plt.xticks([i + bar_width_def / 2 for i in x_def], defense_averages['Team_Name'], rotation=90)
+# plt.legend()
+# plt.tight_layout()
+# st.pyplot(plt)
+# top_5_pass_yards_allowed = defense_averages[['Team_Name', 'pass_yards_allowed']].sort_values(by='pass_yards_allowed', ascending=True).head(5)
+# bottom_5_pass_yards_allowed = defense_averages[['Team_Name', 'pass_yards_allowed']].sort_values(by='pass_yards_allowed', ascending=False).head(5)
+# top_5_rush_yards_allowed = defense_averages[['Team_Name', 'rush_yards_allowed']].sort_values(by='rush_yards_allowed', ascending=True).head(5)
+# bottom_5_rush_yards_allowed = defense_averages[['Team_Name', 'rush_yards_allowed']].sort_values(by='rush_yards_allowed', ascending=False).head(5)
+# col1, col2 = st.columns(2)
+# with col1:
+#     st.write(f"Top 5 Teams Allowing the Fewest Passing Yards per Game ({selected_season} Season):")
+#     st.write(top_5_pass_yards_allowed)
+# with col2:
+#     st.write(f"Top 5 Teams Allowing the Fewest Rushing Yards per Game ({selected_season} Season):")
+#     st.write(top_5_rush_yards_allowed)
+# st.divider()
 
 ### Average Passing and Running Plays per Game for NFL Teams ###
 df_team_game_logs_selected['season'] = selected_season
