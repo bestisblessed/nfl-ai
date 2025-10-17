@@ -16,6 +16,9 @@ from feature_engineering import (
 )
 
 
+OUTPUT_DIR = Path("/workspace/nfl-ai/Models/IN-PROGRESS/anytime_touchdown_models")
+
+
 def train_model(test_size: float = 0.2, random_state: int = 42) -> tuple[XGBClassifier, tuple[str, ...]]:
     model_data = build_training_table(window=ROLLING_WINDOW)
     X_train, X_valid, y_train, y_valid = train_test_split(
@@ -33,11 +36,12 @@ def train_model(test_size: float = 0.2, random_state: int = 42) -> tuple[XGBClas
         max_depth=4,
         subsample=0.8,
         colsample_bytree=0.8,
-        n_estimators=400,
+        n_estimators=250,
         reg_lambda=1.0,
         reg_alpha=0.5,
         random_state=random_state,
         n_jobs=-1,
+        tree_method="hist",
     )
     model.fit(X_train, y_train)
 
@@ -85,8 +89,7 @@ def main() -> None:
     model, feature_columns = train_model()
     predictions = generate_predictions(model, feature_columns)
 
-    output_dir = Path(__file__).resolve().parent
-    save_predictions(predictions, output_dir / "xgboost_week7.csv")
+    save_predictions(predictions, OUTPUT_DIR / "xgboost_week7.csv")
 
     print("Top probabilities by team:")
     display_cols = ["player", "team", "upcoming_opponent", "role", "xgboost_anytime_td_prob"]

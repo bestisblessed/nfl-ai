@@ -9,9 +9,9 @@ from typing import List, Tuple
 import numpy as np
 import pandas as pd
 
-BASE_DIR = Path(__file__).resolve().parent
-DATA_DIR = BASE_DIR.parent / "final_data_pfr"
-UPCOMING_GAMES_PATH = BASE_DIR.parent.parent / "upcoming_games.csv"
+BASE_DIR = Path("/workspace/nfl-ai/Models/IN-PROGRESS/anytime_touchdown_models")
+DATA_DIR = Path("/workspace/nfl-ai/Models/IN-PROGRESS/final_data_pfr")
+UPCOMING_GAMES_PATH = Path("/workspace/nfl-ai/Models/upcoming_games.csv")
 
 ROLLING_WINDOW = 3
 
@@ -23,6 +23,7 @@ class ModelData:
     features: pd.DataFrame
     target: pd.Series
     feature_columns: Tuple[str, ...]
+    metadata: pd.DataFrame
 
 
 @lru_cache(maxsize=1)
@@ -153,10 +154,20 @@ def build_training_table(window: int = ROLLING_WINDOW) -> ModelData:
     train_df = train_df[train_df[f"games_played_{window}"] > 0].copy()
     train_df[feature_columns] = train_df[feature_columns].fillna(0.0)
 
+    metadata_columns = [
+        "player",
+        "player_id",
+        "team",
+        "opponent_team",
+        "season",
+        "week",
+    ]
+
     return ModelData(
-        features=train_df[feature_columns],
-        target=train_df["any_td"].astype(int),
+        features=train_df[feature_columns].reset_index(drop=True),
+        target=train_df["any_td"].astype(int).reset_index(drop=True),
         feature_columns=tuple(feature_columns),
+        metadata=train_df[metadata_columns].reset_index(drop=True),
     )
 
 

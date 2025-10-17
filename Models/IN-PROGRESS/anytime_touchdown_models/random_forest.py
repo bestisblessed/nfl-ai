@@ -16,6 +16,9 @@ from feature_engineering import (
 )
 
 
+OUTPUT_DIR = Path("/workspace/nfl-ai/Models/IN-PROGRESS/anytime_touchdown_models")
+
+
 def train_model(test_size: float = 0.2, random_state: int = 42) -> tuple[RandomForestClassifier, tuple[str, ...]]:
     model_data = build_training_table(window=ROLLING_WINDOW)
     X_train, X_valid, y_train, y_valid = train_test_split(
@@ -27,7 +30,7 @@ def train_model(test_size: float = 0.2, random_state: int = 42) -> tuple[RandomF
     )
 
     model = RandomForestClassifier(
-        n_estimators=300,
+        n_estimators=150,
         max_depth=8,
         min_samples_leaf=50,
         class_weight="balanced",
@@ -81,8 +84,7 @@ def main() -> None:
     model, feature_columns = train_model()
     predictions = generate_predictions(model, feature_columns)
 
-    output_dir = Path(__file__).resolve().parent
-    save_predictions(predictions, output_dir / "random_forest_week7.csv")
+    save_predictions(predictions, OUTPUT_DIR / "random_forest_week7.csv")
 
     print("Top probabilities by team:")
     display_cols = ["player", "team", "upcoming_opponent", "role", "random_forest_anytime_td_prob"]
