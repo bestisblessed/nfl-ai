@@ -223,3 +223,84 @@ with col2:
         avg_rushing_yards_allowed = team_filtered_data['OppRushY'].mean()
         results_rushing_yards_allowed.append({'Team': team, 'Avg Rushing Yards Allowed': avg_rushing_yards_allowed})
     st.dataframe(results_rushing_yards_allowed, use_container_width=True)
+
+
+### --- 1H vs 2H Scoring Trends --- ###
+st.divider()
+st.header(f"1H vs 2H Scoring Trends {selected_season}")
+st.write(" ")
+
+# Load quarter scoring box scores and compute halves
+current_dir = os.path.dirname(os.path.abspath(__file__))
+boxscores_path = os.path.join(current_dir, '../data', 'all_box_scores.csv')
+try:
+    df_box = pd.read_csv(boxscores_path)
+except FileNotFoundError:
+    st.error("all_box_scores.csv not found.")
+    st.stop()
+
+# Extract PFR game id to join to Games for season/week filtering
+df_box['pfr'] = df_box['URL'].str.extract(r'/boxscores/([0-9a-z]+)\.htm')
+for c in ['1', '2', '3', '4']:
+    df_box[c] = pd.to_numeric(df_box[c], errors='coerce').fillna(0)
+df_box['first_half'] = df_box['1'] + df_box['2']
+df_box['second_half'] = df_box['3'] + df_box['4']
+
+# Restrict to regular season games for the selected season (weeks 1-18)
+games_sel = df_games[(df_games['season'] == selected_season) & (df_games['game_type'] == 'REG') & (df_games['week'].between(1, 18))]
+df_box = df_box.merge(games_sel[['pfr', 'season']], on='pfr', how='inner')
+
+# Map full team names to TeamID
+df_box = df_box.merge(df_teams[['TeamID', 'Team']], left_on='Team', right_on='Team', how='left')
+
+# Aggregate per team
+team_halves = (
+    df_box.groupby('TeamID')[['first_half', 'second_half']]
+    .mean()
+    .round(2)
+    .reset_index()
+)
+team_halves['diff_2H_minus_1H'] = (team_halves['second_half'] - team_halves['first_half']).round(2)
+
+# Display table
+st.markdown("<h5 style='text-align: center; color: grey;'>Average Points by Half (Reg Season)</h5>", unsafe_allow_html=True)
+st.dataframe(
+    team_halves.sort_values('diff_2H_minus_1H', ascending=False).set_index('TeamID'),
+    use_container_width=True,
+)
+
+# Create images directory
+images_dir = os.path.normpath(os.path.join(current_dir, '../images'))
+os.makedirs(images_dir, exist_ok=True)
+
+# Figure 1: 2H - 1H difference (horizontal bar)
+fig1, ax1 = plt.subplots(figsize=(10, 12))
+ordered = team_halves.sort_values('diff_2H_minus_1H', ascending=True)
+ax1.barh(ordered['TeamID'], ordered['diff_2H_minus_1H'], color=['#2ecc71' if v > 0 else '#e74c3c' for v in ordered['diff_2H_minus_1H']])
+ax1.axvline(0, color='#7f8c8d', linewidth=1)
+ax1.set_xlabel('2H - 1H (points)')
+ax1.set_ylabel('Team')
+ax1.set_title(f'Average 2H minus 1H Points by Team ({selected_season})')
+fig1.tight_layout()
+diff_path = os.path.join(images_dir, f'1h_vs_2h_diff_{selected_season}.png')
+fig1.savefig(diff_path, dpi=150, bbox_inches='tight')
+st.image(diff_path, caption='2H - 1H Average Points by Team', use_container_width=True)
+with open(diff_path, 'rb') as f:
+    st.download_button('Download Diff Chart (PNG)', f.read(), file_name=f'1h_vs_2h_diff_{selected_season}.png')
+
+# Figure 2: 1H vs 2H scatter
+fig2, ax2 = plt.subplots(figsize=(8, 8))
+ax2.scatter(team_halves['first_half'], team_halves['second_half'], color='#3498db')
+mn = float(min(team_halves['first_half'].min(), team_halves['second_half'].min()))
+mx = float(max(team_halves['first_half'].max(), team_halves['second_half'].max()))
+ax2.plot([mn, mx], [mn, mx], linestyle='--', color='#e74c3c', linewidth=1)
+ax2.set_xlabel('Avg 1H Points')
+ax2.set_ylabel('Avg 2H Points')
+ax2.set_title(f'Avg 1H vs 2H Points by Team ({selected_season})')
+ax2.grid(True, axis='both', linestyle='--', alpha=0.3)
+fig2.tight_layout()
+scatter_path = os.path.join(images_dir, f'1h_vs_2h_scatter_{selected_season}.png')
+fig2.savefig(scatter_path, dpi=150, bbox_inches='tight')
+st.image(scatter_path, caption='Avg 1H vs 2H Points by Team', use_container_width=True)
+with open(scatter_path, 'rb') as f:
+    st.download_button('Download Scatter (PNG)', f.read(), file_name=f'1h_vs_2h_scatter_{selected_season}.png')
