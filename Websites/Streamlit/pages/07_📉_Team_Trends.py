@@ -335,3 +335,106 @@ with col2:
     ax.axvline(x=0, color='black', linestyle='-', linewidth=0.8)
     ax.grid(axis='x', alpha=0.3)
     st.pyplot(fig)
+
+
+### --- Quarter-by-Quarter Scoring Trends --- ###
+st.divider()
+st.header(f"Quarter-by-Quarter Scoring Trends {selected_season}")
+st.write("##")
+
+# Calculate quarter averages
+team_quarter_scores = df_season_half.groupby('TeamID')[['1', '2', '3', '4']].mean()
+team_quarter_scores.columns = ['Q1', 'Q2', 'Q3', 'Q4']
+
+# 1Q Specific Analysis
+st.markdown("<h5 style='text-align: center; color: grey;'>1st Quarter (Q1) Scoring Leaders</h5>", unsafe_allow_html=True)
+st.write("Teams that come out strong and score early in games")
+q1_sorted = team_quarter_scores.sort_values(by='Q1', ascending=False)
+
+col1, col2 = st.columns((1, 3))
+with col1:
+    st.dataframe(q1_sorted[['Q1']], use_container_width=True)
+with col2:
+    fig, ax = plt.subplots(figsize=(10, 8))
+    ax.barh(range(len(q1_sorted)), q1_sorted['Q1'], color='#FF6B6B', alpha=0.8)
+    ax.set_yticks(range(len(q1_sorted)))
+    ax.set_yticklabels(q1_sorted.index)
+    ax.set_xlabel('Average Points in Q1', fontsize=10)
+    ax.set_title(f'{selected_season} Season - 1st Quarter Scoring', fontsize=12, fontweight='bold')
+    ax.grid(axis='x', alpha=0.3)
+    st.pyplot(fig)
+
+# All Quarters Comparison
+st.write(" ")
+st.write(" ")
+st.markdown("<h5 style='text-align: center; color: grey;'>All Quarters Scoring Comparison</h5>", unsafe_allow_html=True)
+team_quarter_sorted = team_quarter_scores.sort_values(by='Q1', ascending=False)
+
+col1, col2 = st.columns((3, 1))
+with col1:
+    fig, ax = plt.subplots(figsize=(12, 6))
+    x = range(len(team_quarter_sorted))
+    width = 0.2
+    
+    ax.bar([i - 1.5*width for i in x], team_quarter_sorted['Q1'], 
+           width, label='Q1', alpha=0.8, color='#FF6B6B')
+    ax.bar([i - 0.5*width for i in x], team_quarter_sorted['Q2'], 
+           width, label='Q2', alpha=0.8, color='#4ECDC4')
+    ax.bar([i + 0.5*width for i in x], team_quarter_sorted['Q3'], 
+           width, label='Q3', alpha=0.8, color='#45B7D1')
+    ax.bar([i + 1.5*width for i in x], team_quarter_sorted['Q4'], 
+           width, label='Q4', alpha=0.8, color='#96CEB4')
+    
+    ax.set_xlabel('Team', fontsize=10)
+    ax.set_ylabel('Average Points', fontsize=10)
+    ax.set_title(f'{selected_season} Season - Scoring by Quarter', fontsize=11, fontweight='bold')
+    ax.set_xticks(x)
+    ax.set_xticklabels(team_quarter_sorted.index, rotation=45, ha='right', fontsize=8)
+    ax.legend()
+    ax.grid(axis='y', alpha=0.3)
+    st.pyplot(fig)
+with col2:
+    st.dataframe(team_quarter_sorted, use_container_width=True)
+
+# Quarter Performance Heatmap
+st.write(" ")
+st.write(" ")
+st.markdown("<h5 style='text-align: center; color: grey;'>Quarter Scoring Heatmap</h5>", unsafe_allow_html=True)
+st.write("Visual representation of each team's performance across all quarters")
+
+fig, ax = plt.subplots(figsize=(8, 12))
+data_for_heatmap = team_quarter_scores.sort_values(by='Q1', ascending=False)
+im = ax.imshow(data_for_heatmap.values, cmap='YlOrRd', aspect='auto')
+
+ax.set_xticks(range(4))
+ax.set_xticklabels(['Q1', 'Q2', 'Q3', 'Q4'], fontsize=10)
+ax.set_yticks(range(len(data_for_heatmap)))
+ax.set_yticklabels(data_for_heatmap.index, fontsize=9)
+ax.set_title(f'{selected_season} Season - Quarter Scoring Heatmap', fontsize=12, fontweight='bold')
+
+for i in range(len(data_for_heatmap)):
+    for j in range(4):
+        text = ax.text(j, i, f'{data_for_heatmap.values[i, j]:.1f}',
+                      ha="center", va="center", color="black", fontsize=7)
+
+plt.colorbar(im, ax=ax, label='Average Points')
+st.pyplot(fig)
+
+# Strongest/Weakest Quarter Analysis
+st.write(" ")
+st.write(" ")
+st.markdown("<h5 style='text-align: center; color: grey;'>Strongest & Weakest Quarters by Team</h5>", unsafe_allow_html=True)
+team_quarter_analysis = team_quarter_scores.copy()
+team_quarter_analysis['Strongest_Quarter'] = team_quarter_scores.idxmax(axis=1)
+team_quarter_analysis['Weakest_Quarter'] = team_quarter_scores.idxmin(axis=1)
+team_quarter_analysis['Quarter_Differential'] = team_quarter_scores.max(axis=1) - team_quarter_scores.min(axis=1)
+
+col1, col2 = st.columns(2)
+with col1:
+    st.markdown("**Strongest Quarters**")
+    strongest_summary = team_quarter_analysis['Strongest_Quarter'].value_counts().sort_index()
+    st.dataframe(team_quarter_analysis[['Strongest_Quarter', 'Quarter_Differential']].sort_values(by='Quarter_Differential', ascending=False), use_container_width=True)
+with col2:
+    st.markdown("**Weakest Quarters**")
+    weakest_summary = team_quarter_analysis['Weakest_Quarter'].value_counts().sort_index()
+    st.dataframe(team_quarter_analysis[['Weakest_Quarter']].sort_index(), use_container_width=True)
