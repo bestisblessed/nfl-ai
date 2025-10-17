@@ -3,6 +3,8 @@ import pandas as pd
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+import matplotlib.image as mpimg
+from matplotlib.offsetbox import OffsetImage, AnnotationBbox
 
 # Load data
 teams = pd.read_csv('/workspace/Websites/Streamlit/data/Teams.csv')
@@ -39,12 +41,25 @@ for season in [2024, 2025]:
     fig1.savefig(os.path.join(images_dir, f'1h_vs_2h_diff_{season}.png'), dpi=150, bbox_inches='tight')
     plt.close(fig1)
 
-    # Figure 2: scatter
+    # Figure 2: scatter with team logos
     fig2, ax2 = plt.subplots(figsize=(8, 8))
-    ax2.scatter(team_halves['first_half'], team_halves['second_half'], color='#3498db')
-    mn = float(min(team_halves['first_half'].min(), team_halves['second_half'].min()))
-    mx = float(max(team_halves['first_half'].max(), team_halves['second_half'].max()))
-    ax2.plot([mn, mx], [mn, mx], linestyle='--', color='#e74c3c', linewidth=1)
+    x = team_halves['first_half'].astype(float)
+    y = team_halves['second_half'].astype(float)
+    mn = float(min(x.min(), y.min()))
+    mx = float(max(x.max(), y.max()))
+    pad = max((mx - mn) * 0.08, 0.5)
+    ax2.plot([mn - pad, mx + pad], [mn - pad, mx + pad], linestyle='--', color='#e74c3c', linewidth=1)
+
+    logos_dir = '/workspace/Websites/Streamlit/images/team-logos'
+    for _, r in team_halves.iterrows():
+        tid = str(r['TeamID'])
+        img_path = os.path.join(logos_dir, f'{tid}.png')
+        img = mpimg.imread(img_path)
+        ab = AnnotationBbox(OffsetImage(img, zoom=0.25), (float(r['first_half']), float(r['second_half'])), frameon=False)
+        ax2.add_artist(ab)
+
+    ax2.set_xlim(mn - pad, mx + pad)
+    ax2.set_ylim(mn - pad, mx + pad)
     ax2.set_xlabel('Avg 1H Points')
     ax2.set_ylabel('Avg 2H Points')
     ax2.set_title(f'Avg 1H vs 2H Points by Team ({season})')

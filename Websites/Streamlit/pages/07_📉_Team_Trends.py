@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
+import matplotlib.image as mpimg
+from matplotlib.offsetbox import OffsetImage, AnnotationBbox
 import sqlite3
 import os
 
@@ -288,12 +290,26 @@ st.image(diff_path, caption='2H - 1H Average Points by Team', use_container_widt
 with open(diff_path, 'rb') as f:
     st.download_button('Download Diff Chart (PNG)', f.read(), file_name=f'1h_vs_2h_diff_{selected_season}.png')
 
-# Figure 2: 1H vs 2H scatter
+# Figure 2: 1H vs 2H scatter with team logos
 fig2, ax2 = plt.subplots(figsize=(8, 8))
-ax2.scatter(team_halves['first_half'], team_halves['second_half'], color='#3498db')
-mn = float(min(team_halves['first_half'].min(), team_halves['second_half'].min()))
-mx = float(max(team_halves['first_half'].max(), team_halves['second_half'].max()))
-ax2.plot([mn, mx], [mn, mx], linestyle='--', color='#e74c3c', linewidth=1)
+x = team_halves['first_half'].astype(float)
+y = team_halves['second_half'].astype(float)
+mn = float(min(x.min(), y.min()))
+mx = float(max(x.max(), y.max()))
+pad = max((mx - mn) * 0.08, 0.5)
+ax2.plot([mn - pad, mx + pad], [mn - pad, mx + pad], linestyle='--', color='#e74c3c', linewidth=1)
+
+# Place team logo at each (x, y)
+logos_dir = os.path.normpath(os.path.join(current_dir, '../images/team-logos'))
+for _, r in team_halves.iterrows():
+    tid = str(r['TeamID'])
+    img_path = os.path.join(logos_dir, f'{tid}.png')
+    img = mpimg.imread(img_path)
+    ab = AnnotationBbox(OffsetImage(img, zoom=0.25), (float(r['first_half']), float(r['second_half'])), frameon=False)
+    ax2.add_artist(ab)
+
+ax2.set_xlim(mn - pad, mx + pad)
+ax2.set_ylim(mn - pad, mx + pad)
 ax2.set_xlabel('Avg 1H Points')
 ax2.set_ylabel('Avg 2H Points')
 ax2.set_title(f'Avg 1H vs 2H Points by Team ({selected_season})')
