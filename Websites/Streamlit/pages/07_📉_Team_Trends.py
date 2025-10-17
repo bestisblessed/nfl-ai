@@ -320,3 +320,35 @@ fig2.savefig(scatter_path, dpi=150, bbox_inches='tight')
 st.image(scatter_path, caption='Avg 1H vs 2H Points by Team', use_container_width=True)
 with open(scatter_path, 'rb') as f:
     st.download_button('Download Scatter (PNG)', f.read(), file_name=f'1h_vs_2h_scatter_{selected_season}.png')
+
+
+### --- Scatterplots --- ###
+st.divider()
+st.header('Scatterplots')
+st.write(' ')
+
+# 1H vs 2H (logos) inline plot
+figS, axS = plt.subplots(figsize=(8, 8))
+xs = team_halves['first_half'].astype(float)
+ys = team_halves['second_half'].astype(float)
+mn_s = float(min(xs.min(), ys.min()))
+mx_s = float(max(xs.max(), ys.max()))
+pad_s = max((mx_s - mn_s) * 0.08, 0.5)
+axS.plot([mn_s - pad_s, mx_s + pad_s], [mn_s - pad_s, mx_s + pad_s], linestyle='--', color='#e74c3c', linewidth=1)
+
+logos_dir_s = os.path.normpath(os.path.join(current_dir, '../images/team-logos'))
+for _, rr in team_halves.iterrows():
+    tid = str(rr['TeamID'])
+    pth = os.path.join(logos_dir_s, f'{tid}.png')
+    img = mpimg.imread(pth)
+    ab = AnnotationBbox(OffsetImage(img, zoom=0.28), (float(rr['first_half']), float(rr['second_half'])), frameon=False)
+    axS.add_artist(ab)
+
+axS.set_xlim(mn_s - pad_s, mx_s + pad_s)
+axS.set_ylim(mn_s - pad_s, mx_s + pad_s)
+axS.set_xlabel('Avg 1H Points')
+axS.set_ylabel('Avg 2H Points')
+axS.set_title(f'Avg 1H vs 2H Points by Team ({selected_season})')
+axS.grid(True, axis='both', linestyle='--', alpha=0.3)
+figS.tight_layout()
+st.pyplot(figS)
