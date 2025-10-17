@@ -273,7 +273,7 @@ st.subheader(f"Quarter Performance Trends")
 st.write(" ")
 
 # Placeholder for future quarter performance analysis
-st.info("**Coming Soon:**")
+st.info("**Coming Soon**")
 
 ### --- Avg PPG and PA Home vs Away --- ###
 st.divider()
@@ -538,16 +538,170 @@ with col2:
 
 ### --- Passing vs Rushing Plays Called --- ###
 st.divider()
-st.subheader(f"Passing vs Rushing Plays Called")
+st.subheader(f"Avg Passing vs Rushing Plays Called")
 st.write(" ")
 
-# Placeholder for future play calling analysis
-st.info("*Coming Soon:** Play calling analysis including pass/run ratios, situational play calling trends, down-and-distance analysis, and offensive strategy insights.")
+# Average Passing and Running Plays per Game for NFL Teams
+df_team_game_logs_selected['season'] = selected_season
+season_data = df_team_game_logs_selected[df_team_game_logs_selected['season'] == selected_season]
+team_averages = season_data.groupby(team_name_col).agg({'pass_att': 'mean', 'rush_att': 'mean'}).reset_index()
+
+# Convert team names to abbreviations
+team_abbreviation_mapping = {
+    'Arizona Cardinals': 'ARI', 'Atlanta Falcons': 'ATL', 'Baltimore Ravens': 'BAL', 'Buffalo Bills': 'BUF',
+    'Carolina Panthers': 'CAR', 'Chicago Bears': 'CHI', 'Cincinnati Bengals': 'CIN', 'Cleveland Browns': 'CLE',
+    'Dallas Cowboys': 'DAL', 'Denver Broncos': 'DEN', 'Detroit Lions': 'DET', 'Green Bay Packers': 'GB',
+    'Houston Texans': 'HOU', 'Indianapolis Colts': 'IND', 'Jacksonville Jaguars': 'JAX', 'Kansas City Chiefs': 'KC',
+    'Las Vegas Raiders': 'LVR', 'Los Angeles Chargers': 'LAC', 'Los Angeles Rams': 'LAR', 'Miami Dolphins': 'MIA',
+    'Minnesota Vikings': 'MIN', 'New England Patriots': 'NE', 'New Orleans Saints': 'NO', 'New York Giants': 'NYG',
+    'New York Jets': 'NYJ', 'Philadelphia Eagles': 'PHI', 'Pittsburgh Steelers': 'PIT', 'San Francisco 49ers': 'SF',
+    'Seattle Seahawks': 'SEA', 'Tampa Bay Buccaneers': 'TB', 'Tennessee Titans': 'TEN', 'Washington Commanders': 'WAS'
+}
+team_averages['team_abbrev'] = team_averages[team_name_col].map(team_abbreviation_mapping)
+team_averages = team_averages.dropna().reset_index(drop=True)
+
+# Create vertical bar charts for passing and rushing plays
+team_averages_pass_sorted = team_averages.sort_values('pass_att', ascending=False)
+team_averages_rush_sorted = team_averages.sort_values('rush_att', ascending=False)
+
+# Passing Plays Chart
+st.markdown(f"<h5 style='text-align: center; color: grey;'>Passing Plays per Game ({selected_season})</h5>", unsafe_allow_html=True)
+fig_pass = px.bar(
+    team_averages_pass_sorted,
+    x='team_abbrev',
+    y='pass_att',
+    color='pass_att',
+    color_continuous_scale='Oranges',
+    title=""
+)
+fig_pass.update_layout(
+    height=700,
+    xaxis_title="Teams",
+    yaxis_title="Passing Plays per Game",
+    xaxis={'categoryorder':'total descending'},
+    showlegend=False,
+    coloraxis_showscale=False
+)
+fig_pass.update_xaxes(tickangle=-45, tickfont_size=14)
+fig_pass.update_yaxes(tickfont_size=14)
+fig_pass.update_traces(texttemplate='%{y:.1f}', textposition='outside', textfont_color='#FF6B35')
+st.plotly_chart(fig_pass, use_container_width=True)
+
+st.write("#####")
+
+# Rushing Plays Chart
+st.markdown(f"<h5 style='text-align: center; color: grey;'>Running Plays per Game ({selected_season})</h5>", unsafe_allow_html=True)
+fig_rush = px.bar(
+    team_averages_rush_sorted,
+    x='team_abbrev',
+    y='rush_att',
+    color='rush_att',
+    color_continuous_scale='Oranges',
+    title=""
+)
+fig_rush.update_layout(
+    height=700,
+    xaxis_title="Teams",
+    yaxis_title="Running Plays per Game",
+    xaxis={'categoryorder':'total descending'},
+    showlegend=False,
+    coloraxis_showscale=False
+)
+fig_rush.update_xaxes(tickangle=-45, tickfont_size=14)
+fig_rush.update_yaxes(tickfont_size=14)
+fig_rush.update_traces(texttemplate='%{y:.1f}', textposition='outside', textfont_color='#FF6B35')
+st.plotly_chart(fig_rush, use_container_width=True)
 
 ### --- Sacks --- ###
 st.divider()
 st.subheader(f"Sacks")
 st.write(" ")
 
-# Placeholder for future sacks analysis
-st.info("**Coming Soon:** Sacks analysis including team sack rates, quarterback pressure statistics, defensive line performance, and pass protection metrics.")
+# Sacks Analysis
+years = [selected_season]
+unplayed_games = df_team_game_logs[
+    df_team_game_logs['game_id'].str.contains(str(selected_season)) &  
+    ((df_team_game_logs['home_pts_off'].isnull() | (df_team_game_logs['home_pts_off'] == 0)) &
+     (df_team_game_logs['away_pts_off'].isnull() | (df_team_game_logs['away_pts_off'] == 0)))
+]
+unplayed_game_ids = unplayed_games['game_id'].tolist()
+df_team_game_logs_filtered = df_team_game_logs[~df_team_game_logs['game_id'].isin(unplayed_game_ids)].copy()
+df_team_game_logs_filtered[['year', 'week', 'away_team', 'home_team']] = df_team_game_logs_filtered['game_id'].str.split('_', expand=True).iloc[:, :4]
+df_team_game_logs_filtered.loc[:, 'year'] = df_team_game_logs_filtered['year'].astype(int)
+df_team_game_logs_filtered.loc[:, 'week'] = df_team_game_logs_filtered['week'].astype(int)
+
+for year in years:
+    df_selected = df_team_game_logs_filtered[(df_team_game_logs_filtered['year'] == year) & (df_team_game_logs_filtered['week'] <= 18)]
+    sack_stats = {
+        'team': [],
+        'sacks_made': [],
+        'sacks_taken': []
+    }
+    teams = [
+        'ARI', 'ATL', 'BAL', 'BUF', 'CAR', 'CHI', 'CIN', 'CLE',
+        'DAL', 'DEN', 'DET', 'GB', 'HOU', 'IND', 'JAX', 'KC',
+        'LVR', 'LAC', 'LAR', 'MIA', 'MIN', 'NE', 'NO', 'NYG',
+        'NYJ', 'PHI', 'PIT', 'SF', 'SEA', 'TB', 'TEN', 'WAS'
+    ]
+    for team in teams:
+        sacks_made = df_selected.loc[(df_selected['home_team'] == team), 'away_pass_sacked'].sum() + \
+                     df_selected.loc[(df_selected['away_team'] == team), 'home_pass_sacked'].sum()
+        sacks_taken = df_selected.loc[(df_selected['home_team'] == team), 'home_pass_sacked'].sum() + \
+                      df_selected.loc[(df_selected['away_team'] == team), 'away_pass_sacked'].sum()
+        sack_stats['team'].append(team)
+        sack_stats['sacks_made'].append(sacks_made)
+        sack_stats['sacks_taken'].append(sacks_taken)
+    sack_stats_df = pd.DataFrame(sack_stats)
+    sack_stats_df['average_sacks_made'] = sack_stats_df['sacks_made'] / len(df_selected['week'].unique())
+    sack_stats_df['average_sacks_taken'] = sack_stats_df['sacks_taken'] / len(df_selected['week'].unique())
+
+# Sacks Made Chart
+st.markdown(f"<h5 style='text-align: center; color: grey;'>Total Sacks ({selected_season})</h5>", unsafe_allow_html=True)
+sacks_made_sorted = sack_stats_df.sort_values('sacks_made', ascending=False)
+
+chart_sacks = alt.Chart(sacks_made_sorted).mark_bar().encode(
+    x=alt.X('team:N', title='Teams', sort='-y'),
+    y=alt.Y('sacks_made:Q', title='Sacks Made'),
+    # color=alt.Color('sacks_made:Q', scale=alt.Scale(range=['#2D1B69', '#7F3C8D']), legend=None),
+    color=alt.Color('sacks_made:Q', scale=alt.Scale(scheme='magma', domain=[0, 120]), legend=None),
+    tooltip=['team', alt.Tooltip('sacks_made:Q', format='.0f')]
+).properties(
+    title="",
+    width=800,
+    height=500
+).configure_axisX(
+    grid=False,
+    labelColor='#333333',
+    labelAngle=-45
+).configure_axisY(
+    grid=True,
+    labelColor='#333333'
+)
+st.altair_chart(chart_sacks, use_container_width=True)
+
+st.write("#####")
+
+# Sacks Taken Chart
+st.markdown(f"<h5 style='text-align: center; color: grey;'>Total Sacks Taken ({selected_season})</h5>", unsafe_allow_html=True)
+sacks_taken_sorted = sack_stats_df.sort_values('sacks_taken', ascending=False)
+
+chart_sacks_taken = alt.Chart(sacks_taken_sorted).mark_bar().encode(
+    x=alt.X('team:N', title='Teams', sort='-y'),
+    y=alt.Y('sacks_taken:Q', title='Sacks Taken'),
+    # color=alt.Color('sacks_taken:Q', scale=alt.Scale(range=['#2D1B69', '#7F3C8D']), legend=None),
+    color=alt.Color('sacks_taken:Q', scale=alt.Scale(scheme='magma', domain=[0, 120]), legend=None),
+    tooltip=['team', alt.Tooltip('sacks_taken:Q', format='.0f')]
+).properties(
+    title="",
+    width=800,
+    height=500
+).configure_axisX(
+    grid=False,
+    labelColor='#333333',
+    labelAngle=-45
+).configure_axisY(
+    grid=True,
+    labelColor='#333333'
+)
+
+st.altair_chart(chart_sacks_taken, use_container_width=True)
