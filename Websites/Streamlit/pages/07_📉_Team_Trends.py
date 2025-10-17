@@ -273,7 +273,7 @@ st.subheader(f"Quarter Performance Trends")
 st.write(" ")
 
 # Placeholder for future quarter performance analysis
-st.info("🚧 **Coming Soon:**")
+st.info("**Coming Soon:**")
 
 ### --- Avg PPG and PA Home vs Away --- ###
 st.divider()
@@ -542,7 +542,7 @@ st.subheader(f"Passing vs Rushing Plays Called")
 st.write(" ")
 
 # Placeholder for future play calling analysis
-st.info("🚧 **Coming Soon:** Play calling analysis including pass/run ratios, situational play calling trends, down-and-distance analysis, and offensive strategy insights.")
+st.info("*Coming Soon:** Play calling analysis including pass/run ratios, situational play calling trends, down-and-distance analysis, and offensive strategy insights.")
 
 ### --- Sacks --- ###
 st.divider()
@@ -550,4 +550,4 @@ st.subheader(f"Sacks")
 st.write(" ")
 
 # Placeholder for future sacks analysis
-st.info("🚧 **Coming Soon:** Sacks analysis including team sack rates, quarterback pressure statistics, defensive line performance, and pass protection metrics.")
+st.info("**Coming Soon:** Sacks analysis including team sack rates, quarterback pressure statistics, defensive line performance, and pass protection metrics.")
