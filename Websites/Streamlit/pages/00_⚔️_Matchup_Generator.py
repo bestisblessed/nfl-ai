@@ -1378,9 +1378,31 @@ def _parse_games_datetime(df: pd.DataFrame) -> pd.DataFrame:
 
 def _get_team_points(row: pd.Series, team_abbrev: str) -> tuple[float, float, float]:
     if row['home_team'] == team_abbrev:
-        return row.get('home_score'), row.get('away_score'), row.get('home_spread', np.nan)
+        home_score = row.get('home_score', np.nan)
+        away_score = row.get('away_score', np.nan)
+        home_spread = row.get('home_spread', np.nan)
     else:
-        return row.get('away_score'), row.get('home_score'), row.get('away_spread', np.nan)
+        away_score = row.get('away_score', np.nan)
+        home_score = row.get('home_score', np.nan)
+        home_spread = row.get('away_spread', np.nan)
+    
+    # Convert to numeric, handling non-numeric values
+    try:
+        team_score = float(home_score) if pd.notna(home_score) else np.nan
+    except (ValueError, TypeError):
+        team_score = np.nan
+    
+    try:
+        opp_score = float(away_score) if pd.notna(away_score) else np.nan
+    except (ValueError, TypeError):
+        opp_score = np.nan
+    
+    try:
+        spread = float(home_spread) if pd.notna(home_spread) else np.nan
+    except (ValueError, TypeError):
+        spread = np.nan
+    
+    return team_score, opp_score, spread
 
 def compute_head_to_head_bets(df_games: pd.DataFrame, team1: str, team2: str, limit: int = 10) -> dict:
     df_games = _parse_games_datetime(df_games)
@@ -1427,9 +1449,15 @@ def compute_head_to_head_bets(df_games: pd.DataFrame, team1: str, team2: str, li
         t1_pts, t2_pts, t1_spread = _get_team_points(row, team1)
         _, _, t2_spread = _get_team_points(row, team2)
         if pd.notna(t1_pts) and pd.notna(t1_spread):
-            t1_margins.append(float(t1_pts) - float(t2_pts) + float(t1_spread))
+            try:
+                t1_margins.append(float(t1_pts) - float(t2_pts) + float(t1_spread))
+            except (ValueError, TypeError):
+                pass  # Skip this game if spread can't be converted to float
         if pd.notna(t2_pts) and pd.notna(t2_spread):
-            t2_margins.append(float(t2_pts) - float(t1_pts) + float(t2_spread))
+            try:
+                t2_margins.append(float(t2_pts) - float(t1_pts) + float(t2_spread))
+            except (ValueError, TypeError):
+                pass  # Skip this game if spread can't be converted to float
 
     # If team_covered not present, infer ATS from margins
     if 'team_covered' not in games.columns:
