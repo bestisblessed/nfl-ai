@@ -1,0 +1,184 @@
+WEEK 8 2025 - COMPLETE WR RECEIVING YARDS PREDICTIONS
+Generated: 2025-10-23 17:31:00
+Total Games: 13
+================================================================================
+
+GAME 1 | LAC vs MIN | Week 8 2025
++------------------+--------------+    +------------------+--------------+
+| LAC Player       |   Pred Yards |    | MIN Player       |   Pred Yards |
++==================+==============+    +==================+==============+
+| Ladd McConkey    |         64.7 |    | Justin Jefferson |         78.6 |
+| Keenan Allen     |         62.8 |    | Jordan Addison   |         68.9 |
+| Quentin Johnston |         43.2 |    | Adam Thielen     |         18.3 |
+| Derius Davis     |          0.1 |    | Jalen Nailor     |         15.5 |
++------------------+--------------+    +------------------+--------------+
+
+============================================================
+
+GAME 2 | ATL vs MIA | Week 8 2025
++------------------+--------------+    +-----------------------+--------------+
+| ATL Player       |   Pred Yards |    | MIA Player            |   Pred Yards |
++==================+==============+    +=======================+==============+
+| Drake London     |         57.7 |    | Jaylen Waddle         |         57.8 |
+| Darnell Mooney   |         41.4 |    | Nick Westbrook-Ikhine |         15.4 |
+| Ray-Ray McCloud  |         17.4 |    | Malik Washington      |         12.2 |
+| Casey Washington |         14.4 |    +-----------------------+--------------+
+| KhaDarel Hodge   |         11.1 |    
++------------------+--------------+
+
+============================================================
+
+GAME 3 | BAL vs CHI | Week 8 2025
++-----------------+--------------+    +-------------------+--------------+
+| BAL Player      |   Pred Yards |    | CHI Player        |   Pred Yards |
++=================+==============+    +===================+==============+
+| Zay Flowers     |         42.9 |    | DJ Moore          |         46.9 |
+| DeAndre Hopkins |         38.3 |    | Rome Odunze       |         38.8 |
+| Rashod Bateman  |         29.8 |    | Olamide Zaccheaus |         33.4 |
+| Tylan Wallace   |          8.5 |    +-------------------+--------------+
+| Devontez Walker |          8.3 |    
++-----------------+--------------+
+
+============================================================
+
+GAME 4 | CIN vs NYJ | Week 8 2025
++----------------+--------------+    +----------------+--------------+
+| CIN Player     |   Pred Yards |    | NYJ Player     |   Pred Yards |
++================+==============+    +================+==============+
+| Ja'Marr Chase  |         71.1 |    | Garrett Wilson |         65.8 |
+| Tee Higgins    |         50.4 |    | Tyler Johnson  |         25.9 |
+| Andrei Iosivas |         36.1 |    | Allen Lazard   |         13.4 |
++----------------+--------------+    | Josh Reynolds  |         11.5 |
+                                     +----------------+--------------+
+
+============================================================
+
+GAME 5 | CAR vs BUF | Week 8 2025
++-----------------+--------------+    +----------------+--------------+
+| CAR Player      |   Pred Yards |    | BUF Player     |   Pred Yards |
++=================+==============+    +================+==============+
+| Jalen Coker     |         30.4 |    | Khalil Shakir  |         57.4 |
+| Xavier Legette  |         21.8 |    | Keon Coleman   |         33.3 |
+| Brycen Tremayne |         19.4 |    | Josh Palmer    |         26.3 |
++-----------------+--------------+    | Tyrell Shavers |         21   |
+                                      | Elijah Moore   |         13.1 |
+                                      | Curtis Samuel  |          6.5 |
+                                      +----------------+--------------+
+
+============================================================
+
+GAME 6 | HOU vs SF | Week 8 2025
++-------------------+--------------+    +--------------------------+--------------+
+| HOU Player        |   Pred Yards |    | SF Player                |   Pred Yards |
++===================+==============+    +==========================+==============+
+| Nico Collins      |         54.6 |    | Ricky Pearsall           |         77   |
+| Christian Kirk    |         46.2 |    | Jauan Jennings           |         40.7 |
+| Xavier Hutchinson |         11.9 |    | Demarcus Robinson        |         26.6 |
+| Braxton Berrios   |          1.7 |    | Kendrick Bourne          |         19.3 |
++-------------------+--------------+    | Skyy Moore               |          9.6 |
+                                        | Marquez Valdes-Scantling |          3.6 |
+                                        +--------------------------+--------------+
+
+============================================================
+
+GAME 7 | NE vs CLE | Week 8 2025
++-----------------+--------------+    +----------------+--------------+
+| NE Player       |   Pred Yards |    | CLE Player     |   Pred Yards |
++=================+==============+    +================+==============+
+| DeMario Douglas |         48.2 |    | Jerry Jeudy    |         38.2 |
+| Stefon Diggs    |         42.9 |    | Jamari Thrash  |          9.9 |
+| Kayshon Boutte  |         41.4 |    | Malachi Corley |          0.7 |
+| Mack Hollins    |          9.6 |    +----------------+--------------+
++-----------------+--------------+
+
+============================================================
+
+GAME 8 | PHI vs NYG | Week 8 2025
++---------------+--------------+    +---------------------+--------------+
+| PHI Player    |   Pred Yards |    | NYG Player          |   Pred Yards |
++===============+==============+    +=====================+==============+
+| DeVonta Smith |         69   |    | Wan'Dale Robinson   |         41.9 |
+| A.J. Brown    |         51.2 |    | Darius Slayton      |         40.4 |
+| Jahan Dotson  |         23.8 |    | Lil'Jordan Humphrey |         36.7 |
++---------------+--------------+    | Jalin Hyatt         |         15.6 |
+                                    +---------------------+--------------+
+
+============================================================
+
+GAME 9 | NO vs TB | Week 8 2025
++----------------+--------------+    +------------------+--------------+
+| NO Player      |   Pred Yards |    | TB Player        |   Pred Yards |
++================+==============+    +==================+==============+
+| Rashid Shaheed |         59.8 |    | Sterling Shepard |         36.5 |
+| Chris Olave    |         57.1 |    | Kameron Johnson  |         25.4 |
+| Brandin Cooks  |         14.1 |    | Ryan Miller      |         18.4 |
+| Mason Tipton   |         10.6 |    +------------------+--------------+
+| Devaughn Vele  |          8.5 |    
++----------------+--------------+
+
+============================================================
+
+GAME 10 | IND vs TEN | Week 8 2025
++-----------------+--------------+    +---------------+--------------+
+| IND Player      |   Pred Yards |    | TEN Player    |   Pred Yards |
++=================+==============+    +===============+==============+
+| Josh Downs      |         41.3 |    | Calvin Ridley |         60.1 |
+| Adonai Mitchell |         40.1 |    | Van Jefferson |         38   |
+| Alec Pierce     |         36.2 |    | Tyler Lockett |         15.4 |
+| Anthony Gould   |         15.4 |    | Bryce Oliver  |         11   |
+| Ashton Dulin    |         10.1 |    +---------------+--------------+
++-----------------+--------------+
+
+============================================================
+
+GAME 11 | DEN vs DAL | Week 8 2025
++------------------+--------------+    +-----------------+--------------+
+| DEN Player       |   Pred Yards |    | DAL Player      |   Pred Yards |
++==================+==============+    +=================+==============+
+| Courtland Sutton |         54.5 |    | CeeDee Lamb     |         90.3 |
+| Troy Franklin    |         26.9 |    | George Pickens  |         63.7 |
+| Trent Sherfield  |          7.7 |    | Ryan Flournoy   |         35.1 |
++------------------+--------------+    | Jalen Tolbert   |         35   |
+                                       | KaVontae Turpin |         31.2 |
+                                       +-----------------+--------------+
+
+============================================================
+
+GAME 12 | PIT vs GB | Week 8 2025
++-------------------+--------------+    +-------------+--------------+
+| PIT Player        |   Pred Yards |    | GB Player   |   Pred Yards |
++===================+==============+    +=============+==============+
+| DK Metcalf        |         62.3 |    | Romeo Doubs |         34.2 |
+| Calvin Austin III |         33.2 |    | Malik Heath |         13.5 |
+| Scott Miller      |         19.2 |    +-------------+--------------+
+| Ben Skowronek     |         13.9 |    
++-------------------+--------------+
+
+============================================================
+
+GAME 13 | KC vs WAS | Week 8 2025
++---------------------+--------------+    +----------------+--------------+
+| KC Player           |   Pred Yards |    | WAS Player     |   Pred Yards |
++=====================+==============+    +================+==============+
+| Rashee Rice         |         72.4 |    | Terry McLaurin |         49.1 |
+| Xavier Worthy       |         48   |    | Luke McCaffrey |         19.2 |
+| Marquise Brown      |         42.7 |    | Tay Martin     |         16.9 |
+| JuJu Smith-Schuster |         38.7 |    | Robbie Chosen  |          7.1 |
+| Tyquan Thornton     |         27.2 |    +----------------+--------------+
+| Nikko Remigio       |         24.2 |    
++---------------------+--------------+
+
+============================================================
+
+
+================================================================================
+REPORT COMPLETE
+================================================================================
+This report contains all WR receiving yards predictions for Week 8.
+Each game includes:
+• Text summary of predictions
+• Full detailed image
+• Cleaned/condensed image
+
+For the complete dataset, see: prop_projections_receiving.csv
+================================================================================
