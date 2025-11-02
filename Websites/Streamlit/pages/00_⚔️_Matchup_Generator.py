@@ -98,6 +98,10 @@ if 'df_games' not in st.session_state:
     df_playerstats = pd.read_csv(os.path.join(current_dir, '../data', 'PlayerStats.csv'))
     # Load 2025 roster as source of truth for current players
     df_roster2025 = pd.read_csv(os.path.join(current_dir, '../data/rosters', 'roster_2025.csv'))
+    # Normalize team abbreviations: roster uses 'LV' and 'LA', but we need 'LVR' and 'LAR' to match Games.csv
+    if 'team' in df_roster2025.columns:
+        roster_to_games_team_map = {'LV': 'LVR', 'LA': 'LAR'}
+        df_roster2025['team'] = df_roster2025['team'].map(lambda x: roster_to_games_team_map.get(x, x))
     # Additional logs for defensive metrics
     try:
         df_team_game_logs = pd.read_csv(os.path.join(current_dir, '../data', 'all_team_game_logs.csv'))
@@ -105,6 +109,18 @@ if 'df_games' not in st.session_state:
         df_team_game_logs = pd.DataFrame()
     try:
         df_defense_logs = pd.read_csv(os.path.join(current_dir, '../data', 'all_defense-game-logs.csv'))
+        # Normalize team abbreviations: defense logs use old abbreviations that need to match Games.csv format
+        if 'team' in df_defense_logs.columns:
+            defense_to_games_team_map = {
+                'GNB': 'GB',   # Green Bay Packers
+                'KAN': 'KC',   # Kansas City Chiefs
+                'NOR': 'NO',   # New Orleans Saints
+                'NWE': 'NE',   # New England Patriots
+                'OAK': 'LVR',  # Oakland Raiders -> Las Vegas Raiders
+                'SFO': 'SF',   # San Francisco 49ers
+                'TAM': 'TB',   # Tampa Bay Buccaneers
+            }
+            df_defense_logs['team'] = df_defense_logs['team'].map(lambda x: defense_to_games_team_map.get(x, x))
     except Exception:
         df_defense_logs = pd.DataFrame()
     try:
@@ -129,7 +145,12 @@ else:
     if df_roster2025 is None:
         current_dir = os.path.dirname(os.path.abspath(__file__))
         df_roster2025 = pd.read_csv(os.path.join(current_dir, '../data/rosters', 'roster_2025.csv'))
-        st.session_state['df_roster2025'] = df_roster2025
+    # Always normalize team abbreviations: roster uses 'LV' and 'LA', but we need 'LVR' and 'LAR' to match Games.csv
+    if df_roster2025 is not None and 'team' in df_roster2025.columns:
+        roster_to_games_team_map = {'LV': 'LVR', 'LA': 'LAR'}
+        df_roster2025 = df_roster2025.copy()  # Ensure we're working with a copy
+        df_roster2025['team'] = df_roster2025['team'].map(lambda x: roster_to_games_team_map.get(x, x))
+    st.session_state['df_roster2025'] = df_roster2025
     if df_team_game_logs is None:
         current_dir = os.path.dirname(os.path.abspath(__file__))
         try:
@@ -141,6 +162,18 @@ else:
         current_dir = os.path.dirname(os.path.abspath(__file__))
         try:
             df_defense_logs = pd.read_csv(os.path.join(current_dir, '../data', 'all_defense-game-logs.csv'))
+            # Normalize team abbreviations: defense logs use old abbreviations that need to match Games.csv format
+            if 'team' in df_defense_logs.columns:
+                defense_to_games_team_map = {
+                    'GNB': 'GB',   # Green Bay Packers
+                    'KAN': 'KC',   # Kansas City Chiefs
+                    'NOR': 'NO',   # New Orleans Saints
+                    'NWE': 'NE',   # New England Patriots
+                    'OAK': 'LVR',  # Oakland Raiders -> Las Vegas Raiders
+                    'SFO': 'SF',   # San Francisco 49ers
+                    'TAM': 'TB',   # Tampa Bay Buccaneers
+                }
+                df_defense_logs['team'] = df_defense_logs['team'].map(lambda x: defense_to_games_team_map.get(x, x))
         except Exception:
             df_defense_logs = pd.DataFrame()
         st.session_state['df_defense_logs'] = df_defense_logs
