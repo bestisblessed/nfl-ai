@@ -116,6 +116,14 @@ echo ""
 read -p "Commit changes? (y/n): " COMMIT
 if [[ "$COMMIT" =~ ^[Yy]$ ]]; then
     echo "UPDATING UPCOMING WEEK ${WEEK}.."
+
+    git add upcoming_games.csv
+    git add upcoming_bye_week.csv
+    git add starting_qbs_2025.csv
+    git add starting_qbs_2025_bye.csv
+    git add injured_players.csv
+    git add questionable_players.csv
+
     # git add 0-FINAL-REPORTS/week${WEEK}_*
     git add 0-FINAL-REPORTS/
     # git add 1-PASSING-YARDS/predictions-week-${WEEK}-*
