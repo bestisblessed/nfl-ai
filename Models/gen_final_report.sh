@@ -113,6 +113,7 @@ echo ""
 echo "🔗 Open report: file://$(pwd)/0-FINAL-REPORTS/week${WEEK}_complete_props_report.html"
 echo "📊 Top 25 PDF: file://$(pwd)/0-FINAL-REPORTS/week${WEEK}_leader_tables.pdf"
 echo ""
+git status .
 read -p "Commit changes? (y/n): " COMMIT
 if [[ "$COMMIT" =~ ^[Yy]$ ]]; then
     echo "UPDATING UPCOMING WEEK ${WEEK}.."
@@ -132,9 +133,12 @@ if [[ "$COMMIT" =~ ^[Yy]$ ]]; then
     git add 2-RECEIVING-YARDS/
     # git add 3-RUSHING-YARDS/predictions-week-${WEEK}-*
     git add 3-RUSHING-YARDS/
-    git commit -m "UPDATED UPCOMING WEEK ${WEEK} MODEL & REPORTS"
-    echo "✅ Changes committed"
-    echo "Execute 'git push' to update remote repository"
+    echo ""
+    echo "📋 Copy and run this command to update remote:"
+    echo "git commit -m \"UPDATED UPCOMING WEEK ${WEEK} MODEL & REPORTS\" && git push"
+    # git commit -m "UPDATED UPCOMING WEEK ${WEEK} MODEL & REPORTS""
+    # echo "✅ Changes committed"
+    # echo "Execute 'git push' to update remote repository"
 else
     echo "Skipping commit"
 fi
