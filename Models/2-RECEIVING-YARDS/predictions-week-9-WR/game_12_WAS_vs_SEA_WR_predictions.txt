@@ -6,13 +6,13 @@ WAS vs SEA | Week 9 2025 | Projected Receiving Yards
 | WAS Player     |   Pred Yards |    | SEA Player         |   Pred Yards |
 +================+==============+    +====================+==============+
 | Tay Martin     |         14.2 |    | Jaxon Smith-Njigba |         77.1 |
-| Robbie Chosen  |          7.6 |    | Cooper Kupp        |         46.2 |
-| Luke McCaffrey |          7.2 |    +--------------------+--------------+
+| Robbie Chosen  |          7.6 |    +--------------------+--------------+
+| Luke McCaffrey |          7.2 |    
 +----------------+--------------+    
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total WRs: 5 (3 WAS, 2 SEA)
+Total WRs: 4 (3 WAS, 1 SEA)
 Top Projection: Jaxon Smith-Njigba (SEA) - 77.1 yards
 ================================================================================

@@ -24,23 +24,6 @@ Feleipe Franks,ATL,NE,TE,Receiving Yards,0.6206715
 Bijan Robinson,ATL,NE,RB,Rushing Yards,80.4708
 Tyler Allgeier,ATL,NE,RB,Rushing Yards,36.024464
 Michael Penix Jr.,ATL,NE,QB,Rushing Yards,5.974883
-Lamar Jackson,BAL,MIA,QB,Passing Yards,218.74287
-Zay Flowers,BAL,MIA,WR,Receiving Yards,59.110508
-Mark Andrews,BAL,MIA,TE,Receiving Yards,33.74233
-Rashod Bateman,BAL,MIA,WR,Receiving Yards,30.787655
-DeAndre Hopkins,BAL,MIA,WR,Receiving Yards,28.861813
-Justice Hill,BAL,MIA,RB,Receiving Yards,19.061844
-Tylan Wallace,BAL,MIA,WR,Receiving Yards,13.603102
-Isaiah Likely,BAL,MIA,TE,Receiving Yards,10.947858
-Derrick Henry,BAL,MIA,RB,Receiving Yards,7.289298
-Keaton Mitchell,BAL,MIA,RB,Receiving Yards,4.5776653
-Charlie Kolar,BAL,MIA,TE,Receiving Yards,4.0706606
-Rasheen Ali,BAL,MIA,RB,Receiving Yards,0.0024603494
-Derrick Henry,BAL,MIA,RB,Rushing Yards,77.138695
-Keaton Mitchell,BAL,MIA,RB,Rushing Yards,31.063059
-Lamar Jackson,BAL,MIA,QB,Rushing Yards,30.382975
-Justice Hill,BAL,MIA,RB,Rushing Yards,9.0297
-Rasheen Ali,BAL,MIA,RB,Rushing Yards,1.1376843
 Josh Allen,BUF,KC,QB,Passing Yards,220.92212
 Khalil Shakir,BUF,KC,WR,Receiving Yards,52.222622
 Dalton Kincaid,BUF,KC,TE,Receiving Yards,48.489136
@@ -223,26 +206,12 @@ Tre Tucker,LVR,JAX,WR,Receiving Yards,31.848219
 Tyler Lockett,LVR,JAX,WR,Receiving Yards,18.851002
 Michael Mayer,LVR,JAX,TE,Receiving Yards,11.003614
 Alex Bachman,LVR,JAX,WR,Receiving Yards,6.871055
-Zamir White,LVR,JAX,RB,Receiving Yards,4.5831604
 Ian Thomas,LVR,JAX,TE,Receiving Yards,4.0978017
 Raheem Mostert,LVR,JAX,RB,Receiving Yards,2.5975008
 Dylan Laube,LVR,JAX,RB,Receiving Yards,0.43267006
-Zamir White,LVR,JAX,RB,Rushing Yards,17.35144
 Dylan Laube,LVR,JAX,RB,Rushing Yards,2.3008332
 Geno Smith,LVR,JAX,QB,Rushing Yards,1.6837457
 Raheem Mostert,LVR,JAX,RB,Rushing Yards,0.8055812
-Tua Tagovailoa,MIA,BAL,QB,Passing Yards,186.35957
-Jaylen Waddle,MIA,BAL,WR,Receiving Yards,67.39803
-Malik Washington,MIA,BAL,WR,Receiving Yards,25.966486
-De'Von Achane,MIA,BAL,RB,Receiving Yards,22.945765
-Tanner Conner,MIA,BAL,TE,Receiving Yards,15.78882
-Greg Dulcich,MIA,BAL,TE,Receiving Yards,14.217364
-Nick Westbrook-Ikhine,MIA,BAL,WR,Receiving Yards,10.968451
-Cedrick Wilson Jr.,MIA,BAL,WR,Receiving Yards,9.086703
-Alec Ingold,MIA,BAL,RB,Receiving Yards,6.351059
-De'Von Achane,MIA,BAL,RB,Rushing Yards,71.645935
-Tua Tagovailoa,MIA,BAL,QB,Rushing Yards,3.0403137
-Alec Ingold,MIA,BAL,RB,Rushing Yards,0.105944574
 Justin Jefferson,MIN,DET,WR,Receiving Yards,78.91448
 Jordan Addison,MIN,DET,WR,Receiving Yards,46.468067
 T.J. Hockenson,MIN,DET,TE,Receiving Yards,39.26827
@@ -307,7 +276,6 @@ Kenneth Gainwell,PIT,IND,RB,Rushing Yards,37.3286
 Aaron Rodgers,PIT,IND,QB,Rushing Yards,1.8073065
 Sam Darnold,SEA,WAS,QB,Passing Yards,266.6895
 Jaxon Smith-Njigba,SEA,WAS,WR,Receiving Yards,77.101166
-Cooper Kupp,SEA,WAS,WR,Receiving Yards,46.207283
 AJ Barner,SEA,WAS,TE,Receiving Yards,25.430124
 Kenneth Walker III,SEA,WAS,RB,Receiving Yards,16.658117
 George Holani,SEA,WAS,RB,Receiving Yards,13.230117

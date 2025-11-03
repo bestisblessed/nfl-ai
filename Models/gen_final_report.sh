@@ -23,6 +23,24 @@ fi
 
 echo "Running Week $WEEK"
 
+# Copy Scrapers/data/ directory to Models/data/
+echo "Copying Scrapers/data/ to Models/data/..."
+rm -rf data
+cp -r ../Scrapers/data data
+echo "✅ Data directory copied"
+
+# Update upcoming games
+echo "Updating upcoming_games.csv..."
+python update_upcoming_games.py
+if [ $? -ne 0 ]; then
+    echo "Error: update_upcoming_games.py failed"
+    exit 1
+fi
+echo "✅ Upcoming games updated"
+echo "✅ Created upcoming_games.csv and upcoming_bye_week.csv"
+echo "✅ QB files automatically updated based on playing vs bye week teams"
+echo ""
+
 # Scrape latest injury reports
 echo "Updating injured_players.csv and questionable_players.csv..."
 python scrape_injured_players.py
@@ -94,3 +112,21 @@ echo "📁 Reports saved to 0-FINAL-REPORTS/"
 echo ""
 echo "🔗 Open report: file://$(pwd)/0-FINAL-REPORTS/week${WEEK}_complete_props_report.html"
 echo "📊 Top 25 PDF: file://$(pwd)/0-FINAL-REPORTS/week${WEEK}_leader_tables.pdf"
+echo ""
+read -p "Commit changes? (y/n): " COMMIT
+if [[ "$COMMIT" =~ ^[Yy]$ ]]; then
+    echo "UPDATING UPCOMING WEEK ${WEEK}.."
+    # git add 0-FINAL-REPORTS/week${WEEK}_*
+    git add 0-FINAL-REPORTS/
+    # git add 1-PASSING-YARDS/predictions-week-${WEEK}-*
+    git add 1-PASSING-YARDS/
+    # git add 2-RECEIVING-YARDS/predictions-week-${WEEK}-*
+    git add 2-RECEIVING-YARDS/
+    # git add 3-RUSHING-YARDS/predictions-week-${WEEK}-*
+    git add 3-RUSHING-YARDS/
+    git commit -m "UPDATED UPCOMING WEEK ${WEEK} MODEL & REPORTS"
+    echo "✅ Changes committed"
+    echo "Execute 'git push' to update remote repository"
+else
+    echo "Skipping commit"
+fi
