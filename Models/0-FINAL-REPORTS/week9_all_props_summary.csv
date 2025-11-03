@@ -51,8 +51,8 @@ Chuba Hubbard,CAR,GB,RB,Receiving Yards,7.9405518
 DeeJay Dallas,CAR,GB,RB,Receiving Yards,4.3797197
 Rico Dowdle,CAR,GB,RB,Rushing Yards,60.142117
 Chuba Hubbard,CAR,GB,RB,Rushing Yards,55.494164
+Bryce Young,CAR,GB,QB,Rushing Yards,4.502289
 DeeJay Dallas,CAR,GB,RB,Rushing Yards,0.87060815
-Andy Dalton,CAR,GB,QB,Rushing Yards,0.28246137
 Caleb Williams,CHI,CIN,QB,Passing Yards,214.61868
 Rome Odunze,CHI,CIN,WR,Receiving Yards,53.715298
 DJ Moore,CHI,CIN,WR,Receiving Yards,53.647022
@@ -223,6 +223,7 @@ Cam Akers,MIN,DET,RB,Receiving Yards,2.4243524
 Aaron Jones,MIN,DET,RB,Rushing Yards,50.781727
 Jordan Mason,MIN,DET,RB,Rushing Yards,40.819244
 Cam Akers,MIN,DET,RB,Rushing Yards,23.974733
+J.J. McCarthy,MIN,DET,QB,Rushing Yards,21.244835
 Drake Maye,NE,ATL,QB,Passing Yards,246.14249
 Stefon Diggs,NE,ATL,WR,Receiving Yards,73.33757
 DeMario Douglas,NE,ATL,WR,Receiving Yards,55.197884

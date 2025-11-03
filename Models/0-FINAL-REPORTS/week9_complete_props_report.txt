@@ -1,8 +1,8 @@
 🏈 NFL WEEK 9 2025 - COMPLETE PROPS REPORT
 ================================================================================
-Generated: 2025-11-03 03:00:38
+Generated: 2025-11-03 03:13:00
 Total Games: 13
-Total Props: 319
+Total Props: 320
 
 This report includes ALL player props for each game:
 • QB Passing Yards
@@ -87,8 +87,8 @@ GB:
 CAR:
   Rico Dowdle (RB): 60.1 yards
   Chuba Hubbard (RB): 55.5 yards
+  Bryce Young (QB): 4.5 yards
   DeeJay Dallas (RB): 0.9 yards
-  Andy Dalton (QB): 0.3 yards
 
 GB:
   Josh Jacobs (RB): 73.9 yards
@@ -380,6 +380,7 @@ MIN:
   Aaron Jones (RB): 50.8 yards
   Jordan Mason (RB): 40.8 yards
   Cam Akers (RB): 24.0 yards
+  J.J. McCarthy (QB): 21.2 yards
 
 
 🏈 RECEIVING YARDS
@@ -406,8 +407,8 @@ MIN:
 
 📊 GAME SUMMARY
 --------------------
-Total Props: 22
-With Predictions: 22
+Total Props: 23
+With Predictions: 23
 No Data (Rookies): 0
 Top Projection: Jared Goff (QB) - 234.8 passing yards
 ================================================================================
