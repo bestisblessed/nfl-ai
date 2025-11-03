@@ -4,6 +4,7 @@ import os
 import plotly.express as px
 import numpy as np
 import base64
+from html import escape
 
 # NFL team color mapping (primary colors)
 TEAM_COLORS = {
@@ -453,6 +454,14 @@ def show_condensed_players(historical_df, team_name, opponent_name):
     display_df = display_df[['player_name_with_position','games','primary_tds','primary_val','avg_fpts','primary_label','primary_tds_label','pos','pos_order']]
     display_df.columns = ['Player','Games','Primary TDs','Primary','Avg FPTS','Primary Label','Primary TDs Label','Pos','Pos Order']
 
+    headshot_map: dict[str, str] = {}
+    if 'headshot_url' in historical_df.columns:
+        cleaned = historical_df[['player_name_with_position', 'headshot_url']].copy()
+        cleaned['headshot_url'] = cleaned['headshot_url'].astype(str).str.strip()
+        cleaned = cleaned[cleaned['headshot_url'] != '']
+        cleaned = cleaned.dropna(subset=['headshot_url']).drop_duplicates(subset=['player_name_with_position'])
+        headshot_map = cleaned.set_index('player_name_with_position')['headshot_url'].to_dict()
+
     with st.container():
         # Summary: restore full players table at top
         st.dataframe(display_df[['Player','Pos','Games','Avg FPTS']], use_container_width=True, hide_index=True)
@@ -460,36 +469,46 @@ def show_condensed_players(historical_df, team_name, opponent_name):
             pname = row['Player']
             ppos = row['Pos'] if 'Pos' in row else None
             with st.expander(pname, expanded=False):
-                # Only show each metric once, and ensure "Games" is not repeated
-                if ppos in ('RB', 'FB'):
-                    c1, c2, c3, c4 = st.columns([1,1,1,1])
-                    this_games = historical_df[historical_df['player_name_with_position'] == pname]
-                    rush_tds_sum = int(this_games['rushing_tds'].sum()) if 'rushing_tds' in this_games.columns else 0
-                    rec_tds_sum = int(this_games['receiving_tds'].sum()) if 'receiving_tds' in this_games.columns else 0
-                    c1.metric("Games", int(row['Games']))
-                    c2.metric("Total Rush TDs", rush_tds_sum)
-                    c3.metric("Total Rec TDs", rec_tds_sum)
-                    c4.metric("Avg FPTS", row['Avg FPTS'])
+                headshot_url = headshot_map.get(pname)
+                if headshot_url:
+                    img_col, metrics_col = st.columns([1, 3])
+                    with img_col:
+                        st.image(headshot_url, use_container_width=True)
                 else:
-                    # For QBs, show an extra metric: Total Rush TDs after Total Pass TDs
-                    if isinstance(ppos, str) and ppos.upper() == 'QB':
-                        qb_games = historical_df[historical_df['player_name_with_position'] == pname]
-                        qb_rush_tds_sum = int(qb_games['rushing_tds'].sum()) if 'rushing_tds' in qb_games.columns else 0
-                        c1, c2, c3, c4, c5 = st.columns([1,1,1,1,1])
-                        c1.metric("Games", int(row['Games']))
-                        c2.metric("Total Pass TDs", int(row['Primary TDs']))
-                        c3.metric("Total Rush TDs", qb_rush_tds_sum)
-                        primary_label = row['Primary Label']
-                        c4.metric(primary_label, row['Primary'])
-                        c5.metric("Avg FPTS", row['Avg FPTS'])
-                    else:
+                    metrics_col = st.container()
+
+                with metrics_col:
+                    # Only show each metric once, and ensure "Games" is not repeated
+                    if ppos in ('RB', 'FB'):
                         c1, c2, c3, c4 = st.columns([1,1,1,1])
+                        this_games = historical_df[historical_df['player_name_with_position'] == pname]
+                        rush_tds_sum = int(this_games['rushing_tds'].sum()) if 'rushing_tds' in this_games.columns else 0
+                        rec_tds_sum = int(this_games['receiving_tds'].sum()) if 'receiving_tds' in this_games.columns else 0
                         c1.metric("Games", int(row['Games']))
-                        primary_tds_label = row['Primary TDs Label']
-                        c2.metric(primary_tds_label, int(row['Primary TDs']))
-                        primary_label = row['Primary Label']
-                        c3.metric(primary_label, row['Primary'])
+                        c2.metric("Total Rush TDs", rush_tds_sum)
+                        c3.metric("Total Rec TDs", rec_tds_sum)
                         c4.metric("Avg FPTS", row['Avg FPTS'])
+                    else:
+                        # For QBs, show an extra metric: Total Rush TDs after Total Pass TDs
+                        if isinstance(ppos, str) and ppos.upper() == 'QB':
+                            qb_games = historical_df[historical_df['player_name_with_position'] == pname]
+                            qb_rush_tds_sum = int(qb_games['rushing_tds'].sum()) if 'rushing_tds' in qb_games.columns else 0
+                            c1, c2, c3, c4, c5 = st.columns([1,1,1,1,1])
+                            c1.metric("Games", int(row['Games']))
+                            c2.metric("Total Pass TDs", int(row['Primary TDs']))
+                            c3.metric("Total Rush TDs", qb_rush_tds_sum)
+                            primary_label = row['Primary Label']
+                            c4.metric(primary_label, row['Primary'])
+                            c5.metric("Avg FPTS", row['Avg FPTS'])
+                        else:
+                            c1, c2, c3, c4 = st.columns([1,1,1,1])
+                            c1.metric("Games", int(row['Games']))
+                            primary_tds_label = row['Primary TDs Label']
+                            c2.metric(primary_tds_label, int(row['Primary TDs']))
+                            primary_label = row['Primary Label']
+                            c3.metric(primary_label, row['Primary'])
+                            c4.metric("Avg FPTS", row['Avg FPTS'])
+
                 player_games = historical_df[historical_df['player_name_with_position'] == pname].sort_values('date', ascending=False).copy()
                 # Base identifying columns always shown
                 id_cols = ['season','week','home_team','away_team']
@@ -517,7 +536,7 @@ def show_condensed_players(historical_df, team_name, opponent_name):
                 display_games = player_games[available_cols].copy()
                 if 'season' in display_games.columns:
                     display_games['season'] = display_games['season'].astype(int)
-                st.dataframe(display_games, use_container_width=True, height=260, hide_index=True, 
+                st.dataframe(display_games, use_container_width=True, height=260, hide_index=True,
                            column_config={
                                'season': st.column_config.NumberColumn(
                                    'season',
@@ -761,7 +780,7 @@ def generate_html_report(team1, team2, report_data):
         }}
         .player-name {{
             font-weight: bold;
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             padding: 12px 15px;
             margin: 0;
             color: #333;
@@ -769,9 +788,38 @@ def generate_html_report(team1, team2, report_data):
             background-color: #f8f9fa;
             border-bottom: 1px solid #e6e6e6;
             border-radius: 4px 4px 0 0;
+            display: flex;
+            align-items: center;
+            gap: 12px;
         }}
         .player-name:hover {{
             background-color: #e9ecef;
+        }}
+        .player-name-text {{
+            flex: 1;
+        }}
+        .player-headshot-wrapper {{
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 1px solid #e0e0e0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f1f3f5;
+            flex-shrink: 0;
+        }}
+        .player-headshot {{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }}
+        .player-headshot-fallback {{
+            font-size: 1rem;
+            font-weight: 600;
+            color: #555;
+            text-transform: uppercase;
         }}
         .player-content {{
             padding: 15px;
@@ -1270,23 +1318,46 @@ def _generate_player_html(historical_df, team_name, opponent_name):
     display_df = display_df[['player_name_with_position','games','primary_tds','primary_val','avg_fpts','primary_label','primary_tds_label','pos','pos_order']]
     display_df.columns = ['Player','Games','Primary TDs','Primary','Avg FPTS','Primary Label','Primary TDs Label','Pos','Pos Order']
 
+    headshot_map: dict[str, str] = {}
+    if 'headshot_url' in historical_df.columns:
+        cleaned = historical_df[['player_name_with_position', 'headshot_url']].copy()
+        cleaned['headshot_url'] = cleaned['headshot_url'].astype(str).str.strip()
+        cleaned = cleaned[cleaned['headshot_url'] != '']
+        cleaned = cleaned.dropna(subset=['headshot_url']).drop_duplicates(subset=['player_name_with_position'])
+        headshot_map = cleaned.set_index('player_name_with_position')['headshot_url'].to_dict()
+
+    # Helper to build fallback initials when no headshot URL exists
+    def _initials(name: str) -> str:
+        tokens = [token for token in name.replace('(', ' ').replace(')', ' ').split() if token]
+        initials = ''.join(token[0].upper() for token in tokens[:2])
+        return initials or 'NA'
+
     # Generate summary table HTML
     summary_html = display_df[['Player','Pos','Games','Avg FPTS']].to_html(classes='table', escape=False, index=False)
-    
+
     html_content = f"""
             <div class="player-summary">
                 {summary_html}
             </div>
 """
-    
+
     # Generate individual player details
     for _, row in display_df.iterrows():
         pname = row['Player']
         ppos = row['Pos'] if 'Pos' in row else None
-        
+        safe_name = escape(str(pname))
+        player_id = abs(hash(pname))
+        headshot_url = headshot_map.get(pname)
+        if headshot_url:
+            safe_url = escape(headshot_url, quote=True)
+            headshot_html = f'<div class="player-headshot-wrapper"><img src="{safe_url}" alt="{safe_name}" class="player-headshot" /></div>'
+        else:
+            initials = escape(_initials(str(pname)))
+            headshot_html = f'<div class="player-headshot-wrapper player-headshot-fallback">{initials}</div>'
+
         # Get player games
         player_games = historical_df[historical_df['player_name_with_position'] == pname].sort_values('date', ascending=False).copy()
-        
+
         # Generate metrics HTML
         if ppos in ('RB', 'FB'):
             this_games = historical_df[historical_df['player_name_with_position'] == pname]
@@ -1390,8 +1461,11 @@ def _generate_player_html(historical_df, team_name, opponent_name):
         
         html_content += f"""
             <div class="player-detail">
-                <input type="checkbox" id="player_{hash(pname)}">
-                <label for="player_{hash(pname)}" class="player-name">{pname}</label>
+                <input type="checkbox" id="player_{player_id}">
+                <label for="player_{player_id}" class="player-name">
+                    {headshot_html}
+                    <span class="player-name-text">{safe_name}</span>
+                </label>
                 <div class="player-content">
                     {metrics_html}
                     {games_table_html}

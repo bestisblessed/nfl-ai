@@ -2,7 +2,6 @@ import sqlite3
 import pandas as pd
 import os
 import shutil
-import requests
 import re
 # os.remove('nfl.db')
 shutil.rmtree('data', ignore_errors=True)
@@ -101,41 +100,8 @@ conn.close()
 #     download_image(team_code, team_name)
 # print("All team logos downloaded successfully.")
 
-### Player Headshots Download ###
-df_player_stats = pd.read_csv('data/player_stats.csv')
-unique_qbs_with_urls = df_player_stats[df_player_stats['headshot_url'].notna()] \
-                        .drop_duplicates(subset=['player_display_name'])
-image_folder = 'images/player-headshots'
-os.makedirs(image_folder, exist_ok=True)
-
-downloaded_count = 0
-skipped_count = 0
-total_qbs = len(unique_qbs_with_urls)
-
-for index, row in unique_qbs_with_urls.iterrows():
-    player_name = row['player_display_name'].lower().replace(' ', '_')
-    headshot_url = row['headshot_url']
-    image_path = os.path.join(image_folder, f"{player_name}.png")
-    
-    # Skip if image already exists
-    if os.path.exists(image_path):
-        skipped_count += 1
-        continue
-        
-    try:
-        response = requests.get(headshot_url)
-        if response.status_code == 200:
-            with open(image_path, 'wb') as file:
-                file.write(response.content)
-            downloaded_count += 1
-            print(f"Downloaded {player_name}'s headshot ({downloaded_count} new, {skipped_count} existing).")
-        else:
-            print(f"Failed to download {player_name}'s headshot (Status code: {response.status_code}).")
-    except Exception as e:
-        print(f"Error downloading {player_name}'s headshot: {e}")
-
-print(f"Download complete: {downloaded_count} new images downloaded, {skipped_count} already existed.")
-
+# Player headshots are now loaded directly from their remote URLs inside the
+# Streamlit app, so we no longer download them into images/player-headshots.
 
 ### Connect to the copied SQLite database and export tables to CSV ###
 if os.path.exists('data/games.csv'): os.remove('data/games.csv')
