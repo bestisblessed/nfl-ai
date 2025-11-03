@@ -63,6 +63,51 @@ df_player_data = pd.read_csv(csv_path)
 # Set the database path for headshots
 db_path = os.path.join(current_dir, '../data', 'nfl.db')
 
+# Load headshot map from Rosters.csv - single source of truth
+@st.cache_data(show_spinner=False)
+def load_headshot_map() -> dict[str, str]:
+    """Load headshot map from Rosters.csv.
+    
+    Returns a dict mapping player names to headshot URLs.
+    """
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    roster_path = os.path.join(current_dir, '../data', 'Rosters.csv')
+    
+    try:
+        df_roster = pd.read_csv(roster_path)
+    except FileNotFoundError:
+        return {}
+    
+    if df_roster.empty or 'full_name' not in df_roster.columns or 'headshot_url' not in df_roster.columns:
+        return {}
+    
+    headshot_map: dict[str, str] = {}
+    
+    # Clean and filter roster data
+    roster_clean = df_roster[['full_name', 'status', 'headshot_url']].copy()
+    roster_clean['headshot_url'] = roster_clean['headshot_url'].astype(str).str.strip()
+    roster_clean['full_name'] = roster_clean['full_name'].astype(str).str.strip()
+    
+    # Filter out inactive players
+    if 'status' in roster_clean.columns:
+        roster_clean = roster_clean[~roster_clean['status'].isin(['CUT', 'RET'])]
+    
+    # Filter to players with valid headshots
+    roster_clean = roster_clean[
+        (roster_clean['headshot_url'] != '') & 
+        (roster_clean['headshot_url'] != 'nan') &
+        (roster_clean['headshot_url'].notna())
+    ]
+    roster_clean = roster_clean[roster_clean['full_name'].notna()]
+    
+    # Create mapping (case-insensitive lookup ready)
+    for _, row in roster_clean.iterrows():
+        full_name = row['full_name']
+        headshot_url = row['headshot_url']
+        headshot_map[full_name] = headshot_url
+    
+    return headshot_map
+
 # Extract year and week from game_id (format: YYYY_WW_TEAM1_TEAM2)
 df_player_data['year'] = df_player_data['game_id'].str.split('_').str[0].astype(int)
 df_player_data['week'] = df_player_data['game_id'].str.split('_').str[1].astype(int)
@@ -98,7 +143,7 @@ def get_recent_games_data(player_name, num_games=10):
 
 st.divider()
 
-# Fetch player names from CSV data and headshots from database
+# Fetch player names from CSV data and headshots from database/roster
 def fetch_player_names_and_image():
     # Get all players from the full dataset
     all_players_data = df_player_data[df_player_data['year'] == selected_season]
@@ -118,25 +163,20 @@ def fetch_player_names_and_image():
     
     selected_player = st.selectbox("Select Player", options=player_names, index=default_index)
     
-    # Get headshot URL from database
+    # Get headshot URL from Rosters.csv (single source of truth)
+    headshot_map = load_headshot_map()
     headshot_url = None
-    try:
-        conn = sqlite3.connect(db_path)
-        query = """
-        SELECT DISTINCT headshot_url
-        FROM PlayerStats
-        WHERE player_display_name = ?
-        AND headshot_url IS NOT NULL 
-        AND headshot_url != ''
-        LIMIT 1
-        """
-        headshot_data = pd.read_sql_query(query, conn, params=[selected_player])
-        conn.close()
-        
-        if not headshot_data.empty:
-            headshot_url = headshot_data['headshot_url'].iloc[0]
-    except Exception as e:
-        st.write(f"Could not fetch headshot: {e}")
+    
+    # Try exact match first
+    if selected_player in headshot_map:
+        headshot_url = headshot_map[selected_player]
+    else:
+        # Try case-insensitive match
+        selected_lower = selected_player.strip().lower()
+        for name, url in headshot_map.items():
+            if name.strip().lower() == selected_lower:
+                headshot_url = url
+                break
     
     return selected_player, headshot_url
 
