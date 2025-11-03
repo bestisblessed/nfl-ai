@@ -23,6 +23,15 @@ fi
 
 echo "Running Week $WEEK"
 
+# Update upcoming games CSV
+echo "Updating upcoming_games.csv for week $WEEK..."
+python update_upcoming_games.py --week "$WEEK"
+if [ $? -ne 0 ]; then
+    echo "Error: Upcoming games update failed"
+    exit 1
+fi
+echo "✅ Upcoming games refreshed"
+
 # Scrape latest injury reports
 echo "Updating injured_players.csv and questionable_players.csv..."
 python scrape_injured_players.py
