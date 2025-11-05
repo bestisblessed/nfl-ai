@@ -1,8 +1,8 @@
 🏈 NFL WEEK 9 2025 - COMPLETE PROPS REPORT
 ================================================================================
-Generated: 2025-11-02 12:30:32
-Total Games: 14
-Total Props: 351
+Generated: 2025-11-03 03:13:00
+Total Games: 13
+Total Props: 320
 
 This report includes ALL player props for each game:
 • QB Passing Yards
@@ -10,123 +10,6 @@ This report includes ALL player props for each game:
 • RB Rushing Yards
 • WR/RB/TE Receiving Yards
 
-================================================================================
-
-================================================================================
-BAL vs MIA | Week 9 2025 | ALL PROPS
-================================================================================
-
-🏈 PASSING YARDS
-----------------------------------------
-BAL:
-  Lamar Jackson (QB): 218.7 yards
-
-MIA:
-  Tua Tagovailoa (QB): 186.4 yards
-
-
-🏈 RUSHING YARDS
-----------------------------------------
-BAL:
-  Derrick Henry (RB): 77.1 yards
-  Keaton Mitchell (RB): 31.1 yards
-  Lamar Jackson (QB): 30.4 yards
-  Justice Hill (RB): 9.0 yards
-  Rasheen Ali (RB): 1.1 yards
-
-MIA:
-  De'Von Achane (RB): 71.6 yards
-  Tua Tagovailoa (QB): 3.0 yards
-  Alec Ingold (RB): 0.1 yards
-
-
-🏈 RECEIVING YARDS
-----------------------------------------
-BAL:
-  Zay Flowers (WR): 59.1 yards
-  Mark Andrews (TE): 33.7 yards
-  Rashod Bateman (WR): 30.8 yards
-  DeAndre Hopkins (WR): 28.9 yards
-  Justice Hill (RB): 19.1 yards
-  Tylan Wallace (WR): 13.6 yards
-  Isaiah Likely (TE): 10.9 yards
-  Derrick Henry (RB): 7.3 yards
-  Keaton Mitchell (RB): 4.6 yards
-  Charlie Kolar (TE): 4.1 yards
-  Rasheen Ali (RB): 0.0 yards
-
-MIA:
-  Jaylen Waddle (WR): 67.4 yards
-  Malik Washington (WR): 26.0 yards
-  De'Von Achane (RB): 22.9 yards
-  Tanner Conner (TE): 15.8 yards
-  Greg Dulcich (TE): 14.2 yards
-  Nick Westbrook-Ikhine (WR): 11.0 yards
-  Cedrick Wilson Jr. (WR): 9.1 yards
-  Alec Ingold (RB): 6.4 yards
-
-
-📊 GAME SUMMARY
---------------------
-Total Props: 29
-With Predictions: 29
-No Data (Rookies): 0
-Top Projection: Lamar Jackson (QB) - 218.7 passing yards
-================================================================================
-
-================================================================================
-LAC vs TEN | Week 9 2025 | ALL PROPS
-================================================================================
-
-🏈 PASSING YARDS
-----------------------------------------
-LAC:
-  Justin Herbert (QB): 258.7 yards
-
-TEN:
-  Cam Ward (QB): 227.6 yards
-
-
-🏈 RUSHING YARDS
-----------------------------------------
-LAC:
-  Kimani Vidal (RB): 43.0 yards
-  Justin Herbert (QB): 21.3 yards
-  Scott Matlock (RB): 0.0 yards
-
-TEN:
-  Tony Pollard (RB): 50.4 yards
-  Tyjae Spears (RB): 21.8 yards
-  Julius Chestnut (RB): 13.1 yards
-  Cam Ward (QB): 0.0 yards
-
-
-🏈 RECEIVING YARDS
-----------------------------------------
-LAC:
-  Keenan Allen (WR): 73.1 yards
-  Ladd McConkey (WR): 63.1 yards
-  Quentin Johnston (WR): 41.9 yards
-  Tyler Conklin (TE): 38.0 yards
-  Tucker Fisk (TE): 4.3 yards
-  Scott Matlock (RB): 3.1 yards
-  Kimani Vidal (RB): 2.2 yards
-  Derius Davis (WR): -1.2 yards
-
-TEN:
-  Tony Pollard (RB): 23.3 yards
-  Van Jefferson (WR): 20.4 yards
-  Tyjae Spears (RB): 7.7 yards
-  David Martin-Robinson (TE): 3.5 yards
-  Julius Chestnut (RB): 0.0 yards
-
-
-📊 GAME SUMMARY
---------------------
-Total Props: 22
-With Predictions: 22
-No Data (Rookies): 0
-Top Projection: Justin Herbert (QB) - 258.7 passing yards
 ================================================================================
 
 ================================================================================
@@ -184,6 +67,118 @@ Total Props: 24
 With Predictions: 24
 No Data (Rookies): 0
 Top Projection: Drake Maye (QB) - 246.1 passing yards
+================================================================================
+
+================================================================================
+CAR vs GB | Week 9 2025 | ALL PROPS
+================================================================================
+
+🏈 PASSING YARDS
+----------------------------------------
+CAR:
+  Andy Dalton (QB): 66.6 yards
+
+GB:
+  Jordan Love (QB): 246.3 yards
+
+
+🏈 RUSHING YARDS
+----------------------------------------
+CAR:
+  Rico Dowdle (RB): 60.1 yards
+  Chuba Hubbard (RB): 55.5 yards
+  Bryce Young (QB): 4.5 yards
+  DeeJay Dallas (RB): 0.9 yards
+
+GB:
+  Josh Jacobs (RB): 73.9 yards
+  Emanuel Wilson (RB): 23.5 yards
+  Jordan Love (QB): 21.9 yards
+  Chris Brooks (RB): 2.4 yards
+
+
+🏈 RECEIVING YARDS
+----------------------------------------
+CAR:
+  Xavier Legette (WR): 33.6 yards
+  Jalen Coker (WR): 32.6 yards
+  Ja'Tavion Sanders (TE): 31.7 yards
+  Rico Dowdle (RB): 24.2 yards
+  Tommy Tremble (TE): 22.4 yards
+  Brycen Tremayne (WR): 17.9 yards
+  Chuba Hubbard (RB): 7.9 yards
+  DeeJay Dallas (RB): 4.4 yards
+
+GB:
+  Romeo Doubs (WR): 52.1 yards
+  Christian Watson (WR): 44.9 yards
+  Tucker Kraft (TE): 37.9 yards
+  Josh Jacobs (RB): 23.7 yards
+  Emanuel Wilson (RB): 23.1 yards
+  Luke Musgrave (TE): 21.7 yards
+  Chris Brooks (RB): 10.5 yards
+  Malik Heath (WR): 10.2 yards
+  John FitzPatrick (TE): 5.2 yards
+
+
+📊 GAME SUMMARY
+--------------------
+Total Props: 27
+With Predictions: 27
+No Data (Rookies): 0
+Top Projection: Jordan Love (QB) - 246.3 passing yards
+================================================================================
+
+================================================================================
+CHI vs CIN | Week 9 2025 | ALL PROPS
+================================================================================
+
+🏈 PASSING YARDS
+----------------------------------------
+CHI:
+  Caleb Williams (QB): 214.6 yards
+
+CIN:
+  Joe Flacco (QB): 238.7 yards
+
+
+🏈 RUSHING YARDS
+----------------------------------------
+CHI:
+  Caleb Williams (QB): 17.4 yards
+
+CIN:
+  Chase Brown (RB): 73.8 yards
+  Samaje Perine (RB): 19.4 yards
+  Joe Flacco (QB): 1.9 yards
+
+
+🏈 RECEIVING YARDS
+----------------------------------------
+CHI:
+  Rome Odunze (WR): 53.7 yards
+  DJ Moore (WR): 53.6 yards
+  Cole Kmet (TE): 32.4 yards
+  Olamide Zaccheaus (WR): 28.8 yards
+  Devin Duvernay (WR): 4.9 yards
+
+CIN:
+  Ja'Marr Chase (WR): 97.4 yards
+  Tee Higgins (WR): 46.3 yards
+  Noah Fant (TE): 36.4 yards
+  Andrei Iosivas (WR): 27.2 yards
+  Chase Brown (RB): 14.7 yards
+  Samaje Perine (RB): 11.4 yards
+  Tanner Hudson (TE): 9.4 yards
+  Drew Sample (TE): 9.4 yards
+
+
+📊 GAME SUMMARY
+--------------------
+Total Props: 19
+With Predictions: 19
+No Data (Rookies): 0
+Top Projection: Joe Flacco (QB) - 238.7 passing yards
 ================================================================================
 
 ================================================================================
@@ -249,111 +244,165 @@ Top Projection: C.J. Stroud (QB) - 249.1 passing yards
 ================================================================================
 
 ================================================================================
-CAR vs GB | Week 9 2025 | ALL PROPS
+IND vs PIT | Week 9 2025 | ALL PROPS
 ================================================================================
 
 🏈 PASSING YARDS
 ----------------------------------------
-CAR:
-  Andy Dalton (QB): 66.6 yards
+IND:
+  Daniel Jones (QB): 253.0 yards
 
-GB:
-  Jordan Love (QB): 246.3 yards
+PIT:
+  Aaron Rodgers (QB): 219.0 yards
 
 
 🏈 RUSHING YARDS
 ----------------------------------------
-CAR:
-  Rico Dowdle (RB): 60.1 yards
-  Chuba Hubbard (RB): 55.5 yards
-  DeeJay Dallas (RB): 0.9 yards
-  Andy Dalton (QB): 0.3 yards
+IND:
+  Jonathan Taylor (RB): 84.7 yards
+  Daniel Jones (QB): 15.4 yards
+  Ameer Abdullah (RB): 10.4 yards
+  Tyler Goodson (RB): 5.7 yards
 
-GB:
-  Josh Jacobs (RB): 73.9 yards
-  Emanuel Wilson (RB): 23.5 yards
-  Jordan Love (QB): 21.9 yards
-  Chris Brooks (RB): 2.4 yards
+PIT:
+  Jaylen Warren (RB): 62.3 yards
+  Kenneth Gainwell (RB): 37.3 yards
+  Aaron Rodgers (QB): 1.8 yards
 
 
 🏈 RECEIVING YARDS
 ----------------------------------------
-CAR:
-  Xavier Legette (WR): 33.6 yards
-  Jalen Coker (WR): 32.6 yards
-  Ja'Tavion Sanders (TE): 31.7 yards
-  Rico Dowdle (RB): 24.2 yards
-  Tommy Tremble (TE): 22.4 yards
-  Brycen Tremayne (WR): 17.9 yards
-  Chuba Hubbard (RB): 7.9 yards
-  DeeJay Dallas (RB): 4.4 yards
+IND:
+  Alec Pierce (WR): 57.3 yards
+  Josh Downs (WR): 38.9 yards
+  Adonai Mitchell (WR): 33.5 yards
+  Ashton Dulin (WR): 22.0 yards
+  Jonathan Taylor (RB): 19.5 yards
+  Mo Alie-Cox (TE): 9.8 yards
+  Andrew Ogletree (TE): 3.5 yards
+  Tyler Goodson (RB): 1.8 yards
+  Ameer Abdullah (RB): 1.2 yards
 
-GB:
-  Romeo Doubs (WR): 52.1 yards
-  Christian Watson (WR): 44.9 yards
-  Tucker Kraft (TE): 37.9 yards
-  Josh Jacobs (RB): 23.7 yards
-  Emanuel Wilson (RB): 23.1 yards
-  Luke Musgrave (TE): 21.7 yards
-  Chris Brooks (RB): 10.5 yards
-  Malik Heath (WR): 10.2 yards
-  John FitzPatrick (TE): 5.2 yards
+PIT:
+  DK Metcalf (WR): 55.5 yards
+  Pat Freiermuth (TE): 44.9 yards
+  Jonnu Smith (TE): 25.1 yards
+  Calvin Austin III (WR): 21.7 yards
+  Scott Miller (WR): 18.9 yards
+  Jaylen Warren (RB): 15.9 yards
+  Darnell Washington (TE): 14.7 yards
+  Kenneth Gainwell (RB): 13.0 yards
+  Ben Skowronek (WR): 11.0 yards
+  Connor Heyward (TE): 4.3 yards
 
 
 📊 GAME SUMMARY
 --------------------
-Total Props: 27
-With Predictions: 27
+Total Props: 28
+With Predictions: 28
 No Data (Rookies): 0
-Top Projection: Jordan Love (QB) - 246.3 passing yards
+Top Projection: Daniel Jones (QB) - 253.0 passing yards
 ================================================================================
 
 ================================================================================
-JAX vs LVR | Week 9 2025 | ALL PROPS
+LAC vs TEN | Week 9 2025 | ALL PROPS
 ================================================================================
 
 🏈 PASSING YARDS
 ----------------------------------------
-JAX:
-  Trevor Lawrence (QB): 222.5 yards
+LAC:
+  Justin Herbert (QB): 258.7 yards
 
-LVR:
-  Geno Smith (QB): 108.8 yards
+TEN:
+  Cam Ward (QB): 227.6 yards
 
 
 🏈 RUSHING YARDS
 ----------------------------------------
-JAX:
-  Travis Etienne (RB): 70.3 yards
-  Trevor Lawrence (QB): 28.1 yards
+LAC:
+  Kimani Vidal (RB): 43.0 yards
+  Justin Herbert (QB): 21.3 yards
+  Scott Matlock (RB): 0.0 yards
 
-LVR:
-  Zamir White (RB): 17.4 yards
-  Dylan Laube (RB): 2.3 yards
-  Geno Smith (QB): 1.7 yards
-  Raheem Mostert (RB): 0.8 yards
+TEN:
+  Tony Pollard (RB): 50.4 yards
+  Tyjae Spears (RB): 21.8 yards
+  Julius Chestnut (RB): 13.1 yards
+  Cam Ward (QB): 0.0 yards
 
 
 🏈 RECEIVING YARDS
 ----------------------------------------
-JAX:
-  Parker Washington (WR): 22.1 yards
-  Travis Etienne (RB): 18.2 yards
-  Dyami Brown (WR): 13.1 yards
-  Johnny Mundt (TE): 7.6 yards
-  Hunter Long (TE): 7.4 yards
+LAC:
+  Keenan Allen (WR): 73.1 yards
+  Ladd McConkey (WR): 63.1 yards
+  Quentin Johnston (WR): 41.9 yards
+  Tyler Conklin (TE): 38.0 yards
+  Tucker Fisk (TE): 4.3 yards
+  Scott Matlock (RB): 3.1 yards
+  Kimani Vidal (RB): 2.2 yards
+  Derius Davis (WR): -1.2 yards
 
-LVR:
-  Brock Bowers (TE): 49.5 yards
-  Jakobi Meyers (WR): 42.1 yards
-  Tre Tucker (WR): 31.8 yards
-  Tyler Lockett (WR): 18.9 yards
-  Michael Mayer (TE): 11.0 yards
-  Alex Bachman (WR): 6.9 yards
-  Zamir White (RB): 4.6 yards
-  Ian Thomas (TE): 4.1 yards
-  Raheem Mostert (RB): 2.6 yards
-  Dylan Laube (RB): 0.4 yards
+TEN:
+  Tony Pollard (RB): 23.3 yards
+  Van Jefferson (WR): 20.4 yards
+  Tyjae Spears (RB): 7.7 yards
+  David Martin-Robinson (TE): 3.5 yards
+  Julius Chestnut (RB): 0.0 yards
+
+
+📊 GAME SUMMARY
+--------------------
+Total Props: 22
+With Predictions: 22
+No Data (Rookies): 0
+Top Projection: Justin Herbert (QB) - 258.7 passing yards
+================================================================================
+
+================================================================================
+DET vs MIN | Week 9 2025 | ALL PROPS
+================================================================================
+
+🏈 PASSING YARDS
+----------------------------------------
+DET:
+  Jared Goff (QB): 234.8 yards
+
+
+🏈 RUSHING YARDS
+----------------------------------------
+DET:
+  Jahmyr Gibbs (RB): 73.4 yards
+  David Montgomery (RB): 54.9 yards
+  Jared Goff (QB): 5.2 yards
+
+MIN:
+  Aaron Jones (RB): 50.8 yards
+  Jordan Mason (RB): 40.8 yards
+  Cam Akers (RB): 24.0 yards
+  J.J. McCarthy (QB): 21.2 yards
+
+
+🏈 RECEIVING YARDS
+----------------------------------------
+DET:
+  Amon-Ra St. Brown (WR): 75.9 yards
+  Sam LaPorta (TE): 50.6 yards
+  Jameson Williams (WR): 34.9 yards
+  David Montgomery (RB): 24.6 yards
+  Jahmyr Gibbs (RB): 24.4 yards
+  Brock Wright (TE): 12.5 yards
+  Kalif Raymond (WR): 11.6 yards
+
+MIN:
+  Justin Jefferson (WR): 78.9 yards
+  Jordan Addison (WR): 46.5 yards
+  T.J. Hockenson (TE): 39.3 yards
+  Aaron Jones (RB): 25.3 yards
+  Jalen Nailor (WR): 13.5 yards
+  Adam Thielen (WR): 12.4 yards
+  Jordan Mason (RB): 5.9 yards
+  Cam Akers (RB): 2.4 yards
 
 
 📊 GAME SUMMARY
@@ -361,61 +410,7 @@ LVR:
 Total Props: 23
 With Predictions: 23
 No Data (Rookies): 0
-Top Projection: Trevor Lawrence (QB) - 222.5 passing yards
-================================================================================
-
-================================================================================
-SEA vs WAS | Week 9 2025 | ALL PROPS
-================================================================================
-
-🏈 PASSING YARDS
-----------------------------------------
-SEA:
-  Sam Darnold (QB): 266.7 yards
-
-WAS:
-  Marcus Mariota (QB): 150.2 yards
-
-
-🏈 RUSHING YARDS
-----------------------------------------
-SEA:
-  Kenneth Walker III (RB): 65.5 yards
-  Zach Charbonnet (RB): 32.6 yards
-  Sam Darnold (QB): 15.5 yards
-  George Holani (RB): 6.7 yards
-
-WAS:
-  Marcus Mariota (QB): 19.7 yards
-  Jeremy McNichols (RB): 11.4 yards
-
-
-🏈 RECEIVING YARDS
-----------------------------------------
-SEA:
-  Jaxon Smith-Njigba (WR): 77.1 yards
-  Cooper Kupp (WR): 46.2 yards
-  AJ Barner (TE): 25.4 yards
-  Kenneth Walker III (RB): 16.7 yards
-  George Holani (RB): 13.2 yards
-  Zach Charbonnet (RB): 7.3 yards
-
-WAS:
-  Zach Ertz (TE): 24.4 yards
-  Jeremy McNichols (RB): 15.8 yards
-  Tay Martin (WR): 14.2 yards
-  Ben Sinnott (TE): 13.2 yards
-  John Bates (TE): 7.7 yards
-  Robbie Chosen (WR): 7.6 yards
-  Luke McCaffrey (WR): 7.2 yards
-
-
-📊 GAME SUMMARY
---------------------
-Total Props: 21
-With Predictions: 21
-No Data (Rookies): 0
-Top Projection: Sam Darnold (QB) - 266.7 passing yards
+Top Projection: Jared Goff (QB) - 234.8 passing yards
 ================================================================================
 
 ================================================================================
@@ -479,169 +474,57 @@ Top Projection: Jaxson Dart (QB) - 248.6 passing yards
 ================================================================================
 
 ================================================================================
-DET vs MIN | Week 9 2025 | ALL PROPS
+JAX vs LVR | Week 9 2025 | ALL PROPS
 ================================================================================
 
 🏈 PASSING YARDS
 ----------------------------------------
-DET:
-  Jared Goff (QB): 234.8 yards
+JAX:
+  Trevor Lawrence (QB): 222.5 yards
+
+LVR:
+  Geno Smith (QB): 108.8 yards
 
 
 🏈 RUSHING YARDS
 ----------------------------------------
-DET:
-  Jahmyr Gibbs (RB): 73.4 yards
-  David Montgomery (RB): 54.9 yards
-  Jared Goff (QB): 5.2 yards
+JAX:
+  Travis Etienne (RB): 70.3 yards
+  Trevor Lawrence (QB): 28.1 yards
 
-MIN:
-  Aaron Jones (RB): 50.8 yards
-  Jordan Mason (RB): 40.8 yards
-  Cam Akers (RB): 24.0 yards
-
-
-🏈 RECEIVING YARDS
-----------------------------------------
-DET:
-  Amon-Ra St. Brown (WR): 75.9 yards
-  Sam LaPorta (TE): 50.6 yards
-  Jameson Williams (WR): 34.9 yards
-  David Montgomery (RB): 24.6 yards
-  Jahmyr Gibbs (RB): 24.4 yards
-  Brock Wright (TE): 12.5 yards
-  Kalif Raymond (WR): 11.6 yards
-
-MIN:
-  Justin Jefferson (WR): 78.9 yards
-  Jordan Addison (WR): 46.5 yards
-  T.J. Hockenson (TE): 39.3 yards
-  Aaron Jones (RB): 25.3 yards
-  Jalen Nailor (WR): 13.5 yards
-  Adam Thielen (WR): 12.4 yards
-  Jordan Mason (RB): 5.9 yards
-  Cam Akers (RB): 2.4 yards
-
-
-📊 GAME SUMMARY
---------------------
-Total Props: 22
-With Predictions: 22
-No Data (Rookies): 0
-Top Projection: Jared Goff (QB) - 234.8 passing yards
-================================================================================
-
-================================================================================
-IND vs PIT | Week 9 2025 | ALL PROPS
-================================================================================
-
-🏈 PASSING YARDS
-----------------------------------------
-IND:
-  Daniel Jones (QB): 253.0 yards
-
-PIT:
-  Aaron Rodgers (QB): 219.0 yards
-
-
-🏈 RUSHING YARDS
-----------------------------------------
-IND:
-  Jonathan Taylor (RB): 84.7 yards
-  Daniel Jones (QB): 15.4 yards
-  Ameer Abdullah (RB): 10.4 yards
-  Tyler Goodson (RB): 5.7 yards
-
-PIT:
-  Jaylen Warren (RB): 62.3 yards
-  Kenneth Gainwell (RB): 37.3 yards
-  Aaron Rodgers (QB): 1.8 yards
+LVR:
+  Dylan Laube (RB): 2.3 yards
+  Geno Smith (QB): 1.7 yards
+  Raheem Mostert (RB): 0.8 yards
 
 
 🏈 RECEIVING YARDS
 ----------------------------------------
-IND:
-  Alec Pierce (WR): 57.3 yards
-  Josh Downs (WR): 38.9 yards
-  Adonai Mitchell (WR): 33.5 yards
-  Ashton Dulin (WR): 22.0 yards
-  Jonathan Taylor (RB): 19.5 yards
-  Mo Alie-Cox (TE): 9.8 yards
-  Andrew Ogletree (TE): 3.5 yards
-  Tyler Goodson (RB): 1.8 yards
-  Ameer Abdullah (RB): 1.2 yards
+JAX:
+  Parker Washington (WR): 22.1 yards
+  Travis Etienne (RB): 18.2 yards
+  Dyami Brown (WR): 13.1 yards
+  Johnny Mundt (TE): 7.6 yards
+  Hunter Long (TE): 7.4 yards
 
-PIT:
-  DK Metcalf (WR): 55.5 yards
-  Pat Freiermuth (TE): 44.9 yards
-  Jonnu Smith (TE): 25.1 yards
-  Calvin Austin III (WR): 21.7 yards
-  Scott Miller (WR): 18.9 yards
-  Jaylen Warren (RB): 15.9 yards
-  Darnell Washington (TE): 14.7 yards
-  Kenneth Gainwell (RB): 13.0 yards
-  Ben Skowronek (WR): 11.0 yards
-  Connor Heyward (TE): 4.3 yards
+LVR:
+  Brock Bowers (TE): 49.5 yards
+  Jakobi Meyers (WR): 42.1 yards
+  Tre Tucker (WR): 31.8 yards
+  Tyler Lockett (WR): 18.9 yards
+  Michael Mayer (TE): 11.0 yards
+  Alex Bachman (WR): 6.9 yards
+  Ian Thomas (TE): 4.1 yards
+  Raheem Mostert (RB): 2.6 yards
+  Dylan Laube (RB): 0.4 yards
 
 
 📊 GAME SUMMARY
 --------------------
-Total Props: 28
-With Predictions: 28
+Total Props: 21
+With Predictions: 21
 No Data (Rookies): 0
-Top Projection: Daniel Jones (QB) - 253.0 passing yards
-================================================================================
-
-================================================================================
-CHI vs CIN | Week 9 2025 | ALL PROPS
-================================================================================
-
-🏈 PASSING YARDS
-----------------------------------------
-CHI:
-  Caleb Williams (QB): 214.6 yards
-
-CIN:
-  Joe Flacco (QB): 238.7 yards
-
-
-🏈 RUSHING YARDS
-----------------------------------------
-CHI:
-  Caleb Williams (QB): 17.4 yards
-
-CIN:
-  Chase Brown (RB): 73.8 yards
-  Samaje Perine (RB): 19.4 yards
-  Joe Flacco (QB): 1.9 yards
-
-
-🏈 RECEIVING YARDS
-----------------------------------------
-CHI:
-  Rome Odunze (WR): 53.7 yards
-  DJ Moore (WR): 53.6 yards
-  Cole Kmet (TE): 32.4 yards
-  Olamide Zaccheaus (WR): 28.8 yards
-  Devin Duvernay (WR): 4.9 yards
-
-CIN:
-  Ja'Marr Chase (WR): 97.4 yards
-  Tee Higgins (WR): 46.3 yards
-  Noah Fant (TE): 36.4 yards
-  Andrei Iosivas (WR): 27.2 yards
-  Chase Brown (RB): 14.7 yards
-  Samaje Perine (RB): 11.4 yards
-  Tanner Hudson (TE): 9.4 yards
-  Drew Sample (TE): 9.4 yards
-
-
-📊 GAME SUMMARY
---------------------
-Total Props: 19
-With Predictions: 19
-No Data (Rookies): 0
-Top Projection: Joe Flacco (QB) - 238.7 passing yards
+Top Projection: Trevor Lawrence (QB) - 222.5 passing yards
 ================================================================================
 
 ================================================================================
@@ -761,6 +644,59 @@ Total Props: 28
 With Predictions: 28
 No Data (Rookies): 0
 Top Projection: Patrick Mahomes (QB) - 270.9 passing yards
+================================================================================
+
+================================================================================
+SEA vs WAS | Week 9 2025 | ALL PROPS
+================================================================================
+
+🏈 PASSING YARDS
+----------------------------------------
+SEA:
+  Sam Darnold (QB): 266.7 yards
+
+WAS:
+  Marcus Mariota (QB): 150.2 yards
+
+
+🏈 RUSHING YARDS
+----------------------------------------
+SEA:
+  Kenneth Walker III (RB): 65.5 yards
+  Zach Charbonnet (RB): 32.6 yards
+  Sam Darnold (QB): 15.5 yards
+  George Holani (RB): 6.7 yards
+
+WAS:
+  Marcus Mariota (QB): 19.7 yards
+  Jeremy McNichols (RB): 11.4 yards
+
+
+🏈 RECEIVING YARDS
+----------------------------------------
+SEA:
+  Jaxon Smith-Njigba (WR): 77.1 yards
+  AJ Barner (TE): 25.4 yards
+  Kenneth Walker III (RB): 16.7 yards
+  George Holani (RB): 13.2 yards
+  Zach Charbonnet (RB): 7.3 yards
+
+WAS:
+  Zach Ertz (TE): 24.4 yards
+  Jeremy McNichols (RB): 15.8 yards
+  Tay Martin (WR): 14.2 yards
+  Ben Sinnott (TE): 13.2 yards
+  John Bates (TE): 7.7 yards
+  Robbie Chosen (WR): 7.6 yards
+  Luke McCaffrey (WR): 7.2 yards
+
+
+📊 GAME SUMMARY
+--------------------
+Total Props: 20
+With Predictions: 20
+No Data (Rookies): 0
+Top Projection: Sam Darnold (QB) - 266.7 passing yards
 ================================================================================
 
 ================================================================================
