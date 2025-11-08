@@ -141,15 +141,15 @@ leaderboards = []
 
 # Quarterback Passing Yards
 qb_board = create_leaderboard_from_projections(
-    projections_df, 'Passing Yards', 'Top 25 QB Passing Yards'
+    projections_df, 'Passing Yards', 'Top QB Passing Yards', top_n=1000
 )
 if qb_board:
     leaderboards.append(qb_board)
 
 # Quarterback Rushing Yards
 qb_rush_board = create_leaderboard_from_projections(
-    projections_df, 'Rushing Yards', 'Top 25 QB Rushing Yards',
-    lambda df: df[df['position'] == 'QB']
+    projections_df, 'Rushing Yards', 'Top QB Rushing Yards',
+    lambda df: df[df['position'] == 'QB'], top_n=1000
 )
 if qb_rush_board:
     leaderboards.append(qb_rush_board)
