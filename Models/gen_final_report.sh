@@ -102,13 +102,36 @@ if [ $? -ne 0 ]; then
 fi
 echo "✅ Top 25 analysis complete"
 
+echo "Fetching Betting Props from API..."
+cd 10-ARBITRAGE
+python fetch_upcoming_games_and_props.py $WEEK
+if [ $? -ne 0 ]; then
+    echo "Error: Fetching props failed"
+    exit 1
+fi
+echo "✅ Betting props fetched"
+cd ..
+
+echo "Comparing Predictions vs Props to Find Value..."
+cd 10-ARBITRAGE
+python find_value_bets.py $WEEK
+if [ $? -ne 0 ]; then
+    echo "Error: Comparing predictions vs props failed"
+    exit 1
+fi
+echo "✅ Value opportunities identified"
+cd ..
+
 echo "‼️ DONE MODELING"
 echo "  ✅ Passing Yards: QB predictions generated"
 echo "  ✅ Receiving Yards: WR/RB/TE predictions generated"
 echo "  ✅ Rushing Yards: QB/RB predictions generated"
 echo "  ✅ Final Reports: Combined HTML/CSV reports created"
 echo "  ✅ Top 25 Analysis PDF generated"
+echo "  ✅ Betting Props: Fetched from API"
+echo "  ✅ Value Opportunities: Identified and ranked"
 echo "📁 Reports saved to 0-FINAL-REPORTS/"
+echo "📁 Value opportunities saved to 10-ARBITRAGE/data/"
 echo ""
 echo "🔗 Open report: file://$(pwd)/0-FINAL-REPORTS/week${WEEK}_complete_props_report.html"
 echo "📊 Top 25 PDF: file://$(pwd)/0-FINAL-REPORTS/week${WEEK}_leader_tables.pdf"
