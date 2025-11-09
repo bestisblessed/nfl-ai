@@ -5,6 +5,7 @@ mkdir -p data/projections/
 cp /Users/td/Code/nfl-ai/Scrapers/final_data_pfr/player_stats_pfr.csv data/
 cp /Users/td/Code/nfl-ai/Models/0-FINAL-REPORTS/* data/projections/
 cp /Users/td/Code/nfl-ai/Models/upcoming_games.csv .
+cp ../../Models/10-ARBITRAGE/data/* data/projections/
 
 # python nfl_odds.py
 # cp ../../odds-monitoring/DASHBOARD/data/nfl_odds_movements.csv data/odds/
