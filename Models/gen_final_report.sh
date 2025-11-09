@@ -122,6 +122,16 @@ fi
 echo "✅ Value opportunities identified"
 cd ..
 
+echo "Generating Value Reports (HTML & PDF)..."
+cd 10-ARBITRAGE
+python render_value_reports.py $WEEK
+if [ $? -ne 0 ]; then
+    echo "Error: Generating value reports failed"
+    exit 1
+fi
+echo "✅ Value reports generated"
+cd ..
+
 echo "‼️ DONE MODELING"
 echo "  ✅ Passing Yards: QB predictions generated"
 echo "  ✅ Receiving Yards: WR/RB/TE predictions generated"
@@ -130,11 +140,14 @@ echo "  ✅ Final Reports: Combined HTML/CSV reports created"
 echo "  ✅ Top 25 Analysis PDF generated"
 echo "  ✅ Betting Props: Fetched from API"
 echo "  ✅ Value Opportunities: Identified and ranked"
+echo "  ✅ Value Reports: HTML and PDF reports generated"
 echo "📁 Reports saved to 0-FINAL-REPORTS/"
 echo "📁 Value opportunities saved to 10-ARBITRAGE/data/"
 echo ""
 echo "🔗 Open report: file://$(pwd)/0-FINAL-REPORTS/week${WEEK}_complete_props_report.html"
 echo "📊 Top 25 PDF: file://$(pwd)/0-FINAL-REPORTS/week${WEEK}_leader_tables.pdf"
+echo "💰 Value report: file://$(pwd)/0-FINAL-REPORTS/week${WEEK}_value_complete_props_report.html"
+echo "📊 Value PDF: file://$(pwd)/0-FINAL-REPORTS/week${WEEK}_value_leader_tables.pdf"
 echo ""
 git status .
 read -p "Commit changes? (y/n): " COMMIT
