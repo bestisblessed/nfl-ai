@@ -111,15 +111,20 @@ def load_headshot_map() -> dict[str, str]:
 
 
 def get_player_position(player_name: str | None) -> str | None:
-    """Return the player's position if available."""
+    """Return the player's position if available.
+    
+    Uses the same approach as get_recent_games_data and other functions.
+    """
     if player_name is None:
         return None
 
-    player_rows = df_player_data[df_player_data['player'] == player_name]
-    if player_rows.empty or 'position' not in player_rows.columns:
+    # Get player data the same way get_recent_games_data does
+    player_data = df_player_data[df_player_data['player'] == player_name].copy()
+    if player_data.empty or 'position' not in player_data.columns:
         return None
 
-    non_null_positions = player_rows['position'].dropna()
+    # Extract position the same way other functions do (iloc[-1] on non-null positions)
+    non_null_positions = player_data['position'].dropna()
     if non_null_positions.empty:
         return None
 
