@@ -29,10 +29,22 @@ import pandas as pd
 def get_file_paths(week):
     from datetime import datetime
     current_date = datetime.now().strftime("%Y-%m-%d")
+    import os
+    props_original = f"data/week{week}_props_{current_date}.csv"
+    # Check previous day's file as well
+    from datetime import timedelta
+    prev_date = (datetime.now() - timedelta(days=1)).strftime("%Y-%m-%d")
+    props_prev_original = f"data/week{week}_props_{prev_date}.csv"
+    
+    if os.path.exists(props_original):
+        props_file = props_original
+    else:
+        props_file = props_prev_original
+    
     return {
         "predictions_primary": f"0-FINAL-REPORTS/week{week}_all_props_summary.csv",
         "predictions_fallback": f"../0-FINAL-REPORTS/week{week}_all_props_summary.csv",
-        "props": f"data/week{week}_props_{current_date}.csv",
+        "props": props_file,
         "output_full": f"data/week{week}_value_opportunities.csv",
         "output_top": f"data/week{week}_top_edges_by_prop.csv"
     }
@@ -58,8 +70,34 @@ def load_predictions(paths) -> pd.DataFrame:
     return df
 
 
-def load_props(paths) -> pd.DataFrame:
-    return pd.read_csv(paths["props"])
+def load_props(paths, week) -> pd.DataFrame:
+    df = pd.read_csv(paths["props"])
+    
+    # Week 10 specific fix: Filter to pre-game lines only
+    # (Props were fetched at 3pm when 1pm games had started)
+    if week == "10":
+        week10_1pm_games = {
+            'Minnesota Vikings', 'Baltimore Ravens',
+            'Miami Dolphins', 'Buffalo Bills',
+            'New York Jets', 'Cleveland Browns',
+            'Houston Texans', 'Jacksonville Jaguars',
+            'Tampa Bay Buccaneers', 'New England Patriots',
+            'Carolina Panthers', 'New Orleans Saints',
+            'Chicago Bears', 'New York Giants'
+        }
+        
+        def is_1pm_game(row):
+            return row['home_team'] in week10_1pm_games or row['away_team'] in week10_1pm_games
+        
+        # For 1pm games: keep only Pinnacle (retained pre-game lines)
+        # For later games: keep all books
+        mask = (~df.apply(is_1pm_game, axis=1)) | (df['bookmaker'] == 'Pinnacle')
+        df = df[mask].copy()
+        
+        filtered_count = len(pd.read_csv(paths["props"])) - len(df)
+        print(f"Week 10 fix applied: Filtered {filtered_count} live lines from 1pm games (kept Pinnacle only)")
+    
+    return df
 
 
 def normalize_player_name(name: str) -> str:
@@ -160,7 +198,7 @@ def main():
     
     # 1) Load data
     preds = load_predictions(paths)
-    props = load_props(paths)
+    props = load_props(paths, week)
 
     # 2) Prepare predictions: map market and normalize names
     preds = preds.copy()
