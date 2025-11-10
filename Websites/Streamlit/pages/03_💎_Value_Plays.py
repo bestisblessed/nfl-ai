@@ -113,27 +113,85 @@ value_opportunities["side"] = value_opportunities["side"].fillna("-")
 value_opportunities["ev_per_1"] = value_opportunities["ev_per_1"].fillna(0.0)
 value_opportunities["edge_yards"] = value_opportunities["edge_yards"].fillna(0.0)
 
+# Get unique games for selector
+if "home_team" in value_opportunities.columns and "away_team" in value_opportunities.columns:
+    games_df = value_opportunities[["home_team", "away_team"]].drop_duplicates()
+    game_options = ["All Games"] + [
+        f"{row['away_team']} @ {row['home_team']}"
+        for _, row in games_df.iterrows()
+    ]
+else:
+    # Fallback: create games from team/opp pairs
+    games_set = set()
+    for _, row in value_opportunities.iterrows():
+        if pd.notna(row.get("team")) and pd.notna(row.get("opp")):
+            games_set.add(f"{row['team']} vs {row['opp']}")
+    game_options = ["All Games"] + sorted(games_set)
+
 all_prop_types = sorted(value_opportunities["prop_type"].dropna().unique())
+
+# Game selector in sidebar
+selected_game = st.sidebar.selectbox(
+    "Select Game:",
+    options=game_options,
+    index=0,
+)
 
 st.divider()
 
-st.subheader("Top Value Opportunities")
-
-prop_type_tabs = st.tabs(all_prop_types)
-
-for tab_label, tab in zip(all_prop_types, prop_type_tabs):
-    with tab:
-        subset = value_opportunities[value_opportunities["prop_type"] == tab_label].copy()
-
-        if subset.empty:
-            st.info("No value plays available for this prop type.")
+# Filter by selected game if not "All Games"
+if selected_game != "All Games":
+    # Parse the game selection
+    if " @ " in selected_game:
+        # Format: "Away Team @ Home Team"
+        away_team_full, home_team_full = selected_game.split(" @ ")
+        game_data = value_opportunities[
+            ((value_opportunities["home_team"] == home_team_full) & 
+             (value_opportunities["away_team"] == away_team_full))
+        ].copy()
+    else:
+        # Fallback format: "Team1 vs Team2"
+        parts = selected_game.replace(" vs ", " ").split()
+        if len(parts) >= 2:
+            team1, team2 = parts[0], parts[-1]
+            game_data = value_opportunities[
+                ((value_opportunities["team"] == team1) & (value_opportunities["opp"] == team2)) |
+                ((value_opportunities["team"] == team2) & (value_opportunities["opp"] == team1))
+            ].copy()
+        else:
+            game_data = value_opportunities.copy()
+    
+    # Show game-specific view organized by prop type (all on one page)
+    st.markdown(f"""
+        <div style='background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                        padding: 1px;
+                        border-radius: 15px;
+                        margin: 10px 0 25px 0;
+                        text-align: center;
+                        box-shadow: 0 4px 6px rgba(0,0,0,0.08);'>
+            <h2 style='color: white; margin: 0; font-size: 2em; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); letter-spacing: 1px;'>
+                {selected_game}
+            </h2>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+    st.write("")
+    
+    for prop_type in all_prop_types:
+        prop_data = game_data[game_data["prop_type"] == prop_type].copy()
+        
+        if prop_data.empty:
             continue
-
+        
         # Sort by edge yards descending and add ranking
-        subset = subset.sort_values(by="edge_yards", ascending=False).reset_index(drop=True)
-        subset["rank"] = range(1, len(subset) + 1)
-
-        display_df = subset[
+        prop_data = prop_data.sort_values(by="edge_yards", ascending=False).reset_index(drop=True)
+        prop_data["rank"] = range(1, len(prop_data) + 1)
+        
+        # Section header for prop type
+        st.markdown(f"### {prop_type.upper()}")
+        
+        display_df = prop_data[
             [
                 "rank",
                 "player",
@@ -141,10 +199,10 @@ for tab_label, tab in zip(all_prop_types, prop_type_tabs):
                 "team",
                 "opp",
                 "side",
-                "predicted_yards",
                 "best_point",
                 "best_price",
                 "bookmaker",
+                "predicted_yards",
                 "edge_yards",
             ]
         ].rename(
@@ -153,46 +211,137 @@ for tab_label, tab in zip(all_prop_types, prop_type_tabs):
                 "player": "Player",
                 "position": "Pos",
                 "team": "Team",
-                "opp": "Opponent",
+                "opp": "Opp",
                 "side": "Side",
-                "predicted_yards": "Model Projection",
-                "best_point": "Best Line",
-                "best_price": "Best Price",
-                "bookmaker": "Sportsbook",
-                "edge_yards": "Edge (Yards)",
+                "best_point": "Line",
+                "best_price": "Odds",
+                "bookmaker": "Book",
+                "predicted_yards": "Pred",
+                "edge_yards": "Edge",
             }
         )
-
-        display_df["Model Projection"] = display_df["Model Projection"].round(1)
-        display_df["Best Line"] = display_df["Best Line"].round(1)
-        display_df["Best Price"] = display_df["Best Price"].round().astype("Int64")
-        display_df["Edge (Yards)"] = display_df["Edge (Yards)"].round(2)
-
+        
+        display_df["Line"] = display_df["Line"].round(1)
+        display_df["Odds"] = display_df["Odds"].round().astype("Int64")
+        display_df["Pred"] = display_df["Pred"].round(1)
+        display_df["Edge"] = display_df["Edge"].round(1)
+        
         st.dataframe(
             display_df,
             use_container_width=True,
-            height=800,
             hide_index=True,
             column_config={
                 "#": st.column_config.NumberColumn("#"),
-                "Model Projection": st.column_config.NumberColumn(
-                    "Model Projection", format="%.1f"
-                ),
-                "Best Line": st.column_config.NumberColumn("Best Line", format="%.1f"),
-                "Best Price": st.column_config.NumberColumn("Best Price"),
-                "Edge (Yards)": st.column_config.NumberColumn(
-                    "Edge (Yards)", format="%.2f"
-                ),
+                "Line": st.column_config.NumberColumn("Line", format="%.1f"),
+                "Odds": st.column_config.NumberColumn("Odds"),
+                "Pred": st.column_config.NumberColumn("Pred", format="%.1f"),
+                "Edge": st.column_config.NumberColumn("Edge", format="%.1f"),
             },
         )
+        st.write("")
+    
+    # Update CSV data for download
+    csv_data = game_data.to_csv(index=False).encode("utf-8")
+else:
+    # Show all games view (original behavior)
+    st.markdown(f"""
+        <div style='background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                        padding: 1px;
+                        border-radius: 15px;
+                        margin: 10px 0 25px 0;
+                        text-align: center;
+                        box-shadow: 0 4px 6px rgba(0,0,0,0.08);'>
+            <h2 style='color: white; margin: 0; font-size: 2em; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); letter-spacing: 1px;'>
+                Week {selected_week_number}
+            </h2>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+    
+    prop_type_tabs = st.tabs(all_prop_types)
+    
+    for tab_label, tab in zip(all_prop_types, prop_type_tabs):
+        with tab:
+            subset = value_opportunities[value_opportunities["prop_type"] == tab_label].copy()
+            
+            if subset.empty:
+                st.info("No value plays available for this prop type.")
+                continue
+            
+            # Sort by edge yards descending and add ranking
+            subset = subset.sort_values(by="edge_yards", ascending=False).reset_index(drop=True)
+            subset["rank"] = range(1, len(subset) + 1)
+            
+            display_df = subset[
+                [
+                    "rank",
+                    "player",
+                    "position",
+                    "team",
+                    "opp",
+                    "side",
+                    "predicted_yards",
+                    "best_point",
+                    "best_price",
+                    "bookmaker",
+                    "edge_yards",
+                ]
+            ].rename(
+                columns={
+                    "rank": "#",
+                    "player": "Player",
+                    "position": "Pos",
+                    "team": "Team",
+                    "opp": "Opponent",
+                    "side": "Side",
+                    "predicted_yards": "Model Projection",
+                    "best_point": "Best Line",
+                    "best_price": "Best Price",
+                    "bookmaker": "Sportsbook",
+                    "edge_yards": "Edge (Yards)",
+                }
+            )
+            
+            display_df["Model Projection"] = display_df["Model Projection"].round(1)
+            display_df["Best Line"] = display_df["Best Line"].round(1)
+            display_df["Best Price"] = display_df["Best Price"].round().astype("Int64")
+            display_df["Edge (Yards)"] = display_df["Edge (Yards)"].round(2)
+            
+            st.dataframe(
+                display_df,
+                use_container_width=True,
+                height=800,
+                hide_index=True,
+                column_config={
+                    "#": st.column_config.NumberColumn("#"),
+                    "Model Projection": st.column_config.NumberColumn(
+                        "Model Projection", format="%.1f"
+                    ),
+                    "Best Line": st.column_config.NumberColumn("Best Line", format="%.1f"),
+                    "Best Price": st.column_config.NumberColumn("Best Price"),
+                    "Edge (Yards)": st.column_config.NumberColumn(
+                        "Edge (Yards)", format="%.2f"
+                    ),
+                },
+            )
+    
+    # CSV data for all games
+    csv_data = value_opportunities.to_csv(index=False).encode("utf-8")
 
-csv_data = value_opportunities.to_csv(index=False).encode("utf-8")
 col1, col2, col3 = st.columns([1, 0.5, 1])
 with col2:
+    if selected_game != "All Games":
+        # Clean game name for filename
+        game_filename = selected_game.replace(" @ ", "_at_").replace(" vs ", "_vs_").replace(" ", "_")
+        filename = f"week{selected_week_number}_{game_filename}_value_opportunities.csv"
+    else:
+        filename = f"week{selected_week_number}_value_opportunities.csv"
+    
     st.download_button(
         label="Download (CSV)",
         data=csv_data,
-        file_name=f"week{selected_week_number}_value_opportunities.csv",
+        file_name=filename,
         mime="text/csv",
         use_container_width=True,
     )
