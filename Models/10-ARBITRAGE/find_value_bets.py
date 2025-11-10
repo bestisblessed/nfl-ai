@@ -29,24 +29,28 @@ import pandas as pd
 def get_file_paths(week):
     from datetime import datetime
     current_date = datetime.now().strftime("%Y-%m-%d")
-    # Try fixed file first (with corrected rushing props), fall back to original
+    # Try filtered file first (games not yet started), then fallback
     import os
-    props_fixed = f"data/week{week}_props_{current_date}_fixed.csv"
+    props_filtered = f"data/week{week}_props_{current_date}_filtered.csv"
     props_original = f"data/week{week}_props_{current_date}.csv"
     # Check previous day's file as well
     from datetime import timedelta
     prev_date = (datetime.now() - timedelta(days=1)).strftime("%Y-%m-%d")
-    props_prev_fixed = f"data/week{week}_props_{prev_date}_fixed.csv"
+    props_prev_filtered = f"data/week{week}_props_{prev_date}_filtered.csv"
     props_prev_original = f"data/week{week}_props_{prev_date}.csv"
     
-    if os.path.exists(props_fixed):
-        props_file = props_fixed
-    elif os.path.exists(props_prev_fixed):
-        props_file = props_prev_fixed
+    if os.path.exists(props_filtered):
+        props_file = props_filtered
+        print(f"Using filtered props (games not yet started): {props_filtered}")
+    elif os.path.exists(props_prev_filtered):
+        props_file = props_prev_filtered
+        print(f"Using filtered props (games not yet started): {props_prev_filtered}")
     elif os.path.exists(props_original):
         props_file = props_original
+        print(f"WARNING: Using unfiltered props - may include started games: {props_original}")
     else:
         props_file = props_prev_original
+        print(f"WARNING: Using unfiltered props - may include started games: {props_prev_original}")
     
     return {
         "predictions_primary": f"0-FINAL-REPORTS/week{week}_all_props_summary.csv",
