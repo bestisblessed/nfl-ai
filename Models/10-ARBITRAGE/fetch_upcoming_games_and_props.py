@@ -67,6 +67,11 @@ def get_team_keywords(team_abbrev):
         return words[-1]
     return full_name
 
+def print_api_usage(response):
+    remaining = response.headers.get('x-requests-remaining', 'N/A')
+    used = response.headers.get('x-requests-used', 'N/A')
+    print(f"  API Usage: {used} used, {remaining} remaining")
+
 def get_unique_games_from_csv(week):
     csv_path = f'0-FINAL-REPORTS/week{week}_all_props_summary.csv'
     if not os.path.exists(csv_path):
@@ -82,6 +87,7 @@ def get_unique_games_from_csv(week):
 def fetch_all_events():
     events_url = f"{base_url}{sport_key}/events?apiKey={api_key}"
     response = requests.get(events_url)
+    print_api_usage(response)
     if response.status_code == 200:
         return response.json()
     else:
@@ -119,6 +125,7 @@ def fetch_props_for_event(event_id):
     props_url = f"{base_url}{sport_key}/events/{event_id}/odds"
     url = f"{props_url}?apiKey={api_key}&regions={regions}&markets={markets}&oddsFormat={odds_format}"
     response = requests.get(url)
+    print_api_usage(response)
     if response.status_code == 200:
         return response.json()
     else:
@@ -195,10 +202,30 @@ def main():
         if idx < len(event_mapping):
             time.sleep(1)
     
-    print(f"\nStep 5: Saving {len(all_props)} total props to CSV")
-    os.makedirs('data', exist_ok=True)
+    print(f"\nStep 5: Saving events data to CSV")
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    data_dir = os.path.join(script_dir, 'data')
+    os.makedirs(data_dir, exist_ok=True)
+    events_data = []
+    for event_id, (team, opp) in event_mapping.items():
+        # Find the event in all_events
+        event = next((e for e in all_events if e['id'] == event_id), None)
+        if event:
+            events_data.append({
+                'home_team': event.get('home_team', ''),
+                'away_team': event.get('away_team', ''),
+                'commence_time': event.get('commence_time', '')
+            })
+    
+    if events_data:
+        events_df = pd.DataFrame(events_data)
+        events_filename = os.path.join(data_dir, f'week{week}_events.csv')
+        events_df.to_csv(events_filename, index=False)
+        print(f"Saved events to {events_filename}")
+    
+    print(f"\nStep 6: Saving {len(all_props)} total props to CSV")
     current_date = datetime.now().strftime("%Y-%m-%d")
-    filename = f'data/week{week}_props_{current_date}.csv'
+    filename = os.path.join(data_dir, f'week{week}_props_{current_date}.csv')
     
     if all_props:
         df = pd.DataFrame(all_props)

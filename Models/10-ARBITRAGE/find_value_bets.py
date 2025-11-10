@@ -30,11 +30,11 @@ def get_file_paths(week):
     from datetime import datetime
     current_date = datetime.now().strftime("%Y-%m-%d")
     import os
-    props_original = f"data/week{week}_props_{current_date}.csv"
+    props_original = f"10-ARBITRAGE/data/week{week}_props_{current_date}.csv"
     # Check previous day's file as well
     from datetime import timedelta
     prev_date = (datetime.now() - timedelta(days=1)).strftime("%Y-%m-%d")
-    props_prev_original = f"data/week{week}_props_{prev_date}.csv"
+    props_prev_original = f"10-ARBITRAGE/data/week{week}_props_{prev_date}.csv"
     
     if os.path.exists(props_original):
         props_file = props_original
@@ -98,6 +98,28 @@ def load_props(paths, week) -> pd.DataFrame:
         print(f"Week 10 fix applied: Filtered {filtered_count} live lines from 1pm games (kept Pinnacle only)")
     
     return df
+
+
+def load_events_data(week) -> pd.DataFrame:
+    """Load NFL events data with game commence times."""
+    # Only use week-specific events file - no fallback to bak/ directory
+    week_events_path = f"10-ARBITRAGE/data/week{week}_events.csv"
+    if not os.path.exists(week_events_path):
+        print(f"Warning: Could not find week {week} events file at {week_events_path}. Games will be sorted lexicographically.")
+        return pd.DataFrame()
+
+    df = pd.read_csv(week_events_path)
+    # Rename columns to match our format if needed (handle both formats)
+    column_mapping = {
+        'Home Team': 'home_team',
+        'Away Team': 'away_team',
+        'Commence Time': 'commence_time'
+    }
+    # Only rename columns that exist and need renaming
+    df = df.rename(columns={k: v for k, v in column_mapping.items() if k in df.columns})
+    # Convert commence time to datetime for sorting
+    df['commence_time'] = pd.to_datetime(df['commence_time'], utc=True)
+    return df[['home_team', 'away_team', 'commence_time']]
 
 
 def normalize_player_name(name: str) -> str:
@@ -199,6 +221,7 @@ def main():
     # 1) Load data
     preds = load_predictions(paths)
     props = load_props(paths, week)
+    events = load_events_data(week)
 
     # 2) Prepare predictions: map market and normalize names
     preds = preds.copy()
@@ -274,11 +297,37 @@ def main():
         "pred_yards": "predicted_yards",
     })
 
+    # 8) Merge commence times if events data is available
+    if not events.empty:
+        # Try merging with original home/away order
+        out = pd.merge(out, events, on=["home_team", "away_team"], how="left", suffixes=("", "_events"))
+        
+        # For rows without commence_time, try swapping home/away
+        missing_mask = out["commence_time"].isna()
+        if missing_mask.any():
+            # Create swapped version of events
+            events_swapped = events.rename(columns={"home_team": "away_team", "away_team": "home_team"})
+            events_swapped = events_swapped[["home_team", "away_team", "commence_time"]]
+            
+            # Merge only the missing rows
+            missing_rows = out[missing_mask][["home_team", "away_team"]].copy()
+            missing_merged = pd.merge(missing_rows, events_swapped, on=["home_team", "away_team"], how="left")
+            
+            # Update the missing rows with swapped merge results (ensure datetime type)
+            if "commence_time" in missing_merged.columns:
+                missing_merged["commence_time"] = pd.to_datetime(missing_merged["commence_time"], utc=True)
+                out.loc[missing_mask, "commence_time"] = missing_merged["commence_time"].values
+        
+        # Clean up any extra columns from merge
+        out = out.drop(columns=[col for col in out.columns if col.endswith("_events")], errors="ignore")
+    else:
+        out["commence_time"] = pd.NaT
+
     # Ensure output dir
     os.makedirs(os.path.dirname(paths["output_full"]), exist_ok=True)
     out.to_csv(paths["output_full"], index=False)
 
-    # 8) Top picks by (prop_type, position), positive edges only
+    # 9) Top picks by (prop_type, position), positive edges only
     pos_edges = out[pd.to_numeric(out["edge_yards"], errors="coerce") > 0].copy()
     pos_edges["edge_yards"] = pd.to_numeric(pos_edges["edge_yards"], errors="coerce")
     top_rows = []
@@ -288,7 +337,7 @@ def main():
     top_df = pd.concat(top_rows, ignore_index=True) if top_rows else pd.DataFrame(columns=out.columns)
     top_df.to_csv(paths["output_top"], index=False)
 
-    # 9) Summary logs
+    # 10) Summary logs
     total_preds = len(preds)
     total_out = len(out)
     matched_players = out["player"].nunique()

@@ -25,57 +25,285 @@ def load_value_csv(week: int) -> pd.DataFrame:
     input_path = f"10-ARBITRAGE/data/week{week}_value_opportunities.csv"
     alt_path = f"data/week{week}_value_opportunities.csv"
     if os.path.exists(input_path):
-        return pd.read_csv(input_path)
-    if os.path.exists(alt_path):
-        return pd.read_csv(alt_path)
-    raise FileNotFoundError(f"Could not find value opportunities CSV for week {week} at {input_path} or {alt_path}")
+        df = pd.read_csv(input_path)
+    elif os.path.exists(alt_path):
+        df = pd.read_csv(alt_path)
+    else:
+        raise FileNotFoundError(f"Could not find value opportunities CSV for week {week} at {input_path} or {alt_path}")
+    
+    # Load and merge commence_time from events CSV if not already present
+    if "commence_time" not in df.columns or df["commence_time"].isna().all():
+        events_path = f"10-ARBITRAGE/data/week{week}_events.csv"
+        if os.path.exists(events_path):
+            events_df = pd.read_csv(events_path)
+            # Ensure commence_time is datetime
+            if "commence_time" in events_df.columns:
+                events_df["commence_time"] = pd.to_datetime(events_df["commence_time"], utc=True)
+            # Merge on home_team and away_team
+            df = pd.merge(df, events_df, on=["home_team", "away_team"], how="left", suffixes=("", "_events"))
+            # If merge failed, try swapping home/away
+            if "commence_time" in df.columns and df["commence_time"].isna().any():
+                events_swapped = events_df.rename(columns={"home_team": "away_team", "away_team": "home_team"})
+                missing_mask = df["commence_time"].isna()
+                missing_rows = df[missing_mask][["home_team", "away_team"]].copy()
+                missing_merged = pd.merge(missing_rows, events_swapped, on=["home_team", "away_team"], how="left")
+                if "commence_time" in missing_merged.columns:
+                    missing_merged["commence_time"] = pd.to_datetime(missing_merged["commence_time"], utc=True)
+                    df.loc[missing_mask, "commence_time"] = missing_merged["commence_time"].values
+            # Clean up any extra columns
+            df = df.drop(columns=[col for col in df.columns if col.endswith("_events")], errors="ignore")
+    
+    return df
 
 
 def build_html_report(df: pd.DataFrame, week: int) -> str:
     css = """
     <style>
-      body { font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif; margin: 0; background: #f8f9fa; color: #222; }
-      .container { max-width: 1100px; margin: 0 auto; padding: 24px; }
-      .header { background: linear-gradient(135deg, #0f172a, #1e293b); color: #fff; padding: 24px; border-radius: 12px; margin-bottom: 24px; }
-      .header h1 { margin: 0 0 8px 0; font-weight: 700; font-size: 24px; }
-      .header p { margin: 0; opacity: .9; }
-      .game { background: #fff; border-radius: 12px; padding: 16px; margin: 16px 0; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
-      .game h2 { margin: 0 0 8px 0; font-size: 18px; color: #0f172a; }
-      .section { margin-top: 8px; }
-      .section h3 { margin: 12px 0 6px 0; font-size: 14px; color: #334155; text-transform: uppercase; letter-spacing: .03em; }
-      table { width: 100%; border-collapse: collapse; }
-      th, td { text-align: left; padding: 8px 10px; font-size: 13px; border-bottom: 1px solid #e5e7eb; }
-      th { background: #0f172a; color: #fff; position: sticky; top: 0; }
-      tr:hover td { background: #f9fafb; }
-      .num { text-align: right; font-variant-numeric: tabular-nums; }
-      .pill { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 12px; }
-      .over { background: #dcfce7; color: #166534; }
-      .under { background: #fee2e2; color: #991b1b; }
-      .footer { text-align: center; color: #64748b; margin: 24px 0 8px 0; font-size: 12px; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .container { max-width: 1100px; margin: 0 auto; padding: 24px; }
+        .header {
+            background: linear-gradient(135deg, #3498db, #2c3e50);
+            color: #fff;
+            padding: 24px;
+            border-radius: 12px;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+        .header h1 { margin: 0 0 8px 0; font-weight: 700; font-size: 24px; }
+        .header p { margin: 0; opacity: .9; }
+        .game {
+            background: #fff;
+            border-radius: 12px;
+            padding: 16px;
+            margin: 16px 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+        }
+        .game h2 {
+            margin: 0 0 4px 0;
+            font-size: 18px;
+            color: #2c3e50;
+            text-align: center;
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .game-subtitle {
+            font-size: 14px;
+            color: #7f8c8d;
+            text-align: center;
+            margin-bottom: 12px;
+            font-weight: normal;
+        }
+        .section { margin-top: 8px; }
+        .section h3 {
+            margin: 12px 0 6px 0;
+            font-size: 14px;
+            color: #27ae60;
+            text-transform: uppercase;
+            letter-spacing: .03em;
+            text-align: center;
+            padding: 10px;
+            background-color: #ecf0f1;
+            border-left: 4px solid #27ae60;
+            border-radius: 5px;
+        }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { text-align: left; padding: 8px 10px; font-size: 13px; border-bottom: 1px solid #e5e7eb; }
+        th { background: #2c3e50; color: #fff; position: sticky; top: 0; }
+        tr:hover td { background: #f9fafb; }
+        .num { text-align: right; font-variant-numeric: tabular-nums; }
+        .pill { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 12px; }
+        .over { background: #dcfce7; color: #166534; }
+        .under { background: #fee2e2; color: #991b1b; }
+        .footer { text-align: center; color: #64748b; margin: 24px 0 8px 0; font-size: 12px; }
+        .toc {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .toc h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        .toc ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .toc li {
+            padding: 8px 0;
+            border-bottom: 1px solid #ecf0f1;
+        }
+        .toc a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .toc a:hover {
+            text-decoration: underline;
+        }
+        .toc-time {
+            color: #7f8c8d;
+            font-size: 0.9em;
+            font-weight: 400;
+            font-style: italic;
+            margin-left: 8px;
+        }
     </style>
     """
-    head = f"""<!doctype html><html><head><meta charset="utf-8"><title>Week {week} Value Opportunities</title>{css}</head><body>"""
+    head = f"""<!doctype html><html><head><meta charset="utf-8"><title>Week {week} Value Sheet</title>{css}</head><body>"""
     header = f"""
     <div class="container">
       <div class="header">
-        <h1>NFL Week {week} - Value Opportunities</h1>
-        <p>Best-line comparison vs model predictions (edge in yards)</p>
-        <p>Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}</p>
+        <h1>NFL Week {week} - Value Sheet</h1>
       </div>
     """
-    # Order games by kickoff if available, else by name
-    # We only have home_team/away_team; sort lexicographically for determinism
+    # Order games using upcoming_games.csv order (same as regular props report)
     df_local = df.copy()
     df_local["game_key"] = df_local.apply(lambda r: f"{r['home_team']} vs {r['away_team']}", axis=1)
-    games = df_local["game_key"].dropna().unique().tolist()
-    games.sort()
+
+    # Read game order from upcoming_games.csv (same as regular props report)
+    upcoming_file = "../upcoming_games.csv"
+    if os.path.exists(upcoming_file):
+        upcoming_df = pd.read_csv(upcoming_file)
+        games = []
+        for _, row in upcoming_df.iterrows():
+            home_team = row['home_team']
+            away_team = row['away_team']
+            # Check both possible game key formats (home vs away and away vs home)
+            game_key1 = f"{home_team} vs {away_team}"
+            game_key2 = f"{away_team} vs {home_team}"
+            if game_key1 in df_local["game_key"].values:
+                games.append(game_key1)
+            elif game_key2 in df_local["game_key"].values:
+                games.append(game_key2)
+        # Remove duplicates while preserving order
+        games = list(dict.fromkeys(games))
+    else:
+        # Fallback to lexicographic sorting if upcoming_games.csv not found
+        games = df_local["game_key"].dropna().unique().tolist()
+        games.sort()
+
+    # Create a mapping of game to commence time and date in EST, and sort games chronologically
+    game_times = {}
+    game_times_for_sorting = {}
+    if "commence_time" in df_local.columns:
+        for game in games:
+            gdf = df_local[df_local["game_key"] == game]
+            if not gdf.empty and pd.notna(gdf["commence_time"].iloc[0]):
+                # Convert UTC to Eastern time
+                utc_time = pd.to_datetime(gdf["commence_time"].iloc[0], utc=True)
+                # Ensure timezone-aware
+                if utc_time.tz is None:
+                    utc_time = utc_time.tz_localize('UTC')
+                
+                # Use UTC-5 for 1 PM games (18:00 UTC), UTC-4 for later games (EDT)
+                utc_hour = utc_time.hour
+                if utc_hour == 18:
+                    # 1 PM EST games
+                    eastern_time = utc_time - pd.Timedelta(hours=5)
+                    tz_label = "EST"
+                else:
+                    # Later games use EDT
+                    eastern_time = utc_time - pd.Timedelta(hours=4)
+                    tz_label = "EDT"
+                
+                # Format as date and time
+                date_str = eastern_time.strftime('%m/%d')
+                time_str = eastern_time.strftime('%I:%M %p ' + tz_label).lstrip('0')
+                game_times[game] = f"{date_str} - {time_str}"
+                game_times_for_sorting[game] = utc_time
+    
+    # Sort games by commence time (chronologically)
+    if game_times_for_sorting:
+        games_with_time = [g for g in games if g in game_times_for_sorting]
+        games_without_time = [g for g in games if g not in game_times_for_sorting]
+        # Convert to timestamp for comparison to avoid timezone issues
+        games_with_time.sort(key=lambda g: game_times_for_sorting[g].timestamp())
+        games = games_with_time + games_without_time
+
+    # Create table of contents
+    toc_parts = []
+    toc_parts.append('<div class="toc">')
+    toc_parts.append('<h3>📋 Game Schedule</h3>')
+    toc_parts.append('<ul>')
+
+    # Create mapping of game to display info for TOC
+    game_info = {}
+    game_display_names = {}
+    
+    # Parse all games to create display names
+    for game in games:
+        # Parse game key to extract teams (format: "Home Team vs Away Team")
+        if " vs " in game:
+            parts = game.split(" vs ", 1)
+            home_team = parts[0]
+            away_team = parts[1]
+            game_display_names[game] = f"{away_team} @ {home_team}"
+        else:
+            game_display_names[game] = game
+    
+    # Add time information if available
+    if "commence_time" in df_local.columns:
+        for game in games:
+            gdf = df_local[df_local["game_key"] == game]
+            if not gdf.empty and pd.notna(gdf["commence_time"].iloc[0]):
+                utc_time = pd.to_datetime(gdf["commence_time"].iloc[0], utc=True)
+                # Ensure timezone-aware
+                if utc_time.tz is None:
+                    utc_time = utc_time.tz_localize('UTC')
+                
+                # Use UTC-5 for 1 PM games (18:00 UTC), UTC-4 for later games (EDT)
+                utc_hour = utc_time.hour
+                if utc_hour == 18:
+                    # 1 PM EST games
+                    eastern_time = utc_time - pd.Timedelta(hours=5)
+                    tz_label = "EST"
+                else:
+                    # Later games use EDT
+                    eastern_time = utc_time - pd.Timedelta(hours=4)
+                    tz_label = "EDT"
+                
+                date_str = eastern_time.strftime('%m/%d')
+                time_str = eastern_time.strftime('%I:%M %p ' + tz_label).lstrip('0')
+                game_info[game] = f"<span class='toc-time'>{date_str} - {time_str}</span>"
+            else:
+                game_info[game] = "<span class='toc-time'>Time TBA</span>"
+    else:
+        # No commence_time column, set all to TBA
+        for game in games:
+            game_info[game] = "<span class='toc-time'>Time TBA</span>"
+
+    for i, game in enumerate(games, 1):
+        display_name = game_display_names.get(game, game)
+        time_info = game_info.get(game, "<span class='toc-time'>Time TBA</span>")
+        toc_parts.append(f'<li><a href="#game{i:02d}">{display_name}</a> {time_info}</li>')
+
+    toc_parts.append('</ul>')
+    toc_parts.append('</div>')
 
     body_parts = []
-    for game in games:
+    body_parts.extend(toc_parts)
+
+    for i, game in enumerate(games, 1):
         gdf = df_local[df_local["game_key"] == game].copy()
         if gdf.empty:
             continue
-        body_parts.append(f'<div class="game"><h2>{game}</h2>')
+
+        # Create game header with title and subtitle
+        game_header = f'<h2>{game}</h2>'
+        if game in game_times:
+            game_header += f'<div class="game-subtitle">{game_times[game]}</div>'
+
+        body_parts.append(f'<div id="game{i:02d}" class="game">{game_header}')
         # For readability: group by prop_type then position
         for prop_type in ["Passing Yards", "Receiving Yards", "Rushing Yards"]:
             pdf = gdf[gdf["prop_type"] == prop_type].copy()
