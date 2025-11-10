@@ -120,32 +120,6 @@ def coerce_numeric(series: pd.Series) -> pd.Series:
     return s
 
 
-def validate_line(market: str, point: float) -> bool:
-    """
-    Validate that a line is within reasonable bounds for its market type.
-    Filters out lines that are likely mislabeled (e.g., rushing+receiving labeled as rushing).
-    
-    Returns True if line is valid, False if it should be filtered out.
-    """
-    if pd.isna(point):
-        return False
-    
-    # Define maximum reasonable lines for each market
-    # These are conservative upper bounds to catch mislabeled lines
-    # Lines above these thresholds are likely mislabeled (e.g., rushing+receiving labeled as rushing)
-    max_lines = {
-        "player_rush_yds": 75.0,  # RB/QB rushing - lines above 75 are suspicious (likely rushing+receiving)
-        "player_pass_yds": 400.0,  # QB passing - very high but possible
-        "player_reception_yds": 200.0,  # WR/TE/RB receiving - high but possible for elite WRs
-    }
-    
-    max_line = max_lines.get(market)
-    if max_line is None:
-        return True  # Unknown market, don't filter
-    
-    return point <= max_line
-
-
 def select_best_lines(df_props_filtered: pd.DataFrame) -> pd.DataFrame:
     """
     From props rows (per player/market/game), select best Over and best Under per rules.
@@ -157,13 +131,12 @@ def select_best_lines(df_props_filtered: pd.DataFrame) -> pd.DataFrame:
     dfp["point"] = coerce_numeric(dfp["point"])
     dfp = dfp.dropna(subset=["point"])
     
-    # Filter out lines that exceed reasonable bounds (likely mislabeled)
-    before_count = len(dfp)
-    dfp = dfp[dfp.apply(lambda row: validate_line(row["market"], row["point"]), axis=1)].copy()
-    after_count = len(dfp)
-    if before_count > after_count:
-        filtered_count = before_count - after_count
-        print(f"  Filtered {filtered_count} lines that exceeded reasonable bounds (likely mislabeled)")
+    # Verify we only have the exact API market types
+    valid_markets = {"player_pass_yds", "player_reception_yds", "player_rush_yds"}
+    invalid_markets = set(dfp["market"].unique()) - valid_markets
+    if invalid_markets:
+        print(f"  WARNING: Found unexpected market types: {invalid_markets}")
+        dfp = dfp[dfp["market"].isin(valid_markets)].copy()
 
     # Sort to apply tie-breakers (price descending favors higher American odds)
     over_sorted = dfp[dfp["outcome"].str.lower() == "over"].sort_values(
@@ -211,14 +184,39 @@ def main():
     # 2) Prepare predictions: map market and normalize names
     preds = preds.copy()
     preds["market"] = preds.apply(lambda r: map_market(r["position"], r["prop_type"]), axis=1)
+    
+    # Verify mapping only produces valid API market types
+    valid_api_markets = {"player_pass_yds", "player_reception_yds", "player_rush_yds"}
+    unmapped = preds[preds["market"] == ""]
+    if len(unmapped) > 0:
+        print(f"  {len(unmapped)} predictions could not be mapped to API markets (position/prop_type combinations)")
+    
     preds = preds[preds["market"] != ""].copy()
+    
+    # Verify all mapped markets are valid API markets
+    invalid_mapped = set(preds["market"].unique()) - valid_api_markets
+    if invalid_mapped:
+        raise ValueError(f"map_market() produced invalid market types: {invalid_mapped}. Only {valid_api_markets} are valid.")
+    
     preds["player_norm"] = preds["full_name"].apply(normalize_player_name)
     preds["team_full"] = preds["team"].map(TEAM_ABBREV_TO_FULL)
     preds["opp_full"] = preds["opp"].map(TEAM_ABBREV_TO_FULL)
 
-    # 3) Prepare props: filter to supported markets and normalize names
+    # 3) Prepare props: filter to exact API market types and normalize names
     props = props.copy()
-    props = props[props["market"].isin({"player_pass_yds", "player_reception_yds", "player_rush_yds"})]
+    # Verify we only use the exact 3 markets from the API
+    valid_api_markets = {"player_pass_yds", "player_reception_yds", "player_rush_yds"}
+    props_before = len(props)
+    props = props[props["market"].isin(valid_api_markets)].copy()
+    props_after = len(props)
+    if props_before > props_after:
+        print(f"  Filtered {props_before - props_after} props with invalid market types (not in API)")
+    
+    # Verify all markets match exactly
+    unexpected_markets = set(props["market"].unique()) - valid_api_markets
+    if unexpected_markets:
+        raise ValueError(f"Found unexpected market types in props: {unexpected_markets}. Only {valid_api_markets} are valid.")
+    
     props["player_norm"] = props["player"].apply(normalize_player_name)
     # Ensure numeric price (American odds); if missing, drop
     props["price"] = coerce_numeric(props["price"])
@@ -270,13 +268,33 @@ def main():
     choice.columns = ["side", "best_point", "best_price", "bookmaker", "edge_yards"]
     out = pd.concat([merged, choice], axis=1)
 
-    # 7) Select output columns
+    # 7) Select output columns and verify final output matches API markets exactly
     out_cols = [
         "full_name", "position", "team", "opp", "prop_type", "market", "pred_yards",
         "side", "best_point", "best_price", "bookmaker", "edge_yards",
         "home_team", "away_team"
     ]
     out = out[out_cols].copy()
+    
+    # Final verification: ensure all markets in output match exact API markets
+    valid_api_markets = {"player_pass_yds", "player_reception_yds", "player_rush_yds"}
+    output_markets = set(out["market"].unique())
+    invalid_output_markets = output_markets - valid_api_markets
+    if invalid_output_markets:
+        raise ValueError(f"Output contains invalid market types: {invalid_output_markets}. Only {valid_api_markets} are valid.")
+    
+    # Verify market to prop_type mapping is correct
+    market_to_proptype = {
+        "player_pass_yds": "Passing Yards",
+        "player_reception_yds": "Receiving Yards",
+        "player_rush_yds": "Rushing Yards"
+    }
+    mismatches = out[out.apply(lambda r: market_to_proptype.get(r["market"], "") != r["prop_type"], axis=1)]
+    if len(mismatches) > 0:
+        print(f"  WARNING: Found {len(mismatches)} rows where market doesn't match prop_type")
+        print(f"  Sample mismatches:")
+        print(mismatches[["player", "market", "prop_type"]].head(5).to_string())
+    
     out = out.rename(columns={
         "full_name": "player",
         "pred_yards": "predicted_yards",

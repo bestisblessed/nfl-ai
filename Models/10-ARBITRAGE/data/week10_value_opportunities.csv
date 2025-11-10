@@ -34,6 +34,7 @@ Jalen Coker,WR,CAR,NO,Receiving Yards,player_reception_yds,30.944202,Over,10.5,-
 Tommy Tremble,TE,CAR,NO,Receiving Yards,player_reception_yds,20.494566,Over,3.5,-115.0,Hard Rock Bet,16.994566,Carolina Panthers,New Orleans Saints
 Rico Dowdle,RB,CAR,NO,Receiving Yards,player_reception_yds,17.312458,Over,14.5,-115.0,ESPN BET,2.8124579999999995,Carolina Panthers,New Orleans Saints
 Ja'Tavion Sanders,TE,CAR,NO,Receiving Yards,player_reception_yds,9.502501,Under,35.5,-125.0,Fliff,25.997498999999998,Carolina Panthers,New Orleans Saints
+Rico Dowdle,RB,CAR,NO,Rushing Yards,player_rush_yds,79.73984,Under,91.5,109.0,Pinnacle,11.760159999999999,Carolina Panthers,New Orleans Saints
 Chuba Hubbard,RB,CAR,NO,Rushing Yards,player_rush_yds,50.498276,Over,12.5,-110.0,DraftKings,37.998276,Carolina Panthers,New Orleans Saints
 Bryce Young,QB,CAR,NO,Rushing Yards,player_rush_yds,7.38689,Under,9.5,-115.0,ESPN BET,2.11311,Carolina Panthers,New Orleans Saints
 Caleb Williams,QB,CHI,NYG,Passing Yards,player_pass_yds,236.98746,Over,208.5,-108.0,DraftKings,28.48746,Chicago Bears,New York Giants
@@ -41,7 +42,7 @@ DJ Moore,WR,CHI,NYG,Receiving Yards,player_reception_yds,67.61,Over,41.5,-103.0,
 Rome Odunze,WR,CHI,NYG,Receiving Yards,player_reception_yds,65.150444,Under,97.5,-115.0,ESPN BET,32.34955600000001,Chicago Bears,New York Giants
 D'Andre Swift,RB,CHI,NYG,Receiving Yards,player_reception_yds,31.740177,Over,11.5,-120.0,DraftKings,20.240177,Chicago Bears,New York Giants
 Olamide Zaccheaus,WR,CHI,NYG,Receiving Yards,player_reception_yds,21.62878,Under,29.5,-180.0,Pinnacle,7.871220000000001,Chicago Bears,New York Giants
-D'Andre Swift,RB,CHI,NYG,Rushing Yards,player_rush_yds,52.058113,Over,50.5,-146.0,Pinnacle,1.5581129999999987,Chicago Bears,New York Giants
+D'Andre Swift,RB,CHI,NYG,Rushing Yards,player_rush_yds,52.058113,Under,81.5,-115.0,Fliff,29.441887,Chicago Bears,New York Giants
 Caleb Williams,QB,CHI,NYG,Rushing Yards,player_rush_yds,20.718231,Over,11.5,-122.0,betPARX,9.218231,Chicago Bears,New York Giants
 Dillon Gabriel,QB,CLE,NYJ,Passing Yards,player_pass_yds,166.44662,Under,212.5,-110.0,DraftKings,46.053380000000004,New York Jets,Cleveland Browns
 David Njoku,TE,CLE,NYJ,Receiving Yards,player_reception_yds,39.049118,Over,18.5,-110.0,Bovada,20.549118,New York Jets,Cleveland Browns
@@ -103,7 +104,7 @@ Malik Washington,WR,MIA,BUF,Receiving Yards,player_reception_yds,27.051851,Over,
 De'Von Achane,RB,MIA,BUF,Receiving Yards,player_reception_yds,22.41348,Under,55.5,-115.0,betPARX,33.08652,Miami Dolphins,Buffalo Bills
 Greg Dulcich,TE,MIA,BUF,Receiving Yards,player_reception_yds,14.234112,Over,0.5,-114.0,FanDuel,13.734112,Miami Dolphins,Buffalo Bills
 Nick Westbrook-Ikhine,WR,MIA,BUF,Receiving Yards,player_reception_yds,12.901449,Over,0.5,-110.0,Hard Rock Bet,12.401449,Miami Dolphins,Buffalo Bills
-De'Von Achane,RB,MIA,BUF,Rushing Yards,player_rush_yds,71.64161,Over,65.5,-111.0,Pinnacle,6.14161,Miami Dolphins,Buffalo Bills
+De'Von Achane,RB,MIA,BUF,Rushing Yards,player_rush_yds,71.64161,Under,100.5,-115.0,Hard Rock Bet,28.85839,Miami Dolphins,Buffalo Bills
 Tua Tagovailoa,QB,MIA,BUF,Rushing Yards,player_rush_yds,2.3062468,Over,0.5,150.0,Bovada,1.8062467999999998,Miami Dolphins,Buffalo Bills
 J.J. McCarthy,QB,MIN,BAL,Passing Yards,player_pass_yds,151.47937,Under,231.5,-115.0,Hard Rock Bet,80.02063000000001,Minnesota Vikings,Baltimore Ravens
 Justin Jefferson,WR,MIN,BAL,Receiving Yards,player_reception_yds,80.180466,Over,51.5,-117.0,betPARX,28.680465999999996,Minnesota Vikings,Baltimore Ravens
@@ -151,7 +152,7 @@ DeVonta Smith,WR,PHI,GB,Receiving Yards,player_reception_yds,63.786213,Over,51.5
 Dallas Goedert,TE,PHI,GB,Receiving Yards,player_reception_yds,57.645653,Over,31.5,-120.0,BetMGM,26.145653000000003,Green Bay Packers,Philadelphia Eagles
 Saquon Barkley,RB,PHI,GB,Receiving Yards,player_reception_yds,30.863096,Over,13.5,-115.0,Hard Rock Bet,17.363096,Green Bay Packers,Philadelphia Eagles
 Jahan Dotson,WR,PHI,GB,Receiving Yards,player_reception_yds,15.79281,Over,4.5,-110.0,Hard Rock Bet,11.29281,Green Bay Packers,Philadelphia Eagles
-Saquon Barkley,RB,PHI,GB,Rushing Yards,player_rush_yds,59.547253,Under,74.5,-110.0,DraftKings,14.952747000000002,Green Bay Packers,Philadelphia Eagles
+Saquon Barkley,RB,PHI,GB,Rushing Yards,player_rush_yds,59.547253,Under,77.5,-110.0,BetMGM,17.952747000000002,Green Bay Packers,Philadelphia Eagles
 Jalen Hurts,QB,PHI,GB,Rushing Yards,player_rush_yds,14.409587,Under,29.5,-113.0,betPARX,15.090413,Green Bay Packers,Philadelphia Eagles
 Aaron Rodgers,QB,PIT,LAC,Passing Yards,player_pass_yds,240.41093,Over,217.5,-111.0,DraftKings,22.910930000000008,Los Angeles Chargers,Pittsburgh Steelers
 DK Metcalf,WR,PIT,LAC,Receiving Yards,player_reception_yds,64.458,Over,49.5,-112.0,FanDuel,14.957999999999998,Los Angeles Chargers,Pittsburgh Steelers

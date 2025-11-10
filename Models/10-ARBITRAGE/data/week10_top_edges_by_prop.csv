@@ -122,6 +122,8 @@ Tua Tagovailoa,QB,MIA,BUF,Rushing Yards,player_rush_yds,2.3062468,Over,0.5,150.0
 Jared Goff,QB,DET,WAS,Rushing Yards,player_rush_yds,-0.16746801,Under,0.5,-165.0,Hard Rock Bet,0.66746801,Washington Commanders,Detroit Lions
 James Cook,RB,BUF,MIA,Rushing Yards,player_rush_yds,93.72789,Over,44.5,-110.0,ESPN BET,49.22789,Miami Dolphins,Buffalo Bills
 Chuba Hubbard,RB,CAR,NO,Rushing Yards,player_rush_yds,50.498276,Over,12.5,-110.0,DraftKings,37.998276,Carolina Panthers,New Orleans Saints
+D'Andre Swift,RB,CHI,NYG,Rushing Yards,player_rush_yds,52.058113,Under,81.5,-115.0,Fliff,29.441887,Chicago Bears,New York Giants
+De'Von Achane,RB,MIA,BUF,Rushing Yards,player_rush_yds,71.64161,Under,100.5,-115.0,Hard Rock Bet,28.85839,Miami Dolphins,Buffalo Bills
 Aaron Jones,RB,MIN,BAL,Rushing Yards,player_rush_yds,27.89422,Under,56.5,-115.0,Fliff,28.60578,Minnesota Vikings,Baltimore Ravens
 Nick Chubb,RB,HOU,JAX,Rushing Yards,player_rush_yds,38.932087,Over,10.5,-115.0,Fliff,28.432087000000003,Houston Texans,Jacksonville Jaguars
 Kimani Vidal,RB,LAC,PIT,Rushing Yards,player_rush_yds,26.662247,Under,51.5,-115.0,betPARX,24.837753,Los Angeles Chargers,Pittsburgh Steelers
@@ -129,19 +131,17 @@ Jordan Mason,RB,MIN,BAL,Rushing Yards,player_rush_yds,28.26512,Over,5.5,100.0,Bo
 Tyrone Tracy Jr.,RB,NYG,CHI,Rushing Yards,player_rush_yds,24.488108,Under,45.5,-110.0,Pinnacle,21.011892,Chicago Bears,New York Giants
 Devin Singletary,RB,NYG,CHI,Rushing Yards,player_rush_yds,12.993026,Under,32.5,107.0,Pinnacle,19.506974,Chicago Bears,New York Giants
 Kyren Williams,RB,LAR,SF,Rushing Yards,player_rush_yds,81.4874,Over,63.5,-112.0,Pinnacle,17.987399999999994,San Francisco 49ers,Los Angeles Rams
+Saquon Barkley,RB,PHI,GB,Rushing Yards,player_rush_yds,59.547253,Under,77.5,-110.0,BetMGM,17.952747000000002,Green Bay Packers,Philadelphia Eagles
 Rachaad White,RB,TB,NE,Rushing Yards,player_rush_yds,44.517757,Over,28.5,-120.0,DraftKings,16.017757000000003,Tampa Bay Buccaneers,New England Patriots
-Saquon Barkley,RB,PHI,GB,Rushing Yards,player_rush_yds,59.547253,Under,74.5,-110.0,DraftKings,14.952747000000002,Green Bay Packers,Philadelphia Eagles
 Christian McCaffrey,RB,SF,LAR,Rushing Yards,player_rush_yds,76.05652,Over,61.5,-112.0,Bally Bet,14.556520000000006,San Francisco 49ers,Los Angeles Rams
 Sean Tucker,RB,TB,NE,Rushing Yards,player_rush_yds,18.446634,Under,32.5,-120.0,Hard Rock Bet,14.053366,Tampa Bay Buccaneers,New England Patriots
 Derrick Henry,RB,BAL,MIN,Rushing Yards,player_rush_yds,79.241776,Over,65.5,-114.0,FanDuel,13.741776000000002,Minnesota Vikings,Baltimore Ravens
 Emari Demercado,RB,ARI,SEA,Rushing Yards,player_rush_yds,22.345638,Under,35.5,-104.0,Pinnacle,13.154361999999999,Seattle Seahawks,Arizona Cardinals
 Alvin Kamara,RB,NO,CAR,Rushing Yards,player_rush_yds,33.548035,Under,46.5,-122.0,betPARX,12.951965000000001,Carolina Panthers,New Orleans Saints
+Rico Dowdle,RB,CAR,NO,Rushing Yards,player_rush_yds,79.73984,Under,91.5,109.0,Pinnacle,11.760159999999999,Carolina Panthers,New Orleans Saints
 Breece Hall,RB,NYJ,CLE,Rushing Yards,player_rush_yds,66.9043,Over,57.5,-110.0,FanDuel,9.404300000000006,New York Jets,Cleveland Browns
 Emanuel Wilson,RB,GB,PHI,Rushing Yards,player_rush_yds,26.250843,Over,19.5,-110.0,betPARX,6.750843,Green Bay Packers,Philadelphia Eagles
 Blake Corum,RB,LAR,SF,Rushing Yards,player_rush_yds,34.153416,Over,27.5,-112.0,FanDuel,6.653416,San Francisco 49ers,Los Angeles Rams
-De'Von Achane,RB,MIA,BUF,Rushing Yards,player_rush_yds,71.64161,Over,65.5,-111.0,Pinnacle,6.14161,Miami Dolphins,Buffalo Bills
 Zach Charbonnet,RB,SEA,ARI,Rushing Yards,player_rush_yds,34.61128,Under,40.5,-120.0,Pinnacle,5.888719999999999,Seattle Seahawks,Arizona Cardinals
 Jaylen Warren,RB,PIT,LAC,Rushing Yards,player_rush_yds,64.21959,Over,58.5,-112.0,Pinnacle,5.719589999999997,Los Angeles Chargers,Pittsburgh Steelers
 Keaton Mitchell,RB,BAL,MIN,Rushing Yards,player_rush_yds,32.6703,Under,37.5,-132.0,betPARX,4.8297000000000025,Minnesota Vikings,Baltimore Ravens
-Jahmyr Gibbs,RB,DET,WAS,Rushing Yards,player_rush_yds,73.551315,Over,69.5,-113.0,betPARX,4.051315000000002,Washington Commanders,Detroit Lions
-Isaiah Davis,RB,NYJ,CLE,Rushing Yards,player_rush_yds,10.303104,Over,6.5,-115.0,Fliff,3.8031039999999994,New York Jets,Cleveland Browns
