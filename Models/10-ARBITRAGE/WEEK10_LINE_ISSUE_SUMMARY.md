@@ -54,11 +54,13 @@ When games start, most sportsbooks:
 
 ## Solution Implemented
 
-Created `filter_by_game_time.py` that:
+Added Week 10 specific filter directly in `find_value_bets.py`:
 - **For 1pm ET games**: Keep ONLY Pinnacle lines (retained pre-game values)
 - **For later games**: Keep ALL bookmaker lines (all pre-game)
 
 This ensures all lines represent pre-game betting odds, not live in-game lines.
+
+The filter only activates for week 10 specifically, so future weeks are unaffected.
 
 ## Results
 
@@ -85,13 +87,12 @@ Top RB Rushing (CORRECT):
 3. De'Von Achane   Over  65.5   Pinnacle   6.1 yds  ✓
 ```
 
-## Files Created
+## Files Updated
 
-1. **filter_by_game_time.py** - Filters props to use Pinnacle for 1pm games
-2. **find_value_bets.py** - Updated to use `_pregame.csv` files
-3. **week10_props_2025-11-09_pregame.csv** - Filtered prop data
-4. **week10_value_opportunities.csv** - Regenerated value bets
-5. **week10_top_edges_by_prop.csv** - Regenerated top picks
+1. **find_value_bets.py** - Added week 10 specific filter in `load_props()` function
+2. **week10_value_opportunities.csv** - Regenerated value bets
+3. **week10_top_edges_by_prop.csv** - Regenerated top picks
+4. **WEEK10_LINE_ISSUE_SUMMARY.md** - This documentation
 
 ## Verification Summary
 
@@ -107,21 +108,17 @@ Top RB Rushing (CORRECT):
 ## Future Prevention
 
 **For future weeks:**
-1. Run prop fetching BEFORE 1pm ET on Sunday
-2. OR use the `filter_by_game_time.py` script after fetching
-3. The script automatically detects and uses `_pregame.csv` files
+1. Run prop fetching BEFORE 1pm ET on Sunday to avoid this issue entirely
+2. Week 10 fix is hardcoded in `find_value_bets.py` and only activates for week 10
 
-## Command to Run
+## Commands
 
 ```bash
 # Fetch props (ideally before 1pm ET)
-python fetch_upcoming_games_and_props.py 10
+python fetch_upcoming_games_and_props.py <week>
 
-# If run after games started, filter to pre-game lines
-python filter_by_game_time.py 10
-
-# Generate value bets (automatically uses _pregame.csv if available)
-python find_value_bets.py 10
+# Generate value bets (week 10 filter automatically applied)
+python find_value_bets.py <week>
 ```
 
 ## Lesson Learned
