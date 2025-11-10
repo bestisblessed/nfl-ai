@@ -29,28 +29,28 @@ import pandas as pd
 def get_file_paths(week):
     from datetime import datetime
     current_date = datetime.now().strftime("%Y-%m-%d")
-    # Try filtered file first (games not yet started), then fallback
+    # Try pregame file first (Pinnacle for 1pm games, all books for later games)
     import os
-    props_filtered = f"data/week{week}_props_{current_date}_filtered.csv"
+    props_pregame = f"data/week{week}_props_{current_date}_pregame.csv"
     props_original = f"data/week{week}_props_{current_date}.csv"
     # Check previous day's file as well
     from datetime import timedelta
     prev_date = (datetime.now() - timedelta(days=1)).strftime("%Y-%m-%d")
-    props_prev_filtered = f"data/week{week}_props_{prev_date}_filtered.csv"
+    props_prev_pregame = f"data/week{week}_props_{prev_date}_pregame.csv"
     props_prev_original = f"data/week{week}_props_{prev_date}.csv"
     
-    if os.path.exists(props_filtered):
-        props_file = props_filtered
-        print(f"Using filtered props (games not yet started): {props_filtered}")
-    elif os.path.exists(props_prev_filtered):
-        props_file = props_prev_filtered
-        print(f"Using filtered props (games not yet started): {props_prev_filtered}")
+    if os.path.exists(props_pregame):
+        props_file = props_pregame
+        print(f"Using pre-game lines: {props_pregame}")
+    elif os.path.exists(props_prev_pregame):
+        props_file = props_prev_pregame
+        print(f"Using pre-game lines: {props_prev_pregame}")
     elif os.path.exists(props_original):
         props_file = props_original
-        print(f"WARNING: Using unfiltered props - may include started games: {props_original}")
+        print(f"WARNING: Using unfiltered props - may include live lines: {props_original}")
     else:
         props_file = props_prev_original
-        print(f"WARNING: Using unfiltered props - may include started games: {props_prev_original}")
+        print(f"WARNING: Using unfiltered props - may include live lines: {props_prev_original}")
     
     return {
         "predictions_primary": f"0-FINAL-REPORTS/week{week}_all_props_summary.csv",
