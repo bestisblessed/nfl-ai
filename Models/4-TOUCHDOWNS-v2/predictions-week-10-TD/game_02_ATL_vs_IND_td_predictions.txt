@@ -1,0 +1,33 @@
+================================================================================
+ATL vs IND | Week 10 2025 | Anytime TD Probabilities
+================================================================================
+
++--------+-------------------+--------+-------+-----------+--------+
+|   Rank | Player            | Team   | Pos   | TD Prob   |   Odds |
++========+===================+========+=======+===========+=======+
+|      1 | Jonathan Taylor    | IND    | RB    |     87.6% |   -706 |
+|      2 | Michael Pittman Jr | IND    | WR    |     77.4% |   -342 |
+|      3 | Alec Pierce        | IND    | WR    |     69.3% |   -226 |
+|      4 | Tyler Warren       | IND    | TE    |     61.7% |   -161 |
+|      5 | Josh Downs         | IND    | WR    |     61.1% |   -157 |
+|      6 | Bijan Robinson     | ATL    | RB    |     54.8% |   -121 |
+|      7 | DJ Giddens         | IND    | RB    |     52.0% |   -108 |
+|      8 | Drake London       | ATL    | WR    |     49.5% |   +102 |
+|      9 | Kyle Pitts         | ATL    | TE    |     43.9% |   +128 |
+|     10 | Daniel Jones       | IND    | QB    |     42.4% |   +136 |
+|     11 | KhaDarel Hodge     | ATL    | WR    |     37.5% |   +167 |
+|     12 | Adonai Mitchell    | IND    | WR    |     35.2% |   +184 |
+|     13 | Darnell Mooney     | ATL    | WR    |     34.9% |   +186 |
+|     14 | Tyler Allgeier     | ATL    | RB    |     32.5% |   +207 |
+|     15 | Ameer Abdullah     | IND    | RB    |     31.6% |   +216 |
+|     16 | Nathan Carter      | ATL    |       |     30.1% |   +232 |
+|     17 | Ashton Dulin       | IND    | WR    |     28.8% |   +247 |
+|     18 | Mo Alie-Cox        | IND    | TE    |     27.3% |   +266 |
+|     19 | Ray-Ray McCloud    | ATL    |       |     26.4% |   +279 |
+|     20 | Tyler Goodson      | IND    | RB    |     24.8% |   +303 |
+|     21 | Casey Washington   | ATL    | WR    |     23.4% |   +327 |
+|     22 | David Sills V      | ATL    |       |     22.9% |   +337 |
+|     23 | Anthony Richardson | IND    | QB    |     20.4% |   +391 |
+|     24 | Michael Penix      | ATL    | QB    |     19.2% |   +421 |
+|     25 | Kirk Cousins       | ATL    | QB    |     16.3% |   +512 |
++--------+-------------------+--------+-------+-----------+--------+

@@ -1,0 +1,36 @@
+================================================================================
+BUF vs MIA | Week 10 2025 | Anytime TD Probabilities
+================================================================================
+
++--------+-------------------+--------+-------+-----------+--------+
+|   Rank | Player            | Team   | Pos   | TD Prob   |   Odds |
++========+===================+========+=======+===========+=======+
+|      1 | James Cook         | BUF    | RB    |     76.7% |   -329 |
+|      2 | De'Von Achane      | MIA    | RB    |     62.6% |   -168 |
+|      3 | Dalton Kincaid     | BUF    | TE    |     60.5% |   -153 |
+|      4 | Josh Allen         | BUF    | QB    |     59.6% |   -148 |
+|      5 | Khalil Shakir      | BUF    | WR    |     58.5% |   -141 |
+|      6 | Tyreek Hill        | MIA    | WR    |     53.4% |   -114 |
+|      7 | Jaylen Waddle      | MIA    | WR    |     50.3% |   -101 |
+|      8 | Keon Coleman       | BUF    | WR    |     49.3% |   +103 |
+|      9 | Greg Dulcich       | MIA    | TE    |     44.7% |   +124 |
+|     10 | Jaylen Wright      | MIA    | RB    |     44.6% |   +124 |
+|     11 | Darren Waller      | MIA    | TE    |     43.3% |   +131 |
+|     12 | Malik Washington   | MIA    | WR    |     42.0% |   +138 |
+|     13 | Ray Davis          | BUF    | RB    |     39.0% |   +156 |
+|     14 | Nick Westbrook-Ikh | MIA    | WR    |     38.4% |   +160 |
+|     15 | Ollie Gordon       | MIA    | RB    |     38.3% |   +161 |
+|     16 | Curtis Samuel      | BUF    | WR    |     37.7% |   +166 |
+|     17 | Tyrell Shavers     | BUF    | WR    |     35.7% |   +180 |
+|     18 | Jackson Hawes      | BUF    | TE    |     35.2% |   +184 |
+|     19 | Elijah Moore       | BUF    | WR    |     34.9% |   +187 |
+|     20 | Ty Johnson         | BUF    | RB    |     34.8% |   +188 |
+|     21 | Dawson Knox        | BUF    | TE    |     34.2% |   +192 |
+|     22 | Josh Palmer        | BUF    | WR    |     32.8% |   +205 |
+|     23 | Julian Hill        | MIA    | TE    |     31.6% |   +217 |
+|     24 | D'Wayne Eskridge   | MIA    |       |     30.2% |   +231 |
+|     25 | Tanner Conner      | MIA    | TE    |     28.9% |   +246 |
+|     26 | Alec Ingold        | MIA    | RB    |     28.4% |   +252 |
+|     27 | Tua Tagovailoa     | MIA    | QB    |     28.1% |   +256 |
+|     28 | Mitchell Trubisky  | BUF    | QB    |     18.4% |   +444 |
++--------+-------------------+--------+-------+-----------+--------+

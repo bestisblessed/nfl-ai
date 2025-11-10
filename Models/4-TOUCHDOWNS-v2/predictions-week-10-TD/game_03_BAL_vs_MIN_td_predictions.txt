@@ -1,0 +1,34 @@
+================================================================================
+BAL vs MIN | Week 10 2025 | Anytime TD Probabilities
+================================================================================
+
++--------+-------------------+--------+-------+-----------+--------+
+|   Rank | Player            | Team   | Pos   | TD Prob   |   Odds |
++========+===================+========+=======+===========+=======+
+|      1 | Derrick Henry      | BAL    | RB    |     76.6% |   -327 |
+|      2 | Jordan Mason       | MIN    | RB    |     58.6% |   -141 |
+|      3 | Mark Andrews       | BAL    | TE    |     57.2% |   -133 |
+|      4 | Justin Jefferson   | MIN    | WR    |     56.4% |   -129 |
+|      5 | Zay Flowers        | BAL    | WR    |     53.1% |   -113 |
+|      6 | J.J. McCarthy      | MIN    | QB    |     53.0% |   -113 |
+|      7 | Tyler Huntley      | BAL    | QB    |     48.7% |   +105 |
+|      8 | Jordan Addison     | MIN    | WR    |     46.6% |   +115 |
+|      9 | Justice Hill       | BAL    | RB    |     46.2% |   +116 |
+|     10 | Tylan Wallace      | BAL    | WR    |     41.8% |   +139 |
+|     11 | T.J. Hockenson     | MIN    | TE    |     40.7% |   +146 |
+|     12 | Lamar Jackson      | BAL    | QB    |     40.6% |   +146 |
+|     13 | Rashod Bateman     | BAL    | WR    |     40.1% |   +149 |
+|     14 | Charlie Kolar      | BAL    | TE    |     39.9% |   +151 |
+|     15 | Aaron Jones        | MIN    | RB    |     39.3% |   +155 |
+|     16 | Cam Akers          | MIN    | RB    |     38.0% |   +163 |
+|     17 | Devontez Walker    | BAL    | WR    |     37.6% |   +166 |
+|     18 | Isaiah Likely      | BAL    | TE    |     36.6% |   +173 |
+|     19 | Jalen Nailor       | MIN    | WR    |     36.2% |   +176 |
+|     20 | Keaton Mitchell    | BAL    | RB    |     35.8% |   +180 |
+|     21 | DeAndre Hopkins    | BAL    | WR    |     34.8% |   +187 |
+|     22 | Zavier Scott       | MIN    | RB    |     34.5% |   +190 |
+|     23 | Carson Wentz       | MIN    | QB    |     32.4% |   +208 |
+|     24 | Adam Thielen       | MIN    | WR    |     28.2% |   +254 |
+|     25 | Josh Oliver        | MIN    | TE    |     26.6% |   +276 |
+|     26 | Cooper Rush        | BAL    | QB    |     16.8% |   +496 |
++--------+-------------------+--------+-------+-----------+--------+

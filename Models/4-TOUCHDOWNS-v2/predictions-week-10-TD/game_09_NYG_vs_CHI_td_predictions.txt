@@ -1,0 +1,33 @@
+================================================================================
+NYG vs CHI | Week 10 2025 | Anytime TD Probabilities
+================================================================================
+
++--------+-------------------+--------+-------+-----------+--------+
+|   Rank | Player            | Team   | Pos   | TD Prob   |   Odds |
++========+===================+========+=======+===========+=======+
+|      1 | D'Andre Swift      | CHI    | RB    |     78.3% |   -361 |
+|      2 | Cam Skattebo       | NYG    | RB    |     76.7% |   -328 |
+|      3 | Kyle Monangai      | CHI    | RB    |     63.4% |   -174 |
+|      4 | Rome Odunze        | CHI    | WR    |     62.4% |   -166 |
+|      5 | Colston Loveland   | CHI    | TE    |     56.7% |   -131 |
+|      6 | D.J. Moore         | CHI    | WR    |     55.6% |   -125 |
+|      7 | Jaxson Dart        | NYG    | QB    |     50.0% |   +100 |
+|      8 | Brittain Brown     | CHI    | RB    |     48.3% |   +107 |
+|      9 | Malik Nabers       | NYG    | WR    |     48.2% |   +108 |
+|     10 | Theo Johnson       | NYG    | TE    |     47.9% |   +109 |
+|     11 | Olamide Zaccheaus  | CHI    | WR    |     44.3% |   +126 |
+|     12 | Tyrone Tracy Jr.   | NYG    | RB    |     43.4% |   +130 |
+|     13 | Wan'Dale Robinson  | NYG    | WR    |     43.4% |   +131 |
+|     14 | Darius Slayton     | NYG    | WR    |     37.9% |   +164 |
+|     15 | Lil'Jordan Humphre | NYG    | WR    |     36.6% |   +173 |
+|     16 | Caleb Williams     | CHI    | QB    |     33.8% |   +196 |
+|     17 | Jalin Hyatt        | NYG    | WR    |     33.7% |   +197 |
+|     18 | Beaux Collins      | NYG    | WR    |     32.3% |   +209 |
+|     19 | Devin Singletary   | NYG    | RB    |     30.3% |   +230 |
+|     20 | Russell Wilson     | NYG    | QB    |     29.1% |   +244 |
+|     21 | Devin Duvernay     | CHI    | WR    |     25.5% |   +292 |
+|     22 | Luther Burden      | CHI    | WR    |     25.5% |   +293 |
+|     23 | Daniel Bellinger   | NYG    | TE    |     24.5% |   +309 |
+|     24 | Cole Kmet          | CHI    | TE    |     22.5% |   +345 |
+|     25 | Ray-Ray McCloud    | NYG    | WR    |      9.9% |   +915 |
++--------+-------------------+--------+-------+-----------+--------+

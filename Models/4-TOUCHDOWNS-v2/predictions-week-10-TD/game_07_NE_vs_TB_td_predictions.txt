@@ -1,0 +1,33 @@
+================================================================================
+NE vs TB | Week 10 2025 | Anytime TD Probabilities
+================================================================================
+
++--------+-------------------+--------+-------+-----------+--------+
+|   Rank | Player            | Team   | Pos   | TD Prob   |   Odds |
++========+===================+========+=======+===========+=======+
+|      1 | Rhamondre Stevenso | NE     | RB    |     61.4% |   -159 |
+|      2 | Bucky Irving       | TB     | RB    |     60.8% |   -155 |
+|      3 | Emeka Egbuka       | TB     | WR    |     56.4% |   -129 |
+|      4 | Kameron Johnson    | TB     | WR    |     52.4% |   -110 |
+|      5 | Hunter Henry       | NE     | TE    |     50.5% |   -102 |
+|      6 | Rachaad White      | TB     | RB    |     49.5% |   +102 |
+|      7 | Kayshon Boutte     | NE     | WR    |     48.9% |   +104 |
+|      8 | TreVeyon Henderson | NE     | RB    |     46.6% |   +115 |
+|      9 | Tez Johnson        | TB     | WR    |     46.4% |   +116 |
+|     10 | Terrell Jennings   | NE     | RB    |     45.4% |   +120 |
+|     11 | Cade Otton         | TB     | TE    |     43.8% |   +128 |
+|     12 | Mike Evans         | TB     | WR    |     43.7% |   +129 |
+|     13 | Stefon Diggs       | NE     | WR    |     43.3% |   +131 |
+|     14 | Drake Maye         | NE     | QB    |     43.1% |   +132 |
+|     15 | Sean Tucker        | TB     | RB    |     41.8% |   +139 |
+|     16 | Mack Hollins       | NE     | WR    |     40.7% |   +145 |
+|     17 | Chris Godwin       | TB     | WR    |     40.3% |   +148 |
+|     18 | Antonio Gibson     | NE     | RB    |     39.6% |   +152 |
+|     19 | Sterling Shepard   | TB     | WR    |     37.2% |   +169 |
+|     20 | Austin Hooper      | NE     | TE    |     27.9% |   +258 |
+|     21 | Baker Mayfield     | TB     | QB    |     27.6% |   +263 |
+|     22 | Demario Douglas    | NE     | WR    |     25.4% |   +294 |
+|     23 | Josh Williams      | TB     | RB    |     25.0% |   +300 |
+|     24 | Kyle Williams      | NE     | WR    |     24.6% |   +307 |
+|     25 | Joshua Dobbs       | NE     | QB    |     13.7% |   +629 |
++--------+-------------------+--------+-------+-----------+--------+

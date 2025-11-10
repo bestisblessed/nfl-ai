@@ -1,0 +1,38 @@
+================================================================================
+JAX vs HOU | Week 10 2025 | Anytime TD Probabilities
+================================================================================
+
++--------+-------------------+--------+-------+-----------+--------+
+|   Rank | Player            | Team   | Pos   | TD Prob   |   Odds |
++========+===================+========+=======+===========+=======+
+|      1 | Travis Etienne     | JAX    | RB    |     67.0% |   -203 |
+|      2 | Nick Chubb         | HOU    | RB    |     57.6% |   -136 |
+|      3 | Woody Marks        | HOU    | RB    |     56.6% |   -130 |
+|      4 | Nico Collins       | HOU    | WR    |     50.6% |   -102 |
+|      5 | Xavier Hutchinson  | HOU    | WR    |     49.6% |   +102 |
+|      6 | Christian Kirk     | HOU    | WR    |     48.4% |   +107 |
+|      7 | Cade Stover        | HOU    | TE    |     48.2% |   +107 |
+|      8 | Dalton Schultz     | HOU    | TE    |     47.3% |   +111 |
+|      9 | Bhayshul Tuten     | JAX    | RB    |     47.1% |   +113 |
+|     10 | Jaylin Noel        | HOU    | WR    |     44.5% |   +125 |
+|     11 | Travis Hunter      | JAX    | WR    |     43.9% |   +128 |
+|     12 | Braxton Berrios    | HOU    | WR    |     43.8% |   +128 |
+|     13 | Jayden Higgins     | HOU    | WR    |     43.8% |   +129 |
+|     14 | Brian Thomas       | JAX    | WR    |     43.1% |   +132 |
+|     15 | Parker Washington  | JAX    | WR    |     42.6% |   +134 |
+|     16 | Dameon Pierce      | HOU    | RB    |     42.3% |   +136 |
+|     17 | Brenton Strange    | JAX    | TE    |     42.2% |   +137 |
+|     18 | Trevor Lawrence    | JAX    | QB    |     38.7% |   +159 |
+|     19 | C.J. Stroud        | HOU    | QB    |     35.5% |   +182 |
+|     20 | Dyami Brown        | JAX    | WR    |     34.2% |   +192 |
+|     21 | Davis Mills        | HOU    | QB    |     32.1% |   +211 |
+|     22 | British Brooks     | HOU    | RB    |     32.0% |   +212 |
+|     23 | Hunter Long        | JAX    | TE    |     31.9% |   +214 |
+|     24 | Justin Watson      | HOU    | WR    |     31.3% |   +219 |
+|     25 | Harrison Bryant    | HOU    | TE    |     30.1% |   +232 |
+|     26 | Dare Ogunbowale    | HOU    | RB    |     29.8% |   +236 |
+|     27 | Tank Bigsby        | JAX    |       |     28.1% |   +256 |
+|     28 | Tim Patrick        | JAX    | WR    |     27.4% |   +266 |
+|     29 | LeQuint Allen      | JAX    | RB    |     25.2% |   +297 |
+|     30 | Johnny Mundt       | JAX    | TE    |     24.1% |   +315 |
++--------+-------------------+--------+-------+-----------+--------+

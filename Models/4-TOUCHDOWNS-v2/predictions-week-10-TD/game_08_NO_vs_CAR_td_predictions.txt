@@ -1,0 +1,35 @@
+================================================================================
+NO vs CAR | Week 10 2025 | Anytime TD Probabilities
+================================================================================
+
++--------+-------------------+--------+-------+-----------+--------+
+|   Rank | Player            | Team   | Pos   | TD Prob   |   Odds |
++========+===================+========+=======+===========+=======+
+|      1 | Rico Dowdle        | CAR    | RB    |     61.7% |   -161 |
+|      2 | Chuba Hubbard      | CAR    | RB    |     53.1% |   -113 |
+|      3 | Xavier Legette     | CAR    | WR    |     52.4% |   -110 |
+|      4 | Rashid Shaheed     | NO     | WR    |     51.8% |   -108 |
+|      5 | Tetairoa McMillan  | CAR    | WR    |     49.4% |   +102 |
+|      6 | Chris Olave        | NO     | WR    |     48.7% |   +105 |
+|      7 | Kendre Miller      | NO     | RB    |     45.2% |   +121 |
+|      8 | Alvin Kamara       | NO     | RB    |     41.8% |   +140 |
+|      9 | Juwan Johnson      | NO     | TE    |     37.9% |   +164 |
+|     10 | Mitchell Evans     | CAR    | TE    |     36.7% |   +173 |
+|     11 | Jalen Coker        | CAR    | WR    |     30.5% |   +227 |
+|     12 | Hunter Renfrow     | CAR    | WR    |     30.4% |   +229 |
+|     13 | James Mitchell     | CAR    | TE    |     29.5% |   +239 |
+|     14 | Tommy Tremble      | CAR    | TE    |     29.1% |   +243 |
+|     15 | Brycen Tremayne    | CAR    | WR    |     28.7% |   +248 |
+|     16 | Bryce Young        | CAR    | QB    |     27.8% |   +259 |
+|     17 | Jimmy Horn         | CAR    | WR    |     27.7% |   +262 |
+|     18 | Trevor Etienne     | CAR    | RB    |     27.7% |   +262 |
+|     19 | Jack Stoll         | NO     | TE    |     27.6% |   +262 |
+|     20 | Devaughn Vele      | NO     | WR    |     27.0% |   +271 |
+|     21 | Brandin Cooks      | NO     | WR    |     26.1% |   +283 |
+|     22 | Spencer Rattler    | NO     | QB    |     25.8% |   +287 |
+|     23 | Taysom Hill        | NO     | QB    |     25.3% |   +296 |
+|     24 | Ja'Tavion Sanders  | CAR    | TE    |     25.2% |   +296 |
+|     25 | Devin Neal         | NO     | RB    |     24.6% |   +307 |
+|     26 | Tyler Shough       | NO     | QB    |     24.0% |   +317 |
+|     27 | Andy Dalton        | CAR    | QB    |     19.8% |   +405 |
++--------+-------------------+--------+-------+-----------+--------+

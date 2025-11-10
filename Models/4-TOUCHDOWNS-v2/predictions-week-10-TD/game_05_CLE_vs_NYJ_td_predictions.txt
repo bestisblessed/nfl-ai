@@ -1,0 +1,35 @@
+================================================================================
+CLE vs NYJ | Week 10 2025 | Anytime TD Probabilities
+================================================================================
+
++--------+-------------------+--------+-------+-----------+--------+
+|   Rank | Player            | Team   | Pos   | TD Prob   |   Odds |
++========+===================+========+=======+===========+=======+
+|      1 | Breece Hall        | NYJ    | RB    |     64.1% |   -179 |
+|      2 | Quinshon Judkins   | CLE    | RB    |     62.2% |   -164 |
+|      3 | Justin Fields      | NYJ    | QB    |     58.6% |   -142 |
+|      4 | Garrett Wilson     | NYJ    | WR    |     54.6% |   -120 |
+|      5 | Cedric Tillman     | CLE    | WR    |     48.0% |   +108 |
+|      6 | Harold Fannin      | CLE    | TE    |     47.5% |   +110 |
+|      7 | David Njoku        | CLE    | TE    |     47.5% |   +110 |
+|      8 | Mason Taylor       | NYJ    | TE    |     46.1% |   +117 |
+|      9 | Tyrod Taylor       | NYJ    | QB    |     43.4% |   +130 |
+|     10 | Josh Reynolds      | NYJ    | WR    |     43.2% |   +131 |
+|     11 | Isaiah Williams    | NYJ    | WR    |     41.2% |   +143 |
+|     12 | Tyler Johnson      | NYJ    | WR    |     40.9% |   +145 |
+|     13 | Braelon Allen      | NYJ    | RB    |     40.6% |   +146 |
+|     14 | Gage Larvadain     | CLE    | WR    |     40.4% |   +147 |
+|     15 | Isaiah Bond        | CLE    | WR    |     39.3% |   +154 |
+|     16 | Dylan Sampson      | CLE    | RB    |     38.6% |   +159 |
+|     17 | Jerry Jeudy        | CLE    | WR    |     38.3% |   +161 |
+|     18 | Andrew Beck        | NYJ    | RB    |     35.4% |   +182 |
+|     19 | Jerome Ford        | CLE    | RB    |     34.9% |   +187 |
+|     20 | Isaiah Davis       | NYJ    | RB    |     34.3% |   +192 |
+|     21 | Raheim Sanders     | CLE    | RB    |     32.0% |   +213 |
+|     22 | Joe Flacco         | CLE    |       |     31.6% |   +216 |
+|     23 | Allen Lazard       | NYJ    | WR    |     31.0% |   +223 |
+|     24 | Arian Smith        | NYJ    | WR    |     29.1% |   +243 |
+|     25 | Jeremy Ruckert     | NYJ    | TE    |     28.9% |   +245 |
+|     26 | Dillon Gabriel     | CLE    | QB    |     25.4% |   +293 |
+|     27 | Jamari Thrash      | CLE    | WR    |     24.6% |   +306 |
++--------+-------------------+--------+-------+-----------+--------+

@@ -1,0 +1,33 @@
+================================================================================
+DET vs WAS | Week 10 2025 | Anytime TD Probabilities
+================================================================================
+
++--------+-------------------+--------+-------+-----------+--------+
+|   Rank | Player            | Team   | Pos   | TD Prob   |   Odds |
++========+===================+========+=======+===========+=======+
+|      1 | Jahmyr Gibbs       | DET    | RB    |     71.4% |   -250 |
+|      2 | Jayden Daniels     | WAS    | QB    |     69.2% |   -225 |
+|      3 | Jacory Croskey-Mer | WAS    | RB    |     63.3% |   -173 |
+|      4 | Sam LaPorta        | DET    | TE    |     55.0% |   -122 |
+|      5 | Amon-Ra St. Brown  | DET    | WR    |     54.2% |   -118 |
+|      6 | David Montgomery   | DET    | RB    |     53.6% |   -115 |
+|      7 | Chris Rodriguez    | WAS    | RB    |     50.6% |   -102 |
+|      8 | Jameson Williams   | DET    | WR    |     47.0% |   +113 |
+|      9 | Austin Ekeler      | WAS    | RB    |     45.7% |   +119 |
+|     10 | Jeremy McNichols   | WAS    | RB    |     42.7% |   +134 |
+|     11 | Marcus Mariota     | WAS    | QB    |     39.8% |   +151 |
+|     12 | Zach Ertz          | WAS    | TE    |     38.2% |   +161 |
+|     13 | Deebo Samuel       | WAS    | WR    |     37.4% |   +167 |
+|     14 | Isaac TeSlaa       | DET    | WR    |     37.4% |   +168 |
+|     15 | Chris Moore        | WAS    | WR    |     34.3% |   +191 |
+|     16 | Luke McCaffrey     | WAS    | WR    |     33.8% |   +195 |
+|     17 | John Bates         | WAS    | TE    |     32.2% |   +211 |
+|     18 | Noah Brown         | WAS    | WR    |     31.5% |   +218 |
+|     19 | Brock Wright       | DET    | TE    |     30.9% |   +223 |
+|     20 | Robbie Chosen      | WAS    | WR    |     30.7% |   +226 |
+|     21 | Terry McLaurin     | WAS    | WR    |     30.5% |   +227 |
+|     22 | Jaylin Lane        | WAS    | WR    |     30.5% |   +228 |
+|     23 | Craig Reynolds     | DET    | RB    |     26.7% |   +274 |
+|     24 | Kalif Raymond      | DET    | WR    |     26.6% |   +276 |
+|     25 | Jared Goff         | DET    | QB    |     26.1% |   +283 |
++--------+-------------------+--------+-------+-----------+--------+

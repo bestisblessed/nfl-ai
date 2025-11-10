@@ -1,0 +1,32 @@
+================================================================================
+ARI vs SEA | Week 10 2025 | Anytime TD Probabilities
+================================================================================
+
++--------+-------------------+--------+-------+-----------+--------+
+|   Rank | Player            | Team   | Pos   | TD Prob   |   Odds |
++========+===================+========+=======+===========+=======+
+|      1 | Trey McBride       | ARI    | TE    |     66.4% |   -198 |
+|      2 | Zach Charbonnet    | SEA    | RB    |     65.9% |   -193 |
+|      3 | Kenneth Walker III | SEA    | RB    |     65.4% |   -189 |
+|      4 | Jaxon Smith-Njigba | SEA    | WR    |     60.9% |   -156 |
+|      5 | Tory Horton        | SEA    | WR    |     59.7% |   -148 |
+|      6 | Cooper Kupp        | SEA    | WR    |     55.2% |   -123 |
+|      7 | Michael Carter     | ARI    | RB    |     54.1% |   -118 |
+|      8 | James Conner       | ARI    | RB    |     51.6% |   -107 |
+|      9 | Marvin Harrison Jr | ARI    | WR    |     50.6% |   -102 |
+|     10 | Zonovan Knight     | ARI    |       |     49.0% |   +104 |
+|     11 | Trey Benson        | ARI    | RB    |     45.4% |   +120 |
+|     12 | Michael Wilson     | ARI    | WR    |     43.3% |   +131 |
+|     13 | AJ Barner          | SEA    | TE    |     43.0% |   +133 |
+|     14 | Zay Jones          | ARI    | WR    |     41.8% |   +139 |
+|     15 | George Holani      | SEA    | RB    |     41.3% |   +142 |
+|     16 | Elijah Arroyo      | SEA    | TE    |     35.8% |   +179 |
+|     17 | Jacardia Wright    | SEA    | RB    |     35.4% |   +183 |
+|     18 | Jacoby Brissett    | ARI    | QB    |     32.3% |   +210 |
+|     19 | Sam Darnold        | SEA    | QB    |     31.2% |   +221 |
+|     20 | Kyler Murray       | ARI    | QB    |     30.8% |   +225 |
+|     21 | Greg Dortch        | ARI    | WR    |     28.7% |   +249 |
+|     22 | Emari Demercado    | ARI    | RB    |     28.0% |   +257 |
+|     23 | Tip Reiman         | ARI    | TE    |     25.0% |   +300 |
+|     24 | Elijah Higgins     | ARI    | TE    |     21.2% |   +372 |
++--------+-------------------+--------+-------+-----------+--------+

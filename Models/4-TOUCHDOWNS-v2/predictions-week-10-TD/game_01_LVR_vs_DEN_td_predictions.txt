@@ -1,0 +1,34 @@
+================================================================================
+LVR vs DEN | Week 10 2025 | Anytime TD Probabilities
+================================================================================
+
++--------+-------------------+--------+-------+-----------+--------+
+|   Rank | Player            | Team   | Pos   | TD Prob   |   Odds |
++========+===================+========+=======+===========+=======+
+|      1 | J.K. Dobbins       | DEN    | RB    |     76.6% |   -328 |
+|      2 | Troy Franklin      | DEN    | WR    |     61.4% |   -159 |
+|      3 | RJ Harvey          | DEN    | RB    |     58.6% |   -141 |
+|      4 | Courtland Sutton   | DEN    | WR    |     57.9% |   -138 |
+|      5 | Ashton Jeanty      | LVR    | RB    |     57.1% |   -133 |
+|      6 | Evan Engram        | DEN    | TE    |     50.1% |   -100 |
+|      7 | Bo Nix             | DEN    | QB    |     49.4% |   +102 |
+|      8 | Marvin Mims        | DEN    | WR    |     49.1% |   +103 |
+|      9 | Brock Bowers       | LVR    | TE    |     47.9% |   +109 |
+|     10 | Pat Bryant         | DEN    | WR    |     47.4% |   +111 |
+|     11 | Tre Tucker         | LVR    | WR    |     44.7% |   +124 |
+|     12 | Nate Adkins        | DEN    | TE    |     42.2% |   +137 |
+|     13 | Jakobi Meyers      | LVR    | WR    |     40.9% |   +145 |
+|     14 | Michael Mayer      | LVR    | TE    |     38.4% |   +161 |
+|     15 | Albert Okwuegbunam | LVR    | TE    |     38.3% |   +161 |
+|     16 | Lucas Krull        | DEN    | TE    |     35.4% |   +182 |
+|     17 | Zamir White        | LVR    | RB    |     35.2% |   +184 |
+|     18 | Jack Bech          | LVR    | WR    |     31.5% |   +217 |
+|     19 | Dylan Laube        | LVR    | RB    |     29.9% |   +234 |
+|     20 | Adam Trautman      | DEN    | TE    |     29.9% |   +235 |
+|     21 | Tyler Badie        | DEN    | RB    |     28.8% |   +248 |
+|     22 | Geno Smith         | LVR    | QB    |     28.6% |   +250 |
+|     23 | Ian Thomas         | LVR    | TE    |     27.1% |   +270 |
+|     24 | Raheem Mostert     | LVR    | RB    |     25.2% |   +296 |
+|     25 | Trent Sherfield    | DEN    | WR    |     25.2% |   +297 |
+|     26 | Dont'e Thornton    | LVR    | WR    |     17.7% |   +467 |
++--------+-------------------+--------+-------+-----------+--------+
