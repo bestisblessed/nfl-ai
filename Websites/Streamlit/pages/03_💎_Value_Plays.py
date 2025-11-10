@@ -1,5 +1,7 @@
 import glob
+import json
 import os
+import re
 from typing import List, Optional, Tuple
 
 import numpy as np
@@ -28,6 +30,80 @@ st.markdown(
     """,
     unsafe_allow_html=True,
 )
+
+
+@st.cache_data
+def load_game_times():
+    """Load game times from odds JSON files to sort games by start time"""
+    games_with_times = {}
+    try:
+        data_dir = os.path.join(BASE_DIR, "data", "odds")
+        json_files = sorted(
+            [f for f in os.listdir(data_dir) if f.endswith(".json") and f.startswith('nfl')],
+            reverse=True
+        )
+        if json_files:
+            filepath = os.path.join(data_dir, json_files[0])
+            with open(filepath) as f:
+                data = json.load(f)
+                for game in data:
+                    game_time = game.get('Time', '')
+                    day_and_matchup_key = list(game.keys())[1] if len(game.keys()) > 1 else None
+                    if day_and_matchup_key:
+                        teams = game[day_and_matchup_key].replace('\n', ' ').strip()
+                        if '  ' in teams:
+                            teams_list = [team.strip() for team in teams.split('  ') if team.strip()]
+                        else:
+                            teams_list = [team.strip() for team in re.split(r'\s+|,', teams) if team.strip()]
+                        if len(teams_list) == 2:
+                            # Create matchup key with abbreviations (need to map full names to abbreviations)
+                            matchup_key = f"{teams_list[0]} vs {teams_list[1]}"
+                            games_with_times[matchup_key] = {
+                                'time': game_time,
+                                'date': day_and_matchup_key.strip()
+                            }
+    except Exception:
+        pass
+    return games_with_times
+
+
+@st.cache_data
+def load_upcoming_games_with_times():
+    """Load upcoming games and try to get times for sorting"""
+    games_file = os.path.join(BASE_DIR, "upcoming_games.csv")
+    if os.path.exists(games_file):
+        games_df = pd.read_csv(games_file)
+        game_times = load_game_times()
+        
+        # Create list of games with time info for sorting
+        games_list = []
+        for _, row in games_df.iterrows():
+            away, home = row['away_team'], row['home_team']
+            matchup_str = f"{away} @ {home}"
+            
+            # Try to find time from odds data
+            time_info = None
+            for key, value in game_times.items():
+                # Check if teams match (handling full names vs abbreviations)
+                teams_in_key = [t.strip() for t in re.split(r'\s+vs\s+', key, flags=re.IGNORECASE)]
+                if len(teams_in_key) == 2:
+                    # Simple matching - could be improved
+                    time_info = value
+                    break
+            
+            games_list.append({
+                'matchup': matchup_str,
+                'away': away,
+                'home': home,
+                'time': time_info['time'] if time_info else '',
+                'date': time_info['date'] if time_info else '',
+                'sort_key': (time_info['date'] if time_info else '', time_info['time'] if time_info else '')
+            })
+        
+        # Sort by date and time
+        games_list.sort(key=lambda x: x['sort_key'])
+        return [g['matchup'] for g in games_list], games_df
+    return [], pd.DataFrame()
 
 
 @st.cache_data
@@ -110,11 +186,13 @@ except FileNotFoundError as exc:
 
 value_opportunities["bookmaker"] = value_opportunities["bookmaker"].fillna("-")
 value_opportunities["side"] = value_opportunities["side"].fillna("-")
-value_opportunities["ev_per_1"] = value_opportunities["ev_per_1"].fillna(0.0)
 value_opportunities["edge_yards"] = value_opportunities["edge_yards"].fillna(0.0)
 
-# Get unique games for selector
-if "home_team" in value_opportunities.columns and "away_team" in value_opportunities.columns:
+# Get unique games for selector using upcoming_games.csv with abbreviations, sorted by time
+game_options_list, upcoming_games_df = load_upcoming_games_with_times()
+if game_options_list:
+    game_options = ["All Games"] + game_options_list
+elif "home_team" in value_opportunities.columns and "away_team" in value_opportunities.columns:
     games_df = value_opportunities[["home_team", "away_team"]].drop_duplicates()
     game_options = ["All Games"] + [
         f"{row['away_team']} @ {row['home_team']}"
@@ -141,13 +219,14 @@ st.divider()
 
 # Filter by selected game if not "All Games"
 if selected_game != "All Games":
-    # Parse the game selection
+    # Parse the game selection (format: "Away @ Home" with abbreviations)
     if " @ " in selected_game:
-        # Format: "Away Team @ Home Team"
-        away_team_full, home_team_full = selected_game.split(" @ ")
+        # Format: "Away Team @ Home Team" (using abbreviations)
+        away_team_abbrev, home_team_abbrev = selected_game.split(" @ ")
+        # Filter using team/opp columns (which use abbreviations)
         game_data = value_opportunities[
-            ((value_opportunities["home_team"] == home_team_full) & 
-             (value_opportunities["away_team"] == away_team_full))
+            ((value_opportunities["team"] == away_team_abbrev) & (value_opportunities["opp"] == home_team_abbrev)) |
+            ((value_opportunities["team"] == home_team_abbrev) & (value_opportunities["opp"] == away_team_abbrev))
         ].copy()
     else:
         # Fallback format: "Team1 vs Team2"
@@ -253,7 +332,7 @@ if selected_game != "All Games":
                 return 'color: #c62828; font-weight: 500;'
             return ''
         
-        styled_df = display_df.style.applymap(style_side_cell, subset=["Side"])
+        styled_df = display_df.style.map(style_side_cell, subset=["Side"])
         
         st.dataframe(
             styled_df,
@@ -364,7 +443,7 @@ else:
                     return 'color: #c62828; font-weight: 500;'
                 return ''
             
-            styled_df = display_df.style.applymap(style_side_cell, subset=["Side"])
+            styled_df = display_df.style.map(style_side_cell, subset=["Side"])
             
             st.dataframe(
                 styled_df,

@@ -3,8 +3,45 @@ import pandas as pd
 import numpy as np
 import os
 import glob
+import json
+import re
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# Load game times from odds JSON files
+@st.cache_data
+def load_game_times():
+    """Load game times from odds JSON files to sort games by start time"""
+    games_with_times = {}
+    try:
+        data_dir = os.path.join(BASE_DIR, "data", "odds")
+        json_files = sorted(
+            [f for f in os.listdir(data_dir) if f.endswith(".json") and f.startswith('nfl')],
+            reverse=True
+        )
+        if json_files:
+            filepath = os.path.join(data_dir, json_files[0])
+            with open(filepath) as f:
+                data = json.load(f)
+                for game in data:
+                    game_time = game.get('Time', '')
+                    day_and_matchup_key = list(game.keys())[1] if len(game.keys()) > 1 else None
+                    if day_and_matchup_key:
+                        teams = game[day_and_matchup_key].replace('\n', ' ').strip()
+                        if '  ' in teams:
+                            teams_list = [team.strip() for team in teams.split('  ') if team.strip()]
+                        else:
+                            teams_list = [team.strip() for team in re.split(r'\s+|,', teams) if team.strip()]
+                        if len(teams_list) == 2:
+                            matchup_key = f"{teams_list[0]} vs {teams_list[1]}"
+                            games_with_times[matchup_key] = {
+                                'time': game_time,
+                                'date': day_and_matchup_key.strip()
+                            }
+    except Exception:
+        pass
+    return games_with_times
+
 
 # Load upcoming games data for home/away determination
 @st.cache_data
@@ -20,8 +57,8 @@ def load_upcoming_games():
             home, away = row['home_team'], row['away_team']
             games_mapping[(home, away)] = f"{away} @ {home}"
             games_mapping[(away, home)] = f"{away} @ {home}"
-        return games_mapping
-    return {}
+        return games_mapping, games_df
+    return {}, pd.DataFrame()
 
 # Page configuration
 st.set_page_config(
@@ -146,31 +183,54 @@ if projections_df is None:
     st.stop()
 
 # Load games mapping for correct home/away designation
-games_mapping = load_upcoming_games()
+games_mapping, upcoming_games_df = load_upcoming_games()
+game_times = load_game_times()
 
 # Matchup selection in sidebar
 st.sidebar.header("Matchup Selection")
 
-# Create matchup options using correct home/away from games data
-matchups = []
-matchup_set = set()
-
-for _, row in projections_df.iterrows():
-    team1, team2 = row['team'], row['opp']
-    # Try to get the correct @ format from games mapping
-    matchup = games_mapping.get((team1, team2))
-    if matchup is None:
-        matchup = games_mapping.get((team2, team1))
-    if matchup is None:
-        # Fallback to alphabetical sorting if not found in games
-        team1_sorted, team2_sorted = sorted([team1, team2])
-        matchup = f"{team1_sorted} @ {team2_sorted}"
-
-    if matchup not in matchup_set:
-        matchup_set.add(matchup)
-        matchups.append(matchup)
-
-matchups = sorted(matchups)
+# Create matchup options using upcoming_games.csv with abbreviations, sorted by time
+if not upcoming_games_df.empty:
+    # Create list of games with time info for sorting
+    games_list = []
+    for _, row in upcoming_games_df.iterrows():
+        away, home = row['away_team'], row['home_team']
+        matchup_str = f"{away} @ {home}"
+        
+        # Try to find time from odds data
+        time_info = None
+        for key, value in game_times.items():
+            teams_in_key = [t.strip() for t in re.split(r'\s+vs\s+', key, flags=re.IGNORECASE)]
+            if len(teams_in_key) == 2:
+                time_info = value
+                break
+        
+        games_list.append({
+            'matchup': matchup_str,
+            'time': time_info['time'] if time_info else '',
+            'date': time_info['date'] if time_info else '',
+            'sort_key': (time_info['date'] if time_info else '', time_info['time'] if time_info else '')
+        })
+    
+    # Sort by date and time
+    games_list.sort(key=lambda x: x['sort_key'])
+    matchups = [g['matchup'] for g in games_list]
+else:
+    # Fallback: create matchups from projections data
+    matchups = []
+    matchup_set = set()
+    for _, row in projections_df.iterrows():
+        team1, team2 = row['team'], row['opp']
+        matchup = games_mapping.get((team1, team2))
+        if matchup is None:
+            matchup = games_mapping.get((team2, team1))
+        if matchup is None:
+            team1_sorted, team2_sorted = sorted([team1, team2])
+            matchup = f"{team1_sorted} @ {team2_sorted}"
+        if matchup not in matchup_set:
+            matchup_set.add(matchup)
+            matchups.append(matchup)
+    matchups = sorted(matchups)
 
 selected_matchup = st.sidebar.selectbox(
     "Select Matchup:",
