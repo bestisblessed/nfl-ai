@@ -8,7 +8,7 @@ import os
 # Page configuration
 st.set_page_config(
     page_title="💰 Betting Trends",
-    page_icon="💰",
+    page_icon="🏈",
     layout="wide"
 )
 

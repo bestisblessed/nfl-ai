@@ -63,7 +63,7 @@ def load_upcoming_games():
 # Page configuration
 st.set_page_config(
     page_title="🔮 NFL Game Projections",
-    page_icon="🔮",
+    page_icon="🏈",
     layout="wide"
 )
 

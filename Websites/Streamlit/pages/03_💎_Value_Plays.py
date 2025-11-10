@@ -13,7 +13,7 @@ PROJECTIONS_DIR = os.path.join(BASE_DIR, "data", "projections")
 
 st.set_page_config(
     page_title="💎 Value Play Finder",
-    page_icon="💎",
+    page_icon="🏈",
     layout="wide",
 )
 

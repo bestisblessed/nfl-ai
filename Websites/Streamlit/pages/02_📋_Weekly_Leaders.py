@@ -10,7 +10,7 @@ import glob
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # st.set_page_config(page_title="Leader Projections", layout="centered")
-st.set_page_config(page_title="Leader Projections", layout="wide")
+st.set_page_config(page_title="Leader Projections", page_icon="🏈", layout="wide")
 
 # st.title("NFL Leader Projections")
 

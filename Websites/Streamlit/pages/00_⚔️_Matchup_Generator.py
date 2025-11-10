@@ -26,7 +26,7 @@ def get_team_color(abbr: str) -> str:
 # Page configuration
 st.set_page_config(
     page_title="⚔️ Report Generator",
-    page_icon="⚔️",
+    page_icon="🏈",
     layout="wide"   
 )
 

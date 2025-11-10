@@ -7,7 +7,7 @@ import os
 # Page configuration
 st.set_page_config(
     page_title="💍 NFL Standings",
-    page_icon="💍",
+    page_icon="🏈",
     layout="centered"
 )
 

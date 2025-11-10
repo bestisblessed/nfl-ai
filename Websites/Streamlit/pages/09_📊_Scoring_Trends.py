@@ -14,7 +14,7 @@ import streamlit as st
     #     text-align: center !important;
     # }
 
-st.set_page_config(page_title="Touchdown Trends", layout="wide")
+st.set_page_config(page_title="Touchdown Trends", page_icon="🏈", layout="wide")
 # st.set_page_config(page_title="NFL 2025 TDs Allowed")
 
 # Create columns to control width (left margin, content, right margin)

@@ -12,7 +12,7 @@ import sqlite3
 # Page configuration
 st.set_page_config(
     page_title="🥇 Player Dashboard",
-    page_icon="🥇",
+    page_icon="🏈",
     layout="wide"
     # layout="centered"
 )

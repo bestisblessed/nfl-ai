@@ -9,7 +9,7 @@ import plotly.express as px
 # Page configuration
 st.set_page_config(
     page_title="📉 Team Trends",
-    page_icon="📉",
+    page_icon="🏈",
     layout="wide"
 )
 

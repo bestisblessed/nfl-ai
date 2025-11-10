@@ -11,7 +11,7 @@ from matplotlib import dates as mdates
 # Page configuration
 st.set_page_config(
     page_title="Odds Dashboard",
-    page_icon="📈",
+    page_icon="🏈",
     layout="wide"
 )
 

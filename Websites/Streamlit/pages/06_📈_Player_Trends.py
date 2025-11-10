@@ -10,7 +10,7 @@ import os
 # Page configuration
 st.set_page_config(
     page_title="📈 Player Trends",
-    page_icon="📈",
+    page_icon="🏈",
     layout="wide"
 )
 
