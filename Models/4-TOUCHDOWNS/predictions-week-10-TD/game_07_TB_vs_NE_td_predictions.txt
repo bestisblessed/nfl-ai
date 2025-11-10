@@ -2,19 +2,19 @@
 TB vs NE | Week 10 2025 | Anytime TD Probabilities
 ================================================================================
 
-+---------------------+--------+-------+-----------+--------+
-| Player              | Team   | Pos   | TD Prob   |   Odds |
-+=====================+========+=======+===========+========+
-| Emeka Egbuka        | TB     | WR    | 38.0%     |   +163 |
-| Stefon Diggs        | NE     | WR    | 36.1%     |   +177 |
-| Chris Godwin Jr.    | TB     | WR    | 33.1%     |   +202 |
-| Rhamondre Stevenson | NE     | RB    | 30.9%     |   +223 |
-| Dennis Houston      | TB     | WR    | 30.6%     |   +227 |
-| DeMario Douglas     | NE     | WR    | 29.6%     |   +237 |
-| Brandon Johnson     | TB     | WR    | 29.3%     |   +242 |
-| Sterling Shepard    | TB     | WR    | 29.0%     |   +245 |
-| TreVeyon Henderson  | NE     | RB    | 28.7%     |   +249 |
-| Kayshon Boutte      | NE     | WR    | 28.0%     |   +257 |
-| Ryan Miller         | TB     | WR    | 27.1%     |   +270 |
-| Mack Hollins        | NE     | WR    | 26.7%     |   +275 |
-+---------------------+--------+-------+-----------+--------+
++--------------------+--------+-------+-----------+--------+
+| Player             | Team   | Pos   | TD Prob   |   Odds |
++====================+========+=======+===========+========+
+| Emeka Egbuka       | TB     | WR    | 38.5%     |   +160 |
+| Stefon Diggs       | NE     | WR    | 36.6%     |   +173 |
+| TreVeyon Henderson | NE     | RB    | 31.8%     |   +214 |
+| Dennis Houston     | TB     | WR    | 31.0%     |   +223 |
+| DeMario Douglas    | NE     | WR    | 30.0%     |   +233 |
+| Brandon Johnson    | TB     | WR    | 29.7%     |   +237 |
+| Sterling Shepard   | TB     | WR    | 29.4%     |   +240 |
+| Terrell Jennings   | NE     | RB    | 28.1%     |   +256 |
+| Ryan Miller        | TB     | WR    | 27.4%     |   +265 |
+| Mack Hollins       | NE     | WR    | 27.0%     |   +270 |
+| Devin Culp         | TB     | TE    | 26.4%     |   +279 |
+| Kameron Johnson    | TB     | WR    | 26.3%     |   +280 |
++--------------------+--------+-------+-----------+--------+

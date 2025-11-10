@@ -5,16 +5,16 @@ SEA vs ARI | Week 10 2025 | Anytime TD Probabilities
 +---------------------+--------+-------+-----------+--------+
 | Player              | Team   | Pos   | TD Prob   |   Odds |
 +=====================+========+=======+===========+========+
-| Marvin Harrison Jr. | ARI    | WR    | 37.0%     |   +170 |
-| Zach Charbonnet     | SEA    | RB    | 36.1%     |   +177 |
-| AJ Barner           | SEA    | TE    | 31.3%     |   +219 |
-| Kenneth Walker III  | SEA    | RB    | 30.5%     |   +228 |
-| Myles Gaskin        | SEA    | RB    | 30.5%     |   +228 |
-| Zay Jones           | ARI    | WR    | 27.5%     |   +264 |
-| Jaxon Smith-Njigba  | SEA    | WR    | 26.7%     |   +274 |
-| Xavier Weaver       | ARI    | WR    | 26.2%     |   +282 |
-| Steven Sims         | SEA    | WR    | 26.1%     |   +283 |
-| Jalen Brooks        | ARI    | WR    | 25.8%     |   +287 |
-| Cooper Kupp         | SEA    | WR    | 25.8%     |   +288 |
-| Simi Fehoko         | ARI    | WR    | 25.8%     |   +288 |
+| Zach Charbonnet     | SEA    | RB    | 40.1%     |   +150 |
+| Marvin Harrison Jr. | ARI    | WR    | 37.5%     |   +167 |
+| Kenneth Walker III  | SEA    | RB    | 33.9%     |   +195 |
+| Myles Gaskin        | SEA    | RB    | 33.8%     |   +196 |
+| AJ Barner           | SEA    | TE    | 31.2%     |   +221 |
+| Zay Jones           | ARI    | WR    | 27.8%     |   +259 |
+| Jaxon Smith-Njigba  | SEA    | WR    | 27.1%     |   +269 |
+| Xavier Weaver       | ARI    | WR    | 26.5%     |   +277 |
+| Steven Sims         | SEA    | WR    | 26.5%     |   +278 |
+| Bam Knight          | ARI    | RB    | 26.2%     |   +282 |
+| Jalen Brooks        | ARI    | WR    | 26.2%     |   +282 |
+| Simi Fehoko         | ARI    | WR    | 26.1%     |   +283 |
 +---------------------+--------+-------+-----------+--------+

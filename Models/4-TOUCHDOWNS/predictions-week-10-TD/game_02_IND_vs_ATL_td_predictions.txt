@@ -7,14 +7,14 @@ IND vs ATL | Week 10 2025 | Anytime TD Probabilities
 +==================+========+=======+===========+========+
 | Jonathan Taylor  | IND    | RB    | 55.0%     |   -122 |
 | Drake London     | ATL    | WR    | 45.0%     |   +122 |
-| Jamal Agnew      | ATL    | WR    | 40.2%     |   +149 |
-| Michael Pittman  | IND    | WR    | 39.3%     |   +154 |
-| Josh Downs       | IND    | WR    | 36.9%     |   +171 |
-| Darnell Mooney   | ATL    | WR    | 32.0%     |   +212 |
-| Alec Pierce      | IND    | WR    | 29.6%     |   +238 |
-| Deven Thompkins  | ATL    | WR    | 29.3%     |   +242 |
-| Bijan Robinson   | ATL    | RB    | 29.0%     |   +245 |
-| Laquon Treadwell | IND    | WR    | 27.7%     |   +261 |
-| David Sills      | ATL    | WR    | 27.6%     |   +262 |
-| Casey Washington | ATL    | WR    | 26.7%     |   +275 |
+| Jamal Agnew      | ATL    | WR    | 40.7%     |   +145 |
+| Michael Pittman  | IND    | WR    | 39.9%     |   +151 |
+| Josh Downs       | IND    | WR    | 37.4%     |   +167 |
+| Darnell Mooney   | ATL    | WR    | 32.4%     |   +208 |
+| Bijan Robinson   | ATL    | RB    | 32.2%     |   +211 |
+| Alec Pierce      | IND    | WR    | 30.0%     |   +234 |
+| Deven Thompkins  | ATL    | WR    | 29.7%     |   +237 |
+| Laquon Treadwell | IND    | WR    | 28.1%     |   +256 |
+| David Sills      | ATL    | WR    | 28.0%     |   +258 |
+| KhaDarel Hodge   | ATL    | WR    | 26.9%     |   +272 |
 +------------------+--------+-------+-----------+--------+

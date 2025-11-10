@@ -6,15 +6,15 @@ MIN vs BAL | Week 10 2025 | Anytime TD Probabilities
 | Player           | Team   | Pos   | TD Prob   |   Odds |
 +==================+========+=======+===========+========+
 | Justin Jefferson | MIN    | WR    | 45.0%     |   +122 |
-| Jordan Addison   | MIN    | WR    | 37.4%     |   +168 |
-| Zay Flowers      | BAL    | WR    | 36.3%     |   +175 |
-| Jordan Mason     | MIN    | RB    | 35.8%     |   +180 |
+| Jordan Mason     | MIN    | RB    | 39.7%     |   +152 |
+| Jordan Addison   | MIN    | WR    | 37.9%     |   +164 |
+| Zay Flowers      | BAL    | WR    | 36.8%     |   +172 |
+| Aaron Jones      | MIN    | RB    | 35.5%     |   +182 |
 | Mark Andrews     | BAL    | TE    | 35.0%     |   +186 |
-| Aaron Jones      | MIN    | RB    | 31.9%     |   +213 |
-| Rashod Bateman   | BAL    | WR    | 31.8%     |   +214 |
-| Adam Thielen     | MIN    | WR    | 30.7%     |   +226 |
-| Keith Kirkwood   | BAL    | WR    | 28.0%     |   +257 |
-| Isaiah Likely    | BAL    | TE    | 27.6%     |   +262 |
-| Colton Dowell    | BAL    | WR    | 26.9%     |   +272 |
-| Jalen Nailor     | MIN    | WR    | 26.6%     |   +276 |
+| Rashod Bateman   | BAL    | WR    | 32.3%     |   +210 |
+| Adam Thielen     | MIN    | WR    | 31.1%     |   +222 |
+| Keith Kirkwood   | BAL    | WR    | 28.4%     |   +252 |
+| Isaiah Likely    | BAL    | TE    | 27.5%     |   +264 |
+| Zavier Scott     | MIN    | RB    | 27.4%     |   +265 |
+| Colton Dowell    | BAL    | WR    | 27.3%     |   +267 |
 +------------------+--------+-------+-----------+--------+

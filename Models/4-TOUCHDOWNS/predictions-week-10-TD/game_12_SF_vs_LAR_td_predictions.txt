@@ -5,16 +5,16 @@ SF vs LAR | Week 10 2025 | Anytime TD Probabilities
 +--------------------------+--------+-------+-----------+--------+
 | Player                   | Team   | Pos   | TD Prob   |   Odds |
 +==========================+========+=======+===========+========+
-| Jauan Jennings           | SF     | WR    | 31.8%     |   +214 |
-| Russell Gage             | SF     | WR    | 31.3%     |   +219 |
-| Kendrick Bourne          | SF     | WR    | 28.6%     |   +249 |
-| Jake Tonges              | SF     | TE    | 27.9%     |   +259 |
-| Christian McCaffrey      | SF     | RB    | 26.8%     |   +273 |
-| Ricky Pearsall           | SF     | WR    | 24.6%     |   +306 |
-| Demarcus Robinson        | SF     | WR    | 24.6%     |   +307 |
-| Malik Turner             | SF     | WR    | 24.6%     |   +307 |
-| Skyy Moore               | SF     | WR    | 24.3%     |   +312 |
-| Marquez Valdes-Scantling | SF     | WR    | 24.0%     |   +317 |
-| Jordan Watkins           | SF     | WR    | 23.7%     |   +322 |
-| George Kittle            | SF     | TE    | 23.2%     |   +332 |
+| Jauan Jennings           | SF     | WR    | 32.2%     |   +210 |
+| Russell Gage             | SF     | WR    | 31.7%     |   +215 |
+| Christian McCaffrey      | SF     | RB    | 29.8%     |   +236 |
+| Kendrick Bourne          | SF     | WR    | 29.0%     |   +244 |
+| Jake Tonges              | SF     | TE    | 27.7%     |   +261 |
+| Demarcus Robinson        | SF     | WR    | 24.9%     |   +302 |
+| Malik Turner             | SF     | WR    | 24.9%     |   +302 |
+| Skyy Moore               | SF     | WR    | 24.6%     |   +306 |
+| Marquez Valdes-Scantling | SF     | WR    | 24.3%     |   +311 |
+| Jordan Watkins           | SF     | WR    | 24.0%     |   +317 |
+| George Kittle            | SF     | TE    | 23.1%     |   +334 |
+| Brayden Willis           | SF     | TE    | 21.8%     |   +358 |
 +--------------------------+--------+-------+-----------+--------+

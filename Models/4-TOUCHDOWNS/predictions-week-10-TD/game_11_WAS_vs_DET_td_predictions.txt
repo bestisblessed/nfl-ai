@@ -5,16 +5,16 @@ WAS vs DET | Week 10 2025 | Anytime TD Probabilities
 +------------------------+--------+-------+-----------+--------+
 | Player                 | Team   | Pos   | TD Prob   |   Odds |
 +========================+========+=======+===========+========+
-| Jahmyr Gibbs           | DET    | RB    | 45.4%     |   +120 |
-| David Montgomery       | DET    | RB    | 44.3%     |   +126 |
-| Terry McLaurin         | WAS    | WR    | 41.2%     |   +143 |
-| Amon-Ra St. Brown      | DET    | WR    | 38.7%     |   +158 |
-| Jameson Williams       | DET    | WR    | 34.5%     |   +190 |
-| Deebo Samuel Sr.       | WAS    | WR    | 33.7%     |   +196 |
-| Sam LaPorta            | DET    | TE    | 32.4%     |   +208 |
-| Jacory Croskey-Merritt | WAS    | RB    | 30.7%     |   +225 |
-| Chris Moore            | WAS    | WR    | 30.4%     |   +229 |
-| K.J. Osborn            | WAS    | WR    | 29.9%     |   +235 |
-| Jaylin Lane            | WAS    | WR    | 29.1%     |   +243 |
-| Michael Gallup         | WAS    | WR    | 28.5%     |   +250 |
+| Jahmyr Gibbs           | DET    | RB    | 50.4%     |   -102 |
+| David Montgomery       | DET    | RB    | 49.2%     |   +103 |
+| Amon-Ra St. Brown      | DET    | WR    | 39.3%     |   +155 |
+| Jameson Williams       | DET    | WR    | 34.9%     |   +186 |
+| Deebo Samuel Sr.       | WAS    | WR    | 34.2%     |   +193 |
+| Jacory Croskey-Merritt | WAS    | RB    | 34.1%     |   +193 |
+| Sam LaPorta            | DET    | TE    | 32.3%     |   +210 |
+| Chris Moore            | WAS    | WR    | 30.8%     |   +225 |
+| K.J. Osborn            | WAS    | WR    | 30.3%     |   +230 |
+| Jaylin Lane            | WAS    | WR    | 29.5%     |   +239 |
+| Michael Gallup         | WAS    | WR    | 28.9%     |   +246 |
+| Robbie Chosen          | WAS    | WR    | 28.6%     |   +250 |
 +------------------------+--------+-------+-----------+--------+

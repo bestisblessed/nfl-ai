@@ -5,16 +5,16 @@ NYJ vs CLE | Week 10 2025 | Anytime TD Probabilities
 +-------------------+--------+-------+-----------+--------+
 | Player            | Team   | Pos   | TD Prob   |   Odds |
 +===================+========+=======+===========+========+
-| Garrett Wilson    | NYJ    | WR    | 44.2%     |   +126 |
-| Jerry Jeudy       | CLE    | WR    | 35.7%     |   +180 |
-| Harold Fannin Jr. | CLE    | TE    | 34.2%     |   +192 |
-| David Njoku       | CLE    | TE    | 32.3%     |   +210 |
-| Tyler Johnson     | NYJ    | WR    | 32.3%     |   +210 |
-| Diontae Johnson   | CLE    | WR    | 31.0%     |   +222 |
-| Quinshon Judkins  | CLE    | RB    | 30.5%     |   +228 |
-| Trenton Irwin     | NYJ    | WR    | 29.3%     |   +241 |
-| Allen Lazard      | NYJ    | WR    | 29.1%     |   +244 |
-| John Metchie III  | NYJ    | WR    | 29.0%     |   +245 |
-| David Bell        | CLE    | WR    | 28.7%     |   +248 |
-| Isaiah Bond       | CLE    | WR    | 28.0%     |   +257 |
+| Jerry Jeudy       | CLE    | WR    | 36.2%     |   +176 |
+| Harold Fannin Jr. | CLE    | TE    | 34.1%     |   +194 |
+| Tyler Johnson     | NYJ    | WR    | 32.7%     |   +206 |
+| David Njoku       | CLE    | TE    | 32.2%     |   +211 |
+| Diontae Johnson   | CLE    | WR    | 31.4%     |   +218 |
+| Trenton Irwin     | NYJ    | WR    | 29.7%     |   +236 |
+| Allen Lazard      | NYJ    | WR    | 29.4%     |   +240 |
+| John Metchie III  | NYJ    | WR    | 29.4%     |   +240 |
+| David Bell        | CLE    | WR    | 29.1%     |   +244 |
+| Breece Hall       | NYJ    | RB    | 28.9%     |   +246 |
+| Isaiah Williams   | NYJ    | WR    | 28.3%     |   +254 |
+| Arian Smith       | NYJ    | WR    | 26.4%     |   +278 |
 +-------------------+--------+-------+-----------+--------+

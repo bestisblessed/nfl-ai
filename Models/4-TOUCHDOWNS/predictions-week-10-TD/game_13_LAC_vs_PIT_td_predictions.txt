@@ -5,16 +5,16 @@ LAC vs PIT | Week 10 2025 | Anytime TD Probabilities
 +-----------------------+--------+-------+-----------+--------+
 | Player                | Team   | Pos   | TD Prob   |   Odds |
 +=======================+========+=======+===========+========+
-| Keenan Allen          | LAC    | WR    | 41.7%     |   +140 |
-| Quentin Johnston      | LAC    | WR    | 40.2%     |   +149 |
-| Ladd McConkey         | LAC    | WR    | 38.8%     |   +157 |
-| Jaylen Warren         | PIT    | RB    | 32.0%     |   +213 |
-| Tre Harris            | LAC    | WR    | 29.5%     |   +239 |
-| Kimani Vidal          | LAC    | RB    | 28.7%     |   +249 |
-| Mike Williams         | LAC    | WR    | 26.8%     |   +274 |
-| DK Metcalf            | PIT    | WR    | 26.8%     |   +274 |
-| Roman Wilson          | PIT    | WR    | 26.0%     |   +284 |
-| Pat Freiermuth        | PIT    | TE    | 25.7%     |   +288 |
-| KeAndre Lambert-Smith | LAC    | WR    | 25.5%     |   +292 |
-| Jalen Reagor          | LAC    | WR    | 25.4%     |   +293 |
+| Keenan Allen          | LAC    | WR    | 42.3%     |   +136 |
+| Quentin Johnston      | LAC    | WR    | 40.7%     |   +146 |
+| Ladd McConkey         | LAC    | WR    | 39.4%     |   +154 |
+| Jaylen Warren         | PIT    | RB    | 35.5%     |   +182 |
+| Kimani Vidal          | LAC    | RB    | 31.8%     |   +214 |
+| Tre Harris            | LAC    | WR    | 29.9%     |   +235 |
+| Mike Williams         | LAC    | WR    | 27.1%     |   +269 |
+| DK Metcalf            | PIT    | WR    | 27.1%     |   +269 |
+| Roman Wilson          | PIT    | WR    | 26.4%     |   +279 |
+| KeAndre Lambert-Smith | LAC    | WR    | 25.8%     |   +287 |
+| Jalen Reagor          | LAC    | WR    | 25.8%     |   +288 |
+| Derius Davis          | LAC    | WR    | 25.7%     |   +288 |
 +-----------------------+--------+-------+-----------+--------+

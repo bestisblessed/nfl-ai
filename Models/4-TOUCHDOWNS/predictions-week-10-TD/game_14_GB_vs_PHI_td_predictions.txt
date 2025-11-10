@@ -2,19 +2,19 @@
 GB vs PHI | Week 10 2025 | Anytime TD Probabilities
 ================================================================================
 
-+-----------------+--------+-------+-----------+--------+
-| Player          | Team   | Pos   | TD Prob   |   Odds |
-+=================+========+=======+===========+========+
-| Josh Jacobs     | GB     | RB    | 47.7%     |   +110 |
-| A.J. Brown      | PHI    | WR    | 38.7%     |   +159 |
-| DeVonta Smith   | PHI    | WR    | 32.0%     |   +212 |
-| Saquon Barkley  | PHI    | RB    | 30.4%     |   +229 |
-| Romeo Doubs     | GB     | WR    | 28.8%     |   +248 |
-| Matthew Golden  | GB     | WR    | 27.8%     |   +259 |
-| Savion Williams | GB     | WR    | 27.1%     |   +269 |
-| Danny Gray      | PHI    | WR    | 26.9%     |   +271 |
-| Quez Watkins    | PHI    | WR    | 26.5%     |   +278 |
-| Mecole Hardman  | GB     | WR    | 26.4%     |   +278 |
-| Xavier Gipson   | PHI    | WR    | 26.4%     |   +279 |
-| Elijah Cooks    | PHI    | WR    | 26.3%     |   +280 |
-+-----------------+--------+-------+-----------+--------+
++-------------------+--------+-------+-----------+--------+
+| Player            | Team   | Pos   | TD Prob   |   Odds |
++===================+========+=======+===========+========+
+| Josh Jacobs       | GB     | RB    | 53.0%     |   -113 |
+| DeVonta Smith     | PHI    | WR    | 32.4%     |   +208 |
+| Romeo Doubs       | GB     | WR    | 29.2%     |   +243 |
+| Savion Williams   | GB     | WR    | 27.5%     |   +264 |
+| Danny Gray        | PHI    | WR    | 27.3%     |   +266 |
+| Quez Watkins      | PHI    | WR    | 26.8%     |   +273 |
+| Mecole Hardman    | GB     | WR    | 26.8%     |   +274 |
+| Xavier Gipson     | PHI    | WR    | 26.7%     |   +274 |
+| Javon Baker       | PHI    | WR    | 26.6%     |   +275 |
+| Elijah Cooks      | PHI    | WR    | 26.6%     |   +275 |
+| Israel Abanikanda | GB     | RB    | 26.6%     |   +277 |
+| Jahan Dotson      | PHI    | WR    | 25.9%     |   +286 |
++-------------------+--------+-------+-----------+--------+

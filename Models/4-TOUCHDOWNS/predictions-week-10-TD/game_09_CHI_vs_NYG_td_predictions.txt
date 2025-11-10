@@ -2,19 +2,19 @@
 CHI vs NYG | Week 10 2025 | Anytime TD Probabilities
 ================================================================================
 
-+---------------------+--------+-------+-----------+--------+
-| Player              | Team   | Pos   | TD Prob   |   Odds |
-+=====================+========+=======+===========+========+
-| D'Andre Swift       | CHI    | RB    | 53.1%     |   -113 |
-| DJ Moore            | CHI    | WR    | 39.0%     |   +156 |
-| Wan'Dale Robinson   | NYG    | WR    | 38.4%     |   +160 |
-| Rome Odunze         | CHI    | WR    | 38.4%     |   +161 |
-| Gunner Olszewski    | NYG    | WR    | 32.2%     |   +210 |
-| Olamide Zaccheaus   | CHI    | WR    | 32.0%     |   +212 |
-| Luther Burden III   | CHI    | WR    | 31.6%     |   +216 |
-| Ray-Ray McCloud     | NYG    | WR    | 31.5%     |   +218 |
-| Royce Freeman       | CHI    | RB    | 30.1%     |   +233 |
-| Kyle Monangai       | CHI    | RB    | 29.5%     |   +239 |
-| Darius Slayton      | NYG    | WR    | 29.4%     |   +240 |
-| Lil'Jordan Humphrey | NYG    | WR    | 29.0%     |   +244 |
-+---------------------+--------+-------+-----------+--------+
++----------------------+--------+-------+-----------+--------+
+| Player               | Team   | Pos   | TD Prob   |   Odds |
++======================+========+=======+===========+========+
+| DJ Moore             | CHI    | WR    | 39.5%     |   +153 |
+| Wan'Dale Robinson    | NYG    | WR    | 39.0%     |   +157 |
+| Rome Odunze          | CHI    | WR    | 38.9%     |   +157 |
+| Royce Freeman        | CHI    | RB    | 33.4%     |   +200 |
+| Kyle Monangai        | CHI    | RB    | 32.7%     |   +205 |
+| Gunner Olszewski     | NYG    | WR    | 32.7%     |   +206 |
+| Olamide Zaccheaus    | CHI    | WR    | 32.5%     |   +208 |
+| Ray-Ray McCloud      | NYG    | WR    | 31.9%     |   +213 |
+| Darius Slayton       | NYG    | WR    | 29.8%     |   +235 |
+| Lil'Jordan Humphrey  | NYG    | WR    | 29.4%     |   +240 |
+| Theo Johnson         | NYG    | TE    | 28.0%     |   +257 |
+| Ihmir Smith-Marsette | NYG    | WR    | 27.5%     |   +263 |
++----------------------+--------+-------+-----------+--------+

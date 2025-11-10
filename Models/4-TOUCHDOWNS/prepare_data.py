@@ -156,18 +156,21 @@ def build_upcoming_players():
     qb = qb.merge(qb_starters[["team", "full_name"]], on=["team", "full_name"], how="inner")
     r = pd.concat([non_qb, qb], ignore_index=True)
 
+    # Filter out injured players
     if not injured_df.empty:
         name_col = "player" if "player" in injured_df.columns else ("full_name" if "full_name" in injured_df.columns else None)
         if name_col:
             out_names = set(injured_df[name_col].astype(str).str.strip().tolist())
             r = r[~r["full_name"].astype(str).isin(out_names)]
 
-    r["injury_status"] = ""
+    # Filter out questionable players - REMOVE ENTIRELY, not just flag
     if not questionable_df.empty:
         qcol = "player" if "player" in questionable_df.columns else ("full_name" if "full_name" in questionable_df.columns else None)
         if qcol:
             q_names = set(questionable_df[qcol].astype(str).str.strip().tolist())
-            r.loc[r["full_name"].astype(str).isin(q_names), "injury_status"] = "Questionable"
+            r = r[~r["full_name"].astype(str).isin(q_names)]
+
+    r["injury_status"] = ""
 
     if "pfr_id" in r.columns:
         r["player_id"] = r["pfr_id"].astype(str) + ".htm"

@@ -5,16 +5,16 @@ MIA vs BUF | Week 10 2025 | Anytime TD Probabilities
 +-----------------------+--------+-------+-----------+--------+
 | Player                | Team   | Pos   | TD Prob   |   Odds |
 +=======================+========+=======+===========+========+
-| De'Von Achane         | MIA    | RB    | 42.4%     |   +136 |
-| Kristian Wilkerson    | BUF    | WR    | 42.4%     |   +136 |
-| Jaylen Waddle         | MIA    | WR    | 35.5%     |   +182 |
-| Malik Washington      | MIA    | WR    | 32.7%     |   +206 |
-| James Cook            | BUF    | RB    | 32.6%     |   +207 |
-| Khalil Shakir         | BUF    | WR    | 32.2%     |   +210 |
-| Nick Westbrook-Ikhine | MIA    | WR    | 30.8%     |   +224 |
-| Cedrick Wilson Jr.    | MIA    | WR    | 30.6%     |   +227 |
-| Keon Coleman          | BUF    | WR    | 29.5%     |   +239 |
-| Gabe Davis            | BUF    | WR    | 29.5%     |   +240 |
-| Tyrell Shavers        | BUF    | WR    | 28.8%     |   +247 |
-| Josh Palmer           | BUF    | WR    | 28.5%     |   +250 |
+| De'Von Achane         | MIA    | RB    | 47.1%     |   +112 |
+| Kristian Wilkerson    | BUF    | WR    | 42.9%     |   +133 |
+| James Cook            | BUF    | RB    | 36.2%     |   +176 |
+| Jaylen Waddle         | MIA    | WR    | 36.0%     |   +178 |
+| Malik Washington      | MIA    | WR    | 33.2%     |   +202 |
+| Khalil Shakir         | BUF    | WR    | 32.6%     |   +206 |
+| Nick Westbrook-Ikhine | MIA    | WR    | 31.2%     |   +220 |
+| Cedrick Wilson Jr.    | MIA    | WR    | 31.0%     |   +223 |
+| Keon Coleman          | BUF    | WR    | 29.9%     |   +235 |
+| Gabe Davis            | BUF    | WR    | 29.8%     |   +235 |
+| Tyrell Shavers        | BUF    | WR    | 29.2%     |   +242 |
+| Josh Palmer           | BUF    | WR    | 28.9%     |   +246 |
 +-----------------------+--------+-------+-----------+--------+

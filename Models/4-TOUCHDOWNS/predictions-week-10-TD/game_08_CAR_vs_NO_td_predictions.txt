@@ -5,16 +5,16 @@ CAR vs NO | Week 10 2025 | Anytime TD Probabilities
 +-------------------+--------+-------+-----------+--------+
 | Player            | Team   | Pos   | TD Prob   |   Odds |
 +===================+========+=======+===========+========+
-| Rico Dowdle       | CAR    | RB    | 54.7%     |   -121 |
-| Chris Olave       | NO     | WR    | 38.7%     |   +159 |
-| Chuba Hubbard     | CAR    | RB    | 37.4%     |   +168 |
-| Rashid Shaheed    | NO     | WR    | 36.1%     |   +177 |
-| Tetairoa McMillan | CAR    | WR    | 34.9%     |   +186 |
-| Xavier Legette    | CAR    | WR    | 31.4%     |   +218 |
-| Jalen Coker       | CAR    | WR    | 30.7%     |   +226 |
-| Ainias Smith      | CAR    | WR    | 30.3%     |   +230 |
-| Hunter Renfrow    | CAR    | WR    | 29.1%     |   +244 |
-| Alvin Kamara      | NO     | RB    | 29.0%     |   +245 |
-| Brycen Tremayne   | CAR    | WR    | 28.2%     |   +254 |
-| Audric Estimé     | NO     | RB    | 27.9%     |   +259 |
+| Chuba Hubbard     | CAR    | RB    | 41.5%     |   +141 |
+| Chris Olave       | NO     | WR    | 39.2%     |   +155 |
+| Rashid Shaheed    | NO     | WR    | 36.6%     |   +173 |
+| Tetairoa McMillan | CAR    | WR    | 35.4%     |   +183 |
+| Alvin Kamara      | NO     | RB    | 32.2%     |   +211 |
+| Xavier Legette    | CAR    | WR    | 31.8%     |   +214 |
+| Jalen Coker       | CAR    | WR    | 31.1%     |   +222 |
+| Audric Estimé     | NO     | RB    | 30.9%     |   +223 |
+| Ainias Smith      | CAR    | WR    | 30.8%     |   +225 |
+| Hunter Renfrow    | CAR    | WR    | 29.5%     |   +239 |
+| Brycen Tremayne   | CAR    | WR    | 28.6%     |   +250 |
+| Brandin Cooks     | NO     | WR    | 28.0%     |   +257 |
 +-------------------+--------+-------+-----------+--------+
