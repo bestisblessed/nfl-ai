@@ -523,7 +523,7 @@ st.divider()
 # 3. Position-specific prop trends and distributions
 if player_name is not None:
     if player_position == 'QB':
-        st.subheader(f"Passing Yard Trend for {player_name}:")
+        st.subheader(f"Pass Attempts and Completions (Last 10 Games) for {player_name}:")
     else:
         st.subheader(f"Longest Receptions for {player_name}:")
 else:
@@ -545,16 +545,74 @@ def plot_last_20_games_prop_trend(player_name, player_position=None):
         if not non_null_positions.empty:
             player_position = non_null_positions.iloc[-1]
 
+    # Create columns with spacing between graph and table
+    graph_col, spacer_col, table_col = st.columns([3.5, 0.05, 1])
+
+    # QB: show Attempts vs Completions over last 10 games
     if player_position == 'QB':
-        metric_column = 'pass_yds'
-        metric_label = 'Passing Yards'
-        metric_color = '#FFA500'
-        table_columns = ['game_id', 'pass_yds', 'pass_td', 'pass_int']
-    else:
-        metric_column = 'rec_long'
-        metric_label = 'Longest Reception (yards)'
-        metric_color = '#800080'
-        table_columns = ['game_id', 'rec_long']
+        # Keep original order by game for the timeline
+        recent_games = recent_games.drop_duplicates(subset=['game_id']).sort_values(by='game_id', ascending=True)
+
+        with graph_col:
+            fig = go.Figure()
+            # Attempts
+            if 'pass_att' in recent_games.columns:
+                fig.add_trace(go.Scatter(
+                    x=recent_games['game_id'],
+                    y=recent_games['pass_att'],
+                    mode='lines+markers+text',
+                    name='Attempts',
+                    marker=dict(color='#888888'),
+                    text=recent_games['pass_att'].fillna(0).astype(int),
+                    textposition='top center',
+                    textfont=dict(color='#888888', size=12)
+                ))
+            # Completions
+            if 'pass_cmp' in recent_games.columns:
+                fig.add_trace(go.Scatter(
+                    x=recent_games['game_id'],
+                    y=recent_games['pass_cmp'],
+                    mode='lines+markers+text',
+                    name='Completions',
+                    marker=dict(color='#1F77B4'),
+                    text=recent_games['pass_cmp'].fillna(0).astype(int),
+                    textposition='top center',
+                    textfont=dict(color='#1F77B4', size=12)
+                ))
+
+            fig.update_layout(
+                xaxis_title='Game ID',
+                yaxis_title='Attempts / Completions',
+                xaxis_tickangle=-90,
+                template='plotly_dark',
+                height=500,
+                legend_title=''
+            )
+            st.plotly_chart(fig, use_container_width=True)
+
+        with spacer_col:
+            st.write("")
+
+        with table_col:
+            st.markdown("")
+            st.markdown("")
+            st.markdown(" ")
+            st.markdown(" ")
+            st.markdown(" ")
+            st.markdown(" ")
+            st.write("")
+            st.write("")
+            table_columns = ['game_id', 'pass_att', 'pass_cmp', 'pass_yds']
+            available_columns = [col for col in table_columns if col in recent_games.columns]
+            table_data = recent_games[available_columns].copy().iloc[::-1]
+            st.dataframe(table_data, use_container_width=True, height=350, hide_index=True)
+        return None
+
+    # Non-QB: keep longest reception trend
+    metric_column = 'rec_long'
+    metric_label = 'Longest Reception (yards)'
+    metric_color = '#800080'
+    table_columns = ['game_id', 'rec_long']
 
     if metric_column not in recent_games.columns:
         return None
@@ -562,10 +620,7 @@ def plot_last_20_games_prop_trend(player_name, player_position=None):
     # Filter to games with relevant data
     recent_games = recent_games.dropna(subset=[metric_column])
     recent_games = recent_games.drop_duplicates(subset=['game_id']).sort_values(by='game_id', ascending=True)
-    
-    # Create columns with spacing between graph and table
-    graph_col, spacer_col, table_col = st.columns([3.5, 0.05, 1])
-    
+
     with graph_col:
         fig = go.Figure()
         fig.add_trace(go.Scatter(
@@ -583,16 +638,14 @@ def plot_last_20_games_prop_trend(player_name, player_position=None):
             yaxis_title=metric_label,
             xaxis_tickangle=-90,
             template='plotly_dark',
-            height=500,  # Fixed height for better tiling
+            height=500,
         )
         st.plotly_chart(fig, use_container_width=True)
-    
+
     with spacer_col:
-        st.write("")  # Empty spacer column
-    
+        st.write("")
+
     with table_col:
-        # st.markdown("**Game Data**")
-        # Display only essential columns for the narrow table
         st.markdown("")
         st.markdown("")
         st.markdown(" ")
@@ -603,7 +656,6 @@ def plot_last_20_games_prop_trend(player_name, player_position=None):
         st.write("")
         available_columns = [col for col in table_columns if col in recent_games.columns]
         table_data = recent_games[available_columns].copy()
-        # Reverse order to show most recent games first
         table_data = table_data.iloc[::-1]
         st.dataframe(table_data, use_container_width=True, height=350, hide_index=True)
 
