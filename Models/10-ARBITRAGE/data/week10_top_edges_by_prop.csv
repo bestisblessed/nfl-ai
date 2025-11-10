@@ -97,51 +97,45 @@ Jalen Coker,WR,CAR,NO,Receiving Yards,player_reception_yds,30.944202,Over,10.5,-
 Dyami Brown,WR,JAX,HOU,Receiving Yards,player_reception_yds,25.861439,Over,5.5,-114.0,FanDuel,20.361439,Houston Texans,Jacksonville Jaguars
 Cooper Kupp,WR,SEA,ARI,Receiving Yards,player_reception_yds,42.88751,Over,23.5,-120.0,ESPN BET,19.38751,Seattle Seahawks,Arizona Cardinals
 DeAndre Hopkins,WR,BAL,MIN,Receiving Yards,player_reception_yds,26.883554,Over,7.5,120.0,Bovada,19.383554,Minnesota Vikings,Baltimore Ravens
-Justin Fields,QB,NYJ,CLE,Rushing Yards,player_rush_yds,23.484646,Under,40.5,-120.0,betPARX,17.015354,New York Jets,Cleveland Browns
-Jalen Hurts,QB,PHI,GB,Rushing Yards,player_rush_yds,14.409587,Under,29.5,-113.0,betPARX,15.090413,Green Bay Packers,Philadelphia Eagles
-Jaxson Dart,QB,NYG,CHI,Rushing Yards,player_rush_yds,49.13795,Under,63.5,-118.0,FanDuel,14.362050000000004,Chicago Bears,New York Giants
-Jacoby Brissett,QB,ARI,SEA,Rushing Yards,player_rush_yds,2.522266,Under,14.5,-118.0,FanDuel,11.977734,Seattle Seahawks,Arizona Cardinals
-Josh Allen,QB,BUF,MIA,Rushing Yards,player_rush_yds,25.864578,Over,14.5,-115.0,ESPN BET,11.364578000000002,Miami Dolphins,Buffalo Bills
+Justin Fields,QB,NYJ,CLE,Rushing Yards,player_rush_yds,23.484646,Under,37.5,107.0,Pinnacle,14.015353999999999,New York Jets,Cleveland Browns
+Jaxson Dart,QB,NYG,CHI,Rushing Yards,player_rush_yds,49.13795,Over,36.5,-137.0,Pinnacle,12.637949999999996,Chicago Bears,New York Giants
+Jalen Hurts,QB,PHI,GB,Rushing Yards,player_rush_yds,14.409587,Under,26.5,-104.0,Pinnacle,12.090413,Green Bay Packers,Philadelphia Eagles
+Jacoby Brissett,QB,ARI,SEA,Rushing Yards,player_rush_yds,2.522266,Under,14.5,-119.0,Pinnacle,11.977734,Seattle Seahawks,Arizona Cardinals
 Lamar Jackson,QB,BAL,MIN,Rushing Yards,player_rush_yds,27.732555,Under,38.5,-133.0,Pinnacle,10.767444999999999,Minnesota Vikings,Baltimore Ravens
 Baker Mayfield,QB,TB,NE,Rushing Yards,player_rush_yds,5.786311,Under,16.5,-109.0,Pinnacle,10.713688999999999,Tampa Bay Buccaneers,New England Patriots
-Mac Jones,QB,SF,LAR,Rushing Yards,player_rush_yds,16.869123,Over,6.5,-108.0,DraftKings,10.369122999999998,San Francisco 49ers,Los Angeles Rams
-Caleb Williams,QB,CHI,NYG,Rushing Yards,player_rush_yds,20.718231,Over,11.5,-122.0,betPARX,9.218231,Chicago Bears,New York Giants
-Dillon Gabriel,QB,CLE,NYJ,Rushing Yards,player_rush_yds,3.3022072,Under,10.5,-115.0,DraftKings,7.1977928,New York Jets,Cleveland Browns
-Trevor Lawrence,QB,JAX,HOU,Rushing Yards,player_rush_yds,18.051952,Over,11.5,-130.0,Fliff,6.551952,Houston Texans,Jacksonville Jaguars
 Tyler Shough,QB,NO,CAR,Rushing Yards,player_rush_yds,5.1182756,Under,11.5,-106.0,Pinnacle,6.3817244,Carolina Panthers,New Orleans Saints
-Marcus Mariota,QB,WAS,DET,Rushing Yards,player_rush_yds,23.43508,Under,29.5,-114.0,BetOnline.ag,6.064920000000001,Washington Commanders,Detroit Lions
-Drake Maye,QB,NE,TB,Rushing Yards,player_rush_yds,24.653158,Over,20.5,-115.0,Fliff,4.153158000000001,Tampa Bay Buccaneers,New England Patriots
-Jordan Love,QB,GB,PHI,Rushing Yards,player_rush_yds,6.7913547,Under,10.5,-110.0,ESPN BET,3.7086452999999997,Green Bay Packers,Philadelphia Eagles
-Sam Darnold,QB,SEA,ARI,Rushing Yards,player_rush_yds,1.9706064,Under,5.5,-112.0,DraftKings,3.5293935999999997,Seattle Seahawks,Arizona Cardinals
-Aaron Rodgers,QB,PIT,LAC,Rushing Yards,player_rush_yds,2.8672402,Over,0.5,-115.0,Hard Rock Bet,2.3672402,Los Angeles Chargers,Pittsburgh Steelers
+Caleb Williams,QB,CHI,NYG,Rushing Yards,player_rush_yds,20.718231,Over,16.5,-142.0,Pinnacle,4.218230999999999,Chicago Bears,New York Giants
+Drake Maye,QB,NE,TB,Rushing Yards,player_rush_yds,24.653158,Under,28.5,110.0,Pinnacle,3.8468419999999988,Tampa Bay Buccaneers,New England Patriots
+Jordan Love,QB,GB,PHI,Rushing Yards,player_rush_yds,6.7913547,Under,10.5,-115.0,Pinnacle,3.7086452999999997,Green Bay Packers,Philadelphia Eagles
+Trevor Lawrence,QB,JAX,HOU,Rushing Yards,player_rush_yds,18.051952,Over,14.5,-116.0,Pinnacle,3.551952,Houston Texans,Jacksonville Jaguars
+Marcus Mariota,QB,WAS,DET,Rushing Yards,player_rush_yds,23.43508,Under,26.5,101.0,Pinnacle,3.0649200000000008,Washington Commanders,Detroit Lions
+Aaron Rodgers,QB,PIT,LAC,Rushing Yards,player_rush_yds,2.8672402,Over,0.5,-132.0,Pinnacle,2.3672402,Los Angeles Chargers,Pittsburgh Steelers
 J.J. McCarthy,QB,MIN,BAL,Rushing Yards,player_rush_yds,20.86238,Over,18.5,-122.0,Pinnacle,2.3623800000000017,Minnesota Vikings,Baltimore Ravens
-Bryce Young,QB,CAR,NO,Rushing Yards,player_rush_yds,7.38689,Under,9.5,-115.0,ESPN BET,2.11311,Carolina Panthers,New Orleans Saints
-Justin Herbert,QB,LAC,PIT,Rushing Yards,player_rush_yds,24.50895,Over,22.5,-118.0,BetMGM,2.0089499999999987,Los Angeles Chargers,Pittsburgh Steelers
-Matthew Stafford,QB,LAR,SF,Rushing Yards,player_rush_yds,-1.4112592,Under,0.5,-142.0,FanDuel,1.9112592,San Francisco 49ers,Los Angeles Rams
-Tua Tagovailoa,QB,MIA,BUF,Rushing Yards,player_rush_yds,2.3062468,Over,0.5,150.0,Bovada,1.8062467999999998,Miami Dolphins,Buffalo Bills
-Jared Goff,QB,DET,WAS,Rushing Yards,player_rush_yds,-0.16746801,Under,0.5,-165.0,Hard Rock Bet,0.66746801,Washington Commanders,Detroit Lions
-James Cook,RB,BUF,MIA,Rushing Yards,player_rush_yds,93.72789,Over,44.5,-110.0,ESPN BET,49.22789,Miami Dolphins,Buffalo Bills
-Chuba Hubbard,RB,CAR,NO,Rushing Yards,player_rush_yds,50.498276,Over,12.5,-110.0,DraftKings,37.998276,Carolina Panthers,New Orleans Saints
-D'Andre Swift,RB,CHI,NYG,Rushing Yards,player_rush_yds,52.058113,Under,81.5,-115.0,Fliff,29.441887,Chicago Bears,New York Giants
-De'Von Achane,RB,MIA,BUF,Rushing Yards,player_rush_yds,71.64161,Under,100.5,-115.0,Hard Rock Bet,28.85839,Miami Dolphins,Buffalo Bills
-Aaron Jones,RB,MIN,BAL,Rushing Yards,player_rush_yds,27.89422,Under,56.5,-115.0,Fliff,28.60578,Minnesota Vikings,Baltimore Ravens
-Nick Chubb,RB,HOU,JAX,Rushing Yards,player_rush_yds,38.932087,Over,10.5,-115.0,Fliff,28.432087000000003,Houston Texans,Jacksonville Jaguars
-Kimani Vidal,RB,LAC,PIT,Rushing Yards,player_rush_yds,26.662247,Under,51.5,-115.0,betPARX,24.837753,Los Angeles Chargers,Pittsburgh Steelers
-Jordan Mason,RB,MIN,BAL,Rushing Yards,player_rush_yds,28.26512,Over,5.5,100.0,Bovada,22.76512,Minnesota Vikings,Baltimore Ravens
+Bryce Young,QB,CAR,NO,Rushing Yards,player_rush_yds,7.38689,Under,8.5,105.0,Pinnacle,1.1131099999999998,Carolina Panthers,New Orleans Saints
+Justin Herbert,QB,LAC,PIT,Rushing Yards,player_rush_yds,24.50895,Over,23.5,-134.0,Pinnacle,1.0089499999999987,Los Angeles Chargers,Pittsburgh Steelers
+Josh Allen,QB,BUF,MIA,Rushing Yards,player_rush_yds,25.864578,Under,26.5,104.0,Pinnacle,0.6354219999999984,Miami Dolphins,Buffalo Bills
+Chuba Hubbard,RB,CAR,NO,Rushing Yards,player_rush_yds,50.498276,Over,20.5,-128.0,Pinnacle,29.998275999999997,Carolina Panthers,New Orleans Saints
+Kimani Vidal,RB,LAC,PIT,Rushing Yards,player_rush_yds,26.662247,Under,49.5,-123.0,Pinnacle,22.837753,Los Angeles Chargers,Pittsburgh Steelers
 Tyrone Tracy Jr.,RB,NYG,CHI,Rushing Yards,player_rush_yds,24.488108,Under,45.5,-110.0,Pinnacle,21.011892,Chicago Bears,New York Giants
 Devin Singletary,RB,NYG,CHI,Rushing Yards,player_rush_yds,12.993026,Under,32.5,107.0,Pinnacle,19.506974,Chicago Bears,New York Giants
 Kyren Williams,RB,LAR,SF,Rushing Yards,player_rush_yds,81.4874,Over,63.5,-112.0,Pinnacle,17.987399999999994,San Francisco 49ers,Los Angeles Rams
-Saquon Barkley,RB,PHI,GB,Rushing Yards,player_rush_yds,59.547253,Under,77.5,-110.0,BetMGM,17.952747000000002,Green Bay Packers,Philadelphia Eagles
-Rachaad White,RB,TB,NE,Rushing Yards,player_rush_yds,44.517757,Over,28.5,-120.0,DraftKings,16.017757000000003,Tampa Bay Buccaneers,New England Patriots
-Christian McCaffrey,RB,SF,LAR,Rushing Yards,player_rush_yds,76.05652,Over,61.5,-112.0,Bally Bet,14.556520000000006,San Francisco 49ers,Los Angeles Rams
-Sean Tucker,RB,TB,NE,Rushing Yards,player_rush_yds,18.446634,Under,32.5,-120.0,Hard Rock Bet,14.053366,Tampa Bay Buccaneers,New England Patriots
-Derrick Henry,RB,BAL,MIN,Rushing Yards,player_rush_yds,79.241776,Over,65.5,-114.0,FanDuel,13.741776000000002,Minnesota Vikings,Baltimore Ravens
+Saquon Barkley,RB,PHI,GB,Rushing Yards,player_rush_yds,59.547253,Under,76.5,-129.0,Pinnacle,16.952747000000002,Green Bay Packers,Philadelphia Eagles
 Emari Demercado,RB,ARI,SEA,Rushing Yards,player_rush_yds,22.345638,Under,35.5,-104.0,Pinnacle,13.154361999999999,Seattle Seahawks,Arizona Cardinals
-Alvin Kamara,RB,NO,CAR,Rushing Yards,player_rush_yds,33.548035,Under,46.5,-122.0,betPARX,12.951965000000001,Carolina Panthers,New Orleans Saints
+Aaron Jones,RB,MIN,BAL,Rushing Yards,player_rush_yds,27.89422,Under,40.5,-129.0,Pinnacle,12.60578,Minnesota Vikings,Baltimore Ravens
+Christian McCaffrey,RB,SF,LAR,Rushing Yards,player_rush_yds,76.05652,Over,63.5,-118.0,Pinnacle,12.556520000000006,San Francisco 49ers,Los Angeles Rams
 Rico Dowdle,RB,CAR,NO,Rushing Yards,player_rush_yds,79.73984,Under,91.5,109.0,Pinnacle,11.760159999999999,Carolina Panthers,New Orleans Saints
-Breece Hall,RB,NYJ,CLE,Rushing Yards,player_rush_yds,66.9043,Over,57.5,-110.0,FanDuel,9.404300000000006,New York Jets,Cleveland Browns
-Emanuel Wilson,RB,GB,PHI,Rushing Yards,player_rush_yds,26.250843,Over,19.5,-110.0,betPARX,6.750843,Green Bay Packers,Philadelphia Eagles
-Blake Corum,RB,LAR,SF,Rushing Yards,player_rush_yds,34.153416,Over,27.5,-112.0,FanDuel,6.653416,San Francisco 49ers,Los Angeles Rams
+James Cook,RB,BUF,MIA,Rushing Yards,player_rush_yds,93.72789,Over,85.5,109.0,Pinnacle,8.227890000000002,Miami Dolphins,Buffalo Bills
+Blake Corum,RB,LAR,SF,Rushing Yards,player_rush_yds,34.153416,Over,27.5,-113.0,Pinnacle,6.653416,San Francisco 49ers,Los Angeles Rams
+De'Von Achane,RB,MIA,BUF,Rushing Yards,player_rush_yds,71.64161,Over,65.5,-111.0,Pinnacle,6.14161,Miami Dolphins,Buffalo Bills
 Zach Charbonnet,RB,SEA,ARI,Rushing Yards,player_rush_yds,34.61128,Under,40.5,-120.0,Pinnacle,5.888719999999999,Seattle Seahawks,Arizona Cardinals
+Emanuel Wilson,RB,GB,PHI,Rushing Yards,player_rush_yds,26.250843,Over,20.5,108.0,Pinnacle,5.750843,Green Bay Packers,Philadelphia Eagles
 Jaylen Warren,RB,PIT,LAC,Rushing Yards,player_rush_yds,64.21959,Over,58.5,-112.0,Pinnacle,5.719589999999997,Los Angeles Chargers,Pittsburgh Steelers
-Keaton Mitchell,RB,BAL,MIN,Rushing Yards,player_rush_yds,32.6703,Under,37.5,-132.0,betPARX,4.8297000000000025,Minnesota Vikings,Baltimore Ravens
+Jordan Mason,RB,MIN,BAL,Rushing Yards,player_rush_yds,28.26512,Under,32.5,-110.0,Pinnacle,4.23488,Minnesota Vikings,Baltimore Ravens
+Alvin Kamara,RB,NO,CAR,Rushing Yards,player_rush_yds,33.548035,Under,37.5,-112.0,Pinnacle,3.9519650000000013,Carolina Panthers,New Orleans Saints
+Jahmyr Gibbs,RB,DET,WAS,Rushing Yards,player_rush_yds,73.551315,Over,70.5,-110.0,Pinnacle,3.0513150000000024,Washington Commanders,Detroit Lions
+Josh Jacobs,RB,GB,PHI,Rushing Yards,player_rush_yds,66.70685,Under,69.5,-115.0,Pinnacle,2.793149999999997,Green Bay Packers,Philadelphia Eagles
+Nick Chubb,RB,HOU,JAX,Rushing Yards,player_rush_yds,38.932087,Over,36.5,104.0,Pinnacle,2.4320870000000028,Houston Texans,Jacksonville Jaguars
+Breece Hall,RB,NYJ,CLE,Rushing Yards,player_rush_yds,66.9043,Over,64.5,105.0,Pinnacle,2.4043000000000063,New York Jets,Cleveland Browns
+Kenneth Walker III,RB,SEA,ARI,Rushing Yards,player_rush_yds,56.62326,Over,54.5,-117.0,Pinnacle,2.123260000000002,Seattle Seahawks,Arizona Cardinals
+D'Andre Swift,RB,CHI,NYG,Rushing Yards,player_rush_yds,52.058113,Over,50.5,-146.0,Pinnacle,1.5581129999999987,Chicago Bears,New York Giants
+Kenneth Gainwell,RB,PIT,LAC,Rushing Yards,player_rush_yds,15.149143,Under,16.5,-110.0,Pinnacle,1.3508569999999995,Los Angeles Chargers,Pittsburgh Steelers

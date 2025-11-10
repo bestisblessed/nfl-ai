@@ -29,10 +29,29 @@ import pandas as pd
 def get_file_paths(week):
     from datetime import datetime
     current_date = datetime.now().strftime("%Y-%m-%d")
+    # Try fixed file first (with corrected rushing props), fall back to original
+    import os
+    props_fixed = f"data/week{week}_props_{current_date}_fixed.csv"
+    props_original = f"data/week{week}_props_{current_date}.csv"
+    # Check previous day's file as well
+    from datetime import timedelta
+    prev_date = (datetime.now() - timedelta(days=1)).strftime("%Y-%m-%d")
+    props_prev_fixed = f"data/week{week}_props_{prev_date}_fixed.csv"
+    props_prev_original = f"data/week{week}_props_{prev_date}.csv"
+    
+    if os.path.exists(props_fixed):
+        props_file = props_fixed
+    elif os.path.exists(props_prev_fixed):
+        props_file = props_prev_fixed
+    elif os.path.exists(props_original):
+        props_file = props_original
+    else:
+        props_file = props_prev_original
+    
     return {
         "predictions_primary": f"0-FINAL-REPORTS/week{week}_all_props_summary.csv",
         "predictions_fallback": f"../0-FINAL-REPORTS/week{week}_all_props_summary.csv",
-        "props": f"data/week{week}_props_{current_date}.csv",
+        "props": props_file,
         "output_full": f"data/week{week}_value_opportunities.csv",
         "output_top": f"data/week{week}_top_edges_by_prop.csv"
     }
