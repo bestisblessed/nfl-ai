@@ -55,6 +55,7 @@ echo "Cleaning Week $WEEK..."
 rm -rf 1-PASSING-YARDS/predictions-week-$WEEK-QB
 rm -rf 2-RECEIVING-YARDS/predictions-week-$WEEK-*
 rm -rf 3-RUSHING-YARDS/predictions-week-$WEEK-*
+# rm -rf 4-Touchdowns/predictions-week-$WEEK-TD
 rm -f 0-FINAL-REPORTS/week${WEEK}_*
 
 echo "Running Passing Model..."
@@ -86,6 +87,16 @@ if [ $? -ne 0 ]; then
 fi
 echo "✅ Rushing yards predictions complete"
 cd ..
+
+# echo "Running Anytime TD Model..."
+# cd 4-Touchdowns
+# ./run.sh $WEEK
+# if [ $? -ne 0 ]; then
+#     echo "Error: Anytime TD model failed"
+#     exit 1
+# fi
+# echo "✅ Anytime TD predictions complete"
+# cd ..
 
 echo "Generating Final Report..."
 python generate_final_report.py $WEEK
@@ -169,6 +180,7 @@ if [[ "$COMMIT" =~ ^[Yy]$ ]]; then
     git add 2-RECEIVING-YARDS/
     # git add 3-RUSHING-YARDS/predictions-week-${WEEK}-*
     git add 3-RUSHING-YARDS/
+    git add 10-ARBITRAGE/
     echo ""
     echo "📋 Copy and run this command to update remote:"
     echo "git commit -m \"UPDATED UPCOMING WEEK ${WEEK} MODEL & REPORTS\" && git push"
