@@ -28,11 +28,23 @@ import pandas as pd
 
 def get_file_paths(week):
     from datetime import datetime
+    import glob
     current_date = datetime.now().strftime("%Y-%m-%d")
+    
+    # Try to find the most recent props file (fallback to today's date, then yesterday, etc.)
+    props_pattern = f"data/week{week}_props_*.csv"
+    props_files = glob.glob(props_pattern)
+    if props_files:
+        # Use the most recent file
+        props_path = max(props_files, key=os.path.getmtime)
+    else:
+        # Fallback to today's date
+        props_path = f"data/week{week}_props_{current_date}.csv"
+    
     return {
         "predictions_primary": f"0-FINAL-REPORTS/week{week}_all_props_summary.csv",
         "predictions_fallback": f"../0-FINAL-REPORTS/week{week}_all_props_summary.csv",
-        "props": f"data/week{week}_props_{current_date}.csv",
+        "props": props_path,
         "output_full": f"data/week{week}_value_opportunities.csv",
         "output_top": f"data/week{week}_top_edges_by_prop.csv"
     }
@@ -108,6 +120,32 @@ def coerce_numeric(series: pd.Series) -> pd.Series:
     return s
 
 
+def validate_line(market: str, point: float) -> bool:
+    """
+    Validate that a line is within reasonable bounds for its market type.
+    Filters out lines that are likely mislabeled (e.g., rushing+receiving labeled as rushing).
+    
+    Returns True if line is valid, False if it should be filtered out.
+    """
+    if pd.isna(point):
+        return False
+    
+    # Define maximum reasonable lines for each market
+    # These are conservative upper bounds to catch mislabeled lines
+    # Lines above these thresholds are likely mislabeled (e.g., rushing+receiving labeled as rushing)
+    max_lines = {
+        "player_rush_yds": 75.0,  # RB/QB rushing - lines above 75 are suspicious (likely rushing+receiving)
+        "player_pass_yds": 400.0,  # QB passing - very high but possible
+        "player_reception_yds": 200.0,  # WR/TE/RB receiving - high but possible for elite WRs
+    }
+    
+    max_line = max_lines.get(market)
+    if max_line is None:
+        return True  # Unknown market, don't filter
+    
+    return point <= max_line
+
+
 def select_best_lines(df_props_filtered: pd.DataFrame) -> pd.DataFrame:
     """
     From props rows (per player/market/game), select best Over and best Under per rules.
@@ -118,6 +156,14 @@ def select_best_lines(df_props_filtered: pd.DataFrame) -> pd.DataFrame:
     dfp = df_props_filtered.copy()
     dfp["point"] = coerce_numeric(dfp["point"])
     dfp = dfp.dropna(subset=["point"])
+    
+    # Filter out lines that exceed reasonable bounds (likely mislabeled)
+    before_count = len(dfp)
+    dfp = dfp[dfp.apply(lambda row: validate_line(row["market"], row["point"]), axis=1)].copy()
+    after_count = len(dfp)
+    if before_count > after_count:
+        filtered_count = before_count - after_count
+        print(f"  Filtered {filtered_count} lines that exceeded reasonable bounds (likely mislabeled)")
 
     # Sort to apply tie-breakers (price descending favors higher American odds)
     over_sorted = dfp[dfp["outcome"].str.lower() == "over"].sort_values(
