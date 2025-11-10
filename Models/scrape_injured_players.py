@@ -1,5 +1,7 @@
+import os
 from playwright.sync_api import sync_playwright
 import pandas as pd
+
 
 p = sync_playwright().start()
 browser = p.chromium.launch(headless=True)
@@ -40,9 +42,18 @@ res = page.evaluate(
 browser.close()
 p.stop()
 
-pd.DataFrame({"full_name": res["included"]}).to_csv("/Users/td/Code/nfl-ai/Models/injured_players.csv", index=False)
-pd.DataFrame({"full_name": res["excluded"]}).to_csv("/Users/td/Code/nfl-ai/Models/questionable_players.csv", index=False)
-print("Wrote", len(res["included"]), "players to /Users/td/Code/nfl-ai/Models/injured_players.csv")
-print("Wrote", len(res["excluded"]), "players to /Users/td/Code/nfl-ai/Models/questionable_players.csv")
+output_dir = os.path.dirname(__file__)
+injured_path = os.path.join(output_dir, "injured_players.csv")
+questionable_path = os.path.join(output_dir, "questionable_players.csv")
+os.makedirs(output_dir, exist_ok=True)
+
+pd.DataFrame({"full_name": res["included"]}).to_csv(injured_path, index=False)
+pd.DataFrame({"full_name": res["excluded"]}).to_csv(questionable_path, index=False)
+print(
+    f"Wrote {len(res['included'])} players to {injured_path}"
+)
+print(
+    f"Wrote {len(res['excluded'])} players to {questionable_path}"
+)
 
 

@@ -31,13 +31,28 @@ os.makedirs(output_dir, exist_ok=True)
 hist = pd.read_csv("data/model_train.csv")
 upcoming = pd.read_csv("data/upcoming_games.csv")
 rosters = pd.read_csv("data/roster_2025.csv")
-injured = None
-injured_path = "data/injured_players.csv"
-if os.path.exists(injured_path):
-    try:
-        injured = pd.read_csv(injured_path)["full_name"].dropna().astype(str).str.strip().tolist()
-    except Exception:
-        injured = None
+injured = []
+for injured_path in [
+    "data/injured_players.csv",
+    "injured_players.csv",
+    "../injured_players.csv",
+    "../data/injured_players.csv",
+]:
+    if os.path.exists(injured_path):
+        try:
+            injured = (
+                pd.read_csv(injured_path)["full_name"]
+                .dropna()
+                .astype(str)
+                .str.strip()
+                .tolist()
+            )
+            if injured:
+                print(f"Loaded {len(injured)} injured players from {injured_path}")
+            break
+        except Exception as exc:
+            print(f"Warning: failed to load injured players from {injured_path}: {exc}")
+            injured = []
 
 # Numeric
 for col in ["rush_attempts", "rush_yards", "season", "week"]:
