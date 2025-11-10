@@ -226,8 +226,37 @@ if selected_game != "All Games":
         display_df["Pred"] = display_df["Pred"].round(1)
         display_df["Edge"] = display_df["Edge"].round(1)
         
+        # Reorder columns to put Book last
+        display_df = display_df[["#", "Player", "Pos", "Team", "Opp", "Side", "Line", "Odds", "Pred", "Edge", "Book"]]
+        
+        # Add emoji indicators to Side column
+        def format_side_with_emoji(side_value):
+            if pd.isna(side_value) or side_value == "-":
+                return "-"
+            side_str = str(side_value).strip().upper()
+            if side_str == "OVER":
+                return "Over  ⬆️"
+            elif side_str == "UNDER":
+                return "Under  ⬇️"
+            return str(side_value)
+        
+        display_df["Side"] = display_df["Side"].apply(format_side_with_emoji)
+        
+        # Apply color styling to Side column using pandas Styler
+        def style_side_cell(val):
+            if pd.isna(val) or val == "-":
+                return 'color: #666;'
+            val_str = str(val).upper()
+            if "OVER" in val_str:
+                return 'color: #2e7d32; font-weight: 500;'
+            elif "UNDER" in val_str:
+                return 'color: #c62828; font-weight: 500;'
+            return ''
+        
+        styled_df = display_df.style.applymap(style_side_cell, subset=["Side"])
+        
         st.dataframe(
-            display_df,
+            styled_df,
             use_container_width=True,
             hide_index=True,
             column_config={
@@ -308,8 +337,37 @@ else:
             display_df["Best Price"] = display_df["Best Price"].round().astype("Int64")
             display_df["Edge (Yards)"] = display_df["Edge (Yards)"].round(2)
             
+            # Reorder columns to put Sportsbook last
+            display_df = display_df[["#", "Player", "Pos", "Team", "Opponent", "Side", "Model Projection", "Best Line", "Best Price", "Edge (Yards)", "Sportsbook"]]
+            
+            # Add emoji indicators to Side column
+            def format_side_with_emoji(side_value):
+                if pd.isna(side_value) or side_value == "-":
+                    return "-"
+                side_str = str(side_value).strip().upper()
+                if side_str == "OVER":
+                    return "Over  ⬆️"
+                elif side_str == "UNDER":
+                    return "Under  ⬇️"
+                return str(side_value)
+            
+            display_df["Side"] = display_df["Side"].apply(format_side_with_emoji)
+            
+            # Apply color styling to Side column using pandas Styler
+            def style_side_cell(val):
+                if pd.isna(val) or val == "-":
+                    return 'color: #666;'
+                val_str = str(val).upper()
+                if "OVER" in val_str:
+                    return 'color: #2e7d32; font-weight: 500;'
+                elif "UNDER" in val_str:
+                    return 'color: #c62828; font-weight: 500;'
+                return ''
+            
+            styled_df = display_df.style.applymap(style_side_cell, subset=["Side"])
+            
             st.dataframe(
-                display_df,
+                styled_df,
                 use_container_width=True,
                 height=800,
                 hide_index=True,
