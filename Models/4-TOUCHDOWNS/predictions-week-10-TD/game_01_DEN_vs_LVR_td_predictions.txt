@@ -1,0 +1,20 @@
+================================================================================
+DEN vs LVR | Week 10 2025 | Anytime TD Probabilities
+================================================================================
+
++-------------------+--------+-------+-----------+--------+--------------+
+| Player            | Team   | Pos   | TD Prob   |   Odds | Injury       |
++===================+========+=======+===========+========+==============+
+| Courtland Sutton  | DEN    | WR    | 40.2%     |   +149 | nan          |
+| J.K. Dobbins      | DEN    | RB    | 36.2%     |   +176 | nan          |
+| Marvin Mims Jr.   | DEN    | WR    | 32.1%     |   +212 | Questionable |
+| A.T. Perry        | DEN    | WR    | 30.3%     |   +230 | nan          |
+| Troy Franklin     | DEN    | WR    | 29.2%     |   +242 | nan          |
+| Pat Bryant        | DEN    | WR    | 28.5%     |   +251 | nan          |
+| RJ Harvey         | DEN    | RB    | 28.3%     |   +254 | nan          |
+| Samori Toure      | DEN    | WR    | 27.9%     |   +259 | nan          |
+| Michael Bandy     | DEN    | WR    | 25.3%     |   +295 | nan          |
+| Jaleel McLaughlin | DEN    | RB    | 25.2%     |   +297 | nan          |
+| Trent Sherfield   | DEN    | WR    | 24.9%     |   +302 | nan          |
+| Deuce Vaughn      | DEN    | RB    | 22.6%     |   +342 | nan          |
++-------------------+--------+-------+-----------+--------+--------------+

@@ -1,0 +1,20 @@
+================================================================================
+SEA vs ARI | Week 10 2025 | Anytime TD Probabilities
+================================================================================
+
++---------------------+--------+-------+-----------+--------+--------------+
+| Player              | Team   | Pos   | TD Prob   |   Odds | Injury       |
++=====================+========+=======+===========+========+==============+
+| Marvin Harrison Jr. | ARI    | WR    | 37.0%     |   +170 | nan          |
+| Zach Charbonnet     | SEA    | RB    | 36.1%     |   +177 | nan          |
+| AJ Barner           | SEA    | TE    | 31.3%     |   +219 | nan          |
+| Kenneth Walker III  | SEA    | RB    | 30.5%     |   +228 | nan          |
+| Myles Gaskin        | SEA    | RB    | 30.5%     |   +228 | nan          |
+| Zay Jones           | ARI    | WR    | 27.5%     |   +264 | nan          |
+| Jaxon Smith-Njigba  | SEA    | WR    | 26.7%     |   +274 | nan          |
+| Xavier Weaver       | ARI    | WR    | 26.2%     |   +282 | nan          |
+| Steven Sims         | SEA    | WR    | 26.1%     |   +283 | nan          |
+| Jalen Brooks        | ARI    | WR    | 25.8%     |   +287 | nan          |
+| Cooper Kupp         | SEA    | WR    | 25.8%     |   +288 | Questionable |
+| Simi Fehoko         | ARI    | WR    | 25.8%     |   +288 | nan          |
++---------------------+--------+-------+-----------+--------+--------------+

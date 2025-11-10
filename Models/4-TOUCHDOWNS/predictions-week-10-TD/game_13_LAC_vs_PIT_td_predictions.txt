@@ -1,0 +1,20 @@
+================================================================================
+LAC vs PIT | Week 10 2025 | Anytime TD Probabilities
+================================================================================
+
++-----------------------+--------+-------+-----------+--------+----------+
+| Player                | Team   | Pos   | TD Prob   |   Odds |   Injury |
++=======================+========+=======+===========+========+==========+
+| Keenan Allen          | LAC    | WR    | 41.7%     |   +140 |      nan |
+| Quentin Johnston      | LAC    | WR    | 40.2%     |   +149 |      nan |
+| Ladd McConkey         | LAC    | WR    | 38.8%     |   +157 |      nan |
+| Jaylen Warren         | PIT    | RB    | 32.0%     |   +213 |      nan |
+| Tre Harris            | LAC    | WR    | 29.5%     |   +239 |      nan |
+| Kimani Vidal          | LAC    | RB    | 28.7%     |   +249 |      nan |
+| Mike Williams         | LAC    | WR    | 26.8%     |   +274 |      nan |
+| DK Metcalf            | PIT    | WR    | 26.8%     |   +274 |      nan |
+| Roman Wilson          | PIT    | WR    | 26.0%     |   +284 |      nan |
+| Pat Freiermuth        | PIT    | TE    | 25.7%     |   +288 |      nan |
+| KeAndre Lambert-Smith | LAC    | WR    | 25.5%     |   +292 |      nan |
+| Jalen Reagor          | LAC    | WR    | 25.4%     |   +293 |      nan |
++-----------------------+--------+-------+-----------+--------+----------+

@@ -1,0 +1,20 @@
+================================================================================
+NYJ vs CLE | Week 10 2025 | Anytime TD Probabilities
+================================================================================
+
++-------------------+--------+-------+-----------+--------+--------------+
+| Player            | Team   | Pos   | TD Prob   |   Odds | Injury       |
++===================+========+=======+===========+========+==============+
+| Garrett Wilson    | NYJ    | WR    | 44.2%     |   +126 | Questionable |
+| Jerry Jeudy       | CLE    | WR    | 35.7%     |   +180 | nan          |
+| Harold Fannin Jr. | CLE    | TE    | 34.2%     |   +192 | nan          |
+| David Njoku       | CLE    | TE    | 32.3%     |   +210 | nan          |
+| Tyler Johnson     | NYJ    | WR    | 32.3%     |   +210 | nan          |
+| Diontae Johnson   | CLE    | WR    | 31.0%     |   +222 | nan          |
+| Quinshon Judkins  | CLE    | RB    | 30.5%     |   +228 | Questionable |
+| Trenton Irwin     | NYJ    | WR    | 29.3%     |   +241 | nan          |
+| Allen Lazard      | NYJ    | WR    | 29.1%     |   +244 | nan          |
+| John Metchie III  | NYJ    | WR    | 29.0%     |   +245 | nan          |
+| David Bell        | CLE    | WR    | 28.7%     |   +248 | nan          |
+| Isaiah Bond       | CLE    | WR    | 28.0%     |   +257 | Questionable |
++-------------------+--------+-------+-----------+--------+--------------+

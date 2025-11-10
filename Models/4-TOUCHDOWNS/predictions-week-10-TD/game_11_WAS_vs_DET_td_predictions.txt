@@ -1,0 +1,20 @@
+================================================================================
+WAS vs DET | Week 10 2025 | Anytime TD Probabilities
+================================================================================
+
++------------------------+--------+-------+-----------+--------+--------------+
+| Player                 | Team   | Pos   | TD Prob   |   Odds | Injury       |
++========================+========+=======+===========+========+==============+
+| Jahmyr Gibbs           | DET    | RB    | 45.4%     |   +120 | nan          |
+| David Montgomery       | DET    | RB    | 44.3%     |   +126 | nan          |
+| Terry McLaurin         | WAS    | WR    | 41.2%     |   +143 | Questionable |
+| Amon-Ra St. Brown      | DET    | WR    | 38.7%     |   +158 | nan          |
+| Jameson Williams       | DET    | WR    | 34.5%     |   +190 | nan          |
+| Deebo Samuel Sr.       | WAS    | WR    | 33.7%     |   +196 | nan          |
+| Sam LaPorta            | DET    | TE    | 32.4%     |   +208 | nan          |
+| Jacory Croskey-Merritt | WAS    | RB    | 30.7%     |   +225 | nan          |
+| Chris Moore            | WAS    | WR    | 30.4%     |   +229 | nan          |
+| K.J. Osborn            | WAS    | WR    | 29.9%     |   +235 | nan          |
+| Jaylin Lane            | WAS    | WR    | 29.1%     |   +243 | nan          |
+| Michael Gallup         | WAS    | WR    | 28.5%     |   +250 | nan          |
++------------------------+--------+-------+-----------+--------+--------------+

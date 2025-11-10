@@ -1,0 +1,20 @@
+================================================================================
+CHI vs NYG | Week 10 2025 | Anytime TD Probabilities
+================================================================================
+
++---------------------+--------+-------+-----------+--------+--------------+
+| Player              | Team   | Pos   | TD Prob   |   Odds | Injury       |
++=====================+========+=======+===========+========+==============+
+| D'Andre Swift       | CHI    | RB    | 53.1%     |   -113 | Questionable |
+| DJ Moore            | CHI    | WR    | 39.0%     |   +156 | nan          |
+| Wan'Dale Robinson   | NYG    | WR    | 38.4%     |   +160 | nan          |
+| Rome Odunze         | CHI    | WR    | 38.4%     |   +161 | nan          |
+| Gunner Olszewski    | NYG    | WR    | 32.2%     |   +210 | nan          |
+| Olamide Zaccheaus   | CHI    | WR    | 32.0%     |   +212 | nan          |
+| Luther Burden III   | CHI    | WR    | 31.6%     |   +216 | Questionable |
+| Ray-Ray McCloud     | NYG    | WR    | 31.5%     |   +218 | nan          |
+| Royce Freeman       | CHI    | RB    | 30.1%     |   +233 | nan          |
+| Kyle Monangai       | CHI    | RB    | 29.5%     |   +239 | nan          |
+| Darius Slayton      | NYG    | WR    | 29.4%     |   +240 | nan          |
+| Lil'Jordan Humphrey | NYG    | WR    | 29.0%     |   +244 | nan          |
++---------------------+--------+-------+-----------+--------+--------------+
