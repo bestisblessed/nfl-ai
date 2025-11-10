@@ -2,19 +2,19 @@
 IND vs ATL | Week 10 2025 | Anytime TD Probabilities
 ================================================================================
 
-+------------------+--------+-------+-----------+--------+--------------+
-| Player           | Team   | Pos   | TD Prob   |   Odds | Injury       |
-+==================+========+=======+===========+========+==============+
-| Jonathan Taylor  | IND    | RB    | 55.0%     |   -122 | nan          |
-| Drake London     | ATL    | WR    | 45.0%     |   +122 | nan          |
-| Jamal Agnew      | ATL    | WR    | 40.2%     |   +149 | nan          |
-| Michael Pittman  | IND    | WR    | 39.3%     |   +154 | nan          |
-| Josh Downs       | IND    | WR    | 36.9%     |   +171 | nan          |
-| Darnell Mooney   | ATL    | WR    | 32.0%     |   +212 | nan          |
-| Alec Pierce      | IND    | WR    | 29.6%     |   +238 | nan          |
-| Deven Thompkins  | ATL    | WR    | 29.3%     |   +242 | nan          |
-| Bijan Robinson   | ATL    | RB    | 29.0%     |   +245 | nan          |
-| Laquon Treadwell | IND    | WR    | 27.7%     |   +261 | nan          |
-| David Sills      | ATL    | WR    | 27.6%     |   +262 | nan          |
-| Casey Washington | ATL    | WR    | 26.7%     |   +275 | Questionable |
-+------------------+--------+-------+-----------+--------+--------------+
++------------------+--------+-------+-----------+--------+
+| Player           | Team   | Pos   | TD Prob   |   Odds |
++==================+========+=======+===========+========+
+| Jonathan Taylor  | IND    | RB    | 55.0%     |   -122 |
+| Drake London     | ATL    | WR    | 45.0%     |   +122 |
+| Jamal Agnew      | ATL    | WR    | 40.2%     |   +149 |
+| Michael Pittman  | IND    | WR    | 39.3%     |   +154 |
+| Josh Downs       | IND    | WR    | 36.9%     |   +171 |
+| Darnell Mooney   | ATL    | WR    | 32.0%     |   +212 |
+| Alec Pierce      | IND    | WR    | 29.6%     |   +238 |
+| Deven Thompkins  | ATL    | WR    | 29.3%     |   +242 |
+| Bijan Robinson   | ATL    | RB    | 29.0%     |   +245 |
+| Laquon Treadwell | IND    | WR    | 27.7%     |   +261 |
+| David Sills      | ATL    | WR    | 27.6%     |   +262 |
+| Casey Washington | ATL    | WR    | 26.7%     |   +275 |
++------------------+--------+-------+-----------+--------+

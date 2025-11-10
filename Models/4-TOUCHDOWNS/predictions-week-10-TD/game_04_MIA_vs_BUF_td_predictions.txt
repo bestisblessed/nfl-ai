@@ -2,19 +2,19 @@
 MIA vs BUF | Week 10 2025 | Anytime TD Probabilities
 ================================================================================
 
-+-----------------------+--------+-------+-----------+--------+----------+
-| Player                | Team   | Pos   | TD Prob   |   Odds |   Injury |
-+=======================+========+=======+===========+========+==========+
-| De'Von Achane         | MIA    | RB    | 42.4%     |   +136 |      nan |
-| Kristian Wilkerson    | BUF    | WR    | 42.4%     |   +136 |      nan |
-| Jaylen Waddle         | MIA    | WR    | 35.5%     |   +182 |      nan |
-| Malik Washington      | MIA    | WR    | 32.7%     |   +206 |      nan |
-| James Cook            | BUF    | RB    | 32.6%     |   +207 |      nan |
-| Khalil Shakir         | BUF    | WR    | 32.2%     |   +210 |      nan |
-| Nick Westbrook-Ikhine | MIA    | WR    | 30.8%     |   +224 |      nan |
-| Cedrick Wilson Jr.    | MIA    | WR    | 30.6%     |   +227 |      nan |
-| Keon Coleman          | BUF    | WR    | 29.5%     |   +239 |      nan |
-| Gabe Davis            | BUF    | WR    | 29.5%     |   +240 |      nan |
-| Tyrell Shavers        | BUF    | WR    | 28.8%     |   +247 |      nan |
-| Josh Palmer           | BUF    | WR    | 28.5%     |   +250 |      nan |
-+-----------------------+--------+-------+-----------+--------+----------+
++-----------------------+--------+-------+-----------+--------+
+| Player                | Team   | Pos   | TD Prob   |   Odds |
++=======================+========+=======+===========+========+
+| De'Von Achane         | MIA    | RB    | 42.4%     |   +136 |
+| Kristian Wilkerson    | BUF    | WR    | 42.4%     |   +136 |
+| Jaylen Waddle         | MIA    | WR    | 35.5%     |   +182 |
+| Malik Washington      | MIA    | WR    | 32.7%     |   +206 |
+| James Cook            | BUF    | RB    | 32.6%     |   +207 |
+| Khalil Shakir         | BUF    | WR    | 32.2%     |   +210 |
+| Nick Westbrook-Ikhine | MIA    | WR    | 30.8%     |   +224 |
+| Cedrick Wilson Jr.    | MIA    | WR    | 30.6%     |   +227 |
+| Keon Coleman          | BUF    | WR    | 29.5%     |   +239 |
+| Gabe Davis            | BUF    | WR    | 29.5%     |   +240 |
+| Tyrell Shavers        | BUF    | WR    | 28.8%     |   +247 |
+| Josh Palmer           | BUF    | WR    | 28.5%     |   +250 |
++-----------------------+--------+-------+-----------+--------+

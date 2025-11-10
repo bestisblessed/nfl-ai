@@ -2,19 +2,19 @@
 CAR vs NO | Week 10 2025 | Anytime TD Probabilities
 ================================================================================
 
-+-------------------+--------+-------+-----------+--------+--------------+
-| Player            | Team   | Pos   | TD Prob   |   Odds | Injury       |
-+===================+========+=======+===========+========+==============+
-| Rico Dowdle       | CAR    | RB    | 54.7%     |   -121 | Questionable |
-| Chris Olave       | NO     | WR    | 38.7%     |   +159 | nan          |
-| Chuba Hubbard     | CAR    | RB    | 37.4%     |   +168 | nan          |
-| Rashid Shaheed    | NO     | WR    | 36.1%     |   +177 | nan          |
-| Tetairoa McMillan | CAR    | WR    | 34.9%     |   +186 | nan          |
-| Xavier Legette    | CAR    | WR    | 31.4%     |   +218 | nan          |
-| Jalen Coker       | CAR    | WR    | 30.7%     |   +226 | nan          |
-| Ainias Smith      | CAR    | WR    | 30.3%     |   +230 | nan          |
-| Hunter Renfrow    | CAR    | WR    | 29.1%     |   +244 | nan          |
-| Alvin Kamara      | NO     | RB    | 29.0%     |   +245 | nan          |
-| Brycen Tremayne   | CAR    | WR    | 28.2%     |   +254 | nan          |
-| Audric Estimé     | NO     | RB    | 27.9%     |   +259 | nan          |
-+-------------------+--------+-------+-----------+--------+--------------+
++-------------------+--------+-------+-----------+--------+
+| Player            | Team   | Pos   | TD Prob   |   Odds |
++===================+========+=======+===========+========+
+| Rico Dowdle       | CAR    | RB    | 54.7%     |   -121 |
+| Chris Olave       | NO     | WR    | 38.7%     |   +159 |
+| Chuba Hubbard     | CAR    | RB    | 37.4%     |   +168 |
+| Rashid Shaheed    | NO     | WR    | 36.1%     |   +177 |
+| Tetairoa McMillan | CAR    | WR    | 34.9%     |   +186 |
+| Xavier Legette    | CAR    | WR    | 31.4%     |   +218 |
+| Jalen Coker       | CAR    | WR    | 30.7%     |   +226 |
+| Ainias Smith      | CAR    | WR    | 30.3%     |   +230 |
+| Hunter Renfrow    | CAR    | WR    | 29.1%     |   +244 |
+| Alvin Kamara      | NO     | RB    | 29.0%     |   +245 |
+| Brycen Tremayne   | CAR    | WR    | 28.2%     |   +254 |
+| Audric Estimé     | NO     | RB    | 27.9%     |   +259 |
++-------------------+--------+-------+-----------+--------+

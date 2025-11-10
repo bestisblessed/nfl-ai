@@ -2,19 +2,19 @@
 MIN vs BAL | Week 10 2025 | Anytime TD Probabilities
 ================================================================================
 
-+------------------+--------+-------+-----------+--------+----------+
-| Player           | Team   | Pos   | TD Prob   |   Odds |   Injury |
-+==================+========+=======+===========+========+==========+
-| Justin Jefferson | MIN    | WR    | 45.0%     |   +122 |      nan |
-| Jordan Addison   | MIN    | WR    | 37.4%     |   +168 |      nan |
-| Zay Flowers      | BAL    | WR    | 36.3%     |   +175 |      nan |
-| Jordan Mason     | MIN    | RB    | 35.8%     |   +180 |      nan |
-| Mark Andrews     | BAL    | TE    | 35.0%     |   +186 |      nan |
-| Aaron Jones      | MIN    | RB    | 31.9%     |   +213 |      nan |
-| Rashod Bateman   | BAL    | WR    | 31.8%     |   +214 |      nan |
-| Adam Thielen     | MIN    | WR    | 30.7%     |   +226 |      nan |
-| Keith Kirkwood   | BAL    | WR    | 28.0%     |   +257 |      nan |
-| Isaiah Likely    | BAL    | TE    | 27.6%     |   +262 |      nan |
-| Colton Dowell    | BAL    | WR    | 26.9%     |   +272 |      nan |
-| Jalen Nailor     | MIN    | WR    | 26.6%     |   +276 |      nan |
-+------------------+--------+-------+-----------+--------+----------+
++------------------+--------+-------+-----------+--------+
+| Player           | Team   | Pos   | TD Prob   |   Odds |
++==================+========+=======+===========+========+
+| Justin Jefferson | MIN    | WR    | 45.0%     |   +122 |
+| Jordan Addison   | MIN    | WR    | 37.4%     |   +168 |
+| Zay Flowers      | BAL    | WR    | 36.3%     |   +175 |
+| Jordan Mason     | MIN    | RB    | 35.8%     |   +180 |
+| Mark Andrews     | BAL    | TE    | 35.0%     |   +186 |
+| Aaron Jones      | MIN    | RB    | 31.9%     |   +213 |
+| Rashod Bateman   | BAL    | WR    | 31.8%     |   +214 |
+| Adam Thielen     | MIN    | WR    | 30.7%     |   +226 |
+| Keith Kirkwood   | BAL    | WR    | 28.0%     |   +257 |
+| Isaiah Likely    | BAL    | TE    | 27.6%     |   +262 |
+| Colton Dowell    | BAL    | WR    | 26.9%     |   +272 |
+| Jalen Nailor     | MIN    | WR    | 26.6%     |   +276 |
++------------------+--------+-------+-----------+--------+

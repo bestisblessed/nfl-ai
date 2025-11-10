@@ -2,19 +2,19 @@
 HOU vs JAX | Week 10 2025 | Anytime TD Probabilities
 ================================================================================
 
-+-------------------+--------+-------+-----------+--------+--------------+
-| Player            | Team   | Pos   | TD Prob   |   Odds | Injury       |
-+===================+========+=======+===========+========+==============+
-| Quintez Cephus    | HOU    | WR    | 37.6%     |   +166 | nan          |
-| Travis Etienne    | JAX    | RB    | 36.2%     |   +176 | nan          |
-| Christian Kirk    | HOU    | WR    | 35.6%     |   +181 | nan          |
-| Nico Collins      | HOU    | WR    | 35.2%     |   +184 | nan          |
-| Jaylin Noel       | HOU    | WR    | 32.6%     |   +207 | nan          |
-| Jayden Higgins    | HOU    | WR    | 30.2%     |   +231 | nan          |
-| Nick Chubb        | HOU    | RB    | 30.1%     |   +232 | nan          |
-| Brian Thomas Jr.  | JAX    | WR    | 27.7%     |   +262 | Questionable |
-| Erik Ezukanma     | JAX    | WR    | 27.4%     |   +266 | nan          |
-| Xavier Hutchinson | HOU    | WR    | 27.3%     |   +266 | nan          |
-| Parker Washington | JAX    | WR    | 26.8%     |   +274 | nan          |
-| Jared Wayne       | HOU    | WR    | 26.7%     |   +275 | nan          |
-+-------------------+--------+-------+-----------+--------+--------------+
++-------------------+--------+-------+-----------+--------+
+| Player            | Team   | Pos   | TD Prob   |   Odds |
++===================+========+=======+===========+========+
+| Quintez Cephus    | HOU    | WR    | 37.6%     |   +166 |
+| Travis Etienne    | JAX    | RB    | 36.2%     |   +176 |
+| Christian Kirk    | HOU    | WR    | 35.6%     |   +181 |
+| Nico Collins      | HOU    | WR    | 35.2%     |   +184 |
+| Jaylin Noel       | HOU    | WR    | 32.6%     |   +207 |
+| Jayden Higgins    | HOU    | WR    | 30.2%     |   +231 |
+| Nick Chubb        | HOU    | RB    | 30.1%     |   +232 |
+| Brian Thomas Jr.  | JAX    | WR    | 27.7%     |   +262 |
+| Erik Ezukanma     | JAX    | WR    | 27.4%     |   +266 |
+| Xavier Hutchinson | HOU    | WR    | 27.3%     |   +266 |
+| Parker Washington | JAX    | WR    | 26.8%     |   +274 |
+| Jared Wayne       | HOU    | WR    | 26.7%     |   +275 |
++-------------------+--------+-------+-----------+--------+

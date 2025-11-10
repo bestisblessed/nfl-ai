@@ -236,7 +236,7 @@ def main():
             probs = probs * (cap / max(q, 1e-6))
         probs = np.clip(probs, floor, cap)
 
-        out = inf_rows[["full_name", "player_id", "team", "opp", "position", "home_flag", "injury_status"]].copy()
+        out = inf_rows[["full_name", "player_id", "team", "opp", "position", "home_flag"]].copy()
         out["prob_anytime_td"] = probs
         out["american_odds"] = out["prob_anytime_td"].apply(probability_to_american_odds).round(1)
         out["prop_type"] = "Anytime TD"
@@ -311,13 +311,12 @@ def main():
                             r["position"],
                             f"{prob:.1%}",
                             f"{odds:+.0f}" if odds > 0 else f"{odds:.0f}",
-                            r.get("injury_status", ""),
                         ]
                     )
                 f.write(
                     tabulate(
                         table_data,
-                        headers=["Player", "Team", "Pos", "TD Prob", "Odds", "Injury"],
+                        headers=["Player", "Team", "Pos", "TD Prob", "Odds"],
                         tablefmt="outline",
                     )
                 )
