@@ -550,49 +550,43 @@ def plot_last_20_games_prop_trend(player_name, player_position=None):
 
     # QB: show Attempts vs Completions over last 10 games
     if player_position == 'QB':
+        # Keep original order by game for the timeline
         recent_games = recent_games.drop_duplicates(subset=['game_id']).sort_values(by='game_id', ascending=True)
-        game_labels = [f"{int(y)}-W{int(w):02d}" for y, w in zip(recent_games['year'], recent_games['week'])]
 
         with graph_col:
             fig = go.Figure()
+            # Attempts
             if 'pass_att' in recent_games.columns:
-                fig.add_trace(go.Bar(
-                    x=game_labels,
-                    y=recent_games['pass_att'],
-                    name='Attempts',
-                    marker_color='#888888',
-                    text=recent_games['pass_att'].fillna(0).astype(int),
-                    textposition='outside'
-                ))
-            if 'pass_cmp' in recent_games.columns:
-                fig.add_trace(go.Bar(
-                    x=game_labels,
-                    y=recent_games['pass_cmp'],
-                    name='Completions',
-                    marker_color='#1F77B4',
-                    text=recent_games['pass_cmp'].fillna(0).astype(int),
-                    textposition='outside'
-                ))
-
-            if 'pass_cmp' in recent_games.columns and 'pass_att' in recent_games.columns:
-                completion_pct = recent_games['pass_cmp'] / recent_games['pass_att'].replace(0, pd.NA) * 100
                 fig.add_trace(go.Scatter(
-                    x=game_labels,
-                    y=completion_pct,
-                    name='Completion %',
-                    mode='lines+markers',
-                    marker=dict(color='#F1C40F'),
-                    yaxis='y2'
+                    x=recent_games['game_id'],
+                    y=recent_games['pass_att'],
+                    mode='lines+markers+text',
+                    name='Attempts',
+                    marker=dict(color='#888888'),
+                    text=recent_games['pass_att'].fillna(0).astype(int),
+                    textposition='top center',
+                    textfont=dict(color='#888888', size=12)
+                ))
+            # Completions
+            if 'pass_cmp' in recent_games.columns:
+                fig.add_trace(go.Scatter(
+                    x=recent_games['game_id'],
+                    y=recent_games['pass_cmp'],
+                    mode='lines+markers+text',
+                    name='Completions',
+                    marker=dict(color='#1F77B4'),
+                    text=recent_games['pass_cmp'].fillna(0).astype(int),
+                    textposition='top center',
+                    textfont=dict(color='#1F77B4', size=12)
                 ))
 
             fig.update_layout(
-                xaxis_title='Game',
+                xaxis_title='Game ID',
                 yaxis_title='Attempts / Completions',
+                xaxis_tickangle=-90,
                 template='plotly_dark',
                 height=500,
-                legend_title='',
-                barmode='group',
-                yaxis2=dict(title='Completion %', overlaying='y', side='right', range=[0, 100])
+                legend_title=''
             )
             st.plotly_chart(fig, use_container_width=True)
 
@@ -611,8 +605,6 @@ def plot_last_20_games_prop_trend(player_name, player_position=None):
             table_columns = ['game_id', 'pass_att', 'pass_cmp', 'pass_yds']
             available_columns = [col for col in table_columns if col in recent_games.columns]
             table_data = recent_games[available_columns].copy().iloc[::-1]
-            if 'pass_att' in table_data.columns and 'pass_cmp' in table_data.columns:
-                table_data['completion_pct'] = (table_data['pass_cmp'] / table_data['pass_att'].replace(0, pd.NA) * 100).round(1)
             st.dataframe(table_data, use_container_width=True, height=350, hide_index=True)
         return None
 
