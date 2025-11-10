@@ -1,26 +1,25 @@
-full_name,player_id,team,opp,position,home_flag,prob_anytime_td,american_odds,prop_type,model_version
-J.J. McCarthy,McCaJJ00.htm,MIN,,QB,0.0,0.35,185.7,Anytime TD,anytd_xgb_v1
-Jaxson Dart,DartJa00.htm,NYG,,QB,0.0,0.32979188733680903,203.2,Anytime TD,anytd_xgb_v1
-Lamar Jackson,JackLa00.htm,BAL,,QB,0.0,0.2534912192472216,294.5,Anytime TD,anytd_xgb_v1
-Josh Allen,AlleJo02.htm,BUF,,QB,0.0,0.24867726430902387,302.1,Anytime TD,anytd_xgb_v1
-Daniel Jones,JoneDa05.htm,IND,,QB,0.0,0.2297845248704821,335.2,Anytime TD,anytd_xgb_v1
-Trevor Lawrence,LawrTr00.htm,JAX,,QB,0.0,0.21581599655816192,363.4,Anytime TD,anytd_xgb_v1
-Bo Nix,NixxBo00.htm,DEN,,QB,0.0,0.2153973669420742,364.3,Anytime TD,anytd_xgb_v1
-Justin Herbert,HerbJu00.htm,LAC,,QB,0.0,0.21010360573857062,376.0,Anytime TD,anytd_xgb_v1
-Jalen Hurts,HurtJa00.htm,PHI,,QB,0.0,0.20328254232046256,391.9,Anytime TD,anytd_xgb_v1
-Justin Fields,FielJu00.htm,NYJ,,QB,0.0,0.2029543910248705,392.7,Anytime TD,anytd_xgb_v1
-Jacoby Brissett,BrisJa00.htm,ARI,,QB,0.0,0.19420784235338187,414.9,Anytime TD,anytd_xgb_v1
-Bryce Young,YounBr01.htm,CAR,,QB,0.0,0.18783559471784306,432.4,Anytime TD,anytd_xgb_v1
-Marcus Mariota,MariMa01.htm,WAS,,QB,0.0,0.18536378600278355,439.5,Anytime TD,anytd_xgb_v1
-Baker Mayfield,MayfBa00.htm,TB,,QB,0.0,0.18417555416820816,443.0,Anytime TD,anytd_xgb_v1
-Dillon Gabriel,GabrDi00.htm,CLE,,QB,0.0,0.1801743917133115,455.0,Anytime TD,anytd_xgb_v1
-Caleb Williams,WillCa03.htm,CHI,,QB,0.0,0.17886529028506104,459.1,Anytime TD,anytd_xgb_v1
-Drake Maye,MayeDr00.htm,NE,,QB,0.0,0.1763633583970479,467.0,Anytime TD,anytd_xgb_v1
-Jared Goff,GoffJa00.htm,DET,,QB,0.0,0.1721646639532371,480.8,Anytime TD,anytd_xgb_v1
-Tyler Shough,ShouTy00.htm,NO,,QB,0.0,0.1720622492108402,481.2,Anytime TD,anytd_xgb_v1
-Mac Jones,JoneMa05.htm,SF,,QB,0.0,0.16952671279486994,489.9,Anytime TD,anytd_xgb_v1
-Jordan Love,LoveJo03.htm,GB,,QB,0.0,0.16860559985623147,493.1,Anytime TD,anytd_xgb_v1
-Michael Penix Jr.,PeniMi00.htm,ATL,,QB,0.0,0.1675895997212472,496.7,Anytime TD,anytd_xgb_v1
-Tua Tagovailoa,TagoTu00.htm,MIA,,QB,0.0,0.16685940584309383,499.3,Anytime TD,anytd_xgb_v1
-Aaron Rodgers,RodgAa00.htm,PIT,,QB,0.0,0.16536080124375982,504.7,Anytime TD,anytd_xgb_v1
-Sam Darnold,DarnSa00.htm,SEA,,QB,0.0,0.16350982083532914,511.6,Anytime TD,anytd_xgb_v1
+full_name,player_id,team,opp,position,home_flag,prob_anytime_td,american_odds,prop_type,model_version,rank
+J.J. McCarthy,McCaJJ00.htm,MIN,,QB,0.0,0.5335352587487049,-114.4,Anytime TD,anytd_xgb_v1,1
+Jaxson Dart,DartJa00.htm,NYG,,QB,0.0,0.4598502142860208,117.5,Anytime TD,anytd_xgb_v1,2
+Lamar Jackson,JackLa00.htm,BAL,,QB,0.0,0.23715435425547055,321.7,Anytime TD,anytd_xgb_v1,3
+Josh Allen,AlleJo02.htm,BUF,,QB,0.0,0.22531538417834082,343.8,Anytime TD,anytd_xgb_v1,4
+Daniel Jones,JoneDa05.htm,IND,,QB,0.0,0.18210935944195322,449.1,Anytime TD,anytd_xgb_v1,5
+Trevor Lawrence,LawrTr00.htm,JAX,,QB,0.0,0.15359942093883058,551.0,Anytime TD,anytd_xgb_v1,6
+Bo Nix,NixxBo00.htm,DEN,,QB,0.0,0.15279054199250627,554.5,Anytime TD,anytd_xgb_v1,7
+Justin Herbert,HerbJu00.htm,LAC,,QB,0.0,0.14279024112922425,600.3,Anytime TD,anytd_xgb_v1,8
+Jalen Hurts,HurtJa00.htm,PHI,,QB,0.0,0.1305261962270622,666.1,Anytime TD,anytd_xgb_v1,9
+Justin Fields,FielJu00.htm,NYJ,,QB,0.0,0.12995373790922213,669.5,Anytime TD,anytd_xgb_v1,10
+Jacoby Brissett,BrisJa00.htm,ARI,,QB,0.0,0.1152833143939417,767.4,Anytime TD,anytd_xgb_v1,11
+Bryce Young,YounBr01.htm,CAR,,QB,0.0,0.10530018731385202,849.7,Anytime TD,anytd_xgb_v1,12
+Marcus Mariota,MariMa01.htm,WAS,,QB,0.0,0.10158508332387352,884.4,Anytime TD,anytd_xgb_v1,13
+Baker Mayfield,MayfBa00.htm,TB,,QB,0.0,0.09983015860559717,901.7,Anytime TD,anytd_xgb_v1,14
+Dillon Gabriel,GabrDi00.htm,CLE,,QB,0.0,0.09406734276534132,963.1,Anytime TD,anytd_xgb_v1,15
+Caleb Williams,WillCa03.htm,CHI,,QB,0.0,0.09223055327016048,984.2,Anytime TD,anytd_xgb_v1,16
+Drake Maye,MayeDr00.htm,NE,,QB,0.0,0.08878623354607994,1026.3,Anytime TD,anytd_xgb_v1,17
+Jared Goff,GoffJa00.htm,DET,,QB,0.0,0.08319903455893751,1101.9,Anytime TD,anytd_xgb_v1,18
+Tyler Shough,ShouTy00.htm,NO,,QB,0.0,0.08306574429820691,1103.9,Anytime TD,anytd_xgb_v1,19
+Mac Jones,JoneMa05.htm,SF,,QB,0.0,0.07981079932341895,1153.0,Anytime TD,anytd_xgb_v1,20
+Jordan Love,LoveJo03.htm,GB,,QB,0.0,0.07864964188424793,1171.5,Anytime TD,anytd_xgb_v1,21
+Michael Penix Jr.,PeniMi00.htm,ATL,,QB,0.0,0.07738194724204127,1192.3,Anytime TD,anytd_xgb_v1,22
+Tua Tagovailoa,TagoTu00.htm,MIA,,QB,0.0,0.0764792991220169,1207.5,Anytime TD,anytd_xgb_v1,23
+Sam Darnold,DarnSa00.htm,SEA,,QB,0.0,0.07242831445858096,1280.7,Anytime TD,anytd_xgb_v1,24

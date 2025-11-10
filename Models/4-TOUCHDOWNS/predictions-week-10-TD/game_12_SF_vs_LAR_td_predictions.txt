@@ -2,19 +2,26 @@
 SF vs LAR | Week 10 2025 | Anytime TD Probabilities
 ================================================================================
 
-+--------------------------+--------+-------+-----------+--------+
-| Player                   | Team   | Pos   | TD Prob   |   Odds |
-+==========================+========+=======+===========+========+
-| Jauan Jennings           | SF     | WR    | 32.2%     |   +210 |
-| Russell Gage             | SF     | WR    | 31.7%     |   +215 |
-| Christian McCaffrey      | SF     | RB    | 29.8%     |   +236 |
-| Kendrick Bourne          | SF     | WR    | 29.0%     |   +244 |
-| Jake Tonges              | SF     | TE    | 27.7%     |   +261 |
-| Demarcus Robinson        | SF     | WR    | 24.9%     |   +302 |
-| Malik Turner             | SF     | WR    | 24.9%     |   +302 |
-| Skyy Moore               | SF     | WR    | 24.6%     |   +306 |
-| Marquez Valdes-Scantling | SF     | WR    | 24.3%     |   +311 |
-| Jordan Watkins           | SF     | WR    | 24.0%     |   +317 |
-| George Kittle            | SF     | TE    | 23.1%     |   +334 |
-| Brayden Willis           | SF     | TE    | 21.8%     |   +358 |
-+--------------------------+--------+-------+-----------+--------+
++--------+--------------------------+--------+-------+-----------+--------+
+|   Rank | Player                   | Team   | Pos   | TD Prob   |   Odds |
++========+==========================+========+=======+===========+========+
+|      1 | Jake Tonges              | SF     | TE    | 36.6%     |   +173 |
+|      2 | George Kittle            | SF     | TE    | 24.5%     |   +308 |
+|      3 | Christian McCaffrey      | SF     | RB    | 24.3%     |   +311 |
+|      4 | Brayden Willis           | SF     | TE    | 21.7%     |   +361 |
+|      5 | Jauan Jennings           | SF     | WR    | 20.9%     |   +379 |
+|      6 | Russell Gage             | SF     | WR    | 20.2%     |   +395 |
+|      7 | Kendrick Bourne          | SF     | WR    | 16.7%     |   +497 |
+|      8 | Luke Farrell             | SF     | TE    | 14.0%     |   +614 |
+|      9 | Sincere McCormick        | SF     | RB    | 13.7%     |   +628 |
+|     10 | Kyle Juszczyk            | SF     | RB    | 12.1%     |   +725 |
+|     11 | Demarcus Robinson        | SF     | WR    | 12.1%     |   +726 |
+|     12 | Malik Turner             | SF     | WR    | 12.1%     |   +726 |
+|     13 | Brian Robinson           | SF     | RB    | 11.8%     |   +744 |
+|     14 | Skyy Moore               | SF     | WR    | 11.8%     |   +746 |
+|     15 | Isaac Guerendo           | SF     | RB    | 11.8%     |   +751 |
+|     16 | Marquez Valdes-Scantling | SF     | WR    | 11.5%     |   +768 |
+|     17 | Patrick Taylor           | SF     | RB    | 11.4%     |   +777 |
+|     18 | Ke'Shawn Vaughn          | SF     | RB    | 11.3%     |   +785 |
+|     19 | Jordan Watkins           | SF     | WR    | 11.2%     |   +793 |
++--------+--------------------------+--------+-------+-----------+--------+

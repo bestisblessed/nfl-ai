@@ -2,19 +2,23 @@
 DEN vs LVR | Week 10 2025 | Anytime TD Probabilities
 ================================================================================
 
-+-------------------+--------+-------+-----------+--------+
-| Player            | Team   | Pos   | TD Prob   |   Odds |
-+===================+========+=======+===========+========+
-| Courtland Sutton  | DEN    | WR    | 40.7%     |   +146 |
-| J.K. Dobbins      | DEN    | RB    | 40.2%     |   +149 |
-| RJ Harvey         | DEN    | RB    | 31.4%     |   +218 |
-| A.T. Perry        | DEN    | WR    | 30.7%     |   +225 |
-| Troy Franklin     | DEN    | WR    | 29.6%     |   +237 |
-| Pat Bryant        | DEN    | WR    | 28.9%     |   +246 |
-| Samori Toure      | DEN    | WR    | 28.2%     |   +254 |
-| Jaleel McLaughlin | DEN    | RB    | 27.9%     |   +258 |
-| Michael Bandy     | DEN    | WR    | 25.7%     |   +290 |
-| Trent Sherfield   | DEN    | WR    | 25.2%     |   +297 |
-| Deuce Vaughn      | DEN    | RB    | 25.1%     |   +298 |
-| Adam Prentice     | DEN    | RB    | 23.7%     |   +321 |
-+-------------------+--------+-------+-----------+--------+
++--------+-------------------+--------+-------+-----------+--------+
+|   Rank | Player            | Team   | Pos   | TD Prob   |   Odds |
++========+===================+========+=======+===========+========+
+|      1 | J.K. Dobbins      | DEN    | RB    | 41.2%     |   +142 |
+|      2 | Courtland Sutton  | DEN    | WR    | 33.9%     |   +195 |
+|      3 | RJ Harvey         | DEN    | RB    | 26.8%     |   +274 |
+|      4 | Jaleel McLaughlin | DEN    | RB    | 21.7%     |   +362 |
+|      5 | A.T. Perry        | DEN    | WR    | 18.9%     |   +429 |
+|      6 | Deuce Vaughn      | DEN    | RB    | 17.8%     |   +461 |
+|      7 | Troy Franklin     | DEN    | WR    | 17.5%     |   +472 |
+|      8 | Pat Bryant        | DEN    | WR    | 16.6%     |   +504 |
+|      9 | Adam Prentice     | DEN    | RB    | 16.1%     |   +521 |
+|     10 | Samori Toure      | DEN    | WR    | 15.8%     |   +533 |
+|     11 | Tyler Badie       | DEN    | RB    | 15.8%     |   +533 |
+|     12 | Evan Engram       | DEN    | TE    | 13.7%     |   +630 |
+|     13 | Michael Bandy     | DEN    | WR    | 12.9%     |   +675 |
+|     14 | Marcedes Lewis    | DEN    | TE    | 12.6%     |   +693 |
+|     15 | Trent Sherfield   | DEN    | WR    | 12.4%     |   +706 |
+|     16 | Adam Trautman     | DEN    | TE    | 11.0%     |   +810 |
++--------+-------------------+--------+-------+-----------+--------+

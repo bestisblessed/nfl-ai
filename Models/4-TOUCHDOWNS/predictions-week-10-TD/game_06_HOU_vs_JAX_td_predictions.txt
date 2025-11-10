@@ -2,19 +2,35 @@
 HOU vs JAX | Week 10 2025 | Anytime TD Probabilities
 ================================================================================
 
-+-------------------+--------+-------+-----------+--------+
-| Player            | Team   | Pos   | TD Prob   |   Odds |
-+===================+========+=======+===========+========+
-| Travis Etienne    | JAX    | RB    | 40.2%     |   +149 |
-| Quintez Cephus    | HOU    | WR    | 38.1%     |   +162 |
-| Christian Kirk    | HOU    | WR    | 36.1%     |   +177 |
-| Nico Collins      | HOU    | WR    | 35.7%     |   +180 |
-| Nick Chubb        | HOU    | RB    | 33.5%     |   +199 |
-| Jaylin Noel       | HOU    | WR    | 33.0%     |   +203 |
-| Jayden Higgins    | HOU    | WR    | 30.6%     |   +226 |
-| Bhayshul Tuten    | JAX    | RB    | 29.1%     |   +244 |
-| Erik Ezukanma     | JAX    | WR    | 27.7%     |   +261 |
-| Xavier Hutchinson | HOU    | WR    | 27.7%     |   +261 |
-| Woody Marks       | HOU    | RB    | 27.4%     |   +265 |
-| Parker Washington | JAX    | WR    | 27.1%     |   +269 |
-+-------------------+--------+-------+-----------+--------+
++--------+-------------------+--------+-------+-----------+--------+
+|   Rank | Player            | Team   | Pos   | TD Prob   |   Odds |
++========+===================+========+=======+===========+========+
+|      1 | Travis Etienne    | JAX    | RB    | 41.2%     |   +143 |
+|      2 | Nick Chubb        | HOU    | RB    | 30.0%     |   +234 |
+|      3 | Quintez Cephus    | HOU    | WR    | 29.6%     |   +238 |
+|      4 | Christian Kirk    | HOU    | WR    | 26.5%     |   +278 |
+|      5 | Nico Collins      | HOU    | WR    | 25.8%     |   +288 |
+|      6 | Dalton Schultz    | HOU    | TE    | 25.0%     |   +301 |
+|      7 | Bhayshul Tuten    | JAX    | RB    | 23.3%     |   +330 |
+|      8 | Jaylin Noel       | HOU    | WR    | 22.0%     |   +354 |
+|      9 | Woody Marks       | HOU    | RB    | 20.9%     |   +378 |
+|     10 | Jayden Higgins    | HOU    | WR    | 18.8%     |   +433 |
+|     11 | Jordan Akins      | JAX    | TE    | 17.6%     |   +469 |
+|     12 | Erik Ezukanma     | JAX    | WR    | 15.2%     |   +558 |
+|     13 | Xavier Hutchinson | HOU    | WR    | 15.1%     |   +560 |
+|     14 | Parker Washington | JAX    | WR    | 14.5%     |   +590 |
+|     15 | Jared Wayne       | HOU    | WR    | 14.4%     |   +594 |
+|     16 | LeQuint Allen Jr. | JAX    | RB    | 14.1%     |   +611 |
+|     17 | Juwann Winfree    | HOU    | WR    | 14.0%     |   +613 |
+|     18 | Braxton Berrios   | HOU    | WR    | 13.9%     |   +617 |
+|     19 | Harrison Bryant   | HOU    | TE    | 13.9%     |   +617 |
+|     20 | Kevin Harris      | JAX    | RB    | 13.5%     |   +641 |
+|     21 | Dare Ogunbowale   | HOU    | RB    | 13.4%     |   +648 |
+|     22 | Irv Smith         | HOU    | TE    | 13.2%     |   +659 |
+|     23 | Dalton Keene      | HOU    | TE    | 13.1%     |   +662 |
+|     24 | British Brooks    | HOU    | RB    | 12.5%     |   +703 |
+|     25 | Austin Trammell   | JAX    | WR    | 12.2%     |   +718 |
+|     26 | Tim Jones         | JAX    | WR    | 11.6%     |   +763 |
+|     27 | Dameon Pierce     | HOU    | RB    | 11.5%     |   +772 |
+|     28 | Johnny Mundt      | JAX    | TE    | 10.4%     |   +860 |
++--------+-------------------+--------+-------+-----------+--------+

@@ -2,19 +2,41 @@
 WAS vs DET | Week 10 2025 | Anytime TD Probabilities
 ================================================================================
 
-+------------------------+--------+-------+-----------+--------+
-| Player                 | Team   | Pos   | TD Prob   |   Odds |
-+========================+========+=======+===========+========+
-| Jahmyr Gibbs           | DET    | RB    | 50.4%     |   -102 |
-| David Montgomery       | DET    | RB    | 49.2%     |   +103 |
-| Amon-Ra St. Brown      | DET    | WR    | 39.3%     |   +155 |
-| Jameson Williams       | DET    | WR    | 34.9%     |   +186 |
-| Deebo Samuel Sr.       | WAS    | WR    | 34.2%     |   +193 |
-| Jacory Croskey-Merritt | WAS    | RB    | 34.1%     |   +193 |
-| Sam LaPorta            | DET    | TE    | 32.3%     |   +210 |
-| Chris Moore            | WAS    | WR    | 30.8%     |   +225 |
-| K.J. Osborn            | WAS    | WR    | 30.3%     |   +230 |
-| Jaylin Lane            | WAS    | WR    | 29.5%     |   +239 |
-| Michael Gallup         | WAS    | WR    | 28.9%     |   +246 |
-| Robbie Chosen          | WAS    | WR    | 28.6%     |   +250 |
-+------------------------+--------+-------+-----------+--------+
++--------+------------------------+--------+-------+-----------+--------+
+|   Rank | Player                 | Team   | Pos   | TD Prob   |   Odds |
++========+========================+========+=======+===========+========+
+|      1 | Jahmyr Gibbs           | DET    | RB    | 59.2%     |   -145 |
+|      2 | David Montgomery       | DET    | RB    | 57.2%     |   -133 |
+|      3 | Sam LaPorta            | DET    | TE    | 49.7%     |   +101 |
+|      4 | Amon-Ra St. Brown      | DET    | WR    | 31.4%     |   +218 |
+|      5 | Jacory Croskey-Merritt | WAS    | RB    | 31.1%     |   +222 |
+|      6 | Jameson Williams       | DET    | WR    | 24.7%     |   +305 |
+|      7 | Deebo Samuel Sr.       | WAS    | WR    | 23.6%     |   +324 |
+|      8 | Ross Dwelley           | DET    | TE    | 22.8%     |   +338 |
+|      9 | Zach Ertz              | WAS    | TE    | 19.0%     |   +426 |
+|     10 | Chris Moore            | WAS    | WR    | 18.9%     |   +428 |
+|     11 | K.J. Osborn            | WAS    | WR    | 18.3%     |   +447 |
+|     12 | Kenny Yeboah           | DET    | TE    | 18.1%     |   +452 |
+|     13 | Jaylin Lane            | WAS    | WR    | 17.3%     |   +477 |
+|     14 | Michael Gallup         | WAS    | WR    | 16.6%     |   +502 |
+|     15 | Chris Rodriguez Jr.    | WAS    | RB    | 16.4%     |   +511 |
+|     16 | Robbie Chosen          | WAS    | WR    | 16.2%     |   +516 |
+|     17 | Kalif Raymond          | DET    | WR    | 16.0%     |   +526 |
+|     18 | Jeremy McNichols       | WAS    | RB    | 14.6%     |   +586 |
+|     19 | River Cracraft         | WAS    | WR    | 14.5%     |   +588 |
+|     20 | Lawrence Cager         | WAS    | TE    | 14.5%     |   +590 |
+|     21 | Braylon Sanders        | WAS    | WR    | 14.2%     |   +606 |
+|     22 | Treylon Burks          | WAS    | WR    | 14.0%     |   +615 |
+|     23 | Tom Kennedy            | DET    | WR    | 13.8%     |   +624 |
+|     24 | Sione Vaki             | DET    | RB    | 13.7%     |   +630 |
+|     25 | Deon Jackson           | DET    | RB    | 13.6%     |   +638 |
+|     26 | Isaac TeSlaa           | DET    | WR    | 13.1%     |   +662 |
+|     27 | Demetric Felton        | WAS    | RB    | 12.7%     |   +689 |
+|     28 | Brock Wright           | DET    | TE    | 12.6%     |   +697 |
+|     29 | Malik Taylor           | DET    | WR    | 12.2%     |   +719 |
+|     30 | Tay Martin             | WAS    | WR    | 12.2%     |   +719 |
+|     31 | Chase Edmonds          | WAS    | RB    | 12.1%     |   +724 |
+|     32 | Cole Turner            | WAS    | TE    | 11.4%     |   +778 |
+|     33 | Ben Sinnott            | WAS    | TE    | 11.3%     |   +783 |
+|     34 | John Bates             | WAS    | TE    | 10.9%     |   +815 |
++--------+------------------------+--------+-------+-----------+--------+

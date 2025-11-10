@@ -33,13 +33,6 @@ def probability_to_american_odds(prob: float) -> float:
         return -100.0 * (prob / (1.0 - prob))
     return 100.0 * ((1.0 - prob) / prob)
 
-def temperature_scale(probs: np.ndarray, T: float) -> np.ndarray:
-    """Shrink probabilities away from extremes via temperature scaling."""
-    probs = np.clip(probs, 1e-6, 1 - 1e-6)
-    logits = np.log(probs / (1.0 - probs))
-    scaled = 1.0 / (1.0 + np.exp(-logits / T))
-    return np.clip(scaled, 1e-6, 1 - 1e-6)
-
 def get_feature_columns() -> list:
     windows = [3, 5, 8, 12]
     base_feats = ["rush_att", "rush_yds", "targets", "rec", "rec_yds", "scoring_tds"]
@@ -199,42 +192,44 @@ def main():
             continue
         inf_rows, X_cols = build_inference_rows(up_pos, train_pos, pos)
         probs_raw = model.predict_proba(inf_rows[X_cols].fillna(0.0))[:, 1]
-        # Clip raw probabilities to same bounds as training
-        probs_raw = np.clip(probs_raw, 0.01, 0.99)
+        # Minimal clip for numerical stability
+        probs_raw = np.clip(probs_raw, 0.001, 0.999)
         if platt is not None:
             try:
                 with warnings.catch_warnings():
                     warnings.simplefilter("ignore")
                     probs = platt.predict_proba(probs_raw.reshape(-1, 1))[:, 1]
-                probs = np.clip(probs, 0.01, 0.99)
+                # No clip after Platt - allow full range
             except Exception:
                 probs = probs_raw
         else:
             probs = probs_raw
 
-        # Position-specific temperature scaling, floors and caps for realism
-        temp_map = {"WR": 1.8, "RB": 1.6, "TE": 1.9, "QB": 2.2}
-        cap_map = {"WR": 0.45, "RB": 0.55, "TE": 0.35, "QB": 0.35}
-        floor_map = {"WR": 0.015, "RB": 0.020, "TE": 0.010, "QB": 0.010}
-        T = temp_map.get(pos, 1.8)
-        probs = temperature_scale(probs, T)
+        # Filter out low-usage bench players (historical touches <1.0 avg over last 3 games)
+        usage_cols = ["rush_att_rm3", "targets_rm3", "rec_rm3"]
+        historical_touches = inf_rows[usage_cols].fillna(0).sum(axis=1)
+        active_mask = historical_touches >= 1.0
+        inf_rows = inf_rows[active_mask].copy()
+        probs = probs[active_mask]
 
-        # For players with no recent usage history, use conservative floor
-        usage_cols = [c for c in ["rush_att_rm3", "targets_rm3", "rec_rm3"] if c in inf_rows.columns]
-        if usage_cols:
-            usage_sum = inf_rows[usage_cols].fillna(0).sum(axis=1)
-            no_usage_mask = usage_sum <= 0
-        else:
-            no_usage_mask = np.zeros(len(probs), dtype=bool)
-        probs[no_usage_mask] = floor_map.get(pos, 0.015)
-
-        # Soft-cap using per-position 99.5th percentile scaling to preserve variance
-        cap = cap_map.get(pos, 0.5)
-        floor = floor_map.get(pos, 0.015)
-        q = np.quantile(probs, 0.995) if len(probs) > 10 else cap
-        if q > 0:
-            probs = probs * (cap / max(q, 1e-6))
-        probs = np.clip(probs, floor, cap)
+        # Position-specific filter using season totals from historical data
+        if pos != "QB":
+            season_cols = {
+                "WR": "rec",
+                "TE": "rec",
+                "RB": "rush_att"
+            }
+            season_stat = season_cols.get(pos, "rec")
+            if season_stat in inf_rows.columns:
+                # Aggregate season totals for each player (sum over all historical games)
+                season_totals = train_df.groupby("player_id")[season_stat].sum().to_dict()
+                active_mask = inf_rows["player_id"].map(season_totals).fillna(0) >= {
+                    "WR": 2,
+                    "TE": 2,
+                    "RB": 3
+                }[pos]
+                inf_rows = inf_rows[active_mask].copy()
+                probs = probs[active_mask]
 
         out = inf_rows[["full_name", "player_id", "team", "opp", "position", "home_flag"]].copy()
         out["prob_anytime_td"] = probs
@@ -244,6 +239,12 @@ def main():
         out = out.sort_values("prob_anytime_td", ascending=False)
         all_outputs.append(out)
 
+        out_file = f"{out_dir}/final_week{week_num}_{pos}_td_report.csv"
+        out.to_csv(out_file, index=False)
+        print(f"Saved: {out_file} ({len(out)} rows)")
+
+        out = out.sort_values("prob_anytime_td", ascending=False)
+        out["rank"] = range(1, len(out) + 1)
         out_file = f"{out_dir}/final_week{week_num}_{pos}_td_report.csv"
         out.to_csv(out_file, index=False)
         print(f"Saved: {out_file} ({len(out)} rows)")
@@ -299,24 +300,24 @@ def main():
                 f.write("=" * 80 + "\n")
                 f.write(f"{home} vs {away} | Week {week_num} 2025 | Anytime TD Probabilities\n")
                 f.write("=" * 80 + "\n\n")
-                top_12 = game_players.head(12)
+
+                # Single table with all active players
                 table_data = []
-                for _, r in top_12.iterrows():
+                for rank, (_, r) in enumerate(game_players.iterrows(), 1):
                     prob = r["prob_anytime_td"]
                     odds = r["american_odds"]
-                    table_data.append(
-                        [
-                            r["full_name"],
-                            r["team"],
-                            r["position"],
-                            f"{prob:.1%}",
-                            f"{odds:+.0f}" if odds > 0 else f"{odds:.0f}",
-                        ]
-                    )
+                    table_data.append([
+                        str(rank),
+                        r["full_name"],
+                        r["team"],
+                        r["position"],
+                        f"{prob:.1%}",
+                        f"{odds:+.0f}" if odds > 0 else f"{odds:.0f}",
+                    ])
                 f.write(
                     tabulate(
                         table_data,
-                        headers=["Player", "Team", "Pos", "TD Prob", "Odds"],
+                        headers=["Rank", "Player", "Team", "Pos", "TD Prob", "Odds"],
                         tablefmt="outline",
                     )
                 )

@@ -2,19 +2,30 @@
 TB vs NE | Week 10 2025 | Anytime TD Probabilities
 ================================================================================
 
-+--------------------+--------+-------+-----------+--------+
-| Player             | Team   | Pos   | TD Prob   |   Odds |
-+====================+========+=======+===========+========+
-| Emeka Egbuka       | TB     | WR    | 38.5%     |   +160 |
-| Stefon Diggs       | NE     | WR    | 36.6%     |   +173 |
-| TreVeyon Henderson | NE     | RB    | 31.8%     |   +214 |
-| Dennis Houston     | TB     | WR    | 31.0%     |   +223 |
-| DeMario Douglas    | NE     | WR    | 30.0%     |   +233 |
-| Brandon Johnson    | TB     | WR    | 29.7%     |   +237 |
-| Sterling Shepard   | TB     | WR    | 29.4%     |   +240 |
-| Terrell Jennings   | NE     | RB    | 28.1%     |   +256 |
-| Ryan Miller        | TB     | WR    | 27.4%     |   +265 |
-| Mack Hollins       | NE     | WR    | 27.0%     |   +270 |
-| Devin Culp         | TB     | TE    | 26.4%     |   +279 |
-| Kameron Johnson    | TB     | WR    | 26.3%     |   +280 |
-+--------------------+--------+-------+-----------+--------+
++--------+--------------------+--------+-------+-----------+--------+
+|   Rank | Player             | Team   | Pos   | TD Prob   |   Odds |
++========+====================+========+=======+===========+========+
+|      1 | Devin Culp         | TB     | TE    | 33.0%     |   +203 |
+|      2 | Emeka Egbuka       | TB     | WR    | 30.3%     |   +230 |
+|      3 | TreVeyon Henderson | NE     | RB    | 27.4%     |   +265 |
+|      4 | Stefon Diggs       | NE     | WR    | 27.3%     |   +267 |
+|      5 | Cade Otton         | TB     | TE    | 25.8%     |   +288 |
+|      6 | Payne Durham       | TB     | TE    | 22.0%     |   +355 |
+|      7 | Terrell Jennings   | NE     | RB    | 21.9%     |   +357 |
+|      8 | Dennis Houston     | TB     | WR    | 19.2%     |   +420 |
+|      9 | D'Ernest Johnson   | NE     | RB    | 18.5%     |   +439 |
+|     10 | DeMario Douglas    | NE     | WR    | 18.0%     |   +456 |
+|     11 | Brandon Johnson    | TB     | WR    | 17.5%     |   +470 |
+|     12 | Sterling Shepard   | TB     | WR    | 17.2%     |   +482 |
+|     13 | Hunter Henry       | NE     | TE    | 16.2%     |   +515 |
+|     14 | Jonathan Ward      | NE     | RB    | 15.8%     |   +531 |
+|     15 | Ryan Miller        | TB     | WR    | 14.8%     |   +574 |
+|     16 | Mack Hollins       | NE     | WR    | 14.4%     |   +595 |
+|     17 | Rachaad White      | TB     | RB    | 13.9%     |   +620 |
+|     18 | Austin Hooper      | NE     | TE    | 13.7%     |   +632 |
+|     19 | Kameron Johnson    | TB     | WR    | 13.6%     |   +635 |
+|     20 | Kyle Williams      | NE     | WR    | 12.5%     |   +700 |
+|     21 | Tez Johnson        | TB     | WR    | 12.4%     |   +710 |
+|     22 | Sean Tucker        | TB     | RB    | 12.1%     |   +730 |
+|     23 | Jase McClellan     | TB     | RB    | 11.9%     |   +741 |
++--------+--------------------+--------+-------+-----------+--------+

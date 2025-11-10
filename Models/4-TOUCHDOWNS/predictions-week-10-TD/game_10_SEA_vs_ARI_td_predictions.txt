@@ -2,19 +2,34 @@
 SEA vs ARI | Week 10 2025 | Anytime TD Probabilities
 ================================================================================
 
-+---------------------+--------+-------+-----------+--------+
-| Player              | Team   | Pos   | TD Prob   |   Odds |
-+=====================+========+=======+===========+========+
-| Zach Charbonnet     | SEA    | RB    | 40.1%     |   +150 |
-| Marvin Harrison Jr. | ARI    | WR    | 37.5%     |   +167 |
-| Kenneth Walker III  | SEA    | RB    | 33.9%     |   +195 |
-| Myles Gaskin        | SEA    | RB    | 33.8%     |   +196 |
-| AJ Barner           | SEA    | TE    | 31.2%     |   +221 |
-| Zay Jones           | ARI    | WR    | 27.8%     |   +259 |
-| Jaxon Smith-Njigba  | SEA    | WR    | 27.1%     |   +269 |
-| Xavier Weaver       | ARI    | WR    | 26.5%     |   +277 |
-| Steven Sims         | SEA    | WR    | 26.5%     |   +278 |
-| Bam Knight          | ARI    | RB    | 26.2%     |   +282 |
-| Jalen Brooks        | ARI    | WR    | 26.2%     |   +282 |
-| Simi Fehoko         | ARI    | WR    | 26.1%     |   +283 |
-+---------------------+--------+-------+-----------+--------+
++--------+---------------------+--------+-------+-----------+--------+
+|   Rank | Player              | Team   | Pos   | TD Prob   |   Odds |
++========+=====================+========+=======+===========+========+
+|      1 | AJ Barner           | SEA    | TE    | 46.5%     |   +115 |
+|      2 | Zach Charbonnet     | SEA    | RB    | 41.0%     |   +144 |
+|      3 | Kenneth Walker III  | SEA    | RB    | 30.7%     |   +226 |
+|      4 | Myles Gaskin        | SEA    | RB    | 30.5%     |   +228 |
+|      5 | Marvin Harrison Jr. | ARI    | WR    | 28.6%     |   +249 |
+|      6 | Trey McBride        | ARI    | TE    | 24.0%     |   +317 |
+|      7 | Bam Knight          | ARI    | RB    | 19.3%     |   +419 |
+|      8 | Michael Carter      | ARI    | RB    | 18.2%     |   +449 |
+|      9 | Josiah Deguara      | ARI    | TE    | 17.3%     |   +478 |
+|     10 | George Holani       | SEA    | RB    | 17.2%     |   +481 |
+|     11 | Elijah Arroyo       | SEA    | TE    | 16.1%     |   +520 |
+|     12 | Zay Jones           | ARI    | WR    | 15.3%     |   +553 |
+|     13 | Jaxon Smith-Njigba  | SEA    | WR    | 14.5%     |   +591 |
+|     14 | Velus Jones Jr.     | SEA    | RB    | 14.2%     |   +603 |
+|     15 | Xavier Weaver       | ARI    | WR    | 13.8%     |   +624 |
+|     16 | Steven Sims         | SEA    | WR    | 13.8%     |   +626 |
+|     17 | Jalen Brooks        | ARI    | WR    | 13.5%     |   +643 |
+|     18 | Simi Fehoko         | ARI    | WR    | 13.4%     |   +646 |
+|     19 | Andre Baccellia     | ARI    | WR    | 13.2%     |   +660 |
+|     20 | Michael Wilson      | ARI    | WR    | 13.1%     |   +662 |
+|     21 | Emari Demercado     | ARI    | RB    | 12.8%     |   +680 |
+|     22 | Jermar Jefferson    | ARI    | RB    | 12.8%     |   +683 |
+|     23 | Greg Dortch         | ARI    | WR    | 12.2%     |   +721 |
+|     24 | Elijah Higgins      | ARI    | TE    | 12.1%     |   +726 |
+|     25 | Trishton Jackson    | ARI    | WR    | 11.8%     |   +750 |
+|     26 | Tory Horton         | SEA    | WR    | 11.4%     |   +779 |
+|     27 | Pharaoh Brown       | ARI    | TE    | 10.9%     |   +817 |
++--------+---------------------+--------+-------+-----------+--------+

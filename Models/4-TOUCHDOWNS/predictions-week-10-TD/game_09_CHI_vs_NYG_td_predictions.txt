@@ -2,19 +2,30 @@
 CHI vs NYG | Week 10 2025 | Anytime TD Probabilities
 ================================================================================
 
-+----------------------+--------+-------+-----------+--------+
-| Player               | Team   | Pos   | TD Prob   |   Odds |
-+======================+========+=======+===========+========+
-| DJ Moore             | CHI    | WR    | 39.5%     |   +153 |
-| Wan'Dale Robinson    | NYG    | WR    | 39.0%     |   +157 |
-| Rome Odunze          | CHI    | WR    | 38.9%     |   +157 |
-| Royce Freeman        | CHI    | RB    | 33.4%     |   +200 |
-| Kyle Monangai        | CHI    | RB    | 32.7%     |   +205 |
-| Gunner Olszewski     | NYG    | WR    | 32.7%     |   +206 |
-| Olamide Zaccheaus    | CHI    | WR    | 32.5%     |   +208 |
-| Ray-Ray McCloud      | NYG    | WR    | 31.9%     |   +213 |
-| Darius Slayton       | NYG    | WR    | 29.8%     |   +235 |
-| Lil'Jordan Humphrey  | NYG    | WR    | 29.4%     |   +240 |
-| Theo Johnson         | NYG    | TE    | 28.0%     |   +257 |
-| Ihmir Smith-Marsette | NYG    | WR    | 27.5%     |   +263 |
-+----------------------+--------+-------+-----------+--------+
++--------+----------------------+--------+-------+-----------+--------+
+|   Rank | Player               | Team   | Pos   | TD Prob   |   Odds |
++========+======================+========+=======+===========+========+
+|      1 | Theo Johnson         | NYG    | TE    | 37.3%     |   +168 |
+|      2 | DJ Moore             | CHI    | WR    | 31.8%     |   +214 |
+|      3 | Wan'Dale Robinson    | NYG    | WR    | 30.9%     |   +223 |
+|      4 | Rome Odunze          | CHI    | WR    | 30.8%     |   +225 |
+|      5 | Royce Freeman        | CHI    | RB    | 29.8%     |   +235 |
+|      6 | Kyle Monangai        | CHI    | RB    | 28.8%     |   +247 |
+|      7 | Gunner Olszewski     | NYG    | WR    | 21.5%     |   +366 |
+|      8 | Olamide Zaccheaus    | CHI    | WR    | 21.2%     |   +372 |
+|      9 | Ray-Ray McCloud      | NYG    | WR    | 20.4%     |   +389 |
+|     10 | Tyrone Tracy Jr.     | NYG    | RB    | 17.9%     |   +459 |
+|     11 | Darius Slayton       | NYG    | WR    | 17.7%     |   +464 |
+|     12 | Lil'Jordan Humphrey  | NYG    | WR    | 17.2%     |   +481 |
+|     13 | Chris Manhertz       | NYG    | TE    | 17.0%     |   +487 |
+|     14 | Travis Homer         | CHI    | RB    | 16.1%     |   +522 |
+|     15 | Devin Singletary     | NYG    | RB    | 15.2%     |   +556 |
+|     16 | Ihmir Smith-Marsette | NYG    | WR    | 15.0%     |   +568 |
+|     17 | Jalin Hyatt          | NYG    | WR    | 14.9%     |   +572 |
+|     18 | Montrell Washington  | NYG    | WR    | 14.0%     |   +615 |
+|     19 | Miles Boykin         | CHI    | WR    | 13.7%     |   +628 |
+|     20 | Colston Loveland     | CHI    | TE    | 13.5%     |   +639 |
+|     21 | Durham Smythe        | CHI    | TE    | 12.4%     |   +706 |
+|     22 | Devin Duvernay       | CHI    | WR    | 12.2%     |   +717 |
+|     23 | Stephen Carlson      | CHI    | TE    | 11.0%     |   +808 |
++--------+----------------------+--------+-------+-----------+--------+

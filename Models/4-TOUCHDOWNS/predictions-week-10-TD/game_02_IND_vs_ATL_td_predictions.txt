@@ -2,19 +2,35 @@
 IND vs ATL | Week 10 2025 | Anytime TD Probabilities
 ================================================================================
 
-+------------------+--------+-------+-----------+--------+
-| Player           | Team   | Pos   | TD Prob   |   Odds |
-+==================+========+=======+===========+========+
-| Jonathan Taylor  | IND    | RB    | 55.0%     |   -122 |
-| Drake London     | ATL    | WR    | 45.0%     |   +122 |
-| Jamal Agnew      | ATL    | WR    | 40.7%     |   +145 |
-| Michael Pittman  | IND    | WR    | 39.9%     |   +151 |
-| Josh Downs       | IND    | WR    | 37.4%     |   +167 |
-| Darnell Mooney   | ATL    | WR    | 32.4%     |   +208 |
-| Bijan Robinson   | ATL    | RB    | 32.2%     |   +211 |
-| Alec Pierce      | IND    | WR    | 30.0%     |   +234 |
-| Deven Thompkins  | ATL    | WR    | 29.7%     |   +237 |
-| Laquon Treadwell | IND    | WR    | 28.1%     |   +256 |
-| David Sills      | ATL    | WR    | 28.0%     |   +258 |
-| KhaDarel Hodge   | ATL    | WR    | 26.9%     |   +272 |
-+------------------+--------+-------+-----------+--------+
++--------+-------------------+--------+-------+-----------+--------+
+|   Rank | Player            | Team   | Pos   | TD Prob   |   Odds |
++========+===================+========+=======+===========+========+
+|      1 | Jonathan Taylor   | IND    | RB    | 78.8%     |   -372 |
+|      2 | Drake London      | ATL    | WR    | 44.7%     |   +124 |
+|      3 | Jamal Agnew       | ATL    | WR    | 33.9%     |   +195 |
+|      4 | Michael Pittman   | IND    | WR    | 32.4%     |   +208 |
+|      5 | Josh Downs        | IND    | WR    | 28.5%     |   +251 |
+|      6 | Bijan Robinson    | ATL    | RB    | 27.9%     |   +258 |
+|      7 | Darnell Mooney    | ATL    | WR    | 21.2%     |   +373 |
+|      8 | Tyler Allgeier    | ATL    | RB    | 20.1%     |   +397 |
+|      9 | Feleipe Franks    | ATL    | TE    | 19.6%     |   +410 |
+|     10 | Tyler Goodson     | IND    | RB    | 19.1%     |   +424 |
+|     11 | Alec Pierce       | IND    | WR    | 17.9%     |   +459 |
+|     12 | Deven Thompkins   | ATL    | WR    | 17.5%     |   +471 |
+|     13 | Charlie Woerner   | ATL    | TE    | 17.4%     |   +476 |
+|     14 | Kyle Pitts        | ATL    | TE    | 16.6%     |   +502 |
+|     15 | Laquon Treadwell  | IND    | WR    | 15.6%     |   +542 |
+|     16 | David Sills       | ATL    | WR    | 15.5%     |   +547 |
+|     17 | Ameer Abdullah    | IND    | RB    | 14.7%     |   +580 |
+|     18 | KhaDarel Hodge    | ATL    | WR    | 14.2%     |   +602 |
+|     19 | DJ Giddens        | IND    | RB    | 13.8%     |   +626 |
+|     20 | Teagan Quitoriano | ATL    | TE    | 12.5%     |   +701 |
+|     21 | Chris Blair       | ATL    | WR    | 12.4%     |   +704 |
+|     22 | Adonai Mitchell   | IND    | WR    | 12.3%     |   +714 |
+|     23 | Ashton Dulin      | IND    | WR    | 12.0%     |   +737 |
+|     24 | Mo Alie-Cox       | IND    | TE    | 10.7%     |   +837 |
+|     25 | Will Mallory      | IND    | TE    | 10.4%     |   +864 |
+|     26 | Tyler Warren      | IND    | TE    | 10.3%     |   +868 |
+|     27 | Sean McKeon       | IND    | TE    | 9.6%      |   +942 |
+|     28 | Andrew Ogletree   | IND    | TE    | 9.5%      |   +950 |
++--------+-------------------+--------+-------+-----------+--------+

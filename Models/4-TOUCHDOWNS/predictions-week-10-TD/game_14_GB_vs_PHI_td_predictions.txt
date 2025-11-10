@@ -2,19 +2,38 @@
 GB vs PHI | Week 10 2025 | Anytime TD Probabilities
 ================================================================================
 
-+-------------------+--------+-------+-----------+--------+
-| Player            | Team   | Pos   | TD Prob   |   Odds |
-+===================+========+=======+===========+========+
-| Josh Jacobs       | GB     | RB    | 53.0%     |   -113 |
-| DeVonta Smith     | PHI    | WR    | 32.4%     |   +208 |
-| Romeo Doubs       | GB     | WR    | 29.2%     |   +243 |
-| Savion Williams   | GB     | WR    | 27.5%     |   +264 |
-| Danny Gray        | PHI    | WR    | 27.3%     |   +266 |
-| Quez Watkins      | PHI    | WR    | 26.8%     |   +273 |
-| Mecole Hardman    | GB     | WR    | 26.8%     |   +274 |
-| Xavier Gipson     | PHI    | WR    | 26.7%     |   +274 |
-| Javon Baker       | PHI    | WR    | 26.6%     |   +275 |
-| Elijah Cooks      | PHI    | WR    | 26.6%     |   +275 |
-| Israel Abanikanda | GB     | RB    | 26.6%     |   +277 |
-| Jahan Dotson      | PHI    | WR    | 25.9%     |   +286 |
-+-------------------+--------+-------+-----------+--------+
++--------+----------------------+--------+-------+-----------+--------+
+|   Rank | Player               | Team   | Pos   | TD Prob   |   Odds |
++========+======================+========+=======+===========+========+
+|      1 | Josh Jacobs          | GB     | RB    | 63.7%     |   -175 |
+|      2 | Dallas Goedert       | PHI    | TE    | 30.6%     |   +227 |
+|      3 | E.J. Jenkins         | PHI    | TE    | 24.1%     |   +314 |
+|      4 | DeVonta Smith        | PHI    | WR    | 21.2%     |   +373 |
+|      5 | Israel Abanikanda    | GB     | RB    | 19.7%     |   +406 |
+|      6 | Jaheim Bell          | PHI    | TE    | 19.3%     |   +419 |
+|      7 | Grant Calcaterra     | PHI    | TE    | 18.4%     |   +445 |
+|      8 | Emanuel Wilson       | GB     | RB    | 17.1%     |   +484 |
+|      9 | Romeo Doubs          | GB     | WR    | 16.9%     |   +492 |
+|     10 | Tyrion Davis-Price   | GB     | RB    | 16.7%     |   +500 |
+|     11 | Kylen Granson        | PHI    | TE    | 15.7%     |   +535 |
+|     12 | Savion Williams      | GB     | WR    | 14.9%     |   +571 |
+|     13 | Danny Gray           | PHI    | WR    | 14.7%     |   +580 |
+|     14 | Tank Bigsby          | PHI    | RB    | 14.5%     |   +587 |
+|     15 | Quez Watkins         | PHI    | WR    | 14.1%     |   +607 |
+|     16 | Mecole Hardman       | GB     | WR    | 14.1%     |   +609 |
+|     17 | Xavier Gipson        | PHI    | WR    | 14.1%     |   +611 |
+|     18 | Elijah Cooks         | PHI    | WR    | 14.0%     |   +616 |
+|     19 | Javon Baker          | PHI    | WR    | 14.0%     |   +616 |
+|     20 | Pierre Strong        | GB     | RB    | 13.4%     |   +645 |
+|     21 | Jahan Dotson         | PHI    | WR    | 13.2%     |   +659 |
+|     22 | Britain Covey        | PHI    | WR    | 12.9%     |   +674 |
+|     23 | Chris Brooks         | GB     | RB    | 12.9%     |   +674 |
+|     24 | AJ Dillon            | PHI    | RB    | 12.7%     |   +686 |
+|     25 | Terrace Marshall Jr. | PHI    | WR    | 12.5%     |   +698 |
+|     26 | Malik Heath          | GB     | WR    | 11.9%     |   +738 |
+|     27 | Will Shipley         | PHI    | RB    | 11.8%     |   +750 |
+|     28 | Christian Watson     | GB     | WR    | 10.9%     |   +817 |
+|     29 | Luke Musgrave        | GB     | TE    | 10.1%     |   +888 |
+|     30 | Josh Whyle           | GB     | TE    | 9.7%      |   +929 |
+|     31 | John FitzPatrick     | GB     | TE    | 9.2%      |   +988 |
++--------+----------------------+--------+-------+-----------+--------+

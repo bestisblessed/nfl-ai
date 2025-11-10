@@ -2,19 +2,43 @@
 MIA vs BUF | Week 10 2025 | Anytime TD Probabilities
 ================================================================================
 
-+-----------------------+--------+-------+-----------+--------+
-| Player                | Team   | Pos   | TD Prob   |   Odds |
-+=======================+========+=======+===========+========+
-| De'Von Achane         | MIA    | RB    | 47.1%     |   +112 |
-| Kristian Wilkerson    | BUF    | WR    | 42.9%     |   +133 |
-| James Cook            | BUF    | RB    | 36.2%     |   +176 |
-| Jaylen Waddle         | MIA    | WR    | 36.0%     |   +178 |
-| Malik Washington      | MIA    | WR    | 33.2%     |   +202 |
-| Khalil Shakir         | BUF    | WR    | 32.6%     |   +206 |
-| Nick Westbrook-Ikhine | MIA    | WR    | 31.2%     |   +220 |
-| Cedrick Wilson Jr.    | MIA    | WR    | 31.0%     |   +223 |
-| Keon Coleman          | BUF    | WR    | 29.9%     |   +235 |
-| Gabe Davis            | BUF    | WR    | 29.8%     |   +235 |
-| Tyrell Shavers        | BUF    | WR    | 29.2%     |   +242 |
-| Josh Palmer           | BUF    | WR    | 28.9%     |   +246 |
-+-----------------------+--------+-------+-----------+--------+
++--------+-----------------------+--------+-------+-----------+--------+
+|   Rank | Player                | Team   | Pos   | TD Prob   |   Odds |
++========+=======================+========+=======+===========+========+
+|      1 | De'Von Achane         | MIA    | RB    | 53.5%     |   -115 |
+|      2 | Kristian Wilkerson    | BUF    | WR    | 37.6%     |   +166 |
+|      3 | James Cook            | BUF    | RB    | 34.4%     |   +191 |
+|      4 | Dalton Kincaid        | BUF    | TE    | 29.8%     |   +236 |
+|      5 | Jaylen Waddle         | MIA    | WR    | 26.3%     |   +280 |
+|      6 | Jeff Wilson           | MIA    | RB    | 22.8%     |   +338 |
+|      7 | Malik Washington      | MIA    | WR    | 22.2%     |   +351 |
+|      8 | Khalil Shakir         | BUF    | WR    | 21.4%     |   +366 |
+|      9 | Nick Westbrook-Ikhine | MIA    | WR    | 19.5%     |   +412 |
+|     10 | Cedrick Wilson Jr.    | MIA    | WR    | 19.2%     |   +421 |
+|     11 | Keon Coleman          | BUF    | WR    | 17.8%     |   +462 |
+|     12 | Gabe Davis            | BUF    | WR    | 17.8%     |   +463 |
+|     13 | Dawson Knox           | BUF    | TE    | 17.7%     |   +466 |
+|     14 | Tyrell Shavers        | BUF    | WR    | 17.0%     |   +489 |
+|     15 | JaMycal Hasty         | MIA    | RB    | 16.9%     |   +490 |
+|     16 | Josh Palmer           | BUF    | WR    | 16.6%     |   +502 |
+|     17 | Alec Ingold           | MIA    | RB    | 16.6%     |   +504 |
+|     18 | Mike Boone            | MIA    | RB    | 16.5%     |   +506 |
+|     19 | Jaylen Wright         | MIA    | RB    | 15.1%     |   +560 |
+|     20 | KJ Hamler             | BUF    | WR    | 14.7%     |   +581 |
+|     21 | Aaron Shampklin       | MIA    | RB    | 14.7%     |   +582 |
+|     22 | Reggie Gilliam        | BUF    | RB    | 14.5%     |   +588 |
+|     23 | Deon Cain             | BUF    | WR    | 14.5%     |   +592 |
+|     24 | Curtis Samuel         | BUF    | WR    | 14.3%     |   +602 |
+|     25 | Ty Johnson            | BUF    | RB    | 14.2%     |   +603 |
+|     26 | Ray Davis             | BUF    | RB    | 13.7%     |   +628 |
+|     27 | Dee Eskridge          | MIA    | WR    | 13.6%     |   +635 |
+|     28 | Grant DuBose          | BUF    | WR    | 13.0%     |   +667 |
+|     29 | Darrynton Evans       | BUF    | RB    | 12.7%     |   +688 |
+|     30 | Jalen Virgil          | BUF    | WR    | 12.6%     |   +692 |
+|     31 | Elijah Moore          | BUF    | WR    | 12.6%     |   +692 |
+|     32 | Jackson Hawes         | BUF    | TE    | 12.6%     |   +695 |
+|     33 | Laviska Shenault Jr.  | BUF    | WR    | 11.1%     |   +798 |
+|     34 | Greg Dulcich          | MIA    | TE    | 11.1%     |   +804 |
+|     35 | Tanner Conner         | MIA    | TE    | 10.0%     |   +895 |
+|     36 | Chris Myarick         | MIA    | TE    | 9.6%      |   +945 |
++--------+-----------------------+--------+-------+-----------+--------+

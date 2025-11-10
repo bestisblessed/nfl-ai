@@ -2,19 +2,41 @@
 LAC vs PIT | Week 10 2025 | Anytime TD Probabilities
 ================================================================================
 
-+-----------------------+--------+-------+-----------+--------+
-| Player                | Team   | Pos   | TD Prob   |   Odds |
-+=======================+========+=======+===========+========+
-| Keenan Allen          | LAC    | WR    | 42.3%     |   +136 |
-| Quentin Johnston      | LAC    | WR    | 40.7%     |   +146 |
-| Ladd McConkey         | LAC    | WR    | 39.4%     |   +154 |
-| Jaylen Warren         | PIT    | RB    | 35.5%     |   +182 |
-| Kimani Vidal          | LAC    | RB    | 31.8%     |   +214 |
-| Tre Harris            | LAC    | WR    | 29.9%     |   +235 |
-| Mike Williams         | LAC    | WR    | 27.1%     |   +269 |
-| DK Metcalf            | PIT    | WR    | 27.1%     |   +269 |
-| Roman Wilson          | PIT    | WR    | 26.4%     |   +279 |
-| KeAndre Lambert-Smith | LAC    | WR    | 25.8%     |   +287 |
-| Jalen Reagor          | LAC    | WR    | 25.8%     |   +288 |
-| Derius Davis          | LAC    | WR    | 25.7%     |   +288 |
-+-----------------------+--------+-------+-----------+--------+
++--------+-----------------------+--------+-------+-----------+--------+
+|   Rank | Player                | Team   | Pos   | TD Prob   |   Odds |
++========+=======================+========+=======+===========+========+
+|      1 | Keenan Allen          | LAC    | WR    | 36.5%     |   +174 |
+|      2 | Quentin Johnston      | LAC    | WR    | 33.9%     |   +195 |
+|      3 | Jaylen Warren         | PIT    | RB    | 33.3%     |   +201 |
+|      4 | Ladd McConkey         | LAC    | WR    | 31.6%     |   +216 |
+|      5 | Pat Freiermuth        | PIT    | TE    | 30.9%     |   +223 |
+|      6 | Kimani Vidal          | LAC    | RB    | 27.4%     |   +265 |
+|      7 | Oronde Gadsden II     | LAC    | TE    | 25.0%     |   +301 |
+|      8 | Tre Harris            | LAC    | WR    | 17.8%     |   +462 |
+|      9 | Jaret Patterson       | LAC    | RB    | 17.7%     |   +465 |
+|     10 | Kenneth Gainwell      | PIT    | RB    | 15.5%     |   +544 |
+|     11 | Tyler Conklin         | LAC    | TE    | 14.7%     |   +578 |
+|     12 | Mike Williams         | LAC    | WR    | 14.5%     |   +590 |
+|     13 | DK Metcalf            | PIT    | WR    | 14.5%     |   +590 |
+|     14 | Donald Parham         | PIT    | TE    | 14.0%     |   +613 |
+|     15 | Darnell Washington    | PIT    | TE    | 13.9%     |   +618 |
+|     16 | Roman Wilson          | PIT    | WR    | 13.7%     |   +632 |
+|     17 | Tucker Fisk           | LAC    | TE    | 13.6%     |   +638 |
+|     18 | Jonnu Smith           | PIT    | TE    | 13.5%     |   +638 |
+|     19 | KeAndre Lambert-Smith | LAC    | WR    | 13.1%     |   +665 |
+|     20 | Jalen Reagor          | LAC    | WR    | 13.0%     |   +669 |
+|     21 | Derius Davis          | LAC    | WR    | 13.0%     |   +670 |
+|     22 | Scott Matlock         | LAC    | RB    | 12.9%     |   +678 |
+|     23 | Trey Sermon           | PIT    | RB    | 12.7%     |   +689 |
+|     24 | Trayveon Williams     | LAC    | RB    | 12.6%     |   +691 |
+|     25 | Raheem Blackshear     | PIT    | RB    | 12.5%     |   +697 |
+|     26 | Calvin Austin III     | PIT    | WR    | 12.5%     |   +701 |
+|     27 | Nyheim Hines          | LAC    | RB    | 12.0%     |   +730 |
+|     28 | Robert Woods          | PIT    | WR    | 12.0%     |   +737 |
+|     29 | Ben Skowronek         | PIT    | WR    | 11.9%     |   +739 |
+|     30 | Kaleb Johnson         | PIT    | RB    | 11.8%     |   +744 |
+|     31 | Isaiah Hodgins        | PIT    | WR    | 11.6%     |   +764 |
+|     32 | Scott Miller          | PIT    | WR    | 11.4%     |   +778 |
+|     33 | Rakim Jarrett         | PIT    | WR    | 11.4%     |   +778 |
+|     34 | Connor Heyward        | PIT    | TE    | 10.4%     |   +859 |
++--------+-----------------------+--------+-------+-----------+--------+

@@ -2,19 +2,33 @@
 NYJ vs CLE | Week 10 2025 | Anytime TD Probabilities
 ================================================================================
 
-+-------------------+--------+-------+-----------+--------+
-| Player            | Team   | Pos   | TD Prob   |   Odds |
-+===================+========+=======+===========+========+
-| Jerry Jeudy       | CLE    | WR    | 36.2%     |   +176 |
-| Harold Fannin Jr. | CLE    | TE    | 34.1%     |   +194 |
-| Tyler Johnson     | NYJ    | WR    | 32.7%     |   +206 |
-| David Njoku       | CLE    | TE    | 32.2%     |   +211 |
-| Diontae Johnson   | CLE    | WR    | 31.4%     |   +218 |
-| Trenton Irwin     | NYJ    | WR    | 29.7%     |   +236 |
-| Allen Lazard      | NYJ    | WR    | 29.4%     |   +240 |
-| John Metchie III  | NYJ    | WR    | 29.4%     |   +240 |
-| David Bell        | CLE    | WR    | 29.1%     |   +244 |
-| Breece Hall       | NYJ    | RB    | 28.9%     |   +246 |
-| Isaiah Williams   | NYJ    | WR    | 28.3%     |   +254 |
-| Arian Smith       | NYJ    | WR    | 26.4%     |   +278 |
-+-------------------+--------+-------+-----------+--------+
++--------+-------------------+--------+-------+-----------+--------+
+|   Rank | Player            | Team   | Pos   | TD Prob   |   Odds |
++========+===================+========+=======+===========+========+
+|      1 | Harold Fannin Jr. | CLE    | TE    | 55.0%     |   -122 |
+|      2 | David Njoku       | CLE    | TE    | 49.4%     |   +102 |
+|      3 | Mason Taylor      | NYJ    | TE    | 30.2%     |   +232 |
+|      4 | Jelani Woods      | NYJ    | TE    | 28.9%     |   +246 |
+|      5 | Jerry Jeudy       | CLE    | WR    | 26.6%     |   +277 |
+|      6 | Brenden Bates     | CLE    | TE    | 24.1%     |   +314 |
+|      7 | Breece Hall       | NYJ    | RB    | 23.0%     |   +336 |
+|      8 | Tyler Johnson     | NYJ    | WR    | 21.5%     |   +365 |
+|      9 | Diontae Johnson   | CLE    | WR    | 19.8%     |   +405 |
+|     10 | Blake Whiteheart  | CLE    | TE    | 18.3%     |   +446 |
+|     11 | Trenton Irwin     | NYJ    | WR    | 17.6%     |   +469 |
+|     12 | Jerome Ford       | CLE    | RB    | 17.4%     |   +474 |
+|     13 | Allen Lazard      | NYJ    | WR    | 17.2%     |   +480 |
+|     14 | John Metchie III  | NYJ    | WR    | 17.2%     |   +482 |
+|     15 | David Bell        | CLE    | WR    | 16.8%     |   +495 |
+|     16 | Isaiah Williams   | NYJ    | WR    | 15.8%     |   +532 |
+|     17 | Dylan Sampson     | CLE    | RB    | 15.7%     |   +537 |
+|     18 | Khalil Herbert    | NYJ    | RB    | 14.4%     |   +595 |
+|     19 | Arian Smith       | NYJ    | WR    | 13.7%     |   +627 |
+|     20 | Isaiah Davis      | NYJ    | RB    | 13.7%     |   +629 |
+|     21 | Jamari Thrash     | CLE    | WR    | 13.2%     |   +655 |
+|     22 | Avery Williams    | NYJ    | RB    | 13.0%     |   +667 |
+|     23 | Andrew Beck       | NYJ    | RB    | 12.8%     |   +679 |
+|     24 | Gage Larvadain    | CLE    | WR    | 12.6%     |   +694 |
+|     25 | Malachi Corley    | CLE    | WR    | 12.1%     |   +729 |
+|     26 | Jeremy Ruckert    | NYJ    | TE    | 11.7%     |   +751 |
++--------+-------------------+--------+-------+-----------+--------+

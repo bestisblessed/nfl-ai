@@ -2,19 +2,37 @@
 CAR vs NO | Week 10 2025 | Anytime TD Probabilities
 ================================================================================
 
-+-------------------+--------+-------+-----------+--------+
-| Player            | Team   | Pos   | TD Prob   |   Odds |
-+===================+========+=======+===========+========+
-| Chuba Hubbard     | CAR    | RB    | 41.5%     |   +141 |
-| Chris Olave       | NO     | WR    | 39.2%     |   +155 |
-| Rashid Shaheed    | NO     | WR    | 36.6%     |   +173 |
-| Tetairoa McMillan | CAR    | WR    | 35.4%     |   +183 |
-| Alvin Kamara      | NO     | RB    | 32.2%     |   +211 |
-| Xavier Legette    | CAR    | WR    | 31.8%     |   +214 |
-| Jalen Coker       | CAR    | WR    | 31.1%     |   +222 |
-| Audric Estimé     | NO     | RB    | 30.9%     |   +223 |
-| Ainias Smith      | CAR    | WR    | 30.8%     |   +225 |
-| Hunter Renfrow    | CAR    | WR    | 29.5%     |   +239 |
-| Brycen Tremayne   | CAR    | WR    | 28.6%     |   +250 |
-| Brandin Cooks     | NO     | WR    | 28.0%     |   +257 |
-+-------------------+--------+-------+-----------+--------+
++--------+----------------------+--------+-------+-----------+--------+
+|   Rank | Player               | Team   | Pos   | TD Prob   |   Odds |
++========+======================+========+=======+===========+========+
+|      1 | Chuba Hubbard        | CAR    | RB    | 43.5%     |   +130 |
+|      2 | Chris Olave          | NO     | WR    | 31.3%     |   +219 |
+|      3 | Juwan Johnson        | NO     | TE    | 28.0%     |   +258 |
+|      4 | Alvin Kamara         | NO     | RB    | 27.9%     |   +258 |
+|      5 | Rashid Shaheed       | NO     | WR    | 27.3%     |   +267 |
+|      6 | Audric Estimé        | NO     | RB    | 26.0%     |   +284 |
+|      7 | Tetairoa McMillan    | CAR    | WR    | 25.4%     |   +294 |
+|      8 | Xavier Legette       | CAR    | WR    | 20.3%     |   +392 |
+|      9 | Trevor Etienne       | CAR    | RB    | 19.8%     |   +406 |
+|     10 | Jalen Coker          | CAR    | WR    | 19.3%     |   +417 |
+|     11 | Foster Moreau        | NO     | TE    | 19.2%     |   +420 |
+|     12 | Ainias Smith         | CAR    | WR    | 18.9%     |   +429 |
+|     13 | Ja'Tavion Sanders    | CAR    | TE    | 17.8%     |   +462 |
+|     14 | Hunter Renfrow       | CAR    | WR    | 17.3%     |   +478 |
+|     15 | Brycen Tremayne      | CAR    | WR    | 16.2%     |   +516 |
+|     16 | Tommy Tremble        | CAR    | TE    | 15.8%     |   +535 |
+|     17 | Zaire Mitchell-Paden | NO     | TE    | 15.7%     |   +536 |
+|     18 | Brandin Cooks        | NO     | WR    | 15.5%     |   +544 |
+|     19 | Dante Pettis         | NO     | WR    | 15.4%     |   +551 |
+|     20 | DeeJay Dallas        | CAR    | RB    | 14.6%     |   +586 |
+|     21 | Dan Chisena          | CAR    | WR    | 13.3%     |   +654 |
+|     22 | Devin Neal           | NO     | RB    | 13.2%     |   +658 |
+|     23 | Devaughn Vele        | NO     | WR    | 13.1%     |   +662 |
+|     24 | Mitchell Evans       | CAR    | TE    | 12.4%     |   +704 |
+|     25 | Mason Tipton         | NO     | WR    | 12.2%     |   +719 |
+|     26 | Kevin Austin Jr.     | NO     | WR    | 12.2%     |   +720 |
+|     27 | Ronnie Bell          | NO     | WR    | 11.9%     |   +740 |
+|     28 | Jimmy Horn Jr.       | CAR    | WR    | 10.8%     |   +823 |
+|     29 | James Mitchell       | CAR    | TE    | 10.6%     |   +844 |
+|     30 | Dominique Dafney     | CAR    | TE    | 10.5%     |   +857 |
++--------+----------------------+--------+-------+-----------+--------+

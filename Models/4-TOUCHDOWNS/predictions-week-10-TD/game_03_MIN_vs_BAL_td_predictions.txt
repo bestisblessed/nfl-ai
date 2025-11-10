@@ -2,19 +2,35 @@
 MIN vs BAL | Week 10 2025 | Anytime TD Probabilities
 ================================================================================
 
-+------------------+--------+-------+-----------+--------+
-| Player           | Team   | Pos   | TD Prob   |   Odds |
-+==================+========+=======+===========+========+
-| Justin Jefferson | MIN    | WR    | 45.0%     |   +122 |
-| Jordan Mason     | MIN    | RB    | 39.7%     |   +152 |
-| Jordan Addison   | MIN    | WR    | 37.9%     |   +164 |
-| Zay Flowers      | BAL    | WR    | 36.8%     |   +172 |
-| Aaron Jones      | MIN    | RB    | 35.5%     |   +182 |
-| Mark Andrews     | BAL    | TE    | 35.0%     |   +186 |
-| Rashod Bateman   | BAL    | WR    | 32.3%     |   +210 |
-| Adam Thielen     | MIN    | WR    | 31.1%     |   +222 |
-| Keith Kirkwood   | BAL    | WR    | 28.4%     |   +252 |
-| Isaiah Likely    | BAL    | TE    | 27.5%     |   +264 |
-| Zavier Scott     | MIN    | RB    | 27.4%     |   +265 |
-| Colton Dowell    | BAL    | WR    | 27.3%     |   +267 |
-+------------------+--------+-------+-----------+--------+
++--------+------------------+--------+-------+-----------+--------+
+|   Rank | Player           | Team   | Pos   | TD Prob   |   Odds |
++========+==================+========+=======+===========+========+
+|      1 | Mark Andrews     | BAL    | TE    | 63.9%     |   -177 |
+|      2 | Justin Jefferson | MIN    | WR    | 43.6%     |   +129 |
+|      3 | Jordan Mason     | MIN    | RB    | 40.4%     |   +147 |
+|      4 | Isaiah Likely    | BAL    | TE    | 35.9%     |   +179 |
+|      5 | Aaron Jones      | MIN    | RB    | 33.2%     |   +201 |
+|      6 | Jordan Addison   | MIN    | WR    | 29.2%     |   +243 |
+|      7 | Zay Flowers      | BAL    | WR    | 27.6%     |   +263 |
+|      8 | Charlie Kolar    | BAL    | TE    | 24.3%     |   +311 |
+|      9 | Rashod Bateman   | BAL    | WR    | 20.9%     |   +378 |
+|     10 | Zavier Scott     | MIN    | RB    | 20.9%     |   +378 |
+|     11 | Derrick Henry    | BAL    | RB    | 19.9%     |   +404 |
+|     12 | Adam Thielen     | MIN    | WR    | 19.3%     |   +417 |
+|     13 | Cam Akers        | MIN    | RB    | 18.1%     |   +452 |
+|     14 | Justice Hill     | BAL    | RB    | 16.0%     |   +525 |
+|     15 | Keith Kirkwood   | BAL    | WR    | 16.0%     |   +526 |
+|     16 | Colton Dowell    | BAL    | WR    | 14.6%     |   +583 |
+|     17 | Jalen Nailor     | MIN    | WR    | 14.3%     |   +599 |
+|     18 | T.J. Hockenson   | MIN    | TE    | 14.1%     |   +612 |
+|     19 | Anthony Miller   | BAL    | WR    | 14.0%     |   +612 |
+|     20 | Keaton Mitchell  | BAL    | RB    | 13.7%     |   +632 |
+|     21 | DeAndre Hopkins  | BAL    | WR    | 13.2%     |   +658 |
+|     22 | Tylan Wallace    | BAL    | WR    | 13.0%     |   +667 |
+|     23 | Patrick Ricard   | BAL    | RB    | 12.1%     |   +725 |
+|     24 | Devontez Walker  | BAL    | WR    | 11.9%     |   +741 |
+|     25 | Rasheen Ali      | BAL    | RB    | 11.4%     |   +774 |
+|     26 | Giovanni Ricci   | MIN    | TE    | 10.7%     |   +831 |
+|     27 | Nick Vannett     | MIN    | TE    | 10.3%     |   +874 |
+|     28 | Ben Sims         | MIN    | TE    | 9.9%      |   +912 |
++--------+------------------+--------+-------+-----------+--------+
