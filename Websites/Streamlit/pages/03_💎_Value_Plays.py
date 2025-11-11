@@ -169,7 +169,11 @@ if not available_weeks:
     )
     st.stop()
 
-st.sidebar.header("Week & Filters")
+# st.sidebar.header("Filters")
+st.sidebar.markdown(
+    "<h2 style='text-align: center;'>Filters</h2>",
+    unsafe_allow_html=True
+)
 selected_week = st.sidebar.selectbox(
     "Select Week:",
     options=[f"Week {week}" for week in available_weeks],
@@ -214,6 +218,24 @@ selected_game = st.sidebar.selectbox(
     options=game_options,
     index=0,
 )
+st.sidebar.write("")
+
+# Legend for edge indicators in sidebar
+# st.sidebar.markdown("---")
+# st.sidebar.markdown("### Edge % Indicators")
+st.sidebar.markdown("""
+    <div style='text-align: center;'>
+        <div style='font-size: 1.2rem; font-weight: 600; margin-bottom: 8px;'>Legend</div>
+        <div style='font-size: 1rem; color: #666; margin: 1px 0'>⚡️ Edge &gt; 25%</div>
+        <div style='font-size: 1rem; color: #666; margin: 1px 0'>💎 Edge &gt; 50%</div>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+# st.sidebar.markdown("⚡️ Edge > 25%")
+# st.sidebar.markdown("💎 Edge > 50%")
+st.sidebar.write("")
+st.sidebar.write("")
 
 st.divider()
 
@@ -269,16 +291,12 @@ if selected_game != "All Games":
         
         # Calculate % edge
         prop_data["edge_pct"] = (prop_data["edge_yards"] / prop_data["best_point"] * 100).round(1)
-        prop_data["edge_marker"] = prop_data["edge_pct"].apply(
-            lambda pct: "🔥🔥" if pd.notna(pct) and pct >= 25 else ("🔥" if pd.notna(pct) and pct >= 10 else "")
-        )
         
         # Section header for prop type
         st.markdown(f"### {prop_type.upper()}")
         
         display_df = prop_data[
             [
-                "edge_marker",
                 "rank",
                 "player",
                 "position",
@@ -295,7 +313,6 @@ if selected_game != "All Games":
         ].rename(
             columns={
                 "rank": "#",
-                "edge_marker": "🔥",
                 "player": "Player",
                 "position": "Pos",
                 "team": "Team",
@@ -304,21 +321,39 @@ if selected_game != "All Games":
                 "best_point": "Line",
                 "best_price": "Odds",
                 "predicted_yards": "Pred",
-                "edge_yards": "Edge",
+                "edge_yards": "Edge (yds)",
                 "edge_pct": "Edge %",
                 "bookmaker": "Book",
             }
         )
         
-        display_df = display_df[["🔥", "#", "Player", "Pos", "Team", "Opp", "Side", "Line", "Odds", "Pred", "Edge", "Edge %", "Book"]]
-
         display_df["Line"] = display_df["Line"].round(1)
         display_df["Odds"] = display_df["Odds"].round().astype("Int64")
         display_df["Pred"] = display_df["Pred"].round(1)
-        display_df["Edge"] = display_df["Edge"].round(1)
-        display_df["Edge %"] = display_df["Edge %"].apply(
-            lambda pct: "-" if pd.isna(pct) else f"{pct:.1f}%"
+        display_df["Edge (yds)"] = display_df["Edge (yds)"].round(1)
+        # Keep edge_pct numeric for sorting
+        edge_pct_numeric = display_df["Edge %"].copy()
+        # Create formatted display version
+        display_df["Edge % Display"] = display_df["Edge %"].apply(
+            lambda pct: "-" if pd.isna(pct) else (
+                f"{pct:.1f}% 💎" if pct > 50 else (
+                    f"{pct:.1f}% ⚡️" if pct > 25 else f"{pct:.1f}%"
+                )
+            )
         )
+        # Keep Edge % numeric for sorting, format for display in styling
+        display_df["Edge %"] = edge_pct_numeric
+        display_df = display_df[["#", "Player", "Pos", "Team", "Opp", "Side", "Line", "Odds", "Pred", "Edge (yds)", "Edge %", "Book"]]
+        
+        # Sort FIRST by Edge (yds) before formatting
+        display_df = display_df.sort_values(by="Edge (yds)", ascending=False, na_position='last')
+        
+        # Create indicators list for display outside table
+        indicators = display_df["Edge %"].apply(
+            lambda pct: "💎" if pd.notna(pct) and pct > 50 else (
+                "⚡️" if pd.notna(pct) and pct > 25 else ""
+            )
+        ).tolist()
         
         # Add emoji indicators to Side column
         def format_side_with_emoji(side_value):
@@ -333,7 +368,7 @@ if selected_game != "All Games":
         
         display_df["Side"] = display_df["Side"].apply(format_side_with_emoji)
         
-        # Apply color styling to Side, Edge %, and marker columns using pandas Styler
+        # Apply color styling to Side and Edge % columns using pandas Styler
         def style_side_cell(val):
             if pd.isna(val) or val == "-":
                 return 'color: #666;'
@@ -345,46 +380,53 @@ if selected_game != "All Games":
             return ''
         
         def style_edge_pct_cell(val):
-            if not isinstance(val, str) or not val.endswith("%"):
+            # val is numeric, check if it should be bold
+            if pd.isna(val):
                 return ''
             try:
-                pct_val = float(val.replace("%", ""))
-            except ValueError:
+                pct_val = float(val)
+            except (ValueError, TypeError):
                 return ''
-            if pct_val >= 25:
-                return 'color: #d32f2f; font-weight: 700;'
-            elif pct_val >= 10:
-                return 'color: #f57c00; font-weight: 600;'
+            if pct_val > 25:
+                return 'font-weight: 700;'
             return ''
-
-        def style_edge_marker_cell(val):
-            if val == "🔥🔥":
-                return 'color: #d32f2f; font-weight: 700;'
-            elif val == "🔥":
-                return 'color: #f57c00; font-weight: 600;'
-            return ''
-
+        
+        # Create styled dataframe
         styled_df = (
             display_df.style
             .map(style_side_cell, subset=["Side"])
             .map(style_edge_pct_cell, subset=["Edge %"])
-            .map(style_edge_marker_cell, subset=["🔥"])
         )
         
-        st.dataframe(
-            styled_df,
-            use_container_width=True,
-            hide_index=True,
-            column_config={
-                "🔥": st.column_config.TextColumn(" ", width="small"),
-                "#": st.column_config.NumberColumn("#"),
-                "Line": st.column_config.NumberColumn("Line", format="%.1f"),
-                "Odds": st.column_config.NumberColumn("Odds"),
-                "Pred": st.column_config.NumberColumn("Pred", format="%.1f"),
-                "Edge": st.column_config.NumberColumn("Edge", format="%.1f"),
-                "Edge %": st.column_config.TextColumn("Edge %"),
-            },
-        )
+        # Create two-column layout: table on left, indicators on right
+        col_table, col_indicators = st.columns([0.98, 0.02], gap="small")
+        
+        with col_table:
+            st.dataframe(
+                styled_df,
+                use_container_width=True,
+                hide_index=True,
+                column_config={
+                    "#": st.column_config.TextColumn("#"),
+                    "Line": st.column_config.NumberColumn("Line", format="%.1f"),
+                    "Odds": st.column_config.NumberColumn("Odds"),
+                    "Pred": st.column_config.NumberColumn("Pred", format="%.1f"),
+                    "Edge (yds)": st.column_config.NumberColumn("Edge (yds)", format="%.1f"),
+                    "Edge %": st.column_config.NumberColumn("Edge %", format="%.1f"),
+                },
+            )
+        
+        with col_indicators:
+            # Add spacer for table header row
+            st.markdown('<div style="height: 40px;"></div>', unsafe_allow_html=True)
+            # Display indicators aligned with rows
+            for indicator in indicators:
+                if indicator == "💎":
+                    st.markdown('<div style="height: 35px; display: flex; align-items: center; justify-content: center; color: #d32f2f; font-weight: 700; font-size: 0.9em; padding: 0; margin: 0;">💎</div>', unsafe_allow_html=True)
+                elif indicator == "⚡️":
+                    st.markdown('<div style="height: 35px; display: flex; align-items: center; justify-content: center; color: #f57c00; font-weight: 700; font-size: 0.9em; padding: 0; margin: 0;">⚡️</div>', unsafe_allow_html=True)
+                else:
+                    st.markdown('<div style="height: 35px;"></div>', unsafe_allow_html=True)
         st.write("")
     
     # Update CSV data for download
@@ -422,13 +464,9 @@ else:
             
             # Calculate % edge
             subset["edge_pct"] = (subset["edge_yards"] / subset["best_point"] * 100).round(1)
-            subset["edge_marker"] = subset["edge_pct"].apply(
-                lambda pct: "🔥🔥" if pd.notna(pct) and pct >= 25 else ("🔥" if pd.notna(pct) and pct >= 10 else "")
-            )
             
             display_df = subset[
                 [
-                    "edge_marker",
                     "rank",
                     "player",
                     "position",
@@ -445,7 +483,6 @@ else:
             ].rename(
                 columns={
                     "rank": "#",
-                    "edge_marker": "🔥",
                     "player": "Player",
                     "position": "Pos",
                     "team": "Team",
@@ -454,21 +491,32 @@ else:
                     "predicted_yards": "Model Projection",
                     "best_point": "Best Line",
                     "best_price": "Best Price",
-                    "edge_yards": "Edge (Yards)",
+                    "edge_yards": "Edge (yds)",
                     "edge_pct": "Edge %",
                     "bookmaker": "Sportsbook",
                 }
             )
             
-            display_df = display_df[["🔥", "#", "Player", "Pos", "Team", "Opponent", "Side", "Model Projection", "Best Line", "Best Price", "Edge (Yards)", "Edge %", "Sportsbook"]]
-            
             display_df["Model Projection"] = display_df["Model Projection"].round(1)
             display_df["Best Line"] = display_df["Best Line"].round(1)
             display_df["Best Price"] = display_df["Best Price"].round().astype("Int64")
-            display_df["Edge (Yards)"] = display_df["Edge (Yards)"].round(2)
-            display_df["Edge %"] = display_df["Edge %"].apply(
-                lambda pct: "-" if pd.isna(pct) else f"{pct:.1f}%"
+            display_df["Edge (yds)"] = display_df["Edge (yds)"].round(2)
+            # Keep edge_pct numeric for sorting
+            edge_pct_numeric = display_df["Edge %"].copy()
+            # Create formatted display version
+            display_df["Edge % Display"] = display_df["Edge %"].apply(
+                lambda pct: "-" if pd.isna(pct) else (
+                    f"{pct:.1f}% 💎" if pct > 50 else (
+                        f"{pct:.1f}% ⚡️" if pct > 25 else f"{pct:.1f}%"
+                    )
+                )
             )
+            # Keep Edge % numeric for sorting, format for display
+            display_df["Edge %"] = edge_pct_numeric
+            display_df = display_df[["#", "Player", "Pos", "Team", "Opponent", "Side", "Model Projection", "Best Line", "Best Price", "Edge (yds)", "Edge %", "Sportsbook"]]
+            
+            # Sort FIRST by Edge (yds) before formatting
+            display_df = display_df.sort_values(by="Edge (yds)", ascending=False, na_position='last')
             
             # Add emoji indicators to Side column
             def format_side_with_emoji(side_value):
@@ -483,7 +531,7 @@ else:
             
             display_df["Side"] = display_df["Side"].apply(format_side_with_emoji)
             
-            # Apply color styling to Side, Edge %, and marker columns using pandas Styler
+            # Apply color styling to Side and Edge % columns using pandas Styler
             def style_side_cell(val):
                 if pd.isna(val) or val == "-":
                     return 'color: #666;'
@@ -495,30 +543,22 @@ else:
                 return ''
             
             def style_edge_pct_cell(val):
-                if not isinstance(val, str) or not val.endswith("%"):
+                # val is numeric, check if it should be bold
+                if pd.isna(val):
                     return ''
                 try:
-                    pct_val = float(val.replace("%", ""))
-                except ValueError:
+                    pct_val = float(val)
+                except (ValueError, TypeError):
                     return ''
-                if pct_val >= 25:
-                    return 'color: #d32f2f; font-weight: 700;'
-                elif pct_val >= 10:
-                    return 'color: #f57c00; font-weight: 600;'
-                return ''
-            
-            def style_edge_marker_cell(val):
-                if val == "🔥🔥":
-                    return 'color: #d32f2f; font-weight: 700;'
-                elif val == "🔥":
-                    return 'color: #f57c00; font-weight: 600;'
+                if pct_val > 25:
+                    return 'font-weight: 700;'
                 return ''
 
+            # Create styled dataframe
             styled_df = (
                 display_df.style
                 .map(style_side_cell, subset=["Side"])
                 .map(style_edge_pct_cell, subset=["Edge %"])
-                .map(style_edge_marker_cell, subset=["🔥"])
             )
             
             st.dataframe(
@@ -527,17 +567,16 @@ else:
                 height=800,
                 hide_index=True,
                 column_config={
-                    "🔥": st.column_config.TextColumn(" ", width="small"),
-                    "#": st.column_config.NumberColumn("#"),
+                    "#": st.column_config.TextColumn("#"),
                     "Model Projection": st.column_config.NumberColumn(
                         "Model Projection", format="%.1f"
                     ),
                     "Best Line": st.column_config.NumberColumn("Best Line", format="%.1f"),
                     "Best Price": st.column_config.NumberColumn("Best Price"),
-                    "Edge (Yards)": st.column_config.NumberColumn(
-                        "Edge (Yards)", format="%.2f"
+                    "Edge (yds)": st.column_config.NumberColumn(
+                        "Edge (yds)", format="%.2f"
                     ),
-                    "Edge %": st.column_config.TextColumn("Edge %"),
+                    "Edge %": st.column_config.NumberColumn("Edge %", format="%.1f"),
                 },
             )
     
@@ -564,7 +603,9 @@ with col2:
 st.divider()
 
 with st.sidebar:
-    st.markdown("### Download Reports")
+    st.markdown("<div style='font-size: 1.2rem; font-weight: 600; margin-bottom: 6px; text-align: center;'>Download Reports</div>", unsafe_allow_html=True)
+    # st.markdown("######")
+    # st.write("")
     value_html_path = os.path.join(
         PROJECTIONS_DIR, f"week{selected_week_number}_value_complete_props_report.html"
     )
@@ -572,20 +613,25 @@ with st.sidebar:
         PROJECTIONS_DIR, f"week{selected_week_number}_value_leader_tables.pdf"
     )
 
+    # Just use download buttons, no additional HTML or CSS
     if os.path.exists(value_html_path):
         with open(value_html_path, "rb") as html_file:
             st.download_button(
-                "📄 Value Props HTML Report",
+                label="Value Prop Report (HTML)",
                 data=html_file.read(),
                 file_name=os.path.basename(value_html_path),
                 mime="text/html",
+                # use_container_width=True,
+                # width=150
             )
 
     if os.path.exists(value_pdf_path):
         with open(value_pdf_path, "rb") as pdf_file:
             st.download_button(
-                "📑 Value Leader Tables (PDF)",
+                label="Value Leader Tables (PDF)",
                 data=pdf_file.read(),
                 file_name=os.path.basename(value_pdf_path),
                 mime="application/pdf",
+                # use_container_width=True,'
+                # width=150
             )
