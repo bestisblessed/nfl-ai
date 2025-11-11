@@ -160,16 +160,12 @@ if not available_weeks:
     st.error("No projection data available. Please ensure projection files are in data/projections/")
     st.stop()
 
-# Sidebar controls like Weekly Leaders page
-st.sidebar.header("Week Selection")
-
-# Week selection in sidebar
+st.sidebar.markdown("<h2 style='text-align: center;'>Selection</h2>", unsafe_allow_html=True)
 week_options = [f"Week {week}" for week in available_weeks]
 selected_week_display = st.sidebar.selectbox(
-    "Select Week:",
+    "Week:",
     options=week_options,
-    index=len(week_options) - 1,
-    help="Choose which week's projections to view"
+    index=len(week_options) - 1
 )
 
 # Get the selected week number
@@ -185,9 +181,6 @@ if projections_df is None:
 # Load games mapping for correct home/away designation
 games_mapping, upcoming_games_df = load_upcoming_games()
 game_times = load_game_times()
-
-# Matchup selection in sidebar
-st.sidebar.header("Matchup Selection")
 
 # Create matchup options using upcoming_games.csv with abbreviations, sorted by time
 if not upcoming_games_df.empty:
@@ -233,30 +226,31 @@ else:
     matchups = sorted(matchups)
 
 selected_matchup = st.sidebar.selectbox(
-    "Select Matchup:",
-    options=matchups,
-    help="Choose which game to view projections for"
+    "Game:",
+    options=matchups
 )
+st.sidebar.write("")
+st.sidebar.write("")
 
 # Add download button to sidebar after week selection
 with st.sidebar:
-    # st.markdown("---")
-    st.markdown("### Export Props Report")
-
-    # HTML report download button in sidebar
+    st.markdown(
+        "<div style='font-size: 1.2rem; font-weight: 600; margin-bottom: 12px; text-align: center;'>Export</div>"
+        "<div style='height: 5px;'></div>",
+        unsafe_allow_html=True
+    )
     html_filename = f"week{selected_week}_complete_props_report.html"
     html_path = os.path.join(BASE_DIR, "data/projections", html_filename)
 
     if os.path.exists(html_path):
         with open(html_path, "rb") as html_file:
-            html_data = html_file.read()
-        st.download_button(
-            label="📄 Download Report",
-            data=html_data,
-            file_name=html_filename,
-            mime="text/html",
-            help=f"Download the {selected_week_display} complete props HTML report"
-        )
+            st.download_button(
+                label="Download HTML",
+                data=html_file.read(),
+                file_name=html_filename,
+                mime="text/html",
+                use_container_width=True
+            )
     else:
         st.info("HTML report not available for this week")
 

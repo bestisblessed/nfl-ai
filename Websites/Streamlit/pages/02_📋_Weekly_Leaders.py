@@ -43,15 +43,15 @@ if not available_weeks:
     st.error("No projection data available. Please ensure projection files are in data/projections/")
     st.stop()
 
-# Sidebar week selection
-st.sidebar.header("Week Selection")
+st.sidebar.markdown("<h2 style='text-align: center;'>Selection</h2>", unsafe_allow_html=True)
 week_options = [f"Week {week}" for week in available_weeks]
 selected_week = st.sidebar.selectbox(
-    "Select Week:",
+    "Week:",
     options=week_options,
-    index=len(week_options) - 1,  # Default to latest week
-    help="Choose which week's projections to view"
+    index=len(week_options) - 1
 )
+st.sidebar.write("")
+st.sidebar.write("")
 
 # Get the selected week
 current_week = selected_week
@@ -274,24 +274,23 @@ def create_styled_dataframe(leaderboard):
         
 # Add download button to sidebar
 with st.sidebar:
-    # st.markdown("---")
-    st.write("")
-    st.markdown("### Export Leader Tables")
-
-    # PDF download button in sidebar
+    st.markdown(
+        "<div style='font-size: 1.2rem; font-weight: 600; margin-bottom: 12px; text-align: center;'>Export</div>"
+        "<div style='height: 5px;'></div>",
+        unsafe_allow_html=True
+    )
     pdf_filename = f"week{current_week.replace('Week ', '').lower()}_leader_tables.pdf"
     pdf_path = os.path.join(BASE_DIR, "data/projections", pdf_filename)
 
     if os.path.exists(pdf_path):
         with open(pdf_path, "rb") as pdf_file:
-            pdf_data = pdf_file.read()
-        st.download_button(
-            label="📄 Download PDF",
-            data=pdf_data,
-            file_name=pdf_filename,
-            mime="application/pdf",
-            help=f"Download the {current_week} leader tables PDF report"
-        )
+            st.download_button(
+                label="Download PDF",
+                data=pdf_file.read(),
+                file_name=pdf_filename,
+                mime="application/pdf",
+                use_container_width=True
+            )
     else:
         st.info("PDF report not available for this week")
 

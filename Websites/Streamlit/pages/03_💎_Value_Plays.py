@@ -22,7 +22,21 @@ st.set_page_config(
     page_title="💎 Value Play Finder",
     page_icon="🏈",
     layout="wide",
+    # layout="centered",
 )
+
+# st.markdown(
+#     """
+#     <style>
+#         .block-container {
+#             max-width: 1400px;
+#             padding-top: 1.5rem;
+#             padding-bottom: 1.5rem;
+#         }
+#     </style>
+#     """,
+#     unsafe_allow_html=True,
+# )
 
 st.markdown(
     """
@@ -383,7 +397,7 @@ if selected_game != "All Games":
         display_df["Side"] = display_df["Side"].apply(format_side_with_emoji)
         display_df = display_df.drop(columns=["Indicator"])
         
-        # Apply color styling to Side and Edge % columns using pandas Styler
+        # Apply color styling to Side column using pandas Styler
         def style_side_cell(val):
             if pd.isna(val) or val == "-":
                 return 'color: #666;'
@@ -406,15 +420,14 @@ if selected_game != "All Games":
         with col_table:
             st.dataframe(
                 styled_df,
-                use_container_width=True,
                 hide_index=True,
                 column_config={
-                    "#": st.column_config.TextColumn(label=""),
-                    "Best Line (yds)": st.column_config.NumberColumn("Best Line (yds)", format="%.1f"),
-                    "Projection (yds)": st.column_config.NumberColumn("Projection (yds)", format="%.1f"),
-                    "Best Odds": st.column_config.NumberColumn("Best Odds"),
-                    "Edge (yds)": st.column_config.NumberColumn("Edge (yds)", format="%.1f"),
-                    "Edge % (norm)": st.column_config.NumberColumn("Edge % (norm)", format="%.1f"),
+                    "#": st.column_config.TextColumn(label="", width="small"),
+                    "Best Line (yds)": st.column_config.NumberColumn("Best Line (yds)", format="%.1f", width="small"),
+                    "Projection (yds)": st.column_config.NumberColumn("Projection (yds)", format="%.1f", width="small"),
+                    "Best Odds": st.column_config.NumberColumn("Best Odds", width="small"),
+                    "Edge (yds)": st.column_config.NumberColumn("Edge (yds)", format="%.1f", width="small"),
+                    "Edge % (norm)": st.column_config.NumberColumn("Edge % (norm)", format="%.1f", width="small"),
                 },
             )
         
@@ -532,7 +545,7 @@ else:
             display_df["Side"] = display_df["Side"].apply(format_side_with_emoji)
             display_df = display_df.drop(columns=["Indicator"])
             
-            # Apply color styling to Side and Edge % columns using pandas Styler
+            # Apply color styling to Side column using pandas Styler
             def style_side_cell(val):
                 if pd.isna(val) or val == "-":
                     return 'color: #666;'
@@ -551,20 +564,19 @@ else:
             
             st.dataframe(
                 styled_df,
-                use_container_width=True,
                 height=800,
                 hide_index=True,
                 column_config={
-                    "#": st.column_config.TextColumn(label=""),
-                    "Best Line (yds)": st.column_config.NumberColumn("Best Line (yds)", format="%.1f"),
+                    "#": st.column_config.TextColumn(label="", width="small"),
+                    "Best Line (yds)": st.column_config.NumberColumn("Best Line (yds)", format="%.1f", width="small"),
                     "Projection (yds)": st.column_config.NumberColumn(
-                        "Projection (yds)", format="%.1f"
+                        "Projection (yds)", format="%.1f", width="small"
                     ),
-                    "Best Odds": st.column_config.NumberColumn("Best Odds"),
+                    "Best Odds": st.column_config.NumberColumn("Best Odds", width="small"),
                     "Edge (yds)": st.column_config.NumberColumn(
-                        "Edge (yds)", format="%.2f"
+                        "Edge (yds)", format="%.2f", width="small"
                     ),
-                    "Edge % (norm)": st.column_config.NumberColumn("Edge % (norm)", format="%.1f"),
+                    "Edge % (norm)": st.column_config.NumberColumn("Edge % (norm)", format="%.1f", width="small"),
                 },
             )
     
@@ -592,7 +604,7 @@ st.divider()
 
 with st.sidebar:
     st.markdown(
-        "<div style='font-size: 1.2rem; font-weight: 600; margin-bottom: 12px; text-align: center;'>Download Reports</div>"
+        "<div style='font-size: 1.2rem; font-weight: 600; margin-bottom: 12px; text-align: center;'>Export</div>"
         "<div style='height: 5px;'></div>",  # small space after the title
         unsafe_allow_html=True
     )
@@ -615,6 +627,7 @@ with st.sidebar:
                 mime="text/html",
                 # use_container_width=True,
                 # width=150
+                use_container_width=True
             )
 
     if os.path.exists(value_pdf_path):
@@ -626,4 +639,5 @@ with st.sidebar:
                 mime="application/pdf",
                 # use_container_width=True,'
                 # width=150
+                use_container_width=True
             )
