@@ -48,11 +48,15 @@ def load_data():
                 df_schedule_and_game_results, df_team_game_logs_2024, df_team_game_logs_2025, df_box_scores)
     except FileNotFoundError as e:
         st.error(f"Error loading data files: {e}")
-        st.stop()
+        return None
 
 # Load all data
+data_result = load_data()
+if data_result is None:
+    st.stop()
+    
 (df_teams, df_games, df_playerstats, df_team_game_logs, 
- df_schedule_and_game_results, df_team_game_logs_2024, df_team_game_logs_2025, df_box_scores) = load_data()
+ df_schedule_and_game_results, df_team_game_logs_2024, df_team_game_logs_2025, df_box_scores) = data_result
 
 # Sidebar with filters and navigation
 with st.sidebar:
@@ -356,8 +360,7 @@ with tab2:
 
     # Play Calling
     with st.expander("🎯 Play Calling - Passing vs Rushing Plays", expanded=True):
-        df_team_game_logs_selected['season'] = selected_season
-        season_data = df_team_game_logs_selected[df_team_game_logs_selected['season'] == selected_season]
+        season_data = df_team_game_logs_selected.copy()
         team_averages = season_data.groupby(team_name_col).agg({'pass_att': 'mean', 'rush_att': 'mean'}).reset_index()
 
         team_abbreviation_mapping = {
