@@ -359,7 +359,7 @@ if selected_game != "All Games":
         
         styled_df = display_df.style.map(style_side_cell, subset=["Side"]).map(style_edge_pct_cell, subset=["Edge %"])
         
-            st.dataframe(
+        st.dataframe(
             styled_df,
             use_container_width=True,
             hide_index=True,
