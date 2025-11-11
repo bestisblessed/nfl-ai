@@ -16,7 +16,6 @@ YARD_THRESHOLDS = {
     "Receiving Yards": (15.0, 25.0),
     "Rushing Yards": (15.0, 25.0),
 }
-DEFAULT_YARD_THRESHOLDS = (25.0, 40.0)
 
 st.set_page_config(
     page_title="💎 Value Play Finder",
@@ -326,13 +325,16 @@ if selected_game != "All Games":
         # Normalized % edge (prevents tiny-line explosions)
         denom = np.maximum(prop_data["predicted_yards"].abs(), prop_data["best_point"].abs())
         prop_data["edge_pct_norm"] = (prop_data["edge_yards"] / denom * 100).round(1)
-        # Yard-based indicator thresholds
-        low_thr, high_thr = YARD_THRESHOLDS.get(prop_type, DEFAULT_YARD_THRESHOLDS)
-        prop_data["edge_indicator"] = prop_data["edge_yards"].apply(
-            lambda yards: "💎" if pd.notna(yards) and yards >= high_thr else (
-                "⚡️" if pd.notna(yards) and yards >= low_thr else ""
+        thresholds = YARD_THRESHOLDS.get(prop_type)
+        if thresholds is None:
+            prop_data["edge_indicator"] = ""
+        else:
+            low_thr, high_thr = thresholds
+            prop_data["edge_indicator"] = prop_data["edge_yards"].apply(
+                lambda yards: "💎" if pd.notna(yards) and yards >= high_thr else (
+                    "⚡️" if pd.notna(yards) and yards >= low_thr else ""
+                )
             )
-        )
         
         # Section header for prop type
         st.markdown(f"### {prop_type.upper()}")
@@ -420,14 +422,15 @@ if selected_game != "All Games":
         with col_table:
             st.dataframe(
                 styled_df,
+                use_container_width=True,
                 hide_index=True,
                 column_config={
                     "#": st.column_config.TextColumn(label="", width="small"),
-                    "Best Line (yds)": st.column_config.NumberColumn("Best Line (yds)", format="%.1f", width="small"),
-                    "Projection (yds)": st.column_config.NumberColumn("Projection (yds)", format="%.1f", width="small"),
-                    "Best Odds": st.column_config.NumberColumn("Best Odds", width="small"),
-                    "Edge (yds)": st.column_config.NumberColumn("Edge (yds)", format="%.1f", width="small"),
-                    "Edge % (norm)": st.column_config.NumberColumn("Edge % (norm)", format="%.1f", width="small"),
+                    "Best Line (yds)": st.column_config.NumberColumn("Best Line (yds)", format="%.1f"),
+                    "Projection (yds)": st.column_config.NumberColumn("Projection (yds)", format="%.1f"),
+                    "Best Odds": st.column_config.NumberColumn("Best Odds"),
+                    "Edge (yds)": st.column_config.NumberColumn("Edge (yds)", format="%.1f"),
+                    "Edge % (norm)": st.column_config.NumberColumn("Edge % (norm)", format="%.1f"),
                 },
             )
         
@@ -480,13 +483,16 @@ else:
             # Normalized % edge (prevents tiny-line explosions)
             denom = np.maximum(subset["predicted_yards"].abs(), subset["best_point"].abs())
             subset["edge_pct_norm"] = (subset["edge_yards"] / denom * 100).round(1)
-            # Yard-based indicator thresholds
-            low_thr, high_thr = YARD_THRESHOLDS.get(tab_label, DEFAULT_YARD_THRESHOLDS)
-            subset["edge_indicator"] = subset["edge_yards"].apply(
-                lambda yards: "💎" if pd.notna(yards) and yards >= high_thr else (
-                    "⚡️" if pd.notna(yards) and yards >= low_thr else ""
+            thresholds = YARD_THRESHOLDS.get(tab_label)
+            if thresholds is None:
+                subset["edge_indicator"] = ""
+            else:
+                low_thr, high_thr = thresholds
+                subset["edge_indicator"] = subset["edge_yards"].apply(
+                    lambda yards: "💎" if pd.notna(yards) and yards >= high_thr else (
+                        "⚡️" if pd.notna(yards) and yards >= low_thr else ""
+                    )
                 )
-            )
             
             display_df = subset[
                 [
@@ -564,19 +570,20 @@ else:
             
             st.dataframe(
                 styled_df,
+                use_container_width=True,
                 height=800,
                 hide_index=True,
                 column_config={
                     "#": st.column_config.TextColumn(label="", width="small"),
-                    "Best Line (yds)": st.column_config.NumberColumn("Best Line (yds)", format="%.1f", width="small"),
+                    "Best Line (yds)": st.column_config.NumberColumn("Best Line (yds)", format="%.1f"),
                     "Projection (yds)": st.column_config.NumberColumn(
-                        "Projection (yds)", format="%.1f", width="small"
+                        "Projection (yds)", format="%.1f"
                     ),
-                    "Best Odds": st.column_config.NumberColumn("Best Odds", width="small"),
+                    "Best Odds": st.column_config.NumberColumn("Best Odds"),
                     "Edge (yds)": st.column_config.NumberColumn(
-                        "Edge (yds)", format="%.2f", width="small"
+                        "Edge (yds)", format="%.2f"
                     ),
-                    "Edge % (norm)": st.column_config.NumberColumn("Edge % (norm)", format="%.1f", width="small"),
+                    "Edge % (norm)": st.column_config.NumberColumn("Edge % (norm)", format="%.1f"),
                 },
             )
     
