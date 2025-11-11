@@ -532,6 +532,14 @@ with col2:
 with col3:
     st.image(image3list, use_container_width=True, caption="Irvin 88")
 
+# JD image full size
+st.write('##')
+jd_image_path = os.path.join(current_dir, 'images/jd.png')
+if os.path.exists(jd_image_path):
+    st.image(Image.open(jd_image_path), use_container_width=True, caption="JD5")
+else:
+    st.warning(f"JD image not found. Tried: {jd_image_path}")
+
 ### JJettas
 # st.write('##')
 # col1, col2, col3 = st.columns([1, 4, 1])
