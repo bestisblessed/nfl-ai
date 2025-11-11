@@ -11,6 +11,12 @@ import streamlit as st
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PROJECTIONS_DIR = os.path.join(BASE_DIR, "data", "projections")
+YARD_THRESHOLDS = {
+    "Passing Yards": (45.0, 75.0),
+    "Receiving Yards": (15.0, 25.0),
+    "Rushing Yards": (15.0, 25.0),
+}
+DEFAULT_YARD_THRESHOLDS = (25.0, 40.0)
 
 st.set_page_config(
     page_title="💎 Value Play Finder",
@@ -225,10 +231,22 @@ st.sidebar.write("")
 # st.sidebar.markdown("---")
 # st.sidebar.markdown("### Edge % Indicators")
 st.sidebar.markdown("""
-    <div style='text-align: center;'>
-        <div style='font-size: 1.2rem; font-weight: 600; margin-bottom: 8px;'>Legend</div>
-        <div style='font-size: 1rem; color: #666; margin: 1px 0'>⚡️ Edge &gt; 25%</div>
-        <div style='font-size: 1rem; color: #666; margin: 1px 0'>💎 Edge &gt; 50%</div>
+    <div style='text-align: center; font-size: 0.92rem;'>
+        <div style='font-size: 1.2rem; font-weight: 600; margin-bottom: 4px;'>Legend</div>
+        <div style='display: flex; flex-direction: column; gap: 3px; margin-top: 2px;'>
+            <div style='background: #f5f7fb; border: 1px solid #d6dcf2; border-radius: 8px; padding: 4px 6px;'>
+                <div style='font-weight: 600; color: #34495e; margin-bottom: 2px; font-size: 0.92em;'>Passing</div>
+                <div style='color: #6c7a89; font-size: 0.91em;'>💎 ≥ 75 yds&nbsp;|&nbsp;⚡️ ≥ 45 yds</div>
+            </div>
+            <div style='background: #f5f7fb; border: 1px solid #d6dcf2; border-radius: 8px; padding: 4px 6px;'>
+                <div style='font-weight: 600; color: #34495e; margin-bottom: 2px; font-size: 0.92em;'>Receiving</div>
+                <div style='color: #6c7a89; font-size: 0.91em;'>💎 ≥ 25 yds&nbsp;|&nbsp;⚡️ ≥ 15 yds</div>
+            </div>
+            <div style='background: #f5f7fb; border: 1px solid #d6dcf2; border-radius: 8px; padding: 4px 6px;'>
+                <div style='font-weight: 600; color: #34495e; margin-bottom: 2px; font-size: 0.92em;'>Rushing</div>
+                <div style='color: #6c7a89; font-size: 0.91em;'>💎 ≥ 25 yds&nbsp;|&nbsp;⚡️ ≥ 15 yds</div>
+            </div>
+        </div>
     </div>
     """,
     unsafe_allow_html=True
@@ -291,7 +309,16 @@ if selected_game != "All Games":
         prop_data["rank"] = range(1, len(prop_data) + 1)
         
         # Calculate % edge
-        prop_data["edge_pct"] = (prop_data["edge_yards"] / prop_data["best_point"] * 100).round(1)
+        # Normalized % edge (prevents tiny-line explosions)
+        denom = np.maximum(prop_data["predicted_yards"].abs(), prop_data["best_point"].abs())
+        prop_data["edge_pct_norm"] = (prop_data["edge_yards"] / denom * 100).round(1)
+        # Yard-based indicator thresholds
+        low_thr, high_thr = YARD_THRESHOLDS.get(prop_type, DEFAULT_YARD_THRESHOLDS)
+        prop_data["edge_indicator"] = prop_data["edge_yards"].apply(
+            lambda yards: "💎" if pd.notna(yards) and yards >= high_thr else (
+                "⚡️" if pd.notna(yards) and yards >= low_thr else ""
+            )
+        )
         
         # Section header for prop type
         st.markdown(f"### {prop_type.upper()}")
@@ -308,7 +335,8 @@ if selected_game != "All Games":
                 "best_price",
                 "predicted_yards",
                 "edge_yards",
-                "edge_pct",
+                "edge_pct_norm",
+                "edge_indicator",
                 "bookmaker",
             ]
         ].rename(
@@ -322,7 +350,8 @@ if selected_game != "All Games":
                 "predicted_yards": "Projection (yds)",
                 "best_price": "Best Odds",
                 "edge_yards": "Edge (yds)",
-                "edge_pct": "Edge %",
+                "edge_pct_norm": "Edge % (norm)",
+                "edge_indicator": "Indicator",
                 "side": "Side",
                 "bookmaker": "Book",
             }
@@ -332,29 +361,13 @@ if selected_game != "All Games":
         display_df["Best Odds"] = display_df["Best Odds"].round().astype("Int64")
         display_df["Projection (yds)"] = display_df["Projection (yds)"].round(1)
         display_df["Edge (yds)"] = display_df["Edge (yds)"].round(1)
-        # Keep edge_pct numeric for sorting
-        edge_pct_numeric = display_df["Edge %"].copy()
-        # Create formatted display version
-        display_df["Edge % Display"] = display_df["Edge %"].apply(
-            lambda pct: "-" if pd.isna(pct) else (
-                f"{pct:.1f}% 💎" if pct > 50 else (
-                    f"{pct:.1f}% ⚡️" if pct > 25 else f"{pct:.1f}%"
-                )
-            )
-        )
-        # Keep Edge % numeric for sorting, format for display in styling
-        display_df["Edge %"] = edge_pct_numeric
-        display_df = display_df[["#", "Player", "Pos", "Team", "Opp", "Projection (yds)", "Best Line (yds)", "Best Odds", "Edge (yds)", "Edge %", "Side", "Book"]]
+        display_df = display_df[["#", "Player", "Pos", "Team", "Opp", "Projection (yds)", "Best Line (yds)", "Best Odds", "Edge (yds)", "Edge % (norm)", "Indicator", "Side", "Book"]]
         
         # Sort FIRST by Edge (yds) before formatting
         display_df = display_df.sort_values(by="Edge (yds)", ascending=False, na_position='last')
         
         # Create indicators list for display outside table
-        indicators = display_df["Edge %"].apply(
-            lambda pct: "💎" if pd.notna(pct) and pct > 50 else (
-                "⚡️" if pd.notna(pct) and pct > 25 else ""
-            )
-        ).tolist()
+        indicators = display_df["Indicator"].tolist()
         
         # Add emoji indicators to Side column
         def format_side_with_emoji(side_value):
@@ -368,6 +381,7 @@ if selected_game != "All Games":
             return str(side_value)
         
         display_df["Side"] = display_df["Side"].apply(format_side_with_emoji)
+        display_df = display_df.drop(columns=["Indicator"])
         
         # Apply color styling to Side and Edge % columns using pandas Styler
         def style_side_cell(val):
@@ -388,15 +402,17 @@ if selected_game != "All Games":
                 pct_val = float(val)
             except (ValueError, TypeError):
                 return ''
-            if pct_val > 25:
+            if pct_val > 50:
                 return 'font-weight: 700;'
+            if pct_val > 25:
+                return 'font-weight: 600;'
             return ''
         
         # Create styled dataframe
         styled_df = (
             display_df.style
             .map(style_side_cell, subset=["Side"])
-            .map(style_edge_pct_cell, subset=["Edge %"])
+            .map(style_edge_pct_cell, subset=["Edge % (norm)"])
         )
         
         # Create two-column layout: table on left, indicators on right
@@ -413,7 +429,7 @@ if selected_game != "All Games":
                     "Projection (yds)": st.column_config.NumberColumn("Projection (yds)", format="%.1f"),
                     "Best Odds": st.column_config.NumberColumn("Best Odds"),
                     "Edge (yds)": st.column_config.NumberColumn("Edge (yds)", format="%.1f"),
-                    "Edge %": st.column_config.NumberColumn("Edge %", format="%.1f"),
+                    "Edge % (norm)": st.column_config.NumberColumn("Edge % (norm)", format="%.1f"),
                 },
             )
         
@@ -463,8 +479,16 @@ else:
             subset = subset.sort_values(by="edge_yards", ascending=False).reset_index(drop=True)
             subset["rank"] = range(1, len(subset) + 1)
             
-            # Calculate % edge
-            subset["edge_pct"] = (subset["edge_yards"] / subset["best_point"] * 100).round(1)
+            # Normalized % edge (prevents tiny-line explosions)
+            denom = np.maximum(subset["predicted_yards"].abs(), subset["best_point"].abs())
+            subset["edge_pct_norm"] = (subset["edge_yards"] / denom * 100).round(1)
+            # Yard-based indicator thresholds
+            low_thr, high_thr = YARD_THRESHOLDS.get(tab_label, DEFAULT_YARD_THRESHOLDS)
+            subset["edge_indicator"] = subset["edge_yards"].apply(
+                lambda yards: "💎" if pd.notna(yards) and yards >= high_thr else (
+                    "⚡️" if pd.notna(yards) and yards >= low_thr else ""
+                )
+            )
             
             display_df = subset[
                 [
@@ -478,7 +502,8 @@ else:
                     "best_point",
                     "best_price",
                     "edge_yards",
-                    "edge_pct",
+                    "edge_pct_norm",
+                    "edge_indicator",
                     "bookmaker",
                 ]
             ].rename(
@@ -492,7 +517,8 @@ else:
                     "predicted_yards": "Projection (yds)",
                     "best_price": "Best Odds",
                     "edge_yards": "Edge (yds)",
-                    "edge_pct": "Edge %",
+                    "edge_pct_norm": "Edge % (norm)",
+                    "edge_indicator": "Indicator",
                     "side": "Side",
                     "bookmaker": "Book",
                 }
@@ -502,19 +528,7 @@ else:
             display_df["Best Line (yds)"] = display_df["Best Line (yds)"].round(1)
             display_df["Best Odds"] = display_df["Best Odds"].round().astype("Int64")
             display_df["Edge (yds)"] = display_df["Edge (yds)"].round(2)
-            # Keep edge_pct numeric for sorting
-            edge_pct_numeric = display_df["Edge %"].copy()
-            # Create formatted display version
-            display_df["Edge % Display"] = display_df["Edge %"].apply(
-                lambda pct: "-" if pd.isna(pct) else (
-                    f"{pct:.1f}% 💎" if pct > 50 else (
-                        f"{pct:.1f}% ⚡️" if pct > 25 else f"{pct:.1f}%"
-                    )
-                )
-            )
-            # Keep Edge % numeric for sorting, format for display
-            display_df["Edge %"] = edge_pct_numeric
-            display_df = display_df[["#", "Player", "Pos", "Team", "Opp", "Projection (yds)", "Best Line (yds)", "Best Odds", "Edge (yds)", "Edge %", "Side", "Book"]]
+            display_df = display_df[["#", "Player", "Pos", "Team", "Opp", "Projection (yds)", "Best Line (yds)", "Best Odds", "Edge (yds)", "Edge % (norm)", "Indicator", "Side", "Book"]]
             
             # Sort FIRST by Edge (yds) before formatting
             display_df = display_df.sort_values(by="Edge (yds)", ascending=False, na_position='last')
@@ -531,6 +545,7 @@ else:
                 return str(side_value)
             
             display_df["Side"] = display_df["Side"].apply(format_side_with_emoji)
+            display_df = display_df.drop(columns=["Indicator"])
             
             # Apply color styling to Side and Edge % columns using pandas Styler
             def style_side_cell(val):
@@ -551,6 +566,8 @@ else:
                     pct_val = float(val)
                 except (ValueError, TypeError):
                     return ''
+                if pct_val > 50:
+                    return 'font-weight: 700; color: #d32f2f;'
                 if pct_val > 25:
                     return 'font-weight: 700;'
                 return ''
@@ -559,7 +576,7 @@ else:
             styled_df = (
                 display_df.style
                 .map(style_side_cell, subset=["Side"])
-                .map(style_edge_pct_cell, subset=["Edge %"])
+                .map(style_edge_pct_cell, subset=["Edge % (norm)"])
             )
             
             st.dataframe(
@@ -577,7 +594,7 @@ else:
                     "Edge (yds)": st.column_config.NumberColumn(
                         "Edge (yds)", format="%.2f"
                     ),
-                    "Edge %": st.column_config.NumberColumn("Edge %", format="%.1f"),
+                    "Edge % (norm)": st.column_config.NumberColumn("Edge % (norm)", format="%.1f"),
                 },
             )
     
