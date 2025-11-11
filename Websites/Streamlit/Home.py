@@ -1,5 +1,4 @@
 import streamlit as st
-
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -125,68 +124,21 @@ st.markdown(f"""
 # st.image(justin_jefferson_path, use_column_width=True)
 # st.image(justin_jefferson_path, width=300)
 
-# # Get the current directory of the script (Home.py)
-# current_dir = os.path.dirname(os.path.abspath(__file__))
-
-# # Load the CSV data into a DataFrame
-
-# csv_file_path = os.path.join(current_dir, 'data/all_team_game_logs.csv')
-# df_team_game_logs = pd.read_csv(csv_file_path)
-# csv_file_path_4 = os.path.join(current_dir, 'data/SR-game-logs/all_teams_game_logs_2024.csv')
-# df_team_game_logs_2024 = pd.read_csv(csv_file_path_4)
-# csv_file_path_2 = os.path.join(current_dir, 'data/all_teams_schedule_and_game_results_merged.csv')
-# df_schedule_and_game_results = pd.read_csv(csv_file_path_2)
-# csv_file_path_3 = os.path.join(current_dir, 'data/all_passing_rushing_receiving.csv')
-# df_all_passing_rushing_receiving = pd.read_csv(csv_file_path_3)
-# # csv_file_path_5 = os.path.join(current_dir, 'data/odds/nfl_odds_movements.csv')
-# # df_nfl_odds_movements = pd.read_csv(csv_file_path_5)
-
-# # Add these lines where you load other CSV files
-# csv_file_path_odds = os.path.join(current_dir, 'data/odds/nfl_odds_movements.csv')
-# csv_file_path_circa = os.path.join(current_dir, 'data/odds/nfl_odds_movements_circa.csv')
-
-# try:
-#     df_nfl_odds_movements = pd.read_csv(csv_file_path_odds)
-#     df_nfl_odds_movements_circa = pd.read_csv(csv_file_path_circa)
-# except FileNotFoundError:
-#     st.warning("Odds data files not found. Some features may be unavailable.")
-#     df_nfl_odds_movements = pd.DataFrame()
-#     df_nfl_odds_movements_circa = pd.DataFrame()
-
-# # ---- Loading Data ---- #
-# csv_file_path_teams = os.path.join(current_dir, 'data/Teams.csv')
-# csv_file_path_games = os.path.join(current_dir, 'data/Games.csv')
-# csv_file_path_playerstats = os.path.join(current_dir, 'data/PlayerStats.csv')
-# df_teams = pd.read_csv(csv_file_path_teams)
-# df_games = pd.read_csv(csv_file_path_games)
-# df_playerstats = pd.read_csv(csv_file_path_playerstats)
-# st.session_state['df_teams'] = df_teams
-# st.session_state['df_games'] = df_games
-# st.session_state['df_playerstats'] = df_playerstats
-# st.session_state['df_team_game_logs'] = df_team_game_logs
-# st.session_state['df_schedule_and_game_results'] = df_schedule_and_game_results
-# st.session_state['df_all_passing_rushing_receiving'] = df_all_passing_rushing_receiving
-# st.session_state['df_team_game_logs_2024'] = df_team_game_logs_2024
-# st.session_state['df_nfl_odds_movements'] = df_nfl_odds_movements
-# st.session_state['df_nfl_odds_movements_circa'] = df_nfl_odds_movements_circa
-
-# ---- Loading Other Files ---- #
-# def load_lottie_pictures(url):
-#     r = requests.get(url)
-#     if r.status_code != 200:
-#         return None
-#     return r.json()
-# lottie_picture1 = load_lottie_pictures("https://lottie.host/9501172e-b94f-441d-a10d-406d7536663c/510yizrK3A.json")
-
-# picture1 = Image.open('images/pereira-adesanya-faceoff.jpeg')
-# picture2 = Image.open('images/ferg.jpg')
-
-# ---- Introduction and Bio ---- #
+# ---- Overview Section ---- #
 st.divider()
-st.header('Overview')
-left_column, right_column = st.columns([1, 2])  # Right column gets twice the width
+# st.write('######')
+# st.markdown("""
+#     <div style='text-align: center; margin-bottom: 2rem;'>
+#         <h2 style='color: #1a202c; font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem;'>Overview</h2>
+#     </div>
+#     """, unsafe_allow_html=True)
+        # <p style='color: #6c757d; font-size: 1rem;'>Comprehensive NFL analytics platform powered by machine learning</p>
+
+left_column, right_column = st.columns([1, 2])
 with left_column:
-    st.write('##')
+    # st.write('######')
+    st.write('######')
+    st.markdown('<div style="text-align: center; margin-bottom: 2rem;"><h1 style="font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem;">Overview</h1></div>', unsafe_allow_html=True)
     st.markdown('''
 - Predictive player performance models
 - Machine-learning projections w/ calculated value opportunities every week
@@ -195,16 +147,22 @@ with left_column:
 - Live odds movement and historical line analytics
     ''')
 with right_column:
+    # st.write('######')
+    st.write('')
     # st_lottie(lottie_picture1, height=400, width=400, key='lottie1')
     image_path = os.path.join(BASE_DIR, 'images/justin-jefferson-2.jpg')
-    right_column_image = Image.open(image_path)
-    st.image(right_column_image, use_container_width=True)  # Increased width significantly
+    if os.path.exists(image_path):
+        right_column_image = Image.open(image_path)
+        st.image(right_column_image, use_container_width=True)
 
 # ---- Pages & Tools ---- #
 st.divider()
-# st.header('🏆 NFL AI Tools & Features')
-# st.markdown('<p style="color: #6c757d; font-size: 1.1rem; text-align: center; margin-bottom: 2rem;">Explore our comprehensive suite of NFL analytics, predictions, and betting tools</p>', unsafe_allow_html=True)
-st.header('Features')
+st.markdown("""
+    <div style='text-align: center; margin-bottom: 2rem;'>
+        <h2 style='color: #1a202c; font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem;'>Features</h2>
+        <p style='color: #6c757d; font-size: 1rem;'>Explore our comprehensive suite of NFL analytics, predictions, and betting tools</p>
+    </div>
+    """, unsafe_allow_html=True)
 
 # Enhanced CSS for polished tool cards
 st.markdown("""
@@ -261,14 +219,38 @@ st.markdown("""
 }
 .tools-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     margin: 1.5rem 0;
+}
+.tools-last-row {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.tools-last-row .tool-card {
+    flex: 0 1 calc(33.333% - 0.67rem);
+    max-width: calc(33.333% - 0.67rem);
+}
+@media (max-width: 1024px) {
+    .tools-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .tools-last-row .tool-card {
+        flex: 0 1 calc(50% - 0.5rem);
+        max-width: calc(50% - 0.5rem);
+    }
 }
 @media (max-width: 768px) {
     .tools-grid {
         grid-template-columns: 1fr;
         gap: 0.75rem;
+    }
+    .tools-last-row .tool-card {
+        flex: 0 1 100%;
+        max-width: 100%;
     }
     .tool-card {
         padding: 1.25rem;
@@ -301,7 +283,8 @@ tools = [
 # Generate HTML for all tool cards in a single grid
 tool_cards_parts = ['<div class="tools-grid">']
 
-for tool in tools:
+# First 9 tools (3 rows of 3)
+for tool in tools[:9]:
     tool_cards_parts.append(
         f'<div class="tool-card">'
         f'<div class="tool-emoji">{tool["emoji"]}</div>'
@@ -309,6 +292,19 @@ for tool in tools:
         f'<div class="tool-description">{tool["description"]}</div>'
         f'</div>'
     )
+
+# Last 2 tools wrapped in a centered container
+if len(tools) > 9:
+    tool_cards_parts.append('<div class="tools-last-row">')
+    for tool in tools[9:]:
+        tool_cards_parts.append(
+            f'<div class="tool-card">'
+            f'<div class="tool-emoji">{tool["emoji"]}</div>'
+            f'<div class="tool-title">{tool["title"]}</div>'
+            f'<div class="tool-description">{tool["description"]}</div>'
+            f'</div>'
+        )
+    tool_cards_parts.append('</div>')
 
 tool_cards_parts.append('</div>')
 st.markdown(''.join(tool_cards_parts), unsafe_allow_html=True)
@@ -444,7 +440,7 @@ players_text = f"{len(players):,} Players"
 
 stats_html = f'''
 <div class="platform-stats-container">
-    <div class="platform-stats-title">Dataset Stats</div>
+    <div class="platform-stats-title">Dataset Metrics</div>
     <div class="platform-stats-values">{seasons_text} · {games_text} · {players_text}</div>
     <div class="platform-stats-subtitle">Updated Weekly After All Games Have Concluded</div>
 </div>
