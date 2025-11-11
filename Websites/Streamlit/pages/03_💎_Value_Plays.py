@@ -394,25 +394,10 @@ if selected_game != "All Games":
                 return 'color: #c62828; font-weight: 500;'
             return ''
         
-        def style_edge_pct_cell(val):
-            # val is numeric, check if it should be bold
-            if pd.isna(val):
-                return ''
-            try:
-                pct_val = float(val)
-            except (ValueError, TypeError):
-                return ''
-            if pct_val > 50:
-                return 'font-weight: 700;'
-            if pct_val > 25:
-                return 'font-weight: 600;'
-            return ''
-        
         # Create styled dataframe
         styled_df = (
             display_df.style
             .map(style_side_cell, subset=["Side"])
-            .map(style_edge_pct_cell, subset=["Edge % (norm)"])
         )
         
         # Create two-column layout: table on left, indicators on right
@@ -558,25 +543,10 @@ else:
                     return 'color: #c62828; font-weight: 500;'
                 return ''
             
-            def style_edge_pct_cell(val):
-                # val is numeric, check if it should be bold
-                if pd.isna(val):
-                    return ''
-                try:
-                    pct_val = float(val)
-                except (ValueError, TypeError):
-                    return ''
-                if pct_val > 50:
-                    return 'font-weight: 700; color: #d32f2f;'
-                if pct_val > 25:
-                    return 'font-weight: 700;'
-                return ''
-
             # Create styled dataframe
             styled_df = (
                 display_df.style
                 .map(style_side_cell, subset=["Side"])
-                .map(style_edge_pct_cell, subset=["Edge % (norm)"])
             )
             
             st.dataframe(
