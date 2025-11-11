@@ -269,12 +269,16 @@ if selected_game != "All Games":
         
         # Calculate % edge
         prop_data["edge_pct"] = (prop_data["edge_yards"] / prop_data["best_point"] * 100).round(1)
+        prop_data["edge_marker"] = prop_data["edge_pct"].apply(
+            lambda pct: "🔥🔥" if pd.notna(pct) and pct >= 25 else ("🔥" if pd.notna(pct) and pct >= 10 else "")
+        )
         
         # Section header for prop type
         st.markdown(f"### {prop_type.upper()}")
         
         display_df = prop_data[
             [
+                "edge_marker",
                 "rank",
                 "player",
                 "position",
@@ -291,6 +295,7 @@ if selected_game != "All Games":
         ].rename(
             columns={
                 "rank": "#",
+                "edge_marker": "🔥",
                 "player": "Player",
                 "position": "Pos",
                 "team": "Team",
@@ -305,10 +310,15 @@ if selected_game != "All Games":
             }
         )
         
+        display_df = display_df[["🔥", "#", "Player", "Pos", "Team", "Opp", "Side", "Line", "Odds", "Pred", "Edge", "Edge %", "Book"]]
+
         display_df["Line"] = display_df["Line"].round(1)
         display_df["Odds"] = display_df["Odds"].round().astype("Int64")
         display_df["Pred"] = display_df["Pred"].round(1)
         display_df["Edge"] = display_df["Edge"].round(1)
+        display_df["Edge %"] = display_df["Edge %"].apply(
+            lambda pct: "-" if pd.isna(pct) else f"{pct:.1f}%"
+        )
         
         # Add emoji indicators to Side column
         def format_side_with_emoji(side_value):
@@ -323,20 +333,7 @@ if selected_game != "All Games":
         
         display_df["Side"] = display_df["Side"].apply(format_side_with_emoji)
         
-        # Add edge level markers to Edge % column
-        def format_edge_pct(edge_pct):
-            if pd.isna(edge_pct):
-                return "-"
-            if edge_pct >= 25:
-                return f"{edge_pct:.1f}% 🔥🔥"
-            elif edge_pct >= 10:
-                return f"{edge_pct:.1f}% 🔥"
-            else:
-                return f"{edge_pct:.1f}%"
-        
-        display_df["Edge %"] = display_df["Edge %"].apply(format_edge_pct)
-        
-        # Apply color styling to Side and Edge % columns using pandas Styler
+        # Apply color styling to Side, Edge %, and marker columns using pandas Styler
         def style_side_cell(val):
             if pd.isna(val) or val == "-":
                 return 'color: #666;'
@@ -348,22 +345,38 @@ if selected_game != "All Games":
             return ''
         
         def style_edge_pct_cell(val):
-            if pd.isna(val) or val == "-":
+            if not isinstance(val, str) or not val.endswith("%"):
                 return ''
-            val_str = str(val)
-            if "🔥🔥" in val_str:
-                return 'color: #d32f2f; font-weight: 700; background-color: #ffebee;'
-            elif "🔥" in val_str:
-                return 'color: #f57c00; font-weight: 600; background-color: #fff3e0;'
+            try:
+                pct_val = float(val.replace("%", ""))
+            except ValueError:
+                return ''
+            if pct_val >= 25:
+                return 'color: #d32f2f; font-weight: 700;'
+            elif pct_val >= 10:
+                return 'color: #f57c00; font-weight: 600;'
             return ''
-        
-        styled_df = display_df.style.map(style_side_cell, subset=["Side"]).map(style_edge_pct_cell, subset=["Edge %"])
+
+        def style_edge_marker_cell(val):
+            if val == "🔥🔥":
+                return 'color: #d32f2f; font-weight: 700;'
+            elif val == "🔥":
+                return 'color: #f57c00; font-weight: 600;'
+            return ''
+
+        styled_df = (
+            display_df.style
+            .map(style_side_cell, subset=["Side"])
+            .map(style_edge_pct_cell, subset=["Edge %"])
+            .map(style_edge_marker_cell, subset=["🔥"])
+        )
         
         st.dataframe(
             styled_df,
             use_container_width=True,
             hide_index=True,
             column_config={
+                "🔥": st.column_config.TextColumn(" ", width="small"),
                 "#": st.column_config.NumberColumn("#"),
                 "Line": st.column_config.NumberColumn("Line", format="%.1f"),
                 "Odds": st.column_config.NumberColumn("Odds"),
@@ -409,9 +422,13 @@ else:
             
             # Calculate % edge
             subset["edge_pct"] = (subset["edge_yards"] / subset["best_point"] * 100).round(1)
+            subset["edge_marker"] = subset["edge_pct"].apply(
+                lambda pct: "🔥🔥" if pd.notna(pct) and pct >= 25 else ("🔥" if pd.notna(pct) and pct >= 10 else "")
+            )
             
             display_df = subset[
                 [
+                    "edge_marker",
                     "rank",
                     "player",
                     "position",
@@ -428,6 +445,7 @@ else:
             ].rename(
                 columns={
                     "rank": "#",
+                    "edge_marker": "🔥",
                     "player": "Player",
                     "position": "Pos",
                     "team": "Team",
@@ -442,10 +460,15 @@ else:
                 }
             )
             
+            display_df = display_df[["🔥", "#", "Player", "Pos", "Team", "Opponent", "Side", "Model Projection", "Best Line", "Best Price", "Edge (Yards)", "Edge %", "Sportsbook"]]
+            
             display_df["Model Projection"] = display_df["Model Projection"].round(1)
             display_df["Best Line"] = display_df["Best Line"].round(1)
             display_df["Best Price"] = display_df["Best Price"].round().astype("Int64")
             display_df["Edge (Yards)"] = display_df["Edge (Yards)"].round(2)
+            display_df["Edge %"] = display_df["Edge %"].apply(
+                lambda pct: "-" if pd.isna(pct) else f"{pct:.1f}%"
+            )
             
             # Add emoji indicators to Side column
             def format_side_with_emoji(side_value):
@@ -460,20 +483,7 @@ else:
             
             display_df["Side"] = display_df["Side"].apply(format_side_with_emoji)
             
-            # Add edge level markers to Edge % column
-            def format_edge_pct(edge_pct):
-                if pd.isna(edge_pct):
-                    return "-"
-                if edge_pct >= 25:
-                    return f"{edge_pct:.1f}% 🔥🔥"
-                elif edge_pct >= 10:
-                    return f"{edge_pct:.1f}% 🔥"
-                else:
-                    return f"{edge_pct:.1f}%"
-            
-            display_df["Edge %"] = display_df["Edge %"].apply(format_edge_pct)
-            
-            # Apply color styling to Side and Edge % columns using pandas Styler
+            # Apply color styling to Side, Edge %, and marker columns using pandas Styler
             def style_side_cell(val):
                 if pd.isna(val) or val == "-":
                     return 'color: #666;'
@@ -485,16 +495,31 @@ else:
                 return ''
             
             def style_edge_pct_cell(val):
-                if pd.isna(val) or val == "-":
+                if not isinstance(val, str) or not val.endswith("%"):
                     return ''
-                val_str = str(val)
-                if "🔥🔥" in val_str:
-                    return 'color: #d32f2f; font-weight: 700; background-color: #ffebee;'
-                elif "🔥" in val_str:
-                    return 'color: #f57c00; font-weight: 600; background-color: #fff3e0;'
+                try:
+                    pct_val = float(val.replace("%", ""))
+                except ValueError:
+                    return ''
+                if pct_val >= 25:
+                    return 'color: #d32f2f; font-weight: 700;'
+                elif pct_val >= 10:
+                    return 'color: #f57c00; font-weight: 600;'
                 return ''
             
-            styled_df = display_df.style.map(style_side_cell, subset=["Side"]).map(style_edge_pct_cell, subset=["Edge %"])
+            def style_edge_marker_cell(val):
+                if val == "🔥🔥":
+                    return 'color: #d32f2f; font-weight: 700;'
+                elif val == "🔥":
+                    return 'color: #f57c00; font-weight: 600;'
+                return ''
+
+            styled_df = (
+                display_df.style
+                .map(style_side_cell, subset=["Side"])
+                .map(style_edge_pct_cell, subset=["Edge %"])
+                .map(style_edge_marker_cell, subset=["🔥"])
+            )
             
             st.dataframe(
                 styled_df,
@@ -502,6 +527,7 @@ else:
                 height=800,
                 hide_index=True,
                 column_config={
+                    "🔥": st.column_config.TextColumn(" ", width="small"),
                     "#": st.column_config.NumberColumn("#"),
                     "Model Projection": st.column_config.NumberColumn(
                         "Model Projection", format="%.1f"
