@@ -266,6 +266,11 @@ if selected_game != "All Games":
         # Sort by edge yards descending and add ranking
         prop_data = prop_data.sort_values(by="edge_yards", ascending=False).reset_index(drop=True)
         prop_data["rank"] = range(1, len(prop_data) + 1)
+        prop_data["edge_pct"] = np.where(
+            prop_data["best_point"].abs() > 0,
+            (prop_data["edge_yards"] / prop_data["best_point"].abs()) * 100,
+            np.nan,
+        )
         
         # Section header for prop type
         st.markdown(f"### {prop_type.upper()}")
@@ -280,6 +285,7 @@ if selected_game != "All Games":
                 "side",
                 "best_point",
                 "best_price",
+                "edge_pct",
                 "bookmaker",
                 "predicted_yards",
                 "edge_yards",
@@ -294,6 +300,7 @@ if selected_game != "All Games":
                 "side": "Side",
                 "best_point": "Line",
                 "best_price": "Odds",
+                "edge_pct": "Edge %",
                 "bookmaker": "Book",
                 "predicted_yards": "Pred",
                 "edge_yards": "Edge",
@@ -304,9 +311,37 @@ if selected_game != "All Games":
         display_df["Odds"] = display_df["Odds"].round().astype("Int64")
         display_df["Pred"] = display_df["Pred"].round(1)
         display_df["Edge"] = display_df["Edge"].round(1)
+        display_df["Edge %"] = display_df["Edge %"].round(1)
+
+        def label_edge_tier(val):
+            if pd.isna(val):
+                return ""
+            if val >= 25:
+                return "🔥 25%+"
+            if val >= 10:
+                return "⚡ 10%+"
+            return ""
+
+        display_df["Tier"] = display_df["Edge %"].apply(label_edge_tier)
         
         # Reorder columns to put Book last
-        display_df = display_df[["#", "Player", "Pos", "Team", "Opp", "Side", "Line", "Odds", "Pred", "Edge", "Book"]]
+        display_df = display_df[
+            [
+                "#",
+                "Player",
+                "Pos",
+                "Team",
+                "Opp",
+                "Side",
+                "Line",
+                "Odds",
+                "Pred",
+                "Edge",
+                "Edge %",
+                "Tier",
+                "Book",
+            ]
+        ]
         
         # Add emoji indicators to Side column
         def format_side_with_emoji(side_value):
@@ -331,8 +366,19 @@ if selected_game != "All Games":
             elif "UNDER" in val_str:
                 return 'color: #c62828; font-weight: 500;'
             return ''
+
+        def style_edge_pct(val):
+            if pd.isna(val):
+                return ''
+            if val >= 25:
+                return 'color: #b71c1c; font-weight: 600;'
+            if val >= 10:
+                return 'color: #ef6c00; font-weight: 600;'
+            return ''
         
-        styled_df = display_df.style.map(style_side_cell, subset=["Side"])
+        styled_df = (
+            display_df.style.map(style_side_cell, subset=["Side"]).map(style_edge_pct, subset=["Edge %"])
+        )
         
         st.dataframe(
             styled_df,
@@ -344,6 +390,8 @@ if selected_game != "All Games":
                 "Odds": st.column_config.NumberColumn("Odds"),
                 "Pred": st.column_config.NumberColumn("Pred", format="%.1f"),
                 "Edge": st.column_config.NumberColumn("Edge", format="%.1f"),
+                "Edge %": st.column_config.NumberColumn("Edge %", format="%.1f"),
+                "Tier": st.column_config.TextColumn("Tier"),
             },
         )
         st.write("")
@@ -380,6 +428,11 @@ else:
             # Sort by edge yards descending and add ranking
             subset = subset.sort_values(by="edge_yards", ascending=False).reset_index(drop=True)
             subset["rank"] = range(1, len(subset) + 1)
+            subset["edge_pct"] = np.where(
+                subset["best_point"].abs() > 0,
+                (subset["edge_yards"] / subset["best_point"].abs()) * 100,
+                np.nan,
+            )
             
             display_df = subset[
                 [
@@ -392,6 +445,7 @@ else:
                     "predicted_yards",
                     "best_point",
                     "best_price",
+                    "edge_pct",
                     "bookmaker",
                     "edge_yards",
                 ]
@@ -406,6 +460,7 @@ else:
                     "predicted_yards": "Model Projection",
                     "best_point": "Best Line",
                     "best_price": "Best Price",
+                    "edge_pct": "Edge %",
                     "bookmaker": "Sportsbook",
                     "edge_yards": "Edge (Yards)",
                 }
@@ -415,9 +470,37 @@ else:
             display_df["Best Line"] = display_df["Best Line"].round(1)
             display_df["Best Price"] = display_df["Best Price"].round().astype("Int64")
             display_df["Edge (Yards)"] = display_df["Edge (Yards)"].round(2)
+            display_df["Edge %"] = display_df["Edge %"].round(1)
+
+            def label_edge_tier(val):
+                if pd.isna(val):
+                    return ""
+                if val >= 25:
+                    return "🔥 25%+"
+                if val >= 10:
+                    return "⚡ 10%+"
+                return ""
+
+            display_df["Tier"] = display_df["Edge %"].apply(label_edge_tier)
             
             # Reorder columns to put Sportsbook last
-            display_df = display_df[["#", "Player", "Pos", "Team", "Opponent", "Side", "Model Projection", "Best Line", "Best Price", "Edge (Yards)", "Sportsbook"]]
+            display_df = display_df[
+                [
+                    "#",
+                    "Player",
+                    "Pos",
+                    "Team",
+                    "Opponent",
+                    "Side",
+                    "Model Projection",
+                    "Best Line",
+                    "Best Price",
+                    "Edge (Yards)",
+                    "Edge %",
+                    "Tier",
+                    "Sportsbook",
+                ]
+            ]
             
             # Add emoji indicators to Side column
             def format_side_with_emoji(side_value):
@@ -442,8 +525,19 @@ else:
                 elif "UNDER" in val_str:
                     return 'color: #c62828; font-weight: 500;'
                 return ''
+
+            def style_edge_pct(val):
+                if pd.isna(val):
+                    return ''
+                if val >= 25:
+                    return 'color: #b71c1c; font-weight: 600;'
+                if val >= 10:
+                    return 'color: #ef6c00; font-weight: 600;'
+                return ''
             
-            styled_df = display_df.style.map(style_side_cell, subset=["Side"])
+            styled_df = (
+                display_df.style.map(style_side_cell, subset=["Side"]).map(style_edge_pct, subset=["Edge %"])
+            )
             
             st.dataframe(
                 styled_df,
@@ -460,6 +554,8 @@ else:
                     "Edge (Yards)": st.column_config.NumberColumn(
                         "Edge (Yards)", format="%.2f"
                     ),
+                    "Edge %": st.column_config.NumberColumn("Edge %", format="%.1f"),
+                    "Tier": st.column_config.TextColumn("Tier"),
                 },
             )
     
