@@ -1,4 +1,5 @@
 import glob
+import hashlib
 import json
 import os
 import re
@@ -171,11 +172,11 @@ if not available_weeks:
 
 # st.sidebar.header("Filters")
 st.sidebar.markdown(
-    "<h2 style='text-align: center;'>Filters</h2>",
+    "<h2 style='text-align: center;'>Selection</h2>",
     unsafe_allow_html=True
 )
 selected_week = st.sidebar.selectbox(
-    "Select Week:",
+    "Week:",
     options=[f"Week {week}" for week in available_weeks],
     index=len(available_weeks) - 1,
 )
@@ -214,7 +215,7 @@ all_prop_types = sorted(value_opportunities["prop_type"].dropna().unique())
 
 # Game selector in sidebar
 selected_game = st.sidebar.selectbox(
-    "Select Game:",
+    "Game:",
     options=game_options,
     index=0,
 )
@@ -317,19 +318,19 @@ if selected_game != "All Games":
                 "position": "Pos",
                 "team": "Team",
                 "opp": "Opp",
-                "side": "Side",
-                "best_point": "Line",
-                "best_price": "Odds",
-                "predicted_yards": "Pred",
+                "best_point": "Best Line (yds)",
+                "predicted_yards": "Projection (yds)",
+                "best_price": "Best Odds",
                 "edge_yards": "Edge (yds)",
                 "edge_pct": "Edge %",
+                "side": "Side",
                 "bookmaker": "Book",
             }
         )
         
-        display_df["Line"] = display_df["Line"].round(1)
-        display_df["Odds"] = display_df["Odds"].round().astype("Int64")
-        display_df["Pred"] = display_df["Pred"].round(1)
+        display_df["Best Line (yds)"] = display_df["Best Line (yds)"].round(1)
+        display_df["Best Odds"] = display_df["Best Odds"].round().astype("Int64")
+        display_df["Projection (yds)"] = display_df["Projection (yds)"].round(1)
         display_df["Edge (yds)"] = display_df["Edge (yds)"].round(1)
         # Keep edge_pct numeric for sorting
         edge_pct_numeric = display_df["Edge %"].copy()
@@ -343,7 +344,7 @@ if selected_game != "All Games":
         )
         # Keep Edge % numeric for sorting, format for display in styling
         display_df["Edge %"] = edge_pct_numeric
-        display_df = display_df[["#", "Player", "Pos", "Team", "Opp", "Side", "Line", "Odds", "Pred", "Edge (yds)", "Edge %", "Book"]]
+        display_df = display_df[["#", "Player", "Pos", "Team", "Opp", "Projection (yds)", "Best Line (yds)", "Best Odds", "Edge (yds)", "Edge %", "Side", "Book"]]
         
         # Sort FIRST by Edge (yds) before formatting
         display_df = display_df.sort_values(by="Edge (yds)", ascending=False, na_position='last')
@@ -407,10 +408,10 @@ if selected_game != "All Games":
                 use_container_width=True,
                 hide_index=True,
                 column_config={
-                    "#": st.column_config.TextColumn("#"),
-                    "Line": st.column_config.NumberColumn("Line", format="%.1f"),
-                    "Odds": st.column_config.NumberColumn("Odds"),
-                    "Pred": st.column_config.NumberColumn("Pred", format="%.1f"),
+                    "#": st.column_config.TextColumn(label=""),
+                    "Best Line (yds)": st.column_config.NumberColumn("Best Line (yds)", format="%.1f"),
+                    "Projection (yds)": st.column_config.NumberColumn("Projection (yds)", format="%.1f"),
+                    "Best Odds": st.column_config.NumberColumn("Best Odds"),
                     "Edge (yds)": st.column_config.NumberColumn("Edge (yds)", format="%.1f"),
                     "Edge %": st.column_config.NumberColumn("Edge %", format="%.1f"),
                 },
@@ -486,20 +487,20 @@ else:
                     "player": "Player",
                     "position": "Pos",
                     "team": "Team",
-                    "opp": "Opponent",
-                    "side": "Side",
-                    "predicted_yards": "Model Projection",
-                    "best_point": "Best Line",
-                    "best_price": "Best Price",
+                    "opp": "Opp",
+                    "best_point": "Best Line (yds)",
+                    "predicted_yards": "Projection (yds)",
+                    "best_price": "Best Odds",
                     "edge_yards": "Edge (yds)",
                     "edge_pct": "Edge %",
-                    "bookmaker": "Sportsbook",
+                    "side": "Side",
+                    "bookmaker": "Book",
                 }
             )
             
-            display_df["Model Projection"] = display_df["Model Projection"].round(1)
-            display_df["Best Line"] = display_df["Best Line"].round(1)
-            display_df["Best Price"] = display_df["Best Price"].round().astype("Int64")
+            display_df["Projection (yds)"] = display_df["Projection (yds)"].round(1)
+            display_df["Best Line (yds)"] = display_df["Best Line (yds)"].round(1)
+            display_df["Best Odds"] = display_df["Best Odds"].round().astype("Int64")
             display_df["Edge (yds)"] = display_df["Edge (yds)"].round(2)
             # Keep edge_pct numeric for sorting
             edge_pct_numeric = display_df["Edge %"].copy()
@@ -513,7 +514,7 @@ else:
             )
             # Keep Edge % numeric for sorting, format for display
             display_df["Edge %"] = edge_pct_numeric
-            display_df = display_df[["#", "Player", "Pos", "Team", "Opponent", "Side", "Model Projection", "Best Line", "Best Price", "Edge (yds)", "Edge %", "Sportsbook"]]
+            display_df = display_df[["#", "Player", "Pos", "Team", "Opp", "Projection (yds)", "Best Line (yds)", "Best Odds", "Edge (yds)", "Edge %", "Side", "Book"]]
             
             # Sort FIRST by Edge (yds) before formatting
             display_df = display_df.sort_values(by="Edge (yds)", ascending=False, na_position='last')
@@ -567,12 +568,12 @@ else:
                 height=800,
                 hide_index=True,
                 column_config={
-                    "#": st.column_config.TextColumn("#"),
-                    "Model Projection": st.column_config.NumberColumn(
-                        "Model Projection", format="%.1f"
+                    "#": st.column_config.TextColumn(label=""),
+                    "Best Line (yds)": st.column_config.NumberColumn("Best Line (yds)", format="%.1f"),
+                    "Projection (yds)": st.column_config.NumberColumn(
+                        "Projection (yds)", format="%.1f"
                     ),
-                    "Best Line": st.column_config.NumberColumn("Best Line", format="%.1f"),
-                    "Best Price": st.column_config.NumberColumn("Best Price"),
+                    "Best Odds": st.column_config.NumberColumn("Best Odds"),
                     "Edge (yds)": st.column_config.NumberColumn(
                         "Edge (yds)", format="%.2f"
                     ),
@@ -603,7 +604,11 @@ with col2:
 st.divider()
 
 with st.sidebar:
-    st.markdown("<div style='font-size: 1.2rem; font-weight: 600; margin-bottom: 6px; text-align: center;'>Download Reports</div>", unsafe_allow_html=True)
+    st.markdown(
+        "<div style='font-size: 1.2rem; font-weight: 600; margin-bottom: 12px; text-align: center;'>Download Reports</div>"
+        "<div style='height: 5px;'></div>",  # small space after the title
+        unsafe_allow_html=True
+    )
     # st.markdown("######")
     # st.write("")
     value_html_path = os.path.join(
