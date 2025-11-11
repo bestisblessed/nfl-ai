@@ -172,19 +172,42 @@ st.divider()
 st.subheader("📊 Key Metrics Dashboard")
 st.write(" ")
 
-# Calculate top performers
-best_home_record = win_loss_df.nlargest(1, 'home_wins').index[0] if len(win_loss_df) > 0 else "N/A"
-best_away_record = win_loss_df.nlargest(1, 'away_wins').index[0] if len(win_loss_df) > 0 else "N/A"
-best_offense = avg_points.nlargest(1, 'Overall').index[0] if len(avg_points) > 0 else "N/A"
-best_defense = avg_points_allowed.nsmallest(1, 'Overall').index[0] if len(avg_points_allowed) > 0 else "N/A"
-most_balanced = team_half_scores['Differential'].abs().nsmallest(1).index[0] if len(team_half_scores) > 0 else "N/A"
+# Calculate top performers with error handling
+try:
+    best_home_record = win_loss_df.nlargest(1, 'home_wins').index[0] if len(win_loss_df) > 0 and 'home_wins' in win_loss_df.columns else "N/A"
+except:
+    best_home_record = "N/A"
+
+try:
+    best_away_record = win_loss_df.nlargest(1, 'away_wins').index[0] if len(win_loss_df) > 0 and 'away_wins' in win_loss_df.columns else "N/A"
+except:
+    best_away_record = "N/A"
+
+try:
+    best_offense = avg_points.nlargest(1, 'Overall').index[0] if len(avg_points) > 0 and 'Overall' in avg_points.columns else "N/A"
+except:
+    best_offense = "N/A"
+
+try:
+    best_defense = avg_points_allowed.nsmallest(1, 'Overall').index[0] if len(avg_points_allowed) > 0 and 'Overall' in avg_points_allowed.columns else "N/A"
+except:
+    best_defense = "N/A"
+
+try:
+    most_balanced = team_half_scores['Differential'].abs().nsmallest(1).index[0] if len(team_half_scores) > 0 and 'Differential' in team_half_scores.columns else "N/A"
+except:
+    most_balanced = "N/A"
 
 # Create metric cards
 col1, col2, col3, col4, col5 = st.columns(5)
 
 with col1:
-    home_wins_val = win_loss_df.loc[best_home_record, 'home_wins'] if best_home_record != "N/A" else 0
-    home_losses_val = win_loss_df.loc[best_home_record, 'home_losses'] if best_home_record != "N/A" else 0
+    try:
+        home_wins_val = win_loss_df.loc[best_home_record, 'home_wins'] if best_home_record != "N/A" and best_home_record in win_loss_df.index else 0
+        home_losses_val = win_loss_df.loc[best_home_record, 'home_losses'] if best_home_record != "N/A" and best_home_record in win_loss_df.index else 0
+    except:
+        home_wins_val = 0
+        home_losses_val = 0
     st.metric(
         label="🏠 Best Home Record",
         value=f"{best_home_record}",
@@ -192,8 +215,12 @@ with col1:
     )
 
 with col2:
-    away_wins_val = win_loss_df.loc[best_away_record, 'away_wins'] if best_away_record != "N/A" else 0
-    away_losses_val = win_loss_df.loc[best_away_record, 'away_losses'] if best_away_record != "N/A" else 0
+    try:
+        away_wins_val = win_loss_df.loc[best_away_record, 'away_wins'] if best_away_record != "N/A" and best_away_record in win_loss_df.index else 0
+        away_losses_val = win_loss_df.loc[best_away_record, 'away_losses'] if best_away_record != "N/A" and best_away_record in win_loss_df.index else 0
+    except:
+        away_wins_val = 0
+        away_losses_val = 0
     st.metric(
         label="✈️ Best Away Record",
         value=f"{best_away_record}",
@@ -201,7 +228,10 @@ with col2:
     )
 
 with col3:
-    ppg_val = round(avg_points.loc[best_offense, 'Overall'], 1) if best_offense != "N/A" else 0
+    try:
+        ppg_val = round(avg_points.loc[best_offense, 'Overall'], 1) if best_offense != "N/A" and best_offense in avg_points.index else 0
+    except:
+        ppg_val = 0
     st.metric(
         label="⚡ Highest PPG",
         value=f"{best_offense}",
@@ -209,7 +239,10 @@ with col3:
     )
 
 with col4:
-    pa_val = round(avg_points_allowed.loc[best_defense, 'Overall'], 1) if best_defense != "N/A" else 0
+    try:
+        pa_val = round(avg_points_allowed.loc[best_defense, 'Overall'], 1) if best_defense != "N/A" and best_defense in avg_points_allowed.index else 0
+    except:
+        pa_val = 0
     st.metric(
         label="🛡️ Best Defense",
         value=f"{best_defense}",
@@ -217,7 +250,10 @@ with col4:
     )
 
 with col5:
-    diff_val = round(team_half_scores.loc[most_balanced, 'Differential'], 1) if most_balanced != "N/A" else 0
+    try:
+        diff_val = round(team_half_scores.loc[most_balanced, 'Differential'], 1) if most_balanced != "N/A" and most_balanced in team_half_scores.index else 0
+    except:
+        diff_val = 0
     st.metric(
         label="⚖️ Most Balanced",
         value=f"{most_balanced}",
