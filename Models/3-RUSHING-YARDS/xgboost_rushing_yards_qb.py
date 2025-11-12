@@ -40,7 +40,7 @@ if os.path.exists(injured_path):
         injured = None
 
 # Numeric
-for col in ["rush_attempts", "rush_yards", "season", "week"]:
+for col in ["rush_att", "rush_yards", "season", "week"]:
     hist[col] = pd.to_numeric(hist[col], errors="coerce")
 hist = hist.dropna(subset=["rush_yards"])
 
@@ -49,7 +49,7 @@ hist = hist.sort_values(["player_id", "season", "week"]).reset_index(drop=True)
 windows = [3, 5, 8, 12]
 
 for w in windows:
-    hist[f"attempts_l{w}"] = hist.groupby("player_id")["rush_attempts"].transform(lambda s: s.shift(1).rolling(w, min_periods=1).mean())
+    hist[f"attempts_l{w}"] = hist.groupby("player_id")["rush_att"].transform(lambda s: s.shift(1).rolling(w, min_periods=1).mean())
     hist[f"yards_l{w}"] = hist.groupby("player_id")["rush_yards"].transform(lambda s: s.shift(1).rolling(w, min_periods=1).mean())
     # robust
     hist[f"yards_median_l{w}"] = hist.groupby("player_id")["rush_yards"].transform(lambda s: s.shift(1).rolling(w, min_periods=1).median())
@@ -86,6 +86,27 @@ qb_rosters["player_id"] = qb_rosters["pfr_id"] + ".htm"
 
 # Filter to only the designated starting QBs by matching team and full_name
 qb_rosters = qb_rosters.merge(starting_qbs_2025, left_on=['team', 'full_name'], right_on=['team', 'starting_qb'], how='inner')
+
+# Filter based on current season performance
+current_season = hist[hist["season"] == 2025]
+if not current_season.empty:
+    # Calculate current season stats per player
+    season_stats = current_season.groupby("player_id").agg({
+        "rush_att": "sum"
+    }).reset_index()
+
+    season_stats.columns = ["player_id", "total_rush_att"]
+
+    # Filter criteria: greater than 10 total rush attempts on the season
+    active_qb_criteria = season_stats["total_rush_att"] > 10
+    active_qb_ids = season_stats[active_qb_criteria]["player_id"].tolist()
+
+    # Keep only active QBs
+    qb_rosters = qb_rosters[qb_rosters["player_id"].isin(active_qb_ids)]
+
+    print(f"Filtered QBs based on current season activity (>10 rush attempts): {len(qb_rosters)} active QBs remaining")
+else:
+    print("No current season data available, skipping activity filter")
 
 # Exclude injured players by full_name if provided
 if injured:
