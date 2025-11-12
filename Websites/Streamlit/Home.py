@@ -6,6 +6,9 @@ import requests
 from streamlit_lottie import st_lottie
 from PIL import Image
 import os
+import sys
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+from utils.footer import render_footer
 
 # Configure page
 st.set_page_config(page_title="NFL AI", page_icon="🏈", layout="wide")
@@ -556,10 +559,5 @@ else:
 #     # st.caption("Legendary")
 # # st.video(video1)
 
-# ---- Contact Me ---- #
-st.divider()
-st.header('Contact Me')
-# st.write('##')
-# st.write('Hover over this text for more information [?](Your help text here)')
-st.markdown('By Tyler Durette')
-st.markdown("NFL AI © 2023 | [GitHub](https://github.com/bestisblessed) | [Contact Me](tyler.durette@gmail.com)")
+# ---- Footer ---- #
+render_footer()

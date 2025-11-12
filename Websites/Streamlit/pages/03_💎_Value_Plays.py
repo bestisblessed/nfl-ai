@@ -3,6 +3,7 @@ import hashlib
 import json
 import os
 import re
+import sys
 from typing import List, Optional, Tuple
 
 import numpy as np
@@ -10,6 +11,8 @@ import pandas as pd
 import streamlit as st
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(BASE_DIR)
+from utils.footer import render_footer
 PROJECTIONS_DIR = os.path.join(BASE_DIR, "data", "projections")
 YARD_THRESHOLDS = {
     "Passing Yards": (45.0, 75.0),
@@ -648,3 +651,6 @@ with st.sidebar:
                 # width=150
                 use_container_width=True
             )
+
+# Footer
+render_footer()
