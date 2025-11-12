@@ -18,7 +18,7 @@ def render_footer():
     .footer-design-3-title {
         font-size: 1rem;
         font-weight: 600;
-        color: #5a6c7d;
+        color: #474747;
         padding-bottom: 0.3rem;
     }
     .footer-design-3-copyright {
@@ -52,7 +52,7 @@ def render_footer():
                     <span class="footer-design-3-copyright-separator">|</span>
                     <a href="mailto:tyler.durette@gmail.com">Contact Me</a>
                 </span>
-                <div class="footer-design-3-copyright-name">Created by Tyler Durette</div>
+                <div style="font-style: italic;" class="footer-design-3-copyright-name">Created by Tyler Durette</div>
             </div>
         </div>
     </div>
