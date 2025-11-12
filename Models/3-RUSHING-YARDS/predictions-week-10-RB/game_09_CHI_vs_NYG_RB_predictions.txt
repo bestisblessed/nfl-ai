@@ -5,13 +5,13 @@ CHI vs NYG | Week 10 2025 | RB Projected Rushing Yards
 +-----------------+--------------+    +------------------+--------------+
 | CHI Player      |   Pred Yards |    | NYG Player       |   Pred Yards |
 +=================+==============+    +==================+==============+
-| D'Andre Swift   |         52.1 |    | Tyrone Tracy Jr. |         24.5 |
-| Roschon Johnson |          7.9 |    | Devin Singletary |         13   |
+| D'Andre Swift   |         57.2 |    | Tyrone Tracy Jr. |         29.5 |
+| Roschon Johnson |         12.2 |    | Devin Singletary |         16.7 |
 +-----------------+--------------+    +------------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total RBs: 4 (2 CHI, 2 NYG)
-Top Projection: D'Andre Swift (CHI) - 52.1 yards
+Top Projection: D'Andre Swift (CHI) - 57.2 yards
 ================================================================================

@@ -1,5 +1,5 @@
 # make_historical_from_raw.py
-# Input:  all_passing_rushing_receiving.csv  (raw per player-game stats)
+# Input:  player_stats_pfr.csv  (raw per player-game stats)
 # Output: model_train.csv        (cleaned for modeling)
 # Also downloads and prepares 2025 roster data
 
@@ -7,7 +7,7 @@ import pandas as pd
 import requests
 import os
 
-RAW = "data/all_passing_rushing_receiving.csv"
+RAW = "data/player_stats_pfr.csv"
 OUT = "data/model_train.csv"
 
 df = pd.read_csv(RAW)
@@ -157,5 +157,5 @@ try:
 except Exception as e:
     print(f"Error processing existing 2025 roster data: {e}")
 
-# os.remove('data/all_passing_rushing_receiving.csv')
-# print("Removed all_passing_rushing_receiving.csv")
+# os.remove('data/player_stats_pfr.csv')
+# print("Removed player_stats_pfr.csv")

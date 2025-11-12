@@ -5,15 +5,15 @@ MIN vs BAL | Week 10 2025 | RB Projected Rushing Yards
 +--------------+--------------+    +-----------------+--------------+
 | MIN Player   |   Pred Yards |    | BAL Player      |   Pred Yards |
 +==============+==============+    +=================+==============+
-| Jordan Mason |         28.3 |    | Derrick Henry   |         79.2 |
-| Aaron Jones  |         27.9 |    | Keaton Mitchell |         32.7 |
-| Cam Akers    |         25.5 |    | Justice Hill    |          9.9 |
-| C.J. Ham     |         -0   |    | Rasheen Ali     |          0.7 |
+| Aaron Jones  |         45.1 |    | Derrick Henry   |         99.5 |
+| Jordan Mason |         38.7 |    | Keaton Mitchell |         27.4 |
+| Cam Akers    |         27.4 |    | Justice Hill    |         10.6 |
+| C.J. Ham     |          0.3 |    | Rasheen Ali     |          1.6 |
 +--------------+--------------+    +-----------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total RBs: 8 (4 MIN, 4 BAL)
-Top Projection: Derrick Henry (BAL) - 79.2 yards
+Top Projection: Derrick Henry (BAL) - 99.5 yards
 ================================================================================

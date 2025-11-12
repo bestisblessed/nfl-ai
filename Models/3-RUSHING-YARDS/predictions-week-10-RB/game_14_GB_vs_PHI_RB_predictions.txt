@@ -5,14 +5,14 @@ GB vs PHI | Week 10 2025 | RB Projected Rushing Yards
 +----------------+--------------+    +----------------+--------------+
 | GB Player      |   Pred Yards |    | PHI Player     |   Pred Yards |
 +================+==============+    +================+==============+
-| Josh Jacobs    |         66.7 |    | Saquon Barkley |         59.5 |
-| Emanuel Wilson |         26.3 |    | Tank Bigsby    |         12.2 |
-| Chris Brooks   |          2.2 |    | Will Shipley   |          0.9 |
+| Josh Jacobs    |         67.9 |    | Saquon Barkley |         72   |
+| Emanuel Wilson |         18.3 |    | Tank Bigsby    |         25.9 |
+| Chris Brooks   |          2.1 |    | Will Shipley   |          6   |
 +----------------+--------------+    +----------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total RBs: 6 (3 GB, 3 PHI)
-Top Projection: Josh Jacobs (GB) - 66.7 yards
+Top Projection: Saquon Barkley (PHI) - 72.0 yards
 ================================================================================

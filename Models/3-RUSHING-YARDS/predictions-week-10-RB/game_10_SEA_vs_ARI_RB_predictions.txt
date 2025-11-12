@@ -5,14 +5,14 @@ SEA vs ARI | Week 10 2025 | RB Projected Rushing Yards
 +--------------------+--------------+    +-----------------+--------------+
 | SEA Player         |   Pred Yards |    | ARI Player      |   Pred Yards |
 +====================+==============+    +=================+==============+
-| Kenneth Walker III |         56.6 |    | Michael Carter  |         27.6 |
-| Zach Charbonnet    |         34.6 |    | Emari Demercado |         22.3 |
-| George Holani      |         13.4 |    +-----------------+--------------+
+| Kenneth Walker III |         57.2 |    | Michael Carter  |         26.7 |
+| Zach Charbonnet    |         33   |    | Emari Demercado |         15.6 |
+| George Holani      |         10.2 |    +-----------------+--------------+
 +--------------------+--------------+    
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total RBs: 5 (3 SEA, 2 ARI)
-Top Projection: Kenneth Walker III (SEA) - 56.6 yards
+Top Projection: Kenneth Walker III (SEA) - 57.2 yards
 ================================================================================
