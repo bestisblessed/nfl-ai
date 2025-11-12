@@ -30,31 +30,39 @@ st.divider()
 
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
-# ---- Create Assistant (with file upload) ----
-if "assistant_id" not in st.session_state:
-    # Upload CSVs when creating assistant
-    uploaded = []
-    current_dir = os.path.dirname(os.path.abspath(__file__))
-    data_dir = os.path.join(current_dir, '../data')
+# ---- Chat History ----
+if "messages" not in st.session_state:
+    st.session_state.messages = []
 
-    for filename in ["player_stats_pfr.csv", "all_team_game_logs.csv", "Rosters.csv"]:
-        filepath = os.path.join(data_dir, filename)
-        with open(filepath, "rb") as f:
-            uploaded.append(client.files.create(file=f, purpose="assistants"))
-    st.session_state.file_ids = [f.id for f in uploaded]
+for msg in st.session_state.messages:
+    with st.chat_message(msg["role"]):
+        st.markdown(msg["content"])
 
-    # Create assistant with uploaded files
-    assistant = client.beta.assistants.create(
-        name="NFL AI Chatbot",
-        # model="gpt-4o-mini",
-        model="gpt-4.1-nano",
-        tools=[{"type": "code_interpreter"}],
-        tool_resources={
-            "code_interpreter": {
-                "file_ids": st.session_state.file_ids
-            }
-        },
-        instructions="""You are an NFL data analyst with access to CSV files. You MUST use the code interpreter to read and analyze these files.
+# ---- Helper: run a prompt through the assistant ----
+def run_query(prompt: str):
+    # Create Assistant (with file upload) if not exists
+    if "assistant_id" not in st.session_state:
+        uploaded = []
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        data_dir = os.path.join(current_dir, '../data')
+
+        for filename in ["player_stats_pfr.csv", "all_team_game_logs.csv", "Rosters.csv"]:
+            filepath = os.path.join(data_dir, filename)
+            with open(filepath, "rb") as f:
+                uploaded.append(client.files.create(file=f, purpose="assistants"))
+        st.session_state.file_ids = [f.id for f in uploaded]
+
+        assistant = client.beta.assistants.create(
+            name="NFL AI Chatbot",
+            # model="gpt-4o-mini",
+            model="gpt-4.1-nano",
+            tools=[{"type": "code_interpreter"}],
+            tool_resources={
+                "code_interpreter": {
+                    "file_ids": st.session_state.file_ids
+                }
+            },
+            instructions="""You are an NFL data analyst with access to CSV files. You MUST use the code interpreter to read and analyze these files.
 
 CRITICAL: When creating visualizations, you MUST:
 1. Use matplotlib or seaborn to create plots
@@ -67,19 +75,9 @@ Available files to read:
 - pd.read_csv('Rosters.csv') - Player biographical information
 
 ALWAYS create actual visualizations and save them as files. Show specific data analysis with real numbers."""
-    )
-    st.session_state.assistant_id = assistant.id
+        )
+        st.session_state.assistant_id = assistant.id
 
-# ---- Chat History ----
-if "messages" not in st.session_state:
-    st.session_state.messages = []
-
-for msg in st.session_state.messages:
-    with st.chat_message(msg["role"]):
-        st.markdown(msg["content"])
-
-# ---- Helper: run a prompt through the assistant ----
-def run_query(prompt: str):
     st.chat_message("user").markdown(prompt)
     st.session_state.messages.append({"role": "user", "content": prompt})
 
