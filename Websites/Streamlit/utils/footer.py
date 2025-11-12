@@ -5,9 +5,13 @@ def render_footer():
     """Render the footer component."""
     current_year = datetime.now().year
     st.write('##')
-    st.divider()
+    # st.divider()
     st.markdown("""
     <style>
+    hr {
+        border-color: rgba(0, 0, 0, 0.08) !important;
+        opacity: 0.5;
+    }
     .footer-design-3 {
         text-align: center;
     }
@@ -34,6 +38,8 @@ def render_footer():
     </style>
     """, unsafe_allow_html=True)
     
+    st.divider()
+
     st.markdown(f"""
     <div class="footer-design-3">
         <div class="footer-design-3-content">
