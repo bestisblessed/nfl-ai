@@ -21,19 +21,17 @@ import matplotlib.pyplot as plt
 from matplotlib.backends.backend_pdf import PdfPages
 
 
-def load_value_csv(week: int) -> pd.DataFrame:
-    input_path = f"10-ARBITRAGE/data/week{week}_value_opportunities.csv"
-    alt_path = f"data/week{week}_value_opportunities.csv"
+def load_value_csv(week: int, models_dir: str) -> pd.DataFrame:
+    # Use absolute paths based on models_dir
+    input_path = os.path.join(models_dir, f"10-ARBITRAGE/data/week{week}_value_opportunities.csv")
     if os.path.exists(input_path):
         df = pd.read_csv(input_path)
-    elif os.path.exists(alt_path):
-        df = pd.read_csv(alt_path)
     else:
-        raise FileNotFoundError(f"Could not find value opportunities CSV for week {week} at {input_path} or {alt_path}")
+        raise FileNotFoundError(f"Could not find value opportunities CSV for week {week} at {input_path}")
     
     # Load and merge commence_time from events CSV if not already present
     if "commence_time" not in df.columns or df["commence_time"].isna().all():
-        events_path = f"10-ARBITRAGE/data/week{week}_events.csv"
+        events_path = os.path.join(models_dir, f"10-ARBITRAGE/data/week{week}_events.csv")
         if os.path.exists(events_path):
             events_df = pd.read_csv(events_path)
             # Ensure commence_time is datetime
@@ -56,7 +54,7 @@ def load_value_csv(week: int) -> pd.DataFrame:
     return df
 
 
-def build_html_report(df: pd.DataFrame, week: int) -> str:
+def build_html_report(df: pd.DataFrame, week: int, models_dir: str) -> str:
     css = """
     <style>
         body {
@@ -171,7 +169,7 @@ def build_html_report(df: pd.DataFrame, week: int) -> str:
     df_local["game_key"] = df_local.apply(lambda r: f"{r['home_team']} vs {r['away_team']}", axis=1)
 
     # Read game order from upcoming_games.csv (same as regular props report)
-    upcoming_file = "../upcoming_games.csv"
+    upcoming_file = os.path.join(models_dir, "upcoming_games.csv")
     if os.path.exists(upcoming_file):
         upcoming_df = pd.read_csv(upcoming_file)
         games = []
@@ -187,6 +185,11 @@ def build_html_report(df: pd.DataFrame, week: int) -> str:
                 games.append(game_key2)
         # Remove duplicates while preserving order
         games = list(dict.fromkeys(games))
+        # If no matches (e.g., upcoming uses abbreviations but df has full names),
+        # fall back to using all games present in the data
+        if not games:
+            games = df_local["game_key"].dropna().unique().tolist()
+            games.sort()
     else:
         # Fallback to lexicographic sorting if upcoming_games.csv not found
         games = df_local["game_key"].dropna().unique().tolist()
@@ -464,18 +467,23 @@ def main():
         print("Week must be an integer")
         sys.exit(1)
 
-    df = load_value_csv(week)
+    # Get absolute path to Models directory (repo home)
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    models_dir = os.path.dirname(script_dir)  # Go up from 10-ARBITRAGE/ to Models/
+
+    df = load_value_csv(week, models_dir)
     # Ensure numeric types
     for c in ["predicted_yards","best_point","best_price","edge_yards"]:
         if c in df.columns:
             df[c] = pd.to_numeric(df[c], errors="coerce")
 
-    # Save reports to 0-FINAL-REPORTS to match existing final report outputs
-    os.makedirs("0-FINAL-REPORTS", exist_ok=True)
-    html_out = f"0-FINAL-REPORTS/week{week}_value_complete_props_report.html"
-    pdf_out = f"0-FINAL-REPORTS/week{week}_value_leader_tables.pdf"
+    # Always save to Models/0-FINAL-REPORTS/ using absolute path
+    final_reports_dir = os.path.join(models_dir, "0-FINAL-REPORTS")
+    os.makedirs(final_reports_dir, exist_ok=True)
+    html_out = os.path.join(final_reports_dir, f"week{week}_value_complete_props_report.html")
+    pdf_out = os.path.join(final_reports_dir, f"week{week}_value_leader_tables.pdf")
 
-    html = build_html_report(df, week)
+    html = build_html_report(df, week, models_dir)
     with open(html_out, "w", encoding="utf-8") as f:
         f.write(html)
     print(f"HTML report written: {html_out}")

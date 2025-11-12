@@ -28,7 +28,10 @@ import pandas as pd
 import time
 from datetime import datetime
 
-api_key = 'dac2f8968b408557be6ccd32a4a36192'
+# api_key = 'dac2f8968b408557be6ccd32a4a36192' # tylersegn@gmail.com
+# api_key = 'ac8ec55a01add5e05a710345b46cce0f' # durrgames9@gmail.com
+# api_key = '8aabcc029890b3fd7f740a705758c2d8' # tyler.durette@gmail.com
+api_key = 'c27f8c6491e7cd3139e6ebe1b2139fad' # hijohnwayne1@gmail.com
 sport_key = 'americanfootball_nfl'
 base_url = 'https://api.the-odds-api.com/v4/sports/'
 regions = 'us,us2,us_dfs,eu'
