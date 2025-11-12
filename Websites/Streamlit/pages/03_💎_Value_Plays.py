@@ -213,23 +213,29 @@ value_opportunities["bookmaker"] = value_opportunities["bookmaker"].fillna("-")
 value_opportunities["side"] = value_opportunities["side"].fillna("-")
 value_opportunities["edge_yards"] = value_opportunities["edge_yards"].fillna(0.0)
 
-# Get unique games for selector using upcoming_games.csv with abbreviations, sorted by time
-game_options_list, upcoming_games_df = load_upcoming_games_with_times()
-if game_options_list:
-    game_options = ["All Games"] + game_options_list
+# Get unique games for selector from the selected week's value opportunities data
+# Use team/opp columns (abbreviations) to match filtering logic
+if "team" in value_opportunities.columns and "opp" in value_opportunities.columns:
+    # Create games from team/opp pairs (using abbreviations)
+    games_set = set()
+    for _, row in value_opportunities.iterrows():
+        if pd.notna(row.get("team")) and pd.notna(row.get("opp")):
+            games_set.add(f"{row['team']} @ {row['opp']}")
+    game_options = ["All Games"] + sorted(games_set)
 elif "home_team" in value_opportunities.columns and "away_team" in value_opportunities.columns:
+    # Fallback: use home_team/away_team if team/opp don't exist
     games_df = value_opportunities[["home_team", "away_team"]].drop_duplicates()
     game_options = ["All Games"] + [
         f"{row['away_team']} @ {row['home_team']}"
         for _, row in games_df.iterrows()
     ]
 else:
-    # Fallback: create games from team/opp pairs
-    games_set = set()
-    for _, row in value_opportunities.iterrows():
-        if pd.notna(row.get("team")) and pd.notna(row.get("opp")):
-            games_set.add(f"{row['team']} vs {row['opp']}")
-    game_options = ["All Games"] + sorted(games_set)
+    # Final fallback: use upcoming_games.csv if value_opportunities doesn't have game info
+    game_options_list, upcoming_games_df = load_upcoming_games_with_times()
+    if game_options_list:
+        game_options = ["All Games"] + game_options_list
+    else:
+        game_options = ["All Games"]
 
 all_prop_types = sorted(value_opportunities["prop_type"].dropna().unique())
 

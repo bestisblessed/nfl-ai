@@ -69,10 +69,7 @@ st.markdown(f"""
     """,
     unsafe_allow_html=True
 )
-# st.divider()
-st.write("")
-st.write("")
-# st.write("")
+st.divider()
 
 
 # Function to get projections for a specific week
@@ -295,27 +292,28 @@ with st.sidebar:
     else:
         st.info("PDF report not available for this week")
 
+# Add a stylized week title box above the tabs, matching the @01_🔮_Weekly_Projections.py style
+st.markdown(f"""
+    <div style='background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                    padding: 1px;
+                    border-radius: 15px;
+                    margin: 10px 0 25px 0;
+                    text-align: center;
+                    box-shadow: 0 4px 6px rgba(0,0,0,0.08);'>
+        <h2 style='color: white; margin: 0; font-size: 2em; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); letter-spacing: 1px;'>
+            {current_week} Leaders
+        </h2>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+st.write("")
+
 # Create tabs for each position
 tabs = st.tabs(tab_names)
 
 for tab, (tab_name, boards) in zip(tabs, zip(tab_names, tab_boards)):
     with tab:
-        # Add a stylized week title box at the top of each tab, matching the @01_🔮_Weekly_Projections.py style
-        st.markdown(f"""
-            <div style='background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-                            padding: 1px;
-                            border-radius: 15px;
-                            margin: 10px 0 25px 0;
-                            text-align: center;
-                            box-shadow: 0 4px 6px rgba(0,0,0,0.08);'>
-                <h2 style='color: white; margin: 0; font-size: 2em; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); letter-spacing: 1px;'>
-                    {current_week} Leaders
-                </h2>
-            </div>
-            """,
-            unsafe_allow_html=True
-        )
-        # # st.subheader(current_week, divider=False)
         if boards:
             # Display all top projections in a row at the top
             if len(boards) > 1:

@@ -80,6 +80,7 @@ st.markdown(f"""
     """,
     unsafe_allow_html=True
 )
+st.divider()
 
 # Simple, clean styling
 st.markdown("""
@@ -102,7 +103,6 @@ st.markdown("""
     }
 </style>
 """, unsafe_allow_html=True)
-st.divider()
 # st.write("")
 
 # Function to load projections data
