@@ -6,9 +6,26 @@ from PIL import Image
 import io
 import pandas as pd
 import os
-from utils.footer import render_footer
 
-st.title("NFL AI Chatbot")
+# Page configuration
+st.set_page_config(
+    page_title="🤖 NFL AI Chatbot",
+    page_icon="🏈",
+    layout="wide"
+)
+
+st.markdown(f"""
+    <div style='text-align: center;'>
+        <div style='font-size: 3.1rem; font-weight: 800; padding-bottom: 0.5rem;'>
+            NFL AI Chatbot
+        </div>
+        <div style='color: #7f8c8d; font-size: 1rem; margin-top: 0; line-height: 1.2;'>
+            AI-powered NFL data analysis and insights
+        </div>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
@@ -191,6 +208,3 @@ if "pending_query" in st.session_state and st.session_state.pending_query:
 # ---- Handle User Prompt ----
 if prompt := st.chat_input("Question?"):
     run_query(prompt)
-
-# Footer
-render_footer()

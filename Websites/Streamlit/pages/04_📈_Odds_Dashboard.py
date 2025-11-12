@@ -7,6 +7,7 @@ import plotly.graph_objects as go
 import matplotlib.pyplot as plt
 from matplotlib.ticker import FuncFormatter
 from matplotlib import dates as mdates
+from utils.footer import render_footer
 
 # Page configuration
 st.set_page_config(
