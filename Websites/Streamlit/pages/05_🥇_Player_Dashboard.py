@@ -840,4 +840,5 @@ if player_name is not None:
     else:
         st.write("No data found for this player against the selected team.")
 
-st.divider()
+from utils.footer import render_footer
+render_footer()

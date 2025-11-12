@@ -466,5 +466,5 @@ with col2:
         st.info("HTML report not available for this week")
 
 # Footer
-st.divider()
-st.markdown("NFL AI © 2023 | Tyler Durette")
+from utils.footer import render_footer
+render_footer()

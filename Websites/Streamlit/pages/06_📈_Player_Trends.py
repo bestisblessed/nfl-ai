@@ -544,3 +544,6 @@ with tab4:
             )
         else:
             st.write("No data.")
+
+from utils.footer import render_footer
+render_footer()
