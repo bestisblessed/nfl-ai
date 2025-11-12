@@ -474,30 +474,37 @@ for year_to_scrape in range(2023, 2026):
             if url in existing_urls:
                 print(f"Skipping already scraped game: {url}")
                 continue
-            try:
-                print(f"Scraping game: {url}")
-                response = requests.get(url)
-                response.raise_for_status()
-                
-                # Save raw HTML
-                raw_file_name = url.split('/')[-1].replace('.htm', '') + '.html'
-                raw_file_path = f'{final_dir}/SR-box-scores/{raw_file_name}'
-                with open(raw_file_path, 'wb') as raw_file:
-                    raw_file.write(response.content)
-                
-                soup = BeautifulSoup(response.content, 'html.parser')
-                linescore_table = soup.find('table', class_='linescore')
-                if linescore_table:
-                    rows = linescore_table.find_all('tr')[1:]
-                    for row in rows:
-                        cols = row.find_all('td')
-                        team_name = cols[1].text.strip()
-                        scores = [col.text.strip() for col in cols[2:]]
-                        scores += [''] * (len(headers) - 2 - len(scores))
-                        score_writer.writerow([url, team_name] + scores)
-                time.sleep(2.5)
-            except Exception as e:
-                print(f"Error scraping {url}: {e}")
+            max_retries = 3
+            for attempt in range(max_retries):
+                try:
+                    print(f"Scraping game: {url}")
+                    response = requests.get(url, timeout=10)
+                    response.raise_for_status()
+                    
+                    # Save raw HTML
+                    raw_file_name = url.split('/')[-1].replace('.htm', '') + '.html'
+                    raw_file_path = f'{final_dir}/SR-box-scores/{raw_file_name}'
+                    with open(raw_file_path, 'wb') as raw_file:
+                        raw_file.write(response.content)
+                    
+                    soup = BeautifulSoup(response.content, 'html.parser')
+                    linescore_table = soup.find('table', class_='linescore')
+                    if linescore_table:
+                        rows = linescore_table.find_all('tr')[1:]
+                        for row in rows:
+                            cols = row.find_all('td')
+                            team_name = cols[1].text.strip()
+                            scores = [col.text.strip() for col in cols[2:]]
+                            scores += [''] * (len(headers) - 2 - len(scores))
+                            score_writer.writerow([url, team_name] + scores)
+                    print(f"Successfully scraped box score for {url}")
+                    break
+                except Exception as e:
+                    print(f"Error scraping {url}: {e}")
+                    if attempt < max_retries - 1:
+                        time.sleep(2 ** attempt)
+                    else:
+                        pass
             time.sleep(2.5)
     
     print(f"Box scores scraping completed for {year_to_scrape}. Data saved to {csv_file_path}.")

@@ -6,6 +6,7 @@ import plotly.express as px
 import altair as alt
 import os
 # from Home import df_teams, df_games, df_playerstats, df_team_game_logs, df_schedule_and_game_results
+from utils.footer import render_footer
 
 # Page configuration
 st.set_page_config(
@@ -544,3 +545,6 @@ with tab4:
             )
         else:
             st.write("No data.")
+
+# Footer
+render_footer()

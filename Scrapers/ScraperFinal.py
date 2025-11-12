@@ -37,7 +37,7 @@
 # **Red Zone Statistics**
 # Scrapes red zone passing, rushing, and receiving statistics from Pro-Football-Reference and saves them to CSV files.
 
-# **Note: This scraper focuses on 2025 season updates**
+# **Note: This scraper collects data from 2010-2025 seasons**
   
 
 import pandas as pd
@@ -51,6 +51,14 @@ from time import sleep
 import numpy as np
 from datetime import datetime, timedelta
 from requests.exceptions import Timeout, RequestException
+import random
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
+try:
+    import requests_cache
+    requests_cache.install_cache('pfr_cache', expire_after=24*3600)
+except Exception:
+    pass
 
 
 # Print start time
@@ -67,6 +75,36 @@ if not os.path.exists('data/SR-scoring-tables'):
     os.system('mkdir data/SR-scoring-tables')
 if os.path.exists('nfl.db'):
     os.remove('nfl.db')
+
+UA = {
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/126 Safari/537.36"
+    ),
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+}
+session = requests.Session()
+session.headers.update(UA)
+session.mount(
+    "https://",
+    HTTPAdapter(
+        pool_connections=8,
+        pool_maxsize=8,
+        max_retries=Retry(
+            total=5,
+            backoff_factor=1.5,
+            status_forcelist=[429, 500, 502, 503, 504],
+            allowed_methods=frozenset(["GET"]),
+            raise_on_status=False,
+        ),
+    ),
+)
+def get_with_backoff(url, base_delay=0.75, jitter=0.75, timeout=30):
+    resp = session.get(url, timeout=timeout)
+    resp.raise_for_status()
+    time.sleep(base_delay + random.random() * jitter)
+    return resp
 
 ##### Create 'Teams' in nfl.db #####
 print("\n" + "*"*80 + "\n")
@@ -111,14 +149,16 @@ with sqlite3.connect('nfl.db') as conn:
 
 ##### Create 'Games' in nfl.db #####
 url = 'https://raw.githubusercontent.com/nflverse/nfldata/master/data/games.csv'
-response = requests.get(url)
+response = get_with_backoff(url)
 if response.ok:
     with open('./data/games.csv', 'wb') as file:
         file.write(response.content)
+    print("Downloaded and saved games.csv")
 else:
     raise Exception(f"Failed to download the file. Status code: {response.status_code}")
 df = pd.read_csv('./data/games.csv')
-df = df[df['season'] >= 2017]
+
+df = df[df['season'] >= 2010]
 standardize_mapping = {
     'OAK': 'LVR',  
     'SD': 'LAC',   
@@ -154,11 +194,12 @@ df_selected.to_csv('./data/games.csv', index=False)
 
 ##### Create 'PlayerStats' in nfl.db #####
 dataframes = []
-for year in range(2025, 2026):
+# Scrape historical seasons 2010-2025
+for year in range(2010, 2025):
     file_path = os.path.join('./data/player-stats/', f"player_stats_{year}.csv")
     # Always download current year player stats even if file exists
     url = f"https://github.com/nflverse/nflverse-data/releases/download/player_stats/player_stats_{year}.csv"
-    response = requests.get(url)
+    response = get_with_backoff(url)
     if response.ok:
         with open(file_path, 'wb') as file:
             file.write(response.content)
@@ -242,12 +283,12 @@ conn.close()
 print("Player stats saved to 'PlayerStats' table in nfl.db")
 
 
-##### Create 'Rosters' in nfl.db (2025) #####
-for year in range(2025, 2026):
+##### Create 'Rosters' in nfl.db (2010-2025) #####
+for year in range(2010, 2026):
     file_path = f"./data/rosters/roster_{year}.csv"
     # Always download current year roster data even if it exists
     url = f"https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_{year}.csv"
-    response = requests.get(url)
+    response = get_with_backoff(url)
     if response.status_code == 200:
         with open(file_path, 'wb') as file:
             file.write(response.content)
@@ -255,7 +296,7 @@ for year in range(2025, 2026):
     else:
         print(f"Failed to download data for the year {year}")
 dataframes = []
-for year in range(2025, 2026):
+for year in range(2010, 2026):
     file_path = f'./data/rosters/roster_{year}.csv'
     if os.path.exists(file_path):
         df = pd.read_csv(file_path)
@@ -344,7 +385,7 @@ for idx, team in enumerate(standardized_team_list_sorted, 1):
 rosters_df.to_csv('data/rosters.csv', index=False)
 
 
-##### Scrape Box Scores (2025) #####
+##### Scrape Box Scores (2010-2025) #####
 print("\n" + "*"*80 + "\n")
 os.makedirs('./data/SR-box-scores/', exist_ok=True)
 df = pd.read_csv('./data/games.csv')
@@ -354,13 +395,15 @@ df.to_csv('./data/games.csv', index=False)
 games_csv_path = 'data/games.csv'
 headers = ['URL', 'Team', '1', '2', '3', '4', 'OT1', 'OT2', 'OT3', 'OT4', 'Final']
 
-for year_to_scrape in range(2025, 2026):
+for year_to_scrape in range(2010, 2026):
     output_filename = f'./data/SR-box-scores/all_box_scores_{year_to_scrape}.csv'
     existing_urls = set()
     if os.path.exists(output_filename):
         df_existing = pd.read_csv(output_filename)
         if 'URL' in df_existing.columns:
             existing_urls = set(df_existing['URL'].unique())
+        else:
+            print(f"Found existing file for {year_to_scrape}, will append any missing games.")
     
     mode = 'a' if os.path.exists(output_filename) else 'w'
     with open(output_filename, mode, newline='') as csvfile:
@@ -384,23 +427,30 @@ for year_to_scrape in range(2025, 2026):
             if url in existing_urls:
                 print(f"Skipping already scraped game: {url}")
                 continue
-            try:    
-                print(f"Scraping game: {url}")
-                response = requests.get(url)
-                response.raise_for_status()
-                soup = BeautifulSoup(response.content, 'html.parser')
-                linescore_table = soup.find('table', class_='linescore')
-                if linescore_table:
-                    rows = linescore_table.find_all('tr')[1:]
-                    for row in rows:
-                        cols = row.find_all('td')
-                        team_name = cols[1].text.strip()
-                        scores = [col.text.strip() for col in cols[2:]]
-                        scores += [''] * (len(headers) - 2 - len(scores))
-                        score_writer.writerow([url, team_name] + scores)
-                time.sleep(2.5)
-            except Exception as e:
-                print(f"Error scraping {url}: {e}")
+            max_retries = 3
+            for attempt in range(max_retries):
+                try:
+                    print(f"Scraping game: {url}")
+                    response = get_with_backoff(url, timeout=10)
+                    response.raise_for_status()
+                    soup = BeautifulSoup(response.content, 'lxml')
+                    linescore_table = soup.find('table', class_='linescore')
+                    if linescore_table:
+                        rows = linescore_table.find_all('tr')[1:]
+                        for row in rows:
+                            cols = row.find_all('td')
+                            team_name = cols[1].text.strip()
+                            scores = [col.text.strip() for col in cols[2:]]
+                            scores += [''] * (len(headers) - 2 - len(scores))
+                            score_writer.writerow([url, team_name] + scores)
+                    print(f"Successfully scraped box score for {url}")
+                    break
+                except Exception as e:
+                    print(f"Error scraping {url}: {e}")
+                    if attempt < max_retries - 1:
+                        time.sleep(2 ** attempt)
+                    else:
+                        pass
             time.sleep(2.5)
     print(f"Scraping completed for {year_to_scrape}. Box scores saved to {output_filename}.")
 
@@ -429,15 +479,17 @@ df = df.apply(shift_to_final, axis=1)
 df.to_csv('data/all_box_scores.csv', index=False)
 
 
-##### Scrape Scoring Tables/Touchdown Logs (2025) #####
+##### Scrape Scoring Tables/Touchdown Logs (2010-2025) #####
 print("\n" + "*"*80 + "\n")
-for year_to_scrape in range(2025, 2026):
+for year_to_scrape in range(2010, 2026):
     output_filename = f'./data/SR-scoring-tables/all_nfl_scoring_tables_{year_to_scrape}.csv'
     existing_game_ids = set()
     if os.path.exists(output_filename):
         df_existing = pd.read_csv(output_filename)
         if 'Game_ID' in df_existing.columns:
             existing_game_ids = set(df_existing['Game_ID'].unique())
+        else:
+            print(f"Found existing scoring file for {year_to_scrape}, will append any missing games.")
     mode = 'a' if os.path.exists(output_filename) else 'w'
     with open(output_filename, mode, newline='') as output_csvfile:
         csvwriter = csv.writer(output_csvfile)
@@ -464,9 +516,9 @@ for year_to_scrape in range(2025, 2026):
                 max_retries = 3
                 for attempt in range(max_retries):
                     try:
-                        response = requests.get(url, timeout=10)
+                        response = get_with_backoff(url, timeout=10)
                         response.raise_for_status()
-                        soup = BeautifulSoup(response.text, 'html.parser')
+                        soup = BeautifulSoup(response.text, 'lxml')
                         table = soup.find('table', {'id': 'scoring'})
                         if table is None:
                             print(f"No scoring table found for {url}")
@@ -506,7 +558,7 @@ merged_dataframe.to_csv(output_file, index=False)
 print(f"Merged dataset saved as {output_file}")
 
 
-##### Scrape Team Game Logs (2025) #####
+##### Scrape Team Game Logs (2010-2025) #####
 print("\n" + "*"*80 + "\n")
 data_dir = './data/SR-game-logs'
 os.makedirs(data_dir, exist_ok=True)
@@ -593,9 +645,13 @@ opponent_game_logs_headers = [
     # 'pass_cmp_perc', 'pass_rating', 'rush_att', 'rush_yds', 'rush_yds_per_att', 'rush_td', 
     # 'fgm', 'fga', 'xpm', 'xpa', 'punt', 'punt_yds', 'third_down_success', 'third_down_att', 
     # 'fourth_down_success', 'fourth_down_att', 'time_of_poss', 'Team_Name'
-for year in range(2025, 2026):
+for year in range(2010, 2026):
     team_file = f'./data/SR-game-logs/all_teams_game_logs_{year}.csv'
     opponent_file = f'./data/SR-opponent-game-logs/all_teams_opponent_game_logs_{year}.csv'
+    # Skip re-scraping if both output files already exist
+    if os.path.exists(team_file) and os.path.exists(opponent_file):
+        print(f"Skipping Team Game Logs for {year}; files already exist.")
+        continue
     # Always process current year team game logs even if files exist
     all_team_game_logs = []  
     all_opponent_game_logs = []
@@ -609,7 +665,7 @@ for year in range(2025, 2026):
         retry_delay = 10
         for attempt in range(max_retries):
             try:
-                response = requests.get(url)
+                response = get_with_backoff(url)
                 if response.status_code == 429:
                     print(f'Rate limited for {name}. Waiting {retry_delay} seconds before retry {attempt + 1}/{max_retries}')
                     sleep(retry_delay)
@@ -632,7 +688,7 @@ for year in range(2025, 2026):
         if response.status_code != 200:
             continue
             
-        soup = BeautifulSoup(response.content, 'html.parser')
+        soup = BeautifulSoup(response.content, 'lxml')
         warned_team_short = False
         warned_opp_short = False
         for table_id in ['table_pfr_team-year_game-logs_team-year-regular-season-game-log', 'table_pfr_team-year_game-logs_team-year-regular-season-opponent-game-log']:
@@ -882,7 +938,7 @@ team_stats_headers = [
     'Player', 'PF', 'Yds', 'Ply', 'Y/P', 'TO', 'FL', '1stD', 'Cmp', 'Att', 'Yds', 'TD', 'Int', 'NY/A',
     '1stD', 'Att', 'Yds', 'TD', 'Y/A', '1stD', 'Pen', 'Yds', '1stPy', '#Dr', 'Sc%', 'TO%', 'Start', 'Time', 'Plays', 'Yds', 'Pts', 'Team'
 ]
-for year in range(2025, 2026):
+for year in range(2010, 2026):
     output_file = f'{data_dir}/all_teams_stats_{year}.csv'
     if os.path.exists(output_file):
         print(f"Skipping year {year}, file already exists.")
@@ -898,7 +954,7 @@ for year in range(2025, 2026):
         retry_delay = 10
         for attempt in range(max_retries):
             try:
-                response = requests.get(url)
+                response = get_with_backoff(url)
                 if response.status_code == 429:
                     print(f'Rate limited for {name}. Waiting {retry_delay} seconds before retry {attempt + 1}/{max_retries}')
                     sleep(retry_delay)
@@ -921,7 +977,7 @@ for year in range(2025, 2026):
         if response.status_code != 200:
             continue
             
-        soup = BeautifulSoup(response.content, 'html.parser')
+        soup = BeautifulSoup(response.content, 'lxml')
         table = soup.find('table', {'id': 'team_stats'})
         if table is None:
             print(f'Team stats table not found on page {url} for {name} in {year}')
@@ -999,12 +1055,17 @@ schedule_headers = [
     'Opp1stD', 'OppTotYd', 'OppPassY', 'OppRushY', 'TO_won',
     'Offense', 'Defense', 'Sp. Tms'
 ]
-for year in range(2025, 2026):
+for year in range(2010, 2026):
     all_games = []  
     for team in teams:
         abbreviation, name = team
         print(f'Processing {name} for the year {year}')  
         url = f'https://www.pro-football-reference.com/teams/{abbreviation}/{year}.htm'
+        # Skip re-scraping if per-team file already exists
+        team_file_path = f'{data_dir}/{abbreviation}_{year}_schedule_and_game_results.csv'
+        if os.path.exists(team_file_path):
+            print(f"Skipping schedule for {name} {year}; file already exists.")
+            continue
         
         # Add retry logic for rate limiting (same pattern as other scrapers)
         max_retries = 3
@@ -1013,7 +1074,7 @@ for year in range(2025, 2026):
         
         for attempt in range(max_retries):
             try:
-                response = requests.get(url, timeout=10)
+                response = get_with_backoff(url, timeout=10)
                 if response.status_code == 429:
                     print(f'Rate limited for {name}. Waiting {retry_delay} seconds before retry {attempt + 1}/{max_retries}')
                     sleep(retry_delay)
@@ -1036,7 +1097,7 @@ for year in range(2025, 2026):
         if response is None or response.status_code != 200:
             continue
             
-        soup = BeautifulSoup(response.content, 'html.parser')
+        soup = BeautifulSoup(response.content, 'lxml')
         table = soup.find('table', {'id': 'games'})
         
         if table is None:
@@ -1147,18 +1208,44 @@ team_conversions_headers = [
     'Player', '3DAtt', '3DConv', '4DAtt', '4DConv', '4D%', 'RZAtt', 'RZTD', 'RZPct', 'Team'
     # 'Player', '3DAtt', '3DConv', '3D%', '4DAtt', '4DConv', '4D%', 'RZAtt', 'RZTD', 'RZPct', 'Team'
 ]
-for year in range(2025, 2026):
+for year in range(2010, 2026):
     for team in teams:
         abbreviation, name = team
         team_file = f'{data_dir}/{abbreviation}_{year}_team_conversions.csv'
-        # Always process current year team conversions even if file exists
+        # Skip if file already exists
+        if os.path.exists(team_file):
+            print(f"Skipping team conversions for {name} {year}; file already exists.")
+            continue
         print(f'Processing {name} for the year {year}')  
         url = f'https://www.pro-football-reference.com/teams/{abbreviation}/{year}.htm'
-        response = requests.get(url)
-        if response.status_code != 200:
-            print(f'Failed to retrieve page {url} for {name} in {year}: {response.status_code}')
+        # Add retry logic consistent with other sections
+        max_retries = 3
+        retry_delay = 10
+        response = None
+        for attempt in range(max_retries):
+            try:
+                response = get_with_backoff(url, timeout=10)
+                if response.status_code == 429:
+                    print(f'Rate limited for {name}. Waiting {retry_delay} seconds before retry {attempt + 1}/{max_retries}')
+                    sleep(retry_delay)
+                    retry_delay *= 2
+                    continue
+                elif response.status_code != 200:
+                    print(f'Failed to retrieve page {url} for {name} in {year}: {response.status_code}')
+                    break
+                else:
+                    break
+            except Exception as e:
+                print(f'Error retrieving {url}: {e}')
+                if attempt < max_retries - 1:
+                    sleep(retry_delay)
+                    retry_delay *= 2
+                    continue
+                else:
+                    break
+        if response is None or response.status_code != 200:
             continue
-        soup = BeautifulSoup(response.content, 'html.parser')
+        soup = BeautifulSoup(response.content, 'lxml')
         table = soup.find('table', {'id': 'team_conversions'})
         if table is None:
             print(f'Team Conversions table not found on page {url} for {name} in {year}')
@@ -1253,13 +1340,15 @@ print("Columns 'home_spread', 'away_spread', 'team_favorite', and 'team_covered'
 ##### Passing/Rushing/Receiving #####
 print("\n" + "*"*80 + "\n")
 os.makedirs('./data/SR-passing-rushing-receiving-game-logs/', exist_ok=True)
-for year_to_scrape in range(2025, 2026):
+for year_to_scrape in range(2010, 2026):
     output_filename = f'./data/SR-passing-rushing-receiving-game-logs/all_passing_rushing_receiving_{year_to_scrape}.csv'
     existing_game_ids = set()
     if os.path.exists(output_filename):
         df_existing = pd.read_csv(output_filename)
         if 'game_id' in df_existing.columns:
             existing_game_ids = set(df_existing['game_id'].unique())
+        else:
+            print(f"Found existing PRR file for {year_to_scrape}, will append any missing games.")
     mode = 'a' if os.path.exists(output_filename) else 'w'
     with open(output_filename, mode, newline='') as output_csvfile:
         csvwriter = csv.writer(output_csvfile)
@@ -1290,12 +1379,12 @@ for year_to_scrape in range(2025, 2026):
                 max_retries = 3
                 for attempt in range(max_retries):
                     try:
-                        response = requests.get(url, timeout=10)
+                        response = get_with_backoff(url, timeout=10)
                         if response.status_code == 429:
                             print(f"Rate limit exceeded for URL {url}. Please try again later.")
                             time.sleep(60)
                             continue
-                        soup = BeautifulSoup(response.text, 'html.parser')
+                        soup = BeautifulSoup(response.text, 'lxml')
                         table = soup.find('div', id='div_player_offense')
                         if table:
                             for i, tr in enumerate(table.find_all('tr')):
@@ -1429,13 +1518,15 @@ headers = [
     'tackles_combined', 'tackles_solo', 'tackles_assists', 'tackles_loss', 'qb_hits', 'fumbles_rec',
     'fumbles_rec_yds', 'fumbles_rec_td', 'fumbles_forced', 'game_id'
 ]
-for year_to_scrape in range(2025, 2026):
+for year_to_scrape in range(2010, 2026):
     output_filename = f'./data/SR-defense-game-logs/all_defense_{year_to_scrape}.csv'
     existing_game_ids = set()
     if os.path.exists(output_filename):
         df_existing = pd.read_csv(output_filename)
         if 'game_id' in df_existing.columns:
             existing_game_ids = set(df_existing['game_id'].unique())
+        else:
+            print(f"Found existing defense file for {year_to_scrape}, will append any missing games.")
     mode = 'a' if os.path.exists(output_filename) else 'w'
     with open(output_filename, mode, newline='') as output_csvfile:
         csvwriter = csv.writer(output_csvfile)
@@ -1465,13 +1556,13 @@ for year_to_scrape in range(2025, 2026):
                 max_retries = 3
                 for attempt in range(max_retries):
                     try:
-                        response = requests.get(url, timeout=10)
+                        response = get_with_backoff(url, timeout=10)
                         response.raise_for_status()
-                        soup = BeautifulSoup(response.text, 'html.parser')
+                        soup = BeautifulSoup(response.text, 'lxml')
                         comments = soup.find_all(string=lambda text: isinstance(text, Comment))
                         table_found = False
                         for comment in comments:
-                            soup_comment = BeautifulSoup(comment, 'html.parser')
+                            soup_comment = BeautifulSoup(comment, 'lxml')
                             table = soup_comment.find('table', id='player_defense')
                             if table:
                                 table_found = True
@@ -1499,7 +1590,7 @@ for year_to_scrape in range(2025, 2026):
 # df = pd.read_csv('./data/defense-game-logs/all_defense_2025.csv')
 # df.dropna(inplace=True)
 # df.to_csv('./data/defense-game-logs/all_defense_2025.csv', index=False)
-for year in range(2025, 2026):
+for year in range(2010, 2026):
     file_path = f'./data/SR-defense-game-logs/all_defense_{year}.csv'
     try:
         df = pd.read_csv(file_path)
@@ -1534,7 +1625,12 @@ headers = {
         'Chrome/114.0.0.0 Safari/537.36'
     )
 }
-for year_to_scrape in range(2025, 2026):
+for year_to_scrape in range(2010, 2026):
+    # Skip entire year if merged output already exists
+    year_output_file = f'./data/SR-redzone/all_redzone_{year_to_scrape}.csv'
+    if os.path.exists(year_output_file):
+        print(f"Skipping red zone for {year_to_scrape}; file already exists.")
+        continue
     all_redzone_data = []
     for stat_type, suffix in categories.items():
         url = f'https://www.pro-football-reference.com/years/{year_to_scrape}/{suffix}'
@@ -1606,20 +1702,20 @@ if csv_files:
 
 
 ##### Export all tables from nfl.db to csv files with current date's timestamp in the file names to a final directory #####
-##### Regenerate final files with ALL available historical data + new current year data #####
+##### Regenerate final files with ALL available historical data (2010-2025) #####
 print("\n" + "*"*80 + "\n")
 final_dir = 'final_data'
 if not os.path.exists(final_dir):
     os.makedirs(final_dir)
 current_date = datetime.now().strftime("%b_%d_%Y").upper()
-print("Regenerating final files with 2025 season data...")
-games_df = pd.read_csv('data/games.csv') # Games: Load from data/games.csv (contains 2025)
+print("Regenerating final files with 2010-2025 season data...")
+games_df = pd.read_csv('data/games.csv') # Games: Load from data/games.csv (contains 2010-2016)
 games_df.to_csv(f"{final_dir}/Games_{current_date}.csv", index=False)
 print(f"Regenerated Games: {len(games_df)} total games")
-player_stats_df = pd.read_csv('data/player_stats.csv') # PlayerStats: Load from data/player_stats.csv (contains 2025)
+player_stats_df = pd.read_csv('data/player_stats.csv') # PlayerStats: Load from data/player_stats.csv (contains 2010-2016)
 player_stats_df.to_csv(f"{final_dir}/PlayerStats_{current_date}.csv", index=False)
 print(f"Regenerated PlayerStats: {len(player_stats_df)} total records")
-rosters_df = pd.read_csv('data/rosters.csv') # Rosters: Load from data/rosters.csv (contains 2025)
+rosters_df = pd.read_csv('data/rosters.csv') # Rosters: Load from data/rosters.csv (contains 2010-2016)
 rosters_df.to_csv(f"{final_dir}/Rosters_{current_date}.csv", index=False)
 print(f"Regenerated Rosters: {len(rosters_df)} total records")
 db_path = 'nfl.db' # Teams: Static data, load from database

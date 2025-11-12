@@ -4,6 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import sqlite3
 import os
+from utils.footer import render_footer
 
 # Page configuration
 st.set_page_config(
@@ -276,3 +277,6 @@ with tab2:
 # 10. 3D Bar Charts:
 # 3D Bar Chart for Multi-Dimensional Data:
 # A 3D bar chart showing the relationship between three dimensions, such as the ATS record (Win/Loss/Push), the spread size, and the week of the season. This can add depth to understanding how different factors interact.
+
+# Footer
+render_footer()

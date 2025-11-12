@@ -1,6 +1,7 @@
 import os
 import pandas as pd
 import streamlit as st
+from utils.footer import render_footer
 
 # <iframe src="https://claude.site/public/artifacts/1ca9aa13-a81f-491a-a1b3-459e08bc9948/embed" title="Claude Artifact" width="100%" height="600" frameborder="0" allow="clipboard-write" allowfullscreen></iframe>
     
@@ -699,3 +700,6 @@ with col2:
                 """
                 
                 st.components.v1.html(card_html, height=380)
+
+# Footer
+render_footer()

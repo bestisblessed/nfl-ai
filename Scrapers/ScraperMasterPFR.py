@@ -409,8 +409,11 @@ else:
                 for url in game_urls:
                     try:
                         print(f"Scraping game: {url}")
-                        response = requests.get(url)
-                        response.raise_for_status()
+                        response = make_request_with_retry(url)
+                        if response is None:
+                            print(f"Error scraping {url}: failed after retries")
+                            time.sleep(2.5)
+                            continue
                         raw_file_name = url.split('/')[-1].replace('.htm', '') + '.html'
                         raw_file_path = f'{final_dir}/SR-box-scores/{raw_file_name}'
                         with open(raw_file_path, 'wb') as raw_file:
