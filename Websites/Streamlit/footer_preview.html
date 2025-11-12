@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Preview - NFL AI</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f2f6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .content {
+            flex: 1;
+            background: white;
+            padding: 40px;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            margin-top: 0;
+        }
+        .preview-note {
+            background: #e3f2fd;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 30px;
+            border-left: 4px solid #2196f3;
+        }
+        .footer {
+            padding: 2rem 1rem;
+            margin-top: 3rem;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-top: 2px solid #dee2e6;
+            text-align: center;
+        }
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .footer-name {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+        .footer-brand {
+            font-size: 1rem;
+            color: #495057;
+            margin-bottom: 1rem;
+        }
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+        .footer-link {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        .footer-link:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+        .footer-divider {
+            width: 50px;
+            height: 2px;
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            margin: 1rem auto;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Footer Style Preview</h1>
+        <div class="preview-note">
+            <strong>Note:</strong> This is a preview of how the footer appears at the bottom of each page in your Streamlit app.
+            Scroll down to see the footer styling.
+        </div>
+        <p>This is sample content to demonstrate the footer placement. In your actual Streamlit app, your page content would appear here.</p>
+        <p>The footer will always appear at the bottom of each page with consistent styling across all pages.</p>
+    </div>
+    
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-name">Tyler Durette</div>
+            <div class="footer-brand">NFL AI © 2023</div>
+            <div class="footer-divider"></div>
+            <div class="footer-links">
+                <a href="https://github.com/bestisblessed" target="_blank" class="footer-link">GitHub</a>
+                <a href="mailto:tyler.durette@gmail.com" class="footer-link">Contact Me</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
