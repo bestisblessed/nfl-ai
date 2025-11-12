@@ -8,6 +8,9 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 from PIL import Image
 import sqlite3
+import sys
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from utils.footer import render_footer
 
 # Page configuration
 st.set_page_config(
@@ -840,4 +843,5 @@ if player_name is not None:
     else:
         st.write("No data found for this player against the selected team.")
 
-st.divider()
+# Footer
+render_footer()

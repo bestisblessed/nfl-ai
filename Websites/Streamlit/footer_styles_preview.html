@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Styles Preview - NFL AI</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .style-section {
+            background: white;
+            margin-bottom: 40px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+        }
+        
+        .style-title {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+        
+        .content-placeholder {
+            min-height: 200px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #6c757d;
+            font-size: 1rem;
+        }
+        
+        /* ===== STYLE 1: Minimal Line ===== */
+        .footer-style-1 {
+            margin-top: 0;
+            padding: 1rem 1rem;
+            border-top: 1px solid #e2e8f0;
+            background: transparent;
+        }
+        .footer-style-1 .footer-content {
+            text-align: center;
+            color: #64748b;
+            font-size: 0.8rem;
+            line-height: 1.6;
+        }
+        .footer-style-1 .footer-name {
+            font-weight: 600;
+            color: #334155;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+        .footer-style-1 .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin: 0.5rem 0;
+        }
+        .footer-style-1 .footer-link {
+            color: #3b82f6;
+            text-decoration: none;
+            font-weight: 400;
+            transition: color 0.2s ease;
+        }
+        .footer-style-1 .footer-link:hover {
+            color: #2563eb;
+        }
+        .footer-style-1 .footer-copyright {
+            margin-top: 0.5rem;
+            font-size: 0.75rem;
+            color: #94a3b8;
+        }
+        
+        /* ===== STYLE 2: Compact Gradient ===== */
+        .footer-style-2 {
+            margin-top: 0;
+            padding: 1rem 1rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .footer-style-2 .footer-content {
+            text-align: center;
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 0.8rem;
+            line-height: 1.6;
+        }
+        .footer-style-2 .footer-name {
+            font-weight: 600;
+            color: white;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+        .footer-style-2 .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin: 0.5rem 0;
+        }
+        .footer-style-2 .footer-link {
+            color: white;
+            text-decoration: none;
+            font-weight: 400;
+            transition: opacity 0.2s ease;
+        }
+        .footer-style-2 .footer-link:hover {
+            opacity: 0.8;
+        }
+        .footer-style-2 .footer-copyright {
+            margin-top: 0.5rem;
+            font-size: 0.75rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        /* ===== STYLE 3: Sleek Dark ===== */
+        .footer-style-3 {
+            margin-top: 0;
+            padding: 1rem 1rem;
+            background: #1e293b;
+            border-top: 1px solid #334155;
+        }
+        .footer-style-3 .footer-content {
+            text-align: center;
+            color: #cbd5e1;
+            font-size: 0.8rem;
+            line-height: 1.6;
+        }
+        .footer-style-3 .footer-name {
+            font-weight: 500;
+            color: #f1f5f9;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+        .footer-style-3 .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin: 0.5rem 0;
+        }
+        .footer-style-3 .footer-link {
+            color: #94a3b8;
+            text-decoration: none;
+            font-weight: 400;
+            transition: color 0.2s ease;
+        }
+        .footer-style-3 .footer-link:hover {
+            color: #f1f5f9;
+        }
+        .footer-style-3 .footer-copyright {
+            margin-top: 0.5rem;
+            font-size: 0.75rem;
+            color: #64748b;
+        }
+        
+        /* ===== STYLE 4: Simple Bordered ===== */
+        .footer-style-4 {
+            margin-top: 0;
+            padding: 1rem 1rem;
+            background: #f8fafc;
+            border-top: 1px solid #e2e8f0;
+        }
+        .footer-style-4 .footer-content {
+            text-align: center;
+            color: #475569;
+            font-size: 0.8rem;
+            line-height: 1.6;
+        }
+        .footer-style-4 .footer-name {
+            font-weight: 500;
+            color: #1e293b;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+        .footer-style-4 .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin: 0.5rem 0;
+        }
+        .footer-style-4 .footer-link {
+            color: #3b82f6;
+            text-decoration: none;
+            font-weight: 400;
+            transition: color 0.2s ease;
+        }
+        .footer-style-4 .footer-link:hover {
+            color: #2563eb;
+        }
+        .footer-style-4 .footer-copyright {
+            margin-top: 0.5rem;
+            font-size: 0.75rem;
+            color: #94a3b8;
+        }
+        
+        /* ===== STYLE 5: Clean Inline ===== */
+        .footer-style-5 {
+            margin-top: 0;
+            padding: 0.75rem 1rem;
+            border-top: 1px solid #e2e8f0;
+            background: transparent;
+        }
+        .footer-style-5 .footer-content {
+            text-align: center;
+            color: #64748b;
+            font-size: 0.8rem;
+            line-height: 1.5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        .footer-style-5 .footer-name {
+            font-weight: 500;
+            color: #334155;
+        }
+        .footer-style-5 .footer-separator {
+            color: #cbd5e1;
+        }
+        .footer-style-5 .footer-links {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        .footer-style-5 .footer-link {
+            color: #3b82f6;
+            text-decoration: none;
+            font-weight: 400;
+            transition: color 0.2s ease;
+        }
+        .footer-style-5 .footer-link:hover {
+            color: #2563eb;
+        }
+        .footer-style-5 .footer-copyright {
+            color: #94a3b8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🏈 Footer Style Options</h1>
+        
+        <!-- Style 1: Minimal Line -->
+        <div class="style-section">
+            <div class="style-title">Style 1: Minimal Line</div>
+            <div class="content-placeholder">Page Content Area</div>
+            <div class="footer-style-1">
+                <div class="footer-content">
+                    <div class="footer-name">Tyler Durette</div>
+                    <div class="footer-links">
+                        <a href="https://github.com/bestisblessed" target="_blank" class="footer-link">GitHub</a>
+                        <a href="mailto:tyler.durette@gmail.com" class="footer-link">Contact Me</a>
+                    </div>
+                    <div class="footer-copyright">NFL AI © 2023</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Style 2: Compact Gradient -->
+        <div class="style-section">
+            <div class="style-title">Style 2: Compact Gradient</div>
+            <div class="content-placeholder">Page Content Area</div>
+            <div class="footer-style-2">
+                <div class="footer-content">
+                    <div class="footer-name">Tyler Durette</div>
+                    <div class="footer-links">
+                        <a href="https://github.com/bestisblessed" target="_blank" class="footer-link">GitHub</a>
+                        <a href="mailto:tyler.durette@gmail.com" class="footer-link">Contact Me</a>
+                    </div>
+                    <div class="footer-copyright">NFL AI © 2023</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Style 3: Sleek Dark -->
+        <div class="style-section">
+            <div class="style-title">Style 3: Sleek Dark</div>
+            <div class="content-placeholder">Page Content Area</div>
+            <div class="footer-style-3">
+                <div class="footer-content">
+                    <div class="footer-name">Tyler Durette</div>
+                    <div class="footer-links">
+                        <a href="https://github.com/bestisblessed" target="_blank" class="footer-link">GitHub</a>
+                        <a href="mailto:tyler.durette@gmail.com" class="footer-link">Contact Me</a>
+                    </div>
+                    <div class="footer-copyright">NFL AI © 2023</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Style 4: Simple Bordered -->
+        <div class="style-section">
+            <div class="style-title">Style 4: Simple Bordered</div>
+            <div class="content-placeholder">Page Content Area</div>
+            <div class="footer-style-4">
+                <div class="footer-content">
+                    <div class="footer-name">Tyler Durette</div>
+                    <div class="footer-links">
+                        <a href="https://github.com/bestisblessed" target="_blank" class="footer-link">GitHub</a>
+                        <a href="mailto:tyler.durette@gmail.com" class="footer-link">Contact Me</a>
+                    </div>
+                    <div class="footer-copyright">NFL AI © 2023</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Style 5: Clean Inline -->
+        <div class="style-section">
+            <div class="style-title">Style 5: Clean Inline</div>
+            <div class="content-placeholder">Page Content Area</div>
+            <div class="footer-style-5">
+                <div class="footer-content">
+                    <span class="footer-name">Tyler Durette</span>
+                    <span class="footer-separator">•</span>
+                    <div class="footer-links">
+                        <a href="https://github.com/bestisblessed" target="_blank" class="footer-link">GitHub</a>
+                        <a href="mailto:tyler.durette@gmail.com" class="footer-link">Contact Me</a>
+                    </div>
+                    <span class="footer-separator">•</span>
+                    <span class="footer-copyright">NFL AI © 2023</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

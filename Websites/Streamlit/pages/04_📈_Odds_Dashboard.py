@@ -7,6 +7,9 @@ import plotly.graph_objects as go
 import matplotlib.pyplot as plt
 from matplotlib.ticker import FuncFormatter
 from matplotlib import dates as mdates
+import sys
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from utils.footer import render_footer
 
 # Page configuration
 st.set_page_config(
@@ -579,12 +582,6 @@ with col2:
     else:
         st.warning("No upcoming games found in the odds data.")
 
-        
-        
-    # # ---- Contact Me ---- #
-    # st.divider()
-    # st.header('Contact Me')
-    # # st.write('##')
-    # # st.write('Hover over this text for more information [?](Your help text here)')
-    # st.markdown('By Tyler Durette')
-    # st.markdown("NFL AI © 2023 | [GitHub](https://github.com/bestisblessed) | [Contact Me](tyler.durette@gmail.com)")
+
+# Footer
+render_footer()

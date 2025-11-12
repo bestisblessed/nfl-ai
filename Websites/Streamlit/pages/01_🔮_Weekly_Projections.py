@@ -5,6 +5,9 @@ import os
 import glob
 import json
 import re
+import sys
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from utils.footer import render_footer
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -466,5 +469,4 @@ with col2:
         st.info("HTML report not available for this week")
 
 # Footer
-st.divider()
-st.markdown("NFL AI © 2023 | Tyler Durette")
+render_footer()
