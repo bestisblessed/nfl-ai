@@ -3,6 +3,9 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import os
+import sys
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from utils.footer import render_footer
 
 # Page configuration
 st.set_page_config(
@@ -113,3 +116,6 @@ for i, division in enumerate(divisions):
         st.subheader(division)
         styled_group = group.style.highlight_max(subset=['Wins'], color='lightgreen', axis=0)
         st.table(styled_group)
+
+# Footer
+render_footer()

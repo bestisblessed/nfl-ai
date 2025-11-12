@@ -5,6 +5,9 @@ import sqlite3
 import os
 import altair as alt
 import plotly.express as px
+import sys
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from utils.footer import render_footer
 
 # Page configuration
 st.set_page_config(
@@ -705,3 +708,6 @@ chart_sacks_taken = alt.Chart(sacks_taken_sorted).mark_bar().encode(
 )
 
 st.altair_chart(chart_sacks_taken, use_container_width=True)
+
+# Footer
+render_footer()
