@@ -110,6 +110,27 @@ current_rosters = rosters[rosters["season"] == 2025]
 te_rosters = current_rosters[current_rosters["position"] == "TE"].copy()
 te_rosters["player_id"] = te_rosters["pfr_id"] + ".htm"
 
+# Filter based on current season performance
+current_season = hist[hist["season"] == 2025]
+if not current_season.empty:
+    # Calculate current season stats per player
+    season_stats = current_season.groupby("player_id").agg({
+        "receptions": "sum"
+    }).reset_index()
+
+    season_stats.columns = ["player_id", "total_receptions"]
+
+    # Filter criteria: greater than 3 total receptions on the season
+    active_te_criteria = season_stats["total_receptions"] > 3
+    active_te_ids = season_stats[active_te_criteria]["player_id"].tolist()
+
+    # Keep only active TEs
+    te_rosters = te_rosters[te_rosters["player_id"].isin(active_te_ids)]
+
+    print(f"Filtered TEs based on current season activity (>3 receptions): {len(te_rosters)} active TEs remaining")
+else:
+    print("No current season data available, skipping activity filter")
+
 # Exclude injured players by full_name if provided
 if injured:
     te_rosters = te_rosters[~te_rosters["full_name"].isin(injured)]

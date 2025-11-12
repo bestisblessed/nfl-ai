@@ -39,7 +39,7 @@ if os.path.exists(injured_path):
         injured = None
 
 # Clean historical data
-for col in ["rush_attempts", "rush_yards", "season", "week"]:
+for col in ["rush_att", "rush_yards", "season", "week"]:
     hist[col] = pd.to_numeric(hist[col], errors="coerce")
 hist = hist.dropna(subset=["rush_yards"])
 
@@ -48,7 +48,7 @@ hist = hist.sort_values(["player_id", "season", "week"]).reset_index(drop=True)
 windows = [3, 5, 8, 12]
 
 for w in windows:
-    hist[f"attempts_l{w}"] = hist.groupby("player_id")["rush_attempts"].transform(lambda s: s.shift(1).rolling(w, min_periods=1).mean())
+    hist[f"attempts_l{w}"] = hist.groupby("player_id")["rush_att"].transform(lambda s: s.shift(1).rolling(w, min_periods=1).mean())
     hist[f"yards_l{w}"] = hist.groupby("player_id")["rush_yards"].transform(lambda s: s.shift(1).rolling(w, min_periods=1).mean())
     # robust
     hist[f"yards_median_l{w}"] = hist.groupby("player_id")["rush_yards"].transform(lambda s: s.shift(1).rolling(w, min_periods=1).median())
@@ -103,6 +103,27 @@ if "team" not in upcoming.columns:
 current_rosters = rosters[rosters["season"] == 2025]
 rb_rosters = current_rosters[current_rosters["position"] == "RB"].copy()
 rb_rosters["player_id"] = rb_rosters["pfr_id"] + ".htm"
+
+# Filter based on current season performance
+current_season = hist[hist["season"] == 2025]
+if not current_season.empty:
+    # Calculate current season stats per player
+    season_stats = current_season.groupby("player_id").agg({
+        "rush_att": "sum"
+    }).reset_index()
+
+    season_stats.columns = ["player_id", "total_carries"]
+
+    # Filter criteria: greater than 5 total carries on the season
+    active_rb_criteria = season_stats["total_carries"] > 5
+    active_rb_ids = season_stats[active_rb_criteria]["player_id"].tolist()
+
+    # Keep only active RBs
+    rb_rosters = rb_rosters[rb_rosters["player_id"].isin(active_rb_ids)]
+
+    print(f"Filtered RBs based on current season activity (>5 carries): {len(rb_rosters)} active RBs remaining")
+else:
+    print("No current season data available, skipping activity filter")
 
 # Exclude injured players by full_name if provided
 if injured:

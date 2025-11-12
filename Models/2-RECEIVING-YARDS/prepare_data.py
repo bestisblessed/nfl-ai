@@ -100,11 +100,11 @@ if "position" in df.columns:
     df = df[df["position"].isin(["WR", "RB", "TE"])]
 
 # Select required columns
-keep = ["player_id","player_name","team","opp","season","week","targets","receptions","rec_yards"]
+keep = ["player_id","player_name","team","opp","season","week","targets","receptions","rec_yards","rush_att"]
 df = df[keep].copy()
 
 # Ensure numeric types & drop rows without label
-for c in ["targets","receptions","rec_yards","season","week"]:
+for c in ["targets","receptions","rec_yards","rush_att","season","week"]:
     df[c] = pd.to_numeric(df[c], errors="coerce")
 df = df.dropna(subset=["rec_yards"])
 

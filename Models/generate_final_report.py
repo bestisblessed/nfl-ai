@@ -90,14 +90,19 @@ def get_game_matchups():
         print(f"Warning: {upcoming_file} not found, using team pairs from predictions")
         return []
 
-def format_prediction(row):
+def format_prediction(row, questionable_players):
     """Format a single prediction row."""
-    if pd.isna(row['pred_yards']):
-        return f"  {row['full_name']} ({row['position']}): No Data"
-    else:
-        return f"  {row['full_name']} ({row['position']}): {row['pred_yards']:.1f} yards"
+    player_name = row['full_name']
+    # Check if player is questionable and append marker if so
+    if player_name in questionable_players:
+        player_name += " (Questionable)"
 
-def create_game_report(team1, team2, predictions_df, week_num):
+    if pd.isna(row['pred_yards']):
+        return f"  {player_name} ({row['position']}): No Data"
+    else:
+        return f"  {player_name} ({row['position']}): {row['pred_yards']:.1f} yards"
+
+def create_game_report(team1, team2, predictions_df, week_num, questionable_players):
     """Create a text report for a single game with all props."""
     
     # Get all predictions for this game
@@ -132,13 +137,13 @@ def create_game_report(team1, team2, predictions_df, week_num):
             if not team1_preds.empty:
                 report.append(f"{team1}:")
                 for _, row in team1_preds.iterrows():
-                    report.append(format_prediction(row))
+                    report.append(format_prediction(row, questionable_players))
                 report.append("")
             
             if not team2_preds.empty:
                 report.append(f"{team2}:")
                 for _, row in team2_preds.iterrows():
-                    report.append(format_prediction(row))
+                    report.append(format_prediction(row, questionable_players))
                 report.append("")
             
             report.append("")
@@ -163,7 +168,7 @@ def create_game_report(team1, team2, predictions_df, week_num):
     
     return "\n".join(report)
 
-def create_game_html_report(team1, team2, predictions_df, week_num):
+def create_game_html_report(team1, team2, predictions_df, week_num, questionable_players):
     """Create an HTML report for a single game with all props."""
     
     # Get all predictions for this game
@@ -207,7 +212,10 @@ def create_game_html_report(team1, team2, predictions_df, week_num):
                     else:
                         pred_text = f"{row['pred_yards']:.1f}"
                         pred_class = "prediction"
-                    html.append(f'<tr><td>{row["full_name"]}</td><td>{row["position"]}</td><td class="{pred_class}">{pred_text}</td></tr>')
+                    player_name = row["full_name"]
+                    if player_name in questionable_players:
+                        player_name += " (Questionable)"
+                    html.append(f'<tr><td>{player_name}</td><td>{row["position"]}</td><td class="{pred_class}">{pred_text}</td></tr>')
                 html.append(f'</tbody></table>')
             html.append(f'</div>')
             
@@ -224,7 +232,10 @@ def create_game_html_report(team1, team2, predictions_df, week_num):
                     else:
                         pred_text = f"{row['pred_yards']:.1f}"
                         pred_class = "prediction"
-                    html.append(f'<tr><td>{row["full_name"]}</td><td>{row["position"]}</td><td class="{pred_class}">{pred_text}</td></tr>')
+                    player_name = row["full_name"]
+                    if player_name in questionable_players:
+                        player_name += " (Questionable)"
+                    html.append(f'<tr><td>{player_name}</td><td>{row["position"]}</td><td class="{pred_class}">{pred_text}</td></tr>')
                 html.append(f'</tbody></table>')
             html.append(f'</div>')
             
@@ -454,6 +465,19 @@ def create_combined_report(week_num=1):
     if predictions_df.empty:
         print("❌ No prediction data found. Make sure all models have been run.")
         return
+
+    # Load questionable players list
+    questionable_players = set()
+    questionable_file = "questionable_players.csv"
+    if os.path.exists(questionable_file):
+        try:
+            questionable_df = pd.read_csv(questionable_file)
+            questionable_players = set(questionable_df['full_name'].dropna().astype(str).str.strip().tolist())
+            print(f"Loaded {len(questionable_players)} questionable players")
+        except Exception as e:
+            print(f"Warning: Could not load questionable players: {e}")
+    else:
+        print("Warning: questionable_players.csv not found")
     
     # Get unique games
     games = get_game_matchups()
@@ -479,11 +503,11 @@ def create_combined_report(week_num=1):
         print(f"Processing Game {i:2d}: {team1} vs {team2}")
         
         # Text report
-        game_report = create_game_report(team1, team2, predictions_df, week_num)
+        game_report = create_game_report(team1, team2, predictions_df, week_num, questionable_players)
         all_reports.append(game_report)
         
         # HTML report
-        game_html = create_game_html_report(team1, team2, predictions_df, week_num)
+        game_html = create_game_html_report(team1, team2, predictions_df, week_num, questionable_players)
         all_html_reports.append(game_html)
         
         # Save individual game reports

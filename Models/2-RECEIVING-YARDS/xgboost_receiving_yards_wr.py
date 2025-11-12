@@ -110,6 +110,27 @@ current_rosters = rosters[rosters["season"] == 2025]
 wr_rosters = current_rosters[current_rosters["position"] == "WR"].copy()
 wr_rosters["player_id"] = wr_rosters["pfr_id"] + ".htm"
 
+# Filter based on current season performance
+current_season = hist[hist["season"] == 2025]
+if not current_season.empty:
+    # Calculate current season stats per player
+    season_stats = current_season.groupby("player_id").agg({
+        "receptions": "sum"
+    }).reset_index()
+
+    season_stats.columns = ["player_id", "total_receptions"]
+
+    # Filter criteria: greater than 3 total receptions on the season
+    active_wr_criteria = season_stats["total_receptions"] > 3
+    active_wr_ids = season_stats[active_wr_criteria]["player_id"].tolist()
+
+    # Keep only active WRs
+    wr_rosters = wr_rosters[wr_rosters["player_id"].isin(active_wr_ids)]
+
+    print(f"Filtered WRs based on current season activity (>3 receptions): {len(wr_rosters)} active WRs remaining")
+else:
+    print("No current season data available, skipping activity filter")
+
 # Exclude injured players by full_name if provided
 if injured:
     wr_rosters = wr_rosters[~wr_rosters["full_name"].isin(injured)]

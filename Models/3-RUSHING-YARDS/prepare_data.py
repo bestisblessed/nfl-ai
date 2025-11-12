@@ -22,7 +22,6 @@ if "week" not in df.columns and "game_id" in df.columns:
 df = df.rename(columns={
     "player": "player_name",
     "opponent_team": "opp",
-    "rush_att": "rush_attempts",
     "rush_yds": "rush_yards",
 })
 
@@ -107,11 +106,11 @@ if "position" in df.columns:
     df = df[df["position"].isin(["QB", "RB"])]
 
 # Select required columns
-keep = ["player_id","player_name","team","opp","season","week","rush_attempts","rush_yards"]
+keep = ["player_id","player_name","team","opp","season","week","rush_att","rush_yards"]
 df = df[keep].copy()
 
 # Ensure numeric types & drop rows without label
-for c in ["rush_attempts","rush_yards","season","week"]:
+for c in ["rush_att","rush_yards","season","week"]:
     df[c] = pd.to_numeric(df[c], errors="coerce")
 df = df.dropna(subset=["rush_yards"])
 

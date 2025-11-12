@@ -27,26 +27,62 @@ import pandas as pd
 
 
 def get_file_paths(week):
-    from datetime import datetime
-    current_date = datetime.now().strftime("%Y-%m-%d")
+    from datetime import datetime, timedelta
     import os
-    props_original = f"10-ARBITRAGE/data/week{week}_props_{current_date}.csv"
-    # Check previous day's file as well
-    from datetime import timedelta
-    prev_date = (datetime.now() - timedelta(days=1)).strftime("%Y-%m-%d")
-    props_prev_original = f"10-ARBITRAGE/data/week{week}_props_{prev_date}.csv"
+    import glob
+
+    # Find the most recent props file for this week
+    # Try multiple possible data directory locations
+    possible_data_dirs = [
+        "data",  # If running from 10-ARBITRAGE/
+        "10-ARBITRAGE/data",  # If running from Models/
+        "../10-ARBITRAGE/data"  # If running from elsewhere
+    ]
     
-    if os.path.exists(props_original):
-        props_file = props_original
-    else:
-        props_file = props_prev_original
+    props_file = None
+    data_dir = None
     
+    for dir_path in possible_data_dirs:
+        if os.path.exists(dir_path):
+            props_pattern = os.path.join(dir_path, f"week{week}_props_*.csv")
+            props_files = glob.glob(props_pattern)
+            if props_files:
+                # Sort by modification time (most recent first)
+                props_files.sort(key=os.path.getmtime, reverse=True)
+                props_file = props_files[0]
+                data_dir = dir_path
+                print(f"Using props file: {props_file}")
+                break
+    
+    if not props_file:
+        # Fallback: use first existing data dir and try today's date
+        for dir_path in possible_data_dirs:
+            if os.path.exists(dir_path):
+                current_date = datetime.now().strftime("%Y-%m-%d")
+                props_file = os.path.join(dir_path, f"week{week}_props_{current_date}.csv")
+                data_dir = dir_path
+                print(f"No props files found with pattern, trying: {props_file}")
+                break
+    
+    if not data_dir:
+        data_dir = "data"  # Default fallback
+    
+    # Determine predictions file path
+    predictions_primary = f"0-FINAL-REPORTS/week{week}_all_props_summary.csv"
+    predictions_fallback = f"../0-FINAL-REPORTS/week{week}_all_props_summary.csv"
+    predictions_file = predictions_primary if os.path.exists(predictions_primary) else predictions_fallback
+
+    # Output paths relative to data directory
+    output_full = os.path.join(data_dir, f"week{week}_value_opportunities.csv")
+    output_top = os.path.join(data_dir, f"week{week}_top_edges_by_prop.csv")
+
     return {
-        "predictions_primary": f"0-FINAL-REPORTS/week{week}_all_props_summary.csv",
-        "predictions_fallback": f"../0-FINAL-REPORTS/week{week}_all_props_summary.csv",
+        "predictions_primary": predictions_primary,
+        "predictions_fallback": predictions_fallback,
+        "predictions_file": predictions_file,
         "props": props_file,
-        "output_full": f"data/week{week}_value_opportunities.csv",
-        "output_top": f"data/week{week}_top_edges_by_prop.csv"
+        "output_full": output_full,
+        "output_top": output_top
     }
 
 TEAM_ABBREV_TO_FULL = {
@@ -65,7 +101,7 @@ TEAM_ABBREV_TO_FULL = {
 
 
 def load_predictions(paths) -> pd.DataFrame:
-    csv_path = paths["predictions_primary"] if os.path.exists(paths["predictions_primary"]) else paths["predictions_fallback"]
+    csv_path = paths["predictions_file"]
     df = pd.read_csv(csv_path)
     return df
 
@@ -102,10 +138,21 @@ def load_props(paths, week) -> pd.DataFrame:
 
 def load_events_data(week) -> pd.DataFrame:
     """Load NFL events data with game commence times."""
-    # Only use week-specific events file - no fallback to bak/ directory
-    week_events_path = f"10-ARBITRAGE/data/week{week}_events.csv"
-    if not os.path.exists(week_events_path):
-        print(f"Warning: Could not find week {week} events file at {week_events_path}. Games will be sorted lexicographically.")
+    # Try multiple possible data directory locations
+    possible_paths = [
+        f"data/week{week}_events.csv",  # If running from 10-ARBITRAGE/
+        f"10-ARBITRAGE/data/week{week}_events.csv",  # If running from Models/
+        f"../10-ARBITRAGE/data/week{week}_events.csv"  # If running from elsewhere
+    ]
+    
+    week_events_path = None
+    for path in possible_paths:
+        if os.path.exists(path):
+            week_events_path = path
+            break
+    
+    if not week_events_path:
+        print(f"Warning: Could not find week {week} events file. Tried: {possible_paths}. Games will be sorted lexicographically.")
         return pd.DataFrame()
 
     df = pd.read_csv(week_events_path)

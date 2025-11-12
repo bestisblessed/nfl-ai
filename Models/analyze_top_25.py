@@ -44,6 +44,19 @@ df = pd.read_csv(csv_file)
 print(f"Loaded {len(df)} total projections from {csv_file}")
 print()
 
+# Load questionable players list
+questionable_players = set()
+questionable_file = "questionable_players.csv"
+if os.path.exists(questionable_file):
+    try:
+        questionable_df = pd.read_csv(questionable_file)
+        questionable_players = set(questionable_df['full_name'].dropna().astype(str).str.strip().tolist())
+        print(f"Loaded {len(questionable_players)} questionable players")
+    except Exception as e:
+        print(f"Warning: Could not load questionable players: {e}")
+else:
+    print("Warning: questionable_players.csv not found")
+
 # Define prop types
 prop_types = [
     ("QB", "Passing Yards", "TOP 25 QB PASSING YARDS"),
@@ -199,10 +212,12 @@ for position, prop_type, title in prop_types:
     # Print terminal output only (HTML generation commented out)
     for i, (_, row) in enumerate(top_25.iterrows(), 1):
         player = row['full_name']
+        if player in questionable_players:
+            player += " (Questionable)"
         team = row['team']
         opp = row['opp']
         yards = round(row['pred_yards'], 1)
-        
+
         print(f"{i:2d}. {player} ({team}) - {yards:6.1f} yards vs {opp}")
     
     print()
