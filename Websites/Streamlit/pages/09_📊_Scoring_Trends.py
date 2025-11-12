@@ -699,3 +699,7 @@ with col2:
                 """
                 
                 st.components.v1.html(card_html, height=380)
+
+# Footer
+from utils.footer import render_footer
+render_footer()

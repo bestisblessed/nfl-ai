@@ -556,10 +556,6 @@ else:
 #     # st.caption("Legendary")
 # # st.video(video1)
 
-# ---- Contact Me ---- #
-st.divider()
-st.header('Contact Me')
-# st.write('##')
-# st.write('Hover over this text for more information [?](Your help text here)')
-st.markdown('By Tyler Durette')
-st.markdown("NFL AI © 2023 | [GitHub](https://github.com/bestisblessed) | [Contact Me](tyler.durette@gmail.com)")
+# ---- Footer ---- #
+from utils.footer import render_footer
+render_footer()

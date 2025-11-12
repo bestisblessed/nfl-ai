@@ -2084,3 +2084,7 @@ if all(k in st.session_state for k in ['rg_report_data', 'rg_team1', 'rg_team2']
             use_container_width=True,
             type='primary'
         )
+
+# Footer
+from utils.footer import render_footer
+render_footer()

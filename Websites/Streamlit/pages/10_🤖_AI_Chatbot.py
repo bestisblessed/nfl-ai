@@ -190,3 +190,7 @@ if "pending_query" in st.session_state and st.session_state.pending_query:
 # ---- Handle User Prompt ----
 if prompt := st.chat_input("Question?"):
     run_query(prompt)
+
+# Footer
+from utils.footer import render_footer
+render_footer()
