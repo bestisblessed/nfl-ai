@@ -113,3 +113,7 @@ for i, division in enumerate(divisions):
         st.subheader(division)
         styled_group = group.style.highlight_max(subset=['Wins'], color='lightgreen', axis=0)
         st.table(styled_group)
+
+# Footer
+from utils.footer import render_footer
+render_footer()

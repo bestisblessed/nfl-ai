@@ -648,3 +648,7 @@ with st.sidebar:
                 # width=150
                 use_container_width=True
             )
+
+# Footer
+from utils.footer import render_footer
+render_footer()
