@@ -111,7 +111,7 @@ st.markdown(f"""
             NFL AI
         </div>
         <div style='color: #7f8c8d; font-size: 1rem; margin-top: 0; line-height: 1.2;'>
-            Welcome to NFL AI
+            Advanced Football Analytics and AI Platform
         </div>
     </div>
     """,
