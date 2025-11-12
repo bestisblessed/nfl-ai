@@ -128,6 +128,31 @@ def load_upcoming_games_with_times():
 
 
 @st.cache_data
+def load_games_for_week(week: int) -> pd.DataFrame:
+    """Load games from Games.csv for a specific week in season 2025"""
+    games_file = os.path.join(BASE_DIR, "data", "Games.csv")
+    if os.path.exists(games_file):
+        try:
+            games_df = pd.read_csv(games_file)
+            # Convert week to numeric in case it's stored as string
+            games_df['week'] = pd.to_numeric(games_df['week'], errors='coerce')
+            games_df['season'] = pd.to_numeric(games_df['season'], errors='coerce')
+            # Filter by season 2025 and week
+            week_games = games_df[
+                (games_df['season'] == 2025) & 
+                (games_df['week'] == week)
+            ]
+            if not week_games.empty:
+                result = week_games[['home_team', 'away_team']].drop_duplicates()
+                if not result.empty:
+                    return result
+            return pd.DataFrame()
+        except Exception:
+            return pd.DataFrame()
+    return pd.DataFrame()
+
+
+@st.cache_data
 def discover_value_weeks(directory: str) -> List[int]:
     pattern = os.path.join(directory, "week*_value_opportunities.csv")
     weeks: List[int] = []
@@ -214,16 +239,30 @@ value_opportunities["side"] = value_opportunities["side"].fillna("-")
 value_opportunities["edge_yards"] = value_opportunities["edge_yards"].fillna(0.0)
 
 # Get unique games for selector from the selected week's value opportunities data
-# Use team/opp columns (abbreviations) to match filtering logic
-if "team" in value_opportunities.columns and "opp" in value_opportunities.columns:
-    # Create games from team/opp pairs (using abbreviations)
+# Try to get home/away info from Games.csv first, then fallback to other methods
+week_games_df = load_games_for_week(selected_week_number)
+
+if not week_games_df.empty and "home_team" in week_games_df.columns and "away_team" in week_games_df.columns:
+    # Use Games.csv to get correct home/away designation
+    games_list = [
+        f"{row['away_team']} @ {row['home_team']}"
+        for _, row in week_games_df.iterrows()
+    ]
+    game_options = ["All Games"] + sorted(games_list)
+elif "team" in value_opportunities.columns and "opp" in value_opportunities.columns:
+    # Fallback: create games from team/opp pairs (using abbreviations)
+    # Use sorted tuple to ensure uniqueness regardless of order
     games_set = set()
     for _, row in value_opportunities.iterrows():
         if pd.notna(row.get("team")) and pd.notna(row.get("opp")):
-            games_set.add(f"{row['team']} @ {row['opp']}")
-    game_options = ["All Games"] + sorted(games_set)
+            team1, team2 = row['team'], row['opp']
+            # Sort teams alphabetically to create unique pair
+            pair = tuple(sorted([team1, team2]))
+            games_set.add(pair)
+    # Format as "Team1 vs Team2" (sorted alphabetically) - fallback format
+    game_options = ["All Games"] + sorted([f"{pair[0]} vs {pair[1]}" for pair in games_set])
 elif "home_team" in value_opportunities.columns and "away_team" in value_opportunities.columns:
-    # Fallback: use home_team/away_team if team/opp don't exist
+    # Fallback: use home_team/away_team from value_opportunities if available
     games_df = value_opportunities[["home_team", "away_team"]].drop_duplicates()
     game_options = ["All Games"] + [
         f"{row['away_team']} @ {row['home_team']}"
@@ -285,21 +324,22 @@ if selected_game != "All Games":
         # Format: "Away Team @ Home Team" (using abbreviations)
         away_team_abbrev, home_team_abbrev = selected_game.split(" @ ")
         # Filter using team/opp columns (which use abbreviations)
+        # Check both directions since data may have either team as team/opp
         game_data = value_opportunities[
             ((value_opportunities["team"] == away_team_abbrev) & (value_opportunities["opp"] == home_team_abbrev)) |
             ((value_opportunities["team"] == home_team_abbrev) & (value_opportunities["opp"] == away_team_abbrev))
         ].copy()
+    elif " vs " in selected_game:
+        # Fallback: handle "vs" format if it exists
+        team1, team2 = selected_game.split(" vs ")
+        # Filter using team/opp columns (which use abbreviations)
+        # Check both directions since data may have either team as team/opp
+        game_data = value_opportunities[
+            ((value_opportunities["team"] == team1) & (value_opportunities["opp"] == team2)) |
+            ((value_opportunities["team"] == team2) & (value_opportunities["opp"] == team1))
+        ].copy()
     else:
-        # Fallback format: "Team1 vs Team2"
-        parts = selected_game.replace(" vs ", " ").split()
-        if len(parts) >= 2:
-            team1, team2 = parts[0], parts[-1]
-            game_data = value_opportunities[
-                ((value_opportunities["team"] == team1) & (value_opportunities["opp"] == team2)) |
-                ((value_opportunities["team"] == team2) & (value_opportunities["opp"] == team1))
-            ].copy()
-        else:
-            game_data = value_opportunities.copy()
+        game_data = value_opportunities.copy()
     
     # Show game-specific view organized by prop type (all on one page)
     st.markdown(f"""
