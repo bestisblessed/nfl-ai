@@ -16,7 +16,7 @@ fi
 
 # Data prep
 mkdir -p data
-cp ../IN-PROGRESS/final_data_pfr/player_stats_pfr.csv data/all_passing_rushing_receiving.csv
+cp ../../Scrapers/final_data_pfr/player_stats_pfr.csv data/all_passing_rushing_receiving.csv
 cp ../../Scrapers/data/rosters/roster_2025.csv data/
 cp ../upcoming_games.csv data/
 cp ../starting_qbs_2025.csv data/
