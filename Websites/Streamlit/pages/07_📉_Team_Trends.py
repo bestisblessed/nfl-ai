@@ -705,3 +705,6 @@ chart_sacks_taken = alt.Chart(sacks_taken_sorted).mark_bar().encode(
 )
 
 st.altair_chart(chart_sacks_taken, use_container_width=True)
+
+from utils.footer import render_footer
+render_footer()
