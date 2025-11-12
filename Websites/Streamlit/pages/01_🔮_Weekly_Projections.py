@@ -44,6 +44,32 @@ def load_game_times():
     return games_with_times
 
 
+# Load games from Games.csv for a specific week
+@st.cache_data
+def load_games_for_week(week: int) -> pd.DataFrame:
+    """Load games from Games.csv for a specific week in season 2025"""
+    games_file = os.path.join(BASE_DIR, "data", "Games.csv")
+    if os.path.exists(games_file):
+        try:
+            games_df = pd.read_csv(games_file)
+            # Convert week to numeric in case it's stored as string
+            games_df['week'] = pd.to_numeric(games_df['week'], errors='coerce')
+            games_df['season'] = pd.to_numeric(games_df['season'], errors='coerce')
+            # Filter by season 2025 and week
+            week_games = games_df[
+                (games_df['season'] == 2025) & 
+                (games_df['week'] == week)
+            ]
+            if not week_games.empty:
+                result = week_games[['home_team', 'away_team']].drop_duplicates()
+                if not result.empty:
+                    return result
+            return pd.DataFrame()
+        except Exception:
+            return pd.DataFrame()
+    return pd.DataFrame()
+
+
 # Load upcoming games data for home/away determination
 @st.cache_data
 def load_upcoming_games():
@@ -183,9 +209,19 @@ if projections_df is None:
 games_mapping, upcoming_games_df = load_upcoming_games()
 game_times = load_game_times()
 
-# Create matchup options using upcoming_games.csv with abbreviations, sorted by time
-if not upcoming_games_df.empty:
-    # Create list of games with time info for sorting
+# Try to get games from Games.csv first (for historical weeks)
+week_games_df = load_games_for_week(int(selected_week))
+
+# Create matchup options - prioritize Games.csv, then upcoming_games.csv, then projections data
+if not week_games_df.empty and "home_team" in week_games_df.columns and "away_team" in week_games_df.columns:
+    # Use Games.csv to get correct home/away designation
+    matchups = [
+        f"{row['away_team']} @ {row['home_team']}"
+        for _, row in week_games_df.iterrows()
+    ]
+    matchups = sorted(matchups)
+elif not upcoming_games_df.empty:
+    # Fallback: use upcoming_games.csv with time info for sorting
     games_list = []
     for _, row in upcoming_games_df.iterrows():
         away, home = row['away_team'], row['home_team']
@@ -210,7 +246,7 @@ if not upcoming_games_df.empty:
     games_list.sort(key=lambda x: x['sort_key'])
     matchups = [g['matchup'] for g in games_list]
 else:
-    # Fallback: create matchups from projections data
+    # Final fallback: create matchups from projections data
     matchups = []
     matchup_set = set()
     for _, row in projections_df.iterrows():
