@@ -1,20 +1,21 @@
 """
 Script to fetch NFL betting props from the-odds-api.com for all games in week10_all_props_summary.csv
 
-Fetches the following 6 prop types:
+Fetches the following 7 prop types:
 - QB Passing Yards (player_pass_yds)
 - WR Receiving Yards (player_reception_yds)
 - TE Receiving Yards (player_reception_yds)
 - RB Receiving Yards (player_reception_yds)
 - RB Rushing Yards (player_rush_yds)
 - QB Rushing Yards (player_rush_yds)
+- Anytime Touchdown Scorer (player_touchdowns)
 
 Output CSV columns:
 - bookmaker: Sportsbook name
-- market: Prop type (player_pass_yds, player_reception_yds, player_rush_yds)
+- market: Prop type (player_pass_yds, player_reception_yds, player_rush_yds, player_touchdowns)
 - player: Player name
-- outcome: Over/Under
-- point: Line/total
+- outcome: Over/Under (for yards props) or Yes/No (for TD props)
+- point: Line/total (N/A for TD props)
 - price: American odds
 - event_id: API event ID
 - home_team: Home team name
@@ -32,7 +33,7 @@ api_key = '8aabcc029890b3fd7f740a705758c2d8'
 sport_key = 'americanfootball_nfl'
 base_url = 'https://api.the-odds-api.com/v4/sports/'
 regions = 'us,us2,us_dfs,eu'
-markets = 'player_pass_yds,player_reception_yds,player_rush_yds'
+markets = 'player_pass_yds,player_reception_yds,player_rush_yds,player_touchdowns'
 odds_format = 'american'
 
 team_abbrev_to_full = {
@@ -150,6 +151,9 @@ def extract_props_from_response(data, target_props):
                 price = outcome['price']
                 outcome_type = outcome['name']
                 
+                # For anytime TD props, outcome is typically "Yes" or "No" instead of Over/Under
+                # Point is typically N/A for anytime TD props
+                
                 props_list.append({
                     'bookmaker': bookmaker_name,
                     'market': market_key,
@@ -190,7 +194,7 @@ def main():
     
     print(f"\nStep 4: Fetching props for {len(event_mapping)} matched events")
     all_props = []
-    target_props = ['player_pass_yds', 'player_reception_yds', 'player_rush_yds']
+    target_props = ['player_pass_yds', 'player_reception_yds', 'player_rush_yds', 'player_touchdowns']
     
     for idx, (event_id, (team, opp)) in enumerate(event_mapping.items(), 1):
         print(f"[{idx}/{len(event_mapping)}] Fetching props for {team} vs {opp} (Event ID: {event_id})")
