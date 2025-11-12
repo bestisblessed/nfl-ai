@@ -5,12 +5,12 @@ GB vs PHI | Week 10 2025 | QB Projected Passing Yards
 +-------------+--------------+    +--------------+--------------+
 | GB Player   |   Pred Yards |    | PHI Player   |   Pred Yards |
 +=============+==============+    +==============+==============+
-| Jordan Love |        269.3 |    | Jalen Hurts  |        247.6 |
+| Jordan Love |          227 |    | Jalen Hurts  |        226.5 |
 +-------------+--------------+    +--------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total QBs: 2 (1 GB, 1 PHI)
-Top Projection: Jordan Love (GB) - 269.3 yards
+Top Projection: Jordan Love (GB) - 227.0 yards
 ================================================================================

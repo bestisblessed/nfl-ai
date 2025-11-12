@@ -5,12 +5,12 @@ NYJ vs CLE | Week 10 2025 | QB Projected Passing Yards
 +---------------+--------------+    +----------------+--------------+
 | NYJ Player    |   Pred Yards |    | CLE Player     |   Pred Yards |
 +===============+==============+    +================+==============+
-| Justin Fields |        235.6 |    | Dillon Gabriel |        166.4 |
+| Justin Fields |        199.5 |    | Dillon Gabriel |        164.1 |
 +---------------+--------------+    +----------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total QBs: 2 (1 NYJ, 1 CLE)
-Top Projection: Justin Fields (NYJ) - 235.6 yards
+Top Projection: Justin Fields (NYJ) - 199.5 yards
 ================================================================================

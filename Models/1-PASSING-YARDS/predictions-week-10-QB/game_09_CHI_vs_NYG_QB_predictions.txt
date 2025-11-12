@@ -5,12 +5,12 @@ CHI vs NYG | Week 10 2025 | QB Projected Passing Yards
 +----------------+--------------+    +--------------+--------------+
 | CHI Player     |   Pred Yards |    | NYG Player   |   Pred Yards |
 +================+==============+    +==============+==============+
-| Caleb Williams |          237 |    | Jaxson Dart  |        228.7 |
+| Caleb Williams |        230.4 |    | Jaxson Dart  |        195.2 |
 +----------------+--------------+    +--------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total QBs: 2 (1 CHI, 1 NYG)
-Top Projection: Caleb Williams (CHI) - 237.0 yards
+Top Projection: Caleb Williams (CHI) - 230.4 yards
 ================================================================================

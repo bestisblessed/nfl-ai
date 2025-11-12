@@ -2,17 +2,21 @@
 WAS vs DET | Week 10 2025 | TE Projected Receiving Yards
 ================================================================================
 
-+--------------+--------------+    +--------------+--------------+
-| WAS Player   |   Pred Yards |    | DET Player   |   Pred Yards |
-+==============+==============+    +==============+==============+
-| Zach Ertz    |         26.4 |    | Sam LaPorta  |         46   |
-| Ben Sinnott  |         13.4 |    | Brock Wright |         11.6 |
-| John Bates   |         12.9 |    +--------------+--------------+
-+--------------+--------------+    
++----------------+--------------+    +------------------+--------------+
+| WAS Player     |   Pred Yards |    | DET Player       |   Pred Yards |
++================+==============+    +==================+==============+
+| Zach Ertz      |         35.8 |    | Sam LaPorta      |         44.1 |
+| John Bates     |          9.9 |    | Brock Wright     |         11.5 |
+| Ben Sinnott    |          7.1 |    | Gunnar Oakes     |         -0   |
+| Cole Turner    |         -0   |    | Steven Stilianos |         -0   |
+| Lawrence Cager |         -0   |    | Zach Horton      |         -0   |
+| Colson Yankoff |         -0   |    | Ross Dwelley     |         -0   |
++----------------+--------------+    | Kenny Yeboah     |         -0   |
+                                     +------------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total TEs: 5 (3 WAS, 2 DET)
-Top Projection: Sam LaPorta (DET) - 46.0 yards
+Total TEs: 13 (6 WAS, 7 DET)
+Top Projection: Sam LaPorta (DET) - 44.1 yards
 ================================================================================

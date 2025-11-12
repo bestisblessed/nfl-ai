@@ -2,17 +2,20 @@
 DEN vs LVR | Week 10 2025 | TE Projected Receiving Yards
 ================================================================================
 
-+---------------+--------------+    +---------------+--------------+
-| DEN Player    |   Pred Yards |    | LVR Player    |   Pred Yards |
-+===============+==============+    +===============+==============+
-| Evan Engram   |         36   |    | Brock Bowers  |         80.3 |
-| Adam Trautman |         26.2 |    | Michael Mayer |         27.4 |
-| Nate Adkins   |          5.3 |    | Ian Thomas    |          8.8 |
-+---------------+--------------+    +---------------+--------------+
++-----------------+--------------+    +--------------------+--------------+
+| DEN Player      |   Pred Yards |    | LVR Player         |   Pred Yards |
++=================+==============+    +====================+==============+
+| Evan Engram     |         37.5 |    | Brock Bowers       |         59   |
+| Adam Trautman   |         13.1 |    | Carter Runyon      |         16.9 |
+| Nate Adkins     |          6.5 |    | Michael Mayer      |         15.7 |
+| Caleb Lohner    |         -0   |    | Albert Okwuegbunam |         15.3 |
+| Marcedes Lewis  |         -0   |    | Ian Thomas         |          9.2 |
+| Patrick Murtagh |         -0   |    +--------------------+--------------+
++-----------------+--------------+    
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total TEs: 6 (3 DEN, 3 LVR)
-Top Projection: Brock Bowers (LVR) - 80.3 yards
+Total TEs: 11 (6 DEN, 5 LVR)
+Top Projection: Brock Bowers (LVR) - 59.0 yards
 ================================================================================

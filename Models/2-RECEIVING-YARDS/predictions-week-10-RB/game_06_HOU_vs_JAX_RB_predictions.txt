@@ -2,18 +2,20 @@
 HOU vs JAX | Week 10 2025 | RB Projected Receiving Yards
 ================================================================================
 
-+-----------------+--------------+    +----------------+--------------+
-| HOU Player      |   Pred Yards |    | JAX Player     |   Pred Yards |
-+=================+==============+    +================+==============+
-| Nick Chubb      |          6.9 |    | Travis Etienne |         24.4 |
-| Dare Ogunbowale |          6.4 |    +----------------+--------------+
-| Dameon Pierce   |          0.1 |    
-| British Brooks  |          0   |    
-+-----------------+--------------+    
++-----------------+--------------+    +--------------------+--------------+
+| HOU Player      |   Pred Yards |    | JAX Player         |   Pred Yards |
++=================+==============+    +====================+==============+
+| Woody Marks     |         15.9 |    | Travis Etienne     |         18.3 |
+| Nick Chubb      |          8.5 |    | Bhayshul Tuten     |          1.9 |
+| Dare Ogunbowale |          6.8 |    | Cody Schrader      |         -0   |
+| Dameon Pierce   |          0.4 |    | LeQuint Allen Jr.  |         -0   |
+| British Brooks  |         -0   |    | Ja'Quinden Jackson |         -0   |
+| Jawhar Jordan   |         -0   |    | Kevin Harris       |         -0   |
++-----------------+--------------+    +--------------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total RBs: 5 (4 HOU, 1 JAX)
-Top Projection: Travis Etienne (JAX) - 24.4 yards
+Total RBs: 12 (6 HOU, 6 JAX)
+Top Projection: Travis Etienne (JAX) - 18.3 yards
 ================================================================================

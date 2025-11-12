@@ -2,18 +2,27 @@
 WAS vs DET | Week 10 2025 | Projected Receiving Yards
 ================================================================================
 
-+----------------+--------------+    +-------------------+--------------+
-| WAS Player     |   Pred Yards |    | DET Player        |   Pred Yards |
-+================+==============+    +===================+==============+
-| Terry McLaurin |         52.4 |    | Amon-Ra St. Brown |         72.5 |
-| Treylon Burks  |         12   |    | Jameson Williams  |         44   |
-| Tay Martin     |         11.4 |    | Kalif Raymond     |         14.6 |
-| Robbie Chosen  |          7.8 |    +-------------------+--------------+
-+----------------+--------------+    
++------------------+--------------+    +-------------------+--------------+
+| WAS Player       |   Pred Yards |    | DET Player        |   Pred Yards |
++==================+==============+    +===================+==============+
+| Terry McLaurin   |         58   |    | Amon-Ra St. Brown |         82.3 |
+| Robbie Chosen    |         19.1 |    | Jameson Williams  |         35.9 |
+| Chris Moore      |         17.6 |    | Kalif Raymond     |         18.7 |
+| Jaylin Lane      |         16.2 |    | Isaac TeSlaa      |          7.9 |
+| Treylon Burks    |         11.9 |    | Dominic Lovett    |         -0   |
+| Tay Martin       |          8.9 |    | Jackson Meeks     |         -0   |
+| Braylon Sanders  |         -0   |    | Malik Cunningham  |         -0   |
+| K.J. Osborn      |         -0   |    | Malik Taylor      |         -0   |
+| Deebo Samuel Sr. |         -0   |    | Tom Kennedy       |         -0   |
+| Michael Gallup   |         -0   |    +-------------------+--------------+
+| River Cracraft   |         -0   |    
+| Jacoby Jones     |         -0   |    
+| Ja'Corey Brooks  |         -0   |    
++------------------+--------------+    
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total WRs: 7 (4 WAS, 3 DET)
-Top Projection: Amon-Ra St. Brown (DET) - 72.5 yards
+Total WRs: 22 (13 WAS, 9 DET)
+Top Projection: Amon-Ra St. Brown (DET) - 82.3 yards
 ================================================================================

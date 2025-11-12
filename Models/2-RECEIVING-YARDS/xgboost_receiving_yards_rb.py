@@ -122,10 +122,16 @@ player_features = player_stats[["player_id"] + feature_cols]
 # Merge rosters with historical features
 rb_data = rb_rosters.merge(player_features, on="player_id", how="left")
 
-# Filter out players without historical data (instead of filling with zeros)
-rb_data = rb_data.dropna(subset=feature_cols)
+# Allow rookies/new players with limited history by backfilling missing features
+missing_mask = rb_data[feature_cols].isnull().any(axis=1)
+if missing_mask.any():
+    missing_names = rb_data.loc[missing_mask, "full_name"].tolist()
+    print(f"Filled defaults for {len(missing_names)} RBs without full history: {missing_names}")
 
-print(f"Filtered to {len(rb_data)} RBs with historical data (removed {len(rb_rosters) - len(rb_data)} without history)")
+rb_data.loc[:, feature_cols] = rb_data[feature_cols].fillna(0)
+rb_data["has_history"] = ~missing_mask
+
+print(f"Prepared {len(rb_data)} RBs for predictions (including {missing_mask.sum()} without full history)")
 
 # Attach to upcoming games
 games = upcoming[["team", "opp"]].drop_duplicates()

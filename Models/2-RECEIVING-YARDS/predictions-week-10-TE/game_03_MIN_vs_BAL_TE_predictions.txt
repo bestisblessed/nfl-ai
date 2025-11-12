@@ -2,17 +2,21 @@
 MIN vs BAL | Week 10 2025 | TE Projected Receiving Yards
 ================================================================================
 
-+----------------+--------------+    +---------------+--------------+
-| MIN Player     |   Pred Yards |    | BAL Player    |   Pred Yards |
-+================+==============+    +===============+==============+
-| T.J. Hockenson |         34.4 |    | Mark Andrews  |         31.1 |
-| Josh Oliver    |         11.3 |    | Isaiah Likely |         10.9 |
-+----------------+--------------+    | Charlie Kolar |          4.8 |
-                                     +---------------+--------------+
++----------------+--------------+    +-------------------+--------------+
+| MIN Player     |   Pred Yards |    | BAL Player        |   Pred Yards |
++================+==============+    +===================+==============+
+| T.J. Hockenson |         39.7 |    | Mark Andrews      |         36.6 |
+| Ben Yurosek    |         15.6 |    | Isaiah Likely     |         23.3 |
+| Josh Oliver    |          9.4 |    | Charlie Kolar     |         11.1 |
+| Nick Vannett   |         -0   |    | Scotty Washington |         -0   |
+| Giovanni Ricci |         -0   |    | Baylor Cupp       |         -0   |
+| Ben Sims       |         -0   |    +-------------------+--------------+
+| Bryson Nesbit  |         -0   |    
++----------------+--------------+    
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total TEs: 5 (2 MIN, 3 BAL)
-Top Projection: T.J. Hockenson (MIN) - 34.4 yards
+Total TEs: 12 (7 MIN, 5 BAL)
+Top Projection: T.J. Hockenson (MIN) - 39.7 yards
 ================================================================================

@@ -2,18 +2,22 @@
 MIN vs BAL | Week 10 2025 | RB Projected Receiving Yards
 ================================================================================
 
-+--------------+--------------+    +-----------------+--------------+
-| MIN Player   |   Pred Yards |    | BAL Player      |   Pred Yards |
-+==============+==============+    +=================+==============+
-| Aaron Jones  |         23.3 |    | Justice Hill    |         17.6 |
-| C.J. Ham     |         10.8 |    | Derrick Henry   |          7.2 |
-| Jordan Mason |          2.3 |    | Keaton Mitchell |          4.9 |
-| Cam Akers    |          2   |    | Rasheen Ali     |         -0   |
-+--------------+--------------+    +-----------------+--------------+
++-------------------+--------------+    +-----------------+--------------+
+| MIN Player        |   Pred Yards |    | BAL Player      |   Pred Yards |
++===================+==============+    +=================+==============+
+| Aaron Jones       |         17.7 |    | Justice Hill    |         11.7 |
+| Zavier Scott      |          8.5 |    | Keaton Mitchell |          7.4 |
+| C.J. Ham          |          6   |    | Derrick Henry   |          6.7 |
+| Cam Akers         |          3.1 |    | Lucas Scott     |         -0   |
+| Jordan Mason      |          1.4 |    | Patrick Ricard  |         -0   |
+| Corey Kiner       |         -0   |    | Rasheen Ali     |         -0.1 |
+| Tre Stewart       |         -0   |    +-----------------+--------------+
+| Xazavian Valladay |         -0   |    
++-------------------+--------------+    
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total RBs: 8 (4 MIN, 4 BAL)
-Top Projection: Aaron Jones (MIN) - 23.3 yards
+Total RBs: 14 (8 MIN, 6 BAL)
+Top Projection: Aaron Jones (MIN) - 17.7 yards
 ================================================================================

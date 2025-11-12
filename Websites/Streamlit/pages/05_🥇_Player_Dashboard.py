@@ -45,7 +45,7 @@ def load_data():
         df_playerstats = pd.read_csv(os.path.join(current_dir, '../data', 'PlayerStats.csv'))
         df_team_game_logs = pd.read_csv(os.path.join(current_dir, '../data', 'all_team_game_logs.csv'))
         df_schedule_and_game_results = pd.read_csv(os.path.join(current_dir, '../data', 'all_teams_schedule_and_game_results_merged.csv'))
-        df_all_passing_rushing_receiving = pd.read_csv(os.path.join(current_dir, '../data', 'all_passing_rushing_receiving.csv'))
+        df_all_passing_rushing_receiving = pd.read_csv(os.path.join(current_dir, '../data', 'player_stats_pfr.csv'))
         
         return (df_teams, df_games, df_playerstats, df_team_game_logs, 
                 df_schedule_and_game_results, df_all_passing_rushing_receiving)
@@ -58,7 +58,7 @@ df_teams, df_games, df_playerstats, df_team_game_logs, df_schedule_and_game_resu
 
 # Load the comprehensive player data
 current_dir = os.path.dirname(os.path.abspath(__file__))
-csv_path = os.path.join(current_dir, '../data', 'all_passing_rushing_receiving.csv')
+csv_path = os.path.join(current_dir, '../data', 'player_stats_pfr.csv')
 df_player_data = pd.read_csv(csv_path)
 
 # Set the database path for headshots

@@ -5,12 +5,12 @@ TB vs NE | Week 10 2025 | QB Projected Passing Yards
 +----------------+--------------+    +-------------+--------------+
 | TB Player      |   Pred Yards |    | NE Player   |   Pred Yards |
 +================+==============+    +=============+==============+
-| Baker Mayfield |        263.5 |    | Drake Maye  |          259 |
+| Baker Mayfield |        244.8 |    | Drake Maye  |        240.8 |
 +----------------+--------------+    +-------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total QBs: 2 (1 TB, 1 NE)
-Top Projection: Baker Mayfield (TB) - 263.5 yards
+Top Projection: Baker Mayfield (TB) - 244.8 yards
 ================================================================================

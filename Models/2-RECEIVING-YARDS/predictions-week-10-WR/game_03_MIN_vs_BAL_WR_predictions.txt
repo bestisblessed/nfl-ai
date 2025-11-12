@@ -2,19 +2,26 @@
 MIN vs BAL | Week 10 2025 | Projected Receiving Yards
 ================================================================================
 
-+------------------+--------------+    +-----------------+--------------+
-| MIN Player       |   Pred Yards |    | BAL Player      |   Pred Yards |
-+==================+==============+    +=================+==============+
-| Justin Jefferson |         80.2 |    | Zay Flowers     |         58.6 |
-| Jordan Addison   |         68.2 |    | Rashod Bateman  |         31.4 |
-| Jalen Nailor     |         12.9 |    | DeAndre Hopkins |         26.9 |
-| Adam Thielen     |         11.7 |    | Tylan Wallace   |         13.2 |
-+------------------+--------------+    | Devontez Walker |          8.2 |
-                                       +-----------------+--------------+
++------------------+--------------+    +-------------------+--------------+
+| MIN Player       |   Pred Yards |    | BAL Player        |   Pred Yards |
++==================+==============+    +===================+==============+
+| Justin Jefferson |         77.5 |    | Zay Flowers       |         61.7 |
+| Jordan Addison   |         56.1 |    | DeAndre Hopkins   |         28.2 |
+| Adam Thielen     |         31.1 |    | Rashod Bateman    |         27.5 |
+| Jalen Nailor     |         18.4 |    | Devontez Walker   |         16.4 |
+| Tai Felton       |         14.5 |    | Tylan Wallace     |          7.5 |
+| Dontae Fleming   |         -0   |    | Keith Kirkwood    |         -0   |
+| Lucky Jackson    |         -0   |    | Xavier Guillory   |         -0   |
+| Jeshaun Jones    |         -0   |    | Anthony Miller    |         -0   |
+| Robert Lewis     |         -0   |    | Colton Dowell     |         -0   |
+| Myles Price      |         -0   |    | Cornelius Johnson |         -0   |
++------------------+--------------+    | LaJohntay Wester  |         -0   |
+                                       | Jahmal Banks      |         -0   |
+                                       +-------------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total WRs: 9 (4 MIN, 5 BAL)
-Top Projection: Justin Jefferson (MIN) - 80.2 yards
+Total WRs: 22 (10 MIN, 12 BAL)
+Top Projection: Justin Jefferson (MIN) - 77.5 yards
 ================================================================================

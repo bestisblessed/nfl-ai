@@ -5,15 +5,17 @@ DEN vs LVR | Week 10 2025 | RB Projected Rushing Yards
 +-------------------+--------------+    +----------------+--------------+
 | DEN Player        |   Pred Yards |    | LVR Player     |   Pred Yards |
 +===================+==============+    +================+==============+
-| J.K. Dobbins      |         63.8 |    | Raheem Mostert |         12.8 |
-| Jaleel McLaughlin |         22.1 |    | Zamir White    |          8.9 |
+| J.K. Dobbins      |         63.8 |    | Ashton Jeanty  |         47.8 |
+| Jaleel McLaughlin |         22.1 |    | Raheem Mostert |         12.8 |
+| RJ Harvey         |         13.4 |    | Zamir White    |          8.9 |
 | Adam Prentice     |          2   |    | Dylan Laube    |          0.8 |
-| Tyler Badie       |          1.8 |    +----------------+--------------+
+| Tyler Badie       |          1.8 |    | Chris Collier  |         -0   |
+| Deuce Vaughn      |         -0   |    +----------------+--------------+
 +-------------------+--------------+    
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total RBs: 7 (4 DEN, 3 LVR)
+Total RBs: 11 (6 DEN, 5 LVR)
 Top Projection: J.K. Dobbins (DEN) - 63.8 yards
 ================================================================================

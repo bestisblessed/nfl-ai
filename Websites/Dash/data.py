@@ -4,7 +4,7 @@ import os
 
 # Copy nfl.db from ../Scrapers to data/
 shutil.copy("../Scrapers/nfl.db", "data/")
-shutil.copy("../Scrapers/data/all_passing_rushing_receiving.csv", "data/")
+shutil.copy("../Scrapers/final_data_pfr/player_stats_pfr.csv", "data/")
 
 # Define the folder containing your images
 image_folder = "assets/"

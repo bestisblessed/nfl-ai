@@ -2,17 +2,21 @@
 IND vs ATL | Week 10 2025 | RB Projected Receiving Yards
 ================================================================================
 
-+-----------------+--------------+    +----------------+--------------+
-| IND Player      |   Pred Yards |    | ATL Player     |   Pred Yards |
-+=================+==============+    +================+==============+
-| Jonathan Taylor |         17.3 |    | Bijan Robinson |         33.3 |
-| Ameer Abdullah  |          4.2 |    | Tyler Allgeier |          0.9 |
-| Tyler Goodson   |          0.4 |    +----------------+--------------+
-+-----------------+--------------+    
++--------------------+--------------+    +-------------------+--------------+
+| IND Player         |   Pred Yards |    | ATL Player        |   Pred Yards |
++====================+==============+    +===================+==============+
+| Jonathan Taylor    |         13.3 |    | Bijan Robinson    |           29 |
+| Ameer Abdullah     |          8.5 |    | Nate Carter       |           -0 |
+| Tyler Goodson      |          2.3 |    | Elijah Dotson     |           -0 |
+| DJ Giddens         |          1.9 |    | Carlos Washington |           -0 |
+| Nay'Quan Wright    |         -0   |    | Tyler Allgeier    |           -0 |
+| Nate Noel          |         -0   |    +-------------------+--------------+
+| Ulysses Bentley IV |         -0   |    
++--------------------+--------------+    
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total RBs: 5 (3 IND, 2 ATL)
-Top Projection: Bijan Robinson (ATL) - 33.3 yards
+Total RBs: 12 (7 IND, 5 ATL)
+Top Projection: Bijan Robinson (ATL) - 29.0 yards
 ================================================================================

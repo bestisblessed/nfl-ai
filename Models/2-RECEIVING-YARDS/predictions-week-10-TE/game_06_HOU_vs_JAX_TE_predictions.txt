@@ -2,16 +2,22 @@
 HOU vs JAX | Week 10 2025 | TE Projected Receiving Yards
 ================================================================================
 
-+-----------------+--------------+    +--------------+--------------+
-| HOU Player      |   Pred Yards |    | JAX Player   |   Pred Yards |
-+=================+==============+    +==============+==============+
-| Dalton Schultz  |         45.7 |    | Johnny Mundt |          7.7 |
-| Harrison Bryant |          5.6 |    | Hunter Long  |          7.3 |
-+-----------------+--------------+    +--------------+--------------+
++-----------------+--------------+    +-----------------+--------------+
+| HOU Player      |   Pred Yards |    | JAX Player      |   Pred Yards |
++=================+==============+    +=================+==============+
+| Dalton Schultz  |         39.2 |    | Johnny Mundt    |          7.3 |
+| Harrison Bryant |         10.3 |    | Hunter Long     |          4.4 |
+| Luke Lachey     |         -0   |    | Shawn Bowman    |         -0   |
+| Irv Smith       |         -0   |    | Quintin Morris  |         -0   |
+| Dalton Keene    |         -0   |    | Jordan Akins    |         -0   |
++-----------------+--------------+    | John Copenhaver |         -0   |
+                                      | Qadir Ismail    |         -0   |
+                                      | Patrick Herbert |         -0   |
+                                      +-----------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total TEs: 4 (2 HOU, 2 JAX)
-Top Projection: Dalton Schultz (HOU) - 45.7 yards
+Total TEs: 13 (5 HOU, 8 JAX)
+Top Projection: Dalton Schultz (HOU) - 39.2 yards
 ================================================================================

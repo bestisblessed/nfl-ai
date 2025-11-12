@@ -5,17 +5,23 @@ SF vs LAR | Week 10 2025 | Projected Receiving Yards
 +--------------------------+--------------+    +--------------------+--------------+
 | SF Player                |   Pred Yards |    | LAR Player         |   Pred Yards |
 +==========================+==============+    +====================+==============+
-| Ricky Pearsall           |         76.2 |    | Puka Nacua         |        100   |
-| Kendrick Bourne          |         58.4 |    | Davante Adams      |         64   |
-| Jauan Jennings           |         27   |    | Jordan Whittington |         16.8 |
-| Demarcus Robinson        |         26.3 |    | Xavier Smith       |          9.5 |
-| Skyy Moore               |         13.1 |    +--------------------+--------------+
-| Marquez Valdes-Scantling |          3   |    
+| Ricky Pearsall           |         49.9 |    | Puka Nacua         |         95.4 |
+| Jauan Jennings           |         35.5 |    | Davante Adams      |         65.1 |
+| Kendrick Bourne          |         34   |    | Jordan Whittington |         21   |
+| Demarcus Robinson        |         18.8 |    | Xavier Smith       |          8.3 |
+| Marquez Valdes-Scantling |         15.9 |    | Konata Mumpfield   |          7.2 |
+| Malik Turner             |         14.7 |    | Tru Edwards        |         -0   |
+| Jordan Watkins           |         11.1 |    | Brennan Presley    |         -0   |
+| Skyy Moore               |          9.6 |    | Tyler Scott        |         -0   |
+| Junior Bergen            |         -0   |    | Drake Stoops       |         -0   |
+| Terique Owens            |         -0   |    +--------------------+--------------+
+| Malik Knowles            |         -0   |    
+| Russell Gage             |         -0   |    
 +--------------------------+--------------+    
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total WRs: 10 (6 SF, 4 LAR)
-Top Projection: Puka Nacua (LAR) - 100.0 yards
+Total WRs: 21 (12 SF, 9 LAR)
+Top Projection: Puka Nacua (LAR) - 95.4 yards
 ================================================================================

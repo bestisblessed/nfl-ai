@@ -5,16 +5,25 @@ HOU vs JAX | Week 10 2025 | Projected Receiving Yards
 +-------------------+--------------+    +-------------------+--------------+
 | HOU Player        |   Pred Yards |    | JAX Player        |   Pred Yards |
 +===================+==============+    +===================+==============+
-| Christian Kirk    |         62   |    | Parker Washington |         35.8 |
-| Nico Collins      |         54.3 |    | Austin Trammell   |         29.2 |
-| Xavier Hutchinson |         36   |    | Dyami Brown       |         25.9 |
-| Jared Wayne       |          7.7 |    | Tim Patrick       |         21.8 |
-| Braxton Berrios   |          7.3 |    | Tim Jones         |         13.8 |
-+-------------------+--------------+    +-------------------+--------------+
+| Nico Collins      |         59.8 |    | Parker Washington |         30.2 |
+| Christian Kirk    |         41.2 |    | Tim Patrick       |         21   |
+| Jayden Higgins    |         21.3 |    | Dyami Brown       |         19.6 |
+| Jaylin Noel       |         20.2 |    | Austin Trammell   |         11.9 |
+| Jared Wayne       |         20   |    | Tim Jones         |          9.6 |
+| Braxton Berrios   |         19.5 |    | Chandler Brayboy  |         -0   |
+| Xavier Hutchinson |         14.4 |    | Cam Camper        |         -0   |
+| Josh Kelly        |         -0   |    | Eli Pancol        |         -0   |
+| Daniel Jackson    |         -0   |    | Erik Ezukanma     |         -0   |
+| Silas Bolden      |         -0   |    | Brian Thomas Jr.  |         -0   |
+| Quintez Cephus    |         -0   |    | Darius Lassiter   |         -0   |
+| Juwann Winfree    |         -0   |    | Dorian Singer     |         -0   |
+| Xavier Johnson    |         -0   |    +-------------------+--------------+
+| Cornell Powell    |         -0   |    
++-------------------+--------------+    
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total WRs: 10 (5 HOU, 5 JAX)
-Top Projection: Christian Kirk (HOU) - 62.0 yards
+Total WRs: 26 (14 HOU, 12 JAX)
+Top Projection: Nico Collins (HOU) - 59.8 yards
 ================================================================================

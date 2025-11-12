@@ -5,13 +5,19 @@ SF vs LAR | Week 10 2025 | RB Projected Receiving Yards
 +---------------------+--------------+    +----------------+--------------+
 | SF Player           |   Pred Yards |    | LAR Player     |   Pred Yards |
 +=====================+==============+    +================+==============+
-| Christian McCaffrey |         58   |    | Kyren Williams |          1.6 |
-| Kyle Juszczyk       |          6.9 |    | Blake Corum    |          0.6 |
-+---------------------+--------------+    +----------------+--------------+
+| Christian McCaffrey |         46.8 |    | Kyren Williams |         15.1 |
+| Kyle Juszczyk       |         11.6 |    | Blake Corum    |          0.1 |
+| Sincere McCormick   |         -0   |    | Ronnie Rivers  |         -0   |
+| Ke'Shawn Vaughn     |         -0   |    | Jarquez Hunter |         -0   |
+| Patrick Taylor      |         -0   |    | Jordan Waters  |         -0   |
+| Brian Robinson      |         -0   |    +----------------+--------------+
+| Isaac Guerendo      |         -0   |    
+| Jordan James        |         -0   |    
++---------------------+--------------+    
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total RBs: 4 (2 SF, 2 LAR)
-Top Projection: Christian McCaffrey (SF) - 58.0 yards
+Total RBs: 13 (8 SF, 5 LAR)
+Top Projection: Christian McCaffrey (SF) - 46.8 yards
 ================================================================================

@@ -15,9 +15,8 @@ WEEK=$1
 echo "--- Preparing Data for 4-TOUCHDOWNS ---"
 mkdir -p "$DATA_DIR"
 cd "$SCRIPT_DIR"
-cp ../../Scrapers/data/all_passing_rushing_receiving.csv data/ 2>/dev/null || true
-cp ../../Scrapers/data/rosters/roster_2025.csv data/ 2>/dev/null || true
 cp ../../Scrapers/final_data_pfr/player_stats_pfr.csv data/ 2>/dev/null || true
+cp ../../Scrapers/data/rosters/roster_2025.csv data/ 2>/dev/null || true
 cp ../../Scrapers/final_data_pfr/schedule_game_results_pfr.csv data/ 2>/dev/null || true
 cp ../../Scrapers/final_data_pfr/team_conversions_pfr.csv data/ 2>/dev/null || true
 cp ../upcoming_games.csv data/ 2>/dev/null || true

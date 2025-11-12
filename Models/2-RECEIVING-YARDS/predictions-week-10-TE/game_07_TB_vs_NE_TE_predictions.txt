@@ -2,16 +2,21 @@
 TB vs NE | Week 10 2025 | TE Projected Receiving Yards
 ================================================================================
 
-+--------------+--------------+    +---------------+--------------+
-| TB Player    |   Pred Yards |    | NE Player     |   Pred Yards |
-+==============+==============+    +===============+==============+
-| Cade Otton   |         43.9 |    | Austin Hooper |         28.5 |
-| Payne Durham |         20   |    | Hunter Henry  |         25.4 |
-+--------------+--------------+    +---------------+--------------+
++--------------+--------------+    +-------------------+--------------+
+| TB Player    |   Pred Yards |    | NE Player         |   Pred Yards |
++==============+==============+    +===================+==============+
+| Cade Otton   |         39.4 |    | Hunter Henry      |         31.4 |
+| Payne Durham |         14.4 |    | Austin Hooper     |         18.9 |
+| Devin Culp   |         -0   |    | Marshall Lang     |         -0   |
+| Tanner Taula |         -0   |    | Gee Scott Jr.     |         -0   |
++--------------+--------------+    | CJ Dippre         |         -0   |
+                                   | Cole Fotheringham |         -0   |
+                                   | Thomas Odukoya    |         -0   |
+                                   +-------------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total TEs: 4 (2 TB, 2 NE)
-Top Projection: Cade Otton (TB) - 43.9 yards
+Total TEs: 11 (4 TB, 7 NE)
+Top Projection: Cade Otton (TB) - 39.4 yards
 ================================================================================

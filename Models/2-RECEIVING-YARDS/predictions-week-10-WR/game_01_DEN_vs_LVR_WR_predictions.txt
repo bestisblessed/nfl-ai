@@ -2,18 +2,28 @@
 DEN vs LVR | Week 10 2025 | Projected Receiving Yards
 ================================================================================
 
-+------------------+--------------+    +---------------+--------------+
-| DEN Player       |   Pred Yards |    | LVR Player    |   Pred Yards |
-+==================+==============+    +===============+==============+
-| Courtland Sutton |         45.4 |    | Jakobi Meyers |         32.1 |
-| Troy Franklin    |         43.4 |    | Tre Tucker    |         28.2 |
-| Trent Sherfield  |          8.2 |    | Alex Bachman  |          8.4 |
-+------------------+--------------+    | Tyler Lockett |          4.5 |
-                                       +---------------+--------------+
++------------------+--------------+    +---------------------+--------------+
+| DEN Player       |   Pred Yards |    | LVR Player          |   Pred Yards |
++==================+==============+    +=====================+==============+
+| Courtland Sutton |         57.9 |    | Jakobi Meyers       |         51.9 |
+| Troy Franklin    |         27.2 |    | Tre Tucker          |         30.9 |
+| Pat Bryant       |         18.1 |    | Tyler Lockett       |         22   |
+| Michael Bandy    |         10.5 |    | Jack Bech           |         11.3 |
+| Trent Sherfield  |          7.9 |    | Alex Bachman        |          7.5 |
+| Jerjuan Newton   |         -0   |    | Collin Johnson      |         -0   |
+| Thayer Thomas    |         -0   |    | DJ Turner           |         -0   |
+| Marvin Mims Jr.  |         -0   |    | Justin Shorter      |         -0   |
+| Joaquin Davis    |         -0   |    | Shedrick Jackson    |         -0   |
+| Samori Toure     |         -0   |    | Dont'e Thornton Jr. |         -0   |
+| A.T. Perry       |         -0   |    | Amari Cooper        |         -0   |
+| Kyrese Rowan     |         -0   |    | Phillip Dorsett     |         -0   |
++------------------+--------------+    | Ketron Jackson Jr.  |         -0   |
+                                       | Marquez Callaway    |         -0   |
+                                       +---------------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total WRs: 7 (3 DEN, 4 LVR)
-Top Projection: Courtland Sutton (DEN) - 45.4 yards
+Total WRs: 26 (12 DEN, 14 LVR)
+Top Projection: Courtland Sutton (DEN) - 57.9 yards
 ================================================================================

@@ -2,17 +2,24 @@
 TB vs NE | Week 10 2025 | RB Projected Rushing Yards
 ================================================================================
 
-+---------------+--------------+    +---------------------+--------------+
-| TB Player     |   Pred Yards |    | NE Player           |   Pred Yards |
-+===============+==============+    +=====================+==============+
-| Bucky Irving  |         68.7 |    | Rhamondre Stevenson |         42.8 |
-| Rachaad White |         37.4 |    | Terrell Jennings    |         17.2 |
-| Sean Tucker   |         10.8 |    | D'Ernest Johnson    |          5.7 |
-+---------------+--------------+    +---------------------+--------------+
++----------------+--------------+    +---------------------+--------------+
+| TB Player      |   Pred Yards |    | NE Player           |   Pred Yards |
++================+==============+    +=====================+==============+
+| Bucky Irving   |         68.7 |    | Rhamondre Stevenson |         42.8 |
+| Rachaad White  |         37.4 |    | TreVeyon Henderson  |         23   |
+| Josh Williams  |         12.1 |    | Terrell Jennings    |         17.2 |
+| Sean Tucker    |         10.8 |    | D'Ernest Johnson    |          5.7 |
+| Owen Wright    |         -0   |    | Micah Bernard       |         -0   |
+| Jase McClellan |         -0   |    | Rushawn Baker       |         -0   |
+| Michael Wiley  |         -0   |    | Jashaun Corbin      |         -0   |
++----------------+--------------+    | Shane Watts         |         -0   |
+                                     | Jonathan Ward       |         -0   |
+                                     | Jack Westover       |         -0   |
+                                     +---------------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total RBs: 6 (3 TB, 3 NE)
+Total RBs: 17 (7 TB, 10 NE)
 Top Projection: Bucky Irving (TB) - 68.7 yards
 ================================================================================

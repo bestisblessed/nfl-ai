@@ -6,12 +6,18 @@ SF vs LAR | Week 10 2025 | RB Projected Rushing Yards
 | SF Player           |   Pred Yards |    | LAR Player     |   Pred Yards |
 +=====================+==============+    +================+==============+
 | Christian McCaffrey |         66.3 |    | Kyren Williams |         74   |
-| Kyle Juszczyk       |         -0   |    | Blake Corum    |         18.8 |
-+---------------------+--------------+    +----------------+--------------+
+| Sincere McCormick   |         -0   |    | Blake Corum    |         18.8 |
+| Isaac Guerendo      |         -0   |    | Jordan Waters  |         -0   |
+| Jordan James        |         -0   |    | Ronnie Rivers  |         -0   |
+| Brian Robinson      |         -0   |    | Jarquez Hunter |         -0   |
+| Ke'Shawn Vaughn     |         -0   |    +----------------+--------------+
+| Patrick Taylor      |         -0   |    
+| Kyle Juszczyk       |         -0   |    
++---------------------+--------------+    
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total RBs: 4 (2 SF, 2 LAR)
+Total RBs: 13 (8 SF, 5 LAR)
 Top Projection: Kyren Williams (LAR) - 74.0 yards
 ================================================================================

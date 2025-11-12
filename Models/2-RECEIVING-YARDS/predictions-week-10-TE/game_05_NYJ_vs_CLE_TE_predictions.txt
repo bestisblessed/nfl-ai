@@ -2,17 +2,21 @@
 NYJ vs CLE | Week 10 2025 | TE Projected Receiving Yards
 ================================================================================
 
-+----------------+--------------+    +------------------+--------------+
-| NYJ Player     |   Pred Yards |    | CLE Player       |   Pred Yards |
-+================+==============+    +==================+==============+
-| Jeremy Ruckert |          8.3 |    | David Njoku      |         39   |
-+----------------+--------------+    | Brenden Bates    |         14.5 |
-                                     | Blake Whiteheart |         -0   |
-                                     +------------------+--------------+
++----------------+--------------+    +-------------------+--------------+
+| NYJ Player     |   Pred Yards |    | CLE Player        |   Pred Yards |
++================+==============+    +===================+==============+
+| Mason Taylor   |         32.7 |    | David Njoku       |         34.8 |
+| Jeremy Ruckert |         10.4 |    | Brenden Bates     |         16.7 |
+| Zack Kuntz     |         -0   |    | Blake Whiteheart  |          3.2 |
+| Neal Johnson   |         -0   |    | Sal Cannella      |         -0   |
+| Stone Smartt   |         -0   |    | Mitch Van Vooren  |         -0   |
+| Jelani Woods   |         -0   |    | Harold Fannin Jr. |         -0   |
++----------------+--------------+    | Caden Prieskorn   |         -0   |
+                                     +-------------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total TEs: 4 (1 NYJ, 3 CLE)
-Top Projection: David Njoku (CLE) - 39.0 yards
+Total TEs: 13 (6 NYJ, 7 CLE)
+Top Projection: David Njoku (CLE) - 34.8 yards
 ================================================================================

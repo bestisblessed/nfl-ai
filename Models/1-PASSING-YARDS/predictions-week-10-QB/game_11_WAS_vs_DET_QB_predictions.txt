@@ -5,12 +5,12 @@ WAS vs DET | Week 10 2025 | QB Projected Passing Yards
 +----------------+--------------+    +--------------+--------------+
 | WAS Player     |   Pred Yards |    | DET Player   |   Pred Yards |
 +================+==============+    +==============+==============+
-| Marcus Mariota |        159.6 |    | Jared Goff   |        219.4 |
+| Marcus Mariota |          180 |    | Jared Goff   |        247.9 |
 +----------------+--------------+    +--------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total QBs: 2 (1 WAS, 1 DET)
-Top Projection: Jared Goff (DET) - 219.4 yards
+Top Projection: Jared Goff (DET) - 247.9 yards
 ================================================================================

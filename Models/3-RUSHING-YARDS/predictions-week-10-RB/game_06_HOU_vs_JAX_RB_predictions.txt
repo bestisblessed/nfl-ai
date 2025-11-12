@@ -2,18 +2,20 @@
 HOU vs JAX | Week 10 2025 | RB Projected Rushing Yards
 ================================================================================
 
-+-----------------+--------------+    +----------------+--------------+
-| HOU Player      |   Pred Yards |    | JAX Player     |   Pred Yards |
-+=================+==============+    +================+==============+
-| Nick Chubb      |         50.7 |    | Travis Etienne |         49.9 |
-| Dameon Pierce   |         22.2 |    +----------------+--------------+
-| Dare Ogunbowale |          4.5 |    
-| British Brooks  |          2.3 |    
-+-----------------+--------------+    
++-----------------+--------------+    +--------------------+--------------+
+| HOU Player      |   Pred Yards |    | JAX Player         |   Pred Yards |
++=================+==============+    +====================+==============+
+| Nick Chubb      |         50.7 |    | Travis Etienne     |         49.9 |
+| Woody Marks     |         25   |    | Bhayshul Tuten     |         14.7 |
+| Dameon Pierce   |         22.2 |    | Ja'Quinden Jackson |         -0   |
+| Dare Ogunbowale |          4.5 |    | Cody Schrader      |         -0   |
+| British Brooks  |          2.3 |    | Kevin Harris       |         -0   |
+| Jawhar Jordan   |         -0   |    | LeQuint Allen Jr.  |         -0   |
++-----------------+--------------+    +--------------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total RBs: 5 (4 HOU, 1 JAX)
+Total RBs: 12 (6 HOU, 6 JAX)
 Top Projection: Nick Chubb (HOU) - 50.7 yards
 ================================================================================

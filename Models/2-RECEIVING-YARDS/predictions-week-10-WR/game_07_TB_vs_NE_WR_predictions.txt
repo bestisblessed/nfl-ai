@@ -5,15 +5,21 @@ TB vs NE | Week 10 2025 | Projected Receiving Yards
 +------------------+--------------+    +-----------------+--------------+
 | TB Player        |   Pred Yards |    | NE Player       |   Pred Yards |
 +==================+==============+    +=================+==============+
-| Sterling Shepard |         37.6 |    | Stefon Diggs    |         70.7 |
-| Kameron Johnson  |         26.5 |    | Kayshon Boutte  |         49.4 |
-| Ryan Miller      |         18.3 |    | Mack Hollins    |         35.3 |
-+------------------+--------------+    | DeMario Douglas |         24.5 |
-                                       +-----------------+--------------+
+| Emeka Egbuka     |         65.1 |    | Stefon Diggs    |         60.9 |
+| Tez Johnson      |         39.3 |    | Kayshon Boutte  |         35.9 |
+| Sterling Shepard |         31.3 |    | DeMario Douglas |         27.9 |
+| Ryan Miller      |         12.3 |    | Mack Hollins    |         19   |
+| Chris Godwin Jr. |         -0   |    | Kyle Williams   |          4   |
+| Jacob Harris     |         -0   |    | Jeremiah Webb   |         -0   |
+| Brandon Johnson  |         -0   |    | Phil Lutz       |         -0   |
+| Dennis Houston   |         -0   |    | John Jiles      |         -0   |
+| Garrett Greene   |         -0   |    | Efton Chism III |         -0   |
+| Kameron Johnson  |         -0   |    +-----------------+--------------+
++------------------+--------------+    
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total WRs: 7 (3 TB, 4 NE)
-Top Projection: Stefon Diggs (NE) - 70.7 yards
+Total WRs: 19 (10 TB, 9 NE)
+Top Projection: Emeka Egbuka (TB) - 65.1 yards
 ================================================================================
