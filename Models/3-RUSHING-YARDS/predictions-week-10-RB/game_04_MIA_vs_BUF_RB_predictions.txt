@@ -2,17 +2,22 @@
 MIA vs BUF | Week 10 2025 | RB Projected Rushing Yards
 ================================================================================
 
-+---------------+--------------+    +--------------+--------------+
-| MIA Player    |   Pred Yards |    | BUF Player   |   Pred Yards |
-+===============+==============+    +==============+==============+
-| De'Von Achane |         71.6 |    | James Cook   |         93.7 |
-| Jaylen Wright |          7.2 |    | Ty Johnson   |         10.7 |
-| Alec Ingold   |          0.5 |    | Ray Davis    |          9.3 |
-+---------------+--------------+    +--------------+--------------+
++-----------------+--------------+    +-----------------+--------------+
+| MIA Player      |   Pred Yards |    | BUF Player      |   Pred Yards |
++=================+==============+    +=================+==============+
+| De'Von Achane   |         64.8 |    | James Cook      |         82.7 |
+| Jaylen Wright   |         14.1 |    | Ty Johnson      |         12   |
+| Alec Ingold     |          0   |    | Ray Davis       |         10.7 |
+| Mike Boone      |         -0   |    | Reggie Gilliam  |         -0   |
+| JaMycal Hasty   |         -0   |    | Jarveon Howard  |         -0   |
+| Jeff Wilson     |         -0   |    | Elijah Young    |         -0   |
+| Ollie Gordon II |         -0   |    | Frank Gore Jr.  |         -0   |
+| Aaron Shampklin |         -0   |    | Darrynton Evans |         -0   |
++-----------------+--------------+    +-----------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total RBs: 6 (3 MIA, 3 BUF)
-Top Projection: James Cook (BUF) - 93.7 yards
+Total RBs: 16 (8 MIA, 8 BUF)
+Top Projection: James Cook (BUF) - 82.7 yards
 ================================================================================

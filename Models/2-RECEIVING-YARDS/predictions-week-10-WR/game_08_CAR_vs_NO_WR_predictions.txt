@@ -2,19 +2,26 @@
 CAR vs NO | Week 10 2025 | Projected Receiving Yards
 ================================================================================
 
-+-----------------+--------------+    +----------------+--------------+
-| CAR Player      |   Pred Yards |    | NO Player      |   Pred Yards |
-+=================+==============+    +================+==============+
-| Xavier Legette  |         48   |    | Chris Olave    |         61.2 |
-| Jalen Coker     |         30.9 |    | Rashid Shaheed |         51   |
-| Brycen Tremayne |         13.1 |    | Brandin Cooks  |         12.8 |
-+-----------------+--------------+    | Devaughn Vele  |          7.2 |
-                                      | Mason Tipton   |         -1.5 |
-                                      +----------------+--------------+
++-------------------+--------------+    +----------------------+--------------+
+| CAR Player        |   Pred Yards |    | NO Player            |   Pred Yards |
++===================+==============+    +======================+==============+
+| Tetairoa McMillan |         57   |    | Chris Olave          |         61   |
+| Jalen Coker       |         34   |    | Rashid Shaheed       |         48.2 |
+| Xavier Legette    |         31.5 |    | Brandin Cooks        |         23.3 |
+| Hunter Renfrow    |         20.1 |    | Devaughn Vele        |         18   |
+| Brycen Tremayne   |         10.8 |    | Mason Tipton         |          3.7 |
+| Jacolby George    |         -0   |    | Kevin Austin Jr.     |         -0   |
+| Jimmy Horn Jr.    |         -0   |    | Dante Pettis         |         -0   |
+| Ja'Seem Reed      |         -0   |    | Ronnie Bell          |         -0   |
+| Ainias Smith      |         -0   |    | Tommy Mellott        |         -0   |
+| T.J. Luther       |         -0   |    | Roderick Daniels Jr. |         -0   |
+| Dan Chisena       |         -0   |    | Moochie Dixon        |         -0   |
+| Kobe Hudson       |         -0   |    +----------------------+--------------+
++-------------------+--------------+    
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total WRs: 8 (3 CAR, 5 NO)
-Top Projection: Chris Olave (NO) - 61.2 yards
+Total WRs: 23 (12 CAR, 11 NO)
+Top Projection: Chris Olave (NO) - 61.0 yards
 ================================================================================

@@ -5,14 +5,16 @@ MIA vs BUF | Week 10 2025 | TE Projected Receiving Yards
 +---------------+--------------+    +----------------+--------------+
 | MIA Player    |   Pred Yards |    | BUF Player     |   Pred Yards |
 +===============+==============+    +================+==============+
-| Tanner Conner |         18.4 |    | Dalton Kincaid |         48.4 |
-| Julian Hill   |         18.1 |    | Dawson Knox    |         20.9 |
-| Greg Dulcich  |         14.2 |    +----------------+--------------+
-+---------------+--------------+    
+| Greg Dulcich  |         18.7 |    | Dalton Kincaid |         36.2 |
+| Tanner Conner |          7.5 |    | Dawson Knox    |         18.8 |
+| Julian Hill   |          7.2 |    | Jackson Hawes  |         11.2 |
+| Hayden Rucci  |         -0   |    | Zach Davidson  |         -0   |
+| Chris Myarick |         -0   |    | Keleki Latu    |         -0   |
++---------------+--------------+    +----------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total TEs: 5 (3 MIA, 2 BUF)
-Top Projection: Dalton Kincaid (BUF) - 48.4 yards
+Total TEs: 10 (5 MIA, 5 BUF)
+Top Projection: Dalton Kincaid (BUF) - 36.2 yards
 ================================================================================

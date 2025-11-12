@@ -2,16 +2,21 @@
 SEA vs ARI | Week 10 2025 | TE Projected Receiving Yards
 ================================================================================
 
-+--------------+--------------+    +----------------+--------------+
-| SEA Player   |   Pred Yards |    | ARI Player     |   Pred Yards |
-+==============+==============+    +================+==============+
-| AJ Barner    |         22.3 |    | Trey McBride   |         46.9 |
-+--------------+--------------+    | Elijah Higgins |         15.6 |
-                                   +----------------+--------------+
++---------------+--------------+    +-----------------+--------------+
+| SEA Player    |   Pred Yards |    | ARI Player      |   Pred Yards |
++===============+==============+    +=================+==============+
+| AJ Barner     |         17.8 |    | Trey McBride    |         57.5 |
+| Elijah Arroyo |         17.3 |    | Elijah Higgins  |         12.5 |
+| Nick Kallerup |         -0   |    | Josiah Deguara  |         -0   |
++---------------+--------------+    | Pharaoh Brown   |         -0   |
+                                    | Nick Muse       |         -0   |
+                                    | Messiah Swinson |         -0   |
+                                    | Oscar Cardenas  |         -0   |
+                                    +-----------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total TEs: 3 (1 SEA, 2 ARI)
-Top Projection: Trey McBride (ARI) - 46.9 yards
+Total TEs: 10 (3 SEA, 7 ARI)
+Top Projection: Trey McBride (ARI) - 57.5 yards
 ================================================================================

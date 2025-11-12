@@ -1,8 +1,8 @@
 🏈 NFL WEEK 10 2025 - COMPLETE PROPS REPORT
 ================================================================================
-Generated: 2025-11-05 15:22:00
+Generated: 2025-11-12 07:58:07
 Total Games: 14
-Total Props: 385
+Total Props: 904
 
 This report includes ALL player props for each game:
 • QB Passing Yards
@@ -19,61 +19,93 @@ DEN vs LVR | Week 10 2025 | ALL PROPS
 🏈 PASSING YARDS
 ----------------------------------------
 DEN:
-  Bo Nix (QB): 202.0 yards
+  Bo Nix (QB): 218.3 yards
 
 LVR:
-  Geno Smith (QB): 249.0 yards
+  Geno Smith (QB): 195.2 yards
 
 
 🏈 RUSHING YARDS
 ----------------------------------------
 DEN:
-  J.K. Dobbins (RB): 61.1 yards
-  Jaleel McLaughlin (RB): 25.5 yards
+  J.K. Dobbins (RB): 63.8 yards
+  Jaleel McLaughlin (RB): 22.1 yards
   Bo Nix (QB): 20.3 yards
-  Adam Prentice (RB): 1.8 yards
-  Tyler Badie (RB): 1.3 yards
+  RJ Harvey (RB): 13.4 yards
+  Adam Prentice (RB): 2.0 yards
+  Tyler Badie (RB): 1.8 yards
+  Deuce Vaughn (RB): -0.0 yards
 
 LVR:
-  Zamir White (RB): 16.7 yards
+  Ashton Jeanty (RB): 47.8 yards
+  Raheem Mostert (RB): 12.8 yards
+  Zamir White (RB): 8.9 yards
   Geno Smith (QB): 7.4 yards
-  Dylan Laube (RB): 2.3 yards
-  Raheem Mostert (RB): 1.1 yards
+  Dylan Laube (RB): 0.8 yards
+  Chris Collier (RB): -0.0 yards
 
 
 🏈 RECEIVING YARDS
 ----------------------------------------
 DEN:
-  Courtland Sutton (WR): 45.4 yards
-  Troy Franklin (WR): 43.4 yards
-  Evan Engram (TE): 36.0 yards
-  Adam Trautman (TE): 26.2 yards
-  Trent Sherfield (WR): 8.2 yards
-  J.K. Dobbins (RB): 7.8 yards
-  Nate Adkins (TE): 5.3 yards
-  Tyler Badie (RB): 5.3 yards
-  Jaleel McLaughlin (RB): 3.6 yards
-  Adam Prentice (RB): 0.2 yards
+  Courtland Sutton (WR): 57.9 yards
+  Evan Engram (TE): 37.5 yards
+  Troy Franklin (WR): 27.2 yards
+  Pat Bryant (WR): 18.1 yards
+  RJ Harvey (RB): 13.2 yards
+  Adam Trautman (TE): 13.1 yards
+  Michael Bandy (WR): 10.5 yards
+  Trent Sherfield (WR): 7.9 yards
+  Nate Adkins (TE): 6.5 yards
+  Tyler Badie (RB): 5.9 yards
+  J.K. Dobbins (RB): 5.5 yards
+  Jaleel McLaughlin (RB): 3.2 yards
+  A.T. Perry (WR): -0.0 yards
+  Samori Toure (WR): -0.0 yards
+  Thayer Thomas (WR): -0.0 yards
+  Jerjuan Newton (WR): -0.0 yards
+  Joaquin Davis (WR): -0.0 yards
+  Marvin Mims Jr. (WR): -0.0 yards
+  Kyrese Rowan (WR): -0.0 yards
+  Deuce Vaughn (RB): -0.0 yards
+  Marcedes Lewis (TE): -0.0 yards
+  Caleb Lohner (TE): -0.0 yards
+  Patrick Murtagh (TE): -0.0 yards
+  Adam Prentice (RB): -0.1 yards
 
 LVR:
-  Brock Bowers (TE): 80.3 yards
-  Jakobi Meyers (WR): 32.1 yards
-  Tre Tucker (WR): 28.2 yards
-  Michael Mayer (TE): 27.4 yards
-  Raheem Mostert (RB): 12.2 yards
-  Ian Thomas (TE): 8.8 yards
-  Alex Bachman (WR): 8.4 yards
-  Zamir White (RB): 4.7 yards
-  Tyler Lockett (WR): 4.5 yards
-  Dylan Laube (RB): 0.3 yards
+  Brock Bowers (TE): 59.0 yards
+  Jakobi Meyers (WR): 51.9 yards
+  Tre Tucker (WR): 30.9 yards
+  Tyler Lockett (WR): 22.0 yards
+  Carter Runyon (TE): 16.9 yards
+  Michael Mayer (TE): 15.7 yards
+  Albert Okwuegbunam (TE): 15.3 yards
+  Ashton Jeanty (RB): 13.4 yards
+  Jack Bech (WR): 11.3 yards
+  Ian Thomas (TE): 9.2 yards
+  Alex Bachman (WR): 7.5 yards
+  Raheem Mostert (RB): 3.9 yards
+  Dylan Laube (RB): 0.7 yards
+  Zamir White (RB): 0.7 yards
+  Marquez Callaway (WR): -0.0 yards
+  Ketron Jackson Jr. (WR): -0.0 yards
+  DJ Turner (WR): -0.0 yards
+  Justin Shorter (WR): -0.0 yards
+  Shedrick Jackson (WR): -0.0 yards
+  Dont'e Thornton Jr. (WR): -0.0 yards
+  Amari Cooper (WR): -0.0 yards
+  Phillip Dorsett (WR): -0.0 yards
+  Collin Johnson (WR): -0.0 yards
+  Chris Collier (RB): -0.0 yards
 
 
 📊 GAME SUMMARY
 --------------------
-Total Props: 31
-With Predictions: 31
+Total Props: 63
+With Predictions: 63
 No Data (Rookies): 0
-Top Projection: Geno Smith (QB) - 249.0 passing yards
+Top Projection: Bo Nix (QB) - 218.3 passing yards
 ================================================================================
 
 ================================================================================
@@ -83,58 +115,93 @@ ATL vs IND | Week 10 2025 | ALL PROPS
 🏈 PASSING YARDS
 ----------------------------------------
 ATL:
-  Michael Penix Jr. (QB): 273.8 yards
+  Michael Penix Jr. (QB): 221.9 yards
 
 IND:
-  Daniel Jones (QB): 245.5 yards
+  Daniel Jones (QB): 237.4 yards
 
 
 🏈 RUSHING YARDS
 ----------------------------------------
 ATL:
-  Bijan Robinson (RB): 88.2 yards
-  Tyler Allgeier (RB): 26.3 yards
+  Bijan Robinson (RB): 65.8 yards
+  Tyler Allgeier (RB): 23.7 yards
   Michael Penix Jr. (QB): 4.0 yards
+  Nate Carter (RB): -0.0 yards
+  Carlos Washington (RB): -0.0 yards
+  Elijah Dotson (RB): -0.0 yards
 
 IND:
-  Jonathan Taylor (RB): 81.0 yards
+  Jonathan Taylor (RB): 77.3 yards
+  DJ Giddens (RB): 12.4 yards
   Daniel Jones (QB): 11.0 yards
-  Ameer Abdullah (RB): 8.8 yards
-  Tyler Goodson (RB): 2.3 yards
+  Ameer Abdullah (RB): 10.3 yards
+  Tyler Goodson (RB): 3.7 yards
+  Nay'Quan Wright (RB): -0.0 yards
+  Nate Noel (RB): -0.0 yards
+  Ulysses Bentley IV (RB): -0.0 yards
 
 
 🏈 RECEIVING YARDS
 ----------------------------------------
 ATL:
-  Drake London (WR): 66.5 yards
-  Darnell Mooney (WR): 41.2 yards
-  Bijan Robinson (RB): 33.3 yards
-  Kyle Pitts (TE): 31.2 yards
-  KhaDarel Hodge (WR): 10.4 yards
-  Casey Washington (WR): 8.6 yards
-  Charlie Woerner (TE): 1.6 yards
-  Tyler Allgeier (RB): 0.9 yards
-  Feleipe Franks (TE): 0.5 yards
+  Drake London (WR): 76.1 yards
+  Kyle Pitts (TE): 40.5 yards
+  Darnell Mooney (WR): 40.1 yards
+  Bijan Robinson (RB): 29.0 yards
+  Casey Washington (WR): 14.0 yards
+  KhaDarel Hodge (WR): 12.7 yards
+  Charlie Woerner (TE): 3.4 yards
+  Nick Nash (WR): -0.0 yards
+  Quincy Skinner Jr. (WR): -0.0 yards
+  Dylan Drummond (WR): -0.0 yards
+  Chris Blair (WR): -0.0 yards
+  David Sills (WR): -0.0 yards
+  Jamal Agnew (WR): -0.0 yards
+  Jesse Matthews (WR): -0.0 yards
+  Deven Thompkins (WR): -0.0 yards
+  Elijah Dotson (RB): -0.0 yards
+  Carlos Washington (RB): -0.0 yards
+  Nate Carter (RB): -0.0 yards
+  Teagan Quitoriano (TE): -0.0 yards
+  Joshua Simon (TE): -0.0 yards
+  Feleipe Franks (TE): -0.0 yards
+  Tyler Allgeier (RB): -0.0 yards
 
 IND:
-  Alec Pierce (WR): 52.7 yards
-  Josh Downs (WR): 48.9 yards
-  Ashton Dulin (WR): 26.2 yards
-  Jonathan Taylor (RB): 17.3 yards
-  Anthony Gould (WR): 16.1 yards
-  Mo Alie-Cox (TE): 13.4 yards
-  Adonai Mitchell (WR): 6.8 yards
-  Ameer Abdullah (RB): 4.2 yards
-  Andrew Ogletree (TE): 3.6 yards
-  Tyler Goodson (RB): 0.4 yards
+  Tyler Warren (TE): 57.6 yards
+  Alec Pierce (WR): 47.7 yards
+  Josh Downs (WR): 45.9 yards
+  Jonathan Taylor (RB): 13.3 yards
+  Mo Alie-Cox (TE): 10.9 yards
+  Ashton Dulin (WR): 9.8 yards
+  Ameer Abdullah (RB): 8.5 yards
+  Andrew Ogletree (TE): 8.5 yards
+  Adonai Mitchell (WR): 8.3 yards
+  Anthony Gould (WR): 7.5 yards
+  Tyler Goodson (RB): 2.3 yards
+  DJ Giddens (RB): 1.9 yards
+  Ajou Ajou (WR): -0.0 yards
+  Michael Pittman (WR): -0.0 yards
+  Coleman Owen (WR): -0.0 yards
+  Laquon Treadwell (WR): -0.0 yards
+  Landon Parker (WR): -0.0 yards
+  Tyler Kahmann (WR): -0.0 yards
+  Blayne Taylor (WR): -0.0 yards
+  Nate Noel (RB): -0.0 yards
+  Nay'Quan Wright (RB): -0.0 yards
+  Ulysses Bentley IV (RB): -0.0 yards
+  Maximilian Mang (TE): -0.0 yards
+  Will Mallory (TE): -0.0 yards
+  Sean McKeon (TE): -0.0 yards
 
 
 📊 GAME SUMMARY
 --------------------
-Total Props: 28
-With Predictions: 28
+Total Props: 63
+With Predictions: 63
 No Data (Rookies): 0
-Top Projection: Michael Penix Jr. (QB) - 273.8 passing yards
+Top Projection: Daniel Jones (QB) - 237.4 passing yards
 ================================================================================
 
 ================================================================================
@@ -144,64 +211,96 @@ BAL vs MIN | Week 10 2025 | ALL PROPS
 🏈 PASSING YARDS
 ----------------------------------------
 BAL:
-  Lamar Jackson (QB): 214.1 yards
+  Lamar Jackson (QB): 218.1 yards
 
 MIN:
-  J.J. McCarthy (QB): 151.5 yards
+  J.J. McCarthy (QB): 155.0 yards
 
 
 🏈 RUSHING YARDS
 ----------------------------------------
 BAL:
-  Derrick Henry (RB): 79.2 yards
-  Keaton Mitchell (RB): 32.7 yards
+  Derrick Henry (RB): 99.5 yards
   Lamar Jackson (QB): 27.7 yards
-  Justice Hill (RB): 9.9 yards
-  Rasheen Ali (RB): 0.7 yards
+  Keaton Mitchell (RB): 27.4 yards
+  Justice Hill (RB): 10.6 yards
+  Rasheen Ali (RB): 1.6 yards
+  Lucas Scott (RB): -0.0 yards
+  Patrick Ricard (RB): -0.0 yards
 
 MIN:
-  Jordan Mason (RB): 28.3 yards
-  Aaron Jones (RB): 27.9 yards
-  Cam Akers (RB): 25.5 yards
+  Aaron Jones (RB): 45.1 yards
+  Jordan Mason (RB): 38.7 yards
+  Cam Akers (RB): 27.4 yards
   J.J. McCarthy (QB): 20.9 yards
-  C.J. Ham (RB): -0.0 yards
+  Zavier Scott (RB): 13.3 yards
+  C.J. Ham (RB): 0.3 yards
+  Corey Kiner (RB): -0.0 yards
+  Tre Stewart (RB): -0.0 yards
+  Xazavian Valladay (RB): -0.0 yards
 
 
 🏈 RECEIVING YARDS
 ----------------------------------------
 BAL:
-  Zay Flowers (WR): 58.6 yards
-  Rashod Bateman (WR): 31.4 yards
-  Mark Andrews (TE): 31.1 yards
-  DeAndre Hopkins (WR): 26.9 yards
-  Justice Hill (RB): 17.6 yards
-  Tylan Wallace (WR): 13.2 yards
-  Isaiah Likely (TE): 10.9 yards
-  Devontez Walker (WR): 8.2 yards
-  Derrick Henry (RB): 7.2 yards
-  Keaton Mitchell (RB): 4.9 yards
-  Charlie Kolar (TE): 4.8 yards
-  Rasheen Ali (RB): -0.0 yards
+  Zay Flowers (WR): 61.7 yards
+  Mark Andrews (TE): 36.6 yards
+  DeAndre Hopkins (WR): 28.2 yards
+  Rashod Bateman (WR): 27.5 yards
+  Isaiah Likely (TE): 23.3 yards
+  Devontez Walker (WR): 16.4 yards
+  Justice Hill (RB): 11.7 yards
+  Charlie Kolar (TE): 11.1 yards
+  Tylan Wallace (WR): 7.5 yards
+  Keaton Mitchell (RB): 7.4 yards
+  Derrick Henry (RB): 6.7 yards
+  Anthony Miller (WR): -0.0 yards
+  Xavier Guillory (WR): -0.0 yards
+  Keith Kirkwood (WR): -0.0 yards
+  Colton Dowell (WR): -0.0 yards
+  Cornelius Johnson (WR): -0.0 yards
+  Jahmal Banks (WR): -0.0 yards
+  LaJohntay Wester (WR): -0.0 yards
+  Lucas Scott (RB): -0.0 yards
+  Patrick Ricard (RB): -0.0 yards
+  Scotty Washington (TE): -0.0 yards
+  Baylor Cupp (TE): -0.0 yards
+  Rasheen Ali (RB): -0.1 yards
 
 MIN:
-  Justin Jefferson (WR): 80.2 yards
-  Jordan Addison (WR): 68.2 yards
-  T.J. Hockenson (TE): 34.4 yards
-  Aaron Jones (RB): 23.3 yards
-  Jalen Nailor (WR): 12.9 yards
-  Adam Thielen (WR): 11.7 yards
-  Josh Oliver (TE): 11.3 yards
-  C.J. Ham (RB): 10.8 yards
-  Jordan Mason (RB): 2.3 yards
-  Cam Akers (RB): 2.0 yards
+  Justin Jefferson (WR): 77.5 yards
+  Jordan Addison (WR): 56.1 yards
+  T.J. Hockenson (TE): 39.7 yards
+  Adam Thielen (WR): 31.1 yards
+  Jalen Nailor (WR): 18.4 yards
+  Aaron Jones (RB): 17.7 yards
+  Ben Yurosek (TE): 15.6 yards
+  Tai Felton (WR): 14.5 yards
+  Josh Oliver (TE): 9.4 yards
+  Zavier Scott (RB): 8.5 yards
+  C.J. Ham (RB): 6.0 yards
+  Cam Akers (RB): 3.1 yards
+  Jordan Mason (RB): 1.4 yards
+  Jeshaun Jones (WR): -0.0 yards
+  Lucky Jackson (WR): -0.0 yards
+  Dontae Fleming (WR): -0.0 yards
+  Robert Lewis (WR): -0.0 yards
+  Myles Price (WR): -0.0 yards
+  Tre Stewart (RB): -0.0 yards
+  Corey Kiner (RB): -0.0 yards
+  Ben Sims (TE): -0.0 yards
+  Xazavian Valladay (RB): -0.0 yards
+  Nick Vannett (TE): -0.0 yards
+  Giovanni Ricci (TE): -0.0 yards
+  Bryson Nesbit (TE): -0.0 yards
 
 
 📊 GAME SUMMARY
 --------------------
-Total Props: 34
-With Predictions: 34
+Total Props: 66
+With Predictions: 66
 No Data (Rookies): 0
-Top Projection: Lamar Jackson (QB) - 214.1 passing yards
+Top Projection: Lamar Jackson (QB) - 218.1 passing yards
 ================================================================================
 
 ================================================================================
@@ -211,61 +310,101 @@ BUF vs MIA | Week 10 2025 | ALL PROPS
 🏈 PASSING YARDS
 ----------------------------------------
 BUF:
-  Josh Allen (QB): 227.3 yards
+  Josh Allen (QB): 221.4 yards
 
 MIA:
-  Tua Tagovailoa (QB): 200.9 yards
+  Tua Tagovailoa (QB): 227.4 yards
 
 
 🏈 RUSHING YARDS
 ----------------------------------------
 BUF:
-  James Cook (RB): 93.7 yards
+  James Cook (RB): 82.7 yards
   Josh Allen (QB): 25.9 yards
-  Ty Johnson (RB): 10.7 yards
-  Ray Davis (RB): 9.3 yards
+  Ty Johnson (RB): 12.0 yards
+  Ray Davis (RB): 10.7 yards
+  Elijah Young (RB): -0.0 yards
+  Frank Gore Jr. (RB): -0.0 yards
+  Darrynton Evans (RB): -0.0 yards
+  Jarveon Howard (RB): -0.0 yards
+  Reggie Gilliam (RB): -0.0 yards
 
 MIA:
-  De'Von Achane (RB): 71.6 yards
-  Jaylen Wright (RB): 7.2 yards
+  De'Von Achane (RB): 64.8 yards
+  Jaylen Wright (RB): 14.1 yards
   Tua Tagovailoa (QB): 2.3 yards
-  Alec Ingold (RB): 0.5 yards
+  Alec Ingold (RB): 0.0 yards
+  JaMycal Hasty (RB): -0.0 yards
+  Mike Boone (RB): -0.0 yards
+  Aaron Shampklin (RB): -0.0 yards
+  Ollie Gordon II (RB): -0.0 yards
+  Jeff Wilson (RB): -0.0 yards
 
 
 🏈 RECEIVING YARDS
 ----------------------------------------
 BUF:
-  Khalil Shakir (WR): 53.8 yards
-  Dalton Kincaid (TE): 48.4 yards
-  Josh Palmer (WR): 26.9 yards
-  Keon Coleman (WR): 22.1 yards
-  Dawson Knox (TE): 20.9 yards
-  Elijah Moore (WR): 15.7 yards
-  Curtis Samuel (WR): 15.6 yards
-  Ray Davis (RB): 12.4 yards
-  Tyrell Shavers (WR): 9.3 yards
-  Ty Johnson (RB): 8.3 yards
-  James Cook (RB): 1.8 yards
+  Khalil Shakir (WR): 45.1 yards
+  Dalton Kincaid (TE): 36.2 yards
+  Josh Palmer (WR): 31.6 yards
+  Keon Coleman (WR): 27.6 yards
+  Curtis Samuel (WR): 19.5 yards
+  Elijah Moore (WR): 19.1 yards
+  Dawson Knox (TE): 18.8 yards
+  Tyrell Shavers (WR): 16.3 yards
+  Jackson Hawes (TE): 11.2 yards
+  Ty Johnson (RB): 7.0 yards
+  James Cook (RB): 6.7 yards
+  Ray Davis (RB): 1.6 yards
+  Grant DuBose (WR): -0.0 yards
+  Gabe Davis (WR): -0.0 yards
+  Deon Cain (WR): -0.0 yards
+  Kristian Wilkerson (WR): -0.0 yards
+  Stephen Gosnell (WR): -0.0 yards
+  Jalen Virgil (WR): -0.0 yards
+  KJ Hamler (WR): -0.0 yards
+  Laviska Shenault Jr. (WR): -0.0 yards
+  Kaden Prather (WR): -0.0 yards
+  David White (WR): -0.0 yards
+  Elijah Young (RB): -0.0 yards
+  Frank Gore Jr. (RB): -0.0 yards
+  Darrynton Evans (RB): -0.0 yards
+  Jarveon Howard (RB): -0.0 yards
+  Reggie Gilliam (RB): -0.0 yards
+  Zach Davidson (TE): -0.0 yards
+  Keleki Latu (TE): -0.0 yards
 
 MIA:
-  Jaylen Waddle (WR): 64.9 yards
-  Malik Washington (WR): 27.1 yards
-  De'Von Achane (RB): 22.4 yards
-  Tanner Conner (TE): 18.4 yards
-  Julian Hill (TE): 18.1 yards
-  Greg Dulcich (TE): 14.2 yards
-  Nick Westbrook-Ikhine (WR): 12.9 yards
-  Cedrick Wilson Jr. (WR): 9.8 yards
-  Alec Ingold (RB): 6.3 yards
-  Jaylen Wright (RB): 1.9 yards
+  Jaylen Waddle (WR): 61.5 yards
+  De'Von Achane (RB): 32.4 yards
+  Cedrick Wilson Jr. (WR): 19.4 yards
+  Greg Dulcich (TE): 18.7 yards
+  Malik Washington (WR): 18.4 yards
+  Nick Westbrook-Ikhine (WR): 18.3 yards
+  Tahj Washington (WR): 15.5 yards
+  Tanner Conner (TE): 7.5 yards
+  Julian Hill (TE): 7.2 yards
+  Alec Ingold (RB): 3.3 yards
+  Jaylen Wright (RB): 0.0 yards
+  A.J. Henning (WR): -0.0 yards
+  Theo Wease Jr. (WR): -0.0 yards
+  Mike Boone (RB): -0.0 yards
+  Aaron Shampklin (RB): -0.0 yards
+  Ollie Gordon II (RB): -0.0 yards
+  JaMycal Hasty (RB): -0.0 yards
+  Andrew Armstrong (WR): -0.0 yards
+  Dee Eskridge (WR): -0.0 yards
+  Jeff Wilson (RB): -0.0 yards
+  Hayden Rucci (TE): -0.0 yards
+  Chris Myarick (TE): -0.0 yards
 
 
 📊 GAME SUMMARY
 --------------------
-Total Props: 31
-With Predictions: 31
+Total Props: 71
+With Predictions: 71
 No Data (Rookies): 0
-Top Projection: Josh Allen (QB) - 227.3 passing yards
+Top Projection: Tua Tagovailoa (QB) - 227.4 passing yards
 ================================================================================
 
 ================================================================================
@@ -275,53 +414,97 @@ CLE vs NYJ | Week 10 2025 | ALL PROPS
 🏈 PASSING YARDS
 ----------------------------------------
 CLE:
-  Dillon Gabriel (QB): 166.4 yards
+  Dillon Gabriel (QB): 164.1 yards
 
 NYJ:
-  Justin Fields (QB): 235.6 yards
+  Justin Fields (QB): 199.5 yards
 
 
 🏈 RUSHING YARDS
 ----------------------------------------
 CLE:
-  Jerome Ford (RB): 4.5 yards
+  Quinshon Judkins (RB): 52.1 yards
+  Jerome Ford (RB): 16.3 yards
+  Dylan Sampson (RB): 4.7 yards
   Dillon Gabriel (QB): 3.3 yards
+  Ahmani Marshall (RB): -0.0 yards
+  Raheim Sanders (RB): -1.2 yards
 
 NYJ:
-  Breece Hall (RB): 66.9 yards
+  Breece Hall (RB): 57.0 yards
   Justin Fields (QB): 23.5 yards
-  Isaiah Davis (RB): 10.3 yards
+  Isaiah Davis (RB): 11.5 yards
+  Khalil Herbert (RB): -0.0 yards
+  Avery Williams (RB): -0.0 yards
+  Lawrance Toafili (RB): -0.0 yards
   Andrew Beck (RB): -0.0 yards
+  Keilan Robinson (RB): -0.0 yards
+  Kene Nwangwu (RB): -0.0 yards
 
 
 🏈 RECEIVING YARDS
 ----------------------------------------
 CLE:
-  David Njoku (TE): 39.0 yards
-  Jerry Jeudy (WR): 34.6 yards
-  Brenden Bates (TE): 14.5 yards
-  Jerome Ford (RB): 14.4 yards
-  Malachi Corley (WR): 13.4 yards
-  Jamari Thrash (WR): 9.6 yards
-  Blake Whiteheart (TE): -0.0 yards
+  Jerry Jeudy (WR): 49.9 yards
+  David Njoku (TE): 34.8 yards
+  Brenden Bates (TE): 16.7 yards
+  Isaiah Bond (WR): 16.2 yards
+  Jerome Ford (RB): 15.3 yards
+  Quinshon Judkins (RB): 14.4 yards
+  Dylan Sampson (RB): 9.3 yards
+  Jamari Thrash (WR): 8.5 yards
+  Gage Larvadain (WR): 3.6 yards
+  Blake Whiteheart (TE): 3.2 yards
+  Malachi Corley (WR): 1.2 yards
+  David Bell (WR): -0.0 yards
+  Kaden Davis (WR): -0.0 yards
+  Chase Cota (WR): -0.0 yards
+  Cade McDonald (WR): -0.0 yards
+  Diontae Johnson (WR): -0.0 yards
+  Luke Floriea (WR): -0.0 yards
+  Kisean Johnson (WR): -0.0 yards
+  Raheim Sanders (RB): -0.0 yards
+  Ahmani Marshall (RB): -0.0 yards
+  Sal Cannella (TE): -0.0 yards
+  Harold Fannin Jr. (TE): -0.0 yards
+  Mitch Van Vooren (TE): -0.0 yards
+  Caden Prieskorn (TE): -0.0 yards
 
 NYJ:
-  Garrett Wilson (WR): 64.7 yards
-  Breece Hall (RB): 26.9 yards
-  Tyler Johnson (WR): 26.4 yards
-  Allen Lazard (WR): 14.2 yards
-  Jeremy Ruckert (TE): 8.3 yards
-  Isaiah Davis (RB): 7.8 yards
-  Isaiah Williams (WR): 5.6 yards
-  Andrew Beck (RB): 4.5 yards
+  Garrett Wilson (WR): 62.8 yards
+  Mason Taylor (TE): 32.7 yards
+  Allen Lazard (WR): 23.0 yards
+  Breece Hall (RB): 19.0 yards
+  Isaiah Williams (WR): 18.6 yards
+  Tyler Johnson (WR): 15.5 yards
+  Jeremy Ruckert (TE): 10.4 yards
+  Isaiah Davis (RB): 8.6 yards
+  Arian Smith (WR): 5.9 yards
+  Andrew Beck (RB): 3.7 yards
+  Khalil Herbert (RB): -0.0 yards
+  Pokey Wilson (WR): -0.0 yards
+  Trenton Irwin (WR): -0.0 yards
+  Jamaal Pritchett (WR): -0.0 yards
+  Quentin Skinner (WR): -0.0 yards
+  John Metchie III (WR): -0.0 yards
+  Brandon Smith (WR): -0.0 yards
+  Zack Kuntz (TE): -0.0 yards
+  Avery Williams (RB): -0.0 yards
+  Kene Nwangwu (RB): -0.0 yards
+  Lawrance Toafili (RB): -0.0 yards
+  Dymere Miller (WR): -0.0 yards
+  Keilan Robinson (RB): -0.0 yards
+  Neal Johnson (TE): -0.0 yards
+  Stone Smartt (TE): -0.0 yards
+  Jelani Woods (TE): -0.0 yards
 
 
 📊 GAME SUMMARY
 --------------------
-Total Props: 23
-With Predictions: 23
+Total Props: 67
+With Predictions: 67
 No Data (Rookies): 0
-Top Projection: Justin Fields (QB) - 235.6 passing yards
+Top Projection: Justin Fields (QB) - 199.5 passing yards
 ================================================================================
 
 ================================================================================
@@ -331,58 +514,97 @@ HOU vs JAX | Week 10 2025 | ALL PROPS
 🏈 PASSING YARDS
 ----------------------------------------
 HOU:
-  C.J. Stroud (QB): 259.4 yards
+  C.J. Stroud (QB): 204.2 yards
 
 JAX:
-  Trevor Lawrence (QB): 224.6 yards
+  Trevor Lawrence (QB): 218.7 yards
 
 
 🏈 RUSHING YARDS
 ----------------------------------------
 HOU:
-  Nick Chubb (RB): 38.9 yards
+  Nick Chubb (RB): 50.7 yards
+  Woody Marks (RB): 25.0 yards
+  Dameon Pierce (RB): 22.2 yards
   C.J. Stroud (QB): 18.8 yards
-  Dameon Pierce (RB): 12.0 yards
-  British Brooks (RB): 5.6 yards
-  Dare Ogunbowale (RB): 1.7 yards
+  Dare Ogunbowale (RB): 4.5 yards
+  British Brooks (RB): 2.3 yards
+  Jawhar Jordan (RB): -0.0 yards
 
 JAX:
-  Travis Etienne (RB): 42.3 yards
+  Travis Etienne (RB): 49.9 yards
   Trevor Lawrence (QB): 18.1 yards
+  Bhayshul Tuten (RB): 14.7 yards
+  Ja'Quinden Jackson (RB): -0.0 yards
+  Kevin Harris (RB): -0.0 yards
+  Cody Schrader (RB): -0.0 yards
+  LeQuint Allen Jr. (RB): -0.0 yards
 
 
 🏈 RECEIVING YARDS
 ----------------------------------------
 HOU:
-  Christian Kirk (WR): 62.0 yards
-  Nico Collins (WR): 54.3 yards
-  Dalton Schultz (TE): 45.7 yards
-  Xavier Hutchinson (WR): 36.0 yards
-  Jared Wayne (WR): 7.7 yards
-  Braxton Berrios (WR): 7.3 yards
-  Nick Chubb (RB): 6.9 yards
-  Dare Ogunbowale (RB): 6.4 yards
-  Harrison Bryant (TE): 5.6 yards
-  Dameon Pierce (RB): 0.1 yards
-  British Brooks (RB): 0.0 yards
+  Nico Collins (WR): 59.8 yards
+  Christian Kirk (WR): 41.2 yards
+  Dalton Schultz (TE): 39.2 yards
+  Jayden Higgins (WR): 21.3 yards
+  Jaylin Noel (WR): 20.2 yards
+  Jared Wayne (WR): 20.0 yards
+  Braxton Berrios (WR): 19.5 yards
+  Woody Marks (RB): 15.9 yards
+  Xavier Hutchinson (WR): 14.4 yards
+  Harrison Bryant (TE): 10.3 yards
+  Nick Chubb (RB): 8.5 yards
+  Dare Ogunbowale (RB): 6.8 yards
+  Dameon Pierce (RB): 0.4 yards
+  Silas Bolden (WR): -0.0 yards
+  Daniel Jackson (WR): -0.0 yards
+  Josh Kelly (WR): -0.0 yards
+  Juwann Winfree (WR): -0.0 yards
+  Quintez Cephus (WR): -0.0 yards
+  Cornell Powell (WR): -0.0 yards
+  Xavier Johnson (WR): -0.0 yards
+  Jawhar Jordan (RB): -0.0 yards
+  British Brooks (RB): -0.0 yards
+  Luke Lachey (TE): -0.0 yards
+  Irv Smith (TE): -0.0 yards
+  Dalton Keene (TE): -0.0 yards
 
 JAX:
-  Parker Washington (WR): 35.8 yards
-  Austin Trammell (WR): 29.2 yards
-  Dyami Brown (WR): 25.9 yards
-  Travis Etienne (RB): 24.4 yards
-  Tim Patrick (WR): 21.8 yards
-  Tim Jones (WR): 13.8 yards
-  Johnny Mundt (TE): 7.7 yards
-  Hunter Long (TE): 7.3 yards
+  Parker Washington (WR): 30.2 yards
+  Tim Patrick (WR): 21.0 yards
+  Dyami Brown (WR): 19.6 yards
+  Travis Etienne (RB): 18.3 yards
+  Austin Trammell (WR): 11.9 yards
+  Tim Jones (WR): 9.6 yards
+  Johnny Mundt (TE): 7.3 yards
+  Hunter Long (TE): 4.4 yards
+  Bhayshul Tuten (RB): 1.9 yards
+  Cam Camper (WR): -0.0 yards
+  Chandler Brayboy (WR): -0.0 yards
+  Erik Ezukanma (WR): -0.0 yards
+  Eli Pancol (WR): -0.0 yards
+  Dorian Singer (WR): -0.0 yards
+  Brian Thomas Jr. (WR): -0.0 yards
+  Cody Schrader (RB): -0.0 yards
+  Darius Lassiter (WR): -0.0 yards
+  Kevin Harris (RB): -0.0 yards
+  Ja'Quinden Jackson (RB): -0.0 yards
+  LeQuint Allen Jr. (RB): -0.0 yards
+  Shawn Bowman (TE): -0.0 yards
+  Quintin Morris (TE): -0.0 yards
+  Jordan Akins (TE): -0.0 yards
+  John Copenhaver (TE): -0.0 yards
+  Qadir Ismail (TE): -0.0 yards
+  Patrick Herbert (TE): -0.0 yards
 
 
 📊 GAME SUMMARY
 --------------------
-Total Props: 28
-With Predictions: 28
+Total Props: 67
+With Predictions: 67
 No Data (Rookies): 0
-Top Projection: C.J. Stroud (QB) - 259.4 passing yards
+Top Projection: Trevor Lawrence (QB) - 218.7 passing yards
 ================================================================================
 
 ================================================================================
@@ -392,57 +614,98 @@ NE vs TB | Week 10 2025 | ALL PROPS
 🏈 PASSING YARDS
 ----------------------------------------
 NE:
-  Drake Maye (QB): 259.0 yards
+  Drake Maye (QB): 240.8 yards
 
 TB:
-  Baker Mayfield (QB): 263.5 yards
+  Baker Mayfield (QB): 244.8 yards
 
 
 🏈 RUSHING YARDS
 ----------------------------------------
 NE:
-  Rhamondre Stevenson (RB): 51.6 yards
+  Rhamondre Stevenson (RB): 42.8 yards
   Drake Maye (QB): 24.7 yards
-  Terrell Jennings (RB): 18.1 yards
-  D'Ernest Johnson (RB): -0.0 yards
+  TreVeyon Henderson (RB): 23.0 yards
+  Terrell Jennings (RB): 17.2 yards
+  D'Ernest Johnson (RB): 5.7 yards
+  Micah Bernard (RB): -0.0 yards
+  Shane Watts (RB): -0.0 yards
+  Jashaun Corbin (RB): -0.0 yards
+  Rushawn Baker (RB): -0.0 yards
+  Jonathan Ward (RB): -0.0 yards
+  Jack Westover (RB): -0.0 yards
 
 TB:
-  Bucky Irving (RB): 64.4 yards
-  Rachaad White (RB): 44.5 yards
-  Sean Tucker (RB): 18.4 yards
+  Bucky Irving (RB): 68.7 yards
+  Rachaad White (RB): 37.4 yards
+  Josh Williams (RB): 12.1 yards
+  Sean Tucker (RB): 10.8 yards
   Baker Mayfield (QB): 5.8 yards
+  Owen Wright (RB): -0.0 yards
+  Jase McClellan (RB): -0.0 yards
+  Michael Wiley (RB): -0.0 yards
 
 
 🏈 RECEIVING YARDS
 ----------------------------------------
 NE:
-  Stefon Diggs (WR): 70.7 yards
-  Kayshon Boutte (WR): 49.4 yards
-  Mack Hollins (WR): 35.3 yards
-  Austin Hooper (TE): 28.5 yards
-  Hunter Henry (TE): 25.4 yards
-  DeMario Douglas (WR): 24.5 yards
-  Rhamondre Stevenson (RB): 11.6 yards
-  Terrell Jennings (RB): 0.8 yards
-  D'Ernest Johnson (RB): 0.7 yards
+  Stefon Diggs (WR): 60.9 yards
+  Kayshon Boutte (WR): 35.9 yards
+  Hunter Henry (TE): 31.4 yards
+  DeMario Douglas (WR): 27.9 yards
+  Mack Hollins (WR): 19.0 yards
+  Austin Hooper (TE): 18.9 yards
+  Rhamondre Stevenson (RB): 8.3 yards
+  TreVeyon Henderson (RB): 6.1 yards
+  D'Ernest Johnson (RB): 5.5 yards
+  Kyle Williams (WR): 4.0 yards
+  Terrell Jennings (RB): 0.4 yards
+  Jeremiah Webb (WR): -0.0 yards
+  Phil Lutz (WR): -0.0 yards
+  Efton Chism III (WR): -0.0 yards
+  John Jiles (WR): -0.0 yards
+  Jonathan Ward (RB): -0.0 yards
+  Micah Bernard (RB): -0.0 yards
+  Jack Westover (RB): -0.0 yards
+  Jashaun Corbin (RB): -0.0 yards
+  Rushawn Baker (RB): -0.0 yards
+  Shane Watts (RB): -0.0 yards
+  Gee Scott Jr. (TE): -0.0 yards
+  Marshall Lang (TE): -0.0 yards
+  Cole Fotheringham (TE): -0.0 yards
+  CJ Dippre (TE): -0.0 yards
+  Thomas Odukoya (TE): -0.0 yards
 
 TB:
-  Cade Otton (TE): 43.9 yards
-  Sterling Shepard (WR): 37.6 yards
-  Kameron Johnson (WR): 26.5 yards
-  Payne Durham (TE): 20.0 yards
-  Ryan Miller (WR): 18.3 yards
-  Rachaad White (RB): 18.0 yards
-  Bucky Irving (RB): 16.4 yards
-  Sean Tucker (RB): -0.0 yards
+  Emeka Egbuka (WR): 65.1 yards
+  Cade Otton (TE): 39.4 yards
+  Tez Johnson (WR): 39.3 yards
+  Sterling Shepard (WR): 31.3 yards
+  Rachaad White (RB): 22.8 yards
+  Bucky Irving (RB): 17.3 yards
+  Payne Durham (TE): 14.4 yards
+  Ryan Miller (WR): 12.3 yards
+  Sean Tucker (RB): 0.2 yards
+  Chris Godwin Jr. (WR): -0.0 yards
+  Jacob Harris (WR): -0.0 yards
+  Brandon Johnson (WR): -0.0 yards
+  Garrett Greene (WR): -0.0 yards
+  Dennis Houston (WR): -0.0 yards
+  Josh Williams (RB): -0.0 yards
+  Jase McClellan (RB): -0.0 yards
+  Michael Wiley (RB): -0.0 yards
+  Owen Wright (RB): -0.0 yards
+  Devin Culp (TE): -0.0 yards
+  Tanner Taula (TE): -0.0 yards
+  Kameron Johnson (WR): -0.0 yards
 
 
 📊 GAME SUMMARY
 --------------------
-Total Props: 27
-With Predictions: 27
+Total Props: 68
+With Predictions: 68
 No Data (Rookies): 0
-Top Projection: Baker Mayfield (QB) - 263.5 passing yards
+Top Projection: Baker Mayfield (QB) - 244.8 passing yards
 ================================================================================
 
 ================================================================================
@@ -452,54 +715,95 @@ CAR vs NO | Week 10 2025 | ALL PROPS
 🏈 PASSING YARDS
 ----------------------------------------
 CAR:
-  Bryce Young (QB): 189.3 yards
+  Bryce Young (QB): 207.1 yards
 
 NO:
-  Tyler Shough (QB): 106.3 yards
+  Tyler Shough (QB): 168.5 yards
 
 
 🏈 RUSHING YARDS
 ----------------------------------------
 CAR:
-  Rico Dowdle (RB): 79.7 yards
-  Chuba Hubbard (RB): 50.5 yards
+  Rico Dowdle (RB): 75.5 yards
+  Chuba Hubbard (RB): 52.0 yards
+  Trevor Etienne (RB): 14.4 yards
   Bryce Young (QB): 7.4 yards
-  DeeJay Dallas (RB): 0.4 yards
+  DeeJay Dallas (RB): 6.1 yards
+  Anthony Tyus III (RB): -0.0 yards
+  Kayron Lynch-Adams (RB): -0.0 yards
+  Emani Bailey (RB): -0.0 yards
 
 NO:
-  Alvin Kamara (RB): 33.5 yards
+  Alvin Kamara (RB): 49.4 yards
+  Devin Neal (RB): 5.1 yards
   Tyler Shough (QB): 5.1 yards
+  Audric Estimé (RB): -0.0 yards
+  Evan Hull (RB): -0.0 yards
+  Marcus Yarns (RB): -0.0 yards
 
 
 🏈 RECEIVING YARDS
 ----------------------------------------
 CAR:
-  Xavier Legette (WR): 48.0 yards
-  Jalen Coker (WR): 30.9 yards
-  Tommy Tremble (TE): 20.5 yards
-  Rico Dowdle (RB): 17.3 yards
-  Brycen Tremayne (WR): 13.1 yards
-  Ja'Tavion Sanders (TE): 9.5 yards
-  Chuba Hubbard (RB): 5.1 yards
-  DeeJay Dallas (RB): 3.9 yards
+  Tetairoa McMillan (WR): 57.0 yards
+  Jalen Coker (WR): 34.0 yards
+  Xavier Legette (WR): 31.5 yards
+  Hunter Renfrow (WR): 20.1 yards
+  Mitchell Evans (TE): 14.6 yards
+  Ja'Tavion Sanders (TE): 13.9 yards
+  Tommy Tremble (TE): 13.0 yards
+  Chuba Hubbard (RB): 11.6 yards
+  Brycen Tremayne (WR): 10.8 yards
+  Rico Dowdle (RB): 9.4 yards
+  James Mitchell (TE): 8.6 yards
+  Trevor Etienne (RB): 4.2 yards
+  DeeJay Dallas (RB): 2.8 yards
+  Jacolby George (WR): -0.0 yards
+  Jimmy Horn Jr. (WR): -0.0 yards
+  Kobe Hudson (WR): -0.0 yards
+  Dan Chisena (WR): -0.0 yards
+  T.J. Luther (WR): -0.0 yards
+  Ainias Smith (WR): -0.0 yards
+  Ja'Seem Reed (WR): -0.0 yards
+  Emani Bailey (RB): -0.0 yards
+  Kayron Lynch-Adams (RB): -0.0 yards
+  Anthony Tyus III (RB): -0.0 yards
+  Bryce Pierre (TE): -0.0 yards
+  Dominique Dafney (TE): -0.0 yards
+  Tyler Mabry (TE): -0.0 yards
 
 NO:
-  Chris Olave (WR): 61.2 yards
-  Rashid Shaheed (WR): 51.0 yards
-  Juwan Johnson (TE): 31.2 yards
-  Alvin Kamara (RB): 28.5 yards
-  Foster Moreau (TE): 25.2 yards
-  Brandin Cooks (WR): 12.8 yards
-  Devaughn Vele (WR): 7.2 yards
-  Mason Tipton (WR): -1.5 yards
+  Chris Olave (WR): 61.0 yards
+  Rashid Shaheed (WR): 48.2 yards
+  Juwan Johnson (TE): 29.8 yards
+  Alvin Kamara (RB): 27.0 yards
+  Brandin Cooks (WR): 23.3 yards
+  Foster Moreau (TE): 21.3 yards
+  Devaughn Vele (WR): 18.0 yards
+  Zaire Mitchell-Paden (TE): 7.5 yards
+  Mason Tipton (WR): 3.7 yards
+  Devin Neal (RB): 1.1 yards
+  Roderick Daniels Jr. (WR): -0.0 yards
+  Kevin Austin Jr. (WR): -0.0 yards
+  Dante Pettis (WR): -0.0 yards
+  Evan Hull (RB): -0.0 yards
+  Audric Estimé (RB): -0.0 yards
+  Tommy Mellott (WR): -0.0 yards
+  Ronnie Bell (WR): -0.0 yards
+  Moochie Dixon (WR): -0.0 yards
+  Marcus Yarns (RB): -0.0 yards
+  Moliki Matavao (TE): -0.0 yards
+  Michael Jacobson (TE): -0.0 yards
+  Seth Green (TE): -0.0 yards
+  Treyton Welch (TE): -0.0 yards
 
 
 📊 GAME SUMMARY
 --------------------
-Total Props: 24
-With Predictions: 24
+Total Props: 65
+With Predictions: 65
 No Data (Rookies): 0
-Top Projection: Bryce Young (QB) - 189.3 passing yards
+Top Projection: Bryce Young (QB) - 207.1 passing yards
 ================================================================================
 
 ================================================================================
@@ -509,55 +813,86 @@ CHI vs NYG | Week 10 2025 | ALL PROPS
 🏈 PASSING YARDS
 ----------------------------------------
 CHI:
-  Caleb Williams (QB): 237.0 yards
+  Caleb Williams (QB): 230.4 yards
 
 NYG:
-  Jaxson Dart (QB): 228.7 yards
+  Jaxson Dart (QB): 195.2 yards
 
 
 🏈 RUSHING YARDS
 ----------------------------------------
 CHI:
-  D'Andre Swift (RB): 52.1 yards
+  D'Andre Swift (RB): 57.2 yards
+  Kyle Monangai (RB): 23.9 yards
   Caleb Williams (QB): 20.7 yards
-  Roschon Johnson (RB): 7.9 yards
+  Roschon Johnson (RB): 12.2 yards
+  Brittain Brown (RB): 7.8 yards
+  Ian Wheeler (RB): -0.0 yards
+  Travis Homer (RB): -0.0 yards
+  Royce Freeman (RB): -0.0 yards
 
 NYG:
   Jaxson Dart (QB): 49.1 yards
-  Tyrone Tracy Jr. (RB): 24.5 yards
-  Devin Singletary (RB): 13.0 yards
+  Tyrone Tracy Jr. (RB): 29.5 yards
+  Devin Singletary (RB): 16.7 yards
+  Dante Miller (RB): -0.0 yards
 
 
 🏈 RECEIVING YARDS
 ----------------------------------------
 CHI:
-  DJ Moore (WR): 67.6 yards
-  Rome Odunze (WR): 65.2 yards
-  D'Andre Swift (RB): 31.7 yards
-  Cole Kmet (TE): 30.0 yards
-  Olamide Zaccheaus (WR): 21.6 yards
-  Roschon Johnson (RB): 12.9 yards
-  Devin Duvernay (WR): 5.1 yards
+  DJ Moore (WR): 57.7 yards
+  Rome Odunze (WR): 46.3 yards
+  Olamide Zaccheaus (WR): 24.2 yards
+  Cole Kmet (TE): 22.3 yards
+  D'Andre Swift (RB): 22.0 yards
+  Colston Loveland (TE): 18.6 yards
+  Devin Duvernay (WR): 10.7 yards
+  Kyle Monangai (RB): 7.5 yards
+  Roschon Johnson (RB): 7.5 yards
+  Miles Boykin (WR): -0.0 yards
+  Luther Burden III (WR): -0.0 yards
+  Jahdae Walker (WR): -0.0 yards
+  JP Richardson (WR): -0.0 yards
+  Maurice Alexander (WR): -0.0 yards
+  Travis Homer (RB): -0.0 yards
+  Ian Wheeler (RB): -0.0 yards
+  Royce Freeman (RB): -0.0 yards
+  Brittain Brown (RB): -0.0 yards
+  Thomas Gordon (TE): -0.0 yards
+  Nikola Kalinic (TE): -0.0 yards
+  Stephen Carlson (TE): -0.0 yards
+  Durham Smythe (TE): -0.0 yards
 
 NYG:
-  Wan'Dale Robinson (WR): 44.3 yards
-  Lil'Jordan Humphrey (WR): 37.5 yards
-  Theo Johnson (TE): 36.2 yards
-  Darius Slayton (WR): 34.2 yards
-  Daniel Bellinger (TE): 22.8 yards
-  Devin Singletary (RB): 21.4 yards
-  Jalin Hyatt (WR): 15.1 yards
-  Tyrone Tracy Jr. (RB): 12.4 yards
-  Ray-Ray McCloud (WR): 7.6 yards
-  Chris Manhertz (TE): 7.0 yards
+  Wan'Dale Robinson (WR): 46.0 yards
+  Darius Slayton (WR): 31.2 yards
+  Theo Johnson (TE): 29.9 yards
+  Ray-Ray McCloud (WR): 17.9 yards
+  Daniel Bellinger (TE): 16.6 yards
+  Lil'Jordan Humphrey (WR): 16.4 yards
+  Beaux Collins (WR): 9.7 yards
+  Tyrone Tracy Jr. (RB): 9.5 yards
+  Jalin Hyatt (WR): 8.6 yards
+  Devin Singletary (RB): 8.3 yards
+  Chris Manhertz (TE): 6.5 yards
+  Gunner Olszewski (WR): 1.2 yards
+  Ihmir Smith-Marsette (WR): -0.0 yards
+  Dalen Cambre (WR): -0.0 yards
+  Jordan Bly (WR): -0.0 yards
+  Montrell Washington (WR): -0.0 yards
+  Antwane Wells Jr. (WR): -0.0 yards
+  Dante Miller (RB): -0.0 yards
+  Jermaine Terry (TE): -0.0 yards
+  Thomas Fidone II (TE): -0.0 yards
 
 
 📊 GAME SUMMARY
 --------------------
-Total Props: 25
-With Predictions: 25
+Total Props: 56
+With Predictions: 56
 No Data (Rookies): 0
-Top Projection: Caleb Williams (QB) - 237.0 passing yards
+Top Projection: Caleb Williams (QB) - 230.4 passing yards
 ================================================================================
 
 ================================================================================
@@ -567,56 +902,92 @@ ARI vs SEA | Week 10 2025 | ALL PROPS
 🏈 PASSING YARDS
 ----------------------------------------
 ARI:
-  Jacoby Brissett (QB): 96.7 yards
+  Jacoby Brissett (QB): 216.9 yards
 
 SEA:
-  Sam Darnold (QB): 255.3 yards
+  Sam Darnold (QB): 252.6 yards
 
 
 🏈 RUSHING YARDS
 ----------------------------------------
 ARI:
-  Michael Carter (RB): 27.6 yards
-  Emari Demercado (RB): 22.3 yards
+  Michael Carter (RB): 26.7 yards
+  Emari Demercado (RB): 15.6 yards
   Jacoby Brissett (QB): 2.5 yards
+  Bam Knight (RB): -0.0 yards
+  Jermar Jefferson (RB): -0.0 yards
 
 SEA:
-  Kenneth Walker III (RB): 56.6 yards
-  Zach Charbonnet (RB): 34.6 yards
-  George Holani (RB): 13.4 yards
+  Kenneth Walker III (RB): 57.2 yards
+  Zach Charbonnet (RB): 33.0 yards
+  Jacardia Wright (RB): 13.0 yards
+  George Holani (RB): 10.2 yards
   Sam Darnold (QB): 2.0 yards
+  Velus Jones Jr. (RB): -0.0 yards
+  Brady Russell (RB): -0.0 yards
+  Myles Gaskin (RB): -0.0 yards
+  Robbie Ouzts (RB): -0.0 yards
+  Damien Martinez (RB): -0.0 yards
 
 
 🏈 RECEIVING YARDS
 ----------------------------------------
 ARI:
-  Marvin Harrison Jr. (WR): 53.1 yards
-  Trey McBride (TE): 46.9 yards
-  Zay Jones (WR): 36.9 yards
-  Michael Wilson (WR): 19.6 yards
-  Elijah Higgins (TE): 15.6 yards
-  Michael Carter (RB): 11.7 yards
-  Emari Demercado (RB): 7.7 yards
-  Greg Dortch (WR): 7.6 yards
-  Xavier Weaver (WR): -0.0 yards
+  Trey McBride (TE): 57.5 yards
+  Marvin Harrison Jr. (WR): 49.4 yards
+  Michael Wilson (WR): 27.6 yards
+  Zay Jones (WR): 22.9 yards
+  Michael Carter (RB): 13.4 yards
+  Elijah Higgins (TE): 12.5 yards
+  Greg Dortch (WR): 11.8 yards
+  Emari Demercado (RB): 0.9 yards
+  Xavier Weaver (WR): 0.1 yards
+  Jalen Brooks (WR): -0.0 yards
+  Simi Fehoko (WR): -0.0 yards
+  Trishton Jackson (WR): -0.0 yards
+  Tejhaun Palmer (WR): -0.0 yards
+  Bryson Green (WR): -0.0 yards
+  Nate McCollum (WR): -0.0 yards
+  Andre Baccellia (WR): -0.0 yards
+  Bam Knight (RB): -0.0 yards
+  Jermar Jefferson (RB): -0.0 yards
+  Josiah Deguara (TE): -0.0 yards
+  Pharaoh Brown (TE): -0.0 yards
+  Nick Muse (TE): -0.0 yards
+  Messiah Swinson (TE): -0.0 yards
+  Oscar Cardenas (TE): -0.0 yards
 
 SEA:
-  Jaxon Smith-Njigba (WR): 88.8 yards
-  Cooper Kupp (WR): 42.9 yards
-  AJ Barner (TE): 22.3 yards
-  Jake Bobo (WR): 9.0 yards
-  George Holani (RB): 8.8 yards
-  Zach Charbonnet (RB): 8.7 yards
-  Kenneth Walker III (RB): 5.7 yards
-  Dareke Young (WR): 5.1 yards
+  Jaxon Smith-Njigba (WR): 91.9 yards
+  Cooper Kupp (WR): 55.5 yards
+  Tory Horton (WR): 20.3 yards
+  AJ Barner (TE): 17.8 yards
+  Elijah Arroyo (TE): 17.3 yards
+  Zach Charbonnet (RB): 13.4 yards
+  Kenneth Walker III (RB): 9.1 yards
+  Dareke Young (WR): 8.3 yards
+  Jake Bobo (WR): 6.3 yards
+  George Holani (RB): 0.0 yards
+  Ricky White III (WR): -0.0 yards
+  Courtney Jackson (WR): -0.0 yards
+  Tyrone Broden (WR): -0.0 yards
+  Steven Sims (WR): -0.0 yards
+  Cody White (WR): -0.0 yards
+  Velus Jones Jr. (RB): -0.0 yards
+  Brady Russell (RB): -0.0 yards
+  Jacardia Wright (RB): -0.0 yards
+  Robbie Ouzts (RB): -0.0 yards
+  Myles Gaskin (RB): -0.0 yards
+  Damien Martinez (RB): -0.0 yards
+  Nick Kallerup (TE): -0.0 yards
 
 
 📊 GAME SUMMARY
 --------------------
-Total Props: 26
-With Predictions: 26
+Total Props: 62
+With Predictions: 62
 No Data (Rookies): 0
-Top Projection: Sam Darnold (QB) - 255.3 passing yards
+Top Projection: Sam Darnold (QB) - 252.6 passing yards
 ================================================================================
 
 ================================================================================
@@ -626,54 +997,95 @@ DET vs WAS | Week 10 2025 | ALL PROPS
 🏈 PASSING YARDS
 ----------------------------------------
 DET:
-  Jared Goff (QB): 219.4 yards
+  Jared Goff (QB): 247.9 yards
 
 WAS:
-  Marcus Mariota (QB): 159.6 yards
+  Marcus Mariota (QB): 180.0 yards
 
 
 🏈 RUSHING YARDS
 ----------------------------------------
 DET:
-  Jahmyr Gibbs (RB): 73.6 yards
-  David Montgomery (RB): 49.5 yards
-  Craig Reynolds (RB): 15.3 yards
+  Jahmyr Gibbs (RB): 71.1 yards
+  David Montgomery (RB): 51.2 yards
+  Craig Reynolds (RB): 16.5 yards
+  Jacob Saylors (RB): 12.1 yards
+  Deon Jackson (RB): -0.0 yards
+  Sione Vaki (RB): -0.0 yards
   Jared Goff (QB): -0.2 yards
 
 WAS:
+  Jacory Croskey-Merritt (RB): 40.3 yards
   Marcus Mariota (QB): 23.4 yards
-  Jeremy McNichols (RB): 13.1 yards
+  Jeremy McNichols (RB): 7.7 yards
+  Demetric Felton (RB): -0.0 yards
+  Chris Rodriguez Jr. (RB): -0.0 yards
+  Kazmeir Allen (RB): -0.0 yards
+  Donovan Edwards (RB): -0.0 yards
+  Chase Edmonds (RB): -0.0 yards
 
 
 🏈 RECEIVING YARDS
 ----------------------------------------
 DET:
-  Amon-Ra St. Brown (WR): 72.5 yards
-  Sam LaPorta (TE): 46.0 yards
-  Jameson Williams (WR): 44.0 yards
-  Jahmyr Gibbs (RB): 29.0 yards
-  David Montgomery (RB): 23.1 yards
-  Kalif Raymond (WR): 14.6 yards
-  Craig Reynolds (RB): 13.0 yards
-  Brock Wright (TE): 11.6 yards
+  Amon-Ra St. Brown (WR): 82.3 yards
+  Sam LaPorta (TE): 44.1 yards
+  Jameson Williams (WR): 35.9 yards
+  Jahmyr Gibbs (RB): 24.2 yards
+  Kalif Raymond (WR): 18.7 yards
+  David Montgomery (RB): 14.7 yards
+  Brock Wright (TE): 11.5 yards
+  Isaac TeSlaa (WR): 7.9 yards
+  Craig Reynolds (RB): 4.5 yards
+  Jackson Meeks (WR): -0.0 yards
+  Dominic Lovett (WR): -0.0 yards
+  Tom Kennedy (WR): -0.0 yards
+  Malik Taylor (WR): -0.0 yards
+  Malik Cunningham (WR): -0.0 yards
+  Jacob Saylors (RB): -0.0 yards
+  Sione Vaki (RB): -0.0 yards
+  Deon Jackson (RB): -0.0 yards
+  Steven Stilianos (TE): -0.0 yards
+  Gunnar Oakes (TE): -0.0 yards
+  Ross Dwelley (TE): -0.0 yards
+  Zach Horton (TE): -0.0 yards
+  Kenny Yeboah (TE): -0.0 yards
 
 WAS:
-  Terry McLaurin (WR): 52.4 yards
-  Jeremy McNichols (RB): 35.6 yards
-  Zach Ertz (TE): 26.4 yards
-  Ben Sinnott (TE): 13.4 yards
-  John Bates (TE): 12.9 yards
-  Treylon Burks (WR): 12.0 yards
-  Tay Martin (WR): 11.4 yards
-  Robbie Chosen (WR): 7.8 yards
+  Terry McLaurin (WR): 58.0 yards
+  Zach Ertz (TE): 35.8 yards
+  Robbie Chosen (WR): 19.1 yards
+  Chris Moore (WR): 17.6 yards
+  Jaylin Lane (WR): 16.2 yards
+  Treylon Burks (WR): 11.9 yards
+  John Bates (TE): 9.9 yards
+  Tay Martin (WR): 8.9 yards
+  Ben Sinnott (TE): 7.1 yards
+  Jeremy McNichols (RB): 2.5 yards
+  Jacory Croskey-Merritt (RB): 1.9 yards
+  K.J. Osborn (WR): -0.0 yards
+  Braylon Sanders (WR): -0.0 yards
+  Deebo Samuel Sr. (WR): -0.0 yards
+  Chase Edmonds (RB): -0.0 yards
+  Michael Gallup (WR): -0.0 yards
+  Ja'Corey Brooks (WR): -0.0 yards
+  River Cracraft (WR): -0.0 yards
+  Jacoby Jones (WR): -0.0 yards
+  Cole Turner (TE): -0.0 yards
+  Demetric Felton (RB): -0.0 yards
+  Chris Rodriguez Jr. (RB): -0.0 yards
+  Donovan Edwards (RB): -0.0 yards
+  Kazmeir Allen (RB): -0.0 yards
+  Lawrence Cager (TE): -0.0 yards
+  Colson Yankoff (TE): -0.0 yards
 
 
 📊 GAME SUMMARY
 --------------------
-Total Props: 24
-With Predictions: 24
+Total Props: 65
+With Predictions: 65
 No Data (Rookies): 0
-Top Projection: Jared Goff (QB) - 219.4 passing yards
+Top Projection: Jared Goff (QB) - 247.9 passing yards
 ================================================================================
 
 ================================================================================
@@ -683,58 +1095,91 @@ LAR vs SF | Week 10 2025 | ALL PROPS
 🏈 PASSING YARDS
 ----------------------------------------
 LAR:
-  Matthew Stafford (QB): 285.3 yards
+  Matthew Stafford (QB): 265.5 yards
 
 SF:
-  Mac Jones (QB): 264.3 yards
+  Mac Jones (QB): 232.3 yards
 
 
 🏈 RUSHING YARDS
 ----------------------------------------
 LAR:
-  Kyren Williams (RB): 81.5 yards
-  Blake Corum (RB): 34.2 yards
+  Kyren Williams (RB): 74.0 yards
+  Blake Corum (RB): 18.8 yards
+  Jordan Waters (RB): -0.0 yards
+  Jarquez Hunter (RB): -0.0 yards
+  Ronnie Rivers (RB): -0.0 yards
   Matthew Stafford (QB): -1.4 yards
 
 SF:
-  Christian McCaffrey (RB): 76.1 yards
+  Christian McCaffrey (RB): 66.3 yards
   Mac Jones (QB): 16.9 yards
-  Kyle Juszczyk (RB): -0.4 yards
+  Jordan James (RB): -0.0 yards
+  Sincere McCormick (RB): -0.0 yards
+  Brian Robinson (RB): -0.0 yards
+  Patrick Taylor (RB): -0.0 yards
+  Ke'Shawn Vaughn (RB): -0.0 yards
+  Isaac Guerendo (RB): -0.0 yards
+  Kyle Juszczyk (RB): -0.0 yards
 
 
 🏈 RECEIVING YARDS
 ----------------------------------------
 LAR:
-  Puka Nacua (WR): 100.0 yards
-  Davante Adams (WR): 64.0 yards
-  Davis Allen (TE): 21.9 yards
-  Jordan Whittington (WR): 16.8 yards
-  Tyler Higbee (TE): 16.6 yards
-  Colby Parkinson (TE): 10.0 yards
-  Xavier Smith (WR): 9.5 yards
-  Kyren Williams (RB): 1.6 yards
-  Blake Corum (RB): 0.6 yards
+  Puka Nacua (WR): 95.4 yards
+  Davante Adams (WR): 65.1 yards
+  Tyler Higbee (TE): 25.7 yards
+  Jordan Whittington (WR): 21.0 yards
+  Kyren Williams (RB): 15.1 yards
+  Terrance Ferguson (TE): 13.9 yards
+  Colby Parkinson (TE): 13.0 yards
+  Xavier Smith (WR): 8.3 yards
+  Davis Allen (TE): 7.4 yards
+  Konata Mumpfield (WR): 7.2 yards
+  Blake Corum (RB): 0.1 yards
+  Tru Edwards (WR): -0.0 yards
+  Brennan Presley (WR): -0.0 yards
+  Jarquez Hunter (RB): -0.0 yards
+  Jordan Waters (RB): -0.0 yards
+  Tyler Scott (WR): -0.0 yards
+  Drake Stoops (WR): -0.0 yards
+  Ronnie Rivers (RB): -0.0 yards
+  McCallan Castles (TE): -0.0 yards
+  Mark Redman (TE): -0.0 yards
 
 SF:
-  Ricky Pearsall (WR): 76.2 yards
-  Kendrick Bourne (WR): 58.4 yards
-  Christian McCaffrey (RB): 58.0 yards
-  George Kittle (TE): 34.1 yards
-  Jauan Jennings (WR): 27.0 yards
-  Demarcus Robinson (WR): 26.3 yards
-  Skyy Moore (WR): 13.1 yards
-  Luke Farrell (TE): 10.8 yards
-  Kyle Juszczyk (RB): 6.9 yards
-  Marquez Valdes-Scantling (WR): 3.0 yards
-  Brayden Willis (TE): 0.8 yards
+  Ricky Pearsall (WR): 49.9 yards
+  Christian McCaffrey (RB): 46.8 yards
+  George Kittle (TE): 41.9 yards
+  Jauan Jennings (WR): 35.5 yards
+  Kendrick Bourne (WR): 34.0 yards
+  Jake Tonges (TE): 30.5 yards
+  Demarcus Robinson (WR): 18.8 yards
+  Marquez Valdes-Scantling (WR): 15.9 yards
+  Malik Turner (WR): 14.7 yards
+  Kyle Juszczyk (RB): 11.6 yards
+  Jordan Watkins (WR): 11.1 yards
+  Skyy Moore (WR): 9.6 yards
+  Luke Farrell (TE): 7.8 yards
+  Brayden Willis (TE): 5.8 yards
+  Ke'Shawn Vaughn (RB): -0.0 yards
+  Patrick Taylor (RB): -0.0 yards
+  Junior Bergen (WR): -0.0 yards
+  Sincere McCormick (RB): -0.0 yards
+  Russell Gage (WR): -0.0 yards
+  Terique Owens (WR): -0.0 yards
+  Malik Knowles (WR): -0.0 yards
+  Brian Robinson (RB): -0.0 yards
+  Isaac Guerendo (RB): -0.0 yards
+  Jordan James (RB): -0.0 yards
 
 
 📊 GAME SUMMARY
 --------------------
-Total Props: 28
-With Predictions: 28
+Total Props: 61
+With Predictions: 61
 No Data (Rookies): 0
-Top Projection: Matthew Stafford (QB) - 285.3 passing yards
+Top Projection: Matthew Stafford (QB) - 265.5 passing yards
 ================================================================================
 
 ================================================================================
@@ -744,57 +1189,97 @@ LAC vs PIT | Week 10 2025 | ALL PROPS
 🏈 PASSING YARDS
 ----------------------------------------
 LAC:
-  Justin Herbert (QB): 254.1 yards
+  Justin Herbert (QB): 241.5 yards
 
 PIT:
-  Aaron Rodgers (QB): 240.4 yards
+  Aaron Rodgers (QB): 223.8 yards
 
 
 🏈 RUSHING YARDS
 ----------------------------------------
 LAC:
-  Kimani Vidal (RB): 26.7 yards
+  Kimani Vidal (RB): 29.9 yards
   Justin Herbert (QB): 24.5 yards
+  Jaret Patterson (RB): 23.6 yards
+  Nyheim Hines (RB): 5.2 yards
+  Amar Johnson (RB): -0.0 yards
+  Trayveon Williams (RB): -0.0 yards
   Scott Matlock (RB): -0.0 yards
 
 PIT:
-  Jaylen Warren (RB): 64.2 yards
-  Kenneth Gainwell (RB): 15.1 yards
+  Jaylen Warren (RB): 53.0 yards
+  Kenneth Gainwell (RB): 14.1 yards
+  Kaleb Johnson (RB): 5.2 yards
   Aaron Rodgers (QB): 2.9 yards
+  Raheem Blackshear (RB): -0.0 yards
+  Max Hurleman (RB): -0.0 yards
+  Lew Nichols III (RB): -0.0 yards
+  Trey Sermon (RB): -0.0 yards
 
 
 🏈 RECEIVING YARDS
 ----------------------------------------
 LAC:
-  Keenan Allen (WR): 74.4 yards
-  Ladd McConkey (WR): 73.7 yards
-  Quentin Johnston (WR): 63.0 yards
-  Tyler Conklin (TE): 37.9 yards
-  Tucker Fisk (TE): 12.4 yards
-  Will Dissly (TE): 11.1 yards
-  Kimani Vidal (RB): 7.2 yards
-  Scott Matlock (RB): 7.1 yards
-  Derius Davis (WR): -0.3 yards
+  Keenan Allen (WR): 67.5 yards
+  Ladd McConkey (WR): 66.4 yards
+  Oronde Gadsden II (TE): 56.5 yards
+  Quentin Johnston (WR): 37.9 yards
+  Tyler Conklin (TE): 23.3 yards
+  Will Dissly (TE): 16.9 yards
+  Tre Harris (WR): 15.1 yards
+  Nyheim Hines (RB): 11.8 yards
+  Tucker Fisk (TE): 6.1 yards
+  Kimani Vidal (RB): 3.3 yards
+  KeAndre Lambert-Smith (WR): 2.2 yards
+  Derius Davis (WR): 2.1 yards
+  Scott Matlock (RB): 1.3 yards
+  Jaret Patterson (RB): 0.4 yards
+  Mike Williams (WR): -0.0 yards
+  Jalen Reagor (WR): -0.0 yards
+  Dalevon Campbell (WR): -0.0 yards
+  JaQuae Jackson (WR): -0.0 yards
+  Luke Grimm (WR): -0.0 yards
+  Jaylen Johnson (WR): -0.0 yards
+  Brenden Rice (WR): -0.0 yards
+  Amar Johnson (RB): -0.0 yards
+  Trayveon Williams (RB): -0.0 yards
+  Thomas Yassmin (TE): -0.0 yards
+  Stevo Klotz (TE): -0.0 yards
 
 PIT:
-  DK Metcalf (WR): 64.5 yards
-  Pat Freiermuth (TE): 40.0 yards
-  Jonnu Smith (TE): 28.9 yards
-  Jaylen Warren (RB): 25.9 yards
-  Darnell Washington (TE): 21.0 yards
-  Scott Miller (WR): 20.3 yards
-  Calvin Austin III (WR): 19.5 yards
-  Connor Heyward (TE): 11.1 yards
-  Ben Skowronek (WR): 10.0 yards
-  Kenneth Gainwell (RB): 9.0 yards
+  DK Metcalf (WR): 56.2 yards
+  Pat Freiermuth (TE): 29.6 yards
+  Jonnu Smith (TE): 26.4 yards
+  Calvin Austin III (WR): 23.1 yards
+  Jaylen Warren (RB): 18.6 yards
+  Kenneth Gainwell (RB): 14.4 yards
+  Roman Wilson (WR): 12.0 yards
+  Darnell Washington (TE): 11.2 yards
+  Ben Skowronek (WR): 11.0 yards
+  Scott Miller (WR): 10.8 yards
+  Connor Heyward (TE): 6.0 yards
+  Kaleb Johnson (RB): 0.4 yards
+  Robert Woods (WR): -0.0 yards
+  Raheem Blackshear (RB): -0.0 yards
+  Lew Nichols III (RB): -0.0 yards
+  Rakim Jarrett (WR): -0.0 yards
+  Ke'Shawn Williams (WR): -0.0 yards
+  Isaiah Hodgins (WR): -0.0 yards
+  John Rhys Plumlee (WR): -0.0 yards
+  Max Hurleman (RB): -0.0 yards
+  Trey Sermon (RB): -0.0 yards
+  Matt Sokol (TE): -0.0 yards
+  Kevin Foelsch (TE): -0.0 yards
+  Donald Parham (TE): -0.0 yards
+  JJ Galbreath (TE): -0.0 yards
 
 
 📊 GAME SUMMARY
 --------------------
-Total Props: 27
-With Predictions: 27
+Total Props: 67
+With Predictions: 67
 No Data (Rookies): 0
-Top Projection: Justin Herbert (QB) - 254.1 passing yards
+Top Projection: Justin Herbert (QB) - 241.5 passing yards
 ================================================================================
 
 ================================================================================
@@ -804,57 +1289,91 @@ GB vs PHI | Week 10 2025 | ALL PROPS
 🏈 PASSING YARDS
 ----------------------------------------
 GB:
-  Jordan Love (QB): 269.3 yards
+  Jordan Love (QB): 227.0 yards
 
 PHI:
-  Jalen Hurts (QB): 247.6 yards
+  Jalen Hurts (QB): 226.5 yards
 
 
 🏈 RUSHING YARDS
 ----------------------------------------
 GB:
-  Josh Jacobs (RB): 66.7 yards
-  Emanuel Wilson (RB): 26.3 yards
+  Josh Jacobs (RB): 67.9 yards
+  Emanuel Wilson (RB): 18.3 yards
   Jordan Love (QB): 6.8 yards
-  Chris Brooks (RB): 2.2 yards
+  Chris Brooks (RB): 2.1 yards
+  Pierre Strong (RB): -0.0 yards
+  Tyrion Davis-Price (RB): -0.0 yards
+  Israel Abanikanda (RB): -0.0 yards
 
 PHI:
-  Saquon Barkley (RB): 59.5 yards
+  Saquon Barkley (RB): 72.0 yards
+  Tank Bigsby (RB): 25.9 yards
+  AJ Dillon (RB): 20.7 yards
   Jalen Hurts (QB): 14.4 yards
-  Tank Bigsby (RB): 12.2 yards
-  Will Shipley (RB): 0.9 yards
+  Will Shipley (RB): 6.0 yards
+  Montrell Johnson Jr. (RB): -0.0 yards
+  ShunDerrick Powell (RB): -0.0 yards
 
 
 🏈 RECEIVING YARDS
 ----------------------------------------
 GB:
-  Christian Watson (WR): 53.3 yards
-  Romeo Doubs (WR): 45.5 yards
-  Josh Jacobs (RB): 30.1 yards
-  Dontayvion Wicks (WR): 16.5 yards
-  Malik Heath (WR): 15.5 yards
-  Emanuel Wilson (RB): 6.8 yards
-  Luke Musgrave (TE): 5.8 yards
-  John FitzPatrick (TE): 4.7 yards
-  Chris Brooks (RB): 0.3 yards
+  Romeo Doubs (WR): 38.6 yards
+  Christian Watson (WR): 35.9 yards
+  Matthew Golden (WR): 28.4 yards
+  Dontayvion Wicks (WR): 24.4 yards
+  Josh Jacobs (RB): 19.2 yards
+  Luke Musgrave (TE): 10.3 yards
+  Malik Heath (WR): 9.9 yards
+  John FitzPatrick (TE): 4.9 yards
+  Savion Williams (WR): 2.0 yards
+  Emanuel Wilson (RB): 1.9 yards
+  Chris Brooks (RB): 1.7 yards
+  Kawaan Baker (WR): -0.0 yards
+  Mecole Hardman (WR): -0.0 yards
+  Will Sheppard (WR): -0.0 yards
+  Julian Hicks (WR): -0.0 yards
+  Jakobie Keeney-James (WR): -0.0 yards
+  Isaiah Neyor (WR): -0.0 yards
+  Pierre Strong (RB): -0.0 yards
+  Tyrion Davis-Price (RB): -0.0 yards
+  Israel Abanikanda (RB): -0.0 yards
+  Josh Whyle (TE): -0.0 yards
+  Johnny Lumpkin (TE): -0.0 yards
 
 PHI:
-  DeVonta Smith (WR): 63.8 yards
-  Dallas Goedert (TE): 57.6 yards
-  A.J. Brown (WR): 52.0 yards
-  Saquon Barkley (RB): 30.9 yards
-  Jahan Dotson (WR): 15.8 yards
-  Grant Calcaterra (TE): 12.5 yards
-  Kylen Granson (TE): 3.7 yards
-  Will Shipley (RB): 1.2 yards
-  Xavier Gipson (WR): 0.4 yards
-  Tank Bigsby (RB): 0.4 yards
+  A.J. Brown (WR): 68.1 yards
+  DeVonta Smith (WR): 59.6 yards
+  Dallas Goedert (TE): 44.2 yards
+  Saquon Barkley (RB): 18.0 yards
+  Jahan Dotson (WR): 17.3 yards
+  Grant Calcaterra (TE): 15.7 yards
+  Kylen Granson (TE): 15.5 yards
+  AJ Dillon (RB): 11.9 yards
+  Xavier Gipson (WR): 2.9 yards
+  Javon Baker (WR): -0.0 yards
+  Elijah Cooks (WR): -0.0 yards
+  Danny Gray (WR): -0.0 yards
+  Terrace Marshall Jr. (WR): -0.0 yards
+  Taylor Morin (WR): -0.0 yards
+  Darius Cooper (WR): -0.0 yards
+  Ife Adeyi (WR): -0.0 yards
+  Quez Watkins (WR): -0.0 yards
+  Britain Covey (WR): -0.0 yards
+  Montrell Johnson Jr. (RB): -0.0 yards
+  Cameron Latu (TE): -0.0 yards
+  ShunDerrick Powell (RB): -0.0 yards
+  E.J. Jenkins (TE): -0.0 yards
+  Jaheim Bell (TE): -0.0 yards
+  Will Shipley (RB): -0.0 yards
+  Tank Bigsby (RB): -0.1 yards
 
 
 📊 GAME SUMMARY
 --------------------
-Total Props: 29
-With Predictions: 29
+Total Props: 63
+With Predictions: 63
 No Data (Rookies): 0
-Top Projection: Jordan Love (QB) - 269.3 passing yards
+Top Projection: Jordan Love (QB) - 227.0 passing yards
 ================================================================================

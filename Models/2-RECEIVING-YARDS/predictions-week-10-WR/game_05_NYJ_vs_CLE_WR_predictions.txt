@@ -2,18 +2,26 @@
 NYJ vs CLE | Week 10 2025 | Projected Receiving Yards
 ================================================================================
 
-+-----------------+--------------+    +----------------+--------------+
-| NYJ Player      |   Pred Yards |    | CLE Player     |   Pred Yards |
-+=================+==============+    +================+==============+
-| Garrett Wilson  |         64.7 |    | Jerry Jeudy    |         34.6 |
-| Tyler Johnson   |         26.4 |    | Malachi Corley |         13.4 |
-| Allen Lazard    |         14.2 |    | Jamari Thrash  |          9.6 |
-| Isaiah Williams |          5.6 |    +----------------+--------------+
-+-----------------+--------------+    
++------------------+--------------+    +-----------------+--------------+
+| NYJ Player       |   Pred Yards |    | CLE Player      |   Pred Yards |
++==================+==============+    +=================+==============+
+| Garrett Wilson   |         62.8 |    | Jerry Jeudy     |         49.9 |
+| Allen Lazard     |         23   |    | Isaiah Bond     |         16.2 |
+| Isaiah Williams  |         18.6 |    | Jamari Thrash   |          8.5 |
+| Tyler Johnson    |         15.5 |    | Gage Larvadain  |          3.6 |
+| Arian Smith      |          5.9 |    | Malachi Corley  |          1.2 |
+| Pokey Wilson     |         -0   |    | Diontae Johnson |         -0   |
+| John Metchie III |         -0   |    | Chase Cota      |         -0   |
+| Brandon Smith    |         -0   |    | Kaden Davis     |         -0   |
+| Trenton Irwin    |         -0   |    | David Bell      |         -0   |
+| Dymere Miller    |         -0   |    | Cade McDonald   |         -0   |
+| Jamaal Pritchett |         -0   |    | Kisean Johnson  |         -0   |
+| Quentin Skinner  |         -0   |    | Luke Floriea    |         -0   |
++------------------+--------------+    +-----------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total WRs: 7 (4 NYJ, 3 CLE)
-Top Projection: Garrett Wilson (NYJ) - 64.7 yards
+Total WRs: 24 (12 NYJ, 12 CLE)
+Top Projection: Garrett Wilson (NYJ) - 62.8 yards
 ================================================================================

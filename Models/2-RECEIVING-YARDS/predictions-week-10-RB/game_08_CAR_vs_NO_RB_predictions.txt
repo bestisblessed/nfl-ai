@@ -2,17 +2,21 @@
 CAR vs NO | Week 10 2025 | RB Projected Receiving Yards
 ================================================================================
 
-+---------------+--------------+    +--------------+--------------+
-| CAR Player    |   Pred Yards |    | NO Player    |   Pred Yards |
-+===============+==============+    +==============+==============+
-| Rico Dowdle   |         17.3 |    | Alvin Kamara |         28.5 |
-| Chuba Hubbard |          5.1 |    +--------------+--------------+
-| DeeJay Dallas |          3.9 |    
-+---------------+--------------+    
++--------------------+--------------+    +---------------+--------------+
+| CAR Player         |   Pred Yards |    | NO Player     |   Pred Yards |
++====================+==============+    +===============+==============+
+| Chuba Hubbard      |         11.6 |    | Alvin Kamara  |         27   |
+| Rico Dowdle        |          9.4 |    | Devin Neal    |          1.1 |
+| Trevor Etienne     |          4.2 |    | Audric Estimé |         -0   |
+| DeeJay Dallas      |          2.8 |    | Evan Hull     |         -0   |
+| Kayron Lynch-Adams |         -0   |    | Marcus Yarns  |         -0   |
+| Emani Bailey       |         -0   |    +---------------+--------------+
+| Anthony Tyus III   |         -0   |    
++--------------------+--------------+    
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total RBs: 4 (3 CAR, 1 NO)
-Top Projection: Alvin Kamara (NO) - 28.5 yards
+Total RBs: 12 (7 CAR, 5 NO)
+Top Projection: Alvin Kamara (NO) - 27.0 yards
 ================================================================================

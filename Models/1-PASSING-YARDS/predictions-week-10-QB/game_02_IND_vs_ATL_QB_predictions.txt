@@ -5,12 +5,12 @@ IND vs ATL | Week 10 2025 | QB Projected Passing Yards
 +--------------+--------------+    +-------------------+--------------+
 | IND Player   |   Pred Yards |    | ATL Player        |   Pred Yards |
 +==============+==============+    +===================+==============+
-| Daniel Jones |        245.5 |    | Michael Penix Jr. |        273.8 |
+| Daniel Jones |        237.4 |    | Michael Penix Jr. |        221.9 |
 +--------------+--------------+    +-------------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total QBs: 2 (1 IND, 1 ATL)
-Top Projection: Michael Penix Jr. (ATL) - 273.8 yards
+Top Projection: Daniel Jones (IND) - 237.4 yards
 ================================================================================

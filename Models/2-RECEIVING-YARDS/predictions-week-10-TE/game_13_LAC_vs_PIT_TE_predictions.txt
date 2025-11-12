@@ -2,18 +2,22 @@
 LAC vs PIT | Week 10 2025 | TE Projected Receiving Yards
 ================================================================================
 
-+---------------+--------------+    +--------------------+--------------+
-| LAC Player    |   Pred Yards |    | PIT Player         |   Pred Yards |
-+===============+==============+    +====================+==============+
-| Tyler Conklin |         37.9 |    | Pat Freiermuth     |         40   |
-| Tucker Fisk   |         12.4 |    | Jonnu Smith        |         28.9 |
-| Will Dissly   |         11.1 |    | Darnell Washington |         21   |
-+---------------+--------------+    | Connor Heyward     |         11.1 |
-                                    +--------------------+--------------+
++-------------------+--------------+    +--------------------+--------------+
+| LAC Player        |   Pred Yards |    | PIT Player         |   Pred Yards |
++===================+==============+    +====================+==============+
+| Oronde Gadsden II |         56.5 |    | Pat Freiermuth     |         29.6 |
+| Tyler Conklin     |         23.3 |    | Jonnu Smith        |         26.4 |
+| Will Dissly       |         16.9 |    | Darnell Washington |         11.2 |
+| Tucker Fisk       |          6.1 |    | Connor Heyward     |          6   |
+| Thomas Yassmin    |         -0   |    | Matt Sokol         |         -0   |
+| Stevo Klotz       |         -0   |    | Kevin Foelsch      |         -0   |
++-------------------+--------------+    | Donald Parham      |         -0   |
+                                        | JJ Galbreath       |         -0   |
+                                        +--------------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total TEs: 7 (3 LAC, 4 PIT)
-Top Projection: Pat Freiermuth (PIT) - 40.0 yards
+Total TEs: 14 (6 LAC, 8 PIT)
+Top Projection: Oronde Gadsden II (LAC) - 56.5 yards
 ================================================================================

@@ -2,20 +2,30 @@
 MIA vs BUF | Week 10 2025 | Projected Receiving Yards
 ================================================================================
 
-+-----------------------+--------------+    +----------------+--------------+
-| MIA Player            |   Pred Yards |    | BUF Player     |   Pred Yards |
-+=======================+==============+    +================+==============+
-| Jaylen Waddle         |         64.9 |    | Khalil Shakir  |         53.8 |
-| Malik Washington      |         27.1 |    | Josh Palmer    |         26.9 |
-| Nick Westbrook-Ikhine |         12.9 |    | Keon Coleman   |         22.1 |
-| Cedrick Wilson Jr.    |          9.8 |    | Elijah Moore   |         15.7 |
-+-----------------------+--------------+    | Curtis Samuel  |         15.6 |
-                                            | Tyrell Shavers |          9.3 |
-                                            +----------------+--------------+
++-----------------------+--------------+    +----------------------+--------------+
+| MIA Player            |   Pred Yards |    | BUF Player           |   Pred Yards |
++=======================+==============+    +======================+==============+
+| Jaylen Waddle         |         61.5 |    | Khalil Shakir        |         45.1 |
+| Cedrick Wilson Jr.    |         19.4 |    | Josh Palmer          |         31.6 |
+| Malik Washington      |         18.4 |    | Keon Coleman         |         27.6 |
+| Nick Westbrook-Ikhine |         18.3 |    | Curtis Samuel        |         19.5 |
+| Tahj Washington       |         15.5 |    | Elijah Moore         |         19.1 |
+| Dee Eskridge          |         -0   |    | Tyrell Shavers       |         16.3 |
+| Andrew Armstrong      |         -0   |    | Kristian Wilkerson   |         -0   |
+| A.J. Henning          |         -0   |    | Deon Cain            |         -0   |
+| Theo Wease Jr.        |         -0   |    | Gabe Davis           |         -0   |
++-----------------------+--------------+    | Grant DuBose         |         -0   |
+                                            | Laviska Shenault Jr. |         -0   |
+                                            | KJ Hamler            |         -0   |
+                                            | Jalen Virgil         |         -0   |
+                                            | Stephen Gosnell      |         -0   |
+                                            | Kaden Prather        |         -0   |
+                                            | David White          |         -0   |
+                                            +----------------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total WRs: 10 (4 MIA, 6 BUF)
-Top Projection: Jaylen Waddle (MIA) - 64.9 yards
+Total WRs: 25 (9 MIA, 16 BUF)
+Top Projection: Jaylen Waddle (MIA) - 61.5 yards
 ================================================================================

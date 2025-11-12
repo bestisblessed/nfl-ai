@@ -48,7 +48,7 @@ def load_data():
         df_team_game_logs = pd.read_csv(os.path.join(current_dir, '../data', 'all_team_game_logs.csv'))
         df_schedule_and_game_results = pd.read_csv(os.path.join(current_dir, '../data', 'all_teams_schedule_and_game_results_merged.csv'))
         # Add the detailed passing/rushing/receiving data for 2025 trends
-        df_all_passing_rushing_receiving = pd.read_csv(os.path.join(current_dir, '../data', 'all_passing_rushing_receiving.csv'))
+        df_all_passing_rushing_receiving = pd.read_csv(os.path.join(current_dir, '../data', 'player_stats_pfr.csv'))
         
         return df_teams, df_games, df_playerstats, df_team_game_logs, df_schedule_and_game_results, df_all_passing_rushing_receiving
     except FileNotFoundError as e:

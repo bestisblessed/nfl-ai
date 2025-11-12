@@ -30,7 +30,7 @@ csv_file_path_teams = os.path.join(BASE_DIR, 'data/Teams.csv')
 csv_file_path_games = os.path.join(BASE_DIR, 'data/Games.csv')
 csv_file_path_playerstats = os.path.join(BASE_DIR, 'data/PlayerStats.csv')
 csv_file_path_schedule_and_game_results = os.path.join(BASE_DIR, 'data/all_teams_schedule_and_game_results_merged.csv')
-csv_file_path_all_passing_rushing_receiving = os.path.join(BASE_DIR, 'data/all_passing_rushing_receiving.csv')
+csv_file_path_all_passing_rushing_receiving = os.path.join(BASE_DIR, 'data/player_stats_pfr.csv')
 
 try:
     df_all_team_game_logs = pd.read_csv(csv_file_path_all_team_game_logs)

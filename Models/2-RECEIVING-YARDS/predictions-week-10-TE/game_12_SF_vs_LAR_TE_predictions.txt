@@ -2,17 +2,20 @@
 SF vs LAR | Week 10 2025 | TE Projected Receiving Yards
 ================================================================================
 
-+----------------+--------------+    +-----------------+--------------+
-| SF Player      |   Pred Yards |    | LAR Player      |   Pred Yards |
-+================+==============+    +=================+==============+
-| George Kittle  |         34.1 |    | Davis Allen     |         21.9 |
-| Luke Farrell   |         10.8 |    | Tyler Higbee    |         16.6 |
-| Brayden Willis |          0.8 |    | Colby Parkinson |         10   |
-+----------------+--------------+    +-----------------+--------------+
++----------------+--------------+    +-------------------+--------------+
+| SF Player      |   Pred Yards |    | LAR Player        |   Pred Yards |
++================+==============+    +===================+==============+
+| George Kittle  |         41.9 |    | Tyler Higbee      |         25.7 |
+| Jake Tonges    |         30.5 |    | Terrance Ferguson |         13.9 |
+| Luke Farrell   |          7.8 |    | Colby Parkinson   |         13   |
+| Brayden Willis |          5.8 |    | Davis Allen       |          7.4 |
++----------------+--------------+    | McCallan Castles  |         -0   |
+                                     | Mark Redman       |         -0   |
+                                     +-------------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total TEs: 6 (3 SF, 3 LAR)
-Top Projection: George Kittle (SF) - 34.1 yards
+Total TEs: 10 (4 SF, 6 LAR)
+Top Projection: George Kittle (SF) - 41.9 yards
 ================================================================================

@@ -2,16 +2,21 @@
 LAC vs PIT | Week 10 2025 | RB Projected Rushing Yards
 ================================================================================
 
-+---------------+--------------+    +------------------+--------------+
-| LAC Player    |   Pred Yards |    | PIT Player       |   Pred Yards |
-+===============+==============+    +==================+==============+
-| Kimani Vidal  |         26.7 |    | Jaylen Warren    |         64.2 |
-| Scott Matlock |         -0   |    | Kenneth Gainwell |         15.1 |
-+---------------+--------------+    +------------------+--------------+
++-------------------+--------------+    +-------------------+--------------+
+| LAC Player        |   Pred Yards |    | PIT Player        |   Pred Yards |
++===================+==============+    +===================+==============+
+| Kimani Vidal      |         29.9 |    | Jaylen Warren     |         53   |
+| Jaret Patterson   |         23.6 |    | Kenneth Gainwell  |         14.1 |
+| Nyheim Hines      |          5.2 |    | Kaleb Johnson     |          5.2 |
+| Amar Johnson      |         -0   |    | Lew Nichols III   |         -0   |
+| Scott Matlock     |         -0   |    | Raheem Blackshear |         -0   |
+| Trayveon Williams |         -0   |    | Trey Sermon       |         -0   |
++-------------------+--------------+    | Max Hurleman      |         -0   |
+                                        +-------------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total RBs: 4 (2 LAC, 2 PIT)
-Top Projection: Jaylen Warren (PIT) - 64.2 yards
+Total RBs: 13 (6 LAC, 7 PIT)
+Top Projection: Jaylen Warren (PIT) - 53.0 yards
 ================================================================================

@@ -2,19 +2,26 @@
 CHI vs NYG | Week 10 2025 | Projected Receiving Yards
 ================================================================================
 
-+-------------------+--------------+    +---------------------+--------------+
-| CHI Player        |   Pred Yards |    | NYG Player          |   Pred Yards |
-+===================+==============+    +=====================+==============+
-| DJ Moore          |         67.6 |    | Wan'Dale Robinson   |         44.3 |
-| Rome Odunze       |         65.2 |    | Lil'Jordan Humphrey |         37.5 |
-| Olamide Zaccheaus |         21.6 |    | Darius Slayton      |         34.2 |
-| Devin Duvernay    |          5.1 |    | Jalin Hyatt         |         15.1 |
-+-------------------+--------------+    | Ray-Ray McCloud     |          7.6 |
-                                        +---------------------+--------------+
++-------------------+--------------+    +----------------------+--------------+
+| CHI Player        |   Pred Yards |    | NYG Player           |   Pred Yards |
++===================+==============+    +======================+==============+
+| DJ Moore          |         57.7 |    | Wan'Dale Robinson    |         46   |
+| Rome Odunze       |         46.3 |    | Darius Slayton       |         31.2 |
+| Olamide Zaccheaus |         24.2 |    | Ray-Ray McCloud      |         17.9 |
+| Devin Duvernay    |         10.7 |    | Lil'Jordan Humphrey  |         16.4 |
+| Jahdae Walker     |         -0   |    | Beaux Collins        |          9.7 |
+| Luther Burden III |         -0   |    | Jalin Hyatt          |          8.6 |
+| JP Richardson     |         -0   |    | Gunner Olszewski     |          1.2 |
+| Maurice Alexander |         -0   |    | Dalen Cambre         |         -0   |
+| Miles Boykin      |         -0   |    | Ihmir Smith-Marsette |         -0   |
++-------------------+--------------+    | Montrell Washington  |         -0   |
+                                        | Jordan Bly           |         -0   |
+                                        | Antwane Wells Jr.    |         -0   |
+                                        +----------------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total WRs: 9 (4 CHI, 5 NYG)
-Top Projection: DJ Moore (CHI) - 67.6 yards
+Total WRs: 21 (9 CHI, 12 NYG)
+Top Projection: DJ Moore (CHI) - 57.7 yards
 ================================================================================

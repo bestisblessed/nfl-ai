@@ -5,16 +5,23 @@ SEA vs ARI | Week 10 2025 | Projected Receiving Yards
 +--------------------+--------------+    +---------------------+--------------+
 | SEA Player         |   Pred Yards |    | ARI Player          |   Pred Yards |
 +====================+==============+    +=====================+==============+
-| Jaxon Smith-Njigba |         88.8 |    | Marvin Harrison Jr. |         53.1 |
-| Cooper Kupp        |         42.9 |    | Zay Jones           |         36.9 |
-| Jake Bobo          |          9   |    | Michael Wilson      |         19.6 |
-| Dareke Young       |          5.1 |    | Greg Dortch         |          7.6 |
-+--------------------+--------------+    | Xavier Weaver       |         -0   |
+| Jaxon Smith-Njigba |         91.9 |    | Marvin Harrison Jr. |         49.4 |
+| Cooper Kupp        |         55.5 |    | Michael Wilson      |         27.6 |
+| Tory Horton        |         20.3 |    | Zay Jones           |         22.9 |
+| Dareke Young       |          8.3 |    | Greg Dortch         |         11.8 |
+| Jake Bobo          |          6.3 |    | Xavier Weaver       |          0.1 |
+| Ricky White III    |         -0   |    | Bryson Green        |         -0   |
+| Courtney Jackson   |         -0   |    | Andre Baccellia     |         -0   |
+| Tyrone Broden      |         -0   |    | Trishton Jackson    |         -0   |
+| Steven Sims        |         -0   |    | Simi Fehoko         |         -0   |
+| Cody White         |         -0   |    | Jalen Brooks        |         -0   |
++--------------------+--------------+    | Tejhaun Palmer      |         -0   |
+                                         | Nate McCollum       |         -0   |
                                          +---------------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total WRs: 9 (4 SEA, 5 ARI)
-Top Projection: Jaxon Smith-Njigba (SEA) - 88.8 yards
+Total WRs: 22 (10 SEA, 12 ARI)
+Top Projection: Jaxon Smith-Njigba (SEA) - 91.9 yards
 ================================================================================

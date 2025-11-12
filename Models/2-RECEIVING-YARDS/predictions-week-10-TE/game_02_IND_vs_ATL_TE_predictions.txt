@@ -2,17 +2,20 @@
 IND vs ATL | Week 10 2025 | TE Projected Receiving Yards
 ================================================================================
 
-+-----------------+--------------+    +-----------------+--------------+
-| IND Player      |   Pred Yards |    | ATL Player      |   Pred Yards |
-+=================+==============+    +=================+==============+
-| Mo Alie-Cox     |         13.4 |    | Kyle Pitts      |         31.2 |
-| Andrew Ogletree |          3.6 |    | Charlie Woerner |          1.6 |
-+-----------------+--------------+    | Feleipe Franks  |          0.5 |
-                                      +-----------------+--------------+
++-----------------+--------------+    +-------------------+--------------+
+| IND Player      |   Pred Yards |    | ATL Player        |   Pred Yards |
++=================+==============+    +===================+==============+
+| Tyler Warren    |         57.6 |    | Kyle Pitts        |         40.5 |
+| Mo Alie-Cox     |         10.9 |    | Charlie Woerner   |          3.4 |
+| Andrew Ogletree |          8.5 |    | Joshua Simon      |         -0   |
+| Will Mallory    |         -0   |    | Teagan Quitoriano |         -0   |
+| Sean McKeon     |         -0   |    | Feleipe Franks    |         -0   |
+| Maximilian Mang |         -0   |    +-------------------+--------------+
++-----------------+--------------+    
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total TEs: 5 (2 IND, 3 ATL)
-Top Projection: Kyle Pitts (ATL) - 31.2 yards
+Total TEs: 11 (6 IND, 5 ATL)
+Top Projection: Tyler Warren (IND) - 57.6 yards
 ================================================================================

@@ -135,7 +135,7 @@ def fetch_next_opponent(player_name):
 
 # Get player's longest reception stats
 def get_player_longest_reception_stats(player_name, opponent_team=None):
-    all_stats_df = pd.read_csv('data/all_passing_rushing_receiving.csv')
+    all_stats_df = pd.read_csv('data/player_stats_pfr.csv')
 
     player_data = all_stats_df[all_stats_df['player'] == player_name]
 

@@ -5,12 +5,12 @@ SEA vs ARI | Week 10 2025 | QB Projected Passing Yards
 +--------------+--------------+    +-----------------+--------------+
 | SEA Player   |   Pred Yards |    | ARI Player      |   Pred Yards |
 +==============+==============+    +=================+==============+
-| Sam Darnold  |        255.3 |    | Jacoby Brissett |         96.7 |
+| Sam Darnold  |        252.6 |    | Jacoby Brissett |        216.9 |
 +--------------+--------------+    +-----------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total QBs: 2 (1 SEA, 1 ARI)
-Top Projection: Sam Darnold (SEA) - 255.3 yards
+Top Projection: Sam Darnold (SEA) - 252.6 yards
 ================================================================================

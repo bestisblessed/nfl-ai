@@ -5,14 +5,17 @@ GB vs PHI | Week 10 2025 | TE Projected Receiving Yards
 +------------------+--------------+    +------------------+--------------+
 | GB Player        |   Pred Yards |    | PHI Player       |   Pred Yards |
 +==================+==============+    +==================+==============+
-| Luke Musgrave    |          5.8 |    | Dallas Goedert   |         57.6 |
-| John FitzPatrick |          4.7 |    | Grant Calcaterra |         12.5 |
-+------------------+--------------+    | Kylen Granson    |          3.7 |
+| Luke Musgrave    |         10.3 |    | Dallas Goedert   |         44.2 |
+| John FitzPatrick |          4.9 |    | Grant Calcaterra |         15.7 |
+| Johnny Lumpkin   |         -0   |    | Kylen Granson    |         15.5 |
+| Josh Whyle       |         -0   |    | Cameron Latu     |         -0   |
++------------------+--------------+    | E.J. Jenkins     |         -0   |
+                                       | Jaheim Bell      |         -0   |
                                        +------------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total TEs: 5 (2 GB, 3 PHI)
-Top Projection: Dallas Goedert (PHI) - 57.6 yards
+Total TEs: 10 (4 GB, 6 PHI)
+Top Projection: Dallas Goedert (PHI) - 44.2 yards
 ================================================================================

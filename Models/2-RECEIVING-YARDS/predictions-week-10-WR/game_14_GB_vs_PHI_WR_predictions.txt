@@ -2,18 +2,27 @@
 GB vs PHI | Week 10 2025 | Projected Receiving Yards
 ================================================================================
 
-+------------------+--------------+    +---------------+--------------+
-| GB Player        |   Pred Yards |    | PHI Player    |   Pred Yards |
-+==================+==============+    +===============+==============+
-| Christian Watson |         53.3 |    | DeVonta Smith |         63.8 |
-| Romeo Doubs      |         45.5 |    | A.J. Brown    |         52   |
-| Dontayvion Wicks |         16.5 |    | Jahan Dotson  |         15.8 |
-| Malik Heath      |         15.5 |    | Xavier Gipson |          0.4 |
-+------------------+--------------+    +---------------+--------------+
++----------------------+--------------+    +----------------------+--------------+
+| GB Player            |   Pred Yards |    | PHI Player           |   Pred Yards |
++======================+==============+    +======================+==============+
+| Romeo Doubs          |         38.6 |    | A.J. Brown           |         68.1 |
+| Christian Watson     |         35.9 |    | DeVonta Smith        |         59.6 |
+| Matthew Golden       |         28.4 |    | Jahan Dotson         |         17.3 |
+| Dontayvion Wicks     |         24.4 |    | Xavier Gipson        |          2.9 |
+| Malik Heath          |          9.9 |    | Javon Baker          |         -0   |
+| Savion Williams      |          2   |    | Danny Gray           |         -0   |
+| Mecole Hardman       |         -0   |    | Elijah Cooks         |         -0   |
+| Kawaan Baker         |         -0   |    | Quez Watkins         |         -0   |
+| Julian Hicks         |         -0   |    | Britain Covey        |         -0   |
+| Isaiah Neyor         |         -0   |    | Terrace Marshall Jr. |         -0   |
+| Jakobie Keeney-James |         -0   |    | Taylor Morin         |         -0   |
+| Will Sheppard        |         -0   |    | Darius Cooper        |         -0   |
++----------------------+--------------+    | Ife Adeyi            |         -0   |
+                                           +----------------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total WRs: 8 (4 GB, 4 PHI)
-Top Projection: DeVonta Smith (PHI) - 63.8 yards
+Total WRs: 25 (12 GB, 13 PHI)
+Top Projection: A.J. Brown (PHI) - 68.1 yards
 ================================================================================

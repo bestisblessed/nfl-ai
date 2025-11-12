@@ -5,12 +5,12 @@ MIN vs BAL | Week 10 2025 | QB Projected Passing Yards
 +---------------+--------------+    +---------------+--------------+
 | MIN Player    |   Pred Yards |    | BAL Player    |   Pred Yards |
 +===============+==============+    +===============+==============+
-| J.J. McCarthy |        151.5 |    | Lamar Jackson |        214.1 |
+| J.J. McCarthy |          155 |    | Lamar Jackson |        218.1 |
 +---------------+--------------+    +---------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total QBs: 2 (1 MIN, 1 BAL)
-Top Projection: Lamar Jackson (BAL) - 214.1 yards
+Top Projection: Lamar Jackson (BAL) - 218.1 yards
 ================================================================================

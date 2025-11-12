@@ -2,16 +2,21 @@
 CAR vs NO | Week 10 2025 | TE Projected Receiving Yards
 ================================================================================
 
-+-------------------+--------------+    +---------------+--------------+
-| CAR Player        |   Pred Yards |    | NO Player     |   Pred Yards |
-+===================+==============+    +===============+==============+
-| Tommy Tremble     |         20.5 |    | Juwan Johnson |         31.2 |
-| Ja'Tavion Sanders |          9.5 |    | Foster Moreau |         25.2 |
-+-------------------+--------------+    +---------------+--------------+
++-------------------+--------------+    +----------------------+--------------+
+| CAR Player        |   Pred Yards |    | NO Player            |   Pred Yards |
++===================+==============+    +======================+==============+
+| Mitchell Evans    |         14.6 |    | Juwan Johnson        |         29.8 |
+| Ja'Tavion Sanders |         13.9 |    | Foster Moreau        |         21.3 |
+| Tommy Tremble     |         13   |    | Zaire Mitchell-Paden |          7.5 |
+| James Mitchell    |          8.6 |    | Moliki Matavao       |         -0   |
+| Bryce Pierre      |         -0   |    | Michael Jacobson     |         -0   |
+| Dominique Dafney  |         -0   |    | Seth Green           |         -0   |
+| Tyler Mabry       |         -0   |    | Treyton Welch        |         -0   |
++-------------------+--------------+    +----------------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total TEs: 4 (2 CAR, 2 NO)
-Top Projection: Juwan Johnson (NO) - 31.2 yards
+Total TEs: 14 (7 CAR, 7 NO)
+Top Projection: Juwan Johnson (NO) - 29.8 yards
 ================================================================================

@@ -2,17 +2,22 @@
 NYJ vs CLE | Week 10 2025 | RB Projected Receiving Yards
 ================================================================================
 
-+--------------+--------------+    +--------------+--------------+
-| NYJ Player   |   Pred Yards |    | CLE Player   |   Pred Yards |
-+==============+==============+    +==============+==============+
-| Breece Hall  |         26.9 |    | Jerome Ford  |         14.4 |
-| Isaiah Davis |          7.8 |    +--------------+--------------+
-| Andrew Beck  |          4.5 |    
-+--------------+--------------+    
++------------------+--------------+    +------------------+--------------+
+| NYJ Player       |   Pred Yards |    | CLE Player       |   Pred Yards |
++==================+==============+    +==================+==============+
+| Breece Hall      |         19   |    | Jerome Ford      |         15.3 |
+| Isaiah Davis     |          8.6 |    | Quinshon Judkins |         14.4 |
+| Andrew Beck      |          3.7 |    | Dylan Sampson    |          9.3 |
+| Lawrance Toafili |         -0   |    | Ahmani Marshall  |         -0   |
+| Kene Nwangwu     |         -0   |    | Raheim Sanders   |         -0   |
+| Avery Williams   |         -0   |    +------------------+--------------+
+| Khalil Herbert   |         -0   |    
+| Keilan Robinson  |         -0   |    
++------------------+--------------+    
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total RBs: 4 (3 NYJ, 1 CLE)
-Top Projection: Breece Hall (NYJ) - 26.9 yards
+Total RBs: 13 (8 NYJ, 5 CLE)
+Top Projection: Breece Hall (NYJ) - 19.0 yards
 ================================================================================

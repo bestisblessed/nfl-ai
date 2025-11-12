@@ -2,18 +2,27 @@
 LAC vs PIT | Week 10 2025 | Projected Receiving Yards
 ================================================================================
 
-+------------------+--------------+    +-------------------+--------------+
-| LAC Player       |   Pred Yards |    | PIT Player        |   Pred Yards |
-+==================+==============+    +===================+==============+
-| Keenan Allen     |         74.4 |    | DK Metcalf        |         64.5 |
-| Ladd McConkey    |         73.7 |    | Scott Miller      |         20.3 |
-| Quentin Johnston |         63   |    | Calvin Austin III |         19.5 |
-| Derius Davis     |         -0.3 |    | Ben Skowronek     |         10   |
-+------------------+--------------+    +-------------------+--------------+
++-----------------------+--------------+    +-------------------+--------------+
+| LAC Player            |   Pred Yards |    | PIT Player        |   Pred Yards |
++=======================+==============+    +===================+==============+
+| Keenan Allen          |         67.5 |    | DK Metcalf        |         56.2 |
+| Ladd McConkey         |         66.4 |    | Calvin Austin III |         23.1 |
+| Quentin Johnston      |         37.9 |    | Roman Wilson      |         12   |
+| Tre Harris            |         15.1 |    | Ben Skowronek     |         11   |
+| KeAndre Lambert-Smith |          2.2 |    | Scott Miller      |         10.8 |
+| Derius Davis          |          2.1 |    | Robert Woods      |         -0   |
+| Brenden Rice          |         -0   |    | Isaiah Hodgins    |         -0   |
+| Jaylen Johnson        |         -0   |    | Ke'Shawn Williams |         -0   |
+| Luke Grimm            |         -0   |    | Rakim Jarrett     |         -0   |
+| JaQuae Jackson        |         -0   |    | John Rhys Plumlee |         -0   |
+| Dalevon Campbell      |         -0   |    +-------------------+--------------+
+| Jalen Reagor          |         -0   |    
+| Mike Williams         |         -0   |    
++-----------------------+--------------+    
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total WRs: 8 (4 LAC, 4 PIT)
-Top Projection: Keenan Allen (LAC) - 74.4 yards
+Total WRs: 23 (13 LAC, 10 PIT)
+Top Projection: Keenan Allen (LAC) - 67.5 yards
 ================================================================================

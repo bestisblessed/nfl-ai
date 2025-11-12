@@ -2,17 +2,20 @@
 CHI vs NYG | Week 10 2025 | TE Projected Receiving Yards
 ================================================================================
 
-+--------------+--------------+    +------------------+--------------+
-| CHI Player   |   Pred Yards |    | NYG Player       |   Pred Yards |
-+==============+==============+    +==================+==============+
-| Cole Kmet    |           30 |    | Theo Johnson     |         36.2 |
-+--------------+--------------+    | Daniel Bellinger |         22.8 |
-                                   | Chris Manhertz   |          7   |
-                                   +------------------+--------------+
++------------------+--------------+    +------------------+--------------+
+| CHI Player       |   Pred Yards |    | NYG Player       |   Pred Yards |
++==================+==============+    +==================+==============+
+| Cole Kmet        |         22.3 |    | Theo Johnson     |         29.9 |
+| Colston Loveland |         18.6 |    | Daniel Bellinger |         16.6 |
+| Thomas Gordon    |         -0   |    | Chris Manhertz   |          6.5 |
+| Nikola Kalinic   |         -0   |    | Jermaine Terry   |         -0   |
+| Stephen Carlson  |         -0   |    | Thomas Fidone II |         -0   |
+| Durham Smythe    |         -0   |    +------------------+--------------+
++------------------+--------------+    
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total TEs: 4 (1 CHI, 3 NYG)
-Top Projection: Theo Johnson (NYG) - 36.2 yards
+Total TEs: 11 (6 CHI, 5 NYG)
+Top Projection: Theo Johnson (NYG) - 29.9 yards
 ================================================================================

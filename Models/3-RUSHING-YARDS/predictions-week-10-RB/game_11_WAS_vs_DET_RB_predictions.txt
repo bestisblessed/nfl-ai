@@ -2,17 +2,21 @@
 WAS vs DET | Week 10 2025 | RB Projected Rushing Yards
 ================================================================================
 
-+------------------+--------------+    +------------------+--------------+
-| WAS Player       |   Pred Yards |    | DET Player       |   Pred Yards |
-+==================+==============+    +==================+==============+
-| Jeremy McNichols |         13.1 |    | Jahmyr Gibbs     |         73.6 |
-+------------------+--------------+    | David Montgomery |         49.5 |
-                                       | Craig Reynolds   |         15.3 |
-                                       +------------------+--------------+
++------------------------+--------------+    +------------------+--------------+
+| WAS Player             |   Pred Yards |    | DET Player       |   Pred Yards |
++========================+==============+    +==================+==============+
+| Jacory Croskey-Merritt |         40.3 |    | Jahmyr Gibbs     |         71.1 |
+| Jeremy McNichols       |          7.7 |    | David Montgomery |         51.2 |
+| Chase Edmonds          |         -0   |    | Craig Reynolds   |         16.5 |
+| Chris Rodriguez Jr.    |         -0   |    | Jacob Saylors    |         12.1 |
+| Demetric Felton        |         -0   |    | Deon Jackson     |         -0   |
+| Donovan Edwards        |         -0   |    | Sione Vaki       |         -0   |
+| Kazmeir Allen          |         -0   |    +------------------+--------------+
++------------------------+--------------+    
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total RBs: 4 (1 WAS, 3 DET)
-Top Projection: Jahmyr Gibbs (DET) - 73.6 yards
+Total RBs: 13 (7 WAS, 6 DET)
+Top Projection: Jahmyr Gibbs (DET) - 71.1 yards
 ================================================================================
