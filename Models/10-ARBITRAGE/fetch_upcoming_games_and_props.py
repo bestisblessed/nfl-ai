@@ -8,11 +8,11 @@ Fetches the following 7 prop types:
 - RB Receiving Yards (player_reception_yds)
 - RB Rushing Yards (player_rush_yds)
 - QB Rushing Yards (player_rush_yds)
-- Anytime Touchdown Scorer (player_touchdowns)
+- Anytime Touchdown Scorer (player_anytime_td)
 
 Output CSV columns:
 - bookmaker: Sportsbook name
-- market: Prop type (player_pass_yds, player_reception_yds, player_rush_yds, player_touchdowns)
+- market: Prop type (player_pass_yds, player_reception_yds, player_rush_yds, player_anytime_td)
 - player: Player name
 - outcome: Over/Under (for yards props) or Yes/No (for TD props)
 - point: Line/total (N/A for TD props)
@@ -33,7 +33,7 @@ api_key = '8aabcc029890b3fd7f740a705758c2d8'
 sport_key = 'americanfootball_nfl'
 base_url = 'https://api.the-odds-api.com/v4/sports/'
 regions = 'us,us2,us_dfs,eu'
-markets = 'player_pass_yds,player_reception_yds,player_rush_yds,player_touchdowns'
+markets = 'player_pass_yds,player_reception_yds,player_rush_yds,player_anytime_td'
 odds_format = 'american'
 
 team_abbrev_to_full = {
@@ -194,7 +194,7 @@ def main():
     
     print(f"\nStep 4: Fetching props for {len(event_mapping)} matched events")
     all_props = []
-    target_props = ['player_pass_yds', 'player_reception_yds', 'player_rush_yds', 'player_touchdowns']
+    target_props = ['player_pass_yds', 'player_reception_yds', 'player_rush_yds', 'player_anytime_td']
     
     for idx, (event_id, (team, opp)) in enumerate(event_mapping.items(), 1):
         print(f"[{idx}/{len(event_mapping)}] Fetching props for {team} vs {opp} (Event ID: {event_id})")
