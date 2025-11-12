@@ -2,6 +2,7 @@ examples/
 scripts*
 images/player-headshots/
 #data/odds/
+samples/
 testing/
 *-test*
 props*png
