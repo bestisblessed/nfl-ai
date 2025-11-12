@@ -3,8 +3,13 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import sqlite3
 import os
+import sys
 import altair as alt
 import plotly.express as px
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(BASE_DIR)
+from utils.footer import render_footer
 
 # Page configuration
 st.set_page_config(
@@ -705,3 +710,6 @@ chart_sacks_taken = alt.Chart(sacks_taken_sorted).mark_bar().encode(
 )
 
 st.altair_chart(chart_sacks_taken, use_container_width=True)
+
+# Footer
+render_footer()

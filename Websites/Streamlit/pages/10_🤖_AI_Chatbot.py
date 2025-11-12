@@ -6,6 +6,11 @@ from PIL import Image
 import io
 import pandas as pd
 import os
+import sys
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(BASE_DIR)
+from utils.footer import render_footer
 
 st.title("NFL AI Chatbot")
 
@@ -190,3 +195,6 @@ if "pending_query" in st.session_state and st.session_state.pending_query:
 # ---- Handle User Prompt ----
 if prompt := st.chat_input("Question?"):
     run_query(prompt)
+
+# Footer
+render_footer()

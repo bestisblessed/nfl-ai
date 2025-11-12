@@ -6,8 +6,11 @@ from pandas.api.types import is_float_dtype, is_integer_dtype
 import streamlit as st
 import os
 import glob
+import sys
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(BASE_DIR)
+from utils.footer import render_footer
 
 # st.set_page_config(page_title="Leader Projections", layout="centered")
 st.set_page_config(page_title="Leader Projections", page_icon="🏈", layout="wide")
@@ -447,12 +450,4 @@ with col2:
         st.info("PDF report not available for this week")
 
 # Footer
-st.markdown("""
-    <div style='text-align: center; margin-top: 40px; padding: 20px; color: #666;'>
-        <hr style='margin-bottom: 20px;'>
-        <p><strong>NFL Leader Projections</strong> - Powered by advanced analytics</p>
-        <p style='font-size: 0.9em;'>Data updated weekly • All projections are estimates and subject to change</p>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
+render_footer()

@@ -5,8 +5,11 @@ import os
 import glob
 import json
 import re
+import sys
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(BASE_DIR)
+from utils.footer import render_footer
 
 # Load game times from odds JSON files
 @st.cache_data
@@ -466,5 +469,4 @@ with col2:
         st.info("HTML report not available for this week")
 
 # Footer
-st.divider()
-st.markdown("NFL AI © 2023 | Tyler Durette")
+render_footer()

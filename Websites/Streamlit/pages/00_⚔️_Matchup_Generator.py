@@ -4,6 +4,11 @@ import os
 import plotly.express as px
 import numpy as np
 import base64
+import sys
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(BASE_DIR)
+from utils.footer import render_footer
 
 # NFL team color mapping (primary colors)
 TEAM_COLORS = {
@@ -2084,3 +2089,6 @@ if all(k in st.session_state for k in ['rg_report_data', 'rg_team1', 'rg_team2']
             use_container_width=True,
             type='primary'
         )
+
+# Footer
+render_footer()

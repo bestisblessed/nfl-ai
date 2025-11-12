@@ -2,12 +2,17 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import os
+import sys
 # from Home import df_teams, df_games, df_playerstats, df_team_game_logs, df_schedule_and_game_results
 import plotly
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 from PIL import Image
 import sqlite3
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(BASE_DIR)
+from utils.footer import render_footer
 
 # Page configuration
 st.set_page_config(
@@ -840,4 +845,5 @@ if player_name is not None:
     else:
         st.write("No data found for this player against the selected team.")
 
-st.divider()
+# Footer
+render_footer()
