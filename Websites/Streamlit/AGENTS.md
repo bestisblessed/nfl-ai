@@ -1,3 +1,7 @@
+# Rules
+
+For any frontend coding/design/updates (e.g., Streamlit, Next.js, React), ALWAYS run that new page and take/generate screenshot(s) inline of everything changed for you to verify it looks good and for me to see in the chat and approve it. Use tools such as the playwright MCP you have access to or just python packages such as Playwright/Pillow or equivalent that you can use to execute a screenshot script. Take screenshot(s) so that you make sure you capture from top to bottom with however many screenshots it takes all of the new features.
+
 # NFL Teams Abbreviations and Full Names
 
 CLE - Cleveland Browns
@@ -26,3 +30,4 @@ BUF - Buffalo Bills
 NE - New England Patriots
 JAX - Jacksonville Jaguars
 KC - Kansas City Chiefs
+
