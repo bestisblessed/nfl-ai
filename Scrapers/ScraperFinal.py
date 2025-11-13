@@ -1591,14 +1591,54 @@ all_passing_file = 'data/all_passing_rushing_receiving.csv'
 rosters_file = 'data/rosters.csv'
 all_passing_df = pd.read_csv(all_passing_file)
 rosters_df = pd.read_csv(rosters_file)
-merged_df = pd.merge(all_passing_df, rosters_df[['full_name', 'position']], 
-                     left_on='player', right_on='full_name', how='left')
+
+# Deduplicate by (player, game_id) before merging to prevent duplicates
+duplicate_count = all_passing_df.duplicated(subset=['player', 'game_id']).sum()
+if duplicate_count > 0:
+    print(f"   Removing {duplicate_count:,} duplicate (player, game_id) combinations...")
+    all_passing_df = all_passing_df.drop_duplicates(subset=['player', 'game_id'], keep='first')
+    print(f"   After deduplication: {len(all_passing_df):,} records")
+
+# Extract season and team from game_id to match with rosters
+all_passing_df['season'] = all_passing_df['game_id'].str.split('_').str[0].astype(int)
+# Rename team to player_team temporarily to avoid merge conflicts
+all_passing_df = all_passing_df.rename(columns={'team': 'player_team'})
+
+# Deduplicate rosters by keeping the most recent entry per player per season
+# This prevents many-to-many merge that creates duplicates
+rosters_dedup = rosters_df[['full_name', 'season', 'team', 'position']].drop_duplicates(
+    subset=['full_name', 'season', 'team'], keep='last'
+)
+
+# Merge on player name, season, and team to avoid duplicates
+# Since both dataframes have 'team' column but we're using player_team on left and team on right,
+# pandas would create team_x and team_y. To avoid this, we drop 'team' from rosters before merge
+# (we only need it for the merge key, and the result will have player_team which we'll rename)
+rosters_for_merge = rosters_dedup[['full_name', 'season', 'team', 'position']].copy()
+merged_df = pd.merge(all_passing_df, rosters_for_merge, 
+                     left_on=['player', 'season', 'player_team'], 
+                     right_on=['full_name', 'season', 'team'], 
+                     how='left')
+
+# After merge, we have player_team (from left) and team (from right) - they're the same values
+# Drop the right's 'team' column and rename player_team back to 'team'
+merged_df = merged_df.drop(columns=['team'], errors='ignore')
+merged_df = merged_df.rename(columns={'player_team': 'team'})
 if 'position' not in merged_df.columns:
     merged_df['position'] = None
 relevant_positions = ['QB', 'WR', 'TE', 'RB']
 merged_df['position'] = merged_df['position'].where(merged_df['position'].isin(relevant_positions), None)
-merged_df.drop(columns=['full_name'], inplace=True)
+# Drop merge helper columns
+merged_df.drop(columns=['full_name'], inplace=True, errors='ignore')
+# Fill missing positions using forward/backward fill per player
 merged_df['position'] = merged_df.groupby('player')['position'].transform(lambda x: x.ffill().bfill())
+
+# Final deduplication check (safety measure - should not create duplicates, but just in case)
+final_dupes = merged_df.duplicated(subset=['player', 'game_id']).sum()
+if final_dupes > 0:
+    print(f"   ⚠️  Warning: {final_dupes} duplicates found after merge, removing...")
+    merged_df = merged_df.drop_duplicates(subset=['player', 'game_id'], keep='first')
+
 merged_df.to_csv('data/all_passing_rushing_receiving.csv', index=False)
 print(merged_df[['player', 'position']].head())
 
