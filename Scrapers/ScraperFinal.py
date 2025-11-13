@@ -648,15 +648,40 @@ opponent_game_logs_headers = [
 for year in range(2010, 2026):
     team_file = f'./data/SR-game-logs/all_teams_game_logs_{year}.csv'
     opponent_file = f'./data/SR-opponent-game-logs/all_teams_opponent_game_logs_{year}.csv'
-    # Skip re-scraping if both output files already exist
-    if os.path.exists(team_file) and os.path.exists(opponent_file):
-        print(f"Skipping Team Game Logs for {year}; files already exist.")
+    
+    # Read existing data to check which teams already have data
+    existing_teams_team = set()
+    existing_teams_opponent = set()
+    if os.path.exists(team_file):
+        try:
+            df_existing = pd.read_csv(team_file)
+            if 'team_name' in df_existing.columns:
+                existing_teams_team = set(df_existing['team_name'].unique())
+        except Exception:
+            pass
+    if os.path.exists(opponent_file):
+        try:
+            df_existing = pd.read_csv(opponent_file)
+            if 'team_name' in df_existing.columns:
+                existing_teams_opponent = set(df_existing['team_name'].unique())
+        except Exception:
+            pass
+    
+    # For 2010-2024: skip if all teams already have data
+    if year != 2025 and len(existing_teams_team) == 32 and len(existing_teams_opponent) == 32:
+        print(f"Skipping Team Game Logs for {year}; all teams already have data.")
         continue
-    # Always process current year team game logs even if files exist
+    
+    # For 2025 or incomplete years: process missing teams
     all_team_game_logs = []  
     all_opponent_game_logs = []
     for team in teams:
         abbreviation, name = team
+        # For 2010-2024: skip if team already has data
+        # For 2025: always process to get latest data
+        if year != 2025 and name in existing_teams_team and name in existing_teams_opponent:
+            print(f"Skipping {name} for {year}; data already exists.")
+            continue
         print(f'Processing {name} for the year {year}')  
         url = f'https://www.pro-football-reference.com/teams/{abbreviation}/{year}/gamelog/'
         
@@ -739,14 +764,38 @@ for year in range(2010, 2026):
                     playoff_game_logs.append(row_data)
                 all_team_game_logs.extend(playoff_game_logs)
         sleep(2.5)  # Increased delay to avoid rate limiting  
-    with open(team_file, mode='w', newline='', encoding='utf-8') as file:
-        writer = csv.writer(file)
-        writer.writerow(team_game_logs_headers + ['team_name'])
-        writer.writerows(all_team_game_logs)
-    with open(opponent_file, mode='w', newline='', encoding='utf-8') as file:
-        writer = csv.writer(file)
-        writer.writerow(opponent_game_logs_headers + ['team_name'])
-        writer.writerows(all_opponent_game_logs)
+    
+    # Append new data to existing files
+    if all_team_game_logs or all_opponent_game_logs:
+        mode_team = 'a' if os.path.exists(team_file) else 'w'
+        mode_opponent = 'a' if os.path.exists(opponent_file) else 'w'
+        
+        # For 2025, remove existing rows for teams we're re-scraping
+        if year == 2025 and os.path.exists(team_file):
+            df_existing = pd.read_csv(team_file)
+            teams_to_update = {row[-1] for row in all_team_game_logs}  # team_name is last column
+            df_existing = df_existing[~df_existing['team_name'].isin(teams_to_update)]
+            df_existing.to_csv(team_file, index=False)
+            mode_team = 'a'
+        if year == 2025 and os.path.exists(opponent_file):
+            df_existing = pd.read_csv(opponent_file)
+            teams_to_update = {row[-1] for row in all_opponent_game_logs}
+            df_existing = df_existing[~df_existing['team_name'].isin(teams_to_update)]
+            df_existing.to_csv(opponent_file, index=False)
+            mode_opponent = 'a'
+        
+        if all_team_game_logs:
+            with open(team_file, mode=mode_team, newline='', encoding='utf-8') as file:
+                writer = csv.writer(file)
+                if mode_team == 'w':
+                    writer.writerow(team_game_logs_headers + ['team_name'])
+                writer.writerows(all_team_game_logs)
+        if all_opponent_game_logs:
+            with open(opponent_file, mode=mode_opponent, newline='', encoding='utf-8') as file:
+                writer = csv.writer(file)
+                if mode_opponent == 'w':
+                    writer.writerow(opponent_game_logs_headers + ['team_name'])
+                writer.writerows(all_opponent_game_logs)
 
 
 ##### Create game_id in Game Logs #####
@@ -940,12 +989,30 @@ team_stats_headers = [
 ]
 for year in range(2010, 2026):
     output_file = f'{data_dir}/all_teams_stats_{year}.csv'
+    
+    # Read existing data to check which teams already have data
+    existing_teams = set()
     if os.path.exists(output_file):
-        print(f"Skipping year {year}, file already exists.")
+        try:
+            df_existing = pd.read_csv(output_file)
+            if 'Team' in df_existing.columns:
+                existing_teams = set(df_existing['Team'].unique())
+        except Exception:
+            pass
+    
+    # For 2010-2024: skip if all teams already have data
+    if year != 2025 and len(existing_teams) >= 32:
+        print(f"Skipping year {year}, all teams already have data.")
         continue
+    
     all_team_stats = []  
     for team in teams:
         abbreviation, name = team
+        # For 2010-2024: skip if team already has data
+        # For 2025: always process to get latest data
+        if year != 2025 and abbreviation in existing_teams:
+            print(f"Skipping {name} for {year}; data already exists.")
+            continue
         print(f'Processing {name} for the year {year}')  
         url = f'https://www.pro-football-reference.com/teams/{abbreviation}/{year}.htm'
         
@@ -990,11 +1057,25 @@ for year in range(2010, 2026):
             all_team_stats.append(row_data)
         sleep(2.5)  # Increased delay to avoid rate limiting  
         # sleep(5)  # Increased delay to avoid rate limiting  
-    with open(output_file, mode='w', newline='', encoding='utf-8') as file:
-        writer = csv.writer(file)
-        writer.writerow(team_stats_headers)
-        writer.writerows(all_team_stats)
-    print(f'Saved data for all teams for the year {year}')
+    
+    # Append new data to existing file
+    if all_team_stats:
+        mode = 'a' if os.path.exists(output_file) else 'w'
+        
+        # For 2025, remove existing rows for teams we're re-scraping
+        if year == 2025 and os.path.exists(output_file):
+            df_existing = pd.read_csv(output_file)
+            teams_to_update = {row[-1] for row in all_team_stats}  # Team is last column
+            df_existing = df_existing[~df_existing['Team'].isin(teams_to_update)]
+            df_existing.to_csv(output_file, index=False)
+            mode = 'a'
+        
+        with open(output_file, mode=mode, newline='', encoding='utf-8') as file:
+            writer = csv.writer(file)
+            if mode == 'w':
+                writer.writerow(team_stats_headers)
+            writer.writerows(all_team_stats)
+        print(f'Saved data for {len(all_team_stats)} teams for the year {year}')
 
 
 ##### Merge Team Stats and Rankings #####
@@ -1061,9 +1142,21 @@ for year in range(2010, 2026):
         abbreviation, name = team
         print(f'Processing {name} for the year {year}')  
         url = f'https://www.pro-football-reference.com/teams/{abbreviation}/{year}.htm'
-        # Skip re-scraping if per-team file already exists
         team_file_path = f'{data_dir}/{abbreviation}_{year}_schedule_and_game_results.csv'
+        
+        # Read existing data to check which weeks already have data
+        existing_weeks = set()
         if os.path.exists(team_file_path):
+            try:
+                df_existing = pd.read_csv(team_file_path)
+                if 'Week' in df_existing.columns:
+                    existing_weeks = set(df_existing['Week'].astype(str).unique())
+            except Exception:
+                pass
+        
+        # For 2010-2024: skip if team already has data
+        # For 2025: always process to get latest data (will check individual weeks)
+        if year != 2025 and os.path.exists(team_file_path) and len(existing_weeks) > 0:
             print(f"Skipping schedule for {name} {year}; file already exists.")
             continue
         
@@ -1118,6 +1211,10 @@ for year in range(2010, 2026):
             week_num = week_th.text.strip() if week_th else ''
             row_data.append(week_num)
             
+            # For 2025: skip if week already exists
+            if year == 2025 and week_num in existing_weeks:
+                continue
+            
             for td in tr.find_all('td'):
                 row_data.append(td.text.strip())
             
@@ -1128,12 +1225,23 @@ for year in range(2010, 2026):
             team_games.append(row_data)
             all_games.append(row_data)  
         
-        # Save individual team file
-        team_file_path = f'{data_dir}/{abbreviation}_{year}_schedule_and_game_results.csv'
-        with open(team_file_path, mode='w', newline='', encoding='utf-8') as file:
-            writer = csv.writer(file)
-            writer.writerow(schedule_headers)
-            writer.writerows(team_games)
+        # Save individual team file (append new weeks for 2025, overwrite for historical)
+        if team_games:
+            mode = 'a' if (year == 2025 and os.path.exists(team_file_path)) else 'w'
+            
+            # For 2025, remove existing rows for weeks we're re-scraping
+            if year == 2025 and os.path.exists(team_file_path) and mode == 'a':
+                df_existing = pd.read_csv(team_file_path)
+                weeks_to_update = {row[0] for row in team_games}  # Week is first column
+                df_existing = df_existing[~df_existing['Week'].astype(str).isin(weeks_to_update)]
+                df_existing.to_csv(team_file_path, index=False)
+                mode = 'a'
+            
+            with open(team_file_path, mode=mode, newline='', encoding='utf-8') as file:
+                writer = csv.writer(file)
+                if mode == 'w':
+                    writer.writerow(schedule_headers)
+                writer.writerows(team_games)
         
         print(f'Saved schedule data for {name} for the year {year}')
         sleep(2.5)  # Rate limiting delay
@@ -1212,8 +1320,10 @@ for year in range(2010, 2026):
     for team in teams:
         abbreviation, name = team
         team_file = f'{data_dir}/{abbreviation}_{year}_team_conversions.csv'
-        # Skip if file already exists
-        if os.path.exists(team_file):
+        
+        # For 2010-2024: skip if file already exists
+        # For 2025: always process to get latest data
+        if year != 2025 and os.path.exists(team_file):
             print(f"Skipping team conversions for {name} {year}; file already exists.")
             continue
         print(f'Processing {name} for the year {year}')  
@@ -1257,7 +1367,10 @@ for year in range(2010, 2026):
             row_data = [td.text.strip() for td in tr.find_all(['th', 'td'])]  
             row_data.append(abbreviation)  
             all_conversions.append(row_data)
-        with open(team_file, mode='w', newline='', encoding='utf-8') as file:
+        
+        # For 2025, overwrite to get latest data; for historical, write new file
+        mode = 'w'  # Always overwrite since this is season totals, not per-game
+        with open(team_file, mode=mode, newline='', encoding='utf-8') as file:
             writer = csv.writer(file)
             writer.writerow(team_conversions_headers)
             writer.writerows(all_conversions)
@@ -1626,9 +1739,10 @@ headers = {
     )
 }
 for year_to_scrape in range(2010, 2026):
-    # Skip entire year if merged output already exists
+    # For 2010-2024: skip if file already exists
+    # For 2025: always process to get latest data
     year_output_file = f'./data/SR-redzone/all_redzone_{year_to_scrape}.csv'
-    if os.path.exists(year_output_file):
+    if year_to_scrape != 2025 and os.path.exists(year_output_file):
         print(f"Skipping red zone for {year_to_scrape}; file already exists.")
         continue
     all_redzone_data = []
@@ -1676,6 +1790,7 @@ for year_to_scrape in range(2010, 2026):
     if all_redzone_data:
         combined_df = pd.concat(all_redzone_data, ignore_index=True)
         output_file = f'./data/SR-redzone/all_redzone_{year_to_scrape}.csv'
+        # Always overwrite since this is aggregated season data
         combined_df.to_csv(output_file, index=False)
         print(f"Combined red zone data saved to {output_file}")
 
