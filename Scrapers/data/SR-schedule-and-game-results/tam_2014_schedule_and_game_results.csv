@@ -1,0 +1,18 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 7,4:25PM ET,boxscore,L,,0-1,,Carolina Panthers,14,20,17,264,162,102,3,19,334,221,113,,-6.20,-4.10,2.93
+2,Sun,September 14,4:05PM ET,boxscore,L,,0-2,,St. Louis Rams,17,19,18,332,175,157,1,20,339,220,119,1,13.55,-6.46,-4.75
+3,Thu,September 18,8:26PM ET,boxscore,L,,0-3,@,Atlanta Falcons,14,56,10,217,153,64,5,26,488,344,144,4,-29.00,-13.83,4.23
+4,Sun,September 28,1:03PM ET,boxscore,W,,1-3,@,Pittsburgh Steelers,27,24,21,350,287,63,1,27,390,305,85,1,8.34,-11.50,7.28
+5,Sun,October 5,1:03PM ET,boxscore,L,OT,1-4,@,New Orleans Saints,31,37,20,314,248,66,1,34,511,371,140,3,7.82,-12.43,-0.19
+6,Sun,October 12,1:02PM ET,boxscore,L,,1-5,,Baltimore Ravens,17,48,22,364,277,87,1,23,475,306,169,1,-2.73,-20.77,-4.73
+7,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+8,Sun,October 26,1:03PM ET,boxscore,L,OT,1-6,,Minnesota Vikings,13,19,15,225,159,66,2,22,332,235,97,,-12.21,-2.93,9.14
+9,Sun,November 2,1:02PM ET,boxscore,L,,1-7,@,Cleveland Browns,17,22,20,365,252,113,2,19,330,274,56,2,-2.14,6.61,-7.34
+10,Sun,November 9,1:04PM ET,boxscore,L,,1-8,,Atlanta Falcons,17,27,23,373,281,92,3,19,322,212,110,,4.35,-10.77,-2.73
+11,Sun,November 16,1:03PM ET,boxscore,W,,2-8,@,Washington Redskins,27,7,12,329,281,48,1,20,322,167,155,3,8.40,6.68,3.08
+12,Sun,November 23,1:02PM ET,boxscore,L,,2-9,@,Chicago Bears,13,21,17,367,301,66,4,12,204,112,92,1,-18.49,13.25,0.09
+13,Sun,November 30,1:02PM ET,boxscore,L,,2-10,,Cincinnati Bengals,13,14,14,263,188,75,1,19,288,176,112,3,-12.32,9.44,3.01
+14,Sun,December 7,1:02PM ET,boxscore,L,,2-11,@,Detroit Lions,17,34,15,233,207,26,3,22,407,294,113,1,-6.86,-9.91,4.27
+15,Sun,December 14,1:03PM ET,boxscore,L,,2-12,@,Carolina Panthers,17,19,15,287,136,151,3,28,392,269,123,1,-1.88,-2.42,2.12
+16,Sun,December 21,1:03PM ET,boxscore,L,,2-13,,Green Bay Packers,3,20,6,109,93,16,1,23,431,310,121,1,-20.90,-7.33,8.85
+17,Sun,December 28,1:03PM ET,boxscore,L,,2-14,,New Orleans Saints,20,23,18,280,97,183,1,20,338,268,70,3,1.98,-5.60,-1.66

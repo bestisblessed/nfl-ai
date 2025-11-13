@@ -1,0 +1,21 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 9,4:25PM ET,boxscore,L,,0-1,@,Arizona Cardinals,16,20,18,254,139,115,2,18,253,210,43,2,-9.49,4.90,1.82
+2,Sun,September 16,4:06PM ET,boxscore,W,,1-1,,Dallas Cowboys,27,7,20,315,133,182,,17,296,247,49,2,5.89,3.37,9.28
+3,Mon,September 24,8:41PM ET,boxscore,W,,2-1,,Green Bay Packers,14,12,14,238,111,127,,22,268,184,84,,0.56,-2.33,3.33
+4,Sun,September 30,1:00PM ET,boxscore,L,,2-2,@,St. Louis Rams,13,19,19,319,140,179,3,15,286,211,75,1,-6.87,3.82,-2.06
+5,Sun,October 7,4:04PM ET,boxscore,W,,3-2,@,Carolina Panthers,16,12,17,310,212,98,3,13,190,108,82,2,-6.76,20.26,-5.00
+6,Sun,October 14,4:04PM ET,boxscore,W,,4-2,,New England Patriots,24,23,17,368,283,85,2,26,475,388,87,2,4.31,-7.79,1.97
+7,Thu,October 18,8:29PM ET,boxscore,L,,4-3,@,San Francisco 49ers,6,13,13,251,115,136,1,18,313,138,175,1,-8.42,0.14,-2.18
+8,Sun,October 28,1:03PM ET,boxscore,L,,4-4,@,Detroit Lions,24,28,21,369,236,133,2,26,415,331,84,1,14.46,-20.15,0.43
+9,Sun,November 4,4:06PM ET,boxscore,W,,5-4,,Minnesota Vikings,30,20,28,385,190,195,,16,287,44,243,2,19.94,-4.22,-2.73
+10,Sun,November 11,4:06PM ET,boxscore,W,,6-4,,New York Jets,28,7,20,363,189,174,2,11,185,101,84,3,1.35,17.97,4.31
+11,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+12,Sun,November 25,1:03PM ET,boxscore,L,,6-5,@,Miami Dolphins,21,24,16,312,216,96,,23,435,246,189,1,5.06,-17.25,9.65
+13,Sun,December 2,1:03PM ET,boxscore,W,OT,7-5,@,Chicago Bears,23,17,25,459,283,176,1,22,365,233,132,,14.55,-10.51,-0.30
+14,Sun,December 9,4:26PM ET,boxscore,W,,8-5,,Arizona Cardinals,58,0,22,493,209,284,1,10,154,111,43,8,16.75,37.39,4.36
+15,Sun,December 16,4:05PM ET,boxscore,W,,9-5,@,Buffalo Bills,50,17,22,466,196,270,,21,333,215,118,3,25.18,13.00,-4.79
+16,Sun,December 23,8:31PM ET,boxscore,W,,10-5,,San Francisco 49ers,42,13,22,346,170,176,1,17,313,231,82,2,19.69,1.44,5.09
+17,Sun,December 30,4:26PM ET,boxscore,W,,11-5,,St. Louis Rams,20,13,17,362,209,153,,20,331,252,79,1,9.81,-4.43,1.76
+,,Playoffs,,,,,,,,,,,,,,,,,,,,,,
+Wild Card,Sun,January 6,4:40PM ET,boxscore,W,,12-5,@,Washington Redskins,24,14,22,380,156,224,1,15,203,99,104,2,6.20,9.36,-2.26
+Division,Sun,January 13,1:05PM ET,boxscore,L,,12-6,@,Atlanta Falcons,28,30,28,491,368,123,2,24,417,250,167,2,16.85,-17.64,0.63

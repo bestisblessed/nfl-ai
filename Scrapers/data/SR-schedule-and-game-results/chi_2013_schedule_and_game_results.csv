@@ -1,0 +1,18 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 8,1:02PM ET,boxscore,W,,1-0,,Cincinnati Bengals,24,21,17,323,242,81,1,18,340,277,63,3,-0.93,-2.65,3.28
+2,Sun,September 15,1:03PM ET,boxscore,W,,2-0,,Minnesota Vikings,31,30,24,411,284,127,4,19,350,227,123,3,-0.92,3.26,1.56
+3,Sun,September 22,8:30PM ET,boxscore,W,,3-0,@,Pittsburgh Steelers,40,23,15,258,151,107,,21,459,379,80,5,1.41,15.78,0.13
+4,Sun,September 29,1:03PM ET,boxscore,L,,3-1,@,Detroit Lions,32,40,18,417,286,131,4,23,387,228,159,3,-2.72,1.64,-6.73
+5,Sun,October 6,1:02PM ET,boxscore,L,,3-2,,New Orleans Saints,18,26,20,434,340,94,1,17,347,283,64,,6.01,-7.69,-3.66
+6,Thu,October 10,8:29PM ET,boxscore,W,,4-2,,New York Giants,27,21,26,372,262,110,,21,355,232,123,3,10.80,-2.76,-1.49
+7,Sun,October 20,1:05PM ET,boxscore,L,,4-3,@,Washington Redskins,41,45,21,359,219,140,1,28,499,290,209,1,9.16,-20.30,8.76
+8,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+9,Mon,November 4,8:40PM ET,boxscore,W,,5-3,@,Green Bay Packers,27,20,25,442,271,171,,17,312,113,199,1,16.03,0.60,-7.75
+10,Sun,November 10,1:03PM ET,boxscore,L,,5-4,,Detroit Lions,19,21,19,338,300,38,1,21,364,219,145,1,-1.20,-6.45,2.80
+11,Sun,November 17,1:02PM ET,boxscore,W,OT,6-4,,Baltimore Ravens,23,20,18,319,215,104,,23,317,143,174,2,3.66,2.08,-3.30
+12,Sun,November 24,1:00PM ET,boxscore,L,,6-5,@,St. Louis Rams,21,42,30,424,344,80,3,20,406,148,258,,1.15,-18.50,-3.59
+13,Sun,December 1,1:05PM ET,boxscore,L,OT,6-6,@,Minnesota Vikings,20,23,20,480,345,135,1,28,496,250,246,1,7.84,-9.65,-3.99
+14,Mon,December 9,8:40PM ET,boxscore,W,,7-6,,Dallas Cowboys,45,28,33,490,341,149,,24,328,130,198,,35.83,-15.42,-2.48
+15,Sun,December 15,1:03PM ET,boxscore,W,,8-6,@,Cleveland Browns,38,31,23,440,261,179,3,20,366,273,93,2,3.55,-1.61,3.05
+16,Sun,December 22,8:30PM ET,boxscore,L,,8-7,@,Philadelphia Eagles,11,54,18,257,196,61,2,28,514,225,289,1,-9.95,-29.46,-3.03
+17,Sun,December 29,4:25PM ET,boxscore,L,,8-8,,Green Bay Packers,28,33,17,345,224,121,2,25,473,313,160,2,11.07,-20.10,2.48

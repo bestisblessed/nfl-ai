@@ -1,0 +1,18 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Wed,September 5,8:41PM ET,boxscore,L,,0-1,,Dallas Cowboys,17,24,15,269,187,82,1,18,433,290,143,1,0.96,-6.86,-1.43
+2,Sun,September 16,1:03PM ET,boxscore,W,,1-1,,Tampa Bay Buccaneers,41,34,31,604,510,94,3,14,307,228,79,2,12.03,0.62,-6.24
+3,Thu,September 20,8:20PM ET,boxscore,W,,2-1,@,Carolina Panthers,36,7,24,405,280,125,,22,327,267,60,5,15.85,-1.80,12.39
+4,Sun,September 30,8:30PM ET,boxscore,L,,2-2,@,Philadelphia Eagles,17,19,20,366,309,57,1,22,422,231,191,,8.10,-11.27,-2.27
+5,Sun,October 7,1:02PM ET,boxscore,W,,3-2,,Cleveland Browns,41,27,30,502,259,243,2,15,375,291,84,3,25.56,-3.76,-4.76
+6,Sun,October 14,4:23PM ET,boxscore,W,,4-2,@,San Francisco 49ers,26,3,19,342,193,149,,14,314,234,80,3,4.17,16.67,3.66
+7,Sun,October 21,1:03PM ET,boxscore,W,,5-2,,Washington Redskins,27,23,22,393,329,64,2,24,480,232,248,4,13.48,-5.54,-4.16
+8,Sun,October 28,4:25PM ET,boxscore,W,,6-2,@,Dallas Cowboys,29,24,11,293,190,103,2,28,434,415,19,6,-10.90,5.04,8.46
+9,Sun,November 4,4:26PM ET,boxscore,L,,6-3,,Pittsburgh Steelers,20,24,13,182,114,68,1,22,349,191,158,2,-3.22,0.94,-2.87
+10,Sun,November 11,1:03PM ET,boxscore,L,,6-4,@,Cincinnati Bengals,13,31,21,318,189,129,4,15,275,199,76,1,-13.17,-6.14,1.64
+11,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+12,Sun,November 25,8:30PM ET,boxscore,W,,7-4,,Green Bay Packers,38,10,23,390,243,147,,16,317,201,116,2,18.49,7.00,0.86
+13,Mon,December 3,8:40PM ET,boxscore,L,,7-5,@,Washington Redskins,16,17,21,390,273,117,,20,370,163,207,1,13.66,-13.04,-4.59
+14,Sun,December 9,4:26PM ET,boxscore,W,,8-5,,New Orleans Saints,52,27,24,394,259,135,2,22,487,345,142,4,5.86,8.32,10.46
+15,Sun,December 16,1:03PM ET,boxscore,L,,8-6,@,Atlanta Falcons,0,34,10,256,159,97,3,22,394,265,129,,-14.81,-19.97,-1.84
+16,Sun,December 23,4:25PM ET,boxscore,L,,8-7,@,Baltimore Ravens,14,33,11,186,119,67,,25,533,309,224,,-3.40,-22.03,3.68
+17,Sun,December 30,1:04PM ET,boxscore,W,,9-7,,Philadelphia Eagles,42,7,32,397,212,185,,18,317,207,110,1,30.78,4.90,-2.67

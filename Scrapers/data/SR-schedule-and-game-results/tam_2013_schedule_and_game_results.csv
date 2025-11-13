@@ -1,0 +1,18 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 8,1:03PM ET,boxscore,L,,0-1,@,New York Jets,17,18,12,250,185,65,2,22,304,214,90,2,-8.41,6.75,0.34
+2,Sun,September 15,4:05PM ET,boxscore,L,,0-2,,New Orleans Saints,14,16,14,273,113,160,2,21,371,296,75,2,-8.33,6.82,-1.20
+3,Sun,September 22,1:02PM ET,boxscore,L,,0-3,@,New England Patriots,3,23,18,323,226,97,1,21,358,202,156,1,-11.23,-4.05,-2.25
+4,Sun,September 29,1:03PM ET,boxscore,L,,0-4,,Arizona Cardinals,10,13,20,253,173,80,3,17,296,240,56,3,-14.65,15.74,-5.52
+5,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+6,Sun,October 13,1:03PM ET,boxscore,L,,0-5,,Philadelphia Eagles,20,31,19,351,257,94,1,21,425,287,138,1,-1.46,-14.37,4.59
+7,Sun,October 20,1:02PM ET,boxscore,L,,0-6,@,Atlanta Falcons,23,31,23,337,226,111,1,15,291,273,18,1,-0.57,-10.65,3.87
+8,Thu,October 24,8:29PM ET,boxscore,L,,0-7,,Carolina Panthers,13,31,19,297,249,48,1,21,324,195,129,,-6.74,-11.11,2.23
+9,Sun,November 3,4:05PM ET,boxscore,L,OT,0-8,@,Seattle Seahawks,24,27,24,350,145,205,,26,415,217,198,3,12.18,-13.56,1.06
+10,Mon,November 11,8:40PM ET,boxscore,W,,1-8,,Miami Dolphins,22,19,18,264,124,140,1,16,213,211,2,1,-3.17,2.90,0.32
+11,Sun,November 17,1:03PM ET,boxscore,W,,2-8,,Atlanta Falcons,41,28,24,410,224,186,,24,420,268,152,3,14.45,-8.07,5.34
+12,Sun,November 24,1:03PM ET,boxscore,W,,3-8,@,Detroit Lions,24,21,10,229,207,22,,25,390,286,104,5,-2.91,4.69,-0.55
+13,Sun,December 1,1:04PM ET,boxscore,L,,3-9,@,Carolina Panthers,6,27,10,206,140,66,2,20,426,263,163,2,-15.24,-11.42,0.49
+14,Sun,December 8,1:02PM ET,boxscore,W,,4-9,,Buffalo Bills,27,6,13,246,81,165,2,14,214,147,67,5,-10.41,31.40,0.54
+15,Sun,December 15,1:02PM ET,boxscore,L,,4-10,,San Francisco 49ers,14,33,13,183,144,39,2,22,376,189,187,,-8.69,-6.43,-5.75
+16,Sun,December 22,1:00PM ET,boxscore,L,,4-11,@,St. Louis Rams,13,23,14,170,111,59,2,18,277,148,129,2,-6.06,2.07,-3.27
+17,Sun,December 29,4:25PM ET,boxscore,L,,4-12,@,New Orleans Saints,17,42,18,290,215,75,1,21,468,370,98,,-5.55,-23.14,7.33

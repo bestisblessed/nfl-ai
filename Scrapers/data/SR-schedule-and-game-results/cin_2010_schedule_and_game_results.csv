@@ -1,0 +1,18 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 12,1:02PM ET,boxscore,L,,0-1,@,New England Patriots,24,38,26,428,341,87,2,20,376,258,118,,10.45,-15.94,0.01
+2,Sun,September 19,1:02PM ET,boxscore,W,,1-1,,Baltimore Ravens,15,10,14,253,159,94,,14,259,150,109,4,-15.11,17.84,3.49
+3,Sun,September 26,1:02PM ET,boxscore,W,,2-1,@,Carolina Panthers,20,7,21,305,185,120,2,17,267,180,87,4,-7.77,20.58,1.98
+4,Sun,October 3,1:02PM ET,boxscore,L,,2-2,@,Cleveland Browns,20,23,21,413,346,67,2,21,295,179,116,1,7.94,-4.86,-6.08
+5,Sun,October 10,1:03PM ET,boxscore,L,,2-3,,Tampa Bay Buccaneers,21,24,20,358,209,149,4,21,391,266,125,3,-9.47,-7.55,12.83
+6,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+7,Sun,October 24,1:05PM ET,boxscore,L,,2-4,@,Atlanta Falcons,32,39,28,469,385,84,1,22,452,299,153,2,13.90,-16.21,-6.67
+8,Sun,October 31,1:06PM ET,boxscore,L,,2-5,,Miami Dolphins,14,22,16,262,156,106,1,20,354,217,137,2,-3.73,-2.04,-0.92
+9,Mon,November 8,8:40PM ET,boxscore,L,,2-6,,Pittsburgh Steelers,21,27,18,272,218,54,2,14,314,193,121,2,0.23,3.97,-6.65
+10,Sun,November 14,1:02PM ET,boxscore,L,,2-7,@,Indianapolis Colts,17,23,19,341,269,72,5,16,256,180,76,,-14.58,2.94,3.15
+11,Sun,November 21,1:02PM ET,boxscore,L,,2-8,,Buffalo Bills,31,49,26,361,228,133,3,23,449,308,141,2,-0.88,-22.31,3.62
+12,Thu,November 25,8:30PM ET,boxscore,L,,2-9,@,New York Jets,10,26,13,163,117,46,3,18,319,149,170,1,-14.15,3.23,-5.80
+13,Sun,December 5,1:03PM ET,boxscore,L,,2-10,,New Orleans Saints,30,34,21,311,215,96,,19,436,290,146,1,4.05,-17.61,8.41
+14,Sun,December 12,1:02PM ET,boxscore,L,,2-11,@,Pittsburgh Steelers,7,23,14,190,156,34,3,18,354,231,123,,-16.97,-2.95,3.10
+15,Sun,December 19,1:02PM ET,boxscore,W,,3-11,,Cleveland Browns,19,17,22,397,209,188,,14,278,219,59,,7.80,-8.20,2.52
+16,Sun,December 26,4:05PM ET,boxscore,W,,4-11,,San Diego Chargers,34,20,18,371,269,102,1,23,313,249,64,2,11.93,2.50,0.29
+17,Sun,January 2,1:02PM ET,boxscore,L,,4-12,@,Baltimore Ravens,7,13,20,395,305,90,5,10,199,101,98,2,-14.51,17.10,-8.53

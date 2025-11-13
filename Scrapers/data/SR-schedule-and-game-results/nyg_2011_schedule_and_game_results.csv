@@ -1,0 +1,23 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 11,4:23PM ET,boxscore,L,,0-1,@,Washington Redskins,14,28,15,315,240,75,1,21,332,258,74,1,-6.25,-5.12,-3.00
+2,Mon,September 19,8:40PM ET,boxscore,W,,1-1,,St. Louis Rams,28,16,22,323,204,119,1,14,367,308,59,2,1.79,9.49,-0.22
+3,Sun,September 25,1:03PM ET,boxscore,W,,2-1,@,Philadelphia Eagles,29,16,14,334,232,102,,25,376,199,177,3,12.14,-1.68,-0.49
+4,Sun,October 2,4:05PM ET,boxscore,W,,3-1,@,Arizona Cardinals,31,27,24,360,306,54,2,22,368,212,156,2,5.19,-3.33,1.03
+5,Sun,October 9,1:04PM ET,boxscore,L,,3-2,,Seattle Seahawks,25,36,21,464,395,69,5,26,424,279,145,3,-13.66,4.82,-3.53
+6,Sun,October 16,1:02PM ET,boxscore,W,,4-2,,Buffalo Bills,27,24,24,414,292,122,,17,374,219,155,2,18.88,-10.21,-1.47
+7,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+8,Sun,October 30,1:02PM ET,boxscore,W,,5-2,,Miami Dolphins,20,17,21,402,344,58,,18,246,101,145,1,8.35,-0.45,-3.75
+9,Sun,November 6,4:15PM ET,boxscore,W,,6-2,@,New England Patriots,24,20,23,361,250,111,2,23,438,332,106,4,3.18,-0.10,0.90
+10,Sun,November 13,4:15PM ET,boxscore,L,,6-3,@,San Francisco 49ers,20,27,21,395,302,93,2,16,305,228,77,1,7.56,-0.70,-10.27
+11,Sun,November 20,8:32PM ET,boxscore,L,,6-4,,Philadelphia Eagles,10,17,12,278,249,29,2,17,391,255,136,3,-12.04,0.38,1.96
+12,Mon,November 28,8:40PM ET,boxscore,L,,6-5,@,New Orleans Saints,24,49,29,465,392,73,2,31,577,372,205,,13.42,-33.74,-1.66
+13,Sun,December 4,4:15PM ET,boxscore,L,,6-6,,Green Bay Packers,35,38,24,447,347,100,2,29,449,360,89,1,8.83,-20.20,6.30
+14,Sun,December 11,8:30PM ET,boxscore,W,,7-6,@,Dallas Cowboys,37,34,28,510,400,110,1,23,444,305,139,1,19.02,-17.77,0.89
+15,Sun,December 18,1:02PM ET,boxscore,L,,7-7,,Washington Redskins,10,23,22,324,233,91,3,19,300,177,123,2,-5.52,-7.40,-3.39
+16,Sat,December 24,1:03PM ET,boxscore,W,,8-7,@,New York Jets,29,14,11,332,217,115,1,22,331,226,105,3,-3.27,14.01,3.11
+17,Sun,January 1,8:31PM ET,boxscore,W,,9-7,,Dallas Cowboys,31,14,20,437,331,106,,19,300,251,49,2,15.03,4.82,-4.24
+,,Playoffs,,,,,,,,,,,,,,,,,,,,,,
+Wild Card,Sun,January 8,1:06PM ET,boxscore,W,,10-7,,Atlanta Falcons,24,2,19,442,270,172,,14,247,183,64,,16.19,13.58,-9.51
+Division,Sun,January 15,4:40PM ET,boxscore,W,,11-7,@,Green Bay Packers,37,20,19,420,325,95,1,25,388,241,147,4,12.89,5.25,-1.79
+Conf. Champ.,Sun,January 22,6:41PM ET,boxscore,W,OT,12-7,@,San Francisco 49ers,20,17,20,352,267,85,,15,328,178,150,2,-11.25,1.10,7.51
+SuperBowl,Sun,February 5,6:30PM ET,boxscore,W,,13-7,N,New England Patriots,21,17,26,396,282,114,,21,349,266,83,1,13.35,-10.62,1.39

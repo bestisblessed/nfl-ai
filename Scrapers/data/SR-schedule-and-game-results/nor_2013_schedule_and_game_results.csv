@@ -1,0 +1,21 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 8,1:03PM ET,boxscore,W,,1-0,,Atlanta Falcons,23,17,18,419,341,78,1,18,367,279,88,2,4.95,0.68,-1.41
+2,Sun,September 15,4:05PM ET,boxscore,W,,2-0,@,Tampa Bay Buccaneers,16,14,21,371,296,75,2,14,273,113,160,2,-6.82,8.33,1.20
+3,Sun,September 22,1:03PM ET,boxscore,W,,3-0,,Arizona Cardinals,31,7,27,423,319,104,1,16,247,161,86,2,17.29,9.13,-0.19
+4,Mon,September 30,8:40PM ET,boxscore,W,,4-0,,Miami Dolphins,38,17,23,465,397,68,1,19,331,216,115,4,17.69,5.42,-1.75
+5,Sun,October 6,1:02PM ET,boxscore,W,,5-0,@,Chicago Bears,26,18,17,347,283,64,,20,434,340,94,1,7.69,-6.01,3.66
+6,Sun,October 13,4:25PM ET,boxscore,L,,5-1,@,New England Patriots,27,30,20,361,230,131,2,26,376,235,141,1,4.55,1.19,-3.36
+7,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+8,Sun,October 27,1:02PM ET,boxscore,W,,6-1,,Buffalo Bills,35,17,21,386,309,77,,20,299,211,88,3,16.30,4.47,-3.83
+9,Sun,November 3,1:04PM ET,boxscore,L,,6-2,@,New York Jets,20,26,23,407,366,41,2,14,338,140,198,,0.73,-1.74,-8.15
+10,Sun,November 10,8:30PM ET,boxscore,W,,7-2,,Dallas Cowboys,49,17,40,625,383,242,1,9,193,104,89,,46.75,4.88,-15.75
+11,Sun,November 17,4:25PM ET,boxscore,W,,8-2,,San Francisco 49ers,23,20,23,387,295,92,3,12,196,115,81,1,5.14,5.76,-8.17
+12,Thu,November 21,8:30PM ET,boxscore,W,,9-2,@,Atlanta Falcons,17,13,19,374,271,103,,22,355,264,91,1,10.67,-7.53,2.73
+13,Mon,December 2,8:41PM ET,boxscore,L,,9-3,@,Seattle Seahawks,7,34,12,188,144,44,1,23,429,302,127,,-16.45,-16.74,6.31
+14,Sun,December 8,8:30PM ET,boxscore,W,,10-3,,Carolina Panthers,31,13,24,373,304,69,,16,239,111,128,,18.20,2.10,-3.54
+15,Sun,December 15,4:25PM ET,boxscore,L,,10-4,@,St. Louis Rams,16,27,30,432,371,61,3,17,302,158,144,,7.72,-10.36,-8.61
+16,Sun,December 22,1:04PM ET,boxscore,L,,10-5,@,Carolina Panthers,13,17,20,365,239,126,2,10,222,141,81,1,-11.03,7.24,2.62
+17,Sun,December 29,4:25PM ET,boxscore,W,,11-5,,Tampa Bay Buccaneers,42,17,21,468,370,98,,18,290,215,75,1,23.14,5.55,-7.33
+,,Playoffs,,,,,,,,,,,,,,,,,,,,,,
+Wild Card,Sat,January 4,8:14PM ET,boxscore,W,,12-5,@,Philadelphia Eagles,26,24,26,434,249,185,2,17,256,176,80,,6.97,-7.51,2.54
+Division,Sat,January 11,4:36PM ET,boxscore,L,,12-6,@,Seattle Seahawks,15,23,25,409,301,108,1,13,277,103,174,,-1.25,-0.52,-6.46

@@ -1,0 +1,18 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Mon,September 10,10:25PM ET,boxscore,W,,1-0,@,Oakland Raiders,22,14,15,258,226,32,,21,321,276,45,1,0.43,1.45,6.78
+2,Sun,September 16,4:25PM ET,boxscore,W,,2-0,,Tennessee Titans,38,10,27,416,268,148,1,9,212,174,38,1,21.68,6.48,-4.65
+3,Sun,September 23,4:05PM ET,boxscore,L,,2-1,,Atlanta Falcons,3,27,15,280,164,116,4,25,384,265,119,1,-12.34,-13.40,0.21
+4,Sun,September 30,1:03PM ET,boxscore,W,,3-1,@,Kansas City Chiefs,37,20,19,293,189,104,1,25,349,234,115,6,2.82,14.07,-1.94
+5,Sun,October 7,8:31PM ET,boxscore,L,,3-2,@,New Orleans Saints,24,31,27,427,310,117,2,21,404,351,53,1,9.44,-11.97,-3.72
+6,Mon,October 15,8:40PM ET,boxscore,L,,3-3,,Denver Broncos,24,35,23,307,217,90,6,18,365,309,56,3,-20.12,-2.30,9.87
+7,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+8,Sun,October 28,1:06PM ET,boxscore,L,,3-4,@,Cleveland Browns,6,7,17,265,148,117,1,15,250,117,133,,-14.16,6.41,6.38
+9,Thu,November 1,8:27PM ET,boxscore,W,,4-4,,Kansas City Chiefs,31,13,18,339,216,123,2,21,289,176,113,4,9.03,7.99,3.69
+10,Sun,November 11,1:03PM ET,boxscore,L,,4-5,@,Tampa Bay Buccaneers,24,34,23,426,323,103,2,12,279,205,74,,7.61,-9.61,-6.33
+11,Sun,November 18,4:25PM ET,boxscore,L,,4-6,@,Denver Broncos,23,30,13,277,224,53,3,21,386,253,133,2,-18.89,3.19,4.77
+12,Sun,November 25,4:05PM ET,boxscore,L,OT,4-7,,Baltimore Ravens,13,16,16,280,189,91,,25,443,316,127,,-4.12,-2.26,4.78
+13,Sun,December 2,4:25PM ET,boxscore,L,,4-8,,Cincinnati Bengals,13,20,20,297,251,46,2,21,339,211,128,3,-5.91,3.42,-3.18
+14,Sun,December 9,1:02PM ET,boxscore,W,,5-8,@,Pittsburgh Steelers,34,24,19,294,200,94,,18,340,271,69,2,1.17,6.26,0.92
+15,Sun,December 16,4:05PM ET,boxscore,L,,5-9,,Carolina Panthers,7,31,12,164,94,70,2,29,372,217,155,1,-11.73,-12.97,1.83
+16,Sun,December 23,1:03PM ET,boxscore,W,,6-9,@,New York Jets,27,17,15,223,136,87,,18,225,156,69,2,-2.07,10.97,2.99
+17,Sun,December 30,4:21PM ET,boxscore,W,,7-9,,Oakland Raiders,24,21,14,210,140,70,,17,265,150,115,1,-0.80,-0.71,2.13

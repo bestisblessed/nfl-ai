@@ -1,0 +1,20 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 11,1:06PM ET,boxscore,W,,1-0,@,Tampa Bay Buccaneers,27,20,25,431,305,126,1,17,315,259,56,2,7.26,-0.26,-1.73
+2,Sun,September 18,1:02PM ET,boxscore,W,,2-0,,Kansas City Chiefs,48,3,23,411,322,89,1,12,267,116,151,6,17.01,23.45,4.96
+3,Sun,September 25,1:05PM ET,boxscore,W,OT,3-0,@,Minnesota Vikings,26,23,19,358,338,20,,16,321,189,132,,4.23,4.46,-5.63
+4,Sun,October 2,1:02PM ET,boxscore,W,,4-0,@,Dallas Cowboys,34,30,18,303,240,63,1,25,434,321,113,3,-2.92,6.22,2.15
+5,Mon,October 10,8:40PM ET,boxscore,W,,5-0,,Chicago Bears,24,13,16,395,214,181,1,23,359,237,122,,15.11,-4.08,-4.05
+6,Sun,October 16,1:03PM ET,boxscore,L,,5-1,,San Francisco 49ers,19,25,21,310,244,66,,14,314,111,203,2,-7.91,13.21,-11.30
+7,Sun,October 23,1:05PM ET,boxscore,L,,5-2,,Atlanta Falcons,16,23,13,263,159,104,1,22,328,199,129,2,-6.33,0.76,-2.34
+8,Sun,October 30,4:10PM ET,boxscore,W,,6-2,@,Denver Broncos,45,10,21,376,263,113,,19,312,117,195,3,13.27,28.52,-6.22
+9,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+10,Sun,November 13,4:16PM ET,boxscore,L,,6-3,@,Chicago Bears,13,37,22,393,313,80,6,12,216,107,109,1,-28.13,8.13,-6.33
+11,Sun,November 20,1:02PM ET,boxscore,W,,7-3,,Carolina Panthers,49,35,29,495,326,169,3,24,409,272,137,4,25.41,-2.27,-8.83
+12,Thu,November 24,12:35PM ET,boxscore,L,,7-4,,Green Bay Packers,15,27,23,409,273,136,3,18,349,296,53,,3.15,-11.14,-2.40
+13,Sun,December 4,8:31PM ET,boxscore,L,,7-5,@,New Orleans Saints,17,31,25,466,379,87,1,21,438,338,100,,9.84,-18.58,-5.37
+14,Sun,December 11,1:03PM ET,boxscore,W,,8-5,,Minnesota Vikings,34,28,13,280,208,72,,29,425,156,269,6,1.79,2.09,2.91
+15,Sun,December 18,4:05PM ET,boxscore,W,,9-5,@,Oakland Raiders,28,27,25,432,375,57,1,26,477,345,132,1,10.93,-10.54,-1.91
+16,Sat,December 24,4:05PM ET,boxscore,W,,10-5,,San Diego Chargers,38,10,24,440,353,87,,20,367,299,68,2,24.58,5.31,-2.24
+17,Sun,January 1,1:02PM ET,boxscore,L,,10-6,@,Green Bay Packers,41,45,32,575,502,73,4,27,550,469,81,2,17.18,-23.71,2.86
+,,Playoffs,,,,,,,,,,,,,,,,,,,,,,
+Wild Card,Sat,January 7,8:09PM ET,boxscore,L,,10-7,@,New Orleans Saints,28,45,22,412,380,32,2,34,626,459,167,2,18.92,-36.36,0.82

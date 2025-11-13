@@ -1,0 +1,20 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 9,1:02PM ET,boxscore,L,,0-1,@,Chicago Bears,21,41,22,356,293,63,5,26,428,314,114,1,-1.77,-9.73,-6.73
+2,Sun,September 16,1:03PM ET,boxscore,W,,1-1,,Minnesota Vikings,23,20,17,278,194,84,,19,327,232,95,1,3.68,-3.01,-0.98
+3,Sun,September 23,1:03PM ET,boxscore,L,,1-2,,Jacksonville Jaguars,17,22,23,437,313,124,1,15,333,148,185,,6.21,-4.77,-5.12
+4,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+5,Sun,October 7,1:03PM ET,boxscore,W,,2-2,,Green Bay Packers,30,27,28,464,345,119,1,21,356,207,149,1,10.06,-9.02,2.47
+6,Sun,October 14,1:02PM ET,boxscore,L,,2-3,@,New York Jets,9,35,21,298,257,41,4,22,351,99,252,,-7.10,-17.91,-1.58
+7,Sun,October 21,1:02PM ET,boxscore,W,,3-3,,Cleveland Browns,17,13,21,321,173,148,1,19,319,264,55,,6.45,-7.49,2.78
+8,Sun,October 28,1:06PM ET,boxscore,W,OT,4-3,@,Tennessee Titans,19,13,30,457,286,171,1,20,339,227,112,,15.98,-8.31,-1.92
+9,Sun,November 4,1:02PM ET,boxscore,W,,5-3,,Miami Dolphins,23,20,27,516,419,97,,20,365,281,84,,22.88,-7.11,-9.19
+10,Thu,November 8,8:30PM ET,boxscore,W,,6-3,@,Jacksonville Jaguars,27,10,24,359,221,138,2,20,337,300,37,3,6.03,11.69,1.32
+11,Sun,November 18,4:25PM ET,boxscore,L,,6-4,@,New England Patriots,24,59,28,448,329,119,4,25,446,331,115,,-1.95,-26.83,-7.74
+12,Sun,November 25,1:03PM ET,boxscore,W,,7-4,,Buffalo Bills,20,13,22,312,225,87,2,16,304,169,135,1,1.86,0.03,4.13
+13,Sun,December 2,1:03PM ET,boxscore,W,,8-4,@,Detroit Lions,35,33,23,459,372,87,3,21,451,313,138,1,7.78,-5.54,0.32
+14,Sun,December 9,1:02PM ET,boxscore,W,,9-4,,Tennessee Titans,27,23,20,269,171,98,2,17,356,259,97,2,-4.73,2.91,4.36
+15,Sun,December 16,1:02PM ET,boxscore,L,,9-5,@,Houston Texans,17,29,19,272,148,124,1,23,417,239,178,,0.25,-12.73,2.84
+16,Sun,December 23,1:03PM ET,boxscore,W,,10-5,@,Kansas City Chiefs,20,13,16,288,198,90,,22,507,155,352,3,-1.07,0.19,8.28
+17,Sun,December 30,1:02PM ET,boxscore,W,,11-5,,Houston Texans,28,16,19,265,184,81,,19,352,250,102,2,10.35,-3.14,7.95
+,,Playoffs,,,,,,,,,,,,,,,,,,,,,,
+Wild Card,Sun,January 6,1:07PM ET,boxscore,L,,11-6,@,Baltimore Ravens,9,24,25,419,267,152,2,18,439,269,170,2,-4.62,-10.86,0.48

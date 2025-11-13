@@ -1,0 +1,20 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Thu,September 8,8:40PM ET,boxscore,W,,1-0,,New Orleans Saints,42,34,27,399,296,103,,27,477,396,81,1,23.08,-19.92,-1.53
+2,Sun,September 18,1:02PM ET,boxscore,W,,2-0,@,Carolina Panthers,30,23,16,419,295,124,1,26,475,404,71,4,11.59,-3.46,0.32
+3,Sun,September 25,4:15PM ET,boxscore,W,,3-0,@,Chicago Bears,27,17,24,392,292,100,2,12,291,278,13,2,1.23,9.17,-1.42
+4,Sun,October 2,4:15PM ET,boxscore,W,,4-0,,Denver Broncos,49,23,26,507,396,111,2,18,384,265,119,4,23.98,2.52,0.11
+5,Sun,October 9,8:30PM ET,boxscore,W,,5-0,@,Atlanta Falcons,25,14,19,426,369,57,1,18,251,156,95,2,9.79,2.87,0.37
+6,Sun,October 16,1:02PM ET,boxscore,W,,6-0,,St. Louis Rams,24,3,20,399,309,90,1,22,424,306,118,1,12.19,7.52,3.28
+7,Sun,October 23,4:15PM ET,boxscore,W,,7-0,@,Minnesota Vikings,33,27,25,421,307,114,1,22,435,217,218,2,18.22,-9.10,-0.22
+8,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+9,Sun,November 6,4:15PM ET,boxscore,W,,8-0,@,San Diego Chargers,45,38,21,368,232,136,,28,460,375,85,3,19.20,-5.30,-1.68
+10,Mon,November 14,8:40PM ET,boxscore,W,,9-0,,Minnesota Vikings,45,7,23,356,266,90,1,14,266,162,104,1,22.87,11.17,0.14
+11,Sun,November 20,1:02PM ET,boxscore,W,,10-0,,Tampa Bay Buccaneers,35,26,24,378,287,91,1,22,455,334,121,2,17.58,-6.59,1.61
+12,Thu,November 24,12:35PM ET,boxscore,W,,11-0,@,Detroit Lions,27,15,18,349,296,53,,23,409,273,136,3,11.14,-3.15,2.40
+13,Sun,December 4,4:15PM ET,boxscore,W,,12-0,@,New York Giants,38,35,29,449,360,89,1,24,447,347,100,2,20.20,-8.83,-6.30
+14,Sun,December 11,4:15PM ET,boxscore,W,,13-0,,Oakland Raiders,46,16,22,391,255,136,1,23,357,240,117,5,13.68,15.21,1.00
+15,Sun,December 18,1:03PM ET,boxscore,L,,13-1,@,Kansas City Chiefs,14,19,16,315,213,102,,23,438,299,139,,1.27,-9.30,1.90
+16,Sun,December 25,8:30PM ET,boxscore,W,,14-1,,Chicago Bears,35,21,19,363,282,81,,24,441,242,199,2,21.06,-10.54,6.03
+17,Sun,January 1,1:02PM ET,boxscore,W,,15-1,,Detroit Lions,45,41,27,550,469,81,2,32,575,502,73,4,23.71,-17.18,-2.86
+,,Playoffs,,,,,,,,,,,,,,,,,,,,,,
+Division,Sun,January 15,4:40PM ET,boxscore,L,,15-2,,New York Giants,20,37,25,388,241,147,4,19,420,325,95,1,-5.25,-12.89,1.79

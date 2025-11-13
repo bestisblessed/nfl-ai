@@ -1,0 +1,18 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Mon,September 12,7:11PM ET,boxscore,L,,0-1,,Pittsburgh Steelers,16,38,18,384,329,55,2,23,437,290,147,1,-4.94,-22.31,0.19
+2,Sun,September 18,1:03PM ET,boxscore,L,,0-2,,Dallas Cowboys,23,27,24,432,350,82,1,24,380,278,102,1,9.76,-14.43,2.03
+3,Sun,September 25,1:02PM ET,boxscore,W,,1-2,@,New York Giants,29,27,20,403,313,90,1,28,457,337,120,3,12.07,-7.82,1.86
+4,Sun,October 2,1:05PM ET,boxscore,W,,2-2,,Cleveland Browns,31,20,24,301,156,145,1,26,380,217,163,3,13.40,-4.68,-0.33
+5,Sun,October 9,1:03PM ET,boxscore,W,,3-2,@,Baltimore Ravens,16,10,18,310,250,60,2,18,306,188,118,1,-2.61,8.56,-0.93
+6,Sun,October 16,1:03PM ET,boxscore,W,,4-2,,Philadelphia Eagles,27,20,26,493,263,230,1,12,239,145,94,,12.56,4.90,-7.31
+7,Sun,October 23,1:02PM ET,boxscore,L,,4-3,@,Detroit Lions,17,20,26,413,283,130,2,19,344,250,94,,8.70,-11.55,-1.85
+8,Sun,October 30,8:36AM ET,boxscore,T,OT,4-3-1,@,Cincinnati Bengals,27,27,30,546,446,100,1,35,415,263,152,2,16.21,-13.63,-7.10
+9,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+10,Sun,November 13,1:00PM ET,boxscore,W,,5-3-1,,Minnesota Vikings,26,20,23,388,260,128,1,22,331,284,47,1,9.48,-3.73,1.30
+11,Sun,November 20,8:30PM ET,boxscore,W,,6-3-1,,Green Bay Packers,42,24,21,515,364,151,,19,424,340,84,2,30.26,-10.04,1.17
+12,Thu,November 24,4:30PM ET,boxscore,L,,6-4-1,@,Dallas Cowboys,26,31,25,505,449,56,,24,353,190,163,,24.94,-19.18,-11.43
+13,Sun,December 4,4:25PM ET,boxscore,L,,6-5-1,@,Arizona Cardinals,23,31,19,333,246,87,2,24,369,281,88,,3.39,-17.30,5.81
+14,Sun,December 11,1:00PM ET,boxscore,W,,7-5-1,@,Philadelphia Eagles,27,22,16,334,227,107,1,24,383,288,95,2,10.94,-0.81,-5.46
+15,Mon,December 19,8:30PM ET,boxscore,L,,7-6-1,,Carolina Panthers,15,26,18,335,306,29,3,22,438,290,148,,-14.58,-3.83,5.01
+16,Sat,December 24,1:00PM ET,boxscore,W,,8-6-1,@,Chicago Bears,41,21,21,478,270,208,,31,458,318,140,5,25.47,-7.65,0.12
+17,Sun,January 1,4:25PM ET,boxscore,L,,8-7-1,,New York Giants,10,19,16,284,246,38,3,17,332,171,161,,-14.09,6.63,-3.53

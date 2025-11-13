@@ -1,0 +1,18 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 11,8:33PM ET,boxscore,L,,0-1,@,New York Jets,24,27,21,390,326,64,3,19,360,315,45,2,0.11,2.95,-5.63
+2,Sun,September 18,4:05PM ET,boxscore,W,OT,1-1,@,San Francisco 49ers,27,24,20,472,427,45,2,14,206,132,74,1,12.54,2.83,-14.10
+3,Mon,September 26,8:41PM ET,boxscore,W,,2-1,,Washington Redskins,18,16,17,375,250,125,2,20,298,233,65,2,-3.71,6.87,1.08
+4,Sun,October 2,1:02PM ET,boxscore,L,,2-2,,Detroit Lions,30,34,25,434,321,113,3,18,303,240,63,1,-6.22,2.92,-2.15
+5,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+6,Sun,October 16,4:15PM ET,boxscore,L,,2-3,@,New England Patriots,16,20,21,377,300,77,2,25,371,270,101,4,-1.21,-2.89,1.61
+7,Sun,October 23,4:15PM ET,boxscore,W,,3-3,,St. Louis Rams,34,7,24,445,151,294,1,13,265,195,70,2,17.68,10.36,-1.40
+8,Sun,October 30,8:28PM ET,boxscore,L,,3-4,@,Philadelphia Eagles,7,34,12,267,182,85,1,31,495,256,239,,-1.31,-27.96,6.97
+9,Sun,November 6,1:02PM ET,boxscore,W,,4-4,,Seattle Seahawks,23,13,18,442,279,163,1,18,381,219,162,3,9.63,-1.03,1.40
+10,Sun,November 13,1:02PM ET,boxscore,W,,5-4,,Buffalo Bills,44,7,24,433,270,163,,20,271,136,135,4,24.58,11.85,-0.33
+11,Sun,November 20,1:03PM ET,boxscore,W,OT,6-4,@,Washington Redskins,27,24,20,353,264,89,,18,339,279,60,2,7.70,-1.30,-3.96
+12,Thu,November 24,4:16PM ET,boxscore,W,,7-4,,Miami Dolphins,20,19,19,303,218,85,2,18,352,263,89,1,-1.95,0.60,2.35
+13,Sun,December 4,4:15PM ET,boxscore,L,OT,7-5,@,Arizona Cardinals,13,19,20,336,261,75,,16,327,224,103,,1.98,-1.07,-7.14
+14,Sun,December 11,8:30PM ET,boxscore,L,,7-6,,New York Giants,34,37,23,444,305,139,1,28,510,400,110,1,17.77,-19.02,-0.89
+15,Sat,December 17,8:29PM ET,boxscore,W,,8-6,@,Tampa Bay Buccaneers,31,15,28,399,239,160,1,7,190,132,58,1,15.80,11.22,-6.40
+16,Sat,December 24,4:15PM ET,boxscore,L,,8-7,,Philadelphia Eagles,7,20,16,238,157,81,,20,386,281,105,1,-9.54,-3.77,0.73
+17,Sun,January 1,8:31PM ET,boxscore,L,,8-8,@,New York Giants,14,31,19,300,251,49,2,20,437,331,106,,-4.82,-15.03,4.24

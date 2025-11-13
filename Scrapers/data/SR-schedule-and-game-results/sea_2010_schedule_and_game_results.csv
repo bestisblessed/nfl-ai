@@ -1,0 +1,21 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 12,4:16PM ET,boxscore,W,,1-0,,San Francisco 49ers,31,6,14,242,165,77,1,14,263,214,49,2,2.30,21.98,2.49
+2,Sun,September 19,4:06PM ET,boxscore,L,,1-1,@,Denver Broncos,14,31,17,339,230,109,4,23,369,304,65,,1.80,-17.46,-0.36
+3,Sun,September 26,4:16PM ET,boxscore,W,,2-1,,San Diego Chargers,27,20,13,271,203,68,2,27,518,429,89,5,-5.48,2.42,16.72
+4,Sun,October 3,1:00PM ET,boxscore,L,,2-2,@,St. Louis Rams,3,20,15,257,193,64,2,19,349,261,88,1,-22.30,5.23,2.33
+5,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+6,Sun,October 17,1:02PM ET,boxscore,W,,3-2,@,Chicago Bears,23,20,20,353,242,111,,15,307,246,61,,-0.05,0.98,3.54
+7,Sun,October 24,4:06PM ET,boxscore,W,,4-2,,Arizona Cardinals,22,10,16,302,158,144,1,13,227,114,113,5,-14.84,15.69,12.62
+8,Sun,October 31,4:15PM ET,boxscore,L,,4-3,@,Oakland Raiders,3,33,10,164,117,47,1,18,545,306,239,,-20.01,-15.80,3.12
+9,Sun,November 7,4:05PM ET,boxscore,L,,4-4,,New York Giants,7,41,8,162,113,49,3,30,487,290,197,1,-14.24,-19.37,-1.79
+10,Sun,November 14,4:15PM ET,boxscore,W,,5-4,@,Arizona Cardinals,36,18,24,490,380,110,1,19,327,286,41,2,8.78,9.82,-2.15
+11,Sun,November 21,4:05PM ET,boxscore,L,,5-5,@,New Orleans Saints,19,34,21,424,366,58,2,26,494,382,112,2,5.87,-24.97,5.10
+12,Sun,November 28,4:06PM ET,boxscore,L,,5-6,,Kansas City Chiefs,24,42,13,288,268,20,3,28,503,233,270,1,-12.85,-21.74,14.10
+13,Sun,December 5,4:16PM ET,boxscore,W,,6-6,,Carolina Panthers,31,14,25,371,210,161,2,18,283,152,131,1,8.38,9.43,-1.96
+14,Sun,December 12,4:05PM ET,boxscore,L,,6-7,@,San Francisco 49ers,21,40,20,361,277,84,5,10,336,241,95,,-17.80,-4.22,4.85
+15,Sun,December 19,4:06PM ET,boxscore,L,,6-8,,Atlanta Falcons,18,34,15,234,143,91,3,21,266,168,98,1,-14.38,-2.29,-2.29
+16,Sun,December 26,4:16PM ET,boxscore,L,,6-9,@,Tampa Bay Buccaneers,15,38,10,174,84,90,,22,439,231,208,,-5.25,-22.94,2.89
+17,Sun,January 2,8:31PM ET,boxscore,W,,7-9,,St. Louis Rams,16,6,19,333,192,141,1,10,184,137,47,1,-5.64,21.53,-4.70
+,,Playoffs,,,,,,,,,,,,,,,,,,,,,,
+Wild Card,Sat,January 8,4:35PM ET,boxscore,W,,8-9,,New Orleans Saints,41,36,19,415,265,150,1,32,474,397,77,1,13.99,-12.16,4.70
+Division,Sun,January 16,1:05PM ET,boxscore,L,,8-10,@,Chicago Bears,24,35,18,276,242,34,,21,437,261,176,1,-1.27,-9.08,-0.64

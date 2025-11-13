@@ -1,0 +1,18 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 11,4:23PM ET,boxscore,W,,1-0,,New York Giants,28,14,21,332,258,74,1,15,315,240,75,1,5.12,6.25,3.00
+2,Sun,September 18,1:03PM ET,boxscore,W,,2-0,,Arizona Cardinals,22,21,28,455,283,172,2,16,324,231,93,2,6.55,-1.83,-2.87
+3,Mon,September 26,8:41PM ET,boxscore,L,,2-1,@,Dallas Cowboys,16,18,20,298,233,65,2,17,375,250,125,2,-6.87,3.71,-1.08
+4,Sun,October 2,1:00PM ET,boxscore,W,,3-1,@,St. Louis Rams,17,10,16,339,143,196,2,14,172,127,45,1,-9.55,20.98,-0.81
+5,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+6,Sun,October 16,1:05PM ET,boxscore,L,,3-2,,Philadelphia Eagles,13,20,17,287,245,42,4,22,422,230,192,2,-7.71,-4.14,5.83
+7,Sun,October 23,1:05PM ET,boxscore,L,,3-3,@,Carolina Panthers,20,33,22,353,261,92,3,20,407,232,175,,-1.53,-11.44,-1.92
+8,Sun,October 30,4:05PM ET,boxscore,L,,3-4,@,Buffalo Bills,0,23,10,178,152,26,2,17,390,252,138,2,-21.45,-4.37,2.96
+9,Sun,November 6,1:03PM ET,boxscore,L,,3-5,,San Francisco 49ers,11,19,17,303,251,52,3,15,326,188,138,1,-14.27,5.30,-0.73
+10,Sun,November 13,1:03PM ET,boxscore,L,,3-6,@,Miami Dolphins,9,20,16,246,185,61,2,20,303,200,103,2,-8.83,0.98,-0.93
+11,Sun,November 20,1:03PM ET,boxscore,L,OT,3-7,,Dallas Cowboys,24,27,18,339,279,60,2,20,353,264,89,,1.30,-7.70,3.96
+12,Sun,November 27,4:07PM ET,boxscore,W,,4-7,@,Seattle Seahawks,23,17,22,416,306,110,2,15,250,126,124,1,4.34,6.25,-5.19
+13,Sun,December 4,1:03PM ET,boxscore,L,,4-8,,New York Jets,19,34,17,304,204,100,3,16,266,165,101,1,-13.13,-4.10,3.35
+14,Sun,December 11,1:03PM ET,boxscore,L,,4-9,,New England Patriots,27,34,25,463,293,170,2,22,431,352,79,1,13.23,-17.14,-2.16
+15,Sun,December 18,1:02PM ET,boxscore,W,,5-9,@,New York Giants,23,10,19,300,177,123,2,22,324,233,91,3,7.40,5.52,3.39
+16,Sat,December 24,1:05PM ET,boxscore,L,,5-10,,Minnesota Vikings,26,33,23,397,256,141,2,20,389,148,241,,2.11,-13.67,5.68
+17,Sun,January 1,1:02PM ET,boxscore,L,,5-11,@,Philadelphia Eagles,10,34,21,377,247,130,1,24,390,315,75,2,-3.36,-8.48,-6.54

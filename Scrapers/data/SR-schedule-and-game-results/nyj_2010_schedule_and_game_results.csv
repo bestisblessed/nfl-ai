@@ -1,0 +1,22 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Mon,September 13,7:26PM ET,boxscore,L,,0-1,,Baltimore Ravens,9,10,6,176,60,116,1,20,282,233,49,3,-19.74,12.33,2.99
+2,Sun,September 19,4:16PM ET,boxscore,W,,1-1,,New England Patriots,28,14,23,336,200,136,,20,291,239,52,3,14.80,-3.86,1.60
+3,Sun,September 26,8:30PM ET,boxscore,W,,2-1,@,Miami Dolphins,31,23,20,402,256,146,,24,436,352,84,1,18.22,-9.80,0.57
+4,Sun,October 3,1:02PM ET,boxscore,W,,3-1,@,Buffalo Bills,38,14,25,444,171,273,,12,223,109,114,2,18.28,9.04,-2.80
+5,Mon,October 11,9:15PM ET,boxscore,W,,4-1,,Minnesota Vikings,29,20,20,328,173,155,,16,336,240,96,3,-5.42,11.77,0.85
+6,Sun,October 17,4:05PM ET,boxscore,W,,5-1,@,Denver Broncos,24,20,17,319,190,129,3,21,346,201,145,2,-0.46,7.12,-0.62
+7,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+8,Sun,October 31,1:03PM ET,boxscore,L,,5-2,,Green Bay Packers,0,9,15,360,241,119,3,13,237,156,81,,-19.00,12.33,0.68
+9,Sun,November 7,1:03PM ET,boxscore,W,OT,6-2,@,Detroit Lions,23,20,23,437,327,110,2,21,306,228,78,,5.58,-1.25,-3.39
+10,Sun,November 14,1:02PM ET,boxscore,W,OT,7-2,@,Cleveland Browns,26,20,28,456,284,172,1,19,303,196,107,2,12.33,1.40,-7.81
+11,Sun,November 21,1:03PM ET,boxscore,W,,8-2,,Houston Texans,30,27,22,401,298,103,2,17,343,246,97,1,3.16,-2.06,1.75
+12,Thu,November 25,8:30PM ET,boxscore,W,,9-2,,Cincinnati Bengals,26,10,18,319,149,170,1,13,163,117,46,3,-3.23,14.15,5.80
+13,Mon,December 6,8:40PM ET,boxscore,L,,9-3,@,New England Patriots,3,45,18,301,149,152,3,23,405,304,101,,-10.55,-27.83,-0.42
+14,Sun,December 12,4:15PM ET,boxscore,L,,9-4,,Miami Dolphins,6,10,14,280,193,87,2,6,131,30,101,3,-28.03,32.55,-9.83
+15,Sun,December 19,4:15PM ET,boxscore,W,,10-4,@,Pittsburgh Steelers,22,17,17,276,170,106,,25,378,232,146,,6.26,-11.72,9.35
+16,Sun,December 26,1:02PM ET,boxscore,L,,10-5,@,Chicago Bears,34,38,24,393,269,124,2,16,322,202,120,1,4.64,-7.07,-3.13
+17,Sun,January 2,1:03PM ET,boxscore,W,,11-5,,Buffalo Bills,38,7,17,388,112,276,1,6,162,125,37,6,4.88,33.99,-5.08
+,,Playoffs,,,,,,,,,,,,,,,,,,,,,,
+Wild Card,Sat,January 8,8:15PM ET,boxscore,W,,12-5,@,Indianapolis Colts,17,16,23,353,184,169,1,16,312,219,93,,6.99,-5.38,0.15
+Division,Sun,January 16,4:40PM ET,boxscore,W,,13-5,@,New England Patriots,28,21,14,314,194,120,,26,372,259,113,1,9.99,6.26,-6.57
+Conf. Champ.,Sun,January 23,6:41PM ET,boxscore,L,,13-6,@,Pittsburgh Steelers,19,24,17,289,219,70,1,23,287,121,166,2,-1.33,-4.42,0.71

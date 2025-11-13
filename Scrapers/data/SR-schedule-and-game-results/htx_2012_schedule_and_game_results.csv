@@ -1,0 +1,21 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 9,1:03PM ET,boxscore,W,,1-0,,Miami Dolphins,30,10,19,337,254,83,,15,275,199,76,4,5.26,28.02,-13.73
+2,Sun,September 16,1:03PM ET,boxscore,W,,2-0,@,Jacksonville Jaguars,27,7,28,411,195,216,,9,117,52,65,1,13.96,17.45,-8.29
+3,Sun,September 23,4:25PM ET,boxscore,W,,3-0,@,Denver Broncos,31,25,23,436,284,152,2,24,375,316,59,1,11.08,-6.82,1.21
+4,Sun,September 30,1:03PM ET,boxscore,W,,4-0,,Tennessee Titans,38,14,16,297,202,95,,17,325,167,158,3,6.09,16.37,1.06
+5,Mon,October 8,8:40PM ET,boxscore,W,,5-0,@,New York Jets,23,17,18,378,209,169,1,15,286,217,69,2,2.86,10.26,-6.34
+6,Sun,October 14,8:30PM ET,boxscore,L,,5-1,,Green Bay Packers,24,42,23,321,231,90,3,25,427,328,99,,0.13,-19.84,2.97
+7,Sun,October 21,1:02PM ET,boxscore,W,,6-1,,Baltimore Ravens,43,13,27,420,239,181,,12,176,121,55,2,17.98,19.80,-6.88
+8,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+9,Sun,November 4,1:02PM ET,boxscore,W,,7-1,,Buffalo Bills,21,9,21,374,256,118,,17,304,230,74,1,8.35,4.28,-1.34
+10,Sun,November 11,8:31PM ET,boxscore,W,,8-1,@,Chicago Bears,13,6,13,215,88,127,2,8,249,134,115,4,-15.99,26.28,-1.41
+11,Sun,November 18,1:03PM ET,boxscore,W,OT,9-1,,Jacksonville Jaguars,43,37,39,653,504,149,3,17,458,372,86,1,22.81,-10.25,-9.42
+12,Thu,November 22,12:39PM ET,boxscore,W,OT,10-1,@,Detroit Lions,34,31,26,501,296,205,1,29,525,419,106,1,14.30,-12.59,-1.01
+13,Sun,December 2,1:02PM ET,boxscore,W,,11-1,@,Tennessee Titans,24,10,16,331,207,124,,17,354,265,89,6,-5.40,22.99,0.72
+14,Mon,December 10,8:40PM ET,boxscore,L,,11-2,@,New England Patriots,14,42,19,323,223,100,1,27,419,289,130,1,-6.13,-20.98,0.88
+15,Sun,December 16,1:02PM ET,boxscore,W,,12-2,,Indianapolis Colts,29,17,23,417,239,178,,19,272,148,124,1,12.73,-0.25,-2.84
+16,Sun,December 23,1:03PM ET,boxscore,L,,12-3,,Minnesota Vikings,6,23,11,187,153,34,2,22,345,171,174,1,-17.73,-0.98,1.45
+17,Sun,December 30,1:02PM ET,boxscore,L,,12-4,@,Indianapolis Colts,16,28,19,352,250,102,2,19,265,184,81,,3.14,-10.35,-7.95
+,,Playoffs,,,,,,,,,,,,,,,,,,,,,,
+Wild Card,Sat,January 5,4:35PM ET,boxscore,W,,13-4,,Cincinnati Bengals,19,13,24,420,262,158,1,12,198,118,80,1,0.95,10.95,-4.81
+Division,Sun,January 13,4:40PM ET,boxscore,L,,13-5,@,New England Patriots,28,41,25,425,334,91,1,24,457,335,122,,9.61,-20.49,0.69

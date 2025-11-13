@@ -1,0 +1,22 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Mon,September 12,7:13PM ET,boxscore,W,,1-0,@,Miami Dolphins,38,24,27,622,516,106,1,25,488,390,98,1,24.68,-8.63,-2.84
+2,Sun,September 18,4:15PM ET,boxscore,W,,2-0,,San Diego Chargers,35,21,28,504,410,94,,29,470,372,98,4,25.02,-10.24,0.56
+3,Sun,September 25,1:03PM ET,boxscore,L,,2-1,@,Buffalo Bills,31,34,30,495,387,108,4,24,448,369,79,2,9.55,-9.66,-1.62
+4,Sun,October 2,4:15PM ET,boxscore,W,,3-1,@,Oakland Raiders,31,19,25,409,226,183,,24,504,344,160,2,18.64,-9.46,4.46
+5,Sun,October 9,4:15PM ET,boxscore,W,,4-1,,New York Jets,30,21,26,446,294,152,1,14,255,158,97,,15.34,-2.61,-3.21
+6,Sun,October 16,4:15PM ET,boxscore,W,,5-1,,Dallas Cowboys,20,16,25,371,270,101,4,21,377,300,77,2,2.89,1.21,-1.61
+7,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+8,Sun,October 30,4:15PM ET,boxscore,L,,5-2,@,Pittsburgh Steelers,17,25,19,213,170,43,,29,427,329,98,1,1.83,-10.61,-2.86
+9,Sun,November 6,4:15PM ET,boxscore,L,,5-3,,New York Giants,20,24,23,438,332,106,4,23,361,250,111,2,0.10,-3.18,-0.90
+10,Sun,November 13,8:31PM ET,boxscore,W,,6-3,@,New York Jets,37,16,21,389,329,60,,22,378,268,110,3,7.63,7.82,4.18
+11,Mon,November 21,8:40PM ET,boxscore,W,,7-3,,Kansas City Chiefs,34,3,20,380,223,157,1,16,334,209,125,3,10.81,13.31,4.42
+12,Sun,November 27,4:15PM ET,boxscore,W,,8-3,@,Philadelphia Eagles,38,20,29,457,353,104,,23,466,393,73,1,25.56,-8.06,2.60
+13,Sun,December 4,1:02PM ET,boxscore,W,,9-3,,Indianapolis Colts,31,24,24,362,289,73,,26,437,338,99,2,17.29,-13.40,5.22
+14,Sun,December 11,1:03PM ET,boxscore,W,,10-3,@,Washington Redskins,34,27,22,431,352,79,1,25,463,293,170,2,17.14,-13.23,2.16
+15,Sun,December 18,4:16PM ET,boxscore,W,,11-3,@,Denver Broncos,41,23,26,451,310,141,,25,393,141,252,3,20.42,-0.94,2.16
+16,Sat,December 24,1:02PM ET,boxscore,W,,12-3,,Miami Dolphins,27,24,26,400,281,119,,20,374,253,121,2,10.60,-6.57,-1.32
+17,Sun,January 1,1:02PM ET,boxscore,W,,13-3,,Buffalo Bills,49,21,28,480,342,138,1,26,402,296,106,4,22.96,-2.10,4.16
+,,Playoffs,,,,,,,,,,,,,,,,,,,,,,
+Division,Sat,January 14,8:15PM ET,boxscore,W,,14-3,,Denver Broncos,45,10,31,509,363,146,2,15,252,108,144,1,27.14,11.20,-2.48
+Conf. Champ.,Sun,January 22,3:05PM ET,boxscore,W,,15-3,,Baltimore Ravens,23,20,25,330,234,96,3,19,398,282,116,1,5.91,-3.41,-1.42
+SuperBowl,Sun,February 5,6:30PM ET,boxscore,L,,15-4,N,New York Giants,17,21,21,349,266,83,1,26,396,282,114,,10.62,-13.35,-1.39

@@ -1,0 +1,18 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 11,1:00PM ET,boxscore,L,,0-1,,Philadelphia Eagles,13,31,21,335,181,154,1,27,403,167,236,1,-3.03,-11.42,0.21
+2,Mon,September 19,8:40PM ET,boxscore,L,,0-2,@,New York Giants,16,28,14,367,308,59,2,22,323,204,119,1,-9.49,-1.79,0.22
+3,Sun,September 25,4:05PM ET,boxscore,L,,0-3,,Baltimore Ravens,7,37,17,244,132,112,2,25,553,385,168,1,-19.21,-19.43,8.05
+4,Sun,October 2,1:00PM ET,boxscore,L,,0-4,,Washington Redskins,10,17,14,172,127,45,1,16,339,143,196,2,-20.98,9.55,0.81
+5,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+6,Sun,October 16,1:02PM ET,boxscore,L,,0-5,@,Green Bay Packers,3,24,22,424,306,118,1,20,399,309,90,1,-7.52,-12.19,-3.28
+7,Sun,October 23,4:15PM ET,boxscore,L,,0-6,@,Dallas Cowboys,7,34,13,265,195,70,2,24,445,151,294,1,-10.36,-17.68,1.40
+8,Sun,October 30,1:00PM ET,boxscore,W,,1-6,,New Orleans Saints,31,21,21,323,140,183,1,8,283,227,56,2,-1.98,7.42,6.34
+9,Sun,November 6,4:15PM ET,boxscore,L,OT,1-7,@,Arizona Cardinals,13,19,23,383,233,150,1,16,262,192,70,,-3.48,1.71,-4.23
+10,Sun,November 13,1:03PM ET,boxscore,W,,2-7,@,Cleveland Browns,13,12,17,281,148,133,2,16,335,209,126,1,-8.88,0.52,7.86
+11,Sun,November 20,4:05PM ET,boxscore,L,,2-8,,Seattle Seahawks,7,24,13,185,143,42,3,16,289,163,126,2,-24.91,7.74,-0.68
+12,Sun,November 27,1:00PM ET,boxscore,L,,2-9,,Arizona Cardinals,20,23,12,272,186,86,2,16,374,106,268,3,-14.25,6.58,0.86
+13,Sun,December 4,4:15PM ET,boxscore,L,,2-10,@,San Francisco 49ers,0,26,10,157,126,31,2,18,389,245,144,,-21.20,-3.58,0.82
+14,Mon,December 12,8:40PM ET,boxscore,L,,2-11,@,Seattle Seahawks,13,30,19,281,167,114,1,21,359,214,145,1,-8.81,-5.23,-4.02
+15,Sun,December 18,1:00PM ET,boxscore,L,,2-12,,Cincinnati Bengals,13,20,18,305,210,95,,19,283,173,110,1,-3.91,5.58,-7.81
+16,Sat,December 24,1:02PM ET,boxscore,L,,2-13,@,Pittsburgh Steelers,0,27,15,232,68,164,,17,377,208,169,1,-9.81,-11.08,-0.82
+17,Sun,January 1,1:00PM ET,boxscore,L,,2-14,,San Francisco 49ers,27,34,18,311,200,111,2,21,321,205,116,,-4.15,-7.61,5.35

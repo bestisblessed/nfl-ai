@@ -1,0 +1,18 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 11,1:06PM ET,boxscore,L,,0-1,,Cincinnati Bengals,17,27,17,285,202,83,1,17,294,155,139,,-10.45,-0.57,-2.08
+2,Sun,September 18,1:02PM ET,boxscore,W,,1-1,@,Indianapolis Colts,27,19,18,303,197,106,1,19,285,176,109,2,3.08,5.72,2.24
+3,Sun,September 25,1:02PM ET,boxscore,W,,2-1,,Miami Dolphins,17,16,19,280,210,70,1,22,369,231,138,2,3.54,-0.92,-1.48
+4,Sun,October 2,1:03PM ET,boxscore,L,,2-2,,Tennessee Titans,13,31,25,416,332,84,1,13,332,220,112,1,-11.74,-6.97,3.03
+5,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+6,Sun,October 16,4:05PM ET,boxscore,L,,2-3,@,Oakland Raiders,17,24,18,268,203,65,1,18,329,178,151,1,-6.20,-3.00,1.56
+7,Sun,October 23,1:05PM ET,boxscore,W,,3-3,,Seattle Seahawks,6,3,20,298,159,139,1,9,137,69,68,2,-3.88,20.90,-8.30
+8,Sun,October 30,4:15PM ET,boxscore,L,,3-4,@,San Francisco 49ers,10,20,18,290,224,66,2,19,348,174,174,,-1.63,-5.67,0.61
+9,Sun,November 6,1:03PM ET,boxscore,L,,3-5,@,Houston Texans,12,30,10,172,128,44,2,21,380,119,261,1,-14.53,-13.76,6.68
+10,Sun,November 13,1:03PM ET,boxscore,L,,3-6,,St. Louis Rams,12,13,16,335,209,126,1,17,281,148,133,2,-0.52,8.88,-7.86
+11,Sun,November 20,1:02PM ET,boxscore,W,,4-6,,Jacksonville Jaguars,14,10,20,334,186,148,1,23,303,195,108,,8.19,-6.47,-1.73
+12,Sun,November 27,1:02PM ET,boxscore,L,,4-7,@,Cincinnati Bengals,20,23,17,274,140,134,1,18,389,257,132,1,-4.60,-1.39,-1.25
+13,Sun,December 4,4:05PM ET,boxscore,L,,4-8,,Baltimore Ravens,10,24,13,233,174,59,1,24,448,158,290,1,-11.66,-7.94,3.55
+14,Thu,December 8,8:28PM ET,boxscore,L,,4-9,@,Pittsburgh Steelers,3,14,19,304,206,98,2,20,416,269,147,3,-9.23,0.18,-0.45
+15,Sun,December 18,4:15PM ET,boxscore,L,OT,4-10,@,Arizona Cardinals,17,20,16,333,213,120,1,24,363,289,74,1,-0.66,-5.22,2.42
+16,Sat,December 24,1:03PM ET,boxscore,L,,4-11,@,Baltimore Ravens,14,20,18,256,139,117,1,15,284,122,162,1,-4.49,-2.98,5.22
+17,Sun,January 1,4:16PM ET,boxscore,L,,4-12,,Pittsburgh Steelers,9,13,14,240,168,72,1,22,360,199,161,2,-9.98,2.16,6.56

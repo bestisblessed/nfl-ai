@@ -1,0 +1,21 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Thu,September 4,8:42PM ET,boxscore,L,,0-1,@,Seattle Seahawks,16,36,19,255,175,80,1,25,398,191,207,1,-1.00,-18.24,0.29
+2,Sun,September 14,4:25PM ET,boxscore,W,,1-1,,New York Jets,31,24,25,390,310,80,1,19,313,166,147,1,10.84,-2.34,-0.28
+3,Sun,September 21,1:02PM ET,boxscore,L,,1-2,@,Detroit Lions,7,19,14,223,147,76,1,21,353,238,115,3,-9.56,-5.28,3.91
+4,Sun,September 28,1:02PM ET,boxscore,W,,2-2,@,Chicago Bears,38,17,21,358,302,56,,33,496,261,235,2,21.81,-14.55,4.74
+5,Thu,October 2,8:26PM ET,boxscore,W,,3-2,,Minnesota Vikings,42,10,15,320,164,156,1,20,299,188,111,3,11.09,19.38,2.19
+6,Sun,October 12,1:02PM ET,boxscore,W,,4-2,@,Miami Dolphins,27,24,27,369,248,121,,19,349,237,112,3,11.62,-7.54,-2.21
+7,Sun,October 19,1:02PM ET,boxscore,W,,5-2,,Carolina Panthers,38,17,22,363,241,122,,23,331,223,108,1,18.14,2.03,-1.49
+8,Sun,October 26,8:30PM ET,boxscore,L,,5-3,@,New Orleans Saints,23,44,23,491,402,89,3,28,495,302,193,1,8.61,-28.52,-1.91
+9,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+10,Sun,November 9,8:30PM ET,boxscore,W,,6-3,,Chicago Bears,55,14,21,451,319,132,1,21,311,256,55,3,26.41,26.17,-5.59
+11,Sun,November 16,4:25PM ET,boxscore,W,,7-3,,Philadelphia Eagles,53,20,25,475,365,110,,22,429,320,109,4,18.74,16.68,-8.69
+12,Sun,November 23,1:03PM ET,boxscore,W,,8-3,@,Minnesota Vikings,24,21,24,362,207,155,,20,308,196,112,1,14.62,-5.45,-6.07
+13,Sun,November 30,4:25PM ET,boxscore,W,,9-3,,New England Patriots,26,21,24,478,348,130,,20,320,236,84,,19.28,-12.80,-1.73
+14,Mon,December 8,8:30PM ET,boxscore,W,,10-3,,Atlanta Falcons,43,37,28,502,323,179,,26,465,374,91,1,26.32,-24.43,6.22
+15,Sun,December 14,1:02PM ET,boxscore,L,,10-4,@,Buffalo Bills,13,21,21,333,175,158,2,13,253,140,113,1,-7.02,14.48,-13.76
+16,Sun,December 21,1:03PM ET,boxscore,W,,11-4,@,Tampa Bay Buccaneers,20,3,23,431,310,121,1,6,109,93,16,1,7.33,20.90,-8.85
+17,Sun,December 28,4:25PM ET,boxscore,W,,12-4,,Detroit Lions,30,20,24,377,225,152,2,23,313,202,111,1,9.60,2.08,0.49
+,,Playoffs,,,,,,,,,,,,,,,,,,,,,,
+Division,Sun,January 11,1:05PM ET,boxscore,W,,13-4,,Dallas Cowboys,26,21,23,416,297,119,1,21,315,170,145,1,15.81,-11.27,1.70
+Conf. Champ.,Sun,January 18,3:06PM ET,boxscore,L,OT,13-5,@,Seattle Seahawks,22,28,19,306,171,135,2,20,397,203,194,5,-7.48,-2.03,5.58

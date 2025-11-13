@@ -1,0 +1,18 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 7,1:02PM ET,boxscore,W,,1-0,,Oakland Raiders,19,14,20,402,190,212,2,11,158,133,25,,-0.99,5.70,2.03
+2,Sun,September 14,4:25PM ET,boxscore,L,,1-1,@,Green Bay Packers,24,31,19,313,166,147,1,25,390,310,80,1,2.34,-10.84,0.28
+3,Mon,September 22,8:30PM ET,boxscore,L,,1-2,,Chicago Bears,19,27,21,414,300,114,3,17,257,197,60,1,-3.16,0.81,-3.30
+4,Sun,September 28,1:02PM ET,boxscore,L,,1-3,,Detroit Lions,17,24,17,336,204,132,2,17,360,272,88,,-5.19,-6.54,3.75
+5,Sun,October 5,4:25PM ET,boxscore,L,,1-4,@,San Diego Chargers,0,31,11,151,60,91,2,21,439,277,162,1,-22.08,-15.75,6.30
+6,Sun,October 12,1:02PM ET,boxscore,L,,1-5,,Denver Broncos,17,31,15,204,173,31,2,21,359,221,138,,-8.49,-3.14,3.10
+7,Thu,October 16,8:25PM ET,boxscore,L,,1-6,@,New England Patriots,25,27,28,423,205,218,,16,323,260,63,,13.01,-10.59,-6.48
+8,Sun,October 26,1:02PM ET,boxscore,L,,1-7,,Buffalo Bills,23,43,22,312,137,175,6,12,280,213,67,,-17.00,-3.13,-0.13
+9,Sun,November 2,1:03PM ET,boxscore,L,,1-8,@,Kansas City Chiefs,10,24,22,364,225,139,,23,309,196,113,,2.53,-14.45,1.55
+10,Sun,November 9,1:02PM ET,boxscore,W,,2-8,,Pittsburgh Steelers,20,13,15,275,125,150,,22,362,326,36,4,-2.63,1.19,8.31
+11,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+12,Mon,November 24,7:05PM ET,boxscore,L,,2-9,@,Buffalo Bills,3,38,11,218,126,92,1,21,336,220,116,,-16.81,-11.96,-5.39
+13,Mon,December 1,8:30PM ET,boxscore,L,,2-10,,Miami Dolphins,13,16,18,326,49,277,1,16,291,217,74,1,3.00,3.69,-9.68
+14,Sun,December 7,1:02PM ET,boxscore,L,OT,2-11,@,Minnesota Vikings,24,30,19,410,242,168,2,19,411,297,114,2,-2.73,-16.64,15.58
+15,Sun,December 14,4:05PM ET,boxscore,W,,3-11,@,Tennessee Titans,16,11,17,277,163,114,,17,342,253,89,1,-1.84,9.52,-2.03
+16,Sun,December 21,1:02PM ET,boxscore,L,,3-12,,New England Patriots,16,17,16,307,191,116,1,19,231,146,85,1,0.27,3.88,-5.42
+17,Sun,December 28,1:02PM ET,boxscore,W,,4-12,@,Miami Dolphins,37,24,18,494,390,104,1,23,387,208,179,1,11.99,-6.05,0.16

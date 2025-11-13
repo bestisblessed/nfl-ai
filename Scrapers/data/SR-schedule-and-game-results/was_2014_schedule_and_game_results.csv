@@ -1,0 +1,18 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 7,1:03PM ET,boxscore,L,,0-1,@,Houston Texans,6,17,20,372,241,131,2,16,321,206,115,1,-5.22,-1.01,-5.06
+2,Sun,September 14,1:05PM ET,boxscore,W,,1-1,,Jacksonville Jaguars,41,10,32,449,258,191,,8,148,123,25,1,18.53,17.20,-2.90
+3,Sun,September 21,1:02PM ET,boxscore,L,,1-2,@,Philadelphia Eagles,34,37,27,511,427,84,1,22,379,325,54,1,18.48,-10.89,-10.95
+4,Thu,September 25,8:26PM ET,boxscore,L,,1-3,,New York Giants,14,45,17,329,243,86,6,31,449,295,154,1,-12.62,-15.71,3.96
+5,Mon,October 6,8:30PM ET,boxscore,L,,1-4,,Seattle Seahawks,17,27,14,307,275,32,,20,403,178,225,,3.55,-9.73,-2.71
+6,Sun,October 12,4:25PM ET,boxscore,L,,1-5,@,Arizona Cardinals,20,30,21,407,335,72,4,19,317,243,74,,-3.67,-2.04,-0.70
+7,Sun,October 19,1:02PM ET,boxscore,W,,2-5,,Tennessee Titans,19,17,16,351,251,100,2,14,236,160,76,2,0.46,3.14,-2.06
+8,Mon,October 27,8:30PM ET,boxscore,W,OT,3-5,@,Dallas Cowboys,20,17,19,409,286,123,1,20,395,224,171,2,7.31,-3.35,1.34
+9,Sun,November 2,1:03PM ET,boxscore,L,,3-6,@,Minnesota Vikings,26,29,21,347,225,122,1,24,352,252,100,,7.48,-12.05,0.84
+10,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+11,Sun,November 16,1:03PM ET,boxscore,L,,3-7,,Tampa Bay Buccaneers,7,27,20,322,167,155,3,12,329,281,48,1,-6.68,-8.40,-3.08
+12,Sun,November 23,4:25PM ET,boxscore,L,,3-8,@,San Francisco 49ers,13,17,12,213,77,136,1,16,312,246,66,3,-12.86,3.79,1.71
+13,Sun,November 30,1:02PM ET,boxscore,L,,3-9,@,Indianapolis Colts,27,49,24,425,341,84,1,19,487,361,126,3,1.73,-20.16,0.26
+14,Sun,December 7,1:03PM ET,boxscore,L,,3-10,,St. Louis Rams,0,24,13,206,179,27,2,19,329,198,131,,-17.12,-9.72,3.12
+15,Sun,December 14,1:02PM ET,boxscore,L,,3-11,@,New York Giants,13,24,21,372,228,144,1,17,287,238,49,1,0.43,-5.75,0.78
+16,Sat,December 20,4:30PM ET,boxscore,W,,4-11,,Philadelphia Eagles,27,24,21,305,205,100,2,30,495,361,134,2,13.47,-14.76,1.73
+17,Sun,December 28,1:05PM ET,boxscore,L,,4-12,,Dallas Cowboys,17,44,20,413,309,104,4,20,473,299,174,1,-8.56,-15.43,-1.86

@@ -1,0 +1,20 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 11,1:06PM ET,boxscore,L,,0-1,@,Chicago Bears,12,30,25,386,276,110,3,17,377,289,88,1,-12.68,3.29,-3.96
+2,Sun,September 18,8:30PM ET,boxscore,W,,1-1,,Philadelphia Eagles,35,31,20,318,180,138,2,27,447,314,133,3,3.02,-4.20,0.75
+3,Sun,September 25,4:16PM ET,boxscore,L,,1-2,@,Tampa Bay Buccaneers,13,16,21,325,295,30,3,20,295,180,115,2,-4.50,6.25,-5.21
+4,Sun,October 2,4:05PM ET,boxscore,W,,2-2,@,Seattle Seahawks,30,28,25,412,291,121,,20,372,319,53,2,15.28,-12.84,1.28
+5,Sun,October 9,8:30PM ET,boxscore,L,,2-3,,Green Bay Packers,14,25,18,251,156,95,2,19,426,369,57,1,-2.87,-9.79,-0.37
+6,Sun,October 16,1:02PM ET,boxscore,W,,3-3,,Carolina Panthers,31,17,24,325,159,166,,24,368,229,139,3,20.34,-6.70,1.43
+7,Sun,October 23,1:05PM ET,boxscore,W,,4-3,@,Detroit Lions,23,16,22,328,199,129,2,13,263,159,104,1,-0.76,6.33,2.34
+8,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+9,Sun,November 6,1:02PM ET,boxscore,W,,5-3,@,Indianapolis Colts,31,7,21,432,269,163,1,10,186,103,83,2,9.51,18.38,-2.13
+10,Sun,November 13,1:03PM ET,boxscore,L,OT,5-4,,New Orleans Saints,23,26,30,481,343,138,1,18,363,322,41,,6.34,-7.78,-0.62
+11,Sun,November 20,4:15PM ET,boxscore,W,,6-4,,Tennessee Titans,23,17,25,432,316,116,1,17,298,257,41,1,14.09,-5.14,-3.34
+12,Sun,November 27,1:02PM ET,boxscore,W,,7-4,,Minnesota Vikings,24,14,22,335,246,89,1,12,226,162,64,,9.56,8.27,-10.74
+13,Sun,December 4,1:03PM ET,boxscore,L,,7-5,@,Houston Texans,10,17,18,337,267,70,2,20,337,175,162,1,-6.69,-2.56,4.22
+14,Sun,December 11,1:04PM ET,boxscore,W,,8-5,@,Carolina Panthers,31,23,18,394,308,86,,19,416,259,157,2,9.56,-1.81,2.31
+15,Thu,December 15,8:29PM ET,boxscore,W,,9-5,,Jacksonville Jaguars,41,14,20,373,276,97,,12,207,91,116,4,8.08,17.66,-0.07
+16,Mon,December 26,8:40PM ET,boxscore,L,,9-6,@,New Orleans Saints,16,45,23,469,434,35,1,26,463,299,164,2,-0.73,-23.71,-0.51
+17,Sun,January 1,4:17PM ET,boxscore,W,,10-6,,Tampa Bay Buccaneers,45,24,22,428,177,251,2,18,294,259,35,4,13.63,14.60,-1.63
+,,Playoffs,,,,,,,,,,,,,,,,,,,,,,
+Wild Card,Sun,January 8,1:06PM ET,boxscore,L,,10-7,@,New York Giants,2,24,14,247,183,64,,19,442,270,172,,-13.58,-16.19,9.51

@@ -1,0 +1,20 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 12,1:02PM ET,boxscore,L,,0-1,@,Houston Texans,24,34,25,463,419,44,1,23,355,98,257,1,16.62,-17.43,-10.28
+2,Sun,September 19,8:31PM ET,boxscore,W,,1-1,,New York Giants,38,14,24,410,250,160,1,13,257,137,120,3,10.63,10.96,-2.19
+3,Sun,September 26,4:16PM ET,boxscore,W,,2-1,@,Denver Broncos,27,13,18,365,325,40,,23,519,472,47,2,7.39,-0.04,4.39
+4,Sun,October 3,4:05PM ET,boxscore,L,,2-2,@,Jacksonville Jaguars,28,31,28,406,348,58,2,20,337,163,174,,14.17,-18.39,-1.29
+5,Sun,October 10,1:03PM ET,boxscore,W,,3-2,,Kansas City Chiefs,19,9,23,341,244,97,1,16,261,148,113,1,1.18,6.24,2.67
+6,Sun,October 17,8:31PM ET,boxscore,W,,4-2,@,Washington Redskins,27,24,22,469,299,170,3,23,335,222,113,2,10.78,4.52,-11.97
+7,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+8,Mon,November 1,8:41PM ET,boxscore,W,,5-2,,Houston Texans,30,17,24,366,259,107,,19,291,183,108,2,7.36,6.68,-3.11
+9,Sun,November 7,4:16PM ET,boxscore,L,,5-3,@,Philadelphia Eagles,24,26,27,338,276,62,2,19,402,207,195,,8.84,-9.29,-1.58
+10,Sun,November 14,1:02PM ET,boxscore,W,,6-3,,Cincinnati Bengals,23,17,16,256,180,76,,19,341,269,72,5,-2.94,14.58,-3.15
+11,Sun,November 21,4:15PM ET,boxscore,L,,6-4,@,New England Patriots,28,31,28,467,396,71,3,22,346,178,168,,20.15,-18.18,-4.02
+12,Sun,November 28,8:30PM ET,boxscore,L,,6-5,,San Diego Chargers,14,36,16,303,279,24,5,18,301,172,129,,-18.67,-0.76,-1.71
+13,Sun,December 5,4:15PM ET,boxscore,L,OT,6-6,,Dallas Cowboys,35,38,24,405,365,40,4,24,368,151,217,,3.48,-8.32,3.63
+14,Thu,December 9,8:29PM ET,boxscore,W,,7-6,@,Tennessee Titans,30,28,21,399,312,87,,22,365,244,121,2,16.24,-8.80,-5.34
+15,Sun,December 19,1:02PM ET,boxscore,W,,8-6,,Jacksonville Jaguars,34,24,19,376,221,155,,20,356,289,67,2,10.56,-1.49,-1.31
+16,Sun,December 26,4:05PM ET,boxscore,W,,9-6,@,Oakland Raiders,31,26,27,370,179,191,2,16,290,210,80,,11.20,8.47,-12.43
+17,Sun,January 2,4:16PM ET,boxscore,W,,10-6,,Tennessee Titans,23,20,24,358,257,101,1,17,341,290,51,1,6.70,-1.57,-4.39
+,,Playoffs,,,,,,,,,,,,,,,,,,,,,,
+Wild Card,Sat,January 8,8:15PM ET,boxscore,L,,10-7,,New York Jets,16,17,16,312,219,93,,23,353,184,169,1,5.38,-6.99,-0.15

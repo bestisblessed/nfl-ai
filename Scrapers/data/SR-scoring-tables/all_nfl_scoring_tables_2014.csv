@@ -1,0 +1,2238 @@
+Quarter,Time,Team,Detail,Team_1,Team_2,Game_ID
+1,6:03,Seahawks,Stephen Hauschka 35 yard field goal ,0,3,2014_01_GB_SEA
+1,1:25,Packers,John Kuhn 2 yard rush (Mason Crosby kick),7,3,2014_01_GB_SEA
+2,13:00,Seahawks,Ricardo Lockette 33 yard pass from Russell Wilson (Stephen Hauschka kick),7,10,2014_01_GB_SEA
+2,6:52,Packers,Mason Crosby 23 yard field goal ,10,10,2014_01_GB_SEA
+2,3:41,Seahawks,Marshawn Lynch 9 yard rush (Stephen Hauschka kick),10,17,2014_01_GB_SEA
+3,10:28,Seahawks,Stephen Hauschka 20 yard field goal ,10,20,2014_01_GB_SEA
+3,4:42,Seahawks,"Safety, Aaron Rodgers fumble recovered by Derek Sherrod in the end zone. ",10,22,2014_01_GB_SEA
+4,14:55,Seahawks,Marshawn Lynch 3 yard rush (Stephen Hauschka kick),10,29,2014_01_GB_SEA
+4,9:31,Packers,Randall Cobb 3 yard pass from Aaron Rodgers (pass failed),16,29,2014_01_GB_SEA
+4,2:31,Seahawks,Derrick Coleman 15 yard pass from Russell Wilson (Stephen Hauschka kick),16,36,2014_01_GB_SEA
+1,10:33,Saints,Shayne Graham 31 yard field goal ,3,0,2014_01_NO_ATL
+1,4:39,Saints,Shayne Graham 50 yard field goal ,6,0,2014_01_NO_ATL
+2,11:46,Saints,Khiry Robinson 2 yard rush (Shayne Graham kick),13,0,2014_01_NO_ATL
+2,4:06,Falcons,Roddy White 2 yard pass from Matt Ryan (Matt Bryant kick),13,7,2014_01_NO_ATL
+2,0:20,Saints,Brandin Cooks 3 yard pass from Drew Brees (Shayne Graham kick),20,7,2014_01_NO_ATL
+2,0:00,Falcons,Matt Bryant 40 yard field goal ,20,10,2014_01_NO_ATL
+3,9:22,Falcons,Levine Toilolo 1 yard pass from Matt Ryan (Matt Bryant kick),20,17,2014_01_NO_ATL
+3,0:21,Falcons,Antone Smith 54 yard pass from Matt Ryan (Matt Bryant kick),20,24,2014_01_NO_ATL
+4,8:46,Saints,Mark Ingram 3 yard rush (Shayne Graham kick),27,24,2014_01_NO_ATL
+4,2:50,Falcons,Jacquizz Rodgers 17 yard rush (Matt Bryant kick),27,31,2014_01_NO_ATL
+4,1:20,Saints,Mark Ingram 3 yard rush (Shayne Graham kick),34,31,2014_01_NO_ATL
+4,0:00,Falcons,Matt Bryant 51 yard field goal ,34,34,2014_01_NO_ATL
+OT,13:17,Falcons,Matt Bryant 52 yard field goal ,34,37,2014_01_NO_ATL
+1,10:25,Bengals,Mike Nugent 49 yard field goal ,3,0,2014_01_CIN_BAL
+1,1:25,Bengals,Mike Nugent 22 yard field goal ,6,0,2014_01_CIN_BAL
+2,10:13,Bengals,Mike Nugent 28 yard field goal ,9,0,2014_01_CIN_BAL
+2,4:36,Bengals,Mike Nugent 46 yard field goal ,12,0,2014_01_CIN_BAL
+2,2:07,Bengals,Mike Nugent 38 yard field goal ,15,0,2014_01_CIN_BAL
+3,2:20,Ravens,Justin Forsett 13 yard rush (Justin Tucker kick),15,7,2014_01_CIN_BAL
+4,10:28,Ravens,Justin Tucker 38 yard field goal ,15,10,2014_01_CIN_BAL
+4,5:46,Ravens,Steve Smith Sr. 80 yard pass from Joe Flacco (run failed),15,16,2014_01_CIN_BAL
+4,4:58,Bengals,A.J. Green 77 yard pass from Andy Dalton (Mohamed Sanu pass from Andy Dalton),23,16,2014_01_CIN_BAL
+1,11:35,Bears,Martellus Bennett 12 yard pass from Jay Cutler (Robbie Gould kick),0,7,2014_01_BUF_CHI
+1,6:52,Bills,EJ Manuel 2 yard rush (Dan Carpenter kick),7,7,2014_01_BUF_CHI
+2,8:07,Bills,Dan Carpenter 50 yard field goal ,10,7,2014_01_BUF_CHI
+2,5:30,Bills,C.J. Spiller 7 yard pass from EJ Manuel (Dan Carpenter kick),17,7,2014_01_BUF_CHI
+3,9:34,Bears,Robbie Gould 41 yard field goal ,17,10,2014_01_BUF_CHI
+3,4:23,Bears,Brandon Marshall 11 yard pass from Jay Cutler (Robbie Gould kick),17,17,2014_01_BUF_CHI
+4,4:02,Bills,Dan Carpenter 33 yard field goal ,20,17,2014_01_BUF_CHI
+4,0:30,Bears,Robbie Gould 37 yard field goal ,20,20,2014_01_BUF_CHI
+OT,9:46,Bills,Dan Carpenter 27 yard field goal ,23,20,2014_01_BUF_CHI
+2,6:06,Redskins,Darrel Young 1 yard rush (Kai Forbath kick failed),6,0,2014_01_WAS_HOU
+2,4:15,Texans,DeAndre Hopkins 76 yard pass from Ryan Fitzpatrick (Randy Bullock kick),6,7,2014_01_WAS_HOU
+2,2:09,Texans,Alfred Blue 5 yard blocked punt return (Randy Bullock kick),6,14,2014_01_WAS_HOU
+4,1:55,Texans,Randy Bullock 42 yard field goal ,6,17,2014_01_WAS_HOU
+2,13:35,Chiefs,Cairo Santos 35 yard field goal ,0,3,2014_01_TEN_KC
+2,3:31,Titans,Delanie Walker 5 yard pass from Jake Locker (Ryan Succop kick),7,3,2014_01_TEN_KC
+2,0:03,Titans,Ryan Succop 36 yard field goal ,10,3,2014_01_TEN_KC
+3,10:26,Titans,Kendall Wright 6 yard pass from Jake Locker (Ryan Succop kick),17,3,2014_01_TEN_KC
+3,2:46,Titans,Ryan Succop 31 yard field goal ,20,3,2014_01_TEN_KC
+4,12:39,Titans,Ryan Succop 46 yard field goal ,23,3,2014_01_TEN_KC
+4,10:09,Chiefs,Anthony Fasano 5 yard pass from Alex Smith (Cairo Santos kick),23,10,2014_01_TEN_KC
+4,4:50,Titans,Ryan Succop 47 yard field goal ,26,10,2014_01_TEN_KC
+1,11:46,Dolphins,Lamar Miller 4 yard pass from Ryan Tannehill (Caleb Sturgis kick),0,7,2014_01_NE_MIA
+1,5:10,Patriots,Shane Vereen 2 yard rush (Stephen Gostkowski kick),7,7,2014_01_NE_MIA
+1,0:47,Patriots,Stephen Gostkowski 47 yard field goal ,10,7,2014_01_NE_MIA
+2,8:37,Patriots,Rob Gronkowski 6 yard pass from Tom Brady (Stephen Gostkowski kick),17,7,2014_01_NE_MIA
+2,1:59,Dolphins,Caleb Sturgis 38 yard field goal ,17,10,2014_01_NE_MIA
+2,0:06,Patriots,Stephen Gostkowski 45 yard field goal ,20,10,2014_01_NE_MIA
+3,10:46,Dolphins,Caleb Sturgis 24 yard field goal ,20,13,2014_01_NE_MIA
+3,6:55,Dolphins,Mike Wallace 14 yard pass from Ryan Tannehill (Caleb Sturgis kick),20,20,2014_01_NE_MIA
+3,2:38,Dolphins,Caleb Sturgis 22 yard field goal ,20,23,2014_01_NE_MIA
+4,3:29,Dolphins,Knowshon Moreno 4 yard rush (Caleb Sturgis kick),20,30,2014_01_NE_MIA
+4,2:44,Dolphins,Caleb Sturgis 27 yard field goal ,20,33,2014_01_NE_MIA
+1,9:16,Jets,Nick Folk 45 yard field goal ,0,3,2014_01_LVR_NYJ
+1,2:43,Raiders,Rod Streater 12 yard pass from Derek Carr (Sebastian Janikowski kick),7,3,2014_01_LVR_NYJ
+2,0:30,Jets,Chris Johnson 5 yard pass from Geno Smith (Nick Folk kick),7,10,2014_01_LVR_NYJ
+3,2:38,Jets,Nick Folk 42 yard field goal ,7,13,2014_01_LVR_NYJ
+4,8:03,Jets,Chris Ivory 71 yard rush (pass failed),7,19,2014_01_LVR_NYJ
+4,1:21,Raiders,James Jones 30 yard pass from Derek Carr (Sebastian Janikowski kick),14,19,2014_01_LVR_NYJ
+1,9:00,Jaguars,Allen Hurns 34 yard pass from Chad Henne (Josh Scobee kick),7,0,2014_01_JAX_PHI
+1,6:50,Jaguars,Allen Hurns 21 yard pass from Chad Henne (Josh Scobee kick),14,0,2014_01_JAX_PHI
+2,14:14,Jaguars,Josh Scobee 49 yard field goal ,17,0,2014_01_JAX_PHI
+3,11:44,Eagles,Darren Sproles 49 yard rush (Cody Parkey kick),17,7,2014_01_JAX_PHI
+3,7:19,Eagles,Zach Ertz 25 yard pass from Nick Foles (Cody Parkey kick),17,14,2014_01_JAX_PHI
+4,10:55,Eagles,Cody Parkey 51 yard field goal ,17,17,2014_01_JAX_PHI
+4,6:59,Eagles,Jeremy Maclin 68 yard pass from Nick Foles (Cody Parkey kick),17,24,2014_01_JAX_PHI
+4,1:57,Eagles,Cody Parkey 28 yard field goal ,17,27,2014_01_JAX_PHI
+4,1:23,Eagles,Fletcher Cox 17 yard defensive fumble return (Cody Parkey kick),17,34,2014_01_JAX_PHI
+1,9:58,Steelers,Shaun Suisham 36 yard field goal ,0,3,2014_01_CLE_PIT
+1,5:39,Browns,Billy Cundiff 39 yard field goal ,3,3,2014_01_CLE_PIT
+1,0:50,Steelers,LeGarrette Blount 7 yard rush (Shaun Suisham kick),3,10,2014_01_CLE_PIT
+2,9:49,Steelers,Antonio Brown 35 yard pass from Ben Roethlisberger (Shaun Suisham kick),3,17,2014_01_CLE_PIT
+2,7:43,Steelers,Le'Veon Bell 38 yard rush (Shaun Suisham kick),3,24,2014_01_CLE_PIT
+2,0:00,Steelers,Shaun Suisham 34 yard field goal ,3,27,2014_01_CLE_PIT
+3,13:27,Browns,Isaiah Crowell 3 yard rush (Billy Cundiff kick),10,27,2014_01_CLE_PIT
+3,9:05,Browns,Isaiah Crowell 15 yard rush (Billy Cundiff kick),17,27,2014_01_CLE_PIT
+4,14:57,Browns,Billy Cundiff 25 yard field goal ,20,27,2014_01_CLE_PIT
+4,11:15,Browns,Travis Benjamin 9 yard pass from Brian Hoyer (Billy Cundiff kick),27,27,2014_01_CLE_PIT
+4,0:00,Steelers,Shaun Suisham 41 yard field goal ,27,30,2014_01_CLE_PIT
+1,9:37,Vikings,Blair Walsh 52 yard field goal ,3,0,2014_01_MIN_LAR
+2,14:16,Vikings,Blair Walsh 46 yard field goal ,6,0,2014_01_MIN_LAR
+2,0:21,Vikings,Greg Jennings 8 yard pass from Matt Cassel (Blair Walsh kick),13,0,2014_01_MIN_LAR
+3,10:11,Rams,Greg Zuerlein 56 yard field goal ,13,3,2014_01_MIN_LAR
+3,1:54,Vikings,Cordarrelle Patterson 67 yard rush (Blair Walsh kick),20,3,2014_01_MIN_LAR
+4,6:27,Vikings,Kyle Rudolph 7 yard pass from Matt Cassel (Blair Walsh kick),27,3,2014_01_MIN_LAR
+4,2:57,Vikings,Harrison Smith 81 yard interception return (Blair Walsh kick),34,3,2014_01_MIN_LAR
+4,1:31,Rams,Greg Zuerlein 46 yard field goal ,34,6,2014_01_MIN_LAR
+1,14:06,49ers,Chris Culliver 35 yard defensive fumble return (Phil Dawson kick),7,0,2014_01_SF_DAL
+1,7:22,Cowboys,Dan Bailey 29 yard field goal ,7,3,2014_01_SF_DAL
+1,5:54,49ers,Vernon Davis 29 yard pass from Colin Kaepernick (Phil Dawson kick),14,3,2014_01_SF_DAL
+1,4:25,49ers,Vernon Davis 2 yard pass from Colin Kaepernick (Phil Dawson kick),21,3,2014_01_SF_DAL
+2,0:39,49ers,Carlos Hyde 4 yard rush (Phil Dawson kick),28,3,2014_01_SF_DAL
+3,0:29,Cowboys,DeMarco Murray 2 yard rush (Dan Bailey kick),28,10,2014_01_SF_DAL
+4,1:52,Cowboys,Terrance Williams 2 yard pass from Tony Romo (Dan Bailey kick),28,17,2014_01_SF_DAL
+2,7:59,Panthers,Greg Olsen 5 yard pass from Derek Anderson (Graham Gano kick),7,0,2014_01_CAR_TB
+2,0:00,Panthers,Graham Gano 28 yard field goal ,10,0,2014_01_CAR_TB
+4,14:53,Panthers,Kelvin Benjamin 26 yard pass from Derek Anderson (Graham Gano kick),17,0,2014_01_CAR_TB
+4,7:23,Buccaneers,Chris Owusu 19 yard pass from Josh McCown (Patrick Murray kick),17,7,2014_01_CAR_TB
+4,2:06,Buccaneers,Bobby Rainey 6 yard pass from Josh McCown (Patrick Murray kick),17,14,2014_01_CAR_TB
+4,0:23,Panthers,Graham Gano 33 yard field goal ,20,14,2014_01_CAR_TB
+1,5:14,Broncos,Brandon McManus 21 yard field goal ,0,3,2014_01_IND_DEN
+2,14:14,Broncos,Julius Thomas 3 yard pass from Peyton Manning (Brandon McManus kick),0,10,2014_01_IND_DEN
+2,6:41,Broncos,Julius Thomas 35 yard pass from Peyton Manning (Brandon McManus kick),0,17,2014_01_IND_DEN
+2,1:57,Broncos,Julius Thomas 5 yard pass from Peyton Manning (Brandon McManus kick),0,24,2014_01_IND_DEN
+2,0:19,Colts,Andrew Luck 9 yard rush (Adam Vinatieri kick),7,24,2014_01_IND_DEN
+3,1:31,Colts,Adam Vinatieri 25 yard field goal ,10,24,2014_01_IND_DEN
+4,9:54,Broncos,Montee Ball 3 yard rush (Brandon McManus kick),10,31,2014_01_IND_DEN
+4,7:46,Colts,Dwayne Allen 41 yard pass from Andrew Luck (Adam Vinatieri kick),17,31,2014_01_IND_DEN
+4,3:26,Colts,Hakeem Nicks 9 yard pass from Andrew Luck (Adam Vinatieri kick),24,31,2014_01_IND_DEN
+1,12:11,Lions,Calvin Johnson 67 yard pass from Matthew Stafford (Nate Freese kick),0,7,2014_01_NYG_DET
+1,5:12,Lions,Calvin Johnson 16 yard pass from Matthew Stafford (Nate Freese kick),0,14,2014_01_NYG_DET
+2,12:54,Giants,Larry Donnell 1 yard pass from Eli Manning (Josh Brown kick),7,14,2014_01_NYG_DET
+3,11:54,Lions,Nate Freese 28 yard field goal ,7,17,2014_01_NYG_DET
+3,5:50,Lions,Nate Freese 27 yard field goal ,7,20,2014_01_NYG_DET
+3,3:51,Lions,Matthew Stafford 5 yard rush (Nate Freese kick),7,27,2014_01_NYG_DET
+4,11:53,Giants,Rashad Jennings 1 yard rush (Josh Brown kick),14,27,2014_01_NYG_DET
+4,4:39,Lions,Joique Bell 3 yard rush (Joseph Fauria pass from Matthew Stafford),14,35,2014_01_NYG_DET
+2,12:42,Cardinals,Chandler Catanzaro 22 yard field goal ,0,3,2014_01_LAC_ARI
+2,6:00,Chargers,Nick Novak 36 yard field goal ,3,3,2014_01_LAC_ARI
+2,0:00,Cardinals,Chandler Catanzaro 44 yard field goal ,3,6,2014_01_LAC_ARI
+3,11:38,Chargers,Malcom Floyd 6 yard pass from Philip Rivers (Nick Novak kick),10,6,2014_01_LAC_ARI
+3,5:26,Chargers,Ryan Mathews 20 yard rush (Nick Novak kick),17,6,2014_01_LAC_ARI
+4,12:30,Cardinals,Stepfan Taylor 5 yard pass from Carson Palmer (run failed),17,12,2014_01_LAC_ARI
+4,2:25,Cardinals,John Brown 13 yard pass from Carson Palmer (pass failed),17,18,2014_01_LAC_ARI
+1,0:27,Ravens,Owen Daniels 2 yard pass from Joe Flacco (Justin Tucker kick),0,7,2014_02_PIT_BAL
+2,8:01,Ravens,Justin Tucker 30 yard field goal ,0,10,2014_02_PIT_BAL
+2,2:50,Steelers,Shaun Suisham 25 yard field goal ,3,10,2014_02_PIT_BAL
+3,10:30,Steelers,Shaun Suisham 43 yard field goal ,6,10,2014_02_PIT_BAL
+3,3:58,Ravens,Owen Daniels 1 yard pass from Joe Flacco (Justin Tucker kick),6,17,2014_02_PIT_BAL
+4,14:11,Ravens,Justin Tucker 23 yard field goal ,6,20,2014_02_PIT_BAL
+4,11:14,Ravens,Justin Tucker 22 yard field goal ,6,23,2014_02_PIT_BAL
+4,4:31,Ravens,Justin Tucker 20 yard field goal ,6,26,2014_02_PIT_BAL
+1,4:47,Bills,Dan Carpenter 27 yard field goal ,0,3,2014_02_MIA_BUF
+1,0:22,Bills,Dan Carpenter 27 yard field goal ,0,6,2014_02_MIA_BUF
+2,10:22,Bills,Dan Carpenter 31 yard field goal ,0,9,2014_02_MIA_BUF
+3,9:35,Dolphins,Caleb Sturgis 34 yard field goal ,3,9,2014_02_MIA_BUF
+3,9:23,Bills,C.J. Spiller 102 yard kickoff return (Dan Carpenter kick),3,16,2014_02_MIA_BUF
+3,3:15,Dolphins,Mike Wallace 7 yard pass from Ryan Tannehill (Caleb Sturgis kick),10,16,2014_02_MIA_BUF
+3,0:13,Bills,Sammy Watkins 12 yard pass from EJ Manuel (Dan Carpenter kick),10,23,2014_02_MIA_BUF
+4,10:32,Bills,Dan Carpenter 32 yard field goal ,10,26,2014_02_MIA_BUF
+4,1:54,Bills,Dan Carpenter 38 yard field goal ,10,29,2014_02_MIA_BUF
+2,7:58,Panthers,Graham Gano 29 yard field goal ,0,3,2014_02_DET_CAR
+2,1:11,Panthers,Graham Gano 53 yard field goal ,0,6,2014_02_DET_CAR
+3,9:28,Lions,Jed Collins 1 yard pass from Matthew Stafford (Nate Freese kick),7,6,2014_02_DET_CAR
+3,2:30,Panthers,Jason Avant 14 yard pass from Cam Newton (Graham Gano kick),7,13,2014_02_DET_CAR
+4,7:26,Panthers,Jonathan Stewart 2 yard rush (Jerricho Cotchery pass from Cam Newton),7,21,2014_02_DET_CAR
+4,4:45,Panthers,Graham Gano 38 yard field goal ,7,24,2014_02_DET_CAR
+1,5:19,Bengals,Mike Nugent 31 yard field goal ,0,3,2014_02_ATL_CIN
+1,1:08,Falcons,Matt Bryant 46 yard field goal ,3,3,2014_02_ATL_CIN
+2,2:11,Bengals,Giovani Bernard 4 yard rush (Mike Nugent kick),3,10,2014_02_ATL_CIN
+3,10:58,Bengals,Mohamed Sanu 76 yard pass from Andy Dalton (Mike Nugent kick),3,17,2014_02_ATL_CIN
+3,6:28,Bengals,Jeremy Hill 1 yard rush (Mike Nugent kick),3,24,2014_02_ATL_CIN
+4,8:35,Falcons,Julio Jones 14 yard pass from Matt Ryan (Matt Bryant kick),10,24,2014_02_ATL_CIN
+1,5:59,Browns,Miles Austin 3 yard pass from Brian Hoyer (Billy Cundiff kick),0,7,2014_02_NO_CLE
+1,0:00,Browns,Billy Cundiff 32 yard field goal ,0,10,2014_02_NO_CLE
+2,5:16,Saints,Shayne Graham 27 yard field goal ,3,10,2014_02_NO_CLE
+2,3:25,Browns,Tashaun Gipson 62 yard interception return (run failed),3,16,2014_02_NO_CLE
+2,0:03,Saints,Jimmy Graham 9 yard pass from Drew Brees (Shayne Graham kick),10,16,2014_02_NO_CLE
+3,9:32,Saints,Jimmy Graham 1 yard pass from Drew Brees (Shayne Graham kick),17,16,2014_02_NO_CLE
+3,3:19,Browns,Terrance West 9 yard rush (Billy Cundiff kick),17,23,2014_02_NO_CLE
+4,12:12,Saints,Mark Ingram 1 yard rush (Shayne Graham kick),24,23,2014_02_NO_CLE
+4,0:03,Browns,Billy Cundiff 29 yard field goal ,24,26,2014_02_NO_CLE
+1,10:54,Vikings,Matt Asiata 25 yard pass from Matt Cassel (Blair Walsh kick),0,7,2014_02_NE_MIN
+1,6:14,Patriots,Stevan Ridley 1 yard rush (Stephen Gostkowski kick),7,7,2014_02_NE_MIN
+1,0:32,Patriots,Stephen Gostkowski 48 yard field goal ,10,7,2014_02_NE_MIN
+2,9:30,Patriots,Julian Edelman 9 yard pass from Tom Brady (Stephen Gostkowski kick),17,7,2014_02_NE_MIN
+2,0:09,Patriots,Chandler Jones 58 yard blocked field goal return (Stephen Gostkowski kick),24,7,2014_02_NE_MIN
+3,8:32,Patriots,Stephen Gostkowski 47 yard field goal ,27,7,2014_02_NE_MIN
+4,14:57,Patriots,Stephen Gostkowski 27 yard field goal ,30,7,2014_02_NE_MIN
+1,10:18,Cardinals,Jonathan Dwyer 1 yard rush (Chandler Catanzaro kick),7,0,2014_02_ARI_NYG
+1,1:31,Cardinals,Chandler Catanzaro 49 yard field goal ,10,0,2014_02_ARI_NYG
+2,0:37,Giants,Rueben Randle 7 yard pass from Eli Manning (Josh Brown kick),10,7,2014_02_ARI_NYG
+3,2:03,Giants,Daniel Fells 1 yard pass from Eli Manning (Josh Brown kick),10,14,2014_02_ARI_NYG
+4,11:38,Cardinals,Chandler Catanzaro 37 yard field goal ,13,14,2014_02_ARI_NYG
+4,10:10,Cardinals,Ted Ginn Jr. 71 yard punt return (run failed),19,14,2014_02_ARI_NYG
+4,9:11,Cardinals,Chandler Catanzaro 32 yard field goal ,22,14,2014_02_ARI_NYG
+4,1:13,Cardinals,Chandler Catanzaro 33 yard field goal ,25,14,2014_02_ARI_NYG
+1,0:13,Cowboys,Dan Bailey 48 yard field goal ,3,0,2014_02_DAL_TEN
+2,12:54,Cowboys,DeMarco Murray 3 yard rush (Dan Bailey kick),10,0,2014_02_DAL_TEN
+2,1:02,Cowboys,Dan Bailey 44 yard field goal ,13,0,2014_02_DAL_TEN
+2,0:04,Cowboys,Dan Bailey 51 yard field goal ,16,0,2014_02_DAL_TEN
+3,10:57,Titans,Ryan Succop 47 yard field goal ,16,3,2014_02_DAL_TEN
+3,7:45,Titans,Delanie Walker 61 yard pass from Jake Locker (Ryan Succop kick),16,10,2014_02_DAL_TEN
+3,2:09,Cowboys,Dez Bryant 3 yard pass from Tony Romo (Dan Bailey kick),23,10,2014_02_DAL_TEN
+4,8:15,Cowboys,Dan Bailey 48 yard field goal ,26,10,2014_02_DAL_TEN
+1,8:12,Redskins,Darrel Young 20 yard pass from Kirk Cousins (Kai Forbath kick),0,7,2014_02_JAX_WAS
+2,14:18,Redskins,Alfred Morris 1 yard rush (Kai Forbath kick),0,14,2014_02_JAX_WAS
+2,7:28,Redskins,Alfred Morris 1 yard rush (Kai Forbath kick),0,21,2014_02_JAX_WAS
+2,1:40,Jaguars,Marcedes Lewis 63 yard pass from Chad Henne (Josh Scobee kick),7,21,2014_02_JAX_WAS
+3,8:30,Redskins,Kai Forbath 36 yard field goal ,7,24,2014_02_JAX_WAS
+4,14:12,Redskins,Niles Paul 2 yard pass from Kirk Cousins (Kai Forbath kick),7,31,2014_02_JAX_WAS
+4,10:40,Redskins,Kai Forbath 42 yard field goal ,7,34,2014_02_JAX_WAS
+4,6:50,Jaguars,Josh Scobee 36 yard field goal ,10,34,2014_02_JAX_WAS
+4,1:52,Redskins,Silas Redd 14 yard rush (Kai Forbath kick),10,41,2014_02_JAX_WAS
+1,2:52,Chargers,Nick Novak 50 yard field goal ,0,3,2014_02_SEA_LAC
+1,1:27,Seahawks,Percy Harvin 51 yard rush (Stephen Hauschka kick),7,3,2014_02_SEA_LAC
+2,12:05,Chargers,Antonio Gates 8 yard pass from Philip Rivers (Nick Novak kick),7,10,2014_02_SEA_LAC
+2,4:40,Chargers,Nick Novak 43 yard field goal ,7,13,2014_02_SEA_LAC
+2,1:04,Chargers,Antonio Gates 8 yard pass from Philip Rivers (Nick Novak kick),7,20,2014_02_SEA_LAC
+2,0:12,Seahawks,Robert Turbin 3 yard pass from Russell Wilson (Stephen Hauschka kick),14,20,2014_02_SEA_LAC
+3,3:01,Chargers,Antonio Gates 21 yard pass from Philip Rivers (Nick Novak kick),14,27,2014_02_SEA_LAC
+3,0:03,Seahawks,Marshawn Lynch 14 yard pass from Russell Wilson (Stephen Hauschka kick),21,27,2014_02_SEA_LAC
+4,0:16,Chargers,Nick Novak 28 yard field goal ,21,30,2014_02_SEA_LAC
+1,8:56,Buccaneers,Josh McCown 5 yard rush (Patrick Murray kick),0,7,2014_02_LAR_TB
+1,3:07,Rams,Zac Stacy 2 yard rush (Greg Zuerlein kick),7,7,2014_02_LAR_TB
+2,0:39,Rams,Greg Zuerlein 36 yard field goal ,10,7,2014_02_LAR_TB
+3,9:18,Buccaneers,Josh McCown 1 yard rush (Patrick Murray kick),10,14,2014_02_LAR_TB
+3,2:41,Rams,Greg Zuerlein 35 yard field goal ,13,14,2014_02_LAR_TB
+4,9:10,Rams,Greg Zuerlein 46 yard field goal ,16,14,2014_02_LAR_TB
+4,5:15,Buccaneers,Patrick Murray 36 yard field goal ,16,17,2014_02_LAR_TB
+4,0:38,Rams,Greg Zuerlein 38 yard field goal ,19,17,2014_02_LAR_TB
+1,11:19,Broncos,Julius Thomas 4 yard pass from Peyton Manning (Brandon McManus kick),0,7,2014_02_KC_DEN
+1,2:02,Chiefs,Cairo Santos 45 yard field goal ,3,7,2014_02_KC_DEN
+2,10:32,Chiefs,Knile Davis 2 yard rush (Cairo Santos kick),10,7,2014_02_KC_DEN
+2,7:19,Broncos,Jacob Tamme 4 yard pass from Peyton Manning (Brandon McManus kick),10,14,2014_02_KC_DEN
+2,1:09,Broncos,Demaryius Thomas 12 yard pass from Peyton Manning (Brandon McManus kick),10,21,2014_02_KC_DEN
+4,7:11,Chiefs,Knile Davis 4 yard rush (Cairo Santos kick),17,21,2014_02_KC_DEN
+4,3:27,Broncos,Brandon McManus 20 yard field goal ,17,24,2014_02_KC_DEN
+1,13:01,Jets,Geno Smith 1 yard rush (Nick Folk kick),7,0,2014_02_NYJ_GB
+1,8:24,Jets,Eric Decker 29 yard pass from Geno Smith (Nick Folk kick),14,0,2014_02_NYJ_GB
+1,4:06,Packers,Mason Crosby 31 yard field goal ,14,3,2014_02_NYJ_GB
+2,10:38,Jets,Chris Ivory 4 yard rush (Nick Folk kick),21,3,2014_02_NYJ_GB
+2,5:43,Packers,Mason Crosby 20 yard field goal ,21,6,2014_02_NYJ_GB
+2,3:12,Packers,Mason Crosby 55 yard field goal ,21,9,2014_02_NYJ_GB
+2,0:08,Packers,Randall Cobb 6 yard pass from Aaron Rodgers (Mason Crosby kick),21,16,2014_02_NYJ_GB
+3,5:45,Packers,Randall Cobb 1 yard pass from Aaron Rodgers (Randall Cobb pass from Aaron Rodgers),21,24,2014_02_NYJ_GB
+3,2:21,Jets,Nick Folk 52 yard field goal ,24,24,2014_02_NYJ_GB
+3,2:08,Packers,Jordy Nelson 80 yard pass from Aaron Rodgers (Mason Crosby kick),24,31,2014_02_NYJ_GB
+1,9:37,Texans,J.J. Watt 1 yard pass from Ryan Fitzpatrick (Randy Bullock kick),7,0,2014_02_HOU_LVR
+1,0:05,Texans,Arian Foster 5 yard rush (Randy Bullock kick),14,0,2014_02_HOU_LVR
+2,10:31,Texans,Randy Bullock 33 yard field goal ,17,0,2014_02_HOU_LVR
+3,8:29,Texans,DeAndre Hopkins 12 yard pass from Ryan Fitzpatrick (Randy Bullock kick),24,0,2014_02_HOU_LVR
+3,3:14,Texans,Randy Bullock 39 yard field goal ,27,0,2014_02_HOU_LVR
+4,14:07,Raiders,Darren McFadden 1 yard rush (Sebastian Janikowski kick),27,7,2014_02_HOU_LVR
+4,4:46,Texans,Randy Bullock 46 yard field goal ,30,7,2014_02_HOU_LVR
+4,0:13,Raiders,James Jones 9 yard pass from Derek Carr (Sebastian Janikowski kick),30,14,2014_02_HOU_LVR
+1,12:42,49ers,Michael Crabtree 3 yard pass from Colin Kaepernick (Phil Dawson kick),0,7,2014_02_CHI_SF
+1,2:48,49ers,Phil Dawson 27 yard field goal ,0,10,2014_02_CHI_SF
+2,2:22,49ers,Frank Gore 8 yard rush (Phil Dawson kick),0,17,2014_02_CHI_SF
+2,0:13,Bears,Brandon Marshall 17 yard pass from Jay Cutler (Robbie Gould kick),7,17,2014_02_CHI_SF
+3,5:56,49ers,Phil Dawson 24 yard field goal ,7,20,2014_02_CHI_SF
+4,13:35,Bears,Brandon Marshall 5 yard pass from Jay Cutler (Robbie Gould kick),14,20,2014_02_CHI_SF
+4,13:14,Bears,Martellus Bennett 3 yard pass from Jay Cutler (Robbie Gould kick),21,20,2014_02_CHI_SF
+4,6:55,Bears,Brandon Marshall 3 yard pass from Jay Cutler (Robbie Gould kick),28,20,2014_02_CHI_SF
+1,9:48,Eagles,Cody Parkey 31 yard field goal ,3,0,2014_02_PHI_IND
+1,5:18,Colts,Ahmad Bradshaw 1 yard pass from Andrew Luck (Adam Vinatieri kick),3,7,2014_02_PHI_IND
+2,13:18,Colts,Adam Vinatieri 46 yard field goal ,3,10,2014_02_PHI_IND
+2,6:36,Eagles,Cody Parkey 23 yard field goal ,6,10,2014_02_PHI_IND
+2,1:13,Colts,Jack Doyle 2 yard pass from Andrew Luck (Adam Vinatieri kick),6,17,2014_02_PHI_IND
+3,6:43,Colts,Adam Vinatieri 27 yard field goal ,6,20,2014_02_PHI_IND
+3,4:32,Eagles,LeSean McCoy 1 yard rush (Cody Parkey kick),13,20,2014_02_PHI_IND
+3,2:44,Eagles,Darren Sproles 19 yard rush (Cody Parkey kick),20,20,2014_02_PHI_IND
+4,11:49,Colts,Ahmad Bradshaw 7 yard pass from Andrew Luck (Adam Vinatieri kick),20,27,2014_02_PHI_IND
+4,3:25,Eagles,Jeremy Maclin 6 yard pass from Nick Foles (Cody Parkey kick),27,27,2014_02_PHI_IND
+4,0:00,Eagles,Cody Parkey 36 yard field goal ,30,27,2014_02_PHI_IND
+1,12:03,Falcons,Harry Douglas 3 yard pass from Matt Ryan (Matt Bryant kick),0,7,2014_03_TB_ATL
+1,3:03,Falcons,Julio Jones 8 yard pass from Matt Ryan (Matt Bryant kick),0,14,2014_03_TB_ATL
+1,2:38,Falcons,Kemal Ishmael 23 yard interception return (Matt Bryant kick),0,21,2014_03_TB_ATL
+2,14:53,Falcons,Devin Hester 20 yard rush (Matt Bryant kick),0,28,2014_03_TB_ATL
+2,7:06,Falcons,Devin Hester 62 yard punt return (Matt Bryant kick),0,35,2014_03_TB_ATL
+3,8:23,Falcons,Julio Jones 40 yard pass from Matt Ryan (Matt Bryant kick),0,42,2014_03_TB_ATL
+3,8:11,Falcons,Steven Jackson 2 yard rush (Matt Bryant kick),0,49,2014_03_TB_ATL
+3,1:47,Falcons,Antone Smith 38 yard rush (Matt Bryant kick),0,56,2014_03_TB_ATL
+4,8:46,Buccaneers,Vincent Jackson 3 yard pass from Mike Glennon (Patrick Murray kick),7,56,2014_03_TB_ATL
+4,7:07,Buccaneers,Danny Lansanah 27 yard interception return (Patrick Murray kick),14,56,2014_03_TB_ATL
+1,9:45,Chargers,Eddie Royal 3 yard pass from Philip Rivers (Nick Novak kick),7,0,2014_03_LAC_BUF
+2,10:18,Chargers,Nick Novak 19 yard field goal ,10,0,2014_03_LAC_BUF
+2,2:56,Bills,Dan Carpenter 45 yard field goal ,10,3,2014_03_LAC_BUF
+2,0:21,Chargers,Nick Novak 37 yard field goal ,13,3,2014_03_LAC_BUF
+3,7:31,Chargers,Eddie Royal 5 yard pass from Philip Rivers (Nick Novak kick),20,3,2014_03_LAC_BUF
+3,1:16,Bills,Fred Jackson 11 yard pass from EJ Manuel (Dan Carpenter kick),20,10,2014_03_LAC_BUF
+4,3:23,Chargers,"Safety, E.J. Manuel is penalized for Intentional Grounding in the end zone. ",22,10,2014_03_LAC_BUF
+1,4:48,Bengals,Mike Nugent 29 yard field goal ,0,3,2014_03_TEN_CIN
+1,0:00,Bengals,Andy Dalton 18 yard pass from Mohamed Sanu (Mike Nugent kick),0,10,2014_03_TEN_CIN
+2,6:25,Bengals,"Safety, Quentin Groves Holding penalty in the end zone. ",0,12,2014_03_TEN_CIN
+2,3:29,Bengals,Giovani Bernard 1 yard rush (Mike Nugent kick),0,19,2014_03_TEN_CIN
+3,1:58,Bengals,Giovani Bernard 1 yard rush (Mike Nugent kick),0,26,2014_03_TEN_CIN
+4,9:26,Bengals,Jeremy Hill 4 yard rush (Mike Nugent kick),0,33,2014_03_TEN_CIN
+4,6:09,Titans,Shonn Greene 1 yard rush (Ryan Succop kick),7,33,2014_03_TEN_CIN
+1,9:11,Ravens,Justin Tucker 38 yard field goal ,3,0,2014_03_BAL_CLE
+1,3:15,Browns,Terrance West 1 yard rush (Billy Cundiff kick),3,7,2014_03_BAL_CLE
+2,7:24,Ravens,Kyle Juszczyk 9 yard pass from Joe Flacco (Justin Tucker kick),10,7,2014_03_BAL_CLE
+3,10:01,Browns,Isaiah Crowell 14 yard rush (Billy Cundiff kick),10,14,2014_03_BAL_CLE
+3,5:04,Ravens,Lorenzo Taliaferro 1 yard rush (Justin Tucker kick),17,14,2014_03_BAL_CLE
+3,0:13,Browns,Miles Austin 4 yard pass from Brian Hoyer (Billy Cundiff kick),17,21,2014_03_BAL_CLE
+4,5:00,Ravens,Justin Tucker 21 yard field goal ,20,21,2014_03_BAL_CLE
+4,0:00,Ravens,Justin Tucker 32 yard field goal ,23,21,2014_03_BAL_CLE
+1,12:02,Lions,Don Carey 40 yard defensive fumble return (Nate Freese kick),0,7,2014_03_GB_DET
+1,0:39,Packers,Andrew Quarless 10 yard pass from Aaron Rodgers (Mason Crosby kick),7,7,2014_03_GB_DET
+2,13:21,Lions,"Safety, Eddie Lacy tackled in endzone by DeAndre Levy. ",7,9,2014_03_GB_DET
+2,6:16,Lions,Nate Freese 30 yard field goal ,7,12,2014_03_GB_DET
+4,10:40,Lions,Reggie Bush 26 yard rush (Nate Freese kick),7,19,2014_03_GB_DET
+1,9:37,Colts,Adam Vinatieri 48 yard field goal ,3,0,2014_03_IND_JAX
+1,1:50,Colts,Ahmad Bradshaw 6 yard pass from Andrew Luck (Adam Vinatieri kick),10,0,2014_03_IND_JAX
+2,12:28,Colts,Dwayne Allen 1 yard pass from Andrew Luck (Adam Vinatieri kick),17,0,2014_03_IND_JAX
+2,9:08,Colts,Adam Vinatieri 43 yard field goal ,20,0,2014_03_IND_JAX
+2,1:10,Colts,Adam Vinatieri 25 yard field goal ,23,0,2014_03_IND_JAX
+2,0:28,Colts,Coby Fleener 7 yard pass from Andrew Luck (Adam Vinatieri kick),30,0,2014_03_IND_JAX
+3,5:13,Jaguars,Josh Scobee 41 yard field goal ,30,3,2014_03_IND_JAX
+4,8:53,Colts,Hakeem Nicks 1 yard pass from Andrew Luck (Adam Vinatieri kick),37,3,2014_03_IND_JAX
+4,6:51,Jaguars,Allen Hurns 63 yard pass from Blake Bortles (Josh Scobee kick),37,10,2014_03_IND_JAX
+4,2:58,Colts,Greg Toler 47 yard interception return (Adam Vinatieri kick),44,10,2014_03_IND_JAX
+4,0:18,Jaguars,Cecil Shorts 10 yard pass from Blake Bortles (Josh Scobee kick),44,17,2014_03_IND_JAX
+1,4:37,Raiders,Sebastian Janikowski 49 yard field goal ,3,0,2014_03_LVR_NE
+2,4:14,Patriots,Rob Gronkowski 6 yard pass from Tom Brady (Stephen Gostkowski kick),3,7,2014_03_LVR_NE
+2,0:00,Patriots,Stephen Gostkowski 21 yard field goal ,3,10,2014_03_LVR_NE
+3,9:39,Raiders,Sebastian Janikowski 37 yard field goal ,6,10,2014_03_LVR_NE
+3,2:21,Raiders,Sebastian Janikowski 47 yard field goal ,9,10,2014_03_LVR_NE
+4,13:42,Patriots,Stephen Gostkowski 20 yard field goal ,9,13,2014_03_LVR_NE
+4,6:20,Patriots,Stephen Gostkowski 36 yard field goal ,9,16,2014_03_LVR_NE
+1,9:36,Saints,Pierre Thomas 1 yard rush (Shayne Graham kick),0,7,2014_03_MIN_NO
+1,4:50,Saints,Josh Hill 34 yard pass from Drew Brees (Shayne Graham kick failed),0,13,2014_03_MIN_NO
+2,14:06,Vikings,Blair Walsh 25 yard field goal ,3,13,2014_03_MIN_NO
+2,6:28,Vikings,Blair Walsh 30 yard field goal ,6,13,2014_03_MIN_NO
+3,10:20,Vikings,Blair Walsh 40 yard field goal ,9,13,2014_03_MIN_NO
+4,12:22,Saints,Marques Colston 18 yard pass from Drew Brees (Shayne Graham kick),9,20,2014_03_MIN_NO
+2,3:21,Giants,Victor Cruz 26 yard pass from Eli Manning (Josh Brown kick),0,7,2014_03_HOU_NYG
+2,1:07,Giants,Rashad Jennings 1 yard rush (Josh Brown kick),0,14,2014_03_HOU_NYG
+3,10:39,Giants,Josh Brown 39 yard field goal ,0,17,2014_03_HOU_NYG
+3,6:09,Texans,Randy Bullock 27 yard field goal ,3,17,2014_03_HOU_NYG
+3,2:13,Texans,Damaris Johnson 44 yard pass from Ryan Fitzpatrick (Randy Bullock kick),10,17,2014_03_HOU_NYG
+4,12:19,Giants,Josh Brown 29 yard field goal ,10,20,2014_03_HOU_NYG
+4,9:25,Giants,Daniel Fells 9 yard pass from Eli Manning (Josh Brown kick),10,27,2014_03_HOU_NYG
+4,5:33,Giants,Josh Brown 31 yard field goal ,10,30,2014_03_HOU_NYG
+4,2:00,Texans,Ryan Fitzpatrick 1 yard rush (Randy Bullock kick),17,30,2014_03_HOU_NYG
+1,8:42,Redskins,Darrel Young 4 yard pass from Kirk Cousins (Kai Forbath kick),7,0,2014_03_WAS_PHI
+1,8:29,Eagles,Chris Polk 102 yard kickoff return (Cody Parkey kick),7,7,2014_03_WAS_PHI
+1,2:09,Redskins,Pierre Garcon 4 yard pass from Kirk Cousins (Kai Forbath kick),14,7,2014_03_WAS_PHI
+2,8:49,Redskins,Kai Forbath 49 yard field goal ,17,7,2014_03_WAS_PHI
+2,5:48,Eagles,Jordan Matthews 11 yard pass from Nick Foles (Cody Parkey kick),17,14,2014_03_WAS_PHI
+2,1:15,Redskins,Kai Forbath 44 yard field goal ,20,14,2014_03_WAS_PHI
+2,0:09,Eagles,Jordan Matthews 11 yard pass from Nick Foles (Cody Parkey kick),20,21,2014_03_WAS_PHI
+3,12:03,Eagles,Cody Parkey 38 yard field goal ,20,24,2014_03_WAS_PHI
+3,8:04,Eagles,Cody Parkey 33 yard field goal ,20,27,2014_03_WAS_PHI
+3,2:04,Redskins,DeSean Jackson 81 yard pass from Kirk Cousins (Kai Forbath kick),27,27,2014_03_WAS_PHI
+4,7:34,Eagles,Jeremy Maclin 27 yard pass from Nick Foles (Cody Parkey kick),27,34,2014_03_WAS_PHI
+4,5:55,Eagles,Cody Parkey 51 yard field goal ,27,37,2014_03_WAS_PHI
+4,4:16,Redskins,Roy Helu 1 yard rush (Kai Forbath kick),34,37,2014_03_WAS_PHI
+1,6:10,Rams,Lance Kendricks 1 yard pass from Austin Davis (Greg Zuerlein kick),0,7,2014_03_DAL_LAR
+2,14:54,Rams,Brian Quick 51 yard pass from Austin Davis (Greg Zuerlein kick),0,14,2014_03_DAL_LAR
+2,6:06,Rams,Jackrabbit Jenkins 25 yard interception return (Greg Zuerlein kick),0,21,2014_03_DAL_LAR
+2,2:07,Cowboys,DeMarco Murray 1 yard rush (Dan Bailey kick),7,21,2014_03_DAL_LAR
+2,0:02,Cowboys,Dan Bailey 29 yard field goal ,10,21,2014_03_DAL_LAR
+3,12:48,Cowboys,Dez Bryant 68 yard pass from Tony Romo (Dan Bailey kick),17,21,2014_03_DAL_LAR
+3,2:43,Cowboys,Dan Bailey 40 yard field goal ,20,21,2014_03_DAL_LAR
+4,13:28,Rams,Greg Zuerlein 28 yard field goal ,20,24,2014_03_DAL_LAR
+4,6:13,Cowboys,Terrance Williams 12 yard pass from Tony Romo (Dan Bailey kick),27,24,2014_03_DAL_LAR
+4,5:58,Cowboys,Bruce Carter 25 yard interception return (Dan Bailey kick),34,24,2014_03_DAL_LAR
+4,2:36,Rams,Austin Pettis 4 yard pass from Austin Davis (Greg Zuerlein kick),34,31,2014_03_DAL_LAR
+1,12:23,Cardinals,Chandler Catanzaro 51 yard field goal ,0,3,2014_03_SF_ARI
+1,6:45,49ers,Michael Crabtree 2 yard pass from Colin Kaepernick (Phil Dawson kick),7,3,2014_03_SF_ARI
+2,13:42,Cardinals,Chandler Catanzaro 32 yard field goal ,7,6,2014_03_SF_ARI
+2,5:07,49ers,Carlos Hyde 6 yard rush (Phil Dawson kick),14,6,2014_03_SF_ARI
+3,9:20,Cardinals,John Brown 24 yard pass from Drew Stanton (Chandler Catanzaro kick),14,13,2014_03_SF_ARI
+3,4:39,Cardinals,John Brown 21 yard pass from Drew Stanton (Chandler Catanzaro kick),14,20,2014_03_SF_ARI
+4,0:29,Cardinals,Chandler Catanzaro 35 yard field goal ,14,23,2014_03_SF_ARI
+2,6:38,Chiefs,Knile Davis 21 yard rush (Cairo Santos kick),7,0,2014_03_KC_MIA
+2,1:35,Chiefs,Travis Kelce 20 yard pass from Alex Smith (Cairo Santos kick),14,0,2014_03_KC_MIA
+2,0:00,Dolphins,Caleb Sturgis 22 yard field goal ,14,3,2014_03_KC_MIA
+3,12:07,Dolphins,Brian Hartline 1 yard pass from Ryan Tannehill (Caleb Sturgis kick),14,10,2014_03_KC_MIA
+3,6:36,Chiefs,Joe McKnight 11 yard pass from Alex Smith (Cairo Santos kick),21,10,2014_03_KC_MIA
+3,5:54,Dolphins,Caleb Sturgis 51 yard field goal ,21,13,2014_03_KC_MIA
+3,2:38,Dolphins,"Safety, Alex Smith sacked in the end zone by Randy Starks and Jelani Jenkins. ",21,15,2014_03_KC_MIA
+4,4:35,Chiefs,Joe McKnight 4 yard pass from Alex Smith (pass failed),27,15,2014_03_KC_MIA
+4,0:13,Chiefs,Cyrus Gray 6 yard rush (Cairo Santos kick),34,15,2014_03_KC_MIA
+1,10:33,Seahawks,Stephen Hauschka 20 yard field goal ,0,3,2014_03_DEN_SEA
+1,3:27,Broncos,Brandon McManus 24 yard field goal ,3,3,2014_03_DEN_SEA
+2,3:05,Seahawks,Ricardo Lockette 39 yard pass from Russell Wilson (Stephen Hauschka kick),3,10,2014_03_DEN_SEA
+2,0:12,Seahawks,Marshawn Lynch 5 yard pass from Russell Wilson (Stephen Hauschka kick),3,17,2014_03_DEN_SEA
+4,13:07,Broncos,"Safety, Marshawn Lynch tackled by Nate Irving and T.J. Ward in the end zone. ",5,17,2014_03_DEN_SEA
+4,9:20,Broncos,Julius Thomas 3 yard pass from Peyton Manning (Brandon McManus kick),12,17,2014_03_DEN_SEA
+4,0:59,Seahawks,Stephen Hauschka 28 yard field goal ,12,20,2014_03_DEN_SEA
+4,0:18,Broncos,Jacob Tamme 26 yard pass from Peyton Manning (Demaryius Thomas pass from Peyton Manning),20,20,2014_03_DEN_SEA
+OT,9:14,Seahawks,Marshawn Lynch 6 yard rush ,20,26,2014_03_DEN_SEA
+1,6:40,Panthers,Graham Gano 40 yard field goal ,0,3,2014_03_PIT_CAR
+1,0:07,Steelers,Shaun Suisham 42 yard field goal ,3,3,2014_03_PIT_CAR
+2,5:37,Steelers,Shaun Suisham 24 yard field goal ,6,3,2014_03_PIT_CAR
+2,0:00,Steelers,Shaun Suisham 45 yard field goal ,9,3,2014_03_PIT_CAR
+3,11:02,Steelers,Antonio Brown 7 yard pass from Ben Roethlisberger (Shaun Suisham kick),16,3,2014_03_PIT_CAR
+3,6:21,Panthers,Graham Gano 40 yard field goal ,16,6,2014_03_PIT_CAR
+3,2:22,Steelers,Antonio Brown 7 yard pass from Ben Roethlisberger (Shaun Suisham kick),23,6,2014_03_PIT_CAR
+4,13:28,Panthers,Greg Olsen 37 yard pass from Cam Newton (Graham Gano kick),23,13,2014_03_PIT_CAR
+4,11:00,Steelers,Robert Golden fumble recovery in end zone (Shaun Suisham kick),30,13,2014_03_PIT_CAR
+4,5:38,Steelers,LeGarrette Blount 8 yard rush (Shaun Suisham kick),37,13,2014_03_PIT_CAR
+4,3:53,Panthers,Kelvin Benjamin 35 yard pass from Derek Anderson (pass failed),37,19,2014_03_PIT_CAR
+1,14:28,Bears,Ryan Mundy 45 yard interception return (Robbie Gould kick),7,0,2014_03_CHI_NYJ
+1,9:54,Bears,Martellus Bennett 7 yard pass from Jay Cutler (Robbie Gould kick),14,0,2014_03_CHI_NYJ
+1,3:42,Jets,Nick Folk 43 yard field goal ,14,3,2014_03_CHI_NYJ
+2,13:54,Bears,Robbie Gould 24 yard field goal ,17,3,2014_03_CHI_NYJ
+2,9:57,Jets,Nick Folk 28 yard field goal ,17,6,2014_03_CHI_NYJ
+2,3:45,Jets,Jeremy Kerley 19 yard pass from Geno Smith (Nick Folk kick),17,13,2014_03_CHI_NYJ
+3,11:28,Bears,Martellus Bennett 13 yard pass from Jay Cutler (Robbie Gould kick),24,13,2014_03_CHI_NYJ
+3,0:27,Jets,Nick Folk 22 yard field goal ,24,16,2014_03_CHI_NYJ
+4,9:52,Jets,Nick Folk 42 yard field goal ,24,19,2014_03_CHI_NYJ
+4,3:10,Bears,Robbie Gould 45 yard field goal ,27,19,2014_03_CHI_NYJ
+1,7:35,Giants,Larry Donnell 5 yard pass from Eli Manning (Josh Brown kick),7,0,2014_04_NYG_WAS
+2,14:14,Giants,Larry Donnell 6 yard pass from Eli Manning (Josh Brown kick),14,0,2014_04_NYG_WAS
+2,8:50,Redskins,Andre Roberts 18 yard pass from Kirk Cousins (Kai Forbath kick),14,7,2014_04_NYG_WAS
+2,2:16,Giants,Larry Donnell 6 yard pass from Eli Manning (Josh Brown kick),21,7,2014_04_NYG_WAS
+2,0:00,Giants,Josh Brown 29 yard field goal ,24,7,2014_04_NYG_WAS
+3,12:57,Redskins,Alfred Morris 20 yard rush (Kai Forbath kick),24,14,2014_04_NYG_WAS
+3,4:19,Giants,Daniel Fells 2 yard pass from Eli Manning (Josh Brown kick),31,14,2014_04_NYG_WAS
+4,14:07,Giants,Eli Manning 1 yard rush (Josh Brown kick),38,14,2014_04_NYG_WAS
+4,6:05,Giants,Andre Williams 1 yard rush (Josh Brown kick),45,14,2014_04_NYG_WAS
+2,13:12,Ravens,Steve Smith Sr. 61 yard pass from Joe Flacco (Justin Tucker kick),0,7,2014_04_CAR_BAL
+2,8:35,Panthers,Kelvin Benjamin 28 yard pass from Cam Newton (Graham Gano kick),7,7,2014_04_CAR_BAL
+2,5:22,Ravens,Justin Forsett 11 yard rush (Justin Tucker kick),7,14,2014_04_CAR_BAL
+2,1:53,Ravens,Steve Smith Sr. 21 yard pass from Joe Flacco (Justin Tucker kick),7,21,2014_04_CAR_BAL
+3,9:51,Ravens,Torrey Smith 24 yard pass from Joe Flacco (Justin Tucker kick),7,28,2014_04_CAR_BAL
+3,3:30,Panthers,Graham Gano 37 yard field goal ,10,28,2014_04_CAR_BAL
+4,11:34,Ravens,Lorenzo Taliaferro 1 yard rush (Justin Tucker kick),10,35,2014_04_CAR_BAL
+4,3:33,Ravens,Justin Tucker 30 yard field goal ,10,38,2014_04_CAR_BAL
+1,6:30,Bears,Brandon Marshall 6 yard pass from Jay Cutler (Robbie Gould kick),0,7,2014_04_GB_CHI
+1,4:08,Packers,Eddie Lacy 2 yard rush (Mason Crosby kick),7,7,2014_04_GB_CHI
+2,13:58,Bears,Robbie Gould 23 yard field goal ,7,10,2014_04_GB_CHI
+2,10:11,Packers,Jordy Nelson 3 yard pass from Aaron Rodgers (Mason Crosby kick),14,10,2014_04_GB_CHI
+2,3:50,Bears,Alshon Jeffery 8 yard pass from Jay Cutler (Robbie Gould kick),14,17,2014_04_GB_CHI
+2,1:03,Packers,Randall Cobb 22 yard pass from Aaron Rodgers (Mason Crosby kick),21,17,2014_04_GB_CHI
+3,10:57,Packers,Mason Crosby 53 yard field goal ,24,17,2014_04_GB_CHI
+3,4:28,Packers,Jordy Nelson 11 yard pass from Aaron Rodgers (Mason Crosby kick),31,17,2014_04_GB_CHI
+4,14:52,Packers,Randall Cobb 3 yard pass from Aaron Rodgers (Mason Crosby kick),38,17,2014_04_GB_CHI
+2,11:37,Bills,Dan Carpenter 31 yard field goal ,3,0,2014_04_BUF_HOU
+2,5:54,Bills,Sammy Watkins 5 yard pass from EJ Manuel (Dan Carpenter kick),10,0,2014_04_BUF_HOU
+2,0:57,Texans,DeAndre Hopkins 35 yard pass from Ryan Fitzpatrick (Randy Bullock kick),10,7,2014_04_BUF_HOU
+3,13:28,Texans,J.J. Watt 80 yard interception return (Randy Bullock kick),10,14,2014_04_BUF_HOU
+3,6:14,Texans,Randy Bullock 41 yard field goal ,10,17,2014_04_BUF_HOU
+4,9:21,Texans,Randy Bullock 55 yard field goal ,10,20,2014_04_BUF_HOU
+4,9:08,Bills,Mike Williams 80 yard pass from EJ Manuel (Dan Carpenter kick),17,20,2014_04_BUF_HOU
+4,4:49,Texans,Randy Bullock 50 yard field goal ,17,23,2014_04_BUF_HOU
+1,7:06,Colts,Trent Richardson 1 yard rush (Adam Vinatieri kick),0,7,2014_04_TEN_IND
+1,0:52,Colts,Dwayne Allen 7 yard pass from Andrew Luck (Adam Vinatieri kick),0,14,2014_04_TEN_IND
+2,10:25,Colts,Adam Vinatieri 31 yard field goal ,0,17,2014_04_TEN_IND
+2,6:24,Titans,Ryan Succop 36 yard field goal ,3,17,2014_04_TEN_IND
+2,1:53,Colts,Adam Vinatieri 30 yard field goal ,3,20,2014_04_TEN_IND
+2,0:13,Titans,Delanie Walker 7 yard pass from Charlie Whitehurst (Ryan Succop kick),10,20,2014_04_TEN_IND
+3,8:15,Colts,Reggie Wayne 28 yard pass from Andrew Luck (Adam Vinatieri kick),10,27,2014_04_TEN_IND
+3,4:02,Colts,Coby Fleener 2 yard pass from Andrew Luck (Adam Vinatieri kick),10,34,2014_04_TEN_IND
+3,0:35,Titans,Bishop Sankey 2 yard rush (Ryan Succop kick),17,34,2014_04_TEN_IND
+4,9:56,Colts,Ahmad Bradshaw 15 yard pass from Andrew Luck (Adam Vinatieri kick),17,41,2014_04_TEN_IND
+1,8:36,Jets,Nick Folk 27 yard field goal ,0,3,2014_04_DET_NYJ
+1,5:04,Lions,Alex Henery 51 yard field goal ,3,3,2014_04_DET_NYJ
+2,6:19,Lions,Jeremy Ross 59 yard pass from Matthew Stafford (Alex Henery kick),10,3,2014_04_DET_NYJ
+2,0:22,Lions,Eric Ebron 16 yard pass from Matthew Stafford (Alex Henery kick),17,3,2014_04_DET_NYJ
+3,7:26,Jets,Eric Decker 11 yard pass from Geno Smith (Nick Folk kick),17,10,2014_04_DET_NYJ
+4,14:54,Lions,Matthew Stafford 1 yard rush (Alex Henery kick),24,10,2014_04_DET_NYJ
+4,6:58,Jets,Chris Johnson 35 yard rush (Nick Folk kick),24,17,2014_04_DET_NYJ
+1,9:38,Raiders,Brian Leonhardt 3 yard pass from Derek Carr (Sebastian Janikowski kick),0,7,2014_04_MIA_LVR
+1,6:25,Dolphins,Caleb Sturgis 41 yard field goal ,3,7,2014_04_MIA_LVR
+2,14:17,Dolphins,Mike Wallace 13 yard pass from Ryan Tannehill (Caleb Sturgis kick),10,7,2014_04_MIA_LVR
+2,9:15,Dolphins,Lamar Miller 9 yard rush (Caleb Sturgis kick),17,7,2014_04_MIA_LVR
+2,1:53,Dolphins,Dion Sims 18 yard pass from Ryan Tannehill (Caleb Sturgis kick),24,7,2014_04_MIA_LVR
+3,8:13,Dolphins,Lamar Miller 1 yard rush (Caleb Sturgis kick),31,7,2014_04_MIA_LVR
+3,3:59,Dolphins,Cortland Finnegan 50 yard defensive fumble return (Caleb Sturgis kick),38,7,2014_04_MIA_LVR
+4,8:36,Raiders,Andre Holmes 22 yard pass from Matt McGloin (Sebastian Janikowski kick),38,14,2014_04_MIA_LVR
+1,13:01,Buccaneers,Mike Evans 7 yard pass from Mike Glennon (Patrick Murray kick),7,0,2014_04_TB_PIT
+1,10:01,Buccaneers,Patrick Murray 50 yard field goal ,10,0,2014_04_TB_PIT
+1,6:19,Steelers,Shaun Suisham 25 yard field goal ,10,3,2014_04_TB_PIT
+1,0:15,Steelers,Antonio Brown 11 yard pass from Ben Roethlisberger (Shaun Suisham kick),10,10,2014_04_TB_PIT
+2,4:58,Steelers,Antonio Brown 27 yard pass from Ben Roethlisberger (Shaun Suisham kick),10,17,2014_04_TB_PIT
+3,12:27,Buccaneers,Doug Martin 3 yard rush (Patrick Murray kick),17,17,2014_04_TB_PIT
+3,7:50,Steelers,Heath Miller 5 yard pass from Ben Roethlisberger (Shaun Suisham kick),17,24,2014_04_TB_PIT
+4,11:37,Buccaneers,Patrick Murray 27 yard field goal ,20,24,2014_04_TB_PIT
+4,0:07,Buccaneers,Vincent Jackson 5 yard pass from Mike Glennon (Patrick Murray kick),27,24,2014_04_TB_PIT
+1,3:44,Chargers,Nick Novak 33 yard field goal ,0,3,2014_04_JAX_LAC
+2,14:06,Jaguars,Toby Gerhart 1 yard rush (Josh Scobee kick),7,3,2014_04_JAX_LAC
+2,11:24,Chargers,Eddie Royal 47 yard pass from Philip Rivers (Nick Novak kick),7,10,2014_04_JAX_LAC
+2,7:17,Jaguars,Nic Jacobs 2 yard pass from Blake Bortles (Josh Scobee kick),14,10,2014_04_JAX_LAC
+2,0:59,Chargers,Eddie Royal 43 yard pass from Philip Rivers (Nick Novak kick),14,17,2014_04_JAX_LAC
+3,11:09,Chargers,Malcom Floyd 24 yard pass from Philip Rivers (Nick Novak kick),14,24,2014_04_JAX_LAC
+3,6:10,Chargers,Nick Novak 34 yard field goal ,14,27,2014_04_JAX_LAC
+4,13:35,Chargers,Nick Novak 23 yard field goal ,14,30,2014_04_JAX_LAC
+4,1:09,Chargers,Nick Novak 37 yard field goal ,14,33,2014_04_JAX_LAC
+1,9:27,Vikings,Matt Asiata 3 yard rush (Blair Walsh kick),0,7,2014_04_ATL_MIN
+1,3:56,Falcons,Roddy White 24 yard pass from Matt Ryan (Matt Bryant kick),7,7,2014_04_ATL_MIN
+1,1:31,Vikings,Matt Asiata 6 yard rush (Blair Walsh kick),7,14,2014_04_ATL_MIN
+2,5:56,Falcons,Patrick DiMarco 1 yard pass from Matt Ryan (Matt Bryant kick),14,14,2014_04_ATL_MIN
+2,1:59,Vikings,Teddy Bridgewater 13 yard rush (Blair Walsh kick),14,21,2014_04_ATL_MIN
+2,0:02,Vikings,Blair Walsh 18 yard field goal ,14,24,2014_04_ATL_MIN
+3,10:40,Vikings,Blair Walsh 41 yard field goal ,14,27,2014_04_ATL_MIN
+3,7:19,Falcons,Devin Hester 36 yard pass from Matt Ryan (Matt Bryant kick),21,27,2014_04_ATL_MIN
+3,1:31,Falcons,Antone Smith 48 yard rush (Matt Bryant kick),28,27,2014_04_ATL_MIN
+4,10:50,Vikings,Matt Asiata 1 yard rush (Rhett Ellison pass from Teddy Bridgewater),28,35,2014_04_ATL_MIN
+4,3:38,Vikings,Blair Walsh 55 yard field goal ,28,38,2014_04_ATL_MIN
+4,1:14,Vikings,Blair Walsh 33 yard field goal ,28,41,2014_04_ATL_MIN
+1,12:19,Eagles,Brad Smith blocked punt recovery in end zone (Cody Parkey kick),7,0,2014_04_PHI_SF
+1,3:32,49ers,Phil Dawson 29 yard field goal ,7,3,2014_04_PHI_SF
+2,14:45,49ers,Frank Gore 55 yard pass from Colin Kaepernick (Phil Dawson kick),7,10,2014_04_PHI_SF
+2,12:02,Eagles,Malcolm Jenkins 53 yard interception return (Cody Parkey kick),14,10,2014_04_PHI_SF
+2,8:49,Eagles,Darren Sproles 82 yard punt return (Cody Parkey kick),21,10,2014_04_PHI_SF
+2,0:59,49ers,Phil Dawson 51 yard field goal ,21,13,2014_04_PHI_SF
+3,8:06,49ers,Stevie Johnson 12 yard pass from Colin Kaepernick (Phil Dawson kick),21,20,2014_04_PHI_SF
+3,3:33,49ers,Phil Dawson 46 yard field goal ,21,23,2014_04_PHI_SF
+4,6:35,49ers,Phil Dawson 31 yard field goal ,21,26,2014_04_PHI_SF
+1,7:50,Cowboys,Terrance Williams 6 yard pass from Tony Romo (Dan Bailey kick),0,7,2014_04_NO_DAL
+2,5:38,Cowboys,Dan Bailey 51 yard field goal ,0,10,2014_04_NO_DAL
+2,4:03,Cowboys,DeMarco Murray 15 yard rush (Dan Bailey kick),0,17,2014_04_NO_DAL
+2,0:19,Cowboys,Terrance Williams 23 yard pass from Tony Romo (Dan Bailey kick),0,24,2014_04_NO_DAL
+3,11:10,Saints,Shayne Graham 30 yard field goal ,3,24,2014_04_NO_DAL
+3,6:42,Cowboys,DeMarco Murray 28 yard rush (Dan Bailey kick),3,31,2014_04_NO_DAL
+4,13:35,Saints,Josh Hill 12 yard pass from Drew Brees (Shayne Graham kick),10,31,2014_04_NO_DAL
+4,9:49,Saints,Jimmy Graham 13 yard pass from Drew Brees (Shayne Graham kick),17,31,2014_04_NO_DAL
+4,3:34,Cowboys,Dez Bryant 18 yard pass from Tony Romo (Dan Bailey kick),17,38,2014_04_NO_DAL
+1,2:15,Chiefs,Jamaal Charles 2 yard rush (Cairo Santos kick),0,7,2014_04_NE_KC
+2,10:58,Chiefs,Jamaal Charles 5 yard pass from Alex Smith (Cairo Santos kick),0,14,2014_04_NE_KC
+2,0:00,Chiefs,Cairo Santos 22 yard field goal ,0,17,2014_04_NE_KC
+3,7:53,Chiefs,Jamaal Charles 8 yard pass from Alex Smith (Cairo Santos kick),0,24,2014_04_NE_KC
+3,5:29,Chiefs,Cairo Santos 31 yard field goal ,0,27,2014_04_NE_KC
+3,3:26,Patriots,Brandon LaFell 44 yard pass from Tom Brady (Stephen Gostkowski kick),7,27,2014_04_NE_KC
+4,11:52,Chiefs,Travis Kelce 2 yard pass from Alex Smith (Cairo Santos kick),7,34,2014_04_NE_KC
+4,10:34,Chiefs,Husain Abdullah 39 yard interception return (Cairo Santos kick),7,41,2014_04_NE_KC
+4,7:25,Patriots,Rob Gronkowski 13 yard pass from Jimmy Garoppolo (Stephen Gostkowski kick),14,41,2014_04_NE_KC
+1,9:39,Packers,Randall Cobb 8 yard pass from Aaron Rodgers (Mason Crosby kick),0,7,2014_05_MIN_GB
+1,5:18,Packers,Jordy Nelson 66 yard pass from Aaron Rodgers (Mason Crosby kick),0,14,2014_05_MIN_GB
+2,6:51,Packers,Julius Peppers 49 yard interception return (Mason Crosby kick),0,21,2014_05_MIN_GB
+2,4:51,Packers,Davante Adams 11 yard pass from Aaron Rodgers (Mason Crosby kick),0,28,2014_05_MIN_GB
+3,10:33,Packers,Eddie Lacy 11 yard rush (Mason Crosby kick),0,35,2014_05_MIN_GB
+3,3:42,Packers,Eddie Lacy 10 yard rush (Mason Crosby kick),0,42,2014_05_MIN_GB
+4,14:54,Vikings,Christian Ponder 6 yard rush (Blair Walsh kick),7,42,2014_05_MIN_GB
+4,10:07,Vikings,Blair Walsh 26 yard field goal ,10,42,2014_05_MIN_GB
+1,10:56,Panthers,Corey Brown 79 yard punt return (Graham Gano kick),0,7,2014_05_CHI_CAR
+1,4:31,Bears,Matt Forte 10 yard pass from Jay Cutler (Robbie Gould kick),7,7,2014_05_CHI_CAR
+1,2:13,Bears,Jay Cutler 10 yard rush (Robbie Gould kick),14,7,2014_05_CHI_CAR
+2,10:51,Bears,Alshon Jeffery 25 yard pass from Jay Cutler (Robbie Gould kick),21,7,2014_05_CHI_CAR
+2,0:12,Panthers,Greg Olsen 9 yard pass from Cam Newton (Graham Gano kick),21,14,2014_05_CHI_CAR
+3,7:16,Panthers,Chris Ogbonnaya 1 yard rush (Graham Gano kick),21,21,2014_05_CHI_CAR
+3,2:38,Bears,Robbie Gould 45 yard field goal ,24,21,2014_05_CHI_CAR
+4,4:29,Panthers,Graham Gano 44 yard field goal ,24,24,2014_05_CHI_CAR
+4,2:18,Panthers,Greg Olsen 6 yard pass from Cam Newton (Graham Gano kick),24,31,2014_05_CHI_CAR
+2,0:11,Cowboys,Dan Bailey 33 yard field goal ,0,3,2014_05_HOU_DAL
+3,8:49,Texans,Arian Foster 15 yard rush (Randy Bullock kick),7,3,2014_05_HOU_DAL
+3,6:08,Cowboys,Terrance Williams 43 yard pass from Tony Romo (Dan Bailey kick),7,10,2014_05_HOU_DAL
+4,9:44,Cowboys,Dez Bryant 2 yard pass from Tony Romo (Dan Bailey kick),7,17,2014_05_HOU_DAL
+4,2:27,Texans,Randy Bullock 29 yard field goal ,10,17,2014_05_HOU_DAL
+4,0:41,Texans,Arian Foster 1 yard rush (Randy Bullock kick),17,17,2014_05_HOU_DAL
+OT,7:45,Cowboys,Dan Bailey 49 yard field goal ,17,20,2014_05_HOU_DAL
+1,0:05,Lions,Golden Tate 9 yard pass from Matthew Stafford (Alex Henery kick),0,7,2014_05_BUF_DET
+2,13:44,Lions,Rashean Mathis 41 yard interception return (Alex Henery kick),0,14,2014_05_BUF_DET
+2,6:43,Bills,Dan Carpenter 45 yard field goal ,3,14,2014_05_BUF_DET
+3,1:23,Bills,Dan Carpenter 25 yard field goal ,6,14,2014_05_BUF_DET
+4,9:23,Bills,Chris Gragg 2 yard pass from Kyle Orton (Fred Jackson run),14,14,2014_05_BUF_DET
+4,0:04,Bills,Dan Carpenter 58 yard field goal ,17,14,2014_05_BUF_DET
+1,9:44,Colts,Adam Vinatieri 38 yard field goal ,0,3,2014_05_BAL_IND
+2,0:35,Colts,Adam Vinatieri 34 yard field goal ,0,6,2014_05_BAL_IND
+2,0:00,Ravens,Justin Tucker 52 yard field goal ,3,6,2014_05_BAL_IND
+3,10:33,Colts,Dwayne Allen 6 yard pass from Andrew Luck (Adam Vinatieri kick),3,13,2014_05_BAL_IND
+4,13:56,Ravens,Justin Tucker 27 yard field goal ,6,13,2014_05_BAL_IND
+4,8:56,Colts,Andrew Luck 13 yard rush (Adam Vinatieri kick),6,20,2014_05_BAL_IND
+4,7:16,Ravens,Justin Forsett 11 yard rush (Justin Tucker kick),13,20,2014_05_BAL_IND
+1,5:17,Jaguars,Josh Scobee 43 yard field goal ,0,3,2014_05_PIT_JAX
+2,12:35,Steelers,Shaun Suisham 24 yard field goal ,3,3,2014_05_PIT_JAX
+2,1:53,Steelers,Michael Palmer 1 yard pass from Ben Roethlisberger (Shaun Suisham kick),10,3,2014_05_PIT_JAX
+2,0:09,Jaguars,Josh Scobee 35 yard field goal ,10,6,2014_05_PIT_JAX
+3,3:16,Jaguars,Josh Scobee 36 yard field goal ,10,9,2014_05_PIT_JAX
+4,11:32,Steelers,Brice McCain 22 yard interception return (Shaun Suisham kick),17,9,2014_05_PIT_JAX
+1,9:46,Saints,Shayne Graham 30 yard field goal ,0,3,2014_05_TB_NO
+1,0:21,Saints,Shayne Graham 29 yard field goal ,0,6,2014_05_TB_NO
+2,10:14,Saints,Pierre Thomas 15 yard pass from Drew Brees (Shayne Graham kick),0,13,2014_05_TB_NO
+2,1:54,Buccaneers,Patrick Murray 55 yard field goal ,3,13,2014_05_TB_NO
+2,0:20,Buccaneers,Louis Murphy 20 yard pass from Mike Glennon (Patrick Murray kick),10,13,2014_05_TB_NO
+3,11:59,Buccaneers,Bobby Rainey 9 yard rush (Patrick Murray kick),17,13,2014_05_TB_NO
+3,11:20,Buccaneers,Danny Lansanah 33 yard interception return (Patrick Murray kick),24,13,2014_05_TB_NO
+3,4:57,Saints,Travaris Cadet 5 yard pass from Drew Brees (Shayne Graham kick),24,20,2014_05_TB_NO
+4,13:28,Buccaneers,Robert Herron 9 yard pass from Mike Glennon (Patrick Murray kick),31,20,2014_05_TB_NO
+4,9:28,Saints,Pierre Thomas 27 yard rush (pass failed),31,26,2014_05_TB_NO
+4,6:44,Saints,"Safety, Mike Glennon sacked in end zone by Junior Galette. ",31,28,2014_05_TB_NO
+4,2:30,Saints,Shayne Graham 44 yard field goal ,31,31,2014_05_TB_NO
+OT,9:24,Saints,Khiry Robinson 18 yard rush ,31,37,2014_05_TB_NO
+1,6:40,Giants,Rueben Randle 3 yard pass from Eli Manning (Josh Brown kick),0,7,2014_05_ATL_NYG
+1,1:57,Falcons,Steven Jackson 10 yard rush (Matt Bryant kick),7,7,2014_05_ATL_NYG
+2,14:15,Falcons,Matt Bryant 20 yard field goal ,10,7,2014_05_ATL_NYG
+2,3:40,Giants,Josh Brown 49 yard field goal ,10,10,2014_05_ATL_NYG
+2,0:03,Falcons,Matt Bryant 20 yard field goal ,13,10,2014_05_ATL_NYG
+3,5:37,Falcons,Antone Smith 74 yard pass from Matt Ryan (Matt Bryant kick),20,10,2014_05_ATL_NYG
+3,2:05,Giants,Andre Williams 3 yard rush (Josh Brown kick),20,17,2014_05_ATL_NYG
+4,10:02,Giants,Odell Beckham Jr. 15 yard pass from Eli Manning (Josh Brown kick),20,24,2014_05_ATL_NYG
+4,5:01,Giants,Josh Brown 50 yard field goal ,20,27,2014_05_ATL_NYG
+4,2:08,Giants,Josh Brown 26 yard field goal ,20,30,2014_05_ATL_NYG
+1,14:37,Eagles,Chris Maragos 10 yard blocked punt return (Cody Parkey kick),0,7,2014_05_LAR_PHI
+1,7:42,Eagles,Cody Parkey 26 yard field goal ,0,10,2014_05_LAR_PHI
+1,3:04,Eagles,Cody Parkey 27 yard field goal ,0,13,2014_05_LAR_PHI
+2,3:23,Rams,Brian Quick 8 yard pass from Austin Davis (Greg Zuerlein kick),7,13,2014_05_LAR_PHI
+2,0:30,Eagles,Riley Cooper 9 yard pass from Nick Foles (Cody Parkey kick),7,20,2014_05_LAR_PHI
+3,12:17,Eagles,Cedric Thornton defensive fumble recovery in end zone (Cody Parkey kick),7,27,2014_05_LAR_PHI
+3,2:15,Eagles,Jeremy Maclin 24 yard pass from Nick Foles (Cody Parkey kick),7,34,2014_05_LAR_PHI
+3,0:03,Rams,Benny Cunningham 14 yard rush (Greg Zuerlein kick),14,34,2014_05_LAR_PHI
+4,9:02,Rams,Kenny Britt 30 yard pass from Austin Davis (Greg Zuerlein kick),21,34,2014_05_LAR_PHI
+4,4:41,Rams,Brian Quick 5 yard pass from Austin Davis (Greg Zuerlein kick),28,34,2014_05_LAR_PHI
+1,4:46,Titans,Kendall Wright 11 yard pass from Jake Locker (Ryan Succop kick),0,7,2014_05_CLE_TEN
+2,14:41,Titans,Jake Locker 11 yard rush (Ryan Succop kick),0,14,2014_05_CLE_TEN
+2,10:05,Browns,Billy Cundiff 38 yard field goal ,3,14,2014_05_CLE_TEN
+2,3:43,Titans,Kendall Wright 11 yard pass from Charlie Whitehurst (Ryan Succop kick),3,21,2014_05_CLE_TEN
+2,2:44,Titans,Justin Hunter 75 yard pass from Charlie Whitehurst (Ryan Succop kick),3,28,2014_05_CLE_TEN
+2,0:12,Browns,Jim Dray 1 yard pass from Brian Hoyer (Billy Cundiff kick),10,28,2014_05_CLE_TEN
+3,12:55,Browns,Billy Cundiff 42 yard field goal ,13,28,2014_05_CLE_TEN
+4,11:02,Browns,"Safety, Brett Kerns punt blocked by Tank Carder out of the end zone. ",15,28,2014_05_CLE_TEN
+4,6:49,Browns,Travis Benjamin 17 yard pass from Brian Hoyer (Billy Cundiff kick),22,28,2014_05_CLE_TEN
+4,1:09,Browns,Travis Benjamin 6 yard pass from Brian Hoyer (Billy Cundiff kick),29,28,2014_05_CLE_TEN
+1,9:09,Cardinals,Chandler Catanzaro 33 yard field goal ,3,0,2014_05_ARI_DEN
+1,4:43,Broncos,Julius Thomas 7 yard pass from Peyton Manning (Brandon McManus kick),3,7,2014_05_ARI_DEN
+1,1:41,Cardinals,Chandler Catanzaro 48 yard field goal ,6,7,2014_05_ARI_DEN
+2,7:30,Broncos,Demaryius Thomas 31 yard pass from Peyton Manning (Brandon McManus kick),6,14,2014_05_ARI_DEN
+2,4:37,Cardinals,Andre Ellington 5 yard rush (Chandler Catanzaro kick),13,14,2014_05_ARI_DEN
+2,1:37,Broncos,Demaryius Thomas 86 yard pass from Peyton Manning (Brandon McManus kick),13,21,2014_05_ARI_DEN
+3,9:33,Broncos,Brandon McManus 44 yard field goal ,13,24,2014_05_ARI_DEN
+3,3:03,Cardinals,Andre Ellington 81 yard pass from Logan Thomas (Chandler Catanzaro kick),20,24,2014_05_ARI_DEN
+4,13:48,Broncos,Brandon McManus 41 yard field goal ,20,27,2014_05_ARI_DEN
+4,7:47,Broncos,Julius Thomas 12 yard pass from Peyton Manning (Brandon McManus kick),20,34,2014_05_ARI_DEN
+4,4:33,Broncos,Juwan Thompson 8 yard rush (Brandon McManus kick),20,41,2014_05_ARI_DEN
+1,7:31,Chargers,Antonio Gates 8 yard pass from Philip Rivers (Nick Novak kick),0,7,2014_05_NYJ_LAC
+2,10:15,Chargers,Antonio Gates 12 yard pass from Philip Rivers (Nick Novak kick),0,14,2014_05_NYJ_LAC
+2,0:42,Chargers,Branden Oliver 15 yard rush (Nick Novak kick),0,21,2014_05_NYJ_LAC
+3,6:44,Chargers,Branden Oliver 9 yard pass from Philip Rivers (Nick Novak kick),0,28,2014_05_NYJ_LAC
+4,13:28,Chargers,Nick Novak 34 yard field goal ,0,31,2014_05_NYJ_LAC
+1,8:37,Chiefs,Travis Kelce 2 yard pass from Alex Smith (Cairo Santos kick),7,0,2014_05_KC_SF
+1,4:36,49ers,Phil Dawson 31 yard field goal ,7,3,2014_05_KC_SF
+2,12:18,Chiefs,Cairo Santos 42 yard field goal ,10,3,2014_05_KC_SF
+2,9:44,49ers,Phil Dawson 55 yard field goal ,10,6,2014_05_KC_SF
+2,0:31,49ers,Stevie Johnson 9 yard pass from Colin Kaepernick (Phil Dawson kick),10,13,2014_05_KC_SF
+3,11:56,Chiefs,De'Anthony Thomas 17 yard rush (Cairo Santos kick),17,13,2014_05_KC_SF
+3,6:16,49ers,Phil Dawson 52 yard field goal ,17,16,2014_05_KC_SF
+4,8:42,49ers,Phil Dawson 27 yard field goal ,17,19,2014_05_KC_SF
+4,2:12,49ers,Phil Dawson 30 yard field goal ,17,22,2014_05_KC_SF
+1,10:03,Patriots,Stevan Ridley 1 yard rush (Stephen Gostkowski kick),0,7,2014_05_CIN_NE
+1,3:12,Patriots,Tim Wright 17 yard pass from Tom Brady (Stephen Gostkowski kick),0,14,2014_05_CIN_NE
+2,4:33,Bengals,Mike Nugent 23 yard field goal ,3,14,2014_05_CIN_NE
+2,1:12,Patriots,Stephen Gostkowski 48 yard field goal ,3,17,2014_05_CIN_NE
+2,0:09,Patriots,Stephen Gostkowski 19 yard field goal ,3,20,2014_05_CIN_NE
+3,11:27,Bengals,Mohamed Sanu 37 yard pass from Andy Dalton (Mike Nugent kick),10,20,2014_05_CIN_NE
+3,6:06,Patriots,Rob Gronkowski 16 yard pass from Tom Brady (Stephen Gostkowski kick),10,27,2014_05_CIN_NE
+3,6:00,Patriots,Kyle Arrington 9 yard fumble return (Stephen Gostkowski kick),10,34,2014_05_CIN_NE
+3,3:43,Bengals,A.J. Green 17 yard pass from Andy Dalton (Mike Nugent kick),17,34,2014_05_CIN_NE
+4,14:54,Patriots,Stephen Gostkowski 23 yard field goal ,17,37,2014_05_CIN_NE
+4,7:53,Patriots,Stephen Gostkowski 47 yard field goal ,17,40,2014_05_CIN_NE
+4,2:55,Patriots,Stephen Gostkowski 35 yard field goal ,17,43,2014_05_CIN_NE
+1,12:44,Seahawks,Jermaine Kearse 15 yard pass from Russell Wilson (Stephen Hauschka kick),7,0,2014_05_SEA_WAS
+2,9:04,Seahawks,Stephen Hauschka 40 yard field goal ,10,0,2014_05_SEA_WAS
+2,4:37,Seahawks,Russell Wilson 9 yard rush (Stephen Hauschka kick),17,0,2014_05_SEA_WAS
+2,2:32,Redskins,DeSean Jackson 60 yard pass from Kirk Cousins (Kai Forbath kick),17,7,2014_05_SEA_WAS
+3,10:41,Redskins,Kai Forbath 27 yard field goal ,17,10,2014_05_SEA_WAS
+4,6:31,Seahawks,Marshawn Lynch 9 yard pass from Russell Wilson (Stephen Hauschka kick),24,10,2014_05_SEA_WAS
+4,3:35,Redskins,Andre Roberts 6 yard pass from Kirk Cousins (Kai Forbath kick),24,17,2014_05_SEA_WAS
+4,0:21,Seahawks,Stephen Hauschka 43 yard field goal ,27,17,2014_05_SEA_WAS
+1,11:13,Colts,Adam Vinatieri 27 yard field goal ,3,0,2014_06_IND_HOU
+1,10:40,Colts,Trent Richardson 5 yard rush (Adam Vinatieri kick),10,0,2014_06_IND_HOU
+1,7:00,Colts,Ahmad Bradshaw 5 yard pass from Andrew Luck (Adam Vinatieri kick),17,0,2014_06_IND_HOU
+1,0:00,Colts,Coby Fleener 4 yard pass from Andrew Luck (Adam Vinatieri kick),24,0,2014_06_IND_HOU
+2,9:43,Texans,Andre Johnson 4 yard pass from Ryan Fitzpatrick (Randy Bullock kick),24,7,2014_06_IND_HOU
+2,8:22,Texans,Arian Foster 12 yard rush (Randy Bullock kick),24,14,2014_06_IND_HOU
+2,1:05,Colts,Adam Vinatieri 34 yard field goal ,27,14,2014_06_IND_HOU
+3,5:59,Texans,Arian Foster 2 yard rush (Randy Bullock kick),27,21,2014_06_IND_HOU
+3,2:52,Colts,T.Y. Hilton 33 yard pass from Andrew Luck (run failed),33,21,2014_06_IND_HOU
+4,10:36,Texans,J.J. Watt 45 yard defensive fumble return (Randy Bullock kick),33,28,2014_06_IND_HOU
+2,13:04,Patriots,Tim Wright 1 yard pass from Tom Brady (Stephen Gostkowski kick),7,0,2014_06_NE_BUF
+2,3:52,Bills,Robert Woods 7 yard pass from Kyle Orton (Dan Carpenter kick),7,7,2014_06_NE_BUF
+2,1:43,Patriots,Stephen Gostkowski 42 yard field goal ,10,7,2014_06_NE_BUF
+2,0:00,Patriots,Stephen Gostkowski 53 yard field goal ,13,7,2014_06_NE_BUF
+3,12:30,Patriots,Brian Tyms 43 yard pass from Tom Brady (Stephen Gostkowski kick),20,7,2014_06_NE_BUF
+3,5:33,Bills,Fred Jackson 1 yard rush (Dan Carpenter kick),20,14,2014_06_NE_BUF
+3,3:08,Patriots,Stephen Gostkowski 40 yard field goal ,23,14,2014_06_NE_BUF
+4,8:42,Patriots,Brandon LaFell 18 yard pass from Tom Brady (Stephen Gostkowski kick),30,14,2014_06_NE_BUF
+4,5:58,Bills,Chris Hogan 8 yard pass from Kyle Orton (Robert Woods pass from Kyle Orton),30,22,2014_06_NE_BUF
+4,2:49,Patriots,Brandon LaFell 56 yard pass from Tom Brady (Stephen Gostkowski kick),37,22,2014_06_NE_BUF
+1,5:45,Panthers,Kelvin Benjamin 3 yard pass from Cam Newton (Graham Gano kick),7,0,2014_06_CAR_CIN
+2,14:21,Bengals,Brandon Tate 5 yard pass from Andy Dalton (Mike Nugent kick),7,7,2014_06_CAR_CIN
+2,11:50,Bengals,Giovani Bernard 89 yard rush (Mike Nugent kick),7,14,2014_06_CAR_CIN
+2,6:20,Panthers,Graham Gano 39 yard field goal ,10,14,2014_06_CAR_CIN
+2,0:03,Bengals,Mike Nugent 44 yard field goal ,10,17,2014_06_CAR_CIN
+3,9:07,Panthers,Fozzy Whittaker 4 yard rush (Graham Gano kick),17,17,2014_06_CAR_CIN
+3,3:54,Panthers,Cam Newton 12 yard rush (Graham Gano kick),24,17,2014_06_CAR_CIN
+4,11:38,Bengals,Mohamed Sanu 34 yard pass from Andy Dalton (Mike Nugent kick),24,24,2014_06_CAR_CIN
+4,4:50,Panthers,Greg Olsen 13 yard pass from Cam Newton (Graham Gano kick),31,24,2014_06_CAR_CIN
+4,4:32,Bengals,Jeremy Hill 3 yard rush (Mike Nugent kick),31,31,2014_06_CAR_CIN
+4,2:11,Bengals,Mike Nugent 38 yard field goal ,31,34,2014_06_CAR_CIN
+4,0:00,Panthers,Graham Gano 44 yard field goal ,34,34,2014_06_CAR_CIN
+OT,8:35,Bengals,Mike Nugent 42 yard field goal ,34,37,2014_06_CAR_CIN
+OT,2:19,Panthers,Graham Gano 36 yard field goal ,37,37,2014_06_CAR_CIN
+1,5:09,Steelers,Shaun Suisham 20 yard field goal ,3,0,2014_06_PIT_CLE
+2,11:45,Browns,Isaiah Crowell 5 yard rush (Billy Cundiff kick),3,7,2014_06_PIT_CLE
+2,9:35,Browns,Jordan Cameron 51 yard pass from Brian Hoyer (Billy Cundiff kick),3,14,2014_06_PIT_CLE
+2,2:27,Browns,Ben Tate 8 yard rush (Billy Cundiff kick),3,21,2014_06_PIT_CLE
+3,3:23,Browns,Billy Cundiff 40 yard field goal ,3,24,2014_06_PIT_CLE
+4,12:47,Browns,Ben Tate 1 yard rush (Billy Cundiff kick),3,31,2014_06_PIT_CLE
+4,2:36,Steelers,Lance Moore 26 yard pass from Ben Roethlisberger (Shaun Suisham kick),10,31,2014_06_PIT_CLE
+1,10:09,Packers,Jordy Nelson 9 yard pass from Aaron Rodgers (Mason Crosby kick),7,0,2014_06_GB_MIA
+1,8:15,Dolphins,Caleb Sturgis 48 yard field goal ,7,3,2014_06_GB_MIA
+2,8:08,Packers,Mason Crosby 43 yard field goal ,10,3,2014_06_GB_MIA
+3,11:48,Dolphins,Jarvis Landry 11 yard pass from Ryan Tannehill (Caleb Sturgis kick),10,10,2014_06_GB_MIA
+3,3:44,Packers,Randall Cobb 5 yard pass from Aaron Rodgers (Mason Crosby kick),17,10,2014_06_GB_MIA
+4,13:42,Dolphins,Lamar Miller 5 yard rush (Caleb Sturgis kick),17,17,2014_06_GB_MIA
+4,9:13,Dolphins,Mike Wallace 5 yard pass from Ryan Tannehill (Caleb Sturgis kick),17,24,2014_06_GB_MIA
+4,4:09,Packers,Mason Crosby 30 yard field goal ,20,24,2014_06_GB_MIA
+4,0:03,Packers,Andrew Quarless 4 yard pass from Aaron Rodgers (Mason Crosby kick),27,24,2014_06_GB_MIA
+1,11:06,Lions,Theo Riddick 9 yard pass from Matthew Stafford (Matt Prater kick),7,0,2014_06_DET_MIN
+2,0:07,Lions,Matt Prater 52 yard field goal ,10,0,2014_06_DET_MIN
+4,11:44,Lions,Joique Bell 1 yard rush (Matt Prater kick),17,0,2014_06_DET_MIN
+4,4:53,Vikings,Blair Walsh 40 yard field goal ,17,3,2014_06_DET_MIN
+1,12:53,Broncos,Brandon McManus 37 yard field goal ,3,0,2014_06_DEN_NYJ
+1,4:16,Jets,Jace Amaro 2 yard pass from Geno Smith (Nick Folk kick),3,7,2014_06_DEN_NYJ
+2,5:50,Broncos,Demaryius Thomas 1 yard pass from Peyton Manning (Brandon McManus kick),10,7,2014_06_DEN_NYJ
+2,0:27,Broncos,Julius Thomas 22 yard pass from Peyton Manning (Brandon McManus kick),17,7,2014_06_DEN_NYJ
+3,8:08,Broncos,Julius Thomas 4 yard pass from Peyton Manning (Brandon McManus kick),24,7,2014_06_DEN_NYJ
+3,0:36,Jets,Nick Folk 30 yard field goal ,24,10,2014_06_DEN_NYJ
+4,7:56,Jets,Eric Decker 2 yard pass from Geno Smith (Nick Folk kick),24,17,2014_06_DEN_NYJ
+4,0:15,Broncos,Aqib Talib 22 yard interception return (Brandon McManus kick),31,17,2014_06_DEN_NYJ
+1,13:11,Ravens,Torrey Smith 15 yard pass from Joe Flacco (Justin Tucker kick),7,0,2014_06_BAL_TB
+1,9:22,Ravens,Torrey Smith 9 yard pass from Joe Flacco (Justin Tucker kick),14,0,2014_06_BAL_TB
+1,5:00,Ravens,Kamar Aiken 17 yard pass from Joe Flacco (Justin Tucker kick),21,0,2014_06_BAL_TB
+1,0:01,Ravens,Michael Campanaro 19 yard pass from Joe Flacco (Justin Tucker kick),28,0,2014_06_BAL_TB
+2,13:57,Ravens,Steve Smith Sr. 56 yard pass from Joe Flacco (Justin Tucker kick),35,0,2014_06_BAL_TB
+2,8:41,Ravens,Justin Tucker 46 yard field goal ,38,0,2014_06_BAL_TB
+3,10:50,Buccaneers,Patrick Murray 47 yard field goal ,38,3,2014_06_BAL_TB
+3,5:46,Buccaneers,Mike Evans 17 yard pass from Mike Glennon (Patrick Murray kick),38,10,2014_06_BAL_TB
+3,0:07,Ravens,Bernard Pierce 4 yard rush (Justin Tucker kick),45,10,2014_06_BAL_TB
+4,12:19,Buccaneers,Louis Murphy 3 yard pass from Mike Glennon (Patrick Murray kick),45,17,2014_06_BAL_TB
+4,7:53,Ravens,Justin Tucker 49 yard field goal ,48,17,2014_06_BAL_TB
+1,11:17,Jaguars,Storm Johnson 1 yard rush (Josh Scobee kick),7,0,2014_06_JAX_TEN
+1,0:44,Titans,Ryan Succop 25 yard field goal ,7,3,2014_06_JAX_TEN
+2,1:04,Titans,Jackie Battle 1 yard rush (Ryan Succop kick),7,10,2014_06_JAX_TEN
+3,8:52,Titans,Ryan Succop 21 yard field goal ,7,13,2014_06_JAX_TEN
+4,14:49,Titans,Ryan Succop 42 yard field goal ,7,16,2014_06_JAX_TEN
+4,0:37,Jaguars,Clay Harbor 20 yard pass from Blake Bortles (Josh Scobee kick),14,16,2014_06_JAX_TEN
+1,14:08,Raiders,Andre Holmes 77 yard pass from Derek Carr (Sebastian Janikowski kick),0,7,2014_06_LAC_LVR
+1,9:38,Chargers,Eddie Royal 29 yard pass from Philip Rivers (Nick Novak kick),7,7,2014_06_LAC_LVR
+2,11:52,Chargers,Malcom Floyd 5 yard pass from Philip Rivers (Nick Novak kick),14,7,2014_06_LAC_LVR
+2,7:25,Raiders,James Jones 6 yard pass from Derek Carr (Sebastian Janikowski kick),14,14,2014_06_LAC_LVR
+3,7:40,Raiders,Brice Butler 47 yard pass from Derek Carr (Sebastian Janikowski kick),14,21,2014_06_LAC_LVR
+3,2:52,Chargers,Antonio Gates 1 yard pass from Philip Rivers (Nick Novak kick),21,21,2014_06_LAC_LVR
+4,10:01,Raiders,Andre Holmes 6 yard pass from Derek Carr (Sebastian Janikowski kick),21,28,2014_06_LAC_LVR
+4,5:52,Chargers,Nick Novak 30 yard field goal ,24,28,2014_06_LAC_LVR
+4,1:56,Chargers,Branden Oliver 1 yard rush (Nick Novak kick),31,28,2014_06_LAC_LVR
+1,3:08,Cardinals,Michael Floyd 20 yard pass from Carson Palmer (Chandler Catanzaro kick),0,7,2014_06_WAS_ARI
+2,14:03,Redskins,DeSean Jackson 64 yard pass from Kirk Cousins (Kai Forbath kick),7,7,2014_06_WAS_ARI
+2,8:20,Redskins,Kai Forbath 28 yard field goal ,10,7,2014_06_WAS_ARI
+2,0:31,Cardinals,Larry Fitzgerald 24 yard pass from Carson Palmer (Chandler Catanzaro kick),10,14,2014_06_WAS_ARI
+2,0:02,Redskins,Kai Forbath 43 yard field goal ,13,14,2014_06_WAS_ARI
+3,4:13,Cardinals,Chandler Catanzaro 33 yard field goal ,13,17,2014_06_WAS_ARI
+4,12:54,Cardinals,Chandler Catanzaro 49 yard field goal ,13,20,2014_06_WAS_ARI
+4,10:27,Cardinals,Chandler Catanzaro 37 yard field goal ,13,23,2014_06_WAS_ARI
+4,2:17,Redskins,Pierre Garcon 5 yard pass from Kirk Cousins (Kai Forbath kick),20,23,2014_06_WAS_ARI
+4,0:18,Cardinals,Rashad Johnson 28 yard interception return (Chandler Catanzaro kick),20,30,2014_06_WAS_ARI
+1,9:41,Falcons,Matt Bryant 52 yard field goal ,0,3,2014_06_CHI_ATL
+2,14:47,Bears,Robbie Gould 25 yard field goal ,3,3,2014_06_CHI_ATL
+2,5:59,Bears,Josh Morgan 3 yard pass from Jay Cutler (Robbie Gould kick),10,3,2014_06_CHI_ATL
+2,0:02,Bears,Robbie Gould 28 yard field goal ,13,3,2014_06_CHI_ATL
+3,11:19,Falcons,Antone Smith 41 yard pass from Matt Ryan (Matt Bryant kick),13,10,2014_06_CHI_ATL
+3,6:19,Falcons,Matt Bryant 54 yard field goal ,13,13,2014_06_CHI_ATL
+3,5:06,Bears,Matt Forte 6 yard rush (Robbie Gould kick failed),19,13,2014_06_CHI_ATL
+4,10:07,Bears,Matt Forte 9 yard rush (Martellus Bennett pass from Jay Cutler),27,13,2014_06_CHI_ATL
+1,10:06,Seahawks,Stephen Hauschka 33 yard field goal ,0,3,2014_06_DAL_SEA
+1,7:13,Seahawks,Mike Morgan 25 yard blocked punt return (Stephen Hauschka kick),0,10,2014_06_DAL_SEA
+1,2:34,Cowboys,Gavin Escobar 2 yard pass from Tony Romo (Dan Bailey kick),7,10,2014_06_DAL_SEA
+2,5:15,Cowboys,Dan Bailey 42 yard field goal ,10,10,2014_06_DAL_SEA
+2,0:16,Cowboys,Jason Witten 3 yard pass from Tony Romo (Dan Bailey kick),17,10,2014_06_DAL_SEA
+3,6:19,Seahawks,Russell Wilson 9 yard rush (Stephen Hauschka kick),17,17,2014_06_DAL_SEA
+3,3:20,Seahawks,Stephen Hauschka 33 yard field goal ,17,20,2014_06_DAL_SEA
+3,1:04,Cowboys,Dan Bailey 56 yard field goal ,20,20,2014_06_DAL_SEA
+4,8:16,Seahawks,Stephen Hauschka 48 yard field goal ,20,23,2014_06_DAL_SEA
+4,3:16,Cowboys,DeMarco Murray 15 yard rush (Dan Bailey kick),27,23,2014_06_DAL_SEA
+4,1:09,Cowboys,Dan Bailey 31 yard field goal ,30,23,2014_06_DAL_SEA
+1,10:55,Eagles,Cody Parkey 31 yard field goal ,0,3,2014_06_NYG_PHI
+1,3:56,Eagles,Zach Ertz 15 yard pass from Nick Foles (Cody Parkey kick),0,10,2014_06_NYG_PHI
+2,9:10,Eagles,James Casey 26 yard pass from Nick Foles (Cody Parkey kick),0,17,2014_06_NYG_PHI
+2,4:25,Eagles,Cody Parkey 45 yard field goal ,0,20,2014_06_NYG_PHI
+3,5:26,Eagles,Darren Sproles 15 yard rush (Cody Parkey kick),0,27,2014_06_NYG_PHI
+1,7:55,Rams,Benny Cunningham 1 yard rush (Greg Zuerlein kick),0,7,2014_06_SF_LAR
+1,0:53,Rams,Lance Kendricks 22 yard pass from Austin Davis (Greg Zuerlein kick),0,14,2014_06_SF_LAR
+2,7:07,49ers,Phil Dawson 54 yard field goal ,3,14,2014_06_SF_LAR
+2,0:14,49ers,Brandon Lloyd 80 yard pass from Colin Kaepernick (Phil Dawson kick),10,14,2014_06_SF_LAR
+3,9:58,49ers,Anquan Boldin 11 yard pass from Colin Kaepernick (Phil Dawson kick),17,14,2014_06_SF_LAR
+3,0:13,49ers,Michael Crabtree 32 yard pass from Colin Kaepernick (Phil Dawson kick),24,14,2014_06_SF_LAR
+4,2:24,Rams,Greg Zuerlein 38 yard field goal ,24,17,2014_06_SF_LAR
+4,0:53,49ers,Dontae Johnson 20 yard interception return (Phil Dawson kick),31,17,2014_06_SF_LAR
+1,13:31,Patriots,Shane Vereen 49 yard pass from Tom Brady (Stephen Gostkowski kick),0,7,2014_07_NYJ_NE
+1,6:29,Jets,Nick Folk 22 yard field goal ,3,7,2014_07_NYJ_NE
+1,0:19,Jets,Nick Folk 47 yard field goal ,6,7,2014_07_NYJ_NE
+2,7:52,Jets,Nick Folk 46 yard field goal ,9,7,2014_07_NYJ_NE
+2,4:22,Patriots,Shane Vereen 3 yard pass from Tom Brady (Stephen Gostkowski kick),9,14,2014_07_NYJ_NE
+2,1:01,Jets,Nick Folk 27 yard field goal ,12,14,2014_07_NYJ_NE
+2,0:00,Patriots,Stephen Gostkowski 39 yard field goal ,12,17,2014_07_NYJ_NE
+3,8:58,Jets,Chris Ivory 1 yard rush (Nick Folk kick),19,17,2014_07_NYJ_NE
+3,4:10,Patriots,Stephen Gostkowski 36 yard field goal ,19,20,2014_07_NYJ_NE
+4,7:49,Patriots,Danny Amendola 19 yard pass from Tom Brady (Stephen Gostkowski kick),19,27,2014_07_NYJ_NE
+4,2:31,Jets,Jeff Cumberland 10 yard pass from Geno Smith (pass failed),25,27,2014_07_NYJ_NE
+1,11:47,Ravens,Owen Daniels 5 yard pass from Joe Flacco (Justin Tucker kick),0,7,2014_07_ATL_BAL
+2,2:38,Ravens,Bernard Pierce 1 yard rush (Justin Tucker kick),0,14,2014_07_ATL_BAL
+2,0:00,Ravens,Justin Tucker 38 yard field goal ,0,17,2014_07_ATL_BAL
+3,11:28,Ravens,Justin Tucker 38 yard field goal ,0,20,2014_07_ATL_BAL
+4,7:12,Falcons,Roddy White 4 yard pass from Matt Ryan (Matt Bryant kick),7,20,2014_07_ATL_BAL
+4,3:44,Ravens,"Safety, Matt Ryan sacked in the endzone by Terrell Suggs. ",7,22,2014_07_ATL_BAL
+4,1:46,Ravens,Torrey Smith 39 yard pass from Joe Flacco (Justin Tucker kick),7,29,2014_07_ATL_BAL
+1,1:50,Vikings,Blair Walsh 40 yard field goal ,3,0,2014_07_MIN_BUF
+2,9:23,Bills,Sammy Watkins 26 yard pass from Kyle Orton (Dan Carpenter kick),3,7,2014_07_MIN_BUF
+2,6:17,Vikings,Cordarrelle Patterson 4 yard pass from Teddy Bridgewater (Blair Walsh kick),10,7,2014_07_MIN_BUF
+2,4:01,Bills,Dan Carpenter 31 yard field goal ,10,10,2014_07_MIN_BUF
+2,0:15,Vikings,Blair Walsh 55 yard field goal ,13,10,2014_07_MIN_BUF
+4,11:45,Vikings,Blair Walsh 33 yard field goal ,16,10,2014_07_MIN_BUF
+4,0:01,Bills,Sammy Watkins 2 yard pass from Kyle Orton (Dan Carpenter kick),16,17,2014_07_MIN_BUF
+1,6:51,Dolphins,Charles Clay 13 yard pass from Ryan Tannehill (Caleb Sturgis kick),7,0,2014_07_MIA_CHI
+2,5:20,Dolphins,Mike Wallace 10 yard pass from Ryan Tannehill (Caleb Sturgis kick),14,0,2014_07_MIA_CHI
+3,7:59,Bears,Matt Forte 10 yard pass from Jay Cutler (Robbie Gould kick),14,7,2014_07_MIA_CHI
+3,0:31,Dolphins,Lamar Miller 2 yard rush (Caleb Sturgis kick),21,7,2014_07_MIA_CHI
+4,13:32,Dolphins,Caleb Sturgis 33 yard field goal ,24,7,2014_07_MIA_CHI
+4,7:38,Bears,Matt Forte 1 yard rush (Robbie Gould kick),24,14,2014_07_MIA_CHI
+4,2:13,Dolphins,Caleb Sturgis 19 yard field goal ,27,14,2014_07_MIA_CHI
+2,13:56,Saints,Austin Johnson 13 yard pass from Drew Brees (Shayne Graham kick),7,0,2014_07_NO_DET
+2,5:29,Lions,Matt Prater 21 yard field goal ,7,3,2014_07_NO_DET
+2,0:00,Saints,Shayne Graham 27 yard field goal ,10,3,2014_07_NO_DET
+3,13:42,Saints,Kenny Stills 46 yard pass from Drew Brees (Shayne Graham kick),17,3,2014_07_NO_DET
+3,6:19,Lions,Joique Bell 1 yard rush (Matt Prater kick),17,10,2014_07_NO_DET
+4,13:33,Saints,Shayne Graham 48 yard field goal ,20,10,2014_07_NO_DET
+4,5:24,Saints,Shayne Graham 36 yard field goal ,23,10,2014_07_NO_DET
+4,3:38,Lions,Golden Tate 73 yard pass from Matthew Stafford (Matt Prater kick),23,17,2014_07_NO_DET
+4,1:48,Lions,Corey Fuller 5 yard pass from Matthew Stafford (Matt Prater kick),23,24,2014_07_NO_DET
+1,11:51,Packers,Jordy Nelson 59 yard pass from Aaron Rodgers (Mason Crosby kick),0,7,2014_07_CAR_GB
+1,5:53,Packers,Eddie Lacy 5 yard rush (Mason Crosby kick),0,14,2014_07_CAR_GB
+1,2:07,Packers,James Starks 13 yard rush (Mason Crosby kick),0,21,2014_07_CAR_GB
+2,4:07,Packers,Randall Cobb 3 yard pass from Aaron Rodgers (Mason Crosby kick),0,28,2014_07_CAR_GB
+2,0:00,Panthers,Graham Gano 33 yard field goal ,3,28,2014_07_CAR_GB
+3,10:20,Packers,Davante Adams 21 yard pass from Aaron Rodgers (Mason Crosby kick),3,35,2014_07_CAR_GB
+3,0:08,Packers,Mason Crosby 34 yard field goal ,3,38,2014_07_CAR_GB
+4,9:39,Panthers,Kelvin Benjamin 13 yard pass from Cam Newton (Graham Gano kick),10,38,2014_07_CAR_GB
+4,1:24,Panthers,Brenton Bersin 1 yard pass from Derek Anderson (Graham Gano kick),17,38,2014_07_CAR_GB
+1,0:33,Colts,Adam Vinatieri 23 yard field goal ,0,3,2014_07_CIN_IND
+2,12:08,Colts,Ahmad Bradshaw 1 yard rush (Adam Vinatieri kick),0,10,2014_07_CIN_IND
+3,9:47,Colts,Dwayne Allen 32 yard pass from Andrew Luck (Adam Vinatieri kick),0,17,2014_07_CIN_IND
+4,12:09,Colts,Ahmad Bradshaw 10 yard pass from Andrew Luck (Adam Vinatieri kick),0,24,2014_07_CIN_IND
+4,1:55,Colts,Adam Vinatieri 50 yard field goal ,0,27,2014_07_CIN_IND
+1,6:30,Browns,Billy Cundiff 40 yard field goal ,3,0,2014_07_CLE_JAX
+2,4:16,Browns,Billy Cundiff 22 yard field goal ,6,0,2014_07_CLE_JAX
+2,0:27,Jaguars,Allen Robinson 31 yard pass from Blake Bortles (Josh Scobee kick),6,7,2014_07_CLE_JAX
+3,10:00,Jaguars,Josh Scobee 30 yard field goal ,6,10,2014_07_CLE_JAX
+4,5:58,Jaguars,Denard Robinson 8 yard rush (Josh Scobee kick),6,17,2014_07_CLE_JAX
+4,4:35,Jaguars,Storm Johnson 3 yard rush (Josh Scobee kick),6,24,2014_07_CLE_JAX
+1,9:01,Seahawks,Stephen Hauschka 24 yard field goal ,3,0,2014_07_SEA_LAR
+1,5:19,Rams,Tre Mason 6 yard rush (Greg Zuerlein kick),3,7,2014_07_SEA_LAR
+2,13:12,Rams,Benny Cunningham 5 yard pass from Austin Davis (Greg Zuerlein kick),3,14,2014_07_SEA_LAR
+2,7:05,Rams,Stedman Bailey 90 yard punt return (Greg Zuerlein kick),3,21,2014_07_SEA_LAR
+2,0:07,Seahawks,Stephen Hauschka 35 yard field goal ,6,21,2014_07_SEA_LAR
+3,4:22,Seahawks,Russell Wilson 19 yard rush (Stephen Hauschka kick),13,21,2014_07_SEA_LAR
+4,9:44,Seahawks,Cooper Helfet 19 yard pass from Russell Wilson (pass failed),19,21,2014_07_SEA_LAR
+4,5:36,Rams,Lance Kendricks 4 yard pass from Austin Davis (Greg Zuerlein kick),19,28,2014_07_SEA_LAR
+4,3:18,Seahawks,Doug Baldwin 9 yard pass from Russell Wilson (Stephen Hauschka kick),26,28,2014_07_SEA_LAR
+1,10:08,Redskins,Kai Forbath 31 yard field goal ,0,3,2014_07_TEN_WAS
+1,3:41,Titans,Ryan Succop 36 yard field goal ,3,3,2014_07_TEN_WAS
+2,7:34,Redskins,Kai Forbath 31 yard field goal ,3,6,2014_07_TEN_WAS
+2,1:04,Titans,Kendall Wright 14 yard pass from Charlie Whitehurst (Ryan Succop kick),10,6,2014_07_TEN_WAS
+3,12:27,Redskins,Pierre Garcon 70 yard pass from Colt McCoy (Kai Forbath kick),10,13,2014_07_TEN_WAS
+4,13:27,Redskins,Kai Forbath 27 yard field goal ,10,16,2014_07_TEN_WAS
+4,7:41,Titans,Derek Hagan 38 yard pass from Charlie Whitehurst (Ryan Succop kick),17,16,2014_07_TEN_WAS
+4,0:00,Redskins,Kai Forbath 22 yard field goal ,17,19,2014_07_TEN_WAS
+1,3:15,Chargers,John Phillips 1 yard pass from Philip Rivers (Nick Novak kick),0,7,2014_07_KC_LAC
+2,14:51,Chiefs,Jamaal Charles 16 yard rush (Cairo Santos kick),7,7,2014_07_KC_LAC
+2,3:11,Chiefs,Cairo Santos 28 yard field goal ,10,7,2014_07_KC_LAC
+2,0:14,Chargers,Antonio Gates 27 yard pass from Philip Rivers (Nick Novak kick),10,14,2014_07_KC_LAC
+3,8:35,Chiefs,Cairo Santos 40 yard field goal ,13,14,2014_07_KC_LAC
+4,14:50,Chiefs,Anthony Sherman 11 yard pass from Alex Smith (Cairo Santos kick),20,14,2014_07_KC_LAC
+4,9:36,Chargers,Nick Novak 24 yard field goal ,20,17,2014_07_KC_LAC
+4,1:57,Chargers,Nick Novak 48 yard field goal ,20,20,2014_07_KC_LAC
+4,0:21,Chiefs,Cairo Santos 48 yard field goal ,23,20,2014_07_KC_LAC
+1,5:06,Cowboys,Gavin Escobar 15 yard pass from Tony Romo (Dan Bailey kick),0,7,2014_07_NYG_DAL
+2,11:24,Giants,Odell Beckham Jr. 9 yard pass from Eli Manning (Josh Brown kick),7,7,2014_07_NYG_DAL
+2,7:53,Giants,Daniel Fells 27 yard pass from Eli Manning (Josh Brown kick),14,7,2014_07_NYG_DAL
+2,2:17,Cowboys,Terrance Williams 18 yard pass from Tony Romo (Dan Bailey kick),14,14,2014_07_NYG_DAL
+3,6:15,Cowboys,Gavin Escobar 26 yard pass from Tony Romo (Dan Bailey kick),14,21,2014_07_NYG_DAL
+4,9:11,Cowboys,DeMarco Murray 1 yard rush (Dan Bailey kick),14,28,2014_07_NYG_DAL
+4,5:28,Giants,Odell Beckham Jr. 5 yard pass from Eli Manning (Josh Brown kick),21,28,2014_07_NYG_DAL
+4,0:59,Cowboys,Dan Bailey 49 yard field goal ,21,31,2014_07_NYG_DAL
+1,1:47,Cardinals,Stepfan Taylor 2 yard pass from Carson Palmer (Chandler Catanzaro kick),7,0,2014_07_ARI_LVR
+2,5:37,Cardinals,Michael Floyd 33 yard pass from Carson Palmer (Chandler Catanzaro kick),14,0,2014_07_ARI_LVR
+2,1:56,Raiders,Darren McFadden 1 yard rush (Sebastian Janikowski kick),14,7,2014_07_ARI_LVR
+2,0:45,Raiders,Sebastian Janikowski 29 yard field goal ,14,10,2014_07_ARI_LVR
+3,7:17,Raiders,Sebastian Janikowski 53 yard field goal ,14,13,2014_07_ARI_LVR
+3,2:55,Cardinals,Stepfan Taylor 4 yard rush (Chandler Catanzaro kick),21,13,2014_07_ARI_LVR
+4,0:29,Cardinals,Chandler Catanzaro 41 yard field goal ,24,13,2014_07_ARI_LVR
+1,8:29,Broncos,Emmanuel Sanders 3 yard pass from Peyton Manning (Brandon McManus kick),0,7,2014_07_SF_DEN
+1,2:57,Broncos,Wes Welker 39 yard pass from Peyton Manning (Brandon McManus kick),0,14,2014_07_SF_DEN
+2,7:30,49ers,Phil Dawson 22 yard field goal ,3,14,2014_07_SF_DEN
+2,3:09,Broncos,Demaryius Thomas 8 yard pass from Peyton Manning (Brandon McManus kick),3,21,2014_07_SF_DEN
+2,0:11,49ers,Stevie Johnson 4 yard pass from Colin Kaepernick (Phil Dawson kick),10,21,2014_07_SF_DEN
+3,11:48,Broncos,Demaryius Thomas 40 yard pass from Peyton Manning (Brandon McManus kick),10,28,2014_07_SF_DEN
+3,9:24,Broncos,Ronnie Hillman 37 yard rush (Brandon McManus kick),10,35,2014_07_SF_DEN
+3,1:36,Broncos,Ronnie Hillman 1 yard rush (Brandon McManus kick),10,42,2014_07_SF_DEN
+4,1:00,49ers,Bruce Ellington 20 yard pass from Blaine Gabbert (Phil Dawson kick),17,42,2014_07_SF_DEN
+1,5:55,Texans,Alfred Blue 11 yard pass from Ryan Fitzpatrick (Randy Bullock kick),7,0,2014_07_HOU_PIT
+2,13:34,Texans,Randy Bullock 39 yard field goal ,10,0,2014_07_HOU_PIT
+2,7:16,Texans,Randy Bullock 38 yard field goal ,13,0,2014_07_HOU_PIT
+2,3:08,Steelers,Shaun Suisham 44 yard field goal ,13,3,2014_07_HOU_PIT
+2,1:27,Steelers,Martavis Bryant 35 yard pass from Ben Roethlisberger (Shaun Suisham kick),13,10,2014_07_HOU_PIT
+2,1:03,Steelers,Lance Moore 3 yard pass from Antonio Brown (Shaun Suisham kick),13,17,2014_07_HOU_PIT
+2,0:14,Steelers,Le'Veon Bell 2 yard pass from Ben Roethlisberger (Shaun Suisham kick),13,24,2014_07_HOU_PIT
+4,11:47,Texans,Randy Bullock 31 yard field goal ,16,24,2014_07_HOU_PIT
+4,5:50,Steelers,Shaun Suisham 30 yard field goal ,16,27,2014_07_HOU_PIT
+4,3:04,Steelers,Shaun Suisham 40 yard field goal ,16,30,2014_07_HOU_PIT
+4,1:31,Texans,Arian Foster 1 yard pass from Ryan Fitzpatrick (Randy Bullock kick),23,30,2014_07_HOU_PIT
+2,13:35,Broncos,Emmanuel Sanders 2 yard pass from Peyton Manning (Brandon McManus kick),0,7,2014_08_LAC_DEN
+2,3:07,Chargers,Keenan Allen 2 yard pass from Philip Rivers (Nick Novak kick),7,7,2014_08_LAC_DEN
+2,0:32,Broncos,Emmanuel Sanders 31 yard pass from Peyton Manning (Brandon McManus kick),7,14,2014_08_LAC_DEN
+3,10:53,Broncos,Emmanuel Sanders 3 yard pass from Peyton Manning (Brandon McManus kick),7,21,2014_08_LAC_DEN
+3,7:34,Broncos,Juwan Thompson 2 yard rush (Brandon McManus kick),7,28,2014_08_LAC_DEN
+3,2:39,Chargers,Antonio Gates 4 yard pass from Philip Rivers (Nick Novak kick),14,28,2014_08_LAC_DEN
+4,13:29,Broncos,Juwan Thompson 1 yard rush (Brandon McManus kick),14,35,2014_08_LAC_DEN
+4,9:31,Chargers,Antonio Gates 10 yard pass from Philip Rivers (Nick Novak kick),21,35,2014_08_LAC_DEN
+1,9:25,Falcons,Devonta Freeman 7 yard pass from Matt Ryan (Matt Bryant kick),0,7,2014_08_DET_ATL
+1,2:53,Falcons,Bear Pascoe 1 yard pass from Matt Ryan (Matt Bryant kick),0,14,2014_08_DET_ATL
+2,3:45,Falcons,Steven Jackson 1 yard rush (Matt Bryant kick),0,21,2014_08_DET_ATL
+3,7:54,Lions,Matt Prater 22 yard field goal ,3,21,2014_08_DET_ATL
+3,4:38,Lions,Golden Tate 59 yard pass from Matthew Stafford (Matt Prater kick),10,21,2014_08_DET_ATL
+4,14:10,Lions,Matt Prater 20 yard field goal ,13,21,2014_08_DET_ATL
+4,3:56,Lions,Theo Riddick 5 yard pass from Matthew Stafford (pass failed),19,21,2014_08_DET_ATL
+4,0:00,Lions,Matt Prater 48 yard field goal ,22,21,2014_08_DET_ATL
+1,6:21,Panthers,Graham Gano 31 yard field goal ,0,3,2014_08_SEA_CAR
+2,13:23,Panthers,Graham Gano 26 yard field goal ,0,6,2014_08_SEA_CAR
+2,11:00,Seahawks,Stephen Hauschka 58 yard field goal ,3,6,2014_08_SEA_CAR
+3,7:13,Seahawks,Stephen Hauschka 29 yard field goal ,6,6,2014_08_SEA_CAR
+4,4:37,Panthers,Graham Gano 46 yard field goal ,6,9,2014_08_SEA_CAR
+4,0:47,Seahawks,Luke Willson 23 yard pass from Russell Wilson (Stephen Hauschka kick),13,9,2014_08_SEA_CAR
+1,10:01,Bengals,Andy Dalton 1 yard rush (Mike Nugent kick),0,7,2014_08_BAL_CIN
+2,9:15,Ravens,Justin Tucker 45 yard field goal ,3,7,2014_08_BAL_CIN
+2,1:02,Ravens,Justin Tucker 50 yard field goal ,6,7,2014_08_BAL_CIN
+3,9:56,Bengals,Giovani Bernard 1 yard rush (Mike Nugent kick),6,14,2014_08_BAL_CIN
+3,6:29,Bengals,Mike Nugent 32 yard field goal ,6,17,2014_08_BAL_CIN
+3,1:58,Ravens,Lorenzo Taliaferro 10 yard rush (Justin Forsett run),14,17,2014_08_BAL_CIN
+4,11:24,Bengals,Mike Nugent 33 yard field goal ,14,20,2014_08_BAL_CIN
+4,6:31,Ravens,Lorenzo Taliaferro 8 yard rush (Justin Tucker kick),21,20,2014_08_BAL_CIN
+4,3:59,Ravens,Justin Tucker 53 yard field goal ,24,20,2014_08_BAL_CIN
+4,0:57,Bengals,Andy Dalton 1 yard rush (Mike Nugent kick),24,27,2014_08_BAL_CIN
+2,14:46,Dolphins,Louis Delmas 81 yard interception return (Caleb Sturgis kick),7,0,2014_08_MIA_JAX
+2,6:28,Jaguars,Josh Scobee 30 yard field goal ,7,3,2014_08_MIA_JAX
+2,0:58,Dolphins,Caleb Sturgis 43 yard field goal ,10,3,2014_08_MIA_JAX
+3,12:16,Dolphins,Brent Grimes 22 yard interception return (Caleb Sturgis kick),17,3,2014_08_MIA_JAX
+3,7:55,Jaguars,Josh Scobee 40 yard field goal ,17,6,2014_08_MIA_JAX
+3,2:18,Dolphins,Rishard Matthews 3 yard pass from Ryan Tannehill (Caleb Sturgis kick),24,6,2014_08_MIA_JAX
+4,3:54,Dolphins,Caleb Sturgis 29 yard field goal ,27,6,2014_08_MIA_JAX
+4,2:19,Jaguars,Allen Robinson 48 yard pass from Blake Bortles (Josh Scobee kick),27,13,2014_08_MIA_JAX
+1,11:56,Rams,Lance Kendricks 1 yard pass from Austin Davis (Greg Zuerlein kick),7,0,2014_08_LAR_KC
+2,12:00,Chiefs,Jamaal Charles 1 yard rush (Cairo Santos kick),7,7,2014_08_LAR_KC
+2,0:01,Chiefs,Cairo Santos 53 yard field goal ,7,10,2014_08_LAR_KC
+3,14:48,Chiefs,Knile Davis 99 yard kickoff return (Cairo Santos kick),7,17,2014_08_LAR_KC
+3,8:46,Chiefs,Cairo Santos 28 yard field goal ,7,20,2014_08_LAR_KC
+4,14:18,Chiefs,Jamaal Charles 36 yard rush (Cairo Santos kick),7,27,2014_08_LAR_KC
+4,6:28,Chiefs,Knile Davis 3 yard rush (Cairo Santos kick),7,34,2014_08_LAR_KC
+1,9:41,Patriots,Rob Gronkowski 6 yard pass from Tom Brady (Stephen Gostkowski kick),0,7,2014_08_CHI_NE
+2,14:57,Patriots,Stephen Gostkowski 23 yard field goal ,0,10,2014_08_CHI_NE
+2,8:09,Patriots,Tim Wright 1 yard pass from Tom Brady (Stephen Gostkowski kick),0,17,2014_08_CHI_NE
+2,5:32,Bears,Matt Forte 25 yard pass from Jay Cutler (Robbie Gould kick),7,17,2014_08_CHI_NE
+2,1:52,Patriots,Rob Gronkowski 2 yard pass from Tom Brady (Stephen Gostkowski kick),7,24,2014_08_CHI_NE
+2,1:07,Patriots,Brandon LaFell 9 yard pass from Tom Brady (Stephen Gostkowski kick),7,31,2014_08_CHI_NE
+2,0:55,Patriots,Rob Ninkovich 15 yard defensive fumble return (Stephen Gostkowski kick),7,38,2014_08_CHI_NE
+3,12:42,Patriots,Rob Gronkowski 46 yard pass from Tom Brady (Stephen Gostkowski kick),7,45,2014_08_CHI_NE
+3,0:54,Bears,Martellus Bennett 20 yard pass from Jay Cutler (Dante Rosario pass from Jay Cutler),15,45,2014_08_CHI_NE
+4,9:59,Patriots,Stephen Gostkowski 27 yard field goal ,15,48,2014_08_CHI_NE
+4,5:16,Bears,Alshon Jeffery 10 yard pass from Jay Cutler (Matt Forte pass from Jay Cutler),23,48,2014_08_CHI_NE
+4,2:09,Patriots,Stephen Gostkowski 39 yard field goal ,23,51,2014_08_CHI_NE
+1,9:37,Bills,Robert Woods 22 yard pass from Kyle Orton (Dan Carpenter kick),7,0,2014_08_BUF_NYJ
+1,4:36,Bills,Lee Smith 1 yard pass from Kyle Orton (Dan Carpenter kick),14,0,2014_08_BUF_NYJ
+2,14:22,Jets,Chris Ivory 2 yard rush (Nick Folk kick),14,7,2014_08_BUF_NYJ
+2,11:50,Bills,Frank Summers 2 yard rush (Dan Carpenter kick),21,7,2014_08_BUF_NYJ
+2,6:16,Bills,Dan Carpenter 53 yard field goal ,24,7,2014_08_BUF_NYJ
+2,1:50,Jets,Chris Ivory 2 yard rush (Nick Folk kick),24,14,2014_08_BUF_NYJ
+2,0:00,Jets,Nick Folk 55 yard field goal ,24,17,2014_08_BUF_NYJ
+3,8:31,Bills,Dan Carpenter 36 yard field goal ,27,17,2014_08_BUF_NYJ
+3,1:11,Bills,Dan Carpenter 29 yard field goal ,30,17,2014_08_BUF_NYJ
+4,14:11,Bills,Scott Chandler 12 yard pass from Kyle Orton (Dan Carpenter kick),37,17,2014_08_BUF_NYJ
+4,9:46,Bills,Sammy Watkins 61 yard pass from Kyle Orton (Dan Carpenter kick failed),43,17,2014_08_BUF_NYJ
+4,4:06,Jets,Bilal Powell 3 yard rush (pass failed),43,23,2014_08_BUF_NYJ
+2,0:00,Vikings,Blair Walsh 46 yard field goal ,3,0,2014_08_MIN_TB
+3,7:09,Vikings,Greg Jennings 17 yard pass from Teddy Bridgewater (Blair Walsh kick),10,0,2014_08_MIN_TB
+4,14:12,Buccaneers,Patrick Murray 54 yard field goal ,10,3,2014_08_MIN_TB
+4,7:19,Buccaneers,Patrick Murray 45 yard field goal ,10,6,2014_08_MIN_TB
+4,2:02,Buccaneers,Austin Seferian-Jenkins 7 yard pass from Mike Glennon (Patrick Murray kick),10,13,2014_08_MIN_TB
+4,0:00,Vikings,Blair Walsh 38 yard field goal ,13,13,2014_08_MIN_TB
+OT,14:43,Vikings,Anthony Barr 27 yard defensive fumble return ,19,13,2014_08_MIN_TB
+1,10:23,Titans,Ryan Succop 35 yard field goal ,0,3,2014_08_HOU_TEN
+2,7:36,Texans,Randy Bullock 30 yard field goal ,3,3,2014_08_HOU_TEN
+2,6:00,Texans,Arian Foster 34 yard rush (Randy Bullock kick),10,3,2014_08_HOU_TEN
+2,0:19,Texans,Randy Bullock 29 yard field goal ,13,3,2014_08_HOU_TEN
+3,12:35,Texans,Arian Foster 5 yard pass from Ryan Fitzpatrick (Randy Bullock kick),20,3,2014_08_HOU_TEN
+3,5:42,Texans,Arian Foster 1 yard rush (Randy Bullock kick),27,3,2014_08_HOU_TEN
+3,2:12,Titans,Delanie Walker 6 yard pass from Zach Mettenberger (run failed),27,9,2014_08_HOU_TEN
+4,14:12,Texans,Randy Bullock 49 yard field goal ,30,9,2014_08_HOU_TEN
+4,0:56,Titans,Justin Hunter 12 yard pass from Zach Mettenberger (Ryan Succop kick),30,16,2014_08_HOU_TEN
+1,4:39,Eagles,Jeremy Maclin 21 yard pass from Nick Foles (Cody Parkey kick),7,0,2014_08_PHI_ARI
+2,13:45,Cardinals,Andre Ellington 1 yard rush (Chandler Catanzaro kick),7,7,2014_08_PHI_ARI
+3,14:07,Cardinals,Larry Fitzgerald 80 yard pass from Carson Palmer (Chandler Catanzaro kick),7,14,2014_08_PHI_ARI
+3,7:19,Eagles,Cody Parkey 54 yard field goal ,10,14,2014_08_PHI_ARI
+3,2:22,Eagles,Jeremy Maclin 54 yard pass from Nick Foles (Cody Parkey kick),17,14,2014_08_PHI_ARI
+4,9:01,Cardinals,Chandler Catanzaro 28 yard field goal ,17,17,2014_08_PHI_ARI
+4,1:56,Eagles,Cody Parkey 20 yard field goal ,20,17,2014_08_PHI_ARI
+4,1:21,Cardinals,John Brown 75 yard pass from Carson Palmer (Chandler Catanzaro kick),20,24,2014_08_PHI_ARI
+1,9:54,Browns,Billy Cundiff 52 yard field goal ,0,3,2014_08_LVR_CLE
+1,2:28,Browns,Billy Cundiff 33 yard field goal ,0,6,2014_08_LVR_CLE
+2,5:46,Browns,Billy Cundiff 26 yard field goal ,0,9,2014_08_LVR_CLE
+2,1:50,Raiders,Sebastian Janikowski 46 yard field goal ,3,9,2014_08_LVR_CLE
+2,0:00,Raiders,Sebastian Janikowski 38 yard field goal ,6,9,2014_08_LVR_CLE
+4,14:17,Browns,Andrew Hawkins 4 yard pass from Brian Hoyer (Billy Cundiff kick),6,16,2014_08_LVR_CLE
+4,2:26,Browns,Ben Tate 5 yard rush (Billy Cundiff kick),6,23,2014_08_LVR_CLE
+4,0:07,Raiders,Andre Holmes 10 yard pass from Derek Carr (Sebastian Janikowski kick),13,23,2014_08_LVR_CLE
+1,11:56,Colts,Adam Vinatieri 31 yard field goal ,3,0,2014_08_IND_PIT
+1,7:13,Steelers,Markus Wheaton 18 yard pass from Ben Roethlisberger (Shaun Suisham kick),3,7,2014_08_IND_PIT
+2,14:57,Steelers,Martavis Bryant 5 yard pass from Ben Roethlisberger (Shaun Suisham kick),3,14,2014_08_IND_PIT
+2,14:16,Steelers,William Gay 33 yard interception return (Shaun Suisham kick),3,21,2014_08_IND_PIT
+2,11:36,Colts,Dwayne Allen 21 yard pass from Andrew Luck (Adam Vinatieri kick),10,21,2014_08_IND_PIT
+2,8:33,Steelers,Antonio Brown 8 yard pass from Ben Roethlisberger (Shaun Suisham kick),10,28,2014_08_IND_PIT
+2,5:08,Steelers,Antonio Brown 47 yard pass from Ben Roethlisberger (Shaun Suisham kick),10,35,2014_08_IND_PIT
+2,1:56,Colts,T.Y. Hilton 28 yard pass from Andrew Luck (Adam Vinatieri kick),17,35,2014_08_IND_PIT
+2,0:00,Colts,Adam Vinatieri 23 yard field goal ,20,35,2014_08_IND_PIT
+3,9:59,Steelers,Martavis Bryant 2 yard pass from Ben Roethlisberger (Shaun Suisham kick),20,42,2014_08_IND_PIT
+3,3:38,Colts,Ahmad Bradshaw 12 yard rush (Adam Vinatieri kick),27,42,2014_08_IND_PIT
+3,2:35,Colts,Donte Moncrief 31 yard pass from Andrew Luck (Adam Vinatieri kick),34,42,2014_08_IND_PIT
+4,12:34,Steelers,"Safety, Intentional Grounding in the end zone by Andrew Luck. ",34,44,2014_08_IND_PIT
+4,5:14,Steelers,Heath Miller 11 yard pass from Ben Roethlisberger (Shaun Suisham kick),34,51,2014_08_IND_PIT
+1,12:57,Packers,Randall Cobb 70 yard pass from Aaron Rodgers (Mason Crosby kick),7,0,2014_08_GB_NO
+1,9:20,Saints,Brandin Cooks 4 yard rush (Shayne Graham kick),7,7,2014_08_GB_NO
+1,6:08,Packers,Mason Crosby 31 yard field goal ,10,7,2014_08_GB_NO
+1,1:42,Saints,Shayne Graham 31 yard field goal ,10,10,2014_08_GB_NO
+2,13:08,Packers,Mason Crosby 49 yard field goal ,13,10,2014_08_GB_NO
+2,5:52,Saints,Shayne Graham 29 yard field goal ,13,13,2014_08_GB_NO
+2,1:51,Packers,Mason Crosby 27 yard field goal ,16,13,2014_08_GB_NO
+2,0:00,Saints,Shayne Graham 37 yard field goal ,16,16,2014_08_GB_NO
+3,5:35,Saints,Brandin Cooks 50 yard pass from Drew Brees (Shayne Graham kick),16,23,2014_08_GB_NO
+3,2:06,Saints,Jimmy Graham 22 yard pass from Drew Brees (Shayne Graham kick),16,30,2014_08_GB_NO
+4,9:51,Saints,Josh Hill 2 yard pass from Drew Brees (Shayne Graham kick),16,37,2014_08_GB_NO
+4,5:07,Packers,Aaron Rodgers 14 yard rush (Mason Crosby kick),23,37,2014_08_GB_NO
+4,3:16,Saints,Mark Ingram 21 yard rush (Shayne Graham kick),23,44,2014_08_GB_NO
+1,9:48,Redskins,Kai Forbath 44 yard field goal ,3,0,2014_08_WAS_DAL
+2,4:45,Cowboys,Dez Bryant 5 yard pass from Tony Romo (Dan Bailey kick),3,7,2014_08_WAS_DAL
+3,9:51,Redskins,Alfred Morris 5 yard rush (Kai Forbath kick),10,7,2014_08_WAS_DAL
+3,4:03,Cowboys,Dan Bailey 21 yard field goal ,10,10,2014_08_WAS_DAL
+4,13:38,Redskins,Colt McCoy 7 yard rush (Kai Forbath kick),17,10,2014_08_WAS_DAL
+4,9:27,Cowboys,Jason Witten 25 yard pass from Brandon Weeden (Dan Bailey kick),17,17,2014_08_WAS_DAL
+OT,9:43,Redskins,Kai Forbath 40 yard field goal ,20,17,2014_08_WAS_DAL
+2,2:38,Saints,Mark Ingram 3 yard rush (Shayne Graham kick),7,0,2014_09_NO_CAR
+2,0:03,Saints,Jimmy Graham 1 yard pass from Drew Brees (Shayne Graham kick),14,0,2014_09_NO_CAR
+3,10:14,Panthers,Cam Newton 10 yard rush (Graham Gano kick),14,7,2014_09_NO_CAR
+3,4:04,Saints,Drew Brees 1 yard rush (Shayne Graham kick),21,7,2014_09_NO_CAR
+4,12:57,Panthers,Graham Gano 31 yard field goal ,21,10,2014_09_NO_CAR
+4,5:30,Saints,Mark Ingram 3 yard rush (Shayne Graham kick),28,10,2014_09_NO_CAR
+1,1:21,Jaguars,Josh Scobee 25 yard field goal ,3,0,2014_09_JAX_CIN
+2,11:48,Bengals,Mohamed Sanu 19 yard pass from Andy Dalton (Mike Nugent kick),3,7,2014_09_JAX_CIN
+2,4:25,Bengals,Mike Nugent 31 yard field goal ,3,10,2014_09_JAX_CIN
+2,2:58,Bengals,"Safety, Bryan Angers punt blocked by Taylor Mays ball out of bounds in the end zone. ",3,12,2014_09_JAX_CIN
+3,10:33,Bengals,Jeremy Hill 1 yard rush (Mike Nugent kick),3,19,2014_09_JAX_CIN
+3,9:36,Jaguars,Allen Hurns 40 yard pass from Blake Bortles (Josh Scobee kick),10,19,2014_09_JAX_CIN
+4,13:54,Bengals,A.J. Green 18 yard pass from Andy Dalton (Mike Nugent kick),10,26,2014_09_JAX_CIN
+4,9:55,Jaguars,Allen Hurns 18 yard pass from Blake Bortles (pass failed),16,26,2014_09_JAX_CIN
+4,8:13,Jaguars,Denard Robinson 5 yard rush (Josh Scobee kick),23,26,2014_09_JAX_CIN
+4,8:04,Bengals,Jeremy Hill 60 yard rush (Mike Nugent kick),23,33,2014_09_JAX_CIN
+1,5:59,Browns,Billy Cundiff 49 yard field goal ,0,3,2014_09_TB_CLE
+2,13:34,Browns,Billy Cundiff 29 yard field goal ,0,6,2014_09_TB_CLE
+2,8:44,Buccaneers,Mike Evans 24 yard pass from Mike Glennon (Patrick Murray kick),7,6,2014_09_TB_CLE
+2,2:25,Buccaneers,Patrick Murray 40 yard field goal ,10,6,2014_09_TB_CLE
+2,0:00,Browns,Billy Cundiff 43 yard field goal ,10,9,2014_09_TB_CLE
+3,9:10,Browns,Terrance West 2 yard pass from Brian Hoyer (Billy Cundiff kick),10,16,2014_09_TB_CLE
+3,2:49,Buccaneers,Mike Evans 24 yard pass from Mike Glennon (Patrick Murray kick),17,16,2014_09_TB_CLE
+4,8:59,Browns,Taylor Gabriel 34 yard pass from Brian Hoyer (pass failed),17,22,2014_09_TB_CLE
+1,10:55,Cowboys,Tyler Patmon 58 yard interception return (Dan Bailey kick),0,7,2014_09_ARI_DAL
+1,4:03,Cowboys,Dan Bailey 52 yard field goal ,0,10,2014_09_ARI_DAL
+2,12:39,Cardinals,John Carlson 7 yard pass from Carson Palmer (Chandler Catanzaro kick),7,10,2014_09_ARI_DAL
+2,4:34,Cardinals,Jaron Brown 11 yard pass from Carson Palmer (Chandler Catanzaro kick),14,10,2014_09_ARI_DAL
+4,6:00,Cardinals,Andre Ellington 1 yard pass from Carson Palmer (Chandler Catanzaro kick),21,10,2014_09_ARI_DAL
+4,4:20,Cardinals,Marion Grice 1 yard rush (Chandler Catanzaro kick),28,10,2014_09_ARI_DAL
+4,1:08,Cowboys,Dez Bryant 3 yard pass from Brandon Weeden (Dan Bailey kick),28,17,2014_09_ARI_DAL
+1,8:30,Eagles,Jeremy Maclin 59 yard pass from Nick Foles (Cody Parkey kick),7,0,2014_09_PHI_HOU
+1,3:11,Texans,A.J. Bouye 51 yard interception return (Randy Bullock kick),7,7,2014_09_PHI_HOU
+2,10:41,Eagles,Jordan Matthews 11 yard pass from Mark Sanchez (Cody Parkey kick),14,7,2014_09_PHI_HOU
+2,3:58,Texans,Arian Foster 56 yard pass from Ryan Fitzpatrick (Randy Bullock kick),14,14,2014_09_PHI_HOU
+2,0:00,Eagles,Cody Parkey 45 yard field goal ,17,14,2014_09_PHI_HOU
+3,2:40,Eagles,Chris Polk 8 yard rush (Cody Parkey kick),24,14,2014_09_PHI_HOU
+4,11:51,Texans,DeAndre Hopkins 7 yard pass from Ryan Fitzpatrick (Randy Bullock kick),24,21,2014_09_PHI_HOU
+4,3:50,Eagles,Jeremy Maclin 8 yard pass from Mark Sanchez (Cody Parkey kick),31,21,2014_09_PHI_HOU
+1,8:38,Chiefs,Jamaal Charles 1 yard rush (Cairo Santos kick),0,7,2014_09_NYJ_KC
+1,3:20,Chiefs,Anthony Fasano 2 yard pass from Alex Smith (Cairo Santos kick),0,14,2014_09_NYJ_KC
+2,2:09,Jets,Eric Decker 3 yard pass from Michael Vick (Nick Folk kick),7,14,2014_09_NYJ_KC
+2,0:39,Chiefs,Travis Kelce 12 yard pass from Alex Smith (Cairo Santos kick),7,21,2014_09_NYJ_KC
+2,0:00,Jets,Nick Folk 39 yard field goal ,10,21,2014_09_NYJ_KC
+3,5:06,Chiefs,Cairo Santos 19 yard field goal ,10,24,2014_09_NYJ_KC
+1,1:40,Dolphins,Charles Clay 6 yard pass from Ryan Tannehill (Caleb Sturgis kick),0,7,2014_09_LAC_MIA
+2,11:08,Dolphins,Lamar Miller 2 yard rush (Caleb Sturgis kick),0,14,2014_09_LAC_MIA
+2,8:53,Dolphins,Caleb Sturgis 26 yard field goal ,0,17,2014_09_LAC_MIA
+2,1:52,Dolphins,Caleb Sturgis 25 yard field goal ,0,20,2014_09_LAC_MIA
+3,11:02,Dolphins,Rishard Matthews 21 yard pass from Ryan Tannehill (Caleb Sturgis kick),0,27,2014_09_LAC_MIA
+3,7:04,Dolphins,Caleb Sturgis 23 yard field goal ,0,30,2014_09_LAC_MIA
+3,2:00,Dolphins,Jarvis Landry 14 yard pass from Ryan Tannehill (Caleb Sturgis kick),0,37,2014_09_LAC_MIA
+1,6:16,Redskins,Kai Forbath 36 yard field goal ,3,0,2014_09_WAS_MIN
+2,14:46,Redskins,Alfred Morris 14 yard rush (Kai Forbath kick),10,0,2014_09_WAS_MIN
+2,0:36,Vikings,Chase Ford 20 yard pass from Teddy Bridgewater (Blair Walsh kick),10,7,2014_09_WAS_MIN
+3,10:44,Vikings,Matt Asiata 1 yard rush (Blair Walsh kick),10,14,2014_09_WAS_MIN
+3,7:23,Redskins,DeSean Jackson 13 yard pass from Robert Griffin III (Kai Forbath kick),17,14,2014_09_WAS_MIN
+3,1:57,Redskins,Kai Forbath 26 yard field goal ,20,14,2014_09_WAS_MIN
+4,13:00,Vikings,Matt Asiata 7 yard rush (Blair Walsh kick),20,21,2014_09_WAS_MIN
+4,9:01,Redskins,Alfred Morris 2 yard rush (run failed),26,21,2014_09_WAS_MIN
+4,3:27,Vikings,Matt Asiata 1 yard rush (Matt Asiata run),26,29,2014_09_WAS_MIN
+1,10:32,49ers,Phil Dawson 34 yard field goal ,0,3,2014_09_LAR_SF
+1,1:20,Rams,Greg Zuerlein 37 yard field goal ,3,3,2014_09_LAR_SF
+2,11:57,49ers,Anquan Boldin 27 yard pass from Colin Kaepernick (Phil Dawson kick),3,10,2014_09_LAR_SF
+2,1:04,Rams,Kenny Britt 21 yard pass from Austin Davis (Greg Zuerlein kick),10,10,2014_09_LAR_SF
+4,5:25,Rams,Greg Zuerlein 39 yard field goal ,13,10,2014_09_LAR_SF
+1,7:09,Patriots,Stephen Gostkowski 49 yard field goal ,0,3,2014_09_DEN_NE
+1,3:54,Broncos,Ronnie Hillman 1 yard rush (Brandon McManus kick),7,3,2014_09_DEN_NE
+2,14:19,Patriots,Stephen Gostkowski 29 yard field goal ,7,6,2014_09_DEN_NE
+2,11:41,Patriots,Julian Edelman 5 yard pass from Tom Brady (Stephen Gostkowski kick),7,13,2014_09_DEN_NE
+2,8:11,Patriots,Julian Edelman 84 yard punt return (Stephen Gostkowski kick),7,20,2014_09_DEN_NE
+2,0:08,Patriots,Shane Vereen 5 yard pass from Tom Brady (Stephen Gostkowski kick),7,27,2014_09_DEN_NE
+3,11:06,Broncos,Julius Thomas 18 yard pass from Peyton Manning (Brandon McManus kick),14,27,2014_09_DEN_NE
+3,7:46,Patriots,Stephen Gostkowski 45 yard field goal ,14,30,2014_09_DEN_NE
+3,7:27,Patriots,Brandon LaFell 10 yard pass from Tom Brady (Stephen Gostkowski kick),14,37,2014_09_DEN_NE
+3,5:50,Broncos,Ronnie Hillman 15 yard pass from Peyton Manning (Brandon McManus kick),21,37,2014_09_DEN_NE
+4,13:57,Patriots,Rob Gronkowski 1 yard pass from Tom Brady (pass failed),21,43,2014_09_DEN_NE
+1,9:10,Raiders,Sebastian Janikowski 48 yard field goal ,3,0,2014_09_LVR_SEA
+1,4:07,Seahawks,Marshawn Lynch 3 yard rush (Stephen Hauschka kick),3,7,2014_09_LVR_SEA
+1,0:00,Seahawks,Bruce Irvin 35 yard interception return (Stephen Hauschka kick),3,14,2014_09_LVR_SEA
+2,12:24,Seahawks,Stephen Hauschka 34 yard field goal ,3,17,2014_09_LVR_SEA
+2,0:54,Seahawks,Marshawn Lynch 5 yard rush (Stephen Hauschka kick),3,24,2014_09_LVR_SEA
+3,13:52,Raiders,Brice Butler blocked punt recovery in end zone (Sebastian Janikowski kick),10,24,2014_09_LVR_SEA
+3,2:58,Raiders,Mychal Rivera 1 yard pass from Derek Carr (Sebastian Janikowski kick),17,24,2014_09_LVR_SEA
+4,14:50,Seahawks,Stephen Hauschka 30 yard field goal ,17,27,2014_09_LVR_SEA
+4,9:19,Seahawks,Stephen Hauschka 40 yard field goal ,17,30,2014_09_LVR_SEA
+4,1:52,Raiders,Mychal Rivera 1 yard pass from Derek Carr (Sebastian Janikowski kick),24,30,2014_09_LVR_SEA
+1,9:41,Ravens,Torrey Smith 35 yard pass from Joe Flacco (Justin Tucker kick),7,0,2014_09_BAL_PIT
+2,7:18,Steelers,Le'Veon Bell 5 yard pass from Ben Roethlisberger (Shaun Suisham kick),7,7,2014_09_BAL_PIT
+2,5:24,Steelers,Martavis Bryant 19 yard pass from Ben Roethlisberger (Shaun Suisham kick),7,14,2014_09_BAL_PIT
+2,1:44,Ravens,Justin Tucker 46 yard field goal ,10,14,2014_09_BAL_PIT
+2,0:53,Steelers,Markus Wheaton 47 yard pass from Ben Roethlisberger (Matt Spaeth pass from Brad Wing),10,22,2014_09_BAL_PIT
+4,14:01,Steelers,Antonio Brown 54 yard pass from Ben Roethlisberger (Shaun Suisham kick),10,29,2014_09_BAL_PIT
+4,13:47,Ravens,Jacoby Jones 108 yard kickoff return (Justin Tucker kick),17,29,2014_09_BAL_PIT
+4,9:31,Steelers,Martavis Bryant 18 yard pass from Ben Roethlisberger (Shaun Suisham kick),17,36,2014_09_BAL_PIT
+4,2:58,Ravens,Crockett Gillmore 1 yard pass from Joe Flacco (run failed),23,36,2014_09_BAL_PIT
+4,1:51,Steelers,Matt Spaeth 33 yard pass from Ben Roethlisberger (Shaun Suisham kick),23,43,2014_09_BAL_PIT
+1,7:07,Colts,Adam Vinatieri 48 yard field goal ,3,0,2014_09_IND_NYG
+2,13:38,Colts,Coby Fleener 32 yard pass from Andrew Luck (Adam Vinatieri kick),10,0,2014_09_IND_NYG
+2,7:07,Giants,Josh Brown 38 yard field goal ,10,3,2014_09_IND_NYG
+2,3:32,Colts,Adam Vinatieri 31 yard field goal ,13,3,2014_09_IND_NYG
+2,1:07,Colts,Adam Vinatieri 48 yard field goal ,16,3,2014_09_IND_NYG
+3,11:50,Colts,T.Y. Hilton 31 yard pass from Andrew Luck (Adam Vinatieri kick),23,3,2014_09_IND_NYG
+3,9:48,Giants,Andre Williams 1 yard rush (Josh Brown kick),23,10,2014_09_IND_NYG
+3,6:09,Colts,Reggie Wayne 40 yard pass from Andrew Luck (Adam Vinatieri kick),30,10,2014_09_IND_NYG
+3,4:31,Colts,Dwayne Allen 2 yard pass from Andrew Luck (Adam Vinatieri kick),37,10,2014_09_IND_NYG
+4,13:23,Colts,Adam Vinatieri 43 yard field goal ,40,10,2014_09_IND_NYG
+4,8:55,Giants,Larry Donnell 5 yard pass from Eli Manning (Josh Brown kick),40,17,2014_09_IND_NYG
+4,3:19,Giants,Corey Washington 1 yard pass from Eli Manning (Josh Brown kick),40,24,2014_09_IND_NYG
+1,10:40,Browns,Ben Tate 4 yard rush (Billy Cundiff kick),7,0,2014_10_CLE_CIN
+1,6:18,Bengals,Mike Nugent 43 yard field goal ,7,3,2014_10_CLE_CIN
+2,12:57,Browns,Isaiah Crowell 2 yard rush (Billy Cundiff kick),14,3,2014_10_CLE_CIN
+2,3:59,Browns,Billy Cundiff 32 yard field goal ,17,3,2014_10_CLE_CIN
+3,4:46,Browns,Terrance West 1 yard rush (Billy Cundiff kick),24,3,2014_10_CLE_CIN
+1,0:20,Titans,Leon Washington 3 yard pass from Zach Mettenberger (Ryan Succop kick),7,0,2014_10_TEN_BAL
+2,6:43,Ravens,Justin Forsett 9 yard rush (Justin Tucker kick),7,7,2014_10_TEN_BAL
+3,5:36,Ravens,Justin Forsett 11 yard rush (Justin Tucker kick),7,14,2014_10_TEN_BAL
+4,13:09,Ravens,Torrey Smith 32 yard pass from Joe Flacco (Justin Tucker kick),7,21,2014_10_TEN_BAL
+1,9:51,Bills,Chris Hogan 25 yard pass from Kyle Orton (Dan Carpenter kick),0,7,2014_10_KC_BUF
+1,5:24,Chiefs,Cairo Santos 36 yard field goal ,3,7,2014_10_KC_BUF
+2,7:09,Bills,Dan Carpenter 26 yard field goal ,3,10,2014_10_KC_BUF
+3,3:06,Bills,Dan Carpenter 21 yard field goal ,3,13,2014_10_KC_BUF
+4,13:30,Chiefs,Jamaal Charles 39 yard rush (Cairo Santos kick),10,13,2014_10_KC_BUF
+4,8:59,Chiefs,Alex Smith 8 yard rush (Cairo Santos kick),17,13,2014_10_KC_BUF
+1,6:19,Lions,Matt Prater 26 yard field goal ,0,3,2014_10_MIA_DET
+1,3:58,Lions,Calvin Johnson 49 yard pass from Matthew Stafford (Matt Prater kick),0,10,2014_10_MIA_DET
+2,0:13,Dolphins,Caleb Sturgis 23 yard field goal ,3,10,2014_10_MIA_DET
+3,8:24,Dolphins,Caleb Sturgis 50 yard field goal ,6,10,2014_10_MIA_DET
+3,1:17,Dolphins,Mike Wallace 3 yard pass from Ryan Tannehill (Caleb Sturgis kick),13,10,2014_10_MIA_DET
+4,12:02,Lions,Matt Prater 50 yard field goal ,13,13,2014_10_MIA_DET
+4,4:19,Dolphins,Caleb Sturgis 20 yard field goal ,16,13,2014_10_MIA_DET
+4,0:29,Lions,Theo Riddick 11 yard pass from Matthew Stafford (Matt Prater kick),16,20,2014_10_MIA_DET
+1,12:09,Cowboys,Dan Bailey 54 yard field goal ,3,0,2014_10_DAL_JAX
+1,7:36,Jaguars,Denard Robinson 32 yard rush (Josh Scobee kick),3,7,2014_10_DAL_JAX
+1,2:30,Cowboys,Jason Witten 2 yard pass from Tony Romo (Dan Bailey kick),10,7,2014_10_DAL_JAX
+2,7:01,Cowboys,Dez Bryant 35 yard pass from Tony Romo (Dan Bailey kick),17,7,2014_10_DAL_JAX
+2,0:19,Cowboys,Dez Bryant 68 yard pass from Tony Romo (Dan Bailey kick),24,7,2014_10_DAL_JAX
+3,7:34,Cowboys,Joseph Randle 40 yard rush (Dan Bailey kick),31,7,2014_10_DAL_JAX
+4,7:55,Jaguars,"Safety, Penalty on Kyle Wilber enforced in end zone for a Safety. ",31,9,2014_10_DAL_JAX
+4,1:53,Jaguars,Denard Robinson 1 yard rush (Allen Robinson pass from Blake Bortles),31,17,2014_10_DAL_JAX
+1,13:01,49ers,Frank Gore 4 yard rush (Phil Dawson kick),7,0,2014_10_SF_NO
+1,4:17,49ers,Carlos Hyde 9 yard rush (Phil Dawson kick),14,0,2014_10_SF_NO
+1,0:03,Saints,Shayne Graham 40 yard field goal ,14,3,2014_10_SF_NO
+2,9:13,Saints,Brandin Cooks 31 yard pass from Drew Brees (Shayne Graham kick),14,10,2014_10_SF_NO
+2,4:45,49ers,Anquan Boldin 15 yard pass from Colin Kaepernick (Phil Dawson kick),21,10,2014_10_SF_NO
+3,2:49,Saints,Jimmy Graham 11 yard pass from Drew Brees (Shayne Graham kick),21,17,2014_10_SF_NO
+4,1:52,Saints,Jimmy Graham 2 yard pass from Drew Brees (Shayne Graham kick),21,24,2014_10_SF_NO
+4,0:44,49ers,Phil Dawson 45 yard field goal ,24,24,2014_10_SF_NO
+OT,5:14,49ers,Phil Dawson 35 yard field goal ,27,24,2014_10_SF_NO
+1,7:08,Jets,Nick Folk 23 yard field goal ,0,3,2014_10_PIT_NYJ
+1,3:20,Jets,T.J. Graham 67 yard pass from Michael Vick (Nick Folk kick),0,10,2014_10_PIT_NYJ
+1,0:19,Jets,Jace Amaro 5 yard pass from Michael Vick (Nick Folk kick),0,17,2014_10_PIT_NYJ
+2,0:00,Steelers,Shaun Suisham 53 yard field goal ,3,17,2014_10_PIT_NYJ
+3,4:34,Jets,Nick Folk 30 yard field goal ,3,20,2014_10_PIT_NYJ
+4,7:21,Steelers,Shaun Suisham 27 yard field goal ,6,20,2014_10_PIT_NYJ
+4,1:16,Steelers,Martavis Bryant 80 yard pass from Ben Roethlisberger (Shaun Suisham kick),13,20,2014_10_PIT_NYJ
+1,6:24,Buccaneers,Patrick Murray 51 yard field goal ,0,3,2014_10_ATL_TB
+1,0:51,Falcons,Steven Jackson 1 yard rush (Matt Bryant kick),7,3,2014_10_ATL_TB
+2,7:09,Falcons,Matt Bryant 37 yard field goal ,10,3,2014_10_ATL_TB
+2,0:46,Buccaneers,Mike Evans 22 yard pass from Josh McCown (Patrick Murray kick),10,10,2014_10_ATL_TB
+2,0:00,Falcons,Matt Bryant 43 yard field goal ,13,10,2014_10_ATL_TB
+3,10:23,Falcons,Matt Bryant 44 yard field goal ,16,10,2014_10_ATL_TB
+4,14:18,Buccaneers,Austin Seferian-Jenkins 1 yard pass from Josh McCown (Patrick Murray kick),16,17,2014_10_ATL_TB
+4,9:18,Falcons,Roddy White 5 yard pass from Matt Ryan (Harry Douglas pass from Matt Ryan),24,17,2014_10_ATL_TB
+4,4:10,Falcons,Matt Bryant 33 yard field goal ,27,17,2014_10_ATL_TB
+1,9:35,Raiders,Sebastian Janikowski 41 yard field goal ,0,3,2014_10_DEN_LVR
+1,4:06,Broncos,Brandon McManus 20 yard field goal ,3,3,2014_10_DEN_LVR
+2,14:22,Broncos,Brandon McManus 28 yard field goal ,6,3,2014_10_DEN_LVR
+2,11:19,Raiders,Brice Butler 5 yard pass from Derek Carr (Sebastian Janikowski kick),6,10,2014_10_DEN_LVR
+2,2:44,Broncos,C.J. Anderson 51 yard pass from Peyton Manning (Brandon McManus kick),13,10,2014_10_DEN_LVR
+2,0:28,Broncos,Emmanuel Sanders 32 yard pass from Peyton Manning (Brandon McManus kick),20,10,2014_10_DEN_LVR
+3,12:43,Broncos,Julius Thomas 10 yard pass from Peyton Manning (Brandon McManus kick),27,10,2014_10_DEN_LVR
+3,6:52,Broncos,Julius Thomas 32 yard pass from Peyton Manning (Brandon McManus kick),34,10,2014_10_DEN_LVR
+3,1:01,Broncos,Emmanuel Sanders 15 yard pass from Peyton Manning (Brandon McManus kick),41,10,2014_10_DEN_LVR
+4,0:48,Raiders,Mychal Rivera 18 yard pass from Derek Carr (Sebastian Janikowski kick),41,17,2014_10_DEN_LVR
+1,4:35,Rams,Benny Cunningham 3 yard rush (Greg Zuerlein kick),7,0,2014_10_LAR_ARI
+2,11:33,Cardinals,Andre Ellington 3 yard rush (Chandler Catanzaro kick),7,7,2014_10_LAR_ARI
+2,4:52,Cardinals,Chandler Catanzaro 43 yard field goal ,7,10,2014_10_LAR_ARI
+2,1:50,Rams,Jared Cook 59 yard pass from Austin Davis (Greg Zuerlein kick),14,10,2014_10_LAR_ARI
+4,7:40,Cardinals,John Brown 48 yard pass from Drew Stanton (Chandler Catanzaro kick),14,17,2014_10_LAR_ARI
+4,5:13,Cardinals,Patrick Peterson 30 yard interception return (Chandler Catanzaro kick),14,24,2014_10_LAR_ARI
+4,3:58,Cardinals,Antonio Cromartie 14 yard defensive fumble return (Chandler Catanzaro kick),14,31,2014_10_LAR_ARI
+1,10:23,Seahawks,Marshawn Lynch 1 yard rush (Stephen Hauschka kick),0,7,2014_10_NYG_SEA
+1,4:32,Giants,Preston Parker 6 yard pass from Eli Manning (Josh Brown kick),7,7,2014_10_NYG_SEA
+2,13:38,Giants,Andre Williams 3 yard rush (Josh Brown kick),14,7,2014_10_NYG_SEA
+2,1:57,Seahawks,Marshawn Lynch 2 yard rush (Stephen Hauschka kick),14,14,2014_10_NYG_SEA
+2,0:00,Giants,Josh Brown 41 yard field goal ,17,14,2014_10_NYG_SEA
+3,4:13,Seahawks,Stephen Hauschka 28 yard field goal ,17,17,2014_10_NYG_SEA
+4,12:47,Seahawks,Marshawn Lynch 3 yard rush (Stephen Hauschka kick),17,24,2014_10_NYG_SEA
+4,7:47,Seahawks,Marshawn Lynch 16 yard rush (Stephen Hauschka kick),17,31,2014_10_NYG_SEA
+4,5:19,Seahawks,Russell Wilson 1 yard rush (Stephen Hauschka kick),17,38,2014_10_NYG_SEA
+1,6:13,Packers,Brandon Bostick 1 yard pass from Aaron Rodgers (Mason Crosby kick),0,7,2014_10_CHI_GB
+1,3:53,Packers,Andrew Quarless 4 yard pass from Aaron Rodgers (Mason Crosby kick),0,14,2014_10_CHI_GB
+2,14:48,Packers,Jordy Nelson 73 yard pass from Aaron Rodgers (Mason Crosby kick),0,21,2014_10_CHI_GB
+2,12:09,Packers,Jordy Nelson 40 yard pass from Aaron Rodgers (Mason Crosby kick),0,28,2014_10_CHI_GB
+2,4:48,Packers,Eddie Lacy 56 yard pass from Aaron Rodgers (Mason Crosby kick),0,35,2014_10_CHI_GB
+2,0:14,Packers,Randall Cobb 18 yard pass from Aaron Rodgers (Mason Crosby kick),0,42,2014_10_CHI_GB
+3,10:48,Packers,Mason Crosby 20 yard field goal ,0,45,2014_10_CHI_GB
+3,7:44,Bears,Brandon Marshall 45 yard pass from Jay Cutler (Robbie Gould kick),7,45,2014_10_CHI_GB
+3,5:27,Packers,Mason Crosby 52 yard field goal ,7,48,2014_10_CHI_GB
+4,10:41,Packers,Casey Hayward 82 yard interception return (Mason Crosby kick),7,55,2014_10_CHI_GB
+4,10:27,Bears,Chris Williams 101 yard kickoff return (Robbie Gould kick),14,55,2014_10_CHI_GB
+1,13:25,Eagles,Cody Parkey 39 yard field goal ,0,3,2014_10_CAR_PHI
+1,11:25,Eagles,Darren Sproles 8 yard rush (Cody Parkey kick),0,10,2014_10_CAR_PHI
+1,6:00,Panthers,Jonathan Stewart 1 yard rush (Graham Gano kick),7,10,2014_10_CAR_PHI
+1,3:29,Eagles,Darren Sproles 65 yard punt return (Cody Parkey kick),7,17,2014_10_CAR_PHI
+2,11:33,Eagles,Jordan Matthews 13 yard pass from Mark Sanchez (Cody Parkey kick),7,24,2014_10_CAR_PHI
+2,2:13,Eagles,Bradley Fletcher 34 yard interception return (Cody Parkey kick),7,31,2014_10_CAR_PHI
+3,7:40,Eagles,LeSean McCoy 1 yard rush (Cody Parkey kick),7,38,2014_10_CAR_PHI
+4,11:43,Eagles,Jordan Matthews 18 yard pass from Mark Sanchez (Cody Parkey kick),7,45,2014_10_CAR_PHI
+4,9:05,Panthers,Kelvin Benjamin 21 yard pass from Cam Newton (Graham Gano kick),14,45,2014_10_CAR_PHI
+4,5:30,Panthers,Kelvin Benjamin 40 yard pass from Cam Newton (Graham Gano kick),21,45,2014_10_CAR_PHI
+1,6:40,Dolphins,Caleb Sturgis 38 yard field goal ,0,3,2014_11_BUF_MIA
+1,0:13,Bills,Dan Carpenter 33 yard field goal ,3,3,2014_11_BUF_MIA
+2,3:26,Bills,Dan Carpenter 21 yard field goal ,6,3,2014_11_BUF_MIA
+3,6:26,Bills,Dan Carpenter 46 yard field goal ,9,3,2014_11_BUF_MIA
+3,2:18,Dolphins,Brandon Gibson 7 yard pass from Ryan Tannehill (Caleb Sturgis kick),9,10,2014_11_BUF_MIA
+3,1:03,Dolphins,"Safety, Kyle Orton intentional grounding in the end zone. ",9,12,2014_11_BUF_MIA
+4,11:35,Dolphins,Jarvis Landry 8 yard pass from Ryan Tannehill (Caleb Sturgis kick),9,19,2014_11_BUF_MIA
+4,3:01,Dolphins,Caleb Sturgis 32 yard field goal ,9,22,2014_11_BUF_MIA
+2,14:57,Panthers,Graham Gano 23 yard field goal ,0,3,2014_11_ATL_CAR
+2,9:26,Falcons,Matt Bryant 34 yard field goal ,3,3,2014_11_ATL_CAR
+2,0:02,Falcons,Matt Bryant 42 yard field goal ,6,3,2014_11_ATL_CAR
+3,12:07,Falcons,Matt Bryant 26 yard field goal ,9,3,2014_11_ATL_CAR
+3,6:34,Falcons,Roddy White 2 yard pass from Matt Ryan (Matt Bryant kick),16,3,2014_11_ATL_CAR
+4,9:12,Panthers,Kelvin Benjamin 22 yard pass from Cam Newton (Graham Gano kick),16,10,2014_11_ATL_CAR
+4,6:20,Panthers,Corey Brown 47 yard pass from Cam Newton (Graham Gano kick),16,17,2014_11_ATL_CAR
+4,2:08,Falcons,Matt Bryant 44 yard field goal ,19,17,2014_11_ATL_CAR
+1,11:21,Vikings,Blair Walsh 50 yard field goal ,3,0,2014_11_MIN_CHI
+1,3:16,Vikings,Rhett Ellison 7 yard pass from Teddy Bridgewater (Blair Walsh kick),10,0,2014_11_MIN_CHI
+2,13:06,Bears,Alshon Jeffery 27 yard pass from Jay Cutler (Robbie Gould kick),10,7,2014_11_MIN_CHI
+2,2:49,Bears,Brandon Marshall 44 yard pass from Jay Cutler (Robbie Gould kick),10,14,2014_11_MIN_CHI
+4,8:51,Bears,Brandon Marshall 4 yard pass from Jay Cutler (Robbie Gould kick),10,21,2014_11_MIN_CHI
+4,4:04,Vikings,Blair Walsh 26 yard field goal ,13,21,2014_11_MIN_CHI
+1,7:09,Texans,J.J. Watt 2 yard pass from Ryan Mallett (Randy Bullock kick),7,0,2014_11_HOU_CLE
+2,8:58,Browns,Andrew Hawkins 32 yard pass from Brian Hoyer (Billy Cundiff kick),7,7,2014_11_HOU_CLE
+2,0:23,Texans,Garrett Graham 20 yard pass from Ryan Mallett (Randy Bullock kick),14,7,2014_11_HOU_CLE
+3,5:16,Texans,Randy Bullock 46 yard field goal ,17,7,2014_11_HOU_CLE
+4,9:47,Texans,Randy Bullock 37 yard field goal ,20,7,2014_11_HOU_CLE
+4,2:47,Texans,Randy Bullock 50 yard field goal ,23,7,2014_11_HOU_CLE
+1,4:22,Chiefs,Jamaal Charles 1 yard rush (Cairo Santos kick),0,7,2014_11_SEA_KC
+2,10:22,Seahawks,Doug Baldwin 7 yard pass from Russell Wilson (Stephen Hauschka kick),7,7,2014_11_SEA_KC
+2,8:09,Chiefs,Jamaal Charles 16 yard rush (Cairo Santos kick),7,14,2014_11_SEA_KC
+2,1:39,Seahawks,Stephen Hauschka 24 yard field goal ,10,14,2014_11_SEA_KC
+2,0:00,Seahawks,Stephen Hauschka 27 yard field goal ,13,14,2014_11_SEA_KC
+3,7:39,Chiefs,Cairo Santos 23 yard field goal ,13,17,2014_11_SEA_KC
+3,0:23,Seahawks,Tony Moeaki 1 yard pass from Russell Wilson (Stephen Hauschka kick),20,17,2014_11_SEA_KC
+4,13:41,Chiefs,Knile Davis 4 yard rush (Cairo Santos kick),20,24,2014_11_SEA_KC
+1,8:53,Saints,Shayne Graham 31 yard field goal ,0,3,2014_11_CIN_NO
+1,3:14,Bengals,Jermaine Gresham 12 yard pass from Andy Dalton (Mike Nugent kick),7,3,2014_11_CIN_NO
+2,2:52,Bengals,Mike Nugent 22 yard field goal ,10,3,2014_11_CIN_NO
+2,0:00,Bengals,Mike Nugent 42 yard field goal ,13,3,2014_11_CIN_NO
+3,6:03,Bengals,Jermaine Gresham 1 yard pass from Andy Dalton (Mike Nugent kick),20,3,2014_11_CIN_NO
+4,14:56,Saints,Kenny Stills 9 yard pass from Drew Brees (Shayne Graham kick),20,10,2014_11_CIN_NO
+4,11:29,Bengals,A.J. Green 24 yard pass from Andy Dalton (Mike Nugent kick),27,10,2014_11_CIN_NO
+1,6:54,Giants,Larry Donnell 19 yard pass from Eli Manning (Josh Brown kick),0,7,2014_11_SF_NYG
+1,0:59,49ers,Phil Dawson 31 yard field goal ,3,7,2014_11_SF_NYG
+2,10:15,49ers,Phil Dawson 37 yard field goal ,6,7,2014_11_SF_NYG
+2,7:29,49ers,Phil Dawson 44 yard field goal ,9,7,2014_11_SF_NYG
+3,11:38,49ers,Michael Crabtree 48 yard pass from Colin Kaepernick (Phil Dawson kick),16,7,2014_11_SF_NYG
+3,8:18,Giants,Josh Brown 43 yard field goal ,16,10,2014_11_SF_NYG
+1,9:14,Rams,Greg Zuerlein 37 yard field goal ,0,3,2014_11_DEN_LAR
+1,1:10,Rams,Kenny Britt 63 yard pass from Shaun Hill (Greg Zuerlein kick),0,10,2014_11_DEN_LAR
+2,3:57,Rams,Greg Zuerlein 29 yard field goal ,0,13,2014_11_DEN_LAR
+2,2:22,Broncos,Emmanuel Sanders 42 yard pass from Peyton Manning (Brandon McManus kick),7,13,2014_11_DEN_LAR
+3,1:41,Rams,Greg Zuerlein 22 yard field goal ,7,16,2014_11_DEN_LAR
+4,11:59,Rams,Greg Zuerlein 55 yard field goal ,7,19,2014_11_DEN_LAR
+4,4:44,Rams,Greg Zuerlein 53 yard field goal ,7,22,2014_11_DEN_LAR
+1,11:10,Buccaneers,Patrick Murray 32 yard field goal ,3,0,2014_11_TB_WAS
+1,3:56,Buccaneers,Johnthan Banks 19 yard interception return (Patrick Murray kick),10,0,2014_11_TB_WAS
+2,7:39,Buccaneers,Patrick Murray 38 yard field goal ,13,0,2014_11_TB_WAS
+2,0:11,Redskins,Roy Helu 30 yard pass from Robert Griffin III (Kai Forbath kick),13,7,2014_11_TB_WAS
+3,4:36,Buccaneers,Mike Evans 36 yard pass from Josh McCown (Patrick Murray kick),20,7,2014_11_TB_WAS
+4,14:07,Buccaneers,Mike Evans 56 yard pass from Josh McCown (Patrick Murray kick),27,7,2014_11_TB_WAS
+1,14:07,Chargers,Malcom Floyd 22 yard pass from Philip Rivers (Nick Novak kick),0,7,2014_11_LVR_LAC
+1,7:27,Raiders,Sebastian Janikowski 42 yard field goal ,3,7,2014_11_LVR_LAC
+2,4:12,Chargers,Nick Novak 23 yard field goal ,3,10,2014_11_LVR_LAC
+3,7:19,Chargers,Nick Novak 52 yard field goal ,3,13,2014_11_LVR_LAC
+4,4:06,Raiders,Sebastian Janikowski 25 yard field goal ,6,13,2014_11_LVR_LAC
+1,12:02,Cardinals,Michael Floyd 42 yard pass from Drew Stanton (Chandler Catanzaro kick),0,7,2014_11_DET_ARI
+1,6:06,Cardinals,Michael Floyd 12 yard pass from Drew Stanton (Chandler Catanzaro kick),0,14,2014_11_DET_ARI
+1,2:46,Lions,Matt Prater 50 yard field goal ,3,14,2014_11_DET_ARI
+2,0:25,Lions,Matt Prater 28 yard field goal ,6,14,2014_11_DET_ARI
+1,12:58,Packers,Mason Crosby 27 yard field goal ,0,3,2014_11_PHI_GB
+1,3:33,Packers,Davante Adams 6 yard pass from Aaron Rodgers (Mason Crosby kick),0,10,2014_11_PHI_GB
+1,2:00,Packers,Micah Hyde 75 yard punt return (Mason Crosby kick),0,17,2014_11_PHI_GB
+2,13:08,Eagles,Cody Parkey 33 yard field goal ,3,17,2014_11_PHI_GB
+2,10:39,Packers,Jordy Nelson 27 yard pass from Aaron Rodgers (Mason Crosby kick),3,24,2014_11_PHI_GB
+2,2:00,Packers,Eddie Lacy 1 yard rush (run failed),3,30,2014_11_PHI_GB
+2,0:00,Eagles,Cody Parkey 33 yard field goal ,6,30,2014_11_PHI_GB
+3,7:53,Packers,Mason Crosby 33 yard field goal ,6,33,2014_11_PHI_GB
+3,5:56,Packers,Julius Peppers 52 yard interception return (Mason Crosby kick failed),6,39,2014_11_PHI_GB
+3,2:21,Eagles,Jordan Matthews 10 yard pass from Mark Sanchez (Cody Parkey kick),13,39,2014_11_PHI_GB
+4,14:40,Packers,Eddie Lacy 32 yard pass from Aaron Rodgers (Mason Crosby kick),13,46,2014_11_PHI_GB
+4,10:39,Packers,Casey Hayward 49 yard defensive fumble return (Mason Crosby kick),13,53,2014_11_PHI_GB
+4,7:20,Eagles,Jeremy Maclin 20 yard pass from Mark Sanchez (Cody Parkey kick),20,53,2014_11_PHI_GB
+1,8:37,Patriots,Jonas Gray 4 yard rush (Stephen Gostkowski kick),7,0,2014_11_NE_IND
+1,4:19,Colts,Adam Vinatieri 31 yard field goal ,7,3,2014_11_NE_IND
+2,3:50,Patriots,Jonas Gray 2 yard rush (Stephen Gostkowski kick),14,3,2014_11_NE_IND
+2,0:55,Colts,Hakeem Nicks 10 yard pass from Andrew Luck (Adam Vinatieri kick),14,10,2014_11_NE_IND
+3,11:10,Patriots,Tim Wright 2 yard pass from Tom Brady (Stephen Gostkowski kick),21,10,2014_11_NE_IND
+3,8:31,Colts,Adam Vinatieri 53 yard field goal ,21,13,2014_11_NE_IND
+3,3:30,Patriots,Jonas Gray 2 yard rush (Stephen Gostkowski kick),28,13,2014_11_NE_IND
+4,13:32,Colts,Anthony Castonzo 1 yard pass from Andrew Luck (Adam Vinatieri kick),28,20,2014_11_NE_IND
+4,8:43,Patriots,Jonas Gray 1 yard rush (Stephen Gostkowski kick),35,20,2014_11_NE_IND
+4,6:46,Patriots,Rob Gronkowski 26 yard pass from Tom Brady (Stephen Gostkowski kick),42,20,2014_11_NE_IND
+1,10:45,Steelers,Shaun Suisham 49 yard field goal ,3,0,2014_11_PIT_TEN
+1,10:37,Steelers,William Gay 28 yard interception return (Shaun Suisham kick),10,0,2014_11_PIT_TEN
+1,8:08,Titans,Bishop Sankey 9 yard rush (Ryan Succop kick),10,7,2014_11_PIT_TEN
+1,1:03,Steelers,Shaun Suisham 23 yard field goal ,13,7,2014_11_PIT_TEN
+2,11:12,Titans,Ryan Succop 20 yard field goal ,13,10,2014_11_PIT_TEN
+2,0:32,Titans,Nate Washington 80 yard pass from Zach Mettenberger (Ryan Succop kick),13,17,2014_11_PIT_TEN
+3,3:42,Titans,Chase Coffman 4 yard pass from Zach Mettenberger (Ryan Succop kick),13,24,2014_11_PIT_TEN
+4,14:51,Steelers,Le'Veon Bell 5 yard rush (Shaun Suisham kick),20,24,2014_11_PIT_TEN
+4,9:01,Steelers,Antonio Brown 12 yard pass from Ben Roethlisberger (Shaun Suisham kick),27,24,2014_11_PIT_TEN
+1,6:33,Raiders,Latavius Murray 11 yard rush (Sebastian Janikowski kick),0,7,2014_12_KC_LVR
+2,12:28,Raiders,Latavius Murray 90 yard rush (Sebastian Janikowski kick),0,14,2014_12_KC_LVR
+2,7:19,Chiefs,Cairo Santos 24 yard field goal ,3,14,2014_12_KC_LVR
+3,5:05,Raiders,Sebastian Janikowski 40 yard field goal ,3,17,2014_12_KC_LVR
+3,1:52,Chiefs,Anthony Fasano 19 yard pass from Alex Smith (Cairo Santos kick),10,17,2014_12_KC_LVR
+4,12:20,Chiefs,Jamaal Charles 30 yard pass from Alex Smith (Cairo Santos kick),17,17,2014_12_KC_LVR
+4,9:03,Chiefs,Cairo Santos 25 yard field goal ,20,17,2014_12_KC_LVR
+4,1:42,Raiders,James Jones 9 yard pass from Derek Carr (Sebastian Janikowski kick),20,24,2014_12_KC_LVR
+1,5:53,Falcons,Julio Jones 24 yard pass from Matt Ryan (Matt Bryant kick),0,7,2014_12_CLE_ATL
+1,1:33,Browns,Isaiah Crowell 11 yard rush (Billy Cundiff kick),7,7,2014_12_CLE_ATL
+2,13:17,Browns,Billy Cundiff 33 yard field goal ,10,7,2014_12_CLE_ATL
+2,9:20,Browns,Billy Cundiff 37 yard field goal ,13,7,2014_12_CLE_ATL
+2,0:55,Falcons,Jacquizz Rodgers 8 yard pass from Matt Ryan (Matt Bryant kick),13,14,2014_12_CLE_ATL
+3,9:46,Browns,Billy Cundiff 32 yard field goal ,16,14,2014_12_CLE_ATL
+3,0:46,Browns,Isaiah Crowell 26 yard rush (Billy Cundiff kick),23,14,2014_12_CLE_ATL
+4,9:31,Falcons,Steven Jackson 1 yard rush (Matt Bryant kick),23,21,2014_12_CLE_ATL
+4,0:44,Falcons,Matt Bryant 53 yard field goal ,23,24,2014_12_CLE_ATL
+4,0:00,Browns,Billy Cundiff 37 yard field goal ,26,24,2014_12_CLE_ATL
+2,13:24,Buccaneers,Mike Evans 19 yard pass from Josh McCown (Patrick Murray kick),7,0,2014_12_TB_CHI
+2,0:04,Buccaneers,Patrick Murray 32 yard field goal ,10,0,2014_12_TB_CHI
+3,10:33,Bears,Alshon Jeffery 2 yard pass from Jay Cutler (Robbie Gould kick),10,7,2014_12_TB_CHI
+3,4:51,Bears,Matt Forte 13 yard rush (Robbie Gould kick),10,14,2014_12_TB_CHI
+3,3:02,Bears,Matt Forte 1 yard rush (Robbie Gould kick),10,21,2014_12_TB_CHI
+4,4:56,Buccaneers,Patrick Murray 39 yard field goal ,13,21,2014_12_TB_CHI
+1,1:19,Bengals,Mohamed Sanu 6 yard pass from Andy Dalton (Mike Nugent kick),7,0,2014_12_CIN_HOU
+2,8:57,Bengals,"Safety, Alfred Blue tackled in the endzone by Geno Atkins. ",9,0,2014_12_CIN_HOU
+2,1:45,Texans,Randy Bullock 36 yard field goal ,9,3,2014_12_CIN_HOU
+3,11:48,Bengals,Jeremy Hill 2 yard rush (Mike Nugent kick),16,3,2014_12_CIN_HOU
+3,7:19,Texans,Johnathan Joseph 60 yard interception return (Randy Bullock kick),16,10,2014_12_CIN_HOU
+3,1:48,Texans,Randy Bullock 25 yard field goal ,16,13,2014_12_CIN_HOU
+4,8:48,Bengals,Mike Nugent 31 yard field goal ,19,13,2014_12_CIN_HOU
+4,1:55,Bengals,Mike Nugent 49 yard field goal ,22,13,2014_12_CIN_HOU
+1,10:32,Colts,Adam Vinatieri 46 yard field goal ,0,3,2014_12_JAX_IND
+1,4:17,Jaguars,Josh Scobee 28 yard field goal ,3,3,2014_12_JAX_IND
+2,0:12,Colts,Adam Vinatieri 20 yard field goal ,3,6,2014_12_JAX_IND
+3,8:31,Colts,Trent Richardson 1 yard rush (Adam Vinatieri kick),3,13,2014_12_JAX_IND
+3,6:08,Colts,T.Y. Hilton 73 yard pass from Andrew Luck (Adam Vinatieri kick),3,20,2014_12_JAX_IND
+4,14:52,Colts,Adam Vinatieri 32 yard field goal ,3,23,2014_12_JAX_IND
+1,1:34,Packers,Eddie Lacy 1 yard rush (Mason Crosby kick),7,0,2014_12_GB_MIN
+2,11:06,Vikings,Charles Johnson 22 yard pass from Teddy Bridgewater (Blair Walsh kick),7,7,2014_12_GB_MIN
+2,5:23,Packers,Richard Rodgers 1 yard pass from Aaron Rodgers (Mason Crosby kick),14,7,2014_12_GB_MIN
+2,0:16,Vikings,Blair Walsh 39 yard field goal ,14,10,2014_12_GB_MIN
+3,6:42,Vikings,Blair Walsh 51 yard field goal ,14,13,2014_12_GB_MIN
+3,2:41,Packers,Mason Crosby 48 yard field goal ,17,13,2014_12_GB_MIN
+4,8:34,Packers,Eddie Lacy 10 yard pass from Aaron Rodgers (Mason Crosby kick),24,13,2014_12_GB_MIN
+4,3:23,Vikings,Greg Jennings 5 yard pass from Teddy Bridgewater (Charles Johnson pass from Teddy Bridgewater),24,21,2014_12_GB_MIN
+1,11:44,Lions,Matt Prater 48 yard field goal ,3,0,2014_12_DET_NE
+1,3:10,Patriots,Tim Wright 4 yard pass from Tom Brady (Stephen Gostkowski kick),3,7,2014_12_DET_NE
+2,13:37,Lions,Matt Prater 20 yard field goal ,6,7,2014_12_DET_NE
+2,12:43,Patriots,LeGarrette Blount 3 yard rush (Stephen Gostkowski kick),6,14,2014_12_DET_NE
+2,2:42,Patriots,Tim Wright 8 yard pass from Tom Brady (Stephen Gostkowski kick),6,21,2014_12_DET_NE
+2,0:00,Patriots,Stephen Gostkowski 35 yard field goal ,6,24,2014_12_DET_NE
+3,5:05,Patriots,Stephen Gostkowski 43 yard field goal ,6,27,2014_12_DET_NE
+4,14:48,Lions,Matt Prater 49 yard field goal ,9,27,2014_12_DET_NE
+4,1:53,Patriots,LeGarrette Blount 1 yard rush (Stephen Gostkowski kick),9,34,2014_12_DET_NE
+1,14:47,Eagles,Josh Huff 107 yard kickoff return (Cody Parkey kick),0,7,2014_12_TEN_PHI
+1,10:44,Eagles,Darren Sproles 4 yard rush (Cody Parkey kick),0,14,2014_12_TEN_PHI
+1,3:25,Eagles,Cody Parkey 36 yard field goal ,0,17,2014_12_TEN_PHI
+2,14:51,Titans,Justin Hunter 40 yard pass from Zach Mettenberger (Ryan Succop kick),7,17,2014_12_TEN_PHI
+2,11:29,Eagles,Cody Parkey 26 yard field goal ,7,20,2014_12_TEN_PHI
+2,8:22,Titans,Shonn Greene 2 yard rush (Ryan Succop kick),14,20,2014_12_TEN_PHI
+2,4:35,Eagles,LeSean McCoy 2 yard rush (Cody Parkey kick),14,27,2014_12_TEN_PHI
+2,0:51,Titans,Ryan Succop 20 yard field goal ,17,27,2014_12_TEN_PHI
+3,11:27,Eagles,James Casey 14 yard pass from Mark Sanchez (Cody Parkey kick),17,34,2014_12_TEN_PHI
+4,14:14,Eagles,Cody Parkey 35 yard field goal ,17,37,2014_12_TEN_PHI
+4,10:18,Eagles,Cody Parkey 30 yard field goal ,17,40,2014_12_TEN_PHI
+4,5:43,Titans,Dexter McCluster 6 yard pass from Zach Mettenberger (Ryan Succop kick),24,40,2014_12_TEN_PHI
+4,2:26,Eagles,Cody Parkey 50 yard field goal ,24,43,2014_12_TEN_PHI
+1,9:10,Chargers,Nick Novak 23 yard field goal ,0,3,2014_12_LAR_LAC
+1,1:03,Rams,Greg Zuerlein 22 yard field goal ,3,3,2014_12_LAR_LAC
+2,11:32,Rams,Jackrabbit Jenkins 99 yard interception return (Greg Zuerlein kick),10,3,2014_12_LAR_LAC
+2,0:02,Chargers,Nick Novak 48 yard field goal ,10,6,2014_12_LAR_LAC
+3,9:50,Chargers,Ryan Mathews 32 yard rush (Nick Novak kick),10,13,2014_12_LAR_LAC
+3,9:29,Chargers,Andrew Gachkar 13 yard defensive fumble return (Nick Novak kick),10,20,2014_12_LAR_LAC
+3,6:18,Rams,Tavon Austin 6 yard rush (Greg Zuerlein kick),17,20,2014_12_LAR_LAC
+4,8:09,Chargers,Keenan Allen 29 yard pass from Philip Rivers (Nick Novak kick),17,27,2014_12_LAR_LAC
+4,2:04,Rams,Stedman Bailey 7 yard pass from Shaun Hill (Greg Zuerlein kick),24,27,2014_12_LAR_LAC
+1,8:45,Seahawks,Stephen Hauschka 27 yard field goal ,0,3,2014_12_ARI_SEA
+2,12:52,Seahawks,Stephen Hauschka 32 yard field goal ,0,6,2014_12_ARI_SEA
+2,10:09,Seahawks,Stephen Hauschka 52 yard field goal ,0,9,2014_12_ARI_SEA
+2,0:14,Cardinals,Chandler Catanzaro 23 yard field goal ,3,9,2014_12_ARI_SEA
+3,8:34,Seahawks,Stephen Hauschka 40 yard field goal ,3,12,2014_12_ARI_SEA
+3,0:52,Seahawks,Cooper Helfet 20 yard pass from Russell Wilson (Stephen Hauschka kick),3,19,2014_12_ARI_SEA
+1,11:22,Dolphins,Daniel Thomas 3 yard rush (Caleb Sturgis kick),7,0,2014_12_MIA_DEN
+1,4:10,Broncos,Brandon McManus 38 yard field goal ,7,3,2014_12_MIA_DEN
+2,12:53,Dolphins,Ryan Tannehill 1 yard rush (Caleb Sturgis kick),14,3,2014_12_MIA_DEN
+2,7:08,Broncos,Demaryius Thomas 5 yard pass from Peyton Manning (Brandon McManus kick),14,10,2014_12_MIA_DEN
+2,1:54,Dolphins,Mike Wallace 10 yard pass from Ryan Tannehill (Caleb Sturgis kick),21,10,2014_12_MIA_DEN
+2,0:12,Broncos,Demaryius Thomas 14 yard pass from Peyton Manning (Brandon McManus kick),21,17,2014_12_MIA_DEN
+3,2:11,Dolphins,Jarvis Landry 5 yard pass from Ryan Tannehill (Caleb Sturgis kick),28,17,2014_12_MIA_DEN
+4,14:09,Broncos,Demaryius Thomas 5 yard pass from Peyton Manning (Emmanuel Sanders pass from Peyton Manning),28,25,2014_12_MIA_DEN
+4,5:01,Broncos,C.J. Anderson 10 yard rush (Brandon McManus kick),28,32,2014_12_MIA_DEN
+4,3:13,Broncos,Wes Welker 2 yard pass from Peyton Manning (Brandon McManus kick),28,39,2014_12_MIA_DEN
+4,1:34,Dolphins,Jarvis Landry 1 yard pass from Ryan Tannehill (Daniel Thomas run),36,39,2014_12_MIA_DEN
+1,11:13,49ers,Anquan Boldin 30 yard pass from Colin Kaepernick (Phil Dawson kick),0,7,2014_12_WAS_SF
+2,5:33,Redskins,Alfred Morris 1 yard rush (Kai Forbath kick),7,7,2014_12_WAS_SF
+2,0:00,49ers,Phil Dawson 41 yard field goal ,7,10,2014_12_WAS_SF
+3,0:31,Redskins,Kai Forbath 27 yard field goal ,10,10,2014_12_WAS_SF
+4,7:42,Redskins,Kai Forbath 46 yard field goal ,13,10,2014_12_WAS_SF
+4,2:59,49ers,Carlos Hyde 4 yard rush (Phil Dawson kick),13,17,2014_12_WAS_SF
+1,7:01,Giants,Odell Beckham Jr. 3 yard pass from Eli Manning (Josh Brown kick),0,7,2014_12_DAL_NYG
+1,2:45,Cowboys,Dan Bailey 38 yard field goal ,3,7,2014_12_DAL_NYG
+2,14:52,Giants,Odell Beckham Jr. 43 yard pass from Eli Manning (Josh Brown kick),3,14,2014_12_DAL_NYG
+2,9:15,Cowboys,Jason Witten 4 yard pass from Tony Romo (Dan Bailey kick),10,14,2014_12_DAL_NYG
+2,3:18,Giants,Andre Williams 3 yard rush (Josh Brown kick),10,21,2014_12_DAL_NYG
+3,6:35,Cowboys,Cole Beasley 45 yard pass from Tony Romo (Dan Bailey kick),17,21,2014_12_DAL_NYG
+3,1:08,Cowboys,Dez Bryant 31 yard pass from Tony Romo (Dan Bailey kick),24,21,2014_12_DAL_NYG
+4,3:00,Giants,Adrien Robinson 1 yard pass from Eli Manning (Josh Brown kick),24,28,2014_12_DAL_NYG
+4,1:01,Cowboys,Dez Bryant 13 yard pass from Tony Romo (Dan Bailey kick),31,28,2014_12_DAL_NYG
+1,8:04,Bills,Robert Woods 7 yard pass from Kyle Orton (Dan Carpenter kick),0,7,2014_12_NYJ_BUF
+1,1:01,Jets,Nick Folk 27 yard field goal ,3,7,2014_12_NYJ_BUF
+2,0:43,Bills,Scott Chandler 19 yard pass from Kyle Orton (Dan Carpenter kick),3,14,2014_12_NYJ_BUF
+3,9:45,Bills,Dan Carpenter 53 yard field goal ,3,17,2014_12_NYJ_BUF
+3,7:57,Bills,Manny Lawson blocked punt recovery in end zone (Dan Carpenter kick),3,24,2014_12_NYJ_BUF
+3,5:03,Bills,Fred Jackson 5 yard rush (Dan Carpenter kick),3,31,2014_12_NYJ_BUF
+4,5:53,Bills,Anthony Dixon 30 yard rush (Dan Carpenter kick),3,38,2014_12_NYJ_BUF
+1,8:13,Ravens,Steve Smith Sr. 15 yard pass from Joe Flacco (Justin Tucker kick),7,0,2014_12_BAL_NO
+1,3:20,Saints,Jimmy Graham 10 yard pass from Drew Brees (Shayne Graham kick),7,7,2014_12_BAL_NO
+2,9:08,Ravens,Justin Forsett 13 yard rush (Justin Tucker kick),14,7,2014_12_BAL_NO
+2,4:00,Saints,Shayne Graham 20 yard field goal ,14,10,2014_12_BAL_NO
+2,0:17,Saints,Marques Colston 26 yard pass from Drew Brees (Shayne Graham kick),14,17,2014_12_BAL_NO
+3,8:30,Ravens,Justin Tucker 31 yard field goal ,17,17,2014_12_BAL_NO
+3,4:59,Ravens,Will Hill 44 yard interception return (Justin Tucker kick),24,17,2014_12_BAL_NO
+4,10:59,Ravens,Justin Tucker 55 yard field goal ,27,17,2014_12_BAL_NO
+4,6:33,Saints,Shayne Graham 34 yard field goal ,27,20,2014_12_BAL_NO
+4,2:53,Ravens,Justin Forsett 20 yard rush (Justin Tucker kick),34,20,2014_12_BAL_NO
+4,0:40,Saints,Jimmy Graham 2 yard pass from Drew Brees (Shayne Graham kick),34,27,2014_12_BAL_NO
+1,10:33,Bears,Alshon Jeffery 10 yard pass from Jay Cutler (Robbie Gould kick),7,0,2014_13_CHI_DET
+1,6:51,Lions,Matt Prater 46 yard field goal ,7,3,2014_13_CHI_DET
+1,3:35,Bears,Alshon Jeffery 6 yard pass from Jay Cutler (Robbie Gould kick),14,3,2014_13_CHI_DET
+2,12:55,Lions,Calvin Johnson 25 yard pass from Matthew Stafford (Matt Prater kick),14,10,2014_13_CHI_DET
+2,3:18,Lions,Joique Bell 1 yard rush (Matt Prater kick),14,17,2014_13_CHI_DET
+2,0:24,Lions,Calvin Johnson 6 yard pass from Matthew Stafford (Matt Prater kick),14,24,2014_13_CHI_DET
+3,8:54,Bears,Robbie Gould 35 yard field goal ,17,24,2014_13_CHI_DET
+4,14:57,Lions,Joique Bell 1 yard rush (Matt Prater kick),17,31,2014_13_CHI_DET
+4,6:16,Lions,Matt Prater 40 yard field goal ,17,34,2014_13_CHI_DET
+1,11:55,Eagles,Mark Sanchez 2 yard rush (Cody Parkey kick),7,0,2014_13_PHI_DAL
+1,4:08,Eagles,Jordan Matthews 27 yard pass from Mark Sanchez (Cody Parkey kick),14,0,2014_13_PHI_DAL
+2,14:56,Cowboys,DeMarco Murray 1 yard rush (Dan Bailey kick),14,7,2014_13_PHI_DAL
+2,12:10,Eagles,Cody Parkey 31 yard field goal ,17,7,2014_13_PHI_DAL
+2,1:35,Eagles,Cody Parkey 22 yard field goal ,20,7,2014_13_PHI_DAL
+2,0:21,Eagles,Cody Parkey 26 yard field goal ,23,7,2014_13_PHI_DAL
+3,9:12,Cowboys,Dan Bailey 28 yard field goal ,23,10,2014_13_PHI_DAL
+3,7:20,Eagles,LeSean McCoy 38 yard rush (Cody Parkey kick),30,10,2014_13_PHI_DAL
+4,11:01,Eagles,Cody Parkey 25 yard field goal ,33,10,2014_13_PHI_DAL
+1,1:29,Seahawks,Robert Turbin 13 yard pass from Russell Wilson (Stephen Hauschka kick),7,0,2014_13_SEA_SF
+2,11:07,Seahawks,Stephen Hauschka 21 yard field goal ,10,0,2014_13_SEA_SF
+2,5:40,Seahawks,Stephen Hauschka 36 yard field goal ,13,0,2014_13_SEA_SF
+3,8:05,Seahawks,Stephen Hauschka 35 yard field goal ,16,0,2014_13_SEA_SF
+3,1:06,49ers,Phil Dawson 40 yard field goal ,16,3,2014_13_SEA_SF
+4,10:11,Seahawks,Stephen Hauschka 46 yard field goal ,19,3,2014_13_SEA_SF
+1,10:46,Ravens,Torrey Smith 16 yard pass from Joe Flacco (Justin Tucker kick),0,7,2014_13_LAC_BAL
+1,7:48,Ravens,Justin Tucker 33 yard field goal ,0,10,2014_13_LAC_BAL
+1,0:20,Chargers,Keenan Allen 12 yard pass from Philip Rivers (Nick Novak kick),7,10,2014_13_LAC_BAL
+2,11:09,Ravens,Justin Tucker 21 yard field goal ,7,13,2014_13_LAC_BAL
+2,1:41,Ravens,Justin Tucker 29 yard field goal ,7,16,2014_13_LAC_BAL
+2,0:02,Chargers,Nick Novak 52 yard field goal ,10,16,2014_13_LAC_BAL
+3,10:10,Chargers,Nick Novak 26 yard field goal ,13,16,2014_13_LAC_BAL
+3,5:01,Ravens,Torrey Smith 10 yard pass from Joe Flacco (Justin Tucker kick),13,23,2014_13_LAC_BAL
+4,13:12,Chargers,Ryan Mathews 14 yard rush (Nick Novak kick),20,23,2014_13_LAC_BAL
+4,6:13,Ravens,Joe Flacco 1 yard rush (Justin Tucker kick),20,30,2014_13_LAC_BAL
+4,3:40,Chargers,Keenan Allen 23 yard pass from Philip Rivers (Nick Novak kick),27,30,2014_13_LAC_BAL
+4,2:22,Ravens,Justin Tucker 31 yard field goal ,27,33,2014_13_LAC_BAL
+4,0:38,Chargers,Eddie Royal 1 yard pass from Philip Rivers (Nick Novak kick),34,33,2014_13_LAC_BAL
+1,4:51,Browns,Billy Cundiff 22 yard field goal ,3,0,2014_13_CLE_BUF
+3,8:04,Bills,Chris Hogan 3 yard pass from Kyle Orton (Dan Carpenter kick),3,7,2014_13_CLE_BUF
+3,7:54,Bills,Jerry Hughes 18 yard defensive fumble return (Dan Carpenter kick),3,14,2014_13_CLE_BUF
+4,13:41,Bills,Dan Carpenter 49 yard field goal ,3,17,2014_13_CLE_BUF
+4,12:01,Bills,Dan Carpenter 34 yard field goal ,3,20,2014_13_CLE_BUF
+4,8:47,Browns,Johnny Manziel 10 yard rush (Billy Cundiff kick),10,20,2014_13_CLE_BUF
+4,3:32,Bills,Dan Carpenter 34 yard field goal ,10,23,2014_13_CLE_BUF
+4,0:27,Bills,Dan Carpenter 35 yard field goal ,10,26,2014_13_CLE_BUF
+1,7:34,Texans,Ryan Griffin 8 yard pass from Ryan Fitzpatrick (Randy Bullock kick),0,7,2014_13_TEN_HOU
+1,4:50,Texans,Arian Foster 7 yard pass from Ryan Fitzpatrick (Randy Bullock kick),0,14,2014_13_TEN_HOU
+2,3:25,Texans,Randy Bullock 37 yard field goal ,0,17,2014_13_TEN_HOU
+2,0:38,Texans,DeAndre Hopkins 58 yard pass from Ryan Fitzpatrick (Randy Bullock kick),0,24,2014_13_TEN_HOU
+3,12:14,Titans,Kendall Wright 36 yard pass from Zach Mettenberger (Ryan Succop kick),7,24,2014_13_TEN_HOU
+3,8:07,Titans,Jason McCourty 62 yard defensive fumble return (Ryan Succop kick),14,24,2014_13_TEN_HOU
+3,4:40,Texans,DeAndre Hopkins 34 yard pass from Ryan Fitzpatrick (Randy Bullock kick),14,31,2014_13_TEN_HOU
+4,11:05,Texans,Andre Johnson 4 yard pass from Ryan Fitzpatrick (Randy Bullock kick),14,38,2014_13_TEN_HOU
+4,8:56,Texans,J.J. Watt 1 yard pass from Ryan Fitzpatrick (Randy Bullock kick),14,45,2014_13_TEN_HOU
+4,1:06,Titans,Nate Washington 25 yard pass from Jake Locker (Ryan Succop kick),21,45,2014_13_TEN_HOU
+1,13:18,Redskins,Kai Forbath 25 yard field goal ,3,0,2014_13_WAS_IND
+1,6:05,Colts,Coby Fleener 30 yard pass from Andrew Luck (Adam Vinatieri kick),3,7,2014_13_WAS_IND
+2,12:27,Colts,Dan Herron 49 yard rush (Adam Vinatieri kick),3,14,2014_13_WAS_IND
+2,6:53,Colts,T.Y. Hilton 3 yard pass from Andrew Luck (Adam Vinatieri kick),3,21,2014_13_WAS_IND
+2,1:59,Redskins,Roy Helu 21 yard pass from Colt McCoy (Kai Forbath kick),10,21,2014_13_WAS_IND
+3,11:22,Redskins,Logan Paulsen 16 yard pass from Colt McCoy (Kai Forbath kick),17,21,2014_13_WAS_IND
+3,10:05,Colts,Donte Moncrief 48 yard pass from Andrew Luck (Adam Vinatieri kick),17,28,2014_13_WAS_IND
+3,7:30,Colts,D'Qwell Jackson 35 yard defensive fumble return (Adam Vinatieri kick),17,35,2014_13_WAS_IND
+3,5:12,Redskins,DeSean Jackson 42 yard pass from Colt McCoy (Kai Forbath kick),24,35,2014_13_WAS_IND
+3,4:45,Colts,Coby Fleener 73 yard pass from Andrew Luck (Adam Vinatieri kick),24,42,2014_13_WAS_IND
+4,12:00,Redskins,Kai Forbath 29 yard field goal ,27,42,2014_13_WAS_IND
+4,10:34,Colts,Donte Moncrief 79 yard pass from Andrew Luck (Adam Vinatieri kick),27,49,2014_13_WAS_IND
+2,14:57,Giants,Rashad Jennings 2 yard rush (Josh Brown kick),7,0,2014_13_NYG_JAX
+2,11:27,Giants,Preston Parker 3 yard pass from Eli Manning (Josh Brown kick),14,0,2014_13_NYG_JAX
+2,6:30,Giants,Rashad Jennings 17 yard rush (Josh Brown kick),21,0,2014_13_NYG_JAX
+2,2:03,Jaguars,Josh Scobee 28 yard field goal ,21,3,2014_13_NYG_JAX
+3,11:13,Jaguars,J.T. Thomas defensive fumble recovery in end zone (Josh Scobee kick),21,10,2014_13_NYG_JAX
+3,1:55,Jaguars,Marqise Lee 30 yard pass from Blake Bortles (pass failed),21,16,2014_13_NYG_JAX
+4,12:56,Jaguars,Aaron Colvin 41 yard defensive fumble return (pass failed),21,22,2014_13_NYG_JAX
+4,3:26,Giants,Josh Brown 33 yard field goal ,24,22,2014_13_NYG_JAX
+4,0:28,Jaguars,Josh Scobee 43 yard field goal ,24,25,2014_13_NYG_JAX
+1,9:41,Vikings,Kyle Rudolph 4 yard pass from Teddy Bridgewater (Blair Walsh kick),0,7,2014_13_CAR_MIN
+1,7:00,Vikings,Adam Thielen 30 yard blocked punt return (Blair Walsh kick),0,14,2014_13_CAR_MIN
+1,0:37,Panthers,Graham Gano 30 yard field goal ,3,14,2014_13_CAR_MIN
+2,9:35,Vikings,Everson Griffen 43 yard blocked punt return (Blair Walsh kick),3,21,2014_13_CAR_MIN
+2,3:28,Panthers,Graham Gano 35 yard field goal ,6,21,2014_13_CAR_MIN
+2,0:16,Vikings,Greg Jennings 17 yard pass from Teddy Bridgewater (Blair Walsh kick),6,28,2014_13_CAR_MIN
+3,9:15,Panthers,Corey Brown 32 yard pass from Cam Newton (Graham Gano kick),13,28,2014_13_CAR_MIN
+4,8:55,Vikings,Blair Walsh 39 yard field goal ,13,31,2014_13_CAR_MIN
+1,6:05,Steelers,Shaun Suisham 49 yard field goal ,0,3,2014_13_NO_PIT
+2,14:05,Steelers,Shaun Suisham 31 yard field goal ,0,6,2014_13_NO_PIT
+2,6:04,Saints,Ben Watson 15 yard pass from Drew Brees (Shayne Graham kick),7,6,2014_13_NO_PIT
+2,0:36,Saints,Erik Lorig 4 yard pass from Drew Brees (Shayne Graham kick),14,6,2014_13_NO_PIT
+3,11:25,Saints,Nick Toon 11 yard pass from Drew Brees (Shayne Graham kick),21,6,2014_13_NO_PIT
+3,4:21,Steelers,Le'Veon Bell 1 yard rush (Shaun Suisham kick),21,13,2014_13_NO_PIT
+3,1:50,Saints,Kenny Stills 69 yard pass from Drew Brees (Shayne Graham kick),28,13,2014_13_NO_PIT
+4,14:52,Steelers,Shaun Suisham 47 yard field goal ,28,16,2014_13_NO_PIT
+4,10:25,Saints,Marques Colston 3 yard pass from Drew Brees (Shayne Graham kick),35,16,2014_13_NO_PIT
+4,2:34,Steelers,Antonio Brown 4 yard pass from Ben Roethlisberger (Antonio Brown pass from Ben Roethlisberger),35,24,2014_13_NO_PIT
+4,0:00,Steelers,Antonio Brown 3 yard pass from Ben Roethlisberger (Lance Moore pass from Ben Roethlisberger),35,32,2014_13_NO_PIT
+1,12:04,Rams,Tre Mason 35 yard pass from Shaun Hill (Greg Zuerlein kick),0,7,2014_13_LVR_LAR
+1,7:12,Rams,Shaun Hill 2 yard rush (Greg Zuerlein kick),0,14,2014_13_LVR_LAR
+1,2:37,Rams,Tavon Austin 18 yard rush (Greg Zuerlein kick),0,21,2014_13_LVR_LAR
+2,11:14,Rams,Tre Mason 89 yard rush (Greg Zuerlein kick),0,28,2014_13_LVR_LAR
+2,8:10,Rams,Cory Harkey 4 yard pass from Shaun Hill (Greg Zuerlein kick),0,35,2014_13_LVR_LAR
+2,5:27,Rams,Greg Zuerlein 38 yard field goal ,0,38,2014_13_LVR_LAR
+4,12:47,Rams,Tre Mason 8 yard rush (Greg Zuerlein kick),0,45,2014_13_LVR_LAR
+4,5:24,Rams,Trumaine Johnson 43 yard interception return (Greg Zuerlein kick),0,52,2014_13_LVR_LAR
+1,12:24,Buccaneers,Patrick Murray 32 yard field goal ,0,3,2014_13_CIN_TB
+2,12:00,Buccaneers,Doug Martin 7 yard rush (Patrick Murray kick),0,10,2014_13_CIN_TB
+2,1:08,Bengals,Andy Dalton 5 yard rush (Mike Nugent kick),7,10,2014_13_CIN_TB
+3,2:04,Bengals,A.J. Green 13 yard pass from Andy Dalton (Mike Nugent kick),14,10,2014_13_CIN_TB
+4,14:12,Buccaneers,Patrick Murray 42 yard field goal ,14,13,2014_13_CIN_TB
+1,11:39,Falcons,Levine Toilolo 1 yard pass from Matt Ryan (Matt Bryant kick),0,7,2014_13_ARI_ATL
+1,8:13,Falcons,Matt Bryant 20 yard field goal ,0,10,2014_13_ARI_ATL
+1,5:48,Falcons,Julio Jones 32 yard pass from Matt Ryan (Matt Bryant kick),0,17,2014_13_ARI_ATL
+2,14:07,Cardinals,Rashad Johnson 88 yard interception return (Chandler Catanzaro kick),7,17,2014_13_ARI_ATL
+2,2:42,Cardinals,Chandler Catanzaro 44 yard field goal ,10,17,2014_13_ARI_ATL
+2,0:00,Falcons,Matt Bryant 23 yard field goal ,10,20,2014_13_ARI_ATL
+3,6:13,Falcons,Matt Bryant 21 yard field goal ,10,23,2014_13_ARI_ATL
+4,12:35,Falcons,Matt Bryant 45 yard field goal ,10,26,2014_13_ARI_ATL
+4,2:30,Falcons,Matt Bryant 28 yard field goal ,10,29,2014_13_ARI_ATL
+4,1:05,Cardinals,Stepfan Taylor 3 yard pass from Drew Stanton (Stepfan Taylor run),18,29,2014_13_ARI_ATL
+1,11:14,Packers,Mason Crosby 32 yard field goal ,0,3,2014_13_NE_GB
+1,3:27,Packers,Mason Crosby 35 yard field goal ,0,6,2014_13_NE_GB
+1,0:08,Packers,Richard Rodgers 32 yard pass from Aaron Rodgers (Mason Crosby kick),0,13,2014_13_NE_GB
+2,12:59,Patriots,Brandon Bolden 6 yard rush (Stephen Gostkowski kick),7,13,2014_13_NE_GB
+2,5:54,Packers,Mason Crosby 33 yard field goal ,7,16,2014_13_NE_GB
+2,1:09,Patriots,Brandon LaFell 2 yard pass from Tom Brady (Stephen Gostkowski kick),14,16,2014_13_NE_GB
+2,0:14,Packers,Jordy Nelson 45 yard pass from Aaron Rodgers (Mason Crosby kick),14,23,2014_13_NE_GB
+4,13:51,Patriots,Brandon LaFell 15 yard pass from Tom Brady (Stephen Gostkowski kick),21,23,2014_13_NE_GB
+4,8:41,Packers,Mason Crosby 28 yard field goal ,21,26,2014_13_NE_GB
+1,8:57,Broncos,Demaryius Thomas 23 yard pass from Peyton Manning (Connor Barth kick),7,0,2014_13_DEN_KC
+1,1:58,Broncos,C.J. Anderson 15 yard pass from Peyton Manning (Connor Barth kick),14,0,2014_13_DEN_KC
+2,7:14,Broncos,Connor Barth 22 yard field goal ,17,0,2014_13_DEN_KC
+2,3:02,Chiefs,Anthony Fasano 20 yard pass from Alex Smith (Cairo Santos kick),17,7,2014_13_DEN_KC
+2,0:16,Broncos,Connor Barth 24 yard field goal ,20,7,2014_13_DEN_KC
+3,12:43,Chiefs,Cairo Santos 39 yard field goal ,20,10,2014_13_DEN_KC
+3,6:16,Broncos,Connor Barth 30 yard field goal ,23,10,2014_13_DEN_KC
+4,14:44,Broncos,Connor Barth 33 yard field goal ,26,10,2014_13_DEN_KC
+4,11:46,Chiefs,Jamaal Charles 12 yard pass from Alex Smith (pass failed),26,16,2014_13_DEN_KC
+4,7:33,Broncos,Connor Barth 37 yard field goal ,29,16,2014_13_DEN_KC
+1,7:45,Jets,Greg Salas 20 yard rush (Nick Folk kick),0,7,2014_13_MIA_NYJ
+2,12:01,Jets,Nick Folk 40 yard field goal ,0,10,2014_13_MIA_NYJ
+2,0:00,Dolphins,Caleb Sturgis 43 yard field goal ,3,10,2014_13_MIA_NYJ
+3,10:56,Dolphins,Caleb Sturgis 44 yard field goal ,6,10,2014_13_MIA_NYJ
+3,7:17,Jets,Nick Folk 45 yard field goal ,6,13,2014_13_MIA_NYJ
+4,10:24,Dolphins,Lamar Miller 4 yard rush (Caleb Sturgis kick),13,13,2014_13_MIA_NYJ
+4,1:57,Dolphins,Caleb Sturgis 26 yard field goal ,16,13,2014_13_MIA_NYJ
+2,10:50,Cowboys,DeMarco Murray 1 yard rush (Dan Bailey kick),7,0,2014_14_DAL_CHI
+2,6:13,Bears,Martellus Bennett 12 yard pass from Jay Cutler (Jay Feely kick),7,7,2014_14_DAL_CHI
+2,0:08,Cowboys,Cole Beasley 13 yard pass from Tony Romo (Dan Bailey kick),14,7,2014_14_DAL_CHI
+3,12:32,Cowboys,Cole Beasley 24 yard pass from Tony Romo (Dan Bailey kick),21,7,2014_14_DAL_CHI
+3,8:02,Cowboys,Gavin Escobar 6 yard pass from Tony Romo (Dan Bailey kick),28,7,2014_14_DAL_CHI
+3,2:09,Cowboys,Joseph Randle 17 yard rush (Dan Bailey kick),35,7,2014_14_DAL_CHI
+4,14:52,Bears,Alshon Jeffery 27 yard pass from Jay Cutler (Jay Feely kick failed),35,13,2014_14_DAL_CHI
+4,12:35,Cowboys,Dan Bailey 35 yard field goal ,38,13,2014_14_DAL_CHI
+4,7:17,Bears,Matt Forte 1 yard rush (Matt Forte run),38,21,2014_14_DAL_CHI
+4,6:09,Bears,Jay Cutler 10 yard rush (Jay Feely kick),38,28,2014_14_DAL_CHI
+4,3:41,Cowboys,Dan Bailey 27 yard field goal ,41,28,2014_14_DAL_CHI
+2,11:17,Steelers,Heath Miller 1 yard pass from Ben Roethlisberger (Shaun Suisham kick),7,0,2014_14_PIT_CIN
+2,9:06,Bengals,Jermaine Gresham 10 yard pass from Andy Dalton (Mike Nugent kick),7,7,2014_14_PIT_CIN
+2,2:57,Bengals,Andy Dalton 20 yard rush (Mike Nugent kick),7,14,2014_14_PIT_CIN
+2,0:11,Steelers,Shaun Suisham 22 yard field goal ,10,14,2014_14_PIT_CIN
+3,5:24,Steelers,Le'Veon Bell 10 yard pass from Ben Roethlisberger (Shaun Suisham kick),17,14,2014_14_PIT_CIN
+3,0:00,Bengals,A.J. Green 81 yard pass from Andy Dalton (Mike Nugent kick),17,21,2014_14_PIT_CIN
+4,13:32,Steelers,Shaun Suisham 44 yard field goal ,20,21,2014_14_PIT_CIN
+4,11:27,Steelers,Le'Veon Bell 13 yard rush (Heath Miller pass from Ben Roethlisberger),28,21,2014_14_PIT_CIN
+4,8:31,Steelers,Martavis Bryant 94 yard pass from Ben Roethlisberger (Shaun Suisham kick),35,21,2014_14_PIT_CIN
+4,5:09,Steelers,Le'Veon Bell 22 yard rush (Shaun Suisham kick),42,21,2014_14_PIT_CIN
+1,0:40,Browns,Craig Robertson defensive fumble recovery in end zone (Billy Cundiff kick),0,7,2014_14_IND_CLE
+2,5:57,Colts,Andrew Luck 11 yard rush (Adam Vinatieri kick),7,7,2014_14_IND_CLE
+2,1:14,Browns,Isaiah Crowell 9 yard rush (Billy Cundiff kick),7,14,2014_14_IND_CLE
+3,10:21,Browns,Justin Gilbert 23 yard interception return (Billy Cundiff kick),7,21,2014_14_IND_CLE
+3,7:16,Colts,Adam Vinatieri 51 yard field goal ,10,21,2014_14_IND_CLE
+3,4:01,Colts,T.Y. Hilton 42 yard pass from Andrew Luck (pass failed),16,21,2014_14_IND_CLE
+4,14:50,Colts,Adam Vinatieri 33 yard field goal ,19,21,2014_14_IND_CLE
+4,8:34,Browns,Billy Cundiff 39 yard field goal ,19,24,2014_14_IND_CLE
+4,0:32,Colts,T.Y. Hilton 1 yard pass from Andrew Luck (pass failed),25,24,2014_14_IND_CLE
+1,2:57,Lions,Calvin Johnson 6 yard pass from Matthew Stafford (Matt Prater kick),0,7,2014_14_TB_DET
+2,13:32,Buccaneers,Patrick Murray 54 yard field goal ,3,7,2014_14_TB_DET
+2,6:01,Lions,Joique Bell 1 yard rush (Matt Prater kick),3,14,2014_14_TB_DET
+2,3:01,Lions,Matt Prater 46 yard field goal ,3,17,2014_14_TB_DET
+2,0:05,Buccaneers,Mike Evans 5 yard pass from Josh McCown (Patrick Murray kick),10,17,2014_14_TB_DET
+3,11:14,Lions,Matt Prater 23 yard field goal ,10,20,2014_14_TB_DET
+3,0:15,Lions,Joseph Fauria 10 yard pass from Matthew Stafford (Matt Prater kick),10,27,2014_14_TB_DET
+4,12:52,Buccaneers,Mike Evans 26 yard pass from Josh McCown (Patrick Murray kick),17,27,2014_14_TB_DET
+4,5:01,Lions,Joique Bell 5 yard pass from Matthew Stafford (Matt Prater kick),17,34,2014_14_TB_DET
+1,3:39,Jaguars,Allen Hurns 4 yard pass from Blake Bortles (Josh Scobee kick),0,7,2014_14_HOU_JAX
+1,1:22,Texans,Randy Bullock 44 yard field goal ,3,7,2014_14_HOU_JAX
+2,11:45,Texans,Ryan Fitzpatrick 4 yard rush (Randy Bullock kick),10,7,2014_14_HOU_JAX
+2,5:53,Jaguars,Josh Scobee 33 yard field goal ,10,10,2014_14_HOU_JAX
+2,1:09,Jaguars,Josh Scobee 37 yard field goal ,10,13,2014_14_HOU_JAX
+3,3:23,Texans,Alfred Blue 1 yard rush (Randy Bullock kick),17,13,2014_14_HOU_JAX
+4,14:23,Texans,Arian Foster 1 yard rush (Randy Bullock kick),24,13,2014_14_HOU_JAX
+4,8:39,Texans,Randy Bullock 44 yard field goal ,27,13,2014_14_HOU_JAX
+1,9:28,Dolphins,Caleb Sturgis 46 yard field goal ,0,3,2014_14_BAL_MIA
+1,1:41,Dolphins,Brian Hartline 3 yard pass from Ryan Tannehill (Caleb Sturgis kick),0,10,2014_14_BAL_MIA
+2,0:02,Ravens,Steve Smith Sr. 1 yard pass from Joe Flacco (Justin Tucker kick),7,10,2014_14_BAL_MIA
+3,6:14,Ravens,Kamar Aiken 13 yard pass from Joe Flacco (Justin Tucker kick),14,10,2014_14_BAL_MIA
+4,12:41,Dolphins,Caleb Sturgis 34 yard field goal ,14,13,2014_14_BAL_MIA
+4,8:09,Ravens,Justin Forsett 2 yard rush (Justin Tucker kick),21,13,2014_14_BAL_MIA
+4,3:34,Ravens,Joe Flacco 1 yard rush (Justin Tucker kick),28,13,2014_14_BAL_MIA
+1,14:48,Vikings,Gerald Hodges 27 yard interception return (Blair Walsh kick),0,7,2014_14_NYJ_MIN
+1,10:12,Jets,"Safety, Sheldon Richardson sacked Teddy Bridgewater in end zone. ",2,7,2014_14_NYJ_MIN
+1,7:35,Jets,Percy Harvin 35 yard pass from Geno Smith (Nick Folk kick),9,7,2014_14_NYJ_MIN
+1,5:53,Vikings,Charles Johnson 56 yard pass from Teddy Bridgewater (Blair Walsh kick),9,14,2014_14_NYJ_MIN
+1,2:28,Jets,Nick Folk 36 yard field goal ,12,14,2014_14_NYJ_MIN
+2,13:32,Vikings,Jerome Felton offensive fumble recovery in end zone (Blair Walsh kick),12,21,2014_14_NYJ_MIN
+2,0:17,Jets,Nick Folk 33 yard field goal ,15,21,2014_14_NYJ_MIN
+3,12:24,Jets,Nick Folk 22 yard field goal ,18,21,2014_14_NYJ_MIN
+4,14:15,Jets,Nick Folk 24 yard field goal ,21,21,2014_14_NYJ_MIN
+4,5:28,Vikings,Blair Walsh 20 yard field goal ,21,24,2014_14_NYJ_MIN
+4,0:23,Jets,Nick Folk 44 yard field goal ,24,24,2014_14_NYJ_MIN
+OT,10:21,Vikings,Jarius Wright 87 yard pass from Teddy Bridgewater ,24,30,2014_14_NYJ_MIN
+1,11:42,Panthers,Kelvin Benjamin 9 yard pass from Cam Newton (Graham Gano kick),7,0,2014_14_CAR_NO
+1,9:57,Panthers,Graham Gano 37 yard field goal ,10,0,2014_14_CAR_NO
+1,6:41,Panthers,Cam Newton 2 yard rush (Graham Gano kick),17,0,2014_14_CAR_NO
+2,13:19,Saints,Shayne Graham 37 yard field goal ,17,3,2014_14_CAR_NO
+2,2:14,Panthers,Greg Olsen 16 yard pass from Cam Newton (Graham Gano kick),24,3,2014_14_CAR_NO
+3,13:59,Panthers,Jonathan Stewart 69 yard rush (Graham Gano kick),31,3,2014_14_CAR_NO
+3,5:13,Panthers,Fozzy Whittaker 26 yard pass from Cam Newton (Graham Gano kick),38,3,2014_14_CAR_NO
+4,14:10,Panthers,Graham Gano 41 yard field goal ,41,3,2014_14_CAR_NO
+4,5:29,Saints,Ben Watson 7 yard pass from Drew Brees (Shayne Graham kick),41,10,2014_14_CAR_NO
+1,7:59,Giants,Josh Brown 20 yard field goal ,3,0,2014_14_NYG_TEN
+1,4:41,Giants,Odell Beckham Jr. 15 yard pass from Eli Manning (Josh Brown kick),10,0,2014_14_NYG_TEN
+1,1:07,Giants,Markus Kuhn 26 yard defensive fumble return (Josh Brown kick),17,0,2014_14_NYG_TEN
+2,1:38,Giants,Josh Brown 19 yard field goal ,20,0,2014_14_NYG_TEN
+2,0:07,Giants,Josh Brown 36 yard field goal ,23,0,2014_14_NYG_TEN
+3,12:06,Giants,Andre Williams 50 yard rush (Josh Brown kick),30,0,2014_14_NYG_TEN
+3,8:36,Titans,Marqueston Huff 23 yard interception return (Ryan Succop kick),30,7,2014_14_NYG_TEN
+3,0:33,Giants,Josh Brown 52 yard field goal ,33,7,2014_14_NYG_TEN
+4,11:22,Giants,Josh Brown 42 yard field goal ,36,7,2014_14_NYG_TEN
+2,12:19,Rams,Jared Cook 35 yard pass from Shaun Hill (Greg Zuerlein kick failed),6,0,2014_14_LAR_WAS
+3,7:39,Rams,Greg Zuerlein 34 yard field goal ,9,0,2014_14_LAR_WAS
+3,3:52,Rams,Jared Cook 1 yard pass from Shaun Hill (Cory Harkey pass from Johnny Hekker),17,0,2014_14_LAR_WAS
+3,1:36,Rams,Tavon Austin 78 yard punt return (Greg Zuerlein kick),24,0,2014_14_LAR_WAS
+1,10:55,Cardinals,Chandler Catanzaro 44 yard field goal ,0,3,2014_14_KC_ARI
+1,9:35,Chiefs,Jamaal Charles 63 yard rush (Cairo Santos kick),7,3,2014_14_KC_ARI
+2,7:43,Cardinals,Chandler Catanzaro 33 yard field goal ,7,6,2014_14_KC_ARI
+2,1:12,Chiefs,Jamaal Charles 18 yard pass from Alex Smith (Cairo Santos kick),14,6,2014_14_KC_ARI
+3,9:02,Cardinals,Chandler Catanzaro 39 yard field goal ,14,9,2014_14_KC_ARI
+3,3:26,Cardinals,Jaron Brown 26 yard pass from Drew Stanton (John Carlson pass from Drew Stanton),14,17,2014_14_KC_ARI
+1,2:43,Broncos,C.J. Anderson 6 yard rush (Connor Barth kick),0,7,2014_14_BUF_DEN
+2,11:51,Bills,Dan Carpenter 44 yard field goal ,3,7,2014_14_BUF_DEN
+2,3:26,Broncos,C.J. Anderson 1 yard rush (Connor Barth kick),3,14,2014_14_BUF_DEN
+3,12:01,Broncos,C.J. Anderson 3 yard rush (Connor Barth kick),3,21,2014_14_BUF_DEN
+3,1:07,Broncos,Connor Barth 50 yard field goal ,3,24,2014_14_BUF_DEN
+4,10:46,Bills,Chris Hogan 14 yard pass from Kyle Orton (Dan Carpenter kick),10,24,2014_14_BUF_DEN
+4,0:55,Bills,Kyle Orton 1 yard rush (Dan Carpenter kick),17,24,2014_14_BUF_DEN
+1,11:46,Raiders,Sebastian Janikowski 57 yard field goal ,0,3,2014_14_SF_LVR
+1,1:54,49ers,Bruce Miller 8 yard pass from Colin Kaepernick (Phil Dawson kick),7,3,2014_14_SF_LVR
+2,10:45,Raiders,Donald Penn 3 yard pass from Derek Carr (Sebastian Janikowski kick),7,10,2014_14_SF_LVR
+2,0:01,49ers,Phil Dawson 52 yard field goal ,10,10,2014_14_SF_LVR
+3,8:34,49ers,Phil Dawson 20 yard field goal ,13,10,2014_14_SF_LVR
+3,4:09,Raiders,Marcel Reece 9 yard pass from Derek Carr (Sebastian Janikowski kick),13,17,2014_14_SF_LVR
+4,10:39,Raiders,Mychal Rivera 5 yard pass from Derek Carr (Sebastian Janikowski kick),13,24,2014_14_SF_LVR
+1,3:37,Eagles,Jeremy Maclin 1 yard pass from Mark Sanchez (Cody Parkey kick),0,7,2014_14_SEA_PHI
+2,14:17,Seahawks,Russell Wilson 26 yard rush (Stephen Hauschka kick),7,7,2014_14_SEA_PHI
+2,0:02,Seahawks,Stephen Hauschka 44 yard field goal ,10,7,2014_14_SEA_PHI
+3,14:03,Seahawks,Marshawn Lynch 15 yard pass from Russell Wilson (Stephen Hauschka kick),17,7,2014_14_SEA_PHI
+3,12:09,Eagles,Zach Ertz 35 yard pass from Mark Sanchez (Cody Parkey kick),17,14,2014_14_SEA_PHI
+3,9:01,Seahawks,Doug Baldwin 23 yard pass from Russell Wilson (Stephen Hauschka kick),24,14,2014_14_SEA_PHI
+1,3:15,Patriots,Stephen Gostkowski 22 yard field goal ,3,0,2014_14_NE_LAC
+2,13:29,Chargers,Malcom Floyd 15 yard pass from Philip Rivers (Nick Novak kick),3,7,2014_14_NE_LAC
+2,11:06,Chargers,Darrell Stuckey 53 yard defensive fumble return (Nick Novak kick),3,14,2014_14_NE_LAC
+2,7:38,Patriots,Stephen Gostkowski 22 yard field goal ,6,14,2014_14_NE_LAC
+2,3:28,Patriots,Rob Gronkowski 14 yard pass from Tom Brady (Stephen Gostkowski kick),13,14,2014_14_NE_LAC
+4,10:34,Patriots,Stephen Gostkowski 38 yard field goal ,16,14,2014_14_NE_LAC
+4,8:41,Patriots,Julian Edelman 69 yard pass from Tom Brady (Stephen Gostkowski kick),23,14,2014_14_NE_LAC
+1,11:13,Packers,James Starks 3 yard rush (Mason Crosby kick),0,7,2014_14_ATL_GB
+1,7:00,Falcons,Steven Jackson 4 yard rush (Matt Bryant kick),7,7,2014_14_ATL_GB
+2,14:55,Packers,Eddie Lacy 1 yard rush (Mason Crosby kick),7,14,2014_14_ATL_GB
+2,7:17,Packers,Mason Crosby 38 yard field goal ,7,17,2014_14_ATL_GB
+2,4:20,Packers,Eddie Lacy 1 yard pass from Aaron Rodgers (Mason Crosby kick),7,24,2014_14_ATL_GB
+2,0:24,Packers,Jordy Nelson 10 yard pass from Aaron Rodgers (Mason Crosby kick),7,31,2014_14_ATL_GB
+3,12:35,Falcons,Eric Weems 5 yard pass from Matt Ryan (Matt Bryant kick),14,31,2014_14_ATL_GB
+3,8:20,Falcons,Matt Bryant 50 yard field goal ,17,31,2014_14_ATL_GB
+3,3:57,Packers,Mason Crosby 33 yard field goal ,17,34,2014_14_ATL_GB
+4,12:33,Falcons,Julio Jones 22 yard pass from Matt Ryan (Matt Bryant kick),24,34,2014_14_ATL_GB
+4,10:38,Packers,Jordy Nelson 60 yard pass from Aaron Rodgers (Mason Crosby kick failed),24,40,2014_14_ATL_GB
+4,6:15,Falcons,Roddy White 1 yard pass from Matt Ryan (run failed),30,40,2014_14_ATL_GB
+4,4:33,Packers,Mason Crosby 53 yard field goal ,30,43,2014_14_ATL_GB
+4,2:11,Falcons,Harry Douglas 2 yard pass from Matt Ryan (Matt Bryant kick),37,43,2014_14_ATL_GB
+1,6:57,Rams,Greg Zuerlein 24 yard field goal ,0,3,2014_15_ARI_LAR
+2,13:36,Cardinals,Chandler Catanzaro 23 yard field goal ,3,3,2014_15_ARI_LAR
+2,8:25,Cardinals,Chandler Catanzaro 44 yard field goal ,6,3,2014_15_ARI_LAR
+3,7:23,Cardinals,Chandler Catanzaro 51 yard field goal ,9,3,2014_15_ARI_LAR
+4,10:48,Cardinals,Chandler Catanzaro 46 yard field goal ,12,3,2014_15_ARI_LAR
+4,6:07,Rams,Greg Zuerlein 19 yard field goal ,12,6,2014_15_ARI_LAR
+1,9:09,Steelers,Shaun Suisham 38 yard field goal ,3,0,2014_15_PIT_ATL
+1,0:02,Steelers,Shaun Suisham 38 yard field goal ,6,0,2014_15_PIT_ATL
+2,14:46,Steelers,William Gay 52 yard interception return (Shaun Suisham kick),13,0,2014_15_PIT_ATL
+2,4:19,Falcons,Devin Hester 17 yard pass from Matt Ryan (Matt Bryant kick),13,7,2014_15_PIT_ATL
+2,0:27,Steelers,Le'Veon Bell 1 yard rush (Shaun Suisham kick),20,7,2014_15_PIT_ATL
+3,11:00,Falcons,Matt Bryant 28 yard field goal ,20,10,2014_15_PIT_ATL
+3,2:40,Falcons,Matt Bryant 22 yard field goal ,20,13,2014_15_PIT_ATL
+4,14:11,Steelers,Le'Veon Bell 13 yard rush (Shaun Suisham kick),27,13,2014_15_PIT_ATL
+4,10:21,Falcons,Roddy White 4 yard pass from Matt Ryan (Matt Bryant kick),27,20,2014_15_PIT_ATL
+1,11:52,Ravens,Kamar Aiken 11 yard blocked punt return (Justin Tucker kick),0,7,2014_15_JAX_BAL
+1,9:33,Jaguars,Josh Scobee 53 yard field goal ,3,7,2014_15_JAX_BAL
+1,1:18,Jaguars,Josh Scobee 45 yard field goal ,6,7,2014_15_JAX_BAL
+2,11:33,Jaguars,Josh Scobee 53 yard field goal ,9,7,2014_15_JAX_BAL
+2,3:45,Ravens,Justin Tucker 22 yard field goal ,9,10,2014_15_JAX_BAL
+2,0:04,Jaguars,Josh Scobee 45 yard field goal ,12,10,2014_15_JAX_BAL
+3,8:34,Ravens,Owen Daniels 3 yard pass from Joe Flacco (Justin Tucker kick),12,17,2014_15_JAX_BAL
+4,1:11,Ravens,Justin Tucker 33 yard field goal ,12,20,2014_15_JAX_BAL
+1,4:27,Packers,Mason Crosby 45 yard field goal ,3,0,2014_15_GB_BUF
+1,2:09,Bills,Marcus Thigpen 75 yard punt return (Dan Carpenter kick),3,7,2014_15_GB_BUF
+2,14:14,Packers,Eddie Lacy 1 yard rush (Mason Crosby kick),10,7,2014_15_GB_BUF
+2,8:04,Bills,Dan Carpenter 27 yard field goal ,10,10,2014_15_GB_BUF
+3,9:21,Bills,Dan Carpenter 51 yard field goal ,10,13,2014_15_GB_BUF
+3,4:18,Bills,Dan Carpenter 35 yard field goal ,10,16,2014_15_GB_BUF
+4,9:23,Bills,Dan Carpenter 48 yard field goal ,10,19,2014_15_GB_BUF
+4,4:51,Packers,Mason Crosby 34 yard field goal ,13,19,2014_15_GB_BUF
+4,1:51,Bills,"Safety, Eddie Lacy tackled in the end zone by Nickell Robey. ",13,21,2014_15_GB_BUF
+1,8:19,Panthers,Graham Gano 29 yard field goal ,0,3,2014_15_TB_CAR
+1,5:54,Buccaneers,Mike Evans 8 yard pass from Josh McCown (Patrick Murray kick),7,3,2014_15_TB_CAR
+1,1:14,Panthers,Graham Gano 49 yard field goal ,7,6,2014_15_TB_CAR
+2,1:10,Panthers,Graham Gano 38 yard field goal ,7,9,2014_15_TB_CAR
+2,0:02,Buccaneers,Patrick Murray 48 yard field goal ,10,9,2014_15_TB_CAR
+3,13:53,Panthers,Jerricho Cotchery 2 yard pass from Derek Anderson (Graham Gano kick),10,16,2014_15_TB_CAR
+4,8:31,Panthers,Graham Gano 45 yard field goal ,10,19,2014_15_TB_CAR
+4,3:11,Buccaneers,Josh McCown 16 yard rush (Patrick Murray kick),17,19,2014_15_TB_CAR
+1,7:53,Bengals,Jeremy Hill 2 yard rush (Mike Nugent kick),7,0,2014_15_CIN_CLE
+1,1:57,Bengals,Mike Nugent 44 yard field goal ,10,0,2014_15_CIN_CLE
+2,13:11,Bengals,Jeremy Hill 16 yard rush (Mike Nugent kick),17,0,2014_15_CIN_CLE
+2,10:20,Bengals,Mike Nugent 44 yard field goal ,20,0,2014_15_CIN_CLE
+3,2:35,Bengals,Mike Nugent 34 yard field goal ,23,0,2014_15_CIN_CLE
+4,0:23,Bengals,Rex Burkhead 10 yard rush (Mike Nugent kick),30,0,2014_15_CIN_CLE
+1,5:56,Texans,Kendrick Lewis 27 yard interception return (Randy Bullock kick),7,0,2014_15_HOU_IND
+2,14:53,Colts,Hakeem Nicks 26 yard pass from Andrew Luck (Adam Vinatieri kick),7,7,2014_15_HOU_IND
+2,6:21,Colts,Dwayne Allen 3 yard pass from Andrew Luck (Adam Vinatieri kick),7,14,2014_15_HOU_IND
+4,13:40,Texans,Randy Bullock 53 yard field goal ,10,14,2014_15_HOU_IND
+4,2:11,Colts,Adam Vinatieri 29 yard field goal ,10,17,2014_15_HOU_IND
+1,2:38,Chiefs,De'Anthony Thomas 81 yard punt return (Cairo Santos kick),0,7,2014_15_LVR_KC
+2,8:01,Chiefs,Cairo Santos 41 yard field goal ,0,10,2014_15_LVR_KC
+2,0:00,Raiders,Sebastian Janikowski 53 yard field goal ,3,10,2014_15_LVR_KC
+3,11:44,Raiders,Sebastian Janikowski 33 yard field goal ,6,10,2014_15_LVR_KC
+3,6:46,Chiefs,Knile Davis 3 yard rush (Cairo Santos kick),6,17,2014_15_LVR_KC
+3,5:50,Chiefs,Travis Kelce 20 yard pass from Alex Smith (Cairo Santos kick),6,24,2014_15_LVR_KC
+3,2:04,Chiefs,Knile Davis 70 yard pass from Alex Smith (Cairo Santos kick),6,31,2014_15_LVR_KC
+4,0:34,Raiders,James Jones 1 yard pass from Derek Carr (Sebastian Janikowski kick),13,31,2014_15_LVR_KC
+1,12:36,Patriots,Kyle Arrington 62 yard blocked field goal return (Stephen Gostkowski kick),0,7,2014_15_MIA_NE
+1,0:59,Dolphins,Caleb Sturgis 24 yard field goal ,3,7,2014_15_MIA_NE
+2,7:59,Patriots,Shane Vereen 3 yard rush (Stephen Gostkowski kick),3,14,2014_15_MIA_NE
+2,4:26,Dolphins,Caleb Sturgis 53 yard field goal ,6,14,2014_15_MIA_NE
+2,0:05,Dolphins,Mike Wallace 32 yard pass from Ryan Tannehill (Caleb Sturgis kick),13,14,2014_15_MIA_NE
+3,11:04,Patriots,LeGarrette Blount 3 yard rush (Stephen Gostkowski kick),13,21,2014_15_MIA_NE
+3,4:43,Patriots,Stephen Gostkowski 35 yard field goal ,13,24,2014_15_MIA_NE
+3,4:30,Patriots,Rob Gronkowski 27 yard pass from Tom Brady (Stephen Gostkowski kick),13,31,2014_15_MIA_NE
+3,1:29,Patriots,Julian Edelman 6 yard pass from Tom Brady (Stephen Gostkowski kick),13,38,2014_15_MIA_NE
+4,6:20,Patriots,Stephen Gostkowski 36 yard field goal ,13,41,2014_15_MIA_NE
+1,6:47,Redskins,Kai Forbath 35 yard field goal ,3,0,2014_15_WAS_NYG
+1,1:40,Giants,Odell Beckham Jr. 10 yard pass from Eli Manning (Josh Brown kick),3,7,2014_15_WAS_NYG
+2,8:19,Redskins,Chris Thompson 9 yard pass from Robert Griffin III (Kai Forbath kick),10,7,2014_15_WAS_NYG
+3,13:18,Giants,Josh Brown 32 yard field goal ,10,10,2014_15_WAS_NYG
+3,3:27,Redskins,Kai Forbath 38 yard field goal ,13,10,2014_15_WAS_NYG
+3,1:22,Giants,Odell Beckham Jr. 35 yard pass from Eli Manning (Josh Brown kick),13,17,2014_15_WAS_NYG
+4,4:41,Giants,Odell Beckham Jr. 6 yard pass from Eli Manning (Josh Brown kick),13,24,2014_15_WAS_NYG
+1,6:55,Broncos,Connor Barth 19 yard field goal ,3,0,2014_15_DEN_LAC
+2,14:21,Broncos,Connor Barth 26 yard field goal ,6,0,2014_15_DEN_LAC
+2,1:50,Broncos,Connor Barth 19 yard field goal ,9,0,2014_15_DEN_LAC
+2,0:10,Chargers,Nick Novak 30 yard field goal ,9,3,2014_15_DEN_LAC
+3,0:31,Broncos,Demaryius Thomas 28 yard pass from Peyton Manning (Connor Barth kick),16,3,2014_15_DEN_LAC
+4,10:13,Chargers,Antonio Gates 5 yard pass from Philip Rivers (Nick Novak kick),16,10,2014_15_DEN_LAC
+4,4:53,Broncos,Connor Barth 49 yard field goal ,19,10,2014_15_DEN_LAC
+4,3:56,Broncos,Connor Barth 44 yard field goal ,22,10,2014_15_DEN_LAC
+1,3:16,Titans,Ryan Succop 40 yard field goal ,0,3,2014_15_NYJ_TEN
+2,12:09,Titans,"Safety, Intentional Grounding penalty in the end zone on Geno Smith. ",0,5,2014_15_NYJ_TEN
+2,2:08,Jets,Nick Folk 51 yard field goal ,3,5,2014_15_NYJ_TEN
+3,6:03,Titans,Ryan Succop 33 yard field goal ,3,8,2014_15_NYJ_TEN
+3,4:34,Jets,John Conner 9 yard pass from Geno Smith (Nick Folk kick),10,8,2014_15_NYJ_TEN
+3,2:02,Titans,Ryan Succop 51 yard field goal ,10,11,2014_15_NYJ_TEN
+4,3:09,Jets,Chris Ivory 1 yard rush (pass failed),16,11,2014_15_NYJ_TEN
+1,0:16,Vikings,Matt Asiata 2 yard rush (Blair Walsh kick),7,0,2014_15_MIN_DET
+2,10:05,Vikings,Greg Jennings 8 yard pass from Teddy Bridgewater (Blair Walsh kick),14,0,2014_15_MIN_DET
+2,3:42,Lions,Golden Tate 7 yard pass from Matthew Stafford (Matt Prater kick),14,7,2014_15_MIN_DET
+2,0:00,Lions,Matt Prater 29 yard field goal ,14,10,2014_15_MIN_DET
+3,3:45,Lions,Matt Prater 30 yard field goal ,14,13,2014_15_MIN_DET
+4,3:38,Lions,Matt Prater 33 yard field goal ,14,16,2014_15_MIN_DET
+1,3:40,Seahawks,Stephen Hauschka 38 yard field goal ,0,3,2014_15_SF_SEA
+2,13:22,49ers,Frank Gore 10 yard rush (Phil Dawson kick),7,3,2014_15_SF_SEA
+3,2:19,Seahawks,Marshawn Lynch 4 yard rush (Stephen Hauschka kick),7,10,2014_15_SF_SEA
+4,13:20,Seahawks,Paul Richardson 10 yard pass from Russell Wilson (Stephen Hauschka kick),7,17,2014_15_SF_SEA
+1,12:46,Cowboys,DeMarco Murray 1 yard rush (Dan Bailey kick),7,0,2014_15_DAL_PHI
+1,3:04,Cowboys,Dez Bryant 4 yard pass from Tony Romo (Dan Bailey kick),14,0,2014_15_DAL_PHI
+2,11:56,Cowboys,Dez Bryant 26 yard pass from Tony Romo (Dan Bailey kick),21,0,2014_15_DAL_PHI
+2,8:32,Eagles,Chris Polk 5 yard rush (Cody Parkey kick),21,7,2014_15_DAL_PHI
+2,1:48,Eagles,Cody Parkey 47 yard field goal ,21,10,2014_15_DAL_PHI
+3,8:48,Eagles,Chris Polk 1 yard rush (Cody Parkey kick),21,17,2014_15_DAL_PHI
+3,5:42,Eagles,Darren Sproles 1 yard rush (Cody Parkey kick),21,24,2014_15_DAL_PHI
+3,0:39,Cowboys,DeMarco Murray 2 yard rush (Dan Bailey kick),28,24,2014_15_DAL_PHI
+4,12:48,Cowboys,Dez Bryant 25 yard pass from Tony Romo (Dan Bailey kick),35,24,2014_15_DAL_PHI
+4,10:45,Eagles,Cody Parkey 43 yard field goal ,35,27,2014_15_DAL_PHI
+4,4:37,Cowboys,Dan Bailey 49 yard field goal ,38,27,2014_15_DAL_PHI
+2,14:52,Saints,Josh Hill 8 yard pass from Drew Brees (Shayne Graham kick),7,0,2014_15_NO_CHI
+2,0:32,Saints,Marques Colston 9 yard pass from Drew Brees (Shayne Graham kick),14,0,2014_15_NO_CHI
+3,8:35,Saints,Josh Hill 7 yard pass from Drew Brees (Shayne Graham kick),21,0,2014_15_NO_CHI
+3,0:16,Saints,Shayne Graham 25 yard field goal ,24,0,2014_15_NO_CHI
+4,12:47,Bears,Marquess Wilson 1 yard pass from Jay Cutler (Martellus Bennett pass from Jay Cutler),24,8,2014_15_NO_CHI
+4,1:47,Saints,Mark Ingram 15 yard rush (Shayne Graham kick),31,8,2014_15_NO_CHI
+4,0:30,Bears,Alshon Jeffery 7 yard pass from Jay Cutler (Jay Feely kick),31,15,2014_15_NO_CHI
+1,7:23,Titans,Leon Washington 8 yard pass from Charlie Whitehurst (Ryan Succop kick),7,0,2014_16_TEN_JAX
+2,3:46,Titans,Ryan Succop 50 yard field goal ,10,0,2014_16_TEN_JAX
+2,0:31,Jaguars,Marcedes Lewis 4 yard pass from Blake Bortles (Josh Scobee kick),10,7,2014_16_TEN_JAX
+3,9:27,Jaguars,Toby Gerhart 1 yard rush (Josh Scobee kick),10,14,2014_16_TEN_JAX
+4,9:13,Jaguars,Jordan Todman 62 yard rush (Josh Scobee kick),10,21,2014_16_TEN_JAX
+4,6:06,Titans,Ryan Succop 23 yard field goal ,13,21,2014_16_TEN_JAX
+1,6:04,Redskins,Kai Forbath 25 yard field goal ,0,3,2014_16_PHI_WAS
+1,1:49,Eagles,LeSean McCoy 11 yard rush (Cody Parkey kick),7,3,2014_16_PHI_WAS
+1,0:19,Redskins,Alfred Morris 28 yard rush (Kai Forbath kick),7,10,2014_16_PHI_WAS
+2,3:39,Eagles,Riley Cooper 3 yard pass from Mark Sanchez (Cody Parkey kick),14,10,2014_16_PHI_WAS
+3,6:46,Redskins,Darrel Young 1 yard rush (Kai Forbath kick),14,17,2014_16_PHI_WAS
+3,0:26,Redskins,Darrel Young 1 yard rush (Kai Forbath kick),14,24,2014_16_PHI_WAS
+4,10:27,Eagles,Riley Cooper 16 yard pass from Mark Sanchez (Cody Parkey kick),21,24,2014_16_PHI_WAS
+4,6:17,Eagles,Cody Parkey 22 yard field goal ,24,24,2014_16_PHI_WAS
+4,0:05,Redskins,Kai Forbath 26 yard field goal ,24,27,2014_16_PHI_WAS
+1,13:12,49ers,Frank Gore 52 yard rush (Phil Dawson kick),0,7,2014_16_LAC_SF
+2,13:36,49ers,Bruce Ellington 8 yard pass from Colin Kaepernick (Phil Dawson kick),0,14,2014_16_LAC_SF
+2,10:20,49ers,Antoine Bethea 49 yard interception return (Phil Dawson kick),0,21,2014_16_LAC_SF
+2,5:09,Chargers,Eddie Royal 15 yard pass from Philip Rivers (Nick Novak kick),7,21,2014_16_LAC_SF
+2,0:06,49ers,Bruce Ellington 1 yard rush (Phil Dawson kick),7,28,2014_16_LAC_SF
+3,5:49,Chargers,Antonio Gates 1 yard pass from Philip Rivers (Nick Novak kick),14,28,2014_16_LAC_SF
+3,3:26,Chargers,Corey Liuget defensive fumble recovery in end zone (Nick Novak kick),21,28,2014_16_LAC_SF
+3,2:26,49ers,Colin Kaepernick 90 yard rush (Phil Dawson kick),21,35,2014_16_LAC_SF
+4,5:15,Chargers,Antonio Gates 21 yard pass from Philip Rivers (Nick Novak kick),28,35,2014_16_LAC_SF
+4,0:29,Chargers,Malcom Floyd 11 yard pass from Philip Rivers (Nick Novak kick),35,35,2014_16_LAC_SF
+OT,10:06,Chargers,Nick Novak 40 yard field goal ,38,35,2014_16_LAC_SF
+1,2:47,Panthers,Graham Gano 23 yard field goal ,0,3,2014_16_CLE_CAR
+2,13:25,Browns,Garrett Hartley 43 yard field goal ,3,3,2014_16_CLE_CAR
+2,1:55,Panthers,Cam Newton 2 yard rush (Graham Gano kick),3,10,2014_16_CLE_CAR
+3,3:14,Browns,Garrett Hartley 31 yard field goal ,6,10,2014_16_CLE_CAR
+4,9:59,Browns,Jordan Cameron 81 yard pass from Brian Hoyer (Garrett Hartley kick),13,10,2014_16_CLE_CAR
+4,7:07,Panthers,Jonathan Stewart 9 yard pass from Cam Newton (Graham Gano kick),13,17,2014_16_CLE_CAR
+1,5:15,Lions,Reggie Bush 13 yard rush (Matt Prater kick),7,0,2014_16_DET_CHI
+2,0:30,Bears,Matt Forte 11 yard pass from Jimmy Clausen (Jay Feely kick),7,7,2014_16_DET_CHI
+3,10:24,Lions,Matt Prater 39 yard field goal ,10,7,2014_16_DET_CHI
+3,2:45,Bears,Alshon Jeffery 20 yard pass from Jimmy Clausen (Jay Feely kick),10,14,2014_16_DET_CHI
+4,7:15,Lions,Joique Bell 17 yard rush (Matt Prater kick),17,14,2014_16_DET_CHI
+4,2:35,Lions,Matt Prater 30 yard field goal ,20,14,2014_16_DET_CHI
+1,10:33,Texans,Randy Bullock 35 yard field goal ,0,3,2014_16_BAL_HOU
+2,14:57,Texans,Randy Bullock 25 yard field goal ,0,6,2014_16_BAL_HOU
+2,3:54,Texans,Randy Bullock 30 yard field goal ,0,9,2014_16_BAL_HOU
+2,1:53,Texans,C.J. Fiedorowicz 5 yard pass from Arian Foster (Randy Bullock kick),0,16,2014_16_BAL_HOU
+3,11:10,Ravens,Torrey Smith 8 yard pass from Joe Flacco (Justin Tucker kick),7,16,2014_16_BAL_HOU
+3,8:04,Texans,Randy Bullock 20 yard field goal ,7,19,2014_16_BAL_HOU
+4,14:50,Texans,Randy Bullock 39 yard field goal ,7,22,2014_16_BAL_HOU
+4,9:55,Texans,Randy Bullock 33 yard field goal ,7,25,2014_16_BAL_HOU
+4,5:56,Ravens,Torrey Smith 20 yard pass from Joe Flacco ,13,25,2014_16_BAL_HOU
+1,4:23,Vikings,Matt Asiata 1 yard rush (Blair Walsh kick),7,0,2014_16_MIN_MIA
+2,11:34,Vikings,Greg Jennings 21 yard pass from Teddy Bridgewater (Blair Walsh kick),14,0,2014_16_MIN_MIA
+2,4:53,Dolphins,Dion Sims 14 yard pass from Ryan Tannehill (Caleb Sturgis kick),14,7,2014_16_MIN_MIA
+2,0:02,Vikings,Blair Walsh 18 yard field goal ,17,7,2014_16_MIN_MIA
+3,8:29,Dolphins,Mike Wallace 16 yard pass from Ryan Tannehill (Caleb Sturgis kick),17,14,2014_16_MIN_MIA
+4,14:57,Dolphins,Lamar Miller 1 yard rush (Caleb Sturgis kick),17,21,2014_16_MIN_MIA
+4,9:52,Vikings,Blair Walsh 33 yard field goal ,20,21,2014_16_MIN_MIA
+4,6:39,Dolphins,Mike Wallace 7 yard pass from Ryan Tannehill (Caleb Sturgis kick),20,28,2014_16_MIN_MIA
+4,4:46,Vikings,Jarius Wright 8 yard pass from Teddy Bridgewater (Matt Asiata run),28,28,2014_16_MIN_MIA
+4,4:35,Vikings,Matt Asiata 5 yard rush (Blair Walsh kick),35,28,2014_16_MIN_MIA
+4,1:11,Dolphins,Damien Williams 3 yard pass from Ryan Tannehill (Caleb Sturgis kick),35,35,2014_16_MIN_MIA
+4,0:41,Dolphins,"Safety, Punt blocked by Terrence Fede out of bounds in the end zone. ",35,37,2014_16_MIN_MIA
+1,14:40,Saints,Mark Ingram 1 yard rush (Shayne Graham kick),0,7,2014_16_ATL_NO
+1,11:15,Falcons,Matt Bryant 44 yard field goal ,3,7,2014_16_ATL_NO
+2,11:48,Falcons,Matt Bryant 50 yard field goal ,6,7,2014_16_ATL_NO
+2,0:03,Falcons,Eric Weems 3 yard pass from Matt Ryan (Matt Bryant kick),13,7,2014_16_ATL_NO
+3,5:42,Falcons,Devonta Freeman 31 yard rush (Matt Bryant kick),20,7,2014_16_ATL_NO
+4,5:48,Saints,Jimmy Graham 4 yard pass from Drew Brees (Shayne Graham kick),20,14,2014_16_ATL_NO
+4,1:56,Falcons,Matt Bryant 32 yard field goal ,23,14,2014_16_ATL_NO
+4,0:00,Falcons,Osi Umenyiora 86 yard defensive fumble return (Matt Bryant kick),30,14,2014_16_ATL_NO
+2,12:10,Patriots,Rob Gronkowski 3 yard pass from Tom Brady (Stephen Gostkowski kick),7,0,2014_16_NE_NYJ
+2,5:59,Jets,Jeff Cumberland 20 yard pass from Geno Smith (Nick Folk kick),7,7,2014_16_NE_NYJ
+2,0:52,Jets,Nick Folk 26 yard field goal ,7,10,2014_16_NE_NYJ
+3,6:39,Jets,Nick Folk 23 yard field goal ,7,13,2014_16_NE_NYJ
+3,1:55,Patriots,Stephen Gostkowski 24 yard field goal ,10,13,2014_16_NE_NYJ
+4,13:51,Patriots,Jonas Gray 1 yard rush (Stephen Gostkowski kick),17,13,2014_16_NE_NYJ
+4,7:53,Jets,Nick Folk 37 yard field goal ,17,16,2014_16_NE_NYJ
+1,9:15,Steelers,Shaun Suisham 23 yard field goal ,0,3,2014_16_KC_PIT
+1,2:06,Chiefs,Cairo Santos 35 yard field goal ,3,3,2014_16_KC_PIT
+2,9:25,Chiefs,Cairo Santos 25 yard field goal ,6,3,2014_16_KC_PIT
+2,4:18,Steelers,Le'Veon Bell 1 yard rush (Shaun Suisham kick),6,10,2014_16_KC_PIT
+3,0:34,Steelers,Antonio Brown 3 yard pass from Ben Roethlisberger (Shaun Suisham kick),6,17,2014_16_KC_PIT
+4,10:18,Chiefs,Cairo Santos 43 yard field goal ,9,17,2014_16_KC_PIT
+4,4:04,Steelers,Shaun Suisham 23 yard field goal ,9,20,2014_16_KC_PIT
+4,1:37,Chiefs,Cairo Santos 23 yard field goal ,12,20,2014_16_KC_PIT
+1,0:49,Packers,Eddie Lacy 44 yard rush (Mason Crosby kick),7,0,2014_16_GB_TB
+2,4:55,Packers,Mason Crosby 42 yard field goal ,10,0,2014_16_GB_TB
+2,0:00,Buccaneers,Patrick Murray 43 yard field goal ,10,3,2014_16_GB_TB
+4,10:19,Packers,Mason Crosby 25 yard field goal ,13,3,2014_16_GB_TB
+4,2:45,Packers,Jordy Nelson 1 yard pass from Aaron Rodgers (Mason Crosby kick),20,3,2014_16_GB_TB
+1,10:41,Giants,Josh Brown 29 yard field goal ,3,0,2014_16_NYG_LAR
+1,8:24,Giants,Odell Beckham Jr. 9 yard pass from Eli Manning (Josh Brown kick),10,0,2014_16_NYG_LAR
+1,4:52,Rams,Greg Zuerlein 51 yard field goal ,10,3,2014_16_NYG_LAR
+2,12:39,Giants,Josh Brown 37 yard field goal ,13,3,2014_16_NYG_LAR
+2,4:49,Giants,Orleans Darkwa 12 yard rush (Josh Brown kick),20,3,2014_16_NYG_LAR
+2,2:18,Rams,Tre Mason 10 yard rush (Greg Zuerlein kick),20,10,2014_16_NYG_LAR
+2,0:00,Rams,Greg Zuerlein 20 yard field goal ,20,13,2014_16_NYG_LAR
+3,7:29,Giants,Rueben Randle 7 yard pass from Eli Manning (Josh Brown kick),27,13,2014_16_NYG_LAR
+3,1:44,Rams,Lance Kendricks 23 yard pass from Shaun Hill (Greg Zuerlein kick),27,20,2014_16_NYG_LAR
+3,0:45,Giants,Odell Beckham Jr. 80 yard pass from Eli Manning (Josh Brown kick),34,20,2014_16_NYG_LAR
+4,8:29,Giants,Josh Brown 52 yard field goal ,37,20,2014_16_NYG_LAR
+4,3:56,Rams,Chris Givens 47 yard pass from Shaun Hill (Greg Zuerlein kick),37,27,2014_16_NYG_LAR
+1,6:36,Cowboys,Terrance Williams 9 yard pass from Tony Romo (Dan Bailey kick),0,7,2014_16_IND_DAL
+1,4:23,Cowboys,Dez Bryant 19 yard pass from Tony Romo (Dan Bailey kick),0,14,2014_16_IND_DAL
+2,14:11,Cowboys,Cole Beasley 24 yard pass from Tony Romo (Dan Bailey kick),0,21,2014_16_IND_DAL
+2,6:32,Cowboys,DeMarco Murray 1 yard rush (Dan Bailey kick),0,28,2014_16_IND_DAL
+3,4:41,Cowboys,Jason Witten 25 yard pass from Tony Romo (Dan Bailey kick),0,35,2014_16_IND_DAL
+4,10:12,Cowboys,Terrance Williams 43 yard pass from Brandon Weeden (Dan Bailey kick),0,42,2014_16_IND_DAL
+4,5:24,Colts,Zurlon Tipton 1 yard pass from Matt Hasselbeck (Adam Vinatieri kick),7,42,2014_16_IND_DAL
+1,9:45,Bills,Sammy Watkins 42 yard pass from Kyle Orton (Dan Carpenter kick),7,0,2014_16_BUF_LVR
+2,14:56,Raiders,James Jones 3 yard pass from Derek Carr (Sebastian Janikowski kick),7,7,2014_16_BUF_LVR
+2,8:09,Raiders,Sebastian Janikowski 45 yard field goal ,7,10,2014_16_BUF_LVR
+2,1:11,Raiders,Sebastian Janikowski 36 yard field goal ,7,13,2014_16_BUF_LVR
+2,0:00,Bills,Dan Carpenter 54 yard field goal ,10,13,2014_16_BUF_LVR
+3,10:18,Raiders,Sebastian Janikowski 38 yard field goal ,10,16,2014_16_BUF_LVR
+3,2:36,Raiders,Sebastian Janikowski 49 yard field goal ,10,19,2014_16_BUF_LVR
+4,14:54,Bills,Scott Chandler 29 yard pass from Kyle Orton (Dan Carpenter kick),17,19,2014_16_BUF_LVR
+4,2:51,Raiders,Jamize Olawale 1 yard pass from Derek Carr (Sebastian Janikowski kick),17,26,2014_16_BUF_LVR
+4,1:09,Bills,Robert Woods 30 yard pass from Kyle Orton (Dan Carpenter kick),24,26,2014_16_BUF_LVR
+2,7:55,Cardinals,Chandler Catanzaro 27 yard field goal ,0,3,2014_16_SEA_ARI
+2,7:03,Seahawks,Luke Willson 80 yard pass from Russell Wilson (Stephen Hauschka kick),7,3,2014_16_SEA_ARI
+2,3:41,Seahawks,Marshawn Lynch 6 yard rush (Stephen Hauschka kick),14,3,2014_16_SEA_ARI
+3,0:59,Cardinals,Chandler Catanzaro 32 yard field goal ,14,6,2014_16_SEA_ARI
+4,11:59,Seahawks,Luke Willson 20 yard pass from Russell Wilson (Stephen Hauschka kick),21,6,2014_16_SEA_ARI
+4,10:14,Seahawks,Marshawn Lynch 79 yard rush (Stephen Hauschka kick),28,6,2014_16_SEA_ARI
+4,4:40,Seahawks,Russell Wilson 5 yard rush (Stephen Hauschka kick),35,6,2014_16_SEA_ARI
+1,10:32,Broncos,Aqib Talib 33 yard interception return (Connor Barth kick),7,0,2014_16_DEN_CIN
+1,10:09,Bengals,Jeremy Hill 85 yard rush (Mike Nugent kick),7,7,2014_16_DEN_CIN
+2,10:23,Bengals,Mike Nugent 37 yard field goal ,7,10,2014_16_DEN_CIN
+2,7:56,Bengals,Jermaine Gresham 2 yard pass from Andy Dalton (Mike Nugent kick),7,17,2014_16_DEN_CIN
+2,1:03,Bengals,Mike Nugent 49 yard field goal ,7,20,2014_16_DEN_CIN
+3,14:12,Broncos,C.J. Anderson 1 yard rush (Connor Barth kick),14,20,2014_16_DEN_CIN
+3,12:35,Bengals,Giovani Bernard 22 yard pass from Andy Dalton (Mike Nugent kick),14,27,2014_16_DEN_CIN
+3,9:08,Broncos,Emmanuel Sanders 4 yard pass from Peyton Manning (Connor Barth kick),21,27,2014_16_DEN_CIN
+3,1:29,Broncos,Emmanuel Sanders 5 yard pass from Peyton Manning (Connor Barth kick),28,27,2014_16_DEN_CIN
+4,7:49,Bengals,Mike Nugent 23 yard field goal ,28,30,2014_16_DEN_CIN
+4,2:41,Bengals,Dre Kirkpatrick 30 yard interception return (Mike Nugent kick),28,37,2014_16_DEN_CIN
+2,8:05,Ravens,Justin Tucker 25 yard field goal ,0,3,2014_17_CLE_BAL
+2,2:32,Browns,Garrett Hartley 38 yard field goal ,3,3,2014_17_CLE_BAL
+3,3:29,Browns,Terrance West 2 yard rush (Garrett Hartley kick),10,3,2014_17_CLE_BAL
+4,10:37,Ravens,Justin Tucker 28 yard field goal ,10,6,2014_17_CLE_BAL
+4,7:33,Ravens,Torrey Smith 16 yard pass from Joe Flacco (Justin Tucker kick),10,13,2014_17_CLE_BAL
+4,3:44,Ravens,Kamar Aiken 2 yard pass from Joe Flacco (Justin Tucker kick),10,20,2014_17_CLE_BAL
+1,10:23,Texans,Arian Foster 10 yard pass from Case Keenum (Randy Bullock kick),0,7,2014_17_JAX_HOU
+1,6:02,Jaguars,Josh Scobee 53 yard field goal ,3,7,2014_17_JAX_HOU
+1,2:55,Jaguars,Dwayne Gratz 55 yard interception return (Josh Scobee kick),10,7,2014_17_JAX_HOU
+2,6:34,Texans,Alfred Blue 1 yard rush (Randy Bullock kick),10,14,2014_17_JAX_HOU
+3,4:45,Jaguars,Jordan Todman 23 yard pass from Cecil Shorts (Josh Scobee kick),17,14,2014_17_JAX_HOU
+4,13:34,Texans,Andre Johnson 8 yard pass from Case Keenum (Randy Bullock kick),17,21,2014_17_JAX_HOU
+4,5:37,Texans,"Safety, Blake Bortles sacked in the end zone by J.J. Watt. ",17,23,2014_17_JAX_HOU
+1,6:33,Chiefs,Cairo Santos 43 yard field goal ,0,3,2014_17_LAC_KC
+2,12:50,Chiefs,Travis Kelce offensive fumble recovery in end zone (Cairo Santos kick),0,10,2014_17_LAC_KC
+2,10:50,Chargers,Branden Oliver 1 yard rush (Nick Novak kick),7,10,2014_17_LAC_KC
+2,3:58,Chiefs,Cairo Santos 21 yard field goal ,7,13,2014_17_LAC_KC
+2,0:33,Chiefs,Cairo Santos 27 yard field goal ,7,16,2014_17_LAC_KC
+3,8:24,Chiefs,Cairo Santos 31 yard field goal ,7,19,2014_17_LAC_KC
+1,6:13,Dolphins,Caleb Sturgis 37 yard field goal ,0,3,2014_17_NYJ_MIA
+1,3:11,Jets,Chris Owusu 23 yard rush (Nick Folk kick),7,3,2014_17_NYJ_MIA
+2,10:44,Dolphins,Daniel Thomas 1 yard rush (Caleb Sturgis kick),7,10,2014_17_NYJ_MIA
+2,6:44,Jets,Chris Ivory 8 yard pass from Geno Smith (Nick Folk kick),14,10,2014_17_NYJ_MIA
+2,0:43,Dolphins,Charles Clay 23 yard pass from Ryan Tannehill (Caleb Sturgis kick),14,17,2014_17_NYJ_MIA
+3,12:51,Dolphins,Lamar Miller 97 yard rush (Caleb Sturgis kick),14,24,2014_17_NYJ_MIA
+3,11:35,Jets,Eric Decker 74 yard pass from Geno Smith (Nick Folk kick),21,24,2014_17_NYJ_MIA
+3,6:35,Jets,Nick Folk 26 yard field goal ,24,24,2014_17_NYJ_MIA
+4,14:12,Jets,Nick Folk 23 yard field goal ,27,24,2014_17_NYJ_MIA
+4,3:22,Jets,Jeff Cumberland 23 yard pass from Geno Smith (Nick Folk kick),34,24,2014_17_NYJ_MIA
+4,0:31,Jets,Nick Folk 39 yard field goal ,37,24,2014_17_NYJ_MIA
+1,4:59,Vikings,Blair Walsh 37 yard field goal ,0,3,2014_17_CHI_MIN
+2,0:55,Bears,Jay Feely 48 yard field goal ,3,3,2014_17_CHI_MIN
+3,13:05,Bears,Jay Feely 25 yard field goal ,6,3,2014_17_CHI_MIN
+3,10:53,Vikings,Adam Thielen 44 yard pass from Teddy Bridgewater (Blair Walsh kick),6,10,2014_17_CHI_MIN
+4,11:29,Vikings,Blair Walsh 44 yard field goal ,6,13,2014_17_CHI_MIN
+4,8:53,Bears,Jay Feely 35 yard field goal ,9,13,2014_17_CHI_MIN
+1,11:59,Bills,Robert Woods 6 yard pass from Kyle Orton (Dan Carpenter kick),7,0,2014_17_BUF_NE
+1,3:02,Patriots,Stephen Gostkowski 24 yard field goal ,7,3,2014_17_BUF_NE
+2,10:38,Bills,Anthony Dixon 1 yard rush (Dan Carpenter kick),14,3,2014_17_BUF_NE
+2,5:07,Patriots,Stephen Gostkowski 44 yard field goal ,14,6,2014_17_BUF_NE
+2,2:14,Bills,Dan Carpenter 48 yard field goal ,17,6,2014_17_BUF_NE
+3,0:37,Patriots,Stephen Gostkowski 35 yard field goal ,17,9,2014_17_BUF_NE
+1,12:11,Giants,Andre Williams 1 yard rush (Josh Brown kick),0,7,2014_17_PHI_NYG
+1,11:00,Eagles,Jordan Matthews 44 yard pass from Mark Sanchez (Cody Parkey kick),7,7,2014_17_PHI_NYG
+1,6:12,Eagles,Brent Celek 1 yard pass from Mark Sanchez (Cody Parkey kick),14,7,2014_17_PHI_NYG
+1,2:11,Giants,Josh Brown 38 yard field goal ,14,10,2014_17_PHI_NYG
+2,7:26,Giants,Josh Brown 20 yard field goal ,14,13,2014_17_PHI_NYG
+2,2:02,Giants,Josh Brown 36 yard field goal ,14,16,2014_17_PHI_NYG
+2,0:00,Eagles,Cody Parkey 32 yard field goal ,17,16,2014_17_PHI_NYG
+3,12:21,Eagles,Trey Burton 27 yard blocked punt return (Cody Parkey kick),24,16,2014_17_PHI_NYG
+3,4:24,Giants,Josh Brown 53 yard field goal ,24,19,2014_17_PHI_NYG
+4,13:08,Eagles,Chris Polk 1 yard rush (Cody Parkey kick),31,19,2014_17_PHI_NYG
+4,11:47,Giants,Odell Beckham Jr. 63 yard pass from Eli Manning (Josh Brown kick),31,26,2014_17_PHI_NYG
+4,7:56,Eagles,Cody Parkey 39 yard field goal ,34,26,2014_17_PHI_NYG
+1,6:03,Buccaneers,Patrick Murray 39 yard field goal ,0,3,2014_17_NO_TB
+2,11:25,Buccaneers,Mike Evans 6 yard pass from Josh McCown (Patrick Murray kick),0,10,2014_17_NO_TB
+2,5:45,Saints,Khiry Robinson 1 yard rush (Shayne Graham kick),7,10,2014_17_NO_TB
+2,1:48,Buccaneers,Charles Sims 8 yard rush (Patrick Murray kick),7,17,2014_17_NO_TB
+2,0:06,Buccaneers,Patrick Murray 27 yard field goal ,7,20,2014_17_NO_TB
+4,14:02,Saints,Mark Ingram 1 yard rush (Shayne Graham kick),14,20,2014_17_NO_TB
+4,1:57,Saints,Marques Colston 36 yard pass from Drew Brees (Shayne Graham kick),21,20,2014_17_NO_TB
+4,1:05,Saints,"Safety, Josh McCown sacked by Junior Galette in the end zone. ",23,20,2014_17_NO_TB
+1,2:54,Colts,Coby Fleener 7 yard pass from Andrew Luck (Adam Vinatieri kick),7,0,2014_17_IND_TEN
+2,8:54,Colts,Jack Doyle 1 yard pass from Andrew Luck (Adam Vinatieri kick),14,0,2014_17_IND_TEN
+2,5:07,Titans,Kendall Wright 6 yard pass from Charlie Whitehurst (Ryan Succop kick),14,7,2014_17_IND_TEN
+2,2:55,Colts,Adam Vinatieri 23 yard field goal ,17,7,2014_17_IND_TEN
+3,4:01,Titans,Ryan Succop 31 yard field goal ,17,10,2014_17_IND_TEN
+4,14:56,Colts,Adam Vinatieri 26 yard field goal ,20,10,2014_17_IND_TEN
+4,3:16,Colts,Coby Fleener 8 yard pass from Matt Hasselbeck (Adam Vinatieri kick),27,10,2014_17_IND_TEN
+1,10:15,Cowboys,Dan Bailey 36 yard field goal ,3,0,2014_17_DAL_WAS
+1,8:42,Redskins,DeSean Jackson 69 yard pass from Robert Griffin III (Kai Forbath kick),3,7,2014_17_DAL_WAS
+1,6:25,Cowboys,Dez Bryant 65 yard pass from Tony Romo (Dan Bailey kick),10,7,2014_17_DAL_WAS
+1,2:07,Cowboys,Dez Bryant 23 yard pass from Tony Romo (Dan Bailey kick),17,7,2014_17_DAL_WAS
+2,11:30,Cowboys,Dan Bailey 32 yard field goal ,20,7,2014_17_DAL_WAS
+2,8:10,Cowboys,DeMarco Murray 9 yard rush (Dan Bailey kick),27,7,2014_17_DAL_WAS
+2,1:20,Redskins,Kai Forbath 25 yard field goal ,27,10,2014_17_DAL_WAS
+4,6:45,Redskins,Robert Griffin III 2 yard rush (Kai Forbath kick),27,17,2014_17_DAL_WAS
+4,3:31,Cowboys,Dan Bailey 23 yard field goal ,30,17,2014_17_DAL_WAS
+4,3:12,Cowboys,Anthony Spencer 5 yard defensive fumble return (Dan Bailey kick),37,17,2014_17_DAL_WAS
+4,1:40,Cowboys,Joseph Randle 65 yard rush (Dan Bailey kick),44,17,2014_17_DAL_WAS
+1,7:50,Panthers,Graham Gano 21 yard field goal ,3,0,2014_17_CAR_ATL
+1,0:04,Panthers,Ed Dickson 5 yard pass from Cam Newton (Graham Gano kick),10,0,2014_17_CAR_ATL
+2,10:36,Falcons,Matt Bryant 21 yard field goal ,10,3,2014_17_CAR_ATL
+2,4:18,Panthers,Roman Harper 31 yard interception return (Graham Gano kick),17,3,2014_17_CAR_ATL
+2,1:47,Panthers,Cam Newton 4 yard rush (Graham Gano kick),24,3,2014_17_CAR_ATL
+3,8:43,Panthers,Graham Gano 48 yard field goal ,27,3,2014_17_CAR_ATL
+3,0:07,Panthers,Tre Boston 84 yard interception return (Graham Gano kick),34,3,2014_17_CAR_ATL
+1,9:40,Broncos,Connor Barth 49 yard field goal ,0,3,2014_17_LVR_DEN
+1,5:37,Broncos,C.J. Anderson 11 yard rush (Connor Barth kick),0,10,2014_17_LVR_DEN
+1,3:42,Raiders,Keith McGill 18 yard defensive fumble return (Sebastian Janikowski kick),7,10,2014_17_LVR_DEN
+2,13:08,Broncos,C.J. Anderson 1 yard rush (Connor Barth kick),7,17,2014_17_LVR_DEN
+2,0:23,Broncos,Connor Barth 36 yard field goal ,7,20,2014_17_LVR_DEN
+3,14:08,Broncos,C.J. Anderson 25 yard rush (Connor Barth kick),7,27,2014_17_LVR_DEN
+3,8:55,Raiders,Jamize Olawale 1 yard pass from Derek Carr (Sebastian Janikowski kick),14,27,2014_17_LVR_DEN
+3,5:38,Broncos,Connor Barth 35 yard field goal ,14,30,2014_17_LVR_DEN
+4,10:18,Broncos,Connor Barth 21 yard field goal ,14,33,2014_17_LVR_DEN
+4,4:48,Broncos,Tony Carter 20 yard defensive fumble return (Connor Barth kick),14,40,2014_17_LVR_DEN
+4,1:56,Broncos,Virgil Green 1 yard pass from Brock Osweiler (Connor Barth kick),14,47,2014_17_LVR_DEN
+1,4:49,Packers,Micah Hyde 55 yard punt return (Mason Crosby kick),0,7,2014_17_DET_GB
+2,2:24,Packers,Randall Cobb 4 yard pass from Aaron Rodgers (Mason Crosby kick),0,14,2014_17_DET_GB
+2,0:24,Lions,Calvin Johnson 20 yard pass from Matthew Stafford (Matt Prater kick),7,14,2014_17_DET_GB
+3,7:34,Lions,Calvin Johnson 4 yard pass from Matthew Stafford (Matt Prater kick),14,14,2014_17_DET_GB
+3,3:33,Packers,Randall Cobb 13 yard pass from Aaron Rodgers (Mason Crosby kick),14,21,2014_17_DET_GB
+4,8:45,Packers,Aaron Rodgers 1 yard rush (Mason Crosby kick),14,28,2014_17_DET_GB
+4,2:32,Packers,"Safety, Intentional grounding in the end zone by Matthew Stafford. ",14,30,2014_17_DET_GB
+4,1:45,Lions,Theo Riddick 6 yard pass from Matthew Stafford (run failed),20,30,2014_17_DET_GB
+1,6:25,Rams,Greg Zuerlein 33 yard field goal ,3,0,2014_17_LAR_SEA
+2,4:18,Rams,Greg Zuerlein 52 yard field goal ,6,0,2014_17_LAR_SEA
+3,11:13,Seahawks,Stephen Hauschka 42 yard field goal ,6,3,2014_17_LAR_SEA
+3,4:45,Seahawks,Stephen Hauschka 45 yard field goal ,6,6,2014_17_LAR_SEA
+4,12:07,Seahawks,Marshawn Lynch 9 yard rush (Stephen Hauschka kick),6,13,2014_17_LAR_SEA
+4,9:50,Seahawks,Bruce Irvin 49 yard interception return (Stephen Hauschka kick),6,20,2014_17_LAR_SEA
+1,10:55,Cardinals,Michael Floyd 20 yard pass from Ryan Lindley (Chandler Catanzaro kick),7,0,2014_17_ARI_SF
+1,9:24,49ers,Anquan Boldin 76 yard pass from Colin Kaepernick (Phil Dawson kick),7,7,2014_17_ARI_SF
+2,12:33,49ers,Phil Dawson 53 yard field goal ,7,10,2014_17_ARI_SF
+2,6:04,49ers,Phil Dawson 37 yard field goal ,7,13,2014_17_ARI_SF
+2,1:35,Cardinals,Chandler Catanzaro 36 yard field goal ,10,13,2014_17_ARI_SF
+2,0:36,Cardinals,Michael Floyd 41 yard pass from Ryan Lindley (Chandler Catanzaro kick),17,13,2014_17_ARI_SF
+3,0:25,49ers,Bruce Miller 3 yard pass from Colin Kaepernick (Phil Dawson kick),17,20,2014_17_ARI_SF
+1,10:50,Steelers,Antonio Brown 71 yard punt return (Shaun Suisham kick),0,7,2014_17_CIN_PIT
+1,2:43,Bengals,Giovani Bernard 17 yard pass from Andy Dalton (Mike Nugent kick),7,7,2014_17_CIN_PIT
+2,12:32,Bengals,Mike Nugent 39 yard field goal ,10,7,2014_17_CIN_PIT
+2,7:36,Steelers,Shaun Suisham 29 yard field goal ,10,10,2014_17_CIN_PIT
+2,5:52,Steelers,Martavis Bryant 21 yard pass from Ben Roethlisberger (Shaun Suisham kick),10,17,2014_17_CIN_PIT
+2,0:40,Steelers,Shaun Suisham 25 yard field goal ,10,20,2014_17_CIN_PIT
+4,11:14,Bengals,Jermaine Gresham 5 yard pass from Andy Dalton (Mike Nugent kick),17,20,2014_17_CIN_PIT
+4,2:50,Steelers,Antonio Brown 63 yard pass from Ben Roethlisberger (Shaun Suisham kick),17,27,2014_17_CIN_PIT
+1,11:27,Panthers,Graham Gano 47 yard field goal ,0,3,2014_18_ARI_CAR
+1,5:21,Panthers,Jonathan Stewart 13 yard rush (Graham Gano kick),0,10,2014_18_ARI_CAR
+2,14:56,Cardinals,Darren Fells 1 yard pass from Ryan Lindley (Chandler Catanzaro kick),7,10,2014_18_ARI_CAR
+2,2:50,Cardinals,Marion Grice 1 yard rush (Chandler Catanzaro kick),14,10,2014_18_ARI_CAR
+2,0:15,Panthers,Graham Gano 39 yard field goal ,14,13,2014_18_ARI_CAR
+3,5:36,Panthers,Fozzy Whittaker 39 yard pass from Cam Newton (Graham Gano kick),14,20,2014_18_ARI_CAR
+3,4:04,Panthers,Mike Tolbert 1 yard pass from Cam Newton (Graham Gano kick),14,27,2014_18_ARI_CAR
+4,0:03,Cardinals,"Safety, Brad Nortman stepped out of the back of the end zone. ",16,27,2014_18_ARI_CAR
+1,1:29,Steelers,Shaun Suisham 45 yard field goal ,0,3,2014_18_BAL_PIT
+2,12:28,Ravens,Bernard Pierce 5 yard rush (Justin Tucker kick),7,3,2014_18_BAL_PIT
+2,5:40,Steelers,Shaun Suisham 22 yard field goal ,7,6,2014_18_BAL_PIT
+2,2:41,Ravens,Justin Tucker 28 yard field goal ,10,6,2014_18_BAL_PIT
+2,0:37,Steelers,Shaun Suisham 47 yard field goal ,10,9,2014_18_BAL_PIT
+3,10:06,Ravens,Justin Tucker 45 yard field goal ,13,9,2014_18_BAL_PIT
+3,4:13,Ravens,Torrey Smith 11 yard pass from Joe Flacco (Justin Tucker kick),20,9,2014_18_BAL_PIT
+4,11:01,Steelers,Martavis Bryant 6 yard pass from Ben Roethlisberger (pass failed),20,15,2014_18_BAL_PIT
+4,8:47,Ravens,Justin Tucker 52 yard field goal ,23,15,2014_18_BAL_PIT
+4,7:56,Ravens,Crockett Gillmore 21 yard pass from Joe Flacco (Justin Tucker kick),30,15,2014_18_BAL_PIT
+4,1:56,Steelers,"Safety, Punt blocked by Shamarko Thomas out of bounds in end zone. ",30,17,2014_18_BAL_PIT
+1,11:05,Colts,Dan Herron 2 yard rush (Adam Vinatieri kick),0,7,2014_18_CIN_IND
+1,1:28,Bengals,Jeremy Hill 1 yard rush (Mike Nugent kick),7,7,2014_18_CIN_IND
+2,12:41,Colts,Adam Vinatieri 38 yard field goal ,7,10,2014_18_CIN_IND
+2,8:34,Colts,Adam Vinatieri 29 yard field goal ,7,13,2014_18_CIN_IND
+2,0:10,Bengals,Mike Nugent 57 yard field goal ,10,13,2014_18_CIN_IND
+3,7:48,Colts,Donte Moncrief 36 yard pass from Andrew Luck (Adam Vinatieri kick),10,20,2014_18_CIN_IND
+3,1:31,Colts,Adam Vinatieri 22 yard field goal ,10,23,2014_18_CIN_IND
+4,11:31,Colts,Adam Vinatieri 53 yard field goal ,10,26,2014_18_CIN_IND
+1,11:22,Lions,Golden Tate 51 yard pass from Matthew Stafford (Matt Prater kick),7,0,2014_18_DET_DAL
+1,1:57,Lions,Reggie Bush 18 yard rush (Matt Prater kick),14,0,2014_18_DET_DAL
+2,1:37,Cowboys,Terrance Williams 76 yard pass from Tony Romo (Dan Bailey kick),14,7,2014_18_DET_DAL
+2,0:03,Lions,Matt Prater 39 yard field goal ,17,7,2014_18_DET_DAL
+3,8:41,Lions,Matt Prater 37 yard field goal ,20,7,2014_18_DET_DAL
+3,2:54,Cowboys,DeMarco Murray 1 yard rush (Dan Bailey kick),20,14,2014_18_DET_DAL
+4,12:16,Cowboys,Dan Bailey 51 yard field goal ,20,17,2014_18_DET_DAL
+4,2:32,Cowboys,Terrance Williams 8 yard pass from Tony Romo (Dan Bailey kick),20,24,2014_18_DET_DAL
+1,12:18,Ravens,Kamar Aiken 19 yard pass from Joe Flacco (Justin Tucker kick),7,0,2014_19_BAL_NE
+1,4:44,Ravens,Steve Smith Sr. 9 yard pass from Joe Flacco (Justin Tucker kick),14,0,2014_19_BAL_NE
+1,0:48,Patriots,Tom Brady 4 yard rush (Stephen Gostkowski kick),14,7,2014_19_BAL_NE
+2,3:37,Patriots,Danny Amendola 15 yard pass from Tom Brady (Stephen Gostkowski kick),14,14,2014_19_BAL_NE
+2,0:10,Ravens,Owen Daniels 11 yard pass from Joe Flacco (Justin Tucker kick),21,14,2014_19_BAL_NE
+3,10:22,Ravens,Justin Forsett 16 yard pass from Joe Flacco (Justin Tucker kick),28,14,2014_19_BAL_NE
+3,6:48,Patriots,Rob Gronkowski 5 yard pass from Tom Brady (Stephen Gostkowski kick),28,21,2014_19_BAL_NE
+3,4:20,Patriots,Danny Amendola 51 yard pass from Julian Edelman (Stephen Gostkowski kick),28,28,2014_19_BAL_NE
+4,10:17,Ravens,Justin Tucker 25 yard field goal ,31,28,2014_19_BAL_NE
+4,5:13,Patriots,Brandon LaFell 23 yard pass from Tom Brady (Stephen Gostkowski kick),31,35,2014_19_BAL_NE
+1,0:56,Seahawks,Doug Baldwin 16 yard pass from Russell Wilson (Stephen Hauschka kick),0,7,2014_19_CAR_SEA
+2,7:44,Panthers,Kelvin Benjamin 7 yard pass from Cam Newton (Graham Gano kick),7,7,2014_19_CAR_SEA
+2,4:54,Seahawks,Jermaine Kearse 63 yard pass from Russell Wilson (Stephen Hauschka kick),7,14,2014_19_CAR_SEA
+2,0:00,Panthers,Graham Gano 35 yard field goal ,10,14,2014_19_CAR_SEA
+4,14:55,Seahawks,Stephen Hauschka 37 yard field goal ,10,17,2014_19_CAR_SEA
+4,10:26,Seahawks,Luke Willson 25 yard pass from Russell Wilson (Stephen Hauschka kick),10,24,2014_19_CAR_SEA
+4,5:55,Seahawks,Kam Chancellor 90 yard interception return (Stephen Hauschka kick),10,31,2014_19_CAR_SEA
+4,2:34,Panthers,Kelvin Benjamin 15 yard pass from Cam Newton (Graham Gano kick),17,31,2014_19_CAR_SEA
+1,8:30,Packers,Andrew Quarless 4 yard pass from Aaron Rodgers (Mason Crosby kick),0,7,2014_19_DAL_GB
+1,1:05,Cowboys,Tyler Clutts 1 yard pass from Tony Romo (Dan Bailey kick),7,7,2014_19_DAL_GB
+2,8:19,Cowboys,Terrance Williams 38 yard pass from Tony Romo (Dan Bailey kick),14,7,2014_19_DAL_GB
+2,0:00,Packers,Mason Crosby 40 yard field goal ,14,10,2014_19_DAL_GB
+3,7:46,Packers,Mason Crosby 30 yard field goal ,14,13,2014_19_DAL_GB
+3,4:12,Cowboys,DeMarco Murray 1 yard rush (Dan Bailey kick),21,13,2014_19_DAL_GB
+3,1:41,Packers,Davante Adams 46 yard pass from Aaron Rodgers (Mason Crosby kick),21,20,2014_19_DAL_GB
+4,9:10,Packers,Richard Rodgers 13 yard pass from Aaron Rodgers (pass failed),21,26,2014_19_DAL_GB
+1,10:00,Broncos,Demaryius Thomas 1 yard pass from Peyton Manning (Connor Barth kick),0,7,2014_19_IND_DEN
+2,14:14,Colts,Dan Herron 6 yard rush (Adam Vinatieri kick),7,7,2014_19_IND_DEN
+2,7:23,Colts,Dwayne Allen 3 yard pass from Andrew Luck (Adam Vinatieri kick),14,7,2014_19_IND_DEN
+2,0:02,Broncos,Connor Barth 45 yard field goal ,14,10,2014_19_IND_DEN
+3,8:21,Colts,Hakeem Nicks 15 yard pass from Andrew Luck (Adam Vinatieri kick),21,10,2014_19_IND_DEN
+4,13:50,Broncos,Connor Barth 41 yard field goal ,21,13,2014_19_IND_DEN
+4,4:06,Colts,Adam Vinatieri 30 yard field goal ,24,13,2014_19_IND_DEN
+1,8:07,Packers,Mason Crosby 18 yard field goal ,3,0,2014_20_GB_SEA
+1,5:07,Packers,Mason Crosby 19 yard field goal ,6,0,2014_20_GB_SEA
+1,0:00,Packers,Randall Cobb 13 yard pass from Aaron Rodgers (Mason Crosby kick),13,0,2014_20_GB_SEA
+2,9:37,Packers,Mason Crosby 40 yard field goal ,16,0,2014_20_GB_SEA
+3,4:44,Seahawks,Garry Gilliam 19 yard pass from Jon Ryan (Stephen Hauschka kick),16,7,2014_20_GB_SEA
+4,10:53,Packers,Mason Crosby 48 yard field goal ,19,7,2014_20_GB_SEA
+4,2:09,Seahawks,Russell Wilson 1 yard rush (Stephen Hauschka kick),19,14,2014_20_GB_SEA
+4,1:25,Seahawks,Marshawn Lynch 24 yard rush (Luke Willson pass from Russell Wilson),19,22,2014_20_GB_SEA
+4,0:14,Packers,Mason Crosby 48 yard field goal ,22,22,2014_20_GB_SEA
+OT,11:41,Seahawks,Jermaine Kearse 35 yard pass from Russell Wilson ,22,28,2014_20_GB_SEA
+1,10:15,Patriots,LeGarrette Blount 1 yard rush (Stephen Gostkowski kick),0,7,2014_20_IND_NE
+1,1:20,Patriots,James Develin 1 yard pass from Tom Brady (Stephen Gostkowski kick),0,14,2014_20_IND_NE
+2,4:54,Colts,Zurlon Tipton 1 yard rush (Adam Vinatieri kick),7,14,2014_20_IND_NE
+2,0:09,Patriots,Stephen Gostkowski 21 yard field goal ,7,17,2014_20_IND_NE
+3,10:03,Patriots,Nate Solder 16 yard pass from Tom Brady (Stephen Gostkowski kick),7,24,2014_20_IND_NE
+3,3:19,Patriots,Rob Gronkowski 5 yard pass from Tom Brady (Stephen Gostkowski kick),7,31,2014_20_IND_NE
+3,2:08,Patriots,LeGarrette Blount 13 yard rush (Stephen Gostkowski kick),7,38,2014_20_IND_NE
+4,10:05,Patriots,LeGarrette Blount 2 yard rush (Stephen Gostkowski kick),7,45,2014_20_IND_NE
+2,9:47,Patriots,Brandon LaFell 11 yard pass from Tom Brady (Stephen Gostkowski kick),7,0,2014_21_NE_SEA
+2,2:16,Seahawks,Marshawn Lynch 3 yard rush (Stephen Hauschka kick),7,7,2014_21_NE_SEA
+2,0:31,Patriots,Rob Gronkowski 22 yard pass from Tom Brady (Stephen Gostkowski kick),14,7,2014_21_NE_SEA
+2,0:02,Seahawks,Chris Matthews 11 yard pass from Russell Wilson (Stephen Hauschka kick),14,14,2014_21_NE_SEA
+3,11:09,Seahawks,Stephen Hauschka 27 yard field goal ,14,17,2014_21_NE_SEA
+3,4:54,Seahawks,Doug Baldwin 3 yard pass from Russell Wilson (Stephen Hauschka kick),14,24,2014_21_NE_SEA
+4,7:55,Patriots,Danny Amendola 4 yard pass from Tom Brady (Stephen Gostkowski kick),21,24,2014_21_NE_SEA
+4,2:02,Patriots,Julian Edelman 3 yard pass from Tom Brady (Stephen Gostkowski kick),28,24,2014_21_NE_SEA

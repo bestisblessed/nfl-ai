@@ -1,0 +1,20 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 7,1:02PM ET,boxscore,W,,1-0,,Cleveland Browns,30,27,24,503,376,127,1,23,389,198,191,,15.13,-11.17,-0.96
+2,Thu,September 11,8:28PM ET,boxscore,L,,1-1,@,Baltimore Ravens,6,26,17,301,202,99,3,25,323,166,157,,-8.62,-12.28,0.04
+3,Sun,September 21,8:31PM ET,boxscore,W,,2-1,@,Carolina Panthers,37,19,24,454,190,264,,20,349,307,42,2,19.58,-6.24,6.54
+4,Sun,September 28,1:03PM ET,boxscore,L,,2-2,,Tampa Bay Buccaneers,24,27,27,390,305,85,1,21,350,287,63,1,11.50,-8.34,-7.28
+5,Sun,October 5,1:02PM ET,boxscore,W,,3-2,@,Jacksonville Jaguars,17,9,20,372,261,111,1,12,243,187,56,2,4.43,12.09,-6.20
+6,Sun,October 12,1:02PM ET,boxscore,L,,3-3,@,Cleveland Browns,10,31,22,359,221,138,1,19,368,210,158,1,-8.55,-10.72,-0.35
+7,Mon,October 20,8:30PM ET,boxscore,W,,4-3,,Houston Texans,30,23,18,328,252,76,1,20,393,261,132,3,2.13,0.89,3.33
+8,Sun,October 26,4:25PM ET,boxscore,W,,5-3,,Indianapolis Colts,51,34,34,639,522,117,2,26,448,385,63,2,32.56,-14.74,0.03
+9,Sun,November 2,8:30PM ET,boxscore,W,,6-3,,Baltimore Ravens,43,23,22,376,321,55,1,22,332,269,63,2,19.03,8.67,-8.92
+10,Sun,November 9,1:02PM ET,boxscore,L,,6-4,@,New York Jets,13,20,22,362,326,36,4,15,275,125,150,,-1.19,2.63,-8.31
+11,Mon,November 17,8:30PM ET,boxscore,W,,7-4,@,Tennessee Titans,27,24,29,386,180,206,1,14,312,263,49,1,10.97,-6.52,-1.00
+12,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+13,Sun,November 30,1:02PM ET,boxscore,L,,7-5,,New Orleans Saints,32,35,36,538,435,103,2,20,393,250,143,,16.08,-18.67,-2.21
+14,Sun,December 7,1:02PM ET,boxscore,W,,8-5,@,Cincinnati Bengals,42,21,25,543,350,193,,16,408,322,86,2,24.43,1.57,-4.68
+15,Sun,December 14,1:02PM ET,boxscore,W,,9-5,@,Atlanta Falcons,27,20,22,398,353,45,,20,407,310,97,1,15.49,-9.79,2.51
+16,Sun,December 21,1:02PM ET,boxscore,W,,10-5,,Kansas City Chiefs,20,12,19,282,214,68,,22,327,288,39,1,11.59,-3.49,-0.95
+17,Sun,December 28,8:30PM ET,boxscore,W,,11-5,,Cincinnati Bengals,27,17,18,346,317,29,3,19,337,221,116,3,0.69,4.96,4.31
+,,Playoffs,,,,,,,,,,,,,,,,,,,,,,
+Wild Card,Sat,January 3,8:15PM ET,boxscore,L,,11-6,,Baltimore Ravens,17,30,22,387,319,68,3,19,299,246,53,1,-2.72,-9.65,0.02

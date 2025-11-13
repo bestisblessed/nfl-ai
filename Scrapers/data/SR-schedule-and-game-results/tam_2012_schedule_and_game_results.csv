@@ -1,0 +1,18 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 9,4:26PM ET,boxscore,W,,1-0,,Carolina Panthers,16,10,18,258,128,130,,16,301,291,10,2,-1.17,2.75,2.72
+2,Sun,September 16,1:03PM ET,boxscore,L,,1-1,@,New York Giants,34,41,14,307,228,79,2,31,604,510,94,3,-0.62,-12.03,6.24
+3,Sun,September 23,1:05PM ET,boxscore,L,,1-2,@,Dallas Cowboys,10,16,12,166,91,75,2,14,297,259,38,3,-11.49,17.66,-10.12
+4,Sun,September 30,4:25PM ET,boxscore,L,,1-3,,Washington Redskins,22,24,16,373,293,80,1,27,474,321,153,,0.91,-18.10,18.98
+5,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+6,Sun,October 14,1:00PM ET,boxscore,W,,2-3,,Kansas City Chiefs,38,10,19,463,318,145,2,15,260,180,80,2,17.89,23.18,-10.62
+7,Sun,October 21,1:02PM ET,boxscore,L,,2-4,,New Orleans Saints,28,35,26,513,411,102,,23,458,377,81,1,23.78,-21.67,-4.36
+8,Thu,October 25,8:29PM ET,boxscore,W,,3-4,@,Minnesota Vikings,36,17,23,416,257,159,,16,369,229,140,3,11.12,7.24,-1.42
+9,Sun,November 4,4:05PM ET,boxscore,W,,4-4,@,Oakland Raiders,42,32,23,515,237,278,1,25,424,402,22,3,20.32,-3.88,-10.56
+10,Sun,November 11,1:03PM ET,boxscore,W,,5-4,,San Diego Chargers,34,24,12,279,205,74,,23,426,323,103,2,9.61,-7.61,6.33
+11,Sun,November 18,1:04PM ET,boxscore,W,OT,6-4,@,Carolina Panthers,27,21,25,403,236,167,3,18,331,234,97,1,-6.00,-2.65,11.70
+12,Sun,November 25,1:02PM ET,boxscore,L,,6-5,,Atlanta Falcons,23,24,16,326,276,50,,20,424,345,79,2,9.82,-14.01,4.24
+13,Sun,December 2,4:05PM ET,boxscore,L,,6-6,@,Denver Broncos,23,31,18,306,235,71,1,25,333,242,91,1,-6.77,-4.94,2.62
+14,Sun,December 9,1:03PM ET,boxscore,L,,6-7,,Philadelphia Eagles,21,23,18,314,178,136,,23,367,338,29,1,-0.51,-7.54,8.11
+15,Sun,December 16,1:03PM ET,boxscore,L,,6-8,@,New Orleans Saints,0,41,20,386,319,67,5,24,447,298,149,,-17.29,-21.79,1.51
+16,Sun,December 23,1:03PM ET,boxscore,L,,6-9,,St. Louis Rams,13,28,23,429,349,80,5,14,285,196,89,2,-13.77,0.10,-2.80
+17,Sun,December 30,1:02PM ET,boxscore,W,,7-9,@,Atlanta Falcons,22,17,18,366,222,144,1,15,278,213,65,,1.95,4.33,4.03

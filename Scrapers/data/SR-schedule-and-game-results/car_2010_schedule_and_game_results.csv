@@ -1,0 +1,18 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 12,1:04PM ET,boxscore,L,,0-1,@,New York Giants,18,31,14,237,148,89,5,21,376,258,118,4,-21.07,-0.30,7.23
+2,Sun,September 19,1:03PM ET,boxscore,L,,0-2,,Tampa Bay Buccaneers,7,20,16,278,159,119,3,14,273,178,95,,-11.82,-1.54,0.80
+3,Sun,September 26,1:02PM ET,boxscore,L,,0-3,,Cincinnati Bengals,7,20,17,267,180,87,4,21,305,185,120,2,-20.58,7.77,-1.98
+4,Sun,October 3,1:03PM ET,boxscore,L,,0-4,@,New Orleans Saints,14,16,10,251,133,118,1,27,383,262,121,2,0.05,-3.86,-0.27
+5,Sun,October 10,1:03PM ET,boxscore,L,,0-5,,Chicago Bears,6,23,8,147,62,85,3,13,247,29,218,4,-32.45,19.04,-4.59
+6,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+7,Sun,October 24,1:03PM ET,boxscore,W,,1-5,,San Francisco 49ers,23,20,22,379,303,76,3,15,282,183,99,1,-7.77,5.10,2.32
+8,Sun,October 31,1:00PM ET,boxscore,L,,1-6,@,St. Louis Rams,10,20,14,201,176,25,4,15,246,184,62,,-16.28,4.14,-0.40
+9,Sun,November 7,1:04PM ET,boxscore,L,,1-7,,New Orleans Saints,3,34,15,195,68,127,2,27,408,243,165,1,-23.37,-5.07,1.82
+10,Sun,November 14,1:02PM ET,boxscore,L,,1-8,@,Tampa Bay Buccaneers,16,31,18,300,182,118,1,21,421,235,186,2,-6.45,-16.59,9.45
+11,Sun,November 21,1:04PM ET,boxscore,L,,1-9,,Baltimore Ravens,13,37,9,270,150,120,2,22,378,278,100,2,-21.22,-0.68,2.82
+12,Sun,November 28,1:03PM ET,boxscore,L,,1-10,@,Cleveland Browns,23,24,16,326,175,151,1,26,379,227,152,3,0.54,4.69,-3.83
+13,Sun,December 5,4:16PM ET,boxscore,L,,1-11,@,Seattle Seahawks,14,31,18,283,152,131,1,25,371,210,161,2,-9.43,-8.38,1.96
+14,Sun,December 12,1:03PM ET,boxscore,L,,1-12,,Atlanta Falcons,10,31,13,288,76,212,2,24,327,200,127,1,-13.85,-8.66,5.15
+15,Sun,December 19,1:04PM ET,boxscore,W,,2-12,,Arizona Cardinals,19,12,16,303,126,177,1,11,218,175,43,2,-8.61,13.38,5.52
+16,Thu,December 23,8:29PM ET,boxscore,L,,2-13,@,Pittsburgh Steelers,3,27,7,119,45,74,2,22,408,293,115,2,-19.54,-1.46,-3.48
+17,Sun,January 2,1:03PM ET,boxscore,L,,2-14,@,Atlanta Falcons,10,31,12,291,154,137,2,24,352,253,99,1,-10.04,-3.61,-10.08

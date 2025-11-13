@@ -1,0 +1,21 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 8,1:02PM ET,boxscore,W,,1-0,@,Buffalo Bills,23,21,26,431,273,158,3,15,286,150,136,2,-8.67,8.30,0.96
+2,Thu,September 12,8:29PM ET,boxscore,W,,2-0,,New York Jets,13,10,9,232,178,54,,15,318,189,129,4,-16.53,20.40,2.25
+3,Sun,September 22,1:02PM ET,boxscore,W,,3-0,,Tampa Bay Buccaneers,23,3,21,358,202,156,1,18,323,226,97,1,4.05,11.23,2.25
+4,Sun,September 29,8:30PM ET,boxscore,W,,4-0,@,Atlanta Falcons,30,23,21,448,316,132,,26,457,399,58,1,15.86,-10.26,-0.71
+5,Sun,October 6,1:02PM ET,boxscore,L,,4-1,@,Cincinnati Bengals,6,13,15,248,166,82,2,21,341,179,162,2,-11.63,5.28,0.40
+6,Sun,October 13,4:25PM ET,boxscore,W,,5-1,,New Orleans Saints,30,27,26,376,235,141,1,20,361,230,131,2,-1.19,-4.55,3.36
+7,Sun,October 20,1:03PM ET,boxscore,L,OT,5-2,@,New York Jets,27,30,21,295,205,90,1,27,383,206,177,1,-7.10,4.71,-0.42
+8,Sun,October 27,1:02PM ET,boxscore,W,,6-2,,Miami Dolphins,27,17,19,252,100,152,1,23,301,145,156,3,0.94,1.22,7.15
+9,Sun,November 3,4:25PM ET,boxscore,W,,7-2,,Pittsburgh Steelers,55,31,33,610,413,197,1,24,479,371,108,3,33.33,-3.89,-4.45
+10,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+11,Mon,November 18,8:42PM ET,boxscore,L,,7-3,@,Carolina Panthers,20,24,28,390,283,107,2,20,300,197,103,,13.91,-17.75,0.63
+12,Sun,November 24,8:30PM ET,boxscore,W,OT,8-3,,Denver Broncos,34,31,27,440,324,116,3,28,412,132,280,4,-7.40,-0.53,12.80
+13,Sun,December 1,1:02PM ET,boxscore,W,,9-3,@,Houston Texans,34,31,28,453,365,88,1,19,385,264,121,1,17.29,-11.24,-1.17
+14,Sun,December 8,1:02PM ET,boxscore,W,,10-3,,Cleveland Browns,27,26,30,484,397,87,2,24,494,386,108,,12.46,-16.98,5.85
+15,Sun,December 15,1:02PM ET,boxscore,L,,10-4,@,Miami Dolphins,20,24,29,453,357,96,1,20,378,289,89,1,15.26,-11.98,-5.68
+16,Sun,December 22,4:25PM ET,boxscore,W,,11-4,@,Baltimore Ravens,41,7,21,300,158,142,,19,358,237,121,4,5.89,24.64,2.98
+17,Sun,December 29,4:25PM ET,boxscore,W,,12-4,,Buffalo Bills,34,20,24,382,115,267,1,19,393,224,169,,8.99,-1.47,7.80
+,,Playoffs,,,,,,,,,,,,,,,,,,,,,,
+Division,Sat,January 11,8:15PM ET,boxscore,W,,13-4,,Indianapolis Colts,43,22,23,419,185,234,,16,386,317,69,4,18.81,7.19,-4.92
+Conf. Champ.,Sun,January 19,3:06PM ET,boxscore,L,,13-5,@,Denver Broncos,16,26,19,320,256,64,,27,507,400,107,,9.06,-23.40,1.34

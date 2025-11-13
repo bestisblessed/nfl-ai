@@ -1,0 +1,18 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 12,1:02PM ET,boxscore,L,,0-1,,Miami Dolphins,10,15,9,166,116,50,,19,296,164,132,,-10.47,1.95,5.53
+2,Sun,September 19,1:02PM ET,boxscore,L,,0-2,@,Green Bay Packers,7,34,14,186,62,124,2,18,346,255,91,,-15.65,-14.91,1.26
+3,Sun,September 26,1:02PM ET,boxscore,L,,0-3,@,New England Patriots,30,38,19,374,240,134,2,25,445,245,200,1,7.72,-21.52,4.21
+4,Sun,October 3,1:02PM ET,boxscore,L,,0-4,,New York Jets,14,38,12,223,109,114,2,25,444,171,273,,-9.04,-18.28,2.80
+5,Sun,October 10,1:02PM ET,boxscore,L,,0-5,,Jacksonville Jaguars,26,36,17,306,196,110,,21,381,165,216,3,-1.92,-6.06,-4.76
+6,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+7,Sun,October 24,1:02PM ET,boxscore,L,OT,0-6,@,Baltimore Ravens,34,37,27,514,382,132,4,21,364,229,135,2,11.09,-8.80,-5.75
+8,Sun,October 31,1:08PM ET,boxscore,L,OT,0-7,@,Kansas City Chiefs,10,13,23,328,191,137,1,24,414,140,274,,-4.13,-3.42,6.68
+9,Sun,November 7,1:02PM ET,boxscore,L,,0-8,,Chicago Bears,19,22,22,340,294,46,3,19,283,178,105,1,0.06,-5.64,-0.45
+10,Sun,November 14,1:02PM ET,boxscore,W,,1-8,,Detroit Lions,14,12,12,288,139,149,1,19,390,314,76,1,-5.05,7.20,3.02
+11,Sun,November 21,1:02PM ET,boxscore,W,,2-8,@,Cincinnati Bengals,49,31,23,449,308,141,2,26,361,228,133,3,22.31,0.88,-3.62
+12,Sun,November 28,1:02PM ET,boxscore,L,OT,2-9,,Pittsburgh Steelers,16,19,19,329,255,74,2,28,426,220,206,1,-1.51,-5.35,4.80
+13,Sun,December 5,1:05PM ET,boxscore,L,,2-10,@,Minnesota Vikings,14,38,10,239,155,84,5,22,387,177,210,4,-19.28,-0.86,-3.65
+14,Sun,December 12,1:02PM ET,boxscore,W,,3-10,,Cleveland Browns,13,6,19,323,131,192,1,9,187,82,105,3,-0.63,15.44,-4.85
+15,Sun,December 19,1:02PM ET,boxscore,W,,4-10,@,Miami Dolphins,17,14,15,282,211,71,1,22,326,261,65,2,-1.78,-2.59,5.11
+16,Sun,December 26,1:02PM ET,boxscore,L,,4-11,,New England Patriots,3,34,16,369,244,125,7,20,348,131,217,,-22.08,-4.14,-4.55
+17,Sun,January 2,1:03PM ET,boxscore,L,,4-12,@,New York Jets,7,38,6,162,125,37,6,17,388,112,276,1,-33.99,-4.88,5.08

@@ -1,0 +1,23 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 12,4:16PM ET,boxscore,W,,1-0,@,Philadelphia Eagles,27,20,22,299,167,132,2,16,320,171,149,1,2.87,3.30,0.05
+2,Sun,September 19,1:02PM ET,boxscore,W,,2-0,,Buffalo Bills,34,7,18,346,255,91,,14,186,62,124,2,14.91,15.65,-1.26
+3,Mon,September 27,8:40PM ET,boxscore,L,,2-1,@,Chicago Bears,17,20,21,379,316,63,2,18,276,199,77,1,6.00,-3.87,-4.19
+4,Sun,October 3,1:02PM ET,boxscore,W,,3-1,,Detroit Lions,28,26,16,261,169,92,4,24,431,308,123,3,10.37,2.18,-10.44
+5,Sun,October 10,1:02PM ET,boxscore,L,OT,3-2,@,Washington Redskins,13,16,17,427,270,157,2,21,373,322,51,1,-8.28,5.89,-1.52
+6,Sun,October 17,1:02PM ET,boxscore,L,OT,3-3,,Miami Dolphins,20,23,16,359,283,76,1,26,381,231,150,1,6.45,-0.75,-9.52
+7,Sun,October 24,8:30PM ET,boxscore,W,,4-3,,Minnesota Vikings,28,24,20,379,295,84,2,21,402,206,196,3,5.83,-1.90,-1.47
+8,Sun,October 31,1:03PM ET,boxscore,W,,5-3,@,New York Jets,9,0,13,237,156,81,,15,360,241,119,3,-12.33,19.00,-0.68
+9,Sun,November 7,8:30PM ET,boxscore,W,,6-3,,Dallas Cowboys,45,7,26,415,277,138,,12,205,166,39,4,20.76,11.88,3.14
+10,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+11,Sun,November 21,1:05PM ET,boxscore,W,,7-3,@,Minnesota Vikings,31,3,20,374,283,91,,15,300,207,93,2,12.42,14.29,-1.58
+12,Sun,November 28,1:02PM ET,boxscore,L,,7-4,@,Atlanta Falcons,17,20,22,418,341,77,1,19,294,177,117,,14.07,-7.87,-6.74
+13,Sun,December 5,1:02PM ET,boxscore,W,,8-4,,San Francisco 49ers,34,16,21,410,274,136,,11,269,172,97,1,17.88,4.10,-3.17
+14,Sun,December 12,1:03PM ET,boxscore,L,,8-5,@,Detroit Lions,3,7,13,258,192,66,3,15,286,96,190,2,-18.99,7.82,6.43
+15,Sun,December 19,8:30PM ET,boxscore,L,,8-6,@,New England Patriots,27,31,26,369,226,143,2,14,249,136,113,,4.76,-5.47,-4.20
+16,Sun,December 26,4:15PM ET,boxscore,W,,9-6,,New York Giants,45,17,27,515,396,119,1,16,386,296,90,6,25.64,4.10,-4.90
+17,Sun,January 2,4:15PM ET,boxscore,W,,10-6,,Chicago Bears,10,3,14,284,224,60,2,13,227,117,110,2,-11.76,20.50,-1.15
+,,Playoffs,,,,,,,,,,,,,,,,,,,,,,
+Wild Card,Sun,January 9,4:40PM ET,boxscore,W,,11-6,@,Philadelphia Eagles,21,16,20,309,171,138,2,18,352,271,81,1,9.04,-3.59,0.66
+Division,Sat,January 15,8:15PM ET,boxscore,W,,12-6,@,Atlanta Falcons,48,21,28,442,346,96,1,15,194,149,45,4,26.24,11.75,-11.45
+Conf. Champ.,Sun,January 23,3:05PM ET,boxscore,W,,13-6,@,Chicago Bears,21,14,23,356,236,120,2,17,301,218,83,3,-2.96,14.09,-3.80
+SuperBowl,Sun,February 6,6:34PM ET,boxscore,W,,14-6,N,Pittsburgh Steelers,31,25,15,338,288,50,,19,387,261,126,3,7.72,3.89,-2.50

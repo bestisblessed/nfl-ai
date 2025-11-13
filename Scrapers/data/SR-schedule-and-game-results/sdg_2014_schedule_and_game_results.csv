@@ -1,0 +1,18 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Mon,September 8,9:20PM ET,boxscore,L,,0-1,@,Arizona Cardinals,17,18,15,290,238,52,1,22,403,294,109,2,-4.82,-5.41,6.20
+2,Sun,September 14,4:05PM ET,boxscore,W,,1-1,,Seattle Seahawks,30,21,26,377,276,101,,14,288,180,108,1,12.21,-8.54,3.52
+3,Sun,September 21,1:02PM ET,boxscore,W,,2-1,@,Buffalo Bills,22,10,20,333,250,83,,18,292,205,87,,9.74,4.38,-2.42
+4,Sun,September 28,4:05PM ET,boxscore,W,,3-1,,Jacksonville Jaguars,33,14,19,407,365,42,,21,320,235,85,3,15.09,5.58,-2.82
+5,Sun,October 5,4:25PM ET,boxscore,W,,4-1,,New York Jets,31,0,21,439,277,162,1,11,151,60,91,2,15.75,22.08,-6.30
+6,Sun,October 12,4:05PM ET,boxscore,W,,5-1,@,Oakland Raiders,31,28,24,423,307,116,,17,396,282,114,1,11.41,-16.73,1.65
+7,Sun,October 19,4:05PM ET,boxscore,L,,5-2,,Kansas City Chiefs,20,23,19,251,182,69,1,22,365,211,154,,3.59,-10.90,2.14
+8,Thu,October 23,8:26PM ET,boxscore,L,,5-3,@,Denver Broncos,21,35,22,306,245,61,2,27,425,286,139,,11.24,-25.94,3.32
+9,Sun,November 2,1:02PM ET,boxscore,L,,5-4,@,Miami Dolphins,0,37,10,178,128,50,4,28,441,309,132,,-22.68,-19.08,5.26
+10,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+11,Sun,November 16,4:05PM ET,boxscore,W,,6-4,,Oakland Raiders,13,6,18,300,180,120,,9,233,162,71,1,-5.72,15.68,-4.79
+12,Sun,November 23,4:05PM ET,boxscore,W,,7-4,,St. Louis Rams,27,24,19,410,282,128,3,16,317,210,107,3,-2.43,7.89,-2.69
+13,Sun,November 30,1:02PM ET,boxscore,W,,8-4,@,Baltimore Ravens,34,33,31,440,376,64,2,24,350,225,125,,23.96,-20.43,-2.99
+14,Sun,December 7,8:30PM ET,boxscore,L,,8-5,,New England Patriots,14,23,13,216,163,53,1,24,397,310,87,2,-9.73,1.26,-3.53
+15,Sun,December 14,4:05PM ET,boxscore,L,,8-6,,Denver Broncos,10,22,20,288,232,56,2,18,337,226,111,,-3.44,-4.31,-2.08
+16,Sat,December 20,8:26PM ET,boxscore,W,OT,9-6,@,San Francisco 49ers,38,35,28,446,348,98,3,21,447,92,355,3,9.89,-5.49,-1.47
+17,Sun,December 28,1:03PM ET,boxscore,L,,9-7,@,Kansas City Chiefs,7,19,21,361,249,112,3,15,251,140,111,,-12.22,6.72,-6.51

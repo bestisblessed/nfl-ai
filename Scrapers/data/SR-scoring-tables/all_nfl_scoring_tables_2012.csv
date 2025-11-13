@@ -1,0 +1,2264 @@
+Quarter,Time,Team,Detail,Team_1,Team_2,Game_ID
+2,9:10,Giants,Lawrence Tynes 22 yard field goal ,0,3,2012_01_DAL_NYG
+2,1:01,Cowboys,Kevin Ogletree 10 yard pass from Tony Romo (Dan Bailey kick),7,3,2012_01_DAL_NYG
+3,10:24,Cowboys,Kevin Ogletree 40 yard pass from Tony Romo (Dan Bailey kick),14,3,2012_01_DAL_NYG
+3,5:11,Giants,Ahmad Bradshaw 10 yard rush (Lawrence Tynes kick),14,10,2012_01_DAL_NYG
+3,0:40,Cowboys,Dan Bailey 33 yard field goal ,17,10,2012_01_DAL_NYG
+4,5:57,Cowboys,Miles Austin 34 yard pass from Tony Romo (Dan Bailey kick),24,10,2012_01_DAL_NYG
+4,2:36,Giants,Martellus Bennett 9 yard pass from Eli Manning (Lawrence Tynes kick),24,17,2012_01_DAL_NYG
+1,11:23,Colts,Jerrell Freeman 4 yard interception return (Adam Vinatieri kick),7,0,2012_01_IND_CHI
+1,7:19,Bears,Michael Bush 1 yard rush (Robbie Gould kick),7,7,2012_01_IND_CHI
+2,10:33,Bears,Brandon Marshall 3 yard pass from Jay Cutler (Robbie Gould kick),7,14,2012_01_IND_CHI
+2,5:32,Bears,Robbie Gould 35 yard field goal ,7,17,2012_01_IND_CHI
+2,3:17,Colts,Donald Brown 18 yard rush (Adam Vinatieri kick),14,17,2012_01_IND_CHI
+2,0:44,Bears,Michael Bush 1 yard rush (Robbie Gould kick),14,24,2012_01_IND_CHI
+3,11:52,Bears,Matt Forte 6 yard rush (Robbie Gould kick),14,31,2012_01_IND_CHI
+3,10:02,Bears,Robbie Gould 26 yard field goal ,14,34,2012_01_IND_CHI
+4,10:20,Colts,Donnie Avery 4 yard pass from Andrew Luck (Adam Vinatieri kick),21,34,2012_01_IND_CHI
+4,6:08,Bears,Alshon Jeffery 42 yard pass from Jay Cutler (Robbie Gould kick),21,41,2012_01_IND_CHI
+1,9:12,Browns,Phil Dawson 43 yard field goal ,0,3,2012_01_PHI_CLE
+2,14:58,Eagles,Alex Henery 42 yard field goal ,3,3,2012_01_PHI_CLE
+2,0:17,Eagles,Jeremy Maclin 18 yard pass from Michael Vick (Alex Henery kick),10,3,2012_01_PHI_CLE
+3,4:57,Browns,Phil Dawson 42 yard field goal ,10,6,2012_01_PHI_CLE
+4,14:15,Browns,Phil Dawson 22 yard field goal ,10,9,2012_01_PHI_CLE
+4,13:59,Browns,D'Qwell Jackson 27 yard interception return (Phil Dawson kick),10,16,2012_01_PHI_CLE
+4,1:18,Eagles,Clay Harbor 4 yard pass from Michael Vick (Alex Henery kick),17,16,2012_01_PHI_CLE
+1,1:57,Rams,Greg Zuerlein 48 yard field goal ,3,0,2012_01_LAR_DET
+2,9:26,Lions,Joique Bell 1 yard rush (Jason Hanson kick),3,7,2012_01_LAR_DET
+2,2:35,Rams,Greg Zuerlein 29 yard field goal ,6,7,2012_01_LAR_DET
+2,1:28,Rams,Cortland Finnegan 31 yard interception return (Greg Zuerlein kick),13,7,2012_01_LAR_DET
+2,0:20,Lions,Jason Hanson 41 yard field goal ,13,10,2012_01_LAR_DET
+3,9:29,Lions,Jason Hanson 45 yard field goal ,13,13,2012_01_LAR_DET
+4,9:45,Rams,Brandon Gibson 23 yard pass from Sam Bradford (Greg Zuerlein kick),20,13,2012_01_LAR_DET
+4,7:19,Lions,Kevin Smith 5 yard rush (Jason Hanson kick),20,20,2012_01_LAR_DET
+4,1:55,Rams,Greg Zuerlein 46 yard field goal ,23,20,2012_01_LAR_DET
+4,0:10,Lions,Kevin Smith 5 yard pass from Matthew Stafford (Jason Hanson kick),23,27,2012_01_LAR_DET
+1,3:12,Dolphins,Dan Carpenter 39 yard field goal ,3,0,2012_01_MIA_HOU
+2,6:12,Texans,Shayne Graham 35 yard field goal ,3,3,2012_01_MIA_HOU
+2,1:53,Texans,Arian Foster 14 yard rush (Shayne Graham kick),3,10,2012_01_MIA_HOU
+2,0:43,Texans,Arian Foster 2 yard rush (Shayne Graham kick),3,17,2012_01_MIA_HOU
+2,0:07,Texans,Andre Johnson 14 yard pass from Matt Schaub (Shayne Graham kick),3,24,2012_01_MIA_HOU
+3,13:12,Dolphins,Marcus Thigpen 72 yard punt return (Dan Carpenter kick),10,24,2012_01_MIA_HOU
+3,6:30,Texans,Shayne Graham 40 yard field goal ,10,27,2012_01_MIA_HOU
+4,12:22,Texans,Shayne Graham 19 yard field goal ,10,30,2012_01_MIA_HOU
+1,8:51,Falcons,Julio Jones 8 yard pass from Matt Ryan (Matt Bryant kick),7,0,2012_01_ATL_KC
+1,4:02,Chiefs,Ryan Succop 39 yard field goal ,7,3,2012_01_ATL_KC
+1,1:57,Falcons,Matt Bryant 34 yard field goal ,10,3,2012_01_ATL_KC
+2,11:39,Chiefs,Kevin Boss 22 yard pass from Matt Cassel (Ryan Succop kick),10,10,2012_01_ATL_KC
+2,7:48,Falcons,Julio Jones 14 yard pass from Matt Ryan (Matt Bryant kick),17,10,2012_01_ATL_KC
+2,3:38,Chiefs,Matt Cassel 5 yard rush (Ryan Succop kick),17,17,2012_01_ATL_KC
+2,0:10,Falcons,Matt Bryant 21 yard field goal ,20,17,2012_01_ATL_KC
+3,4:54,Falcons,Matt Ryan 5 yard rush (Matt Bryant kick),27,17,2012_01_ATL_KC
+3,3:56,Falcons,Tony Gonzalez 7 yard pass from Matt Ryan (Matt Bryant kick),34,17,2012_01_ATL_KC
+4,14:13,Falcons,Matt Bryant 30 yard field goal ,37,17,2012_01_ATL_KC
+4,10:40,Falcons,Matt Bryant 41 yard field goal ,40,17,2012_01_ATL_KC
+4,0:05,Chiefs,Shaun Draughn 4 yard rush (Ryan Succop kick),40,24,2012_01_ATL_KC
+1,2:52,Jaguars,Josh Scobee 19 yard field goal ,3,0,2012_01_JAX_MIN
+2,5:21,Jaguars,Marcedes Lewis 1 yard pass from Blaine Gabbert (Josh Scobee kick failed),9,0,2012_01_JAX_MIN
+2,0:41,Vikings,Adrian Peterson 3 yard rush (Blair Walsh kick),9,7,2012_01_JAX_MIN
+3,9:42,Vikings,Adrian Peterson 2 yard rush (Blair Walsh kick),9,14,2012_01_JAX_MIN
+3,4:40,Jaguars,Josh Scobee 26 yard field goal ,12,14,2012_01_JAX_MIN
+4,14:09,Vikings,Blair Walsh 20 yard field goal ,12,17,2012_01_JAX_MIN
+4,9:35,Jaguars,Josh Scobee 47 yard field goal ,15,17,2012_01_JAX_MIN
+4,5:33,Vikings,Blair Walsh 42 yard field goal ,15,20,2012_01_JAX_MIN
+4,0:20,Jaguars,Cecil Shorts 39 yard pass from Blaine Gabbert (Justin Blackmon pass from Blaine Gabbert),23,20,2012_01_JAX_MIN
+4,0:00,Vikings,Blair Walsh 55 yard field goal ,23,23,2012_01_JAX_MIN
+OT,11:06,Vikings,Blair Walsh 38 yard field goal ,23,26,2012_01_JAX_MIN
+1,7:05,Redskins,Billy Cundiff 37 yard field goal ,3,0,2012_01_WAS_NO
+1,3:49,Saints,Jimmy Graham 20 yard pass from Drew Brees (Garrett Hartley kick),3,7,2012_01_WAS_NO
+1,3:28,Redskins,Pierre Garcon 88 yard pass from Robert Griffin III (Billy Cundiff kick),10,7,2012_01_WAS_NO
+2,11:33,Redskins,Aldrick Robinson 5 yard pass from Robert Griffin III (Billy Cundiff kick),17,7,2012_01_WAS_NO
+2,6:08,Redskins,Billy Cundiff 41 yard field goal ,20,7,2012_01_WAS_NO
+2,0:40,Saints,Courtney Roby 4 yard blocked punt return (Garrett Hartley kick),20,14,2012_01_WAS_NO
+3,11:24,Redskins,Alfred Morris 1 yard rush (Billy Cundiff kick),27,14,2012_01_WAS_NO
+3,7:10,Redskins,Billy Cundiff 37 yard field goal ,30,14,2012_01_WAS_NO
+3,1:50,Saints,Garrett Hartley 21 yard field goal ,30,17,2012_01_WAS_NO
+4,10:59,Redskins,Billy Cundiff 45 yard field goal ,33,17,2012_01_WAS_NO
+4,6:19,Saints,Lance Moore 33 yard pass from Drew Brees (Darren Sproles run),33,25,2012_01_WAS_NO
+4,3:18,Redskins,Alfred Morris 3 yard rush (Billy Cundiff kick),40,25,2012_01_WAS_NO
+4,2:25,Saints,Darren Sproles 2 yard pass from Drew Brees (Garrett Hartley kick),40,32,2012_01_WAS_NO
+1,6:02,Jets,Jeremy Kerley 12 yard pass from Mark Sanchez (Nick Folk kick),0,7,2012_01_BUF_NYJ
+2,14:53,Jets,Stephen Hill 33 yard pass from Mark Sanchez (Nick Folk kick),0,14,2012_01_BUF_NYJ
+2,12:40,Jets,Jeremy Kerley 68 yard punt return (Nick Folk kick),0,21,2012_01_BUF_NYJ
+2,9:06,Bills,C.J. Spiller 56 yard rush (Rian Lindell kick),7,21,2012_01_BUF_NYJ
+2,1:57,Jets,Nick Folk 25 yard field goal ,7,24,2012_01_BUF_NYJ
+2,0:12,Jets,Nick Folk 39 yard field goal ,7,27,2012_01_BUF_NYJ
+3,13:41,Jets,Antonio Cromartie 40 yard interception return (Nick Folk kick),7,34,2012_01_BUF_NYJ
+3,9:38,Jets,Stephen Hill 17 yard pass from Mark Sanchez (Nick Folk kick),7,41,2012_01_BUF_NYJ
+3,4:26,Bills,Scott Chandler 5 yard pass from Ryan Fitzpatrick (Rian Lindell kick),14,41,2012_01_BUF_NYJ
+4,7:57,Bills,Donald Jones 6 yard pass from Ryan Fitzpatrick (Rian Lindell kick),21,41,2012_01_BUF_NYJ
+4,5:58,Bills,Stevie Johnson 29 yard pass from Ryan Fitzpatrick (Rian Lindell kick),28,41,2012_01_BUF_NYJ
+4,1:17,Jets,Shonn Greene 1 yard rush (Nick Folk kick),28,48,2012_01_BUF_NYJ
+1,8:43,Titans,Rob Bironas 28 yard field goal ,0,3,2012_01_NE_TEN
+1,1:59,Patriots,Aaron Hernandez 23 yard pass from Tom Brady (Stephen Gostkowski kick),7,3,2012_01_NE_TEN
+2,11:07,Patriots,Dont'a Hightower 6 yard defensive fumble return (Stephen Gostkowski kick),14,3,2012_01_NE_TEN
+2,2:00,Patriots,Rob Gronkowski 2 yard pass from Tom Brady (Stephen Gostkowski kick),21,3,2012_01_NE_TEN
+3,10:17,Titans,Nate Washington 29 yard pass from Jake Locker (Rob Bironas kick),21,10,2012_01_NE_TEN
+3,1:04,Patriots,Stevan Ridley 1 yard rush (Stephen Gostkowski kick),28,10,2012_01_NE_TEN
+4,9:17,Titans,Rob Bironas 24 yard field goal ,28,13,2012_01_NE_TEN
+4,4:15,Patriots,Stephen Gostkowski 25 yard field goal ,31,13,2012_01_NE_TEN
+4,0:31,Patriots,Stephen Gostkowski 31 yard field goal ,34,13,2012_01_NE_TEN
+1,7:26,Seahawks,Stephen Hauschka 27 yard field goal ,3,0,2012_01_SEA_ARI
+1,0:34,Cardinals,Jay Feely 21 yard field goal ,3,3,2012_01_SEA_ARI
+2,5:58,Cardinals,LaRod Stephens-Howling 1 yard rush (Jay Feely kick),3,10,2012_01_SEA_ARI
+3,9:59,Cardinals,Jay Feely 31 yard field goal ,3,13,2012_01_SEA_ARI
+3,7:51,Seahawks,Sidney Rice 10 yard pass from Russell Wilson (Stephen Hauschka kick),10,13,2012_01_SEA_ARI
+3,5:13,Seahawks,Stephen Hauschka 47 yard field goal ,13,13,2012_01_SEA_ARI
+4,9:20,Seahawks,Stephen Hauschka 39 yard field goal ,16,13,2012_01_SEA_ARI
+4,4:59,Cardinals,Andre Roberts 6 yard pass from Kevin Kolb (Jay Feely kick),16,20,2012_01_SEA_ARI
+1,4:53,49ers,David Akers 40 yard field goal ,3,0,2012_01_SF_GB
+2,11:10,49ers,Randy Moss 14 yard pass from Alex Smith (David Akers kick),10,0,2012_01_SF_GB
+2,4:40,Packers,Jermichael Finley 1 yard pass from Aaron Rodgers (Mason Crosby kick),10,7,2012_01_SF_GB
+2,0:55,49ers,David Akers 43 yard field goal ,13,7,2012_01_SF_GB
+2,0:00,49ers,David Akers 63 yard field goal ,16,7,2012_01_SF_GB
+3,8:16,49ers,Vernon Davis 4 yard pass from Alex Smith (David Akers kick),23,7,2012_01_SF_GB
+4,11:16,Packers,Randall Cobb 75 yard punt return (Jordy Nelson pass from Aaron Rodgers),23,15,2012_01_SF_GB
+4,8:41,49ers,Frank Gore 23 yard rush (David Akers kick),30,15,2012_01_SF_GB
+4,6:05,Packers,James Jones 10 yard pass from Aaron Rodgers (Mason Crosby kick),30,22,2012_01_SF_GB
+1,5:20,Buccaneers,Mike Williams 6 yard pass from Josh Freeman (Connor Barth kick),0,7,2012_01_CAR_TB
+1,1:20,Buccaneers,Connor Barth 36 yard field goal ,0,10,2012_01_CAR_TB
+2,2:55,Buccaneers,Connor Barth 20 yard field goal ,0,13,2012_01_CAR_TB
+3,8:55,Panthers,Brandon LaFell 22 yard pass from Cam Newton (Justin Medlock kick),7,13,2012_01_CAR_TB
+4,7:58,Buccaneers,Connor Barth 40 yard field goal ,7,16,2012_01_CAR_TB
+4,2:46,Panthers,Justin Medlock 21 yard field goal ,10,16,2012_01_CAR_TB
+2,10:10,Steelers,Shaun Suisham 21 yard field goal ,3,0,2012_01_PIT_DEN
+2,5:16,Broncos,Knowshon Moreno 7 yard rush (Matt Prater kick),3,7,2012_01_PIT_DEN
+2,0:28,Steelers,Heath Miller 4 yard pass from Ben Roethlisberger (Shaun Suisham kick),10,7,2012_01_PIT_DEN
+3,6:05,Steelers,Shaun Suisham 35 yard field goal ,13,7,2012_01_PIT_DEN
+3,5:29,Broncos,Demaryius Thomas 71 yard pass from Peyton Manning (Matt Prater kick),13,14,2012_01_PIT_DEN
+4,14:11,Steelers,Mike Wallace 3 yard pass from Ben Roethlisberger (pass failed),19,14,2012_01_PIT_DEN
+4,9:23,Broncos,Jacob Tamme 1 yard pass from Peyton Manning (Willis McGahee pass from Peyton Manning),19,22,2012_01_PIT_DEN
+4,3:00,Broncos,Matt Prater 26 yard field goal ,19,25,2012_01_PIT_DEN
+4,1:58,Broncos,Tracy Porter 43 yard interception return (run failed),19,31,2012_01_PIT_DEN
+1,12:53,Ravens,Justin Tucker 46 yard field goal ,0,3,2012_01_CIN_BAL
+1,6:03,Ravens,Ray Rice 7 yard rush (Justin Tucker kick),0,10,2012_01_CIN_BAL
+2,14:52,Bengals,Mike Nugent 34 yard field goal ,3,10,2012_01_CIN_BAL
+2,12:25,Ravens,Anquan Boldin 34 yard pass from Joe Flacco (Justin Tucker kick),3,17,2012_01_CIN_BAL
+2,0:18,Bengals,BenJarvus Green-Ellis 6 yard rush (Mike Nugent kick),10,17,2012_01_CIN_BAL
+3,8:59,Bengals,Mike Nugent 19 yard field goal ,13,17,2012_01_CIN_BAL
+3,5:18,Ravens,Dennis Pitta 10 yard pass from Joe Flacco (Justin Tucker kick),13,24,2012_01_CIN_BAL
+3,1:13,Ravens,Justin Tucker 40 yard field goal ,13,27,2012_01_CIN_BAL
+3,0:13,Ravens,Ed Reed 34 yard interception return (Justin Tucker kick),13,34,2012_01_CIN_BAL
+4,14:04,Ravens,Ray Rice 1 yard rush (Justin Tucker kick),13,41,2012_01_CIN_BAL
+4,3:03,Ravens,Justin Tucker 39 yard field goal ,13,44,2012_01_CIN_BAL
+1,4:56,Raiders,Sebastian Janikowski 51 yard field goal ,0,3,2012_01_LAC_LVR
+1,1:00,Chargers,Nate Kaeding 23 yard field goal ,3,3,2012_01_LAC_LVR
+2,3:10,Chargers,Malcom Floyd 6 yard pass from Philip Rivers (Nate Kaeding kick),10,3,2012_01_LAC_LVR
+2,0:04,Raiders,Sebastian Janikowski 19 yard field goal ,10,6,2012_01_LAC_LVR
+3,6:01,Chargers,Nate Kaeding 28 yard field goal ,13,6,2012_01_LAC_LVR
+3,1:49,Chargers,Nate Kaeding 19 yard field goal ,16,6,2012_01_LAC_LVR
+4,12:48,Chargers,Nate Kaeding 41 yard field goal ,19,6,2012_01_LAC_LVR
+4,5:06,Chargers,Nate Kaeding 45 yard field goal ,22,6,2012_01_LAC_LVR
+4,0:54,Raiders,Rod Streater 2 yard pass from Carson Palmer (Rod Streater pass from Carson Palmer),22,14,2012_01_LAC_LVR
+2,12:56,Packers,Mason Crosby 48 yard field goal ,0,3,2012_02_CHI_GB
+2,1:50,Packers,Tom Crabtree 27 yard pass from Tim Masthay (Mason Crosby kick),0,10,2012_02_CHI_GB
+2,0:00,Packers,Mason Crosby 35 yard field goal ,0,13,2012_02_CHI_GB
+3,8:49,Bears,Robbie Gould 45 yard field goal ,3,13,2012_02_CHI_GB
+4,11:38,Packers,Mason Crosby 54 yard field goal ,3,16,2012_02_CHI_GB
+4,11:17,Packers,Donald Driver 26 yard pass from Aaron Rodgers (Mason Crosby kick),3,23,2012_02_CHI_GB
+4,6:49,Bears,Kellen Davis 21 yard pass from Jay Cutler (Robbie Gould kick),10,23,2012_02_CHI_GB
+1,2:01,Bills,C.J. Spiller 17 yard rush (Rian Lindell kick),0,7,2012_02_KC_BUF
+2,12:29,Bills,C.J. Spiller 5 yard rush (Rian Lindell kick),0,14,2012_02_KC_BUF
+2,3:29,Bills,Scott Chandler 10 yard pass from Ryan Fitzpatrick (Rian Lindell kick),0,21,2012_02_KC_BUF
+3,7:32,Chiefs,Ryan Succop 33 yard field goal ,3,21,2012_02_KC_BUF
+3,5:35,Bills,Stevie Johnson 49 yard pass from Ryan Fitzpatrick (Rian Lindell kick),3,28,2012_02_KC_BUF
+3,3:46,Bills,Leodis McKelvin 88 yard punt return (Rian Lindell kick),3,35,2012_02_KC_BUF
+4,6:26,Chiefs,Dwayne Bowe 33 yard pass from Matt Cassel (Ryan Succop kick),10,35,2012_02_KC_BUF
+4,1:10,Chiefs,Dwayne Bowe 2 yard pass from Matt Cassel (Ryan Succop kick),17,35,2012_02_KC_BUF
+1,9:39,Saints,Jimmy Graham 1 yard pass from Drew Brees (Garrett Hartley kick),7,0,2012_02_NO_CAR
+1,5:33,Panthers,Charles Godfrey 9 yard interception return (Justin Medlock kick),7,7,2012_02_NO_CAR
+1,1:26,Saints,Garrett Hartley 22 yard field goal ,10,7,2012_02_NO_CAR
+2,7:08,Saints,Garrett Hartley 53 yard field goal ,13,7,2012_02_NO_CAR
+2,3:33,Panthers,Jonathan Stewart 17 yard pass from Cam Newton (Justin Medlock kick),13,14,2012_02_NO_CAR
+2,0:11,Panthers,Mike Tolbert 2 yard rush (Justin Medlock kick),13,21,2012_02_NO_CAR
+3,8:17,Panthers,DeAngelo Williams 3 yard rush (Justin Medlock kick),13,28,2012_02_NO_CAR
+4,12:53,Saints,Mark Ingram 1 yard rush (Garrett Hartley kick),20,28,2012_02_NO_CAR
+4,9:55,Panthers,Cam Newton 5 yard rush (Justin Medlock kick),20,35,2012_02_NO_CAR
+4,1:55,Saints,Drew Brees 1 yard rush (Garrett Hartley kick),27,35,2012_02_NO_CAR
+1,13:13,Bengals,Adam Jones 81 yard punt return (Mike Nugent kick),0,7,2012_02_CLE_CIN
+1,9:01,Browns,Phil Dawson 50 yard field goal ,3,7,2012_02_CLE_CIN
+2,10:27,Bengals,A.J. Green 10 yard pass from Andy Dalton (Mike Nugent kick),3,14,2012_02_CLE_CIN
+2,8:05,Browns,Trent Richardson 32 yard rush (Phil Dawson kick),10,14,2012_02_CLE_CIN
+2,4:45,Bengals,Mike Nugent 39 yard field goal ,10,17,2012_02_CLE_CIN
+3,11:58,Bengals,Brandon Tate 44 yard pass from Andy Dalton (Mike Nugent kick),10,24,2012_02_CLE_CIN
+3,0:07,Browns,Trent Richardson 23 yard pass from Brandon Weeden (Phil Dawson kick),17,24,2012_02_CLE_CIN
+4,10:44,Bengals,Andrew Hawkins 50 yard pass from Andy Dalton (Mike Nugent kick),17,31,2012_02_CLE_CIN
+4,7:11,Browns,Greg Little 24 yard pass from Brandon Weeden (Phil Dawson kick),24,31,2012_02_CLE_CIN
+4,2:09,Bengals,Mike Nugent 37 yard field goal ,24,34,2012_02_CLE_CIN
+4,0:20,Browns,Phil Dawson 25 yard field goal ,27,34,2012_02_CLE_CIN
+1,7:48,Vikings,Blair Walsh 51 yard field goal ,3,0,2012_02_MIN_IND
+1,0:49,Colts,Dwayne Allen 3 yard pass from Andrew Luck (Adam Vinatieri kick),3,7,2012_02_MIN_IND
+2,11:38,Vikings,Blair Walsh 29 yard field goal ,6,7,2012_02_MIN_IND
+2,1:49,Colts,Adam Vinatieri 26 yard field goal ,6,10,2012_02_MIN_IND
+2,0:07,Colts,Reggie Wayne 30 yard pass from Andrew Luck (Adam Vinatieri kick),6,17,2012_02_MIN_IND
+3,7:06,Colts,Adam Vinatieri 45 yard field goal ,6,20,2012_02_MIN_IND
+4,5:07,Vikings,Stephen Burton 7 yard pass from Christian Ponder (Blair Walsh kick),13,20,2012_02_MIN_IND
+4,0:31,Vikings,Kyle Rudolph 6 yard pass from Christian Ponder (Blair Walsh kick),20,20,2012_02_MIN_IND
+4,0:08,Colts,Adam Vinatieri 53 yard field goal ,20,23,2012_02_MIN_IND
+1,9:25,Texans,Shayne Graham 31 yard field goal ,3,0,2012_02_HOU_JAX
+1,0:15,Texans,Arian Foster 1 yard rush (Shayne Graham kick),10,0,2012_02_HOU_JAX
+2,6:49,Texans,Ben Tate 8 yard rush (Shayne Graham kick),17,0,2012_02_HOU_JAX
+3,11:44,Jaguars,Maurice Jones-Drew 5 yard pass from Blaine Gabbert (Josh Scobee kick),17,7,2012_02_HOU_JAX
+3,2:30,Texans,Ben Tate 2 yard rush (Shayne Graham kick),24,7,2012_02_HOU_JAX
+4,7:20,Texans,Shayne Graham 37 yard field goal ,27,7,2012_02_HOU_JAX
+1,9:19,Dolphins,Ryan Tannehill 2 yard rush (Dan Carpenter kick),0,7,2012_02_LVR_MIA
+1,0:11,Raiders,Mike Goodson 64 yard pass from Carson Palmer (Sebastian Janikowski kick),7,7,2012_02_LVR_MIA
+2,0:46,Raiders,Sebastian Janikowski 25 yard field goal ,10,7,2012_02_LVR_MIA
+3,7:57,Dolphins,Reggie Bush 23 yard rush (Dan Carpenter kick),10,14,2012_02_LVR_MIA
+3,3:52,Dolphins,Reggie Bush 65 yard rush (Dan Carpenter kick),10,21,2012_02_LVR_MIA
+4,14:50,Raiders,Sebastian Janikowski 27 yard field goal ,13,21,2012_02_LVR_MIA
+4,11:45,Dolphins,Anthony Fasano 14 yard pass from Ryan Tannehill (Dan Carpenter kick),13,28,2012_02_LVR_MIA
+4,5:06,Dolphins,Lamar Miller 15 yard rush (Dan Carpenter kick),13,35,2012_02_LVR_MIA
+1,8:42,Cardinals,Jay Feely 38 yard field goal ,3,0,2012_02_ARI_NE
+1,7:42,Cardinals,Jay Feely 47 yard field goal ,6,0,2012_02_ARI_NE
+1,2:22,Patriots,Stephen Gostkowski 46 yard field goal ,6,3,2012_02_ARI_NE
+2,9:08,Patriots,Stephen Gostkowski 34 yard field goal ,6,6,2012_02_ARI_NE
+3,12:53,Patriots,Stephen Gostkowski 51 yard field goal ,6,9,2012_02_ARI_NE
+3,8:52,Cardinals,Andre Roberts 2 yard pass from Kevin Kolb (Jay Feely kick),13,9,2012_02_ARI_NE
+4,14:00,Cardinals,Kevin Kolb 5 yard rush (Jay Feely kick),20,9,2012_02_ARI_NE
+4,6:45,Patriots,Stephen Gostkowski 53 yard field goal ,20,12,2012_02_ARI_NE
+4,2:06,Patriots,Rob Gronkowski 5 yard pass from Tom Brady (pass failed),20,18,2012_02_ARI_NE
+1,12:43,Giants,Lawrence Tynes 37 yard field goal ,0,3,2012_02_TB_NYG
+1,8:42,Buccaneers,Connor Barth 45 yard field goal ,3,3,2012_02_TB_NYG
+1,2:54,Giants,Lawrence Tynes 24 yard field goal ,3,6,2012_02_TB_NYG
+2,13:48,Buccaneers,Vincent Jackson 29 yard pass from Josh Freeman (Connor Barth kick),10,6,2012_02_TB_NYG
+2,6:19,Buccaneers,Doug Martin 8 yard rush (Connor Barth kick),17,6,2012_02_TB_NYG
+2,1:54,Giants,Hakeem Nicks 23 yard pass from Eli Manning (Lawrence Tynes kick),17,13,2012_02_TB_NYG
+2,0:08,Buccaneers,Eric Wright 60 yard interception return (Connor Barth kick),24,13,2012_02_TB_NYG
+3,13:14,Buccaneers,Connor Barth 52 yard field goal ,27,13,2012_02_TB_NYG
+3,0:39,Giants,Lawrence Tynes 36 yard field goal ,27,16,2012_02_TB_NYG
+4,12:22,Giants,Lawrence Tynes 24 yard field goal ,27,19,2012_02_TB_NYG
+4,6:48,Giants,Victor Cruz 80 yard pass from Eli Manning (Andre Brown run),27,27,2012_02_TB_NYG
+4,3:59,Giants,Martellus Bennett 33 yard pass from Eli Manning (Lawrence Tynes kick),27,34,2012_02_TB_NYG
+4,1:58,Buccaneers,Mike Williams 41 yard pass from Josh Freeman (Connor Barth kick),34,34,2012_02_TB_NYG
+4,0:31,Giants,Andre Brown 2 yard rush (Lawrence Tynes kick),34,41,2012_02_TB_NYG
+1,5:40,Eagles,LeSean McCoy 1 yard rush (Alex Henery kick),0,7,2012_02_BAL_PHI
+1,2:08,Ravens,Vonta Leach 5 yard rush (Justin Tucker kick),7,7,2012_02_BAL_PHI
+2,8:32,Ravens,Jacoby Jones 21 yard pass from Joe Flacco (Justin Tucker kick),14,7,2012_02_BAL_PHI
+2,0:01,Ravens,Justin Tucker 56 yard field goal ,17,7,2012_02_BAL_PHI
+3,10:40,Eagles,Jeremy Maclin 23 yard pass from Michael Vick (Alex Henery kick),17,14,2012_02_BAL_PHI
+3,5:30,Eagles,Alex Henery 23 yard field goal ,17,17,2012_02_BAL_PHI
+4,11:28,Ravens,Justin Tucker 51 yard field goal ,20,17,2012_02_BAL_PHI
+4,4:43,Ravens,Justin Tucker 48 yard field goal ,23,17,2012_02_BAL_PHI
+4,1:55,Eagles,Michael Vick 1 yard rush (Alex Henery kick),23,24,2012_02_BAL_PHI
+1,11:43,Seahawks,Stephen Hauschka 21 yard field goal ,0,3,2012_02_DAL_SEA
+1,10:23,Seahawks,Jeron Johnson 3 yard blocked punt return (Stephen Hauschka kick),0,10,2012_02_DAL_SEA
+2,12:09,Cowboys,Miles Austin 22 yard pass from Tony Romo (Dan Bailey kick),7,10,2012_02_DAL_SEA
+2,1:57,Seahawks,Stephen Hauschka 25 yard field goal ,7,13,2012_02_DAL_SEA
+3,5:05,Seahawks,Anthony McCoy 22 yard pass from Russell Wilson (Stephen Hauschka kick),7,20,2012_02_DAL_SEA
+4,7:57,Seahawks,Marshawn Lynch 3 yard rush (Stephen Hauschka kick),7,27,2012_02_DAL_SEA
+1,14:49,Redskins,Josh Wilson 30 yard defensive fumble return (Billy Cundiff kick),7,0,2012_02_WAS_LAR
+1,9:05,Rams,Greg Zuerlein 39 yard field goal ,7,3,2012_02_WAS_LAR
+1,0:19,Redskins,Robert Griffin III 5 yard rush (Billy Cundiff kick),14,3,2012_02_WAS_LAR
+2,8:17,Rams,Greg Zuerlein 33 yard field goal ,14,6,2012_02_WAS_LAR
+2,6:19,Redskins,Leonard Hankerson 68 yard pass from Robert Griffin III (Billy Cundiff kick),21,6,2012_02_WAS_LAR
+2,1:58,Rams,Danny Amendola 1 yard pass from Sam Bradford (Greg Zuerlein kick),21,13,2012_02_WAS_LAR
+2,0:02,Rams,Greg Zuerlein 42 yard field goal ,21,16,2012_02_WAS_LAR
+3,10:23,Rams,Brandon Gibson 34 yard pass from Sam Bradford (Greg Zuerlein kick),21,23,2012_02_WAS_LAR
+3,5:27,Redskins,Robert Griffin III 7 yard rush (Billy Cundiff kick),28,23,2012_02_WAS_LAR
+4,14:55,Rams,Matthew Mulligan 1 yard pass from Sam Bradford (Daryl Richardson run),28,31,2012_02_WAS_LAR
+1,9:07,Steelers,Shaun Suisham 45 yard field goal ,0,3,2012_02_NYJ_PIT
+1,4:19,Jets,Santonio Holmes 14 yard pass from Mark Sanchez (Nick Folk kick),7,3,2012_02_NYJ_PIT
+2,14:56,Steelers,Shaun Suisham 45 yard field goal ,7,6,2012_02_NYJ_PIT
+2,9:35,Jets,Nick Folk 38 yard field goal ,10,6,2012_02_NYJ_PIT
+2,1:03,Steelers,Heath Miller 1 yard pass from Ben Roethlisberger (Shaun Suisham kick),10,13,2012_02_NYJ_PIT
+3,8:44,Steelers,Mike Wallace 37 yard pass from Ben Roethlisberger (Shaun Suisham kick),10,20,2012_02_NYJ_PIT
+4,3:34,Steelers,Isaac Redman 2 yard rush (Shaun Suisham kick),10,27,2012_02_NYJ_PIT
+1,8:52,Chargers,Dante Rosario 11 yard pass from Philip Rivers (Nate Kaeding kick),0,7,2012_02_TEN_LAC
+1,4:15,Chargers,Dante Rosario 4 yard pass from Philip Rivers (Nate Kaeding kick),0,14,2012_02_TEN_LAC
+2,12:15,Chargers,Nate Kaeding 26 yard field goal ,0,17,2012_02_TEN_LAC
+2,4:42,Titans,Rob Bironas 23 yard field goal ,3,17,2012_02_TEN_LAC
+3,3:29,Chargers,Dante Rosario 15 yard pass from Philip Rivers (Nate Kaeding kick),3,24,2012_02_TEN_LAC
+3,2:20,Titans,Kendall Wright 15 yard pass from Jake Locker (Rob Bironas kick),10,24,2012_02_TEN_LAC
+4,10:33,Chargers,Jackie Battle 1 yard rush (Nate Kaeding kick),10,31,2012_02_TEN_LAC
+4,1:13,Chargers,Jackie Battle 1 yard rush (Nate Kaeding kick),10,38,2012_02_TEN_LAC
+1,12:25,49ers,Vernon Davis 21 yard pass from Alex Smith (David Akers kick),0,7,2012_02_DET_SF
+1,7:47,Lions,Jason Hanson 38 yard field goal ,3,7,2012_02_DET_SF
+1,6:43,Lions,Jason Hanson 41 yard field goal ,6,7,2012_02_DET_SF
+2,14:57,49ers,Frank Gore 1 yard rush (David Akers kick),6,14,2012_02_DET_SF
+3,9:42,49ers,David Akers 36 yard field goal ,6,17,2012_02_DET_SF
+3,3:40,Lions,Jason Hanson 40 yard field goal ,9,17,2012_02_DET_SF
+4,14:42,49ers,David Akers 48 yard field goal ,9,20,2012_02_DET_SF
+4,9:16,Lions,Jason Hanson 48 yard field goal ,12,20,2012_02_DET_SF
+4,3:04,49ers,Vernon Davis 23 yard pass from Alex Smith (David Akers kick),12,27,2012_02_DET_SF
+4,1:29,Lions,Brandon Pettigrew 9 yard pass from Matthew Stafford (Jason Hanson kick),19,27,2012_02_DET_SF
+1,13:20,Falcons,Michael Turner 1 yard rush (Matt Bryant kick),0,7,2012_02_DEN_ATL
+1,9:46,Falcons,Matt Bryant 37 yard field goal ,0,10,2012_02_DEN_ATL
+2,10:05,Falcons,Matt Bryant 42 yard field goal ,0,13,2012_02_DEN_ATL
+2,4:39,Falcons,Tony Gonzalez 1 yard pass from Matt Ryan (Matt Bryant kick),0,20,2012_02_DEN_ATL
+2,0:06,Broncos,Demaryius Thomas 17 yard pass from Peyton Manning (Matt Prater kick),7,20,2012_02_DEN_ATL
+3,7:08,Falcons,Roddy White 4 yard pass from Matt Ryan (Matt Bryant kick),7,27,2012_02_DEN_ATL
+4,11:48,Broncos,Willis McGahee 2 yard rush (Matt Prater kick),14,27,2012_02_DEN_ATL
+4,3:25,Broncos,Willis McGahee 2 yard rush (Matt Prater kick),21,27,2012_02_DEN_ATL
+1,11:38,Giants,Martellus Bennett 14 yard pass from Eli Manning (Lawrence Tynes kick),7,0,2012_03_NYG_CAR
+1,3:46,Giants,Lawrence Tynes 47 yard field goal ,10,0,2012_03_NYG_CAR
+2,12:03,Giants,Andre Brown 1 yard rush (Lawrence Tynes kick),17,0,2012_03_NYG_CAR
+2,3:13,Giants,Lawrence Tynes 49 yard field goal ,20,0,2012_03_NYG_CAR
+3,12:49,Giants,Lawrence Tynes 30 yard field goal ,23,0,2012_03_NYG_CAR
+3,6:25,Panthers,Cam Newton 1 yard rush (Justin Medlock kick),23,7,2012_03_NYG_CAR
+3,0:50,Giants,Lawrence Tynes 36 yard field goal ,26,7,2012_03_NYG_CAR
+4,9:40,Giants,Andre Brown 1 yard rush (Lawrence Tynes kick),33,7,2012_03_NYG_CAR
+4,1:09,Giants,Lawrence Tynes 27 yard field goal ,36,7,2012_03_NYG_CAR
+1,10:41,Bears,Robbie Gould 54 yard field goal ,0,3,2012_03_LAR_CHI
+2,1:56,Bears,Michael Bush 3 yard rush (Robbie Gould kick),0,10,2012_03_LAR_CHI
+2,0:22,Rams,Greg Zuerlein 56 yard field goal ,3,10,2012_03_LAR_CHI
+3,6:14,Rams,Greg Zuerlein 46 yard field goal ,6,10,2012_03_LAR_CHI
+4,9:45,Bears,Robbie Gould 22 yard field goal ,6,13,2012_03_LAR_CHI
+4,9:06,Bears,Major Wright 45 yard interception return (Robbie Gould kick),6,20,2012_03_LAR_CHI
+4,2:18,Bears,Robbie Gould 37 yard field goal ,6,23,2012_03_LAR_CHI
+1,9:04,Bills,T.J. Graham 9 yard pass from Ryan Fitzpatrick (Rian Lindell kick),7,0,2012_03_BUF_CLE
+1,5:06,Bills,C.J. Spiller 32 yard pass from Ryan Fitzpatrick (Rian Lindell kick),14,0,2012_03_BUF_CLE
+2,2:12,Browns,Trent Richardson 6 yard rush (Phil Dawson kick),14,7,2012_03_BUF_CLE
+3,10:38,Bills,Rian Lindell 37 yard field goal ,17,7,2012_03_BUF_CLE
+3,2:27,Browns,Travis Benjamin 22 yard pass from Brandon Weeden (Phil Dawson kick),17,14,2012_03_BUF_CLE
+4,9:08,Bills,Stevie Johnson 9 yard pass from Ryan Fitzpatrick (Rian Lindell kick),24,14,2012_03_BUF_CLE
+1,10:51,Buccaneers,Luke Stocker 1 yard pass from Josh Freeman (Connor Barth kick),7,0,2012_03_TB_DAL
+1,1:22,Cowboys,DeMarco Murray 11 yard rush (Dan Bailey kick),7,7,2012_03_TB_DAL
+2,2:51,Cowboys,Dan Bailey 32 yard field goal ,7,10,2012_03_TB_DAL
+4,11:10,Cowboys,Dan Bailey 26 yard field goal ,7,13,2012_03_TB_DAL
+4,2:43,Cowboys,Dan Bailey 22 yard field goal ,7,16,2012_03_TB_DAL
+4,0:40,Buccaneers,Connor Barth 28 yard field goal ,10,16,2012_03_TB_DAL
+1,7:13,Jaguars,Josh Scobee 44 yard field goal ,3,0,2012_03_JAX_IND
+1,3:42,Colts,T.Y. Hilton 40 yard pass from Andrew Luck (Adam Vinatieri kick),3,7,2012_03_JAX_IND
+2,0:37,Colts,Mewelde Moore 4 yard pass from Andrew Luck (Adam Vinatieri kick),3,14,2012_03_JAX_IND
+3,12:05,Jaguars,Maurice Jones-Drew 59 yard rush (Josh Scobee kick),10,14,2012_03_JAX_IND
+3,2:55,Jaguars,Josh Scobee 47 yard field goal ,13,14,2012_03_JAX_IND
+4,11:02,Jaguars,Josh Scobee 26 yard field goal ,16,14,2012_03_JAX_IND
+4,0:56,Colts,Adam Vinatieri 37 yard field goal ,16,17,2012_03_JAX_IND
+4,0:45,Jaguars,Cecil Shorts 80 yard pass from Blaine Gabbert (run failed),22,17,2012_03_JAX_IND
+1,9:14,Dolphins,Daniel Thomas 1 yard rush (Dan Carpenter kick),0,7,2012_03_NYJ_MIA
+2,8:26,Dolphins,Dan Carpenter 21 yard field goal ,0,10,2012_03_NYJ_MIA
+2,1:50,Jets,Nick Folk 33 yard field goal ,3,10,2012_03_NYJ_MIA
+3,14:16,Jets,LaRon Landry 18 yard interception return (Nick Folk kick),10,10,2012_03_NYJ_MIA
+3,1:45,Dolphins,Jorvorskie Lane 1 yard rush (Dan Carpenter kick),10,17,2012_03_NYJ_MIA
+4,13:29,Jets,Nick Folk 20 yard field goal ,13,17,2012_03_NYJ_MIA
+4,3:01,Jets,Jeremy Kerley 7 yard pass from Mark Sanchez (Nick Folk kick),20,17,2012_03_NYJ_MIA
+4,0:16,Dolphins,Dan Carpenter 41 yard field goal ,20,20,2012_03_NYJ_MIA
+OT,6:04,Jets,Nick Folk 33 yard field goal ,23,20,2012_03_NYJ_MIA
+1,7:20,Vikings,Kyle Rudolph 1 yard pass from Christian Ponder (Blair Walsh kick),0,7,2012_03_SF_MIN
+2,12:13,49ers,David Akers 29 yard field goal ,3,7,2012_03_SF_MIN
+2,5:29,Vikings,Christian Ponder 23 yard rush (Blair Walsh kick),3,14,2012_03_SF_MIN
+2,0:00,Vikings,Blair Walsh 52 yard field goal ,3,17,2012_03_SF_MIN
+3,12:46,49ers,David Akers 29 yard field goal ,6,17,2012_03_SF_MIN
+3,6:17,49ers,Vernon Davis 1 yard pass from Alex Smith (David Akers kick),13,17,2012_03_SF_MIN
+4,14:17,Vikings,Kyle Rudolph 2 yard pass from Christian Ponder (Blair Walsh kick),13,24,2012_03_SF_MIN
+1,12:18,Saints,Lance Moore 9 yard pass from Drew Brees (Garrett Hartley kick),0,7,2012_03_KC_NO
+1,4:51,Chiefs,Ryan Succop 25 yard field goal ,3,7,2012_03_KC_NO
+2,14:55,Saints,Garrett Hartley 40 yard field goal ,3,10,2012_03_KC_NO
+2,4:41,Chiefs,Ryan Succop 45 yard field goal ,6,10,2012_03_KC_NO
+3,13:10,Saints,Jimmy Graham 1 yard pass from Drew Brees (Garrett Hartley kick),6,17,2012_03_KC_NO
+3,5:36,Saints,Jed Collins 6 yard pass from Drew Brees (Garrett Hartley kick),6,24,2012_03_KC_NO
+3,5:18,Chiefs,Jamaal Charles 91 yard rush (Ryan Succop kick),13,24,2012_03_KC_NO
+4,13:40,Chiefs,Ryan Succop 34 yard field goal ,16,24,2012_03_KC_NO
+4,9:11,Chiefs,Ryan Succop 38 yard field goal ,19,24,2012_03_KC_NO
+4,5:33,Chiefs,"Safety, Drew Brees sacked by Justin Houston in the endzone. ",21,24,2012_03_KC_NO
+4,0:03,Chiefs,Ryan Succop 43 yard field goal ,24,24,2012_03_KC_NO
+OT,6:27,Chiefs,Ryan Succop 31 yard field goal ,27,24,2012_03_KC_NO
+1,11:38,Lions,Jason Hanson 47 yard field goal ,3,0,2012_03_DET_TEN
+1,6:36,Lions,Jason Hanson 53 yard field goal ,6,0,2012_03_DET_TEN
+1,2:02,Titans,Rob Bironas 31 yard field goal ,6,3,2012_03_DET_TEN
+1,0:33,Titans,Tommie Campbell 65 yard punt return (Rob Bironas kick),6,10,2012_03_DET_TEN
+2,13:00,Titans,Jared Cook 61 yard pass from Jake Locker (Rob Bironas kick),6,17,2012_03_DET_TEN
+2,6:30,Lions,Jason Hanson 33 yard field goal ,9,17,2012_03_DET_TEN
+2,0:00,Titans,Rob Bironas 38 yard field goal ,9,20,2012_03_DET_TEN
+3,6:36,Lions,Mikel Leshoure 1 yard rush (Jason Hanson kick),16,20,2012_03_DET_TEN
+4,12:39,Lions,Jason Hanson 26 yard field goal ,19,20,2012_03_DET_TEN
+4,6:53,Lions,Nate Burleson 3 yard pass from Matthew Stafford (Nate Burleson pass from Matthew Stafford),27,20,2012_03_DET_TEN
+4,6:41,Titans,Darius Reynaud 105 yard kickoff return (Rob Bironas kick),27,27,2012_03_DET_TEN
+4,3:11,Titans,Nate Washington 71 yard pass from Jake Locker (Rob Bironas kick),27,34,2012_03_DET_TEN
+4,1:16,Titans,Alterraun Verner 72 yard defensive fumble return (Rob Bironas kick),27,41,2012_03_DET_TEN
+4,0:18,Lions,Calvin Johnson 3 yard pass from Shaun Hill (Jason Hanson kick),34,41,2012_03_DET_TEN
+4,0:00,Lions,Titus Young 46 yard pass from Shaun Hill (Jason Hanson kick),41,41,2012_03_DET_TEN
+OT,10:36,Titans,Rob Bironas 26 yard field goal ,41,44,2012_03_DET_TEN
+1,14:43,Bengals,A.J. Green 73 yard pass from Mohamed Sanu (Mike Nugent kick),7,0,2012_03_CIN_WAS
+1,11:00,Redskins,Rob Jackson interception in end zone (Billy Cundiff kick),7,7,2012_03_CIN_WAS
+1,3:28,Bengals,Armon Binns 48 yard pass from Andy Dalton (Mike Nugent kick),14,7,2012_03_CIN_WAS
+2,4:36,Bengals,Mike Nugent 47 yard field goal ,17,7,2012_03_CIN_WAS
+2,3:13,Bengals,BenJarvus Green-Ellis 1 yard rush (Mike Nugent kick),24,7,2012_03_CIN_WAS
+2,0:31,Redskins,Billy Cundiff 36 yard field goal ,24,10,2012_03_CIN_WAS
+3,10:23,Redskins,Alfred Morris 7 yard rush (Billy Cundiff kick),24,17,2012_03_CIN_WAS
+3,3:29,Redskins,Santana Moss 3 yard pass from Robert Griffin III (Billy Cundiff kick),24,24,2012_03_CIN_WAS
+4,11:24,Bengals,Jermaine Gresham 6 yard pass from Andy Dalton (Mike Nugent kick),31,24,2012_03_CIN_WAS
+4,7:08,Bengals,Andrew Hawkins 59 yard pass from Andy Dalton (Mike Nugent kick),38,24,2012_03_CIN_WAS
+4,3:35,Redskins,Robert Griffin III 2 yard rush (Billy Cundiff kick),38,31,2012_03_CIN_WAS
+1,10:18,Cardinals,Jay Feely 47 yard field goal ,0,3,2012_03_PHI_ARI
+1,1:04,Cardinals,Michael Floyd 8 yard pass from Kevin Kolb (Jay Feely kick),0,10,2012_03_PHI_ARI
+2,7:30,Cardinals,Larry Fitzgerald 37 yard pass from Kevin Kolb (Jay Feely kick),0,17,2012_03_PHI_ARI
+2,0:00,Cardinals,James Sanders 93 yard defensive fumble return (Jay Feely kick),0,24,2012_03_PHI_ARI
+3,5:07,Eagles,Alex Henery 36 yard field goal ,3,24,2012_03_PHI_ARI
+3,0:02,Eagles,Alex Henery 40 yard field goal ,6,24,2012_03_PHI_ARI
+4,3:52,Cardinals,Jay Feely 27 yard field goal ,6,27,2012_03_PHI_ARI
+1,9:43,Falcons,Jacquizz Rodgers 8 yard pass from Matt Ryan (run failed),6,0,2012_03_ATL_LAC
+2,2:32,Falcons,Tony Gonzalez 7 yard pass from Matt Ryan (Matt Bryant kick),13,0,2012_03_ATL_LAC
+2,0:54,Falcons,Julio Jones 9 yard pass from Matt Ryan (Matt Bryant kick),20,0,2012_03_ATL_LAC
+3,11:10,Chargers,Nate Kaeding 41 yard field goal ,20,3,2012_03_ATL_LAC
+4,8:51,Falcons,Michael Turner 7 yard rush (Matt Bryant kick),27,3,2012_03_ATL_LAC
+1,13:20,Broncos,"Safety, Matt Schaub sacked by Elvis Dumervil in end zone. ",0,2,2012_03_HOU_DEN
+1,8:41,Broncos,Matt Prater 32 yard field goal ,0,5,2012_03_HOU_DEN
+1,6:28,Texans,Andre Johnson 60 yard pass from Matt Schaub (Shayne Graham kick),7,5,2012_03_HOU_DEN
+2,10:47,Texans,Arian Foster 3 yard pass from Matt Schaub (Shayne Graham kick),14,5,2012_03_HOU_DEN
+2,8:54,Texans,Kevin Walter 52 yard pass from Matt Schaub (Shayne Graham kick),21,5,2012_03_HOU_DEN
+2,5:44,Broncos,Matt Prater 23 yard field goal ,21,8,2012_03_HOU_DEN
+2,0:01,Broncos,Matt Prater 53 yard field goal ,21,11,2012_03_HOU_DEN
+3,9:11,Texans,Shayne Graham 41 yard field goal ,24,11,2012_03_HOU_DEN
+3,1:33,Texans,Owen Daniels 14 yard pass from Matt Schaub (Shayne Graham kick),31,11,2012_03_HOU_DEN
+4,9:49,Broncos,Brandon Stokley 38 yard pass from Peyton Manning (Matt Prater kick),31,18,2012_03_HOU_DEN
+4,3:00,Broncos,Joel Dreessen 6 yard pass from Peyton Manning (Matt Prater kick),31,25,2012_03_HOU_DEN
+1,11:33,Steelers,Heath Miller 4 yard pass from Ben Roethlisberger (Shaun Suisham kick),7,0,2012_03_PIT_LVR
+1,10:33,Raiders,Darren McFadden 64 yard rush (Sebastian Janikowski kick),7,7,2012_03_PIT_LVR
+1,3:49,Steelers,Heath Miller 4 yard pass from Ben Roethlisberger (Shaun Suisham kick),14,7,2012_03_PIT_LVR
+2,1:54,Raiders,Darrius Heyward-Bey 3 yard pass from Carson Palmer (Sebastian Janikowski kick),14,14,2012_03_PIT_LVR
+2,0:00,Steelers,Shaun Suisham 33 yard field goal ,17,14,2012_03_PIT_LVR
+3,11:40,Steelers,Mike Wallace 22 yard pass from Ben Roethlisberger (Shaun Suisham kick),24,14,2012_03_PIT_LVR
+3,6:35,Raiders,Richard Gordon 1 yard pass from Carson Palmer (Sebastian Janikowski kick),24,21,2012_03_PIT_LVR
+3,1:31,Steelers,Antonio Brown 11 yard pass from Ben Roethlisberger (Shaun Suisham kick),31,21,2012_03_PIT_LVR
+4,12:13,Raiders,Denarius Moore 6 yard pass from Carson Palmer (Sebastian Janikowski kick),31,28,2012_03_PIT_LVR
+4,6:30,Raiders,Sebastian Janikowski 32 yard field goal ,31,31,2012_03_PIT_LVR
+4,0:00,Raiders,Sebastian Janikowski 43 yard field goal ,31,34,2012_03_PIT_LVR
+1,7:48,Patriots,Stephen Gostkowski 37 yard field goal ,3,0,2012_03_NE_BAL
+1,7:09,Patriots,Brandon Bolden 2 yard rush (Stephen Gostkowski kick),10,0,2012_03_NE_BAL
+1,0:38,Patriots,Stephen Gostkowski 49 yard field goal ,13,0,2012_03_NE_BAL
+2,9:45,Ravens,Torrey Smith 25 yard pass from Joe Flacco (Justin Tucker kick),13,7,2012_03_NE_BAL
+2,1:47,Ravens,Dennis Pitta 20 yard pass from Joe Flacco (Justin Tucker kick),13,14,2012_03_NE_BAL
+2,0:02,Patriots,Julian Edelman 7 yard pass from Tom Brady (Stephen Gostkowski kick),20,14,2012_03_NE_BAL
+3,11:36,Ravens,Ray Rice 7 yard rush (Justin Tucker kick),20,21,2012_03_NE_BAL
+3,6:48,Patriots,Danny Woodhead 3 yard rush (Stephen Gostkowski kick),27,21,2012_03_NE_BAL
+4,14:10,Patriots,Stephen Gostkowski 20 yard field goal ,30,21,2012_03_NE_BAL
+4,4:01,Ravens,Torrey Smith 5 yard pass from Joe Flacco (Justin Tucker kick),30,28,2012_03_NE_BAL
+4,0:00,Ravens,Justin Tucker 27 yard field goal ,30,31,2012_03_NE_BAL
+2,6:22,Seahawks,Golden Tate 41 yard pass from Russell Wilson (Stephen Hauschka kick),0,7,2012_03_GB_SEA
+3,8:07,Packers,Mason Crosby 29 yard field goal ,3,7,2012_03_GB_SEA
+3,1:14,Packers,Mason Crosby 40 yard field goal ,6,7,2012_03_GB_SEA
+4,8:44,Packers,Cedric Benson 1 yard rush (pass failed),12,7,2012_03_GB_SEA
+4,0:00,Seahawks,Golden Tate 24 yard pass from Russell Wilson (Stephen Hauschka kick),12,14,2012_03_GB_SEA
+2,12:57,Ravens,Torrey Smith 18 yard pass from Joe Flacco (Justin Tucker kick failed),0,6,2012_04_CLE_BAL
+2,10:03,Ravens,Justin Tucker 45 yard field goal ,0,9,2012_04_CLE_BAL
+2,2:32,Browns,Trent Richardson 1 yard rush (Phil Dawson kick),7,9,2012_04_CLE_BAL
+3,9:53,Ravens,Joe Flacco 1 yard rush (Justin Tucker kick),7,16,2012_04_CLE_BAL
+3,6:52,Browns,Phil Dawson 51 yard field goal ,10,16,2012_04_CLE_BAL
+3,0:15,Ravens,Cary Williams 63 yard interception return (Justin Tucker kick),10,23,2012_04_CLE_BAL
+4,12:11,Browns,Phil Dawson 50 yard field goal ,13,23,2012_04_CLE_BAL
+4,4:33,Browns,Phil Dawson 52 yard field goal ,16,23,2012_04_CLE_BAL
+1,11:45,Panthers,Greg Olsen 17 yard pass from Cam Newton (Justin Medlock kick),7,0,2012_04_CAR_ATL
+1,0:26,Falcons,Roddy White 49 yard pass from Matt Ryan (Matt Bryant kick),7,7,2012_04_CAR_ATL
+2,13:11,Falcons,Matt Bryant 41 yard field goal ,7,10,2012_04_CAR_ATL
+2,8:44,Panthers,DeAngelo Williams 13 yard rush (Justin Medlock kick),14,10,2012_04_CAR_ATL
+2,1:49,Falcons,Roddy White 14 yard pass from Matt Ryan (Matt Bryant kick),14,17,2012_04_CAR_ATL
+3,10:17,Falcons,Michael Turner 60 yard pass from Matt Ryan (Matt Bryant kick),14,24,2012_04_CAR_ATL
+3,3:16,Panthers,Cam Newton 4 yard rush (Justin Medlock kick),21,24,2012_04_CAR_ATL
+4,7:55,Panthers,Kealoha Pilares 36 yard pass from Cam Newton (Justin Medlock kick),28,24,2012_04_CAR_ATL
+4,4:57,Falcons,Matt Bryant 33 yard field goal ,28,27,2012_04_CAR_ATL
+4,0:05,Falcons,Matt Bryant 40 yard field goal ,28,30,2012_04_CAR_ATL
+1,6:49,Patriots,Stevan Ridley 6 yard rush (Stephen Gostkowski kick),7,0,2012_04_NE_BUF
+2,9:43,Bills,Scott Chandler 24 yard pass from Ryan Fitzpatrick (Rian Lindell kick),7,7,2012_04_NE_BUF
+2,3:30,Bills,Scott Chandler 20 yard pass from Ryan Fitzpatrick (Rian Lindell kick),7,14,2012_04_NE_BUF
+3,11:08,Bills,Donald Jones 68 yard pass from Ryan Fitzpatrick (Rian Lindell kick),7,21,2012_04_NE_BUF
+3,8:10,Patriots,Danny Woodhead 17 yard pass from Tom Brady (Stephen Gostkowski kick),14,21,2012_04_NE_BUF
+3,3:53,Patriots,Tom Brady 4 yard rush (Stephen Gostkowski kick),21,21,2012_04_NE_BUF
+4,14:55,Patriots,Rob Gronkowski 28 yard pass from Tom Brady (Stephen Gostkowski kick),28,21,2012_04_NE_BUF
+4,11:42,Patriots,Stevan Ridley 2 yard rush (Stephen Gostkowski kick),35,21,2012_04_NE_BUF
+4,10:29,Patriots,Brandon Bolden 7 yard rush (Stephen Gostkowski kick),42,21,2012_04_NE_BUF
+4,6:32,Bills,Brad Smith 35 yard pass from Ryan Fitzpatrick (Rian Lindell kick),42,28,2012_04_NE_BUF
+4,4:02,Patriots,Brandon Lloyd 25 yard pass from Tom Brady (Stephen Gostkowski kick),49,28,2012_04_NE_BUF
+4,1:56,Patriots,Stephen Gostkowski 30 yard field goal ,52,28,2012_04_NE_BUF
+1,14:48,Vikings,Percy Harvin 105 yard kickoff return (Blair Walsh kick),7,0,2012_04_MIN_DET
+1,13:06,Lions,Jason Hanson 40 yard field goal ,7,3,2012_04_MIN_DET
+1,1:16,Vikings,Blair Walsh 49 yard field goal ,10,3,2012_04_MIN_DET
+2,8:14,Vikings,Blair Walsh 27 yard field goal ,13,3,2012_04_MIN_DET
+2,1:46,Lions,Jason Hanson 31 yard field goal ,13,6,2012_04_MIN_DET
+3,13:09,Vikings,Marcus Sherels 77 yard punt return (Blair Walsh kick),20,6,2012_04_MIN_DET
+4,2:56,Lions,Matthew Stafford 1 yard rush (Jason Hanson kick),20,13,2012_04_MIN_DET
+1,11:41,Texans,James Casey 11 yard pass from Matt Schaub (Shayne Graham kick),0,7,2012_04_TEN_HOU
+1,0:17,Texans,Arian Foster 4 yard rush (Shayne Graham kick),0,14,2012_04_TEN_HOU
+2,7:52,Titans,Craig Stevens 19 yard pass from Matt Hasselbeck (Rob Bironas kick),7,14,2012_04_TEN_HOU
+3,9:21,Texans,Danieal Manning 55 yard interception return (Shayne Graham kick),7,21,2012_04_TEN_HOU
+3,2:47,Texans,Owen Daniels 28 yard pass from Matt Schaub (Shayne Graham kick),7,28,2012_04_TEN_HOU
+4,5:38,Texans,Shayne Graham 33 yard field goal ,7,31,2012_04_TEN_HOU
+4,3:57,Texans,Kareem Jackson 63 yard interception return (Shayne Graham kick),7,38,2012_04_TEN_HOU
+4,0:57,Titans,Kendall Wright 11 yard pass from Matt Hasselbeck (Rob Bironas kick),14,38,2012_04_TEN_HOU
+1,10:04,Chargers,Eddie Royal 4 yard pass from Philip Rivers (Nick Novak kick),7,0,2012_04_LAC_KC
+1,6:26,Chargers,Nick Novak 24 yard field goal ,10,0,2012_04_LAC_KC
+1,5:28,Chargers,Jackie Battle 1 yard rush (Nick Novak kick),17,0,2012_04_LAC_KC
+2,8:09,Chargers,Nick Novak 47 yard field goal ,20,0,2012_04_LAC_KC
+2,5:09,Chiefs,Jamaal Charles 37 yard rush (pass failed),20,6,2012_04_LAC_KC
+2,2:51,Chargers,Donald Butler 21 yard interception return (Nick Novak kick),27,6,2012_04_LAC_KC
+3,8:40,Chiefs,Jamaal Charles 13 yard pass from Matt Cassel (Ryan Succop kick),27,13,2012_04_LAC_KC
+4,7:54,Chargers,Jackie Battle 4 yard pass from Philip Rivers (Nick Novak kick),34,13,2012_04_LAC_KC
+4,5:29,Chiefs,Dwayne Bowe 29 yard pass from Matt Cassel (Ryan Succop kick),34,20,2012_04_LAC_KC
+4,1:56,Chargers,Nick Novak 45 yard field goal ,37,20,2012_04_LAC_KC
+2,13:37,49ers,Colin Kaepernick 7 yard rush (David Akers kick),7,0,2012_04_SF_NYJ
+2,0:00,49ers,David Akers 36 yard field goal ,10,0,2012_04_SF_NYJ
+3,2:49,49ers,Frank Gore 2 yard rush (David Akers kick),17,0,2012_04_SF_NYJ
+4,14:46,49ers,Carlos Rogers 51 yard defensive fumble return (David Akers kick),24,0,2012_04_SF_NYJ
+4,8:23,49ers,David Akers 40 yard field goal ,27,0,2012_04_SF_NYJ
+4,6:03,49ers,Kendall Hunter 1 yard rush (David Akers kick),34,0,2012_04_SF_NYJ
+1,10:45,Seahawks,Marshawn Lynch 18 yard rush (Stephen Hauschka kick),7,0,2012_04_SEA_LAR
+1,4:59,Rams,Greg Zuerlein 58 yard field goal ,7,3,2012_04_SEA_LAR
+2,1:11,Rams,Danny Amendola 2 yard pass from Johnny Hekker (Greg Zuerlein kick),7,10,2012_04_SEA_LAR
+2,0:00,Rams,Greg Zuerlein 48 yard field goal ,7,13,2012_04_SEA_LAR
+3,13:46,Rams,Greg Zuerlein 60 yard field goal ,7,16,2012_04_SEA_LAR
+3,4:10,Seahawks,Stephen Hauschka 31 yard field goal ,10,16,2012_04_SEA_LAR
+4,13:03,Seahawks,Stephen Hauschka 30 yard field goal ,13,16,2012_04_SEA_LAR
+4,6:07,Rams,Greg Zuerlein 24 yard field goal ,13,19,2012_04_SEA_LAR
+2,13:15,Dolphins,Dan Carpenter 32 yard field goal ,3,0,2012_04_MIA_ARI
+2,1:56,Dolphins,Jorvorskie Lane 1 yard rush (Dan Carpenter kick),10,0,2012_04_MIA_ARI
+2,0:03,Dolphins,Dan Carpenter 27 yard field goal ,13,0,2012_04_MIA_ARI
+3,9:46,Cardinals,Larry Fitzgerald 3 yard pass from Kevin Kolb (Jay Feely kick),13,7,2012_04_MIA_ARI
+4,9:45,Cardinals,Andre Roberts 46 yard pass from Kevin Kolb (Jay Feely kick),13,14,2012_04_MIA_ARI
+4,7:05,Dolphins,Brian Hartline 80 yard pass from Ryan Tannehill (Jorvorskie Lane pass from Ryan Tannehill),21,14,2012_04_MIA_ARI
+4,0:22,Cardinals,Andre Roberts 15 yard pass from Kevin Kolb (Jay Feely kick),21,21,2012_04_MIA_ARI
+OT,8:29,Cardinals,Jay Feely 46 yard field goal ,21,24,2012_04_MIA_ARI
+1,10:32,Broncos,Joel Dreessen 22 yard pass from Peyton Manning (Matt Prater kick),0,7,2012_04_LVR_DEN
+1,6:47,Raiders,Sebastian Janikowski 38 yard field goal ,3,7,2012_04_LVR_DEN
+1,0:00,Broncos,Matt Prater 21 yard field goal ,3,10,2012_04_LVR_DEN
+2,0:22,Raiders,Sebastian Janikowski 24 yard field goal ,6,10,2012_04_LVR_DEN
+3,10:08,Broncos,Eric Decker 17 yard pass from Peyton Manning (Matt Prater kick),6,17,2012_04_LVR_DEN
+3,7:30,Broncos,Willis McGahee 2 yard rush (Matt Prater kick),6,24,2012_04_LVR_DEN
+3,3:46,Broncos,Lance Ball 14 yard pass from Peyton Manning (Matt Prater kick),6,31,2012_04_LVR_DEN
+4,12:56,Broncos,Matt Prater 43 yard field goal ,6,34,2012_04_LVR_DEN
+4,3:43,Broncos,Matt Prater 53 yard field goal ,6,37,2012_04_LVR_DEN
+1,6:10,Bengals,Mike Nugent 35 yard field goal ,3,0,2012_04_CIN_JAX
+2,13:33,Jaguars,Marcedes Lewis 2 yard pass from Blaine Gabbert (Josh Scobee kick),3,7,2012_04_CIN_JAX
+2,6:16,Bengals,Chris Pressley 1 yard pass from Andy Dalton (Mike Nugent kick),10,7,2012_04_CIN_JAX
+2,1:11,Bengals,Andy Dalton 1 yard rush (Mike Nugent kick),17,7,2012_04_CIN_JAX
+3,3:04,Jaguars,Josh Scobee 21 yard field goal ,17,10,2012_04_CIN_JAX
+4,13:51,Bengals,A.J. Green 18 yard pass from Andy Dalton (Mike Nugent kick),24,10,2012_04_CIN_JAX
+4,12:38,Bengals,Mike Nugent 35 yard field goal ,27,10,2012_04_CIN_JAX
+1,9:02,Packers,James Jones 12 yard pass from Aaron Rodgers (Mason Crosby kick),0,7,2012_04_NO_GB
+1,3:33,Saints,Marques Colston 20 yard pass from Drew Brees (Garrett Hartley kick),7,7,2012_04_NO_GB
+2,14:15,Packers,Greg Jennings 9 yard pass from Aaron Rodgers (Mason Crosby kick),7,14,2012_04_NO_GB
+2,4:50,Packers,James Jones 14 yard pass from Aaron Rodgers (Mason Crosby kick),7,21,2012_04_NO_GB
+2,0:27,Saints,Darren Sproles 6 yard pass from Drew Brees (Garrett Hartley kick),14,21,2012_04_NO_GB
+3,9:41,Saints,Garrett Hartley 20 yard field goal ,17,21,2012_04_NO_GB
+3,3:49,Saints,Joe Morgan 80 yard pass from Drew Brees (Garrett Hartley kick),24,21,2012_04_NO_GB
+4,13:04,Saints,Garrett Hartley 27 yard field goal ,27,21,2012_04_NO_GB
+4,7:00,Packers,Jordy Nelson 11 yard pass from Aaron Rodgers (Mason Crosby kick),27,28,2012_04_NO_GB
+1,4:42,Buccaneers,Connor Barth 50 yard field goal ,0,3,2012_04_WAS_TB
+1,0:00,Redskins,Pierre Garcon offensive fumble recovery in end zone (Billy Cundiff kick),7,3,2012_04_WAS_TB
+2,7:26,Redskins,Robert Griffin III 5 yard rush (Billy Cundiff kick),14,3,2012_04_WAS_TB
+2,5:15,Redskins,Alfred Morris 39 yard rush (Billy Cundiff kick),21,3,2012_04_WAS_TB
+2,1:55,Buccaneers,Connor Barth 57 yard field goal ,21,6,2012_04_WAS_TB
+3,1:56,Buccaneers,Vincent Jackson 7 yard pass from Josh Freeman (Connor Barth kick),21,13,2012_04_WAS_TB
+4,9:41,Buccaneers,LeGarrette Blount 2 yard rush (pass failed),21,19,2012_04_WAS_TB
+4,1:42,Buccaneers,Connor Barth 47 yard field goal ,21,22,2012_04_WAS_TB
+4,0:03,Redskins,Billy Cundiff 41 yard field goal ,24,22,2012_04_WAS_TB
+2,1:47,Eagles,DeSean Jackson 19 yard pass from Michael Vick (Alex Henery kick),0,7,2012_04_NYG_PHI
+2,0:05,Giants,Lawrence Tynes 25 yard field goal ,3,7,2012_04_NYG_PHI
+3,9:55,Eagles,Alex Henery 20 yard field goal ,3,10,2012_04_NYG_PHI
+3,5:28,Giants,Victor Cruz 14 yard pass from Eli Manning (Lawrence Tynes kick),10,10,2012_04_NYG_PHI
+3,2:07,Eagles,Alex Henery 48 yard field goal ,10,13,2012_04_NYG_PHI
+4,9:25,Eagles,Alex Henery 35 yard field goal ,10,16,2012_04_NYG_PHI
+4,6:45,Giants,Bear Pascoe 6 yard pass from Eli Manning (Lawrence Tynes kick),17,16,2012_04_NYG_PHI
+4,1:49,Eagles,Alex Henery 26 yard field goal ,17,19,2012_04_NYG_PHI
+2,4:15,Bears,Robbie Gould 43 yard field goal ,3,0,2012_04_CHI_DAL
+2,2:38,Bears,Charles Tillman 25 yard interception return (Robbie Gould kick),10,0,2012_04_CHI_DAL
+2,0:14,Cowboys,Miles Austin 10 yard pass from Tony Romo (Dan Bailey kick),10,7,2012_04_CHI_DAL
+3,11:54,Bears,Devin Hester 34 yard pass from Jay Cutler (Robbie Gould kick),17,7,2012_04_CHI_DAL
+3,6:11,Bears,Lance Briggs 74 yard interception return (Robbie Gould kick),24,7,2012_04_CHI_DAL
+3,2:11,Cowboys,Dan Bailey 39 yard field goal ,24,10,2012_04_CHI_DAL
+4,11:24,Bears,Robbie Gould 21 yard field goal ,27,10,2012_04_CHI_DAL
+4,6:28,Bears,Brandon Marshall 31 yard pass from Jay Cutler (Robbie Gould kick),34,10,2012_04_CHI_DAL
+4,0:34,Cowboys,Jason Witten 5 yard pass from Kyle Orton (Dez Bryant pass from Kyle Orton),34,18,2012_04_CHI_DAL
+1,12:39,Rams,Lance Kendricks 7 yard pass from Sam Bradford (Greg Zuerlein kick),0,7,2012_05_ARI_LAR
+1,3:15,Cardinals,Jay Feely 35 yard field goal ,3,7,2012_05_ARI_LAR
+2,10:45,Rams,Greg Zuerlein 53 yard field goal ,3,10,2012_05_ARI_LAR
+4,11:49,Rams,Chris Givens 51 yard pass from Sam Bradford (Greg Zuerlein kick),3,17,2012_05_ARI_LAR
+1,10:35,Bengals,Mike Nugent 42 yard field goal ,0,3,2012_05_MIA_CIN
+1,0:13,Bengals,Mike Nugent 24 yard field goal ,0,6,2012_05_MIA_CIN
+2,6:54,Dolphins,Daniel Thomas 1 yard rush (Dan Carpenter kick),7,6,2012_05_MIA_CIN
+3,12:18,Dolphins,Reggie Bush 13 yard rush (Dan Carpenter kick),14,6,2012_05_MIA_CIN
+3,8:35,Dolphins,Dan Carpenter 46 yard field goal ,17,6,2012_05_MIA_CIN
+4,14:15,Bengals,A.J. Green 2 yard pass from Andy Dalton (Mike Nugent kick),17,13,2012_05_MIA_CIN
+1,2:07,Packers,John Kuhn 2 yard rush (Mason Crosby kick),7,0,2012_05_GB_IND
+2,12:25,Packers,James Jones 6 yard pass from Aaron Rodgers (Mason Crosby kick),14,0,2012_05_GB_IND
+2,6:21,Colts,Adam Vinatieri 24 yard field goal ,14,3,2012_05_GB_IND
+2,4:21,Packers,Randall Cobb 31 yard pass from Aaron Rodgers (Mason Crosby kick),21,3,2012_05_GB_IND
+3,11:06,Colts,Dwayne Allen 8 yard pass from Andrew Luck (Adam Vinatieri kick),21,10,2012_05_GB_IND
+3,7:42,Colts,Adam Vinatieri 50 yard field goal ,21,13,2012_05_GB_IND
+3,0:18,Colts,Andrew Luck 3 yard rush (pass failed),21,19,2012_05_GB_IND
+4,8:04,Colts,Adam Vinatieri 28 yard field goal ,21,22,2012_05_GB_IND
+4,4:30,Packers,James Jones 8 yard pass from Aaron Rodgers (pass failed),27,22,2012_05_GB_IND
+4,0:35,Colts,Reggie Wayne 4 yard pass from Andrew Luck (Donald Brown run),27,30,2012_05_GB_IND
+1,1:21,Ravens,Justin Tucker 28 yard field goal ,3,0,2012_05_BAL_KC
+2,2:48,Chiefs,Ryan Succop 30 yard field goal ,3,3,2012_05_BAL_KC
+3,8:00,Ravens,Justin Tucker 26 yard field goal ,6,3,2012_05_BAL_KC
+3,0:00,Ravens,Justin Tucker 39 yard field goal ,9,3,2012_05_BAL_KC
+4,4:31,Chiefs,Ryan Succop 31 yard field goal ,9,6,2012_05_BAL_KC
+1,14:08,Browns,Trent Richardson 15 yard rush (Phil Dawson kick),7,0,2012_05_CLE_NYG
+1,10:03,Browns,Josh Gordon 62 yard pass from Brandon Weeden (Phil Dawson kick),14,0,2012_05_CLE_NYG
+1,3:22,Giants,Victor Cruz 3 yard pass from Eli Manning (Lawrence Tynes kick),14,7,2012_05_CLE_NYG
+2,13:39,Browns,Phil Dawson 32 yard field goal ,17,7,2012_05_CLE_NYG
+2,6:46,Giants,Lawrence Tynes 29 yard field goal ,17,10,2012_05_CLE_NYG
+2,2:52,Giants,Ahmad Bradshaw 4 yard rush (Lawrence Tynes kick),17,17,2012_05_CLE_NYG
+2,1:10,Giants,Victor Cruz 7 yard pass from Eli Manning (Lawrence Tynes kick),17,24,2012_05_CLE_NYG
+2,0:00,Giants,Lawrence Tynes 40 yard field goal ,17,27,2012_05_CLE_NYG
+3,5:06,Giants,Victor Cruz 28 yard pass from Eli Manning (Lawrence Tynes kick),17,34,2012_05_CLE_NYG
+3,3:27,Browns,Phil Dawson 41 yard field goal ,20,34,2012_05_CLE_NYG
+4,5:41,Giants,David Wilson 40 yard rush (Lawrence Tynes kick),20,41,2012_05_CLE_NYG
+4,3:56,Browns,Josh Gordon 20 yard pass from Brandon Weeden (Phil Dawson kick),27,41,2012_05_CLE_NYG
+2,5:01,Steelers,Rashard Mendenhall 13 yard pass from Ben Roethlisberger (Shaun Suisham kick),0,7,2012_05_PHI_PIT
+2,0:06,Steelers,Shaun Suisham 20 yard field goal ,0,10,2012_05_PHI_PIT
+3,6:32,Eagles,LeSean McCoy 15 yard pass from Michael Vick (Alex Henery kick),7,10,2012_05_PHI_PIT
+4,14:51,Steelers,Shaun Suisham 34 yard field goal ,7,13,2012_05_PHI_PIT
+4,6:33,Eagles,Brent Celek 2 yard pass from Michael Vick (Alex Henery kick),14,13,2012_05_PHI_PIT
+4,0:00,Steelers,Shaun Suisham 34 yard field goal ,14,16,2012_05_PHI_PIT
+2,10:11,Redskins,Ryan Kerrigan 28 yard interception return (Billy Cundiff kick),0,7,2012_05_ATL_WAS
+2,0:30,Falcons,Tony Gonzalez 1 yard pass from Matt Ryan (Matt Bryant kick),7,7,2012_05_ATL_WAS
+3,5:56,Redskins,Billy Cundiff 23 yard field goal ,7,10,2012_05_ATL_WAS
+4,13:23,Falcons,Julio Jones 18 yard pass from Matt Ryan (Matt Bryant kick),14,10,2012_05_ATL_WAS
+4,12:24,Redskins,Santana Moss 77 yard pass from Kirk Cousins (Billy Cundiff kick),14,17,2012_05_ATL_WAS
+4,7:42,Falcons,Matt Bryant 53 yard field goal ,17,17,2012_05_ATL_WAS
+4,2:46,Falcons,Michael Turner 13 yard rush (Matt Bryant kick),24,17,2012_05_ATL_WAS
+1,10:29,Seahawks,Stephen Hauschka 22 yard field goal ,3,0,2012_05_SEA_CAR
+2,8:29,Seahawks,Stephen Hauschka 36 yard field goal ,6,0,2012_05_SEA_CAR
+2,0:02,Panthers,Justin Medlock 32 yard field goal ,6,3,2012_05_SEA_CAR
+3,12:26,Panthers,Captain Munnerlyn 33 yard interception return (Justin Medlock kick),6,10,2012_05_SEA_CAR
+3,0:35,Seahawks,Golden Tate 13 yard pass from Russell Wilson (Stephen Hauschka kick),13,10,2012_05_SEA_CAR
+4,10:27,Seahawks,Stephen Hauschka 44 yard field goal ,16,10,2012_05_SEA_CAR
+4,0:59,Panthers,"Safety, Jon Ryan ran out of the endzone for a Safety. ",16,12,2012_05_SEA_CAR
+1,4:23,Bears,Robbie Gould 32 yard field goal ,3,0,2012_05_CHI_JAX
+2,14:02,Jaguars,Josh Scobee 31 yard field goal ,3,3,2012_05_CHI_JAX
+3,5:42,Bears,Robbie Gould 31 yard field goal ,6,3,2012_05_CHI_JAX
+3,5:04,Bears,Charles Tillman 36 yard interception return (Robbie Gould kick),13,3,2012_05_CHI_JAX
+4,14:55,Bears,Alshon Jeffery 10 yard pass from Jay Cutler (Robbie Gould kick),20,3,2012_05_CHI_JAX
+4,8:37,Bears,Brandon Marshall 24 yard pass from Jay Cutler (Robbie Gould kick),27,3,2012_05_CHI_JAX
+4,7:54,Bears,Lance Briggs 36 yard interception return (Robbie Gould kick),34,3,2012_05_CHI_JAX
+4,1:49,Bears,Armando Allen 46 yard rush (Robbie Gould kick),41,3,2012_05_CHI_JAX
+1,2:31,Vikings,Percy Harvin 4 yard rush (Blair Walsh kick),0,7,2012_05_TEN_MIN
+2,10:27,Vikings,Blair Walsh 42 yard field goal ,0,10,2012_05_TEN_MIN
+2,1:52,Vikings,Blair Walsh 36 yard field goal ,0,13,2012_05_TEN_MIN
+3,5:07,Vikings,Blair Walsh 26 yard field goal ,0,16,2012_05_TEN_MIN
+3,0:05,Vikings,Percy Harvin 10 yard pass from Christian Ponder (Blair Walsh kick),0,23,2012_05_TEN_MIN
+4,10:35,Titans,Jared Cook 10 yard pass from Matt Hasselbeck (Rob Bironas kick),7,23,2012_05_TEN_MIN
+4,6:38,Vikings,Kyle Rudolph 15 yard pass from Christian Ponder (Blair Walsh kick),7,30,2012_05_TEN_MIN
+1,3:08,Patriots,Wes Welker 8 yard pass from Tom Brady (Stephen Gostkowski kick),0,7,2012_05_DEN_NE
+2,14:05,Broncos,Joel Dreessen 1 yard pass from Peyton Manning (Matt Prater kick),7,7,2012_05_DEN_NE
+2,7:57,Patriots,Shane Vereen 1 yard rush (Stephen Gostkowski kick),7,14,2012_05_DEN_NE
+2,0:02,Patriots,Stephen Gostkowski 23 yard field goal ,7,17,2012_05_DEN_NE
+3,5:00,Patriots,Tom Brady 1 yard rush (Stephen Gostkowski kick),7,24,2012_05_DEN_NE
+3,4:42,Patriots,Stevan Ridley 8 yard rush (Stephen Gostkowski kick),7,31,2012_05_DEN_NE
+3,1:08,Broncos,Eric Decker 2 yard pass from Peyton Manning (Matt Prater kick),14,31,2012_05_DEN_NE
+4,6:43,Broncos,Brandon Stokley 5 yard pass from Peyton Manning (Matt Prater kick),21,31,2012_05_DEN_NE
+1,7:25,49ers,David Akers 19 yard field goal ,0,3,2012_05_BUF_SF
+2,10:46,Bills,Rian Lindell 31 yard field goal ,3,3,2012_05_BUF_SF
+2,9:54,49ers,Kyle Williams 43 yard pass from Alex Smith (David Akers kick),3,10,2012_05_BUF_SF
+2,0:24,49ers,Michael Crabtree 28 yard pass from Alex Smith (David Akers kick),3,17,2012_05_BUF_SF
+3,9:06,49ers,Frank Gore 1 yard rush (David Akers kick),3,24,2012_05_BUF_SF
+4,14:12,49ers,Mario Manningham 10 yard pass from Alex Smith (David Akers kick),3,31,2012_05_BUF_SF
+4,9:55,49ers,Colin Kaepernick 16 yard rush (David Akers kick),3,38,2012_05_BUF_SF
+4,1:11,49ers,Anthony Dixon 3 yard rush (David Akers kick),3,45,2012_05_BUF_SF
+1,6:56,Chargers,Robert Meachem 15 yard pass from Philip Rivers (Nick Novak kick),7,0,2012_05_LAC_NO
+1,2:58,Saints,Devery Henderson 40 yard pass from Drew Brees (Garrett Hartley kick),7,7,2012_05_LAC_NO
+2,9:58,Chargers,Nick Novak 20 yard field goal ,10,7,2012_05_LAC_NO
+2,7:19,Saints,Marques Colston 19 yard pass from Drew Brees (Garrett Hartley kick),10,14,2012_05_LAC_NO
+2,0:36,Chargers,Robert Meachem 44 yard pass from Philip Rivers (Nick Novak kick),17,14,2012_05_LAC_NO
+3,12:27,Chargers,Ryan Mathews 13 yard rush (Nick Novak kick),24,14,2012_05_LAC_NO
+3,0:11,Saints,Marques Colston 16 yard pass from Drew Brees (Garrett Hartley kick),24,21,2012_05_LAC_NO
+4,8:50,Saints,Marques Colston 5 yard pass from Drew Brees (Garrett Hartley kick),24,28,2012_05_LAC_NO
+4,2:56,Saints,Garrett Hartley 26 yard field goal ,24,31,2012_05_LAC_NO
+1,11:05,Texans,Owen Daniels 34 yard pass from Matt Schaub (Shayne Graham kick),7,0,2012_05_HOU_NYJ
+1,4:07,Jets,Jeff Cumberland 27 yard pass from Mark Sanchez (Nick Folk kick),7,7,2012_05_HOU_NYJ
+2,11:11,Texans,Arian Foster 13 yard rush (Shayne Graham kick),14,7,2012_05_HOU_NYJ
+2,0:00,Texans,Shayne Graham 27 yard field goal ,17,7,2012_05_HOU_NYJ
+3,4:51,Texans,Shayne Graham 42 yard field goal ,20,7,2012_05_HOU_NYJ
+3,4:38,Jets,Joe McKnight 100 yard kickoff return (Nick Folk kick),20,14,2012_05_HOU_NYJ
+3,0:13,Texans,Shayne Graham 22 yard field goal ,23,14,2012_05_HOU_NYJ
+4,11:55,Jets,Nick Folk 21 yard field goal ,23,17,2012_05_HOU_NYJ
+1,10:53,Titans,Rob Bironas 22 yard field goal ,0,3,2012_06_PIT_TEN
+1,7:24,Steelers,Shaun Suisham 29 yard field goal ,3,3,2012_06_PIT_TEN
+1,5:25,Steelers,Mike Wallace 82 yard pass from Ben Roethlisberger (Shaun Suisham kick),10,3,2012_06_PIT_TEN
+1,1:11,Titans,Rob Bironas 38 yard field goal ,10,6,2012_06_PIT_TEN
+2,14:14,Titans,Jamie Harper 1 yard rush (Rob Bironas kick),10,13,2012_06_PIT_TEN
+2,0:00,Titans,Rob Bironas 47 yard field goal ,10,16,2012_06_PIT_TEN
+3,9:03,Steelers,Shaun Suisham 28 yard field goal ,13,16,2012_06_PIT_TEN
+4,13:34,Steelers,Baron Batch 1 yard rush (Shaun Suisham kick),20,16,2012_06_PIT_TEN
+4,8:18,Steelers,Shaun Suisham 52 yard field goal ,23,16,2012_06_PIT_TEN
+4,4:19,Titans,Kenny Britt 5 yard pass from Matt Hasselbeck (Rob Bironas kick),23,23,2012_06_PIT_TEN
+4,0:00,Titans,Rob Bironas 40 yard field goal ,23,26,2012_06_PIT_TEN
+1,0:24,Raiders,Sebastian Janikowski 52 yard field goal ,3,0,2012_06_LVR_ATL
+2,9:51,Falcons,Roddy White 4 yard pass from Matt Ryan (Matt Bryant kick),3,7,2012_06_LVR_ATL
+2,4:11,Raiders,Sebastian Janikowski 22 yard field goal ,6,7,2012_06_LVR_ATL
+2,1:50,Raiders,Denarius Moore 25 yard pass from Carson Palmer (Sebastian Janikowski kick),13,7,2012_06_LVR_ATL
+3,5:06,Falcons,Matt Bryant 41 yard field goal ,13,10,2012_06_LVR_ATL
+3,2:31,Falcons,Matt Bryant 20 yard field goal ,13,13,2012_06_LVR_ATL
+4,2:40,Falcons,Asante Samuel 79 yard interception return (Matt Bryant kick),13,20,2012_06_LVR_ATL
+4,0:40,Raiders,Darren McFadden 2 yard rush (Sebastian Janikowski kick),20,20,2012_06_LVR_ATL
+4,0:01,Falcons,Matt Bryant 55 yard field goal ,20,23,2012_06_LVR_ATL
+1,7:50,Ravens,Justin Tucker 38 yard field goal ,0,3,2012_06_DAL_BAL
+1,3:18,Cowboys,Felix Jones 22 yard rush (Dan Bailey kick),7,3,2012_06_DAL_BAL
+2,11:29,Cowboys,Dan Bailey 42 yard field goal ,10,3,2012_06_DAL_BAL
+2,7:29,Ravens,Ray Rice 1 yard rush (Justin Tucker kick),10,10,2012_06_DAL_BAL
+2,0:41,Ravens,Torrey Smith 19 yard pass from Joe Flacco (Justin Tucker kick),10,17,2012_06_DAL_BAL
+3,11:37,Cowboys,Dan Bailey 43 yard field goal ,13,17,2012_06_DAL_BAL
+3,11:24,Ravens,Jacoby Jones 108 yard kickoff return (Justin Tucker kick),13,24,2012_06_DAL_BAL
+3,3:19,Cowboys,Dez Bryant 7 yard pass from Tony Romo (Dan Bailey kick),20,24,2012_06_DAL_BAL
+4,8:22,Cowboys,Dan Bailey 34 yard field goal ,23,24,2012_06_DAL_BAL
+4,4:41,Ravens,Ray Rice 1 yard rush (Justin Tucker kick),23,31,2012_06_DAL_BAL
+4,0:32,Cowboys,Dez Bryant 4 yard pass from Tony Romo (pass failed),29,31,2012_06_DAL_BAL
+1,7:07,Bengals,Jermaine Gresham 55 yard pass from Andy Dalton (Mike Nugent kick),7,0,2012_06_CIN_CLE
+2,14:51,Browns,Josh Gordon 71 yard pass from Brandon Weeden (Phil Dawson kick),7,7,2012_06_CIN_CLE
+2,1:54,Bengals,A.J. Green 4 yard pass from Andy Dalton (Mike Nugent kick),14,7,2012_06_CIN_CLE
+3,8:25,Browns,Phil Dawson 41 yard field goal ,14,10,2012_06_CIN_CLE
+3,6:27,Browns,Phil Dawson 38 yard field goal ,14,13,2012_06_CIN_CLE
+4,14:56,Browns,Montario Hardesty 1 yard rush (Phil Dawson kick),14,20,2012_06_CIN_CLE
+4,11:11,Bengals,Mike Nugent 44 yard field goal ,17,20,2012_06_CIN_CLE
+4,8:00,Browns,Ben Watson 3 yard pass from Brandon Weeden (Phil Dawson kick),17,27,2012_06_CIN_CLE
+4,7:50,Browns,Sheldon Brown 19 yard interception return (Phil Dawson kick),17,34,2012_06_CIN_CLE
+4,5:21,Bengals,A.J. Green 57 yard pass from Andy Dalton (Mike Nugent kick),24,34,2012_06_CIN_CLE
+1,12:25,Rams,Greg Zuerlein 48 yard field goal ,3,0,2012_06_LAR_MIA
+1,5:08,Rams,Greg Zuerlein 32 yard field goal ,6,0,2012_06_LAR_MIA
+2,5:27,Dolphins,Marlon Moore 29 yard pass from Ryan Tannehill (Dan Carpenter kick),6,7,2012_06_LAR_MIA
+2,4:19,Dolphins,Dan Carpenter 42 yard field goal ,6,10,2012_06_LAR_MIA
+3,9:40,Dolphins,Anthony Fasano 1 yard pass from Ryan Tannehill (Dan Carpenter kick),6,17,2012_06_LAR_MIA
+4,8:30,Rams,Sam Bradford 1 yard rush (Steven Jackson pass from Sam Bradford),14,17,2012_06_LAR_MIA
+1,6:02,Colts,Adam Vinatieri 20 yard field goal ,3,0,2012_06_IND_NYJ
+2,14:13,Jets,Stephen Hill 5 yard pass from Mark Sanchez (Nick Folk kick),3,7,2012_06_IND_NYJ
+2,9:47,Jets,Shonn Greene 10 yard rush (Nick Folk kick),3,14,2012_06_IND_NYJ
+2,6:06,Colts,Adam Vinatieri 50 yard field goal ,6,14,2012_06_IND_NYJ
+2,0:27,Jets,Jason Hill 5 yard pass from Mark Sanchez (Nick Folk kick),6,21,2012_06_IND_NYJ
+3,1:36,Jets,Shonn Greene 4 yard rush (Nick Folk kick),6,28,2012_06_IND_NYJ
+4,14:40,Colts,Adam Vinatieri 47 yard field goal ,9,28,2012_06_IND_NYJ
+4,1:05,Jets,Shonn Greene 2 yard rush (Nick Folk kick),9,35,2012_06_IND_NYJ
+1,11:03,Lions,Jason Hanson 46 yard field goal ,3,0,2012_06_DET_PHI
+1,3:58,Lions,Jason Hanson 34 yard field goal ,6,0,2012_06_DET_PHI
+2,1:16,Eagles,LeSean McCoy 2 yard pass from Michael Vick (Alex Henery kick),6,7,2012_06_DET_PHI
+3,8:23,Eagles,Alex Henery 26 yard field goal ,6,10,2012_06_DET_PHI
+3,3:39,Eagles,Alex Henery 32 yard field goal ,6,13,2012_06_DET_PHI
+4,13:39,Eagles,Alex Henery 49 yard field goal ,6,16,2012_06_DET_PHI
+4,10:30,Lions,Matthew Stafford 1 yard rush (Jason Hanson kick),13,16,2012_06_DET_PHI
+4,5:18,Eagles,Jeremy Maclin 70 yard pass from Michael Vick (Alex Henery kick),13,23,2012_06_DET_PHI
+4,3:32,Lions,Nate Burleson 17 yard pass from Matthew Stafford (Jason Hanson kick),20,23,2012_06_DET_PHI
+4,0:03,Lions,Jason Hanson 19 yard field goal ,23,23,2012_06_DET_PHI
+OT,11:00,Lions,Jason Hanson 45 yard field goal ,26,23,2012_06_DET_PHI
+1,0:18,Buccaneers,Mike Williams 62 yard pass from Josh Freeman (Connor Barth kick),0,7,2012_06_KC_TB
+2,7:45,Chiefs,Ryan Succop 38 yard field goal ,3,7,2012_06_KC_TB
+3,12:46,Buccaneers,Vincent Jackson 19 yard pass from Josh Freeman (Connor Barth kick),3,14,2012_06_KC_TB
+3,9:36,Buccaneers,Ronde Barber 78 yard interception return (Connor Barth kick),3,21,2012_06_KC_TB
+4,14:01,Chiefs,Edgar Jones 11 yard blocked punt return (Ryan Succop kick),10,21,2012_06_KC_TB
+4,10:34,Buccaneers,Connor Barth 27 yard field goal ,10,24,2012_06_KC_TB
+4,6:43,Buccaneers,Vincent Jackson 17 yard pass from Josh Freeman (Connor Barth kick),10,31,2012_06_KC_TB
+4,1:53,Buccaneers,LeGarrette Blount 12 yard rush (Connor Barth kick),10,38,2012_06_KC_TB
+1,13:50,Cardinals,Jay Feely 49 yard field goal ,0,3,2012_06_BUF_ARI
+1,8:36,Bills,"Safety, Kevin Kolb sacked by Chris Kelsay in the end zone. ",2,3,2012_06_BUF_ARI
+1,3:35,Bills,C.J. Spiller 10 yard rush (Rian Lindell kick),9,3,2012_06_BUF_ARI
+2,4:47,Cardinals,Larry Fitzgerald 9 yard pass from Kevin Kolb (Jay Feely kick),9,10,2012_06_BUF_ARI
+3,3:12,Cardinals,Jay Feely 49 yard field goal ,9,13,2012_06_BUF_ARI
+3,0:27,Bills,Fred Jackson 1 yard rush (Rian Lindell kick),16,13,2012_06_BUF_ARI
+4,1:09,Cardinals,Jay Feely 61 yard field goal ,16,16,2012_06_BUF_ARI
+OT,11:10,Bills,Rian Lindell 25 yard field goal ,19,16,2012_06_BUF_ARI
+1,7:35,Seahawks,Stephen Hauschka 34 yard field goal ,0,3,2012_06_NE_SEA
+1,5:49,Patriots,Wes Welker 46 yard pass from Tom Brady (Stephen Gostkowski kick),7,3,2012_06_NE_SEA
+1,1:50,Seahawks,Doug Baldwin 24 yard pass from Russell Wilson (Stephen Hauschka kick),7,10,2012_06_NE_SEA
+2,10:33,Patriots,Aaron Hernandez 1 yard pass from Tom Brady (Stephen Gostkowski kick),14,10,2012_06_NE_SEA
+2,2:12,Patriots,Stephen Gostkowski 25 yard field goal ,17,10,2012_06_NE_SEA
+3,9:21,Patriots,Stephen Gostkowski 35 yard field goal ,20,10,2012_06_NE_SEA
+4,9:21,Patriots,Stephen Gostkowski 35 yard field goal ,23,10,2012_06_NE_SEA
+4,7:21,Seahawks,Braylon Edwards 10 yard pass from Russell Wilson (Stephen Hauschka kick),23,17,2012_06_NE_SEA
+4,1:18,Seahawks,Sidney Rice 46 yard pass from Russell Wilson (Stephen Hauschka kick),23,24,2012_06_NE_SEA
+1,2:00,49ers,David Akers 42 yard field goal ,0,3,2012_06_NYG_SF
+2,10:04,Giants,Victor Cruz 6 yard pass from Eli Manning (Lawrence Tynes kick),7,3,2012_06_NYG_SF
+2,2:56,Giants,Lawrence Tynes 34 yard field goal ,10,3,2012_06_NYG_SF
+3,11:48,Giants,Ahmad Bradshaw 1 yard rush (Lawrence Tynes kick),17,3,2012_06_NYG_SF
+3,9:51,Giants,Lawrence Tynes 30 yard field goal ,20,3,2012_06_NYG_SF
+3,6:10,Giants,Lawrence Tynes 22 yard field goal ,23,3,2012_06_NYG_SF
+4,1:56,Giants,Lawrence Tynes 32 yard field goal ,26,3,2012_06_NYG_SF
+1,11:31,Vikings,Blair Walsh 20 yard field goal ,3,0,2012_06_MIN_WAS
+1,6:18,Vikings,Blair Walsh 27 yard field goal ,6,0,2012_06_MIN_WAS
+1,1:47,Vikings,Blair Walsh 27 yard field goal ,9,0,2012_06_MIN_WAS
+2,10:51,Redskins,Kai Forbath 50 yard field goal ,9,3,2012_06_MIN_WAS
+2,2:27,Redskins,Alfred Morris 1 yard rush (Kai Forbath kick),9,10,2012_06_MIN_WAS
+2,2:14,Redskins,Darrel Young 6 yard pass from Robert Griffin III (Kai Forbath kick),9,17,2012_06_MIN_WAS
+3,9:37,Redskins,Robert Griffin III 7 yard rush (Kai Forbath kick),9,24,2012_06_MIN_WAS
+3,4:18,Vikings,Blair Walsh 37 yard field goal ,12,24,2012_06_MIN_WAS
+4,12:40,Redskins,Madieu Williams 24 yard interception return (Kai Forbath kick),12,31,2012_06_MIN_WAS
+4,8:02,Vikings,Michael Jenkins 9 yard pass from Christian Ponder (Kyle Rudolph pass from Christian Ponder),20,31,2012_06_MIN_WAS
+4,3:36,Vikings,Kyle Rudolph 1 yard pass from Christian Ponder (pass failed),26,31,2012_06_MIN_WAS
+4,2:43,Redskins,Robert Griffin III 76 yard rush (Kai Forbath kick),26,38,2012_06_MIN_WAS
+1,11:34,Packers,Jordy Nelson 41 yard pass from Aaron Rodgers (Mason Crosby kick),7,0,2012_06_GB_HOU
+1,0:24,Packers,James Jones 6 yard pass from Aaron Rodgers (Mason Crosby kick),14,0,2012_06_GB_HOU
+2,10:13,Texans,Arian Foster 1 yard rush (Shayne Graham kick),14,7,2012_06_GB_HOU
+2,6:45,Packers,Jordy Nelson 21 yard pass from Aaron Rodgers (Mason Crosby kick),21,7,2012_06_GB_HOU
+2,2:15,Texans,Shayne Graham 51 yard field goal ,21,10,2012_06_GB_HOU
+3,8:16,Packers,Jordy Nelson 1 yard pass from Aaron Rodgers (Mason Crosby kick),28,10,2012_06_GB_HOU
+3,0:17,Texans,Arian Foster 1 yard rush (Shayne Graham kick),28,17,2012_06_GB_HOU
+4,14:46,Packers,Tom Crabtree 48 yard pass from Aaron Rodgers (Mason Crosby kick),35,17,2012_06_GB_HOU
+4,12:16,Packers,James Jones 18 yard pass from Aaron Rodgers (Mason Crosby kick),42,17,2012_06_GB_HOU
+4,5:30,Texans,DeVier Posey blocked punt recovery in end zone (Shayne Graham kick),42,24,2012_06_GB_HOU
+1,8:59,Chargers,Nick Novak 32 yard field goal ,0,3,2012_06_DEN_LAC
+1,8:16,Chargers,Antonio Gates 15 yard pass from Philip Rivers (Nick Novak kick),0,10,2012_06_DEN_LAC
+2,6:00,Chargers,Quentin Jammer 80 yard interception return (Nick Novak kick),0,17,2012_06_DEN_LAC
+2,0:24,Chargers,Antonio Gates 11 yard pass from Philip Rivers (Nick Novak kick),0,24,2012_06_DEN_LAC
+3,10:56,Broncos,Demaryius Thomas 29 yard pass from Peyton Manning (Matt Prater kick),7,24,2012_06_DEN_LAC
+3,4:41,Broncos,Tony Carter 65 yard defensive fumble return (Matt Prater kick),14,24,2012_06_DEN_LAC
+4,13:33,Broncos,Eric Decker 7 yard pass from Peyton Manning (Matt Prater kick),21,24,2012_06_DEN_LAC
+4,9:03,Broncos,Brandon Stokley 21 yard pass from Peyton Manning (Matt Prater kick),28,24,2012_06_DEN_LAC
+4,2:05,Broncos,Chris Harris Jr. 46 yard interception return (Matt Prater kick),35,24,2012_06_DEN_LAC
+1,5:29,Seahawks,Stephen Hauschka 52 yard field goal ,3,0,2012_07_SEA_SF
+1,0:26,49ers,David Akers 38 yard field goal ,3,3,2012_07_SEA_SF
+2,12:07,Seahawks,Stephen Hauschka 35 yard field goal ,6,3,2012_07_SEA_SF
+3,4:29,49ers,Delanie Walker 12 yard pass from Alex Smith (David Akers kick),6,10,2012_07_SEA_SF
+4,5:24,49ers,David Akers 28 yard field goal ,6,13,2012_07_SEA_SF
+1,10:38,Titans,Chris Johnson 16 yard rush (Rob Bironas kick),7,0,2012_07_TEN_BUF
+1,3:01,Bills,Fred Jackson 3 yard pass from Ryan Fitzpatrick (Rian Lindell kick),7,7,2012_07_TEN_BUF
+1,2:43,Titans,Chris Johnson 83 yard rush (Rob Bironas kick),14,7,2012_07_TEN_BUF
+1,2:31,Bills,Brad Smith 89 yard kickoff return (Rian Lindell kick),14,14,2012_07_TEN_BUF
+2,10:18,Titans,Jamie Harper 1 yard rush (Rob Bironas kick),21,14,2012_07_TEN_BUF
+2,3:56,Bills,Rian Lindell 31 yard field goal ,21,17,2012_07_TEN_BUF
+2,0:00,Bills,Rian Lindell 42 yard field goal ,21,20,2012_07_TEN_BUF
+3,11:45,Titans,Jamie Harper 1 yard rush (Rob Bironas kick),28,20,2012_07_TEN_BUF
+3,7:52,Bills,Donald Jones 15 yard pass from Ryan Fitzpatrick (Rian Lindell kick),28,27,2012_07_TEN_BUF
+3,0:05,Bills,Stevie Johnson 27 yard pass from Ryan Fitzpatrick (Rian Lindell kick),28,34,2012_07_TEN_BUF
+4,1:03,Titans,Nate Washington 15 yard pass from Matt Hasselbeck (Rob Bironas kick),35,34,2012_07_TEN_BUF
+2,14:16,Cowboys,Dan Bailey 19 yard field goal ,3,0,2012_07_DAL_CAR
+2,0:14,Panthers,Brandon LaFell 5 yard pass from Cam Newton (Justin Medlock kick),3,7,2012_07_DAL_CAR
+3,7:38,Cowboys,Miles Austin 26 yard pass from Tony Romo (Dan Bailey kick),10,7,2012_07_DAL_CAR
+3,2:13,Cowboys,Dan Bailey 49 yard field goal ,13,7,2012_07_DAL_CAR
+4,11:38,Panthers,Mike Tolbert 2 yard rush (Justin Medlock kick),13,14,2012_07_DAL_CAR
+4,3:25,Cowboys,Dan Bailey 28 yard field goal ,16,14,2012_07_DAL_CAR
+4,0:53,Cowboys,Dan Bailey 38 yard field goal ,19,14,2012_07_DAL_CAR
+1,10:57,Ravens,Justin Tucker 51 yard field goal ,3,0,2012_07_BAL_HOU
+1,4:49,Texans,"Safety, Joe Flacco sacked by Connor Barwin in end zone. ",3,2,2012_07_BAL_HOU
+1,0:30,Texans,Kevin Walter 25 yard pass from Matt Schaub (Shayne Graham kick),3,9,2012_07_BAL_HOU
+2,14:51,Texans,Johnathan Joseph 52 yard interception return (Shayne Graham kick),3,16,2012_07_BAL_HOU
+2,5:58,Texans,Owen Daniels 1 yard pass from Matt Schaub (Shayne Graham kick),3,23,2012_07_BAL_HOU
+2,1:57,Texans,Shayne Graham 33 yard field goal ,3,26,2012_07_BAL_HOU
+2,0:03,Texans,Shayne Graham 29 yard field goal ,3,29,2012_07_BAL_HOU
+3,10:36,Ravens,Tandon Doss 15 yard pass from Joe Flacco (Justin Tucker kick),10,29,2012_07_BAL_HOU
+3,2:56,Texans,Arian Foster 1 yard rush (Shayne Graham kick),10,36,2012_07_BAL_HOU
+4,12:23,Ravens,Justin Tucker 54 yard field goal ,13,36,2012_07_BAL_HOU
+4,8:48,Texans,Arian Foster 2 yard rush (Shayne Graham kick),13,43,2012_07_BAL_HOU
+1,7:23,Colts,Andrew Luck 3 yard rush (Adam Vinatieri kick),0,7,2012_07_CLE_IND
+2,14:01,Browns,Greg Little 14 yard pass from Brandon Weeden (Phil Dawson kick failed),6,7,2012_07_CLE_IND
+2,7:41,Colts,Andrew Luck 5 yard rush (Adam Vinatieri kick),6,14,2012_07_CLE_IND
+3,11:53,Browns,Josh Gordon 33 yard pass from Brandon Weeden (Phil Dawson kick),13,14,2012_07_CLE_IND
+3,3:19,Colts,Adam Vinatieri 38 yard field goal ,13,17,2012_07_CLE_IND
+1,8:38,Vikings,Adrian Peterson 13 yard rush (Blair Walsh kick),0,7,2012_07_ARI_MIN
+2,12:41,Cardinals,LaRod Stephens-Howling 3 yard rush (Jay Feely kick),7,7,2012_07_ARI_MIN
+2,6:26,Vikings,Percy Harvin 3 yard pass from Christian Ponder (Blair Walsh kick),7,14,2012_07_ARI_MIN
+3,14:03,Vikings,Harrison Smith 31 yard interception return (Blair Walsh kick),7,21,2012_07_ARI_MIN
+4,1:48,Cardinals,Andre Roberts 6 yard pass from John Skelton (Jay Feely kick),14,21,2012_07_ARI_MIN
+1,2:13,Redskins,Kai Forbath 20 yard field goal ,3,0,2012_07_WAS_NYG
+2,12:41,Giants,Andre Brown 1 yard rush (Lawrence Tynes kick),3,7,2012_07_WAS_NYG
+2,8:45,Redskins,Santana Moss 26 yard pass from Robert Griffin III (Kai Forbath kick),10,7,2012_07_WAS_NYG
+2,3:53,Giants,Lawrence Tynes 27 yard field goal ,10,10,2012_07_WAS_NYG
+2,1:49,Redskins,Kai Forbath 43 yard field goal ,13,10,2012_07_WAS_NYG
+2,0:02,Giants,Lawrence Tynes 39 yard field goal ,13,13,2012_07_WAS_NYG
+4,12:55,Giants,Ahmad Bradshaw 1 yard rush (Lawrence Tynes kick),13,20,2012_07_WAS_NYG
+4,5:21,Redskins,Kai Forbath 45 yard field goal ,16,20,2012_07_WAS_NYG
+4,1:32,Redskins,Santana Moss 30 yard pass from Robert Griffin III (Kai Forbath kick),23,20,2012_07_WAS_NYG
+4,1:13,Giants,Victor Cruz 77 yard pass from Eli Manning (Lawrence Tynes kick),23,27,2012_07_WAS_NYG
+1,7:38,Rams,Greg Zuerlein 50 yard field goal ,0,3,2012_07_GB_LAR
+1,5:23,Packers,Jordy Nelson 3 yard pass from Aaron Rodgers (Mason Crosby kick),7,3,2012_07_GB_LAR
+1,2:17,Packers,Mason Crosby 47 yard field goal ,10,3,2012_07_GB_LAR
+2,0:40,Rams,Greg Zuerlein 43 yard field goal ,10,6,2012_07_GB_LAR
+3,8:04,Packers,Randall Cobb 5 yard pass from Aaron Rodgers (Mason Crosby kick),17,6,2012_07_GB_LAR
+4,11:52,Packers,Mason Crosby 23 yard field goal ,20,6,2012_07_GB_LAR
+4,8:50,Rams,Steven Jackson 6 yard rush (Greg Zuerlein kick),20,13,2012_07_GB_LAR
+4,3:06,Packers,Randall Cobb 39 yard pass from Aaron Rodgers (Mason Crosby kick),27,13,2012_07_GB_LAR
+4,1:49,Packers,Mason Crosby 48 yard field goal ,30,13,2012_07_GB_LAR
+4,0:15,Rams,Austin Pettis 3 yard pass from Sam Bradford (Greg Zuerlein kick),30,20,2012_07_GB_LAR
+1,12:22,Buccaneers,Tiquan Underwood 13 yard pass from Josh Freeman (Connor Barth kick),0,7,2012_07_NO_TB
+1,5:55,Buccaneers,Doug Martin 36 yard rush (Connor Barth kick),0,14,2012_07_NO_TB
+1,1:46,Saints,Marques Colston 17 yard pass from Drew Brees (Garrett Hartley kick),7,14,2012_07_NO_TB
+2,13:18,Buccaneers,Vincent Jackson 17 yard pass from Josh Freeman (Connor Barth kick),7,21,2012_07_NO_TB
+2,9:24,Saints,Darren Sproles 9 yard pass from Drew Brees (Garrett Hartley kick),14,21,2012_07_NO_TB
+2,4:35,Saints,Joe Morgan 48 yard pass from Drew Brees (Garrett Hartley kick),21,21,2012_07_NO_TB
+2,0:15,Saints,David Thomas 20 yard pass from Drew Brees (Garrett Hartley kick),28,21,2012_07_NO_TB
+4,13:23,Saints,Pierre Thomas 5 yard rush (Garrett Hartley kick),35,21,2012_07_NO_TB
+4,4:10,Buccaneers,Dallas Clark 3 yard pass from Josh Freeman (Connor Barth kick),35,28,2012_07_NO_TB
+1,8:51,Jets,Shonn Greene 1 yard rush (Nick Folk kick),7,0,2012_07_NYJ_NE
+1,8:39,Patriots,Devin McCourty 104 yard kickoff return (Stephen Gostkowski kick),7,7,2012_07_NYJ_NE
+1,4:11,Patriots,Rob Gronkowski 17 yard pass from Tom Brady (Stephen Gostkowski kick),7,14,2012_07_NYJ_NE
+2,13:10,Patriots,"Safety, Mark Sanchez fumble out of bounds in the end zone. ",7,16,2012_07_NYJ_NE
+2,0:02,Jets,Nick Folk 54 yard field goal ,10,16,2012_07_NYJ_NE
+3,9:33,Jets,Nick Folk 21 yard field goal ,13,16,2012_07_NYJ_NE
+3,2:39,Patriots,Rob Gronkowski 2 yard pass from Tom Brady (Stephen Gostkowski kick),13,23,2012_07_NYJ_NE
+4,5:44,Jets,Dustin Keller 7 yard pass from Mark Sanchez (Nick Folk kick),20,23,2012_07_NYJ_NE
+4,2:06,Jets,Nick Folk 43 yard field goal ,23,23,2012_07_NYJ_NE
+4,1:37,Jets,Nick Folk 43 yard field goal ,26,23,2012_07_NYJ_NE
+4,0:00,Patriots,Stephen Gostkowski 43 yard field goal ,26,26,2012_07_NYJ_NE
+OT,11:02,Patriots,Stephen Gostkowski 48 yard field goal ,26,29,2012_07_NYJ_NE
+1,6:13,Raiders,Sebastian Janikowski 21 yard field goal ,0,3,2012_07_JAX_LVR
+1,3:24,Jaguars,Cecil Shorts 42 yard pass from Blaine Gabbert (Josh Scobee kick),7,3,2012_07_JAX_LVR
+2,11:34,Jaguars,Rashad Jennings 5 yard rush (Josh Scobee kick),14,3,2012_07_JAX_LVR
+2,5:57,Jaguars,Josh Scobee 50 yard field goal ,17,3,2012_07_JAX_LVR
+2,0:34,Raiders,Sebastian Janikowski 33 yard field goal ,17,6,2012_07_JAX_LVR
+3,10:42,Jaguars,Josh Scobee 40 yard field goal ,20,6,2012_07_JAX_LVR
+3,6:01,Raiders,Denarius Moore 8 yard pass from Carson Palmer (Sebastian Janikowski kick),20,13,2012_07_JAX_LVR
+4,12:40,Jaguars,Josh Scobee 45 yard field goal ,23,13,2012_07_JAX_LVR
+4,6:52,Raiders,Sebastian Janikowski 31 yard field goal ,23,16,2012_07_JAX_LVR
+4,3:34,Raiders,Carson Palmer 1 yard rush (Sebastian Janikowski kick),23,23,2012_07_JAX_LVR
+OT,12:54,Raiders,Sebastian Janikowski 40 yard field goal ,23,26,2012_07_JAX_LVR
+1,10:26,Steelers,Shaun Suisham 42 yard field goal ,3,0,2012_07_PIT_CIN
+1,2:17,Bengals,Cedric Peerman 5 yard rush (Mike Nugent kick),3,7,2012_07_PIT_CIN
+2,8:29,Bengals,A.J. Green 8 yard pass from Andy Dalton (Mike Nugent kick),3,14,2012_07_PIT_CIN
+2,3:07,Steelers,Shaun Suisham 47 yard field goal ,6,14,2012_07_PIT_CIN
+2,0:24,Steelers,Heath Miller 9 yard pass from Ben Roethlisberger (Heath Miller pass from Ben Roethlisberger),14,14,2012_07_PIT_CIN
+3,11:09,Bengals,Mike Nugent 48 yard field goal ,14,17,2012_07_PIT_CIN
+3,8:17,Steelers,Shaun Suisham 42 yard field goal ,17,17,2012_07_PIT_CIN
+4,14:16,Steelers,Chris Rainey 11 yard rush (Shaun Suisham kick),24,17,2012_07_PIT_CIN
+1,11:12,Bears,Brandon Marshall 7 yard pass from Jay Cutler (Robbie Gould kick),0,7,2012_07_DET_CHI
+1,1:23,Bears,Robbie Gould 39 yard field goal ,0,10,2012_07_DET_CHI
+3,11:20,Bears,Robbie Gould 21 yard field goal ,0,13,2012_07_DET_CHI
+4,0:30,Lions,Ryan Broyles 12 yard pass from Matthew Stafford (Jason Hanson kick),7,13,2012_07_DET_CHI
+1,9:48,Buccaneers,Connor Barth 28 yard field goal ,3,0,2012_08_TB_MIN
+1,3:34,Buccaneers,Erik Lorig 1 yard pass from Josh Freeman (Connor Barth kick),10,0,2012_08_TB_MIN
+2,12:20,Buccaneers,Connor Barth 40 yard field goal ,13,0,2012_08_TB_MIN
+2,9:39,Vikings,Percy Harvin 18 yard pass from Christian Ponder (Blair Walsh kick),13,7,2012_08_TB_MIN
+2,4:30,Buccaneers,Mike Williams 3 yard pass from Josh Freeman (Connor Barth kick),20,7,2012_08_TB_MIN
+2,1:40,Vikings,Blair Walsh 51 yard field goal ,20,10,2012_08_TB_MIN
+3,13:39,Buccaneers,Doug Martin 64 yard pass from Josh Freeman (Connor Barth kick),27,10,2012_08_TB_MIN
+3,7:50,Buccaneers,Connor Barth 38 yard field goal ,30,10,2012_08_TB_MIN
+3,7:28,Vikings,Adrian Peterson 64 yard rush (Blair Walsh kick),30,17,2012_08_TB_MIN
+4,7:03,Buccaneers,Doug Martin 1 yard rush (pass failed),36,17,2012_08_TB_MIN
+1,4:32,Bears,Matt Forte 13 yard rush (Robbie Gould kick),0,7,2012_08_CAR_CHI
+1,2:01,Panthers,Justin Medlock 34 yard field goal ,3,7,2012_08_CAR_CHI
+2,14:45,Panthers,Louis Murphy offensive fumble recovery in end zone (Justin Medlock kick),10,7,2012_08_CAR_CHI
+2,4:36,Panthers,Justin Medlock 31 yard field goal ,13,7,2012_08_CAR_CHI
+3,6:47,Panthers,Justin Medlock 22 yard field goal ,16,7,2012_08_CAR_CHI
+3,1:30,Panthers,Justin Medlock 43 yard field goal ,19,7,2012_08_CAR_CHI
+4,6:52,Bears,Kellen Davis 12 yard pass from Jay Cutler (Robbie Gould kick),19,14,2012_08_CAR_CHI
+4,6:44,Bears,Tim Jennings 25 yard interception return (run failed),19,20,2012_08_CAR_CHI
+4,2:27,Panthers,Justin Medlock 45 yard field goal ,22,20,2012_08_CAR_CHI
+4,0:00,Bears,Robbie Gould 41 yard field goal ,22,23,2012_08_CAR_CHI
+1,4:17,Browns,Trent Richardson 26 yard rush (Phil Dawson kick),0,7,2012_08_LAC_CLE
+2,0:00,Chargers,Nick Novak 43 yard field goal ,3,7,2012_08_LAC_CLE
+3,2:33,Chargers,Nick Novak 31 yard field goal ,6,7,2012_08_LAC_CLE
+1,5:30,Seahawks,Stephen Hauschka 23 yard field goal ,3,0,2012_08_SEA_DET
+1,0:00,Lions,Ryan Broyles 6 yard pass from Matthew Stafford (Jason Hanson kick),3,7,2012_08_SEA_DET
+2,14:43,Seahawks,Marshawn Lynch 77 yard rush (Stephen Hauschka kick),10,7,2012_08_SEA_DET
+2,11:39,Seahawks,Sidney Rice 9 yard pass from Russell Wilson (Stephen Hauschka kick),17,7,2012_08_SEA_DET
+2,8:49,Lions,Titus Young 46 yard pass from Matthew Stafford (Jason Hanson kick),17,14,2012_08_SEA_DET
+4,11:35,Lions,Matthew Stafford 1 yard rush (Jason Hanson kick),17,21,2012_08_SEA_DET
+4,5:27,Seahawks,Zach Miller 16 yard pass from Russell Wilson (Stephen Hauschka kick),24,21,2012_08_SEA_DET
+4,0:20,Lions,Titus Young 1 yard pass from Matthew Stafford (Jason Hanson kick),24,28,2012_08_SEA_DET
+1,8:23,Jaguars,Josh Scobee 38 yard field goal ,3,0,2012_08_JAX_GB
+1,2:54,Packers,Randall Cobb 5 yard pass from Aaron Rodgers (Mason Crosby kick),3,7,2012_08_JAX_GB
+2,8:45,Packers,Dezman Moses blocked punt recovery in end zone (Mason Crosby kick),3,14,2012_08_JAX_GB
+2,1:03,Jaguars,Josh Scobee 22 yard field goal ,6,14,2012_08_JAX_GB
+2,0:17,Jaguars,Guy Whimper 1 yard pass from Blaine Gabbert (pass failed),12,14,2012_08_JAX_GB
+4,12:36,Packers,Donald Driver 4 yard pass from Aaron Rodgers (Mason Crosby kick),12,21,2012_08_JAX_GB
+4,6:50,Jaguars,Josh Scobee 32 yard field goal ,15,21,2012_08_JAX_GB
+4,0:28,Packers,Mason Crosby 25 yard field goal ,15,24,2012_08_JAX_GB
+1,11:02,Dolphins,Dan Carpenter 33 yard field goal ,3,0,2012_08_MIA_NYJ
+1,3:59,Dolphins,Olivier Vernon blocked punt recovery in end zone (Dan Carpenter kick),10,0,2012_08_MIA_NYJ
+2,14:08,Dolphins,Daniel Thomas 3 yard rush (Dan Carpenter kick),17,0,2012_08_MIA_NYJ
+2,6:59,Dolphins,Dan Carpenter 39 yard field goal ,20,0,2012_08_MIA_NYJ
+3,11:53,Jets,Nick Folk 38 yard field goal ,20,3,2012_08_MIA_NYJ
+3,8:46,Dolphins,Anthony Fasano 4 yard pass from Matt Moore (Dan Carpenter kick),27,3,2012_08_MIA_NYJ
+4,7:20,Jets,Chaz Schilens 5 yard pass from Mark Sanchez (pass failed),27,9,2012_08_MIA_NYJ
+4,4:30,Dolphins,Dan Carpenter 42 yard field goal ,30,9,2012_08_MIA_NYJ
+1,6:16,Falcons,Drew Davis 15 yard pass from Matt Ryan (Matt Bryant kick),7,0,2012_08_ATL_PHI
+1,0:32,Falcons,Jason Snelling 3 yard pass from Matt Ryan (Matt Bryant kick),14,0,2012_08_ATL_PHI
+2,8:18,Eagles,LeSean McCoy 2 yard rush (Alex Henery kick),14,7,2012_08_ATL_PHI
+2,6:33,Falcons,Julio Jones 63 yard pass from Matt Ryan (Matt Bryant kick),21,7,2012_08_ATL_PHI
+2,0:02,Falcons,Matt Bryant 43 yard field goal ,24,7,2012_08_ATL_PHI
+3,11:20,Eagles,Alex Henery 33 yard field goal ,24,10,2012_08_ATL_PHI
+3,6:10,Falcons,Matt Bryant 29 yard field goal ,27,10,2012_08_ATL_PHI
+4,14:57,Falcons,Matt Bryant 30 yard field goal ,30,10,2012_08_ATL_PHI
+4,7:18,Eagles,LeSean McCoy 7 yard pass from Michael Vick (Alex Henery kick),30,17,2012_08_ATL_PHI
+1,7:55,Steelers,Leonard Pope 1 yard pass from Ben Roethlisberger (Shaun Suisham kick),0,7,2012_08_WAS_PIT
+1,2:49,Steelers,Shaun Suisham 48 yard field goal ,0,10,2012_08_WAS_PIT
+2,11:33,Redskins,Santana Moss 2 yard pass from Robert Griffin III (Kai Forbath kick failed),6,10,2012_08_WAS_PIT
+2,6:17,Steelers,Heath Miller 7 yard pass from Ben Roethlisberger (Shaun Suisham kick),6,17,2012_08_WAS_PIT
+2,1:56,Steelers,Shaun Suisham 27 yard field goal ,6,20,2012_08_WAS_PIT
+3,11:52,Redskins,Kai Forbath 48 yard field goal ,9,20,2012_08_WAS_PIT
+3,5:13,Steelers,Will Johnson 1 yard pass from Ben Roethlisberger (Shaun Suisham kick),9,27,2012_08_WAS_PIT
+4,12:06,Redskins,Kai Forbath 45 yard field goal ,12,27,2012_08_WAS_PIT
+1,12:25,Rams,Chris Givens 50 yard pass from Sam Bradford (Greg Zuerlein kick),0,7,2012_08_NE_LAR
+1,7:50,Patriots,Brandon Lloyd 19 yard pass from Tom Brady (Stephen Gostkowski kick),7,7,2012_08_NE_LAR
+2,14:12,Patriots,Shane Vereen 1 yard rush (Stephen Gostkowski kick),14,7,2012_08_NE_LAR
+2,6:26,Patriots,Rob Gronkowski 7 yard pass from Tom Brady (Stephen Gostkowski kick),21,7,2012_08_NE_LAR
+2,0:10,Patriots,Stevan Ridley 1 yard rush (Stephen Gostkowski kick),28,7,2012_08_NE_LAR
+3,12:24,Patriots,Brandon Lloyd 9 yard pass from Tom Brady (Stephen Gostkowski kick),35,7,2012_08_NE_LAR
+3,6:55,Patriots,Stephen Gostkowski 26 yard field goal ,38,7,2012_08_NE_LAR
+4,11:20,Patriots,Rob Gronkowski 14 yard pass from Tom Brady (Stephen Gostkowski kick),45,7,2012_08_NE_LAR
+1,7:35,Titans,Rob Bironas 39 yard field goal ,0,3,2012_08_IND_TEN
+1,1:06,Colts,Adam Vinatieri 20 yard field goal ,3,3,2012_08_IND_TEN
+2,1:00,Titans,Kendall Wright 23 yard pass from Matt Hasselbeck (Rob Bironas kick),3,10,2012_08_IND_TEN
+3,10:20,Colts,Adam Vinatieri 44 yard field goal ,6,10,2012_08_IND_TEN
+4,10:26,Titans,Rob Bironas 30 yard field goal ,6,13,2012_08_IND_TEN
+4,3:24,Colts,Delone Carter 1 yard rush (Adam Vinatieri kick),13,13,2012_08_IND_TEN
+OT,10:11,Colts,Vick Ballard 16 yard pass from Andrew Luck ,19,13,2012_08_IND_TEN
+1,9:51,Raiders,Sebastian Janikowski 36 yard field goal ,3,0,2012_08_LVR_KC
+2,14:44,Raiders,Sebastian Janikowski 35 yard field goal ,6,0,2012_08_LVR_KC
+2,10:21,Chiefs,Ryan Succop 30 yard field goal ,6,3,2012_08_LVR_KC
+2,4:12,Chiefs,Ryan Succop 42 yard field goal ,6,6,2012_08_LVR_KC
+2,0:49,Raiders,Denarius Moore 9 yard pass from Carson Palmer (Sebastian Janikowski kick),13,6,2012_08_LVR_KC
+3,13:58,Raiders,Sebastian Janikowski 29 yard field goal ,16,6,2012_08_LVR_KC
+3,8:40,Chiefs,Ryan Succop 52 yard field goal ,16,9,2012_08_LVR_KC
+3,5:40,Raiders,Darrius Heyward-Bey 32 yard pass from Carson Palmer (Sebastian Janikowski kick),23,9,2012_08_LVR_KC
+4,8:14,Raiders,Sebastian Janikowski 32 yard field goal ,26,9,2012_08_LVR_KC
+4,2:27,Chiefs,Dexter McCluster 10 yard pass from Matt Cassel (Ryan Succop kick),26,16,2012_08_LVR_KC
+1,11:53,Giants,Lawrence Tynes 41 yard field goal ,3,0,2012_08_NYG_DAL
+1,7:11,Giants,Lawrence Tynes 37 yard field goal ,6,0,2012_08_NYG_DAL
+1,3:41,Giants,Andre Brown 1 yard rush (Lawrence Tynes kick),13,0,2012_08_NYG_DAL
+2,14:22,Giants,Lawrence Tynes 26 yard field goal ,16,0,2012_08_NYG_DAL
+2,13:05,Giants,Jason Pierre-Paul 28 yard interception return (Lawrence Tynes kick),23,0,2012_08_NYG_DAL
+2,5:22,Cowboys,Felix Jones 4 yard rush (Dan Bailey kick),23,7,2012_08_NYG_DAL
+2,0:58,Cowboys,Dan Bailey 51 yard field goal ,23,10,2012_08_NYG_DAL
+3,9:16,Cowboys,Tony Romo 1 yard rush (Dan Bailey kick),23,17,2012_08_NYG_DAL
+3,3:43,Cowboys,John Phillips 1 yard pass from Tony Romo (Dan Bailey kick),23,24,2012_08_NYG_DAL
+4,10:20,Giants,Lawrence Tynes 43 yard field goal ,26,24,2012_08_NYG_DAL
+4,3:31,Giants,Lawrence Tynes 37 yard field goal ,29,24,2012_08_NYG_DAL
+1,4:39,Broncos,Willis McGahee 1 yard rush (Matt Prater kick),0,7,2012_08_NO_DEN
+2,14:53,Saints,Darren Sproles 29 yard pass from Drew Brees (Garrett Hartley kick),7,7,2012_08_NO_DEN
+2,6:43,Broncos,Eric Decker 13 yard pass from Peyton Manning (Matt Prater kick),7,14,2012_08_NO_DEN
+2,0:00,Broncos,Matt Prater 33 yard field goal ,7,17,2012_08_NO_DEN
+3,9:30,Broncos,Demaryius Thomas 1 yard pass from Peyton Manning (Matt Prater kick),7,24,2012_08_NO_DEN
+4,14:54,Broncos,Eric Decker 2 yard pass from Peyton Manning (Matt Prater kick),7,31,2012_08_NO_DEN
+4,5:27,Broncos,Matt Prater 33 yard field goal ,7,34,2012_08_NO_DEN
+4,2:03,Saints,Jimmy Graham 18 yard pass from Drew Brees (Garrett Hartley kick),14,34,2012_08_NO_DEN
+1,1:53,49ers,Michael Crabtree 3 yard pass from Alex Smith (David Akers kick),7,0,2012_08_SF_ARI
+2,5:58,49ers,David Akers 43 yard field goal ,10,0,2012_08_SF_ARI
+2,1:41,49ers,Michael Crabtree 9 yard pass from Alex Smith (David Akers kick),17,0,2012_08_SF_ARI
+3,7:27,49ers,Randy Moss 47 yard pass from Alex Smith (David Akers kick),24,0,2012_08_SF_ARI
+3,0:57,Cardinals,Jay Feely 28 yard field goal ,24,3,2012_08_SF_ARI
+1,10:24,Chargers,Antonio Gates 14 yard pass from Philip Rivers (Nick Novak kick),0,7,2012_09_KC_LAC
+2,9:10,Chargers,Nick Novak 25 yard field goal ,0,10,2012_09_KC_LAC
+2,2:51,Chiefs,Ryan Succop 49 yard field goal ,3,10,2012_09_KC_LAC
+3,0:53,Chiefs,Ryan Succop 41 yard field goal ,6,10,2012_09_KC_LAC
+4,11:33,Chargers,Malcom Floyd 13 yard pass from Philip Rivers (Nick Novak kick),6,17,2012_09_KC_LAC
+4,10:39,Chargers,Shaun Phillips defensive fumble recovery in end zone (Nick Novak kick),6,24,2012_09_KC_LAC
+4,8:33,Chargers,Demorrio Williams 59 yard interception return (Nick Novak kick),6,31,2012_09_KC_LAC
+4,4:26,Chiefs,Shaun Draughn 6 yard rush (Ryan Succop kick),13,31,2012_09_KC_LAC
+1,7:55,Broncos,Matt Prater 43 yard field goal ,3,0,2012_09_DEN_CIN
+2,14:12,Bengals,Mike Nugent 28 yard field goal ,3,3,2012_09_DEN_CIN
+2,10:15,Broncos,Eric Decker 13 yard pass from Peyton Manning (Matt Prater kick),10,3,2012_09_DEN_CIN
+3,14:49,Broncos,Trindon Holliday 105 yard kickoff return (Matt Prater kick),17,3,2012_09_DEN_CIN
+3,11:33,Bengals,A.J. Green 10 yard pass from Andy Dalton (Mike Nugent kick),17,10,2012_09_DEN_CIN
+3,1:17,Bengals,Mike Nugent 49 yard field goal ,17,13,2012_09_DEN_CIN
+4,14:10,Bengals,BenJarvus Green-Ellis 2 yard rush (Mike Nugent kick),17,20,2012_09_DEN_CIN
+4,11:47,Broncos,Joel Dreessen 1 yard pass from Peyton Manning (Matt Prater kick),24,20,2012_09_DEN_CIN
+4,3:36,Broncos,Eric Decker 4 yard pass from Peyton Manning (Matt Prater kick),31,20,2012_09_DEN_CIN
+4,0:52,Bengals,Mike Nugent 41 yard field goal ,31,23,2012_09_DEN_CIN
+1,8:32,Ravens,Ray Rice 8 yard rush (Justin Tucker kick),7,0,2012_09_BAL_CLE
+1,0:01,Ravens,Bernard Pierce 12 yard rush (Justin Tucker kick),14,0,2012_09_BAL_CLE
+2,9:19,Browns,Phil Dawson 32 yard field goal ,14,3,2012_09_BAL_CLE
+2,1:47,Browns,Phil Dawson 28 yard field goal ,14,6,2012_09_BAL_CLE
+2,0:03,Browns,Phil Dawson 29 yard field goal ,14,9,2012_09_BAL_CLE
+3,2:39,Browns,Phil Dawson 33 yard field goal ,14,12,2012_09_BAL_CLE
+4,8:48,Browns,Phil Dawson 41 yard field goal ,14,15,2012_09_BAL_CLE
+4,4:26,Ravens,Torrey Smith 19 yard pass from Joe Flacco (Anquan Boldin pass from Joe Flacco),22,15,2012_09_BAL_CLE
+4,2:49,Ravens,Justin Tucker 43 yard field goal ,25,15,2012_09_BAL_CLE
+1,5:31,Packers,Randall Cobb 13 yard pass from Aaron Rodgers (Mason Crosby kick),0,7,2012_09_ARI_GB
+2,13:26,Cardinals,LaRod Stephens-Howling 1 yard rush (Jay Feely kick),7,7,2012_09_ARI_GB
+2,7:44,Packers,Randall Cobb 21 yard pass from Aaron Rodgers (Mason Crosby kick),7,14,2012_09_ARI_GB
+2,1:54,Packers,James Jones 28 yard pass from Aaron Rodgers (Mason Crosby kick),7,21,2012_09_ARI_GB
+3,13:12,Packers,Mason Crosby 33 yard field goal ,7,24,2012_09_ARI_GB
+3,8:21,Cardinals,Larry Fitzgerald 31 yard pass from John Skelton (Jay Feely kick),14,24,2012_09_ARI_GB
+3,0:50,Cardinals,Jay Feely 20 yard field goal ,17,24,2012_09_ARI_GB
+3,0:00,Packers,Tom Crabtree 72 yard pass from Aaron Rodgers (Mason Crosby kick),17,31,2012_09_ARI_GB
+1,0:36,Texans,Owen Daniels 39 yard pass from Matt Schaub (Shayne Graham kick),0,7,2012_09_BUF_HOU
+2,1:42,Bills,Rian Lindell 22 yard field goal ,3,7,2012_09_BUF_HOU
+2,0:05,Bills,Rian Lindell 38 yard field goal ,6,7,2012_09_BUF_HOU
+3,12:11,Texans,Arian Foster 3 yard rush (Shayne Graham kick),6,14,2012_09_BUF_HOU
+3,7:41,Bills,Rian Lindell 39 yard field goal ,9,14,2012_09_BUF_HOU
+4,11:25,Texans,Garrett Graham 5 yard pass from Matt Schaub (Shayne Graham kick),9,21,2012_09_BUF_HOU
+1,4:15,Dolphins,Dan Carpenter 37 yard field goal ,3,0,2012_09_MIA_IND
+1,0:47,Colts,Reggie Wayne 9 yard pass from Andrew Luck (Adam Vinatieri kick),3,7,2012_09_MIA_IND
+2,13:25,Dolphins,Charles Clay 31 yard pass from Ryan Tannehill (Dan Carpenter kick),10,7,2012_09_MIA_IND
+2,9:37,Colts,Adam Vinatieri 23 yard field goal ,10,10,2012_09_MIA_IND
+2,5:07,Dolphins,Reggie Bush 18 yard rush (Dan Carpenter kick),17,10,2012_09_MIA_IND
+2,0:07,Colts,Adam Vinatieri 47 yard field goal ,17,13,2012_09_MIA_IND
+3,1:49,Colts,T.Y. Hilton 36 yard pass from Andrew Luck (Adam Vinatieri kick),17,20,2012_09_MIA_IND
+4,13:12,Dolphins,Dan Carpenter 31 yard field goal ,20,20,2012_09_MIA_IND
+4,5:58,Colts,Adam Vinatieri 43 yard field goal ,20,23,2012_09_MIA_IND
+2,12:16,Lions,Mikel Leshoure 7 yard rush (Jason Hanson kick),7,0,2012_09_DET_JAX
+2,7:58,Lions,Mikel Leshoure 1 yard rush (Jason Hanson kick),14,0,2012_09_DET_JAX
+2,0:29,Lions,Mikel Leshoure 8 yard rush (Jason Hanson kick),21,0,2012_09_DET_JAX
+4,13:56,Lions,Jason Hanson 42 yard field goal ,24,0,2012_09_DET_JAX
+4,8:36,Jaguars,Micheal Spurlock 5 yard pass from Blaine Gabbert (Rashad Jennings pass from Blaine Gabbert),24,8,2012_09_DET_JAX
+4,2:42,Lions,Joique Bell 10 yard rush (Jason Hanson kick),31,8,2012_09_DET_JAX
+4,0:50,Jaguars,Justin Blackmon 6 yard pass from Blaine Gabbert (pass failed),31,14,2012_09_DET_JAX
+1,6:44,Bears,Corey Wootton 5 yard blocked punt return (Robbie Gould kick),7,0,2012_09_CHI_TEN
+1,4:51,Titans,"Safety, Offensive penalty on JMarcus Webb in endzone for a safety. ",7,2,2012_09_CHI_TEN
+1,3:40,Bears,Matt Forte 8 yard rush (Robbie Gould kick),14,2,2012_09_CHI_TEN
+1,2:59,Bears,Brian Urlacher 46 yard interception return (Robbie Gould kick),21,2,2012_09_CHI_TEN
+1,1:33,Bears,Brandon Marshall 13 yard pass from Jay Cutler (Robbie Gould kick),28,2,2012_09_CHI_TEN
+2,11:44,Bears,Robbie Gould 40 yard field goal ,31,2,2012_09_CHI_TEN
+2,0:00,Titans,Rob Bironas 39 yard field goal ,31,5,2012_09_CHI_TEN
+3,11:25,Titans,Nate Washington 30 yard pass from Matt Hasselbeck (Rob Bironas kick),31,12,2012_09_CHI_TEN
+3,7:37,Bears,Robbie Gould 25 yard field goal ,34,12,2012_09_CHI_TEN
+3,0:38,Bears,Robbie Gould 22 yard field goal ,37,12,2012_09_CHI_TEN
+4,11:21,Bears,Brandon Marshall 39 yard pass from Jay Cutler (Robbie Gould kick),44,12,2012_09_CHI_TEN
+4,10:20,Bears,Brandon Marshall 5 yard pass from Jay Cutler (Robbie Gould kick),51,12,2012_09_CHI_TEN
+4,10:09,Titans,Chris Johnson 80 yard rush (Kenny Britt pass from Matt Hasselbeck),51,20,2012_09_CHI_TEN
+1,4:20,Redskins,Kai Forbath 47 yard field goal ,0,3,2012_09_CAR_WAS
+1,0:24,Panthers,DeAngelo Williams 30 yard rush (Justin Medlock kick),7,3,2012_09_CAR_WAS
+2,0:57,Panthers,Steve Smith Sr. 19 yard pass from Cam Newton (Justin Medlock kick),14,3,2012_09_CAR_WAS
+3,6:02,Redskins,Kai Forbath 25 yard field goal ,14,6,2012_09_CAR_WAS
+4,12:46,Panthers,Cam Newton 1 yard rush (Justin Medlock kick),21,6,2012_09_CAR_WAS
+4,1:28,Redskins,Evan Royster 2 yard rush (Kai Forbath kick),21,13,2012_09_CAR_WAS
+1,0:45,Raiders,Sebastian Janikowski 29 yard field goal ,0,3,2012_09_TB_LVR
+2,12:54,Buccaneers,Vincent Jackson 20 yard pass from Josh Freeman (Connor Barth kick),7,3,2012_09_TB_LVR
+2,1:20,Raiders,Rod Streater 25 yard pass from Carson Palmer (Sebastian Janikowski kick),7,10,2012_09_TB_LVR
+3,12:09,Buccaneers,Doug Martin 45 yard rush (Connor Barth kick),14,10,2012_09_TB_LVR
+3,7:12,Buccaneers,Mike Williams 4 yard pass from Josh Freeman (Connor Barth kick),21,10,2012_09_TB_LVR
+3,2:15,Buccaneers,Doug Martin 67 yard rush (Connor Barth kick),28,10,2012_09_TB_LVR
+4,14:11,Raiders,Brandon Myers 4 yard pass from Carson Palmer (Sebastian Janikowski kick),28,17,2012_09_TB_LVR
+4,13:51,Buccaneers,Doug Martin 70 yard rush (Connor Barth kick),35,17,2012_09_TB_LVR
+4,9:48,Raiders,Brandon Myers 1 yard pass from Carson Palmer (Sebastian Janikowski kick),35,24,2012_09_TB_LVR
+4,3:51,Raiders,Marcel Reece 13 yard pass from Carson Palmer (Juron Criner pass from Carson Palmer),35,32,2012_09_TB_LVR
+4,1:49,Buccaneers,Doug Martin 1 yard rush (Connor Barth kick),42,32,2012_09_TB_LVR
+1,13:15,Vikings,Adrian Peterson 1 yard rush (Blair Walsh kick),7,0,2012_09_MIN_SEA
+1,8:52,Seahawks,Golden Tate 6 yard pass from Russell Wilson (Stephen Hauschka kick),7,7,2012_09_MIN_SEA
+1,3:15,Seahawks,Sidney Rice 11 yard pass from Russell Wilson (Stephen Hauschka kick),7,14,2012_09_MIN_SEA
+2,11:46,Vikings,Adrian Peterson 4 yard rush (Blair Walsh kick),14,14,2012_09_MIN_SEA
+2,5:25,Vikings,Blair Walsh 36 yard field goal ,17,14,2012_09_MIN_SEA
+2,0:44,Seahawks,Golden Tate 11 yard pass from Russell Wilson (Stephen Hauschka kick failed),17,20,2012_09_MIN_SEA
+3,4:09,Seahawks,Marshawn Lynch 3 yard rush (Stephen Hauschka kick),17,27,2012_09_MIN_SEA
+3,1:47,Vikings,Blair Walsh 55 yard field goal ,20,27,2012_09_MIN_SEA
+4,6:23,Seahawks,Stephen Hauschka 40 yard field goal ,20,30,2012_09_MIN_SEA
+2,12:09,Steelers,Emmanuel Sanders 4 yard pass from Ben Roethlisberger (Shaun Suisham kick),7,0,2012_09_PIT_NYG
+2,7:01,Giants,Andre Brown 1 yard rush (Lawrence Tynes kick),7,7,2012_09_PIT_NYG
+2,5:11,Giants,Michael Boley 70 yard defensive fumble return (Lawrence Tynes kick),7,14,2012_09_PIT_NYG
+2,0:00,Steelers,Shaun Suisham 30 yard field goal ,10,14,2012_09_PIT_NYG
+3,8:25,Giants,Lawrence Tynes 50 yard field goal ,10,17,2012_09_PIT_NYG
+3,1:32,Giants,Lawrence Tynes 23 yard field goal ,10,20,2012_09_PIT_NYG
+4,14:05,Steelers,Mike Wallace 51 yard pass from Ben Roethlisberger (Shaun Suisham kick),17,20,2012_09_PIT_NYG
+4,4:02,Steelers,Isaac Redman 1 yard rush (Shaun Suisham kick),24,20,2012_09_PIT_NYG
+1,10:46,Cowboys,Dan Bailey 23 yard field goal ,3,0,2012_09_DAL_ATL
+1,3:42,Cowboys,Dan Bailey 32 yard field goal ,6,0,2012_09_DAL_ATL
+2,14:15,Falcons,Matt Bryant 45 yard field goal ,6,3,2012_09_DAL_ATL
+2,0:00,Falcons,Matt Bryant 46 yard field goal ,6,6,2012_09_DAL_ATL
+4,14:16,Falcons,Michael Turner 3 yard rush (Matt Bryant kick),6,13,2012_09_DAL_ATL
+4,7:49,Falcons,Matt Bryant 36 yard field goal ,6,16,2012_09_DAL_ATL
+4,5:21,Cowboys,Kevin Ogletree 21 yard pass from Tony Romo (Dan Bailey kick),13,16,2012_09_DAL_ATL
+4,0:17,Falcons,Matt Bryant 32 yard field goal ,13,19,2012_09_DAL_ATL
+1,2:36,Saints,Patrick Robinson 99 yard interception return (Garrett Hartley kick),0,7,2012_09_PHI_NO
+2,12:03,Eagles,Alex Henery 22 yard field goal ,3,7,2012_09_PHI_NO
+2,8:33,Saints,Chris Ivory 22 yard rush (Garrett Hartley kick),3,14,2012_09_PHI_NO
+2,1:13,Saints,Marques Colston 1 yard pass from Drew Brees (Garrett Hartley kick),3,21,2012_09_PHI_NO
+3,8:42,Eagles,DeSean Jackson 77 yard pass from Michael Vick (Alex Henery kick),10,21,2012_09_PHI_NO
+3,7:00,Eagles,Alex Henery 37 yard field goal ,13,21,2012_09_PHI_NO
+3,1:20,Saints,Jimmy Graham 6 yard pass from Drew Brees (Garrett Hartley kick),13,28,2012_09_PHI_NO
+1,7:27,Colts,Adam Vinatieri 31 yard field goal ,3,0,2012_10_IND_JAX
+2,13:44,Colts,Andrew Luck 5 yard rush (Adam Vinatieri kick),10,0,2012_10_IND_JAX
+2,7:39,Colts,Andrew Luck 1 yard rush (Adam Vinatieri kick),17,0,2012_10_IND_JAX
+2,0:17,Jaguars,Josh Scobee 40 yard field goal ,17,3,2012_10_IND_JAX
+3,10:50,Colts,Darius Butler 11 yard interception return (Adam Vinatieri kick),24,3,2012_10_IND_JAX
+4,9:16,Jaguars,Cecil Shorts 4 yard pass from Chad Henne (Josh Scobee kick),24,10,2012_10_IND_JAX
+4,3:23,Colts,Adam Vinatieri 41 yard field goal ,27,10,2012_10_IND_JAX
+1,8:49,Ravens,Justin Tucker 48 yard field goal ,0,3,2012_10_LVR_BAL
+1,3:15,Ravens,Joe Flacco 1 yard rush (Justin Tucker kick),0,10,2012_10_LVR_BAL
+2,10:02,Raiders,Sebastian Janikowski 21 yard field goal ,3,10,2012_10_LVR_BAL
+2,7:49,Ravens,Dennis Pitta 5 yard pass from Joe Flacco (Justin Tucker kick),3,17,2012_10_LVR_BAL
+2,3:16,Ravens,Justin Tucker 34 yard field goal ,3,20,2012_10_LVR_BAL
+2,1:37,Raiders,Darrius Heyward-Bey 55 yard pass from Carson Palmer (Sebastian Janikowski kick),10,20,2012_10_LVR_BAL
+2,0:24,Ravens,Ray Rice 7 yard rush (Justin Tucker kick),10,27,2012_10_LVR_BAL
+3,13:42,Ravens,Torrey Smith 47 yard pass from Joe Flacco (Justin Tucker kick),10,34,2012_10_LVR_BAL
+3,10:31,Raiders,Denarius Moore 30 yard pass from Carson Palmer (Sebastian Janikowski kick),17,34,2012_10_LVR_BAL
+3,9:20,Ravens,Torrey Smith 20 yard pass from Joe Flacco (Justin Tucker kick),17,41,2012_10_LVR_BAL
+3,5:40,Ravens,Sam Koch 7 yard rush (Justin Tucker kick),17,48,2012_10_LVR_BAL
+4,12:47,Raiders,Sebastian Janikowski 47 yard field goal ,20,48,2012_10_LVR_BAL
+4,12:34,Ravens,Jacoby Jones 105 yard kickoff return (Justin Tucker kick),20,55,2012_10_LVR_BAL
+1,6:46,Panthers,Greg Olsen 4 yard pass from Cam Newton (Justin Medlock kick),0,7,2012_10_DEN_CAR
+1,1:32,Broncos,Brandon Stokley 10 yard pass from Peyton Manning (Matt Prater kick),7,7,2012_10_DEN_CAR
+2,14:40,Broncos,Trindon Holliday 76 yard punt return (Matt Prater kick),14,7,2012_10_DEN_CAR
+2,10:12,Broncos,Matt Prater 53 yard field goal ,17,7,2012_10_DEN_CAR
+3,9:59,Broncos,Tony Carter 40 yard interception return (Matt Prater kick),24,7,2012_10_DEN_CAR
+4,14:17,Broncos,Matt Prater 27 yard field goal ,27,7,2012_10_DEN_CAR
+4,10:32,Broncos,"Safety, Cam Newton sacked in the endzone by Mike Adams. ",29,7,2012_10_DEN_CAR
+4,5:09,Panthers,Greg Olsen 5 yard pass from Cam Newton (Justin Medlock kick),29,14,2012_10_DEN_CAR
+4,3:23,Broncos,Ronnie Hillman 5 yard rush (Matt Prater kick),36,14,2012_10_DEN_CAR
+1,12:34,Bengals,A.J. Green 56 yard pass from Andy Dalton (Mike Nugent kick),0,7,2012_10_NYG_CIN
+1,10:53,Bengals,Andrew Hawkins 11 yard pass from Andy Dalton (Mike Nugent kick),0,14,2012_10_NYG_CIN
+1,5:34,Giants,Lawrence Tynes 23 yard field goal ,3,14,2012_10_NYG_CIN
+2,4:17,Bengals,Mike Nugent 28 yard field goal ,3,17,2012_10_NYG_CIN
+2,0:11,Giants,Lawrence Tynes 31 yard field goal ,6,17,2012_10_NYG_CIN
+3,6:37,Bengals,Jermaine Gresham 10 yard pass from Andy Dalton (Mike Nugent kick),6,24,2012_10_NYG_CIN
+3,4:20,Bengals,Mohamed Sanu 10 yard pass from Andy Dalton (Mike Nugent kick),6,31,2012_10_NYG_CIN
+4,2:46,Giants,Andre Brown 2 yard rush (Lawrence Tynes kick),13,31,2012_10_NYG_CIN
+1,6:49,Titans,Kendall Wright 9 yard pass from Jake Locker (Rob Bironas kick),7,0,2012_10_TEN_MIA
+1,1:23,Titans,Chris Johnson 17 yard rush (Rob Bironas kick),14,0,2012_10_TEN_MIA
+2,14:05,Titans,Colin McCarthy 49 yard interception return (Rob Bironas kick),21,0,2012_10_TEN_MIA
+2,9:03,Dolphins,Dan Carpenter 40 yard field goal ,21,3,2012_10_TEN_MIA
+2,0:27,Titans,Rob Bironas 37 yard field goal ,24,3,2012_10_TEN_MIA
+3,6:54,Titans,Jared Cook 26 yard pass from Jake Locker (Rob Bironas kick),31,3,2012_10_TEN_MIA
+4,14:09,Titans,Rob Bironas 38 yard field goal ,34,3,2012_10_TEN_MIA
+4,9:45,Titans,Rob Bironas 53 yard field goal ,37,3,2012_10_TEN_MIA
+1,7:52,Vikings,Jarius Wright 3 yard pass from Christian Ponder (Blair Walsh kick),0,7,2012_10_DET_MIN
+1,5:41,Vikings,Blair Walsh 48 yard field goal ,0,10,2012_10_DET_MIN
+2,11:07,Lions,Jason Hanson 41 yard field goal ,3,10,2012_10_DET_MIN
+2,4:41,Vikings,Blair Walsh 23 yard field goal ,3,13,2012_10_DET_MIN
+3,5:11,Vikings,Blair Walsh 23 yard field goal ,3,16,2012_10_DET_MIN
+3,2:55,Lions,Brandon Pettigrew 16 yard pass from Matthew Stafford (Jason Hanson kick),10,16,2012_10_DET_MIN
+4,14:15,Vikings,Kyle Rudolph 20 yard pass from Christian Ponder (Adrian Peterson run),10,24,2012_10_DET_MIN
+4,11:32,Lions,Titus Young 1 yard pass from Matthew Stafford (Jason Hanson kick),17,24,2012_10_DET_MIN
+4,8:06,Vikings,Adrian Peterson 61 yard rush (Blair Walsh kick),17,31,2012_10_DET_MIN
+4,4:36,Vikings,Blair Walsh 33 yard field goal ,17,34,2012_10_DET_MIN
+4,1:53,Lions,Calvin Johnson 11 yard pass from Matthew Stafford (Jason Hanson kick),24,34,2012_10_DET_MIN
+1,6:04,Patriots,Stephen Gostkowski 43 yard field goal ,0,3,2012_10_BUF_NE
+1,3:54,Patriots,Stevan Ridley 1 yard rush (Stephen Gostkowski kick),0,10,2012_10_BUF_NE
+2,12:07,Bills,Rian Lindell 41 yard field goal ,3,10,2012_10_BUF_NE
+2,9:09,Patriots,Danny Woodhead 15 yard rush (Stephen Gostkowski kick),3,17,2012_10_BUF_NE
+2,6:03,Bills,Fred Jackson 14 yard rush (Rian Lindell kick),10,17,2012_10_BUF_NE
+2,3:54,Patriots,Rob Gronkowski 2 yard pass from Tom Brady (Stephen Gostkowski kick),10,24,2012_10_BUF_NE
+2,0:31,Bills,Scott Chandler 3 yard pass from Ryan Fitzpatrick (Rian Lindell kick),17,24,2012_10_BUF_NE
+3,7:06,Patriots,Danny Woodhead 18 yard pass from Tom Brady (Stephen Gostkowski kick),17,31,2012_10_BUF_NE
+3,1:37,Bills,Fred Jackson 1 yard rush (Rian Lindell kick),24,31,2012_10_BUF_NE
+4,14:10,Patriots,Stephen Gostkowski 48 yard field goal ,24,34,2012_10_BUF_NE
+4,7:47,Bills,Donald Jones 2 yard pass from Ryan Fitzpatrick (Rian Lindell kick),31,34,2012_10_BUF_NE
+4,2:06,Patriots,Stephen Gostkowski 27 yard field goal ,31,37,2012_10_BUF_NE
+1,11:38,Falcons,Mike Johnson 1 yard pass from Matt Ryan (Matt Bryant kick),7,0,2012_10_ATL_NO
+1,9:19,Falcons,Matt Bryant 37 yard field goal ,10,0,2012_10_ATL_NO
+1,6:49,Saints,Chris Ivory 56 yard rush (Garrett Hartley kick),10,7,2012_10_ATL_NO
+2,13:33,Saints,Jimmy Graham 29 yard pass from Drew Brees (Garrett Hartley kick),10,14,2012_10_ATL_NO
+2,6:27,Falcons,Tony Gonzalez 2 yard pass from Matt Ryan (Matt Bryant kick),17,14,2012_10_ATL_NO
+2,0:34,Saints,Jimmy Graham 14 yard pass from Drew Brees (Garrett Hartley kick),17,21,2012_10_ATL_NO
+3,9:23,Saints,Marques Colston 7 yard pass from Drew Brees (Garrett Hartley kick),17,28,2012_10_ATL_NO
+4,13:27,Falcons,Tony Gonzalez 6 yard pass from Matt Ryan (Matt Bryant kick),24,28,2012_10_ATL_NO
+4,9:08,Falcons,Matt Bryant 20 yard field goal ,27,28,2012_10_ATL_NO
+4,5:54,Saints,Garrett Hartley 31 yard field goal ,27,31,2012_10_ATL_NO
+1,13:57,Chargers,Danario Alexander 80 yard pass from Philip Rivers (Nick Novak kick),7,0,2012_10_LAC_TB
+1,8:57,Buccaneers,Dallas Clark 3 yard pass from Josh Freeman (Connor Barth kick),7,7,2012_10_LAC_TB
+1,4:19,Chargers,Antonio Gates 13 yard pass from Philip Rivers (Nick Novak kick),14,7,2012_10_LAC_TB
+2,12:52,Buccaneers,Connor Barth 40 yard field goal ,14,10,2012_10_LAC_TB
+2,8:55,Buccaneers,Adam Hayward 29 yard blocked punt return (Connor Barth kick),14,17,2012_10_LAC_TB
+2,0:27,Chargers,Malcom Floyd 3 yard pass from Philip Rivers (Nick Novak kick),21,17,2012_10_LAC_TB
+3,4:07,Buccaneers,Tiquan Underwood 15 yard pass from Josh Freeman (Connor Barth kick),21,24,2012_10_LAC_TB
+4,13:22,Buccaneers,Leonard Johnson 83 yard interception return (Connor Barth kick),21,31,2012_10_LAC_TB
+4,7:02,Chargers,Nick Novak 34 yard field goal ,24,31,2012_10_LAC_TB
+4,1:07,Buccaneers,Connor Barth 45 yard field goal ,24,34,2012_10_LAC_TB
+1,8:01,Seahawks,Golden Tate 38 yard pass from Russell Wilson (Stephen Hauschka kick),0,7,2012_10_NYJ_SEA
+1,2:50,Jets,Muhammad Wilkerson 21 yard defensive fumble return (Nick Folk kick),7,7,2012_10_NYJ_SEA
+2,2:04,Seahawks,Marshawn Lynch 1 yard rush (Stephen Hauschka kick),7,14,2012_10_NYJ_SEA
+4,13:33,Seahawks,Sidney Rice 31 yard pass from Russell Wilson (Stephen Hauschka kick),7,21,2012_10_NYJ_SEA
+4,7:59,Seahawks,Sidney Rice 23 yard pass from Golden Tate (Stephen Hauschka kick),7,28,2012_10_NYJ_SEA
+1,9:53,Eagles,Riley Cooper 2 yard pass from Michael Vick (Alex Henery kick),0,7,2012_10_DAL_PHI
+1,2:13,Cowboys,Felix Jones 11 yard pass from Tony Romo (Dan Bailey kick),7,7,2012_10_DAL_PHI
+2,3:50,Cowboys,Dan Bailey 30 yard field goal ,10,7,2012_10_DAL_PHI
+3,12:52,Eagles,Jeremy Maclin 44 yard pass from Nick Foles (Alex Henery kick),10,14,2012_10_DAL_PHI
+3,4:32,Eagles,Alex Henery 40 yard field goal ,10,17,2012_10_DAL_PHI
+3,0:00,Cowboys,Dez Bryant 30 yard pass from Tony Romo (Dan Bailey kick),17,17,2012_10_DAL_PHI
+4,13:35,Cowboys,Dwayne Harris 78 yard punt return (Dan Bailey kick),24,17,2012_10_DAL_PHI
+4,12:25,Cowboys,Brandon Carr 47 yard interception return (Dan Bailey kick),31,17,2012_10_DAL_PHI
+4,1:55,Eagles,Stanley Havili 1 yard rush (Alex Henery kick failed),31,23,2012_10_DAL_PHI
+4,0:46,Cowboys,Jason Hatcher defensive fumble recovery in end zone (Dan Bailey kick),38,23,2012_10_DAL_PHI
+1,9:38,Rams,Brian Quick 36 yard pass from Sam Bradford (Greg Zuerlein kick),7,0,2012_10_LAR_SF
+1,1:47,Rams,Steven Jackson 7 yard rush (Greg Zuerlein kick),14,0,2012_10_LAR_SF
+2,8:13,49ers,Michael Crabtree 14 yard pass from Alex Smith (David Akers kick),14,7,2012_10_LAR_SF
+3,0:18,Rams,Greg Zuerlein 27 yard field goal ,17,7,2012_10_LAR_SF
+4,8:40,49ers,Colin Kaepernick 7 yard rush (David Akers kick),17,14,2012_10_LAR_SF
+4,8:23,49ers,Frank Gore 20 yard rush (David Akers kick),17,21,2012_10_LAR_SF
+4,1:09,Rams,Austin Pettis 2 yard pass from Sam Bradford (Greg Zuerlein kick),24,21,2012_10_LAR_SF
+4,0:03,49ers,David Akers 33 yard field goal ,24,24,2012_10_LAR_SF
+1,8:13,Texans,Shayne Graham 20 yard field goal ,3,0,2012_10_HOU_CHI
+2,12:52,Bears,Robbie Gould 51 yard field goal ,3,3,2012_10_HOU_CHI
+2,4:14,Texans,Arian Foster 2 yard pass from Matt Schaub (Shayne Graham kick),10,3,2012_10_HOU_CHI
+3,1:55,Bears,Robbie Gould 24 yard field goal ,10,6,2012_10_HOU_CHI
+4,4:49,Texans,Shayne Graham 42 yard field goal ,13,6,2012_10_HOU_CHI
+1,8:37,Chiefs,Jamaal Charles 12 yard rush (Ryan Succop kick),7,0,2012_10_KC_PIT
+2,14:20,Chiefs,Ryan Succop 22 yard field goal ,10,0,2012_10_KC_PIT
+2,9:02,Steelers,Shaun Suisham 35 yard field goal ,10,3,2012_10_KC_PIT
+2,3:16,Steelers,Mike Wallace 7 yard pass from Ben Roethlisberger (Shaun Suisham kick),10,10,2012_10_KC_PIT
+4,12:37,Steelers,Shaun Suisham 31 yard field goal ,10,13,2012_10_KC_PIT
+4,0:00,Chiefs,Ryan Succop 46 yard field goal ,13,13,2012_10_KC_PIT
+OT,14:05,Steelers,Shaun Suisham 23 yard field goal ,13,16,2012_10_KC_PIT
+1,13:30,Bills,Leodis McKelvin 79 yard punt return (Rian Lindell kick),0,7,2012_11_MIA_BUF
+1,5:07,Bills,Rian Lindell 32 yard field goal ,0,10,2012_11_MIA_BUF
+1,4:55,Dolphins,Marcus Thigpen 96 yard kickoff return (Dan Carpenter kick),7,10,2012_11_MIA_BUF
+1,0:40,Bills,Rian Lindell 34 yard field goal ,7,13,2012_11_MIA_BUF
+2,8:57,Bills,Rian Lindell 42 yard field goal ,7,16,2012_11_MIA_BUF
+2,0:00,Bills,Rian Lindell 19 yard field goal ,7,19,2012_11_MIA_BUF
+4,8:42,Dolphins,Davone Bess 2 yard pass from Ryan Tannehill (Dan Carpenter kick),14,19,2012_11_MIA_BUF
+1,13:54,Cardinals,LaRod Stephens-Howling 3 yard rush (Jay Feely kick),7,0,2012_11_ARI_ATL
+1,10:59,Cardinals,Jay Feely 48 yard field goal ,10,0,2012_11_ARI_ATL
+1,1:02,Cardinals,Jay Feely 28 yard field goal ,13,0,2012_11_ARI_ATL
+2,9:39,Falcons,Matt Bryant 51 yard field goal ,13,3,2012_11_ARI_ATL
+2,8:37,Falcons,Jonathan Babineaux 15 yard defensive fumble return (Matt Bryant kick),13,10,2012_11_ARI_ATL
+2,1:52,Falcons,Matt Bryant 28 yard field goal ,13,13,2012_11_ARI_ATL
+2,0:32,Cardinals,Jay Feely 38 yard field goal ,16,13,2012_11_ARI_ATL
+2,0:00,Falcons,Matt Bryant 48 yard field goal ,16,16,2012_11_ARI_ATL
+4,14:56,Cardinals,Jay Feely 27 yard field goal ,19,16,2012_11_ARI_ATL
+4,6:40,Falcons,Michael Turner 1 yard rush (Matt Bryant kick),19,23,2012_11_ARI_ATL
+1,8:46,Buccaneers,Nate Byham 3 yard pass from Josh Freeman (Connor Barth kick),7,0,2012_11_TB_CAR
+1,5:21,Buccaneers,Connor Barth 51 yard field goal ,10,0,2012_11_TB_CAR
+1,0:35,Panthers,Captain Munnerlyn 74 yard interception return (Justin Medlock kick),10,7,2012_11_TB_CAR
+2,8:53,Panthers,Jonathan Stewart 1 yard rush (Justin Medlock kick),10,14,2012_11_TB_CAR
+4,6:00,Panthers,Brandon LaFell 29 yard pass from Cam Newton (Justin Medlock kick),10,21,2012_11_TB_CAR
+4,4:03,Buccaneers,Connor Barth 40 yard field goal ,13,21,2012_11_TB_CAR
+4,0:12,Buccaneers,Vincent Jackson 24 yard pass from Josh Freeman (Vincent Jackson pass from Josh Freeman),21,21,2012_11_TB_CAR
+OT,10:40,Buccaneers,Dallas Clark 15 yard pass from Josh Freeman ,27,21,2012_11_TB_CAR
+1,4:01,Browns,Ben Watson 10 yard pass from Brandon Weeden (Phil Dawson kick),7,0,2012_11_CLE_DAL
+2,12:09,Browns,Phil Dawson 51 yard field goal ,10,0,2012_11_CLE_DAL
+2,5:07,Browns,Phil Dawson 37 yard field goal ,13,0,2012_11_CLE_DAL
+3,4:16,Cowboys,Dan Bailey 44 yard field goal ,13,3,2012_11_CLE_DAL
+4,13:49,Cowboys,Felix Jones 2 yard rush (Dan Bailey kick),13,10,2012_11_CLE_DAL
+4,6:46,Cowboys,Dez Bryant 28 yard pass from Tony Romo (Dan Bailey kick),13,17,2012_11_CLE_DAL
+4,1:07,Browns,Ben Watson 17 yard pass from Brandon Weeden (Phil Dawson kick),20,17,2012_11_CLE_DAL
+4,0:02,Cowboys,Dan Bailey 32 yard field goal ,20,20,2012_11_CLE_DAL
+OT,6:07,Cowboys,Dan Bailey 38 yard field goal ,20,23,2012_11_CLE_DAL
+1,4:24,Lions,Jason Hanson 30 yard field goal ,0,3,2012_11_GB_DET
+2,13:56,Packers,Jermichael Finley 20 yard pass from Aaron Rodgers (Mason Crosby kick),7,3,2012_11_GB_DET
+2,8:06,Lions,Mikel Leshoure 1 yard rush (Jason Hanson kick),7,10,2012_11_GB_DET
+3,8:31,Packers,M.D. Jennings 72 yard interception return (Mason Crosby kick),14,10,2012_11_GB_DET
+3,3:01,Lions,Calvin Johnson 25 yard pass from Matthew Stafford (Jason Hanson kick),14,17,2012_11_GB_DET
+4,4:25,Lions,Jason Hanson 27 yard field goal ,14,20,2012_11_GB_DET
+4,1:55,Packers,Randall Cobb 22 yard pass from Aaron Rodgers (Mason Crosby kick),21,20,2012_11_GB_DET
+4,0:19,Packers,Mason Crosby 39 yard field goal ,24,20,2012_11_GB_DET
+1,12:15,Texans,Keshawn Martin 9 yard pass from Matt Schaub (Shayne Graham kick),0,7,2012_11_JAX_HOU
+1,2:56,Jaguars,Marcedes Lewis 13 yard pass from Chad Henne (Josh Scobee kick),7,7,2012_11_JAX_HOU
+2,12:31,Jaguars,Cecil Shorts 67 yard pass from Chad Henne (Josh Scobee kick),14,7,2012_11_JAX_HOU
+2,7:52,Texans,James Casey 1 yard pass from Matt Schaub (Shayne Graham kick),14,14,2012_11_JAX_HOU
+2,2:53,Jaguars,Josh Scobee 43 yard field goal ,17,14,2012_11_JAX_HOU
+2,1:12,Texans,Shayne Graham 42 yard field goal ,17,17,2012_11_JAX_HOU
+3,11:01,Jaguars,Josh Scobee 40 yard field goal ,20,17,2012_11_JAX_HOU
+3,6:52,Jaguars,Marcedes Lewis 1 yard pass from Chad Henne (Josh Scobee kick),27,17,2012_11_JAX_HOU
+3,2:15,Texans,Shayne Graham 27 yard field goal ,27,20,2012_11_JAX_HOU
+4,12:33,Jaguars,Justin Blackmon 81 yard pass from Chad Henne (Josh Scobee kick),34,20,2012_11_JAX_HOU
+4,5:39,Texans,Garrett Graham 1 yard pass from Matt Schaub (Shayne Graham kick),34,27,2012_11_JAX_HOU
+4,1:34,Texans,Garrett Graham 5 yard pass from Matt Schaub (Shayne Graham kick),34,34,2012_11_JAX_HOU
+OT,8:10,Texans,Shayne Graham 25 yard field goal ,34,37,2012_11_JAX_HOU
+OT,4:21,Jaguars,Josh Scobee 33 yard field goal ,37,37,2012_11_JAX_HOU
+OT,2:01,Texans,Andre Johnson 48 yard pass from Matt Schaub ,37,43,2012_11_JAX_HOU
+1,8:31,Chiefs,Ryan Succop 34 yard field goal ,0,3,2012_11_CIN_KC
+1,2:51,Bengals,A.J. Green 4 yard pass from Andy Dalton (Mike Nugent kick),7,3,2012_11_CIN_KC
+2,7:52,Bengals,Andy Dalton 1 yard rush (Mike Nugent kick),14,3,2012_11_CIN_KC
+2,0:53,Bengals,BenJarvus Green-Ellis 1 yard rush (Mike Nugent kick),21,3,2012_11_CIN_KC
+2,0:00,Chiefs,Ryan Succop 33 yard field goal ,21,6,2012_11_CIN_KC
+4,9:39,Bengals,Mohamed Sanu 14 yard pass from Andy Dalton (Mike Nugent kick),28,6,2012_11_CIN_KC
+1,3:45,Rams,Brandon Gibson 1 yard pass from Sam Bradford (Greg Zuerlein kick),0,7,2012_11_NYJ_LAR
+1,0:44,Jets,Nick Folk 51 yard field goal ,3,7,2012_11_NYJ_LAR
+2,4:31,Jets,Chaz Schilens 25 yard pass from Mark Sanchez (Nick Folk kick),10,7,2012_11_NYJ_LAR
+2,0:57,Jets,Nick Folk 51 yard field goal ,13,7,2012_11_NYJ_LAR
+4,14:16,Jets,Bilal Powell 5 yard rush (Nick Folk kick),20,7,2012_11_NYJ_LAR
+4,8:29,Jets,Bilal Powell 11 yard rush (Nick Folk kick),27,7,2012_11_NYJ_LAR
+4,5:40,Rams,Brandon Gibson 2 yard pass from Sam Bradford (pass failed),27,13,2012_11_NYJ_LAR
+1,13:07,Redskins,Darrel Young 6 yard pass from Robert Griffin III (Kai Forbath kick),0,7,2012_11_PHI_WAS
+2,14:15,Eagles,Alex Henery 41 yard field goal ,3,7,2012_11_PHI_WAS
+2,10:35,Redskins,Aldrick Robinson 49 yard pass from Robert Griffin III (Kai Forbath kick),3,14,2012_11_PHI_WAS
+2,0:00,Redskins,Kai Forbath 25 yard field goal ,3,17,2012_11_PHI_WAS
+3,8:27,Eagles,Alex Henery 42 yard field goal ,6,17,2012_11_PHI_WAS
+3,4:50,Redskins,Santana Moss 61 yard pass from Robert Griffin III (Kai Forbath kick),6,24,2012_11_PHI_WAS
+4,10:24,Redskins,Logan Paulsen 17 yard pass from Robert Griffin III (Kai Forbath kick),6,31,2012_11_PHI_WAS
+1,7:53,Saints,Jimmy Graham 1 yard pass from Drew Brees (Garrett Hartley kick),7,0,2012_11_NO_LVR
+1,4:06,Saints,Malcolm Jenkins 55 yard interception return (Garrett Hartley kick),14,0,2012_11_NO_LVR
+2,4:10,Raiders,Brandon Myers 1 yard pass from Carson Palmer (Sebastian Janikowski kick),14,7,2012_11_NO_LVR
+2,0:48,Saints,Lance Moore 38 yard pass from Drew Brees (Garrett Hartley kick),21,7,2012_11_NO_LVR
+3,14:43,Saints,Mark Ingram 27 yard rush (Garrett Hartley kick),28,7,2012_11_NO_LVR
+3,10:22,Raiders,Sebastian Janikowski 40 yard field goal ,28,10,2012_11_NO_LVR
+3,3:26,Saints,Lance Moore 15 yard pass from Drew Brees (Garrett Hartley kick),35,10,2012_11_NO_LVR
+4,10:28,Saints,Garrett Hartley 47 yard field goal ,38,10,2012_11_NO_LVR
+4,4:00,Raiders,Juron Criner 3 yard pass from Carson Palmer (Sebastian Janikowski kick),38,17,2012_11_NO_LVR
+1,6:52,Chargers,Eric Weddle 23 yard interception return (Nick Novak kick),7,0,2012_11_LAC_DEN
+2,13:00,Broncos,Demaryius Thomas 13 yard pass from Peyton Manning (Matt Prater kick),7,7,2012_11_LAC_DEN
+2,11:33,Broncos,Matt Prater 19 yard field goal ,7,10,2012_11_LAC_DEN
+2,1:44,Broncos,Brandon Stokley 31 yard pass from Peyton Manning (Matt Prater kick),7,17,2012_11_LAC_DEN
+3,12:48,Chargers,"Safety, Peyton Manning sacked by Shaun Phillips in the end zone. ",9,17,2012_11_LAC_DEN
+3,7:23,Broncos,Eric Decker 20 yard pass from Peyton Manning (Matt Prater kick),9,24,2012_11_LAC_DEN
+3,0:58,Chargers,Danario Alexander 8 yard pass from Philip Rivers (Nick Novak kick),16,24,2012_11_LAC_DEN
+4,10:43,Broncos,Matt Prater 30 yard field goal ,16,27,2012_11_LAC_DEN
+4,4:14,Broncos,Matt Prater 32 yard field goal ,16,30,2012_11_LAC_DEN
+4,1:24,Chargers,Danario Alexander 21 yard pass from Philip Rivers (Nick Novak kick),23,30,2012_11_LAC_DEN
+1,10:49,Colts,Delone Carter 1 yard rush (Adam Vinatieri kick),7,0,2012_11_IND_NE
+1,7:07,Patriots,Rob Gronkowski 4 yard pass from Tom Brady (Stephen Gostkowski kick),7,7,2012_11_IND_NE
+1,1:44,Colts,T.Y. Hilton 14 yard pass from Andrew Luck (Adam Vinatieri kick),14,7,2012_11_IND_NE
+2,12:00,Patriots,Julian Edelman 68 yard punt return (Stephen Gostkowski kick),14,14,2012_11_IND_NE
+2,10:59,Patriots,Aqib Talib 59 yard interception return (Stephen Gostkowski kick),14,21,2012_11_IND_NE
+2,5:46,Colts,Adam Vinatieri 47 yard field goal ,17,21,2012_11_IND_NE
+2,1:54,Patriots,Stephen Gostkowski 31 yard field goal ,17,24,2012_11_IND_NE
+3,11:07,Patriots,Julian Edelman 2 yard pass from Tom Brady (Stephen Gostkowski kick),17,31,2012_11_IND_NE
+3,3:22,Patriots,Rob Gronkowski 24 yard pass from Tom Brady (Stephen Gostkowski kick),17,38,2012_11_IND_NE
+4,14:47,Patriots,Alfonzo Dennard 87 yard interception return (Stephen Gostkowski kick),17,45,2012_11_IND_NE
+4,12:32,Colts,T.Y. Hilton 43 yard pass from Andrew Luck (Adam Vinatieri kick),24,45,2012_11_IND_NE
+4,9:05,Patriots,Stevan Ridley 3 yard rush (Stephen Gostkowski kick),24,52,2012_11_IND_NE
+4,3:55,Patriots,Shane Vereen 4 yard rush (Stephen Gostkowski kick),24,59,2012_11_IND_NE
+1,14:17,Steelers,Byron Leftwich 31 yard rush (Shaun Suisham kick),0,7,2012_11_BAL_PIT
+1,8:22,Ravens,Justin Tucker 26 yard field goal ,3,7,2012_11_BAL_PIT
+1,3:16,Ravens,Jacoby Jones 63 yard punt return (Justin Tucker kick),10,7,2012_11_BAL_PIT
+3,6:49,Ravens,Justin Tucker 39 yard field goal ,13,7,2012_11_BAL_PIT
+3,0:34,Steelers,Shaun Suisham 22 yard field goal ,13,10,2012_11_BAL_PIT
+1,10:32,49ers,David Akers 32 yard field goal ,0,3,2012_11_CHI_SF
+1,6:14,49ers,Vernon Davis 3 yard pass from Colin Kaepernick (David Akers kick),0,10,2012_11_CHI_SF
+2,12:40,49ers,Kendall Hunter 14 yard rush (David Akers kick),0,17,2012_11_CHI_SF
+2,6:32,49ers,David Akers 37 yard field goal ,0,20,2012_11_CHI_SF
+3,11:05,49ers,Michael Crabtree 10 yard pass from Colin Kaepernick (David Akers kick),0,27,2012_11_CHI_SF
+3,3:43,Bears,Brandon Marshall 13 yard pass from Jason Campbell (Robbie Gould kick),7,27,2012_11_CHI_SF
+4,11:46,49ers,David Akers 32 yard field goal ,7,30,2012_11_CHI_SF
+4,9:32,49ers,"Safety, Chilo Rachal tackled in the end zone by Ray McDonald. ",7,32,2012_11_CHI_SF
+1,9:58,Lions,Mikel Leshoure 2 yard rush (Jason Hanson kick),0,7,2012_12_HOU_DET
+2,10:57,Texans,Arian Foster 6 yard rush (Shayne Graham kick),7,7,2012_12_HOU_DET
+2,6:00,Lions,Mike Thomas 5 yard pass from Matthew Stafford (Jason Hanson kick),7,14,2012_12_HOU_DET
+2,2:11,Texans,Owen Daniels 9 yard pass from Matt Schaub (Shayne Graham kick),14,14,2012_12_HOU_DET
+2,1:49,Lions,Calvin Johnson 22 yard pass from Matthew Stafford (Jason Hanson kick),14,21,2012_12_HOU_DET
+3,7:03,Lions,Jason Hanson 46 yard field goal ,14,24,2012_12_HOU_DET
+3,6:35,Texans,Justin Forsett 81 yard rush (Shayne Graham kick),21,24,2012_12_HOU_DET
+3,2:36,Texans,Shayne Graham 45 yard field goal ,24,24,2012_12_HOU_DET
+4,13:31,Lions,Joique Bell 23 yard rush (Jason Hanson kick),24,31,2012_12_HOU_DET
+4,1:55,Texans,Arian Foster 1 yard rush (Shayne Graham kick),31,31,2012_12_HOU_DET
+OT,2:21,Texans,Shayne Graham 32 yard field goal ,34,31,2012_12_HOU_DET
+1,9:17,Cowboys,Dan Bailey 30 yard field goal ,0,3,2012_12_WAS_DAL
+2,13:47,Redskins,Aldrick Robinson 68 yard pass from Robert Griffin III (Kai Forbath kick),7,3,2012_12_WAS_DAL
+2,7:00,Redskins,Alfred Morris 1 yard rush (Kai Forbath kick),14,3,2012_12_WAS_DAL
+2,2:14,Redskins,Pierre Garcon 59 yard pass from Robert Griffin III (Kai Forbath kick),21,3,2012_12_WAS_DAL
+2,0:05,Redskins,Santana Moss 6 yard pass from Robert Griffin III (Kai Forbath kick),28,3,2012_12_WAS_DAL
+3,11:48,Cowboys,Dan Bailey 33 yard field goal ,28,6,2012_12_WAS_DAL
+3,1:24,Cowboys,Dez Bryant 85 yard pass from Tony Romo (Dan Bailey kick),28,13,2012_12_WAS_DAL
+4,12:48,Redskins,Niles Paul 29 yard pass from Robert Griffin III (Kai Forbath kick),35,13,2012_12_WAS_DAL
+4,9:54,Cowboys,Felix Jones 10 yard pass from Tony Romo (Tony Romo run),35,21,2012_12_WAS_DAL
+4,8:18,Cowboys,Dez Bryant 11 yard pass from Tony Romo (Dan Bailey kick),35,28,2012_12_WAS_DAL
+4,2:58,Redskins,Kai Forbath 48 yard field goal ,38,28,2012_12_WAS_DAL
+4,0:18,Cowboys,Dan Bailey 51 yard field goal ,38,31,2012_12_WAS_DAL
+2,14:54,Patriots,Wes Welker 3 yard pass from Tom Brady (Stephen Gostkowski kick),7,0,2012_12_NE_NYJ
+2,9:43,Patriots,Shane Vereen 83 yard pass from Tom Brady (Stephen Gostkowski kick),14,0,2012_12_NE_NYJ
+2,9:00,Patriots,Steve Gregory 32 yard defensive fumble return (Stephen Gostkowski kick),21,0,2012_12_NE_NYJ
+2,8:51,Patriots,Julian Edelman 22 yard fumble return (Stephen Gostkowski kick),28,0,2012_12_NE_NYJ
+2,3:08,Patriots,Julian Edelman 56 yard pass from Tom Brady (Stephen Gostkowski kick),35,0,2012_12_NE_NYJ
+2,0:02,Jets,Nick Folk 32 yard field goal ,35,3,2012_12_NE_NYJ
+3,6:47,Jets,"Safety, Stevan Ridley penalized for an illegal chop block enforced in the end zone. ",35,5,2012_12_NE_NYJ
+3,4:41,Jets,Bilal Powell 4 yard rush (Nick Folk kick),35,12,2012_12_NE_NYJ
+4,12:02,Patriots,Tom Brady 1 yard rush (Stephen Gostkowski kick),42,12,2012_12_NE_NYJ
+4,11:07,Patriots,Stevan Ridley 9 yard rush (Stephen Gostkowski kick),49,12,2012_12_NE_NYJ
+4,2:21,Jets,Dustin Keller 1 yard pass from Mark Sanchez (Nick Folk kick),49,19,2012_12_NE_NYJ
+1,12:17,Vikings,Blair Walsh 40 yard field goal ,3,0,2012_12_MIN_CHI
+1,7:17,Bears,Michael Bush 1 yard rush (Robbie Gould kick),3,7,2012_12_MIN_CHI
+1,0:32,Bears,Robbie Gould 47 yard field goal ,3,10,2012_12_MIN_CHI
+2,4:01,Bears,Michael Bush 1 yard rush (Adam Podlesh run),3,18,2012_12_MIN_CHI
+2,1:48,Bears,Matt Spaeth 13 yard pass from Jay Cutler (Robbie Gould kick),3,25,2012_12_MIN_CHI
+3,10:44,Vikings,Kyle Rudolph 2 yard pass from Christian Ponder (Blair Walsh kick),10,25,2012_12_MIN_CHI
+3,3:57,Bears,Robbie Gould 46 yard field goal ,10,28,2012_12_MIN_CHI
+1,9:12,Bengals,BenJarvus Green-Ellis 1 yard rush (Mike Nugent kick),0,7,2012_12_LVR_CIN
+1,2:59,Bengals,Mohamed Sanu 2 yard pass from Andy Dalton (Mike Nugent kick),0,14,2012_12_LVR_CIN
+2,7:28,Bengals,Mohamed Sanu 5 yard pass from Andy Dalton (Mike Nugent kick),0,21,2012_12_LVR_CIN
+2,0:00,Bengals,Mike Nugent 55 yard field goal ,0,24,2012_12_LVR_CIN
+3,10:28,Raiders,Sebastian Janikowski 55 yard field goal ,3,24,2012_12_LVR_CIN
+3,2:21,Raiders,Denarius Moore 20 yard pass from Carson Palmer (Sebastian Janikowski kick),10,24,2012_12_LVR_CIN
+4,12:29,Bengals,Mike Nugent 20 yard field goal ,10,27,2012_12_LVR_CIN
+4,3:39,Bengals,Jermaine Gresham 7 yard pass from Andy Dalton (Mike Nugent kick),10,34,2012_12_LVR_CIN
+1,13:49,Steelers,Lawrence Timmons 53 yard interception return (Shaun Suisham kick),7,0,2012_12_PIT_CLE
+1,8:25,Browns,Phil Dawson 28 yard field goal ,7,3,2012_12_PIT_CLE
+2,12:20,Browns,Jordan Cameron 5 yard pass from Brandon Weeden (Phil Dawson kick),7,10,2012_12_PIT_CLE
+2,3:26,Browns,Phil Dawson 32 yard field goal ,7,13,2012_12_PIT_CLE
+2,0:01,Steelers,Chris Rainey 1 yard rush (Shaun Suisham kick),14,13,2012_12_PIT_CLE
+3,5:19,Browns,Trent Richardson 15 yard rush (Phil Dawson kick),14,20,2012_12_PIT_CLE
+1,9:56,Colts,T.Y. Hilton 75 yard punt return (Adam Vinatieri kick),0,7,2012_12_BUF_IND
+1,4:28,Bills,Rian Lindell 33 yard field goal ,3,7,2012_12_BUF_IND
+2,4:08,Colts,Adam Vinatieri 25 yard field goal ,3,10,2012_12_BUF_IND
+2,2:16,Bills,Rian Lindell 31 yard field goal ,6,10,2012_12_BUF_IND
+2,0:00,Colts,Adam Vinatieri 19 yard field goal ,6,13,2012_12_BUF_IND
+3,4:02,Colts,T.Y. Hilton 8 yard pass from Andrew Luck (Adam Vinatieri kick),6,20,2012_12_BUF_IND
+4,11:30,Bills,Lee Smith 1 yard pass from Ryan Fitzpatrick (Rian Lindell kick),13,20,2012_12_BUF_IND
+1,13:32,Titans,Rob Bironas 38 yard field goal ,3,0,2012_12_TEN_JAX
+1,0:12,Jaguars,Rashad Jennings 1 yard rush (Josh Scobee kick),3,7,2012_12_TEN_JAX
+2,0:11,Titans,Rob Bironas 40 yard field goal ,6,7,2012_12_TEN_JAX
+3,8:40,Jaguars,Cecil Shorts 59 yard pass from Chad Henne (Josh Scobee kick),6,14,2012_12_TEN_JAX
+3,3:26,Titans,Rob Bironas 39 yard field goal ,9,14,2012_12_TEN_JAX
+4,10:05,Titans,Rob Bironas 33 yard field goal ,12,14,2012_12_TEN_JAX
+4,6:50,Jaguars,Justin Blackmon 7 yard pass from Chad Henne (Josh Scobee kick),12,21,2012_12_TEN_JAX
+4,4:52,Titans,Kenny Britt 6 yard pass from Jake Locker (Rob Bironas kick),19,21,2012_12_TEN_JAX
+4,0:24,Jaguars,Josh Scobee 41 yard field goal ,19,24,2012_12_TEN_JAX
+1,9:20,Chiefs,Ryan Succop 34 yard field goal ,0,3,2012_12_DEN_KC
+1,4:31,Chiefs,Ryan Succop 22 yard field goal ,0,6,2012_12_DEN_KC
+2,0:18,Broncos,Jacob Tamme 7 yard pass from Peyton Manning (Matt Prater kick),7,6,2012_12_DEN_KC
+3,7:35,Chiefs,Ryan Succop 49 yard field goal ,7,9,2012_12_DEN_KC
+3,4:41,Broncos,Demaryius Thomas 30 yard pass from Peyton Manning (Matt Prater kick),14,9,2012_12_DEN_KC
+4,0:14,Broncos,Matt Prater 34 yard field goal ,17,9,2012_12_DEN_KC
+2,5:13,Dolphins,Reggie Bush 21 yard rush (Dan Carpenter kick),0,7,2012_12_SEA_MIA
+2,0:29,Seahawks,Anthony McCoy 3 yard pass from Russell Wilson (Stephen Hauschka kick),7,7,2012_12_SEA_MIA
+3,4:00,Seahawks,Michael Robinson 4 yard pass from Russell Wilson (Stephen Hauschka kick),14,7,2012_12_SEA_MIA
+4,8:08,Dolphins,Daniel Thomas 3 yard rush (Dan Carpenter kick),14,14,2012_12_SEA_MIA
+4,7:54,Seahawks,Leon Washington 98 yard kickoff return (Stephen Hauschka kick),21,14,2012_12_SEA_MIA
+4,5:13,Dolphins,Charles Clay 29 yard pass from Ryan Tannehill (Dan Carpenter kick),21,21,2012_12_SEA_MIA
+4,0:00,Dolphins,Dan Carpenter 43 yard field goal ,21,24,2012_12_SEA_MIA
+1,7:38,Falcons,Matt Bryant 31 yard field goal ,3,0,2012_12_ATL_TB
+1,1:12,Buccaneers,Doug Martin 1 yard rush (Connor Barth kick),3,7,2012_12_ATL_TB
+2,10:25,Falcons,Jacquizz Rodgers 5 yard rush (Matt Bryant kick),10,7,2012_12_ATL_TB
+2,3:37,Buccaneers,Connor Barth 22 yard field goal ,10,10,2012_12_ATL_TB
+3,8:37,Buccaneers,Connor Barth 42 yard field goal ,10,13,2012_12_ATL_TB
+3,8:26,Falcons,Julio Jones 80 yard pass from Matt Ryan (Matt Bryant kick),17,13,2012_12_ATL_TB
+4,14:56,Buccaneers,Doug Martin 1 yard rush (Connor Barth kick),17,20,2012_12_ATL_TB
+4,10:28,Buccaneers,Connor Barth 48 yard field goal ,17,23,2012_12_ATL_TB
+4,7:55,Falcons,Michael Turner 3 yard rush (Matt Bryant kick),24,23,2012_12_ATL_TB
+2,9:43,Chargers,Malcom Floyd 21 yard pass from Philip Rivers (Nick Novak kick),0,7,2012_12_BAL_LAC
+2,3:04,Chargers,Nick Novak 47 yard field goal ,0,10,2012_12_BAL_LAC
+3,12:19,Ravens,Justin Tucker 43 yard field goal ,3,10,2012_12_BAL_LAC
+4,7:51,Chargers,Nick Novak 30 yard field goal ,3,13,2012_12_BAL_LAC
+4,4:19,Ravens,Dennis Pitta 4 yard pass from Joe Flacco (Justin Tucker kick),10,13,2012_12_BAL_LAC
+4,0:00,Ravens,Justin Tucker 38 yard field goal ,13,13,2012_12_BAL_LAC
+OT,1:07,Ravens,Justin Tucker 38 yard field goal ,16,13,2012_12_BAL_LAC
+1,2:41,Cardinals,Beanie Wells 1 yard rush (Jay Feely kick),0,7,2012_12_LAR_ARI
+2,14:52,Rams,Jackrabbit Jenkins 36 yard interception return (Greg Zuerlein kick),7,7,2012_12_LAR_ARI
+2,7:52,Cardinals,Beanie Wells 12 yard rush (Jay Feely kick),7,14,2012_12_LAR_ARI
+2,1:53,Rams,Lance Kendricks 37 yard pass from Sam Bradford (Greg Zuerlein kick),14,14,2012_12_LAR_ARI
+2,0:00,Cardinals,Jay Feely 32 yard field goal ,14,17,2012_12_LAR_ARI
+3,9:58,Rams,Chris Givens 37 yard pass from Sam Bradford (Greg Zuerlein kick),21,17,2012_12_LAR_ARI
+3,2:28,Rams,Jackrabbit Jenkins 39 yard interception return (Greg Zuerlein kick),28,17,2012_12_LAR_ARI
+4,5:27,Rams,Greg Zuerlein 19 yard field goal ,31,17,2012_12_LAR_ARI
+1,7:21,49ers,Colin Kaepernick 7 yard rush (David Akers kick),7,0,2012_12_SF_NO
+1,1:45,Saints,David Thomas 6 yard pass from Drew Brees (Garrett Hartley kick),7,7,2012_12_SF_NO
+2,7:53,Saints,Marques Colston 10 yard pass from Drew Brees (Garrett Hartley kick),7,14,2012_12_SF_NO
+2,0:22,49ers,Ahmad Brooks 50 yard interception return (David Akers kick),14,14,2012_12_SF_NO
+3,12:17,49ers,Frank Gore 6 yard pass from Colin Kaepernick (David Akers kick),21,14,2012_12_SF_NO
+3,11:30,49ers,Donte Whitner 42 yard interception return (David Akers kick),28,14,2012_12_SF_NO
+3,7:19,Saints,Jed Collins 2 yard pass from Drew Brees (Garrett Hartley kick),28,21,2012_12_SF_NO
+4,7:50,49ers,David Akers 27 yard field goal ,31,21,2012_12_SF_NO
+1,12:38,Giants,Andre Brown 2 yard rush (Lawrence Tynes kick),0,7,2012_12_GB_NYG
+1,10:44,Packers,Jordy Nelson 61 yard pass from Aaron Rodgers (Mason Crosby kick),7,7,2012_12_GB_NYG
+1,2:38,Giants,Rueben Randle 16 yard pass from Eli Manning (Lawrence Tynes kick),7,14,2012_12_GB_NYG
+1,0:23,Giants,Lawrence Tynes 43 yard field goal ,7,17,2012_12_GB_NYG
+2,9:37,Giants,Victor Cruz 9 yard pass from Eli Manning (Lawrence Tynes kick),7,24,2012_12_GB_NYG
+2,3:37,Packers,Mason Crosby 28 yard field goal ,10,24,2012_12_GB_NYG
+2,0:44,Giants,Ahmad Bradshaw 13 yard rush (Lawrence Tynes kick),10,31,2012_12_GB_NYG
+3,3:36,Giants,Hakeem Nicks 13 yard pass from Eli Manning (Lawrence Tynes kick),10,38,2012_12_GB_NYG
+1,11:12,Eagles,Alex Henery 36 yard field goal ,0,3,2012_12_CAR_PHI
+1,6:12,Panthers,Gary Barnidge 24 yard pass from Cam Newton (Graham Gano kick),7,3,2012_12_CAR_PHI
+1,3:36,Panthers,Brandon LaFell 43 yard pass from Cam Newton (Graham Gano kick),14,3,2012_12_CAR_PHI
+2,14:15,Eagles,Alex Henery 41 yard field goal ,14,6,2012_12_CAR_PHI
+2,10:56,Eagles,Bryce Brown 65 yard rush (pass failed),14,12,2012_12_CAR_PHI
+2,3:20,Eagles,Alex Henery 45 yard field goal ,14,15,2012_12_CAR_PHI
+3,9:13,Panthers,Cam Newton 1 yard rush (Graham Gano kick),21,15,2012_12_CAR_PHI
+3,3:30,Eagles,Bryce Brown 5 yard rush (Alex Henery kick),21,22,2012_12_CAR_PHI
+4,12:40,Panthers,Graham Gano 23 yard field goal ,24,22,2012_12_CAR_PHI
+4,4:40,Panthers,Cam Newton 2 yard rush (Graham Gano kick failed),30,22,2012_12_CAR_PHI
+1,11:09,Falcons,Michael Turner 3 yard rush (Matt Bryant kick),0,7,2012_13_NO_ATL
+2,14:08,Falcons,Tony Gonzalez 17 yard pass from Matt Ryan (Matt Bryant kick),0,14,2012_13_NO_ATL
+2,8:53,Falcons,Matt Bryant 45 yard field goal ,0,17,2012_13_NO_ATL
+2,3:17,Saints,Mark Ingram 1 yard rush (Garrett Hartley kick),7,17,2012_13_NO_ATL
+3,8:24,Saints,Garrett Hartley 21 yard field goal ,10,17,2012_13_NO_ATL
+3,3:53,Saints,Garrett Hartley 52 yard field goal ,13,17,2012_13_NO_ATL
+4,14:48,Falcons,Matt Bryant 29 yard field goal ,13,20,2012_13_NO_ATL
+4,4:25,Falcons,Matt Bryant 55 yard field goal ,13,23,2012_13_NO_ATL
+1,9:10,Bills,Ryan Fitzpatrick 1 yard rush (Rian Lindell kick),0,7,2012_13_JAX_BUF
+2,11:47,Jaguars,Josh Scobee 36 yard field goal ,3,7,2012_13_JAX_BUF
+2,3:47,Jaguars,Chad Henne 1 yard rush (Josh Scobee kick),10,7,2012_13_JAX_BUF
+2,1:56,Bills,Scott Chandler 11 yard pass from Ryan Fitzpatrick (Rian Lindell kick),10,14,2012_13_JAX_BUF
+2,0:31,Bills,Rian Lindell 29 yard field goal ,10,17,2012_13_JAX_BUF
+3,11:06,Bills,Stevie Johnson 13 yard pass from Ryan Fitzpatrick (Rian Lindell kick),10,24,2012_13_JAX_BUF
+3,2:14,Bills,Rian Lindell 50 yard field goal ,10,27,2012_13_JAX_BUF
+4,13:29,Bills,C.J. Spiller 44 yard rush (Rian Lindell kick),10,34,2012_13_JAX_BUF
+4,10:47,Jaguars,Cecil Shorts 5 yard pass from Chad Henne (Montell Owens run),18,34,2012_13_JAX_BUF
+1,8:33,Bears,Earl Bennett 12 yard pass from Jay Cutler (Robbie Gould kick),0,7,2012_13_SEA_CHI
+2,2:15,Seahawks,Marshawn Lynch 4 yard rush (Stephen Hauschka kick),7,7,2012_13_SEA_CHI
+2,0:05,Seahawks,Stephen Hauschka 31 yard field goal ,10,7,2012_13_SEA_CHI
+3,3:10,Bears,Matt Forte 12 yard pass from Jay Cutler (Robbie Gould kick),10,14,2012_13_SEA_CHI
+4,0:24,Seahawks,Golden Tate 14 yard pass from Russell Wilson (Stephen Hauschka kick),17,14,2012_13_SEA_CHI
+4,0:00,Bears,Robbie Gould 46 yard field goal ,17,17,2012_13_SEA_CHI
+OT,7:33,Seahawks,Sidney Rice 13 yard pass from Russell Wilson ,23,17,2012_13_SEA_CHI
+1,8:49,Lions,Jason Hanson 48 yard field goal ,0,3,2012_13_IND_DET
+1,6:29,Colts,Donnie Avery 17 yard pass from Andrew Luck (Adam Vinatieri kick),7,3,2012_13_IND_DET
+1,1:48,Lions,Brandon Pettigrew 16 yard pass from Matthew Stafford (Jason Hanson kick),7,10,2012_13_IND_DET
+2,11:27,Lions,Mikel Leshoure 6 yard rush (Jason Hanson kick),7,17,2012_13_IND_DET
+2,9:47,Colts,Coby Fleener 26 yard pass from Andrew Luck (Adam Vinatieri kick),14,17,2012_13_IND_DET
+2,7:17,Lions,Jason Hanson 33 yard field goal ,14,20,2012_13_IND_DET
+2,3:46,Lions,Jason Hanson 52 yard field goal ,14,23,2012_13_IND_DET
+3,12:05,Colts,Vick Ballard 11 yard rush (Adam Vinatieri kick),21,23,2012_13_IND_DET
+3,0:02,Lions,Calvin Johnson 46 yard pass from Matthew Stafford (Jason Hanson kick),21,30,2012_13_IND_DET
+4,8:41,Lions,Jason Hanson 31 yard field goal ,21,33,2012_13_IND_DET
+4,2:39,Colts,LaVon Brazill 42 yard pass from Andrew Luck (Adam Vinatieri kick),28,33,2012_13_IND_DET
+4,0:00,Colts,Donnie Avery 14 yard pass from Andrew Luck (Adam Vinatieri kick),35,33,2012_13_IND_DET
+1,11:26,Packers,James Jones 32 yard pass from Aaron Rodgers (Mason Crosby kick),0,7,2012_13_MIN_GB
+1,4:07,Packers,Mason Crosby 30 yard field goal ,0,10,2012_13_MIN_GB
+2,12:18,Vikings,Kyle Rudolph 7 yard pass from Christian Ponder (Blair Walsh kick),7,10,2012_13_MIN_GB
+2,5:08,Vikings,Adrian Peterson 82 yard rush (Blair Walsh kick),14,10,2012_13_MIN_GB
+3,7:47,Packers,Mason Crosby 47 yard field goal ,14,13,2012_13_MIN_GB
+3,2:12,Packers,James Starks 22 yard rush (Mason Crosby kick),14,20,2012_13_MIN_GB
+4,4:00,Packers,Mason Crosby 31 yard field goal ,14,23,2012_13_MIN_GB
+1,11:49,Chiefs,Peyton Hillis 2 yard rush (Ryan Succop kick),0,7,2012_13_CAR_KC
+1,8:46,Panthers,Greg Olsen 47 yard pass from Cam Newton (Graham Gano kick),7,7,2012_13_CAR_KC
+1,3:20,Chiefs,Ryan Succop 42 yard field goal ,7,10,2012_13_CAR_KC
+2,13:27,Panthers,Steve Smith Sr. 23 yard pass from Cam Newton (Graham Gano kick),14,10,2012_13_CAR_KC
+2,0:00,Chiefs,Tony Moeaki 1 yard pass from Brady Quinn (Ryan Succop kick),14,17,2012_13_CAR_KC
+3,2:52,Chiefs,Jonathan Baldwin 3 yard pass from Brady Quinn (Ryan Succop kick),14,24,2012_13_CAR_KC
+4,13:21,Panthers,Louis Murphy 8 yard pass from Cam Newton (Graham Gano kick),21,24,2012_13_CAR_KC
+4,4:54,Chiefs,Ryan Succop 52 yard field goal ,21,27,2012_13_CAR_KC
+1,11:53,Patriots,Stevan Ridley 2 yard rush (Stephen Gostkowski kick),7,0,2012_13_NE_MIA
+1,0:01,Dolphins,Dan Carpenter 44 yard field goal ,7,3,2012_13_NE_MIA
+2,9:21,Patriots,Wes Welker 7 yard pass from Tom Brady (Stephen Gostkowski kick),14,3,2012_13_NE_MIA
+2,6:53,Patriots,Stephen Gostkowski 43 yard field goal ,17,3,2012_13_NE_MIA
+2,0:25,Dolphins,Ryan Tannehill 2 yard rush (Dan Carpenter kick),17,10,2012_13_NE_MIA
+4,13:16,Patriots,Stephen Gostkowski 32 yard field goal ,20,10,2012_13_NE_MIA
+4,8:28,Dolphins,Dan Carpenter 33 yard field goal ,20,13,2012_13_NE_MIA
+4,1:10,Patriots,Stephen Gostkowski 20 yard field goal ,23,13,2012_13_NE_MIA
+4,0:31,Dolphins,Dan Carpenter 42 yard field goal ,23,16,2012_13_NE_MIA
+2,0:00,Cardinals,Jay Feely 48 yard field goal ,3,0,2012_13_ARI_NYJ
+4,14:55,Jets,Jeff Cumberland 1 yard pass from Greg McElroy (Nick Folk kick),3,7,2012_13_ARI_NYJ
+4,10:39,Cardinals,Jay Feely 35 yard field goal ,6,7,2012_13_ARI_NYJ
+1,2:58,49ers,Frank Gore 1 yard rush (David Akers kick),7,0,2012_13_SF_LAR
+3,4:27,Rams,"Safety, Colin Kaepernick called for Intentional Grounding in the end zone. ",7,2,2012_13_SF_LAR
+4,8:43,49ers,David Akers 23 yard field goal ,10,2,2012_13_SF_LAR
+4,3:04,Rams,Jackrabbit Jenkins 2 yard defensive fumble return (Lance Kendricks pass from Sam Bradford),10,10,2012_13_SF_LAR
+4,1:34,49ers,David Akers 33 yard field goal ,13,10,2012_13_SF_LAR
+4,0:00,Rams,Greg Zuerlein 53 yard field goal ,13,13,2012_13_SF_LAR
+OT,0:26,Rams,Greg Zuerlein 54 yard field goal ,13,16,2012_13_SF_LAR
+1,12:29,Texans,Lestar Jean 54 yard pass from Matt Schaub (Shayne Graham kick),7,0,2012_13_HOU_TEN
+1,9:30,Titans,Rob Bironas 37 yard field goal ,7,3,2012_13_HOU_TEN
+1,0:19,Texans,James Casey 5 yard pass from Matt Schaub (Shayne Graham kick),14,3,2012_13_HOU_TEN
+2,7:48,Texans,Arian Foster 2 yard rush (Shayne Graham kick),21,3,2012_13_HOU_TEN
+3,6:54,Texans,Shayne Graham 50 yard field goal ,24,3,2012_13_HOU_TEN
+3,1:34,Titans,Kenny Britt 34 yard pass from Jake Locker (Rob Bironas kick),24,10,2012_13_HOU_TEN
+1,8:47,Broncos,Mitch Unrein 1 yard pass from Peyton Manning (Matt Prater kick),0,7,2012_13_TB_DEN
+1,4:41,Buccaneers,Connor Barth 31 yard field goal ,3,7,2012_13_TB_DEN
+1,0:14,Buccaneers,Dallas Clark 11 yard pass from Josh Freeman (Connor Barth kick),10,7,2012_13_TB_DEN
+3,9:21,Broncos,Demaryius Thomas 8 yard pass from Peyton Manning (Matt Prater kick),10,14,2012_13_TB_DEN
+3,4:39,Broncos,Demaryius Thomas 10 yard pass from Peyton Manning (Matt Prater kick),10,21,2012_13_TB_DEN
+3,3:56,Broncos,Von Miller 26 yard interception return (Matt Prater kick),10,28,2012_13_TB_DEN
+4,14:55,Buccaneers,Connor Barth 50 yard field goal ,13,28,2012_13_TB_DEN
+4,7:36,Broncos,Matt Prater 31 yard field goal ,13,31,2012_13_TB_DEN
+4,3:23,Buccaneers,Connor Barth 55 yard field goal ,16,31,2012_13_TB_DEN
+4,2:33,Buccaneers,Mike Williams 5 yard pass from Josh Freeman (Connor Barth kick),23,31,2012_13_TB_DEN
+1,7:12,Steelers,Shaun Suisham 46 yard field goal ,3,0,2012_13_PIT_BAL
+2,13:52,Ravens,Justin Tucker 45 yard field goal ,3,3,2012_13_PIT_BAL
+2,9:34,Ravens,Justin Tucker 23 yard field goal ,3,6,2012_13_PIT_BAL
+2,3:16,Ravens,Anquan Boldin 28 yard pass from Joe Flacco (Justin Tucker kick),3,13,2012_13_PIT_BAL
+2,0:32,Steelers,Shaun Suisham 41 yard field goal ,6,13,2012_13_PIT_BAL
+3,11:05,Steelers,Jonathan Dwyer 16 yard rush (Shaun Suisham kick),13,13,2012_13_PIT_BAL
+3,4:50,Ravens,Ray Rice 34 yard rush (Justin Tucker kick),13,20,2012_13_PIT_BAL
+4,7:24,Steelers,Heath Miller 7 yard pass from Charlie Batch (Shaun Suisham kick),20,20,2012_13_PIT_BAL
+4,0:00,Steelers,Shaun Suisham 42 yard field goal ,23,20,2012_13_PIT_BAL
+2,12:59,Browns,Phil Dawson 41 yard field goal ,3,0,2012_13_CLE_LVR
+2,10:25,Browns,Josh Gordon 44 yard pass from Brandon Weeden (Phil Dawson kick),10,0,2012_13_CLE_LVR
+2,4:28,Raiders,Sebastian Janikowski 51 yard field goal ,10,3,2012_13_CLE_LVR
+3,9:51,Browns,Phil Dawson 35 yard field goal ,13,3,2012_13_CLE_LVR
+3,0:17,Raiders,Rod Streater 64 yard pass from Carson Palmer (Sebastian Janikowski kick),13,10,2012_13_CLE_LVR
+4,3:27,Browns,Trent Richardson 3 yard rush (Phil Dawson kick),20,10,2012_13_CLE_LVR
+4,0:01,Raiders,Brandon Myers 17 yard pass from Carson Palmer (Sebastian Janikowski kick),20,17,2012_13_CLE_LVR
+1,7:39,Bengals,Jermaine Gresham 19 yard pass from Andy Dalton (Mike Nugent kick),7,0,2012_13_CIN_LAC
+2,14:57,Chargers,Nick Novak 20 yard field goal ,7,3,2012_13_CIN_LAC
+2,14:09,Chargers,Demorrio Williams 31 yard interception return (Nick Novak kick),7,10,2012_13_CIN_LAC
+2,9:38,Bengals,Mike Nugent 19 yard field goal ,10,10,2012_13_CIN_LAC
+2,0:00,Chargers,Nick Novak 19 yard field goal ,10,13,2012_13_CIN_LAC
+4,4:11,Bengals,Andy Dalton 6 yard rush (Mike Nugent kick),17,13,2012_13_CIN_LAC
+4,2:47,Bengals,Mike Nugent 24 yard field goal ,20,13,2012_13_CIN_LAC
+1,5:38,Eagles,Bryce Brown 10 yard rush (Alex Henery kick),7,0,2012_13_PHI_DAL
+2,13:34,Cowboys,Dan Bailey 39 yard field goal ,7,3,2012_13_PHI_DAL
+2,6:07,Eagles,Bryce Brown 5 yard rush (Alex Henery kick),14,3,2012_13_PHI_DAL
+2,0:41,Cowboys,DeMarco Murray 1 yard rush (Dan Bailey kick),14,10,2012_13_PHI_DAL
+2,0:00,Eagles,Alex Henery 43 yard field goal ,17,10,2012_13_PHI_DAL
+3,11:18,Cowboys,Dez Bryant 23 yard pass from Tony Romo (Dan Bailey kick),17,17,2012_13_PHI_DAL
+3,5:27,Eagles,Riley Cooper 15 yard pass from Nick Foles (Alex Henery kick),24,17,2012_13_PHI_DAL
+4,13:41,Cowboys,Miles Austin 27 yard pass from Tony Romo (Dan Bailey kick),24,24,2012_13_PHI_DAL
+4,9:51,Eagles,Alex Henery 43 yard field goal ,27,24,2012_13_PHI_DAL
+4,5:35,Cowboys,Dez Bryant 6 yard pass from Tony Romo (Dan Bailey kick),27,31,2012_13_PHI_DAL
+4,3:50,Cowboys,Morris Claiborne 50 yard defensive fumble return (Dan Bailey kick),27,38,2012_13_PHI_DAL
+4,0:31,Eagles,Damaris Johnson 98 yard punt return (run failed),33,38,2012_13_PHI_DAL
+1,6:22,Giants,Lawrence Tynes 39 yard field goal ,3,0,2012_13_NYG_WAS
+1,4:16,Redskins,Josh Morgan 13 yard offensive fumble return (Kai Forbath kick),3,7,2012_13_NYG_WAS
+2,2:32,Giants,Martellus Bennett 4 yard pass from Eli Manning (Lawrence Tynes kick),10,7,2012_13_NYG_WAS
+2,0:41,Redskins,Kai Forbath 33 yard field goal ,10,10,2012_13_NYG_WAS
+2,0:00,Giants,Lawrence Tynes 40 yard field goal ,13,10,2012_13_NYG_WAS
+3,3:09,Giants,Lawrence Tynes 35 yard field goal ,16,10,2012_13_NYG_WAS
+4,11:31,Redskins,Pierre Garcon 8 yard pass from Robert Griffin III (Kai Forbath kick),16,17,2012_13_NYG_WAS
+1,10:30,Broncos,Joel Dreessen 6 yard pass from Peyton Manning (Matt Prater kick),7,0,2012_14_DEN_LVR
+1,5:09,Broncos,Matt Prater 43 yard field goal ,10,0,2012_14_DEN_LVR
+2,13:39,Broncos,Matt Prater 34 yard field goal ,13,0,2012_14_DEN_LVR
+2,1:59,Raiders,Darren McFadden 6 yard pass from Carson Palmer (Sebastian Janikowski kick),13,7,2012_14_DEN_LVR
+3,7:30,Broncos,Matt Prater 20 yard field goal ,16,7,2012_14_DEN_LVR
+3,5:07,Broncos,Knowshon Moreno 1 yard rush (Matt Prater kick),23,7,2012_14_DEN_LVR
+3,0:19,Broncos,Matt Prater 33 yard field goal ,26,7,2012_14_DEN_LVR
+4,5:36,Raiders,Darrius Heyward-Bey 56 yard pass from Carson Palmer (pass failed),26,13,2012_14_DEN_LVR
+1,2:14,Bills,Rian Lindell 35 yard field goal ,0,3,2012_14_LAR_BUF
+2,0:07,Bills,Rian Lindell 40 yard field goal ,0,6,2012_14_LAR_BUF
+3,8:37,Rams,Steven Jackson 1 yard rush (Greg Zuerlein kick),7,6,2012_14_LAR_BUF
+3,3:26,Bills,Lee Smith 2 yard pass from Ryan Fitzpatrick (pass failed),7,12,2012_14_LAR_BUF
+4,0:48,Rams,Brandon Gibson 13 yard pass from Sam Bradford (Chris Givens pass from Sam Bradford),15,12,2012_14_LAR_BUF
+1,7:49,Panthers,Greg Olsen 25 yard pass from Cam Newton (Graham Gano kick),0,7,2012_14_ATL_CAR
+2,10:55,Panthers,Graham Gano 24 yard field goal ,0,10,2012_14_ATL_CAR
+2,4:58,Panthers,Graham Gano 41 yard field goal ,0,13,2012_14_ATL_CAR
+2,0:00,Panthers,Graham Gano 31 yard field goal ,0,16,2012_14_ATL_CAR
+3,11:01,Panthers,Cam Newton 72 yard rush (Graham Gano kick),0,23,2012_14_ATL_CAR
+3,4:48,Falcons,Roddy White 4 yard pass from Matt Ryan (Matt Bryant kick),7,23,2012_14_ATL_CAR
+4,13:57,Falcons,Julio Jones 11 yard pass from Matt Ryan (pass failed),13,23,2012_14_ATL_CAR
+4,4:11,Panthers,DeAngelo Williams 53 yard pass from Cam Newton (Graham Gano kick),13,30,2012_14_ATL_CAR
+4,0:53,Falcons,Michael Turner 1 yard rush (Matt Bryant kick),20,30,2012_14_ATL_CAR
+1,8:36,Cowboys,Dan Bailey 37 yard field goal ,3,0,2012_14_DAL_CIN
+1,6:41,Bengals,Andrew Hawkins 8 yard pass from Andy Dalton (Josh Brown kick),3,7,2012_14_DAL_CIN
+1,1:39,Bengals,Josh Brown 25 yard field goal ,3,10,2012_14_DAL_CIN
+2,10:33,Cowboys,DeMarco Murray 1 yard rush (Dan Bailey kick),10,10,2012_14_DAL_CIN
+2,3:24,Bengals,Josh Brown 33 yard field goal ,10,13,2012_14_DAL_CIN
+3,9:22,Bengals,Josh Brown 25 yard field goal ,10,16,2012_14_DAL_CIN
+3,6:45,Bengals,Josh Brown 52 yard field goal ,10,19,2012_14_DAL_CIN
+4,6:35,Cowboys,Dez Bryant 27 yard pass from Tony Romo (Dan Bailey kick),17,19,2012_14_DAL_CIN
+4,0:00,Cowboys,Dan Bailey 40 yard field goal ,20,19,2012_14_DAL_CIN
+1,14:48,Chiefs,Jamaal Charles 80 yard rush (Ryan Succop kick),7,0,2012_14_KC_CLE
+1,3:53,Browns,Phil Dawson 23 yard field goal ,7,3,2012_14_KC_CLE
+2,14:40,Browns,Travis Benjamin 93 yard punt return (Phil Dawson kick),7,10,2012_14_KC_CLE
+3,12:28,Browns,Trent Richardson 1 yard rush (Phil Dawson kick),7,17,2012_14_KC_CLE
+3,8:42,Browns,Phil Dawson 24 yard field goal ,7,20,2012_14_KC_CLE
+4,14:17,Browns,Trent Richardson 1 yard rush (Phil Dawson kick),7,27,2012_14_KC_CLE
+4,9:04,Browns,Phil Dawson 34 yard field goal ,7,30,2012_14_KC_CLE
+1,10:10,Titans,Jared Cook 18 yard pass from Jake Locker (Rob Bironas kick),7,0,2012_14_TEN_IND
+1,1:01,Colts,Reggie Wayne 4 yard pass from Andrew Luck (Adam Vinatieri kick),7,7,2012_14_TEN_IND
+2,12:27,Titans,Rob Bironas 40 yard field goal ,10,7,2012_14_TEN_IND
+2,4:40,Titans,Will Witherspoon 40 yard interception return (Rob Bironas kick),17,7,2012_14_TEN_IND
+2,0:37,Titans,Rob Bironas 31 yard field goal ,20,7,2012_14_TEN_IND
+3,8:36,Colts,Delone Carter 1 yard rush (Adam Vinatieri kick),20,14,2012_14_TEN_IND
+3,5:36,Colts,Cassius Vaughn 3 yard interception return (Adam Vinatieri kick),20,21,2012_14_TEN_IND
+4,10:28,Titans,Rob Bironas 25 yard field goal ,23,21,2012_14_TEN_IND
+4,6:23,Colts,Adam Vinatieri 53 yard field goal ,23,24,2012_14_TEN_IND
+4,3:48,Colts,Adam Vinatieri 40 yard field goal ,23,27,2012_14_TEN_IND
+2,6:44,Jaguars,Josh Scobee 31 yard field goal ,0,3,2012_14_NYJ_JAX
+3,9:11,Jets,Shonn Greene 1 yard rush (Nick Folk kick),7,3,2012_14_NYJ_JAX
+3,2:53,Jets,Nick Folk 44 yard field goal ,10,3,2012_14_NYJ_JAX
+4,12:20,Jets,Bilal Powell 4 yard rush (Nick Folk kick),17,3,2012_14_NYJ_JAX
+4,7:06,Jaguars,Montell Owens 32 yard rush (Josh Scobee kick),17,10,2012_14_NYJ_JAX
+1,11:53,Vikings,Adrian Peterson 1 yard rush (Blair Walsh kick),0,7,2012_14_CHI_MIN
+1,8:42,Vikings,Adrian Peterson 1 yard rush (Blair Walsh kick),0,14,2012_14_CHI_MIN
+2,1:52,Bears,Alshon Jeffery 23 yard pass from Jay Cutler (Robbie Gould kick),7,14,2012_14_CHI_MIN
+3,3:27,Vikings,Harrison Smith 56 yard interception return (Blair Walsh kick),7,21,2012_14_CHI_MIN
+4,1:48,Bears,Brandon Marshall 16 yard pass from Jason Campbell (Robbie Gould kick),14,21,2012_14_CHI_MIN
+1,3:06,Chargers,Nick Novak 51 yard field goal ,3,0,2012_14_LAC_PIT
+2,3:40,Chargers,Danario Alexander 39 yard pass from Philip Rivers (Nick Novak kick),10,0,2012_14_LAC_PIT
+2,0:50,Chargers,Nick Novak 39 yard field goal ,13,0,2012_14_LAC_PIT
+2,0:00,Steelers,Shaun Suisham 49 yard field goal ,13,3,2012_14_LAC_PIT
+3,5:28,Chargers,Malcom Floyd 3 yard pass from Philip Rivers (Nick Novak kick),20,3,2012_14_LAC_PIT
+3,5:16,Chargers,Quentin Jammer defensive fumble recovery in end zone (Nick Novak kick),27,3,2012_14_LAC_PIT
+3,2:33,Steelers,Mike Wallace 40 yard pass from Ben Roethlisberger (Shaun Suisham kick),27,10,2012_14_LAC_PIT
+4,9:46,Chargers,Danario Alexander 15 yard pass from Philip Rivers (Nick Novak kick),34,10,2012_14_LAC_PIT
+4,6:07,Steelers,Mike Wallace 11 yard pass from Ben Roethlisberger (Shaun Suisham kick),34,17,2012_14_LAC_PIT
+4,0:58,Steelers,Antonio Brown 1 yard pass from Ben Roethlisberger (Shaun Suisham kick),34,24,2012_14_LAC_PIT
+2,7:13,Eagles,Alex Henery 28 yard field goal ,3,0,2012_14_PHI_TB
+2,1:40,Eagles,Nick Foles 10 yard rush (Alex Henery kick),10,0,2012_14_PHI_TB
+3,11:35,Buccaneers,Mike Williams 1 yard pass from Josh Freeman (Connor Barth kick),10,7,2012_14_PHI_TB
+4,14:26,Buccaneers,Vincent Jackson 13 yard pass from Josh Freeman (Connor Barth kick),10,14,2012_14_PHI_TB
+4,7:21,Buccaneers,Doug Martin 4 yard rush (Connor Barth kick),10,21,2012_14_PHI_TB
+4,3:55,Eagles,Clay Harbor 11 yard pass from Nick Foles (pass failed),16,21,2012_14_PHI_TB
+4,0:00,Eagles,Jeremy Maclin 1 yard pass from Nick Foles (Alex Henery kick),23,21,2012_14_PHI_TB
+1,9:38,Redskins,Josh Morgan 4 yard pass from Robert Griffin III (Kai Forbath kick),0,7,2012_14_BAL_WAS
+1,7:05,Ravens,Anquan Boldin 19 yard pass from Joe Flacco (Justin Tucker kick),7,7,2012_14_BAL_WAS
+1,2:55,Redskins,Alfred Morris 1 yard rush (Kai Forbath kick),7,14,2012_14_BAL_WAS
+2,10:16,Ravens,Anquan Boldin 31 yard pass from Joe Flacco (Justin Tucker kick),14,14,2012_14_BAL_WAS
+2,8:39,Ravens,Dennis Pitta 14 yard pass from Joe Flacco (Justin Tucker kick),21,14,2012_14_BAL_WAS
+3,10:27,Redskins,Kai Forbath 48 yard field goal ,21,17,2012_14_BAL_WAS
+3,1:21,Redskins,Kai Forbath 49 yard field goal ,21,20,2012_14_BAL_WAS
+4,4:47,Ravens,Ray Rice 7 yard rush (Justin Tucker kick),28,20,2012_14_BAL_WAS
+4,0:29,Redskins,Pierre Garcon 11 yard pass from Kirk Cousins (Kirk Cousins run),28,28,2012_14_BAL_WAS
+OT,11:37,Redskins,Kai Forbath 34 yard field goal ,28,31,2012_14_BAL_WAS
+2,13:31,Dolphins,Dan Carpenter 28 yard field goal ,3,0,2012_14_MIA_SF
+2,8:00,49ers,David Akers 30 yard field goal ,3,3,2012_14_MIA_SF
+2,0:00,49ers,David Akers 37 yard field goal ,3,6,2012_14_MIA_SF
+3,11:17,49ers,Frank Gore 1 yard rush (David Akers kick),3,13,2012_14_MIA_SF
+3,6:53,Dolphins,Dan Carpenter 53 yard field goal ,6,13,2012_14_MIA_SF
+4,14:27,49ers,Anthony Dixon 1 yard rush (David Akers kick),6,20,2012_14_MIA_SF
+4,7:55,Dolphins,Anthony Fasano 3 yard pass from Ryan Tannehill (Dan Carpenter kick),13,20,2012_14_MIA_SF
+4,2:10,49ers,Colin Kaepernick 50 yard rush (David Akers kick),13,27,2012_14_MIA_SF
+1,9:38,Saints,Elbert Mack 73 yard interception return (Garrett Hartley kick),7,0,2012_14_NO_NYG
+1,9:25,Giants,David Wilson 97 yard kickoff return (Lawrence Tynes kick),7,7,2012_14_NO_NYG
+1,4:19,Giants,Martellus Bennett 6 yard pass from Eli Manning (Lawrence Tynes kick),7,14,2012_14_NO_NYG
+2,9:46,Saints,Garrett Hartley 32 yard field goal ,10,14,2012_14_NO_NYG
+2,1:57,Saints,Garrett Hartley 25 yard field goal ,13,14,2012_14_NO_NYG
+2,0:20,Giants,Domenik Hixon 5 yard pass from Eli Manning (Lawrence Tynes kick),13,21,2012_14_NO_NYG
+3,13:04,Giants,David Wilson 6 yard rush (Lawrence Tynes kick),13,28,2012_14_NO_NYG
+3,8:13,Giants,Hakeem Nicks 25 yard pass from Eli Manning (Lawrence Tynes kick),13,35,2012_14_NO_NYG
+3,7:21,Saints,Darren Sproles 13 yard rush (Garrett Hartley kick),20,35,2012_14_NO_NYG
+3,1:51,Saints,Darren Sproles 9 yard pass from Drew Brees (Garrett Hartley kick),27,35,2012_14_NO_NYG
+4,14:20,Giants,Victor Cruz 10 yard pass from Eli Manning (Lawrence Tynes kick),27,42,2012_14_NO_NYG
+4,10:19,Giants,Lawrence Tynes 39 yard field goal ,27,45,2012_14_NO_NYG
+4,5:10,Giants,David Wilson 52 yard rush (Lawrence Tynes kick),27,52,2012_14_NO_NYG
+1,9:59,Seahawks,Stephen Hauschka 31 yard field goal ,0,3,2012_14_ARI_SEA
+1,2:04,Seahawks,Marshawn Lynch 20 yard rush (Stephen Hauschka kick),0,10,2012_14_ARI_SEA
+2,14:53,Seahawks,Marshawn Lynch 4 yard rush (Stephen Hauschka kick),0,17,2012_14_ARI_SEA
+2,10:12,Seahawks,Richard Sherman 19 yard interception return (Stephen Hauschka kick),0,24,2012_14_ARI_SEA
+2,6:31,Seahawks,Malcolm Smith fumble recovery in end zone (Stephen Hauschka kick),0,31,2012_14_ARI_SEA
+2,0:06,Seahawks,Zach Miller 24 yard pass from Russell Wilson (Stephen Hauschka kick),0,38,2012_14_ARI_SEA
+3,11:08,Seahawks,Marshawn Lynch 33 yard rush (Stephen Hauschka kick),0,45,2012_14_ARI_SEA
+3,7:43,Seahawks,Stephen Hauschka 28 yard field goal ,0,48,2012_14_ARI_SEA
+3,2:06,Seahawks,Stephen Hauschka 32 yard field goal ,0,51,2012_14_ARI_SEA
+4,2:32,Seahawks,Leon Washington 3 yard rush (Stephen Hauschka kick),0,58,2012_14_ARI_SEA
+1,7:16,Lions,Matthew Stafford 4 yard rush (Jason Hanson kick),7,0,2012_14_DET_GB
+2,12:47,Lions,Tony Scheffler 3 yard pass from Matthew Stafford (Jason Hanson kick),14,0,2012_14_DET_GB
+2,10:52,Packers,Mason Crosby 49 yard field goal ,14,3,2012_14_DET_GB
+2,6:15,Packers,Mike Daniels 43 yard defensive fumble return (Mason Crosby kick),14,10,2012_14_DET_GB
+3,11:54,Packers,Aaron Rodgers 27 yard rush (Mason Crosby kick),14,17,2012_14_DET_GB
+3,8:57,Lions,Jason Hanson 46 yard field goal ,17,17,2012_14_DET_GB
+4,10:45,Packers,DuJuan Harris 14 yard rush (Mason Crosby kick),17,24,2012_14_DET_GB
+4,4:02,Packers,Mason Crosby 41 yard field goal ,17,27,2012_14_DET_GB
+4,0:07,Lions,Jason Hanson 34 yard field goal ,20,27,2012_14_DET_GB
+1,9:27,Patriots,Aaron Hernandez 7 yard pass from Tom Brady (Stephen Gostkowski kick),0,7,2012_14_HOU_NE
+1,2:49,Patriots,Brandon Lloyd 37 yard pass from Tom Brady (Stephen Gostkowski kick),0,14,2012_14_HOU_NE
+2,11:01,Patriots,Aaron Hernandez 4 yard pass from Tom Brady (Stephen Gostkowski kick),0,21,2012_14_HOU_NE
+3,9:49,Patriots,Donte' Stallworth 63 yard pass from Tom Brady (Stephen Gostkowski kick),0,28,2012_14_HOU_NE
+3,6:12,Texans,Arian Foster 1 yard rush (Shayne Graham kick),7,28,2012_14_HOU_NE
+4,14:15,Patriots,Brandon Lloyd offensive fumble recovery in end zone (Stephen Gostkowski kick),7,35,2012_14_HOU_NE
+4,7:23,Patriots,Stevan Ridley 14 yard rush (Stephen Gostkowski kick),7,42,2012_14_HOU_NE
+4,2:00,Texans,T.J. Yates 1 yard rush (Shayne Graham kick),14,42,2012_14_HOU_NE
+1,11:10,Bengals,BenJarvus Green-Ellis 1 yard rush (Josh Brown kick),7,0,2012_15_CIN_PHI
+1,7:51,Bengals,Josh Brown 24 yard field goal ,10,0,2012_15_CIN_PHI
+2,11:40,Eagles,Riley Cooper 11 yard pass from Nick Foles (Alex Henery kick),10,7,2012_15_CIN_PHI
+2,7:37,Eagles,Alex Henery 22 yard field goal ,10,10,2012_15_CIN_PHI
+2,0:17,Eagles,Alex Henery 20 yard field goal ,10,13,2012_15_CIN_PHI
+3,1:10,Bengals,Andy Dalton 11 yard rush (Josh Brown kick),17,13,2012_15_CIN_PHI
+3,0:21,Bengals,Wallace Gilberry 25 yard defensive fumble return (Josh Brown kick),24,13,2012_15_CIN_PHI
+4,14:12,Bengals,Josh Brown 32 yard field goal ,27,13,2012_15_CIN_PHI
+4,12:47,Bengals,A.J. Green 5 yard pass from Andy Dalton (Josh Brown kick),34,13,2012_15_CIN_PHI
+1,12:12,Falcons,Michael Turner 1 yard rush (Matt Bryant kick),0,7,2012_15_NYG_ATL
+1,1:43,Falcons,Tony Gonzalez 12 yard pass from Matt Ryan (Matt Bryant kick),0,14,2012_15_NYG_ATL
+2,10:22,Falcons,Matt Bryant 38 yard field goal ,0,17,2012_15_NYG_ATL
+3,11:31,Falcons,Julio Jones 40 yard pass from Matt Ryan (Matt Bryant kick),0,24,2012_15_NYG_ATL
+3,0:10,Falcons,Matt Bryant 19 yard field goal ,0,27,2012_15_NYG_ATL
+4,4:57,Falcons,Julio Jones 3 yard pass from Matt Ryan (Matt Bryant kick),0,34,2012_15_NYG_ATL
+1,7:13,Broncos,Matt Prater 27 yard field goal ,3,0,2012_15_DEN_BAL
+2,11:51,Broncos,Jacob Hester 1 yard rush (Matt Prater kick),10,0,2012_15_DEN_BAL
+2,0:15,Broncos,Chris Harris Jr. 98 yard interception return (Matt Prater kick),17,0,2012_15_DEN_BAL
+3,12:18,Ravens,Justin Tucker 45 yard field goal ,17,3,2012_15_DEN_BAL
+3,9:53,Broncos,Eric Decker 51 yard pass from Peyton Manning (Matt Prater kick),24,3,2012_15_DEN_BAL
+3,7:40,Broncos,Knowshon Moreno 6 yard rush (Matt Prater kick),31,3,2012_15_DEN_BAL
+4,14:31,Ravens,Dennis Pitta 31 yard pass from Joe Flacco (Justin Tucker kick),31,10,2012_15_DEN_BAL
+4,4:32,Broncos,Matt Prater 36 yard field goal ,34,10,2012_15_DEN_BAL
+4,4:08,Ravens,Dennis Pitta 61 yard pass from Joe Flacco (Justin Tucker kick),34,17,2012_15_DEN_BAL
+2,8:03,Bears,Brandon Marshall 15 yard pass from Jay Cutler (Olindo Mare kick),0,7,2012_15_GB_CHI
+2,4:19,Packers,James Jones 29 yard pass from Aaron Rodgers (Mason Crosby kick),7,7,2012_15_GB_CHI
+2,0:28,Packers,James Jones 8 yard pass from Aaron Rodgers (Mason Crosby kick),14,7,2012_15_GB_CHI
+3,8:08,Packers,James Jones 6 yard pass from Aaron Rodgers (Mason Crosby kick),21,7,2012_15_GB_CHI
+3,0:12,Bears,Olindo Mare 34 yard field goal ,21,10,2012_15_GB_CHI
+4,7:04,Bears,Olindo Mare 34 yard field goal ,21,13,2012_15_GB_CHI
+1,8:41,Browns,Trent Richardson 6 yard rush (Phil Dawson kick),0,7,2012_15_WAS_CLE
+1,2:16,Redskins,Leonard Hankerson 54 yard pass from Kirk Cousins (Kai Forbath kick),7,7,2012_15_WAS_CLE
+2,5:46,Redskins,Kai Forbath 44 yard field goal ,10,7,2012_15_WAS_CLE
+2,1:11,Browns,Trent Richardson 1 yard rush (Phil Dawson kick),10,14,2012_15_WAS_CLE
+3,13:14,Redskins,Alfred Morris 3 yard rush (Kai Forbath kick),17,14,2012_15_WAS_CLE
+3,7:40,Redskins,Leonard Hankerson 2 yard pass from Kirk Cousins (Kai Forbath kick),24,14,2012_15_WAS_CLE
+4,11:19,Redskins,Evan Royster 4 yard rush (Kai Forbath kick),31,14,2012_15_WAS_CLE
+4,10:11,Browns,Travis Benjamin 69 yard pass from Brandon Weeden (Phil Dawson kick),31,21,2012_15_WAS_CLE
+4,5:00,Redskins,Alfred Morris 8 yard rush (Kai Forbath kick),38,21,2012_15_WAS_CLE
+1,11:47,Texans,Shayne Graham 29 yard field goal ,0,3,2012_15_IND_HOU
+1,4:51,Texans,Andre Johnson 3 yard pass from Matt Schaub (Shayne Graham kick),0,10,2012_15_IND_HOU
+2,6:12,Colts,Adam Vinatieri 26 yard field goal ,3,10,2012_15_IND_HOU
+2,3:50,Texans,Shayne Graham 35 yard field goal ,3,13,2012_15_IND_HOU
+2,1:46,Texans,Bryan Braman 8 yard blocked punt return (Shayne Graham kick),3,20,2012_15_IND_HOU
+2,1:07,Colts,T.Y. Hilton 61 yard pass from Andrew Luck (Adam Vinatieri kick),10,20,2012_15_IND_HOU
+3,7:33,Texans,Shayne Graham 27 yard field goal ,10,23,2012_15_IND_HOU
+3,2:32,Colts,Dwayne Allen 8 yard pass from Andrew Luck (Adam Vinatieri kick),17,23,2012_15_IND_HOU
+4,8:30,Texans,Shayne Graham 46 yard field goal ,17,26,2012_15_IND_HOU
+4,1:05,Texans,Shayne Graham 33 yard field goal ,17,29,2012_15_IND_HOU
+1,10:03,Jaguars,Josh Scobee 37 yard field goal ,3,0,2012_15_JAX_MIA
+1,6:26,Dolphins,Dan Carpenter 53 yard field goal ,3,3,2012_15_JAX_MIA
+2,1:56,Dolphins,Jorvorskie Lane 4 yard pass from Ryan Tannehill (Dan Carpenter kick),3,10,2012_15_JAX_MIA
+3,5:35,Dolphins,Dan Carpenter 30 yard field goal ,3,13,2012_15_JAX_MIA
+3,1:01,Dolphins,Dan Carpenter 31 yard field goal ,3,16,2012_15_JAX_MIA
+4,3:12,Dolphins,Anthony Fasano 2 yard pass from Ryan Tannehill (Anthony Fasano pass from Ryan Tannehill),3,24,2012_15_JAX_MIA
+1,11:12,Saints,David Thomas 9 yard pass from Drew Brees (Garrett Hartley kick),0,7,2012_15_TB_NO
+2,13:23,Saints,Garrett Hartley 25 yard field goal ,0,10,2012_15_TB_NO
+2,4:57,Saints,Darren Sproles 2 yard pass from Drew Brees (Garrett Hartley kick),0,17,2012_15_TB_NO
+2,0:09,Saints,Lance Moore 7 yard pass from Drew Brees (Garrett Hartley kick),0,24,2012_15_TB_NO
+3,9:05,Saints,Joe Morgan 34 yard pass from Drew Brees (Garrett Hartley kick),0,31,2012_15_TB_NO
+4,8:09,Saints,Garrett Hartley 36 yard field goal ,0,34,2012_15_TB_NO
+4,4:54,Saints,Mark Ingram 11 yard rush (Garrett Hartley kick),0,41,2012_15_TB_NO
+1,7:07,Vikings,Christian Ponder 5 yard rush (Blair Walsh kick),7,0,2012_15_MIN_LAR
+2,12:39,Rams,Brian Quick 4 yard pass from Sam Bradford (Greg Zuerlein kick),7,7,2012_15_MIN_LAR
+2,12:21,Vikings,Adrian Peterson 82 yard rush (Blair Walsh kick),14,7,2012_15_MIN_LAR
+2,9:11,Vikings,Blair Walsh 50 yard field goal ,17,7,2012_15_MIN_LAR
+2,8:25,Vikings,Everson Griffen 29 yard interception return (Blair Walsh kick),24,7,2012_15_MIN_LAR
+2,3:11,Vikings,Blair Walsh 38 yard field goal ,27,7,2012_15_MIN_LAR
+2,0:00,Vikings,Blair Walsh 42 yard field goal ,30,7,2012_15_MIN_LAR
+3,5:56,Vikings,Blair Walsh 53 yard field goal ,33,7,2012_15_MIN_LAR
+4,13:39,Rams,Danny Amendola 6 yard pass from Sam Bradford (Greg Zuerlein kick),33,14,2012_15_MIN_LAR
+4,7:48,Rams,Lance Kendricks 6 yard pass from Sam Bradford (Danny Amendola pass from Sam Bradford),33,22,2012_15_MIN_LAR
+4,5:31,Vikings,Blair Walsh 51 yard field goal ,36,22,2012_15_MIN_LAR
+2,12:51,Lions,Mikel Leshoure 1 yard rush (Jason Hanson kick),7,0,2012_15_DET_ARI
+2,9:18,Cardinals,Beanie Wells 5 yard rush (Jay Feely kick),7,7,2012_15_DET_ARI
+2,3:16,Cardinals,Beanie Wells 1 yard rush (Jay Feely kick),7,14,2012_15_DET_ARI
+2,0:30,Cardinals,Rashad Johnson 53 yard interception return (Jay Feely kick),7,21,2012_15_DET_ARI
+3,9:19,Cardinals,Jay Feely 51 yard field goal ,7,24,2012_15_DET_ARI
+3,4:11,Lions,Jason Hanson 41 yard field goal ,10,24,2012_15_DET_ARI
+4,5:07,Cardinals,Greg Toler 102 yard interception return (Jay Feely kick),10,31,2012_15_DET_ARI
+4,3:39,Cardinals,Beanie Wells 31 yard rush (Jay Feely kick),10,38,2012_15_DET_ARI
+1,10:00,Seahawks,Russell Wilson 14 yard rush (Stephen Hauschka kick),7,0,2012_15_SEA_BUF
+1,5:46,Seahawks,Russell Wilson 25 yard rush (Stephen Hauschka kick),14,0,2012_15_SEA_BUF
+1,0:34,Bills,C.J. Spiller 14 yard rush (Rian Lindell kick),14,7,2012_15_SEA_BUF
+2,12:03,Seahawks,Stephen Hauschka 19 yard field goal ,17,7,2012_15_SEA_BUF
+2,10:10,Seahawks,Zach Miller 4 yard pass from Russell Wilson (Stephen Hauschka kick),24,7,2012_15_SEA_BUF
+2,5:31,Seahawks,Russell Wilson 13 yard rush (Stephen Hauschka kick),31,7,2012_15_SEA_BUF
+2,1:10,Bills,Stevie Johnson 20 yard pass from Ryan Fitzpatrick (Rian Lindell kick),31,14,2012_15_SEA_BUF
+2,0:00,Bills,Rian Lindell 41 yard field goal ,31,17,2012_15_SEA_BUF
+3,12:18,Seahawks,Marshawn Lynch 13 yard rush (Stephen Hauschka kick failed),37,17,2012_15_SEA_BUF
+3,7:29,Seahawks,Stephen Hauschka 33 yard field goal ,40,17,2012_15_SEA_BUF
+3,6:13,Seahawks,Earl Thomas 57 yard interception return (Stephen Hauschka kick),47,17,2012_15_SEA_BUF
+4,9:17,Seahawks,Stephen Hauschka 23 yard field goal ,50,17,2012_15_SEA_BUF
+1,8:29,Panthers,Mike Tolbert 1 yard rush (Graham Gano kick),7,0,2012_15_CAR_LAC
+1,4:54,Panthers,Mike Tolbert 1 yard rush (Graham Gano kick),14,0,2012_15_CAR_LAC
+1,0:58,Panthers,DeAngelo Williams 45 yard pass from Cam Newton (Graham Gano kick),21,0,2012_15_CAR_LAC
+2,0:06,Panthers,Graham Gano 33 yard field goal ,24,0,2012_15_CAR_LAC
+3,8:56,Panthers,Steve Smith Sr. 4 yard pass from Cam Newton (Graham Gano kick),31,0,2012_15_CAR_LAC
+4,14:02,Chargers,Antonio Gates 9 yard pass from Philip Rivers (Nick Novak kick),31,7,2012_15_CAR_LAC
+1,8:36,Cowboys,Dan Bailey 50 yard field goal ,0,3,2012_15_PIT_DAL
+2,11:02,Cowboys,Jason Witten 17 yard pass from Tony Romo (Dan Bailey kick),0,10,2012_15_PIT_DAL
+2,6:03,Steelers,Shaun Suisham 32 yard field goal ,3,10,2012_15_PIT_DAL
+2,0:34,Steelers,Heath Miller 30 yard pass from Ben Roethlisberger (Shaun Suisham kick),10,10,2012_15_PIT_DAL
+3,6:03,Cowboys,Dez Bryant 24 yard pass from Tony Romo (Dan Bailey kick),10,17,2012_15_PIT_DAL
+3,4:16,Steelers,Jonathan Dwyer 1 yard rush (Shaun Suisham kick),17,17,2012_15_PIT_DAL
+4,12:37,Steelers,Antonio Brown 7 yard pass from Ben Roethlisberger (Shaun Suisham kick),24,17,2012_15_PIT_DAL
+4,6:55,Cowboys,DeMarco Murray 3 yard rush (Dan Bailey kick),24,24,2012_15_PIT_DAL
+OT,13:36,Cowboys,Dan Bailey 21 yard field goal ,24,27,2012_15_PIT_DAL
+1,1:44,Raiders,Sebastian Janikowski 20 yard field goal ,0,3,2012_15_KC_LVR
+2,10:19,Raiders,Sebastian Janikowski 50 yard field goal ,0,6,2012_15_KC_LVR
+2,0:00,Raiders,Sebastian Janikowski 57 yard field goal ,0,9,2012_15_KC_LVR
+3,6:41,Raiders,Sebastian Janikowski 30 yard field goal ,0,12,2012_15_KC_LVR
+4,13:27,Raiders,Sebastian Janikowski 41 yard field goal ,0,15,2012_15_KC_LVR
+1,10:55,49ers,Randy Moss 24 yard pass from Colin Kaepernick (David Akers kick),7,0,2012_15_SF_NE
+2,8:31,Patriots,Stephen Gostkowski 32 yard field goal ,7,3,2012_15_SF_NE
+2,6:59,49ers,Delanie Walker 34 yard pass from Colin Kaepernick (David Akers kick),14,3,2012_15_SF_NE
+2,0:00,49ers,David Akers 20 yard field goal ,17,3,2012_15_SF_NE
+3,10:38,49ers,Frank Gore 9 yard offensive fumble return (David Akers kick),24,3,2012_15_SF_NE
+3,10:21,49ers,Michael Crabtree 27 yard pass from Colin Kaepernick (David Akers kick),31,3,2012_15_SF_NE
+3,5:59,Patriots,Danny Woodhead 6 yard rush (Stephen Gostkowski kick),31,10,2012_15_SF_NE
+4,14:58,Patriots,Tom Brady 1 yard rush (Stephen Gostkowski kick),31,17,2012_15_SF_NE
+4,12:13,Patriots,Aaron Hernandez 5 yard pass from Tom Brady (Stephen Gostkowski kick),31,24,2012_15_SF_NE
+4,6:43,Patriots,Danny Woodhead 1 yard rush (Stephen Gostkowski kick),31,31,2012_15_SF_NE
+4,6:25,49ers,Michael Crabtree 38 yard pass from Colin Kaepernick (David Akers kick),38,31,2012_15_SF_NE
+4,1:56,49ers,David Akers 28 yard field goal ,41,31,2012_15_SF_NE
+4,0:38,Patriots,Stephen Gostkowski 41 yard field goal ,41,34,2012_15_SF_NE
+1,4:17,Jets,Nick Folk 22 yard field goal ,3,0,2012_15_NYJ_TEN
+2,8:53,Titans,Chris Johnson 94 yard rush (Rob Bironas kick),3,7,2012_15_NYJ_TEN
+3,3:19,Jets,Jeff Cumberland 17 yard pass from Mark Sanchez (Nick Folk kick),10,7,2012_15_NYJ_TEN
+3,0:20,Titans,Jake Locker 13 yard rush (Rob Bironas kick),10,14,2012_15_NYJ_TEN
+1,5:50,Falcons,Roddy White 44 yard pass from Matt Ryan (Matt Bryant kick),7,0,2012_16_ATL_DET
+1,0:13,Lions,Jason Hanson 34 yard field goal ,7,3,2012_16_ATL_DET
+2,9:54,Falcons,Roddy White 39 yard pass from Matt Ryan (Matt Bryant kick),14,3,2012_16_ATL_DET
+2,1:17,Falcons,Julio Jones 16 yard pass from Matt Ryan (Matt Bryant kick),21,3,2012_16_ATL_DET
+2,0:02,Lions,Jason Hanson 38 yard field goal ,21,6,2012_16_ATL_DET
+3,6:59,Lions,Mikel Leshoure 1 yard rush (Jason Hanson kick),21,13,2012_16_ATL_DET
+4,13:26,Lions,Jason Hanson 20 yard field goal ,21,16,2012_16_ATL_DET
+4,7:12,Falcons,Michael Palmer 1 yard pass from Matt Ryan (Matt Bryant kick),28,16,2012_16_ATL_DET
+4,3:05,Falcons,Matt Bryant 20 yard field goal ,31,16,2012_16_ATL_DET
+4,1:21,Lions,"Safety, Michael Turner tackled in the end zone by Kyle Vanden Bosch. ",31,18,2012_16_ATL_DET
+1,3:12,Panthers,Steve Smith Sr. 23 yard pass from Cam Newton (Graham Gano kick),0,7,2012_16_LVR_CAR
+2,6:25,Raiders,Sebastian Janikowski 21 yard field goal ,3,7,2012_16_LVR_CAR
+2,0:17,Panthers,Cam Newton 3 yard rush (Graham Gano kick),3,14,2012_16_LVR_CAR
+4,13:18,Raiders,Sebastian Janikowski 31 yard field goal ,6,14,2012_16_LVR_CAR
+4,2:46,Panthers,Graham Gano 51 yard field goal ,6,17,2012_16_LVR_CAR
+1,10:25,Saints,Mark Ingram 9 yard rush (Garrett Hartley kick),7,0,2012_16_NO_DAL
+2,12:47,Cowboys,Dez Bryant 58 yard pass from Tony Romo (Dan Bailey kick),7,7,2012_16_NO_DAL
+2,5:43,Cowboys,Dez Bryant 58 yard pass from Tony Romo (Dan Bailey kick),7,14,2012_16_NO_DAL
+2,1:11,Saints,Lance Moore 6 yard pass from Drew Brees (Garrett Hartley kick),14,14,2012_16_NO_DAL
+2,0:00,Saints,Garrett Hartley 37 yard field goal ,17,14,2012_16_NO_DAL
+3,10:26,Cowboys,Dan Bailey 47 yard field goal ,17,17,2012_16_NO_DAL
+3,4:03,Saints,Pierre Thomas 5 yard pass from Drew Brees (Garrett Hartley kick),24,17,2012_16_NO_DAL
+4,11:10,Saints,David Thomas 3 yard pass from Drew Brees (Garrett Hartley kick),31,17,2012_16_NO_DAL
+4,3:35,Cowboys,Dwayne Harris 16 yard pass from Tony Romo (Dan Bailey kick),31,24,2012_16_NO_DAL
+4,0:15,Cowboys,Miles Austin 19 yard pass from Tony Romo (Dan Bailey kick),31,31,2012_16_NO_DAL
+OT,10:33,Saints,Garrett Hartley 20 yard field goal ,34,31,2012_16_NO_DAL
+1,6:54,Packers,Aaron Rodgers 6 yard rush (Mason Crosby kick),0,7,2012_16_TEN_GB
+1,4:28,Packers,Randall Cobb 20 yard pass from Aaron Rodgers (Mason Crosby kick),0,14,2012_16_TEN_GB
+2,14:36,Packers,Mason Crosby 26 yard field goal ,0,17,2012_16_TEN_GB
+2,4:40,Packers,Mason Crosby 48 yard field goal ,0,20,2012_16_TEN_GB
+3,12:04,Packers,DuJuan Harris 7 yard rush (Mason Crosby kick),0,27,2012_16_TEN_GB
+3,5:47,Packers,Greg Jennings 1 yard pass from Aaron Rodgers (Mason Crosby kick),0,34,2012_16_TEN_GB
+4,14:11,Packers,James Jones 12 yard pass from Aaron Rodgers (Mason Crosby kick),0,41,2012_16_TEN_GB
+4,12:31,Packers,Ryan Grant 7 yard rush (Mason Crosby kick),0,48,2012_16_TEN_GB
+4,6:25,Packers,Ryan Grant 9 yard rush (Mason Crosby kick),0,55,2012_16_TEN_GB
+4,1:39,Titans,Kenny Britt 2 yard pass from Jake Locker (Rob Bironas kick),7,55,2012_16_TEN_GB
+1,10:50,Texans,Shayne Graham 51 yard field goal ,0,3,2012_16_MIN_HOU
+1,6:19,Vikings,Kyle Rudolph 3 yard pass from Christian Ponder (Blair Walsh kick),7,3,2012_16_MIN_HOU
+2,8:15,Vikings,Blair Walsh 56 yard field goal ,10,3,2012_16_MIN_HOU
+2,0:37,Vikings,Blair Walsh 41 yard field goal ,13,3,2012_16_MIN_HOU
+3,11:31,Vikings,Blair Walsh 39 yard field goal ,16,3,2012_16_MIN_HOU
+3,0:26,Texans,Shayne Graham 33 yard field goal ,16,6,2012_16_MIN_HOU
+4,4:44,Vikings,Toby Gerhart 3 yard rush (Blair Walsh kick),23,6,2012_16_MIN_HOU
+1,9:34,Jaguars,Justin Blackmon 3 yard pass from Chad Henne (Josh Scobee kick),0,7,2012_16_NE_JAX
+1,5:43,Jaguars,Josh Scobee 41 yard field goal ,0,10,2012_16_NE_JAX
+1,3:15,Patriots,Stephen Gostkowski 25 yard field goal ,3,10,2012_16_NE_JAX
+2,13:07,Jaguars,Josh Scobee 35 yard field goal ,3,13,2012_16_NE_JAX
+2,5:25,Patriots,Stephen Gostkowski 49 yard field goal ,6,13,2012_16_NE_JAX
+2,0:18,Patriots,Danny Woodhead 14 yard pass from Tom Brady (Stephen Gostkowski kick),13,13,2012_16_NE_JAX
+3,11:44,Patriots,Stephen Gostkowski 38 yard field goal ,16,13,2012_16_NE_JAX
+4,14:15,Patriots,Wes Welker 2 yard pass from Tom Brady (Stephen Gostkowski kick),23,13,2012_16_NE_JAX
+4,8:42,Jaguars,Josh Scobee 42 yard field goal ,23,16,2012_16_NE_JAX
+1,10:08,Colts,Darius Butler 32 yard interception return (Adam Vinatieri kick),7,0,2012_16_IND_KC
+1,8:18,Chiefs,Ryan Succop 47 yard field goal ,7,3,2012_16_IND_KC
+2,13:27,Colts,Adam Vinatieri 48 yard field goal ,10,3,2012_16_IND_KC
+2,0:07,Colts,Adam Vinatieri 36 yard field goal ,13,3,2012_16_IND_KC
+3,14:40,Chiefs,Jamaal Charles 86 yard rush (Ryan Succop kick),13,10,2012_16_IND_KC
+3,6:00,Chiefs,Ryan Succop 47 yard field goal ,13,13,2012_16_IND_KC
+4,4:08,Colts,Reggie Wayne 7 yard pass from Andrew Luck (Adam Vinatieri kick),20,13,2012_16_IND_KC
+1,2:54,Dolphins,Reggie Bush 17 yard pass from Ryan Tannehill (Nate Kaeding kick),0,7,2012_16_BUF_MIA
+2,9:48,Bills,Rian Lindell 42 yard field goal ,3,7,2012_16_BUF_MIA
+2,0:42,Dolphins,Reggie Bush 1 yard rush (Nate Kaeding kick),3,14,2012_16_BUF_MIA
+3,8:32,Dolphins,Reggie Bush 12 yard pass from Ryan Tannehill (Nate Kaeding kick),3,21,2012_16_BUF_MIA
+3,4:17,Dolphins,Nate Kaeding 45 yard field goal ,3,24,2012_16_BUF_MIA
+4,8:52,Bills,Brad Smith 2 yard pass from Ryan Fitzpatrick (Rian Lindell kick),10,24,2012_16_BUF_MIA
+1,13:01,Chargers,Micheal Spurlock 63 yard punt return (Nick Novak kick),7,0,2012_16_LAC_NYJ
+1,9:20,Jets,Shonn Greene 1 yard rush (Nick Folk kick),7,7,2012_16_LAC_NYJ
+1,4:13,Jets,Shonn Greene 1 yard rush (Nick Folk kick),7,14,2012_16_LAC_NYJ
+2,8:32,Chargers,Nick Novak 51 yard field goal ,10,14,2012_16_LAC_NYJ
+3,11:11,Chargers,Danario Alexander 37 yard pass from Philip Rivers (Nick Novak kick),17,14,2012_16_LAC_NYJ
+3,1:34,Chargers,Antonio Gates 34 yard pass from Philip Rivers (Nick Novak kick),24,14,2012_16_LAC_NYJ
+4,14:07,Chargers,Nick Novak 27 yard field goal ,27,14,2012_16_LAC_NYJ
+4,11:08,Jets,Nick Folk 40 yard field goal ,27,17,2012_16_LAC_NYJ
+1,10:09,Eagles,Jeremy Maclin 27 yard pass from Nick Foles (Alex Henery kick),0,7,2012_16_WAS_PHI
+2,11:25,Redskins,Kai Forbath 45 yard field goal ,3,7,2012_16_WAS_PHI
+2,7:37,Redskins,Kai Forbath 42 yard field goal ,6,7,2012_16_WAS_PHI
+2,3:30,Redskins,Josh Morgan 11 yard pass from Robert Griffin III (Kai Forbath kick),13,7,2012_16_WAS_PHI
+2,0:18,Eagles,Alex Henery 38 yard field goal ,13,10,2012_16_WAS_PHI
+3,12:33,Redskins,Alfred Morris 10 yard rush (Kai Forbath kick),20,10,2012_16_WAS_PHI
+3,8:01,Eagles,Alex Henery 30 yard field goal ,20,13,2012_16_WAS_PHI
+3,1:31,Redskins,Santana Moss 22 yard pass from Robert Griffin III (Kai Forbath kick),27,13,2012_16_WAS_PHI
+4,8:55,Eagles,Dion Lewis 17 yard rush (Alex Henery kick),27,20,2012_16_WAS_PHI
+1,2:15,Bengals,Leon Hall 17 yard interception return (Josh Brown kick),7,0,2012_16_CIN_PIT
+2,1:53,Bengals,Josh Brown 41 yard field goal ,10,0,2012_16_CIN_PIT
+2,1:09,Steelers,Antonio Brown 60 yard pass from Ben Roethlisberger (Shaun Suisham kick),10,7,2012_16_CIN_PIT
+3,4:01,Steelers,Shaun Suisham 40 yard field goal ,10,10,2012_16_CIN_PIT
+4,0:04,Bengals,Josh Brown 43 yard field goal ,13,10,2012_16_CIN_PIT
+1,5:22,Buccaneers,Connor Barth 29 yard field goal ,0,3,2012_16_LAR_TB
+2,11:46,Rams,Jackrabbit Jenkins 41 yard interception return (Greg Zuerlein kick),7,3,2012_16_LAR_TB
+2,5:56,Buccaneers,Connor Barth 49 yard field goal ,7,6,2012_16_LAR_TB
+2,0:32,Rams,Steven Jackson 5 yard rush (Greg Zuerlein kick),14,6,2012_16_LAR_TB
+3,14:46,Rams,Lance Kendricks 80 yard pass from Sam Bradford (Greg Zuerlein kick),21,6,2012_16_LAR_TB
+3,10:47,Rams,Austin Pettis 5 yard pass from Sam Bradford (Greg Zuerlein kick),28,6,2012_16_LAR_TB
+3,8:50,Buccaneers,Mike Williams 61 yard pass from Josh Freeman (Connor Barth kick),28,13,2012_16_LAR_TB
+1,12:10,Broncos,Demaryius Thomas 22 yard pass from Peyton Manning (Matt Prater kick),0,7,2012_16_CLE_DEN
+1,4:35,Browns,Phil Dawson 27 yard field goal ,3,7,2012_16_CLE_DEN
+2,12:40,Broncos,Eric Decker 10 yard pass from Peyton Manning (Matt Prater kick),3,14,2012_16_CLE_DEN
+3,11:09,Browns,Phil Dawson 53 yard field goal ,6,14,2012_16_CLE_DEN
+3,4:33,Broncos,Eric Decker 8 yard pass from Peyton Manning (Matt Prater kick),6,21,2012_16_CLE_DEN
+4,14:53,Broncos,Matt Prater 27 yard field goal ,6,24,2012_16_CLE_DEN
+4,12:11,Broncos,Jacob Hester 1 yard rush (Matt Prater kick),6,31,2012_16_CLE_DEN
+4,7:56,Browns,Greg Little 6 yard pass from Colt McCoy (run failed),12,31,2012_16_CLE_DEN
+4,1:55,Broncos,Matt Prater 41 yard field goal ,12,34,2012_16_CLE_DEN
+1,8:53,Bears,Zackary Bowman 1 yard defensive fumble return (Olindo Mare kick),7,0,2012_16_CHI_ARI
+1,0:37,Cardinals,Jay Feely 49 yard field goal ,7,3,2012_16_CHI_ARI
+2,13:12,Bears,Matt Forte 4 yard rush (Olindo Mare kick),14,3,2012_16_CHI_ARI
+2,2:18,Cardinals,Jay Feely 35 yard field goal ,14,6,2012_16_CHI_ARI
+2,0:19,Bears,Brandon Marshall 11 yard pass from Jay Cutler (Olindo Mare kick),21,6,2012_16_CHI_ARI
+3,12:39,Bears,Charles Tillman 10 yard interception return (Olindo Mare kick),28,6,2012_16_CHI_ARI
+4,1:46,Cardinals,Justin Bethel 82 yard blocked field goal return (Jay Feely kick),28,13,2012_16_CHI_ARI
+1,7:38,Ravens,Torrey Smith 6 yard pass from Joe Flacco (Justin Tucker kick),0,7,2012_16_NYG_BAL
+1,4:24,Ravens,Joe Flacco 1 yard rush (Justin Tucker kick),0,14,2012_16_NYG_BAL
+1,1:30,Giants,David Wilson 14 yard rush (Lawrence Tynes kick),7,14,2012_16_NYG_BAL
+2,6:05,Ravens,Justin Tucker 23 yard field goal ,7,17,2012_16_NYG_BAL
+2,1:04,Ravens,Ray Rice 27 yard pass from Joe Flacco (Justin Tucker kick),7,24,2012_16_NYG_BAL
+3,5:18,Ravens,Justin Tucker 21 yard field goal ,7,27,2012_16_NYG_BAL
+4,11:08,Ravens,Justin Tucker 30 yard field goal ,7,30,2012_16_NYG_BAL
+4,7:25,Ravens,Justin Tucker 29 yard field goal ,7,33,2012_16_NYG_BAL
+4,3:18,Giants,Domenik Hixon 13 yard pass from Eli Manning (Lawrence Tynes kick),14,33,2012_16_NYG_BAL
+1,13:48,Seahawks,Marshawn Lynch 24 yard rush (Stephen Hauschka kick),0,7,2012_16_SF_SEA
+1,4:26,Seahawks,Marshawn Lynch 9 yard pass from Russell Wilson (Stephen Hauschka kick),0,14,2012_16_SF_SEA
+2,14:05,Seahawks,Richard Sherman 90 yard blocked field goal return (Stephen Hauschka kick),0,21,2012_16_SF_SEA
+2,10:19,49ers,David Akers 33 yard field goal ,3,21,2012_16_SF_SEA
+2,1:58,Seahawks,Anthony McCoy 6 yard pass from Russell Wilson (Stephen Hauschka kick),3,28,2012_16_SF_SEA
+2,0:31,49ers,David Akers 54 yard field goal ,6,28,2012_16_SF_SEA
+3,3:22,Seahawks,Doug Baldwin 4 yard pass from Russell Wilson (Stephen Hauschka kick),6,35,2012_16_SF_SEA
+4,7:02,Seahawks,Doug Baldwin 6 yard pass from Russell Wilson (Stephen Hauschka kick),6,42,2012_16_SF_SEA
+4,1:40,49ers,Delanie Walker 18 yard pass from Colin Kaepernick (David Akers kick),13,42,2012_16_SF_SEA
+1,6:24,Buccaneers,Connor Barth 48 yard field goal ,3,0,2012_17_TB_ATL
+1,2:24,Falcons,Matt Bryant 28 yard field goal ,3,3,2012_17_TB_ATL
+2,8:43,Buccaneers,Mike Williams 8 yard pass from Josh Freeman (Connor Barth kick),10,3,2012_17_TB_ATL
+2,3:03,Buccaneers,Connor Barth 22 yard field goal ,13,3,2012_17_TB_ATL
+3,10:47,Buccaneers,Connor Barth 42 yard field goal ,16,3,2012_17_TB_ATL
+3,3:45,Falcons,Michael Turner 17 yard rush (Matt Bryant kick),16,10,2012_17_TB_ATL
+3,1:43,Buccaneers,Doug Martin 40 yard rush (pass failed),22,10,2012_17_TB_ATL
+4,7:02,Falcons,Harry Douglas 7 yard pass from Matt Ryan (Matt Bryant kick),22,17,2012_17_TB_ATL
+1,9:00,Jets,Nick Folk 47 yard field goal ,3,0,2012_17_NYJ_BUF
+1,3:34,Bills,Bryan Scott 20 yard interception return (Rian Lindell kick),3,7,2012_17_NYJ_BUF
+2,10:54,Jets,Nick Folk 23 yard field goal ,6,7,2012_17_NYJ_BUF
+2,3:49,Jets,Nick Folk 28 yard field goal ,9,7,2012_17_NYJ_BUF
+2,3:21,Bills,C.J. Spiller 66 yard pass from Ryan Fitzpatrick (Rian Lindell kick),9,14,2012_17_NYJ_BUF
+4,10:52,Bills,Brad Smith 4 yard rush (Rian Lindell kick),9,21,2012_17_NYJ_BUF
+4,1:10,Bills,Tashard Choice 13 yard rush (Rian Lindell kick),9,28,2012_17_NYJ_BUF
+1,0:17,Ravens,Anthony Allen 2 yard rush (Justin Tucker kick),7,0,2012_17_BAL_CIN
+2,0:39,Bengals,Marvin Jones 11 yard pass from Andy Dalton (Josh Brown kick),7,7,2012_17_BAL_CIN
+3,6:15,Bengals,Josh Brown 47 yard field goal ,7,10,2012_17_BAL_CIN
+3,2:24,Bengals,Josh Brown 32 yard field goal ,7,13,2012_17_BAL_CIN
+4,12:50,Ravens,Tyrod Taylor 1 yard rush (Justin Tucker kick),14,13,2012_17_BAL_CIN
+4,7:16,Bengals,Josh Brown 38 yard field goal ,14,16,2012_17_BAL_CIN
+4,6:06,Bengals,Carlos Dunlap 14 yard interception return (Josh Brown kick),14,23,2012_17_BAL_CIN
+4,1:21,Ravens,Justin Tucker 49 yard field goal ,17,23,2012_17_BAL_CIN
+1,5:54,Lions,Jason Hanson 44 yard field goal ,0,3,2012_17_CHI_DET
+1,4:33,Bears,Earl Bennett 60 yard pass from Jay Cutler (Olindo Mare kick),7,3,2012_17_CHI_DET
+1,2:59,Bears,Olindo Mare 33 yard field goal ,10,3,2012_17_CHI_DET
+2,3:26,Bears,Matt Forte 1 yard rush (Olindo Mare kick),17,3,2012_17_CHI_DET
+2,1:49,Bears,Olindo Mare 40 yard field goal ,20,3,2012_17_CHI_DET
+2,0:12,Lions,Kris Durham 25 yard pass from Matthew Stafford (Jason Hanson kick),20,10,2012_17_CHI_DET
+3,6:31,Lions,Will Heller 10 yard pass from Matthew Stafford (Jason Hanson kick),20,17,2012_17_CHI_DET
+3,1:49,Bears,Olindo Mare 28 yard field goal ,23,17,2012_17_CHI_DET
+4,10:47,Bears,Olindo Mare 20 yard field goal ,26,17,2012_17_CHI_DET
+4,6:55,Lions,Brian Robiskie 9 yard pass from Matthew Stafford (Jason Hanson kick),26,24,2012_17_CHI_DET
+1,7:51,Colts,Coby Fleener 1 yard pass from Andrew Luck (Adam Vinatieri kick),0,7,2012_17_HOU_IND
+1,0:06,Texans,Shayne Graham 51 yard field goal ,3,7,2012_17_HOU_IND
+2,10:22,Texans,Shayne Graham 37 yard field goal ,6,7,2012_17_HOU_IND
+2,2:00,Colts,Vick Ballard 1 yard rush (Adam Vinatieri kick),6,14,2012_17_HOU_IND
+3,9:25,Texans,Arian Foster 13 yard rush (Shayne Graham kick),13,14,2012_17_HOU_IND
+3,5:22,Texans,Shayne Graham 37 yard field goal ,16,14,2012_17_HOU_IND
+3,5:10,Colts,Deji Karim 101 yard kickoff return (Adam Vinatieri kick),16,21,2012_17_HOU_IND
+4,11:22,Colts,T.Y. Hilton 70 yard pass from Andrew Luck (Adam Vinatieri kick),16,28,2012_17_HOU_IND
+1,5:41,Panthers,Graham Gano 20 yard field goal ,3,0,2012_17_CAR_NO
+2,8:18,Panthers,Mike Tolbert 1 yard rush (Graham Gano kick),10,0,2012_17_CAR_NO
+2,5:14,Saints,Marques Colston 7 yard pass from Drew Brees (Garrett Hartley kick),10,7,2012_17_CAR_NO
+2,4:31,Saints,Jonathan Vilma 18 yard interception return (Garrett Hartley kick),10,14,2012_17_CAR_NO
+2,0:39,Panthers,Graham Gano 31 yard field goal ,13,14,2012_17_CAR_NO
+2,0:00,Saints,Garrett Hartley 53 yard field goal ,13,17,2012_17_CAR_NO
+3,10:45,Saints,Jimmy Graham 19 yard pass from Drew Brees (Garrett Hartley kick),13,24,2012_17_CAR_NO
+3,8:48,Panthers,DeAngelo Williams 54 yard rush (Graham Gano kick),20,24,2012_17_CAR_NO
+3,2:29,Panthers,Mike Tolbert 1 yard rush (Graham Gano kick),27,24,2012_17_CAR_NO
+4,10:16,Panthers,Mike Tolbert 1 yard rush (Graham Gano kick),34,24,2012_17_CAR_NO
+4,8:23,Panthers,DeAngelo Williams 12 yard rush (Graham Gano kick),41,24,2012_17_CAR_NO
+4,5:10,Saints,Marques Colston 9 yard pass from Drew Brees (Garrett Hartley kick),41,31,2012_17_CAR_NO
+4,4:08,Panthers,Graham Gano 42 yard field goal ,44,31,2012_17_CAR_NO
+4,2:52,Saints,Darren Sproles 33 yard pass from Drew Brees (Garrett Hartley kick),44,38,2012_17_CAR_NO
+1,10:36,Giants,Rueben Randle 3 yard pass from Eli Manning (Lawrence Tynes kick),0,7,2012_17_PHI_NYG
+1,6:24,Giants,Rueben Randle 38 yard pass from Eli Manning (Lawrence Tynes kick),0,14,2012_17_PHI_NYG
+1,1:18,Giants,David Wilson 15 yard pass from Eli Manning (Lawrence Tynes kick),0,21,2012_17_PHI_NYG
+2,12:06,Eagles,Jeremy Maclin 7 yard pass from Michael Vick (Alex Henery kick),7,21,2012_17_PHI_NYG
+2,6:26,Giants,Ahmad Bradshaw 1 yard rush (Lawrence Tynes kick),7,28,2012_17_PHI_NYG
+2,0:04,Giants,Victor Cruz 24 yard pass from Eli Manning (Lawrence Tynes kick),7,35,2012_17_PHI_NYG
+4,6:51,Giants,Henry Hynoski 1 yard pass from Eli Manning (Lawrence Tynes kick),7,42,2012_17_PHI_NYG
+2,7:53,Steelers,Shaun Suisham 41 yard field goal ,0,3,2012_17_CLE_PIT
+2,3:48,Browns,Phil Dawson 51 yard field goal ,3,3,2012_17_CLE_PIT
+2,0:47,Steelers,Leonard Pope 1 yard pass from Ben Roethlisberger (Shaun Suisham kick),3,10,2012_17_CLE_PIT
+3,11:03,Browns,Greg Little 7 yard pass from Thaddeus Lewis (Phil Dawson kick),10,10,2012_17_CLE_PIT
+3,4:39,Steelers,Antonio Brown 9 yard pass from Ben Roethlisberger (Shaun Suisham kick),10,17,2012_17_CLE_PIT
+4,3:20,Steelers,Plaxico Burress 12 yard pass from Ben Roethlisberger (Shaun Suisham kick),10,24,2012_17_CLE_PIT
+1,11:34,Titans,Chris Johnson 2 yard rush (Rob Bironas kick),0,7,2012_17_JAX_TEN
+1,5:40,Jaguars,Jordan Shipley 5 yard pass from Chad Henne (Josh Scobee kick),7,7,2012_17_JAX_TEN
+2,14:53,Jaguars,Justin Blackmon 30 yard pass from Chad Henne (Josh Scobee kick),14,7,2012_17_JAX_TEN
+2,1:48,Titans,Zach Brown 79 yard interception return (Rob Bironas kick),14,14,2012_17_JAX_TEN
+2,0:33,Titans,Darius Reynaud 69 yard punt return (Rob Bironas kick),14,21,2012_17_JAX_TEN
+3,12:54,Titans,Darius Reynaud 81 yard punt return (Rob Bironas kick),14,28,2012_17_JAX_TEN
+3,12:03,Titans,Zach Brown 30 yard interception return (Rob Bironas kick),14,35,2012_17_JAX_TEN
+4,12:26,Titans,Rob Bironas 48 yard field goal ,14,38,2012_17_JAX_TEN
+4,2:16,Jaguars,Mike Harris 19 yard blocked punt return (run failed),20,38,2012_17_JAX_TEN
+1,9:56,Broncos,Knowshon Moreno 3 yard rush (Matt Prater kick),0,7,2012_17_KC_DEN
+2,14:53,Chiefs,Ryan Succop 23 yard field goal ,3,7,2012_17_KC_DEN
+2,5:32,Broncos,Eric Decker 11 yard pass from Peyton Manning (Matt Prater kick),3,14,2012_17_KC_DEN
+2,0:10,Broncos,Eric Decker 16 yard pass from Peyton Manning (Matt Prater kick),3,21,2012_17_KC_DEN
+3,9:10,Broncos,Demaryius Thomas 13 yard pass from Peyton Manning (Matt Prater kick),3,28,2012_17_KC_DEN
+3,1:04,Broncos,Lance Ball 1 yard rush (Matt Prater kick),3,35,2012_17_KC_DEN
+4,8:09,Broncos,Matt Prater 42 yard field goal ,3,38,2012_17_KC_DEN
+1,10:47,Vikings,Blair Walsh 54 yard field goal ,0,3,2012_17_GB_MIN
+1,5:44,Vikings,Adrian Peterson 7 yard rush (Blair Walsh kick),0,10,2012_17_GB_MIN
+2,14:51,Vikings,Blair Walsh 37 yard field goal ,0,13,2012_17_GB_MIN
+2,4:01,Packers,Greg Jennings 3 yard pass from Aaron Rodgers (Mason Crosby kick),7,13,2012_17_GB_MIN
+2,1:07,Vikings,Jarius Wright 8 yard pass from Christian Ponder (Blair Walsh kick),7,20,2012_17_GB_MIN
+2,0:00,Packers,Mason Crosby 51 yard field goal ,10,20,2012_17_GB_MIN
+3,11:56,Packers,Greg Jennings 5 yard pass from Aaron Rodgers (Mason Crosby kick),17,20,2012_17_GB_MIN
+3,4:00,Vikings,Adrian Peterson 2 yard pass from Christian Ponder (Blair Walsh kick),17,27,2012_17_GB_MIN
+3,2:04,Packers,James Jones 8 yard pass from Aaron Rodgers (Mason Crosby kick),24,27,2012_17_GB_MIN
+4,12:21,Packers,Mason Crosby 40 yard field goal ,27,27,2012_17_GB_MIN
+4,7:54,Vikings,Michael Jenkins 3 yard pass from Christian Ponder (Blair Walsh kick),27,34,2012_17_GB_MIN
+4,2:54,Packers,Jordy Nelson 2 yard pass from Aaron Rodgers (Mason Crosby kick),34,34,2012_17_GB_MIN
+4,0:00,Vikings,Blair Walsh 29 yard field goal ,34,37,2012_17_GB_MIN
+1,6:40,Patriots,Wes Welker 9 yard pass from Tom Brady (Stephen Gostkowski kick),0,7,2012_17_MIA_NE
+2,10:26,Patriots,Stevan Ridley 1 yard rush (Stephen Gostkowski kick),0,14,2012_17_MIA_NE
+2,1:00,Patriots,Stevan Ridley 2 yard rush (Stephen Gostkowski kick),0,21,2012_17_MIA_NE
+4,9:20,Patriots,Rob Gronkowski 23 yard pass from Tom Brady (Stephen Gostkowski kick),0,28,2012_17_MIA_NE
+1,14:48,Chargers,Micheal Spurlock 99 yard kickoff return (Nick Novak kick),0,7,2012_17_LVR_LAC
+1,4:11,Chargers,Nick Novak 30 yard field goal ,0,10,2012_17_LVR_LAC
+2,12:11,Raiders,Darrius Heyward-Bey 9 yard pass from Terrelle Pryor (Sebastian Janikowski kick),7,10,2012_17_LVR_LAC
+2,2:48,Chargers,Antonio Gates 11 yard pass from Philip Rivers (Nick Novak kick),7,17,2012_17_LVR_LAC
+3,4:59,Chargers,Danario Alexander 34 yard pass from Philip Rivers (Nick Novak kick),7,24,2012_17_LVR_LAC
+4,7:43,Raiders,Terrelle Pryor 3 yard rush (Sebastian Janikowski kick),14,24,2012_17_LVR_LAC
+4,1:52,Raiders,Denarius Moore 5 yard pass from Terrelle Pryor (Sebastian Janikowski kick),21,24,2012_17_LVR_LAC
+2,10:40,Seahawks,Stephen Hauschka 43 yard field goal ,0,3,2012_17_LAR_SEA
+2,6:03,Rams,Austin Pettis 2 yard pass from Sam Bradford (Greg Zuerlein kick),7,3,2012_17_LAR_SEA
+3,10:41,Seahawks,Stephen Hauschka 49 yard field goal ,7,6,2012_17_LAR_SEA
+3,5:31,Rams,Greg Zuerlein 39 yard field goal ,10,6,2012_17_LAR_SEA
+3,2:09,Seahawks,Michael Robinson 10 yard pass from Russell Wilson (Stephen Hauschka kick),10,13,2012_17_LAR_SEA
+4,11:23,Rams,Greg Zuerlein 25 yard field goal ,13,13,2012_17_LAR_SEA
+4,1:39,Seahawks,Russell Wilson 1 yard rush (Stephen Hauschka kick),13,20,2012_17_LAR_SEA
+1,5:33,Cardinals,Jay Feely 35 yard field goal ,3,0,2012_17_ARI_SF
+2,13:44,Cardinals,Jay Feely 31 yard field goal ,6,0,2012_17_ARI_SF
+2,7:20,49ers,Michael Crabtree 49 yard pass from Colin Kaepernick (David Akers kick),6,7,2012_17_ARI_SF
+3,11:07,49ers,David Akers 43 yard field goal ,6,10,2012_17_ARI_SF
+3,5:58,49ers,Michael Crabtree 7 yard pass from Colin Kaepernick (David Akers kick),6,17,2012_17_ARI_SF
+4,12:59,49ers,Frank Gore 2 yard rush (David Akers kick),6,24,2012_17_ARI_SF
+4,9:07,49ers,David Akers 26 yard field goal ,6,27,2012_17_ARI_SF
+4,1:59,Cardinals,Michael Floyd 37 yard pass from Brian Hoyer (Jay Feely kick),13,27,2012_17_ARI_SF
+2,7:59,Cowboys,Jason Witten 9 yard pass from Tony Romo (Dan Bailey kick),7,0,2012_17_DAL_WAS
+2,3:28,Redskins,Alfred Morris 17 yard rush (Kai Forbath kick),7,7,2012_17_DAL_WAS
+3,3:10,Redskins,Robert Griffin III 10 yard rush (Kai Forbath kick),7,14,2012_17_DAL_WAS
+4,14:09,Cowboys,Dan Bailey 48 yard field goal ,10,14,2012_17_DAL_WAS
+4,10:32,Redskins,Alfred Morris 32 yard rush (Kai Forbath kick),10,21,2012_17_DAL_WAS
+4,5:50,Cowboys,Kevin Ogletree 10 yard pass from Tony Romo (Dwayne Harris pass from Tony Romo),18,21,2012_17_DAL_WAS
+4,1:09,Redskins,Alfred Morris 1 yard rush (Kai Forbath kick),18,28,2012_17_DAL_WAS
+1,7:49,Texans,Shayne Graham 48 yard field goal ,0,3,2012_18_CIN_HOU
+2,13:07,Texans,Shayne Graham 27 yard field goal ,0,6,2012_18_CIN_HOU
+2,9:30,Bengals,Leon Hall 21 yard interception return (Josh Brown kick),7,6,2012_18_CIN_HOU
+2,2:19,Texans,Shayne Graham 22 yard field goal ,7,9,2012_18_CIN_HOU
+3,10:31,Texans,Arian Foster 1 yard rush (Shayne Graham kick),7,16,2012_18_CIN_HOU
+3,7:48,Bengals,Josh Brown 34 yard field goal ,10,16,2012_18_CIN_HOU
+4,14:17,Texans,Shayne Graham 24 yard field goal ,10,19,2012_18_CIN_HOU
+4,9:03,Bengals,Josh Brown 47 yard field goal ,13,19,2012_18_CIN_HOU
+1,9:26,Vikings,Blair Walsh 33 yard field goal ,3,0,2012_18_MIN_GB
+1,0:28,Packers,DuJuan Harris 9 yard rush (Mason Crosby kick),3,7,2012_18_MIN_GB
+2,3:25,Packers,Mason Crosby 20 yard field goal ,3,10,2012_18_MIN_GB
+2,0:38,Packers,John Kuhn 3 yard rush (Mason Crosby kick),3,17,2012_18_MIN_GB
+3,9:25,Packers,John Kuhn 9 yard pass from Aaron Rodgers (Mason Crosby kick),3,24,2012_18_MIN_GB
+4,3:39,Vikings,Michael Jenkins 50 yard pass from Joe Webb (Blair Walsh kick),10,24,2012_18_MIN_GB
+2,11:18,Ravens,Justin Tucker 23 yard field goal ,0,3,2012_18_IND_BAL
+2,2:25,Colts,Adam Vinatieri 47 yard field goal ,3,3,2012_18_IND_BAL
+2,0:50,Ravens,Vonta Leach 2 yard rush (Justin Tucker kick),3,10,2012_18_IND_BAL
+2,0:00,Colts,Adam Vinatieri 52 yard field goal ,6,10,2012_18_IND_BAL
+3,8:26,Ravens,Dennis Pitta 20 yard pass from Joe Flacco (Justin Tucker kick),6,17,2012_18_IND_BAL
+3,0:40,Colts,Adam Vinatieri 26 yard field goal ,9,17,2012_18_IND_BAL
+4,9:14,Ravens,Anquan Boldin 18 yard pass from Joe Flacco (Justin Tucker kick),9,24,2012_18_IND_BAL
+1,9:57,Redskins,Evan Royster 4 yard pass from Robert Griffin III (Kai Forbath kick),0,7,2012_18_SEA_WAS
+1,2:26,Redskins,Logan Paulsen 4 yard pass from Robert Griffin III (Kai Forbath kick),0,14,2012_18_SEA_WAS
+2,12:05,Seahawks,Stephen Hauschka 32 yard field goal ,3,14,2012_18_SEA_WAS
+2,4:38,Seahawks,Michael Robinson 4 yard pass from Russell Wilson (Stephen Hauschka kick),10,14,2012_18_SEA_WAS
+2,0:00,Seahawks,Stephen Hauschka 29 yard field goal ,13,14,2012_18_SEA_WAS
+4,7:08,Seahawks,Marshawn Lynch 27 yard rush (Zach Miller pass from Russell Wilson),21,14,2012_18_SEA_WAS
+4,5:32,Seahawks,Stephen Hauschka 22 yard field goal ,24,14,2012_18_SEA_WAS
+1,12:14,Broncos,Trindon Holliday 90 yard punt return (Matt Prater kick),0,7,2012_19_BAL_DEN
+1,10:31,Ravens,Torrey Smith 59 yard pass from Joe Flacco (Justin Tucker kick),7,7,2012_19_BAL_DEN
+1,9:49,Ravens,Corey Graham 39 yard interception return (Justin Tucker kick),14,7,2012_19_BAL_DEN
+1,4:02,Broncos,Brandon Stokley 15 yard pass from Peyton Manning (Matt Prater kick),14,14,2012_19_BAL_DEN
+2,7:26,Broncos,Knowshon Moreno 14 yard pass from Peyton Manning (Matt Prater kick),14,21,2012_19_BAL_DEN
+2,0:36,Ravens,Torrey Smith 32 yard pass from Joe Flacco (Justin Tucker kick),21,21,2012_19_BAL_DEN
+3,14:47,Broncos,Trindon Holliday 104 yard kickoff return (Matt Prater kick),21,28,2012_19_BAL_DEN
+3,0:20,Ravens,Ray Rice 1 yard rush (Justin Tucker kick),28,28,2012_19_BAL_DEN
+4,7:11,Broncos,Demaryius Thomas 17 yard pass from Peyton Manning (Matt Prater kick),28,35,2012_19_BAL_DEN
+4,0:31,Ravens,Jacoby Jones 70 yard pass from Joe Flacco (Justin Tucker kick),35,35,2012_19_BAL_DEN
+OT2,13:18,Ravens,Justin Tucker 47 yard field goal ,38,35,2012_19_BAL_DEN
+1,12:48,Packers,Sam Shields 52 yard interception return (Mason Crosby kick),7,0,2012_19_GB_SF
+1,9:01,49ers,Colin Kaepernick 20 yard rush (David Akers kick),7,7,2012_19_GB_SF
+1,0:29,Packers,DuJuan Harris 18 yard rush (Mason Crosby kick),14,7,2012_19_GB_SF
+2,10:59,49ers,Michael Crabtree 12 yard pass from Colin Kaepernick (David Akers kick),14,14,2012_19_GB_SF
+2,5:26,49ers,Michael Crabtree 20 yard pass from Colin Kaepernick (David Akers kick),14,21,2012_19_GB_SF
+2,2:33,Packers,James Jones 20 yard pass from Aaron Rodgers (Mason Crosby kick),21,21,2012_19_GB_SF
+2,0:00,49ers,David Akers 36 yard field goal ,21,24,2012_19_GB_SF
+3,8:25,Packers,Mason Crosby 31 yard field goal ,24,24,2012_19_GB_SF
+3,7:07,49ers,Colin Kaepernick 56 yard rush (David Akers kick),24,31,2012_19_GB_SF
+4,14:57,49ers,Frank Gore 2 yard rush (David Akers kick),24,38,2012_19_GB_SF
+4,3:34,49ers,Anthony Dixon 2 yard rush (David Akers kick),24,45,2012_19_GB_SF
+4,0:57,Packers,Greg Jennings 3 yard pass from Aaron Rodgers (Mason Crosby kick),31,45,2012_19_GB_SF
+1,9:40,Falcons,Matt Bryant 39 yard field goal ,0,3,2012_19_SEA_ATL
+1,3:10,Falcons,Tony Gonzalez 1 yard pass from Matt Ryan (Matt Bryant kick),0,10,2012_19_SEA_ATL
+2,9:13,Falcons,Matt Bryant 37 yard field goal ,0,13,2012_19_SEA_ATL
+2,4:16,Falcons,Roddy White 47 yard pass from Matt Ryan (Matt Bryant kick),0,20,2012_19_SEA_ATL
+3,9:47,Seahawks,Golden Tate 29 yard pass from Russell Wilson (Ryan Longwell kick),7,20,2012_19_SEA_ATL
+3,2:11,Falcons,Jason Snelling 5 yard pass from Matt Ryan (Matt Bryant kick),7,27,2012_19_SEA_ATL
+4,13:01,Seahawks,Russell Wilson 1 yard rush (Ryan Longwell kick),14,27,2012_19_SEA_ATL
+4,9:13,Seahawks,Zach Miller 3 yard pass from Russell Wilson (Ryan Longwell kick),21,27,2012_19_SEA_ATL
+4,0:31,Seahawks,Marshawn Lynch 2 yard rush (Ryan Longwell kick),28,27,2012_19_SEA_ATL
+4,0:08,Falcons,Matt Bryant 49 yard field goal ,28,30,2012_19_SEA_ATL
+1,13:57,Texans,Shayne Graham 27 yard field goal ,3,0,2012_19_HOU_NE
+1,1:28,Patriots,Shane Vereen 1 yard rush (Stephen Gostkowski kick),3,7,2012_19_HOU_NE
+2,10:16,Patriots,Stephen Gostkowski 37 yard field goal ,3,10,2012_19_HOU_NE
+2,3:38,Patriots,Shane Vereen 8 yard pass from Tom Brady (Stephen Gostkowski kick),3,17,2012_19_HOU_NE
+2,1:15,Texans,Arian Foster 1 yard rush (Shayne Graham kick),10,17,2012_19_HOU_NE
+2,0:00,Texans,Shayne Graham 55 yard field goal ,13,17,2012_19_HOU_NE
+3,11:30,Patriots,Stevan Ridley 8 yard rush (Stephen Gostkowski kick),13,24,2012_19_HOU_NE
+3,1:21,Patriots,Brandon Lloyd 5 yard pass from Tom Brady (Stephen Gostkowski kick),13,31,2012_19_HOU_NE
+4,13:07,Patriots,Shane Vereen 33 yard pass from Tom Brady (Stephen Gostkowski kick),13,38,2012_19_HOU_NE
+4,11:35,Texans,DeVier Posey 25 yard pass from Matt Schaub (Shayne Graham kick),20,38,2012_19_HOU_NE
+4,5:11,Texans,Arian Foster 1 yard pass from Matt Schaub (Andre Johnson pass from Matt Schaub),28,38,2012_19_HOU_NE
+4,1:14,Patriots,Stephen Gostkowski 38 yard field goal ,28,41,2012_19_HOU_NE
+1,11:24,Falcons,Julio Jones 46 yard pass from Matt Ryan (Matt Bryant kick),0,7,2012_20_SF_ATL
+1,3:20,Falcons,Matt Bryant 35 yard field goal ,0,10,2012_20_SF_ATL
+2,14:54,Falcons,Julio Jones 20 yard pass from Matt Ryan (Matt Bryant kick),0,17,2012_20_SF_ATL
+2,8:08,49ers,LaMichael James 15 yard rush (David Akers kick),7,17,2012_20_SF_ATL
+2,1:55,49ers,Vernon Davis 4 yard pass from Colin Kaepernick (David Akers kick),14,17,2012_20_SF_ATL
+2,0:25,Falcons,Tony Gonzalez 10 yard pass from Matt Ryan (Matt Bryant kick),14,24,2012_20_SF_ATL
+3,10:47,49ers,Frank Gore 5 yard rush (David Akers kick),21,24,2012_20_SF_ATL
+4,8:23,49ers,Frank Gore 9 yard rush (David Akers kick),28,24,2012_20_SF_ATL
+1,6:21,Patriots,Stephen Gostkowski 31 yard field goal ,0,3,2012_20_BAL_NE
+2,9:28,Ravens,Ray Rice 2 yard rush (Justin Tucker kick),7,3,2012_20_BAL_NE
+2,4:18,Patriots,Wes Welker 1 yard pass from Tom Brady (Stephen Gostkowski kick),7,10,2012_20_BAL_NE
+2,0:00,Patriots,Stephen Gostkowski 25 yard field goal ,7,13,2012_20_BAL_NE
+3,6:14,Ravens,Dennis Pitta 5 yard pass from Joe Flacco (Justin Tucker kick),14,13,2012_20_BAL_NE
+4,14:56,Ravens,Anquan Boldin 3 yard pass from Joe Flacco (Justin Tucker kick),21,13,2012_20_BAL_NE
+4,11:13,Ravens,Anquan Boldin 11 yard pass from Joe Flacco (Justin Tucker kick),28,13,2012_20_BAL_NE
+1,10:36,Ravens,Anquan Boldin 13 yard pass from Joe Flacco (Justin Tucker kick),7,0,2012_21_BAL_SF
+1,3:58,49ers,David Akers 36 yard field goal ,7,3,2012_21_BAL_SF
+2,7:10,Ravens,Dennis Pitta 1 yard pass from Joe Flacco (Justin Tucker kick),14,3,2012_21_BAL_SF
+2,1:45,Ravens,Jacoby Jones 56 yard pass from Joe Flacco (Justin Tucker kick),21,3,2012_21_BAL_SF
+2,0:00,49ers,David Akers 27 yard field goal ,21,6,2012_21_BAL_SF
+3,14:49,Ravens,Jacoby Jones 108 yard kickoff return (Justin Tucker kick),28,6,2012_21_BAL_SF
+3,7:20,49ers,Michael Crabtree 31 yard pass from Colin Kaepernick (David Akers kick),28,13,2012_21_BAL_SF
+3,4:59,49ers,Frank Gore 6 yard rush (David Akers kick),28,20,2012_21_BAL_SF
+3,3:10,49ers,David Akers 34 yard field goal ,28,23,2012_21_BAL_SF
+4,12:54,Ravens,Justin Tucker 19 yard field goal ,31,23,2012_21_BAL_SF
+4,9:57,49ers,Colin Kaepernick 15 yard rush (pass failed),31,29,2012_21_BAL_SF
+4,4:19,Ravens,Justin Tucker 38 yard field goal ,34,29,2012_21_BAL_SF
+4,0:04,49ers,"Safety, Sam Koch rushed out of bounds in end zone. ",34,31,2012_21_BAL_SF

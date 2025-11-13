@@ -1,0 +1,18 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 12,4:15PM ET,boxscore,W,,1-0,@,St. Louis Rams,17,13,21,378,266,112,4,20,325,240,85,4,-6.62,11.58,-0.96
+2,Sun,September 19,1:03PM ET,boxscore,L,,1-1,@,Atlanta Falcons,7,41,11,267,149,118,3,33,444,223,221,1,-12.23,-20.26,-0.76
+3,Sun,September 26,4:15PM ET,boxscore,W,,2-1,,Oakland Raiders,24,23,18,227,108,119,3,20,364,231,133,1,1.57,-0.54,1.56
+4,Sun,October 3,4:15PM ET,boxscore,L,,2-2,@,San Diego Chargers,10,41,10,134,87,47,3,23,419,239,180,1,-25.88,-12.24,7.30
+5,Sun,October 10,4:05PM ET,boxscore,W,,3-2,,New Orleans Saints,30,20,12,194,153,41,1,19,358,273,85,4,-10.49,12.07,6.52
+6,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+7,Sun,October 24,4:06PM ET,boxscore,L,,3-3,@,Seattle Seahawks,10,22,13,227,114,113,5,16,302,158,144,1,-15.69,14.84,-12.62
+8,Sun,October 31,4:15PM ET,boxscore,L,,3-4,,Tampa Bay Buccaneers,35,38,22,396,296,100,4,19,407,253,154,2,-6.25,-7.04,12.55
+9,Sun,November 7,1:05PM ET,boxscore,L,OT,3-5,@,Minnesota Vikings,24,27,13,225,172,53,1,28,507,427,80,3,-5.51,-10.13,12.18
+10,Sun,November 14,4:15PM ET,boxscore,L,,3-6,,Seattle Seahawks,18,36,19,327,286,41,2,24,490,380,110,1,-9.82,-8.78,2.15
+11,Sun,November 21,1:03PM ET,boxscore,L,,3-7,@,Kansas City Chiefs,13,31,19,382,281,101,,17,352,193,159,,-1.92,-15.07,-0.63
+12,Mon,November 29,8:40PM ET,boxscore,L,,3-8,,San Francisco 49ers,6,27,8,203,190,13,2,26,386,125,261,1,-19.13,-12.73,8.10
+13,Sun,December 5,4:15PM ET,boxscore,L,,3-9,,St. Louis Rams,6,19,14,224,119,105,2,18,288,169,119,1,-12.22,4.79,-8.08
+14,Sun,December 12,4:15PM ET,boxscore,W,,4-9,,Denver Broncos,43,13,21,357,146,211,1,20,288,156,132,6,-1.17,31.20,-2.44
+15,Sun,December 19,1:04PM ET,boxscore,L,,4-10,@,Carolina Panthers,12,19,11,218,175,43,2,16,303,126,177,1,-13.38,8.61,-5.52
+16,Sat,December 25,7:30PM ET,boxscore,W,,5-10,,Dallas Cowboys,27,26,10,271,178,93,,24,382,199,183,3,0.18,4.37,-1.95
+17,Sun,January 2,4:15PM ET,boxscore,L,,5-11,@,San Francisco 49ers,7,38,19,279,201,78,2,16,362,262,100,,-29.45,-8.72,7.30

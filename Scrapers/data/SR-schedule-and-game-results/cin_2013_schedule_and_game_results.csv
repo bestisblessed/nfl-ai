@@ -1,0 +1,20 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 8,1:02PM ET,boxscore,L,,0-1,@,Chicago Bears,21,24,18,340,277,63,3,17,323,242,81,1,2.65,0.93,-3.28
+2,Mon,September 16,8:41PM ET,boxscore,W,,1-1,,Pittsburgh Steelers,20,10,22,407,280,127,,14,278,234,44,2,4.84,7.39,-6.16
+3,Sun,September 22,1:03PM ET,boxscore,W,,2-1,,Green Bay Packers,34,30,19,297,215,82,4,27,399,217,182,4,-5.90,5.10,3.47
+4,Sun,September 29,1:06PM ET,boxscore,L,,2-2,@,Cleveland Browns,6,17,16,266,203,63,2,18,336,247,89,,-11.83,-3.36,4.34
+5,Sun,October 6,1:02PM ET,boxscore,W,,3-2,,New England Patriots,13,6,21,341,179,162,2,15,248,166,82,2,-5.28,11.63,-0.40
+6,Sun,October 13,1:02PM ET,boxscore,W,OT,4-2,@,Buffalo Bills,27,24,26,483,318,165,1,20,322,192,130,1,9.38,-5.04,-2.98
+7,Sun,October 20,1:02PM ET,boxscore,W,,5-2,@,Detroit Lions,27,24,18,421,364,57,,22,434,357,77,,16.06,-17.23,3.94
+8,Sun,October 27,4:06PM ET,boxscore,W,,6-2,,New York Jets,49,9,20,402,323,79,1,15,240,147,93,2,19.01,24.25,-5.01
+9,Thu,October 31,8:29PM ET,boxscore,L,OT,6-3,@,Miami Dolphins,20,22,28,465,302,163,4,15,345,188,157,1,-5.79,4.85,-1.27
+10,Sun,November 10,1:02PM ET,boxscore,L,OT,6-4,@,Baltimore Ravens,17,20,21,364,244,120,3,18,189,104,85,3,-12.76,14.53,-5.62
+11,Sun,November 17,1:02PM ET,boxscore,W,,7-4,,Cleveland Browns,41,20,10,224,118,106,2,15,330,228,102,4,-24.92,29.66,19.18
+12,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+13,Sun,December 1,4:25PM ET,boxscore,W,,8-4,@,San Diego Chargers,17,10,19,354,190,164,2,19,334,243,91,3,3.81,1.50,5.14
+14,Sun,December 8,1:02PM ET,boxscore,W,,9-4,,Indianapolis Colts,42,28,28,430,275,155,,21,389,326,63,,24.15,-15.27,5.19
+15,Sun,December 15,8:30PM ET,boxscore,L,,9-5,@,Pittsburgh Steelers,20,30,19,279,222,57,1,19,290,184,106,1,-5.31,-4.92,-1.61
+16,Sun,December 22,1:02PM ET,boxscore,W,,10-5,,Minnesota Vikings,42,14,24,426,345,81,1,10,209,94,115,4,13.18,24.18,-8.50
+17,Sun,December 29,1:02PM ET,boxscore,W,,11-5,,Baltimore Ravens,34,17,21,392,281,111,4,17,222,175,47,3,0.84,19.68,-3.95
+,,Playoffs,,,,,,,,,,,,,,,,,,,,,,
+Wild Card,Sun,January 5,1:06PM ET,boxscore,L,,11-6,,San Diego Chargers,10,27,27,439,326,113,4,16,318,122,196,,-9.54,-4.95,0.53

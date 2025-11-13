@@ -1,0 +1,20 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 9,8:31PM ET,boxscore,W,,1-0,,Pittsburgh Steelers,31,19,20,334,240,94,1,19,284,209,75,1,12.14,3.83,-1.33
+2,Mon,September 17,8:41PM ET,boxscore,L,,1-1,@,Atlanta Falcons,21,27,24,336,218,118,4,22,275,208,67,,-3.80,-4.09,-0.87
+3,Sun,September 23,4:25PM ET,boxscore,L,,1-2,,Houston Texans,25,31,24,375,316,59,1,23,436,284,152,2,6.82,-11.08,-1.21
+4,Sun,September 30,4:05PM ET,boxscore,W,,2-2,,Oakland Raiders,37,6,26,503,338,165,1,12,237,181,56,,22.58,10.14,-3.10
+5,Sun,October 7,4:25PM ET,boxscore,L,,2-3,@,New England Patriots,21,31,22,394,324,70,3,35,444,193,251,1,6.34,-13.99,-0.99
+6,Mon,October 15,8:40PM ET,boxscore,W,,3-3,@,San Diego Chargers,35,24,18,365,309,56,3,23,307,217,90,6,2.30,20.12,-9.87
+7,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+8,Sun,October 28,8:30PM ET,boxscore,W,,4-3,,New Orleans Saints,34,14,29,530,305,225,1,14,252,201,51,1,18.32,3.84,-1.31
+9,Sun,November 4,1:02PM ET,boxscore,W,,5-3,@,Cincinnati Bengals,31,23,20,359,291,68,2,22,366,275,91,1,9.66,-6.07,6.44
+10,Sun,November 11,1:02PM ET,boxscore,W,,6-3,@,Carolina Panthers,36,14,18,360,295,65,2,19,250,198,52,2,-4.32,16.41,6.35
+11,Sun,November 18,4:25PM ET,boxscore,W,,7-3,,San Diego Chargers,30,23,21,386,253,133,2,13,277,224,53,3,-3.19,18.89,-4.77
+12,Sun,November 25,1:03PM ET,boxscore,W,,8-3,@,Kansas City Chiefs,17,9,21,368,273,95,1,13,264,116,148,1,9.13,6.75,-6.75
+13,Sun,December 2,4:05PM ET,boxscore,W,,9-3,,Tampa Bay Buccaneers,31,23,25,333,242,91,1,18,306,235,71,1,4.94,6.77,-2.62
+14,Thu,December 6,8:30PM ET,boxscore,W,,10-3,@,Oakland Raiders,26,13,30,428,288,140,1,14,324,263,61,2,13.75,1.28,1.52
+15,Sun,December 16,1:02PM ET,boxscore,W,,11-3,@,Baltimore Ravens,34,17,21,350,187,163,,12,278,222,56,2,1.94,27.94,-9.09
+16,Sun,December 23,4:05PM ET,boxscore,W,,12-3,,Cleveland Browns,34,12,29,457,339,118,1,20,233,142,91,1,18.12,5.68,2.68
+17,Sun,December 30,4:25PM ET,boxscore,W,,13-3,,Kansas City Chiefs,38,3,32,488,316,172,1,8,119,26,93,,20.95,14.79,-3.42
+,,Playoffs,,,,,,,,,,,,,,,,,,,,,,
+Division,Sat,January 12,4:36PM ET,boxscore,L,OT,13-4,,Baltimore Ravens,35,38,30,398,273,125,3,21,479,324,155,1,0.17,-9.89,6.13

@@ -1,0 +1,18 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 8,4:23PM ET,boxscore,L,,0-1,@,St. Louis Rams,24,27,25,390,304,86,2,20,366,299,67,2,6.72,-2.30,-7.86
+2,Sun,September 15,4:05PM ET,boxscore,W,,1-1,,Detroit Lions,25,21,24,348,261,87,1,16,322,273,49,1,-3.23,2.76,6.52
+3,Sun,September 22,1:03PM ET,boxscore,L,,1-2,@,New Orleans Saints,7,31,16,247,161,86,2,27,423,319,104,1,-9.13,-17.29,0.19
+4,Sun,September 29,1:03PM ET,boxscore,W,,2-2,@,Tampa Bay Buccaneers,13,10,17,296,240,56,3,20,253,173,80,3,-15.74,14.65,5.52
+5,Sun,October 6,4:05PM ET,boxscore,W,,3-2,,Carolina Panthers,22,6,19,250,160,90,3,21,353,258,95,4,-8.23,18.28,6.15
+6,Sun,October 13,4:25PM ET,boxscore,L,,3-3,@,San Francisco 49ers,20,32,16,403,294,109,4,20,387,238,149,2,-9.22,1.25,-1.87
+7,Thu,October 17,8:25PM ET,boxscore,L,,3-4,,Seattle Seahawks,22,34,22,234,204,30,2,21,344,209,135,2,-13.62,5.21,-0.67
+8,Sun,October 27,4:25PM ET,boxscore,W,,4-4,,Atlanta Falcons,27,13,17,348,147,201,1,20,292,265,27,4,7.36,12.35,-5.26
+9,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+10,Sun,November 10,4:25PM ET,boxscore,W,,5-4,,Houston Texans,27,24,19,332,235,97,3,17,235,159,76,1,-5.28,14.42,-3.52
+11,Sun,November 17,1:04PM ET,boxscore,W,,6-4,@,Jacksonville Jaguars,27,14,19,416,402,14,,14,274,242,32,2,4.73,12.18,-1.59
+12,Sun,November 24,4:05PM ET,boxscore,W,,7-4,,Indianapolis Colts,40,11,27,410,290,120,,15,239,159,80,1,19.09,10.21,-2.69
+13,Sun,December 1,1:02PM ET,boxscore,L,,7-5,@,Philadelphia Eagles,21,24,24,350,260,90,3,23,307,202,105,,-0.19,-3.20,-2.87
+14,Sun,December 8,4:25PM ET,boxscore,W,,8-5,,St. Louis Rams,30,10,25,369,262,107,1,14,257,157,100,2,12.25,11.17,-7.07
+15,Sun,December 15,4:27PM ET,boxscore,W,OT,9-5,@,Tennessee Titans,37,34,24,360,215,145,,32,460,394,66,3,10.34,-13.67,6.04
+16,Sun,December 22,4:06PM ET,boxscore,W,,10-5,@,Seattle Seahawks,17,10,16,307,168,139,4,10,192,89,103,2,-13.00,14.76,5.44
+17,Sun,December 29,4:25PM ET,boxscore,L,,10-6,,San Francisco 49ers,20,23,19,482,399,83,2,19,375,292,83,,5.55,-3.12,-5.89

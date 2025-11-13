@@ -1,0 +1,18 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 13,4:05PM ET,boxscore,W,,1-0,,Detroit Lions,33,28,28,483,387,96,3,16,302,233,69,2,6.12,-2.96,-1.45
+2,Sun,September 20,1:03PM ET,boxscore,L,,1-1,@,Cincinnati Bengals,19,24,19,354,223,131,3,20,389,214,175,2,2.55,-3.46,-4.52
+3,Sun,September 27,1:02PM ET,boxscore,L,,1-2,@,Minnesota Vikings,14,31,21,369,279,90,2,18,284,121,163,1,-7.49,-6.45,-2.90
+4,Sun,October 4,4:05PM ET,boxscore,W,,2-2,,Cleveland Browns,30,27,23,438,347,91,,20,432,332,100,1,18.04,-11.74,-5.56
+5,Mon,October 12,8:30PM ET,boxscore,L,,2-3,,Pittsburgh Steelers,20,24,24,406,354,52,2,14,349,194,155,1,-4.41,-2.16,2.85
+6,Sun,October 18,4:25PM ET,boxscore,L,,2-4,@,Green Bay Packers,20,27,32,548,488,60,1,17,370,237,133,,14.75,-16.98,-3.92
+7,Sun,October 25,4:05PM ET,boxscore,L,,2-5,,Oakland Raiders,29,37,28,417,327,90,2,19,412,282,130,,8.25,-10.90,-7.19
+8,Sun,November 1,1:02PM ET,boxscore,L,,2-6,@,Baltimore Ravens,26,29,22,371,290,81,,23,365,293,72,,16.54,-13.68,-5.40
+9,Mon,November 9,8:30PM ET,boxscore,L,,2-7,,Chicago Bears,19,22,19,339,262,77,1,25,446,337,109,2,1.92,-6.81,3.75
+10,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+11,Sun,November 22,4:05PM ET,boxscore,L,,2-8,,Kansas City Chiefs,3,33,14,201,149,52,2,22,385,232,153,,-18.81,-17.35,5.50
+12,Sun,November 29,1:03PM ET,boxscore,W,,3-8,@,Jacksonville Jaguars,31,25,24,369,290,79,,20,420,318,102,1,10.91,-3.32,0.50
+13,Sun,December 6,4:05PM ET,boxscore,L,,3-9,,Denver Broncos,3,17,15,272,179,93,3,19,293,159,134,1,-24.08,0.16,5.00
+14,Sun,December 13,1:03PM ET,boxscore,L,,3-10,@,Kansas City Chiefs,3,10,15,280,236,44,1,18,329,179,150,2,-4.55,-7.56,6.96
+15,Sun,December 20,4:25PM ET,boxscore,W,,4-10,,Miami Dolphins,30,14,26,442,302,140,2,13,231,187,44,1,20.73,3.57,-5.42
+16,Thu,December 24,8:26PM ET,boxscore,L,OT,4-11,@,Oakland Raiders,20,23,19,343,271,72,1,14,281,175,106,1,-7.37,7.84,-7.31
+17,Sun,January 3,4:25PM ET,boxscore,L,,4-12,@,Denver Broncos,20,27,15,317,207,110,1,21,503,293,210,5,-10.87,0.27,2.21

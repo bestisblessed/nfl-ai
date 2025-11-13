@@ -1,0 +1,18 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 12,1:02PM ET,boxscore,L,,0-1,@,Chicago Bears,14,19,13,168,148,20,3,23,463,362,101,4,-21.59,9.47,8.19
+2,Sun,September 19,1:02PM ET,boxscore,L,,0-2,,Philadelphia Eagles,32,35,22,444,329,115,2,24,410,248,162,,6.33,-16.01,5.41
+3,Sun,September 26,1:05PM ET,boxscore,L,,0-3,@,Minnesota Vikings,10,24,17,295,232,63,3,21,368,185,183,3,-8.05,1.27,-5.89
+4,Sun,October 3,1:02PM ET,boxscore,L,,0-4,@,Green Bay Packers,26,28,24,431,308,123,3,16,261,169,92,4,-2.18,-10.37,10.44
+5,Sun,October 10,12:56PM ET,boxscore,W,,1-4,,St. Louis Rams,44,6,20,322,233,89,,23,341,213,128,3,9.55,22.64,4.23
+6,Sun,October 17,1:03PM ET,boxscore,L,,1-5,@,New York Giants,20,28,16,366,302,64,3,24,334,167,167,1,-5.29,-8.98,4.56
+7,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+8,Sun,October 31,1:02PM ET,boxscore,W,,2-5,,Washington Redskins,37,25,19,304,202,102,2,13,275,195,80,2,-10.40,23.47,-4.22
+9,Sun,November 7,1:03PM ET,boxscore,L,OT,2-6,,New York Jets,20,23,21,306,228,78,,23,437,327,110,2,1.25,-5.58,3.39
+10,Sun,November 14,1:02PM ET,boxscore,L,,2-7,@,Buffalo Bills,12,14,19,390,314,76,1,12,288,139,149,1,-7.20,5.05,-3.02
+11,Sun,November 21,1:02PM ET,boxscore,L,,2-8,@,Dallas Cowboys,19,35,17,338,263,75,2,19,265,131,134,1,-0.05,-6.90,-7.64
+12,Thu,November 25,12:38PM ET,boxscore,L,,2-9,,New England Patriots,24,45,25,406,277,129,2,20,447,338,109,,6.23,-28.10,2.52
+13,Sun,December 5,1:03PM ET,boxscore,L,,2-10,,Chicago Bears,20,24,14,302,168,134,,23,311,197,114,1,3.19,-9.47,0.27
+14,Sun,December 12,1:03PM ET,boxscore,W,,3-10,,Green Bay Packers,7,3,15,286,96,190,2,13,258,192,66,3,-7.82,18.99,-6.43
+15,Sun,December 19,1:03PM ET,boxscore,W,OT,4-10,@,Tampa Bay Buccaneers,23,20,26,433,252,181,,22,403,227,176,,14.84,-13.73,0.36
+16,Sun,December 26,1:03PM ET,boxscore,W,,5-10,@,Miami Dolphins,34,27,14,275,208,67,,28,425,271,154,3,4.95,-5.19,5.08
+17,Sun,January 2,1:03PM ET,boxscore,W,,6-10,,Minnesota Vikings,20,13,22,357,250,107,2,16,211,137,74,1,-1.72,5.11,3.05

@@ -1,0 +1,18 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 9,1:03PM ET,boxscore,L,,0-1,@,Houston Texans,10,30,15,275,199,76,4,19,337,254,83,,-28.02,-5.26,13.73
+2,Sun,September 16,1:02PM ET,boxscore,W,,1-1,,Oakland Raiders,35,13,24,452,189,263,,18,396,373,23,1,20.54,2.02,2.33
+3,Sun,September 23,1:03PM ET,boxscore,L,OT,1-2,,New York Jets,20,23,23,381,196,185,2,21,388,295,93,2,-1.11,3.14,-3.30
+4,Sun,September 30,4:05PM ET,boxscore,L,OT,1-3,@,Arizona Cardinals,21,24,21,480,394,86,4,19,297,269,28,2,-1.83,10.41,-14.11
+5,Sun,October 7,1:03PM ET,boxscore,W,,2-3,@,Cincinnati Bengals,17,13,15,279,211,68,2,18,298,218,80,3,-6.94,11.99,-2.98
+6,Sun,October 14,1:00PM ET,boxscore,W,,3-3,,St. Louis Rams,17,14,12,192,156,36,,22,462,300,162,1,-0.49,-11.83,17.97
+7,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+8,Sun,October 28,1:06PM ET,boxscore,W,,4-3,@,New York Jets,30,9,14,236,139,97,1,22,363,258,105,2,-7.89,10.25,16.42
+9,Sun,November 4,1:02PM ET,boxscore,L,,4-4,@,Indianapolis Colts,20,23,20,365,281,84,,27,516,419,97,,7.11,-22.88,9.19
+10,Sun,November 11,1:03PM ET,boxscore,L,,4-5,,Tennessee Titans,3,37,13,255,201,54,4,17,293,116,177,,-26.00,-4.43,-3.39
+11,Thu,November 15,8:29PM ET,boxscore,L,,4-6,@,Buffalo Bills,14,19,16,184,124,60,3,18,281,161,120,,-10.42,1.11,2.33
+12,Sun,November 25,1:03PM ET,boxscore,W,,5-6,,Seattle Seahawks,24,21,23,435,246,189,1,16,312,216,96,,17.25,-5.06,-9.65
+13,Sun,December 2,1:02PM ET,boxscore,L,,5-7,,New England Patriots,16,23,15,277,176,101,1,25,321,213,108,1,-6.58,-0.35,-1.26
+14,Sun,December 9,4:05PM ET,boxscore,L,,5-8,@,San Francisco 49ers,13,27,17,227,133,94,1,20,321,166,155,,-3.94,-10.18,-0.34
+15,Sun,December 16,1:03PM ET,boxscore,W,,6-8,,Jacksonville Jaguars,24,3,26,389,209,180,1,13,299,213,86,,12.45,8.45,-2.26
+16,Sun,December 23,1:02PM ET,boxscore,W,,7-8,,Buffalo Bills,24,10,18,301,119,182,,17,381,227,154,4,8.21,7.95,-2.00
+17,Sun,December 30,4:25PM ET,boxscore,L,,7-9,@,New England Patriots,0,28,16,256,209,47,2,28,443,276,167,,-11.12,-17.21,1.74

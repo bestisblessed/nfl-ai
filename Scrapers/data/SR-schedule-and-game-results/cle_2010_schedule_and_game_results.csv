@@ -1,0 +1,18 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 12,1:02PM ET,boxscore,L,,0-1,@,Tampa Bay Buccaneers,14,17,15,340,236,104,3,13,288,169,119,2,-11.19,11.89,-0.29
+2,Sun,September 19,1:02PM ET,boxscore,L,,0-2,,Kansas City Chiefs,14,16,13,299,226,73,2,16,312,172,140,2,-12.79,6.03,-0.61
+3,Sun,September 26,1:02PM ET,boxscore,L,,0-3,@,Baltimore Ravens,17,24,18,304,131,173,,19,365,256,109,,5.88,-12.60,0.84
+4,Sun,October 3,1:02PM ET,boxscore,W,,1-3,,Cincinnati Bengals,23,20,21,295,179,116,1,21,413,346,67,2,4.86,-7.94,6.08
+5,Sun,October 10,1:03PM ET,boxscore,L,,1-4,,Atlanta Falcons,10,20,18,269,221,48,3,17,338,173,165,1,-13.33,-1.70,6.09
+6,Sun,October 17,1:02PM ET,boxscore,L,,1-5,@,Pittsburgh Steelers,10,28,17,327,258,69,3,22,378,257,121,1,-0.90,-9.34,-4.46
+7,Sun,October 24,1:02PM ET,boxscore,W,,2-5,@,New Orleans Saints,30,17,12,210,85,125,,25,394,336,58,4,-1.64,7.96,7.08
+8,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+9,Sun,November 7,1:02PM ET,boxscore,W,,3-5,,New England Patriots,34,14,22,404,174,230,1,19,283,215,68,3,16.31,-1.33,5.16
+10,Sun,November 14,1:02PM ET,boxscore,L,OT,3-6,,New York Jets,20,26,19,303,196,107,2,28,456,284,172,1,-1.40,-12.33,7.81
+11,Sun,November 21,1:03PM ET,boxscore,L,,3-7,@,Jacksonville Jaguars,20,24,15,283,195,88,1,24,371,226,145,6,-4.89,5.22,-4.11
+12,Sun,November 28,1:03PM ET,boxscore,W,,4-7,,Carolina Panthers,24,23,26,379,227,152,3,16,326,175,151,1,-4.69,-0.54,3.83
+13,Sun,December 5,1:02PM ET,boxscore,W,,5-7,@,Miami Dolphins,13,10,12,252,200,52,,17,281,167,114,3,-11.68,14.89,-0.22
+14,Sun,December 12,1:02PM ET,boxscore,L,,5-8,@,Buffalo Bills,6,13,9,187,82,105,3,19,323,131,192,1,-15.44,0.63,4.85
+15,Sun,December 19,1:02PM ET,boxscore,L,,5-9,@,Cincinnati Bengals,17,19,14,278,219,59,,22,397,209,188,,8.20,-7.80,-2.52
+16,Sun,December 26,1:02PM ET,boxscore,L,,5-10,,Baltimore Ravens,10,20,17,280,178,102,4,15,258,97,161,1,-7.41,-1.35,1.87
+17,Sun,January 2,1:02PM ET,boxscore,L,,5-11,,Pittsburgh Steelers,9,41,17,225,182,43,3,24,418,318,100,,-11.01,-26.75,3.33

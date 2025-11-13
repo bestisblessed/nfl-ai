@@ -1,0 +1,18 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Mon,September 9,10:25PM ET,boxscore,W,,1-0,@,San Diego Chargers,31,28,26,449,329,120,1,14,263,183,80,1,9.17,-2.52,-2.49
+2,Sun,September 15,1:03PM ET,boxscore,W,OT,2-0,,Tennessee Titans,30,24,25,452,280,172,2,14,248,129,119,,0.69,10.58,-6.54
+3,Sun,September 22,1:03PM ET,boxscore,L,,2-1,@,Baltimore Ravens,9,30,18,264,170,94,1,16,236,161,75,,-12.71,-3.46,-5.26
+4,Sun,September 29,1:03PM ET,boxscore,L,OT,2-2,,Seattle Seahawks,20,23,29,476,325,151,3,15,270,91,179,2,-2.11,8.09,-6.86
+5,Sun,October 6,8:31PM ET,boxscore,L,,2-3,@,San Francisco 49ers,3,34,17,313,182,131,4,17,284,107,177,,-19.21,-4.70,-4.81
+6,Sun,October 13,1:03PM ET,boxscore,L,,2-4,,St. Louis Rams,13,38,27,420,267,153,4,15,216,117,99,,-2.23,-12.54,-8.67
+7,Sun,October 20,4:26PM ET,boxscore,L,,2-5,@,Kansas City Chiefs,16,17,14,294,221,73,1,20,357,231,126,2,-5.02,1.00,2.30
+8,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+9,Sun,November 3,8:30PM ET,boxscore,L,,2-6,,Indianapolis Colts,24,27,22,483,340,143,,17,314,245,69,,15.10,-11.62,-9.34
+10,Sun,November 10,4:25PM ET,boxscore,L,,2-7,@,Arizona Cardinals,24,27,17,235,159,76,1,19,332,235,97,3,-14.42,5.28,3.52
+11,Sun,November 17,1:03PM ET,boxscore,L,,2-8,,Oakland Raiders,23,28,14,394,304,90,2,12,341,176,165,,-14.44,4.55,7.68
+12,Sun,November 24,1:02PM ET,boxscore,L,,2-9,,Jacksonville Jaguars,6,13,11,218,141,77,1,16,333,215,118,,-14.08,-0.61,6.10
+13,Sun,December 1,1:02PM ET,boxscore,L,,2-10,,New England Patriots,31,34,19,385,264,121,1,28,453,365,88,1,11.24,-17.29,1.17
+14,Thu,December 5,8:29PM ET,boxscore,L,,2-11,@,Jacksonville Jaguars,20,27,23,406,323,83,2,18,281,132,149,,-2.03,-7.27,-1.06
+15,Sun,December 15,1:02PM ET,boxscore,L,,2-12,@,Indianapolis Colts,3,25,12,239,132,107,2,19,331,179,152,1,-22.32,3.38,-1.79
+16,Sun,December 22,1:02PM ET,boxscore,L,,2-13,,Denver Broncos,13,37,14,240,153,87,2,25,511,397,114,,-12.07,-15.76,4.00
+17,Sun,December 29,1:02PM ET,boxscore,L,,2-14,@,Tennessee Titans,10,16,19,288,223,65,4,17,311,160,151,1,-6.18,2.54,-3.85

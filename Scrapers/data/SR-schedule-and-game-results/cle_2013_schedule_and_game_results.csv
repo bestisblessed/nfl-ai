@@ -1,0 +1,18 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 8,1:02PM ET,boxscore,L,,0-1,,Miami Dolphins,10,23,20,291,244,47,3,18,275,255,20,1,-12.65,4.10,-2.92
+2,Sun,September 15,1:02PM ET,boxscore,L,,0-2,@,Baltimore Ravens,6,14,13,259,194,65,,19,296,197,99,1,-14.51,1.70,2.40
+3,Sun,September 22,1:05PM ET,boxscore,W,,1-2,@,Minnesota Vikings,31,27,23,409,306,103,4,21,329,195,134,3,0.57,8.17,-5.36
+4,Sun,September 29,1:06PM ET,boxscore,W,,2-2,,Cincinnati Bengals,17,6,18,336,247,89,,16,266,203,63,2,3.36,11.83,-4.34
+5,Thu,October 3,8:29PM ET,boxscore,W,,3-2,,Buffalo Bills,37,24,19,290,199,91,,20,343,188,155,1,-0.61,5.24,9.28
+6,Sun,October 13,1:02PM ET,boxscore,L,,3-3,,Detroit Lions,17,31,23,395,269,126,2,24,366,248,118,1,5.32,-12.77,-1.52
+7,Sun,October 20,4:25PM ET,boxscore,L,,3-4,@,Green Bay Packers,13,31,17,216,133,83,1,26,357,253,104,,-10.77,-16.79,7.37
+8,Sun,October 27,1:02PM ET,boxscore,L,,3-5,@,Kansas City Chiefs,17,23,13,340,283,57,1,20,331,195,136,,2.76,-4.35,-3.00
+9,Sun,November 3,4:25PM ET,boxscore,W,,4-5,,Baltimore Ravens,24,18,19,315,242,73,1,18,278,223,55,2,0.76,-1.29,5.36
+10,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+11,Sun,November 17,1:02PM ET,boxscore,L,,4-6,@,Cincinnati Bengals,20,41,15,330,228,102,4,10,224,118,106,2,-29.66,24.92,-19.18
+12,Sun,November 24,1:03PM ET,boxscore,L,,4-7,,Pittsburgh Steelers,11,27,19,367,312,55,4,19,302,217,85,,-21.05,4.91,-2.01
+13,Sun,December 1,1:02PM ET,boxscore,L,,4-8,,Jacksonville Jaguars,28,32,24,439,342,97,3,22,314,202,112,1,1.52,-3.18,-6.44
+14,Sun,December 8,1:02PM ET,boxscore,L,,4-9,@,New England Patriots,26,27,24,494,386,108,,30,484,397,87,2,16.98,-12.46,-5.85
+15,Sun,December 15,1:03PM ET,boxscore,L,,4-10,,Chicago Bears,31,38,20,366,273,93,2,23,440,261,179,3,1.61,-3.55,-3.05
+16,Sun,December 22,1:02PM ET,boxscore,L,,4-11,@,New York Jets,13,24,19,283,168,115,2,25,422,214,208,,-6.13,-16.88,12.01
+17,Sun,December 29,1:02PM ET,boxscore,L,,4-12,@,Pittsburgh Steelers,7,20,15,293,214,79,2,17,292,172,120,2,-12.26,1.50,-3.21

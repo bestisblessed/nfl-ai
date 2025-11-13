@@ -1,0 +1,18 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 12,4:15PM ET,boxscore,L,,0-1,,Arizona Cardinals,13,17,20,325,240,85,4,21,378,266,112,4,-11.58,6.62,0.96
+2,Sun,September 19,4:05PM ET,boxscore,L,,0-2,@,Oakland Raiders,14,16,16,210,135,75,1,25,404,231,173,2,-2.77,-0.92,1.42
+3,Sun,September 26,4:05PM ET,boxscore,W,,1-2,,Washington Redskins,30,16,24,365,232,133,2,15,349,233,116,2,7.38,7.99,-2.85
+4,Sun,October 3,1:00PM ET,boxscore,W,,2-2,,Seattle Seahawks,20,3,19,349,261,88,1,15,257,193,64,2,-5.23,22.30,-2.33
+5,Sun,October 10,12:56PM ET,boxscore,L,,2-3,@,Detroit Lions,6,44,23,341,213,128,3,20,322,233,89,,-22.64,-9.55,-4.23
+6,Sun,October 17,1:00PM ET,boxscore,W,,3-3,,San Diego Chargers,20,17,20,300,183,117,,22,287,208,79,1,1.33,-0.32,1.93
+7,Sun,October 24,1:02PM ET,boxscore,L,,3-4,@,Tampa Bay Buccaneers,17,18,19,285,124,161,1,17,313,189,124,,0.62,2.63,-3.38
+8,Sun,October 31,1:00PM ET,boxscore,W,,4-4,,Carolina Panthers,20,10,15,246,184,62,,14,201,176,25,4,-4.14,16.28,0.40
+9,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+10,Sun,November 14,4:15PM ET,boxscore,L,OT,4-5,@,San Francisco 49ers,20,23,22,332,228,104,,19,421,323,98,,-2.36,-9.50,6.66
+11,Sun,November 21,4:05PM ET,boxscore,L,,4-6,,Atlanta Falcons,17,34,15,304,233,71,1,24,391,253,138,,-1.25,-12.25,0.03
+12,Sun,November 28,4:16PM ET,boxscore,W,,5-6,@,Denver Broncos,36,33,24,431,308,123,,24,449,330,119,2,15.18,-9.59,0.18
+13,Sun,December 5,4:15PM ET,boxscore,W,,6-6,@,Arizona Cardinals,19,6,18,288,169,119,1,14,224,119,105,2,-4.79,12.22,8.08
+14,Sun,December 12,4:05PM ET,boxscore,L,,6-7,@,New Orleans Saints,13,31,14,327,191,136,3,22,345,213,132,3,-15.15,-8.73,6.73
+15,Sun,December 19,1:00PM ET,boxscore,L,,6-8,,Kansas City Chiefs,13,27,14,224,155,69,2,21,383,173,210,1,-14.88,-0.86,2.58
+16,Sun,December 26,1:00PM ET,boxscore,W,,7-8,,San Francisco 49ers,25,17,19,335,275,60,1,12,331,246,85,2,-0.58,7.40,-2.54
+17,Sun,January 2,8:31PM ET,boxscore,L,,7-9,@,Seattle Seahawks,6,16,10,184,137,47,1,19,333,192,141,1,-21.53,5.64,4.70

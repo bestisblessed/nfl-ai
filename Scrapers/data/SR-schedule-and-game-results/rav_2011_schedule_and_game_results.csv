@@ -1,0 +1,21 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 11,1:05PM ET,boxscore,W,,1-0,,Pittsburgh Steelers,35,7,17,385,215,170,,20,312,246,66,7,9.72,21.78,-3.57
+2,Sun,September 18,1:02PM ET,boxscore,L,,1-1,@,Tennessee Titans,13,26,15,229,184,45,3,21,432,358,74,1,-12.54,-8.56,7.88
+3,Sun,September 25,4:05PM ET,boxscore,W,,2-1,@,St. Louis Rams,37,7,25,553,385,168,1,17,244,132,112,2,19.43,19.21,-8.05
+4,Sun,October 2,8:30PM ET,boxscore,W,,3-1,,New York Jets,34,17,16,267,155,112,3,7,150,112,38,4,-21.47,48.17,-7.40
+5,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+6,Sun,October 16,4:06PM ET,boxscore,W,,4-1,,Houston Texans,29,14,24,402,289,113,2,18,293,200,93,,5.36,7.48,3.85
+7,Mon,October 24,8:40PM ET,boxscore,L,,4-2,@,Jacksonville Jaguars,7,12,11,146,112,34,2,13,205,73,132,1,-20.39,19.02,-5.46
+8,Sun,October 30,1:02PM ET,boxscore,W,,5-2,,Arizona Cardinals,30,27,30,405,298,107,2,17,207,98,109,1,5.91,5.55,-9.73
+9,Sun,November 6,8:30PM ET,boxscore,W,,6-2,@,Pittsburgh Steelers,23,20,23,356,289,67,1,20,392,322,70,2,12.60,-9.52,-0.08
+10,Sun,November 13,4:06PM ET,boxscore,L,,6-3,@,Seattle Seahawks,17,22,25,323,248,75,3,16,327,208,119,,4.12,5.59,-18.70
+11,Sun,November 20,1:02PM ET,boxscore,W,,7-3,,Cincinnati Bengals,31,24,13,373,268,105,1,23,483,364,119,3,0.72,1.26,4.29
+12,Thu,November 24,8:29PM ET,boxscore,W,,8-3,,San Francisco 49ers,16,6,16,253,161,92,,12,170,96,74,1,2.65,13.85,-6.56
+13,Sun,December 4,4:05PM ET,boxscore,W,,9-3,@,Cleveland Browns,24,10,24,448,158,290,1,13,233,174,59,1,7.94,11.66,-3.55
+14,Sun,December 11,1:02PM ET,boxscore,W,,10-3,,Indianapolis Colts,24,10,24,358,212,146,2,12,167,117,50,1,5.24,11.34,-1.36
+15,Sun,December 18,8:30PM ET,boxscore,L,,10-4,@,San Diego Chargers,14,34,19,290,201,89,2,23,415,270,145,,4.87,-23.17,0.86
+16,Sat,December 24,1:03PM ET,boxscore,W,,11-4,,Cleveland Browns,20,14,15,284,122,162,1,18,256,139,117,1,2.98,4.49,-5.22
+17,Sun,January 1,4:16PM ET,boxscore,W,,12-4,@,Cincinnati Bengals,24,16,15,347,126,221,,19,336,231,105,1,9.30,-0.34,-1.65
+,,Playoffs,,,,,,,,,,,,,,,,,,,,,,
+Division,Sun,January 15,1:05PM ET,boxscore,W,,13-4,,Houston Texans,20,13,11,227,140,87,,16,315,184,131,4,-14.60,10.62,12.62
+Conf. Champ.,Sun,January 22,3:05PM ET,boxscore,L,,13-5,@,New England Patriots,20,23,19,398,282,116,1,25,330,234,96,3,3.41,-5.91,1.42

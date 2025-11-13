@@ -1,0 +1,18 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 7,1:02PM ET,boxscore,L,,0-1,,Tennessee Titans,10,26,15,245,178,67,3,24,405,243,162,,-8.60,-5.18,-3.59
+2,Sun,September 14,4:25PM ET,boxscore,L,,0-2,@,Denver Broncos,17,24,28,380,247,133,,19,325,237,88,,14.10,-15.89,-4.04
+3,Sun,September 21,4:25PM ET,boxscore,W,,1-2,@,Miami Dolphins,34,15,23,342,168,174,2,18,332,191,141,,6.05,8.31,2.71
+4,Mon,September 29,8:31PM ET,boxscore,W,,2-2,,New England Patriots,41,14,26,443,236,207,,13,290,215,75,3,16.31,10.70,-6.25
+5,Sun,October 5,4:25PM ET,boxscore,L,,2-3,@,San Francisco 49ers,17,22,14,265,158,107,1,22,357,186,171,,3.49,-7.73,-3.14
+6,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+7,Sun,October 19,4:05PM ET,boxscore,W,,3-3,@,San Diego Chargers,23,20,22,365,211,154,,19,251,182,69,1,10.90,-3.59,-2.14
+8,Sun,October 26,1:04PM ET,boxscore,W,,4-3,,St. Louis Rams,34,7,23,355,215,140,1,13,200,116,84,1,9.12,10.87,7.41
+9,Sun,November 2,1:03PM ET,boxscore,W,,5-3,,New York Jets,24,10,23,309,196,113,,22,364,225,139,,14.45,-2.53,-1.55
+10,Sun,November 9,1:02PM ET,boxscore,W,,6-3,@,Buffalo Bills,17,13,16,278,151,127,1,21,364,253,111,3,-3.98,3.37,2.60
+11,Sun,November 16,1:04PM ET,boxscore,W,,7-3,,Seattle Seahawks,24,20,20,298,108,190,2,25,372,168,204,,8.11,-3.78,2.54
+12,Thu,November 20,8:26PM ET,boxscore,L,,7-4,@,Oakland Raiders,20,24,16,313,217,96,,18,351,172,179,1,-10.18,-9.34,10.98
+13,Sun,November 30,8:32PM ET,boxscore,L,,7-5,,Denver Broncos,16,29,11,151,110,41,3,21,388,174,214,1,-15.68,-2.46,1.49
+14,Sun,December 7,4:05PM ET,boxscore,L,,7-6,@,Arizona Cardinals,14,17,19,390,264,126,2,18,366,225,141,,-2.17,-6.54,2.87
+15,Sun,December 14,1:03PM ET,boxscore,W,,8-6,,Oakland Raiders,31,13,16,388,295,93,1,17,280,202,78,1,-1.29,17.37,3.43
+16,Sun,December 21,1:02PM ET,boxscore,L,,8-7,@,Pittsburgh Steelers,12,20,22,327,288,39,1,19,282,214,68,,3.49,-11.59,0.95
+17,Sun,December 28,1:03PM ET,boxscore,W,,9-7,,San Diego Chargers,19,7,15,251,140,111,,21,361,249,112,3,-6.72,12.22,6.51

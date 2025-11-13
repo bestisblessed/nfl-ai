@@ -1,0 +1,18 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 7,1:03PM ET,boxscore,W,,1-0,,New England Patriots,33,20,25,360,169,191,3,20,315,226,89,2,4.77,10.28,-1.99
+2,Sun,September 14,1:02PM ET,boxscore,L,,1-1,@,Buffalo Bills,10,29,23,290,210,80,2,13,315,202,113,,-7.32,-0.34,-8.75
+3,Sun,September 21,4:25PM ET,boxscore,L,,1-2,,Kansas City Chiefs,15,34,18,332,191,141,,23,342,168,174,2,-8.31,-6.05,-2.71
+4,Sun,September 28,1:06PM ET,boxscore,W,,2-2,@,Oakland Raiders,38,14,24,435,278,157,3,17,317,264,53,4,5.78,26.58,-6.90
+5,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+6,Sun,October 12,1:02PM ET,boxscore,L,,2-3,,Green Bay Packers,24,27,19,349,237,112,3,27,369,248,121,,7.54,-11.62,2.21
+7,Sun,October 19,1:00PM ET,boxscore,W,,3-3,@,Chicago Bears,27,14,24,393,256,137,,14,224,172,52,3,13.66,8.58,-12.87
+8,Sun,October 26,1:02PM ET,boxscore,W,,4-3,@,Jacksonville Jaguars,27,13,17,326,178,148,1,19,377,201,176,3,0.55,9.80,7.26
+9,Sun,November 2,1:02PM ET,boxscore,W,,5-3,,San Diego Chargers,37,0,28,441,309,132,,10,178,128,50,4,19.08,22.68,-5.26
+10,Sun,November 9,1:02PM ET,boxscore,L,,5-4,@,Detroit Lions,16,20,20,228,178,50,2,19,351,288,63,1,-12.32,-3.20,11.73
+11,Thu,November 13,8:26PM ET,boxscore,W,,6-4,,Buffalo Bills,22,9,24,330,205,125,2,13,237,183,54,,11.09,8.52,-1.99
+12,Sun,November 23,4:25PM ET,boxscore,L,,6-5,@,Denver Broncos,36,39,25,313,216,97,1,29,450,249,201,1,16.72,-29.37,5.25
+13,Mon,December 1,8:30PM ET,boxscore,W,,7-5,@,New York Jets,16,13,16,291,217,74,1,18,326,49,277,1,-3.69,-3.00,9.68
+14,Sun,December 7,1:02PM ET,boxscore,L,,7-6,,Baltimore Ravens,13,28,16,249,186,63,,26,447,264,183,1,-2.97,-18.79,4.56
+15,Sun,December 14,1:02PM ET,boxscore,L,,7-7,@,New England Patriots,13,41,23,384,308,76,2,23,395,287,108,1,-8.80,-14.57,-7.17
+16,Sun,December 21,1:03PM ET,boxscore,W,,8-7,,Minnesota Vikings,37,35,36,493,383,110,2,20,357,238,119,1,26.96,-7.60,-10.66
+17,Sun,December 28,1:02PM ET,boxscore,L,,8-8,,New York Jets,24,37,23,387,208,179,1,18,494,390,104,1,6.05,-11.99,-0.16

@@ -1,0 +1,18 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 11,1:06PM ET,boxscore,W,,1-0,@,Kansas City Chiefs,41,7,23,364,201,163,1,13,213,105,108,3,12.56,14.87,5.86
+2,Sun,September 18,1:03PM ET,boxscore,W,,2-0,,Oakland Raiders,38,35,34,481,258,223,1,26,454,323,131,2,29.88,-23.69,-2.38
+3,Sun,September 25,1:03PM ET,boxscore,W,,3-0,,New England Patriots,34,31,24,448,369,79,2,30,495,387,108,4,9.66,-9.55,1.62
+4,Sun,October 2,1:03PM ET,boxscore,L,,3-1,@,Cincinnati Bengals,20,23,12,273,190,83,,25,458,287,171,2,-3.68,-4.54,3.16
+5,Sun,October 9,1:04PM ET,boxscore,W,,4-1,,Philadelphia Eagles,31,24,21,331,188,143,1,24,489,315,174,5,7.45,0.46,-1.56
+6,Sun,October 16,1:02PM ET,boxscore,L,,4-2,@,New York Giants,24,27,17,374,219,155,2,24,414,292,122,,10.21,-18.88,1.47
+7,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+8,Sun,October 30,4:05PM ET,boxscore,W,,5-2,,Washington Redskins,23,0,17,390,252,138,2,10,178,152,26,2,4.37,21.45,-2.96
+9,Sun,November 6,1:03PM ET,boxscore,L,,5-3,,New York Jets,11,27,14,287,191,96,3,24,348,222,126,2,-13.27,-5.28,-0.07
+10,Sun,November 13,1:02PM ET,boxscore,L,,5-4,@,Dallas Cowboys,7,44,20,271,136,135,4,24,433,270,163,,-11.85,-24.58,0.33
+11,Sun,November 20,1:02PM ET,boxscore,L,,5-5,@,Miami Dolphins,8,35,14,245,204,41,2,16,242,147,95,,-21.57,-2.62,-3.29
+12,Sun,November 27,1:02PM ET,boxscore,L,,5-6,@,New York Jets,24,28,21,336,250,86,,20,318,180,138,2,3.13,-13.01,3.17
+13,Sun,December 4,1:02PM ET,boxscore,L,,5-7,,Tennessee Titans,17,23,18,386,282,104,2,18,317,130,187,,2.05,-4.41,-6.33
+14,Sun,December 11,4:15PM ET,boxscore,L,,5-8,@,San Diego Chargers,10,37,17,281,185,96,3,23,366,216,150,1,-14.48,-13.50,-0.70
+15,Sun,December 18,1:02PM ET,boxscore,L,,5-9,,Miami Dolphins,23,30,21,404,291,113,3,17,448,194,254,3,-6.23,-0.12,-3.00
+16,Sat,December 24,1:02PM ET,boxscore,W,,6-9,,Denver Broncos,40,14,14,351,191,160,,18,285,152,133,3,2.61,19.86,3.89
+17,Sun,January 1,1:02PM ET,boxscore,L,,6-10,@,New England Patriots,21,49,26,402,296,106,4,28,480,342,138,1,2.10,-22.96,-4.16

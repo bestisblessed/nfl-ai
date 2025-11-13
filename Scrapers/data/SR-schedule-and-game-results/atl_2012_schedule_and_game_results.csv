@@ -1,0 +1,21 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 9,1:03PM ET,boxscore,W,,1-0,@,Kansas City Chiefs,40,24,21,376,292,84,,22,393,241,152,3,18.91,-9.33,8.49
+2,Mon,September 17,8:41PM ET,boxscore,W,,2-0,,Denver Broncos,27,21,22,275,208,67,,24,336,218,118,4,4.09,3.80,0.87
+3,Sun,September 23,4:05PM ET,boxscore,W,,3-0,@,San Diego Chargers,27,3,25,384,265,119,1,15,280,164,116,4,13.40,12.34,-0.21
+4,Sun,September 30,1:03PM ET,boxscore,W,,4-0,,Carolina Panthers,30,28,24,426,305,121,1,21,404,205,199,1,13.29,-9.19,-0.57
+5,Sun,October 7,1:04PM ET,boxscore,W,,5-0,@,Washington Redskins,24,17,28,421,338,83,2,12,316,187,129,2,1.60,6.05,1.66
+6,Sun,October 14,1:01PM ET,boxscore,W,,6-0,,Oakland Raiders,23,20,16,286,241,45,3,22,474,325,149,3,-8.04,9.03,1.32
+7,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+8,Sun,October 28,1:03PM ET,boxscore,W,,7-0,@,Philadelphia Eagles,30,17,24,392,246,146,,20,270,178,92,,16.64,-1.50,-3.25
+9,Sun,November 4,8:31PM ET,boxscore,W,,8-0,,Dallas Cowboys,19,13,21,453,330,123,,18,377,312,65,,17.08,-9.19,-6.06
+10,Sun,November 11,1:02PM ET,boxscore,L,,8-1,@,New Orleans Saints,27,31,25,454,408,46,1,21,440,292,148,1,11.41,-14.59,-3.69
+11,Sun,November 18,1:03PM ET,boxscore,W,,9-1,,Arizona Cardinals,23,19,20,354,296,58,6,7,178,41,137,1,-19.88,25.36,-2.52
+12,Sun,November 25,1:02PM ET,boxscore,W,,10-1,@,Tampa Bay Buccaneers,24,23,20,424,345,79,2,16,326,276,50,,14.01,-9.82,-4.24
+13,Thu,November 29,8:29PM ET,boxscore,W,,11-1,,New Orleans Saints,23,13,15,283,159,124,1,24,436,335,101,5,-6.68,5.03,5.49
+14,Sun,December 9,1:04PM ET,boxscore,L,,11-2,@,Carolina Panthers,20,30,26,362,327,35,1,23,475,280,195,,13.60,-23.22,-1.47
+15,Sun,December 16,1:03PM ET,boxscore,W,,12-2,,New York Giants,34,0,22,394,265,129,,10,256,159,97,3,19.97,14.81,1.84
+16,Sat,December 22,8:40PM ET,boxscore,W,,13-2,@,Detroit Lions,31,18,19,344,271,73,,25,522,443,79,3,15.32,-6.64,5.31
+17,Sun,December 30,1:02PM ET,boxscore,L,,13-3,,Tampa Bay Buccaneers,17,22,15,278,213,65,,18,366,222,144,1,-4.33,-1.95,-4.03
+,,Playoffs,,,,,,,,,,,,,,,,,,,,,,
+Division,Sun,January 13,1:05PM ET,boxscore,W,,14-3,,Seattle Seahawks,30,28,24,417,250,167,2,28,491,368,123,2,17.64,-16.85,-0.63
+Conf. Champ.,Sun,January 20,3:05PM ET,boxscore,L,,14-4,,San Francisco 49ers,24,28,27,477,396,81,2,21,373,224,149,1,15.22,-16.62,1.23

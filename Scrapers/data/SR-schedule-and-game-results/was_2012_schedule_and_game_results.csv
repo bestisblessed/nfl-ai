@@ -1,0 +1,20 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 9,1:03PM ET,boxscore,W,,1-0,@,New Orleans Saints,40,32,22,459,306,153,,24,358,326,32,3,14.09,-1.68,-5.25
+2,Sun,September 16,4:05PM ET,boxscore,L,,1-1,@,St. Louis Rams,28,31,18,373,197,176,1,23,452,301,151,3,7.11,-3.93,-4.81
+3,Sun,September 23,1:03PM ET,boxscore,L,,1-2,,Cincinnati Bengals,31,38,31,381,179,202,1,22,478,385,93,2,4.89,-10.79,-0.90
+4,Sun,September 30,4:25PM ET,boxscore,W,,2-2,@,Tampa Bay Buccaneers,24,22,27,474,321,153,,16,373,293,80,1,18.10,-0.91,-18.98
+5,Sun,October 7,1:04PM ET,boxscore,L,,2-3,,Atlanta Falcons,17,24,12,316,187,129,2,28,421,338,83,2,-6.05,-1.60,-1.66
+6,Sun,October 14,4:24PM ET,boxscore,W,,3-3,,Minnesota Vikings,38,26,20,361,178,183,1,27,421,327,94,3,13.91,-0.20,-3.02
+7,Sun,October 21,1:03PM ET,boxscore,L,,3-4,@,New York Giants,23,27,24,480,232,248,4,22,393,329,64,2,5.54,-13.48,4.16
+8,Sun,October 28,1:02PM ET,boxscore,L,,3-5,@,Pittsburgh Steelers,12,27,17,255,169,86,,25,355,215,140,,-1.87,-14.80,0.30
+9,Sun,November 4,1:05PM ET,boxscore,L,,3-6,,Carolina Panthers,13,21,24,337,186,151,,18,330,201,129,,-0.97,-11.79,2.32
+10,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+11,Sun,November 18,1:03PM ET,boxscore,W,,4-6,,Philadelphia Eagles,31,6,15,361,192,169,,16,257,177,80,3,11.54,19.37,-5.39
+12,Thu,November 22,4:41PM ET,boxscore,W,,5-6,@,Dallas Cowboys,38,31,22,437,288,149,1,22,458,423,35,3,15.22,-6.70,4.47
+13,Mon,December 3,8:40PM ET,boxscore,W,,6-6,,New York Giants,17,16,20,370,163,207,1,21,390,273,117,,13.04,-13.66,4.59
+14,Sun,December 9,1:03PM ET,boxscore,W,OT,7-6,,Baltimore Ravens,31,28,22,423,244,179,1,18,359,173,186,2,10.08,-8.93,1.57
+15,Sun,December 16,1:03PM ET,boxscore,W,,8-6,@,Cleveland Browns,38,21,25,430,308,122,1,13,291,233,58,2,11.88,9.43,-0.39
+16,Sun,December 23,1:03PM ET,boxscore,W,,9-6,@,Philadelphia Eagles,27,20,18,313,185,128,1,25,411,321,90,2,7.09,-5.53,0.72
+17,Sun,December 30,8:31PM ET,boxscore,W,,10-6,,Dallas Cowboys,28,18,24,361,87,274,,20,296,196,100,3,16.28,-0.69,-7.18
+,,Playoffs,,,,,,,,,,,,,,,,,,,,,,
+Wild Card,Sun,January 6,4:40PM ET,boxscore,L,,10-7,,Seattle Seahawks,14,24,15,203,99,104,2,22,380,156,224,1,-9.36,-6.20,2.26

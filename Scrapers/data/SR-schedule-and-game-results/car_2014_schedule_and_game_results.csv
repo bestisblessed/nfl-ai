@@ -1,0 +1,21 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 7,4:25PM ET,boxscore,W,,1-0,@,Tampa Bay Buccaneers,20,14,19,334,221,113,,17,264,162,102,3,4.10,6.20,-2.93
+2,Sun,September 14,1:04PM ET,boxscore,W,,2-0,,Detroit Lions,24,7,20,313,251,62,,21,323,253,70,3,1.84,5.21,10.18
+3,Sun,September 21,8:31PM ET,boxscore,L,,2-1,,Pittsburgh Steelers,19,37,20,349,307,42,2,24,454,190,264,,6.24,-19.58,-6.54
+4,Sun,September 28,1:02PM ET,boxscore,L,,2-2,@,Baltimore Ravens,10,38,20,315,248,67,1,25,454,327,127,,6.08,-34.18,7.43
+5,Sun,October 5,1:03PM ET,boxscore,W,,3-2,,Chicago Bears,31,24,22,322,231,91,3,17,347,262,85,4,-2.91,5.59,7.35
+6,Sun,October 12,1:03PM ET,boxscore,T,OT,3-2-1,@,Cincinnati Bengals,37,37,29,431,284,147,1,29,513,320,193,2,15.66,-15.90,-3.87
+7,Sun,October 19,1:02PM ET,boxscore,L,,3-3-1,@,Green Bay Packers,17,38,23,331,223,108,1,22,363,241,122,,-2.03,-18.14,1.49
+8,Sun,October 26,1:04PM ET,boxscore,L,,3-4-1,,Seattle Seahawks,9,13,17,266,152,114,2,19,310,191,119,2,-9.35,0.83,0.13
+9,Thu,October 30,8:30PM ET,boxscore,L,,3-5-1,,New Orleans Saints,10,28,15,231,122,109,2,27,375,270,105,2,-8.78,-12.03,-0.01
+10,Mon,November 10,8:32PM ET,boxscore,L,,3-6-1,@,Philadelphia Eagles,21,45,21,317,215,102,5,17,365,328,37,,-17.03,-1.81,-2.54
+11,Sun,November 16,1:03PM ET,boxscore,L,,3-7-1,,Atlanta Falcons,17,19,22,391,285,106,2,22,346,260,86,1,3.54,2.99,-12.19
+12,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+13,Sun,November 30,1:02PM ET,boxscore,L,,3-8-1,@,Minnesota Vikings,13,31,23,348,170,178,1,12,210,118,92,,0.51,-1.24,-15.81
+14,Sun,December 7,1:03PM ET,boxscore,W,,4-8-1,@,New Orleans Saints,41,10,24,497,226,271,,18,310,218,92,2,23.77,5.69,-1.79
+15,Sun,December 14,1:03PM ET,boxscore,W,,5-8-1,,Tampa Bay Buccaneers,19,17,28,392,269,123,1,15,287,136,151,3,2.42,1.88,-2.12
+16,Sun,December 21,1:04PM ET,boxscore,W,,6-8-1,,Cleveland Browns,17,13,27,404,195,209,2,8,228,144,84,1,8.84,0.77,-2.06
+17,Sun,December 28,4:25PM ET,boxscore,W,,7-8-1,@,Atlanta Falcons,34,3,17,306,112,194,,16,288,225,63,3,5.19,27.86,-4.34
+,,Playoffs,,,,,,,,,,,,,,,,,,,,,,
+Wild Card,Sat,January 3,4:20PM ET,boxscore,W,,8-8-1,,Arizona Cardinals,27,16,25,386,198,188,3,8,78,51,27,3,-6.33,19.39,-4.19
+Division,Sat,January 10,8:21PM ET,boxscore,L,,8-9-1,@,Seattle Seahawks,17,31,21,362,230,132,3,16,348,248,100,,-1.93,-13.20,-1.18

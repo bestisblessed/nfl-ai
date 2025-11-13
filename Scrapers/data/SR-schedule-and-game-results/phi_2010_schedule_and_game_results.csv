@@ -1,0 +1,20 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 12,4:16PM ET,boxscore,L,,0-1,,Green Bay Packers,20,27,16,320,171,149,1,22,299,167,132,2,-3.30,-2.87,-0.05
+2,Sun,September 19,1:02PM ET,boxscore,W,,1-1,@,Detroit Lions,35,32,24,410,248,162,,22,444,329,115,2,16.01,-6.33,-5.41
+3,Sun,September 26,4:05PM ET,boxscore,W,,2-1,@,Jacksonville Jaguars,28,3,15,373,267,106,,16,191,52,139,1,10.77,15.58,-4.17
+4,Sun,October 3,4:15PM ET,boxscore,L,,2-2,,Washington Redskins,12,17,21,353,243,110,2,16,293,124,169,1,-3.26,-5.57,3.29
+5,Sun,October 10,8:30PM ET,boxscore,W,,3-2,@,San Francisco 49ers,27,24,17,352,227,125,1,21,364,290,74,5,-0.80,8.09,-2.65
+6,Sun,October 17,1:02PM ET,boxscore,W,,4-2,,Atlanta Falcons,31,17,23,474,320,154,1,20,293,228,65,2,17.37,1.27,-2.51
+7,Sun,October 24,1:02PM ET,boxscore,L,,4-3,@,Tennessee Titans,19,37,21,326,227,99,4,15,328,253,75,3,-12.98,-2.32,-3.64
+8,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+9,Sun,November 7,4:16PM ET,boxscore,W,,5-3,,Indianapolis Colts,26,24,19,402,207,195,,27,338,276,62,2,9.29,-8.84,1.58
+10,Mon,November 15,8:40PM ET,boxscore,W,,6-3,@,Washington Redskins,59,28,28,592,332,260,,15,375,270,105,3,36.42,1.40,-6.52
+11,Sun,November 21,8:30PM ET,boxscore,W,,7-3,,New York Giants,27,17,17,392,244,148,2,13,208,147,61,5,3.16,9.75,-3.12
+12,Sun,November 28,4:15PM ET,boxscore,L,,7-4,@,Chicago Bears,26,31,24,398,293,105,1,18,349,218,131,,6.30,-12.21,5.30
+13,Thu,December 2,8:30PM ET,boxscore,W,,8-4,,Houston Texans,34,24,22,416,301,115,1,27,431,323,108,2,19.01,-9.77,-0.72
+14,Sun,December 12,8:30PM ET,boxscore,W,,9-4,@,Dallas Cowboys,30,27,18,429,258,171,2,22,349,239,110,2,11.26,-6.33,0.47
+15,Sun,December 19,1:03PM ET,boxscore,W,,10-4,@,New York Giants,38,31,19,418,221,197,3,20,364,264,100,2,2.33,-1.89,-6.65
+16,Tue,December 28,8:06PM ET,boxscore,L,,10-5,,Minnesota Vikings,14,24,24,331,224,107,3,21,337,176,161,1,-2.30,-4.49,1.00
+17,Sun,January 2,4:15PM ET,boxscore,L,,10-6,,Dallas Cowboys,13,14,14,244,123,121,4,14,272,113,159,1,-19.12,7.56,8.80
+,,Playoffs,,,,,,,,,,,,,,,,,,,,,,
+Wild Card,Sun,January 9,4:40PM ET,boxscore,L,,10-7,,Green Bay Packers,16,21,18,352,271,81,1,20,309,171,138,2,3.59,-9.04,-0.66

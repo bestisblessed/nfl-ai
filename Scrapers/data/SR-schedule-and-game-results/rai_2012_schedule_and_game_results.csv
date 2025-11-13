@@ -1,0 +1,18 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Mon,September 10,10:25PM ET,boxscore,L,,0-1,,San Diego Chargers,14,22,21,321,276,45,1,15,258,226,32,,-1.45,-0.43,-6.78
+2,Sun,September 16,1:02PM ET,boxscore,L,,0-2,@,Miami Dolphins,13,35,18,396,373,23,1,24,452,189,263,,-2.02,-20.54,-2.33
+3,Sun,September 23,4:25PM ET,boxscore,W,,1-2,,Pittsburgh Steelers,34,31,21,321,202,119,1,24,433,379,54,2,13.09,-14.90,4.81
+4,Sun,September 30,4:05PM ET,boxscore,L,,1-3,@,Denver Broncos,6,37,12,237,181,56,,26,503,338,165,1,-10.14,-22.58,3.10
+5,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+6,Sun,October 14,1:01PM ET,boxscore,L,,1-4,@,Atlanta Falcons,20,23,22,474,325,149,3,16,286,241,45,3,-9.03,8.04,-1.32
+7,Sun,October 21,4:25PM ET,boxscore,W,OT,2-4,,Jacksonville Jaguars,26,23,20,351,282,69,3,10,209,155,54,1,0.13,19.44,-18.57
+8,Sun,October 28,4:06PM ET,boxscore,W,,3-4,@,Kansas City Chiefs,26,16,15,344,209,135,1,17,299,197,102,4,-0.73,12.51,2.54
+9,Sun,November 4,4:05PM ET,boxscore,L,,3-5,,Tampa Bay Buccaneers,32,42,25,424,402,22,3,23,515,237,278,1,3.88,-20.32,10.56
+10,Sun,November 11,1:02PM ET,boxscore,L,,3-6,@,Baltimore Ravens,20,55,19,422,350,72,3,22,419,341,78,1,-4.23,-21.09,-11.78
+11,Sun,November 18,4:05PM ET,boxscore,L,,3-7,,New Orleans Saints,17,38,24,404,284,120,2,19,380,229,151,,-3.48,-18.98,-1.97
+12,Sun,November 25,1:02PM ET,boxscore,L,,3-8,@,Cincinnati Bengals,10,34,14,218,119,99,2,18,415,194,221,,-20.77,-14.93,10.64
+13,Sun,December 2,4:25PM ET,boxscore,L,,3-9,,Cleveland Browns,17,20,25,429,344,85,1,23,475,353,122,2,13.66,-16.06,-4.04
+14,Thu,December 6,8:30PM ET,boxscore,L,,3-10,,Denver Broncos,13,26,14,324,263,61,2,30,428,288,140,1,-1.28,-13.75,-1.52
+15,Sun,December 16,4:25PM ET,boxscore,W,,4-10,,Kansas City Chiefs,15,0,21,385,182,203,1,7,119,109,10,1,-1.64,24.24,-5.80
+16,Sun,December 23,1:04PM ET,boxscore,L,,4-11,@,Carolina Panthers,6,17,12,189,142,47,1,16,271,159,112,2,-16.88,-0.41,4.57
+17,Sun,December 30,4:21PM ET,boxscore,L,,4-12,@,San Diego Chargers,21,24,17,265,150,115,1,14,210,140,70,,0.71,0.80,-2.13

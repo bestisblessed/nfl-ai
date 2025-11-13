@@ -1,0 +1,21 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Mon,September 12,10:26PM ET,boxscore,L,,0-1,,Oakland Raiders,20,23,25,310,272,38,3,20,289,99,190,1,-3.29,4.13,-3.65
+2,Sun,September 18,4:15PM ET,boxscore,W,,1-1,,Cincinnati Bengals,24,22,19,318,187,131,2,18,382,310,72,,-0.55,1.57,4.52
+3,Sun,September 25,1:02PM ET,boxscore,L,,1-2,@,Tennessee Titans,14,17,19,231,172,59,2,17,333,295,38,2,-4.24,0.14,3.06
+4,Sun,October 2,4:15PM ET,boxscore,L,,1-3,@,Green Bay Packers,23,49,18,384,265,119,4,26,507,396,111,2,-2.52,-23.98,-0.11
+5,Sun,October 9,4:16PM ET,boxscore,L,,1-4,,San Diego Chargers,24,29,13,275,113,162,1,25,418,212,206,2,-4.00,-2.70,1.65
+6,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+7,Sun,October 23,1:02PM ET,boxscore,W,OT,2-4,@,Miami Dolphins,18,15,18,308,131,177,1,15,267,173,94,1,-9.03,11.80,-1.10
+8,Sun,October 30,4:10PM ET,boxscore,L,,2-5,,Detroit Lions,10,45,19,312,117,195,3,21,376,263,113,,-28.52,-13.27,6.22
+9,Sun,November 6,4:05PM ET,boxscore,W,,3-5,@,Oakland Raiders,38,24,20,412,113,299,,21,416,316,100,3,10.10,-3.37,4.92
+10,Sun,November 13,1:03PM ET,boxscore,W,,4-5,@,Kansas City Chiefs,17,10,16,313,69,244,,17,258,124,134,,2.73,6.66,0.01
+11,Thu,November 17,8:30PM ET,boxscore,W,,5-5,,New York Jets,17,13,11,229,104,125,1,22,318,235,83,2,-14.39,7.47,7.24
+12,Sun,November 27,4:15PM ET,boxscore,W,OT,6-5,@,San Diego Chargers,16,13,18,349,141,208,,20,344,159,185,,-2.26,0.86,4.30
+13,Sun,December 4,1:05PM ET,boxscore,W,,7-5,@,Minnesota Vikings,35,32,13,336,186,150,2,27,489,360,129,3,-4.29,-1.29,7.58
+14,Sun,December 11,4:05PM ET,boxscore,W,OT,8-5,,Chicago Bears,13,10,22,345,221,124,2,12,245,86,159,1,-8.73,17.24,-3.99
+15,Sun,December 18,4:16PM ET,boxscore,L,,8-6,,New England Patriots,23,41,25,393,141,252,3,26,451,310,141,,0.94,-20.42,-2.16
+16,Sat,December 24,1:02PM ET,boxscore,L,,8-7,@,Buffalo Bills,14,40,18,285,152,133,3,14,351,191,160,,-19.86,-2.61,-3.89
+17,Sun,January 1,4:16PM ET,boxscore,L,,8-8,,Kansas City Chiefs,3,7,16,266,50,216,2,14,281,175,106,1,-13.12,2.99,5.40
+,,Playoffs,,,,,,,,,,,,,,,,,,,,,,
+Wild Card,Sun,January 8,4:40PM ET,boxscore,W,OT,9-8,,Pittsburgh Steelers,29,23,18,447,316,131,1,21,400,244,156,1,14.16,-6.77,-2.17
+Division,Sat,January 14,8:15PM ET,boxscore,L,,9-9,@,New England Patriots,10,45,15,252,108,144,1,31,509,363,146,2,-11.20,-27.14,2.48

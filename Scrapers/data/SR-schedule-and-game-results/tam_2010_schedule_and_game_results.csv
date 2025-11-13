@@ -1,0 +1,18 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 12,1:02PM ET,boxscore,W,,1-0,,Cleveland Browns,17,14,13,288,169,119,2,15,340,236,104,3,-11.89,11.19,0.29
+2,Sun,September 19,1:03PM ET,boxscore,W,,2-0,@,Carolina Panthers,20,7,14,273,178,95,,16,278,159,119,3,1.54,11.82,-0.80
+3,Sun,September 26,1:03PM ET,boxscore,L,,2-1,,Pittsburgh Steelers,13,38,18,303,228,75,2,17,387,186,201,2,-10.71,-11.67,-0.86
+4,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+5,Sun,October 10,1:03PM ET,boxscore,W,,3-1,@,Cincinnati Bengals,24,21,21,391,266,125,3,20,358,209,149,4,7.55,9.47,-12.83
+6,Sun,October 17,1:02PM ET,boxscore,L,,3-2,,New Orleans Saints,6,31,21,277,235,42,1,27,475,263,212,1,-1.47,-24.00,-1.98
+7,Sun,October 24,1:02PM ET,boxscore,W,,4-2,,St. Louis Rams,18,17,17,313,189,124,,19,285,124,161,1,-2.63,-0.62,3.38
+8,Sun,October 31,4:15PM ET,boxscore,W,,5-2,@,Arizona Cardinals,38,35,19,407,253,154,2,22,396,296,100,4,7.04,6.25,-12.55
+9,Sun,November 7,1:02PM ET,boxscore,L,,5-3,@,Atlanta Falcons,21,27,14,278,182,96,2,26,365,235,130,,2.56,-16.39,6.62
+10,Sun,November 14,1:02PM ET,boxscore,W,,6-3,,Carolina Panthers,31,16,21,421,235,186,2,18,300,182,118,1,16.59,6.45,-9.45
+11,Sun,November 21,4:05PM ET,boxscore,W,,7-3,@,San Francisco 49ers,21,0,20,299,137,162,,11,189,118,71,2,4.42,23.69,-4.19
+12,Sun,November 28,4:15PM ET,boxscore,L,,7-4,@,Baltimore Ravens,10,17,14,263,162,101,,18,349,257,92,1,-5.66,-0.62,-2.53
+13,Sun,December 5,4:16PM ET,boxscore,L,,7-5,,Atlanta Falcons,24,28,19,325,174,151,1,20,290,205,85,2,0.74,-1.08,-7.20
+14,Sun,December 12,1:03PM ET,boxscore,W,,8-5,@,Washington Redskins,17,16,15,365,262,103,2,22,399,211,188,1,-1.13,-10.79,14.62
+15,Sun,December 19,1:03PM ET,boxscore,L,OT,8-6,,Detroit Lions,20,23,22,403,227,176,,26,433,252,181,,13.73,-14.84,-0.36
+16,Sun,December 26,4:16PM ET,boxscore,W,,9-6,,Seattle Seahawks,38,15,22,439,231,208,,10,174,84,90,,22.94,5.25,-2.89
+17,Sun,January 2,1:00PM ET,boxscore,W,,10-6,@,New Orleans Saints,23,13,18,317,233,84,2,20,305,199,106,3,3.26,2.99,3.14

@@ -1,0 +1,20 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 8,1:03PM ET,boxscore,W,,1-0,@,Jacksonville Jaguars,28,2,17,292,171,121,,12,178,107,71,2,-0.89,34.00,-6.19
+2,Sun,September 15,1:02PM ET,boxscore,W,,2-0,,Dallas Cowboys,17,16,19,313,199,114,,20,318,281,37,2,1.42,6.67,-7.11
+3,Thu,September 19,8:29PM ET,boxscore,W,,3-0,@,Philadelphia Eagles,26,16,19,394,248,146,,21,431,167,264,5,-9.55,8.75,11.38
+4,Sun,September 29,1:02PM ET,boxscore,W,,4-0,,New York Giants,31,7,21,390,288,102,3,11,298,200,98,3,-2.70,16.36,11.56
+5,Sun,October 6,1:03PM ET,boxscore,W,,5-0,@,Tennessee Titans,26,17,20,353,233,120,2,19,339,234,105,3,-6.97,4.21,12.56
+6,Sun,October 13,1:02PM ET,boxscore,W,,6-0,,Oakland Raiders,24,7,16,216,105,111,1,18,274,153,121,3,-9.70,21.73,1.64
+7,Sun,October 20,4:26PM ET,boxscore,W,,7-0,,Houston Texans,17,16,20,357,231,126,2,14,294,221,73,1,-1.00,5.02,-2.30
+8,Sun,October 27,1:02PM ET,boxscore,W,,8-0,,Cleveland Browns,23,17,20,331,195,136,,13,340,283,57,1,4.35,-2.76,3.00
+9,Sun,November 3,1:02PM ET,boxscore,W,,9-0,@,Buffalo Bills,23,13,15,210,115,95,,25,470,229,241,3,-8.09,10.31,6.60
+10,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+11,Sun,November 17,8:30PM ET,boxscore,L,,9-1,@,Denver Broncos,17,27,24,344,200,144,1,24,427,323,104,1,-7.13,-6.05,1.34
+12,Sun,November 24,1:03PM ET,boxscore,L,,9-2,,San Diego Chargers,38,41,26,395,281,114,2,24,491,387,104,,19.45,-23.08,0.60
+13,Sun,December 1,4:26PM ET,boxscore,L,,9-3,,Denver Broncos,28,35,27,452,293,159,1,25,535,403,132,2,10.67,-25.60,9.39
+14,Sun,December 8,1:03PM ET,boxscore,W,,10-3,@,Washington Redskins,45,10,20,346,154,192,1,13,257,192,65,2,7.25,23.57,4.38
+15,Sun,December 15,4:05PM ET,boxscore,W,,11-3,@,Oakland Raiders,56,31,19,384,306,78,1,26,461,331,130,7,20.99,0.85,7.40
+16,Sun,December 22,1:02PM ET,boxscore,L,,11-4,,Indianapolis Colts,7,23,18,287,132,155,3,19,367,232,135,,-9.95,-9.81,1.42
+17,Sun,December 29,4:26PM ET,boxscore,L,OT,11-5,@,San Diego Chargers,24,27,22,332,189,143,,19,405,219,186,1,6.26,-9.81,-0.58
+,,Playoffs,,,,,,,,,,,,,,,,,,,,,,
+Wild Card,Sat,January 4,4:35PM ET,boxscore,L,,11-6,@,Indianapolis Colts,44,45,30,513,363,150,1,28,536,436,100,4,19.61,-18.66,-0.77

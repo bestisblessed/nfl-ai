@@ -1,0 +1,18 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 12,1:03PM ET,boxscore,L,,0-1,@,Jacksonville Jaguars,17,24,21,363,274,89,2,18,299,165,134,,1.46,-8.84,-0.77
+2,Sun,September 19,4:06PM ET,boxscore,W,,1-1,,Seattle Seahawks,31,14,23,369,304,65,,17,339,230,109,4,17.46,-1.80,0.36
+3,Sun,September 26,4:16PM ET,boxscore,L,,1-2,,Indianapolis Colts,13,27,23,519,472,47,2,18,365,325,40,,0.04,-7.39,-4.39
+4,Sun,October 3,1:02PM ET,boxscore,W,,2-2,@,Tennessee Titans,26,20,22,327,308,19,1,13,288,167,121,2,-0.74,3.64,5.34
+5,Sun,October 10,1:02PM ET,boxscore,L,,2-3,@,Baltimore Ravens,17,31,16,346,307,39,1,28,415,182,233,,5.73,-17.15,-3.93
+6,Sun,October 17,4:05PM ET,boxscore,L,,2-4,,New York Jets,20,24,21,346,201,145,2,17,319,190,129,3,-7.12,0.46,0.62
+7,Sun,October 24,4:15PM ET,boxscore,L,,2-5,,Oakland Raiders,14,59,11,240,165,75,3,29,508,180,328,,-22.25,-28.32,7.17
+8,Sun,October 31,1:07PM ET,boxscore,L,,2-6,@,San Francisco 49ers,16,24,22,398,339,59,2,16,339,196,143,,1.65,-6.70,-0.43
+9,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+10,Sun,November 14,4:05PM ET,boxscore,W,,3-6,,Kansas City Chiefs,49,29,25,452,299,153,,30,484,433,51,1,26.20,-5.29,1.01
+11,Mon,November 22,8:40PM ET,boxscore,L,,3-7,@,San Diego Chargers,14,35,16,235,172,63,1,21,400,253,147,1,-9.41,-19.31,6.31
+12,Sun,November 28,4:16PM ET,boxscore,L,,3-8,,St. Louis Rams,33,36,24,449,330,119,2,24,431,308,123,,9.59,-15.18,-0.18
+13,Sun,December 5,1:03PM ET,boxscore,L,,3-9,@,Kansas City Chiefs,6,10,13,247,86,161,1,21,359,174,185,1,-9.46,3.22,2.40
+14,Sun,December 12,4:15PM ET,boxscore,L,,3-10,@,Arizona Cardinals,13,43,20,288,156,132,6,21,357,146,211,1,-31.20,1.17,2.44
+15,Sun,December 19,4:15PM ET,boxscore,L,,3-11,@,Oakland Raiders,23,39,9,235,129,106,1,20,502,238,264,3,-6.73,-3.97,-5.53
+16,Sun,December 26,4:06PM ET,boxscore,W,,4-11,,Houston Texans,24,23,25,431,305,126,1,21,401,310,91,1,14.14,-9.19,-4.78
+17,Sun,January 2,4:15PM ET,boxscore,L,,4-12,,San Diego Chargers,28,33,18,337,191,146,2,20,447,283,164,1,-4.77,-6.50,5.94

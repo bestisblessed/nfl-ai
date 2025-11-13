@@ -1,0 +1,18 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 7,1:02PM ET,boxscore,W,,1-0,@,Kansas City Chiefs,26,10,24,405,243,162,,15,245,178,67,3,5.18,8.60,3.59
+2,Sun,September 14,1:03PM ET,boxscore,L,,1-1,,Dallas Cowboys,10,26,13,314,232,82,2,26,368,148,220,1,-4.97,-6.30,-6.76
+3,Sun,September 21,1:02PM ET,boxscore,L,,1-2,@,Cincinnati Bengals,7,33,22,326,177,149,2,25,300,184,116,1,-6.29,-7.25,-12.85
+4,Sun,September 28,1:03PM ET,boxscore,L,,1-3,@,Indianapolis Colts,17,41,16,261,176,85,3,31,498,393,105,1,-10.08,-20.65,0.82
+5,Sun,October 5,1:02PM ET,boxscore,L,,1-4,,Cleveland Browns,28,29,22,410,261,149,,27,460,284,176,1,16.88,-12.99,-2.89
+6,Sun,October 12,1:02PM ET,boxscore,W,,2-4,,Jacksonville Jaguars,16,14,14,290,220,70,,27,379,297,82,2,-0.41,-0.87,3.71
+7,Sun,October 19,1:02PM ET,boxscore,L,,2-5,@,Washington Redskins,17,19,14,236,160,76,2,16,351,251,100,2,-3.14,-0.46,2.06
+8,Sun,October 26,1:03PM ET,boxscore,L,,2-6,,Houston Texans,16,30,13,326,290,36,2,24,405,193,212,,-9.92,-8.19,2.95
+9,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+10,Sun,November 9,1:03PM ET,boxscore,L,,2-7,@,Baltimore Ravens,7,21,14,210,143,67,2,18,312,161,151,,-15.27,-4.96,3.88
+11,Mon,November 17,8:30PM ET,boxscore,L,,2-8,,Pittsburgh Steelers,24,27,14,312,263,49,1,29,386,180,206,1,6.52,-10.97,1.00
+12,Sun,November 23,1:02PM ET,boxscore,L,,2-9,@,Philadelphia Eagles,24,43,16,351,299,52,3,26,462,298,164,2,-8.37,-5.97,-4.66
+13,Sun,November 30,1:02PM ET,boxscore,L,,2-10,@,Houston Texans,21,45,19,320,237,83,4,24,457,358,99,1,-11.83,-15.34,3.28
+14,Sun,December 7,1:03PM ET,boxscore,L,,2-11,,New York Giants,7,36,12,207,146,61,3,19,402,260,142,1,-28.18,0.78,-1.98
+15,Sun,December 14,4:05PM ET,boxscore,L,,2-12,,New York Jets,11,16,17,342,253,89,1,17,277,163,114,,-9.52,1.84,2.03
+16,Thu,December 18,8:26PM ET,boxscore,L,,2-13,@,Jacksonville Jaguars,13,21,19,357,262,95,,17,288,111,177,,1.39,0.08,-2.15
+17,Sun,December 28,1:02PM ET,boxscore,L,,2-14,,Indianapolis Colts,10,27,9,192,50,142,1,16,378,314,64,,-21.01,-2.83,7.89

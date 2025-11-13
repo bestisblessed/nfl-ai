@@ -1,0 +1,18 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 9,1:02PM ET,boxscore,W,,1-0,,Indianapolis Colts,41,21,26,428,314,114,1,22,356,293,63,5,9.73,1.77,6.73
+2,Thu,September 13,8:29PM ET,boxscore,L,,1-1,@,Green Bay Packers,10,23,11,168,74,94,4,19,321,215,106,2,-19.08,3.30,0.91
+3,Sun,September 23,1:04PM ET,boxscore,W,,2-1,,St. Louis Rams,23,6,20,274,171,103,1,12,160,101,59,2,-7.19,21.86,2.34
+4,Mon,October 1,8:40PM ET,boxscore,W,,3-1,@,Dallas Cowboys,34,18,18,360,267,93,1,26,430,389,41,5,8.38,5.32,4.07
+5,Sun,October 7,4:05PM ET,boxscore,W,,4-1,@,Jacksonville Jaguars,41,3,26,501,287,214,1,10,189,129,60,3,20.18,26.48,-7.35
+6,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+7,Mon,October 22,8:40PM ET,boxscore,W,,5-1,,Detroit Lions,13,7,19,296,125,171,,21,340,243,97,4,-6.21,9.26,4.53
+8,Sun,October 28,1:03PM ET,boxscore,W,,6-1,,Carolina Panthers,23,22,18,210,131,79,3,21,416,297,119,2,-6.46,0.41,4.51
+9,Sun,November 4,1:04PM ET,boxscore,W,,7-1,@,Tennessee Titans,51,20,21,365,205,160,1,12,339,180,159,5,1.04,25.97,5.31
+10,Sun,November 11,8:31PM ET,boxscore,L,,7-2,,Houston Texans,6,13,8,249,134,115,4,13,215,88,127,2,-26.28,15.99,1.41
+11,Mon,November 19,8:40PM ET,boxscore,L,,7-3,@,San Francisco 49ers,7,32,12,143,58,85,2,18,353,232,121,,-14.69,-13.46,1.65
+12,Sun,November 25,1:00PM ET,boxscore,W,,8-3,,Minnesota Vikings,28,10,23,296,183,113,2,15,258,144,114,3,0.25,15.90,0.52
+13,Sun,December 2,1:03PM ET,boxscore,L,OT,8-4,,Seattle Seahawks,17,23,22,365,233,132,,25,459,283,176,1,10.51,-14.55,0.30
+14,Sun,December 9,1:05PM ET,boxscore,L,,8-5,@,Minnesota Vikings,14,21,22,438,320,118,2,17,248,77,171,1,-2.49,1.72,-3.97
+15,Sun,December 16,1:03PM ET,boxscore,L,,8-6,,Green Bay Packers,13,21,12,190,107,83,1,20,391,278,113,2,-7.52,-8.11,8.23
+16,Sun,December 23,4:25PM ET,boxscore,W,,9-6,@,Arizona Cardinals,28,13,15,297,145,152,1,15,248,219,29,3,-1.84,30.96,-13.88
+17,Sun,December 30,1:03PM ET,boxscore,W,,10-6,@,Detroit Lions,26,24,19,389,245,144,,20,327,255,72,4,2.73,1.32,0.87

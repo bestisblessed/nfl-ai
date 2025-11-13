@@ -1,0 +1,20 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 8,1:04PM ET,boxscore,L,,0-1,,Seattle Seahawks,7,12,17,253,119,134,2,18,370,300,70,1,3.41,-2.56,-7.04
+2,Sun,September 15,1:02PM ET,boxscore,L,,0-2,@,Buffalo Bills,23,24,25,308,183,125,1,24,436,287,149,2,-0.32,-8.72,7.39
+3,Sun,September 22,1:03PM ET,boxscore,W,,1-2,,New York Giants,38,0,27,402,208,194,2,10,150,90,60,3,13.72,23.56,1.20
+4,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+5,Sun,October 6,4:05PM ET,boxscore,L,,1-3,@,Arizona Cardinals,6,22,21,353,258,95,4,19,250,160,90,3,-18.28,8.23,-6.15
+6,Sun,October 13,1:05PM ET,boxscore,W,,2-3,@,Minnesota Vikings,35,10,22,367,236,131,,17,290,215,75,2,22.96,5.46,-4.57
+7,Sun,October 20,1:03PM ET,boxscore,W,,3-3,,St. Louis Rams,30,15,21,282,180,102,,15,317,254,63,3,3.35,13.00,-0.50
+8,Thu,October 24,8:29PM ET,boxscore,W,,4-3,@,Tampa Bay Buccaneers,31,13,21,324,195,129,,19,297,249,48,1,11.11,6.74,-2.23
+9,Sun,November 3,1:03PM ET,boxscore,W,,5-3,,Atlanta Falcons,34,10,27,373,242,131,2,12,289,211,78,4,12.95,14.39,-1.55
+10,Sun,November 10,4:05PM ET,boxscore,W,,6-3,@,San Francisco 49ers,10,9,15,250,141,109,2,10,151,46,105,2,-9.90,22.93,-8.81
+11,Mon,November 18,8:42PM ET,boxscore,W,,7-3,,New England Patriots,24,20,20,300,197,103,,28,390,283,107,2,17.75,-13.91,-0.63
+12,Sun,November 24,1:03PM ET,boxscore,W,,8-3,@,Miami Dolphins,20,16,20,295,159,136,1,13,332,280,52,1,-3.88,5.54,3.71
+13,Sun,December 1,1:04PM ET,boxscore,W,,9-3,,Tampa Bay Buccaneers,27,6,20,426,263,163,2,10,206,140,66,2,11.42,15.24,-0.49
+14,Sun,December 8,8:30PM ET,boxscore,L,,9-4,@,New Orleans Saints,13,31,16,239,111,128,,24,373,304,69,,-2.10,-18.20,3.54
+15,Sun,December 15,4:05PM ET,boxscore,W,,10-4,,New York Jets,30,20,21,392,261,131,,19,297,140,157,1,10.60,-0.43,2.56
+16,Sun,December 22,1:04PM ET,boxscore,W,,11-4,,New Orleans Saints,17,13,10,222,141,81,1,20,365,239,126,2,-7.24,11.03,-2.62
+17,Sun,December 29,1:05PM ET,boxscore,W,,12-4,@,Atlanta Falcons,21,20,16,283,149,134,2,20,307,231,76,1,1.85,1.88,-0.96
+,,Playoffs,,,,,,,,,,,,,,,,,,,,,,
+Division,Sun,January 12,1:05PM ET,boxscore,L,,12-5,,San Francisco 49ers,10,23,18,325,232,93,2,21,315,189,126,,2.72,-11.99,-1.23

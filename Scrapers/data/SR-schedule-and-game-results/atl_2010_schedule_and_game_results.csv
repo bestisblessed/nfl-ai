@@ -1,0 +1,20 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 12,1:02PM ET,boxscore,L,OT,0-1,@,Pittsburgh Steelers,9,15,18,295,237,58,1,14,354,211,143,1,-9.70,3.34,0.36
+2,Sun,September 19,1:03PM ET,boxscore,W,,1-1,,Arizona Cardinals,41,7,33,444,223,221,1,11,267,149,118,3,20.26,12.23,0.76
+3,Sun,September 26,1:03PM ET,boxscore,W,OT,2-1,@,New Orleans Saints,27,24,25,417,215,202,1,20,398,355,43,3,12.68,-12.19,-0.01
+4,Sun,October 3,1:03PM ET,boxscore,W,,3-1,,San Francisco 49ers,16,14,23,357,259,98,2,17,262,181,81,3,2.45,0.55,-1.94
+5,Sun,October 10,1:03PM ET,boxscore,W,,4-1,@,Cleveland Browns,20,10,17,338,173,165,1,18,269,221,48,3,1.70,13.33,-6.09
+6,Sun,October 17,1:02PM ET,boxscore,L,,4-2,@,Philadelphia Eagles,17,31,20,293,228,65,2,23,474,320,154,1,-1.27,-17.37,2.51
+7,Sun,October 24,1:05PM ET,boxscore,W,,5-2,,Cincinnati Bengals,39,32,22,452,299,153,2,28,469,385,84,1,16.21,-13.90,6.67
+8,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+9,Sun,November 7,1:02PM ET,boxscore,W,,6-2,,Tampa Bay Buccaneers,27,21,26,365,235,130,,14,278,182,96,2,16.39,-2.56,-6.62
+10,Thu,November 11,8:31PM ET,boxscore,W,,7-2,,Baltimore Ravens,26,21,23,362,302,60,,20,320,204,116,2,11.77,-10.61,4.06
+11,Sun,November 21,4:05PM ET,boxscore,W,,8-2,@,St. Louis Rams,34,17,24,391,253,138,,15,304,233,71,1,12.25,1.25,-0.03
+12,Sun,November 28,1:02PM ET,boxscore,W,,9-2,,Green Bay Packers,20,17,19,294,177,117,,22,418,341,77,1,7.87,-14.07,6.74
+13,Sun,December 5,4:16PM ET,boxscore,W,,10-2,@,Tampa Bay Buccaneers,28,24,20,290,205,85,2,19,325,174,151,1,1.08,-0.74,7.20
+14,Sun,December 12,1:03PM ET,boxscore,W,,11-2,@,Carolina Panthers,31,10,24,327,200,127,1,13,288,76,212,2,8.66,13.85,-5.15
+15,Sun,December 19,4:06PM ET,boxscore,W,,12-2,@,Seattle Seahawks,34,18,21,266,168,98,1,15,234,143,91,3,2.29,14.38,2.29
+16,Mon,December 27,8:40PM ET,boxscore,L,,12-3,,New Orleans Saints,14,17,14,215,140,75,2,23,368,296,72,2,-9.80,7.34,-1.22
+17,Sun,January 2,1:03PM ET,boxscore,W,,13-3,,Carolina Panthers,31,10,24,352,253,99,1,12,291,154,137,2,3.61,10.04,10.08
+,,Playoffs,,,,,,,,,,,,,,,,,,,,,,
+Division,Sat,January 15,8:15PM ET,boxscore,L,,13-4,,Green Bay Packers,21,48,15,194,149,45,4,28,442,346,96,1,-11.75,-26.24,11.45

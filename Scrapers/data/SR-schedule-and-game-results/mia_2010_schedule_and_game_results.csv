@@ -1,0 +1,18 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 12,1:02PM ET,boxscore,W,,1-0,@,Buffalo Bills,15,10,19,296,164,132,,9,166,116,50,,-1.95,10.47,-5.53
+2,Sun,September 19,1:05PM ET,boxscore,W,,2-0,@,Minnesota Vikings,14,10,12,226,106,120,2,22,364,208,156,4,-10.50,14.30,1.14
+3,Sun,September 26,8:30PM ET,boxscore,L,,2-1,,New York Jets,23,31,24,436,352,84,1,20,402,256,146,,9.80,-18.22,-0.57
+4,Mon,October 4,8:41PM ET,boxscore,L,,2-2,,New England Patriots,14,41,23,400,308,92,4,19,265,146,119,,-3.70,-6.85,-16.32
+5,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+6,Sun,October 17,1:02PM ET,boxscore,W,OT,3-2,@,Green Bay Packers,23,20,26,381,231,150,1,16,359,283,76,1,0.75,-6.45,9.52
+7,Sun,October 24,1:02PM ET,boxscore,L,,3-3,,Pittsburgh Steelers,22,23,15,313,249,64,2,15,348,290,58,2,-5.33,-2.32,4.93
+8,Sun,October 31,1:06PM ET,boxscore,W,,4-3,@,Cincinnati Bengals,22,14,20,354,217,137,2,16,262,156,106,1,2.04,3.73,0.92
+9,Sun,November 7,1:02PM ET,boxscore,L,,4-4,@,Baltimore Ravens,10,26,17,289,216,73,3,23,402,256,146,,-6.15,-9.85,0.41
+10,Sun,November 14,1:02PM ET,boxscore,W,,5-4,,Tennessee Titans,29,17,21,404,316,88,1,15,259,124,135,3,8.40,6.71,-2.21
+11,Thu,November 18,8:29PM ET,boxscore,L,,5-5,,Chicago Bears,0,16,10,187,148,39,1,19,268,133,135,1,-16.20,4.54,-0.32
+12,Sun,November 28,4:05PM ET,boxscore,W,,6-5,@,Oakland Raiders,33,17,24,471,285,186,1,11,263,247,16,3,10.20,13.22,-9.40
+13,Sun,December 5,1:02PM ET,boxscore,L,,6-6,,Cleveland Browns,10,13,17,281,167,114,3,12,252,200,52,,-14.89,11.68,0.22
+14,Sun,December 12,4:15PM ET,boxscore,W,,7-6,@,New York Jets,10,6,6,131,30,101,3,14,280,193,87,2,-32.55,28.03,9.83
+15,Sun,December 19,1:02PM ET,boxscore,L,,7-7,,Buffalo Bills,14,17,22,326,261,65,2,15,282,211,71,1,2.59,1.78,-5.11
+16,Sun,December 26,1:03PM ET,boxscore,L,,7-8,,Detroit Lions,27,34,28,425,271,154,3,14,275,208,67,,5.19,-4.95,-5.08
+17,Sun,January 2,1:02PM ET,boxscore,L,,7-9,@,New England Patriots,7,38,16,250,206,44,2,24,502,321,181,1,-8.56,-17.17,-6.72

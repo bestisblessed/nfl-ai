@@ -1,0 +1,21 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 9,4:25PM ET,boxscore,L,,0-1,,San Francisco 49ers,22,30,21,324,279,45,1,22,377,191,186,,2.61,-11.61,0.57
+2,Thu,September 13,8:29PM ET,boxscore,W,,1-1,,Chicago Bears,23,10,19,321,215,106,2,11,168,74,94,4,-3.30,19.08,-0.91
+3,Mon,September 24,8:41PM ET,boxscore,L,,1-2,@,Seattle Seahawks,12,14,22,268,184,84,,14,238,111,127,,2.33,-0.56,-3.33
+4,Sun,September 30,4:25PM ET,boxscore,W,,2-2,,New Orleans Saints,28,27,30,421,319,102,2,25,474,429,45,,19.25,-18.01,0.23
+5,Sun,October 7,1:03PM ET,boxscore,L,,2-3,@,Indianapolis Colts,27,30,21,356,207,149,1,28,464,345,119,1,9.02,-10.06,-2.47
+6,Sun,October 14,8:30PM ET,boxscore,W,,3-3,@,Houston Texans,42,24,25,427,328,99,,23,321,231,90,3,19.84,-0.13,-2.97
+7,Sun,October 21,1:00PM ET,boxscore,W,,4-3,@,St. Louis Rams,30,20,22,402,332,70,,19,354,246,108,1,16.12,-6.08,-2.56
+8,Sun,October 28,1:05PM ET,boxscore,W,,5-3,,Jacksonville Jaguars,24,15,20,238,172,66,1,18,341,279,62,1,-2.95,9.74,5.91
+9,Sun,November 4,1:02PM ET,boxscore,W,,6-3,,Arizona Cardinals,31,17,20,384,208,176,1,16,340,286,54,2,6.76,5.45,3.98
+10,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+11,Sun,November 18,1:02PM ET,boxscore,W,,7-3,@,Detroit Lions,24,20,16,314,219,95,1,19,362,252,110,4,-0.13,11.88,-7.95
+12,Sun,November 25,8:30PM ET,boxscore,L,,7-4,@,New York Giants,10,38,16,317,201,116,2,23,390,243,147,,-7.00,-18.49,-0.86
+13,Sun,December 2,1:02PM ET,boxscore,W,,8-4,,Minnesota Vikings,23,14,22,435,283,152,1,16,359,119,240,2,13.97,-5.09,-3.87
+14,Sun,December 9,8:30PM ET,boxscore,W,,9-4,,Detroit Lions,27,20,15,288,148,140,1,27,386,251,135,2,3.30,-2.15,6.97
+15,Sun,December 16,1:03PM ET,boxscore,W,,10-4,@,Chicago Bears,21,13,20,391,278,113,2,12,190,107,83,1,8.11,7.52,-8.23
+16,Sun,December 23,1:02PM ET,boxscore,W,,11-4,,Tennessee Titans,55,7,28,460,343,117,,10,180,101,79,2,21.70,24.22,1.12
+17,Sun,December 30,4:25PM ET,boxscore,L,,11-5,@,Minnesota Vikings,34,37,24,405,333,72,1,25,444,227,217,,17.78,-21.59,0.81
+,,Playoffs,,,,,,,,,,,,,,,,,,,,,,
+Wild Card,Sat,January 5,8:09PM ET,boxscore,W,,12-5,,Minnesota Vikings,24,10,20,326,250,76,,17,324,157,167,3,5.96,7.53,-0.56
+Division,Sat,January 12,8:25PM ET,boxscore,L,,12-6,@,San Francisco 49ers,31,45,20,352,248,104,2,29,579,256,323,1,16.00,-25.88,-5.15

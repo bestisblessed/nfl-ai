@@ -1,0 +1,18 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 7,1:03PM ET,boxscore,W,OT,1-0,,New Orleans Saints,37,34,28,568,445,123,1,30,472,333,139,2,25.42,-21.85,-0.57
+2,Sun,September 14,1:05PM ET,boxscore,L,,1-1,@,Cincinnati Bengals,10,24,19,309,212,97,3,21,472,302,170,,-9.30,-16.28,10.47
+3,Thu,September 18,8:26PM ET,boxscore,W,,2-1,,Tampa Bay Buccaneers,56,14,26,488,344,144,4,10,217,153,64,5,13.83,29.00,-4.23
+4,Sun,September 28,4:25PM ET,boxscore,L,,2-2,@,Minnesota Vikings,28,41,23,411,288,123,2,26,558,317,241,,12.49,-29.12,1.75
+5,Sun,October 5,1:03PM ET,boxscore,L,,2-3,@,New York Giants,20,30,20,397,307,90,1,22,317,193,124,2,5.00,-14.28,1.67
+6,Sun,October 12,4:25PM ET,boxscore,L,,2-4,,Chicago Bears,13,27,12,287,245,42,1,23,478,375,103,,-5.71,-18.63,10.93
+7,Sun,October 19,1:02PM ET,boxscore,L,,2-5,@,Baltimore Ravens,7,29,16,254,186,68,1,23,371,248,123,3,-12.84,-8.68,0.92
+8,Sun,October 26,9:37AM ET,boxscore,L,,2-6,,Detroit Lions,21,22,22,291,213,78,1,22,385,325,60,1,7.54,-8.90,0.34
+9,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+10,Sun,November 9,1:04PM ET,boxscore,W,,3-6,@,Tampa Bay Buccaneers,27,17,19,322,212,110,,23,373,281,92,3,10.77,-4.35,2.73
+11,Sun,November 16,1:03PM ET,boxscore,W,,4-6,@,Carolina Panthers,19,17,22,346,260,86,1,22,391,285,106,2,-2.99,-3.54,12.19
+12,Sun,November 23,1:02PM ET,boxscore,L,,4-7,,Cleveland Browns,24,26,21,315,252,63,2,29,475,313,162,3,5.61,-12.62,7.20
+13,Sun,November 30,4:05PM ET,boxscore,W,,5-7,,Arizona Cardinals,29,18,22,500,358,142,1,18,329,294,35,3,4.38,6.22,2.49
+14,Mon,December 8,8:30PM ET,boxscore,L,,5-8,@,Green Bay Packers,37,43,26,465,374,91,1,28,502,323,179,,24.43,-26.32,-6.22
+15,Sun,December 14,1:02PM ET,boxscore,L,,5-9,,Pittsburgh Steelers,20,27,20,407,310,97,1,22,398,353,45,,9.79,-15.49,-2.51
+16,Sun,December 21,1:03PM ET,boxscore,W,,6-9,@,New Orleans Saints,30,14,18,403,322,81,,22,328,271,57,4,8.28,13.90,-5.62
+17,Sun,December 28,4:25PM ET,boxscore,L,,6-10,,Carolina Panthers,3,34,16,288,225,63,3,17,306,112,194,,-27.86,-5.19,4.34

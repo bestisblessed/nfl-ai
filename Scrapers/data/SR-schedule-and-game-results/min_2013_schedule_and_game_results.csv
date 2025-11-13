@@ -1,0 +1,18 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 8,1:02PM ET,boxscore,L,,0-1,@,Detroit Lions,24,34,16,330,225,105,4,28,469,357,112,2,-3.05,-8.66,0.22
+2,Sun,September 15,1:03PM ET,boxscore,L,,0-2,@,Chicago Bears,30,31,19,350,227,123,3,24,411,284,127,4,-3.26,0.92,-1.56
+3,Sun,September 22,1:05PM ET,boxscore,L,,0-3,,Cleveland Browns,27,31,21,329,195,134,3,23,409,306,103,4,-8.17,-0.57,5.36
+4,Sun,September 29,1:07PM ET,boxscore,W,,1-3,,Pittsburgh Steelers,34,27,16,393,248,145,,29,434,357,77,2,18.11,-15.57,2.66
+5,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+6,Sun,October 13,1:05PM ET,boxscore,L,,1-4,,Carolina Panthers,10,35,17,290,215,75,2,22,367,236,131,,-5.46,-22.96,4.57
+7,Mon,October 21,8:40PM ET,boxscore,L,,1-5,@,New York Giants,7,23,13,206,176,30,3,17,257,193,64,1,-21.60,7.36,-1.65
+8,Sun,October 27,8:30PM ET,boxscore,L,,1-6,,Green Bay Packers,31,44,15,243,132,111,,26,464,282,182,,13.44,-28.39,3.18
+9,Sun,November 3,1:03PM ET,boxscore,L,,1-7,@,Dallas Cowboys,23,27,22,393,224,169,2,20,350,314,36,1,5.82,-5.61,-2.09
+10,Thu,November 7,8:35PM ET,boxscore,W,,2-7,,Washington Redskins,34,27,22,307,216,91,1,27,433,242,191,,15.89,-15.72,5.91
+11,Sun,November 17,4:26PM ET,boxscore,L,,2-8,@,Seattle Seahawks,20,41,19,336,204,132,4,16,323,230,93,,-10.84,-9.06,-1.76
+12,Sun,November 24,1:02PM ET,boxscore,T,OT,2-8-1,@,Green Bay Packers,26,26,28,447,215,232,1,30,494,298,196,,5.62,-11.26,7.68
+13,Sun,December 1,1:05PM ET,boxscore,W,OT,3-8-1,,Chicago Bears,23,20,28,496,250,246,1,20,480,345,135,1,9.65,-7.84,3.99
+14,Sun,December 8,1:03PM ET,boxscore,L,,3-9-1,@,Baltimore Ravens,26,29,15,379,265,114,1,23,325,228,97,3,-1.21,9.53,-9.74
+15,Sun,December 15,1:02PM ET,boxscore,W,,4-9-1,,Philadelphia Eagles,48,30,29,455,370,85,1,25,475,396,79,1,25.24,-11.84,2.01
+16,Sun,December 22,1:02PM ET,boxscore,L,,4-10-1,@,Cincinnati Bengals,14,42,10,209,94,115,4,24,426,345,81,1,-24.18,-13.18,8.50
+17,Sun,December 29,1:05PM ET,boxscore,W,,5-10-1,,Detroit Lions,14,13,19,345,171,174,2,14,245,182,63,,-1.76,7.60,-1.17

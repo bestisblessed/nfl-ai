@@ -1,0 +1,20 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 12,1:02PM ET,boxscore,W,,1-0,,Cincinnati Bengals,38,24,20,376,258,118,,26,428,341,87,2,15.94,-10.45,-0.01
+2,Sun,September 19,4:16PM ET,boxscore,L,,1-1,@,New York Jets,14,28,20,291,239,52,3,23,336,200,136,,3.86,-14.80,-1.60
+3,Sun,September 26,1:02PM ET,boxscore,W,,2-1,,Buffalo Bills,38,30,25,445,245,200,1,19,374,240,134,2,21.52,-7.72,-4.21
+4,Mon,October 4,8:41PM ET,boxscore,W,,3-1,@,Miami Dolphins,41,14,19,265,146,119,,23,400,308,92,4,6.85,3.70,16.32
+5,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+6,Sun,October 17,1:02PM ET,boxscore,W,OT,4-1,,Baltimore Ravens,23,20,23,394,267,127,2,21,377,278,99,,1.30,-3.74,4.59
+7,Sun,October 24,4:15PM ET,boxscore,W,,5-1,@,San Diego Chargers,23,20,15,179,128,51,,23,363,325,38,4,-4.80,5.76,3.61
+8,Sun,October 31,4:15PM ET,boxscore,W,,6-1,,Minnesota Vikings,28,18,18,362,240,122,,23,410,285,125,1,16.12,-4.41,-3.10
+9,Sun,November 7,1:02PM ET,boxscore,L,,6-2,@,Cleveland Browns,14,34,19,283,215,68,3,22,404,174,230,1,1.33,-16.31,-5.16
+10,Sun,November 14,8:30PM ET,boxscore,W,,7-2,@,Pittsburgh Steelers,39,26,26,453,350,103,,27,425,349,76,1,14.60,-9.29,2.65
+11,Sun,November 21,4:15PM ET,boxscore,W,,8-2,,Indianapolis Colts,31,28,22,346,178,168,,28,467,396,71,3,18.18,-20.15,4.02
+12,Thu,November 25,12:38PM ET,boxscore,W,,9-2,@,Detroit Lions,45,24,20,447,338,109,,25,406,277,129,2,28.10,-6.23,-2.52
+13,Mon,December 6,8:40PM ET,boxscore,W,,10-2,,New York Jets,45,3,23,405,304,101,,18,301,149,152,3,27.83,10.55,0.42
+14,Sun,December 12,4:16PM ET,boxscore,W,,11-2,@,Chicago Bears,36,7,27,475,351,124,,12,185,138,47,4,17.55,20.99,-8.57
+15,Sun,December 19,8:30PM ET,boxscore,W,,12-2,,Green Bay Packers,31,27,14,249,136,113,,26,369,226,143,2,5.47,-4.76,4.20
+16,Sun,December 26,1:02PM ET,boxscore,W,,13-2,@,Buffalo Bills,34,3,20,348,131,217,,16,369,244,125,7,4.14,22.08,4.55
+17,Sun,January 2,1:02PM ET,boxscore,W,,14-2,,Miami Dolphins,38,7,24,502,321,181,1,16,250,206,44,2,17.17,8.56,6.72
+,,Playoffs,,,,,,,,,,,,,,,,,,,,,,
+Division,Sun,January 16,4:40PM ET,boxscore,L,,14-3,,New York Jets,21,28,26,372,259,113,1,14,314,194,120,,-6.26,-9.99,6.57

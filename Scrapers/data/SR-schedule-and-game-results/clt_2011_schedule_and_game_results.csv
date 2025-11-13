@@ -1,0 +1,18 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 11,1:05PM ET,boxscore,L,,0-1,@,Houston Texans,7,34,15,236,172,64,2,26,384,217,167,3,-14.41,-2.60,-8.14
+2,Sun,September 18,1:02PM ET,boxscore,L,,0-2,,Cleveland Browns,19,27,19,285,176,109,2,18,303,197,106,1,-5.72,-3.08,-2.24
+3,Sun,September 25,8:30PM ET,boxscore,L,,0-3,,Pittsburgh Steelers,20,23,14,241,144,97,1,19,408,341,67,3,-11.18,6.04,2.33
+4,Mon,October 3,8:40PM ET,boxscore,L,,0-4,@,Tampa Bay Buccaneers,17,24,13,318,256,62,1,25,466,274,192,,1.82,-13.28,1.62
+5,Sun,October 9,1:02PM ET,boxscore,L,,0-5,,Kansas City Chiefs,24,28,15,355,277,78,,26,436,242,194,,8.34,-17.83,2.55
+6,Sun,October 16,1:02PM ET,boxscore,L,,0-6,@,Cincinnati Bengals,17,27,18,273,179,94,3,17,358,264,94,,-7.83,-4.50,-1.48
+7,Sun,October 23,8:30PM ET,boxscore,L,,0-7,@,New Orleans Saints,7,62,11,252,97,155,3,36,557,321,236,,-15.54,-41.78,4.18
+8,Sun,October 30,1:02PM ET,boxscore,L,,0-8,@,Tennessee Titans,10,27,22,399,241,158,2,17,311,215,96,,-7.70,0.10,-8.61
+9,Sun,November 6,1:02PM ET,boxscore,L,,0-9,,Atlanta Falcons,7,31,10,186,103,83,2,21,432,269,163,1,-18.38,-9.51,2.13
+10,Sun,November 13,1:02PM ET,boxscore,L,,0-10,,Jacksonville Jaguars,3,17,17,212,128,84,3,18,251,110,141,1,-19.69,2.48,6.29
+11,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+12,Sun,November 27,1:03PM ET,boxscore,L,,0-11,,Carolina Panthers,19,27,17,323,218,105,2,22,377,176,201,1,0.45,-8.25,-0.74
+13,Sun,December 4,1:02PM ET,boxscore,L,,0-12,@,New England Patriots,24,31,26,437,338,99,2,24,362,289,73,,13.40,-17.29,-5.22
+14,Sun,December 11,1:02PM ET,boxscore,L,,0-13,@,Baltimore Ravens,10,24,12,167,117,50,1,24,358,212,146,2,-11.34,-5.24,1.36
+15,Sun,December 18,1:03PM ET,boxscore,W,,1-13,,Tennessee Titans,27,13,10,287,82,205,1,21,388,322,66,3,-5.79,16.37,1.31
+16,Thu,December 22,8:29PM ET,boxscore,W,,2-13,,Houston Texans,19,16,24,320,225,95,1,14,283,112,171,1,-0.55,4.69,-1.44
+17,Sun,January 1,1:03PM ET,boxscore,L,,2-14,@,Jacksonville Jaguars,13,19,19,298,242,56,3,15,261,71,190,1,-5.13,4.14,-4.23

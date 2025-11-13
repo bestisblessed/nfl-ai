@@ -1,0 +1,18 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 8,1:03PM ET,boxscore,L,,0-1,,Kansas City Chiefs,2,28,12,178,107,71,2,17,292,171,121,,-34.00,0.89,6.19
+2,Sun,September 15,4:25PM ET,boxscore,L,,0-2,@,Oakland Raiders,9,19,15,248,214,34,,16,340,114,226,1,-6.46,1.25,-3.87
+3,Sun,September 22,4:26PM ET,boxscore,L,,0-3,@,Seattle Seahawks,17,45,17,265,214,51,3,28,479,323,156,2,-14.72,-17.42,2.93
+4,Sun,September 29,1:06PM ET,boxscore,L,,0-4,,Indianapolis Colts,3,37,14,205,165,40,3,26,437,280,157,1,-23.58,-14.26,6.43
+5,Sun,October 6,1:00PM ET,boxscore,L,,0-5,@,St. Louis Rams,20,34,16,363,267,96,3,22,351,208,143,,-15.27,-8.35,7.86
+6,Sun,October 13,4:05PM ET,boxscore,L,,0-6,@,Denver Broncos,19,35,20,362,291,71,2,26,407,295,112,3,-10.73,-7.61,2.73
+7,Sun,October 20,1:02PM ET,boxscore,L,,0-7,,San Diego Chargers,6,24,18,353,275,78,1,27,434,276,158,,-3.62,-16.26,2.24
+8,Sun,October 27,1:07PM ET,boxscore,L,,0-8,,San Francisco 49ers,10,42,20,318,228,90,1,25,398,177,221,1,-8.10,-20.89,1.73
+9,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+10,Sun,November 10,1:02PM ET,boxscore,W,,1-8,@,Tennessee Titans,29,27,13,214,160,54,2,19,362,279,83,4,-11.38,9.53,5.60
+11,Sun,November 17,1:04PM ET,boxscore,L,,1-9,,Arizona Cardinals,14,27,14,274,242,32,2,19,416,402,14,,-12.18,-4.73,1.59
+12,Sun,November 24,1:02PM ET,boxscore,W,,2-9,@,Houston Texans,13,6,16,333,215,118,,11,218,141,77,1,0.61,14.08,-6.10
+13,Sun,December 1,1:02PM ET,boxscore,W,,3-9,@,Cleveland Browns,32,28,22,314,202,112,1,24,439,342,97,3,3.18,-1.52,6.44
+14,Thu,December 5,8:29PM ET,boxscore,W,,4-9,,Houston Texans,27,20,18,281,132,149,,23,406,323,83,2,7.27,2.03,1.06
+15,Sun,December 15,1:02PM ET,boxscore,L,,4-10,,Buffalo Bills,20,27,22,354,195,159,4,25,366,168,198,2,-10.24,-4.12,4.62
+16,Sun,December 22,1:02PM ET,boxscore,L,,4-11,,Tennessee Titans,16,20,15,289,226,63,1,22,346,164,182,1,-2.58,-3.75,1.20
+17,Sun,December 29,1:02PM ET,boxscore,L,,4-12,@,Indianapolis Colts,10,30,19,350,308,42,2,23,379,299,80,,-9.89,-14.25,4.60

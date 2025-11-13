@@ -1,0 +1,20 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 11,1:05PM ET,boxscore,L,,0-1,@,Baltimore Ravens,7,35,20,312,246,66,7,17,385,215,170,,-21.78,-9.72,3.57
+2,Sun,September 18,1:02PM ET,boxscore,W,,1-1,,Seattle Seahawks,24,0,23,421,297,124,,8,164,133,31,,14.59,13.64,-6.35
+3,Sun,September 25,8:30PM ET,boxscore,W,,2-1,@,Indianapolis Colts,23,20,19,408,341,67,3,14,241,144,97,1,-6.04,11.18,-2.33
+4,Sun,October 2,1:03PM ET,boxscore,L,,2-2,@,Houston Texans,10,17,20,296,178,118,1,17,318,138,180,,0.03,-7.74,1.56
+5,Sun,October 9,1:02PM ET,boxscore,W,,3-2,,Tennessee Titans,38,17,26,431,257,174,1,20,306,240,66,1,25.86,-2.52,-6.42
+6,Sun,October 16,1:02PM ET,boxscore,W,,4-2,,Jacksonville Jaguars,17,13,15,370,185,185,,16,209,76,133,,6.72,8.87,-12.18
+7,Sun,October 23,4:05PM ET,boxscore,W,,5-2,@,Arizona Cardinals,32,20,26,445,354,91,,23,330,257,73,1,19.16,-9.76,6.42
+8,Sun,October 30,4:15PM ET,boxscore,W,,6-2,,New England Patriots,25,17,29,427,329,98,1,19,213,170,43,,10.61,-1.83,2.86
+9,Sun,November 6,8:30PM ET,boxscore,L,,6-3,,Baltimore Ravens,20,23,20,392,322,70,2,23,356,289,67,1,9.52,-12.60,0.08
+10,Sun,November 13,1:02PM ET,boxscore,W,,7-3,@,Cincinnati Bengals,24,17,24,328,223,105,1,14,279,170,109,2,6.07,4.55,-3.90
+11,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+12,Sun,November 27,8:31PM ET,boxscore,W,,8-3,@,Kansas City Chiefs,13,9,18,290,182,108,2,15,252,162,90,4,-8.35,14.57,-3.24
+13,Sun,December 4,1:02PM ET,boxscore,W,,9-3,,Cincinnati Bengals,35,7,22,295,159,136,,13,232,128,104,2,9.71,8.79,9.40
+14,Thu,December 8,8:28PM ET,boxscore,W,,10-3,,Cleveland Browns,14,3,20,416,269,147,3,19,304,206,98,2,-0.18,9.23,0.45
+15,Mon,December 19,9:00PM ET,boxscore,L,,10-4,@,San Francisco 49ers,3,20,20,389,305,84,4,17,287,187,100,,-9.33,3.57,-10.53
+16,Sat,December 24,1:02PM ET,boxscore,W,,11-4,,St. Louis Rams,27,0,17,377,208,169,1,15,232,68,164,,11.08,9.81,0.82
+17,Sun,January 1,4:16PM ET,boxscore,W,,12-4,@,Cleveland Browns,13,9,22,360,199,161,2,14,240,168,72,1,-2.16,9.98,-6.56
+,,Playoffs,,,,,,,,,,,,,,,,,,,,,,
+Wild Card,Sun,January 8,4:40PM ET,boxscore,L,OT,12-5,@,Denver Broncos,23,29,21,400,244,156,1,18,447,316,131,1,6.77,-14.16,2.17

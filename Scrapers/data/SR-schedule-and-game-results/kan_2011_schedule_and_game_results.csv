@@ -1,0 +1,18 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 11,1:06PM ET,boxscore,L,,0-1,,Buffalo Bills,7,41,13,213,105,108,3,23,364,201,163,1,-14.87,-12.56,-5.86
+2,Sun,September 18,1:02PM ET,boxscore,L,,0-2,@,Detroit Lions,3,48,12,267,116,151,6,23,411,322,89,1,-23.45,-17.01,-4.96
+3,Sun,September 25,4:05PM ET,boxscore,L,,0-3,@,San Diego Chargers,17,20,13,252,171,81,1,22,375,258,117,2,-1.50,-1.94,-0.03
+4,Sun,October 2,1:02PM ET,boxscore,W,,1-3,,Minnesota Vikings,22,17,15,350,247,103,,17,341,190,151,1,4.53,-2.23,4.41
+5,Sun,October 9,1:02PM ET,boxscore,W,,2-3,@,Indianapolis Colts,28,24,26,436,242,194,,15,355,277,78,,17.83,-8.34,-2.55
+6,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+7,Sun,October 23,7:05PM ET,boxscore,W,,3-3,@,Oakland Raiders,28,0,22,300,161,139,2,18,322,167,155,6,1.84,31.95,-2.69
+8,Mon,October 31,8:40PM ET,boxscore,W,OT,4-3,,San Diego Chargers,23,20,19,341,247,94,4,22,447,345,102,4,-7.12,9.48,0.37
+9,Sun,November 6,1:03PM ET,boxscore,L,,4-4,,Miami Dolphins,3,31,20,343,227,116,,17,351,244,107,,-12.57,-14.45,1.06
+10,Sun,November 13,1:03PM ET,boxscore,L,,4-5,,Denver Broncos,10,17,17,258,124,134,,16,313,69,244,,-6.66,-2.73,-0.01
+11,Mon,November 21,8:40PM ET,boxscore,L,,4-6,@,New England Patriots,3,34,16,334,209,125,3,20,380,223,157,1,-13.31,-10.81,-4.42
+12,Sun,November 27,8:31PM ET,boxscore,L,,4-7,,Pittsburgh Steelers,9,13,15,252,162,90,4,18,290,182,108,2,-14.57,8.35,3.24
+13,Sun,December 4,1:03PM ET,boxscore,W,,5-7,@,Chicago Bears,10,3,13,252,139,113,1,11,181,88,93,3,-11.36,25.79,-7.43
+14,Sun,December 11,1:02PM ET,boxscore,L,,5-8,@,New York Jets,10,37,13,221,156,65,1,24,314,155,159,1,-15.74,-12.22,-0.65
+15,Sun,December 18,1:03PM ET,boxscore,W,,6-8,,Green Bay Packers,19,14,23,438,299,139,,16,315,213,102,,9.30,-1.27,-1.90
+16,Sat,December 24,1:03PM ET,boxscore,L,OT,6-9,,Oakland Raiders,13,16,26,435,300,135,2,13,308,237,71,2,-1.99,6.51,-7.52
+17,Sun,January 1,4:16PM ET,boxscore,W,,7-9,@,Denver Broncos,7,3,14,281,175,106,1,16,266,50,216,2,-2.99,13.12,-5.40

@@ -1,0 +1,18 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 12,1:02PM ET,boxscore,W,,1-0,,Indianapolis Colts,34,24,23,355,98,257,1,25,463,419,44,1,17.43,-16.62,10.28
+2,Sun,September 19,4:15PM ET,boxscore,W,OT,2-0,@,Washington Redskins,30,27,29,526,468,58,1,21,421,403,18,,21.02,-14.04,-0.62
+3,Sun,September 26,1:02PM ET,boxscore,L,,2-1,,Dallas Cowboys,13,27,24,340,216,124,3,21,385,284,101,,2.66,-14.61,-2.64
+4,Sun,October 3,4:05PM ET,boxscore,W,,3-1,@,Oakland Raiders,31,24,21,441,192,249,,24,363,245,118,3,17.32,-2.09,-4.55
+5,Sun,October 10,1:03PM ET,boxscore,L,,3-2,,New York Giants,10,34,11,195,171,24,2,26,414,297,117,2,-17.85,-6.57,-1.65
+6,Sun,October 17,1:03PM ET,boxscore,W,,4-2,,Kansas City Chiefs,35,31,23,421,289,132,,25,417,189,228,,24.02,-21.90,1.12
+7,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+8,Mon,November 1,8:41PM ET,boxscore,L,,4-3,@,Indianapolis Colts,17,30,19,291,183,108,2,24,366,259,107,,-6.68,-7.36,3.11
+9,Sun,November 7,1:02PM ET,boxscore,L,,4-4,,San Diego Chargers,23,29,25,392,252,140,1,18,367,290,77,2,6.40,-12.05,2.48
+10,Sun,November 14,1:04PM ET,boxscore,L,,4-5,@,Jacksonville Jaguars,24,31,20,395,314,81,1,29,491,326,165,,13.34,-24.68,4.02
+11,Sun,November 21,1:03PM ET,boxscore,L,,4-6,@,New York Jets,27,30,17,343,246,97,1,22,401,298,103,2,2.06,-3.16,-1.75
+12,Sun,November 28,1:02PM ET,boxscore,W,,5-6,,Tennessee Titans,20,0,24,346,158,188,,9,162,138,24,3,2.70,19.54,-3.35
+13,Thu,December 2,8:30PM ET,boxscore,L,,5-7,@,Philadelphia Eagles,24,34,27,431,323,108,2,22,416,301,115,1,9.77,-19.01,0.72
+14,Mon,December 13,8:40PM ET,boxscore,L,OT,5-8,,Baltimore Ravens,28,34,28,489,378,111,2,19,253,190,63,,10.05,-5.21,-13.44
+15,Sun,December 19,1:02PM ET,boxscore,L,,5-9,@,Tennessee Titans,17,31,26,323,293,30,1,19,359,212,147,1,-0.51,-14.68,-0.50
+16,Sun,December 26,4:06PM ET,boxscore,L,,5-10,@,Denver Broncos,23,24,21,401,310,91,1,25,431,305,126,1,9.19,-14.14,4.78
+17,Sun,January 2,4:15PM ET,boxscore,W,,6-10,,Jacksonville Jaguars,34,17,22,497,253,244,,23,322,124,198,2,22.44,-6.01,-0.28

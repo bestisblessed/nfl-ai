@@ -1,0 +1,21 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Thu,September 10,8:40PM ET,boxscore,W,,1-0,,Pittsburgh Steelers,28,21,26,361,281,80,,23,464,330,134,1,20.02,-17.01,1.30
+2,Sun,September 20,1:02PM ET,boxscore,W,,2-0,@,Buffalo Bills,40,32,28,507,451,56,2,23,349,189,160,3,6.15,-5.24,7.57
+3,Sun,September 27,1:06PM ET,boxscore,W,,3-0,,Jacksonville Jaguars,51,17,35,471,346,125,,15,293,236,57,1,36.41,-0.60,-2.35
+4,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+5,Sun,October 11,4:25PM ET,boxscore,W,,4-0,@,Dallas Cowboys,30,6,20,356,247,109,,18,289,187,102,2,7.94,15.25,-0.38
+6,Sun,October 18,8:30PM ET,boxscore,W,,5-0,@,Indianapolis Colts,34,27,22,417,301,116,1,24,409,289,120,,11.67,-6.55,3.83
+7,Sun,October 25,1:02PM ET,boxscore,W,,6-0,,New York Jets,30,23,20,353,337,16,,25,372,283,89,1,11.28,-10.33,3.42
+8,Thu,October 29,8:26PM ET,boxscore,W,,7-0,,Miami Dolphins,36,7,24,437,342,95,,18,270,255,15,2,13.71,10.95,4.67
+9,Sun,November 8,1:02PM ET,boxscore,W,,8-0,,Washington Redskins,27,10,27,460,299,161,2,16,250,213,37,2,12.06,7.34,-3.71
+10,Sun,November 15,4:31PM ET,boxscore,W,,9-0,@,New York Giants,27,26,22,406,329,77,2,21,422,342,80,1,6.31,-10.17,6.92
+11,Mon,November 23,8:30PM ET,boxscore,W,,10-0,,Buffalo Bills,20,13,18,356,271,85,1,16,319,225,94,1,1.75,1.49,3.36
+12,Sun,November 29,8:30PM ET,boxscore,L,OT,10-1,@,Denver Broncos,24,30,16,301,262,39,1,23,433,254,179,1,-2.09,-6.80,1.42
+13,Sun,December 6,4:25PM ET,boxscore,L,,10-2,,Philadelphia Eagles,28,35,27,427,324,103,2,15,248,120,128,1,0.42,2.29,-11.55
+14,Sun,December 13,8:31PM ET,boxscore,W,,11-2,@,Houston Texans,27,6,18,313,197,116,1,7,189,102,87,1,3.18,23.12,-5.49
+15,Sun,December 20,1:02PM ET,boxscore,W,,12-2,,Tennessee Titans,33,16,17,346,253,93,1,15,282,223,59,3,4.76,15.56,-4.63
+16,Sun,December 27,1:02PM ET,boxscore,L,OT,12-3,@,New York Jets,20,26,16,284,221,63,1,24,428,285,143,1,2.18,-7.60,-0.48
+17,Sun,January 3,1:02PM ET,boxscore,L,,12-4,@,Miami Dolphins,10,20,12,196,126,70,,20,438,342,96,,-8.91,-7.05,3.15
+,,Playoffs,,,,,,,,,,,,,,,,,,,,,,
+Division,Sat,January 16,4:35PM ET,boxscore,W,,13-4,,Kansas City Chiefs,27,20,21,340,302,38,,27,378,243,135,1,12.79,-6.75,1.22
+Conf. Champ.,Sun,January 24,3:05PM ET,boxscore,L,,13-5,@,Denver Broncos,18,20,20,336,292,44,2,12,244,145,99,1,-11.95,11.11,-3.99

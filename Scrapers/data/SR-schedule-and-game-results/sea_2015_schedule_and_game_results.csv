@@ -1,0 +1,21 @@
+Week,Day,Date,Time,Boxscore,Outcome,OT,Rec,Home/Away,Opp,Tm,OppPts,1stD,TotYd,PassY,RushY,TO_lost,Opp1stD,OppTotYd,OppPassY,OppRushY,TO_won,Offense,Defense,Sp. Tms
+1,Sun,September 13,1:00PM ET,boxscore,L,OT,0-1,@,St. Louis Rams,31,34,21,343,219,124,1,19,352,276,76,3,-0.42,-2.17,-1.27
+2,Sun,September 20,8:25PM ET,boxscore,L,,0-2,@,Green Bay Packers,17,27,21,324,205,119,2,21,361,234,127,1,1.19,-9.99,-3.78
+3,Sun,September 27,4:26PM ET,boxscore,W,,1-2,,Chicago Bears,26,0,17,371,212,159,,7,146,48,98,,5.55,15.20,5.65
+4,Mon,October 5,8:31PM ET,boxscore,W,,2-2,,Detroit Lions,13,10,18,345,235,110,3,12,256,203,53,1,-5.50,11.11,-0.86
+5,Sun,October 11,1:03PM ET,boxscore,L,OT,2-3,@,Cincinnati Bengals,24,27,16,397,197,200,1,27,419,310,109,2,4.91,-4.67,-3.24
+6,Sun,October 18,4:06PM ET,boxscore,L,,2-4,,Carolina Panthers,23,27,14,334,219,115,,25,383,248,135,2,1.10,-7.39,4.77
+7,Thu,October 22,8:26PM ET,boxscore,W,,3-4,@,San Francisco 49ers,20,3,21,388,212,176,2,8,142,81,61,,6.26,15.72,-3.58
+8,Sun,November 1,4:25PM ET,boxscore,W,,4-4,@,Dallas Cowboys,13,12,19,323,210,113,1,14,220,91,129,,0.06,7.75,-2.69
+9,,,,,,,,,Bye Week,,,,,,,,,,,,,,,
+10,Sun,November 15,8:35PM ET,boxscore,L,,4-5,,Arizona Cardinals,32,39,18,343,228,115,1,30,451,334,117,3,1.63,-0.17,-3.81
+11,Sun,November 22,4:27PM ET,boxscore,W,,5-5,,San Francisco 49ers,29,13,28,508,253,255,,14,306,247,59,,22.52,-0.81,-4.37
+12,Sun,November 29,4:26PM ET,boxscore,W,,6-5,,Pittsburgh Steelers,39,30,21,436,336,100,,26,538,480,58,4,19.17,-11.85,1.22
+13,Sun,December 6,1:02PM ET,boxscore,W,,7-5,@,Minnesota Vikings,38,7,25,433,260,173,1,9,125,94,31,1,22.77,19.85,-10.05
+14,Sun,December 13,1:02PM ET,boxscore,W,,8-5,@,Baltimore Ravens,35,6,28,424,301,123,1,16,302,274,28,2,23.57,10.51,-4.75
+15,Sun,December 20,4:06PM ET,boxscore,W,,9-5,,Cleveland Browns,30,13,28,423,241,182,,15,230,136,94,1,24.95,-2.56,-4.50
+16,Sun,December 27,4:26PM ET,boxscore,L,,9-6,,St. Louis Rams,17,23,18,312,253,59,3,14,205,103,102,,-6.39,-0.49,0.15
+17,Sun,January 3,4:25PM ET,boxscore,W,,10-6,@,Arizona Cardinals,36,6,22,354,209,145,,16,232,205,27,3,13.93,8.68,11.90
+,,Playoffs,,,,,,,,,,,,,,,,,,,,,,
+Wild Card,Sun,January 10,1:05PM ET,boxscore,W,,11-6,@,Minnesota Vikings,10,9,13,226,129,97,1,14,183,125,58,1,-8.95,10.17,0.97
+Division,Sun,January 17,1:06PM ET,boxscore,L,,11-7,@,Carolina Panthers,24,31,23,403,325,78,2,19,295,151,144,,5.96,-8.35,-6.08
