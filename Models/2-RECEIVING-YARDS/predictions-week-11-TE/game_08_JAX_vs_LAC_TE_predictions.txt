@@ -5,14 +5,14 @@ JAX vs LAC | Week 11 2025 | TE Projected Receiving Yards
 +--------------+--------------+    +-------------------+--------------+
 | JAX Player   |   Pred Yards |    | LAC Player        |   Pred Yards |
 +==============+==============+    +===================+==============+
-| Johnny Mundt |         11   |    | Oronde Gadsden II |         50.5 |
-| Hunter Long  |          4.9 |    | Tyler Conklin     |         19.2 |
-+--------------+--------------+    | Will Dissly       |         17.2 |
+| Johnny Mundt |         11.2 |    | Oronde Gadsden II |         52.3 |
+| Hunter Long  |          5.1 |    | Tyler Conklin     |         18.1 |
++--------------+--------------+    | Will Dissly       |         17.6 |
                                    +-------------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total TEs: 5 (2 JAX, 3 LAC)
-Top Projection: Oronde Gadsden II (LAC) - 50.5 yards
+Top Projection: Oronde Gadsden II (LAC) - 52.3 yards
 ================================================================================

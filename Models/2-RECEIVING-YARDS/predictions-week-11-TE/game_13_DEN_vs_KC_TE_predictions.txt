@@ -5,14 +5,14 @@ DEN vs KC | Week 11 2025 | TE Projected Receiving Yards
 +---------------+--------------+    +--------------+--------------+
 | DEN Player    |   Pred Yards |    | KC Player    |   Pred Yards |
 +===============+==============+    +==============+==============+
-| Evan Engram   |         36   |    | Travis Kelce |         71.5 |
-| Adam Trautman |         11.3 |    | Noah Gray    |         15.1 |
-| Nate Adkins   |          6.9 |    +--------------+--------------+
+| Evan Engram   |         35.6 |    | Travis Kelce |         65.5 |
+| Adam Trautman |         12.6 |    | Noah Gray    |         15.2 |
+| Nate Adkins   |          6.6 |    +--------------+--------------+
 +---------------+--------------+    
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total TEs: 5 (3 DEN, 2 KC)
-Top Projection: Travis Kelce (KC) - 71.5 yards
+Top Projection: Travis Kelce (KC) - 65.5 yards
 ================================================================================

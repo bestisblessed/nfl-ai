@@ -5,14 +5,14 @@ DEN vs KC | Week 11 2025 | RB Projected Rushing Yards
 +--------------+--------------+    +----------------+--------------+
 | DEN Player   |   Pred Yards |    | KC Player      |   Pred Yards |
 +==============+==============+    +================+==============+
-| J.K. Dobbins |         63.8 |    | Isiah Pacheco  |         43.5 |
-| RJ Harvey    |         11.2 |    | Kareem Hunt    |         35.6 |
-+--------------+--------------+    | Brashard Smith |          8.4 |
+| J.K. Dobbins |         66.5 |    | Isiah Pacheco  |         44   |
+| RJ Harvey    |         10.2 |    | Kareem Hunt    |         33.7 |
++--------------+--------------+    | Brashard Smith |          7.9 |
                                    +----------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total RBs: 5 (2 DEN, 3 KC)
-Top Projection: J.K. Dobbins (DEN) - 63.8 yards
+Top Projection: J.K. Dobbins (DEN) - 66.5 yards
 ================================================================================

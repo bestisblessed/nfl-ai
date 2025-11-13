@@ -5,14 +5,14 @@ TEN vs HOU | Week 11 2025 | RB Projected Rushing Yards
 +-----------------+--------------+    +---------------+--------------+
 | TEN Player      |   Pred Yards |    | HOU Player    |   Pred Yards |
 +=================+==============+    +===============+==============+
-| Tony Pollard    |         48   |    | Nick Chubb    |         50   |
-| Tyjae Spears    |         23.2 |    | Woody Marks   |         23.6 |
-| Julius Chestnut |          4.2 |    | Dameon Pierce |         20.9 |
+| Tony Pollard    |         47.8 |    | Nick Chubb    |         49.6 |
+| Tyjae Spears    |         23.6 |    | Woody Marks   |         25.3 |
+| Julius Chestnut |          4.9 |    | Dameon Pierce |         20.4 |
 +-----------------+--------------+    +---------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total RBs: 6 (3 TEN, 3 HOU)
-Top Projection: Nick Chubb (HOU) - 50.0 yards
+Top Projection: Nick Chubb (HOU) - 49.6 yards
 ================================================================================

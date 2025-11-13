@@ -5,16 +5,16 @@ ATL vs CAR | Week 11 2025 | Projected Receiving Yards
 +------------------+--------------+    +-------------------+--------------+
 | ATL Player       |   Pred Yards |    | CAR Player        |   Pred Yards |
 +==================+==============+    +===================+==============+
-| Drake London     |         75.5 |    | Tetairoa McMillan |         59.7 |
-| Darnell Mooney   |         37.5 |    | Xavier Legette    |         28.9 |
-| Casey Washington |         15   |    | Jalen Coker       |         28.4 |
-+------------------+--------------+    | Hunter Renfrow    |         21.9 |
-                                       | Brycen Tremayne   |         11.6 |
+| Drake London     |         67.8 |    | Tetairoa McMillan |         62.4 |
+| Darnell Mooney   |         35   |    | Jalen Coker       |         29.2 |
+| Casey Washington |         14.5 |    | Xavier Legette    |         28.9 |
++------------------+--------------+    | Hunter Renfrow    |         27.2 |
+                                       | Brycen Tremayne   |         11.3 |
                                        +-------------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total WRs: 8 (3 ATL, 5 CAR)
-Top Projection: Drake London (ATL) - 75.5 yards
+Top Projection: Drake London (ATL) - 67.8 yards
 ================================================================================

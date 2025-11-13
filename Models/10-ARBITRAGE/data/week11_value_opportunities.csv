@@ -1,152 +1,215 @@
 player,position,team,opp,prop_type,market,predicted_yards,side,best_point,best_price,bookmaker,edge_yards,home_team,away_team,commence_time
-Jacoby Brissett,QB,ARI,SF,Passing Yards,player_pass_yds,226.86835,Under,245.5,-115.0,Hard Rock Bet,18.631650000000008,Arizona Cardinals,San Francisco 49ers,2025-11-16 21:05:00+00:00
-Trey McBride,TE,ARI,SF,Receiving Yards,player_reception_yds,62.418983,Under,70.5,-111.0,DraftKings,8.081017000000003,Arizona Cardinals,San Francisco 49ers,2025-11-16 21:05:00+00:00
-Marvin Harrison Jr.,WR,ARI,SF,Receiving Yards,player_reception_yds,51.77614,Under,56.5,-110.0,DraftKings,4.723860000000002,Arizona Cardinals,San Francisco 49ers,2025-11-16 21:05:00+00:00
-Michael Wilson,WR,ARI,SF,Receiving Yards,player_reception_yds,31.822899,Under,32.5,-120.0,Fliff,0.6771010000000004,Arizona Cardinals,San Francisco 49ers,2025-11-16 21:05:00+00:00
-Michael Penix Jr.,QB,ATL,CAR,Passing Yards,player_pass_yds,219.82953,Under,229.5,-115.0,ESPN BET,9.670469999999995,Atlanta Falcons,Carolina Panthers,2025-11-16 18:00:00+00:00
-Drake London,WR,ATL,CAR,Receiving Yards,player_reception_yds,75.467804,Over,72.5,-115.0,Hard Rock Bet,2.967804000000001,Atlanta Falcons,Carolina Panthers,2025-11-16 18:00:00+00:00
-Kyle Pitts,TE,ATL,CAR,Receiving Yards,player_reception_yds,40.73748,Under,49.5,-114.0,DraftKings,8.762520000000002,Atlanta Falcons,Carolina Panthers,2025-11-16 18:00:00+00:00
-Bijan Robinson,RB,ATL,CAR,Receiving Yards,player_reception_yds,32.820457,Under,37.5,-114.0,betPARX,4.6795430000000025,Atlanta Falcons,Carolina Panthers,2025-11-16 18:00:00+00:00
-Bijan Robinson,RB,ATL,CAR,Rushing Yards,player_rush_yds,73.216225,Over,69.5,-125.0,ESPN BET,3.7162249999999943,Atlanta Falcons,Carolina Panthers,2025-11-16 18:00:00+00:00
-Lamar Jackson,QB,BAL,CLE,Passing Yards,player_pass_yds,222.89972,Over,209.5,-114.0,FanDuel,13.399720000000002,Cleveland Browns,Baltimore Ravens,2025-11-16 21:25:00+00:00
-Zay Flowers,WR,BAL,CLE,Receiving Yards,player_reception_yds,60.254475,Over,58.5,-113.0,DraftKings,1.7544749999999993,Cleveland Browns,Baltimore Ravens,2025-11-16 21:25:00+00:00
-Mark Andrews,TE,BAL,CLE,Receiving Yards,player_reception_yds,35.262726,Over,28.5,-137.0,PrizePicks,6.762726000000001,Cleveland Browns,Baltimore Ravens,2025-11-16 21:25:00+00:00
-Derrick Henry,RB,BAL,CLE,Receiving Yards,player_reception_yds,7.3035684,Over,4.5,-137.0,PrizePicks,2.8035683999999996,Cleveland Browns,Baltimore Ravens,2025-11-16 21:25:00+00:00
-Derrick Henry,RB,BAL,CLE,Rushing Yards,player_rush_yds,85.20541,Over,68.5,-130.0,Hard Rock Bet,16.70541,Cleveland Browns,Baltimore Ravens,2025-11-16 21:25:00+00:00
-Josh Allen,QB,BUF,TB,Passing Yards,player_pass_yds,227.29895,Under,239.5,-115.0,Hard Rock Bet,12.20105000000001,Buffalo Bills,Tampa Bay Buccaneers,2025-11-16 18:00:00+00:00
-Khalil Shakir,WR,BUF,TB,Receiving Yards,player_reception_yds,47.56031,Under,50.5,-120.0,Fliff,2.939689999999999,Buffalo Bills,Tampa Bay Buccaneers,2025-11-16 18:00:00+00:00
-Keon Coleman,WR,BUF,TB,Receiving Yards,player_reception_yds,28.146675,Under,43.5,-115.0,Hard Rock Bet,15.353325000000002,Buffalo Bills,Tampa Bay Buccaneers,2025-11-16 18:00:00+00:00
-James Cook,RB,BUF,TB,Rushing Yards,player_rush_yds,54.012512,Under,79.5,-115.0,Hard Rock Bet,25.487488,Buffalo Bills,Tampa Bay Buccaneers,2025-11-16 18:00:00+00:00
-Bryce Young,QB,CAR,ATL,Passing Yards,player_pass_yds,191.99294,Over,159.5,-125.0,ESPN BET,32.492940000000004,Atlanta Falcons,Carolina Panthers,2025-11-16 18:00:00+00:00
-Tetairoa McMillan,WR,CAR,ATL,Receiving Yards,player_reception_yds,59.74202,Over,53.5,-115.0,Hard Rock Bet,6.242019999999997,Atlanta Falcons,Carolina Panthers,2025-11-16 18:00:00+00:00
-Xavier Legette,WR,CAR,ATL,Receiving Yards,player_reception_yds,28.868942,Over,20.5,-115.0,Hard Rock Bet,8.368942,Atlanta Falcons,Carolina Panthers,2025-11-16 18:00:00+00:00
-Jalen Coker,WR,CAR,ATL,Receiving Yards,player_reception_yds,28.417717,Over,26.5,-120.0,Fliff,1.9177169999999997,Atlanta Falcons,Carolina Panthers,2025-11-16 18:00:00+00:00
-Ja'Tavion Sanders,TE,CAR,ATL,Receiving Yards,player_reception_yds,13.429969,Under,17.5,-110.0,Hard Rock Bet,4.070031,Atlanta Falcons,Carolina Panthers,2025-11-16 18:00:00+00:00
-Rico Dowdle,RB,CAR,ATL,Receiving Yards,player_reception_yds,6.9918714,Under,15.5,-115.0,Fliff,8.5081286,Atlanta Falcons,Carolina Panthers,2025-11-16 18:00:00+00:00
-Rico Dowdle,RB,CAR,ATL,Rushing Yards,player_rush_yds,54.24435,Under,92.5,-115.0,betPARX,38.25565,Atlanta Falcons,Carolina Panthers,2025-11-16 18:00:00+00:00
-Caleb Williams,QB,CHI,MIN,Passing Yards,player_pass_yds,222.96222,Under,229.5,-112.0,DraftKings,6.537779999999998,Minnesota Vikings,Chicago Bears,2025-11-16 18:00:00+00:00
-DJ Moore,WR,CHI,MIN,Receiving Yards,player_reception_yds,57.554726,Over,46.5,-137.0,PrizePicks,11.054726000000002,Minnesota Vikings,Chicago Bears,2025-11-16 18:00:00+00:00
-Rome Odunze,WR,CHI,MIN,Receiving Yards,player_reception_yds,43.705833,Under,55.5,-137.0,PrizePicks,11.794167000000002,Minnesota Vikings,Chicago Bears,2025-11-16 18:00:00+00:00
-Colston Loveland,TE,CHI,MIN,Receiving Yards,player_reception_yds,29.608158,Over,27.5,-137.0,PrizePicks,2.1081579999999995,Minnesota Vikings,Chicago Bears,2025-11-16 18:00:00+00:00
-D'Andre Swift,RB,CHI,MIN,Rushing Yards,player_rush_yds,60.947876,Over,52.5,-120.0,Fliff,8.447876,Minnesota Vikings,Chicago Bears,2025-11-16 18:00:00+00:00
-Joe Flacco,QB,CIN,PIT,Passing Yards,player_pass_yds,256.8071,Under,270.5,-115.0,Hard Rock Bet,13.692900000000009,Pittsburgh Steelers,Cincinnati Bengals,2025-11-16 18:00:00+00:00
-Ja'Marr Chase,WR,CIN,PIT,Receiving Yards,player_reception_yds,110.97651,Over,89.5,-110.0,ESPN BET,21.476510000000005,Pittsburgh Steelers,Cincinnati Bengals,2025-11-16 18:00:00+00:00
-Tee Higgins,WR,CIN,PIT,Receiving Yards,player_reception_yds,63.838905,Over,54.5,-125.0,ESPN BET,9.338904999999997,Pittsburgh Steelers,Cincinnati Bengals,2025-11-16 18:00:00+00:00
-Noah Fant,TE,CIN,PIT,Receiving Yards,player_reception_yds,30.006042,Over,27.5,-115.0,Hard Rock Bet,2.5060420000000008,Pittsburgh Steelers,Cincinnati Bengals,2025-11-16 18:00:00+00:00
-Andrei Iosivas,WR,CIN,PIT,Receiving Yards,player_reception_yds,23.376202,Under,24.5,-120.0,Fliff,1.1237980000000007,Pittsburgh Steelers,Cincinnati Bengals,2025-11-16 18:00:00+00:00
-Chase Brown,RB,CIN,PIT,Receiving Yards,player_reception_yds,15.573812,Under,21.5,-125.0,Fliff,5.926188,Pittsburgh Steelers,Cincinnati Bengals,2025-11-16 18:00:00+00:00
-Chase Brown,RB,CIN,PIT,Rushing Yards,player_rush_yds,56.763443,Over,47.5,-115.0,Hard Rock Bet,9.263443000000002,Pittsburgh Steelers,Cincinnati Bengals,2025-11-16 18:00:00+00:00
-Dillon Gabriel,QB,CLE,BAL,Passing Yards,player_pass_yds,170.30658,Under,184.5,-115.0,Hard Rock Bet,14.193420000000003,Cleveland Browns,Baltimore Ravens,2025-11-16 21:25:00+00:00
-Jerry Jeudy,WR,CLE,BAL,Receiving Yards,player_reception_yds,53.7391,Over,40.5,-115.0,DraftKings,13.2391,Cleveland Browns,Baltimore Ravens,2025-11-16 21:25:00+00:00
-David Njoku,TE,CLE,BAL,Receiving Yards,player_reception_yds,36.172134,Over,30.5,-137.0,PrizePicks,5.672134,Cleveland Browns,Baltimore Ravens,2025-11-16 21:25:00+00:00
-Quinshon Judkins,RB,CLE,BAL,Rushing Yards,player_rush_yds,67.08996,Under,71.5,-115.0,ESPN BET,4.410039999999995,Cleveland Browns,Baltimore Ravens,2025-11-16 21:25:00+00:00
-Dak Prescott,QB,DAL,LVR,Passing Yards,player_pass_yds,239.15453,Under,263.5,-137.0,PrizePicks,24.345470000000006,Las Vegas Raiders,Dallas Cowboys,2025-11-18 01:15:00+00:00
-CeeDee Lamb,WR,DAL,LVR,Receiving Yards,player_reception_yds,74.57227,Under,82.5,-137.0,PrizePicks,7.927729999999997,Las Vegas Raiders,Dallas Cowboys,2025-11-18 01:15:00+00:00
-George Pickens,WR,DAL,LVR,Receiving Yards,player_reception_yds,58.87279,Under,69.5,-137.0,PrizePicks,10.627209999999998,Las Vegas Raiders,Dallas Cowboys,2025-11-18 01:15:00+00:00
-Jake Ferguson,TE,DAL,LVR,Receiving Yards,player_reception_yds,32.656868,Under,41.5,-137.0,PrizePicks,8.843131999999997,Las Vegas Raiders,Dallas Cowboys,2025-11-18 01:15:00+00:00
-Javonte Williams,RB,DAL,LVR,Rushing Yards,player_rush_yds,60.215168,Under,73.5,-137.0,PrizePicks,13.284832000000002,Las Vegas Raiders,Dallas Cowboys,2025-11-18 01:15:00+00:00
-Bo Nix,QB,DEN,KC,Passing Yards,player_pass_yds,207.77147,Under,224.5,-115.0,Hard Rock Bet,16.728530000000006,Denver Broncos,Kansas City Chiefs,2025-11-16 21:25:00+00:00
-Courtland Sutton,WR,DEN,KC,Receiving Yards,player_reception_yds,57.84126,Over,48.5,-110.0,DraftKings,9.341259999999998,Denver Broncos,Kansas City Chiefs,2025-11-16 21:25:00+00:00
-Evan Engram,TE,DEN,KC,Receiving Yards,player_reception_yds,35.992256,Over,24.5,-115.0,Fliff,11.492255999999998,Denver Broncos,Kansas City Chiefs,2025-11-16 21:25:00+00:00
-Troy Franklin,WR,DEN,KC,Receiving Yards,player_reception_yds,28.887192,Under,41.5,-115.0,ESPN BET,12.612808000000001,Denver Broncos,Kansas City Chiefs,2025-11-16 21:25:00+00:00
-Jared Goff,QB,DET,PHI,Passing Yards,player_pass_yds,263.21994,Over,235.5,-113.0,Bally Bet,27.71994000000001,Philadelphia Eagles,Detroit Lions,2025-11-17 01:20:00+00:00
-Amon-Ra St. Brown,WR,DET,PHI,Receiving Yards,player_reception_yds,81.133606,Over,74.5,-114.0,FanDuel,6.633606,Philadelphia Eagles,Detroit Lions,2025-11-17 01:20:00+00:00
-Sam LaPorta,TE,DET,PHI,Receiving Yards,player_reception_yds,46.490692,Over,38.5,-110.0,Hard Rock Bet,7.990692000000003,Philadelphia Eagles,Detroit Lions,2025-11-17 01:20:00+00:00
-Jameson Williams,WR,DET,PHI,Receiving Yards,player_reception_yds,42.441246,Under,50.5,-137.0,PrizePicks,8.058754,Philadelphia Eagles,Detroit Lions,2025-11-17 01:20:00+00:00
-Jahmyr Gibbs,RB,DET,PHI,Receiving Yards,player_reception_yds,30.171543,Over,20.5,-120.0,Hard Rock Bet,9.671543,Philadelphia Eagles,Detroit Lions,2025-11-17 01:20:00+00:00
-David Montgomery,RB,DET,PHI,Receiving Yards,player_reception_yds,17.327728,Over,8.5,-120.0,Hard Rock Bet,8.827728,Philadelphia Eagles,Detroit Lions,2025-11-17 01:20:00+00:00
-Jahmyr Gibbs,RB,DET,PHI,Rushing Yards,player_rush_yds,75.310844,Over,60.5,-115.0,Bally Bet,14.810844000000003,Philadelphia Eagles,Detroit Lions,2025-11-17 01:20:00+00:00
-David Montgomery,RB,DET,PHI,Rushing Yards,player_rush_yds,50.89456,Over,37.5,-115.0,Hard Rock Bet,13.394559999999998,Philadelphia Eagles,Detroit Lions,2025-11-17 01:20:00+00:00
-Jordan Love,QB,GB,NYG,Passing Yards,player_pass_yds,213.6813,Under,229.5,-115.0,Hard Rock Bet,15.818700000000007,New York Giants,Green Bay Packers,2025-11-16 18:00:00+00:00
-Josh Jacobs,RB,GB,NYG,Rushing Yards,player_rush_yds,71.439964,Under,78.5,-115.0,Hard Rock Bet,7.060035999999997,New York Giants,Green Bay Packers,2025-11-16 18:00:00+00:00
-Nico Collins,WR,HOU,TEN,Receiving Yards,player_reception_yds,57.207565,Under,70.5,-137.0,PrizePicks,13.292434999999998,Tennessee Titans,Houston Texans,2025-11-16 18:00:00+00:00
-Woody Marks,RB,HOU,TEN,Receiving Yards,player_reception_yds,19.329994,Over,18.5,-120.0,Hard Rock Bet,0.8299939999999992,Tennessee Titans,Houston Texans,2025-11-16 18:00:00+00:00
-Woody Marks,RB,HOU,TEN,Rushing Yards,player_rush_yds,23.553114,Under,53.5,-115.0,Hard Rock Bet,29.946886,Tennessee Titans,Houston Texans,2025-11-16 18:00:00+00:00
-Trevor Lawrence,QB,JAX,LAC,Passing Yards,player_pass_yds,207.34074,Under,211.5,-115.0,Hard Rock Bet,4.159259999999989,Jacksonville Jaguars,Los Angeles Chargers,2025-11-16 18:00:00+00:00
-Jakobi Meyers,WR,JAX,LAC,Receiving Yards,player_reception_yds,52.17369,Over,43.5,-115.0,Hard Rock Bet,8.67369,Jacksonville Jaguars,Los Angeles Chargers,2025-11-16 18:00:00+00:00
-Parker Washington,WR,JAX,LAC,Receiving Yards,player_reception_yds,33.786636,Under,47.5,-120.0,Fliff,13.713363999999999,Jacksonville Jaguars,Los Angeles Chargers,2025-11-16 18:00:00+00:00
-Bhayshul Tuten,RB,JAX,LAC,Receiving Yards,player_reception_yds,5.73434,Over,3.5,-115.0,Hard Rock Bet,2.2343400000000004,Jacksonville Jaguars,Los Angeles Chargers,2025-11-16 18:00:00+00:00
-Bhayshul Tuten,RB,JAX,LAC,Rushing Yards,player_rush_yds,16.377102,Under,16.5,-120.0,Fliff,0.12289799999999929,Jacksonville Jaguars,Los Angeles Chargers,2025-11-16 18:00:00+00:00
-Patrick Mahomes,QB,KC,DEN,Passing Yards,player_pass_yds,255.73412,Under,262.5,-115.0,Hard Rock Bet,6.76588000000001,Denver Broncos,Kansas City Chiefs,2025-11-16 21:25:00+00:00
-Rashee Rice,WR,KC,DEN,Receiving Yards,player_reception_yds,79.84938,Over,71.5,-114.0,DraftKings,8.349379999999996,Denver Broncos,Kansas City Chiefs,2025-11-16 21:25:00+00:00
-Travis Kelce,TE,KC,DEN,Receiving Yards,player_reception_yds,71.458855,Over,44.5,-113.0,DraftKings,26.958855,Denver Broncos,Kansas City Chiefs,2025-11-16 21:25:00+00:00
-Xavier Worthy,WR,KC,DEN,Receiving Yards,player_reception_yds,47.05526,Over,39.5,-114.0,DraftKings,7.555259999999997,Denver Broncos,Kansas City Chiefs,2025-11-16 21:25:00+00:00
-Marquise Brown,WR,KC,DEN,Receiving Yards,player_reception_yds,33.664276,Over,21.5,-115.0,Fliff,12.164276000000001,Denver Broncos,Kansas City Chiefs,2025-11-16 21:25:00+00:00
-Kareem Hunt,RB,KC,DEN,Receiving Yards,player_reception_yds,6.0443797,Under,6.5,-120.0,Fliff,0.45562029999999965,Denver Broncos,Kansas City Chiefs,2025-11-16 21:25:00+00:00
-Kareem Hunt,RB,KC,DEN,Rushing Yards,player_rush_yds,35.61754,Under,42.5,-115.0,Hard Rock Bet,6.882460000000002,Denver Broncos,Kansas City Chiefs,2025-11-16 21:25:00+00:00
-Justin Herbert,QB,LAC,JAX,Passing Yards,player_pass_yds,231.68555,Under,246.5,-115.0,Hard Rock Bet,14.814449999999994,Jacksonville Jaguars,Los Angeles Chargers,2025-11-16 18:00:00+00:00
-Ladd McConkey,WR,LAC,JAX,Receiving Yards,player_reception_yds,71.31674,Over,63.5,-115.0,Hard Rock Bet,7.816739999999996,Jacksonville Jaguars,Los Angeles Chargers,2025-11-16 18:00:00+00:00
-Keenan Allen,WR,LAC,JAX,Receiving Yards,player_reception_yds,66.267975,Over,37.5,-120.0,Fliff,28.767975000000007,Jacksonville Jaguars,Los Angeles Chargers,2025-11-16 18:00:00+00:00
-Quentin Johnston,WR,LAC,JAX,Receiving Yards,player_reception_yds,36.753613,Under,54.5,-115.0,Hard Rock Bet,17.746387,Jacksonville Jaguars,Los Angeles Chargers,2025-11-16 18:00:00+00:00
-Kimani Vidal,RB,LAC,JAX,Receiving Yards,player_reception_yds,6.6619096,Under,9.5,-120.0,Fliff,2.8380903999999996,Jacksonville Jaguars,Los Angeles Chargers,2025-11-16 18:00:00+00:00
-Kimani Vidal,RB,LAC,JAX,Rushing Yards,player_rush_yds,39.111324,Under,63.5,-115.0,Hard Rock Bet,24.388675999999997,Jacksonville Jaguars,Los Angeles Chargers,2025-11-16 18:00:00+00:00
-Matthew Stafford,QB,LAR,SEA,Passing Yards,player_pass_yds,272.37817,Over,260.5,-113.0,betPARX,11.878170000000011,Los Angeles Rams,Seattle Seahawks,2025-11-16 21:05:00+00:00
-Puka Nacua,WR,LAR,SEA,Receiving Yards,player_reception_yds,75.30207,Under,89.5,-115.0,betPARX,14.19793,Los Angeles Rams,Seattle Seahawks,2025-11-16 21:05:00+00:00
-Davante Adams,WR,LAR,SEA,Receiving Yards,player_reception_yds,71.06581,Over,61.5,-114.0,DraftKings,9.565809999999999,Los Angeles Rams,Seattle Seahawks,2025-11-16 21:05:00+00:00
-Tyler Higbee,TE,LAR,SEA,Receiving Yards,player_reception_yds,26.255463,Over,21.5,-125.0,Fliff,4.755462999999999,Los Angeles Rams,Seattle Seahawks,2025-11-16 21:05:00+00:00
-Kyren Williams,RB,LAR,SEA,Receiving Yards,player_reception_yds,11.020064,Under,12.5,-110.0,Hard Rock Bet,1.4799360000000004,Los Angeles Rams,Seattle Seahawks,2025-11-16 21:05:00+00:00
-Kyren Williams,RB,LAR,SEA,Rushing Yards,player_rush_yds,76.6329,Over,59.5,-120.0,Hard Rock Bet,17.132900000000006,Los Angeles Rams,Seattle Seahawks,2025-11-16 21:05:00+00:00
-Blake Corum,RB,LAR,SEA,Rushing Yards,player_rush_yds,25.496073,Under,31.5,-110.0,Hard Rock Bet,6.003927000000001,Los Angeles Rams,Seattle Seahawks,2025-11-16 21:05:00+00:00
-Geno Smith,QB,LVR,DAL,Passing Yards,player_pass_yds,196.60066,Under,223.5,-137.0,PrizePicks,26.899339999999995,Las Vegas Raiders,Dallas Cowboys,2025-11-18 01:15:00+00:00
-Brock Bowers,TE,LVR,DAL,Receiving Yards,player_reception_yds,62.444363,Under,67.5,-137.0,PrizePicks,5.055636999999997,Las Vegas Raiders,Dallas Cowboys,2025-11-18 01:15:00+00:00
-Ashton Jeanty,RB,LVR,DAL,Rushing Yards,player_rush_yds,52.84659,Under,61.5,-137.0,PrizePicks,8.653410000000001,Las Vegas Raiders,Dallas Cowboys,2025-11-18 01:15:00+00:00
-Tua Tagovailoa,QB,MIA,WAS,Passing Yards,player_pass_yds,207.79976,Under,237.5,-112.0,BetOnline.ag,29.700240000000008,Miami Dolphins,Washington Commanders,2025-11-16 14:30:00+00:00
-Jaylen Waddle,WR,MIA,WAS,Receiving Yards,player_reception_yds,62.729816,Under,79.5,-110.0,ESPN BET,16.770184,Miami Dolphins,Washington Commanders,2025-11-16 14:30:00+00:00
-De'Von Achane,RB,MIA,WAS,Receiving Yards,player_reception_yds,33.316822,Under,39.5,-115.0,ESPN BET,6.183177999999998,Miami Dolphins,Washington Commanders,2025-11-16 14:30:00+00:00
-Nick Westbrook-Ikhine,WR,MIA,WAS,Receiving Yards,player_reception_yds,19.892422,Over,16.5,-115.0,Hard Rock Bet,3.392422,Miami Dolphins,Washington Commanders,2025-11-16 14:30:00+00:00
-Malik Washington,WR,MIA,WAS,Receiving Yards,player_reception_yds,16.693607,Under,24.5,-120.0,Hard Rock Bet,7.806393,Miami Dolphins,Washington Commanders,2025-11-16 14:30:00+00:00
-De'Von Achane,RB,MIA,WAS,Rushing Yards,player_rush_yds,57.78633,Under,80.5,-110.0,Hard Rock Bet,22.71367,Miami Dolphins,Washington Commanders,2025-11-16 14:30:00+00:00
-J.J. McCarthy,QB,MIN,CHI,Passing Yards,player_pass_yds,169.68565,Under,225.5,-137.0,PrizePicks,55.81434999999999,Minnesota Vikings,Chicago Bears,2025-11-16 18:00:00+00:00
-Justin Jefferson,WR,MIN,CHI,Receiving Yards,player_reception_yds,75.7377,Over,66.5,-125.0,ESPN BET,9.237700000000004,Minnesota Vikings,Chicago Bears,2025-11-16 18:00:00+00:00
-Jordan Addison,WR,MIN,CHI,Receiving Yards,player_reception_yds,55.616615,Over,41.5,-115.0,Hard Rock Bet,14.116615000000003,Minnesota Vikings,Chicago Bears,2025-11-16 18:00:00+00:00
-T.J. Hockenson,TE,MIN,CHI,Receiving Yards,player_reception_yds,38.905518,Over,28.5,-115.0,Hard Rock Bet,10.405518,Minnesota Vikings,Chicago Bears,2025-11-16 18:00:00+00:00
-Jalen Nailor,WR,MIN,CHI,Receiving Yards,player_reception_yds,20.909492,Under,26.5,-120.0,Fliff,5.590508,Minnesota Vikings,Chicago Bears,2025-11-16 18:00:00+00:00
-Aaron Jones,RB,MIN,CHI,Receiving Yards,player_reception_yds,17.478722,Under,20.5,-125.0,Fliff,3.021277999999999,Minnesota Vikings,Chicago Bears,2025-11-16 18:00:00+00:00
-Aaron Jones,RB,MIN,CHI,Rushing Yards,player_rush_yds,44.706726,Under,49.5,-115.0,Hard Rock Bet,4.793273999999997,Minnesota Vikings,Chicago Bears,2025-11-16 18:00:00+00:00
-Jordan Mason,RB,MIN,CHI,Rushing Yards,player_rush_yds,34.275383,Over,29.5,-125.0,Fliff,4.775382999999998,Minnesota Vikings,Chicago Bears,2025-11-16 18:00:00+00:00
-Drake Maye,QB,NE,NYJ,Passing Yards,player_pass_yds,254.1043,Over,238.5,-113.0,DraftKings,15.604299999999995,New England Patriots,New York Jets,2025-11-14 01:15:00+00:00
-Stefon Diggs,WR,NE,NYJ,Receiving Yards,player_reception_yds,59.218426,Over,53.5,-115.0,BetMGM,5.718426000000001,New England Patriots,New York Jets,2025-11-14 01:15:00+00:00
-Hunter Henry,TE,NE,NYJ,Receiving Yards,player_reception_yds,31.85125,Under,34.5,-110.0,BetMGM,2.6487499999999997,New England Patriots,New York Jets,2025-11-14 01:15:00+00:00
-DeMario Douglas,WR,NE,NYJ,Receiving Yards,player_reception_yds,31.548946,Over,21.5,-117.0,Bally Bet,10.048946,New England Patriots,New York Jets,2025-11-14 01:15:00+00:00
-Mack Hollins,WR,NE,NYJ,Receiving Yards,player_reception_yds,18.967762,Under,38.5,-115.0,BetMGM,19.532238,New England Patriots,New York Jets,2025-11-14 01:15:00+00:00
-Breece Hall,RB,NYJ,NE,Receiving Yards,player_reception_yds,21.78915,Over,15.5,-108.0,Pinnacle,6.289149999999999,New England Patriots,New York Jets,2025-11-14 01:15:00+00:00
-Mason Taylor,TE,NYJ,NE,Receiving Yards,player_reception_yds,20.299967,Under,33.5,-110.0,BetMGM,13.200033000000001,New England Patriots,New York Jets,2025-11-14 01:15:00+00:00
-Breece Hall,RB,NYJ,NE,Rushing Yards,player_rush_yds,59.07097,Under,60.5,-118.0,Pinnacle,1.4290299999999974,New England Patriots,New York Jets,2025-11-14 01:15:00+00:00
-Jalen Hurts,QB,PHI,DET,Passing Yards,player_pass_yds,218.5918,Over,199.5,-115.0,Bally Bet,19.091800000000006,Philadelphia Eagles,Detroit Lions,2025-11-17 01:20:00+00:00
-DeVonta Smith,WR,PHI,DET,Receiving Yards,player_reception_yds,65.04033,Over,54.5,-115.0,Hard Rock Bet,10.540329999999997,Philadelphia Eagles,Detroit Lions,2025-11-17 01:20:00+00:00
-Dallas Goedert,TE,PHI,DET,Receiving Yards,player_reception_yds,41.07869,Over,35.5,-120.0,Hard Rock Bet,5.578690000000002,Philadelphia Eagles,Detroit Lions,2025-11-17 01:20:00+00:00
-Saquon Barkley,RB,PHI,DET,Receiving Yards,player_reception_yds,19.135708,Over,16.5,-109.0,DraftKings,2.635708000000001,Philadelphia Eagles,Detroit Lions,2025-11-17 01:20:00+00:00
-Saquon Barkley,RB,PHI,DET,Rushing Yards,player_rush_yds,68.91463,Under,75.5,-115.0,Hard Rock Bet,6.5853699999999975,Philadelphia Eagles,Detroit Lions,2025-11-17 01:20:00+00:00
-Aaron Rodgers,QB,PIT,CIN,Passing Yards,player_pass_yds,228.88606,Under,238.5,-115.0,Hard Rock Bet,9.613940000000014,Pittsburgh Steelers,Cincinnati Bengals,2025-11-16 18:00:00+00:00
-DK Metcalf,WR,PIT,CIN,Receiving Yards,player_reception_yds,56.131832,Over,51.5,-115.0,DraftKings,4.631832000000003,Pittsburgh Steelers,Cincinnati Bengals,2025-11-16 18:00:00+00:00
-Pat Freiermuth,TE,PIT,CIN,Receiving Yards,player_reception_yds,31.280128,Over,24.5,-120.0,Fliff,6.780128000000001,Pittsburgh Steelers,Cincinnati Bengals,2025-11-16 18:00:00+00:00
-Jonnu Smith,TE,PIT,CIN,Receiving Yards,player_reception_yds,24.63921,Over,20.5,-110.0,Hard Rock Bet,4.1392099999999985,Pittsburgh Steelers,Cincinnati Bengals,2025-11-16 18:00:00+00:00
-Calvin Austin III,WR,PIT,CIN,Receiving Yards,player_reception_yds,20.347412,Under,33.5,-115.0,Hard Rock Bet,13.152588000000002,Pittsburgh Steelers,Cincinnati Bengals,2025-11-16 18:00:00+00:00
-Jaylen Warren,RB,PIT,CIN,Receiving Yards,player_reception_yds,19.394054,Over,18.5,-120.0,Fliff,0.8940540000000006,Pittsburgh Steelers,Cincinnati Bengals,2025-11-16 18:00:00+00:00
-Jaylen Warren,RB,PIT,CIN,Rushing Yards,player_rush_yds,54.93711,Under,70.5,-114.0,DraftKings,15.562890000000003,Pittsburgh Steelers,Cincinnati Bengals,2025-11-16 18:00:00+00:00
-Sam Darnold,QB,SEA,LAR,Passing Yards,player_pass_yds,247.52364,Under,254.5,-111.0,DraftKings,6.97636,Los Angeles Rams,Seattle Seahawks,2025-11-16 21:05:00+00:00
-Jaxon Smith-Njigba,WR,SEA,LAR,Receiving Yards,player_reception_yds,89.03336,Under,101.5,-113.0,DraftKings,12.466639999999998,Los Angeles Rams,Seattle Seahawks,2025-11-16 21:05:00+00:00
-Rashid Shaheed,WR,SEA,LAR,Receiving Yards,player_reception_yds,50.831726,Over,30.5,-115.0,betPARX,20.331726000000003,Los Angeles Rams,Seattle Seahawks,2025-11-16 21:05:00+00:00
-Cooper Kupp,WR,SEA,LAR,Receiving Yards,player_reception_yds,45.995113,Over,29.5,-115.0,Hard Rock Bet,16.495113000000003,Los Angeles Rams,Seattle Seahawks,2025-11-16 21:05:00+00:00
-AJ Barner,TE,SEA,LAR,Receiving Yards,player_reception_yds,16.633133,Under,22.5,-110.0,Hard Rock Bet,5.866866999999999,Los Angeles Rams,Seattle Seahawks,2025-11-16 21:05:00+00:00
-Zach Charbonnet,RB,SEA,LAR,Receiving Yards,player_reception_yds,9.79738,Over,4.5,-120.0,Hard Rock Bet,5.29738,Los Angeles Rams,Seattle Seahawks,2025-11-16 21:05:00+00:00
-Kenneth Walker III,RB,SEA,LAR,Receiving Yards,player_reception_yds,8.4931555,Over,5.5,-110.0,Hard Rock Bet,2.9931555000000003,Los Angeles Rams,Seattle Seahawks,2025-11-16 21:05:00+00:00
-Kenneth Walker III,RB,SEA,LAR,Rushing Yards,player_rush_yds,55.559055,Over,42.5,-115.0,Hard Rock Bet,13.059055,Los Angeles Rams,Seattle Seahawks,2025-11-16 21:05:00+00:00
-Zach Charbonnet,RB,SEA,LAR,Rushing Yards,player_rush_yds,32.77501,Under,35.5,-110.0,betPARX,2.7249899999999982,Los Angeles Rams,Seattle Seahawks,2025-11-16 21:05:00+00:00
-Mac Jones,QB,SF,ARI,Passing Yards,player_pass_yds,261.22906,Over,247.5,-115.0,Hard Rock Bet,13.729060000000004,Arizona Cardinals,San Francisco 49ers,2025-11-16 21:05:00+00:00
-Christian McCaffrey,RB,SF,ARI,Receiving Yards,player_reception_yds,48.452057,Under,54.5,-112.0,DraftKings,6.0479429999999965,Arizona Cardinals,San Francisco 49ers,2025-11-16 21:05:00+00:00
-George Kittle,TE,SF,ARI,Receiving Yards,player_reception_yds,39.66398,Under,50.5,-137.0,PrizePicks,10.836019999999998,Arizona Cardinals,San Francisco 49ers,2025-11-16 21:05:00+00:00
-Christian McCaffrey,RB,SF,ARI,Rushing Yards,player_rush_yds,55.145805,Under,72.5,-115.0,Hard Rock Bet,17.354194999999997,Arizona Cardinals,San Francisco 49ers,2025-11-16 21:05:00+00:00
-Baker Mayfield,QB,TB,BUF,Passing Yards,player_pass_yds,247.139,Over,242.5,-120.0,Fliff,4.63900000000001,Buffalo Bills,Tampa Bay Buccaneers,2025-11-16 18:00:00+00:00
-Emeka Egbuka,WR,TB,BUF,Receiving Yards,player_reception_yds,65.96583,Under,72.5,-137.0,PrizePicks,6.534170000000003,Buffalo Bills,Tampa Bay Buccaneers,2025-11-16 18:00:00+00:00
-Tez Johnson,WR,TB,BUF,Receiving Yards,player_reception_yds,35.560383,Under,42.5,-115.0,Hard Rock Bet,6.939616999999998,Buffalo Bills,Tampa Bay Buccaneers,2025-11-16 18:00:00+00:00
-Cade Otton,TE,TB,BUF,Receiving Yards,player_reception_yds,33.705673,Under,47.5,-120.0,Fliff,13.794327000000003,Buffalo Bills,Tampa Bay Buccaneers,2025-11-16 18:00:00+00:00
-Sterling Shepard,WR,TB,BUF,Receiving Yards,player_reception_yds,27.788353,Over,23.5,-110.0,Hard Rock Bet,4.288353000000001,Buffalo Bills,Tampa Bay Buccaneers,2025-11-16 18:00:00+00:00
-Rachaad White,RB,TB,BUF,Rushing Yards,player_rush_yds,39.18666,Over,36.5,-115.0,Hard Rock Bet,2.6866600000000034,Buffalo Bills,Tampa Bay Buccaneers,2025-11-16 18:00:00+00:00
-Cam Ward,QB,TEN,HOU,Passing Yards,player_pass_yds,219.56566,Over,197.5,-120.0,Fliff,22.06566000000001,Tennessee Titans,Houston Texans,2025-11-16 18:00:00+00:00
-Elic Ayomanor,WR,TEN,HOU,Receiving Yards,player_reception_yds,36.917698,Under,37.5,-115.0,Hard Rock Bet,0.5823019999999985,Tennessee Titans,Houston Texans,2025-11-16 18:00:00+00:00
-Chimere Dike,WR,TEN,HOU,Receiving Yards,player_reception_yds,26.430265,Under,32.5,-110.0,Hard Rock Bet,6.069735000000001,Tennessee Titans,Houston Texans,2025-11-16 18:00:00+00:00
-Tony Pollard,RB,TEN,HOU,Receiving Yards,player_reception_yds,12.200035,Over,10.5,-125.0,Fliff,1.7000349999999997,Tennessee Titans,Houston Texans,2025-11-16 18:00:00+00:00
-Tony Pollard,RB,TEN,HOU,Rushing Yards,player_rush_yds,47.9685,Over,39.5,-115.0,Hard Rock Bet,8.468499999999999,Tennessee Titans,Houston Texans,2025-11-16 18:00:00+00:00
-Marcus Mariota,QB,WAS,MIA,Passing Yards,player_pass_yds,186.82881,Under,204.5,-120.0,ESPN BET,17.671189999999996,Miami Dolphins,Washington Commanders,2025-11-16 14:30:00+00:00
-Zach Ertz,TE,WAS,MIA,Receiving Yards,player_reception_yds,35.71048,Under,42.5,-115.0,betPARX,6.789520000000003,Miami Dolphins,Washington Commanders,2025-11-16 14:30:00+00:00
+Jacoby Brissett,QB,ARI,SF,Passing Yards,player_pass_yds,219.56229,Under,239.5,-137.0,PrizePicks,19.93771000000001,Arizona Cardinals,San Francisco 49ers,2025-11-16 21:05:00+00:00
+Trey McBride,TE,ARI,SF,Receiving Yards,player_reception_yds,60.599514,Under,80.5,-110.0,BetMGM,19.900486,Arizona Cardinals,San Francisco 49ers,2025-11-16 21:05:00+00:00
+Michael Wilson,WR,ARI,SF,Receiving Yards,player_reception_yds,33.102192,Under,39.5,-115.0,BetMGM,6.397807999999998,Arizona Cardinals,San Francisco 49ers,2025-11-16 21:05:00+00:00
+Jacoby Brissett,QB,ARI,SF,Rushing Yards,player_rush_yds,7.5950584,Under,17.5,-115.0,BetMGM,9.9049416,Arizona Cardinals,San Francisco 49ers,2025-11-16 21:05:00+00:00
+Michael Penix Jr.,QB,ATL,CAR,Passing Yards,player_pass_yds,224.32675,Under,229.5,-111.0,DraftKings,5.173249999999996,Atlanta Falcons,Carolina Panthers,2025-11-16 18:00:00+00:00
+Drake London,WR,ATL,CAR,Receiving Yards,player_reception_yds,67.78292,Under,79.5,-114.0,BetOnline.ag,11.717079999999996,Atlanta Falcons,Carolina Panthers,2025-11-16 18:00:00+00:00
+Kyle Pitts,TE,ATL,CAR,Receiving Yards,player_reception_yds,39.47909,Under,49.5,-115.0,betPARX,10.02091,Atlanta Falcons,Carolina Panthers,2025-11-16 18:00:00+00:00
+Darnell Mooney,WR,ATL,CAR,Receiving Yards,player_reception_yds,35.01365,Over,29.5,-110.0,Hard Rock Bet,5.513649999999998,Atlanta Falcons,Carolina Panthers,2025-11-16 18:00:00+00:00
+Bijan Robinson,RB,ATL,CAR,Receiving Yards,player_reception_yds,33.588787,Under,37.5,-112.0,betPARX,3.9112129999999965,Atlanta Falcons,Carolina Panthers,2025-11-16 18:00:00+00:00
+Bijan Robinson,RB,ATL,CAR,Rushing Yards,player_rush_yds,70.95138,Under,76.5,-113.0,DraftKings,5.54862,Atlanta Falcons,Carolina Panthers,2025-11-16 18:00:00+00:00
+Tyler Allgeier,RB,ATL,CAR,Rushing Yards,player_rush_yds,22.131767,Under,27.5,-110.0,Hard Rock Bet,5.368233,Atlanta Falcons,Carolina Panthers,2025-11-16 18:00:00+00:00
+Michael Penix Jr.,QB,ATL,CAR,Rushing Yards,player_rush_yds,6.7508717,Under,7.5,-115.0,Hard Rock Bet,0.7491282999999997,Atlanta Falcons,Carolina Panthers,2025-11-16 18:00:00+00:00
+Lamar Jackson,QB,BAL,CLE,Passing Yards,player_pass_yds,219.1075,Over,204.5,-115.0,ESPN BET,14.607499999999987,Cleveland Browns,Baltimore Ravens,2025-11-16 21:25:00+00:00
+Zay Flowers,WR,BAL,CLE,Receiving Yards,player_reception_yds,65.06279,Over,58.5,-110.0,ESPN BET,6.562790000000007,Cleveland Browns,Baltimore Ravens,2025-11-16 21:25:00+00:00
+Mark Andrews,TE,BAL,CLE,Receiving Yards,player_reception_yds,34.774315,Over,28.5,-115.0,DraftKings,6.274315000000001,Cleveland Browns,Baltimore Ravens,2025-11-16 21:25:00+00:00
+Isaiah Likely,TE,BAL,CLE,Receiving Yards,player_reception_yds,25.13001,Over,24.5,-110.0,BetMGM,0.6300099999999986,Cleveland Browns,Baltimore Ravens,2025-11-16 21:25:00+00:00
+Derrick Henry,RB,BAL,CLE,Receiving Yards,player_reception_yds,7.178201,Over,4.5,-137.0,PrizePicks,2.6782009999999996,Cleveland Browns,Baltimore Ravens,2025-11-16 21:25:00+00:00
+Derrick Henry,RB,BAL,CLE,Rushing Yards,player_rush_yds,89.615005,Over,74.5,-120.0,ESPN BET,15.115004999999996,Cleveland Browns,Baltimore Ravens,2025-11-16 21:25:00+00:00
+Lamar Jackson,QB,BAL,CLE,Rushing Yards,player_rush_yds,35.94287,Over,31.5,-115.0,BetMGM,4.442869999999999,Cleveland Browns,Baltimore Ravens,2025-11-16 21:25:00+00:00
+Josh Allen,QB,BUF,TB,Passing Yards,player_pass_yds,226.14503,Under,238.5,-115.0,Hard Rock Bet,12.354970000000009,Buffalo Bills,Tampa Bay Buccaneers,2025-11-16 18:00:00+00:00
+Khalil Shakir,WR,BUF,TB,Receiving Yards,player_reception_yds,49.170185,Over,48.5,-115.0,Hard Rock Bet,0.6701849999999965,Buffalo Bills,Tampa Bay Buccaneers,2025-11-16 18:00:00+00:00
+Keon Coleman,WR,BUF,TB,Receiving Yards,player_reception_yds,27.238394,Under,41.5,-115.0,Hard Rock Bet,14.261606,Buffalo Bills,Tampa Bay Buccaneers,2025-11-16 18:00:00+00:00
+Dawson Knox,TE,BUF,TB,Receiving Yards,player_reception_yds,16.57245,Under,31.5,-115.0,Hard Rock Bet,14.92755,Buffalo Bills,Tampa Bay Buccaneers,2025-11-16 18:00:00+00:00
+James Cook,RB,BUF,TB,Receiving Yards,player_reception_yds,7.997586,Under,12.5,-115.0,Fliff,4.502414,Buffalo Bills,Tampa Bay Buccaneers,2025-11-16 18:00:00+00:00
+James Cook,RB,BUF,TB,Rushing Yards,player_rush_yds,52.16946,Under,79.5,-115.0,Hard Rock Bet,27.33054,Buffalo Bills,Tampa Bay Buccaneers,2025-11-16 18:00:00+00:00
+Josh Allen,QB,BUF,TB,Rushing Yards,player_rush_yds,24.59386,Under,31.5,-120.0,Fliff,6.906140000000001,Buffalo Bills,Tampa Bay Buccaneers,2025-11-16 18:00:00+00:00
+Bryce Young,QB,CAR,ATL,Passing Yards,player_pass_yds,199.23936,Over,161.5,-137.0,PrizePicks,37.739360000000005,Atlanta Falcons,Carolina Panthers,2025-11-16 18:00:00+00:00
+Tetairoa McMillan,WR,CAR,ATL,Receiving Yards,player_reception_yds,62.383,Over,51.5,-115.0,Hard Rock Bet,10.883000000000003,Atlanta Falcons,Carolina Panthers,2025-11-16 18:00:00+00:00
+Jalen Coker,WR,CAR,ATL,Receiving Yards,player_reception_yds,29.215052,Over,26.5,-110.0,BetMGM,2.715052,Atlanta Falcons,Carolina Panthers,2025-11-16 18:00:00+00:00
+Xavier Legette,WR,CAR,ATL,Receiving Yards,player_reception_yds,28.907953,Over,19.5,-118.0,BetMGM,9.407953,Atlanta Falcons,Carolina Panthers,2025-11-16 18:00:00+00:00
+Ja'Tavion Sanders,TE,CAR,ATL,Receiving Yards,player_reception_yds,14.454887,Under,17.5,-125.0,Fliff,3.0451130000000006,Atlanta Falcons,Carolina Panthers,2025-11-16 18:00:00+00:00
+Rico Dowdle,RB,CAR,ATL,Receiving Yards,player_reception_yds,7.329993,Under,15.5,-110.0,Hard Rock Bet,8.170007,Atlanta Falcons,Carolina Panthers,2025-11-16 18:00:00+00:00
+Rico Dowdle,RB,CAR,ATL,Rushing Yards,player_rush_yds,53.62231,Under,92.5,-114.0,betPARX,38.87769,Atlanta Falcons,Carolina Panthers,2025-11-16 18:00:00+00:00
+Bryce Young,QB,CAR,ATL,Rushing Yards,player_rush_yds,6.47518,Under,7.5,-115.0,Hard Rock Bet,1.02482,Atlanta Falcons,Carolina Panthers,2025-11-16 18:00:00+00:00
+Caleb Williams,QB,CHI,MIN,Passing Yards,player_pass_yds,228.19232,Over,223.5,-115.0,BetMGM,4.692319999999995,Minnesota Vikings,Chicago Bears,2025-11-16 18:00:00+00:00
+DJ Moore,WR,CHI,MIN,Receiving Yards,player_reception_yds,56.530243,Over,39.5,-115.0,BetMGM,17.030243,Minnesota Vikings,Chicago Bears,2025-11-16 18:00:00+00:00
+Rome Odunze,WR,CHI,MIN,Receiving Yards,player_reception_yds,44.20685,Under,58.5,-115.0,Hard Rock Bet,14.293149999999997,Minnesota Vikings,Chicago Bears,2025-11-16 18:00:00+00:00
+Colston Loveland,TE,CHI,MIN,Receiving Yards,player_reception_yds,30.185862,Over,27.5,-137.0,PrizePicks,2.685862,Minnesota Vikings,Chicago Bears,2025-11-16 18:00:00+00:00
+D'Andre Swift,RB,CHI,MIN,Rushing Yards,player_rush_yds,59.180824,Over,52.5,-115.0,BetMGM,6.680824000000001,Minnesota Vikings,Chicago Bears,2025-11-16 18:00:00+00:00
+Caleb Williams,QB,CHI,MIN,Rushing Yards,player_rush_yds,17.826063,Under,24.5,-118.0,BetMGM,6.673936999999999,Minnesota Vikings,Chicago Bears,2025-11-16 18:00:00+00:00
+Joe Flacco,QB,CIN,PIT,Passing Yards,player_pass_yds,242.99875,Under,263.5,-120.0,Fliff,20.50125,Pittsburgh Steelers,Cincinnati Bengals,2025-11-16 18:00:00+00:00
+Ja'Marr Chase,WR,CIN,PIT,Receiving Yards,player_reception_yds,112.72118,Over,91.5,-115.0,Hard Rock Bet,21.221180000000004,Pittsburgh Steelers,Cincinnati Bengals,2025-11-16 18:00:00+00:00
+Tee Higgins,WR,CIN,PIT,Receiving Yards,player_reception_yds,57.16901,Under,59.5,-110.0,DraftKings,2.33099,Pittsburgh Steelers,Cincinnati Bengals,2025-11-16 18:00:00+00:00
+Noah Fant,TE,CIN,PIT,Receiving Yards,player_reception_yds,28.907827,Over,26.5,-120.0,Fliff,2.407827000000001,Pittsburgh Steelers,Cincinnati Bengals,2025-11-16 18:00:00+00:00
+Andrei Iosivas,WR,CIN,PIT,Receiving Yards,player_reception_yds,22.257986,Under,24.5,-125.0,Fliff,2.242014000000001,Pittsburgh Steelers,Cincinnati Bengals,2025-11-16 18:00:00+00:00
+Chase Brown,RB,CIN,PIT,Receiving Yards,player_reception_yds,14.70417,Under,22.5,-110.0,Hard Rock Bet,7.7958300000000005,Pittsburgh Steelers,Cincinnati Bengals,2025-11-16 18:00:00+00:00
+Chase Brown,RB,CIN,PIT,Rushing Yards,player_rush_yds,56.05561,Over,50.5,-114.0,betPARX,5.5556100000000015,Pittsburgh Steelers,Cincinnati Bengals,2025-11-16 18:00:00+00:00
+Joe Flacco,QB,CIN,PIT,Rushing Yards,player_rush_yds,1.7312031,Over,0.5,-137.0,PrizePicks,1.2312031,Pittsburgh Steelers,Cincinnati Bengals,2025-11-16 18:00:00+00:00
+Dillon Gabriel,QB,CLE,BAL,Passing Yards,player_pass_yds,169.02249,Under,182.5,-137.0,PrizePicks,13.477509999999995,Cleveland Browns,Baltimore Ravens,2025-11-16 21:25:00+00:00
+Jerry Jeudy,WR,CLE,BAL,Receiving Yards,player_reception_yds,51.299202,Over,40.5,-109.0,DraftKings,10.799202000000001,Cleveland Browns,Baltimore Ravens,2025-11-16 21:25:00+00:00
+David Njoku,TE,CLE,BAL,Receiving Yards,player_reception_yds,35.236813,Over,30.5,-137.0,PrizePicks,4.736812999999998,Cleveland Browns,Baltimore Ravens,2025-11-16 21:25:00+00:00
+Quinshon Judkins,RB,CLE,BAL,Receiving Yards,player_reception_yds,6.1905823,Under,7.5,-115.0,Hard Rock Bet,1.3094177,Cleveland Browns,Baltimore Ravens,2025-11-16 21:25:00+00:00
+Quinshon Judkins,RB,CLE,BAL,Rushing Yards,player_rush_yds,71.06014,Under,72.5,-117.0,betPARX,1.439859999999996,Cleveland Browns,Baltimore Ravens,2025-11-16 21:25:00+00:00
+Dak Prescott,QB,DAL,LVR,Passing Yards,player_pass_yds,243.47589,Under,263.5,-137.0,PrizePicks,20.024110000000007,Las Vegas Raiders,Dallas Cowboys,2025-11-18 01:15:00+00:00
+CeeDee Lamb,WR,DAL,LVR,Receiving Yards,player_reception_yds,77.202156,Under,86.5,-120.0,Fliff,9.297843999999998,Las Vegas Raiders,Dallas Cowboys,2025-11-18 01:15:00+00:00
+George Pickens,WR,DAL,LVR,Receiving Yards,player_reception_yds,61.036728,Under,69.5,-137.0,PrizePicks,8.463272000000003,Las Vegas Raiders,Dallas Cowboys,2025-11-18 01:15:00+00:00
+Jake Ferguson,TE,DAL,LVR,Receiving Yards,player_reception_yds,35.496696,Under,39.5,-137.0,PrizePicks,4.003304,Las Vegas Raiders,Dallas Cowboys,2025-11-18 01:15:00+00:00
+Javonte Williams,RB,DAL,LVR,Receiving Yards,player_reception_yds,14.893447,Over,14.5,-110.0,Hard Rock Bet,0.3934470000000001,Las Vegas Raiders,Dallas Cowboys,2025-11-18 01:15:00+00:00
+Javonte Williams,RB,DAL,LVR,Rushing Yards,player_rush_yds,57.54538,Under,76.5,-137.0,PrizePicks,18.95462,Las Vegas Raiders,Dallas Cowboys,2025-11-18 01:15:00+00:00
+Dak Prescott,QB,DAL,LVR,Rushing Yards,player_rush_yds,6.5083585,Under,7.5,-137.0,PrizePicks,0.9916415000000001,Las Vegas Raiders,Dallas Cowboys,2025-11-18 01:15:00+00:00
+Bo Nix,QB,DEN,KC,Passing Yards,player_pass_yds,220.2799,Over,216.5,-114.0,Bally Bet,3.779899999999998,Denver Broncos,Kansas City Chiefs,2025-11-16 21:25:00+00:00
+Courtland Sutton,WR,DEN,KC,Receiving Yards,player_reception_yds,53.812187,Over,48.5,-115.0,DraftKings,5.3121870000000015,Denver Broncos,Kansas City Chiefs,2025-11-16 21:25:00+00:00
+Evan Engram,TE,DEN,KC,Receiving Yards,player_reception_yds,35.55135,Over,24.5,-114.0,FanDuel,11.05135,Denver Broncos,Kansas City Chiefs,2025-11-16 21:25:00+00:00
+Troy Franklin,WR,DEN,KC,Receiving Yards,player_reception_yds,30.594414,Under,41.5,-112.0,betPARX,10.905586,Denver Broncos,Kansas City Chiefs,2025-11-16 21:25:00+00:00
+RJ Harvey,RB,DEN,KC,Receiving Yards,player_reception_yds,15.850142,Under,17.5,-117.0,DraftKings,1.649858,Denver Broncos,Kansas City Chiefs,2025-11-16 21:25:00+00:00
+Adam Trautman,TE,DEN,KC,Receiving Yards,player_reception_yds,12.554366,Over,3.5,-118.0,BetMGM,9.054366,Denver Broncos,Kansas City Chiefs,2025-11-16 21:25:00+00:00
+Bo Nix,QB,DEN,KC,Rushing Yards,player_rush_yds,16.969852,Under,23.5,-115.0,BetMGM,6.5301480000000005,Denver Broncos,Kansas City Chiefs,2025-11-16 21:25:00+00:00
+RJ Harvey,RB,DEN,KC,Rushing Yards,player_rush_yds,10.222679,Under,54.5,-137.0,PrizePicks,44.277321,Denver Broncos,Kansas City Chiefs,2025-11-16 21:25:00+00:00
+Jared Goff,QB,DET,PHI,Passing Yards,player_pass_yds,256.10938,Over,236.5,-114.0,Bally Bet,19.609379999999987,Philadelphia Eagles,Detroit Lions,2025-11-17 01:20:00+00:00
+Amon-Ra St. Brown,WR,DET,PHI,Receiving Yards,player_reception_yds,81.96013,Over,74.5,-114.0,FanDuel,7.460130000000007,Philadelphia Eagles,Detroit Lions,2025-11-17 01:20:00+00:00
+Sam LaPorta,TE,DET,PHI,Receiving Yards,player_reception_yds,47.21845,Over,37.5,-115.0,ESPN BET,9.718449999999997,Philadelphia Eagles,Detroit Lions,2025-11-17 01:20:00+00:00
+Jameson Williams,WR,DET,PHI,Receiving Yards,player_reception_yds,44.448467,Under,48.5,-110.0,DraftKings,4.051532999999999,Philadelphia Eagles,Detroit Lions,2025-11-17 01:20:00+00:00
+Jahmyr Gibbs,RB,DET,PHI,Receiving Yards,player_reception_yds,27.119638,Over,21.5,-114.0,FanDuel,5.619637999999998,Philadelphia Eagles,Detroit Lions,2025-11-17 01:20:00+00:00
+David Montgomery,RB,DET,PHI,Receiving Yards,player_reception_yds,17.186216,Over,8.5,-118.0,BetMGM,8.686216000000002,Philadelphia Eagles,Detroit Lions,2025-11-17 01:20:00+00:00
+Jahmyr Gibbs,RB,DET,PHI,Rushing Yards,player_rush_yds,64.393486,Over,60.5,-115.0,BetMGM,3.893485999999996,Philadelphia Eagles,Detroit Lions,2025-11-17 01:20:00+00:00
+David Montgomery,RB,DET,PHI,Rushing Yards,player_rush_yds,49.98712,Over,37.5,-113.0,DraftKings,12.487119999999997,Philadelphia Eagles,Detroit Lions,2025-11-17 01:20:00+00:00
+Jordan Love,QB,GB,NYG,Passing Yards,player_pass_yds,213.11166,Under,234.5,-113.0,betPARX,21.38834,New York Giants,Green Bay Packers,2025-11-16 18:00:00+00:00
+Romeo Doubs,WR,GB,NYG,Receiving Yards,player_reception_yds,42.77357,Under,49.5,-115.0,Hard Rock Bet,6.726430000000001,New York Giants,Green Bay Packers,2025-11-16 18:00:00+00:00
+Christian Watson,WR,GB,NYG,Receiving Yards,player_reception_yds,28.23031,Under,38.5,-115.0,Hard Rock Bet,10.26969,New York Giants,Green Bay Packers,2025-11-16 18:00:00+00:00
+Josh Jacobs,RB,GB,NYG,Receiving Yards,player_reception_yds,19.200655,Over,17.5,-115.0,Hard Rock Bet,1.7006550000000011,New York Giants,Green Bay Packers,2025-11-16 18:00:00+00:00
+Luke Musgrave,TE,GB,NYG,Receiving Yards,player_reception_yds,13.634745,Under,27.5,-115.0,Hard Rock Bet,13.865255,New York Giants,Green Bay Packers,2025-11-16 18:00:00+00:00
+Josh Jacobs,RB,GB,NYG,Rushing Yards,player_rush_yds,73.62959,Under,81.5,-115.0,Hard Rock Bet,7.870410000000007,New York Giants,Green Bay Packers,2025-11-16 18:00:00+00:00
+Jordan Love,QB,GB,NYG,Rushing Yards,player_rush_yds,8.23358,Under,10.5,-110.0,Hard Rock Bet,2.26642,New York Giants,Green Bay Packers,2025-11-16 18:00:00+00:00
+Davis Mills,QB,HOU,TEN,Passing Yards,player_pass_yds,206.32283,Under,228.5,-115.0,BetMGM,22.17716999999999,Tennessee Titans,Houston Texans,2025-11-16 18:00:00+00:00
+Nico Collins,WR,HOU,TEN,Receiving Yards,player_reception_yds,58.685253,Under,69.5,-110.0,BetMGM,10.814746999999997,Tennessee Titans,Houston Texans,2025-11-16 18:00:00+00:00
+Dalton Schultz,TE,HOU,TEN,Receiving Yards,player_reception_yds,45.483757,Over,41.5,-115.0,BetMGM,3.983756999999997,Tennessee Titans,Houston Texans,2025-11-16 18:00:00+00:00
+Jayden Higgins,WR,HOU,TEN,Receiving Yards,player_reception_yds,19.564003,Over,18.5,-118.0,BetMGM,1.0640029999999996,Tennessee Titans,Houston Texans,2025-11-16 18:00:00+00:00
+Woody Marks,RB,HOU,TEN,Receiving Yards,player_reception_yds,19.134802,Over,17.5,-120.0,BetMGM,1.6348020000000005,Tennessee Titans,Houston Texans,2025-11-16 18:00:00+00:00
+Woody Marks,RB,HOU,TEN,Rushing Yards,player_rush_yds,25.308573,Under,60.5,-110.0,BetMGM,35.191427000000004,Tennessee Titans,Houston Texans,2025-11-16 18:00:00+00:00
+Trevor Lawrence,QB,JAX,LAC,Passing Yards,player_pass_yds,214.22504,Over,206.5,-113.0,DraftKings,7.725040000000007,Jacksonville Jaguars,Los Angeles Chargers,2025-11-16 18:00:00+00:00
+Jakobi Meyers,WR,JAX,LAC,Receiving Yards,player_reception_yds,54.25922,Over,43.5,-125.0,Fliff,10.75922,Jacksonville Jaguars,Los Angeles Chargers,2025-11-16 18:00:00+00:00
+Bhayshul Tuten,RB,JAX,LAC,Receiving Yards,player_reception_yds,6.024554,Over,3.5,-110.0,BetMGM,2.524554,Jacksonville Jaguars,Los Angeles Chargers,2025-11-16 18:00:00+00:00
+Bhayshul Tuten,RB,JAX,LAC,Rushing Yards,player_rush_yds,16.687283,Over,16.5,-110.0,BetMGM,0.18728300000000075,Jacksonville Jaguars,Los Angeles Chargers,2025-11-16 18:00:00+00:00
+Trevor Lawrence,QB,JAX,LAC,Rushing Yards,player_rush_yds,13.171747,Under,18.5,-115.0,BetMGM,5.328253,Jacksonville Jaguars,Los Angeles Chargers,2025-11-16 18:00:00+00:00
+Patrick Mahomes,QB,KC,DEN,Passing Yards,player_pass_yds,254.95236,Under,262.5,-115.0,BetMGM,7.547640000000001,Denver Broncos,Kansas City Chiefs,2025-11-16 21:25:00+00:00
+Rashee Rice,WR,KC,DEN,Receiving Yards,player_reception_yds,79.965256,Over,69.5,-114.0,DraftKings,10.465255999999997,Denver Broncos,Kansas City Chiefs,2025-11-16 21:25:00+00:00
+Travis Kelce,TE,KC,DEN,Receiving Yards,player_reception_yds,65.52243,Over,42.5,-114.0,DraftKings,23.02243,Denver Broncos,Kansas City Chiefs,2025-11-16 21:25:00+00:00
+Xavier Worthy,WR,KC,DEN,Receiving Yards,player_reception_yds,47.650368,Over,38.5,-113.0,DraftKings,9.150368,Denver Broncos,Kansas City Chiefs,2025-11-16 21:25:00+00:00
+Marquise Brown,WR,KC,DEN,Receiving Yards,player_reception_yds,35.344677,Over,16.5,-117.0,DraftKings,18.844676999999997,Denver Broncos,Kansas City Chiefs,2025-11-16 21:25:00+00:00
+JuJu Smith-Schuster,WR,KC,DEN,Receiving Yards,player_reception_yds,29.402529,Over,8.5,-115.0,Hard Rock Bet,20.902529,Denver Broncos,Kansas City Chiefs,2025-11-16 21:25:00+00:00
+Noah Gray,TE,KC,DEN,Receiving Yards,player_reception_yds,15.192545,Over,9.5,-118.0,BetMGM,5.692545000000001,Denver Broncos,Kansas City Chiefs,2025-11-16 21:25:00+00:00
+Kareem Hunt,RB,KC,DEN,Receiving Yards,player_reception_yds,5.6204476,Over,5.5,-120.0,BetMGM,0.12044760000000032,Denver Broncos,Kansas City Chiefs,2025-11-16 21:25:00+00:00
+Kareem Hunt,RB,KC,DEN,Rushing Yards,player_rush_yds,33.727768,Under,42.5,-110.0,BetMGM,8.772232000000002,Denver Broncos,Kansas City Chiefs,2025-11-16 21:25:00+00:00
+Patrick Mahomes,QB,KC,DEN,Rushing Yards,player_rush_yds,24.562061,Under,26.5,-110.0,BetMGM,1.937939,Denver Broncos,Kansas City Chiefs,2025-11-16 21:25:00+00:00
+Justin Herbert,QB,LAC,JAX,Passing Yards,player_pass_yds,253.2703,Over,248.5,-114.0,BetOnline.ag,4.770299999999992,Jacksonville Jaguars,Los Angeles Chargers,2025-11-16 18:00:00+00:00
+Ladd McConkey,WR,LAC,JAX,Receiving Yards,player_reception_yds,68.789375,Over,61.5,-115.0,BetMGM,7.289375000000007,Jacksonville Jaguars,Los Angeles Chargers,2025-11-16 18:00:00+00:00
+Keenan Allen,WR,LAC,JAX,Receiving Yards,player_reception_yds,61.910275,Over,38.5,-137.0,PrizePicks,23.410275,Jacksonville Jaguars,Los Angeles Chargers,2025-11-16 18:00:00+00:00
+Quentin Johnston,WR,LAC,JAX,Receiving Yards,player_reception_yds,34.97357,Under,50.5,-115.0,BetMGM,15.526429999999998,Jacksonville Jaguars,Los Angeles Chargers,2025-11-16 18:00:00+00:00
+Kimani Vidal,RB,LAC,JAX,Receiving Yards,player_reception_yds,6.3077917,Under,10.5,-110.0,BetMGM,4.1922083,Jacksonville Jaguars,Los Angeles Chargers,2025-11-16 18:00:00+00:00
+Kimani Vidal,RB,LAC,JAX,Rushing Yards,player_rush_yds,34.069084,Under,61.5,-120.0,Fliff,27.430916000000003,Jacksonville Jaguars,Los Angeles Chargers,2025-11-16 18:00:00+00:00
+Justin Herbert,QB,LAC,JAX,Rushing Yards,player_rush_yds,22.624802,Over,22.5,-137.0,PrizePicks,0.12480199999999897,Jacksonville Jaguars,Los Angeles Chargers,2025-11-16 18:00:00+00:00
+Matthew Stafford,QB,LAR,SEA,Passing Yards,player_pass_yds,263.81305,Over,261.5,-114.0,FanDuel,2.3130499999999756,Los Angeles Rams,Seattle Seahawks,2025-11-16 21:05:00+00:00
+Puka Nacua,WR,LAR,SEA,Receiving Yards,player_reception_yds,70.116844,Under,90.5,-115.0,Hard Rock Bet,20.383156,Los Angeles Rams,Seattle Seahawks,2025-11-16 21:05:00+00:00
+Davante Adams,WR,LAR,SEA,Receiving Yards,player_reception_yds,60.294098,Under,62.5,-112.0,DraftKings,2.205902000000002,Los Angeles Rams,Seattle Seahawks,2025-11-16 21:05:00+00:00
+Tyler Higbee,TE,LAR,SEA,Receiving Yards,player_reception_yds,24.719122,Over,21.5,-115.0,Hard Rock Bet,3.2191219999999987,Los Angeles Rams,Seattle Seahawks,2025-11-16 21:05:00+00:00
+Kyren Williams,RB,LAR,SEA,Receiving Yards,player_reception_yds,10.789438,Under,12.5,-110.0,Hard Rock Bet,1.7105619999999995,Los Angeles Rams,Seattle Seahawks,2025-11-16 21:05:00+00:00
+Kyren Williams,RB,LAR,SEA,Rushing Yards,player_rush_yds,71.77324,Over,59.5,-114.0,BetOnline.ag,12.273240000000001,Los Angeles Rams,Seattle Seahawks,2025-11-16 21:05:00+00:00
+Blake Corum,RB,LAR,SEA,Rushing Yards,player_rush_yds,24.682026,Under,30.5,-115.0,Hard Rock Bet,5.8179739999999995,Los Angeles Rams,Seattle Seahawks,2025-11-16 21:05:00+00:00
+Matthew Stafford,QB,LAR,SEA,Rushing Yards,player_rush_yds,-2.683457,Under,1.5,-125.0,Hard Rock Bet,4.183457000000001,Los Angeles Rams,Seattle Seahawks,2025-11-16 21:05:00+00:00
+Geno Smith,QB,LVR,DAL,Passing Yards,player_pass_yds,178.65604,Under,223.5,-137.0,PrizePicks,44.84396000000001,Las Vegas Raiders,Dallas Cowboys,2025-11-18 01:15:00+00:00
+Brock Bowers,TE,LVR,DAL,Receiving Yards,player_reception_yds,63.22654,Under,71.5,-115.0,Hard Rock Bet,8.27346,Las Vegas Raiders,Dallas Cowboys,2025-11-18 01:15:00+00:00
+Tre Tucker,WR,LVR,DAL,Receiving Yards,player_reception_yds,30.458021,Under,49.5,-115.0,Hard Rock Bet,19.041979,Las Vegas Raiders,Dallas Cowboys,2025-11-18 01:15:00+00:00
+Tyler Lockett,WR,LVR,DAL,Receiving Yards,player_reception_yds,25.242212,Under,27.5,-115.0,Hard Rock Bet,2.2577880000000015,Las Vegas Raiders,Dallas Cowboys,2025-11-18 01:15:00+00:00
+Michael Mayer,TE,LVR,DAL,Receiving Yards,player_reception_yds,16.12982,Under,27.5,-115.0,Hard Rock Bet,11.370180000000001,Las Vegas Raiders,Dallas Cowboys,2025-11-18 01:15:00+00:00
+Ashton Jeanty,RB,LVR,DAL,Receiving Yards,player_reception_yds,15.462997,Under,16.5,-118.0,BetMGM,1.0370030000000003,Las Vegas Raiders,Dallas Cowboys,2025-11-18 01:15:00+00:00
+Ashton Jeanty,RB,LVR,DAL,Rushing Yards,player_rush_yds,55.88137,Under,59.5,-137.0,PrizePicks,3.618630000000003,Las Vegas Raiders,Dallas Cowboys,2025-11-18 01:15:00+00:00
+Geno Smith,QB,LVR,DAL,Rushing Yards,player_rush_yds,10.122185,Over,9.5,-137.0,PrizePicks,0.622185,Las Vegas Raiders,Dallas Cowboys,2025-11-18 01:15:00+00:00
+Tua Tagovailoa,QB,MIA,WAS,Passing Yards,player_pass_yds,213.38814,Under,239.5,-115.0,Hard Rock Bet,26.111860000000007,Miami Dolphins,Washington Commanders,2025-11-16 14:30:00+00:00
+Jaylen Waddle,WR,MIA,WAS,Receiving Yards,player_reception_yds,68.770836,Under,79.5,-110.0,ESPN BET,10.729163999999997,Miami Dolphins,Washington Commanders,2025-11-16 14:30:00+00:00
+De'Von Achane,RB,MIA,WAS,Receiving Yards,player_reception_yds,34.215122,Under,39.5,-115.0,ESPN BET,5.284877999999999,Miami Dolphins,Washington Commanders,2025-11-16 14:30:00+00:00
+Nick Westbrook-Ikhine,WR,MIA,WAS,Receiving Yards,player_reception_yds,19.924868,Over,17.5,-125.0,Fliff,2.424868,Miami Dolphins,Washington Commanders,2025-11-16 14:30:00+00:00
+Malik Washington,WR,MIA,WAS,Receiving Yards,player_reception_yds,14.310779,Under,26.5,-115.0,Hard Rock Bet,12.189221,Miami Dolphins,Washington Commanders,2025-11-16 14:30:00+00:00
+De'Von Achane,RB,MIA,WAS,Rushing Yards,player_rush_yds,58.6084,Under,79.5,-110.0,DraftKings,20.891599999999997,Miami Dolphins,Washington Commanders,2025-11-16 14:30:00+00:00
+Tua Tagovailoa,QB,MIA,WAS,Rushing Yards,player_rush_yds,2.8900647,Over,1.5,-102.0,FanDuel,1.3900647,Miami Dolphins,Washington Commanders,2025-11-16 14:30:00+00:00
+J.J. McCarthy,QB,MIN,CHI,Passing Yards,player_pass_yds,160.60957,Under,220.5,-115.0,BetMGM,59.89043000000001,Minnesota Vikings,Chicago Bears,2025-11-16 18:00:00+00:00
+Justin Jefferson,WR,MIN,CHI,Receiving Yards,player_reception_yds,76.82284,Over,69.5,-115.0,BetMGM,7.322839999999999,Minnesota Vikings,Chicago Bears,2025-11-16 18:00:00+00:00
+Jordan Addison,WR,MIN,CHI,Receiving Yards,player_reception_yds,55.3437,Over,43.5,-115.0,Hard Rock Bet,11.843699999999998,Minnesota Vikings,Chicago Bears,2025-11-16 18:00:00+00:00
+T.J. Hockenson,TE,MIN,CHI,Receiving Yards,player_reception_yds,37.309605,Over,28.5,-137.0,PrizePicks,8.809604999999998,Minnesota Vikings,Chicago Bears,2025-11-16 18:00:00+00:00
+Jalen Nailor,WR,MIN,CHI,Receiving Yards,player_reception_yds,20.288954,Under,22.5,-120.0,Fliff,2.2110459999999996,Minnesota Vikings,Chicago Bears,2025-11-16 18:00:00+00:00
+Aaron Jones,RB,MIN,CHI,Receiving Yards,player_reception_yds,16.743277,Under,21.5,-115.0,Hard Rock Bet,4.756723000000001,Minnesota Vikings,Chicago Bears,2025-11-16 18:00:00+00:00
+Aaron Jones,RB,MIN,CHI,Rushing Yards,player_rush_yds,44.985466,Under,51.5,-115.0,ESPN BET,6.514533999999998,Minnesota Vikings,Chicago Bears,2025-11-16 18:00:00+00:00
+Jordan Mason,RB,MIN,CHI,Rushing Yards,player_rush_yds,38.888428,Over,31.5,-120.0,Fliff,7.3884279999999976,Minnesota Vikings,Chicago Bears,2025-11-16 18:00:00+00:00
+J.J. McCarthy,QB,MIN,CHI,Rushing Yards,player_rush_yds,19.306284,Under,21.5,-118.0,BetMGM,2.1937159999999984,Minnesota Vikings,Chicago Bears,2025-11-16 18:00:00+00:00
+Drake Maye,QB,NE,NYJ,Passing Yards,player_pass_yds,250.87584,Over,235.5,-115.0,ESPN BET,15.37584000000001,New England Patriots,New York Jets,2025-11-14 01:15:00+00:00
+Stefon Diggs,WR,NE,NYJ,Receiving Yards,player_reception_yds,56.431553,Over,53.5,-137.0,Underdog,2.931553000000001,New England Patriots,New York Jets,2025-11-14 01:15:00+00:00
+Hunter Henry,TE,NE,NYJ,Receiving Yards,player_reception_yds,32.724827,Under,34.5,-111.0,DraftKings,1.7751730000000023,New England Patriots,New York Jets,2025-11-14 01:15:00+00:00
+DeMario Douglas,WR,NE,NYJ,Receiving Yards,player_reception_yds,31.831575,Over,22.5,-137.0,Underdog,9.331575,New England Patriots,New York Jets,2025-11-14 01:15:00+00:00
+Mack Hollins,WR,NE,NYJ,Receiving Yards,player_reception_yds,18.687414,Under,38.5,-110.0,BetMGM,19.812586,New England Patriots,New York Jets,2025-11-14 01:15:00+00:00
+TreVeyon Henderson,RB,NE,NYJ,Receiving Yards,player_reception_yds,11.384248,Under,19.5,-120.0,ESPN BET,8.115752,New England Patriots,New York Jets,2025-11-14 01:15:00+00:00
+TreVeyon Henderson,RB,NE,NYJ,Rushing Yards,player_rush_yds,25.008749,Under,84.5,-114.0,BetOnline.ag,59.491251,New England Patriots,New York Jets,2025-11-14 01:15:00+00:00
+Drake Maye,QB,NE,NYJ,Rushing Yards,player_rush_yds,23.479317,Under,26.5,-112.0,DraftKings,3.0206829999999982,New England Patriots,New York Jets,2025-11-14 01:15:00+00:00
+Wan'Dale Robinson,WR,NYG,GB,Receiving Yards,player_reception_yds,46.549023,Under,58.5,-115.0,Hard Rock Bet,11.950977000000002,New York Giants,Green Bay Packers,2025-11-16 18:00:00+00:00
+Darius Slayton,WR,NYG,GB,Receiving Yards,player_reception_yds,34.192944,Under,44.5,-115.0,Hard Rock Bet,10.307056000000003,New York Giants,Green Bay Packers,2025-11-16 18:00:00+00:00
+Theo Johnson,TE,NYG,GB,Receiving Yards,player_reception_yds,30.556498,Under,44.5,-115.0,Hard Rock Bet,13.943501999999999,New York Giants,Green Bay Packers,2025-11-16 18:00:00+00:00
+Tyrone Tracy Jr.,RB,NYG,GB,Receiving Yards,player_reception_yds,11.004507,Under,16.5,-115.0,Hard Rock Bet,5.495493,New York Giants,Green Bay Packers,2025-11-16 18:00:00+00:00
+Tyrone Tracy Jr.,RB,NYG,GB,Rushing Yards,player_rush_yds,32.937172,Under,45.5,-115.0,Hard Rock Bet,12.562828000000003,New York Giants,Green Bay Packers,2025-11-16 18:00:00+00:00
+Justin Fields,QB,NYJ,NE,Passing Yards,player_pass_yds,78.62064,Under,137.5,-115.0,BetMGM,58.879360000000005,New England Patriots,New York Jets,2025-11-14 01:15:00+00:00
+Mason Taylor,TE,NYJ,NE,Receiving Yards,player_reception_yds,22.172476,Under,35.5,-115.0,Hard Rock Bet,13.327524,New England Patriots,New York Jets,2025-11-14 01:15:00+00:00
+Breece Hall,RB,NYJ,NE,Receiving Yards,player_reception_yds,20.885271,Over,14.5,-115.0,Hard Rock Bet,6.3852709999999995,New England Patriots,New York Jets,2025-11-14 01:15:00+00:00
+Tyler Johnson,WR,NYJ,NE,Receiving Yards,player_reception_yds,16.33109,Under,17.5,-118.0,BetMGM,1.1689100000000003,New England Patriots,New York Jets,2025-11-14 01:15:00+00:00
+Jeremy Ruckert,TE,NYJ,NE,Receiving Yards,player_reception_yds,8.106976,Over,5.5,-110.0,BetMGM,2.6069759999999995,New England Patriots,New York Jets,2025-11-14 01:15:00+00:00
+Isaiah Williams,WR,NYJ,NE,Receiving Yards,player_reception_yds,7.890734,Under,11.5,-110.0,BetMGM,3.609266,New England Patriots,New York Jets,2025-11-14 01:15:00+00:00
+Isaiah Davis,RB,NYJ,NE,Receiving Yards,player_reception_yds,5.434019,Under,12.5,-115.0,BetMGM,7.065981,New England Patriots,New York Jets,2025-11-14 01:15:00+00:00
+Arian Smith,WR,NYJ,NE,Receiving Yards,player_reception_yds,2.1471796,Under,9.5,-125.0,Fliff,7.352820400000001,New England Patriots,New York Jets,2025-11-14 01:15:00+00:00
+Breece Hall,RB,NYJ,NE,Rushing Yards,player_rush_yds,59.653744,Over,57.5,-111.0,DraftKings,2.153744000000003,New England Patriots,New York Jets,2025-11-14 01:15:00+00:00
+Justin Fields,QB,NYJ,NE,Rushing Yards,player_rush_yds,24.506,Under,36.5,-111.0,BetOnline.ag,11.994,New England Patriots,New York Jets,2025-11-14 01:15:00+00:00
+Jalen Hurts,QB,PHI,DET,Passing Yards,player_pass_yds,221.02132,Over,203.5,-114.0,FanDuel,17.521320000000003,Philadelphia Eagles,Detroit Lions,2025-11-17 01:20:00+00:00
+DeVonta Smith,WR,PHI,DET,Receiving Yards,player_reception_yds,68.47795,Over,55.5,-114.0,DraftKings,12.977950000000007,Philadelphia Eagles,Detroit Lions,2025-11-17 01:20:00+00:00
+Dallas Goedert,TE,PHI,DET,Receiving Yards,player_reception_yds,41.38027,Over,37.5,-114.0,FanDuel,3.880270000000003,Philadelphia Eagles,Detroit Lions,2025-11-17 01:20:00+00:00
+Saquon Barkley,RB,PHI,DET,Receiving Yards,player_reception_yds,20.55261,Over,16.5,-111.0,DraftKings,4.052610000000001,Philadelphia Eagles,Detroit Lions,2025-11-17 01:20:00+00:00
+Saquon Barkley,RB,PHI,DET,Rushing Yards,player_rush_yds,66.52156,Under,71.5,-113.0,betPARX,4.978440000000006,Philadelphia Eagles,Detroit Lions,2025-11-17 01:20:00+00:00
+Jalen Hurts,QB,PHI,DET,Rushing Yards,player_rush_yds,17.817087,Under,33.5,-118.0,BetMGM,15.682913,Philadelphia Eagles,Detroit Lions,2025-11-17 01:20:00+00:00
+Aaron Rodgers,QB,PIT,CIN,Passing Yards,player_pass_yds,233.3887,Under,235.5,-115.0,ESPN BET,2.1113,Pittsburgh Steelers,Cincinnati Bengals,2025-11-16 18:00:00+00:00
+Pat Freiermuth,TE,PIT,CIN,Receiving Yards,player_reception_yds,28.879019,Over,24.5,-115.0,Hard Rock Bet,4.3790189999999996,Pittsburgh Steelers,Cincinnati Bengals,2025-11-16 18:00:00+00:00
+Jonnu Smith,TE,PIT,CIN,Receiving Yards,player_reception_yds,24.088049,Over,21.5,-110.0,Hard Rock Bet,2.5880490000000016,Pittsburgh Steelers,Cincinnati Bengals,2025-11-16 18:00:00+00:00
+Calvin Austin III,WR,PIT,CIN,Receiving Yards,player_reception_yds,20.711489,Under,32.5,-120.0,Fliff,11.788511,Pittsburgh Steelers,Cincinnati Bengals,2025-11-16 18:00:00+00:00
+Jaylen Warren,RB,PIT,CIN,Receiving Yards,player_reception_yds,19.350115,Over,18.5,-110.0,Hard Rock Bet,0.8501149999999988,Pittsburgh Steelers,Cincinnati Bengals,2025-11-16 18:00:00+00:00
+Kenneth Gainwell,RB,PIT,CIN,Receiving Yards,player_reception_yds,7.742132,Under,13.5,-110.0,Hard Rock Bet,5.757868,Pittsburgh Steelers,Cincinnati Bengals,2025-11-16 18:00:00+00:00
+Jaylen Warren,RB,PIT,CIN,Rushing Yards,player_rush_yds,54.637344,Under,74.5,-111.0,DraftKings,19.862656,Pittsburgh Steelers,Cincinnati Bengals,2025-11-16 18:00:00+00:00
+Aaron Rodgers,QB,PIT,CIN,Rushing Yards,player_rush_yds,2.032042,Over,0.5,-137.0,PrizePicks,1.5320420000000001,Pittsburgh Steelers,Cincinnati Bengals,2025-11-16 18:00:00+00:00
+Sam Darnold,QB,SEA,LAR,Passing Yards,player_pass_yds,254.61244,Over,248.5,-115.0,Hard Rock Bet,6.112439999999992,Los Angeles Rams,Seattle Seahawks,2025-11-16 21:05:00+00:00
+Jaxon Smith-Njigba,WR,SEA,LAR,Receiving Yards,player_reception_yds,90.7636,Under,101.5,-113.0,DraftKings,10.736400000000003,Los Angeles Rams,Seattle Seahawks,2025-11-16 21:05:00+00:00
+Rashid Shaheed,WR,SEA,LAR,Receiving Yards,player_reception_yds,51.44449,Over,30.5,-115.0,Hard Rock Bet,20.944490000000002,Los Angeles Rams,Seattle Seahawks,2025-11-16 21:05:00+00:00
+Cooper Kupp,WR,SEA,LAR,Receiving Yards,player_reception_yds,48.15963,Over,28.5,-115.0,Hard Rock Bet,19.65963,Los Angeles Rams,Seattle Seahawks,2025-11-16 21:05:00+00:00
+AJ Barner,TE,SEA,LAR,Receiving Yards,player_reception_yds,17.095003,Under,22.5,-125.0,Fliff,5.404997000000002,Los Angeles Rams,Seattle Seahawks,2025-11-16 21:05:00+00:00
+Zach Charbonnet,RB,SEA,LAR,Receiving Yards,player_reception_yds,10.776642,Over,5.5,-105.0,Hard Rock Bet,5.276642000000001,Los Angeles Rams,Seattle Seahawks,2025-11-16 21:05:00+00:00
+Kenneth Walker III,RB,SEA,LAR,Receiving Yards,player_reception_yds,9.691884,Over,4.5,-120.0,Hard Rock Bet,5.191884,Los Angeles Rams,Seattle Seahawks,2025-11-16 21:05:00+00:00
+Kenneth Walker III,RB,SEA,LAR,Rushing Yards,player_rush_yds,55.868855,Over,43.5,-110.0,DraftKings,12.368855000000003,Los Angeles Rams,Seattle Seahawks,2025-11-16 21:05:00+00:00
+Zach Charbonnet,RB,SEA,LAR,Rushing Yards,player_rush_yds,35.756348,Over,32.5,-110.0,DraftKings,3.2563480000000027,Los Angeles Rams,Seattle Seahawks,2025-11-16 21:05:00+00:00
+Sam Darnold,QB,SEA,LAR,Rushing Yards,player_rush_yds,1.9733727,Under,4.5,-110.0,Hard Rock Bet,2.5266273,Los Angeles Rams,Seattle Seahawks,2025-11-16 21:05:00+00:00
+Mac Jones,QB,SF,ARI,Passing Yards,player_pass_yds,254.22897,Over,244.5,-120.0,Fliff,9.728970000000004,Arizona Cardinals,San Francisco 49ers,2025-11-16 21:05:00+00:00
+Christian McCaffrey,RB,SF,ARI,Receiving Yards,player_reception_yds,52.744152,Under,56.5,-120.0,Fliff,3.7558480000000003,Arizona Cardinals,San Francisco 49ers,2025-11-16 21:05:00+00:00
+George Kittle,TE,SF,ARI,Receiving Yards,player_reception_yds,38.885475,Under,54.5,-110.0,BetMGM,15.614525,Arizona Cardinals,San Francisco 49ers,2025-11-16 21:05:00+00:00
+Christian McCaffrey,RB,SF,ARI,Rushing Yards,player_rush_yds,55.194393,Under,71.5,-115.0,Hard Rock Bet,16.305607000000002,Arizona Cardinals,San Francisco 49ers,2025-11-16 21:05:00+00:00
+Mac Jones,QB,SF,ARI,Rushing Yards,player_rush_yds,9.873398,Over,7.5,-120.0,Fliff,2.373398,Arizona Cardinals,San Francisco 49ers,2025-11-16 21:05:00+00:00
+Baker Mayfield,QB,TB,BUF,Passing Yards,player_pass_yds,245.3527,Over,218.5,-114.0,FanDuel,26.8527,Buffalo Bills,Tampa Bay Buccaneers,2025-11-16 18:00:00+00:00
+Emeka Egbuka,WR,TB,BUF,Receiving Yards,player_reception_yds,69.12024,Over,63.5,-115.0,Hard Rock Bet,5.6202399999999955,Buffalo Bills,Tampa Bay Buccaneers,2025-11-16 18:00:00+00:00
+Cade Otton,TE,TB,BUF,Receiving Yards,player_reception_yds,32.673695,Under,44.5,-120.0,Fliff,11.826304999999998,Buffalo Bills,Tampa Bay Buccaneers,2025-11-16 18:00:00+00:00
+Sterling Shepard,WR,TB,BUF,Receiving Yards,player_reception_yds,30.917482,Over,23.5,-115.0,Fliff,7.417482,Buffalo Bills,Tampa Bay Buccaneers,2025-11-16 18:00:00+00:00
+Cam Ward,QB,TEN,HOU,Passing Yards,player_pass_yds,227.65878,Over,192.5,-115.0,BetMGM,35.15878000000001,Tennessee Titans,Houston Texans,2025-11-16 18:00:00+00:00
+Calvin Ridley,WR,TEN,HOU,Receiving Yards,player_reception_yds,52.685574,Over,34.5,-115.0,BetMGM,18.185574000000003,Tennessee Titans,Houston Texans,2025-11-16 18:00:00+00:00
+Elic Ayomanor,WR,TEN,HOU,Receiving Yards,player_reception_yds,36.711628,Over,33.5,-115.0,BetMGM,3.2116279999999975,Tennessee Titans,Houston Texans,2025-11-16 18:00:00+00:00
+Chimere Dike,WR,TEN,HOU,Receiving Yards,player_reception_yds,20.941095,Under,32.5,-120.0,Fliff,11.558905,Tennessee Titans,Houston Texans,2025-11-16 18:00:00+00:00
+Tyjae Spears,RB,TEN,HOU,Receiving Yards,player_reception_yds,14.625302,Under,16.5,-115.0,Hard Rock Bet,1.8746980000000004,Tennessee Titans,Houston Texans,2025-11-16 18:00:00+00:00
+Tony Pollard,RB,TEN,HOU,Receiving Yards,player_reception_yds,12.63386,Over,10.5,-115.0,Hard Rock Bet,2.1338600000000003,Tennessee Titans,Houston Texans,2025-11-16 18:00:00+00:00
+Tony Pollard,RB,TEN,HOU,Rushing Yards,player_rush_yds,47.795574,Over,35.5,-110.0,BetMGM,12.295574000000002,Tennessee Titans,Houston Texans,2025-11-16 18:00:00+00:00
+Tyjae Spears,RB,TEN,HOU,Rushing Yards,player_rush_yds,23.60017,Under,27.5,-115.0,BetMGM,3.8998300000000015,Tennessee Titans,Houston Texans,2025-11-16 18:00:00+00:00
+Cam Ward,QB,TEN,HOU,Rushing Yards,player_rush_yds,3.04972,Under,6.5,-115.0,BetMGM,3.45028,Tennessee Titans,Houston Texans,2025-11-16 18:00:00+00:00
+Marcus Mariota,QB,WAS,MIA,Passing Yards,player_pass_yds,173.87477,Under,204.5,-120.0,ESPN BET,30.625229999999988,Miami Dolphins,Washington Commanders,2025-11-16 14:30:00+00:00
+Zach Ertz,TE,WAS,MIA,Receiving Yards,player_reception_yds,37.66096,Under,44.5,-115.0,ESPN BET,6.839039999999997,Miami Dolphins,Washington Commanders,2025-11-16 14:30:00+00:00
+Jaylin Lane,WR,WAS,MIA,Receiving Yards,player_reception_yds,18.196898,Under,22.5,-115.0,Hard Rock Bet,4.303101999999999,Miami Dolphins,Washington Commanders,2025-11-16 14:30:00+00:00
+John Bates,TE,WAS,MIA,Receiving Yards,player_reception_yds,12.000436,Over,11.5,-115.0,Hard Rock Bet,0.5004360000000005,Miami Dolphins,Washington Commanders,2025-11-16 14:30:00+00:00
+Jacory Croskey-Merritt,RB,WAS,MIA,Rushing Yards,player_rush_yds,38.93049,Over,31.5,-115.0,Hard Rock Bet,7.430489999999999,Miami Dolphins,Washington Commanders,2025-11-16 14:30:00+00:00
+Marcus Mariota,QB,WAS,MIA,Rushing Yards,player_rush_yds,18.949596,Under,26.5,-110.0,Hard Rock Bet,7.550404,Miami Dolphins,Washington Commanders,2025-11-16 14:30:00+00:00

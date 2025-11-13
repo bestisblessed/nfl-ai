@@ -5,15 +5,14 @@ PIT vs CIN | Week 11 2025 | Projected Receiving Yards
 +--------------------------+--------------+    +----------------+--------------+
 | PIT Player               |   Pred Yards |    | CIN Player     |   Pred Yards |
 +==========================+==============+    +================+==============+
-| DK Metcalf               |         56.1 |    | Ja'Marr Chase  |        111   |
-| Calvin Austin III        |         20.3 |    | Tee Higgins    |         63.8 |
-| Roman Wilson             |         15.4 |    | Andrei Iosivas |         23.4 |
-| Marquez Valdes-Scantling |         14.1 |    +----------------+--------------+
-+--------------------------+--------------+    
+| Calvin Austin III        |         20.7 |    | Ja'Marr Chase  |        112.7 |
+| Roman Wilson             |         15.6 |    | Tee Higgins    |         57.2 |
+| Marquez Valdes-Scantling |         15.3 |    | Andrei Iosivas |         22.3 |
++--------------------------+--------------+    +----------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total WRs: 7 (4 PIT, 3 CIN)
-Top Projection: Ja'Marr Chase (CIN) - 111.0 yards
+Total WRs: 6 (3 PIT, 3 CIN)
+Top Projection: Ja'Marr Chase (CIN) - 112.7 yards
 ================================================================================

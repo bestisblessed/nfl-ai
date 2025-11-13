@@ -5,9 +5,9 @@ LVR vs DAL | Week 11 2025 | TE Projected Receiving Yards
 +--------------------+--------------+    +------------------+--------------+
 | LVR Player         |   Pred Yards |    | DAL Player       |   Pred Yards |
 +====================+==============+    +==================+==============+
-| Brock Bowers       |         62.4 |    | Jake Ferguson    |         32.7 |
-| Michael Mayer      |         16.9 |    | Luke Schoonmaker |          9.3 |
-| Albert Okwuegbunam |         16.8 |    +------------------+--------------+
+| Brock Bowers       |         63.2 |    | Jake Ferguson    |         35.5 |
+| Michael Mayer      |         16.1 |    | Luke Schoonmaker |          9.6 |
+| Albert Okwuegbunam |         14.7 |    +------------------+--------------+
 | Ian Thomas         |          8.7 |    
 +--------------------+--------------+    
 
@@ -15,5 +15,5 @@ LVR vs DAL | Week 11 2025 | TE Projected Receiving Yards
 GAME SUMMARY
 ---------------
 Total TEs: 6 (4 LVR, 2 DAL)
-Top Projection: Brock Bowers (LVR) - 62.4 yards
+Top Projection: Brock Bowers (LVR) - 63.2 yards
 ================================================================================

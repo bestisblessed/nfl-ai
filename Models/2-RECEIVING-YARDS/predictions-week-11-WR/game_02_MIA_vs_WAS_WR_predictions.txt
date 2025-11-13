@@ -5,14 +5,14 @@ MIA vs WAS | Week 11 2025 | Projected Receiving Yards
 +-----------------------+--------------+    +---------------+--------------+
 | MIA Player            |   Pred Yards |    | WAS Player    |   Pred Yards |
 +=======================+==============+    +===============+==============+
-| Jaylen Waddle         |         62.7 |    | Chris Moore   |         18   |
-| Nick Westbrook-Ikhine |         19.9 |    | Jaylin Lane   |         17.3 |
-| Malik Washington      |         16.7 |    | Robbie Chosen |         17.2 |
+| Jaylen Waddle         |         68.8 |    | Robbie Chosen |         20.3 |
+| Nick Westbrook-Ikhine |         19.9 |    | Jaylin Lane   |         18.2 |
+| Malik Washington      |         14.3 |    | Chris Moore   |         16.2 |
 +-----------------------+--------------+    +---------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total WRs: 6 (3 MIA, 3 WAS)
-Top Projection: Jaylen Waddle (MIA) - 62.7 yards
+Top Projection: Jaylen Waddle (MIA) - 68.8 yards
 ================================================================================

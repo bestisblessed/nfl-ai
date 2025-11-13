@@ -1,16 +1,15 @@
 WEEK 11 2025 - COMPLETE RB RUSHING YARDS PREDICTIONS
-Generated: 2025-11-12 07:10:30
+Generated: 2025-11-13 02:03:07
 Total Games: 15
 ================================================================================
 
 GAME 1 | NE vs NYJ | Week 11 2025
-+---------------------+--------------+    +--------------+--------------+
-| NE Player           |   Pred Yards |    | NYJ Player   |   Pred Yards |
-+=====================+==============+    +==============+==============+
-| Rhamondre Stevenson |         42.8 |    | Breece Hall  |         59.1 |
-| TreVeyon Henderson  |         23.2 |    | Isaiah Davis |         11.8 |
-| Terrell Jennings    |         15.6 |    +--------------+--------------+
-+---------------------+--------------+
++--------------------+--------------+    +--------------+--------------+
+| NE Player          |   Pred Yards |    | NYJ Player   |   Pred Yards |
++====================+==============+    +==============+==============+
+| TreVeyon Henderson |         25   |    | Breece Hall  |         59.7 |
+| Terrell Jennings   |         18.1 |    | Isaiah Davis |         12.2 |
++--------------------+--------------+    +--------------+--------------+
 
 ============================================================
 
@@ -18,8 +17,8 @@ GAME 2 | MIA vs WAS | Week 11 2025
 +---------------+--------------+    +------------------------+--------------+
 | MIA Player    |   Pred Yards |    | WAS Player             |   Pred Yards |
 +===============+==============+    +========================+==============+
-| De'Von Achane |         57.8 |    | Jacory Croskey-Merritt |         41.1 |
-| Jaylen Wright |         13.8 |    | Jeremy McNichols       |          7.6 |
+| De'Von Achane |         58.6 |    | Jacory Croskey-Merritt |         38.9 |
+| Jaylen Wright |         15.2 |    | Jeremy McNichols       |          7.5 |
 +---------------+--------------+    +------------------------+--------------+
 
 ============================================================
@@ -28,9 +27,9 @@ GAME 3 | ATL vs CAR | Week 11 2025
 +----------------+--------------+    +----------------+--------------+
 | ATL Player     |   Pred Yards |    | CAR Player     |   Pred Yards |
 +================+==============+    +================+==============+
-| Bijan Robinson |         73.2 |    | Rico Dowdle    |         54.2 |
-| Tyler Allgeier |         23.2 |    | Chuba Hubbard  |         46.5 |
-+----------------+--------------+    | Trevor Etienne |         16.5 |
+| Bijan Robinson |         71   |    | Rico Dowdle    |         53.6 |
+| Tyler Allgeier |         22.1 |    | Chuba Hubbard  |         49.4 |
++----------------+--------------+    | Trevor Etienne |         18.7 |
                                      +----------------+--------------+
 
 ============================================================
@@ -39,9 +38,9 @@ GAME 4 | MIN vs CHI | Week 11 2025
 +--------------+--------------+    +---------------+--------------+
 | MIN Player   |   Pred Yards |    | CHI Player    |   Pred Yards |
 +==============+==============+    +===============+==============+
-| Aaron Jones  |         44.7 |    | D'Andre Swift |         60.9 |
-| Jordan Mason |         34.3 |    | Kyle Monangai |         34.8 |
-| Zavier Scott |         13   |    +---------------+--------------+
+| Aaron Jones  |         45   |    | D'Andre Swift |         59.2 |
+| Jordan Mason |         38.9 |    | Kyle Monangai |         39.1 |
+| Zavier Scott |         12.9 |    +---------------+--------------+
 +--------------+--------------+
 
 ============================================================
@@ -50,9 +49,9 @@ GAME 5 | PIT vs CIN | Week 11 2025
 +------------------+--------------+    +---------------+--------------+
 | PIT Player       |   Pred Yards |    | CIN Player    |   Pred Yards |
 +==================+==============+    +===============+==============+
-| Jaylen Warren    |         54.9 |    | Chase Brown   |         56.8 |
-| Kenneth Gainwell |         14   |    | Samaje Perine |         15.7 |
-| Kaleb Johnson    |          3.7 |    | Tahj Brooks   |         11.6 |
+| Jaylen Warren    |         54.6 |    | Chase Brown   |         56.1 |
+| Kenneth Gainwell |         13   |    | Samaje Perine |         15.5 |
+| Kaleb Johnson    |          4.4 |    | Tahj Brooks   |         11.5 |
 +------------------+--------------+    +---------------+--------------+
 
 ============================================================
@@ -61,8 +60,8 @@ GAME 6 | NYG vs GB | Week 11 2025
 +------------------+--------------+    +----------------+--------------+
 | NYG Player       |   Pred Yards |    | GB Player      |   Pred Yards |
 +==================+==============+    +================+==============+
-| Tyrone Tracy Jr. |         31.6 |    | Josh Jacobs    |         71.4 |
-| Devin Singletary |         18.2 |    | Emanuel Wilson |         20.2 |
+| Tyrone Tracy Jr. |         32.9 |    | Josh Jacobs    |         73.6 |
+| Devin Singletary |         18   |    | Emanuel Wilson |         18.7 |
 +------------------+--------------+    +----------------+--------------+
 
 ============================================================
@@ -71,9 +70,9 @@ GAME 7 | TEN vs HOU | Week 11 2025
 +-----------------+--------------+    +---------------+--------------+
 | TEN Player      |   Pred Yards |    | HOU Player    |   Pred Yards |
 +=================+==============+    +===============+==============+
-| Tony Pollard    |         48   |    | Nick Chubb    |         50   |
-| Tyjae Spears    |         23.2 |    | Woody Marks   |         23.6 |
-| Julius Chestnut |          4.2 |    | Dameon Pierce |         20.9 |
+| Tony Pollard    |         47.8 |    | Nick Chubb    |         49.6 |
+| Tyjae Spears    |         23.6 |    | Woody Marks   |         25.3 |
+| Julius Chestnut |          4.9 |    | Dameon Pierce |         20.4 |
 +-----------------+--------------+    +---------------+--------------+
 
 ============================================================
@@ -82,8 +81,8 @@ GAME 8 | JAX vs LAC | Week 11 2025
 +----------------+--------------+    +-----------------+--------------+
 | JAX Player     |   Pred Yards |    | LAC Player      |   Pred Yards |
 +================+==============+    +=================+==============+
-| Travis Etienne |         55.3 |    | Kimani Vidal    |         39.1 |
-| Bhayshul Tuten |         16.4 |    | Jaret Patterson |         26.4 |
+| Travis Etienne |         53.8 |    | Kimani Vidal    |         34.1 |
+| Bhayshul Tuten |         16.7 |    | Jaret Patterson |         27.7 |
 +----------------+--------------+    +-----------------+--------------+
 
 ============================================================
@@ -92,9 +91,9 @@ GAME 9 | BUF vs TB | Week 11 2025
 +--------------+--------------+    +---------------+--------------+
 | BUF Player   |   Pred Yards |    | TB Player     |   Pred Yards |
 +==============+==============+    +===============+==============+
-| James Cook   |         54   |    | Rachaad White |         39.2 |
-| Ty Johnson   |         13.1 |    | Sean Tucker   |         16.1 |
-| Ray Davis    |         10.7 |    +---------------+--------------+
+| James Cook   |         52.2 |    | Rachaad White |         38.8 |
+| Ty Johnson   |         13.6 |    | Sean Tucker   |         15.3 |
+| Ray Davis    |          7.5 |    +---------------+--------------+
 +--------------+--------------+
 
 ============================================================
@@ -103,9 +102,9 @@ GAME 10 | LAR vs SEA | Week 11 2025
 +----------------+--------------+    +--------------------+--------------+
 | LAR Player     |   Pred Yards |    | SEA Player         |   Pred Yards |
 +================+==============+    +====================+==============+
-| Kyren Williams |         76.6 |    | Kenneth Walker III |         55.6 |
-| Blake Corum    |         25.5 |    | Zach Charbonnet    |         32.8 |
-+----------------+--------------+    | George Holani      |         11.5 |
+| Kyren Williams |         71.8 |    | Kenneth Walker III |         55.9 |
+| Blake Corum    |         24.7 |    | Zach Charbonnet    |         35.8 |
++----------------+--------------+    | George Holani      |         10.5 |
                                      +--------------------+--------------+
 
 ============================================================
@@ -114,8 +113,8 @@ GAME 11 | ARI vs SF | Week 11 2025
 +-----------------+--------------+    +---------------------+--------------+
 | ARI Player      |   Pred Yards |    | SF Player           |   Pred Yards |
 +=================+==============+    +=====================+==============+
-| Michael Carter  |         25.4 |    | Christian McCaffrey |         55.1 |
-| Emari Demercado |         21.4 |    +---------------------+--------------+
+| Michael Carter  |         27.9 |    | Christian McCaffrey |         55.2 |
+| Emari Demercado |         25.3 |    +---------------------+--------------+
 +-----------------+--------------+
 
 ============================================================
@@ -124,9 +123,9 @@ GAME 12 | CLE vs BAL | Week 11 2025
 +------------------+--------------+    +-----------------+--------------+
 | CLE Player       |   Pred Yards |    | BAL Player      |   Pred Yards |
 +==================+==============+    +=================+==============+
-| Quinshon Judkins |         67.1 |    | Derrick Henry   |         85.2 |
-| Jerome Ford      |         12.8 |    | Keaton Mitchell |         26.8 |
-| Dylan Sampson    |          1.9 |    | Justice Hill    |          8.6 |
+| Quinshon Judkins |         71.1 |    | Derrick Henry   |         89.6 |
+| Jerome Ford      |          9.7 |    | Keaton Mitchell |         25.4 |
+| Dylan Sampson    |          2   |    | Justice Hill    |          9.7 |
 +------------------+--------------+    +-----------------+--------------+
 
 ============================================================
@@ -135,9 +134,9 @@ GAME 13 | DEN vs KC | Week 11 2025
 +--------------+--------------+    +----------------+--------------+
 | DEN Player   |   Pred Yards |    | KC Player      |   Pred Yards |
 +==============+==============+    +================+==============+
-| J.K. Dobbins |         63.8 |    | Isiah Pacheco  |         43.5 |
-| RJ Harvey    |         11.2 |    | Kareem Hunt    |         35.6 |
-+--------------+--------------+    | Brashard Smith |          8.4 |
+| J.K. Dobbins |         66.5 |    | Isiah Pacheco  |         44   |
+| RJ Harvey    |         10.2 |    | Kareem Hunt    |         33.7 |
++--------------+--------------+    | Brashard Smith |          7.9 |
                                    +----------------+--------------+
 
 ============================================================
@@ -146,10 +145,10 @@ GAME 14 | PHI vs DET | Week 11 2025
 +----------------+--------------+    +------------------+--------------+
 | PHI Player     |   Pred Yards |    | DET Player       |   Pred Yards |
 +================+==============+    +==================+==============+
-| Saquon Barkley |         68.9 |    | Jahmyr Gibbs     |         75.3 |
-| AJ Dillon      |         20.3 |    | David Montgomery |         50.9 |
-| Tank Bigsby    |         19.7 |    +------------------+--------------+
-| Will Shipley   |         10.1 |    
+| Saquon Barkley |         66.5 |    | Jahmyr Gibbs     |         64.4 |
+| AJ Dillon      |         21.5 |    | David Montgomery |         50   |
+| Tank Bigsby    |         20.9 |    +------------------+--------------+
+| Will Shipley   |          7.5 |    
 +----------------+--------------+
 
 ============================================================
@@ -158,9 +157,9 @@ GAME 15 | LVR vs DAL | Week 11 2025
 +----------------+--------------+    +------------------+--------------+
 | LVR Player     |   Pred Yards |    | DAL Player       |   Pred Yards |
 +================+==============+    +==================+==============+
-| Ashton Jeanty  |         52.8 |    | Javonte Williams |         60.2 |
-| Zamir White    |          8.3 |    | Jaydon Blue      |         14.2 |
-| Raheem Mostert |          7.6 |    +------------------+--------------+
+| Ashton Jeanty  |         55.9 |    | Javonte Williams |         57.5 |
+| Zamir White    |          7.3 |    | Jaydon Blue      |         14.4 |
+| Raheem Mostert |          7.3 |    +------------------+--------------+
 +----------------+--------------+
 
 ============================================================

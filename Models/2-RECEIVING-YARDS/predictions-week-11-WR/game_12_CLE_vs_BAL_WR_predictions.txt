@@ -5,15 +5,15 @@ CLE vs BAL | Week 11 2025 | Projected Receiving Yards
 +----------------+--------------+    +-----------------+--------------+
 | CLE Player     |   Pred Yards |    | BAL Player      |   Pred Yards |
 +================+==============+    +=================+==============+
-| Jerry Jeudy    |         53.7 |    | Zay Flowers     |         60.3 |
-| Cedric Tillman |         25.3 |    | DeAndre Hopkins |         23.6 |
-| Isaiah Bond    |         15.6 |    | Rashod Bateman  |         22.1 |
-| Jamari Thrash  |          6.7 |    | Tylan Wallace   |          7.7 |
+| Jerry Jeudy    |         51.3 |    | Zay Flowers     |         65.1 |
+| Cedric Tillman |         23.3 |    | DeAndre Hopkins |         26.2 |
+| Isaiah Bond    |         14.5 |    | Rashod Bateman  |         21.6 |
+| Jamari Thrash  |          7   |    | Tylan Wallace   |          7.5 |
 +----------------+--------------+    +-----------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total WRs: 8 (4 CLE, 4 BAL)
-Top Projection: Zay Flowers (BAL) - 60.3 yards
+Top Projection: Zay Flowers (BAL) - 65.1 yards
 ================================================================================

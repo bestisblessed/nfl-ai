@@ -5,13 +5,13 @@ ARI vs SF | Week 11 2025 | RB Projected Rushing Yards
 +-----------------+--------------+    +---------------------+--------------+
 | ARI Player      |   Pred Yards |    | SF Player           |   Pred Yards |
 +=================+==============+    +=====================+==============+
-| Michael Carter  |         25.4 |    | Christian McCaffrey |         55.1 |
-| Emari Demercado |         21.4 |    +---------------------+--------------+
+| Michael Carter  |         27.9 |    | Christian McCaffrey |         55.2 |
+| Emari Demercado |         25.3 |    +---------------------+--------------+
 +-----------------+--------------+    
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total RBs: 3 (2 ARI, 1 SF)
-Top Projection: Christian McCaffrey (SF) - 55.1 yards
+Top Projection: Christian McCaffrey (SF) - 55.2 yards
 ================================================================================

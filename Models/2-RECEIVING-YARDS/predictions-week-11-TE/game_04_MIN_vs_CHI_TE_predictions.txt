@@ -5,13 +5,13 @@ MIN vs CHI | Week 11 2025 | TE Projected Receiving Yards
 +----------------+--------------+    +------------------+--------------+
 | MIN Player     |   Pred Yards |    | CHI Player       |   Pred Yards |
 +================+==============+    +==================+==============+
-| T.J. Hockenson |         38.9 |    | Colston Loveland |         29.6 |
-| Josh Oliver    |          8.6 |    | Cole Kmet        |         18.8 |
+| T.J. Hockenson |         37.3 |    | Colston Loveland |         30.2 |
+| Josh Oliver    |          9   |    | Cole Kmet        |         20   |
 +----------------+--------------+    +------------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total TEs: 4 (2 MIN, 2 CHI)
-Top Projection: T.J. Hockenson (MIN) - 38.9 yards
+Top Projection: T.J. Hockenson (MIN) - 37.3 yards
 ================================================================================

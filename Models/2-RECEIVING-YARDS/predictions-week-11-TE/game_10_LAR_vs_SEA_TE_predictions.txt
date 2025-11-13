@@ -5,15 +5,15 @@ LAR vs SEA | Week 11 2025 | TE Projected Receiving Yards
 +-------------------+--------------+    +---------------+--------------+
 | LAR Player        |   Pred Yards |    | SEA Player    |   Pred Yards |
 +===================+==============+    +===============+==============+
-| Tyler Higbee      |         26.3 |    | AJ Barner     |         16.6 |
-| Terrance Ferguson |         18.9 |    | Elijah Arroyo |         12   |
-| Colby Parkinson   |         12.8 |    +---------------+--------------+
-| Davis Allen       |          9.9 |    
+| Tyler Higbee      |         24.7 |    | AJ Barner     |         17.1 |
+| Terrance Ferguson |         20.3 |    | Elijah Arroyo |         11.7 |
+| Colby Parkinson   |         14.8 |    +---------------+--------------+
+| Davis Allen       |         10   |    
 +-------------------+--------------+    
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total TEs: 6 (4 LAR, 2 SEA)
-Top Projection: Tyler Higbee (LAR) - 26.3 yards
+Top Projection: Tyler Higbee (LAR) - 24.7 yards
 ================================================================================

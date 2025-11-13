@@ -5,16 +5,16 @@ NE vs NYJ | Week 11 2025 | Projected Receiving Yards
 +-----------------+--------------+    +-----------------+--------------+
 | NE Player       |   Pred Yards |    | NYJ Player      |   Pred Yards |
 +=================+==============+    +=================+==============+
-| Stefon Diggs    |         59.2 |    | Allen Lazard    |         22.4 |
-| Kayshon Boutte  |         36   |    | Tyler Johnson   |         17.3 |
-| DeMario Douglas |         31.5 |    | Isaiah Williams |          7.9 |
-| Mack Hollins    |         19   |    | Adonai Mitchell |          6.8 |
-+-----------------+--------------+    | Arian Smith     |          2   |
+| Stefon Diggs    |         56.4 |    | Allen Lazard    |         24   |
+| DeMario Douglas |         31.8 |    | Tyler Johnson   |         16.3 |
+| Mack Hollins    |         18.7 |    | Isaiah Williams |          7.9 |
++-----------------+--------------+    | Adonai Mitchell |          7.3 |
+                                      | Arian Smith     |          2.1 |
                                       +-----------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
-Total WRs: 9 (4 NE, 5 NYJ)
-Top Projection: Stefon Diggs (NE) - 59.2 yards
+Total WRs: 8 (3 NE, 5 NYJ)
+Top Projection: Stefon Diggs (NE) - 56.4 yards
 ================================================================================

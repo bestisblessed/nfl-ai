@@ -5,14 +5,14 @@ ATL vs CAR | Week 11 2025 | RB Projected Receiving Yards
 +----------------+--------------+    +----------------+--------------+
 | ATL Player     |   Pred Yards |    | CAR Player     |   Pred Yards |
 +================+==============+    +================+==============+
-| Bijan Robinson |         32.8 |    | Chuba Hubbard  |          8.2 |
-| Tyler Allgeier |          0.3 |    | Rico Dowdle    |          7   |
-+----------------+--------------+    | Trevor Etienne |          3.4 |
+| Bijan Robinson |         33.6 |    | Chuba Hubbard  |          7.9 |
+| Tyler Allgeier |         -0.1 |    | Rico Dowdle    |          7.3 |
++----------------+--------------+    | Trevor Etienne |          2.5 |
                                      +----------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total RBs: 5 (2 ATL, 3 CAR)
-Top Projection: Bijan Robinson (ATL) - 32.8 yards
+Top Projection: Bijan Robinson (ATL) - 33.6 yards
 ================================================================================

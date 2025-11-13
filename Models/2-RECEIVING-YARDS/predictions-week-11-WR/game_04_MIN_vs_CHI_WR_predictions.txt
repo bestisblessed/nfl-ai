@@ -5,15 +5,15 @@ MIN vs CHI | Week 11 2025 | Projected Receiving Yards
 +------------------+--------------+    +-------------------+--------------+
 | MIN Player       |   Pred Yards |    | CHI Player        |   Pred Yards |
 +==================+==============+    +===================+==============+
-| Justin Jefferson |         75.7 |    | DJ Moore          |         57.6 |
-| Jordan Addison   |         55.6 |    | Rome Odunze       |         43.7 |
-| Adam Thielen     |         26.4 |    | Olamide Zaccheaus |         27.7 |
-| Jalen Nailor     |         20.9 |    +-------------------+--------------+
+| Justin Jefferson |         76.8 |    | DJ Moore          |         56.5 |
+| Jordan Addison   |         55.3 |    | Rome Odunze       |         44.2 |
+| Adam Thielen     |         20.5 |    | Olamide Zaccheaus |         27.2 |
+| Jalen Nailor     |         20.3 |    +-------------------+--------------+
 +------------------+--------------+    
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total WRs: 7 (4 MIN, 3 CHI)
-Top Projection: Justin Jefferson (MIN) - 75.7 yards
+Top Projection: Justin Jefferson (MIN) - 76.8 yards
 ================================================================================

@@ -5,13 +5,13 @@ MIA vs WAS | Week 11 2025 | RB Projected Rushing Yards
 +---------------+--------------+    +------------------------+--------------+
 | MIA Player    |   Pred Yards |    | WAS Player             |   Pred Yards |
 +===============+==============+    +========================+==============+
-| De'Von Achane |         57.8 |    | Jacory Croskey-Merritt |         41.1 |
-| Jaylen Wright |         13.8 |    | Jeremy McNichols       |          7.6 |
+| De'Von Achane |         58.6 |    | Jacory Croskey-Merritt |         38.9 |
+| Jaylen Wright |         15.2 |    | Jeremy McNichols       |          7.5 |
 +---------------+--------------+    +------------------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total RBs: 4 (2 MIA, 2 WAS)
-Top Projection: De'Von Achane (MIA) - 57.8 yards
+Top Projection: De'Von Achane (MIA) - 58.6 yards
 ================================================================================

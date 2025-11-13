@@ -5,12 +5,12 @@ DEN vs KC | Week 11 2025 | QB Projected Passing Yards
 +--------------+--------------+    +-----------------+--------------+
 | DEN Player   |   Pred Yards |    | KC Player       |   Pred Yards |
 +==============+==============+    +=================+==============+
-| Bo Nix       |        207.8 |    | Patrick Mahomes |        255.7 |
+| Bo Nix       |        220.3 |    | Patrick Mahomes |          255 |
 +--------------+--------------+    +-----------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total QBs: 2 (1 DEN, 1 KC)
-Top Projection: Patrick Mahomes (KC) - 255.7 yards
+Top Projection: Patrick Mahomes (KC) - 255.0 yards
 ================================================================================

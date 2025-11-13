@@ -5,15 +5,15 @@ PHI vs DET | Week 11 2025 | RB Projected Rushing Yards
 +----------------+--------------+    +------------------+--------------+
 | PHI Player     |   Pred Yards |    | DET Player       |   Pred Yards |
 +================+==============+    +==================+==============+
-| Saquon Barkley |         68.9 |    | Jahmyr Gibbs     |         75.3 |
-| AJ Dillon      |         20.3 |    | David Montgomery |         50.9 |
-| Tank Bigsby    |         19.7 |    +------------------+--------------+
-| Will Shipley   |         10.1 |    
+| Saquon Barkley |         66.5 |    | Jahmyr Gibbs     |         64.4 |
+| AJ Dillon      |         21.5 |    | David Montgomery |         50   |
+| Tank Bigsby    |         20.9 |    +------------------+--------------+
+| Will Shipley   |          7.5 |    
 +----------------+--------------+    
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total RBs: 6 (4 PHI, 2 DET)
-Top Projection: Jahmyr Gibbs (DET) - 75.3 yards
+Top Projection: Saquon Barkley (PHI) - 66.5 yards
 ================================================================================

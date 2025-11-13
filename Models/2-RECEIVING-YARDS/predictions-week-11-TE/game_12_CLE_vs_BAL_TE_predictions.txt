@@ -5,14 +5,14 @@ CLE vs BAL | Week 11 2025 | TE Projected Receiving Yards
 +--------------+--------------+    +---------------+--------------+
 | CLE Player   |   Pred Yards |    | BAL Player    |   Pred Yards |
 +==============+==============+    +===============+==============+
-| David Njoku  |         36.2 |    | Mark Andrews  |         35.3 |
-+--------------+--------------+    | Isaiah Likely |         24.7 |
-                                   | Charlie Kolar |         11.8 |
+| David Njoku  |         35.2 |    | Mark Andrews  |         34.8 |
++--------------+--------------+    | Isaiah Likely |         25.1 |
+                                   | Charlie Kolar |         12.5 |
                                    +---------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total TEs: 4 (1 CLE, 3 BAL)
-Top Projection: David Njoku (CLE) - 36.2 yards
+Top Projection: David Njoku (CLE) - 35.2 yards
 ================================================================================

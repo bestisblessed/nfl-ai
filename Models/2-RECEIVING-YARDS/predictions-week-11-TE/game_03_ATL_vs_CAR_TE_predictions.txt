@@ -5,14 +5,14 @@ ATL vs CAR | Week 11 2025 | TE Projected Receiving Yards
 +--------------+--------------+    +-------------------+--------------+
 | ATL Player   |   Pred Yards |    | CAR Player        |   Pred Yards |
 +==============+==============+    +===================+==============+
-| Kyle Pitts   |         40.7 |    | Tommy Tremble     |         13.5 |
-+--------------+--------------+    | Ja'Tavion Sanders |         13.4 |
-                                   | Mitchell Evans    |          7.9 |
+| Kyle Pitts   |         39.5 |    | Ja'Tavion Sanders |         14.5 |
++--------------+--------------+    | Tommy Tremble     |         13.8 |
+                                   | Mitchell Evans    |          7.5 |
                                    +-------------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total TEs: 4 (1 ATL, 3 CAR)
-Top Projection: Kyle Pitts (ATL) - 40.7 yards
+Top Projection: Kyle Pitts (ATL) - 39.5 yards
 ================================================================================

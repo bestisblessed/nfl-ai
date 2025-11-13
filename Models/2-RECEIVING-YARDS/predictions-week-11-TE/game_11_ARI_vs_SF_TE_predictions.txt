@@ -5,14 +5,14 @@ ARI vs SF | Week 11 2025 | TE Projected Receiving Yards
 +----------------+--------------+    +---------------+--------------+
 | ARI Player     |   Pred Yards |    | SF Player     |   Pred Yards |
 +================+==============+    +===============+==============+
-| Trey McBride   |         62.4 |    | George Kittle |         39.7 |
-| Elijah Higgins |         11.9 |    | Jake Tonges   |         31.3 |
-+----------------+--------------+    | Luke Farrell  |          7.4 |
+| Trey McBride   |         60.6 |    | George Kittle |         38.9 |
+| Elijah Higgins |         13   |    | Jake Tonges   |         34   |
++----------------+--------------+    | Luke Farrell  |          7.2 |
                                      +---------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total TEs: 5 (2 ARI, 3 SF)
-Top Projection: Trey McBride (ARI) - 62.4 yards
+Top Projection: Trey McBride (ARI) - 60.6 yards
 ================================================================================

@@ -5,9 +5,9 @@ PIT vs CIN | Week 11 2025 | RB Projected Receiving Yards
 +------------------+--------------+    +---------------+--------------+
 | PIT Player       |   Pred Yards |    | CIN Player    |   Pred Yards |
 +==================+==============+    +===============+==============+
-| Jaylen Warren    |         19.4 |    | Chase Brown   |         15.6 |
-| Kenneth Gainwell |          9.5 |    | Samaje Perine |          9.5 |
-| Kaleb Johnson    |          0.5 |    | Tahj Brooks   |         -0   |
+| Jaylen Warren    |         19.4 |    | Chase Brown   |         14.7 |
+| Kenneth Gainwell |          7.7 |    | Samaje Perine |          9.7 |
+| Kaleb Johnson    |          1.1 |    | Tahj Brooks   |          0   |
 +------------------+--------------+    +---------------+--------------+
 
 ================================================================================

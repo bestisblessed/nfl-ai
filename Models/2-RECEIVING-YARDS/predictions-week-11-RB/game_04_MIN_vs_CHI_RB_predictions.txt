@@ -5,14 +5,14 @@ MIN vs CHI | Week 11 2025 | RB Projected Receiving Yards
 +--------------+--------------+    +---------------+--------------+
 | MIN Player   |   Pred Yards |    | CHI Player    |   Pred Yards |
 +==============+==============+    +===============+==============+
-| Aaron Jones  |         17.5 |    | D'Andre Swift |         20.3 |
-| Zavier Scott |          9.9 |    | Kyle Monangai |          8.9 |
-| Jordan Mason |          4.7 |    +---------------+--------------+
+| Aaron Jones  |         16.7 |    | D'Andre Swift |         20.6 |
+| Zavier Scott |          9.4 |    | Kyle Monangai |          8.8 |
+| Jordan Mason |          3.2 |    +---------------+--------------+
 +--------------+--------------+    
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total RBs: 5 (3 MIN, 2 CHI)
-Top Projection: D'Andre Swift (CHI) - 20.3 yards
+Top Projection: D'Andre Swift (CHI) - 20.6 yards
 ================================================================================

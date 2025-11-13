@@ -5,15 +5,15 @@ LAR vs SEA | Week 11 2025 | Projected Receiving Yards
 +--------------------+--------------+    +--------------------+--------------+
 | LAR Player         |   Pred Yards |    | SEA Player         |   Pred Yards |
 +====================+==============+    +====================+==============+
-| Puka Nacua         |         75.3 |    | Jaxon Smith-Njigba |         89   |
-| Davante Adams      |         71.1 |    | Rashid Shaheed     |         50.8 |
-| Jordan Whittington |         21   |    | Cooper Kupp        |         46   |
-| Xavier Smith       |         11.7 |    | Tory Horton        |         19.6 |
+| Puka Nacua         |         70.1 |    | Jaxon Smith-Njigba |         90.8 |
+| Davante Adams      |         60.3 |    | Rashid Shaheed     |         51.4 |
+| Jordan Whittington |         22.3 |    | Cooper Kupp        |         48.2 |
+| Xavier Smith       |         11.6 |    | Tory Horton        |         20.2 |
 +--------------------+--------------+    +--------------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total WRs: 8 (4 LAR, 4 SEA)
-Top Projection: Jaxon Smith-Njigba (SEA) - 89.0 yards
+Top Projection: Jaxon Smith-Njigba (SEA) - 90.8 yards
 ================================================================================

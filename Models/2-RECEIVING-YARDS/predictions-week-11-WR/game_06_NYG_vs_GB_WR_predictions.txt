@@ -5,17 +5,17 @@ NYG vs GB | Week 11 2025 | Projected Receiving Yards
 +---------------------+--------------+    +------------------+--------------+
 | NYG Player          |   Pred Yards |    | GB Player        |   Pred Yards |
 +=====================+==============+    +==================+==============+
-| Wan'Dale Robinson   |         45.4 |    | Romeo Doubs      |         43.2 |
-| Darius Slayton      |         35.7 |    | Christian Watson |         35.4 |
-| Ray-Ray McCloud     |         17.4 |    | Matthew Golden   |         27.7 |
-| Lil'Jordan Humphrey |         16.2 |    | Dontayvion Wicks |         21   |
-+---------------------+--------------+    | Malik Heath      |          9.8 |
-                                          | Savion Williams  |          1.9 |
+| Wan'Dale Robinson   |         46.5 |    | Romeo Doubs      |         42.8 |
+| Darius Slayton      |         34.2 |    | Matthew Golden   |         28.9 |
+| Ray-Ray McCloud     |         16.1 |    | Christian Watson |         28.2 |
+| Lil'Jordan Humphrey |         15.9 |    | Dontayvion Wicks |         22.2 |
++---------------------+--------------+    | Malik Heath      |          9.6 |
+                                          | Savion Williams  |          2   |
                                           +------------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total WRs: 10 (4 NYG, 6 GB)
-Top Projection: Wan'Dale Robinson (NYG) - 45.4 yards
+Top Projection: Wan'Dale Robinson (NYG) - 46.5 yards
 ================================================================================

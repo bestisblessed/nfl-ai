@@ -5,14 +5,14 @@ BUF vs TB | Week 11 2025 | RB Projected Receiving Yards
 +--------------+--------------+    +---------------+--------------+
 | BUF Player   |   Pred Yards |    | TB Player     |   Pred Yards |
 +==============+==============+    +===============+==============+
-| James Cook   |          8.2 |    | Rachaad White |         21.8 |
-| Ty Johnson   |          7.9 |    | Sean Tucker   |          0   |
-| Ray Davis    |          0.4 |    +---------------+--------------+
+| James Cook   |          8   |    | Rachaad White |         21.6 |
+| Ty Johnson   |          7   |    | Sean Tucker   |          0.4 |
+| Ray Davis    |          1.1 |    +---------------+--------------+
 +--------------+--------------+    
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total RBs: 5 (3 BUF, 2 TB)
-Top Projection: Rachaad White (TB) - 21.8 yards
+Top Projection: Rachaad White (TB) - 21.6 yards
 ================================================================================

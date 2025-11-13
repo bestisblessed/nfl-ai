@@ -5,14 +5,14 @@ LAR vs SEA | Week 11 2025 | RB Projected Rushing Yards
 +----------------+--------------+    +--------------------+--------------+
 | LAR Player     |   Pred Yards |    | SEA Player         |   Pred Yards |
 +================+==============+    +====================+==============+
-| Kyren Williams |         76.6 |    | Kenneth Walker III |         55.6 |
-| Blake Corum    |         25.5 |    | Zach Charbonnet    |         32.8 |
-+----------------+--------------+    | George Holani      |         11.5 |
+| Kyren Williams |         71.8 |    | Kenneth Walker III |         55.9 |
+| Blake Corum    |         24.7 |    | Zach Charbonnet    |         35.8 |
++----------------+--------------+    | George Holani      |         10.5 |
                                      +--------------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total RBs: 5 (2 LAR, 3 SEA)
-Top Projection: Kyren Williams (LAR) - 76.6 yards
+Top Projection: Kyren Williams (LAR) - 71.8 yards
 ================================================================================

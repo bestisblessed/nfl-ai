@@ -5,15 +5,15 @@ JAX vs LAC | Week 11 2025 | Projected Receiving Yards
 +-------------------+--------------+    +------------------+--------------+
 | JAX Player        |   Pred Yards |    | LAC Player       |   Pred Yards |
 +===================+==============+    +==================+==============+
-| Jakobi Meyers     |         52.2 |    | Ladd McConkey    |         71.3 |
-| Parker Washington |         33.8 |    | Keenan Allen     |         66.3 |
-| Tim Patrick       |         24   |    | Quentin Johnston |         36.8 |
-| Dyami Brown       |         18.8 |    | Tre Harris       |         11.4 |
+| Jakobi Meyers     |         54.3 |    | Ladd McConkey    |         68.8 |
+| Parker Washington |         34.1 |    | Keenan Allen     |         61.9 |
+| Tim Patrick       |         22.3 |    | Quentin Johnston |         35   |
+| Dyami Brown       |         20.5 |    | Tre Harris       |         10.3 |
 +-------------------+--------------+    +------------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total WRs: 8 (4 JAX, 4 LAC)
-Top Projection: Ladd McConkey (LAC) - 71.3 yards
+Top Projection: Ladd McConkey (LAC) - 68.8 yards
 ================================================================================

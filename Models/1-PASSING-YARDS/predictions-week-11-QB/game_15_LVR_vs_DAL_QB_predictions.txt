@@ -5,12 +5,12 @@ LVR vs DAL | Week 11 2025 | QB Projected Passing Yards
 +--------------+--------------+    +--------------+--------------+
 | LVR Player   |   Pred Yards |    | DAL Player   |   Pred Yards |
 +==============+==============+    +==============+==============+
-| Geno Smith   |        196.6 |    | Dak Prescott |        239.2 |
+| Geno Smith   |        178.7 |    | Dak Prescott |        243.5 |
 +--------------+--------------+    +--------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total QBs: 2 (1 LVR, 1 DAL)
-Top Projection: Dak Prescott (DAL) - 239.2 yards
+Top Projection: Dak Prescott (DAL) - 243.5 yards
 ================================================================================

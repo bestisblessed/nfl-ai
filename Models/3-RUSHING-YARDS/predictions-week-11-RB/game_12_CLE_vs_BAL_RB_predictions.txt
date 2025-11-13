@@ -5,14 +5,14 @@ CLE vs BAL | Week 11 2025 | RB Projected Rushing Yards
 +------------------+--------------+    +-----------------+--------------+
 | CLE Player       |   Pred Yards |    | BAL Player      |   Pred Yards |
 +==================+==============+    +=================+==============+
-| Quinshon Judkins |         67.1 |    | Derrick Henry   |         85.2 |
-| Jerome Ford      |         12.8 |    | Keaton Mitchell |         26.8 |
-| Dylan Sampson    |          1.9 |    | Justice Hill    |          8.6 |
+| Quinshon Judkins |         71.1 |    | Derrick Henry   |         89.6 |
+| Jerome Ford      |          9.7 |    | Keaton Mitchell |         25.4 |
+| Dylan Sampson    |          2   |    | Justice Hill    |          9.7 |
 +------------------+--------------+    +-----------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total RBs: 6 (3 CLE, 3 BAL)
-Top Projection: Derrick Henry (BAL) - 85.2 yards
+Top Projection: Derrick Henry (BAL) - 89.6 yards
 ================================================================================

@@ -5,14 +5,14 @@ PIT vs CIN | Week 11 2025 | RB Projected Rushing Yards
 +------------------+--------------+    +---------------+--------------+
 | PIT Player       |   Pred Yards |    | CIN Player    |   Pred Yards |
 +==================+==============+    +===============+==============+
-| Jaylen Warren    |         54.9 |    | Chase Brown   |         56.8 |
-| Kenneth Gainwell |         14   |    | Samaje Perine |         15.7 |
-| Kaleb Johnson    |          3.7 |    | Tahj Brooks   |         11.6 |
+| Jaylen Warren    |         54.6 |    | Chase Brown   |         56.1 |
+| Kenneth Gainwell |         13   |    | Samaje Perine |         15.5 |
+| Kaleb Johnson    |          4.4 |    | Tahj Brooks   |         11.5 |
 +------------------+--------------+    +---------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total RBs: 6 (3 PIT, 3 CIN)
-Top Projection: Chase Brown (CIN) - 56.8 yards
+Top Projection: Chase Brown (CIN) - 56.1 yards
 ================================================================================

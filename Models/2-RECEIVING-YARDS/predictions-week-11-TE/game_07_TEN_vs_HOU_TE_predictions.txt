@@ -5,12 +5,12 @@ TEN vs HOU | Week 11 2025 | TE Projected Receiving Yards
 +--------------+--------------+    +----------------+--------------+
 | TEN Player   |   Pred Yards |    | HOU Player     |   Pred Yards |
 +==============+==============+    +================+==============+
-| Gunnar Helm  |         17.6 |    | Dalton Schultz |         45.7 |
+| Gunnar Helm  |           18 |    | Dalton Schultz |         45.5 |
 +--------------+--------------+    +----------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total TEs: 2 (1 TEN, 1 HOU)
-Top Projection: Dalton Schultz (HOU) - 45.7 yards
+Top Projection: Dalton Schultz (HOU) - 45.5 yards
 ================================================================================

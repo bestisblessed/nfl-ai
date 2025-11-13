@@ -5,12 +5,12 @@ LAR vs SEA | Week 11 2025 | QB Projected Passing Yards
 +------------------+--------------+    +--------------+--------------+
 | LAR Player       |   Pred Yards |    | SEA Player   |   Pred Yards |
 +==================+==============+    +==============+==============+
-| Matthew Stafford |        272.4 |    | Sam Darnold  |        247.5 |
+| Matthew Stafford |        263.8 |    | Sam Darnold  |        254.6 |
 +------------------+--------------+    +--------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total QBs: 2 (1 LAR, 1 SEA)
-Top Projection: Matthew Stafford (LAR) - 272.4 yards
+Top Projection: Matthew Stafford (LAR) - 263.8 yards
 ================================================================================

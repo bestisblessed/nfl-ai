@@ -5,13 +5,13 @@ NYG vs GB | Week 11 2025 | RB Projected Rushing Yards
 +------------------+--------------+    +----------------+--------------+
 | NYG Player       |   Pred Yards |    | GB Player      |   Pred Yards |
 +==================+==============+    +================+==============+
-| Tyrone Tracy Jr. |         31.6 |    | Josh Jacobs    |         71.4 |
-| Devin Singletary |         18.2 |    | Emanuel Wilson |         20.2 |
+| Tyrone Tracy Jr. |         32.9 |    | Josh Jacobs    |         73.6 |
+| Devin Singletary |         18   |    | Emanuel Wilson |         18.7 |
 +------------------+--------------+    +----------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total RBs: 4 (2 NYG, 2 GB)
-Top Projection: Josh Jacobs (GB) - 71.4 yards
+Top Projection: Josh Jacobs (GB) - 73.6 yards
 ================================================================================

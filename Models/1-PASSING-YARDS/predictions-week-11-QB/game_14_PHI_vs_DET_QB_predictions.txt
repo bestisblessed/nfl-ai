@@ -5,12 +5,12 @@ PHI vs DET | Week 11 2025 | QB Projected Passing Yards
 +--------------+--------------+    +--------------+--------------+
 | PHI Player   |   Pred Yards |    | DET Player   |   Pred Yards |
 +==============+==============+    +==============+==============+
-| Jalen Hurts  |        218.6 |    | Jared Goff   |        263.2 |
+| Jalen Hurts  |          221 |    | Jared Goff   |        256.1 |
 +--------------+--------------+    +--------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total QBs: 2 (1 PHI, 1 DET)
-Top Projection: Jared Goff (DET) - 263.2 yards
+Top Projection: Jared Goff (DET) - 256.1 yards
 ================================================================================

@@ -5,12 +5,12 @@ MIA vs WAS | Week 11 2025 | QB Projected Passing Yards
 +----------------+--------------+    +----------------+--------------+
 | MIA Player     |   Pred Yards |    | WAS Player     |   Pred Yards |
 +================+==============+    +================+==============+
-| Tua Tagovailoa |        207.8 |    | Marcus Mariota |        186.8 |
+| Tua Tagovailoa |        213.4 |    | Marcus Mariota |        173.9 |
 +----------------+--------------+    +----------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total QBs: 2 (1 MIA, 1 WAS)
-Top Projection: Tua Tagovailoa (MIA) - 207.8 yards
+Top Projection: Tua Tagovailoa (MIA) - 213.4 yards
 ================================================================================

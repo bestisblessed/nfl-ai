@@ -5,12 +5,12 @@ JAX vs LAC | Week 11 2025 | QB Projected Passing Yards
 +-----------------+--------------+    +----------------+--------------+
 | JAX Player      |   Pred Yards |    | LAC Player     |   Pred Yards |
 +=================+==============+    +================+==============+
-| Trevor Lawrence |        207.3 |    | Justin Herbert |        231.7 |
+| Trevor Lawrence |        214.2 |    | Justin Herbert |        253.3 |
 +-----------------+--------------+    +----------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total QBs: 2 (1 JAX, 1 LAC)
-Top Projection: Justin Herbert (LAC) - 231.7 yards
+Top Projection: Justin Herbert (LAC) - 253.3 yards
 ================================================================================

@@ -5,16 +5,16 @@ LVR vs DAL | Week 11 2025 | Projected Receiving Yards
 +---------------+--------------+    +-----------------+--------------+
 | LVR Player    |   Pred Yards |    | DAL Player      |   Pred Yards |
 +===============+==============+    +=================+==============+
-| Tre Tucker    |         29.1 |    | CeeDee Lamb     |         74.6 |
-| Tyler Lockett |         27.9 |    | George Pickens  |         58.9 |
-| Jack Bech     |         11.3 |    | Ryan Flournoy   |         18.2 |
-+---------------+--------------+    | KaVontae Turpin |         15.8 |
-                                    | Jalen Tolbert   |         15.2 |
+| Tre Tucker    |         30.5 |    | CeeDee Lamb     |         77.2 |
+| Tyler Lockett |         25.2 |    | George Pickens  |         61   |
+| Jack Bech     |         10.5 |    | Ryan Flournoy   |         18.4 |
++---------------+--------------+    | Jalen Tolbert   |         16.2 |
+                                    | KaVontae Turpin |         15.5 |
                                     +-----------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total WRs: 8 (3 LVR, 5 DAL)
-Top Projection: CeeDee Lamb (DAL) - 74.6 yards
+Top Projection: CeeDee Lamb (DAL) - 77.2 yards
 ================================================================================

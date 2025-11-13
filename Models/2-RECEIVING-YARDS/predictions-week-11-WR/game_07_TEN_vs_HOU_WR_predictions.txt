@@ -5,17 +5,17 @@ TEN vs HOU | Week 11 2025 | Projected Receiving Yards
 +---------------+--------------+    +-------------------+--------------+
 | TEN Player    |   Pred Yards |    | HOU Player        |   Pred Yards |
 +===============+==============+    +===================+==============+
-| Calvin Ridley |         53.3 |    | Nico Collins      |         57.2 |
-| Elic Ayomanor |         36.9 |    | Christian Kirk    |         42.5 |
-| Chimere Dike  |         26.4 |    | Braxton Berrios   |         22.5 |
-| Van Jefferson |         25.6 |    | Jaylin Noel       |         20.2 |
-+---------------+--------------+    | Jayden Higgins    |         18.9 |
-                                    | Xavier Hutchinson |         15.7 |
+| Calvin Ridley |         52.7 |    | Nico Collins      |         58.7 |
+| Elic Ayomanor |         36.7 |    | Christian Kirk    |         43.9 |
+| Van Jefferson |         24.7 |    | Jayden Higgins    |         19.6 |
+| Chimere Dike  |         20.9 |    | Jaylin Noel       |         18.4 |
++---------------+--------------+    | Braxton Berrios   |         17.6 |
+                                    | Xavier Hutchinson |         14.3 |
                                     +-------------------+--------------+
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total WRs: 10 (4 TEN, 6 HOU)
-Top Projection: Nico Collins (HOU) - 57.2 yards
+Top Projection: Nico Collins (HOU) - 58.7 yards
 ================================================================================

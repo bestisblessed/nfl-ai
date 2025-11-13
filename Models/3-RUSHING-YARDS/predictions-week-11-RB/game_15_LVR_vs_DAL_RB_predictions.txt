@@ -5,14 +5,14 @@ LVR vs DAL | Week 11 2025 | RB Projected Rushing Yards
 +----------------+--------------+    +------------------+--------------+
 | LVR Player     |   Pred Yards |    | DAL Player       |   Pred Yards |
 +================+==============+    +==================+==============+
-| Ashton Jeanty  |         52.8 |    | Javonte Williams |         60.2 |
-| Zamir White    |          8.3 |    | Jaydon Blue      |         14.2 |
-| Raheem Mostert |          7.6 |    +------------------+--------------+
+| Ashton Jeanty  |         55.9 |    | Javonte Williams |         57.5 |
+| Zamir White    |          7.3 |    | Jaydon Blue      |         14.4 |
+| Raheem Mostert |          7.3 |    +------------------+--------------+
 +----------------+--------------+    
 
 ================================================================================
 GAME SUMMARY
 ---------------
 Total RBs: 5 (3 LVR, 2 DAL)
-Top Projection: Javonte Williams (DAL) - 60.2 yards
+Top Projection: Javonte Williams (DAL) - 57.5 yards
 ================================================================================
