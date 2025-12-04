@@ -319,21 +319,24 @@ st.divider()
 
 # Filter by selected game if not "All Games"
 if selected_game != "All Games":
+    team_pairs: List[Tuple[str, str]] = []
     # Parse the game selection (format: "Away @ Home" with abbreviations)
     if " @ " in selected_game:
-        # Format: "Away Team @ Home Team" (using abbreviations)
         away_team_abbrev, home_team_abbrev = selected_game.split(" @ ")
-        # Filter using team/opp columns (which use abbreviations)
-        # Check both directions since data may have either team as team/opp
+        team_pairs = [
+            (away_team_abbrev, f"{away_team_abbrev} Players"),
+            (home_team_abbrev, f"{home_team_abbrev} Players"),
+        ]
         game_data = value_opportunities[
             ((value_opportunities["team"] == away_team_abbrev) & (value_opportunities["opp"] == home_team_abbrev)) |
             ((value_opportunities["team"] == home_team_abbrev) & (value_opportunities["opp"] == away_team_abbrev))
         ].copy()
     elif " vs " in selected_game:
-        # Fallback: handle "vs" format if it exists
         team1, team2 = selected_game.split(" vs ")
-        # Filter using team/opp columns (which use abbreviations)
-        # Check both directions since data may have either team as team/opp
+        team_pairs = [
+            (team1, f"{team1} Players"),
+            (team2, f"{team2} Players"),
+        ]
         game_data = value_opportunities[
             ((value_opportunities["team"] == team1) & (value_opportunities["opp"] == team2)) |
             ((value_opportunities["team"] == team2) & (value_opportunities["opp"] == team1))
@@ -357,6 +360,70 @@ if selected_game != "All Games":
         unsafe_allow_html=True
     )
     st.write("")
+
+    def format_side_with_emoji(side_value):
+        if pd.isna(side_value) or side_value == "-":
+            return "-"
+        side_str = str(side_value).strip().upper()
+        if side_str == "OVER":
+            return "Over  ⬆️"
+        if side_str == "UNDER":
+            return "Under  ⬇️"
+        return str(side_value)
+
+    def style_side_cell(val):
+        if pd.isna(val) or val == "-":
+            return 'color: #666;'
+        val_str = str(val).upper()
+        if "OVER" in val_str:
+            return 'color: #2e7d32; font-weight: 500;'
+        if "UNDER" in val_str:
+            return 'color: #c62828; font-weight: 500;'
+        return ''
+
+    def build_display_table(df_slice: pd.DataFrame) -> pd.DataFrame:
+        display_df = df_slice[
+            [
+                "rank",
+                "player",
+                "position",
+                "opp",
+                "side",
+                "best_point",
+                "best_price",
+                "predicted_yards",
+                "edge_yards",
+                "edge_pct_norm",
+                "edge_indicator",
+                "bookmaker",
+            ]
+        ].rename(
+            columns={
+                "rank": "#",
+                "player": "Player",
+                "position": "Pos",
+                "opp": "Opp",
+                "best_point": "Best Line (yds)",
+                "predicted_yards": "Projection (yds)",
+                "best_price": "Best Odds",
+                "edge_yards": "Edge (yds)",
+                "edge_pct_norm": "Edge % (norm)",
+                "edge_indicator": "Indicator",
+                "side": "Side",
+                "bookmaker": "Book",
+            }
+        )
+        if display_df.empty:
+            return display_df
+        display_df["Best Line (yds)"] = display_df["Best Line (yds)"].round(1)
+        display_df["Best Odds"] = display_df["Best Odds"].round().astype("Int64")
+        display_df["Projection (yds)"] = display_df["Projection (yds)"].round(1)
+        display_df["Edge (yds)"] = display_df["Edge (yds)"].round(1)
+        display_df["Side"] = display_df["Side"].apply(format_side_with_emoji)
+        display_df["Indicator"] = display_df["Indicator"].fillna("").replace(np.nan, "")
+        display_df = display_df[["Indicator", "#", "Player", "Pos", "Opp", "Projection (yds)", "Best Line (yds)", "Best Odds", "Edge (yds)", "Edge % (norm)", "Side", "Book"]]
+        display_df = display_df.sort_values(by="Edge (yds)", ascending=False, na_position='last')
+        return display_df
     
     for prop_type in all_prop_types:
         prop_data = game_data[game_data["prop_type"] == prop_type].copy()
@@ -383,116 +450,48 @@ if selected_game != "All Games":
                 )
             )
         
-        # Section header for prop type
-        st.markdown(f"### {prop_type.upper()}")
-        
-        display_df = prop_data[
-            [
-                "rank",
-                "player",
-                "position",
-                "team",
-                "opp",
-                "side",
-                "best_point",
-                "best_price",
-                "predicted_yards",
-                "edge_yards",
-                "edge_pct_norm",
-                "edge_indicator",
-                "bookmaker",
-            ]
-        ].rename(
-            columns={
-                "rank": "#",
-                "player": "Player",
-                "position": "Pos",
-                "team": "Team",
-                "opp": "Opp",
-                "best_point": "Best Line (yds)",
-                "predicted_yards": "Projection (yds)",
-                "best_price": "Best Odds",
-                "edge_yards": "Edge (yds)",
-                "edge_pct_norm": "Edge % (norm)",
-                "edge_indicator": "Indicator",
-                "side": "Side",
-                "bookmaker": "Book",
-            }
+        st.markdown(
+            f"<h4 style='text-align: center; font-size: 1.1em; margin-bottom: 0.8em;'>{prop_type.upper()}</h4>",
+            unsafe_allow_html=True,
         )
-        
-        display_df["Best Line (yds)"] = display_df["Best Line (yds)"].round(1)
-        display_df["Best Odds"] = display_df["Best Odds"].round().astype("Int64")
-        display_df["Projection (yds)"] = display_df["Projection (yds)"].round(1)
-        display_df["Edge (yds)"] = display_df["Edge (yds)"].round(1)
-        display_df = display_df[["#", "Player", "Pos", "Team", "Opp", "Projection (yds)", "Best Line (yds)", "Best Odds", "Edge (yds)", "Edge % (norm)", "Indicator", "Side", "Book"]]
-        
-        # Sort FIRST by Edge (yds) before formatting
-        display_df = display_df.sort_values(by="Edge (yds)", ascending=False, na_position='last')
-        
-        # Create indicators list for display outside table
-        indicators = display_df["Indicator"].tolist()
-        
-        # Add emoji indicators to Side column
-        def format_side_with_emoji(side_value):
-            if pd.isna(side_value) or side_value == "-":
-                return "-"
-            side_str = str(side_value).strip().upper()
-            if side_str == "OVER":
-                return "Over  ⬆️"
-            elif side_str == "UNDER":
-                return "Under  ⬇️"
-            return str(side_value)
-        
-        display_df["Side"] = display_df["Side"].apply(format_side_with_emoji)
-        display_df = display_df.drop(columns=["Indicator"])
-        
-        # Apply color styling to Side column using pandas Styler
-        def style_side_cell(val):
-            if pd.isna(val) or val == "-":
-                return 'color: #666;'
-            val_str = str(val).upper()
-            if "OVER" in val_str:
-                return 'color: #2e7d32; font-weight: 500;'
-            elif "UNDER" in val_str:
-                return 'color: #c62828; font-weight: 500;'
-            return ''
-        
-        # Create styled dataframe
-        styled_df = (
-            display_df.style
-            .map(style_side_cell, subset=["Side"])
-        )
-        
-        # Create two-column layout: table on left, indicators on right
-        col_table, col_indicators = st.columns([0.98, 0.02], gap="small")
-        
-        with col_table:
-            st.dataframe(
-                styled_df,
-                use_container_width=True,
-                height=None,
-                hide_index=True,
-                column_config={
-                    "#": st.column_config.TextColumn(label="", width="small"),
-                    "Best Line (yds)": st.column_config.NumberColumn("Best Line (yds)", format="%.1f"),
-                    "Projection (yds)": st.column_config.NumberColumn("Projection (yds)", format="%.1f"),
-                    "Best Odds": st.column_config.NumberColumn("Best Odds"),
-                    "Edge (yds)": st.column_config.NumberColumn("Edge (yds)", format="%.1f"),
-                    "Edge % (norm)": st.column_config.NumberColumn("Edge % (norm)", format="%.1f"),
-                },
-            )
-        
-        with col_indicators:
-            # Add spacer for table header row
-            st.markdown('<div style="height: 40px;"></div>', unsafe_allow_html=True)
-            # Display indicators aligned with rows
-            for indicator in indicators:
-                if indicator == "💎":
-                    st.markdown('<div style="height: 35px; display: flex; align-items: center; justify-content: center; color: #d32f2f; font-weight: 700; font-size: 0.9em; padding: 0; margin: 0;">💎</div>', unsafe_allow_html=True)
-                elif indicator == "⚡️":
-                    st.markdown('<div style="height: 35px; display: flex; align-items: center; justify-content: center; color: #f57c00; font-weight: 700; font-size: 0.9em; padding: 0; margin: 0;">⚡️</div>', unsafe_allow_html=True)
+
+        display_pairs = team_pairs if team_pairs else [("ALL", f"{prop_type.upper()} Value Plays")]
+        team_cols = st.columns(len(display_pairs), gap="large")
+
+        for col, (team_abbrev, title) in zip(team_cols, display_pairs):
+            with col:
+                st.markdown(
+                    f"<div style='text-align: center; font-weight: 600; margin-bottom: 0.5em;'>{title}</div>",
+                    unsafe_allow_html=True,
+                )
+                if team_abbrev == "ALL":
+                    team_slice = prop_data.copy()
                 else:
-                    st.markdown('<div style="height: 35px;"></div>', unsafe_allow_html=True)
+                    team_slice = prop_data[prop_data["team"] == team_abbrev].copy()
+
+                if team_slice.empty:
+                    st.info("No value plays for this team.")
+                    continue
+
+                team_display = build_display_table(team_slice)
+                styled_df = (
+                    team_display.style
+                    .map(style_side_cell, subset=["Side"])
+                )
+                st.dataframe(
+                    styled_df,
+                    use_container_width=True,
+                    hide_index=True,
+                    column_config={
+                        "Indicator": st.column_config.TextColumn(label="", width="small"),
+                        "#": st.column_config.TextColumn(label="", width="small"),
+                        "Best Line (yds)": st.column_config.NumberColumn("Best Line (yds)", format="%.1f"),
+                        "Projection (yds)": st.column_config.NumberColumn("Projection (yds)", format="%.1f"),
+                        "Best Odds": st.column_config.NumberColumn("Best Odds"),
+                        "Edge (yds)": st.column_config.NumberColumn("Edge (yds)", format="%.1f"),
+                        "Edge % (norm)": st.column_config.NumberColumn("Edge % (norm)", format="%.1f"),
+                    },
+                )
     
     # Update CSV data for download
     csv_data = game_data.to_csv(index=False).encode("utf-8")
