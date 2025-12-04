@@ -220,15 +220,16 @@ st.sidebar.markdown(
     "<h2 style='text-align: center;'>Selection</h2>",
     unsafe_allow_html=True
 )
-value_week_state_key = "value_plays_selected_week"
-if value_week_state_key not in st.session_state:
-    st.session_state[value_week_state_key] = f"Week {available_weeks[-1]}"
+week_options = [f"Week {week}" for week in available_weeks]
+default_week = st.session_state.get("value_plays_selected_week", week_options[-1])
+if default_week not in week_options:
+    default_week = week_options[-1]
 
 selected_week = st.sidebar.selectbox(
     "Week:",
-    options=[f"Week {week}" for week in available_weeks],
-    index=available_weeks.index(int(st.session_state[value_week_state_key].replace("Week ", ""))) if st.session_state[value_week_state_key] in [f"Week {week}" for week in available_weeks] else len(available_weeks) - 1,
-    key=value_week_state_key,
+    options=week_options,
+    index=week_options.index(default_week),
+    key="value_plays_selected_week",
 )
 
 selected_week_number = int(selected_week.replace("Week ", ""))
@@ -284,15 +285,15 @@ else:
 all_prop_types = sorted(value_opportunities["prop_type"].dropna().unique())
 
 # Game selector in sidebar
-game_state_key = "value_plays_selected_game"
-if game_state_key in st.session_state and st.session_state[game_state_key] not in game_options:
-    st.session_state[game_state_key] = game_options[0] if game_options else None
+default_game = st.session_state.get("value_plays_selected_game", "All Games")
+if default_game not in game_options:
+    default_game = "All Games"
 
 selected_game = st.sidebar.selectbox(
     "Game:",
     options=game_options,
-    index=game_options.index(st.session_state[game_state_key]) if game_options and st.session_state.get(game_state_key) in game_options else 0,
-    key=game_state_key,
+    index=game_options.index(default_game),
+    key="value_plays_selected_game",
 )
 st.sidebar.write("")
 

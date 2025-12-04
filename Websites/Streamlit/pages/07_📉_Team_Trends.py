@@ -58,15 +58,15 @@ def load_data():
 # Season selector in sidebar
 with st.sidebar:
     st.header("Filters")
-    season_state_key = "team_trends_selected_season"
-    if season_state_key not in st.session_state:
-        st.session_state[season_state_key] = 2025
-
+    season_options = [2025, 2024]
+    default_season = st.session_state.get("team_trends_selected_season", season_options[0])
+    if default_season not in season_options:
+        default_season = season_options[0]
     selected_season = st.selectbox(
         "Select Season:",
-        [2025, 2024],
-        index=[2025, 2024].index(st.session_state[season_state_key]) if st.session_state[season_state_key] in [2025, 2024] else 0,
-        key=season_state_key,
+        season_options,
+        index=season_options.index(default_season),
+        key="team_trends_selected_season",
     )
 
 # Select the appropriate dataset based on season
