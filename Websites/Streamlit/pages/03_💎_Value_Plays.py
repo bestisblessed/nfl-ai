@@ -7,7 +7,7 @@ from typing import List, Optional, Tuple
 import numpy as np
 import pandas as pd
 import streamlit as st
-from st_aggrid import AgGrid, GridOptionsBuilder
+# from st_aggrid import AgGrid, GridOptionsBuilder
 from utils.footer import render_footer
 from utils.session_state import persistent_selectbox
 
@@ -404,8 +404,8 @@ if selected_game != "All Games":
     def build_display_table(df_slice: pd.DataFrame, prop_type: str) -> pd.DataFrame:
         display_df = df_slice[
             [
-                "rank",
                 "player",
+                "team",
                 # "position",
                 # "opp",
                 "side",
@@ -418,8 +418,8 @@ if selected_game != "All Games":
             ]
         ].rename(
             columns={
-                "rank": "#",
                 "player": "Player",
+                "team": "Tm",
                 # "position": "Pos",
                 # "opp": "Opp",
                 # "best_point": "Best Line (yds)",
@@ -469,7 +469,7 @@ if selected_game != "All Games":
         display_df["Proj (yds)"] = display_df["Proj (yds)"].round(1)
         display_df["Edge (yds)"] = display_df["Edge (yds)"].round(1)
         display_df["Side"] = display_df["Side"].apply(format_side_with_emoji)
-        display_df = display_df[["#", "Player", "Side", "Proj (yds)", "Edge (yds)", "Edge %", "Best Line", "Book"]]
+        display_df = display_df[["Player", "Tm", "Side", "Proj (yds)", "Edge (yds)", "Edge %", "Best Line", "Book"]]
         display_df = display_df.sort_values(by="Edge (yds)", ascending=False, na_position='last')
         return display_df
     
@@ -504,33 +504,20 @@ if selected_game != "All Games":
 
             st.markdown('<h4 style="text-align: center; font-size: 1.1em; margin-bottom: 0.5em;">QB Passing Yards</h4>', unsafe_allow_html=True)
             display_df = build_display_table(qb_passing_data, 'Passing Yards')
-            styled_df = display_df.style.map(style_side_cell, subset=["Side"])
-            # Add table styles to make first column narrower
-            styled_df = styled_df.set_table_styles([
-                {
-                    "selector": "td:first-child, th:first-child",
-                    "props": [
-                        ("width", "15px"),
-                        ("min-width", "15px"),
-                        ("max-width", "15px"),
-                        ("padding", "0.1rem 0.05rem"),
-                        ("text-align", "center"),
-                    ]
-                },
-                {
-                    "selector": "table",
-                    "props": [
-                        ("table-layout", "fixed"),
-                    ]
-                }
-            ])
+            styled_df = (
+                display_df.style
+                .set_properties(**{
+                    "color": "black",
+                })
+                .map(style_side_cell, subset=["Side"])
+            )
             st.dataframe(
                 styled_df,
                 use_container_width=True,
                 hide_index=True,
                 column_config={
-                    "#": st.column_config.TextColumn(label="", width=25),
                     "Player": st.column_config.TextColumn(width=None),
+                    "Tm": st.column_config.TextColumn(width=None),
                     "Side": st.column_config.TextColumn(width=None),
                     "Proj (yds)": st.column_config.NumberColumn("Proj (yds)", format="%.1f", width=None),
                     "Edge (yds)": st.column_config.NumberColumn("Edge (yds)", format="%.1f", width=None),
@@ -558,33 +545,20 @@ if selected_game != "All Games":
 
             st.markdown('<h4 style="text-align: center; font-size: 1.1em; margin-bottom: 0.5em;">QB Rushing Yards</h4>', unsafe_allow_html=True)
             display_df = build_display_table(qb_rushing_data, 'Rushing Yards')
-            styled_df = display_df.style.map(style_side_cell, subset=["Side"])
-            # Add table styles to make first column narrower
-            styled_df = styled_df.set_table_styles([
-                {
-                    "selector": "td:first-child, th:first-child",
-                    "props": [
-                        ("width", "15px"),
-                        ("min-width", "15px"),
-                        ("max-width", "15px"),
-                        ("padding", "0.1rem 0.05rem"),
-                        ("text-align", "center"),
-                    ]
-                },
-                {
-                    "selector": "table",
-                    "props": [
-                        ("table-layout", "fixed"),
-                    ]
-                }
-            ])
+            styled_df = (
+                display_df.style
+                .set_properties(**{
+                    "color": "black",
+                })
+                .map(style_side_cell, subset=["Side"])
+            )
             st.dataframe(
                 styled_df,
                 use_container_width=True,
                 hide_index=True,
                 column_config={
-                    "#": st.column_config.TextColumn(label="", width=25),
                     "Player": st.column_config.TextColumn(width=None),
+                    "Tm": st.column_config.TextColumn(width=None),
                     "Side": st.column_config.TextColumn(width=None),
                     "Proj (yds)": st.column_config.NumberColumn("Proj (yds)", format="%.1f", width=None),
                     "Edge (yds)": st.column_config.NumberColumn("Edge (yds)", format="%.1f", width=None),
@@ -615,33 +589,20 @@ if selected_game != "All Games":
 
             st.markdown('<h4 style="text-align: center; font-size: 1.1em; margin-bottom: 0.5em;">RB Rushing Yards</h4>', unsafe_allow_html=True)
             display_df = build_display_table(rb_rushing_data, 'Rushing Yards')
-            styled_df = display_df.style.map(style_side_cell, subset=["Side"])
-            # Add table styles to make first column narrower
-            styled_df = styled_df.set_table_styles([
-                {
-                    "selector": "td:first-child, th:first-child",
-                    "props": [
-                        ("width", "15px"),
-                        ("min-width", "15px"),
-                        ("max-width", "15px"),
-                        ("padding", "0.1rem 0.05rem"),
-                        ("text-align", "center"),
-                    ]
-                },
-                {
-                    "selector": "table",
-                    "props": [
-                        ("table-layout", "fixed"),
-                    ]
-                }
-            ])
+            styled_df = (
+                display_df.style
+                .set_properties(**{
+                    "color": "black",
+                })
+                .map(style_side_cell, subset=["Side"])
+            )
             st.dataframe(
                 styled_df,
                 use_container_width=True,
                 hide_index=True,
                 column_config={
-                    "#": st.column_config.TextColumn(label="", width=25),
                     "Player": st.column_config.TextColumn(width=None),
+                    "Tm": st.column_config.TextColumn(width=None),
                     "Side": st.column_config.TextColumn(width=None),
                     "Proj (yds)": st.column_config.NumberColumn("Proj (yds)", format="%.1f", width=None),
                     "Edge (yds)": st.column_config.NumberColumn("Edge (yds)", format="%.1f", width=None),
@@ -669,33 +630,20 @@ if selected_game != "All Games":
 
             st.markdown('<h4 style="text-align: center; font-size: 1.1em; margin-bottom: 0.5em;">RB Receiving Yards</h4>', unsafe_allow_html=True)
             display_df = build_display_table(rb_receiving_data, 'Receiving Yards')
-            styled_df = display_df.style.map(style_side_cell, subset=["Side"])
-            # Add table styles to make first column narrower
-            styled_df = styled_df.set_table_styles([
-                {
-                    "selector": "td:first-child, th:first-child",
-                    "props": [
-                        ("width", "15px"),
-                        ("min-width", "15px"),
-                        ("max-width", "15px"),
-                        ("padding", "0.1rem 0.05rem"),
-                        ("text-align", "center"),
-                    ]
-                },
-                {
-                    "selector": "table",
-                    "props": [
-                        ("table-layout", "fixed"),
-                    ]
-                }
-            ])
+            styled_df = (
+                display_df.style
+                .set_properties(**{
+                    "color": "black",
+                })
+                .map(style_side_cell, subset=["Side"])
+            )
             st.dataframe(
                 styled_df,
                 use_container_width=True,
                 hide_index=True,
                 column_config={
-                    "#": st.column_config.TextColumn(label="", width=25),
                     "Player": st.column_config.TextColumn(width=None),
+                    "Tm": st.column_config.TextColumn(width=None),
                     "Side": st.column_config.TextColumn(width=None),
                     "Proj (yds)": st.column_config.NumberColumn("Proj (yds)", format="%.1f", width=None),
                     "Edge (yds)": st.column_config.NumberColumn("Edge (yds)", format="%.1f", width=None),
@@ -726,33 +674,20 @@ if selected_game != "All Games":
 
             st.markdown('<h4 style="text-align: center; font-size: 1.1em; margin-bottom: 0.5em;">WR Receiving Yards</h4>', unsafe_allow_html=True)
             display_df = build_display_table(wr_receiving_data, 'Receiving Yards')
-            styled_df = display_df.style.map(style_side_cell, subset=["Side"])
-            # Add table styles to make first column narrower
-            styled_df = styled_df.set_table_styles([
-                {
-                    "selector": "td:first-child, th:first-child",
-                    "props": [
-                        ("width", "15px"),
-                        ("min-width", "15px"),
-                        ("max-width", "15px"),
-                        ("padding", "0.1rem 0.05rem"),
-                        ("text-align", "center"),
-                    ]
-                },
-                {
-                    "selector": "table",
-                    "props": [
-                        ("table-layout", "fixed"),
-                    ]
-                }
-            ])
+            styled_df = (
+                display_df.style
+                .set_properties(**{
+                    "color": "black",
+                })
+                .map(style_side_cell, subset=["Side"])
+            )
             st.dataframe(
                 styled_df,
                 use_container_width=True,
                 hide_index=True,
                 column_config={
-                    "#": st.column_config.TextColumn(label="", width=25),
                     "Player": st.column_config.TextColumn(width=None),
+                    "Tm": st.column_config.TextColumn(width=None),
                     "Side": st.column_config.TextColumn(width=None),
                     "Proj (yds)": st.column_config.NumberColumn("Proj (yds)", format="%.1f", width=None),
                     "Edge (yds)": st.column_config.NumberColumn("Edge (yds)", format="%.1f", width=None),
@@ -780,33 +715,20 @@ if selected_game != "All Games":
 
             st.markdown('<h4 style="text-align: center; font-size: 1.1em; margin-bottom: 0.5em;">TE Receiving Yards</h4>', unsafe_allow_html=True)
             display_df = build_display_table(te_receiving_data, 'Receiving Yards')
-            styled_df = display_df.style.map(style_side_cell, subset=["Side"])
-            # Add table styles to make first column narrower
-            styled_df = styled_df.set_table_styles([
-                {
-                    "selector": "td:first-child, th:first-child",
-                    "props": [
-                        ("width", "15px"),
-                        ("min-width", "15px"),
-                        ("max-width", "15px"),
-                        ("padding", "0.1rem 0.05rem"),
-                        ("text-align", "center"),
-                    ]
-                },
-                {
-                    "selector": "table",
-                    "props": [
-                        ("table-layout", "fixed"),
-                    ]
-                }
-            ])
+            styled_df = (
+                display_df.style
+                .set_properties(**{
+                    "color": "black",
+                })
+                .map(style_side_cell, subset=["Side"])
+            )
             st.dataframe(
                 styled_df,
                 use_container_width=True,
                 hide_index=True,
                 column_config={
-                    "#": st.column_config.TextColumn(label="", width=25),
                     "Player": st.column_config.TextColumn(width=None),
+                    "Tm": st.column_config.TextColumn(width=None),
                     "Side": st.column_config.TextColumn(width=None),
                     "Proj (yds)": st.column_config.NumberColumn("Proj (yds)", format="%.1f", width=None),
                     "Edge (yds)": st.column_config.NumberColumn("Edge (yds)", format="%.1f", width=None),
@@ -954,7 +876,7 @@ else:
                     hide_index=True,
                     column_config={
                         # "#": st.column_config.TextColumn(label="", width=None),
-                        "#": st.column_config.TextColumn(label="", width=30),
+                        "#": st.column_config.TextColumn(label="", width=20),
                         "Player": st.column_config.TextColumn(width=None),
                         "Pos": st.column_config.TextColumn(width=None),
                         "Team": st.column_config.TextColumn(width=None),
