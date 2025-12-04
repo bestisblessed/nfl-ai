@@ -65,6 +65,18 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
+# # Center all dataframe column headers
+# st.markdown(
+#     """
+#     <style>
+#     .stDataFrame th {
+#         text-align: center !important;
+#     }
+#     </style>
+#     """,
+#     unsafe_allow_html=True,
+# )
+
 
 @st.cache_data
 def load_game_times():
@@ -509,6 +521,12 @@ if selected_game != "All Games":
                 .set_properties(**{
                     "color": "black",
                 })
+                .set_table_styles([
+                    {
+                        "selector": "td, th",
+                        "props": [("text-align", "center")]
+                    }
+                ])
                 .map(style_side_cell, subset=["Side"])
             )
             st.dataframe(
@@ -550,6 +568,12 @@ if selected_game != "All Games":
                 .set_properties(**{
                     "color": "black",
                 })
+                .set_table_styles([
+                    {
+                        "selector": "td, th",
+                        "props": [("text-align", "center")]
+                    }
+                ])
                 .map(style_side_cell, subset=["Side"])
             )
             st.dataframe(
@@ -594,6 +618,12 @@ if selected_game != "All Games":
                 .set_properties(**{
                     "color": "black",
                 })
+                .set_table_styles([
+                    {
+                        "selector": "td, th",
+                        "props": [("text-align", "center")]
+                    }
+                ])
                 .map(style_side_cell, subset=["Side"])
             )
             st.dataframe(
@@ -635,6 +665,12 @@ if selected_game != "All Games":
                 .set_properties(**{
                     "color": "black",
                 })
+                .set_table_styles([
+                    {
+                        "selector": "td, th",
+                        "props": [("text-align", "center")]
+                    }
+                ])
                 .map(style_side_cell, subset=["Side"])
             )
             st.dataframe(
@@ -679,6 +715,12 @@ if selected_game != "All Games":
                 .set_properties(**{
                     "color": "black",
                 })
+                .set_table_styles([
+                    {
+                        "selector": "td, th",
+                        "props": [("text-align", "center")]
+                    }
+                ])
                 .map(style_side_cell, subset=["Side"])
             )
             st.dataframe(
@@ -720,6 +762,12 @@ if selected_game != "All Games":
                 .set_properties(**{
                     "color": "black",
                 })
+                .set_table_styles([
+                    {
+                        "selector": "td, th",
+                        "props": [("text-align", "center")]
+                    }
+                ])
                 .map(style_side_cell, subset=["Side"])
             )
             st.dataframe(
@@ -865,6 +913,12 @@ else:
                     # "color": "black",
                     # "border-color": "black",
                 })
+                .set_table_styles([
+                    {
+                        "selector": "td, th",
+                        "props": [("text-align", "center")]
+                    }
+                ])
                 .map(style_side_cell, subset=["Side"])
             )
             col1, col2, col3 = st.columns([0.2, 3, 0.2])
