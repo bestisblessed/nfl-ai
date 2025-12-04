@@ -4,10 +4,10 @@ import json
 import os
 import re
 from typing import List, Optional, Tuple
-
 import numpy as np
 import pandas as pd
 import streamlit as st
+from st_aggrid import AgGrid, GridOptionsBuilder
 from utils.footer import render_footer
 from utils.session_state import persistent_selectbox
 
@@ -24,8 +24,19 @@ st.set_page_config(
     page_title="💎 Value Play Finder",
     page_icon="🏈",
     layout="wide",
-    # layout="centered",
 )
+
+# # Compact dataframe styling for better fit on smaller screens
+# st.markdown("""
+#     <style>
+#     .stDataFrame table {
+#         font-size: 0.8rem;
+#     }
+#     .stDataFrame tbody tr td {
+#         padding: 0.25rem 0.5rem;
+#     }
+#     </style>
+# """, unsafe_allow_html=True)
 
 # st.markdown(
 #     """
@@ -395,8 +406,8 @@ if selected_game != "All Games":
             [
                 "rank",
                 "player",
-                "position",
-                "opp",
+                # "position",
+                # "opp",
                 "side",
                 "best_point",
                 "best_price",
@@ -409,13 +420,13 @@ if selected_game != "All Games":
             columns={
                 "rank": "#",
                 "player": "Player",
-                "position": "Pos",
-                "opp": "Opp",
-                "best_point": "Best Line (yds)",
-                "predicted_yards": "Projection (yds)",
-                "best_price": "Best Odds",
+                # "position": "Pos",
+                # "opp": "Opp",
+                # "best_point": "Best Line (yds)",
+                "predicted_yards": "Proj (yds)",
+                # "best_price": "Best Odds",
                 "edge_yards": "Edge (yds)",
-                "edge_pct_norm": "Edge % (norm)",
+                "edge_pct_norm": "Edge %",
                 "side": "Side",
                 "bookmaker": "Book",
             }
@@ -437,12 +448,28 @@ if selected_game != "All Games":
                 return player_name
             display_df["Player"] = display_df.apply(add_emoji_to_player, axis=1)
         
-        display_df["Best Line (yds)"] = display_df["Best Line (yds)"].round(1)
-        display_df["Best Odds"] = display_df["Best Odds"].round().astype("Int64")
-        display_df["Projection (yds)"] = display_df["Projection (yds)"].round(1)
+        # Combine Best Line and Best Odds into one column
+        def format_best_line_odds(row):
+            best_line = row["best_point"]
+            best_odds = row["best_price"]
+            if pd.notna(best_line) and pd.notna(best_odds):
+                line_str = f"{best_line:.1f}"
+                odds_int = int(best_odds)
+                odds_str = f"{odds_int:+d}" if odds_int >= 0 else f"{odds_int}"
+                # return f"{line_str}  {odds_str}".strip()
+                return f" {line_str}   {odds_str}"
+            elif pd.notna(best_line):
+                return f"{best_line:.1f}".strip()
+            elif pd.notna(best_odds):
+                odds_int = int(best_odds)
+                return (f"{odds_int:+d}" if odds_int >= 0 else f"{odds_int}").strip()
+            return "-"
+        
+        display_df["Best Line"] = display_df.apply(format_best_line_odds, axis=1)
+        display_df["Proj (yds)"] = display_df["Proj (yds)"].round(1)
         display_df["Edge (yds)"] = display_df["Edge (yds)"].round(1)
         display_df["Side"] = display_df["Side"].apply(format_side_with_emoji)
-        display_df = display_df[["#", "Player", "Pos", "Opp", "Projection (yds)", "Best Line (yds)", "Best Odds", "Edge (yds)", "Edge % (norm)", "Side", "Book"]]
+        display_df = display_df[["#", "Player", "Side", "Proj (yds)", "Edge (yds)", "Edge %", "Best Line", "Book"]]
         display_df = display_df.sort_values(by="Edge (yds)", ascending=False, na_position='last')
         return display_df
     
@@ -478,17 +505,38 @@ if selected_game != "All Games":
             st.markdown('<h4 style="text-align: center; font-size: 1.1em; margin-bottom: 0.5em;">QB Passing Yards</h4>', unsafe_allow_html=True)
             display_df = build_display_table(qb_passing_data, 'Passing Yards')
             styled_df = display_df.style.map(style_side_cell, subset=["Side"])
+            # Add table styles to make first column narrower
+            styled_df = styled_df.set_table_styles([
+                {
+                    "selector": "td:first-child, th:first-child",
+                    "props": [
+                        ("width", "15px"),
+                        ("min-width", "15px"),
+                        ("max-width", "15px"),
+                        ("padding", "0.1rem 0.05rem"),
+                        ("text-align", "center"),
+                    ]
+                },
+                {
+                    "selector": "table",
+                    "props": [
+                        ("table-layout", "fixed"),
+                    ]
+                }
+            ])
             st.dataframe(
                 styled_df,
                 use_container_width=True,
                 hide_index=True,
                 column_config={
-                    "#": st.column_config.TextColumn(label="", width="small"),
-                    "Best Line (yds)": st.column_config.NumberColumn("Best Line (yds)", format="%.1f"),
-                    "Projection (yds)": st.column_config.NumberColumn("Projection (yds)", format="%.1f"),
-                    "Best Odds": st.column_config.NumberColumn("Best Odds"),
-                    "Edge (yds)": st.column_config.NumberColumn("Edge (yds)", format="%.1f"),
-                    "Edge % (norm)": st.column_config.NumberColumn("Edge % (norm)", format="%.1f"),
+                    "#": st.column_config.TextColumn(label="", width=25),
+                    "Player": st.column_config.TextColumn(width=None),
+                    "Side": st.column_config.TextColumn(width=None),
+                    "Proj (yds)": st.column_config.NumberColumn("Proj (yds)", format="%.1f", width=None),
+                    "Edge (yds)": st.column_config.NumberColumn("Edge (yds)", format="%.1f", width=None),
+                    "Edge %": st.column_config.NumberColumn("Edge %", format="%.1f", width=None),
+                    "Best Line": st.column_config.TextColumn("Best Line", width=None),
+                    "Book": st.column_config.TextColumn(width=None),
                 },
             )
 
@@ -511,17 +559,38 @@ if selected_game != "All Games":
             st.markdown('<h4 style="text-align: center; font-size: 1.1em; margin-bottom: 0.5em;">QB Rushing Yards</h4>', unsafe_allow_html=True)
             display_df = build_display_table(qb_rushing_data, 'Rushing Yards')
             styled_df = display_df.style.map(style_side_cell, subset=["Side"])
+            # Add table styles to make first column narrower
+            styled_df = styled_df.set_table_styles([
+                {
+                    "selector": "td:first-child, th:first-child",
+                    "props": [
+                        ("width", "15px"),
+                        ("min-width", "15px"),
+                        ("max-width", "15px"),
+                        ("padding", "0.1rem 0.05rem"),
+                        ("text-align", "center"),
+                    ]
+                },
+                {
+                    "selector": "table",
+                    "props": [
+                        ("table-layout", "fixed"),
+                    ]
+                }
+            ])
             st.dataframe(
                 styled_df,
                 use_container_width=True,
                 hide_index=True,
                 column_config={
-                    "#": st.column_config.TextColumn(label="", width="small"),
-                    "Best Line (yds)": st.column_config.NumberColumn("Best Line (yds)", format="%.1f"),
-                    "Projection (yds)": st.column_config.NumberColumn("Projection (yds)", format="%.1f"),
-                    "Best Odds": st.column_config.NumberColumn("Best Odds"),
-                    "Edge (yds)": st.column_config.NumberColumn("Edge (yds)", format="%.1f"),
-                    "Edge % (norm)": st.column_config.NumberColumn("Edge % (norm)", format="%.1f"),
+                    "#": st.column_config.TextColumn(label="", width=25),
+                    "Player": st.column_config.TextColumn(width=None),
+                    "Side": st.column_config.TextColumn(width=None),
+                    "Proj (yds)": st.column_config.NumberColumn("Proj (yds)", format="%.1f", width=None),
+                    "Edge (yds)": st.column_config.NumberColumn("Edge (yds)", format="%.1f", width=None),
+                    "Edge %": st.column_config.NumberColumn("Edge %", format="%.1f", width=None),
+                    "Best Line": st.column_config.TextColumn("Best Line", width=None),
+                    "Book": st.column_config.TextColumn(width=None),
                 },
             )
 
@@ -547,17 +616,38 @@ if selected_game != "All Games":
             st.markdown('<h4 style="text-align: center; font-size: 1.1em; margin-bottom: 0.5em;">RB Rushing Yards</h4>', unsafe_allow_html=True)
             display_df = build_display_table(rb_rushing_data, 'Rushing Yards')
             styled_df = display_df.style.map(style_side_cell, subset=["Side"])
+            # Add table styles to make first column narrower
+            styled_df = styled_df.set_table_styles([
+                {
+                    "selector": "td:first-child, th:first-child",
+                    "props": [
+                        ("width", "15px"),
+                        ("min-width", "15px"),
+                        ("max-width", "15px"),
+                        ("padding", "0.1rem 0.05rem"),
+                        ("text-align", "center"),
+                    ]
+                },
+                {
+                    "selector": "table",
+                    "props": [
+                        ("table-layout", "fixed"),
+                    ]
+                }
+            ])
             st.dataframe(
                 styled_df,
                 use_container_width=True,
                 hide_index=True,
                 column_config={
-                    "#": st.column_config.TextColumn(label="", width="small"),
-                    "Best Line (yds)": st.column_config.NumberColumn("Best Line (yds)", format="%.1f"),
-                    "Projection (yds)": st.column_config.NumberColumn("Projection (yds)", format="%.1f"),
-                    "Best Odds": st.column_config.NumberColumn("Best Odds"),
-                    "Edge (yds)": st.column_config.NumberColumn("Edge (yds)", format="%.1f"),
-                    "Edge % (norm)": st.column_config.NumberColumn("Edge % (norm)", format="%.1f"),
+                    "#": st.column_config.TextColumn(label="", width=25),
+                    "Player": st.column_config.TextColumn(width=None),
+                    "Side": st.column_config.TextColumn(width=None),
+                    "Proj (yds)": st.column_config.NumberColumn("Proj (yds)", format="%.1f", width=None),
+                    "Edge (yds)": st.column_config.NumberColumn("Edge (yds)", format="%.1f", width=None),
+                    "Edge %": st.column_config.NumberColumn("Edge %", format="%.1f", width=None),
+                    "Best Line": st.column_config.TextColumn("Best Line", width=None),
+                    "Book": st.column_config.TextColumn(width=None),
                 },
             )
 
@@ -580,17 +670,38 @@ if selected_game != "All Games":
             st.markdown('<h4 style="text-align: center; font-size: 1.1em; margin-bottom: 0.5em;">RB Receiving Yards</h4>', unsafe_allow_html=True)
             display_df = build_display_table(rb_receiving_data, 'Receiving Yards')
             styled_df = display_df.style.map(style_side_cell, subset=["Side"])
+            # Add table styles to make first column narrower
+            styled_df = styled_df.set_table_styles([
+                {
+                    "selector": "td:first-child, th:first-child",
+                    "props": [
+                        ("width", "15px"),
+                        ("min-width", "15px"),
+                        ("max-width", "15px"),
+                        ("padding", "0.1rem 0.05rem"),
+                        ("text-align", "center"),
+                    ]
+                },
+                {
+                    "selector": "table",
+                    "props": [
+                        ("table-layout", "fixed"),
+                    ]
+                }
+            ])
             st.dataframe(
                 styled_df,
                 use_container_width=True,
                 hide_index=True,
                 column_config={
-                    "#": st.column_config.TextColumn(label="", width="small"),
-                    "Best Line (yds)": st.column_config.NumberColumn("Best Line (yds)", format="%.1f"),
-                    "Projection (yds)": st.column_config.NumberColumn("Projection (yds)", format="%.1f"),
-                    "Best Odds": st.column_config.NumberColumn("Best Odds"),
-                    "Edge (yds)": st.column_config.NumberColumn("Edge (yds)", format="%.1f"),
-                    "Edge % (norm)": st.column_config.NumberColumn("Edge % (norm)", format="%.1f"),
+                    "#": st.column_config.TextColumn(label="", width=25),
+                    "Player": st.column_config.TextColumn(width=None),
+                    "Side": st.column_config.TextColumn(width=None),
+                    "Proj (yds)": st.column_config.NumberColumn("Proj (yds)", format="%.1f", width=None),
+                    "Edge (yds)": st.column_config.NumberColumn("Edge (yds)", format="%.1f", width=None),
+                    "Edge %": st.column_config.NumberColumn("Edge %", format="%.1f", width=None),
+                    "Best Line": st.column_config.TextColumn("Best Line", width=None),
+                    "Book": st.column_config.TextColumn(width=None),
                 },
             )
 
@@ -616,17 +727,38 @@ if selected_game != "All Games":
             st.markdown('<h4 style="text-align: center; font-size: 1.1em; margin-bottom: 0.5em;">WR Receiving Yards</h4>', unsafe_allow_html=True)
             display_df = build_display_table(wr_receiving_data, 'Receiving Yards')
             styled_df = display_df.style.map(style_side_cell, subset=["Side"])
+            # Add table styles to make first column narrower
+            styled_df = styled_df.set_table_styles([
+                {
+                    "selector": "td:first-child, th:first-child",
+                    "props": [
+                        ("width", "15px"),
+                        ("min-width", "15px"),
+                        ("max-width", "15px"),
+                        ("padding", "0.1rem 0.05rem"),
+                        ("text-align", "center"),
+                    ]
+                },
+                {
+                    "selector": "table",
+                    "props": [
+                        ("table-layout", "fixed"),
+                    ]
+                }
+            ])
             st.dataframe(
                 styled_df,
                 use_container_width=True,
                 hide_index=True,
                 column_config={
-                    "#": st.column_config.TextColumn(label="", width="small"),
-                    "Best Line (yds)": st.column_config.NumberColumn("Best Line (yds)", format="%.1f"),
-                    "Projection (yds)": st.column_config.NumberColumn("Projection (yds)", format="%.1f"),
-                    "Best Odds": st.column_config.NumberColumn("Best Odds"),
-                    "Edge (yds)": st.column_config.NumberColumn("Edge (yds)", format="%.1f"),
-                    "Edge % (norm)": st.column_config.NumberColumn("Edge % (norm)", format="%.1f"),
+                    "#": st.column_config.TextColumn(label="", width=25),
+                    "Player": st.column_config.TextColumn(width=None),
+                    "Side": st.column_config.TextColumn(width=None),
+                    "Proj (yds)": st.column_config.NumberColumn("Proj (yds)", format="%.1f", width=None),
+                    "Edge (yds)": st.column_config.NumberColumn("Edge (yds)", format="%.1f", width=None),
+                    "Edge %": st.column_config.NumberColumn("Edge %", format="%.1f", width=None),
+                    "Best Line": st.column_config.TextColumn("Best Line", width=None),
+                    "Book": st.column_config.TextColumn(width=None),
                 },
             )
 
@@ -649,17 +781,38 @@ if selected_game != "All Games":
             st.markdown('<h4 style="text-align: center; font-size: 1.1em; margin-bottom: 0.5em;">TE Receiving Yards</h4>', unsafe_allow_html=True)
             display_df = build_display_table(te_receiving_data, 'Receiving Yards')
             styled_df = display_df.style.map(style_side_cell, subset=["Side"])
+            # Add table styles to make first column narrower
+            styled_df = styled_df.set_table_styles([
+                {
+                    "selector": "td:first-child, th:first-child",
+                    "props": [
+                        ("width", "15px"),
+                        ("min-width", "15px"),
+                        ("max-width", "15px"),
+                        ("padding", "0.1rem 0.05rem"),
+                        ("text-align", "center"),
+                    ]
+                },
+                {
+                    "selector": "table",
+                    "props": [
+                        ("table-layout", "fixed"),
+                    ]
+                }
+            ])
             st.dataframe(
                 styled_df,
                 use_container_width=True,
                 hide_index=True,
                 column_config={
-                    "#": st.column_config.TextColumn(label="", width="small"),
-                    "Best Line (yds)": st.column_config.NumberColumn("Best Line (yds)", format="%.1f"),
-                    "Projection (yds)": st.column_config.NumberColumn("Projection (yds)", format="%.1f"),
-                    "Best Odds": st.column_config.NumberColumn("Best Odds"),
-                    "Edge (yds)": st.column_config.NumberColumn("Edge (yds)", format="%.1f"),
-                    "Edge % (norm)": st.column_config.NumberColumn("Edge % (norm)", format="%.1f"),
+                    "#": st.column_config.TextColumn(label="", width=25),
+                    "Player": st.column_config.TextColumn(width=None),
+                    "Side": st.column_config.TextColumn(width=None),
+                    "Proj (yds)": st.column_config.NumberColumn("Proj (yds)", format="%.1f", width=None),
+                    "Edge (yds)": st.column_config.NumberColumn("Edge (yds)", format="%.1f", width=None),
+                    "Edge %": st.column_config.NumberColumn("Edge %", format="%.1f", width=None),
+                    "Best Line": st.column_config.TextColumn("Best Line", width=None),
+                    "Book": st.column_config.TextColumn(width=None),
                 },
             )
     
@@ -778,31 +931,87 @@ else:
                     return 'color: #c62828; font-weight: 500;'
                 return ''
             
-            # Create styled dataframe
+            # Create styled dataframe with centered text and custom style for Side
             styled_df = (
                 display_df.style
+                .set_properties(**{
+                    "color": "black",
+                    # "text-align": "center"
+                    # "background-color": "white",
+                    # 'background-color': '#f0f0f0',
+                    # 'background-color': 'black',
+                    # "color": "black",
+                    # "border-color": "black",
+                })
                 .map(style_side_cell, subset=["Side"])
             )
+            col1, col2, col3 = st.columns([0.2, 3, 0.2])
+            with col2:
+                st.dataframe(
+                    styled_df,
+                    use_container_width=True,
+                    height="content",
+                    hide_index=True,
+                    column_config={
+                        # "#": st.column_config.TextColumn(label="", width=None),
+                        "#": st.column_config.TextColumn(label="", width=30),
+                        "Player": st.column_config.TextColumn(width=None),
+                        "Pos": st.column_config.TextColumn(width=None),
+                        "Team": st.column_config.TextColumn(width=None),
+                        "Opp": st.column_config.TextColumn(width=None),
+                        "Best Line (yds)": st.column_config.NumberColumn("Best Line (yds)", format="%.1f", width=None),
+                        "Projection (yds)": st.column_config.NumberColumn("Projection (yds)", format="%.1f", width=None),
+                        "Best Odds": st.column_config.NumberColumn("Best Odds", width=None),
+                        "Edge (yds)": st.column_config.NumberColumn("Edge (yds)", format="%.2f", width=None),
+                        "Edge % (norm)": st.column_config.NumberColumn("Edge % (norm)", format="%.1f", width=None),
+                        "Side": st.column_config.TextColumn(width=None),
+                    },
+                )
+
+            # # Use AgGrid for better centering and styling
+            # gb = GridOptionsBuilder.from_dataframe(display_df)
+            # gb.configure_default_column(
+            #     resizable=True,
+            #     sortable=True,
+            #     filterable=False,
+            # )
+            # gb.configure_column("#", width=50, pinned="left")
+            # gb.configure_column("Player", width=150)
+            # gb.configure_column("Pos", width=60)
+            # gb.configure_column("Team", width=60)
+            # gb.configure_column("Opp", width=60)
+            # gb.configure_column("Best Line (yds)", width=100)
+            # gb.configure_column("Projection (yds)", width=100)
+            # gb.configure_column("Best Odds", width=80)
+            # gb.configure_column("Edge (yds)", width=90)
+            # gb.configure_column("Edge % (norm)", width=100)
+            # # Style the Side column with colors
+            # gb.configure_column("Side", width=80, cellStyle={
+            #     "function": """
+            #         function(params) {
+            #             if (params.value) {
+            #                 var val = params.value.toString().toUpperCase();
+            #                 if (val.includes('OVER')) {
+            #                     return {color: '#2e7d32', fontWeight: '500'};
+            #                 } else if (val.includes('UNDER')) {
+            #                     return {color: '#c62828', fontWeight: '500'};
+            #                 }
+            #             }
+            #             return {color: '#666'};
+            #         }
+            #     """
+            # })
             
-            st.dataframe(
-                styled_df,
-                use_container_width=True,
-                height=800,
-                hide_index=True,
-                column_config={
-                    "#": st.column_config.TextColumn(label="", width="small"),
-                    "Best Line (yds)": st.column_config.NumberColumn("Best Line (yds)", format="%.1f"),
-                    "Projection (yds)": st.column_config.NumberColumn(
-                        "Projection (yds)", format="%.1f"
-                    ),
-                    "Best Odds": st.column_config.NumberColumn("Best Odds"),
-                    "Edge (yds)": st.column_config.NumberColumn(
-                        "Edge (yds)", format="%.2f"
-                    ),
-                    "Edge % (norm)": st.column_config.NumberColumn("Edge % (norm)", format="%.1f"),
-                },
-            )
-    
+            # grid_options = gb.build()
+            
+            # AgGrid(
+            #     display_df,
+            #     gridOptions=grid_options,
+            #     height=400,
+            #     theme='streamlit',
+            #     allow_unsafe_jscode=True,
+            # )
+
     # CSV data for all games
     csv_data = value_opportunities.to_csv(index=False).encode("utf-8")
 
