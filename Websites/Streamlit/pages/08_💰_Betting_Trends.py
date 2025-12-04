@@ -27,7 +27,16 @@ st.markdown(f"""
 )
 
 # Season selector
-selected_season = st.selectbox("Select Season:", [2025, 2024], index=0)
+betting_trends_season_key = "betting_trends_selected_season"
+if betting_trends_season_key not in st.session_state:
+    st.session_state[betting_trends_season_key] = 2025
+
+selected_season = st.selectbox(
+    "Select Season:", 
+    [2025, 2024], 
+    index=[2025, 2024].index(st.session_state[betting_trends_season_key]) if st.session_state[betting_trends_season_key] in [2025, 2024] else 0,
+    key=betting_trends_season_key
+)
 
 # Load data files directly if not in session state
 if 'df_teams' not in st.session_state:
