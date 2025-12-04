@@ -220,10 +220,16 @@ st.sidebar.markdown(
     "<h2 style='text-align: center;'>Selection</h2>",
     unsafe_allow_html=True
 )
+week_options = [f"Week {week}" for week in available_weeks]
+default_week = st.session_state.get("value_plays_selected_week", week_options[-1])
+if default_week not in week_options:
+    default_week = week_options[-1]
+
 selected_week = st.sidebar.selectbox(
     "Week:",
-    options=[f"Week {week}" for week in available_weeks],
-    index=len(available_weeks) - 1,
+    options=week_options,
+    index=week_options.index(default_week),
+    key="value_plays_selected_week",
 )
 
 selected_week_number = int(selected_week.replace("Week ", ""))
@@ -279,10 +285,15 @@ else:
 all_prop_types = sorted(value_opportunities["prop_type"].dropna().unique())
 
 # Game selector in sidebar
+default_game = st.session_state.get("value_plays_selected_game", "All Games")
+if default_game not in game_options:
+    default_game = "All Games"
+
 selected_game = st.sidebar.selectbox(
     "Game:",
     options=game_options,
-    index=0,
+    index=game_options.index(default_game),
+    key="value_plays_selected_game",
 )
 st.sidebar.write("")
 

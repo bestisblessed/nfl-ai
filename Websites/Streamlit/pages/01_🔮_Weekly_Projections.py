@@ -189,10 +189,14 @@ if not available_weeks:
 
 st.sidebar.markdown("<h2 style='text-align: center;'>Selection</h2>", unsafe_allow_html=True)
 week_options = [f"Week {week}" for week in available_weeks]
+default_week = st.session_state.get("weekly_projections_selected_week", week_options[-1])
+if default_week not in week_options:
+    default_week = week_options[-1]
 selected_week_display = st.sidebar.selectbox(
     "Week:",
     options=week_options,
-    index=len(week_options) - 1
+    index=week_options.index(default_week),
+    key="weekly_projections_selected_week"
 )
 
 # Get the selected week number
@@ -262,9 +266,15 @@ else:
             matchups.append(matchup)
     matchups = sorted(matchups)
 
+default_matchup = st.session_state.get("weekly_projections_selected_matchup", matchups[0] if matchups else None)
+if default_matchup not in matchups:
+    default_matchup = matchups[0] if matchups else None
+
 selected_matchup = st.sidebar.selectbox(
     "Game:",
-    options=matchups
+    options=matchups,
+    index=matchups.index(default_matchup) if matchups else 0,
+    key="weekly_projections_selected_matchup"
 )
 st.sidebar.write("")
 st.sidebar.write("")

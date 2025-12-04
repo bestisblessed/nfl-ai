@@ -46,10 +46,14 @@ if not available_weeks:
 
 st.sidebar.markdown("<h2 style='text-align: center;'>Selection</h2>", unsafe_allow_html=True)
 week_options = [f"Week {week}" for week in available_weeks]
+default_week = st.session_state.get("weekly_leaders_selected_week", week_options[-1])
+if default_week not in week_options:
+    default_week = week_options[-1]
 selected_week = st.sidebar.selectbox(
     "Week:",
     options=week_options,
-    index=len(week_options) - 1
+    index=week_options.index(default_week),
+    key="weekly_leaders_selected_week"
 )
 st.sidebar.write("")
 st.sidebar.write("")
