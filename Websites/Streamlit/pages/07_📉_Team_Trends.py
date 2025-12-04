@@ -6,6 +6,7 @@ import os
 import altair as alt
 import plotly.express as px
 from utils.footer import render_footer
+from utils.session_state import persistent_selectbox
 
 # Page configuration
 st.set_page_config(
@@ -14,6 +15,7 @@ st.set_page_config(
     layout="wide"
 )
 
+PAGE_KEY_PREFIX = "team_trends"
 st.markdown(f"""
     <div style='text-align: center;'>
         <div style='font-size: 3.1rem; font-weight: 800; padding-bottom: 0.5rem;'>
@@ -58,27 +60,27 @@ def load_data():
 # Season selector in sidebar
 with st.sidebar:
     st.header("Filters")
-    season_state_key = "team_trends_selected_season"
-    if season_state_key not in st.session_state:
-        st.session_state[season_state_key] = 2025
-
-    selected_season = st.selectbox(
+    season_options = [2024, 2025]
+    selected_season = persistent_selectbox(
         "Select Season:",
-        [2025, 2024],
-        index=[2025, 2024].index(st.session_state[season_state_key]) if st.session_state[season_state_key] in [2025, 2024] else 0,
-        key=season_state_key,
+        options=season_options,
+        page=PAGE_KEY_PREFIX,
+        widget="season",
+        default=2025,
+        container=st.sidebar,
     )
 
-# Select the appropriate dataset based on season
-if selected_season == 2025:
-    df_team_game_logs_selected = df_team_game_logs_2025
-else:
-    df_team_game_logs_selected = df_team_game_logs_2024
-
-# Both datasets use the same column names
+# Column names
 team_name_col = 'team_name'
 week_col = 'week'
 
+# Select the appropriate dataset based on season
+if selected_season == 2025:
+    df_team_game_logs_selected = df_team_game_logs_2025.copy()
+else:  # 2024
+    df_team_game_logs_selected = df_team_game_logs_2024.copy()
+
+# Both datasets use the same column names
 dataframes = [df_teams, df_games, df_playerstats, df_team_game_logs, df_schedule_and_game_results]
 
 ### --- Home vs Away Record --- ###
@@ -114,7 +116,15 @@ col1, col2 = st.columns(2)
 with col1:
     st.markdown("<h5 style='text-align: center; color: grey;'>Home</h5>", unsafe_allow_html=True)
     st.dataframe(home_records_df, use_container_width=True)
-    selected_home_team = st.selectbox("Select a team to see their home games", home_records_df.index)
+    home_options = list(home_records_df.index)
+    selected_home_team = persistent_selectbox(
+        "Select a team to see their home games",
+        options=home_options,
+        page=PAGE_KEY_PREFIX,
+        widget="home_team",
+        default=home_options[0] if home_options else None,
+        container=col1,
+    )
     if selected_home_team:
         with st.expander(f"Home Games for {selected_home_team} in {selected_season}", expanded=False):
             home_games = games_selected[(games_selected['home_team'] == selected_home_team) & (games_selected['season'] == selected_season) & (games_selected['week'].between(1, 18))]
@@ -123,7 +133,15 @@ with col1:
 with col2:
     st.markdown("<h5 style='text-align: center; color: grey;'>Away</h5>", unsafe_allow_html=True)
     st.dataframe(away_records_df, use_container_width=True)
-    selected_away_team = st.selectbox("Select a team to see their away games", away_records_df.index)
+    away_options = list(away_records_df.index)
+    selected_away_team = persistent_selectbox(
+        "Select a team to see their away games",
+        options=away_options,
+        page=PAGE_KEY_PREFIX,
+        widget="away_team",
+        default=away_options[0] if away_options else None,
+        container=col2,
+    )
     if selected_away_team:
         with st.expander(f"Away Games for {selected_away_team} in {selected_season}", expanded=False):
             away_games = games_selected[(games_selected['away_team'] == selected_away_team) & (games_selected['season'] == selected_season) & (games_selected['week'].between(1, 18))]

@@ -9,6 +9,7 @@ from plotly.subplots import make_subplots
 from PIL import Image
 import sqlite3
 from utils.footer import render_footer
+from utils.session_state import ensure_option_state, widget_key
 
 # Page configuration
 st.set_page_config(
@@ -17,6 +18,8 @@ st.set_page_config(
     layout="wide"
     # layout="centered"
 )
+
+PAGE_KEY_PREFIX = "player_dashboard"
 
 st.markdown(f"""
     <div style='text-align: center;'>
@@ -180,11 +183,14 @@ def fetch_player_names_and_image():
     player_names.sort()  # Sort alphabetically
     
     # Try to set default to Justin Jefferson, otherwise use first player
-    default_index = 0
-    if "Justin Jefferson" in player_names:
-        default_index = player_names.index("Justin Jefferson")
-    
-    selected_player = st.selectbox("Select Player", options=player_names, index=default_index)
+    default_player = None
+    if player_names:
+        default_player = "Justin Jefferson" if "Justin Jefferson" in player_names else player_names[0]
+
+    player_key = widget_key(PAGE_KEY_PREFIX, "player")
+    ensure_option_state(player_key, player_names, default=default_player)
+
+    selected_player = st.selectbox("Select Player", options=player_names, key=player_key)
     
     # Get headshot URL from Rosters.csv (single source of truth)
     headshot_map = load_headshot_map()
@@ -770,7 +776,10 @@ def fetch_historical_performance(player_name, opponent_team_abbr, player_positio
 if player_name is not None:
     st.subheader(f'Historical Performance')
     team_abbr_list = df_teams['TeamID'].tolist()
-    opponent_team_abbr = st.selectbox("Select Opponent:", options=team_abbr_list)
+    opponent_key = widget_key(PAGE_KEY_PREFIX, "opponent")
+    default_opponent = team_abbr_list[0] if team_abbr_list else None
+    ensure_option_state(opponent_key, team_abbr_list, default=default_opponent)
+    opponent_team_abbr = st.selectbox("Select Opponent:", options=team_abbr_list, key=opponent_key)
     st.write("")
     if player_position == 'QB':
         stats_label = 'Passing Stats'

@@ -9,9 +9,11 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 from utils.footer import render_footer
+from utils.session_state import persistent_selectbox
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PROJECTIONS_DIR = os.path.join(BASE_DIR, "data", "projections")
+PAGE_KEY_PREFIX = "value_plays"
 YARD_THRESHOLDS = {
     "Passing Yards": (45.0, 75.0),
     "Receiving Yards": (15.0, 25.0),
@@ -220,15 +222,14 @@ st.sidebar.markdown(
     "<h2 style='text-align: center;'>Selection</h2>",
     unsafe_allow_html=True
 )
-value_week_state_key = "value_plays_selected_week"
-if value_week_state_key not in st.session_state:
-    st.session_state[value_week_state_key] = f"Week {available_weeks[-1]}"
-
-selected_week = st.sidebar.selectbox(
+week_options = [f"Week {week}" for week in available_weeks]
+selected_week = persistent_selectbox(
     "Week:",
-    options=[f"Week {week}" for week in available_weeks],
-    index=available_weeks.index(int(st.session_state[value_week_state_key].replace("Week ", ""))) if st.session_state[value_week_state_key] in [f"Week {week}" for week in available_weeks] else len(available_weeks) - 1,
-    key=value_week_state_key,
+    options=week_options,
+    page=PAGE_KEY_PREFIX,
+    widget="week",
+    default=week_options[-1] if week_options else None,
+    container=st.sidebar,
 )
 
 selected_week_number = int(selected_week.replace("Week ", ""))
@@ -284,15 +285,13 @@ else:
 all_prop_types = sorted(value_opportunities["prop_type"].dropna().unique())
 
 # Game selector in sidebar
-game_state_key = "value_plays_selected_game"
-if game_state_key in st.session_state and st.session_state[game_state_key] not in game_options:
-    st.session_state[game_state_key] = game_options[0] if game_options else None
-
-selected_game = st.sidebar.selectbox(
+selected_game = persistent_selectbox(
     "Game:",
     options=game_options,
-    index=game_options.index(st.session_state[game_state_key]) if game_options and st.session_state.get(game_state_key) in game_options else 0,
-    key=game_state_key,
+    page=PAGE_KEY_PREFIX,
+    widget="game",
+    default=game_options[0] if game_options else None,
+    container=st.sidebar,
 )
 st.sidebar.write("")
 

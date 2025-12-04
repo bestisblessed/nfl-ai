@@ -7,6 +7,7 @@ import altair as alt
 import os
 # from Home import df_teams, df_games, df_playerstats, df_team_game_logs, df_schedule_and_game_results
 from utils.footer import render_footer
+from utils.session_state import persistent_selectbox
 
 # Page configuration
 st.set_page_config(
@@ -22,6 +23,8 @@ st.set_page_config(
 # df_teams = pd.read_csv(os.path.join(base_dir, 'Teams.csv'))
 # df_games = pd.read_csv(os.path.join(base_dir, 'Games.csv'))
 # df_playerstats = pd.read_csv(os.path.join(base_dir, 'PlayerStats.csv'))
+
+PAGE_KEY_PREFIX = "player_trends"
 
 st.markdown(f"""
     <div style='text-align: center;'>
@@ -87,8 +90,14 @@ def get_player_data_for_season(season):
     return df_standard
 
 # Season selector - now includes all available years from the standardized dataset
-available_seasons = [2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]
-selected_season = st.selectbox("Select Season:", available_seasons, index=available_seasons.index(2025))  # Default to 2025
+available_seasons = [2020, 2021, 2022, 2023, 2024, 2025]
+selected_season = persistent_selectbox(
+    "Select Season:",
+    options=available_seasons,
+    page=PAGE_KEY_PREFIX,
+    widget="season",
+    default=2025,
+)
 
 # st.divider()
 

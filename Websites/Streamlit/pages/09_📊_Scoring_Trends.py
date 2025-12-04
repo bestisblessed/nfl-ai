@@ -2,6 +2,7 @@ import os
 import pandas as pd
 import streamlit as st
 from utils.footer import render_footer
+from utils.session_state import ensure_option_state, widget_key
 
 # <iframe src="https://claude.site/public/artifacts/1ca9aa13-a81f-491a-a1b3-459e08bc9948/embed" title="Claude Artifact" width="100%" height="600" frameborder="0" allow="clipboard-write" allowfullscreen></iframe>
     
@@ -14,6 +15,8 @@ from utils.footer import render_footer
     # h1 {
     #     text-align: center !important;
     # }
+
+PAGE_KEY_PREFIX = "scoring_trends"
 
 st.set_page_config(page_title="Touchdown Trends", page_icon="🏈", layout="wide")
 # st.set_page_config(page_title="NFL 2025 TDs Allowed")
@@ -341,18 +344,22 @@ with st.sidebar:
     st.markdown("**Custom Range:**")
     
     # Custom range selection - default to 2025
+    start_key = widget_key(PAGE_KEY_PREFIX, "start_season")
+    end_key = widget_key(PAGE_KEY_PREFIX, "end_season")
+    default_year = 2025 if 2025 in available_seasons else (available_seasons[-1] if available_seasons else None)
+    ensure_option_state(start_key, available_seasons, default=default_year)
+    ensure_option_state(end_key, available_seasons, default=default_year)
+
     start_season = st.selectbox(
         "From:",
         options=available_seasons,
-        index=available_seasons.index(2025) if 2025 in available_seasons else len(available_seasons)-1,
-        key="start_season"
+        key=start_key
     )
     
     end_season = st.selectbox(
         "To:",
         options=available_seasons,
-        index=available_seasons.index(2025) if 2025 in available_seasons else len(available_seasons)-1,
-        key="end_season"
+        key=end_key
     )
     
     # Create season filter string from custom range

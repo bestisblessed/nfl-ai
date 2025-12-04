@@ -4,6 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import os
 from utils.footer import render_footer
+from utils.session_state import ensure_option_state, widget_key
 
 # Page configuration
 st.set_page_config(
@@ -14,6 +15,8 @@ st.set_page_config(
 
 # - add dropdowns for each division
 # - add team logo pictures
+
+PAGE_KEY_PREFIX = "standings"
 
 st.markdown(f"""
     <div style='text-align: center;'>
@@ -48,7 +51,10 @@ def load_data():
 df_teams, df_games, df_playerstats = load_data()
 
 # Season selector
-selected_season = st.selectbox("Select Season:", [2025, 2024], index=0)
+season_options = [2020, 2021, 2022, 2023, 2024, 2025]
+season_key = widget_key(PAGE_KEY_PREFIX, "season")
+ensure_option_state(season_key, season_options, default=2025)
+selected_season = st.selectbox("Select Season:", season_options, key=season_key)
 
 # Filter the games to the selected season
 # games_2023 = df_games[df_games['season'] == 2023]

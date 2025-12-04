@@ -6,6 +6,9 @@ import glob
 import json
 import re
 from utils.footer import render_footer
+from utils.session_state import persistent_selectbox
+
+PAGE_KEY_PREFIX = "weekly_projections"
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -189,15 +192,13 @@ if not available_weeks:
 
 st.sidebar.markdown("<h2 style='text-align: center;'>Selection</h2>", unsafe_allow_html=True)
 week_options = [f"Week {week}" for week in available_weeks]
-week_state_key = "weekly_projections_selected_week"
-if week_state_key not in st.session_state:
-    st.session_state[week_state_key] = week_options[-1]
-
-selected_week_display = st.sidebar.selectbox(
+selected_week_display = persistent_selectbox(
     "Week:",
     options=week_options,
-    index=week_options.index(st.session_state[week_state_key]) if st.session_state[week_state_key] in week_options else len(week_options) - 1,
-    key=week_state_key,
+    page=PAGE_KEY_PREFIX,
+    widget="week",
+    default=week_options[-1] if week_options else None,
+    container=st.sidebar,
 )
 
 # Get the selected week number
@@ -267,14 +268,13 @@ else:
             matchups.append(matchup)
     matchups = sorted(matchups)
 
-matchup_state_key = "weekly_projections_selected_matchup"
-if matchup_state_key in st.session_state and st.session_state[matchup_state_key] not in matchups:
-    st.session_state[matchup_state_key] = matchups[0] if matchups else None
-
-selected_matchup = st.sidebar.selectbox(
+selected_matchup = persistent_selectbox(
     "Game:",
     options=matchups,
-    key=matchup_state_key,
+    page=PAGE_KEY_PREFIX,
+    widget="matchup",
+    default=matchups[0] if matchups else None,
+    container=st.sidebar,
 )
 st.sidebar.write("")
 st.sidebar.write("")

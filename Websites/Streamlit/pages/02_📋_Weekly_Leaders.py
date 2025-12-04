@@ -7,6 +7,9 @@ import streamlit as st
 import os
 import glob
 from utils.footer import render_footer
+from utils.session_state import persistent_selectbox
+
+PAGE_KEY_PREFIX = "weekly_leaders"
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -46,15 +49,13 @@ if not available_weeks:
 
 st.sidebar.markdown("<h2 style='text-align: center;'>Selection</h2>", unsafe_allow_html=True)
 week_options = [f"Week {week}" for week in available_weeks]
-leaders_week_state_key = "weekly_leaders_selected_week"
-if leaders_week_state_key not in st.session_state:
-    st.session_state[leaders_week_state_key] = week_options[-1]
-
-selected_week = st.sidebar.selectbox(
+selected_week = persistent_selectbox(
     "Week:",
     options=week_options,
-    index=week_options.index(st.session_state[leaders_week_state_key]) if st.session_state[leaders_week_state_key] in week_options else len(week_options) - 1,
-    key=leaders_week_state_key,
+    page=PAGE_KEY_PREFIX,
+    widget="week",
+    default=week_options[-1] if week_options else None,
+    container=st.sidebar,
 )
 st.sidebar.write("")
 st.sidebar.write("")
