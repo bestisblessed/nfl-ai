@@ -531,17 +531,17 @@ if selected_game != "All Games":
             )
             st.dataframe(
                 styled_df,
-                use_container_width=True,
+                width='stretch',
                 hide_index=True,
                 column_config={
                     "Player": st.column_config.TextColumn(width=None),
-                    "Tm": st.column_config.TextColumn(width=None),
-                    "Side": st.column_config.TextColumn(width=None),
-                    "Proj (yds)": st.column_config.NumberColumn("Proj (yds)", format="%.1f", width=None),
-                    "Edge (yds)": st.column_config.NumberColumn("Edge (yds)", format="%.1f", width=None),
-                    "Edge %": st.column_config.NumberColumn("Edge %", format="%.1f", width=None),
-                    "Best Line": st.column_config.TextColumn("Best Line", width=None),
-                    "Book": st.column_config.TextColumn(width=None),
+                    "Tm": st.column_config.TextColumn(width=35),
+                    "Side": st.column_config.TextColumn(width=60),
+                    "Proj (yds)": st.column_config.NumberColumn("Proj (yds)", format="%.1f", width=65),
+                    "Edge (yds)": st.column_config.NumberColumn("Edge (yds)", format="%.1f", width=65),
+                    "Edge %": st.column_config.NumberColumn("Edge %", format="%.1f", width=60),
+                    "Best Line": st.column_config.TextColumn("Best Line", width="small"),
+                    "Book": st.column_config.TextColumn(width="small"),
                 },
             )
 
@@ -578,17 +578,17 @@ if selected_game != "All Games":
             )
             st.dataframe(
                 styled_df,
-                use_container_width=True,
+                width='stretch',
                 hide_index=True,
                 column_config={
                     "Player": st.column_config.TextColumn(width=None),
-                    "Tm": st.column_config.TextColumn(width=None),
-                    "Side": st.column_config.TextColumn(width=None),
-                    "Proj (yds)": st.column_config.NumberColumn("Proj (yds)", format="%.1f", width=None),
-                    "Edge (yds)": st.column_config.NumberColumn("Edge (yds)", format="%.1f", width=None),
-                    "Edge %": st.column_config.NumberColumn("Edge %", format="%.1f", width=None),
-                    "Best Line": st.column_config.TextColumn("Best Line", width=None),
-                    "Book": st.column_config.TextColumn(width=None),
+                    "Tm": st.column_config.TextColumn(width=35),
+                    "Side": st.column_config.TextColumn(width=60),
+                    "Proj (yds)": st.column_config.NumberColumn("Proj (yds)", format="%.1f", width=65),
+                    "Edge (yds)": st.column_config.NumberColumn("Edge (yds)", format="%.1f", width=65),
+                    "Edge %": st.column_config.NumberColumn("Edge %", format="%.1f", width=60),
+                    "Best Line": st.column_config.TextColumn("Best Line", width="small"),
+                    "Book": st.column_config.TextColumn(width="small"),
                 },
             )
 
@@ -628,17 +628,17 @@ if selected_game != "All Games":
             )
             st.dataframe(
                 styled_df,
-                use_container_width=True,
+                width='stretch',
                 hide_index=True,
                 column_config={
                     "Player": st.column_config.TextColumn(width=None),
-                    "Tm": st.column_config.TextColumn(width=None),
-                    "Side": st.column_config.TextColumn(width=None),
-                    "Proj (yds)": st.column_config.NumberColumn("Proj (yds)", format="%.1f", width=None),
-                    "Edge (yds)": st.column_config.NumberColumn("Edge (yds)", format="%.1f", width=None),
-                    "Edge %": st.column_config.NumberColumn("Edge %", format="%.1f", width=None),
-                    "Best Line": st.column_config.TextColumn("Best Line", width=None),
-                    "Book": st.column_config.TextColumn(width=None),
+                    "Tm": st.column_config.TextColumn(width=35),
+                    "Side": st.column_config.TextColumn(width=60),
+                    "Proj (yds)": st.column_config.NumberColumn("Proj (yds)", format="%.1f", width=65),
+                    "Edge (yds)": st.column_config.NumberColumn("Edge (yds)", format="%.1f", width=65),
+                    "Edge %": st.column_config.NumberColumn("Edge %", format="%.1f", width=60),
+                    "Best Line": st.column_config.TextColumn("Best Line", width="small"),
+                    "Book": st.column_config.TextColumn(width="small"),
                 },
             )
 
@@ -675,17 +675,17 @@ if selected_game != "All Games":
             )
             st.dataframe(
                 styled_df,
-                use_container_width=True,
+                width='stretch',
                 hide_index=True,
                 column_config={
                     "Player": st.column_config.TextColumn(width=None),
-                    "Tm": st.column_config.TextColumn(width=None),
-                    "Side": st.column_config.TextColumn(width=None),
-                    "Proj (yds)": st.column_config.NumberColumn("Proj (yds)", format="%.1f", width=None),
-                    "Edge (yds)": st.column_config.NumberColumn("Edge (yds)", format="%.1f", width=None),
-                    "Edge %": st.column_config.NumberColumn("Edge %", format="%.1f", width=None),
-                    "Best Line": st.column_config.TextColumn("Best Line", width=None),
-                    "Book": st.column_config.TextColumn(width=None),
+                    "Tm": st.column_config.TextColumn(width=35),
+                    "Side": st.column_config.TextColumn(width=60),
+                    "Proj (yds)": st.column_config.NumberColumn("Proj (yds)", format="%.1f", width=65),
+                    "Edge (yds)": st.column_config.NumberColumn("Edge (yds)", format="%.1f", width=65),
+                    "Edge %": st.column_config.NumberColumn("Edge %", format="%.1f", width=60),
+                    "Best Line": st.column_config.TextColumn("Best Line", width="small"),
+                    "Book": st.column_config.TextColumn(width="small"),
                 },
             )
 
@@ -725,17 +725,17 @@ if selected_game != "All Games":
             )
             st.dataframe(
                 styled_df,
-                use_container_width=True,
+                width='stretch',
                 hide_index=True,
                 column_config={
                     "Player": st.column_config.TextColumn(width=None),
-                    "Tm": st.column_config.TextColumn(width=None),
-                    "Side": st.column_config.TextColumn(width=None),
-                    "Proj (yds)": st.column_config.NumberColumn("Proj (yds)", format="%.1f", width=None),
-                    "Edge (yds)": st.column_config.NumberColumn("Edge (yds)", format="%.1f", width=None),
-                    "Edge %": st.column_config.NumberColumn("Edge %", format="%.1f", width=None),
-                    "Best Line": st.column_config.TextColumn("Best Line", width=None),
-                    "Book": st.column_config.TextColumn(width=None),
+                    "Tm": st.column_config.TextColumn(width=35),
+                    "Side": st.column_config.TextColumn(width=60),
+                    "Proj (yds)": st.column_config.NumberColumn("Proj (yds)", format="%.1f", width=65),
+                    "Edge (yds)": st.column_config.NumberColumn("Edge (yds)", format="%.1f", width=65),
+                    "Edge %": st.column_config.NumberColumn("Edge %", format="%.1f", width=60),
+                    "Best Line": st.column_config.TextColumn("Best Line", width="small"),
+                    "Book": st.column_config.TextColumn(width="small"),
                 },
             )
 
@@ -772,17 +772,18 @@ if selected_game != "All Games":
             )
             st.dataframe(
                 styled_df,
-                use_container_width=True,
+                width='stretch',
                 hide_index=True,
                 column_config={
-                    "Player": st.column_config.TextColumn(width=None),
-                    "Tm": st.column_config.TextColumn(width=None),
-                    "Side": st.column_config.TextColumn(width=None),
-                    "Proj (yds)": st.column_config.NumberColumn("Proj (yds)", format="%.1f", width=None),
-                    "Edge (yds)": st.column_config.NumberColumn("Edge (yds)", format="%.1f", width=None),
-                    "Edge %": st.column_config.NumberColumn("Edge %", format="%.1f", width=None),
-                    "Best Line": st.column_config.TextColumn("Best Line", width=None),
-                    "Book": st.column_config.TextColumn(width=None),
+                    "Player": st.column_config.TextColumn(width="None"),
+                    # "Player": st.column_config.TextColumn(width="medium"),
+                    "Tm": st.column_config.TextColumn(width=35),
+                    "Side": st.column_config.TextColumn(width=60),
+                    "Proj (yds)": st.column_config.NumberColumn("Proj (yds)", format="%.1f", width=65),
+                    "Edge (yds)": st.column_config.NumberColumn("Edge (yds)", format="%.1f", width=65),
+                    "Edge %": st.column_config.NumberColumn("Edge %", format="%.1f", width=60),
+                    "Best Line": st.column_config.TextColumn("Best Line", width="small"),
+                    "Book": st.column_config.TextColumn(width="small"),
                 },
             )
     
@@ -925,7 +926,7 @@ else:
             with col2:
                 st.dataframe(
                     styled_df,
-                    use_container_width=True,
+                    width='stretch',
                     height="content",
                     hide_index=True,
                     column_config={
@@ -1005,7 +1006,7 @@ with col2:
         data=csv_data,
         file_name=filename,
         mime="text/csv",
-        use_container_width=True,
+        width='stretch',
     )
 
 st.divider()
@@ -1033,9 +1034,9 @@ with st.sidebar:
                 data=html_file.read(),
                 file_name=os.path.basename(value_html_path),
                 mime="text/html",
-                # use_container_width=True,
+                # width='stretch',
                 # width=150
-                use_container_width=True
+                width='stretch'
             )
 
     if os.path.exists(value_pdf_path):
@@ -1045,9 +1046,9 @@ with st.sidebar:
                 data=pdf_file.read(),
                 file_name=os.path.basename(value_pdf_path),
                 mime="application/pdf",
-                # use_container_width=True,'
+                # width='stretch','
                 # width=150
-                use_container_width=True
+                width='stretch'
             )
 
 # Footer
