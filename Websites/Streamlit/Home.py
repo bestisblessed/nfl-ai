@@ -15,9 +15,8 @@ st.set_page_config(page_title="NFL AI", page_icon="🏈", layout="wide")
 st.cache_data.clear()
 st.cache_resource.clear()
 
-# Clear session state if needed
+# Initialize first_time flag without clearing session state
 if 'first_time' not in st.session_state:
-    st.session_state.clear()
     st.session_state['first_time'] = True
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))

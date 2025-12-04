@@ -48,7 +48,16 @@ def load_data():
 df_teams, df_games, df_playerstats = load_data()
 
 # Season selector
-selected_season = st.selectbox("Select Season:", [2025, 2024], index=0)
+standings_season_key = "standings_selected_season"
+if standings_season_key not in st.session_state:
+    st.session_state[standings_season_key] = 2025
+
+selected_season = st.selectbox(
+    "Select Season:", 
+    [2025, 2024], 
+    index=[2025, 2024].index(st.session_state[standings_season_key]) if st.session_state[standings_season_key] in [2025, 2024] else 0,
+    key=standings_season_key
+)
 
 # Filter the games to the selected season
 # games_2023 = df_games[df_games['season'] == 2023]

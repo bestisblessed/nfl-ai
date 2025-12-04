@@ -88,7 +88,16 @@ def get_player_data_for_season(season):
 
 # Season selector - now includes all available years from the standardized dataset
 available_seasons = [2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]
-selected_season = st.selectbox("Select Season:", available_seasons, index=available_seasons.index(2025))  # Default to 2025
+player_trends_season_key = "player_trends_selected_season"
+if player_trends_season_key not in st.session_state:
+    st.session_state[player_trends_season_key] = 2025
+
+selected_season = st.selectbox(
+    "Select Season:", 
+    available_seasons, 
+    index=available_seasons.index(st.session_state[player_trends_season_key]) if st.session_state[player_trends_season_key] in available_seasons else available_seasons.index(2025),
+    key=player_trends_season_key
+)
 
 # st.divider()
 
