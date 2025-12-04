@@ -73,7 +73,15 @@ with col2:
         data_dir = os.path.join(os.path.dirname(__file__), '../data/odds/')
         json_files = sorted([f for f in os.listdir(data_dir) if f.endswith(".json") and f.startswith('nfl')], reverse=True)
         most_recent_file = json_files[0] if json_files else None
+        json_timestamp = None
         if most_recent_file:
+            # Extract timestamp from filename (format: nfl_odds_YYYYMMDD_HHMM.json)
+            try:
+                timestamp_str = '_'.join(most_recent_file.split('_')[3:5]).replace('.json', '')
+                json_timestamp = pd.to_datetime(timestamp_str, format='%Y%m%d_%H%M')
+            except:
+                json_timestamp = pd.Timestamp.now()
+            
             filepath = os.path.join(data_dir, most_recent_file)
             with open(filepath) as f:
                 data = json.load(f)
@@ -104,7 +112,8 @@ with col2:
                         'teams': teams_list,
                         'spread': [spread_favorite, spread_underdog],
                         'moneyline': ['N/A', 'N/A'],
-                        'total': ['N/A', 'N/A']
+                        'total': ['N/A', 'N/A'],
+                        'json_timestamp': json_timestamp
                     })
         else:
             st.warning("No JSON files found in the data directory.")
@@ -169,6 +178,22 @@ with col2:
     # Normalize matchup and compute Circa upcoming-week subset once for reuse in the loop below
     def normalize_matchup(matchup):
         return str(matchup).lower().replace('  ', ' ').strip()
+    
+    def parse_spread_value(spread_str):
+        """Parse spread string like '+5.5 -110' or '-5.5 -110' to extract numeric value"""
+        if spread_str == 'N/A':
+            return None
+        try:
+            # Extract the first part (the spread number)
+            parts = spread_str.split()
+            if parts:
+                spread_val = parts[0]
+                # Remove any non-numeric characters except +, -, and .
+                spread_val = re.sub(r'[^\d+\-.]', '', spread_val)
+                return float(spread_val)
+        except:
+            pass
+        return None
 
     def format_month_day_with_ordinal(dt):
         day = dt.day
@@ -374,27 +399,45 @@ with col2:
 
             # Always show the main Plotly graph first
             selected_matchup = game['matchup']
-            if not df_nfl_odds_movements.empty:
-                try:
-                    # Filter data for this specific matchup using the same cleaning logic
-                    clean_game_date = game['game_date'].replace(' ', '').strip().lower()
-                    clean_game_time = re.sub(r'\s+', ' ', game['time'].replace('\n', ' ')).strip().lower()
-                    clean_matchup = re.sub(r'\s+', ' ', selected_matchup).strip().lower()
+            try:
+                # Filter data for this specific matchup using the same cleaning logic
+                clean_game_date = game['game_date'].replace(' ', '').strip().lower()
+                clean_game_time = re.sub(r'\s+', ' ', game['time'].replace('\n', ' ')).strip().lower()
+                clean_matchup = re.sub(r'\s+', ' ', selected_matchup).strip().lower()
 
+                selected_data = pd.DataFrame()
+                if not df_nfl_odds_movements.empty:
                     matchup_mask = (df_nfl_odds_movements['game_date'] == clean_game_date) & \
                                    (df_nfl_odds_movements['game_time'] == clean_game_time) & \
                                    (df_nfl_odds_movements['matchup'] == clean_matchup)
                     selected_data = df_nfl_odds_movements[matchup_mask].copy()
 
-                    if len(selected_data) > 0:
-                        # Clean and prepare data
-                        selected_data.loc[:, 'team1_odds_before'] = selected_data['team1_odds_before'].replace('PK', 0)
-                        selected_data.loc[:, 'team2_odds_before'] = selected_data['team2_odds_before'].replace('PK', 0)
-                        selected_data.loc[:, 'team1_odds_before'] = pd.to_numeric(selected_data['team1_odds_before'], errors='coerce')
-                        selected_data.loc[:, 'team2_odds_before'] = pd.to_numeric(selected_data['team2_odds_before'], errors='coerce')
-                        selected_data = selected_data.dropna(subset=['team1_odds_before', 'team2_odds_before'])
+                # If no CSV data, try to use JSON spread data as fallback
+                if len(selected_data) == 0:
+                    # Parse spreads from JSON data
+                    team1_spread = parse_spread_value(game['spread'][0])
+                    team2_spread = parse_spread_value(game['spread'][1])
+                    json_timestamp = game.get('json_timestamp', pd.Timestamp.now())
+                    
+                    if team1_spread is not None and team2_spread is not None:
+                        # Create synthetic data from JSON spread
+                        selected_data = pd.DataFrame({
+                            'timestamp': [json_timestamp, json_timestamp + pd.Timedelta(minutes=1)],
+                            'sportsbook': ['Circa', 'Circa'],
+                            'team1_odds_before': [team1_spread, team1_spread],
+                            'team2_odds_before': [team2_spread, team2_spread]
+                        })
 
-                        # Convert timestamps
+                if len(selected_data) > 0:
+                    # Clean and prepare data
+                    selected_data.loc[:, 'team1_odds_before'] = selected_data['team1_odds_before'].replace('PK', 0)
+                    selected_data.loc[:, 'team2_odds_before'] = selected_data['team2_odds_before'].replace('PK', 0)
+                    selected_data.loc[:, 'team1_odds_before'] = pd.to_numeric(selected_data['team1_odds_before'], errors='coerce')
+                    selected_data.loc[:, 'team2_odds_before'] = pd.to_numeric(selected_data['team2_odds_before'], errors='coerce')
+                    selected_data = selected_data.dropna(subset=['team1_odds_before', 'team2_odds_before'])
+
+                    # Convert timestamps (only if not already set from JSON fallback)
+                    if 'timestamp' not in selected_data.columns or selected_data['timestamp'].isna().any():
                         if 'file2' in selected_data.columns:
                             selected_data['timestamp'] = selected_data['file2'].apply(
                                 lambda x: '_'.join(x.split('_')[3:5]).replace('.json', '')
@@ -402,177 +445,219 @@ with col2:
                             selected_data['timestamp'] = pd.to_datetime(
                                 selected_data['timestamp'], format='%Y%m%d_%H%M'
                             )
-                        else:
+                        elif 'time_before' in selected_data.columns:
                             selected_data['timestamp'] = pd.to_datetime(selected_data['time_before'], errors='coerce')
 
-                        # Main Plotly graph (always shown)
+                    # Drop any rows without a valid timestamp and establish a common time window
+                    selected_data = selected_data.dropna(subset=['timestamp'])
+                    if selected_data.empty:
+                        st.warning("No valid odds movement data available for plotting this matchup.")
+                        continue
+
+                    global_min_time = selected_data['timestamp'].min()
+                    global_max_time = selected_data['timestamp'].max()
+                    if global_min_time == global_max_time:
+                        global_max_time = global_min_time + pd.Timedelta(minutes=1)
+
+                    # Always add Circa line from JSON if not already in CSV data
+                    if 'Circa' not in selected_data['sportsbook'].values:
+                        team1_spread = parse_spread_value(game['spread'][0])
+                        team2_spread = parse_spread_value(game['spread'][1])
+                        json_timestamp = game.get('json_timestamp', pd.Timestamp.now())
+                        
+                        if team1_spread is not None and team2_spread is not None:
+                            # Create Circa data from JSON spread
+                            circa_data = pd.DataFrame({
+                                'timestamp': [global_min_time, global_max_time],
+                                'sportsbook': ['Circa', 'Circa'],
+                                'team1_odds_before': [team1_spread, team1_spread],
+                                'team2_odds_before': [team2_spread, team2_spread]
+                            })
+                            # Add Circa data to selected_data
+                            selected_data = pd.concat([selected_data, circa_data], ignore_index=True)
+
+                    # Main Plotly graph (always shown)
+                    try:
+                        # Define colors for different sportsbooks (more visible on grey background)
+                        sportsbook_colors = {
+                            'Circa': '#FF4500',      # Brighter OrangeRed
+                            'Westgate': '#FFD700',   # Gold
+                            'South Point': '#32CD32',# LimeGreen
+                            'Wynn': '#1E90FF',       # DodgerBlue
+                            'Caesars': '#FF1493',    # DeepPink
+                            'BetMGM': '#8A2BE2',     # BlueViolet
+                            'DK': '#00CED1',         # DarkTurquoise
+                            'GLD Nugget': '#FF8C00', # DarkOrange
+                            'Stations': '#BA55D3'    # MediumOrchid
+                        }
+
+                        sportsbooks = selected_data['sportsbook'].unique()
+                        plotted_any = False
+
+                        # Create plotly figure
+                        fig = go.Figure()
+
+                        # Plot each sportsbook's odds movement
+                        for sportsbook in sportsbooks:
+                            sb_data = selected_data[selected_data['sportsbook'] == sportsbook].sort_values('timestamp')
+                            if sb_data.empty:
+                                continue
+
+                            # If there is only a single data point (no movement), pad it to create a flat line
+                            if len(sb_data) == 1 or sb_data['timestamp'].nunique() == 1:
+                                start_time = global_min_time
+                                end_time = global_max_time
+                                sb_data = sb_data.iloc[[0]].copy()
+                                sb_data = pd.concat([
+                                    sb_data.assign(timestamp=start_time),
+                                    sb_data.assign(timestamp=end_time)
+                                ], ignore_index=True)
+
+                            color = sportsbook_colors.get(sportsbook, '#95A5A6')
+
+                            # Add team 1 line with thicker, more visible styling
+                            fig.add_trace(go.Scatter(
+                                x=sb_data['timestamp'],
+                                y=sb_data['team1_odds_before'],
+                                mode='lines+markers',
+                                name=f'{game["teams"][0]} ({sportsbook})',
+                                line=dict(color=color, width=2),
+                                marker=dict(symbol='circle', size=8, color=color, line=dict(width=2, color='white')),
+                                hovertemplate=f'{game["teams"][0]} ({sportsbook})<br>Spread: %{{y}}<br>Time: %{{x}}<extra></extra>'
+                            ))
+
+                            # Add team 2 line with thicker, more visible styling
+                            fig.add_trace(go.Scatter(
+                                x=sb_data['timestamp'],
+                                y=sb_data['team2_odds_before'],
+                                mode='lines+markers',
+                                name=f'{game["teams"][1]} ({sportsbook})',
+                                line=dict(color=color, width=2),
+                                marker=dict(symbol='square', size=8, color=color, line=dict(width=2, color='white')),
+                                hovertemplate=f'{game["teams"][1]} ({sportsbook})<br>Spread: %{{y}}<br>Time: %{{x}}<extra></extra>'
+                            ))
+
+                            plotted_any = True
+
+                        if plotted_any:
+                            # Update layout with larger size
+                            fig.update_layout(
+                                title=f"Odds Movement - {game['teams'][0]} vs {game['teams'][1]}",
+                                title_x=0.29,  # Center the title
+                                # title_xref='container',  # Position relative to entire container
+                                xaxis_title=dict(
+                                    text="Time",
+                                    font=dict(size=16, color='black')
+                                ),
+                                yaxis_title=dict(
+                                    text="Spread",
+                                    font=dict(size=16, color='black')
+                                ),
+                                yaxis=dict(
+                                    tickformat='+.1f',
+                                    tickmode='linear'
+                                ),
+                                hovermode='x unified',
+                                legend=dict(
+                                    orientation="v",
+                                    yanchor="top",
+                                    y=1,
+                                    xanchor="left",
+                                    x=1.02
+                                ),
+                                margin=dict(l=50, r=150, t=80, b=50),
+                                width=1200,
+                                height=600
+                            )
+
+                            # Add gunmetal gridlines
+                            fig.update_xaxes(
+                                showgrid=True,
+                                gridwidth=2,
+                                gridcolor='rgba(160, 160, 160, 0.35)',
+                                showline=True,
+                                linewidth=2,
+                                # linecolor='rgba(150, 150, 150, 0.5)'
+                                linecolor='black',
+                                tickfont=dict(color='black'),
+                                tickcolor='black',
+                                ticklen=5,
+                                tickwidth=2
+                            )
+                            fig.update_yaxes(
+                                showgrid=True,
+                                gridwidth=2,
+                                gridcolor='rgba(160, 160, 160, 0.35)',
+                                showline=True,
+                                linewidth=2,
+                                # linecolor='rgba(150, 150, 150, 0.5)'
+                                linecolor='black',
+                                tickfont=dict(color='black'),
+                                tickcolor='black',
+                                ticklen=5,
+                                tickwidth=2
+                            )
+
+                            st.plotly_chart(fig, use_container_width=True)
+                        else:
+                            st.warning("No valid odds movement data available for plotting this matchup.")
+                    except Exception as e:
+                        st.error(f"Error creating main plot: {str(e)}")
+                        st.write("Raw data for debugging:")
+                        st.dataframe(selected_data)
+
+                    # Circa graph in an expandable section below
+                    with st.expander("📊 Show Simplified Circa Graph", expanded=False):
                         try:
-                            # Define colors for different sportsbooks (more visible on grey background)
-                            sportsbook_colors = {
-                                'Circa': '#FF4500',      # Brighter OrangeRed
-                                'Westgate': '#FFD700',   # Gold
-                                'South Point': '#32CD32',# LimeGreen
-                                'Wynn': '#1E90FF',       # DodgerBlue
-                                'Caesars': '#FF1493',    # DeepPink
-                                'BetMGM': '#8A2BE2',     # BlueViolet
-                                'DK': '#00CED1',         # DarkTurquoise
-                                'GLD Nugget': '#FF8C00', # DarkOrange
-                                'Stations': '#BA55D3'    # MediumOrchid
-                            }
+                            # Filter for Circa sportsbook only
+                            circa_data = selected_data[selected_data['sportsbook'] == 'Circa'].copy()
 
-                            sportsbooks = selected_data['sportsbook'].unique()
-                            plotted_any = False
+                            if not circa_data.empty and len(circa_data) > 1:
+                                # Sort by timestamp
+                                circa_data = circa_data.sort_values('timestamp')
 
-                            # Create plotly figure
-                            fig = go.Figure()
+                                # Create matplotlib figure
+                                fig, ax = plt.subplots(figsize=(12, 6))
 
-                            # Plot each sportsbook's odds movement
-                            for sportsbook in sportsbooks:
-                                sb_data = selected_data[selected_data['sportsbook'] == sportsbook].sort_values('timestamp')
-                                if len(sb_data) > 1:  # Only plot if we have multiple data points
-                                    color = sportsbook_colors.get(sportsbook, '#95A5A6')
+                                # Plot both teams' odds
+                                ax.plot(circa_data['timestamp'], circa_data['team1_odds_before'],
+                                       'o-', color='#FF4500', linewidth=2, markersize=6, label=game['teams'][0])
+                                ax.plot(circa_data['timestamp'], circa_data['team2_odds_before'],
+                                       's-', color='#1E90FF', linewidth=2, markersize=6, label=game['teams'][1])
 
-                                    # Add team 1 line with thicker, more visible styling
-                                    fig.add_trace(go.Scatter(
-                                        x=sb_data['timestamp'],
-                                        y=sb_data['team1_odds_before'],
-                                        mode='lines+markers',
-                                        name=f'{game["teams"][0]} ({sportsbook})',
-                                        line=dict(color=color, width=2),
-                                        marker=dict(symbol='circle', size=8, color=color, line=dict(width=2, color='white')),
-                                        hovertemplate=f'{game["teams"][0]} ({sportsbook})<br>Spread: %{{y}}<br>Time: %{{x}}<extra></extra>'
-                                    ))
+                                # Formatting
+                                ax.set_title(f'Circa Odds Movement: {game["teams"][0]} vs {game["teams"][1]}',
+                                            fontsize=16, fontweight='bold', loc='center')
+                                ax.set_xlabel('Time', fontsize=14)
+                                ax.set_ylabel('Spread', fontsize=14)
+                                ax.legend(fontsize=12)
+                                ax.grid(True, alpha=0.3)
 
-                                    # Add team 2 line with thicker, more visible styling
-                                    fig.add_trace(go.Scatter(
-                                        x=sb_data['timestamp'],
-                                        y=sb_data['team2_odds_before'],
-                                        mode='lines+markers',
-                                        name=f'{game["teams"][1]} ({sportsbook})',
-                                        line=dict(color=color, width=2),
-                                        marker=dict(symbol='square', size=8, color=color, line=dict(width=2, color='white')),
-                                        hovertemplate=f'{game["teams"][1]} ({sportsbook})<br>Spread: %{{y}}<br>Time: %{{x}}<extra></extra>'
-                                    ))
+                                # Format y-axis to show decimal places
+                                ax.yaxis.set_major_formatter(FuncFormatter(lambda x, p: f'{x:.1f}'))
 
-                                    plotted_any = True
+                                # Format x-axis dates
+                                ax.xaxis.set_major_formatter(mdates.DateFormatter('%m/%d %I:%M%p'))
+                                plt.setp(ax.xaxis.get_majorticklabels(), rotation=45)
 
-                            if plotted_any:
-                                # Update layout with larger size
-                                fig.update_layout(
-                                    title=f"Odds Movement - {game['teams'][0]} vs {game['teams'][1]}",
-                                    title_x=0.29,  # Center the title
-                                    # title_xref='container',  # Position relative to entire container
-                                    xaxis_title=dict(
-                                        text="Time",
-                                        font=dict(size=16, color='black')
-                                    ),
-                                    yaxis_title=dict(
-                                        text="Spread",
-                                        font=dict(size=16, color='black')
-                                    ),
-                                    yaxis=dict(
-                                        tickformat='+.1f',
-                                        tickmode='linear'
-                                    ),
-                                    hovermode='x unified',
-                                    legend=dict(
-                                        orientation="v",
-                                        yanchor="top",
-                                        y=1,
-                                        xanchor="left",
-                                        x=1.02
-                                    ),
-                                    margin=dict(l=50, r=150, t=80, b=50),
-                                    width=1200,
-                                    height=600
-                                )
-
-                                # Add gunmetal gridlines
-                                fig.update_xaxes(
-                                    showgrid=True,
-                                    gridwidth=2,
-                                    gridcolor='rgba(160, 160, 160, 0.35)',
-                                    showline=True,
-                                    linewidth=2,
-                                    # linecolor='rgba(150, 150, 150, 0.5)'
-                                    linecolor='black',
-                                    tickfont=dict(color='black'),
-                                    tickcolor='black',
-                                    ticklen=5,
-                                    tickwidth=2
-                                )
-                                fig.update_yaxes(
-                                    showgrid=True,
-                                    gridwidth=2,
-                                    gridcolor='rgba(160, 160, 160, 0.35)',
-                                    showline=True,
-                                    linewidth=2,
-                                    # linecolor='rgba(150, 150, 150, 0.5)'
-                                    linecolor='black',
-                                    tickfont=dict(color='black'),
-                                    tickcolor='black',
-                                    ticklen=5,
-                                    tickwidth=2
-                                )
-
-                                st.plotly_chart(fig, use_container_width=True)
+                                plt.tight_layout()
+                                st.pyplot(fig)
+                                plt.close(fig)
                             else:
-                                st.warning("No valid odds movement data available for plotting this matchup.")
+                                st.info("Insufficient Circa odds movement data available for this matchup.")
                         except Exception as e:
-                            st.error(f"Error creating main plot: {str(e)}")
-                            st.write("Raw data for debugging:")
-                            st.dataframe(selected_data)
-
-                        # Circa graph in an expandable section below
-                        with st.expander("📊 Show Simplified Circa Graph", expanded=False):
-                            try:
-                                # Filter for Circa sportsbook only
-                                circa_data = selected_data[selected_data['sportsbook'] == 'Circa'].copy()
-
-                                if not circa_data.empty and len(circa_data) > 1:
-                                    # Sort by timestamp
-                                    circa_data = circa_data.sort_values('timestamp')
-
-                                    # Create matplotlib figure
-                                    fig, ax = plt.subplots(figsize=(12, 6))
-
-                                    # Plot both teams' odds
-                                    ax.plot(circa_data['timestamp'], circa_data['team1_odds_before'],
-                                           'o-', color='#FF4500', linewidth=2, markersize=6, label=game['teams'][0])
-                                    ax.plot(circa_data['timestamp'], circa_data['team2_odds_before'],
-                                           's-', color='#1E90FF', linewidth=2, markersize=6, label=game['teams'][1])
-
-                                    # Formatting
-                                    ax.set_title(f'Circa Odds Movement: {game["teams"][0]} vs {game["teams"][1]}',
-                                                fontsize=16, fontweight='bold', loc='center')
-                                    ax.set_xlabel('Time', fontsize=14)
-                                    ax.set_ylabel('Spread', fontsize=14)
-                                    ax.legend(fontsize=12)
-                                    ax.grid(True, alpha=0.3)
-
-                                    # Format y-axis to show decimal places
-                                    ax.yaxis.set_major_formatter(FuncFormatter(lambda x, p: f'{x:.1f}'))
-
-                                    # Format x-axis dates
-                                    ax.xaxis.set_major_formatter(mdates.DateFormatter('%m/%d %I:%M%p'))
-                                    plt.setp(ax.xaxis.get_majorticklabels(), rotation=45)
-
-                                    plt.tight_layout()
-                                    st.pyplot(fig)
-                                    plt.close(fig)
-                                else:
-                                    st.info("Insufficient Circa odds movement data available for this matchup.")
-                            except Exception as e:
-                                st.error(f"Error creating Circa plot: {str(e)}")
-                                if 'Circa' in selected_data['sportsbook'].values:
-                                    st.write("Circa data for debugging:")
-                                    st.dataframe(selected_data[selected_data['sportsbook'] == 'Circa'])
-                    else:
+                            st.error(f"Error creating Circa plot: {str(e)}")
+                            if 'Circa' in selected_data['sportsbook'].values:
+                                st.write("Circa data for debugging:")
+                                st.dataframe(selected_data[selected_data['sportsbook'] == 'Circa'])
+                else:
+                    # Check if we have JSON spread data to use as fallback
+                    team1_spread = parse_spread_value(game['spread'][0])
+                    team2_spread = parse_spread_value(game['spread'][1])
+                    if team1_spread is None or team2_spread is None:
                         st.warning("No odds movement data found for this matchup.")
-                except Exception as e:
-                    st.error(f"Error preparing odds data: {str(e)}")
-            else:
-                st.warning("No odds data available to plot for this matchup.")
+            except Exception as e:
+                st.error(f"Error preparing odds data: {str(e)}")
 
             st.write(' ')
             st.divider()
