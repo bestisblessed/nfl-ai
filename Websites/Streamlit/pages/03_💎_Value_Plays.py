@@ -381,12 +381,32 @@ if selected_game != "All Games":
             return 'color: #c62828; font-weight: 500;'
         return ''
 
-    def build_display_table(df_slice: pd.DataFrame) -> pd.DataFrame:
+    def prepare_section_df(df: pd.DataFrame, prop_type: str) -> pd.DataFrame:
+        if df.empty:
+            return df
+        df = df.sort_values(by="edge_yards", ascending=False).reset_index(drop=True)
+        df["rank"] = range(1, len(df) + 1)
+        denom = np.maximum(df["predicted_yards"].abs(), df["best_point"].abs())
+        df["edge_pct_norm"] = (df["edge_yards"] / denom * 100).round(1)
+        thresholds = YARD_THRESHOLDS.get(prop_type)
+        if thresholds is None:
+            df["edge_indicator"] = ""
+        else:
+            low_thr, high_thr = thresholds
+            df["edge_indicator"] = df["edge_yards"].apply(
+                lambda yards: "💎" if pd.notna(yards) and yards >= high_thr else (
+                    "⚡️" if pd.notna(yards) and yards >= low_thr else ""
+                )
+            )
+        return df
+
+    def build_display_table(df_slice: pd.DataFrame) -> Tuple[pd.DataFrame, List[str]]:
         display_df = df_slice[
             [
                 "rank",
                 "player",
                 "position",
+                "team",
                 "opp",
                 "side",
                 "best_point",
@@ -402,6 +422,7 @@ if selected_game != "All Games":
                 "rank": "#",
                 "player": "Player",
                 "position": "Pos",
+                "team": "Team",
                 "opp": "Opp",
                 "best_point": "Best Line (yds)",
                 "predicted_yards": "Projection (yds)",
@@ -414,84 +435,99 @@ if selected_game != "All Games":
             }
         )
         if display_df.empty:
-            return display_df
+            return display_df, []
         display_df["Best Line (yds)"] = display_df["Best Line (yds)"].round(1)
         display_df["Best Odds"] = display_df["Best Odds"].round().astype("Int64")
         display_df["Projection (yds)"] = display_df["Projection (yds)"].round(1)
         display_df["Edge (yds)"] = display_df["Edge (yds)"].round(1)
         display_df["Side"] = display_df["Side"].apply(format_side_with_emoji)
         display_df["Indicator"] = display_df["Indicator"].fillna("").replace(np.nan, "")
-        display_df = display_df[["Indicator", "#", "Player", "Pos", "Opp", "Projection (yds)", "Best Line (yds)", "Best Odds", "Edge (yds)", "Edge % (norm)", "Side", "Book"]]
-        display_df = display_df.sort_values(by="Edge (yds)", ascending=False, na_position='last')
-        return display_df
-    
-    for prop_type in all_prop_types:
-        prop_data = game_data[game_data["prop_type"] == prop_type].copy()
-        
-        if prop_data.empty:
+        display_df = display_df[
+            ["Indicator", "#", "Player", "Pos", "Team", "Opp", "Projection (yds)", "Best Line (yds)", "Best Odds", "Edge (yds)", "Edge % (norm)", "Side", "Book"]
+        ]
+        display_df = display_df.sort_values(by="Edge (yds)", ascending=False, na_position="last")
+        indicators = display_df["Indicator"].tolist()
+        display_df = display_df.drop(columns=["Indicator"])
+        return display_df, indicators
+
+    def render_indicator_column(indicators: list[str]):
+        st.markdown('<div style="height: 38px;"></div>', unsafe_allow_html=True)
+        for indicator in indicators:
+            if indicator == "💎":
+                st.markdown('<div style="height: 36px; display: flex; align-items: center; justify-content: center; font-size: 1.1em;">💎</div>', unsafe_allow_html=True)
+            elif indicator == "⚡️":
+                st.markdown('<div style="height: 36px; display: flex; align-items: center; justify-content: center; font-size: 1.1em;">⚡️</div>', unsafe_allow_html=True)
+            else:
+                st.markdown('<div style="height: 36px;"></div>', unsafe_allow_html=True)
+
+    section_definitions = [
+        ("QB", "Passing Yards", "QB Passing Yards"),
+        ("QB", "Rushing Yards", "QB Rushing Yards"),
+        ("RB", "Rushing Yards", "RB Rushing Yards"),
+        ("RB", "Receiving Yards", "RB Receiving Yards"),
+        ("WR", "Receiving Yards", "WR Receiving Yards"),
+        ("TE", "Receiving Yards", "TE Receiving Yards"),
+    ]
+
+    display_pairs = team_pairs if team_pairs else [("ALL", "Players")]
+
+    for position, prop_type, section_label in section_definitions:
+        section_data = game_data[
+            (game_data["position"] == position) & (game_data["prop_type"] == prop_type)
+        ].copy()
+
+        if section_data.empty:
             continue
-        
-        # Sort by edge yards descending and add ranking
-        prop_data = prop_data.sort_values(by="edge_yards", ascending=False).reset_index(drop=True)
-        prop_data["rank"] = range(1, len(prop_data) + 1)
-        
-        # Calculate % edge
-        # Normalized % edge (prevents tiny-line explosions)
-        denom = np.maximum(prop_data["predicted_yards"].abs(), prop_data["best_point"].abs())
-        prop_data["edge_pct_norm"] = (prop_data["edge_yards"] / denom * 100).round(1)
-        thresholds = YARD_THRESHOLDS.get(prop_type)
-        if thresholds is None:
-            prop_data["edge_indicator"] = ""
-        else:
-            low_thr, high_thr = thresholds
-            prop_data["edge_indicator"] = prop_data["edge_yards"].apply(
-                lambda yards: "💎" if pd.notna(yards) and yards >= high_thr else (
-                    "⚡️" if pd.notna(yards) and yards >= low_thr else ""
-                )
-            )
-        
+
+        section_data = prepare_section_df(section_data, prop_type)
+
         st.markdown(
-            f"<h4 style='text-align: center; font-size: 1.1em; margin-bottom: 0.8em;'>{prop_type.upper()}</h4>",
+            f"<h4 style='text-align: center; font-size: 1.1em; margin-bottom: 0.8em;'>{section_label}</h4>",
             unsafe_allow_html=True,
         )
 
-        display_pairs = team_pairs if team_pairs else [("ALL", f"{prop_type.upper()} Value Plays")]
         team_cols = st.columns(len(display_pairs), gap="large")
 
         for col, (team_abbrev, title) in zip(team_cols, display_pairs):
             with col:
+                team_title = title if team_abbrev == "ALL" else f"{team_abbrev} Players"
                 st.markdown(
-                    f"<div style='text-align: center; font-weight: 600; margin-bottom: 0.5em;'>{title}</div>",
+                    f"<div style='text-align: center; font-weight: 600; margin-bottom: 0.5em;'>{team_title}</div>",
                     unsafe_allow_html=True,
                 )
+
                 if team_abbrev == "ALL":
-                    team_slice = prop_data.copy()
+                    team_slice = section_data.copy()
                 else:
-                    team_slice = prop_data[prop_data["team"] == team_abbrev].copy()
+                    team_slice = section_data[section_data["team"] == team_abbrev].copy()
 
                 if team_slice.empty:
                     st.info("No value plays for this team.")
                     continue
 
-                team_display = build_display_table(team_slice)
+                table_df, indicators = build_display_table(team_slice)
                 styled_df = (
-                    team_display.style
+                    table_df.style
                     .map(style_side_cell, subset=["Side"])
                 )
-                st.dataframe(
-                    styled_df,
-                    use_container_width=True,
-                    hide_index=True,
-                    column_config={
-                        "Indicator": st.column_config.TextColumn(label="", width="small"),
-                        "#": st.column_config.TextColumn(label="", width="small"),
-                        "Best Line (yds)": st.column_config.NumberColumn("Best Line (yds)", format="%.1f"),
-                        "Projection (yds)": st.column_config.NumberColumn("Projection (yds)", format="%.1f"),
-                        "Best Odds": st.column_config.NumberColumn("Best Odds"),
-                        "Edge (yds)": st.column_config.NumberColumn("Edge (yds)", format="%.1f"),
-                        "Edge % (norm)": st.column_config.NumberColumn("Edge % (norm)", format="%.1f"),
-                    },
-                )
+
+                table_col, indicator_col = st.columns([0.94, 0.06], gap="small")
+                with table_col:
+                    st.dataframe(
+                        styled_df,
+                        use_container_width=True,
+                        hide_index=True,
+                        column_config={
+                            "#": st.column_config.TextColumn(label="", width="small"),
+                            "Best Line (yds)": st.column_config.NumberColumn("Best Line (yds)", format="%.1f"),
+                            "Projection (yds)": st.column_config.NumberColumn("Projection (yds)", format="%.1f"),
+                            "Best Odds": st.column_config.NumberColumn("Best Odds"),
+                            "Edge (yds)": st.column_config.NumberColumn("Edge (yds)", format="%.1f"),
+                            "Edge % (norm)": st.column_config.NumberColumn("Edge % (norm)", format="%.1f"),
+                        },
+                    )
+                with indicator_col:
+                    render_indicator_column(indicators)
     
     # Update CSV data for download
     csv_data = game_data.to_csv(index=False).encode("utf-8")
