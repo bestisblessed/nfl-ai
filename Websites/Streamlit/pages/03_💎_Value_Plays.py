@@ -470,6 +470,7 @@ if selected_game != "All Games":
             st.dataframe(
                 styled_df,
                 use_container_width=True,
+                height=None,
                 hide_index=True,
                 column_config={
                     "#": st.column_config.TextColumn(label="", width="small"),
@@ -492,7 +493,6 @@ if selected_game != "All Games":
                     st.markdown('<div style="height: 35px; display: flex; align-items: center; justify-content: center; color: #f57c00; font-weight: 700; font-size: 0.9em; padding: 0; margin: 0;">⚡️</div>', unsafe_allow_html=True)
                 else:
                     st.markdown('<div style="height: 35px;"></div>', unsafe_allow_html=True)
-        st.write("")
     
     # Update CSV data for download
     csv_data = game_data.to_csv(index=False).encode("utf-8")
