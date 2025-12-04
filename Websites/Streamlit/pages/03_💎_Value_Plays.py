@@ -417,7 +417,7 @@ if selected_game != "All Games":
         display_df = df_slice[
             [
                 "player",
-                "team",
+                # "team",
                 # "position",
                 # "opp",
                 "side",
@@ -431,7 +431,7 @@ if selected_game != "All Games":
         ].rename(
             columns={
                 "player": "Player",
-                "team": "Tm",
+                # "team": "Tm",
                 # "position": "Pos",
                 # "opp": "Opp",
                 # "best_point": "Best Line (yds)",
@@ -481,7 +481,7 @@ if selected_game != "All Games":
         display_df["Proj (yds)"] = display_df["Proj (yds)"].round(1)
         display_df["Edge (yds)"] = display_df["Edge (yds)"].round(1)
         display_df["Side"] = display_df["Side"].apply(format_side_with_emoji)
-        display_df = display_df[["Player", "Tm", "Side", "Proj (yds)", "Edge (yds)", "Edge %", "Best Line", "Book"]]
+        display_df = display_df[["Player", "Side", "Proj (yds)", "Edge (yds)", "Edge %", "Best Line", "Book"]]
         display_df = display_df.sort_values(by="Edge (yds)", ascending=False, na_position='last')
         return display_df
     
@@ -535,7 +535,7 @@ if selected_game != "All Games":
                 hide_index=True,
                 column_config={
                     "Player": st.column_config.TextColumn(width=None),
-                    "Tm": st.column_config.TextColumn(width=35),
+                    # "Tm": st.column_config.TextColumn(width=35),
                     "Side": st.column_config.TextColumn(width=60),
                     "Proj (yds)": st.column_config.NumberColumn("Proj (yds)", format="%.1f", width=65),
                     "Edge (yds)": st.column_config.NumberColumn("Edge (yds)", format="%.1f", width=65),
@@ -582,7 +582,7 @@ if selected_game != "All Games":
                 hide_index=True,
                 column_config={
                     "Player": st.column_config.TextColumn(width=None),
-                    "Tm": st.column_config.TextColumn(width=35),
+                    # "Tm": st.column_config.TextColumn(width=35),
                     "Side": st.column_config.TextColumn(width=60),
                     "Proj (yds)": st.column_config.NumberColumn("Proj (yds)", format="%.1f", width=65),
                     "Edge (yds)": st.column_config.NumberColumn("Edge (yds)", format="%.1f", width=65),
@@ -632,7 +632,7 @@ if selected_game != "All Games":
                 hide_index=True,
                 column_config={
                     "Player": st.column_config.TextColumn(width=None),
-                    "Tm": st.column_config.TextColumn(width=35),
+                    # "Tm": st.column_config.TextColumn(width=35),
                     "Side": st.column_config.TextColumn(width=60),
                     "Proj (yds)": st.column_config.NumberColumn("Proj (yds)", format="%.1f", width=65),
                     "Edge (yds)": st.column_config.NumberColumn("Edge (yds)", format="%.1f", width=65),
@@ -679,7 +679,7 @@ if selected_game != "All Games":
                 hide_index=True,
                 column_config={
                     "Player": st.column_config.TextColumn(width=None),
-                    "Tm": st.column_config.TextColumn(width=35),
+                    # "Tm": st.column_config.TextColumn(width=35),
                     "Side": st.column_config.TextColumn(width=60),
                     "Proj (yds)": st.column_config.NumberColumn("Proj (yds)", format="%.1f", width=65),
                     "Edge (yds)": st.column_config.NumberColumn("Edge (yds)", format="%.1f", width=65),
@@ -729,7 +729,7 @@ if selected_game != "All Games":
                 hide_index=True,
                 column_config={
                     "Player": st.column_config.TextColumn(width=None),
-                    "Tm": st.column_config.TextColumn(width=35),
+                    # "Tm": st.column_config.TextColumn(width=35),
                     "Side": st.column_config.TextColumn(width=60),
                     "Proj (yds)": st.column_config.NumberColumn("Proj (yds)", format="%.1f", width=65),
                     "Edge (yds)": st.column_config.NumberColumn("Edge (yds)", format="%.1f", width=65),
@@ -777,7 +777,7 @@ if selected_game != "All Games":
                 column_config={
                     "Player": st.column_config.TextColumn(width="None"),
                     # "Player": st.column_config.TextColumn(width="medium"),
-                    "Tm": st.column_config.TextColumn(width=35),
+                    # "Tm": st.column_config.TextColumn(width=35),
                     "Side": st.column_config.TextColumn(width=60),
                     "Proj (yds)": st.column_config.NumberColumn("Proj (yds)", format="%.1f", width=65),
                     "Edge (yds)": st.column_config.NumberColumn("Edge (yds)", format="%.1f", width=65),
