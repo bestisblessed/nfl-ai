@@ -50,6 +50,32 @@ st.set_page_config(
 #     """,
 #     unsafe_allow_html=True,
 # )
+# Maximize width for individual game table columns only
+st.markdown(
+    """
+    <style>
+        /* Only target columns used for individual game tables - reduce gaps */
+        [data-testid="column"] {
+            padding-left: 0.05rem !important;
+            padding-right: 0.05rem  !important;
+        }
+        /* Make tables use full available width */
+        .stDataFrame {
+            width: 100% !important;
+        }
+        /* Ensure dataframe containers use full width */
+        [data-testid="stDataFrame"] {
+            width: 100% !important;
+        }
+        /* Reduce gap between side-by-side columns */
+        [data-testid="column"] > div {
+            padding-left: 0.05rem !important;
+            padding-right: 0.05rem !important;
+        }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
 
 st.markdown(
     """
@@ -922,7 +948,8 @@ else:
                 ])
                 .map(style_side_cell, subset=["Side"])
             )
-            col1, col2, col3 = st.columns([0.2, 3, 0.2])
+            st.write("")
+            col1, col2, col3 = st.columns([0.1, 3, 0.1])
             with col2:
                 st.dataframe(
                     styled_df,
