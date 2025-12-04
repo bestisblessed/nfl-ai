@@ -321,19 +321,13 @@ st.divider()
 if selected_game != "All Games":
     # Parse the game selection (format: "Away @ Home" with abbreviations)
     if " @ " in selected_game:
-        # Format: "Away Team @ Home Team" (using abbreviations)
         away_team_abbrev, home_team_abbrev = selected_game.split(" @ ")
-        # Filter using team/opp columns (which use abbreviations)
-        # Check both directions since data may have either team as team/opp
         game_data = value_opportunities[
             ((value_opportunities["team"] == away_team_abbrev) & (value_opportunities["opp"] == home_team_abbrev)) |
             ((value_opportunities["team"] == home_team_abbrev) & (value_opportunities["opp"] == away_team_abbrev))
         ].copy()
     elif " vs " in selected_game:
-        # Fallback: handle "vs" format if it exists
         team1, team2 = selected_game.split(" vs ")
-        # Filter using team/opp columns (which use abbreviations)
-        # Check both directions since data may have either team as team/opp
         game_data = value_opportunities[
             ((value_opportunities["team"] == team1) & (value_opportunities["opp"] == team2)) |
             ((value_opportunities["team"] == team2) & (value_opportunities["opp"] == team1))
@@ -357,36 +351,48 @@ if selected_game != "All Games":
         unsafe_allow_html=True
     )
     st.write("")
-    
-    for prop_type in all_prop_types:
-        prop_data = game_data[game_data["prop_type"] == prop_type].copy()
-        
-        if prop_data.empty:
-            continue
-        
-        # Sort by edge yards descending and add ranking
-        prop_data = prop_data.sort_values(by="edge_yards", ascending=False).reset_index(drop=True)
-        prop_data["rank"] = range(1, len(prop_data) + 1)
-        
-        # Calculate % edge
-        # Normalized % edge (prevents tiny-line explosions)
-        denom = np.maximum(prop_data["predicted_yards"].abs(), prop_data["best_point"].abs())
-        prop_data["edge_pct_norm"] = (prop_data["edge_yards"] / denom * 100).round(1)
+
+    def format_side_with_emoji(side_value):
+        if pd.isna(side_value) or side_value == "-":
+            return "-"
+        side_str = str(side_value).strip().upper()
+        if side_str == "OVER":
+            return "Over  ⬆️"
+        if side_str == "UNDER":
+            return "Under  ⬇️"
+        return str(side_value)
+
+    def style_side_cell(val):
+        if pd.isna(val) or val == "-":
+            return 'color: #666;'
+        val_str = str(val).upper()
+        if "OVER" in val_str:
+            return 'color: #2e7d32; font-weight: 500;'
+        if "UNDER" in val_str:
+            return 'color: #c62828; font-weight: 500;'
+        return ''
+
+    def prepare_section_df(df: pd.DataFrame, prop_type: str) -> pd.DataFrame:
+        if df.empty:
+            return df
+        df = df.sort_values(by="edge_yards", ascending=False).reset_index(drop=True)
+        df["rank"] = range(1, len(df) + 1)
+        denom = np.maximum(df["predicted_yards"].abs(), df["best_point"].abs())
+        df["edge_pct_norm"] = (df["edge_yards"] / denom * 100).round(1)
         thresholds = YARD_THRESHOLDS.get(prop_type)
         if thresholds is None:
-            prop_data["edge_indicator"] = ""
+            df["edge_indicator"] = ""
         else:
             low_thr, high_thr = thresholds
-            prop_data["edge_indicator"] = prop_data["edge_yards"].apply(
+            df["edge_indicator"] = df["edge_yards"].apply(
                 lambda yards: "💎" if pd.notna(yards) and yards >= high_thr else (
                     "⚡️" if pd.notna(yards) and yards >= low_thr else ""
                 )
             )
-        
-        # Section header for prop type
-        st.markdown(f"### {prop_type.upper()}")
-        
-        display_df = prop_data[
+        return df
+
+    def build_display_table(df_slice: pd.DataFrame) -> Tuple[pd.DataFrame, List[str]]:
+        display_df = df_slice[
             [
                 "rank",
                 "player",
@@ -419,58 +425,71 @@ if selected_game != "All Games":
                 "bookmaker": "Book",
             }
         )
-        
+        if display_df.empty:
+            return display_df, []
         display_df["Best Line (yds)"] = display_df["Best Line (yds)"].round(1)
         display_df["Best Odds"] = display_df["Best Odds"].round().astype("Int64")
         display_df["Projection (yds)"] = display_df["Projection (yds)"].round(1)
         display_df["Edge (yds)"] = display_df["Edge (yds)"].round(1)
-        display_df = display_df[["#", "Player", "Pos", "Team", "Opp", "Projection (yds)", "Best Line (yds)", "Best Odds", "Edge (yds)", "Edge % (norm)", "Indicator", "Side", "Book"]]
-        
-        # Sort FIRST by Edge (yds) before formatting
-        display_df = display_df.sort_values(by="Edge (yds)", ascending=False, na_position='last')
-        
-        # Create indicators list for display outside table
-        indicators = display_df["Indicator"].tolist()
-        
-        # Add emoji indicators to Side column
-        def format_side_with_emoji(side_value):
-            if pd.isna(side_value) or side_value == "-":
-                return "-"
-            side_str = str(side_value).strip().upper()
-            if side_str == "OVER":
-                return "Over  ⬆️"
-            elif side_str == "UNDER":
-                return "Under  ⬇️"
-            return str(side_value)
-        
         display_df["Side"] = display_df["Side"].apply(format_side_with_emoji)
+        display_df["Indicator"] = display_df["Indicator"].fillna("").replace(np.nan, "")
+        display_df = display_df[
+            ["Indicator", "#", "Player", "Pos", "Team", "Opp", "Projection (yds)", "Best Line (yds)", "Best Odds", "Edge (yds)", "Edge % (norm)", "Side", "Book"]
+        ]
+        display_df = display_df.sort_values(by="Edge (yds)", ascending=False, na_position="last")
+        indicators = display_df["Indicator"].tolist()
         display_df = display_df.drop(columns=["Indicator"])
-        
-        # Apply color styling to Side column using pandas Styler
-        def style_side_cell(val):
-            if pd.isna(val) or val == "-":
-                return 'color: #666;'
-            val_str = str(val).upper()
-            if "OVER" in val_str:
-                return 'color: #2e7d32; font-weight: 500;'
-            elif "UNDER" in val_str:
-                return 'color: #c62828; font-weight: 500;'
-            return ''
-        
-        # Create styled dataframe
+        return display_df, indicators
+
+    def render_indicator_column(indicators: list[str]):
+        st.markdown('<div style="height: 38px;"></div>', unsafe_allow_html=True)
+        for indicator in indicators:
+            if indicator == "💎":
+                st.markdown('<div style="height: 36px; display: flex; align-items: center; justify-content: center; font-size: 1.1em;">💎</div>', unsafe_allow_html=True)
+            elif indicator == "⚡️":
+                st.markdown('<div style="height: 36px; display: flex; align-items: center; justify-content: center; font-size: 1.1em;">⚡️</div>', unsafe_allow_html=True)
+            else:
+                st.markdown('<div style="height: 36px;"></div>', unsafe_allow_html=True)
+
+    section_definitions = [
+        ("QB", "Passing Yards", "QB Passing Yards"),
+        ("QB", "Rushing Yards", "QB Rushing Yards"),
+        ("RB", "Rushing Yards", "RB Rushing Yards"),
+        ("RB", "Receiving Yards", "RB Receiving Yards"),
+        ("WR", "Receiving Yards", "WR Receiving Yards"),
+        ("TE", "Receiving Yards", "TE Receiving Yards"),
+    ]
+
+    for position, prop_type, section_label in section_definitions:
+        section_data = game_data[
+            (game_data["position"] == position) & (game_data["prop_type"] == prop_type)
+        ].copy()
+
+        if section_data.empty:
+            continue
+
+        section_data = prepare_section_df(section_data, prop_type)
+
+        st.markdown(
+            f"<h4 style='text-align: center; font-size: 1.1em; margin-bottom: 0.8em;'>{section_label}</h4>",
+            unsafe_allow_html=True,
+        )
+
+        table_df, indicators = build_display_table(section_data)
+        if table_df.empty:
+            st.info("No value plays available for this section.")
+            continue
+
         styled_df = (
-            display_df.style
+            table_df.style
             .map(style_side_cell, subset=["Side"])
         )
-        
-        # Create two-column layout: table on left, indicators on right
-        col_table, col_indicators = st.columns([0.98, 0.02], gap="small")
-        
-        with col_table:
+
+        table_col, indicator_col = st.columns([0.95, 0.05], gap="small")
+        with table_col:
             st.dataframe(
                 styled_df,
                 use_container_width=True,
-                height=None,
                 hide_index=True,
                 column_config={
                     "#": st.column_config.TextColumn(label="", width="small"),
@@ -481,18 +500,8 @@ if selected_game != "All Games":
                     "Edge % (norm)": st.column_config.NumberColumn("Edge % (norm)", format="%.1f"),
                 },
             )
-        
-        with col_indicators:
-            # Add spacer for table header row
-            st.markdown('<div style="height: 40px;"></div>', unsafe_allow_html=True)
-            # Display indicators aligned with rows
-            for indicator in indicators:
-                if indicator == "💎":
-                    st.markdown('<div style="height: 35px; display: flex; align-items: center; justify-content: center; color: #d32f2f; font-weight: 700; font-size: 0.9em; padding: 0; margin: 0;">💎</div>', unsafe_allow_html=True)
-                elif indicator == "⚡️":
-                    st.markdown('<div style="height: 35px; display: flex; align-items: center; justify-content: center; color: #f57c00; font-weight: 700; font-size: 0.9em; padding: 0; margin: 0;">⚡️</div>', unsafe_allow_html=True)
-                else:
-                    st.markdown('<div style="height: 35px;"></div>', unsafe_allow_html=True)
+        with indicator_col:
+            render_indicator_column(indicators)
     
     # Update CSV data for download
     csv_data = game_data.to_csv(index=False).encode("utf-8")
