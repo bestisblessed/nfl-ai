@@ -210,6 +210,31 @@ def load_value_data(week: int) -> Tuple[pd.DataFrame, Optional[pd.DataFrame]]:
     return value_df, edges_df
 
 
+def get_value_table_column_config(edge_format: str = "%.1f"):
+    return {
+        "#": st.column_config.NumberColumn("#", width="small"),
+        "Player": st.column_config.TextColumn("Player", width="medium"),
+        "Pos": st.column_config.TextColumn("Pos", width="small"),
+        "Team": st.column_config.TextColumn("Team", width="small"),
+        "Opp": st.column_config.TextColumn("Opp", width="small"),
+        "Projection (yds)": st.column_config.NumberColumn(
+            "Projection (yds)", format="%.1f", width="small"
+        ),
+        "Best Line (yds)": st.column_config.NumberColumn(
+            "Best Line (yds)", format="%.1f", width="small"
+        ),
+        "Best Odds": st.column_config.NumberColumn("Best Odds", width="small"),
+        "Edge (yds)": st.column_config.NumberColumn(
+            "Edge (yds)", format=edge_format, width="small"
+        ),
+        "Edge % (norm)": st.column_config.NumberColumn(
+            "Edge % (norm)", format="%.1f", width="small"
+        ),
+        "Side": st.column_config.TextColumn("Side", width="small"),
+        "Book": st.column_config.TextColumn("Book", width="small"),
+    }
+
+
 available_weeks = discover_value_weeks(PROJECTIONS_DIR)
 if not available_weeks:
     st.error(
@@ -456,6 +481,8 @@ if selected_game != "All Games":
         ('TE', 'Receiving Yards')
     ]
 
+    game_view_column_config = get_value_table_column_config(edge_format="%.1f")
+
     # QB sections - side by side
     qb_cols = st.columns(2)
 
@@ -482,14 +509,7 @@ if selected_game != "All Games":
                 styled_df,
                 use_container_width=True,
                 hide_index=True,
-                column_config={
-                    "#": st.column_config.TextColumn(label="", width="small"),
-                    "Best Line (yds)": st.column_config.NumberColumn("Best Line (yds)", format="%.1f"),
-                    "Projection (yds)": st.column_config.NumberColumn("Projection (yds)", format="%.1f"),
-                    "Best Odds": st.column_config.NumberColumn("Best Odds"),
-                    "Edge (yds)": st.column_config.NumberColumn("Edge (yds)", format="%.1f"),
-                    "Edge % (norm)": st.column_config.NumberColumn("Edge % (norm)", format="%.1f"),
-                },
+                column_config=game_view_column_config,
             )
 
     # QB Rushing Yards
@@ -515,14 +535,7 @@ if selected_game != "All Games":
                 styled_df,
                 use_container_width=True,
                 hide_index=True,
-                column_config={
-                    "#": st.column_config.TextColumn(label="", width="small"),
-                    "Best Line (yds)": st.column_config.NumberColumn("Best Line (yds)", format="%.1f"),
-                    "Projection (yds)": st.column_config.NumberColumn("Projection (yds)", format="%.1f"),
-                    "Best Odds": st.column_config.NumberColumn("Best Odds"),
-                    "Edge (yds)": st.column_config.NumberColumn("Edge (yds)", format="%.1f"),
-                    "Edge % (norm)": st.column_config.NumberColumn("Edge % (norm)", format="%.1f"),
-                },
+                column_config=game_view_column_config,
             )
 
     # RB sections - side by side
@@ -551,14 +564,7 @@ if selected_game != "All Games":
                 styled_df,
                 use_container_width=True,
                 hide_index=True,
-                column_config={
-                    "#": st.column_config.TextColumn(label="", width="small"),
-                    "Best Line (yds)": st.column_config.NumberColumn("Best Line (yds)", format="%.1f"),
-                    "Projection (yds)": st.column_config.NumberColumn("Projection (yds)", format="%.1f"),
-                    "Best Odds": st.column_config.NumberColumn("Best Odds"),
-                    "Edge (yds)": st.column_config.NumberColumn("Edge (yds)", format="%.1f"),
-                    "Edge % (norm)": st.column_config.NumberColumn("Edge % (norm)", format="%.1f"),
-                },
+                column_config=game_view_column_config,
             )
 
     # RB Receiving Yards
@@ -584,14 +590,7 @@ if selected_game != "All Games":
                 styled_df,
                 use_container_width=True,
                 hide_index=True,
-                column_config={
-                    "#": st.column_config.TextColumn(label="", width="small"),
-                    "Best Line (yds)": st.column_config.NumberColumn("Best Line (yds)", format="%.1f"),
-                    "Projection (yds)": st.column_config.NumberColumn("Projection (yds)", format="%.1f"),
-                    "Best Odds": st.column_config.NumberColumn("Best Odds"),
-                    "Edge (yds)": st.column_config.NumberColumn("Edge (yds)", format="%.1f"),
-                    "Edge % (norm)": st.column_config.NumberColumn("Edge % (norm)", format="%.1f"),
-                },
+                column_config=game_view_column_config,
             )
 
     # WR and TE Receiving Yards (side by side)
@@ -620,14 +619,7 @@ if selected_game != "All Games":
                 styled_df,
                 use_container_width=True,
                 hide_index=True,
-                column_config={
-                    "#": st.column_config.TextColumn(label="", width="small"),
-                    "Best Line (yds)": st.column_config.NumberColumn("Best Line (yds)", format="%.1f"),
-                    "Projection (yds)": st.column_config.NumberColumn("Projection (yds)", format="%.1f"),
-                    "Best Odds": st.column_config.NumberColumn("Best Odds"),
-                    "Edge (yds)": st.column_config.NumberColumn("Edge (yds)", format="%.1f"),
-                    "Edge % (norm)": st.column_config.NumberColumn("Edge % (norm)", format="%.1f"),
-                },
+                column_config=game_view_column_config,
             )
 
     # TE Receiving Yards
@@ -653,14 +645,7 @@ if selected_game != "All Games":
                 styled_df,
                 use_container_width=True,
                 hide_index=True,
-                column_config={
-                    "#": st.column_config.TextColumn(label="", width="small"),
-                    "Best Line (yds)": st.column_config.NumberColumn("Best Line (yds)", format="%.1f"),
-                    "Projection (yds)": st.column_config.NumberColumn("Projection (yds)", format="%.1f"),
-                    "Best Odds": st.column_config.NumberColumn("Best Odds"),
-                    "Edge (yds)": st.column_config.NumberColumn("Edge (yds)", format="%.1f"),
-                    "Edge % (norm)": st.column_config.NumberColumn("Edge % (norm)", format="%.1f"),
-                },
+                column_config=game_view_column_config,
             )
     
     # Update CSV data for download
@@ -683,7 +668,8 @@ else:
     )
     
     prop_type_tabs = st.tabs(all_prop_types)
-    
+    full_table_column_config = get_value_table_column_config(edge_format="%.2f")
+
     for tab_label, tab in zip(all_prop_types, prop_type_tabs):
         with tab:
             subset = value_opportunities[value_opportunities["prop_type"] == tab_label].copy()
@@ -789,18 +775,7 @@ else:
                 use_container_width=True,
                 height=800,
                 hide_index=True,
-                column_config={
-                    "#": st.column_config.TextColumn(label="", width="small"),
-                    "Best Line (yds)": st.column_config.NumberColumn("Best Line (yds)", format="%.1f"),
-                    "Projection (yds)": st.column_config.NumberColumn(
-                        "Projection (yds)", format="%.1f"
-                    ),
-                    "Best Odds": st.column_config.NumberColumn("Best Odds"),
-                    "Edge (yds)": st.column_config.NumberColumn(
-                        "Edge (yds)", format="%.2f"
-                    ),
-                    "Edge % (norm)": st.column_config.NumberColumn("Edge % (norm)", format="%.1f"),
-                },
+                column_config=full_table_column_config,
             )
     
     # CSV data for all games
