@@ -1,0 +1,5 @@
+file1,file2,game_date,game_time,matchup,sportsbook,odds_before,odds_after,team_1,team_2,team1_odds_before,team2_odds_before,team1_odds_after,team2_odds_after,time_before,time_after
+nfl_odds_vsin_20251204_0436.json,nfl_odds_vsin_20251204_0443.json,"Sun,December 14th","1:00 PM
+ Splits",Cleveland Browns vs  Chicago Bears,DK,+7 -115 | -7 -105,+7 -105 | -7 -115,Cleveland Browns,Chicago Bears,+7,-7,+7,-7,Dec 04 4:36AM,Dec 04 4:43AM
+nfl_odds_vsin_20251204_0443.json,nfl_odds_vsin_20251204_0451.json,"Sun,December 14th","1:00 PM
+ Splits",Cleveland Browns vs  Chicago Bears,DK,+7 -105 | -7 -115,+7.5 -115 | -7.5 -105,Cleveland Browns,Chicago Bears,+7,-7,+7.5,-7.5,Dec 04 4:43AM,Dec 04 4:51AM
