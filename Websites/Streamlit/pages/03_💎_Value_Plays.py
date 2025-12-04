@@ -319,24 +319,15 @@ st.divider()
 
 # Filter by selected game if not "All Games"
 if selected_game != "All Games":
-    team_pairs: List[Tuple[str, str]] = []
     # Parse the game selection (format: "Away @ Home" with abbreviations)
     if " @ " in selected_game:
         away_team_abbrev, home_team_abbrev = selected_game.split(" @ ")
-        team_pairs = [
-            (away_team_abbrev, f"{away_team_abbrev} Players"),
-            (home_team_abbrev, f"{home_team_abbrev} Players"),
-        ]
         game_data = value_opportunities[
             ((value_opportunities["team"] == away_team_abbrev) & (value_opportunities["opp"] == home_team_abbrev)) |
             ((value_opportunities["team"] == home_team_abbrev) & (value_opportunities["opp"] == away_team_abbrev))
         ].copy()
     elif " vs " in selected_game:
         team1, team2 = selected_game.split(" vs ")
-        team_pairs = [
-            (team1, f"{team1} Players"),
-            (team2, f"{team2} Players"),
-        ]
         game_data = value_opportunities[
             ((value_opportunities["team"] == team1) & (value_opportunities["opp"] == team2)) |
             ((value_opportunities["team"] == team2) & (value_opportunities["opp"] == team1))
@@ -469,8 +460,6 @@ if selected_game != "All Games":
         ("TE", "Receiving Yards", "TE Receiving Yards"),
     ]
 
-    display_pairs = team_pairs if team_pairs else [("ALL", "Players")]
-
     for position, prop_type, section_label in section_definitions:
         section_data = game_data[
             (game_data["position"] == position) & (game_data["prop_type"] == prop_type)
@@ -486,48 +475,33 @@ if selected_game != "All Games":
             unsafe_allow_html=True,
         )
 
-        team_cols = st.columns(len(display_pairs), gap="large")
+        table_df, indicators = build_display_table(section_data)
+        if table_df.empty:
+            st.info("No value plays available for this section.")
+            continue
 
-        for col, (team_abbrev, title) in zip(team_cols, display_pairs):
-            with col:
-                team_title = title if team_abbrev == "ALL" else f"{team_abbrev} Players"
-                st.markdown(
-                    f"<div style='text-align: center; font-weight: 600; margin-bottom: 0.5em;'>{team_title}</div>",
-                    unsafe_allow_html=True,
-                )
+        styled_df = (
+            table_df.style
+            .map(style_side_cell, subset=["Side"])
+        )
 
-                if team_abbrev == "ALL":
-                    team_slice = section_data.copy()
-                else:
-                    team_slice = section_data[section_data["team"] == team_abbrev].copy()
-
-                if team_slice.empty:
-                    st.info("No value plays for this team.")
-                    continue
-
-                table_df, indicators = build_display_table(team_slice)
-                styled_df = (
-                    table_df.style
-                    .map(style_side_cell, subset=["Side"])
-                )
-
-                table_col, indicator_col = st.columns([0.94, 0.06], gap="small")
-                with table_col:
-                    st.dataframe(
-                        styled_df,
-                        use_container_width=True,
-                        hide_index=True,
-                        column_config={
-                            "#": st.column_config.TextColumn(label="", width="small"),
-                            "Best Line (yds)": st.column_config.NumberColumn("Best Line (yds)", format="%.1f"),
-                            "Projection (yds)": st.column_config.NumberColumn("Projection (yds)", format="%.1f"),
-                            "Best Odds": st.column_config.NumberColumn("Best Odds"),
-                            "Edge (yds)": st.column_config.NumberColumn("Edge (yds)", format="%.1f"),
-                            "Edge % (norm)": st.column_config.NumberColumn("Edge % (norm)", format="%.1f"),
-                        },
-                    )
-                with indicator_col:
-                    render_indicator_column(indicators)
+        table_col, indicator_col = st.columns([0.95, 0.05], gap="small")
+        with table_col:
+            st.dataframe(
+                styled_df,
+                use_container_width=True,
+                hide_index=True,
+                column_config={
+                    "#": st.column_config.TextColumn(label="", width="small"),
+                    "Best Line (yds)": st.column_config.NumberColumn("Best Line (yds)", format="%.1f"),
+                    "Projection (yds)": st.column_config.NumberColumn("Projection (yds)", format="%.1f"),
+                    "Best Odds": st.column_config.NumberColumn("Best Odds"),
+                    "Edge (yds)": st.column_config.NumberColumn("Edge (yds)", format="%.1f"),
+                    "Edge % (norm)": st.column_config.NumberColumn("Edge % (norm)", format="%.1f"),
+                },
+            )
+        with indicator_col:
+            render_indicator_column(indicators)
     
     # Update CSV data for download
     csv_data = game_data.to_csv(index=False).encode("utf-8")
