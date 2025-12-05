@@ -1,11 +1,5 @@
 player,team,opponent,home_away,line,over_american_odds,under_american_odds,event_id,start_time,source
-Daniel Jones,IND Colts,LA Chargers,AWAY,0.5,+122,−156,32225707,2025-10-19T20:05:00.0000000Z,draftkings
-Aaron Rodgers,PIT Steelers,CIN Bengals,AWAY,0.5,+118,−150,32225529,2025-10-17T00:15:00.0000000Z,draftkings
-Jared Goff,DET Lions,TB Buccaneers,HOME,0.5,+111,−141,32225583,2025-10-20T23:00:00.0000000Z,draftkings
-Bo Nix,DEN Broncos,NY Giants,HOME,0.5,+103,−131,32225573,2025-10-19T20:05:00.0000000Z,draftkings
-Justin Herbert,LA Chargers,IND Colts,HOME,0.5,−104,−122,32225707,2025-10-19T20:05:00.0000000Z,draftkings
-Baker Mayfield,TB Buccaneers,DET Lions,AWAY,0.5,−108,−118,32225583,2025-10-20T23:00:00.0000000Z,draftkings
-Matthew Stafford,LA Rams,JAX Jaguars,AWAY,0.5,−109,−117,32225673,2025-10-19T13:30:00.0000000Z,draftkings
-Jaxson Dart,NY Giants,DEN Broncos,AWAY,0.5,−118,−108,32225573,2025-10-19T20:05:00.0000000Z,draftkings
-Trevor Lawrence,JAX Jaguars,LA Rams,HOME,0.5,−141,+111,32225673,2025-10-19T13:30:00.0000000Z,draftkings
-Joe Flacco,CIN Bengals,PIT Steelers,HOME,0.5,−177,+138,32225529,2025-10-17T00:15:00.0000000Z,draftkings
+Daniel Jones,,,,0.5,−107,−119,32225651,2025-11-09T14:30:00.0000000Z,draftkings
+Bo Nix,,,,0.5,−109,−117,32225571,2025-11-07T01:15:00.0000000Z,draftkings
+Michael Penix Jr.,,,,0.5,−139,+109,32225651,2025-11-09T14:30:00.0000000Z,draftkings
+Geno Smith,,,,0.5,−173,+135,32225571,2025-11-07T01:15:00.0000000Z,draftkings
