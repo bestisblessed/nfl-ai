@@ -5,6 +5,7 @@
 # into the Streamlit app data directory so the Value page updates.
 
 set -euo pipefail
+shopt -s nullglob
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$SCRIPT_DIR"
@@ -39,6 +40,8 @@ echo "\n✅ Odds scraping and value calculations complete."
 # --- Copy updated outputs to Streamlit ---
 STREAMLIT_PROJECTIONS_DIR="${SCRIPT_DIR}/../Websites/Streamlit/data/projections"
 mkdir -p "$STREAMLIT_PROJECTIONS_DIR"
+STREAMLIT_ODDS_DIR="${SCRIPT_DIR}/../Websites/Streamlit/data/odds"
+mkdir -p "$STREAMLIT_ODDS_DIR"
 
 copy_if_exists() {
     local source_file="$1"
@@ -59,5 +62,30 @@ copy_if_exists "10-ARBITRAGE/data/week${WEEK}_top_edges_by_prop.csv" "$STREAMLIT
 # Value report assets (HTML/PDF) for reference in Streamlit downloads
 copy_if_exists "0-FINAL-REPORTS/week${WEEK}_value_complete_props_report.html" "$STREAMLIT_PROJECTIONS_DIR"
 copy_if_exists "0-FINAL-REPORTS/week${WEEK}_value_leader_tables.pdf" "$STREAMLIT_PROJECTIONS_DIR"
+
+# Odds snapshots used for ordering matchups by start time in the Value page
+copy_matching_files() {
+    local pattern="$1"
+    local source_dir="$2"
+    local dest_dir="$3"
+
+    local matched_files=()
+    for file in "$source_dir"/$pattern; do
+        matched_files+=("$file")
+    done
+
+    if [[ ${#matched_files[@]} -eq 0 ]]; then
+        echo "No files matching ${pattern} found in ${source_dir}; skipping odds sync."
+        return
+    fi
+
+    for file in "${matched_files[@]}"; do
+        cp "$file" "$dest_dir/"
+        echo "Copied $(basename "$file") to $(realpath "$dest_dir")"
+    done
+}
+
+copy_matching_files "nfl_odds_*.json" "10-ARBITRAGE/data" "$STREAMLIT_ODDS_DIR"
+copy_matching_files "*odds*.csv" "10-ARBITRAGE/data" "$STREAMLIT_ODDS_DIR"
 
 echo "\n🎯 Streamlit Value page data refreshed for week ${WEEK}."
