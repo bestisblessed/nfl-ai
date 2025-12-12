@@ -14,6 +14,8 @@
 - data/player_stats_pfr.csv
 - data/rosters/*.csv (all roster CSV files)
 
+**Available Seasons:** All seasons present in the data files (dynamically collected)
+
 ## 2. Matchup Generator (00_⚔️_Matchup_Generator.py)
 - data/Games.csv
 - data/PlayerStats.csv
@@ -21,6 +23,8 @@
 - data/all_team_game_logs.csv
 - data/all_defense-game-logs.csv
 - data/all_redzone.csv
+
+**Available Seasons:** All seasons in Games.csv and PlayerStats.csv (uses 2025 roster for current players)
 
 ## 3. Weekly Projections (01_🔮_Weekly_Projections.py)
 - data/projections/week*_all_props_summary.csv
@@ -30,9 +34,13 @@
 - data/projections/week*_complete_props_report.html (optional)
 - data/odds/nfl_odds_*.json
 
+**Available Seasons:** 2025 only (hardcoded filter)
+
 ## 4. Weekly Leaders (02_📋_Weekly_Leaders.py)
 - data/projections/week*_all_props_summary.csv
 - data/projections/week*_leader_tables.pdf
+
+**Available Seasons:** Current season (based on projection files, typically 2025)
 
 ## 5. Value Plays (03_💎_Value_Plays.py)
 - data/projections/week*_value_opportunities.csv
@@ -45,11 +53,15 @@
 - data/projections/week*_value_leader_tables.pdf
 - data/odds/nfl_odds_*.json
 
+**Available Seasons:** 2025 only (hardcoded filter)
+
 ## 6. Odds Dashboard (04_📈_Odds_Dashboard.py)
 - data/odds/nfl_odds_movements.csv
 - data/odds/nfl_odds_movements_circa.csv
 - upcoming_games.csv
 - data/odds/nfl_odds_*.json
+
+**Available Seasons:** Current/upcoming games (no season filter)
 
 ## 7. Player Dashboard (05_🥇_Player_Dashboard.py)
 - data/Teams.csv
@@ -60,6 +72,8 @@
 - data/all_passing_rushing_receiving.csv
 - data/Rosters.csv
 
+**Available Seasons:** All seasons available in all_passing_rushing_receiving.csv (uses most recent season by default)
+
 ## 8. Player Trends (06_📈_Player_Trends.py)
 - data/Teams.csv
 - data/Games.csv
@@ -67,6 +81,8 @@
 - data/all_team_game_logs.csv
 - data/all_teams_schedule_and_game_results_merged.csv
 - data/all_passing_rushing_receiving.csv
+
+**Available Seasons:** 2020-2025 (explicit season selector)
 
 ## 9. Team Trends (07_📉_Team_Trends.py)
 - data/Teams.csv
@@ -78,21 +94,31 @@
 - data/SR-game-logs/all_teams_game_logs_2024.csv
 - data/SR-game-logs/all_teams_game_logs_2025.csv
 
+**Available Seasons:** 2024-2025 (explicit season selector)
+
 ## 10. Betting Trends (08_💰_Betting_Trends.py)
 - data/Teams.csv
 - data/Games.csv
 - data/PlayerStats.csv
 
+**Available Seasons:** 2024-2025 (explicit season selector)
+
 ## 11. Scoring Trends (09_📊_Scoring_Trends.py)
 - data/player_stats_pfr.csv
 - data/rosters/roster_2025.csv
+
+**Available Seasons:** All seasons available in player_stats_pfr.csv (dynamically determined, supports single season or range)
 
 ## 12. AI Chatbot (10_🤖_AI_Chatbot.py)
 - data/player_stats_pfr.csv
 - data/all_team_game_logs.csv
 - data/Rosters.csv
 
+**Available Seasons:** All available seasons (no season filter)
+
 ## 13. Standings (12_💍_Standings.py)
 - data/Teams.csv
 - data/Games.csv
 - data/PlayerStats.csv
+
+**Available Seasons:** 2020-2025 (explicit season selector)
