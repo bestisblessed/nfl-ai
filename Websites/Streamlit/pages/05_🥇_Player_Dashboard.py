@@ -34,7 +34,7 @@ st.markdown(f"""
     unsafe_allow_html=True
 )
 
-# Always use 2025 data
+# Default season (overridden after player data loads)
 selected_season = 2025
 
 # Load data using cached function
@@ -138,6 +138,10 @@ def get_player_position(player_name: str | None) -> str | None:
 df_player_data['year'] = df_player_data['game_id'].str.split('_').str[0].astype(int)
 df_player_data['week'] = df_player_data['game_id'].str.split('_').str[1].astype(int)
 
+# Season selector (injured players may have 0 games in current season)
+available_seasons = sorted(df_player_data['year'].dropna().unique().tolist(), reverse=True)
+selected_season = st.selectbox("Select Season", options=available_seasons, index=0)
+
 # Filter to selected season (all positions now available)
 df_player_data_filtered = df_player_data[df_player_data['year'] == selected_season]
 
@@ -172,10 +176,10 @@ st.divider()
 # Fetch player names from CSV data and headshots from database/roster
 def fetch_player_names_and_image():
     # Get all players from the full dataset
-    all_players_data = df_player_data[df_player_data['year'] == selected_season]
+    all_players_data = df_player_data[df_player_data['year'].isin([selected_season, selected_season - 1])]
     
     if all_players_data.empty:
-        st.warning(f"No player data available for {selected_season} season yet. Please select 2024 to view player statistics.")
+        st.warning(f"No player data available for {selected_season} season yet.")
         return None, None
     
     # Get unique player names from CSV

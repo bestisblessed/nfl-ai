@@ -46,16 +46,22 @@ def load_data():
         # Load year-specific team game logs
         df_team_game_logs_2024 = pd.read_csv(os.path.join(current_dir, '../data', 'SR-game-logs/all_teams_game_logs_2024.csv'))
         df_team_game_logs_2025 = pd.read_csv(os.path.join(current_dir, '../data', 'SR-game-logs/all_teams_game_logs_2025.csv'))
+
+        # Load year-specific opponent game logs (defense/allowed stats)
+        df_opponent_game_logs_2024 = pd.read_csv(os.path.join(current_dir, '../data', 'SR-opponent-game-logs/all_teams_opponent_game_logs_2024.csv'))
+        df_opponent_game_logs_2025 = pd.read_csv(os.path.join(current_dir, '../data', 'SR-opponent-game-logs/all_teams_opponent_game_logs_2025.csv'))
         
         return (df_teams, df_games, df_playerstats, df_team_game_logs, 
-                df_schedule_and_game_results, df_team_game_logs_2024, df_team_game_logs_2025, df_box_scores)
+                df_schedule_and_game_results, df_team_game_logs_2024, df_team_game_logs_2025,
+                df_opponent_game_logs_2024, df_opponent_game_logs_2025, df_box_scores)
     except FileNotFoundError as e:
         st.error(f"Error loading data files: {e}")
         st.stop()
 
 # Load all data
 (df_teams, df_games, df_playerstats, df_team_game_logs, 
- df_schedule_and_game_results, df_team_game_logs_2024, df_team_game_logs_2025, df_box_scores) = load_data()
+ df_schedule_and_game_results, df_team_game_logs_2024, df_team_game_logs_2025,
+ df_opponent_game_logs_2024, df_opponent_game_logs_2025, df_box_scores) = load_data()
 
 # Season selector in sidebar
 with st.sidebar:
@@ -77,8 +83,10 @@ week_col = 'week'
 # Select the appropriate dataset based on season
 if selected_season == 2025:
     df_team_game_logs_selected = df_team_game_logs_2025.copy()
+    df_opponent_game_logs_selected = df_opponent_game_logs_2025.copy()
 else:  # 2024
     df_team_game_logs_selected = df_team_game_logs_2024.copy()
+    df_opponent_game_logs_selected = df_opponent_game_logs_2024.copy()
 
 # Both datasets use the same column names
 dataframes = [df_teams, df_games, df_playerstats, df_team_game_logs, df_schedule_and_game_results]
@@ -462,42 +470,22 @@ col1, col2 = st.columns(2)
 filtered_df_teams = df_teams.copy()
 filtered_df_teams.loc[:, 'TeamID'] = filtered_df_teams['TeamID'].str.lower()
 
-# Create a copy of df_schedule_and_game_results to avoid SettingWithCopyWarning
-df_schedule_results = df_schedule_and_game_results.copy()
-df_schedule_results.loc[:, 'Week'] = pd.to_numeric(df_schedule_results['Week'], errors='coerce')
-df_schedule_results = df_schedule_results.dropna(subset=['Day'])
-
-team_abbreviation_mapping = {
-    'gnb': 'gb',
-    'htx': 'hou',
-    'clt': 'ind',
-    'kan': 'kc',
-    'sdg': 'lac',
-    'ram': 'lar',
-    'rai': 'lvr',
-    'nwe': 'ne',
-    'nor': 'no',
-    'sfo': 'sf',
-    'tam': 'tb',
-    'oti': 'ten',
-    'rav': 'bal',
-    'crd': 'ari'
-}
-df_schedule_results.loc[:, 'Team'] = df_schedule_results['Team'].map(team_abbreviation_mapping).fillna(df_schedule_results['Team'])
-df_schedule_and_game_results_filtered = df_schedule_results[(df_schedule_results['Season'] == selected_season) & (df_schedule_results['Week'] >= 1) & (df_schedule_results['Week'] <= 18)]
+df_opponent_game_logs_selected.loc[:, 'week'] = pd.to_numeric(df_opponent_game_logs_selected['week'], errors='coerce')
+df_opponent_game_logs_filtered = df_opponent_game_logs_selected[(df_opponent_game_logs_selected['week'] >= 1) & (df_opponent_game_logs_selected['week'] <= 18)]
+df_opponent_game_logs_filtered = df_opponent_game_logs_filtered[df_opponent_game_logs_filtered['pts'].notna()]
 
 # Passing Yards Allowed
 with col1:
     st.write(f"Passing Yards Allowed ({selected_season})")
     results_passing_yards_allowed = []
     for team in filtered_df_teams['TeamID']:
-        team_filtered_data = df_schedule_and_game_results_filtered[df_schedule_and_game_results_filtered['Team'] == team]
-        avg_passing_yards_allowed = team_filtered_data['OppPassY'].mean()
+        team_name = df_teams.loc[df_teams['TeamID'].str.lower() == team, 'Team'].iloc[0]
+        avg_passing_yards_allowed = df_opponent_game_logs_filtered.loc[df_opponent_game_logs_filtered['team_name'] == team_name, 'pass_yds'].mean()
         results_passing_yards_allowed.append({'Team': team.upper(), 'Avg Passing Yards Allowed': avg_passing_yards_allowed})
     
     # Create DataFrame and sort for chart
     df_passing_allowed_chart = pd.DataFrame(results_passing_yards_allowed)
-    df_passing_allowed_chart_sorted = df_passing_allowed_chart.sort_values(by='Avg Passing Yards Allowed', ascending=True)
+    df_passing_allowed_chart_sorted = df_passing_allowed_chart.sort_values(by='Avg Passing Yards Allowed', ascending=False)
     
     # Create horizontal bar chart
     fig = px.bar(
@@ -513,10 +501,11 @@ with col1:
         height=800,
         xaxis_title="Passing Yards Allowed per Game",
         yaxis_title="Teams",
-        yaxis={'categoryorder':'total ascending'},
+        yaxis={'categoryorder':'total descending'},
         showlegend=False,
         coloraxis_showscale=False
     )
+    fig.update_yaxes(autorange="reversed")
     st.plotly_chart(fig, use_container_width=True)
     
     # Top 5 Teams Allowing the Fewest Passing Yards per Game
@@ -530,13 +519,13 @@ with col2:
     st.write(f"Rushing Yards Allowed ({selected_season})")
     results_rushing_yards_allowed = []
     for team in filtered_df_teams['TeamID']:
-        team_filtered_data = df_schedule_and_game_results_filtered[df_schedule_and_game_results_filtered['Team'] == team]
-        avg_rushing_yards_allowed = team_filtered_data['OppRushY'].mean()
+        team_name = df_teams.loc[df_teams['TeamID'].str.lower() == team, 'Team'].iloc[0]
+        avg_rushing_yards_allowed = df_opponent_game_logs_filtered.loc[df_opponent_game_logs_filtered['team_name'] == team_name, 'rush_yds'].mean()
         results_rushing_yards_allowed.append({'Team': team.upper(), 'Avg Rushing Yards Allowed': avg_rushing_yards_allowed})
     
     # Create DataFrame and sort for chart
     df_rushing_allowed_chart = pd.DataFrame(results_rushing_yards_allowed)
-    df_rushing_allowed_chart_sorted = df_rushing_allowed_chart.sort_values(by='Avg Rushing Yards Allowed', ascending=True)
+    df_rushing_allowed_chart_sorted = df_rushing_allowed_chart.sort_values(by='Avg Rushing Yards Allowed', ascending=False)
     
     # Create horizontal bar chart
     fig = px.bar(
@@ -552,10 +541,11 @@ with col2:
         height=800,
         xaxis_title="Rushing Yards Allowed per Game",
         yaxis_title="Teams",
-        yaxis={'categoryorder':'total ascending'},
+        yaxis={'categoryorder':'total descending'},
         showlegend=False,
         coloraxis_showscale=False
     )
+    fig.update_yaxes(autorange="reversed")
     st.plotly_chart(fig, use_container_width=True)
     
     # Top 5 Teams Allowing the Fewest Rushing Yards per Game
