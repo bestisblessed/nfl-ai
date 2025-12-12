@@ -5,12 +5,73 @@ import os
 import glob
 import json
 import re
+from typing import Any, List, Tuple
 from utils.footer import render_footer
 from utils.session_state import persistent_selectbox
 
 PAGE_KEY_PREFIX = "weekly_projections"
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+
+def format_matchup_time(start_time: Any = None, date_value: Any = None, time_value: Any = None) -> str:
+    timestamp = None
+    if pd.notna(start_time):
+        timestamp = pd.to_datetime(start_time, errors='coerce')
+    else:
+        components = []
+        if pd.notna(date_value):
+            components.append(str(date_value))
+        if pd.notna(time_value):
+            components.append(str(time_value))
+        if components:
+            combined = " ".join(components)
+            timestamp = pd.to_datetime(combined, errors='coerce')
+    if timestamp is None or pd.isna(timestamp) or timestamp == pd.Timestamp.max:
+        return ""
+    time_str = timestamp.strftime("%I:%M %p").lstrip("0")
+    day_str = timestamp.strftime("%a")
+    return f"{day_str} {time_str}"
+
+
+def build_matchup_option(matchup: str, time_label: str = "") -> Tuple[str, str]:
+    if time_label:
+        display = f"{matchup} · {time_label}"
+    else:
+        display = matchup
+    return matchup, display
+
+
+def option_display_label(option: Any) -> str:
+    if isinstance(option, tuple):
+        return option[1]
+    return str(option)
+
+def format_start_time_label(time_value: Any) -> str:
+    if not pd.notna(time_value):
+        return ""
+    try:
+        timestamp = pd.to_datetime(time_value)
+    except Exception:
+        return ""
+    if isinstance(timestamp, pd.Timestamp) and timestamp == pd.Timestamp.max:
+        return ""
+    time_str = timestamp.strftime("%I:%M %p").lstrip("0")
+    return time_str
+
+
+def build_matchup_option(matchup: str, time_label: str = "") -> Tuple[str, str]:
+    if time_label:
+        display = f"{matchup} · {time_label}"
+    else:
+        display = matchup
+    return matchup, display
+
+
+def option_display_label(option: Any) -> str:
+    if isinstance(option, tuple):
+        return option[1]
+    return str(option)
 
 # Load game times from odds JSON files
 @st.cache_data
@@ -219,8 +280,8 @@ game_times = load_game_times()
 week_games_df = load_games_for_week(int(selected_week))
 
 # Create matchup options - prioritize Games.csv, then upcoming_games.csv, then projections data
+matchups: List[Tuple[str, str]] = []
 if not week_games_df.empty and "home_team" in week_games_df.columns and "away_team" in week_games_df.columns:
-    # Use Games.csv to get correct home/away designation and sort by start time
     week_games_df = week_games_df.copy()
     if 'date' in week_games_df.columns and 'gametime' in week_games_df.columns:
         week_games_df['start_time'] = pd.to_datetime(
@@ -229,39 +290,34 @@ if not week_games_df.empty and "home_team" in week_games_df.columns and "away_te
         )
         week_games_df['start_time'] = week_games_df['start_time'].fillna(pd.Timestamp.max)
         week_games_df = week_games_df.sort_values(['start_time', 'home_team', 'away_team'])
-    matchups = [
-        f"{row['away_team']} @ {row['home_team']}"
-        for _, row in week_games_df.iterrows()
-    ]
+    for _, row in week_games_df.iterrows():
+        matchup = f"{row['away_team']} @ {row['home_team']}"
+        time_label = format_matchup_time(start_time=row.get('start_time'))
+        matchups.append(build_matchup_option(matchup, time_label))
 elif not upcoming_games_df.empty:
-    # Fallback: use upcoming_games.csv with time info for sorting
     games_list = []
     for _, row in upcoming_games_df.iterrows():
         away, home = row['away_team'], row['home_team']
         matchup_str = f"{away} @ {home}"
-        
-        # Try to find time from odds data
         time_info = None
         for key, value in game_times.items():
             teams_in_key = [t.strip() for t in re.split(r'\s+vs\s+', key, flags=re.IGNORECASE)]
             if len(teams_in_key) == 2:
                 time_info = value
                 break
-        
         games_list.append({
             'matchup': matchup_str,
             'time': time_info['time'] if time_info else '',
             'date': time_info['date'] if time_info else '',
             'sort_key': (time_info['date'] if time_info else '', time_info['time'] if time_info else '')
         })
-    
-    # Sort by date and time
     games_list.sort(key=lambda x: x['sort_key'])
-    matchups = [g['matchup'] for g in games_list]
+    for entry in games_list:
+        time_label = format_matchup_time(date_value=entry.get('date'), time_value=entry.get('time'))
+        matchups.append(build_matchup_option(entry['matchup'], time_label))
 else:
-    # Final fallback: create matchups from projections data
-    matchups = []
     matchup_set = set()
+    fallback_options = []
     for _, row in projections_df.iterrows():
         team1, team2 = row['team'], row['opp']
         matchup = games_mapping.get((team1, team2))
@@ -272,17 +328,20 @@ else:
             matchup = f"{team1_sorted} @ {team2_sorted}"
         if matchup not in matchup_set:
             matchup_set.add(matchup)
-            matchups.append(matchup)
-    matchups = sorted(matchups)
+            fallback_options.append(build_matchup_option(matchup))
+    matchups = sorted(fallback_options, key=lambda option: option[1])
 
-selected_matchup = persistent_selectbox(
+selected_matchup_option = persistent_selectbox(
     "Game:",
     options=matchups,
     page=PAGE_KEY_PREFIX,
     widget="matchup",
     default=matchups[0] if matchups else None,
     container=st.sidebar,
+    format_func=option_display_label,
 )
+selected_matchup_key = selected_matchup_option[0] if selected_matchup_option else None
+selected_matchup_label = selected_matchup_option[1] if selected_matchup_option else None
 st.sidebar.write("")
 st.sidebar.write("")
 
@@ -310,8 +369,8 @@ with st.sidebar:
 
 
 # Apply matchup filter
-if selected_matchup:
-    team1, team2 = selected_matchup.split(" @ ")
+if selected_matchup_key:
+    team1, team2 = selected_matchup_key.split(" @ ")
     filtered_df = projections_df[
         ((projections_df['team'] == team1) & (projections_df['opp'] == team2)) |
         ((projections_df['team'] == team2) & (projections_df['opp'] == team1))
@@ -320,6 +379,7 @@ else:
     filtered_df = projections_df.copy()
 
 # Main data display
+matchup_heading = selected_matchup_label or selected_matchup_key or "Projections"
 st.markdown(f"""
     <div style='background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
                         padding: 1px;
@@ -327,8 +387,8 @@ st.markdown(f"""
                         margin: 10px 0 25px 0;
                         text-align: center;
                         box-shadow: 0 4px 6px rgba(0,0,0,0.1);'>
-        <h2 style='color: white; margin: 0; font-size: 2em; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);'>
-            {selected_matchup} Projections
+            <h2 style='color: white; margin: 0; font-size: 2em; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);'>
+                {matchup_heading} Projections
         </h2>
     </div>
     """,
