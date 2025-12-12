@@ -179,6 +179,30 @@ def load_upcoming_games_with_times():
 
 
 @st.cache_data
+def load_questionable_players(week: int) -> set[str]:
+    """Load players marked as Questionable in the weekly complete props report."""
+
+    questionable_players: set[str] = set()
+    txt_path = os.path.join(PROJECTIONS_DIR, f"week{week}_complete_props_report.txt")
+    html_path = os.path.join(PROJECTIONS_DIR, f"week{week}_complete_props_report.html")
+
+    def extract_players(text: str) -> None:
+        matches = re.findall(
+            r"([A-Za-z0-9'.-]+(?:\s+[A-Za-z0-9'.-]+)*)\s+\(Questionable\)", text
+        )
+        questionable_players.update(name.strip() for name in matches)
+
+    if os.path.exists(txt_path):
+        with open(txt_path, "r", encoding="utf-8") as file:
+            extract_players(file.read())
+    elif os.path.exists(html_path):
+        with open(html_path, "r", encoding="utf-8") as file:
+            extract_players(file.read())
+
+    return questionable_players
+
+
+@st.cache_data
 def load_games_for_week(week: int) -> pd.DataFrame:
     """Load games from Games.csv for a specific week in season 2025"""
     games_file = os.path.join(BASE_DIR, "data", "Games.csv")
@@ -288,6 +312,8 @@ try:
 except FileNotFoundError as exc:
     st.error(str(exc))
     st.stop()
+
+questionable_players = load_questionable_players(selected_week_number)
 
 value_opportunities["bookmaker"] = value_opportunities["bookmaker"].fillna("-")
 value_opportunities["side"] = value_opportunities["side"].fillna("-")
@@ -479,7 +505,24 @@ if selected_game != "All Games":
         )
         if display_df.empty:
             return display_df
-        
+
+        if questionable_players:
+            def add_questionable_tag(name: str):
+                if pd.isna(name):
+                    return name
+                name_str = str(name).strip()
+                if "(Q)" in name_str:
+                    return name_str
+                if "(Questionable)" in name_str:
+                    return name_str.replace("(Questionable)", "(Q)")
+                return (
+                    f"{name_str} (Q)"
+                    if name_str in questionable_players
+                    else name_str
+                )
+
+            display_df["Player"] = display_df["Player"].apply(add_questionable_tag)
+
         # Add emoji indicators to individual player rows based on edge_yards
         thresholds = YARD_THRESHOLDS.get(prop_type)
         if thresholds is not None:

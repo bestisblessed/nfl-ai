@@ -11,6 +11,7 @@ from utils.session_state import persistent_selectbox
 PAGE_KEY_PREFIX = "weekly_projections"
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+PROJECTIONS_DIR = os.path.join(BASE_DIR, "data", "projections")
 
 # Load game times from odds JSON files
 @st.cache_data
@@ -89,6 +90,41 @@ def load_upcoming_games():
             games_mapping[(away, home)] = f"{away} @ {home}"
         return games_mapping, games_df
     return {}, pd.DataFrame()
+
+
+@st.cache_data
+def load_questionable_players(week: int) -> set[str]:
+    """Load players marked as Questionable in the weekly complete props report."""
+
+    questionable_players: set[str] = set()
+    txt_path = os.path.join(PROJECTIONS_DIR, f"week{week}_complete_props_report.txt")
+    html_path = os.path.join(PROJECTIONS_DIR, f"week{week}_complete_props_report.html")
+
+    def extract_players(text: str) -> None:
+        matches = re.findall(
+            r"([A-Za-z0-9'.-]+(?:\s+[A-Za-z0-9'.-]+)*)\s+\(Questionable\)", text
+        )
+        questionable_players.update(name.strip() for name in matches)
+
+    if os.path.exists(txt_path):
+        with open(txt_path, "r", encoding="utf-8") as file:
+            extract_players(file.read())
+    elif os.path.exists(html_path):
+        with open(html_path, "r", encoding="utf-8") as file:
+            extract_players(file.read())
+
+    return questionable_players
+
+
+def add_questionable_tag(name: str, questionable_players: set[str]):
+    if pd.isna(name):
+        return name
+    name_str = str(name).strip()
+    if "(Q)" in name_str:
+        return name_str
+    if "(Questionable)" in name_str:
+        return name_str.replace("(Questionable)", "(Q)")
+    return f"{name_str} (Q)" if name_str in questionable_players else name_str
 
 # Page configuration
 st.set_page_config(
@@ -318,6 +354,11 @@ if selected_matchup:
     ].copy()
 else:
     filtered_df = projections_df.copy()
+
+questionable_players = load_questionable_players(int(selected_week))
+filtered_df["full_name"] = filtered_df["full_name"].apply(
+    lambda name: add_questionable_tag(name, questionable_players)
+)
 
 # Main data display
 st.markdown(f"""
