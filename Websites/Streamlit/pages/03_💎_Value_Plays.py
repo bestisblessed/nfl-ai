@@ -190,11 +190,11 @@ def load_games_for_week(week: int) -> pd.DataFrame:
             games_df['season'] = pd.to_numeric(games_df['season'], errors='coerce')
             # Filter by season 2025 and week
             week_games = games_df[
-                (games_df['season'] == 2025) & 
+                (games_df['season'] == 2025) &
                 (games_df['week'] == week)
             ]
             if not week_games.empty:
-                result = week_games[['home_team', 'away_team']].drop_duplicates()
+                result = week_games[['home_team', 'away_team', 'date', 'gametime']].drop_duplicates()
                 if not result.empty:
                     return result
             return pd.DataFrame()
@@ -298,12 +298,20 @@ value_opportunities["edge_yards"] = value_opportunities["edge_yards"].fillna(0.0
 week_games_df = load_games_for_week(selected_week_number)
 
 if not week_games_df.empty and "home_team" in week_games_df.columns and "away_team" in week_games_df.columns:
-    # Use Games.csv to get correct home/away designation
+    # Use Games.csv to get correct home/away designation and sort by start time
+    week_games_df = week_games_df.copy()
+    if 'date' in week_games_df.columns and 'gametime' in week_games_df.columns:
+        week_games_df['start_time'] = pd.to_datetime(
+            week_games_df['date'].astype(str) + " " + week_games_df['gametime'].astype(str),
+            errors='coerce'
+        )
+        week_games_df['start_time'] = week_games_df['start_time'].fillna(pd.Timestamp.max)
+        week_games_df = week_games_df.sort_values(['start_time', 'home_team', 'away_team'])
     games_list = [
         f"{row['away_team']} @ {row['home_team']}"
         for _, row in week_games_df.iterrows()
     ]
-    game_options = ["All Games"] + sorted(games_list)
+    game_options = ["All Games"] + games_list
 elif "team" in value_opportunities.columns and "opp" in value_opportunities.columns:
     # Fallback: create games from team/opp pairs (using abbreviations)
     # Use sorted tuple to ensure uniqueness regardless of order
