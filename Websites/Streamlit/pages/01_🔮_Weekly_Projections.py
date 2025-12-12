@@ -60,11 +60,11 @@ def load_games_for_week(week: int) -> pd.DataFrame:
             games_df['season'] = pd.to_numeric(games_df['season'], errors='coerce')
             # Filter by season 2025 and week
             week_games = games_df[
-                (games_df['season'] == 2025) & 
+                (games_df['season'] == 2025) &
                 (games_df['week'] == week)
             ]
             if not week_games.empty:
-                result = week_games[['home_team', 'away_team']].drop_duplicates()
+                result = week_games[['home_team', 'away_team', 'date', 'gametime']].drop_duplicates()
                 if not result.empty:
                     return result
             return pd.DataFrame()
@@ -220,12 +220,19 @@ week_games_df = load_games_for_week(int(selected_week))
 
 # Create matchup options - prioritize Games.csv, then upcoming_games.csv, then projections data
 if not week_games_df.empty and "home_team" in week_games_df.columns and "away_team" in week_games_df.columns:
-    # Use Games.csv to get correct home/away designation
+    # Use Games.csv to get correct home/away designation and sort by start time
+    week_games_df = week_games_df.copy()
+    if 'date' in week_games_df.columns and 'gametime' in week_games_df.columns:
+        week_games_df['start_time'] = pd.to_datetime(
+            week_games_df['date'].astype(str) + " " + week_games_df['gametime'].astype(str),
+            errors='coerce'
+        )
+        week_games_df['start_time'] = week_games_df['start_time'].fillna(pd.Timestamp.max)
+        week_games_df = week_games_df.sort_values(['start_time', 'home_team', 'away_team'])
     matchups = [
         f"{row['away_team']} @ {row['home_team']}"
         for _, row in week_games_df.iterrows()
     ]
-    matchups = sorted(matchups)
 elif not upcoming_games_df.empty:
     # Fallback: use upcoming_games.csv with time info for sorting
     games_list = []
