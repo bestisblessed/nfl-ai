@@ -69,6 +69,46 @@ def load_predictions(week_num):
     if all_dfs:
         combined_df = pd.concat(all_dfs, ignore_index=True)
         print(f"Total combined predictions: {len(combined_df)}")
+
+        injured_players = set()
+        for injured_path in [
+            "injured_players.csv",
+            "data/injured_players.csv",
+            "../injured_players.csv",
+            "../data/injured_players.csv",
+        ]:
+            if os.path.exists(injured_path):
+                try:
+                    loaded = (
+                        pd.read_csv(injured_path)["full_name"]
+                        .dropna()
+                        .astype(str)
+                        .str.strip()
+                    )
+                    if not loaded.empty:
+                        injured_players = set(loaded.tolist())
+                        print(
+                            f"Loaded {len(injured_players)} injured players from {injured_path}"
+                        )
+                    break
+                except Exception as exc:
+                    print(
+                        f"Warning: failed to load injured players from {injured_path}: {exc}"
+                    )
+
+        if injured_players and not combined_df.empty:
+            pre_filter = len(combined_df)
+            mask = ~(
+                combined_df["full_name"].isin(injured_players)
+                & combined_df["prop_type"].isin(["Receiving Yards", "Rushing Yards"])
+            )
+            combined_df = combined_df[mask].reset_index(drop=True)
+            removed = pre_filter - len(combined_df)
+            if removed:
+                print(
+                    f"Removed {removed} injured receiving/rushing props from combined report"
+                )
+
         return combined_df
     else:
         print("No prediction data found!")
