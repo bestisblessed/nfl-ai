@@ -240,6 +240,20 @@ def load_questionable_players(week: int) -> set[str]:
     return questionable_players
 
 
+def append_questionable_tag(name: str, questionable_players: set[str]) -> str:
+    """Append a compact questionable tag to player names when applicable."""
+
+    if pd.isna(name):
+        return name
+
+    name_str = str(name).strip()
+
+    if "(Q)" in name_str or "(Questionable)" in name_str:
+        return name_str
+
+    return f"{name_str} (Q)" if name_str in questionable_players else name_str
+
+
 @st.cache_data
 def load_games_for_week(week: int) -> pd.DataFrame:
     """Load games from Games.csv for a specific week in season 2025"""
@@ -558,19 +572,9 @@ if selected_game_key and selected_game_key != "All Games":
             return display_df
 
         if questionable_players:
-            def add_questionable_tag(name: str):
-                if pd.isna(name):
-                    return name
-                name_str = str(name).strip()
-                if "(Questionable)" in name_str:
-                    return name_str
-                return (
-                    f"{name_str} (Questionable)"
-                    if name_str in questionable_players
-                    else name_str
-                )
-
-            display_df["Player"] = display_df["Player"].apply(add_questionable_tag)
+            display_df["Player"] = display_df["Player"].apply(
+                lambda name: append_questionable_tag(name, questionable_players)
+            )
 
         # Add emoji indicators to individual player rows based on edge_yards
         thresholds = YARD_THRESHOLDS.get(prop_type)
@@ -937,7 +941,7 @@ else:
     for tab_label, tab in zip(all_prop_types, prop_type_tabs):
         with tab:
             subset = value_opportunities[value_opportunities["prop_type"] == tab_label].copy()
-            
+
             if subset.empty:
                 st.info("No value plays available for this prop type.")
                 continue
@@ -958,6 +962,11 @@ else:
                     lambda yards: "💎" if pd.notna(yards) and yards >= high_thr else (
                         "⚡️" if pd.notna(yards) and yards >= low_thr else ""
                     )
+                )
+
+            if questionable_players:
+                subset["player"] = subset["player"].apply(
+                    lambda name: append_questionable_tag(name, questionable_players)
                 )
             
             display_df = subset[

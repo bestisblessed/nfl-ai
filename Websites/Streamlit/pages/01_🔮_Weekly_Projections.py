@@ -12,6 +12,7 @@ from utils.session_state import persistent_selectbox
 PAGE_KEY_PREFIX = "weekly_projections"
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+PROJECTIONS_DIR = os.path.join(BASE_DIR, "data", "projections")
 
 
 def format_matchup_time(start_time: Any = None, date_value: Any = None, time_value: Any = None) -> str:
@@ -151,6 +152,44 @@ def load_upcoming_games():
         return games_mapping, games_df
     return {}, pd.DataFrame()
 
+
+@st.cache_data
+def load_questionable_players(week: int) -> set[str]:
+    """Load players marked as Questionable in the weekly complete props report."""
+
+    questionable_players: set[str] = set()
+    txt_path = os.path.join(PROJECTIONS_DIR, f"week{week}_complete_props_report.txt")
+    html_path = os.path.join(PROJECTIONS_DIR, f"week{week}_complete_props_report.html")
+
+    def extract_players(text: str) -> None:
+        matches = re.findall(
+            r"([A-Za-z0-9'.-]+(?:\s+[A-Za-z0-9'.-]+)*)\s+\(Questionable\)", text
+        )
+        questionable_players.update(name.strip() for name in matches)
+
+    if os.path.exists(txt_path):
+        with open(txt_path, "r", encoding="utf-8") as file:
+            extract_players(file.read())
+    elif os.path.exists(html_path):
+        with open(html_path, "r", encoding="utf-8") as file:
+            extract_players(file.read())
+
+    return questionable_players
+
+
+def append_questionable_tag(name: str, questionable_players: set[str]) -> str:
+    """Append a compact questionable tag to player names when applicable."""
+
+    if pd.isna(name):
+        return name
+
+    name_str = str(name).strip()
+
+    if "(Q)" in name_str or "(Questionable)" in name_str:
+        return name_str
+
+    return f"{name_str} (Q)" if name_str in questionable_players else name_str
+
 # Page configuration
 st.set_page_config(
     page_title="🔮 NFL Game Projections",
@@ -199,7 +238,7 @@ st.markdown("""
 @st.cache_data
 def load_projections_data():
     """Load and process projections data from CSV files"""
-    projections_dir = os.path.join(BASE_DIR, "data/projections")
+    projections_dir = PROJECTIONS_DIR
 
     # Find all projection files
     projection_files = glob.glob(os.path.join(projections_dir, "week*_all_props_summary.csv"))
@@ -222,7 +261,7 @@ def load_projections_data():
 @st.cache_data
 def get_week_projections(week_num):
     """Get projections data for a specific week"""
-    file_path = os.path.join(BASE_DIR, f"data/projections/week{week_num}_all_props_summary.csv")
+    file_path = os.path.join(PROJECTIONS_DIR, f"week{week_num}_all_props_summary.csv")
 
     if not os.path.exists(file_path):
         return None
@@ -271,6 +310,13 @@ projections_df = get_week_projections(int(selected_week))
 if projections_df is None:
     st.error(f"No data available for {selected_week_display}")
     st.stop()
+
+questionable_players = load_questionable_players(int(selected_week))
+
+if questionable_players:
+    projections_df["full_name"] = projections_df["full_name"].apply(
+        lambda name: append_questionable_tag(name, questionable_players)
+    )
 
 # Load games mapping for correct home/away designation
 games_mapping, upcoming_games_df = load_upcoming_games()
@@ -353,7 +399,7 @@ with st.sidebar:
         unsafe_allow_html=True
     )
     html_filename = f"week{selected_week}_complete_props_report.html"
-    html_path = os.path.join(BASE_DIR, "data/projections", html_filename)
+    html_path = os.path.join(PROJECTIONS_DIR, html_filename)
 
     if os.path.exists(html_path):
         with open(html_path, "rb") as html_file:
@@ -563,7 +609,7 @@ col1, col2, col3 = st.columns([1, 1, 1])
 with col2:
     # HTML report download button at bottom
     html_filename = f"week{selected_week}_complete_props_report.html"
-    html_path = os.path.join(BASE_DIR, "data/projections", html_filename)
+    html_path = os.path.join(PROJECTIONS_DIR, html_filename)
 
     if os.path.exists(html_path):
         with open(html_path, "rb") as html_file:
