@@ -34,8 +34,7 @@ st.markdown(f"""
     unsafe_allow_html=True
 )
 
-# Always use 2025 data
-selected_season = 2025
+# Always use the most recent season available
 
 # Load data using cached function
 @st.cache_data(show_spinner=False)
@@ -138,8 +137,27 @@ def get_player_position(player_name: str | None) -> str | None:
 df_player_data['year'] = df_player_data['game_id'].str.split('_').str[0].astype(int)
 df_player_data['week'] = df_player_data['game_id'].str.split('_').str[1].astype(int)
 
+# Season selector removed; use most recent available year
+available_years = df_player_data['year'].dropna()
+selected_season = int(available_years.max()) if not available_years.empty else 2025
+
 # Filter to selected season (all positions now available)
 df_player_data_filtered = df_player_data[df_player_data['year'] == selected_season]
+
+
+def get_player_season_data(player_name: str, target_year: int) -> tuple[pd.DataFrame | None, int | None]:
+    """Return season data for the player for the target year or fallback to their latest season."""
+    player_data = df_player_data[df_player_data['player'] == player_name]
+    if player_data.empty:
+        return None, None
+
+    season_data = player_data[player_data['year'] == target_year]
+    if season_data.empty:
+        latest_year = int(player_data['year'].max())
+        season_data = player_data[player_data['year'] == latest_year]
+        return season_data, latest_year
+
+    return season_data, target_year
 
 # Helper function to get recent games data (current season + previous season if needed)
 def get_recent_games_data(player_name, num_games=10):
@@ -172,10 +190,12 @@ st.divider()
 # Fetch player names from CSV data and headshots from database/roster
 def fetch_player_names_and_image():
     # Get all players from the full dataset
-    all_players_data = df_player_data[df_player_data['year'] == selected_season]
+    all_players_data = df_player_data[
+        df_player_data['year'].isin([selected_season, selected_season - 1])
+    ]
     
     if all_players_data.empty:
-        st.warning(f"No player data available for {selected_season} season yet. Please select 2024 to view player statistics.")
+        st.warning(f"No player data available for {selected_season} season yet.")
         return None, None
     
     # Get unique player names from CSV
@@ -367,18 +387,18 @@ with spacer_col:
 
 with col2:
     if player_name is not None:
-        # Add overall stats metrics above the chart (2025 season only)
-        season_2025_data = df_player_data[(df_player_data['player'] == player_name) & (df_player_data['year'] == selected_season)]
+        season_data, season_year = get_player_season_data(player_name, selected_season)
         
-        if not season_2025_data.empty:
+        if season_data is not None and not season_data.empty:
+            season_label = season_year if season_year is not None else selected_season
             st.markdown("")
-            st.markdown("#### 2025 Season Stats")
+            st.markdown(f"#### {season_label} Season Stats")
             st.markdown("")
             
             # Determine player position for metric context
             position_for_metrics = player_position
-            if position_for_metrics is None and 'position' in season_2025_data.columns:
-                non_null_positions = season_2025_data['position'].dropna()
+            if position_for_metrics is None and 'position' in season_data.columns:
+                non_null_positions = season_data['position'].dropna()
                 if not non_null_positions.empty:
                     position_for_metrics = non_null_positions.iloc[-1]
 
@@ -386,37 +406,37 @@ with col2:
                 metric_col1, metric_col2, metric_col3, metric_col4 = st.columns(4)
 
                 with metric_col1:
-                    total_pass_yds = season_2025_data['pass_yds'].sum() if 'pass_yds' in season_2025_data.columns else 0
+                    total_pass_yds = season_data['pass_yds'].sum() if 'pass_yds' in season_data.columns else 0
                     st.metric(
                         label="Total Pass Yards",
                         value=f"{total_pass_yds:.0f}",
-                        help="Total passing yards (2025)",
+                        help=f"Total passing yards ({season_label})",
                     )
 
                 with metric_col2:
-                    avg_pass_yds_per_game = season_2025_data['pass_yds'].mean() if 'pass_yds' in season_2025_data.columns else 0
+                    avg_pass_yds_per_game = season_data['pass_yds'].mean() if 'pass_yds' in season_data.columns else 0
                     st.metric(
                         label="Avg Pass Yds/Game",
                         value=f"{avg_pass_yds_per_game:.1f}",
-                        help="Average passing yards per game (2025)",
+                        help=f"Average passing yards per game ({season_label})",
                     )
 
                 with metric_col3:
-                    total_pass_tds = season_2025_data['pass_td'].sum() if 'pass_td' in season_2025_data.columns else 0
+                    total_pass_tds = season_data['pass_td'].sum() if 'pass_td' in season_data.columns else 0
                     st.metric(
                         label="Pass TDs",
                         value=f"{total_pass_tds:.0f}",
-                        help="Total passing touchdowns (2025)",
+                        help=f"Total passing touchdowns ({season_label})",
                     )
 
                 with metric_col4:
-                    total_cmp = season_2025_data['pass_cmp'].sum() if 'pass_cmp' in season_2025_data.columns else 0
-                    total_att = season_2025_data['pass_att'].sum() if 'pass_att' in season_2025_data.columns else 0
+                    total_cmp = season_data['pass_cmp'].sum() if 'pass_cmp' in season_data.columns else 0
+                    total_att = season_data['pass_att'].sum() if 'pass_att' in season_data.columns else 0
                     completion_pct = (total_cmp / total_att * 100) if total_att else 0
                     st.metric(
                         label="Completion %",
                         value=f"{completion_pct:.1f}%",
-                        help="Completion percentage (2025)",
+                        help=f"Completion percentage ({season_label})",
                     )
 
             elif position_for_metrics == 'RB':
@@ -424,60 +444,60 @@ with col2:
                 metric_col1, metric_col2, metric_col3 = st.columns(3)
 
                 with metric_col1:
-                    total_rush_yds = season_2025_data['rush_yds'].sum() if 'rush_yds' in season_2025_data.columns else 0
+                    total_rush_yds = season_data['rush_yds'].sum() if 'rush_yds' in season_data.columns else 0
                     st.metric(
                         label="Total Rush Yards",
                         value=f"{total_rush_yds:.0f}",
-                        help="Total rushing yards (2025)"
+                        help=f"Total rushing yards ({season_label})"
                     )
 
                 with metric_col2:
-                    avg_rush_yds_per_game = season_2025_data['rush_yds'].mean() if 'rush_yds' in season_2025_data.columns else 0
+                    avg_rush_yds_per_game = season_data['rush_yds'].mean() if 'rush_yds' in season_data.columns else 0
                     st.metric(
                         label="Avg Rush Yds/Game",
                         value=f"{avg_rush_yds_per_game:.1f}",
-                        help="Average rushing yards per game (2025)"
+                        help=f"Average rushing yards per game ({season_label})"
                     )
 
                 with metric_col3:
-                    total_rush_tds = season_2025_data['rush_td'].sum() if 'rush_td' in season_2025_data.columns else 0
-                    total_rec_tds = season_2025_data['rec_td'].sum() if 'rec_td' in season_2025_data.columns else 0
+                    total_rush_tds = season_data['rush_td'].sum() if 'rush_td' in season_data.columns else 0
+                    total_rec_tds = season_data['rec_td'].sum() if 'rec_td' in season_data.columns else 0
                     total_tds = total_rush_tds + total_rec_tds
                     st.metric(
                         label="Total TDs",
                         value=f"{total_tds:.0f}",
-                        help="Total rushing + receiving touchdowns (2025)"
+                        help=f"Total rushing + receiving touchdowns ({season_label})"
                     )
             else:
                 # Show receiving stats for WR/TE and other positions
                 metric_col1, metric_col2, metric_col3 = st.columns(3)
 
                 with metric_col1:
-                    total_rec_yds = season_2025_data['rec_yds'].sum() if 'rec_yds' in season_2025_data.columns else 0
+                    total_rec_yds = season_data['rec_yds'].sum() if 'rec_yds' in season_data.columns else 0
                     st.metric(
                         label="Total Rec Yards",
                         value=f"{total_rec_yds:.0f}",
-                        help="Total receiving yards (2025)"
+                        help=f"Total receiving yards ({season_label})"
                     )
 
                 with metric_col2:
-                    avg_rec_per_game = season_2025_data['rec'].mean() if 'rec' in season_2025_data.columns else 0
+                    avg_rec_per_game = season_data['rec'].mean() if 'rec' in season_data.columns else 0
                     st.metric(
                         label="Avg Rec/Game",
                         value=f"{avg_rec_per_game:.1f}",
-                        help="Average receptions per game (2025)"
+                        help=f"Average receptions per game ({season_label})"
                     )
 
                 with metric_col3:
-                    total_tds = season_2025_data['rec_td'].sum() if 'rec_td' in season_2025_data.columns else 0
+                    total_tds = season_data['rec_td'].sum() if 'rec_td' in season_data.columns else 0
                     st.metric(
                         label="Total TDs",
                         value=f"{total_tds:.0f}",
-                        help="Total receiving touchdowns (2025)"
+                        help=f"Total receiving touchdowns ({season_label})"
                     )
         else:
-            st.markdown("#### 📊 2025 Season Stats")
-            st.info("No 2025 season data available yet")
+            st.markdown("#### 📊 Season Stats")
+            st.info("No season data available for this player yet")
         
         # Add some spacing before the chart
         st.markdown("")
