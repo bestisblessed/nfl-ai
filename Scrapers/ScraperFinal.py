@@ -1212,8 +1212,8 @@ for year in range(2010, 2026):
             row_data.append(week_num)
             
             # For 2025: skip if week already exists
-            if year == 2025 and week_num in existing_weeks:
-                continue
+            # if year == 2025 and week_num in existing_weeks:
+            #     continue
             
             for td in tr.find_all('td'):
                 row_data.append(td.text.strip())
