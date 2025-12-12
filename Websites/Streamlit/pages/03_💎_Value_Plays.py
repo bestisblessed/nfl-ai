@@ -562,10 +562,12 @@ if selected_game_key and selected_game_key != "All Games":
                 if pd.isna(name):
                     return name
                 name_str = str(name).strip()
-                if "(Questionable)" in name_str:
+                if "(Q)" in name_str:
                     return name_str
+                if "(Questionable)" in name_str:
+                    return name_str.replace("(Questionable)", "(Q)")
                 return (
-                    f"{name_str} (Questionable)"
+                    f"{name_str} (Q)"
                     if name_str in questionable_players
                     else name_str
                 )
