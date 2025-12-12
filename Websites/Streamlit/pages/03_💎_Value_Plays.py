@@ -3,7 +3,7 @@ import hashlib
 import json
 import os
 import re
-from typing import List, Optional, Tuple
+from typing import Any, List, Optional, Tuple
 import numpy as np
 import pandas as pd
 import streamlit as st
@@ -19,6 +19,44 @@ YARD_THRESHOLDS = {
     "Receiving Yards": (15.0, 25.0),
     "Rushing Yards": (15.0, 25.0),
 }
+
+
+def format_game_time_label(
+    start_time: Any = None,
+    date_value: Any = None,
+    time_value: Any = None,
+) -> str:
+    timestamp = None
+    if pd.notna(start_time):
+        timestamp = pd.to_datetime(start_time, errors="coerce")
+    else:
+        components = []
+        if pd.notna(date_value):
+            components.append(str(date_value))
+        if pd.notna(time_value):
+            components.append(str(time_value))
+        if components:
+            combined = " ".join(components)
+            timestamp = pd.to_datetime(combined, errors="coerce")
+    if timestamp is None or pd.isna(timestamp) or timestamp == pd.Timestamp.max:
+        return ""
+    time_str = timestamp.strftime("%I:%M %p").lstrip("0")
+    day_str = timestamp.strftime("%a")
+    return f"{day_str} {time_str}"
+
+
+def build_game_option_label(matchup: str, time_label: str = "") -> Tuple[str, str]:
+    if time_label:
+        display = f"{matchup} · {time_label}"
+    else:
+        display = matchup
+    return matchup, display
+
+
+def option_display_label(option: Any) -> str:
+    if isinstance(option, tuple):
+        return option[1]
+    return str(option)
 
 st.set_page_config(
     page_title="💎 Value Play Finder",
@@ -174,7 +212,7 @@ def load_upcoming_games_with_times():
         
         # Sort by date and time
         games_list.sort(key=lambda x: x['sort_key'])
-        return [g['matchup'] for g in games_list], games_df
+        return games_list, games_df
     return [], pd.DataFrame()
 
 
@@ -324,7 +362,6 @@ value_opportunities["edge_yards"] = value_opportunities["edge_yards"].fillna(0.0
 week_games_df = load_games_for_week(selected_week_number)
 
 if not week_games_df.empty and "home_team" in week_games_df.columns and "away_team" in week_games_df.columns:
-    # Use Games.csv to get correct home/away designation and sort by start time
     week_games_df = week_games_df.copy()
     if 'date' in week_games_df.columns and 'gametime' in week_games_df.columns:
         week_games_df['start_time'] = pd.to_datetime(
@@ -333,49 +370,63 @@ if not week_games_df.empty and "home_team" in week_games_df.columns and "away_te
         )
         week_games_df['start_time'] = week_games_df['start_time'].fillna(pd.Timestamp.max)
         week_games_df = week_games_df.sort_values(['start_time', 'home_team', 'away_team'])
-    games_list = [
-        f"{row['away_team']} @ {row['home_team']}"
-        for _, row in week_games_df.iterrows()
-    ]
-    game_options = ["All Games"] + games_list
+    matchup_options = []
+    for _, row in week_games_df.iterrows():
+        matchup = f"{row['away_team']} @ {row['home_team']}"
+        time_label = format_game_time_label(start_time=row.get('start_time'))
+        matchup_options.append(build_game_option_label(matchup, time_label))
+    game_options = [build_game_option_label("All Games")]
+    game_options.extend(matchup_options)
 elif "team" in value_opportunities.columns and "opp" in value_opportunities.columns:
-    # Fallback: create games from team/opp pairs (using abbreviations)
-    # Use sorted tuple to ensure uniqueness regardless of order
     games_set = set()
+    matchup_options = []
     for _, row in value_opportunities.iterrows():
         if pd.notna(row.get("team")) and pd.notna(row.get("opp")):
             team1, team2 = row['team'], row['opp']
-            # Sort teams alphabetically to create unique pair
             pair = tuple(sorted([team1, team2]))
+            if pair in games_set:
+                continue
             games_set.add(pair)
-    # Format as "Team1 vs Team2" (sorted alphabetically) - fallback format
-    game_options = ["All Games"] + sorted([f"{pair[0]} vs {pair[1]}" for pair in games_set])
+            matchup = f"{pair[0]} vs {pair[1]}"
+            matchup_options.append(build_game_option_label(matchup))
+    game_options = [build_game_option_label("All Games")]
+    game_options.extend(sorted(matchup_options, key=lambda option: option[1]))
 elif "home_team" in value_opportunities.columns and "away_team" in value_opportunities.columns:
-    # Fallback: use home_team/away_team from value_opportunities if available
     games_df = value_opportunities[["home_team", "away_team"]].drop_duplicates()
-    game_options = ["All Games"] + [
-        f"{row['away_team']} @ {row['home_team']}"
-        for _, row in games_df.iterrows()
-    ]
+    matchup_options = []
+    for _, row in games_df.iterrows():
+        matchup = f"{row['away_team']} @ {row['home_team']}"
+        matchup_options.append(build_game_option_label(matchup))
+    game_options = [build_game_option_label("All Games")]
+    game_options.extend(matchup_options)
 else:
-    # Final fallback: use upcoming_games.csv if value_opportunities doesn't have game info
-    game_options_list, upcoming_games_df = load_upcoming_games_with_times()
-    if game_options_list:
-        game_options = ["All Games"] + game_options_list
-    else:
-        game_options = ["All Games"]
+    upcoming_games_list, _ = load_upcoming_games_with_times()
+    matchup_options = []
+    for entry in upcoming_games_list:
+        matchup = entry.get("matchup", "")
+        if matchup:
+            time_label = format_game_time_label(
+                date_value=entry.get("date"),
+                time_value=entry.get("time"),
+            )
+            matchup_options.append(build_game_option_label(matchup, time_label))
+    game_options = [build_game_option_label("All Games")]
+    game_options.extend(matchup_options)
 
 all_prop_types = sorted(value_opportunities["prop_type"].dropna().unique())
 
 # Game selector in sidebar
-selected_game = persistent_selectbox(
+selected_game_option = persistent_selectbox(
     "Game:",
     options=game_options,
     page=PAGE_KEY_PREFIX,
     widget="game",
     default=game_options[0] if game_options else None,
     container=st.sidebar,
+    format_func=option_display_label,
 )
+selected_game_key = selected_game_option[0] if selected_game_option else None
+selected_game_label = selected_game_option[1] if selected_game_option else None
 st.sidebar.write("")
 
 # Legend for edge indicators in sidebar
@@ -410,11 +461,11 @@ st.sidebar.write("")
 st.divider()
 
 # Filter by selected game if not "All Games"
-if selected_game != "All Games":
+if selected_game_key and selected_game_key != "All Games":
     team_pairs: List[Tuple[str, str]] = []
-    # Parse the game selection (format: "Away @ Home" with abbreviations)
-    if " @ " in selected_game:
-        away_team_abbrev, home_team_abbrev = selected_game.split(" @ ")
+    game_identifier = selected_game_key
+    if " @ " in game_identifier:
+        away_team_abbrev, home_team_abbrev = game_identifier.split(" @ ")
         team_pairs = [
             (away_team_abbrev, f"{away_team_abbrev} Players"),
             (home_team_abbrev, f"{home_team_abbrev} Players"),
@@ -423,8 +474,8 @@ if selected_game != "All Games":
             ((value_opportunities["team"] == away_team_abbrev) & (value_opportunities["opp"] == home_team_abbrev)) |
             ((value_opportunities["team"] == home_team_abbrev) & (value_opportunities["opp"] == away_team_abbrev))
         ].copy()
-    elif " vs " in selected_game:
-        team1, team2 = selected_game.split(" vs ")
+    elif " vs " in game_identifier:
+        team1, team2 = game_identifier.split(" vs ")
         team_pairs = [
             (team1, f"{team1} Players"),
             (team2, f"{team2} Players"),
@@ -436,7 +487,7 @@ if selected_game != "All Games":
     else:
         game_data = value_opportunities.copy()
     
-    # Show game-specific view organized by position/prop combinations like Weekly Projections
+    matchup_heading = selected_game_label or selected_game_key
     st.markdown(f"""
         <div style='background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
                         padding: 1px;
@@ -445,7 +496,7 @@ if selected_game != "All Games":
                         text-align: center;
                         box-shadow: 0 4px 6px rgba(0,0,0,0.08);'>
             <h2 style='color: white; margin: 0; font-size: 2em; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); letter-spacing: 1px;'>
-                {selected_game}
+                {matchup_heading}
             </h2>
         </div>
         """,
@@ -1072,9 +1123,8 @@ else:
 
 col1, col2, col3 = st.columns([1, 0.5, 1])
 with col2:
-    if selected_game != "All Games":
-        # Clean game name for filename
-        game_filename = selected_game.replace(" @ ", "_at_").replace(" vs ", "_vs_").replace(" ", "_")
+    if selected_game_key and selected_game_key != "All Games":
+        game_filename = selected_game_key.replace(" @ ", "_at_").replace(" vs ", "_vs_").replace(" ", "_")
         filename = f"week{selected_week_number}_{game_filename}_value_opportunities.csv"
     else:
         filename = f"week{selected_week_number}_value_opportunities.csv"
