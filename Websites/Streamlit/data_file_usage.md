@@ -2,7 +2,7 @@
 
 ## 1. Home.py
 # 2010-2025
-- data/all_team_game_logs.csv (2020-2025) ⚠️ MISSING 2010-2019
+- data/all_team_game_logs.csv (2010-2025)
 - data/SR-game-logs/all_teams_game_logs_2024.csv (2024)
 - data/SR-game-logs/all_teams_game_logs_2025.csv (2025)
 - data/odds/nfl_odds_movements.csv
@@ -11,7 +11,7 @@
 - data/Games.csv (2010-2025)
 - data/PlayerStats.csv (2010-2024) ⚠️ MISSING 2025
 - data/all_teams_schedule_and_game_results_merged.csv (2010-2025)
-- data/all_passing_rushing_receiving.csv (2020-2025) ⚠️ MISSING 2010-2019
+- data/all_passing_rushing_receiving.csv (2010-2025)
 - data/player_stats_pfr.csv (2010-2025)
 - data/rosters/*.csv (2010-2025)
 
@@ -20,8 +20,8 @@
 - data/Games.csv (2010-2025)
 - data/PlayerStats.csv (2010-2024) ⚠️ MISSING 2025
 - data/rosters/roster_2025.csv (2025)
-- data/all_team_game_logs.csv (2020-2025) ⚠️ MISSING 2010-2019
-- data/all_defense-game-logs.csv (2020-2025) ⚠️ MISSING 2010-2019
+- data/all_team_game_logs.csv (2010-2025)
+- data/all_defense-game-logs.csv (2010-2025)
 - data/all_redzone.csv (2010-2025)
 
 ## 3. Weekly Projections (01_🔮_Weekly_Projections.py)
@@ -62,36 +62,30 @@
 - data/Teams.csv
 - data/Games.csv (2010-2025)
 - data/PlayerStats.csv (2010-2024) ⚠️ MISSING 2025
-- data/all_team_game_logs.csv (2020-2025) ⚠️ MISSING 2010-2019
+- data/all_team_game_logs.csv (2010-2025)
 - data/all_teams_schedule_and_game_results_merged.csv (2010-2025)
-- data/all_passing_rushing_receiving.csv (2020-2025) ⚠️ MISSING 2010-2019
+- data/all_passing_rushing_receiving.csv (2010-2025)
 - data/Rosters.csv (2010-2025)
-
-**Note:** Page uses `all_passing_rushing_receiving.csv` as primary data source, which only has 2020-2025. For full 2010-2025 support, this file needs 2010-2019 data.
 
 ## 8. Player Trends (06_📈_Player_Trends.py)
 # 2010-2025
 - data/Teams.csv
 - data/Games.csv (2010-2025)
 - data/PlayerStats.csv (2010-2024) ⚠️ MISSING 2025
-- data/all_team_game_logs.csv (2020-2025) ⚠️ MISSING 2010-2019
+- data/all_team_game_logs.csv (2010-2025)
 - data/all_teams_schedule_and_game_results_merged.csv (2010-2025)
-- data/all_passing_rushing_receiving.csv (2020-2025) ⚠️ MISSING 2010-2019
-
-**Note:** Page uses `all_passing_rushing_receiving.csv` as primary data source, which only has 2020-2025. For full 2010-2025 support, this file needs 2010-2019 data.
+- data/all_passing_rushing_receiving.csv (2010-2025)
 
 ## 9. Team Trends (07_📉_Team_Trends.py)
 # 2010-2025
 - data/Teams.csv
 - data/Games.csv (2010-2025)
 - data/PlayerStats.csv (2010-2024) ⚠️ MISSING 2025
-- data/all_team_game_logs.csv (2020-2025) ⚠️ MISSING 2010-2019
+- data/all_team_game_logs.csv (2010-2025)
 - data/all_teams_schedule_and_game_results_merged.csv (2010-2025)
-- data/all_box_scores.csv (2020-2025) ⚠️ MISSING 2010-2019
+- data/all_box_scores.csv (2010-2025)
 - data/SR-game-logs/all_teams_game_logs_2024.csv (2024)
 - data/SR-game-logs/all_teams_game_logs_2025.csv (2025)
-
-**Note:** Page uses `all_box_scores.csv` for 1H/2H analysis, which only has 2020-2025. For full 2010-2025 support, this file needs 2010-2019 data. Also uses year-specific SR-game-logs files for 2024-2025 only.
 
 ## 10. Betting Trends (08_💰_Betting_Trends.py)
 # 2010-2025
@@ -111,10 +105,8 @@
 ## 12. AI Chatbot (10_🤖_AI_Chatbot.py)
 # 2010-2025
 - data/player_stats_pfr.csv (2010-2025)
-- data/all_team_game_logs.csv (2020-2025) ⚠️ MISSING 2010-2019
+- data/all_team_game_logs.csv (2010-2025)
 - data/Rosters.csv (2010-2025)
-
-**Note:** Page uses `all_team_game_logs.csv` which only has 2020-2025. For full 2010-2025 support, this file needs 2010-2019 data.
 
 ## 13. Standings (12_💍_Standings.py)
 # 2010-2025
@@ -128,21 +120,19 @@
 
 ## Summary of Files Missing Years for 2010-2025 Standardization
 
-### Critical Files Missing Years:
-1. **data/PlayerStats.csv**: Missing 2025 (has 2010-2024)
-2. **data/all_team_game_logs.csv**: Missing 2010-2019 (has 2020-2025)
-3. **data/all_passing_rushing_receiving.csv**: Missing 2010-2019 (has 2020-2025)
-4. **data/all_box_scores.csv**: Missing 2010-2019 (has 2020-2025)
-5. **data/all_defense-game-logs.csv**: Missing 2010-2019 (has 2020-2025)
+### Files Missing Years:
+1. **data/PlayerStats.csv**: Missing 2025 (has 2010-2024) ⚠️
 
-### Pages That Would Benefit from Full 2010-2025 Coverage:
-- **Player Dashboard**: Uses `all_passing_rushing_receiving.csv` (primary source) - needs 2010-2019
-- **Player Trends**: Uses `all_passing_rushing_receiving.csv` (primary source) - needs 2010-2019
-- **Team Trends**: Uses `all_box_scores.csv` for 1H/2H analysis - needs 2010-2019
-- **AI Chatbot**: Uses `all_team_game_logs.csv` - needs 2010-2019
-- **Matchup Generator**: Uses `all_team_game_logs.csv` and `all_defense-game-logs.csv` - needs 2010-2019
+### Pages Fully Supporting 2010-2025:
+- **Home**: Uses combined files with full 2010-2025 coverage
+- **Matchup Generator**: Uses combined files with full 2010-2025 coverage
+- **Player Dashboard**: Uses `all_passing_rushing_receiving.csv` with full 2010-2025 coverage
+- **Player Trends**: Uses `all_passing_rushing_receiving.csv` with full 2010-2025 coverage
+- **Team Trends**: Uses combined files with full 2010-2025 coverage
+- **Betting Trends**: Uses Games.csv with full 2010-2025 coverage
+- **Scoring Trends**: Uses player_stats_pfr.csv with full 2010-2025 coverage
+- **AI Chatbot**: Uses combined files with full 2010-2025 coverage
+- **Standings**: Uses Games.csv with full 2010-2025 coverage
 
-### Pages Already Supporting 2010-2025:
-- **Betting Trends**: Only uses Games.csv (has full coverage)
-- **Standings**: Only uses Games.csv (has full coverage)
-- **Scoring Trends**: Uses player_stats_pfr.csv (has full coverage)
+### Note:
+All combined/merged files (`all_team_game_logs.csv`, `all_passing_rushing_receiving.csv`, `all_defense-game-logs.csv`, `all_box_scores.csv`) contain a `season` column with full 2010-2025 coverage. The only file missing a year is `PlayerStats.csv` which is missing 2025.
