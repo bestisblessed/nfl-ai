@@ -29,7 +29,7 @@ csv_file_path_odds = os.path.join(BASE_DIR, 'data/odds/nfl_odds_movements.csv')
 csv_file_path_circa = os.path.join(BASE_DIR, 'data/odds/nfl_odds_movements_circa.csv')
 csv_file_path_teams = os.path.join(BASE_DIR, 'data/Teams.csv')
 csv_file_path_games = os.path.join(BASE_DIR, 'data/Games.csv')
-csv_file_path_playerstats = os.path.join(BASE_DIR, 'data/PlayerStats.csv')
+# csv_file_path_playerstats = os.path.join(BASE_DIR, 'data/PlayerStats.csv')  # COMMENTED OUT - Missing 2025 data, using player_stats_pfr.csv and all_passing_rushing_receiving.csv instead
 csv_file_path_schedule_and_game_results = os.path.join(BASE_DIR, 'data/all_teams_schedule_and_game_results_merged.csv')
 csv_file_path_all_passing_rushing_receiving = os.path.join(BASE_DIR, 'data/all_passing_rushing_receiving.csv')
 
@@ -75,11 +75,13 @@ except FileNotFoundError:
     st.error(f"File not found: {csv_file_path_games}. Please ensure the file exists.")
     df_games = pd.DataFrame()
 
-try:
-    df_playerstats = pd.read_csv(csv_file_path_playerstats)
-except FileNotFoundError:
-    st.error(f"File not found: {csv_file_path_playerstats}. Please ensure the file exists.")
-    df_playerstats = pd.DataFrame()
+# try:
+#     df_playerstats = pd.read_csv(csv_file_path_playerstats)
+# except FileNotFoundError:
+#     st.error(f"File not found: {csv_file_path_playerstats}. Please ensure the file exists.")
+#     df_playerstats = pd.DataFrame()
+# COMMENTED OUT - Missing 2025 data, using player_stats_pfr.csv and all_passing_rushing_receiving.csv instead
+df_playerstats = pd.DataFrame()  # Empty DataFrame for compatibility
 
 try:
     df_schedule_and_game_results = pd.read_csv(csv_file_path_schedule_and_game_results)
@@ -372,7 +374,7 @@ if os.path.exists(player_stats_pfr_path):
 # Also include other sources as fallback
 player_sources.extend([
     st.session_state.get('df_all_passing_rushing_receiving'),
-    st.session_state.get('df_playerstats'),
+    # st.session_state.get('df_playerstats'),  # COMMENTED OUT - Missing 2025 data
 ])
 
 # Also check roster files directly for comprehensive player lists

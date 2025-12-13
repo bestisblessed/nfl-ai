@@ -34,16 +34,16 @@ if 'df_teams' not in st.session_state:
     current_dir = os.path.dirname(os.path.abspath(__file__))
     df_teams = pd.read_csv(os.path.join(current_dir, '../data', 'Teams.csv'))
     df_games = pd.read_csv(os.path.join(current_dir, '../data', 'Games.csv'))
-    df_playerstats = pd.read_csv(os.path.join(current_dir, '../data', 'PlayerStats.csv'))
+    # df_playerstats = pd.read_csv(os.path.join(current_dir, '../data', 'PlayerStats.csv'))  # COMMENTED OUT - Missing 2025 data, not used in this page
     
     # Store in session state for future use
     st.session_state['df_teams'] = df_teams
     st.session_state['df_games'] = df_games
-    st.session_state['df_playerstats'] = df_playerstats
+    # st.session_state['df_playerstats'] = df_playerstats  # COMMENTED OUT
 else:
     df_teams = st.session_state['df_teams']
     df_games = st.session_state['df_games'] 
-    df_playerstats = st.session_state['df_playerstats']
+    # df_playerstats = st.session_state['df_playerstats']  # COMMENTED OUT
 
 tab1, tab2 = st.tabs(["ATS", "Over/Under"])
 

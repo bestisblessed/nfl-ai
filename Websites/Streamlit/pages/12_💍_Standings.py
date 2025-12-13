@@ -40,15 +40,15 @@ def load_data():
     try:
         df_teams = pd.read_csv(os.path.join(current_dir, '../data', 'Teams.csv'))
         df_games = pd.read_csv(os.path.join(current_dir, '../data', 'Games.csv'))
-        df_playerstats = pd.read_csv(os.path.join(current_dir, '../data', 'PlayerStats.csv'))
+        # df_playerstats = pd.read_csv(os.path.join(current_dir, '../data', 'PlayerStats.csv'))  # COMMENTED OUT - Missing 2025 data, not used in this page
         
-        return df_teams, df_games, df_playerstats
+        return df_teams, df_games, None  # df_playerstats replaced with None
     except FileNotFoundError as e:
         st.error(f"Error loading data files: {e}")
         st.stop()
 
 # Load all data
-df_teams, df_games, df_playerstats = load_data()
+df_teams, df_games, _ = load_data()  # df_playerstats not used
 
 # Season selector
 season_options = [2020, 2021, 2022, 2023, 2024, 2025]

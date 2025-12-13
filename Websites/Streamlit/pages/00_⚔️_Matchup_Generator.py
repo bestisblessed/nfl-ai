@@ -96,7 +96,30 @@ st.markdown(
 if 'df_games' not in st.session_state:
     current_dir = os.path.dirname(os.path.abspath(__file__))
     df_games = pd.read_csv(os.path.join(current_dir, '../data', 'Games.csv'))
-    df_playerstats = pd.read_csv(os.path.join(current_dir, '../data', 'PlayerStats.csv'))
+    # df_playerstats = pd.read_csv(os.path.join(current_dir, '../data', 'PlayerStats.csv'))  # COMMENTED OUT - Missing 2025 data
+    # Load all_passing_rushing_receiving.csv (has 2010-2025 data)
+    df_playerstats = pd.read_csv(os.path.join(current_dir, '../data', 'all_passing_rushing_receiving.csv'))
+    # Map columns to match expected format
+    df_playerstats['player_display_name'] = df_playerstats['player']
+    df_playerstats['player_current_team'] = df_playerstats['team']
+    df_playerstats['passing_yards'] = df_playerstats['pass_yds']
+    df_playerstats['rushing_yards'] = df_playerstats['rush_yds']
+    df_playerstats['receiving_yards'] = df_playerstats['rec_yds']
+    df_playerstats['passing_tds'] = df_playerstats['pass_td']
+    df_playerstats['rushing_tds'] = df_playerstats['rush_td']
+    df_playerstats['receiving_tds'] = df_playerstats['rec_td']
+    # Map additional columns used in display
+    df_playerstats['completions'] = df_playerstats['pass_cmp']
+    df_playerstats['attempts'] = df_playerstats['pass_att']
+    df_playerstats['interceptions'] = df_playerstats['pass_int']
+    df_playerstats['sacks'] = df_playerstats['pass_sacked']
+    df_playerstats['carries'] = df_playerstats['rush_att']
+    df_playerstats['receptions'] = df_playerstats['rec']
+    # Derive home_team, away_team, week from game_id (format: YYYY_WW_AWAY_HOME)
+    game_id_parts = df_playerstats['game_id'].str.split('_', expand=True)
+    df_playerstats['week'] = pd.to_numeric(game_id_parts[1], errors='coerce')
+    df_playerstats['away_team'] = game_id_parts[2]
+    df_playerstats['home_team'] = game_id_parts[3]
     # Load 2025 roster as source of truth for current players
     df_roster2025 = pd.read_csv(os.path.join(current_dir, '../data/rosters', 'roster_2025.csv'))
     # Normalize team abbreviations: roster uses 'LV' and 'LA', but we need 'LVR' and 'LAR' to match Games.csv
@@ -138,7 +161,33 @@ if 'df_games' not in st.session_state:
     st.session_state['df_redzone'] = df_redzone
 else:
     df_games = st.session_state['df_games'] 
-    df_playerstats = st.session_state['df_playerstats']
+    df_playerstats = st.session_state.get('df_playerstats')
+    # If df_playerstats doesn't have mapped columns, reload and map from all_passing_rushing_receiving.csv
+    if df_playerstats is None or 'player_display_name' not in df_playerstats.columns:
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        df_playerstats = pd.read_csv(os.path.join(current_dir, '../data', 'all_passing_rushing_receiving.csv'))
+        # Map columns to match expected format
+        df_playerstats['player_display_name'] = df_playerstats['player']
+        df_playerstats['player_current_team'] = df_playerstats['team']
+        df_playerstats['passing_yards'] = df_playerstats['pass_yds']
+        df_playerstats['rushing_yards'] = df_playerstats['rush_yds']
+        df_playerstats['receiving_yards'] = df_playerstats['rec_yds']
+        df_playerstats['passing_tds'] = df_playerstats['pass_td']
+        df_playerstats['rushing_tds'] = df_playerstats['rush_td']
+        df_playerstats['receiving_tds'] = df_playerstats['rec_td']
+        # Map additional columns used in display
+        df_playerstats['completions'] = df_playerstats['pass_cmp']
+        df_playerstats['attempts'] = df_playerstats['pass_att']
+        df_playerstats['interceptions'] = df_playerstats['pass_int']
+        df_playerstats['sacks'] = df_playerstats['pass_sacked']
+        df_playerstats['carries'] = df_playerstats['rush_att']
+        df_playerstats['receptions'] = df_playerstats['rec']
+        # Derive home_team, away_team, week from game_id (format: YYYY_WW_AWAY_HOME)
+        game_id_parts = df_playerstats['game_id'].str.split('_', expand=True)
+        df_playerstats['week'] = pd.to_numeric(game_id_parts[1], errors='coerce')
+        df_playerstats['away_team'] = game_id_parts[2]
+        df_playerstats['home_team'] = game_id_parts[3]
+        st.session_state['df_playerstats'] = df_playerstats
     df_roster2025 = st.session_state.get('df_roster2025')
     df_team_game_logs = st.session_state.get('df_team_game_logs')
     df_defense_logs = st.session_state.get('df_defense_logs')
@@ -364,11 +413,10 @@ def show_condensed_players(historical_df, team_name, opponent_name):
         st.write(f"No historical stats found for {team_name} players vs {opponent_name}.")
         return
 
-    # compute summary metrics: Games, Avg Rec Yds, Avg FPTS, plus pass/rush means if present
+    # compute summary metrics: Games, Avg Rec Yds, plus pass/rush means if present
     base = historical_df.groupby('player_name_with_position').agg({
-        'game_id': 'nunique',
-        'fantasy_points_ppr': 'mean'
-    }).rename(columns={'game_id':'games','fantasy_points_ppr':'avg_fpts'}).reset_index()
+        'game_id': 'nunique'
+    }).rename(columns={'game_id':'games'}).reset_index()
     # add receiving/passing/rushing means if available
     if 'receiving_yards' in historical_df.columns:
         rec = historical_df.groupby('player_name_with_position')['receiving_yards'].mean().reset_index().rename(columns={'receiving_yards':'avg_rec_yds'})
@@ -416,7 +464,7 @@ def show_condensed_players(historical_df, team_name, opponent_name):
     pos_map = historical_df.groupby('player_name_with_position')['position'].agg(lambda s: s.mode().iloc[0] if not s.mode().empty else s.iloc[0]).reset_index().rename(columns={'position':'pos'})
     base = base.merge(pos_map, on='player_name_with_position', how='left')
     # round numeric values for display
-    for c in ['avg_rec_yds','avg_pass_yds','avg_rush_yds','avg_fpts']:
+    for c in ['avg_rec_yds','avg_pass_yds','avg_rush_yds']:
         base[c] = base[c].fillna(0).round(1)
 
     # Choose primary metric per-player based on position
@@ -447,50 +495,47 @@ def show_condensed_players(historical_df, team_name, opponent_name):
     base['primary_tds_label'] = [lbl for _,lbl in prim_tds]
 
     # include position and sort by position priority (QB, RB, WR, TE), then by games and primary metric
-    display_df = base[['player_name_with_position','pos','games','primary_tds','primary_val','avg_fpts','primary_label','primary_tds_label']].copy()
+    display_df = base[['player_name_with_position','pos','games','primary_tds','primary_val','primary_label','primary_tds_label']].copy()
     pos_priority = {'QB': 0, 'WR': 1, 'TE': 2, 'RB': 3}
     display_df['pos_order'] = display_df['pos'].map(lambda p: pos_priority.get(p, 4))
     display_df = display_df.sort_values(['pos_order','games','primary_val'], ascending=[True, False, False]).reset_index(drop=True)
-    display_df = display_df[['player_name_with_position','games','primary_tds','primary_val','avg_fpts','primary_label','primary_tds_label','pos','pos_order']]
-    display_df.columns = ['Player','Games','Primary TDs','Primary','Avg FPTS','Primary Label','Primary TDs Label','Pos','Pos Order']
+    display_df = display_df[['player_name_with_position','games','primary_tds','primary_val','primary_label','primary_tds_label','pos','pos_order']]
+    display_df.columns = ['Player','Games','Primary TDs','Primary','Primary Label','Primary TDs Label','Pos','Pos Order']
 
     with st.container():
         # Summary: restore full players table at top
-        st.dataframe(display_df[['Player','Pos','Games','Avg FPTS']], use_container_width=True, hide_index=True)
+        st.dataframe(display_df[['Player','Pos','Games','Primary']], use_container_width=True, hide_index=True)
         for _, row in display_df.iterrows():
             pname = row['Player']
             ppos = row['Pos'] if 'Pos' in row else None
             with st.expander(pname, expanded=False):
                 # Only show each metric once, and ensure "Games" is not repeated
                 if ppos in ('RB', 'FB'):
-                    c1, c2, c3, c4 = st.columns([1,1,1,1])
+                    c1, c2, c3 = st.columns([1,1,1])
                     this_games = historical_df[historical_df['player_name_with_position'] == pname]
                     rush_tds_sum = int(this_games['rushing_tds'].sum()) if 'rushing_tds' in this_games.columns else 0
                     rec_tds_sum = int(this_games['receiving_tds'].sum()) if 'receiving_tds' in this_games.columns else 0
                     c1.metric("Games", int(row['Games']))
                     c2.metric("Total Rush TDs", rush_tds_sum)
                     c3.metric("Total Rec TDs", rec_tds_sum)
-                    c4.metric("Avg FPTS", row['Avg FPTS'])
                 else:
                     # For QBs, show an extra metric: Total Rush TDs after Total Pass TDs
                     if isinstance(ppos, str) and ppos.upper() == 'QB':
                         qb_games = historical_df[historical_df['player_name_with_position'] == pname]
                         qb_rush_tds_sum = int(qb_games['rushing_tds'].sum()) if 'rushing_tds' in qb_games.columns else 0
-                        c1, c2, c3, c4, c5 = st.columns([1,1,1,1,1])
+                        c1, c2, c3, c4 = st.columns([1,1,1,1])
                         c1.metric("Games", int(row['Games']))
                         c2.metric("Total Pass TDs", int(row['Primary TDs']))
                         c3.metric("Total Rush TDs", qb_rush_tds_sum)
                         primary_label = row['Primary Label']
                         c4.metric(primary_label, row['Primary'])
-                        c5.metric("Avg FPTS", row['Avg FPTS'])
                     else:
-                        c1, c2, c3, c4 = st.columns([1,1,1,1])
+                        c1, c2, c3 = st.columns([1,1,1])
                         c1.metric("Games", int(row['Games']))
                         primary_tds_label = row['Primary TDs Label']
                         c2.metric(primary_tds_label, int(row['Primary TDs']))
                         primary_label = row['Primary Label']
                         c3.metric(primary_label, row['Primary'])
-                        c4.metric("Avg FPTS", row['Avg FPTS'])
                 player_games = historical_df[historical_df['player_name_with_position'] == pname].sort_values('date', ascending=False).copy()
                 # Base identifying columns always shown
                 id_cols = ['season','week','home_team','away_team']
@@ -1181,9 +1226,8 @@ def _generate_player_html(historical_df, team_name, opponent_name):
     
     # Use the same logic as show_condensed_players but generate HTML instead
     base = historical_df.groupby('player_name_with_position').agg({
-        'game_id': 'nunique',
-        'fantasy_points_ppr': 'mean'
-    }).rename(columns={'game_id':'games','fantasy_points_ppr':'avg_fpts'}).reset_index()
+        'game_id': 'nunique'
+    }).rename(columns={'game_id':'games'}).reset_index()
     
     # Add receiving/passing/rushing means if available
     if 'receiving_yards' in historical_df.columns:
@@ -1234,7 +1278,7 @@ def _generate_player_html(historical_df, team_name, opponent_name):
     base = base.merge(pos_map, on='player_name_with_position', how='left')
     
     # round numeric values for display
-    for c in ['avg_rec_yds','avg_pass_yds','avg_rush_yds','avg_fpts']:
+    for c in ['avg_rec_yds','avg_pass_yds','avg_rush_yds']:
         base[c] = base[c].fillna(0).round(1)
 
     # Choose primary metric per-player based on position
@@ -1264,15 +1308,15 @@ def _generate_player_html(historical_df, team_name, opponent_name):
     base['primary_tds_label'] = [lbl for _,lbl in prim_tds]
 
     # include position and sort by position priority (QB, RB, WR, TE), then by games and primary metric
-    display_df = base[['player_name_with_position','pos','games','primary_tds','primary_val','avg_fpts','primary_label','primary_tds_label']].copy()
+    display_df = base[['player_name_with_position','pos','games','primary_tds','primary_val','primary_label','primary_tds_label']].copy()
     pos_priority = {'QB': 0, 'WR': 1, 'TE': 2, 'RB': 3}
     display_df['pos_order'] = display_df['pos'].map(lambda p: pos_priority.get(p, 4))
     display_df = display_df.sort_values(['pos_order','games','primary_val'], ascending=[True, False, False]).reset_index(drop=True)
-    display_df = display_df[['player_name_with_position','games','primary_tds','primary_val','avg_fpts','primary_label','primary_tds_label','pos','pos_order']]
-    display_df.columns = ['Player','Games','Primary TDs','Primary','Avg FPTS','Primary Label','Primary TDs Label','Pos','Pos Order']
+    display_df = display_df[['player_name_with_position','games','primary_tds','primary_val','primary_label','primary_tds_label','pos','pos_order']]
+    display_df.columns = ['Player','Games','Primary TDs','Primary','Primary Label','Primary TDs Label','Pos','Pos Order']
 
     # Generate summary table HTML
-    summary_html = display_df[['Player','Pos','Games','Avg FPTS']].to_html(classes='table', escape=False, index=False)
+    summary_html = display_df[['Player','Pos','Games','Primary']].to_html(classes='table', escape=False, index=False)
     
     html_content = f"""
             <div class="player-summary">
@@ -1308,10 +1352,6 @@ def _generate_player_html(historical_df, team_name, opponent_name):
                         <div class="player-metric-value">{rec_tds_sum}</div>
                         <div class="player-metric-label">Total Rec TDs</div>
                     </div>
-                    <div class="player-metric">
-                        <div class="player-metric-value">{row['Avg FPTS']}</div>
-                        <div class="player-metric-label">Avg FPTS</div>
-                    </div>
                 </div>
 """
         else:
@@ -1337,10 +1377,6 @@ def _generate_player_html(historical_df, team_name, opponent_name):
                             <div class="player-metric-value">{row['Primary']}</div>
                             <div class="player-metric-label">{row['Primary Label']}</div>
                         </div>
-                        <div class="player-metric">
-                            <div class="player-metric-value">{row['Avg FPTS']}</div>
-                            <div class="player-metric-label">Avg FPTS</div>
-                        </div>
                     </div>
 """
             else:
@@ -1357,10 +1393,6 @@ def _generate_player_html(historical_df, team_name, opponent_name):
                         <div class="player-metric">
                             <div class="player-metric-value">{row['Primary']}</div>
                             <div class="player-metric-label">{row['Primary Label']}</div>
-                        </div>
-                        <div class="player-metric">
-                            <div class="player-metric-value">{row['Avg FPTS']}</div>
-                            <div class="player-metric-label">Avg FPTS</div>
                         </div>
                     </div>
 """
