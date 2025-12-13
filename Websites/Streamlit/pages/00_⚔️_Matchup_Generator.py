@@ -504,7 +504,7 @@ def show_condensed_players(historical_df, team_name, opponent_name):
 
     with st.container():
         # Summary: restore full players table at top
-        st.dataframe(display_df[['Player','Pos','Games','Primary']], use_container_width=True, hide_index=True)
+        st.dataframe(display_df[['Player','Pos','Games']], use_container_width=True, hide_index=True)
         for _, row in display_df.iterrows():
             pname = row['Player']
             ppos = row['Pos'] if 'Pos' in row else None
@@ -1316,7 +1316,7 @@ def _generate_player_html(historical_df, team_name, opponent_name):
     display_df.columns = ['Player','Games','Primary TDs','Primary','Primary Label','Primary TDs Label','Pos','Pos Order']
 
     # Generate summary table HTML
-    summary_html = display_df[['Player','Pos','Games','Primary']].to_html(classes='table', escape=False, index=False)
+    summary_html = display_df[['Player','Pos','Games']].to_html(classes='table', escape=False, index=False)
     
     html_content = f"""
             <div class="player-summary">
