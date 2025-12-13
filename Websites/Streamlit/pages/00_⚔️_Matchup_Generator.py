@@ -115,7 +115,18 @@ if 'df_games' not in st.session_state:
     df_playerstats['sacks'] = df_playerstats['pass_sacked']
     df_playerstats['carries'] = df_playerstats['rush_att']
     df_playerstats['receptions'] = df_playerstats['rec']
-    # 'targets', 'fantasy_points_ppr', 'home_team', 'away_team', 'week' columns already exist in player_stats_pfr.csv
+    # 'targets', 'home_team', 'away_team', 'week' columns already exist in player_stats_pfr.csv
+    # Calculate fantasy_points_ppr if it's missing or NaN (player_stats_pfr.csv has the column but values are NaN)
+    if 'fantasy_points_ppr' not in df_playerstats.columns or df_playerstats['fantasy_points_ppr'].isna().all():
+        df_playerstats['fantasy_points_ppr'] = (
+            df_playerstats['rec'].fillna(0) * 1.0 +
+            df_playerstats['rec_yds'].fillna(0) * 0.1 +
+            df_playerstats['rush_yds'].fillna(0) * 0.1 +
+            df_playerstats['pass_yds'].fillna(0) * 0.04 +
+            df_playerstats['rec_td'].fillna(0) * 6.0 +
+            df_playerstats['rush_td'].fillna(0) * 6.0 +
+            df_playerstats['pass_td'].fillna(0) * 4.0
+        )
     # Load 2025 roster as source of truth for current players
     df_roster2025 = pd.read_csv(os.path.join(current_dir, '../data/rosters', 'roster_2025.csv'))
     # Normalize team abbreviations: roster uses 'LV' and 'LA', but we need 'LVR' and 'LAR' to match Games.csv
@@ -178,7 +189,18 @@ else:
         df_playerstats['sacks'] = df_playerstats['pass_sacked']
         df_playerstats['carries'] = df_playerstats['rush_att']
         df_playerstats['receptions'] = df_playerstats['rec']
-        # 'targets', 'fantasy_points_ppr', 'home_team', 'away_team', 'week' columns already exist in player_stats_pfr.csv
+        # 'targets', 'home_team', 'away_team', 'week' columns already exist in player_stats_pfr.csv
+        # Calculate fantasy_points_ppr if it's missing or NaN (player_stats_pfr.csv has the column but values are NaN)
+        if 'fantasy_points_ppr' not in df_playerstats.columns or df_playerstats['fantasy_points_ppr'].isna().all():
+            df_playerstats['fantasy_points_ppr'] = (
+                df_playerstats['rec'].fillna(0) * 1.0 +
+                df_playerstats['rec_yds'].fillna(0) * 0.1 +
+                df_playerstats['rush_yds'].fillna(0) * 0.1 +
+                df_playerstats['pass_yds'].fillna(0) * 0.04 +
+                df_playerstats['rec_td'].fillna(0) * 6.0 +
+                df_playerstats['rush_td'].fillna(0) * 6.0 +
+                df_playerstats['pass_td'].fillna(0) * 4.0
+            )
         st.session_state['df_playerstats'] = df_playerstats
     df_roster2025 = st.session_state.get('df_roster2025')
     df_team_game_logs = st.session_state.get('df_team_game_logs')
