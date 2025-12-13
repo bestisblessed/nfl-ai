@@ -137,14 +137,6 @@ def get_player_position(player_name: str | None) -> str | None:
 df_player_data['year'] = df_player_data['game_id'].str.split('_').str[0].astype(int)
 df_player_data['week'] = df_player_data['game_id'].str.split('_').str[1].astype(int)
 
-# Season selector removed; use most recent available year
-available_years = df_player_data['year'].dropna()
-selected_season = int(available_years.max()) if not available_years.empty else 2025
-
-# Filter to selected season (all positions now available)
-df_player_data_filtered = df_player_data[df_player_data['year'] == selected_season]
-
-
 def get_player_season_data(player_name: str, target_year: int) -> tuple[pd.DataFrame | None, int | None]:
     """Return season data for the player for the target year or fallback to their latest season."""
     player_data = df_player_data[df_player_data['player'] == player_name]
@@ -189,17 +181,8 @@ st.divider()
 
 # Fetch player names from CSV data and headshots from database/roster
 def fetch_player_names_and_image():
-    # Get all players from the full dataset
-    all_players_data = df_player_data[
-        df_player_data['year'].isin([selected_season, selected_season - 1])
-    ]
-    
-    if all_players_data.empty:
-        st.warning(f"No player data available for {selected_season} season yet.")
-        return None, None
-    
-    # Get unique player names from CSV
-    player_names = all_players_data['player'].unique().tolist()
+    # Get all players from the full dataset (all seasons)
+    player_names = df_player_data['player'].dropna().unique().tolist()
     player_names.sort()  # Sort alphabetically
     
     # Try to set default to Justin Jefferson, otherwise use first player
@@ -370,10 +353,28 @@ def fetch_last_10_games_and_plot(player_name, player_position=None):
     return recent_games, fig
 
 # 0. Player Input - Better organized layout
+selected_season = None
 col1, spacer_col, col2 = st.columns([1, 0.1, 2])
 with col1:
     player_name, headshot_url = fetch_player_names_and_image()
     player_position = get_player_position(player_name)
+    # Season dropdown just below player selector, limited to seasons with data for that player
+    if player_name is not None:
+        seasons_for_player = sorted(
+            df_player_data[df_player_data['player'] == player_name]['year'].dropna().unique().tolist()
+        )
+        if seasons_for_player:
+            default_idx = len(seasons_for_player) - 1
+            selected_season = st.selectbox(
+                "Select Season:",
+                options=seasons_for_player,
+                index=default_idx,
+                key=widget_key(PAGE_KEY_PREFIX, "season"),
+            )
+        else:
+            st.info("No season data available for this player yet.")
+            selected_season = None
+
     if player_name is not None and pd.notna(headshot_url):  # Check if player_name and URL exist
         try:
             st.image(headshot_url, caption=player_name, use_container_width=True)
@@ -386,7 +387,7 @@ with spacer_col:
     st.write("")  # Empty spacer column
 
 with col2:
-    if player_name is not None:
+    if player_name is not None and selected_season is not None:
         season_data, season_year = get_player_season_data(player_name, selected_season)
         
         if season_data is not None and not season_data.empty:
