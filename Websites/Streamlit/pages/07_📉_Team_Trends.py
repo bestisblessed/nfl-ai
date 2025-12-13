@@ -60,7 +60,7 @@ def load_data():
 # Season selector in sidebar
 with st.sidebar:
     st.header("Filters")
-    season_options = [2024, 2025]
+    season_options = list(range(2010, 2026))
     selected_season = persistent_selectbox(
         "Select Season:",
         options=season_options,
@@ -75,10 +75,17 @@ team_name_col = 'team_name'
 week_col = 'week'
 
 # Select the appropriate dataset based on season
-if selected_season == 2025:
-    df_team_game_logs_selected = df_team_game_logs_2025.copy()
-else:  # 2024
-    df_team_game_logs_selected = df_team_game_logs_2024.copy()
+# Use all_team_game_logs.csv which contains 2010-2025 data
+if selected_season >= 2010 and selected_season <= 2025:
+    df_team_game_logs_selected = df_team_game_logs[df_team_game_logs['season'] == selected_season].copy()
+else:
+    # Fallback to individual year files if needed (for 2024-2025)
+    if selected_season == 2025 and not df_team_game_logs_2025.empty:
+        df_team_game_logs_selected = df_team_game_logs_2025.copy()
+    elif selected_season == 2024 and not df_team_game_logs_2024.empty:
+        df_team_game_logs_selected = df_team_game_logs_2024.copy()
+    else:
+        df_team_game_logs_selected = df_team_game_logs[df_team_game_logs['season'] == selected_season].copy()
 
 # Both datasets use the same column names
 # dataframes = [df_teams, df_games, df_playerstats, df_team_game_logs, df_schedule_and_game_results]  # COMMENTED OUT - dataframes list not used, df_playerstats removed

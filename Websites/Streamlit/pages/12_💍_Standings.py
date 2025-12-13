@@ -51,7 +51,7 @@ def load_data():
 df_teams, df_games, _ = load_data()  # df_playerstats not used
 
 # Season selector
-season_options = [2020, 2021, 2022, 2023, 2024, 2025]
+season_options = list(range(2010, 2026))  # 2010-2025
 season_key = widget_key(PAGE_KEY_PREFIX, "season")
 ensure_option_state(season_key, season_options, default=2025)
 selected_season = st.selectbox("Select Season:", season_options, key=season_key)

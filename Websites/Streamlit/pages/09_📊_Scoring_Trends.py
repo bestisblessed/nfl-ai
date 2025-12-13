@@ -329,17 +329,18 @@ with st.sidebar:
     # Quick selection buttons
     st.markdown("**Quick Select:**")
     
-    if st.button("2025", use_container_width=True):
-        st.session_state.selected_season = "2025"
-    if st.button("2024", use_container_width=True):
-        st.session_state.selected_season = "2024"
-    if st.button("2023", use_container_width=True):
-        st.session_state.selected_season = "2023"
-    if st.button("2022", use_container_width=True):
-        st.session_state.selected_season = "2022"
+    # Show recent years (2020-2025) as quick buttons, with option for full range (2010-2025)
+    recent_years = [2025, 2024, 2023, 2022, 2021, 2020]
+    for year in recent_years:
+        if year in available_seasons:
+            if st.button(str(year), use_container_width=True):
+                st.session_state.selected_season = str(year)
     
-    # if st.button("2023-2025", use_container_width=True):
-    #     st.session_state.selected_season = "2023-2025"
+    # Add range buttons for common ranges
+    if st.button("2010-2025", use_container_width=True):
+        st.session_state.selected_season = "2010-2025"
+    if st.button("2015-2025", use_container_width=True):
+        st.session_state.selected_season = "2015-2025"
     
     st.markdown("**Custom Range:**")
     
