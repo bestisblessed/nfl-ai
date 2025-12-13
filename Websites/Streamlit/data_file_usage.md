@@ -17,7 +17,7 @@
 ## 2. Matchup Generator (00_⚔️_Matchup_Generator.py)
 # 2010-2025
 - data/Games.csv (2010-2025)
-- data/all_passing_rushing_receiving.csv (2010-2025) [replaces PlayerStats.csv]
+- data/player_stats_pfr.csv (2010-2025) [replaces PlayerStats.csv - includes fantasy_points_ppr, home_team, away_team, week]
 - data/rosters/roster_2025.csv (2025)
 - data/all_team_game_logs.csv (2010-2025)
 - data/all_defense-game-logs.csv (2010-2025)
@@ -112,7 +112,7 @@
 
 ### All Pages Now Support 2010-2025:
 - **Home**: Uses combined files with full 2010-2025 coverage
-- **Matchup Generator**: Uses `all_passing_rushing_receiving.csv` (replaced PlayerStats.csv) with full 2010-2025 coverage
+- **Matchup Generator**: Uses `player_stats_pfr.csv` (replaced PlayerStats.csv) with full 2010-2025 coverage
 - **Player Dashboard**: Uses `all_passing_rushing_receiving.csv` with full 2010-2025 coverage
 - **Player Trends**: Uses `all_passing_rushing_receiving.csv` with full 2010-2025 coverage
 - **Team Trends**: Uses combined files with full 2010-2025 coverage
@@ -122,6 +122,7 @@
 - **Standings**: Uses Games.csv with full 2010-2025 coverage
 
 ### PlayerStats.csv Replacement:
-- **PlayerStats.csv** has been replaced with `all_passing_rushing_receiving.csv` in Matchup Generator (the only page that actually used it)
+- **PlayerStats.csv** has been replaced with `player_stats_pfr.csv` in Matchup Generator (the only page that actually used it)
+- `player_stats_pfr.csv` has full 2010-2025 coverage and includes `fantasy_points_ppr`, `home_team`, `away_team`, and `week` columns (no calculation needed)
 - All other pages that loaded PlayerStats.csv have had it removed (they weren't using it)
 - All combined/merged files (`all_team_game_logs.csv`, `all_passing_rushing_receiving.csv`, `all_defense-game-logs.csv`, `all_box_scores.csv`) contain a `season` column with full 2010-2025 coverage
