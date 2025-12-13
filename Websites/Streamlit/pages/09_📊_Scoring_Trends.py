@@ -202,39 +202,50 @@ def load_csv(path_local: str) -> pd.DataFrame:
 
 @st.cache_data(show_spinner=False)
 def load():
-    # Use relative paths like other pages
     current_dir = os.path.dirname(os.path.abspath(__file__))
-    local_stats_path = os.path.join(current_dir, '../data', 'player_stats_pfr.csv')
-    local_roster_path = os.path.join(current_dir, '../data', 'rosters', 'roster_2025.csv')
-    
-    stats = load_csv(local_stats_path)
-    roster = load_csv(local_roster_path)
-    return roster, stats
+    stats_path = os.path.join(current_dir, '../data', 'player_stats_pfr.csv')
+    roster_path = os.path.join(current_dir, '../data', 'Rosters.csv')
+    stats = load_csv(stats_path)
+    roster = load_csv(roster_path)
+    return stats, roster
 
-def build_position_lookup(roster: pd.DataFrame) -> dict:
-    lut = {}
-    for _, r in roster.iterrows():
-        pid = str(r.get("pfr_id", "") or "")
-        pos = r.get("position", None)
-        if not pid or not pos:
+def _position_lookup(roster: pd.DataFrame, season: int) -> dict:
+    r = roster.copy()
+    r = r[(r["season"] == season) & (r.get("game_type", "REG") == "REG")]
+    r = r[pd.to_numeric(r.get("week", 0), errors="coerce").fillna(0).between(1, 18)]
+    id_map = {}
+    name_map = {}
+    for _, row in r.iterrows():
+        pos = row.get("position")
+        if not pos or pd.isna(pos):
             continue
-        clean = pid.replace(".htm", "")
-        lut[pid] = pos
-        lut[clean] = pos
-    return lut
+        pid = str(row.get("pfr_id") or "").strip()
+        if pid:
+            id_map[pid] = pos
+            id_map[pid.replace(".htm", "")] = pos
+        full_name = str(row.get("full_name") or "").strip()
+        if full_name:
+            name_map[full_name.lower()] = pos
+    return {"id_map": id_map, "name_map": name_map}
 
-def infer_pos(pid: str, lut: dict) -> str | None:
-    if not pid:
-        return None
-    pid = str(pid)
-    clean = pid.replace(".htm", "")
-    pos = lut.get(pid) or lut.get(clean)
-    if pos:
+
+def _assign_positions(df: pd.DataFrame, roster: pd.DataFrame, season: int) -> pd.DataFrame:
+    lut = _position_lookup(roster, season)
+    id_map = lut["id_map"]
+    name_map = lut["name_map"]
+
+    def resolve(row):
+        pid = str(row.get("player_id") or "").strip()
+        name = str(row.get("player") or "").strip().lower()
+        pos = id_map.get(pid) or id_map.get(pid.replace(".htm", ""))
+        if not pos:
+            pos = name_map.get(name)
         return pos
-    for k, v in lut.items():
-        if clean in k or k in clean:
-            return v
-    return None
+
+    df = df.copy()
+    df["position"] = df.apply(resolve, axis=1)
+    return df
+
 
 def compute_defensive(def_stats: pd.DataFrame, roster: pd.DataFrame, season_filter: str) -> pd.DataFrame:
     """Compute touchdowns allowed by defenses (defensive view)"""
@@ -248,8 +259,10 @@ def compute_defensive(def_stats: pd.DataFrame, roster: pd.DataFrame, season_filt
         year = int(season_filter)
         df = def_stats.loc[def_stats["season"].astype("Int64") == year].copy()
     
-    lut = build_position_lookup(roster)
-    df["position"] = df["player_id"].apply(lambda x: infer_pos(x, lut))
+    # Regular season only
+    df = df[pd.to_numeric(df.get("week", 0), errors="coerce").fillna(0).between(1, 18)]
+    df = _assign_positions(df, roster, int(season_filter))
+    df["position"] = df["position"].astype(str).str.upper()
     df["rush_td"] = pd.to_numeric(df.get("rush_td", 0), errors="coerce").fillna(0)
     df["rec_td"]  = pd.to_numeric(df.get("rec_td", 0),  errors="coerce").fillna(0)
     df["total_td"] = df.apply(lambda r: r.rush_td if r.position=="QB" else r.rush_td + r.rec_td, axis=1)
@@ -257,7 +270,8 @@ def compute_defensive(def_stats: pd.DataFrame, roster: pd.DataFrame, season_filt
     df = df[(df["total_td"] > 0) & df["position"].notna() & df["opponent_team"].notna()].copy()
     df["pos_group"] = df["position"].map(pos_map)
     df = df[df["pos_group"].notna()].copy()
-    df = df.sort_values(["game_id", "player_id"]).drop_duplicates(["game_id", "player_id"])
+    df["player_key"] = df.get("player_id").fillna(df.get("player"))
+    df = df.sort_values(["game_id", "player_key"]).drop_duplicates(["game_id", "player_key"])
     pivot = (
         df.pivot_table(index="opponent_team",
                        columns="pos_group",
@@ -285,8 +299,10 @@ def compute_offensive(off_stats: pd.DataFrame, roster: pd.DataFrame, season_filt
         year = int(season_filter)
         df = off_stats.loc[off_stats["season"].astype("Int64") == year].copy()
     
-    lut = build_position_lookup(roster)
-    df["position"] = df["player_id"].apply(lambda x: infer_pos(x, lut))
+    # Regular season only
+    df = df[pd.to_numeric(df.get("week", 0), errors="coerce").fillna(0).between(1, 18)]
+    df = _assign_positions(df, roster, int(season_filter))
+    df["position"] = df["position"].astype(str).str.upper()
     df["rush_td"] = pd.to_numeric(df.get("rush_td", 0), errors="coerce").fillna(0)
     df["rec_td"]  = pd.to_numeric(df.get("rec_td", 0),  errors="coerce").fillna(0)
     df["pass_td"] = pd.to_numeric(df.get("pass_td", 0), errors="coerce").fillna(0)
@@ -297,7 +313,8 @@ def compute_offensive(off_stats: pd.DataFrame, roster: pd.DataFrame, season_filt
     df = df[(df["total_td"] > 0) & df["position"].notna() & df["team"].notna()].copy()
     df["pos_group"] = df["position"].map(pos_map)
     df = df[df["pos_group"].notna()].copy()
-    df = df.sort_values(["game_id", "player_id"]).drop_duplicates(["game_id", "player_id"])
+    df["player_key"] = df.get("player_id").fillna(df.get("player"))
+    df = df.sort_values(["game_id", "player_key"]).drop_duplicates(["game_id", "player_key"])
     pivot = (
         df.pivot_table(index="team",
                        columns="pos_group",
@@ -319,78 +336,18 @@ def compute_offensive(off_stats: pd.DataFrame, roster: pd.DataFrame, season_filt
 # Load data and season selection in sidebar
 with st.sidebar:
     with st.spinner("Loading data..."):
-        roster, stats = load()
-    
-    st.markdown("### 📅 Season Selection")
-    
-    # Get available seasons from the data
-    available_seasons = sorted(stats["season"].dropna().unique().astype(int))
-    
-    # Quick selection buttons
-    st.markdown("**Quick Select:**")
-    
-    if st.button("2025", use_container_width=True):
-        st.session_state.selected_season = "2025"
-    if st.button("2024", use_container_width=True):
-        st.session_state.selected_season = "2024"
-    if st.button("2023", use_container_width=True):
-        st.session_state.selected_season = "2023"
-    if st.button("2022", use_container_width=True):
-        st.session_state.selected_season = "2022"
-    
-    # if st.button("2023-2025", use_container_width=True):
-    #     st.session_state.selected_season = "2023-2025"
-    
-    st.markdown("**Custom Range:**")
-    
-    # Custom range selection - default to 2025
-    start_key = widget_key(PAGE_KEY_PREFIX, "start_season")
-    end_key = widget_key(PAGE_KEY_PREFIX, "end_season")
-    default_year = 2025 if 2025 in available_seasons else (available_seasons[-1] if available_seasons else None)
-    ensure_option_state(start_key, available_seasons, default=default_year)
-    ensure_option_state(end_key, available_seasons, default=default_year)
+        stats, roster = load()
 
-    start_season = st.selectbox(
-        "From:",
-        options=available_seasons,
-        key=start_key
+    st.markdown("### 📅 Season Selection")
+
+    # Season selector - single season selection like other pages
+    selected_season = st.selectbox(
+        "Select Season:",
+        options=list(range(2010, 2026)),
+        index=15  # Default to 2025 (0-indexed from 2010)
     )
-    
-    end_season = st.selectbox(
-        "To:",
-        options=available_seasons,
-        key=end_key
-    )
-    
-    # Create season filter string from custom range
-    if start_season == end_season:
-        custom_season = str(start_season)
-    else:
-        custom_season = f"{start_season}-{end_season}"
-    
-    # Initialize session state for custom range
-    if 'custom_range' not in st.session_state:
-        st.session_state.custom_range = custom_season
-    
-    # Update custom range when dropdowns change
-    if st.session_state.custom_range != custom_season:
-        st.session_state.custom_range = custom_season
-        # Clear quick select when custom range changes
-        if 'selected_season' in st.session_state:
-            del st.session_state.selected_season
-    
-    # Determine final selection
-    if 'selected_season' in st.session_state:
-        selected_season = st.session_state.selected_season
-    else:
-        selected_season = st.session_state.custom_range
-    
-    # Display selected range
-    if '-' in selected_season:
-        start, end = map(int, selected_season.split('-'))
-        st.success(f"📊 **{start}-{end}** ({end - start + 1} seasons)")
-    else:
-        st.success(f"📊 **{selected_season}** season")
+
+    selected_season = str(selected_season)
     
     st.markdown("---")
 
@@ -400,10 +357,7 @@ with col2:
     
     with offense_tab:
         # Display dynamic title based on selected season
-        if '-' in selected_season:
-            st.markdown(f"### Touchdowns Scored by Offense ({selected_season})")
-        else:
-            st.markdown(f"### Touchdowns Scored by Offense ({selected_season})")
+        st.markdown(f"### Touchdowns Scored by Offense ({selected_season})")
         
         table = compute_offensive(stats, roster, selected_season)
 
@@ -555,10 +509,7 @@ with col2:
     
     with defense_tab:
         # Display dynamic title based on selected season
-        if '-' in selected_season:
-            st.markdown(f"### NFL {selected_season}: Touchdowns Allowed by Defense")
-        else:
-            st.markdown(f"### NFL {selected_season}: Touchdowns Allowed by Defense")
+        st.markdown(f"### NFL {selected_season}: Touchdowns Allowed by Defense")
         
         table = compute_defensive(stats, roster, selected_season)
 

@@ -43,24 +43,56 @@ def load_data():
         df_schedule_and_game_results = pd.read_csv(os.path.join(current_dir, '../data', 'all_teams_schedule_and_game_results_merged.csv'))
         df_box_scores = pd.read_csv(os.path.join(current_dir, '../data', 'all_box_scores.csv'))
         
-        # Load year-specific team game logs
-        df_team_game_logs_2024 = pd.read_csv(os.path.join(current_dir, '../data', 'SR-game-logs/all_teams_game_logs_2024.csv'))
-        df_team_game_logs_2025 = pd.read_csv(os.path.join(current_dir, '../data', 'SR-game-logs/all_teams_game_logs_2025.csv'))
-        
         return (df_teams, df_games, None, df_team_game_logs, 
-                df_schedule_and_game_results, df_team_game_logs_2024, df_team_game_logs_2025, df_box_scores)  # df_playerstats replaced with None
+                df_schedule_and_game_results, df_box_scores)  # df_playerstats replaced with None
     except FileNotFoundError as e:
         st.error(f"Error loading data files: {e}")
         st.stop()
 
 # Load all data
 (df_teams, df_games, _, df_team_game_logs, 
- df_schedule_and_game_results, df_team_game_logs_2024, df_team_game_logs_2025, df_box_scores) = load_data()  # df_playerstats not used
+ df_schedule_and_game_results, df_box_scores) = load_data()  # df_playerstats not used
+
+
+def build_team_game_logs_long(df_logs, df_teams):
+    """
+    Convert the combined team game logs into a long-form dataset that
+    represents one row per team per game with standardized stats.
+    """
+    df = df_logs.copy()
+    parts = df['game_id'].str.split('_', expand=True)
+    df[['year', 'week', 'home_team_id', 'away_team_id']] = parts.iloc[:, :4]
+    df.loc[:, 'season'] = df['season'].astype(int)
+    df.loc[:, 'week'] = pd.to_numeric(df['week'], errors='coerce').fillna(0).astype(int)
+
+    team_name_lookup = dict(zip(df_teams['TeamID'], df_teams['Team']))
+
+    def _build(side):
+        team_col = f"{side}_team_id"
+        stat_map = {
+            f"{side}_pass_att": "pass_att",
+            f"{side}_rush_att": "rush_att",
+            f"{side}_pass_yds": "pass_yds",
+            f"{side}_rush_yds": "rush_yds",
+        }
+        cols = ['game_id', 'season', 'week', team_col] + list(stat_map.keys())
+        side_df = df[cols].copy()
+        side_df = side_df.rename(columns={team_col: 'team_id', **stat_map})
+        side_df['team_name'] = side_df['team_id'].map(team_name_lookup).fillna(side_df['team_id'])
+        return side_df[['game_id', 'season', 'week', 'team_id', 'team_name', 'pass_att', 'rush_att', 'pass_yds', 'rush_yds']]
+
+    combined = pd.concat([_build('home'), _build('away')], ignore_index=True)
+    combined.loc[:, 'team_id'] = combined['team_id'].str.upper()
+    combined.loc[:, ['pass_att', 'rush_att', 'pass_yds', 'rush_yds']] = combined[['pass_att', 'rush_att', 'pass_yds', 'rush_yds']].astype(float)
+    return combined
+
+
+df_team_game_logs_long = build_team_game_logs_long(df_team_game_logs, df_teams)
 
 # Season selector in sidebar
 with st.sidebar:
     st.header("Filters")
-    season_options = [2024, 2025]
+    season_options = list(range(2010, 2026))
     selected_season = persistent_selectbox(
         "Select Season:",
         options=season_options,
@@ -70,15 +102,15 @@ with st.sidebar:
         container=st.sidebar,
     )
 
-# Column names
-team_name_col = 'team_name'
-week_col = 'week'
+# Use the long-form dataset for all seasons
+df_team_game_logs_selected = df_team_game_logs_long[
+    (df_team_game_logs_long['season'] == selected_season) &
+    (df_team_game_logs_long['week'].between(1, 18))
+].copy()
 
-# Select the appropriate dataset based on season
-if selected_season == 2025:
-    df_team_game_logs_selected = df_team_game_logs_2025.copy()
-else:  # 2024
-    df_team_game_logs_selected = df_team_game_logs_2024.copy()
+if df_team_game_logs_selected.empty:
+    st.error(f"No team game log data available for season {selected_season}. Please select a different season.")
+    st.stop()
 
 # Both datasets use the same column names
 # dataframes = [df_teams, df_games, df_playerstats, df_team_game_logs, df_schedule_and_game_results]  # COMMENTED OUT - dataframes list not used, df_playerstats removed
@@ -389,9 +421,12 @@ col1, col2 = st.columns(2)
 # Passing Yards
 with col1:
     st.write(f"Passing Yards ({selected_season})")
-    df_team_game_logs_filtered = df_team_game_logs_selected[(df_team_game_logs_selected[week_col] >= 1) & (df_team_game_logs_selected[week_col] <= 18)]
-    merged_data = pd.merge(df_team_game_logs_filtered, df_teams, left_on=team_name_col, right_on='Team', how='left')
-    team_passing_yards = merged_data.groupby('TeamID')['pass_yds'].mean().reset_index()
+    team_passing_yards = (
+        df_team_game_logs_selected.groupby('team_id')['pass_yds']
+        .mean()
+        .reset_index()
+        .rename(columns={'team_id': 'TeamID'})
+    )
     team_passing_yards_ranked = team_passing_yards.sort_values(by='pass_yds', ascending=False).reset_index(drop=True)
     
     # Create horizontal bar chart
@@ -422,9 +457,12 @@ with col1:
 # Rushing Yards
 with col2:
     st.write(f"Rushing Yards ({selected_season})")
-    df_team_game_logs_filtered = df_team_game_logs_selected[(df_team_game_logs_selected[week_col] >= 1) & (df_team_game_logs_selected[week_col] <= 18)]
-    merged_data = pd.merge(df_team_game_logs_filtered, df_teams, left_on=team_name_col, right_on='Team', how='left')
-    team_rushing_yards = merged_data.groupby('TeamID')['rush_yds'].mean().reset_index()
+    team_rushing_yards = (
+        df_team_game_logs_selected.groupby('team_id')['rush_yds']
+        .mean()
+        .reset_index()
+        .rename(columns={'team_id': 'TeamID'})
+    )
     team_rushing_yards_ranked = team_rushing_yards.sort_values(by='rush_yds', ascending=False).reset_index(drop=True)
     
     # Create horizontal bar chart
@@ -570,23 +608,12 @@ st.subheader(f"Avg Passing vs Rushing Plays Called")
 st.write(" ")
 
 # Average Passing and Running Plays per Game for NFL Teams
-df_team_game_logs_selected['season'] = selected_season
-season_data = df_team_game_logs_selected[df_team_game_logs_selected['season'] == selected_season]
-team_averages = season_data.groupby(team_name_col).agg({'pass_att': 'mean', 'rush_att': 'mean'}).reset_index()
-
-# Convert team names to abbreviations
-team_abbreviation_mapping = {
-    'Arizona Cardinals': 'ARI', 'Atlanta Falcons': 'ATL', 'Baltimore Ravens': 'BAL', 'Buffalo Bills': 'BUF',
-    'Carolina Panthers': 'CAR', 'Chicago Bears': 'CHI', 'Cincinnati Bengals': 'CIN', 'Cleveland Browns': 'CLE',
-    'Dallas Cowboys': 'DAL', 'Denver Broncos': 'DEN', 'Detroit Lions': 'DET', 'Green Bay Packers': 'GB',
-    'Houston Texans': 'HOU', 'Indianapolis Colts': 'IND', 'Jacksonville Jaguars': 'JAX', 'Kansas City Chiefs': 'KC',
-    'Las Vegas Raiders': 'LVR', 'Los Angeles Chargers': 'LAC', 'Los Angeles Rams': 'LAR', 'Miami Dolphins': 'MIA',
-    'Minnesota Vikings': 'MIN', 'New England Patriots': 'NE', 'New Orleans Saints': 'NO', 'New York Giants': 'NYG',
-    'New York Jets': 'NYJ', 'Philadelphia Eagles': 'PHI', 'Pittsburgh Steelers': 'PIT', 'San Francisco 49ers': 'SF',
-    'Seattle Seahawks': 'SEA', 'Tampa Bay Buccaneers': 'TB', 'Tennessee Titans': 'TEN', 'Washington Commanders': 'WAS'
-}
-team_averages['team_abbrev'] = team_averages[team_name_col].map(team_abbreviation_mapping)
-team_averages = team_averages.dropna().reset_index(drop=True)
+team_averages = (
+    df_team_game_logs_selected.groupby('team_id')
+    .agg({'pass_att': 'mean', 'rush_att': 'mean'})
+    .reset_index()
+    .rename(columns={'team_id': 'team_abbrev'})
+)
 
 # Create vertical bar charts for passing and rushing plays
 team_averages_pass_sorted = team_averages.sort_values('pass_att', ascending=False)

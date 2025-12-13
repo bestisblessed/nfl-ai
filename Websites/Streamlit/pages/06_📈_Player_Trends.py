@@ -89,8 +89,8 @@ def get_player_data_for_season(season):
     
     return df_standard
 
-# Season selector - now includes all available years from the standardized dataset
-available_seasons = [2020, 2021, 2022, 2023, 2024, 2025]
+# Season selector - now includes all available years from the standardized dataset (2010-2025)
+available_seasons = list(range(2010, 2026))
 selected_season = persistent_selectbox(
     "Select Season:",
     options=available_seasons,

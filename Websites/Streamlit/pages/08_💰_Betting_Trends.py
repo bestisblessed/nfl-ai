@@ -27,7 +27,7 @@ st.markdown(f"""
 )
 
 # Season selector
-selected_season = st.selectbox("Select Season:", [2025, 2024], index=0)
+selected_season = st.selectbox("Select Season:", list(range(2010, 2026))[::-1], index=0)  # 2010-2025, most recent first
 
 # Load data files directly if not in session state
 if 'df_teams' not in st.session_state:
