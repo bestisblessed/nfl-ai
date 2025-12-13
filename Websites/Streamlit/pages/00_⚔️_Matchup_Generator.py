@@ -96,7 +96,43 @@ st.markdown(
 if 'df_games' not in st.session_state:
     current_dir = os.path.dirname(os.path.abspath(__file__))
     df_games = pd.read_csv(os.path.join(current_dir, '../data', 'Games.csv'))
-    df_playerstats = pd.read_csv(os.path.join(current_dir, '../data', 'PlayerStats.csv'))
+    # df_playerstats = pd.read_csv(os.path.join(current_dir, '../data', 'PlayerStats.csv'))  # COMMENTED OUT - Missing 2025 data
+    # Load all_passing_rushing_receiving.csv instead (has 2010-2025)
+    df_all_passing_rushing_receiving = pd.read_csv(os.path.join(current_dir, '../data', 'all_passing_rushing_receiving.csv'))
+    # Map columns to match PlayerStats.csv format
+    df_playerstats = df_all_passing_rushing_receiving.copy()
+    df_playerstats['player_display_name'] = df_playerstats['player']
+    df_playerstats['player_current_team'] = df_playerstats['team']
+    df_playerstats['passing_yards'] = df_playerstats['pass_yds']
+    df_playerstats['rushing_yards'] = df_playerstats['rush_yds']
+    df_playerstats['receiving_yards'] = df_playerstats['rec_yds']
+    df_playerstats['passing_tds'] = df_playerstats['pass_td']
+    df_playerstats['rushing_tds'] = df_playerstats['rush_td']
+    df_playerstats['receiving_tds'] = df_playerstats['rec_td']
+    # Map additional columns used in display
+    df_playerstats['completions'] = df_playerstats['pass_cmp']
+    df_playerstats['attempts'] = df_playerstats['pass_att']
+    df_playerstats['interceptions'] = df_playerstats['pass_int']
+    df_playerstats['sacks'] = df_playerstats['pass_sacked']
+    df_playerstats['carries'] = df_playerstats['rush_att']
+    df_playerstats['receptions'] = df_playerstats['rec']
+    # 'targets' column already exists in both files
+    # Derive home_team, away_team, and week from game_id (format: YYYY_WW_AWAY_HOME)
+    game_id_parts = df_playerstats['game_id'].str.split('_', expand=True)
+    df_playerstats['week'] = pd.to_numeric(game_id_parts[1], errors='coerce')
+    df_playerstats['away_team'] = game_id_parts[2]
+    df_playerstats['home_team'] = game_id_parts[3]
+    # Calculate fantasy_points_ppr if not present (standard PPR: 1 point per reception, 0.1 per yard, 6 per TD)
+    if 'fantasy_points_ppr' not in df_playerstats.columns:
+        df_playerstats['fantasy_points_ppr'] = (
+            df_playerstats['rec'].fillna(0) * 1.0 +  # Receptions
+            df_playerstats['rec_yds'].fillna(0) * 0.1 +  # Receiving yards
+            df_playerstats['rush_yds'].fillna(0) * 0.1 +  # Rushing yards
+            df_playerstats['pass_yds'].fillna(0) * 0.04 +  # Passing yards
+            df_playerstats['rec_td'].fillna(0) * 6.0 +  # Receiving TDs
+            df_playerstats['rush_td'].fillna(0) * 6.0 +  # Rushing TDs
+            df_playerstats['pass_td'].fillna(0) * 4.0  # Passing TDs (typically 4 pts)
+        )
     # Load 2025 roster as source of truth for current players
     df_roster2025 = pd.read_csv(os.path.join(current_dir, '../data/rosters', 'roster_2025.csv'))
     # Normalize team abbreviations: roster uses 'LV' and 'LA', but we need 'LVR' and 'LAR' to match Games.csv
@@ -138,7 +174,42 @@ if 'df_games' not in st.session_state:
     st.session_state['df_redzone'] = df_redzone
 else:
     df_games = st.session_state['df_games'] 
-    df_playerstats = st.session_state['df_playerstats']
+    df_playerstats = st.session_state.get('df_playerstats')
+    # If df_playerstats doesn't have mapped columns, reload and map from all_passing_rushing_receiving.csv
+    if df_playerstats is None or 'player_display_name' not in df_playerstats.columns:
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        df_all_passing_rushing_receiving = pd.read_csv(os.path.join(current_dir, '../data', 'all_passing_rushing_receiving.csv'))
+        df_playerstats = df_all_passing_rushing_receiving.copy()
+        df_playerstats['player_display_name'] = df_playerstats['player']
+        df_playerstats['player_current_team'] = df_playerstats['team']
+        df_playerstats['passing_yards'] = df_playerstats['pass_yds']
+        df_playerstats['rushing_yards'] = df_playerstats['rush_yds']
+        df_playerstats['receiving_yards'] = df_playerstats['rec_yds']
+        df_playerstats['passing_tds'] = df_playerstats['pass_td']
+        df_playerstats['rushing_tds'] = df_playerstats['rush_td']
+        df_playerstats['receiving_tds'] = df_playerstats['rec_td']
+        # Map additional columns used in display
+        df_playerstats['completions'] = df_playerstats['pass_cmp']
+        df_playerstats['attempts'] = df_playerstats['pass_att']
+        df_playerstats['interceptions'] = df_playerstats['pass_int']
+        df_playerstats['sacks'] = df_playerstats['pass_sacked']
+        df_playerstats['carries'] = df_playerstats['rush_att']
+        df_playerstats['receptions'] = df_playerstats['rec']
+        game_id_parts = df_playerstats['game_id'].str.split('_', expand=True)
+        df_playerstats['week'] = pd.to_numeric(game_id_parts[1], errors='coerce')
+        df_playerstats['away_team'] = game_id_parts[2]
+        df_playerstats['home_team'] = game_id_parts[3]
+        if 'fantasy_points_ppr' not in df_playerstats.columns:
+            df_playerstats['fantasy_points_ppr'] = (
+                df_playerstats['rec'].fillna(0) * 1.0 +
+                df_playerstats['rec_yds'].fillna(0) * 0.1 +
+                df_playerstats['rush_yds'].fillna(0) * 0.1 +
+                df_playerstats['pass_yds'].fillna(0) * 0.04 +
+                df_playerstats['rec_td'].fillna(0) * 6.0 +
+                df_playerstats['rush_td'].fillna(0) * 6.0 +
+                df_playerstats['pass_td'].fillna(0) * 4.0
+            )
+        st.session_state['df_playerstats'] = df_playerstats
     df_roster2025 = st.session_state.get('df_roster2025')
     df_team_game_logs = st.session_state.get('df_team_game_logs')
     df_defense_logs = st.session_state.get('df_defense_logs')

@@ -38,7 +38,7 @@ def load_data():
     try:
         df_teams = pd.read_csv(os.path.join(current_dir, '../data', 'Teams.csv'))
         df_games = pd.read_csv(os.path.join(current_dir, '../data', 'Games.csv'))
-        df_playerstats = pd.read_csv(os.path.join(current_dir, '../data', 'PlayerStats.csv'))
+        # df_playerstats = pd.read_csv(os.path.join(current_dir, '../data', 'PlayerStats.csv'))  # COMMENTED OUT - Missing 2025 data, not used in this page
         df_team_game_logs = pd.read_csv(os.path.join(current_dir, '../data', 'all_team_game_logs.csv'))
         df_schedule_and_game_results = pd.read_csv(os.path.join(current_dir, '../data', 'all_teams_schedule_and_game_results_merged.csv'))
         df_box_scores = pd.read_csv(os.path.join(current_dir, '../data', 'all_box_scores.csv'))
@@ -47,15 +47,15 @@ def load_data():
         df_team_game_logs_2024 = pd.read_csv(os.path.join(current_dir, '../data', 'SR-game-logs/all_teams_game_logs_2024.csv'))
         df_team_game_logs_2025 = pd.read_csv(os.path.join(current_dir, '../data', 'SR-game-logs/all_teams_game_logs_2025.csv'))
         
-        return (df_teams, df_games, df_playerstats, df_team_game_logs, 
-                df_schedule_and_game_results, df_team_game_logs_2024, df_team_game_logs_2025, df_box_scores)
+        return (df_teams, df_games, None, df_team_game_logs, 
+                df_schedule_and_game_results, df_team_game_logs_2024, df_team_game_logs_2025, df_box_scores)  # df_playerstats replaced with None
     except FileNotFoundError as e:
         st.error(f"Error loading data files: {e}")
         st.stop()
 
 # Load all data
-(df_teams, df_games, df_playerstats, df_team_game_logs, 
- df_schedule_and_game_results, df_team_game_logs_2024, df_team_game_logs_2025, df_box_scores) = load_data()
+(df_teams, df_games, _, df_team_game_logs, 
+ df_schedule_and_game_results, df_team_game_logs_2024, df_team_game_logs_2025, df_box_scores) = load_data()  # df_playerstats not used
 
 # Season selector in sidebar
 with st.sidebar:
@@ -81,7 +81,7 @@ else:  # 2024
     df_team_game_logs_selected = df_team_game_logs_2024.copy()
 
 # Both datasets use the same column names
-dataframes = [df_teams, df_games, df_playerstats, df_team_game_logs, df_schedule_and_game_results]
+# dataframes = [df_teams, df_games, df_playerstats, df_team_game_logs, df_schedule_and_game_results]  # COMMENTED OUT - dataframes list not used, df_playerstats removed
 
 ### --- Home vs Away Record --- ###
 st.divider()

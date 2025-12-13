@@ -45,19 +45,19 @@ def load_data():
     try:
         df_teams = pd.read_csv(os.path.join(current_dir, '../data', 'Teams.csv'))
         df_games = pd.read_csv(os.path.join(current_dir, '../data', 'Games.csv'))
-        df_playerstats = pd.read_csv(os.path.join(current_dir, '../data', 'PlayerStats.csv'))
+        # df_playerstats = pd.read_csv(os.path.join(current_dir, '../data', 'PlayerStats.csv'))  # COMMENTED OUT - Missing 2025 data, not used in this page
         df_team_game_logs = pd.read_csv(os.path.join(current_dir, '../data', 'all_team_game_logs.csv'))
         df_schedule_and_game_results = pd.read_csv(os.path.join(current_dir, '../data', 'all_teams_schedule_and_game_results_merged.csv'))
         df_all_passing_rushing_receiving = pd.read_csv(os.path.join(current_dir, '../data', 'all_passing_rushing_receiving.csv'))
         
-        return (df_teams, df_games, df_playerstats, df_team_game_logs, 
-                df_schedule_and_game_results, df_all_passing_rushing_receiving)
+        return (df_teams, df_games, None, df_team_game_logs, 
+                df_schedule_and_game_results, df_all_passing_rushing_receiving)  # df_playerstats replaced with None
     except FileNotFoundError as e:
         st.error(f"Error loading data files: {e}")
         st.stop()
 
 # Load all data
-df_teams, df_games, df_playerstats, df_team_game_logs, df_schedule_and_game_results, df_all_passing_rushing_receiving = load_data()
+df_teams, df_games, _, df_team_game_logs, df_schedule_and_game_results, df_all_passing_rushing_receiving = load_data()  # df_playerstats not used
 
 # Load the comprehensive player data
 current_dir = os.path.dirname(os.path.abspath(__file__))
