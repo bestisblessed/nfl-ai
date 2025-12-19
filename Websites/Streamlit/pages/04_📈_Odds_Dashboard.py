@@ -390,7 +390,7 @@ with col2:
                             default_index = sportsbooks.index('Circa') if 'Circa' in sportsbooks else 0
                             selected_sportsbook = st.selectbox("Select Sportsbook", sportsbooks, index=default_index, key=f"sb_{team}_{game['game_date']}_{game['time']}")
                             filtered_data = relevant_odds_movements[relevant_odds_movements['sportsbook'] == selected_sportsbook]
-                            st.dataframe(filtered_data[['timestamp', 'sportsbook', 'odds_before', 'odds_after']], use_container_width=True)
+                            st.dataframe(filtered_data[['timestamp', 'sportsbook', 'odds_before', 'odds_after']], width='stretch')
                         else:
                             st.write("No odds movement data available for this game.")
 
@@ -598,7 +598,7 @@ with col2:
                                 tickwidth=2
                             )
 
-                            st.plotly_chart(fig, use_container_width=True)
+                            st.plotly_chart(fig, width='stretch')
                         else:
                             st.warning("No valid odds movement data available for plotting this matchup.")
                     except Exception as e:

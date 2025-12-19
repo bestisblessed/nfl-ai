@@ -419,7 +419,7 @@ with col2:
         styled_table = display_table.style.map(style_heatmap_offense, subset=["QB (rushing)", "WR", "TE", "RB"])
         styled_table = styled_table.map(lambda x: "font-weight: bold; color: #2c3e50;" if isinstance(x, (int, float)) else "", subset=["total"])
 
-        st.dataframe(styled_table, use_container_width=True, height=600)
+        st.dataframe(styled_table, width='stretch', height=600)
 
         # Top producers by position section - 2x2 layout
         st.write('####')
@@ -571,7 +571,7 @@ with col2:
         styled_table = display_table.style.map(style_heatmap, subset=["QB (rushing)", "WR", "TE", "RB"])
         styled_table = styled_table.map(lambda x: "font-weight: bold; color: #2c3e50;" if isinstance(x, (int, float)) else "", subset=["total"])
 
-        st.dataframe(styled_table, use_container_width=True, height=600)
+        st.dataframe(styled_table, width='stretch', height=600)
 
         # Most vulnerable by position section - 2x2 layout without nested columns
         st.write('####')

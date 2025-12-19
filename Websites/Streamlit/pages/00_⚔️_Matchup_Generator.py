@@ -504,7 +504,7 @@ def show_condensed_players(historical_df, team_name, opponent_name):
 
     with st.container():
         # Summary: restore full players table at top
-        st.dataframe(display_df[['Player','Pos','Games']], use_container_width=True, hide_index=True)
+        st.dataframe(display_df[['Player','Pos','Games']], width='stretch', hide_index=True)
         for _, row in display_df.iterrows():
             pname = row['Player']
             ppos = row['Pos'] if 'Pos' in row else None
@@ -563,7 +563,7 @@ def show_condensed_players(historical_df, team_name, opponent_name):
                 display_games = player_games[available_cols].copy()
                 if 'season' in display_games.columns:
                     display_games['season'] = display_games['season'].astype(int)
-                st.dataframe(display_games, use_container_width=True, height=260, hide_index=True, 
+                st.dataframe(display_games, width='stretch', height=260, hide_index=True, 
                            column_config={
                                'season': st.column_config.NumberColumn(
                                    'season',
@@ -1595,7 +1595,7 @@ with col2:
     # Center the generate button
     btn_c1, btn_c2, btn_c3 = st.columns([1, 1, 1])
     with btn_c2:
-        generate_clicked = st.button('Generate Report', use_container_width=True)
+        generate_clicked = st.button('Generate Report', width='stretch')
 
     # Auto-generate only for the default matchup when selections are BUF vs MIA
     if team1 == 'BUF' and team2 == 'MIA':
@@ -1758,7 +1758,7 @@ with col2:
                 with st.expander("Per-game results", expanded=False):
                     df_display = show_df.copy()
                     cols = ['game_id','home_team','away_team','home_score','away_score','Favorite','Total Line','O/U Result', f'{team1} Spread', f'{team1} ATS', f'{team2} Spread', f'{team2} ATS']
-                    st.dataframe(df_display[cols], use_container_width=True, hide_index=True)
+                    st.dataframe(df_display[cols], width='stretch', hide_index=True)
                     # st.download_button(
                     #     label="Download games (CSV)",
                     #     data=df_display.to_csv(index=False),
@@ -1790,7 +1790,7 @@ with col2:
                 # Centered heading above ATS distribution chart
                 with cpie1:
                     st.markdown("<div style='text-align:right; font-weight:600; margin-bottom:5px; margin-right:50px;'>Head-to-Head ATS Distribution</div>", unsafe_allow_html=True)
-                    st.plotly_chart(pie_ats, use_container_width=True)
+                    st.plotly_chart(pie_ats, width='stretch')
             if (ou_over + ou_under + ou_push) > 0:
                 pie_ou = px.pie(
                     values=[ou_over, ou_under, ou_push],
@@ -1812,7 +1812,7 @@ with col2:
                 # Centered heading above Totals (O/U) distribution chart
                 with cpie2:
                     st.markdown("<div style='text-align:left; font-weight:600; margin-bottom:5px; margin-left:69px;'>Head-to-Head Totals (O/U)</div>", unsafe_allow_html=True)
-                    st.plotly_chart(pie_ou, use_container_width=True)
+                    st.plotly_chart(pie_ou, width='stretch')
 
             # Store defensive metrics for full-width display below
             t1_def_early = calculate_defense_summary(df_defense_logs, df_team_game_logs, team1, last_n_games=10, df_games_ctx=df_games)
@@ -2038,7 +2038,7 @@ if all(k in st.session_state for k in ['rg_team1', 'rg_team2']):
         st.write(" ")
         t1_top = compute_top_skill_performers(st.session_state.get('rg_hist_team1', pd.DataFrame()), top_n=4)      
         if not t1_top.empty:
-            st.dataframe(t1_top, use_container_width=True, hide_index=True)
+            st.dataframe(t1_top, width='stretch', hide_index=True)
         else:
             st.write("No skill-position data available")
     with top_right:
@@ -2046,7 +2046,7 @@ if all(k in st.session_state for k in ['rg_team1', 'rg_team2']):
         st.write(" ")
         t2_top = compute_top_skill_performers(st.session_state.get('rg_hist_team2', pd.DataFrame()), top_n=4)
         if not t2_top.empty:
-            st.dataframe(t2_top, use_container_width=True, hide_index=True)
+            st.dataframe(t2_top, width='stretch', hide_index=True)
         else:
             st.write("No skill-position data available")
 
@@ -2060,7 +2060,7 @@ if all(k in st.session_state for k in ['rg_team1', 'rg_team2']):
         st.write(" ")
         rz_t1 = get_redzone_targets(df_redzone, team1, year=2025)
         if not rz_t1.empty:
-            st.dataframe(rz_t1, use_container_width=True, hide_index=True)
+            st.dataframe(rz_t1, width='stretch', hide_index=True)
         else:
             st.write("No red-zone data available")
     with rz_right:
@@ -2068,7 +2068,7 @@ if all(k in st.session_state for k in ['rg_team1', 'rg_team2']):
         st.write(" ")
         rz_t2 = get_redzone_targets(df_redzone, team2, year=2025)
         if not rz_t2.empty:
-            st.dataframe(rz_t2, use_container_width=True, hide_index=True)
+            st.dataframe(rz_t2, width='stretch', hide_index=True)
         else:
             st.write("No red-zone data available")
 
@@ -2114,7 +2114,7 @@ if all(k in st.session_state for k in ['rg_report_data', 'rg_team1', 'rg_team2']
             data=html_content,
             file_name=f"{st.session_state['rg_team1']}_vs_{st.session_state['rg_team2']}_matchup_report.html",
             mime="text/html",
-            use_container_width=True,
+            width='stretch',
             type='primary'
         )
 

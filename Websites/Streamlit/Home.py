@@ -156,7 +156,7 @@ with right_column:
     image_path = os.path.join(BASE_DIR, 'images/justin-jefferson-2.jpg')
     if os.path.exists(image_path):
         right_column_image = Image.open(image_path)
-        st.image(right_column_image, use_container_width=True)
+        st.image(right_column_image, width='stretch')
 
 # ---- Pages & Tools ---- #
 st.divider()
@@ -528,18 +528,18 @@ image3list = Image.open(image3_path)
 # col1, col2, col3 = st.columns(3)
 col1, col2, col3 = st.columns([1, 1.25, 1])  # Proportions for the columns
 with col1:
-    st.image(image1list, use_container_width=True, caption="Ceedee 88")
+    st.image(image1list, width='stretch', caption="Ceedee 88")
 with col2:
-    st.image(image2list, use_container_width=True, caption="Bryant 88")
+    st.image(image2list, width='stretch', caption="Bryant 88")
     # st.image(image2list, height=400, caption="Bryant 88")  # Specify height for this image
 with col3:
-    st.image(image3list, use_container_width=True, caption="Irvin 88")
+    st.image(image3list, width='stretch', caption="Irvin 88")
 
 # JD image full size
 st.write('##')
 jd_image_path = os.path.join(current_dir, 'images/jd.png')
 if os.path.exists(jd_image_path):
-    st.image(Image.open(jd_image_path), use_container_width=True, caption="JD5")
+    st.image(Image.open(jd_image_path), width='stretch', caption="JD5")
 else:
     st.warning(f"JD image not found. Tried: {jd_image_path}")
 
@@ -547,7 +547,7 @@ else:
 # st.write('##')
 # col1, col2, col3 = st.columns([1, 4, 1])
 # with col2:
-#     st.image(image4list, use_container_width=True, caption="JJettas")
+#     st.image(image4list, width='stretch', caption="JJettas")
 
 # ### Video
 # video1 = 'https://www.youtube.com/watch?v=K8RQkt3Ee0Y'
