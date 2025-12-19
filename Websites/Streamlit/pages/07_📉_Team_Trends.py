@@ -206,7 +206,7 @@ if 'OT1' in df_box_scores_proc.columns:
 
 # Merge with games to get week info
 df_games_date = df_games.copy()
-df_games_date['date'] = pd.to_datetime(df_games_date['date'])
+df_games_date['date'] = pd.to_datetime(df_games_date['date'], format='%Y-%m-%d %H:%M:%S')
 df_merged_box = df_box_scores_proc.merge(df_games_date[['date', 'week', 'season']], on=['date', 'season'], how='left')
 
 # Map team names to TeamIDs

@@ -371,7 +371,7 @@ def calculate_defense_summary(df_defense_logs: pd.DataFrame, df_team_game_logs: 
         # Identify recent N games using df_games if available for better date sorting
         if isinstance(df_games_ctx, pd.DataFrame) and not df_games_ctx.empty and 'date' in df_games_ctx.columns:
             games = df_games_ctx[(df_games_ctx['home_team'] == team) | (df_games_ctx['away_team'] == team)].dropna(subset=['home_score','away_score']).copy()
-            games.loc[:, 'date'] = pd.to_datetime(games['date'], errors='coerce')
+            games.loc[:, 'date'] = pd.to_datetime(games['date'], format='%Y-%m-%d %H:%M:%S', errors='coerce')
             games = games.sort_values('date').tail(last_n_games)
             recent_ids = set(games['game_id'].astype(str))
             logs = logs_all[logs_all['game_id'].astype(str).isin(recent_ids)].copy()
@@ -382,7 +382,7 @@ def calculate_defense_summary(df_defense_logs: pd.DataFrame, df_team_game_logs: 
         if not logs.empty:
             # Sort by any available date or game_id for recency and take last N
             if 'date' in logs.columns:
-                logs.loc[:, 'date'] = pd.to_datetime(logs['date'], errors='coerce')
+                logs.loc[:, 'date'] = pd.to_datetime(logs['date'], format='%Y-%m-%d %H:%M:%S', errors='coerce')
                 logs = logs.sort_values('date')
             elif 'game_id' in logs.columns:
                 logs = logs.sort_values('game_id')
@@ -1439,7 +1439,7 @@ def _generate_player_html(historical_df, team_name, opponent_name):
 def _parse_games_datetime(df: pd.DataFrame) -> pd.DataFrame:
     if 'date' in df.columns:
         df = df.copy()
-        df.loc[:, 'date'] = pd.to_datetime(df['date'], errors='coerce')
+        df.loc[:, 'date'] = pd.to_datetime(df['date'], format='%Y-%m-%d %H:%M:%S', errors='coerce')
     return df
 
 def _get_team_points(row: pd.Series, team_abbrev: str) -> tuple[float, float, float]:
@@ -1713,7 +1713,7 @@ with col2:
                 for c in cols_needed:
                     if c not in games.columns:
                         games[c] = np.nan
-                games['date'] = pd.to_datetime(games['date'], errors='coerce')
+                games['date'] = pd.to_datetime(games['date'], format='%Y-%m-%d %H:%M:%S', errors='coerce')
                 games = games.sort_values('date', ascending=False)
 
                 def game_row_outcomes(row):
@@ -1747,7 +1747,7 @@ with col2:
                     games['game_id_display'] = games['game_id'].astype(str)
                 else:
                     def _mk_id(r):
-                        d = pd.to_datetime(r.get('date'), errors='coerce')
+                        d = pd.to_datetime(r.get('date'), format='%Y-%m-%d %H:%M:%S', errors='coerce')
                         dstr = d.strftime('%Y-%m-%d') if pd.notna(d) else ''
                         return f"{dstr} {r.get('away_team','')} @ {r.get('home_team','')}"
                     games['game_id_display'] = games.apply(_mk_id, axis=1)
@@ -1860,11 +1860,11 @@ with col2:
             if not historical_stats_team1.empty:
                 if 'date' not in historical_stats_team1.columns:
                     historical_stats_team1 = historical_stats_team1.merge(df_games[['game_id', 'date']], on='game_id', how='left')
-                historical_stats_team1.loc[:, 'date'] = pd.to_datetime(historical_stats_team1['date'], errors='coerce')
+                historical_stats_team1.loc[:, 'date'] = pd.to_datetime(historical_stats_team1['date'], format='%Y-%m-%d %H:%M:%S', errors='coerce')
             if not historical_stats_team2.empty:
                 if 'date' not in historical_stats_team2.columns:
                     historical_stats_team2 = historical_stats_team2.merge(df_games[['game_id', 'date']], on='game_id', how='left')
-                historical_stats_team2.loc[:, 'date'] = pd.to_datetime(historical_stats_team2['date'], errors='coerce')
+                historical_stats_team2.loc[:, 'date'] = pd.to_datetime(historical_stats_team2['date'], format='%Y-%m-%d %H:%M:%S', errors='coerce')
 
             # Add player position to the player display name for both teams (avoid SettingWithCopyWarning)
             if not historical_stats_team1.empty:

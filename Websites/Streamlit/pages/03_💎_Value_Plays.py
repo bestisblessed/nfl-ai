@@ -364,10 +364,13 @@ week_games_df = load_games_for_week(selected_week_number)
 if not week_games_df.empty and "home_team" in week_games_df.columns and "away_team" in week_games_df.columns:
     week_games_df = week_games_df.copy()
     if 'date' in week_games_df.columns and 'gametime' in week_games_df.columns:
+        # Parse date column (YYYY-MM-DD HH:MM:SS) and gametime (HH:MM) separately
+        # Games.csv has date with dummy time 00:00:00 and gametime with actual game time
+        week_games_df['date_only'] = pd.to_datetime(week_games_df['date'], format='%Y-%m-%d %H:%M:%S').dt.date
         week_games_df['start_time'] = pd.to_datetime(
-            week_games_df['date'].astype(str) + " " + week_games_df['gametime'].astype(str),
-            errors='coerce',
-            format='mixed'
+            week_games_df['date_only'].astype(str) + " " + week_games_df['gametime'].astype(str),
+            format='%Y-%m-%d %H:%M',
+            errors='coerce'
         )
         week_games_df['start_time'] = week_games_df['start_time'].fillna(pd.Timestamp.max)
         week_games_df = week_games_df.sort_values(['start_time', 'home_team', 'away_team'])
