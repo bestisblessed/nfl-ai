@@ -609,7 +609,7 @@ if selected_game_key and selected_game_key != "All Games":
         display_df["Proj (yds)"] = display_df["Proj (yds)"].round(1)
         display_df["Edge (yds)"] = display_df["Edge (yds)"].round(1)
         display_df["Side"] = display_df["Side"].apply(format_side_with_emoji)
-        display_df = display_df[["Player", "Side", "Proj (yds)", "Edge (yds)", "Edge %", "Best Line", "Book"]]
+        display_df = display_df[["Player", "Side", "Best Line", "Proj (yds)", "Edge (yds)", "Edge %", "Book"]]
         display_df = display_df.sort_values(by="Edge (yds)", ascending=False, na_position='last')
         return display_df
     
@@ -665,10 +665,10 @@ if selected_game_key and selected_game_key != "All Games":
                     "Player": st.column_config.TextColumn(width=None),
                     # "Tm": st.column_config.TextColumn(width=35),
                     "Side": st.column_config.TextColumn(width=60),
+                    "Best Line": st.column_config.TextColumn("Best Line", width="small"),
                     "Proj (yds)": st.column_config.NumberColumn("Proj (yds)", format="%.1f", width=65),
                     "Edge (yds)": st.column_config.NumberColumn("Edge (yds)", format="%.1f", width=65),
                     "Edge %": st.column_config.NumberColumn("Edge %", format="%.1f", width=60),
-                    "Best Line": st.column_config.TextColumn("Best Line", width="small"),
                     "Book": st.column_config.TextColumn(width="small"),
                 },
             )
@@ -712,10 +712,10 @@ if selected_game_key and selected_game_key != "All Games":
                     "Player": st.column_config.TextColumn(width=None),
                     # "Tm": st.column_config.TextColumn(width=35),
                     "Side": st.column_config.TextColumn(width=60),
+                    "Best Line": st.column_config.TextColumn("Best Line", width="small"),
                     "Proj (yds)": st.column_config.NumberColumn("Proj (yds)", format="%.1f", width=65),
                     "Edge (yds)": st.column_config.NumberColumn("Edge (yds)", format="%.1f", width=65),
                     "Edge %": st.column_config.NumberColumn("Edge %", format="%.1f", width=60),
-                    "Best Line": st.column_config.TextColumn("Best Line", width="small"),
                     "Book": st.column_config.TextColumn(width="small"),
                 },
             )
@@ -762,10 +762,10 @@ if selected_game_key and selected_game_key != "All Games":
                     "Player": st.column_config.TextColumn(width=None),
                     # "Tm": st.column_config.TextColumn(width=35),
                     "Side": st.column_config.TextColumn(width=60),
+                    "Best Line": st.column_config.TextColumn("Best Line", width="small"),
                     "Proj (yds)": st.column_config.NumberColumn("Proj (yds)", format="%.1f", width=65),
                     "Edge (yds)": st.column_config.NumberColumn("Edge (yds)", format="%.1f", width=65),
                     "Edge %": st.column_config.NumberColumn("Edge %", format="%.1f", width=60),
-                    "Best Line": st.column_config.TextColumn("Best Line", width="small"),
                     "Book": st.column_config.TextColumn(width="small"),
                 },
             )
@@ -809,10 +809,10 @@ if selected_game_key and selected_game_key != "All Games":
                     "Player": st.column_config.TextColumn(width=None),
                     # "Tm": st.column_config.TextColumn(width=35),
                     "Side": st.column_config.TextColumn(width=60),
+                    "Best Line": st.column_config.TextColumn("Best Line", width="small"),
                     "Proj (yds)": st.column_config.NumberColumn("Proj (yds)", format="%.1f", width=65),
                     "Edge (yds)": st.column_config.NumberColumn("Edge (yds)", format="%.1f", width=65),
                     "Edge %": st.column_config.NumberColumn("Edge %", format="%.1f", width=60),
-                    "Best Line": st.column_config.TextColumn("Best Line", width="small"),
                     "Book": st.column_config.TextColumn(width="small"),
                 },
             )
@@ -859,10 +859,10 @@ if selected_game_key and selected_game_key != "All Games":
                     "Player": st.column_config.TextColumn(width=None),
                     # "Tm": st.column_config.TextColumn(width=35),
                     "Side": st.column_config.TextColumn(width=60),
+                    "Best Line": st.column_config.TextColumn("Best Line", width="small"),
                     "Proj (yds)": st.column_config.NumberColumn("Proj (yds)", format="%.1f", width=65),
                     "Edge (yds)": st.column_config.NumberColumn("Edge (yds)", format="%.1f", width=65),
                     "Edge %": st.column_config.NumberColumn("Edge %", format="%.1f", width=60),
-                    "Best Line": st.column_config.TextColumn("Best Line", width="small"),
                     "Book": st.column_config.TextColumn(width="small"),
                 },
             )
@@ -907,10 +907,10 @@ if selected_game_key and selected_game_key != "All Games":
                     # "Player": st.column_config.TextColumn(width="medium"),
                     # "Tm": st.column_config.TextColumn(width=35),
                     "Side": st.column_config.TextColumn(width=60),
+                    "Best Line": st.column_config.TextColumn("Best Line", width="small"),
                     "Proj (yds)": st.column_config.NumberColumn("Proj (yds)", format="%.1f", width=65),
                     "Edge (yds)": st.column_config.NumberColumn("Edge (yds)", format="%.1f", width=65),
                     "Edge %": st.column_config.NumberColumn("Edge %", format="%.1f", width=60),
-                    "Best Line": st.column_config.TextColumn("Best Line", width="small"),
                     "Book": st.column_config.TextColumn(width="small"),
                 },
             )
@@ -1000,7 +1000,7 @@ else:
             display_df["Best Line (yds)"] = display_df["Best Line (yds)"].round(1)
             display_df["Best Odds"] = display_df["Best Odds"].round().astype("Int64")
             display_df["Edge (yds)"] = display_df["Edge (yds)"].round(2)
-            display_df = display_df[["#", "Player", "Pos", "Team", "Opp", "Projection (yds)", "Best Line (yds)", "Best Odds", "Edge (yds)", "Edge % (norm)", "Indicator", "Side", "Book"]]
+            display_df = display_df[["#", "Player", "Pos", "Team", "Opp", "Best Line (yds)", "Projection (yds)", "Best Odds", "Edge (yds)", "Edge % (norm)", "Indicator", "Side", "Book"]]
             
             # Sort FIRST by Edge (yds) before formatting
             display_df = display_df.sort_values(by="Edge (yds)", ascending=False, na_position='last')
