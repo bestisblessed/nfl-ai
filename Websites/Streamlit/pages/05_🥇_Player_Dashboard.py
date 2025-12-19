@@ -377,7 +377,7 @@ with col1:
 
     if player_name is not None and pd.notna(headshot_url):  # Check if player_name and URL exist
         try:
-            st.image(headshot_url, caption=player_name, use_container_width=True)
+            st.image(headshot_url, caption=player_name, width='stretch')
         except Exception as e:
             st.write(f"Could not load image for {player_name}")
     elif player_name is not None:
@@ -506,7 +506,7 @@ with col2:
         # Then show the graph
         last_10_games, fig_last_10 = fetch_last_10_games_and_plot(player_name, player_position)
         if fig_last_10 is not None:
-            st.plotly_chart(fig_last_10, use_container_width=True)
+            st.plotly_chart(fig_last_10, width='stretch')
 
 st.divider()
 
@@ -549,7 +549,7 @@ if last_10_games is not None:
     # st.subheader('Last 10 Games:')
     st.subheader(f"Last 10 Games for {player_name}")
     st.write("")
-    st.dataframe(last_10_games, use_container_width=True, hide_index=True)
+    st.dataframe(last_10_games, width='stretch', hide_index=True)
 
 st.divider()
 
@@ -621,7 +621,7 @@ def plot_last_20_games_prop_trend(player_name, player_position=None):
                 height=500,
                 legend_title=''
             )
-            st.plotly_chart(fig, use_container_width=True)
+            st.plotly_chart(fig, width='stretch')
 
         with spacer_col:
             st.write("")
@@ -638,7 +638,7 @@ def plot_last_20_games_prop_trend(player_name, player_position=None):
             table_columns = ['game_id', 'pass_att', 'pass_cmp', 'pass_yds']
             available_columns = [col for col in table_columns if col in recent_games.columns]
             table_data = recent_games[available_columns].copy().iloc[::-1]
-            st.dataframe(table_data, use_container_width=True, height=350, hide_index=True)
+            st.dataframe(table_data, width='stretch', height=350, hide_index=True)
         return None
 
     # Non-QB: keep longest reception trend
@@ -673,7 +673,7 @@ def plot_last_20_games_prop_trend(player_name, player_position=None):
             template='plotly_dark',
             height=500,
         )
-        st.plotly_chart(fig, use_container_width=True)
+        st.plotly_chart(fig, width='stretch')
 
     with spacer_col:
         st.write("")
@@ -690,7 +690,7 @@ def plot_last_20_games_prop_trend(player_name, player_position=None):
         available_columns = [col for col in table_columns if col in recent_games.columns]
         table_data = recent_games[available_columns].copy()
         table_data = table_data.iloc[::-1]
-        st.dataframe(table_data, use_container_width=True, height=350, hide_index=True)
+        st.dataframe(table_data, width='stretch', height=350, hide_index=True)
 
 if player_name is not None:
     plot_last_20_games_prop_trend(player_name, player_position)
@@ -747,7 +747,7 @@ def plot_reception_distribution(player_name, player_position=None):
         template='plotly_dark',
         height=400,  # Fixed height for better tiling
     )
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width='stretch')
 
 if player_name is not None:
     plot_reception_distribution(player_name, player_position)
@@ -813,7 +813,7 @@ if player_name is not None:
     )
     historical_performance = fetch_historical_performance(player_name, opponent_team_abbr, player_position)
     if historical_performance is not None:
-        st.dataframe(historical_performance, use_container_width=True, hide_index=True)
+        st.dataframe(historical_performance, width='stretch', hide_index=True)
     else:
         st.write("No historical data found for this player against the selected team.")
 
@@ -867,7 +867,7 @@ if player_name is not None:
     )
     prop_highlight = get_player_prop_highlight(player_name, opponent_team_abbr, player_position)
     if prop_highlight is not None:
-        st.dataframe(prop_highlight, use_container_width=True, hide_index=True)
+        st.dataframe(prop_highlight, width='stretch', hide_index=True)
     else:
         st.write("No data found for this player against the selected team.")
 

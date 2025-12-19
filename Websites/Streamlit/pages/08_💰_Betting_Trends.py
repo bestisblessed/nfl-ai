@@ -228,7 +228,7 @@ with tab2:
     st.bar_chart(over_under_df.set_index('team'), color=[ '#00ff00', '#0000ff', '#ff0000'], horizontal=True)
     if st.button("Show Details", key="overall_details"):
         sorted_over_under_df = over_under_df.sort_values(by='over', ascending=False, ignore_index=True)
-        st.dataframe(sorted_over_under_df, use_container_width=True)
+        st.dataframe(sorted_over_under_df, width='stretch')
     else:
         st.write("")
 
@@ -237,7 +237,7 @@ with tab2:
     st.bar_chart(home_over_under_df.set_index('team'), color=['#00ff00', '#0000ff', '#ff0000'], horizontal=True)
     if st.button("Show Details", key="home_details"):
         sorted_home_over_under_df = home_over_under_df.sort_values(by='over', ascending=False, ignore_index=True)
-        st.dataframe(sorted_home_over_under_df, use_container_width=True)
+        st.dataframe(sorted_home_over_under_df, width='stretch')
     else:
         st.write("")
 
@@ -246,7 +246,7 @@ with tab2:
     st.bar_chart(away_over_under_df.set_index('team'), color=['#00ff00', '#0000ff', '#ff0000'], horizontal=True)
     if st.button("Show Details", key="away_details"):
         sorted_away_over_under_df = away_over_under_df.sort_values(by='over', ascending=False, ignore_index=True)
-        st.dataframe(sorted_away_over_under_df, use_container_width=True)
+        st.dataframe(sorted_away_over_under_df, width='stretch')
     else:
         st.write("")
 

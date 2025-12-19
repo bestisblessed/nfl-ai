@@ -194,7 +194,7 @@ with tab1:
                 labelColor='#333333'
             )
 
-            st.altair_chart(chart, use_container_width=True)
+            st.altair_chart(chart, width='stretch')
         else:
             st.write("No QB passing data available.")
 
@@ -235,7 +235,7 @@ with tab1:
                 labelColor='#333333'
             )
 
-            st.altair_chart(chart, use_container_width=True)
+            st.altair_chart(chart, width='stretch')
         else:
             st.write("No QB rushing data available.")
 
@@ -279,7 +279,7 @@ with tab1:
                 labelColor='#333333'
             )
 
-            st.altair_chart(chart, use_container_width=True)
+            st.altair_chart(chart, width='stretch')
         else:
             st.write("No QB sack data available.")
 
@@ -321,7 +321,7 @@ with tab1:
                 labelColor='#333333'
             )
 
-            st.altair_chart(chart, use_container_width=True)
+            st.altair_chart(chart, width='stretch')
         else:
             st.write("No QB interception data available.")
 
@@ -361,7 +361,7 @@ with tab2:
                     font=dict(size=12),
                     xaxis=dict(tickangle=45)
                 )
-                st.plotly_chart(fig, use_container_width=True)
+                st.plotly_chart(fig, width='stretch')
             else:
                 st.write("No data.")
         else:
@@ -396,7 +396,7 @@ with tab2:
                     "Total TDs": st.column_config.NumberColumn("Total TDs", format="%d")
                 },
                 hide_index=True,
-                use_container_width=True,
+                width='stretch',
                 height=750  # Fixed reasonable height
             )
         else:
@@ -437,7 +437,7 @@ with tab3:
                     font=dict(size=12),
                     xaxis=dict(tickangle=45)
                 )
-                st.plotly_chart(fig, use_container_width=True)
+                st.plotly_chart(fig, width='stretch')
             else:
                 st.write("No data.")
         else:
@@ -472,7 +472,7 @@ with tab3:
                     "Total TDs": st.column_config.NumberColumn("Total TDs", format="%d")
                 },
                 hide_index=True,
-                use_container_width=True,
+                width='stretch',
                 height=750  # Fixed reasonable height
             )
         else:
@@ -514,7 +514,7 @@ with tab4:
                     font=dict(size=12),
                     xaxis=dict(tickangle=45)
                 )
-                st.plotly_chart(fig, use_container_width=True)
+                st.plotly_chart(fig, width='stretch')
             else:
                 st.write("No data.")
         else:
@@ -549,7 +549,7 @@ with tab4:
                     "Total TDs": st.column_config.NumberColumn("Total TDs", format="%d")
                 },
                 hide_index=True,
-                use_container_width=True,
+                width='stretch',
                 height=750  # Fixed reasonable height
             )
         else:

@@ -191,11 +191,11 @@ ALWAYS create actual visualizations and save them as files. Show specific data a
 # ---- Sample questions UI ----
 with st.sidebar:
     st.write("### Sample Questions")
-    if st.button('Tell me about your datasets', use_container_width=True):
+    if st.button('Tell me about your datasets', width='stretch'):
         st.session_state.pending_query = "Tell me about your datasets"
-    if st.button('Analyze datasets for handicapper trends', use_container_width=True):
+    if st.button('Analyze datasets for handicapper trends', width='stretch'):
         st.session_state.pending_query = "Analyze your datasets and find and visualize a few different useful trends for a handicapper"
-    if st.button('Create visualizations for key metrics', use_container_width=True):
+    if st.button('Create visualizations for key metrics', width='stretch'):
         st.session_state.pending_query = "Create visualizations for key NFL metrics like team performance, player stats, and scoring trends"
 
 # ---- Handle pending query from sidebar buttons ----
