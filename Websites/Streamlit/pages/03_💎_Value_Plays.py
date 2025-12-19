@@ -660,7 +660,7 @@ if selected_game_key and selected_game_key != "All Games":
             )
             st.dataframe(
                 styled_df,
-                width='stretch',
+                use_container_width=True,
                 hide_index=True,
                 column_config={
                     "Player": st.column_config.TextColumn(width=None),
@@ -707,7 +707,7 @@ if selected_game_key and selected_game_key != "All Games":
             )
             st.dataframe(
                 styled_df,
-                width='stretch',
+                use_container_width=True,
                 hide_index=True,
                 column_config={
                     "Player": st.column_config.TextColumn(width=None),
@@ -757,7 +757,7 @@ if selected_game_key and selected_game_key != "All Games":
             )
             st.dataframe(
                 styled_df,
-                width='stretch',
+                use_container_width=True,
                 hide_index=True,
                 column_config={
                     "Player": st.column_config.TextColumn(width=None),
@@ -804,7 +804,7 @@ if selected_game_key and selected_game_key != "All Games":
             )
             st.dataframe(
                 styled_df,
-                width='stretch',
+                use_container_width=True,
                 hide_index=True,
                 column_config={
                     "Player": st.column_config.TextColumn(width=None),
@@ -854,7 +854,7 @@ if selected_game_key and selected_game_key != "All Games":
             )
             st.dataframe(
                 styled_df,
-                width='stretch',
+                use_container_width=True,
                 hide_index=True,
                 column_config={
                     "Player": st.column_config.TextColumn(width=None),
@@ -901,7 +901,7 @@ if selected_game_key and selected_game_key != "All Games":
             )
             st.dataframe(
                 styled_df,
-                width='stretch',
+                use_container_width=True,
                 hide_index=True,
                 column_config={
                     "Player": st.column_config.TextColumn(width="None"),
@@ -1056,7 +1056,7 @@ else:
             with col2:
                 st.dataframe(
                     styled_df,
-                    width='stretch',
+                    use_container_width=True,
                     height="content",
                     hide_index=True,
                     column_config={
@@ -1135,7 +1135,7 @@ with col2:
         data=csv_data,
         file_name=filename,
         mime="text/csv",
-        width='stretch',
+        use_container_width=True,
     )
 
 st.divider()
@@ -1165,7 +1165,7 @@ with st.sidebar:
                 mime="text/html",
                 # width='stretch',
                 # width=150
-                width='stretch'
+                use_container_width=True
             )
 
     if os.path.exists(value_pdf_path):
@@ -1177,7 +1177,7 @@ with st.sidebar:
                 mime="application/pdf",
                 # width='stretch','
                 # width=150
-                width='stretch'
+                use_container_width=True
             )
 
 # Footer

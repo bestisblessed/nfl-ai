@@ -147,7 +147,7 @@ away_records_df = win_loss_df[['away_wins', 'away_losses']].sort_values(by='away
 col1, col2 = st.columns(2)
 with col1:
     st.markdown("<h5 style='text-align: center; color: grey;'>Home</h5>", unsafe_allow_html=True)
-    st.dataframe(home_records_df, width='stretch')
+    st.dataframe(home_records_df, use_container_width=True)
     home_options = list(home_records_df.index)
     selected_home_team = persistent_selectbox(
         "Select a team to see their home games",
@@ -161,10 +161,10 @@ with col1:
         with st.expander(f"Home Games for {selected_home_team} in {selected_season}", expanded=False):
             home_games = games_selected[(games_selected['home_team'] == selected_home_team) & (games_selected['season'] == selected_season) & (games_selected['week'].between(1, 18))]
             home_games_sorted = home_games.sort_values(by='week')
-            st.dataframe(home_games_sorted, width='stretch')
+            st.dataframe(home_games_sorted, use_container_width=True)
 with col2:
     st.markdown("<h5 style='text-align: center; color: grey;'>Away</h5>", unsafe_allow_html=True)
-    st.dataframe(away_records_df, width='stretch')
+    st.dataframe(away_records_df, use_container_width=True)
     away_options = list(away_records_df.index)
     selected_away_team = persistent_selectbox(
         "Select a team to see their away games",
@@ -178,7 +178,7 @@ with col2:
         with st.expander(f"Away Games for {selected_away_team} in {selected_season}", expanded=False):
             away_games = games_selected[(games_selected['away_team'] == selected_away_team) & (games_selected['season'] == selected_season) & (games_selected['week'].between(1, 18))]
             away_games_sorted = away_games.sort_values(by='week')
-            st.dataframe(away_games_sorted, width='stretch')
+            st.dataframe(away_games_sorted, use_container_width=True)
 
 ### --- 1H vs 2H Scoring Trends --- ###
 st.divider()
@@ -279,11 +279,11 @@ fig.update_layout(
     xaxis=dict(tickangle=45),
     height=500
 )
-st.plotly_chart(fig, width='stretch')
+st.plotly_chart(fig, use_container_width=True)
 
 # Add expandable table below the chart
 with st.expander("View Table", expanded=False):
-    st.dataframe(team_half_scores, width='stretch')
+    st.dataframe(team_half_scores, use_container_width=True)
 
 st.write("#####")
 # st.write(" ")
@@ -321,11 +321,11 @@ chart = alt.Chart(team_half_scores_diff_sorted_reset).mark_bar(
     alt.selection_interval()
 )
 
-st.altair_chart(chart, width='stretch')
+st.altair_chart(chart, use_container_width=True)
 
 # Add expandable table below the chart
 with st.expander("View Table", expanded=False):
-    st.dataframe(team_half_scores_diff_sorted[['Differential']], width='stretch')
+    st.dataframe(team_half_scores_diff_sorted[['Differential']], use_container_width=True)
 
 ### --- Quarter Performance Trends --- ###
 st.divider()
@@ -366,11 +366,11 @@ fig.update_layout(
     xaxis=dict(tickangle=45),
     height=500
 )
-st.plotly_chart(fig, width='stretch')
+st.plotly_chart(fig, use_container_width=True)
 
 # Add expandable table below the chart
 with st.expander("View Table", expanded=False):
-    st.dataframe(avg_points.set_index('Team'), width='stretch')
+    st.dataframe(avg_points.set_index('Team'), use_container_width=True)
 
 # st.write("#####")
 st.write(" ")
@@ -401,11 +401,11 @@ fig.update_layout(
     xaxis=dict(tickangle=45),
     height=500
 )
-st.plotly_chart(fig, width='stretch')
+st.plotly_chart(fig, use_container_width=True)
 
 # Add expandable table below the chart
 with st.expander("View Table", expanded=False):
-    st.dataframe(avg_points_allowed.set_index('Team'), width='stretch')
+    st.dataframe(avg_points_allowed.set_index('Team'), use_container_width=True)
 
 # st.write("#####")
 st.write(" ")
@@ -447,12 +447,12 @@ with col1:
         showlegend=False,
         coloraxis_showscale=False
     )
-    st.plotly_chart(fig, width='stretch')
+    st.plotly_chart(fig, use_container_width=True)
     
     # Top 5 Teams for Passing Yards per Game
     st.write(f"**Top 5 Passing Offenses ({selected_season}):**")
     top_5_pass_yds = team_passing_yards_ranked.head(5)
-    st.dataframe(top_5_pass_yds, width='stretch', hide_index=True)
+    st.dataframe(top_5_pass_yds, use_container_width=True, hide_index=True)
 
 # Rushing Yards
 with col2:
@@ -483,12 +483,12 @@ with col2:
         showlegend=False,
         coloraxis_showscale=False
     )
-    st.plotly_chart(fig, width='stretch')
+    st.plotly_chart(fig, use_container_width=True)
     
     # Top 5 Teams for Rushing Yards per Game
     st.write(f"**Top 5 Rushing Offenses ({selected_season}):**")
     top_5_rush_yds = team_rushing_yards_ranked.head(5)
-    st.dataframe(top_5_rush_yds, width='stretch', hide_index=True)
+    st.dataframe(top_5_rush_yds, use_container_width=True, hide_index=True)
 
 ### --- Avg Passing/Rushing Yards Allowed Per Game --- ###
 st.divider()
@@ -555,13 +555,13 @@ with col1:
         showlegend=False,
         coloraxis_showscale=False
     )
-    st.plotly_chart(fig, width='stretch')
+    st.plotly_chart(fig, use_container_width=True)
     
     # Top 5 Teams Allowing the Fewest Passing Yards per Game
     st.write(f"**Top 5 Passing Defenses ({selected_season}):**")
     df_passing_allowed = pd.DataFrame(results_passing_yards_allowed)
     top_5_pass_allowed = df_passing_allowed.sort_values(by='Avg Passing Yards Allowed', ascending=True).head(5)
-    st.dataframe(top_5_pass_allowed, width='stretch', hide_index=True)
+    st.dataframe(top_5_pass_allowed, use_container_width=True, hide_index=True)
 
 # Rushing Yards Allowed
 with col2:
@@ -594,13 +594,13 @@ with col2:
         showlegend=False,
         coloraxis_showscale=False
     )
-    st.plotly_chart(fig, width='stretch')
+    st.plotly_chart(fig, use_container_width=True)
     
     # Top 5 Teams Allowing the Fewest Rushing Yards per Game
     st.write(f"**Top 5 Rushing Defenses ({selected_season}):**")
     df_rushing_allowed = pd.DataFrame(results_rushing_yards_allowed)
     top_5_rush_allowed = df_rushing_allowed.sort_values(by='Avg Rushing Yards Allowed', ascending=True).head(5)
-    st.dataframe(top_5_rush_allowed, width='stretch', hide_index=True)
+    st.dataframe(top_5_rush_allowed, use_container_width=True, hide_index=True)
 
 ### --- Passing vs Rushing Plays Called --- ###
 st.divider()
@@ -640,7 +640,7 @@ fig_pass.update_layout(
 fig_pass.update_xaxes(tickangle=-45, tickfont_size=14)
 fig_pass.update_yaxes(tickfont_size=14)
 fig_pass.update_traces(texttemplate='%{y:.1f}', textposition='outside', textfont_color='#FF6B35')
-st.plotly_chart(fig_pass, width='stretch')
+st.plotly_chart(fig_pass, use_container_width=True)
 
 st.write("#####")
 
@@ -665,7 +665,7 @@ fig_rush.update_layout(
 fig_rush.update_xaxes(tickangle=-45, tickfont_size=14)
 fig_rush.update_yaxes(tickfont_size=14)
 fig_rush.update_traces(texttemplate='%{y:.1f}', textposition='outside', textfont_color='#FF6B35')
-st.plotly_chart(fig_rush, width='stretch')
+st.plotly_chart(fig_rush, use_container_width=True)
 
 ### --- Sacks --- ###
 st.divider()
@@ -732,7 +732,7 @@ chart_sacks = alt.Chart(sacks_made_sorted).mark_bar().encode(
     grid=True,
     labelColor='#333333'
 )
-st.altair_chart(chart_sacks, width='stretch')
+st.altair_chart(chart_sacks, use_container_width=True)
 
 st.write("#####")
 
@@ -759,7 +759,7 @@ chart_sacks_taken = alt.Chart(sacks_taken_sorted).mark_bar().encode(
     labelColor='#333333'
 )
 
-st.altair_chart(chart_sacks_taken, width='stretch')
+st.altair_chart(chart_sacks_taken, use_container_width=True)
 
 # Footer
 render_footer()

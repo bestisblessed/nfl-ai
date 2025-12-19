@@ -398,7 +398,7 @@ with st.sidebar:
                 data=html_file.read(),
                 file_name=html_filename,
                 mime="text/html",
-                width='stretch'
+                use_container_width=True
             )
     else:
         st.info("HTML report not available for this week")
@@ -471,7 +471,7 @@ else:
                     'team': 'Team',
                     'pred_yards': 'Projected Yards'
                 }),
-                width='stretch',
+                use_container_width=True,
                 hide_index=True
             )
             st.markdown('</div>', unsafe_allow_html=True)
@@ -494,7 +494,7 @@ else:
                     'team': 'Team',
                     'pred_yards': 'Projected Yards'
                 }),
-                width='stretch',
+                use_container_width=True,
                 hide_index=True
             )
             st.markdown('</div>', unsafe_allow_html=True)
@@ -520,7 +520,7 @@ else:
                     'team': 'Team',
                     'pred_yards': 'Projected Yards'
                 }),
-                width='stretch',
+                use_container_width=True,
                 hide_index=True
             )
             st.markdown('</div>', unsafe_allow_html=True)
@@ -543,7 +543,7 @@ else:
                     'team': 'Team',
                     'pred_yards': 'Projected Yards'
                 }),
-                width='stretch',
+                use_container_width=True,
                 hide_index=True
             )
             st.markdown('</div>', unsafe_allow_html=True)
@@ -569,7 +569,7 @@ else:
                     'team': 'Team',
                     'pred_yards': 'Projected Yards'
                 }),
-                width='stretch',
+                use_container_width=True,
                 hide_index=True
             )
             # st.markdown('</div>', unsafe_allow_html=True)
@@ -592,7 +592,7 @@ else:
                     'team': 'Team',
                     'pred_yards': 'Projected Yards'
                 }),
-                width='stretch',
+                use_container_width=True,
                 hide_index=True
             )
             # st.markdown('</div>', unsafe_allow_html=True)
@@ -615,7 +615,7 @@ with col2:
             file_name=html_filename,
             mime="text/html",
             help=f"Download the {selected_week_display} complete props HTML report",
-            width='stretch'
+            use_container_width=True
         )
     else:
         st.info("HTML report not available for this week")

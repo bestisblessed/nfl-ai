@@ -293,7 +293,7 @@ with st.sidebar:
                 data=pdf_file.read(),
                 file_name=pdf_filename,
                 mime="application/pdf",
-                width='stretch'
+                use_container_width=True
             )
     else:
         st.info("PDF report not available for this week")
@@ -406,7 +406,7 @@ for tab, (tab_name, boards) in zip(tabs, zip(tab_names, tab_boards)):
 
                         # Display the full expanded dataframe
                         styled_df = create_styled_dataframe(leaderboard)
-                        st.dataframe(styled_df, width='stretch', height=910, hide_index=True)
+                        st.dataframe(styled_df, use_container_width=True, height=910, hide_index=True)
             else:
                 # Display tables vertically for single-stat positions (WR, TE)
                 for leaderboard in boards:
@@ -423,7 +423,7 @@ for tab, (tab_name, boards) in zip(tabs, zip(tab_names, tab_boards)):
 
                     # Display the full expanded dataframe
                     styled_df = create_styled_dataframe(leaderboard)
-                    st.dataframe(styled_df, width='stretch', height=910, hide_index=True)
+                    st.dataframe(styled_df, use_container_width=True, height=910, hide_index=True)
         else:
             st.info(f"No {tab_name.lower()} data available for this week.")
 
@@ -446,7 +446,7 @@ with col2:
             file_name=pdf_filename,
             mime="application/pdf",
             help=f"Download the {current_week} leader tables PDF report",
-            width='stretch'
+            use_container_width=True
         )
     else:
         st.info("PDF report not available for this week")
