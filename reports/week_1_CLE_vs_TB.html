@@ -1,0 +1,670 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>CLE vs TB Matchup Report</title><script src="https://cdn.plot.ly/plotly-latest.min.js"></script><style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 20px; background-color: #f8f9fa; line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; background-color: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        h1 { text-align: center; color: #333; margin-bottom: 30px; font-size: 2.5rem; }
+        .subtitle { text-align: center; color: #666; margin-bottom: 30px; font-style: italic; }
+        .section { margin: 30px 0; padding: 20px; border: 1px solid #e6e6e6; border-radius: 8px; background-color: #fafafa; }
+        .stats-container { margin: 30px 0; padding: 25px; background-color: white; border: 1px solid #e6e6e6; border-radius: 8px; border-left: 4px solid #007bff; }
+        .stats-list { display: flex; flex-direction: column; gap: 0; }
+        .stat-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 0; border-bottom: 1px solid #e9ecef; }
+        .stat-item:last-child { border-bottom: none; }
+        .stat-label { font-size: 1rem; color: #495057; font-weight: 500; }
+        .stat-value { font-size: 1.3rem; font-weight: bold; color: #212529; }
+        .team1-stat { color: #311D00; }
+        .team2-stat { color: #D50A0A; }
+        .betting-box { border: 1px solid #e6e6e6; border-radius: 10px; padding: 20px; background-color: white; margin: 20px 0; }
+        .betting-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 15px; }
+        .betting-item { text-align: center; }
+        .betting-value { font-size: 1.8rem; font-weight: 800; margin: 5px 0; }
+        .defense-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 20px 0; }
+        .defense-box { border: 1px solid #e6e6e6; background-color: rgba(0,0,0,0.02); border-radius: 8px; padding: 15px; }
+        .defense-title { text-align: center; font-weight: 600; margin-bottom: 15px; font-size: 1.1rem; }
+        .defense-metrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 10px; }
+        .defense-metric { text-align: center; }
+        .defense-metric-value { font-weight: 700; font-size: 1.1rem; }
+        .defense-yards { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px; }
+        .performance-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 20px 0; }
+        .performance-title { text-align: center; font-weight: bold; margin-bottom: 15px; font-size: 1.2rem; }
+        .chart-container { margin: 20px 0; text-align: center; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: start; }
+        .chart-item { display: flex; flex-direction: column; align-items: center; width: 350px; margin: 0 auto; }
+        .player-section { margin: 30px 0; padding: 20px; border: 1px solid #e6e6e6; border-radius: 8px; background-color: white; }
+        .player-header { display: flex; align-items: center; margin-bottom: 20px; font-size: 2.2rem; font-weight: bold; }
+        .team-logo { width: 60px; height: 60px; margin-right: 15px; display: flex; align-items: center; justify-content: center; }
+        .team-logo img { width: 100%; height: 100%; object-fit: contain; }
+        .team-logo-fallback { width: 60px; height: 60px; border: 1px solid #ccc; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: bold; margin-right: 15px; background-color: #f5f5f5; }
+        .player-summary { margin-bottom: 20px; }
+        .player-detail { margin: 30px 0; border: 1px solid #e6e6e6; border-radius: 6px; background-color: white; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+        .player-name { font-weight: bold; font-size: 1.1rem; padding: 12px 15px; margin: 0; color: #333; cursor: pointer; background-color: #f8f9fa; border-bottom: 1px solid #e6e6e6; border-radius: 4px 4px 0 0; display: block; }
+        .player-name:hover { background-color: #e9ecef; }
+        .player-content { padding: 15px; display: none; background-color: white; border-radius: 0 0 4px 4px; }
+        .player-detail input[type="checkbox"] { display: none; }
+        .player-detail input[type="checkbox"]:checked ~ .player-content { display: block; }
+        .player-metrics { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 12px; }
+        .player-metric { text-align: center; padding: 8px; background-color: #f8f9fa; border-radius: 4px; border: 1px solid #e6e6e6; }
+        .player-metric-value { font-size: 1.3rem; font-weight: bold; color: #333; }
+        .player-metric-label { font-size: 0.8rem; color: #666; margin-top: 3px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 0.9rem; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; font-weight: bold; }
+        tr:nth-child(even) { background-color: #f9f9f9; }
+        .team1-color { color: #311D00; }
+        .team2-color { color: #D50A0A; }
+    </style></head><body><div class="container"><h1>CLE vs TB Matchup Report</h1><div class="subtitle">4 most recent games analyzed</div><div class="section"><h2>Head-to-Head Statistics</h2><div class="stats-container"><div class="stats-list"><div class="stat-item"><span class="stat-label">CLE Wins</span><span class="stat-value team1-stat">2</span></div><div class="stat-item"><span class="stat-label">TB Wins</span><span class="stat-value team2-stat">2</span></div><div class="stat-item"><span class="stat-label">Winning Streak (CLE)</span><span class="stat-value">1</span></div><div class="stat-item"><span class="stat-label">CLE Avg PPG</span><span class="stat-value team1-stat">20.5</span></div><div class="stat-item"><span class="stat-label">TB Avg PPG</span><span class="stat-value team2-stat">19.2</span></div><div class="stat-item"><span class="stat-label">Average Total Points</span><span class="stat-value">39.8</span></div><div class="stat-item"><span class="stat-label">Games with 50+ Points</span><span class="stat-value">0</span></div></div></div></div><div class="section"><h2>Head-to-Head Betting</h2><div class="betting-box"><div class="betting-grid"><div class="betting-item"><div>ATS: CLE</div><div class="betting-value team1-color">3-1-0</div></div><div class="betting-item"><div>ATS: TB</div><div class="betting-value team2-color">1-3-0</div></div><div class="betting-item"><div>Totals (O-U-P)</div><div class="betting-value">0-4-0</div></div><div class="betting-item"><div><strong>CLE:</strong> Fav 1 - Dog 3</div><div><strong>TB:</strong> Fav 3 - Dog 1</div></div></div></div></div><div class="section"><h2>Defensive Metrics (Last 10 Games)</h2><div class="defense-grid"><div class="defense-box"><div class="defense-title">CLE Defense</div><div class="defense-metrics"><div class="defense-metric"><div>Sacks/game</div><div class="defense-metric-value">2.3</div></div><div class="defense-metric"><div>QB Hits/game</div><div class="defense-metric-value">4.0</div></div><div class="defense-metric"><div>Turnovers/game</div><div class="defense-metric-value">2.3</div></div></div><div class="defense-yards"><div class="defense-metric"><div>Avg Pass Yds Allowed</div><div class="defense-metric-value">175.7</div></div><div class="defense-metric"><div>Avg Rush Yds Allowed</div><div class="defense-metric-value">126.1</div></div></div></div><div class="defense-box"><div class="defense-title">TB Defense</div><div class="defense-metrics"><div class="defense-metric"><div>Sacks/game</div><div class="defense-metric-value">1.9</div></div><div class="defense-metric"><div>QB Hits/game</div><div class="defense-metric-value">4.6</div></div><div class="defense-metric"><div>Turnovers/game</div><div class="defense-metric-value">1.9</div></div></div><div class="defense-yards"><div class="defense-metric"><div>Avg Pass Yds Allowed</div><div class="defense-metric-value">270.5</div></div><div class="defense-metric"><div>Avg Rush Yds Allowed</div><div class="defense-metric-value">107.9</div></div></div></div></div></div><div class="section"><h2>Top Performance Metrics</h2><div class="performance-grid"><div><div class="performance-title">CLE</div><table border="1" class="dataframe table" id="team1_top">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Player</th>
+      <th>Pos</th>
+      <th>Rec TDs</th>
+      <th>Rec Yds</th>
+      <th>Rush TDs</th>
+      <th>Rush Yds</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>David Njoku</td>
+      <td>TE</td>
+      <td>2.0</td>
+      <td>81.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>DeAndre Carter</td>
+      <td>WR</td>
+      <td>1.0</td>
+      <td>100.0</td>
+      <td>0.0</td>
+      <td>4.0</td>
+    </tr>
+    <tr>
+      <td>Jerry Jeudy</td>
+      <td>WR</td>
+      <td>0.0</td>
+      <td>55.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+  </tbody>
+</table></div><div><div class="performance-title">TB</div><table border="1" class="dataframe table" id="team2_top">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Player</th>
+      <th>Pos</th>
+      <th>Rec TDs</th>
+      <th>Rec Yds</th>
+      <th>Rush TDs</th>
+      <th>Rush Yds</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mike Evans</td>
+      <td>WR</td>
+      <td>2.0</td>
+      <td>262.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Ko Kieft</td>
+      <td>TE</td>
+      <td>1.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Sterling Shepard</td>
+      <td>WR</td>
+      <td>0.0</td>
+      <td>51.0</td>
+      <td>0.0</td>
+      <td>19.0</td>
+    </tr>
+    <tr>
+      <td>Rachaad White</td>
+      <td>RB</td>
+      <td>0.0</td>
+      <td>45.0</td>
+      <td>0.0</td>
+      <td>64.0</td>
+    </tr>
+  </tbody>
+</table></div></div></div><div class="section"><h2>Red-Zone Targets (2025)</h2><div class="performance-grid"><div><div class="performance-title">CLE</div><table border="1" class="dataframe table" id="team1_redzone">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Player</th>
+      <th>Targets</th>
+      <th>Receptions</th>
+      <th>Catch%</th>
+      <th>TDs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Harold Fannin</td>
+      <td>9</td>
+      <td>6</td>
+      <td>0.0</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Jerry Jeudy</td>
+      <td>9</td>
+      <td>1</td>
+      <td>0.0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>David Njoku</td>
+      <td>8</td>
+      <td>5</td>
+      <td>0.0</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Dylan Sampson</td>
+      <td>5</td>
+      <td>3</td>
+      <td>0.0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Jerome Ford</td>
+      <td>5</td>
+      <td>4</td>
+      <td>0.0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Cedric Tillman</td>
+      <td>4</td>
+      <td>4</td>
+      <td>0.0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Isaiah Bond</td>
+      <td>4</td>
+      <td>1</td>
+      <td>0.0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Jamari Thrash</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Luke Wypler</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0.0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Trayveon Williams</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table></div><div><div class="performance-title">TB</div><table border="1" class="dataframe table" id="team2_redzone">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Player</th>
+      <th>Targets</th>
+      <th>Receptions</th>
+      <th>Catch%</th>
+      <th>TDs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Emeka Egbuka</td>
+      <td>10</td>
+      <td>2</td>
+      <td>0.0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Rachaad White</td>
+      <td>7</td>
+      <td>6</td>
+      <td>0.0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Sterling Shepard</td>
+      <td>6</td>
+      <td>3</td>
+      <td>0.0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Chris Godwin</td>
+      <td>5</td>
+      <td>1</td>
+      <td>0.0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Mike Evans</td>
+      <td>5</td>
+      <td>2</td>
+      <td>0.0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Bucky Irving</td>
+      <td>4</td>
+      <td>3</td>
+      <td>0.0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Cade Otton</td>
+      <td>4</td>
+      <td>2</td>
+      <td>0.0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Tez Johnson</td>
+      <td>4</td>
+      <td>4</td>
+      <td>0.0</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Devin Culp</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Sean Tucker</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Tristan Wirfs</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.0</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table></div></div></div><div class="section"><h2>Betting Distribution Charts</h2><div class="chart-container"><div class="chart-item"><html>
+<head><meta charset="utf-8" /></head>
+<body>
+    <div>                            <div id="ats_chart" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script type="text/javascript">                                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("ats_chart")) {                    Plotly.newPlot(                        "ats_chart",                        [{"domain":{"x":[0.0,1.0],"y":[0.0,1.0]},"hole":0.45,"hovertemplate":"label=%{label}\u003cbr\u003evalue=%{value}\u003cextra\u003e\u003c\u002fextra\u003e","labels":["CLE cover","TB cover","Push"],"legendgroup":"","name":"","showlegend":true,"values":[3,1,0],"type":"pie"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmapgl":[{"type":"heatmapgl","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"legend":{"tracegroupgap":0,"orientation":"h","yanchor":"top","y":-0.15,"xanchor":"center","x":0.5},"margin":{"t":60,"l":20,"r":20,"b":60},"piecolorway":["#311D00","#D50A0A","#7f7f7f"],"title":{"font":{"size":14},"x":0.5},"showlegend":true},                        {"displayModeBar": false, "responsive": false}                    )                };                            </script>        </div>
+</body>
+</html></div><div class="chart-item"><html>
+<head><meta charset="utf-8" /></head>
+<body>
+    <div>                            <div id="ou_chart" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script type="text/javascript">                                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("ou_chart")) {                    Plotly.newPlot(                        "ou_chart",                        [{"domain":{"x":[0.0,1.0],"y":[0.0,1.0]},"hole":0.45,"hovertemplate":"label=%{label}\u003cbr\u003evalue=%{value}\u003cextra\u003e\u003c\u002fextra\u003e","labels":["Over","Under","Push"],"legendgroup":"","name":"","showlegend":true,"values":[0,4,0],"type":"pie"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmapgl":[{"type":"heatmapgl","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"legend":{"tracegroupgap":0,"orientation":"h","yanchor":"top","y":-0.15,"xanchor":"center","x":0.5},"margin":{"t":60,"l":20,"r":20,"b":60},"piecolorway":["#013369","#D50A0A","#7f7f7f"],"title":{"font":{"size":14},"x":0.5},"showlegend":true},                        {"displayModeBar": false, "responsive": false}                    )                };                            </script>        </div>
+</body>
+</html></div></div></div><div class="player-section"><div class="player-header"><div class="team-logo"><img src="data:image/png;base64,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" alt="CLE" /></div><div>CLE Players</div></div><div class="player-summary"><table border="1" class="dataframe table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Player</th>
+      <th>Pos</th>
+      <th>Games</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Deshaun Watson (QB)</td>
+      <td>QB</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>DeAndre Carter (WR)</td>
+      <td>WR</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Jerry Jeudy (WR)</td>
+      <td>WR</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>David Njoku (TE)</td>
+      <td>TE</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table></div><div class="player-detail"><input type="checkbox" id="player_-1519929856864900199"><label for="player_-1519929856864900199" class="player-name">Deshaun Watson (QB)</label><div class="player-content"><div class="player-metrics"><div class="player-metric"><div class="player-metric-value">1</div><div class="player-metric-label">Games</div></div><div class="player-metric"><div class="player-metric-value">0</div><div class="player-metric-label">Total Pass TDs</div></div><div class="player-metric"><div class="player-metric-value">0</div><div class="player-metric-label">Total Rush TDs</div></div><div class="player-metric"><div class="player-metric-value">184.0</div><div class="player-metric-label">Avg Pass Yds</div></div></div><table border="1" class="dataframe table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>season</th>
+      <th>week</th>
+      <th>home_team</th>
+      <th>away_team</th>
+      <th>passing_yards</th>
+      <th>passing_tds</th>
+      <th>rushing_yards</th>
+      <th>rushing_tds</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2019</td>
+      <td>16</td>
+      <td>TB</td>
+      <td>HOU</td>
+      <td>184.0</td>
+      <td>0.0</td>
+      <td>37.0</td>
+      <td>0.0</td>
+    </tr>
+  </tbody>
+</table></div></div><div class="player-detail"><input type="checkbox" id="player_-8964363491775229791"><label for="player_-8964363491775229791" class="player-name">DeAndre Carter (WR)</label><div class="player-content"><div class="player-metrics"><div class="player-metric"><div class="player-metric-value">2</div><div class="player-metric-label">Games</div></div><div class="player-metric"><div class="player-metric-value">1</div><div class="player-metric-label">Total Rec TDs</div></div><div class="player-metric"><div class="player-metric-value">50.0</div><div class="player-metric-label">Avg Rec Yds</div></div></div><table border="1" class="dataframe table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>season</th>
+      <th>week</th>
+      <th>home_team</th>
+      <th>away_team</th>
+      <th>receiving_yards</th>
+      <th>receiving_tds</th>
+      <th>targets</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2021</td>
+      <td>10</td>
+      <td>WAS</td>
+      <td>TB</td>
+      <td>56.0</td>
+      <td>1.0</td>
+      <td>6.0</td>
+    </tr>
+    <tr>
+      <td>2019</td>
+      <td>16</td>
+      <td>TB</td>
+      <td>HOU</td>
+      <td>44.0</td>
+      <td>0.0</td>
+      <td>2.0</td>
+    </tr>
+  </tbody>
+</table></div></div><div class="player-detail"><input type="checkbox" id="player_6613230821348090985"><label for="player_6613230821348090985" class="player-name">Jerry Jeudy (WR)</label><div class="player-content"><div class="player-metrics"><div class="player-metric"><div class="player-metric-value">1</div><div class="player-metric-label">Games</div></div><div class="player-metric"><div class="player-metric-value">0</div><div class="player-metric-label">Total Rec TDs</div></div><div class="player-metric"><div class="player-metric-value">55.0</div><div class="player-metric-label">Avg Rec Yds</div></div></div><table border="1" class="dataframe table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>season</th>
+      <th>week</th>
+      <th>home_team</th>
+      <th>away_team</th>
+      <th>receiving_yards</th>
+      <th>receiving_tds</th>
+      <th>targets</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2020</td>
+      <td>3</td>
+      <td>DEN</td>
+      <td>TB</td>
+      <td>55.0</td>
+      <td>0.0</td>
+      <td>9.0</td>
+    </tr>
+  </tbody>
+</table></div></div><div class="player-detail"><input type="checkbox" id="player_1072570423137940445"><label for="player_1072570423137940445" class="player-name">David Njoku (TE)</label><div class="player-content"><div class="player-metrics"><div class="player-metric"><div class="player-metric-value">2</div><div class="player-metric-label">Games</div></div><div class="player-metric"><div class="player-metric-value">2</div><div class="player-metric-label">Total Rec TDs</div></div><div class="player-metric"><div class="player-metric-value">40.5</div><div class="player-metric-label">Avg Rec Yds</div></div></div><table border="1" class="dataframe table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>season</th>
+      <th>week</th>
+      <th>home_team</th>
+      <th>away_team</th>
+      <th>receiving_yards</th>
+      <th>receiving_tds</th>
+      <th>targets</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2022</td>
+      <td>12</td>
+      <td>CLE</td>
+      <td>TB</td>
+      <td>29.0</td>
+      <td>1.0</td>
+      <td>7.0</td>
+    </tr>
+    <tr>
+      <td>2018</td>
+      <td>7</td>
+      <td>TB</td>
+      <td>CLE</td>
+      <td>52.0</td>
+      <td>1.0</td>
+      <td>6.0</td>
+    </tr>
+  </tbody>
+</table></div></div></div><div class="player-section"><div class="player-header"><div class="team-logo"><img src="data:image/png;base64,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" alt="TB" /></div><div>TB Players</div></div><div class="player-summary"><table border="1" class="dataframe table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Player</th>
+      <th>Pos</th>
+      <th>Games</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Baker Mayfield (QB)</td>
+      <td>QB</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Teddy Bridgewater (QB)</td>
+      <td>QB</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Mike Evans (WR)</td>
+      <td>WR</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Sterling Shepard (WR)</td>
+      <td>WR</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Ko Kieft (TE)</td>
+      <td>TE</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Rachaad White (RB)</td>
+      <td>RB</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table></div><div class="player-detail"><input type="checkbox" id="player_-2416632466125760197"><label for="player_-2416632466125760197" class="player-name">Baker Mayfield (QB)</label><div class="player-content"><div class="player-metrics"><div class="player-metric"><div class="player-metric-value">1</div><div class="player-metric-label">Games</div></div><div class="player-metric"><div class="player-metric-value">1</div><div class="player-metric-label">Total Pass TDs</div></div><div class="player-metric"><div class="player-metric-value">1</div><div class="player-metric-label">Total Rush TDs</div></div><div class="player-metric"><div class="player-metric-value">235.0</div><div class="player-metric-label">Avg Pass Yds</div></div></div><table border="1" class="dataframe table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>season</th>
+      <th>week</th>
+      <th>home_team</th>
+      <th>away_team</th>
+      <th>passing_yards</th>
+      <th>passing_tds</th>
+      <th>rushing_yards</th>
+      <th>rushing_tds</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2022</td>
+      <td>1</td>
+      <td>CAR</td>
+      <td>CLE</td>
+      <td>235.0</td>
+      <td>1.0</td>
+      <td>6.0</td>
+      <td>1.0</td>
+    </tr>
+  </tbody>
+</table></div></div><div class="player-detail"><input type="checkbox" id="player_-8318065147758433202"><label for="player_-8318065147758433202" class="player-name">Teddy Bridgewater (QB)</label><div class="player-content"><div class="player-metrics"><div class="player-metric"><div class="player-metric-value">1</div><div class="player-metric-label">Games</div></div><div class="player-metric"><div class="player-metric-value">2</div><div class="player-metric-label">Total Pass TDs</div></div><div class="player-metric"><div class="player-metric-value">0</div><div class="player-metric-label">Total Rush TDs</div></div><div class="player-metric"><div class="player-metric-value">187.0</div><div class="player-metric-label">Avg Pass Yds</div></div></div><table border="1" class="dataframe table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>season</th>
+      <th>week</th>
+      <th>home_team</th>
+      <th>away_team</th>
+      <th>passing_yards</th>
+      <th>passing_tds</th>
+      <th>rushing_yards</th>
+      <th>rushing_tds</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2021</td>
+      <td>7</td>
+      <td>CLE</td>
+      <td>DEN</td>
+      <td>187.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>0.0</td>
+    </tr>
+  </tbody>
+</table></div></div><div class="player-detail"><input type="checkbox" id="player_-7194740576416194032"><label for="player_-7194740576416194032" class="player-name">Mike Evans (WR)</label><div class="player-content"><div class="player-metrics"><div class="player-metric"><div class="player-metric-value">3</div><div class="player-metric-label">Games</div></div><div class="player-metric"><div class="player-metric-value">2</div><div class="player-metric-label">Total Rec TDs</div></div><div class="player-metric"><div class="player-metric-value">87.3</div><div class="player-metric-label">Avg Rec Yds</div></div></div><table border="1" class="dataframe table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>season</th>
+      <th>week</th>
+      <th>home_team</th>
+      <th>away_team</th>
+      <th>receiving_yards</th>
+      <th>receiving_tds</th>
+      <th>targets</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2022</td>
+      <td>12</td>
+      <td>CLE</td>
+      <td>TB</td>
+      <td>31.0</td>
+      <td>0.0</td>
+      <td>9.0</td>
+    </tr>
+    <tr>
+      <td>2018</td>
+      <td>7</td>
+      <td>TB</td>
+      <td>CLE</td>
+      <td>107.0</td>
+      <td>0.0</td>
+      <td>11.0</td>
+    </tr>
+    <tr>
+      <td>2014</td>
+      <td>9</td>
+      <td>CLE</td>
+      <td>TB</td>
+      <td>124.0</td>
+      <td>2.0</td>
+      <td>11.0</td>
+    </tr>
+  </tbody>
+</table></div></div><div class="player-detail"><input type="checkbox" id="player_-2595686402986633690"><label for="player_-2595686402986633690" class="player-name">Sterling Shepard (WR)</label><div class="player-content"><div class="player-metrics"><div class="player-metric"><div class="player-metric-value">2</div><div class="player-metric-label">Games</div></div><div class="player-metric"><div class="player-metric-value">0</div><div class="player-metric-label">Total Rec TDs</div></div><div class="player-metric"><div class="player-metric-value">25.5</div><div class="player-metric-label">Avg Rec Yds</div></div></div><table border="1" class="dataframe table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>season</th>
+      <th>week</th>
+      <th>home_team</th>
+      <th>away_team</th>
+      <th>receiving_yards</th>
+      <th>receiving_tds</th>
+      <th>targets</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2020</td>
+      <td>15</td>
+      <td>NYG</td>
+      <td>CLE</td>
+      <td>51.0</td>
+      <td>0.0</td>
+      <td>7.0</td>
+    </tr>
+    <tr>
+      <td>2016</td>
+      <td>12</td>
+      <td>CLE</td>
+      <td>NYG</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+  </tbody>
+</table></div></div><div class="player-detail"><input type="checkbox" id="player_6714178737871172830"><label for="player_6714178737871172830" class="player-name">Ko Kieft (TE)</label><div class="player-content"><div class="player-metrics"><div class="player-metric"><div class="player-metric-value">1</div><div class="player-metric-label">Games</div></div><div class="player-metric"><div class="player-metric-value">1</div><div class="player-metric-label">Total Rec TDs</div></div><div class="player-metric"><div class="player-metric-value">5.0</div><div class="player-metric-label">Avg Rec Yds</div></div></div><table border="1" class="dataframe table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>season</th>
+      <th>week</th>
+      <th>home_team</th>
+      <th>away_team</th>
+      <th>receiving_yards</th>
+      <th>receiving_tds</th>
+      <th>targets</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2022</td>
+      <td>12</td>
+      <td>CLE</td>
+      <td>TB</td>
+      <td>5.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+    </tr>
+  </tbody>
+</table></div></div><div class="player-detail"><input type="checkbox" id="player_-8200084302233442068"><label for="player_-8200084302233442068" class="player-name">Rachaad White (RB)</label><div class="player-content"><div class="player-metrics"><div class="player-metric"><div class="player-metric-value">1</div><div class="player-metric-label">Games</div></div><div class="player-metric"><div class="player-metric-value">0</div><div class="player-metric-label">Total Rush TDs</div></div><div class="player-metric"><div class="player-metric-value">0</div><div class="player-metric-label">Total Rec TDs</div></div></div><table border="1" class="dataframe table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>season</th>
+      <th>week</th>
+      <th>home_team</th>
+      <th>away_team</th>
+      <th>rushing_yards</th>
+      <th>rushing_tds</th>
+      <th>receiving_yards</th>
+      <th>receiving_tds</th>
+      <th>targets</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2022</td>
+      <td>12</td>
+      <td>CLE</td>
+      <td>TB</td>
+      <td>64.0</td>
+      <td>0.0</td>
+      <td>45.0</td>
+      <td>0.0</td>
+      <td>9.0</td>
+    </tr>
+  </tbody>
+</table></div></div></div></div></body></html>
